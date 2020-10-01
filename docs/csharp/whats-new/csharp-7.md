@@ -1,34 +1,54 @@
 ---
 title: What's New in C# 7.0 - C# Guide
 description: Get an overview of the new features in version 7.0 of the C# language.
-ms.date: 02/20/2019
+ms.date: 10/01/2020
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 ---
 
-# What's new in C# 7.0
+# What's new in C# 7.0 and C# 7 point releases
 
-C# 7.0 adds a number of new features to the C# language:
+C# 7.0 through C# 7.3 brought a number features and incremental improvements your development experience with C#. This article provides an overview of the new language features and compiler options. This article provides an overview of the features and improvements. The descriptions describe the behavior for C# 7.3, which is the most recent version supported for .NET Framework based applications.
 
-- [`out` variables](#out-variables)
-  - You can declare `out` values inline as arguments to the method where they're used.
+C# 7.1 adds the [language version selection](../language-reference/configure-language-version.md) configuration element, which enables you to specify the compiler language version in your project file.
+
+C# 7.0-7.3 adds a number of new features to the C# language:
+
 - [Tuples](#tuples)
   - You can create lightweight, unnamed types that contain multiple public fields. Compilers and IDE tools understand the semantics of these types.
 - [Discards](#discards)
   - Discards are temporary, write-only variables used in assignments when you don't care about the value assigned. They're most useful when deconstructing tuples and user-defined types, as well as when calling methods with `out` parameters.
 - [Pattern Matching](#pattern-matching)
   - You can create branching logic based on arbitrary types and values of the members of those types.
-- [`ref` locals and returns](#ref-locals-and-returns)
-  - Method local variables and return values can be references to other storage.
+- [`async` `Main` method](#async-main)
+  - The entry point for an application can have the `async` modifier.
+- [Generalized async return types](#generalized-async-return-types)
+  - Methods declared with the `async` modifier can return other types in addition to `Task` and `Task<T>`.
 - [Local Functions](#local-functions)
   - You can nest functions inside other functions to limit their scope and visibility.
 - [More expression-bodied members](#more-expression-bodied-members)
   - The list of members that can be authored using expressions has grown.
 - [`throw` Expressions](#throw-expressions)
   - You can throw exceptions in code constructs that previously weren't allowed because `throw` was a statement.
-- [Generalized async return types](#generalized-async-return-types)
-  - Methods declared with the `async` modifier can return other types in addition to `Task` and `Task<T>`.
+- [`default` literal expressions](#default-literal-expressions)
+  - You can use default literal expressions in default value expressions when the target type can be inferred.
 - [Numeric literal syntax improvements](#numeric-literal-syntax-improvements)
   - New tokens improve readability for numeric constants.
+- [`out` variables](#out-variables)
+  - You can declare `out` values inline as arguments to the method where they're used.
+- [Non-trailing named arguments](#non-trailing-named-arguments)
+  - Named arguments can be followed by positional arguments.
+- [`private protected` access modifier](#private-protected-access-modifier)
+  - The `private protected` access modifier enables access for derived classes in the same assembly.
+  - [Improved overload resolution](#improved-overload-resolution)
+    - New rules to resolve overload resolution ambiguity.
+- [Techniques for writing safe efficient code](#safe-efficient-code-enhancements)
+  - A combination of syntax improvements that enable working with value types using reference semantics.
+
+Finally, the compiler has new options:
+
+- `-refout` and `-refonly` that control [reference assembly generation](#reference-assembly-generation).
+- `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
+- `-pathmap` to provide a mapping for source directories.
 
 The remainder of this article provides an overview of each feature. For each feature,
 you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in your environment using the `dotnet try` global tool:
@@ -37,25 +57,6 @@ you'll learn the reasoning behind it. You'll learn the syntax. You can explore t
 1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
 1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
 1. Run `dotnet try`.
-
-## `out` variables
-
-The existing syntax that supports `out` parameters has been improved
-in this version. You can now declare `out` variables in the argument list of a method call,
-rather than writing a separate declaration statement:
-
-[!code-csharp[OutVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVariableDeclarations "Out variable declarations")]
-
-You may want to specify the type of the `out` variable for clarity,
-as shown above. However, the language does support using an implicitly
-typed local variable:
-
-[!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVarVariableDeclarations "Implicitly typed Out variable")]
-
-- The code is easier to read.
-  - You declare the out variable where you use it, not on another line above.
-- No need to assign an initial value.
-  - By declaring the `out` variable where it's used in a method call, you can't accidentally use it before it is assigned.
 
 ## Tuples
 
@@ -106,6 +107,35 @@ the `X` and `Y` coordinates:
 You can extract the individual fields by assigning a `Point` to a tuple:
 
 [!code-csharp[DeconstructPoint](~/samples/snippets/csharp/new-in-7/program.cs#DeconstructPoint "Deconstruct a point")]
+
+> 7.1
+
+This feature is a small enhancement to the tuples feature introduced in
+C# 7.0. Many times when you initialize a tuple, the variables used for the
+right side of the assignment are the same as the names you'd like for the
+tuple elements:
+
+```csharp
+int count = 5;
+string label = "Colors used in the map";
+var pair = (count: count, label: label);
+```
+
+The names of tuple elements can be inferred from the variables used to initialize
+the tuple in C# 7.1:
+
+```csharp
+int count = 5;
+string label = "Colors used in the map";
+var pair = (count, label); // element names are "count" and "label"
+```
+
+> 7.3
+
+The C# tuple types now support `==` and `!=`. For more information, see the [Tuple equality](../language-reference/builtin-types/value-tuples.md#tuple-equality) section of the [Tuple types](../language-reference/builtin-types/value-tuples.md) article.
+
+
+You can learn more about this feature in the [Tuple types](../language-reference/builtin-types/value-tuples.md) article.
 
 For more information, see [Tuple types](../language-reference/builtin-types/value-tuples.md).
 
@@ -196,43 +226,73 @@ public static int SumPositiveNumbers(IEnumerable<object> sequence)
 - `case null:` is the null pattern.
 - `default:` is the familiar default case.
 
+> 7.1
+
+Beginning with C# 7.1, the pattern expression for `is` and the `switch` type pattern may have the type of a generic type parameter. This can be most useful when checking types that may be either `struct` or `class` types, and you want to avoid boxing.
+
 You can learn more about pattern matching in
 [Pattern Matching in C#](../pattern-matching.md).
 
-## Ref locals and returns
+## Async main
 
-This feature enables algorithms that use and return references
-to variables defined elsewhere. One example is working with
-large matrices, and finding a single location with certain
-characteristics. The following method returns a **reference** to that storage in the matrix:
+An *async main* method enables you to use `await` in your `Main` method.
+Previously you would need to write:
 
-[!code-csharp[FindReturningRef](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#FindReturningRef "Find returning by reference")]
+```csharp
+static int Main()
+{
+    return DoAsyncWork().GetAwaiter().GetResult();
+}
+```
 
-You can declare the return value as a `ref` and modify that value in the matrix, as shown in the following code:
+You can now write:
 
-[!code-csharp[AssignRefReturn](~/samples/snippets/csharp/new-in-7/Program.cs#AssignRefReturn "Assign ref return")]
+```csharp
+static async Task<int> Main()
+{
+    // This could also be replaced with the body
+    // DoAsyncWork, including its await expressions:
+    return await DoAsyncWork();
+}
+```
 
-The C# language has several rules that protect you from misusing
-the `ref` locals and returns:
+If your program doesn't return an exit code, you can declare a `Main` method
+that returns a <xref:System.Threading.Tasks.Task>:
 
-- You must add the `ref` keyword to the method signature and to all `return` statements in a method.
-  - That makes it clear the method returns by reference throughout the method.
-- A `ref return` may be assigned to a value variable, or a `ref` variable.
-  - The caller controls whether the return value is copied or not. Omitting the `ref` modifier when assigning the return value indicates that the caller wants a copy of the value, not a reference to the storage.
-- You can't assign a standard method return value to a `ref` local variable.
-  - That disallows statements like `ref int i = sequence.Count();`
-- You can't return a `ref` to a variable whose lifetime doesn't extend beyond the execution of the method.
-  - That means you can't return a reference to a local variable or a variable with a similar scope.
-- `ref` locals and returns can't be used with async methods.
-  - The compiler can't know if the referenced variable has been set to its final value when the async method returns.
+```csharp
+static async Task Main()
+{
+    await SomeAsyncMethod();
+}
+```
 
-The addition of ref locals and ref returns enables algorithms that are more
-efficient by avoiding copying values, or performing dereferencing operations
-multiple times.
+You can read more about the details in the
+[async main](../programming-guide/main-and-command-args/index.md) article
+in the programming guide.
 
-Adding `ref` to the return value is a [source compatible change](version-update-considerations.md#source-compatible-changes). Existing code compiles, but the ref return value is copied when assigned. Callers must update the storage for the return value to a `ref` local variable to store the return as a reference.
+## Generalized async return types
 
-For more information, see the [ref keyword](../language-reference/keywords/ref.md) article.
+Returning a `Task` object from async methods can introduce
+performance bottlenecks in certain paths. `Task` is a reference
+type, so using it means allocating an object. In cases where a
+method declared with the `async` modifier returns a cached result, or
+completes synchronously, the extra allocations can become a significant
+time cost in performance critical sections of code. It can become
+costly if those allocations occur in tight loops.
+
+The new language feature means that async method return types aren't limited to `Task`, `Task<T>`, and `void`. The returned type
+must still satisfy the async pattern, meaning a `GetAwaiter` method
+must be accessible. As one concrete example, the `ValueTask` type
+has been added to .NET to make use of this new language
+feature:
+
+[!code-csharp[UsingValueTask](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#UsingValueTask "Using ValueTask")]
+
+> [!NOTE]
+> You need to add the NuGet package [`System.Threading.Tasks.Extensions`](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)
+> in order to use the <xref:System.Threading.Tasks.ValueTask%601> type.
+
+This enhancement is most useful for library authors to avoid allocating a `Task` in performance critical code.
 
 ## Local functions
 
@@ -258,6 +318,15 @@ exceptions arising from argument validation are thrown before the asynchronous
 work begins:
 
 [!code-csharp[TaskExample](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#TaskExample "Task returning method with local function")]
+
+This syntax is now supported:
+
+```csharp
+[field: SomeThingAboutFieldAttribute]
+public int SomeProperty { get; set; }
+```
+
+The attribute `SomeThingAboutFieldAttribute` is applied to the compiler generated backing field for `SomeProperty`. For more information, see [attributes](../programming-guide/concepts/attributes/index.md) in the C# programming guide.
 
 > [!NOTE]
 > Some of the designs that are supported by local functions can also be accomplished using *lambda expressions*. For more information, see [Local functions vs. lambda expressions](../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions).
@@ -298,29 +367,23 @@ constructs, C# 7.0 introduces [*throw expressions*](../language-reference/keywor
 
 This addition makes it easier to write more expression-based code. You don't need additional statements for error checking.
 
-## Generalized async return types
+## Default literal expressions
 
-Returning a `Task` object from async methods can introduce
-performance bottlenecks in certain paths. `Task` is a reference
-type, so using it means allocating an object. In cases where a
-method declared with the `async` modifier returns a cached result, or
-completes synchronously, the extra allocations can become a significant
-time cost in performance critical sections of code. It can become
-costly if those allocations occur in tight loops.
+Default literal expressions are an enhancement to default value expressions.
+These expressions initialize a variable to the default value. Where you previously
+would write:
 
-The new language feature means that async method return types aren't limited to `Task`, `Task<T>`, and `void`. The returned type
-must still satisfy the async pattern, meaning a `GetAwaiter` method
-must be accessible. As one concrete example, the `ValueTask` type
-has been added to .NET to make use of this new language
-feature:
+```csharp
+Func<string, bool> whereClause = default(Func<string, bool>);
+```
 
-[!code-csharp[UsingValueTask](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#UsingValueTask "Using ValueTask")]
+You can now omit the type on the right-hand side of the initialization:
 
-> [!NOTE]
-> You need to add the NuGet package [`System.Threading.Tasks.Extensions`](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)
-> in order to use the <xref:System.Threading.Tasks.ValueTask%601> type.
+```csharp
+Func<string, bool> whereClause = default;
+```
 
-This enhancement is most useful for library authors to avoid allocating a `Task` in performance critical code.
+For more information, see the [default literal](../language-reference/operators/default.md#default-literal) section of the [default operator](../language-reference/operators/default.md) article.
 
 ## Numeric literal syntax improvements
 
@@ -349,3 +412,281 @@ types as well:
 
 Taken together, you can declare numeric constants with much more
 readability.
+
+> 7.2
+The implementation of support for digit separators in C# 7.0
+didn't allow the `_` to be the first character of the literal value. Hex
+and binary numeric literals may now begin with an `_`.
+
+For example:
+
+```csharp
+int binaryValue = 0b_0101_0101;
+```
+
+## `out` variables
+
+The existing syntax that supports `out` parameters has been improved
+in this version. You can now declare `out` variables in the argument list of a method call,
+rather than writing a separate declaration statement:
+
+[!code-csharp[OutVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVariableDeclarations "Out variable declarations")]
+
+You may want to specify the type of the `out` variable for clarity,
+as shown above. However, the language does support using an implicitly
+typed local variable:
+
+[!code-csharp[OutVarVariableDeclarations](~/samples/snippets/csharp/new-in-7/program.cs#OutVarVariableDeclarations "Implicitly typed Out variable")]
+
+- The code is easier to read.
+  - You declare the out variable where you use it, not on another line above.
+- No need to assign an initial value.
+  - By declaring the `out` variable where it's used in a method call, you can't accidentally use it before it is assigned.
+
+The syntax added in C# 7.0 to allow `out` variable declarations has been extended to include field initializers, property initializers, constructor initializers, and query clauses. It enables code such as the following example:
+
+```csharp
+public class B
+{
+   public B(int i, out int j)
+   {
+      j = i;
+   }
+}
+
+public class D : B
+{
+   public D(int i) : base(i, out var j)
+   {
+      Console.WriteLine($"The value of 'j' is {j}");
+   }
+}
+```
+
+## Non-trailing named arguments
+
+Method calls may now use named arguments that precede positional arguments when those
+named arguments are in the correct positions. For more information see
+[Named and optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md).
+
+## *private protected* access modifier
+
+A new compound access modifier: `private protected` indicates that a member may be
+accessed by containing class or derived classes that are declared in the same assembly. While `protected internal`
+allows access by derived classes or classes that are in the same assembly, `private protected`
+limits access to derived types declared in the same assembly.
+
+For more information see [access modifiers](../language-reference/keywords/access-modifiers.md) in the language reference.
+
+## Improved overload candidates
+
+In every release, the overload resolution rules get updated to address situations where ambiguous method invocations have an "obvious" choice. This release adds three new rules to help the compiler pick the obvious choice:
+
+1. When a method group contains both instance and static members, the compiler discards the instance members if the method was invoked without an instance receiver or context. The compiler discards the static members if the method was invoked with an instance receiver. When there is no receiver, the compiler includes only static members in a static context, otherwise both static and instance members. When the receiver is ambiguously an instance or type, the compiler includes both. A static context, where an implicit `this` instance receiver cannot be used, includes the body of members where no `this` is defined, such as static members, as well as places where `this` cannot be used, such as field initializers and constructor-initializers.
+1. When a method group contains some generic methods whose type arguments do not satisfy their constraints, these members are removed from the candidate set.
+1. For a method group conversion, candidate methods whose return type doesn't match up with the delegate's return type are removed from the set.
+
+You'll only notice this change because you'll find fewer compiler errors for ambiguous method overloads when you are sure which method is better.
+
+## Enabling more efficient safe code
+
+You should be able to write C# code safely that performs as well as unsafe code. Safe code avoids classes of errors, such as buffer overruns, stray pointers, and other memory access errors. These new features expand the capabilities of verifiable safe code. Strive to write more of your code using safe constructs. These features make that easier.
+
+### Indexing `fixed` fields does not require pinning
+
+Consider this struct:
+
+```csharp
+unsafe struct S
+{
+    public fixed int myFixedField[10];
+}
+```
+
+In earlier versions of C#, you needed to pin a variable to access one of the integers that are part of `myFixedField`. Now, the following code compiles without pinning the variable `p` inside a separate `fixed` statement:
+
+```csharp
+class C
+{
+    static S s = new S();
+
+    unsafe public void M()
+    {
+        int p = s.myFixedField[5];
+    }
+}
+```
+
+The variable `p` accesses one element in `myFixedField`. You don't need to declare a separate `int*` variable. Note that you still need an `unsafe` context. In earlier versions of C#, you need to declare a second fixed pointer:
+
+```csharp
+class C
+{
+    static S s = new S();
+
+    unsafe public void M()
+    {
+        fixed (int* ptr = s.myFixedField)
+        {
+            int p = ptr[5];
+        }
+    }
+}
+```
+
+For more information, see the article on the [`fixed` statement](../language-reference/keywords/fixed-statement.md).
+
+### `ref` local variables may be reassigned
+
+Now, `ref` locals may be reassigned to refer to different instances after being initialized. The following code now compiles:
+
+```csharp
+ref VeryLargeStruct refLocal = ref veryLargeStruct; // initialization
+refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to different storage.
+```
+
+For more information, see the article on [`ref` returns and `ref` locals](../programming-guide/classes-and-structs/ref-returns.md), and the article on [`foreach`](../language-reference/keywords/foreach-in.md).
+
+### `stackalloc` arrays support initializers
+
+You've been able to specify the values for elements in an array when you initialize it:
+
+```csharp
+var arr = new int[3] {1, 2, 3};
+var arr2 = new int[] {1, 2, 3};
+```
+
+Now, that same syntax can be applied to arrays that are declared with `stackalloc`:
+
+```csharp
+int* pArr = stackalloc int[3] {1, 2, 3};
+int* pArr2 = stackalloc int[] {1, 2, 3};
+Span<int> arr = stackalloc [] {1, 2, 3};
+```
+
+For more information, see the [`stackalloc` operator](../language-reference/operators/stackalloc.md) article.
+
+### More types support the `fixed` statement
+
+The `fixed` statement supported a limited set of types. Starting with C# 7.3, any type that contains a `GetPinnableReference()` method that returns a `ref T` or `ref readonly T` may be `fixed`. Adding this feature means that `fixed` can be used with <xref:System.Span%601?displayProperty=nameWithType> and related types.
+
+For more information, see the [`fixed` statement](../language-reference/keywords/fixed-statement.md) article in the language reference.
+
+### Enhanced generic constraints
+
+You can now specify the type <xref:System.Enum?displayProperty=nameWithType> or <xref:System.Delegate?displayProperty=nameWithType> as base class constraints for a type parameter.
+
+You can also use the new `unmanaged` constraint, to specify that a type parameter must be a non-nullable [unmanaged type](../language-reference/builtin-types/unmanaged-types.md).
+
+For more information, see the articles on [`where` generic constraints](../language-reference/keywords/where-generic-type-constraint.md) and [constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md).
+
+Adding these constraints to existing types is an [incompatible change](version-update-considerations.md#incompatible-changes). Closed generic types may no longer meet these new constraints.
+
+Language features introduced in 7.2 let you work with value types
+while using reference semantics. They
+are designed to increase performance by minimizing copying value types without
+incurring the memory allocations associated with using reference types. The
+features include:
+
+- The `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method. Adding the `in` modifier to an argument is a [source compatible change](version-update-considerations.md#source-compatible-changes).
+- The `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object. Adding the `ref readonly` modifier is a [source compatible change](version-update-considerations.md#source-compatible-changes), if the return is assigned to a value. Adding the `readonly` modifier to an existing `ref` return statement is an [incompatible change](version-update-considerations.md#incompatible-changes). It requires callers to update the declaration of `ref` local variables to include the `readonly` modifier.
+- The `readonly struct` declaration, to indicate that a struct is immutable and should be passed as an `in` parameter to its member methods. Adding the `readonly` modifier to an existing struct declaration is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
+- The `ref struct` declaration, to indicate that a struct type accesses managed memory directly and must always be stack allocated. Adding the `ref` modifier to an existing `struct` declaration is an [incompatible change](version-update-considerations.md#incompatible-changes). A `ref struct` cannot be a member of a class or used in other locations where it may be allocated on the heap.
+
+> 7.3
+
+The following new features support the theme of better performance for safe code:
+
+- You can access fixed fields without pinning.
+- You can reassign `ref` local variables.
+- You can use initializers on `stackalloc` arrays.
+- You can use `fixed` statements with any type that supports a pattern.
+- You can use additional generic constraints.
+
+You can read more about all these changes in [Write safe efficient code](../write-safe-efficient-code.md).
+
+### Ref locals and returns
+
+This feature enables algorithms that use and return references
+to variables defined elsewhere. One example is working with
+large matrices, and finding a single location with certain
+characteristics. The following method returns a **reference** to that storage in the matrix:
+
+[!code-csharp[FindReturningRef](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#FindReturningRef "Find returning by reference")]
+
+You can declare the return value as a `ref` and modify that value in the matrix, as shown in the following code:
+
+[!code-csharp[AssignRefReturn](~/samples/snippets/csharp/new-in-7/Program.cs#AssignRefReturn "Assign ref return")]
+
+The C# language has several rules that protect you from misusing
+the `ref` locals and returns:
+
+- You must add the `ref` keyword to the method signature and to all `return` statements in a method.
+  - That makes it clear the method returns by reference throughout the method.
+- A `ref return` may be assigned to a value variable, or a `ref` variable.
+  - The caller controls whether the return value is copied or not. Omitting the `ref` modifier when assigning the return value indicates that the caller wants a copy of the value, not a reference to the storage.
+- You can't assign a standard method return value to a `ref` local variable.
+  - That disallows statements like `ref int i = sequence.Count();`
+- You can't return a `ref` to a variable whose lifetime doesn't extend beyond the execution of the method.
+  - That means you can't return a reference to a local variable or a variable with a similar scope.
+- `ref` locals and returns can't be used with async methods.
+  - The compiler can't know if the referenced variable has been set to its final value when the async method returns.
+
+The addition of ref locals and ref returns enables algorithms that are more
+efficient by avoiding copying values, or performing dereferencing operations
+multiple times.
+
+Adding `ref` to the return value is a [source compatible change](version-update-considerations.md#source-compatible-changes). Existing code compiles, but the ref return value is copied when assigned. Callers must update the storage for the return value to a `ref` local variable to store the return as a reference.
+
+For more information, see the [ref keyword](../language-reference/keywords/ref.md) article.
+
+### Conditional `ref` expressions
+
+Finally, the conditional expression may produce a ref result instead of a value result. For example, you would write the following to retrieve a reference to the first element in one of two arrays:
+
+```csharp
+ref var r = ref (arr != null ? ref arr[0] : ref otherArr[0]);
+```
+
+The variable `r` is a reference to the first value in either `arr` or `otherArr`.
+
+For more information, see [conditional operator (?:)](../language-reference/operators/conditional-operator.md) in the language reference.
+
+### `in` method overload resolution tiebreaker
+
+When the `in` argument modifier was added, these two methods would cause an ambiguity:
+
+```csharp
+static void M(S arg);
+static void M(in S arg);
+```
+
+Now, the by value (first in the preceding example) overload is better than the by readonly reference version. To call the version with the readonly reference argument, you must include the `in` modifier when calling the method.
+
+> [!NOTE]
+> This was implemented as a bug fix. This no longer is ambiguous even with the language version set to "7.2".
+
+For more information, see the article on the [`in` parameter modifier](../language-reference/keywords/in-parameter-modifier.md).
+
+## New compiler options
+
+New compiler options support new build and DevOps scenarios for C# programs.
+
+### Reference assembly generation
+
+There are two new compiler options that generate *reference-only assemblies*:
+[-refout](../language-reference/compiler-options/refout-compiler-option.md)
+and [-refonly](../language-reference/compiler-options/refonly-compiler-option.md).
+The linked articles explain these options and reference assemblies in more detail.
+
+### Public or Open Source signing
+
+The `-publicsign` compiler option instructs the compiler to sign the assembly using a public key. The assembly is marked as signed, but the signature is taken from the public key. This option enables you to build signed assemblies from open-source projects using a public key.
+
+For more information, see the [-publicsign compiler option](../language-reference/compiler-options/publicsign-compiler-option.md) article.
+
+### pathmap
+
+The `-pathmap` compiler option instructs the compiler to replace source paths from the build environment with mapped source paths. The `-pathmap` option controls the source path written by the compiler to PDB files or for the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>.
+
+For more information, see the [-pathmap compiler option](../language-reference/compiler-options/pathmap-compiler-option.md) article.

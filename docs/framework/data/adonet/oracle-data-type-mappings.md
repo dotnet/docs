@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ec34ae21-bbbb-4adb-b672-83865e2a8451
 ---
 # Oracle Data Type Mappings
+
 The following table lists Oracle data types and their mappings to the <xref:System.Data.OracleClient.OracleDataReader>.  
   
 |Oracle data type|.NET Framework data type returned by OracleDataReader.GetValue|OracleClient data type returned by OracleDataReader.GetOracleValue|Remarks|  

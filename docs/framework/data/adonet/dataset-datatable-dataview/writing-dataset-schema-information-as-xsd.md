@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 4e530831-695e-49ff-8f0b-e5b0c526b8eb
 ---
 # Writing DataSet Schema Information as XSD
+
 You can write the schema of a <xref:System.Data.DataSet> as XML Schema definition language (XSD) schema, so that you can transport it, with or without related data, in an XML document. XML Schema can be written to a file, a stream, an <xref:System.Xml.XmlWriter>, or a string; it is useful for generating a strongly typed **DataSet**. For more information about strongly typed **DataSet** objects, see [Typed DataSets](typed-datasets.md).  
   
  You can specify how a column of a table is represented in XML Schema using the **ColumnMapping** property of the <xref:System.Data.DataColumn> object. For more information, see "Mapping Columns to XML Elements, Attributes, and Text" in [Writing DataSet Contents as XML Data](writing-dataset-contents-as-xml-data.md).  

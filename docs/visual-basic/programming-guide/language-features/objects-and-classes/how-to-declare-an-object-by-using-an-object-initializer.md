@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 0f53a553-efd6-466d-80bf-6b679e5cd174
 ---
 # How to: Declare an Object by Using an Object Initializer (Visual Basic)
+
 Object initializers enable you to declare and instantiate an instance of a class in a single statement. In addition, you can initialize one or more members of the instance at the same time, without invoking a parameterized constructor.  
   
  When you use an object initializer to create an instance of a named type, the parameterless constructor for the class is called, followed by initialization of designated members in the order you specify.  

@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
 ---
 # Object variable or With block variable not set
+
 An invalid object variable is being referenced.   This error can occur for several reasons:
 
 - A variable was declared without specifying a type. If a variable is declared without specifying a type, it defaults to type `Object`.

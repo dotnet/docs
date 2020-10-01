@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 353f4ee2-e6bf-4b1c-b1c8-385fc8a486c0
 ---
 # Transaction Fundamentals
+
 Transactions bind multiple tasks together. For example, imagine that an application performs two tasks. First, it creates a new table in a database. Next, it calls a specialized object to collect, format, and insert data into the new table. These two tasks are related and even interdependent, such that you want to avoid creating a new table unless you can fill it with data. Executing both tasks within the scope of a single transaction enforces the connection between them. If the second task fails, the first task is rolled back to a point before the new table was created.  
   
  To ensure predictable behavior, all transactions must possess the basic ACID properties (atomic, consistent, isolated, and durable). These properties reinforce the role of mission-critical transactions as all-or-none propositions. For more information on ACID, please see [ACID Properties](/windows/win32/cossdk/acid-properties). In summary, ACID guarantees that a set of related tasks either succeed or fail as a unit. In transaction processing terminology, the transaction either commits or aborts. For a transaction to commit, all participants must guarantee that any change to data will be permanent. Changes must persist despite system crashes or other unforeseen events. If even a single participant fails to make this guarantee, the entire transaction fails. All changes to data within the scope of the transaction are rolled back to a specific set point.  

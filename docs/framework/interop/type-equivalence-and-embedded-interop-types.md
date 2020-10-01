@@ -49,5 +49,5 @@ If a type does not have the <xref:System.Runtime.InteropServices.TypeIdentifierA
 ## See also
 
 - <xref:System.Type.IsEquivalentTo%2A>
-- [Using COM Types in Managed Code](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))
+- [Using COM Types in Managed Code](/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)

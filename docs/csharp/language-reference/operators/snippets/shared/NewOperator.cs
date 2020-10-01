@@ -45,6 +45,22 @@ namespace operators
             // </SnippetConstructorWithInitializer>
         }
 
+        private static void TargetTyped()
+        {
+            // <SnippetTargetTyped>
+            List<int> xs = new();
+            List<int> ys = new(capacity: 10_000);
+            List<int> zs = new() { Capacity = 20_000 };
+
+            Dictionary<int, List<int>> lookup = new()
+            {
+                [1] = new() { 1, 2, 3 },
+                [2] = new() { 5, 8, 3 },
+                [5] = new() { 1, 0, 4 }
+            };
+            // </SnippetTargetTyped>
+        }
+
         private static void Array()
         {
             // <SnippetArray>

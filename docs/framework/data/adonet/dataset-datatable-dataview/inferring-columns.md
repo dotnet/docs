@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 0e022699-c922-454c-93e2-957dd7e7247a
 ---
 # Inferring Columns
+
 After ADO.NET has determined from an XML document which elements to infer as tables for a <xref:System.Data.DataSet>, it then infers the columns for those tables. ADO.NET 2.0 introduced a new schema inference engine that infers a strongly typed data type for each **simpleType** element. In previous versions, the data type of an inferred **simpleType** element was always **xsd:string**.  
   
 ## Migration and Backward Compatibility  
+
  The **ReadXml** method takes an argument of type **InferSchema**. This argument allows you to specify inference behavior compatible with previous versions. The available values for the **InferSchema** enumeration are shown in the following table.  
   
  <xref:System.Data.XmlReadMode.InferSchema>  
@@ -19,6 +21,7 @@ After ADO.NET has determined from an XML document which elements to infer as tab
  Ignores any inline schema and reads data into the existing <xref:System.Data.DataSet> schema.  
   
 ## Attributes  
+
  As defined in [Inferring Tables](inferring-tables.md), an element with attributes will be inferred as a table. The attributes of that element will then be inferred as columns for the table. The **ColumnMapping** property of the columns will be set to **MappingType.Attribute**, to ensure that the column names will be written as attributes if the schema is written back to XML. The values of the attributes are stored in a row in the table. For example, consider the following XML:  
   
 ```xml  
@@ -38,6 +41,7 @@ After ADO.NET has determined from an XML document which elements to infer as tab
 |value1|value2|  
   
 ## Elements Without Attributes or Child Elements  
+
  If an element has no child elements or attributes, it will be inferred as a column. The **ColumnMapping** property of the column will be set to **MappingType.Element**. The text for child elements is stored in a row in the table. For example, consider the following XML:  
   
 ```xml  

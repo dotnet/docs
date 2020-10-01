@@ -27,7 +27,7 @@ Microsoft actively develops and supports three .NET languages: C#, F#, and Visua
 
 * F# is a cross-platform, functional-first programming language that also supports traditional object-oriented and imperative programming. Check out the [F# Guide](../fsharp/index.yml) to learn more about F#.
 
-* Visual Basic is an easy language to learn that you use to build a variety of apps that run on .NET. Among the .NET languages, the syntax of Visual Basic is the closest to ordinary human language, often making it easier for people new to software development.
+* Visual Basic is an easy language to learn that you use to build a variety of apps that run on .NET. Among the .NET languages, the syntax of Visual Basic is the closest to ordinary human language, often making it easier for people new to software development. Check out the [Visual Basic Guide](../visual-basic/index.yml) to learn more about Visual Basic.
 
 ## Automatic memory management
 

@@ -12,7 +12,7 @@ Windows Communication Foundation (WCF) uses the .NET configuration system and al
   
 - [\<system.serviceModel>](../../configure-apps/file-schema/wcf/system-servicemodel.md)  
   
- Application-defined configurations settings are defined in the `<appSettings>` section group. For more information about application settings in .NET configuration files, see [\<appSettings>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms228154(v=vs.100)).  
+ Application-defined configurations settings are defined in the `<appSettings>` section group. For more information about application settings in .NET configuration files, see [\<appSettings>](/previous-versions/dotnet/netframework-4.0/ms228154(v=vs.100)).  
   
 ## Using the Configuration Editor  
  The WCF [Configuration Editor Tool (SvcConfigEditor.exe)](../configuration-editor-tool-svcconfigeditor-exe.md) allows administrators and developers to create and modify configuration settings for WCF services using a graphical user interface. With this tool, you can manage settings for WCF bindings, behaviors, services, and diagnostics without directly editing XML configuration files.  

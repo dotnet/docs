@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3b77b7e3-8b17-40de-b4e1-05e4b9b325ad
 ---
 # Unable to write temporary file because temporary path is not available
+
 Visual Basic could not determine the path where temporary files are stored.  
   
  **Error ID:** BC30698  

@@ -5,6 +5,7 @@ ms.assetid: bfdc127f-8d94-4566-8bef-f583c6ae7398
 author: "BrucePerlerMS"
 ---
 # \<cookieHandler>
+
 Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) uses to read and write cookies.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -60,6 +62,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
 |[\<federationConfiguration>](federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
   
 ## Remarks  
+
  The <xref:System.IdentityModel.Services.CookieHandler> is responsible for reading and writing raw cookies at the HTTP protocol level. You can configure either a <xref:System.IdentityModel.Services.ChunkedCookieHandler> or a custom cookie handler derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
   
  To configure a chunked cookie handler, set the mode attribute to "Chunked" or "Default". The default chunk size is 2000 bytes, but you may optionally specify a different chunk size by including a `<chunkedCookieHandler>` child element.  
@@ -69,6 +72,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
  The `<cookieHandler>` element is represented by the <xref:System.IdentityModel.Services.CookieHandlerElement> class. The cookie handler that was specified in configuration is available from the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> property of the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType> property.  
   
 ## Example  
+
  The following XML shows a `<cookieHandler>` element. In this example, because the `mode` attribute is not specified, the default cookie handler will be used by the SAM. This is an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class. Because the `<chunkedCookieHandler>` child element is not specified, the default chunk size will be used. HTTPS will not be required because the `requireSsl` attribute is set `false`.  
   
 > [!WARNING]

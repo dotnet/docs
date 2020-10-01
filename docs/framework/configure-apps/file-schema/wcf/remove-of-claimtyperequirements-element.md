@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8ef05bc4-1950-4ee4-95c5-1c6a394eff7e
 ---
 # \<remove> of \<claimTypeRequirements> element
+
 Specifies the types of claims to be removed in the federated credential.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies the types of claims to be removed in the federated credential.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -34,6 +36,7 @@ Specifies the types of claims to be removed in the federated credential.
 |claimType|A URI that defines the type of a claim to be removed.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

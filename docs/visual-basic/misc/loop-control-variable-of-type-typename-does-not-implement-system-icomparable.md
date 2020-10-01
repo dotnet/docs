@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 8dba1270-380a-4f05-8bad-1031e6a9cc90
 ---
 # Loop control variable of type '\<typename>' does not implement the 'System.IComparable' interface
+
 A variable is of a type that does not implement the `System.IComparable` interface. `System.IComparable` must be implemented by a value type or a class.  
   
 ## To correct this error  

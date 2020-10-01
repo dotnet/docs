@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0
 ---
 # -optimize (C# Compiler Options)
+
 The **-optimize** option enables or disables optimizations performed by the compiler to make your output file smaller, faster, and more efficient.  
   
 ## Syntax  
@@ -24,6 +25,7 @@ The **-optimize** option enables or disables optimizations performed by the comp
 ```  
   
 ## Remarks  
+
  **-optimize** also tells the common language runtime to optimize code at runtime.  
   
  By default, optimizations are disabled. Specify **-optimize+** to enable optimizations.  
@@ -45,6 +47,7 @@ The **-optimize** option enables or disables optimizations performed by the comp
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.Optimize%2A>.  
   
 ## Example  
+
  Compile `t2.cs` and enable compiler optimizations:  
   
 ```console  

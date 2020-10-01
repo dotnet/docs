@@ -31,9 +31,9 @@ For WCF, the following bindings are supported:
 |--|--|
 | `BasicHttp` |  |
 | `WSHttp` |  |
-| `WSDualHttpBinding` | [Web socket support](https://docs.microsoft.com/azure/app-service/web-sites-configure) must be enabled. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. |
-| `NetHttpBinding` | [Web socket support](https://docs.microsoft.com/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
-| `NetHttpsBinding` | [Web socket support](https://docs.microsoft.com/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
+| `WSDualHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled. |
+| `NetHttpBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
+| `NetHttpsBinding` | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. | [Web socket support](/azure/app-service/web-sites-configure) must be enabled for duplex contracts. |
 | `BasicHttpContextBinding` |  |
 | `WebHttpBinding` |  |
 | `WSHttpContextBinding` |  |
@@ -56,7 +56,7 @@ IIS5 Compatibility Mode is not supported. In Azure App Service, each web app and
 
 #### IIS7+ schema compliance
 
-Some elements and attributes are not defined in the Azure App Service IIS schema. If you encounter issues, consider using [XDT transforms](https://azure.microsoft.com/documentation/articles/web-sites-transform-extend/).
+Some elements and attributes are not defined in the Azure App Service IIS schema. If you encounter issues, consider using [XDT transforms](/azure/app-service/configure-common).
 
 #### Single application pool per site
 

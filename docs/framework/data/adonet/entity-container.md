@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 16e80405-2c75-42fc-b0e4-b1df53b1c584
 ---
 # entity container
+
 An *entity container* is a logical grouping of [entity sets](entity-set.md), [association sets](association-set.md), and [function imports](model-declared-function.md).  
   
  The following must be true of an entity container defined in a conceptual model:  
@@ -15,6 +16,7 @@ An *entity container* is a logical grouping of [entity sets](entity-set.md), [as
  An entity container can define entity sets or association sets that use entity types or associations defined in one or more namespaces. For more information, see [Entity Data Model: Namespaces](entity-data-model-namespaces.md).  
   
 ## Example  
+
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`.  See the next example for more information.  
   
  ![Example model with three entity types](./media/entity-container/example-model-three-entity-types.gif)  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3713bf25-20c8-455f-bb85-de46b6487932
 ---
 # \<add> of \<commonParameters>
+
 Specifies a name-value pair of parameters that are used globally across multiple services. Typically this parameter includes the database connection string that might be shared by durable services.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Specifies a name-value pair of parameters that are used globally across multiple
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Specifies a name-value pair of parameters that are used globally across multiple
 |value|The value of the parameter specified for a service.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -45,6 +48,7 @@ Specifies a name-value pair of parameters that are used globally across multiple
 |[\<commonParameters>](commonparameters.md)|A collection of common parameters used by services. This collection will typically include the database connection string that might be shared by durable services.|  
   
 ## Remarks  
+
  The `<commonParameters>` element defines any parameters that are used globally across multiple services, for example `ConnectionString` when using the <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>.  
   
  For services that commit work batches to persistence stores, such as <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> and <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>, you can enable them to retry their transaction by using the `EnableRetries` parameter as shown in the following example:  
@@ -67,7 +71,7 @@ Specifies a name-value pair of parameters that are used globally across multiple
   
  Notice that the `EnableRetries` parameter can be set at either a global level (as shown in the *CommonParameters* section) or for individual services that support `EnableRetries` (as shown in the *Services* section).  
   
- For more information on using a configuration file to control the behavior of a <xref:System.Workflow.Runtime.WorkflowRuntime> object of a Windows Workflow Foundation host application, see [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).  
+ For more information on using a configuration file to control the behavior of a <xref:System.Workflow.Runtime.WorkflowRuntime> object of a Windows Workflow Foundation host application, see [Workflow Configuration Files](/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).  
   
 ## Example  
   
@@ -87,5 +91,5 @@ Specifies a name-value pair of parameters that are used globally across multiple
 - <xref:System.Workflow.Runtime.WorkflowRuntime>
 - <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService>
 - <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>
-- [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
+- [Workflow Configuration Files](/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
 - [\<commonParameters>](commonparameters.md)

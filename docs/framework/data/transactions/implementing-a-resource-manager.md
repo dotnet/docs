@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: d5c153f6-4419-49e3-a5f1-a50ae4c81bf3
 ---
 # Implementing a Resource Manager
+
 Each resource used in a transaction is managed by a resource manager, whose actions are coordinated by a transaction manager. Resource managers work in cooperation with the transaction manager to provide the application with a guarantee of atomicity and isolation. Microsoft SQL Server, durable message queues, in-memory hash tables are all examples of resource managers.  
   
  A resource manager manages either durable or volatile data. The durability (or conversely the volatility) of a resource manager refers to whether the resource manager supports failure recovery. If a resource manager supports failure recovery, it persists data to durable storage during Phase1 (prepare) such that if the resource manager goes down, it can re-enlist in the transaction upon recovery and perform the proper actions based on the notifications received from the transaction manager. In general, volatile resource managers manage volatile resources such as an in-memory data structure (for example, an in-memory transacted-hashtable), and durable resource managers manage resources that have a more persistent backing store (for example, a database whose backing store is disk).  
@@ -28,6 +29,7 @@ Each resource used in a transaction is managed by a resource manager, whose acti
  The <xref:System.Transactions.Transaction> class also provides the <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A> method to enlist a Promotable Single Phase Enlistment (PSPE). This allows a durable resource manager (RM) to host and "own" a transaction that can later be escalated to be managed by the MSDTC if necessary. For more information on this, see [Optimization using Single Phase Commit and Promotable Single Phase Notification](optimization-spc-and-promotable-spn.md).  
   
 ## In This Section  
+
  The steps generally followed by a resource manager are outlined in the following topics.  
   
  [Enlisting Resources as Participants in a Transaction](enlisting-resources-as-participants-in-a-transaction.md)  

@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: c5670e88-2126-47c1-8d1c-217923837d17
 ---
 # -target:library (C# Compiler Options)
+
 The **-target:library** option causes the compiler to create a dynamic-link library (DLL) rather than an executable file (EXE).  
   
 ## Syntax  
@@ -20,6 +21,7 @@ The **-target:library** option causes the compiler to create a dynamic-link libr
 ```  
   
 ## Remarks  
+
  The DLL will be created with the .dll extension.  
   
  Unless otherwise specified with the [-out](./out-compiler-option.md) option, the output file name takes the name of the first input file.  
@@ -39,6 +41,7 @@ The **-target:library** option causes the compiler to create a dynamic-link libr
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## Example  
+
  Compile `in.cs`, creating `in.dll`:  
   
 ```console  

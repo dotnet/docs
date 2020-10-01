@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d4dde6ac-b8b6-4593-965a-635c8fb2dadb
 ---
 # Bulk Copy Example Setup
+
 The <xref:System.Data.SqlClient.SqlBulkCopy> class can be used to write data only to SQL Server tables. The code samples shown in this topic use the SQL Server sample database, **AdventureWorks**. To avoid altering the existing tables code samples write data to tables that you must create first.  
   
  The **BulkCopyDemoMatchingColumns** and **BulkCopyDemoDifferentColumns** tables are both based on the **AdventureWorks** **Production.Products** table. In code samples that use these tables, data is added from the **Production.Products** table to one of these sample tables. The **BulkCopyDemoDifferentColumns** table is used when the sample illustrates how to map columns from the source data to the destination table; **BulkCopyDemoMatchingColumns** is used for most other samples.  
@@ -14,6 +15,7 @@ The <xref:System.Data.SqlClient.SqlBulkCopy> class can be used to write data onl
 > The **SqlBulkCopy** code samples are provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are located in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
   
 ## Table Setup  
+
  To create the tables necessary for the code samples to run correctly, you must run the following Transact-SQL statements in a SQL Server database.  
   
 ```sql

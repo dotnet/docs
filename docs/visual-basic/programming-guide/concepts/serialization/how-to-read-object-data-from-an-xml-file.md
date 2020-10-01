@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 1e1423bf-74a4-4dde-a3bb-ae1bfc0a68ed
 ---
 # How to: Read Object Data from an XML File (Visual Basic)
+
 This example reads object data that was previously written to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
   
 ## Example  
@@ -24,6 +25,7 @@ End Sub
 ```  
   
 ## Compile the code  
+
  Replace the file name "c:\temp\SerializationOverview.xml" with the name of the file containing the serialized data. For more information about serializing data, see [How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md).  
   
  The class must have a public constructor without parameters.  
@@ -31,6 +33,7 @@ End Sub
  Only public properties and fields are deserialized.  
   
 ## Robust Programming  
+
  The following conditions may cause an exception:  
   
 - The class being serialized does not have a public, parameterless constructor.  
@@ -40,6 +43,7 @@ End Sub
 - The file does not exist (<xref:System.IO.IOException>).  
   
 ## .NET Framework Security  
+
  Always verify inputs, and never deserialize data from an untrusted source. The re-created object runs on a local computer with the permissions of the code that deserialized it. Verify all inputs before using the data in your application.  
   
 ## See also

@@ -40,9 +40,9 @@ To get started with developing an ASP.NET Core application using CI/CD, you can 
 
 To create a release pipeline for your app, you need to have your application code in source control. Set up a local repository and connect it to a remote repository in a team project. Follow these instructions:
 
-- [Share your code with Git and Visual Studio](https://docs.microsoft.com/azure/devops/git/share-your-code-in-git-vs) or
+- [Share your code with Git and Visual Studio](/azure/devops/git/share-your-code-in-git-vs) or
 
-- [Share your code with TFVC and Visual Studio](https://docs.microsoft.com/azure/devops/tfvc/share-your-code-in-tfvc-vs)
+- [Share your code with TFVC and Visual Studio](/azure/devops/tfvc/share-your-code-in-tfvc-vs)
 
 Create an Azure App Service where you'll deploy your application. Create a Web App by going to the App Services blade on the Azure portal. Click +Add, select the Web App template, click Create, and provide a name and other details. The web app will be accessible from {name}.azurewebsites.net.
 
@@ -52,13 +52,13 @@ Create an Azure App Service where you'll deploy your application. Create a Web A
 
 Your CI build process will perform an automated build whenever new code is committed to the project's source control repository. This gives you immediate feedback that the code builds (and, ideally, passes automated tests) and can potentially be deployed. This CI build will produce a web deploy package artifact and publish it for consumption by your CD process.
 
-[Define your CI build process](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/dotnet-core)
+[Define your CI build process](/azure/devops/pipelines/ecosystems/dotnet-core)
 
 Be sure to enable continuous integration so the system will queue a build whenever someone on your team commits new code. Test the build and verify that it is producing a web deploy package as one of its artifacts.
 
 When a build succeeds, your CD process will deploy the results of your CI build to your Azure web app. To configure this, you create and configure a *Release*, which will deploy to your Azure App Service.
 
-[Deploy an Azure web app](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp)
+[Deploy an Azure web app](/azure/devops/pipelines/targets/webapp)
 
 Once your CI/CD pipeline is configured, you can simply make updates to your web app and commit them to source control to have them deployed.
 
@@ -76,7 +76,7 @@ Developing your ASP.NET Core application for deployment to Azure is no different
 
 #### Step 2. Application code repository
 
-Whenever you're ready to share your code with your team, you should push your changes from your local source repository to your team's shared source repository. If you've been working in a custom branch, this step usually involves merging your code into a shared branch (perhaps by means of a [pull request](https://docs.microsoft.com/azure/devops/git/pull-requests)).
+Whenever you're ready to share your code with your team, you should push your changes from your local source repository to your team's shared source repository. If you've been working in a custom branch, this step usually involves merging your code into a shared branch (perhaps by means of a [pull request](/azure/devops/git/pull-requests)).
 
 #### Step 3. Build Server: Continuous integration. build, test, package
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 5f34cf47-6c6e-4954-bd8e-d6b020b75fb7
 ---
 # Reference required to assembly '\<assemblyname>' containing the base class '\<classname>'
+
 Reference required to assembly '\<assemblyname>' containing the base class '\<classname>'. Add one to your project.  
   
  The class is defined in a dynamic-link library (DLL) or assembly that is not directly referenced in your project. The Visual Basic compiler requires a reference to avoid ambiguity in case the class is defined in more than one DLL or assembly.  

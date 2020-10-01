@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: c3133d53-83ed-4a4d-af8b-82edcf3831db
 ---
 # Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)
+
 When you serialize entity objects such as Customers or Orders to a client over a network, those entities are detached from their data context. The data context no longer tracks their changes or their associations with other objects. This is not an issue as long as the clients are only reading the data. It is also relatively simple to enable clients to add new rows to a database. However, if your application requires that clients be able to update or delete data, then you must attach the entities to a new data context before you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A?displayProperty=nameWithType>. In addition, if you are using an optimistic concurrency check with original values, then you will also need a way to provide the database both the original entity and the entity as modified. The `Attach` methods are provided to enable you to put entities into a new data context after they have been detached.  
   
  Even if you are serializing proxy objects in place of the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] entities, you still have to construct an entity on the data access layer (DAL), and attach it to a new <xref:System.Data.Linq.DataContext?displayProperty=nameWithType>, in order to submit the data to the database.  
@@ -19,6 +20,7 @@ When you serialize entity objects such as Customers or Orders to a client over a
 ## Retrieving Data  
   
 ### Client Method Call  
+
  The following examples show a sample method call to the DAL from a Windows Forms client. In this example, the DAL is implemented as a Windows Service Library:  
   
 ```vb  
@@ -77,6 +79,7 @@ private void GetProdsByCat_Click(object sender, EventArgs e)
 ```  
   
 ### Middle Tier Implementation  
+
  The following example shows an implementation of the interface method on the middle tier. The following are the two main points to note:  
   
 - The <xref:System.Data.Linq.DataContext> is declared at method scope.  
@@ -118,9 +121,11 @@ public IEnumerable<Product> GetProductsByCategory(int categoryID)
  This method will return Product objects but not the collection of Order_Detail objects that are associated with each Product. Use the <xref:System.Data.Linq.DataLoadOptions> object to change this default behavior. For more information, see [How to: Control How Much Related Data Is Retrieved](how-to-control-how-much-related-data-is-retrieved.md).  
   
 ## Inserting Data  
+
  To insert a new object, the presentation tier just calls the relevant method on the middle tier interface, and passes in the new object to insert. In some cases, it may be more efficient for the client to pass in only some values and have the middle tier construct the full object.  
   
 ### Middle Tier Implementation  
+
  On the middle tier, a new <xref:System.Data.Linq.DataContext> is created, the object is attached to the <xref:System.Data.Linq.DataContext> by using the <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A> method, and the object is inserted when <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. Exceptions, callbacks, and error conditions can be handled just as in any other Web service scenario.  
   
 ```vb  
@@ -149,6 +154,7 @@ End Sub
 ```  
   
 ## Deleting Data  
+
  To delete an existing object from the database, the presentation tier calls the relevant method on the middle tier interface, and passes in its copy that includes original values of the object to be deleted.  
   
  Delete operations involve optimistic concurrency checks, and the object to be deleted must first be attached to the new data context. In this example, the `Boolean` parameter is set to `false` to indicate that the object does not have a timestamp (RowVersion). If your database table does generate timestamps for each record, then concurrency checks are much simpler, especially for the client. Just pass in either the original or modified object and set the `Boolean` parameter to `true`. In any case, on the middle tier it is typically necessary to catch the <xref:System.Data.Linq.ChangeConflictException>. For more information about how to handle optimistic concurrency conflicts, see [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md).  
@@ -202,6 +208,7 @@ public void DeleteOrder(Order order)
 ```  
   
 ## Updating Data  
+
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports updates in these scenarios involving optimistic concurrency:  
   
 - Optimistic concurrency based on timestamps or RowVersion numbers.  
@@ -258,6 +265,7 @@ catch(ChangeConflictException e)
 ```  
   
 ### With Subset of Original Values  
+
  In this approach, the client returns the complete serialized object, together with the values to be modified.  
   
 ```vb  
@@ -371,6 +379,7 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
  To update a collection, call <xref:System.Data.Linq.ITable.AttachAll%2A> instead of `Attach`.  
   
 ### Expected Entity Members  
+
  As stated previously, only certain members of the entity object are required to be set before you call the `Attach` methods. Entity members that are required to be set must fulfill the following criteria:  
   
 - Be part of the entity’s identity.  
@@ -386,6 +395,7 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
  If any one of these required members is missing, a <xref:System.Data.Linq.ChangeConflictException> is thrown during <xref:System.Data.Linq.DataContext.SubmitChanges%2A> ("Row not found or changed").  
   
 ### State  
+
  After an entity object is attached to the <xref:System.Data.Linq.DataContext> instance, the object is considered to be in the `PossiblyModified` state. There are three ways to force an attached object to be considered `Modified`.  
   
 1. Attach it as unmodified, and then directly modify the fields.  

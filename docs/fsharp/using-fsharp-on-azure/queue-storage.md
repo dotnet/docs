@@ -3,6 +3,7 @@ title: Get started with Azure Queue storage using F#
 description: Azure Queues provide reliable, asynchronous messaging between application components. Cloud messaging enables your application components to scale independently.
 author: sylvanc
 ms.date: 09/20/2016
+ms.custom: "devx-track-fsharp"
 ---
 # Get started with Azure Queue storage using F\#
 
@@ -165,6 +166,6 @@ to learn about more complex storage tasks.
 
 - [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
 - [Azure Storage Type Provider](https://github.com/fsprojects/AzureStorageTypeProvider)
-- [Azure Storage Team Blog](https://docs.microsoft.com/archive/blogs/windowsazurestorage/)
+- [Azure Storage Team Blog](/archive/blogs/windowsazurestorage/)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Azure Storage Services REST API Reference](/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)

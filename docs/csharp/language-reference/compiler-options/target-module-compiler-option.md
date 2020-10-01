@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 9af1e4fa-c749-44e7-ae58-90a3d05d4e72
 ---
 # -target:module (C# Compiler Options)
+
 This option causes the compiler to not generate an assembly manifest.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ This option causes the compiler to not generate an assembly manifest.
 ```  
   
 ## Remarks  
+
  By default, the output file created by compiling with this option will have an extension of .netmodule.  
   
  A file that does not have an assembly manifest cannot be loaded by the .NET runtime. However, such a file can be incorporated into the assembly manifest of an assembly by means of [-addmodule](./addmodule-compiler-option.md).  
@@ -31,6 +33,7 @@ This option causes the compiler to not generate an assembly manifest.
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## Example  
+
  Compile `in.cs`, creating `in.netmodule`:  
   
 ```console  

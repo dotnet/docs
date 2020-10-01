@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 57addb16-6f9a-444d-8af8-dda52431daca
 ---
 # File not found (Visual Basic Run-Time Error)
+
 The file was not found where specified. The error has the following possible causes:  
   
 - A statement refers to a file that does not exist.  

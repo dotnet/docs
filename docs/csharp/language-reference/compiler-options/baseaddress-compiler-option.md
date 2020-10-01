@@ -11,7 +11,8 @@ helpviewer_keywords:
 ms.assetid: ce13c965-dfe4-4433-94f5-63b476e3a608
 ---
 # -baseaddress (C# Compiler Options)
-The **-baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Larry Osterman's WebLog](https://docs.microsoft.com/archive/blogs/larryosterman/why-should-i-even-bother-to-use-dlls-in-my-system).  
+
+The **-baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Larry Osterman's WebLog](/archive/blogs/larryosterman/why-should-i-even-bother-to-use-dlls-in-my-system).  
   
 ## Syntax  
   
@@ -20,10 +21,12 @@ The **-baseaddress** option lets you specify the preferred base address at which
 ```  
   
 ## Arguments  
+
  `address`  
  The base address for the DLL. This address can be specified as a decimal, hexadecimal, or octal number.  
   
 ## Remarks  
+
  The default base address for a DLL is set by the .NET common language runtime.  
   
  Be aware that the lower-order word in this address will be rounded. For example, if you specify 0x11110001, it will be rounded to 0x11110000.  

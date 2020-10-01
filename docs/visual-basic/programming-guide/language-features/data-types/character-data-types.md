@@ -10,11 +10,13 @@ helpviewer_keywords:
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
 ---
 # Character Data Types (Visual Basic)
+
 Visual Basic provides *character data types* to deal with printable and displayable characters. While they both deal with Unicode characters, `Char` holds a single character whereas `String` contains an indefinite number of characters.  
   
  For a table that displays a side-by-side comparison of the Visual Basic data types, see [Data Types](../../../language-reference/data-types/index.md).  
   
 ## Char Type  
+
  The `Char` data type is a single two-byte (16-bit) Unicode character. If a variable always stores exactly one character, declare it as `Char`. For example:  
   
  [!code-vb[VbVbalrCharTypes#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrchartypes/vb/module1.vb#1)]
@@ -27,6 +29,7 @@ Visual Basic provides *character data types* to deal with printable and displaya
  For more information, see [Char Data Type](../../../language-reference/data-types/char-data-type.md).  
   
 ## String Type  
+
  The `String` data type is a sequence of zero or more two-byte (16-bit) Unicode characters. If a variable can contain an indefinite number of characters, declare it as `String`. For example:  
   
  [!code-vb[VbVbalrCharTypes#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrchartypes/vb/module1.vb#2)]

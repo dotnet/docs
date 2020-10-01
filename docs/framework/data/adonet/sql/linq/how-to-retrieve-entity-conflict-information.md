@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: 9a02b608-e7bb-4041-a452-a7fed26fd008
 ---
 # How to: Retrieve Entity Conflict Information
+
 You can use objects of the <xref:System.Data.Linq.ObjectChangeConflict> class to provide information about conflicts revealed by <xref:System.Data.Linq.ChangeConflictException> exceptions. For more information, see [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md).  
   
 ## Example  
+
  The following example iterates through a list of accumulated conflicts.  
   
  [!code-csharp[System.Data.Linq.ObjectChangeConflict#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.objectchangeconflict/cs/program.cs#1)]

@@ -9,6 +9,7 @@ dev_langs:
 ms.assetid: 8ee8e389-53cf-45cf-80bd-1df63ef34f2e
 ---
 # Oracle and ADO.NET
+
 > [!NOTE]
 > The types in <xref:System.Data.OracleClient> are deprecated. The types remain supported in the current version of.NET Framework but will be removed in a future release. Microsoft recommends that you use a third-party Oracle provider.  
   
@@ -33,6 +34,7 @@ csc /r:System.Data.OracleClient.dll
 ```  
   
 ## In This Section  
+
  [System Requirements](system-requirements-for-the-dotnet-data-provider-for-oracle.md)  
  Describes requirements for using the .NET Framework Data Provider for Oracle, and describes a number of issues to be aware when using it.  
   
@@ -58,6 +60,7 @@ csc /r:System.Data.OracleClient.dll
  Describes how the <xref:System.Data.OracleClient.OracleConnection> object automatically enlists in an existing distributed transaction if it determines that a transaction is active.  
   
 ## Related Sections  
+
  [Securing ADO.NET Applications](securing-ado-net-applications.md)  
  Describes secure coding practices when using ADO.NET.  
   

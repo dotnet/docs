@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 51ca1f59-7770-4884-8b76-113002e54fc0
 ---
 # How to: Count, Sum, or Average Data by Using LINQ (Visual Basic)
+
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
   
  The following example shows how to create a new application that performs queries against a SQL Server database. The sample counts, sums, and averages the results by using the `Aggregate` and `Group By` clauses. For more information, see [Aggregate Clause](../../../language-reference/queries/aggregate-clause.md) and [Group By Clause](../../../language-reference/queries/group-by-clause.md).  

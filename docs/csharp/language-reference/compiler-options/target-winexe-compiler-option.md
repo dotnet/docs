@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: b5a0619c-8caa-46a5-a743-1cf68408ad7a
 ---
 # -target:winexe (C# Compiler Options)
+
 The **-target:winexe** option causes the compiler to create an executable (EXE), Windows program.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ The **-target:winexe** option causes the compiler to create an executable (EXE),
 ```  
   
 ## Remarks  
+
  The executable file will be created with the .exe extension. A Windows program is one that provides a user interface from either the .NET library or with the Windows APIs.  
   
  Use [-target:exe](./target-exe-compiler-option.md) to create a console application.  
@@ -41,6 +43,7 @@ The **-target:winexe** option causes the compiler to create an executable (EXE),
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## Example  
+
  Compile `in.cs` into a Windows program:  
   
 ```console  

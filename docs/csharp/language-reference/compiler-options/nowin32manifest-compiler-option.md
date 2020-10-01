@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 6f06365b-b87b-46a2-b187-b3bfeaf4862d
 ---
 # -nowin32manifest (C# Compiler Options)
+
 Use the **-nowin32manifest** option to instruct the compiler not to embed any application manifest into the executable file.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ Use the **-nowin32manifest** option to instruct the compiler not to embed any ap
 ```  
   
 ## Remarks  
+
  When this option is used, the application will be subject to virtualization on Windows Vista unless you provide an application manifest in a Win32 Resource file or during a later build step.  
   
  In Visual Studio, set this option in the **Application Property** page by selecting the **Create Application Without a Manifest** option in the **Manifest** drop down list. For more information, see [Application Page, Project Designer (C#)](/visualstudio/ide/reference/application-page-project-designer-csharp).  

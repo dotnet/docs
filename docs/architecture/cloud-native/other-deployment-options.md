@@ -22,13 +22,13 @@ To deploy to [Azure App Service for Containers](https://azure.microsoft.com/serv
 
 ## How to deploy an app to Azure Container Instances
 
-To deploy to [Azure Container Instances (ACI)](https://docs.microsoft.com/azure/container-instances/), you need an Azure Container Registry (ACR) and credentials for accessing it. Once you push your container image to the repository, it's available to pull into ACI. You can work with ACI using the Azure portal or command-line interface. ACR provides tight integration with ACI. Figure 3-14 shows how to push an individual container image to ACR.
+To deploy to [Azure Container Instances (ACI)](/azure/container-instances/), you need an Azure Container Registry (ACR) and credentials for accessing it. Once you push your container image to the repository, it's available to pull into ACI. You can work with ACI using the Azure portal or command-line interface. ACR provides tight integration with ACI. Figure 3-14 shows how to push an individual container image to ACR.
 
 ![Azure Container Registry Run Instance](./media/acr-runinstance-contextmenu.png)
 
 **Figure 3-14**. Azure Container Registry Run Instance
 
-Creating an instance in ACI can be done quickly. Specify the image registry, Azure resource group information, the amount of memory to allocate, and the port on which to listen. This [quickstart shows how to deploy a container instance to ACI using the Azure portal](https://docs.microsoft.com/azure/container-instances/container-instances-quickstart-portal).
+Creating an instance in ACI can be done quickly. Specify the image registry, Azure resource group information, the amount of memory to allocate, and the port on which to listen. This [quickstart shows how to deploy a container instance to ACI using the Azure portal](/azure/container-instances/container-instances-quickstart-portal).
 
 Once the deployment completes, find the newly deployed container's IP address and communicate with it over the port you specified.
 
@@ -39,22 +39,22 @@ Azure Container Instances offers the fastest way to run simple container workloa
 - [What is Kubernetes?](https://blog.newrelic.com/engineering/what-is-kubernetes/)
 - [Installing Kubernetes with Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)
 - [MiniKube vs Docker Desktop](https://medium.com/containers-101/local-kubernetes-for-windows-minikube-vs-docker-desktop-25a1c6d3b766)
-- [Visual Studio Tools for Docker](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
+- [Visual Studio Tools for Docker](/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
 - [Understanding serverless cold start](https://azure.microsoft.com/blog/understanding-serverless-cold-start/)
-- [Pre-warmed Azure Functions instances](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances)
-- [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Pre-warmed Azure Functions instances](/azure/azure-functions/functions-premium-plan#pre-warmed-instances)
+- [Create a function on Linux using a custom image](/azure/azure-functions/functions-create-function-linux-custom-image)
 - [Run Azure Functions in a Docker Container](https://markheath.net/post/azure-functions-docker)
-- [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
-- [Azure Functions with Kubernetes Event Driven Autoscaling](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda)
+- [Create a function on Linux using a custom image](/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Azure Functions with Kubernetes Event Driven Autoscaling](/azure/azure-functions/functions-kubernetes-keda)
 - [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
-- [Azure Dev Spaces with VS Code](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore)
-- [Azure Dev Spaces with Visual Studio](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio)
-- [AKS Multiple Node Pools](https://docs.microsoft.com/azure/aks/use-multiple-node-pools)
-- [AKS Cluster Autoscaler](https://docs.microsoft.com/azure/aks/cluster-autoscaler)
-- [Tutorial: Scale applications in AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale)
-- [Azure Functions scale and hosting](https://docs.microsoft.com/azure/azure-functions/functions-scale)
-- [Azure Container Instances Docs](https://docs.microsoft.com/azure/container-instances/)
-- [Deploy Container Instance from ACR](https://docs.microsoft.com/azure/container-instances/container-instances-using-azure-container-registry#deploy-with-azure-portal)
+- [Azure Dev Spaces with VS Code](/azure/dev-spaces/quickstart-netcore)
+- [Azure Dev Spaces with Visual Studio](/azure/dev-spaces/quickstart-netcore-visualstudio)
+- [AKS Multiple Node Pools](/azure/aks/use-multiple-node-pools)
+- [AKS Cluster Autoscaler](/azure/aks/cluster-autoscaler)
+- [Tutorial: Scale applications in AKS](/azure/aks/tutorial-kubernetes-scale)
+- [Azure Functions scale and hosting](/azure/azure-functions/functions-scale)
+- [Azure Container Instances Docs](/azure/container-instances/)
+- [Deploy Container Instance from ACR](/azure/container-instances/container-instances-using-azure-container-registry#deploy-with-azure-portal)
 
 >[!div class="step-by-step"]
 >[Previous](scale-containers-serverless.md)

@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: a0160b1b-3d9c-4cc8-8391-cb0986a60a41
 ---
 # Data Services Providers (WCF Data Services)
+
 WCF Data Services supports multiple provider models for exposing data as an Open Data Protocol (OData) feed. This topic provides information to enable you to select the best WCF Data Services provider for your data source.  
   
 ## Data Source Providers  
+
  WCF Data Services supports the following providers for defining the data model of a data service.  
   
 |Provider|Description|  
@@ -18,6 +20,7 @@ WCF Data Services supports multiple provider models for exposing data as an Open
 |Custom Data Service Providers|WCF Data Services includes a set of providers that enable you to dynamically define a data model based on late-bound data types. You should implement these interfaces when the data being exposed is not known when the application is being designed or when the Entity Framework or reflection providers are not sufficient. For more information, see [Custom Data Service Providers](custom-data-service-providers-wcf-data-services.md).|  
   
 ## Other Data Service Providers  
+
  WCF Data Services has the following additional data service provider that enhances the performance of a data source defined by using one of the other providers.  
   
 |Provider|Description|  

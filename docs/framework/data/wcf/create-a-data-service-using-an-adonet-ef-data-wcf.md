@@ -39,7 +39,7 @@ The Entity Framework also provides a command line tool that can generate an Enti
 
 9. Click **Finish** to complete the wizard.
 
-     This creates a default data model based on the specific database. The Entity Framework enables to customize the data model. For more information, see [Entity Data Model Tools Tasks](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738480(v=vs.100)).
+     This creates a default data model based on the specific database. The Entity Framework enables to customize the data model. For more information, see [Entity Data Model Tools Tasks](/previous-versions/dotnet/netframework-4.0/bb738480(v=vs.100)).
 
 ## To create the data service by using the new data model
 

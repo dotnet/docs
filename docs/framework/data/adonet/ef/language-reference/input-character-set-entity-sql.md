@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 13d291d3-e6bc-4719-b953-758b61a590b6
 ---
 # Input Character Set (Entity SQL)
+
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] accepts UNICODE characters encoded in UTF-16.  
   
  String literals can contain any UTF-16 character enclosed in single quotes. For example, N'文字列リテラル'. When string literals are compared, the original UTF-16 values are used. For example, N'ABC' is different in Japanese and Latin codepages.  

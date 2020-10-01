@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: fceff7d2-a1b7-44c7-b9aa-8bd831d8a444
 ---
 # Array Conversions (Visual Basic)
+
 You can convert an array type to a different array type provided you meet the following conditions:  
   
 - **Equal Rank.** The ranks of the two arrays must be the same, that is, they must have the same number of dimensions. However, the lengths of the respective dimensions do not need to be the same.  
@@ -25,6 +26,7 @@ You can convert an array type to a different array type provided you meet the fo
  A conversion of one array type to another is widening or narrowing depending on whether the conversion of the respective elements is widening or narrowing. For more information, see [Widening and Narrowing Conversions](widening-and-narrowing-conversions.md).  
   
 ## Conversion to an Object Array  
+
  When you declare an `Object` array without initializing it, its element type is `Object` as long as it remains uninitialized. When you set it to an array of a specific class, it takes on the type of that class. However, its underlying type is still `Object`, and you can subsequently set it to another array of an unrelated class. Since all classes derive from `Object`, you can change the array's element type from any class to any other class.  
   
  In the following example, no conversion exists between types `student` and `String`, but both derive from `Object`, so all assignments are valid.  
@@ -41,6 +43,7 @@ testArray = names
 ```  
   
 ### Underlying Type of an Array  
+
  If you originally declare an array with a specific class, its underlying element type is that class. If you subsequently set it to an array of another class, there must be a conversion between the two classes.  
   
  In the following example, `students` is a `student` array. Since no conversion exists between `String` and `student`, the last statement fails.  

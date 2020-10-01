@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a37049c5-a7ea-4519-94f2-912eeb010380
 ---
 # \<persistenceProvider>
+
 Specifies the type of the persistence provider implementation to use, as well as the time-out to use for persistence operations.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,6 +22,7 @@ Specifies the type of the persistence provider implementation to use, as well as
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -31,6 +33,7 @@ Specifies the type of the persistence provider implementation to use, as well as
 |type|A string that specifies the type of the persistence provider factory to use.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -40,6 +43,7 @@ Specifies the type of the persistence provider implementation to use, as well as
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
+
  This element specifies the persistence provider to be used to serialize the state of a WCF service. It should be used together with the `wsHttpContextBinding` which passes state information in HTTP headers.  
   
 ## See also

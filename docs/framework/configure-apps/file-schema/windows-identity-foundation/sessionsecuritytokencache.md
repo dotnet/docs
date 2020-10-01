@@ -5,6 +5,7 @@ ms.assetid: d43e676c-0153-485c-ab31-0257a2db7507
 author: "BrucePerlerMS"
 ---
 # \<sessionSecurityTokenCache>
+
 Registers a cache for session tokens with a service or a security token handler collection.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ Registers a cache for session tokens with a service or a security token handler 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Registers a cache for session tokens with a service or a security token handler 
 |type|A type that derives from the <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache> class.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -45,7 +48,8 @@ Registers a cache for session tokens with a service or a security token handler 
 |[\<caches>](caches.md)|Registers the caches used by a service or a security token handler collection.|  
   
 ## Example  
- The following XML shows the configuration of a custom cache for holding session security tokens (<xref:System.IdentityModel.Tokens.SessionSecurityToken>). The configuration is taken from the `ClaimsAwareWebFarm` sample. For more information about this sample, see [WIF Code Sample Index](https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-code-sample-index).  
+
+ The following XML shows the configuration of a custom cache for holding session security tokens (<xref:System.IdentityModel.Tokens.SessionSecurityToken>). The configuration is taken from the `ClaimsAwareWebFarm` sample. For more information about this sample, see [WIF Code Sample Index](/previous-versions/dotnet/framework/security/wif-code-sample-index).  
   
 ```xml  
 <caches>  

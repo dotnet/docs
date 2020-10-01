@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 65098332-ce61-4542-ab8d-e7dc0257d31f
 ---
 # \<clear> Element for schemeSettings (Uri Settings)
+
 Clears all existing scheme settings.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -18,12 +19,15 @@ Clears all existing scheme settings.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -33,6 +37,7 @@ Clears all existing scheme settings.
 |[\<schemeSettings> Element (Uri Settings)](schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
   
 ## Remarks  
+
  By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
   
  `http://www.contoso.com/..%2F..%2F/Windows/System32/cmd.exe?/c+dir+c:\`  
@@ -48,9 +53,11 @@ Clears all existing scheme settings.
  This default behavior can be modified to not un-escape percent encoded path delimiters using the schemeSettings configuration option for a specific scheme.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example shows a configuration used by the <xref:System.Uri> class that clears all scheme settings and then adds support for not escaping percent-encoded path delimiters for the http scheme.  
   
 ```xml  

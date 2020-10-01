@@ -10,6 +10,7 @@ ms.assetid: e8848524-7273-429f-8aba-c658d5eff5ad
 # Classes (C# Programming Guide)
 
 ## Reference types  
+
 A type that is defined as a [class](../../language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [new](../../language-reference/operators/new-operator.md) operator, or assign it an object of a compatible type that may have been created elsewhere, as shown in the following example:
 
 ```csharp
@@ -96,7 +97,7 @@ The following example defines a public class that contains an [auto-implemented 
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Object-Oriented Programming](../concepts/object-oriented-programming.md)
+- [Object-Oriented Programming](../../tutorials/intro-to-csharp/object-oriented-programming.md)
 - [Polymorphism](polymorphism.md)
 - [Identifier names](../inside-a-program/identifier-names.md)
 - [Members](members.md)

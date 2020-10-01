@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ac359c65-c22d-42d2-97de-db53b77cebdb
 ---
 # \<certificateReference> for \<identity>
+
 Specifies settings for X.509 certificate validation. A secure Windows Communication Foundation (WCF) client that connects to an endpoint with this identity verifies that the claims presented by the server contain the identity claim used to construct this identity.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies settings for X.509 certificate validation. A secure Windows Communicat
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,6 +40,7 @@ Specifies settings for X.509 certificate validation. A secure Windows Communicat
 |X509FindType|Specifies the type of X.509 search to be executed. The type contained in the `findValue` attribute must satisfy the requirements of the specified X509FindType.<br /><br /> Valid values include the following:<br /><br /> -   FindByThumbPrint<br />-   FindBySubjectName<br />-   FindBySubjectDistinguishedName<br />-   FindByIssuerName<br />-   FindByIssuerDistinguishedName<br />-   FindBySerialNumber<br />-   FindByTimeValid<br />-   FindByTimeNotYetValid<br />-   FindByTemplateName<br />-   FindByApplicationPolicy<br />-   FindByCertificatePolicy<br />-   FindByExtension<br />-   FindByKeyUsage<br />-   FindBySubjectKeyIdentifier<br /><br /> The default value is FindBySubjectDistinguishedName.<br /><br /> This attribute is of type <xref:System.Security.Cryptography.X509Certificates.X509FindType>.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

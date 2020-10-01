@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 24adfbe0-0ad6-449f-997d-8808e0770d2e
 ---
 # Walkthrough: Manipulating Data (C#)
+
 This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] scenario for adding, modifying, and deleting data in a database. You will use a copy of the sample Northwind database to add a customer, change the name of a customer, and delete an order.  
   
  [!INCLUDE[note_settings_general](../../../../../../includes/note-settings-general-md.md)]  
@@ -11,6 +12,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
  This walkthrough was written by using Visual C# Development Settings.  
   
 ## Prerequisites  
+
  This walkthrough requires the following:  
   
 - This walkthrough uses a dedicated folder ("c:\linqtest6") to hold files. Create this folder before you begin the walkthrough.  
@@ -28,6 +30,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
      For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ## Overview  
+
  This walkthrough consists of six main tasks:  
   
 - Creating the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in Visual Studio.  
@@ -43,6 +46,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
 - Submitting these changes to the Northwind database.  
   
 ## Creating a LINQ to SQL Solution  
+
  In this first task, you create a Visual Studio solution that contains the necessary references to build and run a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project.  
   
 #### To create a LINQ to SQL solution  
@@ -60,6 +64,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
 6. Click **OK**.  
   
 ## Adding LINQ References and Directives  
+
  This walkthrough uses assemblies that might not be installed by default in your project. If System.Data.Linq is not listed as a reference in your project, add it, as explained in the following steps:  
   
 #### To add System.Data.Linq  
@@ -75,6 +80,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
      [!code-csharp[DLinqWalk3CS#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk3CS/cs/Program.cs#1)]  
   
 ## Adding the Northwind Code File to the Project  
+
  These steps assume that you have used the SQLMetal tool to generate a code file from the Northwind sample database. For more information, see the Prerequisites section earlier in this walkthrough.  
   
 #### To add the northwind code file to the project  
@@ -86,6 +92,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
      The northwind.cs file is added to the project.  
   
 ## Setting Up the Database Connection  
+
  First, test your connection to the database. Note especially that the database, Northwnd, has no i character. If you generate errors in the next steps, review the northwind.cs file to determine how the Northwind partial class is spelled.  
   
 #### To set up and test the database connection  
@@ -101,6 +108,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
      You can close the application by pressing Enter in the **Console** window, or by clicking **Stop Debugging** on the Visual Studio **Debug** menu.  
   
 ## Creating a New Entity  
+
  Creating a new entity is straightforward. You can create objects (such as `Customer`) by using the `new` keyword.  
   
  In this and the following sections, you are making changes only to the local cache. No changes are sent to the database until you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> toward the end of this walkthrough.  
@@ -116,6 +124,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
 3. Press Enter in the **Console** window to stop debugging and continue the walkthrough.  
   
 ## Updating an Entity  
+
  In the following steps, you will retrieve a `Customer` object and modify one of its properties.  
   
 #### To change the name of a Customer  
@@ -125,6 +134,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
      [!code-csharp[DLinqWalk3CS#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk3CS/cs/Program.cs#4)]  
   
 ## Deleting an Entity  
+
  Using the same customer object, you can delete the first order.  
   
  The following code demonstrates how to sever relationships between rows, and how to delete a row from the database. Add the following code before `Console.ReadLine` to see how objects can be deleted:  
@@ -136,6 +146,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
      [!code-csharp[DLinqWalk3CS#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqWalk3CS/cs/Program.cs#5)]  
   
 ## Submitting Changes to the Database  
+
  The final step required for creating, updating, and deleting objects, is to actually submit the changes to the database. Without this step, your changes are only local and will not appear in query results.  
   
 #### To submit changes to the database  

@@ -22,7 +22,7 @@ programming or the C# language.
 You can try these tutorials in different environments. The concepts you'll learn are the same. The difference is which experience you prefer:
 
 - [In your browser, on the docs platform](hello-world.yml): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
-- [In the Microsoft Learn experience](https://docs.microsoft.com/learn/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
+- [In the Microsoft Learn experience](/learn/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
 - [In Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb). You can experiment with C# code in a Jupyter notebook on binder.
 - [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download](https://dotnet.microsoft.com/download) the .NET Core SDK and build programs on your machine.
 
@@ -36,7 +36,7 @@ on your machine.
 ## [Hello world](hello-world.yml)
 
 In the [Hello world](hello-world.yml) tutorial, you'll create the most basic
-C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn](https://docs.microsoft.com/learn/paths/csharp-first-steps/) or [Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb).
+C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn](/learn/paths/csharp-first-steps/) or [Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb).
 
 ## [Numbers in C#](numbers-in-csharp.yml)
 
@@ -69,7 +69,13 @@ This tutorial assumes that you've finished the lessons listed above.
 
 ## [Introduction to classes](introduction-to-classes.md)
 
-This final tutorial is only available to run on your machine, using your own local development environment and .NET Core.
+This tutorial is only available to run on your machine, using your own local development environment and .NET Core.
 You'll build a console application and see the basic object-oriented features that are part of the C# language.
 
 This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/).
+
+## [Object oriented programming](object-oriented-programming.md)
+
+This tutorial teaches the concepts used in object-oriented programming. You'll learn the concepts of *abstraction*, *encapsulation*, *inheritance*, and *polymorphism* using C# examples.
+
+This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://dotnet.microsoft.com/download) and either [Visual Studio Code](https://code.visualstudio.com/) or [Visual Studio](https://visualstudio.com) on your development machine.

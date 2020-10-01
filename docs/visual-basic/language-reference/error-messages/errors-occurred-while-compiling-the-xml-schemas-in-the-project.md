@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 9323b5d2-ba14-4e49-91f1-9ad647162144
 ---
 # Errors occurred while compiling the XML schemas in the project
+
 Errors occurred while compiling the XML schemas in the project. Because of this, XML IntelliSense is not available.  
   
  There is an error in an XML Schema Definition (XSD) schema included in the project. This error occurs when you add an XSD schema (.xsd) file that conflicts with the existing XSD schema set for the project.  

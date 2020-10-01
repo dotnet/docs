@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b6eae4b7-a6cd-4e1a-b0f6-f407022550b0
 ---
 # \<issuedToken>
+
 Specifies a custom token used to authenticate a client to a service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ Specifies a custom token used to authenticate a client to a service.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -54,6 +56,7 @@ Specifies a custom token used to authenticate a client to a service.
 |[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate a client to a service.|  
   
 ## Remarks  
+
  An issued token is a custom credential type used, for example, when authenticating with a Secure Token Service (STS) in a federated scenario. By default, the token is a SAML token. For more information, see [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md), and [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md).  
   
  This section contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../../wcf/feature-details/how-to-configure-a-local-issuer.md).  

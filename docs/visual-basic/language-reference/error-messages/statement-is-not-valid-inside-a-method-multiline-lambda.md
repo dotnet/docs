@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 758e7a8f-429b-42c1-9a78-778e5b480e04
 ---
 # Statement is not valid inside a method/multiline lambda
+
 The statement is not valid within a `Sub`, `Function`, property `Get`, or property `Set` procedure. Some statements can be placed at the module or class level. Others, such as `Option Strict`, must be at namespace level and precede all other declarations.  
   
  **Error ID:** BC30024  

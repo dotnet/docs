@@ -6,6 +6,7 @@ dev_langs:
 ms.assetid: 5a736a30-ba66-4adb-b87c-57d19476e862
 ---
 # Walkthrough: Using Only Stored Procedures (Visual Basic)
+
 This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] scenario for accessing data by using stored procedures only. This approach is often used by database administrators to limit how the datastore is accessed.  
   
 > [!NOTE]
@@ -20,6 +21,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
  This walkthrough was written by using Visual Basic Development Settings.  
   
 ## Prerequisites  
+
  This walkthrough requires the following:  
   
 - This walkthrough uses a dedicated folder ("c:\linqtest3") to hold files. Create this folder before you begin the walkthrough.  
@@ -37,6 +39,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
      For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ## Overview  
+
  This walkthrough consists of six main tasks:  
   
 - Setting up the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] solution in Visual Studio.  
@@ -52,6 +55,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 - Running and testing the application.  
   
 ## Creating a LINQ to SQL Solution  
+
  In this first task, you create a Visual Studio solution that contains the necessary references to build and run a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] project.  
   
 ### To create a LINQ to SQL solution  
@@ -69,6 +73,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
      The Windows Forms Designer opens.  
   
 ## Adding the LINQ to SQL Assembly Reference  
+
  The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] assembly is not included in the standard Windows Forms Application template. You will have to add the assembly yourself, as explained in the following steps:  
   
 ### To add System.Data.Linq.dll  
@@ -82,6 +87,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
      The assembly is added to the project.  
   
 ## Adding the Northwind Code File to the Project  
+
  This step assumes that you have used the SqlMetal tool to generate a code file from the Northwind sample database. For more information, see the Prerequisites section earlier in this walkthrough.  
   
 ### To add the northwind code file to the project  
@@ -93,6 +99,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
      The northwind.vb file is added to the project.  
   
 ## Creating a Database Connection  
+
  In this step, you define the connection to the Northwind sample database. This walkthrough uses "c:\linqtest3\northwnd.mdf" as the path.  
   
 ### To create the database connection  
@@ -106,6 +113,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
      [!code-vb[DLinqWalk4VB#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk4VB/vb/Form1.vb#1)]  
   
 ## Setting up the User Interface  
+
  In this task you create an interface so that users can execute stored procedures to access data in the database. In the application that you are developing with this walkthrough, users can access data in the database only by using the stored procedures embedded in the application.  
   
 ### To set up the user interface  
@@ -150,6 +158,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
      [!code-vb[DLinqWalk4VB#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk4VB/vb/Form1.vb#3)]  
   
 ## Testing the Application  
+
  Now it is time to test your application. Note that your contact with the datastore is limited to whatever actions the two stored procedures can take. Those actions are to return the products included for any orderID you enter, or to return a history of products ordered for any CustomerID you enter.  
   
 ### To test the application  
@@ -183,6 +192,7 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 6. If you have finished experimenting, you can click **Close Project** on the **File** menu, and save your project when you are prompted.  
   
 ## Next Steps  
+
  You can enhance this project by making some changes. For example, you could list available stored procedures in a list box and have the user select which procedures to execute. You could also stream the output of the reports to a text file.  
   
 ## See also

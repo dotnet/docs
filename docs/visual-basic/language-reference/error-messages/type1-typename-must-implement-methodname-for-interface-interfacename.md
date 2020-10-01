@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 29d1b7f4-dca7-478c-bbe7-c657f342c183
 ---
 # \<type1>'\<typename>' must implement '\<methodname>' for interface '\<interfacename>'
+
 A class or structure claims to implement an interface but does not implement a procedure defined by the interface. Every member of the interface must be implemented.  
   
  **Error ID:** BC30149  

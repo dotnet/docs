@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: c3d37ae4-8f1c-463f-b195-658c5a7e90a1
 ---
 # \<add> of \<declaredTypes> Element
+
 Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerializer> during deserialization. Each declared type includes the known types that will be returned as a field or property of the declared type.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -29,6 +30,7 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -50,6 +52,7 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
 |[\<declaredTypes>](declaredtypes.md)|Contains the types that require known types during deserialization by the <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
 ## Remarks  
+
  For more information about known types, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  See the [\<dataContractSerializer>](datacontractserializer-element.md) for an example of using this element.  

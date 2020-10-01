@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 9d98a7be-b110-4edb-8eba-bed10f250b6d
 ---
 # Constant Expressions
+
 A constant expression consists of a constant value. Constant values are directly converted to constant command tree expressions, without any translation on the client. This includes expressions that result in a constant value. Therefore, data source behavior should be expected for all expressions involving constants. This can result in behavior that differs from CLR behavior.  
   
  The following example shows a constant expression that is evaluated on the server.  

@@ -65,8 +65,8 @@ The following table defines the event levels, identifiers, and messages associat
 |[514 - WebHostRequestStop](514-webhostrequeststop.md)|Information|WebHostRequest stop.|WebHost|  
 |[601 - CBAEntryRead](601-cbaentryread.md)|Verbose|Processed ServiceActivation Element Relative Address:'%1', Normalized Relative Address '%2' .||  
 |[602 - CBAMatchFound](602-cbamatchfound.md)|Verbose|Incoming request matches a ServiceActivation element with address '%1'.||  
-|[603 - AspNetRoutingService](603-aspnetroutingservice.md)|Verbose|Incoming request matches a WCF Service defined in Asp.Net route with address %1.|RoutingServices|  
-|[604 - AspNetRoute](604-aspnetroute.md)|Verbose|A new Asp.Net route '%1' with serviceType '%2' and serviceHostFactoryType '%3' is added.|RoutingServices|  
+|[603 - AspNetRoutingService](603-aspnetroutingservice.md)|Verbose|Incoming request matches a WCF Service defined in ASP.NET route with address %1.|RoutingServices|  
+|[604 - AspNetRoute](604-aspnetroute.md)|Verbose|A new ASP.NET route '%1' with serviceType '%2' and serviceHostFactoryType '%3' is added.|RoutingServices|  
 |[605 - IncrementBusyCount](605-incrementbusycount.md)|Verbose|IncrementBusyCount called. Source : %1|WebHost|  
 |[606 - DecrementBusyCount](606-decrementbusycount.md)|Verbose|DecrementBusyCount called. Source : %1|WebHost|  
 |[701 - ServiceChannelOpenStart](701-servicechannelopenstart.md)|Verbose|ServiceChannelOpen started.|WebHost|  

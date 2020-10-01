@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 24b9df1b-b54b-4795-a033-edf333675de6
 ---
 # How to: Intercept Data Service Messages (WCF Data Services)
+
 With WCF Data Services, you can intercept request messages so that you can add custom logic to an operation. To intercept a message, you use specially attributed methods in the data service. For more information, see [Interceptors](interceptors-wcf-data-services.md).  
   
  The example in this topic uses the Northwind sample data service. This service is created when you complete the [WCF Data Services quickstart](quickstart-wcf-data-services.md).  
@@ -38,12 +39,14 @@ With WCF Data Services, you can intercept request messages so that you can add c
      [!code-vb[Astoria Northwind Service#ChangeInterceptorDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#changeinterceptordef)]  
   
 ## Example  
+
  This example defines a query interceptor method for the `Orders` entity set that returns a lambda expression. This expression contains a delegate that filters the requested `Orders` based on related `Customers` that have a specific contact name. The name is in turn determined based on the requesting user. This example assumes that the data service is hosted within an ASP.NET Web application that uses WCF, and that authentication is enabled. The <xref:System.Web.HttpContext> class is used to retrieve the principle of the current request.  
   
  [!code-csharp[Astoria Northwind Service#QueryInterceptor](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#queryinterceptor)]
  [!code-vb[Astoria Northwind Service#QueryInterceptor](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#queryinterceptor)]  
   
 ## Example  
+
  This example defines a change interceptor method for the `Products` entity set. This method validates input to the service for an <xref:System.Data.Services.UpdateOperations.Add> or <xref:System.Data.Services.UpdateOperations.Change> operation and raises an exception if a change is being made to a discontinued product. It also blocks the deletion of products as an unsupported operation.  
   
  [!code-csharp[Astoria Northwind Service#ChangeInterceptor](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#changeinterceptor)]

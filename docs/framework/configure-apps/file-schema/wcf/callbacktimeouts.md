@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d7fcfc5f-6d35-491e-8fa6-2f964c1e792f
 ---
 # \<callbackTimeouts>
+
 Specifies the timeout value when flowing transactions from server to client.in a duplex callback contract scenario.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,9 +21,11 @@ Specifies the timeout value when flowing transactions from server to client.in a
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -32,6 +35,7 @@ Specifies the timeout value when flowing transactions from server to client.in a
 |`transactionTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time within which transactions must complete or be automatically terminated. The default is "00:00:00".|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

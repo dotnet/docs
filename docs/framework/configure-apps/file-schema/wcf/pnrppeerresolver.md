@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c1b34f3b-68e5-4911-a367-de49fb61dbc6
 ---
 # \<pnrpPeerResolver>
+
 Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used as a resolver. This element is optional because PNRP is the default resolver.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used a
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -29,6 +31,7 @@ Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used a
 |resolverType|A string that specifies the resolver to be used. This attribute is optional. If it is not set, or if it is set to an empty string, PNRP is used.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  

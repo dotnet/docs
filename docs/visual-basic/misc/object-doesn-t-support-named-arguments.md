@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: f4812db8-e85d-4d5b-b7c9-d54a1f850034
 ---
 # Object doesn't support named arguments
+
 You tried to access an object whose methods don't support named arguments.  
   
 ## To correct this error  

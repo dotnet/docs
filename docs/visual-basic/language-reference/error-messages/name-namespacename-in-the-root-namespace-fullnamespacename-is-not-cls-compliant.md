@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: c5bd5914-ae71-416a-8bed-f76f644f78be
 ---
 # Name \<namespacename> in the root namespace \<fullnamespacename> is not CLS-compliant
+
 An assembly is marked as `<CLSCompliant(True)>`, but an element of the root namespace name begins with an underscore (`_`).  
   
  A programming element can contain one or more underscores, but to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), it must not begin with an underscore. See [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).  

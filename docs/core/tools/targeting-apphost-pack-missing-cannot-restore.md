@@ -14,11 +14,11 @@ When SDK issues error NETSDK1145, the targeting or apphost pack is not installed
 For apphost pack
 
 ```xml
-  <ItemGroup>
-    <KnownAppHostPack Update="@(KnownAppHostPack)">
-      <AppHostPackVersion Condition="'%(TargetFramework)' == 'TARGETFRAMEWORK'">EXISTINGVERSION</AppHostPackVersion>
-    </KnownAppHostPack>
-  </ItemGroup>
+<ItemGroup>
+  <KnownAppHostPack Update="@(KnownAppHostPack)">
+    <AppHostPackVersion Condition="'%(TargetFramework)' == 'TARGETFRAMEWORK'">EXISTINGVERSION</AppHostPackVersion>
+  </KnownAppHostPack>
+</ItemGroup>
 ```
 
 For targeting pack

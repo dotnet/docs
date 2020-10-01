@@ -44,7 +44,7 @@ The following table shows the type of information that is provided for each rule
 | **Option values** |The code style option values for the rule option, if any.|
 | **Default option value** |Default code style option value for the rule option, if any.
 | **Category** | The category for the rule. |
-| **Sub-category** | The sub-category for the rule, such as Language rules, Formatting rules or Naming rules. |
+| **Subcategory** | The sub-category for the rule, such as Language rules, Formatting rules or Naming rules. |
 | **Applicable languages** |Applicable .NET languages (C# or Visual Basic), along with the minimum language version, if applicable.|
 | **Introduced version** |Version of the .NET SDK or Visual Studio when the rule was first introduced.|
 | **Examples** |Examples for different code styles corresponding to the rule.|

@@ -35,10 +35,10 @@ A local function is defined as a nested method inside a containing member. Its d
 
 You can use the following modifiers with a local function:
 
-- [async](../../language-reference/keywords/async.md)
-- [unsafe](../../language-reference/keywords/unsafe.md)
-- `static` (in C# 8.0 and later). A static local function can't capture local variables or instance state.
-- [extern](../../language-reference/keywords/extern.md) (in C# 9.0 and later). An external local function must be `static`.
+- [`async`](../../language-reference/keywords/async.md)
+- [`unsafe`](../../language-reference/keywords/unsafe.md)
+- [`static`](../../language-reference/keywords/static.md) (in C# 8.0 and later). A static local function can't capture local variables or instance state.
+- [`extern`](../../language-reference/keywords/extern.md) (in C# 9.0 and later). An external local function must be `static`.
 
 Note that all local variables that are defined in the containing member, including its method parameters, are accessible in a non-static local function.
 

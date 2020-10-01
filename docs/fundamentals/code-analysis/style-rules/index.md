@@ -24,14 +24,14 @@ ms.author: gewarren
 
 ## Index
 
-The following table list all the code style rules by ID and option(s), if any.
+The following table list all the code style rules by ID and options, if any.
 
 > [!div class="mx-tdCol4BreakAll"]
-> | Rule ID | Title | Option | Option Group |
+> | Rule ID | Title | Option | Option group |
 > | - | - | - | - |
 > | [IDE0003](ide0003-ide0009.md) | Remove 'this' or 'Me' qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet\_style\_qualification\_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet\_style\_qualification\_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet\_style\_qualification\_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet\_style\_qualification\_for_event) | 'this.' and 'Me.' qualifiers
 > | [IDE0009](ide0003-ide0009.md) | Add 'this' or 'Me' qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet\_style\_qualification\_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet\_style\_qualification\_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet\_style\_qualification\_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet\_style\_qualification\_for_event) | 'this.' and 'Me.' qualifiers
-> | [IDE0049](ide0049.md) | Use language keywords instead of framework type names for type references | [dotnet_style_predefined_type_for_locals_parameters_members](ide0049.md#dotnet\_style\_predefined\_type\_for\_locals\_parameters_members)<br/> [dotnet_style_predefined_type_for_member_access](ide0049.md#dotnet\_style\_predefined\_type\_for\_member_access)<br/> | Use language keywords instead of framework type names for type references
+> | [IDE0049](ide0049.md) | Use language keywords instead of framework type names for type references | [dotnet_style_predefined_type_for_locals_parameters_members](ide0049.md#dotnet\_style\_predefined\_type\_for\_locals\_parameters_members)<br/> [dotnet_style_predefined_type_for_member_access](ide0049.md#dotnet\_style\_predefined\_type\_for\_member_access)<br/> | Use language keywords instead of framework type names for type references |
 
 ## Legend
 

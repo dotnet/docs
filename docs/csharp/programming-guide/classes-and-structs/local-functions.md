@@ -40,7 +40,7 @@ You can use the following modifiers with a local function:
 - [`static`](../../language-reference/keywords/static.md) (in C# 8.0 and later). A static local function can't capture local variables or instance state.
 - [`extern`](../../language-reference/keywords/extern.md) (in C# 9.0 and later). An external local function must be `static`.
 
-Note that all local variables that are defined in the containing member, including its method parameters, are accessible in a non-static local function.
+All local variables that are defined in the containing member, including its method parameters, are accessible in a non-static local function.
 
 Unlike a method definition, a local function definition cannot include the member access modifier. Because all local functions are private, including an access modifier, such as the `private` keyword, generates compiler error CS0106, "The modifier 'private' is not valid for this item."
 

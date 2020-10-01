@@ -1,7 +1,7 @@
 ---
 title: "Local functions - C# Programming Guide"
 description: Local functions in C# are private methods that are nested in another member and can be called from their containing member.
-ms.date: 06/14/2017
+ms.date: 10/02/2020
 helpviewer_keywords: 
   - "local functions [C#]"
 ---
@@ -30,17 +30,19 @@ Local functions make the intent of your code clear. Anyone reading your code can
 A local function is defined as a nested method inside a containing member. Its definition has the following syntax:
 
 ```csharp
-<modifiers: async | unsafe> <return-type> <method-name> <parameter-list>
+<modifiers> <return-type> <method-name> <parameter-list>
 ```
 
-Local functions can use the [async](../../language-reference/keywords/async.md) and [unsafe](../../language-reference/keywords/unsafe.md) modifiers.
+You can use the following modifiers with a local function:
 
-Note that all local variables that are defined in the containing member, including its method parameters, are accessible in the local function.
+- [async](../../language-reference/keywords/async.md)
+- [unsafe](../../language-reference/keywords/unsafe.md)
+- `static` (in C# 8.0 and later). A static local function can't capture local variables or instance state.
+- [extern](../../language-reference/keywords/extern.md) (in C# 9.0 and later). An external local function must be `static`.
+
+Note that all local variables that are defined in the containing member, including its method parameters, are accessible in a non-static local function.
 
 Unlike a method definition, a local function definition cannot include the member access modifier. Because all local functions are private, including an access modifier, such as the `private` keyword, generates compiler error CS0106, "The modifier 'private' is not valid for this item."
-
-> [!NOTE]
-> Prior to C# 8.0, local functions cannot include the `static` modifier. Including the `static` keyword generates compiler error CS0106, "The modifier 'static' is not valid for this item.", or a compiler error stating that you should use C# 8.0 or higher.
 
 In addition, attributes can't be applied to the local function or to its parameters and type parameters.
 

@@ -428,7 +428,7 @@ class Program
 
 ## Non-host console app
 
-Logging code for apps without a [Generic Host](generic-host.md) differs in the way [providers are added](#add-providers) and [loggers are created](#create-logs). In a non-host console app, call the provider's `Add{provider name}` extension method while creating a `LoggerFactory`:
+Logging code for apps without a [Generic Host](generic-host.md) differs in the way [providers are added](logging-providers.md#built-in-logging-providers) and [loggers are created](#create-logs). In a non-host console app, call the provider's `Add{provider name}` extension method while creating a `LoggerFactory`:
 
 ```csharp
 class Program

@@ -159,6 +159,20 @@ The application will spend less time running the JIT.
 - **Larger size**\
 The application will be larger on disk.
 
+### Examples
+
+Publish an app self-contained and ReadyToRun. A macOS 64-bit executable is created.
+
+```dotnet
+dotnet publish -c Release -r osx-x64 -p:PublishReadyToRun=true
+```
+
+Publish an app self-contained and ReadyToRun. A Windows 64-bit executable is created.
+
+```dotnet
+dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true
+```
+
 ## See also
 
 - [Deploying .NET Core Apps with .NET Core CLI.](deploy-with-cli.md)

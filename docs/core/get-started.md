@@ -8,7 +8,7 @@ ms.custom: vs-dotnet
 ---
 # Get started with .NET
 
-This article tells you how to create and run a "Hello World!" .NET app.
+This article teaches you how to create and run a "Hello World!" .NET app.
 
 If you're unsure what .NET is, start with the [.NET introduction](introduction.md).
 

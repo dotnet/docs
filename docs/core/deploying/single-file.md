@@ -39,9 +39,9 @@ We have some recommendations for fixing common scenarios:
 
 ## Attaching a debugger
 
-On Linux, the only debugger which can attach to self-contained single-file processes or debug crash dumps is [SOS with LLDB](https://docs.microsoft.com/en-us/dotnet/core/diagnostics/dotnet-sos).
+On Linux, the only debugger which can attach to self-contained single-file processes or debug crash dumps is [SOS with LLDB](../diagnostics/dotnet-sos.md).
 
-On Windows and Mac, Visual Studio and VS Code can be used to debug crash dumps, but attaching to a running self-contained single-file executable requires an extra file: `mscordbi.{dll,so}`. This file is produced by `publish` by default in the subdirectory with the applications runtime ID. So, for example, if one were to publish a self-contained single-file executable using the `dotnet` CLI for Windows using the parameters `-r win-x64`, the executable would be placed, by default in `bin/Debug/net5.0/win-x64/publish`. A copy of `mscordbi.dll` would be present in `bin/Debug/net5.0/win-x64`. That file would need to be copied next to the executable to attach the Visual Studio or VS Code debugger.
+On Windows and Mac, Visual Studio and VS Code can be used to debug crash dumps. Attaching to a running self-contained single-file executable requires an extra file: _mscordbi.{dll,so}_. This file is produced by `publish` by default in the subdirectory with the application's runtime ID. So, for example, if one were to publish a self-contained single-file executable using the `dotnet` CLI for Windows using the parameters `-r win-x64`, the executable would be placed, by default in _bin/Debug/net5.0/win-x64/publish_. A copy of _mscordbi.dll_ would be present in _bin/Debug/net5.0/win-x64_. That file would need to be copied next to the executable to attach the Visual Studio or VS Code debugger.
 
 ## Other considerations
 

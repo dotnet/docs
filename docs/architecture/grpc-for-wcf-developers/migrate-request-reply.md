@@ -104,7 +104,7 @@ The first step is to migrate the `DataContract` classes to their Protobuf equiva
 The `PortfolioItem` class will be converted to a Protobuf message first, because the `Portfolio` class depends on it. The class is simple, and three of the properties map directly to gRPC data types. The `Cost` property, which represents the price paid for the shares at purchase, is a `decimal` field. gRPC supports only `float` or `double` for real numbers, which aren't suitable for currency. Because share prices vary by a minimum of one cent, the cost can be expressed as an `int32` of cents.
 
 > [!NOTE]
-> Remember to use underscore_separated_names for field names in your `.proto` file. The C# code generator will convert them to PascalCase for you, and users of other languages will thank you for respecting their different coding standards.
+> Remember to use `snake_case` for field names in your `.proto` file. The C# code generator will convert them to `PascalCase` for you, and users of other languages will thank you for respecting their different coding standards.
 
 ```protobuf
 message PortfolioItem {

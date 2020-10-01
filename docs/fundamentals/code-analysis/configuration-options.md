@@ -1,43 +1,27 @@
 ---
 title: Configure code analysis rules
-description: Learn how to configure code analysis rules in an EditorConfig file.
+description: Learn how to configure code analysis rules in an analyzer configuration file.
 ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis
 
-Code analysis rules have various configuration options. These options are specified as key-value pairs in a configuration file. For example,
+Code analysis rules have various configuration options. These options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md) using the syntax `<option key> = <option value>`.
 
-```ini
-<option key> = <option value>
-```
-
-The most common option you'll configure is a rule's severity. You can configure severity level for all analyzer rules, including [code quality rules](quality-rules/index.md) and [code style rules](/visualstudio/ide/editorconfig-language-conventions).
+The most common option you'll configure is a rule's severity. You can configure severity level for all analyzer rules, including [code quality rules](quality-rules/index.md) and [code style rules](style-rules/index.md).
 
 You can also configure additional options to customize rule behavior:
 
 - Code quality rules have [additional options](code-quality-rule-options.md) to configure behavior, such as which method names a rule should apply to.
-- Code style rules have [custom code style options](/visualstudio/ide/editorconfig-code-style-settings-reference).
+- Code style rules have [custom code style options](code-style-rule-options.md).
 - Third party analyzer rules can define their own configuration options, with custom key names and value formats.
 
-You specify configuration options in an [EditorConfig file](/visualstudio/ide/create-portable-custom-editor-options). You can apply EditorConfig file conventions to a folder, a project, or an entire repo by placing the file in the corresponding directory. If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file. Add an entry for each rule you want to configure, and place it under the corresponding file extension section, for example, `[*.cs]`.
-
-The syntax for configuring a specific rule's severity in an *.editorconfig* file is as follows:
+The syntax for configuring a specific rule's severity in an [analyzer configuration file](configuration-files.md) is as follows:
 
 ```ini
 dotnet_diagnostic.<rule ID>.severity = <severity>
 ```
-
-The following example demonstrates setting the severity for rule `CA1822` to `error` for C# and Visual Basic files.
-
-```ini
-[*.{cs,vb}]
-dotnet_diagnostic.CA1822.severity = error
-```
-
-> [!TIP]
-> Visual Studio provides an *.editorconfig* item template that makes is easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
 
 ## General options
 
@@ -45,7 +29,7 @@ These options apply to code analysis as a whole. They cannot be applied only to 
 
 ### Exclude generated code
 
-You can configure additional files and folders to be treated as generated code by adding a `generated_code = true | false` entry to your *.editorconfig* file. .NET code analyzer warnings aren't useful on generated code files, such as designer-generated files, which users can't edit to fix any violations. In most cases, code analyzers skip generated code files and don't report violations on these files.
+You can configure additional files and folders to be treated as generated code by adding a `generated_code = true | false` entry to your [configuration file](configuration-files.md). .NET code analyzer warnings aren't useful on generated code files, such as designer-generated files, which users can't edit to fix any violations. In most cases, code analyzers skip generated code files and don't report violations on these files.
 
 By default, files with certain file extensions or auto-generated file headers are treated as generated code files. For example, a file name ending with `.designer.cs` or `.generated.cs` is considered generated code. This configuration option lets you specify additional naming patterns.
 
@@ -65,7 +49,7 @@ Rule-specific options can be applied to a single rule, a set of rules, or all ru
 
 ### Severity level
 
-The following table shows the different rule severities that you can configure for all analyzer rules, including [code quality](quality-rules/index.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
+The following table shows the different rule severities that you can configure for all analyzer rules, including [code quality](quality-rules/index.md) and [code style](style-rules/index.md) rules.
 
 | Severity | Build-time behavior |
 |-|-|
@@ -101,12 +85,12 @@ dotnet_analyzer_diagnostic.severity = <severity value>
 
 #### Precedence
 
-If you have multiple entries that can be applied to the same rule ID, precedence is chosen in the following order:
+If you have multiple severity configuration entries that can be applied to the same rule ID, precedence is chosen in the following order:
 
 - An entry for an individual rule by ID takes precedence over an entry for a category.
 - An entry for a category takes precedence over an entry for all analyzer rules.
 
-Consider the following EditorConfig example, where [CA1822](/visualstudio/code-quality/ca1822) has the category "Performance":
+Consider the following example, where [CA1822](/visualstudio/code-quality/ca1822) has the category "Performance":
 
 ```ini
 [*.cs]
@@ -116,3 +100,5 @@ dotnet_analyzer_diagnostic.severity = suggestion
 ```
 
 In the preceding example, all three severity entries are applicable to CA1822. However, using the specified precedence rules, the first rule ID-based entry wins over the next entries. In this example, CA1822 will have an effective severity of `error`. All other rules within the "Performance" category will have a severity of `warning`.
+
+For information about how inter-file precedence is decided, see the [Precedence section of the Configuration files article](configuration-files.md#precedence).

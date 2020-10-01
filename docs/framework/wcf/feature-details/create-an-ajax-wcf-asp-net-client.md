@@ -77,7 +77,7 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
     </Services>
     ```
 
-5. Add the code for the Javascript function `Calculate()`. Place the following code in the **head** section of the web form:
+5. Add the code for the JavaScript function `Calculate()`. Place the following code in the **head** section of the web form:
 
     ```html
     <script type="text/javascript">

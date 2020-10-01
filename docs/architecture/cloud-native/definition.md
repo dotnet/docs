@@ -21,7 +21,7 @@ The Cloud Native Computing Foundation provides an [official definition](https://
 
 Applications have become increasingly complex with users demanding more and more. Users expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. They'll easily move to your competitor.
 
-Cloud native is much about *speed* and *agility*. Business systems are evolving from enabling business capabilities to weapons of strategic transformation, accelerating business velocity and growth. It's imperative to get ideas to market immediately.
+Cloud native is about *speed* and *agility*. Business systems are evolving from enabling business capabilities to being weapons of strategic transformation that accelerate business velocity and growth. It's imperative to get ideas to market immediately.
 
 Here are some companies who have implemented these techniques. Think about the speed, agility, and scalability they've achieved.
 

@@ -45,4 +45,4 @@ The predefined rule set files for the Microsoft.CodeAnalysis.NetAnalyzers analyz
 ## See also
 
 - [Analyzer configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
-- [.NET coding conventions for EditorConfig](/visualstudio/ide/editorconfig-code-style-settings-reference.md)
+- [.NET code style rule options for EditorConfig](code-style-rule-options.md)

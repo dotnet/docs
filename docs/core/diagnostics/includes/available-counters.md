@@ -10,7 +10,7 @@ The following counters are published as part of .NET runtime, and are maintained
 |--|--|
 | :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`) | The percent of time in GC since the last GC |
 | :::no-loc text="Allocation Rate"::: (`alloc-rate`) | The rate of allocation in bytes |
-| :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of CPU usage |
+| :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of CPU usage of the process |
 | :::no-loc text="Exception Count"::: (`exception-count`) | The number of exceptions that have occurred |
 | :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | The number of bytes thought to be allocated based on <xref:System.GC.GetTotalMemory(System.Boolean)?displayProperty=nameWithType> |
 | :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | The number of times GC has occurred for Gen 0 |
@@ -20,6 +20,8 @@ The following counters are published as part of .NET runtime, and are maintained
 | :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`) | The number of times GC has occurred for Gen 2 |
 | :::no-loc text="Gen 2 Size"::: (`gen-2-size`) | The number of bytes for Gen 2 GC |
 | :::no-loc text="LOH Size"::: (`loh-size`) | The number of bytes for Gen 3 GC |
+| :::no-loc text="POH Size"::: (`poh-size`) | The number of bytes for the pinned object heap (available on .NET 5 and later versions) |
+| :::no-loc text="GC Fragmentation"::: (`gc-fragmentation`) | The GC Heap Fragmentation (available on .NET 5 and later versions) |
 | :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`) | The number of times there was contention when trying to take the monitor's lock, based on <xref:System.Threading.Monitor.LockContentionCount?displayProperty=nameWithType> |
 | :::no-loc text="Number of Active Timers"::: (`active-timer-count`) | The number of <xref:System.Threading.Timer> instances that are currently active, based on <xref:System.Threading.Timer.ActiveCount?displayProperty=nameWithType> |
 | :::no-loc text="Number of Assemblies Loaded"::: (`assembly-count`) | The number of <xref:System.Reflection.Assembly> instances loaded into a process at a point in time |
@@ -27,6 +29,8 @@ The following counters are published as part of .NET runtime, and are maintained
 | :::no-loc text="ThreadPool Queue Length"::: (`threadpool-queue-length`) | The number of work items that are currently queued to be processed in the <xref:System.Threading.ThreadPool> |
 | :::no-loc text="ThreadPool Thread Count"::: (`threadpool-thread-count`) | The number of thread pool threads that currently exist in the <xref:System.Threading.ThreadPool>, based on <xref:System.Threading.ThreadPool.ThreadCount?displayProperty=nameWithType> |
 | :::no-loc text="Working Set"::: (`working-set`) | The amount of physical memory mapped to the process context at a point in time base on <xref:System.Environment.WorkingSet?displayProperty=nameWithType> |
+| :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | The total size of ILs that are JIT-compiled, in bytes (available on .NET 5 and later versions) |
+| :::no-loc text="Method Jitted Count"::: (`method-jitted-count`) | The number of methods that are JIT-compiled (available on .NET 5 and later versions) |
 
 ### "Microsoft.AspNetCore.Hosting" counters
 

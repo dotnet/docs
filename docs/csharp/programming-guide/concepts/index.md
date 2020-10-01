@@ -20,7 +20,6 @@ This section explains programming concepts in the C# language.
 |[Expression Trees (C#)](./expression-trees/index.md)|Explains how you can use expression trees to enable dynamic modification of executable code.|  
 |[Iterators (C#)](./iterators.md)|Describes iterators, which are used to step through collections and return elements one at a time.|  
 |[Language-Integrated Query (LINQ) (C#)](./linq/index.md)|Discusses the powerful query capabilities in the language syntax of C#, and the model for querying relational databases, XML documents, datasets, and in-memory collections.|  
-|[Object-Oriented Programming (C#)](./object-oriented-programming.md)|Describes common object-oriented concepts, including encapsulation, inheritance, and polymorphism.|  
 |[Reflection (C#)](./reflection.md)|Explains how to use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties.|  
 |[Serialization (C#)](./serialization/index.md)|Describes key concepts in binary, XML, and SOAP serialization.|  
   

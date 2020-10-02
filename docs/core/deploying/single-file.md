@@ -45,7 +45,7 @@ On Windows and Mac, Visual Studio and VS Code can be used to debug crash dumps. 
 
 Without this file Visual Studio may produce the error "Unable to attach to the process. A debug component is not installed." and VS Code may produce the error "Failed to attach to process: Unknown Error: 0x80131c3c."
 
-To fix these errors, _mscordbi_ needs to be copied next to the executable. _mscordbi_ is `publish`ed by default in the subdirectory with the application's runtime ID. So, for example, if one were to publish a self-contained single-file executable using the `dotnet` CLI for Windows using the parameters `-r win-x64`, the executable would be placed in _bin/Debug/net5.0/win-x64/publish_. A copy of _mscordbi.dll_ would be present in _bin/Debug/net5.0/win-x64_. 
+To fix these errors, _mscordbi_ needs to be copied next to the executable. _mscordbi_ is `publish`ed by default in the subdirectory with the application's runtime ID. So, for example, if one were to publish a self-contained single-file executable using the `dotnet` CLI for Windows using the parameters `-r win-x64`, the executable would be placed in _bin/Debug/net5.0/win-x64/publish_. A copy of _mscordbi.dll_ would be present in _bin/Debug/net5.0/win-x64_.
 
 ## Other considerations
 

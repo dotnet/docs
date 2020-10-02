@@ -26,12 +26,13 @@ In order to get .NET for Apache Spark to talk to your MongoDB instance you need 
       }
     )
     ```
+
 2. Make sure the IP address of the system your .NET for Apache Spark application is running on is whitelisted for the MongoDB server to connect to.
 
 ## Configure your .NET for Apache Spark application
 
 1. Have the following variables set to configure your application to talk to the MongoDB instance and read from a collection.
-    1. **authURI**: "<Connection string authorizing your application to connect to the required MongoDB instance>". The format for that is as follows:
+    1. **authURI**: "Connection string authorizing your application to connect to the required MongoDB instance". The format for that is as follows:
 
         ```
         "mongodb+srv://<username>:<password>@<cluster_address>/<database>.<collection>"

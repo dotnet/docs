@@ -17,9 +17,9 @@ The style rules in this section concern following expression-level preferences:
 
 - [Use object initializers (IDE0017)](ide0017.md)
 - [Use collection initializers (IDE0028)](ide0028.md)
+- [Use auto property (IDE0032)](ide0032.md)
 - [Use explicitly provided tuple name (IDE0033)](ide0033.md)
 - [Use inferred member name (IDE0037)](ide0037.md)
-- [Use auto property (IDE0032)](ide0032.md)
 - [Use conditional expression for assignment (IDE0045)](ide0045.md)
 - [Use conditional expression for return (IDE0046)](ide0046.md)
 - [Use compound assignment (IDE0054)](ide0054.md)

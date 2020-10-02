@@ -37,6 +37,8 @@ The syntax for configuring an option for a *specific* rule is as follows:
 |-|-|
 | dotnet_code_quality.RuleId.OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
+## Options
+
 This section lists some of the available options. To see the full list of available options, see [Analyzer configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md).
 
 ### api_surface

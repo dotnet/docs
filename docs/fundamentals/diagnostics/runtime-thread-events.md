@@ -1,17 +1,17 @@
 ---
-title: "ThreadPool Runtime Events"
-description: Review thread pool ETW events, which collect information about threads in .NET Core. Thread pool events are worker thread pool events or I/O thread pool events.
+title: "ThreadPool runtime events"
+description: See .NET runtime thread pool events that collect diagnostic information about thread pool in .NET Core. Thread pool events are worker thread pool events or I/O thread pool events.
 ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords
   - "ThreadPool events [.NET Core]"
   - "ETW, thread pool events (CoreCLR)"
-ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
 ---
-# Threading Events
-These events collect information about worker and I/O threads in the threadpool.
+# .NET runtime thread pool events
 
-## IOThreadCreate_V1 Event
+These events collect information about worker and I/O threads in the threadpool. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+
+## IOThreadCreate_V1 event
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -28,11 +28,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Count|win:UInt64|Number of I/O threads, including the newly created thread.|
-|NumRetired|win:UInt64|Number of retired worker threads.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`Count`|`win:UInt64`|Number of I/O threads, including the newly created thread.|
+|`NumRetired`|`win:UInt64`|Number of retired worker threads.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## IOThreadTerminate_V1 Event
+## IOThreadTerminate_V1 event
  The following table shows the keyword and level
 
 |Keyword for raising the event|Level
@@ -49,11 +49,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Count|win:UInt64|Number of I/O threads remaining in the thread pool.|
-|NumRetired|win:UInt64|Number of retired I/O threads.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`Count`|`win:UInt64`|Number of I/O threads remaining in the thread pool.|
+|`NumRetired`|`win:UInt64`|Number of retired I/O threads.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## IOThreadRetire_V1 Event
+## IOThreadRetire_V1 event
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -70,11 +70,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Count|win:UInt64|Number of I/O threads remaining in the thread pool.|
-|NumRetired|win:UInt64|Number of retired I/O threads.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`Count`|`win:UInt64`|Number of I/O threads remaining in the thread pool.|
+|`NumRetired`|`win:UInt64`|Number of retired I/O threads.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## IOThreadUnretire_V1 Event
+## IOThreadUnretire_V1 event
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -91,11 +91,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Count|win:UInt64|Number of I/O threads in the thread pool, including this one.|
-|NumRetired|win:UInt64|Number of retired I/O threads.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`Count`|`win:UInt64`|Number of I/O threads in the thread pool, including this one.|
+|`NumRetired`|`win:UInt64`|Number of retired I/O threads.|
+|`ClrInstanceID`|`Win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## ThreadPoolWorkerThreadStart Event
+## ThreadPoolWorkerThreadStart event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|-----------|
@@ -107,11 +107,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|ActiveWorkerThreadCount|win:UInt32|Number of worker threads available to process work, including those that are already processing work.|
-|RetiredWorkerThreadCount|win:UInt32|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`ActiveWorkerThreadCount`|`win:UInt32`|Number of worker threads available to process work, including those that are already processing work.|
+|`RetiredWorkerThreadCount`|`win:UInt32`|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## ThreadPoolWorkerThreadStop Event
+## ThreadPoolWorkerThreadStop event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|-----------|
@@ -123,11 +123,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|ActiveWorkerThreadCount|win:UInt32|Number of worker threads available to process work, including those that are already processing work.|
-|RetiredWorkerThreadCount|win:UInt32|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`ActiveWorkerThreadCount`|`win:UInt32`|Number of worker threads available to process work, including those that are already processing work.|
+|`RetiredWorkerThreadCount`|`win:UInt32`|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## ThreadPoolWorkerThreadWait Event
+## ThreadPoolWorkerThreadWait event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|-----------|
@@ -139,11 +139,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|ActiveWorkerThreadCount|win:UInt32|Number of worker threads available to process work, including those that are already processing work.|
-|RetiredWorkerThreadCount|win:UInt32|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`ActiveWorkerThreadCount`|`win:UInt32`|Number of worker threads available to process work, including those that are already processing work.|
+|`RetiredWorkerThreadCount`|`win:UInt32`|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## ThreadPoolWorkerThreadRetirementStart Event
+## ThreadPoolWorkerThreadRetirementStart event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|-----------|
@@ -155,11 +155,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|ActiveWorkerThreadCount|win:UInt32|Number of worker threads available to process work, including those that are already processing work.|
-|RetiredWorkerThreadCount|win:UInt32|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`ActiveWorkerThreadCount`|`win:UInt32`|Number of worker threads available to process work, including those that are already processing work.|
+|`RetiredWorkerThreadCount`|`win:UInt32`|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## ThreadPoolWorkerThreadRetirementStop Event
+## ThreadPoolWorkerThreadRetirementStop event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|-----------|
@@ -171,11 +171,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|ActiveWorkerThreadCount|win:UInt32|Number of worker threads available to process work, including those that are already processing work.|
-|RetiredWorkerThreadCount|win:UInt32|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`ActiveWorkerThreadCount`|`win:UInt32`|Number of worker threads available to process work, including those that are already processing work.|
+|`RetiredWorkerThreadCount`|`win:UInt32`|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## ThreadPoolWorkerThreadAdjustmentSample Event
+## ThreadPoolWorkerThreadAdjustmentSample event
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -192,10 +192,10 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Throughput|win:Double|Number of completions per unit of time.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`Throughput`|`win:Double`|Number of completions per unit of time.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## ThreadPoolWorkerThreadAdjustmentAdjustment Event
+## ThreadPoolWorkerThreadAdjustmentAdjustment event
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -212,12 +212,12 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|AverageThroughput|win:Double|Average throughput of a sample of measurements.|
-|NewWorkerThreadCount|win:UInt32|New number of active worker threads.|
-|Reason|win:UInt32|Reason for the adjustment.<br /><br /> `0x0` - Warmup.<br /><br /> `0x1` - Initializing.<br /><br /> `0x2` - Random move.<br /><br /> `0x3` - Climbing move.<br /><br /> `0x4` - Change point.<br /><br /> `0x5` - Stabilizing.<br /><br /> `0x6` - Starvation.<br /><br /> `0x7` - Thread timed out.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`AverageThroughput`|`win:Double`|Average throughput of a sample of measurements.|
+|`NewWorkerThreadCount`|`win:UInt32`|New number of active worker threads.|
+|`Reason`|`win:UInt32`|Reason for the adjustment.<br /><br /> `0x0` - Warmup.<br /><br /> `0x1` - Initializing.<br /><br /> `0x2` - Random move.<br /><br /> `0x3` - Climbing move.<br /><br /> `0x4` - Change point.<br /><br /> `0x5` - Stabilizing.<br /><br /> `0x6` - Starvation.<br /><br /> `0x7` - Thread timed out.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## ThreadPoolWorkerThreadAdjustmentStats Event
+## ThreadPoolWorkerThreadAdjustmentStats event
 
  The following table shows the keyword and level.
 
@@ -235,19 +235,19 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Duration|win:Double|Amount of time, in seconds, during which these statistics were collected.|
-|Throughput|win:Double|Average number of completions per second during this interval.|
-|ThreadWave|win:Double|Reserved for internal use.|
-|ThroughputWave|win:Double|Reserved for internal use.|
-|ThroughputErrorEstimate|win:Double|Reserved for internal use.|
-|AverageThroughputErrorEstimate|win:Double|Reserved for internal use.|
-|ThroughputRatio|win:Double|The relative improvement in throughput caused by variations in active worker thread count during this interval.|
-|Confidence|win:Double|A measure of the validity of the ThroughputRatio field.|
-|NewcontrolSetting|win:Double|The number of active worker threads that will serve as the baseline for future variations in active thread count.|
-|NewThreadWaveMagnitude|win:UInt16|The magnitude of future variations in active thread count.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`Duration`|`win:Double`|Amount of time, in seconds, during which these statistics were collected.|
+|`Throughput`|`win:Double`|Average number of completions per second during this interval.|
+|`ThreadWave`|`win:Double`|Reserved for internal use.|
+|`ThroughputWave`|`win:Double`|Reserved for internal use.|
+|`ThroughputErrorEstimate`|`win:Double`|Reserved for internal use.|
+|`AverageThroughputErrorEstimate`|`win:Double`|Reserved for internal use.|
+|`ThroughputRatio`|`win:Double`|The relative improvement in throughput caused by variations in active worker thread count during this interval.|
+|`Confidence`|`win:Double`|A measure of the validity of the ThroughputRatio field.|
+|`NewcontrolSetting`|`win:Double`|The number of active worker threads that will serve as the baseline for future variations in active thread count.|
+|`NewThreadWaveMagnitude`|`win:UInt16`|The magnitude of future variations in active thread count.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
-## ThreadPoolEnqueue Event
+## ThreadPoolEnqueue event
 
  The following table shows the keyword and level.
 
@@ -265,10 +265,10 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|WorkID|win:Pointer|Pointer to the work request.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`WorkID`|`win:Pointer`|Pointer to the work request.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## ThreadPoolDequeue Event
+## ThreadPoolDequeue event
 
  The following table shows the keyword and level.
 
@@ -286,10 +286,10 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|WorkID|win:Pointer|Pointer to the work request.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`WorkID`|`win:Pointer`|Pointer to the work request.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## ThreadPoolIOEnqueue Event
+## ThreadPoolIOEnqueue event
 
  The following table shows the keyword and level.
 
@@ -307,12 +307,12 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|NativeOverlapped|win:Pointer|Reserved for internal use.|
-|Overlapped|win:Pointer|Reserved for internal use.|
-|MultiDequeues|win:Boolean|Reserved for internal use.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`NativeOverlapped`|`win:Pointer`|Reserved for internal use.|
+|`Overlapped`|`win:Pointer`|Reserved for internal use.|
+|`MultiDequeues`|`win:Boolean`|Reserved for internal use.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## ThreadPoolIODequeue Event
+## ThreadPoolIODequeue event
 
  The following table shows the keyword and level.
 
@@ -330,12 +330,12 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|NativeOverlapped|win:Pointer|Reserved for internal use.|
-|Overlapped|win:Pointer|Reserved for internal use.|
-|MultiDequeues|win:Boolean|Reserved for internal use.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`NativeOverlapped`|`win:Pointer`|Reserved for internal use.|
+|`Overlapped`|`win:Pointer`|Reserved for internal use.|
+|`MultiDequeues`|`win:Boolean`|Reserved for internal use.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## ThreadPoolIOPack Event
+## ThreadPoolIOPack event
 
  The following table shows the keyword and level.
 
@@ -353,11 +353,11 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|NativeOverlapped|win:Pointer|Reserved for internal use.|
-|Overlapped|win:Pointer|Reserved for internal use.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`NativeOverlapped`|`win:Pointer`|Reserved for internal use.|
+|`Overlapped`|`win:Pointer`|Reserved for internal use.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## ThreadCreating Event
+## ThreadCreating event
 
  The following table shows the keywords and level.
 
@@ -368,17 +368,17 @@ These events collect information about worker and I/O threads in the threadpool.
  The following table shows the event information.
 
 |Event|Event ID|Description|
-|-----------------------------------|-----------|
-|`ThreadCreating|70|Thread has been created.|
+|----------------|---------------|-----------------|
+|`ThreadCreating`|70|Thread has been created.|
 
  The following table shows the event data.
 
 |Field name|Data type|Description|
-|-----------------------------------|-----------|
-|ID|win:Pointer|Thread ID|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|----------------|---------------|-----------------|
+|`ID`|`win:Pointer`|Thread ID|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## ThreadRunning Event
+## ThreadRunning event
  The following table shows the keywords and level.
 
 |Keyword for raising the event|Level|
@@ -388,12 +388,12 @@ These events collect information about worker and I/O threads in the threadpool.
  The following table shows the event information.
 
 |Event|Event ID|Description|
-|-----------------------------------|-----------|
-|`ThreadRunning|71|Thread has started running.|
+|----------------|---------------|-----------------|
+|`ThreadRunning`|71|Thread has started running.|
 
  The following table shows the event data.
 
 |Field name|Data type|Description|
-|-----------------------------------|-----------|
-|ID|win:Pointer|Thread ID|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|----------------|---------------|-----------------|
+|`ID`|`win:Pointer`|Thread ID|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|

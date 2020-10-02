@@ -1,152 +1,152 @@
-# Exception Events
-These runtime events capture information about exceptions that are thrown.
+---
+title: "exception runtime events"
+description: See .NET runtime events that collect diagnostic information specific to the exceptions and exception handling.
+ms.date: "09/27/2020"
+ms.topic: reference
+helpviewer_keywords:
+  - "exception events" [.NET Core]"
+  - "exception handling events" [.NET Core]"
+  - "ETW, EventPipe, LTTng exception events (CoreCLR)"
+---
 
-This category consists of the following events:
+# .NET runtime exception events
+These runtime events capture information about exceptions that are thrown. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
 
-- [ExceptionThrown_V1 Event](#exceptionthrown_v1-event)
-- [ExceptionCatchStart Event](#exceptioncatchstart-event)
-- [ExceptionCatchStop Event](#exceptioncatchstop-event)
-- [ExceptionFinallyStart Event](#exceptionfinallystart-event)
-- [ExceptionFinallyStop Event](#exceptionfinallystop-event)
-- [ExceptionFilterStart Event](#exceptionfilterstart-event)
-- [ExceptionFilterStop Event](#exceptionfilterstop-event)
-- [ExceptionThrownStop Event](#exceptionthrownstop-event)
+## ExceptionThrown_V1 event
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ExceptionKeyword` (0x8000)|Error (1)|
 
-## ExceptionThrown_V1 Event
-|Keyword for raising the event|Level|  
-|-----------------------------------|-----------|  
-|`ExceptionKeyword` (0x8000)|Error (1)|  
-  
- The following table shows event information.  
-  
-|Event|Event ID|Raised when|  
-|-----------|--------------|-----------------|  
-|`ExceptionThrown_V1`|80|A managed exception is thrown.|  
+ The following table shows event information.
 
-|Field name|Data type|Description|  
-|----------------|---------------|-----------------|  
-|Exception Type|win:UnicodeString|Type of the exception; for example, `System.NullReferenceException`.|  
-|Exception Message|win:UnicodeString|Actual exception message.|  
-|EIPCodeThrow|win:Pointer|Instruction pointer where exception occurred.|  
-|ExceptionHR|win:UInt32|Exception [HRESULT](/openspecs/windows_protocols/ms-erref/0642cb2f-2075-4469-918c-4441e69c548a).|  
-|ExceptionFlags|win:UInt16|`0x01`: HasInnerException.<br /><br /> `0x02`: IsNestedException.<br /><br /> `0x04`: IsRethrownException.<br /><br /> `0x08`: IsCorruptedStateException (indicates that the process state is corrupt; see [Handling Corrupted State Exceptions](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions)).<br /><br /> `0x10`: IsCLSCompliant (an exception that derives from <xref:System.Exception> is CLS-compliant; otherwise, it is not CLS-compliant).|  
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`ExceptionThrown_V1`|80|A managed exception is thrown.|
 
-## ExceptionCatchStart Event
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|`ExceptionType`|`win:UnicodeString`|Type of the exception; for example, `System.NullReferenceException`.|
+|`ExceptionMessage`|`win:UnicodeString`|Actual exception message.|
+|`EIPCodeThrow`|`win:Pointer`|Instruction pointer where exception occurred.|
+|`ExceptionHR`|`win:UInt32`|Exception [HRESULT](/openspecs/windows_protocols/ms-erref/0642cb2f-2075-4469-918c-4441e69c548a).|
+|`ExceptionFlags`|`win:UInt16`|`0x01`: HasInnerException.<br /><br /> `0x02`: IsNestedException.<br /><br /> `0x04`: IsRethrownException.<br /><br /> `0x08`: IsCorruptedStateException (indicates that the process state is corrupt; see [Handling Corrupted State Exceptions](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions)).<br /><br /> `0x10`: IsCLSCompliant (an exception that derives from <xref:System.Exception> is CLS-compliant; otherwise, it is not CLS-compliant).|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
+
+## ExceptionCatchStart event
 
 This event is emitted when a managed exception catch handler begins.
 
-|Keyword for raising the event|Level|  
-|-----------------------------------|-----------|  
-|`ExceptionKeyword` (0x8000)|Informational (4)|  
-  
- The following table shows event information.  
-  
-|Event|Event ID|Raised when|  
-|-----------|--------------|-----------------|  
-|`ExceptionCatchStart`|250|A managed exception is handled by the runtime.|  
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ExceptionKeyword` (0x8000)|Informational (4)|
 
-|Field name|Data type|Description|  
-|----------------|---------------|-----------------|  
-|EIPCodeThrow|win:Pointer|Instruction pointer where exception occurred.|  
-|MethodID|win:Pointer|Pointer to the method descriptor on the method where exception occurred.|
-|MethodName|win:String|Name of the method where exception occurred.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
+ The following table shows event information.
 
-## ExceptionCatchStop Event
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`ExceptionCatchStart`|250|A managed exception is handled by the runtime.|
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|`EIPCodeThrow`|`win:Pointer`|Instruction pointer where exception occurred.|
+|`MethodID`|`win:Pointer`|Pointer to the method descriptor on the method where exception occurred.|
+|`MethodName`|`win:UnicodeString`|Name of the method where exception occurred.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
+
+## ExceptionCatchStop event
 
 This event is emitted when a managed exception catch handler ends.
 
-|Keyword for raising the event|Level|  
-|-----------------------------------|-----------|  
-|`ExceptionKeyword` (0x8000)|Informational (4)|  
-  
- The following table shows event information.  
-  
-|Event|Event ID|Raised when|  
-|-----------|--------------|-----------------|  
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ExceptionKeyword` (0x8000)|Informational (4)|
+
+ The following table shows event information.
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
 |`ExceptionCatchStop`|251|A managed exception catch handler is done.|
 
-## ExceptionFinallyStart Event
+## ExceptionFinallyStart event
 
 This event is emitted when a managed exception finally handler begins.
 
-|Keyword for raising the event|Level|  
-|-----------------------------------|-----------|  
-|`ExceptionKeyword` (0x8000)|Informational (4)|  
-  
- The following table shows event information.  
-  
-|Event|Event ID|Raised when|  
-|-----------|--------------|-----------------|  
-|`ExceptionFinallyStart`|252|A managed exception is handled by the runtime.|  
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ExceptionKeyword` (0x8000)|Informational (4)|
 
-|Field name|Data type|Description|  
-|----------------|---------------|-----------------|  
-|EIPCodeThrow|win:Pointer|Instruction pointer where exception occurred.|  
-|MethodID|win:Pointer|Pointer to the method descriptor on the method where exception occurred.|
-|MethodName|win:String|Name of the method where exception occurred.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
+ The following table shows event information.
 
-## ExceptionFinallyStop Event
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`ExceptionFinallyStart`|252|A managed exception is handled by the runtime.|
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|`EIPCodeThrow`|`win:Pointer`|Instruction pointer where exception occurred.|
+|`MethodID`|`win:Pointer`|Pointer to the method descriptor on the method where exception occurred.|
+|`MethodName`|`win:UnicodeString`|Name of the method where exception occurred.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
+
+## ExceptionFinallyStop event
 
 This event is emitted when a managed exception catch handler ends.
 
-|Keyword for raising the event|Level|  
-|-----------------------------------|-----------|  
-|`ExceptionKeyword` (0x8000)|Informational (4)|  
-  
- The following table shows event information.  
-  
-|Event|Event ID|Raised when|  
-|-----------|--------------|-----------------|  
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ExceptionKeyword` (0x8000)|Informational (4)|
+
+ The following table shows event information.
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
 |`ExceptionFinallyStop`|253|A managed exception finally handler is done.|
 
-## ExceptionFilterStart Event
+## ExceptionFilterStart event
 
 This event is emitted when a managed exception filtering begins.
 
-|Keyword for raising the event|Level|  
-|-----------------------------------|-----------|  
-|`ExceptionKeyword` (0x8000)|Informational (4)|  
-  
- The following table shows event information.  
-  
-|Event|Event ID|Raised when|  
-|-----------|--------------|-----------------|  
-|`ExceptionFilterStart`|254|A managed exception filtering begins.|  
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ExceptionKeyword` (0x8000)|Informational (4)|
 
-|Field name|Data type|Description|  
-|----------------|---------------|-----------------|  
-|EIPCodeThrow|win:Pointer|Instruction pointer where exception occurred.|  
-|MethodID|win:Pointer|Pointer to the method descriptor on the method where exception occurred.|
-|MethodName|win:String|Name of the method where exception occurred.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
+ The following table shows event information.
 
-## ExceptionFilterStop Event
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`ExceptionFilterStart`|254|A managed exception filtering begins.|
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|`EIPCodeThrow`|`win:Pointer`|Instruction pointer where exception occurred.|
+|`MethodID`|`win:Pointer`|Pointer to the method descriptor on the method where exception occurred.|
+|`MethodName`|`win:UnicodeString`|Name of the method where exception occurred.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+
+## ExceptionFilterStop event
 
 This event is emitted when a managed exception filtering ends.
 
-|Keyword for raising the event|Level|  
-|-----------------------------------|-----------|  
-|`ExceptionKeyword` (0x8000)|Informational (4)|  
-  
- The following table shows event information.  
-  
-|Event|Event ID|Raised when|  
-|-----------|--------------|-----------------|  
-|`ExceptionFilteringStart`|255|A managed exception filtering ends.|  
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ExceptionKeyword` (0x8000)|Informational (4)|
 
-## ExceptionThrownStop Event
+ The following table shows event information.
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`ExceptionFilteringStart`|255|A managed exception filtering ends.|
+
+## ExceptionThrownStop event
 
 This event is emitted when the runtime is done handling a managed exception that was thrown.
 
-|Keyword for raising the event|Level|  
-|-----------------------------------|-----------|  
-|`ExceptionKeyword` (0x8000)|Informational (4)|  
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ExceptionKeyword` (0x8000)|Informational (4)|
   
- The following table shows event information.  
-  
-|Event|Event ID|Raised when|  
-|-----------|--------------|-----------------|  
-|`ExceptionThrownStop`|256|A managed exception filtering ends.|  
+ The following table shows event information.
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`ExceptionThrownStop`|256|A managed exception filtering ends.|

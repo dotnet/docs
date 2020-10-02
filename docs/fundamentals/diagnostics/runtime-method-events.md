@@ -1,16 +1,15 @@
 ---
-title: "Method Runtime Events"
-description: See ETW events that collect information specific to methods, like CLR method events, CLR method marker or CLR method verbose events, and MethodJittingStarted.
+title: "Method runtime events"
+description: See .NET runtime events that collect diagnostic information specific to methods, like CLR method events, CLR method marker or CLR method verbose events, and MethodJittingStarted.
 ms.date: "09/27/2020"
 helpviewer_keywords:
   - "Method events" [.NET Core]"
   - "ETW, EventPipe, LTTng method events (CoreCLR)"
-ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
 ---
 
-# Method ETW Events
+# .NET runtime method events
 
-These events collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as methods that are loaded and unloaded.
+These events collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as methods that are loaded and unloaded. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
 
 All method events have a level of "Informational (4)". All method verbose events have a level of "Verbose (5)".
 
@@ -18,20 +17,7 @@ All method events are raised by the `JITKeyword` (0x10) keyword or the `NGenKeyw
 
 The V2 versions of these events include the ReJITID, the V1 versions do not.
 
-This category consists of the following events:
-
-- [MethodLoad_V1](#methodload_v1-event)
-- [MethodLoad_V2](#methodload_v2-event)
-- [MethodUnLoad_V1](#methodunload_v1-event)
-- [MethodUnLoad_V2](#methodunload_v2-event)
-- [R2RGetEntryPoint](#r2rgetentrypoint-event)
-- [R2RGetEntryPointStart](#r2rgetentrypointstart-event)
-- [MethodLoadVerbose_V1](#methodloadverbose_v1-event)
-- [MethodLoadVerbose_V2](#methodloadverbose_v2-event)
-- [MethodUnLoadVerbose_V1](#methodunloadverbose_v1-event)
-- [MethodUnLoadVerbose_V2](#methodunloadverbose_v2-event)
-
-## MethodLoad_V1 Event
+## MethodLoad_V1 event
 
 The following table shows the event information:
 
@@ -46,15 +32,15 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of a method. For JIT helper methods, this is set to the start address of the method.|
-|ModuleID|win:UInt64|Identifier of the module to which this method belongs (0 for JIT helpers).|
-|MethodStartAddress|win:UInt64|Start address of the method.|
-|MethodSize|win:UInt32|Size of the method.|
-|MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of a method. For JIT helper methods, this is set to the start address of the method.|
+|`ModuleID`|`win:UInt64`|Identifier of the module to which this method belongs (0 for JIT helpers).|
+|`MethodStartAddress`|`win:UInt64`|Start address of the method.|
+|`MethodSize`|`win:UInt32`|Size of the method.|
+|`MethodToken`|`win:UInt32`|0 for dynamic methods and JIT helpers.|
+|`MethodFlags`|`win:UInt32`|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodLoad_V2 Event
+## MethodLoad_V2 event
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
@@ -67,16 +53,16 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of a method. For JIT helper methods, this is set to the start address of the method.|
-|ModuleID|win:UInt64|Identifier of the module to which this method belongs (0 for JIT helpers).|
-|MethodStartAddress|win:UInt64|Start address of the method.|
-|MethodSize|win:UInt32|Size of the method.|
-|MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
-|ReJITID|win:UInt64|ReJIT ID of the method.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of a method. For JIT helper methods, this is set to the start address of the method.|
+|`ModuleID`|`win:UInt64`|Identifier of the module to which this method belongs (0 for JIT helpers).|
+|`MethodStartAddress`|`win:UInt64`|Start address of the method.|
+|`MethodSize`|`win:UInt32`|Size of the method.|
+|`MethodToken`|`win:UInt32`|0 for dynamic methods and JIT helpers.|
+|`MethodFlags`|`win:UInt32`|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
+|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodUnLoad_V1 Event
+## MethodUnLoad_V1 event
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
@@ -89,15 +75,15 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of a method. For JIT helper methods, this is set to the start address of the method.|
-|ModuleID|win:UInt64|Identifier of the module to which this method belongs (0 for JIT helpers).|
-|MethodStartAddress|win:UInt64|Start address of the method.|
-|MethodSize|win:UInt32|Size of the method.|
-|MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of a method. For JIT helper methods, this is set to the start address of the method.|
+|`ModuleID`|`win:UInt64`|Identifier of the module to which this method belongs (0 for JIT helpers).|
+|`MethodStartAddress`|`win:UInt64`|Start address of the method.|
+|`MethodSize`|`win:UInt32`|Size of the method.|
+|`MethodToken`|`win:UInt32`|0 for dynamic methods and JIT helpers.|
+|`MethodFlags`|`win:UInt32`|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodUnLoad_V2 Event
+## MethodUnLoad_V2 event
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
@@ -110,16 +96,16 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of a method. For JIT helper methods, this is set to the start address of the method.|
-|ModuleID|win:UInt64|Identifier of the module to which this method belongs (0 for JIT helpers).|
-|MethodStartAddress|win:UInt64|Start address of the method.|
-|MethodSize|win:UInt32|Size of the method.|
-|MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
-|ReJITID|win:UInt64|ReJIT ID of the method.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of a method. For JIT helper methods, this is set to the start address of the method.|
+|`ModuleID`|`win:UInt64`|Identifier of the module to which this method belongs (0 for JIT helpers).|
+|`MethodStartAddress`|`win:UInt64`|Start address of the method.|
+|`MethodSize`|`win:UInt32`|Size of the method.|
+|`MethodToken`|`win:UInt32`|0 for dynamic methods and JIT helpers.|
+|`MethodFlags`|`win:UInt32`|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
+|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## R2RGetEntryPoint Event
+## R2RGetEntryPoint event
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
@@ -132,14 +118,14 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of a R2R method.|
-|MethodNamespace|win:UnicodeString|The namespace of method being looked up.|
-|MethodName|win:UnicodeString|The name of the method being looked up.|
-|MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
-|EntryPoint|win:UInt64|The pointer to the entry point of the R2R method|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of a R2R method.|
+|`MethodNamespace`|`win:UnicodeString`|The namespace of method being looked up.|
+|`MethodName`|`win:UnicodeString`|The name of the method being looked up.|
+|`MethodSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names).|
+|`EntryPoint`|`win:UInt64`|The pointer to the entry point of the R2R method|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## R2RGetEntryPointStart Event
+## R2RGetEntryPointStart event
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
@@ -152,34 +138,10 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of a R2R method.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of a R2R method.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodLoadVerbose_V1 Event
-
-|Event|Event ID|Description|
-|-----------|--------------|-----------------|
-|`MethodLoadVerbose_V1`|143|Raised when a method is JIT-loaded or an NGEN image is loaded. Dynamic and generic methods always use this version for method loads. JIT helpers always use this version.|
-
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|
-|`JITKeyword` (0x10) |Informational (4)|
-|`NGenKeyword` (0x20) |Informational (4)|
-
-|Field name|Data type|Description|
-|----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of the method. For JIT helper methods, set to the start address of the method.|
-|ModuleID|win:UInt64|Identifier of the module to which this method belongs (0 for JIT helpers).|
-|MethodStartAddress|win:UInt64|Start address.|
-|MethodSize|win:UInt32|Method length.|
-|MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled method (otherwise, generated by NGen.exe)<br /><br /> 0x8: Helper method.|
-|MethodNameSpace|win:UnicodeString|Full namespace name associated with the method.|
-|MethodName|win:UnicodeString|Full class name associated with the method.|
-|MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-
-## MethodLoadVerbose_V2 Event
+## MethodLoadVerbose_V1 event
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
@@ -192,19 +154,43 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of the method. For JIT helper methods, set to the start address of the method.|
-|ModuleID|win:UInt64|Identifier of the module to which this method belongs (0 for JIT helpers).|
-|MethodStartAddress|win:UInt64|Start address.|
-|MethodSize|win:UInt32|Method length.|
-|MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled method (otherwise, generated by NGen.exe)<br /><br /> 0x8: Helper method.|
-|MethodNameSpace|win:UnicodeString|Full namespace name associated with the method.|
-|MethodName|win:UnicodeString|Full class name associated with the method.|
-|MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
-|ReJITID|win:UInt64|ReJIT ID of the method.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of the method. For JIT helper methods, set to the start address of the method.|
+|`ModuleID`|`win:UInt64`|Identifier of the module to which this method belongs (0 for JIT helpers).|
+|`MethodStartAddress`|`win:UInt64`|Start address.|
+|`MethodSize`|`win:UInt32`|Method length.|
+|`MethodToken`|`win:UInt32`|0 for dynamic methods and JIT helpers.|
+|`MethodFlags`|`win:UInt32`|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled method (otherwise, generated by NGen.exe)<br /><br /> 0x8: Helper method.|
+|`MethodNameSpace`|`win:UnicodeString`|Full namespace name associated with the method.|
+|`MethodName`|`win:UnicodeString`|Full class name associated with the method.|
+|`MethodSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names).|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodUnLoadVerbose_V1 Event
+## MethodLoadVerbose_V2 event
+
+|Event|Event ID|Description|
+|-----------|--------------|-----------------|
+|`MethodLoadVerbose_V1`|143|Raised when a method is JIT-loaded or an NGEN image is loaded. Dynamic and generic methods always use this version for method loads. JIT helpers always use this version.|
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`JITKeyword` (0x10) |Informational (4)|
+|`NGenKeyword` (0x20) |Informational (4)|
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|`MethodID`|`win:UInt64`|Unique identifier of the method. For JIT helper methods, set to the start address of the method.|
+|`ModuleID`|`win:UInt64`|Identifier of the module to which this method belongs (0 for JIT helpers).|
+|`MethodStartAddress`|`win:UInt64`|Start address.|
+|`MethodSize`|`win:UInt32`|Method length.|
+|`MethodToken`|`win:UInt32`|0 for dynamic methods and JIT helpers.|
+|`MethodFlags`|`win:UInt32`|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled method (otherwise, generated by NGen.exe)<br /><br /> 0x8: Helper method.|
+|`MethodNameSpace`|`win:UnicodeString`|Full namespace name associated with the method.|
+|`MethodName`|`win:UnicodeString`|Full class name associated with the method.|
+|`MethodSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names).|
+|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+
+## MethodUnLoadVerbose_V1 event
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
@@ -217,18 +203,18 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of the method. For JIT helper methods, set to the start address of the method.|
-|ModuleID|win:UInt64|Identifier of the module to which this method belongs (0 for JIT helpers).|
-|MethodStartAddress|win:UInt64|Start address.|
-|MethodSize|win:UInt32|Method length.|
-|MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled method (otherwise, generated by NGen.exe)<br /><br /> 0x8: Helper method.|
-|MethodNameSpace|win:UnicodeString|Full namespace name associated with the method.|
-|MethodName|win:UnicodeString|Full class name associated with the method.|
-|MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of the method. For JIT helper methods, set to the start address of the method.|
+|`ModuleID`|`win:UInt64`|Identifier of the module to which this method belongs (0 for JIT helpers).|
+|`MethodStartAddress`|`win:UInt64`|Start address.|
+|`MethodSize`|`win:UInt32`|Method length.|
+|`MethodToken`|`win:UInt32`|0 for dynamic methods and JIT helpers.|
+|`MethodFlags`|`win:UInt32`|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled method (otherwise, generated by NGen.exe)<br /><br /> 0x8: Helper method.|
+|`MethodNameSpace`|`win:UnicodeString`|Full namespace name associated with the method.|
+|`MethodName`|`win:UnicodeString`|Full class name associated with the method.|
+|`MethodSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names).|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodUnLoadVerbose_V2 Event
+## MethodUnLoadVerbose_V2 event
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
@@ -241,19 +227,19 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of the method. For JIT helper methods, set to the start address of the method.|
-|ModuleID|win:UInt64|Identifier of the module to which this method belongs (0 for JIT helpers).|
-|MethodStartAddress|win:UInt64|Start address.|
-|MethodSize|win:UInt32|Method length.|
-|MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled method (otherwise, generated by NGen.exe)<br /><br /> 0x8: Helper method.|
-|MethodNameSpace|win:UnicodeString|Full namespace name associated with the method.|
-|MethodName|win:UnicodeString|Full class name associated with the method.|
-|MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
-|ReJITID|win:UInt64|ReJIT ID of the method.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of the method. For JIT helper methods, set to the start address of the method.|
+|`ModuleID`|`win:UInt64`|Identifier of the module to which this method belongs (0 for JIT helpers).|
+|`MethodStartAddress`|`win:UInt64`|Start address.|
+|`MethodSize`|`win:UInt32`|Method length.|
+|`MethodToken`|`win:UInt32`|0 for dynamic methods and JIT helpers.|
+|`MethodFlags`|`win:UInt32`|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled method (otherwise, generated by NGen.exe)<br /><br /> 0x8: Helper method.|
+|`MethodNameSpace`|`win:UnicodeString`|Full namespace name associated with the method.|
+|`MethodName`|`win:UnicodeString`|Full class name associated with the method.|
+|`MethodSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names).|
+|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodJittingStarted_V1 Event
+## MethodJittingStarted_V1 event
 
 The following table shows the keyword and level:
 
@@ -268,16 +254,16 @@ The following table shows the keyword and level:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of the method.|
-|ModuleID|win:UInt64|Identifier of the module to which this method belongs.|
-|MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodILSize|win:UInt32|The size of the Common Intermediate Language (CIL) for the method that is being JIT-compiled.|
-|MethodNameSpace|win:UnicodeString|Full class name associated with the method.|
-|MethodName|win:UnicodeString|Name of the method.|
-|MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of the method.|
+|`ModuleID`|`win:UInt64`|Identifier of the module to which this method belongs.|
+|`MethodToken`|`win:UInt32`|0 for dynamic methods and JIT helpers.|
+|`MethodILSize`|`win:UInt32`|The size of the Common Intermediate Language (CIL) for the method that is being JIT-compiled.|
+|`MethodNameSpace`|`win:UnicodeString`|Full class name associated with the method.|
+|`MethodName`|`win:UnicodeString`|Name of the method.|
+|`MethodSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names).|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodJitInliningSucceeded Event
+## MethodJitInliningSucceeded event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -289,18 +275,18 @@ The following table shows the keyword and level:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodBeingCompiledNamespace|win:UnicodeString|Namespace of the method being compiled.|
-|MethodBeingCompiledName|win:UnicodeString|Name of the method being compiled.|
-|MethodBeingCompiledNameSignature|UnicodeString|Signature of the method (comma-separated list of type names) being compiled.|
-|InlinerNamespace|win:UnicodeString|The namespace of inliner ("parent") method.|
-|InlinerName|win:UnicodeString|Name of the inliner ("parent") method.|
-|InlinerNameSignature|win:UnicodeString|Signature of the inliner ("parent") method (comma-separated list of type names).|
-|InlineeNamespace|win:UnicodeString|The namespace of inlinee ("child") method.|
-|InlineeName|win:UnicodeString|Name of the inlinee ("child") method.|
-|InlineeNameSignature|win:UnicodeString|Signature of the inlinee ("child") method (comma-separated list of type names).|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodBeingCompiledNamespace`|`win:UnicodeString`|Namespace of the method being compiled.|
+|`MethodBeingCompiledName`|`win:UnicodeString`|Name of the method being compiled.|
+|`MethodBeingCompiledNameSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names) being compiled.|
+|`InlinerNamespace`|`win:UnicodeString`|The namespace of inliner ("parent") method.|
+|`InlinerName`|`win:UnicodeString`|Name of the inliner ("parent") method.|
+|`InlinerNameSignature`|`win:UnicodeString`|Signature of the inliner ("parent") method (comma-separated list of type names).|
+|`InlineeNamespace`|`win:UnicodeString`|The namespace of inlinee ("child") method.|
+|`InlineeName`|`win:UnicodeString`|Name of the inlinee ("child") method.|
+|`InlineeNameSignature`|`win:UnicodeString`|Signature of the inlinee ("child") method (comma-separated list of type names).|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodJitInliningFailed Event
+## MethodJitInliningFailed event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -312,20 +298,20 @@ The following table shows the keyword and level:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodBeingCompiledNamespace|win:UnicodeString|Namespace of the method being compiled.|
-|MethodBeingCompiledName|win:UnicodeString|Name of the method being compiled.|
-|MethodBeingCompiledNameSignature|UnicodeString|Signature of the method (comma-separated list of type names) being compiled.|
-|InlinerNamespace|win:UnicodeString|The namespace of inliner ("parent") method.|
-|InlinerName|win:UnicodeString|Name of the inliner ("parent") method.|
-|InlinerNameSignature|win:UnicodeString|Signature of the inliner ("parent") method (comma-separated list of type names).|
-|InlineeNamespace|win:UnicodeString|The namespace of inlinee ("child") method.|
-|InlineeName|win:UnicodeString|Name of the inlinee ("child") method.|
-|InlineeNameSignature|win:UnicodeString|Signature of the inlinee ("child") method (comma-separated list of type names).|
-|FailAlways|win:Boolean|Whether the method is marked as not inlinable.|
-|FailReason|win:UnicodeString|Reason inlining failed.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodBeingCompiledNamespace`|`win:UnicodeString`|Namespace of the method being compiled.|
+|`MethodBeingCompiledName`|`win:UnicodeString`|Name of the method being compiled.|
+|`MethodBeingCompiledNameSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names) being compiled.|
+|`InlinerNamespace`|`win:UnicodeString`|The namespace of inliner ("parent") method.|
+|`InlinerName`|`win:UnicodeString`|Name of the inliner ("parent") method.|
+|`InlinerNameSignature`|`win:UnicodeString`|Signature of the inliner ("parent") method (comma-separated list of type names).|
+|`InlineeNamespace`|`win:UnicodeString`|The namespace of inlinee ("child") method.|
+|`InlineeName`|`win:UnicodeString`|Name of the inlinee ("child") method.|
+|`InlineeNameSignature`|`win:UnicodeString`|Signature of the inlinee ("child") method (comma-separated list of type names).|
+|`FailAlways`|`win:Boolean`|Whether the method is marked as not inlinable.|
+|`FailReason`|`win:UnicodeString`|Reason inlining failed.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodJitTailCallSucceeded Event
+## MethodJitTailCallSucceeded event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -337,20 +323,20 @@ The following table shows the keyword and level:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodBeingCompiledNamespace|win:UnicodeString|Namespace of the method being compiled.|
-|MethodBeingCompiledName|win:UnicodeString|Name of the method being compiled.|
-|MethodBeingCompiledNameSignature|UnicodeString|Signature of the method (comma-separated list of type names) being compiled.|
-|CallerNamespace|win:UnicodeString|Namespace of the caller method.|
-|CallerName|win:UnicodeString|Name of the caller method.|
-|CallerNameSignature|win:UnicodeString|Signature of the caller method (Comma-separated list of type names).|
-|CalleeNamespace|win:UnicodeString|Namespace of the callee method.|
-|CalleeName|win:UnicodeString|Name of the callee method.|
-|CalleeNameSignature|win:UnicodeString|Signature of the callee method (Comma-separated list of type names).|
-|TailPrefix|win:Boolean|Whether it is a tail prefix instruction.|
-|TailCallType|win:UInt32|The type of tail call.<br/><br/>0: Optimized tail call (epilog + jmp)<br/><br/>1: Recursive tail call (method tail calls itself)<br/><br/>2: Helper assisted tail call|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodBeingCompiledNamespace`|`win:UnicodeString`|Namespace of the method being compiled.|
+|`MethodBeingCompiledName`|`win:UnicodeString`|Name of the method being compiled.|
+|`MethodBeingCompiledNameSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names) being compiled.|
+|`CallerNamespace`|`win:UnicodeString`|Namespace of the caller method.|
+|`CallerName`|`win:UnicodeString`|Name of the caller method.|
+|`CallerNameSignature`|`win:UnicodeString`|Signature of the caller method (Comma-separated list of type names).|
+|`CalleeNamespace`|`win:UnicodeString`|Namespace of the callee method.|
+|`CalleeName`|`win:UnicodeString`|Name of the callee method.|
+|`CalleeNameSignature`|`win:UnicodeString`|Signature of the callee method (Comma-separated list of type names).|
+|`TailPrefix`|`win:Boolean`|Whether it is a tail prefix instruction.|
+|`TailCallType`|`win:UInt32`|The type of tail call.<br/><br/>0: Optimized tail call (epilog + jmp)<br/><br/>1: Recursive tail call (method tail calls itself)<br/><br/>2: Helper assisted tail call|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodJitTailCallFailed Event
+## MethodJitTailCallFailed event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -362,20 +348,20 @@ The following table shows the keyword and level:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodBeingCompiledNamespace|win:UnicodeString|Namespace of the method being compiled.|
-|MethodBeingCompiledName|win:UnicodeString|Name of the method being compiled.|
-|MethodBeingCompiledNameSignature|UnicodeString|Signature of the method (comma-separated list of type names) being compiled.|
-|CallerNamespace|win:UnicodeString|Namespace of the caller method.|
-|CallerName|win:UnicodeString|Name of the caller method.|
-|CallerNameSignature|win:UnicodeString|Signature of the caller method (Comma-separated list of type names).|
-|CalleeNamespace|win:UnicodeString|Namespace of the callee method.|
-|CalleeName|win:UnicodeString|Name of the callee method.|
-|CalleeNameSignature|win:UnicodeString|Signature of the callee method (Comma-separated list of type names).|
-|TailPrefix|win:Boolean|Whether it is a tail prefix instruction.|
-|FailReason|win:UnicodeString|Reason tail call failed.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodBeingCompiledNamespace`|`win:UnicodeString`|Namespace of the method being compiled.|
+|`MethodBeingCompiledName`|`win:UnicodeString`|Name of the method being compiled.|
+|`MethodBeingCompiledNameSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names) being compiled.|
+|`CallerNamespace`|`win:UnicodeString`|Namespace of the caller method.|
+|`CallerNam`e|`win:UnicodeString`|Name of the caller method.|
+|`CallerNameSignature`|`win:UnicodeString`|Signature of the caller method (Comma-separated list of type names).|
+|`CalleeNamespace`|`win:UnicodeString`|Namespace of the callee method.|
+|`CalleeName`|`win:UnicodeString`|Name of the callee method.|
+|`CalleeNameSignature`|`win:UnicodeString`|Signature of the callee method (Comma-separated list of type names).|
+|`TailPrefix`|`win:Boolean`|Whether it is a tail prefix instruction.|
+|`FailReason`|`win:UnicodeString`|Reason tail call failed.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## MethodILToNativeMap Event
+## MethodILToNativeMap event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -387,10 +373,10 @@ The following table shows the keyword and level:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|MethodID|win:UInt64|Unique identifier of a method.|
-|ReJITID|win:UInt64|The ReJIT ID of the method.|
-|MethodExtent|The extent for the jitted method.|
-|CountOfMapEntries|win:UInt8|Number of map entries|
-|ILOffsets|win:UInt32|The IL offset.|
-|NativeOffsets|win:UInt32|The native code offset.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`MethodID`|`win:UInt64`|Unique identifier of a method.|
+|`ReJITID`|`win:UInt64`|The ReJIT ID of the method.|
+|`MethodExtent`|`win:UInt8`|The extent for the jitted method.|
+|`CountOfMapEntries`|`win:UInt8`|Number of map entries|
+|`ILOffsets`|`win:UInt32`|The IL offset.|
+|`NativeOffsets`|`win:UInt32`|The native code offset.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|

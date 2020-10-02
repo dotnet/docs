@@ -1,36 +1,20 @@
 ---
-title: "Garbage Collection Runtime Events"
-description: View detailed information about garbage collection events.
+title: "Garbage collection runtime events"
+description: See .NET runtime events that collect diagnostic information specific to .NET garbage collector.
 ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords:
   - "GC events"
   - "garbage collection events [.NET Core]"
   - "ETW, EventPipe, LTTng garbage collection events (CoreCLR)"
-ms.assetid: f14b6fd7-0966-4d87-bc89-54ef3a44a94a
 ---
-# Garbage Collection Events
+# .NET runtime garbage collection events
 
-These events collect information pertaining to garbage collection. They help in diagnostics and debugging, including determining how many times garbage collection was performed, how much memory was freed during garbage collection, etc.
-
-This category consists of the following events:
-
-- [GCStart_V2 Event](#gcstart_v2-event)
-- [GCEnd_V1 Event](#gcend_v1-event)
-- [GCHeapStats_V2 Event](#gcheapstats_v2-event)
-- [GCCreateSegment_V1 Event](#gccreatesegment_v1-event)
-- [GCFreeSegment_V1 Event](#gcfreesegment_v1-event)
-- [GCRestartEEBegin_V1](#gcrestarteebegin_v1-event)
-- [GCRestartEEEnd_V1 Event](#gcrestarteeend_v1-event)
-- [GCSuspendEEBegin_V1 Event](#gcsuspendeebegin_v1-event)
-- [GCSuspendEEEnd_V1 Event](#gcsuspendeeend_v1-event)
-- [GCAllocationTick_V3 Event](#gcallocationtick_v3-event)
-- [GCCreateConcurrentThread_V1 Event](#gccreateconcurrentthread_v1-event)
-- [GCTerminateConcurrentThread_V1 Event](#gcterminateconcurrentthread_v1-event)
-- [GCFinalizersBegin_V1 Event](#gcfinalizersbegin_v1-event)
-- [GCFinalizersEnd_V1 Event](#gcfinalizersend_v1-event)
+These events collect information pertaining to garbage collection. They help in diagnostics and debugging, including determining how many times garbage collection was performed, how much memory was freed during garbage collection, etc. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
 
 ## GCStart_V2 Event
+
+The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -46,11 +30,11 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Count|win:UInt32|The *n*th garbage collection.|
-|Depth|win:UInt32|The generation that is being collected.|
-|Reason|win:UInt32|Why the garbage collection was triggered:<br /><br /> `0x0` - Small object heap allocation.<br /><br /> `0x1` - Induced.<br /><br /> `0x2` - Low memory.<br /><br /> `0x3` - Empty.<br /><br /> `0x4` - Large object heap allocation.<br /><br /> `0x5` - Out of space (for small object heap).<br /><br /> `0x6` - Out of space (for large object heap).<br /><br /> `0x7` - Induced but not forced as blocking.|
-|Type|win:UInt32|`0x0` - Blocking garbage collection occurred outside background garbage collection.<br /><br /> `0x1` - Background garbage collection.<br /><br /> `0x2` - Blocking garbage collection occurred during background garbage collection.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`Count`|`win:UInt32`|The *n*th garbage collection.|
+|`Depth`|`win:UInt32`|The generation that is being collected.|
+|`Reason`|`win:UInt32`|Why the garbage collection was triggered:<br /><br /> `0x0` - Small object heap allocation.<br /><br /> `0x1` - Induced.<br /><br /> `0x2` - Low memory.<br /><br /> `0x3` - Empty.<br /><br /> `0x4` - Large object heap allocation.<br /><br /> `0x5` - Out of space (for small object heap).<br /><br /> `0x6` - Out of space (for large object heap).<br /><br /> `0x7` - Induced but not forced as blocking.|
+|`Type`|`win:UInt32`|`0x0` - Blocking garbage collection occurred outside background garbage collection.<br /><br /> `0x1` - Background garbage collection.<br /><br /> `0x2` - Blocking garbage collection occurred during background garbage collection.|
+|`ClrInstanceID`|win:UInt16|Unique ID for the instance of CoreCLR.|
 
 ## GCEnd_V1 Event
 
@@ -70,9 +54,9 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Count|win:UInt32|The *n*th garbage collection.|
-|Depth|win:UInt32|The generation that was collected.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`Count`|`win:UInt32`|The *n*th garbage collection.|
+|`Depth`|`win:UInt32`|The generation that was collected.|
+|`ClrInstanceID`|win:UInt16|Unique ID for the instance of CoreCLR.|
 
 ## GCHeapStats_V2 Event
 
@@ -92,24 +76,24 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|GenerationSize0|win:UInt64|The size, in bytes, of generation 0 memory.|
-|TotalPromotedSize0|win:UInt64|The number of bytes that are promoted from generation 0 to generation 1.|
-|GenerationSize1|win:UInt64|The size, in bytes, of generation 1 memory.|
-|TotalPromotedSize1|win:UInt64|The number of bytes that are promoted from generation 1 to generation 2.|
-|GenerationSize2|win:UInt64|The size, in bytes, of generation 2 memory.|
-|TotalPromotedSize2|win:UInt64|The number of bytes that survived in generation 2 after the last collection.|
-|GenerationSize3|win:UInt64|The size, in bytes, of the large object heap.|
-|TotalPromotedSize3|win:UInt64|The number of bytes that survived in the large object heap after the last collection.|
-|FinalizationPromotedSize|win:UInt64|The total size, in bytes, of the objects that are ready for finalization.|
-|FinalizationPromotedCount|win:UInt64|The number of objects that are ready for finalization.|
-|PinnedObjectCount|win:UInt32|The number of pinned (unmovable) objects.|
-|SinkBlockCount|win:UInt32|The number of synchronization blocks in use.|
-|GCHandleCount|win:UInt32|The number of garbage collection handles in use.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-|GenerationSize4|win:UInt64|The size, in bytes, of the pinned object heap.|
-|TotalPromotedSize4|win:UInt64|The number of bytes that survived in the pinned object heap after the last collection.|
+|`GenerationSize0`|`win:UInt64`|The size, in bytes, of generation 0 memory.|
+|`TotalPromotedSize0`|`win:UInt64`|The number of bytes that are promoted from generation 0 to generation 1.|
+|`GenerationSize1`|`win:UInt64`|The size, in bytes, of generation 1 memory.|
+|`TotalPromotedSize1`|`win:UInt64`|The number of bytes that are promoted from generation 1 to generation 2.|
+|`GenerationSize2`|`win:UInt64`|The size, in bytes, of generation 2 memory.|
+|`TotalPromotedSize2`|`win:UInt64`|The number of bytes that survived in generation 2 after the last collection.|
+|`GenerationSize3`|`win:UInt64`|The size, in bytes, of the large object heap.|
+|`TotalPromotedSize3`|`win:UInt64`|The number of bytes that survived in the large object heap after the last collection.|
+|`FinalizationPromotedSize`|`win:UInt64`|The total size, in bytes, of the objects that are ready for finalization.|
+|`FinalizationPromotedCount`|`win:UInt64`|The number of objects that are ready for finalization.|
+|`PinnedObjectCount`|`win:UInt32`|The number of pinned (unmovable) objects.|
+|`SinkBlockCount`|`win:UInt32`|The number of synchronization blocks in use.|
+|`GCHandleCount`|`win:UInt32`|The number of garbage collection handles in use.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+|`GenerationSize4`|`win:UInt64`|The size, in bytes, of the pinned object heap.|
+|`TotalPromotedSize4`|`win:UInt64`|The number of bytes that survived in the pinned object heap after the last collection.|
 
-## GCCreateSegment_V1 Event
+## GCCreateSegment_V1 event
 
 The following table shows the keyword and level:
 
@@ -127,14 +111,14 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Address|win:UInt64|The address of the segment.|
-|Size|win:UInt64|The size of the segment.|
-|Type|win:UInt32|0x0 - Small object heap.<br /><br /> 0x1 - Large object heap.<br /><br /> 0x2 - Read-only heap.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`Address`|`win:UInt64`|The address of the segment.|
+|`Size`|`win:UInt64`|The size of the segment.|
+|`Type`|`win:UInt32`|0x0 - Small object heap.<br /><br /> 0x1 - Large object heap.<br /><br /> 0x2 - Read-only heap.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
 Note that the size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations.
 
-## GCFreeSegment_V1 Event
+## GCFreeSegment_V1 event
 
 The following table shows the keyword and level:
 
@@ -152,10 +136,10 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Address|win:UInt64|The address of the segment.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`Address`|`win:UInt64`|The address of the segment.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## GCRestartEEBegin_V1 Event
+## GCRestartEEBegin_V1 event
 
 The following table shows the keyword and level:
 
@@ -171,7 +155,7 @@ The following table shows the event information:
 
 This event does not have any event data.
 
-## GCRestartEEEnd_V1 Event
+## GCRestartEEEnd_V1 event
 
 The following table shows the keyword and level:
 
@@ -187,7 +171,7 @@ The following table shows the event information:
 
 This event does not have any event data.
 
-## GCSuspendEEEnd_V1 Event
+## GCSuspendEEEnd_V1 event
 
 The following table shows the keyword and level:
 
@@ -203,7 +187,7 @@ The following table shows the event information:
 
 This event does not have any event data.
 
-## GCSuspendEEBegin_V1 Event
+## GCSuspendEEBegin_V1 event
 
 The following table shows the keyword and level:
 
@@ -219,10 +203,10 @@ The following table shows the event information:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Count|win:UInt32|The *n*th garbage collection.|
-|Reason|win:UInt32|Reason for EE suspension.<br/><br/>`0x0`: Suspend for Other<br/><br/>`0x1`: Suspend for GC.<br/><br/>`0x2`: Suspend for AppDomain shutdown.<br/><br/>`0x3`: Suspend for code pitching.<br/><br/>`0x4`: Suspend for shutdown.<br/><br/>`0x5`: Suspend for debugger.<br/><br/>`0x6`: Suspend for GC Prep.<br/><br/>`0x7`: Suspend for debugger sweep|
+|`Count`|`win:UInt32`|The *n*th garbage collection.|
+|`Reason`|`win:UInt32`|Reason for EE suspension.<br/><br/>`0x0`: Suspend for Other<br/><br/>`0x1`: Suspend for GC.<br/><br/>`0x2`: Suspend for AppDomain shutdown.<br/><br/>`0x3`: Suspend for code pitching.<br/><br/>`0x4`: Suspend for shutdown.<br/><br/>`0x5`: Suspend for debugger.<br/><br/>`0x6`: Suspend for GC Prep.<br/><br/>`0x7`: Suspend for debugger sweep|
 
-## GCAllocationTick_V3 Event
+## GCAllocationTick_V3 event
 
 The following table shows the keyword and level:
 
@@ -240,16 +224,16 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|AllocationAmount|win:UInt32|The allocation size, in bytes. This value is accurate for allocations that are less than the length of a ULONG (4,294,967,295 bytes). If the allocation is greater, this field contains a truncated value. Use `AllocationAmount64` for very large allocations.|
-|AllocationKind|win:UInt32|`0x0` - Small object allocation (allocation is in small object heap).<br /><br /> `0x1` - Large object allocation (allocation is in large object heap).|
-|AllocationAmount64|win:UInt64|The allocation size, in bytes. This value is accurate for very large allocations.|
-|TypeId|win:Pointer|The address of the MethodTable. When there are several types of objects that were allocated during this event, this is the address of the MethodTable that corresponds to the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
-|TypeName|win:UnicodeString|The name of the type that was allocated. When there are several types of objects that were allocated during this event, this is the type of the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
-|HeapIndex|win:UInt32|The heap where the object was allocated. This value is 0 (zero) when running with workstation garbage collection.|
-|Address|win:Pointer|The address of the last allocated object.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`AllocationAmount`|`win:UInt32`|The allocation size, in bytes. This value is accurate for allocations that are less than the length of a ULONG (4,294,967,295 bytes). If the allocation is greater, this field contains a truncated value. Use `AllocationAmount64` for very large allocations.|
+|`AllocationKind`|`win:UInt32`|`0x0` - Small object allocation (allocation is in small object heap).<br /><br /> `0x1` - Large object allocation (allocation is in large object heap).|
+|`AllocationAmount64`|`win:UInt64`|The allocation size, in bytes. This value is accurate for very large allocations.|
+|`TypeId`|`win:Pointer`|The address of the MethodTable. When there are several types of objects that were allocated during this event, this is the address of the MethodTable that corresponds to the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
+|`TypeName`|`win:UnicodeString`|The name of the type that was allocated. When there are several types of objects that were allocated during this event, this is the type of the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
+|`HeapIndex`|`win:UInt32`|The heap where the object was allocated. This value is 0 (zero) when running with workstation garbage collection.|
+|`Address`|`win:Pointer`|The address of the last allocated object.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## GCCreateConcurrentThread_V1 Event
+## GCCreateConcurrentThread_V1 event
 
 The following table shows the keyword and level:
 
@@ -266,7 +250,7 @@ The following table shows the event information:
 
 This event does not have any event data.
 
-## GCTerminateConcurrentThread_V1 Event
+## GCTerminateConcurrentThread_V1 event
 
 The following table shows the keyword and level:
 
@@ -283,7 +267,7 @@ The following table shows the event information:
 
 This event does not have any event data.
 
-## GCFinalizersBegin_V1 Event
+## GCFinalizersBegin_V1 event
 
 The following table shows the keyword and level:
 
@@ -299,7 +283,7 @@ The following table shows the event information:
 
 This event does not have any event data.
 
-## GCFinalizersEnd_V1 Event
+## GCFinalizersEnd_V1 event
 
 The following table shows the keyword and level:
 
@@ -317,10 +301,10 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Count|win:UInt32|The number of finalizers that were run.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|`Count`|`win:UInt32`|The number of finalizers that were run.|
+|`ClrInstanceID`|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
-## SetGCHandle Event
+## SetGCHandle event
 
 The following table shows the keyword and level:
 
@@ -338,14 +322,14 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|HandleID|win:Pointer|The address of the allocated handle.|
-|ObjectID|win:Pointer|The address of the object whose handle was created.|
-|Kind|win:UInt32|The type of GC handle that was set. <br /><br />`0x0`: WeakShort <br/><br/>`0x1`: WeakLong <br /><br />`0x2`: Strong <br /><br />`0x3`: Pinned <br /><br />`0x4`: Variable<br /><br />`0x5`: RefCounted <br /><br />`0x6`: Dependent<br /><br />`0x7`: AsyncPinned<br /><br />`0x8`: SizedRef|
-|Generation|win:UInt32|The generation of the object whose handle was created.|
-|AppDomainID|win:UInt64|The AppDomain ID.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`HandleID`|`win:Pointer`|The address of the allocated handle.|
+|`ObjectID`|`win:Pointer`|The address of the object whose handle was created.|
+|`Kind`|`win:UInt32`|The type of GC handle that was set. <br /><br />`0x0`: WeakShort <br/><br/>`0x1`: WeakLong <br /><br />`0x2`: Strong <br /><br />`0x3`: Pinned <br /><br />`0x4`: Variable<br /><br />`0x5`: RefCounted <br /><br />`0x6`: Dependent<br /><br />`0x7`: AsyncPinned<br /><br />`0x8`: SizedRef|
+|`Generation`|`win:UInt32`|The generation of the object whose handle was created.|
+|`AppDomainID`|`win:UInt64`|The AppDomain ID.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## DestroyGCHandle Event
+## DestroyGCHandle event
 
 The following table shows the keyword and level:
 
@@ -363,10 +347,10 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|HandleID|win:Pointer|The address of the destroyed handle.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`HandleID`|`win:Pointer`|The address of the destroyed handle.|
+|`ClrInstanceID`|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-## PinObjectAtGCTime Event
+## PinObjectAtGCTime event
 
 The following table shows the keyword and level:
 
@@ -384,13 +368,13 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|HandleID|win:Pointer|The address of the handle.|
-|ObjectID|win:Pointer|The address of the pinned object.|
-|ObjectSize|win:UInt64|The size of the pinned object.|
-|TypeName|win:UnicodeString|The name of the type of the pinned object.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`HandleID`|`win:Pointer`|The address of the handle.|
+|`ObjectID`|`win:Pointer`|The address of the pinned object.|
+|`ObjectSize`|`win:UInt64`|The size of the pinned object.|
+|`TypeName`|`win:UnicodeString`|The name of the type of the pinned object.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## GCTriggered Event
+## GCTriggered event
 
 The following table shows the keyword and level:
 
@@ -408,10 +392,10 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Reason|win:UInt32|The reason a GC was triggered.<br/><br/>`0x0`: AllocSmall<br/><br/>`0x1`: Induced <br/><br/>`0x2`: LowMemory <br/><br/>`0x3`: Empty <br/><br/>`0x4`: AllocLarge <br/><br/>`0x5`: OutOfSpaceSmallObjectHeap <br/><br/>`0x6`: OutOfSpaceLargeObjectHeap <br/><br/>`0x7`:InducedNoForce <br/><br/>`0x8`: Stress <br/><br/>`0x9`: InducedLowMemory|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`Reason`|`win:UInt32`|The reason a GC was triggered.<br/><br/>`0x0`: AllocSmall<br/><br/>`0x1`: Induced <br/><br/>`0x2`: LowMemory <br/><br/>`0x3`: Empty <br/><br/>`0x4`: AllocLarge <br/><br/>`0x5`: OutOfSpaceSmallObjectHeap <br/><br/>`0x6`: OutOfSpaceLargeObjectHeap <br/><br/>`0x7`:InducedNoForce <br/><br/>`0x8`: Stress <br/><br/>`0x9`: InducedLowMemory|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## IncreaseMemoryPressure Event
+## IncreaseMemoryPressure event
 
 The following table shows the keyword and level:
 
@@ -422,17 +406,16 @@ The following table shows the keyword and level:
 The following table shows the event information:
 
 |Event|Event ID|Raised when|
-|-----------------------------------|-----------|
+|----------------|---------------|-----------------|
 |`IncreaseMemoryPressure`|200|Memory pressure was increased.|
 
 The following table shows the event data:
 
 |Field Name|Data type|Description|
-|-----------------------------------|-----------|
-|BytesAllocated|win:UInt64|Bytes allocated.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|----------------|---------------|-----------------|
+|`ClrInstanceID`|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-## DecreaseMemoryPressure Event
+## DecreaseMemoryPressure event
 
 The following table shows the keyword and level:
 
@@ -443,17 +426,17 @@ The following table shows the keyword and level:
 The following table shows the event information:
 
 |Event|Event ID|Raised when|
-|-----------------------------------|-----------|
+|----------------|---------------|-----------------|
 |`DecreaseMemoryPressure`|201|Memory pressure was decreased.|
 
 The following table shows the event data:
 
 |Field Name|Data type|Description|
-|-----------------------------------|-----------|
-|BytesFreed|win:UInt32|Bytes freed.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|----------------|---------------|-----------------|
+|`BytesFreed`|`win:UInt32`|Bytes freed.|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
-## GCMarkWithType Event
+## GCMarkWithType event
 
 The following table shows the keyword and level:
 
@@ -464,19 +447,19 @@ The following table shows the keyword and level:
 The following table shows the event information:
 
 |Event|Event ID|Raised when|
-|-----------------------------------|-----------|
+|----------------|---------------|-----------------|
 |`GCMarkWithType`|202|A GC root has been marked during GC mark phase.|
 
 The following table shows the event data:
 
 |Field Name|Data type|Description|
-|-----------------------------------|-----------|
-|HeapNum|win:UInt32|The heap number.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-|Type|win:UInt32|The GC root type.<br/><br/>`0x0`: Stack<br/><br/>`0x1`: Finalizer<br/><br/>`0x2`: Handle<br/><br/>`0x3`: Older<br/><br/>`0x4`: SizedRef<br/><br/>`0x5`: Overflow<br/><br/>|
-|Bytes|win:UInt64|The number of bytes marked.|
+|----------------|---------------|-----------------|
+|`HeapNum`|`win:UInt32`|The heap number.|
+|`ClrInstanceID`|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`Type`|`win:UInt32`|The GC root type.<br/><br/>`0x0`: Stack<br/><br/>`0x1`: Finalizer<br/><br/>`0x2`: Handle<br/><br/>`0x3`: Older<br/><br/>`0x4`: SizedRef<br/><br/>`0x5`: Overflow<br/><br/>|
+|`Bytes`|`win:UInt64`|The number of bytes marked.|
 
-## GCJoin_V2 Event
+## GCJoin_V2 event
 
 The following table shows the keyword and level:
 
@@ -494,7 +477,7 @@ The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
-|Heap|win:UInt32|The heap number|
-|JoinTime|UInt32|Indicates whether this event is fired at the start of a join or end of a join (`0x0` for join start, `0x1` for join end)|
-|JoinType|UInt32|The join type. <br/><br/>`0x0`: Last Join<br/><br/>`0x1`: Join <br/><br/>`0x2`: Restart <br/><br/>`0x3`: First Reverse Join<br/><br/>`0x4`: Reverse Join<br/><br/>|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|`Heap`|`win:UInt32`|The heap number|
+|`JoinTime`|`win:UInt32`|Indicates whether this event is fired at the start of a join or end of a join (`0x0` for join start, `0x1` for join end)|
+|`JoinType`|`win:UInt32`|The join type. <br/><br/>`0x0`: Last Join<br/><br/>`0x1`: Join <br/><br/>`0x2`: Restart <br/><br/>`0x3`: First Reverse Join<br/><br/>`0x4`: Reverse Join<br/><br/>|
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|

@@ -65,49 +65,16 @@ The style rules in this section are applicable to both C# and Visual Basic.
   - [dotnet\_style\_prefer\_conditional\_expression\_over\_assignment](ide0045.md#dotnet\_style\_prefer\_conditional\_expression\_over\_assignment)
   - [dotnet\_style\_prefer\_conditional\_expression\_over\_return](ide0046.md#dotnet\_style\_prefer\_conditional\_expression\_over\_return)
   - [dotnet\_style\_prefer\_compound\_assignment](ide0054.md#dotnet\_style\_prefer\_compound\_assignment)
+  - [csharp\_style\_unused\_value\_assignment_preference](ide0059.md#csharp\_style\_unused\_value\_assignment_preference)
+  - [visual\_basic\_style\_unused\_value\_assignment\_preference](ide0059.md#visual\_basic\_style\_unused\_value\_assignment\_preference)
+  - [csharp\_style\_unused\_value\_expression\_statement_preference](ide0058.md#csharp\_style\_unused\_value\_expression\_statement_preference)
+  - [visual\_basic\_style\_unused\_value\_expression\_statement_preference](ide0058.md#visual\_basic\_style\_unused\_value\_expression\_statement_preference)
 - [Null-checking preferences](#null-checking-preferences)
   - [dotnet\_style\_coalesce\_expression](ide0029.md#dotnet\_style\_coalesce\_expression)
   - [dotnet\_style\_null_propagation](ide0031.md#dotnet\_style\_null\_propagation)
   - [dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method)
 - [Parameter preferences](parameter-preferences.md)
   - [dotnet\_code\_quality\_unused\_parameters](ide0060.md#dotnet\_code\_quality\_unused\_parameters)
-
-#### visual_basic_style_unused_value_expression_statement_preference
-
-|Property|Value|
-|-|-|
-| **Option name** | visual_basic_style_unused_value_expression_statement_preference |
-| **Rule ID** | IDE0058 |
-| **Applicable languages** | Visual Basic |
-| **Option values** | `unused_local_variable:silent` |
-| **Default option value** | `unused_local_variable:silent` |
-
-Code examples:
-
-```vb
-' visual_basic_style_unused_value_expression_statement_preference = unused_local_variable:silent
-
-Dim unused = Computation()
-```
-
-#### visual_basic_style_unused_value_assignment_preference
-
-|Property|Value|
-|-|-|
-| **Option name** | visual_basic_style_unused_value_assignment_preference |
-| **Rule ID** | IDE0059 |
-| **Applicable languages** | Visual Basic |
-| **Option values** | `unused_local_variable:silent` |
-| **Default option value** | `unused_local_variable:silent` |
-
-Code examples:
-
-```vb
-' visual_basic_style_unused_value_assignment_preference = unused_local_variable:suggestion
-
-Dim unused = Computation()
-Dim x = 1;
-```
 
 ## C# style rules
 
@@ -138,9 +105,6 @@ The style rules in this section are applicable to C# language only.
   - csharp\_style\_conditional\_delegate_call
 - [Code block preferences](#code-block-preferences)
   - csharp\_prefer_braces
-- [Unused value preferences](#unused-value-preferences)
-  - csharp\_style\_unused\_value\_expression\_statement_preference
-  - csharp\_style\_unused\_value\_assignment_preference
 - [Index and range preferences](#index-and-range-preferences)
   - csharp\_style\_prefer\_index_operator
   - csharp\_style\_prefer\_range_operator
@@ -624,72 +588,6 @@ if (test) { this.Display(); }
 
 // csharp_prefer_braces = false
 if (test) this.Display();
-```
-
-### Unused value preferences
-
-These style rules concern unused expressions and value assignments.
-
-Example *.editorconfig* file:
-
-```ini
-# CSharp code style settings:
-[*.cs]
-csharp_style_unused_value_expression_statement_preference = discard_variable:silent
-csharp_style_unused_value_assignment_preference = discard_variable:suggestion
-```
-
-#### csharp_style_unused_value_expression_statement_preference
-
-|Property|Value|
-|-|-|
-| **Option name** | csharp_style_unused_value_expression_statement_preference |
-| **Rule ID** | IDE0058 |
-| **Applicable languages** | C# |
-| **Option values** | `discard_variable` - Prefer to assign an unused expression to a [discard](/dotnet/csharp/discards) <br /><br />`unused_local_variable` - Prefer to assign an unused expression to a local variable |
-| **Default option value** | `discard_variable:silent` |
-
-Code examples:
-
-```csharp
-// Original code:
-System.Convert.ToInt32("35");
-
-// After code fix for IDE0058:
-
-// csharp_style_unused_value_expression_statement_preference = discard_variable
-_ = System.Convert.ToInt32("35");
-
-// csharp_style_unused_value_expression_statement_preference = unused_local_variable
-var unused = Convert.ToInt32("35");
-```
-
-#### csharp_style_unused_value_assignment_preference
-
-|Property|Value|
-|-|-|
-| **Option name** | csharp_style_unused_value_assignment_preference |
-| **Rule ID** | IDE0059 |
-| **Applicable languages** | C# |
-| **Option values** | `discard_variable` - Prefer to use a [discard](/dotnet/csharp/discards) when assigning a value that's not used<br /><br />`unused_local_variable` - Prefer to use a local variable when assigning a value that's not used |
-| **Default option value** | `discard_variable:suggestion` |
-
-Code examples:
-
-```csharp
-// csharp_style_unused_value_assignment_preference = discard_variable
-int GetCount(Dictionary<string, int> wordCount, string searchWord)
-{
-    _ = wordCount.TryGetValue(searchWord, out var count);
-    return count;
-}
-
-// csharp_style_unused_value_assignment_preference = unused_local_variable
-int GetCount(Dictionary<string, int> wordCount, string searchWord)
-{
-    var unused = wordCount.TryGetValue(searchWord, out var count);
-    return count;
-}
 ```
 
 ### Index and range preferences

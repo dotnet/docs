@@ -23,6 +23,8 @@ The style rules in this section concern following expression-level preferences:
 - [Use conditional expression for assignment](ide0045.md)
 - [Use conditional expression for return](ide0046.md)
 - [Use compound assignment](ide0054.md)
+- [Unnecessary value assignment](ide0059.md)
+- [Unused expression value](ide0058.md)
 
 ## See also
 

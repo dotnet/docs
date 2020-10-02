@@ -80,10 +80,10 @@ The style rules in this section are applicable to both C# and Visual Basic.
 
 The style rules in this section are applicable to C# language only.
 
-- [Implicit and explicit types](#implicit-and-explicit-types)
-  - csharp\_style\_var\_for\_built\_in_types
-  - csharp\_style\_var\_when\_type\_is_apparent
-  - csharp\_style\_var_elsewhere
+- ['var' preferences](ide0003-ide0009.md)
+  - [csharp\_style\_var\_for\_built\_in_types](ide0007-ide0008.md#csharp\_style\_var\_for\_built\_in_types)
+  - [csharp\_style\_var\_when\_type\_is_apparent](ide0007-ide0008.md#csharp\_style\_var\_when\_type\_is_apparent)
+  - [csharp\_style\_var_elsewhere](ide0007-ide0008.md#csharp\_style\_var_elsewhere)
 - [Expression-bodied members](#expression-bodied-members)
   - csharp\_style\_expression\_bodied_methods
   - csharp\_style\_expression\_bodied_constructors
@@ -115,80 +115,6 @@ The style rules in this section are applicable to C# language only.
   - csharp\_prefer\_static\_local_function
   - csharp\_prefer\_simple\_using_statement
   - csharp\_style\_prefer\_switch_expression
-
-### Implicit and explicit types
-
-The style rules in this section concern the use of the [var](/dotnet/csharp/language-reference/keywords/var) keyword versus an explicit type in a variable declaration. This rule can be applied separately to built-in types, when the type is apparent, and elsewhere.
-
-Example *.editorconfig* file:
-
-```ini
-# CSharp code style settings:
-[*.cs]
-csharp_style_var_for_built_in_types = true:suggestion
-csharp_style_var_when_type_is_apparent = true:suggestion
-csharp_style_var_elsewhere = true:suggestion
-```
-
-#### csharp\_style\_var\_for\_built\_in_types
-
-|Property|Value|
-|-|-|
-| **Option name** | csharp_style_var_for_built_in_types |
-| **Rule ID** | IDE0007 and IDE0008 |
-| **Applicable languages** | C#  |
-| **Option values** | `true` - Prefer `var` is used to declare variables with built-in system types such as `int`<br /><br />`false` - Prefer explicit type over `var` to declare variables with built-in system types such as `int` |
-| **Default option value** | `true:silent` |
-
-Code examples:
-
-```csharp
-// csharp_style_var_for_built_in_types = true
-var x = 5;
-
-// csharp_style_var_for_built_in_types = false
-int x = 5;
-```
-
-#### csharp\_style\_var\_when\_type\_is_apparent
-
-|Property|Value|
-|-|-|
-| **Option name** | csharp_style_var_when_type_is_apparent |
-| **Rule ID** | IDE0007 and IDE0008 |
-| **Applicable languages** | C#  |
-| **Option values** | `true` - Prefer `var` when the type is already mentioned on the right-hand side of a declaration expression<br /><br />`false` - Prefer explicit type over `var` when the type is already mentioned on the right-hand side of a declaration expression |
-| **Default option value** | `true:silent` |
-
-Code examples:
-
-```csharp
-// csharp_style_var_when_type_is_apparent = true
-var obj = new Customer();
-
-// csharp_style_var_when_type_is_apparent = false
-Customer obj = new Customer();
-```
-
-#### csharp\_style\_var_elsewhere
-
-|Property|Value|
-|-|-|
-| **Option name** | csharp_style_var_elsewhere |
-| **Rule ID** | IDE0007 and IDE0008 |
-| **Applicable languages** | C#  |
-| **Option values** | `true` - Prefer `var` over explicit type in all cases, unless overridden by another code style rule<br /><br />`false` - Prefer explicit type over `var` in all cases, unless overridden by another code style rule |
-| **Default option value** | `true:silent` |
-
-Code examples:
-
-```csharp
-// csharp_style_var_elsewhere = true
-var f = this.Init();
-
-// csharp_style_var_elsewhere = false
-bool f = this.Init();
-```
 
 ### Expression-bodied members
 

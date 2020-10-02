@@ -65,6 +65,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0049](ide0049.md) | Use language keywords instead of framework type names for type references | [dotnet_style_predefined_type_for_locals_parameters_members](ide0049.md#dotnet_style_predefined_type_for_locals_parameters_members)<br/> [dotnet_style_predefined_type_for_member_access](ide0049.md#dotnet_style_predefined_type_for_member_access)<br/> |
 > | [IDE0053](ide0053.md) | Use expression body for lambdas | [csharp_style_expression_bodied_lambdas](ide0053.md#csharp_style_expression_bodied_lambdas) |
 > | [IDE0054](ide0054.md) | Use compound assignment | [dotnet_style_prefer_compound_assignment](ide0054.md#dotnet_style_prefer_compound_assignment) |
+> | [IDE0055](formatting-rules.md) | Fix formatting | |
 > | [IDE0056](ide0056.md) | Use index operator | [csharp_style_prefer_index_operator](ide0056.md#csharp_style_prefer_index_operator) |
 > | [IDE0057](ide0057.md) | Use range operator | [csharp_style_prefer_range_operator](ide0057.md#csharp_style_prefer_range_operator) |
 > | [IDE0058](ide0058.md) | Unused expression value | [csharp_style_unused_value_expression_statement_preference](ide0058.md#csharp_style_unused_value_expression_statement_preference)<br/> [visual_basic_style_unused_value_expression_statement_preference](ide0058.md#visual_basic_style_unused_value_expression_statement_preference) |
@@ -76,6 +77,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0065](ide0065.md) | 'using' directive placement | [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement) |
 > | [IDE0066](ide0066.md) | Use switch expression | [csharp_style_prefer_switch_expression](ide0066.md#csharp_style_prefer_switch_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
+> | [IDE1006](naming-rules.md) | Naming styles | |
 
 ## Legend
 

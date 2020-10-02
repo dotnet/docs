@@ -31,11 +31,11 @@ The table below has the relevant runtime library API details for single-file use
 
 We have some recommendations for fixing common scenarios:
 
-* To access files next to the executable, use <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType>
+* To access files next to the executable, use <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType>.
 
-* To find the file name of the executable, use the first element of <xref:System.Environment.GetCommandLineArgs()?displayProperty=nameWithType>
+* To find the file name of the executable, use the first element of <xref:System.Environment.GetCommandLineArgs?displayProperty=nameWithType>.
 
-* To avoid shipping loose files entirely, consider using [embedded resources](https://docs.microsoft.com/en-us/dotnet/framework/resources/creating-resource-files-for-desktop-apps)
+* To avoid shipping loose files entirely, consider using [embedded resources](../../framework/resources/creating-resource-files-for-desktop-apps.md).
 
 ## Other considerations
 

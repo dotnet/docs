@@ -26,7 +26,7 @@ ms.author: gewarren
 
 The following table list all the code style rules by ID and options, if any.
 
-> [!div class="mx-tdCol43reakAll"]
+> [!div class="mx-tdCol3BreakAll"]
 > | Rule ID | Title | Option |
 > | - | - | - |
 > | [IDE0003](ide0003-ide0009.md) | Remove 'this' or 'Me' qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |

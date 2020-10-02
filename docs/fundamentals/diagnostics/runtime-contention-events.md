@@ -14,7 +14,7 @@ These runtime events capture information about monitor lock contentions such as 
 
 ## ContentionStart_V1 event
 
-This event is emitted at the start of a managed thread contention.
+This event is emitted at the start of a monitor lock contention.
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -24,7 +24,7 @@ This event is emitted at the start of a managed thread contention.
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`ContentionStart_V1`|81|A managed thread contention starts.|
+|`ContentionStart_V1`|81|A monitor lock contention starts.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -33,7 +33,7 @@ This event is emitted at the start of a managed thread contention.
 
 ## ContentionStop_V1 event
 
-This event is emitted at the end of a managed thread contention.
+This event is emitted at the end of a monitor lock contention.
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -43,7 +43,7 @@ This event is emitted at the end of a managed thread contention.
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`ContentionStop_V1`|91|A managed thread contention ends.|
+|`ContentionStop_V1`|91|A monitor lock contention ends.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|

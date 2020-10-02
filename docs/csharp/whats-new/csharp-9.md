@@ -188,7 +188,7 @@ Any of these patterns can be used in any context where patterns are allowed: `is
 
 Three new features improve support for native interop and low-level libraries that require high performance: native sized integers, function pointers, and omitting the `localsinit` flag.
 
-Native sized integers, `nint` and `nuint`, are integer types. They're expressed by the underlying types <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>. The compiler surfaces additional conversions and operations for these types as native ints. Native sized ints don't have constants for `MaxValue` or `MinValue`, except for `nuint.MinValue`, which has a `MinValue` of `0`. Other values can't be expressed as constants because it depends on the native size of an integer on the target machine. You can use constant values for `nint` in the range [`int.MinValue` .. `int.MaxValue`]. You can use constant values for `nuint` in the range [`uint.MinValue` .. `uint.MaxValue`]. The compiler performs constant folding for all unary and binary operators using the <xref:System.Int32?displayProperty=nameWithType> and <xref:System.UInt32?displayProperty=nameWithType> types. If the result doesn't fit in 32 bits, the operation is executed at runtime and isn't considered a constant. Native sized integers can increase performance in scenarios where integer math is used extensively and needs to have the fastest performance possible.
+Native sized integers, `nint` and `nuint`, are integer types. They're expressed by the underlying types <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>. The compiler surfaces additional conversions and operations for these types as native ints. Native sized integers define properties for `MaxValue` or `MinValue`. These values can't be expressed as compile time constants because they depend on the native size of an integer on the target machine. Those values are readonly at runtime. You can use constant values for `nint` in the range [`int.MinValue` .. `int.MaxValue`]. You can use constant values for `nuint` in the range [`uint.MinValue` .. `uint.MaxValue`]. The compiler performs constant folding for all unary and binary operators using the <xref:System.Int32?displayProperty=nameWithType> and <xref:System.UInt32?displayProperty=nameWithType> types. If the result doesn't fit in 32 bits, the operation is executed at runtime and isn't considered a constant. Native sized integers can increase performance in scenarios where integer math is used extensively and needs to have the fastest performance possible.
 
 Function pointers provide an easy syntax to access the IL opcodes `ldftn` and `calli`. You can declare function pointers using new `delegate*` syntax. A `delegate*` type is a pointer type. Invoking the `delegate*` type uses `calli`, in contrast to a delegate that uses `callvirt` on the `Invoke()` method. Syntactically, the invocations are identical. Function pointer invocation uses the `managed` calling convention. You add the `unmanaged` keyword after the `delegate*` syntax to declare that you want the `unmanaged` calling convention. Other calling conventions can be specified using attributes on the `delegate*` declaration.
 
@@ -198,11 +198,11 @@ These features can improve performance in some scenarios. They should be used on
 
 ## Fit and finish features
 
-Many of the other features help you write code more efficiently. In C# 9.0, you can omit the type in a new expression when the created object's type is already known. The most common use is in field declarations:
+Many of the other features help you write code more efficiently. In C# 9.0, you can omit the type in a [`new` expression](../language-reference/operators/new-operator.md) when the created object's type is already known. The most common use is in field declarations:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="WeatherStationField":::
 
-Target type new can also be used when you need to create a new object to pass as a parameter to a method. Consider a `ForecastFor()` method with the following signature:
+Target-typed `new` can also be used when you need to create a new object to pass as an argument to a method. Consider a `ForecastFor()` method with the following signature:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="ForecastSignature":::
 
@@ -214,7 +214,7 @@ Another nice use for this feature is to combine it with init only properties to 
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="InitWeatherStation":::
 
-You can return an instance created by the default constructor using a `return new();` expression.
+You can return an instance created by the default constructor using a `return new();` statement.
 
 A similar feature improves the target type resolution of [conditional expressions](../language-reference/operators/conditional-operator.md). With this change, the two expressions need not have an implicit conversion from one to the other, but may both have implicit conversions to a target type. You likely won’t notice this change. What you will notice is that some conditional expressions that previously required casts or wouldn’t compile now just work.
 

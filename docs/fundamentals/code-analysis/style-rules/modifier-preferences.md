@@ -15,9 +15,9 @@ dev_langs:
 
 The style rules in this section concern following modifier preferences:
 
-- [Order modifiers](ide0036.md)
-- [Add accessibility modifiers](ide0040.md)
-- [Add readonly modifier](ide0044.md)
+- [Order modifiers (IDE0036)](ide0036.md)
+- [Add accessibility modifiers (IDE0040)](ide0040.md)
+- [Add readonly modifier (IDE0044)](ide0044.md)
 
 ## See also
 

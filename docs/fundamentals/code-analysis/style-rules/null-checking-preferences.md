@@ -15,9 +15,9 @@ dev_langs:
 
 The style rules in this section concern the following null-checking preferences:
 
-- [Use coalesce expression](ide0029.md)
-- [Use null propagation](ide0031.md)
-- [Use is null check](ide0041.md)
+- [Use coalesce expression (IDE0029)](ide0029.md)
+- [Use null propagation (IDE0031)](ide0031.md)
+- [Use is null check (IDE0041)](ide0041.md)
 
 ## See also
 

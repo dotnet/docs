@@ -1,4 +1,4 @@
-### Multi-line ASP.Net TextBox spacing changed when using AntiXSSEncoder
+### Multi-line ASP.NET TextBox spacing changed when using AntiXSSEncoder
 
 #### Details
 

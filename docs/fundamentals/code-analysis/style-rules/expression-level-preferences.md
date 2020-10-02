@@ -15,16 +15,16 @@ dev_langs:
 
 The style rules in this section concern following expression-level preferences:
 
-- [Use object initializers](ide0017.md)
-- [Use collection initializers](ide0028.md)
-- [Use explicitly provided tuple name](ide0033.md)
-- [Use inferred member name](ide0037.md)
-- [Use auto property](ide0032.md)
-- [Use conditional expression for assignment](ide0045.md)
-- [Use conditional expression for return](ide0046.md)
-- [Use compound assignment](ide0054.md)
-- [Unnecessary value assignment](ide0059.md)
-- [Unused expression value](ide0058.md)
+- [Use object initializers (IDE0017)](ide0017.md)
+- [Use collection initializers (IDE0028)](ide0028.md)
+- [Use auto property (IDE0032)](ide0032.md)
+- [Use explicitly provided tuple name (IDE0033)](ide0033.md)
+- [Use inferred member name (IDE0037)](ide0037.md)
+- [Use conditional expression for assignment (IDE0045)](ide0045.md)
+- [Use conditional expression for return (IDE0046)](ide0046.md)
+- [Use compound assignment (IDE0054)](ide0054.md)
+- [Unnecessary value assignment (IDE0059)](ide0059.md)
+- [Unused expression value (IDE0058)](ide0058.md)
 
 ## See also
 

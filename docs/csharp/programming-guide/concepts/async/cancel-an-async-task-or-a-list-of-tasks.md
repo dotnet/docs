@@ -154,14 +154,14 @@ Add the following `ProcessUrlAsync` method below the `SumPageSizesAsync` method:
 static async Task<int> ProcessUrlAsync(string url, HttpClient client, CancellationToken token)
 {
     HttpResponseMessage response = await client.GetAsync(url, token);
-    byte[] content = await response.Content.ReadAsByteArrayAsync(token);
+    byte[] content = await response.Content.ReadAsByteArrayAsync();
     Console.WriteLine($"{url,-60} {content.Length,10:#,#}");
 
     return content.Length;
 }
 ```
 
-For any given URL, the method will use the `client` instance provided to get the response as a `byte[]`. The <xref:System.Threading.CancellationToken> instance is passed into the <xref:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> and <xref:System.Net.Http.HttpContent.ReadAsByteArrayAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> methods. The `token` is used to register for requested cancellation. The length is returned after the URL and length is written to the console.
+For any given URL, the method will use the `client` instance provided to get the response as a `byte[]`. The <xref:System.Threading.CancellationToken> instance is passed into the <xref:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> and <xref:System.Net.Http.HttpContent.ReadAsByteArrayAsync?displayProperty=nameWithType> methods. The `token` is used to register for requested cancellation. The length is returned after the URL and length is written to the console.
 
 ### Example application output
 

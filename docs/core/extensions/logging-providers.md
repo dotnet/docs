@@ -74,7 +74,7 @@ The following logging providers are shipped by Microsoft, but not as part of the
 
 ### Console
 
-The `Console` provider logs output to the console. For more information on viewing `Console` logs in development, see [Logging output from dotnet run and Visual Studio](logging.md#logging-output-from-dotnet-run-and-visual-studio).
+The `Console` provider logs output to the console.
 
 ### Debug
 

@@ -11,7 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
-| [Order of tags in Activity.Tags is reversed](#order-of-tags-in-activitytags-is-reserved) | 5.0 |
+| [Order of tags in Activity.Tags is reversed](#order-of-tags-in-activitytags-is-reversed) | 5.0 |
 | [Parameter names changed in RC1](#parameter-names-changed-in-rc1) | 5.0 |
 | [OSPlatform attributes renamed or removed](#osplatform-attributes-renamed-or-removed) | 5.0 |
 | [Thread.Abort is obsolete](#threadabort-is-obsolete) | 5.0 |

@@ -15,7 +15,7 @@ dev_langs:
 
 The style rules in this section concern the following parameter preferences:
 
-- [Remove unused parameter](ide0060.md)
+- [Remove unused parameter (IDE0060)](ide0060.md)
 
 ## See also
 

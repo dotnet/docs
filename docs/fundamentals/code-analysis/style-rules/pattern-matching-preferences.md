@@ -16,6 +16,7 @@ The style rules in this section concern the use of [pattern matching](/dotnet/cs
 
 - [Use pattern matching to avoid `as` followed by a `null` check (IDE0019](ide0019.md)
 - [Use pattern matching to avoid `is` check followed by a cast (IDE0020)](ide0020.md)
+- [Use switch expression (IDE0066)](ide0066.md)
 
 ## See also
 

@@ -69,7 +69,7 @@ The style rules in this section are applicable to both C# and Visual Basic.
   - [visual\_basic\_style\_unused\_value\_assignment\_preference](ide0059.md#visual\_basic\_style\_unused\_value\_assignment\_preference)
   - [csharp\_style\_unused\_value\_expression\_statement_preference](ide0058.md#csharp\_style\_unused\_value\_expression\_statement_preference)
   - [visual\_basic\_style\_unused\_value\_expression\_statement_preference](ide0058.md#visual\_basic\_style\_unused\_value\_expression\_statement_preference)
-- [Null-checking preferences](#null-checking-preferences)
+- [Null-checking preferences](null-checking-preferences.md)
   - [dotnet\_style\_coalesce\_expression](ide0029.md#dotnet\_style\_coalesce\_expression)
   - [dotnet\_style\_null_propagation](ide0031.md#dotnet\_style\_null\_propagation)
   - [dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method)

@@ -38,83 +38,83 @@ Options for language rules can be specified in an EditorConfig file with the fol
 The style rules in this section are applicable to both C# and Visual Basic.
 
 - ['this.' and 'Me.' qualifiers](ide0003-ide0009.md)
-  - [dotnet\_style\_qualification\_for_field](ide0003-ide0009.md#dotnet\_style\_qualification\_for_field)
-  - [dotnet\_style\_qualification\_for_property](ide0003-ide0009.md#dotnet\_style\_qualification\_for_property)
-  - [dotnet\_style\_qualification\_for_method](ide0003-ide0009.md#dotnet\_style\_qualification\_for_method)
-  - [dotnet\_style\_qualification\_for_event](ide0003-ide0009.md#dotnet\_style\_qualification\_for_event)
+  - [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)
+  - [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)
+  - [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)
+  - [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event)
 - [Language keywords instead of framework type names for type references](ide0049.md)
-  - [dotnet\_style\_predefined\_type\_for\_locals\_parameters_members](ide0049.md#dotnet\_style\_predefined\_type\_for\_locals\_parameters_members)
-  - [dotnet\_style\_predefined\_type\_for\_member_access](ide0049.md#dotnet\_style\_predefined\_type\_for\_member_access)
+  - [dotnet_style_predefined_type_for_locals_parameters_members](ide0049.md#dotnet_style_predefined_type_for_locals_parameters_members)
+  - [dotnet_style_predefined_type_for_member_access](ide0049.md#dotnet_style_predefined_type_for_member_access)
 - [Modifier preferences](modifier-preferences.md)
-  - [dotnet\_style\_require\_accessibility_modifiers](ide0040.md#dotnet\_style\_require\_accessibility_modifiers)
-  - [csharp\_preferred\_modifier_order](ide0036.md#csharp\_preferred\_modifier_order)
-  - [visual\_basic\_preferred\_modifier_order](ide0036.md#visual\_basic\_preferred\_modifier_order)
-  - [dotnet\_style\_readonly\_field](ide0044.md#dotnet\_style\_readonly\_field)
+  - [dotnet_style_require_accessibility_modifiers](ide0040.md#dotnet_style_require_accessibility_modifiers)
+  - [csharp_preferred_modifier_order](ide0036.md#csharp_preferred_modifier_order)
+  - [visual_basic_preferred_modifier_order](ide0036.md#visual_basic_preferred_modifier_order)
+  - [dotnet_style_readonly_field](ide0044.md#dotnet_style_readonly_field)
 - [Parentheses preferences](ide0047-ide0048.md)
-  - [dotnet\_style\_parentheses\_in\_arithmetic\_binary\_operators](ide0047-ide0048.md#dotnet\_style\_parentheses\_in\_arithmetic\_binary_operators)
-  - [dotnet\_style\_parentheses\_in\_relational\_binary\_operators](ide0047-ide0048.md#dotnet\_style\_parentheses\_in\_relational\_binary_operators)
-  - [dotnet\_style\_parentheses\_in\_other\_binary\_operators](ide0047-ide0048.md#dotnet\_style\_parentheses\_in\_other\_binary_operators)
-  - [dotnet\_style\_parentheses\_in\_other\_operators](ide0047-ide0048.md#dotnet\_style\_parentheses\_in\_other_operators)
+  - [dotnet_style_parentheses_in_arithmetic_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_arithmetic_binary_operators)
+  - [dotnet_style_parentheses_in_relational_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_relational_binary_operators)
+  - [dotnet_style_parentheses_in_other_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_other_binary_operators)
+  - [dotnet_style_parentheses_in_other_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_other_operators)
 - [Expression-level preferences](expression-level-preferences.md)
-  - [dotnet\_style\_object_initializer](ide0017.md#dotnet\_style\_object_initializer)
-  - [dotnet\_style\_collection_initializer](ide0028.md#dotnet\_style\_collection_initializer)
-  - [dotnet\_style\_explicit\_tuple_names](ide0033.md#dotnet\_style\_explicit\_tuple_names)
-  - [dotnet\_style\_prefer\_inferred\_tuple_names](ide0037.md#dotnet\_style\_prefer\_inferred\_tuple_names)
-  - [dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names](ide0037.md#dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names)
-  - [dotnet\_style\_prefer\_auto\_properties](ide0032.md#dotnet\_style\_prefer\_auto\_properties)
-  - [dotnet\_style\_prefer\_conditional\_expression\_over\_assignment](ide0045.md#dotnet\_style\_prefer\_conditional\_expression\_over\_assignment)
-  - [dotnet\_style\_prefer\_conditional\_expression\_over\_return](ide0046.md#dotnet\_style\_prefer\_conditional\_expression\_over\_return)
-  - [dotnet\_style\_prefer\_compound\_assignment](ide0054.md#dotnet\_style\_prefer\_compound\_assignment)
-  - [csharp\_style\_unused\_value\_assignment_preference](ide0059.md#csharp\_style\_unused\_value\_assignment_preference)
-  - [visual\_basic\_style\_unused\_value\_assignment\_preference](ide0059.md#visual\_basic\_style\_unused\_value\_assignment\_preference)
-  - [csharp\_style\_unused\_value\_expression\_statement_preference](ide0058.md#csharp\_style\_unused\_value\_expression\_statement_preference)
-  - [visual\_basic\_style\_unused\_value\_expression\_statement_preference](ide0058.md#visual\_basic\_style\_unused\_value\_expression\_statement_preference)
+  - [dotnet_style_object_initializer](ide0017.md#dotnet_style_object_initializer)
+  - [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer)
+  - [dotnet_style_explicit_tuple_names](ide0033.md#dotnet_style_explicit_tuple_names)
+  - [dotnet_style_prefer_inferred_tuple_names](ide0037.md#dotnet_style_prefer_inferred_tuple_names)
+  - [dotnet_style_prefer_inferred_anonymous_type_member_names](ide0037.md#dotnet_style_prefer_inferred_anonymous_type_member_names)
+  - [dotnet_style_prefer_auto_properties](ide0032.md#dotnet_style_prefer_auto_properties)
+  - [dotnet_style_prefer_conditional_expression_over_assignment](ide0045.md#dotnet_style_prefer_conditional_expression_over_assignment)
+  - [dotnet_style_prefer_conditional_expression_over_return](ide0046.md#dotnet_style_prefer_conditional_expression_over_return)
+  - [dotnet_style_prefer_compound_assignment](ide0054.md#dotnet_style_prefer_compound_assignment)
+  - [csharp_style_unused_value_assignment_preference](ide0059.md#csharp_style_unused_value_assignment_preference)
+  - [visual_basic_style_unused_value_assignment_preference](ide0059.md#visual_basic_style_unused_value_assignment_preference)
+  - [csharp_style_unused_value_expression_statement_preference](ide0058.md#csharp_style_unused_value_expression_statement_preference)
+  - [visual_basic_style_unused_value_expression_statement_preference](ide0058.md#visual_basic_style_unused_value_expression_statement_preference)
 - [Null-checking preferences](null-checking-preferences.md)
-  - [dotnet\_style\_coalesce\_expression](ide0029.md#dotnet\_style\_coalesce\_expression)
-  - [dotnet\_style\_null_propagation](ide0031.md#dotnet\_style\_null\_propagation)
-  - [dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method)
+  - [dotnet_style_coalesce_expression](ide0029.md#dotnet_style_coalesce_expression)
+  - [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation)
+  - [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method)
 - [Parameter preferences](parameter-preferences.md)
-  - [dotnet\_code\_quality\_unused\_parameters](ide0060.md#dotnet\_code\_quality\_unused\_parameters)
+  - [dotnet_code_quality_unused_parameters](ide0060.md#dotnet_code_quality_unused_parameters)
 
 ## C# style rules
 
 The style rules in this section are applicable to C# language only.
 
 - [Implicit and explicit types](#implicit-and-explicit-types)
-  - csharp\_style\_var\_for\_built\_in_types
-  - csharp\_style\_var\_when\_type\_is_apparent
-  - csharp\_style\_var_elsewhere
+  - csharp_style_var_for_built_in_types
+  - csharp_style_var_when_type_is_apparent
+  - csharp_style_var_elsewhere
 - [Expression-bodied members](#expression-bodied-members)
-  - csharp\_style\_expression\_bodied_methods
-  - csharp\_style\_expression\_bodied_constructors
-  - csharp\_style\_expression\_bodied_operators
-  - csharp\_style\_expression\_bodied_properties
-  - csharp\_style\_expression\_bodied_indexers
-  - csharp\_style\_expression\_bodied_accessors
-  - csharp\_style\_expression\_bodied_lambdas
-  - csharp\_style\_expression\_bodied\_local_functions
+  - csharp_style_expression_bodied_methods
+  - csharp_style_expression_bodied_constructors
+  - csharp_style_expression_bodied_operators
+  - csharp_style_expression_bodied_properties
+  - csharp_style_expression_bodied_indexers
+  - csharp_style_expression_bodied_accessors
+  - csharp_style_expression_bodied_lambdas
+  - csharp_style_expression_bodied_local_functions
 - [Pattern matching](#pattern-matching)
-  - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
-  - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
+  - csharp_style_pattern_matching_over_is_with_cast_check
+  - csharp_style_pattern_matching_over_as_with_null_check
 - [Inlined variable declarations](#inlined-variable-declarations)
-  - csharp\_style\_inlined\_variable_declaration
+  - csharp_style_inlined_variable_declaration
 - [Expression-level preferences](#c-expression-level-preferences)
-  - csharp\_prefer\_simple\_default_expression
+  - csharp_prefer_simple_default_expression
 - ["Null" checking preferences](#c-null-checking-preferences)
-  - csharp\_style\_throw_expression
-  - csharp\_style\_conditional\_delegate_call
+  - csharp_style_throw_expression
+  - csharp_style_conditional_delegate_call
 - [Code block preferences](#code-block-preferences)
-  - csharp\_prefer_braces
+  - csharp_prefer_braces
 - [Index and range preferences](#index-and-range-preferences)
-  - csharp\_style\_prefer\_index_operator
-  - csharp\_style\_prefer\_range_operator
+  - csharp_style_prefer_index_operator
+  - csharp_style_prefer_range_operator
 - [Miscellaneous preferences](#miscellaneous-preferences)
-  - csharp\_style\_deconstructed\_variable_declaration
-  - csharp\_style\_pattern\_local\_over\_anonymous_function
-  - csharp\_using\_directive\_placement
-  - csharp\_prefer\_static\_local_function
-  - csharp\_prefer\_simple\_using_statement
-  - csharp\_style\_prefer\_switch_expression
+  - csharp_style_deconstructed_variable_declaration
+  - csharp_style_pattern_local_over_anonymous_function
+  - csharp_using_directive_placement
+  - csharp_prefer_static_local_function
+  - csharp_prefer_simple_using_statement
+  - csharp_style_prefer_switch_expression
 
 ### Implicit and explicit types
 
@@ -130,7 +130,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### csharp\_style\_var\_for\_built\_in_types
+#### csharp_style_var_for_built_in_types
 
 |Property|Value|
 |-|-|
@@ -150,7 +150,7 @@ var x = 5;
 int x = 5;
 ```
 
-#### csharp\_style\_var\_when\_type\_is_apparent
+#### csharp_style_var_when_type_is_apparent
 
 |Property|Value|
 |-|-|
@@ -170,7 +170,7 @@ var obj = new Customer();
 Customer obj = new Customer();
 ```
 
-#### csharp\_style\_var_elsewhere
+#### csharp_style_var_elsewhere
 
 |Property|Value|
 |-|-|
@@ -209,7 +209,7 @@ csharp_style_expression_bodied_lambdas = true:silent
 csharp_style_expression_bodied_local_functions = false:silent
 ```
 
-#### csharp\_style\_expression\_bodied_methods
+#### csharp_style_expression_bodied_methods
 
 |Property|Value|
 |-|-|
@@ -229,7 +229,7 @@ public int GetAge() => this.Age;
 public int GetAge() { return this.Age; }
 ```
 
-#### csharp\_style\_expression\_bodied_constructors
+#### csharp_style_expression_bodied_constructors
 
 |Property|Value|
 |-|-|
@@ -249,7 +249,7 @@ public Customer(int age) => Age = age;
 public Customer(int age) { Age = age; }
 ```
 
-#### csharp\_style\_expression\_bodied_operators
+#### csharp_style_expression_bodied_operators
 
 |Property|Value|
 |-|-|
@@ -271,7 +271,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```
 
-#### csharp\_style\_expression\_bodied_properties
+#### csharp_style_expression_bodied_properties
 
 |Property|Value|
 |-|-|
@@ -291,7 +291,7 @@ public int Age => _age;
 public int Age { get { return _age; }}
 ```
 
-#### csharp\_style\_expression\_bodied_indexers
+#### csharp_style_expression_bodied_indexers
 
 |Property|Value|
 |-|-|
@@ -311,7 +311,7 @@ public T this[int i] => _values[i];
 public T this[int i] { get { return _values[i]; } }
 ```
 
-#### csharp\_style\_expression\_bodied_accessors
+#### csharp_style_expression_bodied_accessors
 
 |Property|Value|
 |-|-|
@@ -331,7 +331,7 @@ public int Age { get => _age; set => _age = value; }
 public int Age { get { return _age; } set { _age = value; } }
 ```
 
-#### csharp\_style\_expression\_bodied_lambdas
+#### csharp_style_expression_bodied_lambdas
 
 |Property|Value|
 |-|-|
@@ -350,7 +350,7 @@ Func<int, int> square = x => x * x;
 Func<int, int> square = x => { return x * x; };
 ```
 
-#### csharp\_style\_expression\_bodied\_local_functions
+#### csharp_style_expression_bodied_local_functions
 
 Starting with C# 7.0, C# supports [local functions](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Local functions are private methods of a type that are nested in another member.
 
@@ -396,7 +396,7 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
+#### csharp_style_pattern_matching_over_is_with_cast_check
 
 |Property|Value|
 |-|-|
@@ -416,7 +416,7 @@ if (o is int i) {...}
 if (o is int) {var i = (int)o; ... }
 ```
 
-#### csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
+#### csharp_style_pattern_matching_over_as_with_null_check
 
 |Property|Value|
 |-|-|
@@ -441,7 +441,7 @@ if (s != null) {...}
 
 This style rule concerns whether `out` variables are declared inline or not. Starting in C# 7, you can [declare an out variable in the argument list of a method call](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), rather than in a separate variable declaration.
 
-#### csharp\_style\_inlined\_variable_declaration
+#### csharp_style_inlined_variable_declaration
 
 |Property|Value|
 |-|-|
@@ -482,7 +482,7 @@ Example *.editorconfig* file:
 csharp_prefer_simple_default_expression = true:suggestion
 ```
 
-#### csharp\_prefer\_simple\_default_expression
+#### csharp_prefer_simple_default_expression
 
 This style rule concerns using the [`default` literal for default value expressions](/dotnet/csharp/language-reference/operators/default#default-literal) when the compiler can infer the type of the expression.
 
@@ -517,7 +517,7 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### csharp\_style\_throw_expression
+#### csharp_style_throw_expression
 
 |Property|Value|
 |-|-|
@@ -538,7 +538,7 @@ if (s == null) { throw new ArgumentNullException(nameof(s)); }
 this.s = s;
 ```
 
-#### csharp\_style\_conditional\_delegate_call
+#### csharp_style_conditional_delegate_call
 
 |Property|Value|
 |-|-|
@@ -570,7 +570,7 @@ Example *.editorconfig* file:
 csharp_prefer_braces = true:silent
 ```
 
-#### csharp\_prefer\_braces
+#### csharp_prefer_braces
 
 |Property|Value|
 |-|-|
@@ -603,7 +603,7 @@ csharp_style_prefer_index_operator = true:suggestion
 csharp_style_prefer_range_operator = true:suggestion
 ```
 
-#### csharp\_style\_prefer\_index_operator
+#### csharp_style_prefer_index_operator
 
 |Property|Value|
 |-|-|
@@ -625,7 +625,7 @@ string[] names = { "Archimedes", "Pythagoras", "Euclid" };
 var index = names[names.Length - 1];
 ```
 
-#### csharp\_style\_prefer\_range_operator
+#### csharp_style_prefer_range_operator
 
 |Property|Value|
 |-|-|
@@ -664,7 +664,7 @@ csharp_prefer_simple_using_statement = true:suggestion
 csharp_style_prefer_switch_expression = true:suggestion
 ```
 
-#### csharp\_style\_deconstructed\_variable_declaration
+#### csharp_style_deconstructed_variable_declaration
 
 |Property|Value|
 |-|-|
@@ -692,7 +692,7 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-#### csharp\_style\_pattern\_local\_over\_anonymous_function
+#### csharp_style_pattern_local_over_anonymous_function
 
 Starting with C# 7.0, C# supports [local functions](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Local functions are private methods of a type that are nested in another member.
 
@@ -721,7 +721,7 @@ fibonacci = (int n) =>
 };
 ```
 
-#### csharp\_using\_directive_placement
+#### csharp_using_directive_placement
 
 |Property|Value|
 |-|-|
@@ -750,7 +750,7 @@ namespace Conventions
 }
 ```
 
-#### csharp\_prefer\_static\_local_function
+#### csharp_prefer_static_local_function
 
 |Property|Value|
 |-|-|
@@ -784,7 +784,7 @@ void M()
 }
 ```
 
-#### csharp\_prefer\_simple\_using_statement
+#### csharp_prefer_simple_using_statement
 
 |Property|Value|
 |-|-|
@@ -804,7 +804,7 @@ using var a = b;
 using (var a = b) { }
 ```
 
-#### csharp\_style\_prefer\_switch_expression
+#### csharp_style_prefer_switch_expression
 
 |Property|Value|
 |-|-|

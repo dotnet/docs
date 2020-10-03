@@ -73,7 +73,7 @@ The style rules in this section are applicable to both C# and Visual Basic.
   - [dotnet_style_coalesce_expression](ide0029.md#dotnet_style_coalesce_expression)
   - [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation)
   - [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method)
-- [Parameter preferences](parameter-preferences.md)
+- [Parameter preferences](ide0060.md)
   - [dotnet_code_quality_unused_parameters](ide0060.md#dotnet_code_quality_unused_parameters)
 
 ## C# style rules
@@ -110,7 +110,7 @@ The style rules in this section are applicable to C# language only.
 - [Code block preferences](code-block-preferences.md)
   - [csharp_prefer_braces](ide0011.md#csharp_prefer_braces)
   - [csharp_prefer_simple_using_statement](ide0063.md#csharp_prefer_simple_using_statement)
-- ['using' directive preferences](using-directive-preferences.md)
+- ['using' directive preferences](ide0065.md)
   - [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement)
 - [Modifier preferences](modifier-preferences.md#c-modifier-preferences)
   - [csharp_prefer_static_local_function](ide0062.md#csharp_prefer_static_local_function)

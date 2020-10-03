@@ -9,7 +9,9 @@ ms.date: 09/20/2020
 
 Ladies and Gentlemen, please welcome Dapr.
 
-Dapr, or *Distributed Application Runtime*, is the new kid on the block. What started as a <blah>, give some history, has grown to <blah> with a 1.0 release. 
+Dapr, or *Distributed Application Runtime*, is not only the new kid on the block, but it's a new way of building distributed applications.
+
+What started as a <blah>, give some history, has grown to <blah> with a 1.0 release. 
 
 Since the announcement of Dapr at the 2019 Microsoft Ignite Conference, Microsoft has cloesly partnered with customers and the open source community to build and extend Dapr. This conceted effort validates the willingness of developers from all backgrounds to solve some of the toughest challenges when developing distributed applications.     
 
@@ -22,6 +24,8 @@ At its core, Dapr is a *portable, event-driven runtime*.
  - Event-driven, in that you register external services. You can invoke them or have them invoke you - with minimal code and without taking a direct reference to them. 
 
  - Runtime, in that you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
+
+## What does Dapr solve?
 
 Dapr addresses a large challenge in modern distributed app development: Complexity. Simplifying the complexities of distributed microservices applications is a key Dapr design goal. Through an architecture of pluggable components, Dapr abstracts external service components from the business logic of your application.
 
@@ -81,18 +85,22 @@ without polluting that code with any SDKs or libraries; it worked with any progr
 profound impacts on framework design and distributed application development
 
 
+### Sidecar architecture
+
 
 ### Components
 
 
+### Configuraiton
 
-### Sidecar architecture
+## Supported platforms
+
+### Native API vs. platform SDKs
+
+### .NET SDK for Dapr
 
 
-### Sevice meshes vs Dapr
-
-
-## Dapr challenges
+## Dapr considerations
 
 Dapr is not without challenges. Consider the following:
 
@@ -107,53 +115,19 @@ Dapr is not without challenges. Consider the following:
 - Finally, while Dapr covers the gamut of distributed component services, it does not provide support for database interaction. 
 
 
-## Supported platforms
+## Dapr and service meshes
 
 
 
-
-
-
-
-
-## .NET SDK for Dapr
-
-
-
-
-
-
-
-
-## What dapr does
-
+## Potential content?
 Dapr reduces the complexity of constructing microservice and evevnt-driven applications. Companies can implement interservice-communication, state, resource binding, and asynchronous pub/sub messaging with open APIs and extensible components that are community-driven.
 
-
-
-
-
 provides the *glue* that fuses decoupled service components with your business application b. At the same time, it greatly abstracts the complexity of distributed components and provides baked-in industry best practices. Figure 2-x provides a shot of Dapr from 20,000 feet.
-
-
 
 *Dapr is a portable, event-driven runtime that reduces the complexity of building resilient, microservice stateless and stateful applications that run on the cloud and edge and embraces the diversity of languages and developer frameworks.*
 
 
-
-## What problems dapr solves
-
-Blah, blah
-
-
-## What problems dapr doesn't solve
-
-Blah, blah
-
-
-## Key 
-
-Blah, blah
+ > stop
 
 
 

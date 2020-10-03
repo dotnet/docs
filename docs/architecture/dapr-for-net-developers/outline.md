@@ -6,23 +6,24 @@ Dapr @ 20,000 feet
    - event-driven
    - runtime
 
- - What it does
+ - What does Dapr solve?
     - Simpliflies distributed apps
     - Pluggable architecture
     - Dynamic glue
 
- - Key Concepts
+ - Key concepts
     - Building blocks
-    - Components
     - Sidecar architecture
-    - Service meshes vs. Dapr
+    - Components
+    - Configuration
+    - Supported platforms
+      - Native API vs. platform SDKs
+      - .NET SDK for Dapr
+    - Dapr and service meshes
 
- - Challenges
+ - Dapr considerations
     - LCM for a component
     - Overhead - 3 hops for 1
-    - Not support database access
+    - No native support for databases
 
- - Supported platforms
-    - REST Api
-    - Platform SDKs
-    - .NET SDK for Dapr
+ - Dapr and service meshes

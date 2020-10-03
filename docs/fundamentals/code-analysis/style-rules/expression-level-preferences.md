@@ -11,9 +11,7 @@ dev_langs:
 ---
 # Expression-level preferences
 
-## Overview
-
-### .NET expression-level preferences
+## .NET expression-level preferences
 
 The style rules in this section concern following expression-level preferences that are common to C# and Visual Basic:
 
@@ -28,7 +26,7 @@ The style rules in this section concern following expression-level preferences t
 - [Unnecessary value assignment (IDE0059)](ide0059.md)
 - [Unused expression value (IDE0058)](ide0058.md)
 
-### C# expression-level preferences
+## C# expression-level preferences
 
 The style rules in this section concern following expression-level preferences that are specific to C#:
 

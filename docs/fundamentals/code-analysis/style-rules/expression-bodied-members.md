@@ -1,6 +1,6 @@
 ---
-title: "Expression-bodied-members"
-description: "Learn about code analysis language rules for Expression-bodied-members"
+title: "Expression-bodied members"
+description: "Learn about code analysis language rules for expression-bodied members"
 ms.date: 09/30/2020
 ms.topic: reference
 author: gewarren

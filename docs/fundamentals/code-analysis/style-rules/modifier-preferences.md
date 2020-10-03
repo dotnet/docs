@@ -11,9 +11,7 @@ dev_langs:
 ---
 # Modifier preferences
 
-## Overview
-
-### .NET modifier preferences
+## .NET modifier preferences
 
 The style rules in this section concern following modifier preferences that are common to C# and Visual Basic:
 
@@ -21,7 +19,7 @@ The style rules in this section concern following modifier preferences that are 
 - [Add accessibility modifiers (IDE0040)](ide0040.md)
 - [Add readonly modifier (IDE0044)](ide0044.md)
 
-### C# modifier preferences
+## C# modifier preferences
 
 The style rules in this section concern following modifier preferences that are specific to C#:
 

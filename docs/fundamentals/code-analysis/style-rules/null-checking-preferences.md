@@ -11,9 +11,7 @@ dev_langs:
 ---
 # Null-checking preferences
 
-## Overview
-
-### .NET null-checking preferences
+## .NET null-checking preferences
 
 The style rules in this section concern the following null-checking preferences that are common to C# and Visual Basic:
 
@@ -21,7 +19,7 @@ The style rules in this section concern the following null-checking preferences 
 - [Use null propagation (IDE0031)](ide0031.md)
 - [Use is null check (IDE0041)](ide0041.md)
 
-### C# null-checking preferences
+## C# null-checking preferences
 
 The style rules in this section concern the following null-checking preferences that are specific to C#:
 

@@ -13,7 +13,7 @@ dev_langs:
 
 ## .NET modifier preferences
 
-The style rules in this section concern following modifier preferences that are common to C# and Visual Basic:
+The style rules in this section concern the following modifier preferences that are common to C# and Visual Basic:
 
 - [Order modifiers (IDE0036)](ide0036.md)
 - [Add accessibility modifiers (IDE0040)](ide0040.md)
@@ -21,7 +21,7 @@ The style rules in this section concern following modifier preferences that are 
 
 ## C# modifier preferences
 
-The style rules in this section concern following modifier preferences that are specific to C#:
+The style rules in this section concern the following modifier preferences that are specific to C#:
 
 - [Make local function static (IDE0062)](ide0062.md)
 

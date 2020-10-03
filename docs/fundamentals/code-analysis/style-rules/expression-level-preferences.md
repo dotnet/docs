@@ -13,7 +13,7 @@ dev_langs:
 
 ## .NET expression-level preferences
 
-The style rules in this section concern following expression-level preferences that are common to C# and Visual Basic:
+The style rules in this section concern the following expression-level preferences that are common to C# and Visual Basic:
 
 - [Use object initializers (IDE0017)](ide0017.md)
 - [Use collection initializers (IDE0028)](ide0028.md)
@@ -28,7 +28,7 @@ The style rules in this section concern following expression-level preferences t
 
 ## C# expression-level preferences
 
-The style rules in this section concern following expression-level preferences that are specific to C#:
+The style rules in this section concern the following expression-level preferences that are specific to C#:
 
 - [Inline variable declaration (IDE0018)](ide0018.md)
 - [Simplify 'default' expression (IDE0034)](ide0034.md)

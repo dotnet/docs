@@ -16,11 +16,10 @@ Dapr @ 20,000 feet
     - Sidecar architecture
     - Components
     - Configuration
-    - Supported platforms
-      - Native API vs. platform SDKs
-      - .NET SDK for Dapr
-    - Dapr and service meshes
-
+ - Supported platforms
+    - Native API vs. platform SDKs
+    - .NET SDK for Dapr
+ 
  - Dapr considerations
     - LCM for a component
     - Overhead - 3 hops for 1

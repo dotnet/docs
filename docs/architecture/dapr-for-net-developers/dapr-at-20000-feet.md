@@ -7,13 +7,17 @@ ms.date: 09/20/2020
 
 # Dapr @ 20,000 feet
 
+In chapter 1, we disucssed the widening and enthusiastic appeal of distributed applications. We also pointed out that distributed applications dramtically increase both architectural and operationl complexity. So, how can we "have our cake" and "eat it too?"
+
 Ladies and Gentlemen, please welcome Dapr.
 
-Dapr, or *Distributed Application Runtime*, is not only the new kid on the block, but it's a new way of building distributed applications.
+Dapr, or *Distributed Application Runtime*, is s a new way for building distributed applications.
 
 What started as a <blah>, give some history, has grown to <blah> with a 1.0 release. 
 
 Since the announcement of Dapr at the 2019 Microsoft Ignite Conference, Microsoft has cloesly partnered with customers and the open source community to build and extend Dapr. This conceted effort validates the willingness of developers from all backgrounds to solve some of the toughest challenges when developing distributed applications.     
+
+In this book, we look at Dapr through the lens of the .NET Core platform.
 
 ## What is Dapr?
 
@@ -24,6 +28,26 @@ At its core, Dapr is a *portable, event-driven runtime*.
  - Event-driven, in that you register external services. You can invoke them or have them invoke you - with minimal code and without taking a direct reference to them. 
 
  - Runtime, in that you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
+
+
+ > dotnet core is a runtime engine - you run programs within it
+ > dapr is also a runtime engine - you run the dotnet program within the dapr runtime -- you tell dapr to start the service and that is with the dotnet runtime (dotnet run). So, the Dapr runtime encapsulates the .NET core runtime.
+
+ > It implements a complete runtime where your applications can run safely, whatever the language, and where they access to multiples APIs facilitating some aspects of a complex microservice architecture: inter-service calls, queue management, state management …
+ >  https://versusmind.eu/blog/dapr-a-serverless-runtime-for-distributed-applications
+
+ > You're running the running the dapr runtime but within it you're running the dotnet runtime
+ > Specfically, you're running the dot net service in a dapr sidecar. Now, other service can use dapr to call this service.
+
+
+
+
+Dapr is a “runtime” — what does that mean?
+I thought about this as well, when I first started exploring Dapr. In my specific case (Java middleware background), “runtime” was an application server which provided a “managed environment” (concurrency, security etc.) to my code (WAR, EAR etc.)
+That’s not the case with Dapr. It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
+Image for post
+
+
 
 ## What does Dapr solve?
 

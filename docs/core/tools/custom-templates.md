@@ -20,7 +20,7 @@ To follow a walkthrough and create a template, see the [Create a custom template
 
 ### .NET default templates
 
-When you install the [.NET Core SDK](https://dotnet.microsoft.com/download), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
+When you install the [.NET Core SDK](https://dotnet.microsoft.com/download), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://reactjs.org/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
 
 ```dotnetcli
 dotnet new --list

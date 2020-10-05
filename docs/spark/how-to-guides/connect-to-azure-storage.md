@@ -61,7 +61,7 @@ This should display a list of all files/folders in the path provided by your URI
 > For WASB: wasb[s]://<file_system>@<account_name>.blob.core.windows.net/<path>/<file_name>
 > ```
 
-## Connect to the account using local .NET for Apache Spark instance
+## Connect to your storage account
 
 1. If the above command worked, you can now move on to accessing this storage account through Spark. First run the command `hadoop classpath` from the commandline inside `%HADOOP_HOME%` and copy the output.
 2. Set the output of the command run in Step 1 to the value of environment variable `SPARK_DIST_CLASSPATH`.

@@ -24,7 +24,7 @@ When workflows are compiled, the following procedures are performed as part of t
 - A partial class is generated from the markup definition that is input into the compiler.  
       
 - Code is generated to help with the run-time execution of the activities. Event subscriptions are generated, which help activities know when the activities they contain are finished executing.  
-  - The partial classes generated from the markup file and the partial classes from the code file are entered into the .NET Framework C\# or Visual Basic compiler. The output of this process is the .NET assembly, WorkflowSample.dll. This can be deployed to run the workflow.  
+- The partial classes generated from the markup file and the partial classes from the code file are entered into the .NET Framework C# or Visual Basic compiler. The output of this process is the .NET assembly, WorkflowSample.dll. This can be deployed to run the workflow.  
       
 
 ### Compiler Options

@@ -34,7 +34,7 @@ Now let's see how that affects our UDF definition in the notebook:
 ![UDF serialization error](./media/dotnet-interactive/udf-serialization-error.png)
 
 As can be seen in the case of `udf2_fails`, we see the error message which says Type `Submission#7` is not marked as serializable, this is because how .NET Interactive works is it wraps every object defined in a cell with its `Submission#` class which is generated on the fly and hence is not marked as `Serializable`, hence the error.
-For this reason, it is required that a UDF referencing a custom object in it, is defined in the same cell as that object.
+For this reason, it is **required that a UDF referencing a custom object in it, is defined in the same cell as that object**.
 
 ## Calling a UDF on a DataFrame
 

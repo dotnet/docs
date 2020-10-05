@@ -71,11 +71,6 @@ But, while distributed applications can help bring agility and speed, they bring
 | Secrets | Securely access secrets to external secret stores |
 | Observability | End-to-end monitoring of processes executing on different machines |
 
-
-
-
-
-
 This book introduces Dapr. Dapr directly addresses these types of challenges found  within distributed applications. 
 
 ## Summary

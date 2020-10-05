@@ -21,7 +21,7 @@ The wfc.exe workflow command-line compiler tool works with old workflow markup f
 When workflows are compiled, the following procedures are performed as part of the compilation process:
 
 - Validation is performed to ensure that the workflow activities validate based on the rules that the activities have set for themselves. If there are validation errors, the compiler returns a list of the errors.  
-  - A partial class is generated from the markup definition that is input into the compiler.  
+- A partial class is generated from the markup definition that is input into the compiler.  
       
   - Code is generated to help with the run-time execution of the activities. Event subscriptions are generated, which help activities know when the activities they contain are finished executing.  
       

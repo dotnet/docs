@@ -56,7 +56,7 @@ Let's dive a little deeper with the following example:
 
 ![Broadcast Variables fail](./media/dotnet-interactive/broadcast-fails.png)
 
-As recommended in the previous sections, we define both the UDF and the object it is referencing (Broadcast variable in this case) in the same cell, but we still see the `SerializationException` error complaining about `Microsoft.Spark.Sql.Session` not being marked as serializable. This is because when the compiler tries to serialize the Broadcast variable object `bv`, it finds its name to be appended with [`SparkSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) object `spark` which it requires to be marked as serializable. This can be demonstrated with more ease by taking a peek at the decompiled assembly of this cell submission:
+As recommended in the previous sections, we define both the UDF and the object it is referencing (broadcast variable in this case) in the same cell, but we still see the `SerializationException` error complaining about `Microsoft.Spark.Sql.Session` not being marked as serializable. This is because when the compiler tries to serialize the broadcast variable object `bv`, it finds its name to be appended with [`SparkSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) object `spark` which it requires to be marked as serializable. This can be demonstrated with more ease by taking a peek at the decompiled assembly of this cell submission:
 
 ![Decompiled Assembly code](./media/dotnet-interactive/decompiledAssembly.png)
 

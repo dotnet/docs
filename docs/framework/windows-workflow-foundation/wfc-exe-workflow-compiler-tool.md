@@ -114,5 +114,5 @@ The use of a list of authorized types is controlled by the <xref:System.Workflow
 > When `Type="System.*"` type is present,  it is possible to include other unintended, like  `Type="System.Configuration"`,  type for compilation. It is highly recommended to be cautious and review each.  For any type which should be restricted, be sure to set `Authorized` to `False`. 
 
 ## See Also
-- [AuthorizedType Class](https://docs.microsoft.com/en-us/dotnet/api/system.workflow.componentmodel.compiler.authorizedtype)
+- [AuthorizedType class](xref:System.Workflow.ComponentModel.Compiler.AuthorizedType)
 - [WorkflowCompiler](https://msdn.microsoft.com/en-us/library/ms616321\(v=vs.90\))  

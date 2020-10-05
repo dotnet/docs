@@ -12,7 +12,7 @@ helpviewer_keywords:
 ---
 # wfc.exe (Workflow Command-line Compiler Tool)
 > [!NOTE]
->  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+> [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
 
 The wfc.exe workflow command-line compiler tool works with old workflow markup files that have the file extension *.xoml* (obsoleted).
 

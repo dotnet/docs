@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "Workflow, compilation"
   - "Workflow, XOML files"
   - "Workflow, wcf"
-ms.assetid: 7d2bf3a5-6624-4a8e-b546-321d36b757d4
 ---
 # wfc.exe (Workflow Command-line Compiler Tool)
 > [!NOTE]

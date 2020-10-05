@@ -31,7 +31,7 @@ When workflows are compiled, the following procedures are performed as part of t
 
 ### Compiler Options
 
-The wfc.exe workflow command-line compiler options are documented in the following code-style topic.
+This section shows the options for the wfc.exe workflow command-line compiler.
 
     Microsoft (R) Windows Workflow Compiler version 3.0.0.0
     Copyright (C) Microsoft Corporation 2005. All rights reserved.

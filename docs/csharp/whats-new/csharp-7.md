@@ -7,7 +7,7 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 
 # What's new in C# 7.0 through C# 7.3
 
-C# 7.0 through C# 7.3 brought a numberof features and incremental improvements your development experience with C#. This article provides an overview of the new language features and compiler options. The descriptions describe the behavior for C# 7.3, which is the most recent version supported for .NET Framework-based applications.
+C# 7.0 through C# 7.3 brought a number of features and incremental improvements to your development experience with C#. This article provides an overview of the new language features and compiler options. The descriptions describe the behavior for C# 7.3, which is the most recent version supported for .NET Framework-based applications.
 
 The [language version selection](../language-reference/configure-language-version.md) configuration element was added with C# 7.1, which enables you to specify the compiler language version in your project file.
 
@@ -47,7 +47,7 @@ Finally, the compiler has new options:
 - `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
 - `-pathmap` to provide a mapping for source directories.
 
-The remainder of this article provides an overview of each feature. For each feature, you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in your environment using the `dotnet try` global tool:
+The remainder of this article provides an overview of each feature. For each feature, you'll learn the reasoning behind it and the syntax. You can explore these features in your environment using the `dotnet try` global tool:
 
 1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
 1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.

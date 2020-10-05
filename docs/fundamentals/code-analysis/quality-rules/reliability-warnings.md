@@ -20,7 +20,7 @@ Reliability rules support library and application reliability, such as correct m
 |----------|-----------------|
 |[CA2000: Dispose objects before losing scope](ca2000.md)|Because an exceptional event might occur that will prevent the finalizer of an object from running, the object should be explicitly disposed before all references to it are out of scope.|
 |[CA2002: Do not lock on objects with weak identity](ca2002.md)|An object is said to have a weak identity when it can be directly accessed across application domain boundaries. A thread that tries to acquire a lock on an object that has a weak identity can be blocked by a second thread in a different application domain that has a lock on the same object.|
-|[CA2007: Do not directly await a Task](ca2007.md)|An asynchronous method [awaits](../../../csharp/language-reference/keywords/await.md) a <xref:System.Threading.Tasks.Task> directly.|
+|[CA2007: Do not directly await a Task](ca2007.md)|An asynchronous method [awaits](../../../csharp/language-reference/operators/await.md) a <xref:System.Threading.Tasks.Task> directly.|
 |[CA2008: Do not create tasks without passing a TaskScheduler](ca2008.md)|A task creation or continuation operation uses a method overload that does not specify a <xref:System.Threading.Tasks.TaskScheduler> parameter.|
 |[CA2009: Do not call ToImmutableCollection on an ImmutableCollection value](ca2009.md)|`ToImmutable` method was unnecessarily called on an immutable collection from <xref:System.Collections.Immutable> namespace.|
 |[CA2011: Do not assign property within its setter](ca2011.md) | A property was accidentally assigned a value within its own [set accessor](../../../csharp/programming-guide/classes-and-structs/using-properties.md#the-set-accessor). |

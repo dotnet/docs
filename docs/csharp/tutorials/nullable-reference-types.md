@@ -217,4 +217,4 @@ Learn more by migrating an existing application to use nullable reference types:
 > [Upgrade an application to use nullable reference types](upgrade-to-nullable-references.md)
 
 Learn how to use nullable reference type when using Entity Framework:
-> [Entity Framework Core Fundamentals: Working with Nullable Reference Types](https://docs.microsoft.com/en-us/ef/core/miscellaneous/nullable-reference-types)
+> [Entity Framework Core Fundamentals: Working with Nullable Reference Types](/ef/core/miscellaneous/nullable-reference-types)

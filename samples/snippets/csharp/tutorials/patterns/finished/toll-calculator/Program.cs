@@ -55,7 +55,7 @@ namespace toll_calculator
             }
             try
             {
-                tollCalc.CalculateToll(null);
+                tollCalc.CalculateToll(null!);
             }
             catch (ArgumentNullException)
             {
@@ -77,6 +77,12 @@ namespace toll_calculator
                 new DateTime(2019, 3, 16, 01, 30, 0), // weekend overnight
             };
 
+            foreach (var time in testTimes)
+            {
+                Console.WriteLine($"Inbound premium at {time} is {tollCalc.PeakTimePremiumIfElse(time, true)}");
+                Console.WriteLine($"Outbound premium at {time} is {tollCalc.PeakTimePremiumIfElse(time, false)}");
+            }
+            Console.WriteLine("====================================================");
             foreach (var time in testTimes)
             {
                 Console.WriteLine($"Inbound premium at {time} is {tollCalc.PeakTimePremiumFull(time, true)}");

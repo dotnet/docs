@@ -1,6 +1,6 @@
 ---
 title: "Wfc.exe (Workflow Command-line Compiler Tool)"
-description: Understand wfc.exe, the Workflow command line compiler tool. Use the tool to generate code and mapping for the LINQ to SQL component of .NET.
+description: Understand wfc.exe, the Workflow command line compiler tool. 
 ms.date: "10/10/2020"
 helpviewer_keywords: 
   - "wfc [Workflow]"

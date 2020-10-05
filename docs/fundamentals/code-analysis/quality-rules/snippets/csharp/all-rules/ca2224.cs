@@ -35,9 +35,9 @@ namespace ca2224
         // Violates rule: OverrideEqualsOnOverridingOperatorEquals.
 
         // BadPoint redefines the equality operator to ignore the id value.
-        // This is different from how the inherited implementation of 
-        // System.Object.Equals behaves for value types. 
-        // It is not safe to exclude the violation for this type. 
+        // This is different from how the inherited implementation of
+        // System.Object.Equals behaves for value types.
+        // It is not safe to exclude the violation for this type.
         public static bool operator ==(BadPoint p1, BadPoint p2)
         {
             return ((p1.X == p2.X) && (p1.y == p2.y));
@@ -136,7 +136,7 @@ namespace ca2224
 namespace ca2224_2
 {
     //<snippet5>
-    // Violates this rule    
+    // Violates this rule
     public class Point
     {
         public Point(int x, int y)
@@ -222,13 +222,13 @@ namespace ca2224_3
             return !Object.Equals(point1, point2);
         }
     }
+    //</snippet6>
 }
-//</snippet6>
 
 namespace ca2224_4
 {
     //<snippet7>
-    // Violates this rule    
+    // Violates this rule
     public struct Point
     {
         public Point(int x, int y)

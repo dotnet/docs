@@ -57,7 +57,7 @@ The wfc.exe workflow command-line compiler options are documented in the followi
     <Xoml file list>        Xoml source file name(s).
     <vb/cs file list>       Code-beside file name(s).
     /reference:<file list>  Reference metadata from the specified assembly file(s).
-                            Short form is '/r:'.
+                            Short form is `/r:`.
     /library:<path list>    Set of directories where to lookup for the references.
                             Short form is '/lib:'.
     /resource:<resinfo>     Embed the specified resource. Short form is '/res:'.

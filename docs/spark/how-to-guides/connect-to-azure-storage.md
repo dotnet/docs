@@ -8,7 +8,7 @@ ms.custom: mvc,how-to
 
 # Connect to Azure Data Lake Storage Gen 2 or WASB account
 
-In this article, you learn how to connect to an ADLS (Azure Data Lake Storage) Gen 2 or WASB (Windows Azure Storage Blob) account through an instance of [.NET for Apache Spark](https://github.com/dotnet/spark) running locally on your Windows machine.
+In this article, you learn how to connect to an Azure Data Lake Storage (ADLS) Gen 2 or Windows Azure Storage Blob (WASB) account through an instance of [.NET for Apache Spark](https://github.com/dotnet/spark) running locally on your Windows machine.
 
 ## Steps to setup the environment
 

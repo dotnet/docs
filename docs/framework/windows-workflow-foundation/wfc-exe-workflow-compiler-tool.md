@@ -16,7 +16,7 @@ helpviewer_keywords:
 
 The wfc.exe workflow command-line compiler tool works with old workflow markup files that have the file extension *.xoml* (obsoleted).
 
-## Compilation Process
+## Compilation process
 
 When workflows are compiled, the following procedures are performed as part of the compilation process:
 

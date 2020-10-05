@@ -725,7 +725,7 @@ Windows Communication Foundation (WCF) adds the following features and changes:
 
 **Ability to configure the default message security settings to TLS 1.1 or TLS 1.2**
 
-Starting with .NET Framework 4.7, WCF allows you to configure TSL 1.1 or TLS 1.2 in addition to SSL 3.0 and TSL 1.0 as the default message security protocol. This is an opt-in setting; to enable it, you must add the following entry to your application configuration file:
+Starting with .NET Framework 4.7, WCF allows you to configure TLS 1.1 or TLS 1.2 in addition to SSL 3.0 and TLS 1.0 as the default message security protocol. This is an opt-in setting; to enable it, you must add the following entry to your application configuration file:
 
 ```xml
 <runtime>

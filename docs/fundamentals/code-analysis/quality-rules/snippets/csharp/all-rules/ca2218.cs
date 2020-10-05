@@ -2,7 +2,8 @@
 
 namespace ca2218
 {
-    // Violates this rule    
+    //<snippet1>
+    // Violates this rule
     public class Point
     {
         public Point(int x, int y)
@@ -31,10 +32,12 @@ namespace ca2218
             return Y == point.Y;
         }
     }
+    //</snippet1>
 }
 
 namespace ca2218_2
 {
+    //<snippet2>
     public struct Point : IEquatable<Point>
     {
         public Point(int x, int y)
@@ -78,11 +81,13 @@ namespace ca2218_2
             return !point1.Equals(point2);
         }
     }
+    //</snippet2>
 }
 
 namespace ca2218_3
 {
-    // Violates this rule    
+    //<snippet3>
+    // Violates this rule
     public struct Point : IEquatable<Point>
     {
         public Point(int x, int y)
@@ -121,10 +126,12 @@ namespace ca2218_3
             return !point1.Equals(point2);
         }
     }
+    //</snippet3>
 }
 
 namespace ca2218_4
 {
+    //<snippet4>
     public struct Point : IEquatable<Point>
     {
         public Point(int x, int y)
@@ -168,4 +175,5 @@ namespace ca2218_4
             return !point1.Equals(point2);
         }
     }
+    //</snippet4>
 }

@@ -68,7 +68,7 @@ jupyter lab
 ## Visual Studio Code (preview)
 
 > [!IMPORTANT]
-> To use Jupyter Notebooks, you have to install:
+> To use Jupyter Notebooks in Visual Studio Code, you have to install:
 >    - [Visual Studio Code Insiders](https://code.visualstudio.com/insiders/) 
 >    - [.NET Interactive Notebooks extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
 

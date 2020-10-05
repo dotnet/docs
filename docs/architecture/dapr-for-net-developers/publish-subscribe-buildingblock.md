@@ -19,14 +19,20 @@ There are several message-broker products available - either commercial software
 
 The Dapr Publish/Subscribe building block is an abstraction of the Publish/Subscribe messaging pattern. Because Dapr offers this abstraction, you as an application developer don't need to create and maintain your own abstraction-layer anymore. This offers a productivity boost and gives you more time to actually write software that is valuable for the business.
 
+Dapr guarantees At-Least-Once semantics for message delivery. That means that when an application publishes a message to a topic using the Publish/Subscribe API, it can assume the message is delivered at least once to any subscriber.
+
 ## How it works
 
-The Dapr Publish/Subscribe building block offers a standard API you can use in your application code to send or receive messages. It is possible to use this API directly over HTTP or gRPC. In order to publish a message using Dapr, you can use the following end-point on the Dapr sidecar:
+The Dapr Publish/Subscribe building block offers a standard API you can use in your application code to send or receive messages. Messages are published to a named **topic** and consumers can subscribe to topics in order to receive the messages sent to them.
+
+Dapr also offers a way to configure the message-broker you want to use for actually transporting messages. This is called the Publish/Subscribe **component**. We will come back to components in more detail later on.
+
+It is possible to use the Publish/Subscribe building block directly over HTTP or gRPC using the Dapr API. In order to publish a message using Dapr, you can use the following API call on the Dapr sidecar of your application:
 
 `http://localhost:<daprPort>/v1.0/publish/<pubsubname>/<topic>`
 
 - You must fill `<daprPort>` with the port the Dapr sidecar is listening on.
-- You must fill `<pubsubname>` with the name of the Publish/Subscribe component that must be used (we will come back to components later on).
+- You must fill `<pubsubname>` with the name of the Publish/Subscribe component that must be used.
 - You must fill `<topic>` with the name of the topic the message must be published to.
 
 This is a simple example where the command-line tool *curl* is used to publish a message over the Dapr Publish/Subscribe API:
@@ -37,13 +43,13 @@ curl -X POST http://localhost:3500/v1.0/publish/pubsub/newOrder \
   -d '{ "orderId": "1234", "productId": "5678", "amount": 2 }'
 ```
 
-Subscribing to a topic works a bit differently. Upon startup, the Dapr runtime will query your application (using a GET request) on a well-known end-point to ask for the subscriptions you want to create. This is the end-point that will be called:
+Receiving messages is possible by subscribing to a topic. Upon startup, the Dapr runtime will query your application on a well-known end-point to ask for the subscriptions you want to create. This is the end-point that will be called:
 
 `http://localhost:<appPort>/dapr/subscribe`
 
-The `<appPort>` part will be filled with the port that your application is listening on. You specify this when starting your application with Dapr.
+The `<appPort>` part will be filled with the port that your application is listening on. You can specify this when starting your application with Dapr.
 
-The application needs to return a response containing the list of topics it wants to subscribe to. With each topic, it also needs to specify the end-point on the application that must be called when a message comes in on that topic. This is what the expected structure of the response is:
+The application needs to handle requests on the `/dapr/subscribe` endpoint and return a response containing the list of topics it wants to subscribe to. With each topic, it also needs to specify the end-point on the application that must be called when a message comes in on that topic. This is an example of a response:
 
 ```json
 [
@@ -60,9 +66,13 @@ The application needs to return a response containing the list of topics it want
 ]
 ```
 
+In this example, you see the application wants to subscribe to two topics `newOrder` and `newProduct` and register the end-points `/orders` and `/productDatalog/products` with these topics. For both subscriptions, the application wants to use the Publish/Subscribe component named `pubsub`.
+
+Obviously, using the Dapr APIs directly over HTTP is fine, but you need to handle serialization, HTTP response codes and things like that yourself. But there is a more convenient way of doing Publish/Subscribe when you use one of the available SDKs.
+
 ### Using the Dapr .NET SDK
 
-Obviously, using the Dapr APIs over HTTP is fine, but you need to handle serialization, HTTP response codes and things like that yourself. But there is a more convenient way of doing Publish/Subscribe when you use one of the available SDKs. The .NET SDK offers a Dapr client that offers a method for publishing a message using Dapr:
+The .NET SDK offers a more convenient way of working with the Publish/Subscribe building block. It offers the **Dapr client** that offers a method for publishing a message:
 
 ```csharp
 public Task PublishEventAsync<TData>(
@@ -72,15 +82,70 @@ public Task PublishEventAsync<TData>(
     CancellationToken cancellationToken = default);
 ```
 
-This method can be used to publish a message. The `pubsubName` argument is used to specify the component to use for transporting messages. We will dive into Publish/Subscribe components in more detail later. Messages are always sent to a certain **topic**. The topic can be specified using the `topicName` argument of the method. Receiving messages is possible by subscribing to a certain topic. We will get back to how that exactly works later on.
+The `pubsubName` argument is used to specify the component to use for transporting messages. The topic the message must be sent to can be specified using the `topicName` argument of the method. The data is obviously the payload of the message You can specify the .NET type of the message using the generic type parameter `TData`. The method is an async method and the `cancellationToken` can be specified to make the operation cancellable.
 
-### Messaging characteristics
+Receiving messages is possible by subscribing to a certain topic. You specify which endpoint on your application Dapr needs to call when a message comes in on that topic. For the following examples, we will assume that we have an existing ASP.NET WebAPI application that offers an operation that you want to be called, for example:
 
-Dapr guarantees At-Least-Once semantics for message delivery. That means that when an application publishes a message to a topic using the Publish/Subscribe API, it can assume the message is delivered at least once to any subscriber when the response status code from that endpoint is 200, or returns no error if using the gRPC client.
+```csharp
+[HttpPost("/orders")]
+public async Task<ActionResult> CreateOrder(Order order)
+```
+
+So how can you specify that this method must be called when a message comes in on a certain Topic? Well, the Dapr .NET SDK offers a nice integration with ASP.NET Core. You can link a WebAPI operation to a Publish/Subscribe topic by decorating it with the `Topic` attribute:
+
+```csharp
+[Topic("pubsub", "newOrder")]
+[HttpPost("/orders")]
+public async Task<ActionResult> CreateOrder(Order order)
+```
+
+> You must add a reference the NuGet package `Dapr.AspNetCore` in your project in order to use this.
+
+You have to specify 2 things with this attribute:
+
+- The Dapr Publish/Subscribe component you want to use (in this case `pubsub`).
+- The name of the topic to subscribe to (in this case `newOrder`).
+
+Now you need to tell ASP.NET Core to use Dapr for the incoming requests. For this, the .NET SDK offers some extension methods that you can use in your `Startup` class during registration of services for dependency injection and during the configuration of your ASP.NET Core application:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    ...
+
+    services.AddControllers().AddDapr();
+}
+```
+
+Dapr offers an `AddDapr` extension-method on the `IMvcBuilder` returned from `AddControllers` that you can use in the `ConfigureServices` method. It will register the necessary services to integrate Dapr into the MVC pipeline that is being created.
+
+In the `Configure` method, you must add the following parts in order to enable Dapr:
+
+```csharp
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    ...
+
+    app.UseCloudEvents();
+
+    app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapSubscribeHandler();
+
+        ...
+    });
+}
+```
+
+The call to `UseCloudEvents` makes sure that **CloudEvents** middleware is added to the ASP.NET Core middleware pipeline. This middleware will unwrap requests that use the CloudEvents structured format, allowing the event payload to be read directly.
+
+> CloudEvents is a standardized messaging format used by Dapr. See the [cloudevents specification](https://github.com/cloudevents/spec/tree/v1.0) for more information.
+
+The call to `MapSubscribeHandler` in the endpoint routing configuration will add a Dapr subscribe endpoint to the application. This endpoint will respond to requests on `/dapr/subscribe`. When this endpoint is called, it will automatically find all WebAPI operations that are decorated with the `Topic` attribute and return a response with all the subscriptions.
 
 ### Pub/sub components
 
-The actual transport of the messages is handled by Publish/Subscribe components. Several Publish/Subscribe components are available that each abstract a certain message-broker product. At the time of writing, the following Publish/Subscribe components were available:
+The actual transport of the messages is handled by Publish/Subscribe components. Several Publish/Subscribe components are available that each use a certain message-broker product to implement the Publish/Subscribe building block. At the time of writing, the following Publish/Subscribe components were available:
 
 - Hazelcast
 - Redis Streams
@@ -96,7 +161,7 @@ These components are created by the community in a [component-contrib repository
 
 ### Configuring Publish/Subscribe
 
-You can configure Dapr to use a certain Publish/Subscribe component. The configuration contains several fields, including a **name** field. This name is important because you can configure multiple Publish/Subscribe components for Dapr to use. When you want to send or receive a message, you must specify this name to specify which message-broker to use (as we saw in the `PublishEventAsync` method signature shown above). In the configuration you can also specify any message-broker specific configuration through metadata.
+You can configure Dapr to use a certain Publish/Subscribe component. The configuration contains several fields, including a **name** field. This name is important because you can configure multiple Publish/Subscribe components for Dapr to use. When you want to send or receive a message, you must specify this name to specify which message-broker to use (as we saw in the `PublishEventAsync` method signature shown earlier). In the configuration you can also specify any message-broker specific configuration through metadata.
 
 Below you see an example of a Dapr configuration file for configuring a RabbitMQ message-broker component:
 

@@ -9,7 +9,7 @@ ms.date: 10/04/2020
 
 Just ask any 'cool kid': *Modern, distributed systems are in and, monolithic apps are out!* 
 
-But, it's not just "cool kids." Progressive IT Leaders, corporate architects, and astute developers are echoing these same thoughts as they explore and evaluate modern distributed applications. Many have bought in. They are designing new and replatforming existing enterprise applications following the principles, patterns, and practices of distributed applications.
+But, it's not just "cool kids." Progressive IT Leaders, corporate architects, and astute developers are echoing these same thoughts as they explore and evaluate modern distributed applications. Many have bought in. They're designing new and replatforming existing enterprise applications following the principles, patterns, and practices of distributed applications.
 
 But, this evolution raises many questions...
 
@@ -24,7 +24,7 @@ To start, let's rewind and look at the past 15 years. During this period, we typ
 
 **Figure 1-1. Monolithic architecture.
 
-In the previous figure, the modules for Ordering, Identity, and Marketing operate in a single-server process. Application data is stored in a shared relational database. Business functionality is exposed via HTML and RESTFul interfaces.
+In the previous figure, the modules for Ordering, Identity, and Marketing operate in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTFul interfaces.
 
 In many ways, monolithic apps are `straightforward`. They're straightforward to...
 

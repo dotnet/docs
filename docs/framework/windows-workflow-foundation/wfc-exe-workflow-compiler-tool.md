@@ -115,4 +115,3 @@ The use of a list of authorized types is controlled by the <xref:System.Workflow
 
 ## See Also
 - [AuthorizedType class](xref:System.Workflow.ComponentModel.Compiler.AuthorizedType)
-- [WorkflowCompiler](https://msdn.microsoft.com/en-us/library/ms616321\(v=vs.90\))  

@@ -328,7 +328,7 @@ items:
     - name: Logging and tracing
       href: ../core/diagnostics/logging-tracing.md
     - name: Collect diagnostics in containers
-      href: ../core/diagnostics/diagnostics-in-containers.md          
+      href: ../core/diagnostics/diagnostics-in-containers.md
     - name: .NET Core CLI global tools
       items:
       - name: dotnet-counters
@@ -895,8 +895,12 @@ items:
             href: code-analysis/quality-rules/ca2216.md
           - name: CA2217
             href: code-analysis/quality-rules/ca2217.md
+          - name: CA2218
+            href: code-analysis/quality-rules/ca2218.md
           - name: CA2219
             href: code-analysis/quality-rules/ca2219.md
+          - name: CA2224
+            href: code-analysis/quality-rules/ca2224.md
           - name: CA2225
             href: code-analysis/quality-rules/ca2225.md
           - name: CA2226

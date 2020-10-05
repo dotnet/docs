@@ -8,7 +8,7 @@ ms.custom: mvc,how-to
 
 # Connecting to Azure Event Hub from .NET for Apache Spark
 
-In this article, you will learn how to hook up your [.NET for Apache Spark](https://github.com/dotnet/spark) application with Azure Event Hubs, and to read from and write to them for Apache Kafka.
+In this article, you will learn how to connect your [.NET for Apache Spark](https://github.com/dotnet/spark) application with Azure Event Hubs to read and write Apache Kafka streams.
 
 ## What is Azure Event Hubs
 

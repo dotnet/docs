@@ -124,8 +124,8 @@ The Performance console .NET CLR Networking category includes counters that prov
 |**Connections Established**|The cumulative total number of <xref:System.Net.Sockets.Socket> objects for stream sockets that were ever connected within the <xref:System.AppDomain> since the process started.|  
 |**Datagrams Received**|The cumulative total number of datagram packets received by all <xref:System.Net.Sockets.Socket> objects within the <xref:System.AppDomain> since the process started.|  
 |**Datagrams Sent**|The cumulative total number of datagram packets sent by all <xref:System.Net.Sockets.Socket> objects within the <xref:System.AppDomain> since the process started.|  
-|**HttpWebRequest Average Lifetime**|The average time to completion for all <xref:System.Net.HttpWebRequest> objects that ended in the last interval within the <xref:System.AppDomain> since the process started.|  
-|**HttpWebRequest Average Queue Time**|The average time-on-queue for all <xref:System.Net.HttpWebRequest> objects that left the queue in the last interval within the <xref:System.AppDomain> since the process started.|  
+|**HttpWebRequests Average Lifetime**|The average time to completion for all <xref:System.Net.HttpWebRequest> objects that ended in the last interval within the <xref:System.AppDomain> since the process started.|  
+|**HttpWebRequests Average Queue Time**|The average time-on-queue for all <xref:System.Net.HttpWebRequest> objects that left the queue in the last interval within the <xref:System.AppDomain> since the process started.|  
 |**HttpWebRequests Created/sec**|The number of <xref:System.Net.HttpWebRequest> objects created per second within the <xref:System.AppDomain>.|  
 |**HttpWebRequests Queued/sec**|The number of <xref:System.Net.HttpWebRequest> objects that were added to the queue per second within the <xref:System.AppDomain>.|  
 |**HttpWebRequests Aborted/sec**|The number of <xref:System.Net.HttpWebRequest> objects where the application called the <xref:System.Net.HttpWebRequest.Abort%2A> method per second within the <xref:System.AppDomain>.|  
@@ -163,11 +163,11 @@ The networking performance counters for events include the following:
   
  There are two duration counters that measure how long it took for <xref:System.Net.HttpWebRequest> objects to pass through either their entire life cycle or just part of it:  
   
-- **HttpWebRequest Average Lifetime**  
+- **HttpWebRequests Average Lifetime**  
   
-- **HttpWebRequest Average Queue Time**  
+- **HttpWebRequests Average Queue Time**  
   
- For the **HttpWebRequest Average Lifetime** counter, the lifetime of most <xref:System.Net.HttpWebRequest> objects always starts with the time that the object is created up until the time that the response stream is closed by the application. There are two uncommon cases:  
+ For the **HttpWebRequests Average Lifetime** counter, the lifetime of most <xref:System.Net.HttpWebRequest> objects always starts with the time that the object is created up until the time that the response stream is closed by the application. There are two uncommon cases:  
   
 - If the application never calls the <xref:System.Net.HttpWebRequest.GetResponse%2A> or <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> methods, then the lifetime of the <xref:System.Net.HttpWebRequest> object is ignored.  
   

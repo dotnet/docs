@@ -14,7 +14,7 @@ helpviewer_keywords:
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
 
-The wfc workflow command-line compiler tool works with old workflow markup file that has the file name extension .xoml (obsoleted)\\. 
+The wfc.exe workflow command-line compiler tool works with old workflow markup files that have the file extension *.xoml* (obsoleted).
 
 ## Compilation Process
 

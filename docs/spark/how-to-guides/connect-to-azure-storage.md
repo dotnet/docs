@@ -22,7 +22,7 @@ In this article, you learn how to connect to an Azure Data Lake Storage (ADLS) G
 
     ![Final hadoop-env.cmd file](./media/connect-external-sources/hadoop-env.png)
 
-## Steps to configure Hadoop to connect to your Storage account
+## Configure Hadoop to connect to your storage account
 
 1. Open the ADLS Gen 2 or WASB storage account you want to connect to through the [Azure portal](https://portal.azure.com) and open the **Access keys** panel under the **Settings** blade and copy the value of **Key** from under key1.
 2. Now in order to configure Hadoop to access your ADLS Gen2 account you would have to edit your `core-site.xml` (located in `%HADOOP_HOME%\etc\hadoop\` ) file which contains cluster-wide configuration. Add the following properties inside the `<configuration>` tags in this file:

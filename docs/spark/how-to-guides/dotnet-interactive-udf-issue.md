@@ -51,7 +51,7 @@ The above highlighted error is because the UDF assemblies need to first be compi
 
 ## Why Broadcast Variables don't work with .NET Interactive
 
-The above explained behavior is the reason why Broadcast Variables don't work with .NET Interactive. It is a good idea to go through [this guide on Broadcast Variables](broadcast-guide.md) to get a deeper understanding of what Broadcast variables are and how to use them. The reason Broadcast Variables don't work with interactive scenarios is because of .NET interactive's design of appending each object defined in a cell with it's cell submission class, which since is not marked serialzizable, fails with the same exception as shown previously.
+For the reasons explained above, broadcast variables don't work with .NET Interactive. It is a good idea to go through [this guide on broadcast variables](broadcast-guide.md) to get a deeper understanding of what broadcast variables are and how to use them. The reason broadcast variables don't work with interactive scenarios is because of .NET interactive's design of appending each object defined in a cell with it's cell submission class, which since is not marked serializable, fails with the same exception as shown previously.
 Let's dive a little deeper with the following example:
 
 ![Broadcast Variables fail](./media/dotnet-interactive/broadcast-fails.png)

@@ -20,7 +20,7 @@ Although they have the benefit of simplicity, monolithic architectures face a nu
 
 ### Deployment
 
-Monolithic applications require a full deployment of the entire application, even if only a small change has been made. Full deployments can be expensive and error prone. Additionally, they require a restart of the application, which temporarily impacts unavailability.
+Monolithic applications require a full deployment of the entire application, even if only a small change has been made. Full deployments can be expensive and error prone. Additionally, they require a restart of the application, which may temporarily impacts unavailability if not managed accordingly while deploying.
 
 ### Scaling
 

@@ -42,10 +42,8 @@ In this article, you learn how to connect to an Azure Data Lake Storage (ADLS) G
     </configuration>
     ```
 
-    If you are trying to connect to a WASB account, replace `dfs` with `blob` in the 
-    property names. For example, 
-    `fs.azure.account.auth.type.YOUR_ACCOUNT_NAME.blob.core.windows.net`.
-4. You can test the connectivity to your Storage Account from Hadoop by running the following command from your `%HADOOP_HOME%` directory:
+    If you are trying to connect to a WASB account, replace `dfs` with `blob` in the property names. For example, `fs.azure.account.auth.type.YOUR_ACCOUNT_NAME.blob.core.windows.net`.
+3. You can test the connectivity to your Storage Account from Hadoop by running the following command from your `%HADOOP_HOME%` directory:
 
   ```bash
   bin\hdfs dfs -ls <URI to your account>

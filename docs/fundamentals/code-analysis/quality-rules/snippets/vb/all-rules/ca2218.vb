@@ -26,7 +26,7 @@ Namespace ca2218
 
             Dim pt As Point = CType(obj, Point)
 
-            Return Me.X = pt.X AndAlso Me.Y = pt.Y
+            Return X = pt.X AndAlso Y = pt.Y
 
         End Function
 

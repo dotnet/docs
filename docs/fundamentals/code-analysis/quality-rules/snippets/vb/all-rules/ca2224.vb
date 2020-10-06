@@ -1,48 +1,88 @@
 ﻿Imports System
 Imports System.IO
 
-Namespace ca1001
-
+Namespace ca2224
+    '<snippet1>
     ' This class violates the rule.
-    Public Class NoDisposeMethod
+    Public Class Point
 
-        Dim newFile As FileStream
+        Public Property X As Integer
+        Public Property Y As Integer
 
-        Sub New()
-            newFile = New FileStream("c:\temp.txt", FileMode.Open)
+        Public Sub New(x As Integer, y As Integer)
+            Me.X = x
+            Me.Y = y
         End Sub
 
-    End Class
+        Public Overrides Function GetHashCode() As Integer
+            Return X Or Y
+        End Function
 
-    ' This class satisfies the rule.
-    Public Class HasDisposeMethod
-        Implements IDisposable
-
-        Dim newFile As FileStream
-
-        Sub New()
-            newFile = New FileStream("c:\temp.txt", FileMode.Open)
-        End Sub
-
-        Protected Overridable Overloads Sub Dispose(disposing As Boolean)
-
-            If disposing Then
-                ' dispose managed resources
-                newFile.Close()
+        Public Shared Operator =(ByVal pt1 As Point,
+                             ByVal pt2 As Point) As Boolean
+            If pt1 Is Nothing OrElse pt2 Is Nothing Then
+                Return False
             End If
 
-            ' free native resources
+            If pt1.GetType() <> pt2.GetType() Then
+                Return False
+            End If
 
-        End Sub 'Dispose
+            Return pt1.X = pt2.X AndAlso pt1.Y = pt2.Y
+        End Operator
 
-
-        Public Overloads Sub Dispose() Implements IDisposable.Dispose
-
-            Dispose(True)
-            GC.SuppressFinalize(Me)
-
-        End Sub 'Dispose
+        Public Shared Operator <>(ByVal pt1 As Point,
+                             ByVal pt2 As Point) As Boolean
+            Return Not pt1 = pt2
+        End Operator
 
     End Class
+    '</snippet1>
+End Namespace
 
+Namespace ca2224_2
+    '<snippet2>
+    ' This class satisfies the rule.
+    Public Class Point
+
+        Public Property X As Integer
+        Public Property Y As Integer
+
+        Public Sub New(x As Integer, y As Integer)
+            Me.X = x
+            Me.Y = y
+        End Sub
+
+        Public Overrides Function GetHashCode() As Integer
+            Return X Or Y
+        End Function
+
+        Public Overloads Function Equals(obj As Object) As Boolean
+
+            If obj = Nothing Then
+                Return False
+            End If
+
+            If [GetType]() <> obj.GetType() Then
+                Return False
+            End If
+
+            Dim pt As Point = CType(obj, Point)
+
+            Return X = pt.X AndAlso Y = pt.Y
+
+        End Function
+
+        Public Shared Operator =(ByVal pt1 As Point,
+                             ByVal pt2 As Point) As Boolean
+            Return Object.Equals(pt1, pt2)
+        End Operator
+
+        Public Shared Operator <>(ByVal pt1 As Point,
+                             ByVal pt2 As Point) As Boolean
+            Return Not Object.Equals(pt1, pt2)
+        End Operator
+
+    End Class
+    '</snippet2>
 End Namespace

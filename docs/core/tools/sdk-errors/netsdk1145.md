@@ -1,5 +1,5 @@
 ---
-title: NETSDK1145: Targeting or apphost pack missing
+title: "NETSDK1145: Targeting or apphost pack missing"
 description: How to resolve the issue of targeting pack missing while NuGet package restore is not supported
 author: wli3
 ms.topic: error-reference

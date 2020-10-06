@@ -47,22 +47,22 @@ These are a few important things to keep in mind while implementing UDFs in .NET
 ## FAQs
 
 1. **Why does my UDF referencing a custom user-defined object throws the error `Type Submission#_ is not marked as serializable`?**
-	.NET Interactive wraps each of these cells with a wrapper class of the cell submission number, to uniquely identify each cell being submitted. Now as explained in detail in [this guide](udf-guide.md), when a UDF that references a custom object is being serialized its target is also picked up for serialization, which in the case of .NET Interactive gets wrapped by the wrapper class of the cell where the custom object is defined.
-	Now let's see how that affects our UDF definition in the notebook:
+    .NET Interactive wraps each of these cells with a wrapper class of the cell submission number, to uniquely identify each cell being submitted. Now as explained in detail in [this guide](udf-guide.md), when a UDF that references a custom object is being serialized its target is also picked up for serialization, which in the case of .NET Interactive gets wrapped by the wrapper class of the cell where the custom object is defined.
+    Now let's see how that affects our UDF definition in the notebook:
 
     ![UDF serialization error](./media/dotnet-interactive/udf-serialization-error.png)
 
-	As can be seen in the case of `udf2_fails`, we see the error message which says Type `Submission#7` is not marked as serializable, this is because how .NET Interactive works is it wraps every object defined in a cell with its `Submission#` class which is generated on the fly and hence is not marked as `Serializable`, hence the error.
-	For this reason, it is **required that a UDF referencing a custom object in it, is defined in the same cell as that object**.
+    As can be seen in the case of `udf2_fails`, we see the error message which says Type `Submission#7` is not marked as serializable, this is because how .NET Interactive works is it wraps every object defined in a cell with its `Submission#` class which is generated on the fly and hence is not marked as `Serializable`, hence the error.
+    For this reason, it is **required that a UDF referencing a custom object in it, is defined in the same cell as that object**.
 
 2. **Why Broadcast Variables don't work with .NET Interactive?**
-	For the reasons explained above, broadcast variables don't work with .NET Interactive. It is a good idea to go through [this guide on broadcast variables](broadcast-guide.md) to get a deeper understanding of what broadcast variables are and how to use them. The reason broadcast variables don't work with interactive scenarios is because of .NET interactive's design of appending each object defined in a cell with it's cell submission class, which since is not marked serializable, fails with the same exception as shown previously.
-	Let's dive a little deeper with the following example:
+    For the reasons explained above, broadcast variables don't work with .NET Interactive. It is a good idea to go through [this guide on broadcast variables](broadcast-guide.md) to get a deeper understanding of what broadcast variables are and how to use them. The reason broadcast variables don't work with interactive scenarios is because of .NET interactive's design of appending each object defined in a cell with it's cell submission class, which since is not marked serializable, fails with the same exception as shown previously.
+    Let's dive a little deeper with the following example:
 
     ![Broadcast Variables fail](./media/dotnet-interactive/broadcast-fails.png)
 
-	As recommended in the previous sections, we define both the UDF and the object it is referencing (broadcast variable in this case) in the same cell, but we still see the `SerializationException` error complaining about `Microsoft.Spark.Sql.Session` not being marked as serializable. This is because when the compiler tries to serialize the broadcast variable object `bv`, it finds its name to be appended with [`SparkSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) object `spark` which it requires to be marked as serializable. This can be demonstrated with more ease by taking a peek at the decompiled assembly of this cell submission:
+    As recommended in the previous sections, we define both the UDF and the object it is referencing (broadcast variable in this case) in the same cell, but we still see the `SerializationException` error complaining about `Microsoft.Spark.Sql.Session` not being marked as serializable. This is because when the compiler tries to serialize the broadcast variable object `bv`, it finds its name to be appended with [`SparkSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) object `spark` which it requires to be marked as serializable. This can be demonstrated with more ease by taking a peek at the decompiled assembly of this cell submission:
 
     ![Decompiled Assembly code](./media/dotnet-interactive/decompiledAssembly.png)
 
-	If we mark the [`SparkSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) class as `[Serializable]`, we can get this to work, but this is not an ideal solution as we don't want to give the user the ability to serialize a SparkSession object, as that could lead to some very weird undesirable behavior. This is a known issue and being tracked [here](https://github.com/dotnet/spark/issues/619) and will be resolved in future versions.
+    If we mark the [`SparkSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) class as `[Serializable]`, we can get this to work, but this is not an ideal solution as we don't want to give the user the ability to serialize a SparkSession object, as that could lead to some very weird undesirable behavior. This is a known issue and being tracked [here](https://github.com/dotnet/spark/issues/619) and will be resolved in future versions.

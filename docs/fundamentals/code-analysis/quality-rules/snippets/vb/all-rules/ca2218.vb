@@ -68,13 +68,11 @@ Namespace ca2218_fix
             Return X = pt.X AndAlso Y = pt.Y
         End Function
 
-        Public Shared Operator =(ByVal pt1 As Point,
-                             ByVal pt2 As Point) As Boolean
+        Public Shared Operator =(pt1 As Point, pt2 As Point) As Boolean
             Return pt1.Equals(pt2)
         End Operator
 
-        Public Shared Operator <>(ByVal pt1 As Point,
-                             ByVal pt2 As Point) As Boolean
+        Public Shared Operator <>(pt1 As Point, pt2 As Point) As Boolean
             Return Not pt1.Equals(pt2)
         End Operator
 

@@ -15,11 +15,10 @@ Namespace ca2224
         End Sub
 
         Public Overrides Function GetHashCode() As Integer
-            Return X Or Y
+            Return HashCode.Combine(X, Y)
         End Function
 
-        Public Shared Operator =(ByVal pt1 As Point,
-                             ByVal pt2 As Point) As Boolean
+        Public Shared Operator =(pt1 As Point, pt2 As Point) As Boolean
             If pt1 Is Nothing OrElse pt2 Is Nothing Then
                 Return False
             End If
@@ -31,8 +30,7 @@ Namespace ca2224
             Return pt1.X = pt2.X AndAlso pt1.Y = pt2.Y
         End Operator
 
-        Public Shared Operator <>(ByVal pt1 As Point,
-                             ByVal pt2 As Point) As Boolean
+        Public Shared Operator <>(pt1 As Point, pt2 As Point) As Boolean
             Return Not pt1 = pt2
         End Operator
 
@@ -54,7 +52,7 @@ Namespace ca2224_2
         End Sub
 
         Public Overrides Function GetHashCode() As Integer
-            Return X Or Y
+            Return HashCode.Combine(X, Y)
         End Function
 
         Public Overrides Function Equals(obj As Object) As Boolean
@@ -73,14 +71,12 @@ Namespace ca2224_2
 
         End Function
 
-        Public Shared Operator =(ByVal pt1 As Point,
-                             ByVal pt2 As Point) As Boolean
+        Public Shared Operator =(pt1 As Point, pt2 As Point) As Boolean
             ' Object.Equals calls Point.Equals(Object).
             Return Object.Equals(pt1, pt2)
         End Operator
 
-        Public Shared Operator <>(ByVal pt1 As Point,
-                             ByVal pt2 As Point) As Boolean
+        Public Shared Operator <>(pt1 As Point, pt2 As Point) As Boolean
             ' Object.Equals calls Point.Equals(Object).
             Return Not Object.Equals(pt1, pt2)
         End Operator

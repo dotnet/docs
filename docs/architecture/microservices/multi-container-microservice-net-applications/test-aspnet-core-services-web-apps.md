@@ -115,7 +115,7 @@ public class PrimeWebDefaultRequestShould
     <https://github.com/moq/moq>
 
 - **NUnit**. Official site. \
-    <https://www.nunit.org/>
+    <https://nunit.org/>
 
 ### Implementing service tests on a multi-container application
 

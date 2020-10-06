@@ -20,7 +20,7 @@ In this article you will learn how to use User Defined Functions (UDFs) in a .NE
 [.NET for Apache Spark](https://github.com/dotnet/spark) uses [.NET Interactive](https://devblogs.microsoft.com/dotnet/net-interactive-is-here-net-notebooks-preview-2/) to provide .NET support for interactive experience inside Spark. To understand how to setup the environment to try .NET Interactive with Jupyter notebooks, see the [.NET Interactive repository](https://github.com/dotnet/interactive).
 
 Also, it is recommended to go through [this article about UDF serialization in .NET for Apache Spark](udf-guide.md) to understand what UDFs are and how they are serialized in .NET for Apache Spark.
-We will be using Jupyter Notebooks to illustrate how to use UDFs in an interactive experience.
+This guide uses Jupyter Notebooks to illustrate how to use UDFs in an interactive experience.
 
 ## Defining a User-defined Function (UDF) in .NET Interactive
 

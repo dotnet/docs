@@ -82,7 +82,7 @@ items:
       Console.WriteLine($"The name {names[index]} is at index {index}");
 
     var notFound = names.IndexOf("Not Found");
-      Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+    Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
     ```
 
     You may not know if an item is in the list, so you should always check the index returned by <xref:System.Collections.Generic.List%601.IndexOf%2A>. If it is `-1`, the item was not found.

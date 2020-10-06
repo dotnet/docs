@@ -69,7 +69,7 @@ class Program
     }
 }
 ```
-    
+
 ## Run your application
 
 In order to run your .NET for Apache Spark application, you should define the `mongo-spark-connector` module as part of the build definition in your Spark project, using `libraryDependency` in `build.sbt` for sbt projects. For Spark environments such as `spark-submit` (or `spark-shell`) you should use the `--packages` command-line option like so:

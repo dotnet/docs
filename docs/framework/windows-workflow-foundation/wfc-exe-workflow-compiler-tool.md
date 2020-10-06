@@ -22,9 +22,10 @@ When workflows are compiled, the following procedures are performed as part of t
 
 - Validation is performed to ensure that the workflow activities validate based on the rules that the activities have set for themselves. If there are validation errors, the compiler returns a list of the errors.  
 - A partial class is generated from the markup definition that is input into the compiler.  
-      
+
 - Code is generated to help with the run-time execution of the activities. Event subscriptions are generated, which help activities know when the activities they contain are finished executing.  
-- The partial classes generated from the markup file and the partial classes from the code file are entered into the .NET Framework C# or Visual Basic compiler. The output of this process is the .NET assembly, WorkflowSample.dll. This can be deployed to run the workflow.  
+- The partial classes generated from the markup file and the partial classes from the code file are entered into the .NET Framework C# or Visual Basic compiler. The output of this process is the .NET assembly, WorkflowSample.dll. This can be deployed to run the workflow.
+
 ### Compiler options
 
 This section shows the options for the wfc.exe workflow command-line compiler.
@@ -85,10 +86,9 @@ This section shows the options for the wfc.exe workflow command-line compiler.
     
     /nowarn                 Ignore compiler warnings. Short form is '/w'.
 
-
 ## Remarks
 > [!NOTE]
->  [!INCLUDE[DeprecatedContent](deprecatedcontent-md.md)]  
+>  [!INCLUDE[DeprecatedContent](deprecatedcontent-md.md)]
 
 A list of authorized types is usually defined in the *wfc.exe.config* file. During the validation phase of workflow compilation, a workflow source document is rejected if it or the companion rules file directly references any .NET Framework types not present in a list of authorized types. The list of authorized types is an XML document where each entry indicates an `Assembly`, a `Namespace`, a `TypeName`, and an Authorized {`True`&#124;`False`} indicator. `AuthorizedType` corresponds to an entry in the list. Wildcard character designations, which can be used to include or exclude complete namespaces, are allowed. For example, `Type="System.*"` includes all types in <xref:System>, including types contained in child namespaces.  
   
@@ -106,10 +106,10 @@ The use of a list of authorized types is controlled by the <xref:System.Workflow
     </authorizedTypes>
   </System.Workflow.ComponentModel.WorkflowCompiler>  
 </configuration>  
-```    
+```
 
 > [!WARNING]
-> When `Type="System.*"` type is present, it's possible to include other unintended types, such as `Type="System.Configuration"`, for compilation. You should be cautious and review each one. For any type that should be restricted, be sure to set `Authorized` to `False`. 
+> When `Type="System.*"` type is present, it's possible to include other unintended types, such as `Type="System.Configuration"`, for compilation. You should be cautious and review each one. For any type that should be restricted, be sure to set `Authorized` to `False`.
 
 ## See also
 

@@ -1,0 +1,22 @@
+- name: "Porting Existing ASP.NET Apps to .NET Core"
+  href: index.md
+  items:
+    - name: Introduction to porting apps to .NET Core
+      href: introduction.md
+    - name: Architectural differences between ASP.NET MVC and ASP.NET Core
+      href: architectural-differences.md
+    - name: Migrating large ASP.NET solutions
+      href: migrating-large-solutions.md
+    - name: Example migration of eShop project
+      href: example-migration-eshop.md
+    - name: Deployment scenarios
+      href: deployment-scenarios.md
+    - name: Case studies
+      href: case-studies.md
+      items:
+        - name: DasBlog to Core case study
+          href: dasblog-core-case-study.md
+        - name: Stack Overflow case study
+          href: stack-overflow-case-study.md
+    - name: Summary
+      href: summary.md

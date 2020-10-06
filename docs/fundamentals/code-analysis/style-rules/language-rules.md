@@ -118,7 +118,7 @@ The style rules in this section are applicable to C# language only.
 
 ### Implicit and explicit types
 
-The style rules in this section concern the use of the [var](../../../csharp/language-reference/keywords/var.md) keyword versus an explicit type in a variable declaration. This rule can be applied separately to built-in types, when the type is apparent, and elsewhere.
+The style rules in this section concern the use of the [var](/dotnet/csharp/language-reference/keywords/var) keyword versus an explicit type in a variable declaration. This rule can be applied separately to built-in types, when the type is apparent, and elsewhere.
 
 Example *.editorconfig* file:
 
@@ -192,7 +192,7 @@ bool f = this.Init();
 
 ### Expression-bodied members
 
-The style rules in this section concern the use of [expression-bodied members](../../../csharp/programming-guide/statements-expressions-operators/expression-bodied-members.md) when the logic consists of a single expression. This rule can be applied to methods, constructors, operators, properties, indexers, and accessors.
+The style rules in this section concern the use of [expression-bodied members](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) when the logic consists of a single expression. This rule can be applied to methods, constructors, operators, properties, indexers, and accessors.
 
 Example *.editorconfig* file:
 
@@ -352,7 +352,7 @@ Func<int, int> square = x => { return x * x; };
 
 #### csharp_style_expression_bodied_local_functions
 
-Starting with C# 7.0, C# supports [local functions](../../../csharp/programming-guide/classes-and-structs/local-functions.md). Local functions are private methods of a type that are nested in another member.
+Starting with C# 7.0, C# supports [local functions](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Local functions are private methods of a type that are nested in another member.
 
 |Property|Value|
 |-|-|
@@ -385,7 +385,7 @@ void M()
 
 ### Pattern matching
 
-The style rules in this section concern the use of [pattern matching](../../../csharp/pattern-matching.md) in C#.
+The style rules in this section concern the use of [pattern matching](/dotnet/csharp/pattern-matching) in C#.
 
 Example *.editorconfig* file:
 
@@ -439,7 +439,7 @@ if (s != null) {...}
 
 ### Inlined variable declarations
 
-This style rule concerns whether `out` variables are declared inline or not. Starting in C# 7, you can [declare an out variable in the argument list of a method call](../../../csharp/language-reference/keywords/out-parameter-modifier.md#calling-a-method-with-an-out-argument), rather than in a separate variable declaration.
+This style rule concerns whether `out` variables are declared inline or not. Starting in C# 7, you can [declare an out variable in the argument list of a method call](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), rather than in a separate variable declaration.
 
 #### csharp_style_inlined_variable_declaration
 
@@ -484,7 +484,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 #### csharp_prefer_simple_default_expression
 
-This style rule concerns using the [`default` literal for default value expressions](../../../csharp/language-reference/operators/default.md#default-literal) when the compiler can infer the type of the expression.
+This style rule concerns using the [`default` literal for default value expressions](/dotnet/csharp/language-reference/operators/default#default-literal) when the compiler can infer the type of the expression.
 
 |Property|Value|
 |-|-|
@@ -694,7 +694,7 @@ Console.WriteLine($"{point.x} {point.y}");
 
 #### csharp_style_pattern_local_over_anonymous_function
 
-Starting with C# 7.0, C# supports [local functions](../../../csharp/programming-guide/classes-and-structs/local-functions.md). Local functions are private methods of a type that are nested in another member.
+Starting with C# 7.0, C# supports [local functions](/dotnet/csharp/programming-guide/classes-and-structs/local-functions). Local functions are private methods of a type that are nested in another member.
 
 |Property|Value|
 |-|-|
@@ -811,7 +811,7 @@ using (var a = b) { }
 | **Option name** | csharp_style_prefer_switch_expression |
 | **Rule ID** | IDE0066 |
 | **Applicable languages** | C# 8.0+ |
-| **Option values** | `true` - Prefer to use a `switch` expression (introduced with C# 8.0)<br /><br />`false` - Prefer to use a [switch statement](../../../csharp/language-reference/keywords/switch.md) |
+| **Option values** | `true` - Prefer to use a `switch` expression (introduced with C# 8.0)<br /><br />`false` - Prefer to use a [switch statement](/dotnet/csharp/language-reference/keywords/switch) |
 | **Default option value** | `true:suggestion` |
 | **Introduced version** | Visual Studio 2019 version 16.2 |
 

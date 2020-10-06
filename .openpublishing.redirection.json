@@ -178,6 +178,10 @@
             "redirect_url": "/dotnet/core/tools/dotnet-nuget-locals"
         },
         {
+            "source_path": "docs/core/about.md",
+            "redirect_url": "/dotnet/core/introduction"
+        },
+        {
             "source_path": "docs/core/app-types.md",
             "redirect_url": "/dotnet/core/deploying/index"
         },
@@ -2609,6 +2613,21 @@
         {
             "source_path": "docs/csharp/type-system.md",
             "redirect_url": "/dotnet/csharp/programming-guide/types/index"
+        },
+        {
+            "source_path": "docs/csharp/csharp-7-1.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-7",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/csharp-7-2.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-7",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/csharp-7-3.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-7",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/csharp/whats-new.md",
@@ -11596,6 +11615,10 @@
         {
             "source_path": "docs/standard/threading/thread-suspend-garbage-collection-and-safe-points.md",
             "redirect_url": "/dotnet/api/system.threading.thread.suspend"
+        },
+        {
+            "source_path": "docs/standard/tour.md",
+            "redirect_url": "/dotnet/core/introduction"
         },
         {
             "source_path": "docs/standard/using-linq.md",

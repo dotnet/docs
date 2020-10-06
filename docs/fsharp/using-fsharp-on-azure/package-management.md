@@ -1,6 +1,6 @@
 ---
 title: Using Package Management with F# for Azure
-description: Use Paket or Nuget to manage F# Azure dependencies
+description: Use Paket or NuGet to manage F# Azure dependencies
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: "devx-track-fsharp"
@@ -47,7 +47,7 @@ Or, for Mono development:
 > mono paket.exe update
 ```
 
-## Using Nuget
+## Using NuGet
 
 If you're using [NuGet](https://www.nuget.org/) as your dependency manager, you can use the `nuget.exe` tool to add Azure dependencies. For example:
 

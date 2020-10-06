@@ -8,7 +8,11 @@ ms.author: gewarren
 dev_langs:
 - CSharp
 - VB
+f1_keywords:
+- IDE1006
+- naming rules
 helpviewer_keywords:
+- IDE1006
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions

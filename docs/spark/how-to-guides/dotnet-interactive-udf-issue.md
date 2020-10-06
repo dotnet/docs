@@ -24,7 +24,7 @@ This guide uses Jupyter Notebooks to illustrate how to use UDFs in an interactiv
 
 ## Defining a User-defined Function (UDF) in .NET Interactive
 
-In the interactive experience, a cell can be thought of as the code snippet being submitted as part of one iteration of the [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). For example, let's take a look at the following notebook to understand what that means:
+In the interactive experience, a cell can be thought of as the code snippet being submitted as part of one iteration of the [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). For example, take a look at the following notebook to understand what that means:
 
 ![Jupyter Notebook cells](./media/dotnet-interactive/dotnet-interactive-cells.png)
 

@@ -11,7 +11,7 @@ ms.custom: "updateeachrelease"
 
 * [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
 * [Serverless functions in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
-* [Cloud native apps](/dotnet/architecture/cloud-native/)
+* [Cloud native apps](../architecture/cloud-native/index.md)
 * [Mobile apps](https://dotnet.microsoft.com/learn/xamarin/hello-world-tutorial/intro)
 * Desktop apps
   * [Windows WPF](/dotnet/desktop/wpf/)

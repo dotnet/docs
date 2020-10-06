@@ -25,11 +25,11 @@ landingContent:
           - text: What is .NET?
             url: https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet
           - text: Tour of .NET
-            url: ../standard/tour.md
+            url: ../core/introduction.md
           - text: Introduction to .NET Core
             url: ../core/introduction.md
           - text: .NET Core overview
-            url: ../core/about.md
+            url: ../core/introduction.md
           - text: .NET Core SDK overview
             url: ../core/sdk.md
       - linkListType: get-started
@@ -43,7 +43,7 @@ landingContent:
           - text: .NET Standard
             url: ../standard/net-standard.md
           - text: .NET Core
-            url: ../standard/../core/about.md
+            url: ../core/introduction.md
           - text: Target frameworks
             url: ../standard/frameworks.md
           - text: Common Language Runtime (CLR)

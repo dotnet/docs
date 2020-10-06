@@ -376,5 +376,5 @@ All the conditional checks used in the [platform guard examples](#guard-platform
 - [Target Framework Names in .NET 5](https://github.com/dotnet/designs/blob/master/accepted/2020/net5/net5.md)
 - [Annotating platform-specific APIs and detecting its use](https://github.com/dotnet/designs/blob/master/accepted/2020/platform-checks/platform-checks.md)
 - [Annotating APIs as unsupported on specific platforms](https://github.com/dotnet/designs/blob/master/accepted/2020/platform-exclusion/platform-exclusion.md)
-- [CA1416 Platform compatibility analyzer](/visualstudio/code-quality/ca1416)
+- [CA1416 Platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md)
 - [.NET API analyzer](../../standard/analyzers/api-analyzer.md)

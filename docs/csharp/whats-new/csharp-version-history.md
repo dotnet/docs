@@ -174,17 +174,17 @@ C# started releasing *point releases* with C# 7.1. This version added the [langu
 
 The new language features in this release are:
 
-- [`async` `Main` method](./csharp-7.md'#async-main)
+- [`async` `Main` method](./csharp-7.md#async-main)
   - The entry point for an application can have the `async` modifier.
-- [`default` literal expressions](./csharp-7.md'#default-literal-expressions)
+- [`default` literal expressions](./csharp-7.md#default-literal-expressions)
   - You can use default literal expressions in default value expressions when the target type can be inferred.
-- [Inferred tuple element names](./csharp-7.md'#inferred-tuple-element-names)
+- [Inferred tuple element names](./csharp-7.md#inferred-tuple-element-names)
   - The names of tuple elements can be inferred from tuple initialization in many cases.
-- [Pattern matching on generic type parameters](./csharp-7.md'#pattern-matching-on-generic-type-parameters)
+- [Pattern matching on generic type parameters](./csharp-7.md#pattern-matching-on-generic-type-parameters)
   - You can use pattern match expressions on variables whose type is a generic type parameter.
 
 Finally, the compiler has two options `-refout` and `-refonly` that
-control [reference assembly generation](./csharp-7.md'#reference-assembly-generation).
+control [reference assembly generation](./csharp-7.md#reference-assembly-generation).
 
 ## C# version 7.2
 

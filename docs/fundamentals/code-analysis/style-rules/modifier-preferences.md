@@ -11,13 +11,19 @@ dev_langs:
 ---
 # Modifier preferences
 
-## Overview
+## .NET modifier preferences
 
-The style rules in this section concern following modifier preferences:
+The style rules in this section concern the following modifier preferences that are common to C# and Visual Basic:
 
 - [Order modifiers (IDE0036)](ide0036.md)
 - [Add accessibility modifiers (IDE0040)](ide0040.md)
 - [Add readonly modifier (IDE0044)](ide0044.md)
+
+## C# modifier preferences
+
+The style rules in this section concern the following modifier preferences that are specific to C#:
+
+- [Make local function static (IDE0062)](ide0062.md)
 
 ## See also
 

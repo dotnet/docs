@@ -147,8 +147,12 @@ items:
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Tools and diagnostics
   items:
-  - name: .NET Core SDK overview
-    href: ../core/sdk.md
+  - name: .NET Core SDK
+    items:
+    - name: Overview
+      href: ../core/sdk.md
+    - name: Error messages
+      href: ../core/tools/sdk-errors/netsdk1145.md
   - name: .NET Core CLI
     items:
     - name: Overview
@@ -962,6 +966,8 @@ items:
               href: code-analysis/style-rules/ide0040.md
             - name: IDE0044
               href: code-analysis/style-rules/ide0044.md
+            - name: IDE0062
+              href: code-analysis/style-rules/ide0062.md
           - name: Parentheses preferences
             items:
             - name: IDE0047 and IDE0048
@@ -972,20 +978,30 @@ items:
               href: code-analysis/style-rules/expression-level-preferences.md
             - name: IDE0017
               href: code-analysis/style-rules/ide0017.md
+            - name: IDE0018
+              href: code-analysis/style-rules/ide0018.md
             - name: IDE0028
               href: code-analysis/style-rules/ide0028.md
             - name: IDE0032
               href: code-analysis/style-rules/ide0032.md
             - name: IDE0033
               href: code-analysis/style-rules/ide0033.md
+            - name: IDE0034
+              href: code-analysis/style-rules/ide0034.md
             - name: IDE0037
               href: code-analysis/style-rules/ide0037.md
+            - name: IDE0042
+              href: code-analysis/style-rules/ide0042.md
             - name: IDE0045
               href: code-analysis/style-rules/ide0045.md
             - name: IDE0046
               href: code-analysis/style-rules/ide0046.md
             - name: IDE0054
               href: code-analysis/style-rules/ide0054.md
+            - name: IDE0056
+              href: code-analysis/style-rules/ide0056.md
+            - name: IDE0057
+              href: code-analysis/style-rules/ide0057.md
             - name: IDE0058
               href: code-analysis/style-rules/ide0058.md
             - name: IDE0059
@@ -994,18 +1010,66 @@ items:
             items:
             - name: Overview
               href: code-analysis/style-rules/null-checking-preferences.md
+            - name: IDE0016
+              href: code-analysis/style-rules/ide0016.md
             - name: IDE0029
               href: code-analysis/style-rules/ide0029.md
             - name: IDE0031
               href: code-analysis/style-rules/ide0031.md
             - name: IDE0041
               href: code-analysis/style-rules/ide0041.md
+            - name: IDE1005
+              href: code-analysis/style-rules/ide1005.md
           - name: Parameter preferences
             items:
-            - name: Overview
-              href: code-analysis/style-rules/parameter-preferences.md
             - name: IDE0060
               href: code-analysis/style-rules/ide0060.md
+          - name: var preferences
+            items:
+            - name: IDE0007 and IDE0008
+              href: code-analysis/style-rules/ide0007-ide0008.md
+          - name: Expression-bodied members
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/expression-bodied-members.md
+            - name: IDE0021
+              href: code-analysis/style-rules/ide0021.md
+            - name: IDE0022
+              href: code-analysis/style-rules/ide0022.md
+            - name: IDE0023 and IDE0024
+              href: code-analysis/style-rules/ide0023-ide0024.md
+            - name: IDE0025
+              href: code-analysis/style-rules/ide0025.md
+            - name: IDE0026
+              href: code-analysis/style-rules/ide0026.md
+            - name: IDE0027
+              href: code-analysis/style-rules/ide0027.md
+            - name: IDE0053
+              href: code-analysis/style-rules/ide0053.md
+            - name: IDE0061
+              href: code-analysis/style-rules/ide0061.md
+          - name: Pattern matching preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/pattern-matching-preferences.md
+            - name: IDE0019
+              href: code-analysis/style-rules/ide0019.md
+            - name: IDE0020
+              href: code-analysis/style-rules/ide0020.md
+            - name: IDE0066
+              href: code-analysis/style-rules/ide0066.md
+          - name: Code block preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/code-block-preferences.md
+            - name: IDE0011
+              href: code-analysis/style-rules/ide0011.md
+            - name: IDE0063
+              href: code-analysis/style-rules/ide0063.md
+          - name: using directive preferences
+            items:
+            - name: IDE0065
+              href: code-analysis/style-rules/ide0065.md
         - name: Formatting rules
           items:
           - name: Overview
@@ -2015,7 +2079,7 @@ items:
     - name: Port Windows Forms projects
       href: ../core/porting/winforms.md
     - name: Port WPF projects
-      href: ../core/../desktop-wpf/migration/convert-project-from-net-framework.md
+      href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
     - name: Port C++/CLI projects
       href: ../core/porting/cpp-cli.md
   - name: Choose between .NET Core and .NET Framework for server apps

@@ -119,7 +119,7 @@ All these diagnostics are available not only in the IDE, but also on the command
 
 ## Configuration
 
-The user decides how the diagnostics should be treated: as warnings, errors, suggestions, or to be turned off. For example, as an architect, you can decide that compatibility issues should be treated as errors, calls to some deprecated APIs generate warnings, while others only generate suggestions. You can configure this separately by diagnostic ID and by project. To do so in **Solution Explorer**, navigate to the **Dependencies** node under your project. Expand the nodes **Dependencies** > **Analyzers** > **Microsoft.DotNet.Analyzers.Compatibility**. Right click on the diagnostic ID, select **Set Rule Set Severity** and pick the desired option.
+The user decides how the diagnostics should be treated: as warnings, errors, suggestions, or to be turned off. For example, as an architect, you can decide that compatibility issues should be treated as errors, calls to some deprecated APIs generate warnings, while others only generate suggestions. You can configure this separately by diagnostic ID and by project. To do so in **Solution Explorer**, navigate to the **Dependencies** node under your project. Expand the nodes **Dependencies** > **Analyzers** > **Microsoft.DotNet.Analyzers.Compatibility**. Right-click on the diagnostic ID, select **Set Rule Set Severity**, and then pick the desired option.
 
 ![Screenshot of Solution Explorer showing diagnostics and pop-up dialog with rule set severity.](media/api-analyzer/disable-notifications.jpg)
 
@@ -127,4 +127,4 @@ The user decides how the diagnostics should be treated: as warnings, errors, sug
 
 - [Introducing API Analyzer](https://devblogs.microsoft.com/dotnet/introducing-api-analyzer/) blog post.
 - [API Analyzer](https://youtu.be/eeBEahYXGd0) demo video on YouTube.
-- [Platform Compatability Analyzer](platform-compat-analyzer.md)
+- [Platform Compatibility Analyzer](platform-compat-analyzer.md)

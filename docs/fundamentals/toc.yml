@@ -49,16 +49,12 @@ items:
       href: ../core/install/localized-intellisense.md
 - name: Overview (week 1)
   items:
-  - name: Tour of .NET
-    href: ../standard/tour.md
+  - name: Introduction to .NET
+    href: ../core/introduction.md
   - name: .NET architectural components
     href: ../standard/components.md
   - name: .NET class libraries
     href: ../standard/class-libraries.md
-  - name: Introduction to .NET Core
-    href: ../core/introduction.md
-  - name: .NET Core overview
-    href: ../core/about.md
   - name: .NET Standard overview
     href: ../standard/net-standard.md
   - name: .NET glossary
@@ -151,8 +147,12 @@ items:
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Tools and diagnostics
   items:
-  - name: .NET Core SDK overview
-    href: ../core/sdk.md
+  - name: .NET Core SDK
+    items:
+    - name: Overview
+      href: ../core/sdk.md
+    - name: Error messages
+      href: ../core/tools/sdk-errors/netsdk1145.md
   - name: .NET Core CLI
     items:
     - name: Overview
@@ -2075,7 +2075,7 @@ items:
     - name: Port Windows Forms projects
       href: ../core/porting/winforms.md
     - name: Port WPF projects
-      href: ../core/../desktop-wpf/migration/convert-project-from-net-framework.md
+      href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
     - name: Port C++/CLI projects
       href: ../core/porting/cpp-cli.md
   - name: Choose between .NET Core and .NET Framework for server apps

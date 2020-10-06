@@ -37,6 +37,16 @@ We have some recommendations for fixing common scenarios:
 
 * To avoid shipping loose files entirely, consider using [embedded resources](../../framework/resources/creating-resource-files-for-desktop-apps.md).
 
+## Attaching a debugger
+
+On Linux, the only debugger which can attach to self-contained single-file processes or debug crash dumps is [SOS with LLDB](../diagnostics/dotnet-sos.md).
+
+On Windows and Mac, Visual Studio and VS Code can be used to debug crash dumps. Attaching to a running self-contained single-file executable requires an extra file: _mscordbi.{dll,so}_.
+
+Without this file Visual Studio may produce the error "Unable to attach to the process. A debug component is not installed." and VS Code may produce the error "Failed to attach to process: Unknown Error: 0x80131c3c."
+
+To fix these errors, _mscordbi_ needs to be copied next to the executable. _mscordbi_ is `publish`ed by default in the subdirectory with the application's runtime ID. So, for example, if one were to publish a self-contained single-file executable using the `dotnet` CLI for Windows using the parameters `-r win-x64`, the executable would be placed in _bin/Debug/net5.0/win-x64/publish_. A copy of _mscordbi.dll_ would be present in _bin/Debug/net5.0/win-x64_.
+
 ## Other considerations
 
 Single-file doesn't bundle native libraries by default. On Linux, we prelink the runtime into the bundle and only application native libraries are deployed to the same directory as the single-file app. On Windows, we prelink only the hosting code and both the runtime and application native libraries are deployed to the same directory as the single-file app. This is to ensure a good debugging experience, which requires native files to be excluded from the single file. There is an option to set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native libraries in the single file bundle, but these files will be extracted to a temporary directory in the client machine when the single file application is run.

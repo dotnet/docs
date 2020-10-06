@@ -27,7 +27,7 @@ Options for language rules can be specified in an EditorConfig file with the fol
 `option_name = value:severity`
 
 - **Value**: For each language rule, you specify a value that defines if or when to prefer the style. Many rules accept a value of `true` (prefer this style) or `false` (do not prefer this style). Other rules accept values such as `when_on_single_line` or `never`.
-- **Severity**: The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. Severity specification as part of the above option syntax is only respected inside development IDEs, such as Visual Studio. This setting is not understood by the C# or VB compilers, hence not respected during build. Instead, to enforce code style rules on build, you should set the severity by using the rule ID based severity configuration syntax for analyzers. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = silent`. For more details, see this [github issue](https://github.com/dotnet/roslyn/issues/44201).
+- **Severity**: The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. Severity specification as part of the above option syntax is only respected inside development IDEs, such as Visual Studio. This setting is not understood by the C# or VB compilers, hence not respected during build. Instead, to enforce code style rules on build, you should set the severity by using the rule ID-based severity configuration syntax for analyzers. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = silent`. For more information, see this [GitHub issue](https://github.com/dotnet/roslyn/issues/44201).
 
 > [!TIP]
 >
@@ -114,7 +114,7 @@ The style rules in this section are applicable to C# language only.
   - [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement)
 - [Modifier preferences](modifier-preferences.md#c-modifier-preferences)
   - [csharp_prefer_static_local_function](ide0062.md#csharp_prefer_static_local_function)
-
+  
 ## See also
 
 - [Formatting rules](formatting-rules.md)

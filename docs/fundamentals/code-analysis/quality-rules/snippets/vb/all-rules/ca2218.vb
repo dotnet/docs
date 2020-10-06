@@ -1,7 +1,4 @@
-﻿Imports System
-Imports System.IO
-
-Namespace ca2218
+﻿Namespace ca2218
     '<snippet1>
     ' This class violates the rule.
     Public Class Point
@@ -14,7 +11,7 @@ Namespace ca2218
             Me.Y = y
         End Sub
 
-        Public Overloads Function Equals(obj As Object) As Boolean
+        Public Overrides Function Equals(obj As Object) As Boolean
 
             If obj = Nothing Then
                 Return False

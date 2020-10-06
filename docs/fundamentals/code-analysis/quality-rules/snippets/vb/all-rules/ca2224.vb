@@ -57,7 +57,7 @@ Namespace ca2224_2
             Return X Or Y
         End Function
 
-        Public Overloads Function Equals(obj As Object) As Boolean
+        Public Overrides Function Equals(obj As Object) As Boolean
 
             If obj = Nothing Then
                 Return False
@@ -75,11 +75,13 @@ Namespace ca2224_2
 
         Public Shared Operator =(ByVal pt1 As Point,
                              ByVal pt2 As Point) As Boolean
+            ' Object.Equals calls Point.Equals(Object).
             Return Object.Equals(pt1, pt2)
         End Operator
 
         Public Shared Operator <>(ByVal pt1 As Point,
                              ByVal pt2 As Point) As Boolean
+            ' Object.Equals calls Point.Equals(Object).
             Return Not Object.Equals(pt1, pt2)
         End Operator
 

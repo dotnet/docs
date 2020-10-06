@@ -147,8 +147,12 @@ items:
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Tools and diagnostics
   items:
-  - name: .NET Core SDK overview
-    href: ../core/sdk.md
+  - name: .NET Core SDK
+    items:
+    - name: Overview
+      href: ../core/sdk.md
+    - name: Error messages
+      href: ../core/tools/sdk-errors/netsdk1145.md
   - name: .NET Core CLI
     items:
     - name: Overview

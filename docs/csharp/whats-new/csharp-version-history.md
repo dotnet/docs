@@ -160,7 +160,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 
 Other features included:
 
-- [Discards](./csharp-7.md##tuples-and-discards)
+- [Discards](./csharp-7.md#tuples-and-discards)
 - [Binary Literals and Digit Separators](./csharp-7.md#numeric-literal-syntax-improvements)
 - [Throw expressions](./csharp-7.md#throw-expressions)
 

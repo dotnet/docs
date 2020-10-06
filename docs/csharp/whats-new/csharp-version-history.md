@@ -152,7 +152,7 @@ They did one other thing along with this version, though it's not a traditional 
 C# version 7.0 was released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
 
 - [Out variables](./csharp-7.md#out-variables)
-- [Tuples and deconstruction](./csharp-7.md#tuples)
+- [Tuples and deconstruction](./csharp-7.md#tuples-and-discards)
 - [Pattern matching](./csharp-7.md#pattern-matching)
 - [Local functions](./csharp-7.md#local-functions)
 - [Expanded expression bodied members](./csharp-7.md#more-expression-bodied-members)
@@ -160,7 +160,7 @@ C# version 7.0 was released with Visual Studio 2017. This version has some evolu
 
 Other features included:
 
-- [Discards](./csharp-7.md#discards)
+- [Discards](./csharp-7.md##tuples-and-discards)
 - [Binary Literals and Digit Separators](./csharp-7.md#numeric-literal-syntax-improvements)
 - [Throw expressions](./csharp-7.md#throw-expressions)
 
@@ -178,9 +178,9 @@ The new language features in this release are:
   - The entry point for an application can have the `async` modifier.
 - [`default` literal expressions](./csharp-7.md#default-literal-expressions)
   - You can use default literal expressions in default value expressions when the target type can be inferred.
-- [Inferred tuple element names](./csharp-7.md#inferred-tuple-element-names)
+- [Inferred tuple element names](./csharp-7.md#tuples-and-discards)
   - The names of tuple elements can be inferred from tuple initialization in many cases.
-- [Pattern matching on generic type parameters](./csharp-7.md#pattern-matching-on-generic-type-parameters)
+- [Pattern matching on generic type parameters](./csharp-7.md#pattern-matching)
   - You can use pattern match expressions on variables whose type is a generic type parameter.
 
 Finally, the compiler has two options `-refout` and `-refonly` that
@@ -190,11 +190,11 @@ control [reference assembly generation](./csharp-7.md#reference-assembly-generat
 
 C# 7.2 added several small language features:
 
-- [Techniques for writing safe efficient code](./csharp-7.md#safe-efficient-code-enhancements)
+- [Techniques for writing safe efficient code](./csharp-7.md#enabling-more-efficient-safe-code)
   - A combination of syntax improvements that enable working with value types using reference semantics.
 - [Non-trailing named arguments](./csharp-7.md#non-trailing-named-arguments)
   - Named arguments can be followed by positional arguments.
-- [Leading underscores in numeric literals](./csharp-7.md#leading-underscores-in-numeric-literals)
+- [Leading underscores in numeric literals](./csharp-7.md#numeric-literal-syntax-improvements)
   - Numeric literals can now have leading underscores before any printed digits.
 - [`private protected` access modifier](./csharp-7.md#private-protected-access-modifier)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
@@ -208,7 +208,7 @@ There are two main themes to the C# 7.3 release. One theme provides features tha
 The following new features support the theme of better performance for safe code:
 
 - [You can access fixed fields without pinning.](csharp-7.md#indexing-fixed-fields-does-not-require-pinning)
-- [You can reassign `ref` local variables.](csharp-7.md#ref-local-variables-may-be-reassigned)
+- [You can reassign `ref` local variables.](csharp-7.md#enabling-more-efficient-safe-code)
 - [You can use initializers on `stackalloc` arrays.](csharp-7.md#stackalloc-arrays-support-initializers)
 - [You can use `fixed` statements with any type that supports a pattern.](csharp-7.md#more-types-support-the-fixed-statement)
 - [You can use additional generic constraints.](csharp-7.md#enhanced-generic-constraints)

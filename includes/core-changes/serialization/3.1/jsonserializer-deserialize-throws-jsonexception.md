@@ -1,12 +1,12 @@
 ### JsonSerializer.Deserialize throws JsonException for null or empty strings
 
-<xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> now throws a <xref:System.Text.Json.JsonException> instead of a <xref:System.NullReferenceException> or <xref:System.IndexOutOfRangeException>.
+When the type parameter is <xref:System.Char>, <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> now throws a <xref:System.Text.Json.JsonException> instead of a <xref:System.NullReferenceException> or <xref:System.IndexOutOfRangeException>.
 
 #### Change description
 
-In previous .NET versions, passing a null reference for the <xref:System.String> parameter of <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> causes a <xref:System.NullReferenceException> to be thrown. Passing an empty string causes an <xref:System.IndexOutOfRangeException> to be thrown.
+In previous .NET versions, when the type parameter is <xref:System.Char>, passing a null reference for the <xref:System.String> parameter of <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> causes a <xref:System.NullReferenceException> to be thrown. Passing an empty string causes an <xref:System.IndexOutOfRangeException> to be thrown.
 
-In .NET Core 3.1 and later, passing  a null reference or an empty string causes a <xref:System.Text.Json.JsonException> to be thrown.
+In .NET Core 3.1 and later, when the type parameter is <xref:System.Char>, passing a null reference or an empty string causes a <xref:System.Text.Json.JsonException> to be thrown.
 
 #### Version introduced
 

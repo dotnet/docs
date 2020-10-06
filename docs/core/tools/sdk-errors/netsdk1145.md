@@ -11,7 +11,7 @@ f1_keywords:
 
 **This article applies to:** ✔️ .NET 5.0.100 SDK and later versions
 
-When the .NET SDK issues error NETSDK1145, the targeting or apphost pack is not installed and NuGet package restore is not supported. This is typically caused by having a newer SDK than the one included in Visual Studio for C++/CLI projects. Upgrade Visual Studio, remove _global.json_ if it specifies a certain SDK version, and uninstall the newer SDK. Alternatively, you could override the targeting or apphost version: Find the version that exists under the pack directory from the error message and matches the target framework of the project. Add the following to the project:
+When the .NET SDK issues error NETSDK1145, the targeting or apphost pack is not installed and NuGet package restore is not supported. This is typically caused by having a newer SDK than the one included in Visual Studio for C++/CLI projects. Upgrade Visual Studio, remove _global.json_ if it specifies a certain SDK version, and uninstall the newer SDK. Alternatively, you could override the targeting or apphost version. Find the version that exists under the pack directory from the error message and matches the target framework of the project. Add the following to the project:
 
 For apphost pack
 

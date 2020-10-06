@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
 
-# How to write UDFs in .NET for Apache Spark interactive shells
+# How to write UDFs in .NET for Apache Spark interactive environments
 
 In this article you will learn how to use UDFs in a .NET for Apache Spark interactive environment, a couple of important caveats to keep in mind, and why Broadcast Variables don't work with .NET for Apache Spark interactive experiences.
 

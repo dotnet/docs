@@ -143,7 +143,7 @@ services:
     #...
 ```
 
-Now you can run your application with **F5** key, or by using the **Play** button, or the **Ctrl+F5** key, selecting the docker-compose project, as shown in image 4-42.
+Now you can run your application with the **F5** key, or by using the **Play** button, or the **Ctrl+F5** key, selecting the docker-compose project, as shown in image 4-42.
 
 ![Running docker-compose project with Visual Studio](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/running-docker-compose-with-visual-studio.png)
 
@@ -193,6 +193,8 @@ Run the following command from the **az cli**:
 ```powershell
 az acr create --name exploredocker --resource-group explore-docker-aks-rg --sku basic --admin-enabled
 ```
+> [!NOTE]
+> The container registry name (e.g `exploredocker`) must be unique within Azure, and contain 5-50 alphanumeric characters. For more details, refer [Create a container registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli#create-a-container-registry)
 
 ### Create the image in Release mode
 
@@ -252,7 +254,7 @@ Push the image into the Azure ACR, using the following command:
 docker push <login-server-name>/<image-name>:v1
 ```
 
-This command takes a while uploading the images but gives you feedback in the process. In the following image you can see the output from one image completed and another in progress.
+This command takes a while uploading the images but gives you feedback in the process. In the following image, you can see the output from one image completed and another in progress.
 
 ![Console output from the docker push command.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/uploading-docker-images-complete.png)
 

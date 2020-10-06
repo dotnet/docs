@@ -63,14 +63,26 @@ This should display a list of all files/folders in the path provided by your URI
 
 1. If the above command worked, you can now move on to accessing this storage account through Spark. First run the command `hadoop classpath` from the commandline inside `%HADOOP_HOME%` and copy the output.
 2. Set the output of the command run in Step 1 to the value of environment variable `SPARK_DIST_CLASSPATH`.
-3. Now you should be able to access your ADLS or WASB storage account through Spark .NET using the abfs URI as shown in the simple example below:
+3. Now you should be able to access your ADLS or WASB storage account through Spark .NET using the abfs URI as shown in the simple example below. (For this example we use the standard [`people.json`](https://github.com/apache/spark/blob/master/examples/src/main/resources/people.json) example file provided with every Apache Spark installation.):
 
    ```csharp
    SparkSession spark = SparkSession
        .Builder()
        .AppName("Connect to Azure Storage locally")
        .GetOrCreate();
-   DataFrame df = spark.Read().Json("wasbs://file_system@account_name.blob.core.windows.net/path/file.json");
+   DataFrame df = spark.Read().Json("wasbs://file_system@account_name.blob.core.windows.net/path/people.json");
    //DataFrame df = spark.Read().Json("abfss://file_system@account_name.dfs.core.windows.net/path/file.json");
    df.Show();
    ```
+
+The result as displayed is the DataFrame (`df`) as shown below:
+
+```text
++----+-------+
+| age|   name|
++----+-------+
+|null|Michael|
+|  30|   Andy|
+|  19| Justin|
++----+-------+
+```

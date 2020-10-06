@@ -65,7 +65,7 @@ For more information, see [examples of how the attributes work and what diagnost
     ```
 
   - **Unsupported only list**. If the lowest version for each OS platform is an `[UnsupportedOSPlatform]` attribute, then the API is considered to only be unsupported by the listed platforms and supported by all other platforms. The list could have `[SupportedOSPlatform]` attribute with the same platform but a higher version, which denotes that the API is supported starting from that version.
-  
+
     ```csharp
     // The API was unsupported on Windows until version 10.0.19041.0.
     // The API is considered supported everywhere else without constraints.
@@ -74,16 +74,16 @@ For more information, see [examples of how the attributes work and what diagnost
     public void ApiSupportedFromWindows8UnsupportFromWindows10();
     ```
 
-  - **Inconsistent list**. If the lowest version for some platforms is `[SupportedOSPlatform]` while it is `[UnsupportedOSPlatform]` for other platforms, is considered inconsistent, which is not supported for the analyzer.
+  - **Inconsistent list**. If the lowest version for some platforms is `[SupportedOSPlatform]` while it is `[UnsupportedOSPlatform]` for other platforms, it's considered to be inconsistent, which is not supported for the analyzer.
   - If the lowest versions of `[SupportedOSPlatform]` and `[UnsupportedOSPlatform]` attributes are equal, the analyzer considers the platform as part of the **Supported only list**.
-- Platform attributes can be applied to types, members (methods, fields, properties, and events) and assemblies with different platform name and / or version.
+- Platform attributes can be applied to types, members (methods, fields, properties, and events) and assemblies with different platform names or versions.
   - Attributes applied at the top level `target` affect all of its members and types.
-  - Child level attributes only apply if they adhere to the rule "child annotations can narrow the platforms support, but they cannot widen it".
-    - When parent has **Supported only** list, then child member attributes could not add a new platform support as that would be extending parent support, a new platform support can only added to the parent itself. But it can have `Supported` attribute for same platform with later versions as that will narrow the support. Also it can have `Unsupported` attribute with same platform as that will also narrow parent support.
-    - When parent has **Unsupported only** list, then child member attributes could add a new platform support as that would be narrowing parent support, but it cannot have `Supported` attribute for same platform as in the parent, that would extend parent support. Support for the same platform can be added only to parent level where the original `Unsupported` attribute applied.
-  - If `[SupportedOSPlatform("platformVersion")]` is applied more than once for an API with the same `platform` name only the one with minimum version is considered by the analyzer.
-  - If `[UnsupportedOSPlatform("platformVersion")]` is applied more than twice for an API with the same `platform` name, only the two with earliest versions are considered by the analyzer.
-  
+  - Child-level attributes only apply if they adhere to the rule "child annotations can narrow the platforms support, but they cannot widen it".
+    - When parent has **Supported only** list, then child member attributes cannot add a new platform support, as that would be extending parent support. Support for a new platform can only be added to the parent itself. But the child can have the `Supported` attribute for the same platform with later versions as that narrows the support. Also, the child can have the `Unsupported` attribute with the same platform as that also narrows parent support.
+    - When parent has **Unsupported only** list, then child member attributes can add support for a new platform, as that narrows parent support. But it cannot have the `Supported` attribute for the same platform as the parent, because that extends parent support. Support for the same platform can only be added to the parent where the original `Unsupported` attribute was applied.
+  - If `[SupportedOSPlatform("platformVersion")]` is applied more than once for an API with the same `platform` name, the analyzer only considers the one with the minimum version.
+  - If `[UnsupportedOSPlatform("platformVersion")]` is applied more than twice for an API with the same `platform` name, the analyzer only considers the two with the earliest versions.
+
   > [!NOTE]
   > An API that was supported initially but unsupported (removed) in a later version is not expected to get resupported in an even later version.
 
@@ -118,7 +118,7 @@ For more information, see [examples of how the attributes work and what diagnost
       // warns: 'SupportedOnWindowsAndLinuxOnly' is supported on 'Linux'
       SupportedOnWindowsAndLinuxOnly();
 
-      // warns: 'ApiSupportedFromWindows8UnsupportFromWindows10' is supported on 'windows' 8.0 and later  
+      // warns: 'ApiSupportedFromWindows8UnsupportFromWindows10' is supported on 'windows' 8.0 and later
       // warns: 'ApiSupportedFromWindows8UnsupportFromWindows10' is unsupported on 'windows' 10.0.19041.0 and later
       ApiSupportedFromWindows8UnsupportFromWindows10();
 
@@ -128,7 +128,7 @@ For more information, see [examples of how the attributes work and what diagnost
   }
 
   // an API not supported on android but supported on all other.
-  [UnsupportedOSPlatform("android")]  
+  [UnsupportedOSPlatform("android")]
   public void DoesNotWorkOnAndroid() { }
 
   // an API was unsupported on Windows until version 8.0.
@@ -149,11 +149,11 @@ For more information, see [examples of how the attributes work and what diagnost
   {
       DoesNotWorkOnAndroid(); // warns 'DoesNotWorkOnAndroid' is unsupported on 'android'
 
-      // warns:'StartedWindowsSupportFromVersion8' is unsupported on 'windows'  
+      // warns:'StartedWindowsSupportFromVersion8' is unsupported on 'windows'
       // warns:'StartedWindowsSupportFromVersion8' is supported on 'windows' 8.0 and later
       StartedWindowsSupportFromVersion8();
 
-      // warns:'StartedWindowsSupportFrom8UnsupportedFrom10' is unsupported on 'windows'  
+      // warns:'StartedWindowsSupportFrom8UnsupportedFrom10' is unsupported on 'windows'
       // warns:'StartedWindowsSupportFrom8UnsupportedFrom10' is supported on 'windows' 8.0 and later
       // even there were 3 diagnostics found analyzer warn only for the first 2.
       StartedWindowsSupportFrom8UnsupportedFrom10();
@@ -164,15 +164,15 @@ For more information, see [examples of how the attributes work and what diagnost
 
 The recommended way to deal with these diagnostics is to make sure you only call platform-specific APIs when running on an appropriate platform. Following are the options you can use to address the warnings; choose whichever is most appropriate for your situation:
 
-- **Guard the call**. You can achieve this by conditionally calling the code at run time. Check whether you’re running on a desired `Platform` by using one of platform-check methods, for example, `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`.
+- **Guard the call**. You can achieve this by conditionally calling the code at run time. Check whether you're running on a desired `Platform` by using one of platform-check methods, for example, `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`.
 
 - **Mark the call site as platform-specific**. You can also choose to mark your own APIs as being platform-specific, thus effectively just forwarding the requirements to your callers. Mark the containing method or type or the entire assembly with the same attributes as the referenced platform-dependent call. [Examples](#mark-call-site-as-platform-specific).
 
 - **Assert the call site with platform check**. If you don't want the overhead of an additional `if` statement at run time, use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>. [Example](#assert-the-call-site-with-platform-check).
 
-- **Delete the code**. Generally not what you want because it means you lose fidelity when your code is used by Windows users. For cases where a cross-platform alternative exists, you’re likely better off using that over platform-specific APIs.
+- **Delete the code**. Generally not what you want because it means you lose fidelity when your code is used by Windows users. For cases where a cross-platform alternative exists, you're likely better off using that over platform-specific APIs.
 
-- **Suppress the warning**. You can also simply suppress the warning, either via editor.config or `#pragma warning disable ca1416`. However, this option should be a last resort when using platform-specific APIs.
+- **Suppress the warning**. You can also simply suppress the warning, either via an EditorConfig entry or `#pragma warning disable ca1416`. However, this option should be a last resort when using platform-specific APIs.
 
 ### Guard platform-specific APIs with guard methods
 
@@ -226,7 +226,7 @@ The guard method's platform name should match with the calling platform-dependen
   }
   ```
 
-- if you need to guard a code that targets netstandard or netcoreapp where new <xref:System.OperatingSystem> APIs are not available <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType> API can be used and will be respected by the analyzer. But it's not as optimized as the new APIs added in <xref:System.OperatingSystem>. In case the platform is not supported in <xref:System.Runtime.InteropServices.OSPlatform> struct, you can use <xref:System.Runtime.InteropServices.OSPlatform.Create%2A?displayProperty=nameWithType>("platform") which is also respected by the analyzer.
+- If you need to guard code that targets `netstandard` or `netcoreapp` where new <xref:System.OperatingSystem> APIs are not available, the <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType> API can be used and will be respected by the analyzer. But it's not as optimized as the new APIs added in <xref:System.OperatingSystem>. If the platform is not supported in the <xref:System.Runtime.InteropServices.OSPlatform> struct, you can call <xref:System.Runtime.InteropServices.OSPlatform.Create(System.String)?displayProperty=nameWithType> and pass in the platform name, which the analyzer also respects.
 
   ```csharp
   public void CallingSupportedOnlyApis()
@@ -311,7 +311,7 @@ Platform names should match the calling platform-dependent API. If the platform 
   }
 
   // an API not supported on Android but supported on all other.
-  [UnsupportedOSPlatform("android")]  
+  [UnsupportedOSPlatform("android")]
   public void DoesNotWorkOnAndroid() { }
 
   // an API was unsupported on Windows until version 8.0.

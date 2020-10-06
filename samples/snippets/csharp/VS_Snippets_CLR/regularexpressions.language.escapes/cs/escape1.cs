@@ -6,7 +6,7 @@ public class Example
 {
    public static void Main()
    {
-      string delimited = @"\G(.+)[\t\u007c](.+)\r?\n";
+      string delimited = @"\G(.+)[\t|\u007c](.+)\r?\n";
       string input = "Mumbai, India|13,922,125\t\n" +
                             "Shanghai, China\t13,831,900\n" +
                             "Karachi, Pakistan|12,991,000\n" +

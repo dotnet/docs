@@ -13,7 +13,7 @@ In .NET Core 3.1 and later, when the type parameter is <xref:System.Char>, passi
 // .NET Core 3.1 and later: Throws JsonException.
 JsonSerializer.Deserialize<char>(null);
 
-// .NET Core 3.0: Throws IndexOutOfRangeException
+// .NET Core 3.0: Throws IndexOutOfRangeException.
 // .NET Core 3.1 and later: Throws JsonException.
 JsonSerializer.Deserialize<char>("");
 ```

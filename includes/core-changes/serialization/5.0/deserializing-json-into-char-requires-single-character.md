@@ -11,10 +11,10 @@ In .NET 5.0 and later, when the type parameter is <xref:System.Char>, passing an
 ```csharp
 // .NET Core 3.0 and 3.1: Returns the first character 'a'.
 // .NET 5.0 and later: Throws JsonException because payload has more than one character.
-JsonSerializer.Deserialize<char>("abc");
+JsonSerializer.Deserialize<char>("\"abc\"");
 
 // Correct usage.
-JsonSerializer.Deserialize<char>("a");
+JsonSerializer.Deserialize<char>("\"a\"");
 ```
 
 #### Version introduced

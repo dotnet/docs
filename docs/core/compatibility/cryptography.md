@@ -9,7 +9,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
-| [Default TLS cipher suites for .NET on Linux](#defaultl-tls-cipher-suites-for-net-on-linux) | 5.0 |
+| [Default TLS cipher suites for .NET on Linux](#default-tls-cipher-suites-for-net-on-linux) | 5.0 |
 | [System.Security.Cryptography APIs not supported on Blazor WebAssembly](#systemsecuritycryptography-apis-not-supported-on-blazor-webassembly) | 5.0 |
 | [System.Security.Cryptography.Oid is functionally init-only](#systemsecuritycryptographyoid-is-functionally-init-only) | 5.0 |
 | [BEGIN TRUSTED CERTIFICATE syntax no longer supported on Linux](#begin-trusted-certificate-syntax-no-longer-supported-for-root-certificates-on-linux) | 3.0 |

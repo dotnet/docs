@@ -30,6 +30,7 @@ When workflows are compiled, the following procedures are performed as part of t
 
 This section shows the options for the wfc.exe workflow command-line compiler.
 
+```output
     Microsoft (R) Windows Workflow Compiler version 3.0.0.0
     Copyright (C) Microsoft Corporation 2005. All rights reserved.
     
@@ -85,6 +86,7 @@ This section shows the options for the wfc.exe workflow command-line compiler.
     /nologo                 Suppress compiler copyright message. Short form is '/n'.
     
     /nowarn                 Ignore compiler warnings. Short form is '/w'.
+```
 
 ## Remarks
 > [!NOTE]

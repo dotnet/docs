@@ -31,6 +31,8 @@ It is possible to use the Publish/Subscribe building block directly over HTTP or
 
 `http://localhost:<daprPort>/v1.0/publish/<pubsubname>/<topic>`
 
+> In the examples in this chapter, we will assume everything is running locally on a single host so we can use `localhost` as hostname.
+
 - You must fill `<daprPort>` with the port the Dapr sidecar is listening on.
 - You must fill `<pubsubname>` with the name of the Publish/Subscribe component that must be used.
 - You must fill `<topic>` with the name of the topic the message must be published to.
@@ -72,17 +74,20 @@ Obviously, using the Dapr APIs directly over HTTP is fine, but you need to handl
 
 ### Using the Dapr .NET SDK
 
-The .NET SDK offers a more convenient way of working with the Publish/Subscribe building block. It offers the **Dapr client** that offers a method for publishing a message:
+The .NET SDK offers a more convenient way of working with the Publish/Subscribe building block. It offers a **Dapr client** that can be used to invoke several Dapr building blocks. One of the methods it offers is the `PublishEventAsync` method for publishing a message. This is an example of how to use it:
 
 ```csharp
-public Task PublishEventAsync<TData>(
-    string pubsubName,
-    string topicName,
-    TData data,
-    CancellationToken cancellationToken = default);
+var data = new OrderData
+{
+  id = "123456",
+  productId = "67890",
+  amount = 2
+}
+
+await PublishEventAsync<OrderData>("pubsub", "newOrder", data);
 ```
 
-The `pubsubName` argument is used to specify the component to use for transporting messages. The topic the message must be sent to can be specified using the `topicName` argument of the method. The data is obviously the payload of the message You can specify the .NET type of the message using the generic type parameter `TData`. The method is an async method and the `cancellationToken` can be specified to make the operation cancellable.
+The first argument is used to specify the name of the component to use for transporting messages. The second argument is used to specify the topic that the message must be sent. The third argument is obviously the payload of the message. You can specify the .NET type of the message using the generic type parameter of the method. If you want to know more about the method and its overloads, check out the [.NET SDK documentation](https://github.com/dapr/dotnet-sdk).
 
 Receiving messages is possible by subscribing to a certain topic. You specify which endpoint on your application Dapr needs to call when a message comes in on that topic. For the following examples, we will assume that we have an existing ASP.NET WebAPI application that offers an operation that you want to be called, for example:
 
@@ -161,7 +166,7 @@ These components are created by the community in a [component-contrib repository
 
 ### Configuring Publish/Subscribe
 
-You can configure Dapr to use a certain Publish/Subscribe component. The configuration contains several fields, including a **name** field. This name is important because you can configure multiple Publish/Subscribe components for Dapr to use. When you want to send or receive a message, you must specify this name to specify which message-broker to use (as we saw in the `PublishEventAsync` method signature shown earlier). In the configuration you can also specify any message-broker specific configuration through metadata.
+You can configure Dapr to use a certain Publish/Subscribe component. The configuration contains several fields, including a **name** field. This name is important because you can configure multiple Publish/Subscribe components for Dapr to use. When you want to send or receive a message, you must specify this name to specify which message-broker to use (as we saw in the `PublishEventAsync` method signature shown earlier).
 
 Below you see an example of a Dapr configuration file for configuring a RabbitMQ message-broker component:
 
@@ -181,7 +186,7 @@ spec:
     value: true
 ```
 
-You can see in this example that you can configure RabbitMQ to create a durable queue for holding messages. Each of the components' configuration will have its own set of possible fields. Which fields are available can be found in the documentation of each Publish/Subscribe component.
+You can see in this example that you can specify any message-broker specific configuration in the `metadata` block. In this case, RabbitMQ is configured to create durable queues. Each of the components' configuration will have its own set of possible fields. Which fields are available can be found in the documentation of each Publish/Subscribe component.
 
 ## Reference case: eShopOnDapr
 
@@ -190,13 +195,9 @@ You can see in this example that you can configure RabbitMQ to create a durable 
 ### Pub/sub in eShopOnDapr
 ...
 
+[Benefits interleaved with the description]
 
-### Benefits compared to eShopOnContainers
-
-....
-
-- Benefit
-[TODO Nice integration with ASP.NET Controllers. Doesn't matter how your code called (HTTP request, message), server side is the same.]
+[Benefit: Nice integration with ASP.NET Controllers. Doesn't matter how your code called (HTTP request, message), server side is the same.]
 
 ## Summary
 

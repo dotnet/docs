@@ -93,7 +93,7 @@ The `EventSource` provider writes to a cross-platform event source with the name
 
 The [dotnet-trace](../diagnostics/dotnet-trace.md) tool is a cross-platform CLI global tool that enables the collection of .NET Core traces of a running process. The tool collects <xref:Microsoft.Extensions.Logging.EventSource> provider data using a <xref:Microsoft.Extensions.Logging.EventSource.LoggingEventSource>.
 
-See [dotnet-trace](../diagnostics/dotnet-trace.md) for installation instructions. For a diagnostic tutorial using `dotnet-trace`, see [Debug high CPU usage in .NET Core](/../diagnostics/debug-highcpu.md).
+See [dotnet-trace](../diagnostics/dotnet-trace.md) for installation instructions. For a diagnostic tutorial using `dotnet-trace`, see [Debug high CPU usage in .NET Core](../diagnostics/debug-highcpu.md).
 
 ### Windows EventLog
 

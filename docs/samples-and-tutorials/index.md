@@ -94,7 +94,7 @@ This tutorial shows you how to build a simple application on .NET Core that supp
 
 **[Running ASP.NET MVC Applications in Windows Docker Containers](/aspnet/mvc/overview/deployment/docker-aspnetmvc)**
 
-This tutorial demonstrates how to deploy an existing ASP.NET MVC app in a Windows Docker Container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/MVCRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
+This tutorial demonstrates how to deploy an existing ASP.NET MVC app in a Windows Docker Container.
 
 ## View and download samples
 

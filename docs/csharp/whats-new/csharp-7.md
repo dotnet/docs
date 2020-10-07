@@ -36,9 +36,9 @@ C# 7.0-7.3 adds these features and themes to the C# language:
   - Named arguments can be followed by positional arguments.
 - [`private protected` access modifier](#private-protected-access-modifier)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
-- [Improved overload resolution](#improved-overload-resolution)
+- [Improved overload resolution](#improved-overload-candidates)
   - New rules to resolve overload resolution ambiguity.
-- [Techniques for writing safe efficient code](#safe-efficient-code-enhancements)
+- [Techniques for writing safe efficient code](#enabling-more-efficient-safe-code)
   - A combination of syntax improvements that enable working with value types using reference semantics.
 
 Finally, the compiler has new options:

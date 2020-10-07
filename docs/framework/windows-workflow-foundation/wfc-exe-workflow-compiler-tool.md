@@ -12,7 +12,7 @@ helpviewer_keywords:
 ---
 # wfc.exe (Workflow Command-line Compiler Tool)
 > [!NOTE]
-> [!INCLUDE[DeprecatedContent](deprecatedcontent-md.md)]  
+> This material discusses types and namespaces that are obsolete.
 
 The wfc.exe workflow command-line compiler tool works with old workflow markup files that have the file extension *.xoml* (obsoleted).
 
@@ -90,7 +90,7 @@ This section shows the options for the wfc.exe workflow command-line compiler.
 
 ## Remarks
 > [!NOTE]
-> [!INCLUDE[DeprecatedContent](deprecatedcontent-md.md)]
+> This material discusses types and namespaces that are obsolete.
 
 A list of authorized types is usually defined in the *wfc.exe.config* file. During the validation phase of workflow compilation, a workflow source document is rejected if it or the companion rules file directly references any .NET Framework types not present in a list of authorized types. The list of authorized types is an XML document where each entry indicates an `Assembly`, a `Namespace`, a `TypeName`, and an Authorized {`True`&#124;`False`} indicator. `AuthorizedType` corresponds to an entry in the list. Wildcard character designations, which can be used to include or exclude complete namespaces, are allowed. For example, `Type="System.*"` includes all types in <xref:System>, including types contained in child namespaces.
   

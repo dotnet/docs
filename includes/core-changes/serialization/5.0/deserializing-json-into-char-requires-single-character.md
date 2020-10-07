@@ -8,6 +8,15 @@ In previous .NET versions, if you pass a multi-character string to <xref:System.
 
 In .NET 5.0 and later, when the type parameter is <xref:System.Char>, passing anything other than a single-character string causes a <xref:System.Text.Json.JsonException> to be thrown.
 
+```csharp
+// .NET Core 3.0 and 3.1: Returns the first character 'a'.
+// .NET 5.0 and later: Throws JsonException because payload has more than one character.
+JsonSerializer.Deserialize<char>("abc");
+
+// Correct usage.
+JsonSerializer.Deserialize<char>("a");
+```
+
 #### Version introduced
 
 5.0

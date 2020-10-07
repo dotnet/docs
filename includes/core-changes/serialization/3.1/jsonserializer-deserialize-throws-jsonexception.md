@@ -8,6 +8,16 @@ In previous .NET versions, when the type parameter is <xref:System.Char>, passin
 
 In .NET Core 3.1 and later, when the type parameter is <xref:System.Char>, passing a null reference or an empty string causes a <xref:System.Text.Json.JsonException> to be thrown.
 
+```csharp
+// .NET Core 3.0: Throws NullReferenceException.
+// .NET Core 3.1 and later: Throws JsonException.
+JsonSerializer.Deserialize<char>(null);
+
+// .NET Core 3.0: Throws IndexOutOfRangeException
+// .NET Core 3.1 and later: Throws JsonException.
+JsonSerializer.Deserialize<char>("");
+```
+
 #### Version introduced
 
 .NET Core 3.1

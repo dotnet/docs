@@ -6,7 +6,7 @@ ms.date: 09/26/2020
 ---
 
 TODO
-- [ ] When to use instance vs sidecar
+- [x] When to use instance vs sidecar -> sidecar, make an API call
 - [ ] Boilerplate intro in .NET SDK section
 - [ ] Writing the .NET SDK introduction will make this easier
 
@@ -41,12 +41,19 @@ There are multiple ways to send the request to the sidecar. For example, you can
 ```
 dapr invokeGet --app-id serviceb --method catalogitems
 ```
+**TODO** remove dapr invokeGet
+
 Or you can directly send a request to the HTTP listening port of the sidecar using `curl`:
 ```
 curl http://localhost:3500/v1.0/invoke/serviceb/method/catalogitems
 ```
 
 In the next section, we'll look at using the native .NET SDK to make service invocation calls.
+
+### mTLS
+
+### Configuring policiess... retries...
+
 
 ### Using the .NET SDK
 
@@ -91,10 +98,82 @@ var result = await daprClient.InvokeMethodAsync<IEnumerable<CatalogItem>>(
 
 ## Reference case: eShopOnDapr
 
-[Really quick intro on specific <BuildingBlock> stuff in eShop]
+There are two places in the eShopOnDapr architecture where Dapr service invocation is used. First of all, when the frontend makes a request on the API gateway (implemented using Envoy), the gateway uses service invocation to forward the request to a backend service using a Dapr sidecar. Secondly, the Web Shopping Aggregator service makes calls to backend services using the Dapr .NET SDK.
 
-### Service Invocation in eShopOnDapr
+> **TODO** Add diagram.
 
+### Service Invocation with Envoy
+
+In the original eShopOnContainers solution, Envoy forwards incoming HTTP requests from the frontends directly to the appropriate backend service. A Dapr sidecar is added to the Envoy proxy in eShopOnDapr to get the benefits offered by Dapr Service Invocation such as mTLS and observability.
+
+To make Envoy forward HTTP requests to its Dapr sidecar container, a `dapr` cluster is added to the Envoy configuration. The Dapr sidecar address and HTTP listening port are used to configure the cluster host:
+
+``` yaml
+clusters:
+- name: dapr
+  connect_timeout: 0.25s
+  type: strict_dns
+  lb_policy: round_robin
+  hosts:
+  - socket_address:
+    address: 127.0.0.1
+    port_value: 3500
+```
+
+Envoy routes are used to match the incoming requests and rewrite them as calls to the Dapr sidecar:
+
+``` yaml
+- name: "c-short"
+  match:
+    prefix: "/c/"
+  route:
+    auto_host_rewrite: true
+    prefix_rewrite: "/v1.0/invoke/catalog-api/method/"
+    cluster: dapr
+```
+
+For example, consider the scenario where the frontend wants to retrieve a list of catalog items. The Catalog API provides an endpoint for getting the catalog items:
+
+``` c#
+[Route("api/v1/[controller]")]
+[ApiController]
+public class CatalogController : ControllerBase
+{
+    ...
+
+    [HttpGet]
+    [Route("items")]
+    public async Task<IActionResult> ItemsAsync(
+        [FromQuery]int pageSize = 10,
+        [FromQuery]int pageIndex = 0)
+    {
+        ...
+    }
+```
+
+First the frontend makes the HTTP call to the Envoy API gateway. This behavior hasn't changed in eShopOnDapr compared to eShopOnContainers.
+
+```
+GET http://<api-gateway>/c/api/catalog/items?pageSize=20
+```
+
+Envoy matches the route, rewrites the HTTP request and makes a call to the `invoke` API of its Dapr sidecar:
+
+```
+GET http://127.0.0.1:3500/v1.0/invoke/catalog-api/method/api/v1/catalog/items?pageSize=20
+```
+
+The sidecar takes care of service discovery and sends the request to the Catalog API sidecar. Finally, the Catalog API sidecar will call the Catalog API to get the catalog items and the response will be returned:
+
+```
+GET http://127.0.0.1/api/v1/catalog/items?pageSize=20
+```
+
+### Service Invocation with the .NET SDK
+
+Most calls from the eShop frontend can be forwarded to a single backend service by the API gateway. Some scenarios however require multiple backend services to work together to complete a request from the frontend. In such scenarios, eShop uses the Web Shopping Aggregator service to mediate the work being done by the different services. For example, when you add an item to your shopping basket.
+
+[TODO update basket call example]
 
 ``` c#
 var result = await daprClient.InvokeMethodAsync<>(
@@ -110,17 +189,20 @@ var result = await daprClient.InvokeMethodAsync<>(
     });
 ``` 
 
+### Authorization
 
-TODO Sequence diagram of update basket flow
+[TODO Access token]
 
-…
-
-
-### Compared to eShopOnContainers
-
-…
+The Envoy API Gateway automatically includes the HTTP headers in the call to the sidecar. When using the .NET SDK however, we need to specify the headers explicitly.
 
 ## Summary
+
+Benefits
+
+- Service discovery instead of configuration
+- mTLS
+- Observability
+- gRPC performance
 
 ### References
 

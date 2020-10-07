@@ -3,8 +3,26 @@
   items:
     - name: Introduction to porting apps to .NET Core
       href: introduction.md
+      items:
+        - name: Migration considerations
+          href: migration-considerations.md
+        - name: Migrating to ASP.NET Core 2.1
+          href: migrate-aspnet-core-2-1.md
+        - name: Choosing the right .NET Core version
+          href: choose-net-core-version.md
+        - name: Strategies for migrating incrementally
+          href: incremental-migration-strategies.md
+        - name: Strategies for migrating ASP.NET Web Forms apps
+          href: migrating-web-forms.md
+        - name: Deployment strategies
+          href: deployment-strategies.md
+        - name: Additional migration resources
+          href: additional-migration-resources.md
     - name: Architectural differences between ASP.NET MVC and ASP.NET Core
       href: architectural-differences.md
+      items:
+        - name: App startup differences
+        - href: app-startup-differences
     - name: Migrating large ASP.NET solutions
       href: migrating-large-solutions.md
     - name: Example migration of eShop project

@@ -9,9 +9,14 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Introduced version |
 | - | - |
+| [JsonSerializer.Deserialize requires single-character string](#jsonserializerdeserialize-requires-single-character-string) | 5.0 |
 | [BinaryFormatter.Deserialize rewraps some exceptions in SerializationException](#binaryformatterdeserialize-rewraps-some-exceptions-in-serializationexception) | 5.0 |
 
-## .NET Core 5.0
+## .NET 5.0
+
+[!INCLUDE [deserializing-json-into-char-requires-single-character](../../../includes/core-changes/serialization/5.0/deserializing-json-into-char-requires-single-character.md)]
+
+***
 
 [!INCLUDE [binaryformatter-deserialize-rewraps-exceptions](../../../includes/core-changes/serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md)]
 

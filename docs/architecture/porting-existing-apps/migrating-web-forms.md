@@ -16,6 +16,7 @@ ms.date: 11/13/2020
 ## References
 
 - [Free e-book: Blazor for ASP.NET Web Forms Developers](https://devblogs.microsoft.com/aspnet/blazor-aspnet-webforms-ebook/)
+- [Blazor Web Forms Components (Community Project)](https://fritzandfriends.github.io/BlazorWebFormsComponents/)
 
 >[!div class="step-by-step"]
 >[Previous](incremental-migration-strategies.md)

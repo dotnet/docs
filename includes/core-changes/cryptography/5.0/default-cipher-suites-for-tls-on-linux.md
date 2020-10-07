@@ -1,4 +1,4 @@
-### New default TLS CipherSuites for .NET on Linux
+### Default TLS cipher suites for .NET on Linux
 
 .NET, on Linux, now respects the OpenSSL configuration for default cipher suites when doing TLS/SSL via the <xref:System.Net.Security.SslStream> class or higher-level operations, such as HTTPS via the <xref:System.Net.Http.HttpClient> class. When default cipher suites aren't explicitly configured, .NET on Linux uses a tightly restricted list of permitted cipher suites.
 

@@ -8,6 +8,7 @@ ms.date: 11/13/2020
 # Strategies for migrating incrementally
 
 *Notes*:
+
 - 4.5 -> 4.7.2 -> Core 2.1 -> Core 3.1 vs. 4.5 -> Core 3.1
 - .NET 5 readiness - cover differences between 3.1 and 5
 

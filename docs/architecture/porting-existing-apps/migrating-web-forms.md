@@ -8,6 +8,7 @@ ms.date: 11/13/2020
 # Strategies for migrating ASP.NET Web Forms apps
 
 *Notes*:
+
 - Not directly supported in .NET Core
 - Typically must rewrite UI (choose MVC, Razor Pages, Blazor, or SPA)
 - Business logic can usually be ported readily

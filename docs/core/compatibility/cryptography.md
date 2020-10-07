@@ -9,6 +9,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [New default TLS CipherSuites for .NET on Linux](#new-defaultl-tls-ciphersuites-for-net-on-linux) | 5.0 |
 | [System.Security.Cryptography APIs not supported on Blazor WebAssembly](#systemsecuritycryptography-apis-not-supported-on-blazor-webassembly) | 5.0 |
 | [System.Security.Cryptography.Oid is functionally init-only](#systemsecuritycryptographyoid-is-functionally-init-only) | 5.0 |
 | [BEGIN TRUSTED CERTIFICATE syntax no longer supported on Linux](#begin-trusted-certificate-syntax-no-longer-supported-for-root-certificates-on-linux) | 3.0 |
@@ -19,6 +20,10 @@ The following breaking changes are documented on this page:
 | [Boolean parameter of SignedCms.ComputeSignature is respected](#boolean-parameter-of-signedcmscomputesignature-is-respected) | 2.1 |
 
 ## .NET 5.0
+
+[!INCLUDE [new-default-cipher-suites-for-tls-on-linux](../../../includes/core-changes/cryptography/5.0/new-default-cipher-suites-for-tls-on-linux.md)]
+
+***
 
 [!INCLUDE[Cryptography APIs not supported on Blazor WebAssembly](~/includes/core-changes/cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md)]
 

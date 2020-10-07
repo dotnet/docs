@@ -36,8 +36,8 @@ This section shows the options for the wfc.exe workflow command-line compiler.
 
                       Windows Workflow Compiler Options
 
-    wfc.exe <Xoml file list> /target:assembly [<vb/cs file list>] [/language:...] 
-            [/out:...] [/reference:...] [/library:...] [/debug...] [/nocode...] 
+    wfc.exe <Xoml file list> /target:assembly [<vb/cs file list>] [/language:...]
+            [/out:...] [/reference:...] [/library:...] [/debug...] [/nocode...]
              [/checktypes...] [/resource:<resource info>]
 
                             - OUTPUT FILE -

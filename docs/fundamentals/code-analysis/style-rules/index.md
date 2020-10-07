@@ -30,8 +30,22 @@ The following table list all the code style rules by ID and options, if any.
 > | Rule ID | Title | Option |
 > | - | - | - |
 > | [IDE0003](ide0003-ide0009.md) | Remove 'this' or 'Me' qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
+> | [IDE0007](ide0007-ide0008.md) | Use 'var' instead of explicit type | [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)<br/> [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)<br/> [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)<br/> |
+> | [IDE0008](ide0007-ide0008.md) | Use explicit type instead of 'var' | [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)<br/> [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)<br/> [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)<br/> |
 > | [IDE0009](ide0003-ide0009.md) | Add 'this' or 'Me' qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
+> | [IDE0011](ide0011.md) | Add braces | [csharp_prefer_braces](ide0011.md#csharp_prefer_braces) |
+> | [IDE0016](ide0016.md) | Use throw expression | [csharp_style_throw_expression](ide0016.md#csharp_style_throw_expression) |
 > | [IDE0017](ide0017.md) | Use object initializers | [dotnet_style_object_initializer](ide0017.md#dotnet_style_object_initializer) |
+> | [IDE0018](ide0018.md) | Inline variable declaration | [csharp_style_inlined_variable_declaration](ide0018.md#csharp_style_inlined_variable_declaration) |
+> | [IDE0019](ide0019.md) | Use pattern matching to avoid 'as' followed by a 'null' check | [csharp_style_pattern_matching_over_as_with_null_check](ide0019.md#csharp_style_pattern_matching_over_as_with_null_check) |
+> | [IDE0020](ide0020.md) | Use pattern matching to avoid 'is' check followed by a cast | [csharp_style_pattern_matching_over_is_with_cast_check](ide0020.md#csharp_style_pattern_matching_over_is_with_cast_check) |
+> | [IDE0021](ide0021.md) | Use expression body for constructors | [csharp_style_expression_bodied_constructors](ide0021.md#csharp_style_expression_bodied_constructors) |
+> | [IDE0022](ide0022.md) | Use expression body for methods | [csharp_style_expression_bodied_methods](ide0022.md#csharp_style_expression_bodied_methods) |
+> | [IDE0023](ide0023-ide0024.md) | Use expression body for conversion operators | [csharp_style_expression_bodied_operators](ide0023-ide0024.md#csharp_style_expression_bodied_operators) |
+> | [IDE0024](ide0023-ide0024.md) | Use expression body for operators | [csharp_style_expression_bodied_operators](ide0023-ide0024.md#csharp_style_expression_bodied_operators) |
+> | [IDE0025](ide0025.md) | Use expression body for properties | [csharp_style_expression_bodied_properties](ide0025.md#csharp_style_expression_bodied_properties) |
+> | [IDE0026](ide0026.md) | Use expression body for indexers | [csharp_style_expression_bodied_indexers](ide0026.md#csharp_style_expression_bodied_indexers) |
+> | [IDE0027](ide0027.md) | Use expression body for accessors | [csharp_style_expression_bodied_accessors](ide0027.md#csharp_style_expression_bodied_accessors) |
 > | [IDE0028](ide0028.md) | Use collection initializers | [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer) |
 > | [IDE0029](ide0029.md) | Use coalesce expression | [dotnet_style_coalesce_expression](ide0029.md#dotnet_style_coalesce_expression) |
 > | [IDE0031](ide0031.md) | Use null propagation | [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation) |
@@ -39,18 +53,31 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0033](ide0033.md) | Use explicitly provided tuple name | [dotnet_style_explicit_tuple_names](ide0033.md#dotnet_style_explicit_tuple_names) |
 > | [IDE0036](ide0036.md) | Order modifiers | [csharp_preferred_modifier_order](ide0036.md#csharp_preferred_modifier_order)<br/> [visual_basic_preferred_modifier_order](ide0036.md#visual_basic_preferred_modifier_order)<br/> |
 > | [IDE0037](ide0037.md) | Use inferred member name | [dotnet_style_prefer_inferred_tuple_names](ide0037.md#dotnet_style_prefer_inferred_tuple_names)<br/> [dotnet_style_prefer_inferred_anonymous_type_member_names](ide0037.md#dotnet_style_prefer_inferred_anonymous_type_member_names) |
+> | [IDE0039](ide0039.md) | Use local function instead of lambda | [csharp_style_pattern_local_over_anonymous_function](ide0039.md#csharp_style_pattern_local_over_anonymous_function) |
 > | [IDE0040](ide0040.md) | Add accessibility modifiers | [dotnet_style_require_accessibility_modifiers](ide0040.md#dotnet_style_require_accessibility_modifiers) |
 > | [IDE0041](ide0041.md) | Use is null check | [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method) |
+> | [IDE0042](ide0042.md) | Deconstruct variable declaration | [csharp_style_deconstructed_variable_declaration](ide0042.md#csharp_style_deconstructed_variable_declaration) |
 > | [IDE0044](ide0044.md) | Add readonly modifier | [dotnet_style_readonly_field](ide0044.md#dotnet_style_readonly_field) |
 > | [IDE0045](ide0045.md) | Use conditional expression for assignment | [dotnet_style_prefer_conditional_expression_over_assignment](ide0045.md#dotnet_style_prefer_conditional_expression_over_assignment) |
 > | [IDE0046](ide0046.md) | Use conditional expression for return | [dotnet_style_prefer_conditional_expression_over_return](ide0046.md#dotnet_style_prefer_conditional_expression_over_return) |
 > | [IDE0047](ide0047-ide0048.md) | Remove unnecessary parentheses | [dotnet_style_parentheses_in_arithmetic_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_arithmetic_binary_operators)<br/> [dotnet_style_parentheses_in_relational_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_relational_binary_operators)<br/> [dotnet_style_parentheses_in_other_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_other_binary_operators)<br/> [dotnet_style_parentheses_in_other_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_other_operators) |
 > | [IDE0048](ide0047-ide0048.md) | Add parentheses for clarity | [dotnet_style_parentheses_in_arithmetic_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_arithmetic_binary_operators)<br/> [dotnet_style_parentheses_in_relational_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_relational_binary_operators)<br/> [dotnet_style_parentheses_in_other_binary_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_other_binary_operators)<br/> [dotnet_style_parentheses_in_other_operators](ide0047-ide0048.md#dotnet_style_parentheses_in_other_operators) |
 > | [IDE0049](ide0049.md) | Use language keywords instead of framework type names for type references | [dotnet_style_predefined_type_for_locals_parameters_members](ide0049.md#dotnet_style_predefined_type_for_locals_parameters_members)<br/> [dotnet_style_predefined_type_for_member_access](ide0049.md#dotnet_style_predefined_type_for_member_access)<br/> |
+> | [IDE0053](ide0053.md) | Use expression body for lambdas | [csharp_style_expression_bodied_lambdas](ide0053.md#csharp_style_expression_bodied_lambdas) |
 > | [IDE0054](ide0054.md) | Use compound assignment | [dotnet_style_prefer_compound_assignment](ide0054.md#dotnet_style_prefer_compound_assignment) |
+> | [IDE0055](formatting-rules.md) | Fix formatting | |
+> | [IDE0056](ide0056.md) | Use index operator | [csharp_style_prefer_index_operator](ide0056.md#csharp_style_prefer_index_operator) |
+> | [IDE0057](ide0057.md) | Use range operator | [csharp_style_prefer_range_operator](ide0057.md#csharp_style_prefer_range_operator) |
 > | [IDE0058](ide0058.md) | Unused expression value | [csharp_style_unused_value_expression_statement_preference](ide0058.md#csharp_style_unused_value_expression_statement_preference)<br/> [visual_basic_style_unused_value_expression_statement_preference](ide0058.md#visual_basic_style_unused_value_expression_statement_preference) |
 > | [IDE0059](ide0059.md) | Unnecessary value assignment | [csharp_style_unused_value_assignment_preference](ide0059.md#csharp_style_unused_value_assignment_preference)<br/> [visual_basic_style_unused_value_assignment_preference](ide0059.md#visual_basic_style_unused_value_assignment_preference) |
 > | [IDE0060](ide0060.md) | Remove unused parameter | [dotnet_code_quality_unused_parameters](ide0060.md#dotnet_code_quality_unused_parameters) |
+> | [IDE0061](ide0061.md) | Use expression body for local functions | [csharp_style_expression_bodied_local_functions](ide0061.md#csharp_style_expression_bodied_local_functions) |
+> | [IDE0062](ide0062.md) | Make local function static | [csharp_prefer_static_local_function](ide0062.md#csharp_prefer_static_local_function) |
+> | [IDE0063](ide0063.md) | Use simple 'using' statement | [csharp_prefer_simple_using_statement](ide0063.md#csharp_prefer_simple_using_statement) |
+> | [IDE0065](ide0065.md) | 'using' directive placement | [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement) |
+> | [IDE0066](ide0066.md) | Use switch expression | [csharp_style_prefer_switch_expression](ide0066.md#csharp_style_prefer_switch_expression) |
+> | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
+> | [IDE1006](naming-rules.md) | Naming styles | |
 
 ## Legend
 

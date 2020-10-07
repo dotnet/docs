@@ -20,7 +20,7 @@ The new APIs include:
 
 ## Prerequisites
 
-The platform compatibility analyzer is one of the Roslyn code quality analyzers. Starting in .NET 5.0, these analyzers are [included with the .NET SDK](../../fundamentals/productivity/code-analysis.md). The platform compatibility analyzer is enabled by default only for projects that target `net5.0` or a later version. However, you can [enable](/visualstudio/code-quality/ca1416.md#configurability) it for projects that target other frameworks.
+The platform compatibility analyzer is one of the Roslyn code quality analyzers. Starting in .NET 5.0, these analyzers are [included with the .NET SDK](../../fundamentals/code-analysis/overview.md). The platform compatibility analyzer is enabled by default only for projects that target `net5.0` or a later version. However, you can [enable](/visualstudio/code-quality/ca1416.md#configurability) it for projects that target other frameworks.
 
 ## How the analyzer determines platform dependency
 
@@ -376,5 +376,5 @@ All the conditional checks used in the [platform guard examples](#guard-platform
 - [Target Framework Names in .NET 5](https://github.com/dotnet/designs/blob/master/accepted/2020/net5/net5.md)
 - [Annotating platform-specific APIs and detecting its use](https://github.com/dotnet/designs/blob/master/accepted/2020/platform-checks/platform-checks.md)
 - [Annotating APIs as unsupported on specific platforms](https://github.com/dotnet/designs/blob/master/accepted/2020/platform-exclusion/platform-exclusion.md)
-- [CA1416 Platform compatibility analyzer](/visualstudio/code-quality/ca1416)
+- [CA1416 Platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md)
 - [.NET API analyzer](../../standard/analyzers/api-analyzer.md)

@@ -3,7 +3,7 @@ title: Collect detailed assembly loading information - .NET Core
 description: Description of how to collect assembly loading information in .NET Core
 author: elinor-fung
 ms.author: elfung
-ms.date: 09/03/2020
+ms.date: 10/07/2020
 ---
 
 # Collect detailed assembly loading information
@@ -35,43 +35,43 @@ This example uses the [assembly loading extension points sample](https://github.
 
 ### Collect the trace
 
-1. Navigate to the directory with the downloaded sample. Build the application with:
+01. Navigate to the directory with the downloaded sample. Build the application with:
 
     ```console
     dotnet build
     ```
 
-1. Launch the application with arguments indicating that it should pause, waiting for a key press. On resuming, it will attempt to load the assembly in the default `AssemblyLoadContext` - without the handling necessary for a successful load. Navigate to the output directory and run:
+01. Launch the application with arguments indicating that it should pause, waiting for a key press. On resuming, it will attempt to load the assembly in the default `AssemblyLoadContext` - without the handling necessary for a successful load. Navigate to the output directory and run:
 
     ```console
-    AssemblyLoading /d default
+    AssemblyLoading.exe /d default
     ```
 
-1. Find the application's process ID.
+01. Find the application's process ID.
 
     ```console
     dotnet-trace ps
     ```
 
-    The output will list the availabe processes. For example:
+    The output will list the available processes. For example:
 
     ```console
-    35832 AssemblyLoading C:\samples\core\extensions\AssemblyLoading\AssemblyLoading\bin\Debug\net5.0\AssemblyLoading.exe
+    35832 AssemblyLoading C:\src\AssemblyLoading\bin\Debug\net5.0\AssemblyLoading.exe
     ```
 
-1. Attach `dotnet-trace` to the running application.
+01. Attach `dotnet-trace` to the running application.
 
     ```console
     dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:4 --process-id 35832
     ```
 
-1. In the window running the application, press any key to let the program continue. Tracing will automatically stop once the application exits.
+01. In the window running the application, press any key to let the program continue. Tracing will automatically stop once the application exits.
 
 ### View the trace
 
 Open the collected trace in [PerfView](https://github.com/microsoft/perfview) and open the Events view. Filter the events list to `Microsoft-Windows-DotNETRuntime/AssemblyLoader` events.
 
-![PerfView assembly loader filter image](media/collect-details/assembly-loader-filter.png)
+:::image type="content" source="media/collect-details/assembly-loader-filter.png" alt-text="PerfView assembly loader filter image":::
 
 All assembly loads that occurred in the application after tracing started will be shown. To inspect the load operation for the assembly of interest for this example - `MyLibrary`, we can do some more filtering.
 
@@ -79,12 +79,12 @@ All assembly loads that occurred in the application after tracing started will b
 
 Filter the view to the [`Start` and `Stop` events](assembly-loader-events.md#basic) under `Microsoft-Windows-DotNETRuntime/AssemblyLoader` using the event list on the left. Add the columns `AssemblyName`, `ActivityID`, and `Success` to the view. Filter to events containing `MyLibrary`.
 
-![PerfView Start and Stop events image](media/collect-details/start-stop.png)
+:::image type="content" source="media/collect-details/start-stop.png" alt-text="PerfView Start and Stop events image":::
 
-| Event Name           | AssemblyName                                    | ActivityID   | Success      |
-|----------------------|-------------------------------------------------|--------------|--------------|
-| AssemblyLoader/Start | MyLibrary, Culture=neutral, PublicKeyToken=null | //1/2/       |              |
-| AssemblyLoader/Stop  | MyLibrary, Culture=neutral, PublicKeyToken=null | //1/2/       | False        |
+| Event Name             | AssemblyName                                      | ActivityID | Success |
+| ---------------------- | ------------------------------------------------- | ---------- | ------- |
+| `AssemblyLoader/Start` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | //1/2/     |         |
+| `AssemblyLoader/Stop`  | `MyLibrary, Culture=neutral, PublicKeyToken=null` | //1/2/     | False   |
 
 You should see one `Start`/`Stop` pair with `Success=False` on the `Stop` event, indicating the load operation failed. Note that the two events have the same activity ID. The activity ID can be used to filter all the other assembly loader events to just the ones corresponding to this load operation.
 
@@ -92,14 +92,14 @@ You should see one `Start`/`Stop` pair with `Success=False` on the `Stop` event,
 
 For a more detailed breakdown of the load operation, filter the view to the [`ResolutionAttempted` events](assembly-loader-events.md#resolution-steps) under `Microsoft-Windows-DotNETRuntime/AssemblyLoader` using the event list on the left. Add the columns `AssemblyName`, `Stage`, and `Result` to the view. Filter to events with the activity ID from the `Start`/`Stop` pair.
 
-![PerfView ResolutionAttempted events image](media/collect-details/resolution-attempted.png)
+:::image type="content" source="media/collect-details/resolution-attempted.png" alt-text="PerfView ResolutionAttempted events image":::
 
-| Event Name                         | AssemblyName                                    | Stage                             | Result           |
-|------------------------------------|-------------------------------------------------|-----------------------------------|------------------|
-| AssemblyLoader/ResolutionAttempted | MyLibrary, Culture=neutral, PublicKeyToken=null | FindInLoadContext                 | AssemblyNotFound |
-| AssemblyLoader/ResolutionAttempted | MyLibrary, Culture=neutral, PublicKeyToken=null | ApplicationAssemblies             | AssemblyNotFound |
-| AssemblyLoader/ResolutionAttempted | MyLibrary, Culture=neutral, PublicKeyToken=null | AssemblyLoadContextResolvingEvent | AssemblyNotFound |
-| AssemblyLoader/ResolutionAttempted | MyLibrary, Culture=neutral, PublicKeyToken=null | AppDomainAssemblyResolveEvent     | AssemblyNotFound |
+| Event Name                           | AssemblyName                                      | Stage                               | Result             |
+| ------------------------------------ | ------------------------------------------------- | ----------------------------------- | ------------------ |
+| `AssemblyLoader/ResolutionAttempted` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `FindInLoadContext`                 | `AssemblyNotFound` |
+| `AssemblyLoader/ResolutionAttempted` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `ApplicationAssemblies`             | `AssemblyNotFound` |
+| `AssemblyLoader/ResolutionAttempted` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `AssemblyLoadContextResolvingEvent` | `AssemblyNotFound` |
+| `AssemblyLoader/ResolutionAttempted` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `AppDomainAssemblyResolveEvent`     | `AssemblyNotFound` |
 
 The events above indicate that the assembly loader attempted to resolve the assembly by looking in the current load context, running the default probing logic for managed application assemblies, invoking handlers for the `AssemblyLoadContext.Resolving` event, and invoking handlers for the `AppDomain.AssemblyResolve`. For all of these steps, the assembly was not found.
 
@@ -107,12 +107,12 @@ The events above indicate that the assembly loader attempted to resolve the asse
 
 To see which extension points were invoked, filter the view to the [`AssemblyLoadContextResolvingHandlerInvoked` and `AppDomainAssemblyResolveHandlerInvoked` events](assembly-loader-events.md#extension-points) under `Microsoft-Windows-DotNETRuntime/AssemblyLoader` using the event list on the left. Add the columns `AssemblyName` and `HandlerName` to the view. Filter to events with the activity ID from the `Start`/`Stop` pair.
 
-![PerfView extension point events image](media/collect-details/extension-point.png)
+:::image type="content" source="media/collect-details/extension-point.png" alt-text="PerfView extension point events image":::
 
-| Event Name                                                | AssemblyName                                    | HandlerName                    |
-|-----------------------------------------------------------|-------------------------------------------------|--------------------------------|
-| AssemblyLoader/AssemblyLoadContextResolvingHandlerInvoked | MyLibrary, Culture=neutral, PublicKeyToken=null | OnAssemblyLoadContextResolving |
-| AssemblyLoader/AppDomainAssemblyResolveHandlerInvoked     | MyLibrary, Culture=neutral, PublicKeyToken=null | OnAppDomainAssemblyResolve     |
+| Event Name                                                  | AssemblyName                                      | HandlerName                      |
+| ----------------------------------------------------------- | ------------------------------------------------- | -------------------------------- |
+| `AssemblyLoader/AssemblyLoadContextResolvingHandlerInvoked` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `OnAssemblyLoadContextResolving` |
+| `AssemblyLoader/AppDomainAssemblyResolveHandlerInvoked`     | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `OnAppDomainAssemblyResolve`     |
 
 The events above indicate that a handler named `OnAssemblyLoadContextResolving` was invoked for the `AssemblyLoadContext.Resolving` event and a handler named `OnAppDomainAssemblyResolve` was invoked for the `AppDomain.AssemblyResolve` event.
 
@@ -126,34 +126,34 @@ AssemblyLoading /d default alc-resolving
 
 Collect and open another `.nettrace` file using the [steps from above](#collect-the-trace).
 
-Filter to the `Start` and `Stop` events for `MyLibrary` again. You should see a `Start`/`Stop` pair with another `Start`/`Stop` between them. The inner load operation represents the load triggered by the handler for `AssemblyLoadContext.Resolving` when it called `AssemblyLoadContext.LoadFromAssemblyPath`. This time, you should see `Success=True` on the `Stop` event, indicating the load operation succedded. The `ResultAssemblyPath` field shows the path of the resulting assembly.
+Filter to the `Start` and `Stop` events for `MyLibrary` again. You should see a `Start`/`Stop` pair with another `Start`/`Stop` between them. The inner load operation represents the load triggered by the handler for `AssemblyLoadContext.Resolving` when it called `AssemblyLoadContext.LoadFromAssemblyPath`. This time, you should see `Success=True` on the `Stop` event, indicating the load operation succeeded. The `ResultAssemblyPath` field shows the path of the resulting assembly.
 
-![PerfView successful Start and Stop events image](media/collect-details/start-stop-success.png)
+:::image type="content" source="media/collect-details/start-stop-success.png" alt-text="PerfView successful Start and Stop events image":::
 
-| Event Name           |                                                     AssemblyName | ActivityID | Success | ResultAssemblyPath                                                        |
-|----------------------|------------------------------------------------------------------|------------|---------|---------------------------------------------------------------------------|
-| AssemblyLoader/Start |                  MyLibrary, Culture=neutral, PublicKeyToken=null | //1/2/     |         |                                                                           |
-| AssemblyLoader/Start | MyLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null | //1/2/1/   |         |                                                                           |
-| AssemblyLoader/Stop  | MyLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null | //1/2/1/   | True    | C:\samples\AssemblyLoading\AssemblyLoading\bin\Debug\net5.0\MyLibrary.dll |
-| AssemblyLoader/Stop  |                  MyLibrary, Culture=neutral, PublicKeyToken=null | //1/2/     | True    | C:\samples\AssemblyLoading\AssemblyLoading\bin\Debug\net5.0\MyLibrary.dll |
+| Event Name             | AssemblyName                                                       | ActivityID | Success | ResultAssemblyPath                                      |
+| ---------------------- | ------------------------------------------------------------------ |------------|---------| ------------------------------------------------------- |
+| `AssemblyLoader/Start` |                  `MyLibrary, Culture=neutral, PublicKeyToken=null` | //1/2/     |         |                                                         |
+| `AssemblyLoader/Start` | `MyLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null` | //1/2/1/   |         |                                                         |
+| `AssemblyLoader/Stop`  | `MyLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null` | //1/2/1/   | True    | *C:\src\AssemblyLoading\bin\Debug\net5.0\MyLibrary.dll* |
+| `AssemblyLoader/Stop`  |                  `MyLibrary, Culture=neutral, PublicKeyToken=null` | //1/2/     | True    | *C:\src\AssemblyLoading\bin\Debug\net5.0\MyLibrary.dll* |
 
 We can then look at the `ResolutionAttempted` events with the activity ID from the outer load to determine the step at which the assembly was successfully resolved. This time, the events will show that the `AssemblyLoadContextResolvingEvent` stage was successful. The `ResultAssemblyPath` field shows the path of the resulting assembly.
 
-![PerfView successful ResolutionAttempted events image](media/collect-details/resolution-attempted-success.png)
+:::image type="content" source="media/collect-details/resolution-attempted-success.png" alt-text="PerfView successful ResolutionAttempted events image":::
 
-| Event Name                         |                                    AssemblyName | Stage                             | Result           | ResultAssemblyPath |
-|------------------------------------|-------------------------------------------------|-----------------------------------|------------------| ------------------ |
-| AssemblyLoader/ResolutionAttempted | MyLibrary, Culture=neutral, PublicKeyToken=null | FindInLoadContext                 | AssemblyNotFound |                    |
-| AssemblyLoader/ResolutionAttempted | MyLibrary, Culture=neutral, PublicKeyToken=null | ApplicationAssemblies             | AssemblyNotFound |                    |
-| AssemblyLoader/ResolutionAttempted | MyLibrary, Culture=neutral, PublicKeyToken=null | AssemblyLoadContextResolvingEvent | Success          | C:\samples\core\extensions\AssemblyLoading\AssemblyLoading\bin\Debug\net5.0\MyLibrary.dll |
+| Event Name                           | AssemblyName                                      | Stage                               | Result             | ResultAssemblyPath |
+| ------------------------------------ | ------------------------------------------------- | ----------------------------------- | ------------------ | ------------------ |
+| `AssemblyLoader/ResolutionAttempted` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `FindInLoadContext`                 | `AssemblyNotFound` |                    |
+| `AssemblyLoader/ResolutionAttempted` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `ApplicationAssemblies`             | `AssemblyNotFound` |                    |
+| `AssemblyLoader/ResolutionAttempted` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `AssemblyLoadContextResolvingEvent` | `Success`          | *C:\src\AssemblyLoading\bin\Debug\net5.0\MyLibrary.dll* |
 
 Looking at `AssemblyLoadContextResolvingHandlerInvoked` events will show that the handler named `OnAssemblyLoadContextResolving` was invoked. The `ResultAssemblyPath` field shows the path of the assembly returned by the handler.
 
-![PerfView successful extension point events image](media/collect-details/extension-point-success.png)
+:::image type="content" source="media/collect-details/extension-point-success.png" alt-text="PerfView successful extension point events image":::
 
-| Event Name                                                | AssemblyName                                    | HandlerName                    | ResultAssemblyPath |
-|-----------------------------------------------------------|-------------------------------------------------|--------------------------------|--------------------|
-| AssemblyLoader/AssemblyLoadContextResolvingHandlerInvoked | MyLibrary, Culture=neutral, PublicKeyToken=null | OnAssemblyLoadContextResolving | C:\samples\core\extensions\AssemblyLoading\AssemblyLoading\bin\Debug\net5.0\MyLibrary.dll |
+| Event Name                                                  | AssemblyName                                      | HandlerName                      | ResultAssemblyPath |
+| ----------------------------------------------------------- | ------------------------------------------------- | -------------------------------- | ------------------ |
+| `AssemblyLoader/AssemblyLoadContextResolvingHandlerInvoked` | `MyLibrary, Culture=neutral, PublicKeyToken=null` | `OnAssemblyLoadContextResolving` | *C:\src\AssemblyLoading\bin\Debug\net5.0\MyLibrary.dll* |
 
 Note that there is no longer a `ResolutionAttempted` event with the `AppDomainAssemblyResolveEvent` stage or any `AppDomainAssemblyResolveHandlerInvoked` events, as the assembly was successfully loaded before reaching the step of the loading algorithm that raises the `AppDomain.AssemblyResolve` event.
 

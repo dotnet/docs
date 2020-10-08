@@ -377,6 +377,13 @@ Console.WriteLine(repo.LastPush);
 
 Your version should now match the [finished sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient).
 
+## Sending data
+To send data to a REST service, we need to serialize the data to Json and wrap it in `StringContent` when sending:
+```
+string json = JsonSerializer.Serialize(new { data = new { foo = 42 } });
+Task<HttpResponseMessage> task = client.PostAsync($"{BaseUrl}/items/{item.Id}/subitems", new StringContent(json));
+```
+
 ## Conclusion
 
 This tutorial showed you how to make web requests, parse the result, and display properties of

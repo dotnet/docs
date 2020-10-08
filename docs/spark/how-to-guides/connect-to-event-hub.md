@@ -18,7 +18,7 @@ In this article, you will learn how to connect your [.NET for Apache Spark](http
 
 [Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about) is a big data streaming platform and event ingestion service. It is a fully managed Platform-as-a-Service (PaaS), that can easily integrate with [Apache Kafka](https://kafka.apache.org/) to give you the PaaS Kafka experience without having to manage, configure or run your own clusters.
 
-## Steps to get your application connected to Azure Event Hubs
+## Connect your application to Azure Event Hubs
 
 1. Get the Event Hubs connection string and fully qualified domain name (FQDN) for later use. For instructions, see [Get an Event Hubs connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string).
 2. Set the following configurations with details from your namespace in your code to start reading from Event Hubs for Kafka:

@@ -11,12 +11,12 @@ dev_langs:
 ---
 # Unnecessary code rules
 
- Unnecessary code rules identify different parts of the code base which are unnecessary and hence can be refactored or removed. Presence of unnecessary code indicate one of more of the following problems:
+Unnecessary code rules identify different parts of the code base which are unnecessary and hence can be refactored or removed. Presence of unnecessary code indicate one of more of the following problems:
  
- - Readability: Code which is unnecessarily degrading readability. For example, [IDE0001](ide0001.md) violations that flag unnecessary type name qualifications.
- - Maintainability: Code which is no longer used after some code refactoring and is unnecessarily being maintained. For example, [IDE0051](ide0051.md) violations that flag unused private fields, properties, events and methods.
- - Performance: Unnecessary computation which has no side effects and leads to unnecessary performance overhead. For example, [IDE0059](ide0059.md) violations that flag unused value assignments where the expression to compute value has no side effects.
- - Functionality: Functional issue in code leading to required code being rendered redundant. For example, [IDE0060](ide0060.md) violations that flag unused parameter where the method accidentally ignores an input parameter. 
+- Readability: Code which is unnecessarily degrading readability. For example, [IDE0001](ide0001.md) violations that flag unnecessary type name qualifications.
+- Maintainability: Code which is no longer used after some code refactoring and is unnecessarily being maintained. For example, [IDE0051](ide0051.md) violations that flag unused private fields, properties, events and methods.
+- Performance: Unnecessary computation which has no side effects and leads to unnecessary performance overhead. For example, [IDE0059](ide0059.md) violations that flag unused value assignments where the expression to compute value has no side effects.
+- Functionality: Functional issue in code leading to required code being rendered redundant. For example, [IDE0060](ide0060.md) violations that flag unused parameter where the method accidentally ignores an input parameter. 
 
 The rules in this section concern the following unnecessary code rules:
 

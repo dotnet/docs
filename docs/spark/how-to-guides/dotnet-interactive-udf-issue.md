@@ -46,7 +46,7 @@ These are a few important things to keep in mind while implementing UDFs in .NET
 
 ## FAQs
 
-1. **Why does my UDF referencing a custom user-defined object throws the error `Type Submission#_ is not marked as serializable`?**     
+1. **Why does my UDF referencing a custom user-defined object throws the error `Type Submission#_ is not marked as serializable`?**  
     .NET Interactive wraps each of these cells with a wrapper class of the cell submission number, to uniquely identify each cell being submitted. Now as explained in detail in [this guide](udf-guide.md), when a UDF that references a custom object is being serialized its target is also picked up for serialization, which in the case of .NET Interactive gets wrapped by the wrapper class of the cell where the custom object is defined.
     Now let's see how that affects our UDF definition in the notebook:
 
@@ -55,7 +55,7 @@ These are a few important things to keep in mind while implementing UDFs in .NET
     As can be seen in the case of `udf2_fails`, we see the error message which says Type `Submission#7` is not marked as serializable, this is because how .NET Interactive works is it wraps every object defined in a cell with its `Submission#` class which is generated on the fly and hence is not marked as `Serializable`, hence the error.
     For this reason, it is **required that a UDF referencing a custom object in it, is defined in the same cell as that object**.
 
-2. **Why Broadcast Variables don't work with .NET Interactive?**      
+2. **Why Broadcast Variables don't work with .NET Interactive?**  
     For the reasons explained above, broadcast variables don't work with .NET Interactive. It is a good idea to go through [this guide on broadcast variables](broadcast-guide.md) to get a deeper understanding of what broadcast variables are and how to use them. The reason broadcast variables don't work with interactive scenarios is because of .NET interactive's design of appending each object defined in a cell with it's cell submission class, which since is not marked serializable, fails with the same exception as shown previously.
     Let's dive a little deeper with the following example:
 

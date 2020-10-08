@@ -32,7 +32,7 @@ Each of those blocks marked by the red arrow is one cell, or one submission of c
 
 ![Working UDF](./media/dotnet-interactive/working-udf.png)
 
-## Calling a UDF on a DataFrame
+## Call a UDF on a DataFrame
 
 When calling a previously defined UDF on a `DataFrame` it is important to make sure the UDF is defined in a previously submitted cell, before calling it, as can be seen in the previous example.
 

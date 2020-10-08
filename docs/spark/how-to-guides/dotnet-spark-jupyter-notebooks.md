@@ -1,7 +1,7 @@
 ---
-title: Run Jupyter Notebooks locally
+title: Use interactive environments (Jupyter Notebooks/Visual Studio Code)
 titleSuffix: .NET for Apache Spark
-description: Run .NET for Apache Spark in Jupyter Notebooks and Visual Studio Code
+description: Use .NET for Apache Spark in interactive environments like Jupyter Notebooks, Jupyter Lab, or Visual Studio Code
 ms.author: luquinta
 author: luisquintanilla
 ms.date: 10/09/2020
@@ -9,9 +9,9 @@ ms.topic: conceptual
 ms.custom: mvc, how-to
 ---
 
-# Run .NET for Apache Spark in Jupyter Notebooks locally
+# Use .NET for Apache Spark in interactive environments
 
-In this article, you learn how to run .NET for Apache Spark jobs in Jupyter Notebooks on your local computing environment.
+In this article, you learn how to run .NET for Apache Spark jobs in Jupyter Notebooks and Visual Studio Code on your local computing environment using .NET Interactive.
 
 ## About Jupyter
 

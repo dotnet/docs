@@ -69,7 +69,7 @@ There are two support tracks for releases:
 
   * .NET Core 2.1 was released in May 2018 and was deemed an LTS release in August  2018.
   * .NET Core 3.1 was the next LTS release and was released in December  2019.
-  * Because August  2021 (3 years) is later than December  2020 (one year after the 3.1 release), .NET Core 2.1 is supported through August 2021.
+  * Because August 2021 (3 years) is later than December  2020 (one year after the 3.1 release), .NET Core 2.1 is supported through August 2021.
 
 Releases alternate between LTS and Current, so it's possible for an earlier release to be supported longer than a later release. For example, .NET Core 2.1 is an LTS release with support through August  2021. The 3.0 release shipped more than a year later but went out of support earlier, in December  2019.
 

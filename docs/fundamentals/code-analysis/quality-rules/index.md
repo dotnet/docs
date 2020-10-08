@@ -1,5 +1,6 @@
 ---
 title: Code quality rules overview
+description: Learn about all of the available code quality rules for code analysis.
 ms.date: 09/01/2020
 ms.topic: reference
 author: mikadumont
@@ -153,11 +154,13 @@ The following table lists code quality analysis rules.
 > | [CA2214: Do not call overridable methods in constructors](ca2214.md) | When a constructor calls a virtual method, the constructor for the instance that invokes the method may not have executed. |
 > | [CA2215: Dispose methods should call base class dispose](ca2215.md) | If a type inherits from a disposable type, it must call the Dispose method of the base type from its own Dispose method. |
 > |[CA2216: Disposable types should declare finalizer](ca2216.md) | A type that implements System.IDisposable and has fields that suggest the use of unmanaged resources does not implement a finalizer, as described by Object.Finalize. |
-> | [CA2217: Do not mark enums with FlagsAttribute](ca2217.md) |An externally visible enumeration is marked by using FlagsAttribute, and it has one or more values that are not powers of two or a combination of the other defined values on the enumeration. |
+> | [CA2218: Override GetHashCode on overriding Equals](ca2218.md) | A public type overrides <xref:System.Object.Equals%2A?displayProperty=fullName> but does not override <xref:System.Object.GetHashCode%2A?displayProperty=fullName>. |
+> | [CA2217: Do not mark enums with FlagsAttribute](ca2217.md) | An externally visible enumeration is marked by using FlagsAttribute, and it has one or more values that are not powers of two or a combination of the other defined values on the enumeration. |
 > | [CA2219: Do not raise exceptions in exception clauses](ca2219.md) | When an exception is raised in a finally or fault clause, the new exception hides the active exception. When an exception is raised in a filter clause, the run time silently catches the exception. This makes the original error difficult to detect and debug. |
+> | [CA2224: Override equals on overloading operator equals](ca2224.md) | A public type implements the equality operator but doesn't override <xref:System.Object.Equals%2A?displayProperty=fullName>. |
 > | [CA2225: Operator overloads have named alternates](ca2225.md) |An operator overload was detected, and the expected named alternative method was not found. The named alternative member provides access to the same functionality as the operator and is provided for developers who program in languages that do not support overloaded operators. |
 > | [CA2226: Operators should have symmetrical overloads](ca2226.md) | A type implements the equality or inequality operator and does not implement the opposite operator. |
-> |[CA2227: Collection properties should be read only](ca2227.md) |A writable collection property allows a user to replace the collection with a different collection. A read-only property stops the collection from being replaced but still allows the individual members to be set. |
+> |[CA2227: Collection properties should be read only](ca2227.md) | A writable collection property allows a user to replace the collection with a different collection. A read-only property stops the collection from being replaced but still allows the individual members to be set. |
 > | [CA2229: Implement serialization constructors](ca2229.md) | To fix a violation of this rule, implement the serialization constructor. For a sealed class, make the constructor private; otherwise, make it protected. |
 > | [CA2231: Overload operator equals on overriding ValueType.Equals](ca2231.md) | A value type overrides Object.Equals but does not implement the equality operator. |
 > | [CA2234: Pass System.Uri objects instead of strings](ca2234.md) | A call is made to a method that has a string parameter whose name contains "uri", "URI", "urn", "URN", "url", or "URL". The declaring type of the method contains a corresponding method overload that has a System.Uri parameter. |

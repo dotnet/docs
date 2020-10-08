@@ -1,5 +1,5 @@
 ---
-title: Connect to SQL server locally from .NET for Apache Spark
+title: Connect .NET for Apache Spark to SQL Server
 description: Learn how to connect to an SQL server instance from your .NET for Apache Spark application.
 ms.date: 09/24/2020
 ms.topic: conceptual

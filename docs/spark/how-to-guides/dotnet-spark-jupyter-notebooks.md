@@ -17,7 +17,7 @@ In this article, you learn how to run .NET for Apache Spark jobs in Jupyter Note
 
 [Jupyter](https://jupyter.org/) is an open-source, cross-platform computing environment that provides a way for users to prototype and develop applications interactively. You can interact with Jupyter through a wide variety of interfaces such as Jupyter Notebooks, Jupyter Lab, and Visual Studio Code.
 
-In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive), a .NET global tool, provides a kernel for writing .NET code (C#/F#) in interactive computing environments such as Jupyter Notebooks.
+In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive), a .NET Core global tool, provides a kernel for writing .NET code (C#/F#) in interactive computing environments such as Jupyter Notebooks.
 
 ## Prerequisites
 
@@ -35,10 +35,10 @@ To work with Jupyter Notebooks, you'll need two things.
 1. Download `Microsoft.Spark` NuGet package.
     1. Navigate to the [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) NuGet package page.
 
-    > [!IMPORTANT]
-    > By default, the latest version of the package is downloaded. **Make sure that the version you download is the same as your Apache Spark .NET Worker.**
+        > [!IMPORTANT]
+        > By default, the latest version of the package is downloaded. **Make sure that the version you download is the same as your Apache Spark .NET Worker.**
 
-    1. In the **Info** pane, select **Download package**. Doing so downloads the latest version of the package to a file with a name similar to  *microsoft.spark.<PACKAGE-VERSION>.nupkg*.
+    1. In the **Info** pane, select **Download package**. Doing so downloads the latest version of the package to a file with a name similar to  *microsoft.spark.[PACKAGE-VERSION].nupkg*.
     1. Unzip the recently downloaded package. The unzipped directory should contain a subdirectory called *jars*. Take note of the path since it's used at a later time.
 
 ## Start .NET for Apache Spark in debug mode

@@ -55,7 +55,7 @@ spark-submit \
 
 ## Start Jupyter
 
-You can use different interfaces to interact with Jupyter Notebooks. For a browser-based interface, use Jupyter Notebooks and Jupyter Lab. For a local editor experience, use Visual Studio Code.
+You can use different interfaces to interact with Jupyter. For a browser-based interface, use Jupyter Notebooks or Jupyter Lab. For a local editor experience, use Visual Studio Code.
 
 ### Jupyter Notebooks & Jupyter lab
 

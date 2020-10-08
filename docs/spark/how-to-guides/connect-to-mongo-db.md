@@ -78,7 +78,8 @@ In order to run your .NET for Apache Spark application, you should define the `m
 spark-submit --master local --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.0 --class org.apache.spark.deploy.dotnet.DotnetRunner microsoft-spark-<version>.jar yourApp.exe
 ```
 
-> Note: Make sure to include the package version in accordance with the version of Spark being run.
+> [!NOTE]
+> Make sure to include the package version in accordance with the version of Spark being run.
 
 The result as displayed is the DataFrame (`df`) as shown below:
 

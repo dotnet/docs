@@ -1,5 +1,4 @@
-<h2 id="utf-7-code-paths-are-obsolete"></h2>
-### SYSLIB0001: UTF-7 code paths are obsolete
+<h2 id="utf-7-code-paths-are-obsolete"><SYSLIB0001: UTF-7 code paths are obsolete></h2>
 
 The UTF-7 encoding is no longer in wide use among applications, and many specs now [forbid its use](https://security.stackexchange.com/a/68609/3573) in interchange. It's also occasionally [used as an attack vector](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=utf-7) in applications that don't anticipate encountering UTF-7-encoded data. Microsoft warns against use of <xref:System.Text.UTF7Encoding?displayProperty=nameWithType> because it doesn't provide error detection.
 

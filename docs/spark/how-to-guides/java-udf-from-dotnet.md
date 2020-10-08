@@ -1,5 +1,5 @@
 ---
-title: Invoking Java UDFs from .NET for Apache Spark application
+title: Invoke Java UDFs from .NET for Apache Spark application
 description: Learn how to call a Java UDF from a .NET for Apache Spark application.
 ms.date: 09/25/2020
 ms.topic: conceptual

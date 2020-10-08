@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
 
-# Calling a Java UDF from your .NET for Apache Spark application
+# Call a Java UDF from your .NET for Apache Spark application
 
 In this article, you learn how to call a Java User-Defined Function (UDF) from your [.NET for Apache Spark](https://github.com/dotnet/spark) application.
 

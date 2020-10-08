@@ -46,7 +46,7 @@ namespace toll_calculator
                 (true, TimeBand.Daytime, _) => 1.5m,
                 (true, TimeBand.MorningRush, true) => 2.0m,
                 (true, TimeBand.EveningRush, false) => 2.0m,
-                (_, _, _) => 1.0m,
+                _ => 1.0m,
             };
         // </SnippetFinalTuplePattern>
 

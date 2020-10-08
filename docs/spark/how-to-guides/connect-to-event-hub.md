@@ -85,7 +85,8 @@ In order to run your .NET for Apache Spark application, you should define the `s
 spark-shell --packages org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.5
 ```
 
-> Note: Make sure to include the package version in accordance with the version of Spark being run.
+> [!NOTE]
+> Make sure to include the package version in accordance with the version of Spark being run.
 
 ## Next steps
 

@@ -110,7 +110,7 @@ The following example checks the value of the **Release** entry in the registry 
 
 :::code language="csharp" source="snippets/csharp/versions-installed.cs" id="2":::
 
-:::code language="visual-basic" source="snippets/visual-basic/versions-installed.vb" id="2":::
+:::code language="vb" source="snippets/visual-basic/versions-installed.vb" id="2":::
 
 The example displays output like the following:
 

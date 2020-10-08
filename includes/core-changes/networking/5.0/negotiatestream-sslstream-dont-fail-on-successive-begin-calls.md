@@ -1,4 +1,4 @@
-### NegotiateStream and SslStream no longer allow successive Begin operations
+### NegotiateStream and SslStream allow successive Begin operations
 
 Error cases on security streams are handled differently and successive calls to `BeginAuthenticateAsServer` or `BeginAuthenticateAsClient` no longer fail.
 

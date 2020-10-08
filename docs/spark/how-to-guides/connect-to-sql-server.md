@@ -20,7 +20,7 @@ In this article, you learn how to connect to an SQL server instance from your [.
 3. Make sure the default port for SQL Server `1433` is allowed through the firewall.
 4. Open SQL configure manager to enable TCP/IP through the network configuration as shown below:
 
-    ![SQL server TCP/IP enable](./media/connect-external-sources/SqlServerTCPIP.png)
+    ![SQL Server TCP/IP enable](./media/connect-external-sources/SqlServerTCPIP.png)
 
     Also note the value of **Listen All** in above tab under **Protocol**.
 

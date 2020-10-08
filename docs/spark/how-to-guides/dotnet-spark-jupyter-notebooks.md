@@ -27,7 +27,7 @@ In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive
 
 See the [getting started tutorial](../tutorials/get-started.md) for more information on setting up your .NET for Apache Spark environment.
 
-## Prepare .NET Interactive environment
+## Prepare environment
 
 To work with Jupyter Notebooks, you'll need two things.
 
@@ -41,7 +41,7 @@ To work with Jupyter Notebooks, you'll need two things.
     1. In the **Info** pane, select **Download package**. Doing so downloads the latest version of the package to a file with a name similar to  *microsoft.spark.[PACKAGE-VERSION].nupkg*.
     1. Unzip the recently downloaded package. The unzipped directory should contain a subdirectory called *jars*. Take note of the path since it's used at a later time.
 
-## Start .NET for Apache Spark in debug mode
+## Start .NET for Apache Spark
 
 Start .NET for Apache Spark in debug mode. This will will set up a process that will wait for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the jar for the respective version of Apache Spark you're using.
 
@@ -53,7 +53,7 @@ spark-submit \
   debug
 ```
 
-## Start Jupyter
+## Create interactive environment
 
 You can use different interfaces to interact with Jupyter. For a browser-based interface, use Jupyter Notebooks or Jupyter Lab. For a local editor experience, use VS Code.
 

@@ -1,7 +1,7 @@
 ---
 title: Connect .NET for Apache Spark to Azure Event Hubs
 description: Learn how to connect to Azure Event Hub from local .NET for Apache Spark instance.
-ms.date: 09/24/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---

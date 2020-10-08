@@ -22,9 +22,44 @@
       href: architectural-differences.md
       items:
         - name: App startup differences
-        - href: app-startup-differences
-    - name: Migrating large ASP.NET solutions
+        - href: app-startup-differences.md
+        - name: Hosting differences
+        - href: hosting-differences.md
+        - name: Serving static files
+        - href: serving-static-files.md
+        - name: Dependency injection differences
+        - href: dependency-injection-differences.md
+        - name: Middleware, modules, and handlers
+        - href: middleware-modules-handlers.md
+        - name: Configuration differences
+        - href: configuration-differences.md
+        - name: Routing differences
+        - href: routing-differences.md
+        - name: Comparing Razor Pages to ASP.NET MVC
+        - href: comparing-razor-pages-aspnet-mvc.md
+        - name: Web API differences
+        - href: webapi-differences.md
+        - name: Authentication differences
+        - href: authentication-differences.md
+        - name: Identity differences
+        - href: identity-differences.md
+        - name: Controller differences
+        - href: controller-differences.md
+        - name: Razor differences
+        - href: razor-differences.md
+        - name: SignalR differences
+        - href: signalr-differences.md
+        - name: Testing differences
+        - href: testing-differences.md
+      name: Migrating large solutions
       href: migrating-large-solutions.md
+      items:
+        - name: Identitying sequence of projects to migrate
+        - href: identify-migration-sequence.md
+        - name: Understanding and updating dependencies
+        - href: understand-update-dependencies.md
+        - name: Strategies for migrating while running in production
+        - href: strategies-migrating-in-production.md
     - name: Example migration of eShop project
       href: example-migration-eshop.md
     - name: Deployment scenarios

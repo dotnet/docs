@@ -22,7 +22,7 @@ In this article you will learn how to use User Defined Functions (UDFs) in a .NE
 Also, it is recommended to go through [this article about UDF serialization in .NET for Apache Spark](udf-guide.md) to understand what UDFs are and how they are serialized in .NET for Apache Spark.
 This guide uses Jupyter Notebooks to illustrate how to use UDFs in an interactive experience.
 
-## Defining a User-defined Function (UDF) in .NET Interactive
+## Define a UDF in .NET Interactive
 
 In the interactive experience, a cell can be thought of as the code snippet being submitted as part of one iteration of the [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). For example, take a look at the following notebook to understand what that means:
 

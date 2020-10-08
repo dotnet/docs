@@ -21,19 +21,19 @@ A .NET app is developed for and runs in one or more *implementations of .NET*. I
 
 Each implementation of .NET includes the following components:
 
-- One or more runtimes. Examples: the .NET Framework CLR and the .NET 5 CLR.
+- One or more runtimes. Examples: .NET Framework CLR, .NET 5 CLR.
 - A class library. Examples: .NET Framework Base Class Library, .NET 5 Base Class Library.
 - Optionally, one or more application frameworks. Examples: [ASP.NET](https://www.asp.net/), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) are included in the .NET Framework and .NET 5.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
 There are four .NET implementations that Microsoft supports:
 
-- .NET 5 and later versions
+- .NET 5 (including .NET Core) and later versions
 - .NET Framework
 - Mono
 - UWP
 
-Of these four, .NET 5 is now the primary implementation, the one that is the focus of ongoing development. .NET 5 is built on a single code base that supports multiple platforms and many app models, such as console apps, desktop apps, cloud services, and websites.
+.NET 5 is now the primary implementation, the one that is the focus of ongoing development. .NET 5 is built on a single code base that supports multiple platforms and many app models, such as Windows desktop apps and cross-platform console apps, cloud services, and websites.
 
 ### .NET 5
 

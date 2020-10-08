@@ -13,7 +13,7 @@ In this article, you learn how to call a Java User-Defined Function (UDF) from y
 1. How to define your Java UDFs and compile them into a jar - this step is not needed if you already have a UDF defined in a jar file. In which case, all you need is the full name of the UDF function including the package.
 2. Register and call your Java UDF in your .NET for Apache Spark application.
 
-## Define your Java UDF(s) and compile it into a jar
+## Define and compile your Java UDFs
 
 1. Create a Maven or SBT project and add the following dependencies into the project configuration file:
     1. `org.apache.spark.spark-core_2.11.<version>`

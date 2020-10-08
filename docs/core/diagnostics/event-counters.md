@@ -141,6 +141,16 @@ The `AddRequest()` method can be called from a request handler, and the `Request
 public void AddRequest() => Interlocked.Increment(ref _requestCount);
 ```
 
+To prevent torn reads (on 32-bit architectures) of the `long`-field `_requestCount` use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType>.
+
+```csharp
+_requestRateCounter = new IncrementingPollingCounter("request-rate", this, () => Volatile.Read(ref _requestCount))
+{
+	DisplayName = "Request Rate",
+	DisplayRateTimeScale = TimeSpan.FromSeconds(1)
+};
+```
+
 ## Consume EventCounters
 
 There are two primary ways of consuming EventCounters, either in-proc, or out-of-proc. The consumption of EventCounters can be distinguished into three layers of various consuming technologies.

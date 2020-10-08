@@ -1,7 +1,7 @@
 ---
-title: Use interactive environments (Jupyter/VS Code)
+title: Use Jupyter notebooks
 titleSuffix: .NET for Apache Spark
-description: Use .NET for Apache Spark in interactive environments like Jupyter Notebooks, Jupyter Lab, or Visual Studio Code (VS Code)
+description: Use .NET for Apache Spark in interactive environments like Jupyter Notebook, Jupyter Lab, or Visual Studio Code (VS Code)
 ms.author: luquinta
 author: luisquintanilla
 ms.date: 10/09/2020
@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.custom: mvc, how-to
 ---
 
-# Use .NET for Apache Spark in interactive environments
+# Use .NET for Apache Spark in Jupyter notebooks
 
-In this article, you learn how to run .NET for Apache Spark jobs in Jupyter Notebooks and Visual Studio Code (VS Code) on your local computing environment using .NET Interactive.
+In this article, you learn how to run .NET for Apache Spark jobs interactively in Jupyter Notebook and Visual Studio Code (VS Code) with .NET Interactive.
 
 ## About Jupyter
 
-[Jupyter](https://jupyter.org/) is an open-source, cross-platform computing environment that provides a way for users to prototype and develop applications interactively. You can interact with Jupyter through a wide variety of interfaces such as Jupyter Notebooks, Jupyter Lab, and VSCode.
+[Jupyter](https://jupyter.org/) is an open-source, cross-platform computing environment that provides a way for users to prototype and develop applications interactively. You can interact with Jupyter through a wide variety of interfaces such as Jupyter Notebook, Jupyter Lab, and VS Code.
 
-In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive), a .NET Core global tool, provides a kernel for writing .NET code (C#/F#) in interactive computing environments such as Jupyter Notebooks.
+In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive), a .NET Core global tool, provides a kernel for writing .NET code (C#/F#) in interactive computing environments such as Jupyter Notebook.
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ spark-submit \
   debug
 ```
 
-## Create interactive environment
+## Create notebook
 
 You can use different interfaces to interact with Jupyter. For a browser-based interface, use Jupyter Notebooks or Jupyter Lab. For a local editor experience, use VS Code.
 

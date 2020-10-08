@@ -146,8 +146,8 @@ To prevent torn reads (on 32-bit architectures) of the `long`-field `_requestCou
 ```csharp
 _requestRateCounter = new IncrementingPollingCounter("request-rate", this, () => Volatile.Read(ref _requestCount))
 {
-	DisplayName = "Request Rate",
-	DisplayRateTimeScale = TimeSpan.FromSeconds(1)
+    DisplayName = "Request Rate",
+    DisplayRateTimeScale = TimeSpan.FromSeconds(1)
 };
 ```
 

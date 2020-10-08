@@ -20,7 +20,7 @@ Although they have the benefit of simplicity, monolithic architectures face a nu
 
 ### Deployment
 
-Additionally, they require a restart of the application, which may temporarily impact availability if zero-downtime techniques are not applied while deploying. 
+Additionally, they require a restart of the application, which may temporarily impact availability if zero-downtime techniques are not applied while deploying.
 
 ### Scaling
 

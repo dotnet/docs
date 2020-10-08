@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Example migration of eShop to ASP.NET Core
 
-**PREVIEW EDITION**
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 *Notes*
 
@@ -17,8 +17,8 @@ ms.date: 11/13/2020
 - Update to PackageReference
 - Create a new ASP.NET Core application that items will migrate into
   - Migrate Global.asax items
-    - Show many examples: CORS, filters, route contraints, etc.
-    - MVC options (model binders, formatters, filters, route contraints, areas) - also discuss DI here for systems that aren't using it
+    - Show many examples: CORS, filters, route constraints, etc.
+    - MVC options (model binders, formatters, filters, route constraints, areas) - also discuss DI here for systems that aren't using it
     - Working with DI (built-in and replacing default service container)
     - Integrating Autofac in eShop to work with ASP.NET Core
   - Data access and EF

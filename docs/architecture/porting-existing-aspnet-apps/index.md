@@ -7,9 +7,9 @@ ms.date: 11/13/2020
 
 # Porting Existing ASP.NET Apps to .NET Core
 
-![cover image](./media/index/porting-existing-apps.png)
+![cover image](./media/index/porting-existing-aspnet-apps.png)
 
-**PREVIEW EDITION**
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 PUBLISHED BY
 

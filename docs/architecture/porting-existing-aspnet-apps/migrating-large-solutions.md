@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Migrating large solutions to ASP.NET Core
 
-**PREVIEW EDITION**
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 *Notes*
 See thread:

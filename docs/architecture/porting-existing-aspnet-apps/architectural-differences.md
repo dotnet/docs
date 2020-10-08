@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Architectural differences between ASP.NET MVC and ASP.NET Core
 
-**PREVIEW EDITION**
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 *Notes*
 This will be a high level comparison between the architectures of the two different types of apps which can link to existing documentation for more details (as opposed to Chapter 4, which is an example of applying the changes to eShop).

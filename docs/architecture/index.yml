@@ -41,6 +41,10 @@ landingContent:
             url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
           - text: Create and deploy a cloud-native ASP.NET Core microservice
             url: /learn/modules/microservices-aspnet-core
+          - text: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
+            url: /learn/modules/microservices-devops-aspnet-core
+          - text: Implement resiliency in a cloud-native ASP.NET Core microservice
+            url: /learn/modules/microservices-resiliency-aspnet-core
 
   # Card
   - title: Migrate .NET apps to Azure

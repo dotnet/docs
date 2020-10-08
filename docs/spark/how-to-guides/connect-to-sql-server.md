@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
 
-# Connect to SQL server locally from .NET for Apache Spark
+# Connect .NET for Apache Spark to SQL Server
 
 In this article, you learn how to connect to an SQL server instance from your [.NET for Apache Spark](https://github.com/dotnet/spark) application.
 

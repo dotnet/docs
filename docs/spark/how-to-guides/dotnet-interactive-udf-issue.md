@@ -1,7 +1,7 @@
 ---
 title: Write and call UDFs in .NET for Apache Spark interactive environments.
 description: Learn how to write and call UDFs in .NET for Apache Spark interactive shells.
-ms.date: 09/24/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---

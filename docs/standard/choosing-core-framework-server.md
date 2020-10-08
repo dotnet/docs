@@ -21,7 +21,7 @@ Use .NET Framework for your server application when:
 - Your app currently uses .NET Framework (recommendation is to extend instead of migrating).
 - Your app uses third-party .NET libraries or NuGet packages not available for .NET 5.
 - Your app uses .NET technologies that aren't available for .NET 5.
-- Your app uses a platform that doesn’t support .NET Core.
+- Your app uses a platform that doesn’t support .NET 5.
 
 ## When to choose .NET 5
 
@@ -66,10 +66,6 @@ Side-by-side installation isn’t possible with .NET Framework. It’s a Windows
 ### Current .NET Framework applications
 
 In most cases, you don’t need to migrate your existing applications to .NET 5. Instead, a recommended approach is to use .NET 5 as you extend an existing application, such as writing a new web service in ASP.NET Core.
-
-### ASP.NET Core on .NET Framework
-
-For information about support for ASP.NET Core on .NET Framework, see [.NET Core and .NET 5 Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ### Third-party libraries or NuGet packages not available for .NET 5
 

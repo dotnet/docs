@@ -50,6 +50,6 @@ The resultant `dfUdf` DataFrame had the number 5 added to each row of the input 
     +-------+
 ```
 
-## Calling a .NET UDF from Scala or Python in an Apache Spark applications
+## Call .NET UDF from Scala or Python in Apache Spark
 
 You can also register and invoke a C# UDF from an Apache Spark application written in Scala or Python using this [open source tool](https://github.com/imback82/sparkdotnetudf).

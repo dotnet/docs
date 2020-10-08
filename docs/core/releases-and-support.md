@@ -1,6 +1,6 @@
 ---
-title: .NET releases and support
-description: Learn about releases and support for .NET 5 (including .NET Core) and later versions.
+title: .NET releases, patches, and support
+description: Learn about releases, patches, and support for .NET 5 (including .NET Core) and later versions.
 ms.date: 10/07/2020
 ms.topic: overview
 ms.author: tdykstra
@@ -117,4 +117,4 @@ Community support is another great way to get help and even contribute to projec
 
 ## See also
 
-For for more information, including a list of supported date ranges for each version of .NET Core, .NET 5, and later versions, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+For for more information, including supported date ranges for each version of .NET Core and for .NET 5, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).

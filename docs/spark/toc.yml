@@ -26,7 +26,7 @@
 - name: How-to guides
   items:
   - name: Connect to data
-  - items:
+    items:
     - name: Azure Storage
       href: how-to-guides/connect-to-azure-storage.md
     - name: Event Hubs
@@ -43,8 +43,6 @@
       href: how-to-guides/databricks-deploy-methods.md    
     - name: Submit jobs to HDInsight
       href: how-to-guides/hdinsight-deploy-methods.md
-  - name: Use Jupyter notebooks
-    href: how-to-guides/dotnet-spark-jupyter-notebooks.md
   - name: User Defined Functions (UDFs)
     items: 
     - name: UDF guide
@@ -55,6 +53,8 @@
       href: how-to-guides/dotnet-interactive-udf-issue.md
     - name: Deploy worker and UDF binaries
       href: how-to-guides/deploy-worker-udf-binaries.md
+  - name: Use Jupyter notebooks
+    href: how-to-guides/dotnet-spark-jupyter-notebooks.md      
   - name: Broadcast guide
     href: how-to-guides/broadcast-guide.md
   - name: Debug your application

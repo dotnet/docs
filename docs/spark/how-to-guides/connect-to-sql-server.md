@@ -15,7 +15,7 @@ In this article, you learn how to connect to an SQL server instance from your [.
 1. Add a login user and password choosing SQL Server authentication to your SQL Server instance.
 2. Give that login user necessary permissions at the relevant database level as shown below:
 
-    ![SQL server permissions](./media/connect-external-sources/SqlServerAuth.png)
+    ![SQL Server permissions](./media/connect-external-sources/SqlServerAuth.png)
 
 3. Make sure the default port for SQL server 1433 is allowed through the firewall.
 4. Open SQL configure manager to enable TCP/IP through the network configuration as shown below:

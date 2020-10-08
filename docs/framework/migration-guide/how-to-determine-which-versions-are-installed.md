@@ -108,9 +108,9 @@ The following examples check the value of the **Release** entry to determine whe
 
 The following example checks the value of the **Release** entry in the registry to find the versions of .NET Framework 4.5-4.8 that are installed:
 
-:::code language="csharp" source="snippets/versions-installed.cs" id="2":::
+:::code language="csharp" source="snippets/csharp/versions-installed.cs" id="2":::
 
-[!code-vb[ListVersions#5](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed3.vb)]
+:::code language="visual-basic" source="snippets/visual-basic/versions-installed.vb" id="2":::
 
 The example displays output like the following:
 
@@ -166,9 +166,9 @@ Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to
 
 The following example finds the versions of .NET Framework 1-4 that are installed:
 
-:::code language="csharp" source="snippets/versions-installed.cs" id="1":::
+:::code language="csharp" source="snippets/csharp/versions-installed.cs" id="1":::
 
-[!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed1.vb)]
+:::code language="vb" source="snippets/visual-basic/versions-installed.vb" id="1":::
 
 The example displays output similar to the following:
 
@@ -177,7 +177,7 @@ v2.0.50727  2.0.50727.4927  SP2
 v3.0  3.0.30729.4926  SP2
 v3.5  3.5.30729.4926  SP1
 v4.0
-   Client  4.0.0.0
+  Client  4.0.0.0
 ```
 
 ## Find CLR versions
@@ -221,7 +221,9 @@ The .NET Framework CLR installed with .NET Framework is versioned separately. Th
   Console.WriteLine($"Version: {Environment.Version}");
   ```
 
-  [!code-vb[ListVersions](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed2.vb)]
+  ```vb
+  Console.WriteLine($"Version: {Environment.Version}")
+  ```
 
   The example displays output similar to the following:
 

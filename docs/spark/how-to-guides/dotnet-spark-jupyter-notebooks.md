@@ -1,7 +1,7 @@
 ---
-title: Use interactive environments (Jupyter Notebooks/Visual Studio Code)
+title: Use interactive environments (Jupyter/VS Code)
 titleSuffix: .NET for Apache Spark
-description: Use .NET for Apache Spark in interactive environments like Jupyter Notebooks, Jupyter Lab, or Visual Studio Code
+description: Use .NET for Apache Spark in interactive environments like Jupyter Notebooks, Jupyter Lab, or Visual Studio Code (VS Code)
 ms.author: luquinta
 author: luisquintanilla
 ms.date: 10/09/2020
@@ -11,11 +11,11 @@ ms.custom: mvc, how-to
 
 # Use .NET for Apache Spark in interactive environments
 
-In this article, you learn how to run .NET for Apache Spark jobs in Jupyter Notebooks and Visual Studio Code on your local computing environment using .NET Interactive.
+In this article, you learn how to run .NET for Apache Spark jobs in Jupyter Notebooks and Visual Studio Code (VS Code) on your local computing environment using .NET Interactive.
 
 ## About Jupyter
 
-[Jupyter](https://jupyter.org/) is an open-source, cross-platform computing environment that provides a way for users to prototype and develop applications interactively. You can interact with Jupyter through a wide variety of interfaces such as Jupyter Notebooks, Jupyter Lab, and Visual Studio Code.
+[Jupyter](https://jupyter.org/) is an open-source, cross-platform computing environment that provides a way for users to prototype and develop applications interactively. You can interact with Jupyter through a wide variety of interfaces such as Jupyter Notebooks, Jupyter Lab, and VSCode.
 
 In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive), a .NET Core global tool, provides a kernel for writing .NET code (C#/F#) in interactive computing environments such as Jupyter Notebooks.
 
@@ -55,7 +55,7 @@ spark-submit \
 
 ## Start Jupyter
 
-You can use different interfaces to interact with Jupyter. For a browser-based interface, use Jupyter Notebooks or Jupyter Lab. For a local editor experience, use Visual Studio Code.
+You can use different interfaces to interact with Jupyter. For a browser-based interface, use Jupyter Notebooks or Jupyter Lab. For a local editor experience, use VS Code.
 
 ### Jupyter Notebooks & Jupyter lab
 
@@ -79,12 +79,12 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 ### Visual Studio Code (preview)
 
 > [!IMPORTANT]
-> To use Jupyter Notebooks in Visual Studio Code, you have to install:
+> To use Jupyter Notebooks in VS Code, you have to install:
 >
->- [Visual Studio Code Insiders](https://code.visualstudio.com/insiders/)
+>- [VS Code Insiders](https://code.visualstudio.com/insiders/)
 >- [.NET Interactive Notebooks extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
 
-1. Open Visual Studio Code
+1. Open VS Code
 1. Open the command palette **View > Command Palette**
 
     The command palette appears. Enter the following command to create a new .NET Interactive notebook:

@@ -1,6 +1,6 @@
 ---
 title: Run Jupyter Notebooks locally
-desciption: Run .NET for Apache Spark in Jupyter Notebooks
+description: Run .NET for Apache Spark in Jupyter Notebooks
 titleSuffix: .NET for Apache Spark
 ms.author: luquinta
 author: luisquintanilla

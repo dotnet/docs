@@ -10,7 +10,7 @@ ms.custom: mvc,how-to
 
 In this article, you learn how to connect to an SQL server instance from your [.NET for Apache Spark](https://github.com/dotnet/spark) application.
 
-## Configure SQL server to grant your application access
+## Configure SQL Server to grant your application access
 
 1. Add a Login user and password choosing SQL server authentication to your SQL server instance.
 2. Give that login user necessary permissions at the relevant database level as shown below:

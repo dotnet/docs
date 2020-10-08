@@ -12,7 +12,7 @@ In this article, you learn how to connect to an SQL server instance from your [.
 
 ## Configure SQL Server to grant your application access
 
-1. Add a Login user and password choosing SQL server authentication to your SQL server instance.
+1. Add a login user and password choosing SQL Server authentication to your SQL Server instance.
 2. Give that login user necessary permissions at the relevant database level as shown below:
 
     ![SQL server permissions](./media/connect-external-sources/SqlServerAuth.png)

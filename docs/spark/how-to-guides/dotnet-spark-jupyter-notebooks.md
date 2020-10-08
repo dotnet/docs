@@ -80,8 +80,9 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 
 > [!IMPORTANT]
 > To use Jupyter Notebooks in Visual Studio Code, you have to install:
->    - [Visual Studio Code Insiders](https://code.visualstudio.com/insiders/) 
->    - [.NET Interactive Notebooks extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
+>
+>- [Visual Studio Code Insiders](https://code.visualstudio.com/insiders/)
+>- [.NET Interactive Notebooks extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
 
 1. Open Visual Studio Code
 1. Open the command palette **View > Command Palette**

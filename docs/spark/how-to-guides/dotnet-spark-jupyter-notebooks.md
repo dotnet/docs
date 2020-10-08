@@ -4,7 +4,7 @@ titleSuffix: .NET for Apache Spark
 description: Run .NET for Apache Spark in Jupyter Notebooks and Visual Studio Code
 ms.author: luquinta
 author: luisquintanilla
-ms.date: 10/08/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc, how-to
 ---

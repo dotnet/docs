@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
 
-# Connect to MongoDB from .NET for Apache Spark
+# Connect .NET for Apache Spark to MongoDB
 
 In this article, you learn how to connect to a MongoDB instance from your .NET for Apache Spark application.
 

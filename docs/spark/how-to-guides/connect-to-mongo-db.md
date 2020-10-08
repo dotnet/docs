@@ -50,25 +50,25 @@ In order to get .NET for Apache Spark to talk to your MongoDB instance you need 
 
 2. Use the `com.mongodb.spark.sql.DefaultSource` format is `spark.Read()` as shown below in a simple code snippet:
 
-```csharp
-class Program
-{
-    static void Main()
+    ```csharp
+    class Program
     {
-        var authURI = "mongodb+srv://<username>:<password>@<cluster_address>/<database>.<collection>?retryWrites=true&w=majority";
-        SparkSession spark = SparkSession
-            .Builder()
-            .AppName("Connect to Mongo DB example")
-            .Config("spark.mongodb.input.uri", authURI)
-            .GetOrCreate();
+        static void Main()
+        {
+            var authURI = "mongodb+srv://<username>:<password>@<cluster_address>/<database>.<collection>?retryWrites=true&w=majority";
+            SparkSession spark = SparkSession
+                .Builder()
+                .AppName("Connect to Mongo DB example")
+                .Config("spark.mongodb.input.uri", authURI)
+                .GetOrCreate();
 
-        DataFrame df = spark.Read().Format("com.mongodb.spark.sql.DefaultSource").Load();
-        df.PrintSchema();
-        df.Show();
-        spark.Stop();
+            DataFrame df = spark.Read().Format("com.mongodb.spark.sql.DefaultSource").Load();
+            df.PrintSchema();
+            df.Show();
+            spark.Stop();
+        }
     }
-}
-```
+    ```
 
 ## Run your application
 

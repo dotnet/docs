@@ -87,7 +87,3 @@ spark-shell --packages org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.5
 
 > [!NOTE]
 > Make sure to include the package version in accordance with the version of Spark being run.
-
-## Next steps
-
-* [Connect your Apache Spark application with Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-kafka-spark-tutorial)

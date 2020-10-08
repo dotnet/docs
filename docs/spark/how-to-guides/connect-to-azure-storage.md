@@ -22,7 +22,7 @@ In this article, you learn how to connect to an Azure Data Lake Storage (ADLS) G
 
     ![Final hadoop-env.cmd file](./media/connect-external-sources/hadoop-env.png)
 
-## Configure Hadoop to connect to your storage account
+## Configure your storage account in Hadoop
 
 1. Open the ADLS Gen 2 or WASB storage account you want to connect to through the [Azure portal](https://portal.azure.com) and open the **Access keys** panel under the **Settings** blade and copy the value of **Key** from under key1.
 2. Now in order to configure Hadoop to access your ADLS Gen2 account you would have to edit your `core-site.xml` (located in `%HADOOP_HOME%\etc\hadoop\` ) file which contains cluster-wide configuration. Add the following properties inside the `<configuration>` tags in this file:
@@ -45,9 +45,9 @@ In this article, you learn how to connect to an Azure Data Lake Storage (ADLS) G
     If you are trying to connect to a WASB account, replace `dfs` with `blob` in the property names. For example, `fs.azure.account.auth.type.YOUR_ACCOUNT_NAME.blob.core.windows.net`.
 3. You can test the connectivity to your Storage Account from Hadoop by running the following command from your `%HADOOP_HOME%` directory:
 
-  ```bash
-  bin\hdfs dfs -ls <URI to your account>
-  ```
+    ```bash
+    bin\hdfs dfs -ls <URI to your account>
+    ```
 
 This should display a list of all files/folders in the path provided by your URI.
 
@@ -65,24 +65,24 @@ This should display a list of all files/folders in the path provided by your URI
 2. Set the output of the command run in Step 1 to the value of environment variable `SPARK_DIST_CLASSPATH`.
 3. Now you should be able to access your ADLS or WASB storage account through Spark .NET using the abfs URI as shown in the simple example below. (For this example we use the standard [`people.json`](https://github.com/apache/spark/blob/master/examples/src/main/resources/people.json) example file provided with every Apache Spark installation.):
 
-   ```csharp
-   SparkSession spark = SparkSession
+    ```csharp
+    SparkSession spark = SparkSession
        .Builder()
        .AppName("Connect to Azure Storage locally")
        .GetOrCreate();
-   DataFrame df = spark.Read().Json("wasbs://file_system@account_name.blob.core.windows.net/path/people.json");
-   //DataFrame df = spark.Read().Json("abfss://file_system@account_name.dfs.core.windows.net/path/file.json");
-   df.Show();
-   ```
+    DataFrame df = spark.Read().Json("wasbs://file_system@account_name.blob.core.windows.net/path/people.json");
+    //DataFrame df = spark.Read().Json("abfss://file_system@account_name.dfs.core.windows.net/path/file.json");
+    df.Show();
+    ```
 
-The result as displayed is the DataFrame (`df`) as shown below:
+    The result as displayed is the DataFrame (`df`) as shown below:
 
-```text
-+----+-------+
-| age|   name|
-+----+-------+
-|null|Michael|
-|  30|   Andy|
-|  19| Justin|
-+----+-------+
-```
+    ```text
+    +----+-------+
+    | age|   name|
+    +----+-------+
+    |null|Michael|
+    |  30|   Andy|
+    |  19| Justin|
+    +----+-------+
+    ```

@@ -20,7 +20,18 @@ In this article, you learn how to call a Java User-Defined Function (UDF) from y
     2. `org.apache.spark.spark-sql_2.11.<version>`
 2. Define your Java UDF by implementing the [relevant interface](https://github.com/apache/spark/blob/master/sql/core/src/main/java/org/apache/spark/sql/api/java/UDF1.java) (according to your UDF's signature) and importing the relevant package as shown below in a simple example
 
-    ![Java UDF example](./media/invoke-external-udfs/JavaUdf.png)
+    ```java
+    package com.ScalaUdf.app; // Name of package where UDF is defined
+    import org.apache.spark.sql.api.java.UDF1; // UDF interface to implement
+
+    public class JavaUdf implements UDF1<Integer, Integer> { // Name of the Java UDF
+        private static final int serialVersionUID = 1;
+        @Override
+        public Integer call(Integer num) throws Exception { // Define logic of UDF
+            return (num + 5);
+        }
+    }
+```
 
 3. Compile and package your project to create and executable jar say `UdfApp-0.0.1.jar`.
 
@@ -31,7 +42,24 @@ In this article, you learn how to call a Java User-Defined Function (UDF) from y
 3. Use `SparkSession.Sql` to call the UDF on the table view using Spark SQL.
 A basic example to illustrate the above steps:
 
-    ![.NET for Apache Spark application](./media/invoke-external-udfs/sparkdotnetapp.png)
+    ```csharp
+    class Program
+    {
+        static void Main()
+        {
+            SparkSession spark = SparkSession
+                .Builder()
+                .AppName("Scala/Java UDFs from .NET for Apache Spark")
+                .GetOrCreate();
+            spark.Udf().RegisterJava<int>("udfAdd5", "com.ScalaUdf.app.JavaUdf"); // Register your Java UDF as 'udfAdd5'
+            DataFrame df = spark.CreateDataFrame(new int[] { 2, 5 });
+            df.CreateOrReplaceTempView("numbersData"); // Create an SQL table from the DataFrame `df`
+            DataFrame dfUdf = spark.Sql("SELECT udfAdd5(_1) As Result FROM numbersData"); // Call the registered UDF on the table
+            dfUdf.Show();
+            spark.Stop();
+        }
+    }
+    ```
 
 4. Submit this application using `spark-submit` by passing the previously compiled Java UDF jar through the `--jars` option:
 
@@ -39,16 +67,16 @@ A basic example to illustrate the above steps:
     spark-submit --master local --jars UdfApp-0.0.1.jar --class org.apache.spark.deploy.dotnet.DotnetRunner microsoft-spark-3.0.x-0.12.1.jar InterRuntimeUDFs.exe
     ```
 
-The resultant `dfUdf` DataFrame had the number 5 added to each row of the input column as defined by `JavaUdf`:
+    The resultant `dfUdf` DataFrame had the number 5 added to each row of the input column as defined by `JavaUdf`:
 
-```text
+    ```text
     +-------+
     | Result|
     +-------+
     |      7|
     |     10|
     +-------+
-```
+    ```
 
 ## Call .NET UDF from Scala or Python in Apache Spark
 

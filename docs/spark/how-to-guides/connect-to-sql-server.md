@@ -26,7 +26,7 @@ In this article, you learn how to connect to an SQL server instance from your [.
 
 5. Configure the TCP/IP port to 1433 for all required IP addresses if the `Listen All` is set to `No`. Otherwise, set the TCP Port in IPAll.
 
-    ![SQL server TCP/IP port](./media/connect-external-sources/SQLServerTCPIIPPort.png)
+    ![SQL Server TCP/IP port](./media/connect-external-sources/SQLServerTCPIIPPort.png)
 
 ## Connect to SQL Server from your application
 

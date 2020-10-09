@@ -1,5 +1,5 @@
 ---
-title: The evolution of .NET Core to .NET 5
+title: What's new in .NET 5
 description: Learn about .NET 5, a cross platform and open-source development platform that is the next evolution of .NET Core.
 ms.date: 09/02/2020
 ms.topic: overview
@@ -7,9 +7,9 @@ ms.author: dapine
 author: IEvangelist
 ---
 
-# The evolution of .NET Core to .NET 5
+# What's new in .NET 5
 
-This article details what's included in .NET 5, which is the next release of .NET Core following 3.1. The version number is 5.0 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. ASP.NET Core retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Additionally, Entity Framework Core retains the name "Core" to avoid confusing it with Entity Framework 5 and 6. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
+.NET 5 is the evolution of .NET Core. This article details what's included in .NET 5, which is the next release of .NET Core following 3.1. The version number is 5.0 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. ASP.NET Core retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Additionally, Entity Framework Core retains the name "Core" to avoid confusing it with Entity Framework 5 and 6. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
 The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It matured as an open-source project on GitHub, celebrating community contributions, and humbly improving over time.
 
@@ -41,13 +41,13 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 
 ### What .NET 5 is not
 
-.NET 5 is not a replacement for .NET Framework. There are no plans to port the following technologies from .NET Framework to .NET 5, but there are supported alternatives included in .NET 5:
+.NET 5 is not a complete replacement for .NET Framework. There are no plans to port the following technologies from .NET Framework to .NET 5, but there are supported alternatives:
 
-| Technology                             | Recommendation                                              |
-|----------------------------------------|-------------------------------------------------------------|
-| Web Forms                              | [ASP.NET Core Blazor](/aspnet/core/blazor)                  |
-| Windows Communication Foundation (WCF) | [gRPC](/aspnet/core/grpc)                                   |
-| Windows Workflow (WF)                  | [Open-source CoreWF](https://github.com/UiPath-Open/corewf) |
+| Technology                             | Recommended alternative                                                                         |
+|----------------------------------------|-------------------------------------------------------------------------------------------------|
+| Web Forms                              | ASP.NET Core [Blazor](/aspnet/core/blazor) or [Razor Pages](/aspnet/core/tutorials/razor-pages) |
+| Windows Communication Foundation (WCF) | [gRPC](/aspnet/core/grpc)                                                                       |
+| Windows Workflow (WF)                  | [Open-source CoreWF](https://github.com/UiPath-Open/corewf)                                     |
 
 ## .NET Standard
 

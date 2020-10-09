@@ -93,7 +93,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0064](ide0064.md) | Make struct fields writable | |
 > | [IDE0065](ide0065.md) | `using` directive placement | [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement) |
 > | [IDE0066](ide0066.md) | Use switch expression | [csharp_style_prefer_switch_expression](ide0066.md#csharp_style_prefer_switch_expression) |
-> | [IDE0070](ide0070.md) | Use <xref:System.HashCode.Combine?displayProperty=fullName> | |
+> | [IDE0070](ide0070.md) | Use <xref:System.HashCode.Combine%2A?displayProperty=fullName> | |
 > | [IDE0071](ide0071.md) | Simplify interpolation | [dotnet_style_prefer_simplified_interpolation](ide0071.md#dotnet_style_prefer_simplified_interpolation) |
 > | [IDE0072](ide0072.md) | Add missing cases to switch expression | |
 > | [IDE0073](ide0073.md) | Use file header | [file_header_template](ide0073.md#file_header_template) |

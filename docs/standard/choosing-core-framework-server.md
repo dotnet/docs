@@ -89,7 +89,7 @@ Some .NET Framework technologies aren't available in .NET 5. The following list 
 
 ### Platform doesn’t support .NET 5
 
-Some Microsoft or third-party platforms don’t support .NET 5. Some Azure services provide an SDK not yet available for consumption on .NET 5. In such cases, you can use the equivalent REST API instead of the client SDK.
+Some Microsoft or third-party platforms don't support .NET 5. Some Azure services provide an SDK not yet available for consumption on .NET 5. In such cases, you can use the equivalent REST API instead of the client SDK.
 
 ## See also
 

@@ -7,7 +7,7 @@ ms.technology: dotnet-standard
 ---
 # .NET architectural components
 
-A .NET app is developed for and runs in one or more *implementations of .NET*. Implementations of .NET include the .NET Framework, .NET 5 (and .NET Core), and Mono. There is an API specification common to multiple implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
+A .NET app is developed for and runs in one or more *implementations of .NET*. Implementations of .NET include the .NET Framework, .NET 5 (and .NET Core), and Mono. There is an API specification common to multiple implementations of .NET that's called .NET Standard. This article gives a brief introduction to each of these concepts.
 
 ## .NET Standard
 
@@ -37,7 +37,7 @@ There are four .NET implementations that Microsoft supports:
 
 ### .NET 5
 
-.NET 5 is a cross-platform implementation of .NET that is designed to handle server and cloud workloads at scale. It also supports other workloads, including desktop apps. It runs on Windows, macOS, and Linux. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET 5. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) all run on .NET 5.
+.NET 5 is a cross-platform implementation of .NET that is designed to handle server and cloud workloads at scale. It also supports other workloads, including desktop apps. It runs on Windows, macOS, and Linux. It implements .NET Standard, so code that targets .NET Standard can run on .NET 5. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) all run on .NET 5.
 
 For more information, see the following resources:
 

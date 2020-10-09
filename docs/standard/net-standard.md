@@ -78,7 +78,7 @@ The [`NETStandard.Library`](https://www.nuget.org/packages/NETStandard.Library/)
 
 ### Versioning
 
-The specification is not singular, but a linearly versioned set of APIs. The first version of the standard establishes a baseline set of APIs. Subsequent versions add APIs and inherit APIs defined by previous versions. There is no established provision for removing APIs from the standard.
+The specification is not singular, but a linearly versioned set of APIs. The first version of the standard establishes a baseline set of APIs. Subsequent versions add APIs and inherit APIs defined by previous versions. There is no established provision for removing APIs from the Standard.
 
 .NET Standard is not specific to any one .NET implementation, nor does it match the versioning scheme of any of those implementations.
 
@@ -146,9 +146,9 @@ Here are some problems with .NET Standard that help explain why .NET 5 is the be
 
 - Platform-unsupported exceptions at run time
 
-  The .NET Standard exposes platform-specific APIs. Your code might compile without errors and appear to be portable to any platform even if it isn't portable. When it runs on a platform that doesn’t have an implementation for a given API, you get runtime errors.
+  The .NET Standard exposes platform-specific APIs. Your code might compile without errors and appear to be portable to any platform even if it isn't portable. When it runs on a platform that doesn’t have an implementation for a given API, you get run-time errors.
 
-  **Solution in .NET 5:** The .NET 5 SDK includes analyzers and code fixers that are enabled by default. The platform compatibility analyzer detects unintentional use of APIs that aren't supported on the platforms you intend to run on. For more information, see [Platform compatibility analyzer](analyzers/platform-compat-analyzer.md).
+  **Solution in .NET 5:** The .NET 5 SDK includes code analyzers that are enabled by default. The platform compatibility analyzer detects unintentional use of APIs that aren't supported on the platforms you intend to run on. For more information, see [Platform compatibility analyzer](analyzers/platform-compat-analyzer.md).
 
 ### .NET Standard not deprecated
 

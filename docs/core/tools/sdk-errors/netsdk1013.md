@@ -17,8 +17,8 @@ To resolve this, check the spelling of your `TargetFramework` value from the lis
 You can also set the `TargetFrameworkIdentifier` and `TargetFrameworkVersion` properties directly in your project file.
 
 ```xml
-  <PropertyGroup Condition="'$(TargetFrameworkIdentifier)' == ''">
-    <TargetFrameworkIdentifier>.NETCOREAPP</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>3.1</TargetFrameworkVersion>
-  </PropertyGroup>
+<PropertyGroup Condition="'$(TargetFrameworkIdentifier)' == ''">
+  <TargetFrameworkIdentifier>.NETCOREAPP</TargetFrameworkIdentifier>
+  <TargetFrameworkVersion>3.1</TargetFrameworkVersion>
+</PropertyGroup>
 ```

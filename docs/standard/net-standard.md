@@ -130,7 +130,7 @@ Here are some guidelines for new code for .NET 5:
 
 ### .NET Standard problems
 
-Here are some problems with .NET Standard that help explain why .NET 5 is the better way to share code across platforms and app models:
+Here are some problems with .NET Standard that help explain why .NET 5 is the better way to share code across platforms and workloads:
 
 - Slowness to add new APIs
 
@@ -142,7 +142,7 @@ Here are some problems with .NET Standard that help explain why .NET 5 is the be
 
   The separation of the API specification from its implementations results in complex mapping between API specification versions and implementation versions. This complexity is evident in the table shown earlier in this article and the instructions for how to interpret it.
 
-  **Solution in .NET 5:** There's no separation between a .NET 5.x API specification and its implementation. The result is a simplified TFM scheme. There's one TFM prefix for all app models: `net5.0` is used for libraries, console apps, and web apps. The only variation is a suffix that specifies platform-specific APIs for Windows desktop apps: `net5.0-windows`. Thanks to this TFM naming convention, you can easily tell whether a given app can use a given library. No version number equivalents table like the one for .NET Standard is needed.
+  **Solution in .NET 5:** There's no separation between a .NET 5.x API specification and its implementation. The result is a simplified TFM scheme. There's one TFM prefix for all workloads: `net5.0` is used for libraries, console apps, and web apps. The only variation is a suffix that specifies platform-specific APIs for Windows desktop apps: `net5.0-windows`. Thanks to this TFM naming convention, you can easily tell whether a given app can use a given library. No version number equivalents table like the one for .NET Standard is needed.
 
 - Platform-unsupported exceptions at run time
 

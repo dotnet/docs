@@ -7,7 +7,7 @@ ms.technology: dotnet-standard
 ---
 # .NET architectural components
 
-A .NET app is developed for and runs in one or more *implementations of .NET*. Implementations of .NET include the .NET Framework, .NET 5 (including .NET Core), and Mono. There is an API specification common to multiple implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
+A .NET app is developed for and runs in one or more *implementations of .NET*. Implementations of .NET include the .NET Framework, .NET 5 (and .NET Core), and Mono. There is an API specification common to multiple implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
 
 ## .NET Standard
 
@@ -15,7 +15,7 @@ A .NET app is developed for and runs in one or more *implementations of .NET*. I
 
 .NET Standard is a [target framework](glossary.md#target-framework). If your code targets a version of .NET Standard, it can run on any .NET implementation that supports that version of .NET Standard.
 
-.NET Standard was created to enable portability across different .NET implementations, but now .NET 5 offers a better way to share code across multiple platforms and app models. For more information, see [.NET 5 and .NET Standard](net-standard.md#net-5-and-net-standard).
+.NET Standard was created to enable portability across different .NET implementations, but now .NET 5 offers a better way to share code across multiple platforms and workloads. For more information, see [.NET 5 and .NET Standard](net-standard.md#net-5-and-net-standard).
 
 ## .NET implementations
 
@@ -28,16 +28,16 @@ Each implementation of .NET includes the following components:
 
 There are four .NET implementations that Microsoft supports:
 
-- .NET 5 (including .NET Core) and later versions
+- .NET 5 (and .NET Core) and later versions
 - .NET Framework
 - Mono
 - UWP
 
-.NET 5 is now the primary implementation, the one that is the focus of ongoing development. .NET 5 is built on a single code base that supports multiple platforms and many app models, such as Windows desktop apps and cross-platform console apps, cloud services, and websites.
+.NET 5 is now the primary implementation, the one that is the focus of ongoing development. .NET 5 is built on a single code base that supports multiple platforms and many workloads, such as Windows desktop apps and cross-platform console apps, cloud services, and websites.
 
 ### .NET 5
 
-.NET 5 is a cross-platform implementation of .NET that is designed to handle server and cloud workloads at scale. It also supports other app models, including desktop apps. It runs on Windows, macOS, and Linux. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET 5. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) all run on .NET 5.
+.NET 5 is a cross-platform implementation of .NET that is designed to handle server and cloud workloads at scale. It also supports other workloads, including desktop apps. It runs on Windows, macOS, and Linux. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET 5. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) all run on .NET 5.
 
 For more information, see the following resources:
 

@@ -5,55 +5,47 @@ author: amolenk
 ms.date: 09/26/2020
 ---
 
-TODO
-- [x] When to use instance vs sidecar -> sidecar, make an API call
-- [ ] Boilerplate intro in .NET SDK section
-- [ ] Writing the .NET SDK introduction will make this easier
-
 # The Service Invocation building block
 
 Many services need to communicate with each other in a distributed system. The Service Invocation building block enables you to quickly set up communication between services using either gRPC or HTTP protocols while providing additional benefits.
 
 ## What it solves
 
-Making calls between services may sound easy, but there are some challenges involved. In a distributed system, how do you even know where the other services are? Once you've got the address, how do you call that service securely? And what about if that call fails? How do you handle retries to transient errors? Lastly, since distributed systems can consist of many different services, it is also necessary to get insights into the system and the service call graphs to diagnose issues that may pop up in production.
+Making calls between services in a distributed application may sound easy, but there are some challenges involved. In a distributed application, how do you even know where the other services are? Once you've got the address, how do you call that service securely? And what about if that call fails? How do you handle retries to transient errors? Lastly, since distributed applications can consist of many different services, it is also necessary to get insights into the application and the service call graphs to diagnose issues that may pop up in production.
 
-The Dapr Service Invocation building block helps you solve these challenges by using a Dapr instance as a reverse proxy for your service.
+The Dapr Service Invocation building block helps you solve these challenges by using a Dapr sidecar as a reverse proxy for your service.
 
 ## How it works
 
-Let's start with an example. There are two services, service A and service B, and service A needs to call the `catalogitems` method on service B. Instead of making a direct call from service A to service B, service A calls the invoke API of a Dapr instance. This example uses a sidecar architecture, in which each application talks to its own instance of Dapr.
+Let's start with an example. There are two services, service A and service B, and service A needs to call the `catalog/items` API on service B. Instead of making a direct call from service A to service B, service A calls the invoke API of its Dapr sidecar.
 
 ![How it works](./media/serviceinvocation/howitworks.png)
 
 The sidecar takes care of the rest. It will first use the pluggable service discovery mechanism to resolve the address of service B. An implementation using mDNS is provided for standalone hosting. When running in Kubernetes, the Kubernetes DNS service is used to resolve the address.
 
-Once the sidecar has resolved the address, it will forward the request to the service B sidecar. The service B sidecar will then make the actual `catalogitems` request on the service B API. The response returned by service B will flow back through the sidecars to service A.
+Once the sidecar has resolved the address, it will forward the request to the service B sidecar. The service B sidecar will then make the actual `catalog/items` request on the service B API. The response returned by service B will flow back through the sidecars to service A.
 
-Calls to and from the sidecars can be done using either gRPC or HTTP protocols. Communication between sidecars is done using gRPC.
+Calls to and from the sidecars can be done using either gRPC or HTTP protocols. Because of this the Service Invocation building block acts as a bridge between protocols. Services can communicate with each other using HTTP to HTTP, HTTP to gRPC, gRPC to HTTP or gRPC to gRPC. Communication between the sidecars themselves is done using gRPC.
 
+Because the call is now routed through sidecars, Dapr can inject some very useful functionality:
+- automatic retries in case of failures
+- traffic encryption using automatic mutual TLS
+- control what operations clients can perform using access control policies
+- gather traces and metrics for all calls between services to provide insights and diagnostics
 
-Because the call is now routed through sidecars, Dapr can add additional features:
-- [TODO]
+To invoke a service using Dapr, use the `invoke` API on the Dapr sidecar:
 
-
-There are multiple ways to send the request to the sidecar. For example, you can use the Dapr CLI tool:
 ```
-dapr invokeGet --app-id serviceb --method catalogitems
+http://localhost:<daprPort>/v1.0/invoke/<servicename>/method/<methodname>
 ```
-**TODO** remove dapr invokeGet
 
-Or you can directly send a request to the HTTP listening port of the sidecar using `curl`:
+In the following example the `catalog/items` 'GET' endpoint of `serviceb` is called using *curl*:
+
 ```
-curl http://localhost:3500/v1.0/invoke/serviceb/method/catalogitems
+curl http://localhost:3500/v1.0/invoke/serviceb/method/catalog/items
 ```
 
 In the next section, we'll look at using the native .NET SDK to make service invocation calls.
-
-### mTLS
-
-### Configuring policiess... retries...
-
 
 ### Using the .NET SDK
 
@@ -103,6 +95,10 @@ There are two places in the eShopOnDapr architecture where Dapr service invocati
 > **TODO** Add diagram.
 
 ### Service Invocation with Envoy
+
+>The Basket service stores its state in a distributed key-value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to back-end services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
+
+
 
 In the original eShopOnContainers solution, Envoy forwards incoming HTTP requests from the frontends directly to the appropriate backend service. A Dapr sidecar is added to the Envoy proxy in eShopOnDapr to get the benefits offered by Dapr Service Invocation such as mTLS and observability.
 
@@ -206,6 +202,7 @@ Benefits
 
 ### References
 
+https://github.com/dapr/docs/blob/master/concepts/service-invocation/README.md
 https://github.com/dapr/docs/tree/master/concepts/service-invocation
 
 

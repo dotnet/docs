@@ -45,13 +45,25 @@ To work with Jupyter Notebooks, you'll need two things.
 
 Start .NET for Apache Spark in debug mode. This starts a process and waits for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<version>.jar` for the respective version of .NET for Apache Spark you're using.
 
-```bash
-spark-submit \
-  --class org.apache.spark.deploy.dotnet.DotnetRunner \
-  --master local \
-  <path-to-microsoft-spark-jar> \
-  debug
-```
+    **Ubuntu** 
+    
+    ```bash
+    spark-submit \
+      --class org.apache.spark.deploy.dotnet.DotnetRunner \
+      --master local \
+      <path-to-microsoft-spark-jar> \
+      debug
+    ```
+    
+    **Windows**
+    
+    ```cmd
+    spark-submit ^
+      --class org.apache.spark.deploy.dotnet.DotnetRunner ^
+      --master local ^
+      <path-to-microsoft-spark-jar> ^
+      debug
+    ```
 
 ## Create notebook
 
@@ -99,13 +111,13 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
     The command palette appears. Enter the following command to create a new .NET Interactive notebook:
 
     ```text
-    .NET Interactive: Create new blank notebook
+    >.NET Interactive: Create new blank notebook
     ```
 
     Alternatively, if you want to open an existing .NET Interactive notebook with the *.ipynb* extension, use the following command:
 
     ```text
-    .NET Interactive: Open notebook
+    >.NET Interactive: Open notebook
     ```
 
 ## Initialize Spark Session

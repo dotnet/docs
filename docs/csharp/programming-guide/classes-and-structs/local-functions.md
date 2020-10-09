@@ -48,29 +48,29 @@ In addition, attributes can't be applied to the local function or to its paramet
 
 The following example defines a local function named `AppendPathSeparator` that is private to a method named `GetText`:
 
-[!code-csharp[LocalFunctionExample](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions1.cs)]  
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="Basic" :::
 
 ## Local functions and exceptions
 
 One of the useful features of local functions is that they can allow exceptions to surface immediately. For method iterators, exceptions are surfaced only when the returned sequence is enumerated, and not when the iterator is retrieved. For async methods, any exceptions thrown in an async method are observed when the returned task is awaited.
 
-The following example defines an `OddSequence` method that enumerates odd numbers between a specified range. Because it passes a number greater than 100 to the `OddSequence` enumerator method, the method throws an <xref:System.ArgumentOutOfRangeException>. As the output from the example shows, the exception surfaces only when you iterate the numbers, and not when you retrieve the enumerator.
+The following example defines an `OddSequence` method that enumerates odd numbers in a specified range. Because it passes a number greater than 100 to the `OddSequence` enumerator method, the method throws an <xref:System.ArgumentOutOfRangeException>. As the output from the example shows, the exception surfaces only when you iterate the numbers, and not when you retrieve the enumerator.
 
-[!code-csharp[LocalFunctionIterator1](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-iterator1.cs)]
+:::code language="csharp" source="snippets/local-functions/IteratorWithoutLocal.cs" :::
 
-Instead, you can throw an exception when performing validation and before retrieving the iterator by returning the iterator from a local function, as the following example shows.
+If you put iterator logic into a local function, argument validation exceptions are thrown when you retrieve the enumerator, as the following example shows:
 
-[!code-csharp[LocalFunctionIterator2](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-iterator2.cs)]
+:::code language="csharp" source="snippets/local-functions/IteratorWithLocal.cs" :::
 
-Local functions can be used in a similar way to handle exceptions outside of the asynchronous operation. Ordinarily, exceptions thrown in async method require that you examine the inner exceptions of an <xref:System.AggregateException>. Local functions allow your code to fail fast and allow your exception to be both thrown and observed synchronously.
+You can use local functions in a similar way with asynchronous operations. Exceptions thrown in an async method surface when the corresponding task is awaited. Local functions allow your code to fail fast and allow your exception to be both thrown and observed synchronously.
 
-The following example uses an asynchronous method named `GetMultipleAsync` to pause for a specified number of seconds and return a value that is a random multiple of that number of seconds. The maximum delay is 5 seconds; an <xref:System.ArgumentOutOfRangeException> results if the value is greater than 5. As the following example shows, the exception that is thrown when a value of 6 is passed to the `GetMultipleAsync` method is wrapped in an <xref:System.AggregateException> after the `GetMultipleAsync` method begins execution.
+The following example uses an asynchronous method named `GetMultipleAsync` to pause for a specified number of seconds and return a value that is a random multiple of that number of seconds. The maximum delay is 5 seconds; an <xref:System.ArgumentOutOfRangeException> results if the value is greater than 5. As the following example shows, the exception that is thrown when a value of 6 is passed to the `GetMultipleAsync` method is observed only when the task is awaited.
 
-[!code-csharp[LocalFunctionAsync](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-async1.cs)]
+:::code language="csharp" source="snippets/local-functions/AsyncWithoutLocal.cs" :::
 
-As we did with the method iterator, we can refactor the code from this example to perform the validation before calling the asynchronous method. As the output from the following example shows, the <xref:System.ArgumentOutOfRangeException> is not wrapped in a <xref:System.AggregateException>.
+Like with the method iterator, you can refactor the preceding example and put the code of asynchronous operation in a local function. As the output from the following example shows, the <xref:System.ArgumentOutOfRangeException> is thrown as soon as the `GetMultiple` method is called.
 
-[!code-csharp[LocalFunctionAsync](~/samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-async2.cs)]
+:::code language="csharp" source="snippets/local-functions/AsyncWithLocal.cs" :::
 
 ## Local functions vs. lambda expressions
 
@@ -78,11 +78,11 @@ At first glance, local functions and [lambda expressions](../../language-referen
 
 Let's examine the differences between the local function and lambda expression implementations of the factorial algorithm. First the version using a local function:
 
-[!code-csharp[LocalFunctionFactorial](../../../../samples/snippets/csharp/new-in-7/MathUtilities.cs#37_LocalFunctionFactorial "Recursive factorial using local function")]
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="FactorialWithLocal" :::
 
 Contrast that implementation with a version that uses lambda expressions:
 
-[!code-csharp[26_LambdaFactorial](../../../../samples/snippets/csharp/new-in-7/MathUtilities.cs#38_LambdaFactorial "Recursive factorial using lambda expressions")]
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="FactorialWithLambda" :::
 
 The local functions have names. The lambda expressions are anonymous methods that are assigned to variables that are `Func` or `Action` types. When you
 declare a local function, the argument types and return type are part of the function declaration. Instead of being part of the body of the lambda expression, the argument types and return type are part of the lambda expression's variable type declaration. Those two differences may result in clearer code.
@@ -110,16 +110,16 @@ The analysis that enables the example analysis enables the fourth difference. De
 
 Consider this async example:
 
-[!code-csharp[TaskLambdaExample](../../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#36_TaskLambdaExample "Task returning method with lambda expression")]
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="AsyncWithLambda" :::
 
 The closure for this lambda expression contains the `address`, `index` and `name` variables. In the case of local functions, the object that implements the closure may be a `struct` type. That struct type would be passed by reference to the local function. This difference in implementation would save on an allocation.
 
-The instantiation necessary for lambda expressions means extra memory allocations, which may be a performance factor in time-critical code paths. Local functions do not incur this overhead. In the example above, the local functions version has 2 fewer allocations than the lambda expression version.
+The instantiation necessary for lambda expressions means extra memory allocations, which may be a performance factor in time-critical code paths. Local functions do not incur this overhead. In the example above, the local functions version has two fewer allocations than the lambda expression version.
 
 > [!NOTE]
 > The local function equivalent of this method also uses a class for the closure. Whether the closure for a local function is implemented as a `class` or a `struct` is an implementation detail. A local function may use a `struct` whereas a lambda will always use a `class`.
 
-[!code-csharp[TaskLocalFunctionExample](../../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#TaskExample "Task returning method with local function")]
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="AsyncWithLocal" :::
 
 One final advantage not demonstrated in this sample is that local functions can be implemented as iterators, using the `yield return` syntax to produce a sequence of values. The `yield return` statement is not allowed in lambda expressions.
 

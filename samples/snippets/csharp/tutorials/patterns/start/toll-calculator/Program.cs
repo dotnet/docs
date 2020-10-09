@@ -32,7 +32,7 @@ namespace toll_calculator
             }
             try
             {
-                tollCalc.CalculateToll(null);
+                tollCalc.CalculateToll(null!);
             }
             catch (ArgumentNullException e)
             {

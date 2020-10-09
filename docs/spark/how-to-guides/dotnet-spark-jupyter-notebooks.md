@@ -38,7 +38,7 @@ To work with Jupyter Notebooks, you'll need two things.
         > [!IMPORTANT]
         > By default, the latest version of the package is downloaded. **Make sure that the version you download is the same as your Apache Spark .NET Worker.**
 
-    1. In the **Info** pane, select **Download package**. Doing so downloads the latest version of the package to a file with a name similar to  *microsoft.spark.[PACKAGE-VERSION].nupkg*.
+    1. In the **Info** pane, select **Download package** to download the latest version of the package. The name of the package is similar to  *microsoft.spark.[PACKAGE-VERSION].nupkg*.
     1. Unzip the recently downloaded package. The unzipped directory should contain a subdirectory called *jars*. Take note of the path since it's used at a later time.
 
 ## Start .NET for Apache Spark

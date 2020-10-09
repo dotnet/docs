@@ -56,7 +56,7 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
 
 ## Examples
 
-- Verifies *foo.nupkg*:
+- Verify *foo.nupkg*:
 
   ```dotnetcli
   dotnet nuget verify foo.nupkg

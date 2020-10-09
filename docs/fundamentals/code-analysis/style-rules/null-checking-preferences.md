@@ -11,13 +11,20 @@ dev_langs:
 ---
 # Null-checking preferences
 
-## Overview
+## .NET null-checking preferences
 
-The style rules in this section concern the following null-checking preferences:
+The style rules in this section concern the following null-checking preferences that are common to C# and Visual Basic:
 
-- [Use coalesce expression (IDE0029)](ide0029.md)
+- [Use coalesce expression (IDE0029 and IDE0030)](ide0029-ide0030.md)
 - [Use null propagation (IDE0031)](ide0031.md)
 - [Use is null check (IDE0041)](ide0041.md)
+
+## C# null-checking preferences
+
+The style rules in this section concern the following null-checking preferences that are specific to C#:
+
+- [Use throw expression (IDE0016)](ide0016.md)
+- [Use conditional delegate call (IDE1005)](ide1005.md)
 
 ## See also
 

@@ -8,7 +8,11 @@ ms.author: gewarren
 dev_langs:
 - CSharp
 - VB
+f1_keywords:
+- IDE1006
+- naming rules
 helpviewer_keywords:
+- IDE1006
 - naming code style rules [EditorConfig]
 - naming rules
 - EditorConfig naming conventions
@@ -17,13 +21,13 @@ helpviewer_keywords:
 
 Naming rules concern the naming of .NET programming language code elements, such as classes, properties, and methods. For example, you can specify that public members must be capitalized or that private fields must begin with `_`.
 
-For each naming rule, you must specify the symbols it applies to, a naming style, and a severity for enforcing the convention, using the properties described below. The order of the properties is not important.
+For each naming rule, you must specify the symbols it applies to, a naming style, and a severity for enforcing the convention, using the properties that follow. The order of the properties is not important.
 
 To begin, choose a title for your naming rule that you will use in each of the properties that are needed to fully describe the rule. For example, `public_members_must_be_capitalized` is a good, descriptive name for a naming rule. This page will refer to the title you choose as **<namingRuleTitle\>** in the sections that follow.
 
 ## <a name="rule-id-ide1006-naming-rule-violation"></a>Rule ID: "IDE1006" (Naming rule violation)
 
-All naming options have rule ID `IDE1006` and title `Naming rule violation`. Severity of naiming violations can be configured in an EditorConfig file with the following option:
+All naming options have rule ID `IDE1006` and title `Naming rule violation`. Severity of naming violations can be configured in an EditorConfig file with the following syntax:
 
 ```ini
 dotnet_diagnostic.IDE1006.severity = <severity value>
@@ -170,7 +174,7 @@ To describe the severity of a violation of your naming rule, specify a property 
 
 `dotnet_naming_rule.<namingRuleTitle>.severity = <value>`
 
-Severity specification with the above syntax is only respected inside development IDEs, such as Visual Studio. This setting is not understood by the C# or VB compilers, hence not respected during build. Instead, to enforce naming style rules on build, you should set the severity by using the rule ID based severity configuration as explained in [this section](#rule-id-ide1006-naming-rule-violation). For more details, see this [github issue](https://github.com/dotnet/roslyn/issues/44201).
+Severity specification with the above syntax is only respected inside development IDEs, such as Visual Studio. This setting is not understood by the C# or VB compilers, hence not respected during build. Instead, to enforce naming style rules on build, you should set the severity by using the rule ID-based severity configuration as explained in [this section](#rule-id-ide1006-naming-rule-violation). For more information, see this [GitHub issue](https://github.com/dotnet/roslyn/issues/44201).
 
 ## Rule order
 
@@ -178,7 +182,7 @@ The order in which naming rules are defined in an EditorConfig file doesn't matt
 
 > [!NOTE]
 >
-> If you're using a version of Visual Studio earlier than Visual Studio 2019 version 16.2, naming rules should be ordered from most-specific to least-specific in the EditorConfig file. The first rule encountered that can be applied is the only rule that is applied. However, if there are multiple rule *properties* with the same name, the most recently found property with that name takes precedence. For more information, see [File hierarchy and precedence](/visualstudio/ide/create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+> If you're using a version of Visual Studio earlier than Visual Studio 2019 version 16.2, naming rules should be ordered from most-specific to least-specific in the EditorConfig file. The first rule encountered that can be applied is the only rule that is applied. However, if there are multiple rule *properties* with the same name, the most recently found property with that name takes precedence. For more information, see [File hierarchy and precedence](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence).
 
 ## Default naming styles
 

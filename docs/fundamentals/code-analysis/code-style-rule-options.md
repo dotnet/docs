@@ -8,17 +8,19 @@ ms.author: gewarren
 ---
 # Code style rule options
 
-You can define and maintain consistent *code style* in your codebase by defining .NET code style rule options in an [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options.md) file. These rules are surfaced by various development IDEs, such as Visual Studio, as you edit your code. For .NET projects, these rules can also be [enforced at build time](overview.md#code-style-analysis). You can enable or disable individual rules and configure the degree to which you want each rule enforced, via a severity level.
+You can define and maintain consistent *code style* in your codebase by defining .NET code style rule options in an [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) file. These rules are surfaced by various development IDEs, such as Visual Studio, as you edit your code. For .NET projects, these rules can also be [enforced at build time](overview.md#code-style-analysis). You can enable or disable individual rules and configure the degree to which you want each rule enforced, via a severity level.
 
 > [!TIP]
 >
 > - When you define code style options in an EditorConfig file, you're configuring how you want the [code style analyzers](overview.md#code-style-analysis) to analyze your code. The EditorConfig file is the configuration file for these analyzers.
 >
-> - Code style options can also be set in Visual Studio in the [Text editor options](/visualstudio/ide/code-styles-and-code-cleanup.md) dialog. These are per-user options that are only respected while editing in Visual Studio. These options are not respected at build time or by other IDEs. Additionally, if the project or solution opened inside Visual Studio has an EditorConfig file, then options from the EditorConfig file take precedence.
+> - Code style options can also be set in Visual Studio in the [Text editor options](/visualstudio/ide/code-styles-and-code-cleanup) dialog. These are per-user options that are only respected while editing in Visual Studio. These options are not respected at build time or by other IDEs. Additionally, if the project or solution opened inside Visual Studio has an EditorConfig file, then options from the EditorConfig file take precedence.
 
 Code style rules are divided into following subcategories:
 
 - [Language rules](style-rules/language-rules.md)
+
+- [Unnecessary code rules](style-rules/unnecessary-code-rules.md)
 
 - [Formatting rules](style-rules/formatting-rules.md)
 

@@ -8,7 +8,11 @@ ms.author: gewarren
 dev_langs:
 - CSharp
 - VB
+f1_keywords:
+- IDE0055
+- formatting rules
 helpviewer_keywords:
+- IDE0055
 - formatting code style rules [EditorConfig]
 - formatting rules
 - EditorConfig formatting conventions

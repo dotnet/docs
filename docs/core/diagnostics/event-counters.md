@@ -141,10 +141,10 @@ The `AddRequest()` method can be called from a request handler, and the `Request
 public void AddRequest() => Interlocked.Increment(ref _requestCount);
 ```
 
-To prevent torn reads (on 32-bit architectures) of the `long`-field `_requestCount` use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType>.
+To prevent torn reads (on 32-bit architectures) of the `long`-field `_requestCount` use <xref:System.Threading.Interlocked.Read%2A?displayProperty=nameWithType>.
 
 ```csharp
-_requestRateCounter = new IncrementingPollingCounter("request-rate", this, () => Volatile.Read(ref _requestCount))
+_requestRateCounter = new IncrementingPollingCounter("request-rate", this, () => Interlocked.Read(ref _requestCount))
 {
     DisplayName = "Request Rate",
     DisplayRateTimeScale = TimeSpan.FromSeconds(1)

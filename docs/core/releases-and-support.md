@@ -8,7 +8,7 @@ author: tdykstra
 ---
 # Releases and support for .NET Core and .NET 5
 
-Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET Core, .NET 5, and later versions. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
+Microsoft ships major releases, minor releases, and servicing updates (patches) for .NET 5.0 (and .NET Core) and later versions. This article explains release types, servicing updates, SDK feature bands, support periods, and support options.
 
 ## Release types
 
@@ -34,7 +34,7 @@ Servicing updates (patches) ship almost every month, and these updates carry bot
 
 ### Feature bands (SDK only)
 
-Versioning for the .NET SDK works slightly differently from the .NET runtime. .NET SDK updates sometimes include new features or new versions of components like MSBuild and NuGet to align with new Visual Studio releases. These new features or components may be incompatible with the versions that shipped in previous SDK updates for the same major or minor version.
+Versioning for the .NET SDK works slightly differently from the .NET runtime. To align with new Visual Studio releases, .NET SDK updates sometimes include new features or new versions of components like MSBuild and NuGet. These new features or components may be incompatible with the versions that shipped in previous SDK updates for the same major or minor version.
 
 To differentiate such updates, the .NET SDK uses the concept of feature bands. For example, the first .NET Core 3.1 SDK was 3.1.100. This release corresponds to the 3.1.1xx  *feature band*. Feature bands are defined in the hundreds groups in the third section of the version number. For example, 3.1.101 and 3.1.201 are versions in two different feature bands while 3.1.101 and 3.1.199 are in the same feature band. When .NET Core SDK 3.1.101 is installed, .NET Core SDK 3.1.100 is removed from the machine if it exists. When .NET Core SDK 3.1.200 is installed on the same machine, .NET Core SDK 3.1.101 isn't removed.
 
@@ -95,23 +95,23 @@ End of support refers to the date after which Microsoft no longer provides fixes
 
 ## Supported operating systems
 
-.NET Core and .NET 5 can be run on a range of operating systems. Each of these operating systems has a lifecycle defined by its sponsor organization (for example, Microsoft, Red Hat, or Apple). We take these lifecycle schedules into account when adding and removing support for operating system versions.
+.NET 5 (and .NET Core) and later versions can be run on a range of operating systems. Each of these operating systems has a lifecycle defined by its sponsor organization (for example, Microsoft, Red Hat, or Apple). We take these lifecycle schedules into account when adding and removing support for operating system versions.
 
 When an operating system version goes out of support, we stop testing that version and providing support for that version. Users need to move forward to a supported operating system version to get support.
 
 For more information, see the [.NET OS Lifecycle Policy](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
 
-## Getting Support
+## Get support
 
 You have a choice between Microsoft assisted support and Community support.
 
-### Microsoft Support
+### Microsoft support
 
-For assisted support with .NET Core and .NET 5, [contact a Microsoft Support Professional](https://support.microsoft.com/supportforbusiness/productselection/?sapid=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
+For assisted support, [contact a Microsoft Support Professional](https://support.microsoft.com/supportforbusiness/productselection/?sapid=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
 You need to be on a supported servicing level (the latest available servicing update) to be eligible for support. If a system is running 3.1 and the 3.1.8 servicing update has been released, then 3.1.8 needs to be installed as a first step.
 
-### Community Support
+### Community support
 
 For community support, see the [Community page](https://dotnet.microsoft.com/platform/community).
 

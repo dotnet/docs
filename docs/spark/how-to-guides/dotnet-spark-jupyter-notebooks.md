@@ -110,9 +110,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 
 ## Initialize a Spark Session
 
-When the notebook opens
-
-1. Install the `Microsoft.Spark` NuGet package. Make sure the version you install is the same as the .NET Worker.
+1. When the notebook opens, install the `Microsoft.Spark` NuGet package. Make sure the version you install is the same as the .NET Worker.
 
     ```text
     #r "nuget:Microsoft.Spark, 0.12.1"

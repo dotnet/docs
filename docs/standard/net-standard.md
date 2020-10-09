@@ -110,11 +110,11 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 * `net5.0-windows`
 
-  This TFM adds OS-specific functionality to everything that `net5.0` refers to.
+  This is an example of [OS-specific TFMs](frameworks.md#net-5-os-specific-tfms) that add OS-specific functionality to everything that `net5.0` refers to.
 
 ### When to target net5.0 vs. netstandard
 
-For existing code that targets `netstandard`, there's no need to change the TFM to `net5.0`. .NET 5 implements .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 5 would be to gain access to more runtime features, language features, or APIs. For example, in order to use C# 9, you need to target `net5.0` or `net5.0-windows`. You can multitarget .NET 5 and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
+For existing code that targets `netstandard`, there's no need to change the TFM to `net5.0`. .NET 5.0 implements .NET Standard 2.1 and earlier. The only reason to retarget from .NET Standard to .NET 5.0 would be to gain access to more runtime features, language features, or APIs. For example, in order to use C# 9, you need to target .NET 5.0. You can multitarget .NET 5.0 and .NET Standard to get access to newer features and still have your library available to other .NET implementations.
 
 Here are some guidelines for new code for .NET 5:
 
@@ -142,17 +142,17 @@ Here are some problems with .NET Standard that help explain why .NET 5 is the be
 
   The separation of the API specification from its implementations results in complex mapping between API specification versions and implementation versions. This complexity is evident in the table shown earlier in this article and the instructions for how to interpret it.
 
-  **Solution in .NET 5:** There's no separation between a .NET 5.x API specification and its implementation. The result is a simplified TFM scheme. There's one TFM prefix for all workloads: `net5.0` is used for libraries, console apps, and web apps. The only variation is a suffix that specifies platform-specific APIs for Windows desktop apps: `net5.0-windows`. Thanks to this TFM naming convention, you can easily tell whether a given app can use a given library. No version number equivalents table like the one for .NET Standard is needed.
+  **Solution in .NET 5:** There's no separation between a .NET 5.x API specification and its implementation. The result is a simplified TFM scheme. There's one TFM prefix for all workloads: `net5.0` is used for libraries, console apps, and web apps. The only variation is a [suffix that specifies platform-specific APIs](frameworks.md#net-5-os-specific-tfms) for a particular platform, such as `net5.0-windows`. Thanks to this TFM naming convention, you can easily tell whether a given app can use a given library. No version number equivalents table like the one for .NET Standard is needed.
 
 - Platform-unsupported exceptions at run time
 
-  The .NET Standard exposes platform-specific APIs. Your code might compile without errors and appear to be portable to any platform even if it isn't portable. When it runs on a platform that doesn’t have an implementation for a given API, you get run-time errors.
+  .NET Standard exposes platform-specific APIs. Your code might compile without errors and appear to be portable to any platform even if it isn't portable. When it runs on a platform that doesn’t have an implementation for a given API, you get run-time errors.
 
   **Solution in .NET 5:** The .NET 5 SDK includes code analyzers that are enabled by default. The platform compatibility analyzer detects unintentional use of APIs that aren't supported on the platforms you intend to run on. For more information, see [Platform compatibility analyzer](analyzers/platform-compat-analyzer.md).
 
 ### .NET Standard not deprecated
 
-The .NET Standard is still needed for libraries that can be used by multiple .NET implementations. We recommend you target .NET Standard in the following scenarios:
+.NET Standard is still needed for libraries that can be used by multiple .NET implementations. We recommend you target .NET Standard in the following scenarios:
 
 * Use `netstandard2.0` to share code between .NET Framework and all other implementations of .NET.
 * Use `netstandard2.1` to share code between Mono, Xamarin, and .NET Core 3.x.

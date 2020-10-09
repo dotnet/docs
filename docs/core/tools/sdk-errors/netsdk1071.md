@@ -2,7 +2,7 @@
 title: "NETSDK1071: A PackageReference to '{0}' specified a Version of `{1}`."
 description: How to resolve the issue of a PackageReference to a metapackage included with the framework with a version.
 author: Forgind
-ms.topic: warning-reference
+ms.topic: error-reference
 ms.date: 10/09/2020
 f1_keywords:
 - NETSDK1071

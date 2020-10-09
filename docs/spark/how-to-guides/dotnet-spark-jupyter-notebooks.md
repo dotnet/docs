@@ -122,7 +122,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
     using Microsoft.Spark.Sql;
     ```
 
-1. Initialize your [SparkSession](xref:Microsoft.Spark.Sql.SparkSession)
+1. Initialize your [SparkSession](xref:Microsoft.Spark.Sql.SparkSession).
 
     ```csharp
     var sparkSession =

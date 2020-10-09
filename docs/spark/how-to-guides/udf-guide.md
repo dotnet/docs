@@ -182,6 +182,12 @@ Notice that `func` and `func2` no longer share a closure, and they have their ow
 * Null values in UDFs can throw exceptions. It's the responsibility of the developer to handle them.
 * UDFs don't leverage the optimizations provided by Spark's built-in functions, so it's recommended to use built-in functions where possible.
 
+## FAQs
+
+1. Why do I get the error `System.NotImplementedException: The method or operation is not implemented.` or `System.InvalidCastException: Unable to cast object of type 'System.Collections.Hashtable' to type 'System.Collections.Generic.IDictionary` when trying to call a UDF with `ArrayType`, `MapType`, `ArrayList`, or `HashTable` as argument or return type?  
+Support for `ArrayType` and `MapType` is not provided until [v1.0](), and so you would get this error if using a .NET for Apache Spark version prior to that, and trying to pass these types either as arguments to the UDF or as a return type.
+`ArrayList` and `HashTable` types cannot be supported as return types of a UDF as they are non-generic collections and hence their element type definitions cannot be provided to Spark.
+
 ## Next steps
 
 * [Get started with .NET for Apache Spark](../tutorials/get-started.md)

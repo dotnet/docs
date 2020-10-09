@@ -10,8 +10,7 @@ ms.date: 11/13/2020
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 *Notes*
-See thread:
-https://twitter.com/ardalis/status/1313669040859217921
+See [thread](https://twitter.com/ardalis/status/1313669040859217921)
 
 - Identify sequence in which projects should be migrated
   - Identify head projects that ultimately will migrate to ASP.NET Core
@@ -21,8 +20,8 @@ https://twitter.com/ardalis/status/1313669040859217921
   - ApiPort for Framework dependencies
   - Review NuGet Package dependencies
 - Tools
-  - https://github.com/dotnet/try-convert
-  - https://github.com/microsoft/dotnet-apiport
+  - [try-convert](https://github.com/dotnet/try-convert)
+  - [apiport](https://github.com/microsoft/dotnet-apiport)
 - Strategies for migrating while app is in production
   - Refactoring models and business logic to .NET Standard libraries
   - The importance of good test coverage

@@ -11,7 +11,7 @@ ms.date: 11/13/2020
 
 *Notes*
 
-See also: https://codeopinion.com/migrating-to-asp-net-core/
+See also: [sample article](https://codeopinion.com/migrating-to-asp-net-core/)
 
 - DasBlog to Core (UI rewrite)
 - Stack Overflow

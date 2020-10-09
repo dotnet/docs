@@ -118,7 +118,7 @@ When the notebook opens
     #r "nuget:Microsoft.Spark, 0.12.1"
     ```
 
-1. Add the following using statement
+1. Add the following using statement to the notebook.
 
     ```csharp
     using Microsoft.Spark.Sql;

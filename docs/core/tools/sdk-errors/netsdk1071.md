@@ -32,5 +32,5 @@ To resolve this:
    ```xml
    <PackageReference Include="Microsoft.NetCore.App" Version="2.2.8" >
      <AllowExplicitVersion>true</AllowExplicitVersion> 
-</PackageReference>
+    </PackageReference>
 ```

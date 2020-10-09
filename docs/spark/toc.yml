@@ -35,7 +35,13 @@
       href: how-to-guides/connect-to-mongo-db.md
     - name: SQL Server
       href: how-to-guides/connect-to-sql-server.md
-  - name: Submit jobs
+  - name: Build applications
+    items: 
+    - name: Build application on Ubuntu
+      href: how-to-guides/ubuntu-instructions.md    
+    - name: Build application on Windows
+      href: how-to-guides/windows-instructions.md    
+  - name: Submit remote jobs
     items:
     - name: Submit jobs to Azure Synapse Analytics
       href: /azure/synapse-analytics/spark/spark-dotnet
@@ -59,10 +65,7 @@
     href: how-to-guides/broadcast-guide.md
   - name: Debug your application
     href: how-to-guides/debug.md
-  - name: Build application on Ubuntu
-    href: how-to-guides/ubuntu-instructions.md    
-  - name: Build application on Windows
-    href: how-to-guides/windows-instructions.md
+
   - name: Install interactive notebooks on Azure HDInsight
     href: how-to-guides/hdinsight-notebook-installation.md
 - name: Reference

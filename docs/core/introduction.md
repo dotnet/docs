@@ -66,7 +66,7 @@ For more information, see the [list of project repositories on GitHub.com](https
 
 [Tizen supports .NET](https://developer.tizen.org/development/training/.net-application) on Tizen platforms.
 
-For more information, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+For more information, see [Releases and support for .NET Core and .NET 5](releases-and-support.md).
 
 ## Tools and productivity
 

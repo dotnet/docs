@@ -108,7 +108,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
     .NET Interactive: Open notebook
     ```
 
-## Initialize Spark Session
+## Initialize a Spark Session
 
 When the notebook opens
 

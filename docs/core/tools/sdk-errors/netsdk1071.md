@@ -7,7 +7,7 @@ ms.date: 10/09/2020
 f1_keywords:
 - NETSDK1071
 ---
-# NETSDK1071: Explicitly versioned PackageReference to a metapackage that would be included with the framework. 
+# NETSDK1071: Explicitly versioned PackageReference to a metapackage that would be included with the framework.
 
 **This article applies to:** ✔️ .NET 5.0.100 SDK and later versions
 

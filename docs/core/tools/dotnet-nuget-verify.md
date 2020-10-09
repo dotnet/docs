@@ -40,7 +40,7 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
   Specifies that all verifications possible should be performed on the package(s). By default, only `signatures` are verified.
 
 > [!NOTE]
-> This command currently supports only `signature` verification. Additional quality checks shall be added in the future.
+> This command currently supports only `signature` verification.
 
 - **`--certificate-fingerprint <FINGERPRINT>`**
 

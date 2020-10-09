@@ -62,7 +62,7 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
   dotnet nuget verify foo.nupkg
   ```
 
-- Verifies multiple NuGet packages *foo.nupkg* and *all .nupkg files in the directory specified*:
+- Verify multiple NuGet packages - *foo.nupkg* and *all .nupkg files in the directory specified*:
 
   ```dotnetcli
   dotnet nuget verify foo.nupkg c:\mydir\*.nupkg

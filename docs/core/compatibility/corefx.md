@@ -11,6 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [Assembly-related API behavior changes for single-file publishing format](#assembly-related-api-behavior-changes-for-single-file-publishing-format) | 5.0 |
 | [Order of tags in Activity.Tags is reversed](#order-of-tags-in-activitytags-is-reversed) | 5.0 |
 | [Parameter names changed in RC1](#parameter-names-changed-in-rc1) | 5.0 |
 | [OSPlatform attributes renamed or removed](#osplatform-attributes-renamed-or-removed) | 5.0 |
@@ -50,6 +51,10 @@ The following breaking changes are documented on this page:
 | [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [assembly-api-behavior-changes-for-single-file-publish](../../../includes/core-changes/corefx/5.0/assembly-api-behavior-changes-for-single-file-publish.md)]
+
+***
 
 [!INCLUDE [reverse-order-of-tags-in-activity-property](../../../includes/core-changes/corefx/5.0/reverse-order-of-tags-in-activity-property.md)]
 

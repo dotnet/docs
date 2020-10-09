@@ -31,19 +31,19 @@ See the [getting started tutorial](../tutorials/get-started.md) for more informa
 
 To work with Jupyter Notebooks, you'll need two things.
 
-1. Install [.NET Interactive global .NET tool](https://github.com/dotnet/interactive/blob/main/docs/NotebooksLocalExperience.md)
-1. Download `Microsoft.Spark` NuGet package.
+1. Install the [.NET Interactive global .NET tool](https://github.com/dotnet/interactive/blob/main/docs/NotebooksLocalExperience.md)
+1. Download the `Microsoft.Spark` NuGet package.
     1. Navigate to the [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) NuGet package page.
 
         > [!IMPORTANT]
         > By default, the latest version of the package is downloaded. **Make sure that the version you download is the same as your Apache Spark .NET Worker.**
 
-    1. In the **Info** pane, select **Download package**. Doing so downloads the latest version of the package to a file with a name similar to  *microsoft.spark.[PACKAGE-VERSION].nupkg*.
-    1. Unzip the recently downloaded package. The unzipped directory should contain a subdirectory called *jars*. Take note of the path since it's used at a later time.
+    1. In the **Info** pane, select **Download package** to download the latest version of the package. The name of the package is similar to  *microsoft.spark.[PACKAGE-VERSION].nupkg*.
+    1. Unzip the downloaded package. The unzipped directory should contain a subdirectory called *jars*. Take note of the path since it's used at a later time.
 
 ## Start .NET for Apache Spark
 
-Start .NET for Apache Spark in debug mode. This starts a process and waits for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<version>.jar` for the respective version of .NET for Apache Spark you're using.
+Run the following command to start .NET for Apache Spark in debug mode. This `spark-submit` command starts a process and waits for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<version>.jar` for the respective version of .NET for Apache Spark you're using.
 
     **Ubuntu** 
     
@@ -65,13 +65,13 @@ Start .NET for Apache Spark in debug mode. This starts a process and waits for c
       debug
     ```
 
-## Create notebook
+## Create a notebook
 
 You can use different interfaces to interact with Jupyter. For a browser-based interface, use Jupyter Notebooks or Jupyter Lab. For a local editor experience, use VS Code.
 
-### Jupyter Notebooks & Jupyter lab
+### Jupyter Notebooks & Jupyter Lab
 
-1. In another command prompt, start Jupyter Notebook or Jupyter Lab use one of the commands below:
+1. In another command prompt, start Jupyter Notebook or Jupyter Lab using one of the commands below:
 
     **Jupyter Notebook**
 
@@ -108,7 +108,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 1. Open VS Code.
 1. Open the command palette **View > Command Palette**.
 
-    The command palette appears. Enter the following command to create a new .NET Interactive notebook:
+    When the command palette appears, enter the following command to create a new .NET Interactive notebook:
 
     ```text
     >.NET Interactive: Create new blank notebook
@@ -120,23 +120,21 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
     >.NET Interactive: Open notebook
     ```
 
-## Initialize Spark Session
+## Initialize a Spark Session
 
-When the notebook opens
-
-1. Install the `Microsoft.Spark` NuGet package. Make sure the version you install is the same as the .NET Worker.
+1. When the notebook opens, install the `Microsoft.Spark` NuGet package. Make sure the version you install is the same as the .NET Worker.
 
     ```text
     #r "nuget:Microsoft.Spark, 0.12.1"
     ```
 
-1. Add the following using statement
+1. Add the following using statement to the notebook.
 
     ```csharp
     using Microsoft.Spark.Sql;
     ```
 
-1. Initialize your [SparkSession](xref:Microsoft.Spark.Sql.SparkSession)
+1. Initialize your [SparkSession](xref:Microsoft.Spark.Sql.SparkSession).
 
     ```csharp
     var sparkSession =
@@ -146,7 +144,7 @@ When the notebook opens
         .GetOrCreate();
     ```
 
-The notebook should look similar to the one below. In this case, it's in VS Code, but Jupyter Notebook and Jupyter Lab should look about the same.
+The notebook should look similar to the one in the following image. This example uses VS Code, but Jupyter Notebook and Jupyter Lab should look about the same.
 
 > [!div class="mx-imgBorder"]
 ![.NET for Apache Spark Jupyter Notebook VS Code](media/dotnet-spark-jupyter-notebooks/jupyter-notebooks-dotnet-spark-vscode.png)

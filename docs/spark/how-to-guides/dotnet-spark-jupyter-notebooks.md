@@ -96,7 +96,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 1. Open VS Code.
 1. Open the command palette **View > Command Palette**.
 
-    The command palette appears. Enter the following command to create a new .NET Interactive notebook:
+    When the command palette appears, enter the following command to create a new .NET Interactive notebook:
 
     ```text
     .NET Interactive: Create new blank notebook

@@ -12,6 +12,7 @@ f1_keywords:
 **This article applies to:** ✔️ .NET 5.0.100 SDK and later versions
 
 When the .NET SDK issues warning NETSDK1071, it suggests there may be a version conflict in the future between the version of a metapackage specified in a PackageReference and the version of that metapackage as implicitly referenced via a TargetFramework property:
+
 ```xml
 <PropertyGroup>
   <TargetFramework>netcoreapp3.1</TargetFramework>

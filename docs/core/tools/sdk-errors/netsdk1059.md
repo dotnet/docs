@@ -1,6 +1,6 @@
 ---
 title: "NETSDK1059: Project contains obsolete .NET CLI tool"
-description: How to resolve the issue of a project containing an obsolete .NET CLI tool
+description: How to resolve the issue of a project containing an obsolete .NET CLI tool.
 author: sfoslund
 ms.topic: error-reference
 ms.date: 10/09/2020

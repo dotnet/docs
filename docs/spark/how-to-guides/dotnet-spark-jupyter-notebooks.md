@@ -45,25 +45,25 @@ To work with Jupyter Notebooks, you'll need two things.
 
 Run the following command to start .NET for Apache Spark in debug mode. This `spark-submit` command starts a process and waits for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<version>.jar` for the respective version of .NET for Apache Spark you're using.
 
-    **Ubuntu** 
-    
-    ```bash
-    spark-submit \
-      --class org.apache.spark.deploy.dotnet.DotnetRunner \
-      --master local \
-      <path-to-microsoft-spark-jar> \
-      debug
-    ```
-    
-    **Windows**
-    
-    ```cmd
-    spark-submit ^
-      --class org.apache.spark.deploy.dotnet.DotnetRunner ^
-      --master local ^
-      <path-to-microsoft-spark-jar> ^
-      debug
-    ```
+**Ubuntu** 
+
+```bash
+spark-submit \
+    --class org.apache.spark.deploy.dotnet.DotnetRunner \
+    --master local \
+    <path-to-microsoft-spark-jar> \
+    debug
+```
+
+**Windows**
+
+```cmd
+spark-submit ^
+    --class org.apache.spark.deploy.dotnet.DotnetRunner ^
+    --master local ^
+    <path-to-microsoft-spark-jar> ^
+    debug
+```
 
 ## Create a notebook
 

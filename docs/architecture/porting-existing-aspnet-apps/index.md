@@ -56,17 +56,19 @@ The audience for this guide is mainly developers, development leads, and archite
 
 A secondary audience is technical decision-makers who are making plans for when to move their applications to .NET Core.
 
+Note that the target audience for this book is .NET developers with large, existing apps that run on ASP.NET MVC and Web API. Apps built on ASP.NET Web Forms are outside of the focus of this book, though much of the information comparing .NET and .NET Core may still be relevant.
+
 ## How you can use this guide
 
-TBD.
+You can read this book straight through, as we expect many readers to do. This will provide you first with considerations for whether you should port your app at all, followed by architectural differences between .NET and .NET Core. From there you'll learn strategies for migrating a large solution over time, and how to port a real application. Next, the book includes deployment scenarios that may help you address the need to run different apps while appearing as a single app to users. The book concludes with two case studies describing real applications that have made the move from ASP.NET MVC to ASP.NET Core.
 
-You can jump to any of these chapters to learn about specific topics:
+Whether or not you choose to start from the first chapter, you can also refer (back) to any of these chapters to learn about specific topics:
 
-- Architectural differences
-- Migrating large solutions
-- Sample migration
-- Deployment scenarios
-- Case studies
+- [Architectural differences](architectural-differences.md)
+- [Migrating large solutions](migrating-large-solutions.md)
+- [Sample migration](example-migration-eshop.md)
+- [Deployment scenarios](deployment-scenarios.md)
+- ]Case studies](case-studies.md)
 
 This guide is available both in [PDF](LINK) form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics.
 

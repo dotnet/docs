@@ -35,18 +35,18 @@ The following table list all the code style rules by ID and options, if any.
 > | - | - | - |
 > | [IDE0001](ide0001.md) | Simplify name | |
 > | [IDE0002](ide0002.md) | Simplify member access | |
-> | [IDE0003](ide0003-ide0009.md) | Remove 'this' or 'Me' qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
+> | [IDE0003](ide0003-ide0009.md) | Remove `this` or `Me` qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
 > | [IDE0004](ide0004.md) | Remove unnecessary cast | |
 > | [IDE0005](ide0005.md) | Remove unnecessary import | |
-> | [IDE0007](ide0007-ide0008.md) | Use 'var' instead of explicit type | [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)<br/> [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)<br/> [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)<br/> |
-> | [IDE0008](ide0007-ide0008.md) | Use explicit type instead of 'var' | [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)<br/> [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)<br/> [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)<br/> |
-> | [IDE0009](ide0003-ide0009.md) | Add 'this' or 'Me' qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
+> | [IDE0007](ide0007-ide0008.md) | Use `var` instead of explicit type | [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)<br/> [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)<br/> [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)<br/> |
+> | [IDE0008](ide0007-ide0008.md) | Use explicit type instead of `var` | [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)<br/> [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)<br/> [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)<br/> |
+> | [IDE0009](ide0003-ide0009.md) | Add `this` or `Me` qualification | [dotnet_style_qualification_for_field](ide0003-ide0009.md#dotnet_style_qualification_for_field)<br/> [dotnet_style_qualification_for_property](ide0003-ide0009.md#dotnet_style_qualification_for_property)<br/> [dotnet_style_qualification_for_method](ide0003-ide0009.md#dotnet_style_qualification_for_method)<br/> [dotnet_style_qualification_for_event](ide0003-ide0009.md#dotnet_style_qualification_for_event) |
 > | [IDE0010](ide0010.md) | Add missing cases to switch statement | |
 > | [IDE0011](ide0011.md) | Add braces | [csharp_prefer_braces](ide0011.md#csharp_prefer_braces) |
 > | [IDE0016](ide0016.md) | Use throw expression | [csharp_style_throw_expression](ide0016.md#csharp_style_throw_expression) |
 > | [IDE0017](ide0017.md) | Use object initializers | [dotnet_style_object_initializer](ide0017.md#dotnet_style_object_initializer) |
 > | [IDE0018](ide0018.md) | Inline variable declaration | [csharp_style_inlined_variable_declaration](ide0018.md#csharp_style_inlined_variable_declaration) |
-> | [IDE0019](ide0019.md) | Use pattern matching to avoid 'as' followed by a 'null' check | [csharp_style_pattern_matching_over_as_with_null_check](ide0019.md#csharp_style_pattern_matching_over_as_with_null_check) |
+> | [IDE0019](ide0019.md) | Use pattern matching to avoid `as` followed by a `null` check | [csharp_style_pattern_matching_over_as_with_null_check](ide0019.md#csharp_style_pattern_matching_over_as_with_null_check) |
 > | [IDE0020](ide0020-ide0038.md) | Use pattern matching to avoid `is` check followed by a cast (with variable) | [csharp_style_pattern_matching_over_is_with_cast_check](ide0020-ide0038.md#csharp_style_pattern_matching_over_is_with_cast_check) |
 > | [IDE0021](ide0021.md) | Use expression body for constructors | [csharp_style_expression_bodied_constructors](ide0021.md#csharp_style_expression_bodied_constructors) |
 > | [IDE0022](ide0022.md) | Use expression body for methods | [csharp_style_expression_bodied_methods](ide0022.md#csharp_style_expression_bodied_methods) |
@@ -89,9 +89,9 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0060](ide0060.md) | Remove unused parameter | [dotnet_code_quality_unused_parameters](ide0060.md#dotnet_code_quality_unused_parameters) |
 > | [IDE0061](ide0061.md) | Use expression body for local functions | [csharp_style_expression_bodied_local_functions](ide0061.md#csharp_style_expression_bodied_local_functions) |
 > | [IDE0062](ide0062.md) | Make local function static | [csharp_prefer_static_local_function](ide0062.md#csharp_prefer_static_local_function) |
-> | [IDE0063](ide0063.md) | Use simple 'using' statement | [csharp_prefer_simple_using_statement](ide0063.md#csharp_prefer_simple_using_statement) |
+> | [IDE0063](ide0063.md) | Use simple `using` statement | [csharp_prefer_simple_using_statement](ide0063.md#csharp_prefer_simple_using_statement) |
 > | [IDE0064](ide0064.md) | Make struct fields writable | |
-> | [IDE0065](ide0065.md) | 'using' directive placement | [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement) |
+> | [IDE0065](ide0065.md) | `using` directive placement | [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement) |
 > | [IDE0066](ide0066.md) | Use switch expression | [csharp_style_prefer_switch_expression](ide0066.md#csharp_style_prefer_switch_expression) |
 > | [IDE0070](ide0070.md) | Use <xref:System.HashCode.Combine?displayProperty=fullName> | |
 > | [IDE0071](ide0071.md) | Simplify interpolation | [dotnet_style_prefer_simplified_interpolation](ide0071.md#dotnet_style_prefer_simplified_interpolation) |
@@ -99,16 +99,16 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0073](ide0073.md) | Use file header | [file_header_template](ide0073.md#file_header_template) |
 > | [IDE0074](ide0054-ide0074.md) | Use coalesce compound assignment | [dotnet_style_prefer_compound_assignment](ide0054-ide0074.md#dotnet_style_prefer_compound_assignment) |
 > | [IDE0075](ide0075.md) | Simplify conditional expression | [dotnet_style_prefer_simplified_boolean_expressions](ide0075.md#dotnet_style_prefer_simplified_boolean_expressions) |
-> | [IDE0076](ide0076.md) | Remove invalid global 'SuppressMessageAttribute' | |
-> | [IDE0077](ide0077.md) | Avoid legacy format target in global 'SuppressMessageAttribute' | |
+> | [IDE0076](ide0076.md) | Remove invalid global `SuppressMessageAttribute` | |
+> | [IDE0077](ide0077.md) | Avoid legacy format target in global `SuppressMessageAttribute` | |
 > | [IDE0078](ide0078.md) | Use pattern matching | [csharp_style_prefer_pattern_matching](ide0078.md#csharp_style_prefer_pattern_matching) |
 > | [IDE0079](ide0079.md) | Remove unnecessary suppression | [dotnet_remove_unnecessary_suppression_exclusions](ide0079.md#dotnet_remove_unnecessary_suppression_exclusions) |
 > | [IDE0080](ide0080.md) | Remove unnecessary suppression operator | |
-> | [IDE0081](ide0081.md) | Remove 'ByVal' | |
-> | [IDE0082](ide0082.md) | Convert 'typeof' to 'nameof' | |
-> | [IDE0083](ide0083.md) | Use pattern matching ('not' operator) | [csharp_style_prefer_not_pattern](ide0083.md#csharp_style_prefer_not_pattern) |
-> | [IDE0084](ide0084.md) | Use pattern matching ('IsNot' operator) | [visual_basic_style_prefer_isnot_expression](ide0084.md#visual_basic_style_prefer_isnot_expression) |
-> | [IDE0090](ide0090.md) | Simplify 'new' expression | [csharp_style_implicit_object_creation_when_type_is_apparent](ide0090.md#csharp_style_implicit_object_creation_when_type_is_apparent) |
+> | [IDE0081](ide0081.md) | Remove `ByVal` | |
+> | [IDE0082](ide0082.md) | Convert `typeof` to `nameof` | |
+> | [IDE0083](ide0083.md) | Use pattern matching (`not` operator) | [csharp_style_prefer_not_pattern](ide0083.md#csharp_style_prefer_not_pattern) |
+> | [IDE0084](ide0084.md) | Use pattern matching (`IsNot` operator) | [visual_basic_style_prefer_isnot_expression](ide0084.md#visual_basic_style_prefer_isnot_expression) |
+> | [IDE0090](ide0090.md) | Simplify `new` expression | [csharp_style_implicit_object_creation_when_type_is_apparent](ide0090.md#csharp_style_implicit_object_creation_when_type_is_apparent) |
 > | [IDE0100](ide0100.md) | Remove unnecessary equality operator | |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |

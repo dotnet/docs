@@ -952,7 +952,9 @@ items:
             href: code-analysis/style-rules/language-rules.md
           - name: this and Me preferences
             items:
-            - name: IDE0003 and IDE0009
+            - name: IDE0003
+              href: code-analysis/style-rules/ide0003-ide0009.md
+            - name: IDE0009
               href: code-analysis/style-rules/ide0003-ide0009.md
           - name: Use language keywords for types
             items:
@@ -1030,7 +1032,9 @@ items:
               href: code-analysis/style-rules/null-checking-preferences.md
             - name: IDE0016
               href: code-analysis/style-rules/ide0016.md
-            - name: IDE0029 and IDE0030
+            - name: IDE0029
+              href: code-analysis/style-rules/ide0029-ide0030.md
+            - name: IDE0030
               href: code-analysis/style-rules/ide0029-ide0030.md
             - name: IDE0031
               href: code-analysis/style-rules/ide0031.md
@@ -1040,7 +1044,9 @@ items:
               href: code-analysis/style-rules/ide1005.md
           - name: var preferences
             items:
-            - name: IDE0007 and IDE0008
+            - name: IDE0007
+              href: code-analysis/style-rules/ide0007-ide0008.md
+            - name: IDE0008
               href: code-analysis/style-rules/ide0007-ide0008.md
           - name: Expression-bodied members
             items:
@@ -1050,7 +1056,9 @@ items:
               href: code-analysis/style-rules/ide0021.md
             - name: IDE0022
               href: code-analysis/style-rules/ide0022.md
-            - name: IDE0023 and IDE0024
+            - name: IDE0023
+              href: code-analysis/style-rules/ide0023-ide0024.md
+            - name: IDE0024
               href: code-analysis/style-rules/ide0023-ide0024.md
             - name: IDE0025
               href: code-analysis/style-rules/ide0025.md
@@ -1068,7 +1076,9 @@ items:
               href: code-analysis/style-rules/pattern-matching-preferences.md
             - name: IDE0019
               href: code-analysis/style-rules/ide0019.md
-            - name: IDE0020 and IDE0038
+            - name: IDE0020
+              href: code-analysis/style-rules/ide0020-ide0038.md
+            - name: IDE0038
               href: code-analysis/style-rules/ide0020-ide0038.md
             - name: IDE0066
               href: code-analysis/style-rules/ide0066.md

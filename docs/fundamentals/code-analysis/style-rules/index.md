@@ -16,7 +16,7 @@ ms.author: gewarren
 
 - [Unnecessary code rules](unnecessary-code-rules.md)
 
-   Rules that pertain to unnecessary code that indicate a potential readability, maintainability, performance or functional problem. For example, unreachable code within methods or unused private fields, properties or methods.
+   Rules that pertain to unnecessary code that indicates a potential readability, maintainability, performance, or functional problem. For example, unreachable code within methods or unused private fields, properties, or methods is unnecessary code.
 
 - [Formatting rules](formatting-rules.md)
 
@@ -47,7 +47,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0017](ide0017.md) | Use object initializers | [dotnet_style_object_initializer](ide0017.md#dotnet_style_object_initializer) |
 > | [IDE0018](ide0018.md) | Inline variable declaration | [csharp_style_inlined_variable_declaration](ide0018.md#csharp_style_inlined_variable_declaration) |
 > | [IDE0019](ide0019.md) | Use pattern matching to avoid 'as' followed by a 'null' check | [csharp_style_pattern_matching_over_as_with_null_check](ide0019.md#csharp_style_pattern_matching_over_as_with_null_check) |
-> | [IDE0020](ide0020-ide0038.md) | Use pattern matching to avoid 'is' check followed by a cast (with variable) | [csharp_style_pattern_matching_over_is_with_cast_check](ide0020-ide0038.md#csharp_style_pattern_matching_over_is_with_cast_check) |
+> | [IDE0020](ide0020-ide0038.md) | Use pattern matching to avoid `is` check followed by a cast (with variable) | [csharp_style_pattern_matching_over_is_with_cast_check](ide0020-ide0038.md#csharp_style_pattern_matching_over_is_with_cast_check) |
 > | [IDE0021](ide0021.md) | Use expression body for constructors | [csharp_style_expression_bodied_constructors](ide0021.md#csharp_style_expression_bodied_constructors) |
 > | [IDE0022](ide0022.md) | Use expression body for methods | [csharp_style_expression_bodied_methods](ide0022.md#csharp_style_expression_bodied_methods) |
 > | [IDE0023](ide0023-ide0024.md) | Use expression body for conversion operators | [csharp_style_expression_bodied_operators](ide0023-ide0024.md#csharp_style_expression_bodied_operators) |
@@ -61,11 +61,11 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0031](ide0031.md) | Use null propagation | [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation) |
 > | [IDE0032](ide0032.md) | Use auto property | [dotnet_style_prefer_auto_properties](ide0032.md#dotnet_style_prefer_auto_properties) |
 > | [IDE0033](ide0033.md) | Use explicitly provided tuple name | [dotnet_style_explicit_tuple_names](ide0033.md#dotnet_style_explicit_tuple_names) |
-> | [IDE0034](ide0034.md) | Simplify 'default' expression | [csharp_prefer_simple_default_expression](ide0034.md#csharp_prefer_simple_default_expression) |
+> | [IDE0034](ide0034.md) | Simplify `default` expression | [csharp_prefer_simple_default_expression](ide0034.md#csharp_prefer_simple_default_expression) |
 > | [IDE0035](ide0035.md) | Remove unreachable code | |
 > | [IDE0036](ide0036.md) | Order modifiers | [csharp_preferred_modifier_order](ide0036.md#csharp_preferred_modifier_order)<br/> [visual_basic_preferred_modifier_order](ide0036.md#visual_basic_preferred_modifier_order)<br/> |
 > | [IDE0037](ide0037.md) | Use inferred member name | [dotnet_style_prefer_inferred_tuple_names](ide0037.md#dotnet_style_prefer_inferred_tuple_names)<br/> [dotnet_style_prefer_inferred_anonymous_type_member_names](ide0037.md#dotnet_style_prefer_inferred_anonymous_type_member_names) |
-> | [IDE0038](ide0020-ide0038.md) | Use pattern matching to avoid 'is' check followed by a cast (without variable) | [csharp_style_pattern_matching_over_is_with_cast_check](ide0020-ide0038.md#csharp_style_pattern_matching_over_is_with_cast_check) |
+> | [IDE0038](ide0020-ide0038.md) | Use pattern matching to avoid `is` check followed by a cast (without variable) | [csharp_style_pattern_matching_over_is_with_cast_check](ide0020-ide0038.md#csharp_style_pattern_matching_over_is_with_cast_check) |
 > | [IDE0039](ide0039.md) | Use local function instead of lambda | [csharp_style_pattern_local_over_anonymous_function](ide0039.md#csharp_style_pattern_local_over_anonymous_function) |
 > | [IDE0040](ide0040.md) | Add accessibility modifiers | [dotnet_style_require_accessibility_modifiers](ide0040.md#dotnet_style_require_accessibility_modifiers) |
 > | [IDE0041](ide0041.md) | Use is null check | [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method) |
@@ -93,7 +93,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0064](ide0064.md) | Make struct fields writable | |
 > | [IDE0065](ide0065.md) | 'using' directive placement | [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement) |
 > | [IDE0066](ide0066.md) | Use switch expression | [csharp_style_prefer_switch_expression](ide0066.md#csharp_style_prefer_switch_expression) |
-> | [IDE0070](ide0070.md) | Use [System.HashCode.Combine](/dotnet/api/system.hashcode.combine) | |
+> | [IDE0070](ide0070.md) | Use <xref:System.HashCode.Combine?displayProperty=fullName> | |
 > | [IDE0071](ide0071.md) | Simplify interpolation | [dotnet_style_prefer_simplified_interpolation](ide0071.md#dotnet_style_prefer_simplified_interpolation) |
 > | [IDE0072](ide0072.md) | Add missing cases to switch expression | |
 > | [IDE0073](ide0073.md) | Use file header | [file_header_template](ide0073.md#file_header_template) |

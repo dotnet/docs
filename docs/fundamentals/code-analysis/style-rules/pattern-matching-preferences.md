@@ -10,7 +10,7 @@ dev_langs:
 ---
 # Pattern matching preferences
 
-## C# pattern matching preferences
+## C# preferences
 
 The style rules in this section concern the use of [pattern matching](/dotnet/csharp/pattern-matching) in C#.
 
@@ -20,7 +20,7 @@ The style rules in this section concern the use of [pattern matching](/dotnet/cs
 - [Use pattern matching (IDE0078)](ide0078.md)
 - [Use pattern matching (`not` operator) (IDE0083)](ide0083.md)
 
-## Visual Basic pattern matching preferences
+## Visual Basic preferences
 
 The style rules in this section concern the use of pattern matching in Visual Basic.
 

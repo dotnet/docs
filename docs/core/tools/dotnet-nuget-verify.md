@@ -68,7 +68,7 @@ The `dotnet nuget verify` command verifies a signed NuGet package.
   dotnet nuget verify foo.nupkg c:\mydir\*.nupkg
   ```
 
-- Verifies *foo.nupkg* signature matches with the specified certificate fingerprint:
+- Verify *foo.nupkg* signature matches with the specified certificate fingerprint:
 
   ```dotnetcli
   dotnet nuget verify foo.nupkg --certificate-fingerprint CE40881FF5F0AD3E58965DA20A9F571EF1651A56933748E1BF1C99E537C4E039

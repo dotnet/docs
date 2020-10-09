@@ -22,8 +22,8 @@ In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive
 ## Prerequisites
 
 - [.NET Core 3.1 SDK](https://docs.microsoft.com/dotnet/core/install/)
-- [Apache Spark](http://bing.com)
-- Apache Spark .NET Worker
+- [Apache Spark](https://spark.apache.org/downloads.html)
+- [Apache Spark .NET Worker](https://github.com/dotnet/spark/releases)
 
 See the [getting started tutorial](../tutorials/get-started.md) for more information on setting up your .NET for Apache Spark environment.
 
@@ -43,7 +43,7 @@ To work with Jupyter Notebooks, you'll need two things.
 
 ## Start .NET for Apache Spark
 
-Start .NET for Apache Spark in debug mode. This will set up a process that will wait for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the jar for the respective version of Apache Spark you're using.
+Start .NET for Apache Spark in debug mode. This will will set up a process that will wait for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<version>.jar` for the respective version of .NET for Apache Spark you're using.
 
 ```bash
 spark-submit \
@@ -73,8 +73,17 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
     jupyter lab
     ```
 
-1. Create a new .NET Interactive notebook.
-1. When the notebook opens, write and execute your code in the notebook cells.
+    These commands launch a browser window with the Jupyter Notebook or Jupyter Lab interface.
+
+1. In the browser, create a new notebook.
+
+    **Jupyter Notebook**
+
+    Select **New > .NET (C#)** or **New > .NET (F#)**
+
+    **Jupyter Lab**
+
+    In the Launcher window, select **.NET (C#)** or **.NET (F#)**
 
 ### Visual Studio Code (preview)
 
@@ -84,7 +93,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 >- [VS Code Insiders](https://code.visualstudio.com/insiders/)
 >- [.NET Interactive Notebooks extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode)
 
-1. Open VS Code
+1. Open VS Code.
 1. Open the command palette **View > Command Palette**
 
     The command palette appears. Enter the following command to create a new .NET Interactive notebook:
@@ -99,7 +108,34 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
     .NET Interactive: Open notebook
     ```
 
-1. When the notebook opens, write and execute your code in the notebook cells.
+## Initialize Spark Session
+
+When the notebook opens:
+
+1. Install the `Microsoft.Spark` NuGet package. Make sure the version you install is the same as the .NET Worker.
+
+    ```text
+    #r "nuget:Microsoft.Spark, 0.12.1"
+    ```
+
+1. Add the following using statement
+
+    ```csharp
+    using Microsoft.Spark.Sql;
+    ```
+
+1. Initialize your [SparkSession](xref:Microsoft.Spark.Sql.SparkSession)
+
+    ```csharp
+    var sparkSession =
+    SparkSession
+        .Builder()
+        .AppName("dotnet-interactive-spark")
+        .GetOrCreate();
+    ```
+
+> [!div class="mx-imgBorder"]
+![.NET for Apache Spark Jupyter Notebook VS Code](media/dotnet-spark-jupyter-notebooks/jupyter-notebooks-dotnet-spark-vscode.png)
 
 ## Next Steps
 

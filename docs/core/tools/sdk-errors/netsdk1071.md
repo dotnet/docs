@@ -1,5 +1,5 @@
 ---
-title: "NETSDK1071: A PackageReference to '{0}' specified a Version of `{1}`. Specifying the version of this package is not recommended. For more information, see https://aka.ms/sdkimplicitrefs"
+title: "NETSDK1071: A PackageReference to '{0}' specified a Version of `{1}`."
 description: How to resolve the issue of a PackageReference to a metapackage included with the framework with a version.
 author: Forgind
 ms.topic: warning-reference

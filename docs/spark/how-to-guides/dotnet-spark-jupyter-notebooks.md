@@ -43,7 +43,7 @@ To work with Jupyter Notebooks, you'll need two things.
 
 ## Start .NET for Apache Spark
 
-Start .NET for Apache Spark in debug mode. This will will set up a process that will wait for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<version>.jar` for the respective version of .NET for Apache Spark you're using.
+Start .NET for Apache Spark in debug mode. This starts a process and waits for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<version>.jar` for the respective version of .NET for Apache Spark you're using.
 
 ```bash
 spark-submit \
@@ -110,7 +110,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 
 ## Initialize Spark Session
 
-When the notebook opens:
+When the notebook opens
 
 1. Install the `Microsoft.Spark` NuGet package. Make sure the version you install is the same as the .NET Worker.
 

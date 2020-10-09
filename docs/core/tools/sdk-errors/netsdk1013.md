@@ -10,10 +10,12 @@ f1_keywords:
 # NETSDK1013: The TargetFramework value was not recognized
 
 **This article applies to:** ✔️ .NET 3.1.100 SDK and later versions
-The SDK tries to parse the values provided in the project file for <TargetFramework> or <TargetFrameworks> into a well known value.  If the value is not recognized, the `TargetFrameworkIdentifier` or `TargetFrameworkVersion` value may be set to an empty string or `Unsupported`. 
 
-To resolve this, please check the spelling of your `TargetFramework` value from the list of [supported frameworks](https://docs.microsoft.com/en-us/dotnet/standard/frameworks).
+The SDK tries to parse the values provided in the project file for `<TargetFramework>` or `<TargetFrameworks>` into a well known value.  If the value is not recognized, the `TargetFrameworkIdentifier` or `TargetFrameworkVersion` value may be set to an empty string or `Unsupported`.
+
+To resolve this, check the spelling of your `TargetFramework` value from the list of [supported frameworks](../../../standard/frameworks.md).
 You can also set the `TargetFrameworkIdentifier` and `TargetFrameworkVersion` properties directly in your project file.
+
 ```xml
   <PropertyGroup Condition="'$(TargetFrameworkIdentifier)' == ''">
     <TargetFrameworkIdentifier>.NETCOREAPP</TargetFrameworkIdentifier>

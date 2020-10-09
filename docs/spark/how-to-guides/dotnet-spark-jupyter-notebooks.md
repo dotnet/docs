@@ -53,7 +53,7 @@ spark-submit \
   debug
 ```
 
-## Create notebook
+## Create a notebook
 
 You can use different interfaces to interact with Jupyter. For a browser-based interface, use Jupyter Notebooks or Jupyter Lab. For a local editor experience, use VS Code.
 

@@ -59,7 +59,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 
 ### Jupyter Notebooks & Jupyter Lab
 
-1. In another command prompt, start Jupyter Notebook or Jupyter Lab use one of the commands below:
+1. In another command prompt, start Jupyter Notebook or Jupyter Lab using one of the commands below:
 
     **Jupyter Notebook**
 

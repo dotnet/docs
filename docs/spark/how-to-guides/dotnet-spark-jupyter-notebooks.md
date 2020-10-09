@@ -132,7 +132,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
         .GetOrCreate();
     ```
 
-The notebook should look similar to the one below. In this case, it's in VS Code, but Jupyter Notebook and Jupyter Lab should look about the same.
+The notebook should look similar to the one in the following image. This example uses VS Code, but Jupyter Notebook and Jupyter Lab should look about the same.
 
 > [!div class="mx-imgBorder"]
 ![.NET for Apache Spark Jupyter Notebook VS Code](media/dotnet-spark-jupyter-notebooks/jupyter-notebooks-dotnet-spark-vscode.png)

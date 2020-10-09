@@ -31,6 +31,6 @@ To resolve this:
 6. If you want the warning to go away, you can also disable it:
    ```xml
    <PackageReference Include="Microsoft.NetCore.App" Version="2.2.8" >
-  <AllowExplicitVersion>true</AllowExplicitVersion> 
+     <AllowExplicitVersion>true</AllowExplicitVersion> 
 </PackageReference>
 ```

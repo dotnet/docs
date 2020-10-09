@@ -22,7 +22,7 @@ In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive
 ## Prerequisites
 
 - [.NET Core 3.1 SDK](https://docs.microsoft.com/dotnet/core/install/)
-- Apache Spark
+- [Apache Spark](http://bing.com)
 - Apache Spark .NET Worker
 
 See the [getting started tutorial](../tutorials/get-started.md) for more information on setting up your .NET for Apache Spark environment.
@@ -43,7 +43,7 @@ To work with Jupyter Notebooks, you'll need two things.
 
 ## Start .NET for Apache Spark
 
-Start .NET for Apache Spark in debug mode. This will will set up a process that will wait for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the jar for the respective version of Apache Spark you're using.
+Start .NET for Apache Spark in debug mode. This will set up a process that will wait for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the jar for the respective version of Apache Spark you're using.
 
 ```bash
 spark-submit \

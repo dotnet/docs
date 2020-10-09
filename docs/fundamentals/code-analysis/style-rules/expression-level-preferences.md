@@ -15,6 +15,7 @@ dev_langs:
 
 The style rules in this section concern the following expression-level preferences that are common to C# and Visual Basic:
 
+- [Add missing cases to switch statement (IDE0010)](ide0010.md)
 - [Use object initializers (IDE0017)](ide0017.md)
 - [Use collection initializers (IDE0028)](ide0028.md)
 - [Use auto property (IDE0032)](ide0032.md)
@@ -22,9 +23,12 @@ The style rules in this section concern the following expression-level preferenc
 - [Use inferred member name (IDE0037)](ide0037.md)
 - [Use conditional expression for assignment (IDE0045)](ide0045.md)
 - [Use conditional expression for return (IDE0046)](ide0046.md)
-- [Use compound assignment (IDE0054)](ide0054.md)
-- [Unnecessary value assignment (IDE0059)](ide0059.md)
-- [Unused expression value (IDE0058)](ide0058.md)
+- [Convert anonymous type to tuple (IDE0050)](ide0050.md)
+- [Use compound assignment (IDE0054 and IDE0074)](ide0054-ide0074.md)
+- [Use 'System.HashCode.Combine' (IDE0070)](ide0070.md)
+- [Simplify interpolation (IDE0071)](ide0071.md)
+- [Simplify conditional expression (IDE0075)](ide0075.md)
+- [Convert 'typeof' to 'nameof' (IDE0082)](ide0082.md)
 
 ## C# expression-level preferences
 
@@ -36,6 +40,8 @@ The style rules in this section concern the following expression-level preferenc
 - [Deconstruct variable declaration (IDE0042)](ide0042.md)
 - [Use index operator (IDE0056)](ide0056.md)
 - [Use range operator (IDE0057)](ide0057.md)
+- [Add missing cases to switch expression (IDE0072)](ide0072.md)
+- [Simplify 'new' expression (IDE0090)](ide0090.md)
 
 ## See also
 

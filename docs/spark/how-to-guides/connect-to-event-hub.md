@@ -12,15 +12,15 @@ In this article, you will learn how to connect your [.NET for Apache Spark](http
 
 ## Prerequisites
 
-1. Have an Event Hubs Namespace ready with an event hub, refer to [this document](https://docs.microsoft.com/azure/event-hubs/event-hubs-create) for a step-by-step guide on how to do that. Make sure to select the Standard Pricing tier while creating the Event Hub Namespace.
+Have an Event Hubs Namespace ready with an event hub. For a step-by-step guide, refer to [Quickstart: Create an event hub using Azure portal](/azure/event-hubs/event-hubs-create). Make sure to select the Standard Pricing tier while creating the Event Hub Namespace.
 
 ## What is Azure Event Hubs
 
-[Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about) is a big data streaming platform and event ingestion service. It is a fully managed Platform-as-a-Service (PaaS), that can easily integrate with [Apache Kafka](https://kafka.apache.org/) to give you the PaaS Kafka experience without having to manage, configure or run your own clusters.
+[Azure Event Hubs](/azure/event-hubs/event-hubs-about) is a big-data streaming platform and event-ingestion service. It is a fully managed Platform-as-a-Service (PaaS) that can easily integrate with [Apache Kafka](https://kafka.apache.org/) to give you the PaaS Kafka experience without having to manage, configure, or run your own clusters.
 
 ## Connect your application to Azure Event Hubs
 
-1. Get the Event Hubs connection string and fully qualified domain name (FQDN) for later use. For instructions, see [Get an Event Hubs connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string).
+1. Get the Event Hubs connection string and fully qualified domain name (FQDN) for later use. For instructions, see [Get an Event Hubs connection string](/azure/event-hubs/event-hubs-get-connection-string).
 2. Set the following configurations with details from your namespace in your code to start reading from Event Hubs for Kafka:
     1. Update **BOOTSTRAP_SERVERS** and **EH_SASL** in your application like so:
 
@@ -79,7 +79,7 @@ df.WriteStream()
 
 ## Run your application
 
-In order to run your .NET for Apache Spark application, you should define the `spark-sql-kafka-0-10` module as part of the build definition in your Spark project, using `libraryDependency` in `build.sbt` for sbt projects. For Spark environments such as `spark-submit` (or `spark-shell`) you should use the `--packages` command-line option like so:
+In order to run your .NET for Apache Spark application, define the `spark-sql-kafka-0-10` module as part of the build definition in your Spark project, using `libraryDependency` in `build.sbt` for sbt projects. For Spark environments such as `spark-submit` (or `spark-shell`), use the `--packages` command-line option like so:
 
 ```bash
 spark-shell --packages org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.5

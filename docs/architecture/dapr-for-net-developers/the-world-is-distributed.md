@@ -24,7 +24,7 @@ To start, let's rewind and look at the past 15 years. During this period, we typ
 
 **Figure 1-1. Monolithic architecture.
 
-In the previous figure, the modules for Ordering, Identity, and Marketing operate in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTFul interfaces.
+Note how the modules for Ordering, Identity, and Marketing execute in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTFul interfaces.
 
 In many ways, monolithic apps are `straightforward`. They're straightforward to...
 
@@ -32,9 +32,9 @@ In many ways, monolithic apps are `straightforward`. They're straightforward to.
  - test
  - deploy
  - troubleshoot
- - scale-up vertically
+ - scale vertically (scale up)
 
-However, monolithic architectures present significant challenges. 
+However, monolithic architectures can present significant challenges. 
 
 Over time, you may reach a point where you begin to lose control... 
 
@@ -60,22 +60,21 @@ Many organizations are finding this speed and agility by adopting a distributed 
 
 Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a shared database, each service owns it own datastore. Note how some services require a full relational database, but others, a NoSQL datastore. The Basket service stores its state in a distributed key-value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to back-end services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 
-But, while distributed applications can help bring agility and speed, they bring many challenges.
+But, while distributed services can provide agility and speed, they present many challenges. For example,... 
 
-| Challenge | Description |
-| :-------- | :-------- |
-| Cross-service communication | How can services synchronously communicate with each other using platform agnostic protocols and well-known endpoints? |
-| State Management | How can services maintain contextual information across a transaction? |
-| Asynchronous messaging | How can services implement secure, scalable pub/sub messaging across different kinds of message brokers? |
-| External resource bindings | How can external resources trigger events across services with bi-directional communication? |
-| Secrets | How can services securely access external secret stores |
-| Observability | How can services implement end-to-end monitoring of processes executing on different machines |
-
-This book introduces Dapr. Dapr is a distributed application runtime that directly addresses many of the challenges of distributed applications. 
+ - How can services directly communicate with each other?
+ - How can they maintain contextual information across a transaction?
+ - How can they implement asynchronous messaging? 
+ - How can they become resilient to failure?
+ - How can they discover each other?
+ - How can they scale to meet fluctuating demand?
+ - How are they monitored and observed?
+ 
+This book introduces Dapr. Dapr is a distributed application runtime that directly addresses many of the challenges of distributed applications. Looking ahead, it has the potential to streamline the way in which distributed cloud applications are built.
 
 ## Summary
 
-In this chapter, we highlighted the evolving trend of distributed applications. We contrasted a monolithic system approach with that of distributed services. We spotlighted some of the benefits challenges of both approaches. 
+In this chapter, we discussed the adoption of distributed applications. We contrasted a monolithic system approach with that of distributed services. We pointed out many of the common challenges when considering a distributed approach. 
 
 Now, sit back, relax, and let us introduce you the new world of Dapr.
 

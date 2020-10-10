@@ -295,7 +295,7 @@ namespace SystemTextJsonSamples
             }
             Console.WriteLine();
         }
-        public static void DisplayPropertyValues(this WeatherForecastWithPOCOs wf)
+        public static void DisplayPropertyValues(this SystemTextJsonSamples_2.WeatherForecast wf)
         {
             Utilities.DisplayPropertyValues(wf);
             Console.WriteLine($"SummaryField: {wf.SummaryField}");
@@ -502,9 +502,9 @@ namespace SystemTextJsonSamples
             };
             return weatherForecast;
         }
-        public static WeatherForecastWithPOCOs CreateWeatherForecastWithPOCOs()
+        public static SystemTextJsonSamples_2.WeatherForecast CreateWeatherForecastWithPOCOs()
         {
-            var weatherForecast = new WeatherForecastWithPOCOs
+            var weatherForecast = new SystemTextJsonSamples_2.WeatherForecast
             {
                 Date = DateTime.Parse("2019-08-01"),
                 TemperatureCelsius = 25,

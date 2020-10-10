@@ -9,10 +9,15 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Introduced version |
 | - | - |
+| [JsonSerializer.Serialize throws ArgumentNullException when type parameter is null](#jsonserializerserialize-throws-argumentnullexception-when-type-parameter-is-null) | 5.0 |
 | [JsonSerializer.Deserialize requires single-character string](#jsonserializerdeserialize-requires-single-character-string) | 5.0 |
 | [BinaryFormatter.Deserialize rewraps some exceptions in SerializationException](#binaryformatterdeserialize-rewraps-some-exceptions-in-serializationexception) | 5.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [jsonserializer-serialize-throws-argumentnullexception-for-null-type](../../../includes/core-changes/serialization/5.0/jsonserializer-serialize-throws-argumentnullexception-for-null-type.md)]
+
+***
 
 [!INCLUDE [deserializing-json-into-char-requires-single-character](../../../includes/core-changes/serialization/5.0/deserializing-json-into-char-requires-single-character.md)]
 

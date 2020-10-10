@@ -19,6 +19,7 @@ Code style language rules affect how various constructs of .NET programming lang
 
 - [.NET style rules](#net-style-rules): Rules that apply to both C# and Visual Basic. The EditorConfig option names for these rules start with `dotnet_style_` prefix.
 - [C# style rules](#c-style-rules): Rules that are specific to C# language only. The EditorConfig option names for these rules start with `csharp_style_` prefix.
+- [Visual Basic style rules](#visual-basic-style-rules): Rules that are specific to Visual Bsic language only. The EditorConfig option names for these rules start with `visual_basic_style_` prefix.
 
 ## Option format
 
@@ -64,17 +65,19 @@ The style rules in this section are applicable to both C# and Visual Basic.
   - [dotnet_style_prefer_auto_properties](ide0032.md#dotnet_style_prefer_auto_properties)
   - [dotnet_style_prefer_conditional_expression_over_assignment](ide0045.md#dotnet_style_prefer_conditional_expression_over_assignment)
   - [dotnet_style_prefer_conditional_expression_over_return](ide0046.md#dotnet_style_prefer_conditional_expression_over_return)
-  - [dotnet_style_prefer_compound_assignment](ide0054.md#dotnet_style_prefer_compound_assignment)
-  - [csharp_style_unused_value_assignment_preference](ide0059.md#csharp_style_unused_value_assignment_preference)
-  - [visual_basic_style_unused_value_assignment_preference](ide0059.md#visual_basic_style_unused_value_assignment_preference)
-  - [csharp_style_unused_value_expression_statement_preference](ide0058.md#csharp_style_unused_value_expression_statement_preference)
-  - [visual_basic_style_unused_value_expression_statement_preference](ide0058.md#visual_basic_style_unused_value_expression_statement_preference)
+  - [dotnet_style_prefer_compound_assignment](ide0054-ide0074.md#dotnet_style_prefer_compound_assignment)
+  - [dotnet_style_prefer_simplified_interpolation](ide0071.md#dotnet_style_prefer_simplified_interpolation)
+  - [dotnet_style_prefer_simplified_boolean_expressions](ide0075.md#dotnet_style_prefer_simplified_boolean_expressions)
+  - [Add missing cases to switch statement](ide0010.md) - This rule has no code style option.
+  - [Convert anonymous type to tuple](ide0050.md) - This rule has no code style option.
+  - [Use 'System.HashCode.Combine'](ide0070.md) - This rule has no code style option.
+  - [Convert 'typeof' to 'nameof'](ide0082.md) - This rule has no code style option.
 - [Null-checking preferences](null-checking-preferences.md#net-null-checking-preferences)
-  - [dotnet_style_coalesce_expression](ide0029.md#dotnet_style_coalesce_expression)
+  - [dotnet_style_coalesce_expression](ide0029-ide0030.md#dotnet_style_coalesce_expression)
   - [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation)
   - [dotnet_style_prefer_is_null_check_over_reference_equality_method](ide0041.md#dotnet_style_prefer_is_null_check_over_reference_equality_method)
-- [Parameter preferences](ide0060.md)
-  - [dotnet_code_quality_unused_parameters](ide0060.md#dotnet_code_quality_unused_parameters)
+- [File header preferences](ide0073.md)
+  - [file_header_template](ide0073.md#file_header_template)
 
 ## C# style rules
 
@@ -94,9 +97,11 @@ The style rules in this section are applicable to C# language only.
   - [csharp_style_expression_bodied_lambdas](ide0053.md#csharp_style_expression_bodied_lambdas)
   - [csharp_style_expression_bodied_local_functions](ide0061.md#csharp_style_expression_bodied_local_functions)
 - [Pattern matching preferences](pattern-matching-preferences.md)
-  - [csharp_style_pattern_matching_over_is_with_cast_check](ide0020.md#csharp_style_pattern_matching_over_is_with_cast_check)
+  - [csharp_style_pattern_matching_over_is_with_cast_check](ide0020-ide0038.md#csharp_style_pattern_matching_over_is_with_cast_check)
   - [csharp_style_pattern_matching_over_as_with_null_check](ide0019.md#csharp_style_pattern_matching_over_as_with_null_check)
   - [csharp_style_prefer_switch_expression](ide0066.md#csharp_style_prefer_switch_expression)
+  - [csharp_style_prefer_pattern_matching](ide0078.md#csharp_style_prefer_pattern_matching)
+  - [csharp_style_prefer_not_pattern](ide0083.md#csharp_style_prefer_not_pattern)
 - [Expression-level preferences](expression-level-preferences.md#c-expression-level-preferences)
   - [csharp_style_inlined_variable_declaration](ide0018.md#csharp_style_inlined_variable_declaration)
   - [csharp_prefer_simple_default_expression](ide0034.md#csharp_prefer_simple_default_expression)
@@ -104,6 +109,8 @@ The style rules in this section are applicable to C# language only.
   - [csharp_style_deconstructed_variable_declaration](ide0042.md#csharp_style_deconstructed_variable_declaration)
   - [csharp_style_prefer_index_operator](ide0056.md#csharp_style_prefer_index_operator)
   - [csharp_style_prefer_range_operator](ide0057.md#csharp_style_prefer_range_operator)
+  - [csharp_style_implicit_object_creation_when_type_is_apparent](ide0090.md#csharp_style_implicit_object_creation_when_type_is_apparent)
+  - [Add missing cases to switch expression](ide0072.md) - This rule has no code style option.
 - ["Null" checking preferences](null-checking-preferences.md#c-null-checking-preferences)
   - [csharp_style_throw_expression](ide0016.md#csharp_style_throw_expression)
   - [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call)
@@ -114,9 +121,18 @@ The style rules in this section are applicable to C# language only.
   - [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement)
 - [Modifier preferences](modifier-preferences.md#c-modifier-preferences)
   - [csharp_prefer_static_local_function](ide0062.md#csharp_prefer_static_local_function)
-  
+  - [Make struct fields writable](ide0064.md) - This rule has no code style option.
+
+## Visual Basic style rules
+
+The style rules in this section are applicable to Visual Basic language only.
+
+- [Pattern matching preferences](pattern-matching-preferences.md)
+  - [visual_basic_style_prefer_isnot_expression](ide0084.md#visual_basic_style_prefer_isnot_expression)
+
 ## See also
 
+- [Unnecessary code rules](unnecessary-code-rules.md)
 - [Formatting rules](formatting-rules.md)
 - [Naming rules](naming-rules.md)
 - [.NET code style rules reference](index.md)

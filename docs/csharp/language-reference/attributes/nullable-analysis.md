@@ -7,7 +7,7 @@ description: These attributes are interpreted by the compiler to provide better 
 
 In a nullable context, the compiler performs static analysis of code to determine the null state of all reference type variables:
 
-- *not null*: Static analysis determined that the variable is assigned to a non-null value.
+- *not null*: Static analysis determines that a variable is assigned a non-null value.
 - *maybe null*: Static analysis cannot determine that a variable is assigned a non-null value.
 
 You can apply a number of attributes that provide information to the compiler about the semantics of your APIs. That information helps the compiler perform static analysis and determine when a variable is not null. This article provides a brief description of each of those attributes and how to use them. All the examples assume C# 8.0 or newer, and the code is in a nullable context.

@@ -132,7 +132,9 @@ To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example reads JSON from a string and creates an instance of the `WeatherForecast` class shown earlier for the [serialization example](#serialization-example):
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToString.cs?name=SnippetDeserialize)]
+```csharp
+WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
+```
 
 To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:
 

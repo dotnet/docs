@@ -173,6 +173,25 @@ namespace SystemTextJsonSamples
     }
     // </SnippetWFWithEnumDictionary>
 
+    // <SnippetWFWithPOCOs>
+    public class WeatherForecastWithPOCOs
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public string Summary { get; set; }
+        public string SummaryField;
+        public IList<DateTimeOffset> DatesAvailable { get; set; }
+        public Dictionary<string, HighLowTemps> TemperatureRanges { get; set; }
+        public string[] SummaryWords { get; set; }
+    }
+
+    public class HighLowTemps
+    {
+        public int High { get; set; }
+        public int Low { get; set; }
+    }
+    // </SnippetWFWithPOCOs>
+
     // <SnippetWFWithEnum>
     public class WeatherForecastWithEnum
     {
@@ -295,7 +314,7 @@ namespace SystemTextJsonSamples
             }
             Console.WriteLine();
         }
-        public static void DisplayPropertyValues(this SystemTextJsonSamples_2.WeatherForecast wf)
+        public static void DisplayPropertyValues(this WeatherForecastWithPOCOs wf)
         {
             Utilities.DisplayPropertyValues(wf);
             Console.WriteLine($"SummaryField: {wf.SummaryField}");
@@ -502,9 +521,9 @@ namespace SystemTextJsonSamples
             };
             return weatherForecast;
         }
-        public static SystemTextJsonSamples_2.WeatherForecast CreateWeatherForecastWithPOCOs()
+        public static WeatherForecastWithPOCOs CreateWeatherForecastWithPOCOs()
         {
-            var weatherForecast = new SystemTextJsonSamples_2.WeatherForecast
+            var weatherForecast = new WeatherForecastWithPOCOs
             {
                 Date = DateTime.Parse("2019-08-01"),
                 TemperatureCelsius = 25,
@@ -521,26 +540,4 @@ namespace SystemTextJsonSamples
             return weatherForecast;
         }
     }
-}
-
-namespace SystemTextJsonSamples_2
-{
-    // <SnippetWFWithPOCOs>
-    public class WeatherForecast
-    {
-        public DateTimeOffset Date { get; set; }
-        public int TemperatureCelsius { get; set; }
-        public string Summary { get; set; }
-        public string SummaryField;
-        public IList<DateTimeOffset> DatesAvailable { get; set; }
-        public Dictionary<string, HighLowTemps> TemperatureRanges { get; set; }
-        public string[] SummaryWords { get; set; }
-    }
-
-    public class HighLowTemps
-    {
-        public int High { get; set; }
-        public int Low { get; set; }
-    }
-    // </SnippetWFWithPOCOs>
 }

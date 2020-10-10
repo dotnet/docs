@@ -32,7 +32,7 @@ In many ways, monolithic apps are `straightforward`. They're straightforward to.
  - test
  - deploy
  - troubleshoot
- - scale
+ - scale-up vertically
 
 However, monolithic architectures present significant challenges. 
 

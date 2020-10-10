@@ -2,7 +2,7 @@
 title: The World is Distributed
 description: Gain an understanding of the challenges of distributed applications
 author: robvet
-ms.date: 10/04/2020
+ms.date: 10/10/2020
 ---
 
 # The world is distributed

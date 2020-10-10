@@ -7,7 +7,7 @@ namespace SystemTextJsonSamples
     {
         public static void Run()
         {
-            WeatherForecastWithPOCOs weatherForecast = WeatherForecastFactories.CreateWeatherForecastWithPOCOs();
+            WeatherForecast weatherForecast = WeatherForecastFactories.CreateWeatherForecast();
             weatherForecast.DisplayPropertyValues();
 
             // <SnippetSerialize>
@@ -16,7 +16,7 @@ namespace SystemTextJsonSamples
             // </SnippetSerialize>
 
             // <SnippetSerializeWithGenericParameter>
-            jsonString = JsonSerializer.Serialize<WeatherForecastWithPOCOs>(weatherForecast);
+            jsonString = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
             // </SnippetSerializeWithGenericParameter>
 
             Console.WriteLine($"JSON output:\n{jsonString}\n");
@@ -31,7 +31,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"Pretty-printed JSON output:\n{jsonString}\n");
 
             // <SnippetDeserialize>
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithPOCOs>(jsonString);
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
             // </SnippetDeserialize>
             weatherForecast.DisplayPropertyValues();
         }

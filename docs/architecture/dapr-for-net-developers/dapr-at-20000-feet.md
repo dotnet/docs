@@ -7,47 +7,25 @@ ms.date: 09/20/2020
 
 # Dapr @ 20,000 feet
 
-In chapter 1, we disucssed the widening and enthusiastic appeal of distributed applications. We also pointed out that distributed applications dramtically increase both architectural and operationl complexity. So, how can we "have our cake" and "eat it too?"
+In chapter 1, we discussed the appeal of distributed applications. But, we also pointed out that these types of applications dramatically increase architectural and operational complexity. So, the question becomes, how can we "have our cake" and "eat it too?"
 
 Ladies and Gentlemen, please welcome Dapr.
 
-Dapr, or *Distributed Application Runtime*, is s a new way for building distributed applications.
+Dapr, or *Distributed Application Runtime* - a new way to build distributed applications.
 
-What started as a <blah>, give some history, has grown to <blah> with a 1.0 release. 
-
-Since the announcement of Dapr at the 2019 Microsoft Ignite Conference, Microsoft has cloesly partnered with customers and the open source community to build and extend Dapr. This conceted effort validates the willingness of developers from all backgrounds to solve some of the toughest challenges when developing distributed applications.     
+What started as a prototype across a group of Microsoft engineers evolved into a highly successful open-source project.  Since the announcement of Dapr at the 2019 Microsoft Ignite Conference, Microsoft has closely partnered with customers and the open-source community to build and extend Dapr. This concerted effort validates the willingness of developers from all backgrounds to solve some of the toughest challenges when developing distributed applications.     
 
 In this book, we look at Dapr through the lens of the .NET Core platform.
 
 ## What is Dapr?
 
-At its core, Dapr is a *portable, event-driven runtime*. 
+At its core, Dapr is a `portable, event-driven runtime`. 
 
- - Portable, in that you write your application code once and run it across public clouds and edge devices. You expose a Dapr configuration file. It specifies external service components that you wish to include in your chosen environment. If you wish to move your app, you simply swap out the configuration file with bindings to service components in the new environment. Dapr can self-host for local development, run inside a VM, a Kubernetes, or Service Fabric cluster. 
+ - `Portable` in that you write your application code once and run it across any public cloud or edge devices. With a configuration file, you specify the external infrastructure services that you wish to include in your environment. If you move your app to another environment, you swap out the configuration file with bindings to service components in the new environment. Dapr can self-host for local development, run inside a VM, a Kubernetes, or Service Fabric cluster. 
 
- - Event-driven, in that you register external services. You can invoke them or have them invoke you - with minimal code and without taking a direct reference to them. 
+ - `Event-driven` in that Dapr supports event-driven resource binding and pub-sub messaging services. You can receive events from external resources, such as datastores, streaming services, or web hooks. You can also publish and subscribe events to different kinds of external message brokers - all with minimal code and no direct reference to the service. 
 
- - Runtime, in that you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
-
-
- > dotnet core is a runtime engine - you run programs within it
- > dapr is also a runtime engine - you run the dotnet program within the dapr runtime -- you tell dapr to start the service and that is with the dotnet runtime (dotnet run). So, the Dapr runtime encapsulates the .NET core runtime.
-
- > It implements a complete runtime where your applications can run safely, whatever the language, and where they access to multiples APIs facilitating some aspects of a complex microservice architecture: inter-service calls, queue management, state management …
- >  https://versusmind.eu/blog/dapr-a-serverless-runtime-for-distributed-applications
-
- > You're running the running the dapr runtime but within it you're running the dotnet runtime
- > Specfically, you're running the dot net service in a dapr sidecar. Now, other service can use dapr to call this service.
-
-
-
-
-Dapr is a “runtime” — what does that mean?
-I thought about this as well, when I first started exploring Dapr. In my specific case (Java middleware background), “runtime” was an application server which provided a “managed environment” (concurrency, security etc.) to my code (WAR, EAR etc.)
-That’s not the case with Dapr. It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
-Image for post
-
-
+ - `Runtime`, in that Dapr exposes a full runtime engine that run your services regardless of programming platform. Dotnet Core is a runtime engine - you run services within it. Dapr is *also* a runtime engine. You invoke the Dapr runtime and instruct it to start the dotnet runtime along side it. Dapr implements a `distributed runtime` by operating along with your application using a sidecar architecture. More about that coming up.
 
 ## What does Dapr solve?
 
@@ -70,11 +48,13 @@ Dapr version 1.0 features support for interservice communication, state manageme
 
 Finally, the previous figure shows the portability of Dapr running across many different environments.
 
-## Key concepts
-
-
+## Dapr architecture
 
 ### Buildilng blocks
+
+Dapr is built around the concept of building blocks. 
+
+
 
 As we saw in Figure 2-x, Dapr exposes a set of `Building Blocks`. Each block is API that abstracts an underlying service component. The APIs represent common services that a distributed application requires:
 
@@ -86,9 +66,16 @@ As we saw in Figure 2-x, Dapr exposes a set of `Building Blocks`. Each block is 
  - Actors
  - Resource bindings
 
+A building block is invoked by your app to perform an action against an infrastructure service.
+
+
+
+
 Your application invokes building block services by either HTTP or gRPC.
 
 The APIs exposed by building blocks bind to one or more underlying `components` that provide the service implementation. Components are 'pluggable' so that you can swap out one component with the same interface for another. You simply change defintion in the Dapr configuration file.
+
+Your app calls the Dapr API (HTTP or gRPC) and Dapr will call the target infrastructure component.
 
 
  > start with Dapr #4 detail
@@ -109,10 +96,29 @@ without polluting that code with any SDKs or libraries; it worked with any progr
 profound impacts on framework design and distributed application development
 
 
-### Sidecar architecture
-
-
 ### Components
+
+### Sidecar
+
+you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
+
+  > Specfically, you're running the dot net service in a dapr sidecar. Now, other service can use dapr to call this service.
+
+That’s not the case with Dapr. It is a “Runtime” that operates along with
+your application using a sidecar architecture — your application
+does not run “inside it”. In standalone mode, Dapr simply runs as a
+different process and in Kubernetes, it runs as a (sidecar) container in
+the same Pod as your application
+
+Dapr is a “runtime” — what does that mean?
+I thought about this as well, when I first started exploring Dapr. In my specific case (Java middleware background), “runtime” was an application server which provided a “managed environment” (concurrency, security etc.) to my code (WAR, EAR etc.)
+That’s not the case with Dapr. It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
+Image for post
+
+It should be clear from the above picture that Dapr is an higher abstraction than
+Kubernetes. Kubernetes does not have any concept of application.
+You can use Dapr as a sidecar container with your application containers running in
+Kubernetes. You can also use Dapr as a process for traditional deployments as well.
 
 
 ### Configuraiton
@@ -139,7 +145,43 @@ Dapr is not without challenges. Consider the following:
 - Finally, while Dapr covers the gamut of distributed component services, it does not provide support for database interaction. 
 
 
-## Dapr and service meshes
+## Dapr, service meshes, and Orleans
+
+ > See Dapr-runtime3.pdf and Dapr-runtime4.pdf
+ > Orleans -- see pros-cons.pdf
+
+Dapr can be used alongside any service mesh such as Istio and
+Linkerd. A service mesh is a dedicated network infrastructure layer
+designed to connect services to one another and provide insightful
+telemetry. A service mesh doesn’t introduce new functionality to an
+application.
+Dapr introduces new functionality to an app’s runtime. Both service
+meshes and Dapr run as side-car services to your application, one
+giving network features and the other distributed application
+capabilities.
+1 dapr init --slim
+Istio is not a programming model and does not focus on application
+level features such as state management, pub-sub, bindings etc. That
+is where Dapr comes in.
+So, there are some similarities between the two. But, as suggested by the dapr
+documentation we can use them together as well. Dapr will not focus on network
+concerns like traffic routing, A/B testing etc. This is where service mesh like Istio will
+provide value. Dapr will be more application centric
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,6 +191,15 @@ Dapr reduces the complexity of constructing microservice and evevnt-driven appli
 provides the *glue* that fuses decoupled service components with your business application b. At the same time, it greatly abstracts the complexity of distributed components and provides baked-in industry best practices. Figure 2-x provides a shot of Dapr from 20,000 feet.
 
 *Dapr is a portable, event-driven runtime that reduces the complexity of building resilient, microservice stateless and stateful applications that run on the cloud and edge and embraces the diversity of languages and developer frameworks.*
+
+
+
+ Dapr implements a sidecar architecture so that 
+ 
+  > dotnet core is a runtime engine - you run programs within it
+ > dapr is also a runtime engine - you run the dotnet program within the dapr runtime -- you tell dapr to start the service and that is with the dotnet runtime (dotnet run). So, the Dapr runtime encapsulates the .NET core runtime.
+
+
 
 
  > stop

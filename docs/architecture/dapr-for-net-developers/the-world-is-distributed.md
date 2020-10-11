@@ -70,7 +70,7 @@ But, while distributed services can provide agility and speed, they present a di
  - How can they scale to meet fluctuating demand?
  - How are they monitored and observed?
  
-This book introduces Dapr. Dapr is a distributed application runtime. It directly addresses many of the challenges found that come along with distributed applications. Looking ahead, Dapr has the potential to streamline the way in which distributed cloud applications are built.
+This book introduces Dapr. Dapr is a distributed application runtime. It directly addresses many of the challenges found that come along with distributed applications. Looking ahead, Dapr has the potential to have profound impact on distributed application development.
 
 ## Summary
 

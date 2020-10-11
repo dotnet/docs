@@ -8,7 +8,6 @@ f1_keywords:
   - "case"
   - "case_CSharpKeyword"
   - "defaultcase_CSharpKeyword"
-  - "defaultcase"
 helpviewer_keywords:
   - "switch statement [C#]"
   - "switch keyword [C#]"

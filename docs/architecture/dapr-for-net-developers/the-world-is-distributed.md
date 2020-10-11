@@ -60,9 +60,9 @@ Many organizations are finding this speed and agility by adopting a distributed 
 
 Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a shared database, each service owns it own datastore. Note how some services require a full relational database, but others, a NoSQL datastore. The Basket service stores its state in a distributed key-value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to back-end services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 
-But, while distributed services can provide agility and speed, they present many challenges. For example,... 
+But, while distributed services can provide agility and speed, they present a different set of challenges. Consider the following... 
 
- - How can services directly communicate with each other?
+ - How can distributed services directly communicate with each other?
  - How can they maintain contextual information across a transaction?
  - How can they implement asynchronous messaging? 
  - How can they become resilient to failure?
@@ -70,7 +70,7 @@ But, while distributed services can provide agility and speed, they present many
  - How can they scale to meet fluctuating demand?
  - How are they monitored and observed?
  
-This book introduces Dapr. Dapr is a distributed application runtime that directly addresses many of the challenges of distributed applications. Looking ahead, it has the potential to streamline the way in which distributed cloud applications are built.
+This book introduces Dapr. Dapr is a distributed application runtime. It directly addresses many of the challenges found that come along with distributed applications. Looking ahead, Dapr has the potential to streamline the way in which distributed cloud applications are built.
 
 ## Summary
 

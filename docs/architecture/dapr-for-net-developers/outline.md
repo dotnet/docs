@@ -11,11 +11,12 @@ Dapr @ 20,000 feet
     - Pluggable architecture
     - Dynamic glue
 
- - Key concepts
+ - Dapr architecture
     - Building blocks
-    - Sidecar architecture
     - Components
+    - Sidecar
     - Configuration
+ 
  - Supported platforms
     - Native API vs. platform SDKs
     - .NET SDK for Dapr
@@ -26,3 +27,4 @@ Dapr @ 20,000 feet
     - No native support for databases
 
  - Dapr and service meshes
+    - Mention Orleans 

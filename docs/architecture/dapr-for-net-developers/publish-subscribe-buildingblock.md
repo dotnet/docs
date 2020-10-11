@@ -11,7 +11,7 @@ The Publish/Subscribe pattern is a well known messaging pattern that has been ar
 
 ## What it solves
 
-The main advantage of the Publish/Subscribe pattern, is that the services that send messages (the **publishers**) are decoupled from the services that receive the messages (the **consumers**). The producers do not need to know which consumers will consume their messages or where they run. This is possible because with the Publish/Subscribe pattern a central **message-broker** is used to distribute the messages.
+The main advantage of the Publish/Subscribe pattern, is that the services that send messages (the **publishers**) are decoupled from the services that receive the messages (the **consumers**). The publishers do not need to know which consumers will consume their messages or where they run. This is possible because with the Publish/Subscribe pattern a central **message-broker** is used to distribute the messages.
 
 ![](media/pubsub-pattern.png)
 
@@ -19,7 +19,7 @@ The main advantage of the Publish/Subscribe pattern, is that the services that s
 2. Publisher sends a messages to the message-broker.
 3. The message-broker forwards a copy of the message to all subscribers.
 
-Some message-brokers offer a queueing mechanism and can persist messages once received. In this case, it is not even necessary for the consumers to be online when the message is sent by a producer. Once the consumer comes back online, the message is delivered to it and can be handled. This offers you temporal decoupling of producers and consumers and helps to decrease coupling between services.
+Some message-brokers offer a queueing mechanism and can persist messages once received. In this case, it is not even necessary for the consumers to be online when the message is sent by a publisher. Once the consumer comes back online, the message is delivered to it and can be handled. This offers you temporal decoupling of publishers and consumers and helps to decrease coupling between services.
 
 There are several message-broker products available - either commercial software as well as open-source software. Each one has its own advantages and drawbacks which you as an application developer have to match with the requirements you have for the system you're building. To make sure the application being built is not tied to a specific message-broker product, often an abstraction layer is created. Although this is a wise decision, it contains a fair amount of code you have to write and maintain. And often this code is also not very trivial and error-prone. This is exactly where Dapr can come to the rescue.
 

@@ -79,7 +79,7 @@ In he following diagram you can see the entire flow of the example:
 
 ![](media/pubsub-dapr-pattern.png)
 
-1. The Dapr sidecar of Service B (consumer) calls the `/dapr/subscribe` endpoint on the service. The service responses with the subscriptions it wants to create.
+1. The Dapr sidecar of Service B (consumer) calls the `/dapr/subscribe` endpoint on the service. The service responds with the subscriptions it wants to create.
 2. The Dapr sidecar of Service B creates the requested subscriptions on the message-broker.
 3. Service A (producer) calls the `/v1.0/publish/<pubsubname>/<topic>` endpoint on its sidecar.
 4. The Service A sidecar publishes the message to the message-broker.

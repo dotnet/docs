@@ -5,6 +5,8 @@ ms.date: 03/13/2020
 f1_keywords:
   - "default_CSharpKeyword"
   - "default"
+  - "defaultvalue_CSharpKeyword"
+  - "defaultvalue"
 helpviewer_keywords: 
   - "default keyword [C#]"
 ---

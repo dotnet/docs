@@ -11,12 +11,12 @@ The Publish/Subscribe pattern is a well known messaging pattern that has been ar
 
 ## What it solves
 
-The main advantage of the Publish/Subscribe pattern, is that the services that send messages (the **producers**) are decoupled from the services that receive the messages (the **consumers**). The producers do not need to know which consumers will consume their messages or where they run. This is possible because with the Publish/Subscribe pattern a central **message-broker** is used to distribute the messages.
+The main advantage of the Publish/Subscribe pattern, is that the services that send messages (the **publishers**) are decoupled from the services that receive the messages (the **consumers**). The producers do not need to know which consumers will consume their messages or where they run. This is possible because with the Publish/Subscribe pattern a central **message-broker** is used to distribute the messages.
 
 ![](media/pubsub-pattern.png)
 
 1. Subscribers create a subscription on the message-broker.
-2. Publishers send messages to the message-broker.
+2. Publisher sends a messages to the message-broker.
 3. The message-broker forwards a copy of the message to all subscribers.
 
 Some message-brokers offer a queueing mechanism and can persist messages once received. In this case, it is not even necessary for the consumers to be online when the message is sent by a producer. Once the consumer comes back online, the message is delivered to it and can be handled. This offers you temporal decoupling of producers and consumers and helps to decrease coupling between services.
@@ -81,7 +81,7 @@ In he following diagram you can see the entire flow of the example:
 
 1. The Dapr sidecar of Service B (consumer) calls the `/dapr/subscribe` endpoint on the service. The service responds with the subscriptions it wants to create.
 2. The Dapr sidecar of Service B creates the requested subscriptions on the message-broker.
-3. Service A (producer) calls the `/v1.0/publish/<pubsubname>/<topic>` endpoint on its sidecar.
+3. Service A (publisher) calls the `/v1.0/publish/<pubsubname>/<topic>` endpoint on its sidecar.
 4. The Service A sidecar publishes the message to the message-broker.
 5. The message-broker sends a copy of the message to the Service B sidecar.
 6. The Service B sidecar calls the endpoint corresponding to the subscription (in this case `/orders`) on Service B.
@@ -90,7 +90,11 @@ Obviously, using the Dapr APIs directly over HTTP is fine, but you need to handl
 
 ### Using the Dapr .NET SDK
 
-The .NET SDK offers a more convenient way of working with the Publish/Subscribe building block. It offers a **Dapr client** that can be used to invoke several Dapr building blocks. One of the methods it offers is the `PublishEventAsync` method for publishing a message. This is an example of how to use it:
+The .NET SDK offers a more convenient way of working with the Publish/Subscribe building block. It offers a `Daprclient` class that can be used to invoke several Dapr building blocks.
+
+> You must add a reference the NuGet package `Dapr.Client` in your project in order to use the Dapr client.
+
+One of the methods the Dapr client offers is the `PublishEventAsync` method for publishing a message. This is an example of how to use it:
 
 ```csharp
 var data = new OrderData
@@ -206,27 +210,152 @@ You can see in this example that you can specify any message-broker specific con
 
 ## Reference case: eShopOnDapr
 
-[Really quick intro on specific pub/sub stuff in eShop]
+Within the eShopOnDapr sample application, the Publish/Subscribe pattern is used in several places for communicating integration events, for example:
 
-Within the eShopOnDapr sample application, the Publish/Subscribe pattern is used in several areas:
+- When a user checks-out a shopping basket.
+- When a payment for an order has succeeded.
+- When the grace-period of a purchase has expired.
 
-- Example 1
-- Example 2
+In eShopOnContainers, the Publish/Subscribe pattern was implemented using an *IEventBus* abstraction:
 
-First, let's look at which Publish/Subscribe components are configured for eShopOnDapr.
+```csharp
+public interface IEventBus
+{
+    void Publish(IntegrationEvent @event);
 
-[Component(s)]
+    void Subscribe<T, TH>()
+        where T : IntegrationEvent
+        where TH : IIntegrationEventHandler<T>;
 
-[Code samples]
+    void SubscribeDynamic<TH>(string eventName)
+        where TH : IDynamicIntegrationEventHandler;
 
-### Pub/sub in eShopOnDapr
-...
+    void UnsubscribeDynamic<TH>(string eventName)
+        where TH : IDynamicIntegrationEventHandler;
 
-[Benefits interleaved with the description]
+    void Unsubscribe<T, TH>()
+        where TH : IIntegrationEventHandler<T>
+        where T : IntegrationEvent;
+}
+```
 
-[Benefit: Nice integration with ASP.NET Controllers. Doesn't matter how your code called (HTTP request, message), server side is the same.]
+Multiple implementations existed for this abstraction, each for a different message-broker (RabbitMQ and Azure Service Bus). Each implementation implemented both the publish as the subscribe part of the abstraction.
+
+### Publishing events
+
+In eShopOnDapr, the entire Publish/Subscribe behavior was replaced with Dapr. This refactoring was pretty straightforward. The existing `IEventBus` abstraction was reduced so it only contains a method for publishing events:
+
+```csharp
+public interface IEventBus
+{
+    Task PublishAsync<TIntegrationEvent>(TIntegrationEvent @event)
+        where TIntegrationEvent : IntegrationEvent;
+}
+```
+
+The `PublishAsync` method was made generic so the .NET type of the event being sent can be specified. This is necessary because Dapr needs this type information in order to send the event. Obviously no code-changes were necessary for calling this method, because the only argument is the event and its type can be inferred at runtime.
+
+To implement the `IEventBus` abstraction, a `DaprEventBus` implementation was created. This implementation simply uses the Dapr client to publish an event:
+
+```csharp
+public class DaprEventBus : IEventBus
+{
+    private const string DAPR_PUBSUB_NAME = "pubsub";
+
+    private readonly DaprClient _dapr;
+    private readonly ILogger<DaprEventBus> _logger;
+
+    public DaprEventBus(DaprClient dapr, ILogger<DaprEventBus> logger)
+    {
+        _dapr = dapr;
+        _logger = logger;
+    }
+
+    public async Task PublishAsync<TIntegrationEvent>(TIntegrationEvent @event)
+        where TIntegrationEvent : IntegrationEvent
+    {
+        var topicName = @event.GetType().Name;
+
+        _logger.LogInformation("Publishing event {@Event} to {PubsubName}.{TopicName}", @event, DAPR_PUBSUB_NAME, topicName);
+
+        // We need to make sure that we pass the concrete type to PublishEventAsync,
+        // which can be accomplished by casting the event to dynamic. This ensures
+        // that all event fields are properly serialized.
+        await _dapr.PublishEventAsync(DAPR_PUBSUB_NAME, topicName, (dynamic)@event);
+    }
+}
+```
+
+As you can see in the code-snippet, the name of the event type is used as the topic to send the event to. Because all services were built against the `IEventBus` abstraction, nothing needed to be changed in order to publish events.
+
+One of the benefits of using Dapr, is that the code is reduced heavily and is now pretty straightforward. It does not need to distinguish between the different message-brokers being used anymore. This is abstracted by Dapr that can be configured to use different message-broker components. We will get back to how that works in eShopOnDapr later on.
+
+### Subscribing to events
+
+In eShopOnContainers, subscriptions were handled by *SubscriptionManagers*. Each specific message-broker for which an implementation of the `IEventBus` abstraction existed, contained a fair amount of message-broker specific code for handling subscriptions. Each service that wanted to receive events needed to explicitly register a handler for each event-type upon startup.
+
+This was replaced in eShopOnDapr with the nice ASP.NET Core integration that Dapr offers as described earlier. We created a controller in each service with a method for each event to handle. We decorated each controller-method with the corresponding `Topic` attribute the message is published to. Here's an code-snippet taken from the `PaymentService`:
+
+```csharp
+[Route("api/v1/[controller]")]
+[ApiController]
+public class IntegrationEventController : ControllerBase
+{
+    private const string DAPR_PUBSUB_NAME = "pubsub";
+
+    private readonly IServiceProvider _serviceProvider;
+
+    public IntegrationEventController(IServiceProvider serviceProvider)
+    {
+        _serviceProvider = serviceProvider;
+    }
+
+    [HttpPost("OrderStatusChangedToValidated")]
+    [Topic(DAPR_PUBSUB_NAME, "OrderStatusChangedToValidatedIntegrationEvent")]
+    public async Task OrderStarted(OrderStatusChangedToValidatedIntegrationEvent @event)
+    {
+        var handler = _serviceProvider.GetRequiredService<OrderStatusChangedToValidatedIntegrationEventHandler>();
+        await handler.Handle(@event);
+    }
+}
+```
+
+As you can see in the code-snippet, the name of the event type is used as the topic to subscribe to. The `OrderStatusChangedToValidatedIntegrationEventHandler` being used in the code-snippet is an event-handler that already existed in eShopOnContainers. Because Dapr now handles everything around subscriptions and the differences between message-brokers, this means lots of code became obsolete and could be removed from the code-base.
+
+### Using Publish/Subscribe components
+
+Within the eShopOnDapr repository, there's a `deployment` folder that contains files for deploying the application using different deployment methods (for now: `Docker Compose` and `k8s`). Within each of these folders, a dapr folder exists that holds a components folder. In this folder, the Publish/Subscribe component that must be used for Publish/Subscribe is configured. As you saw in the code-snippets shown earlier, the name of the Publish/Subscribe component used is `pubsub`. Here's the content of the `eshop-pubsub.yaml` file in the `deployment/compose/dapr/components` folder:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: pubsub
+  namespace: default
+spec:
+  type: pubsub.nats
+  metadata:
+  - name: natsURL
+    value: nats://demo.nats.io:4222
+```
+
+As you can see, the NATS message-broker is configured in ths example. If you want to use a different message-broker for eShopOnDapr, you only need to change this file and configure a different message-broker (e.g. the RabbitMQ broker). Because you're using Dapr, you don't need any code-changes whatsoever when switching message-broker.
 
 ## Summary
+
+The Publish/Subscribe pattern can help with decoupling services in a distributed application. Dapr offers the Publish/Subscribe building block for implementing this pattern in your applications.
+
+The Dapr sidecar offers an API that can be used to publish a message. Each message is published to a certain *topic*.
+
+Each service's Dapr sidecar will query the service to determine which topic(s) the service wants to subscribe to.
+
+The Publish/Subscribe building block can be used directly over HTTP or by using one of the available language specific SDKs.
+
+The .NET SDK for Dapr can be used by adding a reference to the `Dapr.Client` NuGet package. It offers a `DaprClient` class that can be used to publish messages. Dapr also offers a very straightforward way of integrating the Publish/Subscribe building block in an ASP.NET Core WebAPI application. For this you need a reference to the `Dapr.AspNetCore` NuGet package. WebAPI controller methods can be decorated with the `Topic` attribute from this package to specify to Dapr that the method being decorated must be invoked when a message comes in on the specified topic.
+
+Using dapr components mechanism, the actual message-broker used by Dapr to distribute the messages can be configured.
+
+When using the Dapr Publish/Subscribe building block, it becomes really straightforward to switch to another message-broker for your application without any code-changes.
 
 ### References
 

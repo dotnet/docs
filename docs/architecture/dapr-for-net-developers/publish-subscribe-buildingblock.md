@@ -11,9 +11,15 @@ The Publish/Subscribe pattern is a well known messaging pattern that has been ar
 
 ## What it solves
 
-The main advantage of the Publish/Subscribe pattern, is that the services that send messages (the **producers**) are decoupled from the services that receive the messages (the **consumers**). The producers do not need to know which consumers will consume their messages or where they run. In some implementations it is not even necessary for the consumers to be online when the message is sent by a producer. Once the consumer comes back online, the message is delivered to it and handled by the consumer. Whether or not this is possible has a lot to do with how you transport the messages from the producer to the consumer. We often use something called a **message-broker** as middleware that takes care of transporting the messages. If the message-broker used also supports queuing of messages, then you get this temporal decoupling of producers and consumers as a benefit.
+The main advantage of the Publish/Subscribe pattern, is that the services that send messages (the **producers**) are decoupled from the services that receive the messages (the **consumers**). The producers do not need to know which consumers will consume their messages or where they run. This is possible because with the Publish/Subscribe pattern a central **message-broker** is used to distribute the messages.
 
-[pub/sub diagram]
+![](media/pubsub-pattern.png)
+
+1. Subscribers create a subscription on the message-broker.
+2. Publishers send messages to the message-broker.
+3. The message-broker forwards a copy of the message to all subscribers.
+
+Some message-brokers offer a queueing mechanism and can persist messages once received. In this case, it is not even necessary for the consumers to be online when the message is sent by a producer. Once the consumer comes back online, the message is delivered to it and can be handled. This offers you temporal decoupling of producers and consumers and helps to decrease coupling between services.
 
 There are several message-broker products available - either commercial software as well as open-source software. Each one has its own advantages and drawbacks which you as an application developer have to match with the requirements you have for the system you're building. To make sure the application being built is not tied to a specific message-broker product, often an abstraction layer is created. Although this is a wise decision, it contains a fair amount of code you have to write and maintain. And often this code is also not very trivial and error-prone. This is exactly where Dapr can come to the rescue.
 
@@ -44,7 +50,6 @@ curl -X POST http://localhost:3500/v1.0/publish/pubsub/newOrder \
   -H "Content-Type: application/json" \
   -d '{ "orderId": "1234", "productId": "5678", "amount": 2 }'
 ```
-
 Receiving messages is possible by subscribing to a topic. Upon startup, the Dapr runtime will query your application on a well-known end-point to ask for the subscriptions you want to create. This is the end-point that will be called:
 
 `http://localhost:<appPort>/dapr/subscribe`
@@ -68,7 +73,18 @@ The application needs to handle requests on the `/dapr/subscribe` endpoint and r
 ]
 ```
 
-In this example, you see the application wants to subscribe to two topics `newOrder` and `newProduct` and register the end-points `/orders` and `/productDatalog/products` with these topics. For both subscriptions, the application wants to use the Publish/Subscribe component named `pubsub`.
+In this example, you see the application wants to subscribe to two topics `newOrder` and `newProduct` and register the end-points `/orders` and `/productCatalog/products` with these topics. For both subscriptions, the application wants to use the Publish/Subscribe component named `pubsub`.
+
+In he following diagram you can see the entire flow of the example:
+
+![](media/pubsub-dapr-pattern.png)
+
+1. The Dapr sidecar of Service B (consumer) calls the `/dapr/subscribe` endpoint on the service. The service responses with the subscriptions it wants to create.
+2. The Dapr sidecar of Service B creates the requested subscriptions on the message-broker.
+3. Service A (producer) calls the `/v1.0/publish/<pubsubname>/<topic>` endpoint on its sidecar.
+4. The Service A sidecar publishes the message to the message-broker.
+5. The message-broker sends a copy of the message to the Service B sidecar.
+6. The Service B sidecar calls the endpoint corresponding to the subscription (in this case `/orders`) on Service B.
 
 Obviously, using the Dapr APIs directly over HTTP is fine, but you need to handle serialization, HTTP response codes and things like that yourself. But there is a more convenient way of doing Publish/Subscribe when you use one of the available SDKs.
 
@@ -191,6 +207,17 @@ You can see in this example that you can specify any message-broker specific con
 ## Reference case: eShopOnDapr
 
 [Really quick intro on specific pub/sub stuff in eShop]
+
+Within the eShopOnDapr sample application, the Publish/Subscribe pattern is used in several areas:
+
+- Example 1
+- Example 2
+
+First, let's look at which Publish/Subscribe components are configured for eShopOnDapr.
+
+[Component(s)]
+
+[Code samples]
 
 ### Pub/sub in eShopOnDapr
 ...

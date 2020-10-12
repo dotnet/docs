@@ -20,7 +20,7 @@ If none of these constructors are available, a <xref:System.NotSupportedExceptio
 
 #### Reason for change
 
-- To enforce consistent behavior between all target framework monikers (TFMs) that <xref:System.Text.Json?displayProperty=fullName> builds for (.NET Core 3.0 and later version, and .NET Standard 2.0 and 2.1)
+- To enforce consistent behavior between all target framework monikers (TFMs) that <xref:System.Text.Json?displayProperty=fullName> builds for (.NET Core 3.0 and later versions, and .NET Standard 2.0 and 2.1)
 - Because <xref:System.Text.Json.JsonSerializer> shouldn't call the non-public surface area of a type, whether that's a constructor, a property, or a field.
 
 #### Recommended action

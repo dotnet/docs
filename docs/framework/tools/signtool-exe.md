@@ -155,33 +155,33 @@ signtool catdb /v /u MyCatalogFileName.cat
   
  The following command signs a file automatically by using the best certificate.  
   
-```console  
+```console 
 signtool sign /a /fd SHA256 MyFile.exe 
 ```
 
  The following command digitally signs a file by using a certificate stored in a password-protected PFX file.  
   
 ```console  
-signtool sign /f MyCert.pfx /p MyPassword /fd SHA256 MyFile.exe 
-```   
+signtool sign /f MyCert.pfx /p MyPassword /fd SHA256 MyFile.exe
+```  
   
  The following command digitally signs and time-stamps a file. The certificate used to sign the file is stored in a PFX file.  
   
 ```console  
-signtool sign /f MyCert.pfx /t http://timestamp.digicert.com /fd SHA256 MyFile.exe 
-```   
+signtool sign /f MyCert.pfx /t http://timestamp.digicert.com /fd SHA256 MyFile.exe
+```  
   
  The following command signs a file by using a certificate located in the `My` store that has a subject name of `My Company Certificate`.  
   
 ```console  
-signtool sign /n "My Company Certificate" /fd SHA256 MyFile.exe 
-```   
+signtool sign /n "My Company Certificate" /fd SHA256 MyFile.exe
+```  
   
  The following command signs an ActiveX control and provides information that is displayed by Internet Explorer when the user is prompted to install the control.  
   
 ```console  
-Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl/info.html /fd SHA256 MyControl.exe 
-```   
+Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl/info.html /fd SHA256 MyControl.exe
+```  
   
  The following command time-stamps a file that has already been digitally signed.  
   

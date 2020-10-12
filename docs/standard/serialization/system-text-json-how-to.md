@@ -60,7 +60,7 @@ Here's an example class that contains collection-type properties and a user-defi
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPOCOs)]
 
 > [!TIP]
-> "POCO" stands for [plain old CLR object](https://en.wikipedia.org/wiki/Plain_old_CLR_object). A POCO is a .NET type that isn't derived from a base class and has no attributes describing infrastructure concerns, for example, property visibility in a designer.
+> "POCO" stands for [plain old CLR object](https://en.wikipedia.org/wiki/Plain_old_CLR_object). A POCO is a .NET type that doesn't depend on any framework-specific types, for example, through inheritance or attributes.
 
 The JSON output from serializing an instance of the preceding type looks like the following example. The JSON output is minified by default:
 

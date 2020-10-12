@@ -208,7 +208,7 @@ You can read more about the details in the [async main](../programming-guide/mai
 
 ## Local functions
 
-Many designs for classes include methods that are called from only one location. These additional private methods keep each method small and focused. *Local functions* enable you to  methods inside the context of another method. Local functions make it easier for readers of the class to see that the local method is only called from the context in which it is declared.
+Many designs for classes include methods that are called from only one location. These additional private methods keep each method small and focused. *Local functions* enable you to declare methods inside the context of another method. Local functions make it easier for readers of the class to see that the local method is only called from the context in which it is declared.
 
 There are two common use cases for local functions: public iterator methods and public async methods. Both types of methods generate code that reports errors later than programmers might expect. In iterator methods, any exceptions are observed only when calling code that enumerates the returned sequence. In async methods, any exceptions are only observed when the returned `Task` is awaited. The following example demonstrates separating parameter validation from the iterator implementation using a local function:
 

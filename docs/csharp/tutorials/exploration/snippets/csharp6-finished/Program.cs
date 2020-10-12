@@ -1,6 +1,6 @@
-﻿// <SnippetUsingStatic>
+﻿// <UsingStatic>
 using static System.Console;
-// </SnippetUsingStatic>
+// </UsingStatic>
 using System.Linq;
 
 public class Person
@@ -8,7 +8,7 @@ public class Person
     public string FirstName { get; private set; }
     public string LastName { get; private set; }
 
-    // <SnippetMiddleName>
+    // <MiddleName>
     public string MiddleName { get; } = "";
 
     public Person(string first, string middle, string last)
@@ -17,7 +17,7 @@ public class Person
         MiddleName = middle;
         LastName = last;
     }
-    // </SnippetMiddleName>
+    // </MiddleName>
 
     public Person(string first, string last)
     {
@@ -25,26 +25,26 @@ public class Person
         LastName = last;
     }
 
-    // <SnippetStringInterpolation>
+    // <StringInterpolation>
     public override string ToString() => $"{FirstName} {LastName}";
     public string AllCaps() => ToString().ToUpper();
-    // </SnippetStringInterpolation>
+    // </StringInterpolation>
 }
 
 public class Program
 {
     public static void Main()
     {
-        // <SnippetInterpolationMain>
+        // <InterpolationMain>
         var p = new Person("Bill", "Wagner");
         WriteLine($"The name, in all caps: {p.AllCaps()}");
         WriteLine($"The name is: {p}");
-        // </SnippetInterpolationMain>
-        // <SnippetPhrases>
+        // </InterpolationMain>
+        // <Phrases>
         var phrase = "the quick brown fox jumps over the lazy dog";
         var wordLength = from word in phrase.Split(' ') select word.Length;
         var average = wordLength.Average();
         WriteLine(average);
-        // </SnippetPhrases>
+        // </Phrases>
     }
 }

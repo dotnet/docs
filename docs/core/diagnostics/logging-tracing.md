@@ -1,7 +1,7 @@
 ---
 title: Logging and tracing - .NET Core
 description: An introduction to .NET Core logging and tracing.
-ms.date: 08/05/2019
+ms.date: 10/12/2020
 ---
 # .NET Core logging and tracing
 
@@ -72,10 +72,10 @@ The low-level APIs may not be the right choice for your logging needs. You may w
 
 The <xref:Microsoft.Extensions.Logging.ILogger> interface has been used to create a common logging interface where the loggers can be inserted through dependency injection.
 
-For instance, to allow you to make the best choice for your application `ASP.NET` offers support for a selection of built-in and third-party frameworks:
+For instance, to allow you to make the best choice for your application .NET offers support for a selection of built-in and third-party frameworks:
 
-- [ASP.NET built in logging providers](/aspnet/core/fundamentals/logging/#built-in-logging-providers)
-- [ASP.NET Third-party logging providers](/aspnet/core/fundamentals/logging/#third-party-logging-providers)
+- [.NET Built-in logging providers](../extensions/logging-providers.md#built-in-logging-providers)
+- [.NET Third-party logging providers](../extensions/logging-providers.md#third-party-logging-providers)
 
 ## Logging related references
 
@@ -83,11 +83,9 @@ For instance, to allow you to make the best choice for your application `ASP.NET
 
 - [How to: Add Trace Statements to Application Code](../../framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
 
-- [ASP.NET Logging](/aspnet/core/fundamentals/logging)
-provides an overview of the logging techniques it supports.
+- [Logging in .NET](../extensions/logging.md) provides an overview of the logging techniques it supports.
 
-- [C# String Interpolation](../../csharp/language-reference/tokens/interpolated.md)
- can simplify writing logging code.
+- [C# string interpolation](../../csharp/language-reference/tokens/interpolated.md) can simplify writing logging code.
 
 - The <xref:System.Exception.Message?displayProperty=nameWithType> property is useful for logging exceptions.
 

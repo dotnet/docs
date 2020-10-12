@@ -59,6 +59,9 @@ Here's an example class that contains collection-type properties and a user-defi
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPOCOs)]
 
+> [!TIP]
+> "POCO" stands for [plain old CLR object](https://en.wikipedia.org/wiki/Plain_old_CLR_object). A POCO is a .NET type that isn't derived from a special base class and has no attributes describing infrastructure concerns, for example, property visibility in a designer.
+
 The JSON output from serializing an instance of the preceding type looks like the following example. The JSON output is minified by default:
 
 ```json
@@ -116,7 +119,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 Supported types include:
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [Plain Old CLR Objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
+* User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
 * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
 * Collections from the following namespaces.
@@ -130,11 +133,9 @@ You can [implement custom converters](system-text-json-converters-how-to.md) to 
 
 To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method.
 
-The following example reads JSON from a string and creates an instance of the `WeatherForecast` class shown earlier for the [serialization example](#serialization-example):
+The following example reads JSON from a string and creates an instance of the `WeatherForecastWithPOCOs` class shown earlier for the [serialization example](#serialization-example):
 
-```csharp
-WeatherForecast weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
-```
+[!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToString.cs?name=SnippetDeserialize)]
 
 To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:
 

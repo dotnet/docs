@@ -16,6 +16,10 @@ Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code.
 
 See [CoreRT](#corert) and [.NET Native](#net-native).
 
+## app model
+
+A workload-specific API. Examples are Windows Forms, ASP.NET, and UWP.
+
 ## ASP.NET
 
 The original ASP.NET implementation that ships with the .NET Framework.
@@ -285,6 +289,10 @@ See [Target Frameworks](frameworks.md).
 Universal Windows Platform.
 
 An implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by .NET 5 (and .NET Core) and later versions.
+
+## workload
+
+A type of app someone is building. More generic than [app model](#app-model). Examples are Mobile, Desktop, IoT, Web, and Games.
 
 ## See also
 

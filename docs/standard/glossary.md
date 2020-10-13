@@ -300,9 +300,9 @@ An implementation of .NET that is used for building modern, touch-enabled Window
 
 ## workload
 
-A type of app someone is building. More generic than [app model](#app-model). Examples are Mobile, Desktop, IoT, Web, and Games. The following example sentence is referring to workloads, not app models:
+A type of app someone is building. More generic than [app model](#app-model). For example, at the top of every .NET documentation page including this one is a drop-down list for **Workloads**, which lets you switch to documentation for **Web**, **Mobile**, **Cloud**, **Desktop**, and **Machine Learning \& Data**.
 
-> With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, gaming, and IoT.
+In some contexts, *workload* refers to a collection of Visual Studio features that you can choose to install to support a particular workload. For an example, see [Select a workload](../core/install/windows.md#select-a-workload).
 
 ## See also
 

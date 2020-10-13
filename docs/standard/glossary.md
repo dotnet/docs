@@ -18,7 +18,7 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 ## app model
 
-A workload-specific API. Here are some examples:
+A [workload](#workload)-specific API. Here are some examples:
 
 * ASP.NET
 * ASP.NET Web API

@@ -1,23 +1,19 @@
 ---
 title: Visual Basic error messages
 titleSuffix: ""
-ms.date: 07/20/2015
+ms.date: 10/13/2020
 helpviewer_keywords:
   - "errors [Visual Basic]"
   - "error messages"
-  - "trappable errors"
-  - "errors [Visual Basic], trappable"
 ms.assetid: f2dda05b-baef-41f5-8bb1-598bd7cf239f
 ---
 # Error messages in Visual Basic
 
-When you write, compile, or run a Visual Basic application, the following types of errors can occur:
+When you compile or run a Visual Basic application, the following types of errors can occur:
 
-- Design-time errors, which occur when you write an application in Visual Studio.
+- Compile-time errors, which occur when you compile an application.
 
-- Compile-time errors, which occur when you compile an application in Visual Studio or at a command prompt.
-
-- Run-time errors, which occur when you run an application in Visual Studio or as a stand-alone executable file.
+- Run-time errors, which occur when an application is running.
 
 For information about how to troubleshoot a specific error, see [Additional Resources for Visual Basic Programmers](../../getting-started/additional-resources.md).
 
@@ -31,6 +27,6 @@ The code can trap and examine run-time errors. If you enclose the code that prod
 
 If the Visual Basic compiler encounters a problem in the code, a compile-time error occurs. In the Visual Studio code editor, you can easily identify which line of code caused the error because a wavy line appears under that line of code. The error message appears if you either point to the wavy underline or open the **Error List**, which also shows other messages.
 
-If an identifier has a wavy underline and a short underline appears under the rightmost character, you can generate a stub for the class, constructor, method, property, field, or enum. For more information, see [Generate From Usage](/visualstudio/ide/visual-csharp-intellisense#generate-from-usage).
+If an identifier has a wavy underline and a short underline appears under the rightmost character, you can generate a stub for the class, constructor, method, property, field, or enum. For more information, see [Generate From Usage (Visual Studio)](/visualstudio/ide/visual-csharp-intellisense#generate-from-usage).
 
 By resolving warnings from the Visual Basic compiler, you might be able to write code that runs faster and has fewer bugs. These warnings identify code that may cause errors when the application is run. For example, the compiler warns you if you try to invoke a member of an unassigned object variable, return from a function without setting the return value, or execute a `Try` block with errors in the logic to catch exceptions. For more information about warnings, including how to turn them on and off, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).

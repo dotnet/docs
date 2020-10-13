@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC31122"
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
 ---
-# : BC31122'Custom' modifier is not valid on events declared without explicit delegate types
+# BC31122: 'Custom' modifier is not valid on events declared without explicit delegate types
 
 Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause following the event name that explicitly specifies the delegate type for the event.
 

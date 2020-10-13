@@ -188,13 +188,8 @@ public static class Program
 {
     public static void Main()
     {
-        // 
         string[] values = new string[10];
-
-        // The variable 's' is assigned a null value.
         string s = values[0];
-
-        // Produces a NullReferenceException at runtime, while the compiler doesn't show any warnings.
         Console.WriteLine(s.ToUpper());
     }
 }

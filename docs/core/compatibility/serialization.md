@@ -9,7 +9,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Introduced version |
 | - | - |
-| [PropertyNamingPolicy is honored when serializing and deserializing key-value pairs](#propertynamingpolicy-is-honored-when-serializing-and-deserializing-key-value-pairs) | 5.0 |
+| [PropertyNamingPolicy, PropertyNameCaseInsensitive, and Encoder options are honored when serializing and deserializing key-value pairs](#propertynamingpolicy-propertynamecaseinsensitive-and-encoder-options-are-honored-when-serializing-and-deserializing-key-value-pairs) | 5.0 |
 | [Non-public, parameterless constructors not used for deserialization](#non-public-parameterless-constructors-not-used-for-deserialization) | 5.0 |
 | [JsonSerializer.Serialize throws ArgumentNullException when type parameter is null](#jsonserializerserialize-throws-argumentnullexception-when-type-parameter-is-null) | 5.0 |
 | [JsonSerializer.Deserialize requires single-character string](#jsonserializerdeserialize-requires-single-character-string) | 5.0 |

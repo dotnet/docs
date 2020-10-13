@@ -1,51 +1,47 @@
 ---
-title: Get Started - C# Guide
-description: Find short, simple tutorials that let you quickly learn introductory C# concepts and write .NET Core applications.
-helpviewer_keywords:
-  - "Visual C#, getting started"
-  - "getting started, Visual C#"
-ms.date: 04/05/2019
+title: Get Started - an introduction to the C# language and .NET"
+description: Learn the basics of C# and .NET. Get an overview of the C# language and .NET ecosystem.
+ms.date: 10/13/2020
 ---
-# Get started with C\#
+# Introduction to the C# language and .NET
 
-This section provides short, simple tutorials that let you quickly build an application using C# and .NET Core. There are getting started topics for Visual Studio and Visual Studio Code. These articles assume some programming experience. If you are new to programming, try our [introduction to C#](../tutorials/intro-to-csharp/index.md) interactive tutorials.
+C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run in the .NET ecosystem.
 
-The following topics are available:
+## C# language
 
-- [Introduction to the C# language and .NET](introduction-to-the-csharp-language-and-the-net-framework.md)
+C# syntax is highly expressive, yet it is also simple and easy to learn. The curly brace syntax of C# will be instantly recognizable to anyone familiar with C, C++, Java or JavaScript. Developers who know any of these languages are typically able to begin to work productively in C# within a short time. C# provides powerful features such as nullable types, delegates, lambda expressions, pattern matching, and safe direct memory access. C# supports generic methods and types, which provide increased type safety and performance, and iterators, which enable implementers of collection classes to define custom iteration behaviors that are simple to use by client code. Language-Integrated Query (LINQ) expressions make the strongly typed query a first-class language construct.
 
-     Provides an overview of the C# language and .NET.
+As an object-oriented language, C# supports the concepts of encapsulation, inheritance, and polymorphism. A class may inherit directly from one parent class, but it may implement any number of interfaces. Methods that override virtual methods in a parent class require the `override` keyword as a way to avoid accidental redefinition. In C#, a struct is like a lightweight class; it is a stack-allocated type that can implement interfaces but does not support inheritance. C# also provides records, which are class types whose purpose is primarily storing data values.
 
-- [Create a C# Hello World application with .NET Core in Visual Studio](../../core/tutorials/with-visual-studio.md)
+In addition to these basic object-oriented principles, C# makes it easy to develop software components through several innovative language constructs, including the following:
 
-   Visual Studio lets you code, compile, run, debug, profile, and publish your applications from an integrated development environment for Windows or Mac.
+- Encapsulated method signatures called *delegates*, which enable type-safe event notifications.
+- Properties, which serve as accessors for private member variables.
+- Attributes, which provide declarative metadata about types at run time.
+- Inline XML documentation comments.
+- Language-Integrated Query (LINQ), which provides built-in query capabilities across a variety of data sources.
+- Pattern matching, which enables control flow by inspecting data types and values.
 
-   The topic lets you create and run a simple Hello World application, and then modify it to run a slightly more interactive Hello World application. Once you've finished building and running your application, you can also learn how to [debug it](../../core/tutorials/debugging-with-visual-studio.md) and how to [publish it](../../core/tutorials/publishing-with-visual-studio.md) so that it can be run on any platform supported by .NET Core.
+If you have to interact with native components, you can do this in C# through a process called "Interop". Interop enables C# programs to do almost anything that a native C++ application can do. C# even supports pointers and the concept of "unsafe" code for those cases in which direct memory access is critical.
 
-- [Create a class library with C# and .NET Standard in Visual Studio](../../core/tutorials/library-with-visual-studio.md)
+The C# build process is simple compared to C and C++ and more flexible than in Java. There are no separate header files, and no requirement that methods and types be declared in a particular order. A C# source file may define any number of classes, structs, interfaces, and events.
 
-   A class library lets you define types and type members that can be called from another application. This topic lets you create a class library with a single method that determines whether a string begins with an uppercase character. Once you've finished building the library, you can develop a [unit test](../../core/tutorials/testing-library-with-visual-studio.md) to ensure that it works as expected, and then you can make it available to [applications that want to consume it](/nuget/quickstart/install-and-use-a-package-in-visual-studio).
+The following are additional C# resources:
 
-- [Get started with C# and Visual Studio Code](../../core/tutorials/with-visual-studio-code.md)
+- For a good general introduction to the language, see the [Tour of C#](../tour-of-csharp/index.md).
+- For detailed information about specific aspects of the C# language, see the [C# Reference](../language-reference/index.md).
+- For more information about LINQ, see [LINQ (Language-Integrated Query)](../programming-guide/concepts/linq/index.md).
 
-   Visual Studio Code is a free code editor optimized for building and debugging modern web and cloud applications. It supports IntelliSense and is available for Linux, macOS, and Windows.
+## .NET Platform Architecture
 
-   This topic shows you how to create and run a simple Hello World application with Visual Studio Code and .NET Core.
+C# programs run on .NET, a virtual execution system called the common language runtime (CLR) and a unified set of class libraries. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI), an international standard that is the basis for creating execution and development environments in which languages and libraries work together seamlessly.
 
-## Related sections
+Source code written in C# is compiled into an [intermediate language (IL)](../../standard/managed-code.md) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored on disk in an executable file called an assembly, typically with an extension of .exe or .dll. An assembly contains a manifest that provides information about the assembly's types, version, and culture.
 
-- [C# Programming Guide](../programming-guide/index.md)
+When the C# program is executed, the assembly is loaded into the CLR, which might take various actions based on the information in the manifest. Then the CLR performs Just-In-Time (JIT) compilation to convert the IL code to native machine instructions. The CLR also provides other services related to automatic garbage collection, exception handling, and resource management. Code that's executed by the CLR is sometimes referred to as "managed code", in contrast to "unmanaged code", which is compiled into native machine language that targets a specific system.
 
-    Provides information about C# programming concepts, and describes how to perform various tasks in C#.
+Language interoperability is a key feature of .NET. Because the IL code produced by the C# compiler conforms to the Common Type Specification (CTS), IL code generated from C# can interact with code that was generated from the .NET versions of F#, Visual Basic, C++, or any of more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages, and the types can reference each other as if they were written in the same language.
 
-- [C# Reference](../language-reference/index.md)
+In addition to the run time services, .NET also includes an extensive library of over 4000 classes organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to Windows Forms controls. The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.
 
-    Provides detailed reference information about C# keywords, operators, preprocessor directives, compiler options, and compiler errors and warnings.
-
-- [Walkthroughs](../walkthroughs.md)
-
-    Provides links to programming walkthroughs that use C# and a brief description of each walkthrough.
-
-## See also
-
-- [C# Development with Visual Studio](/visualstudio/get-started/csharp/)
+For more information about .NET, see [Overview of .NET](../../core/introduction.md).

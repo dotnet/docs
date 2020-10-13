@@ -74,6 +74,7 @@ Figure 2-x shows the building blocks that will ship with Dapr 1.0.
 
 Building blocks treats infrastructure services as a black box. Your code calls building block without taking dependencies on SDKs or libraries; they work with any supported  programming language.
 
+We cover each of the Dapr building blocks in detail in chapter x.
 
 ### Components
 

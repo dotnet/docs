@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30830"
 ms.assetid: 4734bc1d-882e-4555-b498-1f1ec0399d16
 ---
-# BC30830: 'Line' statements are no longer supported (Visual Basic Compiler Error)
+# BC30830: 'Line' statements are no longer supported
 
 Line statements are no longer supported. File I/O functionality is available as `Microsoft.VisualBasic.FileSystem.LineInput` and graphics functionality is available as `System.Drawing.Graphics.DrawLine`.
 

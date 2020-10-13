@@ -119,6 +119,89 @@ The compiler generates warnings when you dereference a variable or expression th
 
 You add attributes to APIs that provide the compiler more information about when arguments or return values can or can't be null. You can learn more about these attributes in our article in the language reference covering the [nullable attributes](language-reference/attributes/nullable-analysis.md). These attributes are being added to .NET libraries over current and upcoming releases. The most commonly used APIs are being updated first.
 
+## Known pitfalls
+
+Arrays and structs that contain reference types are known pitfalls in nullable reference types feature.
+
+### Structs
+
+A struct that contains non-nullable reference types allows assigning `default` for it without any warnings. Consider the following example:
+
+```csharp
+using System;
+
+#nullable enable
+
+public struct Student
+{
+    public string FirstName;
+    public string? MiddleName;
+    public string LastName;
+}
+
+public static class Program
+{
+    public static void PrintStudent(Student student)
+    {
+        Console.WriteLine($"First name: {student.FirstName.ToUpper()}");
+        Console.WriteLine($"Middle name: {student.MiddleName.ToUpper()}");
+        Console.WriteLine($"Last name: {student.LastName.ToUpper()}");
+    }
+
+    public static void Main() => PrintStudent(default);
+}
+```
+
+In the preceding example, there is no warning in `PrintStudent(default)` while the non-nullable reference types `FirstName` and `LastName` are null.
+
+Another more common case is when you deal with generic structs. Consider the following example:
+
+```csharp
+#nullable enable
+
+public struct Foo<T>
+{
+    public T Bar { get; set; }
+}
+
+public static class Program
+{
+    public static void Main()
+    {
+        string s = default(Foo<string>).Bar;
+    }
+}
+```
+
+In the preceding example, the property `Bar` is going to be `null` at runtime, and it's assigned to non-nullable string without any warnings.
+
+### Arrays
+
+Arrays are also a known pitfall in nullable reference types. Consider the following example which doesn't produce any warnings:
+
+```csharp
+using System;
+
+#nullable enable
+
+public static class Program
+{
+    public static void Main()
+    {
+        // 
+        string[] values = new string[10];
+
+        // The variable 's' is assigned a null value.
+        string s = values[0];
+
+        // Produces a NullReferenceException at runtime, while the compiler doesn't show any warnings.
+        Console.WriteLine(s.ToUpper());
+    }
+}
+```
+
+In the preceding example, the declaration of the array shows it holds non-nullable strings, while its elements are all initialized to null. Then, the variable `s` is assigned a null value (the first element of the array). Finally, the variable `s` is dereferenced causing a runtime exception.
+
 ## See also
 
 - [Draft nullable reference types specification](~/_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md)

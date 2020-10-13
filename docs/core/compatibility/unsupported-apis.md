@@ -1,19 +1,19 @@
 ---
-title: Unsupported APIs on .NET Core
+title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
-description: Learn which APIs from the .NET Framework that always throw an exception on .NET Core.
-ms.date: 12/23/2019
+description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5.0 and later versions.
+ms.date: 10/13/2020
 ---
-# APIs that always throw exceptions on .NET Core
+# APIs that always throw exceptions on .NET Core and .NET 5+
 
-The following APIs will always throw a <xref:System.PlatformNotSupportedException> on .NET Core on all or a subset of platforms.
+The following APIs will always throw a <xref:System.PlatformNotSupportedException> on .NET 5.0 and later versions (including all versions of .NET Core) on all or a subset of platforms.
 
-This article organizes the affected API members by namespace.
+This article organizes the affected APIs by namespace.
 
 > [!NOTE]
 >
-> - This article is a work-in-progress. It is not a complete list of APIs that throw exceptions on .NET Core.
-> - This article does not include the explicit interface implementations for binary serialization that throw on .NET Core. For more information, see [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#net-core).
+> - This article is a work-in-progress. It is not a complete list of APIs that throw exceptions on .NET 5+.
+> - This article does not include the explicit interface implementations for binary serialization that throw on .NET 5+. For more information, see [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#net-core).
 
 ## System
 

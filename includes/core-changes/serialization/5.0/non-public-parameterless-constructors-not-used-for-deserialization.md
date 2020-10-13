@@ -4,7 +4,7 @@ For consistency across all supported target framework monikers (TFMs), non-publi
 
 #### Change description
 
-The standalone [System.Text.Json NuGet packages](https://www.nuget.org/packages/System.Text.Json/) that support .NET Standard 2.0 and higher, that is, versions 4.6.0-4.7.2, behave inconsistently with the built-in behavior on .NET Core 3.0 and 3.1. On .NET Core 3.x, internal and private constructors can be used for deserialization. In the standalone packages, internal and private constructors are not allowed, and a <xref:System.MissingMethodException> is thrown if no public, parameterless constructor is defined.
+The standalone [System.Text.Json NuGet packages](https://www.nuget.org/packages/System.Text.Json/) that support .NET Standard 2.0 and higher, that is, versions 4.6.0-4.7.2, behave inconsistently with the built-in behavior on .NET Core 3.0 and 3.1. On .NET Core 3.x, internal and private constructors can be used for deserialization. In the standalone packages, non-public constructors are not allowed, and a <xref:System.MissingMethodException> is thrown if no public, parameterless constructor is defined.
 
 Starting with .NET 5.0 and System.Text.Json NuGet package 5.0.0, the behavior is consistent between the NuGet package and the built-in APIs. Non-public constructors, including parameterless constructors, are ignored by the serializer by default. The serializer uses one of the following constructors for deserialization:
 

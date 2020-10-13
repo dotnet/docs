@@ -35,7 +35,7 @@ Topics:
 
 ## Breaking changes
 
-Because .NET Core is a complete rewrite of .NET, designed from the ground up to be cross-platform, there are many [breaking changes between the two frameworks](https://docs.microsoft.com/dotnet/core/compatibility/fx-core). The following chapters identify specific differences between how ASP.NET MVC and ASP.NET Core apps are designed and developed, but take care also to examine the documentation to determine which framework libraries you're using that may need to be changed. In many cases, a replacement NuGet package exists to fill in any gaps left between .NET and .NET Core. In rare cases, you may need to find a third party solution or implement new custom code to address incompatibilities.
+Because .NET Core is a complete rewrite of .NET, designed from the ground up to be cross-platform, there are many [breaking changes between the two frameworks](https://docs.microsoft.com/dotnet/core/compatibility/fx-core). The following sections identify specific differences between how ASP.NET MVC and ASP.NET Core apps are designed and developed, but take care also to examine the documentation to determine which framework libraries you're using that may need to be changed. In many cases, a replacement NuGet package exists to fill in any gaps left between .NET and .NET Core. In rare cases, you may need to find a third party solution or implement new custom code to address incompatibilities.
 
 >[!div class="step-by-step"]
 >[Previous](additional-migration-resources.md)

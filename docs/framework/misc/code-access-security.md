@@ -22,7 +22,7 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
 
 > [!NOTE]
-> Because Code Access Security is deprecated, most modern code within the .NET ecosystem is not designed to operate within a partial trust environment. Applications which rely on CAS should not expect modern libraries to behave correctly within these environments unless the library developer has taken explicit steps to ensure compatibility within the CAS sandbox.  
+> Because Code Access Security is deprecated, most modern code within the .NET ecosystem is not designed to operate within a partial trust environment. Applications that rely on CAS should not expect modern libraries to behave correctly within these environments, unless the library developer has taken explicit steps to ensure compatibility within the CAS sandbox.  
 
  Today's highly connected computer systems are frequently exposed to code originating from various, possibly unknown sources. Code can be attached to email, contained in documents, or downloaded over the Internet. Unfortunately, many computer users have experienced firsthand the effects of malicious mobile code, including viruses and worms, which can damage or destroy data and cost time and money.  
   

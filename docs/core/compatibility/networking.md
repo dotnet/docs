@@ -9,6 +9,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Introduced version |
 | - | - |
+| [Socket.LocalEndPoint is updated after calling SendToAsync](#socketlocalendpoint-is-updated-after-calling-sendtoasync) | 5.0 |
 | [WinHttpHandler removed from .NET runtime](#winhttphandler-removed-from-net-runtime) | 5.0 |
 | [MulticastOption.Group doesn't accept a null value](#multicastoptiongroup-doesnt-accept-a-null-value) | 5.0 |
 | [Cookie Path handling now conforms to RFC 6265](#cookie-path-handling-now-conforms-to-rfc-6265) | 5.0 |
@@ -16,6 +17,10 @@ The following breaking changes are documented on this page:
 | [WebClient.CancelAsync doesn't always cancel immediately](#webclientcancelasync-doesnt-always-cancel-immediately) | 2.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [localendpoint-updated-on-sendtoasync](../../../includes/core-changes/networking/5.0/localendpoint-updated-on-sendtoasync.md)]
+
+***
 
 [!INCLUDE [winhttphandler-removed-from-runtime](../../../includes/core-changes/networking/5.0/winhttphandler-removed-from-runtime.md)]
 

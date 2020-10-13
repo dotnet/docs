@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 09/02/2020
+ms.date: 10/13/2020
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
@@ -33,7 +33,7 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
   - [System.Text.RegularExpressions](https://devblogs.microsoft.com/dotnet/regex-performance-improvements-in-net-5)
   - [Async ValueTask pooling](https://devblogs.microsoft.com/dotnet/async-valuetask-pooling-in-net-5)
   - [Many more areas](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5)
-- Container size optimizations
+- [Container size optimizations](https://github.com/dotnet/dotnet-docker/issues/1814#issuecomment-625294750)
 - [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
 - [C# compiler enhancements](https://devblogs.microsoft.com/dotnet/automatically-find-latent-bugs-in-your-code-with-net-5)
 - Tooling support for dump debugging

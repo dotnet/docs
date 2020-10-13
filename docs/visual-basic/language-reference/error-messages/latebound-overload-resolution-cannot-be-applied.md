@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "BC30933"
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
 ---
-# Latebound overload resolution cannot be applied to '\<procedurename>' because the accessing instance is an interface type
+# BC30933: Latebound overload resolution cannot be applied to '\<procedurename>' because the accessing instance is an interface type
 
 The compiler is attempting to resolve a reference to an overloaded property or procedure, but the reference fails because an argument is of type `Object` and the referring object has the data type of an interface. The `Object` argument forces the compiler to resolve the reference as late-bound.
 

@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC36599"
 ms.assetid: 17763dbe-f74f-4ccb-8086-cb7e45ec4d12
 ---
-# Range variable name can be inferred only from a simple or qualified name with no arguments
+# BC36599: Range variable name can be inferred only from a simple or qualified name with no arguments
 
 A programming element that takes one or more arguments is included in a LINQ query. The compiler is unable to infer a range variable from that programming element.
 

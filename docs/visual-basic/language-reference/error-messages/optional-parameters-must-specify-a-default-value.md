@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30812"
 ms.assetid: 5091a250-be66-413b-98a3-2a9974c4d600
 ---
-# Optional parameters must specify a default value
+# BC30812: Optional parameters must specify a default value
 
 Optional parameters must provide default values that can be used if no parameter is supplied by a calling procedure.
 

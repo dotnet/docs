@@ -20,7 +20,10 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
 # Code Access Security
 
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
-  
+
+> [!NOTE]
+> Because Code Access Security is deprecated, most modern code within the .NET ecosystem is not designed to operate within a partial trust environment. Applications which rely on CAS should not expect modern libraries to behave correctly within these environments unless the library developer has taken explicit steps to ensure compatibility within the CAS sandbox.  
+
  Today's highly connected computer systems are frequently exposed to code originating from various, possibly unknown sources. Code can be attached to email, contained in documents, or downloaded over the Internet. Unfortunately, many computer users have experienced firsthand the effects of malicious mobile code, including viruses and worms, which can damage or destroy data and cost time and money.  
   
  Most common security mechanisms give rights to users based on their credentials (usually a password) and restrict resources (often directories and files) that the user is allowed to access. However, this approach fails to address several issues: users obtain code from many sources, some of which might be unreliable; code can contain bugs or vulnerabilities that enable it to be exploited by malicious code; and code sometimes does things that the user does not know it will do. As a result, computer systems can be damaged and private data can be leaked when cautious and trustworthy users run malicious or error-filled software. Most operating system security mechanisms require that every piece of code must be trusted in order to run, except perhaps for scripts on a Web page. Therefore, there is still a need for a widely applicable security mechanism that allows code originating from one computer system to execute with protection on another system, even when there is no trust relationship between the systems.  

@@ -68,12 +68,14 @@ Core .NET libraries
 
 #### Affected APIs
 
--
+- <xref:System.MarshalByRefObject.GetLifetimeService?displayProperty=fullName>
+- <xref:System.MarshalByRefObject.InitializeLifetimeService?displayProperty=fullName>
 
 <!--
 
 #### Affected APIs
 
--
+- `M:System.MarshalByRefObject.GetLifetimeService`
+- `M:System.MarshalByRefObject.InitializeLifetimeService`
 
 -->

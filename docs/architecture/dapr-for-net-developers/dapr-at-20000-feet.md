@@ -58,21 +58,25 @@ At this point, our jet turns around and flies back over Dapr, descending in alti
 
 Dapr is built on the concept of `building blocks`. 
 
-A building block is as an HTTP or gRPC API that can be called from user code to invoke one or more Dapr components. Figure 2-x shows the pattern.
-
-![Dapr building blocks](./media/building-block-integration.png)
-
-**Figure 2-x**. Dapr building blocks.
-
-Note how the building block exposes an API that can be consumed by your service. As shown, building block APIs support both HTTP and gRPC. In turn, building blocks consume componenets that provide the actual implementation for external services. We'll cover components next.
-
-Figure 2-x shows the building blocks that will ship with Dapr 1.0.
+A building block is as an HTTP or gRPC API that can be called from user code from any supported programming platform. Each block encapsulates infrastructure services required by a distributed appllication. Figure 2-x shows the blocks for Dapr v 1.0.
 
 ![Dapr building blocks](./media/building-block.png)
 
 **Figure 2-x**. Dapr building blocks.
 
-Building blocks treats infrastructure services as a black box. Your code calls building block without taking dependencies on SDKs or libraries; they work with any supported  programming language.
+Building blocks treats infrastructure services as a black box. When your code needs to invoke an infrastructure service, it calls the building block API. Figure 2-x shows the architecture.
+
+![Dapr building blocks](./media/building-block-integration.png)
+
+**Figure 2-x**. Dapr building blocks.
+
+Note how the building block exposes an API that can be consumed by your service. As shown, building block APIs support both HTTP and gRPC. In turn, building blocks consume configurable componenets that provide the actual implementation for external services. We'll cover components next. Note too how your code takes no dependencies
+
+ 
+ > show code example of calling a building block.
+
+
+Your code calls building block without taking dependencies on SDKs or libraries. T
 
 We cover each of the Dapr building blocks in detail in chapter x.
 

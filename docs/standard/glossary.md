@@ -1,7 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 01/22/2019
+ms.date: 10/13/2020
 ms.technology: dotnet-standard
 ---
 # .NET Glossary
@@ -18,7 +18,15 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 ## app model
 
-A workload-specific API. Examples are Windows Forms, ASP.NET, and UWP.
+A workload-specific API. Here are some examples:
+
+* ASP.NET
+* ASP.NET Web API
+* Entity Framework (EF)
+* Windows Presentation Foundation (WPF)
+* Windows Communication Foundation (WCF)
+* Windows Workflow Foundation (WF)
+* Windows Forms (WinForms)
 
 ## ASP.NET
 
@@ -292,7 +300,9 @@ An implementation of .NET that is used for building modern, touch-enabled Window
 
 ## workload
 
-A type of app someone is building. More generic than [app model](#app-model). Examples are Mobile, Desktop, IoT, Web, and Games.
+A type of app someone is building. More generic than [app model](#app-model). Examples are Mobile, Desktop, IoT, Web, and Games. The following example sentence is referring to workloads, not app models:
+
+> With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, gaming, and IoT.
 
 ## See also
 

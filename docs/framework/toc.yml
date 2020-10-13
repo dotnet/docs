@@ -51,10 +51,10 @@ items:
     href: migration-guide/index.md
   - name: Compatibility
     items:
-    - name: Application compatibility 
+    - name: Application compatibility
       items:
       - name: Overview
-        displayName: App compatibility 
+        displayName: App compatibility
         href: migration-guide/application-compatibility.md
       - name: Runtime changes
         items:
@@ -333,7 +333,7 @@ items:
   - name: Migrate from .NET Framework 1.1
     href: migration-guide/migrating-from-the-net-framework-1-1.md
   - name: .NET Framework 4 migration issues
-    href: migration-guide/net-framework-4-migration-issues.md  
+    href: migration-guide/net-framework-4-migration-issues.md
 - name: Development guide
   href: development-guide.md
   items:
@@ -598,6 +598,16 @@ items:
     items:
     - name: ControlBuilderInterceptor class
       href: additional-apis/controlbuilderinterceptor-class.md
+  - name: System.Windows.Controls
+    items:
+    - name: GridViewHeaderRowPresenter class
+      items:
+      - name: FindHeaderByColumn method
+        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.findheaderbycolumn.md
+      - name: MakeParentItemsControlGotFocus method
+        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.makeparentitemscontrolgotfocus.md
+      - name: PrepareHeaderDrag method
+        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.prepareheaderdrag.md
   - name: System.Windows.Diagnostics
     items:
     - name: VisualDiagnostics class
@@ -616,7 +626,7 @@ items:
       items:
       - name: raise__WritingCancelled method
         href: additional-apis/xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
-      - name: raise__WritingCompleted method 
+      - name: raise__WritingCompleted method
         href: additional-apis/xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
       - name: raise__WritingPrintTicketRequired method
         href: additional-apis/xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
@@ -668,18 +678,18 @@ items:
       href: additional-apis/stdole.stdfont.md
     - name: StdPicture interface
       href: additional-apis/stdole.stdpicture.md
-- name: What's new and obsolete	
-  items:	
+- name: What's new and obsolete
+  items:
   - name: What's new
-    href: whats-new/index.md	
-  - name: What's new in accessibility	
-    href: whats-new/whats-new-in-accessibility.md	
-  - name: What's obsolete in API ref	
-    href: whats-new/whats-obsolete.md	
-    items:	
-    - name: Obsolete types	
-      href: whats-new/obsolete-types.md	
-    - name: Obsolete members	
+    href: whats-new/index.md
+  - name: What's new in accessibility
+    href: whats-new/whats-new-in-accessibility.md
+  - name: What's obsolete in API ref
+    href: whats-new/whats-obsolete.md
+    items:
+    - name: Obsolete types
+      href: whats-new/obsolete-types.md
+    - name: Obsolete members
       href: whats-new/obsolete-members.md
 - name: Code Access security
   items:

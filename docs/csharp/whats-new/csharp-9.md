@@ -226,7 +226,7 @@ In addition, the [`foreach` loop](../language-reference/keywords/foreach-in.md) 
 
 Next, you can use discards as parameters to lambda expressions. This convenience enables you to avoid naming the argument, and the compiler may avoid using it. You use the `_` for any argument. For more information, see the [Input parameters of a lambda expression](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../language-reference/operators/lambda-expressions.md) article.
 
-Finally, you can now apply attributes to local functions. For example, you can apply nullable attribute annotations to local functions.
+Finally, you can now apply attributes to [local functions](../programming-guide/classes-and-structs/local-functions.md). For example, you can apply [nullable attribute annotations](../language-reference/attributes/nullable-analysis.md) to local functions.
 
 ## Support for code generators
 

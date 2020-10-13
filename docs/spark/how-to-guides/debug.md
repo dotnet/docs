@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET for Apache Spark application on Windows
 description: Learn how to debug your .NET for Apache Spark application on Windows.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -9,8 +9,6 @@ ms.custom: mvc,how-to
 # Debug a .NET for Apache Spark application
 
 This how-to provides the steps to debug your .NET for Apache Spark application on Windows.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Debug your application
 

@@ -155,7 +155,7 @@ signtool catdb /v /u MyCatalogFileName.cat
  The following command signs a file automatically by using the best certificate.  
   
 ```console
-signtool sign /a /fd SHA256 MyFile.exe 
+signtool sign /a /fd SHA256 MyFile.exe
 ```
 
  The following command digitally signs a file by using a certificate stored in a password-protected PFX file.  

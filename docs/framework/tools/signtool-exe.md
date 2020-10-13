@@ -145,7 +145,6 @@ signtool [command] [options] [file_name | ...]
 |1|Execution has failed.|  
 |2|Execution has completed with warnings.|  
 
-<a name="Examples"></a>
 ## Examples  
  The following command adds the catalog file MyCatalogFileName.cat to the system component and driver database. The `/u` option generates a unique name if necessary to prevent replacing an existing catalog file named `MyCatalogFileName.cat`.  
   

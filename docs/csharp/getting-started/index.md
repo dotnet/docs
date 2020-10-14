@@ -42,6 +42,6 @@ When the C# program is executed, the assembly is loaded into the CLR. The CLR pe
 
 Language interoperability is a key feature of .NET. IL code produced by the C# compiler conforms to the Common Type Specification (CTS). IL code generated from C# can interact with code that was generated from the .NET versions of F#, Visual Basic, C++, or any of more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages, and the types can reference each other as if they were written in the same language.
 
-In addition to the run time services, .NET also includes an extensive library of over 4,000 classes. The .NET library is organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to web application frameworks to Windows Forms controls. The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.
+In addition to the run time services, .NET also includes extensive libraries. These libraries support many different workloads. They are organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to web application frameworks to Windows Forms controls. The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.
 
 For more information about .NET, see [Overview of .NET](../../core/introduction.md).

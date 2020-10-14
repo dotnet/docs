@@ -87,7 +87,7 @@ Some .NET Framework technologies aren't available in .NET 5. The following list 
 
 - Language support: Visual Basic and F# are currently supported in .NET 5, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
 
-For more information, see [NET Framework technologies unavailable in .NET 5](../core/porting/net-framework-tech-unavailable.md)
+For more information, see [.NET Framework technologies unavailable in .NET 5](../core/porting/net-framework-tech-unavailable.md).
 
 ### Platform doesn’t support .NET 5
 

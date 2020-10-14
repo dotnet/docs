@@ -7,9 +7,9 @@ helpviewer_keywords:
   - "strong-named assemblies, about strong-named assemblies"
   - "strong-named assemblies"
   - "signing assemblies"
-  - "assemblies [.NET Framework], signing"
+  - "assemblies [.NET], signing"
   - "strong-named assemblies, scenarios"
-  - "assemblies [.NET Framework], strong-named"
+  - "assemblies [.NET], strong-named"
   - "strong-named assemblies, loading into trusted application domains"
   - "assembly binding, strong-named"
 ms.assetid: ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9
@@ -40,7 +40,7 @@ The following scenario outlines the process of signing an assembly with a strong
 
 3. Assembly B is a consumer of Assembly A. The reference section of Assembly B's manifest includes a token that represents Assembly A's public key. A token is a portion of the full public key and is used rather than the key itself to save space.
 
-4. The common language runtime verifies the strong name signature when the assembly is placed in the global assembly cache. When binding by strong name at run time, the common language runtime compares the key stored in Assembly B's manifest with the key used to generate the strong name for Assembly A. If the .NET Framework security checks pass and the bind succeeds, Assembly B has a guarantee that Assembly A's bits have not been tampered with and that these bits actually come from the developers of Assembly A.
+4. The common language runtime verifies the strong name signature when the assembly is placed in the global assembly cache. When binding by strong name at run time, the common language runtime compares the key stored in Assembly B's manifest with the key used to generate the strong name for Assembly A. If the .NET security checks pass and the bind succeeds, Assembly B has a guarantee that Assembly A's bits have not been tampered with and that these bits actually come from the developers of Assembly A.
 
 > [!NOTE]
 > This scenario doesn't address trust issues. Assemblies can carry full Microsoft Authenticode signatures in addition to a strong name. Authenticode signatures include a certificate that establishes trust. It's important to note that strong names don't require code to be signed in this way. Strong names only provide a unique identity.

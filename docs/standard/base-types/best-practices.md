@@ -7,7 +7,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - ".NET Framework regular expressions, best practices"
+  - ".NET regular expressions, best practices"
   - "regular expressions, best practices"
 ms.assetid: 618e5afb-3a97-440d-831a-70e4c526a51c
 ---
@@ -55,7 +55,7 @@ To solve this problem, you can do the following:
 
 ## Handle object instantiation appropriately
 
-At the heart of .NET’s regular expression object model is the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class, which represents the regular expression engine. Often, the single greatest factor that affects regular expression performance is the way in which the <xref:System.Text.RegularExpressions.Regex> engine is used. Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern. That coupling process, whether it involves instantiating a <xref:System.Text.RegularExpressions.Regex> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern along with the string to be analyzed, is by necessity an expensive one.
+At the heart of .NET's regular expression object model is the <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class, which represents the regular expression engine. Often, the single greatest factor that affects regular expression performance is the way in which the <xref:System.Text.RegularExpressions.Regex> engine is used. Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern. That coupling process, whether it involves instantiating a <xref:System.Text.RegularExpressions.Regex> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern along with the string to be analyzed, is by necessity an expensive one.
 
 > [!NOTE]
 > For a more detailed discussion of the performance implications of using interpreted and compiled regular expressions, see [Optimizing Regular Expression Performance, Part II: Taking Charge of Backtracking](/archive/blogs/bclteam/optimizing-regular-expression-performance-part-ii-taking-charge-of-backtracking-ron-petrusha) in the BCL Team blog.
@@ -130,7 +130,7 @@ The regular expression pattern used in the example, `\b(\w+((\r?\n)|,?\s))*\w+[.
 
 ### Regular expressions: Compiled to an assembly
 
-.NET also enables you to create an assembly that contains compiled regular expressions. This moves the performance hit of regular expression compilation from run time to design time. However, it also involves some additional work: You must define the regular expressions in advance and compile them to an assembly. The compiler can then reference this assembly when compiling source code that uses the assembly’s regular expressions. Each compiled regular expression in the assembly is represented by a class that derives from <xref:System.Text.RegularExpressions.Regex>.
+.NET also enables you to create an assembly that contains compiled regular expressions. This moves the performance hit of regular expression compilation from run time to design time. However, it also involves some additional work: You must define the regular expressions in advance and compile them to an assembly. The compiler can then reference this assembly when compiling source code that uses the assembly's regular expressions. Each compiled regular expression in the assembly is represented by a class that derives from <xref:System.Text.RegularExpressions.Regex>.
 
 To compile regular expressions to an assembly, you call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29?displayProperty=nameWithType> method and pass it an array of <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects that represent the regular expressions to be compiled, and an <xref:System.Reflection.AssemblyName> object that contains information about the assembly to be created.
 

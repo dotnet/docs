@@ -13,12 +13,12 @@ helpviewer_keywords:
   - "metadata, about metadata"
   - "common language runtime, metadata"
   - "PE files, metadata"
-  - "components [.NET Framework], metadata"
+  - "components [.NET], metadata"
 ms.assetid: 3dd13c5d-a508-455b-8dce-0a852882a5a7
 ---
 # Metadata and Self-Describing Components
 
-In the past, a software component (.exe or .dll) that was written in one language could not easily use a software component that was written in another language. COM provided a step towards solving this problem. The .NET Framework makes component interoperation even easier by allowing compilers to emit additional declarative information into all modules and assemblies. This information, called metadata, helps components to interact seamlessly.
+In the past, a software component (.exe or .dll) that was written in one language could not easily use a software component that was written in another language. COM provided a step towards solving this problem. .NET makes component interoperation even easier by allowing compilers to emit additional declarative information into all modules and assemblies. This information, called metadata, helps components to interact seamlessly.
 
  Metadata is binary information describing your program that is stored either in a common language runtime portable executable (PE) file or in memory. When you compile your code into a PE file, metadata is inserted into one portion of the file, and your code is converted to Microsoft intermediate language (MSIL) and inserted into another portion of the file. Every type and member that is defined and referenced in a module or assembly is described within metadata. When code is executed, the runtime loads metadata into memory and references it to discover information about your code's classes, members, inheritance, and so on.
 
@@ -46,7 +46,7 @@ In the past, a software component (.exe or .dll) that was written in one languag
 
 ## Benefits of Metadata
 
-Metadata is the key to a simpler programming model, and eliminates the need for Interface Definition Language (IDL) files, header files, or any external method of component reference. Metadata enables .NET Framework languages to describe themselves automatically in a language-neutral manner, unseen by both the developer and the user. Additionally, metadata is extensible through the use of attributes. Metadata provides the following major benefits:
+Metadata is the key to a simpler programming model, and eliminates the need for Interface Definition Language (IDL) files, header files, or any external method of component reference. Metadata enables .NET languages to describe themselves automatically in a language-neutral manner, unseen by both the developer and the user. Additionally, metadata is extensible through the use of attributes. Metadata provides the following major benefits:
 
 - Self-describing files.
 
@@ -58,11 +58,11 @@ Metadata is the key to a simpler programming model, and eliminates the need for 
 
 - Attributes.
 
-  The .NET Framework lets you declare specific kinds of metadata, called attributes, in your compiled file. Attributes can be found throughout the .NET Framework and are used to control in more detail how your program behaves at run time. Additionally, you can emit your own custom metadata into .NET Framework files through user-defined custom attributes. For more information, see [Attributes](attributes/index.md).
+  .NET lets you declare specific kinds of metadata, called attributes, in your compiled file. Attributes can be found throughout .NET and are used to control in more detail how your program behaves at run time. Additionally, you can emit your own custom metadata into .NET files through user-defined custom attributes. For more information, see [Attributes](attributes/index.md).
 
 ## Metadata and the PE File Structure
 
-Metadata is stored in one section of a .NET Framework portable executable (PE) file, while Microsoft intermediate language (MSIL) is stored in another section of the PE file. The metadata portion of the file contains a series of table and heap data structures. The MSIL portion contains MSIL and metadata tokens that reference the metadata portion of the PE file. You might encounter metadata tokens when you use tools such as the [MSIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md) to view your code's MSIL, for example.
+Metadata is stored in one section of a .NET portable executable (PE) file, while Microsoft intermediate language (MSIL) is stored in another section of the PE file. The metadata portion of the file contains a series of table and heap data structures. The MSIL portion contains MSIL and metadata tokens that reference the metadata portion of the PE file. You might encounter metadata tokens when you use tools such as the [MSIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md) to view your code's MSIL, for example.
 
 ### Metadata Tables and Heaps
 
@@ -128,7 +128,7 @@ public class MyApp
 
 When the code runs, the runtime loads the module into memory and consults the metadata for this class. Once loaded, the runtime performs extensive analysis of the method's Microsoft intermediate language (MSIL) stream to convert it to fast native machine instructions. The runtime uses a just-in-time (JIT) compiler to convert the MSIL instructions to native machine code one method at a time as needed.
 
-The following example shows part of the MSIL produced from the previous code's `Main` function. You can view the MSIL and metadata from any .NET Framework application using the [MSIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md).
+The following example shows part of the MSIL produced from the previous code's `Main` function. You can view the MSIL and metadata from any .NET application using the [MSIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md).
 
 ```console
 .entrypoint

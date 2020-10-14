@@ -17,7 +17,7 @@ Thus, one approach to incrementally upgrade a .NET 4.5 system would be to first 
 
 Once the app is running on ASP.NET Core 2.1, migrating it to ASP.NET Core 3.1 in isolation is relatively straightforward. The most likely challenge that will occur during this step will be updating any incompatible dependencies to support .NET Core and possibly higher versions of .NET Standard.
 
-By the time the application is running on .NET Core 3.1, migrating to the current .NET 5 release should be relatively painless. The process primarily involves updating the target framework of your project files and their associated NuGet package dependencies. While there are a number of [breaking changes to consider](https://docs.microsoft.com/dotnet/core/compatibility/3.1-5.0), most applications should not require substantial modification to move from .NET Core 3.1 to .NET 5.
+By the time the application is running on .NET Core 3.1, migrating to the current .NET 5.0 release should be relatively painless. The process primarily involves updating the target framework of your project files and their associated NuGet package dependencies. While there are a number of [breaking changes to consider](/dotnet/core/compatibility/3.1-5.0), most applications shouldn't require substantial modification to move from .NET Core 3.1 to .NET 5.0.
 
 ## References
 

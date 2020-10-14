@@ -21,9 +21,13 @@ This breaking change was made for the following reasons:
 
 #### Recommended action
 
-- Remove references to the [Microsoft.Windows.SDK.Contracts package](https://www.nuget.org/packages/Microsoft.Windows.SDK.Contracts) and replace them with references to the [Microsoft.Windows.SDK.NET package](https://www.nuget.org/packages/microsoft.windows.sdk.net).
+- Remove references to the [Microsoft.Windows.SDK.Contracts package](https://www.nuget.org/packages/Microsoft.Windows.SDK.Contracts).  Instead, specify the version of the Windows APIs that you want to access via the `TargetFramework` property of the project.  For example:
 
-- Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types in .NET 5.0 and later versions.
+```xml
+<TargetFramework>net5.0-windows10.0.19041</TargetFramework>
+```
+
+- Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types for .NET 5.0 and later versions.
 
 #### Category
 

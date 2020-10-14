@@ -91,7 +91,7 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
            <cryptoClasses>  
               <cryptoClass SHA256CSP="System.Security.Cryptography.SHA256CryptoServiceProvider, System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
            </cryptoClasses>  
-           <nameEntry name="http://constoso.com/CustomAlgorithms/CustomHashAlgorithm"  
+           <nameEntry name="http://contoso.com/CustomAlgorithms/CustomHashAlgorithm"  
               class="SHA256CSP" />  
            </cryptoNameMapping>  
         </cryptographySettings>  
@@ -99,14 +99,14 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
 </configuration>  
 ```  
   
- The section under the <`cryptoClasses`> element creates the mapping between the SHA256CryptoServiceProvider and the alias "SHA256CSP". The <`nameEntry`> element creates the mapping between the "SHA256CSP" alias and the specified URL `http://constoso.com/CustomAlgorithms/CustomHashAlgorithm`.  
+ The section under the <`cryptoClasses`> element creates the mapping between the SHA256CryptoServiceProvider and the alias "SHA256CSP". The <`nameEntry`> element creates the mapping between the "SHA256CSP" alias and the specified URL `http://contoso.com/CustomAlgorithms/CustomHashAlgorithm`.  
   
  To register the custom algorithm in code use the <xref:System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type,System.String[])> method. This method creates both mappings. The following example shows how to call this method:  
   
 ```csharp
 // Register the custom URI string defined for the hashAlgorithm in MyCustomAlgorithmSuite class to create the
 // SHA256CryptoServiceProvider hash algorithm object.  
-CryptoConfig.AddAlgorithm(typeof(SHA256CryptoServiceProvider), "http://constoso.com/CustomAlgorithms/CustomHashAlgorithm");  
+CryptoConfig.AddAlgorithm(typeof(SHA256CryptoServiceProvider), "http://contoso.com/CustomAlgorithms/CustomHashAlgorithm");  
 ```  
   
 ## Configure the Binding  

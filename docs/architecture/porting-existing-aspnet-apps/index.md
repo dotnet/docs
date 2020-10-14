@@ -48,11 +48,11 @@ Participants and Reviewers:
 
 ## Version
 
-This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release.
+This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release. Updating from .NET Core 3.1 to .NET 5 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET to .NET Core.
 
 ## Who should use this guide
 
-The audience for this guide is mainly developers, development leads, and architects who are interested in learning how to move their existing applications written for ASP.NET MVC and Web API (.NET 4.x) to .NET Core.
+The audience for this guide is mainly developers, development leads, and architects who are interested in learning how to move their existing applications written for ASP.NET MVC and Web API (.NET 4.x) to .NET Core. ASP.NET Web Forms developers may also benefit from this guide, but should be sure to read [Blazor for ASP.NET Web Forms Developers](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/) e-book as well.
 
 A secondary audience is technical decision-makers who are making plans for when to move their applications to .NET Core.
 

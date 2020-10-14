@@ -5,7 +5,7 @@ ms.date: "08/20/2019"
 helpviewer_keywords:
   - "key pairs for strong-named assemblies"
   - "signing assemblies"
-  - "assemblies [.NET Framework], signing"
+  - "assemblies [.NET], signing"
   - "cryptographic key pairs"
   - "snk files (key pair files)"
   - "public-private key pairs"

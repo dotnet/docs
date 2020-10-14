@@ -1,6 +1,6 @@
 ---
 title: Architectural differences between ASP.NET MVC and ASP.NET Core
-description: Although at a high level ASP.NET MVC and ASP.NET Core share many concepts, there are many differences between them architecturally. Knowing these differences will help teams make informed decisions about how the will migrate their applications to .NET Core.
+description: Review the architectural differences between ASP.NET and ASP.NET Core.
 author: ardalis
 ms.date: 11/13/2020
 ---

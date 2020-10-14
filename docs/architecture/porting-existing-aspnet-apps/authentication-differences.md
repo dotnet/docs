@@ -5,7 +5,7 @@ author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing Authentication and Authorization between ASP.NET MVC and ASP.NET Core
+# Comparing authentication and authorization between ASP.NET MVC and ASP.NET Core
 
 ## References
 

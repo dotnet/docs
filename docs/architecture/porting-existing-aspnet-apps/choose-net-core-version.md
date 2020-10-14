@@ -5,15 +5,15 @@ author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Choosing the right .NET Core version
+# Choose the right .NET Core version
 
-The biggest consideration for most organizations when choosing a version of .NET Core to target is the support lifecycle. Long Term Support (LTS) releases ship less frequently but have a longer support window than Current (non-LTS) releases. Customers can choose which releases to target, and can install different releases of .NET Core side by side on the same machine. LTS releases will receive only critical and compatible fixes throughout their lifecycle. Current releases will receive these same fixes and will also be updated with compatible innovations and features. LTS releases are supported for three years after their initial release. Current releases are supported for three months after a subsequent Current or LTS release.
+The largest consideration for most organizations when choosing a version of .NET Core to target is the support lifecycle. Long Term Support (LTS) releases ship less frequently but have a longer support window than Current (non-LTS) releases. Customers can choose which releases to target, and can install different releases of .NET Core side by side on the same machine. LTS releases will receive only critical and compatible fixes throughout their lifecycle. Current releases will receive these same fixes and will also be updated with compatible innovations and features. LTS releases are supported for three years after their initial release. Current releases are supported for three months after a subsequent Current or LTS release.
 
 Most customers looking to migrate a large .NET application to .NET Core today are probably looking for a stable destination, given that they haven't already made the move to an earlier version of .NET Core. In this case, the best .NET Core version to target for the migration is .NET Core 3.1, which is the current LTS version. Support for .NET Core 3.1 ends in December 2022. The next planned LTS release will be .NET 6, slated to ship in November 2021.
 
 Updating from .NET Core 3.1 to .NET 5 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET to .NET Core. For this reason, the recommendation for most customers is to upgrade to .NET Core 3.1 first, and then decide whether the next update should be to the latest current release (.NET 5) or to wait for the next LTS release (.NET 6) before upgrading further.
 
-This book assumes .NET applications will be upgrading to .NET Core 3.1.
+This book assumes .NET applications will be upgraded to .NET Core 3.1.
 
 ## References
 

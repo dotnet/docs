@@ -14,7 +14,7 @@ ms.date: 11/13/2020
 - Focus on IIS for ASP.NET
 - Show strategies, especially for web api, for using IIS routing to enable side by side deployments (be sure to reference this early on in book as well)
 
-"Deployment may make sense sprinkled in throughout the book. Kind of like how we’ve discussed how customers should think about branching, feature spikes, etc and when they can have decent checkpoints."
+"Deployment may make sense sprinkled in throughout the book. Kind of like how we've discussed how customers should think about branching, feature spikes, and when they can have decent checkpoints."
 
 ## References
 

@@ -17,7 +17,7 @@ Because .NET Core supports Linux, you may now find some hosting options availabl
 
 Most organizations today are leveraging cloud platforms for at least some of their software capabilities. With a migration of an app to .NET Core, it's a good time to consider whether the app should be purposefully written with cloud hosting in mind. Such *cloud native* apps are better able to leverage cloud capabilities like serverless, microservices, and can be less concerned with the low level details of how and where they may be deployed.
 
-Learn more about cloud native app development in this free e-book, [Architecting Cloud Native .NET Applications for Azure](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/).
+Learn more about cloud native app development in this free e-book, [Architecting Cloud Native .NET Applications for Azure](/dotnet/architecture/cloud-native/).
 
 ## Leveraging containers
 
@@ -25,7 +25,7 @@ Modern apps often leverage containers as a means of reducing variation between h
 
 TODO: Add figure showing migration to container-hosted app or apps.
 
-## Side by side deployment options
+## Side-by-side deployment options
 
 Migrating large .NET apps to .NET Core often requires a substantial effort. Most organizations will want to be able to break this effort up in some fashion, so that pieces of the app can be migrated and deployed in production before the entire migration is complete. Running both the original ASP.NET application and its newly-migrated ASP.NET Core sub-app(s) side by side is a frequently cited goal. This can be achieved through a number of mechanisms including leveraging IIS routing, which is covered in [chapter 5](deployment-scenarios.md). Other options include leveraging application gateways or cloud design patterns like [backends for frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) to manage sets of ASP.NET Web APIs and ASP.NET Core API endpoints.
 

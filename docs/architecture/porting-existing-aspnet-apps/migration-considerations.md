@@ -13,7 +13,7 @@ The most fundamental question teams must answer when it comes to porting their a
 
 Let's start with some of the reasons why you might want to move to .NET Core. There are quite a few, so don't consider this an exhaustive list.
 
-### Cross-platform support.
+### Cross-platform support
 
 Apps built on .NET Core are truly cross-platform and can run on Windows as well as Linux and MacOS. This means not only can your developers use whatever hardware they want, but you'll also be able to host your application anywhere from local IIS to Azure in the cloud; from Linux Docker containers to IoT devices.
 
@@ -21,7 +21,7 @@ Apps built on .NET Core are truly cross-platform and can run on Windows as well 
 
 Apps built with .NET Core are running on one of the fastest tech stacks available anywhere. If performance is a key concern for your app, you're almost certain to see a performance improvement by moving to .NET Core from ASP.NET MVC.
 
-### Cloud native
+### Cloud-native
 
 For the above reasons as well as others, .NET Core apps are very well-suited to running in cloud hosting environments. Lightweight and fast, apps running in Core can easily be deployed to Azure Web Apps or containers and scaled horizontally as needed to meet immediate system demand.
 
@@ -31,7 +31,7 @@ For many apps, while they've continued to meet customer and business needs, tech
 
 ### Modular
 
-ASP.NET Core is very modular, leveraging Nuget packages as a first-class part of the framework. Apps built for .NET Core all support dependency injection, making it easy to compose solutions from whatever implementations are needed for a given environment. Building microservices with .NET Core is far easier than with ASP.NET MVC with its dependency on IIS, which opens up additional options to break up large applications into smaller modules.
+ASP.NET Core is very modular, leveraging NuGet packages as a first-class part of the framework. Apps built for .NET Core all support dependency injection, making it easy to compose solutions from whatever implementations are needed for a given environment. Building microservices with .NET Core is far easier than with ASP.NET MVC with its dependency on IIS, which opens up additional options to break up large applications into smaller modules.
 
 ### Modern
 

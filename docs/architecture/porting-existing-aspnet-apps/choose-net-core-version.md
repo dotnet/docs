@@ -13,7 +13,7 @@ Most customers looking to migrate a large .NET application to .NET Core today ar
 
 Updating from .NET Core 3.1 to .NET 5 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET to .NET Core. For this reason, the recommendation for most customers is to upgrade to .NET Core 3.1 first, and then decide whether the next update should be to the latest current release (.NET 5) or to wait for the next LTS release (.NET 6) before upgrading further.
 
-This book assumes .NET applications will be upgrading to .NET Core 3.1.
+This book assumes .NET applications will be upgraded to .NET Core 3.1.
 
 ## References
 

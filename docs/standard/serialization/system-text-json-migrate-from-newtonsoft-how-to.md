@@ -77,7 +77,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 ::: zone-end
 
-::: zone pivot="dotnet-3-1"
+::: zone pivot="dotnet-core-3-1"
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
 | Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |

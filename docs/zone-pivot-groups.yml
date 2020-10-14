@@ -20,3 +20,11 @@ groups:
       title: xUnit
     - id: nunit
       title: NUnit
+- id: dotnet-version
+  title: .NET version
+  prompt: Choose a .NET version
+  pivots:
+    - id: dotnet-5-0
+      title: .NET 5.0
+    - id: dotnet-core-3-1
+      title: .NET Core 3.1

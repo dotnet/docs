@@ -39,7 +39,7 @@ Use the following process to apply an attribute to an element of your code.
 
 ## Apply attributes at the assembly level
 
- If you want to apply an attribute at the assembly level, use the **assembly** (`Assembly` in Visual Basic) keyword. The following code shows the **AssemblyTitleAttribute** applied at the assembly level.
+ If you want to apply an attribute at the assembly level, use the `assembly` (`Assembly` in Visual Basic) keyword. The following code shows the **AssemblyTitleAttribute** applied at the assembly level.
 
  [!code-cpp[Conceptual.Attributes.Usage#2](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.attributes.usage/cpp/source1.cpp#2)]
  [!code-csharp[Conceptual.Attributes.Usage#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source1.cs#2)]

@@ -13,7 +13,7 @@ As you're planning and executing your migration from ASP.NET MVC and/or Web API 
 
 The official documentation website, [docs.microsoft.com](https://docs.microsoft.com/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to docs articles, but for any problem you're facing it's often worth at least doing a quick search of the docs to see if there is already information there covering the issue and offering a solution or workaround.
 
-## Github
+## GitHub
 
 Because .NET Core is an open source project, many issues are discovered, reported, discussed, and fixed on GitHub. Microsoft has several GitHub organizations in which you'll find repositories that may be helpful. A partial list of these organizations and some of their public repositories are listed below:
 
@@ -40,9 +40,9 @@ Stack Overflow has a wealth of information in the form of previous questions ask
 
 YouTube has a huge amount of .NET and .NET Core video content, which may include useful tutorials or walkthroughs covering any scenario you may encounter. Consider searching it separately if your other efforts to find help online come up short.
 
-## Twitter, Gitter, Slack, etc.
+## Twitter, Gitter, Slack, and other community channels
 
-You'll find many other ways to connect with .NET developers on the [.NET Community page](https://dotnet.microsoft.com/platform/community). You'll find many product teams and team members on Twitter as well as in various other communities. You can follow and communicate with [the author of this book on Twitter](https://twitter.com/ardalis) as well.
+You'll find many other ways to connect with .NET developers on the [.NET Community page](https://dotnet.microsoft.com/platform/community). Additionally, many product teams and team members are on Twitter as well as in various other communities. You can follow and communicate with [the author of this book on Twitter](https://twitter.com/ardalis) as well.
 
 ## References
 

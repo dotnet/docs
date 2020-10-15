@@ -30,7 +30,7 @@ In .NET Core 2.0 - 3.1, abstract cryptographic primitive factories such as <xref
 HashAlgorithm alg = HashAlgorithm.Create();
 ```
 
-In .NET 5.0 and later versions, abstract cryptographic primitive factories such as <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> are marked obsolete, and produce a compile-time warning with ID `SYSLIB0007`. At run time, these methods continue to throw a <xref:System.PlatformNotSupportedException>.
+In .NET 5.0 and later versions, abstract cryptographic primitive factories such as <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> are marked obsolete and produce a compile-time warning with ID `SYSLIB0007`. At run time, these methods continue to throw a <xref:System.PlatformNotSupportedException>.
 
 ```csharp
 // Throws PlatformNotSupportedException.
@@ -60,7 +60,7 @@ This is a compile-time only change. There is no run-time change from previous ve
 
 #### Reason for change
 
-The cryptographic configuration system present in .NET Framework is no longer present in .NET Core and .NET 5.0+, since it does not allow for proper cryptographic agility. .NET's backward-compatibility requirements also prohibit the framework from updating certain cryptographic APIs to keep up with advances in cryptography. For example, the <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> method was introduced in .NET Framework 1.0, when the SHA-1 hash algorithm was state-of-the-art. Twenty years have passed, and now SHA-1 is considered broken, but we cannot change <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> to return a different algorithm. Doing so would introduce an unacceptable breaking change in consuming applications.
+The cryptographic configuration system present in .NET Framework is no longer present in .NET Core and .NET 5.0+, since that legacy system doesn't allow for proper cryptographic agility. .NET's backward-compatibility requirements also prohibit the framework from updating certain cryptographic APIs to keep up with advances in cryptography. For example, the <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> method was introduced in .NET Framework 1.0, when the SHA-1 hash algorithm was state-of-the-art. Twenty years have passed, and now SHA-1 is considered broken, but we cannot change <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> to return a different algorithm. Doing so would introduce an unacceptable breaking change in consuming applications.
 
 Best practice dictates that libraries that consume cryptographic primitives (such as AES, SHA-*, and RSA) should be in full control over how they consume these primitives. Applications that require future-proofing should utilize higher-level libraries that wrap these primitives and add key management and cryptographic agility capabilities. These libraries are often provided by the hosting environment. One example is [ASP.NET's Data Protection library](/aspnet/core/security/data-protection/), which handles these concerns on behalf of the calling application.
 
@@ -76,7 +76,7 @@ Best practice dictates that libraries that consume cryptographic primitives (suc
 
   | .NET Framework | .NET Core / .NET 5.0+ compatible replacement | Remarks |
   | - | - | - |
-  | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create?displayProperty=nameWithType> | r<xref:System.Security.Cryptography.RSA.Create?displayProperty=nameWithType> | |
+  | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.RSA.Create?displayProperty=nameWithType> | |
   | <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.SHA1.Create?displayProperty=nameWithType> | The SHA-1 algorithm is considered broken. Consider using a stronger algorithm if possible. Consult your security advisor for further guidance. |
   | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.HMACSHA1.%23ctor> | The HMACSHA1 algorithm is discouraged for most modern applications. Consider using a stronger algorithm if possible. Consult your security advisor for further guidance. |
   | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.HMACSHA1.%23ctor> | The HMACSHA1 algorithm is discouraged for most modern applications. Consider using a stronger algorithm if possible. Consult your security advisor for further guidance. |

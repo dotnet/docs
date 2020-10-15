@@ -76,22 +76,39 @@ As we did with the method iterator, we can refactor the code from this example t
 
 At first glance, local functions and [lambda expressions](../../language-reference/operators/lambda-expressions.md) are very similar. In many cases, the choice between using lambda expressions and local functions is a matter of style and personal preference. However, there are real differences in where you can use one or the other that you should be aware of.
 
-Let's examine the differences between the local function and lambda expression implementations of the factorial algorithm. First the version using a local function:
+Let's examine the differences between the local function and lambda expression implementations of the factorial algorithm. Here's the version using a local function:
 
 [!code-csharp[LocalFunctionFactorial](../../../../samples/snippets/csharp/new-in-7/MathUtilities.cs#37_LocalFunctionFactorial "Recursive factorial using local function")]
 
-Contrast that implementation with a version that uses lambda expressions:
+This version uses lambda expressions:
 
 [!code-csharp[26_LambdaFactorial](../../../../samples/snippets/csharp/new-in-7/MathUtilities.cs#38_LambdaFactorial "Recursive factorial using lambda expressions")]
 
-The local functions have names. The lambda expressions are anonymous methods that are assigned to variables that are `Func` or `Action` types. When you
-declare a local function, the argument types and return type are part of the function declaration. Instead of being part of the body of the lambda expression, the argument types and return type are part of the lambda expression's variable type declaration. Those two differences may result in clearer code.
+### Naming
 
-Local functions have different rules for definite assignment than lambda expressions. A local function declaration can be referenced from any code location where it is in scope. A lambda expression must be assigned to a delegate variable before it can be accessed (or called through the delegate referencing the lambda expression). Notice that the version using the lambda expression must declare and initialize the lambda expression `nthFactorial` before defining it. Not doing so results in a compile time error for referencing `nthFactorial` before assigning it. These differences mean that recursive algorithms are easier to create using local functions. You can declare and define a local function that calls itself. Lambda expressions must be declared, and assigned a default value before they can be re-assigned to a body that references the same lambda expression.
+Local functions are explicitly named like methods. Lambda expressions are anonymous methods and need to be assigned to variables that are either `Func` or `Action` types. When you declare a local function, the process is like writing a normal method; you declare a return type and a function signature.
 
-Definite assignment rules also affect any variables that are captured by the local function or lambda expression. Both local functions and lambda expression rules demand that any captured variables are definitely assigned at the point when the local function or lambda expression is converted to a delegate. The difference is that lambda expressions are converted to delegates when they are declared. Local functions are converted to delegates only when used as a delegate. If you declare a local function and only reference it by calling it like a method, it will not be converted to a delegate. That rule enables you to declare a local function at any convenient location in its enclosing scope. It's common to declare local functions at the end of the parent method, after any return statements.
+### Typing
 
-Third, the compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
+Lambda expressions rely on the typing of the `Func`/`Action` variable that they're assigned to determine the argument and return types. In local functions, since the syntax is much like writing a normal method, argument types and return type are already part of the function declaration.
+
+### Definite Assignment
+
+Local functions have different rules for definite assignment than lambda expressions. A local function declaration can be referenced from any code location where it is in scope; in our first example `LocalFunctionFactorial`, we could declare our local function either above or below the `return` statement and not trigger any compiler errors.
+
+Lambda expressions follow the rules for definite assignment more closely. In order for a lambda expression to be used, the `Func`/`Action` variable that it will be assigned to must be declared and the lambda expression assigned to it. Notice that `LambdaFactorial` must declare and initialize the lambda expression `nthFactorial` before defining it. Not doing so results in a compile time error for referencing `nthFactorial` before assigning it.
+
+These differences mean that recursive algorithms are easier to create using local functions. You can declare and define a local function that calls itself. Lambda expressions must be declared, and assigned a default value before they can be re-assigned to a body that references the same lambda expression.
+
+### Conversion to a Delegate
+
+Both local functions and lambda expressions require that any captured variables are definitely assigned when either is converted to a delegate, but *when* they're converted differs. Lambda expressions are converted to delegates when they're declared, while local functions are only converted to delegates when ***used*** as a delegate.
+
+If you declare a local function and only reference it by calling it like a method, it will not be converted to a delegate. That rule enables you to declare a local function at any convenient location in its enclosing scope. It's common to declare local functions at the end of the parent method, after any return statements.
+
+### Variable Capture
+
+The rules of definite assignment also affect any variables that are captured by the local function or lambda expression. The compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
 
 ```csharp
 int M()
@@ -106,7 +123,9 @@ int M()
 
 The compiler can determine that `LocalFunction` definitely assigns `y` when called. Because `LocalFunction` is called before the `return` statement, `y` is definitely assigned at the `return` statement.
 
-The analysis that enables the example analysis enables the fourth difference. Depending on their use, local functions can avoid heap allocations that are always necessary for lambda expressions. If a local function is never converted to a delegate, and none of the variables captured by the local function is captured by other lambdas or local functions that are converted to delegates, the compiler can avoid heap allocations.
+### Heap Allocations
+
+Depending on their use, local functions can avoid heap allocations that are always necessary for lambda expressions. If a local function is never converted to a delegate, and none of the variables captured by the local function is captured by other lambdas or local functions that are converted to delegates, the compiler can avoid heap allocations.
 
 Consider this async example:
 
@@ -121,7 +140,13 @@ The instantiation necessary for lambda expressions means extra memory allocation
 
 [!code-csharp[TaskLocalFunctionExample](../../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#TaskExample "Task returning method with local function")]
 
-One final advantage not demonstrated in this sample is that local functions can be implemented as iterators, using the `yield return` syntax to produce a sequence of values. The `yield return` statement is not allowed in lambda expressions.
+### Usage of the `yield` Keyword
+
+One final advantage not demonstrated in this sample is that local functions can be implemented as iterators, using the `yield return` syntax to produce a sequence of values.
+
+[!code-csharp[TaskLocalFunctionExample](../../../../samples/snippets/csharp/new-in-7/YieldLocalFunc.cs#YieldExample "Local function leveraging yield return")]
+
+The `yield return` statement is not allowed in lambda expressions, see [compiler error CS1621](../../misc/cs1621.md).
 
 While local functions may seem redundant to lambda expressions, they actually serve different purposes and have different uses. Local functions are more efficient for the case when you want to write a function that is called only from the context of another method.
 

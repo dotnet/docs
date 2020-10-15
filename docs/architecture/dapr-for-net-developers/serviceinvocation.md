@@ -289,14 +289,9 @@ In this HTTP POST call the HTTP verb doesn't need to be specified explicitly bec
 
 ## Summary
 
-Benefits
+In this chapter, we introduced the Service Invocation building block. We showed how to invoke remote methods both by making direct HTTP calls to the Dapr sidecar and by using the Dapr .NET SDK. 
 
-- Service discovery instead of configuration
-- mTLS
-- Observability
-- gRPC performance
-
-To learn more about these benefits...
+The eShopOnDapr reference case shows how the original eShopOnContainers solution can be improved by using Dapr service invocation. Adding Dapr to eShop provides benefits such as automatic retries, message encryption using mTLS and improved observability.
 
 ### References
 

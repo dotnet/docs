@@ -57,9 +57,7 @@ You can create tests with NUnit using the .NET Core in [C#](unit-testing-with-nu
 
 ### MSTest
 
-[MSTest](https://github.com/Microsoft/testfx-docs) is the Microsoft test framework for It's extensible
-
-You can create tests with MSTest using the .NET Core in [C#](unit-testing-with-mstest.md), [F#](unit-testing-fsharp-with-mstest.md), and [Visual Basic](unit-testing-visual-basic-with-mstest.md).
+[MSTest](https://github.com/Microsoft/testfx-docs) is the Microsoft test framework for all .NET languages, it's extensible and works with both .NET CLI and Visual Studio. You can create tests with MSTest using the .NET Core in [C#](unit-testing-with-mstest.md), [F#](unit-testing-fsharp-with-mstest.md), and [Visual Basic](unit-testing-visual-basic-with-mstest.md).
 
 ## See also
 

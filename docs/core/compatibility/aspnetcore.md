@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 09/29/2020
+ms.date: 10/06/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -35,6 +35,7 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 - [Blazor: ProtectedBrowserStorage feature moved to shared framework](#blazor-protectedbrowserstorage-feature-moved-to-shared-framework)
 - [Blazor: RenderTreeFrame readonly public fields have become properties](#blazor-rendertreeframe-readonly-public-fields-have-become-properties)
 - [Blazor: Target framework of NuGet packages changed](#blazor-target-framework-of-nuget-packages-changed)
+- [Blazor: Updated browser support](#blazor-updated-browser-support)
 - [Caching: CompactOnMemoryPressure property removed](#caching-compactonmemorypressure-property-removed)
 - [Caching: Microsoft.Extensions.Caching.SqlServer uses new SqlClient package](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Caching: ResponseCaching "pubternal" types changed to internal](#caching-responsecaching-pubternal-types-changed-to-internal)
@@ -116,7 +117,7 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 
 ***
 
-[!INCLUDE [binaryformatter-serialization-obsolete](../../../includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
+[!INCLUDE[Serialization: BinaryFormatter serialization obsolete](~/includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
 
 ***
 
@@ -137,6 +138,10 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 ***
 
 [!INCLUDE[Blazor: Target framework of NuGet packages changed](~/includes/core-changes/aspnetcore/5.0/blazor-packages-target-framework-changed.md)]
+
+***
+
+[!INCLUDE[Blazor: Updated browser support](~/includes/core-changes/aspnetcore/5.0/blazor-browser-support-updated.md)]
 
 ***
 

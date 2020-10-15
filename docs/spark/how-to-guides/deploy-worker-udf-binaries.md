@@ -1,7 +1,7 @@
 ---
 title: Deploy .NET for Apache Spark worker and user-defined function binaries
 description: Learn how to deploy .NET for Apache Spark worker and user-defined function binaries.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -10,12 +10,12 @@ ms.custom: mvc,how-to
 
 This how-to provides general instructions on how to deploy .NET for Apache Spark worker and user-defined function binaries. You learn which Environment Variables to set up, as well as some commonly used parameters for launching applications with `spark-submit`.
 
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
-
 ## Configurations
+
 Configurations show the general environment variables and parameters settings in order to deploy .NET for Apache Spark worker and user-defined function binaries.
 
 ### Environment variables
+
 When deploying workers and writing UDFs, there are a few commonly used environment variables that you may need to set:
 
 | Environment Variable         | Description

@@ -7,6 +7,7 @@ f1_keywords:
   - "switch"
   - "case"
   - "case_CSharpKeyword"
+  - "defaultcase_CSharpKeyword"
 helpviewer_keywords:
   - "switch statement [C#]"
   - "switch keyword [C#]"
@@ -81,7 +82,7 @@ Execution of the statement list in the switch section with a case label that mat
 
 Each case label specifies a pattern to compare to the match expression (the `caseSwitch` variable in the previous examples). If they match, control is transferred to the switch section that contains the **first** matching case label. If no case label pattern matches the match expression, control is transferred to the section with the `default` case label, if there's one. If there's no `default` case, no statements in any switch section are executed, and control is transferred outside the `switch` statement.
 
-For information on the `switch` statement and pattern matching, see the [Pattern matching with the `switch` statement](#pattern-matching with-the-switch-statement) section.
+For information on the `switch` statement and pattern matching, see the [Pattern matching with the `switch` statement](#pattern-matching-with-the-switch-statement) section.
 
 Because C# 6 supports only the constant pattern and doesn't allow the repetition of constant values, case labels define mutually exclusive values, and only one pattern can match the match expression. As a result, the order in which `case` statements appear is unimportant.
 

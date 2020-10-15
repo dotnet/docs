@@ -179,7 +179,7 @@ Index to subsections:
 
 ### Types and type member signatures
 
-The [System.Object](xref:System.Object) type is CLS-compliant and is the base type of all object types in the .NET Framework type system. Inheritance in the .NET Framework is either implicit (for example, the [String](xref:System.String) class implicitly inherits from the `Object` class) or explicit (for example, the [CultureNotFoundException](xref:System.Globalization.CultureNotFoundException) class explicitly inherits from the [ArgumentException](xref:System.ArgumentException) class, which explicitly inherits from the [Exception](xref:System.Exception) class. For a derived type to be CLS compliant, its base type must also be CLS-compliant.
+The [System.Object](xref:System.Object) type is CLS-compliant and is the base type of all object types in the .NET type system. Inheritance in .NET is either implicit (for example, the [String](xref:System.String) class implicitly inherits from the `Object` class) or explicit (for example, the [CultureNotFoundException](xref:System.Globalization.CultureNotFoundException) class explicitly inherits from the [ArgumentException](xref:System.ArgumentException) class, which explicitly inherits from the [Exception](xref:System.Exception) class. For a derived type to be CLS compliant, its base type must also be CLS-compliant.
 
 The following example shows a derived type whose base type is not CLS-compliant. It defines a base `Counter` class that uses an unsigned 32-bit integer as a counter. Because the class provides counter functionality by wrapping an unsigned integer, the class is marked as non-CLS-compliant. As a result, a derived class, `NonZeroCounter`, is also not CLS-compliant.
 
@@ -314,7 +314,7 @@ Non-compliant type | Description | CLS-compliant alternative
 [UInt64](xref:System.UInt64) | 64-bit unsigned integer | [Int64](xref:System.Int64) (may overflow), [BigInteger](xref:System.Numerics.BigInteger), or [Double](xref:System.Double)
 [UIntPtr](xref:System.UIntPtr) | Unsigned pointer or handle | [IntPtr](xref:System.IntPtr)
 
-The .NET Framework Class Library or any other class library may include other types that aren't CLS-compliant; for example:
+The .NET Class Library or any other class library may include other types that aren't CLS-compliant; for example:
 
 * Boxed value types. The following C# example creates a class that has a public property of type `int*` named `Value`. Because an `int*` is a boxed value type, the compiler flags it as non-CLS-compliant.
 
@@ -2474,7 +2474,7 @@ End Module
 
 ### Attributes
 
-In.NET Framework assemblies, custom attributes provide an extensible mechanism for storing custom attributes and retrieving metadata about programming objects, such as assemblies, types, members, and method parameters. Custom attributes must derive from [System.Attribute](xref:System.Attribute) or from a type derived from `System.Attribute`.
+In .NET assemblies, custom attributes provide an extensible mechanism for storing custom attributes and retrieving metadata about programming objects, such as assemblies, types, members, and method parameters. Custom attributes must derive from [System.Attribute](xref:System.Attribute) or from a type derived from `System.Attribute`.
 
 The following example violates this rule. It defines a `NumericAttribute` class that does not derive from `System.Attribute`. A compiler error results only when the non-CLS-compliant attribute is applied, not when the class is defined.
 
@@ -2631,7 +2631,7 @@ At compile time, the compiler detects non-compliant elements that are presumed t
 
 Component developers can use the `CLSCompliantAttribute` attribute in two ways:
 
-* To define the parts of the public interface exposed by a component that are CLS-compliant and the parts that are not CLS-compliant. When the attribute is used to mark particular program elements as CLS-compliant, its use guarantees that those elements are accessible from all languages and tools that target the .NET Framework.
+* To define the parts of the public interface exposed by a component that are CLS-compliant and the parts that are not CLS-compliant. When the attribute is used to mark particular program elements as CLS-compliant, its use guarantees that those elements are accessible from all languages and tools that target .NET.
 
 * To ensure that the component library's public interface exposes only program elements that are CLS-compliant. If elements are not CLS-compliant, compilers will generally issue a warning.
 
@@ -2783,7 +2783,7 @@ If you are developing an app rather than a library (that is, if you aren't expos
 
 ## Cross-language interoperability
 
-Language independence has a number of possible meanings. One meaning involves seamlessly consuming types written in one language from an app written in another language. A second meaning, which is the focus of this article, involves combining code written in multiple languages into a single .NET Framework assembly.
+Language independence has a number of possible meanings. One meaning involves seamlessly consuming types written in one language from an app written in another language. A second meaning, which is the focus of this article, involves combining code written in multiple languages into a single .NET assembly.
 
 The following example illustrates cross-language interoperability by creating a class library named Utilities.dll that includes two classes, `NumericLib` and `StringLib`. The `NumericLib` class is written in C#, and the `StringLib` class is written in Visual Basic. Here's the source code for `StringUtil.vb`, which includes a single member, `ToTitleCase`, in its `StringLib` class.
 

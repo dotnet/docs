@@ -1,7 +1,7 @@
 items:
 - name: .NET documentation
   href: index.yml
-- name: Get started (day 1)
+- name: Get started
   items:
   - name: Hello World
     href: ../core/get-started.md
@@ -47,20 +47,18 @@ items:
       href: ../core/install/how-to-detect-installed-versions.md
     - name: Install localized IntelliSense
       href: ../core/install/localized-intellisense.md
-- name: Overview (week 1)
+- name: Overview
   items:
-  - name: Tour of .NET
-    href: ../standard/tour.md
+  - name: Introduction to .NET
+    href: ../core/introduction.md
   - name: .NET architectural components
     href: ../standard/components.md
   - name: .NET class libraries
     href: ../standard/class-libraries.md
-  - name: Introduction to .NET Core
-    href: ../core/introduction.md
-  - name: .NET Core overview
-    href: ../core/about.md
   - name: .NET Standard overview
     href: ../standard/net-standard.md
+  - name: Releases, patches, and support
+    href: ../core/releases-and-support.md
   - name: .NET glossary
     href: ../standard/glossary.md
   - name: Tutorials
@@ -135,7 +133,7 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new
   items:
-  - name: Evolution of .NET Core to .NET 5
+  - name: What's new in .NET 5
     href: ../core/dotnet-five.md
   - name: What's new in .NET Core 3.1
     href: ../core/whats-new/dotnet-core-3-1.md
@@ -151,8 +149,20 @@ items:
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Tools and diagnostics
   items:
-  - name: .NET Core SDK overview
-    href: ../core/sdk.md
+  - name: .NET Core SDK
+    items:
+    - name: Overview
+      href: ../core/sdk.md
+    - name: Error messages
+      items:
+      - name: NETSDK1005 and NETSDK1047
+        href: ../core/tools/sdk-errors/netsdk1005.md
+      - name: NETSDK1059
+        href: ../core/tools/sdk-errors/netsdk1059.md
+      - name: NETSDK1073
+        href: ../core/tools/sdk-errors/netsdk1073.md
+      - name: NETSDK1145
+        href: ../core/tools/sdk-errors/netsdk1145.md
   - name: .NET Core CLI
     items:
     - name: Overview
@@ -195,6 +205,8 @@ items:
           href: ../core/tools/dotnet-nuget-remove-source.md
         - name: dotnet nuget update source
           href: ../core/tools/dotnet-nuget-update-source.md
+        - name: dotnet nuget verify
+          href: ../core/tools/dotnet-nuget-verify.md
       - name: dotnet pack
         href: ../core/tools/dotnet-pack.md
       - name: dotnet publish
@@ -332,7 +344,7 @@ items:
     - name: Logging and tracing
       href: ../core/diagnostics/logging-tracing.md
     - name: Collect diagnostics in containers
-      href: ../core/diagnostics/diagnostics-in-containers.md          
+      href: ../core/diagnostics/diagnostics-in-containers.md
     - name: .NET Core CLI global tools
       items:
       - name: dotnet-counters
@@ -899,8 +911,12 @@ items:
             href: code-analysis/quality-rules/ca2216.md
           - name: CA2217
             href: code-analysis/quality-rules/ca2217.md
+          - name: CA2218
+            href: code-analysis/quality-rules/ca2218.md
           - name: CA2219
             href: code-analysis/quality-rules/ca2219.md
+          - name: CA2224
+            href: code-analysis/quality-rules/ca2224.md
           - name: CA2225
             href: code-analysis/quality-rules/ca2225.md
           - name: CA2226
@@ -944,6 +960,198 @@ items:
           - name: Overview
             displayName: "language rules"
             href: code-analysis/style-rules/language-rules.md
+          - name: this and Me preferences
+            items:
+            - name: IDE0003
+              href: code-analysis/style-rules/ide0003-ide0009.md
+            - name: IDE0009
+              href: code-analysis/style-rules/ide0003-ide0009.md
+          - name: Use language keywords for types
+            items:
+            - name: IDE0049
+              href: code-analysis/style-rules/ide0049.md
+          - name: Modifier preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/modifier-preferences.md
+            - name: IDE0036
+              href: code-analysis/style-rules/ide0036.md
+            - name: IDE0040
+              href: code-analysis/style-rules/ide0040.md
+            - name: IDE0044
+              href: code-analysis/style-rules/ide0044.md
+            - name: IDE0062
+              href: code-analysis/style-rules/ide0062.md
+            - name: IDE0064
+              href: code-analysis/style-rules/ide0064.md
+          - name: Parentheses preferences
+            items:
+            - name: IDE0047 and IDE0048
+              href: code-analysis/style-rules/ide0047-ide0048.md
+          - name: Expression-level preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/expression-level-preferences.md
+            - name: IDE0010
+              href: code-analysis/style-rules/ide0010.md
+            - name: IDE0017
+              href: code-analysis/style-rules/ide0017.md
+            - name: IDE0018
+              href: code-analysis/style-rules/ide0018.md
+            - name: IDE0028
+              href: code-analysis/style-rules/ide0028.md
+            - name: IDE0032
+              href: code-analysis/style-rules/ide0032.md
+            - name: IDE0033
+              href: code-analysis/style-rules/ide0033.md
+            - name: IDE0034
+              href: code-analysis/style-rules/ide0034.md
+            - name: IDE0037
+              href: code-analysis/style-rules/ide0037.md
+            - name: IDE0042
+              href: code-analysis/style-rules/ide0042.md
+            - name: IDE0045
+              href: code-analysis/style-rules/ide0045.md
+            - name: IDE0046
+              href: code-analysis/style-rules/ide0046.md
+            - name: IDE0050
+              href: code-analysis/style-rules/ide0050.md
+            - name: IDE0054
+              href: code-analysis/style-rules/ide0054-ide0074.md
+            - name: IDE0056
+              href: code-analysis/style-rules/ide0056.md
+            - name: IDE0057
+              href: code-analysis/style-rules/ide0057.md
+            - name: IDE0070
+              href: code-analysis/style-rules/ide0070.md
+            - name: IDE0071
+              href: code-analysis/style-rules/ide0071.md
+            - name: IDE0072
+              href: code-analysis/style-rules/ide0072.md
+            - name: IDE0074
+              href: code-analysis/style-rules/ide0054-ide0074.md
+            - name: IDE0075
+              href: code-analysis/style-rules/ide0075.md
+            - name: IDE0082
+              href: code-analysis/style-rules/ide0082.md
+            - name: IDE0090
+              href: code-analysis/style-rules/ide0090.md
+          - name: Null-checking preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/null-checking-preferences.md
+            - name: IDE0016
+              href: code-analysis/style-rules/ide0016.md
+            - name: IDE0029
+              href: code-analysis/style-rules/ide0029-ide0030.md
+            - name: IDE0030
+              href: code-analysis/style-rules/ide0029-ide0030.md
+            - name: IDE0031
+              href: code-analysis/style-rules/ide0031.md
+            - name: IDE0041
+              href: code-analysis/style-rules/ide0041.md
+            - name: IDE1005
+              href: code-analysis/style-rules/ide1005.md
+          - name: var preferences
+            items:
+            - name: IDE0007
+              href: code-analysis/style-rules/ide0007-ide0008.md
+            - name: IDE0008
+              href: code-analysis/style-rules/ide0007-ide0008.md
+          - name: Expression-bodied members
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/expression-bodied-members.md
+            - name: IDE0021
+              href: code-analysis/style-rules/ide0021.md
+            - name: IDE0022
+              href: code-analysis/style-rules/ide0022.md
+            - name: IDE0023
+              href: code-analysis/style-rules/ide0023-ide0024.md
+            - name: IDE0024
+              href: code-analysis/style-rules/ide0023-ide0024.md
+            - name: IDE0025
+              href: code-analysis/style-rules/ide0025.md
+            - name: IDE0026
+              href: code-analysis/style-rules/ide0026.md
+            - name: IDE0027
+              href: code-analysis/style-rules/ide0027.md
+            - name: IDE0053
+              href: code-analysis/style-rules/ide0053.md
+            - name: IDE0061
+              href: code-analysis/style-rules/ide0061.md
+          - name: Pattern matching preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/pattern-matching-preferences.md
+            - name: IDE0019
+              href: code-analysis/style-rules/ide0019.md
+            - name: IDE0020
+              href: code-analysis/style-rules/ide0020-ide0038.md
+            - name: IDE0038
+              href: code-analysis/style-rules/ide0020-ide0038.md
+            - name: IDE0066
+              href: code-analysis/style-rules/ide0066.md
+            - name: IDE0078
+              href: code-analysis/style-rules/ide0078.md
+            - name: IDE0083
+              href: code-analysis/style-rules/ide0083.md
+            - name: IDE0084
+              href: code-analysis/style-rules/ide0084.md
+          - name: Code block preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/code-block-preferences.md
+            - name: IDE0011
+              href: code-analysis/style-rules/ide0011.md
+            - name: IDE0063
+              href: code-analysis/style-rules/ide0063.md
+          - name: using directive preferences
+            items:
+            - name: IDE0065
+              href: code-analysis/style-rules/ide0065.md
+          - name: File header preferences
+            items:
+            - name: IDE0073
+              href: code-analysis/style-rules/ide0073.md
+        - name: Unnecessary code rules
+          items:
+          - name: Overview
+            href: code-analysis/style-rules/unnecessary-code-rules.md
+          - name: IDE0001
+            href: code-analysis/style-rules/ide0001.md
+          - name: IDE0002
+            href: code-analysis/style-rules/ide0002.md
+          - name: IDE0004
+            href: code-analysis/style-rules/ide0004.md
+          - name: IDE0005
+            href: code-analysis/style-rules/ide0005.md
+          - name: IDE0035
+            href: code-analysis/style-rules/ide0035.md
+          - name: IDE0051
+            href: code-analysis/style-rules/ide0051.md
+          - name: IDE0052
+            href: code-analysis/style-rules/ide0052.md
+          - name: IDE0058
+            href: code-analysis/style-rules/ide0058.md
+          - name: IDE0059
+            href: code-analysis/style-rules/ide0059.md
+          - name: IDE0060
+            href: code-analysis/style-rules/ide0060.md
+          - name: IDE0079
+            href: code-analysis/style-rules/ide0079.md
+          - name: IDE0080
+            href: code-analysis/style-rules/ide0080.md
+          - name: IDE0081
+            href: code-analysis/style-rules/ide0081.md
+          - name: IDE0100
+            href: code-analysis/style-rules/ide0100.md
+        - name: Miscellaneous rules
+          items:
+          - name: IDE0076
+            href: code-analysis/style-rules/ide0076.md
+          - name: IDE0077
+            href: code-analysis/style-rules/ide0077.md
         - name: Formatting rules
           items:
           - name: Overview
@@ -1295,44 +1503,42 @@ items:
       href: ../standard/attributes/retrieving-information-stored-in-attributes.md
   - name: Choose between anonymous and tuple types
     href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-- name: Microsoft Extensions
+- name: Dependency injection
   items:
-  - name: Configuration
-    items:
-    - name: Overview
-      href: ../core/extensions/configuration.md
-      displayName: configuration,config,configuration sources,config sources
-    - name: Configuration providers
-      href: ../core/extensions/configuration-providers.md
-      displayName: configuration providers,config providers
-    - name: Implement a custom configuration provider
-      href: ../core/extensions/custom-configuration-provider.md
-      displayName: custom configuration,custom config,custom configuration provider,custom config provider
-  - name: Dependency injection
-    items:
-    - name: Overview
-      href: ../core/extensions/dependency-injection.md
-      displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
-    - name: Use dependency injection
-      href: ../core/extensions/dependency-injection-usage.md
-      displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
-    - name: Dependency injection guidelines
-      href: ../core/extensions/dependency-injection-guidelines.md
-      displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
-  - name: Generic host
-    href: ../core/extensions/generic-host.md
-  - name: Logging
-    items:
-    - name: Overview
-      href: ../core/extensions/logging.md
-    - name: Logging providers
-      href: ../core/extensions/logging-providers.md
-    - name: Implement a custom logging provider
-      href: ../core/extensions/custom-logging-provider.md
-    - name: High-performance logging
-      href: ../core/extensions/high-performance-logging.md
+  - name: Overview
+    href: ../core/extensions/dependency-injection.md
+    displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
+  - name: Use dependency injection
+    href: ../core/extensions/dependency-injection-usage.md
+    displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
+  - name: Dependency injection guidelines
+    href: ../core/extensions/dependency-injection-guidelines.md
+    displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
+- name: Configuration
+  items:
+  - name: Overview
+    href: ../core/extensions/configuration.md
+    displayName: configuration,config,configuration sources,config sources
+  - name: Configuration providers
+    href: ../core/extensions/configuration-providers.md
+    displayName: configuration providers,config providers
+  - name: Implement a custom configuration provider
+    href: ../core/extensions/custom-configuration-provider.md
+    displayName: custom configuration,custom config,custom configuration provider,custom config provider
   - name: Options pattern
     href: ../core/extensions/options.md
+- name: Logging
+  items:
+  - name: Overview
+    href: ../core/extensions/logging.md
+  - name: Logging providers
+    href: ../core/extensions/logging-providers.md
+  - name: Implement a custom logging provider
+    href: ../core/extensions/custom-logging-provider.md
+  - name: High-performance logging
+    href: ../core/extensions/high-performance-logging.md
+- name: HostBuilder (generic host)
+  href: ../core/extensions/generic-host.md
 - name: Data access
   items:
   - name: LINQ
@@ -1341,6 +1547,77 @@ items:
     href: ../standard/data/xml/
   - name: Microsoft.Data.Sqlite
     href: ../standard/data/sqlite/
+- name: File and stream I/O
+  items:
+  - name: Overview
+    href: ../standard/io/index.md
+  - name: File path formats on Windows systems
+    href: ../standard/io/file-path-formats.md
+  - name: Common I/O tasks
+    href: ../standard/io/common-i-o-tasks.md
+    items:
+    - name: "How to: Copy Directories"
+      href: ../standard/io/how-to-copy-directories.md
+    - name: "How to: Enumerate Directories and Files"
+      href: ../standard/io/how-to-enumerate-directories-and-files.md
+    - name: "How to: Read and Write to a Newly Created Data File"
+      href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
+    - name: "How to: Open and Append to a Log File"
+      href: ../standard/io/how-to-open-and-append-to-a-log-file.md
+    - name: "How to: Write Text to a File"
+      href: ../standard/io/how-to-write-text-to-a-file.md
+    - name: "How to: Read Text from a File"
+      href: ../standard/io/how-to-read-text-from-a-file.md
+    - name: "How to: Read Characters from a String"
+      href: ../standard/io/how-to-read-characters-from-a-string.md
+    - name: "How to: Write Characters to a String"
+      href: ../standard/io/how-to-write-characters-to-a-string.md
+    - name: "How to: Add or Remove Access Control List Entries"
+      href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
+    - name: "How to: Compress and Extract Files"
+      href: ../standard/io/how-to-compress-and-extract-files.md
+    - name: Composing Streams
+      href: ../standard/io/composing-streams.md
+    - name: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams"
+      href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
+  - name: Asynchronous file I/O
+    href: ../standard/io/asynchronous-file-i-o.md
+  - name: Handle I/O errors
+    href: ../standard/io/handling-io-errors.md
+  - name: Isolated storage
+    href: ../standard/io/isolated-storage.md
+    items:
+    - name: Types of Isolation
+      href: ../standard/io/types-of-isolation.md
+    - name: "How to: Obtain Stores for Isolated Storage"
+      href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
+    - name: "How to: Enumerate Stores for Isolated Storage"
+      href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
+    - name: "How to: Delete Stores in Isolated Storage"
+      href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
+    - name: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
+      href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
+    - name: "How to: Create Files and Directories in Isolated Storage"
+      href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
+    - name: "How to: Find Existing Files and Directories in Isolated Storage"
+      href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
+    - name: "How to: Read and Write to Files in Isolated Storage"
+      href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
+    - name: "How to: Delete Files and Directories in Isolated Storage"
+      href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
+  - name: Pipes
+    href: ../standard/io/pipe-operations.md
+    items:
+    - name: "How to: Use Anonymous Pipes for Local Interprocess Communication"
+      href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
+    - name: "How to: Use Named Pipes for Network Interprocess Communication"
+      href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
+  - name: Pipelines
+    href: ../standard/io/pipelines.md
+  - name: Work with buffers
+    href: ../standard/io/buffers.md
+  - name: Memory-mapped files
+    href: ../standard/io/memory-mapped-files.md
 - name: Parallel processing, concurrency, and async
   items:
   - name: Overview
@@ -1590,77 +1867,6 @@ items:
         href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
       - name: XML Schema Definition tool (Xsd.exe)
         href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
-- name: File and stream I/O
-  items:
-  - name: Overview
-    href: ../standard/io/index.md
-  - name: File path formats on Windows systems
-    href: ../standard/io/file-path-formats.md
-  - name: Common I/O tasks
-    href: ../standard/io/common-i-o-tasks.md
-    items:
-    - name: "How to: Copy Directories"
-      href: ../standard/io/how-to-copy-directories.md
-    - name: "How to: Enumerate Directories and Files"
-      href: ../standard/io/how-to-enumerate-directories-and-files.md
-    - name: "How to: Read and Write to a Newly Created Data File"
-      href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
-    - name: "How to: Open and Append to a Log File"
-      href: ../standard/io/how-to-open-and-append-to-a-log-file.md
-    - name: "How to: Write Text to a File"
-      href: ../standard/io/how-to-write-text-to-a-file.md
-    - name: "How to: Read Text from a File"
-      href: ../standard/io/how-to-read-text-from-a-file.md
-    - name: "How to: Read Characters from a String"
-      href: ../standard/io/how-to-read-characters-from-a-string.md
-    - name: "How to: Write Characters to a String"
-      href: ../standard/io/how-to-write-characters-to-a-string.md
-    - name: "How to: Add or Remove Access Control List Entries"
-      href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
-    - name: "How to: Compress and Extract Files"
-      href: ../standard/io/how-to-compress-and-extract-files.md
-    - name: Composing Streams
-      href: ../standard/io/composing-streams.md
-    - name: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams"
-      href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
-  - name: Asynchronous file I/O
-    href: ../standard/io/asynchronous-file-i-o.md
-  - name: Handle I/O errors
-    href: ../standard/io/handling-io-errors.md
-  - name: Isolated storage
-    href: ../standard/io/isolated-storage.md
-    items:
-    - name: Types of Isolation
-      href: ../standard/io/types-of-isolation.md
-    - name: "How to: Obtain Stores for Isolated Storage"
-      href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
-    - name: "How to: Enumerate Stores for Isolated Storage"
-      href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
-    - name: "How to: Delete Stores in Isolated Storage"
-      href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
-    - name: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
-      href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
-    - name: "How to: Create Files and Directories in Isolated Storage"
-      href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
-    - name: "How to: Find Existing Files and Directories in Isolated Storage"
-      href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
-    - name: "How to: Read and Write to Files in Isolated Storage"
-      href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
-    - name: "How to: Delete Files and Directories in Isolated Storage"
-      href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
-  - name: Pipes
-    href: ../standard/io/pipe-operations.md
-    items:
-    - name: "How to: Use Anonymous Pipes for Local Interprocess Communication"
-      href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
-    - name: "How to: Use Named Pipes for Network Interprocess Communication"
-      href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
-  - name: Pipelines
-    href: ../standard/io/pipelines.md
-  - name: Work with buffers
-    href: ../standard/io/buffers.md
-  - name: Memory-mapped files
-    href: ../standard/io/memory-mapped-files.md
 - name: Unit testing
   displayName: xUnit,NUnit,MSTest,unit testing,testing
   items:
@@ -1953,8 +2159,8 @@ items:
     - name: Port Windows Forms projects
       href: ../core/porting/winforms.md
     - name: Port WPF projects
-      href: ../core/../desktop-wpf/migration/convert-project-from-net-framework.md
+      href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
     - name: Port C++/CLI projects
       href: ../core/porting/cpp-cli.md
-  - name: Choose between .NET Core and .NET Framework for server apps
+  - name: Choose between .NET 5 and .NET Framework for server apps
     href: ../standard/choosing-core-framework-server.md

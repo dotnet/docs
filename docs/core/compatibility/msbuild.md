@@ -9,7 +9,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | - |
-| [TargetFramework change from netcoreapp to net](#targetframework-change-from-netcoreapp-to-net)
+| [TargetFramework change from netcoreapp to net](#targetframework-change-from-netcoreapp-to-net) | 5.0 |
 | [NETCOREAPP3_1 preprocessor symbol is not defined when targeting .NET 5](#netcoreapp3_1-preprocessor-symbol-is-not-defined-when-targeting-net-5) | 5.0 |
 | [PublishDepsFilePath behavior change](#publishdepsfilepath-behavior-change) | 5.0 |
 | [Directory.Packages.props files is imported by default](#directorypackagesprops-files-is-imported-by-default) | 5.0 |

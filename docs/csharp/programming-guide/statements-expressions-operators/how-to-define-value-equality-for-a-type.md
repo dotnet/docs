@@ -43,7 +43,7 @@ The implementation details for value equality are different for classes and stru
 > [!NOTE]
 > Starting in C# 9.0, you can use records to get value equality semantics without any unnecessary boilerplate code.
 
-## Example - class implementation
+## Class example
 
 The following example shows how to implement value equality in a class (reference type).
 
@@ -53,7 +53,7 @@ On classes (reference types), the default implementation of both <xref:System.Ob
 
 The `==` and `!=` operators can be used with classes even if the class does not overload them. However, the default behavior is to perform a reference equality check. In a class, if you overload the `Equals` method, you should overload the `==` and `!=` operators, but it is not required.
 
-## Example - struct implementation
+## Struct example
 
 The following example shows how to implement value equality in a struct (value type):
 

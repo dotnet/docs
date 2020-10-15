@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC32128"
 ms.assetid: 1155b23a-ad75-4bab-b9da-73f35c767a36
 ---
-# 'IsNot' operand of type 'typename' can only be compared to 'Nothing', because 'typename' is a nullable type
+# BC32128: 'IsNot' operand of type 'typename' can only be compared to 'Nothing', because 'typename' is a nullable type
 
 A variable declared as a nullable value type has been compared to an expression other than `Nothing` using the `IsNot` operator.
 

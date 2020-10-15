@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30145"
 ms.assetid: 2e7eb2b9-eda6-4bdb-95cc-72c7f0be7528
 ---
-# Unable to emit assembly: \<error message>
+# BC30145: Unable to emit assembly: \<error message>
 
 The Visual Basic compiler calls the Assembly Linker (*Al.exe*, also known as Alink) to generate an assembly with a manifest, and the linker reports an error in the emission stage of creating the assembly.
 

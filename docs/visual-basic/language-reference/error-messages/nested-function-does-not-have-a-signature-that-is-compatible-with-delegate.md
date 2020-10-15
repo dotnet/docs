@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC36532"
 ms.assetid: 493f292c-d81e-40ef-8b47-61f020571829
 ---
-# Nested function does not have a signature that is compatible with delegate '\<delegatename>'
+# BC36532: Nested function does not have a signature that is compatible with delegate '\<delegatename>'
 
 A lambda expression has been assigned to a delegate that has an incompatible signature. For example, in the following code, delegate `Del` has two integer parameters.
 

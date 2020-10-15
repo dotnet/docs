@@ -148,7 +148,7 @@ The instantiation necessary for lambda expressions means extra memory allocation
 
 One final advantage not demonstrated in this sample is that local functions can be implemented as iterators, using the `yield return` syntax to produce a sequence of values.
 
-[!code-csharp[TaskLocalFunctionExample](../../../../samples/snippets/csharp/new-in-7/YieldLocalFunc.cs#YieldExample "Local function leveraging yield return")]
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="YieldReturn" :::
 
 The `yield return` statement is not allowed in lambda expressions, see [compiler error CS1621](../../misc/cs1621.md).
 

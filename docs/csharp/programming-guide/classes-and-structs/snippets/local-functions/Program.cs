@@ -121,5 +121,27 @@ namespace local_functions
             await Task.Delay(100);
             return 9;
         }
+
+        //<YieldReturn>
+        public IEnumerable<string> SequenceToLowercase(IEnumerable<string> input)
+        {
+            if (input.Count() == 0)
+            {
+                throw new Exception("There are no items to convert to lowercase!");
+            }
+            
+            return LowercaseIterator();
+            
+            IEnumerable<string> LowercaseIterator()
+            {
+                foreach (var item in input)
+                {
+                    var output = item.ToLower();
+                    yield return output;
+                }
+            }
+        }
+        //</YieldReturn>
+    }
     }
 }

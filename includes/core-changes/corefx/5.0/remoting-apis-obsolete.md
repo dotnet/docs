@@ -1,4 +1,4 @@
-### SYSLIB0010: Remoting APIs are obsolete
+### Remoting APIs are obsolete
 
 Some remoting-related APIs are marked as obsolete and generate a `SYSLIB0010` warning at compile time. These APIs may be removed in a future version of .NET.
 
@@ -13,7 +13,7 @@ The following remoting APIs are marked obsolete.
 
 In .NET Framework 2.x - 4.x, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods control the lifetime of instances involved with .NET remoting. In .NET Core 2.x- 3.x, these methods always throw a <xref:System.PlatformNotSupportedException> at run time.
 
-In .NET 5.0 and later versions, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods are marked obsolete, as warning, but continue to throw a <xref:System.PlatformNotSupportedException> at run time.
+In .NET 5.0 and later versions, the <xref:System.MarshalByRefObject.GetLifetimeService> and <xref:System.MarshalByRefObject.InitializeLifetimeService> methods are marked obsolete as warning, but continue to throw a <xref:System.PlatformNotSupportedException> at run time.
 
 ```csharp
 // MemoryStream, like all Stream instances, subclasses MarshalByRefObject.

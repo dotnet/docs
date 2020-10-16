@@ -84,7 +84,8 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Diagnostics.Process.MinWorkingSet?displayProperty=nameWithType> (set only) | Linux |
 | <xref:System.Diagnostics.Process.ProcessorAffinity?displayProperty=nameWithType> | macOS |
 | <xref:System.Diagnostics.Process.MainWindowHandle?displayProperty=nameWithType> | Linux and macOS |
-| <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.Process.Start(System.String,System.String,System.String,System.Security.SecureString,System.String)?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.Process.Start(System.String,System.String,System.Security.SecureString,System.String)?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Diagnostics.ProcessStartInfo.UserName?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Diagnostics.ProcessStartInfo.PasswordInClearText?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Diagnostics.ProcessStartInfo.Domain?displayProperty=nameWithType> | Linux and macOS |

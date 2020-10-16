@@ -1,6 +1,6 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
-description: Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. It includes sample code.
+description: Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code.
 ms.date: 10/14/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:

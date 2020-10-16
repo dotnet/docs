@@ -1,9 +1,10 @@
 ---
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
+description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Includes sample code."
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/14/2020
+ms.date: 10/16/2020
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"

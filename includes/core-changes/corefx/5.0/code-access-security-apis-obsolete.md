@@ -1,6 +1,6 @@
 ### Most code access security APIs are obsolete
 
-Most code access security (CAS)-related types in .NET are now obsolete as warning. This includes CAS attributes, such as <xref:System.Security.Permissions.SecurityPermissionAttribute>, CAS permission object, such as <xref:System.Net.SocketPermission>, most <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs.
+Most code access security (CAS)-related types in .NET are now obsolete as warning. This includes CAS attributes, such as <xref:System.Security.Permissions.SecurityPermissionAttribute>, CAS permission objects, such as <xref:System.Net.SocketPermission>, <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs.
 
 #### Change description
 

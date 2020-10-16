@@ -1,10 +1,10 @@
 ### Most code access security APIs are obsolete
 
-Most code access security (CAS)-related types in .NET are now obsolete as warning. This includes CAS attributes (for example, <xref:System.Security.Permissions.SecurityPermissionAttribute>), CAS permission objects (for example, <xref:System.Net.SocketPermission>), most <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs.
+Most code access security (CAS)-related types in .NET are now obsolete as warning. This includes CAS attributes, such as <xref:System.Security.Permissions.SecurityPermissionAttribute>, CAS permission object, such as <xref:System.Net.SocketPermission>, most <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs.
 
 #### Change description
 
-In .NET Framework 2.x - 4.x, CAS attributes and APIs can influence the course of code execution, including ensuring that CAS demand stack walks succeed or fail.
+In .NET Framework 2.x - 4.x, CAS attributes and APIs can influence the course of code execution, including ensuring that CAS-demand stack walks succeed or fail.
 
 ```csharp
 // In .NET Framework, the attribute causes CAS stack walks
@@ -54,15 +54,13 @@ public void DoSomething()
 }
 ```
 
-This is a compile-time only change. There is no run-time change from previous versions of .NET Core. Method that perform no operation in .NET Core 2.x - 3.x will continue to perform no operation at run time in .NET 5.0 and later. Methods that throw <xref:System.PlatformNotSupportedException> in .NET Core 2.x - 3.x will continue to throw a <xref:System.PlatformNotSupportedException> at run time in .NET 5.0 and later.
+This is a compile-time only change. There is no run-time change from previous versions of .NET Core. Methods that perform no operation in .NET Core 2.x - 3.x will continue to perform no operation at run time in .NET 5.0 and later. Methods that throw <xref:System.PlatformNotSupportedException> in .NET Core 2.x - 3.x will continue to throw a <xref:System.PlatformNotSupportedException> at run time in .NET 5.0 and later.
 
 #### Reason for change
 
-[Code Access Security (CAS)](../../../../docs/framework/misc/code-access-security.md) is an unsupported legacy technology. The infrastructure to enable CAS exists only in .NET Framework 2.x - 4.x, but is deprecated and not receiving servicing or security fixes.
+[Code access security (CAS)](../../../../docs/framework/misc/code-access-security.md) is an unsupported legacy technology. The infrastructure to enable CAS exists only in .NET Framework 2.x - 4.x, but is deprecated and not receiving servicing or security fixes.
 
-Due to CAS's deprecation, the runtime supporting infrastructure was not brought forward to .NET Core or .NET 5.0+. However, the APIs were brought forward so that apps could cross-compile against .NET Framework and .NET Core. For more information, see [.NET Framework technologies unavailable on .NET Core and .NET 5+](../../../../docs/core/porting/net-framework-tech-unavailable.md).
-
-This led to "fail open" scenarios, where some CAS-related APIs exist and are callable but perform no action at runtime. This can lead to security issues for components which expect the runtime to honor CAS-related attributes or programmatic API calls. To better communicate that the runtime does not respect these attributes or APIs, we have obsoleted the majority of them in .NET 5.0.
+Due to CAS's deprecation, the [supporting infrastructure was not brought forward to .NET Core](../../../../docs/core/porting/net-framework-tech-unavailable.md) or .NET 5.0+. However, the APIs were brought forward so that apps could cross-compile against .NET Framework and .NET Core. This led to "fail open" scenarios, where some CAS-related APIs exist and are callable but perform no action at run time. This can lead to security issues for components that expect the runtime to honor CAS-related attributes or programmatic API calls. To better communicate that the runtime doesn't respect these attributes or APIs, we have obsoleted the majority of them in .NET 5.0.
 
 #### Version introduced
 
@@ -73,7 +71,7 @@ This led to "fail open" scenarios, where some CAS-related APIs exist and are cal
 - If you're asserting any security permission, remove the attribute or call that asserts the permission.
 
   ```csharp
-  // REMOVE the attribute below
+  // REMOVE the attribute below.
   [SecurityPermission(SecurityAction.Assert, ControlThread = true)]
   public void DoSomething()
   {
@@ -81,7 +79,7 @@ This led to "fail open" scenarios, where some CAS-related APIs exist and are cal
 
   public void DoAssert()
   {
-      // REMOVE the line below
+      // REMOVE the line below.
       new SecurityPermission(SecurityPermissionFlag.ControlThread).Assert();
   }
   ```
@@ -89,7 +87,7 @@ This led to "fail open" scenarios, where some CAS-related APIs exist and are cal
 - If you're denying or restricting (via `PermitOnly`) any permission, contact your security advisor. Because CAS attributes are not honored by the .NET 5.0+ runtime, your application could have a security hole if it incorrectly relies on the CAS infrastructure to restrict access to these methods.
 
   ```csharp
-  // REVIEW the attribute below; could indicate security vulnerability
+  // REVIEW the attribute below; could indicate security vulnerability.
   [SecurityPermission(SecurityAction.Deny, ControlThread = true)]
   public void DoSomething()
   {
@@ -97,7 +95,7 @@ This led to "fail open" scenarios, where some CAS-related APIs exist and are cal
 
   public void DoPermitOnly()
   {
-      // REVIEW the line below; could indicate security vulnerability
+      // REVIEW the line below; could indicate security vulnerability.
       new SecurityPermission(SecurityPermissionFlag.ControlThread).PermitOnly();
   }
   ```
@@ -105,7 +103,7 @@ This led to "fail open" scenarios, where some CAS-related APIs exist and are cal
 - If you're demanding any permission (except <xref:System.Security.Permissions.PrincipalPermission>), remove the demand. All demands will succeed at run time.
 
   ```csharp
-  // REMOVE the attribute below; it will always succeed
+  // REMOVE the attribute below; it will always succeed.
   [SecurityPermission(SecurityAction.Demand, ControlThread = true)]
   public void DoSomething()
   {
@@ -113,12 +111,12 @@ This led to "fail open" scenarios, where some CAS-related APIs exist and are cal
 
   public void DoDemand()
   {
-      // REMOVE the line below; it will always succeed
+      // REMOVE the line below; it will always succeed.
       new SecurityPermission(SecurityPermissionFlag.ControlThread).Demand();
   }
   ```
 
-- If you're demanding <xref:System.Security.Permissions.PrincipalPermission>, consult the guidance [Core .NET libraries breaking changes](../../../../docs/core/compatibility/corefx.md#permission-action). That guidance applies both for <xref:System.Security.Permissions.PrincipalPermission> and for <xref:System.Security.Permissions.PrincipalPermissionAttribute>.
+- If you're demanding <xref:System.Security.Permissions.PrincipalPermission>, consult the guidance for [PrincipalPermissionAttribute is obsolete as error](../../../../docs/core/compatibility/corefx.md#permission-action). That guidance applies for both <xref:System.Security.Permissions.PrincipalPermission> and <xref:System.Security.Permissions.PrincipalPermissionAttribute>.
 
 - If you absolutely must disable these warnings (which is not recommended), you can suppress the `SYSLIB0003` warning in code.
 

@@ -275,7 +275,6 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
 - <xref:System.Security.Permissions.WebBrowserPermissionLevel?displayProperty=fullName>
 - <xref:System.Security.Permissions.ZoneIdentityPermission?displayProperty=fullName>
 - <xref:System.Security.Permissions.ZoneIdentityPermissionAttribute?displayProperty=fullName>
-- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName?displayProperty=fullName>
 - [System.Security.Policy.ApplicationTrust.ApplicationTrust(PermissionSet, IEnumerable\<StrongName>)](/dotnet/api/system.security.policy.applicationtrust.-ctor#System_Security_Policy_ApplicationTrust__ctor_System_Security_PermissionSet_System_Collections_Generic_IEnumerable_System_Security_Policy_StrongName__)
 - <xref:System.Security.Policy.ApplicationTrust.FullTrustAssemblies?displayProperty=fullName>
 - <xref:System.Security.Policy.FileCodeGroup?displayProperty=fullName>
@@ -306,7 +305,7 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
 
 #### Affected APIs
 
-- `T:System.AppDomain.PermissionSet`
+- `P:System.AppDomain.PermissionSet`
 - `T:System.Configuration.ConfigurationPermission`
 - `T:System.Configuration.ConfigurationPermissionAttribute`
 - `T:System.Data.Common.DBDataPermission`
@@ -423,9 +422,8 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
 - `T:System.Security.Permissions.WebBrowserPermissionLevel`
 - `T:System.Security.Permissions.ZoneIdentityPermission`
 - `T:System.Security.Permissions.ZoneIdentityPermissionAttribute`
-- `T:System.Collections.ObjectModel.Collection%601?displayProperty=fullName`
 - `M:`System.Security.Policy.ApplicationTrust.ApplicationTrust(PermissionSet, IEnumerable<StrongName>)`
-- `T:System.Security.Policy.ApplicationTrust.FullTrustAssemblies`
+- `P:System.Security.Policy.ApplicationTrust.FullTrustAssemblies`
 - `T:System.Security.Policy.FileCodeGroup`
 - `T:System.Security.Policy.GacInstalled`
 - `T:System.Security.Policy.IIdentityPermissionFactory`

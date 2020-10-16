@@ -155,10 +155,12 @@ public async ActionResult<Product> Details(int id)
 As with previous version, you can specify a default route with placeholders, and add this at the controller class level or even on a base class. You use the same `[Route]` attribute for all of these cases. For example, a base API controller class might look like this:
 
 ```csharp
-[Route("api/{controller}/{action}/{id?:int})]
+[Route("api/{controller}/{action}/{id?:int}")]
 public abstract class BaseApiController : ControllerBase, IApiController
 {}
 ```
+
+Using this attribute, classes inheriting from this type would route URLs to actions based on the controller name, action name, and an optional integer id parameter.
 
 ## References
 

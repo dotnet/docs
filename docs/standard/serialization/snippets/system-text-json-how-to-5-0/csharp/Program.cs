@@ -44,6 +44,14 @@ namespace SystemTextJsonHowTo
             Console.WriteLine("======== Non-public accessors =========");
             NonPublicAccessors.Program.Main();
             Console.WriteLine();
+
+            Console.WriteLine("======== Copy options instance =========");
+            CopyOptions.Program.Main();
+            Console.WriteLine();
+
+            Console.WriteLine("======== Create options instance with specified defaults =========");
+            OptionsDefaults.Program.Main();
+            Console.WriteLine();
         }
     }
 }

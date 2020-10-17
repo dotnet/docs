@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC42326"
 ms.assetid: 63214dc6-0112-4245-8ebf-7c9e8f5a5782
 ---
-# Lambda expression will not be removed from this event handler
+# BC42326: Lambda expression will not be removed from this event handler
 
 Lambda expression will not be removed from this event handler. Assign the lambda expression to a variable and use the variable to add and remove the event.
 

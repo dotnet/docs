@@ -21,7 +21,7 @@ Use .NET Framework for your server application when:
 - Your app currently uses .NET Framework (recommendation is to extend instead of migrating).
 - Your app uses third-party .NET libraries or NuGet packages not available for .NET 5.
 - Your app uses .NET technologies that aren't available for .NET 5.
-- Your app uses a platform that doesn’t support .NET 5.
+- Your app uses a platform that doesn't support .NET 5.
 
 ## When to choose .NET 5
 
@@ -57,7 +57,7 @@ Performance and scalability are especially relevant for microservices architectu
 
 To install applications with dependencies on different versions of .NET, we recommend .NET 5. .NET 5 supports side-by-side installation of different versions of the .NET 5 runtime on the same machine. This side-by-side installation allows multiple services on the same server, each of them on its own version of .NET 5 (or .NET Core 2.1 or 3.1). It also lowers risks and saves money in application upgrades and IT operations.
 
-Side-by-side installation isn’t possible with .NET Framework. It’s a Windows component, and only one version can exist on a machine at a time. Each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine, because the previous version was replaced.
+Side-by-side installation isn't possible with .NET Framework. It's a Windows component, and only one version can exist on a machine at a time. Each version of .NET Framework replaces the previous version. If you install a new app that targets a later version of .NET Framework, you might break existing apps that run on the machine, because the previous version was replaced.
 
 ## When to choose .NET Framework
 
@@ -65,7 +65,7 @@ Side-by-side installation isn’t possible with .NET Framework. It’s a Windows
 
 ### Current .NET Framework applications
 
-In most cases, you don’t need to migrate your existing applications to .NET 5. Instead, a recommended approach is to use .NET 5 as you extend an existing application, such as writing a new web service in ASP.NET Core.
+In most cases, you don't need to migrate your existing applications to .NET 5. Instead, a recommended approach is to use .NET 5 as you extend an existing application, such as writing a new web service in ASP.NET Core.
 
 ### Third-party libraries or NuGet packages not available for .NET 5
 
@@ -81,13 +81,15 @@ Some .NET Framework technologies aren't available in .NET 5. The following list 
 
 - ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core.
 
-- WCF services implementation. Even when there’s a [WCF client library](https://github.com/dotnet/wcf) to consume WCF services from .NET 5, WCF server implementation is currently only available in .NET Framework.
+- WCF services implementation. Even when there's a [WCF client library](https://github.com/dotnet/wcf) to consume WCF services from .NET 5, WCF server implementation is currently only available in .NET Framework.
 
 - Workflow-related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as "ADO.NET Data Services") are only available in .NET Framework.
 
 - Language support: Visual Basic and F# are currently supported in .NET 5, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
 
-### Platform doesn’t support .NET 5
+For more information, see [.NET Framework technologies unavailable in .NET 5](../core/porting/net-framework-tech-unavailable.md).
+
+### Platform doesn't support .NET 5
 
 Some Microsoft or third-party platforms don't support .NET 5. Some Azure services provide an SDK not yet available for consumption on .NET 5. In such cases, you can use the equivalent REST API instead of the client SDK.
 

@@ -7,7 +7,7 @@ ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
 ---
 # Object variable or With block variable not set
 
-An invalid object variable is being referenced.   This error can occur for several reasons:
+An invalid object variable is being referenced. This error can occur for several reasons:
 
 - A variable was declared without specifying a type. If a variable is declared without specifying a type, it defaults to type `Object`.
 
@@ -25,7 +25,7 @@ An invalid object variable is being referenced.   This error can occur for sever
 - You are attempting to access code within a `With...End With` block before the block has been initialized.   A `With...End With` block must be initialized by executing the `With` statement entry point.
 
 > [!NOTE]
-> In earlier versions of Visual Basic or VBA this error was also triggered by assigning a value to a variable without using the `Set` keyword (`x = "name"` instead of `Set x = "name"`). The `Set` keyword is no longer valid in Visual Basic .Net.
+> In earlier versions of Visual Basic or VBA, this error was also triggered by assigning a value to a variable without using the `Set` keyword (`x = "name"` instead of `Set x = "name"`). The `Set` keyword is no longer valid in Visual Basic .Net.
 
 ## To correct this error
 

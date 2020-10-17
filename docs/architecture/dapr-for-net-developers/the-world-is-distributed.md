@@ -52,7 +52,30 @@ IT practitioners call this condition `the Fear Cycle`. If you've been in the tec
 
 Instead of fear, businesses require `speed and agility`. They seek an architectural style with which they can rapidly respond to market conditions. They need to instantaneously update and individually scale small areas of a live application.
 
-Many organizations are finding this speed and agility by adopting a distributed architectural approach to building systems. Figure 1-2 shows the same system built applying distributed techniques and practices.
+An early attempt at speed and agilty came in the approach of Service Oriented Architecture, or SOA. In this model, service consumers and service implementations were separated by messaging middleware componenets, often referred to as an Enterprise Service Bus (ESB). Figure 1-x shows this architecture.
+
+With SOA, services were centralized and registered with the ESB. Service clients cloud then utilize the ESB to find and communicate with services. This approach, however, often increased complexity and introduced bottlenecks. Maintainance costs were high and ESB middleware could be expensive. Services tended to be large. They often shared dependencies and data storage. SOAs often resulted in a 'decoupled monolithic' application with centralized services that were resistant to change. 
+
+Time has shown the SOA is a better fit for larger, complex applications that integrate with key legacy systems. 
+
+
+-- filler  
+
+espite the promises of SOA, the integration problems result in increased maintenance time, greater complexity of code and software and the continued growth (not elimination) of monolithic applications.
+
+The first rule of effective integration is “smart end-points and dumb pipes.” Building logic and layers into the service layer breaks that rule, increases the overall complexity and adds another legacy application to your portfolio.
+
+
+The main distinction between the two approaches comes down to scope. To put it simply, service-oriented architecture (SOA) has an enterprise scope, while the microservices architecture has an application scope.
+
+(SOA), which supports integration between heterogenous applications 
+
+//https://www.ibm.com/cloud/blog/soa-vs-microservices
+Before SOA was an option, connecting an application to data or functionality in another system required complex point-to-point integration that developers had to recreate for each new development project. Exposing those functions through SOA eliminates the need to recreate the deep integration every time.
+
+-- End filler
+
+nowadays, many organizations are finding this speed and agility by adopting a distributed microservice architectural approach to building systems. Figure 1-2 shows the same system built applying distributed techniques and practices.
 
 ![Distributed architecture.](./media/distributed-design.png)
 

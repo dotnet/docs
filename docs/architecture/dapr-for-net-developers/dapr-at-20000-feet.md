@@ -64,6 +64,18 @@ A building block is as an HTTP or gRPC API that can be called from user code fro
 
 **Figure 2-x**. Dapr building blocks.
 
+
+| Building Block | Description |
+| :-------- | :-------- |
+| [Service-to-service communication](https://github.com/dapr/components-contrib/tree/master/nameresolution) | . |
+| [Asynchronous messaging](https://github.com/dapr/components-contrib/tree/master/state) | . |
+| [State](https://github.com/dapr/components-contrib/tree/master/pubsub) | . |
+| [Observability](https://github.com/dapr/components-contrib/tree/master/bindings) | . |
+| [Secretse](https://github.com/dapr/components-contrib/tree/master/middleware) | . |
+| [Actors](https://github.com/dapr/components-contrib/tree/master/secretstores) | . |
+| [Resource bindings](https://github.com/dapr/components-contrib/tree/master/exporters) | . |
+
+
 Building blocks treats infrastructure services as a black box. When your code needs to invoke an infrastructure service, it calls the building block API. Figure 2-x shows the architecture.
 
 ![Dapr building blocks](./media/building-block-integration.png)
@@ -72,7 +84,17 @@ Building blocks treats infrastructure services as a black box. When your code ne
 
 Note how the building block exposes an API that can be consumed by your service. As shown, building block APIs support both HTTP and gRPC. In turn, building blocks consume configurable componenets that provide the actual implementation for external services. We'll cover components next. Note too how your code takes no dependencies
 
- 
+ - 
+ - 
+ - 
+ - 
+ - Secrets
+ - Actors
+ - Resource bindings
+
+
+
+
  > show code example of calling a building block.
 
 

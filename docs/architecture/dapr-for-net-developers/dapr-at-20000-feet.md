@@ -11,9 +11,9 @@ In chapter 1, we discussed the appeal of distributed microservice applications. 
 
 Ladies and Gentlemen, please welcome Dapr.
 
-Dapr, or *Distributed Application Runtime* - a new way to build distributed applications.
+Dapr, or *Distributed Application Runtime* is a new way to build distributed applications.
 
-What started as a prototype at Microsoft has evolved into a highly successful open-source project. Sponsoring the project, Microsoft has partnered with customers and the open-source community to build and extend Dapr. This concerted effort validates the willingness of developers from all backgrounds to solve some of the toughest challenges when developing distributed applications.     
+What started as a prototype at Microsoft has evolved into a highly successful open-source project. As its sponsor, Microsoft has partnered with customers and the open-source community to build and extend Dapr. This concerted effort validates the willingness of developers from all backgrounds to solve some of the toughest challenges when developing distributed applications.     
 
 In this book, we look at Dapr through the lens of the .NET Core platform. In this chapter, we help you build a solid conceptual understanding of Dapr and how it works.
 
@@ -58,23 +58,23 @@ At this point, our jet turns around and flies back over Dapr, descending in alti
 
 Dapr is built on the concept of `building blocks`. 
 
-A building block is as an HTTP or gRPC API that can be called from user code from any supported programming platform. Each block encapsulates infrastructure services required by a distributed appllication. Figure 2-x shows the blocks for Dapr v 1.0.
+A building block is an HTTP or gRPC API that can be called from your services for any supported programming platform. Each block encapsulates a different infrastructure service. Figure 2-x shows the blocks for Dapr v 1.0.
 
 ![Dapr building blocks](./media/building-block.png)
 
 **Figure 2-x**. Dapr building blocks.
 
+The following table describes the infrastructure service for each block.
 
 | Building Block | Description |
 | :-------- | :-------- |
-| [Service-to-service communication](https://github.com/dapr/components-contrib/tree/master/nameresolution) | . |
-| [Asynchronous messaging](https://github.com/dapr/components-contrib/tree/master/state) | . |
-| [State](https://github.com/dapr/components-contrib/tree/master/pubsub) | . |
-| [Observability](https://github.com/dapr/components-contrib/tree/master/bindings) | . |
-| [Secretse](https://github.com/dapr/components-contrib/tree/master/middleware) | . |
-| [Actors](https://github.com/dapr/components-contrib/tree/master/secretstores) | . |
-| [Resource bindings](https://github.com/dapr/components-contrib/tree/master/exporters) | . |
-
+| [Service-to-service communication](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Invoke direct, secure service-to-service calls using platform agnostic protocols and well-known endpoints. |
+| [Asynchronous messaging](https://github.com/dapr/components-contrib/tree/master/state) | Implement secure, scalable pub/sub messaging between services. |
+| [State](https://github.com/dapr/components-contrib/tree/master/pubsub) | Support contextual information for long running stateful services. |
+| [Observability](https://github.com/dapr/components-contrib/tree/master/bindings) | Monitor and measure message calls across networked services. |
+| [Secretse](https://github.com/dapr/components-contrib/tree/master/middleware) | Securely access external secret stores. |
+| [Actors](https://github.com/dapr/components-contrib/tree/master/secretstores) | Encapsulate logic and data in reusable actor objects. |
+| [Resource bindings](https://github.com/dapr/components-contrib/tree/master/exporters) | Trigger code from events rasied by external resources with bi-directional communication. |
 
 Building blocks treats infrastructure services as a black box. When your code needs to invoke an infrastructure service, it calls the building block API. Figure 2-x shows the architecture.
 
@@ -82,25 +82,17 @@ Building blocks treats infrastructure services as a black box. When your code ne
 
 **Figure 2-x**. Dapr building blocks.
 
-Note how the building block exposes an API that can be consumed by your service. As shown, building block APIs support both HTTP and gRPC. In turn, building blocks consume configurable componenets that provide the actual implementation for external services. We'll cover components next. Note too how your code takes no dependencies
+Note how the building block exposes an API that your service can concume via HTTP and gRPC. Under the hood, the building block invokes consumes pre-configured componenets that provide the actual implementation for external infrastructure services. We'll cover components next.
 
- - 
- - 
- - 
- - 
- - Secrets
- - Actors
- - Resource bindings
+Your code calls building block without taking dependencies on external SDKs or libraries. Dapr takes care of that.
 
-
-
+ 
+Dapr codifies the best practices for building microservice applications into open,
+independent, building blocks that enable you to build portable applications with the language and framework of your choice. Each building block is completely independent and you can use one, some, or all of them in your application.
 
  > show code example of calling a building block.
 
-
-Your code calls building block without taking dependencies on SDKs or libraries. T
-
-We cover each of the Dapr building blocks in detail in chapter x.
+We provide detail for each of the Dapr building blocks in chapter x.
 
 ### Components
 
@@ -144,6 +136,8 @@ you encapsulate and expose Dapr functionality via a side car architecture - your
 
 
 , either as a container or as a process, not requiring the application code to include any Dapr runtime code. This makes integration with Dapr easy from other runtimes, as well as providing separation of the application logic for improved supportability.
+
+Dapr architecture follows the sidecar pattern, meaning its components can be deployed either as independent processes or as containers to provide isolation and encapsulation and do not require to include a runtime in the application code. This makes it easy to integrate Dapr with other runtimes and to use it in a Kubernetes environment.
 
 
 It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
@@ -203,6 +197,11 @@ Dapr is not without challenges. Consider the following:
  ![Dapr overhead](./media/dapr-high-level.png)
 **Figure 2-x**. Dapr at 20,000 feet.
 
+
+- Sidecar architecture adds latency. Number might be less than 2 milliseconds
+- Abstracts underlying service -- not all features exposed - Least Common Denominator
+	- You may need features not exposed by DAPR
+	- Does not stop you from using DAPR in your app for other services
   
    
 - Finally, while Dapr covers the gamut of distributed component services, it does not provide support for database interaction. 

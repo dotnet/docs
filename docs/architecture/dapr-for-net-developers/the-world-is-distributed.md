@@ -9,7 +9,7 @@ ms.date: 10/10/2020
 
 Just ask any 'cool kid': *Modern, distributed systems are in and, monolithic apps are out!* 
 
-But, it's not just "cool kids." Progressive IT Leaders, corporate architects, and astute developers are echoing these same thoughts as they explore and evaluate modern distributed applications. Many have bought in. They're designing new and replatforming existing enterprise applications following the principles, patterns, and practices of distributed applications.
+But, it's not just "cool kids." Progressive IT Leaders, corporate architects, and astute developers are echoing these same thoughts as they explore and evaluate modern distributed applications. Many have bought in. They're designing new and replatforming existing enterprise applications following the principles, patterns, and practices of distributed microservice applications.
 
 But, this evolution raises many questions...
 
@@ -52,47 +52,35 @@ IT practitioners call this condition `the Fear Cycle`. If you've been in the tec
 
 Instead of fear, businesses require `speed and agility`. They seek an architectural style with which they can rapidly respond to market conditions. They need to instantaneously update and individually scale small areas of a live application.
 
-An early attempt at speed and agilty came in the approach of Service Oriented Architecture, or SOA. In this model, service consumers and service implementations were separated by messaging middleware componenets, often referred to as an Enterprise Service Bus (ESB). Figure 1-x shows this architecture.
+An early attempt to gain speed and agility came in the form of [Service Oriented Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), or `SOA`. In this model, service consumers and service collaborated via middleware messaging components, often referred to as an [Enterprise Service Bus](https://en.wikipedia.org/wiki/Enterprise_service_bus), or `ESB`. Figure 1-2 shows the architecture.
 
-With SOA, services were centralized and registered with the ESB. Service clients cloud then utilize the ESB to find and communicate with services. This approach, however, often increased complexity and introduced bottlenecks. Maintainance costs were high and ESB middleware could be expensive. Services tended to be large. They often shared dependencies and data storage. SOAs often resulted in a 'decoupled monolithic' application with centralized services that were resistant to change. 
+![SOA.](./media/soa-basic.png)
 
-Time has shown the SOA is a better fit for larger, complex applications that integrate with key legacy systems. 
+**Figure 1-2. SOA architecture.
 
+With SOA, centralized service providers registered with the ESB. Business logic would be built into the ESB to integrate providers and consumers. Service consumers could then find and communicate with these providers using the ESB. 
 
--- filler  
+Despite the promises of SOA, implementing this approach often increased complexity and introduced bottlenecks. Maintenance costs became high and ESB middleware expensive. Services tended to be large. They often shared dependencies and data storage. In the end, SOAs often resulted in a 'distributed monolithic' structure with centralized services that were resistant to change. 
 
-espite the promises of SOA, the integration problems result in increased maintenance time, greater complexity of code and software and the continued growth (not elimination) of monolithic applications.
-
-The first rule of effective integration is “smart end-points and dumb pipes.” Building logic and layers into the service layer breaks that rule, increases the overall complexity and adds another legacy application to your portfolio.
-
-
-The main distinction between the two approaches comes down to scope. To put it simply, service-oriented architecture (SOA) has an enterprise scope, while the microservices architecture has an application scope.
-
-(SOA), which supports integration between heterogenous applications 
-
-//https://www.ibm.com/cloud/blog/soa-vs-microservices
-Before SOA was an option, connecting an application to data or functionality in another system required complex point-to-point integration that developers had to recreate for each new development project. Exposing those functions through SOA eliminates the need to recreate the deep integration every time.
-
--- End filler
-
-nowadays, many organizations are finding this speed and agility by adopting a distributed microservice architectural approach to building systems. Figure 1-2 shows the same system built applying distributed techniques and practices.
+Nowadays, many organizations have realized speed and agility by adopting a distributed microservice architectural approach to building systems. Figure 1-3 shows the same system built applying distributed techniques and practices.
 
 ![Distributed architecture.](./media/distributed-design.png)
 
-**Figure 1-2. Distributed architecture.
+**Figure 1-3. Distributed architecture.
 
-Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a shared database, each service owns it own datastore. Note how some services require a full relational database, but others, a NoSQL datastore. The Basket service stores its state in a distributed key-value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to back-end services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
+Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a shared database, each service owns its own datastore. Note how some services require a full relational database, but others, a NoSQL datastore. The Basket service stores its state in a distributed key-value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to back-end services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 
 But, while distributed services can provide agility and speed, they present a different set of challenges. Consider the following... 
 
- - How can distributed services directly communicate with each other?
- - How can they maintain contextual information across a transaction?
+ - How can distributed services discover each other and communicate synchronously?
  - How can they implement asynchronous messaging? 
+ - How can they maintain contextual information across a transaction?
  - How can they become resilient to failure?
- - How can they discover each other?
  - How can they scale to meet fluctuating demand?
  - How are they monitored and observed?
  
+For each of these challenges, multiple products are often available. But, shielding your application product differences becomes a challenge to keeping code maintainable and portable.
+
 This book introduces Dapr. Dapr is a distributed application runtime. It directly addresses many of the challenges found that come along with distributed applications. Looking ahead, Dapr has the potential to have profound impact on distributed application development.
 
 ## Summary

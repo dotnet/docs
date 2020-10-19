@@ -23,7 +23,7 @@ Imagine flying in a jet at 20,000 feet. You look out the window and see the land
 
 At its core, Dapr is a `portable, event-driven runtime`. 
 
- - `Portable` - Your write your application code once and run it on public clouds and edge devices. With a configuration file, you specify the external infrastructure services that you wish to include in your environment. These services might include pub-sub messaging, state management, or service-to-service invocation. Later, if you move your app to another environment, you swap out the configuration file with one that specifies bindings to service components in the new environment. Your service does not hold direct references to the external services - Dapr does that.
+ - `Portable` - Your write your application code once and run it on public clouds and edge devices. With a configuration file, you specify the external infrastructure services that you wish to include in your environment. These services might include pub-sub messaging, state management, or service-to-service invocation. Later, if you move your app to another environment, you swap out the configuration file with one that specifies bindings to service components in the new environment. Your service doesn't hold direct references to the external services - Dapr does that.
 
  - `Event-driven` - Dapr supports event-driven resource binding and pub-sub messaging services. You can receive events from external resources, such as datastores, streaming services, or web hooks. You can also publish and subscribe to events from message brokers - with minimal code and, again, no direct reference to the external service. 
 
@@ -56,15 +56,15 @@ At this point, our jet turns around and flies back over Dapr, descending in alti
 
 ### Building blocks
 
-Dapr is built on the concept of `building blocks`. 
+From our new perspective, we see that Dapr is built on the concept of `building blocks`. 
 
-A building block is an HTTP or gRPC API that can be called from your services for any supported programming platform. Each block encapsulates a different infrastructure service. Figure 2-x shows the blocks for Dapr v 1.0.
+A building block is an HTTP or gRPC API that encapsulates an infrastructure service. Figure 2-x shows the available blocks for Dapr v 1.0.
 
 ![Dapr building blocks](./media/building-block.png)
 
 **Figure 2-x**. Dapr building blocks.
 
-The following table describes the infrastructure service for each block.
+The following table describes the infrastructure service contained in each block.
 
 | Building Block | Description |
 | :-------- | :-------- |
@@ -72,37 +72,107 @@ The following table describes the infrastructure service for each block.
 | [Asynchronous messaging](https://github.com/dapr/components-contrib/tree/master/state) | Implement secure, scalable pub/sub messaging between services. |
 | [State](https://github.com/dapr/components-contrib/tree/master/pubsub) | Support contextual information for long running stateful services. |
 | [Observability](https://github.com/dapr/components-contrib/tree/master/bindings) | Monitor and measure message calls across networked services. |
-| [Secretse](https://github.com/dapr/components-contrib/tree/master/middleware) | Securely access external secret stores. |
+| [Secrets](https://github.com/dapr/components-contrib/tree/master/middleware) | Securely access external secret stores. |
 | [Actors](https://github.com/dapr/components-contrib/tree/master/secretstores) | Encapsulate logic and data in reusable actor objects. |
-| [Resource bindings](https://github.com/dapr/components-contrib/tree/master/exporters) | Trigger code from events rasied by external resources with bi-directional communication. |
+| [Resource bindings](https://github.com/dapr/components-contrib/tree/master/exporters) | Trigger code from events raised by external resources with bi-directional communication. |
 
-Building blocks treats infrastructure services as a black box. When your code needs to invoke an infrastructure service, it calls the building block API. Figure 2-x shows the architecture.
+Building blocks treat infrastructure services as a black box. When your code requires access to an infrastructure service, it calls a building block API. Figure 2-x shows this interaction. 
 
 ![Dapr building blocks](./media/building-block-integration.png)
 
-**Figure 2-x**. Dapr building blocks.
+**Figure 2-x**. Dapr building block integration.
 
-Note how the building block exposes an API that your service can concume via HTTP and gRPC. Under the hood, the building block invokes consumes pre-configured componenets that provide the actual implementation for external infrastructure services. We'll cover components next.
+Note how your service invokes the building block via HTTP or gRPC. Under the hood, the building block invokes pre-configured components that provide the concrete implementation for an external infrastructure service. Your code knows about the building block, but not the underlying infrastructure components. Your service takes no dependencies on external SDKs or libraries - Dapr takes care of that. Each building block is independent, and you can use one, some, or all of them in your application.
 
-Your code calls building block without taking dependencies on external SDKs or libraries. Dapr takes care of that.
-
- 
-Dapr codifies the best practices for building microservice applications into open,
-independent, building blocks that enable you to build portable applications with the language and framework of your choice. Each building block is completely independent and you can use one, some, or all of them in your application.
-
- > show code example of calling a building block.
-
-We provide detail for each of the Dapr building blocks in chapter x.
+We provide detail explanation and code samples for each Dapr building block in chapter x. Next, we descend more deeply and look at components.
 
 ### Components
 
-Building blocks in Dapr essentially expose the API that you work with. But the underlying functionality is performed by one or more components that you specify in the configuration.
+While building blocks expose an API to invoke infrastructure services, Dapr components provide the concrete implementation to make it happen. 
 
-Building blocks bind to one or more components that provides the actual service implementation. Components are 'pluggable' - you can swap out one component that shares the same interface with another component. To do so, you simply change the definition in the Dapr configuration file. For example, if you use Redis as a state store, you can substitute it with Cosmos DB just by changing the definition of your state component. Having applied then new component definition, all requests for state store will route to Cosmos DB.
+Consider, the Dapr `state store` component. It provides a uniform way to manage state for CRUD operations. Without any change to your service code, you could implement any of the following state components:
 
-A building block can use any combination of components. For example the actors building block and the state management building block both use state components. As another example, the pub/sub building block uses pub/sub components.
+ - AWS DynamoDB
+ - Aerospike
+ - Azure Blob Storage
+ - Azure CosmosDB
+ - Azure Table Storage
+ - Cassandra
+ - Cloud Firestore (Datastore mode)
+ - CloudState
+ - Couchbase
+ - Etcd
+ - HashiCorp Consul
+ - Hazelcast
+ - Memcached
+ - MongoDB
+ - PostgreSQL
+ - Redis
+ - RethinkDB
+ - SQL Server
+ - Zookeeper 
 
-The following component types are provided by Dapr at the time of this book:
+Each is a Dapr component that provides the necessary implementation for a common interface:
+
+   ```go
+   type Store interface {
+	    Init(metadata Metadata) error
+	    Delete(req *DeleteRequest) error
+	    BulkDelete(req []DeleteRequest) error
+	    Get(req *GetRequest) (*GetResponse, error)
+	    Set(req *SetRequest) error
+	    BulkSet(req []SetRequest) error
+  }
+   ```   
+Perhaps you start with Azure Redis Cache as your state store. You specify it with the following configuration:
+
+   ```yaml
+   apiVersion: dapr.io/v1alpha1
+   kind: Component
+   metadata:
+     name: statestore
+     namespace: default
+   spec:
+     type: state.redis
+     metadata:
+     - name: redisHost
+       value: <HOST>
+     - name: redisPassword
+       value: <PASSWORD>
+     - name: enableTLS
+       value: <bool> # Optional. Allowed: true, false.
+     - name: failover
+       value: <bool> # Optional. Allowed: true, false.
+   ```   
+Note how the `spec` section specifies Azure Redis Cache. Dapr will bind your state management calls to Redis Cache.
+
+If you are familar with Kubenetes, you'll note how Dapr configuration files closely resemble Kubernetes manifest files. Essentailly, they define a policy that affects how each Dapr sidecar instance behaves and the specific infrastructure service implementation, i.e., component. Configuration can be applied to Dapr sidecar instances dynamically.
+
+At a later time, you may want to migrate your state management to Azure Table Storage. Azure Table Storage provides state management capabilities that are affordable and highly durable.
+
+While your service code would remain the same. you would modify definition of your state component, as follows:
+
+   ```yaml   
+   apiVersion: dapr.io/v1alpha1
+   kind: Component
+   metadata:
+     name: <NAME>
+     namespace: <NAMESPACE>
+   spec:
+     type: state.azure.tablestorage
+     metadata:
+       - name: accountName
+         value: <REPLACE-WITH-ACCOUNT-NAME>
+       - name: accountKey
+         value: <REPLACE-WITH-ACCOUNT-KEY>
+       - name: tableName
+         value: <REPLACE-WITH-TABLE-NAME>
+   ```   
+Note how the `spec` section specifies Azure Table Storage. Dapr will now bind your state management calls to Azure Table Storage.
+
+A building block can use a combination of components. For example, the Actors building block and the State Management building block both use a State component. As another example, the Pub/Sub building block uses a Pub/Sub component.
+
+At the time, of this writing, the following component types are provided by Dapr:
 
 | Component | Description |
 | :-------- | :-------- |
@@ -116,61 +186,23 @@ The following component types are provided by Dapr at the time of this book:
 
 ### Sidecar
 
-Dapr exposes its building block APIs using a `sidecar architecture`. Figure 2-x shows an example of a Dapr sidecar.
+Dapr exposes its APIs as a `sidecar architecture`, either as a separate container or process, not requiring your service to include any Dapr runtime code. This makes integration with Dapr easy from other runtimes, as well as providing separation of the application logic for improved supportability.
+
+Figure 2-x shows an example of a Dapr sidecar for state management.
 
 ![Sidecar architecture](./media/sidecar-state-mgmt.png)
 
-**Figure 2-x**. Sidecar archtitecture.
+**Figure 2-x**. Sidecar architecture for state management.
 
-In this sceanario, the customer service, on the left, needs to store customer location data in a state store, on the right.
+In this scenario, the search service, on the left, needs to store application state in a state store. Note how the service runs within its own runtime and contains a YAML-based configuration file specifying the state store implementation it wishes to consume from Dapr.
 
-However, the customer service has no reference to underlying state store. Instead it invokes the Dapr State Management building block, exposed as a stand-alone sidecar service. It is the sidecar API that is responsible for calling into state store component on your behalf. Note too the variety of state store service implementaitons that are available.
+The Dapr runtime on the right exposes a State Management building block exposed as a side car. The YAML configuration specifies the exact implementation component to use. 
 
- > Extra...
+In the middle, note how the app and Dapr are decoupled and communicate across either HTTP or gRPC using a sidecar architecture.
 
-While you application makes calls to the Dapr API, it does not include any Dapr runtime code. Instead, Dapr exposes its building block APIs using a sidecar architecture. 
+Importantly, the search has no direct dependencies to underlying state store. Instead it invokes the Dapr State Management building block, exposed as a stand-alone sidecar service. It's  the sidecar API that is responsible for calling into state store component on your behalf. Note too the variety of state store service implementations that are available.
 
-, not requiring the application code to include any Dapr runtime code. This makes integration with Dapr easy from other runtimes, as well as providing separation of the application logic for improved supportability.
-
-you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
-
-
-, either as a container or as a process, not requiring the application code to include any Dapr runtime code. This makes integration with Dapr easy from other runtimes, as well as providing separation of the application logic for improved supportability.
-
-Dapr architecture follows the sidecar pattern, meaning its components can be deployed either as independent processes or as containers to provide isolation and encapsulation and do not require to include a runtime in the application code. This makes it easy to integrate Dapr with other runtimes and to use it in a Kubernetes environment.
-
-
-It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
-
-you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
-
-  > Specfically, you're running the dot net service in a dapr sidecar. Now, other service can use dapr to call this service.
-
-That’s not the case with Dapr. It is a “Runtime” that operates along with
-your application using a sidecar architecture—your application
-does not run “inside it”. In standalone mode, Dapr simply runs as a
-different process and in Kubernetes, it runs as a (sidecar) container in
-the same Pod as your application
-
-Dapr is a “runtime” — what does that mean?
-I thought about this as well, when I first started exploring Dapr. In my specific case (Java middleware background), “runtime” was an application server that provided a “managed environment” (concurrency, security etc.) to my code (WAR, EAR etc.)
-That’s not the case with Dapr. It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
-Image for post
-
-It should be clear from the above picture that Dapr is a higher abstraction than
-Kubernetes. Kubernetes does not have any concept of application.
-You can use Dapr as a sidecar container with your application containers running in
-Kubernetes. You can also use Dapr as a process for traditional deployments as well.
-
- > Extra end
-
-### Configuration
-
- > Configuration driaves compoenent selection via YAML files. Similar format to K8s.
-
- Dapr Configuration defines a policy that affects how any Dapr sidecar instance behaves, such as using distributed tracing or a middleware component. Configuration can be applied to Dapr sidecar instances dynamically.
-
-You can get a list of current configurations available in the current the hosting environment using the dapr configurations CLI command.
+ 
 
 ### Dapr control plane
 
@@ -248,6 +280,8 @@ provide value. Dapr will be more application centric
 
 
 ## Potential content?
+
+
 Dapr reduces the complexity of constructing microservice and evevnt-driven applications. Companies can implement interservice-communication, state, resource binding, and asynchronous pub/sub messaging with open APIs and extensible components that are community-driven.
 
 provides the *glue* that fuses decoupled service components with your business application b. At the same time, it greatly abstracts the complexity of distributed components and provides baked-in industry best practices. Figure 2-x provides a shot of Dapr from 20,000 feet.
@@ -268,6 +302,49 @@ That’s not the case with Dapr. It is a “Runtime” that operates along with 
 Image for post
 
  > stop
+
+
+## Extra content for sidecar and runtimes
+
+> Extra...
+
+While your application makes calls to the Dapr API, it does not include any Dapr runtime code. Instead, Dapr exposes its building block APIs using a sidecar architecture. 
+
+, not requiring the application code to include any Dapr runtime code. This makes integration with Dapr easy from other runtimes, as well as providing separation of the application logic for improved supportability.
+
+you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
+
+
+, either as a container or as a process, not requiring the application code to include any Dapr runtime code. This makes integration with Dapr easy from other runtimes, as well as providing separation of the application logic for improved supportability.
+
+Dapr architecture follows the sidecar pattern, meaning its components can be deployed either as independent processes or as containers to provide isolation and encapsulation and do not require to include a runtime in the application code. This makes it easy to integrate Dapr with other runtimes and to use it in a Kubernetes environment.
+
+
+It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
+
+you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
+
+  > Specfically, you're running the dot net service in a dapr sidecar. Now, other service can use dapr to call this service.
+
+That’s not the case with Dapr. It is a “Runtime” that operates along with
+your application using a sidecar architecture—your application
+does not run “inside it”. In standalone mode, Dapr simply runs as a
+different process and in Kubernetes, it runs as a (sidecar) container in
+the same Pod as your application
+
+Dapr is a “runtime” — what does that mean?
+I thought about this as well, when I first started exploring Dapr. In my specific case (Java middleware background), “runtime” was an application server that provided a “managed environment” (concurrency, security etc.) to my code (WAR, EAR etc.)
+That’s not the case with Dapr. It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
+Image for post
+
+It should be clear from the above picture that Dapr is a higher abstraction than
+Kubernetes. Kubernetes does not have any concept of application.
+You can use Dapr as a sidecar container with your application containers running in
+Kubernetes. You can also use Dapr as a process for traditional deployments as well.
+
+ > Extra end
+
+
 
 
 

@@ -8,7 +8,7 @@ ms.date: 10/19/2020
 
 # Testing in .NET
 
-.NET Core makes it easy to create tests. This article introduces the concept of testing and illustrates how different kinds of tests can be used to validate code. The linked resources near the bottom of the article show you how to add a test project to your solution. After you set up your test project, you will be able to run your tests using tools, such as the [.NET CLI](../tools/index.md) or Visual Studio. Test project templates are available for C#, F#, and Visual Basic.
+.NET makes it easy to create tests. This article introduces the concept of testing and illustrates how different kinds of tests can be used to validate code. The linked resources near the bottom of the article show you how to add a test project to your solution. After you set up your test project, you will be able to run your tests using tools, such as the [.NET CLI](../tools/index.md) or Visual Studio. Test project templates are available for C#, F#, and Visual Basic.
 
 ## Test definitions
 
@@ -42,17 +42,17 @@ Try not to introduce dependencies on infrastructure when writing unit tests. The
 
 [xUnit](https://xunit.net) is a free, open source, community-focused unit testing tool for the .NET. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing C#, F#, VB.NET, and other .NET languages. xUnit.net works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](/apps/xamarin). It is part of the [.NET Foundation](https://dotnetfoundation.org), and operates under their code of conduct.
 
-You can create tests with xUnit using the .NET Core in [C#](unit-testing-with-dotnet-test.md), [F#](unit-testing-fsharp-with-dotnet-test.md), and [Visual Basic](unit-testing-visual-basic-with-dotnet-test.md).
+You can create tests with xUnit using the .NET in [C#](unit-testing-with-dotnet-test.md), [F#](unit-testing-fsharp-with-dotnet-test.md), and [Visual Basic](unit-testing-visual-basic-with-dotnet-test.md).
 
 ### NUnit
 
 [NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially ported from JUnit, the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It is part of the [.NET Foundation](https://dotnetfoundation.org).
 
-You can create tests with NUnit using the .NET Core in [C#](unit-testing-with-nunit.md), [F#](unit-testing-fsharp-with-nunit.md), and [Visual Basic](unit-testing-visual-basic-with-nunit.md).
+You can create tests with NUnit using the .NET in [C#](unit-testing-with-nunit.md), [F#](unit-testing-fsharp-with-nunit.md), and [Visual Basic](unit-testing-visual-basic-with-nunit.md).
 
 ### MSTest
 
-[MSTest](https://github.com/Microsoft/testfx-docs) is the Microsoft test framework for all .NET languages, it's extensible and works with both .NET CLI and Visual Studio. You can create tests with MSTest using the .NET Core in [C#](unit-testing-with-mstest.md), [F#](unit-testing-fsharp-with-mstest.md), and [Visual Basic](unit-testing-visual-basic-with-mstest.md).
+[MSTest](https://github.com/Microsoft/testfx-docs) is the Microsoft test framework for all .NET languages, it's extensible and works with both .NET CLI and Visual Studio. You can create tests with MSTest using the .NET in [C#](unit-testing-with-mstest.md), [F#](unit-testing-fsharp-with-mstest.md), and [Visual Basic](unit-testing-visual-basic-with-mstest.md).
 
 ## See also
 

@@ -108,13 +108,24 @@ A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xre
 Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
 
 ## Serialization behavior
+::: zone pivot="dotnet-5-0"
+* By default, all public properties are serialized. You can [specify properties to exclude](#exclude-properties-from-serialization).
+* The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
+* By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
+* By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
+* By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references]()
+* Currently, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded.
+::: zone-end
 
+::: zone pivot="dotnet-core-3-1"
 * By default, all public properties are serialized. You can [specify properties to exclude](#exclude-properties-from-serialization).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
 * Circular references are detected and exceptions thrown.
 * Currently, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded.
+::: zone-end
+
 
 Supported types include:
 
@@ -697,6 +708,64 @@ To change this behavior, set <xref:System.Text.Json.JsonSerializerOptions.Ignore
 With this option, the `Summary` property of the `WeatherForecastWithDefault` object is the default value "No summary" after deserialization.
 
 Null values in the JSON are ignored only if they are valid. Null values for non-nullable value types cause exceptions.
+
+## Preserve references and handle circular references
+
+::: zone pivot="dotnet-5-0"
+
+To preserve references and handle circular references, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. This setting causes the following behavior:
+
+* On serialize:
+
+  When writing complex types, the serializer also writes metadata properties (`$id`, `$values` and `$ref`).
+
+* On deserialize:
+
+  Metadata is expected (although not mandatory), and the deserializer tries to understand it.
+
+* Other notes:
+
+  * `MaxDepth` validation is not affected.
+  * The following types can be serialized as references but can't be deserialized as references:
+    * Immutable types
+    * Arrays
+    * Value types, such as structs
+
+The following code illustrates use of the `Preserve` setting.
+
+:::code language="csharp" source="system-text-json-how-to/csharp/PreserveReferences.cs":::
+
+The  preceding code produces the following output:
+
+```output
+Hayden Cook serialized:
+{
+  "$id": "1",
+  "Name": "Tyler Stein",
+  "Manager": null,
+  "DirectReports": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "Name": "Adrian King",
+        "Manager": {
+          "$ref": "1"
+        },
+        "DirectReports": null
+      }
+    ]
+  }
+}
+Tyler is the manager of Tyler's first direct report:
+True
+```
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+<xref:System.Text.Json> 3.1 only supports serialization by value and throws an exception for circular references.
+::: zone-end
 
 ## Utf8JsonReader, Utf8JsonWriter, and JsonDocument
 

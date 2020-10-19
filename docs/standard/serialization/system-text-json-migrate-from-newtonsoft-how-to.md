@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/16/2020
+ms.date: 10/19/2020
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -49,6 +49,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
 | No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
+| `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize strings as numbers                        | ⚠️ [Not supported, workaround, sample](#quoted-numbers) |
 | Deserialize `Dictionary` with non-string key          | ⚠️ [Not supported, workaround, sample](#dictionary-with-non-string-key) |
@@ -70,7 +71,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
-| `ReferenceLoopHandling` global setting                | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
 | `MissingMemberHandling` global setting                | ❌ [Not supported](#missingmemberhandling) |
 | Allow property names without quotes                   | ❌ [Not supported](#json-strings-property-names-and-string-values) |
@@ -486,7 +486,21 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 
 `Newtonsoft.Json` also has a `ReferenceLoopHandling` setting that lets you ignore circular references rather than throw an exception.
 
-<xref:System.Text.Json> only supports serialization by value and throws an exception for circular references.
+::: zone pivot="dotnet-5-0"
+To preserve references and handle circular references in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A?displayProperty=fullName> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. The `ReferenceHandler.Preserve` setting is equivalent to `ReferenceLoopHandling` = `true` and `PreserveReferencesHandling` = `true` in `Newtonsoft.Json`.
+
+Some related `Newtonsoft.Json` features are not supported:
+
+* [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm)
+* [JsonPropertyAttribute.IsReference](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_IsReference.htm)
+* [JsonPropertyAttribute.ReferenceLoopHandling](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_ReferenceLoopHandling.htm)
+
+For more information, see [Preserve references and handle circular references](system-text-json-how-to.md#preserve-references-and-handle-circular-references)
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+<xref:System.Text.Json> 3.1 only supports serialization by value and throws an exception for circular references.
+::: zone-end
 
 ### System.Runtime.Serialization attributes
 

@@ -50,7 +50,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
-| Serialize or deserialize strings as numbers           | ⚠️ [NumberHandling global setting](#quoted-numbers) |
+| Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting](#quoted-numbers) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize `Dictionary` with non-string key          | ⚠️ [Not supported, workaround, sample](#dictionary-with-non-string-key) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |

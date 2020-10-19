@@ -64,12 +64,19 @@ For more information, see the following resources:
 - [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
 
+### .NET CLI
+
+You can run a solutions unit tests from the .NET CLI, with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes a majority of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
+
+### IDE
+
+Whether you're using Visual Studio, Visual Studio for Mac, or Visual Studio Code, there are graphical user interfaces for testing functionality. There are more features available to IDEs than the CLI, for example [Live Unit Testing](/visualstudio/test/live-unit-testing). For more information, see [Including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
+
 ## See also
 
 For more information, see the following articles:
 
-- [Code coverage](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md#working-with-code-coverage)
-- [Including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods)
+- [Unit testing best practices with .NET](unit-testing-best-practices.md)
 - [Integration tests in ASP.NET Core](/aspnet/core/test/integration-tests#test-app-prerequisites)
-- [Live Unit Testing](/visualstudio/test/live-unit-testing)
 - [Running selective unit tests](selective-unit-tests.md)
+- [Use code coverage for unit testing](unit-testing-code-coverage.md)

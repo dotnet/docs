@@ -735,7 +735,7 @@ To preserve references and handle circular references, set <xref:System.Text.Jso
 
 The following code illustrates use of the `Preserve` setting.
 
-:::code language="csharp" source="system-text-json-how-to-5-0/csharp/PreserveReferences.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs":::
 
 The  preceding code produces the following output:
 
@@ -775,7 +775,7 @@ True
 
 Some serializers encode numbers as JSON strings (surrounded by quotes). For example: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To make <xref:System.Text.Json> write numbers in quotes or accept numbers in quotes, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
 
-:::code language="csharp" source="system-text-json-how-to-5-0/csharp/QuotedNumbers.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs":::
 
 The  preceding code produces output similar to the following example:
 
@@ -805,7 +805,7 @@ Serializing and deserializing JSON payloads from the network are common operatio
 
 The following example illustrates use of the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A>:
 
-:::code language="csharp" source="system-text-json-how-to-5-0/csharp/HtpClientExtensionMethods.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HtpClientExtensionMethods.cs":::
 
 The preceding code produces output similar to the following example but with different names:
 

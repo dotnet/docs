@@ -100,7 +100,7 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
 
    **On Windows:**
 
-   Navigate to *mySparkApp/bin/Release/netcoreapp3.0/ubuntu.16.04-x64*. Then, right-click on **Publish** folder and select **Send to > Compressed (zipped) folder**. Name the new folder **publish.zip**.
+   Use an extraction program, like 7-Zip or WinZip, to extract the file into the bin directory with all the published binaries.
 
    **On Linux, run the following command:**
 

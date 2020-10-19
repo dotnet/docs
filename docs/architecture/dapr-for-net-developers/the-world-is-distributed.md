@@ -2,7 +2,7 @@
 title: The World is Distributed
 description: Gain an understanding of the challenges of distributed applications
 author: robvet
-ms.date: 10/10/2020
+ms.date: 10/18/2020
 ---
 
 # The world is distributed
@@ -52,7 +52,7 @@ IT practitioners call this condition `the Fear Cycle`. If you've been in the tec
 
 Instead of fear, businesses require `speed and agility`. They seek an architectural style with which they can rapidly respond to market conditions. They need to instantaneously update and individually scale small areas of a live application.
 
-An early attempt to gain speed and agility came in the form of [Service Oriented Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), or `SOA`. In this model, service consumers and service collaborated via middleware messaging components, often referred to as an [Enterprise Service Bus](https://en.wikipedia.org/wiki/Enterprise_service_bus), or `ESB`. Figure 1-2 shows the architecture.
+An early attempt to gain speed and agility came in the form of [Service Oriented Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), or `SOA`. In this model, service consumers and service providers collaborated via middleware messaging components, often referred to as an [Enterprise Service Bus](https://en.wikipedia.org/wiki/Enterprise_service_bus), or `ESB`. Figure 1-2 shows the architecture.
 
 ![SOA.](./media/soa-basic.png)
 
@@ -68,7 +68,7 @@ Nowadays, many organizations have realized speed and agility by adopting a distr
 
 **Figure 1-3. Distributed architecture.
 
-Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a shared database, each service owns its own datastore. Note how some services require a full relational database, but others, a NoSQL datastore. The Basket service stores its state in a distributed key-value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to back-end services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
+Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a single database shared by multiple services, each service owns a private database. Other services cannot access this database directly and can only get to data that is exposed through the public API of the service that owns it. Note how some services require a full relational database, but others, a NoSQL datastore. The Basket service stores its state in a distributed key-value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to back-end services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 
 But, while distributed services can provide agility and speed, they present a different set of challenges. Consider the following... 
 
@@ -79,7 +79,7 @@ But, while distributed services can provide agility and speed, they present a di
  - How can they scale to meet fluctuating demand?
  - How are they monitored and observed?
  
-For each of these challenges, multiple products are often available. But, shielding your application product differences becomes a challenge to keeping code maintainable and portable.
+For each of these challenges, multiple products are often available. But, shielding your application from product differences and keeping code maintainable and portable become a challenge.
 
 This book introduces Dapr. Dapr is a distributed application runtime. It directly addresses many of the challenges found that come along with distributed applications. Looking ahead, Dapr has the potential to have profound impact on distributed application development.
 

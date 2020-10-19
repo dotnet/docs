@@ -50,8 +50,8 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
+| Serialize or deserialize strings as numbers           | ⚠️ [NumberHandling global setting](#quoted-numbers) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
-| Deserialize strings as numbers                        | ⚠️ [Not supported, workaround, sample](#quoted-numbers) |
 | Deserialize `Dictionary` with non-string key          | ⚠️ [Not supported, workaround, sample](#dictionary-with-non-string-key) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
@@ -238,6 +238,13 @@ Custom converters can be implemented for types that don't have built-in support.
 
 ### Quoted numbers
 
+::: zone pivot="dotnet-5-0"
+`Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To enable that behavior in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonNumberHandling.WriteAsString> or <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>.
+
+For more information, see [Quoted numbers](system-text-json-how-to.md#quoted-numbers).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
 `Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To enable that behavior in <xref:System.Text.Json>, implement a custom converter like the following example. The converter handles properties defined as `long`:
 
 * It serializes them as JSON strings.
@@ -246,6 +253,7 @@ Custom converters can be implemented for types that don't have built-in support.
 [!code-csharp[](snippets/system-text-json-how-to/csharp/LongToStringConverter.cs)]
 
 Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-property) on individual `long` properties or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
+::: zone-end
 
 ### Dictionary with non-string key
 

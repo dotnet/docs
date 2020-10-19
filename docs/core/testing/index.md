@@ -8,11 +8,11 @@ ms.date: 10/19/2020
 
 # Testing in .NET
 
-This article introduces the tools available for testing .NET applications.
+This article introduces the concept of testing, and illustrates how different kinds of tests can be used to validate code. There are various tools available for testing .NET applications, such as the [.NET CLI](#net-cli) or [Integrated Development Environments (IDEs)](#ide).
 
 ## Test types
 
-This article covers unit tests, integration tests, and load tests.
+Having automated tests is a great way to ensure that application code does what its authors intend it to do. This article covers unit tests, integration tests, and load tests.
 
 ### Unit tests
 
@@ -66,7 +66,7 @@ For more information, see the following resources:
 
 ### .NET CLI
 
-You can run a solutions unit tests from the .NET CLI, with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes a majority of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
+You can run a solutions unit tests from the [.NET CLI](../tools/index.md), with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes a majority of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
 
 ### IDE
 

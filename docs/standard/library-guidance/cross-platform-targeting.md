@@ -9,7 +9,7 @@ Modern .NET supports multiple operating systems and devices. It's important for 
 
 ## .NET Standard
 
-.NET Standard is the best way to add cross-platform support to a .NET library. [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of the .NET Standard.
+.NET Standard is the best way to add cross-platform support to a .NET library. [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of .NET Standard.
 
 ![.NET Standard](./media/cross-platform-targeting/platforms-netstandard.png ".NET Standard")
 

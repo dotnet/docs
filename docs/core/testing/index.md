@@ -1,20 +1,18 @@
 ---
-title: Testing in .NET Core and .NET Standard
-description: This article gives a brief overview of testing for .NET Core and .NET Standard projects.
-author: ardalis
-ms.author: wiwagn
-ms.date: 10/15/2020
+title: Testing in .NET
+description: This article gives a brief overview of testing concepts, terminology, and tools for testing in .NET.
+author: tdykstra
+ms.author: dapine
+ms.date: 10/19/2020
 ---
 
-# Testing in .NET Core and .NET Standard
+# Testing in .NET
 
-.NET Core makes it easy to create tests. This article introduces the concept of testing and illustrates how different kinds of tests can be used to validate code. The linked resources near the bottom of the article show you how to add a test project to your solution. After you set up your test project, you will be able to run your tests using tools, such as the [.NET CLI](../tools/index.md) or Visual Studio.
-
-.NET Core 2.0 and later supports [.NET Standard 2.0](../../standard/net-standard.md), and it is used to demonstrate unit tests in this article. You can use built-in .NET Core 2.0 and later unit test project templates for C#, F#, and Visual Basic as a starting point for your project.
+.NET Core makes it easy to create tests. This article introduces the concept of testing and illustrates how different kinds of tests can be used to validate code. The linked resources near the bottom of the article show you how to add a test project to your solution. After you set up your test project, you will be able to run your tests using tools, such as the [.NET CLI](../tools/index.md) or Visual Studio. Test project templates are available for C#, F#, and Visual Basic.
 
 ## Test definitions
 
-Having automated tests is a great way to ensure a software application does what its authors intend it to do. There are multiple types of tests for software applications. These include integration tests, load tests, and others. Below are some brief definitions for a few types of unit tests.
+Having automated tests is a great way to ensure a software application does what its authors intend it to do. There are multiple types of tests for software applications. These include integration tests, load tests, and others. Below are definitions for some of the various types of tests.
 
 ### Unit tests
 
@@ -24,11 +22,11 @@ For more information on creating unit tests, see [Testing tools](#testing-tools)
 
 ### Integration tests
 
-An *integration test* differs from a unit test, in that it exercises two or more software components' ability to function together, also known as their "integration". These tests operate on a much more broad spectrum of the system under test, whereas unit tests hyper-focus on individual components.
+An *integration test* differs from a unit test, in that it exercises two or more software components' ability to function together, also known as their "integration". These tests operate on a much more broad spectrum of the system under test, whereas unit tests hyper-focus on individual components. Often, integration tests do include infrastructure concerns.
 
 ### Load tests
 
-A *load test* aims to determine whether or not a system can handle a specified load, for example, the number of concurrent users consuming an application and the app's ability to handle interactions responsively.
+A *load test* aims to determine whether or not a system can handle a specified load, for example, the number of concurrent users consuming an application and the app's ability to handle interactions responsively. For more information on load testing of web applications, see [ASP.NET Core load/stress testing](/aspnet/core/test/load-tests).
 
 ## Test considerations
 

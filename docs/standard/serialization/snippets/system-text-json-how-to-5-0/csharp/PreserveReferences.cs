@@ -36,7 +36,7 @@ namespace PreserveReferences
             };
 
             string tylerJson = JsonSerializer.Serialize(tyler, options);
-            Console.WriteLine($"Hayden Cook serialized:\n{tylerJson}");
+            Console.WriteLine($"Tyler serialized:\n{tylerJson}");
 
             Employee tylerDeserialized =
                 JsonSerializer.Deserialize<Employee>(tylerJson, options);

@@ -215,7 +215,7 @@ See [.NET SDK Overview](../core/sdk.md).
 
 A formal specification of .NET APIs that are available in each .NET implementation.
 
-.NET Standard specification is sometimes called a library in the documentation. Because a library includes API implementations, not only specifications (interfaces), it's misleading to call .NET Standard a "library."
+The .NET Standard specification is sometimes called a library in the documentation. Because a library includes API implementations, not only specifications (interfaces), it's misleading to call .NET Standard a "library."
 
 See [.NET Standard](net-standard.md).
 

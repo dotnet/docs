@@ -113,7 +113,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
-* By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references]()
+* By default, circular references are detected and exceptions thrown. You can preserve [references and handle circular references](#preserve-references-and-handle-circular-references).
 * Currently, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded.
 ::: zone-end
 
@@ -125,7 +125,6 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * Circular references are detected and exceptions thrown.
 * Currently, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded.
 ::: zone-end
-
 
 Supported types include:
 
@@ -741,7 +740,7 @@ The following code illustrates use of the `Preserve` setting.
 The  preceding code produces the following output:
 
 ```output
-Hayden Cook serialized:
+Tyler serialized:
 {
   "$id": "1",
   "Name": "Tyler Stein",
@@ -768,6 +767,60 @@ True
 
 ::: zone pivot="dotnet-core-3-1"
 <xref:System.Text.Json> 3.1 only supports serialization by value and throws an exception for circular references.
+::: zone-end
+
+## Quoted numbers
+
+::: zone pivot="dotnet-5-0"
+
+Some serializers encode numbers as JSON strings (surrounded by quotes). For example: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To make <xref:System.Text.Json> write numbers in quotes or accept numbers in quotes, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
+
+:::code language="csharp" source="system-text-json-how-to-5-0/csharp/QuotedNumbers.cs":::
+
+The  preceding code produces output similar to the following example:
+
+```output
+Output JSON:
+{
+  "date": "2020-10-19T14:40:27.1342475-07:00",
+  "temperatureC": "40",
+  "summary": "Hot"
+}
+Date: 10/19/2020 2:40:27 PM
+TemperatureC: 40
+Summary: Hot
+```
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+<xref:System.Text.Json> 3.1 doesn' support serializing or deserializing numbers in quotes.
+::: zone-end
+
+## HttpClient extension methods
+
+::: zone pivot="dotnet-5-0"
+
+Serializing and deserializing JSON payloads from the network are common operations. Extension methods on <xref:System.Net.Http.HttpClient> let you do these operations in a single line of code.
+
+The following example illustrates use of the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A>:
+
+:::code language="csharp" source="system-text-json-how-to-5-0/csharp/HtpClientExtensionMethods.cs":::
+
+The preceding code produces output similar to the following example but with different names:
+
+```output
+Id: 1
+Name: Tyler King
+Username: Tyler
+Email: Tyler@contoso.com
+Success - Created
+```
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Extension methods on `HttpClient` are not available in <xref:System.Text.Json> 3.1.
 ::: zone-end
 
 ## Utf8JsonReader, Utf8JsonWriter, and JsonDocument

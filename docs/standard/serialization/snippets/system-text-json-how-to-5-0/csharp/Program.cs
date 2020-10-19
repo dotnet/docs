@@ -52,6 +52,10 @@ namespace SystemTextJsonHowTo
             Console.WriteLine("======== Create options instance with specified defaults =========");
             OptionsDefaults.Program.Main();
             Console.WriteLine();
+
+            Console.WriteLine("======== Quoted numbers =========");
+            QuotedNumbers.Program.Main();
+            Console.WriteLine();
         }
     }
 }

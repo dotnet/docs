@@ -80,29 +80,31 @@ Before you start, do the following tasks:
 
 Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get Started in 10-Minutes](https://dotnet.microsoft.com/learn/data/spark-tutorial/intro) tutorial, which gives your Spark cluster access to all the files it needs to run your app.
 
-1. Run the following commands to publish the *mySparkApp*:
+1. Run the following commands to publish your app. Be sure to replace *mySparkApp* with the path to your app.
 
    **On Windows:**
 
    ```console
    cd mySparkApp
-   dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
+   dotnet publish -c Release -f netcoreapp3.1 -r win-x64
    ```
 
    **On Linux:**
 
    ```bash
    cd mySparkApp
-   foo@bar:~/path/to/app$ dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
+   foo@bar:~/path/to/app$ dotnet publish -c Release -f netcoreapp3.1 -r ubuntu.16.04-x64
    ```
 
-2. Do the following tasks to zip your published app files so that you can easily upload them to your HDInsight cluster.
+2. Zip the contents of the publish folder, `publish.zip` for example, that was created as a result of Step 1. All the assemblies should be in the first layer of the ZIP file and there should be no intermediate folder layer. This means when you unzip `publish.zip`, all assemblies are extracted into your current working directory.
 
    **On Windows:**
 
-   Navigate to *mySparkApp/bin/Release/netcoreapp3.0/ubuntu.16.04-x64*. Then, right-click on **Publish** folder and select **Send to > Compressed (zipped) folder**. Name the new folder **publish.zip**.
+   Use an extraction program, like [7-Zip](https://www.7-zip.org/) or [WinZip](https://www.winzip.com/), to extract the file into the bin directory with all the published binaries.
 
-   **On Linux, run the following command:**
+   **On Linux:**
+
+   Open a bash shell and cd into the bin directory with all the published binaries and run the following command.
 
    ```bash
    zip -r publish.zip

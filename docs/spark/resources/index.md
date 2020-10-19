@@ -1,11 +1,9 @@
 ---
 title: .NET for Apache Spark resources
 description: Explore these .NET for Apache Spark resources to assist with custom data science solutions creation and integration into your .NET applications.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ---
 # .NET for Apache Spark resources
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 The following [.NET for Apache Spark](../index.yml) resources may be helpful for accessing Apache Spark in your .NET applications:
 

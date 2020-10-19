@@ -1,7 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 01/22/2019
+ms.date: 10/13/2020
 ms.technology: dotnet-standard
 ---
 # .NET Glossary
@@ -15,6 +15,18 @@ Ahead-of-time compiler.
 Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. Because AOT tool chains don't compile at run time, they don't have to minimize time spent compiling. That means they can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
 
 See [CoreRT](#corert) and [.NET Native](#net-native).
+
+## app model
+
+A [workload](#workload)-specific API. Here are some examples:
+
+* ASP.NET
+* ASP.NET Web API
+* Entity Framework (EF)
+* Windows Presentation Foundation (WPF)
+* Windows Communication Foundation (WCF)
+* Windows Workflow Foundation (WF)
+* Windows Forms (WinForms)
 
 ## ASP.NET
 
@@ -285,6 +297,12 @@ See [Target Frameworks](frameworks.md).
 Universal Windows Platform.
 
 An implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by .NET 5 (and .NET Core) and later versions.
+
+## workload
+
+A type of app someone is building. More generic than [app model](#app-model). For example, at the top of every .NET documentation page, including this one, is a drop-down list for **Workloads**, which lets you switch to documentation for **Web**, **Mobile**, **Cloud**, **Desktop**, and **Machine Learning \& Data**.
+
+In some contexts, *workload* refers to a collection of Visual Studio features that you can choose to install to support a particular type of app. For an example, see [Select a workload](../core/install/windows.md#select-a-workload).
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 title: "Local functions - C# Programming Guide"
 description: Local functions in C# are private methods that are nested in another member and can be called from their containing member.
-ms.date: 10/02/2020
+ms.date: 10/09/2020
 helpviewer_keywords: 
   - "local functions [C#]"
 ---
@@ -44,11 +44,15 @@ All local variables that are defined in the containing member, including its met
 
 Unlike a method definition, a local function definition cannot include the member access modifier. Because all local functions are private, including an access modifier, such as the `private` keyword, generates compiler error CS0106, "The modifier 'private' is not valid for this item."
 
-In addition, attributes can't be applied to the local function or to its parameters and type parameters.
-
 The following example defines a local function named `AppendPathSeparator` that is private to a method named `GetText`:
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="Basic" :::
+
+Beginning with C# 9.0, you can apply attributes to a local function, its parameters and type parameters, as the following example shows:
+
+:::code language="csharp" source="snippets/local-functions/Program.cs" id="WithAttributes" :::
+
+The preceding example uses a [special attribute](../../language-reference/attributes/nullable-analysis.md) to assist the compiler in static analysis in a nullable context.
 
 ## Local functions and exceptions
 

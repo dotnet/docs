@@ -1,9 +1,9 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
-description: This article shows you how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. It includes sample code.
-ms.date: "05/13/2020"
+description: Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. It includes sample code.
+ms.date: 10/09/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
-helpviewer_keywords: 
+helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
   - "serialization"
@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 # How to serialize and deserialize (marshal and unmarshal) JSON in .NET
 
-This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
+This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
 The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
@@ -55,9 +55,12 @@ The preceding examples use type inference for the type being serialized. An over
 
 ### Serialization example
 
-Here's an example class that contains collections and a nested class:
+Here's an example class that contains collection-type properties and a user-defined type:
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithPOCOs)]
+
+> [!TIP]
+> "POCO" stands for [plain old CLR object](https://en.wikipedia.org/wiki/Plain_old_CLR_object). A POCO is a .NET type that doesn't depend on any framework-specific types, for example, through inheritance or attributes.
 
 The JSON output from serializing an instance of the preceding type looks like the following example. The JSON output is minified by default:
 
@@ -65,7 +68,7 @@ The JSON output from serializing an instance of the preceding type looks like th
 {"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":20,"Low":-10},"Hot":{"High":60,"Low":20}},"SummaryWords":["Cool","Windy","Humid"]}
 ```
 
-The following example shows the same JSON, formatted (that is, pretty-printed with whitespace and indentation):
+The following example shows the same JSON, but formatted (that is, pretty-printed with whitespace and indentation):
 
 ```json
 {
@@ -116,7 +119,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 Supported types include:
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
-* User-defined [Plain Old CLR Objects (POCOs)](https://stackoverflow.com/questions/250001/poco-definition).
+* User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
 * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
 * Collections from the following namespaces.
@@ -130,7 +133,7 @@ You can [implement custom converters](system-text-json-converters-how-to.md) to 
 
 To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method.
 
-The following example reads JSON from a string and creates an instance of the `WeatherForecast` class shown earlier for the [serialization example](#serialization-example):
+The following example reads JSON from a string and creates an instance of the `WeatherForecastWithPOCOs` class shown earlier for the [serialization example](#serialization-example):
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripToString.cs?name=SnippetDeserialize)]
 
@@ -152,9 +155,13 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 ## Deserialization behavior
 
+The following behaviors apply when deserializing JSON:
+
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
-* Deserialization to reference types without a parameterless constructor isn't supported.
+* Constructors for deserialization:
+  - On .NET Core 3.0 and 3.1, a parameterless constructor, which can be public, internal, or private, is used for deserialization.
+  - In .NET 5.0 and later, non-public constructors are ignored by the serializer. However, parameterized constructors can be used if a parameterless constructor isn't available.
 * Deserialization to immutable objects or read-only properties isn't supported.
 * By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
 * Fields aren't supported.

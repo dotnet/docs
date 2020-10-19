@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -6,7 +7,7 @@ namespace local_functions
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         { }
 
         //<Basic>
@@ -22,6 +23,26 @@ namespace local_functions
              }
         }
         //</Basic>
+
+        //<WithAttributes>
+        #nullable enable
+        private static void Process(string?[] lines, string mark)
+        {
+            foreach (var line in lines)
+            {
+                if (IsValid(line))
+                {
+                    // Processing logic...
+                }
+            }
+
+            bool IsValid([NotNullWhen(true)] string? line)
+            {
+                return !string.IsNullOrEmpty(line) && line.Length >= mark.Length;
+            }
+        }
+        //</WithAttributes>
+        #nullable disable
 
         //<FactorialWithLocal>
         public static int LocalFunctionFactorial(int n)

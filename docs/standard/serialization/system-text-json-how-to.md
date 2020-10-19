@@ -805,7 +805,7 @@ Serializing and deserializing JSON payloads from the network are common operatio
 
 The following example illustrates use of the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A>:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HtpClientExtensionMethods.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs":::
 
 The preceding code produces output similar to the following example but with different names:
 

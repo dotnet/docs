@@ -1,6 +1,6 @@
 ---
-title: SYSLIB0006 compiler warning
-description: Learn about the obsoletion that generates compiler warning SYSLIB0006.
+title: SYSLIB0006 warning
+description: Learn about the obsoletions that generate compile-time warning SYSLIB0006.
 ms.topic: reference
 ms.date: 10/20/2020
 ---
@@ -33,4 +33,4 @@ void ProcessPendingWorkItemsNew(CancellationToken cancellationToken)
 ## See also
 
 - [Thread.Abort is obsolete - breaking change](3.1-5.0.md#threadabort-is-obsolete)
-- [Cancellation in managed threads](../../../../docs/standard/threading/cancellation-in-managed-threads.md)
+- [Cancellation in managed threads](../../standard/threading/cancellation-in-managed-threads.md)

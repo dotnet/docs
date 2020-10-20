@@ -1,6 +1,6 @@
 ---
-title: SYSLIB0010 compiler warning
-description: Learn about the obsoletion that generates compiler warning SYSLIB0010.
+title: SYSLIB0010 warning
+description: Learn about the obsoletions that generate compile-time warning SYSLIB0010.
 ms.topic: reference
 ms.date: 10/20/2020
 ---
@@ -13,7 +13,7 @@ ms.date: 10/20/2020
 
 ## Workaround
 
-Consider using WCF or HTTP-based REST services to communicate with objects in other applications or across machines. For more information, see [.NET Framework technologies unavailable on .NET Core](../../../../docs/core/porting/net-framework-tech-unavailable.md).
+Consider using WCF or HTTP-based REST services to communicate with objects in other applications or across machines. For more information, see [.NET Framework technologies unavailable on .NET Core](../../porting/net-framework-tech-unavailable.md).
 
 ## See also
 

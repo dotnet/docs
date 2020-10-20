@@ -1,6 +1,6 @@
 ---
-title: SYSLIB0010 compiler warning
-description: Learn about the obsoletion that generates compiler warning SYSLIB0011.
+title: SYSLIB0011 warning
+description: Learn about the obsoletions that generate compile-time warning SYSLIB0011.
 ms.topic: reference
 ms.date: 10/20/2020
 ---

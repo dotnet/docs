@@ -1,6 +1,6 @@
 ---
-title: SYSLIB0008 compiler warning
-description: Learn about the obsoletion that generates compiler warning SYSLIB0008.
+title: SYSLIB0008 warning
+description: Learn about the obsoletion that generates compile-time warning SYSLIB0008.
 ms.topic: reference
 ms.date: 10/20/2020
 ---

@@ -1,6 +1,6 @@
 ---
-title: SYSLIB0004 compiler warning
-description: Learn about the obsoletion that generates compiler warning SYSLIB0004.
+title: SYSLIB0004 warning
+description: Learn about the obsoletions that generate compile-time warning SYSLIB0004.
 ms.topic: reference
 ms.date: 10/20/2020
 ---

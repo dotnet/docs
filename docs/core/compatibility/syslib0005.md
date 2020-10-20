@@ -1,6 +1,6 @@
 ---
-title: SYSLIB0005 compiler warning
-description: Learn about the obsoletion that generates compiler warning SYSLIB0005.
+title: SYSLIB0005 warning
+description: Learn about the obsoletion that generates compile-time warning SYSLIB0005.
 ms.topic: reference
 ms.date: 10/20/2020
 ---

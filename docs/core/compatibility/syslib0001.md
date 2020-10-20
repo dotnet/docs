@@ -1,6 +1,6 @@
 ---
-title: SYSLIB0001 compiler warning
-description: Learn about the obsoletion that generates compiler warning SYSLIB0001.
+title: SYSLIB0001 warning
+description: Learn about the obsoletions that generate compile-time warning SYSLIB0001.
 ms.topic: reference
 ms.date: 10/20/2020
 ---

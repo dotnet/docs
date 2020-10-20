@@ -1,12 +1,12 @@
 ---
-title: SYSLIB0003 compiler warning
-description: Learn about the obsoletion that generates compiler warning SYSLIB0003.
+title: SYSLIB0003 warning
+description: Learn about the obsoletions that generate compile-time warning SYSLIB0003.
 ms.topic: reference
 ms.date: 10/20/2020
 ---
 # SYSLIB0003: Code access security is not supported
 
-[Code access security (CAS)](../../../../docs/framework/misc/code-access-security.md) is an unsupported, legacy technology. The infrastructure to enable CAS, which exists only in .NET Framework 2.x - 4.x, is deprecated and not receiving servicing or security fixes.
+[Code access security (CAS)](../../framework/data/adonet/code-access-security.md) is an unsupported, legacy technology. The infrastructure to enable CAS, which exists only in .NET Framework 2.x - 4.x, is deprecated and not receiving servicing or security fixes.
 
 As a result, most code access security (CAS)-related types in .NET are obsolete, starting in .NET 5.0. This includes CAS attributes, such as <xref:System.Security.Permissions.SecurityPermissionAttribute>, CAS permission objects, such as <xref:System.Net.SocketPermission>, <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs. Using these APIs generates warning `SYSLIB0003` at compile time.
 

@@ -1,6 +1,6 @@
 ---
-title: SYSLIB0007 compiler warning
-description: Learn about the obsoletion that generates compiler warning SYSLIB0007.
+title: SYSLIB0007 warning
+description: Learn about the obsoletions that generate compile-time warning SYSLIB0007.
 ms.topic: reference
 ms.date: 10/20/2020
 ---

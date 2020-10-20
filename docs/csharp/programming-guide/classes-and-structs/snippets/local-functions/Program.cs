@@ -127,7 +127,7 @@ namespace local_functions
         //<YieldReturn>
         public IEnumerable<string> SequenceToLowercase(IEnumerable<string> input)
         {
-            if (input.Any())
+            if (!input.Any())
             {
                 throw new ArgumentException("There are no items to convert to lowercase.");
             }

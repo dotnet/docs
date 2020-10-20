@@ -1,7 +1,7 @@
 ---
 title: Tools and productivity in .NET
 author: IEvangelist
-description: Learn about the various tooling, software development kits, diagnostic tools, and code analyzers available to .NET developers. 
+description: Learn about the various tooling, software development kits, diagnostic tools, and code analyzers available to .NET developers.
 ms.author: dapine
 ms.date: 10/20/2020
 ms.topic: overview
@@ -9,9 +9,11 @@ ms.topic: overview
 
 # Tools and productivity in .NET
 
-In this article, you'll learn about the various tools available to .NET developers. With .NET, you have a robust software development kit (SDK), that includes a command-line interface (CLI) namely, the .NET CLI. The .NET CLI powers many of the features throughout the .NET-ready integrated development environments (IDEs). This article also provides resources to productivity capabilities, such as CLI tools for diagnosing performance issues, memory leaks, high CPU, deadlocks, and as well as tooling support for code analysis.
+In this article, you'll learn about the various tools available to .NET developers. With .NET, you have a robust software development kit (SDK), that includes a command-line interface (CLI) namely, the .NET CLI. The .NET CLI powers many of the features throughout the .NET-ready integrated development environments (IDEs). This article also provides resources to productivity capabilities, such as .NET CLI tools for diagnosing performance issues, memory leaks, high CPU, deadlocks, and as well as tooling support for code analysis.
 
 ## Tools
+
+Many tools are available to .NET developers, such as the .NET SDK, .NET CLI, IDEs, and so on.
 
 ### .NET SDK
 
@@ -23,7 +25,7 @@ The .NET CLI is a cross-platform toolchain for developing, building, running, an
 
 ### IDEs
 
-The .NET SDK powers language services, that expose .NET developer functionality in [Visual Studio Code](https://code.visualstudio.com). As part of the [Visual Studio](https://visualstudio.microsoft.com/vs) family, [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac) enables macOS developers to write .NET applications.
+The .NET SDK powers language services, that exposes .NET developer functionality in [Visual Studio Code](https://code.visualstudio.com). As part of the [Visual Studio](https://visualstudio.microsoft.com/vs) family, [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac) enables macOS developers to write .NET applications.
 
 ### Additional tools
 
@@ -31,9 +33,11 @@ In addition to the more common tools, the .NET team has also provided tools for 
 
 ## Productivity
 
+Being a productive developer includes relying on tooling to analyze application performance.
+
 ### Diagnostics and instrumentation
 
-As a .NET developer
+As a .NET developer, common performance diagnostic tools exist to monitor, trace, collect, and analyze dump files. You can collect performance metrics with EventCounters, and use profiling tools to gain insights into how apps perform. For more information, see [.NET diagnostics tools](../core/diagnostics/index.md).
 
 ### Code analysis
 

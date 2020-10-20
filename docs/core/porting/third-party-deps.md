@@ -44,7 +44,7 @@ The easiest way to inspect NuGet package folders is to use the [NuGet Package Ex
 
 Look for a folder with names using one the following patterns: `netstandardX.Y` or `netcoreappX.Y`.
 
-These values are the [Target Framework Monikers (TFMs)](../../standard/frameworks.md) that map to versions of the [.NET Standard](../../standard/net-standard.md), .NET Core, and traditional Portable Class Library (PCL) profiles that are compatible with .NET Core.
+These values are the [Target Framework Monikers (TFMs)](../../standard/frameworks.md) that map to versions of [.NET Standard](../../standard/net-standard.md), .NET Core, and traditional Portable Class Library (PCL) profiles that are compatible with .NET Core.
 
 > [!IMPORTANT]
 > When looking at the TFMs that a package supports, note that `netcoreapp*`, while compatible, is for .NET Core projects only and not for .NET Standard projects.

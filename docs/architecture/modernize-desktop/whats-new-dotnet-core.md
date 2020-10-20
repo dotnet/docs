@@ -78,9 +78,9 @@ For your brand-new desktop applications, we recommend starting directly on .NET 
 
 ## .NET Standard vs. PCL
 
-The [.NET Standard](../../standard/net-standard.md) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem. .NET Standard is a specification of .NET APIs that make up a uniform set of contracts to compile your code against. These contracts are implemented in each .NET flavor, thus enabling portability across different .NET implementations.
+[.NET Standard](../../standard/net-standard.md) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind .NET Standard is establishing greater uniformity in the .NET ecosystem. .NET Standard is a specification of .NET APIs that make up a uniform set of contracts to compile your code against. These contracts are implemented in each .NET flavor, thus enabling portability across different .NET implementations.
 
-The .NET Standard enables the following key scenarios:
+.NET Standard enables the following key scenarios:
 
 - Defines uniform set of base class libraries APIs for all .NET implementations to implement, independent of the workload.
 - Enables developers to produce portable libraries that are usable across .NET implementations, using this same set of APIs.

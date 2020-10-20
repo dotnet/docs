@@ -12,7 +12,7 @@ To use Windows Containers, you just need to write Windows PowerShell commands in
 ```dockerfile
 FROM mcr.microsoft.com/windows/servercore:ltsc2019
 LABEL Description="IIS" Vendor="Microsoft" Version="10"
-RUN pwsh -Command Add-WindowsFeature Web-Server
+RUN powershell -Command Add-WindowsFeature Web-Server
 CMD [ "ping", "localhost", "-t" ]
 ```
 

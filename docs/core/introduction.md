@@ -314,7 +314,7 @@ In 2014, Microsoft began writing a cross-platform, open-source successor to .NET
 
 This article is about .NET 5, but much of the documentation for .NET 5 still has references to ".NET Core" or ".NET Framework". In addition, "Core" remains in the names [ASP.NET Core](/aspnet/core/) and [Entity Framework Core](/ef/core/).
 
-The documentation also refers to .NET Standard. The [.NET Standard](../standard/net-standard.md) is an API specification that lets you develop class libraries for multiple implementations of .NET.
+The documentation also refers to .NET Standard. [.NET Standard](../standard/net-standard.md) is an API specification that lets you develop class libraries for multiple implementations of .NET.
 
 For more information, see [.NET architectural components](../standard/components.md).
 
@@ -338,7 +338,7 @@ Some of the terminology for .NET can be confusing because the same word is used 
   | target framework | The collection of APIs that a .NET app or library relies on. Examples: .NET Core 3.1, .NET Standard 2.0 |
   | Target Framework Moniker (TFM)  | A TFM is a standardized token format for specifying the target framework of a .NET app or library. Example: `net462` for .NET Framework 4.6.2. |
   | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet-core). "Framework" in this usage is the same thing as the "runtime" that you download from the .NET download page. |
-  
+
 * **SDK**
 
   |Context  | "SDK" meaning |

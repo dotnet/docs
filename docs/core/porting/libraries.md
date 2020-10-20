@@ -32,7 +32,7 @@ This article discusses the portability of third-party dependencies and what to d
 
 ## Retarget to .NET Framework 4.7.2
 
-If your code isn't targeting .NET Framework 4.7.2, we recommended that you retarget to .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where the .NET Standard doesn't support existing APIs.
+If your code isn't targeting .NET Framework 4.7.2, we recommended that you retarget to .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
 
 For each of the projects you wish to port, do the following in Visual Studio:
 
@@ -114,7 +114,7 @@ The best way to make sure everything works when you've ported your code is to te
 Ultimately, the porting effort depends heavily on how your .NET Framework code is structured. A good way to port your code is to begin with the *base* of your library, which is the foundational components of your code. This might be data models or some other foundational classes and methods that everything else uses directly or indirectly.
 
 1. Port the test project that tests the layer of your library that you're currently porting.
-1. Copy over the base of your library into a new .NET Core project and select the version of the .NET Standard you wish to support.
+1. Copy over the base of your library into a new .NET Core project and select the version of .NET Standard you wish to support.
 1. Make any changes needed to get the code to compile. Much of this may require adding NuGet package dependencies to your *csproj* file.
 1. Run the tests and make any needed adjustments.
 1. Pick the next layer of code to port over and repeat the prior steps.

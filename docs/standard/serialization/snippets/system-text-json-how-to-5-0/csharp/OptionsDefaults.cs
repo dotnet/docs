@@ -31,6 +31,7 @@ namespace OptionsDefaults
 
             Console.WriteLine($"options.PropertyNameCaseInsensitive: {options.PropertyNameCaseInsensitive}");
             Console.WriteLine($"options.JsonNamingPolicy: {options.PropertyNamingPolicy}");
+            Console.WriteLine($"options.NumberHandling: {options.NumberHandling}");
 
             string forecastJson = JsonSerializer.Serialize<Forecast>(forecast, options);
             Console.WriteLine($"Output JSON:\n{forecastJson}");

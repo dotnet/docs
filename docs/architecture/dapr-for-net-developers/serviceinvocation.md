@@ -17,7 +17,7 @@ The Dapr Service Invocation building block helps you solve these challenges by u
 
 ## How it works
 
-Let's start with an example. There are two services, service A and service B, and service A needs to call the `catalog/items` API on service B. Instead of making a direct call from service A to service B, service A uses the invoke API of its Dapr sidecar.
+Let's start with an example. There are two services, service A and service B, and service A needs to call the `catalog/items` API on service B. Instead of making a direct call from service A to service B, service A calls the invoke API of its Dapr sidecar.
 
 ![How it works](./media/service-invocation/howitworks.png)
 

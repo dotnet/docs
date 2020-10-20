@@ -3,6 +3,7 @@ title: "How to serialize and deserialize JSON using C# - .NET"
 description: Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code.
 ms.date: 10/19/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
+zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -722,17 +723,6 @@ To preserve references and handle circular references, set <xref:System.Text.Jso
 
   Metadata is expected (although not mandatory), and the deserializer tries to understand it.
 
-* Other notes:
-
-  * `MaxDepth` validation is not affected.
-  * The following types can be serialized as references but can't be deserialized as references:
-    * Immutable types
-    * Arrays
-    * Value types, such as structs
-  * To determine if objects are equal, `System.Text.Json` uses the default equality of `Hashset` or`Dictionary`, which uses <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
-  * An exception is thrown if there are properties other than `$ref` in a JSON reference object.
-  * The <xref:System.Text.Json.Serialization.ReferenceResolver> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior, for example, to use a GUID for reference identifiers.
-
 The following code illustrates use of the `Preserve` setting.
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs":::
@@ -762,6 +752,17 @@ Tyler serialized:
 Tyler is the manager of Tyler's first direct report:
 True
 ```
+
+Other notes about preserving references:
+
+* `MaxDepth` validation is not affected.
+* The following types can be serialized as references but can't be deserialized as references:
+  * Immutable types
+  * Arrays
+  * Value types, such as structs
+* To determine if objects are equal, `System.Text.Json` uses the default equality of `Hashset` or`Dictionary`, which uses <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+* An exception is thrown if there are properties other than `$ref` in a JSON reference object.
+* The <xref:System.Text.Json.Serialization.ReferenceResolver> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/dotnet-docs/blob/master/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolver.cs).
 
 ::: zone-end
 

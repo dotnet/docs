@@ -56,6 +56,10 @@ namespace SystemTextJsonHowTo
             Console.WriteLine("======== Quoted numbers =========");
             QuotedNumbers.Program.Main();
             Console.WriteLine();
+
+            Console.WriteLine("======== GuidReferenceResolver =========");
+            GuidReferenceResolverExample.Program.Main();
+            Console.WriteLine();
         }
     }
 }

@@ -107,7 +107,7 @@ In the eShopOnDapr implementation, the services, as well as the API Gateway, hav
 
 All calls between sidecars are gRPC calls. So even in the case where you're invoking an HTTP/REST API of a remote service, you still get gRPC performance benefits for the calls between the sidecars. Those calls matter the most for performance in a real-world scenario because sidecars often are located on different machines.
 
-> Note that the Service Invocation building block acts as a bridge between protocols. Calls to and from the sidecars use either gRPC or HTTP protocols. Therefore, services can communicate using HTTP to HTTP, HTTP to gRPC, gRPC to HTTP, or gRPC to gRPC. 
+> Note that the Service Invocation building block acts as a bridge between protocols. Calls to and from the sidecars use either gRPC or HTTP protocols. Therefore, services can communicate using HTTP, gRPC or a combination of both. 
 
 By using Dapr sidecars, eShopOnDapr now benefits from the features offered by the Service Invocation building block such as service discovery, automatic mTLS, and observability.
 

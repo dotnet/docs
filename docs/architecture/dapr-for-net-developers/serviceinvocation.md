@@ -115,7 +115,7 @@ By using Dapr sidecars, eShopOnDapr now benefits from the features offered by th
 
 In the original eShopOnContainers implementation, Envoy forwards incoming HTTP requests from the front-ends directly to the appropriate back-end service. In eShopOnDapr, a Dapr sidecar is added to the Envoy proxy to get Dapr Service Invocation benefits such as mTLS and observability.
 
-We first added a `dapr` cluster to the Envoy configuration to make it possible for Envoy to forward HTTP requests to a Dapr sidecar container. The cluster configuration contains a host that points to the HTTP listening port of the Dapr sidecar:
+We first added a `dapr` cluster to the Envoy configuration to make it possible for Envoy to forward HTTP requests to a Dapr sidecar container. The cluster configuration contains a host that points to the HTTP port the Dapr sidecar is listening on:
 
 ``` yaml
 clusters:

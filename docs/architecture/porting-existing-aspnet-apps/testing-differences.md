@@ -7,7 +7,17 @@ ms.date: 11/13/2020
 
 # Comparing testing options between ASP.NET MVC and ASP.NET Core
 
+ASP.NET MVC apps support unit testing of controllers, but this approach often omits many MVC features like routing, authorization, model binding, model validation, filters, and more. In order to test these MVC features in addition to the logic within the controller action itself, frequently the app would need to be deployed and then tested with a tool like Selenium. These tests are substantially more expensive, more brittle, and slower than typical unit tests that can be run without the need for hosting and running the entire app.
+
+[ASP.NET Core controllers can be unit tested](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing) just like ASP.NET MVC controllers, but with the same limitations. However, [ASP.NET Core supports fast, easy-to-author integration tests](https://docs.microsoft.com/aspnet/core/test/integration-tests) as well. Integration tests are hosted by a `TestHost` class and are typically configured in a custom `WebApplicationFactory` which can override or replace app dependencies. For instance, frequently during integration tests the app will target a different data source and may replace services that send emails with fake or mock implementations.
+
+ASP.NET MVC and Web API did not support anything like the integration testing scenarios available in ASP.NET Core. As part of any migration effort you should allocate time to write some integration tests for your newly-migrated system in order to ensure it's working as expected continues to do so. Even if you weren't writing tests of your web application logic before the migration, you should strongly consider doing so as you move to ASP.NET Core.
+
 ## References
+
+- [Creating Unit Tests for ASP.NET MVC Applications](https://docs.microsoft.com/aspnet/mvc/overview/older-versions-1/unit-testing/creating-unit-tests-for-asp-net-mvc-applications-cs)
+- [Unit test controller logic in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)
+- [Integration tests in ASP.NET Core](https://docs.microsoft.com/aspnet/core/test/integration-tests)
 
 >[!div class="step-by-step"]
 >[Previous](signalr-differences.md)

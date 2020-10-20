@@ -10,3 +10,7 @@ The following APIs are marked as obsolete, starting in .NET 5.0. Using them in c
 
 - <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType>
+
+Workaround
+
+Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead.

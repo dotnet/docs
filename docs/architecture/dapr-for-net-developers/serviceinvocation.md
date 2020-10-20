@@ -70,7 +70,7 @@ As an example, consider the following HTTP endpoint:
 http://<serviceb-address>/catalog/items?pagesize=10
 ```
 
-Using the `HttpExtension` class, you can provide all the necessary settings for this call to the `DaprClient`:
+Using the `HttpExtension` class, you can setup all the necessary parts of the HTTP request for this call to the `DaprClient`:
 
 ``` csharp
 var result = await daprClient.InvokeMethodAsync<IEnumerable<CatalogItem>>(

@@ -7,13 +7,13 @@ ms.date: 09/25/2020
 
 # The Publish/Subscribe building block
 
-The Publish/Subscribe pattern is a well-known messaging pattern that has been around for some time and many architects apply this pattern in many distributed applications. Dapr also offers a building block for implementing this pattern.
+The Publish/Subscribe pattern is a well-known messaging pattern that has been around for a long time and many architects apply this pattern in distributed applications. Dapr also offers a building block for implementing this pattern.
 
 ## What it solves
 
 The Publish/Subscribe pattern's main advantage is that it decouples the services that send messages (the **publishers**) from the services that receive the messages (the **consumers**). The publishers do not need to know which consumers will consume their messages or where they run. This is possible because with the Publish/Subscribe pattern, a central **message broker** is used to distribute the messages.
 
-![](media/pubsub-pattern.png)
+![The Publish/Subscribe pattern](media/pubsub-pattern.png)
 
 1. Subscribers create a subscription on the message broker.
 2. Publisher sends messages to the message broker.
@@ -21,7 +21,7 @@ The Publish/Subscribe pattern's main advantage is that it decouples the services
 
 Some message brokers offer a queueing mechanism and can persist messages once received. In this case, the consumers don't even have to be online when a publisher sends the message. Once the consumer comes back online, the message is delivered to it so the consumer can handle it. This offers you temporal decoupling of publishers and consumers and helps to decrease coupling between services.
 
-There are several message broker products available - either commercial software as well as open-source software. Each one has its advantages and drawbacks, which you have to match with the requirements you have for the system you're building. To ensure your application is not tied to a specific message broker product, an abstraction layer is often created. Although this is a wise decision, it contains a fair amount of code you have to write and maintain. And often, this code is also not very trivial and error-prone. This is exactly where Dapr can come to the rescue.
+There are several message broker products available - either commercial software as well as open-source software. Each one has its advantages and drawbacks, which you have to match with the requirements you have for the system you're building. To ensure your application is not tied to a specific message broker product, an abstraction layer is often created. Although this is a wise decision, it contains a fair amount of code you have to write and maintain. And often, this code is also not very trivial and error-prone to write. This is exactly where Dapr comes to the rescue.
 
 The Dapr Publish/Subscribe building block is an abstraction of the Publish/Subscribe messaging pattern. Because Dapr offers this abstraction, you don't need to create and maintain your abstraction-layer anymore. This provides a productivity boost and gives you more time to actually write software that is valuable for the business.
 
@@ -29,11 +29,11 @@ Dapr guarantees At-Least-Once semantics for message delivery. That means that wh
 
 ## How it works
 
-The Dapr Publish/Subscribe building block offers a standard API you can use to send or receive messages. Proucers send messages to a named **topic** and consumers can subscribe to topics to receive the messages sent to them.
+The Dapr Publish/Subscribe building block offers a standard API you can use to send or receive messages. Producers send messages to a named **topic** and consumers can subscribe to topics to receive the messages sent to them.
 
 Dapr also offers a way to configure the message broker you want to use for actually transporting messages. This is called the Publish/Subscribe **component**. We will come back to components in more detail later on.
 
-It is possible to use the Publish/Subscribe building block directly over HTTP or gRPC using the Dapr API. To publish a message using Dapr, you can use the following API call on the Dapr sidecar of your application:
+It is possible to use the Publish/Subscribe building block directly over HTTP or gRPC using the Dapr API. To publish a message using Dapr, you can invoke the following API call on the Dapr sidecar of your application:
 
 `http://localhost:<daprPort>/v1.0/publish/<pubsubname>/<topic>`
 
@@ -54,7 +54,7 @@ Receiving messages is possible by subscribing to a topic. Upon startup, the Dapr
 
 `http://localhost:<appPort>/dapr/subscribe`
 
-The Dapr sidecar will use the `<appPort>` that your application is listening on. You can specify this when starting your application with Dapr.
+The Dapr sidecar will use the `<appPort>` that your application is listening on.
 
 The application needs to handle requests on the `/dapr/subscribe` endpoint and return a response containing the list of topics it wants to subscribe to. With each topic, it also needs to specify the endpoint on the application that must be called when a message comes in on that topic. This is an example of a response:
 
@@ -73,11 +73,11 @@ The application needs to handle requests on the `/dapr/subscribe` endpoint and r
 ]
 ```
 
-In this example, you see the application wants to subscribe to two topics `newOrder` and `newProduct` and register the endpoints `/orders` and `/productCatalog/products` with these topics. For both subscriptions, the application wants to use the Publish/Subscribe component named `pubsub`.
+In this example, you can see the application wants to subscribe to topics `newOrder` and `newProduct` and register the endpoints `/orders` and `/productCatalog/products` with these topics. For both subscriptions, the application wants to use the Publish/Subscribe component named `pubsub`.
 
 In he following diagram, you can see the entire flow of the example:
 
-![](media/pubsub-dapr-pattern.png)
+![Example Publish/Subscribe flow with Dapr](media/pubsub-dapr-pattern.png)
 
 1. The Dapr sidecar of Service B (consumer) calls the `/dapr/subscribe` endpoint on the service. The service responds with the subscriptions it wants to create.
 2. The Dapr sidecar of Service B creates the requested subscriptions on the message broker.
@@ -91,8 +91,6 @@ Using the Dapr APIs directly over HTTP is fine, but you need to handle serializa
 ### Using the Dapr .NET SDK
 
 The .NET SDK offers a more convenient way of working with the Publish/Subscribe building block. It provides a `Daprclient` class that you can use to invoke several Dapr building blocks.
-
-> You must add a reference to the NuGet package `Dapr.Client` in your project to use the Dapr client.
 
 One of the methods the Dapr client offers is the `PublishEventAsync` method for publishing a message. This is an example of how to use it:
 
@@ -142,7 +140,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-Dapr offers an `AddDapr` extension-method on the `IMvcBuilder` returned from `AddControllers` that you can use in the `ConfigureServices` method. It will register the necessary services to integrate Dapr into the MVC pipeline.
+Dapr offers an `AddDapr` extension-method on the `IMvcBuilder` returned from `AddControllers` that you can use in the `ConfigureServices` method. It will register the necessary services to integrate Dapr into the MVC pipeline. It also automatically registers a `DaprClient` instance for dependency injection, so you don't have to do that explicitly yourself.
 
 In the `Configure` method, you must add the following parts to enable Dapr:
 
@@ -239,7 +237,7 @@ public interface IEventBus
 }
 ```
 
-Multiple implementations exist for this abstraction, each for a different message broker (RabbitMQ and Azure Service Bus). Each implementation implements both the publish as the subscribe part of the abstraction.
+Multiple implementations exist for this abstraction, each for a different message broker (RabbitMQ and Azure Service Bus). Each implementation implements both the publish as well as the subscribe part of the abstraction.
 
 ### Publishing events
 
@@ -248,12 +246,9 @@ In eShopOnDapr, we replaced the entire Publish/Subscribe implementation with Dap
 ```csharp
 public interface IEventBus
 {
-    Task PublishAsync<TIntegrationEvent>(TIntegrationEvent @event)
-        where TIntegrationEvent : IntegrationEvent;
+    Task PublishAsync(IntegrationEvent @event);
 }
 ```
-
-We made the `PublishAsync` method generic, so you can specify the .NET type of the event being sent. This is necessary because Dapr needs this type information to send the event. No code changes were necessary for calling this method, because the only argument is the event and its type can be inferred at runtime.
 
 To implement the `IEventBus` abstraction, a `DaprEventBus` implementation was created. This implementation uses the Dapr client to publish an event:
 
@@ -287,6 +282,8 @@ public class DaprEventBus : IEventBus
 ```
 
 As you can see in the code snippet, the event type's name is used as the topic to send the event to. Because all services use the `IEventBus` abstraction, nothing needed to be changed to publish events.
+
+As you can see in the implementation, we cast the event to a `dynamic` when passing it as an argument. This is a workaround for an issue with the `System.Text.Json` serializer that the SDK uses to serialize and deserialize messages. In the eShop code that calls this method, sometimes an event is explicitly declared as the base-class for events `IntegrationEvent` (because the specific event-type is determined dynamically based on business-logic). As a result, the event is not serialized correctly and the message payload will not contain all the fields of the event. Our workaround fixes this and all fields are correctly serialized.
 
 One of the benefits of using Dapr, is that the infrastructure code is reduced heavily and is now pretty straightforward. It does not need to distinguish between the different message brokers being used anymore. Dapr abstracts this for you. And you can configure to use different message broker components. We will get back to how that works in eShopOnDapr later on.
 
@@ -340,6 +337,8 @@ spec:
 ```
 
 As you can see, the NATS message broker is configured in this example. If you want to use a different message broker for eShopOnDapr, you only need to change this file and configure a different message broker (e.g., the RabbitMQ broker). Because you're using Dapr, you don't need any code-changes whatsoever when switching message broker.
+
+You might ask yourself: "Why would I need multiple implementations of a message broker in my application?". Well, a system often handles multiple workloads with different characteristics. Some events occur ten times a day, whereas another event occurs 5000 times per second. In that situation, you need the ability to partition your messaging traffic and use a specific message broker for each workload. With Dapr this is as straightforward as adding multiple Publish/Subscribe component configurations with each a different name and specifying the name of the component you want to use in your application code.
 
 ## Summary
 

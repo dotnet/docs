@@ -25,7 +25,7 @@ The sidecar takes care of the rest. It first uses the pluggable service discover
 
 After the sidecar has resolved the address, it forwards the request to the service B sidecar. The service B sidecar then makes the actual `catalog/items` request on the service B API. The response returned by service B will flow back through the sidecars to service A.
 
-Because the calls flow through sidecars, Dapr can inject some handy functionality:
+Because the calls flow through sidecars, Dapr can inject some useful behaviors:
 - automatic retries in case of failures
 - traffic encryption using automatic mutual TLS
 - control what operations clients can perform using access control policies

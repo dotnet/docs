@@ -19,7 +19,7 @@ For package-based target frameworks (for example, .NET Standard and .NET Core), 
 
 ## Latest versions
 
-The following table defines the most common target frameworks, how they're referenced, and which version of the [.NET Standard](net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A target framework moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
+The following table defines the most common target frameworks, how they're referenced, and which version of [.NET Standard](net-standard.md) they implement. These target framework versions are the latest stable versions. Pre-release versions aren't shown. A target framework moniker (TFM) is a standardized token format for specifying the target framework of a .NET app or library.
 
 | Target framework      | Latest <br/> stable version | Target framework moniker (TFM) | Implemented <br/> .NET Standard version |
 | :-: | :-: | :-: | :-: |
@@ -110,7 +110,7 @@ public class MyClass
     {
 #if NET40
         Console.WriteLine("Target framework: .NET Framework 4.0");
-#elif NET45  
+#elif NET45
         Console.WriteLine("Target framework: .NET Framework 4.5");
 #else
         Console.WriteLine("Target framework: .NET Standard 1.4");

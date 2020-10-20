@@ -1,75 +1,82 @@
 ---
-title: Unit testing in .NET Core and .NET Standard
-description: This article gives a brief overview of unit testing for .NET Core and .NET Standard projects.
-author: ardalis
-ms.author: wiwagn
-ms.date: 05/18/2020
-zone_pivot_groups: unit-testing-framework-set-one
+title: Testing in .NET
+description: This article gives a brief overview of testing concepts, terminology, and tools for testing in .NET.
+author: IEvangelist
+ms.author: dapine
+ms.date: 10/19/2020
 ---
 
-# Unit testing in .NET Core and .NET Standard
+# Testing in .NET
 
-.NET Core makes it easy to create unit tests. This article introduces unit tests and illustrates how they differ from other kinds of tests. The linked resources near the bottom of the page show you how to add a test project to your solution. After you set up your test project, you will be able to run your unit tests using the command line or Visual Studio.
+This article introduces the concept of testing, and illustrates how different kinds of tests can be used to validate code. There are various tools available for testing .NET applications, such as the [.NET CLI](#net-cli) or [Integrated Development Environments (IDEs)](#ide).
 
-If you're testing an **ASP.NET Core** project, see [Integration tests in ASP.NET Core](/aspnet/core/test/integration-tests#test-app-prerequisites).
+## Test types
 
-.NET Core 2.0 and later supports [.NET Standard 2.0](../../standard/net-standard.md), and we will use its libraries to demonstrate unit tests.
+Having automated tests is a great way to ensure that application code does what its authors intend it to do. This article covers unit tests, integration tests, and load tests.
 
-You are able to use built-in .NET Core 2.0 and later unit test project templates for C#, F# and Visual Basic as a starting point for your personal project.
+### Unit tests
 
-## What are unit tests?
+A *unit test* is a test that exercises individual software components or methods, also known as "unit of work". Unit tests should only test code within the developer's control. They do not test infrastructure concerns. Infrastructure concerns include interacting with databases, file systems, and network resources.
 
-Having automated tests is a great way to ensure a software application does what its authors intend it to do. There are multiple types of tests for software applications. These include integration tests, web tests, load tests, and others. **Unit tests** test individual software components and methods. Unit tests should only test code within the developer’s control. They should not test infrastructure concerns. Infrastructure concerns include databases, file systems, and network resources.
+For more information on creating unit tests, see [Testing tools](#testing-tools).
 
-Also, keep in mind there are best practices for writing tests. For example, [Test Driven Development (TDD)](https://deviq.com/test-driven-development/) is when a unit test is written before the code it is meant to check. TDD is like creating an outline for a book before we write it. It is meant to help developers write simpler, more readable, and efficient code.
+### Integration tests
 
-> [!NOTE]
-> The ASP.NET team follows [these conventions](https://github.com/dotnet/aspnetcore/wiki/Engineering-guidelines#unit-tests-and-functional-tests) to help developers come up with good names for test classes and methods.
+An *integration test* differs from a unit test in that it exercises two or more software components' ability to function together, also known as their "integration." These tests operate on a broader spectrum of the system under test, whereas unit tests focus on individual components. Often, integration tests do include infrastructure concerns.
 
-Try not to introduce dependencies on infrastructure when writing unit tests. These make the tests slow and brittle, and should be reserved for integration tests. You can avoid these dependencies in your application by following the [Explicit Dependencies Principle](https://deviq.com/explicit-dependencies-principle/) and using [Dependency Injection](/aspnet/core/fundamentals/dependency-injection). You can also keep your unit tests in a separate project from your integration tests. This ensures your unit test project doesn’t have references to or dependencies on infrastructure packages.
+### Load tests
 
-## Next steps
+A *load test* aims to determine whether or not a system can handle a specified load, for example, the number of concurrent users using an application and the app's ability to handle interactions responsively. For more information on load testing of web applications, see [ASP.NET Core load/stress testing](/aspnet/core/test/load-tests).
 
-More information on unit testing in .NET Core projects:
+## Test considerations
 
-.NET Core unit test projects are supported for:
+Keep in mind there are [best practices](unit-testing-best-practices.md) for writing tests. For example, [Test Driven Development (TDD)](https://deviq.com/test-driven-development) is when a unit test is written before the code it's meant to check. TDD is like creating an outline for a book before you write it. It is meant to help developers write simpler, more readable, and efficient code.
 
-- [C#](../../csharp/index.yml)
-- [F#](../../fsharp/index.yml)
-- [Visual Basic](../../visual-basic/index.yml)
+## Testing tools
 
-You can also choose between several unit test frameworks:
+.NET is a multi-language development platform, and you can write various test types for [C#](../../csharp/index.yml), [F#](../../fsharp/index.yml), and [Visual Basic](../../visual-basic/index.yml). For each of these languages, you can choose between several test frameworks.
 
-- [xUnit](https://xunit.net/)
-- [NUnit](https://nunit.org)
-- [MSTest](https://github.com/Microsoft/testfx-docs)
+### xUnit
 
-You can learn more in the following walkthroughs:
+[xUnit](https://xunit.net) is a free, open source, community-focused unit testing tool for .NET. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing .NET apps. xUnit.net works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](/apps/xamarin). It is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under their code of conduct.
 
-:::zone pivot="mstest"
+For more information, see the following resources:
 
-- Create unit tests using [*MSTest* and *C#* with the .NET Core CLI](unit-testing-with-mstest.md).
-- Create unit tests using [*MSTest* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-mstest.md).
-- Create unit tests using [*MSTest* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-mstest.md).
+- [Unit testing with C#](unit-testing-with-dotnet-test.md)
+- [Unit testing with F#](unit-testing-fsharp-with-dotnet-test.md)
+- [Unit testing with Visual Basic](unit-testing-visual-basic-with-dotnet-test.md)
 
-:::zone-end
-:::zone pivot="xunit"
+### NUnit
 
-- Create unit tests using [*xUnit* and *C#* with the .NET Core CLI](unit-testing-with-dotnet-test.md).
-- Create unit tests using [*xUnit* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-dotnet-test.md).
-- Create unit tests using [*xUnit* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-dotnet-test.md).
+[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially ported from JUnit, the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It is a project of the [.NET Foundation](https://dotnetfoundation.org).
 
-:::zone-end
-:::zone pivot="nunit"
+For more information, see the following resources:
 
-- Create unit tests using [*NUnit* and *C#* with the .NET Core CLI](unit-testing-with-nunit.md).
-- Create unit tests using [*NUnit* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-nunit.md).
-- Create unit tests using [*NUnit* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-nunit.md).
+- [Unit testing with C#](unit-testing-with-nunit.md)
+- [Unit testing with F#](unit-testing-fsharp-with-nunit.md)
+- [Unit testing with Visual Basic](unit-testing-visual-basic-with-nunit.md)
 
-:::zone-end
+### MSTest
 
-You can learn more in the following articles:
+[MSTest](https://github.com/Microsoft/testfx-docs) is the Microsoft test framework for all .NET languages. It's extensible and works with both .NET CLI and Visual Studio. For more information, see the following resources:
 
-- Visual Studio Enterprise offers great testing tools for .NET Core. Check out [Live Unit Testing](/visualstudio/test/live-unit-testing) or [code coverage](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md#working-with-code-coverage) to learn more.
-- For more information on how to run selective unit tests, see [Running selective unit tests](selective-unit-tests.md), or [including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
-- [How to use xUnit with .NET Core and Visual Studio](https://xunit.github.io/docs/getting-started-dotnet-core.html).
+- [Unit testing with C#](unit-testing-with-mstest.md)
+- [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
+- [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
+
+### .NET CLI
+
+You can run a solutions unit tests from the [.NET CLI](../tools/index.md), with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes a majority of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
+
+### IDE
+
+Whether you're using Visual Studio, Visual Studio for Mac, or Visual Studio Code, there are graphical user interfaces for testing functionality. There are more features available to IDEs than the CLI, for example [Live Unit Testing](/visualstudio/test/live-unit-testing). For more information, see [Including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
+
+## See also
+
+For more information, see the following articles:
+
+- [Unit testing best practices with .NET](unit-testing-best-practices.md)
+- [Integration tests in ASP.NET Core](/aspnet/core/test/integration-tests#test-app-prerequisites)
+- [Running selective unit tests](selective-unit-tests.md)
+- [Use code coverage for unit testing](unit-testing-code-coverage.md)

@@ -37,8 +37,6 @@ It is possible to use the Publish/Subscribe building block directly over HTTP or
 
 `http://localhost:<daprPort>/v1.0/publish/<pubsubname>/<topic>`
 
-> In the examples in this chapter, we will assume everything is running locally on a single host so we can use `localhost` as hostname.
-
 - You must fill `<daprPort>` with the port the Dapr sidecar is listening on.
 - You must fill `<pubsubname>` with the name of the Publish/Subscribe component that must be used.
 - You must fill `<topic>` with the name of the topic the message must be published to.

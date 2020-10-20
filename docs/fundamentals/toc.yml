@@ -147,8 +147,11 @@ items:
     href: ../core/whats-new/dotnet-core-2-0.md
   - name: What's new in .NET Standard
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
-- name: Tools and diagnostics
+- name: Tools and productivity
+  displayName: diagnostics,tools,tooling,productivity,instrumentation
   items:
+  - name: Overview
+    href: tools-and-productivity.md
   - name: .NET Core SDK
     items:
     - name: Overview
@@ -297,6 +300,17 @@ items:
       - name: 3 - Create a template pack
         href: ../core/tutorials/cli-templates-create-template-pack.md
         displayName: tutorials, cli
+  - name: Integrated Development Environment (IDE)
+    displayName: IDE,integrated development environment,vs,code,vs code,visual studio
+    items:
+    - name: Visual Studio
+      href: https://visualstudio.microsoft.com/vs
+    - name: Visual Studio for Mac
+      displayName: macOS,Mac
+      href: https://visualstudio.microsoft.com/vs/mac
+    - name: Visual Studio Code
+      displayName: code,vs code
+      href: https://code.visualstudio.com
   - name: MSBuild and project files
     items:
     - name: Project SDKs
@@ -317,21 +331,24 @@ items:
       href: ../core/tools/csproj.md
     - name: Dependency management
       href: ../core/tools/dependencies.md
-  - name: .NET Core additional tools
+  - name: Additional tools
     items:
     - name: Overview
       href: ../core/additional-tools/index.md
-    - name: .NET Core Uninstall Tool
+    - name: .NET Core uninstall tool
       href: ../core/additional-tools/uninstall-tool.md
-    - name: WCF Web Service Reference Provider
+    - name: WCF web service reference provider
       href: ../core/additional-tools/wcf-web-service-reference-guide.md
-    - name: dotnet-svcutil
+    - name: WCF service utility
+      displayName: dotnet-svcutil
       href: ../core/additional-tools/dotnet-svcutil-guide.md
-    - name: dotnet-svcutil.xmlserializer
+    - name: WCF service XML serializer
+      displayName: dotnet-svcutil.xmlserializer
       href: ../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
-    - name: XML Serializer Generator
+    - name: XML serializer generator
+      displayName: sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer
       href: ../core/additional-tools/xml-serializer-generator.md
-  - name: Diagnostic tools
+  - name: Diagnostics and instrumentation
     items:
     - name: Overview
       href: ../core/diagnostics/index.md

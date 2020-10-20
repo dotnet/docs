@@ -144,5 +144,4 @@ namespace local_functions
         }
         //</YieldReturn>
     }
-    }
 }

@@ -11,6 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [Most code access security APIs are obsolete](#most-code-access-security-apis-are-obsolete) | 5.0 |
 | [API obsoletions with non-default diagnostic IDs](#api-obsoletions-with-non-default-diagnostic-ids) | 5.0 |
 | [FrameworkDescription's value is .NET instead of .NET Core](#frameworkdescriptions-value-is-net-instead-of-net-core) | 5.0 |
 | [Assembly-related API behavior changes for single-file publishing format](#assembly-related-api-behavior-changes-for-single-file-publishing-format) | 5.0 |
@@ -53,6 +54,10 @@ The following breaking changes are documented on this page:
 | [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [code-access-security-apis-obsolete](../../../includes/core-changes/corefx/5.0/code-access-security-apis-obsolete.md)]
+
+***
 
 [!INCLUDE [obsolete-apis-with-custom-diagnostics](../../../includes/core-changes/corefx/5.0/obsolete-apis-with-custom-diagnostics.md)]
 

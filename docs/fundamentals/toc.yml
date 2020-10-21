@@ -147,7 +147,7 @@ items:
     href: ../core/whats-new/dotnet-core-2-0.md
   - name: What's new in .NET Standard
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
-- name: Tools and productivity
+- name: Tools and diagnostics
   items:
   - name: Overview
     displayName: diagnostics,tools,tooling,productivity,instrumentation
@@ -304,7 +304,7 @@ items:
       - name: 3 - Create a template pack
         href: ../core/tutorials/cli-templates-create-template-pack.md
         displayName: tutorials, cli
-  - name: Integrated Development Environment (IDE)
+  - name: Integrated development environments (IDEs)
     items:
     - name: Visual Studio
       displayName: ide,integrated development environment,vs
@@ -339,7 +339,7 @@ items:
     items:
     - name: Overview
       href: ../core/additional-tools/index.md
-    - name: .NET Core uninstall tool
+    - name: .NET uninstall tool
       href: ../core/additional-tools/uninstall-tool.md
     - name: WCF web service reference provider
       href: ../core/additional-tools/wcf-web-service-reference-guide.md

@@ -120,7 +120,7 @@ Classes that derive from `CodeAccessSecurityAttribute`:
 - <xref:System.DirectoryServices.DirectoryServicesPermissionAttribute?displayProperty=fullName>
 - <xref:System.Drawing.Printing.PrintingPermissionAttribute?displayProperty=fullName>
 - <xref:System.Net.DnsPermissionAttribute?displayProperty=fullName>
-- <xref:System.Net.SocketPermissionAttribute?displayProperty=fullName
+- <xref:System.Net.SocketPermissionAttribute?displayProperty=fullName>
 - <xref:System.Net.WebPermissionAttribute?displayProperty=fullName>
 - <xref:System.Net.Mail.SmtpPermissionAttribute?displayProperty=fullName>
 - <xref:System.Net.NetworkInformation.NetworkInformationPermissionAttribute?displayProperty=fullName>

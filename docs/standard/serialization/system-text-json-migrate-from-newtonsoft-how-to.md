@@ -129,7 +129,11 @@ This is not an exhaustive list of `Newtonsoft.Json` features. The list includes 
 
 During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The <xref:System.Text.Json> default is case-sensitive, which gives better performance since it's doing an exact match. For information about how to do case-insensitive matching, see [Case-insensitive property matching](system-text-json-how-to.md#case-insensitive-property-matching).
 
-If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`. The default values are set in the [JsonOptions class](https://github.com/dotnet/aspnetcore/blob/1f56888ea03f6a113587a6c4ac4d8b2ded326ffa/src/Mvc/Mvc.Core/src/JsonOptions.cs#L22-L28).
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`.
+
+::: zone pivot="dotnet-5-0"
+ASP.NET Core also enables [quoted numbers](#quoted-numbers) by default.
+::: zone-end
 
 ### Minimal character escaping
 
@@ -240,6 +244,8 @@ Custom converters can be implemented for types that don't have built-in support.
 
 ::: zone pivot="dotnet-5-0"
 `Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To enable that behavior in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonNumberHandling.WriteAsString> or <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>.
+
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the setting that allows quoted numbers when it uses `System.Text.Json`.
 
 For more information, see [Quoted numbers](system-text-json-how-to.md#quoted-numbers).
 ::: zone-end

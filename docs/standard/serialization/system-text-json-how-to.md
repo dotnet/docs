@@ -798,6 +798,56 @@ Summary: Hot
 <xref:System.Text.Json> 3.1 doesn' support serializing or deserializing numbers in quotes.
 ::: zone-end
 
+## Create JsonSerializerOptions instances
+
+::: zone pivot="dotnet-5-0"
+The <xref:System.Text.Json.JsonSerializerOptions> class provides constructors that let you create a new `JsonSerializerOptions` instance with:
+
+* The same options as an existing instance.
+* The default options that are used for web apps in ASP.NET Core 5.0 and later versions.
+
+The following example copies an options instance.
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs":::
+
+The preceding code produces output similar to the following example:
+
+```output
+Output JSON:
+{
+  "Date": "2020-10-20T18:38:33.4153344-07:00",
+  "TemperatureC": 40,
+  "Summary": "Hot"
+}
+```
+
+The following example creates an options instance with web defaults.
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs":::
+
+The preceding code produces output similar to the following example:
+
+```output
+options.PropertyNameCaseInsensitive: True
+options.JsonNamingPolicy: System.Text.Json.JsonCamelCaseNamingPolicy
+options.NumberHandling: AllowReadingFromString
+Output JSON:
+{
+  "date": "2020-10-20T18:38:33.4211057-07:00",
+  "temperatureC": 40,
+  "summary": "Hot"
+}
+Date: 10/20/2020 6:38:33 PM
+TemperatureC: 40
+Summary: Hot
+```
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Constructors that take an existing instance or specify web defaults are not supported in `System.Text.Json` 3.1.
+::: zone-end
+
 ## HttpClient extension methods
 
 ::: zone pivot="dotnet-5-0"

@@ -40,6 +40,7 @@ namespace OptionsDefaults
             Console.WriteLine($"Date: {forecastDeserialized.Date}");
             Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");
             Console.WriteLine($"Summary: {forecastDeserialized.Summary}");
+
         }
     }
 }

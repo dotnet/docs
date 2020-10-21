@@ -827,7 +827,7 @@ A constructor that takes an existing instance is not available in `System.Text.J
 ## Web defaults for JsonSerializerOptions
 
 ::: zone pivot="dotnet-5-0"
-There is a <xref:System.Text.Json.JsonSerializerOptions> constructor that creates a new instance with [the default options that are used for web apps](xref:System.Text.Json.JsonSerializerDefaults.Web), as shown in the following example:
+There is a <xref:System.Text.Json.JsonSerializerOptions> constructor that lets you create a new instance with [the default options that ASP.NET Core uses for web apps](xref:System.Text.Json.JsonSerializerDefaults.Web), as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs":::
 
@@ -851,7 +851,7 @@ Summary: Hot
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-A constructors that specifies web defaults is not available in `System.Text.Json` 3.1.
+A constructor that specifies a set of defaults is not available in `System.Text.Json` 3.1.
 ::: zone-end
 
 ## HttpClient extension methods

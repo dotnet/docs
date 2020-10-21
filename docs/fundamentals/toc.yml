@@ -271,7 +271,7 @@ items:
       - name: Create tools for the CLI
         items:
         - name: 1 - Create a tool
-          displayName: tools,tutorials,cli,create global tool,start global tool,new global tool
+          displayName: tools,tutorials,cli,create global tool,create local tool
           href: ../core/tools/global-tools-how-to-create.md
         - name: 2 - Use a global tool
           displayName: tools,tutorials,cli,understand global tool
@@ -308,13 +308,13 @@ items:
     items:
     - name: Visual Studio
       displayName: ide,integrated development environment,vs
-      href: https://visualstudio.microsoft.com/vs
+      href: /visualstudio/windows/
     - name: Visual Studio for Mac
       displayName: ide,integrated development environment,vs for mac,macOS,Mac
-      href: https://visualstudio.microsoft.com/vs/mac
+      href: /visualstudio/mac/
     - name: Visual Studio Code
       displayName: ide,integrated development environment,code,vs code,oss ide,
-      href: https://code.visualstudio.com
+      href: https://code.visualstudio.com/docs
   - name: MSBuild and project files
     items:
     - name: Project SDKs

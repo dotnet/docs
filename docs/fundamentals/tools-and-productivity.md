@@ -29,7 +29,7 @@ The .NET SDK powers language services, that exposes .NET developer functionality
 
 ### Additional tools
 
-In addition to the more common tools, the .NET team has also provided tools for specific scenarios. Some of the use cases include uninstalling the .NET SDK or the .NET Runtime, or handling Windows Communication Foundation (WCF) refences, XML serialization, and so on. For more information, see [.NET additional tools overview](../core/additional-tools/index.md).
+In addition to the more common tools, the .NET team has also provided tools for specific scenarios. Some of the use cases include uninstalling the .NET SDK or the .NET Runtime, or retrieving Windows Communication Foundation (WCF) metadata, and generating proxy source code, XML serialization, and so on. For more information, see [.NET additional tools overview](../core/additional-tools/index.md).
 
 ## Productivity
 
@@ -37,7 +37,7 @@ Being a productive developer includes relying on tooling to analyze application 
 
 ### Diagnostics and instrumentation
 
-As a .NET developer, common performance diagnostic tools exist to monitor, trace, collect, and analyze dump files. You can collect performance metrics with EventCounters, and use profiling tools to gain insights into how apps perform. For more information, see [.NET diagnostics tools](../core/diagnostics/index.md).
+As a .NET developer, common performance diagnostic tools exist to monitor app performance, profile app with tracing, collect performance metrics, and analyze dump files. You collect performance metrics with EventCounters, and use profiling tools to gain insights into how apps perform. For more information, see [.NET diagnostics tools](../core/diagnostics/index.md).
 
 ### Code analysis
 

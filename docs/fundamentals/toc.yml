@@ -148,13 +148,14 @@ items:
   - name: What's new in .NET Standard
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Tools and productivity
-  displayName: diagnostics,tools,tooling,productivity,instrumentation
   items:
   - name: Overview
+    displayName: diagnostics,tools,tooling,productivity,instrumentation
     href: tools-and-productivity.md
   - name: .NET Core SDK
     items:
     - name: Overview
+      displayName: '.net sdk,software development kit,software dev kit,tool'
       href: ../core/sdk.md
     - name: Error messages
       items:
@@ -169,6 +170,7 @@ items:
   - name: .NET Core CLI
     items:
     - name: Overview
+      displayName: '.net cli,command-line interface,cli,tool'
       href: ../core/tools/index.md
     - name: Reference
       items:
@@ -261,20 +263,22 @@ items:
     - name: Global and local tools
       items:
       - name: Manage tools
+        displayName: global tool,local tool
         href: ../core/tools/global-tools.md
       - name: Troubleshoot tools
+        displayName: global tool troubleshooting,local tool troubleshooting,
         href: ../core/tools/troubleshoot-usage-issues.md
       - name: Create tools for the CLI
         items:
         - name: 1 - Create a tool
-          displayName: tools, tutorials, cli
+          displayName: tools,tutorials,cli,create global tool,start global tool,new global tool
           href: ../core/tools/global-tools-how-to-create.md
         - name: 2 - Use a global tool
-          displayName: tools, tutorials, cli
+          displayName: tools,tutorials,cli,understand global tool
           href: ../core/tools/global-tools-how-to-use.md
         - name: 3 - Use a local tool
           href: ../core/tools/local-tools-how-to-use.md
-          displayName: tools, tutorials, cli
+          displayName: tools,tutorials,cli,local tool
     - name: global.json overview
       href: ../core/tools/global-json.md
     - name: Telemetry
@@ -301,15 +305,15 @@ items:
         href: ../core/tutorials/cli-templates-create-template-pack.md
         displayName: tutorials, cli
   - name: Integrated Development Environment (IDE)
-    displayName: IDE,integrated development environment,vs,code,vs code,visual studio
     items:
     - name: Visual Studio
+      displayName: ide,integrated development environment,vs
       href: https://visualstudio.microsoft.com/vs
     - name: Visual Studio for Mac
-      displayName: macOS,Mac
+      displayName: ide,integrated development environment,vs for mac,macOS,Mac
       href: https://visualstudio.microsoft.com/vs/mac
     - name: Visual Studio Code
-      displayName: code,vs code
+      displayName: ide,integrated development environment,code,vs code,oss ide,
       href: https://code.visualstudio.com
   - name: MSBuild and project files
     items:

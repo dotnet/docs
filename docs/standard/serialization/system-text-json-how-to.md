@@ -792,21 +792,18 @@ TemperatureC: 40
 Summary: Hot
 ```
 
+When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers are allowed because ASP.NET Core specifies [web default options](xref:System.Text.Json.JsonSerializerDefaults.Web).
+
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
 <xref:System.Text.Json> 3.1 doesn' support serializing or deserializing numbers in quotes.
 ::: zone-end
 
-## Create JsonSerializerOptions instances
+## Copy a JsonSerializerOptions instance
 
 ::: zone pivot="dotnet-5-0"
-The <xref:System.Text.Json.JsonSerializerOptions> class provides constructors that let you create a new `JsonSerializerOptions` instance with:
-
-* The same options as an existing instance.
-* The default options that are used for web apps in ASP.NET Core 5.0 and later versions.
-
-The following example copies an options instance.
+There is a <xref:System.Text.Json.JsonSerializerOptions> constructor that lets you create a new instance with the same options as an existing instance, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs":::
 
@@ -821,7 +818,16 @@ Output JSON:
 }
 ```
 
-The following example creates an options instance with web defaults.
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+A constructor that takes an existing instance is not available in `System.Text.Json` 3.1.
+::: zone-end
+
+## Web defaults for JsonSerializerOptions
+
+::: zone pivot="dotnet-5-0"
+There is a <xref:System.Text.Json.JsonSerializerOptions> constructor that creates a new instance with [the default options that are used for web apps](xref:System.Text.Json.JsonSerializerDefaults.Web), as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs":::
 
@@ -845,14 +851,14 @@ Summary: Hot
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-Constructors that take an existing instance or specify web defaults are not supported in `System.Text.Json` 3.1.
+A constructors that specifies web defaults is not available in `System.Text.Json` 3.1.
 ::: zone-end
 
 ## HttpClient extension methods
 
 ::: zone pivot="dotnet-5-0"
 
-Serializing and deserializing JSON payloads from the network are common operations. Extension methods on <xref:System.Net.Http.HttpClient> let you do these operations in a single line of code.
+Serializing and deserializing JSON payloads from the network are common operations. Extension methods on <xref:System.Net.Http.HttpClient> let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](xref:System.Text.Json.JsonSerializerDefaults.Web).
 
 The following example illustrates use of the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A>:
 

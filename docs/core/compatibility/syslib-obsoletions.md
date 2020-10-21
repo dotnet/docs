@@ -11,7 +11,7 @@ Starting in .NET 5.0, some APIs that are newly marked as obsolete make use of tw
 
 - The <xref:System.ObsoleteAttribute.UrlFormat?displayProperty=nameWithType> property tells the compiler to include a URL link to learn more about the obsoletion.
 
-If you encounter build warnings or errors due to usage of the obsolete APIs, follow the specific guidance provided for diagnostic ID listed in the [Reference](#reference) section. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `SYSLIBxxxx` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
+If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `SYSLIBxxxx` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
 
 ## Reference
 

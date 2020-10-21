@@ -72,7 +72,7 @@ Derivative artifacts are provided to enable more convenient reading and to enabl
 
 The primary distribution vehicle for the .NET Standard reference assemblies is NuGet packages. Implementations are delivered in a variety of ways, appropriate for each .NET implementation.
 
-NuGet packages target one or more [frameworks](frameworks.md). The .NET Standard packages target the ".NET Standard" framework. You can target the .NET Standard framework using the `netstandard` [compact TFM](frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple implementations of .NET should target this framework. For the broadest set of APIs, target `netstandard2.0` since the number of available APIs more than doubled between .NET Standard 1.6 and 2.0.
+NuGet packages target one or more [frameworks](frameworks.md). .NET Standard packages target the ".NET Standard" framework. You can target the .NET Standard framework using the `netstandard` [compact TFM](frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple implementations of .NET should target this framework. For the broadest set of APIs, target `netstandard2.0` since the number of available APIs more than doubled between .NET Standard 1.6 and 2.0.
 
 The [`NETStandard.Library`](https://www.nuget.org/packages/NETStandard.Library/) metapackage references the complete set of NuGet packages that define .NET Standard.  The most common way to target `netstandard` is by referencing this metapackage. It describes and provides access to the ~40 .NET libraries and associated APIs that define .NET Standard. You can reference additional packages that target `netstandard` to get access to additional APIs.
 
@@ -126,7 +126,7 @@ Here are some guidelines for new code for .NET 5:
 
   If you're building reusable libraries that you plan to ship on NuGet, consider the trade-off between reach and available feature set. .NET Standard 2.0 is the latest version that is supported by .NET Framework, so it gives good reach with a fairly large feature set. We don't recommend targeting .NET Standard 1.x, as you'd limit the available feature set for a minimal increase in reach.
 
-  If you don’t need to support .NET Framework, you could go with .NET Standard 2.1 or .NET 5. We recommend you skip .NET Standard 2.1 and go straight to .NET 5. Most widely used libraries will end up multi-targeting for both .NET Standard 2.0 and .NET 5. Supporting .NET Standard 2.0 gives you the most reach, while supporting .NET 5 ensures you can leverage the latest platform features for customers that are already on .NET 5.
+  If you don't need to support .NET Framework, you could go with .NET Standard 2.1 or .NET 5. We recommend you skip .NET Standard 2.1 and go straight to .NET 5. Most widely used libraries will end up multi-targeting for both .NET Standard 2.0 and .NET 5. Supporting .NET Standard 2.0 gives you the most reach, while supporting .NET 5 ensures you can leverage the latest platform features for customers that are already on .NET 5.
 
 ### .NET Standard problems
 
@@ -146,7 +146,7 @@ Here are some problems with .NET Standard that help explain why .NET 5 is the be
 
 - Platform-unsupported exceptions at run time
 
-  .NET Standard exposes platform-specific APIs. Your code might compile without errors and appear to be portable to any platform even if it isn't portable. When it runs on a platform that doesn’t have an implementation for a given API, you get run-time errors.
+  .NET Standard exposes platform-specific APIs. Your code might compile without errors and appear to be portable to any platform even if it isn't portable. When it runs on a platform that doesn't have an implementation for a given API, you get run-time errors.
 
   **Solution in .NET 5:** The .NET 5 SDK includes code analyzers that are enabled by default. The platform compatibility analyzer detects unintentional use of APIs that aren't supported on the platforms you intend to run on. For more information, see [Platform compatibility analyzer](analyzers/platform-compat-analyzer.md).
 

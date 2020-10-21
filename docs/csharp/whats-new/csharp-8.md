@@ -265,7 +265,6 @@ A **using declaration** is a variable declaration preceded by the `using` keywor
 static int WriteLinesToFile(IEnumerable<string> lines)
 {
     using var file = new System.IO.StreamWriter("WriteLines2.txt");
-    // Notice how we declare skippedLines after the using statement.
     int skippedLines = 0;
     foreach (string line in lines)
     {
@@ -289,11 +288,9 @@ In the preceding example, the file is disposed when the closing brace for the me
 ```csharp
 static int WriteLinesToFile(IEnumerable<string> lines)
 {
-    // We must declare the variable outside of the using block
-    // so that it is in scope to be returned.
-    int skippedLines = 0;
     using (var file = new System.IO.StreamWriter("WriteLines2.txt"))
     {
+        int skippedLines = 0;
         foreach (string line in lines)
         {
             if (!line.Contains("Second"))

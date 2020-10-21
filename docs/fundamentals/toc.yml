@@ -260,25 +260,6 @@ items:
           href: ../core/tools/dotnet-list-package.md
         - name: dotnet remove package
           href: ../core/tools/dotnet-remove-package.md
-    - name: Global and local tools
-      items:
-      - name: Manage tools
-        displayName: global tool,local tool
-        href: ../core/tools/global-tools.md
-      - name: Troubleshoot tools
-        displayName: global tool troubleshooting,local tool troubleshooting,
-        href: ../core/tools/troubleshoot-usage-issues.md
-      - name: Create tools for the CLI
-        items:
-        - name: 1 - Create a tool
-          displayName: tools,tutorials,cli,create global tool,create local tool
-          href: ../core/tools/global-tools-how-to-create.md
-        - name: 2 - Use a global tool
-          displayName: tools,tutorials,cli,understand global tool
-          href: ../core/tools/global-tools-how-to-use.md
-        - name: 3 - Use a local tool
-          href: ../core/tools/local-tools-how-to-use.md
-          displayName: tools,tutorials,cli,local tool
     - name: global.json overview
       href: ../core/tools/global-json.md
     - name: Telemetry
@@ -335,6 +316,25 @@ items:
       href: ../core/tools/csproj.md
     - name: Dependency management
       href: ../core/tools/dependencies.md
+  - name: Global and local tools
+    items:
+    - name: Manage tools
+      displayName: global tool,local tool
+      href: ../core/tools/global-tools.md
+    - name: Troubleshoot tools
+      displayName: global tool troubleshooting,local tool troubleshooting,
+      href: ../core/tools/troubleshoot-usage-issues.md
+    - name: Create tools for the CLI
+      items:
+      - name: 1 - Create a tool
+        displayName: tools,tutorials,cli,create global tool,create local tool
+        href: ../core/tools/global-tools-how-to-create.md
+      - name: 2 - Use a global tool
+        displayName: tools,tutorials,cli,understand global tool
+        href: ../core/tools/global-tools-how-to-use.md
+      - name: 3 - Use a local tool
+        href: ../core/tools/local-tools-how-to-use.md
+        displayName: tools,tutorials,cli,local tool
   - name: Additional tools
     items:
     - name: Overview

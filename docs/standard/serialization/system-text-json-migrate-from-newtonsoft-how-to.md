@@ -52,6 +52,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting](#quoted-numbers) |
 | Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
+| Support for fields                                    | ✔️ [IncludeFields global setting](#public-and-non-public-fields) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize `Dictionary` with non-string key          | ⚠️ [Not supported, workaround, sample](#dictionary-with-non-string-key) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
@@ -66,7 +67,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `DefaultContractResolver` to exclude properties       | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property) |
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
 | Callbacks                                             | ⚠️ [Not supported, workaround, sample](#callbacks) |
-| Support for public and non-public fields              | ⚠️ [Not supported, workaround](#public-and-non-public-fields) |
 | Support for internal and private property setters and getters | ⚠️ [Not supported, workaround](#internal-and-private-property-setters-and-getters) |
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
@@ -475,7 +475,15 @@ For more information about custom converters that recursively call `Serialize` o
 
 ### Public and non-public fields
 
-`Newtonsoft.Json` can serialize and deserialize fields as well as properties. <xref:System.Text.Json> only works with public properties. Custom converters can provide this functionality.
+`Newtonsoft.Json` can serialize and deserialize fields as well as properties.
+
+::: zone pivot="dotnet-5-0"
+In <xref:System.Text.Json>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include fields when serializing or deserializing. For an example, see [Fields](system-text-json-how-to.md#fields).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+<xref:System.Text.Json> 3.1 only works with public properties. Custom converters can provide this functionality.
+::: zone-end
 
 ### Internal and private property setters and getters
 

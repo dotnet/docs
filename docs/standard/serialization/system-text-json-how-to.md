@@ -115,7 +115,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
 * By default, circular references are detected and exceptions thrown. You can preserve [references and handle circular references](#preserve-references-and-handle-circular-references).
-* Currently, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded.
+* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded. You can [include fields](#include-fields).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -124,7 +124,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
 * Circular references are detected and exceptions thrown.
-* Currently, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded.
+* [Fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded.
 ::: zone-end
 
 Supported types include:
@@ -168,16 +168,28 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 The following behaviors apply when deserializing JSON:
 
+::: zone pivot="dotnet-5-0"
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
-* Constructors for deserialization:
-  - On .NET Core 3.0 and 3.1, a parameterless constructor, which can be public, internal, or private, is used for deserialization.
-  - In .NET 5.0 and later, non-public constructors are ignored by the serializer. However, parameterized constructors can be used if a parameterless constructor isn't available.
+* Non-public constructors are ignored by the serializer. However, parameterized constructors can be used if a parameterless constructor isn't available.
+* Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](#immutable-types-and-records).
+* By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
+* Fields are supported. See [Fields](#fields).
+* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
+* The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
+* By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching). ASP.NET Core apps [specify case-insensitivity by default](#web-defaults-for-jsonserializeroptions).
+* If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
+* A parameterless constructor, which can be public, internal, or private, is used for deserialization.
 * Deserialization to immutable objects or read-only properties isn't supported.
 * By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
 * Fields aren't supported.
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
+::: zone-end
 
 You can [implement custom converters](system-text-json-converters-how-to.md) to provide functionality that isn't supported by the built-in converters.
 
@@ -198,6 +210,18 @@ Here's an example type to be serialized and pretty-printed JSON output:
   "Summary": "Hot"
 }
 ```
+
+## Fields
+
+::: zone pivot="dotnet-5-0"
+Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include fields when serializing or deserializing, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs":::
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Fields are not supported in `System.Text.Json` 3.1.
+::: zone-end
 
 ## Customize JSON names and values
 

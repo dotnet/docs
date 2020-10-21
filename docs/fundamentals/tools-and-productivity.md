@@ -21,7 +21,7 @@ The .NET CLI is a cross-platform toolchain for developing, building, running, an
 
 ## IDEs
 
-The .NET SDK powers language services that expose .NET developer functionality in [Visual Studio Code](https://code.visualstudio.com/docs). As part of the [Visual Studio](/visualstudio/windows/) family, [Visual Studio for Mac](/visualstudio/mac/) enables macOS developers to write .NET applications.
+You can write .NET applications in [Visual Studio Code](https://code.visualstudio.com/docs), [Visual Studio](/visualstudio/windows), or [Visual Studio for Mac](/visualstudio/mac). For information on cloud-powered development environments, see [Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline).
 
 ## Additional tools
 

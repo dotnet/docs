@@ -7,7 +7,7 @@ ms.date: 10/21/2020
 ms.topic: overview
 ---
 
-# Tools and productivity in .NET
+# Tools and diagnostics in .NET
 
 In this article, you'll learn about the various tools available to .NET developers. With .NET, you have a robust software development kit (SDK) that includes a command-line interface (CLI). The .NET CLI enables many of the features throughout the .NET-ready integrated development environments (IDEs). This article also provides resources to productivity capabilities, such as .NET CLI tools for diagnosing performance issues, memory leaks, high CPU, deadlocks, and tooling support for code analysis.
 

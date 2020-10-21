@@ -140,7 +140,7 @@ Type `dynamic` behaves like type `object` in most circumstances. In particular, 
 
 The following example contrasts a variable of type `dynamic` to a variable of type `object`. To verify the type of each variable at compile time, place the mouse pointer over `dyn` or `obj` in the `WriteLine` statements. Copy the following code into an editor where IntelliSense is available. IntelliSense shows **dynamic** for `dyn` and **object** for `obj`.
 
-[!code-csharp[csrefKeywordsTypes#21](~/samples/snippets/shared/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/dynamic1.cs#21)]
+[!code-csharp[csrefKeywordsTypes#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/dynamic1.cs#21)]
 
 The <xref:System.Console.WriteLine%2A> statements display the run-time types of `dyn` and `obj`. At that point, both have the same type, integer. The following output is produced:
 
@@ -160,7 +160,7 @@ obj = obj + 3;
 
 The following example uses `dynamic` in several declarations. The `Main` method also contrasts compile-time type checking with run-time type checking.
 
-[!code-csharp[csrefKeywordsTypes#25](~/samples/snippets/shared/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/dynamic2.cs#25)]
+[!code-csharp[csrefKeywordsTypes#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/dynamic2.cs#25)]
 
 ### See also
 

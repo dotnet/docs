@@ -79,3 +79,7 @@ This tutorial assumes you've finished the online introductory tutorials, and you
 This tutorial teaches the concepts used in object-oriented programming. You'll learn the concepts of *abstraction*, *encapsulation*, *inheritance*, and *polymorphism* using C# examples.
 
 This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://dotnet.microsoft.com/download) and either [Visual Studio Code](https://code.visualstudio.com/) or [Visual Studio](https://visualstudio.com) on your development machine.
+
+## [101 Linq Samples](https://github.com/dotnet/try-samples/tree/master/101-linq-samples)
+
+This sample requires the [dotnet-try](https://github.com/dotnet/try/blob/main/README.md#setup) global tool. Once you install the tool, and clone the [try-samples](https://github.com/dotnet/try-samples) repo, you can learn Language Integrated Query (LINQ) through a set of 101 samples you can run interactively. You can explore different ways to query, explore, and transform data sequences.

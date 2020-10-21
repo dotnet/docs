@@ -1867,8 +1867,8 @@ items:
         href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
       - name: XML Schema Definition tool (Xsd.exe)
         href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
-- name: Unit testing
-  displayName: xUnit,NUnit,MSTest,unit testing,testing
+- name: Testing
+  displayName: xUnit,NUnit,MSTest,unit test,test,integration test,load test,smoke test, web test
   items:
   - name: Overview
     href: ../core/testing/index.md
@@ -2162,5 +2162,5 @@ items:
       href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
     - name: Port C++/CLI projects
       href: ../core/porting/cpp-cli.md
-  - name: Choose between .NET Core and .NET Framework for server apps
+  - name: Choose between .NET 5 and .NET Framework for server apps
     href: ../standard/choosing-core-framework-server.md

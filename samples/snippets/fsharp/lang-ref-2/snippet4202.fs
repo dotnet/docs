@@ -6,7 +6,7 @@ let replicate n c = String.replicate n (string c)
 let function1 = replicate
 
 // A delegate object constructed from an F# function value
-let delObject = new Delegate1(function1)
+let delObject = Delegate1(function1)
 
 // An F# function value constructed from an unapplied .NET member
 let functionValue = delObject.Invoke

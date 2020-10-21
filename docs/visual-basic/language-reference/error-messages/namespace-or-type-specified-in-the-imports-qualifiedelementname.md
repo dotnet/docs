@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: b59f5754-444f-4378-9272-9678b437e84a
 ---
 
-# Namespace or type specified in the Imports '\<qualifiedelementname>' doesn't contain any public member or cannot be found
+# BC40056: Namespace or type specified in the Imports '\<qualifiedelementname>' doesn't contain any public member or cannot be found
 
 Namespace or type specified in the Imports '\<qualifiedelementname>' doesn't contain any public member or cannot be found. Make sure the namespace or the type is defined and contains at least one public member. Make sure the alias name doesn't contain other aliases.
 

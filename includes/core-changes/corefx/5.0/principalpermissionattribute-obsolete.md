@@ -26,7 +26,7 @@ This difference in behavior from .NET Framework to .NET Core and .NET 5.0 can re
 
 5.0 Preview 7
 
-#### Recommended action
+#### <a id="permission-action">Recommended action</a>
 
 If you encounter the obsoletion error, you must take action.
 

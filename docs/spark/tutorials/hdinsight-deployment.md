@@ -96,11 +96,11 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
    foo@bar:~/path/to/app$ dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
    ```
 
-2. Do the following tasks to zip your published app files so that you can easily upload them to your HDInsight cluster.
+2. Do the following tasks to zip your published app files so that you can easily upload them to your HDInsight cluster. Zip the contents of the publish folder, *publish.zip* for example, that was created as a result of Step 1. All the assemblies should be in the first layer of the ZIP file and there should be no intermediate folder layer. This means when you unzip *publish.zip*, all assemblies are extracted into your current working directory.
 
    **On Windows:**
 
-   Navigate to *mySparkApp/bin/Release/netcoreapp3.0/ubuntu.16.04-x64*. Then, right-click on **Publish** folder and select **Send to > Compressed (zipped) folder**. Name the new folder **publish.zip**.
+   Use an extraction program, like 7-Zip or WinZip, to extract the file into the bin directory with all the published binaries.
 
    **On Linux, run the following command:**
 

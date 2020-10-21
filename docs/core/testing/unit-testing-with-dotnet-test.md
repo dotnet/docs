@@ -140,7 +140,7 @@ namespace Prime.UnitTests.Services
         public void IsPrime_InputIs1_ReturnFalse()
         {
             var primeService = new PrimeService();
-            var result = primeService.IsPrime(1);
+            bool result = primeService.IsPrime(1);
 
             Assert.False(result, "1 should not be prime");
         }
@@ -171,7 +171,7 @@ Add prime number tests for 0 and -1. You could copy the preceding test and chang
 
 ```csharp
 var primeService = new PrimeService();
-var result = primeService.IsPrime(1);
+bool result = primeService.IsPrime(1);
 
 Assert.False(result, "1 should not be prime");
 ```
@@ -188,7 +188,7 @@ Rather than creating new tests, apply the preceding xUnit attributes to create a
 public void IsPrime_InputIs1_ReturnFalse()
 {
     var primeService = new PrimeService();
-    var result = primeService.IsPrime(1);
+    bool result = primeService.IsPrime(1);
 
     Assert.False(result, "1 should not be prime");
 }

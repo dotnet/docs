@@ -12,7 +12,7 @@ Starting in .NET 5.0, quoted numbers in JSON payloads are considered valid, by d
 >
 > - There is no behavior change for the default, standalone <xref:System.Text.Json.JsonSerializer> or <xref:System.Text.Json.JsonSerializerOptions>.
 > - This is technically not a breaking change, since it makes a scenario more permissive instead of more restrictive (that is, it succeeds in coercing a number from a JSON string instead of throwing an exception). However, since this is a significant behavioral change that affects many ASP.NET Core apps, it is documented here.
-> - The <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> and <xref:System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsync%2A> extension methods also use the <xref:System.Text.Json.JsonSerializerDefaults.Web> set of serialization options.
+> - The <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsync%2A?displayProperty=nameWithType> extension methods also use the <xref:System.Text.Json.JsonSerializerDefaults.Web> set of serialization options.
 
 #### Version introduced
 

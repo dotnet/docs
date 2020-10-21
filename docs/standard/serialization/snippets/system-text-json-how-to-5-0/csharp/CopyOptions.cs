@@ -1,8 +1,5 @@
-﻿
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace CopyOptions
 {
@@ -35,3 +32,12 @@ namespace CopyOptions
         }
     }
 }
+
+// Produces output like the following example:
+//
+//Output JSON:
+//{
+//  "Date": "2020-10-21T15:40:06.8998502-07:00",
+//  "TemperatureC": 40,
+//  "Summary": "Hot"
+//}

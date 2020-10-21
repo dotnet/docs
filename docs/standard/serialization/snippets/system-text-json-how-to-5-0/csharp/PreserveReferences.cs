@@ -46,3 +46,27 @@ namespace PreserveReferences
         }
     }
 }
+
+// Produces output like the following example:
+//
+//Tyler serialized:
+//{
+//    "$id": "1",
+//  "Name": "Tyler Stein",
+//  "Manager": null,
+//  "DirectReports": {
+//        "$id": "2",
+//    "$values": [
+//      {
+//            "$id": "3",
+//        "Name": "Adrian King",
+//        "Manager": {
+//                "$ref": "1"
+//        },
+//        "DirectReports": null
+//      }
+//    ]
+//  }
+//}
+//Tyler is the manager of Tyler's first direct report:
+//True

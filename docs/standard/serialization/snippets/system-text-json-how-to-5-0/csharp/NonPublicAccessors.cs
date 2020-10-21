@@ -1,6 +1,5 @@
 ﻿
 using System;
-using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -14,7 +13,6 @@ namespace NonPublicAccessors
         [JsonInclude]
         public string Summary { private get; set; }
 
-
         public Forecast()
         {
         }
@@ -25,7 +23,6 @@ namespace NonPublicAccessors
             TemperatureC = temperatureC;
             Summary = summary;
         }
-
     };
 
     public class Program
@@ -48,3 +45,14 @@ namespace NonPublicAccessors
         }
     }
 }
+
+// Produces output like the following example:
+//
+//Output JSON:
+//{
+//  "Date": "2020-10-21T15:40:06.8956296-07:00",
+//  "TemperatureC": 40,
+//  "Summary": "Hot"
+//}
+//Date: 10 / 21 / 2020 3:40:06 PM
+//TemperatureC: 40

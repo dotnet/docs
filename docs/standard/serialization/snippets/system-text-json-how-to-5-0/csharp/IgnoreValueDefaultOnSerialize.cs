@@ -1,6 +1,5 @@
 ﻿#nullable enable
 using System;
-using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -35,3 +34,7 @@ namespace IgnoreValueDefaultOnSerialize
         }
     }
 }
+
+// Produces output like the following example:
+//
+//{ "Date":"2020-10-21T15:40:06.8920138-07:00"}

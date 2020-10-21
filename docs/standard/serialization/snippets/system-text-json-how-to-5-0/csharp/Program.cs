@@ -12,7 +12,6 @@ namespace SystemTextJsonHowTo
             Console.WriteLine();
 
             Console.WriteLine("======== Immutable types =========");
-            Console.WriteLine("======== JsonConstructor for structs =========");
             ImmutableTypes.Program.Main();
             Console.WriteLine();
 
@@ -33,7 +32,6 @@ namespace SystemTextJsonHowTo
             Console.WriteLine();
 
             Console.WriteLine("======== Custom converter handle null =========");
-            Console.WriteLine("======== JsonConstructor for parameterized constructor =========");
             CustomConverterHandleNull.Program.Main();
             Console.WriteLine();
 

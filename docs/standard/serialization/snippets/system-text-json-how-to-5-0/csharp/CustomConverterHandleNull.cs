@@ -73,3 +73,22 @@ namespace CustomConverterHandleNull
         }
     }
 }
+
+// Produces output like the following example:
+//
+//Output JSON:
+//{
+//    "x": 1,
+//  "y": 2,
+//  "description": null,
+//  "additionalValues": {
+//        "3": 4,
+//    "5": 6
+//  }
+//}
+//X: 1
+//Y: 2
+//Additional values count: 2
+//AdditionalValues[3]: 4
+//AdditionalValues[5]: 6
+//Description: No description provided.

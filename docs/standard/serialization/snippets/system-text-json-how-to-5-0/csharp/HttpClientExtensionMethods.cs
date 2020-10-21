@@ -35,3 +35,11 @@ namespace HttpClientExtensionMethods
         }
     }
 }
+
+// Produces output like the following example but with different names:
+//
+//Id: 1
+//Name: Tyler King
+//Username: Tyler
+//Email: Tyler @contoso.com
+//Success - Created

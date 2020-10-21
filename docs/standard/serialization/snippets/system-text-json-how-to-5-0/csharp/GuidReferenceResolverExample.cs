@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Diagnostics;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -76,3 +75,24 @@ namespace GuidReferenceResolverExample
         }
     }
 }
+
+// Produces output like the following example:
+//
+//Output JSON[
+//  {
+//    "$id": "79301726-9d94-499a-8cdc-0c8bcc4c9b63",
+//    "Name": "Tyler",
+//    "Spouse": {
+//      "$id": "94833059-35f2-4fdd-96ee-94fd0484969a",
+//      "Name": "Adrian",
+//      "Spouse": {
+//        "$ref": "79301726-9d94-499a-8cdc-0c8bcc4c9b63"
+//      }
+//  }
+//  },
+//  {
+//    "$ref": "94833059-35f2-4fdd-96ee-94fd0484969a"
+//  }
+//]
+//Adrian is Tyler's spouse: True
+//Tyler is Adrian's spouse: True

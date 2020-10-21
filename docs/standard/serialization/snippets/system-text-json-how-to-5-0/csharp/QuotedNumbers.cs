@@ -1,6 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -45,3 +43,15 @@ namespace QuotedNumbers
         }
     }
 }
+
+// Produces output like the following example:
+//
+//Output JSON:
+//{
+//  "date": "2020-10-21T15:40:06.9109159-07:00",
+//  "temperatureC": "40",
+//  "summary": "Hot"
+//}
+//Date: 10 / 21 / 2020 3:40:06 PM
+//TemperatureC: 40
+//Summary: Hot

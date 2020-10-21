@@ -1,8 +1,5 @@
-﻿
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace OptionsDefaults
 {
@@ -40,7 +37,21 @@ namespace OptionsDefaults
             Console.WriteLine($"Date: {forecastDeserialized.Date}");
             Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");
             Console.WriteLine($"Summary: {forecastDeserialized.Summary}");
-
         }
     }
 }
+
+// Produces output like the following example:
+//
+//options.PropertyNameCaseInsensitive: True
+//options.JsonNamingPolicy: System.Text.Json.JsonCamelCaseNamingPolicy
+//options.NumberHandling: AllowReadingFromString
+//Output JSON:
+//{
+//  "date": "2020-10-21T15:40:06.9040831-07:00",
+//  "temperatureC": 40,
+//  "summary": "Hot"
+//}
+//Date: 10 / 21 / 2020 3:40:06 PM
+//TemperatureC: 40
+//Summary: Hot

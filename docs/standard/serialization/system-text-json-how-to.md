@@ -751,32 +751,6 @@ The following code illustrates use of the `Preserve` setting.
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs":::
 
-The  preceding code produces the following output:
-
-```output
-Tyler serialized:
-{
-  "$id": "1",
-  "Name": "Tyler Stein",
-  "Manager": null,
-  "DirectReports": {
-    "$id": "2",
-    "$values": [
-      {
-        "$id": "3",
-        "Name": "Adrian King",
-        "Manager": {
-          "$ref": "1"
-        },
-        "DirectReports": null
-      }
-    ]
-  }
-}
-Tyler is the manager of Tyler's first direct report:
-True
-```
-
 Other notes about preserving references:
 
 * `MaxDepth` validation is not affected.
@@ -802,20 +776,6 @@ Some serializers encode numbers as JSON strings (surrounded by quotes). For exam
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs":::
 
-The  preceding code produces output similar to the following example:
-
-```output
-Output JSON:
-{
-  "date": "2020-10-19T14:40:27.1342475-07:00",
-  "temperatureC": "40",
-  "summary": "Hot"
-}
-Date: 10/19/2020 2:40:27 PM
-TemperatureC: 40
-Summary: Hot
-```
-
 When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers are allowed because ASP.NET Core specifies [web default options](xref:System.Text.Json.JsonSerializerDefaults.Web).
 
 ::: zone-end
@@ -831,27 +791,9 @@ When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers 
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs":::
 
-The  preceding code produces output similar to the following example:
-
-```output
-Input JSON: {"date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
-forecast.Date: 9/6/2020 11:31:01 AM
-forecast.TemperatureC: -1
-forecast.Summary: Cold
-Output JSON: {"date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
-```
-
 Records in C# 9 are also supported, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Records.cs":::
-
-The  preceding code produces output similar to the following example:
-
-```output
-{"Date":"2020-10-21T13:14:35.2486656-07:00","TemperatureC":40,"Summary":"Hot!"}
-Forecast { Date = 10/21/2020 1:14:35 PM, TemperatureC = 40, Summary = Hot! }
-```
-
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -864,18 +806,6 @@ Forecast { Date = 10/21/2020 1:14:35 PM, TemperatureC = 40, Summary = Hot! }
 There is a <xref:System.Text.Json.JsonSerializerOptions> constructor that lets you create a new instance with the same options as an existing instance, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs":::
-
-The preceding code produces output similar to the following example:
-
-```output
-Output JSON:
-{
-  "Date": "2020-10-20T18:38:33.4153344-07:00",
-  "TemperatureC": 40,
-  "Summary": "Hot"
-}
-```
-
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -888,24 +818,6 @@ A constructor that takes an existing instance is not available in `System.Text.J
 There is a <xref:System.Text.Json.JsonSerializerOptions> constructor that lets you create a new instance with [the default options that ASP.NET Core uses for web apps](xref:System.Text.Json.JsonSerializerDefaults.Web), as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs":::
-
-The preceding code produces output similar to the following example:
-
-```output
-options.PropertyNameCaseInsensitive: True
-options.JsonNamingPolicy: System.Text.Json.JsonCamelCaseNamingPolicy
-options.NumberHandling: AllowReadingFromString
-Output JSON:
-{
-  "date": "2020-10-20T18:38:33.4211057-07:00",
-  "temperatureC": 40,
-  "summary": "Hot"
-}
-Date: 10/20/2020 6:38:33 PM
-TemperatureC: 40
-Summary: Hot
-```
-
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -921,17 +833,6 @@ Serializing and deserializing JSON payloads from the network are common operatio
 The following example illustrates use of the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A>:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs":::
-
-The preceding code produces output similar to the following example but with different names:
-
-```output
-Id: 1
-Name: Tyler King
-Username: Tyler
-Email: Tyler@contoso.com
-Success - Created
-```
-
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

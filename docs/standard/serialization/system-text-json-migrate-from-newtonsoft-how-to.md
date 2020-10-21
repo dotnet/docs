@@ -51,13 +51,13 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting](#quoted-numbers) |
+| Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize `Dictionary` with non-string key          | ⚠️ [Not supported, workaround, sample](#dictionary-with-non-string-key) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
 | Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
-| Deserialize to immutable classes and structs          | ⚠️ [Not supported, workaround, sample](#deserialize-to-immutable-classes-and-structs) |
 | `[JsonConstructor]` attribute                         | ⚠️ [Not supported, workaround, sample](#specify-constructor-to-use) |
 | `Required` setting on `[JsonProperty]` attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
 | `NullValueHandling` setting on `[JsonProperty]` attribute | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
@@ -333,7 +333,14 @@ After deserialization, the `Date` property has 1/1/0001 (`default(DateTimeOffset
 
 ### Deserialize to immutable classes and structs
 
-`Newtonsoft.Json` can deserialize to immutable classes and structs because it can use constructors that have parameters. <xref:System.Text.Json> supports only public parameterless constructors. As a workaround, you can call a constructor with parameters in a custom converter.
+`Newtonsoft.Json` can deserialize to immutable classes and structs because it can use constructors that have parameters.
+
+::: zone pivot="dotnet-5-0"
+In <xref:System.Text.Json>, use the x to specify use of a parameterized constructor. Records in C# 9 are also immutable and are supported as deserialization targets. For more information, see [Immutable types and Records](system-text-json-how-to.md#immutable-types-and-records).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+<xref:System.Text.Json> 3.1 supports only public parameterless constructors. As a workaround, you can call a constructor with parameters in a custom converter.
 
 Here's an immutable struct with multiple constructor parameters:
 
@@ -346,6 +353,7 @@ And here's a converter that serializes and deserializes this struct:
 Register this custom converter by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
 For an example of a similar converter that handles open generic properties, see the [built-in converter for key-value pairs](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/JsonValueConverterKeyValuePair.cs).
+::: zone-end
 
 ### Specify constructor to use
 

@@ -797,7 +797,41 @@ When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers 
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-<xref:System.Text.Json> 3.1 doesn' support serializing or deserializing numbers in quotes.
+<xref:System.Text.Json> 3.1 doesn't support serializing or deserializing numbers in quotes.
+::: zone-end
+
+## Immutable types and Records
+
+::: zone pivot="dotnet-5-0"
+`System.Text.Json` lets you select a parameterized construction to enable deserializing an immutable class or struct. To specify the constructor to use, apply the <xref:System.Text.Json.Serialization.JsonConstructorAttribute.%23ctor%2A>, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs":::
+
+The  preceding code produces output similar to the following example:
+
+```output
+Input JSON: {"date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
+forecast.Date: 9/6/2020 11:31:01 AM
+forecast.TemperatureC: -1
+forecast.Summary: Cold
+Output JSON: {"date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
+```
+
+Records in C# 9 are also supported, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Records.cs":::
+
+The  preceding code produces output similar to the following example:
+
+```output
+{"Date":"2020-10-21T13:14:35.2486656-07:00","TemperatureC":40,"Summary":"Hot!"}
+Forecast { Date = 10/21/2020 1:14:35 PM, TemperatureC = 40, Summary = Hot! }
+```
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+`JsonConstructorAttribute` and Record support aren't available in <xref:System.Text.Json> 3.1.
 ::: zone-end
 
 ## Copy a JsonSerializerOptions instance

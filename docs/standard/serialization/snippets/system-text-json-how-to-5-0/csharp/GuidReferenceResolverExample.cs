@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -54,13 +55,12 @@ namespace GuidReferenceResolverExample
             Person adrian = new() { Id = Guid.NewGuid(), Name = "Adrian" };
             tyler.Spouse = adrian;
             adrian.Spouse = tyler;
-            List<Person> people = new() { tyler, adrian };
+            var people = ImmutableArray.Create(tyler, adrian);
 
             var options = new JsonSerializerOptions
             {
                 WriteIndented = true,
-                ReferenceHandler = ReferenceHandler.Preserve // this works
-                // ReferenceHandler = new ReferenceHandler<GuidReferenceResolver>() // this doesn't work -- System.InvalidCastException: Unable to cast object of type 'System.Collections.Generic.List`1[GuidReferenceResolverExample.Person]' to type 'GuidReferenceResolverExample.Person'.
+                ReferenceHandler = new ReferenceHandler<GuidReferenceResolver>()
             };
 
             string json = JsonSerializer.Serialize(people, options);

@@ -1,7 +1,7 @@
 ---
 title: Get started with .NET Framework
 description: Get started with .NET Framework, which is a runtime execution environment that manages apps. It contains a common language runtime (CLR) and an extensive class library.
-ms.date: "04/02/2019"
+ms.date: 10/21/2020
 helpviewer_keywords:
   - ".NET Framework, getting started"
   - "getting started [.NET Framework]"

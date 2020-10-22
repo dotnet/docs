@@ -1,7 +1,7 @@
 ---
 title: .NET Framework installation guide
 description: Learn how to install the .NET Framework on Windows.
-ms.date: 08/03/2017
+ms.date: 10/21/2020
 ---
 # Installation guide
 

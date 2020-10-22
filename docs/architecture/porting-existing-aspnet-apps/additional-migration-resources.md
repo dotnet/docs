@@ -32,13 +32,18 @@ Because .NET Core is an open source project, many issues are discovered, reporte
   - [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)
   - [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
 
+If you run into problems with your migration, these GitHub repositories are a good place to report them. The product teams watch the issues and typically respond quickly to bug reports (though "how to" questions may be more appropriately directed to Stack Overflow).
+
 ## Stack Overflow
 
-Stack Overflow has a wealth of information in the form of previous questions asked and answers given, with the most helpful answers listed first and marked if they solved the problem. In addition to searching for an existing solution to a problem you may encounter, you can of course also ask a question yourself and hope for some response from the .NET community. Don't forget you can narrow down a search by using tags, and remember to use appropriate tags when you ask questions to maximize the chances of someone with the experienced needed noticing your question.
+[Stack Overflow](https://stackoverflow.com/) has a wealth of information in the form of previous questions asked and answers given, with the most helpful answers listed first and marked if they solved the problem. In addition to searching for an existing solution to a problem you may encounter, you can of course also ask a question yourself and hope for some response from the .NET community. Don't forget you can narrow down a search by using tags, and remember to use appropriate tags when you ask questions to maximize the chances of someone with the experience needed noticing your question.
 
 ## YouTube channels
 
-YouTube has a huge amount of .NET and .NET Core video content, which may include useful tutorials or walkthroughs covering any scenario you may encounter. Consider searching it separately if your other efforts to find help online come up short.
+YouTube has a huge amount of .NET and .NET Core video content, which may include useful tutorials or walkthroughs covering any scenario you may encounter. Consider searching it separately if your other efforts to find help online come up short. Here are a few good places to get started:
+
+- [dotnet](https://www.youtube.com/dotnet)
+- [Visual Studio](https://www.youtube.com/visualstudio)
 
 ## Twitter, Gitter, Slack, and other community channels
 

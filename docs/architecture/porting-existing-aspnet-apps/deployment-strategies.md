@@ -29,6 +29,10 @@ TODO: Add figure showing migration to container-hosted app or apps.
 
 Migrating large .NET apps to .NET Core often requires a substantial effort. Most organizations will want to be able to break this effort up in some fashion, so that pieces of the app can be migrated and deployed in production before the entire migration is complete. Running both the original ASP.NET application and its newly-migrated ASP.NET Core sub-app(s) side by side is a frequently cited goal. This can be achieved through a number of mechanisms including leveraging IIS routing, which is covered in [chapter 5](deployment-scenarios.md). Other options include leveraging application gateways or cloud design patterns like [backends for frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) to manage sets of ASP.NET Web APIs and ASP.NET Core API endpoints.
 
+## IIS on Windows
+
+You can continue hosting your apps on IIS running on Windows. This is a fine option for customers who want to take advantage of ASP.NET Core features without changing their current deployment model. While moving to ASP.NET Core provides more options in terms of how and where to deploy your apps, it doesn't require that you change from the status quo of using the proven combination of IIS on Windows.
+
 ## References
 
 - [Host and deploy ASP.NET Core](https://docs.microsoft.com/aspnet/core/host-and-deploy/)

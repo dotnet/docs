@@ -13,7 +13,7 @@ ms.date: 11/13/2020
 
 - Is migration to .NET Core appropriate?
 - When does it make sense to remain on .NET Framework?
-- Should apps target .NET Core 2.1 as a stepping stone?
+- Should apps target ASP.NET Core 2.1 as a stepping stone?
 - How should teams choose the right .NET Core version to target?
 - What strategies are recommended for incremental migration of large apps?
 - What deployment strategies should be considered when porting to .NET Core?

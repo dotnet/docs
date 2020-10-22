@@ -1,20 +1,20 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Logging;
 
 namespace Console.ExampleFormatters.Systemd
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            using var loggerFactory = LoggerFactory.Create(builder =>
-            {
-                builder.AddSystemdConsole(o => {
-                    o.IncludeScopes = true;
-                    o.TimestampFormat = "hh:mm:ss ";
-                });
-            });
+            using ILoggerFactory loggerFactory =
+                LoggerFactory.Create(builder =>
+                    builder.AddSystemdConsole(options =>
+                    {
+                        options.IncludeScopes = true;
+                        options.TimestampFormat = "hh:mm:ss ";
+                    }));
 
-            var logger = loggerFactory.CreateLogger<Program>();
+            ILogger<Program> logger = loggerFactory.CreateLogger<Program>();
             using (logger.BeginScope("[scope is enabled]"))
             {
                 logger.LogInformation("Hello World!");

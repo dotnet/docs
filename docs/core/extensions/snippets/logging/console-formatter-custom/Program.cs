@@ -1,20 +1,17 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Logging;
 
 namespace Console.ExampleFormatters.Custom
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            using var loggerFactory = LoggerFactory.Create(builder =>
-            {
-                builder.AddCustomFormatter(options =>
-                {
-                    options.CustomPrefix = " ~~~~~ ";
-                });
-            });
+            using ILoggerFactory loggerFactory =
+                LoggerFactory.Create(builder =>
+                    builder.AddCustomFormatter(options =>
+                        options.CustomPrefix = " ~~~~~ "));
 
-            var logger = loggerFactory.CreateLogger<Program>();
+            ILogger<Program> logger = loggerFactory.CreateLogger<Program>();
             using (logger.BeginScope("TODO: Add logic to enable scopes"))
             {
                 logger.LogInformation("Hello World!");

@@ -7,19 +7,23 @@ using System.IO;
 
 namespace Console.ExampleFormatters.Custom
 {
-    public class CustomColorFormatter : ConsoleFormatter, IDisposable
+    public sealed class CustomColorFormatter : ConsoleFormatter, IDisposable
     {
         private readonly IDisposable _optionsReloadToken;
         private CustomColorOptions _formatterOptions;
 
-        public CustomColorFormatter(IOptionsMonitor<CustomOptions> options)
-            : base("customName") // case insensitive
-        {
-            _optionsReloadToken = options.OnChange(ReloadLoggerOptions);
-            _formatterOptions = options.CurrentValue;
-        }
+        private bool ConsoleColorFormattingEnabled =>
+            _formatterOptions.ColorBehavior == LoggerColorBehavior.Enabled ||
+            _formatterOptions.ColorBehavior == LoggerColorBehavior.Default &&
+            System.Console.IsOutputRedirected == false;
 
-        private void ReloadLoggerOptions(CustomOptions options) =>
+        public CustomColorFormatter(IOptionsMonitor<CustomColorOptions> options)
+            // Case insensitive
+            : base("customName") =>
+            (_optionsReloadToken, _formatterOptions) =
+                (options.OnChange(ReloadLoggerOptions), options.CurrentValue);
+
+        private void ReloadLoggerOptions(CustomColorOptions options) =>
             _formatterOptions = options;
 
         public override void Write<TState>(
@@ -47,7 +51,17 @@ namespace Console.ExampleFormatters.Custom
 
         private void CustomLogicGoesHere(TextWriter textWriter)
         {
-            textWriter.Write(_formatterOptions.CustomPrefix);
+            if (ConsoleColorFormattingEnabled)
+            {
+                textWriter.WriteWithColor(
+                    _formatterOptions.CustomPrefix,
+                    ConsoleColor.Black,
+                    ConsoleColor.Green);
+            }
+            else
+            {
+                textWriter.Write(_formatterOptions.CustomPrefix);
+            }
         }
 
         public void Dispose() => _optionsReloadToken?.Dispose();

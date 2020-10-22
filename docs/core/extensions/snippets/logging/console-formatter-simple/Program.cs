@@ -1,22 +1,21 @@
-﻿using Microsoft.Extensions.Logging.Console;
+﻿using Microsoft.Extensions.Logging;
 
 namespace Console.ExampleFormatters.Simple
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            using var loggerFactory = LoggerFactory.Create(builder =>
-            {
-                builder.AddSimpleConsole(o =>
-                {
-                    o.IncludeScopes = true;
-                    o.SingleLine = true;
-                    o.TimestampFormat = "hh:mm:ss ";
-                });
-            });
+            using ILoggerFactory loggerFactory =
+                LoggerFactory.Create(builder =>
+                    builder.AddSimpleConsole(options =>
+                    {
+                        options.IncludeScopes = true;
+                        options.SingleLine = true;
+                        options.TimestampFormat = "hh:mm:ss ";
+                    }));
 
-            var logger = loggerFactory.CreateLogger<Program>();
+            ILogger<Program> logger = loggerFactory.CreateLogger<Program>();
             using (logger.BeginScope("[scope is enabled]"))
             {
                 logger.LogInformation("Hello World!");

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging.Console;
 
-namespace Console.ExampleFormatters.Json
+namespace Console.ExampleFormatters.Custom
 {
     public class CustomOptions : ConsoleFormatterOptions
     {

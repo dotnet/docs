@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using System;
 
-namespace Console.ExampleFormatters.Json
+namespace Console.ExampleFormatters.Custom
 {
     public static class ConsoleLoggerExtensions
     {

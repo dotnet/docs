@@ -5,7 +5,7 @@ using Microsoft.Extensions.Options;
 using System;
 using System.IO;
 
-namespace Console.ExampleFormatters.Json
+namespace Console.ExampleFormatters.Custom
 {
     public sealed class CustomFormatter : ConsoleFormatter, IDisposable
     {
@@ -13,11 +13,10 @@ namespace Console.ExampleFormatters.Json
         private CustomOptions _formatterOptions;
 
         public CustomFormatter(IOptionsMonitor<CustomOptions> options)
-            : base("customName") // case insensitive
-        {
-            _optionsReloadToken = options.OnChange(ReloadLoggerOptions);
-            _formatterOptions = options.CurrentValue;
-        }
+            // Case insensitive
+            : base("customName") =>
+            (_optionsReloadToken, _formatterOptions) =
+                (options.OnChange(ReloadLoggerOptions), options.CurrentValue);
 
         private void ReloadLoggerOptions(CustomOptions options) =>
             _formatterOptions = options;

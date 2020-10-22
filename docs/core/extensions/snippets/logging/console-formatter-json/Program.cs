@@ -1,5 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using System.Text.Json;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace Console.ExampleFormatters.Json
 {
@@ -18,7 +21,6 @@ namespace Console.ExampleFormatters.Json
                         options.TimestampFormat = "hh:mm:ss ";
                         options.JsonWriterOptions = new JsonWriterOptions
                         {
-                            Encoder = JavaScriptTestEncoder.UnsafeRelaxedJsonEscaping,
                             Indented = true
                         };
                     }));

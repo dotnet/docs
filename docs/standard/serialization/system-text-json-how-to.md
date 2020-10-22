@@ -13,13 +13,6 @@ helpviewer_keywords:
 
 # How to serialize and deserialize (marshal and unmarshal) JSON in .NET
 
-::: zone pivot="dotnet-5-0"
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs":::
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-::: zone-end
-
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
 The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
@@ -133,9 +126,21 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * Circular references are detected and exceptions thrown.
 * [Fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded.
 ::: zone-end
-<xref:Microsoft.EntityFrameworkCore.DbSet%601>
+
 Supported types include:
 
+::: zone pivot="dotnet-5-0"
+* .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
+* User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
+* One-dimensional and jagged arrays (`ArrayName[][]`).
+* `Dictionary<TKey,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
+* Collections from the following namespaces.
+  * <xref:System.Collections>
+  * <xref:System.Collections.Generic>
+  * <xref:System.Collections.Immutable>
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
 * User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
@@ -144,6 +149,7 @@ Supported types include:
   * <xref:System.Collections>
   * <xref:System.Collections.Generic>
   * <xref:System.Collections.Immutable>
+::: zone-end
 
 You can [implement custom converters](system-text-json-converters-how-to.md) to handle additional types or to provide functionality that isn't supported by the built-in converters.
 

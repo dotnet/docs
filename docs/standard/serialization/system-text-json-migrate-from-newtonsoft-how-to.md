@@ -56,8 +56,8 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `DefaultValueHandling` global setting                 | ✔️ [DefaultIgnoreCondition global setting](#conditionally-ignore-a-property) |
 | `NullValueHandling` setting on `[JsonProperty]`       | ✔️ [JsonIgnore attribute](#conditionally-ignore-a-property)  |
 | `DefaultValueHandling` setting on `[JsonProperty]`    | ✔️ [JsonIgnore attribute](#conditionally-ignore-a-property)  |
+| Deserialize `Dictionary` with non-string key          | ✔️ [Supported](#dictionary-with-non-string-key) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
-| Deserialize `Dictionary` with non-string key          | ⚠️ [Not supported, workaround, sample](#dictionary-with-non-string-key) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
@@ -342,6 +342,18 @@ For more information, see [Preserve references and handle circular references](s
 <xref:System.Text.Json> 3.1 only supports serialization by value and throws an exception for circular references.
 ::: zone-end
 
+### Dictionary with non-string key
+
+::: zone pivot="dotnet-5-0"
+Both `Newtonsoft.Json` and `System.Text.Json` 5.0 support collections of type `Dictionary<TKey, TValue>`.
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+`Newtonsoft.Json` supports collections of type `Dictionary<TKey, TValue>`. The built-in support for dictionary collections in <xref:System.Text.Json> 3.1 is limited to `Dictionary<string, TValue>`. That is, the key must be a string.
+
+To support a dictionary with an integer or some other type as the key, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-dictionary-with-non-string-key).
+::: zone-end
+
 ## Scenarios using JsonSerializer that require workarounds
 
 The following scenarios aren't supported by built-in functionality, but workarounds are possible. The workarounds are [custom converters](system-text-json-converters-how-to.md), which may not provide complete parity with `Newtonsoft.Json` functionality. For some of these, sample code is provided as examples. If you rely on these `Newtonsoft.Json` features, migration will require modifications to your .NET object models or other code changes.
@@ -361,12 +373,6 @@ The following scenarios aren't supported by built-in functionality, but workarou
 * <xref:System.ValueTuple> and its associated generic types
 
 Custom converters can be implemented for types that don't have built-in support.
-
-### Dictionary with non-string key
-
-`Newtonsoft.Json` supports collections of type `Dictionary<TKey, TValue>`. The built-in support for dictionary collections in <xref:System.Text.Json> is limited to `Dictionary<string, TValue>`. That is, the key must be a string.
-
-To support a dictionary with an integer or some other type as the key, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-dictionary-with-non-string-key).
 
 ### Polymorphic serialization
 

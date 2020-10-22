@@ -13,6 +13,13 @@ helpviewer_keywords:
 
 # How to serialize and deserialize (marshal and unmarshal) JSON in .NET
 
+::: zone pivot="dotnet-5-0"
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs":::
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+::: zone-end
+
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
 The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
@@ -126,7 +133,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * Circular references are detected and exceptions thrown.
 * [Fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded.
 ::: zone-end
-
+<xref:Microsoft.EntityFrameworkCore.DbSet%601>
 Supported types include:
 
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
@@ -371,9 +378,18 @@ Enum string names can be deserialized as well, as shown in the following example
 
 By default, all public properties are serialized. If you don't want some of them to appear in the JSON output, you have several options. This section explains how to exclude:
 
+::: zone pivot="dotnet-5-0"
 * [Individual properties](#exclude-individual-properties)
 * [All read-only properties](#exclude-all-read-only-properties)
 * [All null-value properties](#exclude-all-null-value-properties)
+* [Default values of value types](#exclude-default-values-of-value-types)
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+* [Individual properties](#exclude-individual-properties)
+* [All read-only properties](#exclude-all-read-only-properties)
+* [All null-value properties](#exclude-all-null-value-properties)
+::: zone-end
 
 ### Exclude individual properties
 
@@ -432,6 +448,18 @@ Here's an example object to serialize and JSON output:
 ```
 
 This setting applies to serialization and deserialization. For information about its effect on deserialization, see [Ignore null when deserializing](#ignore-null-when-deserializing).
+
+### Exclude default values of value types
+
+::: zone pivot="dotnet-5-0"
+To exclude from serialization default values of value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs":::
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+There is no built-in way to prevent serialization of properties with value type defaults in `System.Text.Json` 3.1.
+::: zone-end
 
 ## Customize character encoding
 

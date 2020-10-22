@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/19/2020
+ms.date: 10/22/2020
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -53,6 +53,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting](#quoted-numbers) |
 | Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
 | Support for fields                                    | ✔️ [IncludeFields global setting](#public-and-non-public-fields) |
+| `DefaultValueHandling` global setting                 | ✔️ [JsonIgnoreCondition global setting](#conditionally-ignore-a-property) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize `Dictionary` with non-string key          | ⚠️ [Not supported, workaround, sample](#dictionary-with-non-string-key) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
@@ -63,7 +64,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `Required` setting on `[JsonProperty]` attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
 | `NullValueHandling` setting on `[JsonProperty]` attribute | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
 | `DefaultValueHandling` setting on `[JsonProperty]` attribute | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
-| `DefaultValueHandling` global setting                 | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property) |
 | `DefaultContractResolver` to exclude properties       | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property) |
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
 | Callbacks                                             | ⚠️ [Not supported, workaround, sample](#callbacks) |
@@ -220,25 +220,7 @@ public class ExampleClass
 The JSON value could not be converted to System.String.
 ```
 
-## Scenarios using JsonSerializer that require workarounds
-
-The following scenarios aren't supported by built-in functionality, but workarounds are possible. The workarounds are [custom converters](system-text-json-converters-how-to.md), which may not provide complete parity with `Newtonsoft.Json` functionality. For some of these, sample code is provided as examples. If you rely on these `Newtonsoft.Json` features, migration will require modifications to your .NET object models or other code changes.
-
-### Types without built-in support
-
-<xref:System.Text.Json> doesn't provide built-in support for the following types:
-
-* <xref:System.Data.DataTable> and related types
-* F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md), [record types](../../fsharp/language-reference/records.md), and [anonymous record types](../../fsharp/language-reference/anonymous-records.md).
-* <xref:System.Dynamic.ExpandoObject>
-* <xref:System.TimeZoneInfo>
-* <xref:System.Numerics.BigInteger>
-* <xref:System.TimeSpan>
-* <xref:System.DBNull>
-* <xref:System.Type>
-* <xref:System.ValueTuple> and its associated generic types
-
-Custom converters can be implemented for types that don't have built-in support.
+## Scenarios using JsonSerializer that require workarounds in 3.1
 
 ### Quoted numbers
 
@@ -260,6 +242,127 @@ For more information, see [Quoted numbers](system-text-json-how-to.md#quoted-num
 
 Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-property) on individual `long` properties or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 ::: zone-end
+
+### Specify constructor to use
+
+The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which constructor to call when deserializing to a POCO. <xref:System.Text.Json> supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
+
+### Conditionally ignore a property
+
+`Newtonsoft.Json` has several ways to conditionally ignore a property on serialization or deserialization:
+
+* `DefaultContractResolver` lets you select properties to include or exclude, based on arbitrary criteria.
+* The `NullValueHandling` and `DefaultValueHandling` settings on `JsonSerializerSettings` let you specify that all null-value or default-value properties should be ignored.
+* The `NullValueHandling` and `DefaultValueHandling` settings on the `[JsonProperty]` attribute let you specify individual properties that should be ignored when set to null or the default value.
+
+<xref:System.Text.Json> provides the following ways to omit properties while serializing:
+
+::: zone pivot="dotnet-5-0"
+* The [[JsonIgnore]](system-text-json-how-to.md#exclude-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
+* The [IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) global option lets you exclude all null-value properties.
+* The [IgnoreReadOnlyProperties](system-text-json-how-to.md#exclude-all-read-only-properties) global option lets you exclude all read-only properties.
+* The [DefaultIgnoreCondition](system-text-json-how-to.md#exclude-default-values-of-value-types) global option lets you exclude all value type properties that have default values.
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+* The [[JsonIgnore]](system-text-json-how-to.md#exclude-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
+* The [IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) global option lets you exclude all null-value properties.
+* The [IgnoreReadOnlyProperties](system-text-json-how-to.md#exclude-all-read-only-properties) global option lets you exclude all read-only properties.
+::: zone-end
+
+These options **don't** let you:
+
+::: zone pivot="dotnet-5-0"
+
+* Ignore selected properties that have the default value for the type.
+* Ignore selected properties if their value is null.
+* Ignore selected properties based on arbitrary criteria evaluated at run time.
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
+* Ignore all properties that have the default value for the type.
+* Ignore selected properties that have the default value for the type.
+* Ignore selected properties if their value is null.
+* Ignore selected properties based on arbitrary criteria evaluated at run time.
+
+::: zone-end
+
+For that functionality, you can write a custom converter. Here's a sample POCO and a custom converter for it that illustrates this approach:
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWF)]
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastRuntimeIgnoreConverter.cs)]
+
+The converter causes the `Summary` property to be omitted from serialization if its value is null, an empty string, or "N/A".
+
+Register this custom converter by [using an attribute on the class](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
+
+This approach requires additional logic if:
+
+* The POCO includes complex properties.
+* You need to handle attributes such as `[JsonIgnore]` or options such as custom encoders.
+
+### Public and non-public fields
+
+`Newtonsoft.Json` can serialize and deserialize fields as well as properties.
+
+::: zone pivot="dotnet-5-0"
+In <xref:System.Text.Json>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include fields when serializing or deserializing. For an example, see [Fields](system-text-json-how-to.md#fields).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+<xref:System.Text.Json> 3.1 only works with public properties. Custom converters can provide this functionality.
+::: zone-end
+
+### Preserve object references and handle loops
+
+By default, `Newtonsoft.Json` serializes by value. For example, if an object contains two properties that contain a reference to the same `Person` object, the values of that `Person` object's properties are duplicated in the JSON.
+
+`Newtonsoft.Json` has a `PreserveReferencesHandling` setting on `JsonSerializerSettings` that lets you serialize by reference:
+
+* An identifier metadata is added to the JSON created for the first `Person` object.
+* The JSON that is created for the second `Person` object contains a reference to that identifier instead of property values.
+
+`Newtonsoft.Json` also has a `ReferenceLoopHandling` setting that lets you ignore circular references rather than throw an exception.
+
+::: zone pivot="dotnet-5-0"
+To preserve references and handle circular references in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A?displayProperty=fullName> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. The `ReferenceHandler.Preserve` setting is equivalent to `ReferenceLoopHandling` = `true` and `PreserveReferencesHandling` = `true` in `Newtonsoft.Json`.
+
+Some related `Newtonsoft.Json` features are not supported:
+
+* [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm)
+* [JsonPropertyAttribute.IsReference](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_IsReference.htm)
+* [JsonPropertyAttribute.ReferenceLoopHandling](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_ReferenceLoopHandling.htm)
+
+For more information, see [Preserve references and handle circular references](system-text-json-how-to.md#preserve-references-and-handle-circular-references)
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+<xref:System.Text.Json> 3.1 only supports serialization by value and throws an exception for circular references.
+::: zone-end
+
+## Scenarios using JsonSerializer that require workarounds
+
+The following scenarios aren't supported by built-in functionality, but workarounds are possible. The workarounds are [custom converters](system-text-json-converters-how-to.md), which may not provide complete parity with `Newtonsoft.Json` functionality. For some of these, sample code is provided as examples. If you rely on these `Newtonsoft.Json` features, migration will require modifications to your .NET object models or other code changes.
+
+### Types without built-in support
+
+<xref:System.Text.Json> doesn't provide built-in support for the following types:
+
+* <xref:System.Data.DataTable> and related types
+* F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md), [record types](../../fsharp/language-reference/records.md), and [anonymous record types](../../fsharp/language-reference/anonymous-records.md).
+* <xref:System.Dynamic.ExpandoObject>
+* <xref:System.TimeZoneInfo>
+* <xref:System.Numerics.BigInteger>
+* <xref:System.TimeSpan>
+* <xref:System.DBNull>
+* <xref:System.Type>
+* <xref:System.ValueTuple> and its associated generic types
+
+Custom converters can be implemented for types that don't have built-in support.
 
 ### Dictionary with non-string key
 
@@ -355,10 +458,6 @@ Register this custom converter by [adding the converter](system-text-json-conver
 For an example of a similar converter that handles open generic properties, see the [built-in converter for key-value pairs](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/JsonValueConverterKeyValuePair.cs).
 ::: zone-end
 
-### Specify constructor to use
-
-The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which constructor to call when deserializing to a POCO. <xref:System.Text.Json> supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
-
 ### Required properties
 
 In `Newtonsoft.Json`, you specify that a property is required by setting `Required` on the `[JsonProperty]` attribute. `Newtonsoft.Json` throws an exception if no value is received in the JSON for a property marked as required.
@@ -406,42 +505,6 @@ The required properties converter would require additional logic if you need to 
 * A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
 * A property for a nullable value type is present in the JSON, but the value is null.
 
-### Conditionally ignore a property
-
-`Newtonsoft.Json` has several ways to conditionally ignore a property on serialization or deserialization:
-
-* `DefaultContractResolver` lets you select properties to include or exclude, based on arbitrary criteria.
-* The `NullValueHandling` and `DefaultValueHandling` settings on `JsonSerializerSettings` let you specify that all null-value or default-value properties should be ignored.
-* The `NullValueHandling` and `DefaultValueHandling` settings on the `[JsonProperty]` attribute let you specify individual properties that should be ignored when set to null or the default value.
-
-<xref:System.Text.Json> provides the following ways to omit properties while serializing:
-
-* The [[JsonIgnore]](system-text-json-how-to.md#exclude-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
-* The [IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) global option lets you exclude all null-value properties.
-* The [IgnoreReadOnlyProperties](system-text-json-how-to.md#exclude-all-read-only-properties) global option lets you exclude all read-only properties.
-
-These options **don't** let you:
-
-* Ignore all properties that have the default value for the type.
-* Ignore selected properties that have the default value for the type.
-* Ignore selected properties if their value is null.
-* Ignore selected properties based on arbitrary criteria evaluated at run time.
-
-For that functionality, you can write a custom converter. Here's a sample POCO and a custom converter for it that illustrates this approach:
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWF)]
-
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastRuntimeIgnoreConverter.cs)]
-
-The converter causes the `Summary` property to be omitted from serialization if its value is null, an empty string, or "N/A".
-
-Register this custom converter by [using an attribute on the class](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
-
-This approach requires additional logic if:
-
-* The POCO includes complex properties.
-* You need to handle attributes such as `[JsonIgnore]` or options such as custom encoders.
-
 ### Specify date format
 
 `Newtonsoft.Json` provides several ways to control how properties of `DateTime` and `DateTimeOffset` types are serialized and deserialized:
@@ -473,18 +536,6 @@ If you use a custom converter that follows the preceding sample:
 
 For more information about custom converters that recursively call `Serialize` or `Deserialize`, see the [Required properties](#required-properties) section earlier in this article.
 
-### Public and non-public fields
-
-`Newtonsoft.Json` can serialize and deserialize fields as well as properties.
-
-::: zone pivot="dotnet-5-0"
-In <xref:System.Text.Json>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include fields when serializing or deserializing. For an example, see [Fields](system-text-json-how-to.md#fields).
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-<xref:System.Text.Json> 3.1 only works with public properties. Custom converters can provide this functionality.
-::: zone-end
-
 ### Internal and private property setters and getters
 
 `Newtonsoft.Json` can use private and internal property setters and getters via the `JsonProperty` attribute. <xref:System.Text.Json> supports only public setters. Custom converters can provide this functionality.
@@ -504,33 +555,6 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 ## Scenarios that JsonSerializer currently doesn't support
 
 For the following scenarios, workarounds are not practical or possible. If you rely on these `Newtonsoft.Json` features, migration will not be possible without significant changes.
-
-### Preserve object references and handle loops
-
-By default, `Newtonsoft.Json` serializes by value. For example, if an object contains two properties that contain a reference to the same `Person` object, the values of that `Person` object's properties are duplicated in the JSON.
-
-`Newtonsoft.Json` has a `PreserveReferencesHandling` setting on `JsonSerializerSettings` that lets you serialize by reference:
-
-* An identifier metadata is added to the JSON created for the first `Person` object.
-* The JSON that is created for the second `Person` object contains a reference to that identifier instead of property values.
-
-`Newtonsoft.Json` also has a `ReferenceLoopHandling` setting that lets you ignore circular references rather than throw an exception.
-
-::: zone pivot="dotnet-5-0"
-To preserve references and handle circular references in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A?displayProperty=fullName> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. The `ReferenceHandler.Preserve` setting is equivalent to `ReferenceLoopHandling` = `true` and `PreserveReferencesHandling` = `true` in `Newtonsoft.Json`.
-
-Some related `Newtonsoft.Json` features are not supported:
-
-* [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm)
-* [JsonPropertyAttribute.IsReference](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_IsReference.htm)
-* [JsonPropertyAttribute.ReferenceLoopHandling](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_ReferenceLoopHandling.htm)
-
-For more information, see [Preserve references and handle circular references](system-text-json-how-to.md#preserve-references-and-handle-circular-references)
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-<xref:System.Text.Json> 3.1 only supports serialization by value and throws an exception for circular references.
-::: zone-end
 
 ### System.Runtime.Serialization attributes
 

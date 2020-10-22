@@ -115,7 +115,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
 * By default, circular references are detected and exceptions thrown. You can preserve [references and handle circular references](#preserve-references-and-handle-circular-references).
-* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded. You can [include fields](#include-fields).
+* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded. You can [include fields](#fields).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

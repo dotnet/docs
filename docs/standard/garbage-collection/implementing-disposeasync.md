@@ -97,9 +97,15 @@ Furthermore, it could be written to use the implicit scoping of a [using declara
 
 ## Stacked usings
 
-In situations where you create and use multiple objects that implement <xref:System.IAsyncDisposable>, it's possible that stacking `using` statements in errant conditions could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync>. In order to help prevent potential concern, you should avoid stacking, and instead follow this example pattern:
+In situations where you create and use multiple objects that implement <xref:System.IAsyncDisposable>, it's possible that stacking `using` statements in errant conditions could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync>.
+
+
+
+In order to help prevent potential concern, you should avoid stacking, and instead follow this example pattern:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+
+In the previous example, if 
 
 ## See also
 

@@ -71,11 +71,11 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--blame-crash`** (Available since .NET 5.0 preview SDK)
 
-  Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET Core used, the type of error and the operating system. 
+  Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET Core used, the type of error and the operating system.
   
   For exceptions in managed code, a dump will be automatically collected on .NET 5.0 and newer. It will be generate dump for testhost or any child process that also run on .NET 5.0 and crashed. Crashes in native code will not generate dump. This option works on Windows, MacOS and Linux.
   
-  Crash dumps in native code, or when using .NETCore 3.1 or older, can only be collected on Windows, by using Procdump. A directory that contains *procdump.exe* and *procdump64.exe* must be in the PATH or PROCDUMP_PATH environment variable. [Download the tools](/sysinternals/downloads/procdump). Implies `--blame`. 
+  Crash dumps in native code, or when using .NETCore 3.1 or older, can only be collected on Windows, by using Procdump. A directory that contains *procdump.exe* and *procdump64.exe* must be in the PATH or PROCDUMP_PATH environment variable. [Download the tools](/sysinternals/downloads/procdump). Implies `--blame`.
   
   To collect native crash in application running on .NET 5.0 or newer, the usage of Procdump can be forced by setting `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 

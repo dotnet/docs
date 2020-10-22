@@ -10,7 +10,7 @@ With [Windows Containers](/virtualization/windowscontainers/about/index), you ca
 To use Windows Containers, you just need to write Windows PowerShell commands in the DockerFile, as demonstrated in the following example:
 
 ```dockerfile
-FROM microsoft/windowsservercore
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
 LABEL Description="IIS" Vendor="Microsoft" Version="10"
 RUN powershell -Command Add-WindowsFeature Web-Server
 CMD [ "ping", "localhost", "-t" ]

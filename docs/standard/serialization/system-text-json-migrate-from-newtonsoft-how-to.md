@@ -53,7 +53,9 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting](#quoted-numbers) |
 | Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
 | Support for fields                                    | ✔️ [IncludeFields global setting](#public-and-non-public-fields) |
-| `DefaultValueHandling` global setting                 | ✔️ [JsonIgnoreCondition global setting](#conditionally-ignore-a-property) |
+| `DefaultValueHandling` global setting                 | ✔️ [DefaultIgnoreCondition global setting](#conditionally-ignore-a-property) |
+| `NullValueHandling` setting on `[JsonProperty]`       | ✔️ [JsonIgnore attribute](#conditionally-ignore-a-property)  |
+| `DefaultValueHandling` setting on `[JsonProperty]`    | ✔️ [JsonIgnore attribute](#conditionally-ignore-a-property)  |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize `Dictionary` with non-string key          | ⚠️ [Not supported, workaround, sample](#dictionary-with-non-string-key) |
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
@@ -62,8 +64,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
 | `[JsonConstructor]` attribute                         | ⚠️ [Not supported, workaround, sample](#specify-constructor-to-use) |
 | `Required` setting on `[JsonProperty]` attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
-| `NullValueHandling` setting on `[JsonProperty]` attribute | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
-| `DefaultValueHandling` setting on `[JsonProperty]` attribute | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
 | `DefaultContractResolver` to exclude properties       | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property) |
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
 | Callbacks                                             | ⚠️ [Not supported, workaround, sample](#callbacks) |
@@ -275,8 +275,6 @@ These options **don't** let you:
 
 ::: zone pivot="dotnet-5-0"
 
-* Ignore selected properties that have the default value for the type.
-* Ignore selected properties if their value is null.
 * Ignore selected properties based on arbitrary criteria evaluated at run time.
 
 ::: zone-end

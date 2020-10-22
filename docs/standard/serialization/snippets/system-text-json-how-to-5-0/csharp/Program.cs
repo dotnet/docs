@@ -39,6 +39,10 @@ namespace SystemTextJsonHowTo
             IgnoreValueDefaultOnSerialize.Program.Main();
             Console.WriteLine();
 
+            Console.WriteLine("======== Conditionally ignore selected properties on serialize =========");
+            JsonIgnoreAttributeExample.Program.Main();
+            Console.WriteLine();
+
             Console.WriteLine("======== Non-public accessors =========");
             NonPublicAccessors.Program.Main();
             Console.WriteLine();

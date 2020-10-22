@@ -406,6 +406,19 @@ Here's an example type to serialize and JSON output:
 }
 ```
 
+::: zone pivot="dotnet-5-0"
+You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property. The <xref:System.Text.Json.Serialization.JsonIgnoreCondition>JsonIgnoreCondition enum provides the following options:
+
+* `Always` - The property will always be ignored. If no `Condition` is specified, this option is assumed.
+* `Never` - The property will always be serialized and deserialized, regardless of the `IgnoreNullValues` global setting.
+* `WhenWritingDefault` - The property is ignored on serialization if it's a reference type null or a value type default.
+* `WhenWritingNull` - The property is ignored on serialization if it's a reference type null.
+
+The following example illustrates use of the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs":::
+::: zone-end
+
 ### Exclude all read-only properties
 
 A property is read-only if it contains a public getter but not a public setter. To exclude all read-only properties, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> to `true`, as shown in the following example:

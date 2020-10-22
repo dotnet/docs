@@ -146,3 +146,9 @@ A custom color formatter that handles applying custom colors could be defined as
 :::code language="csharp" source="snippets/logging/console-formatter-custom/CustomColorFormatter.cs" highlight="15-18,52-65":::
 
 When you run the application, the logs will show the `CustomPrefix` message in the color green when `FormatterOptions.ColorBehavior` is `Enabled`.
+
+## See also
+
+- [Logging in .NET](logging.md)
+- [Implement a custom logging provider in .NET](custom-logging-provider.md)
+- [High-performance logging in .NET](high-performance-logging.md)

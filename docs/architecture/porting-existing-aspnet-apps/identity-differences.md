@@ -21,8 +21,8 @@ One of the biggest differences when it comes to ASP.NET Core Identity compared t
 
 TODO: Expand on this scenario here:
 
-https://docs.microsoft.com/en-us/aspnet/core/migration/proper-to-2x/?view=aspnetcore-3.1#globalasax-file-replacement
-https://devblogs.microsoft.com/aspnet/katana-asp-net-5-and-bridging-the-gap/
+[Migration](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/#globalasax-file-replacement)
+[Katana to ASPNET 5](https://devblogs.microsoft.com/aspnet/katana-asp-net-5-and-bridging-the-gap/)
 
 ## References
 

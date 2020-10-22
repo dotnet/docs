@@ -1,12 +1,17 @@
+---
+title: Implement a custom configuration provider in .NET
+description: Learn how to implement a custom configuration provider in .NET applications.
+author: IEvangelist
+ms.author: dapine
+ms.date: 10/21/2020
+---
 
+# Console log formatting
 
-# Console Log Formatting
+In .NET 5, support for custom formatting was added for console logs in the `Microsoft.Extensions.Logging.Console` namespace. There are three custom formatting options available: `Simple`, `Systemd`, and `Json`. In environments where scraping and redirecting console logs for structured logging, it is advantageous to have customization capabilities.
 
-In .NET 5.0 we added support for custom formatting of console logs in Microsoft.Extensions.Logging.Console and three available in-box: simple, systemd, and json.
-
-## Motivation (Why needed)
-
-Traditionally in extensions ConsoleLoggerFormat enum allowed for toggling logging format between Systemd (single line) and Default (human readable) but they were not customizable and now have become deprecated. In environments where folks scrape/redirect console logs for structured logging, they want to know how to enable JSON formatted logs. 
+> [!IMPORTANT]
+> The <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat> enum allowed for selecting the desired log format, either human readable which was the `Default`, or single line which is known as `Systemd`. However, these were **not** customizable, and are now deprecated.
 
 ## Abstract: Write an abstract. In one **short** paragraph, describe what this topic will cover.
 
@@ -20,13 +25,13 @@ This article describes console log formatters. It goes through samples using the
 
 ### Register new formatter (covered below)
 
-The Console Logger provides built-in formatters and the ability author your own custom formatter. New APIs such as `AddSimpleConsole`, `AddSystemdConsole`, and `AddJsonConsole` were introduced in .NET 5.0 to provide different built-in formatting options for log messages to show in console. 
+The Console Logger provides built-in formatters and the ability author your own custom formatter. New APIs such as `AddSimpleConsole`, `AddSystemdConsole`, and `AddJsonConsole` were introduced in .NET 5.0 to provide different built-in formatting options for log messages to show in console.
 
 #### Simple
 
 Sample below shows how to configure the simple console formatter:
 
-```c#
+```csharp
 using Microsoft.Extensions.Logging.Console;
 
 namespace ConsoleApp46
@@ -56,13 +61,13 @@ namespace ConsoleApp46
 }
 ```
 
-The `ConsoleFormatterName.Simple` formatter provides logs with ability to not only wrap information such as time and log level in each log message but also allows for ANSI color embedding and indentation of messages. 
+The `ConsoleFormatterName.Simple` formatter provides logs with ability to not only wrap information such as time and log level in each log message but also allows for ANSI color embedding and indentation of messages.
 
 #### Systemd
 
 The Systemd console logger uses Syslog log level format and severities, does not format messages with colors, and always logs messages in a single line. This has especially been useful for containers which normally use Systemd console logging. Now with .NET 5.0, the Simple console logger also enables a compact version that logs in a single line and also allows for disabling colors as shown in an earlier sample.
 
-```c#
+```csharp
 using Microsoft.Extensions.Logging.Console;
 
 namespace ConsoleApp46
@@ -96,7 +101,7 @@ namespace ConsoleApp46
 
 The .NET community had long requested for a built-in performant console logger that writes logs in a Json format. The code  below shows a console logging sample with ASP.NET Core sample. For example using template ASP.NET Core application:
 
-```
+```dotnetcli
 dotnet new webapp -o SampleWebApp
 ```
 
@@ -109,7 +114,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 By default, the Simple console log formatter is selected with default configuration. To change from default, in Program.cs as seen below we could configure logging by adding `AddJsonConsole` which allows to select and configure the Json console formatter:
 
-```c#
+```csharp
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -150,7 +155,7 @@ namespace SampleWebApp
 
 When running the app again, with the above change, the log message would look something like the snippet shown below:
 
-```
+```json
 {
   "Timestamp": "09:08:33 ",
   "EventId": 0,
@@ -165,7 +170,7 @@ When running the app again, with the above change, the log message would look so
 }
 ```
 
-Json console formatter by default logs each message in a single line, in order to make it more readable while configuring the formatter, we set Indented property on JsonWriterOptions to true.
+The `Json` console formatter, by default, logs each message in a single line. In order to make it more readable while configuring the formatter, set <xref:System.Text.Json.JsonWriterOptions.Indented?displayProperty=nameWithType> to `true`.
 
 ### How to select which formatter to use (via both code and config)?
 
@@ -201,13 +206,19 @@ So far the samples showed how to register a formatter via code, but another way 
 }
 ```
 
-The two key values that need to be set are "FormatterName" and "FormatterOptions". If a formatter with the value set for "FormatterName" is already registered, that formatter would get selected, and its properties can be configured as long as they are provided as key inside the "FormatterOptions" element. The built-in formatter names are reserved under [ConsoleFormatterName](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.console.consoleformatternames?view=dotnet-plat-ext-5.0) (json, simple and systemd). It is also possible to register a custom formatter. In a later section we discuss that topic in more detail.
+The two key values that need to be set are "FormatterName" and "FormatterOptions". If a formatter with the value set for "FormatterName" is already registered, that formatter would get selected, and its properties can be configured as long as they are provided as key inside the "FormatterOptions" element. The built-in formatter names are reserved under <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames>:
+
+- <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Json?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Systemd?displayProperty=nameWithType>
+
+It is also possible to register a custom formatter. In a later section we discuss that topic in more detail.
 
 ### How do I author a new formatter?
 
 Log formatters need to be both registered (done by AddConsoleFormatter) and selected as the console formatter (done by AddConsole overloads) via the LoggingBuilder:
 
-```c#
+```csharp
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using System;
@@ -216,11 +227,11 @@ namespace SampleConsoleApp
 {
     public static class ConsoleLoggerExtensions
     {
-        public static ILoggingBuilder AddCustomFormatter(this ILoggingBuilder builder, Action<CustomOptions> configure)
-        {
-            return builder.AddConsole(o => { o.FormatterName = "customName"; })
+        public static ILoggingBuilder AddCustomFormatter(
+            this ILoggingBuilder builder,
+            Action<CustomOptions> configure) =>
+            builder.AddConsole(o => o.FormatterName = "customName")
                 .AddConsoleFormatter<CustomFormatter, CustomOptions>(configure);
-        }
     }
 
     public class CustomOptions : ConsoleFormatterOptions
@@ -232,7 +243,7 @@ namespace SampleConsoleApp
 
 The `AddConsoleFormatter` API registers a ConsoleFormatter (in this example the CustomFormatter) along with configuration and change token which keeps the formatter in sync with code and configuration updates to FormatterOptions properties (in this example CustomOptions).
 
-```c#
+```csharp
 namespace SampleConsoleApp
 {
     class Program  
@@ -260,7 +271,7 @@ namespace SampleConsoleApp
 
 The next piece is to implement the CustomFormatter. A very lightweight implementation is available below:
 
-```c# 
+```csharp
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Logging.Console;
@@ -275,8 +286,7 @@ namespace SampleConsoleApp
         private IDisposable _optionsReloadToken;
 
         public CustomFormatter(IOptionsMonitor<CustomOptions> options)
-            // case insensitive name for the formatter
-            : base("customName")
+            : base("customName") // Case insensitive
         {
             ReloadLoggerOptions(options.CurrentValue);
             _optionsReloadToken = options.OnChange(ReloadLoggerOptions);
@@ -288,6 +298,7 @@ namespace SampleConsoleApp
         }
 
         public CustomOptions FormatterOptions { get; set; }
+
         public void Dispose()
         {
             _optionsReloadToken?.Dispose();
@@ -320,7 +331,7 @@ In order to properly enable color capabilities in your custom console logger, yo
 
 In your working sample from previous section, first update CustomOptions to derive from SimpleConsoleFormatterOptions:
 
-```c#
+```csharp
     public class CustomOptions : SimpleConsoleFormatterOptions
     {
         public string CustomPrefix { get; set; }
@@ -329,7 +340,7 @@ In your working sample from previous section, first update CustomOptions to deri
 
 Then update the CustomFormatter methods below:
 
-```c#
+```csharp
 // TODO: Add DisableColors:
         private bool DisableColors =>
           FormatterOptions.ColorBehavior == LoggerColorBehavior.Disabled ||
@@ -350,7 +361,7 @@ Then update the CustomFormatter methods below:
 
 In order to remove the squiggly on `WriteColorMessage` add the below helper methods as well. These extension methods in `TextWriterExtensions` allow for conveniently embedding ANSI coded colors within formatted log messages:
 
-```c#
+```csharp
 using System;
 using System.IO;
 
@@ -424,6 +435,3 @@ namespace SampleConsoleApp
 ```
 
 When you run your application again, the logs would show `CustomPrefix` message in green when FormatterOptions.ColorBehavior is not disabled. So for example, when configuring options in `AddCustomFormatter` below, when color behavior is set to disabled, the the same log prefix will no longer be shown in green.
-
-
-

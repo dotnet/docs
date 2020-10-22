@@ -33,6 +33,10 @@ Migrating large .NET apps to .NET Core often requires a substantial effort. Most
 
 You can continue hosting your apps on IIS running on Windows. This is a fine option for customers who want to take advantage of ASP.NET Core features without changing their current deployment model. While moving to ASP.NET Core provides more options in terms of how and where to deploy your apps, it doesn't require that you change from the status quo of using the proven combination of IIS on Windows.
 
+## Other options on Windows
+
+You can host apps side-by-side apps on Windows using any combination of Kestrel, HTTP.sys, and IIS hosts, in addition to docker containers if needed. If your app requires a combination of Windows and Linux services, hosting on a Windows server with [WSL](https://docs.microsoft.com/windows/wsl/about) and/or Linux Docker containers provides a single server solution to hosting all parts of the app.
+
 ## References
 
 - [Host and deploy ASP.NET Core](https://docs.microsoft.com/aspnet/core/host-and-deploy/)

@@ -3,7 +3,7 @@ title: Unit testing C# code in .NET Core using dotnet test and xUnit
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and xUnit.
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/04/2019
+ms.date: 10/21/2020
 ---
 # Unit testing C# in .NET Core using dotnet test and xUnit
 
@@ -136,17 +136,11 @@ namespace Prime.UnitTests.Services
 {
     public class PrimeService_IsPrimeShould
     {
-        private readonly PrimeService _primeService;
-
-        public PrimeService_IsPrimeShould()
-        {
-            _primeService = new PrimeService();
-        }
-
         [Fact]
         public void IsPrime_InputIs1_ReturnFalse()
         {
-            var result = _primeService.IsPrime(1);
+            var primeService = new PrimeService();
+            bool result = primeService.IsPrime(1);
 
             Assert.False(result, "1 should not be prime");
         }
@@ -176,7 +170,8 @@ Run `dotnet test`. The test passes.
 Add prime number tests for 0 and -1. You could copy the preceding test and change the following code to use 0 and -1:
 
 ```csharp
-var result = _primeService.IsPrime(1);
+var primeService = new PrimeService();
+bool result = primeService.IsPrime(1);
 
 Assert.False(result, "1 should not be prime");
 ```
@@ -192,7 +187,8 @@ Rather than creating new tests, apply the preceding xUnit attributes to create a
 [Fact]
 public void IsPrime_InputIs1_ReturnFalse()
 {
-    var result = _primeService.IsPrime(1);
+    var primeService = new PrimeService();
+    bool result = primeService.IsPrime(1);
 
     Assert.False(result, "1 should not be prime");
 }

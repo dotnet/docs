@@ -34,11 +34,11 @@ The [`Console` logging provider](logging-providers.md#console) has built-in form
 
 ### Simple
 
-To register, and use the simple console formatter:
+To use the `Simple` console formatter, register it with `AddSimpleConsole`:
 
-:::code language="csharp" source="snippets/logging/console-formatter-simple/Program.cs":::
+:::code language="csharp" source="snippets/logging/console-formatter-simple/Program.cs" highlight="11-16":::
 
-In the proceeding sample source code, the <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType> formatter was registered. It provides logs with the ability to not only wrap information such as time and log level in each log message, but also allows for *ANSI* color embedding and indentation of messages.
+In the proceeding sample source code, the <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType> formatter was registered. It provides logs with the ability to not only wrap information such as time and log level in each log message, but also allows for ANSI color embedding and indentation of messages.
 
 ### Systemd
 
@@ -50,14 +50,14 @@ The <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Systemd?dis
 
 This is commonly useful for containers, which often make use of `Systemd` console logging. With .NET 5, the `Simple` console logger also enables a compact version that logs in a single line, and also allows for disabling colors as shown in an earlier sample.
 
-:::code language="csharp" source="snippets/logging/console-formatter-systemd/Program.cs":::
+:::code language="csharp" source="snippets/logging/console-formatter-systemd/Program.cs" highlight="11-15":::
 
 ### Json
 
 To write logs in a JSON format, the built-in `Json` console formatter is used. The sample source code shows how an ASP.NET Core app might register it. For example using template ASP.NET Core application:
 
 ```dotnetcli
-dotnet new webapp -o SampleWebApp
+dotnet new webapp -o Console.ExampleFormatters.Json
 ```
 
 When running the app, using the template code, you get the default log format below:
@@ -82,7 +82,7 @@ Run the app again, with the above change, the log message is now formatted as JS
 
 The previous samples have shown how to register a formatter programmatically. Alternatively, this can be done with [configuration](configuration.md). Consider the previous web application sample source code, if you update the *appsettings.json* file rather than calling `ConfigureLogging` in the *Program.cs* file, you could get the same outcome. The updated `appsettings.json` file would configure the formatter as follows:
 
-:::code language="json" source="snippets/logging/console-formatter-json/appsettings.json":::
+:::code language="json" source="snippets/logging/console-formatter-json/appsettings.json" highlight="14-23":::
 
 The two key values that need to be set are `"FormatterName"` and `"FormatterOptions"`. If a formatter with the value set for `"FormatterName"` is already registered, that formatter is selected, and its properties can be configured as long as they are provided as a key inside the `"FormatterOptions"` node. The built-in formatter names are reserved under <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames>:
 
@@ -101,7 +101,7 @@ To implement a custom formatter, you need to:
 
 Create an extension method to handle this for you:
 
-:::code language="csharp" source="snippets/logging/console-formatter-custom/ConsoleLoggerExtensions.cs":::
+:::code language="csharp" source="snippets/logging/console-formatter-custom/ConsoleLoggerExtensions.cs" highlight="11-12":::
 
 The `CustomOptions` are defined as follows:
 
@@ -119,9 +119,9 @@ The `AddConsoleFormatter` API:
 
 Define a `CustomerFormatter` subclass of `ConsoleFormatter`:
 
-:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomFormatter.cs":::
+:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomFormatter.cs" highlight="24-45":::
 
-The proceeding `CustomFormatter.Write<TState>` API dictates what text gets wrapped around each log message. A standard `ConsoleFormatter` should be able to wrap around scopes, time stamps, and severity level of logs at a minimum. Additionally, you can encode *ANSI* colors in the log messages, and provide desired indentations as well. The proceeding implementation for `CustomFormatter.Write<TState>` lacks these capabilities.
+The proceeding `CustomFormatter.Write<TState>` API dictates what text gets wrapped around each log message. A standard `ConsoleFormatter` should be able to wrap around scopes, time stamps, and severity level of logs at a minimum. Additionally, you can encode ANSI colors in the log messages, and provide desired indentations as well. The proceeding implementation for `CustomFormatter.Write<TState>` lacks these capabilities.
 
 For inspiration on further customizing formatting, see the built-in implementations in the `Microsoft.Extensions.Logging.Console` namespace:
 
@@ -135,7 +135,7 @@ In order to properly enable color capabilities in your custom logging formatter,
 
 Create a `CustomColorOptions` that derives from `SimpleConsoleFormatterOptions`:
 
-:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomColorOptions.cs":::
+:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomColorOptions.cs" highlight="5":::
 
 Next, write some extension methods in a `TextWriterExtensions` class that allow for conveniently embedding ANSI coded colors within formatted log messages:
 
@@ -143,6 +143,6 @@ Next, write some extension methods in a `TextWriterExtensions` class that allow 
 
 A custom color formatter that handles applying custom colors could be defined as follows:
 
-:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomColorFormatter.cs":::
+:::code language="csharp" source="snippets/logging/console-formatter-custom/CustomColorFormatter.cs" highlight="15-18,52-65":::
 
 When you run the application, the logs will show the `CustomPrefix` message in the color green when `FormatterOptions.ColorBehavior` is `Enabled`.

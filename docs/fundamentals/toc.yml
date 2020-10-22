@@ -149,9 +149,13 @@ items:
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Tools and diagnostics
   items:
+  - name: Overview
+    displayName: diagnostics,tools,tooling,productivity,instrumentation
+    href: tools-and-productivity.md
   - name: .NET Core SDK
     items:
     - name: Overview
+      displayName: '.net sdk,software development kit,software dev kit,tool'
       href: ../core/sdk.md
     - name: Error messages
       items:
@@ -166,6 +170,7 @@ items:
   - name: .NET Core CLI
     items:
     - name: Overview
+      displayName: '.net cli,command-line interface,cli,tool'
       href: ../core/tools/index.md
     - name: Reference
       items:
@@ -255,23 +260,6 @@ items:
           href: ../core/tools/dotnet-list-package.md
         - name: dotnet remove package
           href: ../core/tools/dotnet-remove-package.md
-    - name: Global and local tools
-      items:
-      - name: Manage tools
-        href: ../core/tools/global-tools.md
-      - name: Troubleshoot tools
-        href: ../core/tools/troubleshoot-usage-issues.md
-      - name: Create tools for the CLI
-        items:
-        - name: 1 - Create a tool
-          displayName: tools, tutorials, cli
-          href: ../core/tools/global-tools-how-to-create.md
-        - name: 2 - Use a global tool
-          displayName: tools, tutorials, cli
-          href: ../core/tools/global-tools-how-to-use.md
-        - name: 3 - Use a local tool
-          href: ../core/tools/local-tools-how-to-use.md
-          displayName: tools, tutorials, cli
     - name: global.json overview
       href: ../core/tools/global-json.md
     - name: Telemetry
@@ -297,6 +285,17 @@ items:
       - name: 3 - Create a template pack
         href: ../core/tutorials/cli-templates-create-template-pack.md
         displayName: tutorials, cli
+  - name: Integrated development environments (IDEs)
+    items:
+    - name: Visual Studio
+      displayName: ide,integrated development environment,vs
+      href: /visualstudio/windows/
+    - name: Visual Studio for Mac
+      displayName: ide,integrated development environment,vs for mac,macOS,Mac
+      href: /visualstudio/mac/
+    - name: Visual Studio Code
+      displayName: ide,integrated development environment,code,vs code,oss ide,
+      href: https://code.visualstudio.com/docs
   - name: MSBuild and project files
     items:
     - name: Project SDKs
@@ -317,21 +316,43 @@ items:
       href: ../core/tools/csproj.md
     - name: Dependency management
       href: ../core/tools/dependencies.md
-  - name: .NET Core additional tools
+  - name: Global and local tools
+    items:
+    - name: Manage tools
+      displayName: global tool,local tool
+      href: ../core/tools/global-tools.md
+    - name: Troubleshoot tools
+      displayName: global tool troubleshooting,local tool troubleshooting,
+      href: ../core/tools/troubleshoot-usage-issues.md
+    - name: Create tools for the CLI
+      items:
+      - name: 1 - Create a tool
+        displayName: tools,tutorials,cli,create global tool,create local tool
+        href: ../core/tools/global-tools-how-to-create.md
+      - name: 2 - Use a global tool
+        displayName: tools,tutorials,cli,understand global tool
+        href: ../core/tools/global-tools-how-to-use.md
+      - name: 3 - Use a local tool
+        href: ../core/tools/local-tools-how-to-use.md
+        displayName: tools,tutorials,cli,local tool
+  - name: Additional tools
     items:
     - name: Overview
       href: ../core/additional-tools/index.md
-    - name: .NET Core Uninstall Tool
+    - name: .NET uninstall tool
       href: ../core/additional-tools/uninstall-tool.md
-    - name: WCF Web Service Reference Provider
+    - name: WCF web service reference provider
       href: ../core/additional-tools/wcf-web-service-reference-guide.md
-    - name: dotnet-svcutil
+    - name: WCF service utility
+      displayName: dotnet-svcutil
       href: ../core/additional-tools/dotnet-svcutil-guide.md
-    - name: dotnet-svcutil.xmlserializer
+    - name: WCF service XML serializer
+      displayName: dotnet-svcutil.xmlserializer
       href: ../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
-    - name: XML Serializer Generator
+    - name: XML serializer generator
+      displayName: sgen,sgen.exe,Microsoft.XmlSerializer.Generator,XmlSerializer
       href: ../core/additional-tools/xml-serializer-generator.md
-  - name: Diagnostic tools
+  - name: Diagnostics and instrumentation
     items:
     - name: Overview
       href: ../core/diagnostics/index.md

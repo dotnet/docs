@@ -54,7 +54,7 @@ This is commonly useful for containers, which often make use of `Systemd` consol
 
 ### Json
 
-To write logs in a JSON format, the `Json` console formatter is used. The sample source code shows how an ASP.NET Core app might register it. For example using template ASP.NET Core application:
+To write logs in a JSON format, the `Json` console formatter is used. The sample source code shows how an ASP.NET Core app might register it. For example, using template ASP.NET Core application:
 
 ```dotnetcli
 dotnet new webapp -o Console.ExampleFormatters.Json

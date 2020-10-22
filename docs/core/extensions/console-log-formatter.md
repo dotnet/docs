@@ -78,7 +78,7 @@ Run the app again, with the above change, the log message is now formatted as JS
 > [!TIP]
 > The `Json` console formatter, by default, logs each message in a single line. In order to make it more readable while configuring the formatter, set <xref:System.Text.Json.JsonWriterOptions.Indented?displayProperty=nameWithType> to `true`.
 
-### Set formatter with configuration
+## Set formatter with configuration
 
 The previous samples have shown how to register a formatter programmatically. Alternatively, this can be done with [configuration](configuration.md). Consider the previous web application sample source code, if you update the *appsettings.json* file rather than calling `ConfigureLogging` in the *Program.cs* file, you could get the same outcome. The updated `appsettings.json` file would configure the formatter as follows:
 
@@ -90,7 +90,7 @@ The two key values that need to be set are `"FormatterName"` and `"FormatterOpti
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Systemd?displayProperty=nameWithType>
 
-### Implement a custom formatter
+## Implement a custom formatter
 
 To implement a custom formatter, you need to:
 
@@ -129,7 +129,7 @@ For inspiration on further customizing formatting, see the existing implementati
 - [SystemdConsoleFormatter](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.Extensions.Logging.Console/src/SystemdConsoleFormatter.cs)
 - [JsonConsoleFormatter](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.Extensions.Logging.Console/src/JsonConsoleFormatter.cs)
 
-#### Implement custom color formatting
+## Implement custom color formatting
 
 In order to properly enable color capabilities in your custom logging formatter, you can extend the <xref:Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions> as it has a <xref:Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions.ColorBehavior?displayProperty=nameWithType> property that can be useful for enabling colors in logs.
 

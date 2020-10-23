@@ -1,0 +1,67 @@
+### YamlMime:Landing
+
+title: .NET IoT Documentation
+summary: IoT Stuff is cool
+
+metadata:
+  title: .NET IoT Documentation
+  description: IoT Stuff is cool
+  ms.prod: dotnet
+  ms.topic: landing-page
+  ms.collection: collection
+  author: camsoper
+  ms.author: casoper
+  ms.date: 10/20/2020
+
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+
+  # Basics
+  - title: IoT Basics
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Temp link  
+            url: index.yml               
+      - linkListType: video
+        links:
+          - text: Temp link  
+            url: index.yml               
+      - linkListType: concept
+        links:
+          - text: Temp link  
+            url: index.yml               
+
+  # Get started
+  - title: Get started in 10 minutes
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Temp link  
+            url: index.yml               
+
+ # Tutorials - scenarios
+  - title: Tutorials
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Temp link  
+            url: index.yml               
+
+  # API Card
+  - title: How-to guides
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Temp link  
+            url: index.yml               
+
+  # API Card
+  - title: Reference 
+    linkLists:           
+      - linkListType: reference
+        links:
+          - text: Ref link  
+            url: index.yml

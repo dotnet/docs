@@ -5,7 +5,6 @@ description: Learn how to use the analyzers in the .NET Framework Analyzers pack
 author: billwagner
 ms.author: wiwagn
 ms.date: 10/23/2020
-ms.technology: dotnet-framework
 ---
 # Code analysis
 
@@ -46,19 +45,19 @@ For more information, see [Code analysis in Visual Studio](/visualstudio/code-qu
 
 The analyzers examine the code in your solution and surface warnings with a `CA` prefix. For a list of all possible warnings, see [Code quality rules](../fundamentals/code-analysis/quality-rules/index.md). Only some of these warnings apply to .NET Framework APIS, including:
 
-- [CA1058: Types should not extend certain base types](../../fundamentals/code-analysis/quality-rules/ca1058.md)
+- [CA1058: Types should not extend certain base types](../fundamentals/code-analysis/quality-rules/ca1058.md)
 
-- [CA2153: Do not catch corrupted state exceptions](../../fundamentals/code-analysis/quality-rules/ca2153.md)
+- [CA2153: Do not catch corrupted state exceptions](../fundamentals/code-analysis/quality-rules/ca2153.md)
 
-- [CA2229: Implement serialization constructors](../../fundamentals/code-analysis/quality-rules/ca2229.md)
+- [CA2229: Implement serialization constructors](../fundamentals/code-analysis/quality-rules/ca2229.md)
 
-- [CA2235: Mark all non-serializable fields](../../fundamentals/code-analysis/quality-rules/ca2235.md)
+- [CA2235: Mark all non-serializable fields](../fundamentals/code-analysis/quality-rules/ca2235.md)
 
-- [CA2237: Mark ISerializable types with serializable](../../fundamentals/code-analysis/quality-rules/ca2237.md)
+- [CA2237: Mark ISerializable types with serializable](../fundamentals/code-analysis/quality-rules/ca2237.md)
 
-- [CA3075: Insecure DTD processing in XML](../../fundamentals/code-analysis/quality-rules/ca3075.md)
+- [CA3075: Insecure DTD processing in XML](../fundamentals/code-analysis/quality-rules/ca3075.md)
 
-- [CA5350: Do not use weak cryptographic algorithms](../../fundamentals/code-analysis/quality-rules/ca5350.md)
+- [CA5350: Do not use weak cryptographic algorithms](../fundamentals/code-analysis/quality-rules/ca5350.md)
 
 - [CA5351 Do not use broken cryptographic algorithms](../fundamentals/code-analysis/quality-rules/ca5351.md)
 

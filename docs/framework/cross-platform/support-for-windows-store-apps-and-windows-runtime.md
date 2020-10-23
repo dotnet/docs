@@ -1,7 +1,6 @@
 ---
 title: ".NET Framework Support for Microsoft Store Apps and Windows Runtime"
 ms.date: "03/30/2017"
-ms.technology: dotnet-framework
 helpviewer_keywords:
   - "Windows Store apps, .NET Framework support for"
   - "Windows Runtime, .NET Framework support for"

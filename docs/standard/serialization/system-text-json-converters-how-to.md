@@ -325,6 +325,24 @@ The following code registers the converter:
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripStackOfT.cs?name=SnippetRegister)]
 
+## Handle null values
+
+By default, the serializer does not pass `null` to custom converters for reference types and primitive value types on serialization and deserialization:
+
+* For reference types, it returns a `null` instance on deserialization.
+* For primitive value types, it throws a `JsonException` or returns a default value, depending on if there's an internal converter.
+* It writes `null` directly with the writer on serialization.
+
+This behavior is primarily to optimize performance by skipping an extra call to the converter. In addition, it avoids forcing converters to check for `null` at the start of every `Read` and `Write` method override.
+
+For `Nullable<T>` value types, the serializer does pass `null` to converters because it isn't a valid CLR value for value types. This way, the converter can determine what to do with this "invalid" token.
+
+::: zone pivot="dotnet-5-0"
+To enable a custom converter to handle `null` for all types, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType> to return `true`, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs":::
+::: zone-end
+
 ## Other custom converter samples
 
 The [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md) article contains additional samples of custom converters.

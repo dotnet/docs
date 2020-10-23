@@ -7,10 +7,8 @@ items:
   items:
   - name: Overview
     href: get-started/index.md
-  - name: .NET Framework and out-of-band releases
+  - name: Out-of-band releases
     href: get-started/the-net-framework-and-out-of-band-releases.md
-  - name: .NET Core and open source
-    href: get-started/net-core-and-open-source.md
   - name: System requirements
     href: get-started/system-requirements.md
 - name: Installation guide
@@ -691,7 +689,7 @@ items:
       href: whats-new/obsolete-types.md
     - name: Obsolete members
       href: whats-new/obsolete-members.md
-- name: Code Access security
+- name: Code access security
   items:
   - name: Overview
     href: misc/code-access-security.md

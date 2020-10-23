@@ -1,8 +1,8 @@
 ---
-title: Get started with the .NET Framework
-description: Get started with .NET, which is a runtime execution environment that manages apps. It contains a common language runtime (CLR) and an extensive class library.
-ms.date: "04/02/2019"
-helpviewer_keywords: 
+title: Get started with .NET Framework
+description: Get started with .NET Framework, which is a runtime execution environment that manages apps. It contains a common language runtime (CLR) and an extensive class library.
+ms.date: 10/21/2020
+helpviewer_keywords:
   - ".NET Framework, getting started"
   - "getting started [.NET Framework]"
 ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
@@ -11,8 +11,7 @@ ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
 
 .NET Framework is a run-time execution environment that manages apps that target .NET Framework. It consists of the common language runtime, which provides memory management and other system services, and an extensive class library, which enables programmers to take advantage of robust, reliable code for all major areas of app development.
 
-> [!NOTE]
-> .NET Framework is available on Windows systems only. You can use [.NET Core](../../core/introduction.md) to develop and run apps on Windows, MacOS, and Linux.
+[!INCLUDE [net-framework-future](../../../includes/net-framework-future.md)]
 
 ## What is .NET Framework?
 
@@ -35,7 +34,7 @@ ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
 - Multitargeting. By targeting [.NET Standard](../../standard/net-standard.md), developers create class libraries that work on multiple .NET Framework platforms supported by that version of the standard. For example, libraries that target .NET Standard 2.0 can be used by apps that target .NET Framework 4.6.1, .NET Core 2.0, and UWP 10.0.16299.
 
 <a name="ForUsers"></a>
-## The .NET Framework for users
+## .NET Framework for users
 
 If you don't develop .NET Framework apps, but you use them, you aren't required to have specific knowledge about .NET Framework or its operation. For the most part, the framework is completely transparent to users.
 
@@ -70,7 +69,7 @@ For more information on developing apps that target .NET Framework, see the [Dev
 | Title | Description |
 | ----- |------------ |
 | [Overview](overview.md) | Provides detailed information for developers who build apps that target .NET Framework. |
-| [Installation guide](../install/index.md) | Provides information about installing .NET Framework. |  
+| [Installation guide](../install/index.md) | Provides information about installing .NET Framework. |
 | [.NET Framework and Out-of-Band Releases](the-net-framework-and-out-of-band-releases.md) | Describes the .NET Framework out-of-band releases and how to use them in your app. |
 | [System Requirements](system-requirements.md) | Lists the hardware and software requirements for running .NET Framework. |
 | [.NET Core and Open-Source](net-core-and-open-source.md) | Describes .NET Core in relation to .NET Framework and how to access the open-source .NET Core projects. |

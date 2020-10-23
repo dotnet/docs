@@ -14,7 +14,7 @@ ms.topic: reference
 
 - In .NET Core 3.0: If you omit this setting, support for the HTTP/2 protocol is disabled. This is equivalent to setting the value to `false`.
 
-- Since .NET Core 3.1: If you omit this setting, support for the HTTP/2 protocol is enabled. This is equivalent to setting the value to `true`.
+- .NET Core 3.1 and .NET 5+: If you omit this setting, support for the HTTP/2 protocol is enabled. This is equivalent to setting the value to `true`.
 
 | | Setting name | Values |
 | - | - | - |

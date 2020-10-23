@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/16/2020
+ms.date: 10/23/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -97,15 +97,28 @@ Furthermore, it could be written to use the implicit scoping of a [using declara
 
 ## Stacked usings
 
-In situations where you create and use multiple objects that implement <xref:System.IAsyncDisposable>, it's possible that stacking `using` statements in errant conditions could prevent calls to <xref:System.IAsyncDisposable.DisposeAsync>.
+In situations where you create and use multiple objects that implement <xref:System.IAsyncDisposable>, it's possible that stacking `await using` statements with <xref:System.Threading.Tasks.ValueTask.ConfigureAwait%2A> could prevent calls to to <xref:System.IAsyncDisposable.DisposeAsync> in errant conditions. In order to help prevent potential concern, you should avoid stacking, and instead follow one of these example patterns:
 
+### Acceptable pattern one
 
+:::code language="csharp" id="one" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
 
-In order to help prevent potential concern, you should avoid stacking, and instead follow this example pattern:
+### Acceptable pattern two
 
-:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+:::code language="csharp" id="two" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
 
-In the previous example, if 
+### Acceptable pattern three
+
+:::code language="csharp" id="three" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+
+### Unacceptable pattern
+
+If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `objOne` does not get properly disposed:
+
+:::code language="csharp" id="dontdothis" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+
+> [!TIP]
+> Avoid this pattern as it could lead to unexpected behavior.
 
 ## See also
 

@@ -175,7 +175,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
 
  **`-- <command>` (for target applications running .NET 5.0 or later only)**
 
-  Prefixing the `collect` command with `--` followed by a command executes the given command as a child process and starts collecting metric from the target process. This is useful for getting metrics from runtime startup (before `Main` runs) and can be used to diagnose or monitor issues that happen early in the application startup.
+  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. `dotnet-counters` will launch a process with the provided command and monitor the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
 
   > [!NOTE]
   > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.

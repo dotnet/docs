@@ -80,6 +80,9 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 
   After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. `dotnet-counters` will launch a process with the provided command and collect the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
 
+> [!NOTE]
+> Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
 ### Examples
 
 - Collect all counters at a refresh interval of 3 seconds and generate a csv as output:
@@ -174,6 +177,9 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
 
   Prefixing the `collect` command with `--` followed by a command executes the given command as a child process and starts collecting metric from the target process. This is useful for getting metrics from runtime startup (before `Main` runs) and can be used to diagnose or monitor issues that happen early in the application startup.
 
+  > [!NOTE]
+  > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
 ### Examples
 
 - Monitor all counters from `System.Runtime` at a refresh interval of 3 seconds:
@@ -233,6 +239,8 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
 
 - Launch `my-aspnet-server.exe` and monitor the # of assemblies loaded from its startup (.NET 5.0 or later only):
 
+  NOTE: This works for apps running .NET 5.0 or later only.
+
   ```console
   > dotnet-counters monitor --counters System.Runtime[assembly-count] -- my-aspnet-server.exe
 
@@ -244,6 +252,8 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
   ```
   
 - Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup (.NET 5.0 or later only):
+
+  NOTE: This works for apps running .NET 5.0 or later only.
 
   ```console
   > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size] -- my-aspnet-server.exe arg1 arg2

@@ -111,6 +111,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
   Putting `--` followed by a command to start a .NET 5.0 (or later) application after the `collect` command launches the given command as a child process and tries to collect a trace from it at startup. This may be helpful when diagnosing issues that happen early in the process, such as startup performance issue or assembly loader and binder errors. Note that the target application being traced must be running .NET 5.0 or later to be able to use this feature.
 
+  > [!NOTE]
+  > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
 ## dotnet-trace convert
 
 Converts `nettrace` traces to alternate formats for use with alternate trace analysis tools.

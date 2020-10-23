@@ -52,7 +52,7 @@ In addition to these automatic conversions, .NET provides several features that 
   
 - The <xref:System.ComponentModel.TypeConverter> class, which is a base class that can be extended to support the conversion of a specified type to any other type. For more information, see [The TypeConverter Class](#the-typeconverter-class) section.  
 
-## Implicit conversion
+## Implicit conversion with the implicit operator
 
 Widening conversions involve the creation of a new value from the value of an existing type that has either a more restrictive range or a more restricted member list than the target type. Widening conversions cannot result in data loss (although they may result in a loss of precision). Because data cannot be lost, compilers can handle the conversion implicitly or transparently, without requiring the use of an explicit conversion method or a casting operator.  
   
@@ -74,7 +74,7 @@ Widening conversions involve the creation of a new value from the value of an ex
  [!code-csharp[Conceptual.Conversion#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.conversion/cs/implicit1.cs#3)]
  [!code-vb[Conceptual.Conversion#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.conversion/vb/implicit1.vb#3)]  
 
-## Explicit conversion
+## Explicit conversion with the explicit operator
 
 Narrowing conversions involve the creation of a new value from the value of an existing type that has either a greater range or a larger member list than the target type. Because a narrowing conversion can result in a loss of data, compilers often require that the conversion be made explicit through a call to a conversion method or a casting operator. That is, the conversion must be handled explicitly in developer code.  
   

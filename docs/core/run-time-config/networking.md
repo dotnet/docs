@@ -10,9 +10,12 @@ ms.topic: reference
 
 - Configures whether support for the HTTP/2 protocol is enabled.
 
-- If you omit this setting, support for the HTTP/2 protocol is disabled. This is equivalent to setting the value to `false`.
-
 - Introduced in .NET Core 3.0.
+
+- In .NET Core 3.0: If you omit this setting, support for the HTTP/2 protocol is disabled. This is equivalent to setting the value to `false`.
+
+- Since .NET Core 3.1: If you omit this setting, support for the HTTP/2 protocol is enabled. This is equivalent to setting the value to `true`.
+
 
 | | Setting name | Values |
 | - | - | - |
@@ -37,3 +40,18 @@ ms.topic: reference
 
 > [!NOTE]
 > Starting in .NET 5, the `System.Net.Http.UseSocketsHttpHandler` setting is no longer available.
+
+## Allow sending Latin1 headers in .NET Core 3.1
+
+- This switch allows relaxing the HTTP header validation, enabling <xref:System.Net.Http.SocketsHttpHandler> to send ISO-8859-1 (Latin-1) encoded characters in headers.
+
+- If you omit this setting, an attempt to send a non-ASCII character will result in <xref:System.Net.Http.HttpRequestException>. This is equivalent to setting the value to `false`.
+
+
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.AllowLatin1Headers` | `false` - disabled<br/>`true` - enabled |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_ALLOWLATIN1HEADERS` | `0` - disabled<br/>`1` - enabled |
+
+> [!NOTE]
+> This option is only available in .NET Core 3.1 since version 3.1.9, and not in previous or later versions. In .NET 5 we recommend using <xref:System.Net.Http.SocketsHttpHandler.RequestHeaderEncodingSelector>.

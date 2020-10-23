@@ -3,7 +3,7 @@ title: "Set assembly attributes"
 description: You can set assembly attributes for a .NET assembly, including assembly identity, informational, assembly manifest, and strong name attributes.
 ms.date: "08/20/2019"
 helpviewer_keywords:
-  - "assemblies [.NET Framework], attributes"
+  - "assemblies [.NET], attributes"
   - "assembly binding, attributes"
   - "assembly manifest, attributes"
 ms.assetid: 36a98a81-b5b5-4c19-912a-11f91eff7f4e

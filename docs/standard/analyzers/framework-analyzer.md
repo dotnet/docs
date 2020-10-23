@@ -1,6 +1,6 @@
 ---
 title: .NET Framework Analyzers - .NET
-description: Learn how to use the .NET Framework Analyzers in the .NET Framework Analyzers package to find and address security risks
+description: Learn how to use the analyzers in the .NET Framework Analyzers package to find and address security risks
 author: billwagner
 ms.author: wiwagn
 ms.date: 01/25/2018
@@ -61,13 +61,13 @@ warnings for any of these issues:
 
 ### CA1058: Types should not extend certain base types
 
-There are a small number of types in the .NET Framework that you should not derived from directly.
+There are a small number of types in the .NET Framework that you should not derive from directly.
 
 **Category:** Design
 
 **Severity:** Warning
 
-Additional information: [CA:1058: Types should not extend certain base types](/visualstudio/code-quality/ca1058-types-should-not-extend-certain-base-types)
+Additional information: [CA1058: Types should not extend certain base types](../../fundamentals/code-analysis/quality-rules/ca1058.md)
 
 ### CA2153: Do not catch corrupted state exceptions
 
@@ -77,7 +77,7 @@ Catching corrupted state exceptions could mask errors (such as access violations
 
 **Severity:** Warning
 
-Additional information: [## CA2153: Do not catch corrupted state exceptions](/visualstudio/code-quality/ca2153-avoid-handling-corrupted-state-exceptions)
+Additional information: [CA2153: Do not catch corrupted state exceptions](../../fundamentals/code-analysis/quality-rules/ca2153.md)
 
 ### CA2229: Implement serialization constructors
 
@@ -98,7 +98,7 @@ public class MyItemType
 
 **Severity:** Warning
 
-Additional information: [CA2229: Implement serialization constructors](/visualstudio/code-quality/ca2229-implement-serialization-constructors)
+Additional information: [CA2229: Implement serialization constructors](../../fundamentals/code-analysis/quality-rules/ca2229.md)
 
 ### CA2235: Mark all non-serializable fields
 
@@ -108,7 +108,7 @@ An instance field of a type that is not serializable is declared in a type that 
 
 **Severity:** Warning
 
-Additional information: [CA2235: Mark all non-serializable fields](/visualstudio/code-quality/ca2235-mark-all-non-serializable-fields)
+Additional information: [CA2235: Mark all non-serializable fields](../../fundamentals/code-analysis/quality-rules/ca2235.md)
 
 ### CA2237: Mark ISerializable types with serializable
 
@@ -118,7 +118,7 @@ To be recognized by the common language runtime as serializable, types must be m
 
 **Severity:** Warning
 
-Additional information: [CA2237: Mark ISerializable types with serializable](/visualstudio/code-quality/ca2237-mark-iserializable-types-with-serializableattribute)
+Additional information: [CA2237: Mark ISerializable types with serializable](../../fundamentals/code-analysis/quality-rules/ca2237.md)
 
 ### CA3075: Insecure DTD processing in XML
 
@@ -128,7 +128,7 @@ If you use insecure <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instanc
 
 **Severity:** Warning
 
-Additional information: [A3075: Insecure DTD processing in XML](/visualstudio/code-quality/ca2237-mark-iserializable-types-with-serializableattribute)
+Additional information: [CA3075: Insecure DTD processing in XML](../../fundamentals/code-analysis/quality-rules/ca3075.md)
 
 ### CA5350: Do not use weak cryptographic algorithms
 
@@ -138,7 +138,7 @@ Cryptographic algorithms degrade over time as attacks become more advanced. Depe
 
 **Severity:** Warning
 
-Additional information: [CA5350: Do not use weak cryptographic algorithms](/visualstudio/code-quality/ca5350-do-not-use-weak-cryptographic-algorithms)
+Additional information: [CA5350: Do not use weak cryptographic algorithms](../../fundamentals/code-analysis/quality-rules/ca5350.md)
 
 ### CA5351: Do not use broken cryptographic algorithms
 
@@ -148,4 +148,4 @@ An attack making it computationally feasible to break this algorithm exists. Thi
 
 **Severity:** Warning
 
-Additional Information: [CA5351: Do not use broken cryptographic algorithms](/visualstudio/code-quality/ca5351)
+Additional Information: [CA5351: Do not use broken cryptographic algorithms](../../fundamentals/code-analysis/quality-rules/ca5351.md)

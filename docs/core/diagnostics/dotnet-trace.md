@@ -216,7 +216,7 @@ Output File    : E:\temp\gcperfsim\trace.nettrace
 Press <Enter> or <Ctrl+C> to exit...
 ```
 
-You can stop the collecting by pressing `<Enter>` or `<Ctrl + C>` key. Doing this will also exit `hello.exe`.
+You can stop collecting the trace by pressing `<Enter>` or `<Ctrl + C>` key. Doing this will also exit `hello.exe`.
 
 > [!NOTE]
 > Launching `hello.exe` via dotnet-trace will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.

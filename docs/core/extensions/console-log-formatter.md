@@ -38,7 +38,7 @@ To use the `Simple` console formatter, register it with `AddSimpleConsole`:
 
 :::code language="csharp" source="snippets/logging/console-formatter-simple/Program.cs" highlight="11-16":::
 
-In the proceeding sample source code, the <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType> formatter was registered. It provides logs with the ability to not only wrap information such as time and log level in each log message, but also allows for ANSI color embedding and indentation of messages.
+In the preceding sample source code, the <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType> formatter was registered. It provides logs with the ability to not only wrap information such as time and log level in each log message, but also allows for ANSI color embedding and indentation of messages.
 
 ### Systemd
 
@@ -107,7 +107,7 @@ The `CustomOptions` are defined as follows:
 
 :::code language="csharp" source="snippets/logging/console-formatter-custom/CustomOptions.cs":::
 
-In the proceeding code, the options are a subclass of <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions>.
+In the preceding code, the options are a subclass of <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions>.
 
 The `AddConsoleFormatter` API:
 
@@ -121,7 +121,7 @@ Define a `CustomerFormatter` subclass of `ConsoleFormatter`:
 
 :::code language="csharp" source="snippets/logging/console-formatter-custom/CustomFormatter.cs" highlight="24-45":::
 
-The proceeding `CustomFormatter.Write<TState>` API dictates what text gets wrapped around each log message. A standard `ConsoleFormatter` should be able to wrap around scopes, time stamps, and severity level of logs at a minimum. Additionally, you can encode ANSI colors in the log messages, and provide desired indentations as well. The proceeding implementation for `CustomFormatter.Write<TState>` lacks these capabilities.
+The preceding `CustomFormatter.Write<TState>` API dictates what text gets wrapped around each log message. A standard `ConsoleFormatter` should be able to wrap around scopes, time stamps, and severity level of logs at a minimum. Additionally, you can encode ANSI colors in the log messages, and provide desired indentations as well. The implementation of the `CustomFormatter.Write<TState>` lacks these capabilities.
 
 For inspiration on further customizing formatting, see the existing implementations in the `Microsoft.Extensions.Logging.Console` namespace:
 

@@ -78,7 +78,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 
 - **`-- <command>` (for target applications running .NET 5.0 or later only)**
 
-  Putting `--` followed by a command to start a .NET 5.0 (or later) application after the `collect` command launches the given command as a child process and starts collecting metric from the target process. This is useful for getting metrics from runtime startup (before `Main` runs) and can be used to diagnose or monitor issues that happen early in the application startup.
+  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. `dotnet-counters` will launch a process with the provided command and collect the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
 
 ### Examples
 

@@ -1,7 +1,7 @@
 ---
 title: "Passing a URI to the Windows Runtime"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
+ms.technology: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

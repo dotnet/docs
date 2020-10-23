@@ -1,6 +1,6 @@
 ---
 title: "TPL and Traditional .NET Asynchronous Programming"
-ms.date: 10/22/2020
+ms.date: 03/30/2017
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"

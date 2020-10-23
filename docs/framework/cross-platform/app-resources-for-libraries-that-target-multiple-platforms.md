@@ -1,7 +1,7 @@
 ---
 title: "App Resources for Libraries That Target Multiple Platforms"
 ms.date: "07/18/2018"
-ms.technology: dotnet-standard
+ms.technology: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

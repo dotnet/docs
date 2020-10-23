@@ -143,7 +143,7 @@ For more information about rule severities, see [Configure rule severity](config
 ## See also
 
 - [Code quality analysis rule reference](quality-rules/index.md)
-- [Code style analysis rule reference](/visualstudio/ide/editorconfig-code-style-settings-reference)
+- [Code style analysis rule reference](style-rules/index.md)
 - [Code analysis in Visual Studio](/visualstudio/code-quality/roslyn-analyzers-overview)
 - [.NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [Tutorial: Write your first analyzer and code fix](../../csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md)

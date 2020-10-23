@@ -194,15 +194,15 @@ NOTE: This works for apps running .NET 5.0 or later only.
 
 Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, it is possible to do this by using dotnet-trace.
 
-Suppose there is a .NET 5.0 application named `hello.exe` that you want to collect a trace from its startup.
+Suppose there is a .NET 5.0 application named `hello.exe` with `arg1` and `arg2` that you want to collect a trace from its startup.
 
 To do this, run the following command:
 
 ```console
-dotnet-trace collect -- hello.exe
+dotnet-trace collect -- hello.exe arg1 arg2
 ```
 
-This will launch `hello.exe` and collect a trace from its runtime startup:
+This will launch `hello.exe` with `arg1` and `arg2` as its command line arguments and collect a trace from its runtime startup:
 
 ```console
 No profile or providers specified, defaulting to trace profile 'cpu-sampling'

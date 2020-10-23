@@ -11,7 +11,7 @@ One consideration as you plan the migration of your large ASP.NET app to ASP.NET
 
 ## Cross-platform options
 
-Because .NET Core supports Linux, you may now find some hosting options available that weren't a consideration previously. Some hosting providers may offer attractive features or pricing for Linux-based hosting that make it an attractive option, or you may have your own non-Windows servers you'd like to leverage as part of your new app deployment strategy. .NET Core opens to door to these options.
+Because .NET Core supports Linux, you may now find some hosting options available that weren't a consideration previously. Linux-based hosting may be preferable either because your organization has infrastructure or expertise, or because hosting providers offer attractive features or pricing for Linux-based hosting. .NET Core opens to door to these options.
 
 ## Cloud native development
 

@@ -40,7 +40,7 @@ ms.topic: reference
 > [!NOTE]
 > Starting in .NET 5, the `System.Net.Http.UseSocketsHttpHandler` setting is no longer available.
 
-## Allow sending Latin1 headers in .NET Core 3.1
+## Latin1 headers (.NET Core 3.1 only)
 
 - This switch allows relaxing the HTTP header validation, enabling <xref:System.Net.Http.SocketsHttpHandler> to send ISO-8859-1 (Latin-1) encoded characters in headers.
 

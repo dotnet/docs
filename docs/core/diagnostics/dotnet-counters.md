@@ -246,7 +246,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
 - Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup (.NET 5.0 or later only):
 
   ```console
-  > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size]
+  > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size] -- my-aspnet-server.exe arg1 arg2
   ```
 
   ```console

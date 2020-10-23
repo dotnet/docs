@@ -9,11 +9,11 @@ helpviewer_keywords:
 
 Available in C# 7.0 and later, the *tuples* feature provides concise syntax to group multiple data elements in a lightweight data structure. The following example shows how you can declare a tuple variable, initialize it, and access its data members:
 
-[!code-csharp-interactive[tuple intro](snippets/ValueTuples.cs#Introduction)]
+[!code-csharp-interactive[tuple intro](snippets/shared/ValueTuples.cs#Introduction)]
 
 As the preceding example shows, to define a tuple type, you specify types of all its data members and, optionally, the [field names](#tuple-field-names). You cannot define methods in a tuple type, but you can use the methods provided by .NET, as the following example shows:
 
-[!code-csharp-interactive[tuple methods](snippets/ValueTuples.cs#MethodOnTuples)]
+[!code-csharp-interactive[tuple methods](snippets/shared/ValueTuples.cs#MethodOnTuples)]
 
 Beginning with C# 7.3, tuple types support [equality operators](../operators/equality-operators.md) `==` and `!=`. For more information, see the [Tuple equality](#tuple-equality) section.
 
@@ -24,13 +24,13 @@ Tuple types are [value types](value-types.md); tuple elements are public fields.
 
 You can define tuples with an arbitrary large number of elements:
 
-[!code-csharp-interactive[large tuple](snippets/ValueTuples.cs#LargeTuple)]
+[!code-csharp-interactive[large tuple](snippets/shared/ValueTuples.cs#LargeTuple)]
 
 ## Use cases of tuples
 
 One of the most common use cases of tuples is as a method return type. That is, instead of defining [`out` method parameters](../keywords/out-parameter-modifier.md), you can group method results in a tuple return type, as the following example shows:
 
-[!code-csharp-interactive[multiple method outputs](snippets/ValueTuples.cs#MultipleReturns)]
+[!code-csharp-interactive[multiple method outputs](snippets/shared/ValueTuples.cs#MultipleReturns)]
 
 As the preceding example shows, you can work with the returned tuple instance directly or [deconstruct](#tuple-assignment-and-deconstruction) it in separate variables.
 
@@ -42,11 +42,11 @@ Typically, you use tuples to group loosely related data elements. That is usuall
 
 You can explicitly specify the names of tuple fields either in a tuple initialization expression or in the definition of a tuple type, as the following example shows:
 
-[!code-csharp-interactive[explicit field names](snippets/ValueTuples.cs#ExplicitFieldNames)]
+[!code-csharp-interactive[explicit field names](snippets/shared/ValueTuples.cs#ExplicitFieldNames)]
 
 Beginning with C# 7.1, if you don't specify a field name, it may be inferred from the name of the corresponding variable in a tuple initialization expression, as the following example shows:
 
-[!code-csharp-interactive[inferred field names](snippets/ValueTuples.cs#InferFieldNames)]
+[!code-csharp-interactive[inferred field names](snippets/shared/ValueTuples.cs#InferFieldNames)]
 
 That's known as tuple projection initializers. The name of a variable isn't projected onto a tuple field name in the following cases:
 
@@ -57,7 +57,7 @@ In those cases you either explicitly specify the name of a field or access a fie
 
 The default names of tuple fields are `Item1`, `Item2`, `Item3` and so on. You can always use the default name of a field, even when a field name is specified explicitly or inferred, as the following example shows:
 
-[!code-csharp-interactive[default field names](snippets/ValueTuples.cs#DefaultFieldNames)]
+[!code-csharp-interactive[default field names](snippets/shared/ValueTuples.cs#DefaultFieldNames)]
 
 [Tuple assignment](#tuple-assignment-and-deconstruction) and [tuple equality comparisons](#tuple-equality) don't take field names into account.
 
@@ -72,21 +72,21 @@ C# supports assignment between tuple types that satisfy both of the following co
 
 Tuple element values are assigned following the order of tuple elements. The names of tuple fields are ignored and not assigned, as the following example shows:
 
-[!code-csharp-interactive[tuple assignment](snippets/ValueTuples.cs#Assignment)]
+[!code-csharp-interactive[tuple assignment](snippets/shared/ValueTuples.cs#Assignment)]
 
 You can also use the assignment operator `=` to *deconstruct* a tuple instance in separate variables. You can do that in one of the following ways:
 
 - Explicitly declare the type of each variable inside parentheses:
 
-  [!code-csharp-interactive[specify types of variables](snippets/ValueTuples.cs#DeconstructExplicit)]
+  [!code-csharp-interactive[specify types of variables](snippets/shared/ValueTuples.cs#DeconstructExplicit)]
 
 - Use the `var` keyword outside the parentheses to declare implicitly typed variables and let the compiler infer their types:
 
-  [!code-csharp-interactive[implicitly typed variables](snippets/ValueTuples.cs#DeconstructVar)]
+  [!code-csharp-interactive[implicitly typed variables](snippets/shared/ValueTuples.cs#DeconstructVar)]
 
 - Use existing variables:
 
-  [!code-csharp-interactive[existing variables](snippets/ValueTuples.cs#DeconstructExisting)]
+  [!code-csharp-interactive[existing variables](snippets/shared/ValueTuples.cs#DeconstructExisting)]
 
 For more information about deconstruction of tuples and other types, see [Deconstructing tuples and other types](../../deconstruct.md).
 
@@ -94,7 +94,7 @@ For more information about deconstruction of tuples and other types, see [Decons
 
 Beginning with C# 7.3, tuple types support the `==` and `!=` operators. These operators compare members of the left-hand operand with the corresponding members of the right-hand operand following the order of tuple elements.
 
-[!code-csharp-interactive[tuple equality](snippets/ValueTuples.cs#TupleEquality)]
+[!code-csharp-interactive[tuple equality](snippets/shared/ValueTuples.cs#TupleEquality)]
 
 As the preceding example shows, the `==` and `!=` operations don't take into account tuple field names.
 
@@ -105,13 +105,13 @@ Two tuples are comparable when both of the following conditions are satisfied:
 
 The `==` and `!=` operators compare tuples in short-circuiting way. That is, an operation stops as soon as it meets a pair of non equal elements or reaches the ends of tuples. However, before any comparison, *all* tuple elements are evaluated, as the following example shows:
 
-[!code-csharp-interactive[tuple element evaluation](snippets/ValueTuples.cs#TupleEvaluationForEquality)]
+[!code-csharp-interactive[tuple element evaluation](snippets/shared/ValueTuples.cs#TupleEvaluationForEquality)]
 
 ## Tuples as out parameters
 
 Typically, you refactor a method that has [`out` parameters](../keywords/out-parameter-modifier.md) into a method that returns a tuple. However, there are cases in which an `out` parameter can be of a tuple type. The following example shows how to work with tuples as `out` parameters:
 
-[!code-csharp-interactive[tuple as out parameter](snippets/ValueTuples.cs#TupleAsOutParameter)]
+[!code-csharp-interactive[tuple as out parameter](snippets/shared/ValueTuples.cs#TupleAsOutParameter)]
 
 ## Tuples vs `System.Tuple`
 

@@ -1,11 +1,13 @@
 ---
 title: .NET Framework installation guide
 description: Learn how to install the .NET Framework on Windows.
-ms.date: 08/03/2017
+ms.date: 10/21/2020
 ---
 # Installation guide
 
 You can install .NET Framework on various Windows versions.
+
+[!INCLUDE [net-framework-future](../../../includes/net-framework-future.md)]
 
 ## Supported Windows versions
 
@@ -21,7 +23,7 @@ You can install .NET Framework on various Windows versions.
 
 ## See also
 
-- [Download the .NET Framework](https://dotnet.microsoft.com/download)
+- [Download .NET Framework](https://dotnet.microsoft.com/download)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)
-- [Install the .NET Framework for developers](guide-for-developers.md)
-- [Deploy the .NET Framework for developers](../deployment/deployment-guide-for-developers.md)
+- [Install .NET Framework for developers](guide-for-developers.md)
+- [Deploy .NET Framework for developers](../deployment/deployment-guide-for-developers.md)

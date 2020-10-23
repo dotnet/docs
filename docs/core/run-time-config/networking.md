@@ -16,7 +16,6 @@ ms.topic: reference
 
 - Since .NET Core 3.1: If you omit this setting, support for the HTTP/2 protocol is enabled. This is equivalent to setting the value to `true`.
 
-
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | `false` - disabled<br/>`true` - enabled |
@@ -46,7 +45,6 @@ ms.topic: reference
 - This switch allows relaxing the HTTP header validation, enabling <xref:System.Net.Http.SocketsHttpHandler> to send ISO-8859-1 (Latin-1) encoded characters in headers.
 
 - If you omit this setting, an attempt to send a non-ASCII character will result in <xref:System.Net.Http.HttpRequestException>. This is equivalent to setting the value to `false`.
-
 
 | | Setting name | Values |
 | - | - | - |

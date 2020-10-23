@@ -22,7 +22,7 @@ namespace QuotedNumbers
                 Summary = "Hot"
             };
 
-            JsonSerializerOptions options = new(JsonSerializerDefaults.Web)
+            JsonSerializerOptions options = new()
             {
                 NumberHandling = JsonNumberHandling.WriteAsString,
                 WriteIndented = true
@@ -31,7 +31,7 @@ namespace QuotedNumbers
             string forecastJson = JsonSerializer.Serialize<Forecast>(forecast, options);
             Console.WriteLine($"Output JSON:\n{forecastJson}");
 
-            options = new(JsonSerializerDefaults.Web)
+            options = new()
             {
                 NumberHandling = JsonNumberHandling.AllowReadingFromString
             };
@@ -48,10 +48,10 @@ namespace QuotedNumbers
 //
 //Output JSON:
 //{
-//  "date": "2020-10-21T15:40:06.9109159-07:00",
-//  "temperatureC": "40",
-//  "summary": "Hot"
+//  "Date": "2020-10-23T12:27:06.4017385-07:00",
+//  "TemperatureC": "40",
+//  "Summary": "Hot"
 //}
-//Date: 10 / 21 / 2020 3:40:06 PM
+//Date: 10/23/2020 12:27:06 PM
 //TemperatureC: 40
 //Summary: Hot

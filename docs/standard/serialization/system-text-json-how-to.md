@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code.
-ms.date: 10/19/2020
+ms.date: 10/23/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -110,12 +110,15 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 
 ## Serialization behavior
 ::: zone pivot="dotnet-5-0"
+
 * By default, all public properties are serialized. You can [specify properties to exclude](#exclude-properties-from-serialization).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
 * By default, circular references are detected and exceptions thrown. You can preserve [references and handle circular references](#preserve-references-and-handle-circular-references).
-* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded. You can [include fields](#fields).
+* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are excluded. You can [include fields](#include-fields).
+
+When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -128,8 +131,8 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 ::: zone-end
 
 Supported types include:
-
 ::: zone pivot="dotnet-5-0"
+
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
 * User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
@@ -141,6 +144,7 @@ Supported types include:
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
+
 * .NET primitives that map to JavaScript primitives, such as numeric types, strings, and Boolean.
 * User-defined [plain old CLR objects (POCOs)](https://en.wikipedia.org/wiki/Plain_old_CLR_object).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
@@ -188,10 +192,11 @@ The following behaviors apply when deserializing JSON:
 * Non-public constructors are ignored by the serializer. However, parameterized constructors can be used if a parameterless constructor isn't available.
 * Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](#immutable-types-and-records).
 * By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
-* Fields are supported. See [Fields](#fields).
-* 
+* By default, fields are excluded. You can [include fields](#include-fields).
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
+
+    When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -226,7 +231,7 @@ Here's an example type to be serialized and pretty-printed JSON output:
 }
 ```
 
-## Fields
+## Include fields
 
 ::: zone pivot="dotnet-5-0"
 Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include fields when serializing or deserializing, as shown in the following example:
@@ -427,7 +432,7 @@ Here's an example type to serialize and JSON output:
 ```
 
 ::: zone pivot="dotnet-5-0"
-You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property. The <xref:System.Text.Json.Serialization.JsonIgnoreCondition>JsonIgnoreCondition enum provides the following options:
+You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property. The <xref:System.Text.Json.Serialization.JsonIgnoreCondition> enum provides the following options:
 
 * `Always` - The property will always be ignored. If no `Condition` is specified, this option is assumed.
 * `Never` - The property will always be serialized and deserialized, regardless of the `IgnoreNullValues` global setting.
@@ -485,7 +490,7 @@ This setting applies to serialization and deserialization. For information about
 ### Exclude default values of value types
 
 ::: zone pivot="dotnet-5-0"
-To exclude from serialization default values of value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:
+To prevent serialization of default values in value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs":::
 ::: zone-end
@@ -812,14 +817,14 @@ The following code illustrates use of the `Preserve` setting.
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs":::
 
-Other notes about preserving references:
+Here are some other notes about preserving references:
 
 * `MaxDepth` validation is not affected.
 * The following types can be serialized as references but can't be deserialized as references:
   * Immutable types
   * Arrays
   * Value types, such as structs
-* To determine if objects are equal, `System.Text.Json` uses the default equality of `Hashset` or`Dictionary`, which uses <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> and <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+* To determine if objects are equal, `System.Text.Json` uses the default equality of `Hashset` or `Dictionary`, which calls <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> or <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 * An exception is thrown if there are properties other than `$ref` in a JSON reference object.
 * The <xref:System.Text.Json.Serialization.ReferenceResolver> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/dotnet-docs/blob/master/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolver.cs).
 
@@ -848,7 +853,7 @@ When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers 
 ## Immutable types and Records
 
 ::: zone pivot="dotnet-5-0"
-`System.Text.Json` lets you select a parameterized construction to enable deserializing an immutable class or struct. To specify the constructor to use, apply the <xref:System.Text.Json.Serialization.JsonConstructorAttribute.%23ctor%2A>, as shown in the following example:
+`System.Text.Json` lets you select a parameterized constructor, which makes it possible to deserialize an immutable class or struct. To specify the constructor to use, apply the <xref:System.Text.Json.Serialization.JsonConstructorAttribute.%23ctor%2A>, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs":::
 
@@ -858,10 +863,10 @@ Records in C# 9 are also supported, as shown in the following example:
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-`JsonConstructorAttribute` and Record support aren't available in <xref:System.Text.Json> 3.1.
+`JsonConstructorAttribute` and C# 9 Record support aren't available in `System.Text.Json` 3.1.
 ::: zone-end
 
-## Copy a JsonSerializerOptions instance
+## Copy JsonSerializerOptions
 
 ::: zone pivot="dotnet-5-0"
 There is a <xref:System.Text.Json.JsonSerializerOptions> constructor that lets you create a new instance with the same options as an existing instance, as shown in the following example:
@@ -876,7 +881,13 @@ A constructor that takes an existing instance is not available in `System.Text.J
 ## Web defaults for JsonSerializerOptions
 
 ::: zone pivot="dotnet-5-0"
-There is a <xref:System.Text.Json.JsonSerializerOptions> constructor that lets you create a new instance with [the default options that ASP.NET Core uses for web apps](xref:System.Text.Json.JsonSerializerDefaults.Web), as shown in the following example:
+Here are the options that have different defaults for web apps:
+
+* <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
+* <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
+* <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A> = <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>
+
+There's a <xref:System.Text.Json.JsonSerializerOptions> constructor that lets you create a new instance with [the default options that ASP.NET Core uses for web apps](xref:System.Text.Json.JsonSerializerDefaults.Web), as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs":::
 ::: zone-end
@@ -889,7 +900,7 @@ A constructor that specifies a set of defaults is not available in `System.Text.
 
 ::: zone pivot="dotnet-5-0"
 
-Serializing and deserializing JSON payloads from the network are common operations. Extension methods on <xref:System.Net.Http.HttpClient> let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](xref:System.Text.Json.JsonSerializerDefaults.Web).
+Serializing and deserializing JSON payloads from the network are common operations. Extension methods on <xref:System.Net.Http.HttpClient> let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
 
 The following example illustrates use of the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A>:
 
@@ -897,7 +908,7 @@ The following example illustrates use of the <xref:System.Net.Http.Json.HttpClie
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-Extension methods on `HttpClient` are not available in <xref:System.Text.Json> 3.1.
+Extension methods on `HttpClient` are not available in `System.Text.Json` 3.1.
 ::: zone-end
 
 ## Utf8JsonReader, Utf8JsonWriter, and JsonDocument

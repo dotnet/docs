@@ -17,7 +17,7 @@ helpviewer_keywords:
 
 This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.com/json) to <xref:System.Text.Json>.
 
-The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). The `System.Text.Json` library is included in the [.NET Core 3.0](https://aka.ms/netcore3download) shared framework. For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
+The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). The `System.Text.Json` library is included in the runtime for [.NET Core 3.0](https://aka.ms/netcore3download) and later versions. For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
 
 * .NET Standard 2.0 and later versions
 * .NET Framework 4.7.2 and later versions
@@ -220,14 +220,14 @@ public class ExampleClass
 The JSON value could not be converted to System.String.
 ```
 
-## Scenarios using JsonSerializer that require workarounds in 3.1
+## Scenarios using JsonSerializer that are supported starting in 5.0
 
 ### Quoted numbers
 
 ::: zone pivot="dotnet-5-0"
 `Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To enable that behavior in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonNumberHandling.WriteAsString> or <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>.
 
-If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies [web defaults](xref:System.Text.Json.JsonSerializerDefaults.Web) when it uses `System.Text.Json`, which allows quoted numbers.
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies [web defaults](system-text-json-how-to.md#web-defaults-for-jsonserializeroptions) when it uses `System.Text.Json`, which allows quoted numbers.
 
 For more information, see [Quoted numbers](system-text-json-how-to.md#quoted-numbers).
 ::: zone-end
@@ -245,7 +245,15 @@ Register this custom converter by [using an attribute](system-text-json-converte
 
 ### Specify constructor to use
 
-The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which constructor to call when deserializing to a POCO. <xref:System.Text.Json> supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
+The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which constructor to call when deserializing to a POCO.
+
+::: zone pivot="dotnet-5-0"
+`System.Text.Json` also has a [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute) attribute. For more information, see [Immutable types and Records](system-text-json-how-to.md#immutable-types-and-records).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+<xref:System.Text.Json> supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
+::: zone-end
 
 ### Conditionally ignore a property
 
@@ -308,7 +316,7 @@ This approach requires additional logic if:
 `Newtonsoft.Json` can serialize and deserialize fields as well as properties.
 
 ::: zone pivot="dotnet-5-0"
-In <xref:System.Text.Json>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include fields when serializing or deserializing. For an example, see [Fields](system-text-json-how-to.md#fields).
+In <xref:System.Text.Json>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include fields when serializing or deserializing. For an example, see [Include fields](system-text-json-how-to.md#include-fields).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -327,7 +335,7 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 `Newtonsoft.Json` also has a `ReferenceLoopHandling` setting that lets you ignore circular references rather than throw an exception.
 
 ::: zone pivot="dotnet-5-0"
-To preserve references and handle circular references in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A?displayProperty=fullName> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. The `ReferenceHandler.Preserve` setting is equivalent to `ReferenceLoopHandling` = `true` and `PreserveReferencesHandling` = `true` in `Newtonsoft.Json`.
+To preserve references and handle circular references in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. The `ReferenceHandler.Preserve` setting is equivalent to `ReferenceLoopHandling` = `true` and `PreserveReferencesHandling` = `true` in `Newtonsoft.Json`.
 
 Some related `Newtonsoft.Json` features are not supported:
 
@@ -345,7 +353,7 @@ For more information, see [Preserve references and handle circular references](s
 ### Dictionary with non-string key
 
 ::: zone pivot="dotnet-5-0"
-Both `Newtonsoft.Json` and `System.Text.Json` 5.0 support collections of type `Dictionary<TKey, TValue>`.
+Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dictionary<TKey, TValue>`.
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

@@ -12,17 +12,6 @@ namespace NonPublicAccessors
         public int TemperatureC { get; private set; }
         [JsonInclude]
         public string Summary { private get; set; }
-
-        public Forecast()
-        {
-        }
-
-        public Forecast (DateTime date, int temperatureC, string summary)
-        {
-            Date = date;
-            TemperatureC = temperatureC;
-            Summary = summary;
-        }
     };
 
     public class Program

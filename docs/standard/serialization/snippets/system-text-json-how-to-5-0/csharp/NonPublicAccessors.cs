@@ -29,30 +29,22 @@ namespace NonPublicAccessors
     {
         public static void Main()
         {
-            Forecast forecast = new(DateTime.Now, 40, "Hot");
+            string json = "{\"Date\":\"2020-10-23T09:51:03.8702889-07:00\",\"TemperatureC\":40,\"Summary\":\"Hot\"}";
+            Console.WriteLine($"Input JSON: {json}");
 
-            JsonSerializerOptions options = new()
-            {
-                WriteIndented = true
-            };
-
-            string forecastJson = JsonSerializer.Serialize<Forecast>(forecast, options);
-            Console.WriteLine($"Output JSON:\n{forecastJson}");
-
-            Forecast forecastDeserialized = JsonSerializer.Deserialize<Forecast>(forecastJson, options);
+            Forecast forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json);
             Console.WriteLine($"Date: {forecastDeserialized.Date}");
             Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");
+
+            json = JsonSerializer.Serialize<Forecast>(forecastDeserialized);
+            Console.WriteLine($"Output JSON: {json}");
         }
     }
 }
 
 // Produces output like the following example:
 //
-//Output JSON:
-//{
-//  "Date": "2020-10-21T15:40:06.8956296-07:00",
-//  "TemperatureC": 40,
-//  "Summary": "Hot"
-//}
-//Date: 10 / 21 / 2020 3:40:06 PM
+//Input JSON: { "Date":"2020-10-23T09:51:03.8702889-07:00","TemperatureC":40,"Summary":"Hot"}
+//Date: 10 / 23 / 2020 9:51:03 AM
 //TemperatureC: 40
+//Output JSON: { "Date":"2020-10-23T09:51:03.8702889-07:00","TemperatureC":40,"Summary":"Hot"}

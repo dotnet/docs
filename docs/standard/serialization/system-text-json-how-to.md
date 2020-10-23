@@ -182,12 +182,14 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 The following behaviors apply when deserializing JSON:
 
 ::: zone pivot="dotnet-5-0"
+
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Non-public constructors are ignored by the serializer. However, parameterized constructors can be used if a parameterless constructor isn't available.
 * Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](#immutable-types-and-records).
 * By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
 * Fields are supported. See [Fields](#fields).
+* 
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 ::: zone-end
@@ -234,6 +236,18 @@ Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProper
 
 ::: zone pivot="dotnet-core-3-1"
 Fields are not supported in `System.Text.Json` 3.1.
+::: zone-end
+
+## Non-public property accessors
+
+::: zone pivot="dotnet-5-0"
+To enable use of a non-public property accessor, use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs":::
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+Non-public property accessors are not supported in `System.Text.Json` 3.1.
 ::: zone-end
 
 ## Customize JSON names and values

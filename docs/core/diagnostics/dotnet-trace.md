@@ -194,15 +194,13 @@ NOTE: This works for apps running .NET 5.0 or later only.
 
 Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, it is possible to do this by using dotnet-trace.
 
-Suppose there is a .NET 5.0 application named `hello.exe` with `arg1` and `arg2` that you want to collect a trace from its startup.
-
-To do this, run the following command:
+This will launch `hello.exe` with `arg1` and `arg2` as its command line arguments and collect a trace from its runtime startup:
 
 ```console
 dotnet-trace collect -- hello.exe arg1 arg2
 ```
 
-This will launch `hello.exe` with `arg1` and `arg2` as its command line arguments and collect a trace from its runtime startup:
+The preceding command generates output similar to the following:
 
 ```console
 No profile or providers specified, defaulting to trace profile 'cpu-sampling'
@@ -223,6 +221,8 @@ You can stop collecting the trace by pressing `<Enter>` or `<Ctrl + C>` key. Doi
 
 > [!NOTE]
 > Launching `hello.exe` via dotnet-trace will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.
+> Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process.
+> If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable.
 
 ## View the trace captured from dotnet-trace
 

@@ -51,7 +51,7 @@ Periodically collect selected counter values and export them into a specified fi
 ### Synopsis
 
 ```console
-dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--counters] [counter_list] [--format] [-o|--output] [-- <command>]
+dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
 ```
 
 ### Options
@@ -64,7 +64,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 
   The number of seconds to delay between updating the displayed counters
 
-- **`--counters`**
+- **`--counters <COUNTERS>`**
 
   A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
 
@@ -156,7 +156,7 @@ Displays periodically refreshing values of selected counters.
 ### Synopsis
 
 ```console
-dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [counter_list] [-- <command>]
+dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--counters] [-- <command>]
 ```
 
 ### Options
@@ -169,7 +169,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
 
   The number of seconds to delay between updating the displayed counters
 
-- **`--counters`**
+- **`--counters <COUNTERS>`**
 
   A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
 
@@ -185,7 +185,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
 - Monitor all counters from `System.Runtime` at a refresh interval of 3 seconds:
 
   ```console
-  > dotnet-counters monitor --process-id 1902  --refresh-interval 3 System.Runtime
+  > dotnet-counters monitor --process-id 1902  --refresh-interval 3 --counters System.Runtime
   Press p to pause, r to resume, q to quit.
       Status: Running
 

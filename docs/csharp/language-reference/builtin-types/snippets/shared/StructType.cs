@@ -59,8 +59,8 @@ namespace builtin_types
                 Y = y;
             }
 
-            public double X { get; }
-            public double Y { get; }
+            public double X { get; init; }
+            public double Y { get; init; }
 
             public override string ToString() => $"({X}, {Y})";
         }
@@ -80,8 +80,10 @@ namespace builtin_types
             }
             // </SnippetReadonlyProperty>
 
-            public double X { get; }
-            public double Y { get; }
+            // <ReadonlyWithInit>
+            public readonly double X { get; init; }
+            // </ReadonlyWithInit>
+            public readonly double Y { get; init; }
 
             // <SnippetReadonlyMethod>
             public readonly double Sum()

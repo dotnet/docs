@@ -135,7 +135,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`--type <TYPE>`**
 
-  Filters templates based on available types. Predefined values are `project`, `item`, and `other`.
+  Filters templates based on available types. Predefined values are `project` and `item`.
 
 - **`-u|--uninstall [PATH|NUGET_ID]`**
 

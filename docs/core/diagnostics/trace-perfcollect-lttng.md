@@ -14,6 +14,7 @@ When a performance problem is encountered on Linux, collecting a trace with `per
 `perfcollect` is a bash script that leverages [Linux Tracing Tookit-Next Generation (LTTng)](https://lttng.org) to collect events written from the runtime or any [EventSource](xref:System.Diagnostics.Tracing.EventListener), as well as [perf](https://perf.wiki.kernel.org/) to collect CPU samples of the target process.
 
 ## Preparing Your Machine
+
 Follow these steps to prepare your machine to collect a performance trace with `perfcollect`.
 
 1. Download `perfcollect`.
@@ -125,15 +126,16 @@ Once you have done this, `perfcollect` will use crossgen to include framework sy
 
 ### Alternative: Turn off use of precompiled code
 
-If you don't have the ability to update the .NET Runtime (to add `crossgen`), or if the above procedure did not work for some reason, there is another approach to getting framework symbols. You can tell the runtime to simply not use the precompiled framework code. The code will be Just-In-Time compiled and the `crossgen` tool is not needed. 
+If you don't have the ability to update the .NET Runtime (to add `crossgen`), or if the above procedure did not work for some reason, there is another approach to getting framework symbols. You can tell the runtime to simply not use the precompiled framework code. The code will be Just-In-Time compiled and the `crossgen` tool is not needed.
 
-    > [!NOTE] Choosing this approach may increase the startup time for your application.
+> [!NOTE]
+> Choosing this approach may increase the startup time for your application.
 
 To do this, you can add the following environment variable:
 
-    > ```bash
-    > export COMPlus_ZapDisable=1
-    > ```
+```bash
+export COMPlus_ZapDisable=1
+```
 
 With this change you should get the symbols for all .NET code.
 
@@ -143,24 +145,24 @@ Most of the time you are interested in your own code, which `perfcollect` resolv
 
 There is a global command called [dotnet-symbol](https://github.com/dotnet/symstore/blob/master/src/dotnet-symbol/README.md#symbol-downloader-dotnet-cli-extension) which does this. To use dotnet-symbol to get native runtime symbols:
 
-   1. Install `dotnet-symbol`:
+1. Install `dotnet-symbol`:
 
-```bash
-     dotnet tool install -g dotnet-symbol
-```
+    ```bash
+    dotnet tool install -g dotnet-symbol
+    ```
 
-   2. Download the symbols. If your installed version of the .NET Core runtime is 2.1.0 the command to do this is
+2. Download the symbols. If your installed version of the .NET Core runtime is 2.1.0 the command to do this is
 
-```bash
+    ```bash
     mkdir mySymbols
     dotnet symbol --symbols --output mySymbols  /usr/share/dotnet/shared/Microsoft.NETCore.App/2.1.0/lib*.so
-```
+    ```
 
-   3. Copy the symbols to the correct place
+3. Copy the symbols to the correct place
 
-```bash
+    ```bash
     sudo cp mySymbols/* /usr/share/dotnet/shared/Microsoft.NETCore.App/2.1.0
-```
+    ```
 
 After this, you should get symbolic names for the native dlls when you run `perfcollect`.
 
@@ -185,6 +187,7 @@ Traces are best viewed using PerfView on Windows.  Note that we're currently loo
     > ```
 
 ### Select a View
+
 PerfView will display the list of views that are supported based on the data contained in the trace file.
 
 - For CPU investigations, choose **CPU stacks**.

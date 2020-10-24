@@ -18,81 +18,83 @@ Follow these steps to prepare your machine to collect a performance trace with `
 
 1. Download `perfcollect`.
 
-	> ```bash
-	> curl -OL http://aka.ms/perfcollect
-	> ```
+    > ```bash
+    > curl -OL http://aka.ms/perfcollect
+    > ```
 
 2. Make the script executable.
 
-	> ```bash
-	> chmod +x perfcollect
-	> ```
+    > ```bash
+    > chmod +x perfcollect
+    > ```
 
 3. Install tracing prerequisites - these are the actual tracing libraries.
 
-	> ```bash
-	> sudo ./perfcollect install
-	> ```
+    > ```bash
+    > sudo ./perfcollect install
+    > ```
 
     This will install the following prerequisites on your machine:
-    
+
     1. `perf`: the Linux Performance Events sub-system and companion user-mode collection/viewer application. `perf` is part of the Linux kernel source, but is not usually installed by default.
 
     2. `LTTng`: Used to capture event data emitted at runtime by CoreCLR. This data is then used to analyze the behavior of various runtime components such as the GC, JIT and thread pool.
 
-## Collecting a Trace ##
+## Collecting a Trace
+
 1. Have two shells available - one for controlling tracing, referred to as **[Trace]**, and one for running the application, referred to as **[App]**.
 
 2. **[App]** Setup the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
 
-	> ```bash
-	> export COMPlus_PerfMapEnabled=1
-	> export COMPlus_EnableEventLog=1
-	> ```
+    > ```bash
+    > export COMPlus_PerfMapEnabled=1
+    > export COMPlus_EnableEventLog=1
+    > ```
 
 3. **[Trace]** Start collection.
 
-	> ```bash
-	> sudo ./perfcollect collect sampleTrace
-	> ```
+    > ```bash
+    > sudo ./perfcollect collect sampleTrace
+    > ```
 
-	Expected Output:
+    Expected Output:
 
-	> ```bash
-	> Collection started.  Press CTRL+C to stop.
-	> ```
+    > ```bash
+    > Collection started.  Press CTRL+C to stop.
+    > ```
 
 4. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem.
 
-	> ```bash
-	> dotnet run
-	> ```
+    > ```bash
+    > dotnet run
+    > ```
 
 5. **[Trace]** Stop collection - hit CTRL+C.
 
-	> ```bash
-	> ^C
-	> ...STOPPED.
-	>
-	> Starting post-processing. This may take some time.
-	>
-	> Generating native image symbol files
-	> ...SKIPPED
-	> Saving native symbols
-	> ...FINISHED
-	> Exporting perf.data file
-	> ...FINISHED
-	> Compressing trace files
-	> ...FINISHED
-	> Cleaning up artifacts
-	> ...FINISHED
-	>
-	> Trace saved to sampleTrace.trace.zip
-	> ```
+    > ```bash
+    > ^C
+    > ...STOPPED.
+    >
+    > Starting post-processing. This may take some time.
+    >
+    > Generating native image symbol files
+    > ...SKIPPED
+    > Saving native symbols
+    > ...FINISHED
+    > Exporting perf.data file
+    > ...FINISHED
+    > Compressing trace files
+    > ...FINISHED
+    > Cleaning up artifacts
+    > ...FINISHED
+    >
+    > Trace saved to sampleTrace.trace.zip
+    > ```
 
-	The compressed trace file is now stored in the current working directory.
+    The compressed trace file is now stored in the current working directory.
 
-## Resolving Framework Symbols ##
+## Resolving Framework Symbols
+
 Framework symbols need to be manually generated at the time the trace is collected. They are different than app-level symbols because the framework is pre-compiled while apps are just-in-time-compiled. For code like the framework that was precompiled to native code, you need a special tool called crossgen that knows how to generate the mapping from the native code to the name of the methods.
 
 `perfcollect` can handle most of the details for you, but it needs to have the crossgen tool and by default this is not part of the standard .NET distribution. If it is not there it warns you and refers you to these instructions. To fix things you need to fetch exactly the right version of crossgen for the runtime you happen to be using. If you place the crossgen tool in the same directory as the .NET Runtime DLLs (e.g. libcoreclr.so), then `perfcollect` can find it and add the framework symbols to the trace file for you.
@@ -121,7 +123,7 @@ The `crossgen` tool needs to be put next to the runtime that is actually used by
 
 Once you have done this, `perfcollect` will use crossgen to include framework symbols. The warning that `perfcollect` used to issue should go away. This only has to be one once per machine (until you update your runtime).
 
-### Alternative: Turn off use of precompiled code ###
+### Alternative: Turn off use of precompiled code
 
 If you don't have the ability to update the .NET Runtime (to add `crossgen`), or if the above procedure did not work for some reason, there is another approach to getting framework symbols. You can tell the runtime to simply not use the precompiled framework code. The code will be Just-In-Time compiled and the `crossgen` tool is not needed. 
 
@@ -129,13 +131,13 @@ If you don't have the ability to update the .NET Runtime (to add `crossgen`), or
 
 To do this, you can add the following environment variable:
 
-	> ```bash
-	> export COMPlus_ZapDisable=1
-	> ```
+    > ```bash
+    > export COMPlus_ZapDisable=1
+    > ```
 
 With this change you should get the symbols for all .NET code.
 
-## Getting Symbols For the Native Runtime ##
+## Getting Symbols For the Native Runtime
 
 Most of the time you are interested in your own code, which `perfcollect` resolves by default. Sometimes it is very useful to see what is going on inside the .NET DLLs (which is what the last section was about), but sometimes what is going on in the native runtime dlls (typically libcoreclr.so), is interesting.  `perfcollect` will resolve the symbols for these when it converts its data, but only if the symbols for these native DLLs are present (and are beside the library they are for).
 
@@ -162,27 +164,35 @@ There is a global command called [dotnet-symbol](https://github.com/dotnet/symst
 
 After this, you should get symbolic names for the native dlls when you run `perfcollect`.
 
-## Collecting in a Docker Container ##
+## Collecting in a Docker Container
+
 For more information on how to use `perfcollect` in container environments, refer to [Collect diagnostics in containers](./diagnostics-in-containers.md) documentation.
 
-## Viewing a Trace ##
+## Viewing a Trace
+
 Traces are best viewed using PerfView on Windows.  Note that we're currently looking into porting the analysis pieces of PerfView to Linux so that the entire investigation can occur on Linux.
 
-### Open the Trace File ###
+### Open the Trace File
+
 1. Copy the trace.zip file from Linux to a Windows machine.
+
 2. Download PerfView from <http://aka.ms/perfview>.
+
 3. Run PerfView.exe
 
-	> ```cmd
-	> PerfView.exe <path to trace.zip file>
-	> ```
+    > ```cmd
+    > PerfView.exe <path to trace.zip file>
+    > ```
 
-### Select a View ###
+### Select a View
 PerfView will display the list of views that are supported based on the data contained in the trace file.
 
 - For CPU investigations, choose **CPU stacks**.
+
 - For very detailed GC information, choose **GCStats**.
+
 - For per-process/module/method JIT information, choose **JITStats**.
+
 - If there is not a view for the information you need, you can try looking for the events in the raw events view.  Choose **Events**.
 
 For more details on how to interpret views in PerfView, see help links in the view itself, or from the main window in PerfView choose **Help->Users Guide**.

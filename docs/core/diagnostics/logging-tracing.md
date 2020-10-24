@@ -52,7 +52,7 @@ The following APIs are more event oriented. Rather than logging simple strings t
     - .NET Core's EventPipe on all platforms
     - [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal)
     - [LTTng tracing framework for Linux](https://lttng.org/)
-      - Walkthrough: Collect a .NET trace using LTTng and PerfCollect.
+      - Walkthrough: [Collect a .NET trace using LTTng and PerfCollect](trace-perfcollect-lttng.md).
 
 - <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType>
   - Included in .NET Core and as a [NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource) for .NET Framework.

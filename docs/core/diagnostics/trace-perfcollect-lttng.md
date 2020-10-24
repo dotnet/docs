@@ -13,8 +13,6 @@ When a performance problem is encountered on Linux, collecting a trace with `per
 
 `perfcollect` is a bash script that leverages [Linux Tracing Tookit-Next Generation (LTTng)](https://lttng.org) to collect events written from the runtime or any [EventSource](xref:System.Diagnostics.Tracing.EventListener), as well as [perf](https://perf.wiki.kernel.org/) to collect CPU samples of the target process.
 
-
-
 ## Preparing Your Machine
 Follow these steps to prepare your machine to collect a performance trace with `perfcollect`.
 

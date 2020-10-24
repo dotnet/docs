@@ -21,7 +21,7 @@ The experiment encapsulates the configuration and results for one or more machin
 
 A workspace is an Azure Machine Learning resource that provides a central place for all Azure Machine Learning resources and artifacts created as part of training run.
 
-To create an Azure Machine Learning workspace, the following are required:
+To create an Azure Machine Learning compute, the following are required:
 
 - Name: A name for your workspace between 3-33 characters. Names may only contain alphanumeric characters and hyphens.
 - Region: The geographic location of the data center where your workspace and resources are deployed to. It is recommended that you choose a location close to where you or your customers are.

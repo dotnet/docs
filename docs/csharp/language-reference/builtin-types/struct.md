@@ -1,7 +1,7 @@
 ---
-description: Learn about the struct type in C#
 title: "Structure types - C# reference"
-ms.date: 04/21/2020
+description: Learn about the struct type in C#
+ms.date: 10/23/2020
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -31,7 +31,7 @@ Beginning with C# 7.2, you use the `readonly` modifier to declare that a structu
 All data members of a `readonly` struct must be read-only as follows:
 
 - Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
-- Any property, including auto-implemented ones, must be read-only
+- Any property, including auto-implemented ones, must be read-only. In C# 9.0 and later, a property may have an [`init` accessor](../../whats-new/csharp-9.md#init-only-setters).
 
 That guarantees that no member of a `readonly` struct modifies the state of the struct. In C# 8.0 and later, that means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 
@@ -62,6 +62,10 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 
   > [!NOTE]
   > The compiler declares a `get` accessor of an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of presence of the `readonly` modifier in a property declaration.
+
+  In C# 9.0 and later, you may apply the `readonly` modifier to a property or indexer with an `init` accessor:
+
+  :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
 You can't apply the `readonly` modifier to static members of a structure type.
 

@@ -7,6 +7,34 @@ ms.date: 11/13/2020
 
 # Understanding and updating dependencies
 
+After identifying the sequence in which the app's individual projects must be migrated, the next step is to understand each project's dependencies and update them if necessary. For platform dependencies, the best way to start is to run the [.NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer) on the assembly in question, and then look at the detailed results that are generated. You configure to tool to specify one or more target platforms, such as .NET 3.1 or .NET Standard 2.0, and results are provided with details for each platform targeted. Figure 3-4 shows an example of the output from the tool.
+
+![.NET Portability Analyzer report details](./media/Figure3-4.png)
+
+**Figure 3-4. .NET Portability Analyzer report details.**
+
+## Updating Class Library dependencies
+
+Large apps typically involve multiple projects, and most projects other than the ASP.NET MVC web project are likely to be class libraries. Class libraries tend to be the easiest to port between .NET platforms, especially compared to ASP.NET projects, which are among the most difficult (and typically need to be re-created).
+
+Teams can consider the [try-convert tool](https://github.com/dotnet/try-convert) for migrating class libraries to .NET Core. The try-convert tool analyzes a .NET project file and attempts to migrate it to the .NET Core project file format, making any modifications it can safely perform in the process. This tool won't work on an ASP.NET project, but can help speed up the process of migrating class libraries.
+
+The try-convert tool is deployed as a .NET Core command line tool. It only runs on Windows, since it's designed to work with .NET Framework apps. You can install it by running the following command from a command prompt:
+
+```powershell
+dotnet tool install -g try-convert
+```
+
+Once you've successfully installed the tool, you can run it from the command prompt by simply running `try-convert` in the folder where the class library's project file is located.
+
+## Migrating ASP.NET MVC Projects
+
+The `System.Web` namespace and types do not exist in .NET Core, so when you're analyzing dependencies and using tools like `try-convert` you'll find they don't offer many suggestions for automatic migration of ASP.NET MVC projects and any code in them that references `System.Web`. For these projects, you will need to start with a new ASP.NET Core web project and manually migrate files to this project.
+
+In general, it's a good practice to minimize how much of an app's business logic lives in its user interface layer. It's also best to keep controllers and views small. Apps that have followed this guidance will be easier to port than those that have a significant amount of their logic in the ASP.NET web project. If you have an app you're considering porting, but haven't begun the process yet, keep this in mind as you maintain it. Any effort you put toward minimizing how much code is in the ASP.NET MVC or Web API project will likely result in less work when the time comes to port the app.
+
+
+
 *Notes*
 
 - Understand and update dependencies
@@ -15,7 +43,6 @@ ms.date: 11/13/2020
 - Tools
   - [try-convert](https://github.com/dotnet/try-convert)
   - [apiport](https://github.com/microsoft/dotnet-apiport)
-
 
 ## References
 

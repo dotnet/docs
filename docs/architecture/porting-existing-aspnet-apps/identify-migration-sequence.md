@@ -13,7 +13,7 @@ Once you've identified the ASP.NET app you wish to migrate and have its dependen
 
 ![Project dependencies](./media/Figure3-1.png)
 
-Choose a particular front end application, an ASP.NET MVC 5 / Web API 2 project. Identify its dependencies in the solution, and map out their dependencies until you have a complete list. A diagram like the one shown in Figure 3-1 may be useful when mapping out project dependencies. Visual Studio may be able to produce a [dependency diagram for your solution](https://docs.microsoft.com/visualstudio/modeling/create-layer-diagrams-from-your-code), depending on which edition you're using.
+Choose a particular front end application, an ASP.NET MVC 5 / Web API 2 project. Identify its dependencies in the solution, and map out their dependencies until you have a complete list. A diagram like the one shown in Figure 3-1 may be useful when mapping out project dependencies. Visual Studio may be able to produce a [dependency diagram for your solution](https://docs.microsoft.com/visualstudio/modeling/create-layer-diagrams-from-your-code), depending on which edition you're using. [The .NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer) can also produce dependency diagrams. 
 
 Once you've mapped out the projects and their relationships with one another, you're ready to begin plan the order in which you'll migrate the projects. You typically want to begin with projects that have no dependencies, and then work your way up the tree to the projects that depend on these projects.
 
@@ -26,6 +26,7 @@ Missing from the diagram above are unit test projects. Hopefully there are tests
 ## References
 
 - [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/dotnet/core/porting/)
+- [The .NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer)
 
 >[!div class="step-by-step"]
 >[Previous](migrating-large-solutions.md)

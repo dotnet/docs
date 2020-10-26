@@ -32,7 +32,7 @@ namespace QuotedNumbers
                 (forecast, options);
             Console.WriteLine($"Output JSON:\n{forecastJson}");
 
-            options = new()
+            options = new JsonSerializerOptions()
             {
                 NumberHandling = JsonNumberHandling.AllowReadingFromString
             };

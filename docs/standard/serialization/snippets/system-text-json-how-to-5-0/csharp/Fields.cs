@@ -16,13 +16,11 @@ namespace Fields
             var json = "{\"date\":\"2020-09-06T11:31:01.923395-07:00\",\"temperatureC\":-1,\"summary\":\"Cold\"} ";
             Console.WriteLine($"Input JSON: {json}");
 
-            var options = new JsonSerializerOptions
-                (JsonSerializerDefaults.Web)
+            var options = new JsonSerializerOptions(JsonSerializerDefaults.Web)
             {
                 IncludeFields = true,
             };
-            var forecast = JsonSerializer.Deserialize<Forecast>
-                (json, options);
+            var forecast = JsonSerializer.Deserialize<Forecast>(json, options);
 
             Console.WriteLine($"forecast.Date: {forecast.Date}");
             Console.WriteLine($"forecast.TemperatureC: {forecast.TemperatureC}");

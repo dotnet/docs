@@ -840,7 +840,7 @@ Here are some other notes about preserving references:
 
 Some serializers encode numbers as JSON strings (surrounded by quotes). For example: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To make <xref:System.Text.Json> write numbers in quotes or accept numbers in quotes, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs" highlight="27,36":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs" highlight="27,37":::
 
 When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers are allowed because ASP.NET Core specifies [web default options](xref:System.Text.Json.JsonSerializerDefaults.Web).
 

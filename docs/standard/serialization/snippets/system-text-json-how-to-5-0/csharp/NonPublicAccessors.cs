@@ -21,8 +21,7 @@ namespace NonPublicAccessors
             string json = "{\"Date\":\"2020-10-23T09:51:03.8702889-07:00\",\"TemperatureC\":40,\"Summary\":\"Hot\"}";
             Console.WriteLine($"Input JSON: {json}");
 
-            Forecast forecastDeserialized = 
-                JsonSerializer.Deserialize<Forecast>(json);
+            Forecast forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json);
             Console.WriteLine($"Date: {forecastDeserialized.Date}");
             Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");
 

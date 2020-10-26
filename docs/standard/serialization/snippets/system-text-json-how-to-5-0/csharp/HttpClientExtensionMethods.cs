@@ -27,8 +27,7 @@ namespace HttpClientExtensionMethods
             Console.WriteLine($"Email: {user.Email}");
 
             // Post a new user.
-            HttpResponseMessage response = 
-                await client.PostAsJsonAsync("users", user);
+            HttpResponseMessage response = await client.PostAsJsonAsync("users", user);
             Console.WriteLine(
                 (response.IsSuccessStatusCode ? "Success" : "Error")
                     + $" - {response.StatusCode}");

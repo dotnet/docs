@@ -316,7 +316,7 @@ This approach requires additional logic if:
 `Newtonsoft.Json` can serialize and deserialize fields as well as properties.
 
 ::: zone pivot="dotnet-5-0"
-In <xref:System.Text.Json>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include fields when serializing or deserializing. For an example, see [Include fields](system-text-json-how-to.md#include-fields).
+In <xref:System.Text.Json>, use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include public fields when serializing or deserializing. For an example, see [Include fields](system-text-json-how-to.md#include-fields).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

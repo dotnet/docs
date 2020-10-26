@@ -853,7 +853,7 @@ When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers 
 ## Immutable types and Records
 
 ::: zone pivot="dotnet-5-0"
-`System.Text.Json` lets you select a parameterized constructor, which makes it possible to deserialize an immutable class or struct. To specify the constructor to use, apply the <xref:System.Text.Json.Serialization.JsonConstructorAttribute.%23ctor%2A>, as shown in the following example:
+`System.Text.Json` can use a parameterized constructor, which makes it possible to deserialize an immutable class or struct. For a class, if the only constructor is a parameterized one, that constructor will be used. For a struct, or a class with multiple constructors, specify the one to use by applying the [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute.%23ctor%2A) attribute, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="12":::
 

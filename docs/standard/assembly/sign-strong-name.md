@@ -5,8 +5,8 @@ ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "strong-named assemblies, signing with strong names"
   - "signing assemblies"
-  - "assemblies [.NET Framework], signing"
-  - "assemblies [.NET Framework], strong-named"
+  - "assemblies [.NET], signing"
+  - "assemblies [.NET], strong-named"
 ms.assetid: 2c30799a-a826-46b4-a25d-c584027a6c67
 dev_langs: 
   - "csharp"

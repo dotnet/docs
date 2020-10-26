@@ -1,5 +1,5 @@
 ---
-title: "Converting Strings to .NET Framework Data Types"
+title: "Converting Strings to .NET Data Types"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -7,14 +7,15 @@ dev_langs:
   - "vb"
 ms.assetid: 65455ef3-9120-412c-819b-d0f59f88ac09
 ---
-# Converting Strings to .NET Framework Data Types
-If you want to convert a string to a .NET Framework data type, use the **XmlConvert** method that fits the application requirements. For a list of all conversion methods available in the **XmlConvert** class, see <xref:System.Xml.XmlConvert>.  
+# Convert strings to .NET data types
+
+If you want to convert a string to a .NET data type, use the **XmlConvert** method that fits the application requirements. For a list of all conversion methods available in the **XmlConvert** class, see <xref:System.Xml.XmlConvert>.  
   
- The string returned from the **ToString** method is a string version of the data that is passed in. Additionally, there are several .NET Framework types that convert using the **XmlConvert** class yet they do not use the methods in the **System.Convert** class. The **XmlConvert** class follows the XML Schema (XSD) data type specification and has a data type that the **XmlConvert** can map to.  
+ The string returned from the **ToString** method is a string version of the data that is passed in. Additionally, there are several .NET types that convert using the **XmlConvert** class yet they do not use the methods in the **System.Convert** class. The **XmlConvert** class follows the XML Schema (XSD) data type specification and has a data type that the **XmlConvert** can map to.  
   
- The following table lists .NET Framework data types and the string types that are returned using XML Schema (XSD) data type mapping. These .NET Framework types cannot be processed using **System.Convert**.  
+ The following table lists .NET data types and the string types that are returned using XML Schema (XSD) data type mapping. These .NET types cannot be processed using **System.Convert**.  
   
-|.NET Framework type|String returned|  
+|.NET type|String returned|  
 |-------------------------|---------------------|  
 |Boolean|"true", "false"|  
 |Single.PositiveInfinity|"INF"|  
@@ -25,7 +26,7 @@ If you want to convert a string to a .NET Framework data type, use the **XmlConv
 |Timespan|Format is PnYnMnTnHnMnS that is, `P2Y10M15DT10H30M20S` is a duration of 2 years, 10 months, 15 days, 10 hours, 30 minutes, and 20 seconds.|  
   
 > [!NOTE]
-> If converting any of the .NET Framework types listed in the table to a string using the **ToString** method, the returned string is not the base type, but the XML Schema (XSD) string type.  
+> If converting any of the .NET types listed in the table to a string using the **ToString** method, the returned string is not the base type, but the XML Schema (XSD) string type.  
   
  The **DateTime** and **Timespan** value type differs in that a **DateTime** represents an instant in time, whereas a **TimeSpan** represents a time interval. The **DateTime** and **Timespan** formats are specified in the XML Schema (XSD) data types specification. For example:  
   
@@ -63,12 +64,12 @@ writer.WriteElementString("Number", XmlConvert.ToString(value));
   
  `<Number>200</Number>`  
   
- However, if you are converting a string to **Boolean**, **Single**, or **Double**, the .NET Framework type that is returned is not the same as the type returned when using the **System.Convert** class.  
+ However, if you are converting a string to **Boolean**, **Single**, or **Double**, the .NET type that's returned is not the same as the type returned when using the **System.Convert** class.  
   
 ## String to Boolean  
  The following table shows what type is generated for the given input strings, when converting a string to **Boolean** using the **ToBoolean** method.  
   
-|Valid string input parameter|.NET Framework output type|  
+|Valid string input parameter|.NET output type|  
 |----------------------------------|--------------------------------|  
 |"true"|Boolean.True|  
 |"1"|Boolean.True|  
@@ -100,7 +101,7 @@ Console.WriteLine(bvalue);
 ## String to Single  
  The following table shows what type is generated for the given input strings, when converting a string to a **Single** using the **ToSingle** method.  
   
-|Valid string input parameter|.NET Framework output type|  
+|Valid string input parameter|.NET output type|  
 |----------------------------------|--------------------------------|  
 |"INF"|Single.PositiveInfinity|  
 |"-INF"|Single.NegativeInfinity|  
@@ -108,7 +109,7 @@ Console.WriteLine(bvalue);
 ## String to Double  
  The following table shows what type is generated for the given input strings, when converting a string to a **Single** using the **ToDouble** method.  
   
-|Valid string input parameter|.NET Framework output type|  
+|Valid string input parameter|.NET output type|  
 |----------------------------------|--------------------------------|  
 |"INF"|Double.PositiveInfinity|  
 |"-INF"|Double.NegativeInfinity|  
@@ -128,4 +129,4 @@ writer.WriteElementString("Infinity", XmlConvert.ToString(value));
 ## See also
 
 - [Conversion of XML Data Types](conversion-of-xml-data-types.md)
-- [Converting .NET Framework Types to Strings](converting-dotnet-types-to-strings.md)
+- [Converting .NET Types to Strings](converting-dotnet-types-to-strings.md)

@@ -11227,6 +11227,11 @@
             "redirect_url": "/dotnet/standard/index"
         },
         {
+            "source_path": "docs/standard/analyzers/framework-analyzer.md",
+            "redirect_url": "/dotnet/framework/code-analyzers",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/assembly-format.md",
             "redirect_url": "/dotnet/standard/assembly/file-format",
             "redirect_document_id": true
@@ -11456,6 +11461,30 @@
             "redirect_url": "/dotnet/standard/"
         },
         {
+            "source_path": "docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md",
+            "redirect_url": "/dotnet/framework/cross-platform/app-resources-for-libraries-that-target-multiple-platforms"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md",
+            "redirect_url": "/dotnet/framework/cross-platform/portable-class-library"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/index.md",
+            "redirect_url": "/dotnet/framework/cross-platform/index"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/passing-a-uri-to-the-windows-runtime.md",
+            "redirect_url": "/dotnet/framework/cross-platform/passing-a-uri-to-the-windows-runtime"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md",
+            "redirect_url": "/dotnet/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md",
+            "redirect_url": "/dotnet/framework/cross-platform/using-portable-class-library-with-model-view-view-model"
+        },
+        {
             "source_path": "docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md",
             "redirect_url": "/dotnet/api/System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
         },
@@ -11470,6 +11499,11 @@
         {
             "source_path": "docs/standard/design-guidelines/dispose-pattern.md",
             "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
+        },
+        {
+            "source_path": "docs/standard/events/how-to-consume-events-in-a-web-forms-application.md",
+            "redirect_url": "/aspnet/web-forms/overview/how-to-consume-events",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/standard/exceptions.md",

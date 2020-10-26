@@ -1,7 +1,6 @@
 ---
-title: ".NET Framework Support for Windows Store Apps and Windows Runtime"
+title: ".NET Framework Support for Microsoft Store Apps and Windows Runtime"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "Windows Store apps, .NET Framework support for"
   - "Windows Runtime, .NET Framework support for"
@@ -10,7 +9,7 @@ helpviewer_keywords:
   - ".NET Framework, and Windows Runtime"
 ms.assetid: 6fa7d044-ae12-4c54-b8ee-50915607a565
 ---
-# .NET Framework Support for Windows Store Apps and Windows Runtime
+# .NET Framework Support for Microsoft Store Apps and Windows Runtime
 
 The .NET Framework 4.5 supports a number of software development scenarios with the Windows Runtime. These scenarios fall into three categories:
 
@@ -18,9 +17,9 @@ The .NET Framework 4.5 supports a number of software development scenarios with 
 
 - Developing class libraries to use in the Windows 8.x Store apps that you create with the .NET Framework.
 
-- Developing Windows Runtime Components, packaged in .WinMD files, which can be used by any programming language that supports the Windows Runtime. For example, see [Creating Windows Runtime Components in C# and Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).
+- Developing Windows Runtime Components, packaged in .WinMD files, that can be used by any programming language that supports the Windows Runtime. For example, see [Creating Windows Runtime Components in C# and Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).
 
-This topic outlines the support that the .NET Framework provides for all three categories, and describes the scenarios for Windows Runtime Components. The first section includes basic information about the relationship between the .NET Framework and the Windows Runtime, and explains some oddities you might encounter in the Help system and the IDE. The [second section](#WindowsRuntimeComponents) discusses scenarios for developing Windows Runtime Components.
+This article outlines the support that the .NET Framework provides for all three categories, and describes the scenarios for Windows Runtime Components. The first section includes basic information about the relationship between the .NET Framework and the Windows Runtime, and explains some oddities you might encounter in the Help system and the IDE. The [second section](#WindowsRuntimeComponents) discusses scenarios for developing Windows Runtime Components.
 
 ## The Basics
 

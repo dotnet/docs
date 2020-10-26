@@ -1295,6 +1295,8 @@ items:
       href: ../standard/base-types/type-conversion.md
     - name: Type conversion tables
       href: ../standard/base-types/conversion-tables.md
+    - name: Choose between anonymous and tuple types
+      href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
     - name: Framework libraries
       href: ../standard/framework-libraries.md
     - name: Class library overview
@@ -1396,8 +1398,6 @@ items:
       href: ../standard/attributes/writing-custom-attributes.md
     - name: Retrieve information stored in attributes
       href: ../standard/attributes/retrieving-information-stored-in-attributes.md
-  - name: Choose between anonymous and tuple types
-    href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
 - name: Fundamental runtime components
   items:
   - name: Format numbers, dates, other types
@@ -1729,7 +1729,7 @@ items:
       href: ../standard/io/buffers.md
     - name: Memory-mapped files
       href: ../standard/io/memory-mapped-files.md
-  - name: Console types
+  - name: Console app support
     href: ../standard/building-console-apps.md
 - name: Data access
   items:

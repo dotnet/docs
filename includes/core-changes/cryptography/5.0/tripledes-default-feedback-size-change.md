@@ -1,12 +1,12 @@
 ### Default FeedbackSize value for instances created by TripleDES.Create changed
 
-The default value for the <xref:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize?displayProperty=nameWithType> property on the <xref:System.Security.Cryptography.TripleDES> instance returned from <xref:System.Security.Cryptography.TripleDES.Create?displayProperty=nameWithType> has changed from 64 to 8 to make migration from .NET Framework easier. This property, unless used directly in caller code, is used only when the <xref:System.Security.Cryptography.SymmetricAlgorithm.Mode> property is <xref:System.Security.Cryptography.CipherMode.CFB?displayProperty=nameWithType>.
+The default value for the <xref:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize?displayProperty=nameWithType> property on the <xref:System.Security.Cryptography.TripleDES> instances returned from <xref:System.Security.Cryptography.TripleDES.Create?displayProperty=nameWithType> has changed from 64 to 8 to make migration from .NET Framework easier. This property, unless used directly in caller code, is used only when the <xref:System.Security.Cryptography.SymmetricAlgorithm.Mode> property is <xref:System.Security.Cryptography.CipherMode.CFB?displayProperty=nameWithType>.
 
-Support for the CFB mode was first added to .NET for the 5.0 RC1 release, so only .NET 5.0 RC1 and .NET 5.0 RC2 applications should be impactec.
+Support for the <xref:System.Security.Cryptography.CipherMode.CFB> mode was first added to .NET for the 5.0 RC1 release, so only .NET 5.0 RC1 and .NET 5.0 RC2 applications should be impacted by this change.
 
 #### Change description
 
-In .NET Core and .NET 5.0 previous pre-release versions of .NET 5.0, `TripleDES.Create().FeedbackSize` has a default value of 64. Starting in the RTM version of .NET 5.0, `TripleDES.Create().FeedbackSize` has a default value of 8.
+In .NET Core and previous pre-release versions of .NET 5.0, `TripleDES.Create().FeedbackSize` has a default value of 64. Starting in the RTM version of .NET 5.0, `TripleDES.Create().FeedbackSize` has a default value of 8.
 
 #### Reason for change
 
@@ -20,13 +20,13 @@ Changing the <xref:System.Security.Cryptography.TripleDES> implementation class'
 
 #### Recommended action
 
-Applications that encrypted or decrypted data in .NET 5.0 RC1 or .NET 5.0 RC2 under the following conditions do so with CFB64:
+Applications that encrypt or decrypt data in the RC1 or RC2 versions of .NET 5.0 do so with CFB64, when the following conditions are met:
 
 - With a <xref:System.Security.Cryptography.TripleDES> instance from <xref:System.Security.Cryptography.TripleDES.Create?displayProperty=nameWithType>.
 - Using the default value for <xref:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize>.
 - With the <xref:System.Security.Cryptography.SymmetricAlgorithm.Mode> property set to <xref:System.Security.Cryptography.CipherMode.CFB?displayProperty=nameWithType>.
 
-In order to maintain this behavior, you'll need to explicitly assign the <xref:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize> property to `64`.
+To maintain this behavior, assign the <xref:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize> property to `64`.
 
 Not all `TripleDES` implementations use the same default for <xref:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize>. We recommend that if you use the <xref:System.Security.Cryptography.CipherMode.CFB> cipher mode on <xref:System.Security.Cryptography.TripleDES> instances, you should always explicitly assign the <xref:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize> property value.
 

@@ -248,7 +248,7 @@ Fields are not supported in `System.Text.Json` 3.1.
 ::: zone pivot="dotnet-5-0"
 To enable use of a non-public property accessor, use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs highlight="11,13"":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="11,13":::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

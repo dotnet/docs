@@ -65,7 +65,8 @@ namespace GuidReferenceResolverExample
             string json = JsonSerializer.Serialize(people, options);
             Console.WriteLine($"Output JSON {json}");
 
-            List<Person> peopleDeserialized = JsonSerializer.Deserialize<List<Person>>(json, options);
+            List<Person> peopleDeserialized = 
+                JsonSerializer.Deserialize<List<Person>>(json, options);
 
             Person tylerDeserialized = people[0];
             Person adrianDeserialized = people[1];

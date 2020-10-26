@@ -28,7 +28,8 @@ namespace ImmutableTypes
             Console.WriteLine($"forecast.TemperatureC: {forecast.TemperatureC}");
             Console.WriteLine($"forecast.Summary: {forecast.Summary}");
 
-            var roundTrippedJson = JsonSerializer.Serialize<Forecast>(forecast, options);
+            var roundTrippedJson = JsonSerializer.Serialize<Forecast>
+                (forecast, options);
 
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
 

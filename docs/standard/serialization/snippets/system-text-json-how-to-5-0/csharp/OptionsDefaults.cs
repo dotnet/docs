@@ -26,14 +26,18 @@ namespace OptionsDefaults
                 WriteIndented = true
             };
 
-            Console.WriteLine($"options.PropertyNameCaseInsensitive: {options.PropertyNameCaseInsensitive}");
-            Console.WriteLine($"options.JsonNamingPolicy: {options.PropertyNamingPolicy}");
-            Console.WriteLine($"options.NumberHandling: {options.NumberHandling}");
+            Console.WriteLine
+                ($"PropertyNameCaseInsensitive: {options.PropertyNameCaseInsensitive}");
+            Console.WriteLine
+                ($"JsonNamingPolicy: {options.PropertyNamingPolicy}");
+            Console.WriteLine
+                ($"NumberHandling: {options.NumberHandling}");
 
             string forecastJson = JsonSerializer.Serialize<Forecast>(forecast, options);
             Console.WriteLine($"Output JSON:\n{forecastJson}");
 
-            Forecast forecastDeserialized = JsonSerializer.Deserialize<Forecast>(forecastJson, options);
+            Forecast forecastDeserialized = 
+                JsonSerializer.Deserialize<Forecast>(forecastJson, options);
             Console.WriteLine($"Date: {forecastDeserialized.Date}");
             Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");
             Console.WriteLine($"Summary: {forecastDeserialized.Summary}");
@@ -43,9 +47,9 @@ namespace OptionsDefaults
 
 // Produces output like the following example:
 //
-//options.PropertyNameCaseInsensitive: True
-//options.JsonNamingPolicy: System.Text.Json.JsonCamelCaseNamingPolicy
-//options.NumberHandling: AllowReadingFromString
+//PropertyNameCaseInsensitive: True
+//JsonNamingPolicy: System.Text.Json.JsonCamelCaseNamingPolicy
+//NumberHandling: AllowReadingFromString
 //Output JSON:
 //{
 //  "date": "2020-10-21T15:40:06.9040831-07:00",

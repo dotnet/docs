@@ -22,20 +22,27 @@ namespace CustomConverterHandleNull
     {
         public override bool HandleNull => true;
 
-        public override string Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override string Read(
+            ref Utf8JsonReader reader, 
+            Type typeToConvert, 
+            JsonSerializerOptions options)
         {
             string val = reader.GetString();
             return val ?? "No description provided.";
         }
 
-        public override void Write(Utf8JsonWriter writer, string value, JsonSerializerOptions options)
+        public override void Write(
+            Utf8JsonWriter writer, 
+            string value, 
+            JsonSerializerOptions options)
         {
             writer.WriteStringValue(value);
         }
     }
     public class Program
     {
-        private static JsonSerializerOptions options = new JsonSerializerOptions(JsonSerializerDefaults.Web)
+        private static JsonSerializerOptions options = 
+            new JsonSerializerOptions(JsonSerializerDefaults.Web)
         {
             IncludeFields = true,
             WriteIndented = true
@@ -58,10 +65,14 @@ namespace CustomConverterHandleNull
             point = JsonSerializer.Deserialize<Point>(serialized, options);
             Console.WriteLine($"X: {point.X}");
             Console.WriteLine($"Y: {point.Y}");
-            Console.WriteLine($"Additional values count: {point.AdditionalValues.Count}");
-            Console.WriteLine($"AdditionalValues[3]: {point.AdditionalValues[3]}");
-            Console.WriteLine($"AdditionalValues[5]: {point.AdditionalValues[5]}");
-            Console.WriteLine($"Description: {point.Description}");
+            Console.WriteLine
+                ($"Additional values count: {point.AdditionalValues.Count}");
+            Console.WriteLine
+                ($"AdditionalValues[3]: {point.AdditionalValues[3]}");
+            Console.WriteLine
+                ($"AdditionalValues[5]: {point.AdditionalValues[5]}");
+            Console.WriteLine
+                ($"Description: {point.Description}");
         }
     }
 }

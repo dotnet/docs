@@ -21,10 +21,12 @@ namespace NonStringKeyDictionary
                 WriteIndented = true
             }; 
             
-            string json = JsonSerializer.Serialize<Dictionary<int, string>>(numbers, options);
+            string json = JsonSerializer.Serialize<Dictionary<int, string>>
+                (numbers, options);
             Console.WriteLine($"Output JSON: {json}");
 
-            var dictionary = JsonSerializer.Deserialize<Dictionary<int, string>>(json);
+            var dictionary = JsonSerializer.Deserialize<Dictionary<int, string>>
+                (json);
             Console.WriteLine($"dictionary[55]: {dictionary[55]}");
         }
     }

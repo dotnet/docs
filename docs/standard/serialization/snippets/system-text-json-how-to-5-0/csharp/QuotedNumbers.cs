@@ -28,7 +28,8 @@ namespace QuotedNumbers
                 WriteIndented = true
             };
 
-            string forecastJson = JsonSerializer.Serialize<Forecast>(forecast, options);
+            string forecastJson = JsonSerializer.Serialize<Forecast>
+                (forecast, options);
             Console.WriteLine($"Output JSON:\n{forecastJson}");
 
             options = new()
@@ -36,7 +37,8 @@ namespace QuotedNumbers
                 NumberHandling = JsonNumberHandling.AllowReadingFromString
             };
 
-            Forecast forecastDeserialized = JsonSerializer.Deserialize<Forecast>(forecastJson, options);
+            Forecast forecastDeserialized = 
+                JsonSerializer.Deserialize<Forecast>(forecastJson, options);
             Console.WriteLine($"Date: {forecastDeserialized.Date}");
             Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");
             Console.WriteLine($"Summary: {forecastDeserialized.Summary}");

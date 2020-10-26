@@ -1,21 +1,24 @@
 ---
-title: Tracing .NET applications with LTTng.
-description: A tutorial that walks you through collecting a trace with LTTng and perfcollect in .NET.
+title: Tracing .NET applications with PerfCollect.
+description: A tutorial that walks you through collecting a trace with perfcollect in .NET.
 ms.topic: tutorial
 ms.date: 10/23/2020
 ---
 
-# Tracing .NET applications with LTTng and PerfCollect
+# Tracing .NET applications with PerfCollect
 
 **This article applies to: ✔️** .NET Core 2.1 SDK and later versions
 
-When a performance problem is encountered on Linux, collecting a trace with `perfcollect` can be used to gather detailed information about what was happening on the machine at the time of the performance problem.
+When performance problems are encountered on Linux, collecting a trace with `perfcollect` can be used to gather detailed information about what was happening on the machine at the time of the performance problem.
 
 `perfcollect` is a bash script that leverages [Linux Tracing Tookit-Next Generation (LTTng)](https://lttng.org) to collect events written from the runtime or any [EventSource](xref:System.Diagnostics.Tracing.EventListener), as well as [perf](https://perf.wiki.kernel.org/) to collect CPU samples of the target process.
 
 ## Preparing Your Machine
 
 Follow these steps to prepare your machine to collect a performance trace with `perfcollect`.
+
+> [!NOTE]
+> If you are in a container environment, your container needs to have `SYS_ADMIN` capability. For more information on tracing applications inside container using PerfCollect, refer to [Collect diagnostics in containers](./diagnostics-in-containers.md) documentation.
 
 1. Download `perfcollect`.
 
@@ -45,14 +48,7 @@ Follow these steps to prepare your machine to collect a performance trace with `
 
 1. Have two shells available - one for controlling tracing, referred to as **[Trace]**, and one for running the application, referred to as **[App]**.
 
-2. **[App]** Setup the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
-
-    > ```bash
-    > export COMPlus_PerfMapEnabled=1
-    > export COMPlus_EnableEventLog=1
-    > ```
-
-3. **[Trace]** Start collection.
+2. **[Trace]** Start collection.
 
     > ```bash
     > sudo ./perfcollect collect sampleTrace
@@ -64,7 +60,14 @@ Follow these steps to prepare your machine to collect a performance trace with `
     > Collection started.  Press CTRL+C to stop.
     > ```
 
-4. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem.
+3. **[App]** Set up the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
+
+    > ```bash
+    > export COMPlus_PerfMapEnabled=1
+    > export COMPlus_EnableEventLog=1
+    > ```
+
+4. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem. The exact length can be as short as you need as long as it sufficiently captures the window of time where the performance problem you want to investigate occurs.
 
     > ```bash
     > dotnet run
@@ -94,13 +97,70 @@ Follow these steps to prepare your machine to collect a performance trace with `
 
     The compressed trace file is now stored in the current working directory.
 
+## Viewing a Trace
+
+There are number of options for viewing the trace that was collected. Traces are best viewed using [PerfView](http://aka.ms/perfview>) on Windows.
+
+### Using PerfCollect to view the trace file
+
+You can use perfcollect itself to view the trace that you collected. To do this, use the following command:
+
+```bash
+./perfcollect view sampleTrace.trace.zip
+```
+
+By default, this will show the CPU trace of the application using `perf`.
+
+To look at the events that were collected via `LTTng`, you can pass in the flag `-viewer lttng` to see the individual events:
+
+```bash
+./perfcollect view sampleTrace.trace.zip -viewer lttng
+```
+
+This will use `babeltrace` viewer to print the events payload:
+
+```bash
+# [01:02:18.189217659] (+0.020132603) ubuntu-xenial DotNETRuntime:ExceptionThrown_V1: { cpu_id = 0 }, { ExceptionType = "System.Exception", ExceptionMessage = "An exception happened", ExceptionEIP = 139875671834775, ExceptionHRESULT = 2148734208, ExceptionFlags = 16, ClrInstanceID = 0 }
+# [01:02:18.189250227] (+0.020165171) ubuntu-xenial DotNETRuntime:ExceptionCatchStart: { cpu_id = 0 }, { EntryEIP = 139873639728404, MethodID = 139873626968120, MethodName = "void [helloworld] helloworld.Program::Main(string[])", ClrInstanceID = 0 }
+```
+
+### Using PerfView to open the trace File
+
+To see an aggregate view of both the CPU sample and the events, you can use `PerfView` on a Windows machine.
+
+1. Copy the trace.zip file from Linux to a Windows machine.
+
+2. Download PerfView from <http://aka.ms/perfview>.
+
+3. Run PerfView.exe
+
+    > ```cmd
+    > PerfView.exe <path to trace.zip file>
+    > ```
+
+PerfView will display the list of views that are supported based on the data contained in the trace file.
+
+- For CPU investigations, choose **CPU stacks**.
+
+- For very detailed GC information, choose **GCStats**.
+
+- For per-process/module/method JIT information, choose **JITStats**.
+
+- If there is not a view for the information you need, you can try looking for the events in the raw events view.  Choose **Events**.
+
+For more details on how to interpret views in PerfView, see help links in the view itself, or from the main window in PerfView choose **Help->Users Guide**.
+
+### TraceCompass
+
+[Eclipse TraceCompass](https://www.eclipse.org/tracecompass/) is another option you may use to view the traces. TraceCompass works on Linux machines as well, so you don't need to move your trace over to a Windows machine. 
+
 ## Resolving Framework Symbols
 
-Framework symbols need to be manually generated at the time the trace is collected. They are different than app-level symbols because the framework is pre-compiled while apps are just-in-time-compiled. For code like the framework that was precompiled to native code, you need a special tool called crossgen that knows how to generate the mapping from the native code to the name of the methods.
+Framework symbols need to be manually generated at the time the trace is collected. They are different than app-level symbols because the framework is pre-compiled while app code is just-in-time-compiled. For framework code that was precompiled to native code, you need to call `crossgen` that knows how to generate the mapping from the native code to the name of the methods.
 
-`perfcollect` can handle most of the details for you, but it needs to have the crossgen tool and by default this is not part of the standard .NET distribution. If it is not there it warns you and refers you to these instructions. To fix things you need to fetch exactly the right version of crossgen for the runtime you happen to be using. If you place the crossgen tool in the same directory as the .NET Runtime DLLs (e.g. libcoreclr.so), then `perfcollect` can find it and add the framework symbols to the trace file for you.
+`perfcollect` can handle most of the details for you, but it needs to have `crossgen` available. By default it is not installed with .NET distribution. If `crossgen` is not there, `perfcollect` warns you and refers you to these instructions. To fix things you need to fetch exactly the right version of crossgen for the runtime you are using. If you place the crossgen tool in the same directory as the .NET Runtime DLLs (e.g. libcoreclr.so), then `perfcollect` can find it and add the framework symbols to the trace file for you.
 
-Normally when you create a .NET application, it just generates the DLL for the code you wrote, using a shared copy of the runtime for the rest.   However you can also generate what is called a 'self-contained' version of an application and this contains all runtime DLLs. The crossgen tool is part of the Nuget package that is used to create self-contained apps, so one way of getting the right crossgen tool is to create a self-contained package of your application.
+Normally when you create a .NET application, it just generates the DLL for the code you wrote, using a shared copy of the runtime for the rest.   However you can also generate what is called a 'self-contained' version of an application and this contains all runtime DLLs. `crossgen` is part of the Nuget package that is used to create self-contained apps, so one way of getting the right version of `crossgen` is to create a self-contained package of your application.
 
 For example:
 
@@ -169,33 +229,3 @@ After this, you should get symbolic names for the native dlls when you run `perf
 ## Collecting in a Docker Container
 
 For more information on how to use `perfcollect` in container environments, refer to [Collect diagnostics in containers](./diagnostics-in-containers.md) documentation.
-
-## Viewing a Trace
-
-Traces are best viewed using PerfView on Windows.  Note that we're currently looking into porting the analysis pieces of PerfView to Linux so that the entire investigation can occur on Linux.
-
-### Open the Trace File
-
-1. Copy the trace.zip file from Linux to a Windows machine.
-
-2. Download PerfView from <http://aka.ms/perfview>.
-
-3. Run PerfView.exe
-
-    > ```cmd
-    > PerfView.exe <path to trace.zip file>
-    > ```
-
-### Select a View
-
-PerfView will display the list of views that are supported based on the data contained in the trace file.
-
-- For CPU investigations, choose **CPU stacks**.
-
-- For very detailed GC information, choose **GCStats**.
-
-- For per-process/module/method JIT information, choose **JITStats**.
-
-- If there is not a view for the information you need, you can try looking for the events in the raw events view.  Choose **Events**.
-
-For more details on how to interpret views in PerfView, see help links in the view itself, or from the main window in PerfView choose **Help->Users Guide**.

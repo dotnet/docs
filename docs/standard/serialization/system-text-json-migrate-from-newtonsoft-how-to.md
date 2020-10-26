@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/23/2020
+ms.date: 10/26/2020
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -266,6 +266,7 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 <xref:System.Text.Json> provides the following ways to omit properties while serializing:
 
 ::: zone pivot="dotnet-5-0"
+
 * The [[JsonIgnore]](system-text-json-how-to.md#exclude-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
 * The [IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) global option lets you exclude all null-value properties.
 * The [IgnoreReadOnlyProperties](system-text-json-how-to.md#exclude-all-read-only-properties) global option lets you exclude all read-only properties.
@@ -274,6 +275,7 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
+
 * The [[JsonIgnore]](system-text-json-how-to.md#exclude-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
 * The [IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) global option lets you exclude all null-value properties.
 * The [IgnoreReadOnlyProperties](system-text-json-how-to.md#exclude-all-read-only-properties) global option lets you exclude all read-only properties.

@@ -8,8 +8,10 @@ namespace NonPublicAccessors
     public class Forecast
     {
         public DateTime Date { get; init; }
+
         [JsonInclude]
         public int TemperatureC { get; private set; }
+
         [JsonInclude]
         public string Summary { private get; set; }
     };

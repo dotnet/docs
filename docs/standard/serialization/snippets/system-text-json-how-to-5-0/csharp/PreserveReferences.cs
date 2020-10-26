@@ -55,13 +55,13 @@ namespace PreserveReferences
 //  "Name": "Tyler Stein",
 //  "Manager": null,
 //  "DirectReports": {
-//        "$id": "2",
+//    "$id": "2",
 //    "$values": [
 //      {
-//            "$id": "3",
+//        "$id": "3",
 //        "Name": "Adrian King",
 //        "Manager": {
-//                "$ref": "1"
+//          "$ref": "1"
 //        },
 //        "DirectReports": null
 //      }

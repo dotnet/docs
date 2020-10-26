@@ -122,6 +122,7 @@ When you use System.Text.Json indirectly in an ASP.NET Core app, some default be
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
+
 * By default, all public properties are serialized. You can [specify properties to exclude](#exclude-properties-from-serialization).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
@@ -248,7 +249,7 @@ Fields are not supported in `System.Text.Json` 3.1.
 ::: zone pivot="dotnet-5-0"
 To enable use of a non-public property accessor, use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="11,13":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="12,15":::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -404,6 +405,7 @@ Enum string names can be deserialized as well, as shown in the following example
 By default, all public properties are serialized. If you don't want some of them to appear in the JSON output, you have several options. This section explains how to exclude:
 
 ::: zone pivot="dotnet-5-0"
+
 * [Individual properties](#exclude-individual-properties)
 * [All read-only properties](#exclude-all-read-only-properties)
 * [All null-value properties](#exclude-all-null-value-properties)
@@ -411,6 +413,7 @@ By default, all public properties are serialized. If you don't want some of them
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
+
 * [Individual properties](#exclude-individual-properties)
 * [All read-only properties](#exclude-all-read-only-properties)
 * [All null-value properties](#exclude-all-null-value-properties)
@@ -441,7 +444,7 @@ You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.
 
 The following example illustrates use of the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="10,12,14":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="10,13,16":::
 ::: zone-end
 
 ### Exclude all read-only properties
@@ -855,7 +858,7 @@ When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers 
 ::: zone pivot="dotnet-5-0"
 `System.Text.Json` can use a parameterized constructor, which makes it possible to deserialize an immutable class or struct. For a class, if the only constructor is a parameterized one, that constructor will be used. For a struct, or a class with multiple constructors, specify the one to use by applying the [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute.%23ctor%2A) attribute, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="12":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="13":::
 
 Records in C# 9 are also supported, as shown in the following example:
 

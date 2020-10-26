@@ -9,6 +9,7 @@ namespace ImmutableTypes
         public DateTime Date { get; }
         public int TemperatureC { get; }
         public string Summary { get; }
+ 
         [JsonConstructor]
         public Forecast(DateTime date, int temperatureC, string summary) =>
             (Date, TemperatureC, Summary) = (date, temperatureC, summary);

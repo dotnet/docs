@@ -9,8 +9,10 @@ namespace JsonIgnoreAttributeExample
     {
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public DateTime Date { get; set; }
+
         [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
         public int TemperatureC { get; set; }
+
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string? Summary { get; set; }
     };

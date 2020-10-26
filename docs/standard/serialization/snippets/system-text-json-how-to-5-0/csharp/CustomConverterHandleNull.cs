@@ -39,6 +39,7 @@ namespace CustomConverterHandleNull
             writer.WriteStringValue(value);
         }
     }
+
     public class Program
     {
         private static JsonSerializerOptions options = 
@@ -81,11 +82,11 @@ namespace CustomConverterHandleNull
 //
 //Output JSON:
 //{
-//    "x": 1,
+//  "x": 1,
 //  "y": 2,
 //  "description": null,
 //  "additionalValues": {
-//        "3": 4,
+//    "3": 4,
 //    "5": 6
 //  }
 //}

@@ -306,7 +306,7 @@ The converter can deserialize JSON that was created by using the same converter 
 
 The converter code in the preceding example reads and writes each property manually. An alternative is to call `Deserialize` or `Serialize` to do some of the work. For an example, see [this StackOverflow post](https://stackoverflow.com/a/59744873/12509023).
 
-### Support round-trip for Stack\<T>
+### Support round trip for Stack\<T>
 
 If you deserialize a JSON string into a <xref:System.Collections.Generic.Stack%601> object and then serialize that object, the contents of the stack are in reverse order. This behavior applies to the following types and interface, and user-defined types that derive from them:
 

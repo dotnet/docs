@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/23/2020
+ms.date: 10/26/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -103,13 +103,19 @@ In situations where you create and use multiple objects that implement <xref:Sys
 
 :::code language="csharp" id="one" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
 
+In the preceding example, each asynchronous clean up operation is explicitly scoped under the `await using` block. The outer scope is defined by how `objOne` sets its braces, enclosing `objTwo`, as such `objTwo` is disposed first, followed by `objOne`. Both `IAsyncDisposable` instances have there <xref:System.IAsyncDisposable.DisposeAsync> methods awaited, thus performing its asynchronous clean up operation. The calls are nested, not stacked.
+
 ### Acceptable pattern two
 
 :::code language="csharp" id="two" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
 
+In the preceding example, each asynchronous clean up operation is explicitly scoped under the `await using` block. At the end of each block, the corresponding `IAsyncDisposable` instance has its <xref:System.IAsyncDisposable.DisposeAsync> method awaited, thus performing its asynchronous clean up operation. The calls are sequential, not stacked. In this scenario `objOne` is disposed first, then `objTwo` is disposed.
+
 ### Acceptable pattern three
 
 :::code language="csharp" id="three" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
+
+In the preceding example, each asynchronous clean up operation is implicitly scoped with the containing method body. At the end of the enclosing block, the `IAsyncDisposable` instances perform their asynchronous clean up operations. This runs in reverse order from which they were declared, meaning that `objTwo` is disposed before `objOne`.
 
 ### Unacceptable pattern
 

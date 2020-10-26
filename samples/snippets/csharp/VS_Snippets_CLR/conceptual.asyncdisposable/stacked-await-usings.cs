@@ -2,17 +2,19 @@
 using System;
 using System.Threading.Tasks;
 
-class ExampleOneStackedProgram
+class ExampleOneProgram
 {
     static async Task Main()
     {
         var objOne = new ExampleAsyncDisposable();
         await using (objOne.ConfigureAwait(false))
         {
+            // Interact with the objOne instance.
+
             var objTwo = new ExampleAsyncDisposable();
             await using (objTwo.ConfigureAwait(false))
             {
-                // ...
+                // Interact with the objOne and/or objTwo instance(s).
             }
         }
 
@@ -22,7 +24,7 @@ class ExampleOneStackedProgram
 // </one>
 
 // <two>
-class ExampleTwoStackedProgram
+class ExampleTwoProgram
 {
     static async Task Main()
     {
@@ -44,7 +46,7 @@ class ExampleTwoStackedProgram
 // </two>
 
 // <three>
-class ExampleThreeStackedProgram
+class ExampleThreeProgram
 {
     static async Task Main()
     {
@@ -54,7 +56,7 @@ class ExampleThreeStackedProgram
         var objTwo = new ExampleAsyncDisposable();
         await using var ignored2 = objTwo.ConfigureAwait(false);
 
-        // ...
+        // Interact with objOne and/or objTwo instance(s).
 
         Console.ReadLine();
     }
@@ -73,7 +75,7 @@ class DoNotDoThisProgram
         await using (objOne.ConfigureAwait(false))
         await using (objTwo.ConfigureAwait(false))
         {
-            // ...
+            // Only objOne has its DisposeAsync called.
         }
 
         Console.ReadLine();

@@ -28,7 +28,6 @@ namespace Fields
 
             var roundTrippedJson = JsonSerializer.Serialize<Forecast>(forecast, options);
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
-
         }
     }
 }

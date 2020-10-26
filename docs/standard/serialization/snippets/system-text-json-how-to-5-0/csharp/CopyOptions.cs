@@ -21,12 +21,12 @@ namespace CopyOptions
                 Summary = "Hot"
             };
 
-            JsonSerializerOptions options = new();
-            JsonSerializerOptions optionsCopy = new(options)
+            JsonSerializerOptions options = new()
             {
                 WriteIndented = true
             };
 
+            JsonSerializerOptions optionsCopy = new(options);
             string forecastJson = JsonSerializer.Serialize<Forecast>(forecast, optionsCopy);
             Console.WriteLine($"Output JSON:\n{forecastJson}");
         }

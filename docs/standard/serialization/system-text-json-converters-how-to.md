@@ -340,7 +340,7 @@ For `Nullable<T>` value types, the serializer does pass `null` to converters bec
 ::: zone pivot="dotnet-5-0"
 To enable a custom converter to handle `null` for all types, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType> to return `true`, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs" highlight="23":::
 ::: zone-end
 
 ## Other custom converter samples

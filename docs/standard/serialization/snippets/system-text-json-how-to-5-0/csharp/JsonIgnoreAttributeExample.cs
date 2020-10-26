@@ -19,7 +19,6 @@ namespace JsonIgnoreAttributeExample
     {
         public static void Main()
         {
-
             Forecast forecast = new()
             {
                 Date = default(DateTime),

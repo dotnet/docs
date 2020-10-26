@@ -16,7 +16,6 @@ namespace IgnoreValueDefaultOnSerialize
     {
         public static void Main()
         {
-
             Forecast forecast = new()
             {
                 Date = DateTime.Now,

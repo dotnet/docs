@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using System.Diagnostics.CodeAnalysis;
 
 namespace CustomConverterHandleNull
 {
@@ -16,13 +15,6 @@ namespace CustomConverterHandleNull
         [JsonConverter(typeof(DescriptionConverter))]
         public string Description { get; set; }
 
-        public Point()
-        {
-        }
-
-        // Specify which ctor should be used when deserializing.
-        // Attribute not needed if this is the only ctor.
-        [JsonConstructor]
         public Point(int x, int y) => (X, Y) = (x, y);
     }
 

@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code.
-ms.date: 10/23/2020
+ms.date: 10/26/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -236,7 +236,7 @@ Here's an example type to be serialized and pretty-printed JSON output:
 ::: zone pivot="dotnet-5-0"
 Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting to include fields when serializing or deserializing, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="21":::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -248,7 +248,7 @@ Fields are not supported in `System.Text.Json` 3.1.
 ::: zone pivot="dotnet-5-0"
 To enable use of a non-public property accessor, use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs highlight="11,13"":::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -441,7 +441,7 @@ You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.
 
 The following example illustrates use of the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="10,12,14":::
 ::: zone-end
 
 ### Exclude all read-only properties
@@ -492,7 +492,7 @@ This setting applies to serialization and deserialization. For information about
 ::: zone pivot="dotnet-5-0"
 To prevent serialization of default values in value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="28":::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -815,7 +815,7 @@ To preserve references and handle circular references, set <xref:System.Text.Jso
 
 The following code illustrates use of the `Preserve` setting.
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs" highlight="34":::
 
 Here are some other notes about preserving references:
 
@@ -840,7 +840,7 @@ Here are some other notes about preserving references:
 
 Some serializers encode numbers as JSON strings (surrounded by quotes). For example: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To make <xref:System.Text.Json> write numbers in quotes or accept numbers in quotes, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs" highlight="27,36":::
 
 When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers are allowed because ASP.NET Core specifies [web default options](xref:System.Text.Json.JsonSerializerDefaults.Web).
 
@@ -855,7 +855,7 @@ When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers 
 ::: zone pivot="dotnet-5-0"
 `System.Text.Json` lets you select a parameterized constructor, which makes it possible to deserialize an immutable class or struct. To specify the constructor to use, apply the <xref:System.Text.Json.Serialization.JsonConstructorAttribute.%23ctor%2A>, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="12":::
 
 Records in C# 9 are also supported, as shown in the following example:
 
@@ -871,7 +871,7 @@ Records in C# 9 are also supported, as shown in the following example:
 ::: zone pivot="dotnet-5-0"
 There is a <xref:System.Text.Json.JsonSerializerOptions> constructor that lets you create a new instance with the same options as an existing instance, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs" highlight="29":::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -889,7 +889,7 @@ Here are the options that have different defaults for web apps:
 
 There's a <xref:System.Text.Json.JsonSerializerOptions> constructor that lets you create a new instance with [the default options that ASP.NET Core uses for web apps](xref:System.Text.Json.JsonSerializerDefaults.Web), as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs" highlight="24":::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -904,7 +904,7 @@ Serializing and deserializing JSON payloads from the network are common operatio
 
 The following example illustrates use of the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A>:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

@@ -107,5 +107,10 @@ We recommend you use the following process when porting your project to .NET Cor
 
 > [!div class="nextstepaction"]
 > [Analyze dependencies](third-party-deps.md)
-> [Package NuGet Package](../deploying/creating-nuget-packages.md)
-> [ASP.NET to ASP.NET Core Migration](/aspnet/core/migration/proper-to-2x)
+> [Package a NuGet package](../deploying/creating-nuget-packages.md)
+
+## See also
+
+- [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
+- [Migrate WPF apps to .NET Core](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
+- [Migrate Windows Forms apps to .NET Core](winforms.md)

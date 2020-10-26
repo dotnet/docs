@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you'll learn how to containerize a .NET Core application with Docker.
-ms.date: 04/27/2020
+ms.date: 10/26/2020
 ms.topic: tutorial
 ms.custom: "mvc"
 #Customer intent: As a developer, I want to containerize my .NET Core app so that I can deploy it to the cloud.
@@ -207,19 +207,26 @@ docker-working
             └──...
 ```
 
-From your terminal, run the following command:
+From your terminal, run the following [docker build](https://docs.docker.com/engine/reference/commandline/build) command:
 
 ```console
 docker build -t counter-image -f Dockerfile .
 ```
 
+> [!TIP]
+> Some environments expect quoted, `'` or `"`, file path command-line arguments. For example, **Windows 10 Home Edition** expects quotations around the *Dockerfile* and `.` arguments:
+>
+> ```console
+> docker build -t counter-image -f "Dockerfile" "."
+> ```
+
 Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells Docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **counter-image** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
 
 ```console
 docker images
-REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
-counter-image                           latest              e6780479db63        4 days ago          190MB
-mcr.microsoft.com/dotnet/core/aspnet    3.1                 e6780479db63        4 days ago          190MB
+REPOSITORY                              TAG       IMAGE ID        CREATED       SIZE
+counter-image                           latest    e6780479db63    4 days ago    190MB
+mcr.microsoft.com/dotnet/core/aspnet    3.1       e6780479db63    4 days ago    190MB
 ```
 
 Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add three commands to the *Dockerfile*. Each command creates a new image layer with the final command representing the **counter-image** repository entry points to.
@@ -236,10 +243,10 @@ The `WORKDIR` command changes the **current directory** inside of the container 
 
 The next command, `ENTRYPOINT`, tells Docker to configure the container to run as an executable. When the container starts, the `ENTRYPOINT` command runs. When this command ends, the container will automatically stop.
 
-From your terminal, run `docker build -t counter-image -f Dockerfile .` and when that command finishes, run `docker images`.
+From your terminal, run `docker build -t counter-image -f Dockerfile .` and when that command finishes, run [`docker images`](https://docs.docker.com/engine/reference/commandline/images).
 
 ```console
-docker build -t counter-image -f Dockerfile .
+docker build -t counter-image -f Dockerfile".
 Sending build context to Docker daemon  1.117MB
 Step 1/4 : FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
  ---> e6780479db63
@@ -257,9 +264,9 @@ Successfully built cd11c3df9b19
 Successfully tagged counter-image:latest
 
 docker images
-REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
-counter-image                           latest              cd11c3df9b19        41 seconds ago      190MB
-mcr.microsoft.com/dotnet/core/aspnet    3.1                 e6780479db63        4 days ago          190MB
+REPOSITORY                              TAG       IMAGE ID        CREATED           SIZE
+counter-image                           latest    cd11c3df9b19    41 seconds ago    190MB
+mcr.microsoft.com/dotnet/core/aspnet    3.1       e6780479db63    4 days ago        190MB
 ```
 
 Each command in the *Dockerfile* generated a layer and created an **IMAGE ID**. The final **IMAGE ID** (yours will be different) is **cd11c3df9b19** and next you'll create a container based on this image.
@@ -277,8 +284,8 @@ The `docker create` command from above will create a container based on the **co
 
 ```console
 docker ps -a
-CONTAINER ID    IMAGE            COMMAND                   CREATED           STATUS     PORTS    NAMES
-0f281cb3af99    counter-image    "dotnet NetCore.Dock…"    40 seconds ago    Created             core-counter
+CONTAINER ID    IMAGE            COMMAND                   CREATED           STATUS     NAMES
+0f281cb3af99    counter-image    "dotnet NetCore.Dock…"    40 seconds ago    Created    core-counter
 ```
 
 ### Manage the container
@@ -290,8 +297,8 @@ docker start core-counter
 core-counter
 
 docker ps
-CONTAINER ID    IMAGE            COMMAND                   CREATED          STATUS          PORTS    NAMES
-2f6424a7ddce    counter-image    "dotnet NetCore.Dock…"    2 minutes ago    Up 11 seconds            core-counter
+CONTAINER ID    IMAGE            COMMAND                   CREATED          STATUS           NAMES
+2f6424a7ddce    counter-image    "dotnet NetCore.Dock…"    2 minutes ago    Up 11 seconds    core-counter
 ```
 
 Similarly, the `docker stop` command will stop the container. The following example uses the `docker stop` command to stop the container, and then uses the `docker ps` command to show that no containers are running:
@@ -339,8 +346,8 @@ The following example lists all containers. It then uses the `docker rm` command
 
 ```console
 docker ps -a
-CONTAINER ID    IMAGE            COMMAND                   CREATED          STATUS                        PORTS    NAMES
-2f6424a7ddce    counter-image    "dotnet NetCore.Dock…"    7 minutes ago    Exited (143) 20 seconds ago            core-counter
+CONTAINER ID    IMAGE            COMMAND                   CREATED          STATUS                         NAMES
+2f6424a7ddce    counter-image    "dotnet NetCore.Dock…"    7 minutes ago    Exited (143) 20 seconds ago    core-counter
 
 docker rm core-counter
 core-counter
@@ -444,19 +451,19 @@ Docker has many different commands that create, manage, and interact with contai
 
 During this tutorial, you created containers and images. If you want, delete these resources. Use the following commands to
 
-01. List all containers
+1. List all containers
 
     ```console
     docker ps -a
     ```
 
-02. Stop containers that are running by their name.
+1. Stop containers that are running by their name.
 
     ```console
     docker stop counter-image
     ```
 
-03. Delete the container
+1. Delete the container
 
     ```console
     docker rm counter-image

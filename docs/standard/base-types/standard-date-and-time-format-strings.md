@@ -7,12 +7,12 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "formatting [.NET Framework], dates"
+  - "formatting [.NET], dates"
   - "custom DateTime format string"
   - "format specifiers, custom date and time"
   - "format strings"
   - "custom date and time format strings"
-  - "formatting [.NET Framework], time"
+  - "formatting [.NET], time"
   - "date and time strings"
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
 ---

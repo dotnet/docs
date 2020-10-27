@@ -9,11 +9,11 @@ dev_langs:
 helpviewer_keywords: 
   - "type system"
   - "common type system"
-  - "assemblies [.NET Framework], types"
+  - "assemblies [.NET], types"
   - "reference types"
   - "value types"
   - "cross-language interoperability"
-  - "namespaces [.NET Framework], types"
+  - "namespaces [.NET], types"
   - "types, about types"
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
 ---

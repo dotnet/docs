@@ -10,13 +10,13 @@ helpviewer_keywords:
   - "regular expressions, examples"
   - "user input, examples"
   - "Regex.IsMatch method"
-  - "regular expressions [.NET Framework], examples"
+  - "regular expressions [.NET], examples"
   - "examples [Visual Basic], strings"
   - "IsValidEmail"
   - "validation, email strings"
   - "input, checking"
-  - "strings [.NET Framework], examples [Visual Basic]"
-  - "email [.NET Framework], validating"
+  - "strings [.NET], examples [Visual Basic]"
+  - "email [.NET], validating"
   - "IsMatch method"
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
 ---
@@ -78,5 +78,5 @@ In this example, the regular expression pattern `^[^@\s]+@[^@\s]+\.[^@\s]+$` is 
 
 ## See also
 
-- [.NET Framework Regular Expressions](regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)
 - [How far should one take e-mail address validation?](https://softwareengineering.stackexchange.com/questions/78353/how-far-should-one-take-e-mail-address-validation#78363)

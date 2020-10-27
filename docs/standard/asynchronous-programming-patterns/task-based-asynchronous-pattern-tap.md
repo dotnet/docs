@@ -6,12 +6,11 @@ ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
-helpviewer_keywords: 
-  - ".NET Framework, and TAP"
-  - "asynchronous design patterns, .NET Framework"
-  - "TAP, .NET Framework support for"
-  - "Task-based Asynchronous Pattern, .NET Framework support for"
-  - ".NET Framework, asynchronous design patterns"
+helpviewer_keywords:
+  - "asynchronous design patterns, .NET"
+  - "TAP, .NET support for"
+  - "Task-based Asynchronous Pattern, .NET support for"
+  - ".NET, asynchronous design patterns"
 ms.assetid: 8cef1fcf-6f9f-417c-b21f-3fd8bac75007
 ---
 # Task-based asynchronous pattern
@@ -89,7 +88,7 @@ TAP uses a single method to represent the initiation and completion of an asynch
  If TAP implementations provide overloads that accept a `progress` parameter, they must allow the argument to be `null`, in which case no progress is reported. TAP implementations should report the progress to the <xref:System.Progress%601> object synchronously, which enables the asynchronous method to quickly provide progress. It also allows the consumer of the progress to determine how and where best to handle the information. For example, the progress instance could choose to marshal callbacks and raise events on a captured synchronization context.  
   
 ## IProgress\<T> implementations  
- The .NET Framework 4.5 provides a single <xref:System.IProgress%601> implementation: <xref:System.Progress%601>. The <xref:System.Progress%601> class is declared as follows:  
+.NET provides the <xref:System.Progress%601> class, which implements <xref:System.IProgress%601>. The <xref:System.Progress%601> class is declared as follows:  
   
 ```csharp  
 public class Progress<T> : IProgress<T>  
@@ -97,18 +96,9 @@ public class Progress<T> : IProgress<T>
     public Progress();  
     public Progress(Action<T> handler);  
     protected virtual void OnReport(T value);  
-    public event EventHandler<T> ProgressChanged;  
+    public event EventHandler<T>? ProgressChanged;  
 }  
-```  
-  
-```vb  
-Public Class Progress(Of T) : Inherits IProgress(Of T)  
-    Public Sub New()  
-    Public Sub New(handler As Action(Of T))  
-    Protected Overridable Sub OnReport(value As T)  
-    Public Event ProgressChanged As EventHandler(Of T>  
-End Class  
-```  
+```
   
  An instance of <xref:System.Progress%601> exposes a <xref:System.Progress%601.ProgressChanged> event, which is raised every time the asynchronous operation reports a progress update. The <xref:System.Progress%601.ProgressChanged> event is raised on the <xref:System.Threading.SynchronizationContext> object that was captured when the <xref:System.Progress%601> instance was instantiated. If no synchronization context was available, a default context that targets the thread pool is used. Handlers may be registered with this event. A single handler may also be provided to the <xref:System.Progress%601> constructor for convenience, and behaves just like an event handler for the <xref:System.Progress%601.ProgressChanged> event. Progress updates are raised asynchronously to avoid delaying the asynchronous operation while event handlers are executing. Another <xref:System.IProgress%601> implementation could choose to apply different semantics.  
   

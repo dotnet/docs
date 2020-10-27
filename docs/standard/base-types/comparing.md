@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "CompareTo method"
   - "IndexOf method"
   - "Compare method"
-  - "strings [.NET Framework], comparing"
+  - "strings [.NET], comparing"
   - "CompareOrdinal method"
   - "EndsWith method"
   - "Equals method"

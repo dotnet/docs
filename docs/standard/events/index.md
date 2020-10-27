@@ -10,21 +10,19 @@ helpviewer_keywords:
   - "delegate model for events"
   - "application development [.NET], events"
   - "application development [.NET Framework], events"
-  - "application development [.NET Core], events"    
+  - "application development [.NET Core], events"
   - "events [.NET]"
   - "events [.NET Core]"
   - "events [.NET Framework]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
 ---
-# Handling and raising events
+# Handle and raising events
 
-Events in .NET are based on the delegate model. The delegate model follows the [observer design pattern](observer-design-pattern.md), which enables a subscriber to register with and receive notifications from a provider. An event sender pushes a notification that an event has happened, and an event receiver receives that notification and defines a response to it. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.  
-  
- For information about handling events in Windows 8.x Store apps, see [Events and routed events overview](/previous-versions/windows/apps/hh758286(v=win.10)).  
+Events in .NET are based on the delegate model. The delegate model follows the [observer design pattern](observer-design-pattern.md), which enables a subscriber to register with and receive notifications from a provider. An event sender pushes a notification that an event has happened, and an event receiver receives that notification and defines a response to it. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.
   
 ## Events
 
-An event is a message sent by an object to signal the occurrence of an action. The action can be caused by user interaction, such as a button click, or it can result from some other program logic, such as changing a property’s value. The object that raises the event is called the *event sender*. The event sender doesn't know which object or method will receive (handle) the events it raises. The event is typically a member of the event sender; for example, the <xref:System.Web.UI.WebControls.Button.Click> event is a member of the <xref:System.Web.UI.WebControls.Button> class, and the <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event is a member of the class that implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
+An event is a message sent by an object to signal the occurrence of an action. The action can be caused by user interaction, such as a button click, or it can result from some other program logic, such as changing a property's value. The object that raises the event is called the *event sender*. The event sender doesn't know which object or method will receive (handle) the events it raises. The event is typically a member of the event sender; for example, the <xref:System.Web.UI.WebControls.Button.Click> event is a member of the <xref:System.Web.UI.WebControls.Button> class, and the <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event is a member of the class that implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
   
 To define an event, you use the C# [`event`](../../csharp/language-reference/keywords/event.md) or the Visual Basic [`Event`](../../visual-basic/language-reference/statements/event-statement.md) keyword in the signature of your event class, and specify the type of delegate for the event. Delegates are described in the next section.  
   
@@ -76,19 +74,19 @@ The following example shows an event handler method named `c_ThresholdReached` t
 
 .NET allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](../../visual-basic/programming-guide/language-features/events/index.md) (in Visual Basic) and [Events](../../csharp/programming-guide/events/index.md) (in C#).  
   
-## Raising multiple events  
+## Raising multiple events
+
  If your class raises multiple events, the compiler generates one field per event delegate instance. If the number of events is large, the storage cost of one field per delegate may not be acceptable. For those situations, .NET provides event properties that you can use with another data structure of your choice to store event delegates.  
   
  Event properties consist of event declarations accompanied by event accessors. Event accessors are methods that you define to add or remove event delegate instances from the storage data structure. Note that event properties are slower than event fields, because each event delegate must be retrieved before it can be invoked. The trade-off is between memory and speed. If your class defines many events that are infrequently raised, you will want to implement event properties. For more information, see [How to: Handle Multiple Events Using Event Properties](how-to-handle-multiple-events-using-event-properties.md).  
   
-## Related topics  
+## Related articles
   
 |Title|Description|  
 |-----------|-----------------|  
 |[How to: Raise and Consume Events](how-to-raise-and-consume-events.md)|Contains examples of raising and consuming events.|  
 |[How to: Handle Multiple Events Using Event Properties](how-to-handle-multiple-events-using-event-properties.md)|Shows how to use event properties to handle multiple events.|  
-|[Observer Design Pattern](observer-design-pattern.md)|Describes the design pattern that enables a subscriber to register with, and receive notifications from, a provider.|  
-|[How to: Consume Events in a Web Forms Application](how-to-consume-events-in-a-web-forms-application.md)|Shows how to handle an event that is raised by a Web Forms control.|  
+|[Observer Design Pattern](observer-design-pattern.md)|Describes the design pattern that enables a subscriber to register with, and receive notifications from, a provider.|
   
 ## See also
 
@@ -99,3 +97,4 @@ The following example shows an event handler method named `c_ThresholdReached` t
 - [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)
 - [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)
 - [Events and routed events overview (UWP apps)](/windows/uwp/xaml-platform/events-and-routed-events-overview)
+- [Events in Windows Store 8.x apps](/previous-versions/windows/apps/hh758286(v=win.10))

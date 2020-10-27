@@ -4,10 +4,11 @@ description: The location of a .NET assembly determines how the CLR finds it and
 ms.date: "08/20/2019"
 helpviewer_keywords:
   - "locating assemblies"
-  - "assemblies [.NET Framework], location"
+  - "assemblies [.NET], location"
 ms.assetid: 9f1f41a7-2954-49d3-a2c0-62b6ef4d40ab
 ---
 # Assembly location
+
 An assembly's location determines whether the common language runtime can locate it when referenced, and can also determine whether the assembly can be shared with other assemblies. You can deploy an assembly in the following locations:
 
 - The application's directory or subdirectories.

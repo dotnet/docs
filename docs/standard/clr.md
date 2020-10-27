@@ -1,7 +1,8 @@
 ---
-title: "Common Language Runtime (CLR) overview - .NET Framework"
-description: Get started with common language runtime (CLR), the .NET run-time environment. The CLR runs code and provides services to make the development process easier.
-ms.date: "04/02/2019"
+title: "Common Language Runtime (CLR) overview - .NET"
+titleSuffix: ""
+description: Get started with common language runtime (CLR), .NET's run-time environment. The CLR runs code and provides services to make the development process easier.
+ms.date: 10/22/2020
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "compiling source code, runtime functionality"
@@ -10,7 +11,7 @@ helpviewer_keywords:
   - "runtime"
   - "common language runtime"
   - "metadata, runtime functionality"
-  - ".NET Framework, common language runtime"
+  - ".NET, common language runtime"
   - "language compilers"
   - "managed code"
   - "source code execution"
@@ -20,16 +21,16 @@ ms.custom: "updateeachrelease"
 ---
 # Common Language Runtime (CLR) overview
 
-The .NET Framework provides a run-time environment called the common language runtime, which runs the code and provides services that make the development process easier.
+.NET provides a run-time environment, called the common language runtime, that runs the code and provides services that make the development process easier.
 
-Compilers and tools expose the common language runtime's functionality and enable you to write code that benefits from this managed execution environment. Code that you develop with a language compiler that targets the runtime is called managed code; it benefits from features such as cross-language integration, cross-language exception handling, enhanced security, versioning and deployment support, a simplified model for component interaction, and debugging and profiling services.
+Compilers and tools expose the common language runtime's functionality and enable you to write code that benefits from this managed execution environment. Code that you develop with a language compiler that targets the runtime is called managed code. Managed code benefits from features such as cross-language integration, cross-language exception handling, enhanced security, versioning and deployment support, a simplified model for component interaction, and debugging and profiling services.
 
 > [!NOTE]
-> Compilers and tools are able to produce output that the common language runtime can consume because the type system, the format of metadata, and the runtime environment (the virtual execution system) are all defined by a public standard, the ECMA Common Language Infrastructure specification. For more information, see [ECMA C# and Common Language Infrastructure Specifications](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/).
+> Compilers and tools are able to produce output that the common language runtime can consume because the type system, the format of metadata, and the run-time environment (the virtual execution system) are all defined by a public standard, the ECMA Common Language Infrastructure specification. For more information, see [ECMA C# and Common Language Infrastructure Specifications](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/).
 
 To enable the runtime to provide services to managed code, language compilers must emit metadata that describes the types, members, and references in your code. Metadata is stored with the code; every loadable common language runtime portable executable (PE) file contains metadata. The runtime uses metadata to locate and load classes, lay out instances in memory, resolve method invocations, generate native code, enforce security, and set run-time context boundaries.
 
-The runtime automatically handles object layout and manages references to objects, releasing them when they are no longer being used. Objects whose lifetimes are managed in this way are called managed data. Garbage collection eliminates memory leaks as well as some other common programming errors. If your code is managed, you can use managed data, unmanaged data, or both managed and unmanaged data in your .NET Framework application. Because language compilers supply their own types, such as primitive types, you might not always know (or need to know) whether your data is being managed.
+The runtime automatically handles object layout and manages references to objects, releasing them when they are no longer being used. Objects whose lifetimes are managed in this way are called managed data. Garbage collection eliminates memory leaks as well as some other common programming errors. If your code is managed, you can use managed data, unmanaged data, or both managed and unmanaged data in your .NET application. Because language compilers supply their own types, such as primitive types, you might not always know (or need to know) whether your data is being managed.
 
 The common language runtime makes it easy to design components and applications whose objects interact across languages. Objects written in different languages can communicate with each other, and their behaviors can be tightly integrated. For example, you can define a class and then use a different language to derive a class from your original class or call a method on the original class. You can also pass an instance of a class to a method of a class written in a different language. This cross-language integration is possible because language compilers and tools that target the runtime use a common type system defined by the runtime, and they follow the runtime's rules for defining new types, as well as for creating, using, persisting, and binding to types.
 
@@ -57,7 +58,9 @@ Language compilers and tools expose the runtime's functionality in ways that are
 
 ## CLR versions
 
-The .NET Framework version number doesn't necessarily correspond to the version number of the CLR it includes. For a list of .NET Framework versions and their corresponding CLR versions, see [.NET Framework versions and dependencies](../framework/migration-guide/versions-and-dependencies.md). .NET Core releases have a single product version, that is, there is no separate CLR version. For a list of .NET Core versions, see [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
+.NET Core and .NET 5+ releases have a single product version, that is, there is no separate CLR version. For a list of .NET Core versions, see [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
+
+However, the .NET Framework version number doesn't necessarily correspond to the version number of the CLR it includes. For a list of .NET Framework versions and their corresponding CLR versions, see [.NET Framework versions and dependencies](../framework/migration-guide/versions-and-dependencies.md).
 
 ## Related topics
 
@@ -65,5 +68,5 @@ The .NET Framework version number doesn't necessarily correspond to the version 
 |-----------|-----------------|
 |[Managed Execution Process](managed-execution-process.md)|Describes the steps required to take advantage of the common language runtime.|
 |[Automatic Memory Management](automatic-memory-management.md)|Describes how the garbage collector allocates and releases memory.|
-|[Overview of the .NET Framework](../framework/get-started/overview.md)|Describes key .NET Framework concepts such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|
+|[Overview of .NET Framework](../framework/get-started/overview.md)|Describes key .NET Framework concepts, such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|
 |[Common Type System](./base-types/common-type-system.md)|Describes how types are declared, used, and managed in the runtime in support of cross-language integration.|

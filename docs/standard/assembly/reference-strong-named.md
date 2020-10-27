@@ -5,7 +5,7 @@ ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "strong-named assemblies, compile-time references"
   - "compile-time assembly referencing"
-  - "assemblies [.NET Framework], strong-named"
+  - "assemblies [.NET], strong-named"
   - "assembly binding, strong-named"
 ms.assetid: 4c6a406a-b5eb-44fa-b4ed-4e95bb95a813
 dev_langs: 

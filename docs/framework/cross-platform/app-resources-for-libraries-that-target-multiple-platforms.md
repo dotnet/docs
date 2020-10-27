@@ -1,7 +1,6 @@
 ---
 title: "App Resources for Libraries That Target Multiple Platforms"
 ms.date: "07/18/2018"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
@@ -14,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 72c76f0b-7255-4576-9261-3587f949669c
 ---
 # App Resources for Libraries That Target Multiple Platforms
-You can use the .NET Framework [Portable Class Library](cross-platform-development-with-the-portable-class-library.md) project type to ensure that resources in your class libraries can be accessed from multiple platforms. This project type is available in Visual Studio 2012 and targets the portable subset of the .NET Framework class library. Using  a Portable Class Library ensures that your library can be accessed from desktop apps, Silverlight apps, Windows Phone apps, and Windows 8.x Store apps.
+You can use the .NET Framework [Portable Class Library](portable-class-library.md) project type to ensure that resources in your class libraries can be accessed from multiple platforms. This project type is available in Visual Studio 2012 and targets the portable subset of the .NET Framework class library. Using  a Portable Class Library ensures that your library can be accessed from desktop apps, Silverlight apps, Windows Phone apps, and Windows 8.x Store apps.
 
 [!INCLUDE[standard](../../../includes/pcl-to-standard.md)]
 

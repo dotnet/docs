@@ -8,6 +8,7 @@ f1_keywords:
   - "whereconstraint_CSharpKeyword"
   - "classconstraint_CSharpKeyword"
   - "structconstraint_CSharpKeyword"
+  - "enumconstraint_CSharpKeyword"
 helpviewer_keywords:
   - "where (generic type constraint) [C#]"
 ---

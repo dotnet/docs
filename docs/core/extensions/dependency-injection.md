@@ -286,6 +286,7 @@ Scoped services are disposed by the container that created them. If a scoped ser
 
 - [Use dependency injection in .NET](dependency-injection-usage.md)
 - [Dependency injection guidelines](dependency-injection-guidelines.md)
+- [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)
 - [NDC Conference Patterns for DI app development](https://www.youtube.com/watch?v=x-C-CNBVTaY)
 - [Explicit dependencies principle](../../architecture/modern-web-apps-azure/architectural-principles.md#explicit-dependencies)
 - [Inversion of control containers and the dependency injection pattern (Martin Fowler)](https://www.martinfowler.com/articles/injection.html)

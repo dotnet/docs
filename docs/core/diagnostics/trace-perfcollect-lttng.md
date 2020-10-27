@@ -124,7 +124,7 @@ This will use `babeltrace` viewer to print the events payload:
 # [01:02:18.189250227] (+0.020165171) ubuntu-xenial DotNETRuntime:ExceptionCatchStart: { cpu_id = 0 }, { EntryEIP = 139873639728404, MethodID = 139873626968120, MethodName = "void [helloworld] helloworld.Program::Main(string[])", ClrInstanceID = 0 }
 ```
 
-### Using PerfView to open the trace File
+### Using PerfView to open the trace file
 
 To see an aggregate view of both the CPU sample and the events, you can use `PerfView` on a Windows machine.
 
@@ -150,9 +150,19 @@ PerfView will display the list of views that are supported based on the data con
 
 For more details on how to interpret views in PerfView, see help links in the view itself, or from the main window in PerfView choose **Help->Users Guide**.
 
-### TraceCompass
+### Using TraceCompass to open the trace file
 
-[Eclipse TraceCompass](https://www.eclipse.org/tracecompass/) is another option you may use to view the traces. TraceCompass works on Linux machines as well, so you don't need to move your trace over to a Windows machine. 
+[Eclipse TraceCompass](https://www.eclipse.org/tracecompass/) is another option you may use to view the traces. `TraceCompass` works on Linux machines as well, so you don't need to move your trace over to a Windows machine. To use `TraceCompass` to open your trace file, you will need to unzip the file. 
+
+```bash
+unzip myTrace.trace.zip
+```
+
+`perfcollect` will save the LTTng trace it collected into a CTF file format in a subdirectory in the `lttngTrace`. Specifically, the CTF file will be located in a directory that looks like `lttngTrace/auto-20201025-101230\ust\uid\1000\64-bit\`.
+
+You can open the CTF trace file in `TraceCompass` by selecting `File -> Open Trace` and select the `metadata` file.
+
+For more details, please refer to [`TraceCompass` documentation](https://www.eclipse.org/tracecompass/).
 
 ## Resolving Framework Symbols
 

@@ -76,7 +76,7 @@ The `OperationLogger` defines a constructor that requires each of the aforementi
 
 ## Register services for DI
 
-Update the *Program.cs* with the following code:
+Update *Program.cs* with the following code:
 
 :::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="1-18,35-60" highlight="22-26":::
 

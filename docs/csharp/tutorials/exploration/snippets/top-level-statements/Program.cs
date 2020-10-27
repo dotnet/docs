@@ -1,5 +1,15 @@
 ﻿using System;
-using System.Threading.Tasks;
+using MyNamespace;
+
+Console.WriteLine();
+foreach(var s in args)
+{
+    Console.Write(s);
+    Console.Write(' ');
+}
+Console.WriteLine();
+
+await Utilities.ShowConsoleAnimation();
 
 string[] answers =
 {
@@ -15,38 +25,5 @@ string[] answers =
     "Signs point to yes.",
 };
 
-// nice mistake:
-// Console.WriteLine(args);
-
-foreach(var s in args)
-{
-    Console.Write(s);
-    Console.Write(' ');
-}
-Console.WriteLine();
-
-for (int i = 0; i < 20; i++)
-{
-    Console.Write("| -");
-    await Task.Delay(50);
-    Console.Write("\b\b\b");
-    Console.Write("/ \\");
-    await Task.Delay(50);
-    Console.Write("\b\b\b");
-    Console.Write("- |");
-    await Task.Delay(50);
-    Console.Write("\b\b\b");
-    Console.Write("\\ /");
-    await Task.Delay(50);
-    Console.Write("\b\b\b");
-}
-Console.WriteLine();
-
 var index = new Random().Next(answers.Length - 1);
-
 Console.WriteLine(answers[index]);
-
-// Later code steps:
-// 1. refactor out delay code.
-// 2. factor method for args accumulation
-// 3. if args == 0.

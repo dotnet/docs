@@ -9,8 +9,8 @@ dev_langs:
 helpviewer_keywords: 
   - "storing data using isolated storage, accessing isolated storage"
   - "storing data using isolated storage, isolation types"
-  - "authentication [.NET Framework], isolated storage"
-  - "assemblies [.NET Framework], identity"
+  - "authentication [.NET], isolated storage"
+  - "assemblies [.NET], identity"
   - "isolated storage, accessing"
   - "data storage using isolated storage, isolation types"
   - "data storage using isolated storage, accessing isolated storage"

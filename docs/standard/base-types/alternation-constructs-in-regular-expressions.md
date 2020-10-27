@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "alternation constructs"
   - "optional matching patterns"
   - "constructs, alternation"
-  - ".NET Framework regular expressions, alternation constructs"
+  - ".NET regular expressions, alternation constructs"
 ms.assetid: 071e22e9-fbb0-4ecf-add1-8d2424f9f2d1
 ---
 # Alternation Constructs in Regular Expressions

@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "metacharacters, quantifiers"
   - "minimal matching quantifiers"
   - "quantifiers in regular expressions"
-  - ".NET Framework regular expressions, quantifiers"
+  - ".NET regular expressions, quantifiers"
   - "quantifiers"
   - "lazy quantifiers"
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f

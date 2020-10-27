@@ -8,7 +8,7 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "strings [.NET Framework], removing characters"
+  - "strings [.NET], removing characters"
   - "Remove method"
   - "TrimEnd method"
   - "Trim method"

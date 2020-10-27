@@ -92,6 +92,11 @@ Func<Column, Column> udf2 = Udf<string, string>(
 df.Select(udf2(df["_1"])).Show();
 ```
 
+## FAQs
+
+**Why don't Broadcast Variables work with .NET Interactive?**  
+This is explained in detail in [this article](dotnet-interactive-udf-issue.md).
+
 ## Next steps
 
 * [Get started with .NET for Apache Spark](../tutorials/get-started.md)

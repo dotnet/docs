@@ -103,9 +103,9 @@ Unless you specify a default culture for all the threads in an application domai
 
 The following example provides a simple illustration. It changes the app's current culture to French (France) (or, if French (France) is already the current culture, to English (United States)). It then invokes a delegate named `formatDelegate` that returns some numbers formatted as currency values in the new culture. Whether the delegate is invoked by a task either synchronously or asynchronously, the task uses the culture of the calling thread.
 
-:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.async/cs/asyncculture1.cs" id="1":::
+:::code language="csharp" source="snippets/cs/asyncculture1.cs" id="1":::
 
-:::code language="vbnet" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.async/vb/asyncculture1.vb" id="1":::
+:::code language="vbnet" source="snippets/vb/asyncculture1.vb" id="1":::
 
 > [!NOTE]
 > In versions of .NET Framework prior to .NET Framework 4.6, a task's culture is determined by the culture of the thread on which it *runs*, not the culture of the *calling thread*. For asynchronous tasks, this means the culture used by the task could be different to the calling thread's culture.

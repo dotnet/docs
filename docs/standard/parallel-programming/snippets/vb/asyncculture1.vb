@@ -5,11 +5,10 @@ Option Infer On
 ' <Snippet1>
 Imports System.Globalization
 Imports System.Threading
-Imports System.Threading.Tasks
 
 Module Example
-    Public Sub Main()
-        Dim values() As Decimal = {163025412.32d, 18905365.59d}
+    Public Sub Main1()
+        Dim values() As Decimal = {163025412.32D, 18905365.59D}
         Dim formatString As String = "C2"
         Dim formatDelegate As Func(Of String) = Function()
                                                     Dim output As String = String.Format("Formatting using the {0} culture on thread {1}.",
@@ -29,9 +28,9 @@ Module Example
         Console.WriteLine("The current culture is {0}",
                           CultureInfo.CurrentCulture.Name)
         If CultureInfo.CurrentCulture.Name = "fr-FR" Then
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US")
+            Thread.CurrentThread.CurrentCulture = New CultureInfo("en-US")
         Else
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-FR")
+            Thread.CurrentThread.CurrentCulture = New CultureInfo("fr-FR")
         End If
         Console.WriteLine("Changed the current culture to {0}.",
                           CultureInfo.CurrentCulture.Name)
@@ -52,7 +51,9 @@ Module Example
         Console.WriteLine(t2.Result)
     End Sub
 End Module
+
 ' The example displays the following output:
+'
 '          The example is running on thread 1
 '          The current culture is en-US
 '          Changed the current culture to fr-FR.

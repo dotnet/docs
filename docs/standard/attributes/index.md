@@ -27,7 +27,7 @@ The common language runtime allows you to add keyword-like descriptive declarati
 |[Applying Attributes](applying-attributes.md)|Describes how to apply an attribute to an element of your code.|
 |[Writing Custom Attributes](writing-custom-attributes.md)|Describes how to design custom attribute classes.|
 |[Retrieving Information Stored in Attributes](retrieving-information-stored-in-attributes.md)|Describes how to retrieve custom attributes for code that is loaded into the execution context.|
-|[Metadata and Self-Describing Components](../metadata-and-self-describing-components.md)|Provides an overview of metadata and describes how it is implemented in a .NET Framework portable executable (PE) file.|
+|[Metadata and Self-Describing Components](../metadata-and-self-describing-components.md)|Provides an overview of metadata and describes how it is implemented in a .NET portable executable (PE) file.|
 |[How to: Load Assemblies into the Reflection-Only Context](../../framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)|Explains how to retrieve custom attribute information in the reflection-only context.|
 
 ## Reference

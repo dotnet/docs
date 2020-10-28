@@ -6,9 +6,9 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "formatting [.NET Framework], dates"
-  - "dates [.NET Framework], formatting"
-  - "calendars [.NET Framework], displaying dates"
+  - "formatting [.NET], dates"
+  - "dates [.NET], formatting"
+  - "calendars [.NET], displaying dates"
   - "displaying date and time data"
 ms.assetid: ed324eff-4aff-4a76-b6c0-04e6c0d8f5a9
 ---

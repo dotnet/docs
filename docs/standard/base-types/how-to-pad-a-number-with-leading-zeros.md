@@ -7,10 +7,10 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "numeric format strings [.NET Framework]"
-  - "formatting [.NET Framework], numbers"
-  - "number formatting [.NET Framework]"
-  - "numbers [.NET Framework], format strings"
+  - "numeric format strings [.NET]"
+  - "formatting [.NET], numbers"
+  - "number formatting [.NET]"
+  - "numbers [.NET], format strings"
 ms.assetid: 0b2c2cb5-c580-4891-8d81-cb632f5ec384
 ---
 

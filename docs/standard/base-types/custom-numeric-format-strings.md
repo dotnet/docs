@@ -8,13 +8,13 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords:
-  - "numeric format strings [.NET Framework]"
-  - "formatting [.NET Framework], numbers"
+  - "numeric format strings [.NET]"
+  - "formatting [.NET], numbers"
   - "format strings"
   - "custom numeric format strings"
-  - "numbers [.NET Framework], formatting"
+  - "numbers [.NET], formatting"
   - "format specifiers, numeric"
-  - "formatting numbers [.NET Framework]"
+  - "formatting numbers [.NET]"
   - "format specifiers, custom numeric format strings"
 ms.assetid: 6f74fd32-6c6b-48ed-8241-3c2b86dea5f4
 ---

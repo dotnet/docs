@@ -19,7 +19,7 @@ If you have an existing app that may use this strategy, some things you can do t
 
 If your app is so large that you can't migrate the entire web application at once, and you need to be able to deploy the new ASP.NET Core app side by side with the existing ASP.NET app, there are deployment strategies that can be used to achieve this. These are covered in [Chapter 5: Deployment Scenarios](deployment-scenarios.md).
 
-Keep in mind that ASP.NET Core 2.1 is the last LTS release of .NET Core that supports running on .NET Framework and consuming .NET Framework libraries. This release will be out of support soon, so if you require Microsoft support for your application, the window of opportunity for using this strategy won't be open much longer.
+Keep in mind that ASP.NET Core 2.1 is the last LTS release of .NET Core that supports running on .NET Framework and consuming .NET Framework libraries. This release will be out of support soon, but ASP.NET Core 2.1 on .NET Framework will be supported as long as the .NET Framework (even after .NET Core 2.1 support ends). See the 'ASP.NET Core 2.1 on .NET Framework' section [here](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## References
 

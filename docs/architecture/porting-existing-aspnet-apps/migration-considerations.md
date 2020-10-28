@@ -19,7 +19,7 @@ Apps built on .NET Core are truly cross-platform and can run on Windows as well 
 
 ### Performance and scalability
 
-Apps built with .NET Core are running on one of the fastest tech stacks available anywhere. If performance is a key concern for your app, you're almost certain to see a performance improvement by moving to .NET Core from ASP.NET MVC.
+Apps built with .NET Core are running on [one of the fastest tech stacks available anywhere](https://www.techempower.com/benchmarks/#hw=ph&test=plaintext). ASP.NET MVC apps often see performance improvements on ASP.NET Core, especially if they're updated to take advantage of some new features available in .NET Core.
 
 ### Cloud-native
 
@@ -46,6 +46,10 @@ The biggest reason why you would want to stay on .NET Framework, aside from simp
 ### AppDomains
 
 Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and are generally expensive. Creating additional app domains is not supported, and there are no plans to add this capability to .NET Core in the future. For code isolation, use separate processes or containers as an alternative.
+
+### WCF
+
+Server-side WCF is not supported in .NET Core. .NET Core supports WCF clients but not WCF hosts. Apps that require this functionality will need to upgrade to a different communication technology (such as gRPC or REST) as part of a migration.
 
 ### Remoting
 

@@ -1,11 +1,11 @@
 ---
-title: Understanding and updating dependencies
+title: Understand and update dependencies
 description: 
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Understanding and updating dependencies
+# Understand and update dependencies
 
 ## References
 

@@ -1,11 +1,11 @@
 ---
-title: Comparing ASP.NET Web API 2 and ASP.NET Core
+title: Compare ASP.NET Web API 2 and ASP.NET Core
 description: 
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing ASP.NET Web API 2 and ASP.NET Core
+# Compare ASP.NET Web API 2 and ASP.NET Core
 
 ## References
 

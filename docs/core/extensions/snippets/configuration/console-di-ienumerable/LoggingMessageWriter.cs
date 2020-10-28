@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace DependencyInjection.Example
+namespace ConsoleDI.IEnumerableExample
 {
     public class LoggingMessageWriter : IMessageWriter
     {

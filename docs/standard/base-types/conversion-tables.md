@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "converting types, narrowing conversions"
   - "converting types, widening conversions"
   - "base types, converting"
-  - "tables [.NET Framework], type conversions"
-  - "data types [.NET Framework], converting"
+  - "tables [.NET], type conversions"
+  - "data types [.NET], converting"
 ms.assetid: 0ea65c59-85eb-4a52-94ca-c36d3bd13058
 ---
 # Type Conversion Tables in .NET

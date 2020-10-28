@@ -7,16 +7,16 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "strings [.NET Framework],searching"
+  - "strings [.NET],searching"
   - "best practices,string comparison and sorting"
-  - "strings [.NET Framework],best practices"
-  - "strings [.NET Framework],basic string operations"
+  - "strings [.NET],best practices"
+  - "strings [.NET],basic string operations"
   - "sorting strings"
-  - "strings [.NET Framework],sorting"
-  - "string comparison [.NET Framework],best practices"
+  - "strings [.NET],sorting"
+  - "string comparison [.NET],best practices"
   - "string sorting"
   - "comparing strings"
-  - "strings [.NET Framework],comparing"
+  - "strings [.NET],comparing"
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
 ---
 # Best Practices for Using Strings in .NET

@@ -4,9 +4,9 @@ description: Learn about commonly used collection types in .NET, such as hash ta
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "collections [.NET Framework], generic"
-  - "objects [.NET Framework], grouping in collections"
-  - "generics [.NET Framework], collections"
+  - "collections [.NET], generic"
+  - "objects [.NET], grouping in collections"
+  - "generics [.NET], collections"
   - "IList interface, grouping data in collections"
   - "IDictionary interface, grouping data in collections"
   - "grouping data in collections, generic collection types"
@@ -29,10 +29,10 @@ Collection types are the common variations of data collections, such as hash tab
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Collections and Data Structures](index.md)|Discusses the various collection types available in the .NET Framework, including stacks, queues, lists, arrays, and dictionaries.|  
+|[Collections and Data Structures](index.md)|Discusses the various collection types available in .NET, including stacks, queues, lists, arrays, and dictionaries.|  
 |[Hashtable and Dictionary Collection Types](hashtable-and-dictionary-collection-types.md)|Describes the features of generic and nongeneric hash-based dictionary types.|  
 |[Sorted Collection Types](sorted-collection-types.md)|Describes classes that provide sorting functionality for lists and sets.|  
-|[Generics](../generics/index.md)|Describes the generics feature, including the generic collections, delegates, and interfaces provided by the .NET Framework. Provides links to feature documentation for C#, Visual Basic, and Visual C++, and to supporting technologies such as reflection.|  
+|[Generics](../generics/index.md)|Describes the generics feature, including the generic collections, delegates, and interfaces provided by .NET. Provides links to feature documentation for C#, Visual Basic, and Visual C++, and to supporting technologies such as reflection.|  
   
 ## Reference  
  <xref:System.Collections?displayProperty=nameWithType>  

@@ -8,7 +8,7 @@ dev_langs:
   - "cpp"
 helpviewer_keywords: 
   - "Char data type, parsing strings"
-  - "enumerations [.NET Framework], parsing strings"
+  - "enumerations [.NET], parsing strings"
   - "base types, parsing strings"
   - "parsing strings, other strings"
   - "Boolean data type, parsing strings"

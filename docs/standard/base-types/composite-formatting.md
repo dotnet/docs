@@ -8,11 +8,11 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "parameter specifiers"
-  - "strings [.NET Framework], alignment"
+  - "strings [.NET], alignment"
   - "format specifiers, composite formatting"
-  - "strings [.NET Framework], composite"
+  - "strings [.NET], composite"
   - "composite formatting"
-  - "objects [.NET Framework], formatting multiple objects"
+  - "objects [.NET], formatting multiple objects"
 ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
 ---
 # Composite formatting
@@ -78,7 +78,7 @@ The composite formatting feature is supported by methods such as the following:
 ### Format String Component  
  The optional *formatString* component is a format string that is appropriate for the type of object being formatted. Specify a standard or custom numeric format string if the corresponding object is a numeric value, a standard or custom date and time format string if the corresponding object is a <xref:System.DateTime> object, or an [enumeration format string](enumeration-format-strings.md) if the corresponding object is an enumeration value. If *formatString* is not specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.  
   
- The following table lists types or categories of types in the .NET Framework class library that support a predefined set of format strings, and provides links to the topics that list the supported format strings. Note that string formatting is an extensible mechanism that makes it possible to define new format strings for all existing types as well as to define a set of format strings supported by an application-defined type. For more information, see the <xref:System.IFormattable> and <xref:System.ICustomFormatter> interface topics.  
+ The following table lists types or categories of types in the .NET class library that support a predefined set of format strings, and provides links to the topics that list the supported format strings. Note that string formatting is an extensible mechanism that makes it possible to define new format strings for all existing types as well as to define a set of format strings supported by an application-defined type. For more information, see the <xref:System.IFormattable> and <xref:System.ICustomFormatter> interface topics.  
   
 |Type or type category|See|  
 |---------------------------|---------|  

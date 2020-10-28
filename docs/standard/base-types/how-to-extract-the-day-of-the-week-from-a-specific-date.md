@@ -7,27 +7,28 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "formatting [.NET Framework], dates"
+  - "formatting [.NET], dates"
   - "DateTime.DayOfWeek property"
   - "DateTime.ToString method"
-  - "dates [.NET Framework], retrieving week information"
+  - "dates [.NET], retrieving week information"
   - "DateTimeOffset.DayOfWeek property"
-  - "dates [.NET Framework], day of week"
+  - "dates [.NET], day of week"
   - "Weekday function"
-  - "day of week [.NET Framework]"
+  - "day of week [.NET]"
   - "extracting day of week"
   - "weekday names"
   - "WeekdayName function"
-  - "numbers [.NET Framework], day of week"
-  - "formatting [.NET Framework], time"
+  - "numbers [.NET], day of week"
+  - "formatting [.NET], time"
   - "DateTimeOffset.ToString method"
   - "full weekday names"
 ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
 ---
 # How to: Extract the Day of the Week from a Specific Date
-The .NET Framework makes it easy to determine the ordinal day of the week for a particular date, and to display the localized weekday name for a particular date. An enumerated value that indicates the day of the week corresponding to a particular date is available from the <xref:System.DateTime.DayOfWeek%2A> or <xref:System.DateTimeOffset.DayOfWeek%2A> property. In contrast, retrieving the weekday name is a formatting operation that can be performed by calling a formatting method, such as a date and time value's `ToString` method or the <xref:System.String.Format%2A?displayProperty=nameWithType> method. This topic shows how to perform these formatting operations.  
+
+.NET makes it easy to determine the ordinal day of the week for a particular date, and to display the localized weekday name for a particular date. An enumerated value that indicates the day of the week corresponding to a particular date is available from the <xref:System.DateTime.DayOfWeek%2A> or <xref:System.DateTimeOffset.DayOfWeek%2A> property. In contrast, retrieving the weekday name is a formatting operation that can be performed by calling a formatting method, such as a date and time value's `ToString` method or the <xref:System.String.Format%2A?displayProperty=nameWithType> method. This topic shows how to perform these formatting operations.  
   
-### To extract a number indicating the day of the week from a specific date  
+## Extract a number indicating the day of the week
   
 1. If you are working with the string representation of a date, convert it to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value by using the static <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType> method.  
   
@@ -40,7 +41,7 @@ The .NET Framework makes it easy to determine the ordinal day of the week for a 
  [!code-csharp[Formatting.Howto.WeekdayName#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/cs/weekdaynumber7.cs#7)]
  [!code-vb[Formatting.Howto.WeekdayName#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/weekdaynumber7.vb#7)]  
   
-### To extract the abbreviated weekday name from a specific date  
+## Extract the abbreviated weekday name
   
 1. If you are working with the string representation of a date, convert it to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value by using the static <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType> method.  
   
@@ -56,7 +57,7 @@ The .NET Framework makes it easy to determine the ordinal day of the week for a 
          [!code-csharp[Formatting.Howto.WeekdayName#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/cs/abbrname2.cs#2)]
          [!code-vb[Formatting.Howto.WeekdayName#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/abbrname2.vb#2)]  
   
-### To extract the full weekday name from a specific date  
+## Extract the full weekday name
   
 1. If you are working with the string representation of a date, convert it to a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value by using the static <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> or <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType> method.  
   
@@ -78,7 +79,7 @@ The .NET Framework makes it easy to determine the ordinal day of the week for a 
  [!code-csharp[Formatting.Howto.WeekdayName#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/cs/example6.cs#6)]
  [!code-vb[Formatting.Howto.WeekdayName#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/example6.vb#6)]  
   
- Individual languages may provide functionality that duplicates or supplements the functionality provided by the .NET Framework. For example, Visual Basic includes two such functions:  
+ Individual languages may provide functionality that duplicates or supplements the functionality provided by .NET. For example, Visual Basic includes two such functions:  
   
 - `Weekday`, which returns a number that indicates the day of the week of a particular date. It considers the ordinal value of the first day of the week to be one, whereas the <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> property considers it to be zero.  
   

@@ -9,13 +9,13 @@ dev_langs:
   - "cpp"
 helpviewer_keywords: 
   - "Remove method"
-  - "strings [.NET Framework], capacities"
+  - "strings [.NET], capacities"
   - "StringBuilder object"
   - "Replace method"
   - "AppendFormat method"
   - "Append method"
   - "Insert method"
-  - "strings [.NET Framework], StringBuilder object"
+  - "strings [.NET], StringBuilder object"
 ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
 ---
 # Using the StringBuilder Class in .NET

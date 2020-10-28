@@ -4,7 +4,7 @@ description: Learn about the basic operations that you can perform on strings.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "strings [.NET Framework], basic string operations"
+  - "strings [.NET], basic string operations"
   - "custom strings"
 ms.assetid: 8133d357-90b5-4b62-9927-43323d99b6b6
 ms.custom: seadec18

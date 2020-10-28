@@ -32,9 +32,9 @@ When the code is indirectly referencing an assembly through reflection, you can 
 </ItemGroup>
 ```
 
-### Support for SSL Certificates
+### Support for SSL certificates
 
-Suppose one of the scenarios is to load SSL certificates within an ASP.NET Core app.  We want to ensure that when trimming we also prevent trimming assemblies that will help with loading SSL certificates.
+If your app loads SSL certificates, such as in an ASP.NET Core app, you'll want to ensure that when trimming you prevent trimming assemblies that will help with loading SSL certificates.
 
 We can update our project file to include the following for ASP.NET Core 3.1:
 

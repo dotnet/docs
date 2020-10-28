@@ -2,14 +2,10 @@
 Option Strict On
 Option Infer On
 
-' <Snippet5>
 ' <Snippet1>
 Imports System.Globalization
-Imports System.Runtime.Versioning
 Imports System.Threading
 Imports System.Threading.Tasks
-
-<Assembly: TargetFramework(".NETFramework,Version=v4.6")>
 
 Module Example
     Public Sub Main()
@@ -73,21 +69,3 @@ End Module
 '          Formatting Imports the fr-FR culture on thread 1.
 '          163 025 412,32 €   18 905 365,59 €
 ' </Snippet1>
-' If the TargetFrameworkAttribute statement is removed, the example
-' displays the following output:
-'          The example is running on thread 1
-'          The current culture is en-US
-'          Changed the current culture to fr-FR.
-'
-'          Executing the delegate synchronously:
-'          Formatting using the fr-FR culture on thread 1.
-'          163 025 412,32 €   18 905 365,59 €
-'
-'          Executing a task asynchronously:
-'          Formatting using the en-US culture on thread 3.
-'          $163,025,412.32   $18,905,365.59
-'
-'          Executing a task synchronously:
-'          Formatting using the fr-FR culture on thread 1.
-'          163 025 412,32 €   18 905 365,59 €
-' </Snippet5>

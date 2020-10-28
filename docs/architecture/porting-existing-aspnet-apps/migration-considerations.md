@@ -15,7 +15,7 @@ Let's start with some of the reasons why you might want to move to .NET Core. Th
 
 ### Cross-platform support
 
-Apps built on .NET Core are truly cross-platform and can run on Windows as well as Linux and MacOS. This means not only can your developers use whatever hardware they want, but you'll also be able to host your application anywhere from local IIS to Azure in the cloud; from Linux Docker containers to IoT devices.
+Apps built on .NET Core are truly cross-platform and can run on Windows as well as Linux and macOS. Not only can your developers use whatever hardware they want, but you can also host your app anywhere. Examples range from local IIS to Azure in the cloud or from Linux Docker containers to IoT devices.
 
 ### Performance and scalability
 
@@ -23,7 +23,7 @@ Apps built with .NET Core are running on one of the fastest tech stacks availabl
 
 ### Cloud-native
 
-For the above reasons as well as others, .NET Core apps are very well-suited to running in cloud hosting environments. Lightweight and fast, apps running in Core can easily be deployed to Azure Web Apps or containers and scaled horizontally as needed to meet immediate system demand.
+For the above reasons as well as others, .NET Core apps are very well-suited to running in cloud hosting environments. Lightweight and fast, .NET Core apps can be deployed to Azure Web Apps or containers and scaled horizontally as needed to meet immediate system demand.
 
 ### Maintainable
 

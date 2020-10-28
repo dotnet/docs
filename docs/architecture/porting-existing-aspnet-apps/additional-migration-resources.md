@@ -11,11 +11,11 @@ As you're planning and executing your migration from ASP.NET MVC and/or Web API 
 
 ## Official documentation
 
-The official documentation website, [docs.microsoft.com](https://docs.microsoft.com/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to docs articles, but for any problem you're facing it's often worth at least doing a quick search of the docs to see if there is already information there covering the issue and offering a solution or workaround.
+The official documentation website, [docs.microsoft.com](https://docs.microsoft.com/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to documentation. For any problem you're facing, it's worth searching the documentation to see if there's already information there covering the issue and offering a solution or workaround.
 
 ## GitHub
 
-Because .NET Core is an open source project, many issues are discovered, reported, discussed, and fixed on GitHub. Microsoft has several GitHub organizations in which you'll find repositories that may be helpful. A partial list of these organizations and some of their public repositories are listed below:
+Because .NET Core is an open-source project, many issues are discovered, reported, discussed, and fixed on GitHub. Microsoft has several GitHub organizations in which you'll find repositories that may be helpful. A partial list of these organizations and some of their public repositories are listed below:
 
 - [Microsoft](https://github.com/microsoft)
   - [ASP.NET API Versioning](https://github.com/microsoft/aspnet-api-versioning)

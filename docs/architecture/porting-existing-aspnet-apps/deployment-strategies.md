@@ -1,13 +1,13 @@
 ---
 title: Deployment strategies
-description: What deployment strategies can teams use while migrating from ASP.NET to .NET Core? Can an incremental migration allow side-by-side deployment of .NET Framework and .NET Core apps, providing a seamless end user experience?
+description: What deployment strategies can teams use while migrating from ASP.NET to ASP.NET Core? Can an incremental migration allow side-by-side deployment of .NET Framework and .NET Core apps, providing a seamless end user experience?
 author: ardalis
 ms.date: 11/13/2020
 ---
 
 # Deployment strategies
 
-One consideration as you plan the migration of your large ASP.NET app to ASP.NET Core is how you will deploy the new app. With ASP.NET, deployment options were limited to IIS on Windows. With .NET Core, a much wider array of deployment options are available.
+One consideration as you plan the migration of your large ASP.NET app to ASP.NET Core is how you will deploy the new app. With ASP.NET, deployment options were limited to IIS on Windows. With ASP.NET Core, a much wider array of deployment options are available.
 
 ## Cross-platform options
 
@@ -27,7 +27,7 @@ TODO: Add figure showing migration to container-hosted app or apps.
 
 ## Side-by-side deployment options
 
-Migrating large .NET apps to .NET Core often requires a substantial effort. Most organizations will want to be able to break this effort up in some fashion, so that pieces of the app can be migrated and deployed in production before the entire migration is complete. Running both the original ASP.NET application and its newly-migrated ASP.NET Core sub-app(s) side by side is a frequently cited goal. This can be achieved through a number of mechanisms including leveraging IIS routing, which is covered in [chapter 5](deployment-scenarios.md). Other options include leveraging application gateways or cloud design patterns like [backends for frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) to manage sets of ASP.NET Web APIs and ASP.NET Core API endpoints.
+Migrating large .NET Framework apps to .NET Core often requires a substantial effort. Most organizations will want to be able to break this effort up in some fashion, so that pieces of the app can be migrated and deployed in production before the entire migration is complete. Running both the original ASP.NET application and its newly-migrated ASP.NET Core sub-app(s) side by side is a frequently cited goal. This can be achieved through a number of mechanisms including leveraging IIS routing, which is covered in [chapter 5](deployment-scenarios.md). Other options include leveraging application gateways or cloud design patterns like [backends for frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) to manage sets of ASP.NET Web APIs and ASP.NET Core API endpoints.
 
 ## IIS on Windows
 
@@ -35,7 +35,7 @@ You can continue hosting your apps on IIS running on Windows. This is a fine opt
 
 ## Other options on Windows
 
-You can host apps side-by-side apps on Windows using any combination of Kestrel, HTTP.sys, and IIS hosts, in addition to docker containers if needed. If your app requires a combination of Windows and Linux services, hosting on a Windows server with [WSL](https://docs.microsoft.com/windows/wsl/about) and/or Linux Docker containers provides a single server solution to hosting all parts of the app.
+You can host apps side-by-side apps on Windows using any combination of Kestrel, HTTP.sys, and IIS hosts, in addition to Docker containers if needed. If your app requires a combination of Windows and Linux services, hosting on a Windows server with [WSL](https://docs.microsoft.com/windows/wsl/about) and/or Linux Docker containers provides a single server solution to hosting all parts of the app.
 
 ## References
 

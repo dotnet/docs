@@ -1,9 +1,9 @@
 ---
 title: Top-level statements - C# tutorial
 description: This tutorial shows how you can use top-level statements to experiment and prove concepts while exploring your ideas
-ms.date: 10/21/20209
+ms.date: 10/28/20209
 ---
-# Tutorial: Explore ideas using top level statements to build code as your learn
+# Tutorial: Explore ideas using top-level statements to build code as you learn
 
 Introduction and problem statement
 
@@ -11,12 +11,11 @@ In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
 >
-> - yada
-> - yada
-> - yada
+> - Learn the rules governing your use of top-level statements.
+> - Use top-level statements to explore algorithms.
+> - Refactor explorations into reusable components.
 
 ## Prerequisites
-
 
 You'll need to set up your machine to run .NET 5, which includes the C# 9 compiler. The C# 9 compiler is available starting with [Visual Studio 2019 version 16.9 preview 1](https://visualstudio.microsoft.com/vs/preview/) or [.NET 5.0 SDK](https://dot.net/get-dotnet5).
 
@@ -24,9 +23,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## Start exploring
 
-Top-level statements enables you to avoid the extra ceremony required by placing your program's entry point in a static method in a class. The typical starting point for a new console application looks like the following code:
-
-<< Add discussion of `dotnet new` >>
+Top-level statements enable you to avoid the extra ceremony required by placing your program's entry point in a static method in a class. The typical starting point for a new console application looks like the following code:
 
 ```csharp
 using System;
@@ -43,7 +40,7 @@ namespace Application
 }
 ```
 
-You can start with something that looks like this:
+The preceding code is the result of running the `dotnet new console` command and creating a new console application. Those 11 lines contain only one line of executable code. You can simplify that program with the new top-level statements feature. That enables you to remove all but two of the lines in this program:
 
 ```csharp
 using System;
@@ -51,13 +48,15 @@ using System;
 Console.WriteLine("Hello World!");
 ```
 
-This simplifies what's needed to begin exploring new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you've built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
+This action simplifies what's needed to begin exploring new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you've built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
+
+Top-level statements are executed in the order they appear in the file. Top-level statements can only be used in one source file in your application. The compiler generates an error if you use them in more than one file.
 
 ## Build a magic .NET answer machine
 
 For this tutorial, let's build a console application that answers a "yes" or "no" question with a random answer. You'll build out the functionality step by step. You can focus on your task rather than ceremony needed for the structure of a typical program. Then, once you're happy with the functionality, you can refactor the application as you see fit.
 
-A good starting point is to write the question back to the console. You can start by writing the following:
+A good starting point is to write the question back to the console. You can start by writing the following code:
 
 ```csharp
 using System;
@@ -65,9 +64,9 @@ using System;
 Console.WriteLine(args);
 ```
 
-You don't declare an `args` variable. For the single source file that contains your top-level statements, the compiler recognizes `args` to mean the command line arguments. The type of args is a `string[]`, as in all C# programs.
+You don't declare an `args` variable. For the single source file that contains your top-level statements, the compiler recognizes `args` to mean the command-line arguments. The type of args is a `string[]`, as in all C# programs.
 
-You can test this by running the following `dotnet run` command:
+You can test your code by running the following `dotnet run` command:
 
 ```console
 dotnet run -- Should I use top level statements in all my programs?
@@ -81,15 +80,7 @@ System.String[]
 
 To write the question to the console, you'll need to enumerate the arguments and separate them with a space. Replace the `WriteLine` call with the following code:
 
-```csharp
-Console.WriteLine();
-foreach(var s in args)
-{
-    Console.Write(s);
-    Console.Write(' ');
-}
-Console.WriteLine();
-```
+:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="EchoInput":::
 
 Now, when you run the program, it will correctly display the question as a string of arguments.
 
@@ -97,30 +88,13 @@ Now, when you run the program, it will correctly display the question as a strin
 
 After echoing the question, you can add the code to generate the random answer. Start by adding an array of possible answers:
 
-```csharp
-string[] answers =
-{
-    "It is certain.",       "Reply hazy, try again.",     "Don’t count on it.",
-    "It is decidedly so.",  "Ask again later.",           "My reply is no.",
-    "Without a doubt.",     "Better not tell you now.",   "My sources say no.",
-    "Yes – definitely.",    "Cannot predict now.",        "Outlook not so good.",
-    "You may rely on it.",  "Concentrate and ask again.", "Very doubtful.",
-    "As I see it, yes.",
-    "Most likely.",
-    "Outlook good.",
-    "Yes.",
-    "Signs point to yes.",
-};
-```
+:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="Answers":::
 
 This array has 12 answers that are affirmative, six that are non-committal, and six that are negative. Next, add the following code to generate and display a random answer from the array:
 
-```csharp
-var index = new Random().Next(answers.Length - 1);
-Console.WriteLine(answers[index]);
-```
+:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="GenerateAnswer":::
 
-You can run the application again to see the results. You should see something like the following:
+You can run the application again to see the results. You should see something like the following output:
 
 ```console
 dotnet run -- Should I use top level statements in all my programs?
@@ -129,26 +103,9 @@ Should I use top level statements in all my programs?
 Better not tell you now.
 ```
 
-This answers the questions, but let's add one more feature. You'd like your question app to simulate thinking about the answer. You can do that by adding a bit of ASCII animation, and pausing while working.  Add the following code after the line that echoes the question:
+This code answers the questions, but let's add one more feature. You'd like your question app to simulate thinking about the answer. You can do that by adding a bit of ASCII animation, and pausing while working.  Add the following code after the line that echoes the question:
 
-```csharp
-for (int i = 0; i < 20; i++)
-{
-    Console.Write("| -");
-    await Task.Delay(50);
-    Console.Write("\b\b\b");
-    Console.Write("/ \\");
-    await Task.Delay(50);
-    Console.Write("\b\b\b");
-    Console.Write("- |");
-    await Task.Delay(50);
-    Console.Write("\b\b\b");
-    Console.Write("\\ /");
-    await Task.Delay(50);
-    Console.Write("\b\b\b");
-}
-Console.WriteLine();
-```
+:::code language="csharp" source="snippets/top-level-statements/UtilitiesPassOne.cs" ID="AnimationFirstPass":::
 
 You'll also need to add a `using` statement to the top of the source file:
 
@@ -156,13 +113,13 @@ You'll also need to add a `using` statement to the top of the source file:
 using System.Threading.Tasks;
 ```
 
-The `using` statements must be before any other statements in the file. Otherwise, it's a compiler error. You can run the program again and see the animation. That makes a better experience.
+The `using` statements must be before any other statements in the file. Otherwise, it's a compiler error. You can run the program again and see the animation. That makes a better experience. Experiment with the length of the delay to match your taste.
 
-The preceding code creates a set of spinning lines separated by a space. Adding the `await` keyword instructs the compiler to generate the program entry point as a method that has the `async` modifier, and returns a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>. This program does not return a value, so the program entry point returns a `Task`. If your program returns an integer value, you would add a return statement to the end of your top-level statements. That return statement would specify the integer value to return. If your top-level statements includes an `await` expression, the return type becomes <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>.
+The preceding code creates a set of spinning lines separated by a space. Adding the `await` keyword instructs the compiler to generate the program entry point as a method that has the `async` modifier, and returns a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>. This program does not return a value, so the program entry point returns a `Task`. If your program returns an integer value, you would add a return statement to the end of your top-level statements. That return statement would specify the integer value to return. If your top-level statements include an `await` expression, the return type becomes <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>.
 
 ## Refactoring for the future
 
-Your program should look like the following:
+Your program should look like the following code:
 
 ```csharp
 using System;
@@ -211,9 +168,9 @@ var index = new Random().Next(answers.Length - 1);
 Console.WriteLine(answers[index]);
 ```
 
-This is reasonable code. It works. But it isn't reusable. Now that you have the application working, it's time to pull out reusable parts.
+The preceding code is reasonable. It works. But it isn't reusable. Now that you have the application working, it's time to pull out reusable parts.
 
-One candidate is the code that displays the waiting animation.  That can become a method:
+One candidate is the code that displays the waiting animation. That snippet can become a method:
 
 You can start by creating a local function in your file. Replace the current animation with the following code:
 
@@ -241,55 +198,20 @@ static async Task ShowConsoleAnimation()
 }
 ```
 
-The preceding code creates a local function inside your main method. That's still not very reusable. So, extract that code into a class. Create a new file named *utilities.cs* and add the following code:
+The preceding code creates a local function inside your main method. That's still not reusable. So, extract that code into a class. Create a new file named *utilities.cs* and add the following code:
 
-```csharp
-using System;
-using System.Threading.Tasks;
+:::code language="csharp" source="snippets/top-level-statements/UtilitiesPassOne.cs" ID="SnippetUtilities":::
 
-namespace MyNamespace
-{
-    public static class Utilities
-    {
-        public static async Task ShowConsoleAnimation()
-        {
-            for (int i = 0; i < 20; i++)
-            {
-                Console.Write("| -");
-                await Task.Delay(50);
-                Console.Write("\b\b\b");
-                Console.Write("/ \\");
-                await Task.Delay(50);
-                Console.Write("\b\b\b");
-                Console.Write("- |");
-                await Task.Delay(50);
-                Console.Write("\b\b\b");
-                Console.Write("\\ /");
-                await Task.Delay(50);
-                Console.Write("\b\b\b");
-            }
-            Console.WriteLine();
-        }
-    }
-}
-```
-
-. Top level statements can only be in one file, and that file cannot contain namespaces or types.
+. Top-level statements can only be in one file, and that file cannot contain namespaces or types.
 
 Finally, you can clean the animation code to remove some duplication:
 
-```csharp
-foreach (string s in new[] { "| -", "/ \\", "- |", "\\ /", })
-{
-    Console.Write(s);
-    await Task.Delay(50);
-    Console.Write("\b\b\b");
-}
-```
+:::code language="csharp" source="snippets/top-level-statements/Utiliities.cs" ID="Animation":::
+
 Now you have a complete application, and you've refactored the reusable parts for later use.
 
 ## Summary
 
-. Explore
-. Refactor
-. Use for azure functions, console utilites, etc.
+Top-level statements make it easier to create simple programs for use to explore new algorithms. You can experiment with algorithms by trying different snippets of code. Once you've learned what works, you can refactor the code to be more maintainable.
+
+Top-level statements simplify programs that are based on console applications. These include Azure functions, GitHub actions, and other small utilities.

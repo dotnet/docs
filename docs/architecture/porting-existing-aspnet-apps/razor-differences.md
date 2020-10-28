@@ -1,11 +1,11 @@
 ---
-title: Comparing Razor usage in ASP.NET MVC and ASP.NET Core
+title: Compare Razor usage in ASP.NET MVC and ASP.NET Core
 description: 
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing Razor usage in ASP.NET MVC and ASP.NET Core
+# Compare Razor usage in ASP.NET MVC and ASP.NET Core
 
 ## References
 

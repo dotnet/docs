@@ -1,17 +1,17 @@
 ---
-title: Migrating to ASP.NET Core 2.1
+title: Migrate to ASP.NET Core 2.1
 description: As the last .NET Core version to support .NET Framework runtime targeting, does migrating to .NET Core 2.1 make sense as an intermediate step in some app migration plans?
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Migrating to ASP.NET Core 2.1
+# Migrate to ASP.NET Core 2.1
 
 ASP.NET Core 2.1 is an interesting release because it is the only currently supported .NET Core release to support both .NET Core and .NET Framework runtimes. As such, it may offer an easier upgrade path for some applications when compared to upgrading all parts of the app to .NET Core at once. As an LTS release, support for .NET Core 2.1 will continue through August 2021.
 
 ## Should applications run on .NET Framework with ASP.NET Core 2.1?
 
-Versions of .NET Core through 2.2 supported both .NET Core and .NET Framework runtimes. Does it make sense to migrate some or all of an application to ASP.NET Core 2.1 as a stepping stone, before porting over completely to .NET Core? Apps, or subsets of apps, could see their front-end ASP.NET logic ported to use ASP.NET Core, while still consuming .NET Framework libraries for business logic and infrastructure consumption. This approach may make sense when there is a relatively thin UI layer without much business logic, and a much larger set of functionality in class libraries.
+ASP.NET Core 2.2 and earlier supported both .NET Core and .NET Framework runtimes. Does it make sense to migrate some or all of an application to ASP.NET Core 2.1 as a stepping stone, before porting over completely to .NET Core? Apps, or subsets of apps, could see their front-end ASP.NET logic ported to use ASP.NET Core, while still consuming .NET Framework libraries for business logic and infrastructure consumption. This approach may make sense when there is a relatively thin UI layer without much business logic, and a much larger set of functionality in class libraries.
 
 The main benefit of porting just the front end web layer to ASP.NET Core 2.1 is that the existing .NET class libraries can remain as is during the initial migration. They may be in continued use by other .NET applications or simply don't need to be in scope for the first iteration of a planned full migration to .NET Core. Reducing the scope of the initial migration for large applications helps provide incremental goals that act as stepping stones toward the desired end state, which is often a complete port to .NET Core.
 

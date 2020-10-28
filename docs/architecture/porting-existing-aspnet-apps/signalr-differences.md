@@ -1,11 +1,11 @@
 ---
-title: Comparing ASP.NET SignalR and ASP.NET Core SignalR
+title: Compare ASP.NET SignalR and ASP.NET Core SignalR
 description: 
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing ASP.NET SignalR and ASP.NET Core SignalR
+# Compare ASP.NET SignalR and ASP.NET Core SignalR
 
 ## References
 

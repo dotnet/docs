@@ -21,8 +21,7 @@ The Task Parallel Library (TPL) is a set of public types and APIs in the <xref:S
 |-|-|  
 |[Data Parallelism](data-parallelism-task-parallel-library.md)|Describes how to create parallel `for` and `foreach` loops (`For` and `For Each` in Visual Basic).|  
 |[Task-based Asynchronous Programming](task-based-asynchronous-programming.md)|Describes how to create and run tasks implicitly by using <xref:System.Threading.Tasks.Parallel.Invoke%2A?displayProperty=nameWithType> or explicitly by using <xref:System.Threading.Tasks.Task> objects directly.|  
-|[Dataflow](dataflow-task-parallel-library.md)|Describes how to use the dataflow components in the TPL Dataflow Library to handle multiple operations that must communicate with one another or to process data as it becomes available.|  
-|[Using TPL with Other Asynchronous Patterns](using-tpl-with-other-asynchronous-patterns.md)|Describes how to use TPL with other asynchronous patterns in .NET|  
+|[Dataflow](dataflow-task-parallel-library.md)|Describes how to use the dataflow components in the TPL Dataflow Library to handle multiple operations that must communicate with one another or to process data as it becomes available.|
 |[Potential Pitfalls in Data and Task Parallelism](potential-pitfalls-in-data-and-task-parallelism.md)|Describes some common pitfalls and how to avoid them.|  
 |[Parallel LINQ (PLINQ)](introduction-to-plinq.md)|Describes how to achieve data parallelism with LINQ queries.|  
 |[Parallel Programming](index.md)|Top level node for .NET parallel programming.|  

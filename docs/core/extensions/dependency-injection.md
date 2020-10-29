@@ -3,7 +3,7 @@ title: Dependency injection in .NET
 description: Learn how .NET implements dependency injection and how to use it.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/23/2020
+ms.date: 10/28/2020
 ms.topic: overview
 ---
 
@@ -205,16 +205,41 @@ The framework provides service registration extension methods that are useful in
 
 For more information on type disposal, see the [Disposal of services](dependency-injection-guidelines.md#disposal-of-services) section.
 
+Registering a service with only an implementation type is equivalent to registering that service with the same implementation and service type. This is why multiple implementations of a service cannot be registered using the methods that don't take an explicit service type. These methods can register multiple *instances* of a service, but they will all have the same *implementation* type.
+
+Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
+
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="19-24":::
+
+The preceding sample source code registers two implementations of the `IMessageWriter`.
+
+:::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="9-18":::
+
+The `ExampleService` defines two constructor parameters; a single `IMessageWriter`, and an `IEnumerable<IMessageWriter>`. The single `IMessageWriter` is the last implemenation to have been registered, whereas the `IEnumerable<IMessageWriter>` represents all registered implementations.
+
 The framework also provides `TryAdd{LIFETIME}` extension methods, which register the service only if there isn't already an implementation registered.
 
-In the following example, the call to `AddSingleton` registers `MessageWriter` as an implementation for `IMessageWriter`. The call to `TryAddSingleton` has no effect because `IMessageWriter` already has a registered implementation:
+In the following example, the call to `AddSingleton` registers `ConsoleMessageWriter` as an implementation for `IMessageWriter`. The call to `TryAddSingleton` has no effect because `IMessageWriter` already has a registered implementation:
 
 ```csharp
-services.AddSingleton<IMessageWriter, MessageWriter>();
-services.TryAddSingleton<IMessageWriter, DifferentMessageWriter>();
+services.AddSingleton<IMessageWriter, ConsoleMessageWriter>();
+services.TryAddSingleton<IMessageWriter, LoggingMessageWriter>();
 ```
 
-The `TryAddSingleton` has no effect, as it was already added and the "try" will fail.
+The `TryAddSingleton` has no effect, as it was already added and the "try" will fail. The `ExampleService` would assert the following:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService(
+        IMessageWriter messageWriter,
+        IEnumerable<IMessageWriter> messageWriters)
+    {
+        Trace.Assert(messageWriter is ConsoleMessageWriter);
+        Trace.Assert(messageWriters.Single() is ConsoleMessageWriter);
+    }
+}
+```
 
 For more information, see:
 

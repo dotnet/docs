@@ -33,18 +33,10 @@ The `System.Web` namespace and types do not exist in .NET Core, so when you're a
 
 In general, it's a good practice to minimize how much of an app's business logic lives in its user interface layer. It's also best to keep controllers and views small. Apps that have followed this guidance will be easier to port than those that have a significant amount of their logic in the ASP.NET web project. If you have an app you're considering porting, but haven't begun the process yet, keep this in mind as you maintain it. Any effort you put toward minimizing how much code is in the ASP.NET MVC or Web API project will likely result in less work when the time comes to port the app.
 
-
-
-*Notes*
-
-- Understand and update dependencies
-  - ApiPort for Framework dependencies
-  - Review NuGet Package dependencies
-- Tools
-  - [try-convert](https://github.com/dotnet/try-convert)
-  - [apiport](https://github.com/microsoft/dotnet-apiport)
-
 ## References
+
+  - [try-convert tool](https://github.com/dotnet/try-convert)
+  - [apiport tool](https://github.com/microsoft/dotnet-apiport)
 
 >[!div class="step-by-step"]
 >[Previous](identify-migration-sequence.md)

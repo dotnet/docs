@@ -11,7 +11,8 @@ helpviewer_keywords:
 ms.assetid: ebbeddff-179d-443f-bf08-9c373199a73a
 ---
 # Serialization guidelines
-This document lists the guidelines to consider when designing an API to be serialized.  
+
+This article lists the guidelines to consider when designing an API to be serialized.  
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
@@ -29,7 +30,7 @@ This document lists the guidelines to consider when designing an API to be seria
   
 - DO think about serialization when you design new types.  
   
-     Serialization is an important design consideration for any type, because programs might need to persist or transmit instances of the type.  
+  Serialization is an important design consideration for any type, because programs might need to persist or transmit instances of the type.  
   
 ### Choosing the right serialization technology to support  
  Any given type can support none, one, or more of the serialization technologies.  
@@ -44,7 +45,7 @@ This document lists the guidelines to consider when designing an API to be seria
   
 - AVOID supporting runtime serialization or XML serialization just for general persistence reasons. Prefer data contract serialization instead  
   
-#### Supporting data contract serialization  
+#### Data contract serialization  
  Types can support data contract serialization by applying the <xref:System.Runtime.Serialization.DataContractAttribute> to the type and the <xref:System.Runtime.Serialization.DataMemberAttribute> to the members (fields and properties) of the type.  
   
  [!code-csharp[SerializationGuidelines#1](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#1)]
@@ -52,7 +53,7 @@ This document lists the guidelines to consider when designing an API to be seria
   
 1. CONSIDER marking data members of your type public if the type can be used in partial trust. In full trust, data contract serializers can serialize and deserialize nonpublic types and members, but only public members can be serialized and deserialized in partial trust.  
   
-2. DO implement a getter and setter on all properties that have Data-MemberAttribute. Data contract serializers require both the getter and the setter for the type to be considered serializable. If the type won’t be used in partial trust, one or both of the property accessors can be nonpublic.  
+2. DO implement a getter and setter on all properties that have Data-MemberAttribute. Data contract serializers require both the getter and the setter for the type to be considered serializable. If the type won't be used in partial trust, one or both of the property accessors can be nonpublic.  
   
      [!code-csharp[SerializationGuidelines#2](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#2)]
      [!code-vb[SerializationGuidelines#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#2)]  
@@ -89,20 +90,20 @@ This document lists the guidelines to consider when designing an API to be seria
   
      For more information, see [Forward-Compatible Data Contracts](../../framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
-#### Supporting XML serialization  
- Data contract serialization is the main (default) serialization technology in the .NET Framework, but there are serialization scenarios that data contract serialization does not support. For example, it does not give you full control over the shape of XML produced or consumed by the serializer. If such fine control is required, *XML serialization* has to be used, and you need to design your types to support this serialization technology.  
+#### XML serialization  
+ Data contract serialization is the main (default) serialization technology in .NET Framework, but there are serialization scenarios that data contract serialization does not support. For example, it does not give you full control over the shape of XML produced or consumed by the serializer. If such fine control is required, *XML serialization* has to be used, and you need to design your types to support this serialization technology.  
   
 1. AVOID designing your types specifically for XML Serialization, unless you have a very strong reason to control the shape of the XML produced. This serialization technology has been superseded by the Data Contract Serialization discussed in the previous section.  
   
-     In other words, don’t apply attributes from the <xref:System.Xml.Serialization> namespace to new types, unless you know that the type will be used with XML Serialization. The following example shows how **System.Xml.Serialization** can be used to control the shape of the XML -produced.  
+     In other words, don't apply attributes from the <xref:System.Xml.Serialization> namespace to new types, unless you know that the type will be used with XML Serialization. The following example shows how **System.Xml.Serialization** can be used to control the shape of the XML -produced.  
   
      [!code-csharp[SerializationGuidelines#6](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#6)]
      [!code-vb[SerializationGuidelines#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#6)]  
   
-2. CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what’s offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute.  
+2. CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what's offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute.  
   
-#### Supporting runtime serialization  
- *Runtime serialization* is a technology used by .NET Remoting. If you think your types will be transported using .NET Remoting, you need to make sure they support runtime serialization.  
+#### Runtime serialization  
+ *Runtime serialization* is a technology used by .NET Remoting. If you think your types will be transported using .NET Remoting, make sure they support runtime serialization.  
   
  The basic support for *runtime serialization* can be provided by applying the <xref:System.SerializableAttribute> attribute, and more advanced scenarios involve implementing a simple *runtime serializable pattern* (implement -<xref:System.Runtime.Serialization.ISerializable> and provide a serialization constructor).  
   

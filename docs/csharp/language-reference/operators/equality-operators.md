@@ -41,13 +41,13 @@ Beginning with C# 7.3, the `==` and `!=` operators are supported by C# [tuples](
 
 ### Reference types equality
 
-By default, two reference-type operands are equal if they refer to the same object:
+By default, two non-record reference-type operands are equal if they refer to the same object:
 
 [!code-csharp[reference type equality](snippets/shared/EqualityOperators.cs#ReferenceTypesEquality)]
 
 As the example shows, user-defined reference types support the `==` operator by default. However, a reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
 
-### Records equality
+### Record types equality
 
 Available in C# 9.0 and later, [record types](../../whats-new/csharp-9.md#record-types) support the `==` and `!=` operators that by default provide value equality semantics. That is, two record operands are equal when both of them are non-null and corresponding values of all fields and auto-implemented properties are equal.
 

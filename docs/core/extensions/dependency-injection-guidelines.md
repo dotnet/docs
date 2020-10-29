@@ -156,6 +156,24 @@ Like all sets of recommendations, you may encounter situations where ignoring a 
 
 DI is an *alternative* to static/global object access patterns. You may not be able to realize the benefits of DI if you mix it with static object access.
 
+## Example anti-patterns
+
+In addition to the guidelines in this article, there are several anti-patterns *you **should** avoid*. Some of these anti-patterns are learnings from developing the runtimes themselves.
+
+### Disposable transient services captured by container
+
+
+
+### Async DI factories can cause deadlocks
+
+The term "DI factories" refers to the overload methods that exist when calling `Add{LIFETIME}`. There are often overloads accepting a `Func<IServiceProvider, T>` where `T` is the service being registered, and they parameters in the overload is named `implementationFactory`.
+
+### Captive dependency
+
+
+### Scoped service as singleton
+
+
 ## See also
 
 - [Dependency injection in .NET](dependency-injection.md)

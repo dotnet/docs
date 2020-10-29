@@ -8,11 +8,11 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "DateTime structure, converting"
-  - "time zones [.NET Framework], conversions"
+  - "time zones [.NET], conversions"
   - "UTC times, converting"
   - "DateTimeOffset structure, converting"
   - "converting DateTimeOffset and DateTime values"
-  - "dates [.NET Framework], converting"
+  - "dates [.NET], converting"
   - "converting times"
   - "Date data type, converting"
   - "local time conversions"

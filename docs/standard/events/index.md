@@ -9,11 +9,11 @@ dev_langs:
 helpviewer_keywords: 
   - "delegate model for events"
   - "application development [.NET], events"
-  - "application development [.NET Framework], events"
+  - "application development [.NET], events"
   - "application development [.NET Core], events"
   - "events [.NET]"
   - "events [.NET Core]"
-  - "events [.NET Framework]"
+  - "events [.NET]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
 ---
 # Handle and raising events

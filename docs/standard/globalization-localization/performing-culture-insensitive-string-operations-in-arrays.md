@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "culture-insensitive string operations, in arrays"
-  - "arrays [.NET Framework], culture-insensitive string operations"
+  - "arrays [.NET], culture-insensitive string operations"
   - "comparer parameter"
 ms.assetid: f12922e1-6234-4165-8896-63f0653ab478
 ---

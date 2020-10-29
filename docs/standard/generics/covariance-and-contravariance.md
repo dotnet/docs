@@ -13,26 +13,29 @@ helpviewer_keywords:
   - "generic type parameters"
 ms.assetid: 2678dc63-c7f9-4590-9ddc-0a4df684d42e
 ---
-# Covariance and Contravariance in Generics
-Covariance and contravariance are terms that refer to the ability to use a more derived type (more specific) or a less derived type (less specific) than originally specified. Generic type parameters support covariance and contravariance to provide greater flexibility in assigning and using generic types. When you are referring to a type system, covariance, contravariance, and invariance have the following definitions. The examples assume a base class named `Base` and a derived class named `Derived`.  
+# Covariance and contravariance in generics
+
+*Covariance* and *contravariance* are terms that refer to the ability to use a more derived type (more specific) or a less derived type (less specific) than originally specified. Generic type parameters support covariance and contravariance to provide greater flexibility in assigning and using generic types.
+
+When you're referring to a type system, covariance, contravariance, and invariance have the following definitions. The examples assume a base class named `Base` and a derived class named `Derived`.  
   
 - `Covariance`  
   
      Enables you to use a more derived type than originally specified.  
   
-     You can assign an instance of `IEnumerable<Derived>` (`IEnumerable(Of Derived)` in Visual Basic) to a variable of type `IEnumerable<Base>`.  
+     You can assign an instance of `IEnumerable<Derived>` to a variable of type `IEnumerable<Base>`.  
   
 - `Contravariance`  
   
      Enables you to use a more generic (less derived) type than originally specified.  
   
-     You can assign an instance of `Action<Base>` (`Action(Of Base)` in Visual Basic) to a variable of type `Action<Derived>`.  
+     You can assign an instance of `Action<Base>` to a variable of type `Action<Derived>`.  
   
 - `Invariance`  
   
-     Means that you can use only the type originally specified; so an invariant generic type parameter is neither covariant nor contravariant.  
+     Means that you can use only the type originally specified. An invariant generic type parameter is neither covariant nor contravariant.  
   
-     You cannot assign an instance of `List<Base>` (`List(Of Base)` in Visual Basic) to a variable of type `List<Derived>` or vice versa.  
+     You cannot assign an instance of `List<Base>` to a variable of type `List<Derived>` or vice versa.  
   
  Covariant type parameters enable you to make assignments that look much like ordinary [Polymorphism](../../csharp/programming-guide/classes-and-structs/polymorphism.md), as shown in the following code.  
   
@@ -46,13 +49,13 @@ Covariance and contravariance are terms that refer to the ability to use a more 
  [!code-csharp[CoContraSimpleAction#1](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontrasimpleaction/cs/example.cs#1)]
  [!code-vb[CoContraSimpleAction#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontrasimpleaction/vb/example.vb#1)]  
   
- This seems backward, but it is type-safe code that compiles and runs. The lambda expression matches the delegate it is assigned to, so it defines a method that takes one parameter of type `Base` and that has no return value. The resulting delegate can be assigned to a variable of type `Action<Derived>` because the type parameter `T` of the <xref:System.Action%601> delegate is contravariant. The code is type-safe because `T` specifies a parameter type. When the delegate of type `Action<Base>` is invoked as if it were a delegate of type `Action<Derived>`, its argument must be of type `Derived`. This argument can always be passed safely to the underlying method, because the method's parameter is of type `Base`.  
+ This seems backward, but it is type-safe code that compiles and runs. The lambda expression matches the delegate it's assigned to, so it defines a method that takes one parameter of type `Base` and that has no return value. The resulting delegate can be assigned to a variable of type `Action<Derived>` because the type parameter `T` of the <xref:System.Action%601> delegate is contravariant. The code is type-safe because `T` specifies a parameter type. When the delegate of type `Action<Base>` is invoked as if it were a delegate of type `Action<Derived>`, its argument must be of type `Derived`. This argument can always be passed safely to the underlying method, because the method's parameter is of type `Base`.  
   
  In general, a covariant type parameter can be used as the return type of a delegate, and contravariant type parameters can be used as parameter types. For an interface, covariant type parameters can be used as the return types of the interface's methods, and contravariant type parameters can be used as the parameter types of the interface's methods.  
   
  Covariance and contravariance are collectively referred to as *variance*. A generic type parameter that is not marked covariant or contravariant is referred to as *invariant*. A brief summary of facts about variance in the common language runtime:  
   
-- In the .NET Framework 4, variant type parameters are restricted to generic interface and generic delegate types.  
+- Variant type parameters are restricted to generic interface and generic delegate types.  
   
 - A generic interface or generic delegate type can have both covariant and contravariant type parameters.  
   
@@ -60,17 +63,21 @@ Covariance and contravariance are terms that refer to the ability to use a more 
   
 - Variance does not apply to delegate combination. That is, given two delegates of types `Action<Derived>` and `Action<Base>` (`Action(Of Derived)` and `Action(Of Base)` in Visual Basic), you cannot combine the second delegate with the first although the result would be type safe. Variance allows the second delegate to be assigned to a variable of type `Action<Derived>`, but delegates can combine only if their types match exactly.
 
+- Starting in C# 9, covariant return types are supported. An overriding method can declare a more derived return type the method it overrides, and an overriding, read-only property can declare a more derived type.
+
 <a name="InterfaceCovariantTypeParameters"></a>
-## Generic Interfaces with Covariant Type Parameters  
- Starting with the .NET Framework 4, several generic interfaces have covariant type parameters; for example: <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.Generic.IEnumerator%601>, <xref:System.Linq.IQueryable%601>, and <xref:System.Linq.IGrouping%602>. All the type parameters of these interfaces are covariant, so the type parameters are used only for the return types of the members.  
+## Generic interfaces with covariant type parameters
+
+Several generic interfaces have covariant type parameters, for example, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.Generic.IEnumerator%601>, <xref:System.Linq.IQueryable%601>, and <xref:System.Linq.IGrouping%602>. All the type parameters of these interfaces are covariant, so the type parameters are used only for the return types of the members.  
   
  The following example illustrates covariant type parameters. The example defines two types: `Base` has a static method named `PrintBases` that takes an `IEnumerable<Base>` (`IEnumerable(Of Base)` in Visual Basic) and prints the elements. `Derived` inherits from `Base`. The example creates an empty `List<Derived>` (`List(Of Derived)` in Visual Basic) and demonstrates that this type can be passed to `PrintBases` and assigned to a variable of type `IEnumerable<Base>` without casting. <xref:System.Collections.Generic.List%601> implements <xref:System.Collections.Generic.IEnumerable%601>, which has a single covariant type parameter. The covariant type parameter is the reason why an instance of `IEnumerable<Derived>` can be used instead of `IEnumerable<Base>`.  
   
  [!code-csharp[CoContravarianceInClrGenericI#1](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontravarianceinclrgenerici/cs/example.cs#1)]
  [!code-vb[CoContravarianceInClrGenericI#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontravarianceinclrgenerici/vb/example.vb#1)]  
   
-## Generic Interfaces with Contravariant Generic Type Parameters  
- Starting with the .NET Framework 4, several generic interfaces have contravariant type parameters; for example: <xref:System.Collections.Generic.IComparer%601>, <xref:System.IComparable%601>, and <xref:System.Collections.Generic.IEqualityComparer%601>. These interfaces have only contravariant type parameters, so the type parameters are used only as parameter types in the members of the interfaces.  
+## Generic interfaces with contravariant type parameters
+
+Several generic interfaces have contravariant type parameters; for example: <xref:System.Collections.Generic.IComparer%601>, <xref:System.IComparable%601>, and <xref:System.Collections.Generic.IEqualityComparer%601>. These interfaces have only contravariant type parameters, so the type parameters are used only as parameter types in the members of the interfaces.  
   
  The following example illustrates contravariant type parameters. The example defines an abstract (`MustInherit` in Visual Basic) `Shape` class with an `Area` property. The example also defines a `ShapeAreaComparer` class that implements `IComparer<Shape>` (`IComparer(Of Shape)` in Visual Basic). The implementation of the <xref:System.Collections.Generic.IComparer%601.Compare%2A?displayProperty=nameWithType> method is based on the value of the `Area` property, so `ShapeAreaComparer` can be used to sort `Shape` objects by area.  
   
@@ -81,8 +88,9 @@ Covariance and contravariance are terms that refer to the ability to use a more 
  [!code-csharp[CoContravarianceInClrGenericI2#1](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontravarianceinclrgenerici2/cs/example.cs#1)]
  [!code-vb[CoContravarianceInClrGenericI2#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontravarianceinclrgenerici2/vb/example.vb#1)]  
 
-## Generic Delegates with Variant Type Parameters  
- In the .NET Framework 4, the `Func` generic delegates, such as <xref:System.Func%602>, have covariant return types and contravariant parameter types. The `Action` generic delegates, such as <xref:System.Action%602>, have contravariant parameter types. This means that the delegates can be assigned to variables that have more derived parameter types and (in the case of the `Func` generic delegates) less derived return types.  
+## Generic delegates with variant type parameters
+
+The `Func` generic delegates, such as <xref:System.Func%602>, have covariant return types and contravariant parameter types. The `Action` generic delegates, such as <xref:System.Action%602>, have contravariant parameter types. This means that the delegates can be assigned to variables that have more derived parameter types and (in the case of the `Func` generic delegates) less derived return types.  
   
 > [!NOTE]
 > The last generic type parameter of the `Func` generic delegates specifies the type of the return value in the delegate signature. It is covariant (`out` keyword), whereas the other generic type parameters are contravariant (`in` keyword).  
@@ -107,7 +115,8 @@ Covariance and contravariance are terms that refer to the ability to use a more 
  [!code-csharp[CoContravarianceDelegates#5](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontravariancedelegates/cs/example.cs#5)]
  [!code-vb[CoContravarianceDelegates#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontravariancedelegates/vb/example.vb#5)]  
   
-### Variance in Generic and Non-Generic Delegates  
+### Variance in non-generic delegates
+
  In the preceding code, the signature of `MyMethod` exactly matches the signature of the constructed generic delegate: `Func<Base, Derived>` (`Func(Of Base, Derived)` in Visual Basic). The example shows that this generic delegate can be stored in variables or method parameters that have more derived parameter types and less derived return types, as long as all the delegate types are constructed from the generic delegate type <xref:System.Func%602>.  
   
  This is an important point. The effects of covariance and contravariance in the type parameters of generic delegates are similar to the effects of covariance and contravariance in ordinary delegate binding (see [Variance in Delegates (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md) and [Variance in Delegates (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)). However, variance in delegate binding works with all delegate types, not just with generic delegate types that have variant type parameters. Furthermore, variance in delegate binding enables a method to be bound to any delegate that has more restrictive parameter types and a less restrictive return type, whereas the assignment of generic delegates works only if both delegate types are constructed from the same generic type definition.  
@@ -117,27 +126,26 @@ Covariance and contravariance are terms that refer to the ability to use a more 
  [!code-csharp[CoContravarianceDelegatesGenRelaxed#1](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontravariancedelegatesgenrelaxed/cs/example.cs#1)]
  [!code-vb[CoContravarianceDelegatesGenRelaxed#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontravariancedelegatesgenrelaxed/vb/example.vb#1)]  
 
-## Defining Variant Generic Interfaces and Delegates
- Starting with the .NET Framework 4, Visual Basic and C# have keywords that enable you to mark the generic type parameters of interfaces and delegates as covariant or contravariant.  
+## Define variant generic interfaces and delegates
+
+Visual Basic and C# have keywords that enable you to mark the generic type parameters of interfaces and delegates as covariant or contravariant.
   
-> [!NOTE]
-> Starting with the .NET Framework version 2.0, the common language runtime supports variance annotations on generic type parameters. Prior to the .NET Framework 4, the only way to define a generic class that has these annotations is to use Microsoft intermediate language (MSIL), either by compiling the class with [Ilasm.exe (IL Assembler)](../../framework/tools/ilasm-exe-il-assembler.md) or by emitting it in a dynamic assembly.  
-  
- A covariant type parameter is marked with the `out` keyword (`Out` keyword in Visual Basic, `+` for the [MSIL Assembler](../../framework/tools/ilasm-exe-il-assembler.md)). You can use a covariant type parameter as the return value of a method that belongs to an interface, or as the return type of a delegate. You cannot use a covariant type parameter as a generic type constraint for interface methods.  
+ A covariant type parameter is marked with the `out` keyword (`Out` keyword in Visual Basic). You can use a covariant type parameter as the return value of a method that belongs to an interface, or as the return type of a delegate. You cannot use a covariant type parameter as a generic type constraint for interface methods.  
   
 > [!NOTE]
 > If a method of an interface has a parameter that is a generic delegate type, a covariant type parameter of the interface type can be used to specify a contravariant type parameter of the delegate type.  
   
- A contravariant type parameter is marked with the `in` keyword (`In` keyword in Visual Basic, `-` for the [MSIL Assembler](../../framework/tools/ilasm-exe-il-assembler.md)). You can use a contravariant type parameter as the type of a parameter of a method that belongs to an interface, or as the type of a parameter of a delegate. You can use a contravariant type parameter as a generic type constraint for an interface method.  
+ A contravariant type parameter is marked with the `in` keyword (`In` keyword in Visual Basic). You can use a contravariant type parameter as the type of a parameter of a method that belongs to an interface, or as the type of a parameter of a delegate. You can use a contravariant type parameter as a generic type constraint for an interface method.  
   
  Only interface types and delegate types can have variant type parameters. An interface or delegate type can have both covariant and contravariant type parameters.  
   
- Visual Basic and C# do not allow you to violate the rules for using covariant and contravariant type parameters, or to add covariance and contravariance annotations to the type parameters of types other than interfaces and delegates. The [MSIL Assembler](../../framework/tools/ilasm-exe-il-assembler.md) does not perform such checks, but a <xref:System.TypeLoadException> is thrown if you try to load a type that violates the rules.  
+ Visual Basic and C# do not allow you to violate the rules for using covariant and contravariant type parameters, or to add covariance and contravariance annotations to the type parameters of types other than interfaces and delegates.
   
  For information and example code, see [Variance in Generic Interfaces (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md) and [Variance in Generic Interfaces (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md).  
 
-## List of Variant Generic Interface and Delegate Types
- In the .NET Framework 4, the following interface and delegate types have covariant and/or contravariant type parameters.  
+## List of types
+
+The following interface and delegate types have covariant and/or contravariant type parameters.  
   
 |Type|Covariant type parameters|Contravariant type parameters|  
 |----------|-------------------------------|-----------------------------------|  

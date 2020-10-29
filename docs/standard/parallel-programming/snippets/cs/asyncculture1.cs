@@ -1,16 +1,11 @@
-﻿// <Snippet5>
-// <Snippet1>
+﻿// <Snippet1>
 using System;
 using System.Globalization;
-using System.Runtime.Versioning;
 using System.Threading;
 using System.Threading.Tasks;
 
-[assembly:TargetFramework(".NETFramework,Version=v4.6")]
-
 public class Example
 {
-
    public static void Main()
    {
        decimal[] values = { 163025412.32m, 18905365.59m };
@@ -70,21 +65,3 @@ public class Example
 //         Formatting using the fr-FR culture on thread 1.
 //         163 025 412,32 €   18 905 365,59 €
 // </Snippet1>
-// If the TargetFrameworkAttribute statement is removed, the example
-// displays the following output:
-//          The example is running on thread 1
-//          The current culture is en-US
-//          Changed the current culture to fr-FR.
-//
-//          Executing the delegate synchronously:
-//          Formatting using the fr-FR culture on thread 1.
-//          163 025 412,32 €   18 905 365,59 €
-//
-//          Executing a task asynchronously:
-//          Formatting using the en-US culture on thread 3.
-//          $163,025,412.32   $18,905,365.59
-//
-//          Executing a task synchronously:
-//          Formatting using the fr-FR culture on thread 1.
-//          163 025 412,32 €   18 905 365,59 €
-// </Snippet5>

@@ -2,18 +2,13 @@
 Option Strict On
 Option Infer On
 
-' <Snippet5>
 ' <Snippet1>
 Imports System.Globalization
-Imports System.Runtime.Versioning
 Imports System.Threading
-Imports System.Threading.Tasks
-
-<Assembly: TargetFramework(".NETFramework,Version=v4.6")>
 
 Module Example
-    Public Sub Main()
-        Dim values() As Decimal = {163025412.32d, 18905365.59d}
+    Public Sub Main1()
+        Dim values() As Decimal = {163025412.32D, 18905365.59D}
         Dim formatString As String = "C2"
         Dim formatDelegate As Func(Of String) = Function()
                                                     Dim output As String = String.Format("Formatting using the {0} culture on thread {1}.",
@@ -33,9 +28,9 @@ Module Example
         Console.WriteLine("The current culture is {0}",
                           CultureInfo.CurrentCulture.Name)
         If CultureInfo.CurrentCulture.Name = "fr-FR" Then
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US")
+            Thread.CurrentThread.CurrentCulture = New CultureInfo("en-US")
         Else
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-FR")
+            Thread.CurrentThread.CurrentCulture = New CultureInfo("fr-FR")
         End If
         Console.WriteLine("Changed the current culture to {0}.",
                           CultureInfo.CurrentCulture.Name)
@@ -56,7 +51,9 @@ Module Example
         Console.WriteLine(t2.Result)
     End Sub
 End Module
+
 ' The example displays the following output:
+'
 '          The example is running on thread 1
 '          The current culture is en-US
 '          Changed the current culture to fr-FR.
@@ -73,21 +70,3 @@ End Module
 '          Formatting Imports the fr-FR culture on thread 1.
 '          163 025 412,32 €   18 905 365,59 €
 ' </Snippet1>
-' If the TargetFrameworkAttribute statement is removed, the example
-' displays the following output:
-'          The example is running on thread 1
-'          The current culture is en-US
-'          Changed the current culture to fr-FR.
-'
-'          Executing the delegate synchronously:
-'          Formatting using the fr-FR culture on thread 1.
-'          163 025 412,32 €   18 905 365,59 €
-'
-'          Executing a task asynchronously:
-'          Formatting using the en-US culture on thread 3.
-'          $163,025,412.32   $18,905,365.59
-'
-'          Executing a task synchronously:
-'          Formatting using the fr-FR culture on thread 1.
-'          163 025 412,32 €   18 905 365,59 €
-' </Snippet5>

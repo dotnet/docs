@@ -11,8 +11,9 @@ helpviewer_keywords:
   - "asynchronous task cancellation"
 ms.assetid: 3ecf1ea9-e399-4a6a-a0d6-8475f48dcb28
 ---
-# Task Cancellation
-The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> classes support cancellation through the use of cancellation tokens in the .NET Framework. For more information, see [Cancellation in Managed Threads](../threading/cancellation-in-managed-threads.md). In the Task classes, cancellation involves cooperation between the user delegate, which represents a cancelable operation and the code that requested the cancellation.  A successful cancellation involves the requesting code calling the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method, and the user delegate terminating the operation in a timely manner. You can terminate the operation by using one of these options:  
+# Task cancellation
+
+The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> classes support cancellation through the use of cancellation tokens. For more information, see [Cancellation in Managed Threads](../threading/cancellation-in-managed-threads.md). In the Task classes, cancellation involves cooperation between the user delegate, which represents a cancelable operation, and the code that requested the cancellation. A successful cancellation involves the requesting code calling the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method and the user delegate terminating the operation in a timely manner. You can terminate the operation by using one of these options:  
   
 - By simply returning from the delegate. In many scenarios this is sufficient; however, a task instance that is canceled in this way transitions to the <xref:System.Threading.Tasks.TaskStatus.RanToCompletion?displayProperty=nameWithType> state, not to the <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> state.  
   

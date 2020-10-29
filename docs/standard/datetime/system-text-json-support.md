@@ -185,6 +185,8 @@ The following levels of granularity are defined for parsing:
     2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ"
     3. "yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm"
     4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
+    
+    This level of granularity is compliant with [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6), a widely adopted profile of ISO 8601 used for interchanging date and time information.
 
 If there are decimal fractions for seconds, there must be at least one digit; `2019-07-26T00:00:00.` is not allowed.
 While up to 16 fractional digits are allowed, only the first seven are parsed. Anything beyond that is considered a zero.
@@ -208,6 +210,7 @@ The following levels of granularity are defined for formatting:
         Used to format a <xref:System.DateTime> with fractional seconds but without offset information.
 
 2. 'Date time'
+
     1. "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"
 
         Used to format a <xref:System.DateTime> without fractional seconds but with a UTC offset.
@@ -223,6 +226,8 @@ The following levels of granularity are defined for formatting:
     4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
 
         Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a local offset.
+    
+    This level of granularity is compliant with [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6).
 
 If the [round-trip format](../base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier) representation of a
 <xref:System.DateTime> or <xref:System.DateTimeOffset> instance has trailing zeros in its fractional seconds, then <xref:System.Text.Json.JsonSerializer>

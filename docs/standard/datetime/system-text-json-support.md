@@ -186,7 +186,11 @@ The following levels of granularity are defined for parsing:
     3. "yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm"
     4. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF('+'/'-')HH':'mm"
 
-    This level of granularity is compliant with [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6), a widely adopted profile of ISO 8601 used for interchanging date and time information.
+    This level of granularity is compliant with [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6), a widely adopted profile of ISO 8601 used for interchanging date and time information. However, there are a few restrictions in the System.Text.Json implementation.
+
+    - RFC 3339 does not specify a maximum number of fractional-second digits, but specifies that at least one digit must follow the period, if a fractional-second section is present. The implementation in System.Text.Json allows up to 16 digits (to support interop with other programming languages and frameworks), but parses only the first seven. A <xref:System.Text.Json.JsonException> will be thrown if there are more than 16 fractional second digits when reading `DateTime` and `DateTimeOffset` instances.
+    - RFC 3339 allows the "T" and "Z" characters to be "t" or "z" respectively, but allows applications to limit support to just the upper-case variants. The implementation in System.Text.Json requires them to be "T" and "Z". A <xref:System.Text.Json.JsonException> will be thrown if input payloads contain "t" or "z" when reading `DateTime` and `DateTimeOffset` instances.
+    - RFC 3339 specifies that the date and time sections are separated by "T", but allows applications to separate them by a space (" ") instead. System.Text.Json requires date and time sections to be separated with "T". A <xref:System.Text.Json.JsonException> will be thrown if input payloads contain a space (" ") when reading `DateTime` and `DateTimeOffset` instances.
 
 If there are decimal fractions for seconds, there must be at least one digit; `2019-07-26T00:00:00.` is not allowed.
 While up to 16 fractional digits are allowed, only the first seven are parsed. Anything beyond that is considered a zero.

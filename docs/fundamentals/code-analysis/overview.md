@@ -104,7 +104,8 @@ By default, you'll get the latest code analysis rules and default rule severitie
 
 Starting .NET 5.0 RC2, you can enable code style analysis on build, both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
 
-[!NOTE] This feature is currently experimental and may change between the .NET 5 and .NET 6 releases.
+> [!NOTE]
+> The code style analysis feature is experimental and may change between the .NET 5 and .NET 6 releases.
 
 Steps to enable code style analysis on build:
 

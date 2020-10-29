@@ -35,8 +35,8 @@ In general, it's a good practice to minimize how much of an app's business logic
 
 ## References
 
-  - [try-convert tool](https://github.com/dotnet/try-convert)
-  - [apiport tool](https://github.com/microsoft/dotnet-apiport)
+- [try-convert tool](https://github.com/dotnet/try-convert)
+- [apiport tool](https://github.com/microsoft/dotnet-apiport)
 
 >[!div class="step-by-step"]
 >[Previous](identify-migration-sequence.md)

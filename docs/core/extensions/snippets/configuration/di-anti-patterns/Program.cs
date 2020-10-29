@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,19 +18,18 @@ namespace DependencyInjection.AntiPatterns
         static void TransientDisposablesWithoutDispose()
         {
             var services = new ServiceCollection();
-            services.AddTransient<SomethingDisposable>();
-            using ServiceProvider serviceProvider =
-                services.BuildServiceProvider();
+            services.AddTransient<ExampleDisposable>();
+            ServiceProvider serviceProvider = services.BuildServiceProvider();
 
             for (int i = 0; i < 1000; ++ i)
             {
-                _ = serviceProvider.GetRequiredService<SomethingDisposable>();
+                _ = serviceProvider.GetRequiredService<ExampleDisposable>();
             }
 
-            serviceProvider.Dispose();
+            // serviceProvider.Dispose();
         }
 
-        static void DeadLockWithFactories()
+        static void DeadLockWithAsyncFactory()
         {
             var services = new ServiceCollection();
             services.AddSingleton<Foo>(implementationFactory: provider =>
@@ -42,13 +40,13 @@ namespace DependencyInjection.AntiPatterns
 
             services.AddSingleton<Bar>();
 
-            using ServiceProvider serviceProvider =
-                services.BuildServiceProvider();
+            using ServiceProvider serviceProvider = services.BuildServiceProvider();
             _ = serviceProvider.GetRequiredService<Foo>();
         }
 
         static async Task<Bar> GetBarAsync(IServiceProvider serviceProvider)
         {
+            // Emulate asynchronous work operation
             await Task.Delay(1000);
 
             return serviceProvider.GetRequiredService<Bar>();
@@ -60,8 +58,9 @@ namespace DependencyInjection.AntiPatterns
             services.AddSingleton<Foo>();
             services.AddScoped<Bar>();
 
-            // using ServiceProvider serviceProvider = services.BuildServiceProvider();
-            using ServiceProvider serviceProvider = services.BuildServiceProvider(validateScopes: true);
+            using ServiceProvider serviceProvider = services.BuildServiceProvider();
+            // Enable scope validation
+            // using ServiceProvider serviceProvider = services.BuildServiceProvider(validateScopes: true);
 
             _ = serviceProvider.GetRequiredService<Foo>();
         }
@@ -78,24 +77,8 @@ namespace DependencyInjection.AntiPatterns
                 Bar correct = scope.ServiceProvider.GetRequiredService<Bar>();
             }
 
-            // This makes the scoped service a singleton, as it is not within a scope
+            // Not within a scope, becomes a singleton
             Bar avoid = serviceProvider.GetRequiredService<Bar>();
         }
-    }
-
-    public class Foo
-    {
-        public Foo(Bar bar)
-        {
-        }
-    }
-
-    public class Bar
-    {
-    }
-
-    public class SomethingDisposable : IDisposable
-    {
-        void IDisposable.Dispose() => Console.WriteLine("Disposed");
     }
 }

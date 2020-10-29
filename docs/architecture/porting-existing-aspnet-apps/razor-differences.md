@@ -1,11 +1,11 @@
 ---
-title: Comparing Razor usage in ASP.NET MVC and ASP.NET Core
+title: Compare Razor usage in ASP.NET MVC and ASP.NET Core
 description: 
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing Razor usage in ASP.NET MVC and ASP.NET Core
+# Compare Razor usage in ASP.NET MVC and ASP.NET Core
 
 The basic syntax of Razor hasn't changed substantially between ASP.NET MVC and ASP.NET Core. However, there are certain differences, such as the introduction of [Tag Helpers](https://docs.microsoft.com/aspnet/core/mvc/views/tag-helpers/intro) and Razor Pages, that should be taken into consideration when migrating. If your app makes heavy use of custom Razor functionality, refer to the [Razor syntax reference for ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages) to see what changes may be required when you migrate to ASP.NET Core.
 

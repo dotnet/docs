@@ -1,5 +1,5 @@
 ---
-title: Comparing ASP.NET Identity and ASP.NET Core Identity
+title: Compare ASP.NET Identity and ASP.NET Core Identity
 description: 
 author: ardalis
 ms.date: 11/13/2020

@@ -1,11 +1,11 @@
 ---
-title: Comparing testing options between ASP.NET MVC and ASP.NET Core
+title: Compare testing options between ASP.NET MVC and ASP.NET Core
 description: 
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing testing options between ASP.NET MVC and ASP.NET Core
+# Compare testing options between ASP.NET MVC and ASP.NET Core
 
 ASP.NET MVC apps support unit testing of controllers, but this approach often omits many MVC features like routing, authorization, model binding, model validation, filters, and more. In order to test these MVC features in addition to the logic within the controller action itself, frequently the app would need to be deployed and then tested with a tool like Selenium. These tests are substantially more expensive, more brittle, and slower than typical unit tests that can be run without the need for hosting and running the entire app.
 

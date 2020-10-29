@@ -1,11 +1,11 @@
 ---
-title: Comparing ASP.NET SignalR and ASP.NET Core SignalR
+title: Compare ASP.NET SignalR and ASP.NET Core SignalR
 description: 
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing ASP.NET SignalR and ASP.NET Core SignalR
+# Compare ASP.NET SignalR and ASP.NET Core SignalR
 
 ASP.NET Core SignalR is not compatible with clients or servers using ASP.NET SignalR. You will need to update both clients and server to use ASP.NET Core SignalR. Some differences are described in this section, while the full list is available in the [docs](https://docs.microsoft.com/aspnet/core/signalr/version-differences). ASP.NET Core SignalR requires .NET Core 3.0 or greater.
 

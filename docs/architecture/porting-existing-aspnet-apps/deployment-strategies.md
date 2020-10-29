@@ -1,17 +1,17 @@
 ---
 title: Deployment strategies
-description: What deployment strategies can teams use while migrating from ASP.NET to .NET Core? Can an incremental migration allow side-by-side deployment of .NET Framework and .NET Core apps, providing a seamless end user experience?
+description: What deployment strategies can teams use while migrating from ASP.NET to ASP.NET Core? Can an incremental migration allow side-by-side deployment of .NET Framework and .NET Core apps, providing a seamless end user experience?
 author: ardalis
 ms.date: 11/13/2020
 ---
 
 # Deployment strategies
 
-One consideration as you plan the migration of your large ASP.NET app to ASP.NET Core is how you will deploy the new app. With ASP.NET, deployment options were limited to IIS on Windows. With .NET Core, a much wider array of deployment options are available.
+One consideration as you plan the migration of your large ASP.NET app to ASP.NET Core is how you will deploy the new app. With ASP.NET, deployment options were limited to IIS on Windows. With ASP.NET Core, a much wider array of deployment options are available.
 
 ## Cross-platform options
 
-Because .NET Core supports Linux, you may now find some hosting options available that weren't a consideration previously. Some hosting providers may offer attractive features or pricing for Linux-based hosting that make it an attractive option, or you may have your own non-Windows servers you'd like to leverage as part of your new app deployment strategy. .NET Core opens to door to these options.
+Because .NET Core supports Linux, you may now find some hosting options available that weren't a consideration previously. Linux-based hosting may be preferable either because your organization has infrastructure or expertise, or because hosting providers offer attractive features or pricing for Linux-based hosting. .NET Core opens to door to these options.
 
 ## Cloud native development
 
@@ -27,7 +27,15 @@ TODO: Add figure showing migration to container-hosted app or apps.
 
 ## Side-by-side deployment options
 
-Migrating large .NET apps to .NET Core often requires a substantial effort. Most organizations will want to be able to break this effort up in some fashion, so that pieces of the app can be migrated and deployed in production before the entire migration is complete. Running both the original ASP.NET application and its newly-migrated ASP.NET Core sub-app(s) side by side is a frequently cited goal. This can be achieved through a number of mechanisms including leveraging IIS routing, which is covered in [chapter 5](deployment-scenarios.md). Other options include leveraging application gateways or cloud design patterns like [backends for frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) to manage sets of ASP.NET Web APIs and ASP.NET Core API endpoints.
+Migrating large .NET Framework apps to .NET Core often requires a substantial effort. Most organizations will want to be able to break this effort up in some fashion, so that pieces of the app can be migrated and deployed in production before the entire migration is complete. Running both the original ASP.NET application and its newly-migrated ASP.NET Core sub-app(s) side by side is a frequently cited goal. This can be achieved through a number of mechanisms including leveraging IIS routing, which is covered in [chapter 5](deployment-scenarios.md). Other options include leveraging application gateways or cloud design patterns like [backends for frontends](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) to manage sets of ASP.NET Web APIs and ASP.NET Core API endpoints.
+
+## IIS on Windows
+
+You can continue hosting your apps on IIS running on Windows. This is a fine option for customers who want to take advantage of ASP.NET Core features without changing their current deployment model. While moving to ASP.NET Core provides more options in terms of how and where to deploy your apps, it doesn't require that you change from the status quo of using the proven combination of IIS on Windows.
+
+## Other options on Windows
+
+You can host apps side-by-side apps on Windows using any combination of Kestrel, HTTP.sys, and IIS hosts, in addition to Docker containers if needed. If your app requires a combination of Windows and Linux services, hosting on a Windows server with [WSL](https://docs.microsoft.com/windows/wsl/about) and/or Linux Docker containers provides a single server solution to hosting all parts of the app.
 
 ## References
 

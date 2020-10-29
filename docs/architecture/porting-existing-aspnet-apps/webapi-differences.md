@@ -1,11 +1,11 @@
 ---
-title: Comparing ASP.NET Web API 2 and ASP.NET Core
+title: Compare ASP.NET Web API 2 and ASP.NET Core
 description: 
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing ASP.NET Web API 2 and ASP.NET Core
+# Compare ASP.NET Web API 2 and ASP.NET Core
 
 ASP.NET Core offers iterative improvements to ASP.NET Web API 2, but should feel very familiar to developers who have used Web API 2. ASP.NET Web API 2 was developed and shipped side by side with ASP.NET MVC, which meant that the two approaches had similar-but-different approaches to things like attribute routing and dependency injection. In ASP.NET Core, there is no longer any distinction between MVC and Web APIs. There is only ASP.NET MVC, which includes support for view-based scenarios, API endpoints, and Razor Pages (as well as other variations like health checks and SignalR).
 

@@ -11,6 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [DataGridView no longer resets fonts for customized cell styles](#datagridview-no-longer-resets-fonts-for-customized-cell-styles) | 5.0 |
 | [OutputType set to WinExe for WPF and WinForms apps](#outputtype-set-to-winexe-for-wpf-and-winforms-apps) | 5.0 |
 | [DataGridView-related APIs now throw InvalidOperationException](#datagridview-related-apis-now-throw-invalidoperationexception) | 5.0 |
 | [WinForms and WPF apps use Microsoft.NET.Sdk](#winforms-and-wpf-apps-use-microsoftnetsdk) | 5.0 |
@@ -33,6 +34,10 @@ The following breaking changes are documented on this page:
 | [UseLegacyImages compatibility switch not supported](#uselegacyimages-compatibility-switch-not-supported) | 3.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [datagridview-doesnt-reset-custom-font-settings](../../../includes/core-changes/windowsforms/5.0/datagridview-doesnt-reset-custom-font-settings.md)]
+
+***
 
 [!INCLUDE [automatically-infer-winexe-output-type](../../../includes/core-changes/windowsforms/5.0/automatically-infer-winexe-output-type.md)]
 

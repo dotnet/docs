@@ -7,13 +7,13 @@ ms.date: 11/13/2020
 
 # Strategies for migrating ASP.NET Web Forms apps
 
-This book is primarily aimed at offering guidance for migrating large ASP.NET MVC and Web API apps to .NET Core. However, in some cases these applications will also include some number of Web Forms (.aspx) pages which must also be taken into account. ASP.NET Web Forms is not supported in .NET Core (nor are ASP.NET Web Pages). Typically the functionality of these pages must be rewritten as part of a port to ASP.NET Core. There are however some strategies you can apply before or during such migration to help reduce the overall effort required.
+This book is primarily aimed at offering guidance for migrating large ASP.NET MVC and Web API apps to .NET Core. However, in some cases these applications will also include some number of Web Forms (.aspx) pages which must also be taken into account. ASP.NET Web Forms is not supported in .NET Core (nor are ASP.NET Web Pages). Typically the functionality of these pages must be rewritten as part of a port to ASP.NET Core. There are, however, some strategies you can apply before or during such migration to help reduce the overall effort required.
 
-It should also be noted that Web Forms will continue to be supported for quite some time, so one option may be to retain this functionality in an ASP.NET 4.x application.
+It should also be noted that Web Forms will continue to be supported for quite some time. One option may be to retain this functionality in an ASP.NET 4.x application.
 
 ## Separate business logic and other concerns
 
-The less code you have in your ASP.NET Web Forms pages, the better. Wherever possible, try to keep business logic and other concerns like data access in separate classes, ideally in separate class libraries. These class libraries can be ported to .NET Standard and consumed by any ASP.NET Core application.
+The less code you have in your ASP.NET Web Forms pages, the better. When possible, try to keep business logic and other concerns like data access in separate classes, ideally in separate class libraries. These class libraries can be ported to .NET Standard and consumed by any ASP.NET Core application.
 
 ## Leverage client behavior and web APIs
 

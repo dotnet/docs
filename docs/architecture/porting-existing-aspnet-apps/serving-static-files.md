@@ -1,5 +1,5 @@
 ---
-title: Serving static files in ASP.NET MVC and ASP.NET Core
+title: Serve static files in ASP.NET MVC and ASP.NET Core
 description: 
 author: ardalis
 ms.date: 11/13/2020

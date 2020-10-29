@@ -6,9 +6,9 @@
       items:
         - name: Migration considerations
           href: migration-considerations.md
-        - name: Migrating to ASP.NET Core 2.1
+        - name: Migrate to ASP.NET Core 2.1
           href: migrate-aspnet-core-2-1.md
-        - name: Choosing the right .NET Core version
+        - name: Choose the right .NET Core version
           href: choose-net-core-version.md
         - name: Strategies for migrating incrementally
           href: incremental-migration-strategies.md
@@ -22,46 +22,44 @@
       href: architectural-differences.md
       items:
         - name: App startup differences
-        - href: app-startup-differences.md
+          href: app-startup-differences.md
         - name: Hosting differences
-        - href: hosting-differences.md
-        - name: Serving static files
-        - href: serving-static-files.md
+          href: hosting-differences.md
+        - name: Serve static files
+          href: serving-static-files.md
         - name: Dependency injection differences
-        - href: dependency-injection-differences.md
+          href: dependency-injection-differences.md
         - name: Middleware, modules, and handlers
-        - href: middleware-modules-handlers.md
+          href: middleware-modules-handlers.md
         - name: Configuration differences
-        - href: configuration-differences.md
-        - name: Logging differences
-        - href: logging-differences.md
+          href: configuration-differences.md
         - name: Routing differences
-        - href: routing-differences.md
-        - name: Comparing Razor Pages to ASP.NET MVC
-        - href: comparing-razor-pages-aspnet-mvc.md
+          href: routing-differences.md
+        - name: Compare Razor Pages to ASP.NET MVC
+          href: comparing-razor-pages-aspnet-mvc.md
         - name: Web API differences
-        - href: webapi-differences.md
+          href: webapi-differences.md
         - name: Authentication differences
-        - href: authentication-differences.md
+          href: authentication-differences.md
         - name: Identity differences
-        - href: identity-differences.md
+          href: identity-differences.md
         - name: Controller differences
-        - href: controller-differences.md
+          href: controller-differences.md
         - name: Razor differences
-        - href: razor-differences.md
+          href: razor-differences.md
         - name: SignalR differences
-        - href: signalr-differences.md
+          href: signalr-differences.md
         - name: Testing differences
-        - href: testing-differences.md
-      name: Migrating large solutions
+          href: testing-differences.md
+    - name: Migrate large solutions
       href: migrating-large-solutions.md
       items:
-        - name: Identitying sequence of projects to migrate
-        - href: identify-migration-sequence.md
-        - name: Understanding and updating dependencies
-        - href: understand-update-dependencies.md
+        - name: Identify sequence of projects to migrate
+          href: identify-migration-sequence.md
+        - name: Understand and update dependencies
+          href: understand-update-dependencies.md
         - name: Strategies for migrating while running in production
-        - href: strategies-migrating-in-production.md
+          href: strategies-migrating-in-production.md
     - name: Example migration of eShop project
       href: example-migration-eshop.md
     - name: Deployment scenarios

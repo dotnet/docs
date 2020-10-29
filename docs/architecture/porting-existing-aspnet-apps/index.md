@@ -44,11 +44,12 @@ Authors:
 Participants and Reviewers:
 
 > **Nish Anil**, Senior Program Manager, .NET team, Microsoft
+> **Mike Rousos**, Principal Software Engineer, .NET team, Microsoft
 >
 
 ## Version
 
-This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release. Updating from .NET Core 3.1 to .NET 5 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET to .NET Core.
+This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release. Updating from .NET Core 3.1 to .NET 5 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET to .NET Core. Migrating from .NET 4.x to .NET 5 will be similar to migrating to .NET Core 3.1; see [choosing the right .NET Core version](choose-net-core-version.md) for more details.
 
 ## Who should use this guide
 
@@ -70,7 +71,7 @@ Whether or not you choose to start from the first chapter, you can also refer (b
 - [Deployment scenarios](deployment-scenarios.md)
 - [Case studies](case-studies.md)
 
-This guide is available both in [PDF](LINK) form and online. Feel free to forward this document or links to its online version to your team to ensure a common understanding of these topics.
+This guide is available both in PDF (TODO: add link) form and online. Feel free to forward this document or links to its online version to your team to ensure a common understanding of these topics.
 
 ## Send your feedback
 

@@ -1,13 +1,13 @@
 ---
 title: The World is Distributed
-description: Gain an understanding of the challenges of distributed applications
+description: The benefits and challenges of distributed applications with a look at monolithic and SOA approaches.
 author: robvet
-ms.date: 10/18/2020
+ms.date: 10/28/2020
 ---
 
 # The world is distributed
 
-Just ask any 'cool kid': *Modern, distributed systems are in and, monolithic apps are out!* 
+Just ask any 'cool kid': *Modern, distributed systems are in, and monolithic apps are out!* 
 
 But, it's not just "cool kids." Progressive IT Leaders, corporate architects, and astute developers are echoing these same thoughts as they explore and evaluate modern distributed applications. Many have bought in. They're designing new and replatforming existing enterprise applications following the principles, patterns, and practices of distributed microservice applications.
 
@@ -24,7 +24,7 @@ To start, let's rewind and look at the past 15 years. During this period, we typ
 
 **Figure 1-1. Monolithic architecture.
 
-Note how the modules for Ordering, Identity, and Marketing execute in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTFul interfaces.
+Note how the modules for Ordering, Identity, and Marketing execute in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTful interfaces.
 
 In many ways, monolithic apps are `straightforward`. They're straightforward to...
 
@@ -62,7 +62,7 @@ With SOA, centralized service providers registered with the ESB. Business logic 
 
 Despite the promises of SOA, implementing this approach often increased complexity and introduced bottlenecks. Maintenance costs became high and ESB middleware expensive. Services tended to be large. They often shared dependencies and data storage. In the end, SOAs often resulted in a 'distributed monolithic' structure with centralized services that were resistant to change. 
 
-Nowadays, many organizations have realized speed and agility by adopting a distributed microservice architectural approach to building systems. Figure 1-3 shows the same system built applying distributed techniques and practices.
+Nowadays, many organizations have realized speed and agility by adopting a distributed microservice architectural approach to building systems. Figure 1-3 shows the same system built using distributed techniques and practices.
 
 ![Distributed architecture.](./media/distributed-design.png)
 

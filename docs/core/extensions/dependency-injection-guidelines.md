@@ -29,11 +29,17 @@ In the following example, the services are created by the service container and 
 
 :::code language="csharp" source="snippets/configuration/console-di-disposable/TransientDisposable.cs":::
 
+The preceding disposable is intended to have a transient lifetime.
+
 :::code language="csharp" source="snippets/configuration/console-di-disposable/ScopedDisposable.cs":::
+
+The preceding disposable is intended to have a scoped lifetime.
 
 :::code language="csharp" source="snippets/configuration/console-di-disposable/SingletonDisposable.cs":::
 
-:::code language="csharp" source="snippets/configuration/console-di-disposable/Program.cs" range="1-21,41-60":::
+The preceding disposable is intended to have a singleton lifetime.
+
+:::code language="csharp" source="snippets/configuration/console-di-disposable/Program.cs" range="1-21,41-60" highlight="":::
 
 The debug console shows the following sample output after running:
 

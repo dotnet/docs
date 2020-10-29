@@ -205,10 +205,11 @@ For more information, see [Scope validation](dependency-injection.md#scope-valid
 
 When using scoped services, if you're not creating a scope or within an existing scope - the service becomes a singleton.
 
-:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="68-82":::
+:::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="68-82" highlight="13-14":::
 
-In the preceding code, `Bar` is retrieved within an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope>, which is correct. The anti-pattern is the retrieval of `Bar` outside of the scope.
+In the preceding code, `Bar` is retrieved within an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope>, which is correct. The anti-pattern is the retrieval of `Bar` outside of the scope, and the variable is named `avoid` to show which example retrieval is incorrect.
 
 ## See also
 
 - [Dependency injection in .NET](dependency-injection.md)
+- [Tutorial: Use dependency injection in .NET](dependency-injection-usage.md)

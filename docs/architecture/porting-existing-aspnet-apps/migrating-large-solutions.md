@@ -9,29 +9,14 @@ ms.date: 11/13/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-*Notes*
-See [thread](https://twitter.com/ardalis/status/1313669040859217921)
+Migrating large solutions from .NET to .NET Core requires some planning. Dependencies must be migrated or updated before the projects that depend on them. There are tools that can assist in identifying dependencies and offering help with migrating them to .NET Core. Depending how the app ands its scope and current usage patterns, different strategies may be employed when migrating it. Do you migrate it all at once, or over time, side by side with the current system? Do you wrap the current system in the new one, and incrementally replace its functionality?
 
-- Identify sequence in which projects should be migrated
-  - Identify head projects that ultimately will migrate to ASP.NET Core
-  - Identify their dependencies
-  - Migrate "from the bottom up"
-- Understand and update dependencies
-  - ApiPort for Framework dependencies
-  - Review NuGet Package dependencies
-- Tools
-  - [try-convert](https://github.com/dotnet/try-convert)
-  - [apiport](https://github.com/microsoft/dotnet-apiport)
-- Strategies for migrating while app is in production
-  - Refactoring models and business logic to .NET Standard libraries
-  - The importance of good test coverage
-  - Extracting front-end assets to shared static content server/cdn
-  - Dividing app into multiple services
-    - Link to existing microservices guidance
-  - Deploying multiple versions or parts of a Web API side-by-side in IIS
-  - Strangler pattern
+In this chapter, you'll learn how create a migration plan for a large solution, how to use tools to help with the migration, and some strategies to consider for the migration itself.
 
 ## References
+
+- [What topics are important to migrating large MVC and Web API apps to .NET Core?](https://twitter.com/ardalis/status/1313669040859217921)
+- [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/dotnet/core/porting/)
 
 >[!div class="step-by-step"]
 >[Previous](testing-differences.md)

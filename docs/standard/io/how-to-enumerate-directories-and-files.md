@@ -7,7 +7,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "I/O [.NET Framework], enumerating directories and files"
+  - "I/O [.NET], enumerating directories and files"
 ms.assetid: 86b69a08-3bfa-4e5f-b4e1-3b7cb8478215
 ---
 # How to: Enumerate directories and files

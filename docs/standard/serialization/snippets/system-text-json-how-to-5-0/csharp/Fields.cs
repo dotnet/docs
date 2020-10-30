@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Fields
 {
@@ -7,6 +8,15 @@ namespace Fields
     {
         public DateTime Date;
         public int TemperatureC;
+        public string Summary;
+    }
+    public class Forecast2
+    {
+        [JsonInclude]
+        public DateTime Date;
+        [JsonInclude]
+        public int TemperatureC;
+        [JsonInclude]
         public string Summary;
     }
     public class Program
@@ -29,6 +39,17 @@ namespace Fields
             var roundTrippedJson = JsonSerializer.Serialize<Forecast>
                 (forecast, options);
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
+
+            options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
+            var forecast2 = JsonSerializer.Deserialize<Forecast2>(json, options);
+
+            Console.WriteLine($"forecast2.Date: {forecast2.Date}");
+            Console.WriteLine($"forecast2.TemperatureC: {forecast2.TemperatureC}");
+            Console.WriteLine($"forecast2.Summary: {forecast2.Summary}");
+
+            roundTrippedJson = JsonSerializer.Serialize<Forecast2>
+                (forecast2, options);
+            Console.WriteLine($"Output JSON: {roundTrippedJson}");
         }
     }
 }
@@ -39,4 +60,8 @@ namespace Fields
 //forecast.Date: 9/6/2020 11:31:01 AM
 //forecast.TemperatureC: -1
 //forecast.Summary: Cold
+//Output JSON: { "date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
+//forecast2.Date: 9/6/2020 11:31:01 AM
+//forecast2.TemperatureC: -1
+//forecast2.Summary: Cold
 //Output JSON: { "date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}

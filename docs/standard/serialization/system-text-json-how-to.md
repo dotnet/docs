@@ -260,7 +260,7 @@ To enable use of a non-public property accessor, use the [[JsonInclude]](xref:Sy
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-Non-public property accessors are not supported in `System.Text.Json` 3.1. For more information, see [Internal and private property setters and getters](system-text-json-migrate-from-newtonsoft-how-to.md#internal-and-private-property-setters-and-getters).
+Non-public property accessors are not supported in `System.Text.Json` 3.1. For more information, see [Non-public property setters and getters](system-text-json-migrate-from-newtonsoft-how-to.md#non-public-property-setters-and-getters).
 ::: zone-end
 
 ## Customize JSON names and values
@@ -839,13 +839,9 @@ The following code illustrates use of the `Preserve` setting.
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/PreserveReferences.cs" highlight="34":::
 
-For the following types, no reference metadata is serialized, and an exception is thrown on deserialization if `$ref` or `$id` is found:
+This feature can't be used to preserve value types or immutable types. On deserialization, the instance of an immutable type is created after the entire payload is read. So it would be impossible to deserialize the same instance if a reference to it appears within the JSON payload.
 
-* Immutable types
-* Arrays
-* Value types, such as structs
-
-  POCO value types ignore `$id`, but an exception is thrown if they contain `$ref`. This behavior enables deserialization of payloads that were serialized with Newtonsoft.Json, because Newtonsoft.Json does serialize metadata for such types.
+For value types, immutable types, and arrays, no reference metadata is serialized. On deserialization, an exception is thrown if `$ref` or `$id` is found. However, POCO value types ignore `$id` to make it possible to deserialize payloads that were serialized by using Newtonsoft.Json.  Newtonsoft.Json does serialize metadata for such types.
 
 To determine if objects are equal, `System.Text.Json` uses <xref:System.Collections.Generic.ReferenceEqualityComparer.Instance%2A>, which uses reference equality (<xref:System.Object.ReferenceEquals(System.Object,System.Object)>) instead of value equality (<xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> when comparing two object instances.
 

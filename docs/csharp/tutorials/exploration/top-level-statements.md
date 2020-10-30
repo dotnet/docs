@@ -202,7 +202,7 @@ The preceding code creates a local function inside your main method. That's stil
 
 :::code language="csharp" source="snippets/top-level-statements/UtilitiesPassOne.cs" ID="SnippetUtilities":::
 
-. Top-level statements can only be in one file, and that file cannot contain namespaces or types.
+Top-level statements can only be in one file, and that file cannot contain namespaces or types.
 
 Finally, you can clean the animation code to remove some duplication:
 

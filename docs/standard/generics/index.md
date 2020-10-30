@@ -9,21 +9,21 @@ dev_langs:
   - "cpp"
 helpviewer_keywords: 
   - "generic methods, type inference"
-  - "generics [.NET Framework], collections"
-  - "generic interfaces [.NET Framework]"
+  - "generics [.NET], collections"
+  - "generic interfaces [.NET]"
   - "constructed generic types"
   - "nested generic types"
   - "generic type definitions"
-  - "generic classes [.NET Framework]"
-  - "generics [.NET Framework], interfaces"
-  - "generics [.NET Framework], about"
-  - "generics [.NET Framework]"
-  - "generic collections [.NET Framework]"
-  - "generic delegates [.NET Framework]"
+  - "generic classes [.NET]"
+  - "generics [.NET], interfaces"
+  - "generics [.NET], about"
+  - "generics [.NET]"
+  - "generic collections [.NET]"
+  - "generic delegates [.NET]"
   - "generic type arguments"
-  - "generics [.NET Framework], delegates"
-  - "generics [.NET Framework], features"
-  - "constraints [.NET Framework]"
+  - "generics [.NET], delegates"
+  - "generics [.NET], features"
+  - "constraints [.NET]"
   - "generic types"
   - "generic type parameters"
 ms.assetid: 2994d786-c5c7-4666-ab23-4c83129fe39c
@@ -93,7 +93,7 @@ Generics let you tailor a method, class, structure, or interface to the precise 
   
  The following are some limitations of generics:  
   
-- Generic types can be derived from most base classes, such as <xref:System.MarshalByRefObject> (and constraints can be used to require that generic type parameters derive from base classes like <xref:System.MarshalByRefObject>). However, the .NET Framework does not support context-bound generic types. A generic type can be derived from <xref:System.ContextBoundObject>, but trying to create an instance of that type causes a <xref:System.TypeLoadException>.  
+- Generic types can be derived from most base classes, such as <xref:System.MarshalByRefObject> (and constraints can be used to require that generic type parameters derive from base classes like <xref:System.MarshalByRefObject>). However, .NET does not support context-bound generic types. A generic type can be derived from <xref:System.ContextBoundObject>, but trying to create an instance of that type causes a <xref:System.TypeLoadException>.  
   
 - Enumerations cannot have generic type parameters. An enumeration can be generic only incidentally (for example, because it is nested in a generic type that is defined using Visual Basic, C#, or C++). For more information, see "Enumerations" in [Common Type System](../base-types/common-type-system.md).  
   

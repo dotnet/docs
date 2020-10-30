@@ -7,15 +7,15 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "restoring time zones"
-  - "deserialization [.NET Framework], time zones"
-  - "serialization [.NET Framework], time zones"
-  - "time zone objects [.NET Framework], restoring"
+  - "deserialization [.NET], time zones"
+  - "serialization [.NET], time zones"
+  - "time zone objects [.NET], restoring"
   - "saving time zones"
-  - "time zone objects [.NET Framework], deserializing"
-  - "time zones [.NET Framework], saving"
-  - "time zones [.NET Framework], restoring"
-  - "time zone objects [.NET Framework], serializing"
-  - "time zone objects [.NET Framework], saving"
+  - "time zone objects [.NET], deserializing"
+  - "time zones [.NET], saving"
+  - "time zones [.NET], restoring"
+  - "time zone objects [.NET], serializing"
+  - "time zone objects [.NET], saving"
 ms.assetid: 4028b310-e7ce-49d4-a646-1e83bfaf6f9d
 ---
 # Saving and restoring time zones

@@ -3,17 +3,17 @@ title: "Time zone overview"
 ms.date: "04/10/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "time zones [.NET Framework], about time zones"
-  - "transition time [.NET Framework]"
+  - "time zones [.NET], about time zones"
+  - "transition time [.NET]"
   - "TimeZoneInfo class, about TimeZoneInfo class"
-  - "time zones [.NET Framework], creating"
-  - "invalid time [.NET Framework]"
-  - "fixed rule [.NET Framework]"
-  - "ambiguous time [.NET Framework]"
-  - "floating rule [.NET Framework]"
-  - "daylight saving time [.NET Framework]"
-  - "adjustment rule [.NET Framework]"
-  - "time zones [.NET Framework], terminology"
+  - "time zones [.NET], creating"
+  - "invalid time [.NET]"
+  - "fixed rule [.NET]"
+  - "ambiguous time [.NET]"
+  - "floating rule [.NET]"
+  - "daylight saving time [.NET]"
+  - "adjustment rule [.NET]"
+  - "time zones [.NET], terminology"
 ms.assetid: c4b7ed01-5e38-4959-a3b6-ef9765d6ccf1
 ---
 # Time zone overview

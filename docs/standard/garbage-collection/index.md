@@ -6,7 +6,7 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "memory, garbage collection"
   - "garbage collection, automatic memory management"
-  - "GC [.NET Framework]"
+  - "GC [.NET]"
   - "memory, allocating"
   - "common language runtime, garbage collection"
   - "garbage collector"

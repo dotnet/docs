@@ -4,14 +4,14 @@ ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "culture, localization"
-  - "application development [.NET Framework], localization"
-  - "globalization [.NET Framework], localization"
+  - "application development [.NET], localization"
+  - "globalization [.NET], localization"
   - "code blocks"
-  - "international applications [.NET Framework], localization"
+  - "international applications [.NET], localization"
   - "global applications, localization"
   - "world-ready applications, localization"
   - "user interface blocks"
-  - "localization [.NET Framework], about localization"
+  - "localization [.NET], about localization"
   - "localizing resources"
 ms.assetid: 49d520d7-92d7-44ee-bb24-8b615db1d41b
 ---

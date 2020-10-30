@@ -3,11 +3,11 @@ title: "Globalization and ICU"
 ms.date: "05/21/2020"
 ms.technology: dotnet-standard
 helpviewer_keywords:
-  - "globalization [.NET Framework], about globalization"
+  - "globalization [.NET], about globalization"
   - "global applications, globalization"
-  - "international applications [.NET Framework], globalization"
+  - "international applications [.NET], globalization"
   - "world-ready applications, globalization"
-  - "application development [.NET Framework], globalization"
+  - "application development [.NET], globalization"
   - "culture, globalization"
   - "icu, icu on windows, ms-icu"
 ---

@@ -6,9 +6,9 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "time zones [.NET Framework], creating"
-  - "time zones [.NET Framework], and adjustment rules"
-  - "adjustment rule [.NET Framework]"
+  - "time zones [.NET], creating"
+  - "time zones [.NET], and adjustment rules"
+  - "adjustment rule [.NET]"
 ms.assetid: c52ef192-13a9-435f-8015-3b12eae8c47c
 ---
 # How to: Create time zones with adjustment rules

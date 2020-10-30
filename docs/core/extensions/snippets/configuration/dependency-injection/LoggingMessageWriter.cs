@@ -9,7 +9,7 @@ namespace DependencyInjection.Example
         public LoggingMessageWriter(ILogger<LoggingMessageWriter> logger) =>
             _logger = logger;
 
-        public void Write(string message) => 
+        public void Write(string message) =>
             _logger.LogInformation(message);
     }
 }

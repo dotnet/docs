@@ -5,8 +5,6 @@ ms.date: 10/28/2020
 ---
 # Tutorial: Explore ideas using top-level statements to build code as you learn
 
-Introduction and problem statement
-
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]

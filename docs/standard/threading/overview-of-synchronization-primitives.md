@@ -26,13 +26,13 @@ Multiple .NET synchronization primitives derive from the <xref:System.Threading.
 - <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType>, which derives from <xref:System.Threading.EventWaitHandle> and, when signaled, resets automatically to an unsignaled state after releasing a single waiting thread.
 - <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>, which derives from <xref:System.Threading.EventWaitHandle> and, when signaled, stays in a signaled state until the <xref:System.Threading.EventWaitHandle.Reset%2A> method is called.
 
-In the .NET Framework, because <xref:System.Threading.WaitHandle> derives from <xref:System.MarshalByRefObject?displayProperty=nameWithType>, these types can be used to synchronize the activities of threads across application domain boundaries.
+In .NET Framework, because <xref:System.Threading.WaitHandle> derives from <xref:System.MarshalByRefObject?displayProperty=nameWithType>, these types can be used to synchronize the activities of threads across application domain boundaries.
 
-In the .NET Framework and .NET Core, some of these types can represent named system synchronization handles, which are visible throughout the operating system and can be used for the inter-process synchronization:
+In .NET Framework, .NET Core, and .NET 5+, some of these types can represent named system synchronization handles, which are visible throughout the operating system and can be used for the inter-process synchronization:
 
-- <xref:System.Threading.Mutex> (.NET Framework and .NET Core),
-- <xref:System.Threading.Semaphore> (.NET Framework and .NET Core on Windows),
-- <xref:System.Threading.EventWaitHandle> (.NET Framework and .NET Core on Windows).
+- <xref:System.Threading.Mutex>
+- <xref:System.Threading.Semaphore> (on Windows)
+- <xref:System.Threading.EventWaitHandle> (on Windows)
 
 For more information, see the <xref:System.Threading.WaitHandle> API reference.
 

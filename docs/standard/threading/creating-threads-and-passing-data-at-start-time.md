@@ -8,9 +8,9 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "threading [.NET Framework], creating"
-  - "threading [.NET Framework], passing data to threads"
-  - "threading [.NET Framework], retrieving data from threads"
+  - "threading [.NET], creating"
+  - "threading [.NET], passing data to threads"
+  - "threading [.NET], retrieving data from threads"
 ms.assetid: 52b32222-e185-4f42-91a7-eaca65c0ab6d
 ---
 # Creating threads and passing data at start time
@@ -34,9 +34,9 @@ When an operating-system process is created, the operating system injects a thre
   
 ## Passing data to threads
 
- In the .NET Framework version 2.0, the <xref:System.Threading.ParameterizedThreadStart> delegate provides an easy way to pass an object containing data to a thread when you call the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method overload. See <xref:System.Threading.ParameterizedThreadStart> for a code example.  
+The <xref:System.Threading.ParameterizedThreadStart> delegate provides an easy way to pass an object containing data to a thread when you call <xref:System.Threading.Thread.Start(System.Object)?displayProperty=nameWithType>. See <xref:System.Threading.ParameterizedThreadStart> for a code example.
   
- Using the <xref:System.Threading.ParameterizedThreadStart> delegate is not a type-safe way to pass data, because the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method overload accepts any object. An alternative is to encapsulate the thread procedure and the data in a helper class and use the <xref:System.Threading.ThreadStart> delegate to execute the thread procedure. The following example demonstrates this technique:
+ Using the <xref:System.Threading.ParameterizedThreadStart> delegate is not a type-safe way to pass data, because the <xref:System.Threading.Thread.Start(System.Object)?displayProperty=nameWithType> method accepts any object. An alternative is to encapsulate the thread procedure and the data in a helper class and use the <xref:System.Threading.ThreadStart> delegate to execute the thread procedure. The following example demonstrates this technique:
 
  [!code-cpp[System.Threading.ThreadStart2#3](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ThreadStart2/CPP/source3.cpp#3)]
  [!code-csharp[System.Threading.ThreadStart2#3](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ThreadStart2/CS/source3.cs#3)]

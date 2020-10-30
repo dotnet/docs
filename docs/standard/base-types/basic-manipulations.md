@@ -7,7 +7,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "strings [.NET Framework], examples"
+  - "strings [.NET], examples"
 ms.assetid: 121d1eae-251b-44c0-8818-57da04b8215e
 ---
 # How to: Perform Basic String Manipulations in .NET

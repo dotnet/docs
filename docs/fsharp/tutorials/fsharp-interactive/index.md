@@ -86,7 +86,7 @@ test
 The `#r` syntax for referencing a DLL in F# Interactive can also be used to reference a nuget package via the following syntax:
 
 ```fsharp
-#r "nuget: <package name>
+#r "nuget: <package name>"
 ```
 
 For example, to reference the `FSharp.Data` package, use the following `#r` reference:

@@ -3,13 +3,13 @@ title: "Finding the time zones defined on a local system"
 ms.date: "04/10/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "time zones [.NET Framework], local"
-  - "time zones [.NET Framework], finding local system time zones"
-  - "time zone identifiers [.NET Framework]"
+  - "time zones [.NET], local"
+  - "time zones [.NET], finding local system time zones"
+  - "time zone identifiers [.NET]"
   - "local time zone access"
-  - "time zones [.NET Framework], retrieving"
+  - "time zones [.NET], retrieving"
   - "UTC times, finding local system time zones"
-  - "time zones [.NET Framework], UTC"
+  - "time zones [.NET], UTC"
 ms.assetid: 3f63b1bc-9a4b-4bde-84ea-ab028a80d3e1
 ---
 # Finding the time zones defined on a local system

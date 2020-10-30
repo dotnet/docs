@@ -6,9 +6,9 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "observer design pattern [.NET Framework], implementing providers"
-  - "providers [.NET Framework], in observer design pattern"
-  - "observables [.NET Framework], in observer design pattern"
+  - "observer design pattern [.NET], implementing providers"
+  - "providers [.NET], in observer design pattern"
+  - "observables [.NET], in observer design pattern"
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
 ---
 # How to: Implement a Provider

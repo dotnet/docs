@@ -82,7 +82,7 @@ When you are calling methods on COM objects in .NET, the .NET runtime changes th
 | `bool`    | `VARIANT_BOOL`                 |
 | `StringBuilder` | `LPWSTR`                 |
 | `string`  | `BSTR`                         |
-| Delegate types | `_Delegate*` in .NET Framework. Disallowed in .NET Core. |
+| Delegate types | `_Delegate*` in .NET Framework. Disallowed in .NET Core and .NET 5+. |
 | `System.Drawing.Color` | `OLECOLOR`        |
 | .NET array | `SAFEARRAY`                   |
 | `string[]` | `SAFEARRAY` of `BSTR`s        |

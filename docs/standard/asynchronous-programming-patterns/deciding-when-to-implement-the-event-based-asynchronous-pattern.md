@@ -6,16 +6,16 @@ helpviewer_keywords:
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"
   - "BackgroundWorker component"
-  - "events [.NET Framework], asynchronous"
+  - "events [.NET], asynchronous"
   - "AsyncOperationManager class"
-  - "threading [.NET Framework], asynchronous features"
+  - "threading [.NET], asynchronous features"
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: a00046aa-785d-4f7f-a8e5-d06475ea50da
 ---
 # Deciding When to Implement the Event-based Asynchronous Pattern
 
-The Event-based Asynchronous Pattern provides a pattern for exposing the asynchronous behavior of a class. With the introduction of this pattern, the .NET Framework defines two patterns for exposing asynchronous behavior: the Asynchronous Pattern based on the <xref:System.IAsyncResult?displayProperty=nameWithType> interface, and the event-based pattern. This topic describes when it is appropriate for you to implement both patterns.
+The Event-based Asynchronous Pattern provides a pattern for exposing the asynchronous behavior of a class. With the introduction of this pattern, .NET defines two patterns for exposing asynchronous behavior: the Asynchronous Pattern based on the <xref:System.IAsyncResult?displayProperty=nameWithType> interface, and the event-based pattern. This article describes when it's appropriate for you to implement both patterns.
 
 For more information about asynchronous programming with the <xref:System.IAsyncResult> interface, see [Asynchronous Programming Model (APM)](asynchronous-programming-model-apm.md).
 

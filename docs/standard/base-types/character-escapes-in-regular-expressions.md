@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "characters, escapes"
   - "regular expressions, character escapes"
   - "escape characters"
-  - ".NET Framework regular expressions, character escapes"
+  - ".NET regular expressions, character escapes"
   - "constructs, character escapes"
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
 ---

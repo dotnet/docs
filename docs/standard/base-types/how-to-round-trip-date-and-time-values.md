@@ -7,10 +7,10 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "round-trip date and time values"
-  - "dates [.NET Framework], round-trip values"
-  - "time zones [.NET Framework], round-trip date and time values"
-  - "time [.NET Framework], round-trip values"
-  - "formatting strings [.NET Framework], round-trip values"
+  - "dates [.NET], round-trip values"
+  - "time zones [.NET], round-trip date and time values"
+  - "time [.NET], round-trip values"
+  - "formatting strings [.NET], round-trip values"
 ms.assetid: b609b277-edc6-4c74-b03e-ea73324ecbdb
 ---
 # How to: Round-trip Date and Time Values

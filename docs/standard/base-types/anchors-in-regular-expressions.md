@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "anchors, in regular expressions"
   - "metacharacters, atomic zero-width assertions"
   - "metacharacters, anchors"
-  - ".NET Framework regular expressions, anchors"
-  - ".NET Framework regular expressions, atomic zero-width assertions"
+  - ".NET regular expressions, anchors"
+  - ".NET regular expressions, atomic zero-width assertions"
 ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
 ---
 # Anchors in Regular Expressions

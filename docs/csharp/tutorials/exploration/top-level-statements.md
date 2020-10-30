@@ -68,7 +68,7 @@ You don't declare an `args` variable. For the single source file that contains y
 
 You can test your code by running the following `dotnet run` command:
 
-```console
+```dotnetcli
 dotnet run -- Should I use top level statements in all my programs?
 ```
 
@@ -96,7 +96,7 @@ This array has 12 answers that are affirmative, six that are non-committal, and 
 
 You can run the application again to see the results. You should see something like the following output:
 
-```console
+```dotnetcli
 dotnet run -- Should I use top level statements in all my programs?
 
 Should I use top level statements in all my programs?

@@ -9,8 +9,8 @@ dev_langs:
 helpviewer_keywords: 
   - "storing data using isolated storage, accessing isolated storage"
   - "storing data using isolated storage, isolation types"
-  - "authentication [.NET Framework], isolated storage"
-  - "assemblies [.NET Framework], identity"
+  - "authentication [.NET], isolated storage"
+  - "assemblies [.NET], identity"
   - "isolated storage, accessing"
   - "data storage using isolated storage, isolation types"
   - "data storage using isolated storage, accessing isolated storage"
@@ -19,7 +19,8 @@ helpviewer_keywords:
   - "user authentication, isolated storage"
 ms.assetid: 14812988-473f-44ae-b75f-fd5c2f21fb7b
 ---
-# Types of Isolation
+# Types of isolation
+
 Access to isolated storage is always restricted to the user who created it. To implement this type of isolation, the common language runtime uses the same notion of user identity that the operating system recognizes, which is the identity associated with the process in which the code is running when the store is opened. This identity is an authenticated user identity, but impersonation can cause the identity of the current user to change dynamically.  
   
  Access to isolated storage is also restricted according to the identity associated with the application's domain and assembly, or with the assembly alone. The runtime obtains these identities in the following ways:  

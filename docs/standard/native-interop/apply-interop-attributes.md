@@ -4,13 +4,13 @@ description: This article summarizes COM interop attributes of the System.Runtim
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "design-time attributes"
-  - ".NET Framework, exposing components to COM"
-  - "attributes [.NET Framework], design-time functionality"
+  - ".NET, exposing components to COM"
+  - "attributes [.NET], design-time functionality"
   - "conversion-tool attributes"
-  - "attributes [.NET Framework], interop-specific"
-  - "attributes [.NET Framework], conversion-tool"
+  - "attributes [.NET], interop-specific"
+  - "attributes [.NET], conversion-tool"
   - "interoperation with unmanaged code, applying attributes"
-  - "interoperation with unmanaged code, exposing .NET Framework components"
+  - "interoperation with unmanaged code, exposing .NET components"
   - "COM interop, exposing COM components"
   - "COM interop, applying attributes"
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
@@ -45,7 +45,7 @@ The <xref:System.Runtime.InteropServices> namespace provides three categories of
 |<xref:System.Runtime.InteropServices.OptionalAttribute>|Indicates that a parameter is optional.<br /><br /> COM interop tools can apply this attribute.|  
 |<xref:System.Runtime.InteropServices.OutAttribute>|Indicates that the data in a field or parameter must be marshaled from a called object back to its caller.|  
 |<xref:System.Runtime.InteropServices.PreserveSigAttribute>|Suppresses the HRESULT or retval signature transformation that normally takes place during interoperation calls. The attribute affects marshaling as well as type library exporting.<br /><br /> COM interop tools can apply this attribute.|  
-|<xref:System.Runtime.InteropServices.ProgIdAttribute>|Specifies the ProgID of a .NET Framework class. Can be used to attribute classes.|  
+|<xref:System.Runtime.InteropServices.ProgIdAttribute>|Specifies the ProgID of a .NET class. Can be used to attribute classes.|  
 |<xref:System.Runtime.InteropServices.StructLayoutAttribute>|Controls the physical layout of the fields of a class.<br /><br /> COM interop tools can apply this attribute.|  
   
 ## Conversion-Tool Attributes  

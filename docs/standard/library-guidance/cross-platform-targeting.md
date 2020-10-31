@@ -27,7 +27,7 @@ Targeting .NET Standard, and successfully compiling your project, doesn't guaran
 
 ❌ AVOID including a `netstandard1.x` target.
 
-> .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in developers downloading a lot of packages when building. Modern .NET platforms, including .NET Framework 4.6.1, UWP and Xamarin, all support .NET Standard 2.0. You should only target .NET Standard 1.x if you specifically need to target an older platform.
+> .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in developers downloading a lot of packages when building. Modern .NET implementations support .NET Standard 2.0. You should only target .NET Standard 1.x if you specifically need to target an older platform.
 
 ✔️ DO include a `netstandard2.0` target if you require a `netstandard1.x` target.
 
@@ -109,7 +109,7 @@ public static class GpsLocation
 
 ## Older targets
 
-.NET supports targeting versions of the .NET Framework that are long out of support as well as platforms that are no longer commonly used. While there's value in making your library work on as many targets as possible, having to work around missing APIs can add significant overhead. We believe certain frameworks are no longer worth targeting, considering their reach and limitations.
+.NET supports targeting versions of .NET Framework that are long out of support as well as platforms that are no longer commonly used. While there's value in making your library work on as many targets as possible, having to work around missing APIs can add significant overhead. We believe certain frameworks are no longer worth targeting, considering their reach and limitations.
 
 ❌ DO NOT include a Portable Class Library (PCL) target. For example, `portable-net45+win8+wpa81+wp8`.
 

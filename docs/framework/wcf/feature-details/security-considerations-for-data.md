@@ -9,16 +9,19 @@ ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
 
 # Security Considerations for Data
 
-When dealing with data in Windows Communication Foundation (WCF), you must consider a number of threat categories. The following table lists the most important threat classes that relate to data processing. WCF provides tools to mitigate these threats.
+When dealing with data in Windows Communication Foundation (WCF), you must consider a number of threat categories. The following list shows the most important threat classes that relate to data processing. WCF provides tools to mitigate these threats.
 
-Denial of service
-When receiving untrusted data, the data may cause the receiving side to access a disproportionate amount of various resources, such as memory, threads, available connections, or processor cycles by causing lengthy computations. A denial-of-service attack against a server may cause it to crash and be unable to process messages from other, legitimate clients.
+* Denial of service
 
-Malicious code execution
-Incoming untrusted data causes the receiving side to run code it did not intend to.
+  When receiving untrusted data, the data may cause the receiving side to access a disproportionate amount of various resources, such as memory, threads, available connections, or processor cycles by causing lengthy computations. A denial-of-service attack against a server may cause it to crash and be unable to process messages from other, legitimate clients.
 
-Information disclosure
-The remote attacker forces the receiving party to respond to its requests in such a way as to disclose more information than it intends to.
+* Malicious code execution
+
+  Incoming untrusted data causes the receiving side to run code it did not intend to.
+
+* Information disclosure
+
+  The remote attacker forces the receiving party to respond to its requests in such a way as to disclose more information than it intends to.
 
 ## User-Provided Code and Code Access Security
 

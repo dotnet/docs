@@ -58,7 +58,7 @@ If you don't set this value explicitly, the default value depends on whether you
 - Available since: .NET Core 3.0 SDK.
 
 The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a higher version. A [version](#version) must be specified with a `rollForward` value, unless you're setting it to `latestMajor`.
-The default value of `rollForward` is determined by the [matching rules](https://docs.microsoft.com/dotnet/core/tools/global-json?tabs=netcore3x#matching-rules).
+The default value of `rollForward` is determined by the [matching rules](#matching-rules).
 
 To understand the available policies and their behavior, consider the following definitions for an SDK version in the format `x.y.znn`:
 

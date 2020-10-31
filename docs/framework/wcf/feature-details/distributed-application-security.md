@@ -93,4 +93,4 @@ Windows Communication Foundation (WCF) security is broken into three major funct
 - [Endpoint Creation Overview](../endpoint-creation-overview.md)
 - [System-Provided Bindings](../system-provided-bindings.md)
 - [Security Overview](security-overview.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

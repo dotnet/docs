@@ -11,6 +11,9 @@ class Example
 
         string fromMultipleArguments = GetVowels("apple", "banana", "pear");
         Console.WriteLine($"Vowels from multiple arguments: '{fromMultipleArguments}'");
+        
+        string fromNull = GetVowels(null);
+        Console.WriteLine($"Vowels from null: '{fromNull}'");
 
         string fromNoValue = GetVowels();
         Console.WriteLine($"Vowels from no value: '{fromNoValue}'");
@@ -33,6 +36,7 @@ class Example
 // The example displays the following output:
 //     Vowels from array: 'aeaaaea'
 //     Vowels from multiple arguments: 'aeaaaea'
+//     Vowels from null: ''
 //     Vowels from no value: ''
 
 //</Snippet75>

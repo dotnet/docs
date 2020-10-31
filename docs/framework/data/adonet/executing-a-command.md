@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 40494916-c25a-4cb8-8f7c-fcb8d378464e
 ---
 # Executing a Command
+
 Each .NET Framework data provider included with the .NET Framework has its own command object that inherits from <xref:System.Data.Common.DbCommand>. The .NET Framework Data Provider for OLE DB includes an <xref:System.Data.OleDb.OleDbCommand> object, the .NET Framework Data Provider for SQL Server includes a <xref:System.Data.SqlClient.SqlCommand> object, the .NET Framework Data Provider for ODBC includes an <xref:System.Data.Odbc.OdbcCommand> object, and the .NET Framework Data Provider for Oracle includes an <xref:System.Data.OracleClient.OracleCommand> object. Each of these objects exposes methods for executing commands based on the type of command and desired return value, as described in the following table.  
   
 |Command|Return Value|  
@@ -25,12 +26,14 @@ Each .NET Framework data provider included with the .NET Framework has its own c
 |`TableDirect`|The name of a table.|  
   
 ## Example  
+
  The following code example demonstrates how to create a <xref:System.Data.SqlClient.SqlCommand> object to execute a stored procedure by setting its properties. A <xref:System.Data.SqlClient.SqlParameter> object is used to specify the input parameter to the stored procedure. The command is executed using the <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> method, and the output from the <xref:System.Data.SqlClient.SqlDataReader> is displayed in the console window.  
   
  [!code-csharp[DataWorks SqlClient.StoredProcedure#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlClient.StoredProcedure/CS/source.cs#1)]
  [!code-vb[DataWorks SqlClient.StoredProcedure#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.StoredProcedure/VB/source.vb#1)]  
   
 ### Troubleshooting Commands  
+
  The .NET Framework Data Provider for SQL Server adds performance counters to enable you to detect intermittent problems related to failed command executions. For more information see [Performance Counters](performance-counters.md).  
   
 ## See also

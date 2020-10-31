@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 71d7f28f-42ef-4eb7-a39e-512c40b79977
 ---
 # Key cannot be deleted because it has subkeys
+
 The key cannot be deleted because it has subkeys.  
   
 ## To correct this error  

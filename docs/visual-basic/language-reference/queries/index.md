@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
 ---
 # Queries (Visual Basic)
+
 Visual Basic enables you to create Language-Integrated Query (LINQ) expressions in your code.  
   
 ## In This Section  
+
  [Aggregate Clause](aggregate-clause.md)  
  Describes the `Aggregate` clause, which applies one or more aggregate functions to a collection.  
   

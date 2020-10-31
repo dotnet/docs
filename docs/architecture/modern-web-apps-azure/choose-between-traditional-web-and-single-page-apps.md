@@ -4,7 +4,7 @@ description: Learn how to choose between traditional web apps and single page ap
 author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/04/2019
+ms.date: 07/27/2020
 ---
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
@@ -26,7 +26,7 @@ Use a SPA when:
 
 - Your application must expose a rich user interface with many features.
 
-- Your team is familiar with JavaScript and/or TypeScript development.
+- Your team is familiar with JavaScript, TypeScript, or Blazor WebAssembly development.
 
 - Your application must already expose an API for other (internal or public) clients.
 
@@ -36,17 +36,17 @@ Improvements in user experience made possible by the SPA approach must be weighe
 
 ## Blazor
 
-ASP.NET Core 3.0 introduces a new model for building rich, interactive, and composable UI called Blazor. Blazor server-side allows developers to build UI with C# and Razor on the server and for the UI to be interactively connected to the browser in real-time using a persistent SignalR connection.
+ASP.NET Core includes a model for building rich, interactive, and composable user interfaces called Blazor. Blazor server-side allows developers to build UI with C# and Razor on the server and for the UI to be interactively connected to the browser in real-time using a persistent SignalR connection. Blazor WebAssembly introduces another option for Blazor apps, allowing them to run in the browser using WebAssembly. Because it's real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.
 
-Blazor WebAssembly introduces another option for Blazor apps, allowing them to run in the browser using WebAssembly. Because it's real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.
-
-Blazor provides a new, third option to consider when evaluating whether to build a purely server-rendered web application or a SPA. You can build rich, SPA-like client-side behaviors using Blazor, without the need for a significant JavaScript development. Blazor applications can call APIs to request data or perform server-side operations.
+Blazor provides a new, third option to consider when evaluating whether to build a purely server-rendered web application or a SPA. You can build rich, SPA-like client-side behaviors using Blazor, without the need for significant JavaScript development. Blazor applications can call APIs to request data or perform server-side operations. They can interoperate with JavaScript where necessary to take advantage of JavaScript libraries and frameworks.
 
 Consider building your web application with Blazor when:
 
 - Your application must expose a rich user interface
 
 - Your team is more comfortable with .NET development than JavaScript or TypeScript development
+
+If you have an existing web forms application you're considering migrating to .NET Core, you may wish to review the free e-book, [Blazor for Web Forms Developers](../blazor-for-web-forms-developers/index.md) to see whether it makes sense to consider migrating it to Blazor.
 
 For more information about Blazor, see [Get started with Blazor](https://blazor.net/docs/get-started.html).
 

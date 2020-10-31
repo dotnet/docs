@@ -8,11 +8,13 @@ helpviewer_keywords:
 ms.assetid: 4e689450-6d0c-46de-acfd-f961018ae5dd
 ---
 # How to combine delegates (Multicast Delegates) (C# Programming Guide)
+
 This example demonstrates how to create multicast delegates. A useful property of [delegate](../../language-reference/builtin-types/reference-types.md) objects is that multiple objects can be assigned to one delegate instance by using the `+` operator. The multicast delegate contains a list of the assigned delegates. When the multicast delegate is called, it invokes the delegates in the list, in order. Only delegates of the same type can be combined.  
   
  The `-` operator can be used to remove a component delegate from a multicast delegate.  
   
 ## Example  
+
  [!code-csharp[csProgGuideDelegates#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#11)]  
   
 ## See also

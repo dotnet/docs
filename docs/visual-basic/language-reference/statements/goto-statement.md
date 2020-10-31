@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
 ---
 # GoTo Statement
+
 Branches unconditionally to a specified line in a procedure.  
   
 ## Syntax  
@@ -24,10 +25,12 @@ GoTo line
 ```  
   
 ## Part  
+
  `line`  
  Required. Any line label.  
   
 ## Remarks  
+
  The `GoTo` statement can branch only to lines in the procedure in which it appears. The line must have a line label that `GoTo` can refer to. For more information, see [How to: Label Statements](../../programming-guide/program-structure/how-to-label-statements.md).  
   
 > [!NOTE]
@@ -36,6 +39,7 @@ GoTo line
  You cannot use a `GoTo` statement to branch from outside a `For`...`Next`, `For Each`...`Next`, `SyncLock`...`End SyncLock`, `Try`...`Catch`...`Finally`, `With`...`End With`, or `Using`...`End Using` construction to a label inside.  
   
 ## Branching and Try Constructions  
+
  Within a `Try`...`Catch`...`Finally` construction, the following rules apply to branching with the `GoTo` statement.  
   
 |Block or region|Branching in from outside|Branching out from inside|  
@@ -51,6 +55,7 @@ GoTo line
  ![Graphic diagram of branching in Try constructions](./media/goto-statement/try-construction-branching.gif)  
   
 ## Example  
+
  The following example uses the `GoTo` statement to branch to line labels in a procedure.  
   
  [!code-vb[VbVbalrStatements#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#31)]  

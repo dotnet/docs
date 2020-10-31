@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: ba35fb86-329a-4ceb-864b-045c07661482
 ---
 # Named arguments cannot match ParamArray parameters
+
 Parameter arrays must be passed by value.  
   
 ## To correct this error  

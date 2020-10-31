@@ -5,6 +5,7 @@ ms.assetid: aca22c2c-5ae7-42af-9bbd-15c2524692ce
 author: "BrucePerlerMS"
 ---
 # \<x509SecurityTokenHandlerRequirement>
+
 Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler> class or derived classes.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -35,6 +36,7 @@ Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509Se
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -48,6 +50,7 @@ Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509Se
 |certificateValidator|A custom type that derives from <xref:System.IdentityModel.Selectors.X509CertificateValidator>. If the `certificateValidationMode` attribute is "Custom", an instance of this type is used for issuer certificate validation.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  

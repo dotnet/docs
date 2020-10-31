@@ -13,3 +13,15 @@ Upgrade to .NET Framework 4.7.1.
 | Scope   |Minor|
 |Version|4.7|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

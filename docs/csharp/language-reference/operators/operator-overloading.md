@@ -61,4 +61,4 @@ For more information, see the following sections of the [C# language specificati
 - [User-defined conversion operators](user-defined-conversion-operators.md)
 - [Design guidelines - Operator overloads](../../../standard/design-guidelines/operator-overloads.md)
 - [Design guidelines - Equality operators](../../../standard/design-guidelines/equality-operators.md)
-- [Why are overloaded operators always static in C#?](https://docs.microsoft.com/archive/blogs/ericlippert/why-are-overloaded-operators-always-static-in-c)
+- [Why are overloaded operators always static in C#?](/archive/blogs/ericlippert/why-are-overloaded-operators-always-static-in-c)

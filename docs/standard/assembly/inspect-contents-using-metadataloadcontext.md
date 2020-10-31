@@ -35,4 +35,4 @@ The following code sample creates <xref:System.Reflection.MetadataLoadContext>, 
 
 ## Example
 
-For a complete code example, see the [Inspect assembly contents using MetadataLoadContext sample](https://docs.microsoft.com/samples/dotnet/samples/inspect-assembly-contents-using-metadataloadcontext/).
+For a complete code example, see the [Inspect assembly contents using MetadataLoadContext sample](/samples/dotnet/samples/inspect-assembly-contents-using-metadataloadcontext/).

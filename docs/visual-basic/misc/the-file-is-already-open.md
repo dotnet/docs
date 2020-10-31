@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: bbde8390-05cf-4ca4-9c24-073f656bd935
 ---
 # The file is already open
+
 An attempt has been made to open a file that is already open.  
   
 ## To correct this error  

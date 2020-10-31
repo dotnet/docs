@@ -7,7 +7,7 @@ ms.assetid: 79e4e6f7-0c00-4045-b0f0-e6a7c37c7788
 ---
 # Security Guidance and Best Practices
 
-The articles in this section present guidance for and items to consider when creating secure Windows Communication Foundation (WCF) applications. For more information about Windows Server AppFabric and security, see [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))  
+The articles in this section present guidance for and items to consider when creating secure Windows Communication Foundation (WCF) applications. For more information about Windows Server AppFabric and security, see [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))  
   
 ## In this Section  
  [Best Practices for Security](best-practices-for-security-in-wcf.md)  
@@ -22,4 +22,4 @@ The articles in this section present guidance for and items to consider when cre
 ## See also
 
 - [Basic WCF Programming](../basic-wcf-programming.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 60cb5fc7-7ba4-4ab5-9c24-480fa12ddcdc
 ---
 # How to: Convert an Object to Another Type in Visual Basic
+
 You convert an `Object` variable to another data type by using a conversion keyword such as [CType Function](../../../language-reference/functions/ctype-function.md).  
   
 ## Example  
+
  The following example converts an `Object` variable to an `Integer` and a `String`.  
   
 ```vb  
@@ -23,6 +25,7 @@ End Sub
  If you know that the contents of an `Object` variable are of a particular data type, it is better to convert the variable to that data type. If you continue to use the `Object` variable, you incur either *boxing* and *unboxing* (for a value type) or *late binding* (for a reference type). These operations all take extra execution time and make your performance slower.  
   
 ## Compile the code  
+
  This example requires:  
   
 - A reference to the <xref:System?displayProperty=nameWithType> namespace.  

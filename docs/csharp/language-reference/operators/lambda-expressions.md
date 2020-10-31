@@ -1,7 +1,7 @@
 ---
 title: "Lambda expressions - C# reference"
 description: Learn about lambda expressions. There are expression lambdas that have an expression as its body, or statement lambdas that have a statement block as its body.
-ms.date: 07/29/2019
+ms.date: 09/25/2020
 helpviewer_keywords: 
   - "lambda expressions [C#]"
   - "outer variables [C#]"
@@ -44,33 +44,17 @@ When you use method-based syntax to call the <xref:System.Linq.Enumerable.Select
   
 ## Expression lambdas
 
-A lambda expression with an expression on the right side of the `=>` operator is called an *expression lambda*. Expression lambdas are used extensively in the construction of [expression trees](../../programming-guide/concepts/expression-trees/index.md). An expression lambda returns the result of the expression and takes the following basic form:
+A lambda expression with an expression on the right side of the `=>` operator is called an *expression lambda*. An expression lambda returns the result of the expression and takes the following basic form:
 
 ```csharp
 (input-parameters) => expression
 ```
 
-The parentheses are optional only if the lambda has one input parameter; otherwise they are required.
-
-Specify zero input parameters with empty parentheses:  
-
-[!code-csharp[zero parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#ZeroParameters)]
-
-Two or more input parameters are separated by commas enclosed in parentheses:
-
-[!code-csharp[two parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#TwoParameters)]
-
-Sometimes it's impossible for the compiler to infer the input types. You can specify the types explicitly as shown in the following example:
-
-[!code-csharp[explicitly typed parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#ExplicitlyTypedParameters)]
-
-Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../../misc/cs0748.md) compiler error occurs.
-
-The body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside the context of the .NET common language runtime, such as in SQL Server, you should not use method calls in lambda expressions. The methods will have no meaning outside the context of the .NET common language runtime.
+The body of an expression lambda can consist of a method call. However, if you are creating [expression trees](../../programming-guide/concepts/expression-trees/index.md) that are evaluated outside the context of the .NET common language runtime, such as in SQL Server, you should not use method calls in lambda expressions. The methods will have no meaning outside the context of the .NET common language runtime.
 
 ## Statement lambdas
 
-A statement lambda resembles an expression lambda except that the statement(s) is enclosed in braces:
+A statement lambda resembles an expression lambda except that its statements are enclosed in braces:
 
 ```csharp  
 (input-parameters) => { <sequence-of-statements> }
@@ -78,10 +62,39 @@ A statement lambda resembles an expression lambda except that the statement(s) i
 
 The body of a statement lambda can consist of any number of statements; however, in practice there are typically no more than two or three.
 
-[!code-csharp-interactive[statement lambda](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#StatementLambda)]
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatementLambda":::
 
-Statement lambdas cannot be used to create expression trees.
-  
+You cannot use statement lambdas to create expression trees.
+
+## Input parameters of a lambda expression
+
+You enclose input parameters of a lambda expression in parentheses. Specify zero input parameters with empty parentheses:  
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetZeroParameters":::
+
+If a lambda expression has only one input parameter, parentheses are optional:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetOneParameter":::
+
+Two or more input parameters are separated by commas:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetTwoParameters":::
+
+Sometimes the compiler can't infer the types of input parameters. You can specify the types explicitly as shown in the following example:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetExplicitlyTypedParameters":::
+
+Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../../misc/cs0748.md) compiler error occurs.
+
+Beginning with C# 9.0, you can use [discards](../../discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDiscards":::
+
+Lambda discard parameters may be useful when you use a lambda expression to [provide an event handler](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+
+> [!NOTE]
+> For backwards compatibility, if only a single input parameter is named `_`, then, within a lambda expression, `_` is treated as the name of that parameter.
+
 ## Async lambdas
 
 You can easily create lambda expressions and statements that incorporate asynchronous processing by using the [async](../keywords/async.md) and [await](await.md) keywords. For example, the following Windows Forms example contains an event handler that calls and awaits an async method, `ExampleMethodAsync`.
@@ -212,14 +225,21 @@ The following rules apply to variable scope in lambda expressions:
 
 - A lambda expression cannot contain a [goto](../keywords/goto.md), [break](../keywords/break.md), or [continue](../keywords/continue.md) statement if the target of that jump statement is outside the lambda expression block. It's also an error to have a jump statement outside the lambda expression block if the target is inside the block.
 
+Beginning with C# 9.0, you can apply the `static` modifier to a lambda expression to prevent unintentional capture of local variables or instance state by the lambda:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatic":::
+
+A static lambda can't capture local variables or instance state from enclosing scopes, but may reference static members and constant definitions.
+
 ## C# language specification
 
 For more information, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
-## Featured book chapter
+For more information about features added in C# 9.0, see the following feature proposal notes:
 
-[Delegates, Events, and Lambda Expressions](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518994%28v=orm.10%29) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518995%28v=orm.10%29)  
-  
+- [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+- [Static anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
+
 ## See also
 
 - [C# reference](../index.md)

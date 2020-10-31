@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
 ---
 # \<proxy> Element (Network Settings)
+
 Defines a proxy server.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -31,6 +32,7 @@ Defines a proxy server.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -44,6 +46,7 @@ Defines a proxy server.
 |`usesystemdefault`|Specifies whether to use Internet Explorer proxy settings. If set to `True`, subsequent attributes will override Internet Explorer proxy settings. The default value is `Unspecified`.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -55,6 +58,7 @@ Defines a proxy server.
 ## Text Value  
   
 ## Remarks  
+
  The `proxy` element defines a proxy server for an application. If this element is missing from the configuration file, then the .NET Framework will use the proxy settings in Internet Explorer.  
   
  The value for the `proxyaddress` attribute should be a well-formed Uniform Resource Indicator (URI).  
@@ -66,9 +70,11 @@ Defines a proxy server.
  An exception is thrown if the `proxyaddress` attribute specifies an invalid default proxy. The <xref:System.Exception.InnerException%2A> property on the exception should have more information about the root cause of the error.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access.  
   
 ```xml  

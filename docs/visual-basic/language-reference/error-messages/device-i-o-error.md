@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 17d22252-f374-400b-9ddb-be5367dd7278
 ---
 # Device I/O error
+
 An input or output error occurred while your program was using a device such as a printer or disk drive.  
   
 ## To correct this error  

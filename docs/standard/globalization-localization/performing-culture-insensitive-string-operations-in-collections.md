@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "CaseInsensitiveComparer class, using"
   - "CollectionsUtil.CreateCaseInsensitiveHashtable method"
   - "culture-insensitive string operations, collections"
-  - "collections [.NET Framework], culture-insensitive string operations"
+  - "collections [.NET], culture-insensitive string operations"
   - "CaseInsensitiveHashCodeProvider class, using"
   - "ArrayList.Sort method"
   - "SortedList class, culture-insensitive string operations"

@@ -11,40 +11,40 @@ This section contains descriptions and links to downloadable network programming
 > All samples are available in the [.NET Framework SDK version 2.0 Samples Download](https://www.microsoft.com/download/confirmation.aspx?id=22181), which was released for the .NET Framework 2.0 and may be dated.
 
 ## In This Section  
- [Download Progress Indicator Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t8w6294a(v=vs.85))  
+ [Download Progress Indicator Technology Sample](/previous-versions/dotnet/netframework-3.0/t8w6294a(v=vs.85))  
  Shows how to display the progress of a file download.  
   
- [FTP Client Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/b7810t5c(v=vs.85))  
+ [FTP Client Technology Sample](/previous-versions/dotnet/netframework-3.0/b7810t5c(v=vs.85))  
  Shows how to upload and download files to and from an FTP server.  
   
- [HttpListener Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/y7cbb2y2(v=vs.85))  
+ [HttpListener Technology Sample](/previous-versions/dotnet/netframework-3.0/y7cbb2y2(v=vs.85))  
  Shows how to process HTTP requests from within an application.  
 
- [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90))
+ [HttpListener ASPX Host Application Sample](/previous-versions/visualstudio/visual-studio-2008/dd767375(v=vs.90))
  Demonstrates how to use the features of the <xref:System.Net.HttpListener?displayProperty=nameWithType> class to create an HTTP server that routes calls to a hosted ASP.NET application.
   
- [Mailer Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/whw7xbk2(v=vs.85))  
+ [Mailer Technology Sample](/previous-versions/dotnet/netframework-3.0/whw7xbk2(v=vs.85))  
  Shows how to send email messages from a client application.  
   
- [NetStat Tool Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ks32hs88(v=vs.85))  
+ [NetStat Tool Technology Sample](/previous-versions/dotnet/netframework-3.0/ks32hs88(v=vs.85))  
  Demonstrates the NCLNetStat network information tool.  
   
- [Network Information Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/2xatedhd(v=vs.85))  
+ [Network Information Technology Sample](/previous-versions/dotnet/netframework-3.0/2xatedhd(v=vs.85))  
  Shows how to monitor and display network information.  
   
- [Ping Client Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/5253acs7(v=vs.85))  
+ [Ping Client Technology Sample](/previous-versions/dotnet/netframework-3.0/5253acs7(v=vs.85))  
  Demonstrates a client application that can ping a remote host.  
   
- [WebClient Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/fxk992zc(v=vs.85))  
+ [WebClient Technology Sample](/previous-versions/dotnet/netframework-3.0/fxk992zc(v=vs.85))  
  Demonstrates how to perform common operations, such as the upload or download of files or data.  
   
- [Secure Streams Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms180980(v=vs.85))  
+ [Secure Streams Sample](/previous-versions/dotnet/netframework-3.0/ms180980(v=vs.85))  
  Shows how to use a secure stream to communicate between a client and a server.  
   
- [IPv6 Sockets Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms180981(v=vs.85))  
+ [IPv6 Sockets Sample](/previous-versions/dotnet/netframework-3.0/ms180981(v=vs.85))  
  Demonstrates how to use sockets when IPv6 is enabled.  
   
- [FTP Explorer Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms233623(v=vs.85))  
+ [FTP Explorer Technology Sample](/previous-versions/dotnet/netframework-3.0/ms233623(v=vs.85))  
  Demonstrates how to list the contents of an FTP server.  
 
 ## Reference  

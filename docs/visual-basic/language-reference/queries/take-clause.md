@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
 ---
 # Take Clause (Visual Basic)
+
 Returns a specified number of contiguous elements from the start of a collection.  
   
 ## Syntax  
@@ -19,10 +20,12 @@ Take count
 ```  
   
 ## Parts  
+
  `count`  
  Required. A value or an expression that evaluates to the number of elements of the sequence to return.  
   
 ## Remarks  
+
  The `Take` clause causes a query to include a specified number of contiguous elements from the start of a results list. The number of elements to include is specified by the `count` parameter.  
   
  You can use the `Take` clause with the `Skip` clause to return a range of data from any segment of a query. To do this, pass the index of the first element of the range to the `Skip` clause and the size of the range to the `Take` clause. In this case, the `Take` clause must be specified after the `Skip` clause.  
@@ -32,6 +35,7 @@ Take count
  You can use the `TakeWhile` clause to specify that only certain elements be returned, depending on a supplied condition.  
   
 ## Example  
+
  The following code example uses the `Take` clause together with the `Skip` clause to return data from a query in pages. The GetCustomers function uses the `Skip` clause to bypass the customers in the list until the supplied starting index value, and uses the `Take` clause to return a page of customers starting from that index value.  
   
  [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  

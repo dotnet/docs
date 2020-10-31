@@ -5,9 +5,11 @@ ms.topic: "reference"
 ms.assetid: 50855b30-d5fe-49a9-89d3-3f1bfd670958
 ---
 # Using Annotation in Queries
+
 Annotations allow you to arbitrarily tag tracking records with a value that can be configured after build time. For example, you might want several tracking records across several workflows to be tagged with "Mail Server" == "Mail Server1". This makes it easy to find all records with this tag when querying tracking records later.  
   
 ## Adding Annotations  
+
  An annotation can be added to a tracking query as shown in the following example.  
   
 ```xml  

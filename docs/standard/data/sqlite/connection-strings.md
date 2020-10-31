@@ -89,7 +89,7 @@ You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a stro
 
 A basic connection string with a shared cache for improved concurrency.
 
-```ConnectionString
+```connectionstring
 Data Source=Application.db;Cache=Shared
 ```
 
@@ -97,7 +97,7 @@ Data Source=Application.db;Cache=Shared
 
 An encrypted database.
 
-```ConnectionString
+```connectionstring
 Data Source=Encrypted.db;Password=MyEncryptionKey
 ```
 
@@ -105,7 +105,7 @@ Data Source=Encrypted.db;Password=MyEncryptionKey
 
 A read-only database that cannot be modified by the app.
 
-```ConnectionString
+```connectionstring
 Data Source=Reference.db;Mode=ReadOnly
 ```
 
@@ -113,7 +113,7 @@ Data Source=Reference.db;Mode=ReadOnly
 
 A private, in-memory database.
 
-```ConnectionString
+```connectionstring
 Data Source=:memory:
 ```
 
@@ -121,7 +121,7 @@ Data Source=:memory:
 
 A sharable, in-memory database identified by the name *Sharable*.
 
-```ConnectionString
+```connectionstring
 Data Source=Sharable;Mode=Memory;Cache=Shared
 ```
 

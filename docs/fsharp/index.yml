@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page # Required
   author: cartermp
   ms.author: phcart
-  ms.date: 11/25/2019
+  ms.date: 08/29/2020
 
 landingContent:
   - title: "Learn to program in F#"
@@ -77,3 +77,10 @@ landingContent:
             url: language-reference/functions/index.md
           - text: "F# types"
             url: language-reference/fsharp-types.md
+
+  - title: "F# Core Library reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "FSharp.Core API reference"
+            url: https://fsharp.github.io/fsharp-core-docs/

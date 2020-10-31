@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: eeab237c-4110-4abd-b601-bbb025c5d204
 ---
 # Can't perform requested operation (Visual Basic)
+
 An operation cannot be carried out because it would invalidate the current state of the project. For example, you may have tried to programmatically modify code that is running.  
   
 ## To correct this error  

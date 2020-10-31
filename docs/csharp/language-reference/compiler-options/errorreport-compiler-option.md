@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: bd0e7493-b79d-4369-9c3f-ba26ebdfbedf
 ---
 # -errorreport (C# Compiler Options)
+
 This option provides a convenient way to report a C# internal compiler error to Microsoft.
 
 > [!NOTE]
@@ -23,6 +24,7 @@ This option provides a convenient way to report a C# internal compiler error to 
 ```
 
 ## Arguments
+
  **none**  
  Reports about internal compiler errors will not be collected or sent to Microsoft.
 
@@ -36,6 +38,7 @@ This option provides a convenient way to report a C# internal compiler error to 
  Automatically sends reports of internal compiler errors to Microsoft. To enable this option, you must first agree to the Microsoft data collection policy. The first time that you specify **-errorreport:send** on a computer, a compiler message will refer you to a Web site that contains the Microsoft data collection policy.
 
 ## Remarks
+
  An internal compiler error (ICE) results when the compiler cannot process a source code file. When an ICE occurs, the compiler does not produce an output file or any useful diagnostic that you can use to fix your code.
 
  In previous releases, when you received an ICE, you were encouraged to contact Microsoft Product Support Services to report the problem. By using **-errorreport**, you can provide ICE information to the Visual C# team. Your error reports can help improve future compiler releases.

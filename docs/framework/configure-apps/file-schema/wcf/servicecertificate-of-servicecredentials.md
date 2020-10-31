@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 597ae6d5-4938-4950-9f5e-b2280e816182
 ---
 # \<serviceCertificate> of \<serviceCredentials>
+
 Specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
 |`x509FindType`|Defines the type of X.509 search to be executed. Valid values include the following:<br /><br /> -   FindByThumbprint<br />-   FindBySubjectName<br />-   FindBySubjectDistinguishedName<br />-   FindByIssuerName<br />-   FindByIssuerDistinguishedName<br />-   FindBySerialNumber<br />-   FindByTimeValid<br />-   FindByTimeNotYetValid<br />-   FindByTemplateName<br />-   FindByApplicationPolicy<br />-   FindByCertificatePolicy<br />-   FindByExtension<br />-   FindByKeyUsage<br />-   FindBySubjectKeyIdentifier<br /><br /> The type contained in the `findValue` attribute must satisfy the requirements of the specified X509FindType.<br /><br /> The default value is FindBySubjectDistinguishedName.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -45,6 +48,7 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
 |[\<serviceCredentials>](servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation related settings.|  
   
 ## Remarks  
+
  Use this element to specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode. If you are using a certificate that will be periodically renewed, then its thumbprint will change. In that case, use the subject name as the `x509FindType` because the certificate can be reissued with the same subject name.  
   
  For more information about using the element, see [How to: Specify Client Credential Values](../../../wcf/how-to-specify-client-credential-values.md).  

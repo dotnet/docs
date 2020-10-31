@@ -121,4 +121,4 @@ The following configuration can be used instead of the code to set up the servic
 - [Security Overview](security-overview.md)
 - [WS Transport Security](../samples/ws-transport-security.md)
 - [Transport Security Overview](transport-security-overview.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

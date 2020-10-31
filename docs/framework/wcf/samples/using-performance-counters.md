@@ -72,4 +72,4 @@ This sample demonstrates how to access Windows Communication Foundation (WCF) pe
   
 ## See also
 
-- [AppFabric Monitoring Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [AppFabric Monitoring Samples](/previous-versions/appfabric/ff383407(v=azure.10))

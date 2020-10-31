@@ -18,7 +18,7 @@ ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
 > [!NOTE]
 > This article applies to Windows.
 >
-> For information about ASP.NET Core, see [Overview of ASP.NET Core Security](https://docs.microsoft.com/aspnet/core/security/).
+> For information about ASP.NET Core, see [Overview of ASP.NET Core Security](/aspnet/core/security/).
 
 You can use the <xref:System.Security.Principal.GenericIdentity> class in conjunction with the <xref:System.Security.Principal.GenericPrincipal> class to create an authorization scheme that exists independent of a Windows domain.
 

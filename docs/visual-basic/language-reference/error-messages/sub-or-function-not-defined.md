@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 661fdb90-ee7d-40ce-b30b-5e7267bd957a
 ---
 # Sub or Function not defined (Visual Basic)
+
 A `Sub` or `Function` must be defined in order to be called. Possible causes of this error include:  
   
 - Misspelling the procedure name.  

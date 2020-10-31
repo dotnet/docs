@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
 ---
 # \<ThrowUnobservedTaskExceptions> Element
+
 Specifies whether unhandled task exceptions should terminate a running process.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -40,6 +42,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
 |`true`|Terminates the running process for an unhandled task exception.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -51,6 +54,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
 |||  
   
 ## Remarks  
+
  If an exception that is associated with a <xref:System.Threading.Tasks.Task> has not been observed, there is no <xref:System.Threading.Tasks.Task.Wait%2A> operation, the parent is not attached, and the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property was not read the task exception is considered to be unobserved.  
   
  In the .NET Framework 4, by default, if a <xref:System.Threading.Tasks.Task> that has an unobserved exception is garbage collected, the finalizer throws an exception and terminates the process. The termination of the process is determined by the timing of garbage collection and finalization.  
@@ -66,6 +70,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
 - By setting the registry DWORD value ThrowUnobservedTaskExceptions = 1 in the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework key.  
   
 ## Example  
+
  The following example shows how to enable the throwing of exceptions in tasks by using an application configuration file.  
   
 ```xml  
@@ -77,6 +82,7 @@ Specifies whether unhandled task exceptions should terminate a running process.
 ```  
   
 ## Example  
+
  The following example demonstrates how an unobserved exception is thrown from a task. The code must be run as a released program to work correctly.  
   
  [!code-csharp[ThrowUnobservedTaskExceptions#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/throwunobservedtaskexceptions/cs/program.cs#1)]

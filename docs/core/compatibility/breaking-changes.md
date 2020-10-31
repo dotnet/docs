@@ -37,6 +37,7 @@ Select the .NET Core technology area that you're interested in. Individual chang
 > - [Serialization](serialization.md)
 > - [Visual Basic](visualbasic.md)
 > - [Windows Forms](winforms.md)
+> - [WPF](wpf.md)
 
 ## GitHub issues and announcements
 

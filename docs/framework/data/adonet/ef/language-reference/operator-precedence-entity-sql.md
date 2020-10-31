@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e92e4ca5-2889-4266-9625-47f0eb01a948
 ---
 # Operator Precedence (Entity SQL)
+
 When an [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query has multiple operators, operator precedence determines the sequence in which the operations are performed. The order of execution can significantly affect the query result.  
   
  Operators have the precedence levels shown in the following table. An operator with a higher level is evaluated before an operator with a lower level.  

@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: dda4fa9f-a02c-400f-8b6a-d58834e13d7f
 ---
 # @ (C# Compiler Options)
+
 The @ option lets you specify a file that contains compiler options and source code files to compile.  
   
 ## Syntax  
@@ -19,10 +20,12 @@ The @ option lets you specify a file that contains compiler options and source c
 ```  
   
 ## Arguments  
+
  `response_file`  
  A file that lists compiler options or source code files to compile.  
   
 ## Remarks  
+
  The compiler options and source code files will be processed by the compiler just as if they had been specified on the command line.  
   
  To specify more than one response file in a compilation, specify multiple response file options. For example:  
@@ -42,6 +45,7 @@ The @ option lets you specify a file that contains compiler options and source c
  This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
   
 ## Example  
+
  The following are a few lines from a sample response file:  
   
 ```console  

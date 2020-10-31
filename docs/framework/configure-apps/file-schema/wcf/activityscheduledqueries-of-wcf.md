@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e351329f-9676-4f11-9b19-f4bac82f36fc
 ---
 # \<activityScheduledQueries> of WCF
+
 Represents a collection of queries that are used to track an activity scheduled for execution by a parent activity. The query is necessary for a tracking participant to subscribe to activity scheduled records.  
   
 For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  

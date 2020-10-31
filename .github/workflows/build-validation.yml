@@ -9,19 +9,19 @@ on:
       - "**.cs"
       - "**.vb"
       - "**.fs"
-      - "**.cpp"
-      - "**.h"
       - "**.xaml"
       - "**.razor"
       - "**.cshtml"
       - "**.vbhtml"
-      - "**.*proj"
+      - "**.csproj"
+      - "**.vbproj"
+      - "**.fsproj"
       - "**global.json"
       - "**snippets.5000.json"
     branches: [ master ]
 
 env:
-  DOTNET_INSTALLER_CHANNEL: 'release/5.0.1xx-preview7'
+  DOTNET_INSTALLER_CHANNEL: 'release/5.0.1xx'
   DOTNET_DO_INSTALL: 'true'
   EnableNuGetPackageRestore: 'True'
 
@@ -35,14 +35,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
 
     # Get the latest preview SDK (or sdk not installed by the runner)
     - name: Setup .NET Core SDK Preview
       if: ${{ env.DOTNET_DO_INSTALL == 'true' }}
       run: |
         echo "Downloading dotnet-install.ps1"
-        Invoke-WebRequest https://dot.net/v1/dotnet-install.ps1 -OutFile dotnet-install.ps1
+        Invoke-WebRequest https://raw.githubusercontent.com/dotnet/install-scripts/master/src/dotnet-install.ps1 -OutFile dotnet-install.ps1
         echo "Installing dotnet version ${{ env.DOTNET_INSTALLER_CHANNEL }}"
         .\dotnet-install.ps1 -InstallDir "c:\program files\dotnet" -Channel "${{ env.DOTNET_INSTALLER_CHANNEL }}"
       
@@ -61,7 +61,7 @@ jobs:
         
     # Update build output json file
     - name: Upload build results
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@3446296876d12d4e3a0f3145a3c87e67bf0a16b5 #@v1
       with:
         name: build
         path: ./output.json

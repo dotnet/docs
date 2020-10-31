@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 81a31acd-e0f1-4bca-9a12-fa1ad5752374
 ---
 # Return Or Skip Elements in a Sequence
+
 Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number of elements in a sequence and then skip over the remainder.  
   
  Use the <xref:System.Linq.Queryable.Skip%2A> operator to skip over a given number of elements in a sequence and then return the remainder.  
@@ -21,18 +22,21 @@ Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number o
 - The generated query can be much more complex than the query generated for the base query on which <xref:System.Linq.Queryable.Skip%2A> is applied. This complexity can cause decrease in performance or even a time-out.  
   
 ## Example  
+
  The following example uses `Take` to select the first five `Employees` hired. Note that the collection is first sorted by `HireDate`.  
   
  [!code-csharp[DLinqQueryExamples#16](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#16)]
  [!code-vb[DLinqQueryExamples#16](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#16)]  
   
 ## Example  
+
  The following example uses <xref:System.Linq.Queryable.Skip%2A> to select all except the 10 most expensive `Products`.  
   
  [!code-csharp[DLinqQueryExamples#17](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#17)]
  [!code-vb[DLinqQueryExamples#17](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#17)]  
   
 ## Example  
+
  The following example combines the <xref:System.Linq.Queryable.Skip%2A> and <xref:System.Linq.Queryable.Take%2A> methods to skip the first 50 records and then return the next 10.  
   
  [!code-csharp[DLinqQueryExamples#18](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#18)]

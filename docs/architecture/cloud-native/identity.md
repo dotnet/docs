@@ -22,7 +22,7 @@ Typically, the STS is only responsible for authenticating the principal. Determi
 
 ## References
 
-- [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/)
+- [Microsoft identity platform](/azure/active-directory/develop/)
 
 >[!div class="step-by-step"]
 >[Previous](azure-monitor.md)

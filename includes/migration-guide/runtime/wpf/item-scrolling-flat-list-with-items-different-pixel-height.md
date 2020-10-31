@@ -12,8 +12,16 @@ If the iteration occurs in .NET Framework 4.6.1 but not in earlier releases - th
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.6.1|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Windows.Controls.VirtualizingStackPanel?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.VirtualizingStackPanel?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Windows.Controls.VirtualizingStackPanel`
+
+-->

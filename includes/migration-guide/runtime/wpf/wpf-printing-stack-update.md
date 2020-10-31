@@ -13,3 +13,15 @@ To use the old stack in Windows 10 Creators Update, set the <code>UseXpsOMPrinti
 | Scope   |Edge|
 |Version|4.7|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

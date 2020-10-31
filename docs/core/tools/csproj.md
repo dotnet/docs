@@ -364,9 +364,11 @@ A semicolon-delimited list of tags that designates the package.
 Determines the output path in which the packed package will be dropped. Default is `$(OutputPath)`.
 
 ### IncludeSymbols
+
 This Boolean value indicates whether the package should create an additional symbols package when the project is packed. The symbols package's format is controlled by the `SymbolPackageFormat` property.
 
 ### SymbolPackageFormat
+
 Specifies the format of the symbols package. If "symbols.nupkg", a legacy symbols package will be created with a *.symbols.nupkg* extension containing PDBs, DLLs, and other output files. If "snupkg", a snupkg symbol package will be created containing the portable PDBs. Default is "symbols.nupkg".
 
 ### IncludeSource
@@ -386,9 +388,11 @@ Specifies the URL for the repository where the source code for the package resid
 Specifies the type of the repository. Default is "git".
 
 ### RepositoryBranch
+
 Specifies the name of the source branch in the repository. When the project is packaged in a NuGet package, it's added to the package metadata.
 
 ### RepositoryCommit
+
 Optional repository commit or changeset to indicate which source the package was built against. `RepositoryUrl` must also be specified for this property to be included. When the project is packaged in a NuGet package, this commit or changeset is added to the package metadata.
 
 ### NoPackageAnalysis

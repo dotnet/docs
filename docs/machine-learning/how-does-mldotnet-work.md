@@ -258,7 +258,7 @@ All algorithms also create new columns after they have performed a prediction. T
 
 You can find out more about output columns of different machine learning tasks in the [Machine Learning Tasks](resources/tasks.md) guide.
 
-An important property of DataView objects is that they are evaluated **lazily**. Data views are only loaded and operated on during model training and evaluation, and data prediction. While you are writing and testing your ML.NET application, you can use the Visual Studio debugger to take a peek at any data view object by calling the [Preview](xref:Microsoft.ML.DebuggerExtensions.Preview*) method.
+An important property of DataView objects is that they are evaluated **lazily**. Data views are only loaded and operated on during model training and evaluation, and data prediction. While you are writing and testing your ML.NET application, you can use the Visual Studio debugger to take a peek at any data view object by calling the [Preview](xref:Microsoft.ML.DebuggerExtensions.Preview%2A) method.
 
 ```csharp
     var debug = testPriceDataView.Preview();
@@ -280,4 +280,4 @@ In real-life applications, your model training and evaluation code will be separ
 
 * Learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
 
-* If you're super keen, you can dive straight into the [API Reference documentation](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet).
+* If you're super keen, you can dive straight into the [API Reference documentation](../../api/index.md?view=ml-dotnet).

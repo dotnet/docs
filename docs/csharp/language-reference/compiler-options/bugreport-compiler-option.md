@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: f39665e3-4f6f-4357-88a2-3274c7bec0c1
 ---
 # -bugreport (C# Compiler Options)
+
 Specifies that debug information should be placed in a file for later analysis.  
   
 ## Syntax  
@@ -20,10 +21,12 @@ Specifies that debug information should be placed in a file for later analysis.
 ```  
   
 ## Arguments  
+
  `file`  
  The name of the file that you want to contain your bug report.  
   
 ## Remarks  
+
  The **-bugreport** option specifies that the following information should be placed in `file`:  
   
 - A copy of all source code files in the compilation.  

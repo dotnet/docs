@@ -8,9 +8,11 @@ dev_langs:
 ms.assetid: 0b121b71-78f8-4ae2-9aa1-0b2e15778e57
 ---
 # Performance Counters in ADO.NET
+
 ADO.NET 2.0 introduced expanded support for performance counters that includes support for both <xref:System.Data.SqlClient> and <xref:System.Data.OracleClient>. The <xref:System.Data.SqlClient> performance counters available in previous versions of ADO.NET have been deprecated and replaced with the new performance counters discussed in this topic. You can use ADO.NET performance counters to monitor the status of your application and the connection resources that it uses. Performance counters can be monitored by using Windows Performance Monitor or can be accessed programmatically using the <xref:System.Diagnostics.PerformanceCounter> class in the <xref:System.Diagnostics> namespace.  
   
 ## Available Performance Counters  
+
  Currently there are 14 different performance counters available for <xref:System.Data.SqlClient> and <xref:System.Data.OracleClient> as described in the following table. Note that the names for the individual counters are not localized across regional versions of the Microsoft .NET Framework.  
   
 |Performance counter|Description|  
@@ -31,10 +33,13 @@ ADO.NET 2.0 introduced expanded support for performance counters that includes s
 |`SoftDisconnectsPerSecond`|The number of active connections that are being returned to the connection pool. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#ActivatingOffByDefault).|  
   
 ### Connection Pool Groups and Connection Pools  
+
  When using Windows Authentication (integrated security), you must monitor both the `NumberOfActiveConnectionPoolGroups` and `NumberOfActiveConnectionPools` performance counters. The reason is that connection pool groups map to unique connection strings. When integrated security is used, connection pools map to connection strings and additionally create separate pools for individual Windows identities. For example, if Fred and Julie, each within the same AppDomain, both use the connection string `"Data Source=MySqlServer;Integrated Security=true"`, a connection pool group is created for the connection string, and two additional pools are created, one for Fred and one for Julie. If John and Martha use a connection string with an identical SQL Server login, `"Data Source=MySqlServer;User Id=lowPrivUser;Password=Strong?Password"`, then only a single pool is created for the **lowPrivUser** identity.  
   
 <a name="ActivatingOffByDefault"></a>
+
 ### Activating Off-By-Default Counters  
+
  The performance counters `NumberOfFreeConnections`, `NumberOfActiveConnections`, `SoftDisconnectsPerSecond`, and `SoftConnectsPerSecond` are off by default. Add the following information to the application's configuration file to enable them:  
   
 ```xml  
@@ -47,6 +52,7 @@ ADO.NET 2.0 introduced expanded support for performance counters that includes s
 ```  
   
 ## Retrieving Performance Counter Values  
+
  The following console application shows how to retrieve performance counter values in your application. Connections must be open and active for information to be returned for all of the ADO.NET performance counters.  
   
 > [!NOTE]
@@ -393,7 +399,7 @@ class Program
 
 - [Connecting to a Data Source](connecting-to-a-data-source.md)
 - [OLE DB, ODBC, and Oracle Connection Pooling](ole-db-odbc-and-oracle-connection-pooling.md)
-- [Performance Counters for ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/fxk122b4(v=vs.100))
+- [Performance Counters for ASP.NET](/previous-versions/aspnet/fxk122b4(v=vs.100))
 - [Runtime Profiling](../../debug-trace-profile/runtime-profiling.md)
-- [Introduction to Monitoring Performance Thresholds](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bd20x32d(v=vs.90))
+- [Introduction to Monitoring Performance Thresholds](/previous-versions/visualstudio/visual-studio-2008/bd20x32d(v=vs.90))
 - [ADO.NET Overview](ado-net-overview.md)

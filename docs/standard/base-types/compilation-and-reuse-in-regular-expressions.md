@@ -5,8 +5,8 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "parsing text with regular expressions, compilation"
   - "searching with regular expressions, compilation"
-  - ".NET Framework regular expressions, engines"
-  - ".NET Framework regular expressions, compilation"
+  - ".NET regular expressions, engines"
+  - ".NET regular expressions, compilation"
   - "regular expressions, compilation"
   - "compilation, regular expressions"
   - "pattern-matching with regular expressions, compilation"

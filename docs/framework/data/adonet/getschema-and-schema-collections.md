@@ -7,14 +7,17 @@ dev_langs:
 ms.assetid: 7ab93b89-1221-427c-84ad-04803b3c64b4
 ---
 # GetSchema and Schema Collections
+
 The **Connection** classes in each of the .NET Framework managed providers implement a **GetSchema** method which is used to retrieve schema information about the database that is currently connected, and the schema information returned from the **GetSchema** method comes in the form of a <xref:System.Data.DataTable>. The **GetSchema** method is an overloaded method that provides optional parameters for specifying the schema collection to return, and restricting the amount of information returned.  
   
 ## Specifying the Schema Collections  
+
  The first optional parameter of the **GetSchema** method is the collection name which is specified as a string. There are two types of schema collections: common schema collections that are common to all providers, and specific schema collections which are specific to each provider.  
   
  You can query a .NET Framework managed provider to determine the list of supported schema collections by calling the **GetSchema** method with no arguments, or with the schema collection name "MetaDataCollections". This will return a <xref:System.Data.DataTable> with a list of the supported schema collections, the number of restrictions that they each support, and the number of identifier parts that they use.  
   
 ### Retrieving Schema Collections Example  
+
  The following examples demonstrate how to use the <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> method of the .NET Framework Data Provider for the SQL Server <xref:System.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the **AdventureWorks** sample database:  
   
 ```vb  

@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 0701f3b6-635b-468e-b908-867df00dd5db
 ---
 # TextFieldParser does not support delimiters that contain endline characters
+
 A delimiter that contains an endline character has been supplied, but the `TextFieldParser` does not support delimiters that contain endline characters.  
   
 ## To correct this error  

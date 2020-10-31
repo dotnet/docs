@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 07eef055-8f6c-414d-850e-d323ff946cd0
 ---
 # Customizing Insert, Update, and Delete Operations
+
 By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] generates dynamic SQL to implement insert, read, update, and delete operations. In practice, however, you typically customize your application to suit your business needs.  
   
 > [!NOTE]
@@ -12,6 +13,7 @@ By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 
  This section of topics describes the techniques that [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for customizing insert, read, update, and delete operations in your application.  
   
 ## In This Section  
+
  [Customizing Operations: Overview](customizing-operations-overview.md)  
  Describes the various techniques [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides for customizing insert, read, update, and delete operations.  
   

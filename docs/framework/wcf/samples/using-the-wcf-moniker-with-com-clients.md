@@ -199,7 +199,7 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 2. Run ComCalcClient.vbs from \client, from under the language-specific folder. Client activity is displayed in message box windows.  
   
-3. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+3. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computers  
   
@@ -229,4 +229,4 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 #### To clean up after the sample  
   
-- For security purposes, remove the virtual directory definition and permissions granted in the setup steps when you are finished with the samples.  
+- For security purposes, remove the virtual directory definition and permissions granted in the setup steps when you are finished with the samples.

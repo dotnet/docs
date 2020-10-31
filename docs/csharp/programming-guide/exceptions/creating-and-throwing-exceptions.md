@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 6bbba495-a115-4c6d-90cc-1f4d7b5f39e2
 ---
 # Creating and Throwing Exceptions (C# Programming Guide)
+
 Exceptions are used to indicate that an error has occurred while running the program. Exception objects that describe an error are created and then *thrown* with the [throw](../../language-reference/keywords/throw.md) keyword. The runtime then searches for the most compatible exception handler.  
   
  Programmers should throw exceptions when one or more of the following conditions are true:  
@@ -39,6 +40,7 @@ Exceptions are used to indicate that an error has occurred while running the pro
  Public and protected methods should throw exceptions whenever they cannot complete their intended functions. The exception class that is thrown should be the most specific exception available that fits the error conditions. These exceptions should be documented as part of the class functionality, and derived classes or updates to the original class should retain the same behavior for backward compatibility.  
   
 ## Things to Avoid When Throwing Exceptions  
+
  The following list identifies practices to avoid when throwing exceptions:  
   
 - Exceptions should not be used to change the flow of a program as part of ordinary execution. Exceptions should only be used to report and handle error conditions.  
@@ -50,6 +52,7 @@ Exceptions are used to indicate that an error has occurred while running the pro
 - Do not create exceptions that can be thrown in debug mode but not release mode. To identify run-time errors during the development phase, use Debug Assert instead.  
   
 ## Defining Exception Classes  
+
  Programs can throw a predefined exception class in the <xref:System> namespace (except where previously noted), or create their own exception classes by deriving from <xref:System.Exception>. The derived classes should define at least four constructors: one parameterless constructor, one that sets the message property, and one that sets both the <xref:System.Exception.Message%2A> and <xref:System.Exception.InnerException%2A> properties. The fourth constructor is used to serialize the exception. New exception classes should be serializable. For example:  
   
  [!code-csharp[csProgGuideExceptions#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExceptions/CS/Exceptions.cs#15)]  

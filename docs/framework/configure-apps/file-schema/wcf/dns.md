@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 81819dae-4825-43b7-bccd-f16d2d3d2f06
 ---
 # \<dns>
+
 Specifies the expected identity of the server. This identity is valid for X509 Certificate authentication mode if the server’s certificate contains a DNS with the same value. It is also valid for Windows authentication mode if the SPN has the same value.  
   
 For more information about setting the element value, see [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md).  
@@ -22,6 +23,7 @@ For more information about setting the element value, see [Service Identity and 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -31,6 +33,7 @@ For more information about setting the element value, see [Service Identity and 
 |value|The DNS of the certificate. DNS is an industry-standard protocol used to locate computers on an IP-based network. Users can remember display names, such as `https://go.microsoft.com/fwlink/?prd=10929` or `https://go.microsoft.com/fwlink/?LinkID=96165`, easier than number-based addresses, such as 207.46.131.137.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -40,6 +43,7 @@ For more information about setting the element value, see [Service Identity and 
 |[\<identity>](identity.md)|Specifies the identity of the service to be authenticated by the client.|  
   
 ## Example  
+
  The following configuration code specifies the DNS of an X.509 certificate that is used to authenticate a server.  
   
 ```xml  

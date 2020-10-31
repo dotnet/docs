@@ -16,4 +16,20 @@ This bug can be avoided by upgrading to .NET Framework 4.5.1. Alternatively, tes
 
 #### Affected APIs
 
--<xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType></li><li><xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=nameWithType></li><li><xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)?displayProperty=nameWithType></li><li><xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String,System.Object[])?displayProperty=nameWithType></li><li><xref:System.Xml.Serialization.XmlSerializer.%23ctor(System.Type)></li></ul>|
+- <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String,System.Object[])?displayProperty=nameWithType>
+- <xref:System.Xml.Serialization.XmlSerializer.%23ctor(System.Type)>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Diagnostics.Debug.Assert(System.Boolean)`
+- `M:System.Diagnostics.Debug.Assert(System.Boolean,System.String)`
+- `M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)`
+- `M:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String,System.Object[])`
+- `M:System.Xml.Serialization.XmlSerializer.#ctor(System.Type)`
+
+-->

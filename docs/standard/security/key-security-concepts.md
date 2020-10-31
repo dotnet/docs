@@ -17,7 +17,7 @@ ms.assetid: 3cfced4f-ea02-4e66-ae98-d69286363e98
 > [!NOTE]
 > This article applies to Windows.
 >
-> For information about ASP.NET Core, see [Overview of ASP.NET Core Security](https://docs.microsoft.com/aspnet/core/security/).
+> For information about ASP.NET Core, see [Overview of ASP.NET Core Security](/aspnet/core/security/).
 
 .NET offers role-based security to help address security concerns about mobile code and to provide support that enables components to determine what users are authorized to do.  
   

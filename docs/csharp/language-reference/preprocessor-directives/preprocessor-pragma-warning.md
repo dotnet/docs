@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
 ---
 # #pragma warning (C# Reference)
+
 `#pragma warning` can enable or disable certain warnings.  
   
 ## Syntax  
@@ -19,6 +20,7 @@ ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
 ```  
   
 ## Parameters  
+
  `warning-list`  
  A comma-separated list of warning numbers. The "CS" prefix is optional.  
   

@@ -15,7 +15,6 @@ helpviewer_keywords:
   - "ServiceProcessInstaller class, service application code model"
   - "Windows Service applications, states"
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
-author: "ghogen"
 ---
 # Service Application Programming Architecture
 Windows Service applications are based on a class that inherits from the <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> class. You override methods from this class and define functionality for them to determine how your service behaves.  

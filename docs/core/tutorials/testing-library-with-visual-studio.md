@@ -13,7 +13,7 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 ## Prerequisites
 
-- This tutorial works with the solution that you create in [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md).
+- This tutorial works with the solution that you create in [Create a .NET Standard library using Visual Studio](library-with-visual-studio.md).
 
 ## Create a unit test project
 
@@ -21,7 +21,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Start Visual Studio.
 
-1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md).
+1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library using Visual Studio](library-with-visual-studio.md).
 
 1. Add a new unit test project named "StringLibraryTest" to the solution.
 
@@ -181,6 +181,12 @@ To test the Release build:
 
 1. Run the unit tests by choosing **Test Run** > **All Tests** from the menu bar. The tests pass.
 
+## Debug tests
+
+If you're using Visual Studio as your IDE, you can use the same process shown in [Tutorial: Debug a .NET Core console application using Visual Studio](debugging-with-visual-studio.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, right-click the **StringLibraryTests** project, and select **Debug Tests** from the context menu.
+
+Visual Studio starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
+
 ## Additional resources
 
 * [Unit test basics - Visual Studio](/visualstudio/test/unit-test-basics)
@@ -201,4 +207,4 @@ If you publish a library as a NuGet package, others can install and use it. To l
 A library doesn't have to be distributed as a package. It can be bundled with a console app that uses it. To learn how to publish a console app, see the earlier tutorial in this series:
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application with Visual Studio](publishing-with-visual-studio.md)
+> [Publish a .NET Core console application using Visual Studio](publishing-with-visual-studio.md)

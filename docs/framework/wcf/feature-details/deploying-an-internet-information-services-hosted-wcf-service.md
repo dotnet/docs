@@ -32,13 +32,13 @@ The installation process for .NET Framework automatically registers WCF with IIS
 
 - Windows 7 and Windows Server 2003: Use the [ServiceModel Registration Tool (ServiceModelReg.exe)](../servicemodelreg-exe.md) tool to register WCF with IIS. To use this tool, type **ServiceModelReg.exe /i /x** in the [Developer Command Prompt for Visual Studio](../../tools/developer-command-prompt-for-vs.md).
 
-- Windows 7: Finally, you must verify that ASP.NET is configured to use the .NET Framework version 4 or later. You do this by running the ASPNET_Regiis tool with the `–i` option. For more information, see [ASP.NET IIS Registration Tool](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
+- Windows 7: Finally, you must verify that ASP.NET is configured to use the .NET Framework version 4 or later. You do this by running the ASPNET_Regiis tool with the `–i` option. For more information, see [ASP.NET IIS Registration Tool](/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
 
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application
 
 IIS-hosted WCF services must reside inside of an IIS application. You can create a new IIS application to host WCF services exclusively. Alternatively, you can deploy an WCF service into an existing application that is already hosting ASP.NET 2.0 content (such as .aspx pages and ASP.NET Web services [ASMX]). For more information about these options, see the "Hosting WCF Side-by-Side with ASP.NET" and "Hosting WCF Services in ASP.NET Compatibility Mode" sections in [WCF Services and ASP.NET](wcf-services-and-aspnet.md).
 
-Note that IIS 6.0 and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. For more information about this property, see the [PeriodicRestartTime](https://docs.microsoft.com/previous-versions/iis/6.0-sdk/ms525914(v=vs.90)).
+Note that IIS 6.0 and later versions periodically restart an isolated object-oriented programming application. The default value is 1740 minutes. The maximum value supported is 71,582 minutes. This restart can be disabled. For more information about this property, see the [PeriodicRestartTime](/previous-versions/iis/6.0-sdk/ms525914(v=vs.90)).
 
 ## Create an .svc File for the WCF Service
 
@@ -66,7 +66,7 @@ WCF services hosted in IIS use the same dynamic compilation model as ASP.NET 2.0
 
 - As uncompiled code placed directly in the .svc file. Implementation code can also be located inline in the service’s .svc file, after the \@ServiceHost directive. Any changes to inline code cause the application to be recycled and recompiled when the next request is received.
 
-For more information about the ASP.NET 2.0 compilation model, see [ASP.NET Compilation Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178466(v=vs.100)).
+For more information about the ASP.NET 2.0 compilation model, see [ASP.NET Compilation Overview](/previous-versions/aspnet/ms178466(v=vs.100)).
 
 ## Configure the WCF Service
 
@@ -108,4 +108,4 @@ For example, a WCF endpoint configured to use HTTP digest authentication must re
 
 - [Hosting in Internet Information Services](hosting-in-internet-information-services.md)
 - [Internet Information Services Hosting Best Practices](internet-information-services-hosting-best-practices.md)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

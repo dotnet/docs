@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 514cde76-f981-474e-8b40-9493619f899c
 ---
 # How to explicitly implement interface members (C# Programming Guide)
+
 This example declares an [interface](../../language-reference/keywords/interface.md), `IDimensions`, and a class, `Box`, which explicitly implements the interface members `GetLength` and `GetWidth`. The members are accessed through the interface instance `dimensions`.  
   
 ## Example  
+
  [!code-csharp[csProgGuideInheritance#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#8)]  
   
 ## Robust Programming  

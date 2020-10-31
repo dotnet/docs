@@ -20,6 +20,7 @@ helpviewer_keywords:
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
 ---
 # Event Statement
+
 Declares a user-defined event.  
   
 ## Syntax  
@@ -74,6 +75,7 @@ End Event
 |`End Event`|Required. Terminates the `Event` block.|  
   
 ## Remarks  
+
  Once the event has been declared, use the `RaiseEvent` statement to raise the event. A typical event might be declared and raised as shown in the following fragments:  
   
  [!code-vb[VbVbalrEvents#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#13)]  
@@ -88,6 +90,7 @@ End Event
  In most circumstances, you can use the first syntax in the Syntax section of this topic for declaring events. However, some scenarios require that you have more control over the detailed behavior of the event. The last syntax in the Syntax section of this topic, which uses the `Custom` keyword, provides that control by enabling you to define custom events. In a custom event, you specify exactly what occurs when code adds or removes an event handler to or from the event, or when code raises the event. For examples, see [How to: Declare Custom Events To Conserve Memory](../../programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md) and [How to: Declare Custom Events To Avoid Blocking](../../programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md).  
   
 ## Example  
+
  The following example uses events to count down seconds from 10 to 0. The code illustrates several of the event-related methods, properties, and statements. This includes the `RaiseEvent` statement.  
   
  The class that raises an event is the event source, and the methods that process the event are the event handlers. An event source can have multiple handlers for the events it generates. When the class raises the event, that event is raised on every class that has elected to handle events for that instance of the object.  

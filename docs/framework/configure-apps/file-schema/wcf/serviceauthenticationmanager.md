@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5d69e64f-f325-4d55-8e2d-0fb30f222dda
 ---
 # \<serviceAuthenticationManager>
+
 Provides a workflow configuration element that establishes at the service level the validity of a transmission, message, or originator.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Provides a workflow configuration element that establishes at the service level 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ Provides a workflow configuration element that establishes at the service level 
 |serviceAuthenticationManagerType|A string that specifies the type of the authentication policy for the current behavior.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

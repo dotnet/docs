@@ -51,4 +51,4 @@ ms.assetid: 76b0949a-5b23-4cfc-84cc-154f713e2e12
 - [Implementing the UI Automation Selection Control Pattern](implementing-the-ui-automation-selection-control-pattern.md)
 - [UI Automation Tree Overview](ui-automation-tree-overview.md)
 - [Use Caching in UI Automation](use-caching-in-ui-automation.md)
-- [Fragment Provider Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771502(v=vs.90))
+- [Fragment Provider Sample](/previous-versions/dotnet/netframework-3.5/ms771502(v=vs.90))

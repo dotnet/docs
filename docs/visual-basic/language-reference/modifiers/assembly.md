@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 925e7471-3bdf-4b51-bb93-cbcfc6efc52f
 ---
 # Assembly (Visual Basic)
+
 Specifies that an attribute at the beginning of a source file applies to the entire assembly.  
   
 ## Remarks  
+
  Many attributes pertain to an individual programming element, such as a class or property. You apply such an attribute by attaching the attribute block, within angle brackets (`< >`), directly to the declaration statement.  
   
  If an attribute pertains not only to the following element but to the entire assembly, you place the attribute block at the beginning of the source file and identify the attribute with the `Assembly` keyword. If it applies to the current assembly module, you use the [Module](module-keyword.md) keyword.  

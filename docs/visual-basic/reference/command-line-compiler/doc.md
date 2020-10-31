@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 5fc32ec9-a149-4648-994c-a8d0cccd0a65
 ---
 # -doc
+
 Processes documentation comments to an XML file.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ or
 |`file`|Required if `-doc:` is used. Specifies the output XML file, which is populated with the comments from the source-code files of the compilation. If the file name contains a space, surround the name with quotation marks (" ").|  
   
 ## Remarks  
+
  The `-doc` option controls whether the compiler generates an XML file containing the documentation comments. If you use the `-doc:file` syntax, the `file` parameter specifies the name of the XML file. If you use `-doc` or `-doc+`, the compiler takes the XML file name from the executable file or library that the compiler is creating. If you use `-doc-` or do not specify the `-doc` option, the compiler does not create an XML file.  
   
  In source-code files, documentation comments can precede the following definitions:  
@@ -49,6 +51,7 @@ or
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Set the value in the **Generate XML documentation file** box.|  
   
 ## Example  
+
  See [Documenting Your Code with XML](../../programming-guide/program-structure/documenting-your-code-with-xml.md) for a sample.  
   
 ## See also

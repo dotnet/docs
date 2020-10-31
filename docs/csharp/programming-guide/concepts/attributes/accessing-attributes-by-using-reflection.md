@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: dce3a696-4ceb-489a-b5e4-322a83052f18
 ---
 # Accessing Attributes by Using Reflection (C#)
+
 The fact that you can define custom attributes and place them in your source code would be of little value without some way of retrieving that information and acting on it. By using reflection, you can retrieve the information that was defined with custom attributes. The key method is `GetCustomAttributes`, which returns an array of objects that are the run-time equivalents of the source code attributes. This method has several overloaded versions. For more information, see <xref:System.Attribute>.  
   
  An attribute specification such as:  
@@ -24,6 +25,7 @@ anonymousAuthorObject.version = 1.1;
  However, the code is not executed until `SampleClass` is queried for attributes. Calling `GetCustomAttributes` on `SampleClass` causes an `Author` object to be constructed and initialized as above. If the class has other attributes, other attribute objects are constructed similarly. `GetCustomAttributes` then returns the `Author` object and any other attribute objects in an array. You can then iterate over this array, determine what attributes were applied based on the type of each array element, and extract information from the attribute objects.  
   
 ## Example  
+
  Here is a complete example. A custom attribute is defined, applied to several entities, and retrieved via reflection.  
   
 ```csharp  

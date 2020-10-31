@@ -8,9 +8,11 @@ dev_langs:
 ms.assetid: 43ae5dd3-50f5-43a8-8d01-e37a61664176
 ---
 # Snapshot Isolation in SQL Server
+
 Snapshot isolation enhances concurrency for OLTP applications.  
   
 ## Understanding Snapshot Isolation and Row Versioning  
+
  Once snapshot isolation is enabled, updated row versions for each transaction must be maintained.  Prior to SQL Server 2019, these versions were stored in **tempdb**. SQL Server 2019 introduces a new feature, Accelerated Database Recovery (ADR) which requires its own set of row versions.  So, as of SQL Server 2019, if ADR is not enabled, row versions are kept in **tempdb** as always.  If ADR is enabled, then all row versions, both related to snapshot isolation and ADR, are kept in ADR's Persistent Version Store (PVS), which is located in the user database in a filegroup which the user specifies. A unique transaction sequence number identifies each transaction, and these unique numbers are recorded for each row version. The transaction works with the most recent row versions having a sequence number before the sequence number of the transaction. Newer row versions created after the transaction has begun are ignored by the transaction.  
   
  The term "snapshot" reflects the fact that all queries in the transaction see the same version, or snapshot, of the database, based on the state of the database at the moment in time when the transaction begins. No locks are acquired on the underlying data rows or data pages in a snapshot transaction, which permits other transactions to execute without being blocked by a prior uncompleted transaction. Transactions that modify data do not block transactions that read data, and transactions that read data do not block transactions that write data, as they normally would under the default READ COMMITTED isolation level in SQL Server. This non-blocking behavior also significantly reduces the likelihood of deadlocks for complex transactions.  
@@ -30,6 +32,7 @@ SET READ_COMMITTED_SNAPSHOT ON
  Setting the READ_COMMITTED_SNAPSHOT ON option allows access to versioned rows under the default READ COMMITTED isolation level. If the READ_COMMITTED_SNAPSHOT option is set to OFF, you must explicitly set the Snapshot isolation level for each session in order to access versioned rows.  
   
 ## Managing Concurrency with Isolation Levels  
+
  The isolation level under which a Transact-SQL statement executes determines its locking and row versioning behavior. An isolation level has connection-wide scope, and once set for a connection with the SET TRANSACTION ISOLATION LEVEL statement, it remains in effect until the connection is closed or another isolation level is set. When a connection is closed and returned to the pool, the isolation level from the last SET TRANSACTION ISOLATION LEVEL statement is retained. Subsequent connections reusing a pooled connection use the isolation level that was in effect at the time the connection is pooled.  
   
  Individual queries issued within a connection can contain lock hints that modify the isolation for a single statement or transaction but do not affect the isolation level of the connection. Isolation levels or lock hints set in stored procedures or functions do not change the isolation level of the connection that calls them and are in effect only for the duration of the stored procedure or function call.  
@@ -47,6 +50,7 @@ SET READ_COMMITTED_SNAPSHOT ON
  For more information, refer to the [Transaction Locking and Row Versioning Guide](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide).  
   
 ### Snapshot Isolation Level Extensions  
+
  SQL Server introduced extensions to the SQL-92 isolation levels with the introduction of the SNAPSHOT isolation level and an additional implementation of READ COMMITTED. The READ_COMMITTED_SNAPSHOT isolation level can transparently replace READ COMMITTED for all transactions.  
   
 - SNAPSHOT isolation specifies that data read within a transaction will never reflect changes made by other simultaneous transactions. The transaction uses the data row versions that exist when the transaction begins. No locks are placed on the data when it is read, so SNAPSHOT transactions do not block other transactions from writing data. Transactions that write data do not block snapshot transactions from reading data. You need to enable snapshot isolation by setting the ALLOW_SNAPSHOT_ISOLATION database option in order to use it.  
@@ -54,6 +58,7 @@ SET READ_COMMITTED_SNAPSHOT ON
 - The READ_COMMITTED_SNAPSHOT database option determines the behavior of the default READ COMMITTED isolation level when snapshot isolation is enabled in a database. If you do not explicitly specify READ_COMMITTED_SNAPSHOT ON, READ COMMITTED is applied to all implicit transactions. This produces the same behavior as setting READ_COMMITTED_SNAPSHOT OFF (the default). When READ_COMMITTED_SNAPSHOT OFF is in effect, the Database Engine uses shared locks to enforce the default isolation level. If you set the READ_COMMITTED_SNAPSHOT database option to ON, the database engine uses row versioning and snapshot isolation as the default, instead of using locks to protect the data.  
   
 ## How Snapshot Isolation and Row Versioning Work  
+
  When the SNAPSHOT isolation level is enabled, each time a row is updated, the SQL Server Database Engine stores a copy of the original row in **tempdb**, and adds a transaction sequence number to the row. The following is the sequence of events that occurs:  
   
 - A new transaction is initiated, and it is assigned a transaction sequence number.  
@@ -71,6 +76,7 @@ SET READ_COMMITTED_SNAPSHOT ON
  A snapshot transaction always uses optimistic concurrency control, withholding any locks that would prevent other transactions from updating rows. If a snapshot transaction attempts to commit an update to a row that was changed after the transaction began, the transaction is rolled back, and an error is raised.  
   
 ## Working with Snapshot Isolation in ADO.NET  
+
  Snapshot isolation is supported in ADO.NET by the <xref:System.Data.SqlClient.SqlTransaction> class. If a database has been enabled for snapshot isolation but is not configured for READ_COMMITTED_SNAPSHOT ON, you must initiate a <xref:System.Data.SqlClient.SqlTransaction> using the **IsolationLevel.Snapshot** enumeration value when calling the <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A> method. This code fragment assumes that connection is an open <xref:System.Data.SqlClient.SqlConnection> object.  
   
 ```vb  
@@ -84,6 +90,7 @@ SqlTransaction sqlTran =
 ```  
   
 ### Example  
+
  The following example demonstrates how the different isolation levels behave by attempting to access locked data, and it is not intended to be used in production code.  
   
  The code connects to the **AdventureWorks** sample database in SQL Server and creates a table named **TestSnapshot** and inserts one row of data. The code uses the ALTER DATABASE Transact-SQL statement to turn on snapshot isolation for the database, but it does not set the READ_COMMITTED_SNAPSHOT option, leaving the default READ COMMITTED isolation-level behavior in effect. The code then performs the following actions:  
@@ -105,6 +112,7 @@ SqlTransaction sqlTran =
  [!code-vb[DataWorks SnapshotIsolation.Demo#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.Demo/VB/source.vb#1)]  
   
 ### Example  
+
  The following example demonstrates the behavior of snapshot isolation when data is being modified. The code performs the following actions:  
   
 - Connects to the **AdventureWorks** sample database and enables SNAPSHOT isolation.  
@@ -125,6 +133,7 @@ SqlTransaction sqlTran =
  [!code-vb[DataWorks SnapshotIsolation.DemoUpdate#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.DemoUpdate/VB/source.vb#1)]  
   
 ### Using Lock Hints with Snapshot Isolation  
+
  In the previous example, the first transaction selects data, and a second transaction updates the data before the first transaction is able to complete, causing an update conflict when the first transaction tries to update the same row. You can reduce the chance of update conflicts in long-running snapshot transactions by supplying lock hints at the beginning of the transaction. The following SELECT statement uses the UPDLOCK hint to lock the selected rows:  
   
 ```sql  

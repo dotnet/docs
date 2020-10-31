@@ -28,4 +28,4 @@ Extended Protection for Authentication helps protect against man-in-the-middle (
   
 ## See also
 
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

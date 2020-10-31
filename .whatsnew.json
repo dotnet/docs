@@ -4,14 +4,13 @@
     "rootDirectory": "docs/",
     "docLinkSettings": {
         "linkFormat": "relative",
-        "relativeLinkPrefix": "/dotnet/"
-    },
-    "inclusionCriteria": {
-        "additionalMicrosoftOrgs": [
-            ".NET Platform"
-        ]
+        "relativeLinkPrefix": "../"
     },
     "areas": [
+        {
+            "name": ".",
+            "heading": "Home"
+        },
         {
             "name": "architecture",
             "heading": "Architecture guides"

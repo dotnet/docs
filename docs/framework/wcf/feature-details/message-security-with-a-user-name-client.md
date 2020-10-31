@@ -125,4 +125,4 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 - [Message Security User Name](../samples/message-security-user-name.md)
 - [Service Identity and Authentication](service-identity-and-authentication.md)
 - [\<identity>](../../configure-apps/file-schema/wcf/identity.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

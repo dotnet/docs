@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
 ---
 # -doc (C# Compiler Options)
+
 The **-doc** option allows you to place documentation comments in an XML file.  
   
 ## Syntax  
@@ -24,10 +25,12 @@ The **-doc** option allows you to place documentation comments in an XML file.
 ```  
   
 ## Arguments  
+
  `file`  
  The output file for XML, which is populated with the comments in the source code files of the compilation.  
   
 ## Remarks  
+
  In source code files, documentation comments that precede the following can be processed and added to the XML file:  
   
 - Such user-defined types as a [class](../keywords/class.md), [delegate](../builtin-types/reference-types.md#the-delegate-type), or [interface](../keywords/interface.md)  

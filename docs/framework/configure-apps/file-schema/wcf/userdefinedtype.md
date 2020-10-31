@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0f70ec06-8249-4f0c-9f49-b4df59985fb8
 ---
 # \<userDefinedType>
+
 Represents a User Defined Type (UDT) that is to be included in the service contract.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,6 +31,7 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -42,6 +44,7 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
 |`TypeLibVersion`|A string that identifies the type library version that defines the type.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -51,6 +54,7 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
 |`userDefinedTypes`|A collection of `userDefinedType` elements.|  
   
 ## Remarks  
+
  The COM+ integration runtime creates services by inspecting the type library. When a COM+ component contains methods that pass a VARIANT, the system cannot determine the actual types to be passed prior to runtime. Therefore, when you attempt to pass a User Defined Type (UDT) within a VARIANT, it fails because it is not a known type for serialization.  
   
  To circumvent this problem, you can add the UDTs to the configuration file so that they can be included as known types on the appropriate service contract. In order to do so, you have to uniquely identify the UDT and the contract(s), that is, the original COM interface(s) that uses it.  

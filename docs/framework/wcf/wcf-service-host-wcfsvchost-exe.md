@@ -114,7 +114,7 @@ You can modify access using the netsh.exe tool in Windows Vista under the elevat
 netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>
 ```
 
-For more information on netsh.exe, see "[How to Use the Netsh.exe Tool and Command-Line Switches](https://docs.microsoft.com/previous-versions/tn-archive/bb490939(v=technet.10))".
+For more information on netsh.exe, see "[How to Use the Netsh.exe Tool and Command-Line Switches](/previous-versions/tn-archive/bb490939(v=technet.10))".
 
 ## See also
 

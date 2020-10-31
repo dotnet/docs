@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
 ---
 # \<windows> of \<clientCredentials> Element
+
 Specifies the settings for a Windows credential to be used to represent the client.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,6 +23,7 @@ Specifies the settings for a Windows credential to be used to represent the clie
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -32,6 +34,7 @@ Specifies the settings for a Windows credential to be used to represent the clie
 |`allowNtlm`|Setting this property to `true` allows authentication to downgrade to NTLM if Kerberos is not available.<br /><br /> Setting this property to `false` causes Windows Communication Foundation (WCF) to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

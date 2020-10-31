@@ -9,7 +9,7 @@ dev_langs:
 helpviewer_keywords: 
   - "parsing strings, numeric strings"
   - "numeric strings"
-  - "enumerations [.NET Framework], parsing strings"
+  - "enumerations [.NET], parsing strings"
   - "base types, parsing strings"
 ms.assetid: e39324ee-72e5-42d4-a80d-bf3ee7fc6c59
 ---

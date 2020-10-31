@@ -118,7 +118,7 @@ For some specific examples of handling exceptions and other issues that occur wh
 ## See also
 
 - [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
-- [.NET Native Setup and Configuration](https://docs.microsoft.com/previous-versions/dn600164(v=vs.110))
+- [.NET Native Setup and Configuration](/previous-versions/dn600164(v=vs.110))
 - [.NET Native and Compilation](net-native-and-compilation.md)
 - [Reflection and .NET Native](reflection-and-net-native.md)
 - [APIs That Rely on Reflection](apis-that-rely-on-reflection.md)

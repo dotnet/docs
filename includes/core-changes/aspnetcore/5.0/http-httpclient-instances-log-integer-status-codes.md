@@ -55,12 +55,7 @@ If you need to force compatibility with the old behavior and use textual status 
         // Other service registrations go first. Code omitted for brevity.
 
         // Place the following after all AddHttpClient registrations.
-        var descriptors = services.Where(
-            s => s.ServiceType == typeof(IHttpMessageHandlerBuilderFilter));
-        foreach (var descriptor in descriptors)
-        {
-            services.Remove(descriptor);
-        }
+        services.RemoveAll<IHttpMessageHandlerBuilderFilter>();
 
         services.AddSingleton<IHttpMessageHandlerBuilderFilter,
                               MyLoggingHttpMessageHandlerBuilderFilter>();

@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: c0e6cf23-63ac-47dd-bfe9-d5bdca826fac
 ---
 # Query Execution
+
 After a LINQ query is created by a user, it is converted to a command tree. A command tree is a representation of a query that is compatible with the Entity Framework. The command tree is then executed against the data source. At query execution time, all query expressions (that is, all components of the query) are evaluated, including those expressions that are used in result materialization.  
   
  At what point query expressions are executed can vary. LINQ queries are always executed when the query variable is iterated over, not when the query variable is created. This is called *deferred execution*. You can also force a query to execute immediately, which is useful for caching query results. This is described later in this topic.  
@@ -18,6 +19,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
 > For a convenient summary of query operators in table format, which lets you quickly identify an operator's execution behavior, see [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md).
 
 ## Deferred query execution  
+
  In a query that returns a sequence of values, the query variable itself never holds the query results and only stores the query commands. Execution of the query is deferred until the query variable is iterated over in a `foreach` or `For Each` loop. This is known as *deferred execution*; that is, query execution occurs some time after the query is constructed. This means that you can execute a query as frequently as you want to. This is useful when, for example, you have a database that is being updated by other applications. In your application, you can create a query to retrieve the latest information and repeatedly execute the query, returning the updated information every time.  
   
  Deferred execution enables multiple queries to be combined or a query to be extended. When a query is extended, it is modified to include the new operations, and the eventual execution will reflect the changes. In the following example, the first query returns all the products. The second query extends the first by using `Where` to return all the products of size "L":  
@@ -28,6 +30,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
  After a query has been executed all successive queries will use the in-memory LINQ operators. Iterating over the query variable by using a `foreach` or `For Each` statement or by calling one of the LINQ conversion operators will cause immediate execution. These conversion operators include the following: <xref:System.Linq.Enumerable.ToList%2A>, <xref:System.Linq.Enumerable.ToArray%2A>, <xref:System.Linq.Enumerable.ToLookup%2A>, and <xref:System.Linq.Enumerable.ToDictionary%2A>.  
   
 ## Immediate Query Execution  
+
  In contrast to the deferred execution of queries that produce a sequence of values, queries that return a singleton value are executed immediately. Some examples of singleton queries are <xref:System.Linq.Enumerable.Average%2A>, <xref:System.Linq.Enumerable.Count%2A>, <xref:System.Linq.Enumerable.First%2A>, and <xref:System.Linq.Enumerable.Max%2A>. These execute immediately because the query must produce a sequence to calculate the singleton result. You can also force immediate execution. This is useful when you want to cache the results of a query. To force immediate execution of a query that does not produce a singleton value, you can call the <xref:System.Linq.Enumerable.ToList%2A> method, the <xref:System.Linq.Enumerable.ToDictionary%2A> method, or the <xref:System.Linq.Enumerable.ToArray%2A> method on a query or query variable. The following example uses the <xref:System.Linq.Enumerable.ToArray%2A> method to immediately evaluate a sequence into an array.  
   
  [!code-csharp[DP L2E Examples#ToArray](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#toarray)]
@@ -36,6 +39,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
  You could also force execution by putting the `foreach` or `For Each` loop immediately after the query expression, but by calling <xref:System.Linq.Enumerable.ToList%2A> or <xref:System.Linq.Enumerable.ToArray%2A> you cache all the data in a single collection object.  
   
 ## Store Execution  
+
  In general, expressions in LINQ to Entities are evaluated on the server, and the behavior of the expression should not be expected to follow common language runtime (CLR) semantics, but those of the data source. There are exceptions to this, however, such as when the expression is executed on the client. This could cause unexpected results, for example when the server and client are in different time zones.  
   
  Some expressions in the query might be executed on the client. In general, most query execution is expected to occur on the server. Aside from methods executed against query elements mapped to the data source, there are often expressions in the query that can be executed locally. Local execution of a query expression yields a value that can be used in the query execution or result construction.  
@@ -45,6 +49,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
  This section describes the scenarios in which code is executed locally on the client. For more information about which types of expressions are executed locally, see [Expressions in LINQ to Entities Queries](expressions-in-linq-to-entities-queries.md).  
   
 ### Literals and Parameters  
+
  Local variables, such as the `orderID` variable in the following example, are evaluated on the client.  
   
  [!code-csharp[DP L2E Conceptual Examples#LiteralParameter1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#literalparameter1)]
@@ -56,6 +61,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
  [!code-vb[DP L2E Conceptual Examples#MethodParameterExample](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#methodparameterexample)]  
   
 ### Casting Literals on the Client  
+
  Casting from `null` to a CLR type is executed on the client:  
   
  [!code-csharp[DP L2E Conceptual Examples#NullCastToString](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#nullcasttostring)]
@@ -67,6 +73,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
  [!code-vb[DP L2E Conceptual Examples#CastToNullable](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#casttonullable)]  
   
 ### Constructors for Literals  
+
  New CLR types that can be mapped to conceptual model types are executed on the client:  
   
  [!code-csharp[DP L2E Conceptual Examples#ConstructorForLiteral](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#constructorforliteral)]
@@ -75,9 +82,11 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
  New arrays are also executed on the client.  
   
 ## Store Exceptions  
+
  Any store errors that are encountered during query execution are passed up to the client, and are not mapped or handled.  
   
 ## Store Configuration  
+
  When the query executes on the store, the store configuration overrides all client behaviors, and store semantics are expressed for all operations and expressions. This can result in a difference in behavior between CLR and store execution in areas such as null comparisons, GUID ordering, precision and accuracy of operations involving non-precise data types (such as floating point types or <xref:System.DateTime>), and string operations. It is important to keep this in mind when examining query results.  
   
  For example, the following are some differences in behavior between the CLR and SQL Server:  

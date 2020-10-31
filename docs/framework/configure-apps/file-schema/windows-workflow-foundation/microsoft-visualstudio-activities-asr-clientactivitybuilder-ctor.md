@@ -11,6 +11,7 @@ api_type:
 ms.assetid: 6b44b13c-7a23-4df2-8f9f-45e2b1430002
 ---
 # Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder..ctor
+
 Creates an instance of the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  
   
 ## Syntax  
@@ -22,6 +23,7 @@ public ClientActivityBuilder(OperationDescription operationDescription, string c
 ## Parameters  
   
 ## Parameter Values  
+
  *operationDescription*  
   
  Describes the operation to be performed in the workflow activity that is to be generated, including the operation name, return type, and parameter information. The value of this parameter must not be **null**. It should describe a synchronous operation which uses a message contract and takes an argument with one message. If these conditions are not satisfied, the runtime result of using the constructor and the other methods of this class are undefined.  

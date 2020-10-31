@@ -17,7 +17,7 @@ There are several solutions to adopt state without compromising the benefits of 
 
 - Use a temporary data store or distributed cache, like Redis
 - Store state in a database, like SQL or CosmosDB
-- Handle state through a workflow engine like [durable functions](https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-overview)
+- Handle state through a workflow engine like [durable functions](/azure/azure-functions/durable/durable-functions-overview)
 
 The bottom line is that you should be aware of the need for any state management within processes you're considering to implement with serverless.
 
@@ -57,7 +57,7 @@ Rules often specify how to scale-up (increase the host resources) and scale-out 
 
 ## Monitoring, tracing, and logging
 
-An often overlooked aspect of DevOps is monitoring applications once deployed. It's important to have a strategy for monitoring serverless functions. The biggest challenge is often correlation, or recognizing when a user calls multiple functions as part of the same interaction. Most serverless platforms allow console logging that can be imported into third-party tools. There are also options to automate collection of telemetry, generate and track correlation IDs, and monitor specific actions to provide detailed insights. Azure provides the advanced [Application Insights platform](https://docs.microsoft.com/azure/azure-functions/functions-monitoring) for monitoring and analytics.
+An often overlooked aspect of DevOps is monitoring applications once deployed. It's important to have a strategy for monitoring serverless functions. The biggest challenge is often correlation, or recognizing when a user calls multiple functions as part of the same interaction. Most serverless platforms allow console logging that can be imported into third-party tools. There are also options to automate collection of telemetry, generate and track correlation IDs, and monitor specific actions to provide detailed insights. Azure provides the advanced [Application Insights platform](/azure/azure-functions/functions-monitoring) for monitoring and analytics.
 
 ## Inter-service dependencies
 

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4aeccaf7-8f23-495c-aa5f-5bd8b5d4a10c
 ---
 # \<certificate> for \<identity>
+
 Specifies an X.509 certificate used to validate a server to a client.  
   
 For more information about setting the element value, see [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md).  
@@ -22,6 +23,7 @@ For more information about setting the element value, see [Service Identity and 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -31,6 +33,7 @@ For more information about setting the element value, see [Service Identity and 
 |encodedValue|A Base64 encoding of the certificate.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -40,6 +43,7 @@ For more information about setting the element value, see [Service Identity and 
 |[\<identity>](identity.md)|Specifies the identity of the service to be authenticated by the client.|  
   
 ## Example  
+
  The following code specifies the encoded representation of a certificate used to validate a server to a client.  
   
 ```xml  

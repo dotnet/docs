@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 465ccd53-dfdc-47ec-8b3f-9a65ba739314
 ---
 # Registry key '\<keyname>' could not be created
+
 The specified registry key could not be created, possibly because of insufficient security permissions.  
   
 ## To correct this error  

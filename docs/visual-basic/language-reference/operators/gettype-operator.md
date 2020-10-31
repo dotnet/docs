@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
 ---
 # GetType Operator (Visual Basic)
+
 Returns a <xref:System.Type> object for the specified type. The <xref:System.Type> object provides information about the type such as its properties, methods, and events.  
   
 ## Syntax  
@@ -24,6 +25,7 @@ GetType(typename)
 |`typename`|The name of the type for which you desire information.|  
   
 ## Remarks  
+
  The `GetType` operator returns the <xref:System.Type> object for the specified `typename`. You can pass the name of any defined type in `typename`. This includes the following:  
   
 - Any Visual Basic data type, such as `Boolean` or `Date`.  
@@ -47,6 +49,7 @@ GetType(typename)
 - You want to compare two object references to see if they refer to instances of the same type. If they do, `GetType` returns references to the same <xref:System.Type> object.  
   
 ## Example  
+
  The following examples show the `GetType` operator in use.  
   
  [!code-vb[VbVbalrOperators#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#26)]  

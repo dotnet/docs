@@ -362,7 +362,7 @@ You can do this with single fields or also with collections, like a `List<>` fie
 
 ### Use shadow properties in EF Core, hidden at the infrastructure level
 
-Shadow properties in EF Core are properties that do not exist in your entity class model. The values and states of these properties are maintained purely in the [ChangeTracker](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) class at the infrastructure level.
+Shadow properties in EF Core are properties that do not exist in your entity class model. The values and states of these properties are maintained purely in the [ChangeTracker](/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) class at the infrastructure level.
 
 ## Implement the Query Specification pattern
 

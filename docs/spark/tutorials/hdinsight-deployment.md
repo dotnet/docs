@@ -1,7 +1,7 @@
 ---
 title: Deploy a .NET for Apache Spark application to Azure HDInsight
 description: Discover how to deploy a .NET for Apache Spark application to HDInsight.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to HDInsight.
@@ -20,8 +20,6 @@ In this tutorial, you learn how to:
 > * Publish your .NET for Apache Spark app.
 > * Create and run an HDInsight script action.
 > * Run a .NET for Apache Spark app on an HDInsight cluster.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 
@@ -98,11 +96,11 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
    foo@bar:~/path/to/app$ dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
    ```
 
-2. Do the following tasks to zip your published app files so that you can easily upload them to your HDInsight cluster.
+2. Do the following tasks to zip your published app files so that you can easily upload them to your HDInsight cluster. Zip the contents of the publish folder, *publish.zip* for example, that was created as a result of Step 1. All the assemblies should be in the first layer of the ZIP file and there should be no intermediate folder layer. This means when you unzip *publish.zip*, all assemblies are extracted into your current working directory.
 
    **On Windows:**
 
-   Navigate to *mySparkApp/bin/Release/netcoreapp3.0/ubuntu.16.04-x64*. Then, right-click on **Publish** folder and select **Send to > Compressed (zipped) folder**. Name the new folder **publish.zip**.
+   Use an extraction program, like 7-Zip or WinZip, to extract the file into the bin directory with all the published binaries.
 
    **On Linux, run the following command:**
 
@@ -185,4 +183,4 @@ You can also select the resource group name to open the resource group page, and
 In this tutorial, you deployed your .NET for Apache Spark application to Azure HDInsight. To learn more about HDInsight, continue to the Azure HDInsight Documentation.
 
 > [!div class="nextstepaction"]
-> [Azure HDInsight Documentation](https://docs.microsoft.com/azure/hdinsight/)
+> [Azure HDInsight Documentation](/azure/hdinsight/)

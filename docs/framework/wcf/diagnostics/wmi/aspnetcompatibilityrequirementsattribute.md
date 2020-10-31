@@ -26,7 +26,7 @@ class AspNetCompatibilityRequirementsAttribute : Behavior
   
  Access type: Read-only  
   
- Indicates if Asp.Net compatibility mode is active.  
+ Indicates if ASP.NET compatibility mode is active.  
   
 ## Requirements  
   

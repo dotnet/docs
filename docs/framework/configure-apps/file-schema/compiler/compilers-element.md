@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
 ---
 # \<compilers> Element
+
 Container for compiler configuration elements; contains zero or more [\<compiler>](compiler-element.md) elements.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -26,9 +27,11 @@ Container for compiler configuration elements; contains zero or more [\<compiler
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -45,14 +48,17 @@ Container for compiler configuration elements; contains zero or more [\<compiler
 |[\<system.codedom> Element](system-codedom-element.md)|Specifies compiler configuration settings for available language providers.|  
   
 ## Remarks  
+
  The [\<compilers>](compilers-element.md) element contains the compiler configuration settings for language providers on a computer. Each [\<compiler>](compiler-element.md) element specifies the compiler configuration attributes for a specific language provider.  
   
  The .NET Framework defines the initial compiler and language provider settings in the machine configuration file (Machine.config). Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> implementation. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.  
   
 ## Configuration File  
+
  This element can be used in the machine configuration file and the application configuration file.  
   
 ## Example  
+
  The following example illustrates a typical compiler configuration element.  
   
 ```xml  

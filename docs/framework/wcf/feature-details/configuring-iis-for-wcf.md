@@ -65,4 +65,4 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
 - [WAS Activation Architecture](was-activation-architecture.md)
 - [Configuring WAS for Use with WCF](configuring-the-wpa--service-for-use-with-wcf.md)
 - [How to: Install and Configure WCF Activation Components](how-to-install-and-configure-wcf-activation-components.md)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

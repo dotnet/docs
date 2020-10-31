@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 97522119-f6a3-434c-a1ec-17396b74a556
 ---
 # Getting Started (LINQ to DataSet)
+
 This section provides introductory information about programming with LINQ to DataSet.  
   
 ## In This Section  
+
  [LINQ to DataSet Overview](linq-to-dataset-overview.md)  
  Provides a conceptual overview of LINQ to DataSet.  
   
@@ -20,6 +22,7 @@ This section provides introductory information about programming with LINQ to Da
  Provides information about creating a LINQ to DataSet project in Visual Studio.  
   
 ## Reference  
+
  <xref:System.Data.DataRowComparer>  
   
  <xref:System.Data.DataRowExtensions>  

@@ -12,8 +12,16 @@ Most apps should be unaffected, however data will be sorted differently in some 
 |:--------|:------------|
 | Scope   |Edge|
 |Version|4.5|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=nameWithType></li></ul>|
+- <xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Xml.Xsl.XslCompiledTransform`
+
+-->

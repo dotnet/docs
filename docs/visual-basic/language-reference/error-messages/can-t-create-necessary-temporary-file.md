@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 53617b5b-eb06-4188-b4c2-8607cb9fbc79
 ---
 # Can't create necessary temporary file
+
 Either the drive is full that contains the directory specified by the TEMP environment variable, or the TEMP environment variable specifies an invalid or read-only drive or directory.  
   
 ## To correct this error  

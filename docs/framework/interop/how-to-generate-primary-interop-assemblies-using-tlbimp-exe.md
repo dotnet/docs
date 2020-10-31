@@ -40,7 +40,7 @@ Primary interop assemblies can reference only other primary interop assemblies. 
 
 A dependent primary interop assembly with a version number that differs from that of the original type library is not discoverable when installed in the current directory. You must either register the dependent primary interop assembly in the Windows registry or use the **/reference** option to be sure that Tlbimp.exe finds the dependent DLL.
 
-You can also wrap multiple versions of a type library. For instructions, see [How to: Wrap Multiple Versions of Type Libraries](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/1565h6hc(v=vs.100)).
+You can also wrap multiple versions of a type library. For instructions, see [How to: Wrap Multiple Versions of Type Libraries](/previous-versions/dotnet/netframework-4.0/1565h6hc(v=vs.100)).
 
 ## Example
 

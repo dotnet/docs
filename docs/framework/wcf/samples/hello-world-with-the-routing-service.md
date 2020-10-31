@@ -53,4 +53,4 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
   
 ## See also
 
-- [AppFabric Hosting and Persistence Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))
+- [AppFabric Hosting and Persistence Samples](/previous-versions/appfabric/ff383418(v=azure.10))

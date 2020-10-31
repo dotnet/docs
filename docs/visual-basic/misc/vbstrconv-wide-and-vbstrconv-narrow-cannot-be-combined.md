@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: a53b4e6a-36b1-4e36-b2c5-8196313ec599
 ---
 # VbStrConv.Wide and VbStrConv.Narrow cannot be combined
+
 Your application is trying to combine the `VbStrConv` enumeration members `Wide` and `Narrow`, which are mutually exclusive.  
   
 ## To correct this error  

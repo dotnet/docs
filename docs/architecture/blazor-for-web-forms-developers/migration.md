@@ -629,7 +629,7 @@ Because Blazor is built on .NET Core, there are considerations in ensuring suppo
 - Code Access Security (CAS)
 - Security Transparency
 
-For more information on techniques to identify necessary changes to support running on .NET Core, see [Port your code from .NET Framework to .NET Core](/dotnet/core/porting).
+For more information on techniques to identify necessary changes to support running on .NET Core, see [Port your code from .NET Framework to .NET Core](../../core/porting/index.md).
 
 ASP.NET Core is a reimagined version of ASP.NET and has some changes that may not initially seem obvious. The main changes are:
 

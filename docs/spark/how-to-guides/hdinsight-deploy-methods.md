@@ -1,7 +1,7 @@
 ---
 title: Submit a .NET for Apache Spark job to Azure HDInsight
 description: Learn how to submit a .NET for Apache Spark job to Azure HDInsight using spark-submit and Apache Livy.
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -9,8 +9,6 @@ ms.custom: mvc,how-to
 # Submit a .NET for Apache Spark job to Azure HDInsight
 
 There are two ways to deploy your .NET for Apache Spark job to HDInsight: `spark-submit` and Apache Livy.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Deploy using spark-submit
 
@@ -32,7 +30,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
 
 ## Deploy using Apache Livy
 
-You can use [Apache Livy](https://livy.incubator.apache.org/), the Apache Spark REST API, to submit .NET for Apache Spark jobs to an Azure HDInsight Spark cluster. For more information, see [Remote jobs with Apache Livy](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-livy-rest-interface).
+You can use [Apache Livy](https://livy.incubator.apache.org/), the Apache Spark REST API, to submit .NET for Apache Spark jobs to an Azure HDInsight Spark cluster. For more information, see [Remote jobs with Apache Livy](/azure/hdinsight/spark/apache-spark-livy-rest-interface).
 
 You can run the following command on Linux using `curl`:
 
@@ -55,4 +53,4 @@ EOF
 
 * [Get started with .NET for Apache Spark](../tutorials/get-started.md)
 * [Deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md)
-* [HDInsight Documentation](https://docs.microsoft.com/azure/hdinsight/)
+* [HDInsight Documentation](/azure/hdinsight/)

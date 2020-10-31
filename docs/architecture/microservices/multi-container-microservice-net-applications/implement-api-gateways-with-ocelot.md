@@ -10,6 +10,7 @@ ms.date: 03/02/2020
 > The reference microservice application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) is currently using features provided by [Envoy](https://www.envoyproxy.io/) to implement the API Gateway instead of the earlier referenced [Ocelot](https://github.com/ThreeMammals/Ocelot).
 > We made this design choice because of Envoy's built-in support for the WebSocket protocol, required by the new gRPC inter-service communications implemented in eShopOnContainers.
 > However, we've retained this section in the guide so you can consider Ocelot as a simple, capable, and lightweight API Gateway suitable for production-grade scenarios.
+> Also, latest Ocelot version contains a breaking change on its json schema. Consider using Ocelot < v16.0.0, or use the key Routes instead of ReRoutes.
 
 ## Architect and design your API Gateways
 
@@ -81,7 +82,7 @@ The HTTP request will end up running that kind of C# code accessing the microser
 
 Regarding the microservice URL, when the containers are deployed in your local development PC (local Docker host), each microservice's container always has an internal port (usually port 80) specified in its dockerfile, as in the following dockerfile:
 
-```Dockerfile
+```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
@@ -367,7 +368,7 @@ Because of testing or debugging reasons, if you wanted to directly access to the
 
 **Figure 6-36**. Direct access to a microservice for testing purposes
 
-But the application is configured so it accesses all the microservices through the API Gateways, not though the direct port "shortcuts".
+But the application is configured so it accesses all the microservices through the API Gateways, not through the direct port "shortcuts".
 
 ### The Gateway aggregation pattern in eShopOnContainers
 

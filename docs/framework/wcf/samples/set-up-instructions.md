@@ -35,4 +35,4 @@ This set of topics describes how to set up services that are required to run a W
  Outlines the steps to install Message Queuing.  
   
 ## Related Sections  
- [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))
+ [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

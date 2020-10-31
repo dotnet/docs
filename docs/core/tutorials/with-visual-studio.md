@@ -15,7 +15,7 @@ This tutorial shows how to create and run a .NET Core console application in Vis
 
 - [Visual Studio 2019 version 16.6 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. The .NET Core 3.1 SDK is automatically installed when you select this workload.
 
-  For more information, see [Install the .NET Core SDK with Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio).
+  For more information, see [Install the .NET Core SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
 ## Create the app
 

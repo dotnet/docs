@@ -6,6 +6,9 @@ ms.date: 04/15/2020
 f1_keywords:
   - "whereconstraint"
   - "whereconstraint_CSharpKeyword"
+  - "classconstraint_CSharpKeyword"
+  - "structconstraint_CSharpKeyword"
+  - "enumconstraint_CSharpKeyword"
 helpviewer_keywords:
   - "where (generic type constraint) [C#]"
 ---

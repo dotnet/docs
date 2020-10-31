@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4
 ---
 # -reference (C# Compiler Options)
+
 The **-reference** option causes the compiler to import [public](../keywords/public.md) type information in the specified file into the current project, thus enabling you to reference metadata from the specified assembly files.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ The **-reference** option causes the compiler to import [public](../keywords/pub
 ```  
   
 ## Arguments  
+
  `filename`  
  The name of a file that contains an assembly manifest. To import more than one file, include a separate **-reference** option for each file.  
   
@@ -33,6 +35,7 @@ The **-reference** option causes the compiler to import [public](../keywords/pub
  A valid C# identifier that will represent a root namespace that will contain all namespaces in the assembly.  
   
 ## Remarks  
+
  To import from more than one file, include a **-reference** option for each file.  
   
  The files you import must contain a manifest; the output file must have been compiled with one of the [-target](./target-compiler-option.md) options other than [-target:module](./target-module-compiler-option.md).  
@@ -59,6 +62,7 @@ The **-reference** option causes the compiler to import [public](../keywords/pub
 > In Visual Studio, use the **Add Reference** dialog box. For more information, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager). To ensure equivalent behavior between adding references by using `-reference` and adding references by using the **Add Reference** dialog box, set the **Embed Interop Types** property to **False** for the assembly that you're adding. **True** is the default value for the property.  
   
 ## Example  
+
  This example shows how to use the [extern alias](../keywords/extern-alias.md) feature.  
   
  You compile the source file and import metadata from `grid.dll` and `grid20.dll`, which have been compiled previously. The two DLLs contain separate versions of the same component, and you use two **-reference** with alias options to compile the source file. The options look like this:  

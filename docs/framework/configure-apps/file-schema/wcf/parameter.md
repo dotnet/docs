@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0fb41e2d-64f7-44ab-993e-05892eac6d82
 ---
 # \<parameter>
+
 Specifies the generic parameter when a declared type is a generic type.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,6 +23,7 @@ Specifies the generic parameter when a declared type is a generic type.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -39,6 +41,7 @@ Specifies the generic parameter when a declared type is a generic type.
 |"1"|The second parameter in a generic type. For example, a <xref:System.Collections.Generic.Dictionary%602> has two parameters. If the known type is returned by the second parameter, set the index attribute to "1".|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -48,6 +51,7 @@ Specifies the generic parameter when a declared type is a generic type.
 |[\<knownType>](knowntype.md)|Specifies a known type that can be returned by a field or property of the declared type.|  
   
 ## Remarks  
+
  For more information about known types, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  See the [\<dataContractSerializer>](datacontractserializer-element.md) for an example of using this element.  

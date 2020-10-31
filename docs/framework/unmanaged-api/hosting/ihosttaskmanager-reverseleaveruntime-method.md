@@ -58,4 +58,4 @@ HRESULT ReverseLeaveRuntime ();
 - [IHostTask Interface](ihosttask-interface.md)
 - [IHostTaskManager Interface](ihosttaskmanager-interface.md)
 - [LeaveRuntime Method](ihosttaskmanager-leaveruntime-method.md)
-- [A Closer Look at Platform Invoke](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0h9e9t7d(v=vs.100))
+- [A Closer Look at Platform Invoke](/previous-versions/dotnet/netframework-4.0/0h9e9t7d(v=vs.100))

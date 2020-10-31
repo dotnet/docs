@@ -19,10 +19,10 @@ Table 6-1 lists common management tools related to their orchestrators, schedule
 
 | Management tools | Description | Related orchestrators |
 |------------------|-------------|-----------------------|
-| [Azure Monitor for Containers](https://docs.microsoft.com/azure/monitoring/monitoring-container-insights-overview) | Azure dedicated Kubernetes management tool | Azure Kubernetes Services (AKS) |
+| [Azure Monitor for Containers](/azure/monitoring/monitoring-container-insights-overview) | Azure dedicated Kubernetes management tool | Azure Kubernetes Services (AKS) |
 | [Kubernetes Web UI (dashboard)](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) | Kubernetes management tool, can monitor and manage local Kubernetes cluster | Azure Kubernetes Service (AKS)<br/>Local Kubernetes |
-| [Azure portal for Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-creation-via-portal)<br/>[Azure Service Fabric Explorer](https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster) | Online and desktop version for managing Service Fabric clusters, on Azure, on premises, local development, and other clouds | Azure Service Fabric |
-| [Container Monitoring (Azure Monitor)](https://docs.microsoft.com/azure/azure-monitor/insights/containers) | General container management y monitoring solution. Can manage Kubernetes clusters through [Azure Monitor for Containers](https://docs.microsoft.com/azure/monitoring/monitoring-container-insights-overview). | Azure Service Fabric<br/>Azure Kubernetes Service (AKS)<br/>Mesosphere DC/OS and others. |
+| [Azure portal for Service Fabric](/azure/service-fabric/service-fabric-cluster-creation-via-portal)<br/>[Azure Service Fabric Explorer](/azure/service-fabric/service-fabric-visualizing-your-cluster) | Online and desktop version for managing Service Fabric clusters, on Azure, on premises, local development, and other clouds | Azure Service Fabric |
+| [Container Monitoring (Azure Monitor)](/azure/azure-monitor/insights/containers) | General container management y monitoring solution. Can manage Kubernetes clusters through [Azure Monitor for Containers](/azure/monitoring/monitoring-container-insights-overview). | Azure Service Fabric<br/>Azure Kubernetes Service (AKS)<br/>Mesosphere DC/OS and others. |
 
 ## Azure Service Fabric
 
@@ -30,9 +30,9 @@ Another choice for cluster-deployment and management is Azure Service Fabric. [S
 
 The following are Service Fabric management tools:
 
-- [Azure portal for Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-creation-via-portal) cluster-related operations (create/update/delete) a cluster or configure its infrastructure (VMs, load balancer, networking, etc.)
+- [Azure portal for Service Fabric](/azure/service-fabric/service-fabric-cluster-creation-via-portal) cluster-related operations (create/update/delete) a cluster or configure its infrastructure (VMs, load balancer, networking, etc.)
 
-- [Azure Service Fabric Explorer](https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster) is a specialized web UI and desktop multi-platform tool that provides insights and certain operations on the Service Fabric cluster, from the nodes/VMs point of view and from the application and services point of view.
+- [Azure Service Fabric Explorer](/azure/service-fabric/service-fabric-visualizing-your-cluster) is a specialized web UI and desktop multi-platform tool that provides insights and certain operations on the Service Fabric cluster, from the nodes/VMs point of view and from the application and services point of view.
 
 >[!div class="step-by-step"]
 >[Previous](run-microservices-based-applications-in-production.md)

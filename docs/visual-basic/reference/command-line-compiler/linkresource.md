@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: cf4dcad8-17b7-404c-9184-29358aa05b15
 ---
 # -linkresource (Visual Basic)
+
 Creates a link to a managed resource.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ or
 ```  
   
 ## Arguments  
+
  `filename`  
  Required. The resource file to link to the assembly. If the file name contains a space, enclose the name in quotation marks (" ").  
   
@@ -33,6 +35,7 @@ or
  Optional. The logical name for the resource. The name that is used to load the resource. The default is the name of the file. Optionally, you can specify whether the file is public or private in the assembly manifest, for example: `-linkres:filename.res,myname.res,public`. By default, `filename` is public in the assembly.  
   
 ## Remarks  
+
  The `-linkresource` option does not embed the resource file in the output file; use the `-resource` option to do this.  
   
  The `-linkresource` option requires one of the `-target` options other than `-target:module`.  
@@ -47,6 +50,7 @@ or
 > The `-linkresource` option is not available from the Visual Studio development environment; it is available only when you compile from the command line.  
   
 ## Example  
+
  The following code compiles `in.vb` and links to resource file `rf.resource`.  
   
 ```console  

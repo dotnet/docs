@@ -9,12 +9,15 @@ helpviewer_keywords:
 ms.assetid: 41f30dc1-202a-4273-b9b7-5728941f996c
 ---
 # My.Settings Object
+
 Provides properties and methods for accessing the application's settings.  
   
 ## Remarks  
+
  The `My.Settings` object provides access to the application's settings and allows you to dynamically store and retrieve property settings and other information for your application. For more information, see [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet).  
   
 ## Properties  
+
  The properties of the `My.Settings` object provide access to your application's settings. To add or remove settings, use the **Settings Designer**.  
   
  Each setting has a **Name**, **Type**, **Scope**, and **Value**, and these settings determine how the property to access each setting appears in the `My.Settings` object:  
@@ -37,6 +40,7 @@ Provides properties and methods for accessing the application's settings.
  The `My.Settings` object also provides advanced properties and methods, inherited from the <xref:System.Configuration.ApplicationSettingsBase> class.  
   
 ## Tasks  
+
  The following table lists examples of tasks involving the `My.Settings` object.  
   
 |To|See|  
@@ -47,6 +51,7 @@ Provides properties and methods for accessing the application's settings.
 |Create a property grid for user settings|[How to: Create Property Grids for User Settings in Visual Basic](../../developing-apps/programming/app-settings/how-to-create-property-grids-for-user-settings.md)|  
   
 ## Example  
+
  This example displays the value of the `Nickname` setting.  
   
  [!code-vb[VbVbalrMyResources#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyResources/VB/Form1.vb#14)]  

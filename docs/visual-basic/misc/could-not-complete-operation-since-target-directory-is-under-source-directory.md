@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 850d3a24-5d51-4ac8-a912-630efcd75278
 ---
 # Could not complete operation since target directory is under source directory
+
 A cyclic operation has failed. Cyclic operations cycle and therefore cannot complete. For example, Object A may attempt to inherit from Object B, which in turn inherits from Object A.  
   
 ## To correct this error  

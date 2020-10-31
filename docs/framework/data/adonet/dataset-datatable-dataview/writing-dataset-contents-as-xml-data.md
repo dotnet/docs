@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: fd15f8a5-3b4c-46d0-a561-4559ab2a4705
 ---
 # Writing DataSet Contents as XML Data
+
 In ADO.NET you can write an XML representation of a <xref:System.Data.DataSet>, with or without its schema. If schema information is included inline with the XML, it is written using the XML Schema definition language (XSD). The schema contains the table definitions of the <xref:System.Data.DataSet> as well as the relation and constraint definitions.  
   
  When a <xref:System.Data.DataSet> is written as XML data, the rows in the <xref:System.Data.DataSet> are written in their current versions. However, the <xref:System.Data.DataSet> can also be written as a DiffGram so that both the current and the original values of the rows will be included.  
@@ -58,6 +59,7 @@ xmlSW.Close();
 ```  
   
 ## Mapping Columns to XML Elements, Attributes, and Text  
+
  You can specify how a column of a table is represented in XML using the **ColumnMapping** property of the **DataColumn** object. The following table shows the different **MappingType** values for the **ColumnMapping** property of a table column, and the resulting XML.  
   
 |MappingType value|Description|  

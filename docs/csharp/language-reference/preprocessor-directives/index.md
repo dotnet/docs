@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
 ---
 # C# preprocessor directives
+
 This section contains information about the following C# preprocessor directives:
 
 - [#if](./preprocessor-if.md)

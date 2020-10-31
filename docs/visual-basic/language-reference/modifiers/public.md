@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 284c9e1b-ed23-499b-9bc9-ad87c11485a5
 ---
 # Public (Visual Basic)
+
 Specifies that one or more declared programming elements have no access restrictions.  
   
 ## Remarks  
+
  If you are publishing a component or set of components, such as a class library, you usually want the programming elements to be accessible by any code that interoperates with your assembly. To confer such unlimited access on an element, you can declare it with `Public`.  
   
  Public access is the normal level for a programming element when you do not need to limit access to it. Note that the access level of an element declared within an interface, module, class, or structure defaults to `Public` if you do not declare it otherwise.  

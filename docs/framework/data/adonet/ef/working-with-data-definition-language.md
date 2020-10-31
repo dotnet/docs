@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: ec50083d-44f4-4093-9b23-5eacd601f96e
 ---
 # Working with Data Definition Language
+
 Starting with the .NET Framework version 4, the Entity Framework supports data definition language (DDL). This allows you to create or delete a database instance based on the connection string and the metadata of the storage (SSDL) model.  
   
  The following methods on the <xref:System.Data.Objects.ObjectContext> use the connection string and the SSDL content to accomplish the following: create or delete the database, check whether the database exists, and view the generated DDL script:  
@@ -34,11 +35,11 @@ Starting with the .NET Framework version 4, the Entity Framework supports data d
   
 2. Add an existing model to your application.  
   
-    1. Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716703(v=vs.100)) topic.  
+    1. Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](/previous-versions/dotnet/netframework-4.0/cc716703(v=vs.100)) topic.  
   
      The SchoolModel.edmx file is added to your project.  
   
-    1. Copy the conceptual, storage, and mapping content for the School model from the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)) topic.  
+    1. Copy the conceptual, storage, and mapping content for the School model from the [School Model](/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)) topic.  
   
     2. Open the SchoolModel.edmx file and paste the content within the `edmx:Runtime` tags.  
   

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: ae66dd75-5c16-4cc0-9e12-774dd26d3fb9
 ---
 # Overview of SQL Server Security
+
 A defense-in-depth strategy, with overlapping layers of security, is the best way to counter security threats. SQL Server provides a security architecture that is designed to allow database administrators and developers to create secure database applications and counter threats. Each version of SQL Server has improved on previous versions of SQL Server with the introduction of new features and functionality. However, security does not ship in the box. Each application is unique in its security requirements. Developers need to understand which combination of features and functionality are most appropriate to counter known threats, and to anticipate threats that may arise in the future.  
   
  A SQL Server instance contains a hierarchical collection of entities, starting with the server. Each server contains multiple databases, and each database contains a collection of securable objects. Every SQL Server securable has associated *permissions* that can be granted to a *principal*, which is an individual, group or process granted access to SQL Server. The SQL Server security framework manages access to securable entities through *authentication* and *authorization*.  
@@ -16,6 +17,7 @@ A defense-in-depth strategy, with overlapping layers of security, is the best wa
  The topics in this section cover SQL Server security fundamentals, providing links to the complete documentation in the relevant version of SQL Server Books Online.  
   
 ## In This Section  
+
  [Authentication in SQL Server](authentication-in-sql-server.md)  
  Describes logins and authentication in SQL Server and provides links to additional resources.  
   

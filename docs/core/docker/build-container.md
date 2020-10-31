@@ -209,13 +209,13 @@ docker-working
 
 From your terminal, run the following command:
 
-```Docker
+```console
 docker build -t counter-image -f Dockerfile .
 ```
 
 Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command tells Docker to use the current folder to find a *Dockerfile*. This command builds the image and creates a local repository named **counter-image** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
 
-```Docker
+```console
 docker images
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 counter-image                           latest              e6780479db63        4 days ago          190MB
@@ -238,7 +238,7 @@ The next command, `ENTRYPOINT`, tells Docker to configure the container to run a
 
 From your terminal, run `docker build -t counter-image -f Dockerfile .` and when that command finishes, run `docker images`.
 
-```Docker
+```console
 docker build -t counter-image -f Dockerfile .
 Sending build context to Docker daemon  1.117MB
 Step 1/4 : FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
@@ -268,14 +268,14 @@ Each command in the *Dockerfile* generated a layer and created an **IMAGE ID**. 
 
 Now that you have an image that contains your app, you can create a container. You can create a container in two ways. First, create a new container that is stopped.
 
-```Docker
+```console
 docker create --name core-counter counter-image
 0f281cb3af994fba5d962cc7d482828484ea14ead6bfe386a35e5088c0058851
 ```
 
 The `docker create` command from above will create a container based on the **counter-image** image. The output of that command shows you the **CONTAINER ID** (yours will be different) of the created container. To see a list of *all* containers, use the `docker ps -a` command:
 
-```Docker
+```console
 docker ps -a
 CONTAINER ID    IMAGE            COMMAND                   CREATED           STATUS     PORTS    NAMES
 0f281cb3af99    counter-image    "dotnet NetCore.Dock…"    40 seconds ago    Created             core-counter
@@ -285,7 +285,7 @@ CONTAINER ID    IMAGE            COMMAND                   CREATED           STA
 
 The container was created with a specific name `core-counter`, this name is used to manage the container. The following example uses the `docker start` command to start the container, and then uses the `docker ps` command to only show containers that are running:
 
-```Docker
+```console
 docker start core-counter
 core-counter
 
@@ -296,7 +296,7 @@ CONTAINER ID    IMAGE            COMMAND                   CREATED          STAT
 
 Similarly, the `docker stop` command will stop the container. The following example uses the `docker stop` command to stop the container, and then uses the `docker ps` command to show that no containers are running:
 
-```Docker
+```console
 docker stop core-counter
 core-counter
 
@@ -310,7 +310,7 @@ After a container is running, you can connect to it to see the output. Use the `
 
 After you detach from the container, reattach to verify that it's still running and counting.
 
-```Docker
+```console
 docker start core-counter
 core-counter
 
@@ -331,13 +331,13 @@ Counter: 19
 
 For the purposes of this article you don't want containers just hanging around doing nothing. Delete the container you previously created. If the container is running, stop it.
 
-```Docker
+```console
 docker stop core-counter
 ```
 
 The following example lists all containers. It then uses the `docker rm` command to delete the container, and then checks a second time for any running containers.
 
-```Docker
+```console
 docker ps -a
 CONTAINER ID    IMAGE            COMMAND                   CREATED          STATUS                        PORTS    NAMES
 2f6424a7ddce    counter-image    "dotnet NetCore.Dock…"    7 minutes ago    Exited (143) 20 seconds ago            core-counter
@@ -353,7 +353,7 @@ CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
 
 Docker provides the `docker run` command to create and run the container as a single command. This command eliminates the need to run `docker create` and then `docker start`. You can also set this command to automatically delete the container when the container stops. For example, use `docker run -it --rm` to do two things, first, automatically use the current terminal to connect to the container, and then when the container finishes, remove it:
 
-```Docker
+```console
 docker run -it --rm counter-image
 Counter: 1
 Counter: 2
@@ -365,7 +365,7 @@ Counter: 5
 
 The container also passes parameters into the execution of the .NET Core app. To instruct the .NET Core app to count only to 3 pass in 3.
 
-```Docker
+```console
 docker run -it --rm counter-image 3
 Counter: 1
 Counter: 2
@@ -374,7 +374,7 @@ Counter: 3
 
 With `docker run -it`, the <kbd>Ctrl+C</kbd> command will stop process that is running in the container, which in turn, stops the container. Since the `--rm` parameter was provided, the container is automatically deleted when the process is stopped. Verify that it doesn't exist:
 
-```Docker
+```console
 docker ps -a
 CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
 ```
@@ -387,7 +387,7 @@ The `docker run` command also lets you modify the `ENTRYPOINT` command from the 
 
 In this example, `ENTRYPOINT` is changed to `cmd.exe`. <kbd>Ctrl+C</kbd> is pressed to end the process and stop the container.
 
-```Docker
+```console
 docker run -it --rm --entrypoint "cmd.exe" counter-image
 
 Microsoft Windows [Version 10.0.17763.379]
@@ -446,25 +446,25 @@ During this tutorial, you created containers and images. If you want, delete the
 
 01. List all containers
 
-    ```Docker
+    ```console
     docker ps -a
     ```
 
 02. Stop containers that are running by their name.
 
-    ```Docker
+    ```console
     docker stop counter-image
     ```
 
 03. Delete the container
 
-    ```Docker
+    ```console
     docker rm counter-image
     ```
 
 Next, delete any images that you no longer want on your machine. Delete the image created by your *Dockerfile* and then delete the .NET Core image the *Dockerfile* was based on. You can use the **IMAGE ID** or the **REPOSITORY:TAG** formatted string.
 
-```Docker
+```console
 docker rmi counter-image:latest
 docker rmi mcr.microsoft.com/dotnet/core/aspnet:3.1
 ```

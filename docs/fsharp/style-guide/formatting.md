@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 11/04/2019
+ms.date: 08/31/2020
 ---
 # F# code formatting guidelines
 
@@ -891,6 +891,15 @@ module M =
 type MyRecord =
     { Label1: int
       Label2: string }
+```
+
+They should go after any XML documentation:
+
+```fsharp
+/// Module with some things in it.
+[<RequireQualifiedAccess>]
+module M =
+    let f x = x
 ```
 
 ### Formatting attributes on parameters

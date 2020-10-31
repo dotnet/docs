@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: a7144d53-8023-4e90-971f-895e016fd58a
 ---
 # \<argument>
+
 A configuration element that represents an argument associated with an activity state query.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md).  
@@ -37,6 +38,7 @@ A configuration element that represents an argument associated with an activity 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -46,6 +48,7 @@ A configuration element that represents an argument associated with an activity 
 |name|A string that specifies the name of the argument.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -55,6 +58,7 @@ A configuration element that represents an argument associated with an activity 
 |[\<arguments>](arguments.md)|A collection of arguments associated with this activity query.|  
   
 ## Remarks  
+
  One unique feature of an ActivityStateQuery is the ability to extract data when tracking the execution of a workflow. This provides additional context when accessing the tracking records post execution. You can use the [\<arguments>](arguments.md), [\<states>](states.md) and [\<states>](states.md) elements to extract any variable or argument from any activity in a workflow. The following example shows an activity state query that extracts variables and arguments when the activity’s `Closed` tracking record is emitted. Variables and arguments can be extracted only with an ActivityStateRecord and thus are subscribed to within a tracking profile using [\<activityStateQuery>](activitystatequery.md).  
   
 ```xml  

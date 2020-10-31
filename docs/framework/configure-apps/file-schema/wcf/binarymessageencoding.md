@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e4ae3cd4-6b67-4ce1-af4b-9400e0a38dba
 ---
 # \<binaryMessageEncoding>
+
 Defines a binary message encoder that encodes Windows Communication Foundation (WCF) messages in binary on the wire.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -23,6 +24,7 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,7 +40,7 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
   
 ### Parent Elements  
   
@@ -47,6 +49,7 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. Windows Communication Foundation (WCF) includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
   
  The `binaryMessageEncoding` element specifies the .NET Binary Format for XML and has options to specify the character encoding and the SOAP and WS-Addressing version to be used. The binary message encoder encodes Windows Communication Foundation (WCF) messages in binary on the wire. While this encoding results in very fast transmission of messages, interoperability based on the WS-* standards is lost.  

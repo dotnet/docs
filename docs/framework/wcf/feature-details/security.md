@@ -10,7 +10,7 @@ ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
 # Windows Communication Foundation Security
 The topics in this section describe Windows Communication Foundation (WCF) security features and how to use them to help secure messages.  
   
- For more information about Windows Server AppFabric and security, see [Security Model for Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))  
+ For more information about Windows Server AppFabric and security, see [Security Model for Windows Server AppFabric](/previous-versions/appfabric/ee677202(v=azure.10))  
   
 ## In This Section  
  [Security Overview](security-overview.md)  

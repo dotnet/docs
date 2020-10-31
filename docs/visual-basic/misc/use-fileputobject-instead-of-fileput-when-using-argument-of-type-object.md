@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: d207b9b7-5898-4c13-8b03-9feefac5f726
 ---
 # Use 'FilePutObject' instead of 'FilePut' when using argument of type 'Object'
+
 The `FilePut` method includes an argument of type `Object`. `FilePutObject` should be used in place of `FilePut` to avoid ambiguities.  
   
 ## To correct this error  

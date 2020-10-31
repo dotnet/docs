@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 387d7c97-95dd-4a50-9761-7e9cf8ae9e6a
 ---
 # How to: Query for Duplicate Files in a Directory Tree (LINQ) (Visual Basic)
+
 Sometimes files that have the same name may be located in more than one folder. For example, under the Visual Studio installation folder, several folders have a readme.htm file. This example shows how to query for such duplicate file names under a specified root folder. The second example shows how to query for files whose size and creation times also match.  
   
 ## Example  
@@ -95,6 +96,7 @@ End Module
  The first query uses a simple key to determine a match; this finds files that have the same name but whose contents might be different. The second query uses a compound key to match against three properties of the <xref:System.IO.FileInfo> object. This query is much more likely to find files that have the same name and similar or identical content.  
   
 ## Compile the code  
+
 Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
   
 ## See also

@@ -37,11 +37,11 @@ Consume an OData feed in a .NET Framework-based client application.
 
 Consume an OData feed in a Silverlight-based client application.
 
-- [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
+- [WCF Data Services (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
 
 - [Asynchronous Operations](asynchronous-operations-wcf-data-services.md)
 
-- [How to: Bind Data Service Data to Controls (Silverlight Client)](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee681614(v=vs.103))
+- [How to: Bind Data Service Data to Controls (Silverlight Client)](/previous-versions/dotnet/wcf-data-services/ee681614(v=vs.103))
 
 Consume an OData feed in an AJAX-based client application.
 
@@ -65,7 +65,7 @@ Create a .NET Framework-based client application that consumes an OData feed asy
 
 - [Asynchronous Operations](asynchronous-operations-wcf-data-services.md)
 
-- [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
+- [WCF Data Services (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
 
 Expose and consume an OData feed with a binary large object that is accessed and changed as a stream.
 

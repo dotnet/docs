@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
 ---
 # \<dataContractSerializer>
+
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>. This element occurs in two different hierarchies. One is listed the following Schema Hierarchy section and the other is listed in the Remarks section.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 |maxItemsInObjectGraph|An integer that specifies the maximum number of items to serialize or deserialize. This attribute is 65536.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,6 +49,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 |[\<system.runtime.serialization>](system-runtime-serialization.md)|Represents the root element for the <xref:System.Runtime.Serialization> namespace section and contains elements for setting options of the <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
 ## Remarks  
+
  As stated in the Introduction of this topic, this is the second hierarchy in which the \<X509Extension> element occurs.  
   
  [\<system.runtime.serialization>](system-runtime-serialization.md)  

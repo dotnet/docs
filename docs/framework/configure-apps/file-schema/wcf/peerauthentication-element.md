@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 09a8a9ff-e395-42f6-8ceb-9d44bdc1cbe1
 ---
 # \<peerAuthentication> Element
+
 Specifies authentication options for peer-to-peer clients.  
   
  For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md).  
@@ -27,6 +28,7 @@ Specifies authentication options for peer-to-peer clients.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -63,6 +65,7 @@ Specifies authentication options for peer-to-peer clients.
 |Enumeration|One of the following values: `LocalMachine` or `CurrentUser`. The default is `CurrentUser`. If the client application is running under a system account then the certificate is typically under `LocalMachine`. If the client application is running under a user account then the certificate is typically in `CurrentUser`.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -72,9 +75,11 @@ Specifies authentication options for peer-to-peer clients.
 |[\<peer>](peer-of-clientcredentials-element.md)|Specifies a credential used for authenticating the client to a peer service.|  
   
 ## Remarks  
+
  The `<authentication>` element corresponds to the <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication> class. This element specifies a validator, which is invoked during neighbor-to-neighbor authentication in the mesh. When a new peer tries to establish a neighbor connection, it passes its own credential to the responding peer. The validator of the responder is invoked to verify the credential of the remote party. Whenever a peer connection is established in the mesh, both peers are mutually authenticated, meaning validators on both ends are invoked.  
   
 ## Example  
+
  The following code sets the certificate validation mode to `PeerOrChainTrust`.  
   
 ```xml  
@@ -104,6 +109,6 @@ Specifies authentication options for peer-to-peer clients.
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
-- [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Peer Channel Message Authentication](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Peer Channel Custom Authentication](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Securing Peer Channel Applications](../../../wcf/feature-details/securing-peer-channel-applications.md)

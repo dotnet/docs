@@ -71,7 +71,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--blame-crash`** (Available since .NET 5.0 preview SDK)
 
-  Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option is only supported on Windows. A directory that contains *procdump.exe* and *procdump64.exe* must be in the PATH or PROCDUMP_PATH environment variable. [Download the tools](https://docs.microsoft.com/sysinternals/downloads/procdump). Implies `--blame`.
+  Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option is only supported on Windows. A directory that contains *procdump.exe* and *procdump64.exe* must be in the PATH or PROCDUMP_PATH environment variable. [Download the tools](/sysinternals/downloads/procdump). Implies `--blame`.
 
 - **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
 

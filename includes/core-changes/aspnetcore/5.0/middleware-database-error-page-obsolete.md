@@ -48,6 +48,8 @@ Complete the following steps:
     }
     ```
 
+1. Add the [Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore) NuGet package to the project file.
+
 1. Add the database developer page exception filter to the services collection. For example, call the `AddDatabaseDeveloperPageExceptionFilter` method in `Startup.ConfigureServices`:
 
     ```csharp

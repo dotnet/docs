@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 4044ae87-9984-400c-b247-20f9c1b1a0c0
 ---
 # String length exceeds maximum length of 32767 characters for 'FileSystem' APIs
+
 A string's length exceeds the maximum length of 32767 characters.  
   
 ## To correct this error  

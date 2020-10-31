@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 84dda12b-88a2-4cd2-92b3-8db87b28d14c
 ---
 # How to: Represent Tables as Classes
+
 Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.TableAttribute> attribute to designate a class as an entity class associated with a database table.  
   
 ### To map a class to a database table  
@@ -14,6 +15,7 @@ Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xre
 - Add the <xref:System.Data.Linq.Mapping.TableAttribute> attribute to the class declaration.  
   
 ## Example  
+
  The following code establishes the `Customer` class as an entity class that is associated with the `Customers` database table.  
   
  [!code-csharp[DLinqCustomize#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#1)]

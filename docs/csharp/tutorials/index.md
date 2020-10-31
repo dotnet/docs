@@ -69,7 +69,7 @@ on your machine.
 
 ## General Tutorials
 
-The following tutorials enable you to build C# programs using [.NET Core](../../core/index.yml):
+The following tutorials enable you to build C# programs using [.NET Core](../../core/introduction.md):
 
 * [Console Application](console-teleprompter.md): demonstrates Console I/O, the structure of a Console application, and the basics of the task-based asynchronous programming model.
 * [REST Client](console-webapiclient.md): demonstrates web communications, JSON serialization, and object-oriented features in the C# language.

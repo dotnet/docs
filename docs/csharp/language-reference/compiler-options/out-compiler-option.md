@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 70d91d01-7bd2-4aea-ba8b-4e9807e9caa5
 ---
 # -out (C# Compiler Options)
+
 The **-out** option specifies the name of the output file.  
   
 ## Syntax  
@@ -20,10 +21,12 @@ The **-out** option specifies the name of the output file.
 ```  
   
 ## Arguments  
+
  `filename`  
  The name of the output file created by the compiler.  
   
 ## Remarks  
+
  On the command line, it is possible to specify multiple output files for your compilation. The compiler expects to find one or more source code files following the **-out** option. Then, all source code files will be compiled into the output file specified by that **-out** option.  
   
  Specify the full name and extension of the file you want to create.  
@@ -53,6 +56,7 @@ The **-out** option specifies the name of the output file.
      To set this compiler option programmatically: the <xref:VSLangProj80.ProjectProperties3.OutputFileName%2A> is a read-only property, which is determined by a combination of the project type (exe, library, and so forth) and the assembly name. Modifying one or both of these properties will be necessary to set the output file name.  
   
 ## Example  
+
  Compile `t.cs` and create output file `t.exe`, as well as build `t2.cs` and create module output file `mymodule.netmodule`:  
   
 ```console  

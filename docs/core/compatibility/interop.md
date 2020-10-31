@@ -9,10 +9,15 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [Casting RCW to an `InterfaceIsIInspectable` interface throws PlatformNotSupportedException](#casting-rcw-to-an-interfaceisiinspectable-interface-throws-platformnotsupportedexception) | 5.0 |
 | [No A/W suffix probing on non-Windows platforms](#no-aw-suffix-probing-on-non-windows-platforms) | 5.0 |
 | [Built-in support for WinRT is removed from .NET](#built-in-support-for-winrt-is-removed-from-net) | 5.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [casting-rcw-to-inspectable-interface-throws-exception](../../../includes/core-changes/interop/5.0/casting-rcw-to-inspectable-interface-throws-exception.md)]
+
+***
 
 [!INCLUDE [function-suffix-pinvoke](../../../includes/core-changes/interop/5.0/function-suffix-pinvoke.md)]
 

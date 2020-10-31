@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 6e00af10-42f3-4235-8415-1bb2db78394e
 ---
 # \<legacyImpersonationPolicy> Element
+
 Specifies that the Windows identity does not flow across asynchronous points, regardless of the flow settings for the execution context on the current thread.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ Specifies that the Windows identity does not flow across asynchronous points, re
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -40,6 +42,7 @@ Specifies that the Windows identity does not flow across asynchronous points, re
 |`true`|<xref:System.Security.Principal.WindowsIdentity> does not flow across asynchronous points, regardless of the <xref:System.Threading.ExecutionContext> flow settings on the current thread.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -50,6 +53,7 @@ Specifies that the Windows identity does not flow across asynchronous points, re
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  In the .NET Framework versions 1.0 and 1.1, the <xref:System.Security.Principal.WindowsIdentity> does not flow across any user-defined asynchronous points. Starting with the .NET Framework version 2.0, there is an <xref:System.Threading.ExecutionContext> object that contains information about the currently executing thread, and it flows across asynchronous points within an application domain. The <xref:System.Security.Principal.WindowsIdentity> is included in this execution context and therefore also flows across the asynchronous points, which means that if an impersonation context exists, it will flow as well.  
   
  Starting with the .NET Framework 2.0, you can use the `<legacyImpersonationPolicy>` element to specify that  <xref:System.Security.Principal.WindowsIdentity> does not flow across asynchronous points.  
@@ -70,6 +74,7 @@ Specifies that the Windows identity does not flow across asynchronous points, re
  For more information, see the [\<alwaysFlowImpersonationPolicy> Element](alwaysflowimpersonationpolicy-element.md).  
   
 ## Configuration File  
+
  In a .NET Framework application, this element can be used only in the application configuration file.  
   
  For an ASP.NET application, the impersonation flow can be configured in the aspnet.config file found in the \<Windows Folder>\Microsoft.NET\Framework\vx.x.xxxx directory.  
@@ -97,6 +102,7 @@ Specifies that the Windows identity does not flow across asynchronous points, re
 ```  
   
 ## Example  
+
  The following example shows how to specify the legacy behavior that does not flow the Windows identity across asynchronous points.  
   
 ```xml  

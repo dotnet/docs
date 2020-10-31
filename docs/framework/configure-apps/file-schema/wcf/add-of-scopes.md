@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0563a7d8-fc84-4c85-9066-af32665857c2
 ---
 # \<add> of \<scopes>
+
 Adds a custom scope Uri that can be used to filter service endpoints during query.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ Adds a custom scope Uri that can be used to filter service endpoints during quer
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -41,6 +43,7 @@ Adds a custom scope Uri that can be used to filter service endpoints during quer
 |scope|A URI that contains scope information for the endpoint that can be used in matching criteria for finding services.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

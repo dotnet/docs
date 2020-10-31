@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 259b49a3-a3c1-4254-ba8c-73cdc4127703
 ---
 # How to: Call a Procedure that Does Not Return a Value (Visual Basic)
+
 A `Sub` procedure does not return a value to the calling code. You call it explicitly with a stand-alone calling statement. You cannot call it by simply using its name within an expression.  
   
 ### To call a Sub procedure  

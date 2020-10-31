@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 24d8b398-770f-418f-ba23-c4325419cfa6
 ---
 # \<userNameAuthentication>
+
 Specifies a service's credentials based on user name and password.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ Specifies a service's credentials based on user name and password.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -42,6 +44,7 @@ Specifies a service's credentials based on user name and password.
 |`userNamePasswordValidationMode`|Specifies the manner in which username password is validated. Valid values are:<br /><br /> -   Windows<br />-   MembershipProvider<br />-   Custom<br /><br /> The default is Windows. This attribute is of type <xref:System.ServiceModel.Security.UserNamePasswordValidationMode>.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -51,6 +54,7 @@ Specifies a service's credentials based on user name and password.
 |[\<serviceCredentials>](servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation related settings.|  
   
 ## Remarks  
+
  If none of the bindings used by a service is configured for user name/password-based authentication, the attributes for this element are ignored. These include `customUserNamePasswordValidatorType`, `includeWindowsGroups`, `membershipProviderName`, and `userNamePasswordValidationMode`.  
   
  If none of the bindings used by a service is configured to use Windows authentication for user name/password, the settings related to caching of logon tokens are ignored. These include the `cacheLogonTokenLifetime`, `cacheLogonTokens`, and `maxCacheLogonTokens`.  

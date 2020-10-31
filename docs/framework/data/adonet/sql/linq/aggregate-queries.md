@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
 ---
 # Aggregate Queries
+
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the `Average`, `Count`, `Max`, `Min`, and `Sum` aggregate operators. Note the following characteristics of aggregate operators in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]:  
   
 - Aggregate queries are executed immediately.  
@@ -12,13 +13,14 @@ ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
   
 - Aggregate queries typically return a number instead of a collection.  
   
-     For more information, see [Aggregation Operations](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb546138(v=vs.120)).  
+     For more information, see [Aggregation Operations](/previous-versions/visualstudio/visual-studio-2013/bb546138(v=vs.120)).  
   
 - You cannot call aggregates against anonymous types.  
   
  The examples in the following topics derive from the Northwind sample database. For more information, see [Downloading Sample Databases](downloading-sample-databases.md).  
   
 ## In This Section  
+
  [Return the Average Value From a Numeric Sequence](return-the-average-value-from-a-numeric-sequence.md)  
  Demonstrates how to use the <xref:System.Linq.Enumerable.Average%2A> operator.  
   
@@ -35,6 +37,7 @@ ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
  Demonstrates how to use the <xref:System.Linq.Enumerable.Sum%2A> operator.  
   
 ## Related Sections  
+
  [Query Examples](query-examples.md)  
  Provides links to [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries in Visual Basic and C#.  
   

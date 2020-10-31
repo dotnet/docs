@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: 7dd6829e-79a5-4480-9023-9e588cb0bf2e
 ---
 # How to: Retrieve Member Conflict Information
+
 You can use the <xref:System.Data.Linq.MemberChangeConflict> class to retrieve information about individual members in conflict. In this same context you can provide for custom handling of the conflict for any member. For more information, see [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md).  
   
 ## Example  
+
  The following code iterates through the <xref:System.Data.Linq.ObjectChangeConflict> objects. For each object, it then iterates through the <xref:System.Data.Linq.MemberChangeConflict> objects.  
   
 > [!NOTE]

@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 9eafb6a4-dd9d-4866-85e8-0654c65abc44
 ---
 # XML CDATA Literal (Visual Basic)
+
 A literal representing an <xref:System.Xml.Linq.XCData> object.  
   
 ## Syntax  
@@ -19,6 +20,7 @@ A literal representing an <xref:System.Xml.Linq.XCData> object.
 ```  
   
 ## Parts  
+
  `<![CDATA[`  
  Required. Denotes the start of the XML CDATA section.  
   
@@ -29,9 +31,11 @@ A literal representing an <xref:System.Xml.Linq.XCData> object.
  Required. Denotes the end of the section.  
   
 ## Return Value  
+
  An <xref:System.Xml.Linq.XCData> object.  
   
 ## Remarks  
+
  XML CDATA sections contain raw text that should be included, but not parsed, with the XML that contains it. A XML CDATA section can contain any text. This includes reserved XML characters. The XML CDATA section ends with the sequence "]]>". This implies the following points:  
   
 - You cannot use an embedded expression in an XML CDATA literal because the embedded expression delimiters are valid XML CDATA content.  
@@ -46,6 +50,7 @@ A literal representing an <xref:System.Xml.Linq.XCData> object.
  The Visual Basic compiler converts the XML CDATA literal to a call to the <xref:System.Xml.Linq.XCData.%23ctor%2A> constructor.  
   
 ## Example  
+
  The following example creates a CDATA section that contains the text "Can contain literal \<XML> tags".  
   
  [!code-vb[VbXMLSamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples11.vb#23)]  

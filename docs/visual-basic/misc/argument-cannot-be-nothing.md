@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 2abd995b-36a5-45f0-b3c1-6e0c3b31a875
 ---
 # Argument cannot be Nothing
+
 A null value has been supplied for an argument that must have a value.  
   
 ## To correct this error  

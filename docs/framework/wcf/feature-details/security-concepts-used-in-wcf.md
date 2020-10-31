@@ -22,7 +22,7 @@ Public Key Infrastructure (PKI) is a system of digital certificates, certificati
  The *Kerberos protocol* is a specification for creating a security mechanism that authenticates users on a Windows domain. It allows a user to establish a secure context with other entities within a domain. Windows 2000 and later platforms use the Kerberos protocol by default. Understanding the mechanisms of the system is useful when creating a service that will interact with intranet clients. In addition, since the *Web Services Security Kerberos Binding* is widely published, you can use the Kerberos protocol to communicate with Internet clients (that is, the Kerberos protocol is interoperable). For more information about how the Kerberos protocol is implemented in Windows, see  [Microsoft Kerberos](/windows/win32/secauthn/microsoft-kerberos).  
   
 ### X.509 Certificates  
- X.509 certificates are a primary credential form used in security applications. For more information on X.509 certificates see [X.509 Public Key Certificates](/windows/win32/seccertenroll/about-x-509-public-key-certificates). X.509 certificates are stored within a certificate store. A computer running Windows has several kinds of certificate stores, each with a different purpose. For more information about the different stores, see [Certificate Stores](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc757138(v=ws.10)).  
+ X.509 certificates are a primary credential form used in security applications. For more information on X.509 certificates see [X.509 Public Key Certificates](/windows/win32/seccertenroll/about-x-509-public-key-certificates). X.509 certificates are stored within a certificate store. A computer running Windows has several kinds of certificate stores, each with a different purpose. For more information about the different stores, see [Certificate Stores](/previous-versions/windows/it-pro/windows-server-2003/cc757138(v=ws.10)).  
   
 ## Web Services Security Specifications  
  The system-defined bindings support many commonly used web services security specifications. For a complete list of system-provided bindings and the web services specifications they support see: [Web Services Protocols Supported by System-Provided Interoperability Bindings](web-services-protocols-supported-by-system-provided-interoperability-bindings.md)  
@@ -45,4 +45,4 @@ Public Key Infrastructure (PKI) is a system of digital certificates, certificati
 ## See also
 
 - [Security Overview](security-overview.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

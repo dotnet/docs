@@ -1,6 +1,6 @@
 ---
 title: .NET Core Runtime Identifier (RID) catalog
-description: Learn about the Runtime IDentifier (RID) and how RIDs are used in .NET Core.
+description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET Core.
 ms.date: 02/22/2019
 ---
 # .NET Core RID Catalog
@@ -66,7 +66,7 @@ All RIDs eventually map back to the root `any` RID.
 
 There are some considerations about RIDs that you have to keep in mind when working with them:
 
-- RIDs are **opaque strings** and should be treated as black boxes.
+- Don't try to parse RIDs to retrieve component parts.
 - Don't build RIDs programmatically.
 - Use RIDs that are already defined for the platform.
 - The RIDs need to be specific, so don't assume anything from the actual RID value.
@@ -102,7 +102,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `win10-arm`
   - `win10-arm64`
 
-For more information, see [.NET Core dependencies and requirements](install/dependencies.md?pivots=os-windows).
+For more information, see [.NET Core dependencies and requirements](./install/windows.md#dependencies).
 
 ## Linux RIDs
 
@@ -121,7 +121,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `tizen.4.0.0`
   - `tizen.5.0.0`
 
-For more information, see [.NET Core dependencies and requirements](install/dependencies.md?pivots=os-linux).
+For more information, see [.NET Core dependencies and requirements](./install/linux.md).
 
 ## macOS RIDs
 
@@ -140,7 +140,7 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
 - macOS 10.14 Mojave (.NET Core 1.1 or later versions)
   - `osx.10.14-x64`
 
-For more information, see [.NET Core dependencies and requirements](install/dependencies.md?pivots=os-macos).
+For more information, see [.NET Core dependencies and requirements](./install/macos.md#dependencies).
 
 ## See also
 

@@ -37,4 +37,4 @@ This section describes the interfaces that unmanaged hosts can use to integrate 
   
  [Hosting](index.md)  
   
- [Runtime Hosts](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))
+ [Runtime Hosts](/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))

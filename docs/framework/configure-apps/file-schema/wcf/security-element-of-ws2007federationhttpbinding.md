@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
 ---
 # \<security> element of \<ws2007FederationHttpBinding>
+
 Defines the security settings of the [\<ws2007FederationHttpBinding>](ws2007federationhttpbinding.md) element.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,6 +32,7 @@ Defines the security settings of the [\<ws2007FederationHttpBinding>](ws2007fede
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

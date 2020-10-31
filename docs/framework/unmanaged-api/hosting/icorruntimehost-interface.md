@@ -58,6 +58,6 @@ Provides methods that enable the host to start and stop the common language runt
 - <xref:System.AppDomain>
 - [Hosting](index.md)
 - [ICLRRuntimeHost Interface](iclrruntimehost-interface.md)
-- [Runtime Hosts](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))
+- [Runtime Hosts](/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))
 - [Hosting Interfaces](hosting-interfaces.md)
 - [CorRuntimeHost Coclass](corruntimehost-coclass.md)

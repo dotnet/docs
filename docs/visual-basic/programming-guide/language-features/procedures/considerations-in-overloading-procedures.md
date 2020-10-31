@@ -27,6 +27,7 @@ helpviewer_keywords:
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
 ---
 # Considerations in Overloading Procedures (Visual Basic)
+
 When you overload a procedure, you must use a different *signature* for each overloaded version. This usually means each version must specify a different parameter list. For more information, see "Different Signature" in [Procedure Overloading](./procedure-overloading.md).  
   
  You can overload a `Function` procedure with a `Sub` procedure, and vice versa, provided they have different signatures. Two overloads cannot differ only in that one has a return value and the other does not.  
@@ -34,14 +35,17 @@ When you overload a procedure, you must use a different *signature* for each ove
  You can overload a property the same way you overload a procedure, and with the same restrictions. However, you cannot overload a procedure with a property, or vice versa.  
   
 ## Alternatives to Overloaded Versions  
+
  You sometimes have alternatives to overloaded versions, particularly when the presence of arguments is optional or their number is variable.  
   
  Keep in mind that optional arguments are not necessarily supported by all languages, and parameter arrays are limited to Visual Basic. If you are writing a procedure that is likely to be called from code written in any of several different languages, overloaded versions offer the greatest flexibility.  
   
 ### Overloads and Optional Arguments  
+
  When the calling code can optionally supply or omit one or more arguments, you can define multiple overloaded versions or use optional parameters.  
   
 #### When to Use Overloaded Versions  
+
  You can consider defining a series of overloaded versions in the following cases:  
   
 - The logic in the procedure code is significantly different depending on whether the calling code supplies an optional argument or not.  
@@ -49,6 +53,7 @@ When you overload a procedure, you must use a different *signature* for each ove
 - The procedure code cannot reliably test whether the calling code has supplied an optional argument. This is the case, for example, if there is no possible candidate for a default value that the calling code could not be expected to supply.  
   
 #### When to Use Optional Parameters  
+
  You might prefer one or more optional parameters in the following cases:  
   
 - The only required action when the calling code does not supply an optional argument is to set the parameter to a default value. In such a case, the procedure code can be less complicated if you define a single version with one or more `Optional` parameters.  
@@ -56,9 +61,11 @@ When you overload a procedure, you must use a different *signature* for each ove
  For more information, see [Optional Parameters](./optional-parameters.md).  
   
 ### Overloads and ParamArrays  
+
  When the calling code can pass a variable number of arguments, you can define multiple overloaded versions or use a parameter array.  
   
 #### When to Use Overloaded Versions  
+
  You can consider defining a series of overloaded versions in the following cases:  
   
 - You know that the calling code never passes more than a small number of values to the parameter array.  
@@ -68,6 +75,7 @@ When you overload a procedure, you must use a different *signature* for each ove
 - The calling code can pass values of different data types.  
   
 #### When to Use a Parameter Array  
+
  You are better served by a `ParamArray` parameter in the following cases:  
   
 - You are not able to predict how many values the calling code can pass to the parameter array, and it could be a large number.  
@@ -77,6 +85,7 @@ When you overload a procedure, you must use a different *signature* for each ove
  For more information, see [Parameter Arrays](./parameter-arrays.md).  
   
 ## Implicit Overloads for Optional Parameters  
+
  A procedure with an [Optional](../../../language-reference/modifiers/optional.md) parameter is equivalent to two overloaded procedures, one with the optional parameter and one without it. You cannot overload such a procedure with a parameter list corresponding to either of these. The following declarations illustrate this.  
   
  [!code-vb[VbVbcnProcedures#58](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#58)]  
@@ -88,6 +97,7 @@ When you overload a procedure, you must use a different *signature* for each ove
  For a procedure with more than one optional parameter, there is a set of implicit overloads, arrived at by logic similar to that in the preceding example.  
   
 ## Implicit Overloads for a ParamArray Parameter  
+
  The compiler considers a procedure with a [ParamArray](../../../language-reference/modifiers/paramarray.md) parameter to have an infinite number of overloads, differing from each other in what the calling code passes to the parameter array, as follows:  
   
 - One overload for when the calling code does not supply an argument to the `ParamArray`  
@@ -107,6 +117,7 @@ When you overload a procedure, you must use a different *signature* for each ove
  [!code-vb[VbVbcnProcedures#71](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#71)]  
   
 ## Typeless Programming as an Alternative to Overloading  
+
  If you want to allow the calling code to pass different data types to a parameter, an alternative approach is typeless programming. You can set the type checking switch to `Off` with either the [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md) or the [-optionstrict](../../../reference/command-line-compiler/optionstrict.md) compiler option. Then you do not have to declare the parameter's data type. However, this approach has the following disadvantages compared to overloading:  
   
 - Typeless programming produces less efficient execution code.  

@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 61c4895f-f785-48f8-8bfe-db73b411c4ae
 ---
 # How to declare, instantiate, and use a Delegate (C# Programming Guide)
+
 In C# 1.0 and later, delegates can be declared as shown in the following example.  
   
  [!code-csharp[csProgGuideDelegates#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#13)]  
@@ -32,6 +33,7 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
  The use of delegates promotes good separation of functionality between the bookstore database and the client code. The client code has no knowledge of how the books are stored or how the bookstore code finds paperback books. The bookstore code has no knowledge of what processing is performed on the paperback books after it finds them.  
   
 ## Example  
+
  [!code-csharp[csProgGuideDelegates#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#12)]  
   
 ## Robust Programming  

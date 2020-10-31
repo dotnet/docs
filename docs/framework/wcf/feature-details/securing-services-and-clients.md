@@ -49,4 +49,4 @@ The information in this section focuses on programming security in Windows Commu
 ## See also
 
 - [Basic WCF Programming](../basic-wcf-programming.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

@@ -16,7 +16,7 @@ Unmanaged code exception interop is supported on Windows platforms only. Portabi
 
 Interop with `setjmp` and `longjmp` C functions is not supported. You can't use `longjmp` to skip over managed frames.
 
-For more information, see [longjmp documentation](https://docs.microsoft.com/cpp/c-runtime-library/reference/longjmp).
+For more information, see [longjmp documentation](/cpp/c-runtime-library/reference/longjmp).
 
 ## See also
 

@@ -7,8 +7,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: timheuer/issue-notifier@v1.0.2
+    - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
+    - uses: timheuer/issue-notifier@84b8e0081c0abce88ac2673f1f3ad8529a040586 #@v1.0.2
       env:
         SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
       with:

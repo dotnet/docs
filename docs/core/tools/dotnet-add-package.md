@@ -81,7 +81,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 - **`--package-directory <PACKAGE_DIRECTORY>`**
 
-  The directory where to restore the packages. The default package restore location is `%userprofile%\.nuget\packages` on Windows and `~/.nuget/packages` on macOS and Linux. For more information, see [Managing the global packages, cache, and temp folders in NuGet](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
+  The directory where to restore the packages. The default package restore location is `%userprofile%\.nuget\packages` on Windows and `~/.nuget/packages` on macOS and Linux. For more information, see [Managing the global packages, cache, and temp folders in NuGet](/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
 
 - **`-s|--source <SOURCE>`**
 
@@ -89,7 +89,7 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 - **`-v|--version <VERSION>`**
 
-  Version of the package. See [NuGet package versioning](https://docs.microsoft.com/nuget/reference/package-versioning).
+  Version of the package. See [NuGet package versioning](/nuget/reference/package-versioning).
 
 ## Examples
 
@@ -113,5 +113,5 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 ## See also
 
-- [Managing the global packages, cache, and temp folders in NuGet](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders)
-- [NuGet package versioning](https://docs.microsoft.com/nuget/reference/package-versioning)
+- [Managing the global packages, cache, and temp folders in NuGet](/nuget/consume-packages/managing-the-global-packages-and-cache-folders)
+- [NuGet package versioning](/nuget/reference/package-versioning)

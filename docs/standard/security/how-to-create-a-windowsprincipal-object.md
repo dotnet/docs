@@ -78,4 +78,4 @@ If code must repeatedly perform role-based validation, the first of the followin
 ## See also
 
 - [Principal and Identity Objects](principal-and-identity-objects.md)
-- [ASP.NET Core Security](https://docs.microsoft.com/aspnet/core/security/)
+- [ASP.NET Core Security](/aspnet/core/security/)

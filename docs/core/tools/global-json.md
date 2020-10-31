@@ -75,9 +75,9 @@ The following table shows the possible values for the `rollForward` key:
 | `minor`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, fails. |
 | `major`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher major, minor, and feature band and uses the latest patch level for that feature band. <br> If not found, fails. |
 | `latestPatch` | Uses the latest installed patch level that matches the requested major, minor, and feature band with a patch level and that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestMajor` | Uses the highest installed .NET Core SDK with a major that is greater or equal than the specified value. <br> If not found, fail. |
+| `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band and patch level that is greater or equal than the specified value. <br> If not found, fails. |
+| `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor, feature band, and patch level that is greater or equal than the specified value. <br> If not found, fails. |
+| `latestMajor` | Uses the highest installed .NET Core SDK with a version that is greater or equal than the specified value. <br> If not found, fail. |
 | `disable`     | Doesn't roll forward. Exact match required. |
 
 ### msbuild-sdks
@@ -169,7 +169,7 @@ Starting with .NET Core 3.0, the following rules apply when determining which ve
 - If a *global.json* file is found that doesn't specify an SDK version but it specifies an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether the latest SDK version can be release or prerelease depends on the value of `allowPrerelease`. `true` indicates prerelease versions are considered; `false` indicates that only release versions are considered.
 - If a *global.json* file is found and it specifies an SDK version:
 
-  - If no `rollFoward` value is set, it uses `latestPatch` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
+  - If no `rollForward` value is set, it uses `latestPatch` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
   - Whether prerelease versions are considered and what's the default behavior when `allowPrerelease` isn't set is described in the [allowPrerelease](#allowprerelease) section.
 
 ## [.NET Core 2.x](#tab/netcore2x)

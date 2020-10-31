@@ -75,5 +75,5 @@ This sample demonstrates how to implement and configure a typical service and cl
   
 ## See also
 
-- [AppFabric Management Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383405(v=azure.10))
+- [AppFabric Management Samples](/previous-versions/appfabric/ff383405(v=azure.10))
 - [Simplified Configuration](../simplified-configuration.md)

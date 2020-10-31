@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 538def39-8399-46fb-b02d-60ede4e050af
 ---
 # How to: Map Database Relationships
+
 You can encode as property references in your entity class any data relationships that will always be the same. In the Northwind sample database, for example, because customers typically place orders, there is always a relationship in the model between customers and their orders.  
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] defines an <xref:System.Data.Linq.Mapping.AssociationAttribute> attribute to help represent such relationships. This attribute is used together with the <xref:System.Data.Linq.EntitySet%601> and <xref:System.Data.Linq.EntityRef%601> types to represent what would be a foreign key relationship in a database. For more information, see the Association Attribute section of [Attribute-Based Mapping](attribute-based-mapping.md).  
@@ -30,6 +31,7 @@ You can encode as property references in your entity class any data relationship
     >  Objects in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], on the other hand, refer to each other by using property references or collections of references that you navigate by using *dot* notation.  
   
 ## Example  
+
  In the following one-to-many example, the `Customer` class has a property that declares the relationship between customers and their orders.  The `Orders` property is of type <xref:System.Data.Linq.EntitySet%601>. This type signifies that this relationship is one-to-many (one customer to many orders). The <xref:System.Data.Linq.Mapping.AssociationAttribute.OtherKey%2A> property is used to describe how this association is accomplished, namely, by specifying the name of the property in the related class to be compared with this one. In this example, the `CustomerID` property is compared, just as a database *join* would compare that column value.  
   
 > [!NOTE]
@@ -39,6 +41,7 @@ You can encode as property references in your entity class any data relationship
  [!code-vb[DlinqCustomize#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb/Module1.vb#3)]  
   
 ## Example  
+
  You can also reverse the situation. Instead of using the `Customer` class to describe the association between customers and orders, you can use the `Order` class. The `Order` class uses the <xref:System.Data.Linq.EntityRef%601> type to describe the relationship back to the customer, as in the following code example.  
   
 > [!NOTE]

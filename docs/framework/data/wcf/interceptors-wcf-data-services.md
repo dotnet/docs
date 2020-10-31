@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
 ---
 # Interceptors (WCF Data Services)
+
 WCF Data Services enables an application to intercept request messages so that you can add custom logic to an operation. You can use this custom logic to validate data in incoming messages. You can also use it to further restrict the scope of a query request, such as to insert a custom authorization policy on a per request basis.  
   
  Interception is performed by specially attributed methods in the data service. These methods are called by WCF Data Services at the appropriate point in message processing. Interceptors are defined on a per-entity set basis, and interceptor methods cannot accept parameters from the request like service operations can. Query interceptor methods, which are called when processing an HTTP GET request, must return a lambda expression that determines whether an instance of the interceptor's entity set should be returned by the query results. This expression is used by the data service to further refine the requested operation. The following is an example definition of a query interceptor.  

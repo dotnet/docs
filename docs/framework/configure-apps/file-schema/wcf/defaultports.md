@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 725d4ee5-bd46-4f0e-9c20-30ba75d6eb2c
 ---
 # \<defaultPorts>
+
 A collection of default ports listing the default communications endpoints that the client application listens to.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,9 +27,11 @@ A collection of default ports listing the default communications endpoints that 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

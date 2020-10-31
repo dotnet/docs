@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: e7e62229-23ea-4e53-bef5-380d951bf95f
 ---
 # -target:appcontainerexe (C# Compiler Options)
+
 If you use the **-target:appcontainerexe** compiler option, the compiler creates a Windows executable (.exe) file that must be run in an app container. This option is equivalent to [-target:winexe](./target-winexe-compiler-option.md) but is designed for Windows 8.x Store apps.  
   
 ## Syntax  
@@ -14,6 +15,7 @@ If you use the **-target:appcontainerexe** compiler option, the compiler creates
 ```  
   
 ## Remarks  
+
  To require the app to run in an app container, this option sets a bit in the [Portable Executable](/windows/desktop/Debug/pe-format) (PE) file. When that bit is set, an error occurs if the CreateProcess method tries to launch the executable file outside an app container.  
   
  Unless you use the [-out](./out-compiler-option.md) option, the output file name takes the name of the input file that contains the [Main](../../programming-guide/main-and-command-args/index.md) method.  
@@ -31,6 +33,7 @@ If you use the **-target:appcontainerexe** compiler option, the compiler creates
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## Example  
+
  The following command compiles `filename.cs` into a Windows executable file that can be run only in an app container.  
   
 ```console  

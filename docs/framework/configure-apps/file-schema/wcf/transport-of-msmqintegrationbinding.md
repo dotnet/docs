@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 054579e3-7fdd-47df-99ca-952706ba5c8e
 ---
 # \<transport> of \<msmqIntegrationBinding>
+
 Defines the security settings for the Message Queuing integration transport.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Defines the security settings for the Message Queuing integration transport.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -38,6 +40,7 @@ Defines the security settings for the Message Queuing integration transport.
 |`msmqSecureHashAlgorithm`|-   Specifies the algorithm to be used in computing the digest as part of signatures. Valid values include the following:<br />-   MD5<br />-   SHA1<br />-   SHA256<br />-   SHA512<br /><br /> The default value is SHA1. This attribute is of type <xref:System.ServiceModel.MsmqSecureHashAlgorithm>.<br>Due to collision problems with MD5 and SHA1, Microsoft recommends SHA256 or better.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -47,6 +50,7 @@ Defines the security settings for the Message Queuing integration transport.
 |[\<security>](security-of-basichttpbinding.md)|Defines the security settings for a MSMQ binding.|  
   
 ## Remarks  
+
  This element encapsulates the security settings for the Message Queuing integration transport. The settings are the same for both the Message Queuing integration and queued transports. It enables you to set the Authentication Mode, Encryption Algorithm, Secure Hash Algorithm, and Protection Level.  
   
 ## See also

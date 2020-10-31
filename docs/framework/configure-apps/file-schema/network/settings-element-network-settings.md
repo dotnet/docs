@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
 ---
 # \<settings> Element (Network Settings)
+
 Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -31,9 +32,11 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -57,6 +60,7 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
 ## Remarks  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## See also

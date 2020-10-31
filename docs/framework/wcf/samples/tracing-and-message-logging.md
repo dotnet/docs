@@ -130,4 +130,4 @@ This sample demonstrates how to enable tracing and message logging. The resultin
 ## See also
 
 - [Tracing](../diagnostics/tracing/index.md)
-- [AppFabric Monitoring Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [AppFabric Monitoring Samples](/previous-versions/appfabric/ff383407(v=azure.10))

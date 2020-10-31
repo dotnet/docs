@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
 ---
 # \<filter> Element for \<add> for \<sharedListeners>
+
 Adds a filter to a listener in the `sharedListeners` collection.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,6 +40,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
 |**initializeData**|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -50,11 +53,13 @@ Adds a filter to a listener in the `sharedListeners` collection.
 |`add`|Adds a listener to the **sharedListeners** collection.|  
   
 ## Remarks  
+
  If a listener is defined in an `<add>` element of the `<sharedListeners>` element, the filter for that listener should be defined in a `<filter>` element that is a child of the `<add>` element.  
   
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.  
   
 ## Example  
+
  The following example shows how to use the `<filter>` element to add a filter to the trace listener `console` in the `sharedListeners` collection.  
   
 ```xml  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bc5939fc-314a-4ea4-a533-c96958da7173
 ---
 # \<add> of \<backupList>
+
 Represents a configuration element that defines a backup endpoint element.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Represents a configuration element that defines a backup endpoint element.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ Represents a configuration element that defines a backup endpoint element.
 |name|A string that specifies the name of the backup endpoint.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

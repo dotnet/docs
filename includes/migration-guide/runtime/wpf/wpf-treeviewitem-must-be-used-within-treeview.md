@@ -13,3 +13,15 @@ A hotfix will be made available for this.
 | Scope   |Minor|
 |Version|4.5|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

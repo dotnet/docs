@@ -31,7 +31,7 @@ From an infrastructure perspective, each server can run many applications within
 
 Finally, from an availability perspective, monolithic applications must be deployed as a whole; that means that in case you must *stop and start*, all functionality and all users will be affected during the deployment window. In certain situations, the use of Azure and containers can minimize these situations and reduce the probability of downtime of your application, as you can see in Figure 4-3.
 
-You can deploy monolithic applications in Azure by using dedicated VMs for each instance. Using [Azure VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), you can scale the VMs easily.
+You can deploy monolithic applications in Azure by using dedicated VMs for each instance. Using [Azure VM Scale Sets](/azure/virtual-machine-scale-sets/), you can scale the VMs easily.
 
 You can also use [Azure App Services](https://azure.microsoft.com/services/app-service/) to run monolithic applications and easily scale instances without having to manage the VMs. Azure App Services can run single instances of Docker containers, as well, simplifying the deployment.
 

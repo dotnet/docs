@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 301584ca-a914-4100-b180-3b288d3b099e
 ---
 # \<clear> Element for bypasslist (Network Settings)
+
 Clears the proxy bypass list.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,12 +28,15 @@ Clears the proxy bypass list.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -42,12 +46,15 @@ Clears the proxy bypass list.
 |[bypasslist](bypasslist-element-network-settings.md)|Provides a set of regular expressions that describe addresses that do not use a proxy.|  
   
 ## Remarks  
+
  The `clear` element clears all entries from the bypass list.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example clears the bypass list and then adds two addresses to the bypass list. The first bypasses the proxy for all servers in the contoso.com domain; the second bypasses the proxy for all servers whose IP address begins with 192.168.  
   
 ```xml  

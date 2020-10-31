@@ -93,7 +93,7 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 
 - Windows Server 2012 includes .NET Framework 4.5, so you don't have to install it separately. Similarly, Windows Server 2012 R2 includes .NET Framework 4.5.1.
 
-- .NET Framework has limited support for the Server Core Role with Windows Server 2008 R2 SP1 or later. See [Server Core .NET Functionality](https://docs.microsoft.com/previous-versions//dd745015(v=vs.85)) for a list of unsupported APIs.
+- .NET Framework has limited support for the Server Core Role with Windows Server 2008 R2 SP1 or later. See [Server Core .NET Functionality](/previous-versions//dd745015(v=vs.85)) for a list of unsupported APIs.
 
 - .NET Framework isn't supported on Windows Server 2008 R2 for Itanium-Based Systems.
 

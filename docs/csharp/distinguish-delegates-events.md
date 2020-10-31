@@ -32,7 +32,7 @@ to use which.
 The most important consideration in determining which language feature
 to use is whether or not there must be an attached subscriber. If your
 code must call the code supplied by the subscriber, you should
-use a design based on delegates. If your code can complete all its
+use a design based on delegates when you need to implement callback. If your code can complete all its
 work without calling any subscribers, you should use a
 design based on events.
 

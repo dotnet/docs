@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
 ---
 # #elif (C# Reference)
+
 `#elif` lets you create a compound conditional directive. The `#elif` expression will be evaluated if neither the preceding [#if](./preprocessor-if.md) nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If a `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:  
   
 ```csharp
@@ -24,6 +25,7 @@ ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
  You can use the operators `==` (equality), `!=` (inequality), `&&` (and), and `||` (or), to evaluate multiple symbols. You can also group symbols and operators with parentheses.  
   
 ## Remarks  
+
  `#elif` is equivalent to using:  
   
 ```csharp

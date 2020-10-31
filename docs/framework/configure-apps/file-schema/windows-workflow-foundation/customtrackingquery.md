@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: 4e108e89-1132-46b7-868a-c7f5c69dc89f
 ---
 # \<customTrackingQuery>
+
 Represents a collection of queries that are used to track events that you define in your code activities. The query is necessary for a tracking participant to subscribe to custom tracking records.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  
@@ -33,6 +34,7 @@ Represents a collection of queries that are used to track events that you define
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -43,6 +45,7 @@ Represents a collection of queries that are used to track events that you define
 |name|A string that specifies the name of the custom tracking record that is emitted.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

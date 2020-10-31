@@ -19,7 +19,7 @@ Nearly every production-quality app has to use resources. A resource is any none
 
 The .NET Framework and .NET Core provide comprehensive support for the creation and localization of resources. In addition, .NET supports a simple model for packaging and deploying localized resources.
 
-For information about resources in ASP.NET, see [ASP.NET Web Page Resources Overview](https://docs.microsoft.com/previous-versions/aspnet/ms227427(v=vs.100)).
+For information about resources in ASP.NET, see [ASP.NET Web Page Resources Overview](/previous-versions/aspnet/ms227427(v=vs.100)).
 
 ## Create and localize resources
 

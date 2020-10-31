@@ -42,8 +42,8 @@ The **Microsoft.Extensions.Configuration.AzureKeyVault** package allows an ASP.N
 - **Data Protection key management and lifetime in ASP.NET Core** \
   [https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings](/aspnet/core/security/data-protection/configuration/default-settings)
 
-- **Microsoft.Extensions.Configuration.KeyPerFile** GitHub repository. \
-  <https://github.com/dotnet/extensions/tree/master/src/Configuration/Config.KeyPerFile>
+- **Microsoft.Extensions.Configuration** GitHub repository. \
+  <https://github.com/dotnet/extensions/tree/master/src/Configuration>
 
 >[!div class="step-by-step"]
 >[Previous](developer-app-secrets-storage.md)

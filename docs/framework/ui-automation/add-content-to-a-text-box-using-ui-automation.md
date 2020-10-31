@@ -25,4 +25,4 @@ ms.assetid: 8bdd1a73-1ecb-4a05-a891-a7827ebb767f
   
 ## See also
 
-- [TextPattern Insert Text Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771478(v=vs.90))
+- [TextPattern Insert Text Sample](/previous-versions/dotnet/netframework-3.5/ms771478(v=vs.90))

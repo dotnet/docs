@@ -7,7 +7,7 @@ namespace lambda_expressions
         static void Main(string[] args)
         {
             Introduction.Examples();
-            ExpressionAndStatementLambdas.Examples();
+            GeneralExamples.Examples();
             LambdasAndTuples.Examples();
             LambdasWithQueryMethods.Examples();
             VariableScopeWithLambdas.Main();

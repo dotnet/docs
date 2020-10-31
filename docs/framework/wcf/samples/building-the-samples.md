@@ -28,7 +28,7 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
    The client program files are built to client\bin and the service program files are built to service\bin. If the service is hosted in IIS, the service program files are also copied to the *servicemodelsamples* directory and its *\bin* subdirectory.
 
 > [!NOTE]
-> You must set the ACLs on %systemdrive%\inetpub\wwwroot to grant modify permissions to the account under which you are running. Otherwise some post build events fail. Alternatively, you can leave the ACLs as they are and run the SDK command prompt or Visual Studio as administrator. Some Visual Studio actions (such as attaching a debugger to the ASP.Net worker process) also require administrative privileges.
+> You must set the ACLs on %systemdrive%\inetpub\wwwroot to grant modify permissions to the account under which you are running. Otherwise some post build events fail. Alternatively, you can leave the ACLs as they are and run the SDK command prompt or Visual Studio as administrator. Some Visual Studio actions (such as attaching a debugger to the ASP.NET worker process) also require administrative privileges.
 
 ## Setup Batch Files and Scripts
  Setup.exe and Cleanup.exe batch files and scripts should be run from Developer Command Prompt for Visual Studio. Several set up and clean up files perform tasks that require administrative privileges and should be launched with administrator privileges.

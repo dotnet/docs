@@ -80,7 +80,7 @@ follows:
 
 [!code-csharp[Validating property setters](../../samples/snippets/csharp/properties/Person.cs#6)]
 
-The preceding example can be simplified by using a`throw` expression as part
+The preceding example can be simplified by using a `throw` expression as part
 of the property setter validation:
 
 [!code-csharp[Validating property setters](../../samples/snippets/csharp/properties/Person.cs#7)]

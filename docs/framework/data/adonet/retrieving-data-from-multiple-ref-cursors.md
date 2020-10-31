@@ -6,6 +6,7 @@ dev_langs:
 ms.assetid: 361e9bd4-447d-44b7-8629-3c11f1a7ffbb
 ---
 # Retrieving Data from Multiple REF CURSORs Using an OracleDataReader
+
 This Microsoft Visual Basic example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and reads the values using an <xref:System.Data.OracleClient.OracleDataReader>.  
   
 ```vb  

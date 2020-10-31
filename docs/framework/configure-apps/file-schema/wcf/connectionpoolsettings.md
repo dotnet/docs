@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6fa7fa65-2c6e-4eab-b8cf-7690112c0be5
 ---
 # \<connectionPoolSettings>
+
 Specifies additional connection pool settings for a Named Pipe binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -23,6 +24,7 @@ Specifies additional connection pool settings for a Named Pipe binding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -34,6 +36,7 @@ Specifies additional connection pool settings for a Named Pipe binding.
 |`maxOutboundConnectionsPerEndpoint`|A positive integer that specifies the maximum number of connections to a remote endpoint initiated by the service. Connections in excess of the limit are queued until a space below the limit becomes available. The `idleTimeout` limits the duration in which connections remain queued before an exception is thrown. The default is 10.<br /><br /> This attribute limits the number of simultaneous active connections from the client to a particular service endpoint. If this value is exceeded by having more active client connections, the service may appear unresponsive to the client. In this case, this value should be adjusted to exceed the maximum number of expected simultaneous client connections to a specific endpoint.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

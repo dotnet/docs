@@ -36,7 +36,7 @@ Currently, .NET Core doesn't have a tool search feature. Here are some ways to f
 * See the list of tools in the [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) GitHub repository.
 * Use [ToolGet](https://www.toolget.net/) to search for .NET tools.
 * See the source code for the tools created by the ASP.NET Core team in the [Tools directory of the dotnet/aspnetcore GitHub repository](https://github.com/dotnet/aspnetcore/tree/master/src/Tools).
-* Learn about diagnostic tools at [.NET Core dotnet diagnostic tools](../diagnostics/index.md#net-core-dotnet-diagnostic-global-tools).
+* Learn about diagnostic tools at [.NET Core dotnet diagnostic tools](../diagnostics/index.md#net-core-diagnostic-global-tools).
 
 ## Check the author and statistics
 

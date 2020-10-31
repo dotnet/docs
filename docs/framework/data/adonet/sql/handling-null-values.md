@@ -8,12 +8,14 @@ dev_langs:
 ms.assetid: f18b288f-b265-4bbe-957f-c6833c0645ef
 ---
 # Handling Null Values
+
 A null value in a relational database is used when the value in a column is unknown or missing. A null is neither an empty string (for character or datetime data types) nor a zero value (for numeric data types). The ANSI SQL-92 specification states that a null must be the same for all data types, so that all nulls are handled consistently. The <xref:System.Data.SqlTypes> namespace provides null semantics by implementing the <xref:System.Data.SqlTypes.INullable> interface. Each of the data types in <xref:System.Data.SqlTypes> has its own `IsNull` property and a `Null` value that can be assigned to an instance of that data type.  
   
 > [!NOTE]
 > The .NET Framework version 2.0 introduced support for nullable value types, which allow programmers to extend a value type to represent all values of the underlying type. These CLR nullable value types represent an instance of the <xref:System.Nullable> structure. This capability is especially useful when value types are boxed and unboxed, providing enhanced compatibility with object types. CLR nullable value types are not intended for storage of database nulls because an ANSI SQL null does not behave the same way as a `null` reference (or `Nothing` in Visual Basic). For working with database ANSI SQL null values, use <xref:System.Data.SqlTypes> nulls rather than <xref:System.Nullable>. For more information on working with CLR value nullable types in Visual Basic see [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md), and for C# see [Nullable value types](../../../../csharp/language-reference/builtin-types/nullable-value-types.md).  
   
 ## Nulls and Three-Valued Logic  
+
  Allowing null values in column definitions introduces three-valued logic into your application. A comparison can evaluate to one of three conditions:  
   
 - True  
@@ -25,11 +27,13 @@ A null value in a relational database is used when the value in a column is unkn
  Because null is considered to be unknown, two null values compared to each other are not considered to be equal. In expressions using arithmetic operators, if any of the operands is null, the result is null as well.  
   
 ## Nulls and SqlBoolean  
+
  Comparison between any <xref:System.Data.SqlTypes> will return a <xref:System.Data.SqlTypes.SqlBoolean>. The `IsNull` function for each `SqlType` returns a <xref:System.Data.SqlTypes.SqlBoolean> and can be used to check for null values. The following truth tables show how the AND, OR, and NOT operators function in the presence of a null value. (T=true, F=false, and U=unknown, or null.)  
   
  ![Truth Table](./media/truthtable-bpuedev11.gif "TruthTable_bpuedev11")  
   
 ### Understanding the ANSI_NULLS Option  
+
  <xref:System.Data.SqlTypes> provides the same semantics as when the ANSI_NULLS option is set on in SQL Server. All arithmetic operators (+, -, \*, /, %), bitwise operators (~, &, \|), and most functions return null if any of the operands or arguments is null, except for the property `IsNull`.  
   
  The ANSI SQL-92 standard does not support *columnName* = NULL in a WHERE clause. In SQL Server, the ANSI_NULLS option controls both default nullability in the database and evaluation of comparisons against null values. If ANSI_NULLS is turned on (the default), the IS NULL operator must be used in expressions when testing for null values. For example, the following comparison always yields unknown when ANSI_NULLS is on:  
@@ -58,6 +62,7 @@ WHERE TerritoryID IN (1, 2, 3)
  Setting ANSI_NULLS off is not supported in a `DataSet`, which always follows the ANSI SQL-92 standard for handling null values in <xref:System.Data.SqlTypes>.  
   
 ## Assigning Null Values  
+
  Null values are special, and their storage and assignment semantics differ across different type systems and storage systems. A `Dataset` is designed to be used with different type and storage systems.  
   
  This section describes the null semantics for assigning null values to a <xref:System.Data.DataColumn> in a <xref:System.Data.DataRow> across the different type systems.  
@@ -78,6 +83,7 @@ WHERE TerritoryID IN (1, 2, 3)
 > The `Nullable<T>` or <xref:System.Nullable> structure is not currently supported in the `DataSet`.  
   
 ### Multiple Column (Row) Assignment  
+
  `DataTable.Add`, `DataTable.LoadDataRow`, or other APIs that accept an <xref:System.Data.DataRow.ItemArray%2A> that gets mapped to a row, map 'null' to the DataColumn's default value. If an object in the array contains `DbNull.Value` or its strongly typed counterpart, the same rules as described above are applied.  
   
  In addition, the following rules apply for an instance of `DataRow.["columnName"]` null assignments:  
@@ -93,6 +99,7 @@ WHERE TerritoryID IN (1, 2, 3)
 5. The <xref:System.Data.DataRow.IsNull%2A> method returns `true` for both `DbNull.Value` and `INullable.Null`.  
   
 ## Assigning Null Values  
+
  The default value for any <xref:System.Data.SqlTypes> instance is null.  
   
  Nulls in <xref:System.Data.SqlTypes> are type-specific and cannot be represented by a single value, such as `DbNull`. Use the `IsNull` property to check for nulls.  
@@ -100,6 +107,7 @@ WHERE TerritoryID IN (1, 2, 3)
  Null values can be assigned to a <xref:System.Data.DataColumn> as shown in the following code example. You can directly assign null values to `SqlTypes` variables without triggering an exception.  
   
 ### Example  
+
  The following code example creates a <xref:System.Data.DataTable> with two columns defined as <xref:System.Data.SqlTypes.SqlInt32> and <xref:System.Data.SqlTypes.SqlString>. The code adds one row of known values, one row of null values and then iterates through the <xref:System.Data.DataTable>, assigning the values to variables and displaying the output in the console window.  
   
  [!code-csharp[DataWorks SqlTypes.IsNull#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTypes.IsNull/CS/source.cs#1)]
@@ -113,6 +121,7 @@ isColumnNull=True, ID=Null, Description=Null
 ```  
   
 ## Comparing Null Values with SqlTypes and CLR Types  
+
  When comparing null values, it is important to understand the difference between the way the `Equals` method evaluates null values in <xref:System.Data.SqlTypes> as compared with the way it works with CLR types. All of the <xref:System.Data.SqlTypes>`Equals` methods use database semantics for evaluating null values: if either or both of the values is null, the comparison yields null. On the other hand, using the CLR `Equals` method on two <xref:System.Data.SqlTypes> will yield true if both are null. This reflects the difference between using an instance method such as the CLR `String.Equals` method, and using the static/shared method, `SqlString.Equals`.  
   
  The following example demonstrates the difference in results between the `SqlString.Equals` method and the `String.Equals` method when each is passed a pair of null values and then a pair of empty strings.  

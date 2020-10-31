@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 62f404a5-13ea-4b93-a29f-55b74a16c9d3
 ---
 # Handling DataTable Events
+
 The <xref:System.Data.DataTable> object provides a series of events that can be processed by an application. The following table describes `DataTable` events.  
   
 |Event|Description|  
@@ -30,6 +31,7 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
 > Data corruption can occur if data is modified in a `DataSet` from which the `RowChanged` event is raised. No exception will be raised if such data corruption occurs.  
   
 ## Additional Related Events  
+
  The <xref:System.Data.DataTable.Constraints%2A> property holds a <xref:System.Data.ConstraintCollection> instance. The <xref:System.Data.ConstraintCollection> class exposes a <xref:System.Data.ConstraintCollection.CollectionChanged> event. This event fires when a constraint is added, modified, or removed from the `ConstraintCollection`.  
   
  The <xref:System.Data.DataTable.Columns%2A> property holds a <xref:System.Data.DataColumnCollection> instance. The `DataColumnCollection` class exposes a <xref:System.Data.DataColumnCollection.CollectionChanged> event. This event fires when a `DataColumn` is added, modified, or removed from the `DataColumnCollection`. Modifications that cause the event to fire include changes to the name, type, expression or ordinal position of a column.  
@@ -39,6 +41,7 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
  Changes to `DataRows` can also trigger events for an associated <xref:System.Data.DataView>. The `DataView` class exposes a <xref:System.Data.DataView.ListChanged> event that fires when a `DataColumn` value changes or when the composition or sort order of the view changes. The <xref:System.Data.DataRowView> class exposes a <xref:System.Data.DataRowView.PropertyChanged> event that fires when an associated `DataColumn` value changes.  
   
 ## Sequence of Operations  
+
  Here is the sequence of operations that occur when a `DataRow` is added, modified, or deleted:  
   
 1. Create the proposed record and apply any changes.  
@@ -68,6 +71,7 @@ The <xref:System.Data.DataTable> object provides a series of events that can be 
 > Do not throw a <xref:System.NullReferenceException> within the `RowChanged` event handler. If a <xref:System.NullReferenceException> is thrown within the `RowChanged` event of a `DataTable`, then the `DataTable` will be corrupted.  
   
 ### Example  
+
  The following example demonstrates how to create event handlers for the `RowChanged`, `RowChanging`, `RowDeleted`, `RowDeleting`, `ColumnChanged`, `ColumnChanging`, `TableNewRow`, `TableCleared`, and `TableClearing` events. Each event handler displays output in the console window when it is fired.  
   
  [!code-csharp[DataWorks DataTable.Events#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.Events/CS/source.cs#1)]

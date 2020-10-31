@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 120b3f37-7331-4816-b712-d6aab39655a4
 ---
 # \<issuedTokenParameters>
+
 Specifies the parameters for a security token issued in a Federated security scenario.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,9 +35,11 @@ Specifies the parameters for a security token issued in a Federated security sce
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

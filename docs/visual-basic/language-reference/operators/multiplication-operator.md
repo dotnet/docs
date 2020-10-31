@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 2b210382-99da-4195-89ba-b1d06f5e89ad
 ---
 # * Operator (Visual Basic)
+
 Multiplies two numbers.  
   
 ## Syntax  
@@ -28,12 +29,15 @@ number1 * number2
 |`number2`|Required. Any numeric expression.|  
   
 ## Result  
+
  The result is the product of `number1` and `number2`.  
   
 ## Supported Types  
+
  All numeric types, including the unsigned and floating-point types and `Decimal`.  
   
 ## Remarks  
+
  The data type of the result depends on the types of the operands. The following table shows how the data type of the result is determined.  
   
 |Operand data types|Result data type|  
@@ -46,9 +50,11 @@ number1 * number2
  If an expression evaluates to [Nothing](../nothing.md), it is treated as zero.  
   
 ## Overloading  
+
  The `*` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
+
  This example uses the `*` operator to multiply two numbers. The result is the product of the two operands.  
   
  [!code-vb[VbVbalrOperators#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#4)]  

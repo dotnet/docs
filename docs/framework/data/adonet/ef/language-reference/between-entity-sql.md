@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4dcdd754-ae01-4e78-bf28-8a117fb2b73e
 ---
 # BETWEEN (Entity SQL)
+
 Determines whether an expression results in a value in a specified range. The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] BETWEEN expression has the same functionality as the Transact-SQL BETWEEN expression.  
   
 ## Syntax  
@@ -13,6 +14,7 @@ expression [ NOT ] BETWEEN begin_expression AND end_expression
 ```  
   
 ## Arguments  
+
  `expression`  
  Any valid expression to test for in the range defined by `begin_expression` and `end_expression`. `expression` must be the same type as both `begin_expression` and `end_expression`.  
   
@@ -29,12 +31,15 @@ expression [ NOT ] BETWEEN begin_expression AND end_expression
  Acts as a placeholder that indicates `expression` should be within the range indicated by `begin_expression` and `end_expression`.  
   
 ## Return Value  
+
  `true` if `expression` is between the range indicated by `begin_expression` and `end_expression`; otherwise, `false`. `null` will be returned if `expression` is `null` or if `begin_expression` or `end_expression` is `null`.  
   
 ## Remarks  
+
  To specify an exclusive range, use the greater than (>) and less than (<) operators instead of BETWEEN.  
   
 ## Example  
+
  The following Entity SQL query uses BETWEEN operator to determine whether an expression results in a value in a specified range. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
 1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  

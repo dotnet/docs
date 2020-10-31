@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 659d9817-bcaa-457f-9639-169394177274
 ---
 # Communicating with the Database
+
 The topics in this section describe some basic aspects of how you establish and maintain communication with the database.  
   
 ## In This Section  
+
  [How to: Connect to a Database](how-to-connect-to-a-database.md)  
  Describes how to use the <xref:System.Data.Linq.DataContext> class to connect to a database.  
   

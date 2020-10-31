@@ -1,7 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 01/22/2019
+ms.date: 10/13/2020
 ms.technology: dotnet-standard
 ---
 # .NET Glossary
@@ -15,6 +15,18 @@ Ahead-of-time compiler.
 Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. Because AOT tool chains don't compile at run time, they don't have to minimize time spent compiling. That means they can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
 
 See [CoreRT](#corert) and [.NET Native](#net-native).
+
+## app model
+
+A [workload](#workload)-specific API. Here are some examples:
+
+* ASP.NET
+* ASP.NET Web API
+* Entity Framework (EF)
+* Windows Presentation Foundation (WPF)
+* Windows Communication Foundation (WCF)
+* Windows Workflow Foundation (WF)
+* Windows Forms (WinForms)
 
 ## ASP.NET
 
@@ -80,7 +92,7 @@ All of the runtime software, development tools, and community resources that are
 
 The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its inclusion of third-party apps and libraries. Here's an example in a sentence:
 
-- "The motivation behind the [.NET Standard](#net-standard) is to establish greater uniformity in the .NET ecosystem."
+- "The motivation behind [.NET Standard](#net-standard) is to establish greater uniformity in the .NET ecosystem."
 
 ## framework
 
@@ -120,7 +132,7 @@ Similar to [AOT](#aot), this compiler translates [IL](#il) to machine code that 
 An implementation of .NET includes:
 
 - One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
-- A class library that implements a version of the .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+- A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
 - Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in the .NET Framework and .NET 5.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
@@ -155,7 +167,7 @@ The umbrella term for [.NET Standard](#net-standard) and all [.NET implementatio
 
 When [.NET 5](#net-5-and-later-versions) (currently in preview) is released, it will be the recommended .NET implementation for all new .NET development, and so in some contexts ".NET" will imply ".NET 5 and later versions."
 
-See the [.NET guide](index.yml)
+See [.NET fundamentals](../fundamentals/index.yml)
 
 ## .NET 5 and later versions
 
@@ -163,7 +175,7 @@ A cross-platform, high-performance, open-source implementation of .NET. Includes
 
 Earlier versions of this .NET implementation are known as .NET Core. .NET 5.0 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
 
-See [.NET](../core/index.yml).
+See [.NET fundamentals](../fundamentals/index.yml).
 
 ## .NET CLI
 
@@ -226,7 +238,7 @@ An operating system and the hardware it runs on, such as Windows, macOS, Linux, 
 Here are examples of usage in sentences:
 
 - ".NET Core is a cross-platform implementation of .NET."
-- "PCL profiles represent Microsoft platforms, while the .NET Standard is agnostic to platform."
+- "PCL profiles represent Microsoft platforms, while .NET Standard is agnostic to platform."
 
 Legacy .NET documentation sometimes uses ".NET platform" to mean either an [implementation of .NET](#implementation-of-net) or the .NET [stack](#stack) including all implementations. Both of these usages tend to get confused with the primary (OS/hardware) meaning, so we try to avoid these usages.
 
@@ -260,7 +272,7 @@ Legacy .NET documentation sometimes uses "runtime" in the sense of an [implement
 
 A set of programming technologies that are used together to build and run applications.
 
-"The .NET stack" refers to the .NET Standard and all .NET implementations. The phrase "a .NET stack" may refer to one implementation of .NET.
+"The .NET stack" refers to .NET Standard and all .NET implementations. The phrase "a .NET stack" may refer to one implementation of .NET.
 
 ## target framework
 
@@ -286,10 +298,15 @@ Universal Windows Platform.
 
 An implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by .NET 5 (and .NET Core) and later versions.
 
+## workload
+
+A type of app someone is building. More generic than [app model](#app-model). For example, at the top of every .NET documentation page, including this one, is a drop-down list for **Workloads**, which lets you switch to documentation for **Web**, **Mobile**, **Cloud**, **Desktop**, and **Machine Learning \& Data**.
+
+In some contexts, *workload* refers to a collection of Visual Studio features that you can choose to install to support a particular type of app. For an example, see [Select a workload](../core/install/windows.md#select-a-workload).
+
 ## See also
 
-- [.NET Guide](index.yml)
+- [.NET fundamentals](../fundamentals/index.yml)
 - [.NET Framework Guide](../framework/index.yml)
-- [.NET Core](../core/index.yml)
 - [ASP.NET Overview](/aspnet/index#pivot=aspnet)
 - [ASP.NET Core Overview](/aspnet/index#pivot=core)

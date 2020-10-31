@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 6883c208-de5e-44da-a525-b50122e5a170
 ---
 # File name or class name not found during Automation operation (Visual Basic)
+
 The name specified for file name or class in a call to the `GetObject` function could not be found.  
   
 ## To correct this error  

@@ -27,7 +27,7 @@ Since the queries are performed to obtain the data needed by the client applicat
 
 The returned data (ViewModel) can be the result of joining data from multiple entities or tables in the database, or even across multiple aggregates defined in the domain model for the transactional area. In this case, because you are creating queries independent of the domain model, the aggregates boundaries and constraints are ignored and you're free to query any table and column you might need. This approach provides great flexibility and productivity for the developers creating or updating the queries.
 
-The ViewModels can be static types defined in classes. Or they can be created dynamically based on the queries performed (as is implemented in the ordering microservice), which is very agile for developers.
+The ViewModels can be static types defined in classes (as is implemented in the ordering microservice). Or they can be created dynamically based on the queries performed, which is very agile for developers.
 
 ## Use Dapper as a micro ORM to perform queries
 
@@ -167,7 +167,7 @@ public class OrderSummary
 }
 ```
 
-This is another reason why explicit returned types are better than dynamic types, in the long term. When using the `ProducesResponseType` attribute, you can also specify what is the expected outcome in regards possible HTTP errors/codes, like 200, 400, etc.
+This is another reason why explicit returned types are better than dynamic types, in the long term. When using the `ProducesResponseType` attribute, you can also specify what is the expected outcome in regards to possible HTTP errors/codes, like 200, 400, etc.
 
 In the following image, you can see how Swagger UI shows the ResponseType information.
 

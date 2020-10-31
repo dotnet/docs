@@ -7,6 +7,7 @@ f1_keywords:
 ms.assetid: bf0f7031-76c8-4e7e-a6c6-9ad9119134be
 ---
 # \<client>
+
 The `client` element defines a list of endpoints that a client can connect to.
 
 [**\<configuration>**](../configuration-element.md)\
@@ -27,9 +28,11 @@ The `client` element defines a list of endpoints that a client can connect to.
 ```
 
 ## Attributes and Elements
+
  The following sections describe attributes, child elements, and parent elements.
 
 ### Attributes
+
  None
 
 ### Child Elements
@@ -46,6 +49,7 @@ The `client` element defines a list of endpoints that a client can connect to.
 |[\<system.serviceModel>](system-servicemodel.md)|The root element of all Windows Communication Foundation (WCF) configuration elements.|
 
 ## Remarks
+
  The `client` section defines a list of endpoints that a client can connect to. Each endpoint listed in the client section defines its own binding, behavior, and contract. It is uniquely identified by the combination of the `name` and `contract` attributes. The client code specifies the `name` to connect to an endpoint for the service that the client implements. If the `name` attribute is omitted, the endpoint acts as the default endpoint for the contract it implements.
 
  In addition, this section also specifies settings for processing metadata.

@@ -98,4 +98,4 @@ The hosting features of Windows Server AppFabric application server are specific
 - [Getting Started Tutorial](getting-started-tutorial.md)
 - [Guide to the Documentation](guide-to-the-documentation.md)
 - [Basic WCF Programming](basic-wcf-programming.md)
-- [Windows Communication Foundation Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751514%28v=vs.90%29)
+- [Windows Communication Foundation Samples](/previous-versions/dotnet/netframework-3.5/ms751514(v=vs.90))

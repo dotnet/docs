@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 73d2980e-e73c-4987-913a-8ddc93d09144
 ---
 # Schema Restrictions
+
 The second optional parameter of the **GetSchema** method is the restrictions that are used to limit the amount of schema information returned, and it is passed to the **GetSchema** method as an array of strings. The position in the array determines the values that you can pass, and this is equivalent to the restriction number.  
   
  For example, the following table describes the restrictions supported by the "Tables" schema collection using the .NET Framework Data Provider for SQL Server. Additional restrictions for SQL Server schema collections are listed at the end of this topic.  
@@ -19,6 +20,7 @@ The second optional parameter of the **GetSchema** method is the restrictions th
 |TableType|@TableType|TABLE_TYPE|4|  
   
 ## Specifying Restriction Values  
+
  To use one of the restrictions of the "Tables" schema collection, simply create an array of strings with four elements, then place a value in the element that matches the restriction number. For example, to restrict the tables returned by the **GetSchema** method to only those tables in the "Sales" schema, set the second element of the array to "Sales" before passing it to the **GetSchema** method.  
   
 > [!NOTE]
@@ -30,6 +32,7 @@ The second optional parameter of the **GetSchema** method is the restrictions th
  You can query a .NET Framework managed provider to determine the list of supported restrictions by calling the **GetSchema** method with the name of the restrictions schema collection, which is "Restrictions". This will return a <xref:System.Data.DataTable> with a list of the collection names, the restriction names, the default restriction values, and the restriction numbers.  
   
 ### Example  
+
  The following examples demonstrate how to use the <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> method of the .NET Framework Data Provider for the SQL Server <xref:System.Data.SqlClient.SqlConnection> class to retrieve schema information about all of the tables contained in the **AdventureWorks** sample database, and to restrict the information returned to only those tables in the "Sales" schema:  
   
 ```vb  
@@ -125,6 +128,7 @@ class Program
 ```  
   
 ## SQL Server Schema Restrictions  
+
  The following tables list the restrictions for SQL Server schema collections.  
   
 ### Users  
@@ -236,6 +240,7 @@ class Program
 |Name|@Name|CONSTRAINT_NAME|4|  
   
 ## SQL Server 2008 Schema Restrictions  
+
  The following tables list the restrictions for SQL Server 2008 schema collections. These restrictions are valid beginning with version 3.5 SP1 of the .NET Framework and SQL Server 2008. They are not supported in earlier versions of the .NET Framework and SQL Server.  
   
 ### ColumnSetColumns  

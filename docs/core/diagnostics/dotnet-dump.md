@@ -65,14 +65,15 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 
   Specifies the process ID number to collect a memory dump from.
 
-- **`--type <Heap|Mini>`**
+- **`--type <Full|Heap|Mini>`**
 
-  Specifies the dump type, which determines the kinds of information that are collected from the process. There are two types:
+  Specifies the dump type, which determines the kinds of information that are collected from the process. There are three types:
 
+  - `Full` - The largest dump containing all memory including the module images.
   - `Heap` - A large and relatively comprehensive dump containing module lists, thread lists, all stacks, exception information, handle information, and all memory except for mapped images.
   - `Mini` - A small dump containing module lists, thread lists, exception information, and all stacks.
 
-  If not specified, `Heap` is the default.
+  If not specified, `Full` is the default.
 
 - **`-o|--output <output_dump_path>`**
 

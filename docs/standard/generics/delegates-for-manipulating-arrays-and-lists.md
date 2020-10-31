@@ -3,12 +3,12 @@ title: "Generic Delegates for Manipulating Arrays and Lists"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "delegates [.NET Framework], generic delegates"
+  - "delegates [.NET], generic delegates"
   - "chaining delegates"
-  - "arrays [.NET Framework], generic delegates"
-  - "generic delegates [.NET Framework]"
-  - "lists [.NET Framework], generic delegates"
-  - "generics [.NET Framework], delegates"
+  - "arrays [.NET], generic delegates"
+  - "generic delegates [.NET]"
+  - "lists [.NET], generic delegates"
+  - "generics [.NET], delegates"
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
 ---
 # Generic Delegates for Manipulating Arrays and Lists
@@ -38,6 +38,6 @@ This topic provides an overview of generic delegates for conversions, search pre
 - <xref:System.Collections.Generic?displayProperty=nameWithType>
 - <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
 - [Generics](index.md)
-- [Generic Collections in the .NET Framework](collections.md)
+- [Generic Collections in the .NET](collections.md)
 - [Generic Interfaces](interfaces.md)
 - [Covariance and Contravariance](covariance-and-contravariance.md)

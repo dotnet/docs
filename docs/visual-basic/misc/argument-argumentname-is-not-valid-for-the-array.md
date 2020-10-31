@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 2c931ede-9c41-4ad3-8dfd-d649617f567c
 ---
 # Argument '\<argumentname>' is not valid for the array
+
 An array contains an argument that is not valid.  
   
 ## To correct this error  

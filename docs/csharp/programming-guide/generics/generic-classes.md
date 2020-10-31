@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 27d6f256-cd61-41e3-bc6e-b990a53b0224
 ---
 # Generic Classes (C# Programming Guide)
+
 Generic classes encapsulate operations that are not specific to a particular data type. The most common use for generic classes is with collections like linked lists, hash tables, stacks, queues, trees, and so on. Operations such as adding and removing items from the collection are performed in basically the same way regardless of the type of data being stored.  
   
  For most scenarios that require collection classes, the recommended approach is to use the ones provided in the .NET class library. For more information about using these classes, see [Generic Collections in .NET](../../../standard/generics/collections.md).  
@@ -65,5 +66,5 @@ Generic classes encapsulate operations that are not specific to a particular dat
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../index.md)
 - [Generics](./index.md)
-- [Saving the State of Enumerators](https://docs.microsoft.com/archive/blogs/wesdyer/saving-the-state-of-enumerators)
-- [An Inheritance Puzzle, Part One](https://docs.microsoft.com/archive/blogs/ericlippert/an-inheritance-puzzle-part-one)
+- [Saving the State of Enumerators](/archive/blogs/wesdyer/saving-the-state-of-enumerators)
+- [An Inheritance Puzzle, Part One](/archive/blogs/ericlippert/an-inheritance-puzzle-part-one)

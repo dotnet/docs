@@ -15,7 +15,7 @@ This topic discusses how clients address services that read from queues and how 
   
  Path names are mapped to "FormatNames" to determine additional aspects of the address, including routing and queue manager transfer protocol. The Queue Manager supports two transfer protocols: native MSMQ protocol and SOAP Reliable Messaging Protocol (SRMP).  
   
- For more information about MSMQ path and format names, see [About Message Queuing](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms706032(v=vs.85)).  
+ For more information about MSMQ path and format names, see [About Message Queuing](/previous-versions/windows/desktop/legacy/ms706032(v=vs.85)).  
   
 ## NetMsmqBinding and Service Addressing  
  When addressing a message to a service, the scheme in the URI is chosen based on the transport used for communication. Each transport in WCF has a unique scheme. The scheme must reflect the nature of transport used for communication. For example, net.tcp, net.pipe, HTTP, and so on.  
@@ -90,7 +90,7 @@ This topic discusses how clients address services that read from queues and how 
   
  msmq.formatname:\<*MSMQ-format-name*>>  
   
- The MSMQ-format-name is of the form specified by MSMQ in [About Message Queuing](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms706032(v=vs.85)).  
+ The MSMQ-format-name is of the form specified by MSMQ in [About Message Queuing](/previous-versions/windows/desktop/legacy/ms706032(v=vs.85)).  
   
  Note that you can only use direct format names, and public and private format names (requires Active Directory integration) when receiving messages from a queue using `MsmqIntegrationBinding`. However, it is advised that you use direct format names. For example, on Windows Vista, using any other format name causes an error because the system attempts to open a subqueue, which can only be opened with direct format names.  
   

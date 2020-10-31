@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 75101744-eed8-4d61-91f4-5fc4473a21f2
 ---
 # \<message> of \<wsDualHttpBinding>
+
 Defines message-level security for the [\<wsDualHttpBinding>](wsdualhttpbinding.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,9 +25,11 @@ Defines message-level security for the [\<wsDualHttpBinding>](wsdualhttpbinding.
 ```  
   
 ## Type  
+
  <xref:System.ServiceModel.MessageSecurityOverHttp>  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -69,6 +72,7 @@ Defines message-level security for the [\<wsDualHttpBinding>](wsdualhttpbinding.
 |IssuedToken|Specifies a custom token, usually issued by a Security Token Service.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

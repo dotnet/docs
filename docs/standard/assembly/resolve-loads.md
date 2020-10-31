@@ -3,10 +3,10 @@ title: "Resolve assembly loads"
 description: This article describes the .NET AppDomain.AssemblyResolve event. Use this event for applications that require control over assembly loading.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
-  - "assemblies [.NET Framework], resolving loads"
+  - "assemblies [.NET], resolving loads"
   - "application domains, loading assemblies"
   - "resolving assembly loads"
-  - "assemblies [.NET Framework], loading"
+  - "assemblies [.NET], loading"
   - "application domains, resolving assembly loads"
 ms.assetid: 5099e549-f4fd-49fb-a290-549edd456c6a
 dev_langs: 
@@ -15,6 +15,7 @@ dev_langs:
   - "cpp"
 ---
 # Resolve assembly loads
+
 .NET provides the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event for applications that require greater control over assembly loading. By handling this event, your application can load an assembly into the load context from outside the normal probing paths, select which of several assembly versions to load, emit a dynamic assembly and return it, and so on. This topic provides guidance for handling the <xref:System.AppDomain.AssemblyResolve> event.  
   
 > [!NOTE]

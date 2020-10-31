@@ -5,6 +5,7 @@ ms.assetid: 9354eee3-f692-4ad6-8427-3169686b8bcc
 author: "BrucePerlerMS"
 ---
 # \<claimsAuthorizationManager>
+
 Registers a claims authorization manager for the incoming claims.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Registers a claims authorization manager for the incoming claims.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -34,6 +36,7 @@ Registers a claims authorization manager for the incoming claims.
 |type|A custom type that derives from the <xref:System.Security.Claims.ClaimsAuthorizationManager> class. For more information about how to specify the `type` attribute, see [Custom Type References](../windows-workflow-foundation/index.md).|  
   
 ### Child Elements  
+
  If there is no `type` attribute, or if the `type` attribute references the <xref:System.Security.Claims.ClaimsAuthenticationManager> class, the `<claimsAuthorizationManager>` element does not take child elements; however, classes derived from <xref:System.Security.Claims.ClaimsAuthorizationManager> can define child configuration elements.  
   
 ### Parent Elements  
@@ -43,6 +46,7 @@ Registers a claims authorization manager for the incoming claims.
 |[\<identityConfiguration>](identityconfiguration.md)|Specifies service-level identity settings.|  
   
 ## Remarks  
+
  The default behavior provided through the <xref:System.Security.Claims.ClaimsAuthorizationManager> class always authorizes the incoming claims. If no `type` attribute is specified or if the `type` attribute specifies the <xref:System.Security.Claims.ClaimsAuthorizationManager> class, the `<claimsAuthorizationManager>` element does not take child elements. You can specify the `type` attribute to register a type derived from the <xref:System.Security.Claims.ClaimsAuthorizationManager> class to implement custom behavior. Derived classes can support configuration through child elements of the `<claimsAuthorizationManager>` element by overriding the <xref:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration%2A> method to handle these elements. The schema defined for the child elements is up to the designer of the class.  
   
 > [!IMPORTANT]
@@ -51,6 +55,7 @@ Registers a claims authorization manager for the incoming claims.
  This element sets the <xref:System.IdentityModel.Configuration.IdentityConfiguration.ClaimsAuthorizationManager%2A?displayProperty=nameWithType> property.  
   
 ## Example  
+
  The following XML shows the configuration for a claims authorization manager that implements policy composed of resource-action pairs each of which specifies boolean combinations of the claims that a requestor must possess to perform the action on the resource. The code that implements the claims authorization manager capable of using this policy can be found in the `ClaimsBasedAuthorization` sample.  
   
 ```xml  

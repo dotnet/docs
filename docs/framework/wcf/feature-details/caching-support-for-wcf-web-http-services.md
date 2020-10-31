@@ -5,7 +5,7 @@ ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
 ---
 # Caching Support for WCF Web HTTP Services
 
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] enables you to use the declarative caching mechanism already available in ASP.NET in your WCF Web HTTP services. This allows you to cache responses from your WCF Web HTTP service operations. When a user sends an HTTP GET to your service that is configured for caching, ASP.NET sends back the cached response and the service method is not called. When the cache expires, the next time a user sends an HTTP GET, your service method is called and the response is once again cached. For more information about ASP.NET caching, see [ASP.NET Caching Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178597(v=vs.100)).  
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] enables you to use the declarative caching mechanism already available in ASP.NET in your WCF Web HTTP services. This allows you to cache responses from your WCF Web HTTP service operations. When a user sends an HTTP GET to your service that is configured for caching, ASP.NET sends back the cached response and the service method is not called. When the cache expires, the next time a user sends an HTTP GET, your service method is called and the response is once again cached. For more information about ASP.NET caching, see [ASP.NET Caching Overview](/previous-versions/aspnet/ms178597(v=vs.100)).  
   
 ## Basic Web HTTP Service Caching  
 
@@ -119,7 +119,7 @@ Also turn on ASP.NET compatibility mode in the Web.config file as shown in the f
  Here the cache duration is set to 60 seconds, `varyByParam` is set to none, and `sqlDependency` is set to a semicolon-delimited list of database name/table pairs separated by colons. When data in `MyTable` is changed the cached response for the service operation is removed and when the operation is invoked a new response is generated (by calling the service operation), cached, and returned to the client.  
   
 > [!IMPORTANT]
-> For ASP.NET to access a SQL database, you must use the [ASP.NET SQL Server Registration Tool](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms229862(v=vs.90)). In addition you must allow the appropriate user account access to the database and table. For more information, see [Accessing SQL Server from a Web Application](https://docs.microsoft.com/previous-versions/aspnet/ht43wsex(v=vs.100)).  
+> For ASP.NET to access a SQL database, you must use the [ASP.NET SQL Server Registration Tool](/previous-versions/dotnet/netframework-3.5/ms229862(v=vs.90)). In addition you must allow the appropriate user account access to the database and table. For more information, see [Accessing SQL Server from a Web Application](/previous-versions/aspnet/ht43wsex(v=vs.100)).  
   
 ## Conditional HTTP GET Based Caching  
 

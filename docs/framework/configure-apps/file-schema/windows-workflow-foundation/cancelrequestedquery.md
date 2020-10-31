@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: 8da9b1c4-338a-4f23-9830-6d257772d340
 ---
 # \<cancelRequestedQuery>
+
 Represents a query that is used to track requests to cancel a child activity by the parent activity. The query is necessary for a tracking participant to subscribe to cancel request record objects.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md).  
@@ -33,6 +34,7 @@ Represents a query that is used to track requests to cancel a child activity by 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -43,6 +45,7 @@ Represents a query that is used to track requests to cancel a child activity by 
 |childActivityName|A string that specifies the name of the child activity for which cancellation was requested.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

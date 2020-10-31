@@ -13,13 +13,13 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 ### To run the sample on the same machine  
   
-1. If the service is hosted by IIS, ensure that you can access the service using a browser by entering the following address: `http://localhost/servicemodelsamples/service.svc`. A confirmation page should be displayed in response. If the confirmation page is not displayed, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+1. If the service is hosted by IIS, ensure that you can access the service using a browser by entering the following address: `http://localhost/servicemodelsamples/service.svc`. A confirmation page should be displayed in response. If the confirmation page is not displayed, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 2. If the service is self-hosted, run Service.exe from \service\bin, from under the language-specific folder. Service activity is displayed on the service console window.  
   
 3. Run Client.exe from \client\bin\\, from under the language-specific folder. Client activity is displayed on the client console window.  
   
-4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across machines  
   
@@ -76,4 +76,4 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
 ## See also
 
 - [Building the Windows Communication Foundation Samples](building-the-samples.md)
-- [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))
+- [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

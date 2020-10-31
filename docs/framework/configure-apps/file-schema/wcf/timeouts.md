@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7fccd436-b326-48ec-8de1-c16817a09e0d
 ---
 # \<timeOuts>
+
 Represents a configuration element that specifies the interval of time allowed for the service host to open or close.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,6 +22,7 @@ Represents a configuration element that specifies the interval of time allowed f
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -31,6 +33,7 @@ Represents a configuration element that specifies the interval of time allowed f
 |`openTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time allowed for the service host to open.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

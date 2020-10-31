@@ -113,7 +113,7 @@ Using an official repository of a language stack with a version number ensures t
 
 The following is a sample DockerFile for a .NET Core container:
 
-```Dockerfile
+```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80

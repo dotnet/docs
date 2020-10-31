@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "characters, escapes"
   - "regular expressions, character escapes"
   - "escape characters"
-  - ".NET Framework regular expressions, character escapes"
+  - ".NET regular expressions, character escapes"
   - "constructs, character escapes"
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
 ---
@@ -52,7 +52,7 @@ The backslash (\\) in a regular expression indicates one of the following:
  [!code-csharp[RegularExpressions.Language.Escapes#1](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.escapes/cs/escape1.cs#1)]
  [!code-vb[RegularExpressions.Language.Escapes#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.escapes/vb/escape1.vb#1)]  
   
- The regular expression `\G(.+)[\t|\u007c](.+)\r?\n` is interpreted as shown in the following table.  
+ The regular expression `\G(.+)[\t\u007c](.+)\r?\n` is interpreted as shown in the following table.  
   
 |Pattern|Description|  
 |-------------|-----------------|  

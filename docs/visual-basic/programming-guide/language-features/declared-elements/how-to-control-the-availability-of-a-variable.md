@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
 ---
 # How to: Control the Availability of a Variable (Visual Basic)
+
 You control the availability of a variable by specifying its *access level*. The access level determines what code has permission to read or write to the variable.  
   
 - *Member variables* (defined at module level and outside any procedure) default to public access, which means any code that can see them can access them. You can change this by specifying an access modifier.  
@@ -48,6 +49,7 @@ You control the availability of a variable by specifying its *access level*. The
      You can read or write to the variable from anywhere within the procedure, but not from outside it.  
   
 ## Protected and Friend Access  
+
  You can limit the access level of a variable to its class and any derived classes, or to its assembly. You can also specify the union of these limitations, which allows access from code in any derived class or in any other place in the same assembly. You specify this union by combining the `Protected` and `Friend` keywords in the same declaration.  
   
 #### To make a variable accessible only from within its class and any derived classes  
@@ -67,6 +69,7 @@ You control the availability of a variable by specifying its *access level*. The
      You can read or write to the variable from anywhere within the module, class, or structure, as well as from any code in the same assembly, but not from outside the assembly.  
   
 ## Example  
+
  The following example shows declarations of variables with `Public`, `Protected`, `Friend`, `Protected Friend`, and `Private` access levels. Note that when the `Dim` statement specifies an access level, you do not need to include the `Dim` keyword.  
   
 ```vb  
@@ -78,6 +81,7 @@ Private numberForMeOnly As Integer
 ```  
   
 ## .NET Framework Security  
+
  The more restrictive the access level of a variable, the smaller the chances that malicious code can make improper use of it.  
   
 ## See also

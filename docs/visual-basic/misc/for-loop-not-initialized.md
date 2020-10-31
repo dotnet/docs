@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 7f5b8b87-1a28-474d-8639-9de97922ceab
 ---
 # For loop not initialized (Visual Basic)
+
 You jumped into the middle of a `For...Next` loop.  
   
 ## To correct this error  

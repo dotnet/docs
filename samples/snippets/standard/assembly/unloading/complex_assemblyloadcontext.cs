@@ -1,20 +1,26 @@
-﻿class TestAssemblyLoadContext : AssemblyLoadContext
+﻿using System.Reflection;
+using System.Runtime.Loader;
+
+namespace complex
 {
-    private AssemblyDependencyResolver _resolver;
-
-    public TestAssemblyLoadContext(string mainAssemblyToLoadPath) : base(isCollectible: true)
+    class TestAssemblyLoadContext : AssemblyLoadContext
     {
-        _resolver = new AssemblyDependencyResolver(mainAssemblyToLoadPath);
-    }
+        private AssemblyDependencyResolver _resolver;
 
-    protected override Assembly Load(AssemblyName name)
-    {
-        string assemblyPath = _resolver.ResolveAssemblyToPath(name);
-        if (assemblyPath != null)
+        public TestAssemblyLoadContext(string mainAssemblyToLoadPath) : base(isCollectible: true)
         {
-            return LoadFromAssemblyPath(assemblyPath);
+            _resolver = new AssemblyDependencyResolver(mainAssemblyToLoadPath);
         }
 
-        return null;
+        protected override Assembly Load(AssemblyName name)
+        {
+            string assemblyPath = _resolver.ResolveAssemblyToPath(name);
+            if (assemblyPath != null)
+            {
+                return LoadFromAssemblyPath(assemblyPath);
+            }
+
+            return null;
+        }
     }
 }

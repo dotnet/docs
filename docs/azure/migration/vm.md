@@ -55,6 +55,7 @@ Azure Virtual Networks enable you to:
 To get started, see the [Virtual Network documentation](/azure/virtual-network/)
 
 ### Active Directory
+
 Many applications use Active Directory for authentication and identity management.
 
 - Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory. To get started, see [Integrate your on-premises directories with Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnect).
@@ -70,11 +71,13 @@ If your application is using an on-premises database, your app will not be able 
 ### High Availability and Scalability
 
 #### Virtual Machine Scale Sets
+
 You want to make sure that your application is highly available and can scale, migrate your VM image to an Azure Virtual Machine Scale Set to improve the availability and scalability of your application. VM Scale Sets provide the ability to use an existing VM you've already configured or set up a build pipeline to build an image with your application.
 
 To get started, see [Deploy your application on virtual machine scale sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).
 
 #### Centralized Logging
+
 When running your application across multiple instances, consider storing your logs in a centralized location such as [Azure Storage](/azure/storage/).
 
 ## Next steps

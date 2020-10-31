@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
 ---
 # \<httpListener> Element (Network Settings)
+
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -22,6 +23,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 ## Type  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -31,6 +33,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 |unescapeRequestUrl|A Boolean value that indicates if a <xref:System.Net.HttpListener> instance uses the raw unescaped URI instead of the converted URI.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -40,6 +43,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 |[settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
+
  The **unescapeRequestUrl** attribute indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.  
   
  When a <xref:System.Net.HttpListener> instance receives a request through the `http.sys` service, it creates an instance of the URI string provided by `http.sys`, and exposes it as the <xref:System.Net.HttpListenerRequest.Url%2A?displayProperty=nameWithType> property.  
@@ -108,6 +112,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
  The <xref:System.Net.Configuration.HttpListenerElement.UnescapeRequestUrl%2A> property can be used to get the current value of the **unescapeRequestUrl** attribute from applicable configuration files.  
   
 ## Example  
+
  The following example shows how to configure the <xref:System.Net.HttpListener> class when it receives a request to use the raw URI instead of the converted URI from `http.sys` as input to the <xref:System.Net.HttpListenerRequest.Url%2A> property.  
   
 ```xml  

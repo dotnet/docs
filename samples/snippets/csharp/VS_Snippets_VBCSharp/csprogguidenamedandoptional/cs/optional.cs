@@ -61,8 +61,8 @@ namespace OptionalNamespace
             int optionalint = 10)
             //</Snippet15>
         {
-            Console.WriteLine("{0}: {1}, {2}, and {3}.", _name, required, optionalstr,
-                optionalint);
+            Console.WriteLine(
+                $"{_name}: {required}, {optionalstr}, and {optionalint}.");
         }
     }
 

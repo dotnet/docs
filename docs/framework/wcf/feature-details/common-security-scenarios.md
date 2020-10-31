@@ -76,4 +76,4 @@ The topics in this section catalog a number of possible client and service secur
 ## See also
 
 - [Security Guidance and Best Practices](security-guidance-and-best-practices.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

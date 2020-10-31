@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6d7ea986-f232-49fe-842c-f934d9966889
 ---
 # \<serviceDebug>
+
 Specifies debugging and help information features for a Windows Communication Foundation (WCF) service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Specifies debugging and help information features for a Windows Communication Fo
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -45,6 +47,7 @@ Specifies debugging and help information features for a Windows Communication Fo
 |includeExceptionDetailInFaults|A value that specifies whether to include managed exception information in the detail of SOAP faults returned to the client for debugging purposes. The default is `false`.<br /><br /> If you set this attribute to `true`, you can enable the flow of managed exception information to the client for debugging purposes, as well as the publication of HTML information files for users browsing the service in Web browsers. **Caution:**  Returning managed exception information to clients  can be a security risk. This is because exception details expose information about the internal service implementation that could be used by unauthorized clients.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -54,6 +57,7 @@ Specifies debugging and help information features for a Windows Communication Fo
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
+
  Setting `includeExceptionDetailInFaults` to `true` allows the service to return any exception that is thrown by the application code even if the exception is not declared using the <xref:System.ServiceModel.FaultContractAttribute>. This setting is useful when debugging cases where the server is throwing an unexpected exception. By using this attribute, a serialized form of the unknown exception is returned and you can examine more details of the exception.  
   
 > [!CAUTION]

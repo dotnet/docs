@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 993868ca-16e3-47b6-9915-c29cd63b0a21
 ---
 # Bitwise Canonical Functions
+
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes bitwise canonical functions.  
   
 ## Remarks  
+
  The following table shows the bitwise [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions. These functions will return `Null` if `Null` input is provided. The return type of the functions is the same as the argument type(s). Arguments must be of the same type, if the function takes more than one argument. To perform bitwise operations across different types, you need to cast to the same type explicitly.  
   
 |Function|Description|  

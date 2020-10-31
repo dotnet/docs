@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 32f9b588-c832-44c4-a7e0-fcce635df59a
 ---
 # Loading Deferred Content (WCF Data Services)
+
 By default, WCF Data Services limits the amount of data that a query returns. However, you can explicitly load additional data, including related entities, paged response data, and binary data streams, from the data service when it is needed. This topic describes how to load such deferred content into your application.  
   
 ## Related Entities  
+
  When you execute a query, only entities in the addressed entity set are returned. For example, when a query against the Northwind data service returns `Customers` entities, by default the related `Orders` entities are not returned, even though there is a relationship between `Customers` and `Orders`. Also, when paging is enabled in the data service, you must explicitly load subsequent data pages from the service. There are two ways to load related entities:  
   
 - **Eager loading**: You can use the `$expand` query option to request that the query return entities that are related by an association to the entity set that the query requested. Use the <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> method on the <xref:System.Data.Services.Client.DataServiceQuery%601> to add the `$expand` option to the query that is sent to the data service. You can request multiple related entity sets by separating them by a comma, as in the following example. All entities requested by the query are returned in a single response. The following example returns `Order_Details` and `Customers` together with the `Orders` entity set:  
@@ -31,6 +33,7 @@ By default, WCF Data Services limits the amount of data that a query returns. Ho
  When you consider which option to use, realize that there is a tradeoff between the number of requests to the data service and the amount of data that is returned in a single response. Use eager loading when your application requires associated objects and you want to avoid the added latency of additional requests to explicitly retrieve them. However, if there are cases when the application only needs the data for specific related entity instances, you should consider explicitly loading those entities by calling the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method. For more information, see [How to: Load Related Entities](how-to-load-related-entities-wcf-data-services.md).  
   
 ## Paged Content  
+
  When paging is enabled in the data service, the number of entries in the feed that the data service returns is limited by the configuration of the data service. Page limits can be set separately for each entity set. For more information, see [Configuring the Data Service](configuring-the-data-service-wcf-data-services.md). When paging is enabled, the final entry in the feed contains a link to the next page of data. This link is contained in a <xref:System.Data.Services.Client.DataServiceQueryContinuation%601> object. You obtain the URI to the next page of data by calling the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method on the <xref:System.Data.Services.Client.QueryOperationResponse%601> returned when the <xref:System.Data.Services.Client.DataServiceQuery%601> is executed. The returned <xref:System.Data.Services.Client.DataServiceQueryContinuation%601> object is then used to load the next page of results. You must enumerate the query result before you call the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method. Consider using a `do…while` loop to first enumerate the query result and then check for a `non-null` next link value. When the <xref:System.Data.Services.Client.QueryOperationResponse%601.GetContinuation%2A> method returns `null` (`Nothing` in Visual Basic), there are no additional result pages for the original query. The following example shows a `do…while` loop that loads paged customer data from the Northwind sample data service.  
   
  [!code-csharp[Astoria Northwind Client#LoadNextLink](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#loadnextlink)]
@@ -49,6 +52,7 @@ By default, WCF Data Services limits the amount of data that a query returns. Ho
  For more information, see [How to: Load Paged Results](how-to-load-paged-results-wcf-data-services.md).  
   
 ## Binary Data Streams  
+
  WCF Data Services enables you to access binary large object (BLOB) data as a data stream. Streaming defers the loading of binary data until it is needed, and the client can more efficiently process this data. In order to take advantage of this functionality, the data service must implement the <xref:System.Data.Services.Providers.IDataServiceStreamProvider> provider. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md). When streaming is enabled, entity types are returned without the related binary data. In this case, you must use the <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> method of the <xref:System.Data.Services.Client.DataServiceContext> class to access the data stream for the binary data from the service. Similarly, use the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method to add or change binary data for an entity as a stream. For more information, see [Working with Binary Data](working-with-binary-data-wcf-data-services.md).  
   
 ## See also

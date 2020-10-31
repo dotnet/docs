@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 0121f49d-bff2-4bc6-af06-f1628dcd61f1
 ---
 # \<specifiedPickupDirectory> Element (Network Settings)
+
 Configures the local directory for a Simple Mail Transport Protocol (SMTP) server.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +39,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 |`pickupDirectoryLocation`|The directory where applications save email for later processing by the SMTP server.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,9 +49,11 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 |[\<smtp> Element (Network Settings)](smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
   
 ## Remarks  
+
  The `specifiedPickupDirectory` attribute sets the directory where applications save mail messages to be processed by the SMTP server.  
   
 ## Example  
+
  The following example specifies c:\maildrop as the mail pickup directory.  
   
 ```xml  

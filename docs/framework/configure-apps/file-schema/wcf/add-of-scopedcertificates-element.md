@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e21c1ef8-d6d6-4bca-ac5a-6fbf4bd77412
 ---
 # \<add> of \<scopedCertificates> Element
+
 Adds an X.509 certificate to the collection of scoped certificates.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ Adds an X.509 certificate to the collection of scoped certificates.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -64,6 +66,7 @@ Adds an X.509 certificate to the collection of scoped certificates.
 |Enumeration|Values include: AddressBook, AuthRoot, CertificateAuthority, Disallowed, My, Root, TrustedPeople, and TrustedPublisher.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -73,6 +76,7 @@ Adds an X.509 certificate to the collection of scoped certificates.
 |[\<scopedCertificates>](scopedcertificates-element.md)|Represents a collection of X.509 certificates provided by specific services (scoped) for authentication.|  
   
 ## Remarks  
+
  This element enables the client to configure a service certificate to use based on the URL of the service it communicates with. This is especially useful in issued token scenarios where a client can be communicating to multiple services (the end service as well as intermediary security token services). For bindings that use certificate-based message security, this certificate is used to encrypt messages to the service, and is expected to be used by the service for signing replies to the client.  
   
  If a binding requires a certificate for the service and no specific certificate for the service URL is found in the ScopedCertificates, the default certificate is used.  
@@ -80,6 +84,7 @@ Adds an X.509 certificate to the collection of scoped certificates.
  For more information, see the "Scoped Certificates" section of [How to: Create a Federated Client](../../../wcf/feature-details/how-to-create-a-federated-client.md).  
   
 ## Example  
+
  The following example adds an X.509 certificate the collection.  
   
 ```xml  

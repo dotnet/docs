@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 0ce0c4b3-3604-4638-9363-6c9333d0cc9d
 ---
 # Printer error
+
 An error occurred at the printer, but no other information was returned to the computer that sent the file.  
   
 ### To correct the error  

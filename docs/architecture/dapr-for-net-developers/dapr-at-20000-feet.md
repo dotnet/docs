@@ -23,7 +23,7 @@ Imagine flying in a jet at 20,000 feet. You look out the window and see the land
 
 At its core, Dapr is a `portable, event-driven runtime`. 
 
- - `Portable` - Your write your application code once and run it on public clouds and edge devices. With a configuration file, you specify the external infrastructure services that you wish to include in your environment. These services might include pub-sub messaging, state management, or service-to-service invocation. Later, if you move your app to another environment, you swap out the configuration file with one that specifies bindings to service components in the new environment. Your service doesn't hold direct references to the external services - Dapr does that.
+ - `Portable` - Your write your application code once and run it on public clouds and edge devices. With a configuration file, you specify the external infrastructure capabilities that you wish to include in your environment. These capabilities include different kinds of infrastructure service components like pub-sub messaging and state management. They also include communication plumbing like service-to-service invocation. Later, if you move your app, you update the configuration with infrastructure and communication bindings for the new environment. Your service never holds direct references to  infrastructure capabilities - Dapr does that.
 
  - `Event-driven` - Dapr supports event-driven resource binding and pub-sub messaging services. You can receive events from external resources, such as datastores, streaming services, or web hooks. You can also publish and subscribe to events from message brokers - with minimal code and, again, no direct reference to the external service. 
 
@@ -40,11 +40,11 @@ Figure 2-x shows Dapr from 20,000 feet.
 ![Dapr at 20,000 feet](./media/dapr-high-level.png)
 **Figure 2-x**. Dapr at 20,000 feet.
 
-At the top of the figure, note how Dapr provides language-specific SDKs for most popular development platforms, including Go, Node.js, Python, .NET, Java, and JavaScript. This book will focus on the .NET Dapr SDK that also provides direct support for ASP.NET Core services.
+At the top of the figure, note how Dapr provides language-specific SDKs for popular development platforms, including Go, Node.js, Python, .NET, Java, and JavaScript. This book will focus on the .NET Dapr SDK, which also provides direct support for ASP.NET Core services.
 
-While language-specific SDKs are available, Dapr is language and platform agnostic. The second row shows how any programming platform can call Dapr via its HTTP and gRPC APIs.  
+While language-specific SDKs enhance the developer experience, Dapr is  platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. As the second row highlights, any programming platform can call Dapr via its native HTTP and gRPC APIs.  
 
-The blue boxes across the center of the figure present the distributed building blocks. Each abstracts an infrastructure  service that your application can consume.
+The blue boxes across the center of the figure present the distributed building blocks. Each abstracts an infrastructure capability that your application can consume.
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run. Note that Dapr is supported across all public clouds.
 
@@ -56,13 +56,13 @@ At this point, our jet turns around and flies back over Dapr, descending in alti
 
 From our new perspective, we see that Dapr is built on the concept of `building blocks`. 
 
-A building block is an HTTP or gRPC API that encapsulates an infrastructure service. Figure 2-x shows the available blocks for Dapr v 1.0.
+A building block is an HTTP or gRPC API that encapsulates an infrastructure capability. Figure 2-x shows the available blocks for Dapr v 1.0.
 
 ![Dapr building blocks](./media/building-block.png)
 
 **Figure 2-x**. Dapr building blocks.
 
-The following table describes the infrastructure service contained in each block.
+The following table describes the services provided by each block.
 
 | Building Block | Description |
 | :-------- | :-------- |
@@ -74,19 +74,19 @@ The following table describes the infrastructure service contained in each block
 | [Actors](https://github.com/dapr/components-contrib/tree/master/secretstores) | Encapsulate logic and data in reusable actor objects. |
 | [Resource bindings](https://github.com/dapr/components-contrib/tree/master/exporters) | Trigger code from events raised by external resources with bi-directional communication. |
 
-Building blocks treat infrastructure services as a black box. When your code requires access to an infrastructure service, it calls a building block API. Figure 2-x shows this interaction. 
+Building blocks abstract the implementation of infrastructure capabilities from your services. Figure 2-x shows this interaction. 
 
 ![Dapr building blocks](./media/building-block-integration.png)
 
 **Figure 2-x**. Dapr building block integration.
 
-Note how your service invokes the building block via HTTP or gRPC. Under the hood, the building block invokes pre-configured components that provide the concrete implementation for an external infrastructure service. Your code knows about the building block, but not the underlying infrastructure components. Your service takes no dependencies on external SDKs or libraries - Dapr takes care of that. Each building block is independent. You can use one, some, or all of them in your application.
+Note how your service invokes the building block with either HTTP or gRPC. Under the hood, the building block invokes pre-configured components that provide the concrete implementation for an external capability. Your code only knows about the building block. Your service takes no dependencies on external SDKs or libraries - Dapr takes care of that. Each building block is independent. You can use one, some, or all of them in your application.
 
 We provide detail explanation and code samples for each Dapr building block in chapter x. Now, our jet descends even more to give us a close look at the lower-level Dapr components layer.
 
 ### Components
 
-While building blocks expose an API to invoke infrastructure services, Dapr components provide the concrete implementation to make it happen. 
+While building blocks expose an API to invoke infrastructure capabilities, Dapr components provide the concrete implementation to make it happen. 
 
 Consider, the Dapr `state store` component. It provides a uniform way to manage state for CRUD operations. Without any change to your service code, you could implement any of the following state components:
 
@@ -144,7 +144,7 @@ Perhaps you start with Azure Redis Cache as your state store. You specify it wit
    ```   
 Note how the `spec` section specifies Azure Redis Cache. Dapr will bind your state management calls to Redis Cache.
 
-If you are familiar with Kubernetes, you'll note how Dapr configuration files closely resemble Kubernetes manifest files. Essentially, they define a policy that affects how each Dapr instance behaves and the specific infrastructure service implementation, or component. Configuration can be applied to Dapr instances dynamically.
+If you're familiar with Kubernetes, you'll note how Dapr configuration files closely resemble Kubernetes manifest files. Essentially, they define a policy that affects how each Dapr instance behaves and the specific infrastructure component. Configuration can be applied to Dapr instances dynamically.
 
 At a later time, you may want to migrate your state management to Azure Table Storage. Azure Table Storage provides state management capabilities that are affordable and highly durable.
 
@@ -166,7 +166,9 @@ While your service code would remain the same. you would modify definition of yo
        - name: tableName
          value: <REPLACE-WITH-TABLE-NAME>
    ```   
-Note how the `spec` section now specifies Azure Table Storage. Based on the new configuration, Dapr will bind subsequent state management calls to Azure Table Storage.
+Note how the `spec` section specifies Azure Table Storage. Based on the new configuration, Dapr will now bind state management calls to Azure Table Storage.
+
+The developer is never concerned or not exposed to the Redis or Azure Table Storage APIs. They are abstracted away in the Dapr binding. 
 
 A building block can use a combination of components. For example, the Actor and the State Management building blocks both consume a State component. As another example, the Pub/Sub building block consumes a Pub/Sub component.
 
@@ -198,7 +200,7 @@ The Dapr runtime on the right exposes a State Management building block exposed 
 
 In the middle, note how the app and Dapr are decoupled and communicate across either HTTP or gRPC using a sidecar architecture.
 
-Importantly, the search has no direct dependencies to underlying state store. Instead it invokes the Dapr State Management building block, exposed as a stand-alone sidecar service. It's  the sidecar API that is responsible for calling into state store component on your behalf. Note too the variety of state store service implementations that are available.
+Importantly, the search has no direct dependencies to underlying state store. Instead it invokes the Dapr State Management building block, exposed as a stand-alone sidecar service. It's  the sidecar API that is responsible for calling into state store component on your behalf. Note the variety of state store service implementations that are available.
 
 
 ## Dapr considerations

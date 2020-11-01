@@ -92,7 +92,7 @@ F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax
 #r "nuget: Newtonsoft.Json"
 open Newtonsoft.Json
 
-let data = {| Name = "Don Syme"; Occuptation = "F# Creator" |}
+let data = {| Name = "Don Syme"; Occupation = "F# Creator" |}
 JsonConvert.SerializeObject(data)
 ```
 
@@ -201,7 +201,7 @@ Note that you can also use `System.Environment.GetCommandLineArgs()` to access t
 
 ## F# Interactive directive reference
 
-The `#r` and `#load` directives seen previously is only available in F# Interactive. There are several directives only available in F# Interactive:
+The `#r` and `#load` directives seen previously are only available in F# Interactive. There are several directives only available in F# Interactive:
 
 |Directive|Description|
 |---------|-----------|

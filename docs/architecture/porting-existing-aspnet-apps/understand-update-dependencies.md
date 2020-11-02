@@ -27,6 +27,14 @@ dotnet tool install -g try-convert
 
 Once you've successfully installed the tool, you can run it from the command prompt by simply running `try-convert` in the folder where the class library's project file is located.
 
+## Updating NuGet package dependencies
+
+Analyze your use of third party NuGet packages and determine if any of them do not yet support .NET Standard (or do support it but only with a new version). It can be helpful to [update NuGet packages to use `<PackageReference>` syntax using Visual Studios converter tool](https://docs.microsoft.com/nuget/consume-packages/migrate-packages-config-to-package-reference), so that top-level dependencies are visible. Next, check whether the current or later versions of these packages support .NET Core or .NET Standard. This information can be found on [nuget.org] or within Visual Studio for each package.
+
+If support exists using the version of the package the app currently uses, great! If not, see if a more recent version of the package has the support and research what would be involved in upgrading. There may be breaking changes in the package, especially if the major version of the package changes between your currently used version and the one to which you're upgrading.
+
+In some cases, no version of a given package works with .NET Core. In that case, teams have a couple options. They can continue depending on the .NET Framework version, but this has limitations. The app will only run on Windows, and the team may want to run Portability Analyzer on the package's binaries to see if there are any issues likely to be encountered. Certainly the team will want to test thoroughly. The other option is to find a different package or, if the required package is open source, upgrade it to .NET Standard or .NET Core themselves.
+
 ## Migrating ASP.NET MVC Projects
 
 The `System.Web` namespace and types do not exist in .NET Core, so when you're analyzing dependencies and using tools like `try-convert` you'll find they don't offer many suggestions for automatic migration of ASP.NET MVC projects and any code in them that references `System.Web`. For these projects, you will need to start with a new ASP.NET Core web project and manually migrate files to this project.

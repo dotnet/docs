@@ -11,7 +11,7 @@ ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
 
 This topic describes task and conceptual topics that are associated with the registry.  
   
- When programming in Visual Basic, you can choose to access the registry by means of either the functions provided by Visual Basic or the registry classes of the .NET. The registry hosts information from the operating system as well as information from applications hosted on the machine. Working with the registry may compromise security by allowing inappropriate access to system resources or protected information.  
+ When programming in Visual Basic, you can choose to access the registry by means of either the functions provided by Visual Basic or the registry classes of .NET. The registry hosts information from the operating system as well as information from applications hosted on the machine. Working with the registry may compromise security by allowing inappropriate access to system resources or protected information.  
   
 ## In This Section  
 

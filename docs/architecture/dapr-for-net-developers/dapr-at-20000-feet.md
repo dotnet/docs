@@ -80,7 +80,7 @@ Building blocks abstract the implementation of infrastructure capabilities from 
 
 **Figure 2-3**. Dapr building block integration.
 
-Note how your service invokes a Dapr building block via HTTP or gRPC. Under the hood, the building block invokes pre-configured components that provide the concrete implementation for an external capability. Your code only knows about the building block. Your service takes no dependencies on external SDKs or libraries - Dapr handles the plumbing for you. Each building block is independent. You can use one, some, or all of them in your application.
+Note how your service invokes a Dapr building block via HTTP or gRPC. Under the hood, the building block invokes pre-configured components that provide the concrete implementation for an external capability. Your code only knows about the building block. Your service takes no dependencies on external SDKs or libraries - Dapr handles the plumbing for you. Each building block is independent. You can use one, some, or all of them in your application. As a value-add, Dapr building blocks bake in industry best practices.
 
 We provide detail explanation and code samples for each Dapr building block in the upcoming chapters. Now, our jet descends even more to give us a close look at the lower-level Dapr components layer.
 
@@ -187,9 +187,11 @@ At the time of this writing, the following component types are provided by Dapr:
 | [Secret stores](https://github.com/dapr/components-contrib/tree/master/secretstores) | Provides uniform interface to interact with external secret stores, including cloud, edge, commercial, open-source services. |
 | [Tracing exporters](https://github.com/dapr/components-contrib/tree/master/exporters) | Provides uniform interface to open telemetry wrappers. |
 
+As our jet completes it fly over of Dapr, we look back once more and are able to see how it connects together.
+
 ### Sidecar Architecture
 
-Dapr exposes its building blocks and components through a [sidecar architecture](https://docs.microsoft.com/azure/architecture/patterns/sidecar). This means that Dapr is deployed into a separate memory process or separate container alongside you service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
+Dapr exposes its building blocks and components through a [sidecar architecture](https://docs.microsoft.com/azure/architecture/patterns/sidecar). This means that Dapr is deployed into a separate memory process or separate container alongside your service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
 
 ![Sidecar architecture](./media/sidecar-generic.png)
 
@@ -228,52 +230,49 @@ Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/ove
 **Figure 2-7**. Kubernetes-hosted Dapr sidecar
 
 
-
-The sidecar architecture, either as a separate container or process, not requiring your service to include any Dapr runtime code. This makes integration with Dapr easy from other runtimes. It also  provides separation of the application logic for improved supportability.
-
+ > Stop here -- The remaining document is still under construction
 
 
-## Dapr considerations
+## Dapr performance considerations
 
-Dapr is not without challenges. Consider the following:
+Implementing a sidecar architecture, Dapr invokes multiple hops per call. Figure 2-7 presents an example of a Dapr traffic pattern.
 
- - When consuming a service component from Dapr, you're communicating with it through an abstraction. The abstraction can expose common functionality that all such components would expose. Some components may have custom features that are not exposed by the Dapr common interfaces. In these scenarios, you may need to reference the component directly.
- - Overhead. With its sidecar architecture, Dapr invokes multiple hops per call. Figure 2-x contrasts the differences.  It's important to keep in mind that a tremendous amount of engineering effort has gone into to making Dapr efficient. As well, calls between Dapr sidecars are always made with gRPC, which delivers high performance and small, binary payloads. In most cases, the additional overhead should be in milliseconds. 
+![Dapr traffic patterns](./media/dapr-traffic-patterns.png)
 
- ![Dapr overhead](./media/dapr-high-level.png)
-**Figure 2-x**. Dapr at 20,000 feet.
+**Figure 2-7**. Dapr traffic patterns
 
+Looking at the previous figure, one might question the latency and overhead of incurred for each Dapr call. 
 
-- Sidecar architecture adds latency. Number might be less than 2 milliseconds
-- Abstracts underlying service -- not all features exposed - Least Common Denominator
-	- You may need features not exposed by DAPR
-	- Does not stop you from using DAPR in your app for other services
-  
-   
-- Finally, while Dapr covers the gamut of distributed component services, it does not provide support for database interaction. 
+It's important to keep in mind that a tremendous amount of engineering effort has gone into to making Dapr efficient. As well, calls between Dapr sidecars are always made with gRPC, which delivers high performance and small, binary payloads. In most cases, the additional overhead should be less than 1 millisecond. 
 
+To increase performance, developers should consider implementing calls across gRPC when invoking Dapr sidecars. 
 
-## Dapr, service meshes, and Orleans
+gRPC is a modern, high-performance framework that evolves the age-old [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol. gRPC uses HTTP/2 for its transport protocol which provides significant performance enhancements over HTTP RESTFul service, including:
+
+- Multiplexing support for sending multiple parallel requests over the same connection - HTTP 1.1 limits processing to one request/response message at a time.
+- Bidirectional full-duplex communication for sending both client requests and server responses simultaneously.
+- Built-in streaming enabling requests and responses to asynchronously stream large data sets.
+
+## Dapr and service meshes
+
+https://docs.dapr.io/concepts/faq/
+
+https://stackshare.io/dapr
+
 
  > See Dapr-runtime3.pdf and Dapr-runtime4.pdf
  > Orleans -- see pros-cons.pdf
 
-Dapr can be used alongside any service mesh such as Istio and
-Linkerd. A service mesh is a dedicated network infrastructure layer
-designed to connect services to one another and provide insightful
-telemetry. A service mesh doesn’t introduce new functionality to an
+Dapr can be used alongside any service mesh such as Istio and Linkerd. A service mesh is a dedicated network infrastructure layer
+designed to connect services to one another and provide insightful telemetry. A service mesh doesn’t introduce new functionality to an
 application.
-Dapr introduces new functionality to an app’s runtime. Both service
-meshes and Dapr run as side-car services to your application, one
-giving network features and the other distributed application
-capabilities.
+
+Dapr introduces new functionality to an app’s runtime. Both service meshes and Dapr run as side-car services to your application, one
+giving network features and the other distributed application capabilities.
+
 1 dapr init --slim
-Istio is not a programming model and does not focus on application
-level features such as state management, pub-sub, bindings etc. That
-is where Dapr comes in.
-So, there are some similarities between the two. But, as suggested by the dapr
-documentation we can use them together as well. Dapr will not focus on network
-concerns like traffic routing, A/B testing etc. This is where service mesh like Istio will
+Istio is not a programming model and does not focus on application level features such as state management, pub-sub, bindings etc. That
+is where Dapr comes in. So, there are some similarities between the two. But, as suggested by the dapr documentation we can use them together as well. Dapr will not focus on network concerns like traffic routing, A/B testing etc. This is where service mesh like Istio will
 provide value. Dapr will be more application centric
 
 
@@ -282,18 +281,7 @@ provide value. Dapr will be more application centric
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-## Potential content?
+## Extra content bucket
 
 
 A cloud native application often uses various cloud-based services, such
@@ -309,49 +297,23 @@ as storage services, secret stores, authentication servers, messaging backbones,
 services into simple interfaces so that your applications can be reconfigured to use different service
 implementations, including containerized services and hosted services, in different deployment environments
 
-
-
-
-
-
-
 Dapr reduces the complexity of constructing microservice and evevnt-driven applications. Companies can implement interservice-communication, state, resource binding, and asynchronous pub/sub messaging with open APIs and extensible components that are community-driven.
 
-provides the *glue* that fuses decoupled service components with your business application b. At the same time, it greatly abstracts the complexity of distributed components and provides baked-in industry best practices. Figure 2-x provides a shot of Dapr from 20,000 feet.
+it greatly abstracts the complexity of distributed components and provides baked-in industry best practices.
 
 *Dapr is a portable, event-driven runtime that reduces the complexity of building resilient, microservice stateless and stateful applications that run on the cloud and edge and embraces the diversity of languages and developer frameworks.*
 
 
 
  Dapr implements a sidecar architecture so that 
- 
-  > dotnet core is a runtime engine - you run programs within it
- > dapr is also a runtime engine - you run the dotnet program within the dapr runtime -- you tell dapr to start the service and that is with the dotnet runtime (dotnet run). So, the Dapr runtime encapsulates the .NET core runtime.
+ dotnet core is a runtime engine - you run programs within it
+ dapr is also a runtime engine - you run the dotnet program within the dapr runtime -- you tell dapr to start the service and that is with the dotnet runtime (dotnet run). So, the Dapr runtime encapsulates the .NET core runtime.
 
 
 Dapr is a “runtime” — what does that mean?
 I thought about this as well, when I first started exploring Dapr. In my specific case (Java middleware background), “runtime” was an application server that provided a “managed environment” (concurrency, security etc.) to my code (WAR, EAR etc.)
 That’s not the case with Dapr. It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
 Image for post
-
- > stop
-
-
-## Extra content for sidecar and runtimes
-
-> Extra...
-
-While your application makes calls to the Dapr API, it does not include any Dapr runtime code. Instead, Dapr exposes its building block APIs using a sidecar architecture. 
-
-, not requiring the application code to include any Dapr runtime code. This makes integration with Dapr easy from other runtimes, as well as providing separation of the application logic for improved supportability.
-
-you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
-
-
-, either as a container or as a process, not requiring the application code to include any Dapr runtime code. This makes integration with Dapr easy from other runtimes, as well as providing separation of the application logic for improved supportability.
-
-Dapr architecture follows the sidecar pattern, meaning its components can be deployed either as independent processes or as containers to provide isolation and encapsulation and do not require to include a runtime in the application code. This makes it easy to integrate Dapr with other runtimes and to use it in a Kubernetes environment.
-
 
 It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
 
@@ -359,35 +321,11 @@ you encapsulate and expose Dapr functionality via a side car architecture - your
 
   > Specfically, you're running the dot net service in a dapr sidecar. Now, other service can use dapr to call this service.
 
-That’s not the case with Dapr. It is a “Runtime” that operates along with
-your application using a sidecar architecture—your application
-does not run “inside it”. In standalone mode, Dapr simply runs as a
-different process and in Kubernetes, it runs as a (sidecar) container in
+That’s not the case with Dapr. It is a “Runtime” that operates along with your application using a sidecar architecture—your application
+does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in
 the same Pod as your application
 
-Dapr is a “runtime” — what does that mean?
-I thought about this as well, when I first started exploring Dapr. In my specific case (Java middleware background), “runtime” was an application server that provided a “managed environment” (concurrency, security etc.) to my code (WAR, EAR etc.)
-That’s not the case with Dapr. It is a “Runtime” that operates along with your application using a sidecar architecture — your application does not run “inside it”. In standalone mode, Dapr simply runs as a different process and in Kubernetes, it runs as a (sidecar) container in the same Pod as your application
-Image for post
-
-It should be clear from the above picture that Dapr is a higher abstraction than
-Kubernetes. Kubernetes does not have any concept of application.
-You can use Dapr as a sidecar container with your application containers running in
-Kubernetes. You can also use Dapr as a process for traditional deployments as well.
-
-
-
-of distributed microservice applications. 
-abstracts external service components from the business logic of your application.
-
-Dapr reduces inherent complexity of distributed microservice applications by abstracting complex plumbing. 
-
-Dapr provides a *dynamic glue* that fuses together service component plumbing without tightly coupled references.
-
-With Dapr, you can `dynamically` bind to other microservices and infrastructure backing services. Through an architecture of pluggable components, Dapr abstracts external service components from the business logic of your application.
-
-
-Simplifying the inherent complexity of distributed microservice applications is a key design goal of Dapr. Through an architecture of pluggable components, Dapr abstracts external service components from the business logic of your application.
+It should be clear from the above picture that Dapr is a higher abstraction than Kubernetes. Kubernetes does not have any concept of application. You can use Dapr as a sidecar container with your application containers running in Kubernetes. You can also use Dapr as a process for traditional deployments as well.
 
 For example, most applications or services that you create will require ancillary services: A database, cache, message broker, etc. These servcies are commonly referred to as `backing services.` Figure x shows backing services.
 
@@ -395,69 +333,22 @@ Envision that your service requires a distributed cache. Without a great of effo
 
 You might then write a generic caching wrapper (interface) and a class that implements the wrapper with concrete Redis code. At startup, you regsiter the wrapper with your dependency injection container and inject an instance of the concrete Redis class. Now, you've decoupled your service from the caching backing service.
 
+Dapr is not without challenges. Consider the following:
 
-Dapr provides a *dynamic glue* that fuses together service component plumbing without tightly coupled references. For example, your application may require a state store. You could add a reference to the Azure Redis Cache library by installing the and You could write  custom code to wrap Azure Redis Cache, register it with your dependency injection container, and inject an instance into your system. However, with Dapr, you configure and call a Dapr state building block. That block dynamically binds to Redis Cache via a configuration. Your service delegates the call to Dapr, which, in turns,  calls Redis on your behalf.  Your code has no SDK, library, or reference to Redis.
+ - When consuming a service component from Dapr, you're communicating with it through an abstraction. The abstraction can expose common functionality that all such components would expose. Some components may have custom features that are not exposed by the Dapr common interfaces. In these scenarios, you may need to reference the component directly.
 
- > Extra end
-
-
-
-
-
-
-
-Template for bullet points:
-
-In the example, we saw some clear benefits:
-
-- Each microservice has an autonomous lifecycle and can evolve independently and deploy frequently.
-
-- Each microservice can scale independently. 
-
-
-
-
-Template for link:
-
-Consider the widely accepted DevOps concept of [Pets vs. Cattle](https://medium.com/@Joachim8675309/devops-concepts-pets-vs-cattle-2380b5aab313). 
-
-
-
-
-Template for three column table:
-
-|    |  Factor | Explanation  |
-| :-------- | :-------- | :-------- |
-| 1 | Code Base | A single code base for each microservice, stored in its own repository. Tracked with version control, it can deploy to multiple environments (QA, Staging, Production). |
-| 2 | Dependencies | Each microservice isolates and packages its own dependencies, embracing changes without impacting the entire system. |
-| 3 | Configurations  | Configuration information is moved out of the microservice and externalized through a configuration management tool outside of the code. The same deployment can propagate across environments with the correct configuration applied.  |
-
-
-Template for a figure:
-
-![eShopOnContainers Architecture](./media/eshoponcontainers-architecture.png)
-**Figure 2-5**. The eShopOnContainers Architecture.
-
-Template for italiczed indented text:
-
-The Cloud Native Computing Foundation provides an [official definition](https://github.com/cncf/foundation/blob/master/charter.md):
-
-> *Cloud-native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.*
-
+## End of extra content bucket
 
 
 ## Summary
 
-In this chapter, we introduced cloud-native computing. We provided a definition along with the key capabilities that drive a cloud-native application. We looked at the types of applications that might justify this investment and effort.
+In this chapter, we introduced Dapr blah. We provided a definition along with the key capabilities that blah. We looked at the types of applications that might justify this investment and effort.
 
 ### References
 
 - [Cloud Native Computing Foundation](https://www.cncf.io/)
 
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
-
-
-
 
 
 >[!div class="step-by-step"]

@@ -91,7 +91,7 @@ For a full introduction to ClickOnce, see [ClickOnce Security and Deployment](/v
 
 ## Other Controls and Features
 
-There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of the .NET, enabling you to release more secure applications to your customers.
+There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of .NET, enabling you to release more secure applications to your customers.
 
 For step-by-step information about using these features, see the following Help topics:
 

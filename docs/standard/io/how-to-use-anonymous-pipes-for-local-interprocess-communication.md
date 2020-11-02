@@ -8,14 +8,15 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "anonymous pipes [.NET Framework]"
-  - "parent-child communication [.NET Framework]"
-  - "pipes [.NET Framework]"
-  - "one-way communication [.NET Framework]"
-  - "local computer communication [.NET Framework], pipes"
+  - "anonymous pipes [.NET]"
+  - "parent-child communication [.NET]"
+  - "pipes [.NET]"
+  - "one-way communication [.NET]"
+  - "local computer communication [.NET], pipes"
 ms.assetid: e7773c77-c646-4a01-8a96-a003d59fc4c9
 ---
 # How to: Use Anonymous Pipes for Local Interprocess Communication
+
 Anonymous pipes provide interprocess communication on a local computer. They offer less functionality than named pipes, but also require less overhead. You can use anonymous pipes to make interprocess communication on a local computer easier. You cannot use anonymous pipes for communication over a network.  
   
  To implement anonymous pipes, use the <xref:System.IO.Pipes.AnonymousPipeServerStream> and <xref:System.IO.Pipes.AnonymousPipeClientStream> classes.  

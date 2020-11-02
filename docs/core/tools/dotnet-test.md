@@ -71,7 +71,13 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--blame-crash`** (Available since .NET 5.0 preview SDK)
 
-  Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option is only supported on Windows. A directory that contains *procdump.exe* and *procdump64.exe* must be in the PATH or PROCDUMP_PATH environment variable. [Download the tools](/sysinternals/downloads/procdump). Implies `--blame`.
+  Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET used, the type of error, and the operating system.
+  
+  For exceptions in managed code, a dump will be automatically collected on .NET 5.0 and later versions. It will generate a dump for testhost or any child process that also ran on .NET 5.0 and crashed. Crashes in native code will not generate a dump. This option works on Windows, macOS, and Linux.
+  
+  Crash dumps in native code, or when using .NET Core 3.1 or earlier versions, can only be collected on Windows, by using Procdump. A directory that contains *procdump.exe* and *procdump64.exe* must be in the PATH or PROCDUMP_PATH environment variable. [Download the tools](/sysinternals/downloads/procdump). Implies `--blame`.
+  
+  To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 
 - **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 preview SDK)
 
@@ -91,14 +97,14 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 preview SDK)
 
-  Per-test timeout, after which a hang dump is triggered and the test host process is terminated. The timeout value is specified in one of the following formats:
+  Per-test timeout, after which a hang dump is triggered and the test host process and all of its child processes are dumped and terminated. The timeout value is specified in one of the following formats:
   
-  - 1.5h
-  - 90m
-  - 5400s
-  - 5400000ms
+  - 1.5h, 1.5hour, 1.5hours
+  - 90m, 90min, 90minute, 90minutes
+  - 5400s, 5400sec, 5400second, 5400seconds
+  - 5400000ms, 5400000mil, 5400000millisecond, 5400000milliseconds
 
-  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with netcoreapp2.1 and later, and on Linux with netcoreapp3.1 and later. macOS is not supported.
+  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with netcoreapp2.1 and later, on Linux with netcoreapp3.1 and later, and on macOS with net5.0 or later. Implies `--blame` and `--blame-hang`.
 
 - **`-c|--configuration <CONFIGURATION>`**
 

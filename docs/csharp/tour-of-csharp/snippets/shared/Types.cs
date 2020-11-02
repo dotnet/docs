@@ -81,7 +81,7 @@ namespace TourOfCsharp
     // </ImplementInterfaces>
 
     // <EnumDeclaration>
-    public enum SomeRootVegetables
+    public enum SomeRootVegetable
     {
         HorseRadish,
         Radish,

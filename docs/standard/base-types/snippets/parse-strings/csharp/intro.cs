@@ -68,11 +68,11 @@ namespace Split
             // This example produces the following output:
             //
             // Substring: You
-// Substring: win
-// Substring: some
-// Substring: You
-// Substring: lose
-// Substring: some
+            // Substring: win
+            // Substring: some
+            // Substring: You
+            // Substring: lose
+            // Substring: some
             //</snippet3>
         }
     }

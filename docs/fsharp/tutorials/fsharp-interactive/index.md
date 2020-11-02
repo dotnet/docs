@@ -15,7 +15,7 @@ For information about command line options available, see [F# Interactive Option
 
 ## Executing code directly in F# Interactive
 
-Because F# Interactive is a REPL, you can execute code interactively in it. Here is an example of an interactive session after executing `dotnet fsi` from the command line:
+Because F# Interactive is a REPL (read-eval-print loop), you can execute code interactively in it. Here is an example of an interactive session after executing `dotnet fsi` from the command line:
 
 ```console
 Microsoft (R) F# Interactive version 11.0.0.0 for F# 5.0

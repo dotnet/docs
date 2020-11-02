@@ -35,7 +35,7 @@ None.
 |Element|Description|
 |-------------|-----------------|
 |[\<dateTimeSerialization> Element](datetimeserialization-element.md)|Determines the serialization mode of <xref:System.DateTime> objects.|
-|[\<schemaImporterExtensions> Element](schemaimporterextensions-element.md)|Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET Framework types.|
+|[\<schemaImporterExtensions> Element](schemaimporterextensions-element.md)|Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET types.|
 
 ### Parent Elements
 
@@ -45,7 +45,7 @@ None.
 
 ## Example
 
-The following code example illustrates how to specify the serialization mode of a <xref:System.DateTime> object, and the addition of types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> when mapping XSD types to .NET Framework types.
+The following code example illustrates how to specify the serialization mode of a <xref:System.DateTime> object, and the addition of types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> when mapping XSD types to .NET types.
 
 ```xml
 <system.xml.serialization>

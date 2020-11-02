@@ -19,7 +19,7 @@ Serialization can be defined as the process of storing the state of an object to
 When implementing a serialization mechanism in an object-oriented environment, you have to make a number of tradeoffs between ease of use and flexibility. The process can be automated to a large extent, provided you are given sufficient control over the process. For example, situations may arise where simple binary serialization is not sufficient, or there might be a specific reason to decide which fields in a class need to be serialized. The following sections examine the robust serialization mechanism provided with .NET and highlight a number of important features that allow you to customize the process to meet your needs.
 
 > [!NOTE]
-> The state of a UTF-8 or UTF-7 encoded object is not preserved if the object is serialized and deserialized using different .NET Framework versions.
+> The state of a UTF-8 or UTF-7 encoded object is not preserved if the object is serialized and deserialized using different .NET versions.
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
 
@@ -345,7 +345,7 @@ Describes the XML serialization mechanism that is included with the common langu
 Describes the secure coding guidelines to follow when writing code that performs serialization.
 
 - [.NET Remoting](/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\
-Describes the various methods Starting in .NET Framework for remote communications.
+Describes the various methods in .NET Framework for remote communications.
 
 - [XML Web Services Created Using ASP.NET and XML Web Service Clients](/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))\
 Articles that describe and explain how to program XML Web services created using ASP.NET.

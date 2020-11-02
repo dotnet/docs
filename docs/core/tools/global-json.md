@@ -158,7 +158,7 @@ dotnet new globaljson --sdk-version 3.0.100
 ## Matching rules
 
 > [!NOTE]
-> The matching rules are governed by the `dotnet.exe` entry point, which is common across all installed .NET Core installed runtimes. The matching rules for the latest installed version of the .NET Core Runtime are used when you have multiple runtimes installed side-by-side or if or you're using a global.json.
+> The matching rules are governed by the `dotnet.exe` entry point, which is common across all installed .NET Core installed runtimes. The matching rules for the latest installed version of the .NET Core Runtime are used when you have multiple runtimes installed side-by-side or if or you're using a *global.json* file.
 
 ## [.NET Core 3.x](#tab/netcore3x)
 

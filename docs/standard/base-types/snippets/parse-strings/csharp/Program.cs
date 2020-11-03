@@ -4,9 +4,9 @@ namespace parse_strings
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Intro.Intro1();
         }
     }
 }

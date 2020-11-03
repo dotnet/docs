@@ -17,19 +17,22 @@ This article covers some different techniques for extracting parts of a string.
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> provides a handful of overloads to help you break up a string into a group of substrings based on one or more delimiting characters that you specify. You can choose to limit the total number of substrings in the final result, trim white-space characters from substrings, or exclude empty substrings.
 
-The following examples show three different overloads of `String.Split()`. The first example calls the <xref:System.String.Split(System.Char[])> overload and passes in a single delimiting character.
+The following examples show three different overloads of `String.Split()`. The first example calls the <xref:System.String.Split(System.Char[])> overload without passing any separator characters. When you don't specify any delimiting characters, `String.Split()` uses default delimiters, which are white-space characters, to split up the string.
 
 [!code-csharp-interactive[Intro#1](snippets/parse-strings/csharp/intro.cs#1)]
+:::code language="vb" source="snippets/parse-strings/vb/intro.vb" id="1":::
 
 As you can see, the period characters (`.`) are included in two of the substrings. If you want to exclude the period characters, you can add the period character as an additional delimiting character. The next example shows how to do this.
 
 [!code-csharp-interactive[Intro#1](snippets/parse-strings/csharp/intro.cs#2)]
+:::code language="vb" source="snippets/parse-strings/vb/intro.vb" id="2":::
 
 The periods are gone from the substrings, but now two extra empty substrings have been included. These empty substring represent the substring between the word and the period that follows it. To omit empty substrings from the resulting array, you can call the
 <xref:System.String.Split(System.Char[],System.StringSplitOptions)> overload and specify
 <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> for the `options` parameter.
 
 [!code-csharp-interactive[Intro#1](snippets/parse-strings/csharp/intro.cs#3)]
+:::code language="vb" source="snippets/parse-strings/vb/intro.vb" id="3":::
 
 ## Regular expressions
 
@@ -105,3 +108,11 @@ The following example uses the <xref:System.String.IndexOf%2A> method to find th
 
 :::code language="csharp" source="snippets/parse-strings/csharp/indexof.cs" id="1" interactive="try-dotnet":::
 :::code language="vb" source="snippets/parse-strings/vb/indexof.vb" id="1":::
+
+## See also
+
+- [Basic string operations in .NET](basic-string-operations.md)
+- [.NET regular expressions](regular-expressions.md)
+- <xref:System.String.Split%2A?displayProperty=nameWithType>
+- <xref:System.String.IndexOf%2A?displayProperty=nameWithType>
+- <xref:System.String.Substring%2A?displayProperty=nameWithType>

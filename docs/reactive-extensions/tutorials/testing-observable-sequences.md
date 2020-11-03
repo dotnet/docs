@@ -130,4 +130,3 @@ You can remove any Do and Select calls after you finish debugging.
 [Creating and Subscribing to Simple Observable Sequences](hh242977\(v=vs.103\).md)  
 [Querying Observable Sequences using LINQ Operators](hh242983\(v=vs.103\).md)  
 [Using Schedulers](hh242963\(v=vs.103\).md)
-

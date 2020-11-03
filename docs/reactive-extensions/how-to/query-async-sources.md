@@ -29,4 +29,3 @@ In the following example, we will convert BeginRead and EndRead for a [Stream](h
                                 ex => Console.WriteLine("OnError: {0}", ex.Message),
                                 () => Console.WriteLine("OnCompleted"));
     Console.ReadKey();
-

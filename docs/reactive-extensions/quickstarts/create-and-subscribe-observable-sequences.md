@@ -175,8 +175,8 @@ In the following example, we convert the previous cold observable sequence `sour
 
     Observer 2: OnNext: 4
 
-``` 
-       
+```
+
 Console.WriteLine("Current Time: " + DateTime.Now);
 var source = Observable.Interval(TimeSpan.FromSeconds(1));            //creates a sequence
 
@@ -188,7 +188,7 @@ IDisposable subscription1 = hot.Subscribe(                        // no value is
                             () => Console.WriteLine("Observer 1: OnCompleted"));
 Console.WriteLine("Current Time after 1st subscription: " + DateTime.Now);
 Thread.Sleep(3000);  //idle for 3 seconds
-hot.Connect();       // hot is connected to source and starts pushing value to subscribers 
+hot.Connect();       // hot is connected to source and starts pushing value to subscribers
 Console.WriteLine("Current Time after Connect: " + DateTime.Now);
 Thread.Sleep(3000);  //idle for 3 seconds
 Console.WriteLine("Current Time just before 2nd subscription: " + DateTime.Now);
@@ -199,4 +199,3 @@ IDisposable subscription2 = hot.Subscribe(     // value will immediately be push
                             () => Console.WriteLine("Observer 2: OnCompleted"));
 Console.ReadKey();
 ```
-

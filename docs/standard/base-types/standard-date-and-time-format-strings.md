@@ -95,7 +95,7 @@ The following sections describe the standard format specifiers for <xref:System.
 
 ## Date formats
 
-This group includes the following format specifiers:
+This group includes the following formats:
 
 - [The Short Date ("d") Format Specifier](#the-short-date-d-format-specifier)
 - [The Long Date ("D") Format Specifier](#the-long-date-d-format-specifier)
@@ -143,7 +143,7 @@ The following example uses the "D" format specifier to display a date and time v
 
 ## Date and time formats
 
-This group includes the following format specifiers:
+This group includes the following formats:
 
 - [The Full Date Short Time ("f") Format Specifier](#the-full-date-short-time-f-format-specifier)
 - [The Full Date Long Time ("F") Format Specifier](#the-full-date-long-time-f-format-specifier)
@@ -367,10 +367,12 @@ The following example uses the "U" format specifier to display a date and time v
 
 ## Time formats
 
-This group includes the following format specifiers:
+This group includes the following formats:
 
 - [The Short Time ("t") Format Specifier](#the-short-time-t-format-specifier)
 - [The Long Time ("T") Format Specifier](#the-long-time-t-format-specifier)
+
+<a name="ShortTime"></a>
 
 ### The Short Time ("t") Format Specifier
 
@@ -416,7 +418,7 @@ The following example uses the "T" format specifier to display a date and time v
 
 ## Partial date formats
 
-This group includes the following format specifiers:
+This group includes the following formats:
 
 - [The Month ("M", "m") Format Specifier](#the-month-m-m-format-specifier)
 - [The Year Month ("Y", "y") Format Specifier](#the-year-month-y-y-format-specifier)

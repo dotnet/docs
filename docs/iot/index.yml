@@ -19,19 +19,19 @@ metadata:
 landingContent:
 
   # Basics
-  - title: IoT Basics
+  - title: Basics
     linkLists:
       - linkListType: overview
         links:
-          - text: Temp link  
+          - text: Overview  
             url: intro.md               
-      - linkListType: video
+      - linkListType: deploy
         links:
-          - text: Temp link  
+          - text: Deployment  
             url: index.yml               
       - linkListType: concept
         links:
-          - text: Temp link  
+          - text: Debugging  
             url: index.yml               
 
   # Get started
@@ -39,7 +39,7 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Temp link  
+          - text: SenseHAT quickstart  
             url: index.yml               
 
  # Tutorials - scenarios
@@ -47,16 +47,12 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Temp link  
-            url: index.yml               
-
-  # API Card
-  - title: How-to guides
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Temp link  
-            url: index.yml               
+          - text: GPIO example - Blink an LED
+            url: index.yml
+          - text: I2C example - Display text on an LCD
+            url: index.yml
+          - text: SPI example - Read temperatures with a sensor
+            url: index.yml
 
   # API Card
   - title: Reference 
@@ -65,3 +61,11 @@ landingContent:
         links:
           - text: Ref link  
             url: index.yml
+
+    # API Card
+  - title: Resources 
+    linkLists:           
+      - linkListType: video
+        links:
+          - text: .NET IoT 101 (January 2020)  
+            url: https://aka.ms/IoTNet101

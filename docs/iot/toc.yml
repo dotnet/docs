@@ -6,7 +6,11 @@
   href: quickstart.md
 - name: Tutorials
   items:
-  - name: Link here
+  - name: GPIO example - Blink an LED
+    href: index.yml
+  - name: I2C example - Display text on an LCD
+    href: index.yml
+  - name: SPI example - Read temperatures with a sensor
     href: index.yml
 - name: How-to guides
   items:
@@ -18,10 +22,4 @@
 - name: Reference
   items:
   - name: Link here
-    href: index.yml
-- name: Resources
-  items:
-  - name: link 1
-    href: index.yml
-  - name: link 2
     href: index.yml

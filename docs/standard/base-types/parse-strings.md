@@ -13,6 +13,10 @@ helpviewer_keywords:
 
 This article covers some different techniques for extracting parts of a string.
 
+- Use the [Split method](#stringsplit-method) when the substrings you want are separated by a known delimiting character (or characters).
+- [Regular expressions](#regular-expressions) are useful when the string conforms to a fixed pattern.
+- Use the [IndexOf and Substring methods](#stringindexof-and-stringsubstring-methods) in conjunction when you don't want to extract *all* of the substrings in a string.
+
 ## String.Split method
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> provides a handful of overloads to help you break up a string into a group of substrings based on one or more delimiting characters that you specify. You can choose to limit the total number of substrings in the final result, trim white-space characters from substrings, or exclude empty substrings.

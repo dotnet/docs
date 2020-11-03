@@ -36,7 +36,7 @@ The periods are gone from the substrings, but now two extra empty substrings hav
 
 ## Regular expressions
 
-If your string conforms to a fixed pattern, you can use a regular expression to extract and handle its elements. For example, if strings take the form "*number* *operand* *number*", you can use a [regular expression](/dotnet/standard/base-types/regular-expressions) to extract and handle the string's elements. Here's an example:
+If your string conforms to a fixed pattern, you can use a regular expression to extract and handle its elements. For example, if strings take the form "*number* *operand* *number*", you can use a [regular expression](regular-expressions.md) to extract and handle the string's elements. Here's an example:
 
 :::code language="csharp" source="snippets/parse-strings/csharp/regex.cs" id="1" interactive="try-dotnet":::
 :::code language="vb" source="snippets/parse-strings/vb/regex.vb" id="1":::

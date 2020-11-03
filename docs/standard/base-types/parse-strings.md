@@ -113,6 +113,4 @@ The following example uses the <xref:System.String.IndexOf%2A> method to find th
 
 - [Basic string operations in .NET](basic-string-operations.md)
 - [.NET regular expressions](regular-expressions.md)
-- <xref:System.String.Split%2A?displayProperty=nameWithType>
-- <xref:System.String.IndexOf%2A?displayProperty=nameWithType>
-- <xref:System.String.Substring%2A?displayProperty=nameWithType>
+- [How to parse strings using String.Split in C#](../../csharp/how-to/parse-strings-using-split.md)

@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "custom date and time format strings"
   - "formatting [.NET], time"
   - "date and time strings"
+ms.custom: contperfq2
 ---
 # Standard date and time format strings
 

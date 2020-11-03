@@ -7,17 +7,35 @@ items:
   href: when-to-use-rx.md
 - name: How-to guides
   items:
-  - name: Install Rx
-    href: ..md
+  - name: Query event-based sequences
+    href: query-event-sequences.md
+  - name: Query Observable sequences using LINQ operators
+    href: query-sequences-linq.md
+  - name: Use schedulers
+    href: use-schedulers.md
 - name: Tutorials
   items:
-  - name: Get started tutorials
-    href: ..md
+  - name: Implement custom operators
+    href: implement-custom-operators.md
 - name: Reference
   items:
-  - name: Get started tutorials
+  - name: TODO
     href: ..md
 - name: Resources
   items:
   - name: GitHub repository
     href: https://github.com/dotnet/reactive
+  - name: NuGet packages
+    items:
+    - name: System.Reactive
+      href: https://www.nuget.org/packages/System.Reactive
+    - name: System.Reactive.Core
+      href: https://www.nuget.org/packages/System.Reactive.Core
+    - name: System.Reactive.Interfaces
+      href: https://www.nuget.org/packages/System.Reactive.Interfaces
+    - name: System.Reactive.Linq
+      href: https://www.nuget.org/packages/System.Reactive.Linq
+    - name: System.Reactive.PlatformServices
+      href: https://www.nuget.org/packages/System.Reactive.PlatformServices
+    - name: Microsoft.Reactive.Testing
+      href: https://www.nuget.org/packages/Microsoft.Reactive.Testing

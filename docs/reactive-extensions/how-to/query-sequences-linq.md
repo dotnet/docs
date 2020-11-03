@@ -79,7 +79,7 @@ seqString.Subscribe(str => { Console.WriteLine(str); });
 Console.ReadKey();
 ```
 
-In the following sample, which is an extension of the .NET event conversion example we saw in the [Bridging with Existing .NET Events](hh242978(v=vs.103).md) topic, we use the Select operator to project the IEventPattern<MouseEventArgs> data type into a [Point](https://msdn.microsoft.com/en-us/library/bk9hwzbw) type. In this way, we are transforming a mouse move event sequence into a data type that can be parsed and manipulated further, as can be seen in the next "Filtering" section.
+In the following sample, which is an extension of the .NET event conversion example we saw in the [Bridging with Existing .NET Events](hh242978(v=vs.103).md) topic, we use the Select operator to project the `IEventPattern<MouseEventArgs>` data type into a [Point](https://msdn.microsoft.com/en-us/library/bk9hwzbw) type. In this way, we are transforming a mouse move event sequence into a data type that can be parsed and manipulated further, as can be seen in the next "Filtering" section.
 
 ```csharp
 var frm = new Form();

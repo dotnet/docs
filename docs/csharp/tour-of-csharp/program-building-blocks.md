@@ -43,7 +43,7 @@ A field declared with the static modifier defines a static field. A static field
 
 A field declared without the static modifier defines an instance field. Every instance of a class contains a separate copy of all the instance fields of that class.
 
-In the following example, each instance of the `Color` class has a separate copy of the `r`, `g`, and `b` instance fields, but there's only one copy of the `Black`, `White`, `Red`, `Green`, and `Blue` static fields:
+In the following example, each instance of the `Color` class has a separate copy of the `R`, `G`, and `B` instance fields, but there's only one copy of the `Black`, `White`, `Red`, `Green`, and `Blue` static fields:
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ColorClassDefinition":::
 

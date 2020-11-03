@@ -17,7 +17,7 @@ helpviewer_keywords:
 ---
 # Standard date and time format strings
 
-A standard date and time format string uses a single format specifier to define the text representation of a date and time value. Any date and time format string that contains more than one character, including white space, is interpreted as a [custom date and time format string](custom-date-and-time-format-strings.md). A standard or custom format string can be used in two ways:
+A standard date and time format string uses a single character as the format specifier to define the text representation of a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value. Any date and time format string that contains more than one character, including white space, is interpreted as a [custom date and time format string](custom-date-and-time-format-strings.md). A standard or custom format string can be used in two ways:
 
 - To define the string that results from a formatting operation.
 
@@ -25,8 +25,6 @@ A standard date and time format string uses a single format specifier to define 
 
 > [!TIP]
 > You can download the **Formatting Utility**, a .NET Windows Forms application that lets you apply format strings to either numeric or date and time values and display the result string. Source code is available for [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) and [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb).
-
-Standard date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
 
 [!INCLUDE[C# interactive-note](~/includes/csharp-interactive-with-utc-partial-note.md)]
 

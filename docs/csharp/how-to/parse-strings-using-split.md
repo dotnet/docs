@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
 ms.custom: mvc
 ---
-# How to split up strings using String.Split in C\#
+# How to separate strings using String.Split in C\#
 
 The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
 array of substrings by splitting the input string based on one or more delimiters. This method is often the easiest way to separate a string on word boundaries. It's also used

@@ -1,5 +1,5 @@
 ---
-title: Find and obtain substrings
+title: Separate strings into substrings
 description: Learn about different techniques to extract parts of a string, including String.Split, regular expressions, and String.Substring.
 ms.date: 10/30/2020
 ms.technology: dotnet-standard

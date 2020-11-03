@@ -1,25 +1,19 @@
 - name: .NET IoT Documentation
   href: index.yml
 - name: Overview
-  expanded: true
-  items:
-  - name: Introduction
-    href: intro.md
-  - name: Development boards
-    href: boards.md
+  href: intro.md
 - name: Quickstart
   href: quickstart.md
 - name: Tutorials
   items:
   - name: Link here
     href: index.yml
-- name: Concepts
-  items:
-  - name: Link here
-    href: index.yml
 - name: How-to guides
   items:
-  - name: Link here
+  - name: Deployment
+    href: index.yml
+  items:
+  - name: Debugging
     href: index.yml
 - name: Reference
   items:

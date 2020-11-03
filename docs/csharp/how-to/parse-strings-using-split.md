@@ -53,7 +53,7 @@ Consecutive instances of any separator produce the empty string in the output ar
 
 ## See also
 
-- [Extract elements from a string](../../standard/base-types/parse-strings.md)
+- [Extract elements from a string](../../standard/base-types/extract-substrings.md)
 - [C# programming guide](../programming-guide/index.md)
 - [Strings](../programming-guide/strings/index.md)
 - [.NET regular expressions](../../standard/base-types/regular-expressions.md)

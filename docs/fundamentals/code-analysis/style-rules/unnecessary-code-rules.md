@@ -34,6 +34,7 @@ The rules in this section concern the following unnecessary code rules:
 - [Remove unnecessary suppression operator (IDE0080)](ide0080.md) - C# only.
 - [Remove 'ByVal' (IDE0081)](ide0081.md) - Visual Basic only.
 - [Remove unnecessary equality operator (IDE0100)](ide0100.md)
+- [Remove unnecessary discard (IDE0110)](ide0110.md)
 
 Some of these rules have options to configure the rule behavior:
 

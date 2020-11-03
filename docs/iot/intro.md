@@ -50,5 +50,3 @@ Other platforms known to be compatible are BeagleBoard and ODROID.
 ## Resources
 
 - [.NET IoT Libraries on Github](https://github.com/dotnet/iot)
-- 
-

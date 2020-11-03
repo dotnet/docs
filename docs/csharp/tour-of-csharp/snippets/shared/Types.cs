@@ -81,7 +81,7 @@ namespace TourOfCsharp
     // </ImplementInterfaces>
 
     // <EnumDeclaration>
-    public enum SomeRootVegetables
+    public enum SomeRootVegetable
     {
         HorseRadish,
         Radish,
@@ -130,7 +130,7 @@ namespace TourOfCsharp
             // </UseInterfaces>
 
             // <UsingEnums>
-            var turnip = SomeRootVegetables.Turnip;
+            var turnip = SomeRootVegetable.Turnip;
 
             var spring = Seasons.Spring;
             var startingOnEquinox = Seasons.Spring | Seasons.Autumn;

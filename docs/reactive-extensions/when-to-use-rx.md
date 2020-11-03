@@ -32,7 +32,7 @@ Using Rx, you can represent multiple asynchronous data streams (that come from d
 
 The following example creates an ISubject instance (which inherits both IObservable and IObserver) representing the event stream. It then uses the same object to publish data and receive subscription. For more information on using Subjects, see [Using Subjects](hh242970\(v=vs.103\).md).
 
-```csharp 
+```csharp
 ///Declare an observable
 public ISubject<MouseEventArgs> MouseMove;
 ///Publish data
@@ -55,10 +55,10 @@ In this way, a function can take an event, process it, and then pass out the pro
 
 In the .NET event-based model, events cannot be composed easily. You cannot subscribe to multiple events and synthesize the results based on output. In the world of Rx, generic LINQ operators such as SelectMany, Merge, etc., are implemented in the assemblies. Such operators enable you to combine multiple event streams to return something meaningful to the subscriber. For example, you can create an observable sequence which listens to both a mouse-down and mouse-move event. You can then subscribe to this observable sequence so that what you get essentially is a composed mouse drag event. For more information on composing, see [Querying Observable Sequences using LINQ Operators](hh242983\(v=vs.103\).md).
 
-### Manipulating Events
+### Manipulating events
 
 In the .NET event-based model, events are hidden data sources that cannot be handed out to another service, application or function for storage or further processing. As we have discussed earlier, Rx represents events as a collection of objects: e.g., a MouseMove event contains a collection of Point values. Due to the first-class object nature of observables, they can be passed around as function parameters and returns, or stored in a variable.
 
-### Unsubscribing from Events
+### Unsubscribing from events
 
 In the .NET event-based model, to stop from receiving notifications of an event, you have to explicitly deregister your event handler. Rx makes this task simpler by allowing you to specify the length of time you are interested in a data source. For example, when you subscribe to an observable sequence representing an event stream, you can specify how long you would like to be notified of changes from the sequence (e.g., n iterations, or for a time interval similar to "do not push between 3-5pm", or when some other event happens). In addition, when you subscribe to an observable sequence, you get an IDisposable handle which you can use to unsubscribe (by calling Dispose) to the sequence later.

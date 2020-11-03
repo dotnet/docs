@@ -1,5 +1,5 @@
 ---
-title: Reactive Extensions
+title: Reactive Extensions (Rx)
 description: Getting started with the .NET family of technologies.
 author: IEvangelist
 ms.date: 11/03/2020
@@ -7,9 +7,9 @@ ms.author: dapine
 ms.topic: overview
 ---
 
-# Reactive Extensions
+# Reactive Extensions (Rx)
 
-Reactive Extensions (Rx) is a library for composing asynchronous and event-based programs using observable sequences and LINQ-style query operators. Data sequences can take many forms, such as a stream of data from a file or web service, web service requests, system notifications, or a series of events such as user input.
+Reactive Extensions is based on [ReactiveX](http://reactivex.io), which is an API for asynchronous programming with observable streams. Rx.NET is the .NET implemenation available as a library for composing asynchronous and event-based programs using observable sequences and LINQ-style query operators. Data sequences can take many forms, such as a stream of data from a file or web service, web service requests, system notifications, or a series of events such as user input.
 
 Reactive Extensions represents all these data sequences as observable sequences. An application can subscribe to these observable sequences to receive asynchronous notifications as new data arrive. The Rx library is available for desktop application development in .NET. It is also released for Silverlight, Windows Phone 7 and JavaScript. For more information on these different platforms, see [Differences Between Versions of Rx](hh242987\(v=vs.103\).md) topic.
 

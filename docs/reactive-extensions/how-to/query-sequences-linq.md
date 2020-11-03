@@ -120,17 +120,22 @@ source.Subscribe(x => {Console.WriteLine(x);});   // output is 0, 1, 4, 9
 Console.ReadKey();
 ```
 
-The following example is an extension of the projection example you have seen earlier in this topic. In that sample, we have used the Select operator to project the IEventPattern<MouseEventArgs> data type into a **Point** type. In the following example, we use the Where and Select operator to pick only those mouse movement that we are interested. In this case, we filter the mouse moves to those over the first bisector (where the x and y coordinates are equal).
+The following example is an extension of the projection example you have seen earlier in this topic. In that sample, we have used the Select operator to project the `IEventPattern<MouseEventArgs>` data type into a **Point** type. In the following example, we use the Where and Select operator to pick only those mouse movement that we are interested. In this case, we filter the mouse moves to those over the first bisector (where the x and y coordinates are equal).
 
 ```csharp
-var frm = new Form(); 
-IObservable<EventPattern<MouseEventArgs>> move = Observable.FromEventPattern<MouseEventArgs>(frm, "MouseMove");
-IObservable<System.Drawing.Point> points = from evt in move
-                                            select evt.EventArgs.Location;
-var overfirstbisector = from pos in points
-                        where pos.X == pos.Y 
-                        select pos;
-var movesub = overfirstbisector.Subscribe(pos => Console.WriteLine("mouse at " + pos));
+var frm = new Form();
+IObservable<EventPattern<MouseEventArgs>> move =
+    Observable.FromEventPattern<MouseEventArgs>(frm, "MouseMove");
+IObservable<System.Drawing.Point> points =
+    from evt in move
+    select evt.EventArgs.Location;
+
+var overFirstBisector =
+    from pos in points
+    where pos.X == pos.Y
+    select pos;
+
+var moveSub = overFirstBisector.Subscribe(pos => Console.WriteLine("mouse at " + pos));
 Application.Run(frm);
 ```
 
@@ -160,7 +165,7 @@ Console.ReadKey();
 
 Note that if you are using Buffer or Window, you have to make sure that the sequence is not empty before filtering on it.
 
-### LINQ operators by Categories
+### LINQ operators by categories
 
 The [LINQ Operators by Categories](hh242961(v=vs.103).md) topic lists of all major LINQ operators implemented by the [Observable](hh244252(v=vs.103).md) type by their categories; specifically: creation, conversion, combine, functional, mathematical, time, exceptions, miscellaneous, selection and primitives.
 
@@ -168,7 +173,7 @@ The [LINQ Operators by Categories](hh242961(v=vs.103).md) topic lists of all maj
 
 #### Reference
 
-[Observable](hh244252(v=vs.103).md)  
+[Observable](hh244252(v=vs.103).md)
 
 #### Concepts
 

@@ -1,13 +1,13 @@
 ---
-title: Query Observable sequences using LINQ operators
-description: Querying Observable Sequences using LINQ Operators
+title: Query event-based Observable sequences in .NET
+description: Learn how to query event-based Observable sequences using Reactive Extensions in .NET.
 author: IEvangelist
 ms.date: 11/03/2020
 ms.author: dapine
 ms.topic: how-to
 ---
 
-# Bridging with Existing .NET Events
+# Query event-based Observable sequences in .NET
 
 Rx provides factory methods for you to bridge with existing asynchronous sources in .NET so that you can employ the rich composing, filtering and resource management features provided by Rx on any kind of data streams. This topic examines the FromEventPattern operator that allows "importing" a .NET event into Rx as an observable sequence. Every time an event is raised, an OnNext message will be delivered to the observable sequence. You can then manipulate event data just like any other observable sequences.
 
@@ -17,27 +17,29 @@ Rx does not aim at replacing existing asynchronous programming models such as .N
 
 The following sample creates a simple .NET event handler for the mouse move event, and prints out the mouse's location in a label on a Windows form.
 
-    using System.Linq;
-    using System.Windows.Forms;
-    using System.Reactive;
-    using System.Reactive.Linq;
-    using System;
-    using WinForm;
-    using System.Reactive.Disposables;
-    
-    class Program {
-     
-        static void Main() 
+```csharp
+using System.Linq;
+using System.Windows.Forms;
+using System.Reactive;
+using System.Reactive.Linq;
+using System;
+using WinForm;
+using System.Reactive.Disposables;
+
+class Program
+{
+    static void Main()
+    {
+        var lbl = new Label();
+        var frm = new Form { Controls = { lbl } };
+        frm.MouseMove += (sender, args) =>
         {
-             var lbl = new Label(); 
-             var frm = new Form { Controls = { lbl } }; 
-             frm.MouseMove += (sender, args) =>
-             {
-                  lbl.Text = args.Location.ToString();
-             };
-             Application.Run(frm);
-        }; 
+            lbl.Text = args.Location.ToString();
+        };
+        Application.Run(frm);
     }
+}
+```
 
 To import an event into Rx, you can use the FromEventPattern operator, and provide the EventArgs objects that will be raised by the event being bridged. The FromEventPattern operator works with events that take an object sender and some EventArgs, and uses reflection to find those add/remove methods for you. It then converts the given event into an observable sequence with an EventPattern type that captures both the sender and the event arguments.
 
@@ -45,27 +47,31 @@ For delegates that have one parameter (non-standard events), you can use the Fro
 
 In the following example, we convert the mouse-move event stream of a Windows form into an observable sequence. Every time a mouse-move event is fired, the subscriber will receive an OnNext notification. We can then examine the EventArgs value of such notification and get the location of the mouse-move.
 
-    using System.Linq;
-    using System.Windows.Forms;
-    using System.Reactive;
-    using System.Reactive.Linq;
-    using System;
-    using WinForm;
-    using System.Reactive.Disposables;
-    
-    class Program {
-     
-        static void Main() 
-        {
-             var lbl = new Label(); 
-             var frm = new Form { Controls = { lbl } }; 
-             IObservable<EventPattern<MouseEventArgs>> move = Observable.FromEventPattern<MouseEventArgs>(frm, "MouseMove");
-             move.Subscribe(evt => { 
-                                 lbl.Text = evt.EventArgs.Location.ToString(); 
-                           }) ;
-             Application.Run(frm);
-       }; 
+```csharp
+using System.Linq;
+using System.Windows.Forms;
+using System.Reactive;
+using System.Reactive.Linq;
+using System;
+using WinForm;
+using System.Reactive.Disposables;
+
+class Program
+{
+    static void Main()
+    {
+        var lbl = new Label();
+        var frm = new Form { Controls = { lbl } };
+        IObservable<EventPattern<MouseEventArgs>> move =
+            Observable.FromEventPattern<MouseEventArgs>(frm, "MouseMove");
+
+        move.Subscribe(
+            evt => lbl.Text = evt.EventArgs.Location.ToString());
+
+        Application.Run(frm);
     }
+}
+```
 
 Notice that in this sample, `move` becomes an observable sequence in which we can manipulate further. The [Querying Observable Sequences using LINQ Operators](hh242983\(v=vs.103\).md) topic will show you how you can project this sequence into a collection of Points type and filter its content, so that your application will only receive values that satisfy a certain criteria.
 

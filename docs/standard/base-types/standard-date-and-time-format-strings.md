@@ -365,6 +365,8 @@ The following example uses the "U" format specifier to display a date and time v
 
 [Back to table](#table)
 
+## Time formats
+
 This group includes the following format specifiers:
 
 - [The Short Time ("t") Format Specifier](#the-short-time-t-format-specifier)
@@ -392,7 +394,7 @@ The following example uses the "t" format specifier to display a date and time v
 
 <a name="LongTime"></a>
 
-## The Long Time ("T") Format Specifier
+### The Long Time ("T") Format Specifier
 
 The "T" standard format specifier represents a custom date and time format string that is defined by a specific culture's <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "HH:mm:ss".
 
@@ -412,9 +414,16 @@ The following example uses the "T" format specifier to display a date and time v
 
 [Back to table](#table)
 
+## Partial date formats
+
+This group includes the following format specifiers:
+
+- [The Month ("M", "m") Format Specifier](#the-month-m-m-format-specifier)
+- [The Year Month ("Y", "y") Format Specifier](#the-year-month-y-y-format-specifier)
+
 <a name="MonthDay"></a>
 
-## The Month ("M", "m") Format Specifier
+### The Month ("M", "m") Format Specifier
 
 The "M" or "m" standard format specifier represents a custom date and time format string that is defined by the current <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "MMMM dd".
 
@@ -434,7 +443,7 @@ The following example uses the "m" format specifier to display a date and time v
 
 <a name="YearMonth"></a>
 
-## The Year Month ("Y", "y") Format Specifier
+### The Year Month ("Y", "y") Format Specifier
 
 The "Y" or "y" standard format specifier represents a custom date and time format string that is defined by the <xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A?displayProperty=nameWithType> property of a specified culture. For example, the custom format string for the invariant culture is "yyyy MMMM".
 

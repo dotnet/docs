@@ -99,7 +99,11 @@ Follow these steps to prepare your machine to collect a performance trace with `
 
 ## Viewing a Trace
 
-There are number of options for viewing the trace that was collected. Traces are best viewed using [PerfView](http://aka.ms/perfview>) on Windows.
+There are number of options for viewing the trace that was collected. Traces are best viewed using [PerfView](http://aka.ms/perfview>) on Windows, but they can be viewed directly on Linux using `PerfCollect` itself or `TraceCompass`.
+
+Recent versions of .NET Core and the Linux perf tool support automatic resolution of method names for framework code. If you are working with .NET Core version 3.1 or less, an extra step is necessary. See [Resolving Framework Symbols](#resolving-framework-symbols) for details.
+
+For resolving method names of native runtime DLLs (such as libcoreclr.so), `perfcollect` will resolve symbols for them when it converts the data, but only if the symbols for these binaries are present. See [Getting Symbols for the Native Runtime](#getting-symbols-for-the-native-runtime) section for details.
 
 ### Using PerfCollect to view the trace file
 
@@ -152,7 +156,7 @@ For more details on how to interpret views in PerfView, see help links in the vi
 
 ### Using TraceCompass to open the trace file
 
-[Eclipse TraceCompass](https://www.eclipse.org/tracecompass/) is another option you may use to view the traces. `TraceCompass` works on Linux machines as well, so you don't need to move your trace over to a Windows machine. To use `TraceCompass` to open your trace file, you will need to unzip the file. 
+[Eclipse TraceCompass](https://www.eclipse.org/tracecompass/) is another option you may use to view the traces. `TraceCompass` works on Linux machines as well, so you don't need to move your trace over to a Windows machine. To use `TraceCompass` to open your trace file, you will need to unzip the file.
 
 ```bash
 unzip myTrace.trace.zip
@@ -181,7 +185,7 @@ For example:
    > dotnet publish --self-contained -r linux-x64
    >```
 
-This creates a new Hello World application and builds it as a self-contained app. Note that if you have multiple versions of the .NET Runtime installed, the instructions above will use the latest. As long as your app also uses the latest (likely) then these instructions will work without modification.
+This creates a new Hello World application and builds it as a self-contained app.
 
 As a side effect of creating the self-contained application the dotnet tool will download a nuget package called runtime.linux-x64.microsoft.netcore.app and place it in the directory ~/.nuget/packages/runtime.linux-x64.microsoft.netcore.app/VERSION, where VERSION is the version number of your .NET Core runtime (e.g. 2.1.0). Under that is a tools directory and inside there is the crossgen tool you need. Starting with .NET Core 3.0, the package location is ~/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/VERSION.
 
@@ -196,7 +200,7 @@ Once you have done this, `perfcollect` will use crossgen to include framework sy
 
 ### Alternative: Turn off use of precompiled code
 
-If you don't have the ability to update the .NET Runtime (to add `crossgen`), or if the above procedure did not work for some reason, there is another approach to getting framework symbols. You can tell the runtime to simply not use the precompiled framework code. The code will be Just-In-Time compiled and the `crossgen` tool is not needed.
+If you don't have the ability to update the .NET Runtime (to add `crossgen`), or if the above procedure did not work for some reason, there is another approach to getting framework symbols. You can tell the runtime to simply not use the precompiled framework code. The code will be Just-In-Time compiled and `crossgen` is not needed.
 
 > [!NOTE]
 > Choosing this approach may increase the startup time for your application.
@@ -209,7 +213,7 @@ export COMPlus_ZapDisable=1
 
 With this change you should get the symbols for all .NET code.
 
-## Getting Symbols For the Native Runtime
+## Getting Symbols for the Native Runtime
 
 Most of the time you are interested in your own code, which `perfcollect` resolves by default. Sometimes it is very useful to see what is going on inside the .NET DLLs (which is what the last section was about), but sometimes what is going on in the native runtime dlls (typically libcoreclr.so), is interesting.  `perfcollect` will resolve the symbols for these when it converts its data, but only if the symbols for these native DLLs are present (and are beside the library they are for).
 
@@ -233,6 +237,8 @@ There is a global command called [dotnet-symbol](https://github.com/dotnet/symst
     ```bash
     sudo cp mySymbols/* /usr/share/dotnet/shared/Microsoft.NETCore.App/2.1.0
     ```
+
+    If this cannot be done because you do not have write access to the appropriate directory, you can use `perf buildid-cache` to add the symbols.
 
 After this, you should get symbolic names for the native dlls when you run `perfcollect`.
 

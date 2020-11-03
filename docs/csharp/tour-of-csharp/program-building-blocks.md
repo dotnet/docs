@@ -62,7 +62,7 @@ The *signature* of a method must be unique in the class in which the method is d
 When a method body is a single expression, the method can be defined using a compact expression format, as shown in the following example:
 
 ```csharp
-public override ToString() => "This is an object";
+public override string ToString() => "This is an object";
 ```
 
 ### Parameters

@@ -12,7 +12,7 @@ Why would you want to use serialization? The two most important reasons are to p
 ## Persistent storage
 It is often necessary to store the value of the fields of an object to disk and then, later, retrieve this data. Although this is easy to achieve without relying on serialization, this approach is often cumbersome and error prone, and becomes progressively more complex when you need to track a hierarchy of objects. Imagine writing a large business application, that contains thousands of objects, and having to write code to save and restore the fields and properties to and from disk for each object. Serialization provides a convenient mechanism for achieving this objective.
 
-The common language runtime manages how objects are stored in memory and provides an automated serialization mechanism by using [reflection](../../framework/reflection-and-codedom/reflection.md). When an object is serialized, the name of the class, the assembly, and all the data members of the class instance are written to storage. Objects often store references to other instances in member variables. When the class is serialized, the serialization engine tracks referenced objects, already serialized, to ensure that the same object is not serialized more than once. The serialization architecture provided with the .NET Framework correctly handles object graphs and circular references automatically. The only requirement placed on object graphs is that all objects, referenced by the serialized object, must also be marked as `Serializable` (for more information, see [Basic Serialization](basic-serialization.md)). If this is not done, an exception will be thrown when the serializer attempts to serialize the unmarked object.
+The common language runtime manages how objects are stored in memory and provides an automated serialization mechanism by using [reflection](../../framework/reflection-and-codedom/reflection.md). When an object is serialized, the name of the class, the assembly, and all the data members of the class instance are written to storage. Objects often store references to other instances in member variables. When the class is serialized, the serialization engine tracks referenced objects, already serialized, to ensure that the same object is not serialized more than once. The serialization architecture provided by .NET correctly handles object graphs and circular references automatically. The only requirement placed on object graphs is that all objects, referenced by the serialized object, must also be marked as `Serializable` (for more information, see [Basic Serialization](basic-serialization.md)). If this is not done, an exception will be thrown when the serializer attempts to serialize the unmarked object.
 
 When the serialized class is deserialized, the class is recreated and the values of all the data members are automatically restored.
 
@@ -23,10 +23,7 @@ When an object derives from `MarshalByRefObject`, an object reference is passed 
 
 ## Related sections  
  [Binary Serialization](binary-serialization.md)  
- Describes the binary serialization mechanism that is included with the common language runtime.  
-  
- [.NET Remoting](/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\
- Describes the various communications methods available in the .NET Framework for remote communications.  
+ Describes the binary serialization mechanism that is included with the common language runtime.
   
  [XML and SOAP Serialization](xml-and-soap-serialization.md)  
  Describes the XML and SOAP serialization mechanism that is included with the common language runtime.

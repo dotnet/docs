@@ -204,7 +204,7 @@ Top-level statements can only be in one file, and that file cannot contain names
 
 Finally, you can clean the animation code to remove some duplication:
 
-:::code language="csharp" source="snippets/top-level-statements/Utiliities.cs" ID="Animation":::
+:::code language="csharp" source="snippets/top-level-statements/Utilities.cs" ID="Animation":::
 
 Now you have a complete application, and you've refactored the reusable parts for later use.
 

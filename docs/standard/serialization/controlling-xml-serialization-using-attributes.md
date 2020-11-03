@@ -12,12 +12,12 @@ helpviewer_keywords:
   - "arrays, serializing"
   - "XML serialization, attributes"
   - "preventing serialization"
-  - "attributes [.NET Framework], XML serialization"
+  - "attributes [.NET], XML serialization"
   - "serialization, examples"
   - "serialization, attributes"
 ms.assetid: 47d4c39d-30e1-4c7b-8a2e-301325390647
 ---
-# Controlling XML Serialization Using Attributes
+# Control XML serialization using attributes
 
 Attributes can be used to control the XML serialization of an object or to create an alternate XML stream from the same set of classes. For more details about creating an alternate XML stream, see [How to: Specify an Alternate Element Name for an XML Stream](how-to-specify-an-alternate-element-name-for-an-xml-stream.md).
 

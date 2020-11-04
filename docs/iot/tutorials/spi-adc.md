@@ -28,9 +28,9 @@ In this topic, you will use .NET to read values from an ADC as you modulate the 
 
 ## Prepare the circuit
 
-Using a breadboard, build the circuit as depicted in the following diagram:
+Use the hardware components to build the circuit as depicted in the following diagram:
 
-:::image type="content" source="../media/rpi-trimpot_spi.png" alt-text="A Fritzing diagram showing a circuit with an MCP3008 ADC and a potentiometer" lightbox="../media/rpi-trimpot_spi.png":::
+:::image type="content" source="../media/rpi-trimpot_spi-thumb.png" alt-text="A Fritzing diagram showing a circuit with an MCP3008 ADC and a potentiometer" lightbox="../media/rpi-trimpot_spi.png":::
 
 The following are the connections from the MCP3008:
 

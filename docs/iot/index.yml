@@ -41,7 +41,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: API Reference 
-            url: /dotnet/api
+            url: /dotnet/api?view=iot-dotnet-1.0
 
   - title: Connect to devices
     linkLists:
@@ -60,31 +60,31 @@ landingContent:
     linkLists:
       - linkListType: download
         links:
-          - text: System.Device.Gpio (NuGet)
+          - text: System.Device.Gpio (NuGet.org)
             url: https://www.nuget.org/packages/System.Device.Gpio/
-          - text: Iot.Device.Bindings (NuGet)
+          - text: Iot.Device.Bindings (NuGet.org)
             url: https://www.nuget.org/packages/Iot.Device.Bindings/
-          - text: .NET IoT Libraries on GitHub
+          - text: .NET IoT Libraries source (GitHub.com)
             url: https://github.com/dotnet/iot
-          - text: Device bindings (with samples)
+          - text: Device bindings with samples (GitHub.com)
             url: https://github.com/dotnet/iot/blob/master/src/devices/README.md
   
   - title: Video learning 
     linkLists:
       - linkListType: video
         links:
-          - text: .NET IoT 101 (January 2020)  
+          - text: .NET IoT 101 (series)
             url: https://aka.ms/IoTNet101
-          - text: BBQ, Bots, and .NET Core
-            url: https://www.youtube.com/watch?v=4kJGRuXZ4kg
+          - text: BBQ, Bots, and .NET Core 
+            url: https://channel9.msdn.com/Shows/On-NET/BBQ-Bots-and-NET-Core
 
   - title: Resources 
     linkLists:
       - linkListType: concept
         links:
-          - text: Raspberry Pi documentation 
+          - text: Raspberry Pi documentation (raspberrypi.org)
             url: https://www.raspberrypi.org/documentation/
       - linkListType: how-to-guide
         links:
-          - text: How to run a .NET app automatically at boot
+          - text: How to run a .NET app automatically at boot (GitHub.com)
             url: https://github.com/dotnet/iot/blob/master/Documentation/How-to-start-your-app-automatically-on-boot.md

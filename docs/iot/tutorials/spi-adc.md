@@ -36,7 +36,7 @@ Ensure the following connections to the MCP3008:
 
 <!--markdownlint-disable MD033 -->
 - V<sub>DD</sub> to 3.3V power (shown in red)
-- V<sub>REF</sub> to 3.3 power (red)
+- V<sub>REF</sub> to 3.3V power (red)
 - AGND to ground (black)
 - CLK to SCLK (orange)
 - D<sub>OUT</sub> to MISO (orange)
@@ -45,7 +45,7 @@ Ensure the following connections to the MCP3008:
 - DGND to ground (black)
 - CH0 to variable (middle) pin on potentiometer (yellow)
 
-Supply 3.3v and ground to the outer pins on the potentiometer. Order is unimportant.
+Supply 3.3V and ground to the outer pins on the potentiometer. Order is unimportant.
 
 Refer to the following pinout diagrams as needed:
 

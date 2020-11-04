@@ -98,7 +98,7 @@ Notice the following:
 - `program` is the path to the .NET runtime on the Pi.
 - `args` is the path to the assembly to debug.
 - `cwd` is the working directory to use when launching the app.
-- `pipeProgram` is the path to the an SSH client on the local machine.
+- `pipeProgram` is the path to an SSH client on the local machine.
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `root` user in the format `<user>@<hostname>`.
 
 > [!IMPORTANT]

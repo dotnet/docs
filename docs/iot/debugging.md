@@ -114,4 +114,4 @@ On the **Run** tab, select the **.NET Core Launch (remote console)** configurati
 
 ## References
 
-[Remote debugging with VS Code on Windows to a Raspberry Pi using .NET Core on ARM (Hanselman.com)](https://www.hanselman.com/blog/remote-debugging-with-vs-code-on-windows-to-a-raspberry-pi-using-net-core-on-arm)
+[Remote debugging with VS Code on Windows to a Raspberry Pi using .NET Core on ARM](https://www.hanselman.com/blog/remote-debugging-with-vs-code-on-windows-to-a-raspberry-pi-using-net-core-on-arm) (Hanselman.com)

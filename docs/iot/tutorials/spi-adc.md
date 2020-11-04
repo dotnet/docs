@@ -24,7 +24,7 @@ In this topic, you will use .NET to read values from an ADC as you modulate the 
 - Raspberry Pi GPIO breakout board (optional/recommended)
 - [.NET SDK](https://dotnet.microsoft.com/download)
 
-[!INCLUDE [prepare-pi-spi](includes/prepare-spi.md)]
+[!INCLUDE [prepare-pi-spi](includes/prepare-pi-spi.md)]
 
 ## Prepare the circuit
 

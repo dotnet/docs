@@ -13,7 +13,7 @@ Starting in .NET 5.0, if an app is running on Windows 10 May 2019 Update or late
 
 #### Behavioral differences
 
-You might see changes in your app even if you don't realize you're using globalization facilities. This section lists just a couple of behavioral changes you might see, but there are others too.
+You might see changes in your app even if you don't realize you're using globalization facilities. This section lists a couple of the behavioral changes you might see, but there are others too.
 
 ##### String.IndexOf
 
@@ -43,15 +43,12 @@ System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.
 string text = string.Format("{0:C}", 100);
 ```
 
-- In previous versions of .NET on Windows, the value of text is `"100,00 &euro;"`.
-- In .NET 5.0 and later versions on Windows 19H1 and later versions, the value of text is `"100,00 ¤"`, which uses the international currency symbol instead of the euro. In ICU, the design is that a "currency" is a property of a country or region, not a language.
+- In previous versions of .NET on Windows, the value of text is `"100,00 €"`.
+- In .NET 5.0 and later versions on Windows 19H1 and later versions, the value of text is `"100,00 ¤"`, which uses the international currency symbol instead of the euro. In ICU, the design is that a currency is a property of a country or region, not a language.
 
 #### Reason for change
 
-This change was introduced for two reasons:
-
-- Apps have the same globalization behavior across platforms, including Linux, macOS, and Windows.
-- Apps can control globalization behavior by using custom ICU libraries.
+This change was introduced to unify .NET's globalization behavior across all supported operating systems. It also provides the ability for applications to bundle their own globalization libraries rather than depend on the operating system's built-in libraries.
 
 #### Version introduced
 
@@ -74,7 +71,7 @@ No action is required on the part of the developer. However, if you wish to cont
 - <xref:System.Array.Sort%2A?displayProperty=fullName> (when sorting an array of strings)
 - <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> (when the list elements are strings)
 - <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName> (when the keys are strings)
-- <xref:System.Collections.SortedList%602?displayProperty=fullName> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName> (when the keys are strings)
 - <xref:System.Collections.Generic.SortedSet%601?displayProperty=fullName> (when the set contains strings)
 
 <!--

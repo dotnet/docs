@@ -8,6 +8,72 @@ ms.topic: overview
 ms.prod: dotnet
 ---
 
-# Content coming soon
+# Deploy .NET apps to Raspberry Pi
 
-[Gonna steal this, more or less](https://github.com/dotnet/iot/blob/master/Documentation/How-to-Deploy-an-IoT-App.md).
+Deployment of .NET apps to Raspberry Pi is the identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](/core/deploying).
+
+## Deploying a framework-dependent app
+
+To deploy your app as a framework-dependent app, complete the following steps:
+
+[!INCLUDE [ensure-ssh](includes/ensure-ssh.md)]
+
+1. Install .NET on the Raspberry Pi using the [dotnet-install scripts](/dotnet/core/tools/dotnet-install-script). Complete the following steps from a Bash prompt on the Raspberry Pi (local or SSH):
+    1. Run the following command to install .NET:
+
+        ```bash
+        curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin
+        ```
+
+        > [!NOTE]
+        > This installs the latest version. If you need a specific version, add `--version <VERSION>` to the end, where `<VERSION>` is the specific build version.
+
+    1. To simplify path resolution, add a `DOTNET_ROOT` environment variable and add the *.dotnet* directory to `$PATH` with the following commands:
+
+        ```bash
+        echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc
+        echo 'export PATH=$PATH:$HOME/.dotnet' >> ~/.bashrc
+        source ~/.bashrc
+        ```
+
+    1. Verify the .NET installation with the following command:
+
+        ```bash
+        dotnet --version
+        ```
+
+        Verify the displayed version matches the version you installed.
+
+1. Publish the app on the development computer as follows, depending on development environment.
+    - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder?view=vs-2019). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Framework-dependent* and **Target runtime** is set to *Portable*.
+    - If using the **.NET CLI**, use the [dotnet publish](/dotnet/core/tools/dotnet-publish) command. No additional arguments are required.
+
+[!INCLUDE [sftp-client](includes/sftp-client.md)]
+
+1. From a Bash prompt on the Raspberry Pi (local or SSH), run the app by setting the deployment folder as the current directory and executing the following command, where `HelloWorld.dll` is the entry point of the app:
+
+    ```bash
+    dotnet HelloWorld.dll
+    ```
+
+## Deploying a self-contained app
+
+To deploy your app as a self-contained app, complete the following steps:
+
+[!INCLUDE [ensure-ssh](includes/ensure-ssh.md)]
+
+1. Publish the app on the development computer as follows, depending on development environment.
+    - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder?view=vs-2019). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Self-contained* and **Target runtime** is set to *linux-arm*.
+    - If using the **.NET CLI**, use the [dotnet publish](/dotnet/core/tools/dotnet-publish) command with the `-r linux-arm` argument:
+
+        ```bash
+        dotnet publish -r linux-arm
+        ```
+
+[!INCLUDE [sftp-client](includes/sftp-client.md)]
+
+1. From a Bash prompt on the Raspberry Pi (local or SSH), run the app by setting the deployment folder as the current directory and executing the following command, where `HelloWorld.dll` is the entry point of the app:
+
+    ```bash
+    dotnet HelloWorld.dll
+    ```

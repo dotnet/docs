@@ -37,11 +37,12 @@ Within a Bash console on the Raspberry Pi (either locally or via SSH), complete 
     ```
 
 1. Visual Studio Code uses the SSH protocol to debug remotely. For security purposes, `root` is not permitted to log on via SSH by default. To enable `root` to log on via SSH, complete the following steps:
+
     1. Execute the following command to open */etc/ssh/sshd_config* in [nano](https://www.nano-editor.org/docs.php).
 
-    ```bash
-    sudo nano /etc/ssh/sshd_config
-    ```
+        ```bash
+        sudo nano /etc/ssh/sshd_config
+        ```
 
     1. Press <kbd>Ctrl+W</kbd> and search for **PermitRootLogin**.
     1. Uncomment the line with **PermitRootLogin** if needed.

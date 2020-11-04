@@ -1167,6 +1167,8 @@ items:
             href: code-analysis/style-rules/ide0081.md
           - name: IDE0100
             href: code-analysis/style-rules/ide0100.md
+          - name: IDE0110
+            href: code-analysis/style-rules/ide0110.md
         - name: Miscellaneous rules
           items:
           - name: IDE0076
@@ -1419,14 +1421,20 @@ items:
         href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
       - name: Display dates in non-Gregorian calendars
         href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
-  - name: Manipulate strings
+  - name: Strings
     items:
     - name: Character encoding in .NET
       href: ../standard/base-types/character-encoding-introduction.md
     - name: How to use character encoding classes
       href: ../standard/base-types/character-encoding.md
-    - name: Best practices for using strings
-      href: ../standard/base-types/best-practices-strings.md
+    - name: Best practices
+      items:
+      - name: Comparing strings
+        href: ../standard/base-types/best-practices-strings.md
+      - name: Displaying and persisting formatted data
+        href: ../standard/base-types/best-practices-display-data.md
+    - name: Behavior changes in .NET 5+ (Windows)
+      href: ../standard/base-types/string-comparison-net-5-plus.md
     - name: Basic string operations
       items:
       - name: Overview
@@ -1438,12 +1446,12 @@ items:
         href: ../standard/base-types/trimming.md
       - name: Pad strings
         href: ../standard/base-types/padding.md
-      - name: Compare strings
+      - name: Comparison methods
         href: ../standard/base-types/comparing.md
       - name: Change case
         href: ../standard/base-types/changing-case.md
-      - name: Extract elements from a string
-        href: ../standard/base-types/parse-strings.md
+      - name: Separate parts of a string
+        href: ../standard/base-types/divide-up-strings.md
       - name: Use the StringBuilder class
         href: ../standard/base-types/stringbuilder.md
       - name: "How to: Perform basic string manipulations"
@@ -1503,16 +1511,16 @@ items:
           href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
         - name: Verify that strings are in valid email format
           href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
-  - name: Parse strings
-    items:
-    - name: Overview
-      href: ../standard/base-types/parsing-strings.md
-    - name: Parse numeric strings
-      href: ../standard/base-types/parsing-numeric.md
-    - name: Parse date and time strings
-      href: ../standard/base-types/parsing-datetime.md
-    - name: Parse other strings
-      href: ../standard/base-types/parsing-other.md
+    - name: Parse (convert) strings
+      items:
+      - name: Overview
+        href: ../standard/base-types/parsing-strings.md
+      - name: Parse numeric strings
+        href: ../standard/base-types/parsing-numeric.md
+      - name: Parse date and time strings
+        href: ../standard/base-types/parsing-datetime.md
+      - name: Parse other strings
+        href: ../standard/base-types/parsing-other.md
   - name: Attributes
     items:
     - name: Overview

@@ -22,7 +22,8 @@ string s = "Hello\r\nworld!";
 int idx = s.IndexOf("\n");
 Console.WriteLine(idx);
 
-// The above snippet prints:
+// The snippet prints:
+//
 // '6' when running on .NET Framework (Windows)
 // '6' when running on .NET Core 2.x - 3.x (Windows)
 // '-1' when running on .NET 5 (Windows)
@@ -32,9 +33,11 @@ Console.WriteLine(idx);
 
 ## Guard against unexpected behavior
 
+This section provides two options for dealing with unexpected behavior changes in .NET 5.0.
+
 ### Enable code analyzers
 
-Code analyzers can detect possibly buggy call sites. To help guard against any surprising behaviors, we recommend installing [the __Microsoft.CodeAnalysis.FxCopAnalyzers__ NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) into your project. This package includes the code analysis rules __CA1307__ and __CA1309__, which help flag code that might inadvertently be using a linguistic comparer when an ordinal comparer was likely intended.
+[Code analyzers](../../fundamentals/code-analysis/overview.md) can detect possibly buggy call sites. To help guard against any surprising behaviors, we recommend installing [the __Microsoft.CodeAnalysis.FxCopAnalyzers__ NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) into your project. This package includes the code analysis rules [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md), which help flag code that might inadvertently be using a linguistic comparer when an ordinal comparer was likely intended.
 
 For example:
 
@@ -90,29 +93,29 @@ For more information about these code analyzer rules, including when it might be
 To revert .NET 5 applications back to older NLS behaviors when running on Windows, follow the steps in [.NET Globalization and ICU](../globalization-localization/globalization-icu.md). This application-wide compatibility switch must be set at the application level. Individual libraries cannot opt-in or opt-out of this behavior.
 
 > [!TIP]
-> We strongly recommend you use the __CA1307__ and __CA1309__ analyzer rules that were mentioned previously to help improve code hygiene and discover any existing latent bugs.
+> We strongly recommend you enable the [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md) code analysis rules to help improve code hygiene and discover any existing latent bugs. For more information, see [Enable code analyzers](#enable-code-analyzers).
 
-### Affected APIs
+## Affected APIs
 
 Most .NET applications won't encounter any unexpected behaviors due to the changes in .NET 5.0. However, due to the number of affected APIs and how foundational these APIs are to the wider .NET ecosystem, you should be aware of the potential for .NET 5.0 to introduce unwanted behaviors or to expose latent bugs that already exist in your application.
 
 The affected APIs include:
 
-* [`System.String.Compare`](https://docs.microsoft.com/dotnet/api/system.string.compare)
-* [`System.String.EndsWith`](https://docs.microsoft.com/dotnet/api/system.string.endswith)
-* [`System.String.IndexOf`](https://docs.microsoft.com/dotnet/api/system.string.indexof)
-* [`System.String.StartsWith`](https://docs.microsoft.com/dotnet/api/system.string.startswith)
-* [`System.String.ToLower`](https://docs.microsoft.com/dotnet/api/system.string.tolower)
-* [`System.String.ToLowerInvariant`](https://docs.microsoft.com/dotnet/api/system.string.tolowerinvariant)
-* [`System.String.ToUpper`](https://docs.microsoft.com/dotnet/api/system.string.toupper)
-* [`System.String.ToUpperInvariant`](https://docs.microsoft.com/dotnet/api/system.string.toupperinvariant)
-* [`System.Globalization.TextInfo`](https://docs.microsoft.com/dotnet/api/system.globalization.textinfo) (most members)
-* [`System.Globalization.CompareInfo`](https://docs.microsoft.com/dotnet/api/system.globalization.compareinfo) (most members)
-* [`System.Array.Sort`](https://docs.microsoft.com/dotnet/api/system.array.sort) (when sorting arrays of strings)
-* [`System.Collections.Generic.List<T>.Sort`](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort) (when the list elements are strings)
-* [`System.Collections.Generic.SortedDictionary<TKey, TValue>`](https://docs.microsoft.com/dotnet/api/system.collections.generic.sorteddictionary-2) (when the keys are strings)
-* [`System.Collections.Generic.SortedList<TKey, TValue>`](https://docs.microsoft.com/dotnet/api/system.collections.generic.sortedlist-2) (when the keys are strings)
-* [`System.Collections.Generic.SortedSet<T>`](https://docs.microsoft.com/dotnet/api/system.collections.generic.sortedset-1) (when the set contains strings)
+- <xref:System.String.Compare%2A?displayProperty=fullName>
+- <xref:System.String.EndsWith%2A?displayProperty=fullName>
+- <xref:System.String.IndexOf%2A?displayProperty=fullName>
+- <xref:System.String.StartsWith%2A?displayProperty=fullName>
+- <xref:System.String.ToLower%2A?displayProperty=fullName>
+- <xref:System.String.ToLowerInvariant%2A?displayProperty=fullName>
+- <xref:System.String.ToUpper%2A?displayProperty=fullName>
+- <xref:System.String.ToUpperInvariant%2A?displayProperty=fullName>
+- <xref:System.Globalization.TextInfo?displayProperty=fullName> (most members)
+- <xref:System.Globalization.CompareInfo?displayProperty=fullName> (most members)
+- <xref:System.Array.Sort%2A?displayProperty=fullName> (when sorting arrays of strings)
+- <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> (when the list elements are strings)
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName> (when the keys are strings)
+- <xref:System.Collections.Generic.SortedSet%601?displayProperty=fullName> (when the set contains strings)
 
 > [!NOTE]
 > This is not an exhaustive list of affected APIs.
@@ -121,7 +124,7 @@ All of the above APIs use *linguistic* string searching and comparison using the
 
 Because ICU implements linguistic string comparisons differently from NLS, Windows-based applications that upgrade to .NET 5.0 from an earlier version of .NET Core or .NET Framework and that call one of the affected APIs may notice that the APIs begin exhibiting different behaviors.
 
-#### Exceptions
+### Exceptions
 
 * If an API accepts an explicit `StringComparison` or `CultureInfo` parameter, that parameter overrides the API's default behavior.
 * `System.String` members where the first parameter is of type `char` (for example, <xref:System.String.IndexOf(System.Char)?displayProperty=nameWithType>) use ordinal searching, unless the caller passes an explicit `StringComparison` argument that specifies `CurrentCulture[IgnoreCase]` or `InvariantCulture[IgnoreCase]`.
@@ -307,3 +310,12 @@ if (str.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } //
 ReadOnlySpan<char> span = s.AsSpan();
 if (span.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } // ordinal comparison
 ```
+
+## See also
+
+- [Globalization breaking changes](../../core/compatibility/globalization.md)
+- [Best practices for comparing strings in .NET](best-practices-strings.md)
+- [How to compare strings in C#](../../csharp/how-to/compare-strings.md)
+- [.NET globalization and ICU](../globalization-localization/globalization-icu.md)
+- [Ordinal vs. culture-sensitive string operations](/dotnet/api/system.string#ordinal-vs-culture-sensitive-operations)
+- [Overview of .NET source code analysis](../../fundamentals/code-analysis/overview.md)

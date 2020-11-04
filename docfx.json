@@ -64,7 +64,8 @@
           "csharp-8.0/notnull-constraint.md",
           "csharp-8.0/obsolete-accessor.md",
           "csharp-8.0/shadowing-in-nested-functions.md",
-          "csharp-8.0/unconstrained-null-coalescing.md"
+          "csharp-8.0/unconstrained-null-coalescing.md",
+          "csharp-8.0/nullable-reference-types-specification.md"
         ]
       },
       {
@@ -509,7 +510,6 @@
         "_csharplang/proposals/csharp-7.3/improved-overload-candidates.md": "Improved overload candidates",
 
         "_csharplang/proposals/csharp-8.0/nullable-reference-types.md": "Null reference types - proposal",
-        "_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md": "Nullable reference types - specification",
         "_csharplang/proposals/csharp-8.0/patterns.md": "Recursive pattern matching",
         "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "Default interface methods",
         "_csharplang/proposals/csharp-8.0/async-streams.md": "Async streams",
@@ -528,6 +528,7 @@
         "_csharplang/proposals/csharp-9.0/local-function-attributes.md" : "Attributes on local functions",
         "_csharplang/proposals/csharp-9.0/module-initializers.md" : "Module initializers",
         "_csharplang/proposals/csharp-9.0/native-integers.md" : "Native sized integers",
+        "_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md": "Nullable reference types - specification",
         "_csharplang/proposals/csharp-9.0/patterns3.md" : "Pattern matching changes",
         "_csharplang/proposals/csharp-9.0/records.md" : "Records",
         "_csharplang/proposals/csharp-9.0/skip-localsinit.md" : "Surpress emitting localsinit flag",

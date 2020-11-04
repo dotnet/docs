@@ -32,7 +32,7 @@ Using a breadboard, build the circuit as depicted in the following diagram:
 
 :::image type="content" source="../media/rpi-trimpot_spi.png" alt-text="A Fritzing diagram showing a circuit with an MCP3008 ADC and a potentiometer" lightbox="../media/rpi-trimpot_spi.png":::
 
-Ensure the following connections to the MCP3008:
+The following are the connections from the MCP3008:
 
 <!--markdownlint-disable MD033 -->
 - V<sub>DD</sub> to 3.3V power (shown in red)

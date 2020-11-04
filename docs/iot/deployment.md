@@ -38,7 +38,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
 
     1. Verify the .NET installation with the following command:
 
-        ```bash
+        ```dotnetcli
         dotnet --version
         ```
 
@@ -52,7 +52,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
 
 1. From a Bash prompt on the Raspberry Pi (local or SSH), run the app. To do this, set the deployment folder as the current directory and executing the following command (where `HelloWorld.dll` is the entry point of the app):
 
-    ```bash
+    ```dotnetcli
     dotnet HelloWorld.dll
     ```
 
@@ -66,7 +66,7 @@ To deploy your app as a self-contained app, complete the following steps:
     - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder?view=vs-2019). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Self-contained* and **Target runtime** is set to *linux-arm*.
     - If using the **.NET CLI**, use the [dotnet publish](/dotnet/core/tools/dotnet-publish) command with the `-r linux-arm` argument:
 
-        ```bash
+        ```dotnetcli
         dotnet publish -r linux-arm
         ```
 

@@ -41,7 +41,17 @@ Refer to the following pinout diagrams as needed:
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
 
-Notice the following:
+Ensure the following connections to the MCP3008:
 
 <!--markdownlint-disable MD033 -->
-- V<sub>DD</sub> and V<sub>REF</sub> are connected to 3.3V power from the Raspberry Pi (red wires)
+- V<sub>DD</sub> to 3.3V power (shown in red)
+- V<sub>REF</sub> to 3.3 power (red)
+- AGND to ground (black)
+- CLK to SCLK (orange)
+- D<sub>OUT</sub> to MISO (orange)
+- D<sub>IN</sub> to MOSI (orange)
+- CS/SHDN to CE0 (orange)
+- DGND to ground (black)
+- CH0 to variable (middle) pin on potentiometer (yellow)
+
+Supply 3.3v and ground to the outer pins on the potentiometer. Order is unimportant.

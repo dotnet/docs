@@ -10,7 +10,9 @@ ms.prod: dotnet
 
 # Develop apps for IoT devices with the .NET IoT Libraries
 
-.NET runs on a variety of platforms and architectures. Common IoT boards, including Raspberry Pi and Hummingboard, are supported. IoT apps typically interact with specialized hardware, such as sensors, analog-to-digital converters, and LCD devices. The .NET IoT Libraries enable these scenarios.
+.NET runs on a variety of platforms and architectures. Common IoT boards, such as Raspberry Pi and Hummingboard, are supported. IoT apps typically interact with specialized hardware, such as sensors, analog-to-digital converters, and LCD devices. The .NET IoT Libraries enable these scenarios.
+
+## Video overview
 
 <!--markdownlint-disable MD034 -->
 > [!VIDEO https://channel9.msdn.com/Series/IoT-101/Intro-to-IOT-with-NET-Core-1-of-9/player]
@@ -21,25 +23,26 @@ The .NET IoT Libraries are composed of two NuGet packages, [System.Device.Gpio](
 
 ### System.Device.Gpio
 
-System.Device.Gpio supports a variety of techniques and protocols for interacting with low-level hardware pins to control devices. These include:
+System.Device.Gpio supports a variety of protocols for interacting with low-level hardware pins to control devices. These include:
 
 - General-purpose I/O (GPIO)
 - Inter-Integrated Circuit (I2C)
 - Serial Peripheral Interface (SPI)
 - Pulse Width Modulation (PWM)
+- Serial port
 
 ### Iot.Device.Bindings
 
-Iot.Device.Bindings streamlines app development for devices and sensors using the protocols supported by System.Device.Gpio. Iot.Device.Bindings is optional since it wraps lower-level functionality found in System.Device.Gpio.
+Iot.Device.Bindings contains [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) to streamline app development by wrapping System.Device.Gpio. Iot.Device.Bindings is community-supported, and additional bindings are added continually.
 
-#### Available bindings
+Common device bindings include:
 
-As Iot.Device.Bindings is open-source, the community contributes device bindings. Additional bindings are added continually.
-
-Find more information about supported devices on Github:
-
-- [Device bindings list](https://github.com/dotnet/iot/blob/master/src/devices/README.md)
-- [Device bindings source with samples](https://github.com/dotnet/iot/tree/master/src/devices)
+- Adding
+- Items
+- as
+- Suggested
+- by
+- Rich
 
 ## Supported operating systems
 
@@ -47,7 +50,7 @@ System.Device.Gpio is supported on Linux and Windows 10 IoT Core. For Raspberry 
 
 ## Supported hardware platforms
 
-System.Device.Gpio is compatible with most single-board platforms. Recommended platforms are Raspberry Pi (3 and greater) and Hummingboard. Other platforms known to be compatible are BeagleBoard and ODROID.
+System.Device.Gpio is compatible with most single-board platforms. Recommended platforms are Raspberry Pi (2 and greater) and Hummingboard. Other platforms known to be compatible are BeagleBoard and ODROID.
 
 PC platforms are supported via the use of a USB to SPI/I2C bridge.
 

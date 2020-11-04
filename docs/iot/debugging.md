@@ -18,13 +18,17 @@ Visual Studio can debug .NET apps on remote devices remotely via SSH. No special
 
 ## Debug from Visual Studio Code (cross-platform)
 
-Debugging .NET on an ARM device from Visual Studio Code requires installing the Visual Studio Remote Debugger on the device.
+Debugging .NET on an ARM device from Visual Studio Code requires configuration steps on the Raspberry Pi
 
-### Setup the Raspberry Pi
+### Enable SSH on the Raspberry Pi
+
+SSH is required for remote debugging. To enable SSH, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/).
+
+### Install the Visual Studio Remote Debugger on the Raspberry Pi
 
 Within a Bash console on the Raspberry Pi (either locally or via SSH), complete the following steps:
 
-1. Execute the following command to download and install the Visual Studio Remote Debugger on the Raspberry Pi.
+1. Execute the following command to download and install the Visual Studio Remote Debugger on the Raspberry Pi:
 
     ```bash
     curl -sSL https://aka.ms/getvsdbgsh | /bin/sh /dev/stdin -v latest -l ~/vsdbg
@@ -96,13 +100,13 @@ The new configuration in *launch.json* should look similar to this:
 Notice the following:
 
 - `program` is the path to the .NET runtime on the Pi.
-- `args` is the path to the assembly to debug.
-- `cwd` is the working directory to use when launching the app.
+- `args` is the path to the assembly to debug on the Pi.
+- `cwd` is the working directory to use when launching the app on the Pi.
 - `pipeProgram` is the path to an SSH client on the local machine.
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `root` user in the format `<user>@<hostname>`.
 
 > [!IMPORTANT]
-> The above example uses *plink*, a component of the [PuTTY](https://www.ssh.com/ssh/putty/) SSH client. OpenSSH, which is included in recent versions of Windows and Linux, may be used instead. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
+> The above example uses *plink*, a component of the [PuTTY](https://www.ssh.com/ssh/putty/) SSH client. [OpenSSH](https://www.openssh.com/), which is included in recent versions of Windows and Linux, may be used instead. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
 
 ### Deploy the app
 

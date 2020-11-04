@@ -3,17 +3,17 @@
 - name: Overview
   href: intro.md
 - name: Quickstart (Sense HAT)
-  href: sensehat-quickstart.md
+  href: quickstarts/sensehat.md
 - name: Tutorials
   items:
   - name: GPIO - Blink an LED
-    href: gpio-blink-led-tutorial.md
+    href: tutorials/gpio-blink-led.md
   - name: I2C - Read temperature from a sensor
-    href: i2c-temp-sensor-tutorial.md
+    href: tutorials/i2c-temp-sensor.md
   - name: I2C with GPIO expander - Display text on an LCD
-    href: i2c-lcd-display-tutorial.md
+    href: tutorials/i2c-lcd-display.md
   - name: SPI - Read temperatures with a sensor
-    href: spi-adc-tutorial.md
+    href: tutorials/spi-adc.md
 - name: How-to guides
   items:
   - name: Deployment

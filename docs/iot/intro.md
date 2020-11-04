@@ -12,7 +12,7 @@ ms.prod: dotnet
 
 .NET runs on a variety of platforms and architectures. Common IoT boards, including Raspberry Pi and Hummingboard, are supported. IoT apps typically interact with specialized hardware, such as sensors, analog-to-digital converters, and LCD devices. The .NET IoT Libraries enable these scenarios.
 
-> [!VIDEO https://channel9.msdn.com/Series/IoT-101/Intro-to-IOT-with-NET-Core-1-of-9/player]
+> [!VIDEO <https://channel9.msdn.com/Series/IoT-101/Intro-to-IOT-with-NET-Core-1-of-9/player>]
 
 ## Libraries
 

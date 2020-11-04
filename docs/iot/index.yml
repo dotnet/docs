@@ -37,9 +37,13 @@ landingContent:
       - linkListType: concept
         links:
           - text: Debugging  
-            url: debugging.md               
+            url: debugging.md
+      - linkListType: reference
+        links:
+          - text: API Reference 
+            url: /dotnet/api
 
-  - title: Tutorials
+  - title: Connect to devices
     linkLists:
       - linkListType: tutorial
         links:

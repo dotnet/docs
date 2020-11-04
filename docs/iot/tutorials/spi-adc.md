@@ -32,15 +32,6 @@ Using a breadboard, build the circuit as depicted in the following diagram:
 
 :::image type="content" source="../media/rpi-trimpot_spi.png" alt-text="A Fritzing diagram showing a circuit with an MCP3008 ADC and a potentiometer" lightbox="../media/rpi-trimpot_spi.png":::
 
-Refer to the following pinout diagrams as needed:
-
-:::image type="content" source="../media/mcp3008-diagram.png" alt-text="A diagram showing the pinout of the MCP3008" lightbox="../media/mcp3008-diagram.png":::
-
-:::image type="content" source="../media/gpio-pinout-diagram.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header" lightbox="../media/gpio-pinout-diagram.png":::
-([Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/))
-
-[!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
-
 Ensure the following connections to the MCP3008:
 
 <!--markdownlint-disable MD033 -->
@@ -55,3 +46,12 @@ Ensure the following connections to the MCP3008:
 - CH0 to variable (middle) pin on potentiometer (yellow)
 
 Supply 3.3v and ground to the outer pins on the potentiometer. Order is unimportant.
+
+Refer to the following pinout diagrams as needed:
+
+:::image type="content" source="../media/mcp3008-diagram.png" alt-text="A diagram showing the pinout of the MCP3008" lightbox="../media/mcp3008-diagram.png":::
+
+:::image type="content" source="../media/gpio-pinout-diagram.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header" lightbox="../media/gpio-pinout-diagram.png":::
+[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/)
+
+[!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]

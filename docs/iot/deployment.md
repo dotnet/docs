@@ -38,7 +38,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
 
     1. Verify the .NET installation with the following command:
 
-        ```bash
+        ```dotnetcli
         dotnet --version
         ```
 

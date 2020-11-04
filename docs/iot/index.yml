@@ -24,7 +24,7 @@ landingContent:
           - text: Sense HAT quickstart  
             url: quickstarts/sensehat.md  
 
-  - title: Learn the basics
+  - title: Basics
     linkLists:
       - linkListType: overview
         links:
@@ -56,22 +56,21 @@ landingContent:
           - text: SPI - Read values from an analog-to-digital converter
             url: tutorials/spi-adc.md
 
-  - title: Resources 
+  - title: Video learning 
     linkLists:
-      - linkListType: concept
-        links:
-          - text: Raspberry Pi documentation 
-            url: https://www.raspberrypi.org/documentation/
       - linkListType: video
         links:
           - text: .NET IoT 101 (January 2020)  
             url: https://aka.ms/IoTNet101
           - text: BBQ, Bots, and .NET Core
             url: https://www.youtube.com/watch?v=4kJGRuXZ4kg
-      - linkListType: download
+      
+  - title: Resources 
+    linkLists:
+      - linkListType: concept
         links:
-          - text: .NET IoT Libraries on GitHub
-            url: https://github.com/dotnet/iot
+          - text: Raspberry Pi documentation 
+            url: https://www.raspberrypi.org/documentation/
       - linkListType: how-to-guide
         links:
           - text: How to run a .NET app automatically at boot

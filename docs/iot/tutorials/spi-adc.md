@@ -49,7 +49,6 @@ Supply 3.3V and ground to the outer pins on the potentiometer. Order is unimport
 
 Refer to the following pinout diagrams as needed:
 
-
 | MCP3008  | Raspberry Pi GPIO |
 |---------=|---------|
 | :::image type="content" source="../media/mcp3008-diagram.png" alt-text="A diagram showing the pinout of the MCP3008" lightbox="../media/mcp3008-diagram.png"::: | :::image type="content" source="../media/gpio-pinout-diagram.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header" lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/).

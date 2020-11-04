@@ -1,11 +1,9 @@
 ---
 title: Creating and Subscribing to Simple Observable Sequences
-TOCTitle: Creating and Subscribing to Simple Observable Sequences
-ms:assetid: 59c77588-9200-428d-bf6a-f71bf757f901
-ms:mtpsurl: https://msdn.microsoft.com/en-us/library/Hh242977(v=VS.103)
-ms:contentKeyID: 36068262
-ms.date: 06/28/2011
-mtps_version: v=VS.103
+description: aaa
+author: IEvangelist
+ms.author: dapine
+ms.date: 11/03/2020
 ---
 
 # Creating and Subscribing to Simple Observable Sequences

@@ -1,10 +1,12 @@
 items:
 - name: Reactive Extensions (Rx) documentation
   href: index.yml
-- name: Overview
-  href: overview.md
-- name: When to use Rx?
-  href: when-to-use-rx.md
+- name: Get started
+  items:
+  - name: Overview
+    href: overview.md
+  - name: When to use Rx?
+    href: when-to-use-rx.md
 - name: How-to guides
   items:
   - name: Query event-based Observable sequences

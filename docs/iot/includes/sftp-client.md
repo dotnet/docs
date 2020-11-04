@@ -8,7 +8,7 @@ scp /publish-location/*.* pi@raspberrypi:/home/pi/deployment-location/
 
 Where:
 
-- *c:\publish-location\* is the folder you published to in the previous step.
+- */publish-location/* is the folder you published to in the previous step.
 - *pi@raspberypi* is the user and host names in the format `<username>@<hostname>`.
 - */home/pi/deployment-location/* is the new folder on the Raspberry Pi.
 

@@ -18,7 +18,7 @@ Visual Studio can debug .NET apps on remote devices remotely via SSH. No special
 
 ## Debug from Visual Studio Code (cross-platform)
 
-Debugging .NET on an ARM device from Visual Studio Code requires configuration steps on the Raspberry Pi
+Debugging .NET on Raspberry Pi from Visual Studio Code requires configuration steps on the Raspberry Pi and in the project's *launch.json* file.
 
 ### Enable SSH on the Raspberry Pi
 

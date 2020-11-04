@@ -37,7 +37,7 @@ Refer to the following pinout diagrams as needed:
 :::image type="content" source="../media/mcp3008-diagram.png" alt-text="A diagram showing the pinout of the MCP3008" lightbox="../media/mcp3008-diagram.png":::
 
 :::image type="content" source="../media/gpio-pinout-diagram.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header" lightbox="../media/gpio-pinout-diagram.png":::
-([source](https://www.raspberrypi.org/documentation/usage/gpio/))
+([Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/))
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
 

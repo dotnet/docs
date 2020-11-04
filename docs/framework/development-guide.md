@@ -58,10 +58,12 @@ This section explains how to create, configure, debug, secure, and deploy your .
  Provides information about caching, lazy initialization, reliability, and ETW events.  
 
 ## Reference  
+
  [.NET Framework Class Library](../../api/index.md?view=netframework-4.7)  
  Supplies syntax, code examples, and usage information for each class that is contained in the .NET Framework namespaces.  
   
 ## Related Sections  
+
  [Getting Started](./get-started/index.md)  
  Provides a comprehensive overview of the .NET Framework and links to additional resources.  
   

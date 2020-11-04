@@ -1444,8 +1444,8 @@ items:
         href: ../standard/base-types/comparing.md
       - name: Change case
         href: ../standard/base-types/changing-case.md
-      - name: Extract elements from a string
-        href: ../standard/base-types/parse-strings.md
+      - name: Separate parts of a string
+        href: ../standard/base-types/divide-up-strings.md
       - name: Use the StringBuilder class
         href: ../standard/base-types/stringbuilder.md
       - name: "How to: Perform basic string manipulations"
@@ -1505,7 +1505,7 @@ items:
           href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
         - name: Verify that strings are in valid email format
           href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
-  - name: Parse strings
+  - name: Parse (convert) strings
     items:
     - name: Overview
       href: ../standard/base-types/parsing-strings.md

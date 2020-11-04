@@ -31,23 +31,23 @@ You can build a C# class to model this behavior. A `CanalLock` class would suppo
 
 You'll build a console application to test your `CanalLock` class. Create a new console project for .NET 5 using either Visual Studio or the .NET CLI. Then, add a new class and name it `CanalLock`. Next, design your public API, but leave the methods not implemented:
 
-:::code language="csharp" source="snippets/patterns-objects/InterimSteps.cs" ID="APIDesign":::
+:::code language="csharp" source="snippets/pattern-objects/InterimSteps.cs" ID="APIDesign":::
 
 The preceding code initializes the object so both gates are closed, and the water level is low. Next, write the following test code in your `Main` method to guide you creating a first implementation of the class:
 
-:::code language="csharp" source="snippets/patterns-objects/Program.cs" ID="HappyTests":::
+:::code language="csharp" source="snippets/pattern-objects/Program.cs" ID="HappyTests":::
 
 Next, add a first implementation of each method in the `CanalLock` class. The following code implements the methods of the class without concern to the safety rules. You'll add safety tests later:
 
-:::code language="csharp" source="snippets/patterns-objects/InterimSteps.cs" ID="FirstImplementation":::
+:::code language="csharp" source="snippets/pattern-objects/InterimSteps.cs" ID="FirstImplementation":::
 
 The tests you've written so far pass. You've implemented the basics. Now, write a test for the first failure condition. At the end of the previous tests, both gates are closed, and the water level is set to low. Add a test to try opening the upper gate:
 
-:::code language="csharp" source="snippets/patterns-objects/Program.cs" ID="HighGateSafetyTest":::
+:::code language="csharp" source="snippets/pattern-objects/Program.cs" ID="HighGateSafetyTest":::
 
 This test fails because the gate opens. As a first implementation, you could fix it with the following code:
 
-:::code language="csharp" source="snippets/patterns-objects/InterimSteps.cs" ID="SecondImplementation":::
+:::code language="csharp" source="snippets/pattern-objects/InterimSteps.cs" ID="SecondImplementation":::
 
 Your tests pass. But, as you add more tests, you'll add more and more `if` clauses and test different properties. Soon, these methods will get more and more complicated with more conditionals.
 
@@ -68,7 +68,7 @@ A better way is to use *patterns* to determine if the object is in a valid state
 
 The fourth and last rows in the table have strike through text because they're invalid. The code you're adding now should make sure the high water gate is never opened when the water is low.  Those states can be coded as a single switch expression (remember that `false` indicates "Closed"):
 
-:::code language="csharp" source="snippets/patterns-objects/InterimSteps.cs" ID="ThirdImplementation":::
+:::code language="csharp" source="snippets/pattern-objects/InterimSteps.cs" ID="ThirdImplementation":::
 
 Try this version. Your tests pass, validating the code. The full table shows the possible combinations of inputs and results. That means you and other developers can quickly look at the table and see that you've covered all the possible inputs. Even easier, the compiler can help as well. After you add the previous code, you can see that the compiler generates a warning: *CS8524* indicates the switch expression doesn't cover all possible inputs. The reason for that warning is that one of the inputs is an `enum` type. The compiler interprets "all possible inputs" as all inputs from the underlying type, typically an `int`. This `switch` expression only checks the values declared in the `enum`. To remove the warning, you can add a catch-all discard pattern for the last arm of the expression. This condition throws an exception, because it indicates invalid input:
 
@@ -94,13 +94,13 @@ _ => throw new InvalidOperationException("Invalid internal state"),
 
 Run your tests again, and they pass. Here's the final version of the `SetHighGate` method:
 
-:::code language="csharp" source="snippets/patterns-objects/CanalLock.cs" ID="FinalImplementaton":::
+:::code language="csharp" source="snippets/pattern-objects/CanalLock.cs" ID="FinalImplementaton":::
 
 ## Implement patterns yourself
 
 Now that you've seen the technique, fill in the `SetLowGate` and `SetWaterLevel` mark yourself.  Start by adding the following code to test invalid operations on those methods:
 
-:::code language="csharp" source="snippets/patterns-objects/Program.cs" ID="FinalTestCode":::
+:::code language="csharp" source="snippets/pattern-objects/Program.cs" ID="FinalTestCode":::
 
 Run your application again. You can see the new tests fail, and the canal lock gets into an invalid state. Try to implement the remaining methods yourself. The method to set the lower gate should be similar to the method to set the upper gate. The method that changes the water level has different checks, but should follow a similar structure. You may find it helpful to use the same process for the method that sets the water level. Start with all four inputs: The state of both gates, the current state of the water level, and the requested new water level. The switch expression should start with:
 
@@ -115,7 +115,7 @@ You'll have 16 total switch arms to fill in. Then, test and simplify.
 
 Did you make methods something like this:
 
-:::code language="csharp" source="snippets/patterns-objects/CanalLock.cs" ID="FinalExercise":::
+:::code language="csharp" source="snippets/pattern-objects/CanalLock.cs" ID="FinalExercise":::
 
 Your tests should pass, and the canal lock should operate safely.
 

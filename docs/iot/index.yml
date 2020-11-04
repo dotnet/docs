@@ -24,7 +24,7 @@ landingContent:
           - text: Sense HAT quickstart  
             url: quickstarts/sensehat.md  
 
-  - title: Basics
+  - title: Learn
     linkLists:
       - linkListType: overview
         links:
@@ -56,6 +56,19 @@ landingContent:
           - text: SPI - Read values from an analog-to-digital converter
             url: tutorials/spi-adc.md
 
+  - title: Packages and source code
+    linkLists:
+      - linkListType: download
+        links:
+          - text: System.Device.Gpio (NuGet)
+            url: https://www.nuget.org/packages/System.Device.Gpio/
+          - text: Iot.Device.Bindings (NuGet)
+            url: https://www.nuget.org/packages/Iot.Device.Bindings/
+          - text: .NET IoT Libraries on GitHub
+            url: https://github.com/dotnet/iot
+          - text: Device bindings (with samples)
+            url: https://github.com/dotnet/iot/blob/master/src/devices/README.md
+  
   - title: Video learning 
     linkLists:
       - linkListType: video
@@ -64,7 +77,7 @@ landingContent:
             url: https://aka.ms/IoTNet101
           - text: BBQ, Bots, and .NET Core
             url: https://www.youtube.com/watch?v=4kJGRuXZ4kg
-      
+
   - title: Resources 
     linkLists:
       - linkListType: concept

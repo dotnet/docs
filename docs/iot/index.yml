@@ -17,7 +17,14 @@ metadata:
 
 landingContent:
 
-  - title: Basics
+  - title: Get started in 10 minutes
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Sense HAT quickstart  
+            url: quickstarts/sensehat.md  
+
+  - title: Learn the basics
     linkLists:
       - linkListType: overview
         links:
@@ -32,28 +39,25 @@ landingContent:
           - text: Debugging  
             url: debugging.md               
 
-  - title: Get started in 10 minutes
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Sense HAT quickstart  
-            url: sensehat-quickstart.md               
-
   - title: Tutorials
     linkLists:
       - linkListType: tutorial
         links:
           - text: GPIO - Blink an LED
-            url: gpio-blink-led-tutorial.md
+            url: tutorials/gpio-blink-led.md
           - text: I2C - Read temperatures from a sensor
-            url: i2c-temp-sensor-tutorial.md
+            url: tutorials/i2c-temp-sensor.md
           - text: I2C with GPIO expander - Display text on an LCD
-            url: i2c-lcd-display-tutorial.md
+            url: tutorials/i2c-lcd-display.md
           - text: SPI - Read values from an analog-to-digital converter
-            url: spi-adc-tutorial.md
+            url: tutorials/spi-adc.md
 
   - title: Resources 
-    linkLists:           
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Raspberry Pi documentation 
+            url: https://www.raspberrypi.org/documentation/
       - linkListType: video
         links:
           - text: .NET IoT 101 (January 2020)  

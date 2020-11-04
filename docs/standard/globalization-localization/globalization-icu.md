@@ -39,23 +39,23 @@ Using ICU instead of NLS may result in behavioral differences with some globaliz
 
 - In the project file:
 
-```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Globalization.UseNls" Value="true" />
-</ItemGroup>
-```
+  ```xml
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.UseNls" Value="true" />
+  </ItemGroup>
+  ```
 
 - In the `runtimeconfig.json` file:
 
-```json
-{
-  "runtimeOptions": {
-     "configProperties": {
-       "System.Globalization.UseNls": true
-      }
+  ```json
+  {
+    "runtimeOptions": {
+       "configProperties": {
+         "System.Globalization.UseNls": true
+        }
+    }
   }
-}
-```
+  ```
 
 - By setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_USENLS` to the value `true` or `1`.
 
@@ -72,29 +72,29 @@ Applications can opt in to an app-local ICU implementation mode in any of the fo
 
 - In  the project file:
 
-```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="<suffix>:<version> or <version>" />
-</ItemGroup>
-```
+  ```xml
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="<suffix>:<version> or <version>" />
+  </ItemGroup>
+  ```
 
 - In the `runtimeconfig.json` file:
 
-```json
-{
-  "runtimeOptions": {
-     "configProperties": {
-       "System.Globalization.AppLocalIcu": "<suffix>:<version> or <version>"
-      }
+  ```json
+  {
+    "runtimeOptions": {
+       "configProperties": {
+         "System.Globalization.AppLocalIcu": "<suffix>:<version> or <version>"
+       }
+    }
   }
-}
-```
+  ```
 
 - By setting the environment variable `DOTNET_SYSTEM_GLOBALIZATION_APPLOCALICU` to the value `<suffix>:<version>` or `<version>`.
 
-`<suffix>`: Optional suffix of less than 36 characters in length, following the public ICU packaging conventions. When building a custom ICU, you can customize it to produce the lib names and exported symbol names to contain a suffix, for example, `libicuucmyapp`, where `myapp` is the suffix.
+  `<suffix>`: Optional suffix of less than 36 characters in length, following the public ICU packaging conventions. When building a custom ICU, you can customize it to produce the lib names and exported symbol names to contain a suffix, for example, `libicuucmyapp`, where `myapp` is the suffix.
 
-`<version>`: A valid ICU version, for example, 67.1. This version is used to load the binaries and to get the exported symbols.
+  `<version>`: A valid ICU version, for example, 67.1. This version is used to load the binaries and to get the exported symbols.
 
 To load ICU when the app-local switch is set, .NET uses the <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad%2A?displayProperty=nameWithType> method, which probes multiple paths. The method first tries to find the library in the `NATIVE_DLL_SEARCH_DIRECTORIES` property, which is created by the dotnet host based on the `deps.json` file for the app. For more information, see [Default probing](../../core/dependency-loading/default-probing.md).
 
@@ -134,19 +134,19 @@ There are some directives for the loader, like `@loader_path`, which tell the lo
 
   Run the following commands:
 
-```bash
-install_name_tool -change "libicudata.67.dylib" "@loader_path/libicudata.67.dylib" /path/to/libicuuc.67.1.dylib
-install_name_tool -change "libicudata.67.dylib" "@loader_path/libicudata.67.dylib" /path/to/libicui18n.67.1.dylib
-install_name_tool -change "libicuuc.67.dylib" "@loader_path/libicuuc.67.dylib" /path/to/libicui18n.67.1.dylib
-```
+  ```bash
+  install_name_tool -change "libicudata.67.dylib" "@loader_path/libicudata.67.dylib" /path/to/libicuuc.67.1.dylib
+  install_name_tool -change "libicudata.67.dylib" "@loader_path/libicudata.67.dylib" /path/to/libicui18n.67.1.dylib
+  install_name_tool -change "libicuuc.67.dylib" "@loader_path/libicuuc.67.dylib" /path/to/libicui18n.67.1.dylib
+  ```
 
 - Patch ICU to produce the install names with `@loader_path`
 
   Before running autoconf (`./runConfigureICU`), change [these lines](https://github.com/unicode-org/icu/blob/ef91cc3673d69a5e00407cda94f39fcda3131451/icu4c/source/config/mh-darwin#L32-L37) to:
 
-```
-LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-current_version -Wl,$(SO_TARGET_VERSION) -install_name @loader_path/$(notdir $(MIDDLE_SO_TARGET))
-```
+  ```
+  LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-current_version -Wl,$(SO_TARGET_VERSION) -install_name @loader_path/$(notdir $(MIDDLE_SO_TARGET))
+  ```
 
 ## ICU on WebAssembly
 

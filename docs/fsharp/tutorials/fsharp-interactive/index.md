@@ -80,11 +80,12 @@ dotnet fsi Script.fsx
 [1; 9; 25; 49; 81]
 ```
 
-F# scripting is natively supported in [Visual Studio](../../get-started/get-started-visual-studio.md), [Visual Studio Code](../../get-started/get-started-vscode.md), and [Visual Studio for Mac](../../get-started/get-started-visual-studio-for-mac.md).
+F# scripting is natively supported in [Visual Studio](../../get-started/get-started-visual-studio.md), [Visual Studio Code](../../get-started/get-started-vscode.md), and [Visual Studio for Mac](../../get-started/get-started-with-visual-studio-for-mac.md).
 
 ## Referencing packages in F# Interactive
 
-> [!NOTE] Package management is an F# 5 feature and is currently available using the latest .NET 5 SDK.
+> [!NOTE]
+> Package management is an F# 5 feature and is currently available using the latest .NET 5 SDK.
 
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 

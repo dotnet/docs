@@ -2,7 +2,7 @@
 title: "Parse strings using String.Split (C# Guide)"
 description: The Split method returns an array of strings split from a set of delimiters. It's an easy way to parse strings.
 ms.date: 01/03/2018
-helpviewer_keywords: 
+helpviewer_keywords:
   - "splitting strings [C#]"
   - "Split method [C#]"
   - "strings [C#], splitting"
@@ -53,6 +53,7 @@ Consecutive instances of any separator produce the empty string in the output ar
 
 ## See also
 
+- [Extract elements from a string](../../standard/base-types/parse-strings.md)
 - [C# programming guide](../programming-guide/index.md)
 - [Strings](../programming-guide/strings/index.md)
 - [.NET regular expressions](../../standard/base-types/regular-expressions.md)

@@ -13,7 +13,7 @@ dev_langs:
 
 ## Overview
 
-The style rules in this section concern the use of [expression-bodied members](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) when the logic consists of a single expression.
+The style rules in this section concern the use of [expression-bodied members](../../../csharp/programming-guide/statements-expressions-operators/expression-bodied-members.md) when the logic consists of a single expression.
 
 - [Use expression body for constructors (IDE0021)](ide0021.md)
 - [Use expression body for methods (IDE0022)](ide0022.md)

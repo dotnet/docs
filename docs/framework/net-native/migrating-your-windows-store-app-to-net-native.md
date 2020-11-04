@@ -660,4 +660,4 @@ Enabling .NET Native on a Unit Test Library for a Windows Store apps project isn
 - [Getting Started](getting-started-with-net-native.md)
 - [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
 - [.NET For Windows Store apps overview](/previous-versions/windows/apps/br230302(v=vs.140))
-- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+- [.NET Framework Support for Windows Store Apps and Windows Runtime](../cross-platform/support-for-windows-store-apps-and-windows-runtime.md)

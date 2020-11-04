@@ -48,7 +48,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Debugging, Tracing, and Profiling](./debug-trace-profile/index.md)  
  Explains how to test, optimize, and profile .NET Framework apps and the app environment. This section includes information for administrators as well as developers.  
   
- [Developing for Multiple Platforms](../standard/cross-platform/index.md)  
+ [Developing for Multiple Platforms](./cross-platform/index.md)  
  Provides information about how you can use the .NET Framework to build assemblies that can be shared across multiple platforms and multiple devices such as phones, desktop, and web.  
   
  [Deployment](./deployment/index.md)  

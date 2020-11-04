@@ -1167,6 +1167,8 @@ items:
             href: code-analysis/style-rules/ide0081.md
           - name: IDE0100
             href: code-analysis/style-rules/ide0100.md
+          - name: IDE0110
+            href: code-analysis/style-rules/ide0110.md
         - name: Miscellaneous rules
           items:
           - name: IDE0076
@@ -1448,8 +1450,8 @@ items:
         href: ../standard/base-types/comparing.md
       - name: Change case
         href: ../standard/base-types/changing-case.md
-      - name: Extract elements from a string
-        href: ../standard/base-types/parse-strings.md
+      - name: Separate parts of a string
+        href: ../standard/base-types/divide-up-strings.md
       - name: Use the StringBuilder class
         href: ../standard/base-types/stringbuilder.md
       - name: "How to: Perform basic string manipulations"

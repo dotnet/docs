@@ -110,6 +110,7 @@ The following table list all the code style rules by ID and options, if any.
 > | [IDE0084](ide0084.md) | Use pattern matching (`IsNot` operator) | [visual_basic_style_prefer_isnot_expression](ide0084.md#visual_basic_style_prefer_isnot_expression) |
 > | [IDE0090](ide0090.md) | Simplify `new` expression | [csharp_style_implicit_object_creation_when_type_is_apparent](ide0090.md#csharp_style_implicit_object_creation_when_type_is_apparent) |
 > | [IDE0100](ide0100.md) | Remove unnecessary equality operator | |
+> | [IDE0110](ide0110.md) | Remove unnecessary discard | |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

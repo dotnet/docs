@@ -13,12 +13,10 @@ metadata:
   ms.author: casoper
   ms.date: 10/20/2020
 
-
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
 
-  # Basics
   - title: Basics
     linkLists:
       - linkListType: overview
@@ -28,44 +26,45 @@ landingContent:
       - linkListType: deploy
         links:
           - text: Deployment  
-            url: index.yml               
+            url: deployment.md               
       - linkListType: concept
         links:
           - text: Debugging  
-            url: index.yml               
+            url: debugging.md               
 
-  # Get started
   - title: Get started in 10 minutes
     linkLists:
       - linkListType: quickstart
         links:
-          - text: SenseHAT quickstart  
-            url: index.yml               
+          - text: Sense HAT quickstart  
+            url: sensehat-quickstart.md               
 
- # Tutorials - scenarios
   - title: Tutorials
     linkLists:
       - linkListType: tutorial
         links:
-          - text: GPIO example - Blink an LED
-            url: index.yml
-          - text: I2C example - Display text on an LCD
-            url: index.yml
-          - text: SPI example - Read temperatures with a sensor
-            url: index.yml
+          - text: GPIO - Blink an LED
+            url: gpio-blink-led-tutorial.md
+          - text: I2C - Read temperatures from a sensor
+            url: i2c-temp-sensor-tutorial.md
+          - text: I2C with GPIO expander - Display text on an LCD
+            url: i2c-lcd-display-tutorial.md
+          - text: SPI - Read values from an analog-to-digital converter
+            url: spi-adc-tutorial.md
 
-  # API Card
-  - title: Reference 
-    linkLists:           
-      - linkListType: reference
-        links:
-          - text: Ref link  
-            url: index.yml
-
-    # API Card
   - title: Resources 
     linkLists:           
       - linkListType: video
         links:
           - text: .NET IoT 101 (January 2020)  
             url: https://aka.ms/IoTNet101
+          - text: BBQ, Bots, and .NET Core
+            url: https://www.youtube.com/watch?v=4kJGRuXZ4kg
+      - linkListType: download
+        links:
+          - text: .NET IoT Libraries on GitHub
+            url: https://github.com/dotnet/iot
+      - linkListType: how-to-guide
+        links:
+          - text: How to run a .NET app automatically at boot
+            url: https://github.com/dotnet/iot/blob/master/Documentation/How-to-start-your-app-automatically-on-boot.md

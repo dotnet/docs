@@ -2,24 +2,21 @@
   href: index.yml
 - name: Overview
   href: intro.md
-- name: Quickstart
-  href: quickstart.md
+- name: Quickstart (Sense HAT)
+  href: sensehat-quickstart.md
 - name: Tutorials
   items:
-  - name: GPIO example - Blink an LED
-    href: index.yml
-  - name: I2C example - Display text on an LCD
-    href: index.yml
-  - name: SPI example - Read temperatures with a sensor
-    href: index.yml
+  - name: GPIO - Blink an LED
+    href: gpio-blink-led-tutorial.md
+  - name: I2C - Read temperature from a sensor
+    href: i2c-temp-sensor-tutorial.md
+  - name: I2C with GPIO expander - Display text on an LCD
+    href: i2c-lcd-display-tutorial.md
+  - name: SPI - Read temperatures with a sensor
+    href: spi-adc-tutorial.md
 - name: How-to guides
   items:
   - name: Deployment
     href: index.yml
-  items:
   - name: Debugging
-    href: index.yml
-- name: Reference
-  items:
-  - name: Link here
     href: index.yml

@@ -18,6 +18,7 @@ namespace pattern_objects
         public bool HighWaterGateOpen { get; private set; } = false;
         public bool LowWaterGateOpen { get; private set; } = false;
 
+        // <FinalImplementaton>
         // change the upper gate
         public void SetHighGate(bool open)
         {
@@ -29,7 +30,9 @@ namespace pattern_objects
                 _                              => throw new InvalidOperationException("Invalid internal state"),
             };
         }
+        // </FinalImplementaton>
 
+        // <FinalExercise>
         // change the lower gate
         public void SetLowGate(bool open)
         {
@@ -56,35 +59,12 @@ namespace pattern_objects
                 _ => throw new InvalidOperationException("Invalid internal state"),
             };
         }
+        // </FinalExercise>
+
 
         public override string ToString() =>
             $"The lower gate is {(LowWaterGateOpen ? "Open" : "Closed")}. " +
             $"The upper gate is {(HighWaterGateOpen ? "Open" : "Closed")}. " +
             $"The water level is {CanalLockWaterLevel}.";
-
-        // Interim steps:
-        private void SetHighGateV1(bool open)
-        {
-            if (open && (CanalLockWaterLevel == WaterLevel.High))
-                HighWaterGateOpen = true;
-            else if (open && (CanalLockWaterLevel == WaterLevel.Low))
-                throw new InvalidOperationException("Cannot open high gate when the water is low");
-        }
-        private void SetHighGateV2(bool open)
-        {
-            HighWaterGateOpen = (open, HighWaterGateOpen, CanalLockWaterLevel) switch
-            {
-                (false, false, WaterLevel.High) => false,
-                (false, false, WaterLevel.Low) => false,
-                (false, true, WaterLevel.High) => false,
-                (false, true, WaterLevel.Low) => false, // should never happen
-                (true, false, WaterLevel.High) => true,
-                (true, false, WaterLevel.Low) => throw new InvalidOperationException("Cannot open high gate when the water is low"),
-                (true, true, WaterLevel.High) => true,
-                (true, true, WaterLevel.Low) => false, // should never happen
-                _ => throw new InvalidOperationException("Invalid internal state"),
-            };
-
-        }
     }
 }

@@ -6,6 +6,7 @@ namespace pattern_objects
     {
         static void Main(string[] args)
         {
+            // <HappyTests>
             // Create a new canal lock:
             var canalGate = new CanalLock();
 
@@ -43,8 +44,10 @@ namespace pattern_objects
 
             canalGate.SetLowGate(open: false);
             Console.WriteLine($"Close the lower gate:  {canalGate}");
+            // </HappyTests>
 
             // Failure tests:
+            // <HighGateSafetyTest>
             Console.WriteLine("=============================================");
             Console.WriteLine("     Test invalid commands");
             // Open "wrong" gate (2 tests)
@@ -58,6 +61,8 @@ namespace pattern_objects
                 Console.WriteLine("invalid operation: Can't open the high gate. Water is low.");
             }
             Console.WriteLine($"Try to open upper gate: {canalGate}");
+            // </HighGateSafetyTest>
+            // <FinalTestCode>
             Console.WriteLine();
             Console.WriteLine();
             try
@@ -99,6 +104,7 @@ namespace pattern_objects
                 Console.WriteLine("invalid operation: Can't lower water when the high gate is open.");
             }
             Console.WriteLine($"Try to lower water with high gate open: {canalGate}");
+            // </FinalTestCode>
         }
     }
 }

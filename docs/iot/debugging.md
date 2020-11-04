@@ -102,7 +102,7 @@ Notice the following:
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `root` user in the format `<user>@<hostname>`.
 
 > [!IMPORTANT]
-> In the above example, *plink* (a component of the [PuTTY](https://www.ssh.com/ssh/putty/) SSH client. OpenSSH, which is included in recent versions of Windows and Linux, may be used. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
+> The above example uses *plink*, a component of the [PuTTY](https://www.ssh.com/ssh/putty/) SSH client. OpenSSH, which is included in recent versions of Windows and Linux, may be used instead. However, OpenSSH doesn't support sending passwords as a command-line parameter. To use OpenSSH, [configure your Raspberry Pi for passwordless SSH access](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md).
 
 ### Deploy the app
 

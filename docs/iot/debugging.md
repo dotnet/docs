@@ -59,7 +59,7 @@ Within a Bash console on the Raspberry Pi (either locally or via SSH), complete 
         > [!NOTE]
         > If there is no **PermitRootLogin** line in */etc/ssh/sshd_config*, add a new line with the value shown above.
 
-    1. Press <kbd>Ctrl+X</kbd> to exit and save your chances. When prompted **Save modified buffer?**, press <kbd>y</kbd> to confirm. Press <kbd>Enter</kbd> to confirm overwriting the original file.
+    1. Press <kbd>Ctrl+X</kbd> to exit and save your chances. When prompted **Save modified buffer?**, press <kbd>Y</kbd> to confirm. Press <kbd>Enter</kbd> to confirm overwriting the original file.
     1. Reboot the Raspberry Pi by executing the following command:
 
         ```console

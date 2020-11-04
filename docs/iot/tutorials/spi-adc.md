@@ -4,10 +4,43 @@ description: Learn how .NET can be used to build applications for IoT devices an
 author: camsoper
 ms.author: casoper
 ms.date: 11/2/2020
-ms.topic: overview
+ms.topic: tutorial
 ms.prod: dotnet
 ---
 
-# Content coming soon
+# SPI - Read values from an analog-to-digital converter
 
-[Will implement this MCP3008 sample](https://github.com/dotnet/iot/tree/master/src/devices/Mcp3xxx/samples)
+An analog-to-digital converter (ADC) is a device that can read an analog input voltage value and convert it into a digital value. ADCs are used for reading various sensors, potentiometers, and other devices that change resistance based on certain conditions.
+
+In this topic, you will use .NET to read values from an ADC as you modulate the input voltage with a potentiometer.
+
+## Prerequisites
+
+- Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+- An [MCP3008](https://www.microchip.com/wwwproducts/en/MCP3008) ADC
+- A 3-pin potentiometer
+- A breadboard
+- Jumper wires
+- Raspberry Pi GPIO breakout board (optional/recommended)
+- [.NET SDK](https://dotnet.microsoft.com/download)
+
+[!INCLUDE [prepare-pi-spi](includes/prepare-spi.md)]
+
+## Prepare the circuit
+
+Using a breadboard, build the circuit as depicted in the following diagram:
+
+:::image type="content" source="../media/rpi-trimpot_spi.png" alt-text="A Fritzing diagram showing a circuit with an MCP3008 ADC and a potentiometer" lightbox="../media/rpi-trimpot_spi.png":::
+
+Refer to the following pinout diagrams as needed:
+
+:::image type="content" source="../media/mcp3008-diagram.png" alt-text="A diagram showing the pinout of the MCP3008" lightbox="../media/mcp3008-diagram.png":::
+
+:::image type="content" source="../media/gpio-pinout-diagram.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header" lightbox="../media/gpio-pinout-diagram.png":::
+
+[!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
+
+Notice the following:
+
+<!--markdownlint-disable MD033 -->
+- V<sub>DD</sub> and V<sub>REF</sub> are connected to 3.3V power from the Raspberry Pi (red wires)

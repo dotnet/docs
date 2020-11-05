@@ -434,8 +434,8 @@ Here's an example type to serialize and JSON output:
 ::: zone pivot="dotnet-5-0"
 You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property. The <xref:System.Text.Json.Serialization.JsonIgnoreCondition> enum provides the following options:
 
-* `Always` - The property will always be ignored. If no `Condition` is specified, this option is assumed.
-* `Never` - The property will always be serialized and deserialized, regardless of the `DefaultIgnoreCondition`, `IgnoreReadOnlyProperties`, and `IgnoreReadOnlyFields` global settings.
+* `Always` - The property is always ignored. If no `Condition` is specified, this option is assumed.
+* `Never` - The property is always serialized and deserialized, regardless of the `DefaultIgnoreCondition`, `IgnoreReadOnlyProperties`, and `IgnoreReadOnlyFields` global settings.
 * `WhenWritingDefault` - The property is ignored on serialization if it's a reference type `null` or a value type `default`.
 * `WhenWritingNull` - The property is ignored on serialization if it's a reference type `null`.
 
@@ -478,7 +478,7 @@ To ignore all null-value properties, set the <xref:System.Text.Json.JsonSerializ
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-To ignore all null value properties, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property to `true`, as shown in the following example:
+To ignore all null-value properties when serializing, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property to `true`, as shown in the following example:
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/SerializeExcludeNullValueProperties.cs?name=SnippetSerialize)]
 

@@ -254,7 +254,7 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-<xref:System.Text.Json> supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
+<xref:System.Text.Json> in .NET Core 3.1 supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
 ::: zone-end
 
 ### Conditionally ignore a property
@@ -278,7 +278,7 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 
 ::: zone pivot="dotnet-core-3-1"
 
-<xref:System.Text.Json> provides the following ways to ignore properties while serializing:
+<xref:System.Text.Json> in .NET Core 3.1 provides the following ways to ignore properties while serializing:
 
 * The [[JsonIgnore]](system-text-json-how-to.md#ignore-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
 * The [IgnoreNullValues](system-text-json-how-to.md#ignore-all-null-value-properties) global option lets you ignore all null-value properties.
@@ -343,7 +343,7 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 ::: zone pivot="dotnet-5-0"
 To preserve references and handle circular references in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.ReferenceHandler%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>. The `ReferenceHandler.Preserve` setting is equivalent to `PreserveReferencesHandling` = `PreserveReferencesHandling.All` in `Newtonsoft.Json`.
 
-Like the Newtonsoft.Json [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm), the <xref:System.Text.Json.Serialization.ReferenceResolver?displayProperty=fullName> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/dotnet-docs/blob/master/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolver.cs)..
+Like the Newtonsoft.Json [ReferenceResolver](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializer_ReferenceResolver.htm), the <xref:System.Text.Json.Serialization.ReferenceResolver?displayProperty=fullName> class defines the behavior of preserving references on serialization and deserialization. Create a derived class to specify custom behavior. For an example, see [GuidReferenceResolver](https://github.com/dotnet/docs/blob/9d5e88edbd7f12be463775ffebbf07ac8415fe18/docs/standard/serialization/snippets/system-text-json-how-to-5-0/csharp/GuidReferenceResolverExample.cs).
 
 Some related `Newtonsoft.Json` features are not supported:
 
@@ -366,7 +366,7 @@ Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dicti
 ::: zone pivot="dotnet-core-3-1"
 `Newtonsoft.Json` supports collections of type `Dictionary<TKey, TValue>`. The built-in support for dictionary collections in <xref:System.Text.Json> in .NET Core 3.1 is limited to `Dictionary<string, TValue>`. That is, the key must be a string.
 
-To support a dictionary with an integer or some other type as the key, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-dictionary-with-non-string-key).
+To support a dictionary with an integer or some other type as the key in .NET Core 3.1, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-dictionary-with-non-string-key).
 ::: zone-end
 
 ### Types without built-in support

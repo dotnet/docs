@@ -5,7 +5,7 @@ ms.date: 11/05/2020
 ---
 # Use pattern matching to build your class behavior for better code
 
-The pattern matching features in C# provide syntax to express your algorithms. You can use these techniques to implement the behavior in your classes. You can combine object-oriented class design with a data-oriented implementation. That combination provides concise code while modeling real-world objects.
+The pattern matching features in C# provide syntax to express your algorithms. You can use these techniques to implement the behavior in your classes. You can combine object-oriented class design with a data-oriented implementation to provide concise code while modeling real-world objects.
 
 In this tutorial, you'll learn how to:
 
@@ -17,11 +17,11 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET5, including the C# 9.0 compiler. The C# 9.0 compiler is available starting with [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or the [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download).
+You’ll need to set up your machine to run .NET 5, including the C# 9.0 compiler. The C# 9.0 compiler is available starting with [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or the [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download).
 
 ## Build a simulation of a canal lock
 
-In this tutorial, you'll build a C# class that simulates a [canal lock](https://en.wikipedia.org/wiki/Lock_(water_navigation)). Briefly, a canal lock is a device that raises and lowers boats as they travel between two stretches of water at different levels. A lock as two gates, and some mechanism to change the water level.
+In this tutorial, you'll build a C# class that simulates a [canal lock](https://en.wikipedia.org/wiki/Lock_(water_navigation)). Briefly, a canal lock is a device that raises and lowers boats as they travel between two stretches of water at different levels. A lock has two gates and some mechanism to change the water level.
 
 In its normal operation, a boat enters one of the gates while the water level in the lock matches the water level on the side the boat enters. Once in the lock, the water level is changed to match the water level where the boat will leave the lock. Once the water level matches that side, the gate on the exit side opens. Safety measures make sure an operator can't create a dangerous situation in the canal. The water level can be changed only when both gates are closed. At most one gate can be open. To open a gate, the water level in the lock must match the water level outside the gate being opened.
 
@@ -33,7 +33,7 @@ You'll build a console application to test your `CanalLock` class. Create a new 
 
 :::code language="csharp" source="snippets/pattern-objects/InterimSteps.cs" ID="APIDesign":::
 
-The preceding code initializes the object so both gates are closed, and the water level is low. Next, write the following test code in your `Main` method to guide you creating a first implementation of the class:
+The preceding code initializes the object so both gates are closed, and the water level is low. Next, write the following test code in your `Main` method to guide you as you create a first implementation of the class:
 
 :::code language="csharp" source="snippets/pattern-objects/Program.cs" ID="HappyTests":::
 
@@ -49,13 +49,13 @@ This test fails because the gate opens. As a first implementation, you could fix
 
 :::code language="csharp" source="snippets/pattern-objects/InterimSteps.cs" ID="SecondImplementation":::
 
-Your tests pass. But, as you add more tests, you'll add more and more `if` clauses and test different properties. Soon, these methods will get more and more complicated with more conditionals.
+Your tests pass. But, as you add more tests, you'll add more and more `if` clauses and test different properties. Soon, these methods will get too complicated as you add more conditionals.
 
 ## Implement the commands with patterns
 
 A better way is to use *patterns* to determine if the object is in a valid state to execute a command. You can express if a command is allowed as a function of three variables: the state of the gate, the level of the water, and the new setting:
 
-| new setting | Gate state | Water Level | result             |
+| New setting | Gate state | Water Level | Result             |
 | ----------- | ---------- | ----------- | ------------------ |
 | Closed      | Closed     | High        | Closed             |
 | Closed      | Closed     | Low         | Closed             |
@@ -76,7 +76,7 @@ Try this version. Your tests pass, validating the code. The full table shows the
 _  => throw new InvalidOperationException("Invalid internal state"),
 ```
 
-The preceding switch arm must be last in your `switch` expression because it matches all inputs. Experiment by moving it earlier in the order. That causes a compiler error *8510* for unreachable code in a pattern.  The natural structure of switch expressions enables the compiler to generate errors and warnings for possible mistakes. That makes it easier for you to create correct code in fewer iterations. That safety gives you the freedom to combine switch arms with wildcards. The compiler will issue errors if your combination results in unreachable arms you didn't expect. The compiler issues warnings if you remove an arm that's needed.
+The preceding switch arm must be last in your `switch` expression because it matches all inputs. Experiment by moving it earlier in the order. That causes a compiler error *CS8510* for unreachable code in a pattern.  The natural structure of switch expressions enables the compiler to generate errors and warnings for possible mistakes. The compiler "safety net" makes it easier for you to create correct code in fewer iterations, and the freedom to combine switch arms with wildcards. The compiler will issue errors if your combination results in unreachable arms you didn't expect, and warnings if you remove an arm that's needed.
 
 The first change is to combine all the arms where the command is to close the gate; that's always allowed. Add the following code as the first arm in your switch expression:
 
@@ -84,7 +84,9 @@ The first change is to combine all the arms where the command is to close the ga
 (false, _, _) => false,
 ```
 
-After you add the previous switch arm, you'll get four compiler errors, one on each of the arms where the command is `false`. Those arms are already covered by the newly added arm. You can safely remove those four lines. You intended this new switch arm to replace those conditions. Next, you can simplify the four arms where the command is to open the gate. In both cases where the water level is high, the gate can be opened. (In one, it's already open). One case where the water level is low throws an exception, and the other shouldn't happen. It should be safe to throw the same exception if the water lock is already in an invalid state. You can make the following simplifications for those arms:
+After you add the previous switch arm, you'll get four compiler errors, one on each of the arms where the command is `false`. Those arms are already covered by the newly added arm. You can safely remove those four lines. You intended this new switch arm to replace those conditions.
+
+Next, you can simplify the four arms where the command is to open the gate. In both cases where the water level is high, the gate can be opened. (In one, it's already open.) One case where the water level is low throws an exception, and the other shouldn't happen. It should be safe to throw the same exception if the water lock is already in an invalid state. You can make the following simplifications for those arms:
 
 ```csharp
 (true, _, WaterLevel.High) => true,
@@ -98,7 +100,7 @@ Run your tests again, and they pass. Here's the final version of the `SetHighGat
 
 ## Implement patterns yourself
 
-Now that you've seen the technique, fill in the `SetLowGate` and `SetWaterLevel` mark yourself.  Start by adding the following code to test invalid operations on those methods:
+Now that you've seen the technique, fill in the `SetLowGate` and `SetWaterLevel` methods yourself.  Start by adding the following code to test invalid operations on those methods:
 
 :::code language="csharp" source="snippets/pattern-objects/Program.cs" ID="FinalTestCode":::
 
@@ -113,7 +115,7 @@ CanalLockWaterLevel = (newLevel, CanalLockWaterLevel, LowWaterGateOpen, HighWate
 
 You'll have 16 total switch arms to fill in. Then, test and simplify.
 
-Did you make methods something like this:
+Did you make methods something like this?
 
 :::code language="csharp" source="snippets/pattern-objects/CanalLock.cs" ID="FinalExercise":::
 
@@ -121,4 +123,4 @@ Your tests should pass, and the canal lock should operate safely.
 
 ## Summary
 
-In this tutorial, you learned to use pattern matching to check the internal state of an object before applying any changes to that state. You can check combination of properties. Once you've built tables for any of those transitions, you test your code, then simplify for readability and maintainability. These initial refactorings may suggest further refactorings that validate internal state, or manage other API changes. This tutorial combined classes and objects with a more data-oriented pattern-based approach to implement those classes.
+In this tutorial, you learned to use pattern matching to check the internal state of an object before applying any changes to that state. You can check combinations of properties. Once you've built tables for any of those transitions, you test your code, then simplify for readability and maintainability. These initial refactorings may suggest further refactorings that validate internal state or manage other API changes. This tutorial combined classes and objects with a more data-oriented, pattern-based approach to implement those classes.

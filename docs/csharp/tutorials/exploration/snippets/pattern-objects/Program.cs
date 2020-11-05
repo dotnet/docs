@@ -58,7 +58,7 @@ namespace pattern_objects
             }
             catch (InvalidOperationException)
             {
-                Console.WriteLine("invalid operation: Can't open the high gate. Water is low.");
+                Console.WriteLine("Invalid operation: Can't open the high gate. Water is low.");
             }
             Console.WriteLine($"Try to open upper gate: {canalGate}");
             // </HighGateSafetyTest>

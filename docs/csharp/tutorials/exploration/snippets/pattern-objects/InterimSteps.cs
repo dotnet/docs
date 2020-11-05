@@ -20,19 +20,19 @@ namespace InterimSteps
         public bool HighWaterGateOpen { get; private set; } = false;
         public bool LowWaterGateOpen { get; private set; } = false;
 
-        // change the upper gate
+        // Change the upper gate.
         public void SetHighGate(bool open)
         {
             throw new NotImplementedException();
         }
 
-        // change the lower gate
+        // Change the lower gate.
         public void SetLowGate(bool open)
         {
             throw new NotImplementedException();
         }
 
-        // Change water level
+        // Change water level.
         public void SetWaterLevel(WaterLevel newLevel)
         {
             throw new NotImplementedException();
@@ -53,19 +53,19 @@ namespace InterimSteps
         public bool LowWaterGateOpen { get; private set; } = false;
 
         // <FirstImplementation>
-        // change the upper gate
+        // Change the upper gate.
         public void SetHighGate(bool open)
         {
             HighWaterGateOpen = open;
         }
 
-        // change the lower gate
+        // Change the lower gate.
         public void SetLowGate(bool open)
         {
             LowWaterGateOpen = open;
         }
 
-        // Change water level
+        // Change water level.
         public void SetWaterLevel(WaterLevel newLevel)
         {
             CanalLockWaterLevel = newLevel;
@@ -81,7 +81,7 @@ namespace InterimSteps
         public bool LowWaterGateOpen { get; private set; } = false;
 
         // <SecondImplementation>
-        // change the upper gate
+        // Change the upper gate.
         public void SetHighGate(bool open)
         {
             if (open && (CanalLockWaterLevel == WaterLevel.High))

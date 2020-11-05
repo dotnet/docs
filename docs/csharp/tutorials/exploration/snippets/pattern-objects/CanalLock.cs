@@ -19,7 +19,7 @@ namespace pattern_objects
         public bool LowWaterGateOpen { get; private set; } = false;
 
         // <FinalImplementaton>
-        // change the upper gate
+        // Change the upper gate.
         public void SetHighGate(bool open)
         {
             HighWaterGateOpen = (open, HighWaterGateOpen, CanalLockWaterLevel) switch
@@ -33,7 +33,7 @@ namespace pattern_objects
         // </FinalImplementaton>
 
         // <FinalExercise>
-        // change the lower gate
+        // Change the lower gate.
         public void SetLowGate(bool open)
         {
             LowWaterGateOpen = (open, LowWaterGateOpen, CanalLockWaterLevel) switch
@@ -45,7 +45,7 @@ namespace pattern_objects
             };
         }
 
-        // Change water level
+        // Change water level.
         public void SetWaterLevel(WaterLevel newLevel)
         {
             CanalLockWaterLevel = (newLevel, CanalLockWaterLevel, LowWaterGateOpen, HighWaterGateOpen) switch

@@ -41,7 +41,7 @@ The following are the connections from the MCP3008:
 - CLK to SCLK (orange)
 - D<sub>OUT</sub> to MISO (orange)
 - D<sub>IN</sub> to MOSI (orange)
-- CS/SHDN to CE0 (orange)
+- CS/SHDN to CE0 (green)
 - DGND to ground (black)
 - CH0 to variable (middle) pin on potentiometer (yellow)
 

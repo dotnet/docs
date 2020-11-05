@@ -10,9 +10,7 @@ ms.prod: dotnet
 
 # GPIO - Blink an LED
 
-GPIO pins can be controlled individually. This is useful for controlling LEDs, relays, and other stateful devices. 
-
-In this topic, you will use .NET to power an LED and blink it repeatedly.
+GPIO pins can be controlled individually. This is useful for controlling LEDs, relays, and other stateful devices. In this topic, you will use .NET to power an LED and blink it repeatedly.
 
 ## Prerequisites
 
@@ -34,7 +32,6 @@ Use the hardware components to build the circuit as depicted in the following di
 
 The following are the connections depicted above:
 
-<!--markdownlint-disable MD033 -->
 - GPIO 18 to LED anode (longer, positive lead)
 - LED cathode (shorter, negative lead) to 330 Ω resistor (either end)
 - 330 Ω resistor (other end) to ground

@@ -35,7 +35,7 @@ Once you've mapped out the projects and their relationships with one another, yo
 
 In the example shown in Figure 3-1, you would start with the "Contoso.Utils" project, since it doesn't depend on any other projects. Next, "Contoso.Data" since it only depends on "Utils". Then migrate the "BusinessLogic" library, and finally the front end ASP.NET "Web" project. Following this "bottom up" approach works well for relatively small and well-factored apps that can be migrated as a unit once all of their projects have migrated. Larger apps with more complexity or just more code that will take longer to migrate may need to consider more incremental strategies.
 
-### Unit tests
+## Unit tests
 
 Missing from the diagrams above are unit test projects. Hopefully there are tests covering at least some of the existing behavior of the libraries being ported. If you have unit tests, it's best to convert them first so that you can continue testing changes in the product you're working on. Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to port your test projects so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all work on .NET Core. If you don't have any tests for your app currently, consider building some characterization tests that simply verify the system's current behavior, so that once the migration is complete you can confirm this behavior remains unchanged.
 

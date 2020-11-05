@@ -15,7 +15,7 @@ The official documentation website, [docs.microsoft.com](https://docs.microsoft.
 
 ## GitHub
 
-Because .NET Core is an open source project, many issues are discovered, reported, discussed, and fixed on GitHub. Microsoft has several GitHub organizations in which you'll find repositories that may be helpful. A partial list of these organizations and some of their public repositories are listed below:
+Because .NET Core is an open-source project, many issues are discovered, reported, discussed, and fixed on GitHub. Microsoft has several GitHub organizations in which you'll find repositories that may be helpful. A partial list of these organizations and some of their public repositories are listed below:
 
 - [Microsoft](https://github.com/microsoft)
   - [ASP.NET API Versioning](https://github.com/microsoft/aspnet-api-versioning)

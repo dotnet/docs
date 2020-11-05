@@ -60,4 +60,65 @@ Once all the connections are made, power on the Raspberry Pi.
 
 ## Create the app
 
-1.
+Complete the following steps on your development computer:
+
+1. Create a new .NET Console App using either the [.NET CLI](/dotnet/core/tools/dotnet-new) or [Visual Studio](/dotnet/core/tutorials/with-visual-studio). Name it *AdcTutorial*.
+
+    ```dotnetcli
+    dotnet new console -o AdcTutorial
+    ```
+
+1. Add the [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/) and [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/) packages to the AdcTutorial project using either [.NET CLI](/dotnet/core/tools/dotnet-add-package) or [Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio).
+
+    ```dotnetcli
+    dotnet add package System.Device.Gpio
+    dotnet add package Iot.Device.Bindings
+    ```
+
+1. Replace the contents of *Program.cs* with the following code:
+
+    ```csharp
+    using System;
+    using System.Device.Spi;
+    using System.Threading;
+    using Iot.Device.Adc;
+
+    var hardwareSpiSettings = new SpiConnectionSettings(0, 0);
+
+    using SpiDevice spi = SpiDevice.Create(hardwareSpiSettings);
+    using Mcp3008 mcp = new Mcp3008(spi);
+    while (true)
+    {
+        double value = mcp.Read(0);
+        value = value / 10.24;
+        value = Math.Round(value);
+        Console.WriteLine($"{value}%");
+        Thread.Sleep(500);
+    }
+    ```
+
+    In the preceding code:
+
+    - `hardwareSpiSettings` is set to a new instance of `SpiConnectionSettings`. The constructor sets the `busId` parameter to 0 and the `chipSelectLine` parameter to 0.
+    - A [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - Another `using` declaration creates an instance of `Mcp3008` and passes the `SpiDevice` into the constructor.
+    - A `while` loop runs indefinitely. Each iteration:
+        1. Reads the value of CH0 on the MCP by calling `mcp.Read(0)`.
+        1. Divides the value by 10.24. The MCP3008 is a 10-bit ADC, which means it returns 1024 possible values, 0-1023. Dividing the value by 10.24 represents the value as a percentage.
+        1. Rounds the value to the nearest integer.
+        1. Writes the value to the console formatted as a percentage.
+        1. Sleeps 500 ms.
+
+1. Build the app by running `dotnet build` if using the .NET CLI. To build in Visual Studio, press <kbd>Ctrl+Shift+B</kbd>.
+1. Deploy the app to the Raspberry Pi as a self-contained app. For instructions, see [Deploy .NET apps to Raspberry Pi](../deployment.md#deploying-a-self-contained-app). Make sure to give the executable *execute* permission using `chmod +x`.
+1. Run the app on the Raspberry Pi by switching to the deployment directory and running the executable.
+
+    ```bash
+    ./AdcTutorial
+    ```
+
+    Observe the output as you turn the potentiometer up and down.
+
+1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
+
+Congratulations! You've used SPI to read values from an analog-to-digital converter.

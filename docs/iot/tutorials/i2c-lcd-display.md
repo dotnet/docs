@@ -35,7 +35,7 @@ In this topic, you will use .NET to display text on an LCD character display usi
 Use the jumper wires to connect the pins on the four pins on the GPIO expander to the Raspberry Pi as follows:
 
 - GND to ground
-- VCC to 3.3V
+- VCC to 5V
 - SDA to SDA (GPIO 2)
 - SCL to SCL (GPIO 3)
 

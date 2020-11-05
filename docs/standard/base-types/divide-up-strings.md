@@ -1,5 +1,5 @@
 ---
-title: String parsing techniques in .NET
+title: Separate strings into substrings
 description: Learn about different techniques to extract parts of a string, including String.Split, regular expressions, and String.Substring.
 ms.date: 10/30/2020
 ms.technology: dotnet-standard
@@ -9,7 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - "strings [.NET], breaking up"
 ---
-# Extract elements from a string
+# Extract substrings from a string
 
 This article covers some different techniques for extracting parts of a string.
 

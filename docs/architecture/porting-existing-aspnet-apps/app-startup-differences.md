@@ -46,7 +46,7 @@ The code shown in Figure 2-1 creates a *host* for the application, builds it, an
 
 The `Startup` class exposes two methods to the host, `ConfigureServices` and `Configure`. The `ConfigureServices` method is used to define the services the app will use and their respective lifetimes. The `Configure` method is used to define how each request to the app will be handled by setting up a request pipeline composed of middleware.
 
-Code that isn't related to configuring the application's services or request pipeline, but which you need to run when the app begins, is typically placed in `Program.cs` or registered as an `IHostedService` which will be started by the [generic host](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-3.1) when the application starts.
+In addition to code related to configuring the application's services or request pipeline, apps may have other code that must run when the app begins. Such code is typically placed in `Program.cs` or registered as an `IHostedService` which will be started by the [generic host](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-3.1) when the application starts.
 
 The `IHostedService` interface just exposes two methods, `StartAsync` and `StopAsync`. You register the interface in `ConfigureServices` and the host does the rest, calling the `StartAsync` method before the app starts up.
 

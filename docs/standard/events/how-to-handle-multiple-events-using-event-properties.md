@@ -8,10 +8,10 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "event properties [.NET Framework]"
-  - "multiple events [.NET Framework]"
-  - "event handling [.NET Framework], with multiple events"
-  - "events [.NET Framework], multiple"
+  - "event properties [.NET]"
+  - "multiple events [.NET]"
+  - "event handling [.NET], with multiple events"
+  - "events [.NET], multiple"
 ms.assetid: 30047cba-e2fd-41c6-b9ca-2ad7a49003db
 ---
 # How to: Handle Multiple Events Using Event Properties

@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "constructs, miscellaneous"
-  - ".NET Framework regular expressions, miscellaneous constructs"
+  - ".NET regular expressions, miscellaneous constructs"
   - "regular expressions, miscellaneous constructs"
 ms.assetid: 7d10d11f-680f-4721-b047-fb136316b4cd
 ---

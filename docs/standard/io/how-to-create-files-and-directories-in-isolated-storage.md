@@ -6,8 +6,8 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "directories [.NET Framework], isolated storage"
-  - "files [.NET Framework], isolated storage"
+  - "directories [.NET], isolated storage"
+  - "files [.NET], isolated storage"
   - "isolated storage, creating files and directories"
   - "data stores, creating files and directories"
   - "data storage using isolated storage, creating files and directories"

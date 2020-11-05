@@ -1,11 +1,11 @@
 ---
 title: "How to: Find an assembly's fully qualified name"
-description: This article shows you how to get the fully qualified name of a .NET Framework assembly or .NET Core assembly.
+description: This article shows you how to get the fully qualified name of a .NET assembly.
 ms.date: "08/20/2019"
 helpviewer_keywords:
-  - "names [.NET Framework], fully qualified type names"
-  - "names [.NET Framework], assemblies"
-  - "assemblies [.NET Framework], names"
+  - "names [.NET], fully qualified type names"
+  - "names [.NET], assemblies"
+  - "assemblies [.NET], names"
 ms.assetid: 009dae23-e1f6-4a64-9a9a-32e4c34802b0
 dev_langs:
   - "csharp"

@@ -10,10 +10,10 @@ helpviewer_keywords:
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"
   - "BackgroundWorker component"
-  - "events [.NET Framework], asynchronous"
+  - "events [.NET], asynchronous"
   - "Asynchronous Pattern"
   - "AsyncOperationManager class"
-  - "threading [.NET Framework], asynchronous features"
+  - "threading [.NET], asynchronous features"
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 792aa8da-918b-458e-b154-9836b97735f3

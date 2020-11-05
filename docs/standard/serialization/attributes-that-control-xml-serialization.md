@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "classes, serializing"
   - "XmlSerializer class, serializing"
   - "XML serialization, attributes"
-  - "attributes [.NET Framework], XML serialization"
+  - "attributes [.NET], XML serialization"
   - "serialization, attributes"
   - "XML Schema, serializing"
 ms.assetid: 414b820f-a696-4206-b576-2711d85490c7

@@ -5,6 +5,7 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 09/23/2020
 ms.topic: tutorial
+no-loc: [Transient, Scoped, Singleton, Example]
 ---
 
 # Tutorial: Use dependency injection in .NET
@@ -22,8 +23,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
-- An Integrated Development Environment (IDE), [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com) are all valid choices.
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or later.
 - Familiarity with creating new .NET applications and installing NuGet packages.
 
 ## Create a new console application
@@ -62,25 +62,25 @@ Add the following default implementation for the various operations:
 
 :::code language="csharp" source="snippets/configuration/console-di/DefaultOperation.cs":::
 
-The `DefaultOperation` implements all of the named/marker interfaces and initializes the `OperationId` property to the last four characters of a new globally unique identifier (GUID).
+The `DefaultOperation` implements all of the named marker interfaces and initializes the `OperationId` property to the last four characters of a new globally unique identifier (GUID).
 
 ## Add service that requires DI
 
-Add the following operation logger object, which acts as a service to your console application:
+Add the following operation logger object, which acts as a service to the console app:
 
 *OperationLogger.cs*
 
 :::code language="csharp" source="snippets/configuration/console-di/OperationLogger.cs":::
 
-The `OperationLogger` defines a constructor that requires each of the aforementioned marker interfaces, that is; `ITransientOperation`, `IScopedOperation`, and `ISingletonOperation`. The object exposes a single method that allows the consumer to log the operations with a given `scope` parameter. When invoked, the `LogOperations` method will log each operation's unique identifier with the scope string and message.
+The `OperationLogger` defines a constructor that requires each of the aforementioned marker interfaces, that is; `ITransientOperation`, `IScopedOperation`, and `ISingletonOperation`. The object exposes a single method that allows the consumer to log the operations with a given `scope` parameter. When invoked, the `LogOperations` method logs each operation's unique identifier with the scope string and message.
 
 ## Register services for DI
 
-Finally, update the *Program.cs* file to match following:
+Update *Program.cs* with the following code:
 
 :::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="1-18,35-60" highlight="22-26":::
 
-The application:
+The app:
 
 - Creates an <xref:Microsoft.Extensions.Hosting.IHostBuilder> instance with the [default binder settings](generic-host.md#default-builder-settings).
 - Configures services and adds them with their corresponding service lifetime.
@@ -89,7 +89,7 @@ The application:
 
 ## Conclusion
 
-The application produces output similar to the following example:
+The app displays output similar to the following example:
 
 ```console
 Scope 1-Call 1 .GetRequiredService<OperationLogger>(): ITransientOperation [ 80f4...Always different        ]
@@ -109,13 +109,13 @@ Scope 2-Call 2 .GetRequiredService<OperationLogger>(): IScopedOperation    [ 2bd
 Scope 2-Call 2 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
 ```
 
-From the application output, you can see that:
+From the app output, you can see that:
 
-- Transient operations are always different, meaning a new instance is created with every retrieval of the service.
+- Transient operations are always different, a new instance is created with every retrieval of the service.
 - Scoped operations change only with a new scope, but are the same instance within a scope.
-- Singleton operations are always the same, meaning a new instance is only created once.
+- Singleton operations are always the same, a new instance is only created once.
 
-## Next steps
+## See also
 
-> [!div class="nextstepaction"]
-> [Dependency injection guidelines](dependency-injection-guidelines.md)
+* [Dependency injection guidelines](dependency-injection-guidelines.md)
+* [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)

@@ -6,11 +6,10 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - ".NET Framework, and TAP"
-  - "asynchronous design patterns, .NET Framework"
-  - "TAP, .NET Framework support for"
-  - "Task-based Asynchronous Pattern, .NET Framework support for"
-  - ".NET Framework, asynchronous design patterns"
+  - "asynchronous design patterns, .NET"
+  - "TAP, .NET support for"
+  - "Task-based Asynchronous Pattern, .NET support for"
+  - ".NET, asynchronous design patterns"
 ms.assetid: fab6bd41-91bd-44ad-86f9-d8319988aa78
 ---
 # Implementing the Task-based Asynchronous Pattern
@@ -28,7 +27,7 @@ You may implement the TAP pattern manually for better control over implementatio
 [!code-vb[Conceptual.TAP_Patterns#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#1)]
 
 ### Hybrid approach
- You may find it useful to implement the TAP pattern manually but to delegate the core logic for the implementation to the compiler. For example, you may want to use the hybrid approach when you want to verify arguments outside a compiler-generated asynchronous method so that exceptions can escape to the method’s direct caller rather than being exposed through the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> object:
+ You may find it useful to implement the TAP pattern manually but to delegate the core logic for the implementation to the compiler. For example, you may want to use the hybrid approach when you want to verify arguments outside a compiler-generated asynchronous method so that exceptions can escape to the method's direct caller rather than being exposed through the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> object:
 
  [!code-csharp[Conceptual.TAP_Patterns#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#2)]
  [!code-vb[Conceptual.TAP_Patterns#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#2)]
@@ -43,9 +42,9 @@ The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class is ide
 
 You can generate compute-bound tasks in the following ways:
 
-- In the .NET Framework 4, use the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method, which accepts a delegate (typically an <xref:System.Action%601> or a <xref:System.Func%601>) to be executed asynchronously. If you provide an <xref:System.Action%601> delegate, the method returns a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> object that represents the asynchronous execution of that delegate. If you provide a <xref:System.Func%601> delegate, the method returns a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> object. Overloads of the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method accept a cancellation token (<xref:System.Threading.CancellationToken>), task creation options (<xref:System.Threading.Tasks.TaskCreationOptions>), and a task scheduler (<xref:System.Threading.Tasks.TaskScheduler>), all of which provide fine-grained control over the scheduling and execution of the task. A factory instance that targets the current task scheduler is available as a static property (<xref:System.Threading.Tasks.Task.Factory%2A>) of the <xref:System.Threading.Tasks.Task> class; for example: `Task.Factory.StartNew(…)`.
+- In .NET Framework 4.5 and later versions (including .NET Core and .NET 5+), use the static <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method as a shortcut to <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType>. You may use <xref:System.Threading.Tasks.Task.Run%2A> to easily launch a compute-bound task that targets the thread pool. This is the preferred mechanism for launching a compute-bound task. Use `StartNew` directly only when you want more fine-grained control over the task.
 
-- In the .NET Framework 4.5 and later versions (including .NET Core and .NET Standard), use the static <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method as a shortcut to <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType>. You may use <xref:System.Threading.Tasks.Task.Run%2A> to easily launch a compute-bound task that targets the thread pool. In the .NET Framework 4.5 and later versions, this is the preferred mechanism for launching a compute-bound task. Use `StartNew` directly only when you want more fine-grained control over the task.
+- In .NET Framework 4, use the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method, which accepts a delegate (typically an <xref:System.Action%601> or a <xref:System.Func%601>) to be executed asynchronously. If you provide an <xref:System.Action%601> delegate, the method returns a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> object that represents the asynchronous execution of that delegate. If you provide a <xref:System.Func%601> delegate, the method returns a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> object. Overloads of the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> method accept a cancellation token (<xref:System.Threading.CancellationToken>), task creation options (<xref:System.Threading.Tasks.TaskCreationOptions>), and a task scheduler (<xref:System.Threading.Tasks.TaskScheduler>), all of which provide fine-grained control over the scheduling and execution of the task. A factory instance that targets the current task scheduler is available as a static property (<xref:System.Threading.Tasks.Task.Factory%2A>) of the <xref:System.Threading.Tasks.Task> class; for example: `Task.Factory.StartNew(…)`.
 
 - Use the constructors of the `Task` type or the `Start` method if you want to generate and schedule the task separately. Public methods must only return tasks that have already been started.
 
@@ -76,7 +75,7 @@ Let's say that you want to create a task that will complete after a specified pe
 [!code-csharp[Conceptual.TAP_Patterns#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#4)]
 [!code-vb[Conceptual.TAP_Patterns#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#4)]
 
-Starting with the .NET Framework 4.5, the <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> method is provided for this purpose, and you can use it inside another asynchronous method, for example, to implement an asynchronous polling loop:
+The <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> method is provided for this purpose, and you can use it inside another asynchronous method, for example, to implement an asynchronous polling loop:
 
 [!code-csharp[Conceptual.TAP_Patterns#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#5)]
 [!code-vb[Conceptual.TAP_Patterns#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#5)]

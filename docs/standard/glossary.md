@@ -92,7 +92,7 @@ All of the runtime software, development tools, and community resources that are
 
 The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its inclusion of third-party apps and libraries. Here's an example in a sentence:
 
-- "The motivation behind the [.NET Standard](#net-standard) is to establish greater uniformity in the .NET ecosystem."
+- "The motivation behind [.NET Standard](#net-standard) is to establish greater uniformity in the .NET ecosystem."
 
 ## framework
 
@@ -132,7 +132,7 @@ Similar to [AOT](#aot), this compiler translates [IL](#il) to machine code that 
 An implementation of .NET includes:
 
 - One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
-- A class library that implements a version of the .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+- A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
 - Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in the .NET Framework and .NET 5.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
@@ -238,7 +238,7 @@ An operating system and the hardware it runs on, such as Windows, macOS, Linux, 
 Here are examples of usage in sentences:
 
 - ".NET Core is a cross-platform implementation of .NET."
-- "PCL profiles represent Microsoft platforms, while the .NET Standard is agnostic to platform."
+- "PCL profiles represent Microsoft platforms, while .NET Standard is agnostic to platform."
 
 Legacy .NET documentation sometimes uses ".NET platform" to mean either an [implementation of .NET](#implementation-of-net) or the .NET [stack](#stack) including all implementations. Both of these usages tend to get confused with the primary (OS/hardware) meaning, so we try to avoid these usages.
 
@@ -272,7 +272,7 @@ Legacy .NET documentation sometimes uses "runtime" in the sense of an [implement
 
 A set of programming technologies that are used together to build and run applications.
 
-"The .NET stack" refers to the .NET Standard and all .NET implementations. The phrase "a .NET stack" may refer to one implementation of .NET.
+"The .NET stack" refers to .NET Standard and all .NET implementations. The phrase "a .NET stack" may refer to one implementation of .NET.
 
 ## target framework
 

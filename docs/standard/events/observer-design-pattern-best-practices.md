@@ -3,12 +3,13 @@ title: "Observer Design Pattern Best Practices"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "observer design pattern [.NET Framework], best practices"
-  - "best practices [.NET Framework], observer design pattern"
+  - "observer design pattern [.NET], best practices"
+  - "best practices [.NET], observer design pattern"
 ms.assetid: c834760f-ddd4-417f-abb7-a059679d5b8c
 ---
 # Observer Design Pattern Best Practices
-In the .NET Framework, the observer design pattern is implemented as a set of interfaces. The <xref:System.IObservable%601?displayProperty=nameWithType> interface represents the data provider, which is also responsible for providing an <xref:System.IDisposable> implementation that lets observers unsubscribe from notifications. The <xref:System.IObserver%601?displayProperty=nameWithType> interface represents the observer. This topic describes the best practices that developers should follow when implementing the observer design pattern using these interfaces.  
+
+In .NET, the observer design pattern is implemented as a set of interfaces. The <xref:System.IObservable%601?displayProperty=nameWithType> interface represents the data provider, which is also responsible for providing an <xref:System.IDisposable> implementation that lets observers unsubscribe from notifications. The <xref:System.IObserver%601?displayProperty=nameWithType> interface represents the observer. This topic describes the best practices that developers should follow when implementing the observer design pattern using these interfaces.  
   
 ## Threading  
  Typically, a provider implements the <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType> method by adding a particular observer to a subscriber list that is represented by some collection object, and it implements the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method by removing a particular observer from the subscriber list. An observer can call these methods at any time. In addition, because the provider/observer contract does not specify who is responsible for unsubscribing after the <xref:System.IObserver%601.OnCompleted%2A?displayProperty=nameWithType> callback method, the provider and observer may both try to remove the same member from the list. Because of this possibility, both the <xref:System.IObservable%601.Subscribe%2A> and <xref:System.IDisposable.Dispose%2A> methods should be thread-safe. Typically, this involves using a [concurrent collection](../parallel-programming/data-structures-for-parallel-programming.md) or a lock. Implementations that are not thread-safe should explicitly document that they are not.  

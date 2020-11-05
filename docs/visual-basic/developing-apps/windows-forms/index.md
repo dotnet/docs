@@ -22,7 +22,7 @@ You can create Windows Forms and Windows service applications with Visual Studio
 
 ## Building Rich, Interactive User Interfaces
 
-Windows Forms is the smart-client component of the .NET Framework, a set of managed libraries that enable common application tasks such as reading and writing to the file system. Using a development environment like Visual Studio, you can create Windows Forms applications that display information, request input from users, and communicate with remote computers over a network.
+Windows Forms is the smart-client component of the .NET Framework and .NET Core (since .NET Core 3.0). It's a set of managed libraries that enable common application tasks, such as reading and writing to the file system. Using a development environment like Visual Studio, you can create Windows Forms applications that display information, request input from users, and communicate with remote computers over a network.
 
 In Windows Forms, a form is a visual surface on which you display information to the user. You commonly build Windows Forms applications by placing controls on forms and developing responses to user actions, such as mouse clicks or key presses. A *control* is a discrete user interface (UI) element that displays data or accepts data input.
 
@@ -91,7 +91,7 @@ For a full introduction to ClickOnce, see [ClickOnce Security and Deployment](/v
 
 ## Other Controls and Features
 
-There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of the .NET Framework, enabling you to release more secure applications to your customers.
+There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of .NET, enabling you to release more secure applications to your customers.
 
 For step-by-step information about using these features, see the following Help topics:
 

@@ -3,7 +3,7 @@ title: "Thread Safety in Regular Expressions"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - ".NET Framework regular expressions, threads"
+  - ".NET regular expressions, threads"
   - "regular expressions, threads"
   - "searching with regular expressions, threads"
   - "parsing text with regular expressions, threads"

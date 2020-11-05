@@ -7,12 +7,12 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "regular expressions, behavior"
-  - ".NET Framework regular expressions, behavior"
+  - ".NET regular expressions, behavior"
 ms.assetid: 0ee1a6b8-caac-41d2-917f-d35570021b10
 ---
 # Details of regular expression behavior
 
-The .NET Framework regular expression engine is a backtracking regular expression matcher that incorporates a traditional Nondeterministic Finite Automaton (NFA) engine such as that used by Perl, Python, Emacs, and Tcl. This distinguishes it from faster, but more limited, pure regular expression Deterministic Finite Automaton (DFA) engines such as those found in awk, egrep, or lex. This also distinguishes it from standardized, but slower, POSIX NFAs. The following section describes the three types of regular expression engines, and explains why regular expressions in the .NET Framework are implemented by using a traditional NFA engine.
+The .NET regular expression engine is a backtracking regular expression matcher that incorporates a traditional Nondeterministic Finite Automaton (NFA) engine such as that used by Perl, Python, Emacs, and Tcl. This distinguishes it from faster, but more limited, pure regular expression Deterministic Finite Automaton (DFA) engines such as those found in awk, egrep, or lex. This also distinguishes it from standardized, but slower, POSIX NFAs. The following section describes the three types of regular expression engines, and explains why regular expressions in .NET are implemented by using a traditional NFA engine.
 
 ## Benefits of the NFA engine
 
@@ -27,11 +27,11 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 > [!NOTE]
 > For information about the performance penalty caused by excessive backtracking and ways to craft a regular expression to work around them, see [Backtracking](backtracking-in-regular-expressions.md).
 
-## .NET Framework engine capabilities
+## .NET engine capabilities
 
- To take advantage of the benefits of a traditional NFA engine, the .NET Framework regular expression engine includes a complete set of constructs to enable programmers to steer the backtracking engine. These constructs can be used to find matches faster or to favor specific expansions over others.
+ To take advantage of the benefits of a traditional NFA engine, the .NET regular expression engine includes a complete set of constructs to enable programmers to steer the backtracking engine. These constructs can be used to find matches faster or to favor specific expansions over others.
 
- Other features of the .NET Framework regular expression engine include the following:
+ Other features of the .NET regular expression engine include the following:
 
 - Lazy quantifiers: `??`, `*?`, `+?`, `{`*n*`,`*m*`}?`. These constructs tell the backtracking engine to search the minimum number of repetitions first. In contrast, ordinary greedy quantifiers try to match the maximum number of repetitions first. The following example illustrates the difference between the two. A regular expression matches a sentence that ends in a number, and a capturing group is intended to extract that number. The regular expression `.+(\d+)\.` includes the greedy quantifier `.+`, which causes the regular expression engine to capture only the last digit of the number. In contrast, the regular expression `.+?(\d+)\.` includes the lazy quantifier `.+?`, which causes the regular expression engine to capture the entire number.
 
@@ -143,7 +143,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 |[Backtracking](backtracking-in-regular-expressions.md)|Provides information about how regular expression backtracking branches to find alternative matches.|
 |[Compilation and Reuse](compilation-and-reuse-in-regular-expressions.md)|Provides information about compiling and reusing regular expressions to increase performance.|
 |[Thread Safety](thread-safety-in-regular-expressions.md)|Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.|
-|[.NET Framework Regular Expressions](regular-expressions.md)|Provides an overview of the programming language aspect of regular expressions.|
+|[.NET Regular Expressions](regular-expressions.md)|Provides an overview of the programming language aspect of regular expressions.|
 |[The Regular Expression Object Model](the-regular-expression-object-model.md)|Provides information and code examples illustrating how to use the regular expression classes.|
 |[Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)|Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.|
 

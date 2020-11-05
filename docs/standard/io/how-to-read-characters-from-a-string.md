@@ -10,12 +10,13 @@ dev_langs:
 helpviewer_keywords: 
   - "reading characters from strings"
   - "data streams, reading characters from string"
-  - "I/O [.NET Framework], reading characters from strings"
+  - "I/O [.NET], reading characters from strings"
   - "reading data, strings"
   - "streams, reading characters from string"
 ms.assetid: 27ea5e52-6db8-42d8-980a-50bcfc7fd270
 ---
 # How to: Read characters from a string
+
 The following code examples show how to read characters synchronously or asynchronously from a string.  
   
 ## Example: Read characters synchronously

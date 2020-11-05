@@ -50,5 +50,5 @@ The best approach to porting a large .NET app to .NET Core is to identify projec
 - [Channel 9: A Brief Look at the .NET Portability Analyzer (Video)](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer)
 
 >[!div class="step-by-step"]
->[Previous](migrating-large-solutions.md)
+>[Previous](migrate-large-solutions.md)
 >[Next](understand-update-dependencies.md)

@@ -21,4 +21,4 @@ ASP.NET MVC and Web API did not support anything like the integration testing sc
 
 >[!div class="step-by-step"]
 >[Previous](signalr-differences.md)
->[Next](migrating-large-solutions.md)
+>[Next](migrate-large-solutions.md)

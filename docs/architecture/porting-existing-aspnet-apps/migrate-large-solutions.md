@@ -1,11 +1,11 @@
 ---
-title: Migrating large solutions to ASP.NET Core
+title: Migrate large solutions to ASP.NET Core
 description: 
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Migrating large solutions to ASP.NET Core
+# Migrate large solutions to ASP.NET Core
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 

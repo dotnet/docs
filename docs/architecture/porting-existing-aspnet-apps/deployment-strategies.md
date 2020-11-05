@@ -44,5 +44,5 @@ You can host apps side-by-side apps on Windows using any combination of Kestrel,
 - [Troubleshooting ASP.NET Core on Azure App Service and IIS](https://docs.microsoft.com/aspnet/core/test/troubleshoot-azure-iis)
 
 >[!div class="step-by-step"]
->[Previous](migrating-web-forms.md)
+>[Previous](migrate-web-forms.md)
 >[Next](additional-migration-resources.md)

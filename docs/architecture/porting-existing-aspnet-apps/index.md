@@ -66,7 +66,7 @@ You can read this book straight through, as we expect many readers to do. This w
 Whether or not you choose to start from the first chapter, you can also refer (back) to any of these chapters to learn about specific topics:
 
 - [Architectural differences](architectural-differences.md)
-- [Migrating large solutions](migrating-large-solutions.md)
+- [Migrate large solutions](migrate-large-solutions.md)
 - [Sample migration](example-migration-eshop.md)
 - [Deployment scenarios](deployment-scenarios.md)
 - [Case studies](case-studies.md)

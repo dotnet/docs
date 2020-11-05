@@ -22,7 +22,7 @@ ms.prod: dotnet
 The .NET IoT Libraries are composed of two NuGet packages:
 
 - [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/)
-- [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/).
+- [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/)
 
 ### System.Device.Gpio
 

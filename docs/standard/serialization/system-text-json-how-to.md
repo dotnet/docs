@@ -816,14 +816,14 @@ The <xref:System.Text.Json.Serialization.ReferenceResolver> class defines the be
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-<xref:System.Text.Json> in .NET Core 3.1 only supports serialization by value and throws an exception for circular references.
+System.Text.Json in .NET Core 3.1 only supports serialization by value and throws an exception for circular references.
 ::: zone-end
 
 ## Allow or write numbers in quotes
 
 ::: zone pivot="dotnet-5-0"
 
-Some serializers encode numbers as JSON strings (surrounded by quotes). For example: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To make <xref:System.Text.Json> write numbers in quotes or accept numbers in quotes across the entire input object graph, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
+Some serializers encode numbers as JSON strings (surrounded by quotes). For example: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To serialize numbers in quotes or accept numbers in quotes across the entire input object graph, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs" highlight="27-28":::
 
@@ -833,7 +833,7 @@ To allow or write quoted numbers for specific properties, fields, or types, use 
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-<xref:System.Text.Json> in .NET Core 3.1 doesn't support serializing or deserializing numbers surrounded by quotation marks. For more information, see [Allow or write numbers in quotes](system-text-json-migrate-from-newtonsoft-how-to.md#allow-or-write-numbers-in-quotes).
+System.Text.Json in .NET Core 3.1 doesn't support serializing or deserializing numbers surrounded by quotation marks. For more information, see [Allow or write numbers in quotes](system-text-json-migrate-from-newtonsoft-how-to.md#allow-or-write-numbers-in-quotes).
 ::: zone-end
 
 ## Immutable types and Records
@@ -847,13 +847,12 @@ Records in C# 9 are also supported, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Records.cs":::
 
+For types that are immutable because all their property setters are non-public, see the following section about [non-public property accessors](#non-public-property-accessors).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-`JsonConstructorAttribute` and C# 9 Record support aren't available in System.Text.Json in .NET Core 3.1.
+`JsonConstructorAttribute` and C# 9 Record support aren't available in .NET Core 3.1.
 ::: zone-end
-
-For types that are immutable because all their property setters are non-public, see the following section about [non-public property accessors](#non-public-property-accessors).
 
 ## Non-public property accessors
 
@@ -864,7 +863,7 @@ To enable use of a non-public property accessor, use the [[JsonInclude]](xref:Sy
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-Non-public property accessors are not supported in System.Text.Json in .NET Core 3.1. For more information, see [Non-public property setters and getters](system-text-json-migrate-from-newtonsoft-how-to.md#non-public-property-setters-and-getters).
+Non-public property accessors are not supported in .NET Core 3.1. For more information, see [the Migrate from Newtonsoft.Json article](system-text-json-migrate-from-newtonsoft-how-to.md#non-public-property-setters-and-getters).
 ::: zone-end
 
 ## Copy JsonSerializerOptions
@@ -876,7 +875,7 @@ There is a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSeriali
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
-A constructor that takes an existing instance is not available in `System.Text.Json` in .NET Core 3.1.
+A `JsonSerializerOptions` constructor that takes an existing instance is not available in .NET Core 3.1.
 ::: zone-end
 
 ## Web defaults for JsonSerializerOptions
@@ -899,7 +898,7 @@ Here are the options that have different defaults for web apps:
 * <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
 * <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
 
-A constructor that specifies a set of defaults is not available in System.Text.Json in .NET Core 3.1.
+A `JsonSerializerOptions` constructor that specifies a set of defaults is not available in .NET Core 3.1.
 ::: zone-end
 
 ## HttpClient and HttpContent extension methods

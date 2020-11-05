@@ -120,6 +120,9 @@ Complete the following steps on your development computer:
 
     Observe the LCD character display as the current time displays on each line.
 
+    > [!TIP]
+    > If the display is lit but you don't see any text, try adjusting the contrast dial on the back of the display.
+
 1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
 
 Congratulations! You've displayed text using an LCD using a I2C and a GPIO expander!

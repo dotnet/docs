@@ -224,7 +224,7 @@
   - name: Article index
     displayName: how to's
     href: how-to/index.md
-  - name: Parse strings using `String.Split`
+  - name: Split strings into substrings
     href: how-to/parse-strings-using-split.md
   - name: Concatenate strings
     href: how-to/concatenate-multiple-strings.md
@@ -234,7 +234,7 @@
     href: how-to/modify-string-contents.md
   - name: Compare strings
     href: how-to/compare-strings.md
-  - name: Safely cast using pattern matching, is and as operators
+  - name: Safely cast using pattern matching and is/as operators
     href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
   items:
@@ -833,7 +833,7 @@
       - name: <include>
         href: programming-guide/xmldoc/include.md
       - name: <inheritdoc>
-        href: programming-guide/xmldoc/inheritdoc.md  
+        href: programming-guide/xmldoc/inheritdoc.md
       - name: <list>
         href: programming-guide/xmldoc/list.md
       - name: <para>

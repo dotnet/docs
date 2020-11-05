@@ -21,9 +21,9 @@ The **Azure.Extensions.AspNetCore.Configuration.Secrets** package allows an ASP.
    Set-AzKeyVaultAccessPolicy -VaultName "<VaultName>" -ServicePrincipalName $sp.ServicePrincipalNames[0] -PermissionsToSecrets all -ResourceGroupName "<KeyVault Resource Group>"
    ```
 
-3. Include the key vault as a configuration source in your application by calling the AzureKeyVaultConfigurationExtensions.AddAzureKeyVault extension method when you create an <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> instance. Note that calling `AddAzureKeyVault` requires the application ID that was registered and given access to the key vault in the previous steps.
+3. Include the key vault as a configuration source in your application by calling the AzureKeyVaultConfigurationExtensions.AddAzureKeyVault extension method when you create an <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> instance. 
 
-   You can also use an overload of `AddAzureKeyVault` that takes a certificate in place of the client secret by just including a reference to the [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) package.
+Note that calling `AddAzureKeyVault` requires the application ID that was registered and given access to the key vault in the previous steps. Or you can firstly running the Azure CLI command: `az login`, then using an overload of `AddAzureKeyVault` that takes a DefaultAzureCredential in place of the client.
 
 > [!IMPORTANT]
 > We recommend that you register Azure Key Vault as the last configuration provider, so it can override configuration values from previous providers.

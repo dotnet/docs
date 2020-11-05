@@ -38,14 +38,13 @@ System.Device.Gpio supports a variety of protocols for interacting with low-leve
 
 Iot.Device.Bindings contains [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) to streamline app development by wrapping System.Device.Gpio. Iot.Device.Bindings is community-supported, and additional bindings are added continually.
 
-Common device bindings include:
+Commonly used device bindings include:
 
-- Adding
-- Items
-- as
-- Suggested
-- by
-- Rich
+- [CharacterLcd - LCD character display](https://github.com/dotnet/iot/tree/master/src/devices/CharacterLcd)
+- [SN74HC595 - 8-bit shift register](https://github.com/dotnet/iot/tree/master/src/devices/Sn74hc595)
+- [BrickPi3](https://github.com/dotnet/iot/tree/master/src/devices/BrickPi3)
+- [Max7219 - LED Matrix driver](https://github.com/dotnet/iot/tree/master/src/devices/Max7219)
+- [RGBLedMatrix - RGB LED Matrix](https://github.com/dotnet/iot/tree/master/src/devices/RGBLedMatrix)
 
 ## Supported operating systems
 

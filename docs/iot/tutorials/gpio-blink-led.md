@@ -20,7 +20,7 @@ GPIO pins can be controlled individually. This is useful for controlling LEDs, r
 - Breadboard
 - Jumper wires
 - Raspberry Pi GPIO breakout board (optional/recommended)
-- [.NET SDK](https://dotnet.microsoft.com/download) version .NET Core 3.1 or later
+- [.NET SDK](https://dotnet.microsoft.com/download) version 5.0.100 or later
 
 [!INCLUDE [ensure-ssh](../includes/ensure-ssh.md)]
 
@@ -30,7 +30,7 @@ Use the hardware components to build the circuit as depicted in the following di
 
 :::image type="content" source="../media/rpi-led_bb-thumb.png" alt-text="A Fritzing diagram showing a circuit with an LED and a resistor" lightbox="../media/rpi-led_bb.png":::
 
-The following are the connections depicted above:
+The image above depicts the following connections:
 
 - GPIO 18 to LED anode (longer, positive lead)
 - LED cathode (shorter, negative lead) to 330 Ω resistor (either end)
@@ -94,7 +94,7 @@ Complete the following steps on your development computer:
     ./BlinkTutorial
     ```
 
-    Observe the output as you turn the potentiometer up and down.
+    The LED blinks off and on every second.
 
 1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
 

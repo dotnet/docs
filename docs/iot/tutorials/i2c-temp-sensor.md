@@ -10,4 +10,4 @@ ms.prod: dotnet
 
 # Content coming soon
 
-Will implement [BMP180](https://github.com/dotnet/iot/tree/master/src/devices/Bmp180/samples)
+Waiting on a BME280 from Amazon.

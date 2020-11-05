@@ -22,7 +22,7 @@ In this topic, you will use .NET to read values from an ADC as you modulate the 
 - Breadboard
 - Jumper wires
 - Raspberry Pi GPIO breakout board (optional/recommended)
-- [.NET SDK](https://dotnet.microsoft.com/download) version .NET Core 3.1 or later
+- [.NET SDK](https://dotnet.microsoft.com/download) version 5.0.100 or later
 
 [!INCLUDE [prepare-pi-spi](../includes/prepare-pi-spi.md)]
 

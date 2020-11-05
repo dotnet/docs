@@ -23,7 +23,7 @@ In this topic, you will use .NET to display text on an LCD character display usi
 - Jumper wires
 - Breadboard (optional/recommended)
 - Raspberry Pi GPIO breakout board (optional/recommended)
-- [.NET SDK](https://dotnet.microsoft.com/download) version .NET Core 3.1 or later
+- [.NET SDK](https://dotnet.microsoft.com/download) version 5.0.100 or later
 
 > [!NOTE]
 > There are many manufacturers for LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/lcd2004-module.html).
@@ -101,7 +101,7 @@ Complete the following steps on your development computer:
         > [!WARNING]
         > The most common device address for this type of 20x4 LCD devices is `0x27`. Consult your LCD display's documentation to verify.
 
-    - Another `using` declaration creates an instance of `Pcf8574` and passes the `I2cDevice` into the constructor. This object represents the GPIO expander.
+    - Another `using` declaration creates an instance of `Pcf8574` and passes the `I2cDevice` into the constructor. This instance represents the GPIO expander.
     - Another `using` declaration creates an instance of `Lcd2004` to represent the display. Several parameters are passed to the constructor describing the settings to use to communicate with the GPIO expander. The GPIO expander is passed as the `controller` parameter.
     - A `while` loop runs indefinitely. Each iteration:
         1. Clears the display.
@@ -125,4 +125,4 @@ Complete the following steps on your development computer:
 
 1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
 
-Congratulations! You've displayed text using an LCD using a I2C and a GPIO expander!
+Congratulations! You've displayed text on an LCD using a I2C and a GPIO expander!

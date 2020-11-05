@@ -4,7 +4,7 @@
 
 #### Change description
 
-In previous .NET versions, .NET libraries use [National Language Support (NLS)](/windows/win32/intl/national-language-support) APIs for globalization functionality on Windows. For example, NLS functions were used to compare strings, get culture information, and perform string casing in the appropriate culture.
+In .NET Core 1.0 - 3.1 and .NET Framework 4 and later, .NET libraries use [National Language Support (NLS)](/windows/win32/intl/national-language-support) APIs for globalization functionality on Windows. For example, NLS functions were used to compare strings, get culture information, and perform string casing in the appropriate culture.
 
 Starting in .NET 5.0, if an app is running on Windows 10 May 2019 Update or later, .NET libraries use [ICU](http://site.icu-project.org/home) globalization APIs, by default.
 

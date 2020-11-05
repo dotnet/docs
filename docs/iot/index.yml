@@ -47,14 +47,14 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
-          - text: GPIO - Blink an LED
-            url: tutorials/gpio-blink-led.md
-          - text: I2C - Read temperatures from a sensor
-            url: tutorials/i2c-temp-sensor.md
-          - text: I2C with GPIO expander - Display text on an LCD
-            url: tutorials/i2c-lcd-display.md
-          - text: SPI - Read values from an analog-to-digital converter
-            url: tutorials/spi-adc.md
+          - text: Blink an LED
+            url: tutorials/blink-led.md
+          - text: Read temperatures from a sensor
+            url: tutorials/temp-sensor.md
+          - text: Display text on an LCD
+            url: tutorials/lcd-display.md
+          - text: Read values from an analog-to-digital converter
+            url: tutorials/adc.md
 
   - title: Packages and source code
     linkLists:

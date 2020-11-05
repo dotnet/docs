@@ -1,5 +1,5 @@
 ---
-title: I2C with GPIO expander - Display text on an LCD
+title: Display text on an LCD
 description: Learn how .NET can be used to build applications for IoT devices and scenarios.
 author: camsoper
 ms.author: casoper
@@ -8,11 +8,11 @@ ms.topic: overview
 ms.prod: dotnet
 ---
 
-# I2C with GPIO expander - Display text on an LCD
+# Display text on an LCD
 
 LCD character displays are useful for displaying information without the need for an external monitor. Common LCD character displays can be connected directly to the GPIO pins, but such an approach requires the use of up to 10 GPIO pins. For scenarios that require connecting to a combination of devices, devoting so much of the GPIO header to a character display is often impractical.
 
-Many manufacturers sell 20x4 LCD character displays with an integrated GPIO expander. The character display connects directly to the GPIO expander, which then connects to the Raspberry Pi via the I2C serial protocol.
+Many manufacturers sell 20x4 LCD character displays with an integrated GPIO expander. The character display connects directly to the GPIO expander, which then connects to the Raspberry Pi via the Inter-Integrated Circuit (I2C) serial protocol.
 
 In this topic, you will use .NET to display text on an LCD character display using an I2C GPIO expander.
 
@@ -32,7 +32,7 @@ In this topic, you will use .NET to display text on an LCD character display usi
 
 ## Prepare the hardware
 
-Use the jumper wires to connect the pins on the four pins on the GPIO expander to the Raspberry Pi as follows:
+Use the jumper wires to connect the pins on the four pins on the I2C GPIO expander to the Raspberry Pi as follows:
 
 - GND to ground
 - VCC to 5V

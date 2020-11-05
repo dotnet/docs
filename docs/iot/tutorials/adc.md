@@ -1,5 +1,5 @@
 ---
-title: SPI - Read values from an analog-to-digital converter
+title: Read values from an analog-to-digital converter
 description: Learn how .NET can be used to build applications for IoT devices and scenarios.
 author: camsoper
 ms.author: casoper
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.prod: dotnet
 ---
 
-# SPI - Read values from an analog-to-digital converter
+# Read values from an analog-to-digital converter
 
 An analog-to-digital converter (ADC) is a device that can read an analog input voltage value and convert it into a digital value. ADCs are used for reading various sensors, potentiometers, and other devices that change resistance based on certain conditions.
 
@@ -32,7 +32,7 @@ Use the hardware components to build the circuit as depicted in the following di
 
 :::image type="content" source="../media/rpi-trimpot_spi-thumb.png" alt-text="A Fritzing diagram showing a circuit with an MCP3008 ADC and a potentiometer" lightbox="../media/rpi-trimpot_spi.png":::
 
-The following are the connections from the MCP3008:
+The MCP3008 uses Serial Peripheral Interface (SPI) to communicate. The following are the connections from the MCP3008:
 
 <!--markdownlint-disable MD033 -->
 - V<sub>DD</sub> to 3.3V power (shown in red)
@@ -98,7 +98,7 @@ Complete the following steps on your development computer:
     - Another `using` declaration creates an instance of `Mcp3008` and passes the `SpiDevice` into the constructor.
     - A `while` loop runs indefinitely. Each iteration:
         1. Reads the value of CH0 on the MCP by calling `mcp.Read(0)`.
-        1. Divides the value by 10.24. The MCP3008 is a 10-bit ADC, which means it returns 1024 possible values, 0-1023. Dividing the value by 10.24 represents the value as a percentage.
+        1. Divides the value by 10.24. The MCP3008 is a 10-bit ADC, which means it returns 1024 possible values ranging 0-1023. Dividing the value by 10.24 represents the value as a percentage.
         1. Rounds the value to the nearest integer.
         1. Writes the value to the console formatted as a percentage.
         1. Sleeps 500 ms.
@@ -111,7 +111,7 @@ Complete the following steps on your development computer:
     ./AdcTutorial
     ```
 
-    Observe the output as you turn the potentiometer up and down.
+    Observe the output as you rotate the potentiometer dial up and down.
 
 1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
 

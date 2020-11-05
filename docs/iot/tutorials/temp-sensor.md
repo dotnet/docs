@@ -1,5 +1,5 @@
 ---
-title: I2C - Read temperatures from a sensor
+title: Read temperatures from a sensor
 description: Learn how .NET can be used to build applications for IoT devices and scenarios.
 author: camsoper
 ms.author: casoper

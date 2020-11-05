@@ -6,14 +6,14 @@
   href: quickstarts/sensehat.md
 - name: Tutorials
   items:
-  - name: GPIO - Blink an LED
-    href: tutorials/gpio-blink-led.md
-  - name: I2C - Read temperature from a sensor
-    href: tutorials/i2c-temp-sensor.md
-  - name: I2C with GPIO expander - Display text on an LCD
-    href: tutorials/i2c-lcd-display.md
-  - name: SPI - Read values from an analog-to-digital converter
-    href: tutorials/spi-adc.md
+  - name: Blink an LED
+    href: tutorials/blink-led.md
+  - name: Read temperature from a sensor
+    href: tutorials/temp-sensor.md
+  - name: Display text on an LCD
+    href: tutorials/lcd-display.md
+  - name: Read values from an analog-to-digital converter
+    href: tutorials/adc.md
 - name: How-to guides
   items:
   - name: Deploy .NET apps to Raspberry Pi

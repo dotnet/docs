@@ -1,5 +1,5 @@
 ---
-title: GPIO - Blink an LED
+title: Blink an LED
 description: Learn how .NET can be used to build applications for IoT devices and scenarios.
 author: camsoper
 ms.author: casoper
@@ -8,9 +8,9 @@ ms.topic: overview
 ms.prod: dotnet
 ---
 
-# GPIO - Blink an LED
+# Blink an LED
 
-GPIO pins can be controlled individually. This is useful for controlling LEDs, relays, and other stateful devices. In this topic, you will use .NET to power an LED and blink it repeatedly.
+GPIO pins can be controlled individually. This is useful for controlling LEDs, relays, and other stateful devices. In this topic, you will use .NET and your Raspberry Pi's GPIO pins to power an LED and blink it repeatedly.
 
 ## Prerequisites
 

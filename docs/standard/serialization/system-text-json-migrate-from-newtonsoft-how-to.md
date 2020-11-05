@@ -274,7 +274,6 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 * If you're [Including fields](system-text-json-how-to.md#include-fields), the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global option lets you ignore all read-only fields.
 * The `DefaultIgnoreCondition` global option lets you [ignore all value type properties that have default values](system-text-json-how-to.md#ignore-all-default-value-properties), or [ignore all reference type properties that have null values](system-text-json-how-to.md#ignore-all-null-value-properties).
 
-
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

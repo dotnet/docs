@@ -1,6 +1,6 @@
 ### TextFormatFlags.ModifyString is obsolete
 
-The <xref:System.Windows.Forms.TextFormatFlags.ModifyString?displayProperty=nameWithType> field is obsolete, as warning, and may be removed in a future .NET version.
+The <xref:System.Windows.Forms.TextFormatFlags.ModifyString?displayProperty=nameWithType> field is obsolete, as a warning, and may be removed in a future .NET version.
 
 #### Change description
 

@@ -75,12 +75,12 @@ Complete the following steps on your development computer:
 
     using I2cDevice i2c = I2cDevice.Create(new I2cConnectionSettings(1, 0x27));
     using Pcf8574 gpioExpander = new Pcf8574(i2c);
-    using Lcd2004 lcd = new Lcd2004(registerSelectPin: 0, 
-                            enablePin: 2, 
-                            dataPins: new int[] { 4, 5, 6, 7 }, 
-                            backlightPin: 3, 
-                            backlightBrightness: 0.1f, 
-                            readWritePin: 1, 
+    using Lcd2004 lcd = new Lcd2004(registerSelectPin: 0,
+                            enablePin: 2,
+                            dataPins: new int[] { 4, 5, 6, 7 },
+                            backlightPin: 3,
+                            backlightBrightness: 0.1f,
+                            readWritePin: 1,
                             controller: new GpioController(PinNumberingScheme.Logical, gpioExpander));
     int currentLine = 0;
 
@@ -102,7 +102,7 @@ Complete the following steps on your development computer:
         > The most common device address for this type of 20x4 LCD devices is `0x27`. Consult your LCD display's documentation to verify.
 
     - Another `using` declaration creates an instance of `Pcf8574` and passes the `I2cDevice` into the constructor. This object represents the GPIO expander.
-    - Another `using` declaration creates an instance of `Lcd2004` to represent the display. Several parameters are passed to the constructor describing the settings to use to communicate with the GPIO expander. The GPIO expander is passed as the `controller` parameter. 
+    - Another `using` declaration creates an instance of `Lcd2004` to represent the display. Several parameters are passed to the constructor describing the settings to use to communicate with the GPIO expander. The GPIO expander is passed as the `controller` parameter.
     - A `while` loop runs indefinitely. Each iteration:
         1. Clears the display.
         1. Sets the cursor position to the first position on the current line.

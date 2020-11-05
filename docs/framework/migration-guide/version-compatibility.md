@@ -2,7 +2,7 @@
 title: "Version compatibility in .NET Framework"
 description: Learn about compatibility between versions of .NET Framework, including backward compatibility and side-by-side execution.
 ms.date: "04/02/2019"
-helpviewer_keywords: 
+helpviewer_keywords:
   - ".NET Framework, version compatibility"
   - ".NET Framework, compatibility with earlier versions"
   - ".NET Framework versions, compatibility"
@@ -55,7 +55,7 @@ If your app or component doesn't work as expected on the .NET Framework 4.5 (inc
 
 - If you determine that a change in the .NET Framework 4.5 has broken your app, check the [Runtime Settings Schema](../configure-apps/file-schema/runtime/index.md), and particularly the [\<AppContextSwitchOverrides> Element](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md), to determine whether you can use a runtime setting in your app's configuration file to restore the previous behavior.
 
-- If you come across an issue that isn't documented, open a problem on the [Developer Community site for .NET](https://developercommunity.visualstudio.com/spaces/61/index.html) or open an issue in the [Microsoft/dotnet GitHub repo](https://github.com/microsoft/dotnet/issues).
+- If you come across an issue that isn't documented, open a problem on the [Developer Community site for .NET](https://aka.ms/feedback/report?space=61) or open an issue in the [Microsoft/dotnet GitHub repo](https://github.com/microsoft/dotnet/issues).
 
 ## Side-by-side execution
 

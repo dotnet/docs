@@ -1,6 +1,6 @@
 ---
 title: "<schemaImporterExtensions> Element"
-description: The <schemaImporterExtensions> element contains types that are used by the XmlSchemaImporter for mapping of XSD types to .NET Framework types.
+description: The <schemaImporterExtensions> element contains types that are used by the XmlSchemaImporter for mapping of XSD types to .NET types.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML serialization, configuration"
@@ -8,8 +8,9 @@ helpviewer_keywords:
   - "<schemaImporterExtensions> element"
 ms.assetid: 465ef2a0-f909-4ac1-9a56-0ead5c849698
 ---
-# \<schemaImporterExtensions> Element
-Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../framework/configure-apps/file-schema/index.md).  
+# \<schemaImporterExtensions> element
+
+Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping of XSD types to .NET types. For more information about configuration files, see [Configuration File Schema](../../framework/configure-apps/file-schema/index.md).  
   
 ## Syntax  
   
@@ -32,7 +33,7 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
 |[\<system.xml.serialization> Element](system-xml-serialization-element.md)|The top-level element for controlling XML serialization.|  
   
 ## Example  
- The following code example illustrates how to add types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> when mapping XSD types to .NET Framework types.  
+ The following code example illustrates how to add types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> when mapping XSD types to .NET types.  
   
 ```xml  
 <system.xml.serialization>  

@@ -173,13 +173,13 @@ None of the previous methods will prevent someone from reading Alice's messages,
 
 ## Random Number Generation
 
-Random number generation is integral to many cryptographic operations. For example, cryptographic keys need to be as random as possible so that it is infeasible to reproduce them. Cryptographic random number generators must generate output that is computationally infeasible to predict with a probability that is better than one half. Therefore, any method of predicting the next output bit must not perform better than random guessing. The classes in the .NET Framework use random number generators to generate cryptographic keys.
+Random number generation is integral to many cryptographic operations. For example, cryptographic keys need to be as random as possible so that it is infeasible to reproduce them. Cryptographic random number generators must generate output that is computationally infeasible to predict with a probability that is better than one half. Therefore, any method of predicting the next output bit must not perform better than random guessing. The classes in .NET use random number generators to generate cryptographic keys.
 
 The <xref:System.Security.Cryptography.RandomNumberGenerator> class is an implementation of a random number generator algorithm.
 
 ## ClickOnce Manifests
 
-In the .NET Framework 3.5, the following cryptography classes let you obtain and verify information about manifest signatures for applications that are deployed using [ClickOnce technology](/visualstudio/deployment/clickonce-security-and-deployment):
+The following cryptography classes let you obtain and verify information about manifest signatures for applications that are deployed using [ClickOnce technology](/visualstudio/deployment/clickonce-security-and-deployment):
 
 - The <xref:System.Security.Cryptography.ManifestSignatureInformation> class obtains information about a manifest signature when you use its <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method overloads.
 
@@ -187,7 +187,7 @@ In the .NET Framework 3.5, the following cryptography classes let you obtain and
 
 - The <xref:System.Security.Cryptography.ManifestSignatureInformationCollection> class provides a read-only collection of <xref:System.Security.Cryptography.ManifestSignatureInformation> objects of the verified signatures.
 
- In addition, the following classes provide specific signature information:
+In addition, the following classes provide specific signature information:
 
 - <xref:System.Security.Cryptography.StrongNameSignatureInformation> holds the strong name signature information for a manifest.
 
@@ -199,11 +199,11 @@ In the .NET Framework 3.5, the following cryptography classes let you obtain and
 
 ## Cryptography Next Generation (CNG) Classes
 
-In the .NET Framework 3.5 and later versions, the Cryptography Next Generation (CNG) classes provide a managed wrapper around the native CNG functions. (CNG is the replacement for CryptoAPI.) These classes have "Cng" as part of their names. Central to the CNG wrapper classes is the <xref:System.Security.Cryptography.CngKey> key container class, which abstracts the storage and use of CNG keys. This class lets you store a key pair or a public key securely and refer to it by using a simple string name. The elliptic curve-based <xref:System.Security.Cryptography.ECDsaCng> signature class and the <xref:System.Security.Cryptography.ECDiffieHellmanCng> encryption class can use <xref:System.Security.Cryptography.CngKey> objects.
+The Cryptography Next Generation (CNG) classes provide a managed wrapper around the native CNG functions. (CNG is the replacement for CryptoAPI.) These classes have "Cng" as part of their names. Central to the CNG wrapper classes is the <xref:System.Security.Cryptography.CngKey> key container class, which abstracts the storage and use of CNG keys. This class lets you store a key pair or a public key securely and refer to it by using a simple string name. The elliptic curve-based <xref:System.Security.Cryptography.ECDsaCng> signature class and the <xref:System.Security.Cryptography.ECDiffieHellmanCng> encryption class can use <xref:System.Security.Cryptography.CngKey> objects.
 
 The <xref:System.Security.Cryptography.CngKey> class is used for a variety of additional operations, including opening, creating, deleting, and exporting keys. It also provides access to the underlying key handle to use when calling native functions directly.
 
-The .NET Framework 3.5 also includes a variety of supporting CNG classes, such as the following:
+.NET also includes a variety of supporting CNG classes, such as the following:
 
 - <xref:System.Security.Cryptography.CngProvider> maintains a key storage provider.
 

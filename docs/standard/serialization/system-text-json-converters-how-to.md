@@ -330,25 +330,21 @@ The following code registers the converter:
 
 By default, the serializer handles null values as follows:
 
-* For reference types:
+* For reference types and `Nullable<T>` types:
 
-  * It does not pass `null` to custom converters for reference types on serialization and deserialization
+  * It does not pass `null` to custom converters on serialization.
+  * It does not pass `JsonTokenType.Null` to custom converters on deserialization.
   * It returns a `null` instance on deserialization.
   * It writes `null` directly with the writer on serialization.
 
-* For `Nullable<T>` value types:
+* For non-nullable value types:
 
-  * It passes `null` to converters on deserialization because it isn't a valid CLR value for value types. This way, the converter can determine what to do with this "invalid" token.
-  * It writes `null` directly with the writer on serialization.
+  * It passes `JsonTokenType.Null` to custom converters on deserialization. (If no custom converter is available, a `JsonException` exception is thrown by the internal converter for the type.)
 
-* For primitive value types:
-
-  * It passes `JsonTokenType.Null` to custom converters on deserialization. (If no custom converter is available, it throws a `JsonException` exception or returns a `default` value, depending on whether an internal converter is available.)
-
-This null-handling behavior is primarily to optimize performance by skipping an extra call to the converter. In addition, it avoids forcing converters to check for `null` at the start of every `Read` and `Write` method override.
+This null-handling behavior is primarily to optimize performance by skipping an extra call to the converter. In addition, it avoids forcing converters for nullable types to check for `null` at the start of every `Read` and `Write` method override.
 
 ::: zone pivot="dotnet-5-0"
-To enable a custom converter to handle `null` for all types, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType> to return `true`, as shown in the following example:
+To enable a custom converter to handle `null` for a reference or value type, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType> to return `true`, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs" highlight="19":::
 ::: zone-end

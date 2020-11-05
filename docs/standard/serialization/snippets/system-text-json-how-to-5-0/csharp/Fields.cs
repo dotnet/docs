@@ -23,10 +23,10 @@ namespace Fields
     {
         public static void Main()
         {
-            var json = "{\"date\":\"2020-09-06T11:31:01.923395-07:00\",\"temperatureC\":-1,\"summary\":\"Cold\"} ";
+            var json = "{\"Date\":\"2020-09-06T11:31:01.923395-07:00\",\"TemperatureC\":-1,\"Summary\":\"Cold\"} ";
             Console.WriteLine($"Input JSON: {json}");
 
-            var options = new JsonSerializerOptions(JsonSerializerDefaults.Web)
+            var options = new JsonSerializerOptions()
             {
                 IncludeFields = true,
             };
@@ -41,7 +41,7 @@ namespace Fields
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
 
             options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
-            var forecast2 = JsonSerializer.Deserialize<Forecast2>(json, options);
+            var forecast2 = JsonSerializer.Deserialize<Forecast2>(json);
 
             Console.WriteLine($"forecast2.Date: {forecast2.Date}");
             Console.WriteLine($"forecast2.TemperatureC: {forecast2.TemperatureC}");

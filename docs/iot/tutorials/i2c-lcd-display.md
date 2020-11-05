@@ -8,6 +8,118 @@ ms.topic: overview
 ms.prod: dotnet
 ---
 
-# Content coming soon
+# I2C with GPIO expander - Display text on an LCD
 
-Will implement a 20x4 display (like [here](https://github.com/dotnet/iot/tree/master/src/devices/CharacterLcd)) with a [Mcp23008](https://github.com/dotnet/iot/tree/master/src/devices/Mcp23xxx) gpio expander.
+LCD character displays are useful for displaying information without the need for an external monitor. Common LCD character displays can be connected directly to the GPIO pins, but such an approach requires the use of up to 10 GPIO pins. For scenarios that require connecting to a combination of devices, devoting so much of the GPIO header to a character display is often impractical.
+
+Many manufacturers sell 20x4 LCD character displays with an integrated GPIO expander. The character display connects directly to the GPIO expander, which then connects to the Raspberry Pi via the I2C serial protocol.
+
+In this topic, you will use .NET to display text on an LCD character display using an I2C GPIO expander.
+
+## Prerequisites
+
+- Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+- A [20x4 LCD Character Display with I2C interface](https://www.bing.com/images/search?q=20x4+lcd+display+with+i2c)
+- Jumper wires
+- A breadboard (optional/recommended)
+- Raspberry Pi GPIO breakout board (optional/recommended)
+- [.NET SDK](https://dotnet.microsoft.com/download)
+
+> [!NOTE]
+> There are many manufacturers for LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/lcd2004-module.html).
+
+[!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
+
+## Prepare the circuit
+
+Use the jumper wires to connect the pins on the four pins on the GPIO expander to the Raspberry Pi as follows:
+
+- GND to ground
+- VCC to 3.3V
+- SDA to SDA (GPIO 2)
+- SCL to SCL (GPIO 3)
+
+Refer to the following figures as needed:
+
+| I2C interface (back of display) | Raspberry Pi GPIO |
+|---------------------------------|-------------------|
+| :::image type="content" source="../media/character-display-i2c-thumb.png" alt-text="An image of the back of the character display showing the I2C GPIO expander." lightbox="../media/character-display-i2c.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/).
+ |
+
+[!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
+
+Once all the connections are made, power on the Raspberry Pi.
+
+## Create the app
+
+Complete the following steps on your development computer:
+
+1. Create a new .NET Console App using either the [.NET CLI](/dotnet/core/tools/dotnet-new) or [Visual Studio](/dotnet/core/tutorials/with-visual-studio). Name it *LcdTutorial*.
+
+    ```dotnetcli
+    dotnet new console -o LcdTutorial
+    ```
+
+1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-packages.md)]
+1. Replace the contents of *Program.cs* with the following code:
+
+    ```csharp
+    using System;
+    using System.Device.Gpio;
+    using System.Device.I2c;
+    using System.Threading;
+    using Iot.Device.CharacterLcd;
+    using Iot.Device.Pcx857x;
+
+    Console.WriteLine("Displaying current time. Press Ctrl+C to end.");
+
+    using I2cDevice i2c = I2cDevice.Create(new I2cConnectionSettings(1, 0x27));
+    using Pcf8574 gpioExpander = new Pcf8574(i2c);
+    using Lcd2004 lcd = new Lcd2004(registerSelectPin: 0, 
+                            enablePin: 2, 
+                            dataPins: new int[] { 4, 5, 6, 7 }, 
+                            backlightPin: 3, 
+                            backlightBrightness: 0.1f, 
+                            readWritePin: 1, 
+                            controller: new GpioController(PinNumberingScheme.Logical, gpioExpander));
+    int currentLine = 0;
+
+    while (true)
+    {
+        lcd.Clear();
+        lcd.SetCursorPosition(0,currentLine);
+        lcd.Write(DateTime.Now.ToShortTimeString());
+        currentLine = (currentLine == 3) ? 0 : currentLine + 1;
+        Thread.Sleep(1000);
+    }
+    ```
+
+    In the preceding code:
+
+    - A [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in a new `I2cConnectionSettings` with the `busId` and `deviceAddress` parameters. This `I2cDevice` represents the I2c bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+
+        > [!WARNING]
+        > The most common device address for this type of 20x4 LCD devices is `0x27`. Consult your LCD display's documentation to verify.
+
+    - Another `using` declaration creates an instance of `Pcf8574` and passes the `I2cDevice` into the constructor. This object represents the GPIO expander.
+    - Another `using` declaration creates an instance of `Lcd2004` to represent the display. Several parameters are passed to the constructor describing the settings to use to communicate with the GPIO expander. The GPIO expander is passed as the `controller` parameter. 
+    - A `while` loop runs indefinitely. Each iteration:
+        1. Clears the display.
+        1. Sets the cursor position to the first position on the current line.
+        1. Writes the current time to the display at the current cursor position.
+        1. Iterates the current line counter.
+        1. Sleeps 1000 ms.
+
+1. Build the app by running `dotnet build` if using the .NET CLI. To build in Visual Studio, press <kbd>Ctrl+Shift+B</kbd>.
+1. Deploy the app to the Raspberry Pi as a self-contained app. For instructions, see [Deploy .NET apps to Raspberry Pi](../deployment.md#deploying-a-self-contained-app). Make sure to give the executable *execute* permission using `chmod +x`.
+1. Run the app on the Raspberry Pi by switching to the deployment directory and running the executable.
+
+    ```bash
+    ./LcdTutorial
+    ```
+
+    Observe the LCD character display as the current time displays on each line.
+
+1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
+
+Congratulations! You've displayed text using an LCD using a I2C and a GPIO expander!

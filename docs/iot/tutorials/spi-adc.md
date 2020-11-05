@@ -68,13 +68,7 @@ Complete the following steps on your development computer:
     dotnet new console -o AdcTutorial
     ```
 
-1. Add the [System.Device.Gpio](https://www.nuget.org/packages/System.Device.Gpio/) and [Iot.Device.Bindings](https://www.nuget.org/packages/Iot.Device.Bindings/) packages to the AdcTutorial project using either [.NET CLI](/dotnet/core/tools/dotnet-add-package) or [Visual Studio](/nuget/consume-packages/install-use-packages-visual-studio).
-
-    ```dotnetcli
-    dotnet add package System.Device.Gpio
-    dotnet add package Iot.Device.Bindings
-    ```
-
+1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-packages.md)]
 1. Replace the contents of *Program.cs* with the following code:
 
     ```csharp

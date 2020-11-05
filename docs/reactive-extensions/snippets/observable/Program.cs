@@ -1,9 +1,8 @@
 ﻿using System;
-using static System.Console;
 using static System.Reactive.Linq.Observable;
 
 using IDisposable subscription =
-    Range(1, 5).Subscribe(
-        value => WriteLine($"OnNext: {value}"),
-        ex => WriteLine($"OnError: {ex.Message}"),
-        () => WriteLine("OnCompleted"));
+    Range(7, 5).Subscribe(
+        value => Console.WriteLine($"OnNext: {value}"),
+        ex => Console.WriteLine($"OnError: {ex.Message}"),
+        () => Console.WriteLine("OnCompleted"));

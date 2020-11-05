@@ -1,9 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Reactive.Linq;
-using static System.Console;
 
-using Stream inputStream = OpenStandardInput();
+using Stream inputStream = Console.OpenStandardInput();
 
 IObservable<int> Read(byte[] bytes, int offset, int count) =>
     Observable.FromAsync<int>(
@@ -11,9 +10,9 @@ IObservable<int> Read(byte[] bytes, int offset, int count) =>
 
 using IDisposable subscription =
     Read(new byte[1024], 0, 1024).Subscribe(
-        value => WriteLine($"OnNext: {value}"),
-        ex => WriteLine($"OnError: {ex.Message}"),
-        () => WriteLine("OnCompleted"));
+        value => Console.WriteLine($"OnNext: {value}"),
+        ex => Console.WriteLine($"OnError: {ex.Message}"),
+        () => Console.WriteLine("OnCompleted"));
 
-WriteLine("Type something...");
-ReadKey();
+Console.WriteLine("Type something, then press the ENTER key.");
+Console.ReadKey();

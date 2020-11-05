@@ -7,8 +7,8 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "observers [.NET Framework], observer design pattern"
-  - "observer design pattern [.NET Framework], implementing observers"
+  - "observers [.NET], observer design pattern"
+  - "observer design pattern [.NET], implementing observers"
 ms.assetid: 8ecfa9f5-b500-473d-bcf0-5652ffb1e53d
 ---
 # How to: Implement an Observer

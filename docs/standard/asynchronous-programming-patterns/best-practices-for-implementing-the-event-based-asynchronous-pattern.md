@@ -6,26 +6,30 @@ helpviewer_keywords:
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"
   - "BackgroundWorker component"
-  - "events [.NET Framework], asynchronous"
+  - "events [.NET], asynchronous"
   - "AsyncOperationManager class"
-  - "threading [.NET Framework], asynchronous features"
+  - "threading [.NET], asynchronous features"
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 4acd2094-4f46-4eff-9190-92d0d9ff47db
 ---
 # Best Practices for Implementing the Event-based Asynchronous Pattern
+
 The Event-based Asynchronous Pattern provides you with an effective way to expose asynchronous behavior in classes, with familiar event and delegate semantics. To implement Event-based Asynchronous Pattern, you need to follow some specific behavioral requirements. The following sections describe requirements and guidelines you should consider when you implement a class that follows the Event-based Asynchronous Pattern.  
   
  For an overview, see [Implementing the Event-based Asynchronous Pattern](implementing-the-event-based-asynchronous-pattern.md).  
   
-## Required Behavioral Guarantees  
+## Required Behavioral Guarantees
+
  If you implement the Event-based Asynchronous Pattern, you must provide a number of guarantees to ensure that your class will behave properly and clients of your class can rely on such behavior.  
   
-### Completion  
+### Completion
+
  Always invoke the <em>MethodName</em>**Completed** event handler when you have successful completion, an error, or a cancellation. Applications should never encounter a situation where they remain idle and completion never occurs. One exception to this rule is if the asynchronous operation itself is designed so that it never completes.  
   
-### Completed Event and EventArgs  
- For each separate <em>MethodName</em>**Async** method, apply the following design requirements:  
+### Completed Event and EventArgs
+
+For each separate <em>MethodName</em>**Async** method, apply the following design requirements:  
   
 - Define a <em>MethodName</em>**Completed** event on the same class as the method.  
   
@@ -111,7 +115,8 @@ private void Form1_MethodNameCompleted(object sender, MethodNameCompletedEventAr
   
 - Catch any exceptions that occur in the asynchronous operation and set the value of the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=nameWithType> property to that exception.  
   
-### Threading and Contexts  
+### Threading and Contexts
+
  For correct operation of your class, it is critical that the client's event handlers are invoked on the proper thread or context for the given application model, including ASP.NET and Windows Forms applications. Two important helper classes are provided to ensure that your asynchronous class behaves correctly under any application model: <xref:System.ComponentModel.AsyncOperation> and <xref:System.ComponentModel.AsyncOperationManager>.  
   
  <xref:System.ComponentModel.AsyncOperationManager> provides one method, <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A>, which returns an <xref:System.ComponentModel.AsyncOperation>. Your <em>MethodName</em>**Async** method calls <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A> and your class uses the returned <xref:System.ComponentModel.AsyncOperation> to track the lifetime of the asynchronous task.  

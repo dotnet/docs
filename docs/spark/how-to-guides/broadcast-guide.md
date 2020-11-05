@@ -1,6 +1,8 @@
 ---
 title: Use broadcast variables in .NET for Apache Spark
 description: Learn how to use broadcast variables in .NET for Apache Spark applications.
+ms.author: nidutta
+author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to

@@ -525,5 +525,6 @@ class Program
 
 - [Logging providers in .NET](logging-providers.md)
 - [Implement a custom logging provider in .NET](custom-logging-provider.md)
+- [Console log formatting](console-log-formatter.md)
 - [High-performance logging in .NET](high-performance-logging.md)
 - Logging bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo

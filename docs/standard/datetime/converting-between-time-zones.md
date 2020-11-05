@@ -7,8 +7,8 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "times [.NET Framework], converting"
-  - "time zones [.NET Framework], conversions"
+  - "times [.NET], converting"
+  - "time zones [.NET], conversions"
   - "UTC times, converting"
   - "converting times"
   - "local time conversions"
@@ -20,7 +20,7 @@ It is becoming increasingly important for any application that works with dates 
 
 ## Converting to Coordinated Universal Time
 
-Coordinated Universal Time (UTC) is a high-precision, atomic time standard. The world’s time zones are expressed as positive or negative offsets from UTC. Thus, UTC provides a kind of time-zone free or time-zone neutral time. The use of UTC time is recommended when a date and time's portability across computers is important. (For details and other best practices using dates and times, see [Coding best practices using DateTime in the .NET Framework](/previous-versions/dotnet/articles/ms973825(v=msdn.10)).) Converting individual time zones to UTC makes time comparisons easy.
+Coordinated Universal Time (UTC) is a high-precision, atomic time standard. The world's time zones are expressed as positive or negative offsets from UTC. Thus, UTC provides a kind of time-zone free or time-zone neutral time. The use of UTC time is recommended when a date and time's portability across computers is important. (For details and other best practices using dates and times, see [Coding best practices using DateTime in the .NET Framework](/previous-versions/dotnet/articles/ms973825(v=msdn.10)).) Converting individual time zones to UTC makes time comparisons easy.
 
 > [!NOTE]
 > You can also serialize a <xref:System.DateTimeOffset> structure to unambiguously represent a single point in time. Because <xref:System.DateTimeOffset> objects store a date and time value along with its offset from UTC, they always represent a particular point in time in relationship to UTC.
@@ -65,7 +65,7 @@ The following code converts UTC to Central Standard Time.
 
 ## Converting UTC to local time
 
-To convert UTC to local time, call the <xref:System.DateTime.ToLocalTime%2A> method of the <xref:System.DateTime> object whose time you want to convert. The exact behavior of the method depends on the value of the object’s <xref:System.DateTime.Kind%2A> property, as the following table shows.
+To convert UTC to local time, call the <xref:System.DateTime.ToLocalTime%2A> method of the <xref:System.DateTime> object whose time you want to convert. The exact behavior of the method depends on the value of the object's <xref:System.DateTime.Kind%2A> property, as the following table shows.
 
 | `DateTime.Kind`            | Conversion                                                                               |
 | -------------------------- | ---------------------------------------------------------------------------------------- |

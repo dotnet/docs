@@ -7,12 +7,12 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "world-ready applications, localizability"
-  - "application development [.NET Framework], localization"
-  - "localizability [.NET Framework]"
-  - "international applications [.NET Framework], localizability"
-  - "globalization [.NET Framework], localizability"
+  - "application development [.NET], localization"
+  - "localizability [.NET]"
+  - "international applications [.NET], localizability"
+  - "globalization [.NET], localizability"
   - "culture, localizability"
-  - "localization [.NET Framework], localizability"
+  - "localization [.NET], localizability"
   - "global applications, localizability"
   - "localizing resources"
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247

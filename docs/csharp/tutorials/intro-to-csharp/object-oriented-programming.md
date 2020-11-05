@@ -134,7 +134,7 @@ Notice that the `LineOfCreditAccount` constructor changes the sign of the `credi
 
 The last feature to add enables the `LineOfCreditAccount` to charge a fee for going over the credit limit instead of refusing the transaction.
 
-One technique is to define a virtual function where you implement the required behavior. The `Bank Account` class refactors the `MakeWithdrawal` method into two methods. The new method does the specified action when the withdrawal takes the balance below the minimum. The existing `MakeWithdrawal` method has the following code:
+One technique is to define a virtual function where you implement the required behavior. The `BankAccount` class refactors the `MakeWithdrawal` method into two methods. The new method does the specified action when the withdrawal takes the balance below the minimum. The existing `MakeWithdrawal` method has the following code:
 
 ```csharp
 public void MakeWithdrawal(decimal amount, DateTime date, string note)

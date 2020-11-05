@@ -19,7 +19,7 @@ When multiple threads can make calls to the properties and methods of a single o
   
 - Manual synchronization. You can use the synchronization objects provided by the .NET class library. See [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md), which includes a discussion of the <xref:System.Threading.Monitor> class.  
   
-- Synchronized contexts. For .NET Framework and Xamarin applications, you can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> to enable simple, automatic synchronization for <xref:System.ContextBoundObject> objects.  
+- Synchronized contexts. For .NET Framework and Xamarin applications only, you can use the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> to enable simple, automatic synchronization for <xref:System.ContextBoundObject> objects.  
   
 - Collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace. These classes provide built-in synchronized add and remove operations. For more information, see [Thread-Safe Collections](../collections/thread-safe/index.md).  
   

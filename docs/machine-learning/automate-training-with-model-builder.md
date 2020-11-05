@@ -49,9 +49,15 @@ Regression is used to predict numbers.
 
 #### Image classification
 
-Image classification can be used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
+Image classification is used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
 
 You can use the image classification scenario if you have a set of images, and you want to classify the images into different categories.
+
+#### Object detection
+
+Object detection is used to locate and categorize entities within images.  For example, locating and identifying cars and people in an image.
+
+You can use object detection when images contain multiple objects of different types.
 
 #### Recommendation
 
@@ -61,13 +67,15 @@ You can use the recommendation scenario when you have a set of users and a set o
 
 ## Environment
 
-You can train your machine learning model locally on your machine or in the cloud on Azure.
+You can train your machine learning model locally on your machine or in the cloud on Azure, depending on the scenario.
 
 When you train locally, you work within the constraints of your computer resources (CPU, memory, and disk). When you train in the cloud, you can scale up your resources to meet the demands of your scenario, especially for large datasets.
 
-Local training is supported for all scenarios.
+Local CPU training is supported for all scenarios except Object Detection.
 
-Azure training is supported for Image Classification.
+Local GPU training is supported for Image Classification.
+
+Azure training is supported for Image Classification and Object Detection.
 
 ## Data
 

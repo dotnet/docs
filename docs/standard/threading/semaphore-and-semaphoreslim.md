@@ -6,13 +6,14 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "counting semaphores"
   - "semaphores"
-  - "threading [.NET Framework], cross-process synchronization"
+  - "threading [.NET], cross-process synchronization"
   - "Semaphore class, about Semaphore class"
   - "SemaphoreSlim class, about SemaphoreSlim class"
-  - "threading [.NET Framework], Semaphore class"
+  - "threading [.NET], Semaphore class"
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
 ---
 # Semaphore and SemaphoreSlim
+
 The <xref:System.Threading.Semaphore?displayProperty=nameWithType> class represents a named (systemwide) or local semaphore. It is a thin wrapper around the Win32 semaphore object. Win32 semaphores are counting semaphores, which can be used to control access to a pool of resources.  
   
  The <xref:System.Threading.SemaphoreSlim> class represents a lightweight, fast semaphore that can be used for waiting within a single process when wait times are expected to be very short. <xref:System.Threading.SemaphoreSlim> relies as much as possible on synchronization primitives provided by the common language runtime (CLR). However, it also provides lazily initialized, kernel-based wait handles as necessary to support waiting on multiple semaphores. <xref:System.Threading.SemaphoreSlim> also supports the use of cancellation tokens, but it does not support named semaphores or the use of a wait handle for synchronization.  

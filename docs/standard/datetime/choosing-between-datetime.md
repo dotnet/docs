@@ -9,9 +9,9 @@ dev_langs:
 helpviewer_keywords: 
   - "DateTimeOffset structure"
   - "TimeZoneInfo class"
-  - "time zones [.NET Framework], common uses"
-  - "date and time classes [.NET Framework]"
-  - "time zones [.NET Framework], type options"
+  - "time zones [.NET], common uses"
+  - "date and time classes [.NET]"
+  - "time zones [.NET], type options"
   - "DateTime structure"
 ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 ---

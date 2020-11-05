@@ -906,9 +906,9 @@ A constructor that specifies a set of defaults is not available in System.Text.J
 
 ::: zone pivot="dotnet-5-0"
 
-Serializing and deserializing JSON payloads from the network are common operations. Extension methods on <xref:System.Net.Http.HttpClient> let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+Serializing and deserializing JSON payloads from the network are common operations. Extension methods on [HttpClient](xref:System.Net.Http.Json.HttpClientJsonExtensions) and [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions) let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
 
-The following example illustrates use of the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A>:
+The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
 

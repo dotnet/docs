@@ -123,7 +123,7 @@ When you use System.Text.Json indirectly in an ASP.NET Core app, some default be
 
 ::: zone pivot="dotnet-core-3-1"
 
-* By default, all public properties are serialized. You can [specify properties to ignore](#ignore-properties-from-serialization).
+* By default, all public properties are serialized. You can [specify properties to ignore](#ignore-properties).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).

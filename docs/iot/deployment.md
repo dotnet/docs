@@ -50,7 +50,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
 
 1. [!INCLUDE [sftp-client](includes/sftp-client.md)]
 
-1. From a Bash prompt on the Raspberry Pi (local or SSH), run the app. To do this, set the deployment folder as the current directory and executing the following command (where `HelloWorld.dll` is the entry point of the app):
+1. From a Bash prompt on the Raspberry Pi (local or SSH), run the app. To do this, set the deployment folder as the current directory and execute the following command (where `HelloWorld.dll` is the entry point of the app):
 
     ```dotnetcli
     dotnet HelloWorld.dll

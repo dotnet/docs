@@ -8,7 +8,7 @@ ms.topic: overview
 ms.prod: dotnet
 ---
 
-# How to debug .NET apps on Raspberry Pi running Linux
+# Debug .NET apps on Raspberry Pi
 
 Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents a unique challenge. It is possible to develop .NET apps on ARM devices. However, OmniSharp, which is required for debugging .NET apps outside of Visual Studio, is not compatible with ARM devices. As a result, apps must be debugged remotely from a compatible platform.
 

@@ -10,7 +10,7 @@ ms.prod: dotnet
 
 # Blink an LED
 
-GPIO pins can be controlled individually. This is useful for controlling LEDs, relays, and other stateful devices. In this topic, you will use .NET and your Raspberry Pi's GPIO pins to power an LED and blink it repeatedly.
+General-purpose I/O (GPIO) pins can be controlled individually. This is useful for controlling LEDs, relays, and other stateful devices. In this topic, you will use .NET and your Raspberry Pi's GPIO pins to power an LED and blink it repeatedly.
 
 ## Prerequisites
 

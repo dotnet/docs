@@ -87,4 +87,4 @@ The source for this tutorial is [available on GitHub](https://github.com/Microso
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn how to read environmental conditions from a sensor](../tutorials/temp-sensor.md).
+> [Learn how to read environmental conditions from a sensor](../tutorials/temp-sensor.md)

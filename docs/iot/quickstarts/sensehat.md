@@ -52,4 +52,4 @@ The source for this quickstart is [available on GitHub](https://github.com/Micro
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn to use General Purpose Input/Output to blink an LED](../tutorials/blink-led.md).
+> [Learn to use General Purpose Input/Output to blink an LED](../tutorials/blink-led.md)

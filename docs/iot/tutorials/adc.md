@@ -103,4 +103,4 @@ The source for this tutorial is [available on GitHub](https://github.com/Microso
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn to use General Purpose Input/Output to blink an LED](../tutorials/blink-led.md).
+> [Learn to use General Purpose Input/Output to blink an LED](../tutorials/blink-led.md)

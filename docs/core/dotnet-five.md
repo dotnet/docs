@@ -21,7 +21,7 @@ ASP.NET Core 5.0 is based on .NET 5.0 but retains the name "Core" to avoid confu
 - [C# updates](#c-updates)
 - [F# updates](#f-updates)
 - [Visual Basic updates](#visual-basic-updates)
-- [System.Text.Json new features](#new-features-in-system.text.json)
+- [System.Text.Json new features](#system.text.json-new-features)
 - [Single file apps](deploying/single-file.md)
 - [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
 - Windows ARM64 and ARM64 intrinsics

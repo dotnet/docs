@@ -1,13 +1,13 @@
 ---
-title: Query event-based Observable sequences in .NET
-description: Learn how to query event-based Observable sequences using Reactive Extensions in .NET.
+title: Query event-based observable sequences in .NET
+description: Learn how to query event-based observable sequences using Reactive Extensions in .NET.
 author: IEvangelist
-ms.date: 11/03/2020
+ms.date: 11/06/2020
 ms.author: dapine
 ms.topic: how-to
 ---
 
-# Query event-based Observable sequences in .NET
+# Query event-based observable sequences in .NET
 
 Rx provides factory methods for you to bridge with existing asynchronous sources in .NET so that you can employ the rich composing, filtering and resource management features provided by Rx on any kind of data streams. This topic examines the FromEventPattern operator that allows "importing" a .NET event into Rx as an observable sequence. Every time an event is raised, an OnNext message will be delivered to the observable sequence. You can then manipulate event data just like any other observable sequences.
 
@@ -76,3 +76,9 @@ class Program
 Notice that in this sample, `move` becomes an observable sequence in which we can manipulate further. The [Querying Observable Sequences using LINQ Operators](hh242983\(v=vs.103\).md) topic will show you how you can project this sequence into a collection of Points type and filter its content, so that your application will only receive values that satisfy a certain criteria.
 
 Cleaning up of the event handler is taken care of by the IDisposable object returned by the Subscribe method. Calling Dispose (done by reaching the end of the using-block in this example) will release all resources being used by the sequence including the underlying event handler. This essentially takes care of unsubscribing to an event on your behalf.
+
+## See also
+
+- [Query observable sequences using LINQ operators](query-sequences-linq.md)
+- [Query asynchronous observable sequences](query-async-sources.md)
+- [Use schedulers with observables](use-schedulers.md)

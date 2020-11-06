@@ -10,7 +10,7 @@ IObservable<int> Read(byte[] bytes, int offset, int count) =>
 
 using IDisposable subscription =
     Read(new byte[1024], 0, 1024).Subscribe(
-        value => Console.WriteLine($"OnNext: {value}"),
+        value => Console.WriteLine($"OnNext: bytes read={value}"),
         ex => Console.WriteLine($"OnError: {ex.Message}"),
         () => Console.WriteLine("OnCompleted"));
 

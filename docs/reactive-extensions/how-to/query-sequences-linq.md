@@ -1,13 +1,13 @@
 ---
-title: Query Observable sequences using LINQ operators
-description: Learn how to query Observable sequences using various LINQ operators with Reactive Extensions in .NET.
+title: Query observable sequences using LINQ operators
+description: Learn how to query observable sequences using various LINQ operators with Reactive Extensions in .NET.
 author: IEvangelist
-ms.date: 11/03/2020
+ms.date: 11/06/2020
 ms.author: dapine
 ms.topic: how-to
 ---
 
-# Query Observable sequences using LINQ operators
+# Query observable sequences using LINQ operators
 
 In this topic, we will look at the first-class nature of observable sequences as <xref:System.IObservable%601> objects, in which generic LINQ operators are supplied by the Rx assemblies to manipulate these objects. Most operators take an observable sequence and perform some logic on it and output another observable sequence. In addition, as you can see from our code samples, you can even chain multiple operators on a source sequence to tweak the resulting sequence to your exact requirement.
 
@@ -169,12 +169,8 @@ Note that if you are using Buffer or Window, you have to make sure that the sequ
 
 The [LINQ Operators by Categories](hh242961(v=vs.103).md) topic lists of all major LINQ operators implemented by the [Observable](hh244252(v=vs.103).md) type by their categories; specifically: creation, conversion, combine, functional, mathematical, time, exceptions, miscellaneous, selection and primitives.
 
-## See Also
+## See also
 
-#### Reference
-
-[Observable](hh244252(v=vs.103).md)
-
-#### Concepts
-
-[LINQ Operators by Categories](hh242961(v=vs.103).md)
+- [Query event-based observable sequences in .NET](query-event-sequences.md)
+- [Query asynchronous observable sequences](query-async-sources.md)
+- [Use schedulers with observables](use-schedulers.md)

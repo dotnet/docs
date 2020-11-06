@@ -6,6 +6,7 @@ ms.author: casoper
 ms.date: 11/2/2020
 ms.topic: overview
 ms.prod: dotnet
+zone_pivot_groups: ide-set-one
 ---
 
 # Debug .NET apps on Raspberry Pi

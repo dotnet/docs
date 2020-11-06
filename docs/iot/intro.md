@@ -26,7 +26,7 @@ The .NET IoT Libraries are composed of two NuGet packages:
 
 ### System.Device.Gpio
 
-System.Device.Gpio supports a variety of protocols for interacting with low-level hardware pins to control devices. These include:
+`System.Device.Gpio` supports a variety of protocols for interacting with low-level hardware pins to control devices. These include:
 
 - General-purpose I/O (GPIO)
 - Inter-Integrated Circuit (I2C)
@@ -36,7 +36,7 @@ System.Device.Gpio supports a variety of protocols for interacting with low-leve
 
 ### Iot.Device.Bindings
 
-The Iot.Device.Bindings package:
+The `Iot.Device.Bindings` package:
 
 * Contains [device bindings](https://github.com/dotnet/iot/blob/master/src/devices/README.md) <span class="docon docon-navigate-external x-hidden-focus"></span> to streamline app development by wrapping System.Device.Gpio.
 * Is community-supported, and additional bindings are added continually.
@@ -51,14 +51,14 @@ Commonly used device bindings include:
 
 ## Supported operating systems
 
-System.Device.Gpio is supported on most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
+`System.Device.Gpio` is supported on most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.
 
 > [!TIP]
 > For Raspberry Pi, [Raspberry Pi OS >>](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)  <span class="docon docon-navigate-external x-hidden-focus"></span> (formerly Raspbian) is recommended.
 
 ## Supported hardware platforms
 
-System.Device.Gpio is compatible with most single-board platforms. Recommended platforms are Raspberry Pi (2 and greater) and Hummingboard. Other platforms known to be compatible are BeagleBoard and ODROID.
+`System.Device.Gpio` is compatible with most single-board platforms. Recommended platforms are Raspberry Pi (2 and greater) and Hummingboard. Other platforms known to be compatible are BeagleBoard and ODROID.
 
 PC platforms are supported via the use of a USB to SPI/I2C bridge.
 

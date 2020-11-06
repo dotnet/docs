@@ -3,7 +3,7 @@
 To use the `scp` command to copy files from the development computer to your Raspberry Pi, open a command prompt and execute the following:
 
 ```console
-scp /publish-location/* pi@raspberrypi:/home/pi/deployment-location/
+scp -r /publish-location/* pi@raspberrypi:/home/pi/deployment-location/
 ```
 
 Where:

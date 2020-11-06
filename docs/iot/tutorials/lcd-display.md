@@ -26,7 +26,7 @@ In this topic, you will use .NET to display text on an LCD character display usi
 - [.NET SDK](https://dotnet.microsoft.com/download) version 5.0.100 or later
 
 > [!NOTE]
-> There are many manufacturers for LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/lcd2004-module.html).
+> There are many manufacturers of LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/lcd2004-module.html).
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
 
@@ -47,8 +47,6 @@ Refer to the following figures as needed:
  |
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
-
-Once all the connections are made, power on the Raspberry Pi.
 
 ## Create the app
 
@@ -72,7 +70,7 @@ Complete the following steps on your development computer:
     using Iot.Device.Pcx857x;
 
     Console.WriteLine("Displaying current time. Press Ctrl+C to end.");
-
+    
     using I2cDevice i2c = I2cDevice.Create(new I2cConnectionSettings(1, 0x27));
     using Pcf8574 gpioExpander = new Pcf8574(i2c);
     using Lcd2004 lcd = new Lcd2004(registerSelectPin: 0,
@@ -96,10 +94,10 @@ Complete the following steps on your development computer:
 
     In the preceding code:
 
-    - A [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in a new `I2cConnectionSettings` with the `busId` and `deviceAddress` parameters. This `I2cDevice` represents the I2c bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in a new `I2cConnectionSettings` with the `busId` and `deviceAddress` parameters. This `I2cDevice` represents the I2C bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
 
         > [!WARNING]
-        > The most common device address for this type of 20x4 LCD devices is `0x27`. Consult your LCD display's documentation to verify.
+        > The device address for the GPIO expander depends on the chip used by the manufacturer. GPIO expanders equipped with a PCF8574 use the address `0x27`, while those using PCF8574A chips use `0x3F`. Consult your LCD's documentation.
 
     - Another `using` declaration creates an instance of `Pcf8574` and passes the `I2cDevice` into the constructor. This instance represents the GPIO expander.
     - Another `using` declaration creates an instance of `Lcd2004` to represent the display. Several parameters are passed to the constructor describing the settings to use to communicate with the GPIO expander. The GPIO expander is passed as the `controller` parameter.

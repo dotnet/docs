@@ -42,8 +42,6 @@ Refer to the following pinout diagram as needed:
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
 
-Once all the connections are made, power on the Raspberry Pi.
-
 ## Create the app
 
 Complete the following steps on your development computer:

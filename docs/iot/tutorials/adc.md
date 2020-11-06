@@ -35,8 +35,8 @@ Use the hardware components to build the circuit as depicted in the following di
 The MCP3008 uses Serial Peripheral Interface (SPI) to communicate. The following are the connections from the MCP3008:
 
 <!--markdownlint-disable MD033 -->
-- V<sub>DD</sub> to 3.3V power (shown in red)
-- V<sub>REF</sub> to 3.3V power (red)
+- V<sub>DD</sub> to 3.3V (shown in red)
+- V<sub>REF</sub> to 3.3V (red)
 - AGND to ground (black)
 - CLK to SCLK (orange)
 - D<sub>OUT</sub> to MISO (orange)
@@ -55,8 +55,6 @@ Refer to the following pinout diagrams as needed:
  |
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
-
-Once all the connections are made, power on the Raspberry Pi.
 
 ## Create the app
 

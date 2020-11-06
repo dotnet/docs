@@ -95,7 +95,7 @@ Complete the following steps in your preferred development environment:
     - A [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - Another `using` declaration creates an instance of `Mcp3008` and passes the `SpiDevice` into the constructor.
     - A `while` loop runs indefinitely. Each iteration:
-        1. Reads the value of CH0 on the MCP by calling `mcp.Read(0)`.
+        1. Reads the value of CH0 on the ADC by calling `mcp.Read(0)`.
         1. Divides the value by 10.24. The MCP3008 is a 10-bit ADC, which means it returns 1024 possible values ranging 0-1023. Dividing the value by 10.24 represents the value as a percentage.
         1. Rounds the value to the nearest integer.
         1. Writes the value to the console formatted as a percentage.
@@ -109,7 +109,7 @@ Complete the following steps in your preferred development environment:
     ./AdcTutorial
     ```
 
-    Observe the output as you rotate the potentiometer dial up and down.
+    Observe the output as you rotate the potentiometer dial. This is due to the potentiometer varying the voltage supplied to CH0 on the ADC. The ADC compares the input voltage on CH0 to the reference voltage supplied to V<sub>REF</sub> to generate a value.
 
 1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
 

@@ -36,7 +36,7 @@ Use the hardware components to build the circuit as depicted in the following di
 
 The following are the connections from the Raspberry Pi to the BME280 breakout:
 
-- 3.3V to VIN OR 3V3 (shown in red)
+- 3.3V to VIN *OR* 3V3 (shown in red)
 - Ground to GND (black)
 - SDA (GPIO 2) to SDI *OR* SDA (blue)
 - SCL (GPIO 3) to SCK *OR* SCL (orange)

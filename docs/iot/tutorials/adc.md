@@ -7,7 +7,7 @@ ms.date: 11/2/2020
 ms.topic: tutorial
 ms.prod: dotnet
 ---
-
+<!--markdownlint-disable DOCSMD011 -->
 # Read values from an analog-to-digital converter
 
 An analog-to-digital converter (ADC) is a device that can read an analog input voltage value and convert it into a digital value. ADCs are used for reading various sensors, potentiometers, and other devices that change resistance based on certain conditions.
@@ -16,13 +16,13 @@ In this topic, you will use .NET to read values from an ADC as you modulate the 
 
 ## Prerequisites
 
-- Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
-- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) analog-to-digital converter
+- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [MCP3008](https://www.microchip.com/wwwproducts/MCP3008) <span class="docon docon-navigate-external x-hidden-focus"></span> analog-to-digital converter
 - Three-pin potentiometer
 - Breadboard
 - Jumper wires
 - Raspberry Pi GPIO breakout board (optional/recommended)
-- [.NET SDK](https://dotnet.microsoft.com/download) version 5.0.100 or later
+- [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
 
 [!INCLUDE [prepare-pi-spi](../includes/prepare-pi-spi.md)]
 
@@ -34,7 +34,6 @@ Use the hardware components to build the circuit as depicted in the following di
 
 The MCP3008 uses Serial Peripheral Interface (SPI) to communicate. The following are the connections from the MCP3008 to the Raspberry Pi and potentiometer:
 
-<!--markdownlint-disable MD033 -->
 - V<sub>DD</sub> to 3.3V (shown in red)
 - V<sub>REF</sub> to 3.3V (red)
 - AGND to ground (black)
@@ -117,7 +116,7 @@ Congratulations! You've used SPI to read values from an analog-to-digital conver
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial).
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial). <span class="docon docon-navigate-external x-hidden-focus"></span>
 
 ## Next steps
 

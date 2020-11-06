@@ -10,7 +10,7 @@ ms.prod: dotnet
 
 # Quickstart - Use .NET to drive a Raspberry Pi Sense HAT
 
-The Raspberry Pi [Sense HAT](https://www.raspberrypi.org/products/sense-hat/) is an add-on board for Raspberry Pi. The Sense HAT is equipped with an 8×8 RGB LED matrix, a five-button joystick, and includes the following sensors:
+The Raspberry Pi [Sense HAT](https://www.raspberrypi.org/products/sense-hat/) <span class="docon docon-navigate-external x-hidden-focus"></span> is an add-on board for Raspberry Pi. The Sense HAT is equipped with an 8×8 RGB LED matrix, a five-button joystick, and includes the following sensors:
 
 - Gyroscope
 - Accelerometer
@@ -23,7 +23,7 @@ This quickstart uses .NET to retrieve sensor values from the Sense HAT, respond 
 
 ## Prerequisites
 
-- Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
 - Sense HAT
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
@@ -47,7 +47,7 @@ Observe the console output as sensor data is displayed. The LED matrix displays 
 
 ## Get the source code
 
-The source for this quickstart is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/quickstarts/SenseHat.Quickstart).
+The source for this quickstart is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/quickstarts/SenseHat.Quickstart). <span class="docon docon-navigate-external x-hidden-focus"></span>
 
 ## Next steps
 

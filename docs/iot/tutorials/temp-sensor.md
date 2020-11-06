@@ -16,12 +16,12 @@ In this topic, you will use .NET to read environmental conditions from a sensor.
 
 ## Prerequisites
 
-- Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
-- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) humidity/barometric pressure/temperature sensor breakout
+- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) <span class="docon docon-navigate-external x-hidden-focus"></span> humidity/barometric pressure/temperature sensor breakout
 - Jumper wires
 - Breadboard (optional)
 - Raspberry Pi GPIO breakout board (optional)
-- [.NET SDK](https://dotnet.microsoft.com/download) version 5.0.100 or later
+- [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
 
 > [!IMPORTANT]
 > There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This tutorial attempts to account for variations. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I2C) interface.
@@ -41,9 +41,7 @@ The following are the connections from the Raspberry Pi to the BME280 breakout:
 - SDA (GPIO 2) to SDI *OR* SDA (blue)
 - SCL (GPIO 3) to SCK *OR* SCL (orange)
 
-Refer to the following pinout diagram as needed:
-
-:::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/).
+[!INCLUDE [tutorial-rpi-gpio](../includes/tutorial-rpi-gpio.md)]
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
 
@@ -131,7 +129,7 @@ Congratulations! You've used I2C to read values from a temperature/humidity/baro
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial).
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
 
 ## Next steps
 

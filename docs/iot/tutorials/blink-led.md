@@ -14,13 +14,13 @@ General-purpose I/O (GPIO) pins can be controlled individually. This is useful f
 
 ## Prerequisites
 
-- Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
 - 5 mm LED
 - 330 Ω resistor
 - Breadboard
 - Jumper wires
 - Raspberry Pi GPIO breakout board (optional/recommended)
-- [.NET SDK](https://dotnet.microsoft.com/download) version 5.0.100 or later
+- [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
 
 [!INCLUDE [ensure-ssh](../includes/ensure-ssh.md)]
 
@@ -38,7 +38,7 @@ The image above depicts the following connections:
 
 Refer to the following pinout diagram as needed:
 
-:::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/).
+[!INCLUDE [tutorial-rpi-gpio](../includes/tutorial-rpi-gpio.md)]
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
 
@@ -99,7 +99,7 @@ Congratulations! You've used GPIO to blink an LED.
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/BlinkTutorial).
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/BlinkTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
 
 ## Next steps
 

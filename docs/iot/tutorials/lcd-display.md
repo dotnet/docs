@@ -7,7 +7,7 @@ ms.date: 11/2/2020
 ms.topic: overview
 ms.prod: dotnet
 ---
-
+<!--markdownlint-disable DOCSMD011 -->
 # Display text on an LCD
 
 LCD character displays are useful for displaying information without the need for an external monitor. Common LCD character displays can be connected directly to the GPIO pins, but such an approach requires the use of up to 10 GPIO pins. For scenarios that require connecting to a combination of devices, devoting so much of the GPIO header to a character display is often impractical.
@@ -18,15 +18,15 @@ In this topic, you will use .NET to display text on an LCD character display usi
 
 ## Prerequisites
 
-- Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
-- [20x4 LCD Character Display with I2C interface](https://www.bing.com/images/search?q=20x4+lcd+display+with+i2c)
+- [!INCLUDE [prereq-rpi](../includes/prereq-rpi.md)]
+- [20x4 LCD Character Display with I2C interface](https://www.bing.com/images/search?q=20x4+lcd+display+with+i2c) <span class="docon docon-navigate-external x-hidden-focus"></span>
 - Jumper wires
 - Breadboard (optional/recommended)
 - Raspberry Pi GPIO breakout board (optional/recommended)
-- [.NET SDK](https://dotnet.microsoft.com/download) version 5.0.100 or later
+- [!INCLUDE [tutorial-prereq-dotnet](../includes/tutorial-prereq-dotnet.md)]
 
 > [!NOTE]
-> There are many manufacturers of LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/lcd2004-module.html).
+> There are many manufacturers of LCD character displays. Most designs are identical, and the manufacturer shouldn't make any difference to the functionality. For reference, this tutorial was developed with the [SunFounder LCD2004](https://www.sunfounder.com/lcd2004-module.html) <span class="docon docon-navigate-external x-hidden-focus"></span>.
 
 [!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
 
@@ -43,7 +43,7 @@ Refer to the following figures as needed:
 
 | I2C interface (back of display) | Raspberry Pi GPIO |
 |---------------------------------|-------------------|
-| :::image type="content" source="../media/character-display-i2c-thumb.png" alt-text="An image of the back of the character display showing the I2C GPIO expander." lightbox="../media/character-display-i2c.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/).
+| :::image type="content" source="../media/character-display-i2c-thumb.png" alt-text="An image of the back of the character display showing the I2C GPIO expander." lightbox="../media/character-display-i2c.png"::: | :::image type="content" source="../media/gpio-pinout-diagram-thumb.png" alt-text="A diagram showing the pinout of the Raspberry Pi GPIO header. Image courtesy Raspberry Pi Foundation." lightbox="../media/gpio-pinout-diagram.png":::<br />[Image courtesy Raspberry Pi Foundation](https://www.raspberrypi.org/documentation/usage/gpio/) <span class="docon docon-navigate-external x-hidden-focus"></span>.
  |
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]
@@ -127,4 +127,4 @@ Congratulations! You've displayed text on an LCD using a I2C and a GPIO expander
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/LcdTutorial).
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/LcdTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.

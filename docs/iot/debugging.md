@@ -12,7 +12,6 @@ ms.prod: dotnet
 
 Debugging .NET apps running on ARM-based IoT devices like Raspberry Pi presents a unique challenge. It is possible to develop .NET apps on ARM devices. However, OmniSharp, which is required for debugging .NET apps outside of Visual Studio, is not compatible with ARM devices. As a result, apps must be debugged remotely from a compatible platform.
 
-
 ::: zone pivot="visualstudio"
 
 ## Debug from Visual Studio on Windows
@@ -127,4 +126,4 @@ On the **Run** tab, select the **.NET Core Launch (remote console)** configurati
 
 [Remote debugging with VS Code on Windows to a Raspberry Pi using .NET Core on ARM](https://www.hanselman.com/blog/remote-debugging-with-vs-code-on-windows-to-a-raspberry-pi-using-net-core-on-arm) (Hanselman.com)
 
-:: zone-end
+::: zone-end

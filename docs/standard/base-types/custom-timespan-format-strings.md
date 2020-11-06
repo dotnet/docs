@@ -9,9 +9,9 @@ dev_langs:
 helpviewer_keywords:
   - "format specifiers, custom time interval"
   - "format strings"
-  - "formatting [.NET Framework], time interval"
+  - "formatting [.NET], time interval"
   - "custom time interval format strings"
-  - "formatting [.NET Framework], time"
+  - "formatting [.NET], time"
   - "custom TimeSpan format strings"
 ms.assetid: a63ebf55-7269-416b-b4f5-286f6c03bf0e
 ---

@@ -1,49 +1,47 @@
 ---
 title: ".NET class library overview"
-description: Learn about the .NET class library. .NET implementations include classes, interfaces, delegates, and value types to provide access to system functionality.
+description: Learn about the .NET class library. .NET APIs include classes, interfaces, delegates, and value types to provide access to system functionality.
 ms.date: "02/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "classes [.NET Framework], library overview"
-  - "classes [.NET Core], library overview"
+  - "classes [.NET], library overview"
   - ".NET, library overview"
   - "class objects value type"
-  - "naming conventions [.NET Framework]"
-  - "types, .NET Framework"
+  - "naming conventions [.NET]"
+  - "types, .NET"
   - "user-defined types"
   - "Visual Basic, data types"
-  - "data types [.NET Framework], C++"
+  - "data types [.NET], C++"
   - "Visual C#, data types"
-  - "libraries, .NET Framework class library"
-  - "data types [.NET Framework], F#"
+  - "libraries, .NET"
+  - "data types [.NET], F#"
   - "System namespace"
   - "F#, data types"
-  - ".NET Framework, class library"
-  - "type system [.NET Framework]"
-  - "data types [.NET Framework]"
+  - ".NET, class library"
+  - "type system [.NET]"
+  - "data types [.NET]"
   - "value types"
-  - "data types [.NET Framework], Visual Basic"
+  - "data types [.NET], Visual Basic"
   - "Common Language Specification"
-  - "namespaces [.NET Framework]"
+  - "namespaces [.NET]"
   - "floating point value type"
-  - "class library [.NET Framework]"
+  - "class library [.NET]"
   - "CLS"
   - "logical value type"
-  - ".NET Framework class library, about"
   - "built-in types"
-  - "namespaces [.NET Framework], about namespaces"
+  - "namespaces [.NET], about namespaces"
   - "Visual C++, data types"
-  - "members [.NET Framework], type"
-  - "data types [.NET Framework], C#"
+  - "members [.NET], type"
+  - "data types [.NET], C#"
   - "integer value type"
   - "base types, class library"
 ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
 ---
 # .NET class library overview
 
-.NET implementations include classes, interfaces, delegates, and value types that expedite and optimize the development process and provide access to system functionality. To facilitate interoperability between languages, most .NET types are CLS-compliant and can therefore be used from any programming language whose compiler conforms to the common language specification (CLS).  
+.NET APIs include classes, interfaces, delegates, and value types that expedite and optimize the development process and provide access to system functionality. To facilitate interoperability between languages, most .NET types are CLS-compliant and can therefore be used from any programming language whose compiler conforms to the common language specification (CLS).  
   
- .NET types are the foundation on which .NET applications, components, and controls are built. .NET implementations include types that perform the following functions:  
+.NET types are the foundation on which .NET applications, components, and controls are built. .NET includes types that perform the following functions:  
   
 - Represent base data types and exceptions.  
   
@@ -53,29 +51,29 @@ ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
   
 - Access information about loaded types.  
   
-- Invoke .NET Framework security checks.  
+- Invoke .NET security checks.  
   
 - Provide data access, rich client-side GUI, and server-controlled, client-side GUI.  
   
- .NET provides a rich set of interfaces, as well as abstract and concrete (non-abstract) classes. You can use the concrete classes as is or, in many cases, derive your own classes from them. To use the functionality of an interface, you can either create a class that implements the interface or derive a class from one of the .NET classes that implements the interface.  
+.NET provides a rich set of interfaces, as well as abstract and concrete (non-abstract) classes. You can use the concrete classes as-is or, in many cases, derive your own classes from them. To use the functionality of an interface, you can either create a class that implements the interface or derive a class from one of the .NET classes that implements the interface.  
   
 ## Naming conventions
 
  .NET types use a dot syntax naming scheme that connotes a hierarchy. This technique groups related types into namespaces so they can be searched and referenced more easily. The first part of the full name — up to the rightmost dot — is the namespace name. The last part of the name is the type name. For example, `System.Collections.Generic.List<T>` represents the `List<T>` type, which belongs to the `System.Collections.Generic` namespace. The types in <xref:System.Collections.Generic> can be used to work with generic collections.  
   
- This naming scheme makes it easy for library developers extending the .NET Framework to create hierarchical groups of types and name them in a consistent, informative manner. It also allows types to be unambiguously identified by their full name (that is, by their namespace and type name), which prevents type name collisions. Library developers are expected to use the following convention when creating names for their namespaces:  
+ This naming scheme makes it easy for library developers extending .NET to create hierarchical groups of types and name them in a consistent, informative manner. It also allows types to be unambiguously identified by their full name (that is, by their namespace and type name), which prevents type name collisions. Library developers are expected to use the following convention when creating names for their namespaces:  
   
  *CompanyName*.*TechnologyName*  
   
  For example, the namespace `Microsoft.Word` conforms to this guideline.  
   
- The use of naming patterns to group related types into namespaces is a very useful way to build and document class libraries. However, this naming scheme has no effect on visibility, member access, inheritance, security, or binding. A namespace can be partitioned across multiple assemblies and a single assembly can contain types from multiple namespaces. The assembly provides the formal structure for versioning, deployment, security, loading, and visibility in the common language runtime.  
+ The use of naming patterns to group related types into namespaces is a useful way to build and document class libraries. However, this naming scheme has no effect on visibility, member access, inheritance, security, or binding. A namespace can be partitioned across multiple assemblies and a single assembly can contain types from multiple namespaces. The assembly provides the formal structure for versioning, deployment, security, loading, and visibility in the common language runtime.  
   
  For more information on namespaces and type names, see [Common Type System](base-types/common-type-system.md).  
   
 ## System namespace
 
- The <xref:System> namespace is the root namespace for fundamental types in .NET. This namespace includes classes that represent the base data types used by all applications: <xref:System.Object> (the root of the inheritance hierarchy), <xref:System.Byte>, <xref:System.Char>, <xref:System.Array>, <xref:System.Int32>, <xref:System.String>, and so on. Many of these types correspond to the primitive data types that your programming language uses. When you write code using .NET Framework types, you can use your language's corresponding keyword when a .NET Framework base data type is expected.  
+ The <xref:System> namespace is the root namespace for fundamental types in .NET. This namespace includes classes that represent the base data types used by all applications: <xref:System.Object> (the root of the inheritance hierarchy), <xref:System.Byte>, <xref:System.Char>, <xref:System.Array>, <xref:System.Int32>, <xref:System.String>, and so on. Many of these types correspond to the primitive data types that your programming language uses. When you write code using .NET types, you can use your language's corresponding keyword when a .NET base data type is expected.  
   
  The following table lists the base types that .NET supplies, briefly describes each type, and indicates the corresponding type in Visual Basic, C#, C++, and F#.  
   

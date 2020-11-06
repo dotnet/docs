@@ -1,6 +1,8 @@
 ---
 title: Connect .NET for Apache Spark to MongoDB
 description: Learn how to connect to your MongoDB instance from your .NET for Apache Spark application.
+ms.author: nidutta
+author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to

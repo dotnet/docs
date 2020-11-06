@@ -9,9 +9,9 @@ dev_langs:
 helpviewer_keywords: 
   - "DateTime.ToString method"
   - "displaying date and time data"
-  - "time [.NET Framework], milliseconds"
-  - "dates [.NET Framework], milliseconds"
-  - "milliseconds [.NET Framework]"
+  - "time [.NET], milliseconds"
+  - "dates [.NET], milliseconds"
+  - "milliseconds [.NET]"
 ms.assetid: ae1a0610-90b9-4877-8eb6-4e30bc5e00cf
 ---
 # How to: Display Milliseconds in Date and Time Values

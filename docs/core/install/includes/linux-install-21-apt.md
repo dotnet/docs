@@ -15,7 +15,7 @@ sudo apt-get update; \
 
 ### Install the runtime
 
-The .NET Core Runtime allows you to run apps that were made with .NET Core that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
+The .NET Core Runtime allows you to run apps that were made with .NET Core that didn't include the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
 
 ```bash
 sudo apt-get update; \
@@ -27,7 +27,7 @@ sudo apt-get update; \
 > [!IMPORTANT]
 > If you receive an error message similar to **Unable to locate package aspnetcore-runtime-2.1**, see the [APT troubleshooting](#apt-troubleshooting) section.
 
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Runtime that doesn't include ASP.NET Core support: replace `aspnetcore-runtime-2.1` in the command above with `dotnet-runtime-2.1`.
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Runtime that doesn't include ASP.NET Core support: replace `aspnetcore-runtime-2.1` in the previous command with `dotnet-runtime-2.1`.
 
 ```bash
 sudo apt-get install -y dotnet-runtime-2.1

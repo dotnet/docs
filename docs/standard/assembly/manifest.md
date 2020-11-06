@@ -7,10 +7,11 @@ helpviewer_keywords:
   - "dynamic assemblies, assembly manifest"
   - "metadata, assembly manifest"
   - "culture, assembly manifest"
-  - "assemblies [.NET Framework], metadata"
+  - "assemblies [.NET], metadata"
 ms.assetid: 8e40fab9-549d-4731-aec2-ffa47a382de0
 ---
 # Assembly manifest
+
 Every assembly, whether static or dynamic, contains a collection of data that describes how the elements in the assembly relate to each other. The assembly manifest contains this assembly metadata. An assembly manifest contains all the metadata needed to specify the assembly's version requirements and security identity, and all metadata needed to define the scope of the assembly and resolve references to resources and classes. The assembly manifest can be stored in either a PE file (an *.exe* or *.dll*) with Microsoft intermediate language (MSIL) code or in a standalone PE file that contains only assembly manifest information.  
   
  The following illustration shows the different ways the manifest can be stored.  

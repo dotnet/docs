@@ -104,6 +104,9 @@ By default, you'll get the latest code analysis rules and default rule severitie
 
 Starting .NET 5.0 RC2, you can enable code style analysis on build, both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
 
+> [!NOTE]
+> The code style analysis feature is experimental and may change between the .NET 5 and .NET 6 releases.
+
 Steps to enable code style analysis on build:
 
 1. Set the MSBuild property [EnforceCodeStyleInBuild](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) to `true`.
@@ -143,7 +146,7 @@ For more information about rule severities, see [Configure rule severity](config
 ## See also
 
 - [Code quality analysis rule reference](quality-rules/index.md)
-- [Code style analysis rule reference](/visualstudio/ide/editorconfig-code-style-settings-reference)
+- [Code style analysis rule reference](style-rules/index.md)
 - [Code analysis in Visual Studio](/visualstudio/code-quality/roslyn-analyzers-overview)
 - [.NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [Tutorial: Write your first analyzer and code fix](../../csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md)

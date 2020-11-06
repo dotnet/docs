@@ -11,12 +11,13 @@ helpviewer_keywords:
   - "Join method"
   - "Format method"
   - "Concat method"
-  - "strings [.NET Framework], creating"
+  - "strings [.NET], creating"
   - "Insert method"
 ms.assetid: 06fdf123-2fac-4459-8904-eb48ab908a30
 ---
 # Creating New Strings in .NET
-The .NET Framework allows strings to be created using simple assignment, and also overloads a class constructor to support string creation using a number of different parameters. The .NET Framework also provides several methods in the <xref:System.String?displayProperty=nameWithType> class that create new string objects by combining several strings, arrays of strings, or objects.  
+
+.NET allows strings to be created using simple assignment, and also overloads a class constructor to support string creation using a number of different parameters. .NET also provides several methods in the <xref:System.String?displayProperty=nameWithType> class that create new string objects by combining several strings, arrays of strings, or objects.  
   
 ## Creating Strings Using Assignment  
  The easiest way to create a new <xref:System.String> object is simply to assign a string literal to a <xref:System.String> object.  

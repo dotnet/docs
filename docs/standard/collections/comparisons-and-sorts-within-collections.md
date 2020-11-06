@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "IComparable.CompareTo method"
   - "Collections classes"
   - "Equals method"
-  - "collections [.NET Framework], comparisons"
+  - "collections [.NET], comparisons"
 ms.assetid: 5e4d3b45-97f0-423c-a65f-c492ed40e73b
 ---
 # Comparisons and sorts within collections

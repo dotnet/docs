@@ -127,7 +127,7 @@ The <xref:System.Collections.Generic.List%601> class requires you to import a di
 using System.Collections.Generic;
 ```
 
-Now, let's change how the `Balance` is reported.  It can be found by summing the values of all transactions. Modify the declaration of `Balance` in the `BankAccount` class to the following:
+Now, let's correctly compute the `Balance`. The current balance can be found by summing the values of all transactions. As the code is currently, you can only get the initial balance of the account, so you'll have to update the `Balance` property. Replace the line `public decimal Balance { get; }` in *BankAccount.cs* with the following code:
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="BalanceComputation":::
 

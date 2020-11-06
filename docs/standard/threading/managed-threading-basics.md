@@ -5,19 +5,19 @@ ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "multiple threads"
-  - "threading [.NET Framework], multiple threads"
-  - "threading [.NET Framework], about threading"
+  - "threading [.NET], multiple threads"
+  - "threading [.NET], about threading"
   - "managed threading"
 ms.assetid: b2944911-0e8f-427d-a8bb-077550618935
 ---
 # Managed threading basics
 
-The first five topics of this section are designed to help you determine when to use managed threading and to explain some basic features. For information on classes that provide additional features, see [Threading Objects and Features](threading-objects-and-features.md) and [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md).  
+The first five articles of this section are designed to help you determine when to use managed threading and to explain some basic features. For information on classes that provide additional features, see [Threading Objects and Features](threading-objects-and-features.md) and [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md).  
   
- The rest of the topics in this section cover advanced topics, including the interaction of managed threading with the Windows operating system.  
+ The remaining articles in this section cover advanced topics, including the interaction of managed threading with the Windows operating system.  
   
 > [!NOTE]
-> In the .NET Framework 4, the Task Parallel Library and PLINQ provide APIs for task and data parallelism in multi-threaded programs. For more information, see [Parallel Programming](../parallel-programming/index.md).  
+> Starting with .NET Framework 4, the Task Parallel Library and PLINQ provide APIs for task and data parallelism in multi-threaded programs. For more information, see [Parallel Programming](../parallel-programming/index.md).  
   
 ## In this section
 
@@ -25,7 +25,7 @@ The first five topics of this section are designed to help you determine when to
  Discusses the advantages and drawbacks of multiple threads, and outlines the scenarios in which you might create threads or use thread pool threads.  
   
  [Exceptions in Managed Threads](exceptions-in-managed-threads.md)  
- Describes the behavior of unhandled exceptions in threads for different versions of the .NET Framework, in particular the situations in which they result in termination of the application.  
+ Describes the behavior of unhandled exceptions in threads for different versions of .NET, in particular the situations in which they result in termination of the application.  
   
  [Synchronizing Data for Multithreading](synchronizing-data-for-multithreading.md)  
  Describes strategies for synchronizing data in classes that will be used with multiple threads.  
@@ -56,4 +56,4 @@ The first five topics of this section are designed to help you determine when to
  Describes common problems with multithreading and strategies for avoiding problems.  
   
  [Parallel Programming](../parallel-programming/index.md)  
- Describes the Task Parallel Library and PLINQ, which greatly simplify the work of creating asynchronous and multi-threaded .NET Framework applications.
+ Describes the Task Parallel Library and PLINQ, which greatly simplify the work of creating asynchronous and multi-threaded .NET applications.

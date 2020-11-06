@@ -2,6 +2,8 @@
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace local_functions
 {
@@ -121,5 +123,25 @@ namespace local_functions
             await Task.Delay(100);
             return 9;
         }
+
+        //<YieldReturn>
+        public IEnumerable<string> SequenceToLowercase(IEnumerable<string> input)
+        {
+            if (!input.Any())
+            {
+                throw new ArgumentException("There are no items to convert to lowercase.");
+            }
+            
+            return LowercaseIterator();
+            
+            IEnumerable<string> LowercaseIterator()
+            {
+                foreach (var output in input.Select(item => item.ToLower()))
+                {
+                    yield return output;
+                }
+            }
+        }
+        //</YieldReturn>
     }
 }

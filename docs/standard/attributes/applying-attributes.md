@@ -7,8 +7,8 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords:
-  - "assemblies [.NET Framework], attributes"
-  - "attributes [.NET Framework], applying"
+  - "assemblies [.NET], attributes"
+  - "attributes [.NET], applying"
 ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
 ---
 # Apply attributes

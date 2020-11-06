@@ -6,12 +6,12 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "time zones [.NET Framework], local"
+  - "time zones [.NET], local"
   - "predefined time zones"
   - "UTC times, predefined"
   - "local time zone access"
-  - "time zones [.NET Framework], retrieving"
-  - "time zones [.NET Framework], UTC"
+  - "time zones [.NET], retrieving"
+  - "time zones [.NET], UTC"
 ms.assetid: 961fb70b-83f0-4dab-a042-cb5fcd817cf5
 ---
 # How to: Access the predefined UTC and local time zone objects

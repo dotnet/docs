@@ -256,7 +256,7 @@ dotnet myapp.dll
 
   Specifies the location of the .NET Core runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on Linux and macOS is `/usr/share/dotnet`. This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
 
-- `DOTNET_PACKAGES`
+- `NUGET_PACKAGES`
 
   The global packages folder. If not set, it defaults to `~/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
 

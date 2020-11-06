@@ -6,11 +6,11 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "globalization [.NET Framework], about globalization"
+  - "globalization [.NET], about globalization"
   - "global applications, globalization"
-  - "international applications [.NET Framework], globalization"
+  - "international applications [.NET], globalization"
   - "world-ready applications, globalization"
-  - "application development [.NET Framework], globalization"
+  - "application development [.NET], globalization"
   - "culture, globalization"
 ms.assetid: 4e919934-6b19-42f2-b770-275a4fae87c9
 ---
@@ -96,7 +96,7 @@ Typically, ordered strings that are to be displayed in the user interface should
 
 Culture-sensitive string comparison is defined by the <xref:System.Globalization.CompareInfo> object, which is returned by each culture's <xref:System.Globalization.CultureInfo.CompareInfo%2A?displayProperty=nameWithType> property. Culture-sensitive string comparisons that use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method overloads also use the <xref:System.Globalization.CompareInfo> object.
 
-.NET uses tables to perform culture-sensitive sorts on string data. The content of these tables, which contain data on sort weights and string normalization, is determined by the version of the Unicode standard implemented by a particular version of .NET. The following table lists the versions of Unicode implemented by the specified versions of the .NET Framework and by .NET Core. Note that this list of supported Unicode versions applies to character comparison and sorting only; it does not apply to classification of Unicode characters by category. For more information, see the "Strings and The Unicode Standard" section in the <xref:System.String> article.
+.NET uses tables to perform culture-sensitive sorts on string data. The content of these tables, which contain data on sort weights and string normalization, is determined by the version of the Unicode standard implemented by a particular version of .NET. The following table lists the versions of Unicode implemented by the specified versions of .NET. This list of supported Unicode versions applies to character comparison and sorting only; it does not apply to classification of Unicode characters by category. For more information, see the "Strings and The Unicode Standard" section in the <xref:System.String> article.
 
 |.NET Framework version|Operating system|Unicode version|
 |----------------------------|----------------------|---------------------|
@@ -106,9 +106,9 @@ Culture-sensitive string comparison is defined by the <xref:System.Globalization
 |.NET Framework 4|All operating systems|Unicode 5.0|
 |.NET Framework 4.5 and later on Windows 7|Unicode 5.0|
 |.NET Framework 4.5 and later on Windows 8 and later operating systems|Unicode 6.3.0|
-|.NET Core (all versions)|Depends on the version of the Unicode Standard supported by the underlying operating system.|
+|.NET Core and .NET 5+|Depends on the version of the Unicode Standard supported by the underlying operating system.|
 
-Starting with .NET Framework 4.5 and in all versions of .NET Core, string comparison and sorting depends on the operating system. The .NET Framework 4.5 and later running on Windows 7 retrieves data from its own tables that implement Unicode 5.0. The .NET Framework 4.5 and later running on Windows 8 and later retrieves data from operating system tables that implement Unicode 6.3. On .NET Core, the supported version of Unicode depends on the underlying operating system. If you serialize culture-sensitive sorted data, you can use the <xref:System.Globalization.SortVersion> class to determine when your serialized data needs to be sorted so that it is consistent with .NET and the operating system's sort order. For an example, see the <xref:System.Globalization.SortVersion> class topic.
+Starting with .NET Framework 4.5 and in all versions of .NET Core and .NET 5+, string comparison and sorting depends on the operating system. .NET Framework 4.5 and later running on Windows 7 retrieves data from its own tables that implement Unicode 5.0. .NET Framework 4.5 and later running on Windows 8 and later retrieves data from operating system tables that implement Unicode 6.3. On .NET Core and .NET 5+, the supported version of Unicode depends on the underlying operating system. If you serialize culture-sensitive sorted data, you can use the <xref:System.Globalization.SortVersion> class to determine when your serialized data needs to be sorted so that it is consistent with .NET and the operating system's sort order. For an example, see the <xref:System.Globalization.SortVersion> class topic.
 
 If your app performs extensive culture-specific sorts of string data, you can work with the <xref:System.Globalization.SortKey> class to compare strings. A sort key reflects the culture-specific sort weights, including the alphabetic, case, and diacritic weights of a particular string. Because comparisons using sort keys are binary, they are faster than comparisons that use a <xref:System.Globalization.CompareInfo> object either implicitly or explicitly. You create a culture-specific sort key for a particular string by passing the string to the <xref:System.Globalization.CompareInfo.GetSortKey%2A?displayProperty=nameWithType> method.
 

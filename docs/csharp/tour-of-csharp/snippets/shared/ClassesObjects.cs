@@ -24,9 +24,9 @@ namespace TourOfCsharp
         public static readonly Color Green = new Color(0, 255, 0);
         public static readonly Color Blue = new Color(0, 0, 255);
         
-        public byte R { get; }
-        public byte G { get; }
-        public byte B { get; }
+        public byte R;
+        public byte G;
+        public byte B;
 
         public Color(byte r, byte g, byte b)
         {

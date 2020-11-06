@@ -6,7 +6,7 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "last-in-first-out collections"
   - "first-in-first-out collections"
-  - "collections [.NET Framework], selecting collection class"
+  - "collections [.NET], selecting collection class"
   - "indexed collections"
   - "Collections classes"
   - "grouping data in collections, selecting collection class"

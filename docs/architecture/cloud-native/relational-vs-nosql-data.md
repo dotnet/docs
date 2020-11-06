@@ -60,7 +60,7 @@ This kind of result is known as eventual consistency, a characteristic of distri
 
 High availability and massive scalability are often more critical to the business than strong consistency. Developers can implement techniques and patterns such as Sagas, CQRS, and asynchronous messaging to embrace eventual consistency.
 
-> Nowadays, care must be taken when conidering the CAP theorem constraints. A new type of database, called NewSQL, has emerged which extends the relational database engine to support both horizontal scalability and the scalable performance of NoSQL systems.
+> Nowadays, care must be taken when considering the CAP theorem constraints. A new type of database, called NewSQL, has emerged which extends the relational database engine to support both horizontal scalability and the scalable performance of NoSQL systems.
 
 ## Considerations for relational vs. NoSQL systems
 

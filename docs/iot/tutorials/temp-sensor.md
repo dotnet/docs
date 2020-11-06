@@ -103,10 +103,10 @@ Complete the following steps on your development computer:
 
     - A [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in `i2cSettings`. This `I2cDevice` represents the I2C bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - Another `using` declaration creates an instance of `Bme280` to represent the sensor. The `I2cDevice` is passed in the constructor.
-    - The time required for the chip to take measurements with the chip's current (default) settings is retrieved by calling `bme280.GetMeasurementDuration`.
+    - The time required for the chip to take measurements with the chip's current (default) settings is retrieved by calling `GetMeasurementDuration`.
     - A `while` loop runs indefinitely. Each iteration:
-        1. Clears the display.
-        1. Sets the power mode to `Bmx280PowerMode.Forced`. This forces the chip to perform one measurement, store the results, and go to sleep.
+        1. Clears the console.
+        1. Sets the power mode to `Bmx280PowerMode.Forced`. This forces the chip to perform one measurement, store the results, and then sleep.
         1. Reads the values for temperature, pressure, humidity, and altitude.
 
             > [!NOTE]
@@ -123,7 +123,7 @@ Complete the following steps on your development computer:
     ./SensorTutorial
     ```
 
-    Observe the output as you rotate the potentiometer dial up and down.
+    Observe the sensor output in the console.
 
 1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
 

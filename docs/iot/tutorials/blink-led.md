@@ -100,3 +100,8 @@ Congratulations! You've used GPIO to blink an LED.
 ## Get the source code
 
 The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/BlinkTutorial).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn how to read environmental conditions from a sensor](../tutorials/temp-sensor.md).

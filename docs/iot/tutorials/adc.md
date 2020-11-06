@@ -118,3 +118,8 @@ Congratulations! You've used SPI to read values from an analog-to-digital conver
 ## Get the source code
 
 The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn to use General Purpose Input/Output to blink an LED](../tutorials/blink-led.md).

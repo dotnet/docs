@@ -43,7 +43,7 @@ The command downloads and runs a script. The script:
 - Builds the project.
 - Runs the project.
 
-Observe the console output. Notice the LED matrix displays a yellow pixel on a field of blue. Holding the joystick moves the yellow dot.
+Observe the console output. The LED matrix displays a yellow pixel on a field of blue. Holding the joystick moves the yellow dot.
 
 ## Get the source code
 

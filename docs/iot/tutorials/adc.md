@@ -68,25 +68,7 @@ Complete the following steps in your preferred development environment:
 1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-packages.md)]
 1. Replace the contents of *Program.cs* with the following code:
 
-    ```csharp
-    using System;
-    using System.Device.Spi;
-    using System.Threading;
-    using Iot.Device.Adc;
-
-    var hardwareSpiSettings = new SpiConnectionSettings(0, 0);
-
-    using SpiDevice spi = SpiDevice.Create(hardwareSpiSettings);
-    using Mcp3008 mcp = new Mcp3008(spi);
-    while (true)
-    {
-        double value = mcp.Read(0);
-        value = value / 10.24;
-        value = Math.Round(value);
-        Console.WriteLine($"{value}%");
-        Thread.Sleep(500);
-    }
-    ```
+    :::code language="csharp" source="~/iot-samples/tutorials/AdcTutorial/Program.cs" :::
 
     In the preceding code:
 

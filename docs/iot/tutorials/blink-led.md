@@ -55,24 +55,7 @@ Complete the following steps in your preferred development environment:
 1. [!INCLUDE [tutorial-add-packages](../includes/tutorial-add-packages.md)]
 1. Replace the contents of *Program.cs* with the following code:
 
-    ```csharp
-    using System;
-    using System.Device.Gpio;
-    using System.Threading;
-
-    int pin = 18;
-    bool ledOn = true;
-    Console.WriteLine("Blinking LED. Press Ctrl+C to end.");
-
-    using GpioController controller = new GpioController();
-    controller.OpenPin(pin, PinMode.Output);
-    while (true)
-    {
-        controller.Write(pin, ((ledOn) ? PinValue.High : PinValue.Low));
-        Thread.Sleep(1000);
-        ledOn = !ledOn;
-    }
-    ```
+    :::code language="csharp" source="~/iot-samples/tutorials/BlinkTutorial/Program.cs" :::
 
     In the preceding code:
 

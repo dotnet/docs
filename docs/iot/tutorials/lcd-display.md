@@ -124,3 +124,7 @@ Complete the following steps on your development computer:
 1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
 
 Congratulations! You've displayed text on an LCD using a I2C and a GPIO expander!
+
+## Get the source code
+
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/LcdTutorial).

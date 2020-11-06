@@ -10,12 +10,45 @@ ms.prod: dotnet
 
 # Quickstart - Use .NET to drive a Raspberry Pi Sense HAT
 
-The Raspberry Pi [Sense HAT](https://www.raspberrypi.org/products/sense-hat/) is ideally suited for a quickstart scenario due to its plug-and-play nature. This quickstart will provide a 1-line script to run on the Pi. The script will:
+The Raspberry Pi [Sense HAT](https://www.raspberrypi.org/products/sense-hat/) is an add-on board for Raspberry Pi. The Sense HAT is equipped with an 8×8 RGB LED matrix, a five-button joystick, and includes the following sensors:
 
-1. Install the .NET SDK
-1. Clone the dotnet/iot repo
-1. Build and run this [sample](https://github.com/dotnet/iot/tree/master/src/devices/SenseHat/samples)
+- Gyroscope
+- Accelerometer
+- Magnetometer
+- Temperature
+- Barometric pressure
+- Humidity
+
+This quickstart uses .NET to retrieve sensor values from the Sense HAT, respond to joystick input, and drive the LED matrix.
+
+## Prerequisites
+
+- Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+- Sense HAT
+
+[!INCLUDE [prepare-pi-i2c](../includes/prepare-pi-i2c.md)]
+
+## Run the quickstart
+
+Attach the Sense HAT to your Raspberry Pi and power it on. From a Bash prompt on the Raspberry Pi (local or remote), run the following command:
 
 ```bash
 . <(wget -q -O - https://aka.ms/dotnet-iot-sensehat-quickstart)
 ```
+
+The command downloads and runs a script. The script:
+
+- Installs the .NET SDK.
+- Clones a GitHub repository that includes the Sense HAT quickstart project.
+- Builds the project.
+- Runs the project.
+
+Observe the console output. Notice the LED matrix displays a yellow pixel on a field of blue. Holding the joystick moves the yellow dot.
+
+## Get the source code
+
+The source for this quickstart is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/quickstarts/SenseHat.Quickstart).
+
+## Next steps
+
+[Learn to use General Purpose Input/Output to blink and LED](../tutorials/blink-led.md).

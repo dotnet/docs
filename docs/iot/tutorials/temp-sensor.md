@@ -128,3 +128,7 @@ Complete the following steps on your development computer:
 1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
 
 Congratulations! You've used I2C to read values from a temperature/humidity/barometric pressure sensor!
+
+## Get the source code
+
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/SensorTutorial).

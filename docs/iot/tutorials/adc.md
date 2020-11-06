@@ -114,3 +114,7 @@ Complete the following steps on your development computer:
 1. Terminate the program by pressing <kbd>Ctrl+C</kbd>.
 
 Congratulations! You've used SPI to read values from an analog-to-digital converter.
+
+## Get the source code
+
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial).

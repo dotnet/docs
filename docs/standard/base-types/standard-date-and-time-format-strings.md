@@ -1,7 +1,7 @@
 ---
 title: "Standard date and time format strings"
-description: In this article, learn to use a standard date and time format string to define the text representation of a date and time value in .NET.
-ms.date: "03/30/2017"
+description: Learn how to use a standard date and time format string to define the text representation of a date and time value in .NET.
+ms.date: 11/05/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
@@ -14,45 +14,45 @@ helpviewer_keywords:
   - "custom date and time format strings"
   - "formatting [.NET], time"
   - "date and time strings"
-ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
+ms.custom: contperfq2
 ---
 # Standard date and time format strings
 
-A standard date and time format string uses a single format specifier to define the text representation of a date and time value. Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string; for more information, see [Custom date and time format strings](custom-date-and-time-format-strings.md). A standard or custom format string can be used in two ways:
+A standard date and time format string uses a single character as the format specifier to define the text representation of a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value. Any date and time format string that contains more than one character, including white space, is interpreted as a [custom date and time format string](custom-date-and-time-format-strings.md). A standard or custom format string can be used in two ways:
 
 - To define the string that results from a formatting operation.
 
 - To define the text representation of a date and time value that can be converted to a <xref:System.DateTime> or <xref:System.DateTimeOffset> value by a parsing operation.
 
 > [!TIP]
-> You can download the **Formatting Utility**, a .NET Core Windows Forms application that lets you apply format strings to either numeric or date and time values and displays the result string. Source code is available for [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) and [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb).
-
-Standard date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
+> You can download the **Formatting Utility**, a .NET Windows Forms application that lets you apply format strings to either numeric or date and time values and display the result string. Source code is available for [C#](/samples/dotnet/samples/windowsforms-formatting-utility-cs) and [Visual Basic](/samples/dotnet/samples/windowsforms-formatting-utility-vb).
 
 [!INCLUDE[C# interactive-note](~/includes/csharp-interactive-with-utc-partial-note.md)]
 
-<a name="table"></a> The following table describes the standard date and time format specifiers. Unless otherwise noted, a particular standard date and time format specifier produces an identical string representation regardless of whether it is used with a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value. See the [Notes](#Notes) section for additional information about using standard date and time format strings.
+## Table of format specifiers
+
+<a name="table"></a> The following table describes the standard date and time format specifiers. Unless otherwise noted, a particular standard date and time format specifier produces an identical string representation regardless of whether it is used with a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value. See [Control Panel Settings](#control-panel-settings) and [DateTimeFormatInfo Properties](#datetimeformatinfo-properties) for additional information about using standard date and time format strings.
 
 |Format specifier|Description|Examples|
 |----------------------|-----------------|--------------|
-|"d"|Short date pattern.<br /><br /> More information:[The Short Date ("d") Format Specifier](#ShortDate).|2009-06-15T13:45:30 -> 6/15/2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 (fr-FR)<br /><br /> 2009-06-15T13:45:30 -> 2009/06/15 (ja-JP)|
-|"D"|Long date pattern.<br /><br /> More information:[The Long Date ("D") Format Specifier](#LongDate).|2009-06-15T13:45:30 -> Monday, June 15, 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15 июня 2009 г. (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> Montag, 15. Juni 2009 (de-DE)|
-|"f"|Full date/time pattern (short time).<br /><br /> More information: [The Full Date Short Time ("f") Format Specifier](#FullDateShortTime).|2009-06-15T13:45:30 -> Monday, June 15, 2009 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 13:45 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 1:45 μμ (el-GR)|
-|"F"|Full date/time pattern (long time).<br /><br /> More information: [The Full Date Long Time ("F") Format Specifier](#FullDateLongTime).|2009-06-15T13:45:30 -> Monday, June 15, 2009 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 13:45:30 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 1:45:30 μμ (el-GR)|
-|"g"|General date/time pattern (short time).<br /><br /> More information: [The General Date Short Time ("g") Format Specifier](#GeneralDateShortTime).|2009-06-15T13:45:30 -> 6/15/2009 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 13:45 (es-ES)<br /><br /> 2009-06-15T13:45:30 -> 2009/6/15 13:45 (zh-CN)|
-|"G"|General date/time pattern (long time).<br /><br /> More information: [The General Date Long Time ("G") Format Specifier](#GeneralDateLongTime).|2009-06-15T13:45:30 -> 6/15/2009 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 13:45:30 (es-ES)<br /><br /> 2009-06-15T13:45:30 -> 2009/6/15 13:45:30 (zh-CN)|
-|"M", "m"|Month/day pattern.<br /><br /> More information: [The Month ("M", "m") Format Specifier](#MonthDay).|2009-06-15T13:45:30 -> June 15 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15. juni (da-DK)<br /><br /> 2009-06-15T13:45:30 -> 15 Juni (id-ID)|
-|"O", "o"|Round-trip date/time pattern.<br /><br /> More information: [The Round-trip ("O", "o") Format Specifier](#Roundtrip).|<xref:System.DateTime> values:<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Local) --> 2009-06-15T13:45:30.0000000-07:00<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) --> 2009-06-15T13:45:30.0000000Z<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Unspecified) --> 2009-06-15T13:45:30.0000000<br /><br /> <xref:System.DateTimeOffset> values:<br /><br /> 2009-06-15T13:45:30-07:00 --> 2009-06-15T13:45:30.0000000-07:00|
-|"R", "r"|RFC1123 pattern.<br /><br /> More information: [The RFC1123 ("R", "r") Format Specifier](#RFC1123).|2009-06-15T13:45:30 -> Mon, 15 Jun 2009 20:45:30 GMT|
-|"s"|Sortable date/time pattern.<br /><br /> More information: [The Sortable ("s") Format Specifier](#Sortable).|2009-06-15T13:45:30 (DateTimeKind.Local) -> 2009-06-15T13:45:30<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) -> 2009-06-15T13:45:30|
-|"t"|Short time pattern.<br /><br /> More information: [The Short Time ("t") Format Specifier](#ShortTime).|2009-06-15T13:45:30 -> 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45 م (ar-EG)|
-|"T"|Long time pattern.<br /><br /> More information: [The Long Time ("T") Format Specifier](#LongTime).|2009-06-15T13:45:30 -> 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45:30 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45:30 م (ar-EG)|
-|"u"|Universal sortable date/time pattern.<br /><br /> More information: [The Universal Sortable ("u") Format Specifier](#UniversalSortable).|With a <xref:System.DateTime> value: 2009-06-15T13:45:30 -> 2009-06-15 13:45:30Z<br /><br /> With a <xref:System.DateTimeOffset> value: 2009-06-15T13:45:30 -> 2009-06-15 20:45:30Z|
-|"U"|Universal full date/time pattern.<br /><br /> More information: [The Universal Full ("U") Format Specifier](#UniversalFull).|2009-06-15T13:45:30 -> Monday, June 15, 2009 8:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 20:45:30 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 8:45:30 μμ (el-GR)|
-|"Y", "y"|Year month pattern.<br /><br /> More information: [The Year Month ("Y") Format Specifier](#YearMonth).|2009-06-15T13:45:30 -> June 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni 2009 (da-DK)<br /><br /> 2009-06-15T13:45:30 -> Juni 2009 (id-ID)|
+|"d"|Short date pattern.<br /><br /> More information:[The short date ("d") format specifier](#ShortDate).|2009-06-15T13:45:30 -> 6/15/2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 (fr-FR)<br /><br /> 2009-06-15T13:45:30 -> 2009/06/15 (ja-JP)|
+|"D"|Long date pattern.<br /><br /> More information:[The long date ("D") format specifier](#LongDate).|2009-06-15T13:45:30 -> Monday, June 15, 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15 июня 2009 г. (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> Montag, 15. Juni 2009 (de-DE)|
+|"f"|Full date/time pattern (short time).<br /><br /> More information: [The full date short time ("f") format specifier](#FullDateShortTime).|2009-06-15T13:45:30 -> Monday, June 15, 2009 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 13:45 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 1:45 μμ (el-GR)|
+|"F"|Full date/time pattern (long time).<br /><br /> More information: [The full date long time ("F") format specifier](#FullDateLongTime).|2009-06-15T13:45:30 -> Monday, June 15, 2009 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 13:45:30 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 1:45:30 μμ (el-GR)|
+|"g"|General date/time pattern (short time).<br /><br /> More information: [The general date short time ("g") format specifier](#GeneralDateShortTime).|2009-06-15T13:45:30 -> 6/15/2009 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 13:45 (es-ES)<br /><br /> 2009-06-15T13:45:30 -> 2009/6/15 13:45 (zh-CN)|
+|"G"|General date/time pattern (long time).<br /><br /> More information: [The general date long time ("G") format specifier](#GeneralDateLongTime).|2009-06-15T13:45:30 -> 6/15/2009 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15/06/2009 13:45:30 (es-ES)<br /><br /> 2009-06-15T13:45:30 -> 2009/6/15 13:45:30 (zh-CN)|
+|"M", "m"|Month/day pattern.<br /><br /> More information: [The month ("M", "m") format specifier](#MonthDay).|2009-06-15T13:45:30 -> June 15 (en-US)<br /><br /> 2009-06-15T13:45:30 -> 15. juni (da-DK)<br /><br /> 2009-06-15T13:45:30 -> 15 Juni (id-ID)|
+|"O", "o"|round-trip date/time pattern.<br /><br /> More information: [The round-trip ("O", "o") format specifier](#Roundtrip).|<xref:System.DateTime> values:<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Local) --> 2009-06-15T13:45:30.0000000-07:00<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) --> 2009-06-15T13:45:30.0000000Z<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Unspecified) --> 2009-06-15T13:45:30.0000000<br /><br /> <xref:System.DateTimeOffset> values:<br /><br /> 2009-06-15T13:45:30-07:00 --> 2009-06-15T13:45:30.0000000-07:00|
+|"R", "r"|RFC1123 pattern.<br /><br /> More information: [The RFC1123 ("R", "r") format specifier](#RFC1123).|2009-06-15T13:45:30 -> Mon, 15 Jun 2009 20:45:30 GMT|
+|"s"|Sortable date/time pattern.<br /><br /> More information: [The sortable ("s") format specifier](#Sortable).|2009-06-15T13:45:30 (DateTimeKind.Local) -> 2009-06-15T13:45:30<br /><br /> 2009-06-15T13:45:30 (DateTimeKind.Utc) -> 2009-06-15T13:45:30|
+|"t"|Short time pattern.<br /><br /> More information: [The short time ("t") format specifier](#ShortTime).|2009-06-15T13:45:30 -> 1:45 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45 م (ar-EG)|
+|"T"|Long time pattern.<br /><br /> More information: [The long time ("T") format specifier](#LongTime).|2009-06-15T13:45:30 -> 1:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 13:45:30 (hr-HR)<br /><br /> 2009-06-15T13:45:30 -> 01:45:30 م (ar-EG)|
+|"u"|Universal sortable date/time pattern.<br /><br /> More information: [The universal sortable ("u") format specifier](#UniversalSortable).|With a <xref:System.DateTime> value: 2009-06-15T13:45:30 -> 2009-06-15 13:45:30Z<br /><br /> With a <xref:System.DateTimeOffset> value: 2009-06-15T13:45:30 -> 2009-06-15 20:45:30Z|
+|"U"|Universal full date/time pattern.<br /><br /> More information: [The universal full ("U") format specifier](#UniversalFull).|2009-06-15T13:45:30 -> Monday, June 15, 2009 8:45:30 PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> den 15 juni 2009 20:45:30 (sv-SE)<br /><br /> 2009-06-15T13:45:30 -> Δευτέρα, 15 Ιουνίου 2009 8:45:30 μμ (el-GR)|
+|"Y", "y"|Year month pattern.<br /><br /> More information: [The year month ("Y") format specifier](#YearMonth).|2009-06-15T13:45:30 -> June 2009 (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni 2009 (da-DK)<br /><br /> 2009-06-15T13:45:30 -> Juni 2009 (id-ID)|
 |Any other single character|Unknown specifier.|Throws a run-time <xref:System.FormatException>.|
 
-## How Standard Format Strings Work
+## How standard format strings work
 
 In a formatting operation, a standard format string is simply an alias for a custom format string. The advantage of using an alias to refer to a custom format string is that, although the alias remains invariant, the custom format string itself can vary. This is important because the string representations of date and time values typically vary by culture. For example, the "d" standard format string indicates that a date and time value is to be displayed using a short date pattern. For the invariant culture, this pattern is "MM/dd/yyyy". For the fr-FR culture, it is "dd/MM/yyyy". For the ja-JP culture, it is "yyyy/MM/dd".
 
@@ -92,9 +92,16 @@ Standard format strings can also be used in parsing operations with the <xref:Sy
 
 The following sections describe the standard format specifiers for <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
 
+## Date formats
+
+This group includes the following formats:
+
+- [The short date ("d") format specifier](#the-short-date-d-format-specifier)
+- [The long date ("D") format specifier](#the-long-date-d-format-specifier)
+
 <a name="ShortDate"></a>
 
-## The Short Date ("d") Format Specifier
+### The short date ("d") format specifier
 
 The "d" standard format specifier represents a custom date and time format string that is defined by a specific culture's <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A?displayProperty=nameWithType> property. For example, the custom format string that is returned by the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A> property of the invariant culture is "MM/dd/yyyy".
 
@@ -114,7 +121,7 @@ The following example uses the "d" format specifier to display a date and time v
 
 <a name="LongDate"></a>
 
-## The Long Date ("D") Format Specifier
+### The long date ("D") format specifier
 
 The "D" standard format specifier represents a custom date and time format string that is defined by the current <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "dddd, dd MMMM yyyy".
 
@@ -133,9 +140,23 @@ The following example uses the "D" format specifier to display a date and time v
 
 [Back to table](#table)
 
+## Date and time formats
+
+This group includes the following formats:
+
+- [The full date short time ("f") format specifier](#the-full-date-short-time-f-format-specifier)
+- [The full date long time ("F") format specifier](#the-full-date-long-time-f-format-specifier)
+- [The general date short time ("g") format specifier](#the-general-date-short-time-g-format-specifier)
+- [The general date long time ("G") format specifier](#the-general-date-long-time-g-format-specifier)
+- [The round-trip ("O", "o") format specifier](#the-round-trip-o-o-format-specifier)
+- [The RFC1123 ("R", "r") format specifier](#the-rfc1123-r-r-format-specifier)
+- [The sortable ("s") format specifier](#the-sortable-s-format-specifier)
+- [The universal sortable ("u") format specifier](#the-universal-sortable-u-format-specifier)
+- [The universal full ("U") format specifier](#the-universal-full-u-format-specifier)
+
 <a name="FullDateShortTime"></a>
 
-## The Full Date Short Time ("f") Format Specifier
+### The full date short time ("f") format specifier
 
 The "f" standard format specifier represents a combination of the long date ("D") and short time ("t") patterns, separated by a space.
 
@@ -160,7 +181,7 @@ The following example uses the "f" format specifier to display a date and time v
 
 <a name="FullDateLongTime"></a>
 
-## The Full Date Long Time ("F") Format Specifier
+### The full date long time ("F") format specifier
 
 The "F" standard format specifier represents a custom date and time format string that is defined by the current <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "dddd, dd MMMM yyyy HH:mm:ss".
 
@@ -184,7 +205,7 @@ The following example uses the "F" format specifier to display a date and time v
 
 <a name="GeneralDateShortTime"></a>
 
-## The General Date Short Time ("g") Format Specifier
+### The general date short time ("g") format specifier
 
 The "g" standard format specifier represents a combination of the short date ("d") and short time ("t") patterns, separated by a space.
 
@@ -208,7 +229,7 @@ The following example uses the "g" format specifier to display a date and time v
 
 <a name="GeneralDateLongTime"></a>
 
-## The General Date Long Time ("G") Format Specifier
+### The general date long time ("G") format specifier
 
 The "G" standard format specifier represents a combination of the short date ("d") and long time ("T") patterns, separated by a space.
 
@@ -230,29 +251,9 @@ The following example uses the "G" format specifier to display a date and time v
 
 [Back to table](#table)
 
-<a name="MonthDay"></a>
-
-## The Month ("M", "m") Format Specifier
-
-The "M" or "m" standard format specifier represents a custom date and time format string that is defined by the current <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "MMMM dd".
-
-The following table lists the <xref:System.Globalization.DateTimeFormatInfo> object properties that control the formatting of the returned string.
-
-|Property|Description|
-|--------------|-----------------|
-|<xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A>|Defines the overall format of the result string.|
-|<xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A>|Defines the localized month names that can appear in the result string.|
-
-The following example uses the "m" format specifier to display a date and time value.
-
-[!code-csharp[Formatting.DateAndTime.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#7)]
-[!code-vb[Formatting.DateAndTime.Standard#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#7)]
-
-[Back to table](#table)
-
 <a name="Roundtrip"></a>
 
-## The Round-trip ("O", "o") Format Specifier
+### The round-trip ("O", "o") format specifier
 
 The "O" or "o" standard format specifier represents a custom date and time format string using a pattern that preserves time zone information and emits a result string that complies with ISO 8601. For <xref:System.DateTime> values, this format specifier is designed to preserve date and time values along with the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property in text. The formatted string can be parsed back by using the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=nameWithType> or <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method if the `styles` parameter is set to <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=nameWithType>.
 
@@ -284,7 +285,7 @@ The following example uses the "o" format specifier to create a formatted string
 
 <a name="RFC1123"></a>
 
-## The RFC1123 ("R", "r") Format Specifier
+### The RFC1123 ("R", "r") format specifier
 
 The "R" or "r" standard format specifier represents a custom date and time format string that is defined by the <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A?displayProperty=nameWithType> property. The pattern reflects a defined standard, and the property is read-only. Therefore, it is always the same, regardless of the culture used or the format provider supplied. The custom format string is "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'". When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.
 
@@ -307,7 +308,7 @@ The following example uses the "r" format specifier to display a <xref:System.Da
 
 <a name="Sortable"></a>
 
-## The Sortable ("s") Format Specifier
+### The sortable ("s") format specifier
 
 The "s" standard format specifier represents a custom date and time format string that is defined by the <xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A?displayProperty=nameWithType> property. The pattern reflects a defined standard (ISO 8601), and the property is read-only. Therefore, it is always the same, regardless of the culture used or the format provider supplied. The custom format string is "yyyy'-'MM'-'dd'T'HH':'mm':'ss".
 
@@ -322,53 +323,9 @@ The following example uses the "s" format specifier to display a <xref:System.Da
 
 [Back to table](#table)
 
-<a name="ShortTime"></a>
-
-## The Short Time ("t") Format Specifier
-
-The "t" standard format specifier represents a custom date and time format string that is defined by the current <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "HH:mm".
-
-The result string is affected by the formatting information of a specific <xref:System.Globalization.DateTimeFormatInfo> object. The following table lists the <xref:System.Globalization.DateTimeFormatInfo> object properties that may control the formatting of the returned string. The custom format specifier that is returned by the <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> property of some cultures may not make use of all properties.
-
-|Property|Description|
-|--------------|-----------------|
-|<xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A>|Defines the format of the time component of the result string.|
-|<xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>|Defines the string that separates the hour, minute, and second components of a time.|
-|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A>|Defines the string that indicates times from midnight to before noon in a 12-hour clock.|
-|<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Defines the string that indicates times from noon to before midnight in a 12-hour clock.|
-
-The following example uses the "t" format specifier to display a date and time value.
-
-[!code-csharp[Formatting.DateAndTime.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#11)]
-[!code-vb[Formatting.DateAndTime.Standard#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#11)]
-
-[Back to table](#table)
-
-<a name="LongTime"></a>
-
-## The Long Time ("T") Format Specifier
-
-The "T" standard format specifier represents a custom date and time format string that is defined by a specific culture's <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "HH:mm:ss".
-
-The following table lists the <xref:System.Globalization.DateTimeFormatInfo> object properties that may control the formatting of the returned string. The custom format specifier that is returned by the <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> property of some cultures may not make use of all properties.
-
-|Property|Description|
-|--------------|-----------------|
-|<xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A>|Defines the format of the time component of the result string.|
-|<xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>|Defines the string that separates the hour, minute, and second components of a time.|
-|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A>|Defines the string that indicates times from midnight to before noon in a 12-hour clock.|
-|<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Defines the string that indicates times from noon to before midnight in a 12-hour clock.|
-
-The following example uses the "T" format specifier to display a date and time value.
-
-[!code-csharp[Formatting.DateAndTime.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#12)]
-[!code-vb[Formatting.DateAndTime.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#12)]
-
-[Back to table](#table)
-
 <a name="UniversalSortable"></a>
 
-## The Universal Sortable ("u") Format Specifier
+### The universal sortable ("u") format specifier
 
 The "u" standard format specifier represents a custom date and time format string that is defined by the <xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A?displayProperty=nameWithType> property. The pattern reflects a defined standard, and the property is read-only. Therefore, it is always the same, regardless of the culture used or the format provider supplied. The custom format string is "yyyy'-'MM'-'dd HH':'mm':'ss'Z'". When this standard format specifier is used, the formatting or parsing operation always uses the invariant culture.
 
@@ -383,7 +340,7 @@ The following example uses the "u" format specifier to display a date and time v
 
 <a name="UniversalFull"></a>
 
-## The Universal Full ("U") Format Specifier
+### The universal full ("U") format specifier
 
 The "U" standard format specifier represents a custom date and time format string that is defined by a specified culture's <xref:System.Globalization.DateTimeFormatInfo.FullDateTimePattern%2A?displayProperty=nameWithType> property. The pattern is the same as the "F" pattern. However, the <xref:System.DateTime> value is automatically converted to UTC before it is formatted.
 
@@ -407,9 +364,87 @@ The following example uses the "U" format specifier to display a date and time v
 
 [Back to table](#table)
 
+## Time formats
+
+This group includes the following formats:
+
+- [The short time ("t") format specifier](#the-short-time-t-format-specifier)
+- [The long time ("T") format specifier](#the-long-time-t-format-specifier)
+
+<a name="ShortTime"></a>
+
+### The short time ("t") format specifier
+
+The "t" standard format specifier represents a custom date and time format string that is defined by the current <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "HH:mm".
+
+The result string is affected by the formatting information of a specific <xref:System.Globalization.DateTimeFormatInfo> object. The following table lists the <xref:System.Globalization.DateTimeFormatInfo> object properties that may control the formatting of the returned string. The custom format specifier that is returned by the <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=nameWithType> property of some cultures may not make use of all properties.
+
+|Property|Description|
+|--------------|-----------------|
+|<xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A>|Defines the format of the time component of the result string.|
+|<xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>|Defines the string that separates the hour, minute, and second components of a time.|
+|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A>|Defines the string that indicates times from midnight to before noon in a 12-hour clock.|
+|<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Defines the string that indicates times from noon to before midnight in a 12-hour clock.|
+
+The following example uses the "t" format specifier to display a date and time value.
+
+[!code-csharp[Formatting.DateAndTime.Standard#11](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#11)]
+[!code-vb[Formatting.DateAndTime.Standard#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#11)]
+
+[Back to table](#table)
+
+<a name="LongTime"></a>
+
+### The long time ("T") format specifier
+
+The "T" standard format specifier represents a custom date and time format string that is defined by a specific culture's <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "HH:mm:ss".
+
+The following table lists the <xref:System.Globalization.DateTimeFormatInfo> object properties that may control the formatting of the returned string. The custom format specifier that is returned by the <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=nameWithType> property of some cultures may not make use of all properties.
+
+|Property|Description|
+|--------------|-----------------|
+|<xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A>|Defines the format of the time component of the result string.|
+|<xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A>|Defines the string that separates the hour, minute, and second components of a time.|
+|<xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A>|Defines the string that indicates times from midnight to before noon in a 12-hour clock.|
+|<xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A>|Defines the string that indicates times from noon to before midnight in a 12-hour clock.|
+
+The following example uses the "T" format specifier to display a date and time value.
+
+[!code-csharp[Formatting.DateAndTime.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#12)]
+[!code-vb[Formatting.DateAndTime.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#12)]
+
+[Back to table](#table)
+
+## Partial date formats
+
+This group includes the following formats:
+
+- [The month ("M", "m") format specifier](#the-month-m-m-format-specifier)
+- [The year month ("Y", "y") format specifier](#the-year-month-y-y-format-specifier)
+
+<a name="MonthDay"></a>
+
+### The month ("M", "m") format specifier
+
+The "M" or "m" standard format specifier represents a custom date and time format string that is defined by the current <xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A?displayProperty=nameWithType> property. For example, the custom format string for the invariant culture is "MMMM dd".
+
+The following table lists the <xref:System.Globalization.DateTimeFormatInfo> object properties that control the formatting of the returned string.
+
+|Property|Description|
+|--------------|-----------------|
+|<xref:System.Globalization.DateTimeFormatInfo.MonthDayPattern%2A>|Defines the overall format of the result string.|
+|<xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A>|Defines the localized month names that can appear in the result string.|
+
+The following example uses the "m" format specifier to display a date and time value.
+
+[!code-csharp[Formatting.DateAndTime.Standard#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/Standard1.cs#7)]
+[!code-vb[Formatting.DateAndTime.Standard#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/Standard1.vb#7)]
+
+[Back to table](#table)
+
 <a name="YearMonth"></a>
 
-## The Year Month ("Y", "y") Format Specifier
+### The year month ("Y", "y") format specifier
 
 The "Y" or "y" standard format specifier represents a custom date and time format string that is defined by the <xref:System.Globalization.DateTimeFormatInfo.YearMonthPattern%2A?displayProperty=nameWithType> property of a specified culture. For example, the custom format string for the invariant culture is "yyyy MMMM".
 
@@ -429,15 +464,13 @@ The following example uses the "y" format specifier to display a date and time v
 
 <a name="Notes"></a>
 
-## Notes
+## Control Panel settings
 
-### Control Panel Settings
-
-The settings in the **Regional and Language Options** item in Control Panel influence the result string produced by a formatting operation. These settings are used to initialize the <xref:System.Globalization.DateTimeFormatInfo> object associated with the current thread culture, which provides values used to govern formatting. Computers that use different settings generate different result strings.
+In Windows, the settings in the **Regional and Language Options** item in Control Panel influence the result string produced by a formatting operation. These settings are used to initialize the <xref:System.Globalization.DateTimeFormatInfo> object associated with the current thread culture, which provides values used to govern formatting. Computers that use different settings generate different result strings.
 
 In addition, if you use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor to instantiate a new <xref:System.Globalization.CultureInfo> object that represents the same culture as the current system culture, any customizations established by the **Regional and Language Options** item in Control Panel will be applied to the new <xref:System.Globalization.CultureInfo> object. You can use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29> constructor to create a <xref:System.Globalization.CultureInfo> object that does not reflect a system's customizations.
 
-### DateTimeFormatInfo Properties
+## DateTimeFormatInfo properties
 
 Formatting is influenced by properties of the current <xref:System.Globalization.DateTimeFormatInfo> object, which is provided implicitly by the current thread culture or explicitly by the <xref:System.IFormatProvider> parameter of the method that invokes formatting. For the <xref:System.IFormatProvider> parameter, your application should specify a <xref:System.Globalization.CultureInfo> object, which represents a culture, or a <xref:System.Globalization.DateTimeFormatInfo> object, which represents a particular culture's date and time formatting conventions. Many of the standard date and time format specifiers are aliases for formatting patterns defined by properties of the current <xref:System.Globalization.DateTimeFormatInfo> object. Your application can change the result produced by some standard date and time format specifiers by changing the corresponding date and time format patterns of the corresponding <xref:System.Globalization.DateTimeFormatInfo> property.
 

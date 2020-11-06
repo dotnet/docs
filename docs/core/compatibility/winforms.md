@@ -130,4 +130,4 @@ The following breaking changes are documented on this page:
 
 ## See also
 
-- [Port a Windows Forms app to .NET Core](../porting/winforms.md)
+- [Port a Windows Forms app to .NET Core](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)

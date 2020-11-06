@@ -78,9 +78,9 @@ The following table shows the compatibility of the .NET 5 TFMs with TFMs for pre
 
 Use these guidelines to determine which TFM to use in your app:
 
-- Apps that are universal or portable to many platforms should target `net5.0`. This includes most libraries but also ASP.NET Core and Entity Framework.
+- Apps that are portable to multiple platforms should target `net5.0`. This includes most libraries but also ASP.NET Core and Entity Framework.
 
-- Platform-specific libraries should target platform-specific flavors. For example, WinForms and WPF controls should target `net5.0-windows`.
+- Platform-specific libraries should target platform-specific flavors. For example, WinForms and WPF projects should target `net5.0-windows`.
 
 - Cross-platform application models (Xamarin Forms, ASP.NET Core) and bridge packs (Xamarin Essentials) should at least target `net5.0`, but might also target additional platform-specific flavors to light-up more APIs or features.
 

@@ -20,3 +20,11 @@ groups:
       title: xUnit
     - id: nunit
       title: NUnit
+- id: ide-set-one
+  title: IDE
+  prompt: Choose an IDE
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: visualstudio
+      title: Visual Studio

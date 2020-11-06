@@ -32,7 +32,7 @@ In this topic, you will use .NET to display text on an LCD character display usi
 
 ## Prepare the hardware
 
-Use the jumper wires to connect the pins on the four pins on the I2C GPIO expander to the Raspberry Pi as follows:
+Use jumper wires to connect the the four pins on the I2C GPIO expander to the Raspberry Pi as follows:
 
 - GND to ground
 - VCC to 5V
@@ -108,7 +108,7 @@ Complete the following steps in your preferred development environment:
         1. Iterates the current line counter.
         1. Sleeps 1000 ms.
 
-1. Build the app by running `dotnet build` if using the .NET CLI. To build in Visual Studio, press <kbd>Ctrl+Shift+B</kbd>.
+1. 
 1. Deploy the app to the Raspberry Pi as a self-contained app. For instructions, see [Deploy .NET apps to Raspberry Pi](../deployment.md#deploying-a-self-contained-app). Make sure to give the executable *execute* permission using `chmod +x`.
 1. Run the app on the Raspberry Pi by switching to the deployment directory and running the executable.
 

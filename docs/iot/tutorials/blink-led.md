@@ -36,8 +36,6 @@ The image above depicts the following connections:
 - LED cathode (shorter, negative lead) to 330 Ω resistor (either end)
 - 330 Ω resistor (other end) to ground
 
-Refer to the following pinout diagram as needed:
-
 [!INCLUDE [tutorial-rpi-gpio](../includes/tutorial-rpi-gpio.md)]
 
 [!INCLUDE [gpio-breakout](../includes/gpio-breakout.md)]

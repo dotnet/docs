@@ -15,7 +15,7 @@ During development, an RCL's static web assets could be silently overridden with
 
 #### New behavior
 
-ASP.NET Core correctly detects when this issue happens. It informs of the conflict so that users can take the appropriate action.
+ASP.NET Core correctly detects when this issue happens. It informs you, the user, of the conflict so that you can take the appropriate action.
 
 #### Reason for change
 

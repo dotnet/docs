@@ -30,7 +30,7 @@ This quickstart uses .NET to retrieve sensor values from the Sense HAT, respond 
 
 ## Run the quickstart
 
-Attach the Sense HAT to your Raspberry Pi and power it on. From a Bash prompt on the Raspberry Pi (local or remote), run the following command:
+Attach the Sense HAT to your Raspberry Pi. From a Bash prompt on the Raspberry Pi (local or remote), run the following command:
 
 ```bash
 . <(wget -q -O - https://aka.ms/dotnet-iot-sensehat-quickstart)
@@ -43,7 +43,7 @@ The command downloads and runs a script. The script:
 - Builds the project.
 - Runs the project.
 
-Observe the console output. The LED matrix displays a yellow pixel on a field of blue. Holding the joystick moves the yellow pixel.
+Observe the console output as sensor data is displayed. The LED matrix displays a yellow pixel on a field of blue. Holding the joystick moves the yellow pixel.
 
 ## Get the source code
 

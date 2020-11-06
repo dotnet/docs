@@ -18,8 +18,8 @@ In this topic, you will use .NET to read environmental conditions from a sensor.
 
 - Raspberry Pi (2 or greater) with [Raspberry Pi OS installed](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
 - [BME280](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout) humidity/barometric pressure/temperature sensor breakout
-- Breadboard
 - Jumper wires
+- Breadboard (optional)
 - Raspberry Pi GPIO breakout board (optional)
 - [.NET SDK](https://dotnet.microsoft.com/download) version 5.0.100 or later
 

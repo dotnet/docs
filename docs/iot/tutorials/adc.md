@@ -32,7 +32,7 @@ Use the hardware components to build the circuit as depicted in the following di
 
 :::image type="content" source="../media/rpi-trimpot_spi-thumb.png" alt-text="A Fritzing diagram showing a circuit with an MCP3008 ADC and a potentiometer" lightbox="../media/rpi-trimpot_spi.png":::
 
-The MCP3008 uses Serial Peripheral Interface (SPI) to communicate. The following are the connections from the MCP3008:
+The MCP3008 uses Serial Peripheral Interface (SPI) to communicate. The following are the connections from the MCP3008 to the Raspberry Pi and potentiometer:
 
 <!--markdownlint-disable MD033 -->
 - V<sub>DD</sub> to 3.3V (shown in red)

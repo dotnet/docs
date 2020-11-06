@@ -125,6 +125,6 @@ On the **Run** tab, select the **.NET Core Launch (remote console)** configurati
 
 ## Debug from Visual Studio on Windows
 
-Visual Studio can debug .NET apps on remote devices remotely via SSH. No specialized configuration is required on the device. For details on using Visual Studio to debug .NET remotely, see [Remote debug .NET on Linux using SSH](/visualstudio/debugger/remote-debugging-dotnet-core-linux-with-ssh?view=vs-2019).
+Visual Studio can debug .NET apps on remote devices via SSH. No specialized configuration is required on the device. For details on using Visual Studio to debug .NET remotely, see [Remote debug .NET on Linux using SSH](/visualstudio/debugger/remote-debugging-dotnet-core-linux-with-ssh?view=vs-2019).
 
 ::: zone-end

@@ -70,7 +70,7 @@ Complete the following steps on your development computer:
     using Iot.Device.Pcx857x;
 
     Console.WriteLine("Displaying current time. Press Ctrl+C to end.");
-    
+
     using I2cDevice i2c = I2cDevice.Create(new I2cConnectionSettings(1, 0x27));
     using Pcf8574 gpioExpander = new Pcf8574(i2c);
     using Lcd2004 lcd = new Lcd2004(registerSelectPin: 0,

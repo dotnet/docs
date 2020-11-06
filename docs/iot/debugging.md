@@ -21,7 +21,7 @@ Debugging .NET on Raspberry Pi from Visual Studio Code requires configuration st
 
 ### Enable SSH on the Raspberry Pi
 
-SSH is required for remote debugging. To enable SSH, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/).
+SSH is required for remote debugging. To enable SSH, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/) <span class="docon docon-navigate-external x-hidden-focus"></span>.
 
 ### Install the Visual Studio Remote Debugger on the Raspberry Pi
 
@@ -41,7 +41,7 @@ Within a Bash console on the Raspberry Pi (either locally or via SSH), complete 
 
 1. Visual Studio Code uses the SSH protocol to debug remotely. For security purposes, `root` is not permitted to log on via SSH by default. To enable `root` to log on via SSH, complete the following steps:
 
-    1. Execute the following command to open */etc/ssh/sshd_config* in [nano](https://www.nano-editor.org/docs.php).
+    1. Execute the following command to open */etc/ssh/sshd_config* in [nano](https://www.nano-editor.org/docs.php) <span class="docon docon-navigate-external x-hidden-focus"></span>.
 
         ```bash
         sudo nano /etc/ssh/sshd_config

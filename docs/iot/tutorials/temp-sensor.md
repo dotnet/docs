@@ -136,4 +136,4 @@ The source for this tutorial is [available on GitHub](https://github.com/Microso
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn how to display text on an LCD](../tutorials/temp-sensor.md).
+> [Learn how to display text on an LCD](../tutorials/lcd-display.md).

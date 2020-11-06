@@ -10,7 +10,7 @@ ms.prod: dotnet
 
 # Deploy .NET apps to Raspberry Pi
 
-Deployment of .NET apps to Raspberry Pi is the identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](/core/deploying).
+Deployment of .NET apps to Raspberry Pi is the identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](/dotnet/core/deploying).
 
 ## Deploying a framework-dependent app
 

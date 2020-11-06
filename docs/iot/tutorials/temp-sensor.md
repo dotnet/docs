@@ -115,8 +115,8 @@ Complete the following steps in your preferred development environment:
         1. Writes the current environmental conditions to the console.
         1. Sleeps 1000 ms.
 
-1. Build the app by running `dotnet build` if using the .NET CLI. To build in Visual Studio, press <kbd>Ctrl+Shift+B</kbd>.
-1. Deploy the app to the Raspberry Pi as a self-contained app. For instructions, see [Deploy .NET apps to Raspberry Pi](../deployment.md#deploying-a-self-contained-app). Make sure to give the executable *execute* permission using `chmod +x`.
+1. [!INCLUDE [tutorial-build](../includes/tutorial-build.md)]
+1. [!INCLUDE [tutorial-deploy](../includes/tutorial-deploy.md)]
 1. Run the app on the Raspberry Pi by switching to the deployment directory and running the executable.
 
     ```bash

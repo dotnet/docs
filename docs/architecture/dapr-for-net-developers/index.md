@@ -48,6 +48,12 @@ Authors:
 Participants and Reviewers:
 
 > **Nish Anil**, Senior Program Manager, .NET team, Microsoft
+>
+> **Mark Fussell**, Prinicpal Program Manager, Azure Incubations, Microsoft
+>
+> **Yaron Schneider**, Prinicpal Software Engineer, Azure Incubations, Microsoft
+>
+> **Ori Zohar**, Senior Program Manager, Azure Incubations, Microsoft
 
 Editors:
 

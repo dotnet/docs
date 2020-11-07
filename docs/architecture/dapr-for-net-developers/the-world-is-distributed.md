@@ -22,7 +22,7 @@ To start, let's rewind and look at the past 15 years. During this period, we typ
 
 ![Monolithic architecture.](./media/monolithic-design.png)
 
-**Figure 1-1. Monolithic architecture.
+**Figure 1-1** : Monolithic architecture.
 
 Note how the modules for Ordering, Identity, and Marketing execute in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTful interfaces.
 

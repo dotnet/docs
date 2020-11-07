@@ -41,7 +41,7 @@ Over time, you may reach a point where you begin to lose control...
  - The monolith has become so overwhelmingly complicated that no single person understands it.
  - You fear making changes as each brings unintended and costly side effects.
  - New features/fixes become time-consuming and expensive to implement. 
- - Even the smallest change requires a full deployment of the entire application - expensive and risky. 
+ - Even the smallest change requires full deployment of the entire application - expensive and risky. 
  - One unstable component can crash the entire system.
  - Adding new technologies and frameworks aren't an option.
  - Implementing agile delivery methodologies are difficult.

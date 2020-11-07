@@ -86,6 +86,8 @@ landingContent:
             url: https://www.raspberrypi.org/documentation/
       - linkListType: how-to-guide
         links:
+          - text: Passwordless SSH access >>
+            url: https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
           - text: Setting up a Raspberry Pi headless >>
             url: https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
           - text: Run a .NET app automatically at boot >>

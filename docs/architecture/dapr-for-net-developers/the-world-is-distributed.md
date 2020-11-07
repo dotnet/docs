@@ -74,13 +74,13 @@ Note how the same application is decomposed across a set of distributed services
 
 But, while distributed services can provide agility and speed, they present a different set of challenges. Consider the following...
 
- - How can distributed services discover each other and communicate synchronously?
- - How can they implement asynchronous messaging?
- - How can they maintain contextual information across a transaction?
- - How can they become resilient to failure?
- - How can they scale to meet fluctuating demand?
- - How are they monitored and observed?
- 
+- How can distributed services discover each other and communicate synchronously?
+- How can they implement asynchronous messaging?
+- How can they maintain contextual information across a transaction?
+- How can they become resilient to failure?
+- How can they scale to meet fluctuating demand?
+- How are they monitored and observed?
+
 For each of these challenges, multiple products are often available. But, shielding your application from product differences and keeping code maintainable and portable become a challenge.
 
 This book introduces Dapr. Dapr is a distributed application runtime. It directly addresses many of the challenges found that come along with distributed applications. Looking ahead, Dapr has the potential to have a profound impact on distributed application development.

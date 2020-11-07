@@ -35,7 +35,7 @@ Windows 10 May 2019 Update and later versions include [icu.dll](/windows/win32/i
 
 ### Behavioral differences
 
-You might see changes in your app even if you don't realize you're using globalization facilities. This section lists a couple of the behavioral changes you might see, but there are others too.
+If you upgrade your app to target .NET 5, you might see changes in your app even if you don't realize you're using globalization facilities. This section lists one of the behavioral changes you might see, but there are others too.
 
 ##### String.IndexOf
 

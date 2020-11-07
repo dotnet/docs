@@ -26,7 +26,7 @@ In these examples, `5` is the correct answer because `"Hello".Substring(5)` and 
 
 #### Reason for change
 
-This change was part of an overall bug fixing effort around string handling for .NET 5. It also helps unify our behavior between Windows and non-Windows platforms. For more information, see [dotnet/runtime#13383](https://github.com/dotnet/runtime/issue/13383) and [dotnet/runtime##13382](https://github.com/dotnet/runtime/issue/13382).
+This change was part of an overall bug fixing effort around string handling for .NET 5. It also helps unify our behavior between Windows and non-Windows platforms. For more information, see [dotnet/runtime#13383](https://github.com/dotnet/runtime/issues/13383) and [dotnet/runtime##13382](https://github.com/dotnet/runtime/issues/13382).
 
 #### Version introduced
 

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.Net.Sdk">
+
+    <PropertyGroup>
+         <TargetFramework>netcoreapp3.1</TargetFramework>
+         <LangVersion>preview</LangVersion>
+    <PropertyGroup>
+    
+    <ItemGroup>
+        <Compile Include="tour.fs" />
+    </ItemGroup>
+
+</Project>

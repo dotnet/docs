@@ -7,6 +7,8 @@ ms.date: 11/07/2020
 
 # Dapr @ 20,000 feet
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed out that they dramatically increase architectural and operational complexity. With that in mind, the question becomes, how can we "have our cake" and "eat it too?" That is, how can we take advantage of the agility, but minimize the complexity.
 
 Ladies and Gentlemen, please stand and welcome.... `Dapr`.

@@ -1,18 +1,16 @@
 ---
 title: Using Observable Providers
-TOCTitle: Using Observable Providers
-ms:assetid: bc8b5656-c62d-468c-92e0-5c7e216cd092
-ms:mtpsurl: https://msdn.microsoft.com/en-us/library/Hh242971(v=VS.103)
-ms:contentKeyID: 36068274
-ms.date: 06/10/2011
-mtps_version: v=VS.103
+description: Using Observable Providers
+author: IEvangelist
+ms.author: dapine
+ms.date: 11/09/2020
 ---
 
-# Using Observable Providers
+# Use observable providers
 
-By implementing the [IQbservable](hh229615\(v=vs.103\).md) interface and using the factory extension methods provided by the [Qbservable](hh211693\(v=vs.103\).md) type, you can write a custom LINQ provider to query any type of external data, so that these data are treated as sequences that can be subscribed to. For example, the [LINQ to WQL sample](http://go.microsoft.com/fwlink/?linkid=208531) in the [Rx MSDN Developer Center](http://msdn.microsoft.com/en-us/data/gg577610) shows how to build a simple provider for querying WMI Events using WQL. You can use the factory LINQ operators provided by the **Qbservable** type to abstract a sequence of WMI events and query, filter and compose them. Subscribing to this sequence will trigger the translation of the LINQ query expression into the target language, in this case WQL.
+By implementing the `IQbservable` interface and using the factory extension methods provided by the [Qbservable](hh211693\(v=vs.103\).md) type, you can write a custom LINQ provider to query any type of external data, so that these data are treated as sequences that can be subscribed to. For example, the [LINQ to WQL sample](http://go.microsoft.com/fwlink/?linkid=208531) in the [Rx MSDN Developer Center](http://msdn.microsoft.com/en-us/data/gg577610) shows how to build a simple provider for querying WMI Events using WQL. You can use the factory LINQ operators provided by the **Qbservable** type to abstract a sequence of WMI events and query, filter and compose them. Subscribing to this sequence will trigger the translation of the LINQ query expression into the target language, in this case WQL.
 
-## Using the IQbservable interface to query external data
+## Query external data with `IQbservable`
 
 When we mention that we want to query for data, we are first concerned about what we want to query. This can be a pulled-based IEnumerable collection, or a push-based asynchronous [Observable](hh244252\(v=vs.103\).md) sequence. We also want to know where (under which context) do we want to execute the query. For **Observable** sequences, that is handled by the [IScheduler](hh229149\(v=vs.103\).md) interface and its various Scheduler implementation types. Finally, we want to know how we do the query. We can represent a query (a lambda expression) in verbatim (compiled into .NET intermediate language (IL) code), in which each operator in the query will be evaluated in a linear fashion. This is the case for the factory operator methods of the **Observable** type. Or you can represent your query using expression trees, which can be traversed to get the represented algorithm (e.g., predicting whether an item is greater than a value, etc.), then translate the algorithm into some domain-specific code, such as a T-SQL query statement for querying a SQL database, specific HTTP requests for a particular Web service URI, PowerShell commands, DSQLs for cloud notification services, etc. This is the case for the factory operator methods of the **Qbservable** type. The translated domain-specific code can be executed in a remote target system, or you can use the expression tree representation to do local query optimization.
 
@@ -30,11 +28,5 @@ The set of methods declared in the **Qbservable** class provides an implementati
 
 ## See Also
 
-#### Reference
-
-[IQbservable](hh229615\(v=vs.103\).md)  
-[Qbservable](hh211693\(v=vs.103\).md)  
-
-#### Other Resources
-
-[Rx MSDN Developer Center](http://msdn.microsoft.com/en-us/data/gg577610)
+- [IQbservable](hh229615\(v=vs.103\).md)
+- [Qbservable](hh211693\(v=vs.103\).md)

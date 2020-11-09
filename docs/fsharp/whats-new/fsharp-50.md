@@ -25,6 +25,12 @@ let o = {| X = 2; Y = "Hello" |}
 printfn "%s" (JsonConvert.SerializeObject o)
 ```
 
+You can also supply an explicit version after the name of the package like this:
+
+```fsharp
+#r "nuget: Newtonsoft.Json,11.0.1"
+```
+
 Package references support packages with native dependencies, such as ML.NET.
 
 Package references also support packages with special requirements about referencing dependent `.dll`s. For example, the [FParsec](https://www.nuget.org/packages/FParsec/) package used to require that users manually ensure that its dependent `FParsecCS.dll` was referenced first before `FParsec.dll` was referenced in F# Interactive. This is no longer needed, and you can reference the package as follows:

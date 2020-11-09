@@ -1,6 +1,8 @@
 ---
 title: Connect to Remote Storage from your local machine
 description: Connect to Azure Storage Accounts using .NET for Apache Spark from your local machine.
+ms.author: nidutta
+author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to

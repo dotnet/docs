@@ -18,7 +18,7 @@ Nullable reference types are available beginning with C# 8.0, in code that has o
 
 The distinctions between a non-nullable reference type `T` and a nullable reference type `T?` are enforced by the compiler's interpretation of the preceding rules. A variable of type `T` and a variable of type `T?` are represented by the same .NET type. The following example declares a non-nullable string and a nullable string, and then uses the null-forgiving operator to assign a value to a non-nullable string:
 
-:::code language="csharp" source="snippets/NullableReferenceTypes.cs" id="SnippetCoreSyntax":::
+:::code language="csharp" source="snippets/shared/NullableReferenceTypes.cs" id="SnippetCoreSyntax":::
 
 The variables `notNull` and `nullable` are both represented by the <xref:System.String> type. Because the non-nullable and nullable types are both stored as the same type, there are several locations where using a nullable reference type isn't allowed. In general, a nullable reference type can't be used as a base class or implemented interface. A nullable reference type can't be used in any object creation or type testing expression. A nullable reference type can't be the type of a member access expression. The following examples show these constructs:
 
@@ -49,11 +49,11 @@ Non-nullable reference types should always be safe to dereference because their 
 
 Nullable reference types may be initialized or assigned to `null`. Therefore, static analysis must determine that a variable is *not null* before it's dereferenced. If a nullable reference is determined to be *maybe null*, it can't be assigned to a non-nullable reference variable. The following class shows examples of these warnings:
 
-:::code language="csharp" source="snippets/NullableReferenceTypes.cs" id="SnippetClassWithNullable":::
+:::code language="csharp" source="snippets/shared/NullableReferenceTypes.cs" id="SnippetClassWithNullable":::
 
 The following snippet shows where the compiler emits warnings when using this class:
 
-:::code language="csharp" source="snippets/NullableReferenceTypes.cs" id="SnippetLocalWarnings":::
+:::code language="csharp" source="snippets/shared/NullableReferenceTypes.cs" id="SnippetLocalWarnings":::
 
 The preceding examples demonstrate the compiler's static analysis to determine the null state of reference variables. The compiler applies language rules for null checks and assignments to inform its analysis.  The compiler can't make assumptions about the semantics of methods or properties. If you call methods that perform null checks, the compiler can't know those methods affect a variable's null state. There are a number of attributes you can add to your APIs to inform the compiler about the semantics of arguments and return values. These attributes have been applied to many common APIs in the .NET Core libraries. For example, <xref:System.String.IsNullOrEmpty%2A> has been updated, and the compiler correctly interprets that method as a null check. For more information about the attributes that apply to null state static analysis, see the article on [Nullable attributes](../attributes/nullable-analysis.md).
 

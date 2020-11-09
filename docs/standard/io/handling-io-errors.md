@@ -40,7 +40,7 @@ However, the precise conditions under which the operating system returns particu
 
 Because of this reliance on the operating system, identical exception conditions (such as the directory not found error in our example) can result in an I/O method throwing any one of the entire class of I/O exceptions. This means that, when calling I/O APIs, your code should be prepared to handle most or all of these exceptions, as shown in the following table:
 
-| Exception type | .NET Core | .NET Framework |
+| Exception type | .NET Core/.NET 5+ | .NET Framework |
 |---|---|---|
 | <xref:System.IO.IOException> | Yes | Yes |
 | <xref:System.IO.FileNotFoundException> | Yes | Yes |

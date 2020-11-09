@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "hash tables"
   - "grouping data in collections, Hashtable collection type"
   - "hash function"
-  - "collections [.NET Framework], Hashtable collection type"
+  - "collections [.NET], Hashtable collection type"
 ms.assetid: bfc20837-3d02-4fc7-8a8f-c5215b6b7913
 ---
 # Hashtable and Dictionary Collection Types

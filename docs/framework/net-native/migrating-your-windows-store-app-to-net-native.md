@@ -202,7 +202,9 @@ In .NET Native:
 - The `SetCookie2` header in responses is ignored as obsolete.
 
 <a name="Interop"></a>
+
 ### Interop differences
+
  **Deprecated APIs**
 
  A number of infrequently used APIs for interoperability with managed code have been deprecated. When used with .NET Native, these APIs may throw a <xref:System.NotImplementedException> or <xref:System.PlatformNotSupportedException> exception, or result in a compiler error. In .NET for Windows Store apps, these APIs are marked as obsolete, although calling them generates a compiler warning rather than a compiler error.
@@ -660,4 +662,4 @@ Enabling .NET Native on a Unit Test Library for a Windows Store apps project isn
 - [Getting Started](getting-started-with-net-native.md)
 - [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
 - [.NET For Windows Store apps overview](/previous-versions/windows/apps/br230302(v=vs.140))
-- [.NET Framework Support for Windows Store Apps and Windows Runtime](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+- [.NET Framework Support for Windows Store Apps and Windows Runtime](../cross-platform/support-for-windows-store-apps-and-windows-runtime.md)

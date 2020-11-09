@@ -1,6 +1,6 @@
 ### Thread.Abort is obsolete
 
-The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> APIs are obsolete. Projects that target .NET 5.0 or a later version will encounter compile-time warnings if these methods are called. If you suppress the warnings, a <xref:System.PlatformNotSupportedException> will be thrown at run time.
+The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> APIs are obsolete. Projects that target .NET 5.0 or a later version will encounter compile-time warning `SYSLIB0006` if these methods are called.
 
 #### Change description
 

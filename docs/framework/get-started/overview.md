@@ -1,8 +1,8 @@
 ---
-title: "Overview of the .NET Framework"
-description: Read an overview about .NET, which is a technology that supports building and running Windows apps and web services.
-ms.date: "03/30/2017"
-helpviewer_keywords: 
+title: "Overview of .NET Framework"
+description: Read an overview about .NET Framework, which is a technology that supports building and running Windows apps and web services.
+ms.date: 10/21/2020
+helpviewer_keywords:
   - "application development [.NET Framework]"
   - "common language runtime"
   - "common language runtime, about"
@@ -13,20 +13,21 @@ ms.assetid: 29848c96-fc36-462d-8072-ba223a40b697
 
 .NET Framework is a technology that supports building and running Windows apps and web services. .NET Framework is designed to fulfill the following objectives:
 
-- To provide a consistent object-oriented programming environment whether object code is stored and executed locally, executed locally but web-distributed, or executed remotely.
+- Provide a consistent, object-oriented programming environment whether object code is stored and executed locally, executed locally but web-distributed, or executed remotely.
 
-- To provide a code-execution environment that minimizes software deployment and versioning conflicts.
+- Provide a code-execution environment that:
 
-- To provide a code-execution environment that promotes safe execution of code, including code created by an unknown or semi-trusted third party.
+  - Minimizes software deployment and versioning conflicts.
 
-- To provide a code-execution environment that eliminates the performance problems of scripted or interpreted environments.
+  - Promotes safe execution of code, including code created by an unknown or semi-trusted third party.
 
-- To make the developer experience consistent across widely varying types of apps, such as Windows-based apps and Web-based apps.
+  - Eliminates the performance problems of scripted or interpreted environments.
 
-- To build all communication on industry standards to ensure that code based on .NET Framework integrates with any other code.
+- Make the developer experience consistent across widely varying types of apps, such as Windows-based apps and Web-based apps.
 
-> [!NOTE]
-> For a general introduction to .NET Framework for both users and developers, see [Get started](index.md).
+- Build all communication on industry standards to ensure that code based on .NET Framework integrates with any other code.
+
+[!INCLUDE [net-framework-future](../../../includes/net-framework-future.md)]
 
 .NET Framework consists of the common language runtime (CLR) and the .NET Framework class library. The common language runtime is the foundation of .NET Framework. Think of the runtime as an agent that manages code at execution time, providing core services such as memory management, thread management, and remoting, while also enforcing strict type safety and other forms of code accuracy that promote security and robustness. In fact, the concept of code management is a fundamental principle of the runtime. Code that targets the runtime is known as managed code, while code that doesn't target the runtime is known as unmanaged code. The class library is a comprehensive, object-oriented collection of reusable types that you use to develop apps ranging from traditional command-line or graphical user interface (GUI) apps to apps based on the latest innovations provided by ASP.NET, such as Web Forms and XML web services.
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace operators
 {
@@ -14,6 +15,9 @@ namespace operators
 
             Console.WriteLine("Reference types:");
             ReferenceTypesEquality.Main();
+
+            Console.WriteLine("Record types:");
+            RecordTypesEquality.Main();
 
             Console.WriteLine("Delegate types:");
             DelegateEquality();
@@ -115,5 +119,27 @@ namespace operators
             Console.WriteLine(b + a == a + b);  // output: False
             // </SnippetIdenticalLambdas>
         }
+
+        // <RecordTypesEquality>
+        public class RecordTypesEquality
+        {
+            public record Point(int X, int Y, string Name);
+            public record TaggedNumber(int Number, List<string> Tags);
+
+            public static void Main()
+            {
+                var p1 = new Point(2, 3, "A");
+                var p2 = new Point(1, 3, "B");
+                var p3 = new Point(2, 3, "A");
+
+                Console.WriteLine(p1 == p2);  // output: False
+                Console.WriteLine(p1 == p3);  // output: True
+
+                var n1 = new TaggedNumber(2, new List<string>() { "A" });
+                var n2 = new TaggedNumber(2, new List<string>() { "A" });
+                Console.WriteLine(n1 == n2);  // output: False
+            }
+        }
+        // </RecordTypesEquality>
     }
 }

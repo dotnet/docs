@@ -1,6 +1,8 @@
 ---
 title: Connect .NET for Apache Spark to SQL Server
 description: Learn how to connect to a SQL Server instance from your .NET for Apache Spark application.
+ms.author: nidutta
+author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
@@ -30,7 +32,7 @@ In this article, you learn how to connect to an SQL server instance from your [.
 
 ## Connect to SQL Server from your application
 
-1. Use the Microsoft JDBC Driver for SQL Server to provide database connectivity through your application (download from [this official website](https://docs.microsoft.com/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)).
+1. Use the Microsoft JDBC Driver for SQL Server to provide database connectivity through your application (download from [this official website](/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)).
 2. Set the following configurations to connect to the SQL server instance and database from your application:
     1. **connection_url**: This is the URL used to connect to the SQL server instance/database and has the following format:
 

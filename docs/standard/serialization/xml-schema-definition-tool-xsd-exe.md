@@ -26,7 +26,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 ```
   
 > [!TIP]
-> For .NET Framework tools to function properly, you must set your `Path`, `Include`, and `Lib` environment variables correctly. Set these environment variables by running SDKVars.bat, which is located in the \<SDK>\v2.0\Bin directory. SDKVars.bat must be executed in every command shell.
+> For .NET Framework tools to function properly, you must set your `Path`, `Include`, and `Lib` environment variables correctly. Set these environment variables by running SDKVars.bat, which is located in the \<SDK>\\\<version>\Bin directory. SDKVars.bat must be executed in every command shell.
 
 ## Argument
 

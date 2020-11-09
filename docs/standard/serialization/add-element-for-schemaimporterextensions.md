@@ -1,6 +1,6 @@
 ---
 title: "<add> Element for <schemaImporterExtensions>"
-description: The <add> element adds types used by the XmlSchemaImporter class for mapping XSD types to .NET Framework types. 
+description: The <add> element adds types used by the XmlSchemaImporter class for mapping XSD types to .NET types. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML serialization, configuration"
@@ -8,9 +8,10 @@ helpviewer_keywords:
 ms.assetid: c828a558-094b-441e-9065-790b87315fa0
 ---
 # \<add> Element for \<schemaImporterExtensions>
-Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../framework/configure-apps/file-schema/index.md).  
+
+Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET types. For more information about configuration files, see [Configuration File Schema](../../framework/configure-apps/file-schema/index.md).  
   
- \<configuration>  
+\<configuration>  
 \<system.xml.serialization>  
 \<schemaImporterExtensions>  
 \<add>  

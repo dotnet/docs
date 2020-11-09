@@ -9,10 +9,10 @@ dev_langs:
 helpviewer_keywords: 
   - "stores, finding files and directories"
   - "locating files in isolated storage file"
-  - "directories [.NET Framework], isolated storage"
+  - "directories [.NET], isolated storage"
   - "isolated storage, finding files and directories"
   - "data storage using isolated storage, finding files and directories"
-  - "files [.NET Framework], isolated storage"
+  - "files [.NET], isolated storage"
   - "data stores, finding files and directories"
   - "locating directories in isolated storage file"
   - "storing data using isolated storage, finding files and directories"

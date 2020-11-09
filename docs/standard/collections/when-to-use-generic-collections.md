@@ -3,8 +3,8 @@ title: "When to Use Generic Collections"
 ms.date: 04/30/2020
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "collections [.NET Framework], generic"
-  - "generic collections [.NET Framework]"
+  - "collections [.NET], generic"
+  - "generic collections [.NET]"
 ms.assetid: e7b868b1-11fe-4ac5-bed3-de68aca47739
 ---
 

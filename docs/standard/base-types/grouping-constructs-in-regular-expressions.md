@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "lookbehinds"
   - "regular expressions, grouping constructs"
   - "lookaheads"
-  - ".NET Framework regular expressions, grouping constructs"
+  - ".NET regular expressions, grouping constructs"
   - "constructs, grouping"
   - "grouping constructs"
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b

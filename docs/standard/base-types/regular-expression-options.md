@@ -9,7 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - "regular expressions, options"
   - "constructs, options"
-  - ".NET Framework regular expressions, options"
+  - ".NET regular expressions, options"
   - "inline option constructs"
   - "options parameter"
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9

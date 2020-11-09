@@ -8,7 +8,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "interrupting threads"
-  - "threading [.NET Framework], pausing"
+  - "threading [.NET], pausing"
   - "pausing threads"
 ms.assetid: 9fce4859-a19d-4506-b082-7dd0792688ca
 ---

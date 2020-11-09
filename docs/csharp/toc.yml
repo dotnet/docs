@@ -2,11 +2,19 @@
   href: index.yml
 - name: Get started
   items:
-  - name: Overview
+  - name: Introduction to the C# language and .NET
     displayName: get started
     href: getting-started/index.md
-  - name: Introduction to the C# language and .NET
-    href: getting-started/introduction-to-the-csharp-language-and-the-net-framework.md
+  - name: Tour of C#
+    items:
+    - name: Introduction
+      href: tour-of-csharp/index.md
+    - name: Types
+      href: tour-of-csharp/types.md
+    - name: Program building blocks
+      href: tour-of-csharp/program-building-blocks.md
+    - name: Major language areas
+      href: tour-of-csharp/features.md
 - name: Tutorials
   items:
   - name: Overview
@@ -38,6 +46,10 @@
         href: tutorials/intro-to-csharp/introduction-to-classes.md
       - name: Object-Oriented programming
         href: tutorials/intro-to-csharp/object-oriented-programming.md
+  - name: Explore top level statements
+    href: tutorials/exploration/top-level-statements.md
+  - name: Explore patterns in objects
+    href: tutorials/exploration/patterns-objects.md
   - name: Explore C# 6
     href: tutorials/exploration/csharp-6.yml
   - name: Explore string interpolation - interactive
@@ -70,16 +82,6 @@
     href: tutorials/working-with-linq.md
   - name: Use Attributes
     href: tutorials/attributes.md
-- name: Tour of C#
-  items:
-  - name: Introduction
-    href: tour-of-csharp/index.md
-  - name: Types
-    href: tour-of-csharp/types.md
-  - name: Program building blocks
-    href: tour-of-csharp/program-building-blocks.md
-  - name: Major language areas
-    href: tour-of-csharp/features.md
 - name: What's new in C#
   items:
   - name: C# 9.0
@@ -224,7 +226,7 @@
   - name: Article index
     displayName: how to's
     href: how-to/index.md
-  - name: Parse strings using `String.Split`
+  - name: Split strings into substrings
     href: how-to/parse-strings-using-split.md
   - name: Concatenate strings
     href: how-to/concatenate-multiple-strings.md
@@ -234,7 +236,7 @@
     href: how-to/modify-string-contents.md
   - name: Compare strings
     href: how-to/compare-strings.md
-  - name: Safely cast using pattern matching, is and as operators
+  - name: Safely cast using pattern matching and is/as operators
     href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
   items:
@@ -833,7 +835,7 @@
       - name: <include>
         href: programming-guide/xmldoc/include.md
       - name: <inheritdoc>
-        href: programming-guide/xmldoc/inheritdoc.md  
+        href: programming-guide/xmldoc/inheritdoc.md
       - name: <list>
         href: programming-guide/xmldoc/list.md
       - name: <para>
@@ -1287,6 +1289,9 @@
       displayName: "switch, pattern matching, patterns"
     - name: true and false operators
       href: language-reference/operators/true-false-operators.md
+    - name: with expression
+      href: language-reference/operators/with-expression.md
+      displayName: "records, copy"
     - name: Operator overloading
       href: language-reference/operators/operator-overloading.md
   - name: Special characters

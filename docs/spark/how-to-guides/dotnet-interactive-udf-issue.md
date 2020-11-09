@@ -1,6 +1,8 @@
 ---
 title: Write and call UDFs in .NET for Apache Spark interactive environments.
 description: Learn how to write and call UDFs in .NET for Apache Spark interactive shells.
+ms.author: nidutta
+author: Niharikadutta
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
@@ -42,7 +44,7 @@ Now let's see what happens if we call the UDF in the same cell where it is defin
 
 The above highlighted error is because the UDF assemblies need to first be compiled and shipped to the workers before it can be called on a DataFrame.
 
-These are a few important things to keep in mind while implementing UDFs in .NET for Apache Spark interactive experience (such as [Azure Synapse Notebooks](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-development-using-notebooks)).
+These are a few important things to keep in mind while implementing UDFs in .NET for Apache Spark interactive experience (such as [Azure Synapse Notebooks](/azure/synapse-analytics/spark/apache-spark-development-using-notebooks)).
 
 ## FAQs
 

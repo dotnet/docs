@@ -71,7 +71,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 ```
 
 > [!IMPORTANT]
-> The lines in the preceeding code **MUST BE IN THE ORDER SHOWN** for Identity to work correctly.
+> The lines in the preceding code **MUST BE IN THE ORDER SHOWN** for Identity to work correctly.
 
 Using ASP.NET Core Identity enables several scenarios:
 

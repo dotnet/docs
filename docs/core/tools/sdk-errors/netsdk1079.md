@@ -1,7 +1,7 @@
 ---
 title: "NETSDK1079: The Microsoft.AspNetCore.All package is not supported when targeting .NET Core 3.0 or higher."
 description: How to resolve migrate away from Microsoft.AspNetCore.App
-author: daplaist
+author: dsplaisted
 ms.topic: error-reference
 ms.date: 10/09/2020
 f1_keywords:

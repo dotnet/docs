@@ -7,7 +7,7 @@ ms.date: 09/26/2020
 
 # The Service Invocation building block
 
-In a distributed system, services often need to communicate other services to complete a business operation. The [Dapr Service Invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) enables you to streamline communication between services using either gRPC or HTTP protocols, while providing additional benefits.
+In a distributed system, services often need to communicate with other services to complete business operations. The [Dapr Service Invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) enables you to streamline communication between services using either gRPC or HTTP protocols, while providing additional benefits.
 
 ## What it solves
 

@@ -17,7 +17,7 @@ C# 8.0 introduces **nullable reference types** and **non-nullable reference type
 
 This new feature provides significant benefits over the handling of reference variables in earlier versions of C# where the design intent can't be determined from the variable declaration. The compiler didn't provide safety against null reference exceptions for reference types:
 
-- **A reference can be null**. The compiler doesn't issue warnings when a reference type is initialized to null, or later assigned null. The compiler issues warnings when these variables are dereferenced without null checks.
+- **A reference can be null**. The compiler doesn't issue warnings when a reference-type variable is initialized to `null`, or later assigned `null`. The compiler issues warnings when these variables are dereferenced without null checks.
 - **A reference is assumed to be not null**. The compiler doesn't issue any warnings when reference types are dereferenced. The compiler issues warnings if a variable is set to an expression that may be null.
 
 These warnings are emitted at compile time. The compiler doesn't add any null checks or other runtime constructs in a nullable context. At runtime, a nullable reference and a non-nullable reference are equivalent.

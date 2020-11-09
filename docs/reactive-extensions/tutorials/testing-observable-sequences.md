@@ -28,7 +28,6 @@ You can use the `Do` operator to debug your Rx application. The `Do` operator al
 
 In the following example, we are going to reuse the buffer example which generates integers every second, while putting them into buffers that can hold `5` items each. In the [Query observable sequences using LINQ operators](../how-to/query-sequences-linq.md) example, you subscribe only to the final `Observable(IList\<\>)` sequence when the buffer is full, and before it is emptied. In this example, however, we will use the `Do` operator to print out the values when they are being pushed out by the original sequence (an integer every second). When the buffer is full, we use the Do operator to print the status, before handing over all this as the final sequence for the observer to subscribe.
 
-
     var seq1 = Observable.Interval(TimeSpan.FromSeconds(1))
                .Do(x => Console.WriteLine(x.ToString()))
                .Buffer(5)

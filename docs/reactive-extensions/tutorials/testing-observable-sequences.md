@@ -28,53 +28,68 @@ You can use the `Do` operator to debug your Rx application. The `Do` operator al
 
 In the following example, we are going to reuse the buffer example which generates integers every second, while putting them into buffers that can hold `5` items each. In the [Query observable sequences using LINQ operators](../how-to/query-sequences-linq.md) example, you subscribe only to the final `Observable(IList\<\>)` sequence when the buffer is full, and before it is emptied. In this example, however, we will use the `Do` operator to print out the values when they are being pushed out by the original sequence (an integer every second). When the buffer is full, we use the Do operator to print the status, before handing over all this as the final sequence for the observer to subscribe.
 
-    var seq1 = Observable.Interval(TimeSpan.FromSeconds(1))
-               .Do(x => Console.WriteLine(x.ToString()))
-               .Buffer(5)
-               .Do(x => Console.WriteLine("buffer is full"))
-               .Subscribe(x => Console.WriteLine("Sum of the buffer is " + x.Sum()));
-    Console.ReadKey();
+```csharp
+var sequence =
+    Observable.Interval(TimeSpan.FromSeconds(1))
+        .Do(Console.WriteLine)
+        .Buffer(5)
+        .Do(_ => Console.WriteLine("buffer is full"))
+        .Subscribe(x => Console.WriteLine($"Sum of the buffer is {x.Sum()}"));
 
-As you can see from this sample, a subscription is on the recipient end of a series of chained observable sequences. At first, we create an observable sequence of integers separate by a second using the Interval operator. Then, we put 5 items into a buffer using the Buffer operator, and send them out as another sequence only when the buffer is full. Lastly, this is handed over to the Subscribe operator. Data propagate down all these intermediate sequences until they are pushed to the observer. In the same way, subscriptions are propagated in the reverse direction to the source sequence. By inserting the Do operator in the middle of such propagations, you can "spy" on such data flow just like you use Console.WriteLine in .NET or printf() in C to perform debugging.
+Console.ReadKey();
+```
+
+As you can see from this sample, a subscription is on the recipient end of a series of chained observable sequences. At first, we create an observable sequence of integers separate by a second using the `Interval` operator. Then, we put 5 items into a buffer using the Buffer operator, and send them out as another sequence only when the buffer is full. Lastly, this is handed over to the Subscribe operator. Data propagate down all these intermediate sequences until they are pushed to the observer. In the same way, subscriptions are propagated in the reverse direction to the source sequence. By inserting the `Do` operator in the middle of such propagations, you can "spy" on such data flow just like you use <xref:System.Console.WriteLine?displayProperty=nameWithType> in .NET to perform debugging.
 
 You can also use the Timestamp operator to verify the time when an item is pushed out by an observable sequence. This can help you troubleshoot time-based operations to ensure accuracy. Recall the following example from the [Creating and Subscribing to Simple Observable Sequences](hh242977\(v=vs.103\).md) topic, in which we chain the Timestamp operator to the query so that each value pushed out by the source sequence will be appended by the time when it is published. By doing so, when we subscribe to this source sequence, we can receive both its value and timestamp.
 
-    Console.WriteLine("Current Time: " + DateTime.Now);
-  
-    var source = Observable.Timer(TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(1))
-                           .Timestamp();
-    using (source.Subscribe(x => Console.WriteLine("{0}: {1}", x.Value, x.Timestamp)))
-          {
-               Console.WriteLine("Press any key to unsubscribe");
-               Console.ReadKey();
-          }
-    Console.WriteLine("Press any key to exit");
+```csharp
+Console.WriteLine($"Current Time: {DateTime.Now}\n");
+
+var source =
+    Observable.Timer(TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(1))
+        .Timestamp();
+
+using (source.Subscribe(value => Console.WriteLine("{value.Value}: {value.Timestamp}"))
+{
+    Console.WriteLine("Press any key to unsubscribe\n");
     Console.ReadKey();
+}
+
+Console.WriteLine("Press any key to exit");
+Console.ReadKey();
+```
 
 The output will be similar to this:
 
+```console
     Current Time: 5/31/2011 5:35:08 PM
 
     Press any key to unsubscribe
 
     0: 5/31/2011 5:35:13 PM -07:00
-
     1: 5/31/2011 5:35:14 PM -07:00
-
     2: 5/31/2011 5:35:15 PM -07:00
+```
 
-By using the Timestamp operator, we have verified that the first item is indeed pushed out 5 seconds after the sequence, and each item is published 1 second later.
+By using the `Timestamp` operator, we have verified that the first item is indeed pushed out `5` seconds after the sequence, and each item is published `1` second later.
 
 In addition, you can also set breakpoints inside lambda expressions to assist in debugging. Normally, you can only set a breakpoint for the whole query without singling out a particular value to look it. To workaround this limitation, you can insert the Select operator in the middle of the query and set a breakpoint it, and in the Select statement, project the identical value out as its source using a return statement on its own line. You can then set a breakpoint at the `return` statement line and examine values as they make their way through the query.
 
-    var seq = Observable.Interval(TimeSpan.FromSeconds(1))
-              .Do(x => Console.WriteLine(x.ToString()))
-              .Buffer(5)
-              .Select(y => { 
-                      return y; }) // set a breakpoint at this line
-              .Do(x => Console.WriteLine("buffer is full"))
-              .Subscribe(x => Console.WriteLine("Sum of the buffer is " + x.Sum()));
-    Console.ReadKey();
+```csharp
+var seq =
+    Observable.Interval(TimeSpan.FromSeconds(1))
+        .Do(Console.WriteLine)
+        .Buffer(5)
+        .Select(y =>
+        {
+            return y; // Set breakpoint here.
+        })
+        .Do(_ => Console.WriteLine("buffer is full"))
+        .Subscribe(x => Console.WriteLine($"Sum of the buffer is {x.Sum()}"));
+
+Console.ReadKey();
+```
 
 In this example, the breakpoint is set at the `return y` line. When you debug into the program, the `y` variable shows up in the **Locals** window and you can examine its total count `(5)`. If you expand `y`, you can also examine each item in the list including its value and type.
 
@@ -84,6 +99,6 @@ You can remove any `Do` and `Select` calls after you finish debugging.
 
 ## See also
 
-[Creating and Subscribing to Simple Observable Sequences](hh242977\(v=vs.103\).md)
-[Querying Observable Sequences using LINQ Operators](hh242983\(v=vs.103\).md)
-[Using Schedulers](hh242963\(v=vs.103\).md)
+- [Create and Subscribe to observable sequences](../quickstarts/create-and-subscribe-observable-sequences.md)
+- [Query observable sequences using LINQ operators](../how-to/query-sequences-linq.md)
+- [Use schedulers with observables](../how-to/use-schedulers.md)

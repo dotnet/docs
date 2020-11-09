@@ -23,9 +23,9 @@ landingContent:
             url: overview.md
       - linkListType: get-started
         links:
-          - text: Get started with .NET Core
-            url: ../core/get-started.md
-      - linkListType: concept
+          - text: How to use Subjects
+            url: use-subjects.md
+      - linkListType: how-to-guide
         links:
           - text: When to use Rx
             url: when-to-use-rx.md.md
@@ -43,6 +43,10 @@ landingContent:
             url: how-to/query-event-sequences.md
           - text: Query Observable sequences using LINQ operators
             url: how-to/query-sequences-linq.md
+          - text: Use Observable schedulers
+            url: how-to/use-schedulers.md
+          - text: Use observable providers
+            url: use-observable-providers.md
       - linkListType: tutorial
         links:
           - text: Implement custom operators

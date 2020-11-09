@@ -53,7 +53,7 @@ Although they are sometimes used interchangeably, a class and an object are diff
  Customer object2;
 ```
 
- We don't recommend creating object references such as this one that don't refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it to an existing object, such as this:  
+ We don't recommend creating object references such as this one that don't refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it an existing object, such as this:  
 
  ```csharp
  Customer object3 = new Customer();

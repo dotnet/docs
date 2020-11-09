@@ -11,10 +11,8 @@ The following APIs are marked as obsolete, starting in .NET 5.0. Using them in c
 - <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType>
 
-## Workaround
+## Workarounds
 
 Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead.
 
-## Suppress the warning
-
-It's recommended that you use the [workaround](#workaround). However, if you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
+[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]

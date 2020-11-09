@@ -58,7 +58,7 @@ The following breaking changes are documented on this page:
 
 ## .NET 5.0
 
-[!INCLUDE [lastindexof-improved-handing-of-empty-values](../../../includes/core-changes/corefx/5.0/lastindexof-improved-handing-of-empty-values.md)]
+[!INCLUDE [lastindexof-improved-handling-of-empty-values](../../../includes/core-changes/corefx/5.0/lastindexof-improved-handling-of-empty-values.md)]
 
 ***
 

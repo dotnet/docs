@@ -204,6 +204,10 @@ The complete list of obsolete CAS APIs is as follows:
 
 - If you're demanding <xref:System.Security.Permissions.PrincipalPermission>, consult the guidance for [SYSLIB0002: PrincipalPermissionAttribute is obsolete](syslib0002.md#workarounds). That guidance applies for both <xref:System.Security.Permissions.PrincipalPermission> and <xref:System.Security.Permissions.PrincipalPermissionAttribute>.
 
+## Suppress the warning
+
+It's recommended that you use one of the [workarounds](#workarounds). However, if you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
+
 ## See also
 
 - [SYSLIB0002: PrincipalPermissionAttribute is obsolete](syslib0002.md)

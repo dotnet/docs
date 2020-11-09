@@ -20,6 +20,10 @@ The following CER-related APIs are obsolete:
 - <xref:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute?displayProperty=nameWithType>
 - <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute?displayProperty=nameWithType>
 
+## Suppress the warning
+
+It's recommended that you use one of the [workarounds](#workarounds). However, if you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
+
 ## See also
 
 - [Constrained execution regions](../../framework/performance/constrained-execution-regions.md)

@@ -30,6 +30,10 @@ void ProcessPendingWorkItemsNew(CancellationToken cancellationToken)
 }
 ```
 
+## Suppress the warning
+
+It's recommended that you use the [workaround](#workaround). However, if you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
+
 ## See also
 
 - [Thread.Abort is obsolete - breaking change](3.1-5.0.md#threadabort-is-obsolete)

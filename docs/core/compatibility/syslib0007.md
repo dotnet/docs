@@ -14,7 +14,7 @@ The cryptographic configuration system in .NET Framework doesn't allow for prope
 - <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=fullName>
 - <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=fullName>
 
-## Workaround
+## Workarounds
 
 - The recommended course of action is to replace calls to the now-obsolete APIs with calls to factory methods for specific algorithms, for example, <xref:System.Security.Cryptography.Aes.Create?displayProperty=nameWithType>. This gives you full control over which algorithms are instantiated.
 
@@ -27,6 +27,10 @@ The cryptographic configuration system in .NET Framework doesn't allow for prope
   | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.HMACSHA1.%23ctor> | The HMACSHA1 algorithm is discouraged for most modern applications. Consider using a stronger algorithm if possible. Consult your security advisor for further guidance. |
   | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.HMACSHA1.%23ctor> | The HMACSHA1 algorithm is discouraged for most modern applications. Consider using a stronger algorithm if possible. Consult your security advisor for further guidance. |
   | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=nameWithType> | <xref:System.Security.Cryptography.Aes.Create?displayProperty=nameWithType> |
+
+## Suppress the warning
+
+It's recommended that you use one of the [workarounds](#workarounds). However, if you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
 
 ## See also
 

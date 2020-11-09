@@ -54,6 +54,10 @@ Unlike other obsoletion warnings, you can't suppress the error.
   }
   ```
 
+## Suppress the warning
+
+It's recommended that you use one of the [workarounds](#workarounds). However, if you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
+
 ## See also
 
 - [PrincipalPermissionAttribute is obsolete as error](3.1-5.0.md#principalpermissionattribute-is-obsolete-as-error)

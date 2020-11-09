@@ -41,6 +41,11 @@ Consequently, the following APIs are marked obsolete, starting in .NET 5.0. Use 
   }
   ```
 
+## Suppress the warning
+
+It's recommended that you use one of the [workarounds](#workarounds). However, if you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
+
+
 ## See also
 
 - [UTF-7 code paths are obsolete](3.1-5.0.md#utf-7-code-paths-are-obsolete)

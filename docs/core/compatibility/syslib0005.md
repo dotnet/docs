@@ -18,6 +18,10 @@ The following GAC-related APIs are marked obsolete:
 
 If your application queries the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property, consider removing the call. If you use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> value to choose between an "assembly in the GAC"-flow vs. an "assembly not in the GAC"-flow at run time, reconsider whether the flow still makes sense for a .NET 5+ application.
 
+## Suppress the warning
+
+It's recommended that you use the [workaround](#workaround). However, if you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
+
 ## See also
 
 - [Global assembly cache](../../framework/app-domains/gac.md)

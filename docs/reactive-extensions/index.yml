@@ -1,14 +1,13 @@
 ### YamlMime:Landing
 
-title: Reactive Extensions (Rx.NET)
+title: Reactive Extensions (Rx) documentation
 summary: Learn about Reactive Extensions in .NET, an open-source library for composing asynchronous and event-based programs using observable sequences and LINQ-style query operators.
-
 metadata:
   title: Reactive Extensions (Rx) documentation
   description: Learn about Reactive Extensions in .NET, an open-source library for composing asynchronous and event-based programs using observable sequences and LINQ-style query operators
   author: IEvangelist
   ms.topic: landing-page
-  ms.date: 11/03/2020
+  ms.date: 11/09/2020
   ms.author: dapine
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -18,10 +17,6 @@ landingContent:
   # Card
   - title: Learn about Rx.NET
     linkLists:
-      - linkListType: download
-        links:
-        - text: Download Rx.NET
-          url: https://www.nuget.org/packages/System.Reactive
       - linkListType: overview
         links:
           - text: What is Reactive Extensions?
@@ -34,6 +29,10 @@ landingContent:
         links:
           - text: When to use Rx
             url: when-to-use-rx.md.md
+      - linkListType: download
+        links:
+        - text: Download System.Reactive (NuGet)
+          url: https://www.nuget.org/packages/System.Reactive
 
   # Card
   - title: Query sequences and operators

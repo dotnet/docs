@@ -2,20 +2,20 @@
 title: Reactive Extensions (Rx)
 description: Learn about Reactive Extensions (Rx) for .NET, a library for composing asynchronous and event-based observable sequences.
 author: IEvangelist
-ms.date: 11/03/2020
+ms.date: 11/09/2020
 ms.author: dapine
 ms.topic: overview
 ---
 
 # Reactive Extensions (Rx)
 
-Reactive Extensions is based on [ReactiveX](http://reactivex.io), which is an API for asynchronous programming with observable streams. The [Reactive Extensions (Rx) for .NET](https://www.nuget.org/packages/System.Reactive) NuGet package, is the .NET implemenation. This library is used to compose asynchronous and event-based programs using observable sequences and LINQ-style query operators. Data sequences can take many forms, such as a stream of data from a file or web service, system notifications, or a series of events from user input.
+Reactive Extensions is based on [ReactiveX](http://reactivex.io), which is an API for asynchronous programming with observable streams. The [Reactive Extensions (Rx) for .NET](https://www.nuget.org/packages/System.Reactive) NuGet package, is the .NET implementation. This library is used to compose asynchronous and event-based programs using observable sequences, and LINQ-style query operators. Data sequences can take many forms, such as a stream of data from a file or web service, system notifications, or a series of events from user input.
 
-Reactive Extensions represents all these data streams as observable sequences. An application can subscribe to these observable sequences to receive asynchronous notifications as new data arrives. The Rx library is available for all .NET application development, but is not always the right tool for the job. For more information, see [When to use Rx](when-to-use-rx.md).
+Reactive Extensions represents all these data streams as observable sequences. An application can subscribe to these observable sequences to receive asynchronous notifications as new data arrives, much like an event callback. The Rx library is available for all .NET application development, but is not always the right tool for the job. For more information on choosing this programming paradigm, see [When to use Rx](when-to-use-rx.md).
 
-## Pull vs Push data streams
+## Pull vs push data streams
 
-In interactive programming, the application actively polls a data source for more information by pulling data from a sequence that represents the source. Such behavior is represented by the iterator pattern of <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Collections.Generic.IEnumerator%601>. The <xref:System.Collections.Generic.IEnumerable%601> interface exposes a method <xref:System.Collections.IEnumerable.GetEnumerator?displayProperty=nameWithType>, which returns an <xref:System.Collections.Generic.IEnumerator%601> to iterate through the collection. The <xref:System.Collections.Generic.IEnumerator%601> allows the consumer to get the current item (by returning the <xref:System.Collections.IEnumerator.Current?displayProperty=nameWithType> property), and determine whether there are more items to iterate (by calling the <xref:System.Collections.IEnumerator.MoveNext?displayProperty=nameWithType> method).
+In interactive programming, the application actively polls a data source for more information by pulling data from a sequence that represents the source. Such behavior is represented by the iterator pattern of <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Collections.Generic.IEnumerator%601>. The <xref:System.Collections.Generic.IEnumerable%601> interface exposes a method <xref:System.Collections.IEnumerable.GetEnumerator?displayProperty=nameWithType>, which returns an <xref:System.Collections.Generic.IEnumerator%601> to iterate through the collection. The <xref:System.Collections.Generic.IEnumerator%601> allows the consumer to get the current item through the <xref:System.Collections.IEnumerator.Current?displayProperty=nameWithType> property, and determine whether there are more items to iterate with the <xref:System.Collections.IEnumerator.MoveNext?displayProperty=nameWithType> method.
 
 The application is active in the data retrieval process: besides getting an enumerator by calling <xref:System.Collections.IEnumerable.GetEnumerator>, it also controls the pace of the retrieval by calling <xref:System.Collections.IEnumerator.MoveNext> at its own convenience. This enumeration pattern is synchronous, which means that the application might be blocked while polling the data source. Such pulling pattern is similar to visiting your library and checking out a book. After you are done with the book, you pay another visit to check out another one.
 
@@ -25,13 +25,13 @@ This is the push (observable) pattern employed by Reactive Extensions. It is sim
 
 ## Observables
 
-Rx exposes asynchronous and event-based data sources as push-based, observable sequences abstracted by the new <xref:System.IObservable%601> interface. This <xref:System.IObservable%601> interface is a dual of the familiar <xref:System.Collections.Generic.IEnumerable%601> interface used for pull-based, enumerable collections. It represents a data source that can be observed, meaning that it can send data to anyone who is interested. It maintains a list of dependent <xref:System.IObserver%601> implementations representing such interested listeners, and notifies them automatically of any state changes.
+Rx exposes asynchronous and event-based data sources as push-based, observable sequences abstracted by the <xref:System.IObservable%601> interface. This <xref:System.IObservable%601> interface is a dual of the aforementioned <xref:System.Collections.Generic.IEnumerable%601> interface used for pull-based, enumerable collections. It represents a data source that can be observed, meaning that it can send data to anyone who is interested. It maintains a list of dependent <xref:System.IObserver%601> implementations representing such interested listeners, and notifies them automatically of any state changes.
 
 An implementation of the <xref:System.IObservable%601> interface can be viewed as a collection of elements of type `T`. Therefore, an `IObservable<int>` can be viewed as a collection of integers, in which integers will be pushed to the subscribed observers.
 
 The other half of the push model is the <xref:System.IObserver%601> interface, which represents an observer who registers an interest through a subscription. Items are subsequently handed to the observer from the observable sequence to which it subscribes.
 
-In order to receive notifications from an observable collection, you use the <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType> method to hand it an <xref:System.IObserver%601> object. In return for this observer, the <xref:System.IObservable%601.Subscribe%2A> method returns an <xref:System.IDisposable> object that acts as a handle for the subscription. This allows you to clean up the subscription after you are done. Calling <xref:System.IDisposable.Dispose> on this object detaches the observer from the source so that notifications are no longer delivered. As you can infer, in Rx you do not need to explicitly unsubscribe from an event as in the .NET event model.
+In order to receive notifications from an observable collection, you use the <xref:System.IObservable%601.Subscribe%2A?displayProperty=nameWithType> method to hand it an <xref:System.IObserver%601> object. In return for this observer, the <xref:System.IObservable%601.Subscribe%2A> method returns an <xref:System.IDisposable> object that acts as a handle for the subscription. This allows you to clean up the subscription after you are done. Calling <xref:System.IDisposable.Dispose> on this object detaches the observer from the source so that notifications are no longer delivered. In Rx you do not need to explicitly unsubscribe from an event as in the .NET event model.
 
 Observers support three publication events, reflected by the interface's methods. <xref:System.IObserver%601.OnNext%2A?displayProperty=nameWithType> can be called zero or more times, when the observable data source has data available. For example, an observable data source used for mouse move events can send out a Point object every time the mouse has moved. The other two methods are used to indicate completion or errors.
 
@@ -59,11 +59,13 @@ Rx also provides a `Subscribe` extension methods so that you can avoid implement
 
 :::code language="csharp" source="snippets/observable/Program.cs":::
 
-You can treat the observable sequence (such as a sequence of mouse-over events) as if it were a normal collection. Thus you can write LINQ queries over the collection to do things like filtering, grouping, composing, etc. To make observable sequences more useful, the Rx assemblies provide many factory LINQ operators so that you do not need to implement any of these on your own. This will be covered in the [Querying Observable Sequences using LINQ Operators](hh242983(v=vs.103).md) topic.
+You treat the observable sequence (such as a sequence of mouse-over events) as if it were a normal collection. Thus you can write LINQ queries over the collection to do things like filtering, grouping, and composing. To make observable sequences more useful, the Rx library provides many factory LINQ operators so that you do not need to implement any of these on your own. For more information, see [Query observable sequences using LINQ operators](how-to/query-sequences-linq.md).
 
-> [!WARNING]
-> You do not need to implement the IObservable&lt;T&gt;/IObserver&lt;T&gt; interfaces yourself.  Rx provides internal implementations of these interfaces for you and exposes them through various extension methods provided by the <A href="hh244252(v=vs.103).md">Observable</A> and Observer types.  See the <A href="hh242972(v=vs.103).md">Creating and Querying Observable Sequences</A> topic for more information.
+> [!TIP]
+> You do not need to implement the `IObservable<T>` and `IObserver<T>` interfaces yourself. Rx provides implementations of these interfaces for you and exposes them through various extension methods provided by the `Observable` and `Observer` types. For more information, see [Create and Subscribe to observable sequences](quickstarts/create-and-subscribe-observable-sequences.md).
 
 ## See also
 
-For more information on the <xref:System.IObservable%601> and <xref:System.IObserver%601>interfaces, see [Exploring Rx interfaces](hh242974\(v=vs.103\).md). For tutorials on using the different features in Rx, see [Using Rx](hh242981\(v=vs.103\).md).
+- [When to use Rx](when-to-use-rx.md)
+- [Create and Subscribe to observable sequences](quickstarts/create-and-subscribe-observable-sequences.md)
+- [Query observable sequences using LINQ operators](how-to/query-sequences-linq.md)

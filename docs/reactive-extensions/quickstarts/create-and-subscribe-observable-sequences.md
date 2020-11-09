@@ -1,12 +1,12 @@
 ---
-title: Create and Subscribe to Observable sequences
-description: Learn how to create and subscribe to an Observable sequence with Reactive Extensions for .NET.
+title: Create and Subscribe to observable sequences
+description: Learn how to create and subscribe to an observable sequence with Reactive Extensions for .NET.
 author: IEvangelist
 ms.author: dapine
 ms.date: 11/05/2020
 ---
 
-# Create and Subscribe to Observable sequences
+# Create and Subscribe to observable sequences
 
 You do not need to implement the IObservable\<T\> interface manually to create an observable sequences. Similarly, you do not need to implement IObserver\<T\> either to subscribe to a sequence. By installing the Reactive Extension assemblies, you can take advantage of the `Observable` type which provides many static LINQ operators for you to create a simple sequence with zero, one or more elements. In addition, Rx provides Subscribe extension methods that take various combinations of `OnNext`, `OnError`, and `OnCompleted` handlers in terms of delegates.
 

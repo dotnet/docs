@@ -1,5 +1,5 @@
 ---
-title: "NETSDK1013: The TargetFramework value '{0}' was not recognized. It may be misspelled. If not, then the TargetFrameworkIdentifier and/or TargetFrameworkVersion properties must be specified explicitly."
+title: "NETSDK1013: The TargetFramework value was not recognized."
 description: How to determine and set a valid TargetFramework value
 author: marcpop
 ms.topic: error-reference

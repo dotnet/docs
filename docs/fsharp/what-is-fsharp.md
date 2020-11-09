@@ -13,8 +13,7 @@ F# programming primarily involves defining types and functions that are type-inf
 open System // Gets access to functionality in System namespace.
 
 // Defines a function that takes a name and produces a greeting.
-let getGreeting name =
-    sprintf "Hello, %s! Isn't F# great?" name
+let getGreeting name = $"Hello, {name}! Isn't F# great?"
 
 [<EntryPoint>]
 let main args =

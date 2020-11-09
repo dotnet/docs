@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Reactive;
+using System.Reactive.Linq;
 
-static IEnumerable<ConsoleKeyInfo> GetInput()
-{
-    var input = new HashSet<ConsoleKeyInfo>();
-    var keyCount = 0;
-    while (Console.KeyAvailable)
-    {
-        var key = Console.ReadKey(true);
-        if (++ keyCount > 10) continue;
+IObservable<int> source = Observable.Range(1, 10);
+IObserver<int> observer =
+    Observer.Create<int>(
+        value => Console.WriteLine("OnNext: {value}"),
+        ex => Console.WriteLine("OnError: {ex.Message}"),
+        () => Console.WriteLine("OnCompleted"));
 
-        input.Add(key);
-    }
+using IDisposable _ = source.Subscribe(observer);
 
-    return input;
-}
+Console.WriteLine("Press any key to unsubscribe...");
+Console.ReadLine();

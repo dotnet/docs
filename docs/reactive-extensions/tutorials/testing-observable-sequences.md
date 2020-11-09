@@ -3,12 +3,12 @@ title: Test and debug observable sequences
 description: Learn how to test and debug observable sequences using Microsoft.Reactive.Testing package.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/05/2020
+ms.date: 11/09/2020
 ---
 
 # Test and debug observable sequences
 
-If you have an observable sequence that publishes values over an extended period of time, testing it in real time can be difficult. Use the `Microsoft.Reactive.Testing` NuGet package to test observable sequences. The `Microsoft.Reactive.Testing.TestScheduler` type can assist testing this kind of time-dependent code without actually waiting for time to pass. The `TestScheduler` inherits `VirtualTimeScheduler`, and allows you to create, publish and subscribe to sequences in emulated time. For example, you can compact a publication which takes 5 days to complete into a 2 minute run, while maintaining the correct scale. You can also take a sequence which actually has happened in the past, and compute, or subscribe to it as if it is pushing out new values in real time.
+If you have an observable sequence that publishes values over an extended period of time, testing it in real-time can be difficult. Use the [`Microsoft.Reactive.Testing`](https://www.nuget.org/packages/Microsoft.Reactive.Testing) NuGet package to test observable sequences. The `Microsoft.Reactive.Testing.TestScheduler` type can assist testing this kind of time-dependent code, without actually waiting for time to pass. The `TestScheduler` inherits `VirtualTimeScheduler`, and allows you to create, publish and subscribe to sequences in emulated time. For example, you can compact a publication which takes 5 days to complete into a 2 minute run, while maintaining the correct scale. You can also take a sequence which actually has happened in the past, and compute, or subscribe to it as if it is pushing out new values in real time.
 
 The factory `Start` method executes all scheduled tasks until the queue is empty, or you can specify a time to so that queued-up tasks are only executed to the specified time.
 
@@ -26,7 +26,8 @@ In the same way, you can use `ReactiveAssert.AreElementsEqual` to confirm that s
 
 You can use the `Do` operator to debug your Rx application. The `Do` operator allows you to specify various actions to be taken for each item of observable sequence, for example: print, or log the item. This is especially helpful when you are chaining many operators and you want to know what values are produced at each level.
 
-In the following example, we are going to reuse the Buffer example which generates integers every second, while putting them into buffers that can hold 5 items each. In our original example in the [Querying Observable Sequences using LINQ Operators](hh242983\(v=vs.103\).md) topic, we subscribe only to the final Observable(IList\<\>) sequence when the buffer is full (and before it is emptied). In this example, however, we will use the Do operator to print out the values when they are being pushed out by the original sequence (an integer every second). When the buffer is full, we use the Do operator to print the status, before handing over all this as the final sequence for the observer to subscribe.
+In the following example, we are going to reuse the buffer example which generates integers every second, while putting them into buffers that can hold `5` items each. In the [Query observable sequences using LINQ operators](../how-to/query-sequences-linq.md) example, you subscribe only to the final `Observable(IList\<\>)` sequence when the buffer is full, and before it is emptied. In this example, however, we will use the `Do` operator to print out the values when they are being pushed out by the original sequence (an integer every second). When the buffer is full, we use the Do operator to print the status, before handing over all this as the final sequence for the observer to subscribe.
+
 
     var seq1 = Observable.Interval(TimeSpan.FromSeconds(1))
                .Do(x => Console.WriteLine(x.ToString()))
@@ -40,7 +41,7 @@ As you can see from this sample, a subscription is on the recipient end of a ser
 You can also use the Timestamp operator to verify the time when an item is pushed out by an observable sequence. This can help you troubleshoot time-based operations to ensure accuracy. Recall the following example from the [Creating and Subscribing to Simple Observable Sequences](hh242977\(v=vs.103\).md) topic, in which we chain the Timestamp operator to the query so that each value pushed out by the source sequence will be appended by the time when it is published. By doing so, when we subscribe to this source sequence, we can receive both its value and timestamp.
 
     Console.WriteLine("Current Time: " + DateTime.Now);
-    
+  
     var source = Observable.Timer(TimeSpan.FromSeconds(5), TimeSpan.FromSeconds(1))
                            .Timestamp();
     using (source.Subscribe(x => Console.WriteLine("{0}: {1}", x.Value, x.Timestamp)))
@@ -80,12 +81,10 @@ In this example, the breakpoint is set at the `return y` line. When you debug in
 
 Alternatively, you can convert a lambda expression to a statement lambda expression, format code so that a statement is on its own line, and then set a breakpoint.
 
-You can remove any Do and Select calls after you finish debugging.
+You can remove any `Do` and `Select` calls after you finish debugging.
 
-## See Also
+## See also
 
-#### Concepts
-
-[Creating and Subscribing to Simple Observable Sequences](hh242977\(v=vs.103\).md)  
-[Querying Observable Sequences using LINQ Operators](hh242983\(v=vs.103\).md)  
+[Creating and Subscribing to Simple Observable Sequences](hh242977\(v=vs.103\).md)
+[Querying Observable Sequences using LINQ Operators](hh242983\(v=vs.103\).md)
 [Using Schedulers](hh242963\(v=vs.103\).md)

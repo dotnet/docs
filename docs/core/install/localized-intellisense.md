@@ -1,24 +1,24 @@
 ---
 title: Install localized IntelliSense files
-description: Learn how to set up your development machine to use localized IntelliSense files for .NET Core projects in Visual Studio.
-ms.date: 01/23/2020
+description: Learn how to set up your development machine to use localized IntelliSense files for .NET 5+ projects (including .NET Core) in Visual Studio.
+ms.date: 11/06/2020
 ---
-# How to install localized IntelliSense files for .NET Core
+# How to install localized IntelliSense files for .NET
 
-[IntelliSense](/visualstudio/ide/using-intellisense) is a code-completion aid that is available in different integrated development environments (IDEs), such as Visual Studio. By default, when you're developing .NET Core projects, the SDK only includes the English version of the IntelliSense files. This article explains:
+[IntelliSense](/visualstudio/ide/using-intellisense) is a code-completion aid that's available in different integrated development environments (IDEs), such as Visual Studio. By default, when you're developing .NET projects, the SDK only includes the English version of the IntelliSense files. This article explains:
 
 - How to install the localized version of those files.
 - How to modify the Visual Studio installation to use a different language.
 
 ## Prerequisites
 
-- [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
+- [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version, such as [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
 - [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or a later version.
 
 ## Download and install the localized IntelliSense files
 
 > [!IMPORTANT]
-> This procedure requires that you have administrator permission to copy the IntelliSense files to the .NET Core installation folder.
+> This procedure requires that you have administrator permission to copy the IntelliSense files to the .NET installation folder.
 
 1. Go to the [Download IntelliSense files](https://dotnet.microsoft.com/download/dotnet-core/intellisense) page.
 
@@ -26,22 +26,22 @@ ms.date: 01/23/2020
 
 1. Extract the contents of the zip file.
 
-1. Navigate to the .NET Core Intellisense folder.
+1. Navigate to the .NET Intellisense folder.
 
-   1. Navigate to the .NET Core installation folder. By default, it's under *%ProgramFiles%\dotnet\packs*.
+   1. Navigate to the .NET installation folder. By default, it's under *%ProgramFiles%\dotnet\packs*.
    1. Choose which SDK you want to install the IntelliSense for, and navigate to the associated path. You have the following options:
 
-      | SDK type        | Path                               |
-      | --------------- | ---------------------------------- |
-      | .NET Core       | *Microsoft.NETCore.App.Ref*        |
-      | Windows Desktop | *Microsoft.WindowsDesktop.App.Ref* |
-      | .NET Standard   | *NETStandard.Library.Ref*          |
+      | SDK type              | Path                               |
+      |-----------------------|------------------------------------|
+      | .NET 5+ and .NET Core | *Microsoft.NETCore.App.Ref*        |
+      | Windows Desktop       | *Microsoft.WindowsDesktop.App.Ref* |
+      | .NET Standard         | *NETStandard.Library.Ref*          |
 
    1. Navigate to the version you want to install the localized IntelliSense for. For example, *3.1.0*.
    1. Open the *ref* folder.
-   1. Open the moniker folder. For example, *netcoreapp3.1*.
+   1. Open the moniker folder. For example, *net5.0*.
 
-   So, the full path that you'd navigate to would look similar to *C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1*.
+   So, the full path that you'd navigate to would look similar to *C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\5.0.0\ref\net5.0*.
 
 1. Create a subfolder inside the moniker folder you just opened. The name of the folder indicates which language you want to use. The following table specifies the different options:
 
@@ -58,7 +58,7 @@ ms.date: 01/23/2020
    | Russian               | *ru*        |
    | Spanish               | *es*        |
 
-1. Copy the *.xml* files you extracted on step 3 to this new folder. The *.xml* files are broken down by SDK folders, so copy them to the matching SDK you chose on step 4.
+1. Copy the *.xml* files you extracted in step 3 to this new folder. The *.xml* files are broken down by SDK folders, so copy them to the matching SDK you chose in step 4.
 
 ## Modify Visual Studio language
 
@@ -116,7 +116,7 @@ Once you've installed the desired language packs, modify your Visual Studio sett
 
 1. Restart Visual Studio.
 
-After this, your IntelliSense should work as expected when you open a .NET Core project that targets the version of the IntelliSense files you just installed.
+After this, your IntelliSense should work as expected when you open a .NET project that targets the version of the IntelliSense files you just installed.
 
 ## See also
 

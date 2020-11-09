@@ -3,11 +3,11 @@ title: "Dates, times, and time zones"
 ms.date: "04/10/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "time zone objects [.NET Framework]"
-  - "date and time data [.NET Framework]"
-  - "time zones [.NET Framework]"
-  - "times [.NET Framework], time zones"
-  - "time [.NET Framework], time zones"
+  - "time zone objects [.NET]"
+  - "date and time data [.NET]"
+  - "time zones [.NET]"
+  - "times [.NET], time zones"
+  - "time [.NET], time zones"
 ms.assetid: 295c16e0-641b-4771-94b3-39c1ffa98c13
 ---
 # Dates, times, and time zones

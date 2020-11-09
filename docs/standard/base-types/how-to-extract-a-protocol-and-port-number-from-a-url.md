@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "searching with regular expressions, examples"
   - "parsing text with regular expressions, examples"
   - "regular expressions, examples"
-  - ".NET Framework regular expressions, examples"
-  - "regular expressions [.NET Framework], examples"
+  - ".NET regular expressions, examples"
+  - "regular expressions [.NET], examples"
   - "pattern-matching with regular expressions, examples"
 ms.assetid: ab7f62b3-6d2c-4efb-8ac6-28600df5fd5c
 ---

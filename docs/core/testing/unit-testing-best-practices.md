@@ -222,7 +222,7 @@ When you introduce logic into your test suite, the chance of introducing a bug i
 
 ### Prefer helper methods to setup and teardown
 
-If you require a similar object or state for your tests, prefer a helper method than leveraging Setup and Teardown attributes if they exist.
+If you require a similar object or state for your tests, prefer a helper method than leveraging `Setup` and `Teardown` attributes if they exist.
 
 #### Why?
 

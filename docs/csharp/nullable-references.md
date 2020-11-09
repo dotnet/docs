@@ -17,7 +17,7 @@ C# 8.0 introduces **nullable reference types** and **non-nullable reference type
 
 This new feature provides significant benefits over the handling of reference variables in earlier versions of C# where the design intent can't be determined from the variable declaration. The compiler didn't provide safety against null reference exceptions for reference types:
 
-- **A reference can be null**. The compiler doesn't issue warnings when a reference type is initialized to null, or later assigned to null. The compiler issues warnings when these variables are dereferenced without null checks.
+- **A reference can be null**. The compiler doesn't issue warnings when a reference-type variable is initialized to `null`, or later assigned `null`. The compiler issues warnings when these variables are dereferenced without null checks.
 - **A reference is assumed to be not null**. The compiler doesn't issue any warnings when reference types are dereferenced. The compiler issues warnings if a variable is set to an expression that may be null.
 
 These warnings are emitted at compile time. The compiler doesn't add any null checks or other runtime constructs in a nullable context. At runtime, a nullable reference and a non-nullable reference are equivalent.
@@ -110,10 +110,10 @@ In an enabled nullable annotation context, the `?` character appended to a refer
 
 The nullable warning context is distinct from the nullable annotation context. Warnings can be enabled even when the new annotations are disabled. The compiler uses static flow analysis to determine the **null state** of any reference. The null state is either **not null** or **maybe null** when the *nullable warning context* isn't **disabled**. If you dereference a reference when the compiler has determined it's **maybe null**, the compiler warns you. The state of a reference is **maybe null** unless the compiler can determine one of two conditions:
 
-1. The variable has been definitely assigned to a non-null value.
+1. The variable has been definitely assigned a non-null value.
 1. The variable or expression has been checked against null before de-referencing it.
 
-The compiler generates warnings when you dereference a variable or expression that is **maybe null** in a nullable warning context. Furthermore, the compiler generates warnings when a nonnullable reference type is assigned to a **maybe null** variable or expression in an enabled nullable annotation context.
+The compiler generates warnings when you dereference a variable or expression that is **maybe null** in a nullable warning context. Furthermore, the compiler generates warnings when a nonnullable reference-type variable is assigned a **maybe null** variable or expression in an enabled nullable annotation context.
 
 ## Attributes describe APIs
 

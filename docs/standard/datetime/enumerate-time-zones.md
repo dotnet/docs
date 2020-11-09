@@ -6,8 +6,8 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "time zones [.NET Framework], enumerating"
-  - "enumerating time zones [.NET Framework]"
+  - "time zones [.NET], enumerating"
+  - "enumerating time zones [.NET]"
 ms.assetid: bb7a42ab-6bd9-4c5c-b734-5546d51f8669
 ---
 # How to: Enumerate time zones present on a computer

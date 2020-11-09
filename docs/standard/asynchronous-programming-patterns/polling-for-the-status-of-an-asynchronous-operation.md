@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "asynchronous programming, status polling"
   - "polling asynchronous operation status"
-  - "status information [.NET Framework], asynchronous operations"
+  - "status information [.NET], asynchronous operations"
 ms.assetid: b541af31-dacb-4e20-8847-1b1ff7c35363
 ---
 # Polling for the Status of an Asynchronous Operation

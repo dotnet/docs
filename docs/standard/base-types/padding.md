@@ -8,7 +8,7 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "strings [.NET Framework], padding"
+  - "strings [.NET], padding"
   - "white space"
   - "PadRight method"
   - "PadLeft method"

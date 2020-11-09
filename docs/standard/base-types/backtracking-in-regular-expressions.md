@@ -7,14 +7,14 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - ".NET Framework regular expressions, backtracking"
+  - ".NET regular expressions, backtracking"
   - "alternative matching patterns"
   - "optional matching patterns"
   - "searching with regular expressions, backtracking"
   - "pattern-matching with regular expressions, backtracking"
   - "backtracking"
-  - "regular expressions [.NET Framework], backtracking"
-  - "strings [.NET Framework], regular expressions"
+  - "regular expressions [.NET], backtracking"
+  - "strings [.NET], regular expressions"
   - "parsing text with regular expressions, backtracking"
 ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
 ---

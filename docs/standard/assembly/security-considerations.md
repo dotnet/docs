@@ -3,21 +3,22 @@ title: "Assembly security considerations"
 description: When you build a .NET assembly, you can specify permissions the assembly requires to run. This article discusses strong-named assemblies and signing tools.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
-  - "assemblies [.NET Framework], security"
+  - "assemblies [.NET], security"
   - "signcodes"
-  - "names [.NET Framework], assemblies"
+  - "names [.NET], assemblies"
   - "strong-named assemblies, security considerations"
   - "signing assemblies"
-  - "assemblies [.NET Framework], signing"
+  - "assemblies [.NET], signing"
   - "granting permissions, assemblies"
-  - "assemblies [.NET Framework], strong-named"
-  - "names [.NET Framework], strong names"
-  - "permissions [.NET Framework], assemblies"
-  - "security [.NET Framework], assemblies"
+  - "assemblies [.NET], strong-named"
+  - "names [.NET], strong names"
+  - "permissions [.NET], assemblies"
+  - "security [.NET], assemblies"
   - "integrity with assemblies"
 ms.assetid: 1b5439c1-f3d5-4529-bd69-01814703d067
 ---
 # Assembly security considerations
+
 When you build an assembly, you can specify a set of permissions that the assembly requires to run. Whether certain permissions are granted or not granted to an assembly is based on evidence.  
   
  There are two distinct ways evidence is used:  

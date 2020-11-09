@@ -9,10 +9,11 @@ helpviewer_keywords:
   - "data streams, writing characters to string"
   - "writing characters to strings"
   - "streams, writing characters to strings"
-  - "I/O [.NET Framework], writing characters to strings"
+  - "I/O [.NET], writing characters to strings"
 ms.assetid: 1222cbeb-0760-44bf-9888-914a2a37174b
 ---
 # How to: Write characters to a string
+
 The following code examples write characters synchronously or asynchronously from a character array into a string.  
   
 ## Example: Write characters synchronously in a console app  

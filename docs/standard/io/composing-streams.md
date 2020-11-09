@@ -8,7 +8,7 @@ dev_langs:
   - "cpp"
 helpviewer_keywords: 
   - "streams, base streams"
-  - "I/O [.NET Framework], composing streams"
+  - "I/O [.NET], composing streams"
   - "Stream class, composing streams"
   - "base streams"
   - "streams, backing stores"

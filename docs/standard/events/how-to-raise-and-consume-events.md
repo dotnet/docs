@@ -8,9 +8,9 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "events [.NET Framework], raising"
+  - "events [.NET], raising"
   - "raising events"
-  - "events [.NET Framework], samples"
+  - "events [.NET], samples"
 ms.assetid: 42afade7-3a02-4f2e-868b-95845f302f8f
 ---
 # How to: Raise and Consume Events

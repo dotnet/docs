@@ -4,19 +4,20 @@ description: Learn to consume the Task-based Asynchronous Pattern (TAP) when wor
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:
-  - ".NET Framework, and TAP"
-  - "asynchronous design patterns, .NET Framework"
-  - "TAP, .NET Framework support for"
-  - "Task-based Asynchronous Pattern, .NET Framework support for"
-  - ".NET Framework, asynchronous design patterns"
+  - ".NET and TAP"
+  - "asynchronous design patterns, .NET"
+  - "TAP, .NET support for"
+  - "Task-based Asynchronous Pattern, .NET support for"
+  - ".NET, asynchronous design patterns"
 ms.assetid: 033cf871-ae24-433d-8939-7a3793e547bf
 ---
 # Consuming the Task-based Asynchronous Pattern
 
-When you use the Task-based Asynchronous Pattern (TAP) to work with asynchronous operations, you can use callbacks to achieve waiting without blocking.  For tasks, this is achieved through methods such as <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType>. Language-based asynchronous support hides callbacks by allowing asynchronous operations to be awaited within normal control flow, and compiler-generated code provides this same API-level support.
+When you use the Task-based Asynchronous Pattern (TAP) to work with asynchronous operations, you can use callbacks to achieve waiting without blocking. For tasks, this is achieved through methods such as <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType>. Language-based asynchronous support hides callbacks by allowing asynchronous operations to be awaited within normal control flow, and compiler-generated code provides this same API-level support.
 
 ## Suspending Execution with Await
- Starting with the .NET Framework 4.5, you can use the [await](../../csharp/language-reference/operators/await.md) keyword in C# and the [Await Operator](../../visual-basic/language-reference/operators/await-operator.md) in Visual Basic to asynchronously await <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects. When you're awaiting a <xref:System.Threading.Tasks.Task>, the `await` expression is of type `void`. When you're awaiting a <xref:System.Threading.Tasks.Task%601>, the `await` expression is of type `TResult`. An `await` expression must occur inside the body of an asynchronous method. For more information about C# and Visual Basic language support in the .NET Framework 4.5, see the C# and Visual Basic language specifications.
+
+You can use the [await](../../csharp/language-reference/operators/await.md) keyword in C# and the [Await Operator](../../visual-basic/language-reference/operators/await-operator.md) in Visual Basic to asynchronously await <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects. When you're awaiting a <xref:System.Threading.Tasks.Task>, the `await` expression is of type `void`. When you're awaiting a <xref:System.Threading.Tasks.Task%601>, the `await` expression is of type `TResult`. An `await` expression must occur inside the body of an asynchronous method. (These language features were introduced in .NET Framework 4.5.)
 
  Under the covers, the await functionality installs a callback on the task by using a continuation.  This callback resumes the asynchronous method at the point of suspension. When the asynchronous method is resumed, if the awaited operation completed successfully and was a <xref:System.Threading.Tasks.Task%601>, its `TResult` is returned.  If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Canceled> state, an <xref:System.OperationCanceledException> exception is thrown.  If the <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> that was awaited ended in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, the exception that caused it to fault is thrown. A `Task` can fault as a result of multiple exceptions, but only one of these exceptions is propagated. However, the <xref:System.Threading.Tasks.Task.Exception%2A?displayProperty=nameWithType> property returns an <xref:System.AggregateException> exception that contains all the errors.
 
@@ -57,7 +58,8 @@ await someTask.ConfigureAwait(continueOnCapturedContext:false);
 ```
 
 ## Canceling an Asynchronous Operation
- Starting with the .NET Framework 4, TAP methods that support cancellation provide at least one overload that accepts a cancellation token (<xref:System.Threading.CancellationToken> object).
+
+Starting with .NET Framework 4, TAP methods that support cancellation provide at least one overload that accepts a cancellation token (<xref:System.Threading.CancellationToken> object).
 
  A cancellation token is created through a cancellation token source (<xref:System.Threading.CancellationTokenSource> object).  The source's <xref:System.Threading.CancellationTokenSource.Token%2A> property returns the cancellation token that will be signaled when the source's <xref:System.Threading.CancellationTokenSource.Cancel%2A> method is called.  For example, if you want to download a single webpage and you want to be able to cancel the operation, you create a <xref:System.Threading.CancellationTokenSource> object, pass its token to the TAP method, and then call the source's <xref:System.Threading.CancellationTokenSource.Cancel%2A> method when you're ready to cancel the operation:
 
@@ -529,7 +531,7 @@ public async void btnDownload_Click(object sender, RoutedEventArgs e)
 ```
 
 ## Building Task-based Combinators
- Because a task is able to completely represent an asynchronous operation and provide synchronous and asynchronous capabilities for joining with the operation, retrieving its results, and so on, you can build useful libraries of combinators that compose tasks to build larger patterns.  As discussed in the previous section, the .NET Framework includes several built-in combinators, but you can also build your own. The following sections provide several examples of potential combinator methods and types.
+ Because a task is able to completely represent an asynchronous operation and provide synchronous and asynchronous capabilities for joining with the operation, retrieving its results, and so on, you can build useful libraries of combinators that compose tasks to build larger patterns. As discussed in the previous section, .NET includes several built-in combinators, but you can also build your own. The following sections provide several examples of potential combinator methods and types.
 
 ### RetryOnFault
  In many situations, you may want to retry an operation if a previous attempt fails.  For synchronous code, you might build a helper method such as `RetryOnFault` in the following example to accomplish this:
@@ -826,7 +828,7 @@ private static void Produce(int data)
 ```
 
 > [!NOTE]
-> The <xref:System.Threading.Tasks.Dataflow> namespace is available in the .NET Framework 4.5 through **NuGet**. To install the assembly that contains the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in Visual Studio, choose **Manage NuGet Packages** from the Project menu, and search online for the Microsoft.Tpl.Dataflow package.
+> The <xref:System.Threading.Tasks.Dataflow> namespace is available as a NuGet package. To install the assembly that contains the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in Visual Studio, choose **Manage NuGet Packages** from the Project menu, and search online for the `System.Threading.Tasks.Dataflow` package.
 
 ## See also
 

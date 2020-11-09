@@ -13,9 +13,9 @@ f1_keywords:
 
 You may receive this error message when:
 
-- You retarget an ASP.NET Core project from .NET Core 2.2 or earlier to .NET Core 3.0 or higher
-- The project uses the Microsoft.AspNetCore.All package
+- You retarget an ASP.NET Core project from .NET Core 2.2 or earlier to .NET Core 3.0 or later.
+- The project uses the Microsoft.AspNetCore.All package.
 
-In this case you should remove the `PackageReference` for Microsoft.AspNetCore.All.  You may also need to add package references for packages that were referenced from Microsoft.AspNetCore.All but are not included in the ASP.NET Core shared framework.  These packages are listed here: [Migrating from Microsoft.AspNetCore.All to Microsoft.AspNetCore.App](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/metapackage?view=aspnetcore-3.1#migrating-from-microsoftaspnetcoreall-to-microsoftaspnetcoreapp).
+Remove the `PackageReference` for Microsoft.AspNetCore.All.  You may also need to add package references for packages that were referenced from Microsoft.AspNetCore.All but are not included in the ASP.NET Core shared framework.  These packages are listed here: [Migrating from Microsoft.AspNetCore.All to Microsoft.AspNetCore.App](/aspnet/core/fundamentals/metapackage#migrating-from-microsoftaspnetcoreall-to-microsoftaspnetcoreapp).
 
-See also the following help topic: [Migrate from ASP.NET Core 2.2 to 3.0](https://docs.microsoft.com/en-us/aspnet/core/migration/22-to-30?view=aspnetcore-3.1&tabs=visual-studio)
+See also [Migrate from ASP.NET Core 2.2 to 3.0](/aspnet/core/migration/22-to-30)

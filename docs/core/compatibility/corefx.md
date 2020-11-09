@@ -11,6 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [LastIndexOf has improved handling of empty search strings](#lastindexof-has-improved-handling-of-empty-search-strings) | 5.0 |
 | [Global assembly cache APIs are obsolete](#global-assembly-cache-apis-are-obsolete) | 5.0 |
 | [Remoting APIs are obsolete](#remoting-apis-are-obsolete) | 5.0 |
 | [Most code access security APIs are obsolete](#most-code-access-security-apis-are-obsolete) | 5.0 |
@@ -56,6 +57,10 @@ The following breaking changes are documented on this page:
 | [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [lastindexof-improved-handling-of-empty-values](../../../includes/core-changes/corefx/5.0/lastindexof-improved-handling-of-empty-values.md)]
+
+***
 
 [!INCLUDE [remoting-apis-obsolete](../../../includes/core-changes/corefx/5.0/remoting-apis-obsolete.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "NETSDK1022: Duplicate '{0}' items were included. The .NET SDK includes '{0}' items from your project directory by default. You can either remove these items from your project file, or set the '{1}' property to '{2}' if you want to explicitly include them in your project file. For more information, see {4}. The duplicate items were: {3}"
+title: "NETSDK1022: Duplicate items were included."
 description: How to resolve the duplicate item message based on default includes.
 author: marcpopMSFT
 ms.topic: error-reference
@@ -7,7 +7,7 @@ ms.date: 10/9/2020
 f1_keywords:
 - NETSDK1022
 ---
-# NETSDK1022: NETSDK1022: Duplicate '{0}' items were included.
+# NETSDK1022: Duplicate items were included.
 
 **This article applies to:** ✔️ .NET 2.1.100 SDK and later versions
 

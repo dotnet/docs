@@ -100,5 +100,7 @@ Congratulations! You've displayed text on an LCD using a I2C and a GPIO expander
 
 The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/LcdTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
 
+## Next steps
+
 > [!div class="nextstepaction"]
 > [Learn to use General Purpose Input/Output to blink an LED](../tutorials/blink-led.md)

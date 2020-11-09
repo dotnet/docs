@@ -59,5 +59,21 @@ Project file:
 </Project>
 ```
 
+If you must suppress several warnings in the project file, you can use a single semicolon-delimited _\<NoWarn\>_ element, or you can include several _\<NoWarn\>_ elements:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+   <TargetFramework>net5.0</TargetFramework>
+   <!-- Use a semicolon-delimited list to suppress multiple warnings project-wide -->
+   <NoWarn>$(NoWarn);SYSLIB0001;SYSLIB0002;SYSLIB0003</NoWarn>
+   <!-- Alternatively, use multiple NoWarn elements, each suppressing an individual warning -->
+   <NoWarn>$(NoWarn);SYSLIB0001</NoWarn>
+   <NoWarn>$(NoWarn);SYSLIB0002</NoWarn>
+   <NoWarn>$(NoWarn);SYSLIB0003</NoWarn>
+  </PropertyGroup>
+</Project>
+```
+
 > [!NOTE]
 > Suppressing a warning in this way only disables that specific obsoletion warning. It doesn't disable any other warnings, including other obsoletion warnings.

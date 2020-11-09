@@ -9,16 +9,14 @@ F# 5.0 adds several improvements to the F# language and F# Interactive. It is re
 
 ## Get started
 
-F# 5.0 is available in all .NET Core distributions and Visual Studio tooling. [Get started with F#](../get-started/index.md) to learn more.
+F# 5.0 is available in all .NET Core distributions and Visual Studio tooling. For more information, see [Get started with F#](../get-started/index.md) to learn more.
 
 ## Package references in F# scripts
 
-F# 5 brings support for package references in F# scripts with `#r "nuget:..."` syntax. Here’s how it looks for most packages:
+F# 5 brings support for package references in F# scripts with `#r "nuget:..."` syntax. For example, consider the following package reference:
 
 ```fsharp
 #r "nuget: Newtonsoft.Json"
-// Optionally, specify a version explicitly
-// #r "nuget: Newtonsoft.Json,11.0.1"
 
 open Newtonsoft.Json
 
@@ -29,7 +27,7 @@ printfn "%s" (JsonConvert.SerializeObject o)
 
 Package references support packages with native dependencies, such as ML.NET.
 
-Package references also support packages with special requirements about referencing dependent `.dll`s. For example, the [FParsec](https://www.nuget.org/packages/FParsec/) package used to require that users manually ensure that its dependent `FParsecCS.dll` was referenced first before `FParsec.dll` was referenced in F# Interactive. This is no longer needed, and you can simply just reference the package like this:
+Package references also support packages with special requirements about referencing dependent `.dll`s. For example, the [FParsec](https://www.nuget.org/packages/FParsec/) package used to require that users manually ensure that its dependent `FParsecCS.dll` was referenced first before `FParsec.dll` was referenced in F# Interactive. This is no longer needed, and you can reference the package as follows:
 
 ```fsharp
 #r "nuget: FParsec"
@@ -44,36 +42,33 @@ let test p str =
 test pfloat "1.234"
 ```
 
-You can learn more about package references in the [F# Interactive Tutorial](../tutorials/fsharp-interactive/index.md).
+For more information on package references, see the [F# Interactive](../tutorials/fsharp-interactive/index.md) tutorial.
 
-## String Interpolation
+## String interpolation
 
 F# interpolated strings are fairly similar to C# or JavaScript interpolated strings, in that they let you write code in "holes" inside of a string literal. Here's a basic example:
 
 ```fsharp
-// Basic interpolated string
 let name = "Phillip"
 let age = 29
 printfn $"Name: {name}, Age: {age}"
 
-// Inline expressions
 printfn $"I think {3.0 + 0.14} is close to {System.Math.PI}!"
 ```
 
 However, F# interpolated strings also allow for typed interpolations, just like the `sprintf` function, to enforce that an expression inside of an interpolated context conforms to a particular type. It uses the same format specifiers.
 
 ```fsharp
-// Typed interpolation
-// '%s' requires the interpolation to be of type string
-// '%d' requires the interpolation to be an integer
 let name = "Phillip"
 let age = 29
 
 printfn $"Name: %s{name}, Age: %d{age}"
 
-// This gives an error because the types don't match!
+// Error: type mismatch
 printfn $"Name: %s{age}, Age: %d{name}"
 ```
+
+In the preceding typed interpolation example, the `%s` requires the interpolation to be of type `string`, whereas the `%d` requires the interpolation to be an `integer`.
 
 Additionally, any arbitrary F# expression (or expressions) can be placed in side of an interpolation context. It is even possible to write a more complicated expression, like so:
 
@@ -108,13 +103,13 @@ let months =
 
 let lookupMonth month =
     if (month > 12 || month < 1) then
-        invalidArg (nameof month) (sprintf "Value passed in was %d." month) // use 'nameof' on the parameter name
+        invalidArg (nameof month) (sprintf "Value passed in was %d." month)
 
     months.[month-1]
 
 printfn "%s" (lookupMonth 12)
 printfn "%s" (lookupMonth 1)
-printfn "%s" (lookupMonth 13) // Throws an exception!
+printfn "%s" (lookupMonth 13)
 ```
 
 The last line will throw an exception and "month" will be shown in the error message.
@@ -135,8 +130,8 @@ Three final additions are changes to how operators work: the addition of the `na
 Taking a name of an operator gives its source string. If you need the compiled form, use the compiled name of an operator:
 
 ```fsharp
-nameof(+) // gives '+'
-nameof op_Addition // gives 'op_Addition'
+nameof(+) // "+"
+nameof op_Addition // "op_Addition"
 ```
 
 Taking the name of a type parameter requires a slightly different syntax:
@@ -144,7 +139,7 @@ Taking the name of a type parameter requires a slightly different syntax:
 ```fsharp
 
 type C<'TType> =
-    member _.TypeName = nameof<'TType> // Nameof with a generic type parameter via 'nameof<>'
+    member _.TypeName = nameof<'TType>
 ```
 
 This is similar to the `typeof<'T>` and `typedefof<'T>` operators.
@@ -152,16 +147,13 @@ This is similar to the `typeof<'T>` and `typedefof<'T>` operators.
 F# 5 also adds support for a `nameof` pattern that can be used in `match` expressions:
 
 ```fsharp
-/// Simplified version of EventStore's API
 [<Struct; IsByRefLike>]
 type RecordedEvent = { EventType: string; Data: ReadOnlySpan<byte> }
 
-/// My concrete type:
 type MyEvent =
     | AData of int
     | BData of string
 
-// use 'nameof' instead of the string literal in the match expression
 let deserialize (e: RecordedEvent) : MyEvent =
     match e.EventType with
     | nameof AData -> AData (JsonSerializer.Deserialize<int> e.Data)
@@ -169,11 +161,13 @@ let deserialize (e: RecordedEvent) : MyEvent =
     | t -> failwithf "Invalid EventType: %s" t
 ```
 
-## Open Type declarations
+The preceding code uses 'nameof' instead of the string literal in the match expression.
+
+## Open type declarations
 
 F# 5 also adds support for open type declarations. An open type declaration is like opening a static class in C#, except with some different syntax and some slightly different behavior to fit F# semantics.
 
-With Open Type Declarations, you can `open` any type to expose static contents inside of it. Additionally, you can `open` F#-defined unions and records to expose their contents. For example, this can be useful if you have a union defined in a module and want to access its cases, but don't want to open the entire module.
+With open type declarations, you can `open` any type to expose static contents inside of it. Additionally, you can `open` F#-defined unions and records to expose their contents. For example, this can be useful if you have a union defined in a module and want to access its cases, but don't want to open the entire module.
 
 ```fsharp
 open type System.Math
@@ -195,7 +189,7 @@ Unlike C#, when you `open type` on two types that expose a member with the same 
 
 ## Consistent slicing behavior for built-in data types
 
-Behavior for slicing the built-in FSharp.Core data types (array, list, string, 2D array, 3D array, 4D array) used to not be consistent prior to F# 5. Some edge-case behavior threw an exception and some wouldn't. In F# 5, all built-in types now return empty slices for slices that are impossible to generate:
+Behavior for slicing the built-in `FSharp.Core` data types (array, list, string, 2D array, 3D array, 4D array) used to not be consistent prior to F# 5. Some edge-case behavior threw an exception and some wouldn't. In F# 5, all built-in types now return empty slices for slices that are impossible to generate:
 
 ```fsharp
 let l = [ 1..10 ]
@@ -255,7 +249,7 @@ m.[*, 0, 1]
 
 ## Applicative Computation Expressions
 
-[Computation expressions (CEs)](../language-reference/computation-expressions.md) are used today to model “contextual computations”, or in more functional programming friendly terminology, monadic computations.
+[Computation expressions (CEs)](../language-reference/computation-expressions.md) are used today to model "contextual computations", or in more functional programming friendly terminology, monadic computations.
 
 F# 5 introduces applicative CEs, which offer a different computational model. Applicative CEs allow for more efficient computations provided that every computation is independent, and their results are accumulated at the end. When computations are independent of one another, they are also trivially parallelizable, allowing CE authors to write more efficient libraries. This benefit comes at a restriction, though: computations that depend on previously-computed values are not allowed.
 
@@ -300,7 +294,7 @@ let printApplicatives () =
     run r1 (Error "failure!") r3
 ```
 
-If you’re a library author who exposes CEs in their library today, there are some additional considerations you’ll need to be aware of.
+If you're a library author who exposes CEs in their library today, there are some additional considerations you'll need to be aware of.
 
 ## Interfaces can be implemeneted at different generic instantiations
 

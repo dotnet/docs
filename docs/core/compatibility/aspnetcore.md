@@ -40,7 +40,7 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 - [Caching: CompactOnMemoryPressure property removed](#caching-compactonmemorypressure-property-removed)
 - [Caching: Microsoft.Extensions.Caching.SqlServer uses new SqlClient package](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Caching: ResponseCaching "pubternal" types changed to internal](#caching-responsecaching-pubternal-types-changed-to-internal)
-- [Data Protection: DataProtection.AzureStorage uses new Azure Storage APIs](#data-protection-dataprotectionazurestorage-uses-new-azure-storage-apis)
+- [Data Protection: DataProtection.Blobs uses new Azure Storage APIs](#data-protection-dataprotectionblobs-uses-new-azure-storage-apis)
 - [Extensions: Package reference changes affecting some NuGet packages](#extensions-package-reference-changes-affecting-some-nuget-packages)
 - [Hosting: AspNetCoreModule V1 removed from Windows Hosting Bundle](#hosting-aspnetcoremodule-v1-removed-from-windows-hosting-bundle)
 - [Hosting: Generic host restricts Startup constructor injection](#hosting-generic-host-restricts-startup-constructor-injection)

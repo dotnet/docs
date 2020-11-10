@@ -9,6 +9,8 @@ ms.date: 07/30/2020
 
 **EDITION v3.1** - Updated to ASP.NET Core 3.1
 
+Refer [changelog](https://aka.ms/DockerLifecycleEbookChangelog) for the book updates and community contributions.
+
 This guide is a general overview for developing and deploying containerized ASP.NET Core applications with Docker, using the Microsoft platform and tools. The guide includes a high-level introduction to Azure DevOps, for implementing CI/CD pipelines, as well as Azure Container Registry (ACR), and Azure Kubernetes Services AKS for deployment.
 
 For low-level, development-related details you can see the [.NET Microservices: Architecture for Containerized .NET Applications](../microservices/index.md) guide and it related reference application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers).

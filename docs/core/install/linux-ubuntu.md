@@ -45,7 +45,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
-## 20.10 ❌
+## 20.10 ✔️
 
 The .NET 5 and .NET packages haven't yet been released for Ubuntu 20.10. You may want to try and use [Snap](#snap) for an automated install. For a workaround to installing .NET 5 on Ubuntu 20.10, see <https://github.com/dotnet/core/issues/5352#issuecomment-718907950>.
 

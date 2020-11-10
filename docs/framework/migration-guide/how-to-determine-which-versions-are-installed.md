@@ -58,9 +58,7 @@ The **Release** REG_DWORD value in the registry represents the version of .NET F
 
 ### Minimum version
 
-To determine whether a *minimum* version of .NET Framework is present, use the smallest **Release** REG_DWORD value for that version from the previous table.
-
-For example, if your application runs under .NET Framework 4.8 or a later version, test for a **Release** REG_DWORD value that is *greater than or equal to* 528040.
+To determine whether a *minimum* version of .NET Framework is present, check for a **Release** REG_DWORD value that's greater than or equal to the corresponding value listed in the following table. For example, if your application runs under .NET Framework 4.8 or a later version, test for a **Release** REG_DWORD value that's *greater than or equal to* 528040.
 
 | .NET Framework version | Minimum value |
 | ---------------------- | ------------- |

@@ -18,8 +18,10 @@ The information stored in a type can include the following:
   
 - The members (methods, fields, events, and so on) that it contains.  
   
-- The base type it inherits from.  
-  
+- The base type it inherits from.
+
+- The interface(s) it implements.
+
 - The location where the memory for variables will be allocated at run time.  
   
 - The kinds of operations that are permitted.  

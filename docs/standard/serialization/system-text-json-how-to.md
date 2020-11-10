@@ -983,9 +983,11 @@ The preceding code assumes that the `jsonUtf8` variable is a byte array that con
 
 ### Filter data using Utf8JsonReader
 
-The following example shows how to read a file synchronously and search for a value:
+The following example shows how to read a file synchronously and search for a value.
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/Utf8ReaderFromFile.cs)]
+
+(An [async version of this example](https://github.com/dotnet/samples/blob/18e31a5f1abd4f347bf96bfdc3e40e2cfb36e319/core/json/Program.cs) is available.)
 
 The preceding code:
 

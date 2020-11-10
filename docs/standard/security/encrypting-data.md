@@ -35,23 +35,23 @@ CryptoStream cryptStream = new CryptoStream(myStream, aes.CreateEncryptor(key, i
   
 After this code is executed, any data written to the **CryptoStream** object is encrypted using the AES algorithm.  
   
-The following example shows the entire process of creating a stream, encrypting the stream, writing to the stream, and closing the stream. This example creates a file stream that is encrypted using the **CryptoStream** class and the **Aes** class. A message is written to the encrypted stream with the <xref:System.IO.StreamWriter> class.
+The following example shows the entire process of creating a stream, encrypting the stream, writing to the stream, and closing the stream. This example creates a file stream that is encrypted using the **CryptoStream** class and the **Aes** class. Generated IV is written to beginning of <xref:System.IO.FileStream>, so it can be read and used for decryption. Then a message is written to the encrypted stream with the <xref:System.IO.StreamWriter> class. While the same key can be used multiple times to encrypt and decrypt data, it is recommended to generate a new random IV each time. This way the encrypted data is always different, even when plain text is the same.
   
 :::code language="csharp" source="snippets/encrypting-data/csharp/aes-encrypt.cs":::
 :::code language="vb" source="snippets/encrypting-data/vb/aes-encrypt.vb":::
 
-The code encrypts the stream using the AES symmetric algorithm, and writes "Hello World!" to the stream. If the code is successful, it creates an encrypted file named *TestData.txt* and displays the following text to the console:  
+The code encrypts the stream using the AES symmetric algorithm, and writes IV and then encrypted "Hello World!" to the stream. If the code is successful, it creates an encrypted file named *TestData.txt* and displays the following text to the console:
   
 ```console  
-The text was encrypted.  
+The text was encrypted.
 ```  
 
-You can decrypt the file by using the symmetric decryption example in [Decrypting Data](decrypting-data.md). That example and this example specify the same key and IV.
+You can decrypt the file by using the symmetric decryption example in [Decrypting Data](decrypting-data.md). That example and this example specify the same key.
 
-However, if an exception is raised, the code displays the following text to the console:  
+However, if an exception is raised, the code displays the following text to the console:
   
 ```console  
-The encryption failed.  
+The encryption failed.
 ```
 
 ## Asymmetric Encryption

@@ -365,12 +365,16 @@
             "redirect_url": "/dotnet/core/deploying"
         },
         {
+            "source_path": "docs/core/porting/winforms.md",
+            "redirect_url": "/dotnet/desktop/winforms/migration/?view=netdesktop-5.0"
+        },
+        {
             "source_path": "docs/core/porting/winforms-breaking-changes.md",
             "redirect_url": "/dotnet/core/compatibility/fx-core"
         },
         {
             "source_path": "docs/core/porting/wpf.md",
-            "redirect_url": "/dotnet/desktop-wpf/migration/convert-project-from-net-framework",
+            "redirect_url": "/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0",
             "redirect_document_id": true
         },
         {
@@ -2642,11 +2646,11 @@
         },
         {
             "source_path": "docs/desktop-wpf/data/index.md",
-            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview"
+            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/desktop-wpf/fundamentals/index.md",
-            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml"
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/desktop-wpf/fundamentals/styles-templates-create-apply-style.md",
@@ -2682,7 +2686,7 @@
         },
         {
             "source_path": "docs/desktop-wpf/migration/index.md",
-            "redirect_url": "/dotnet/desktop-wpf/migration/differences-from-net-framework"
+            "redirect_url": "/dotnet/desktop/wpf/migration/differences-from-net-framework?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/desktop-wpf/migration/types-migrated-from-wpf-to-system-xaml.md",
@@ -8512,12 +8516,12 @@
         },
         {
             "source_path": "docs/framework/wpf/advanced/xaml-overview-wpf.md",
-            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml",
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml?view=netdesktop-5.0",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/framework/wpf/advanced/xaml-resources.md",
-            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml-resources-define",
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml-resources-define?view=netdesktop-5.0",
             "redirect_document_id": true
         },
         {
@@ -8882,7 +8886,7 @@
         },
         {
             "source_path": "docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md",
-            "redirect_url": "/dotnet/desktop-wpf/themes/how-to-create-apply-template"
+            "redirect_url": "/dotnet/desktop/wpf/themes/how-to-create-apply-template?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/controls/datagrid-styles-and-templates.md",
@@ -9570,7 +9574,7 @@
         },
         {
             "source_path": "docs/framework/wpf/controls/styling-and-templating.md",
-            "redirect_url": "/dotnet/desktop-wpf/fundamentals/styles-templates-overview",
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/styles-templates-overview?view=netdesktop-5.0",
             "redirect_document_id": true
         },
         {
@@ -9719,12 +9723,12 @@
         },
         {
             "source_path": "docs/framework/wpf/data/data-binding-overview.md",
-            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
+            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/framework/wpf/data/data-binding-wpf.md",
-            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview"
+            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/data/data-templating-overview.md",
@@ -9756,7 +9760,7 @@
         },
         {
             "source_path": "docs/framework/wpf/data/how-to-bind-to-a-web-service.md",
-            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview"
+            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md",

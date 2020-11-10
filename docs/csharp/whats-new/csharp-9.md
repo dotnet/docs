@@ -60,7 +60,7 @@ The compiler synthesizes different versions of the methods above. The method sig
 
 In addition to the familiar `Equals` overloads, `operator ==`, and `operator !=`, the compiler synthesizes a new `EqualityContract` property. The property returns a `Type` object that matches the type of the record. If the base type is `object`, the property is `virtual`. If the base type is another record type, the property is an `override`. If the record type is `sealed`, the property is `sealed`. The synthesized `GetHashCode` uses the `GetHashCode` from all properties and fields declared in the base type and the record type. These synthesized methods enforce value-based equality throughout an inheritance hierarchy. That means a `Student` will never be considered equal to a `Person` with the same name. The types of the two records must match as well as all properties shared among the record types being equal.
 
-Records also have a synthesized constructor and a "clone" method for creating copies. The synthesized constructor has one argument of the record type. It produces a new record with the same values for all properties of the record. This constructor is private if the record is sealed, otherwise it's protected. The synthesized "clone" method supports copy construction for record hierarchies. The term "clone" is in quotes because the actual name is compiler generated. You can't create a method named `Clone` in a record type. The synthesized "clone" method returns the type of record being copied using virtual dispatch. The compiler adds different modifiers for the "clone" method depending on the access modifiers on the `record`:
+Records also have a synthesized constructor and a "clone" method for creating copies. The synthesized constructor has a single parameter of the record type. It produces a new record with the same values for all properties of the record. This constructor is private if the record is sealed, otherwise it's protected. The synthesized "clone" method supports copy construction for record hierarchies. The term "clone" is in quotes because the actual name is compiler generated. You can't create a method named `Clone` in a record type. The synthesized "clone" method returns the type of record being copied using virtual dispatch. The compiler adds different modifiers for the "clone" method depending on the access modifiers on the `record`:
 
 - If the record type is `abstract`, the "clone" method is also `abstract`. If the base type isn't `object`, the method is also `override`.
 - For record types that aren't `abstract` when the base type is `object`:
@@ -92,11 +92,13 @@ The compiler produces a `Deconstruct` method for positional records. The `Decons
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="DeconstructRecord":::
 
-Finally, records support ***with-expressions***. A ***with-expression*** instructs the compiler to create a copy of a record, but *with* specified properties modified:
+Finally, records support [`with` expressions](../language-reference/operators/with-expression.md). A ***`with` expression*** instructs the compiler to create a copy of a record, but *with* specified properties modified:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="Wither":::
 
-The above line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is "Paul". You can set any number of properties in a with-expression.  Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method. The earlier `Dog` record example contains a hand coded <xref:System.String.ToString> method as an example.
+The above line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is `"Paul"`. You can set any number of properties in a `with` expression.
+
+Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method. The earlier `Dog` record example contains a hand coded <xref:System.String.ToString> method as an example.
 
 ## Init only setters
 
@@ -236,7 +238,7 @@ A code generator reads attributes or other code elements using the Roslyn analys
 
 The two features added for code generators are extensions to ***partial method syntax***, and ***module initializers***. First, the changes to partial methods. Before C# 9.0, partial methods are `private` but can't specify an access modifier, have a `void` return, and can't have `out` parameters. These restrictions meant that if no method implementation is provided, the compiler removes all calls to the partial method. C# 9.0 removes these restrictions, but requires that partial method declarations have an implementation. Code generators can provide that implementation. To avoid introducing a breaking change, the compiler considers any partial method without an access modifier to follow the old rules. If the partial method includes the `private` access modifier, the new rules govern that partial method.
 
-The second new feature for code generators is ***module initializers***. Module initializers are methods that have the <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> attribute attached to them. These methods will be called by the runtime when the assembly loads. A module initializer method:
+The second new feature for code generators is ***module initializers***. Module initializers are methods that have the <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> attribute attached to them. These methods will be called by the runtime before any other field access or method invocation within the entire module. A module initializer method:
 
 - Must be static
 - Must be parameterless

@@ -41,6 +41,8 @@ Consequently, the following APIs are marked obsolete, starting in .NET 5.0. Use 
   }
   ```
 
+[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
+
 ## See also
 
 - [UTF-7 code paths are obsolete](3.1-5.0.md#utf-7-code-paths-are-obsolete)

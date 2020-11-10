@@ -11,9 +11,11 @@ ms.date: 10/20/2020
 - <xref:System.MarshalByRefObject.GetLifetimeService?displayProperty=nameWithType>
 - <xref:System.MarshalByRefObject.InitializeLifetimeService?displayProperty=nameWithType>
 
-## Workaround
+## Workarounds
 
 Consider using WCF or HTTP-based REST services to communicate with objects in other applications or across machines. For more information, see [.NET Framework technologies unavailable on .NET Core](../porting/net-framework-tech-unavailable.md).
+
+[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
 
 ## See also
 

@@ -9,7 +9,9 @@ ms.date: 05/13/2020
 
 ![cover image](./media/cover.png)
 
-**EDITION v.1.0**
+**EDITION v.1**
+
+Refer [changelog](https://aka.ms/cn-ebook-changelog) for the book updates and community contributions.
 
 PUBLISHED BY
 

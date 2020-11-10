@@ -1003,6 +1003,8 @@ Here's a JSON sample that the preceding code can read. The resulting summary mes
 
 [!code-json[](snippets/system-text-json-how-to/csharp/Universities.json)]
 
+For an async version of this code sample, see [core/json/Program.cs in the dotnet/samples repository](https://github.com/dotnet/samples/blob/18e31a5f1abd4f347bf96bfdc3e40e2cfb36e319/core/json/Program.cs).
+
 ### Read from a stream using Utf8JsonReader
 
 When reading a large file (a gigabyte or more in size, for example), you might want to avoid having to load the entire file into memory at once. For this scenario, you can use a <xref:System.IO.FileStream>.

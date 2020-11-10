@@ -11,7 +11,7 @@ The following APIs are marked obsolete, starting in .NET 5.0. Use of these APIs 
 - <xref:System.Threading.Thread.Abort?displayProperty=nameWithType>
 - <xref:System.Threading.Thread.Abort(System.Object)?displayProperty=nameWithType>
 
-## Workaround
+## Workarounds
 
 Use a <xref:System.Threading.CancellationToken> to abort processing of a unit of work instead of calling <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. The following example illustrates the use of <xref:System.Threading.CancellationToken>.
 
@@ -29,6 +29,8 @@ void ProcessPendingWorkItemsNew(CancellationToken cancellationToken)
     }
 }
 ```
+
+[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
 
 ## See also
 

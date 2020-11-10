@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 10/13/2020
+ms.date: 11/06/2020
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
@@ -9,39 +9,37 @@ author: IEvangelist
 
 # What's new in .NET 5
 
-.NET 5 is the evolution of .NET Core. This article details what's included in .NET 5, which is the next release of .NET Core following 3.1. The version number is 5.0 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. ASP.NET Core retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Additionally, Entity Framework Core retains the name "Core" to avoid confusing it with Entity Framework 5 and 6. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
+.NET 5.0 is the next major release of .NET Core following 3.1. We named this new release .NET 5.0 instead of .NET Core 4.0 for two reasons:
 
-The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It matured as an open-source project on GitHub, celebrating community contributions, and humbly improving over time.
+- We skipped version numbers 4.x to avoid confusion with .NET Framework 4.x.
+- We dropped "Core" from the name to emphasize that this is the main implementation of .NET going forward. .NET 5.0 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
-.NET Core has several primary characteristics:
+ASP.NET Core 5.0 is based on .NET 5.0 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6.
 
-> [!div class="checklist"]
->
-> - Cross-platform
-> - Open-source
-> - Side-by-side installation
-> - Small project files (SDK-style)
-> - Flexible deployment
+.NET 5.0 includes the following improvements and new features compared to .NET Core 3.1:
 
-.NET 5 extends these characteristics, making incremental improvements:
-
-- Single file apps
+- [C# updates](#c-updates)
+- [F# updates](#f-updates)
+- [Visual Basic updates](#visual-basic-updates)
+- [System.Text.Json new features](#systemtextjson-new-features)
+- [Single file apps](deploying/single-file.md)
+- [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
 - Windows ARM64 and ARM64 intrinsics
-- Sweeping performance improvements to:
+- Tooling support for dump debugging
+- The runtime libraries are 80% annotated for [nullable reference types](../csharp/nullable-references.md)
+- Performance improvements:
   - [Garbage Collection (GC)](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/#gc)
   - [System.Text.Json](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/#json)
   - [System.Text.RegularExpressions](https://devblogs.microsoft.com/dotnet/regex-performance-improvements-in-net-5)
   - [Async ValueTask pooling](https://devblogs.microsoft.com/dotnet/async-valuetask-pooling-in-net-5)
+  - [Container size optimizations](https://github.com/dotnet/dotnet-docker/issues/1814#issuecomment-625294750)
   - [Many more areas](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5)
-- [Container size optimizations](https://github.com/dotnet/dotnet-docker/issues/1814#issuecomment-625294750)
-- [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
-- [C# compiler enhancements](https://devblogs.microsoft.com/dotnet/automatically-find-latent-bugs-in-your-code-with-net-5)
-- Tooling support for dump debugging
-- Platform is 80% annotated for [nullable reference types](../csharp/nullable-references.md)
 
-### What .NET 5 is not
+## .NET 5.0 doesn't replace .NET Framework
 
-.NET 5 is not a complete replacement for .NET Framework. There are no plans to port the following technologies from .NET Framework to .NET 5, but there are supported alternatives:
+.NET 5.0 is the main implementation of .NET going forward and .NET Framework 4.x is still supported.
+
+There are no plans to port the following technologies from .NET Framework to .NET 5.0, but there are alternatives in .NET 5.0:
 
 | Technology                             | Recommended alternative                                                                         |
 |----------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -49,17 +47,13 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 | Windows Communication Foundation (WCF) | [gRPC](/aspnet/core/grpc)                                                                       |
 | Windows Workflow (WF)                  | [Open-source CoreWF](https://github.com/UiPath-Open/corewf)                                     |
 
-## .NET Standard
+## .NET 5.0 doesn't replace .NET Standard
 
 New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
 
-The `net5.0` TFM combines and replaces the `netcoreapp` and `netstandard` names. This TFM will generally only include technologies that work cross-platform, like was done with .NET Standard. However, if you plan to share code between .NET Framework, .NET Core, and .NET 5 workloads, you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](../standard/frameworks.md#how-to-specify-a-target-framework).
+For .NET 5.0 apps and libraries, the `net5.0` Target Framework Moniker (TFM) combines and replaces the `netcoreapp` and `netstandard` TFMs. However, if you plan to share code between .NET Framework, .NET Core, and .NET 5 workloads, you can do so by specifying `netstandard2.0` as your TFM. For more information, see [.NET Standard](../standard/net-standard.md).
 
-## Language updates
-
-With .NET 5, the .NET programming languages are continuing to improve.
-
-### C# updates
+## C# updates
 
 Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9, which brings many new features to the language. Here are a few highlights:
 
@@ -75,17 +69,17 @@ Developers writing .NET 5 apps will have access to the latest C# version and fea
 
 For more information on the available C# 9 features, see [What's new in C# 9](../csharp/whats-new/csharp-9.md).
 
-#### Source generators
+### Source generators
 
 In addition to some of the highlighted new C# features, source generators are making their way into developer projects. Source generators allow code that runs during compilation to inspect your program and produce additional files that are compiled together with the rest of your code.
 
 For more information on source generators, see [Introducing C# source generators](https://devblogs.microsoft.com/dotnet/introducing-c-source-generators) and [C# source generator samples](https://devblogs.microsoft.com/dotnet/new-c-source-generator-samples).
 
-### F# updates
+## F# updates
 
 F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. Here are several new features of F# 5:
 
-#### Interpolated strings
+### Interpolated strings
 
 Similar to interpolated string in C#, and even JavaScript, F# supports basic string interpolation.
 
@@ -105,7 +99,7 @@ let message = $"%s{name} is %d{age} years old."
 
 This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs. <!-- For more information, see [What's new in F# 5](fsharp/whats-new/fsharp-50.md). -->
 
-### Visual Basic updates
+## Visual Basic updates
 
 There are no new language features for Visual Basic in .NET 5. However, with .NET 5, Visual Basic support is extended to:
 
@@ -125,6 +119,23 @@ There are no new language features for Visual Basic in .NET 5. However, with .NE
 | xUnit Test Project                     | `xunit`                |
 
 For more information on project templates from the .NET CLI, see [`dotnet new`](tools/dotnet-new.md).
+
+## System.Text.Json new features
+
+There are new features in and for [System.Text.Json](../standard/serialization/system-text-json-overview.md):
+
+- [Preserve references and handle circular references](../standard/serialization/system-text-json-how-to.md#preserve-references-and-handle-circular-references)
+- [HttpClient and HttpContent extension methods](../standard/serialization/system-text-json-how-to.md#httpclient-and-httpcontent-extension-methods)
+- [Allow or write numbers in quotes](../standard/serialization/system-text-json-how-to.md#allow-or-write-numbers-in-quotes)
+- [Support immutable types and C# 9 Records](../standard/serialization/system-text-json-how-to.md#immutable-types-and-records)
+- [Support non-public property accessors](../standard/serialization/system-text-json-how-to.md#non-public-property-accessors)
+- [support fields](../standard/serialization/system-text-json-how-to.md#include-fields)
+- [Conditionally ignore properties](../standard/serialization/system-text-json-how-to.md#ignore-properties)
+- [Support non-string-key dictionaries](../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md#dictionary-with-non-string-key)
+- [Support non-public property accessors](../standard/serialization/system-text-json-how-to.md#non-public-property-accessors)
+- [Allow custom converters to handle null](../standard/serialization/system-text-json-converters-how-to.md#handle-null-values)
+- [Copy JsonSerializerOptions](../standard/serialization/system-text-json-how-to.md#copy-jsonserializeroptions)
+- [Create JsonSerializerOptions with web defaults](../standard/serialization/system-text-json-how-to.md#web-defaults-for-jsonserializeroptions)
 
 ## .NET MAUI
 

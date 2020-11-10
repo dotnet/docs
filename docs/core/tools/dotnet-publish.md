@@ -39,7 +39,7 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 ### Implicit restore
 
-[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
+[!INCLUDE[dotnet restore note](../../../includes/dotnet-restore-note.md)]
 
 ### MSBuild
 

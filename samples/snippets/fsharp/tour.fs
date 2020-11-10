@@ -733,7 +733,7 @@ module PatternMatching =
 
     /// Find all managers/executives named "Dave" who do not have any reports.
     /// This uses the 'function' shorthand to as a lambda expression.
-    let rec findDaveWithOpenPosition(emps : List<Employee>) =
+    let findDaveWithOpenPosition(emps : List<Employee>) =
         emps
         |> List.filter(function
                        | Manager({First = "Dave"}, []) -> true // [] matches an empty list.

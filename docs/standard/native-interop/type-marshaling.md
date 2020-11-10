@@ -60,7 +60,7 @@ The following table includes the default marshaling rules that are Windows-only.
 | `System.ArgIterator` | `va_list` | Not allowed |
 | `System.Collections.IEnumerator` | `IEnumVARIANT*` | Not allowed |
 | `System.Collections.IEnumerable` | `IDispatch*` | Not allowed |
-| `System.DateTimeOffset` | `int64_t` representing the number of ticks since midnight on January 1, 1601 || `int64_t` representing the number of ticks since midnight on January 1, 1601 |
+| `System.DateTimeOffset` | `int64_t` representing the number of ticks since midnight on January 1, 1601 | `int64_t` representing the number of ticks since midnight on January 1, 1601 |
 
 Some types can only be marshaled as parameters and not as fields. These types are listed in the following table:
 

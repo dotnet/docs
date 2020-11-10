@@ -69,7 +69,7 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 > [!NOTE]
 > A `+` symbol represents the minimum version.
 
-| .NET Core Version | macOS                 | Architectures |     |
+| .NET Core Version | macOS                 | Architectures | More information    |
 | ----------------- | --------------------- | --------------| --- |
 | 5.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0-supported-os.md) |
 | 3.1               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) |

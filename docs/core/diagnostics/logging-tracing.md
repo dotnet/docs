@@ -49,7 +49,7 @@ The following APIs are more event oriented. Rather than logging simple strings t
   - Only allows tracing serializable objects.
   - Writes to the attached [event listeners](xref:System.Diagnostics.Tracing.EventListener).
   - .NET Core provides listeners for:
-    - .NET Core's EventPipe on all platforms
+    - [.NET Core's EventPipe on all platforms](./eventpipe.md)
     - [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal)
     - [LTTng tracing framework for Linux](https://lttng.org/)
 

@@ -26,6 +26,8 @@ C# 9.0 adds the following features and enhancements to the C# language:
 
 C# 9.0 is supported on **.NET 5**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
+You can download that latest [.NET SDK](https://dotnet.microsoft.com/download) from the .NET downloads page.
+
 ## Record types
 
 C# 9.0 introduces ***record types***, which are a reference type that provides synthesized methods to provide value semantics for equality. Records are immutable by default.

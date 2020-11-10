@@ -1,6 +1,6 @@
 ---
 title: Compare Razor usage in ASP.NET MVC and ASP.NET Core
-description: 
+description: How does Razor differ between ASP.NET MVC and ASP.NET Core?
 author: ardalis
 ms.date: 11/13/2020
 ---

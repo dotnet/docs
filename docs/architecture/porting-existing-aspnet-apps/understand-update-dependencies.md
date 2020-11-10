@@ -1,6 +1,6 @@
 ---
 title: Understand and update dependencies
-description: 
+description: In order to migrate a .NET Framework project to .NET Core, first all of its dependencies must be updated to work with .NET Core. This section examines tools and approaches that can be used to plan migrations for large apps.
 author: ardalis
 ms.date: 11/13/2020
 ---

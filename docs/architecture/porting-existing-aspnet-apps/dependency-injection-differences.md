@@ -1,6 +1,6 @@
 ---
 title: Dependency injection differences between ASP.NET MVC and ASP.NET Core
-description: 
+description: A look at how dependency injection works in ASP.NET MVC and ASP.NET Core, how they differ, and how to migrate from ASP.NET MVC to ASP.NET Core.
 author: ardalis
 ms.date: 11/13/2020
 ---

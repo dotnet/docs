@@ -1,6 +1,6 @@
 ---
 title: Identifying sequence of projects to migrate
-description: 
+description: Large apps typically aren't migrated to new platforms all at once, but in a series of smaller steps. Learn how to plan the steps for migrating an ASP.NET MVC app to ASP.NET Core.
 author: ardalis
 ms.date: 11/13/2020
 ---

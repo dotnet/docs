@@ -1,6 +1,6 @@
 ---
 title: Compare ASP.NET SignalR and ASP.NET Core SignalR
-description: 
+description: How does ASP.NET Core SignalR differ from its predecessor, ASP.NET SignalR?
 author: ardalis
 ms.date: 11/13/2020
 ---

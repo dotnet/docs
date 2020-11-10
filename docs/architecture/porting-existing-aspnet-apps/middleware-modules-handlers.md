@@ -1,6 +1,6 @@
 ---
 title: Comparing middleware to modules and handlers
-description: 
+description: This section explores the differences in structure ASP.NET apps that leverage handlers and modules with ASP.NET Core apps that define middleware for their request handling pipelines.
 author: ardalis
 ms.date: 11/13/2020
 ---

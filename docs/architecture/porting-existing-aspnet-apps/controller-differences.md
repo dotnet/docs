@@ -1,6 +1,6 @@
 ---
 title: Comparing controllers in ASP.NET MVC and ASP.NET Core
-description: 
+description: ASP.NET Core MVC controllers are similar to ASP.NET MVC 5 and Web API 2 controllers, but there are important differences. This section examines the differences and steps needed to port apps from ASP.NET MVC and Web API 2 to ASP.NET Core.
 author: ardalis
 ms.date: 11/13/2020
 ---

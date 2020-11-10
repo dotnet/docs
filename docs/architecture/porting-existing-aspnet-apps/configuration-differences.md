@@ -1,6 +1,6 @@
 ---
 title: Configuration differences between ASP.NET MVC and ASP.NET Core
-description: 
+description: How configuration values are stored and read changed dramatically between ASP.NET and ASP.NET Core. This section examines the details and how to migrate configuration from ASP.NET to ASP.NET Core.
 author: ardalis
 ms.date: 11/13/2020
 ---

@@ -9,29 +9,7 @@ ms.date: 11/13/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-*Notes*
-This will be a high level comparison between the architectures of the two different types of apps which can link to existing documentation for more details (as opposed to Chapter 4, which is an example of applying the changes to eShop).
-
-Topics:
-
-- Startup
-- Hosting
-- Static files / wwwroot
-- Dependency injection
-- Middleware
-- Configuration
-- Routing
-- Razor Pages
-  - Compilation of Razor Pages
-- Web API differences
-  - HttpResponseMessage
-  - Content negotiation
-  - Model binding
-- Auth
-- Identity
-- Controller base class differences
-- SignalR
-- Integration tests
+There are many architectural differences between ASP.NET MVC on .NET Framework and ASP.NET Core. It's important to have a broad understanding of these differences as teams evaluate the work involved in porting their ASP.NET MVC apps to ASP.NET Core. This chapter looks at each of the ways in which ASP.NET Core differs substantially from ASP.NET MVC.
 
 ## Breaking changes
 

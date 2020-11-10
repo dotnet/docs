@@ -1,6 +1,6 @@
 ---
 title: Routing differences between ASP.NET MVC and ASP.NET Core
-description: 
+description: How is routing defined and how does it work at runtime in ASP.NET MVC? How does this differ in ASP.NET Core apps?
 author: ardalis
 ms.date: 11/13/2020
 ---

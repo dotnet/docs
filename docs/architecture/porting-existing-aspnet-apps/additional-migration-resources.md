@@ -1,6 +1,6 @@
 ---
 title: Additional migration resources
-description: What deployment strategies can teams use while migrating from ASP.NET to ASP.NET Core? Can an incremental migration allow side-by-side deployment of .NET Framework and .NET Core apps, providing a seamless end user experience?
+description: Where can teams find resources to help as they port their .NET Framework apps to .NET Core?
 author: ardalis
 ms.date: 11/13/2020
 ---

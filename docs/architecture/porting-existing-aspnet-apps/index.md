@@ -69,7 +69,6 @@ Whether or not you choose to start from the first chapter, you can also refer (b
 - [Migrate large solutions](migrate-large-solutions.md)
 - [Sample migration](example-migration-eshop.md)
 - [Deployment scenarios](deployment-scenarios.md)
-- [Case studies](case-studies.md)
 
 This guide is available both in PDF (TODO: add link) form and online. Feel free to forward this document or links to its online version to your team to ensure a common understanding of these topics.
 

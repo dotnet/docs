@@ -1,6 +1,6 @@
 ---
 title: Compare testing options between ASP.NET MVC and ASP.NET Core
-description: 
+description: How does testing differ between ASP.NET MVC apps and ASP.NET Core apps?
 author: ardalis
 ms.date: 11/13/2020
 ---

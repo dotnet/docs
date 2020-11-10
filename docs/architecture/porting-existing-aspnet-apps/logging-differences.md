@@ -1,6 +1,6 @@
 ---
 title: Logging differences between ASP.NET MVC and ASP.NET Core
-description: 
+description: How is logging different between ASP.NET MVC and Web API apps and ASP.NET Core apps?
 author: ardalis
 ms.date: 11/13/2020
 ---

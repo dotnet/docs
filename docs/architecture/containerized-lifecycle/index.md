@@ -7,7 +7,7 @@ ms.date: 07/30/2020
 
 ![Book cover](./media/devops-book-cover-large-we.png)
 
-**EDITION v3.1** - Updated to ASP.NET Core 3.1
+**EDITION v3.1.1** - Updated to ASP.NET Core 3.1
 
 This guide is a general overview for developing and deploying containerized ASP.NET Core applications with Docker, using the Microsoft platform and tools. The guide includes a high-level introduction to Azure DevOps, for implementing CI/CD pipelines, as well as Azure Container Registry (ACR), and Azure Kubernetes Services AKS for deployment.
 

@@ -23,7 +23,7 @@ Follow these steps to prepare your machine to collect a performance trace with `
 1. Download `perfcollect`.
 
     > ```bash
-    > curl -OL http://aka.ms/perfcollect
+    > curl -OL https://aka.ms/perfcollect
     > ```
 
 2. Make the script executable.
@@ -103,7 +103,7 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
 
 ## View a trace
 
-There are a number of options for viewing the trace that was collected. Traces are best viewed using [PerfView](http://aka.ms/perfview>) on Windows, but they can be viewed directly on Linux using `PerfCollect` itself or `TraceCompass`.
+There are a number of options for viewing the trace that was collected. Traces are best viewed using [PerfView](https://aka.ms/perfview) on Windows, but they can be viewed directly on Linux using `PerfCollect` itself or `TraceCompass`.
 
 ### Use PerfCollect to view the trace file
 
@@ -134,7 +134,7 @@ To see an aggregate view of both the CPU sample and the events, you can use `Per
 
 1. Copy the trace.zip file from Linux to a Windows machine.
 
-2. Download PerfView from <http://aka.ms/perfview>.
+2. Download PerfView from <https://aka.ms/perfview>.
 
 3. Run PerfView.exe
 

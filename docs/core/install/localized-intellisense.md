@@ -20,7 +20,7 @@ ms.date: 11/06/2020
 > [!IMPORTANT]
 > This procedure requires that you have administrator permission to copy the IntelliSense files to the .NET installation folder.
 
-1. Go to the [Download IntelliSense files](https://dotnet.microsoft.com/download/dotnet-core/intellisense) page.
+1. Go to the [Download IntelliSense files](https://dotnet.microsoft.com/download/intellisense) page.
 
 1. Download the IntelliSense file for the language and version you'd like to use.
 

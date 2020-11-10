@@ -111,6 +111,8 @@ The following CER-related APIs are obsolete:
   }
   ```
 
+[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
+
 ## See also
 
 - [Constrained execution regions](../../framework/performance/constrained-execution-regions.md)

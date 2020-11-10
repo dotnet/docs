@@ -44,9 +44,9 @@ Follow these steps to prepare your machine to collect a performance trace with `
 
     2. `LTTng`: Used to capture event data emitted at runtime by CoreCLR. This data is then used to analyze the behavior of various runtime components such as the GC, JIT, and thread pool.
 
-Recent versions of .NET Core and the Linux perf tool support automatic resolution of method names for framework code. If you are working with .NET Core version 3.1 or less, an extra step is necessary. See [Resolving Framework Symbols](#resolving-framework-symbols) for details.
+Recent versions of .NET Core and the Linux perf tool support automatic resolution of method names for framework code. If you are working with .NET Core version 3.1 or less, an extra step is necessary. See [Resolving Framework Symbols](#resolve-framework-symbols) for details.
 
-For resolving method names of native runtime DLLs (such as libcoreclr.so), `perfcollect` will resolve symbols for them when it converts the data, but only if the symbols for these binaries are present. See [Getting Symbols for the Native Runtime](#getting-symbols-for-the-native-runtime) section for details.
+For resolving method names of native runtime DLLs (such as libcoreclr.so), `perfcollect` will resolve symbols for them when it converts the data, but only if the symbols for these binaries are present. See [Getting Symbols for the Native Runtime](#get-symbols-for-the-native-runtime) section for details.
 
 ## Collect a trace
 

@@ -2,7 +2,7 @@
 title: Runtime libraries overview
 description: Learn what is included in the Runtime libraries section of the table of contents.
 author: tdykstra
-ms.date: 11/09/2020
+ms.date: 11/10/2020
 ms.technology: dotnet-standard
 ---
 # Runtime libraries overview
@@ -29,4 +29,7 @@ Some of the runtime libraries are provided in NuGet packages rather than built-i
 
 ## See also
 
-For more information, see the [introduction to .NET](../core/introduction.md) and the articles in this section of the table of contents.
+* [Introduction to .NET](../core/introduction.md)
+* [Install .NET SDK or runtime](../core/install/index.yml)
+* [Select the installed .NET SDK or runtime version to use](../core/versions/selection.md)
+* [Publish framework-dependent apps](../core/deploying/index.md#publish-framework-dependent)

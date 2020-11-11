@@ -145,7 +145,6 @@ nameof op_Addition // "op_Addition"
 Taking the name of a type parameter requires a slightly different syntax:
 
 ```fsharp
-
 type C<'TType> =
     member _.TypeName = nameof<'TType>
 ```
@@ -224,16 +223,16 @@ F# 5.0 brings support for slicing with a fixed index in the built-in 3D and 4D a
 To illustrate this, consider the following 3D array:
 
 *z = 0*
-|x\y|0|1|
-|---|-|-|
-|**0**|0|1|
-|**1**|2|3|
+| x\y   | 0 | 1 |
+|-------|---|---|
+| **0** | 0 | 1 |
+| **1** | 2 | 3 |
 
 *z = 1*
-|x\y|0|1|
-|---|-|-|
-|**0**|4|5|
-|**1**|6|7|
+| x\y   | 0 | 1 |
+|-------|---|---|
+| **0** | 4 | 5 |
+| **1** | 6 | 7 |
 
 What if you wanted to extract the slice `[| 4; 5 |]` from the array? This is now very simple!
 
@@ -402,7 +401,7 @@ dateTimes.Append(Nullable<DateTime>(DateTime.Parse("2019/01/01")))
 
 ## Preview: reverse indexes
 
-F# 5 also introduces a preview for allowing reverse indexes. The syntax is `^idx`. Here’s how you can an element 1 value from the end of a list:
+F# 5 also introduces a preview for allowing reverse indexes. The syntax is `^idx`. Here's how you can an element 1 value from the end of a list:
 
 ```fsharp
 let xs = [1..10]
@@ -419,13 +418,13 @@ let lastTwoNewStyle = xs.[^1..]
 lastTwoOldStyle = lastTwoNewStyle // true
 ```
 
-You can also define reverse indexes for your own types. To do so, you’ll need to implement the following method:
+You can also define reverse indexes for your own types. To do so, you'll need to implement the following method:
 
 ```fsharp
 GetReverseIndex: dimension: int -> offset: int
 ```
 
-Here’s an example for the `Span<'T>` type:
+Here's an example for the `Span<'T>` type:
 
 ```fsharp
 open System

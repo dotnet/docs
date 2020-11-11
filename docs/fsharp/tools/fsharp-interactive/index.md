@@ -176,7 +176,7 @@ And the consuming file, `Script2.fsx`:
 #load "Script1.fsx"
 open Script1
 
-printfn $"%d{square 12}" 
+printfn $"%d{square 12}"
 ```
 
 Note that the `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in.

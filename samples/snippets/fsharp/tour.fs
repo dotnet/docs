@@ -877,7 +877,7 @@ module DefiningClasses =
     /// Get a new scaled vector object, without modifying the original object.
     let vector2 = vector1.Scale(10.0)
 
-        printfn $"Length of vector1: %f{vector1.Length}\nLength of vector2: %f{vector2.Length}"
+    printfn $"Length of vector1: %f{vector1.Length}\nLength of vector2: %f{vector2.Length}"
 
 
 /// Generic classes allow types to be defined with respect to a set of type parameters.

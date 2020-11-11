@@ -24,7 +24,7 @@ Naming rules concern the naming of .NET programming language code elements, such
 A naming rule has three parts:
 
 * The group of symbols it applies to.
-* what naming style to associate with the rule, and
+* The naming style to associate with the rule.
 * the severity for enforcing the convention.
 
 ## General syntax

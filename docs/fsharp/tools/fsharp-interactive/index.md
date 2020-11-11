@@ -112,7 +112,7 @@ let t2 = dsharp.tensor [ [ 0; 1 ]; [ 2; 2 ] ]
 // Define a scalar-to-scalar function
 let f (x: Tensor) = sin (sqrt x)
 
-printfn "%A" (f (dsharp.tensor 1.2))
+printfn $"{f (dsharp.tensor 1.2)}"
 ```
 
 ### Specifying a package source
@@ -148,7 +148,7 @@ One compiled, you can reference it in a file called `Script.fsx` like so:
 ```fsharp
 #r "path/to/MyAssembly.dll"
 
-printfn "%A" (MyAssembly.myFunction 10 40)
+printfn $"{MyAssembly.myFunction 10 40}"
 ```
 
 The output is as follows:
@@ -176,7 +176,7 @@ And the consuming file, `Script2.fsx`:
 #load "Script1.fsx"
 open Script1
 
-printfn "%d" (square 12)
+printfn $"%d{square 12}" 
 ```
 
 Note that the `open Script1` declaration is required. This is because constructs in an F# script are compiled into a top-level module that is the name of the script file it is in.
@@ -200,7 +200,7 @@ The following example shows how to get and use command-line arguments:
 let args = fsi.CommandLineArgs
 
 for arg in args do
-    printfn "%s" arg
+    printfn $"{arg}"
 ```
 
 When evaluated, it prints all arguments. The first argument is always the name of the script that is evaluated:

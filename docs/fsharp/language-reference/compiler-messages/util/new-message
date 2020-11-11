@@ -42,3 +42,8 @@ cat >>toc.yml <<EOF
   - name: $message_number - $message_title
     href: ./$file_name
 EOF
+
+echo "Writing sample script "
+
+touch ../
+samples/snippets/fsharp/compiler-messages/fs{}.fsx

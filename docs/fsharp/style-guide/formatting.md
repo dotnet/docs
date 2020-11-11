@@ -772,7 +772,7 @@ let printListWithOffset a list1 =
 let printListWithOffset a list1 =
     List.iter
         (fun elem ->
-            printfn $"%d{a + elem}") 
+            printfn $"%d{a + elem}")
         list1
 ```
 

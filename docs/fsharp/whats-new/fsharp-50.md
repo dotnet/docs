@@ -7,6 +7,8 @@ ms.date: 11/06/2020
 
 F# 5.0 adds several improvements to the F# language and F# Interactive. It is released with **.NET 5**.
 
+You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
+
 ## Get started
 
 F# 5.0 is available in all .NET Core distributions and Visual Studio tooling. For more information, see [Get started with F#](../get-started/index.md) to learn more.

@@ -89,3 +89,4 @@ dotnet new classlib -lang vb
 
 - [.NET Standard](../net-standard.md)
 - [Introducing .NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/)
+- [Download the .NET SDK](https://dotnet.microsoft.com/download)

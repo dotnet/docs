@@ -145,7 +145,7 @@ dotnet_naming_symbols.public_symbols.applicable_kinds           = property,metho
 dotnet_naming_symbols.public_symbols.applicable_accessibilities = public
 dotnet_naming_symbols.public_symbols.required_modifiers         = readonly
 
-# Defining the `first_word_upper_case_style` naming style 
+# Defining the `first_word_upper_case_style` naming style
 dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_upper
 
 # Defining the `public_members_must_be_capitalized` naming rule, by setting the symbol group to the 'public symbols' symbol group,

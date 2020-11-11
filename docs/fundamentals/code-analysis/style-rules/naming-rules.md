@@ -23,7 +23,7 @@ Naming rules concern the naming of .NET programming language code elements, such
 
 A naming rule has three parts:
 
-* the symbol group -- to which symbols does the rule apply?
+* The group of symbols it applies to.
 * what naming style to associate with the rule, and
 * the severity for enforcing the convention.
 

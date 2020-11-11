@@ -38,7 +38,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 - A ✔️ indicates that the version of Alpine or .NET is still supported.
 - A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
-- When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | Alpine                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |-----------------------------|---------------|---------------|----------------|
@@ -71,7 +71,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 - A ✔️ indicates that the version of Debian or .NET is still supported.
 - A ❌ indicates that the version of Debian or .NET isn't supported on that Debian release.
-- When both a version of Debian and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of Debian and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
@@ -89,7 +89,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 - A ✔️ indicates that the version of Fedora or .NET is still supported.
 - A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
-- When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | Fedora                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
@@ -123,7 +123,7 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 - A ✔️ indicates that the version of RHEL or .NET is still supported.
 - A ❌ indicates that the version of RHEL or .NET isn't supported on that RHEL release.
-- When both a version of RHEL and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of RHEL and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | RHEL                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
@@ -140,7 +140,7 @@ The following table is a list of currently supported .NET releases on both SLES 
 
 - A ✔️ indicates that the version of SLES or .NET is still supported.
 - A ❌ indicates that the version of SLES or .NET isn't supported on that SLES release.
-- When both a version of SLES and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of SLES and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | SLES                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |------------------------|---------------|---------------|----------------|
@@ -157,7 +157,7 @@ The following table represents the support status of Ubuntu and .NET.
 
 - A ✔️ indicates that the version of Ubuntu or .NET is still supported.
 - A ❌ indicates that the version of Ubuntu or .NET isn't supported on that Ubuntu release.
-- When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|

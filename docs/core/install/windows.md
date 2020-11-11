@@ -29,7 +29,7 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 - A ✔️ indicates that the version of Windows or .NET Core is still supported.
 - A ❌ indicates that the version of Windows or .NET Core isn't supported on that Windows release.
-- When both a version of Windows and a version of .NET Core have ✔️, that OS and .NET combination are supported.
+- When both a version of Windows and a version of .NET Core have ✔️, that OS and .NET combination is supported.
 
 | Operating System                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|----------------|

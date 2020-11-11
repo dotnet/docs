@@ -190,7 +190,7 @@ GET http://127.0.0.1:3500/v1.0/invoke/catalog-api/method/api/v1/catalog/items?pa
 The sidecar takes care of service discovery and sends the request to the Catalog API sidecar. Finally, the Catalog API sidecar calls the Catalog API to get the catalog items and return the response:
 
 ```
-GET http://127.0.0.1/api/v1/catalog/items?pageSize=20
+GET http://localhost/api/v1/catalog/items?pageSize=20
 ```
 
 ### Make aggregated service calls using the .NET SDK

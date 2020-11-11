@@ -11,9 +11,6 @@ ms.custom: mvc
 
 This tutorial teaches how to deploy a .NET for Apache Spark application to Amazon EMR Spark. [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html) is a managed cluster platform that simplifies running big data frameworks on AWS.
 
-> [!Note]
-> AWS EMR Spark is Linux-based. Therefore, if you are interested in deploying your app to AWS EMR Spark, make sure your app is .NET Standard compatible and that you use .NET Core compiler to compile your app.
-
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
@@ -22,6 +19,9 @@ In this tutorial, you learn how to:
 > * Publish your Spark .NET app
 > * Deploy your app to Amazon EMR Spark
 > * Run your app
+
+> [!Note]
+> AWS EMR Spark is Linux-based. Therefore, if you are interested in deploying your app to AWS EMR Spark, make sure your app is .NET Standard compatible and that you use .NET Core compiler to compile your app.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Before you start, do the following:
 
 ## Prepare worker dependencies
 
-**Microsoft.Spark.Worker** is a backend component that lives on the individual worker nodes of your Spark cluster. When you want to execute a C# UDF (User-Defined function), Spark needs to understand how to launch the .NET CLR to execute the UDF. **Microsoft.Spark.Worker** provides a collection of classes to Spark that enable this functionality.
+**Microsoft.Spark.Worker** is a backend component that lives on the individual worker nodes of your Spark cluster. When you want to execute a C# UDF (User-Defined Function), Spark needs to understand how to launch the .NET CLR to execute the UDF. **Microsoft.Spark.Worker** provides a collection of classes to Spark that enable this functionality.
 
 1. Select a [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) Linux netcoreapp release to be deployed on your cluster.
 

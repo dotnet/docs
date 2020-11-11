@@ -95,7 +95,7 @@ df.Select(udf2(df["_1"])).Show();
 ## FAQs
 
 **Why don't Broadcast Variables work with .NET Interactive?**  
-This is explained in detail in [this article](dotnet-interactive-udf-issue.md).
+Broadcast variables don't work with interactive scenarios because of .NET interactive's design of appending each object defined in a cell with its cell submission class, which since is not marked serializable, fails with the same exception as shown previously. For more information, please check out [this article](dotnet-interactive-udf-issue.md).
 
 ## Next steps
 

@@ -18,13 +18,13 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
 
 2. Copy the ssh login information and paste the login into a terminal. Sign in to your cluster using the password you set during cluster creation. You should see messages welcoming you to Ubuntu and Spark.
 
-3. Use the **spark-submit** command to run your app on your HDInsight cluster. Remember to replace **mycontainer** and **mystorageaccount** in the example script with the actual names of your blob container and storage account. Also, be sure to replace `microsoft-spark-2-4_2.11-1.0.0.jar` with the appropriate jar file you're using for deployment. `2-4` represents the version of Apache Spark, `2.11` represents the Scala version Spark is built with and `1.0.0` represents the version of the [.NET for Apache Spark](https://github.com/dotnet/spark/releases).
+3. Use the **spark-submit** command to run your app on your HDInsight cluster. Remember to replace **mycontainer** and **mystorageaccount** in the example script with the actual names of your blob container and storage account. Also remember to replace the microsoft-spark jar with the version of Spark and .NET for Apache Spark being used.
 
    ```bash
    $SPARK_HOME/bin/spark-submit \
    --master yarn \
    --class org.apache.spark.deploy.dotnet.DotnetRunner \
-   wasbs://mycontainer@mystorageaccount.blob.core.windows.net/microsoft-spark-2-4_2.11-1.0.0.jar \
+   wasbs://mycontainer@mystorageaccount.blob.core.windows.net/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar \
    wasbs://mycontainer@mystorageaccount.blob.core.windows.net/publish.zip mySparkApp
    ```
 

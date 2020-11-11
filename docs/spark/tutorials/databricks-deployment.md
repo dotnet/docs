@@ -100,10 +100,10 @@ Now that you have the Databricks CLI installed, you need to set up authenticatio
 
 You should now be able to access any Azure Databricks clusters you create and upload files to the DBFS.
 
-## Download Microsoft Spark Worker dependencies
+## Download worker dependencies
 
 > [!Note]
-> Azure and AWS Databricks is Linux-based. Therefore, if you are interested in deploying your app to Databricks, make sure your app is .NET Standard compatible and that you use .NET Core compiler to compile your app.
+> Azure and AWS Databricks are Linux-based. Therefore, if you are interested in deploying your app to Databricks, make sure your app is .NET Standard compatible and that you use .NET Core compiler to compile your app.
 
 1. Microsoft.Spark.Worker helps Apache Spark execute your app, such as any user-defined functions (UDFs) you may have written. Download [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases/download/v1.0.0/Microsoft.Spark.Worker.netcoreapp3.1.linux-x64-1.0.0.tar.gz).
 

@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 11/10/2020
 ---
 
-# Install .NET SDK or .NET Runtime on openSUSE
+# Install the .NET SDK or the .NET Runtime on openSUSE
 
 .NET is supported on openSUSE. This article describes how to install .NET on openSUSE.
 

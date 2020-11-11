@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 11/10/2020
 ---
 
-# Install .NET SDK or .NET Runtime on CentOS
+# Install the .NET SDK or the .NET Runtime on CentOS
 
 .NET is supported on CentOS. This article describes how to install .NET on CentOS.
 

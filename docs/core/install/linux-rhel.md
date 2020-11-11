@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 11/10/2020
 ---
 
-# Install .NET SDK or .NET Runtime on RHEL
+# Install the .NET SDK or the .NET Runtime on RHEL
 
 .NET is supported on RHEL. This article describes how to install .NET on RHEL.
 
@@ -57,7 +57,7 @@ sudo yum install scl-utils
 
 ### Install the SDK
 
-.NET Core SDK allows you to develop apps with .NET Core. If you install .NET Core SDK, you don't need to install the corresponding runtime. To install .NET Core SDK, run the following commands:
+The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install the .NET SDK, run the following commands:
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms
@@ -73,7 +73,7 @@ source scl_source enable rh-dotnet50
 
 ### Install the runtime
 
-The .NET Core Runtime allows you to run apps that were made with .NET Core that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
+The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms
@@ -87,7 +87,7 @@ Red Hat doesn't recommend permanently enabling `rh-dotnet50-aspnetcore-runtime-5
 source scl_source enable rh-dotnet50-aspnetcore-runtime-5.0
 ```
 
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet50-aspnetcore-runtime-5.0` in the commands above with `rh-dotnet50-dotnet-runtime-5.0`.
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `rh-dotnet50-aspnetcore-runtime-5.0` in the previous commands with `rh-dotnet50-dotnet-runtime-5.0`.
 
 ## Snap
 

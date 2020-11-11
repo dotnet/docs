@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 11/10/2020
 ---
 
-# Install .NET SDK or .NET Runtime on Fedora
+# Install the .NET SDK or the .NET Runtime on Fedora
 
 .NET is supported on Fedora. This article describes how to install .NET on Fedora. When a Fedora version falls out of support, .NET is no longer supported with that version. However, these instructions may help you to get .NET running on those versions, even though it isn't supported.
 
@@ -24,7 +24,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Fedora               | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |----------------------|---------------|---------------|----------|
-| ✔️ [32](#fedora-33-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [33](#fedora-33-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [32](#fedora-32-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ❌ [31](#fedora-31-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
 | ❌ [30](#fedora-30-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
@@ -44,7 +44,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 ## Fedora 33 ✔️
 
-.NET 5 and .NET are available in the default package repositories for Fedora 33.
+.NET 5 and .NET Core 3.1 are available in the default package repositories for Fedora 33.
 
 [!INCLUDE [linux-dnf-install-31](includes/linux-install-50-dnf.md)]
 

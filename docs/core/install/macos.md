@@ -183,7 +183,7 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 ```
 
 > [!NOTE]
-> The command above installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET runtime.
+> The previous command installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET runtime.
 
 ## Docker
 

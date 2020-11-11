@@ -35,7 +35,7 @@ Snap packages for .NET Core Runtime are each published under their own package i
 
 | .NET version      | Snap package        |
 |-------------------|---------------------|
-| 5.0 (LTS)         | `dotnet-runtime-50` |
+| 5.0               | `dotnet-runtime-50` |
 | 3.1 (LTS)         | `dotnet-runtime-31` |
 | 3.0               | `dotnet-runtime-30` |
 | 2.2               | `dotnet-runtime-22` |

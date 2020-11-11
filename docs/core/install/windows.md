@@ -183,7 +183,7 @@ Install the following:
 - [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=52685).
 - [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)
 
-The requirements above are also required if you come across one of the following errors:
+The previous requirements are also required if you come across one of the following errors:
 
 > The program can't start because *api-ms-win-crt-runtime-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
 >

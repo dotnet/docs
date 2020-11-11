@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 11/10/2020
 ---
 
-# Install .NET SDK or .NET Runtime on Alpine
+# Install the .NET SDK or the .NET Runtime on Alpine
 
 This article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version. However, these instructions may help you to get .NET running on those versions, even though it isn't supported.
 

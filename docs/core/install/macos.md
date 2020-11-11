@@ -16,7 +16,7 @@ ms.date: 11/10/2020
 
 In this article, you'll learn how to install .NET on macOS. .NET is made up of the runtime and the SDK. The runtime is used to run a .NET app and may or may not be included with the app. The SDK is used to create .NET apps and libraries. The .NET runtime is always installed with the SDK.
 
-The latest version of .NET is 5.0
+The latest version of .NET is 5.0.
 
 > [!div class="button"]
 > [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core)
@@ -79,7 +79,7 @@ The SDK is used to build and publish .NET apps and libraries. Installing the SDK
 
 Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019 that is distributed with Developer ID, must be notarized. This requirement applies to the .NET runtime, .NET SDK, and software created with .NET.
 
-The installers for .NET (both runtime and SDK) 5.0 and .NET Core 3.1, 3.0, and 2.1, have been notarized since February 18, 2020. Prior released versions aren't notarized. If you run a non-notarized app, you'll see an error similar to the following image:
+The runtime and SDK installers for .NET 5.0 and .NET Core 3.1, 3.0, and 2.1, have been notarized since February 18, 2020. Prior released versions aren't notarized. If you run a non-notarized app, you'll see an error similar to the following image:
 
 ![macOS Catalina notarization alert](media/dependencies/macos-notarized-pkg-warning.png)
 

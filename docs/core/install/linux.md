@@ -40,7 +40,7 @@ The following table is a list of currently supported .NET releases and the versi
 - A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
 - When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination are supported.
 
-| Alpine                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+| Alpine                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |-----------------------------|---------------|---------------|----------------|
 | ✔️ [3.12](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 | ✔️ [3.11](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |

@@ -1,7 +1,7 @@
 
 ### Install the SDK
 
-.NET SDK allows you to develop apps with .NET. If you install .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
+.NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install the .NET SDK, run the following commands:
 
 ```bash
 sudo apt-get update; \

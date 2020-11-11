@@ -81,7 +81,7 @@ yum install rh-dotnet50-aspnetcore-runtime-5.0 -y
 scl enable rh-dotnet50-aspnetcore-runtime-5.0 bash
 ```
 
-Red Hat does not recommend permanently enabling `rh-dotnet50-aspnetcore-runtime-5.0` because it may affect other programs. For example, `rh-dotnet50-aspnetcore-runtime-5.0` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet50-aspnetcore-runtime-5.0` permanently, add the following line to your _~/.bashrc_ file.
+Red Hat doesn't recommend permanently enabling `rh-dotnet50-aspnetcore-runtime-5.0` because it may affect other programs. For example, `rh-dotnet50-aspnetcore-runtime-5.0` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet50-aspnetcore-runtime-5.0` permanently, add the following line to your _~/.bashrc_ file.
 
 ```bash
 source scl_source enable rh-dotnet50-aspnetcore-runtime-5.0

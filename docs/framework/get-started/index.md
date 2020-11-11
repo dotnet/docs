@@ -34,6 +34,7 @@ ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
 - Multitargeting. By targeting [.NET Standard](../../standard/net-standard.md), developers create class libraries that work on multiple .NET Framework platforms supported by that version of the standard. For example, libraries that target .NET Standard 2.0 can be used by apps that target .NET Framework 4.6.1, .NET Core 2.0, and UWP 10.0.16299.
 
 <a name="ForUsers"></a>
+
 ## .NET Framework for users
 
 If you don't develop .NET Framework apps, but you use them, you aren't required to have specific knowledge about .NET Framework or its operation. For the most part, the framework is completely transparent to users.
@@ -72,7 +73,6 @@ For more information on developing apps that target .NET Framework, see the [Dev
 | [Installation guide](../install/index.md) | Provides information about installing .NET Framework. |
 | [.NET Framework and Out-of-Band Releases](the-net-framework-and-out-of-band-releases.md) | Describes the .NET Framework out-of-band releases and how to use them in your app. |
 | [System Requirements](system-requirements.md) | Lists the hardware and software requirements for running .NET Framework. |
-| [.NET Core and Open-Source](net-core-and-open-source.md) | Describes .NET Core in relation to .NET Framework and how to access the open-source .NET Core projects. |
 | [.NET Core documentation](../../core/introduction.md) | Provides the conceptual and API reference documentation for .NET Core. |
 | [.NET Standard](../../standard/net-standard.md) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs is available on multiple platforms.
 

@@ -48,7 +48,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Debugging, Tracing, and Profiling](./debug-trace-profile/index.md)  
  Explains how to test, optimize, and profile .NET Framework apps and the app environment. This section includes information for administrators as well as developers.  
   
- [Developing for Multiple Platforms](../standard/cross-platform/index.md)  
+ [Developing for Multiple Platforms](./cross-platform/index.md)  
  Provides information about how you can use the .NET Framework to build assemblies that can be shared across multiple platforms and multiple devices such as phones, desktop, and web.  
   
  [Deployment](./deployment/index.md)  
@@ -58,10 +58,12 @@ This section explains how to create, configure, debug, secure, and deploy your .
  Provides information about caching, lazy initialization, reliability, and ETW events.  
 
 ## Reference  
+
  [.NET Framework Class Library](../../api/index.md?view=netframework-4.7)  
  Supplies syntax, code examples, and usage information for each class that is contained in the .NET Framework namespaces.  
   
 ## Related Sections  
+
  [Getting Started](./get-started/index.md)  
  Provides a comprehensive overview of the .NET Framework and links to additional resources.  
   

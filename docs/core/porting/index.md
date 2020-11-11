@@ -113,4 +113,4 @@ We recommend you use the following process when porting your project to .NET Cor
 
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
 - [Migrate WPF apps to .NET Core](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
-- [Migrate Windows Forms apps to .NET Core](winforms.md)
+- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)

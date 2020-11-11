@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 10/06/2020
+ms.date: 11/03/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -36,10 +36,11 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 - [Blazor: RenderTreeFrame readonly public fields have become properties](#blazor-rendertreeframe-readonly-public-fields-have-become-properties)
 - [Blazor: Target framework of NuGet packages changed](#blazor-target-framework-of-nuget-packages-changed)
 - [Blazor: Updated browser support](#blazor-updated-browser-support)
+- [Blazor: Updated validation logic for static web assets](#blazor-updated-validation-logic-for-static-web-assets)
 - [Caching: CompactOnMemoryPressure property removed](#caching-compactonmemorypressure-property-removed)
 - [Caching: Microsoft.Extensions.Caching.SqlServer uses new SqlClient package](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Caching: ResponseCaching "pubternal" types changed to internal](#caching-responsecaching-pubternal-types-changed-to-internal)
-- [Data Protection: DataProtection.AzureStorage uses new Azure Storage APIs](#data-protection-dataprotectionazurestorage-uses-new-azure-storage-apis)
+- [Data Protection: DataProtection.Blobs uses new Azure Storage APIs](#data-protection-dataprotectionblobs-uses-new-azure-storage-apis)
 - [Extensions: Package reference changes affecting some NuGet packages](#extensions-package-reference-changes-affecting-some-nuget-packages)
 - [Hosting: AspNetCoreModule V1 removed from Windows Hosting Bundle](#hosting-aspnetcoremodule-v1-removed-from-windows-hosting-bundle)
 - [Hosting: Generic host restricts Startup constructor injection](#hosting-generic-host-restricts-startup-constructor-injection)
@@ -142,6 +143,10 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 ***
 
 [!INCLUDE[Blazor: Updated browser support](~/includes/core-changes/aspnetcore/5.0/blazor-browser-support-updated.md)]
+
+***
+
+[!INCLUDE[Blazor: Static web assets validation logic updated](~/includes/core-changes/aspnetcore/5.0/blazor-static-web-assets-validation-logic-updated.md)]
 
 ***
 

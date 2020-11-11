@@ -414,6 +414,9 @@
               },
               "(?i).*docs\/azure\/.*": {
                 "labels-add": ":books: Area - Azure .NET SDK"
+              },
+              "(?i).*docs\/iot\/.*": {
+                "labels-add": ":books: Area - .NET IoT Libraries"
               }
             }
           }

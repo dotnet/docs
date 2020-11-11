@@ -18,7 +18,7 @@ dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
     [--deprecated]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
-    [--outdated] [--source <SOURCE>] --verbosity <LEVEL>
+    [--outdated] [--source <SOURCE>] -v|--version <LEVEL>
 
 dotnet list package -h|--help
 ```
@@ -113,7 +113,7 @@ The project or solution file to operate on. If not specified, the command search
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
-- **`-s|--verbosity <LEVEL>`**
+- **`-v|--verbosity <LEVEL>`**
 
   Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
 

@@ -65,7 +65,7 @@ The command uses the [NuGet Search API](/nuget/api/search-query-service-resource
   bsoa.generator                          1.0.0               Microsoft                                                                   533
   ```
 
-- Search NuGet.org for .NET tools that have "format" in their package name or metadata, shows only the first result, and shows a detailed view.
+- Search NuGet.org for .NET tools that have "format" in their package name or metadata, show only the first result, and show a detailed view.
 
   ```dotnetcli
   dotnet tool search format --take 1 --detail

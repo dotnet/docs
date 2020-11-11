@@ -1,7 +1,7 @@
 ---
 title: dotnet add package command
 description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
-ms.date: 02/14/2020
+ms.date: 11/11/2020
 ---
 # dotnet add package
 
@@ -17,7 +17,7 @@ ms.date: 02/14/2020
 dotnet add [<PROJECT>] package <PACKAGE_NAME>
     [-f|--framework <FRAMEWORK>] [--interactive]
     [-n|--no-restore] [--package-directory <PACKAGE_DIRECTORY>]
-    [-s|--source <SOURCE>] [-v|--version <VERSION>]
+    [--prerelease] [-s|--source <SOURCE>] [-v|--version <VERSION>]
 
 dotnet add package -h|--help
 ```
@@ -82,6 +82,10 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 - **`--package-directory <PACKAGE_DIRECTORY>`**
 
   The directory where to restore the packages. The default package restore location is `%userprofile%\.nuget\packages` on Windows and `~/.nuget/packages` on macOS and Linux. For more information, see [Managing the global packages, cache, and temp folders in NuGet](/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
+
+- **`--prerelease`**
+
+  Allows prerelease packages to be installed.
 
 - **`-s|--source <SOURCE>`**
 

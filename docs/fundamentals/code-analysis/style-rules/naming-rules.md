@@ -37,7 +37,7 @@ To define a naming rule, symbol group, or naming style, write one or more proper
 <prefix>.<title>.<propertyName> = <propertyValue>
 ```
 
-Each property should only be set once, but some settings allow multiple comma-separated values.
+Each property should only be set once, but some settings allow multiple, comma-separated values.
 
 The order of the properties is not important.
 

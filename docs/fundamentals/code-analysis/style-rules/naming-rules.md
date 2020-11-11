@@ -31,7 +31,7 @@ You define naming rules in an EditorConfig file.
 
 ## General syntax
 
-To define a naming rule, symbol group, or naming style, write one or more property settings with the following syntax:
+To define a naming rule, symbol group, or naming style, write one or more property settings using the following syntax:
 
 ```none
 <prefix>.<title>.<propertyName> = <propertyValue>
@@ -47,15 +47,15 @@ The order of the properties is not important.
 
 | To set a property for | Use the prefix | Example |
 | --- | --- | -- |
+| Naming rule | `dotnet_naming_rule` | `dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion` |
 | Symbol group | `dotnet_naming_symbols` | `dotnet_naming_symbols.interface.applicable_kinds = interface` |
 | Naming style | `dotnet_naming_style` | `dotnet_naming_style.pascal_case.capitalization = pascal_case` |
-| Naming rule | `dotnet_naming_rule` | `dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion`
 
 Each type of definition&mdash;[naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#naming-style-properties)&mdash;has its own supported properties, as described in the following sections.
 
 ### \<title>
 
-**\<title>** is a descriptive name that you choose that associates multiple property settings into a single definition. For example, the following properties produce two naming rule definitions, `interface` and `types`, each of which has two properties set on it.
+**\<title>** is a descriptive name that you choose that associates multiple property settings into a single definition. For example, the following properties produce two symbol group definitions, `interface` and `types`, each of which has two properties set on it.
 
 ```ini
 dotnet_naming_symbols.interface.applicable_kinds = interface
@@ -64,7 +64,6 @@ dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, p
 dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum, delegate
 dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 ```
-
 
 ## Naming rule properties
 
@@ -139,16 +138,21 @@ If you don't specify any custom naming rules, the following default styles are u
 The following *.editorconfig* file contains a naming convention that specifies that public properties, methods, fields, events, and delegates must be capitalized. Notice that this naming convention specifies multiple kinds of symbol to apply the rule to, using a comma to separate the values.
 
 ```ini
-# Public members must be capitalized (public_members_must_be_capitalized)
 [*.{cs,vb}]
-dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
+
+# Defining the 'public_symbols' symbol group
 dotnet_naming_symbols.public_symbols.applicable_kinds           = property,method,field,event,delegate
 dotnet_naming_symbols.public_symbols.applicable_accessibilities = public
 dotnet_naming_symbols.public_symbols.required_modifiers         = readonly
 
-dotnet_naming_rule.public_members_must_be_capitalized.style    = first_word_upper_case_style
+# Defining the `first_word_upper_case_style` naming style 
 dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_upper
 
+# Defining the `public_members_must_be_capitalized` naming rule, by setting the symbol group to the 'public symbols' symbol group,
+dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
+# setting the naming style to the `first_word_upper_case_style` naming style,
+dotnet_naming_rule.public_members_must_be_capitalized.style    = first_word_upper_case_style
+# and setting the severity.
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 

@@ -25,7 +25,7 @@ A naming rule has three parts:
 
 * The group of symbols it applies to.
 * The naming style to associate with the rule.
-* the severity for enforcing the convention.
+* The severity for enforcing the convention.
 
 ## General syntax
 

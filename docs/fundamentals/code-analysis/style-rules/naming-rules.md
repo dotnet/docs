@@ -66,7 +66,7 @@ dotnet_naming_symbols.types.applicable_accessibilities = public, internal, priva
 
 ## Naming rule properties
 
-All naming rule properties are required.
+All naming rule properties are required for a rule to take effect.
 
 | Property | Description |
 | -- | -- |

@@ -26,7 +26,7 @@ C# 9.0 adds the following features and enhancements to the C# language:
 
 C# 9.0 is supported on **.NET 5**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
-You can download that latest [.NET SDK](https://dotnet.microsoft.com/download) from the .NET downloads page.
+You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 
 ## Record types
 

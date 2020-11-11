@@ -7,7 +7,7 @@ ms.date: 11/06/2020
 
 F# 5.0 adds several improvements to the F# language and F# Interactive. It is released with **.NET 5**.
 
-You can download that latest [.NET SDK](https://dotnet.microsoft.com/download) from the .NET downloads page.
+You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 
 ## Get started
 

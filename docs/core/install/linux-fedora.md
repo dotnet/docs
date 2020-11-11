@@ -1,14 +1,14 @@
 ---
-title: Install .NET Core on Fedora - .NET Core
-description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on Fedora.
+title: Install .NET on Fedora - .NET
+description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Fedora.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/04/2020
+ms.date: 11/10/2020
 ---
 
-# Install .NET Core SDK or .NET Core Runtime on Fedora
+# Install the .NET SDK or the .NET Runtime on Fedora
 
-.NET Core is supported on Fedora. This article describes how to install .NET Core on Fedora. When a Fedora version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
+.NET is supported on Fedora. This article describes how to install .NET on Fedora. When a Fedora version falls out of support, .NET is no longer supported with that version. However, these instructions may help you to get .NET running on those versions, even though it isn't supported.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -16,22 +16,23 @@ ms.date: 06/04/2020
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET Core releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
+The following table is a list of currently supported .NET releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
 
-- A ✔️ indicates that the version of Fedora or .NET Core is still supported.
-- A ❌ indicates that the version of Fedora or .NET Core isn't supported on that Fedora release.
-- When both a version of Fedora and a version of .NET Core have ✔️, that OS and .NET combination are supported.
+- A ✔️ indicates that the version of Fedora or .NET is still supported.
+- A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
+- When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Fedora                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
-|--------------------------|---------------|---------------|----------------|
-| ✔️ [32](linux-fedora.md#fedora-32-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ✔️ [31](linux-fedora.md#fedora-31-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ❌ [30](linux-fedora.md#fedora-30-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 Preview |
-| ❌ [29](linux-fedora.md#fedora-29-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 Preview |
-| ❌ [28](linux-fedora.md#fedora-28-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
-| ❌ [27](linux-fedora.md#fedora-27-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
+| Fedora               | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+|----------------------|---------------|---------------|----------|
+| ✔️ [33](#fedora-33-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [32](#fedora-32-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [31](#fedora-31-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [30](#fedora-30-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [29](#fedora-29-) | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [28](#fedora-28-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ❌ [27](#fedora-27-) | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
 
-The following versions of .NET Core are no longer supported. The downloads for these still remain published:
+The following versions of .NET are no longer supported. The downloads for these still remain published:
 
 - 3.0
 - 2.2
@@ -41,13 +42,21 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
+## Fedora 33 ✔️
+
+.NET 5 and .NET Core 3.1 are available in the default package repositories for Fedora 33.
+
+[!INCLUDE [linux-dnf-install-31](includes/linux-install-50-dnf.md)]
+
 ## Fedora 32 ✔️
 
 .NET Core 3.1 is available in the default package repositories for Fedora 32.
 
 [!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
 
-## Fedora 31 ✔️
+## Fedora 31 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-fedora.md)]
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -140,4 +149,4 @@ This section provides information on common errors you may get while using the p
 
 ## Next steps
 
-- [Tutorial: Create a console application with .NET Core SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

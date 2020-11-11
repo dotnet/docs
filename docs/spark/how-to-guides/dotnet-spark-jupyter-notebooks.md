@@ -21,7 +21,7 @@ In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://docs.microsoft.com/dotnet/core/install/)
+- [.NET Core 3.1 SDK](../../core/install/index.yml)
 - [Apache Spark](https://spark.apache.org/downloads.html)
 - [Apache Spark .NET Worker](https://github.com/dotnet/spark/releases)
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
   - "WaitHandle class, code examples"
   - "asynchronous programming, status polling"
   - "polling asynchronous operation status"
-  - "delegates [.NET Framework], asynchronous"
+  - "delegates [.NET], asynchronous"
   - "synchronous calling in asynchronous manner"
   - "waiting for asynchronous calls"
-  - "status information [.NET Framework], asynchronous operations"
+  - "status information [.NET], asynchronous operations"
 ms.assetid: 41972034-92ed-450a-9664-ab93fcc6f1fb
 ---
 # Calling Synchronous Methods Asynchronously
 
-The .NET Framework enables you to call any method asynchronously. To do this you define a delegate with the same signature as the method you want to call; the common language runtime automatically defines `BeginInvoke` and `EndInvoke` methods for this delegate, with the appropriate signatures.
+.NET enables you to call any method asynchronously. To do this, you define a delegate with the same signature as the method you want to call. The common language runtime automatically defines `BeginInvoke` and `EndInvoke` methods for this delegate, with the appropriate signatures.
 
 > [!NOTE]
 > Asynchronous delegate calls, specifically the `BeginInvoke` and `EndInvoke` methods, are not supported in the .NET Compact Framework.

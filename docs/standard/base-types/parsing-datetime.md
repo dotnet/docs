@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "parsing strings, date and time strings"
   - "date and time strings"
   - "ParseExact method"
-  - "enumerations [.NET Framework], parsing strings"
+  - "enumerations [.NET], parsing strings"
   - "base types, parsing strings"
   - "DateTime object"
   - "time strings"

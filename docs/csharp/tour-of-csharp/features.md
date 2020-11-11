@@ -34,7 +34,7 @@ The `new` operator permits the initial values of the array elements to be specif
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeArray":::
 
-The length of the array is inferred from the number of expressions between `{` and `}`. Local variable and field declarations can be shortened further such that the array type doesn't have to be restated.
+The length of the array is inferred from the number of expressions between `{` and `}`. Array initialization can be shortened further such that the array type doesn't have to be restated.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeShortened":::
 

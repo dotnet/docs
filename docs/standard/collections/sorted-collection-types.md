@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "SortedList class, grouping data in collections"
   - "grouping data in collections, SortedList collection type"
   - "SortedList collection type"
-  - "collections [.NET Framework], SortedList collection type"
+  - "collections [.NET], SortedList collection type"
 ms.assetid: 3db965b2-36a6-4b12-b76e-7f074ff7275a
 ---
 
@@ -40,7 +40,7 @@ For sorted lists or dictionaries that must be accessible concurrently from multi
 > [!NOTE]
 > For values that contain their own keys (for example, employee records that contain an employee ID number), you can create a keyed collection that has some characteristics of a list and some characteristics of a dictionary by deriving from the <xref:System.Collections.ObjectModel.KeyedCollection%602> generic class.
 
-Starting with the .NET Framework 4, the <xref:System.Collections.Generic.SortedSet%601> class provides a self-balancing tree that maintains data in sorted order after insertions, deletions, and searches. This class and the <xref:System.Collections.Generic.HashSet%601> class implement the <xref:System.Collections.Generic.ISet%601> interface.
+Starting with .NET Framework 4, the <xref:System.Collections.Generic.SortedSet%601> class provides a self-balancing tree that maintains data in sorted order after insertions, deletions, and searches. This class and the <xref:System.Collections.Generic.HashSet%601> class implement the <xref:System.Collections.Generic.ISet%601> interface.
 
 ## See also
 

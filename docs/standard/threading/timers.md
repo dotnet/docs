@@ -8,7 +8,7 @@ dev_langs:
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "threading [.NET Framework], timers"
+  - "threading [.NET], timers"
   - "timers, about timers"
 ms.assetid: 7091500d-be18-499b-a942-95366ce185e5
 author: "pkulikov"

@@ -1,22 +1,20 @@
 ---
 title: "Exceptions in Managed Threads"
-description: See how unhandled exceptions are handled in .NET. With .NET version 2.0, most unhandled thread exceptions proceed naturally and lead to application termination.
+description: See how unhandled exceptions are handled in .NET. Most unhandled thread exceptions proceed naturally and lead to application termination.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "unhandled exceptions,in managed threads"
-  - "threading [.NET Framework],unhandled exceptions"
-  - "threading [.NET Framework],exceptions in managed threads"
+  - "threading [.NET],unhandled exceptions"
+  - "threading [.NET],exceptions in managed threads"
   - "managed threading"
 ms.assetid: 11294769-2e89-43cb-890e-ad4ad79cfbee
 ---
-# Exceptions in Managed Threads
-Starting with the .NET Framework version 2.0, the common language runtime allows most unhandled exceptions in threads to proceed naturally. In most cases this means that the unhandled exception causes the application to terminate.  
+# Exceptions in managed threads
+
+The common language runtime allows most unhandled exceptions in threads to proceed naturally. In most cases this means that the unhandled exception causes the application to terminate.
   
-> [!NOTE]
-> This is a significant change from the .NET Framework versions 1.0 and 1.1, which provide a backstop for many unhandled exceptions — for example, unhandled exceptions in thread pool threads. See [Change from Previous Versions](#ChangeFromPreviousVersions) later in this topic.  
-  
- The common language runtime provides a backstop for certain unhandled exceptions that are used for controlling program flow:  
+The common language runtime provides a backstop for certain unhandled exceptions that are used for controlling program flow:  
   
 - A <xref:System.Threading.ThreadAbortException> is thrown in a thread because <xref:System.Threading.Thread.Abort%2A> was called.  
   
@@ -32,13 +30,13 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
 > It is possible for the runtime to throw an unhandled exception before any managed code has had a chance to install an exception handler. Even though managed code had no chance to handle such an exception, the exception is allowed to proceed naturally.  
   
 ## Exposing Threading Problems During Development  
- When threads are allowed to fail silently, without terminating the application, serious programming problems can go undetected. This is a particular problem for services and other applications which run for extended periods. As threads fail, program state gradually becomes corrupted. Application performance may degrade, or the application might become unresponsive.  
+ When threads are allowed to fail silently, without terminating the application, serious programming problems can go undetected. This is a particular problem for services and other applications that run for extended periods. As threads fail, program state gradually becomes corrupted. Application performance may degrade, or the application might become unresponsive.  
   
  Allowing unhandled exceptions in threads to proceed naturally, until the operating system terminates the program, exposes such problems during development and testing. Error reports on program terminations support debugging.  
   
-<a name="ChangeFromPreviousVersions"></a>
-## Change from Previous Versions  
- The most significant change pertains to managed threads. In the .NET Framework versions 1.0 and 1.1, the common language runtime provides a backstop for unhandled exceptions in the following situations:  
+## Change from previous versions
+
+In .NET Framework versions 1.0 and 1.1, the common language runtime provides a backstop for unhandled exceptions in the following situations:  
   
 - There is no such thing as an unhandled exception on a thread pool thread. When a task throws an exception that it does not handle, the runtime prints the exception stack trace to the console and then returns the thread to the thread pool.  
   
@@ -48,10 +46,11 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
   
  The foreground or background status of a managed thread does not affect this behavior.  
   
- For unhandled exceptions on threads originating in unmanaged code, the difference is more subtle. The runtime JIT-attach dialog preempts the operating system dialog for managed exceptions or native exceptions on threads that have passed through native code. The process terminates in all cases.  
-  
-### Migrating Code  
- In general, the change will expose previously unrecognized programming problems so that they can be fixed. In some cases, however, programmers might have taken advantage of the runtime backstop, for example to terminate threads. Depending on the situation, they should consider one of the following migration strategies:  
+ For unhandled exceptions on threads originating in unmanaged code, the difference is more subtle. The runtime JIT-attach dialog preempts the operating system dialog for managed exceptions or native exceptions on threads that have passed through native code. The process terminates in all cases.
+
+### Migration
+
+If you are migrating from .NET Framework 1.0 or 1.1 and took advantage of the runtime backstop, for example to terminate threads, consider one of the following migration strategies:  
   
 - Restructure the code so the thread exits gracefully when a signal is received.  
   
@@ -59,17 +58,17 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
   
 - If a thread must be stopped so that process termination can proceed, make the thread a background thread so that it is automatically terminated on process exit.  
   
- In all cases, the strategy should follow the design guidelines for exceptions. See [Design Guidelines for Exceptions](../design-guidelines/exceptions.md).  
+In all cases, the strategy should follow the design guidelines for exceptions. See [Design Guidelines for Exceptions](../design-guidelines/exceptions.md).  
   
-### Application Compatibility Flag  
- As a temporary compatibility measure, administrators can place a compatibility flag in the `<runtime>` section of the application configuration file. This causes the common language runtime to revert to the behavior of versions 1.0 and 1.1.  
+As a temporary compatibility measure, administrators can place a compatibility flag in the `<runtime>` section of the application configuration file. This causes the common language runtime to revert to the behavior of versions 1.0 and 1.1.  
   
 ```xml  
 <legacyUnhandledExceptionPolicy enabled="1"/>  
 ```  
   
-## Host Override  
- In the .NET Framework version 2.0, an unmanaged host can use the [ICLRPolicyManager](../../framework/unmanaged-api/hosting/iclrpolicymanager-interface.md) interface in the Hosting API to override the default unhandled exception policy of the common language runtime. The [ICLRPolicyManager::SetUnhandledExceptionPolicy](../../framework/unmanaged-api/hosting/iclrpolicymanager-setunhandledexceptionpolicy-method.md) function is used to set the policy for unhandled exceptions.  
+## Host Override
+
+An unmanaged host can use the [ICLRPolicyManager](../../framework/unmanaged-api/hosting/iclrpolicymanager-interface.md) interface in the Hosting API to override the default unhandled exception policy of the common language runtime. The [ICLRPolicyManager::SetUnhandledExceptionPolicy](../../framework/unmanaged-api/hosting/iclrpolicymanager-setunhandledexceptionpolicy-method.md) function is used to set the policy for unhandled exceptions.  
   
 ## See also
 

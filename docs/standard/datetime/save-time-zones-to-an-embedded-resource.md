@@ -6,9 +6,9 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "time zones [.NET Framework], saving"
-  - "time zone objects [.NET Framework], serializing"
-  - "time zone objects [.NET Framework], saving"
+  - "time zones [.NET], saving"
+  - "time zone objects [.NET], serializing"
+  - "time zone objects [.NET], saving"
 ms.assetid: 3c96d83a-a057-4496-abb0-8f4b12712558
 ---
 # How to: Save time zones to an embedded resource

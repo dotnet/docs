@@ -60,6 +60,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
     [-n, --name <name>]  [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
+    [-- <command>] (for target applications running .NET 5.0 or later)
 ```
 
 ### Options
@@ -105,6 +106,13 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   - `Provider[,Provider]`
   - `Provider` is in the form: `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`.
   - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
+
+- **`-- <command>` (for target applications running .NET 5.0 only)**
+
+  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. This may be helpful when diagnosing issues that happen early in the process, such as startup performance issue or assembly loader and binder errors.
+
+  > [!NOTE]
+  > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
 
 ## dotnet-trace convert
 
@@ -179,6 +187,42 @@ To collect traces using `dotnet-trace`:
   ```
 
 - Stop collection by pressing the `<Enter>` key. `dotnet-trace` will finish logging events to the *trace.nettrace* file.
+
+## Launch a child application and collect a trace from its startup using dotnet-trace
+
+NOTE: This works for apps running .NET 5.0 or later only.
+
+Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, it is possible to do this by using dotnet-trace.
+
+This will launch `hello.exe` with `arg1` and `arg2` as its command line arguments and collect a trace from its runtime startup:
+
+```console
+dotnet-trace collect -- hello.exe arg1 arg2
+```
+
+The preceding command generates output similar to the following:
+
+```console
+No profile or providers specified, defaulting to trace profile 'cpu-sampling'
+
+Provider Name                           Keywords            Level               Enabled By
+Microsoft-DotNETCore-SampleProfiler     0x0000F00000000000  Informational(4)    --profile
+Microsoft-Windows-DotNETRuntime         0x00000014C14FCCBD  Informational(4)    --profile
+
+Process        : E:\temp\gcperfsim\bin\Debug\net5.0\gcperfsim.exe
+Output File    : E:\temp\gcperfsim\trace.nettrace
+
+
+[00:00:00:05]   Recording trace 122.244  (KB)
+Press <Enter> or <Ctrl+C> to exit...
+```
+
+You can stop collecting the trace by pressing `<Enter>` or `<Ctrl + C>` key. Doing this will also exit `hello.exe`.
+
+> [!NOTE]
+> Launching `hello.exe` via dotnet-trace will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.
+> Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process.
+> If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable.
 
 ## View the trace captured from dotnet-trace
 

@@ -95,6 +95,67 @@ Interfaces can inherit from one or more base interfaces.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2805.fs)]
 
+## Implementing interfaces with default implementations
+
+C# supports defining interfaces with default implementations, like so:
+
+```csharp
+using System;
+
+namespace CSharp
+{
+    public interface MyDim
+    {
+        public int Z => 0;
+    }
+}
+```
+
+These are directly consumable from F#:
+
+```fsharp
+open CSharp
+
+// You can implement the interface via a class
+type MyType() =
+    member _.M() = ()
+
+    interface MyDim
+
+let md = MyType() :> MyDim
+printfn $"DIM from C#: %d{md.Z}"
+
+// You can also implement it via an object expression
+let md' = { new MyDim }
+printfn $"DIM from C# but via Object Expression: %d{md'.Z}"
+```
+
+You can override a default implementation with `override`, like overriding any virtual member.
+
+Any members in an interface that do not have a default implementation must still be explicitly implemented.
+
+## Implementing the same interface at different generic instantiations
+
+F# supports implementing the same interface at different generic instantiations like so:
+
+```fsharp
+type IA<'T> =
+    abstract member Get : unit -> 'T
+
+type MyClass() =
+    interface IA<int> with
+        member x.Get() = 1
+    interface IA<string> with
+        member x.Get() = "hello"
+
+let mc = MyClass()
+let iaInt = mc :> IA<int>
+let iaString = mc :> IA<string>
+
+iaInt.Get() // 1
+iaString.Get() // "hello"
+```
+
 ## See also
 
 - [F# Language Reference](index.md)

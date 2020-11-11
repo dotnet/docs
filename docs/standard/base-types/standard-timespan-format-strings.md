@@ -12,11 +12,11 @@ helpviewer_keywords:
   - "standard time interval format strings"
   - "standard format strings, time intervals"
   - "format specifiers, time intervals"
-  - "time intervals [.NET Framework], formatting"
-  - "time [.NET Framework], formatting"
-  - "formatting [.NET Framework], time"
+  - "time intervals [.NET], formatting"
+  - "time [.NET], formatting"
+  - "formatting [.NET], time"
   - "standard TimeSpan format strings"
-  - "formatting [.NET Framework], time intervals"
+  - "formatting [.NET], time intervals"
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
 ---
 # Standard TimeSpan format strings
@@ -57,7 +57,7 @@ The following table lists the standard time interval format specifiers.
 |*ss*|The number of seconds, which ranges from "0" to "59".|  
 |*fffffff*|The optional fractional portion of a second.  Its value can range from "0000001" (one tick, or one ten-millionth of a second)  to "9999999" (9,999,999 ten-millionths of a second, or one second less one tick).|  
   
- Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that is common to all previous versions of the .NET Framework before the .NET Framework 4. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
+ Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that's common to versions prior to .NET Framework 4. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
   
 > [!NOTE]
 > <xref:System.TimeSpan> also supports the "t" and "T" standard format strings, which are identical in behavior to the "c" standard format string.  

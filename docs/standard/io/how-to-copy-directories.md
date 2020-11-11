@@ -8,14 +8,15 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "directory copying"
-  - "I/O [.NET Framework], copying directories"
+  - "I/O [.NET], copying directories"
   - "subdirectory copying"
   - "copying directories"
-  - "directories [.NET Framework], copying"
+  - "directories [.NET], copying"
 ms.assetid: 5a969765-e5f8-4b4e-977e-90e2b0a1fe3c
 ---
 # How to: Copy directories
-This topic demonstrates how to use I/O classes to synchronously copy the contents of a directory to another location.
+
+This article demonstrates how to use I/O classes to synchronously copy the contents of a directory to another location.
 
 For an example of asynchronous file copy, see [Asynchronous file I/O](asynchronous-file-i-o.md).
 

@@ -10,3 +10,7 @@ The following APIs are marked obsolete, starting in .NET 5.0. Use of these APIs 
 
 - <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>
 - <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType>
+
+## Suppress the warning
+
+If you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).

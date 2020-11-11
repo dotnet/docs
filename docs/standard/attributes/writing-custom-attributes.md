@@ -10,7 +10,7 @@ dev_langs:
 helpviewer_keywords: 
   - "multiple attribute instances"
   - "AttributeTargets enumeration"
-  - "attributes [.NET Framework], custom"
+  - "attributes [.NET], custom"
   - "AllowMultiple property"
   - "custom attributes"
   - "AttributeUsageAttribute class, custom attributes"

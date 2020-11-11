@@ -9,6 +9,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [Default FeedbackSize value for instances created by TripleDES.Create changed](#default-feedbacksize-value-for-instances-created-by-tripledescreate-changed) | 5.0 |
 | [Instantiating default implementations of cryptographic abstractions is not supported](#instantiating-default-implementations-of-cryptographic-abstractions-is-not-supported) | 5.0 |
 | [Default TLS cipher suites for .NET on Linux](#default-tls-cipher-suites-for-net-on-linux) | 5.0 |
 | [System.Security.Cryptography APIs not supported on Blazor WebAssembly](#systemsecuritycryptography-apis-not-supported-on-blazor-webassembly) | 5.0 |
@@ -21,6 +22,10 @@ The following breaking changes are documented on this page:
 | [Boolean parameter of SignedCms.ComputeSignature is respected](#boolean-parameter-of-signedcmscomputesignature-is-respected) | 2.1 |
 
 ## .NET 5.0
+
+[!INCLUDE [tripledes-default-feedback-size-change](../../../includes/core-changes/cryptography/5.0/tripledes-default-feedback-size-change.md)]
+
+***
 
 [!INCLUDE [instantiating-default-implementations-of-cryptographic-abstractions-not-supported](../../../includes/core-changes/cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md)]
 

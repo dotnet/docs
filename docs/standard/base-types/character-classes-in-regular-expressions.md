@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "character classes"
   - "regular expressions, character classes"
   - "characters, matching syntax"
-  - ".NET Framework regular expressions, character classes"
+  - ".NET regular expressions, character classes"
 ms.assetid: 0f8bffab-ee0d-4e0e-9a96-2b4a252bb7e4
 ---
 # Character classes in regular expressions
@@ -42,7 +42,7 @@ A character class defines a set of characters, any one of which can occur in an 
  .NET supports character class subtraction expressions, which enables you to define a set of characters as the result of excluding one character class from another character class. For more information, see [Character Class Subtraction](#CharacterClassSubtraction).  
   
 > [!NOTE]
-> Character classes that match characters by category, such as [\w](#WordCharacter) to match word characters or [\p{}](#CategoryOrBlock) to match a Unicode category, rely on the <xref:System.Globalization.CharUnicodeInfo> class to provide information about character categories.  Starting with the .NET Framework 4.6.2, character categories are based on [The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/). In the .NET Framework 4 through the .NET Framework 4.6.1, they are based on [The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/).  
+> Character classes that match characters by category, such as [\w](#WordCharacter) to match word characters or [\p{}](#CategoryOrBlock) to match a Unicode category, rely on the <xref:System.Globalization.CharUnicodeInfo> class to provide information about character categories. In .NET Framework 4.6.2 and later versions, character categories are based on [The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/).
   
 <a name="PositiveGroup"></a>
 ## Positive character group: [ ]  

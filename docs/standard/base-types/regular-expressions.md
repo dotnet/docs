@@ -13,13 +13,13 @@ helpviewer_keywords:
   - "pattern-matching with regular expressions"
   - "searching with regular expressions"
   - "parsing text with regular expressions"
-  - "regular expressions [.NET Framework], about regular expressions"
-  - "regular expressions [.NET Framework]"
-  - ".NET Framework regular expressions, about"
-  - "characters [.NET Framework], regular expressions"
+  - "regular expressions [.NET], about regular expressions"
+  - "regular expressions [.NET]"
+  - ".NET regular expressions, about"
+  - "characters [.NET], regular expressions"
   - "parsing text with regular expressions, overview"
-  - ".NET Framework regular expressions"
-  - "strings [.NET Framework], regular expressions"
+  - ".NET regular expressions"
+  - "strings [.NET], regular expressions"
 ms.assetid: 521b3f6d-f869-42e1-93e5-158c54a6895d
 ---
 # .NET regular expressions

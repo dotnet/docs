@@ -7,7 +7,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "strings [.NET Framework], case"
+  - "strings [.NET], case"
   - "case sensitivity"
   - "ToUpper method"
   - "ToLower method"

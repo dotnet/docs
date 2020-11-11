@@ -8,8 +8,8 @@ dev_langs:
   - "cpp"
 helpviewer_keywords: 
   - "data storage using isolated storage, deleting files and directories"
-  - "directories [.NET Framework], isolated storage"
-  - "files [.NET Framework], isolated storage"
+  - "directories [.NET], isolated storage"
+  - "files [.NET], isolated storage"
   - "isolated storage, deleting files and directories"
   - "data stores, deleting files and directories"
   - "stores, creating files and directories"

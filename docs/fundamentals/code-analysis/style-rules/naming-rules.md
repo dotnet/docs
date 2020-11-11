@@ -53,7 +53,7 @@ Each type of definition&mdash;[naming rule](#naming-rule-properties), [symbol gr
 
 ### \<title>
 
-**\<title>** is a descriptive name that you choose, which associates multiple property settings into a single definition. For example, the following:
+**\<title>** is a descriptive name that you choose that associates multiple property settings into a single definition. For example, the following properties produce two naming rule definitions, `interface` and `types`, each of which has two properties set on it.
 
 ```ini
 dotnet_naming_symbols.interface.applicable_kinds = interface

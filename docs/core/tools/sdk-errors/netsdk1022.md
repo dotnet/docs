@@ -11,7 +11,7 @@ f1_keywords:
 
 **This article applies to:** ✔️ .NET 2.1.100 SDK and later versions
 
-Starting in Visual Studio 15.3, the .NET SDK automatically includes items from the project directory by default.  This includes `Compile` and `Content` targets.  This should greatly clean up your project file and reduce the complexity you have there.
+Starting in Visual Studio 2017 / MSBuild version 15.3, the .NET SDK automatically includes items from the project directory by default.  This includes `Compile` and `Content` targets.  This should greatly clean up your project file and reduce the complexity you have there.
 
 You can revert to the earlier behavior by setting the correct property to false.
 

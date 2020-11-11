@@ -1,14 +1,14 @@
 ---
-title: Install .NET Core on openSUSE - .NET Core
-description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on openSUSE.
+title: Install .NET on openSUSE - .NET
+description: Demonstrates the various ways to install .NET SDK and .NET Runtime on openSUSE.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/04/2020
+ms.date: 11/10/2020
 ---
 
-# Install .NET Core SDK or .NET Core Runtime on openSUSE
+# Install the .NET SDK or the .NET Runtime on openSUSE
 
-.NET Core is supported on openSUSE. This article describes how to install .NET Core on openSUSE.
+.NET is supported on openSUSE. This article describes how to install .NET on openSUSE.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -16,17 +16,17 @@ ms.date: 06/04/2020
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET Core releases on openSUSE 15. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE is no longer supported.
+The following table is a list of currently supported .NET releases on openSUSE 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE is no longer supported.
 
-- A ✔️ indicates that the version of openSUSE or .NET Core is still supported.
-- A ❌ indicates that the version of openSUSE or .NET Core isn't supported on that openSUSE release.
-- When both a version of openSUSE and a version of .NET Core have ✔️, that OS and .NET combination are supported.
+- A ✔️ indicates that the version of openSUSE or .NET is still supported.
+- A ❌ indicates that the version of openSUSE or .NET isn't supported on that openSUSE release.
+- When both a version of openSUSE and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
+| openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |----------------------------|---------------|---------------|----------------|
-| ✔️ [15](#opensuse-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [15](#opensuse-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
-The following versions of .NET Core are no longer supported. The downloads for these still remain published:
+The following versions of .NET are no longer supported. The downloads for these still remain published:
 
 - 3.0
 - 2.2
@@ -48,11 +48,11 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-31](includes/linux-install-31-zyp.md)]
+[!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
 
 ## Troubleshoot the package manager
 
-This section provides information on common errors you may get while using the package manager to install .NET Core.
+This section provides information on common errors you may get while using the package manager to install .NET.
 
 ### Unable to find package
 
@@ -68,7 +68,7 @@ This section provides information on common errors you may get while using the p
 
 ## Dependencies
 
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - krb5
 - libicu
@@ -78,7 +78,7 @@ If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
 
-For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
+For .NET apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
 
 - [libgdiplus (version 6.0.1 or later)](https://www.mono-project.com/docs/gui/libgdiplus/)
 
@@ -95,4 +95,4 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 
 ## Next steps
 
-- [Tutorial: Create a console application with .NET Core SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

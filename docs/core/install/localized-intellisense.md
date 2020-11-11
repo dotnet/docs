@@ -37,7 +37,7 @@ ms.date: 11/06/2020
       | Windows Desktop       | *Microsoft.WindowsDesktop.App.Ref* |
       | .NET Standard         | *NETStandard.Library.Ref*          |
 
-   1. Navigate to the version you want to install the localized IntelliSense for. For example, *3.1.0*.
+   1. Navigate to the version you want to install the localized IntelliSense for. For example, *5.0.0*.
    1. Open the *ref* folder.
    1. Open the moniker folder. For example, *net5.0*.
 

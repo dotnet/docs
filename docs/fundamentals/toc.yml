@@ -43,7 +43,7 @@ items:
       href: ../core/install/templates.md
     - name: macOS Notarization issues
       href: ../core/install/macos-notarization-issues.md
-    - name: How to check .NET Core versions
+    - name: How to check .NET versions
       href: ../core/install/how-to-detect-installed-versions.md
     - name: Install localized IntelliSense
       href: ../core/install/localized-intellisense.md
@@ -1412,6 +1412,8 @@ items:
       href: ../standard/attributes/retrieving-information-stored-in-attributes.md
 - name: Runtime libraries
   items:
+  - name: Overview
+    href: ../standard/runtime-libraries-overview.md
   - name: Format numbers, dates, other types
     items:
     - name: Overview
@@ -1446,7 +1448,7 @@ items:
         href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
       - name: Display dates in non-Gregorian calendars
         href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
-  - name: Strings
+  - name: Work with strings
     items:
     - name: Character encoding in .NET
       href: ../standard/base-types/character-encoding-introduction.md
@@ -1481,109 +1483,71 @@ items:
         href: ../standard/base-types/stringbuilder.md
       - name: "How to: Perform basic string manipulations"
         href: ../standard/base-types/basic-manipulations.md
-    - name: Regular expressions in .NET
+    - name: Parse (convert) strings
       items:
       - name: Overview
-        href: ../standard/base-types/regular-expressions.md
-        displayName: regular expressions
-      - name: Language reference
-        items:
-        - name: Overview
-          href: ../standard/base-types/regular-expression-language-quick-reference.md
-        - name: Character escapes
-          href: ../standard/base-types/character-escapes-in-regular-expressions.md
-        - name: Character classes
-          href: ../standard/base-types/character-classes-in-regular-expressions.md
-        - name: Anchors
-          href: ../standard/base-types/anchors-in-regular-expressions.md
-        - name: Grouping constructs
-          href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
-        - name: Quantifiers
-          href: ../standard/base-types/quantifiers-in-regular-expressions.md
-        - name: Backreference constructs
-          href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
-        - name: Alternation constructs
-          href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
-        - name: Substitutions
-          href: ../standard/base-types/substitutions-in-regular-expressions.md
-        - name: Regular expression options
-          href: ../standard/base-types/regular-expression-options.md
-        - name: Miscellaneous constructs
-          href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
-      - name: Best practices for regular expressions
-        href: ../standard/base-types/best-practices.md
-      - name: Regular expression object model
-        href: ../standard/base-types/the-regular-expression-object-model.md
-      - name: Regular expression behavior
-        items:
-        - name: Overview
-          href: ../standard/base-types/details-of-regular-expression-behavior.md
-        - name: Backtracking
-          href: ../standard/base-types/backtracking-in-regular-expressions.md
-        - name: Compilation and reuse
-          href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
-        - name: Thread safety
-          href: ../standard/base-types/thread-safety-in-regular-expressions.md
-      - name: Examples
-        items:
-        - name: Scan for HREFs
-          href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
-        - name: Change date formats
-          href: ../standard/base-types/regular-expression-example-changing-date-formats.md
-        - name: Extract a protocol and port number from a URL
-          href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
-        - name: Strip invalid characters from a string
-          href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
-        - name: Verify that strings are in valid email format
-          href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
-  - name: Parse (convert) strings
+        href: ../standard/base-types/parsing-strings.md
+      - name: Parse numeric strings
+        href: ../standard/base-types/parsing-numeric.md
+      - name: Parse date and time strings
+        href: ../standard/base-types/parsing-datetime.md
+      - name: Parse other strings
+        href: ../standard/base-types/parsing-other.md
+  - name: Regular expressions
     items:
     - name: Overview
-      href: ../standard/base-types/parsing-strings.md
-    - name: Parse numeric strings
-      href: ../standard/base-types/parsing-numeric.md
-    - name: Parse date and time strings
-      href: ../standard/base-types/parsing-datetime.md
-    - name: Parse other strings
-      href: ../standard/base-types/parsing-other.md
-  - name: Dependency injection
-    items:
-    - name: Overview
-      href: ../core/extensions/dependency-injection.md
-      displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
-    - name: Use dependency injection
-      href: ../core/extensions/dependency-injection-usage.md
-      displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
-    - name: Dependency injection guidelines
-      href: ../core/extensions/dependency-injection-guidelines.md
-      displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
-  - name: Configuration
-    items:
-    - name: Overview
-      href: ../core/extensions/configuration.md
-      displayName: configuration,config,configuration sources,config sources
-    - name: Configuration providers
-      href: ../core/extensions/configuration-providers.md
-      displayName: configuration providers,config providers
-    - name: Implement a custom configuration provider
-      href: ../core/extensions/custom-configuration-provider.md
-      displayName: custom configuration,custom config,custom configuration provider,custom config provider
-    - name: Options pattern
-      href: ../core/extensions/options.md
-  - name: Logging
-    items:
-    - name: Overview
-      href: ../core/extensions/logging.md
-    - name: Logging providers
-      href: ../core/extensions/logging-providers.md
-    - name: Implement a custom logging provider
-      href: ../core/extensions/custom-logging-provider.md
-    - name: High-performance logging
-      href: ../core/extensions/high-performance-logging.md
-    - name: Console log formatting
-      href: ../core/extensions/console-log-formatter.md
-  - name: HostBuilder (generic host)
-    href: ../core/extensions/generic-host.md
+      href: ../standard/base-types/regular-expressions.md
+      displayName: regular expressions
+    - name: Language reference
+      items:
+      - name: Overview
+        href: ../standard/base-types/regular-expression-language-quick-reference.md
+      - name: Character escapes
+        href: ../standard/base-types/character-escapes-in-regular-expressions.md
+      - name: Character classes
+        href: ../standard/base-types/character-classes-in-regular-expressions.md
+      - name: Anchors
+        href: ../standard/base-types/anchors-in-regular-expressions.md
+      - name: Grouping constructs
+        href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
+      - name: Quantifiers
+        href: ../standard/base-types/quantifiers-in-regular-expressions.md
+      - name: Backreference constructs
+        href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
+      - name: Alternation constructs
+        href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
+      - name: Substitutions
+        href: ../standard/base-types/substitutions-in-regular-expressions.md
+      - name: Regular expression options
+        href: ../standard/base-types/regular-expression-options.md
+      - name: Miscellaneous constructs
+        href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
+    - name: Best practices for regular expressions
+      href: ../standard/base-types/best-practices.md
+    - name: Regular expression object model
+      href: ../standard/base-types/the-regular-expression-object-model.md
+    - name: Regular expression behavior
+      items:
+      - name: Overview
+        href: ../standard/base-types/details-of-regular-expression-behavior.md
+      - name: Backtracking
+        href: ../standard/base-types/backtracking-in-regular-expressions.md
+      - name: Compilation and reuse
+        href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
+      - name: Thread safety
+        href: ../standard/base-types/thread-safety-in-regular-expressions.md
+    - name: Examples
+      items:
+      - name: Scan for HREFs
+        href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
+      - name: Change date formats
+        href: ../standard/base-types/regular-expression-example-changing-date-formats.md
+      - name: Extract a protocol and port number from a URL
+        href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
+      - name: Strip invalid characters from a string
+        href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
+      - name: Verify that strings are in valid email format
+        href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
   - name: Serialization
     items:
     - name: Overview
@@ -1753,6 +1717,44 @@ items:
       href: ../standard/io/memory-mapped-files.md
   - name: The System.Console class
     href: ../standard/building-console-apps.md
+  - name: Dependency injection
+    items:
+    - name: Overview
+      href: ../core/extensions/dependency-injection.md
+      displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
+    - name: Use dependency injection
+      href: ../core/extensions/dependency-injection-usage.md
+      displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
+    - name: Dependency injection guidelines
+      href: ../core/extensions/dependency-injection-guidelines.md
+      displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
+  - name: Configuration
+    items:
+    - name: Overview
+      href: ../core/extensions/configuration.md
+      displayName: configuration,config,configuration sources,config sources
+    - name: Configuration providers
+      href: ../core/extensions/configuration-providers.md
+      displayName: configuration providers,config providers
+    - name: Implement a custom configuration provider
+      href: ../core/extensions/custom-configuration-provider.md
+      displayName: custom configuration,custom config,custom configuration provider,custom config provider
+    - name: Options pattern
+      href: ../core/extensions/options.md
+  - name: Logging
+    items:
+    - name: Overview
+      href: ../core/extensions/logging.md
+    - name: Logging providers
+      href: ../core/extensions/logging-providers.md
+    - name: Implement a custom logging provider
+      href: ../core/extensions/custom-logging-provider.md
+    - name: High-performance logging
+      href: ../core/extensions/high-performance-logging.md
+    - name: Console log formatting
+      href: ../core/extensions/console-log-formatter.md
+  - name: HostBuilder (generic host)
+    href: ../core/extensions/generic-host.md
 - name: Data access
   items:
   - name: LINQ

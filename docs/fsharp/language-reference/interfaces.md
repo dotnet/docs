@@ -114,7 +114,6 @@ namespace CSharp
 These are directly consumable from F#:
 
 ```fsharp
-
 open CSharp
 
 // You can implement the interface via a class

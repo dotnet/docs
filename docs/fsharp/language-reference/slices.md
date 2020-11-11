@@ -143,7 +143,7 @@ let xs = [1 .. 10]
 printfn "%A" xs.[2..5] // Includes the 5th index
 ```
 
-## Built-in F# slices produce empty slices for slices that are impossible to generate
+## Built-in F# empty slices
 
 F# lists, arrays, sequences, strings, 2D arrays, 3D arrays, and 4D arrays will all produce an empty slice if the syntax could produce a slice that doesn't exist.
 
@@ -168,22 +168,20 @@ For F# 3D and 4D arrays, you can "fix" a particular index and slice other dimens
 To illustrate this, consider the following 3D array:
 
 *z = 0*
-|x\y|0|1|
-|---|-|-|
-|**0**|0|1|
-|**1**|2|3|
+| x\y   | 0 | 1 |
+|-------|---|---|
+| **0** | 0 | 1 |
+| **1** | 2 | 3 |
 
 *z = 1*
-|x\y|0|1|
-|---|-|-|
-|**0**|4|5|
-|**1**|6|7|
+| x\y   | 0 | 1 |
+|-------|---|---|
+| **0** | 4 | 5 |
+| **1** | 6 | 7 |
 
-What if you wanted to extract the slice `[| 4; 5 |]` from the array? With a fixed-index slice, of course!
+If you want to extract the slice `[| 4; 5 |]` from the array, use a fixed-index slice.
 
 ```fsharp
-// First, create a 3D array to slice
-
 let dim = 2
 let m = Array3D.zeroCreate<int> dim dim dim
 

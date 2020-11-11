@@ -9,13 +9,13 @@ ms.date: 11/11/2020
 
 ## Name
 
-`dotnet tool search` - searches all [.NET Core tools](global-tools.md) that are published to NuGet.
+`dotnet tool search` - Searches all [.NET Core tools](global-tools.md) that are published to NuGet.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet tool search --detail  --prerelease
-    --skip <NUMBER> --take <NUMBER> <SEARCH TERM>
+dotnet tool search [--detail]  [--prerelease]
+    [--skip <NUMBER>] [--take <NUMBER>] <SEARCH TERM>
 
 dotnet tool search -h|--help
 ```
@@ -24,7 +24,7 @@ dotnet tool search -h|--help
 
 The `dotnet tool search` command provides a way for you to search NuGet for tools that can be used as .NET global, tool-path, or local tools. The command searches the tool names and metadata such as titles, descriptions, and tags.
 
-The command uses the [NuGet Search API](https://docs.microsoft.com/nuget/api/search-query-service-resource#search-for-packages). It filters on `packageType=dotnettool` to select only .NET tool packages.
+The command uses the [NuGet Search API](/nuget/api/search-query-service-resource#search-for-packages). It filters on `packageType=dotnettool` to select only .NET tool packages.
 
 ## Options
 
@@ -50,22 +50,26 @@ The command uses the [NuGet Search API](https://docs.microsoft.com/nuget/api/sea
 
 ## Examples
 
-- **`dotnet tool search format`**
+- Search NuGet.org for .NET tools that have "format" in their package name or description:
 
-  Searches NuGet.org for .NET tools that have "format" in their package name or description.
+  ```dotnetcli
+  dotnet tool search format
+  ```
 
   The output looks like the following example:
 
-  ```ouput
+  ```output
   Package ID                              Latest Version      Authors                                                                     Downloads      Verified
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------
   dotnet-format                           4.1.131201          Microsoft                                                                   496746
   bsoa.generator                          1.0.0               Microsoft                                                                   533
   ```
 
-- **`dotnet tool search format --take 1 --detail`**
+- Searches NuGet.org for .NET tools that have "format" in their package name or metadata, shows only the first result, and shows a detailed view.
 
-  Searches NuGet.org for .NET tools that have "format" in their package name or metadata, shows only the first result, and shows a detailed view.
+  ```dotnetcli
+  dotnet tool search format --take 1 --detail
+  ```
 
   The output looks like the following example:
 

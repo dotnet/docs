@@ -18,7 +18,7 @@ dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
     [--deprecated]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
-    [--outdated] [--source <SOURCE>] -v|--version <LEVEL>
+    [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
 
 dotnet list package -h|--help
 ```

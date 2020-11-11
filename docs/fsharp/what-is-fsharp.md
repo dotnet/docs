@@ -23,7 +23,7 @@ let main args =
     // Prints a greeting for each name!
     names
     |> List.map getGreeting
-    |> List.iter (fun greeting -> printfn "%s" greeting)
+    |> List.iter (fun greeting -> printfn $"{greeting}")
 
     0
 ```
@@ -46,16 +46,14 @@ Data types such as [Records](./language-reference/records.md) and [Discriminated
 
 ```fsharp
 // Group data with Records
-type SuccessfulWithdrawal = {
-    Amount: decimal
-    Balance: decimal
-}
+type SuccessfulWithdrawal =
+    { Amount: decimal
+      Balance: decimal }
 
-type FailedWithdrawal = {
-    Amount: decimal
-    Balance: decimal
-    IsOverdraft: bool
-}
+type FailedWithdrawal =
+    { Amount: decimal
+      Balance: decimal
+      IsOverdraft: bool }
 
 // Use discriminated unions to represent data of 1 or more forms
 type WithdrawalResult =
@@ -80,9 +78,9 @@ let handleWithdrawal amount =
 
     // The F# compiler enforces accounting for each case!
     match w with
-    | Success s -> printfn "Successfully withdrew %f" s.Amount
-    | InsufficientFunds f -> printfn "Failed: balance is %f" f.Balance
-    | CardExpired d -> printfn "Failed: card expired on %O" d
+    | Success s -> printfn "Successfully withdrew %f{s.Amount}"
+    | InsufficientFunds f -> printfn "Failed: balance is %f{f.Balance}"
+    | CardExpired d -> printfn "Failed: card expired on {d}"
     | UndisclosedFailure -> printfn "Failed: unknown :("
 ```
 

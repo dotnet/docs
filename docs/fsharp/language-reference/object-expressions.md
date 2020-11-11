@@ -32,7 +32,7 @@ The following example illustrates several different types of object expressions.
 // This object expression specifies a System.Object but overrides the
 // ToString method.
 let obj1 = { new System.Object() with member x.ToString() = "F#" }
-printfn "%A" obj1
+printfn $"{obj1}"
 
 // This object expression implements the IFormattable interface.
 let delimiter(delim1: string, delim2: string, value: string) =

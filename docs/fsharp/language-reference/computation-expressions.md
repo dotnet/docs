@@ -105,7 +105,7 @@ let squares =
     }
 
 for sq in squares do
-    printfn "%d" sq
+    printfn $"%d{sq}"
 ```
 
 In most cases, it can be omitted by callers. The most common way to omit `yield` is with the `->` operator:
@@ -117,7 +117,7 @@ let squares =
     }
 
 for sq in squares do
-    printfn "%d" sq
+    printfn $"%d{sq}"
 ```
 
 For more complex expressions that might yield many different values, and perhaps conditionally, simply omitting the keyword can do:
@@ -161,7 +161,7 @@ let squaresAndCubes =
         yield! cubes
     }
 
-printfn "%A" squaresAndCubes // Prints - 1; 4; 9; 1; 8; 27
+printfn $"{squaresAndCubes}"  // Prints - 1; 4; 9; 1; 8; 27
 ```
 
 When evaluated, the computation expression called by `yield!` will have its items yielded back one-by-one, flattening the result.
@@ -384,7 +384,7 @@ let eventually = new EventuallyBuilder()
 
 let comp = eventually {
     for x in 1..2 do
-        printfn " x = %d" x
+        printfn $" x = %d{x}"
     return 3 + 4 }
 
 // Try the remaining lines in F# interactive to see how this

@@ -27,6 +27,8 @@ A naming rule has three parts:
 * The naming style to associate with the rule.
 * The severity for enforcing the convention.
 
+You define naming rules in an EditorConfig file.
+
 ## General syntax
 
 To define a naming rule, symbol group, or naming style, write one or more property settings with the following syntax:

@@ -18,7 +18,7 @@ dotnet tool install -g dotnet-gcdump
 Starting from .NET 5, it is now possible to directly download a one-file executable for your operating system:
 
 - Win ([x86](https://aka.ms/dotnet-gcdump/win-x86) | [x64](https://aka.ms/dotnet-gcdump/win-x64) | [arm](https://aka.ms/dotnet-gcdump/win-arm) | [arm-x64](https://aka.ms/dotnet-gcdump/win-arm64))
-- OSX ([x64](https://aka.ms/dotnet-gcdump/osx-x64))
+- macOS ([x64](https://aka.ms/dotnet-gcdump/osx-x64))
 - Linux ([x64](https://aka.ms/dotnet-gcdump/linux-x64) | [arm](https://aka.ms/dotnet-gcdump/linux-arm) | [arm64](https://aka.ms/dotnet-gcdump/linux-arm64) | [musl-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) | [musl-arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64))
 
 ## Synopsis

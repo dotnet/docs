@@ -18,7 +18,7 @@ dotnet tool install --global dotnet-trace
 Starting from .NET 5, it is now possible to directly download a one-file executable for your operating system:
 
 - Win ([x86](https://aka.ms/dotnet-trace/win-x86) | [x64](https://aka.ms/dotnet-trace/win-x64) | [arm](https://aka.ms/dotnet-trace/win-arm) | [arm-x64](https://aka.ms/dotnet-trace/win-arm64))
-- OSX ([x64](https://aka.ms/dotnet-trace/osx-x64))
+- macOS ([x64](https://aka.ms/dotnet-trace/osx-x64))
 - Linux ([x64](https://aka.ms/dotnet-trace/linux-x64) | [arm](https://aka.ms/dotnet-trace/linux-arm) | [arm64](https://aka.ms/dotnet-trace/linux-arm64) | [musl-x64](https://aka.ms/dotnet-trace/linux-musl-x64) | [musl-arm64](https://aka.ms/dotnet-trace/linux-musl-arm64))
 
 ## Synopsis

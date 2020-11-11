@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 
 - A ✔️ indicates that the version of openSUSE or .NET is still supported.
 - A ❌ indicates that the version of openSUSE or .NET isn't supported on that openSUSE release.
-- When both a version of openSUSE and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of openSUSE and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | openSUSE                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |----------------------------|---------------|---------------|----------------|

@@ -8,7 +8,7 @@ ms.date: 11/10/2020
 
 # Install .NET SDK or .NET Runtime on Alpine
 
-This article describes how to install .NET on Alpine. When a Alpine version falls out of support, .NET is no longer supported with that version. However, these instructions may help you to get .NET running on those versions, even though it isn't supported.
+This article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version. However, these instructions may help you to get .NET running on those versions, even though it isn't supported.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 - A ✔️ indicates that the version of Alpine or .NET is still supported.
 - A ❌ indicates that the version of Alpine or .NET isn't supported on that Alpine release.
-- When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of Alpine and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | Alpine  | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |-------- |---------------|---------------|----------------|

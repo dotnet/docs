@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 - A ✔️ indicates that the version of Ubuntu or .NET is still supported.
 - A ❌ indicates that the version of Ubuntu or .NET isn't supported on that Ubuntu release.
-- When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|

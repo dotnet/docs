@@ -20,7 +20,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 - A ✔️ indicates that the version of Debian or .NET is still supported.
 - A ❌ indicates that the version of Debian or .NET isn't supported on that Debian release.
-- When both a version of Debian and a version of .NET have ✔️, that OS and .NET combination are supported.
+- When both a version of Debian and a version of .NET have ✔️, that OS and .NET combination is supported.
 
 | Debian                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|

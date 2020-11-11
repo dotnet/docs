@@ -153,7 +153,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 
 ## <a name="rule-id-ide1006-naming-rule-violation"></a>Rule ID: "IDE1006" (Naming rule violation)
 
-All naming options have rule ID `IDE1006` and title `Naming rule violation`. Severity of naming violations can be configured globally in an EditorConfig file with the following syntax:
+All naming options have rule ID `IDE1006` and title `Naming rule violation`. You can configure the severity of naming violations globally in an EditorConfig file with the following syntax:
 
 ```ini
 dotnet_diagnostic.IDE1006.severity = <severity value>

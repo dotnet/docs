@@ -105,7 +105,7 @@ You can set the following properties for symbol groups, to limit which symbols a
 
 ## Naming style properties
 
-A naming style defines the conventions we want to enforce with a naming rule. For example:
+A naming style defines the conventions you want to enforce with the rule. For example:
 
 * Capitalize with `PascalCase`
 * Starts with `m_`

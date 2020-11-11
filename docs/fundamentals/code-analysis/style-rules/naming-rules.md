@@ -49,7 +49,7 @@ The order of the properties is not important.
 | Naming style | `dotnet_naming_style` | `dotnet_naming_style.pascal_case.capitalization = pascal_case` |
 | Naming rule | `dotnet_naming_rule` | `dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion`
 
-Each type of definition -- [naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#style-properties)  -- has its own supported properties, as described below.
+Each type of definition&mdash;[naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#naming-style-properties)&mdash;has its own supported properties, as described in the following sections.
 
 ### \<title>
 

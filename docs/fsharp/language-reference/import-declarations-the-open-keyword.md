@@ -11,6 +11,7 @@ An *import declaration* specifies a module or namespace whose elements you can r
 
 ```fsharp
 open module-or-namespace-name
+open type type-name
 ```
 
 ## Remarks
@@ -36,6 +37,31 @@ printfn "%A" empty
 ```
 
 Therefore, be careful when you open modules or namespaces such as `List` or `Seq` that contain members that have identical names; instead, consider using the qualified names. You should avoid any situation in which the code is dependent upon the order of the import declarations.
+
+## Open type declarations
+
+F# supports `open` on a type like so:
+
+```fsharp
+open type System.Math
+PI
+```
+
+This will expose all accessible static fields and members on the type.
+
+You can also `open` F#-defined [record](records.md) and [discriminated union](discriminated-unions.md) types to expose static members. In the case of discriminated unions, you can also expose the union cases. This can be helpful for accessing union cases in a type declared inside of a module that you may not want to open, like so:
+
+```fsharp
+module M =
+    type DU = A | B | C
+
+    let someOtherFunction x = x + 1
+
+// Open only the type inside the module
+open type M.DU
+
+printfn "%A" A
+```
 
 ## Namespaces That Are Open by Default
 

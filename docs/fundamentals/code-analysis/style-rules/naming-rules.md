@@ -159,7 +159,7 @@ All naming options have rule ID `IDE1006` and title `Naming rule violation`. You
 dotnet_diagnostic.IDE1006.severity = <severity value>
 ```
 
-The value must be `warning` or `error` to be [enforced on build](../overview.md#code-style-analysis). For all possible severity values, see [severity level](../configuration-options.md#severity-level).
+The severity value must be `warning` or `error` to be [enforced on build](../overview.md#code-style-analysis). For all possible severity values, see [severity level](../configuration-options.md#severity-level).
 
 ## See also
 

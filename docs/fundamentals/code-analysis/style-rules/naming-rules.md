@@ -63,7 +63,6 @@ dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum, d
 dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 ```
 
-produces two symbol group definitions -- `interface` and `types` -- each of which has two properties set on it.
 
 ## Naming rule properties
 

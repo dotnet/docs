@@ -43,7 +43,7 @@ The order of the properties is not important.
 
 ### \<prefix>
 
-**\<prefix>** specifies which kind of element is being defined -- naming rule, symbol group, or naming style -- and must be one of the following:
+**\<prefix>** specifies which kind of element is being defined&mdash;naming rule, symbol group, or naming style&mdash;and must be one of the following:
 
 | To set a property for | Use the prefix | Example |
 | --- | --- | -- |

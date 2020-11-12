@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Install and use a .NET Core global tool"
+title: "Tutorial: Install and use a .NET global tool"
 description: Learn how to install and use a .NET tool as a global tool.
 ms.topic: tutorial
 ms.date: 02/12/2020
 ---
 
-# Tutorial: Install and use a .NET Core global tool using the .NET Core CLI
+# Tutorial: Install and use a .NET global tool using the .NET CLI
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
@@ -23,9 +23,9 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    dotnet tool install --global --add-source ./nupkg microsoft.botsay
    ```
 
-   The `--global` parameter tells the .NET Core CLI to install the tool binaries in a default location that is automatically added to the PATH environment variable.
+   The `--global` parameter tells the .NET CLI to install the tool binaries in a default location that is automatically added to the PATH environment variable.
 
-   The `--add-source` parameter tells the .NET Core CLI to temporarily use the *./nupkg* directory as an additional source feed for NuGet packages. You gave your package a unique name to make sure that it will only be found in the *./nupkg* directory, not on the Nuget.org site.
+   The `--add-source` parameter tells the .NET CLI to temporarily use the *./nupkg* directory as an additional source feed for NuGet packages. You gave your package a unique name to make sure that it will only be found in the *./nupkg* directory, not on the Nuget.org site.
 
    The output shows the command used to call the tool and the version installed:
 
@@ -65,7 +65,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    dotnet tool install --tool-path ~/bin --add-source ./nupkg microsoft.botsay
    ```
 
-   The `--tool-path` parameter tells the .NET Core CLI to install the tool binaries in the specified location. If the directory doesn't exist, it is created. This directory is not automatically added to the PATH environment variable.
+   The `--tool-path` parameter tells the .NET CLI to install the tool binaries in the specified location. If the directory doesn't exist, it is created. This directory is not automatically added to the PATH environment variable.
 
    The output shows the command used to call the tool and the version installed:
 
@@ -104,7 +104,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 
 ## Troubleshoot
 
-If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).
+If you get an error message while following the tutorial, see [Troubleshoot .NET tool usage issues](troubleshoot-usage-issues.md).
 
 ## Next steps
 

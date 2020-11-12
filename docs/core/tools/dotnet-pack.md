@@ -1,6 +1,6 @@
 ---
 title: dotnet pack command
-description: The dotnet pack command creates NuGet packages for your .NET Core project.
+description: The dotnet pack command creates NuGet packages for your .NET project.
 ms.date: 04/28/2020
 ---
 # dotnet pack

@@ -16,11 +16,11 @@ The following commands can be run elevated:
 
 We don't recommend running other commands elevated. In particular, we don't recommend elevation with commands that use MSBuild, such as [dotnet restore](dotnet-restore.md), [dotnet build](dotnet-build.md), and [dotnet run](dotnet-run.md). The primary issue is permission management problems when a user transitions back and forth between root and a restricted account after issuing dotnet commands. You may find as a restricted user that you don't have access to the file built by a root user. There are ways to resolve this situation, but they're unnecessary to get into in the first place.
 
-You can run commands as root as long as you don’t transition back and forth between root and a restricted account. For example, Docker containers run as root by default, so they have this characteristic.
+You can run commands as root as long as you don't transition back and forth between root and a restricted account. For example, Docker containers run as root by default, so they have this characteristic.
 
 ## Global tool installation
 
-The following instructions demonstrate the recommended way to install, run, and uninstall .NET Core tools that require elevated permissions to execute.
+The following instructions demonstrate the recommended way to install, run, and uninstall .NET tools that require elevated permissions to execute.
 
 <!-- markdownlint-disable MD025 -->
 
@@ -31,7 +31,7 @@ The following instructions demonstrate the recommended way to install, run, and 
 If the folder `%ProgramFiles%\dotnet-tools` already exists, do the following to check whether the "Users" group has permission to write or modify that directory:
 
 - Right-click the `%ProgramFiles%\dotnet-tools` folder and select **Properties**. The **Common Properties** dialog box opens.
-- Select the **Security** tab. Under **Group or user names**, check whether the “Users” group has permission to write or modify the directory.
+- Select the **Security** tab. Under **Group or user names**, check whether the "Users" group has permission to write or modify the directory.
 - If the "Users" group can write or modify the directory, use a different directory name when installing the tools rather than *dotnet-tools*.
 
 To install tools, run the following command in elevated prompt. It will create the *dotnet-tools* folder during the installation.
@@ -102,4 +102,4 @@ During development, you may need elevated access to test your application. This 
 
 ## See also
 
-- [.NET Core Global Tools overview](global-tools.md)
+- [.NET tools overview](global-tools.md)

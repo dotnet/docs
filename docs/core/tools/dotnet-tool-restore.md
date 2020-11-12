@@ -1,6 +1,6 @@
 ---
 title: dotnet tool restore command
-description: The dotnet tool restore command installs on your machine the .NET Core local tools that are in scope for the current directory.
+description: The dotnet tool restore command installs on your machine the .NET local tools that are in scope for the current directory.
 ms.date: 02/14/2020
 ---
 # dotnet tool restore
@@ -9,7 +9,7 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet tool restore` - Installs on your machine the .NET Core local tools that are in scope for the current directory.
+`dotnet tool restore` - Installs on your machine the .NET local tools that are in scope for the current directory.
 
 ## Synopsis
 
@@ -73,5 +73,5 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
 ## See also
 
-- [.NET Core tools](global-tools.md)
-- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)
+- [.NET tools](global-tools.md)
+- [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)

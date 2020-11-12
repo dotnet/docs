@@ -117,7 +117,7 @@ The following XML excludes the `System.Security` assembly from trimming.
 
 ### UseAppHost
 
-The `UseAppHost` property was introduced in the 2.1.400 version of the .NET SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
+The `UseAppHost` property controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
 
 In .NET Core 3.0 and later versions, a framework-dependent executable is created by default. Set the `UseAppHost` property to `false` to disable generation of the executable.
 
@@ -406,13 +406,44 @@ The `Include` attribute specifies the name of the file, and the `HintPath` metad
 </ItemGroup>
 ```
 
-### Restore properties
+### Restore-related properties
 
 Restoring a referenced package installs all of its direct dependencies and all the dependencies of those dependencies. You can customize package restoration by specifying properties such as `RestorePackagesPath` and `RestoreIgnoreFailedSources`. For more information about these and other properties, see [restore target](/nuget/reference/msbuild-targets#restore-target).
 
 ```xml
 <PropertyGroup>
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
+
+## COM properties and items
+
+- [EnableComHosting](#enablecomhosting)
+- [EnableDynamicLoading](#enabledynamicloading)
+
+For more information, see [Expose .NET components to COM](../native-interop/expose-components-to-com.md).
+
+### EnableComHosting
+
+The `EnableComHosting` property indicates that an assembly provides a COM server. Setting the `EnableComHosting` to `true` also implies that [EnableDynamicLoading](#enabledynamicloading) is `true`.
+
+```xml
+<PropertyGroup>
+  <EnableComHosting>True</EnableComHosting>
+</PropertyGroup>
+```
+
+### EnableDynamicLoading
+
+The `EnableDynamicLoading` property indicates that an assembly is a [COM library](/windows/win32/com/the-component-object-model). Setting this property to `true` has the following effects:
+
+- A *.runtimeconfig.json* file is generated.
+- Sets [roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward) to `LatestMinor`.
+- NuGet references are copied locally.
+
+```xml
+<PropertyGroup>
+  <EnableDynamicLoading>true</EnableDynamicLoading>
 </PropertyGroup>
 ```
 

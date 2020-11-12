@@ -62,7 +62,7 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
 ```
 
-[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-yum.md)]
 
 ## RHEL 7 ✔️ .NET Core 3.1
 

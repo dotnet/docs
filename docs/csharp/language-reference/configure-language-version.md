@@ -101,7 +101,8 @@ The following table shows all current C# language versions. Your compiler may no
 > 7.1
 > 7.2
 > 7.3
-> 8.0 (default)
+> 8.0 
+> 9.0 (default)
 > latestmajor
 > preview
 > latest

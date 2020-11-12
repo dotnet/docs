@@ -7,7 +7,7 @@ ms.topic: overview
 
 # EventPipe
 
-EventPipe is a runtime (CoreCLR) component that can be used as one of tracing egression points, similar to ETW or LTTng. The goal of EventPipe is to allow .NET developers to easily trace their .NET applications without having to rely on OS-native components such as ETW or LTTng. 
+EventPipe is a runtime (CoreCLR) component that can be used as one of tracing egression points, similar to ETW or LTTng. The goal of EventPipe is to allow .NET developers to easily trace their .NET applications without having to rely on OS-native components such as ETW or LTTng.
 
 EventPipe is the mechanism behind many of the diagnostic tools and can be used for consuming events emitted by the runtime as well as custom events written by [EventSource](xref:System.Diagnostics.Tracing.EventSource).
 
@@ -33,7 +33,7 @@ The table below is a summary of the differences between EventPipe and ETW/LTTng.
 
 You can use EventPipe to trace your .NET application in many ways:
 
-* Use one of the [diagnostics tools](#tools-using-eventpipe) that are built on top of EventPipe. 
+* Use one of the [diagnostics tools](#tools-using-eventpipe) that are built on top of EventPipe.
 
 * Use [Microsoft.Diagnostics.NETCore.Client](https://github.com/dotnet/diagnostics/blob/master/documentation/diagnostics-client-library-instructions.md) library to write your own tool to configure and start EventPipe sessions yourself.
 

@@ -68,7 +68,7 @@ The telemetry feature collects the following data:
 | >=2.1.300     | Kernel version. |
 | >=2.1.300     | Libc release/version. |
 | >=3.0.100     | Whether the output was redirected (true or false). |
-| >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [.NET CLI/SDK crash exception telemetry collected](#net-core-clisdk-crash-exception-telemetry-collected). |
+| >=3.0.100     | On a CLI/SDK crash, the exception type and its stack trace (only CLI/SDK code is included in the stack trace sent). For more information, see [.NET CLI/SDK crash exception telemetry collected](#net-clisdk-crash-exception-telemetry-collected). |
 
 ### Collected options
 

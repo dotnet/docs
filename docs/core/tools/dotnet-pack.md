@@ -182,4 +182,4 @@ Web projects aren't packable by default. To override the default behavior, add t
   
   - [Packing using a .nuspec](/nuget/reference/msbuild-targets#packing-using-a-nuspec)
   - [Advanced extension points to create customized package](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
-  - [Global properties](/visualstudio/msbuild/msbuild-properties?view=vs-2019#global-properties)
+  - [Global properties](/visualstudio/msbuild/msbuild-properties#global-properties)

@@ -284,7 +284,7 @@ The resulting file is then:
 11
 12  FROM base AS final
 13  WORKDIR /app
-14  COPY --from=publish /app
+14  COPY --from=publish /app .
 15  ENTRYPOINT ["dotnet", "Catalog.API.dll"]
 ```
 

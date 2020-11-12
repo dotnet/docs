@@ -26,6 +26,8 @@ C# 9.0 adds the following features and enhancements to the C# language:
 
 C# 9.0 is supported on **.NET 5**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
+You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
+
 ## Record types
 
 C# 9.0 introduces ***record types***, which are a reference type that provides synthesized methods to provide value semantics for equality. Records are immutable by default.
@@ -152,7 +154,7 @@ System.Console.WriteLine("Hello World!");
 
 Only one file in your application may use top-level statements. If the compiler finds top-level statements in multiple source files, it’s an error. It’s also an error if you combine top-level statements with a declared program entry point method, typically a `Main` method. In a sense, you can think that one file contains the statements that would normally be in the `Main` method of a `Program` class.  
 
-One of the most common uses for this feature is creating teaching materials. Beginner C# developers can write the canonical “Hello World!” in one or two lines of code. None of the extra ceremony is needed. However, seasoned developers will find many uses for this feature as well. Top-level statements enable a script-like experience for experimentation similar to what Jupyter notebooks provide. Top-level statements are great for small console programs and utilities. Azure functions are an ideal use case for top-level statements.
+One of the most common uses for this feature is creating teaching materials. Beginner C# developers can write the canonical “Hello World!” in one or two lines of code. None of the extra ceremony is needed. However, seasoned developers will find many uses for this feature as well. Top-level statements enable a script-like experience for experimentation similar to what Jupyter notebooks provide. Top-level statements are great for small console programs and utilities. Azure Functions are an ideal use case for top-level statements.
 
 Most importantly, top-level statements don't limit your application’s scope or complexity. Those statements can access or use any .NET class. They also don’t limit your use of command-line arguments or return values. Top-level statements can access an array of strings named args. If the top-level statements return an integer value, that value becomes the integer return code from a synthesized `Main` method. The top-level statements may contain async expressions. In that case, the synthesized entry point returns a `Task`, or `Task<int>`.
 

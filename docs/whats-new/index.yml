@@ -12,6 +12,8 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
+    - text: October 2020
+      url: 2020-10.md
     - text: September 2020
       url: 2020-09.md
     - text: August 2020
@@ -22,16 +24,14 @@ landingContent:
       url: 2020-06.md
     - text: May 2020
       url: dotnet-2020-05.md
-    - text: April 2020
-      url: dotnet-2020-04.md
 - title: Find language updates
   linkLists:
   - linkListType: whats-new
     links:
     - text: What's new in C# 9
       url: ../csharp/whats-new/csharp-9.md
-    - text: What's new in F# 4.7
-      url: ../fsharp/whats-new/fsharp-47.md
+    - text: What's new in F# 5.0
+      url: ../fsharp/whats-new/fsharp-50.md
     - text: What's new for Visual Basic
       url: ../visual-basic/whats-new/index.md
 - title: Get involved - contribute
@@ -56,6 +56,10 @@ landingContent:
       url: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md
 - title: .NET developers
   linkLists:
+  - linkListType: download
+    links:
+    - text: Download the .NET SDK
+      url: https://dotnet.microsoft.com/download
   - linkListType: sample
     links:
     - text: .NET samples browser

@@ -18,6 +18,8 @@ This topic lists key feature names for each version of Visual Basic, with detail
 Visual Basic 16.0 / Visual Studio 2019 version 16.0\
 For new features, see [Visual Basic 16.0](#visual-basic-160).
 
+You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
+
 ## Previous versions
 
 Visual Basic 15.8 / Visual Studio 2017 version 15.8\

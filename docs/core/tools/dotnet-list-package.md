@@ -1,7 +1,7 @@
 ---
 title: dotnet list package command
 description: The 'dotnet list package' command provides a convenient option to list the package references for a project or solution.
-ms.date: 02/14/2020
+ms.date: 11/11/2020
 ---
 # dotnet list package
 
@@ -18,7 +18,7 @@ dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
     [--deprecated]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
-    [--outdated] [--source <SOURCE>]
+    [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
 
 dotnet list package -h|--help
 ```
@@ -112,6 +112,10 @@ The project or solution file to operate on. If not specified, the command search
 - **`-s|--source <SOURCE>`**
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
+
+- **`-v|--verbosity <LEVEL>`**
+
+  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
 
 ## Examples
 

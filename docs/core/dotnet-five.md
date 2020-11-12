@@ -170,3 +170,4 @@ For more information, see the [.NET MAUI roadmap](https://github.com/dotnet/maui
 
 - [The Journey to one .NET](https://channel9.msdn.com/Events/Build/2020/BOD106)
 - [Performance improvements in .NET 5](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5)
+- [Download the .NET SDK](https://dotnet.microsoft.com/download)

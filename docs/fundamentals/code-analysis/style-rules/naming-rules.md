@@ -31,7 +31,7 @@ You define naming rules in an EditorConfig file.
 
 ## General syntax
 
-To define a naming rule, symbol group, or naming style, write one or more property settings using the following syntax:
+To define a naming rule, symbol group, or naming style, set one or more properties using the following syntax:
 
 ```none
 <prefix>.<title>.<propertyName> = <propertyValue>
@@ -55,7 +55,7 @@ Each type of definition&mdash;[naming rule](#naming-rule-properties), [symbol gr
 
 ### \<title>
 
-**\<title>** is a descriptive name that you choose that associates multiple property settings into a single definition. For example, the following properties produce two symbol group definitions, `interface` and `types`, each of which has two properties set on it.
+**\<title>** is a descriptive name you choose that associates multiple property settings into a single definition. For example, the following properties produce two symbol group definitions, `interface` and `types`, each of which has two properties set on it.
 
 ```ini
 dotnet_naming_symbols.interface.applicable_kinds = interface

@@ -4,13 +4,13 @@ description: Review diagnostic events emitted by .NET runtime (CoreCLR) that can
 ms.date: "09/14/2020"
 ms.topic: reference
 helpviewer_keywords: 
-  - "runtime events [.NET Core]"
+  - "runtime events [.NET]"
   - "ETW, EventPipe runtime events (CoreCLR)"
 ---
 
-# .NET Core runtime events
+# .NET runtime events
 
-The .NET Core runtime (CoreCLR) emits various events that can be used to diagnose issues with your .NET application that can be consumed via various mechanisms such as `ETW`, `LTTng`, and `EventPipe`.
+The .NET runtime (CoreCLR) emits various events that can be used to diagnose issues with your .NET application that can be consumed via various mechanisms such as `ETW`, `LTTng`, and `EventPipe`.
 
 This document serves as a reference on the events that are fired by .NET Core runtime.
 

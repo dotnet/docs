@@ -261,6 +261,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -284,6 +285,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.2         | `netcoreapp2.2` |
@@ -508,6 +510,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.1` |
@@ -595,6 +598,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -647,6 +651,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
@@ -667,6 +672,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
@@ -752,6 +758,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.1` |

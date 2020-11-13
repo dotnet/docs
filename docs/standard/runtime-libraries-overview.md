@@ -13,7 +13,7 @@ These libraries provide implementations for many general and app-specific types,
 
 ## Runtime libraries
 
-These libraries provide the foundational types and utility functionality and is the base of all other .NET class libraries. An example is the <xref:System.String?displayProperty=nameWithType> class, which provides APIs for working with strings. Another example is the [serialization libraries](serialization/index.md).
+These libraries provide the foundational types and utility functionality and are the base of all other .NET class libraries. An example is the <xref:System.String?displayProperty=nameWithType> class, which provides APIs for working with strings. Another example is the [serialization libraries](serialization/index.md).
 
 ## Extensions to the runtime libraries
 

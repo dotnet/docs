@@ -13,21 +13,21 @@ EventPipe is the mechanism behind many of the diagnostic tools and can be used f
 
 This article is a high-level overview on EventPipe describing when to use EventPipe, how to use it to trace your applications, and how to configure it to best suit your needs.
 
-## EventPipe Basics
+## EventPipe basics
 
-At a high level, EventPipe can be thought of as an aggregation mechanism for the runtime when various components of the runtime (for example, the Just-In-Time compiler or the garbage collector) emits events or when events are written from [EventSource](xref:System.Diagnostics.Tracing.EventSource) instances.
+At a high level, EventPipe can be thought of as an aggregation mechanism for the runtime when various components of the runtime (for example, the Just-In-Time compiler or the garbage collector) emit events or when events are written from [EventSource](xref:System.Diagnostics.Tracing.EventSource) instances.
 
-The events are then serialized and can be written either directly to a file or through a diagnostics port that the runtime creates. On Windows, this port is implemented as a `NamedPipe` while on non-Windows platforms such as Linux or macOS it is implemented as a Unix Domain Socket. You can read more about the diagnostics port and how to interact with it via its custom inter-process communication protocol on the [diagnostics IPC protocol documentation](https://github.com/dotnet/diagnostics/blob/master/documentation/design-docs/ipc-protocol.md).
+The events are then serialized and can be written either directly to a file or through a diagnostics port that the runtime creates. On Windows, this port is implemented as a `NamedPipe`. On non-Windows platforms, such as Linux or macOS, it is implemented as a Unix Domain Socket. For more information about the diagnostics port and how to interact with it via its custom inter-process communication protocol, see the [diagnostics IPC protocol documentation](https://github.com/dotnet/diagnostics/blob/master/documentation/design-docs/ipc-protocol.md).
 
 EventPipe will then produce a trace file with `.nettrace` extension. To learn more about EventPipe serialization format, refer to the [EventPipe format documentation](https://github.com/microsoft/perfview/blob/master/src/TraceEvent/EventPipe/EventPipeFormat.md).
 
-## Decide whether you should use EventPipe or ETW/LTTng
+## EventPipe vs. ETW/LTTng
 
-EventPipe is part of the .NET runtime (CoreCLR) and is designed to work the same way across all the platforms .NET Core supports. This allows tracing tools based on EventPipe such as `dotnet-counters`, `dotnet-gcdump` and `dotnet-trace` to work cross platform seemlessly.
+EventPipe is part of the .NET runtime (CoreCLR) and is designed to work the same way across all the platforms .NET Core supports. This allows tracing tools based on EventPipe, such as `dotnet-counters`, `dotnet-gcdump`, and `dotnet-trace`, to work seamlessly across platforms.
 
-However, because EventPipe is a runtime built-in component, its scope is limited to managed code and the runtime itself only, and cannot be used for tracking some lower level events such as resolving native code stack or getting various kernel events. If you use C/C++ interop in your app or you want to trace the runtime itself (which is written in C++), or want deeper diagnostics into the behavior of the app that requires kernel events (i.e. native thread context switching events) you should use ETW or [perf/LTTng](./trace-perfcollect-lttng.md).
+However, because EventPipe is a runtime built-in component, its scope is limited to managed code and the runtime itself. EventPipe cannot be used for tracking some lower-level events, such as resolving native code stack or getting various kernel events. If you use C/C++ interop in your app or you want to trace the runtime itself (which is written in C++), or want deeper diagnostics into the behavior of the app that requires kernel events (that is, native-thread context-switching events) you should use ETW or [perf/LTTng](./trace-perfcollect-lttng.md).
 
-The table below is a summary of the differences between EventPipe and ETW/LTTng.
+The following table is a summary of the differences between EventPipe and ETW/LTTng.
 
 ## Use EventPipe to trace your .NET application
 
@@ -39,44 +39,44 @@ You can use EventPipe to trace your .NET application in many ways:
 
 * Use [environment variables](#trace-using-environment-variables) to start EventPipe.
 
-After you've produced a `nettrace` file that contains your EventPipe events, this can be viewed in [`PerfView`](https://github.com/Microsoft/perfview#perfview-overview) or Visual Studio.
+After you've produced a `nettrace` file that contains your EventPipe events, you can view the file in [`PerfView`](https://github.com/Microsoft/perfview#perfview-overview) or Visual Studio.
 
 You can also analyze EventPipe traces programmatically with [TraceEvent](https://github.com/Microsoft/perfview/blob/master/documentation/TraceEvent/TraceEventLibrary.md).
 
-### Tools using EventPipe
+### Tools that use EventPipe
 
-This is the easiest way to use EventPipe to trace your application. To learn more about how to use each of these tools, refer to each tools' documentation.
+This is the easiest way to use EventPipe to trace your application. To learn more about how to use each of these tools, refer to each tool's documentation.
 
-* [dotnet-counters](./dotnet-counters.md) lets you monitor/collect various metrics emitted by the .NET runtime and core libraries, as well as custom metrics you can write.
+* [dotnet-counters](./dotnet-counters.md) lets you monitor and collect various metrics emitted by the .NET runtime and core libraries, as well as custom metrics you can write.
 
-* [dotnet-gcdump](./dotnet-gcdump.md) lets you collect GC heap dump of applications for analyzing your application's managed heap.
+* [dotnet-gcdump](./dotnet-gcdump.md) lets you collect GC heap dumps of live processes for analyzing an application's managed heap.
 
 * [dotnet-trace](./dotnet-trace.md) lets you collect traces of applications to analyze for performance.
 
 ## Trace using environment variables
 
-The preferred mechanism for using EventPipe is to use `dotnet-trace` or `Microsoft.Diagnostics.NETCore.Client` library.
+The preferred mechanism for using EventPipe is to use `dotnet-trace` or the `Microsoft.Diagnostics.NETCore.Client` library.
 
-However, you can use the following environment variables to set up an EventPipe session on an app and have it write the trace directly to a file. To stop tracing, you need to exit the application.
+However, you can use the following environment variables to set up an EventPipe session on an app and have it write the trace directly to a file. To stop tracing, exit the application.
 
-* `COMPlus_EnableEventPipe`: Setting this to `1` starts an EventPipe session that writes directly to a file. By default this is `0`.
+* `COMPlus_EnableEventPipe`: Set this to `1` to start an EventPipe session that writes directly to a file. The default value is `0`.
 
-* `COMPlus_EventPipeOutputPath`: This is the path to the output EventPipe trace file when it is configured to run via `COMPlus_EnableEventPipe`. By default this is `trace.nettrace` which will be created in the same directory the app that is running from.
+* `COMPlus_EventPipeOutputPath`: The path to the output EventPipe trace file when it's configured to run via `COMPlus_EnableEventPipe`. The default value is `trace.nettrace`, which will be created in the same directory that the app is running from.
 
-* `COMPlus_CircularBufferMB`: This is the size of the internal buffer size that is used by EventPipe when it is configured to run via `COMPlus_EnableEventPipe`.
+* `COMPlus_CircularBufferMB`: The size of the internal buffer that is used by EventPipe when it's configured to run via `COMPlus_EnableEventPipe`.
 
-* `COMPlus_EventPipeConfig`: This environment variable can be used to set up the EventPipe session configuration when setting up an EventPipe session with `COMPlus_EnableEventPipe`.
+* `COMPlus_EventPipeConfig`: Sets up the EventPipe session configuration when starting an EventPipe session with `COMPlus_EnableEventPipe`.
 
-The syntax is as following:
+  The syntax is as follows:
 
-* `<provider>:<keyword>:<level>`
+  `<provider>:<keyword>:<level>`
 
-You can also specify multiple providers by concatenating them with comma:
+  You can also specify multiple providers by concatenating them with a comma:
 
-* `<provider1>:<keyword1>:<level1>,<provider2>:<keyword2>:<level2>`
+  `<provider1>:<keyword1>:<level1>,<provider2>:<keyword2>:<level2>`
 
-If this environment variable is not set but EventPipe is enabled by COMPlus_EnableEventPipe, it will start tracing by enabling the following providers with the following keywords and level:
+  If this environment variable is not set but EventPipe is enabled by `COMPlus_EnableEventPipe`, it will start tracing by enabling the following providers with the following keywords and levels:
 
-1. `Microsoft-Windows-DotNETRuntime:4c14fccbd:5`
-2. `Microsoft-Windows-DotNETRuntimePrivate:4002000b:5`
-3. `Microsoft-DotNETCore-SampleProfiler:0:5`
+  - `Microsoft-Windows-DotNETRuntime:4c14fccbd:5`
+  - `Microsoft-Windows-DotNETRuntimePrivate:4002000b:5`
+  - `Microsoft-DotNETCore-SampleProfiler:0:5`

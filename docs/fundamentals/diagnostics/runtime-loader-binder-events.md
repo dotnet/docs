@@ -3,7 +3,7 @@ title: "Loader and binder runtime events"
 description: See .NET runtime events that collect diagnostic information specific to loader and binder ETW events, which collect information about the assembly loader and binder.
 ms.date: "09/27/2020"
 ms.topic: reference
-helpviewer_keywords
+helpviewer_keywords:
   - "Assembly Loader events (CoreCLR)"
   - "Assembly Binder events (CoreCLR)"
   - "ETW, EventPipe, LTTng assembly loader and binder events (CoreCLR)"

@@ -1,9 +1,9 @@
 ---
 title: Read values from an analog-to-digital converter
-description: Learn how .NET can be used to build applications for IoT devices and scenarios.
+description: Learn how to read variable voltage values using an analog-to-digital converter.
 author: camsoper
 ms.author: casoper
-ms.date: 11/2/2020
+ms.date: 11/13/2020
 ms.topic: tutorial
 ms.prod: dotnet
 ---

@@ -1,8 +1,13 @@
-### CA1416: Platform compatibility
+---
+title: "Breaking change: CA1416: Platform compatibility"
+description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA1416.
+ms.date: 09/29/2020
+---
+# CA1416: Platform compatibility
 
 .NET code analyzer rule [CA1416](/visualstudio/code-quality/ca1416) is enabled, by default, starting in .NET 5.0. It produces a build warning for calls to platform-specific APIs from call sites that don't verify the operating system.
 
-#### Change description
+## Change description
 
 Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../docs/fundamentals/productivity/code-analysis.md). Several of these rules are enabled, by default, including [CA1416](/visualstudio/code-quality/ca1416). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build. Rule CA1416 informs you when you're using platform-specific APIs from places where the platform context isn't verified.
 
@@ -10,7 +15,7 @@ Rule [CA1416](/visualstudio/code-quality/ca1416), the platform compatibility ana
 
 In projects that target platforms for which APIs that they use aren't available, rule [CA1416](/visualstudio/code-quality/ca1416) flags any platform-specific API call where the platform context isn't verified. Most of the APIs that are now decorated with the <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> attributes throw <xref:System.PlatformNotSupportedException> exceptions when they're invoked on an unsupported operating system. Now that these APIs are marked as platform-specific, rule [CA1416](/visualstudio/code-quality/ca1416) helps you prevent run-time <xref:System.PlatformNotSupportedException> exceptions by adding OS checks to your call sites.
 
-#### Examples
+## Examples
 
 - The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows and is decorated with `[SupportedOSPlatform("windows")]`. The following code will produce a CA1416 warning at build time if the project [targets](../../../../docs/standard/frameworks.md) `net5.0` (but not `net5.0-windows`). For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
 
@@ -41,11 +46,11 @@ In projects that target platforms for which APIs that they use aren't available,
   >  </ItemGroup>
   >  ```
 
-#### Version introduced
+## Version introduced
 
 5.0 RC1
 
-#### Recommended action
+## Recommended action
 
 Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can check the current operating system using one of the `Is<Platform>` methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class, for example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType>, before calling a platform-specific API.
 
@@ -96,12 +101,12 @@ If you don't want to fix all your call sites, you can choose one of the followin
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../../docs/core/project-sdk/msbuild-props.md#enablenetanalyzers).
 
-#### Category
+## Category
 
 - Code analysis
 - Core .NET libraries
 
-#### Affected APIs
+## Affected APIs
 
 For Windows platform:
 
@@ -117,13 +122,13 @@ For Blazor WebAssembly platform:
 
 <!--
 
-#### Affected APIs
+## Affected APIs
 
 - ``
 
 -->
 
-#### See also
+## See also
 
 - [CA1416: Validate platform compatibility](/visualstudio/code-quality/ca1416)
 - [.NET API analyzer](../../../../docs/standard/analyzers/api-analyzer.md)

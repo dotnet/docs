@@ -1,8 +1,13 @@
-### CA2200: Rethrow to preserve stack details
+---
+title: "Breaking change: CA2200: Rethrow to preserve stack details"
+description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA2200.
+ms.date: 09/03/2020
+---
+# CA2200: Rethrow to preserve stack details
 
 .NET code analyzer rule [CA2200](/visualstudio/code-quality/ca2200) is enabled, by default, starting in .NET 5.0. It produces a build warning for any `catch` blocks that rethrow an exception and the exception is explicitly specified in the `throw` statement.
 
-#### Change description
+## Change description
 
 Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../docs/fundamentals/productivity/code-analysis.md). Several of these rules are enabled, by default, including [CA2200](/visualstudio/code-quality/ca2200). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build.
 
@@ -18,27 +23,27 @@ catch (ArithmeticException e)
 }
 ```
 
-#### Version introduced
+## Version introduced
 
 5.0 RC1
 
-#### Recommended action
+## Recommended action
 
 - Rethrow exceptions without specifying the exception explicitly. For more information, see [CA2200](/visualstudio/code-quality/ca2200).
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../../docs/core/project-sdk/msbuild-props.md#enablenetanalyzers).
 
-#### Category
+## Category
 
 Code analysis
 
-#### Affected APIs
+## Affected APIs
 
 Not detectable via API analysis.
 
 <!--
 
-#### Affected APIs
+## Affected APIs
 
 Not detectable via API analysis.
 

@@ -4,20 +4,73 @@
   href: categories.md
 - name: Page selectors
   href: breaking-changes.md
-- name: By version
-  expanded: true
+- name: .NET 5+ versions
   items:
-  - name: 3.1 to 5.0
-    href: 3.1-5.0.md
-  - name: 3.0 to 3.1
-    href: 3.0-3.1.md
-  - name: 2.2 to 3.1
-    href: 2.2-3.1.md
-  - name: 2.2 to 3.0
-    href: 2.2-3.0.md
-  - name: 2.0 to 2.1
-    href: 2.0-2.1.md
-  - name: Obsoletions in .NET 5+
+  - name: .NET 5.0
+    items:
+    - name: Overview
+      href: net5-breaking-changes-overview.md
+    - name: ASP.NET Core
+      href: 3.1-5.0.md
+    - name: Code analysis
+      items:
+      - name: "CA1416: Platform compatibility"
+        href: ca1416-platform-compatibility-analyzer.md
+      - name: "CA1417: OutAttribute on string parameter for P/Invoke"
+        href: ca1417-outattributes-on-pinvoke-string-parameters.md
+      - name: "CA1831: Use AsSpan instead of Range-based indexers for string"
+        href: ca1831-range-based-indexer-on-string.md
+      - name: "CA2013: Do not use ReferenceEquals with value types"
+        href: ca2013-referenceequals-on-value-types.md
+      - name: "CA2014: Do not use stackalloc in loops"
+        href: ca2014-stackalloc-in-loops.md
+      - name: "CA2015: Do not define finalizers for types derived from MemoryManager\<T>"
+        href: ca2015-finalizers-for-memorymanager-types.md
+      - name: "CA2200: Rethrow to preserve stack details"
+        href: ca2200-rethrow-to-preserve-stack-details.md
+      - name: "CA2247: Argument to TaskCompletionSource constructor should be TaskCreationOptions value"
+        href: ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Core .NET libraries
+      items:
+      - name:
+        href:
+    - name: Cryptography
+      items:
+      - name:
+        href:
+    - name: Globalization
+      items:
+      - name:
+        href:
+    - name: Interop
+      items:
+      - name:
+        href:
+    - name: MSBuild
+      items:
+      - name:
+        href:
+    - name: Networking
+      items:
+      - name:
+        href:
+    - name: Serialization
+      items:
+      - name:
+        href:
+    - name: Visual Basic
+      items:
+      - name:
+        href:
+    - name: Windows Forms
+      items:
+      - name:
+        href:
+    - name: WPF
+      items:
+      - name:
+        href:
+  - name: Obsoleted APIs
     items:
     - name: Overview
       displayName: syslib, obsolete, obsoletion
@@ -46,6 +99,17 @@
       href: syslib0011.md
     - name: SYSLIB0012
       href: syslib0012.md
+- name: .NET Core versions
+  expanded: true
+  items:
+  - name: 3.0 to 3.1
+    href: 3.0-3.1.md
+  - name: 2.2 to 3.1
+    href: 2.2-3.1.md
+  - name: 2.2 to 3.0
+    href: 2.2-3.0.md
+  - name: 2.0 to 2.1
+    href: 2.0-2.1.md
   - name: .NET Framework to .NET Core
     items:
     - name: Breaking changes
@@ -55,12 +119,9 @@
     - name: APIs that always throw
       href: unsupported-apis.md
 - name: By technology area
-  expanded: true
   items:
   - name: ASP.NET Core
     href: aspnetcore.md
-  - name: Code analysis
-    href: code-analysis.md
   - name: Core .NET libraries
     href: corefx.md
   - name: Cryptography

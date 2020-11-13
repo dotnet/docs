@@ -1,8 +1,13 @@
-### CA1831: Use AsSpan instead of Range-based indexers for string
+---
+title: "Breaking change: CA1831: Use AsSpan instead of Range-based indexers for string"
+description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA1831.
+ms.date: 08/21/2020
+---
+# CA1831: Use AsSpan instead of Range-based indexers for string
 
 .NET code analyzer rule [CA1831](/visualstudio/code-quality/ca1831) is enabled, by default, starting in .NET 5.0. It produces a build warning for any code where a <xref:System.Range>-based indexer is used on a string, but no copy was intended.
 
-#### Change description
+## Change description
 
 Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../docs/fundamentals/productivity/code-analysis.md). Several of these rules are enabled, by default, including [CA1831](/visualstudio/code-quality/ca1831). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build.
 
@@ -18,11 +23,11 @@ CA1831 suggests using the <xref:System.Range>-based indexer on a *span* of the s
 ReadOnlySpan<char> slice = str.AsSpan()[1..3];
 ```
 
-#### Version introduced
+## Version introduced
 
 5.0 Preview 8
 
-#### Recommended action
+## Recommended action
 
 - To correct your code and avoid unnecessary allocations, call <xref:System.MemoryExtensions.AsSpan(System.String)> or <xref:System.MemoryExtensions.AsMemory(System.String)> before using the <xref:System.Range>-based indexer. For example:
 
@@ -34,17 +39,17 @@ ReadOnlySpan<char> slice = str.AsSpan()[1..3];
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../../docs/core/project-sdk/msbuild-props.md#enablenetanalyzers).
 
-#### Category
+## Category
 
 Code analysis
 
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Range?displayProperty=fullName>
 
 <!--
 
-#### Affected APIs
+## Affected APIs
 
 - `T:System.Range`
 

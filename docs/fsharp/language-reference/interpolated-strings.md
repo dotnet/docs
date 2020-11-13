@@ -14,7 +14,6 @@ Interpolated strings are [strings](strings.md) that allow you to embed F# expres
 $"string-text {expr}"
 $"string-text %format-specifier{expr}"
 $"""string-text {"embedded string literal"}"""
-$"string-text {{escaped brackets}}"
 ```
 
 ## Remarks
@@ -34,7 +33,8 @@ The contents in between each `{}` brace pair can be any F# expression.
 To escape a `{}` brace pair, write two of them like so:
 
 ```fsharp
-let str = $"A pair of braces: {{}}" // "A pair of braces: {}"
+let str = $"A pair of braces: {{}}"
+// "A pair of braces: {}"
 ```
 
 ## Typed interpolated strings
@@ -70,7 +70,7 @@ printfn $"""Name: {"Phillip"}, Age: %d{age}"""
 You can left-align or right-align expressions inside interpolated strings with `|` and a specification of how many spaces. The following interpolated string aligns the left and right expressions to the left and right, respectively, by 7  spaces.
 
 ```fsharp
-let str = $"""|{"Left",-7}|{"Right",7}|"""
+printfn $"""|{"Left",-7}|{"Right",7}|"""
 // |Left   |  Right|
 ```
 
@@ -80,11 +80,11 @@ You can also apply formatting that adheres to the rules for <xref:System.Formatt
 
 ```fsharp
 let speedOfLight = 299792.458
-let str = $"The speed of light is {speedOfLight:N3} km/s."
+printfn $"The speed of light is {speedOfLight:N3} km/s."
 // "The speed of light is 299,792.458 km/s."
 ```
 
-An interpolated string can also be checked as a <xref:System.FormattbleString> via a type annotation:
+Additionally, an interpolated string can also be typechecked as a <xref:System.FormattbleString> via a type annotation:
 
 ```fsharp
 let frmtStr = $"The speed of light is {speedOfLight:N3} km/s." : FormattableString

@@ -50,11 +50,11 @@ An assembly may include types such as interfaces, classes, structures, enumerati
 
 ## BCL
 
-Base Class Library. Also known as *[framework](#framework) libraries*, *[runtime](#runtime) libraries*, and *shared [framework](#framework)*.
+Base Class Library. Also known as *[framework libraries](#framework-libraries)*, *[runtime libraries](#runtime)*, and *[shared framework](#shared-framework)*.
 
 A set of libraries that comprise the System.\* (and to a limited extent Microsoft.\*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on.
 
-The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). The majority of the BCL APIs for this newer implementation of .NET are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
+The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). The majority of these BCL APIs are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
 
 ## CLR
 

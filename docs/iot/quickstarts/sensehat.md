@@ -43,7 +43,7 @@ The command downloads and runs a script. The script:
 - Builds the project.
 - Runs the project.
 
-Observe the console output as sensor data is displayed. The LED matrix displays a yellow pixel on a field of blue. Holding the joystick in any direction moves the yellow pixel in that direction.
+Observe the console output as sensor data is displayed. The LED matrix displays a yellow pixel on a field of blue. Holding the joystick in any direction moves the yellow pixel in that direction. Clicking the center joystick button causes the background to switch from blue to red.
 
 ## Get the source code
 

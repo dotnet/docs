@@ -416,12 +416,10 @@ Restoring a referenced package installs all of its direct dependencies and all t
 </PropertyGroup>
 ```
 
-## COM properties and items
+## Hosting properties and items
 
 - [EnableComHosting](#enablecomhosting)
 - [EnableDynamicLoading](#enabledynamicloading)
-
-For more information, see [Expose .NET components to COM](../native-interop/expose-components-to-com.md).
 
 ### EnableComHosting
 
@@ -433,12 +431,14 @@ The `EnableComHosting` property indicates that an assembly provides a COM server
 </PropertyGroup>
 ```
 
+For more information, see [Expose .NET components to COM](../native-interop/expose-components-to-com.md).
+
 ### EnableDynamicLoading
 
-The `EnableDynamicLoading` property indicates that an assembly is a [COM library](/windows/win32/com/the-component-object-model). Setting this property to `true` has the following effects:
+The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md). Setting this property to `true` has the following effects:
 
 - A *.runtimeconfig.json* file is generated.
-- Sets [roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward) to `LatestMinor`.
+- [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward) is set to `LatestMinor`.
 - NuGet references are copied locally.
 
 ```xml

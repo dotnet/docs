@@ -73,7 +73,7 @@ The application needs to handle requests on the `/dapr/subscribe` endpoint and r
 
 In this example, you can see the application wants to subscribe to topics `newOrder` and `newProduct` and register the endpoints `/orders` and `/productCatalog/products` with these topics. For both subscriptions, the application wants to use the Publish/Subscribe component named `pubsub`.
 
-In he following diagram, you can see the entire flow of the example:
+ In he following diagram, you can see the entire flow of the example:
 
 ![Example Publish/Subscribe flow with Dapr](media/pubsub-dapr-pattern.png)
 
@@ -112,7 +112,29 @@ Receiving messages is possible by subscribing to a certain topic. You specify wh
 public async Task<ActionResult> CreateOrder(Order order)
 ```
 
-How can you specify that this method must be called when a message comes in on a certain Topic? Well, the Dapr .NET SDK offers a nice integration with ASP.NET Core. You can link a WebAPI operation to a Publish/Subscribe topic by decorating it with the `Topic` attribute:
+How can you specify that this method must be called when a message comes in on a certain Topic? Well, there are 2 ways of doing this. The first way is to configure the subscriptions declaratively using a configuration file:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Subscription
+metadata:
+  name: newOrder-subscription
+spec:
+  pubsubname: pubsub
+  topic: newOrder
+  route: /orders
+scopes:
+- ServiceB
+```
+
+You have to specify several things with every subscription:
+
+- The Dapr Publish/Subscribe component you want to use (in this case `pubsub`).
+- The name of the topic to subscribe to (in this case `newOrder`).
+- The API operation that needs to be called for this topic (in this case `/orders`).
+- The scope this subscription applies to. With the scope you can specify which services need to subscribe on the topic (in this case only `Service B`).
+
+The second way to define subscriptions, is to use the integration with ASP.NET Core in the Dapr .NET SDK. You can link a WebAPI operation to a Publish/Subscribe topic by decorating it with the `Topic` attribute:
 
 ```csharp
 [Topic("pubsub", "newOrder")]
@@ -338,7 +360,7 @@ Each service's Dapr sidecar will query the service to determine which topic(s) t
 
 You can use the Publish/Subscribe building block directly over HTTP or by using one of the available language specific SDKs.
 
-You can use the .NET SDK for Dapr by adding a reference to the `Dapr.Client` NuGet package. It offers a `DaprClient` class that can be used to publish messages. Dapr also provides a very straightforward way of integrating the Publish/Subscribe building block in an ASP.NET Core WebAPI application. For this, you need a reference to the `Dapr.AspNetCore` NuGet package. WebAPI controller methods can be decorated with the `Topic` attribute from this package to specify to Dapr that the decorated method must be invoked when a message comes in on the specified topic.
+You can use the .NET SDK for Dapr by adding a reference to the `Dapr.Client` NuGet package. It offers a `DaprClient` class that can be used to publish messages. Dapr also provides a very straightforward way of integrating the Publish/Subscribe building block in an ASP.NET Core WebAPI application. For this, you need a reference to the `Dapr.AspNetCore` NuGet package. WebAPI controller methods can be decorated with the `Topic` attribute from this package to specify to Dapr that the decorated method must be invoked when a message comes in on the specified topic. If you are not using the Dapr .NET SDK, you can use config files to declaratively specify the subscriptions. 
 
 Using the Dapr components mechanism, you can configure the actual message broker used by Dapr to distribute the messages.
 

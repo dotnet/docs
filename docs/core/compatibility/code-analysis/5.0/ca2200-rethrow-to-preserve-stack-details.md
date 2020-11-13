@@ -9,7 +9,7 @@ ms.date: 09/03/2020
 
 ## Change description
 
-Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../docs/fundamentals/productivity/code-analysis.md). Several of these rules are enabled, by default, including [CA2200](/visualstudio/code-quality/ca2200). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build.
+Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../fundamentals/code-analysis/overview.md). Several of these rules are enabled, by default, including [CA2200](/visualstudio/code-quality/ca2200). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build.
 
 Rule CA2200 flags code where exceptions are rethrown and the exception variable is specified in the `throw` statement. When an exception is thrown, part of the information it carries is the stack trace. The stack trace is a list of the method call hierarchy that starts with the method that throws the exception and ends with the method that catches the exception. If an exception is rethrown by specifying the exception in the `throw` statement, the stack trace restarts at the current method and the list of method calls between the original method that threw the exception and the current method is lost. To keep the original stack trace information with the exception, use the `throw` statement without specifying the exception.
 
@@ -31,7 +31,7 @@ catch (ArithmeticException e)
 
 - Rethrow exceptions without specifying the exception explicitly. For more information, see [CA2200](/visualstudio/code-quality/ca2200).
 
-- To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../../docs/core/project-sdk/msbuild-props.md#enablenetanalyzers).
+- To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 
 ## Category
 

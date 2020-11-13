@@ -1,6 +1,6 @@
 ---
 title: Overview of breaking changes in .NET 5.0
-description:
+description: Navigate to breaking changes that were introduced in .NET 5.0.
 ms.date: 11/13/2020
 ---
 # Breaking changes in .NET 5.0

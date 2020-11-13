@@ -9,7 +9,7 @@ ms.date: 09/29/2020
 
 ## Change description
 
-Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../docs/fundamentals/productivity/code-analysis.md). Several of these rules are enabled, by default, including [CA1416](/visualstudio/code-quality/ca1416). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build. Rule CA1416 informs you when you're using platform-specific APIs from places where the platform context isn't verified.
+Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../fundamentals/code-analysis/overview.md). Several of these rules are enabled, by default, including [CA1416](/visualstudio/code-quality/ca1416). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build. Rule CA1416 informs you when you're using platform-specific APIs from places where the platform context isn't verified.
 
 Rule [CA1416](/visualstudio/code-quality/ca1416), the platform compatibility analyzer, works hand-in-hand with some other features that are new in .NET 5.0. .NET 5.0 introduces the <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute>, which let you specify the platforms that an API *is* or *isn't* supported on. In the absence of these attributes, an API is assumed to be supported on all platforms. These attributes have been applied to platform-specific APIs in the core .NET libraries.
 
@@ -17,7 +17,7 @@ In projects that target platforms for which APIs that they use aren't available,
 
 ## Examples
 
-- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows and is decorated with `[SupportedOSPlatform("windows")]`. The following code will produce a CA1416 warning at build time if the project [targets](../../../../docs/standard/frameworks.md) `net5.0` (but not `net5.0-windows`). For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
+- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows and is decorated with `[SupportedOSPlatform("windows")]`. The following code will produce a CA1416 warning at build time if the project [targets](../../../../standard/frameworks.md) `net5.0` (but not `net5.0-windows`). For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
 
   ```csharp
   public void PlayCMajor()
@@ -88,7 +88,7 @@ public void PlayCMajor()
 
 If you don't want to fix all your call sites, you can choose one of the following options to suppress the warning:
 
-- To suppress rule CA1416, you can do so using `#pragma` or the [-nowarn](../../../../docs/csharp/language-reference/compiler-options/nowarn-compiler-option.md) compiler flag, or by [setting the rule's severity](../../../../docs/fundamentals/productivity/configure-code-analysis-rules.md#suppress-violations) to `none` in an .editorconfig file.
+- To suppress rule CA1416, you can do so using `#pragma` or the [-nowarn](../../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md) compiler flag, or by [setting the rule's severity](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) to `none` in an .editorconfig file.
 
   ```csharp
   public void PlayCMajor()
@@ -99,7 +99,7 @@ If you don't want to fix all your call sites, you can choose one of the followin
   }
   ```
 
-- To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../../docs/core/project-sdk/msbuild-props.md#enablenetanalyzers).
+- To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 
 ## Category
 
@@ -131,4 +131,4 @@ For Blazor WebAssembly platform:
 ## See also
 
 - [CA1416: Validate platform compatibility](/visualstudio/code-quality/ca1416)
-- [.NET API analyzer](../../../../docs/standard/analyzers/api-analyzer.md)
+- [.NET API analyzer](../../../../standard/analyzers/api-analyzer.md)

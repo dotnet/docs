@@ -9,7 +9,7 @@ ms.date: 08/21/2020
 
 ## Change description
 
-Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../docs/fundamentals/productivity/code-analysis.md). Several of these rules are enabled, by default, including [CA1831](/visualstudio/code-quality/ca1831). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build.
+Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../fundamentals/code-analysis/overview.md). Several of these rules are enabled, by default, including [CA1831](/visualstudio/code-quality/ca1831). If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build.
 
 Rule CA1831 finds instances where a <xref:System.Range>-based indexer is used on a string, but no copy was intended. If the <xref:System.Range>-based indexer is used directly on a string to produce an implicit cast, then an unnecessary copy of the requested portion of the string is created. For example:
 
@@ -35,9 +35,9 @@ ReadOnlySpan<char> slice = str.AsSpan()[1..3];
   ReadOnlySpan<char> slice = str.AsSpan()[1..3];
   ```
 
-- If you don't want to change your code, you can disable the rule by setting its severity to `suggestion` or `none`. For more information, see [Configure code analysis rules](../../../../docs/fundamentals/productivity/configure-code-analysis-rules.md).
+- If you don't want to change your code, you can disable the rule by setting its severity to `suggestion` or `none`. For more information, see [Configure code analysis rules](../../../../fundamentals/productivity/configure-code-analysis-rules.md).
 
-- To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../../docs/core/project-sdk/msbuild-props.md#enablenetanalyzers).
+- To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 
 ## Category
 

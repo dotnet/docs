@@ -7,7 +7,7 @@ ms.technology: dotnet-standard
 ---
 # Runtime libraries overview
 
-The [.NET runtime](../core/introduction.md#sdk-and-runtimes), which is installed on a machine for use by [framework-dependent apps](../core/introduction.md#deployment-models), has an expansive standard set of class libraries, known as [runtime libraries](glossary.md#runtime), [framework libraries](glossary.md#framework-libraries), or [base class libraries (BCL)](glossary.md#bcl). In addition, there are extensions to the runtime libraries, provided in NuGet packages.
+The [.NET runtime](../core/introduction.md#sdk-and-runtimes), which is installed on a machine for use by [framework-dependent apps](../core/introduction.md#deployment-models), has an expansive standard set of class libraries, known as [runtime libraries](glossary.md#runtime), [framework libraries](glossary.md#framework-libraries), or the [base class library (BCL)](glossary.md#bcl). In addition, there are extensions to the runtime libraries, provided in NuGet packages.
 
 These libraries provide implementations for many general and app-specific types, algorithms, and utility functionality.
 
@@ -17,7 +17,7 @@ These libraries provide the foundational types and utility functionality and are
 
 ## Extensions to the runtime libraries
 
-Some libraries are provided in NuGet packages rather than built-in to the runtime. An example is the [.NET Logging API](../core/extensions/logging.md). Documentation on how to use these libraries is included in this **Runtime libraries** section of the table of contents.
+Some libraries are provided in NuGet packages rather than included in the runtime's [shared framework](glossary.md#shared-framework). An example is the [.NET Logging API](../core/extensions/logging.md). Documentation on how to use these libraries is included in this **Runtime libraries** section of the table of contents.
 
 ## See also
 

@@ -258,7 +258,7 @@ For more information, see [.NET application publishing overview](deploying/index
 
 ## Runtime libraries
 
-.NET has an expansive standard set of class libraries, known as [runtime libraries](../standard/glossary.md#runtime), [framework libraries](../standard/glossary.md#framework-libraries), or [base class libraries (BCL)](../standard/glossary.md#bcl). These libraries provide implementations for many general-purpose and workload-specific types and utility functionality.
+.NET has an expansive standard set of class libraries, known as [runtime libraries](../standard/glossary.md#runtime), [framework libraries](../standard/glossary.md#framework-libraries), or the [base class library (BCL)](../standard/glossary.md#bcl). These libraries provide implementations for many general-purpose and workload-specific types and utility functionality.
 
 Here are some examples of types defined in the .NET runtime libraries:
 
@@ -272,7 +272,7 @@ Here are some examples of types defined in the .NET runtime libraries:
 
 For more information, see the [Runtime libraries section of the table of contents](../standard/runtime-libraries-overview.md). The source code for the libraries is in [the GitHub dotnet/runtime repository](https://github.com/dotnet/runtime/tree/master/src/libraries).
 
-## Microsoft.Extensions libraries
+### Extensions to the runtime libraries
 
 Libraries for some commonly used application functionality aren't included in the runtime libraries but are made available in NuGet packages, such as the following:
 

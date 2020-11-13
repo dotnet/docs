@@ -1,9 +1,9 @@
-﻿// <SnippetUsings>
+﻿// <Usings>
 using System;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Unicode;
-// </SnippetUsings>
+// </Usings>
 
 namespace SystemTextJsonSamples
 {
@@ -12,7 +12,8 @@ namespace SystemTextJsonSamples
         public static void Run()
         {
             string jsonString;
-            WeatherForecast weatherForecast = WeatherForecastFactories.CreateWeatherForecastCyrillic();
+            WeatherForecast weatherForecast = 
+                WeatherForecastFactories.CreateWeatherForecastCyrillic();
             weatherForecast.DisplayPropertyValues();
 
             Console.WriteLine("Default serialization - non-ASCII escaped");
@@ -25,19 +26,19 @@ namespace SystemTextJsonSamples
             Console.WriteLine();
 
             Console.WriteLine("Serialize language sets unescaped");
-            // <SnippetLanguageSets>
+            // <LanguageSets>
             options = new JsonSerializerOptions
             {
                 Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, options);
-            // </SnippetLanguageSets>
+            // </LanguageSets>
             Console.WriteLine(jsonString);
             Console.WriteLine();
 
             Console.WriteLine("Serialize selected unescaped characters");
-            // <SnippetSelectedCharacters>
+            // <SelectedCharacters>
             var encoderSettings = new TextEncoderSettings();
             encoderSettings.AllowCharacters('\u0436', '\u0430');
             encoderSettings.AllowRange(UnicodeRanges.BasicLatin);
@@ -47,19 +48,19 @@ namespace SystemTextJsonSamples
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, options);
-            // </SnippetSelectedCharacters>
+            // </SelectedCharacters>
             Console.WriteLine(jsonString);
             Console.WriteLine();
 
             Console.WriteLine("Serialize using unsafe relaxed encoder");
-            // <SnippetUnsafeRelaxed>
+            // <UnsafeRelaxed>
             options = new JsonSerializerOptions
             {
                 Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, options);
-            // </SnippetUnsafeRelaxed>
+            // </UnsafeRelaxed>
             Console.WriteLine(jsonString);
         }
     }

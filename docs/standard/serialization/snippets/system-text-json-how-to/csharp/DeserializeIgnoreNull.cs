@@ -19,13 +19,13 @@ namespace SystemTextJsonSamples
             var weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(jsonString);
             weatherForecast.DisplayPropertyValues();
 
-            // <SnippetDeserialize>
+            // <Deserialize>
             var options = new JsonSerializerOptions
             {
                 IgnoreNullValues = true
             };
             weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(jsonString, options);
-            // </SnippetDeserialize>
+            // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }
     }

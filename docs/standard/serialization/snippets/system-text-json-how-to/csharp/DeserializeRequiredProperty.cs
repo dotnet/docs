@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
@@ -12,9 +10,14 @@ namespace SystemTextJsonSamples
             string jsonString;
             var wf = WeatherForecastFactories.CreateWeatherForecast();
 
-            var options = new JsonSerializerOptions();
-            options.WriteIndented = true;
-            options.Converters.Add(new WeatherForecastRequiredPropertyConverter());
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Converters =
+                {
+                    new WeatherForecastRequiredPropertyConverter()
+                }
+            };
             jsonString = JsonSerializer.Serialize(wf, options);
             Console.WriteLine($"JSON with Date:\n{jsonString}\n");
 

@@ -3,8 +3,8 @@ title: Debug .NET apps on Raspberry Pi
 description: Learn how to debug .NET apps on Raspberry Pi and similar devices.
 author: camsoper
 ms.author: casoper
-ms.date: 11/2/2020
-ms.topic: overview
+ms.date: 11/13/2020
+ms.topic: how-to
 ms.prod: dotnet
 zone_pivot_groups: ide-set-one
 ---

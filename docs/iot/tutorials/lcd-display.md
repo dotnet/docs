@@ -1,10 +1,10 @@
 ---
 title: Display text on an LCD
-description: Learn how .NET can be used to build applications for IoT devices and scenarios.
+description: Learn how to display characters on a liquid crystal display with the .NET IoT Libraries.
 author: camsoper
 ms.author: casoper
-ms.date: 11/2/2020
-ms.topic: overview
+ms.date: 11/13/2020
+ms.topic: tutorial
 ms.prod: dotnet
 ---
 <!--markdownlint-disable DOCSMD011 -->

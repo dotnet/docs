@@ -1,6 +1,6 @@
 ---
 title: Nameof
-description: Learn about the nameof operator, a metaprogramming feature that allows you to produce the name of any symbol in your source code
+description: Learn about the nameof operator, a metaprogramming feature that allows you to produce the name of any symbol in your source code.
 ms.date: 11/12/2020
 ---
 

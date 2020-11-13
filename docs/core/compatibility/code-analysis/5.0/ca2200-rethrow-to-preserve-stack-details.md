@@ -3,7 +3,7 @@ title: "Breaking change: CA2200: Rethrow to preserve stack details"
 description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA2200.
 ms.date: 09/03/2020
 ---
-# CA2200: Rethrow to preserve stack details
+# Warning CA2200: Rethrow to preserve stack details
 
 .NET code analyzer rule [CA2200](/visualstudio/code-quality/ca2200) is enabled, by default, starting in .NET 5.0. It produces a build warning for any `catch` blocks that rethrow an exception and the exception is explicitly specified in the `throw` statement.
 

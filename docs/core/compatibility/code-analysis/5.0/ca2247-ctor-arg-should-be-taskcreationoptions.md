@@ -3,7 +3,7 @@ title: "Breaking change: CA2247: Argument to TaskCompletionSource constructor sh
 description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA2247.
 ms.date: 09/03/2020
 ---
-# CA2247: Argument to TaskCompletionSource constructor should be TaskCreationOptions value
+# Warning CA2247: Argument to TaskCompletionSource constructor should be TaskCreationOptions value
 
 .NET code analyzer rule [CA2247](/visualstudio/code-quality/ca2247) is enabled, by default, starting in .NET 5.0. It produces a build warning for calls to the <xref:System.Threading.Tasks.TaskCompletionSource%601> constructor that pass an argument of type <xref:System.Threading.Tasks.TaskContinuationOptions>.
 

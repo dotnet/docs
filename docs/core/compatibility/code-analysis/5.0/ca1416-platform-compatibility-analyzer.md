@@ -3,7 +3,7 @@ title: "Breaking change: CA1416: Platform compatibility"
 description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA1416.
 ms.date: 09/29/2020
 ---
-# CA1416: Platform compatibility
+# Warning CA1416: Platform compatibility
 
 .NET code analyzer rule [CA1416](/visualstudio/code-quality/ca1416) is enabled, by default, starting in .NET 5.0. It produces a build warning for calls to platform-specific APIs from call sites that don't verify the operating system.
 

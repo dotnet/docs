@@ -3,7 +3,7 @@ title: "Breaking change: CA1831: Use AsSpan instead of Range-based indexers for 
 description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA1831.
 ms.date: 08/21/2020
 ---
-# CA1831: Use AsSpan instead of Range-based indexers for string
+# Warning CA1831: Use AsSpan instead of Range-based indexers for string
 
 .NET code analyzer rule [CA1831](/visualstudio/code-quality/ca1831) is enabled, by default, starting in .NET 5.0. It produces a build warning for any code where a <xref:System.Range>-based indexer is used on a string, but no copy was intended.
 

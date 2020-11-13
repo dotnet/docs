@@ -10,66 +10,26 @@
     items:
     - name: Overview
       href: net5-breaking-changes-overview.md
-    - name: ASP.NET Core
+    - name: .NET Core 3.1 to .NET 5.0
       href: 3.1-5.0.md
     - name: Code analysis
       items:
-      - name: "CA1416: Platform compatibility"
-        href: ca1416-platform-compatibility-analyzer.md
-      - name: "CA1417: OutAttribute on string parameter for P/Invoke"
-        href: ca1417-outattributes-on-pinvoke-string-parameters.md
-      - name: "CA1831: Use AsSpan instead of Range-based indexers for string"
-        href: ca1831-range-based-indexer-on-string.md
-      - name: "CA2013: Do not use ReferenceEquals with value types"
-        href: ca2013-referenceequals-on-value-types.md
-      - name: "CA2014: Do not use stackalloc in loops"
-        href: ca2014-stackalloc-in-loops.md
-      - name: "CA2015: Do not define finalizers for types derived from MemoryManager<T>"
-        href: ca2015-finalizers-for-memorymanager-types.md
-      - name: "CA2200: Rethrow to preserve stack details"
-        href: ca2200-rethrow-to-preserve-stack-details.md
-      - name: "CA2247: Argument to TaskCompletionSource constructor should be TaskCreationOptions value"
-        href: ca2247-ctor-arg-should-be-taskcreationoptions.md
-    - name: Core .NET libraries
-      items:
-      - name:
-        href:
-    - name: Cryptography
-      items:
-      - name:
-        href:
-    - name: Globalization
-      items:
-      - name:
-        href:
-    - name: Interop
-      items:
-      - name:
-        href:
-    - name: MSBuild
-      items:
-      - name:
-        href:
-    - name: Networking
-      items:
-      - name:
-        href:
-    - name: Serialization
-      items:
-      - name:
-        href:
-    - name: Visual Basic
-      items:
-      - name:
-        href:
-    - name: Windows Forms
-      items:
-      - name:
-        href:
-    - name: WPF
-      items:
-      - name:
-        href:
+      - name: CA1416 warning
+        href: code-analysis/5.0/ca1416-platform-compatibility-analyzer.md
+      - name: CA1417 warning
+        href: code-analysis/5.0/ca1417-outattributes-on-pinvoke-string-parameters.md
+      - name: CA1831 warning
+        href: code-analysis/5.0/ca1831-range-based-indexer-on-string.md
+      - name: CA2013 warning
+        href: code-analysis/5.0/ca2013-referenceequals-on-value-types.md
+      - name: CA2014 warning
+        href: code-analysis/5.0/ca2014-stackalloc-in-loops.md
+      - name: CA2015 warning
+        href: code-analysis/5.0/ca2015-finalizers-for-memorymanager-types.md
+      - name: CA2200 warning
+        href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
+      - name: CA2247 warning
+        href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
   - name: Obsoleted APIs
     items:
     - name: Overview

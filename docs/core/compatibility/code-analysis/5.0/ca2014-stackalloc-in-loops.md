@@ -3,7 +3,7 @@ title: "Breaking change: CA2014: Do not use stackalloc in loops"
 description: Learn about the breaking change in .NET 5.0 caused by the enablement of code analysis rule CA2014.
 ms.date: 09/03/2020
 ---
-# CA2014: Do not use stackalloc in loops
+# Warning CA2014: Do not use stackalloc in loops
 
 .NET code analyzer rule [CA2014](/visualstudio/code-quality/ca2014) is enabled, by default, starting in .NET 5.0. It produces a build warning for any C# code where a [stackalloc](../../../../csharp/language-reference/operators/stackalloc.md) expression is used inside a loop.
 

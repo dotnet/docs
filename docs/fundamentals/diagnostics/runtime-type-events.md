@@ -1,7 +1,7 @@
 ---
 title: "Type system runtime events"
 description: See .NET runtime events that collect diagnostic information specific to the .NET type system, such as TypeLoadStart and TypeLoadStop.
-ms.date: "09/27/2020"
+ms.date: "11/13/2020"
 ms.topic: reference
 helpviewer_keywords:
   - "type system events (CoreCLR)"

@@ -135,7 +135,7 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
-|`ThreadPoolWorkerThreadStop`|51|A worker thread is waiting for work.|
+|`ThreadPoolWorkerThreadWait`|57|A worker thread starts waiting for work.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -167,7 +167,7 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
-|`ThreadPoolWorkerThreadStop`|53|A retired worker thread becomes active again.|
+|`ThreadPoolWorkerThreadRetirementStop`|53|A retired worker thread becomes active again.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -280,7 +280,7 @@ These events collect information about worker and I/O threads in the threadpool.
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
-|`ThreadPoolEnqueue`|61|A work item was dequeued from the thread pool queue.|
+|`ThreadPoolDequeue`|62|A work item was dequeued from the thread pool queue.|
 
  The following table shows the event data
 

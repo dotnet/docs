@@ -1,7 +1,7 @@
 ---
 title: "Interop runtime events"
 description: See .NET runtime events that collect diagnostic information specific to interop.
-ms.date: "09/27/2020"
+ms.date: "11/13/2020"
 ms.topic: reference
 helpviewer_keywords:
   - "Interop events (CoreCLR)"

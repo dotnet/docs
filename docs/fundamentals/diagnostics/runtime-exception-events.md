@@ -1,7 +1,7 @@
 ---
 title: "exception runtime events"
 description: See .NET runtime events that collect diagnostic information specific to the exceptions and exception handling.
-ms.date: "09/27/2020"
+ms.date: "11/13/2020"
 ms.topic: reference
 helpviewer_keywords:
   - "exception events (CoreCLR)"

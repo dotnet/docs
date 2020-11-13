@@ -1,7 +1,7 @@
 ---
 title: "Garbage collection runtime events"
 description: See .NET runtime events that collect diagnostic information specific to .NET garbage collector.
-ms.date: "09/27/2020"
+ms.date: "11/13/2020"
 ms.topic: reference
 helpviewer_keywords:
   - "GC events"

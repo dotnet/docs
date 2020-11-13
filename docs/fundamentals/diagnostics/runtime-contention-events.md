@@ -1,7 +1,7 @@
 ---
 title: "Monitor lock contention runtime events"
 description: See ETW events that collect information specific to the monitor lock contentions.
-ms.date: "09/27/2020"
+ms.date: "11/13/2020"
 ms.topic: reference
 helpviewer_keywords:
   - "monitor lock contention events (CoreCLR)"

@@ -1,13 +1,13 @@
 ---
 title: dotnet-install scripts
-description: Learn about the dotnet-install scripts to install the .NET Core SDK and the shared runtime.
+description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
 ms.date: 09/22/2020
 ---
 # dotnet-install scripts reference
 
 ## Name
 
-`dotnet-install.ps1` | `dotnet-install.sh` - Script used to install the .NET Core SDK and the shared runtime.
+`dotnet-install.ps1` | `dotnet-install.sh` - Script used to install the .NET SDK and the shared runtime.
 
 ## Synopsis
 
@@ -42,7 +42,7 @@ The bash script also reads PowerShell switches, so you can use PowerShell switch
 
 ## Description
 
-The `dotnet-install` scripts perform a non-admin installation of the .NET Core SDK, which includes the .NET Core CLI and the shared runtime. There are two scripts:
+The `dotnet-install` scripts perform a non-admin installation of the .NET SDK, which includes the .NET CLI and the shared runtime. There are two scripts:
 
 * A PowerShell script that works on Windows.
 * A bash script that works on Linux/macOS.
@@ -80,13 +80,13 @@ Before running the script, install the required [dependencies](../install/window
 
 You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version number, such as `2.1.0`. If the version isn't specified, the script installs the `latest` version.
 
-The install scripts do not update the registry on Windows. They just download the zipped binaries and copy them to a folder. If you want registry key values to be updated, use the .NET Core installers.
+The install scripts do not update the registry on Windows. They just download the zipped binaries and copy them to a folder. If you want registry key values to be updated, use the .NET installers.
 
 ## Options
 
 - **`-Architecture|--architecture <ARCHITECTURE>`**
 
-  Architecture of the .NET Core binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, and `arm`. The default value is `<auto>`, which represents the currently running OS architecture.
+  Architecture of the .NET binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, and `arm`. The default value is `<auto>`, which represents the currently running OS architecture.
 
 - **`-AzureFeed|--azure-feed`**
 
@@ -105,7 +105,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-DryRun|--dry-run`**
 
-  If set, the script won't perform the installation. Instead, it displays what command line to use to consistently install the currently requested version of the .NET Core CLI. For example, if you specify version `latest`, it displays a link with the specific version so that this command can be used deterministically in a build script. It also displays the binary's location if you prefer to install or download it yourself.
+  If set, the script won't perform the installation. Instead, it displays what command line to use to consistently install the currently requested version of the .NET CLI. For example, if you specify version `latest`, it displays a link with the specific version so that this command can be used deterministically in a build script. It also displays the binary's location if you prefer to install or download it yourself.
 
 - **`-FeedCredential|--feed-credential`**
 
@@ -129,7 +129,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-NoPath|--no-path`**
 
-  If set, the installation folder isn't exported to the path for the current session. By default, the script modifies the PATH, which makes the .NET Core CLI available immediately after install.
+  If set, the installation folder isn't exported to the path for the current session. By default, the script modifies the PATH, which makes the .NET CLI available immediately after install.
 
 - **`-ProxyAddress`**
 
@@ -234,7 +234,7 @@ The install scripts do not update the registry on Windows. They just download th
   ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '2.1.2' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
   ```
 
-- Obtain script and install .NET Core CLI one-liner examples:
+- Obtain script and install .NET CLI one-liner examples:
 
   Windows:
 
@@ -251,5 +251,5 @@ The install scripts do not update the registry on Windows. They just download th
 
 ## See also
 
-- [.NET Core releases](https://github.com/dotnet/core/releases)
-- [.NET Core Runtime and SDK download archive](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)
+- [.NET releases](https://github.com/dotnet/core/releases)
+- [.NET Runtime and SDK download archive](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)

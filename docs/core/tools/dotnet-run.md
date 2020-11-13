@@ -37,7 +37,7 @@ The `dotnet run` command is used in the context of projects, not built assemblie
 dotnet myapp.dll
 ```
 
-For more information on the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](index.md) topic.
+For more information on the `dotnet` driver, see the [.NET Command Line Tools (CLI)](index.md) topic.
 
 To run the application, the `dotnet run` command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it's not recommended to use `dotnet run` to run applications in production. Instead, [create a deployment](../deploying/index.md) using the [`dotnet publish`](dotnet-publish.md) command and deploy the published output.
 
@@ -124,7 +124,6 @@ To run the application, the `dotnet run` command resolves the dependencies of th
   ```
 
 - Restore dependencies and tools for the project in the current directory only showing minimal output and then run the project:
- (.NET Core SDK 2.0 and later versions):
 
   ```dotnetcli
   dotnet run --verbosity m

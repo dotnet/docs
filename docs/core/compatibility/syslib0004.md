@@ -20,6 +20,99 @@ The following CER-related APIs are obsolete:
 - <xref:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute?displayProperty=nameWithType>
 - <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute?displayProperty=nameWithType>
 
+## Workarounds
+
+- If you have applied a CER attribute to a method, remove the attribute. These attributes have no effect in .NET 5.0 and later versions.
+
+  ```csharp
+  // REMOVE the attribute below.
+  [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+  public void DoSomething()
+  {
+  }
+
+  // REMOVE the attribute below.
+  [PrePrepareMethod]
+  public void DoSomething()
+  {
+  }
+  ```
+
+- If you are calling `RuntimeHelpers.ProbeForSufficientStack` or `RuntimeHelpers.PrepareContractedDelegate`, remove the call. These calls have no effect in .NET 5.0 and later versions.
+
+  ```csharp
+  public void DoSomething()
+  {
+      // REMOVE the call below.
+      RuntimeHelpers.ProbeForSufficientStack();
+
+      // (Remainder of your method logic here.)
+  }
+  ```
+
+- If you are calling `RuntimeHelpers.PrepareConstrainedRegions`, remove the call. This call has no effect in .NET 5.0 and later versions.
+
+  ```csharp
+  public void DoSomething_Old()
+  {
+      // REMOVE the call below.
+      RuntimeHelpers.PrepareConstrainedRegions();
+      try
+      {
+          // try code
+      }
+      finally
+      {
+          // cleanup code
+      }
+  }
+
+  public void DoSomething_Corrected()
+  {
+      // There is no call to PrepareConstrainedRegions. It's a normal try / finally block.
+
+      try
+      {
+          // try code
+      }
+      finally
+      {
+          // cleanup code
+      }
+  }
+  ```
+
+- If you are calling `RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup`, replace the call with a standard _try / catch / finally_ block.
+
+  ```csharp
+  // The sample below produces warning SYSLIB0004.
+  public void DoSomething_Old()
+  {
+      RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(MyTryCode, MyCleanupCode, null);
+  }
+  public void MyTryCode(object state) { /* try code */ }
+  public void MyCleanupCode(object state, bool exceptionThrown) { /* cleanup code */ }
+
+  // The corrected sample below does not produce warning SYSLIB0004.
+  public void DoSomething_Corrected()
+  {
+      try
+      {
+          // try code
+      }
+      catch (Exception ex)
+      {
+          // exception handling code
+      }
+      finally
+      {
+          // cleanup code
+      }
+  }
+  ```
+
+[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
+
 ## See also
 
 - [Constrained execution regions](../../framework/performance/constrained-execution-regions.md)

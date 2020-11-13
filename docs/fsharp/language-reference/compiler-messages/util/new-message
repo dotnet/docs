@@ -1,7 +1,8 @@
 #! /usr/bin/env bash
 
 # This script is a helper for generating a new, templated doc entry.
-# It can be invoked like: `./new-message <4-digit error number> "title of new error page"`
+# It must be invoked from its parent directory, `compiler-messages`, like this: 
+# `./util/new-message <4-digit error number> "title of new error page"`
 # It ensures some title, date, and SEO keywords are in place for the new file.
 
 set +eux
@@ -18,11 +19,12 @@ message_title=$2
 year=$(date "+%Y")
 month=$(date "+%m")
 day=$(date "+%d")
-file_name="fs$1.md"
+md_file_name="fs$1.md"
+fsx_file_name="fs$1.fsx"
 
-echo "Writing new migration to ${file_name}"
+echo "Writing ${md_file_name}"
 
-cat >"${file_name}" <<EOF
+cat >"${md_file_name}" <<EOF
 ---
 title: "Compiler error $message_number"
 ms.date: $month/$day/$year
@@ -33,11 +35,21 @@ helpviewer_keywords:
 ---
 
 # $message_number: $message_title
+
+[!code-fsharp[$message_number-comment](~/samples/snippets/fsharp/compiler-messages/$fsx_file_name#L2-L3)]
 EOF
 
 echo "Writing TOC entry"
 
 cat >>toc.yml <<EOF
   - name: $message_number - $message_title
-    href: ./$file_name
+    href: ./$md_file_name
+EOF
+
+echo "Writing ${fsx_file_name}"
+
+cat >"../../../../samples/snippets/fsharp/compiler-messages/${fsx_file_name}" <<EOF
+(* comment *)
+let someCode = "Some code"
+printfn "%s" someCode
 EOF

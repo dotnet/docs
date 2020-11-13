@@ -20,7 +20,7 @@ ms.date: 11/06/2020
 > [!IMPORTANT]
 > This procedure requires that you have administrator permission to copy the IntelliSense files to the .NET installation folder.
 
-1. Go to the [Download IntelliSense files](https://dotnet.microsoft.com/download/dotnet-core/intellisense) page.
+1. Go to the [Download IntelliSense files](https://dotnet.microsoft.com/download/intellisense) page.
 
 1. Download the IntelliSense file for the language and version you'd like to use.
 
@@ -37,7 +37,7 @@ ms.date: 11/06/2020
       | Windows Desktop       | *Microsoft.WindowsDesktop.App.Ref* |
       | .NET Standard         | *NETStandard.Library.Ref*          |
 
-   1. Navigate to the version you want to install the localized IntelliSense for. For example, *3.1.0*.
+   1. Navigate to the version you want to install the localized IntelliSense for. For example, *5.0.0*.
    1. Open the *ref* folder.
    1. Open the moniker folder. For example, *net5.0*.
 

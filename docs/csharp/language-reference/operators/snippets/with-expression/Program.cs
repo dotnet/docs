@@ -8,6 +8,8 @@ namespace with_expression
         {
             WithExpressionBasicExample.Main();
             Console.WriteLine();
+            InheritanceExample.Main();
+            Console.WriteLine();
             ExampleWithReferenceType.Main();
             Console.WriteLine();
             UserDefinedCopyConstructorExample.Main();

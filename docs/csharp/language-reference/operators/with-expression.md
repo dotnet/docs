@@ -1,7 +1,7 @@
 ---
 title: "with expression - C# reference"
 description: "Learn about a with expression that performs non-destructive mutation of C# records"
-ms.date: 11/10/2020
+ms.date: 11/12/2020
 f1_keywords:
   - "with_CSharpKeyword"
 helpviewer_keywords:
@@ -15,6 +15,10 @@ Available in C# 9.0 and later, a `with` expression produces a copy of its [recor
 :::code language="csharp" source="snippets/with-expression/BasicExample.cs" :::
 
 As the preceding example shows, you use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values. In a `with` expression, a left-hand operand must be of a record type.
+
+The result of a `with` expression has the same runtime type as the expression's operand, as the following example shows:
+
+:::code language="csharp" source="snippets/with-expression/InheritanceExample.cs" :::
 
 In case of a reference-type member, only the reference to an instance is copied when a record is copied. Both the copy and original record have access to the same reference-type instance. The following example demonstrates that behavior:
 

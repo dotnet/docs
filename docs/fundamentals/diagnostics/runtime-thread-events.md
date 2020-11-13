@@ -1,9 +1,9 @@
 ---
 title: "ThreadPool runtime events"
 description: See .NET runtime thread pool events that collect diagnostic information about thread pool in .NET Core. Thread pool events are worker thread pool events or I/O thread pool events.
-ms.date: "09/27/2020"
+ms.date: "11/13/2020"
 ms.topic: reference
-helpviewer_keywords
+helpviewer_keywords:
   - "ThreadPool events (CoreCLR)"
   - "ETW, thread pool events (CoreCLR)"
 ---

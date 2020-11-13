@@ -56,7 +56,7 @@ namespace NewCsharp9
 
             // <WithCopy>
             Person clone = person with { };
-            // <WithCopy>
+            // </WithCopy>
         }
     }
 }

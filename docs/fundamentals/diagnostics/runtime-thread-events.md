@@ -4,7 +4,7 @@ description: See .NET runtime thread pool events that collect diagnostic informa
 ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords
-  - "ThreadPool events [.NET Core]"
+  - "ThreadPool events (CoreCLR)"
   - "ETW, thread pool events (CoreCLR)"
 ---
 # .NET runtime thread pool events

@@ -4,7 +4,7 @@ description: See .NET runtime events that collect diagnostic information specifi
 ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords
-  - "Interop events [.NET Core]"
+  - "Interop events (CoreCLR)"
   - "ETW, EventPipe, LTTng interop events (CoreCLR)"
 ---
 

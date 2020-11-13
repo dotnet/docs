@@ -3,7 +3,7 @@ title: "Method runtime events"
 description: See .NET runtime events that collect diagnostic information specific to methods, like CLR method events, CLR method marker or CLR method verbose events, and MethodJittingStarted.
 ms.date: "09/27/2020"
 helpviewer_keywords:
-  - "Method events" [.NET Core]"
+  - "Method events (CoreCLR)"
   - "ETW, EventPipe, LTTng method events (CoreCLR)"
 ---
 

@@ -4,7 +4,7 @@ description: See ETW events that collect information specific to the monitor loc
 ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords:
-  - "monitor lock contention events" [.NET Core]"
+  - "monitor lock contention events (CoreCLR)"
   - "ETW, EventPipe, LTTng contention events (CoreCLR)"
 ---
 

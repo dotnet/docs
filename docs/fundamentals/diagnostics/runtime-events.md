@@ -4,7 +4,7 @@ description: Review diagnostic events emitted by .NET runtime (CoreCLR) that can
 ms.date: "09/14/2020"
 ms.topic: reference
 helpviewer_keywords: 
-  - "runtime events [.NET]"
+  - "runtime events (CoreCLR)"
   - "ETW, EventPipe runtime events (CoreCLR)"
 ---
 

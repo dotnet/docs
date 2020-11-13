@@ -4,8 +4,8 @@ description: See .NET runtime events that collect diagnostic information specifi
 ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords
-  - "Assembly Loader events [.NET Core]"
-  - "Assembly Binder events [.NET Core]"
+  - "Assembly Loader events (CoreCLR)"
+  - "Assembly Binder events (CoreCLR)"
   - "ETW, EventPipe, LTTng assembly loader and binder events (CoreCLR)"
 ---
 
@@ -252,7 +252,7 @@ These events collect information relating to loading and unloading assemblies an
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
-|`AssemblyLoadContextResolvingHandlerInvoked`|293|An [AssemblyLoadContext.Resolving](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext.resolving) handler has been invoked.|
+|`AssemblyLoadContextResolvingHandlerInvoked`|293|An [AssemblyLoadContext.Resolving](xref:System.Runtime.Loader.AssemblyLoadContext.Resolving) handler has been invoked.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|

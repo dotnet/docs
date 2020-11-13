@@ -4,7 +4,7 @@ description: See .NET runtime events that collect diagnostic information specifi
 ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords:
-  - "type system events" [.NET Core]"
+  - "type system events (CoreCLR)"
   - "ETW, EventPipe, LTTng type system events (CoreCLR)"
 ---
 

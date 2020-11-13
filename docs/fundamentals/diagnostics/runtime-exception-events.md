@@ -4,8 +4,8 @@ description: See .NET runtime events that collect diagnostic information specifi
 ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords:
-  - "exception events" [.NET Core]"
-  - "exception handling events" [.NET Core]"
+  - "exception events (CoreCLR)"
+  - "exception handling events (CoreCLR)"
   - "ETW, EventPipe, LTTng exception events (CoreCLR)"
 ---
 

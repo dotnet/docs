@@ -5,7 +5,7 @@ ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords:
   - "GC events"
-  - "garbage collection events [.NET Core]"
+  - "garbage collection events (CoreCLR)"
   - "ETW, EventPipe, LTTng garbage collection events (CoreCLR)"
 ---
 # .NET runtime garbage collection events

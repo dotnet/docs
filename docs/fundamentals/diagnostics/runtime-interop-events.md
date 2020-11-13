@@ -3,7 +3,7 @@ title: "Interop runtime events"
 description: See .NET runtime events that collect diagnostic information specific to interop.
 ms.date: "09/27/2020"
 ms.topic: reference
-helpviewer_keywords
+helpviewer_keywords:
   - "Interop events (CoreCLR)"
   - "ETW, EventPipe, LTTng interop events (CoreCLR)"
 ---

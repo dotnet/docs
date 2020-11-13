@@ -1,7 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 11/12/2020
+ms.date: 11/13/2020
 ms.technology: dotnet-standard
 ---
 # .NET Glossary
@@ -152,7 +152,7 @@ An implementation of .NET includes:
 Examples of .NET implementations:
 
 - [.NET Framework](#net-framework)
-- [.NET 5 and later versions (including .NET Core 2.1-3.1](#net-5-and-later-versions)
+- [.NET 5 and later versions (including .NET Core 2.1-3.1](#net-5-and-later-versions))
 - [Universal Windows Platform (UWP)](#uwp)
 - [Mono](#mono)
 

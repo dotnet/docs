@@ -27,7 +27,16 @@ EventPipe is part of the .NET runtime (CoreCLR) and is designed to work the same
 
 However, because EventPipe is a runtime built-in component, its scope is limited to managed code and the runtime itself. EventPipe cannot be used for tracking some lower-level events, such as resolving native code stack or getting various kernel events. If you use C/C++ interop in your app or you want to trace the runtime itself (which is written in C++), or want deeper diagnostics into the behavior of the app that requires kernel events (that is, native-thread context-switching events) you should use ETW or [perf/LTTng](./trace-perfcollect-lttng.md).
 
+Another major difference between EventPipe and ETW/LTTng is admin/root privilege requirement. To trace an application using ETW or LTTng you need to be an admin/root. Using EventPipe, you can trace applications as long as the tracer (for example, `dotnet-trace`) is run as the same user as the user that launched the application.
+
 The following table is a summary of the differences between EventPipe and ETW/LTTng.
+
+|Feature|EventPipe|ETW|LTTng|
+|-------|---------|---|-----------|
+|Cross-platform|Yes|No (only on Windows)|No (only on supported Linux distros)|
+|Require admin/root privilege|No|Yes|Yes|
+|Can get OS/kernel events|No|Yes|Yes|
+|Can resolve native callstacks|No|Yes|Yes|
 
 ## Use EventPipe to trace your .NET application
 

@@ -44,15 +44,31 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 ## Fedora 33 ✔️
 
-.NET 5 and .NET Core 3.1 are available in the default package repositories for Fedora 33.
+> [!TIP]
+> .NET Core 3.1 is available in the default package repositories for Fedora 33. To install .NET Core 3.1, use the `dnf install` command with the appropriate package, such as `aspnetcore-runtime-3.1` or `dotnet-sdk-3.1`. .NET 5.0 isn't yet available in the default package repositories.
 
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-50-dnf.md)]
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/33/prod.repo
+```
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
 ## Fedora 32 ✔️
 
-.NET Core 3.1 is available in the default package repositories for Fedora 32.
+> [!TIP]
+> .NET Core 3.1 is available in the default package repositories for Fedora 32. To install .NET Core 3.1, use the `dnf install` command with the appropriate package, such as `aspnetcore-runtime-3.1` or `dotnet-sdk-3.1`. .NET 5.0 isn't yet available in the default package repositories.
 
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/32/prod.repo
+```
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
 ## Fedora 31 ❌
 

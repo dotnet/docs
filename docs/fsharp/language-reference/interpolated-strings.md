@@ -4,7 +4,7 @@ description: Learn about interpolated strings, a special form of string that all
 ms.date: 11/12/2020
 ---
 
-## Interpolated strings
+# Interpolated strings
 
 Interpolated strings are [strings](strings.md) that allow you to embed F# expressions into them. They are helpful in a wide range of scenarios where the value of a string may change based on the result of a value or expression.
 
@@ -76,7 +76,7 @@ printfn $"""|{"Left",-7}|{"Right",7}|"""
 
 ## Interpolated strings and `FormattableString` formatting
 
-You can also apply formatting that adheres to the rules for <xref:System.FormattbleString>:
+You can also apply formatting that adheres to the rules for <xref:System.FormattableString>:
 
 ```fsharp
 let speedOfLight = 299792.458
@@ -84,7 +84,7 @@ printfn $"The speed of light is {speedOfLight:N3} km/s."
 // "The speed of light is 299,792.458 km/s."
 ```
 
-Additionally, an interpolated string can also be typechecked as a <xref:System.FormattbleString> via a type annotation:
+Additionally, an interpolated string can also be typechecked as a <xref:System.FormattableString> via a type annotation:
 
 ```fsharp
 let frmtStr = $"The speed of light is {speedOfLight:N3} km/s." : FormattableString
@@ -92,7 +92,7 @@ let frmtStr = $"The speed of light is {speedOfLight:N3} km/s." : FormattableStri
 // The speed of light is 299,792.458 km/s.
 ```
 
-Note that the type annotation must be on the interpolated string expression itself. F# does not implicitly convert an interpolated string into a <xref:System.FormattbleString>.
+Note that the type annotation must be on the interpolated string expression itself. F# does not implicitly convert an interpolated string into a <xref:System.FormattableString>.
 
 ## See also
 

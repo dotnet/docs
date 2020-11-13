@@ -4,7 +4,7 @@ description: Learn about the nameof operator, a metaprogramming feature that all
 ms.date: 11/12/2020
 ---
 
-## Nameof
+# Nameof
 
 The `nameof` expression produces a string constant that matches the name in source for nearly any F# construct in source.
 

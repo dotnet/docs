@@ -23,6 +23,10 @@ This article helps you find the various tools you need.
 
 [Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
 
+## Dumps
+
+A [dump](./dumps.md) is a file that contains snapshot of the process at the time they were created and can be useful for examining the state of your application for debugging various issues. 
+
 ## Collect diagnostics in containers
 
 The same diagnostics tools that are used in non-containerized Linux environments can also be used to [collect diagnostics in containers](diagnostics-in-containers.md). There are just a few usage changes needed to make sure the tools work in a Docker container.

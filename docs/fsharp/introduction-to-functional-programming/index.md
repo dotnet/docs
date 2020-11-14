@@ -152,7 +152,7 @@ Here is another example of a non-pure function, because it performs a side effec
 
 ```fsharp
 let addOneToValue x =
-    printfn $"x is %d{x}" x
+    printfn $"x is %d{x}"
     x + 1
 ```
 

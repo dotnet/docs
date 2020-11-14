@@ -347,7 +347,7 @@ t.AddMembersDelayed(fun () ->
                   getterCode= (fun args -> <@@ valueOfTheProperty @@>))
 
               p.AddXmlDocDelayed(fun () ->
-                  sprintf $"This is StaticProperty{i} on NestedType")
+                  $"This is StaticProperty{i} on NestedType")
 
               p
       ]

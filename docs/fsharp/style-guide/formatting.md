@@ -884,6 +884,33 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
 
+### Formatting constructors, static members and member invocations
+
+If the expression is long, use newlines and indent one scope, rather than indenting to the bracket.
+
+```fsharp
+let person =
+    new Person(
+        argument1,
+        argument2
+    )
+
+let p = new Person(a, b) // keep in one line if short
+
+let myRegexMatch =
+    Regex.Match(
+        "my longer input string with some interesting content in it",
+        "myRegexPattern"
+    )
+
+let untypedRes =
+    checker.ParseFile(
+        fileName,
+        sourceText,
+        parsingOptionsWithDefines
+    )
+```
+
 ## Formatting attributes
 
 [Attributes](../language-reference/attributes.md) are placed above a construct:

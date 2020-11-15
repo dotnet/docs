@@ -53,7 +53,7 @@ printfn $"Name: %s{age}, Age: %d{name}"
 
 In the previous example, the code mistakenly passes the `age` value where `name` should be, and vice/versa. Because the interpolated strings use format specifiers, this is a compile error instead of a subtle runtime bug.
 
-All format specifiers covered un [plaintext formatting](plaintext-formatting.md) are valid inside of an interpolated string.
+All format specifiers covered in [plaintext formatting](plaintext-formatting.md) are valid inside of an interpolated string.
 
 ## Verbatim interpolated strings
 

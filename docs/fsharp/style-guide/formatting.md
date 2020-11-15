@@ -638,6 +638,7 @@ In some cases, `do...yield` may aid in readability. These cases, though subjecti
 
 Indentation of conditionals depends on the size and complexity of the expressions that make them up.
 Simply write them on one line when:
+
 - `cond`, `e1` and `e2` are short
 - `e1` and `e2` are not `if/then/else` expressions themselves.
 
@@ -666,13 +667,13 @@ else e4
 If any of the conditions or expressions is multi-line, the entire `if/then/else` expression is multi-line:
 
 ```fsharp
-if cond1 then 
+if cond1 then
     e1
-elif cond2 then 
+elif cond2 then
     e2
-elif cond3 then 
+elif cond3 then
     e3
-else 
+else
     e4
 ```
 

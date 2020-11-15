@@ -2,16 +2,16 @@
 title: The Publish/Subscribe building block
 description: A description of the Publish/Subscribe building-block and how to apply it
 author: edwinvw
-ms.date: 09/25/2020
+ms.date: 11/14/2020
 ---
 
 # The Publish/Subscribe building block
 
-The [Publish-Subscribe pattern](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber) is a well-known and widely used messaging pattern. Architects commonly implement it across distributed services. However, the required plumbing can be complex and repetitive - both to create and maintain. Dapr offers a building block that significantly streamlines and simplifies implementing publish/subscribe functionality.
+The [Publish-Subscribe pattern](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber) is a well-known and widely used messaging pattern. Architects commonly embrace it in distributed applications. However, the plumbing to implement it can be complex. Dapr offers a building block that significantly simplifies implementing publish/subscribe functionality.
 
 ## What it solves
 
-The primary advantage of the Publish-Subscribe pattern is `loose coupling`. The pattern decouples services that send messages (the **publishers**) from services that consume messages (the **subscribers**). Publishers and subscribers are unaware of each other - both are dependent on a centralized **message broker** that distributes the messages. 
+The primary advantage of the Publish-Subscribe pattern is `loose coupling`, sometimes referred to as [temporal decoupling](https://docs.microsoft.com/azure/architecture/guide/technology-choices/messaging#decoupling). Specifically, the pattern decouples services that send messages (the **publishers**) from services that consume messages (the **subscribers**). Both publishers and subscribers are unaware of each other - both are dependent on a centralized **message broker** that distributes the messages. 
 
 Figure 4-x shows the high-level architecture of the publish/subscribe pattern.
 
@@ -25,31 +25,31 @@ From the previous figure, note the steps of the pattern:
 2. Publisher sends messages to the message broker.
 3. The message broker forwards a copy of the message to all subscribers.
 
-Some message brokers offer a queueing mechanism that can persist messages once received. In this case, the subscribers don't have to be online when a publisher sends the message. Once back online, the subscriber receives and processes the message. The message broker provides `durablity` by storing the message. This feature offers you [temporal decoupling](https://docs.microsoft.com/azure/architecture/guide/technology-choices/messaging#decoupling) of publishers and consumers and helps reduce coupling between services.
+Most message brokers offer a queueing mechanism that can persist messages once received. With it, the subscribers don't have to immediately available or even online when a publisher sends the message. Once available, the subscriber receives and processes the message. Here, the message broker provides `durablity` by storing the message. Dapr guarantees `At-Least-Once` semantics for message delivery. Once a message is published, it will be delivered at least once to any subscriber.
 
-There are several message broker products available - both commercially and open-source. Each has advantages and drawbacks. Your job is to match your system requirements to the appropriate broker. To keep your application decoupled from a specific message broker, it's a best practice to wrap the broker in an abstraction. While a wise decision, you'll have to write and maintain the abstraction. This type of custom code can become complex, repetitive, and error-prone. This is exactly where Dapr comes to the rescue.
+There are several message broker products available - both commercially and open-source. Each has advantages and drawbacks. Your job is to match your system requirements to the appropriate broker. It's a best practice to keep your application decoupled from the selected message broker. You do this by wrapping the broker inside an abstraction. Your code communicates with the abstraction and not the actual message broker. While a wise decision, you'll have to write and maintain the abstraction. This type of custom code can become complex, repetitive, and error-prone. 
 
-The Dapr Publish/Subscribe building block is an abstraction of the Publish/Subscribe messaging pattern. Because Dapr provides the abstraction layer, you no longer create or maintain it. The building block provides a significant productivity boost enabling you to focus on business functionality as opposed to plumbing code.
-
-Dapr guarantees At-Least-Once semantics for message delivery. Once a message is published, it will be delivered at least once to any subscriber.
+This is where Dapr comes to the rescue. The Publish/Subscribe building block provides the required abstraction for you out-of-the-box. The custom code you would have to write is already encapsulated in the building block. You bind to it and consume it. The building block provides a significant productivity boost. It enables you to focus on creating business functionality, not plumbing code.
 
 ## How it works
 
-The Dapr Publish/Subscribe building block offers a standard API you can use to send or receive messages. Producers send messages to a named [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#topics-and-subscriptions). Consuming services subscribe to a topic to receive the messages sent to them.
+The Dapr Publish/Subscribe building block provides a standard API to send and receive messages. Producers publish messages to a named [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#topics-and-subscriptions). Consuming services subscribe to the topic to receive messages.
 
-Dapr also allows you to select and configure a specific message broker product, which is known as a Dapr **component**.  We'll cover components in detail later in this section.
+Dapr allows you to configure a specific message broker product. The product implementation is contained in a Dapr **component**.  We'll cover components in detail later in this section.
 
- It's possible to use the Publish/Subscribe building block directly over HTTP or gRPC using the Dapr API. To publish a message using Dapr, you can invoke the following API call on the Dapr sidecar of your application:
+The Dapr publish-subscribe building block can be invoked in a number of ways.
+
+At a lower level, any programming platform can directly invoke the building block over HTTP or gRPC using the **Dapr native API**. To publish a message, you can make the following API call:
 
 ``` http
 http://localhost:<daprPort>/v1.0/publish/<pubsubname>/<topic>
 ```
 
-- You must fill `<daprPort>` with the port the Dapr sidecar is listening on.
-- You must fill `<pubsubname>` with the name of the Publish/Subscribe component that must be used.
-- You must fill `<topic>` with the name of the topic the message must be published to.
+- The `<daprPort>` URL segment provides the port number on which the Dapr sidecar is listening.
+- The `<pubsubname>`, the name of the selected Dapr publish-subscribe component.
+- The `<topic>`, the name of the topic to which the message is published.
 
-Using the command-line tool *curl*, you can easily publish a message over the Dapr Publish/Subscribe API to try it out:
+Use the *curl* command-line tool to publish a message and try it out:
 
 ``` curl
 curl -X POST http://localhost:3500/v1.0/publish/pubsub/newOrder \
@@ -63,9 +63,9 @@ You receive messages by subscribing to a topic. Upon startup, the Dapr runtime w
 http://localhost:<appPort>/dapr/subscribe
 ```
 
-The Dapr sidecar will use the `<appPort>` that your application is listening on.
+- The `<appPort>` URL segments informs the Dapr sidecar of the port on which your application is listening.
 
-The application needs to handle requests on the `/dapr/subscribe` endpoint and return a response containing the list of topics it wants to subscribe to. With each topic, it also needs to specify the endpoint on the application that must be called when a message comes in on that topic. Here is an example of a response:
+The application handles the request on the `/dapr/subscribe` endpoint by returning a response containing the list of topics to which it wants to subscribe. For each topic, it also needs to specify the endpoint that must be called when a message comes in on that topic. Here is an example of a response:
 
 ```json
 [
@@ -82,24 +82,24 @@ The application needs to handle requests on the `/dapr/subscribe` endpoint and r
 ]
 ```
 
-In this example, you can see the application wants to subscribe to topics `newOrder` and `newProduct` and register the endpoints `/orders` and `/productCatalog/products` with these topics. For both subscriptions, the application wants to use the Publish/Subscribe component named `pubsub`.
+In this example, you can see the application wants to subscribe to topics `newOrder` and `newProduct` and register the endpoints `/orders` and `/productCatalog/products`for them. For both subscriptions, the application wants to use the component named `pubsub`.
 
-Figure 4-x presents the entire flow of the example.
+Figure 4-x presents the flow of the example.
 
 ![Example Publish/Subscribe flow with Dapr](media/pubsub-dapr-pattern.png)
 
-**Figure 4-x**. Publish/subscrive flow with Dapr.
+**Figure 4-x**. Publish/subscribe flow with Dapr.
 
 From the previous figure, note the flow:
 
-1. The Dapr sidecar for Service B (consumer) calls the `/dapr/subscribe` endpoint on the service. The service responds with the subscriptions it wants to create.
+1. The Dapr sidecar for Service B (consumer) calls the `/dapr/subscribe` endpoint from Service B. The service responds with the subscriptions it wants to create.
 2. The Dapr sidecar for Service B creates the requested subscriptions on the message broker.
-3. Service A (publisher) calls the `/v1.0/publish/<pubsubname>/<topic>` endpoint on its sidecar.
+3. Service A (publisher) calls the `/v1.0/publish/<pubsubname>/<topic>` endpoint on the Dapr sidecar for Service A.
 4. The Service A sidecar publishes the message to the message broker.
 5. The message broker sends a copy of the message to the Service B sidecar.
 6. The Service B sidecar calls the endpoint corresponding to the subscription (in this case `/orders`) on Service B.
 
-Using the Dapr APIs directly over HTTP is fine, but you'll need to handle plumbing concerns such as serialization and HTTP response codes. Fortunately, there is a more convenient way of implementing Publish/Subscribe when you use one of the available SDKs.
+Making HTTP calls against the native Dapr APIs is workable, but somewhat primitive. You'll need to handle plumbing concerns such as serialization and HTTP response codes. Fortunately, there's a more intuitive way. Dapr provides several language-specific SDKs for popular development platforms. At the time of this writing, Go, Node.js, Python, .NET, Java, and JavaScript are available.
 
 ### Using the Dapr .NET SDK
 
@@ -175,7 +175,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 The call to `UseCloudEvents` adds **CloudEvents** middleware is to the ASP.NET Core middleware pipeline. This middleware will unwrap requests that use the CloudEvents structured format, so the receiving method receives the event payload directly.
 
-> CloudEvents is a standardized messaging format used by Dapr. See the [cloudevents specification](https://github.com/cloudevents/spec/tree/v1.0) for more information.
+> [CloudEvents](https://cloudevents.io/) is a standardized messaging format, providing a common way to describe event information across platforms. Dapr embraces CloudEvents. See the [cloudevents specification](https://github.com/cloudevents/spec/tree/v1.0) for more information.
 
 The call to `MapSubscribeHandler` in the endpoint routing configuration will add a Dapr subscribe endpoint to the application. This endpoint will respond to requests on `/dapr/subscribe`. When this endpoint is called, it will automatically find all WebAPI operations decorated with the `Topic` attribute and return a response with all the subscriptions.
 

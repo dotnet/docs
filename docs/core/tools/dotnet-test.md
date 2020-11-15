@@ -274,5 +274,5 @@ For more information and examples on how to use selective unit test filtering, s
 ## See also
 
 - [Frameworks and Targets](../../standard/frameworks.md)
-- [.NET Core Runtime Identifier (RID) catalog](../rid-catalog.md)
+- [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md)

@@ -1,16 +1,16 @@
 ---
 title: Read values from an analog-to-digital converter
-description: Learn how .NET can be used to build applications for IoT devices and scenarios.
+description: Learn how to read variable voltage values using an analog-to-digital converter.
 author: camsoper
 ms.author: casoper
-ms.date: 11/2/2020
+ms.date: 11/13/2020
 ms.topic: tutorial
 ms.prod: dotnet
 ---
 <!--markdownlint-disable DOCSMD011 -->
 # Read values from an analog-to-digital converter
 
-An analog-to-digital converter (ADC) is a device that can read an analog input voltage value and convert it into a digital value. ADCs are used for reading various sensors, potentiometers, and other devices that change resistance based on certain conditions.
+An analog-to-digital converter (ADC) is a device that can read an analog input voltage value and convert it into a digital value. ADCs are used for reading values from thermistors, potentiometers, and other devices that change resistance based on certain conditions.
 
 In this topic, you will use .NET to read values from an ADC as you modulate the input voltage with a potentiometer.
 

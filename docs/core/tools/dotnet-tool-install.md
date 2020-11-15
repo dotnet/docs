@@ -1,6 +1,6 @@
 ---
 title: dotnet tool install command
-description: The dotnet tool install command installs the specified .NET Core tool on your machine.
+description: The dotnet tool install command installs the specified .NET tool on your machine.
 ms.date: 02/14/2020
 ---
 # dotnet tool install
@@ -9,7 +9,7 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet tool install` - Installs the specified [.NET Core tool](global-tools.md) on your machine.
+`dotnet tool install` - Installs the specified [.NET tool](global-tools.md) on your machine.
 
 ## Synopsis
 
@@ -34,7 +34,7 @@ dotnet tool install -h|--help
 
 ## Description
 
-The `dotnet tool install` command provides a way for you to install .NET Core tools on your machine. To use the command, you specify one of the following installation options:
+The `dotnet tool install` command provides a way for you to install .NET tools on your machine. To use the command, you specify one of the following installation options:
 
 * To install a global tool in the default location, use the `--global` option.
 * To install a global tool in a custom location,  use the `--tool-path` option.
@@ -61,7 +61,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`PACKAGE_NAME`**
 
-  Name/ID of the NuGet package that contains the .NET Core tool to install.
+  Name/ID of the NuGet package that contains the .NET tool to install.
 
 ## Options
 
@@ -75,7 +75,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`framework <FRAMEWORK>`**
 
-  Specifies the [target framework](../../standard/frameworks.md) to install the tool for. By default, the .NET Core SDK tries to choose the most appropriate target framework.
+  Specifies the [target framework](../../standard/frameworks.md) to install the tool for. By default, the .NET SDK tries to choose the most appropriate target framework.
 
 - **`-g|--global`**
 
@@ -121,6 +121,6 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## See also
 
-- [.NET Core tools](global-tools.md)
-- [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
-- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)
+- [.NET tools](global-tools.md)
+- [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)

@@ -40,7 +40,7 @@ Sometimes, it might be inconvenient to run the implicit NuGet restore with these
 
 ### Specify feeds
 
-To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *nuget.config* configuration file. A default configuration file is provided when the .NET Core SDK is installed. To specify additional feeds, do one of the following:
+To restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *nuget.config* configuration file. A default configuration file is provided when the .NET SDK is installed. To specify additional feeds, do one of the following:
 
 - Create your own *nuget.config* file in the project directory. For more information, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior) and [nuget.config differences](#nugetconfig-differences) later in this article.
 - Use `dotnet nuget` commands such as [`dotnet nuget add source`](dotnet-nuget-add-source.md).
@@ -65,11 +65,11 @@ There are three specific settings that `dotnet restore` ignores:
 
 - [bindingRedirects](/nuget/schema/nuget-config-file#bindingredirects-section)
 
-  Binding redirects don't work with `<PackageReference>` elements and .NET Core only supports `<PackageReference>` elements for NuGet packages.
+  Binding redirects don't work with `<PackageReference>` elements and .NET only supports `<PackageReference>` elements for NuGet packages.
 
 - [solution](/nuget/schema/nuget-config-file#solution-section)
 
-  This setting is Visual Studio specific and doesn't apply to .NET Core. .NET Core doesn't use a `packages.config` file and instead uses `<PackageReference>` elements for NuGet packages.
+  This setting is Visual Studio specific and doesn't apply to .NET. .NET doesn't use a `packages.config` file and instead uses `<PackageReference>` elements for NuGet packages.
 
 - [trustedSigners](/nuget/schema/nuget-config-file#trustedsigners-section)
 

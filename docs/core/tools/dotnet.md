@@ -233,7 +233,7 @@ For more information about each tool, type `dotnet <tool-name> --help`.
 
 ## Examples
 
-Create a new .NET Core console application:
+Create a new .NET console application:
 
 ```dotnetcli
 dotnet new console

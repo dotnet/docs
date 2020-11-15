@@ -7,7 +7,7 @@ ms.date: 05/20/2020
 
 # Custom templates for dotnet new
 
-The [.NET Core SDK](https://dotnet.microsoft.com/download) comes with many templates already installed and ready for you to use. The [`dotnet new` command](dotnet-new.md) isn't only the way to use a template, but also how to install and uninstall templates. Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
+The [.NET SDK](https://dotnet.microsoft.com/download) comes with many templates already installed and ready for you to use. The [`dotnet new` command](dotnet-new.md) isn't only the way to use a template, but also how to install and uninstall templates. You can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
 You can install custom templates from a NuGet package on any NuGet feed, by referencing a NuGet *.nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files, and execute custom processing operations when your template is used.
 
@@ -20,7 +20,7 @@ To follow a walkthrough and create a template, see the [Create a custom template
 
 ### .NET default templates
 
-When you install the [.NET Core SDK](https://dotnet.microsoft.com/download), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://reactjs.org/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
+When you install the [.NET SDK](https://dotnet.microsoft.com/download), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://reactjs.org/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
 
 ```dotnetcli
 dotnet new --list
@@ -201,7 +201,7 @@ dotnet new -u
 That command returns something similar to the following output:
 
 ```console
-Template Instantiation Commands for .NET Core CLI
+Template Instantiation Commands for .NET CLI
 
 Currently installed items:
   Microsoft.DotNet.Common.ItemTemplates

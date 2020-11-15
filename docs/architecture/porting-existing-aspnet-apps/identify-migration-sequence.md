@@ -39,6 +39,34 @@ In the example shown in Figure 3-1, you would start with the "Contoso.Utils" pro
 
 Missing from the previous diagrams are unit test projects. Hopefully there are tests covering at least some of the existing behavior of the libraries being ported. If you have unit tests, it's best to convert them first so that you can continue testing changes in the product you're working on. Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to port your test projects so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all work on .NET Core. If you don't have any tests for your app currently, consider building some characterization tests that simply verify the system's current behavior, so that once the migration is complete you can confirm this behavior remains unchanged.
 
+## Considerations for migrating many apps
+
+Some organizations will have many different apps to migrate, and migrating each one by hand may require too many resources to be tenable. In these situations, some degree of automation is recommended. The steps followed in this chapter can be automated, so that structural changes like project file differences and updates to common packages are performed by scripts. These scripts can be refined as they are run iteratively on more and more projects, examining whatever manual steps are required for each project and automating them if possible. Using this approach, the organization should grow faster and better at porting their apps over time, with more and better automation support each step of the way.
+
+Watch an overview of how to employ this approach in this [dotNetConf presentation by Lizzy Gallagher of Mastercard](https://www.youtube.com/watch?v=C-2haqb60No). The five phases employed in this presentation included:
+
+- Migrate 3rd party NuGet dependencies
+- Migrate apps to use new .csproj file format
+- Migrate apps to ASP.NET Core (targeting .NET Framework)
+- Update internal NuGet dependencies to .NET Standard
+- Update all apps to target .NET Core 3.1
+
+When automating a large suite of apps, it helps significantly if they follow consistent coding guidelines and project organization. Automation efforts rely on this consistency to be effective. In addition to parsing and migrating project files, common code patterns such as differences in how controller actions are declared or how they return results can be migrated automatically.
+
+For example, a migration script could search files matching `**Controller.cs` for lines of code matching one of these patterns:
+
+```csharp
+   return new HttpStatusCodeResult(200);
+   // or
+   return new HttpStatusCodeResult(HttpStatusCode.OK);
+```
+
+These can be replaced in ASP.NET Core with:
+
+```csharp
+    return Ok();
+```
+
 ## Summary
 
 The best approach to porting a large .NET app to .NET Core is to identify project dependencies, analyze what's required to port each project, and start from the bottom up. You can use the .NET Portability Analyzer to determine how compatible existing libraries may be with target platforms. Having a suite of automated tests will help ensure no breaking changes creep in as the app is ported, and should be among the first projects ported.
@@ -48,6 +76,7 @@ The best approach to porting a large .NET app to .NET Core is to identify projec
 - [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/dotnet/core/porting/)
 - [The .NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer)
 - [Channel 9: A Brief Look at the .NET Portability Analyzer (Video)](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer)
+- [2 Years, 200 Apps: A .NET Core Migration at Scale (Video)](https://www.youtube.com/watch?v=C-2haqb60No)
 
 >[!div class="step-by-step"]
 >[Previous](migrate-large-solutions.md)

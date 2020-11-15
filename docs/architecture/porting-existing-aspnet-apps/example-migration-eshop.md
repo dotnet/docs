@@ -9,6 +9,8 @@ ms.date: 11/13/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
+In this chapter you'll see how to migrate a .NET Framework app to .NET Core. The chapter will examine a sample online store app written for ASP.NET 5 and will go leverage many of the concepts and tools described earlier in this book. You'll find the starting point application in the [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps; this chapter will focus on the `eShopLegacyMVCSolution`.
+
 *Notes*
 
 - Run ApiPort to identify problematic APIs
@@ -37,6 +39,8 @@ ms.date: 11/13/2020
   - GitHub Issues, announcements, docs, SO, etc.
 
 ## References
+
+- [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing)
 
 >[!div class="step-by-step"]
 >[Previous](strategies-migrating-in-production.md)

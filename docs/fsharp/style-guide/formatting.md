@@ -886,6 +886,16 @@ let makeStreamReader x = new System.IO.StreamReader(path = x)
 
 ### Formatting constructors, static members and member invocations
 
+If the expression is short, separate arguments with spaces and keep it in one line.
+
+```fsharp
+let person = new Person(a1, a2)
+
+let myRegexMatch = Regex.Match(input, regex)
+
+let untypedRes = checker.ParseFile(file, source, opts)
+```
+
 If the expression is long, use newlines and indent one scope, rather than indenting to the bracket.
 
 ```fsharp
@@ -894,8 +904,6 @@ let person =
         argument1,
         argument2
     )
-
-let p = new Person(a, b) // keep in one line if short
 
 let myRegexMatch =
     Regex.Match(

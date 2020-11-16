@@ -57,7 +57,7 @@ For .NET 5.0 apps and libraries, the `net5.0` Target Framework Moniker (TFM) com
 
 Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9, which brings many new features to the language. Here are a few highlights:
 
-- Records: Immutable reference types that behave like value types, and introduce the new `with` keyword into the language.
+- Records: reference types with value-based equality semantics and non-destructive mutation supported by a new `with` expression.
 - Relational pattern matching: Extends pattern matching capabilities to relational operators for comparative evaluations and expressions, including logical patterns - new keywords `and`, `or`, and `not`.
 - Top-level statements: As a means for accelerating adoption and learning of C#, the `Main` method can be omitted and application as simple as the following is valid:
 

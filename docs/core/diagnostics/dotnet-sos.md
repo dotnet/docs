@@ -9,13 +9,15 @@ ms.date: 08/26/2020
 
 ## Install dotnet-sos
 
+### Option 1 - Install as dotnet global tool:
+
 To install the latest release version of the `dotnet-sos` [NuGet package](https://www.nuget.org/packages/dotnet-sos), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
 ```dotnetcli
 dotnet tool install -g dotnet-sos
 ```
 
-Starting from .NET 5, it is now possible to directly download a one-file executable for your operating system:
+### Option 2 - Direct download:
 
 - Win ([x86](https://aka.ms/dotnet-sos/win-x86) | [x64](https://aka.ms/dotnet-sos/win-x64) | [arm](https://aka.ms/dotnet-sos/win-arm) | [arm-x64](https://aka.ms/dotnet-sos/win-arm64))
 - macOS ([x64](https://aka.ms/dotnet-sos/osx-x64))

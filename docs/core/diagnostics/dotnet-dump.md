@@ -8,9 +8,11 @@ ms.date: 10/14/2019
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 > [!NOTE]
-> `dotnet-dump` isn't supported on macOS.
+> `dotnet-dump` is supported on macOS with .NET Core 5.0+.
 
 ## Install dotnet-dump
+
+### Option 1 - Install as dotnet global tool:
 
 To install the latest release version of the `dotnet-dump` [NuGet package](https://www.nuget.org/packages/dotnet-dump), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
@@ -18,7 +20,7 @@ To install the latest release version of the `dotnet-dump` [NuGet package](https
 dotnet tool install -g dotnet-dump
 ```
 
-Starting from .NET 5, it is now possible to directly download a one-file executable for your operating system:
+### Option 2 - Direct download:
 
 - Win ([x86](https://aka.ms/dotnet-dump/win-x86) | [x64](https://aka.ms/dotnet-dump/win-x64) | [arm](https://aka.ms/dotnet-dump/win-arm) | [arm-x64](https://aka.ms/dotnet-dump/win-arm64))
 - macOS ([x64](https://aka.ms/dotnet-dump/osx-x64))

@@ -17,7 +17,11 @@ These libraries provide the foundational types and utility functionality and are
 
 ## Extensions to the runtime libraries
 
-Some libraries are provided in NuGet packages rather than included in the runtime's [shared framework](glossary.md#shared-framework). An example is the [.NET Logging API](../core/extensions/logging.md). Documentation on how to use these libraries is included in this **Runtime libraries** section of the table of contents.
+Some libraries are provided in NuGet packages rather than included in the runtime's [shared framework](glossary.md#shared-framework). For example:
+
+* [Logging](../core/extensions/logging.md)
+* [Dependency injection](../core/extensions/dependency-injection.md)
+* [Configuration](../core/extensions/configuration.md)
 
 ## See also
 

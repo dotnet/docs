@@ -152,7 +152,7 @@ An implementation of .NET includes:
 Examples of .NET implementations:
 
 - [.NET Framework](#net-framework)
-- [.NET 5 and later versions (including .NET Core 2.1-3.1](#net-5-and-later-versions))
+- [.NET 5 and later versions (including .NET Core 2.1-3.1)](#net-5-and-later-versions)
 - [Universal Windows Platform (UWP)](#uwp)
 - [Mono](#mono)
 
@@ -281,9 +281,8 @@ The word "runtime" has a different meaning in some contexts:
 
 * Sometimes "runtime" is used in the sense of an [implementation of .NET](#implementation-of-net), as in the following examples:
 
-  - "The various .NET runtimes implement specific versions of .NET Standard."
-  - "Libraries that are intended to run on multiple runtimes should target this framework." (referring to .NET Standard)
   - "The various .NET runtimes implement specific versions of .NET Standard. … Each .NET runtime version advertises the highest .NET Standard version it supports …"
+  - "Libraries that are intended to run on multiple runtimes should target this framework." (referring to .NET Standard)
 
 ## shared framework
 

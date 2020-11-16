@@ -13,7 +13,7 @@ In this tutorial, you'll learn how to:
 >
 > - Decide if you should declare a `class` or a `record`.
 > - Declare record types and positional record types.
-> - Override methods the compiler generates for records.
+> - Substitute your methods for compiler generated methods in records.
 
 ## Prerequisites
 
@@ -27,19 +27,15 @@ You define a *record* by declaring a type with the `record` keyword, instead of 
 - A virtual `Equals` method whose parameter is the record type.
 - An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>.
 - Methods for `operator ==` and `operator !=`.
-- An override of <xref:System.Object.ToString?displayProperty=nameWithType>.
+- Record types implement <xref:System.IEquatable%601?displayProperty=nameWithType>.
 
-Record types implement <xref:System.IEquatable%601?displayProperty=nameWithType>.
-
-The compiler synthesizes methods for copying records, and for displaying records using <xref:System.Object.ToString?displayProperty=nameWithType>. You'll explore those members as you write the code for this tutorial.
+In addition, records provide an override of <xref:System.Object.ToString?displayProperty=nameWithType>. The compiler synthesizes methods for copying records, and for displaying records using <xref:System.Object.ToString?displayProperty=nameWithType>. You'll explore those members as you write the code for this tutorial. In addition, records support `with` expressions to enable non-destructive mutation of records.
 
 You can also declare *positional records* using a more concise syntax. The compiler synthesizes more methods for you when you declare positional records:
 
-- A primary constructor
-- Public init-only properties for each parameter of a primary constructor
-- A `Deconstruct` method to extract properties from the record
-
-In addition, positional records support `with` expressions to enable non-destructive mutation of records.
+- A primary constructor whose parameters match the positional parameters on the record declaration.
+- Public init-only properties for each parameter of a primary constructor.
+- A `Deconstruct` method to extract properties from the record.
 
 ## Build temperature data
 
@@ -96,7 +92,11 @@ HeatingDegreeDays { BaseTemperature = 65, TempRecords = record_types.DailyTemper
 CoolingDegreeDays { BaseTemperature = 65, TempRecords = record_types.DailyTemperature[], DegreeDays = 71.5 }
 ```
 
-Your code calculates the correct number of heating and cooling degree days over that period of time. But this example shows why you may want to replace some of the synthesized methods for records. The `TempRecords` element in the display isn't useful. It displays the type, but nothing else. You can change this behavior by providing your own implementation of the synthesized `PrintMembers` method. The compiler generates this method for all record types, unless you write your own. The signature depends on modifiers applied to the `record` declaration:
+## Define compiler-synthesized methods
+
+Your code calculates the correct number of heating and cooling degree days over that period of time. But this example shows why you may want to replace some of the synthesized methods for records. You can declare your own version of any of the compiler-synthesized methods in a record type except the clone method. The clone method has a compiler generated name and you cannot provide a different implementation. These synthesized methods include a copy constructor, the members of the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, equality and inequality tests, and <xref:System.Object.GetHashCode>. For this purpose, you'll synthesize `PrintMembers`. You could also declare your own `ToString`, but `PrintMembers` provides a better option for inheritance scenarios. To provide your own version of a synthesized method, the signature must match the synthesized method.
+
+The `TempRecords` element in the console output isn't useful. It displays the type, but nothing else. You can change this behavior by providing your own implementation of the synthesized `PrintMembers` method. The signature depends on modifiers applied to the `record` declaration:
 
 - If a record type is `sealed`, the signature is `private bool PrintMembers(StringBuilder builder);`
 - If a record type isn't `sealed` and derives from `object` (that is, it doesn't declare a base record), the signature is `protected virtual bool PrintMembers(StringBuilder builder);`
@@ -135,9 +135,9 @@ Let's add a couple features to your program that demonstrate `with` expressions.
 
 :::code language="csharp" source="snippets/record-types/Program.cs" ID="GrowingDegreeDays":::
 
-You can compare the number of degrees computed to the numbers generated with a higher baseline temperature. Remember that records are *reference types* and these copies are shallow copies. The array for the data isn't copied, but both records refer to the same data. That fact is an advantage in one other scenario. For growing degree days, it's useful to keep track of the moving 5 day average. You can create new records with different source data using `with` expressions. The following code builds a collection of the moving averages, then displays the values:
+You can compare the number of degrees computed to the numbers generated with a higher baseline temperature. Remember that records are *reference types* and these copies are shallow copies. The array for the data isn't copied, but both records refer to the same data. That fact is an advantage in one other scenario. For growing degree days, it's useful to keep track of the total for the previous 5 days. You can create new records with different source data using `with` expressions. The following code builds a collection of these accumulations, then displays the values:
 
-:::code language="csharp" source="snippets/record-types/Program.cs" ID="RunningFiveDayAverage":::
+:::code language="csharp" source="snippets/record-types/Program.cs" ID="RunningFiveDayTotal":::
 
 You can also use `with` expressions to create copies of records. Don't specify any properties between the braces for the `with` expression. That means create a copy, and don't change any properties:
 

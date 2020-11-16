@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace record_types
 {
@@ -48,21 +47,22 @@ namespace record_types
             Console.WriteLine(growingDegreeDays);
             // </GrowingDegreeDays>
 
-            // <RunningFiveDayAverage>
-            // showing moving average of 5 days using range syntax
-            List<CoolingDegreeDays> movingAverage = new();
-            for (int start = 0; start < data.Length - 5; start++)
+            // <RunningFiveDayTotal>
+            // showing moving accumulation of 5 days using range syntax
+            List<CoolingDegreeDays> movingAccumulation = new();
+            int rangeSize = (data.Length > 5) ? 5 : data.Length;
+            for (int start = 0; start < data.Length - rangeSize; start++)
             {
-                var fiveDayAverage = growingDegreeDays with { TempRecords = data[start..(start + 5)] };
-                movingAverage.Add(fiveDayAverage);
+                var fiveDayTotal = growingDegreeDays with { TempRecords = data[start..(start + rangeSize)] };
+                movingAccumulation.Add(fiveDayTotal);
             }
             Console.WriteLine();
-            Console.WriteLine("Moving averages");
-            foreach(var item in movingAverage)
+            Console.WriteLine("Total degree days in the last five days");
+            foreach(var item in movingAccumulation)
             {
                 Console.WriteLine(item);
             }
-            // </RunningFiveDayAverage>
+            // </RunningFiveDayTotal>
         }
     }
 }

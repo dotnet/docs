@@ -3,6 +3,7 @@
 - name: Compatibility
   href: categories.md
 - name: .NET 5+ versions
+  expanded: true
   items:
   - name: .NET 5.0
     items:
@@ -28,7 +29,7 @@
         href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
     - name: Interop
       items:
-      - name: Built-in support for WinRT is removed from .NET
+      - name: Support for WinRT is removed
         href: interop/5.0/built-in-support-for-winrt-removed.md
       - name: Casting RCW to InterfaceIsIInspectable throws exception
         href: interop/5.0/casting-rcw-to-inspectable-interface-throws-exception.md

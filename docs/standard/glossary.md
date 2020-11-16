@@ -1,7 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 11/13/2020
+ms.date: 11/16/2020
 ms.technology: dotnet-standard
 ---
 # .NET Glossary
@@ -273,7 +273,7 @@ The word "runtime" has a different meaning in some contexts:
 
 * *.NET runtime libraries*
 
-  Refers to the same libraries that [BCL](#bcl) refers to. However, other runtimes, such as the ASP.NET runtime, have different [shared frameworks](#shared-framework), with additional libraries that build on the BCL.
+  Refers to the same libraries that [BCL](#bcl) refers to. However, other runtimes, such as the ASP.NET Core runtime, have different [shared frameworks](#shared-framework), with additional libraries that build on the BCL.
 
 * [Runtime Identifier (RID)](../core/rid-catalog.md).
 
@@ -288,7 +288,7 @@ The word "runtime" has a different meaning in some contexts:
 
 Meaning depends on context. The *.NET shared framework* refers to the libraries included in the [.NET runtime](#runtime). In this case, the *shared framework* for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) refers to the same libraries that [BCL](#bcl) refers to.
 
-There are other shared frameworks. The *ASP.NET shared framework* refers to the libraries included in the [ASP.NET Core runtime](#runtime), which includes the BCL plus additional APIs for use by web apps.
+There are other shared frameworks. The *ASP.NET Core shared framework* refers to the libraries included in the [ASP.NET Core runtime](#runtime), which includes the BCL plus additional APIs for use by web apps.
 
 For [framework-dependent apps](../core/deploying/index.md#publish-framework-dependent), the shared framework consists of libraries that are contained in assemblies installed in a folder on the machine that runs the app. For [self-contained apps](../core/deploying/index.md#publish-self-contained), the shared framework assemblies are included with the app.
 

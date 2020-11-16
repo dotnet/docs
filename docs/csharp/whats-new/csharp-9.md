@@ -98,9 +98,13 @@ Finally, records support [`with` expressions](../language-reference/operators/wi
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="Wither":::
 
-The above line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is `"Paul"`. You can set any number of properties in a `with` expression.
+The previous line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is `"Paul"`. You can set any number of properties in a `with` expression. You can also use `with` expressions to create an exact copy. You specify the empty set for the properties to modify:
+
+:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="WithCopy":::
 
 Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method. The earlier `Dog` record example contains a hand coded <xref:System.String.ToString> method as an example.
+
+Learn more about record types in this [exploration of records](../tutorials/exploration/records.md) tutorial.
 
 ## Init only setters
 

@@ -98,7 +98,7 @@ Finally, records support [`with` expressions](../language-reference/operators/wi
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="Wither":::
 
-The above line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is `"Paul"`. You can set any number of properties in a `with` expression. You can also use `with` expressions to create an exact copy. You specify the empty set for the properties to modify:
+The previous line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is `"Paul"`. You can set any number of properties in a `with` expression. You can also use `with` expressions to create an exact copy. You specify the empty set for the properties to modify:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="WithCopy":::
 

@@ -3,7 +3,6 @@ title: Runtime libraries overview
 description: Learn what is included in the Runtime libraries section of the table of contents.
 author: tdykstra
 ms.date: 11/12/2020
-ms.technology: dotnet-standard
 ---
 # Runtime libraries overview
 

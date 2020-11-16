@@ -2,7 +2,7 @@
 title: .NET introduction and overview
 description: Learn about .NET, a free, open-source development platform for building many kinds of apps.
 author: tdykstra
-ms.date: 09/28/2020
+ms.date: 11/16/2020
 ms.custom: "updateeachrelease"
 ---
 # Introduction to .NET

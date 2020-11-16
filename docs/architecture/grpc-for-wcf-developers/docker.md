@@ -17,8 +17,8 @@ Microsoft provides a range of base images for building and running .NET Core app
 
 | Image | Description |
 | ----- | ----------- |
-| [mcr.microsoft.com/dotnet/sdk](https://hub.docker.com/_/microsoft-dotnet-core-sdk/) | For building applications with `docker build`. Not to be used in production. |
-| [mcr.microsoft.com/dotnet/aspnet](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) | Contains the runtime and ASP.NET Core dependencies. For production. |
+| [mcr.microsoft.com/dotnet/sdk](https://hub.docker.com/_/microsoft-dotnet-sdk/) | For building applications with `docker build`. Not to be used in production. |
+| [mcr.microsoft.com/dotnet/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) | Contains the runtime and ASP.NET Core dependencies. For production. |
 
 For each image, there are four variants based on different Linux distributions, distinguished by tags.
 

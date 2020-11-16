@@ -39,18 +39,18 @@ ReadOnlySpan<char> slice = str.AsSpan()[1..3];
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 
-## Category
-
-Code analysis
-
 ## Affected APIs
 
 - <xref:System.Range?displayProperty=fullName>
 
 <!--
 
-## Affected APIs
+### Affected APIs
 
 - `T:System.Range`
+
+### Category
+
+Code analysis
 
 -->

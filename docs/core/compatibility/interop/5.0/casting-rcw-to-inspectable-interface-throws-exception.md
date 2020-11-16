@@ -42,18 +42,18 @@ The support for <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceI
   }
   ```
 
-## Category
-
-Interop
-
 ## Affected APIs
 
 - <xref:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable?displayProperty=fullName>
 
 <!--
 
-## Affected APIs
+### Affected APIs
 
 - `F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable`
+
+### Category
+
+Interop
 
 -->

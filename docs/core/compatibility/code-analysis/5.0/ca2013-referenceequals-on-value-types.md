@@ -23,18 +23,18 @@ Rule CA2013 finds instances where <xref:System.Object.ReferenceEquals(System.Obj
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 
-## Category
-
-Code analysis
-
 ## Affected APIs
 
 - <xref:System.Object.ReferenceEquals(System.Object,System.Object)?displayProperty=fullName>
 
 <!--
 
-## Affected APIs
+### Affected APIs
 
 - `M:System.Object.ReferenceEquals(System.Object,System.Object)`
+
+### Category
+
+Code analysis
 
 -->

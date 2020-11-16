@@ -23,18 +23,18 @@ Rule CA2247 finds calls to the <xref:System.Threading.Tasks.TaskCompletionSource
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 
-## Category
-
-Code analysis
-
 ## Affected APIs
 
 - <xref:System.Threading.Tasks.TaskCompletionSource%601.%23ctor(System.Object)>
 
 <!--
 
-## Affected APIs
+### Affected APIs
 
 - ``M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object)``
+
+### Category
+
+Code analysis
 
 -->

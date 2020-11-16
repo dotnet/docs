@@ -101,11 +101,6 @@ If you don't want to fix all your call sites, you can choose one of the followin
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 
-## Category
-
-- Code analysis
-- Core .NET libraries
-
 ## Affected APIs
 
 For Windows platform:
@@ -122,9 +117,14 @@ For Blazor WebAssembly platform:
 
 <!--
 
-## Affected APIs
+### Affected APIs
 
 - ``
+
+### Category
+
+- Code analysis
+- Core .NET libraries
 
 -->
 

@@ -34,10 +34,6 @@ This breaking change was made for the following reasons:
 
 - Use the [C#/WinRT](/windows/uwp/csharp-winrt/) tool chain to generate or customize WinRT APIs and types for .NET 5.0 and later versions.
 
-## Category
-
-Interop
-
 ## Affected APIs
 
 - <xref:System.IO.WindowsRuntimeStorageExtensions?displayProperty=fullName>
@@ -50,7 +46,7 @@ Interop
 
 <!--
 
-## Affected APIs
+### Affected APIs
 
 - `T:System.IO.WindowsRuntimeStorageExtensions`
 - `T: System.IO.WindowsRuntimeStreamExtensions`
@@ -59,5 +55,9 @@ Interop
 - `T:Windows.Foundation.Point`
 - `T:Windows.Foundation.Size`
 - `T:Windows.UI.Color`
+
+### Category
+
+Interop
 
 -->

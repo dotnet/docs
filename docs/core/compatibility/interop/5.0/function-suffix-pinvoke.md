@@ -32,18 +32,18 @@ To mitigate the change, you can manually add the desired suffix on non-Windows p
 extern static void SetWindowTextW();
 ```
 
-## Category
-
-Interop
-
 ## Affected APIs
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>
 
 <!--
 
-## Affected APIs
+### Affected APIs
 
 - `T:System.Runtime.InteropServices.DllImportAttribute`
+
+### Category
+
+Interop
 
 -->

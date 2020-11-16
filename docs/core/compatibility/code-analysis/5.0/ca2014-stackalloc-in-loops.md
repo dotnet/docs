@@ -23,18 +23,18 @@ Rule CA2014 looks for C# code where a [stackalloc expression](../../../../csharp
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 
-## Category
-
-Code analysis
-
 ## Affected APIs
 
 Not detectable via API analysis.
 
 <!--
 
-## Affected APIs
+### Affected APIs
 
 Not detectable via API analysis.
+
+### Category
+
+Code analysis
 
 -->

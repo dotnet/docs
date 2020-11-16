@@ -29,7 +29,7 @@ You define a *record* by declaring a type with the `record` keyword, instead of 
 - Methods for `operator ==` and `operator !=`.
 - Record types implement <xref:System.IEquatable%601?displayProperty=nameWithType>.
 
-In addition, records provide an override of <xref:System.Object.ToString?displayProperty=nameWithType>. The compiler synthesizes methods for copying records, and for displaying records using <xref:System.Object.ToString?displayProperty=nameWithType>. You'll explore those members as you write the code for this tutorial. In addition, records support `with` expressions to enable non-destructive mutation of records.
+In addition, records provide an override of <xref:System.Object.ToString?displayProperty=nameWithType>. The compiler synthesizes methods for displaying records using <xref:System.Object.ToString?displayProperty=nameWithType>. You'll explore those members as you write the code for this tutorial. Records support `with` expressions to enable non-destructive mutation of records.
 
 You can also declare *positional records* using a more concise syntax. The compiler synthesizes more methods for you when you declare positional records:
 
@@ -152,3 +152,5 @@ Run the finished application to see the results.
 This tutorial showed several aspects of records. Records provide concise syntax for reference types where the fundamental use is storing data. For object-oriented classes, the fundamental use is defining responsibilities. This tutorial focused on *positional records*, where you can use a concise syntax to declare the init-only properties for a record. The compiler synthesizes several members of the record for copying and comparing records. You can add any other members you need for your record types. You can create immutable record types knowing that none of the compiler-generated members would mutate state. For positional records, `with` expressions make it easy to support non-destructive mutation.
 
 Records add another way to define types. You use `class` definitions to create object-oriented hierarchies that focus on the responsibilities and behavior of objects. You create `struct` types for data structures that store data and are small enough to copy efficiently. You create records when you want value-based equality and comparison, don't want to copy values, and want to use reference variables.
+
+You can learn the complete description of records by reading the [proposed record type specification](~/_csharplang/proposals/csharp-9.0/records.md).

@@ -19,14 +19,36 @@ The initial version of the project is shown in Figure 4-1. It's a fairly standar
 
 ## Run ApiPort to identify problematic APIs
 
-The first step in preparing to migrate is to run the ApiPort tool to get a sense of how many .NET Framework APIs the app calls, and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third party dependencies, and pay attention to System.Web dependencies that will need to be ported.
+The first step in preparing to migrate is to run the ApiPort tool to get a sense of how many .NET Framework APIs the app calls, and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third party dependencies, and pay attention to System.Web dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](/understand-update-dependencies.md).
+
+After [installing and configuring the ApiPort tool](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer), run the analysis from within Visual Studio, as shown in Figure 4-2.
+
+![Figure 4-2](media/Figure4-2.png)
+
+**Figure 4-2. Analyze assembly portability in Visual Studio.**
+
+Choose the web project's assembly from the project's `/bin` folder, as shown in Figure 4-3.
+
+![Figure 4-3](media/Figure4-3.png)
+
+**Figure 4-3. Choose the project's web assembly.**
+
+If your solution includes several projects, you can choose all of them. The eShop sample includes just a single MVC project.
+
+Once the report is generated, open the file and review the results. The summary provides a high level view of what percentage of .NET Framework calls your app is making have compatible versions. Figure 4-4 shows the summary for the eShop MVC project.
+
+![Figure 4-4](media/Figure4-4.png)
+
+**Figure 4-4. ApiPort summary.**
+
+For this app, about 80% of the .NET Framework calls are compatible, meaning 20% will need to be addressed in some way as part of the porting process. Viewing the details reveals that all of the incompatible calls are part of `System.Web`, which is an expected incompatibility.
 
 - Run the ApiPort tool
 - Show figures with results
 
 ## Update project files and NuGet reference syntax
 
-The next step is to migrate from the older .csproj file structure to the newer, simpler one introduced with .NET Core. In doing so, you will also migrate from using a packages.json file for NuGet references to using `<PackageReference>` elements in the project file.
+The next step is to migrate from the older .csproj file structure to the newer, simpler one introduced with .NET Core. In doing so, you will also migrate from using a `packages.config` file for NuGet references to using `<PackageReference>` elements in the project file.
 
 - Show original project file and nuget references
 - Show updated project file
@@ -40,13 +62,14 @@ A common way to create a new project file for an existing ASP.NET project is to 
 ## Migrate app startup components
 
 - Migrate Global.asax items
-    - Show migrations for CORS, filters, route constraints, etc.
-    - Show how to configure MVC with binders, formatters, areas, DI
+  - Show migrations for CORS, filters, route constraints, etc.
+  - Show how to configure MVC with binders, formatters, areas, DI
 - Migrate DI (if present previously)
   - Integrating Autofac with eShop and updating it for .NET Core
 - Migrate configuration (web.config to appsettings.json etc.)
-    - Show strategies to co-exist old and new config especially if needed by dependent (.NET Standard) libraries
-    - Update framework features that depended on configuration (WCF client, tracing) to be configured in code instead
+  - Show strategies to co-exist old and new config especially if needed by dependent (.NET Standard) libraries
+  - Update framework features that depended on configuration (WCF client, tracing) to be configured in code instead
+  
 
 ## Data access
 

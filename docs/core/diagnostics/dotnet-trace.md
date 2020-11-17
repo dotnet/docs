@@ -99,7 +99,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`-p|--process-id <PID>`**
 
-  The process id to collect the trace from.
+  The process ID to collect the trace from.
 
 - **`--profile <profile-name>`**
 
@@ -202,7 +202,7 @@ NOTE: This works for apps running .NET 5.0 or later only.
 
 Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, it is possible to do this by using dotnet-trace.
 
-This will launch `hello.exe` with `arg1` and `arg2` as its command line arguments and collect a trace from its runtime startup:
+This will launch `hello.exe` with `arg1` and `arg2` as its command-line arguments and collect a trace from its runtime startup:
 
 ```console
 dotnet-trace collect -- hello.exe arg1 arg2

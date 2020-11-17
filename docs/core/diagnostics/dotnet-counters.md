@@ -66,11 +66,11 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 
 - **`-p|--process-id <PID>`**
 
-  The ID of the process to be monitored.
+  The ID of the process to be collect counter data from.
 
 - **`-n|--name <name>`**
 
-  The name of the process to be monitored. This can be specified instead of the `--process-id` option. If there are multiple processes with the specified name, the command will fail and process-id must be specified instead.
+  The name of the process to be collect counter data from.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -179,7 +179,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 
 - **`-n|--name <name>`**
 
-  The name of the process to be monitored. This can be specified instead of the `--process-id` option. If there are multiple processes with the specified name, the command will fail and process-id must be specified instead.
+  The name of the process to be monitored.
 
 - **`--refresh-interval <SECONDS>`**
 

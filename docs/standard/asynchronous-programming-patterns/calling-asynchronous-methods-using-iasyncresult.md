@@ -1,7 +1,6 @@
 ---
 title: "Calling Asynchronous Methods Using IAsyncResult"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "ending asynchronous operations"
   - "waiting for asynchronous operations"

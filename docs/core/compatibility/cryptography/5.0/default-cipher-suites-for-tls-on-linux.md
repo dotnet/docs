@@ -1,8 +1,8 @@
-### Default TLS cipher suites for .NET on Linux
+# Default TLS cipher suites for .NET on Linux
 
 .NET, on Linux, now respects the OpenSSL configuration for default cipher suites when doing TLS/SSL via the <xref:System.Net.Security.SslStream> class or higher-level operations, such as HTTPS via the <xref:System.Net.Http.HttpClient> class. When default cipher suites aren't explicitly configured, .NET on Linux uses a tightly restricted list of permitted cipher suites.
 
-#### Change description
+## Change description
 
 In previous .NET versions, .NET does not respect system configuration for default cipher suites. The default cipher suite list for .NET on Linux is very permissive.
 
@@ -22,15 +22,15 @@ Since this fallback default doesn't include any cipher suites that are compatibl
 
 Supplying a CipherSuitePolicy value to SslStream for a specific session will still replace the configuration file content and/or .NET fallback default.
 
-#### Reason for change
+## Reason for change
 
 Users running .NET on Linux requested that the default configuration for <xref:System.Net.Security.SslStream> be changed to one that provided a high security rating from third-party assessment tools.
 
-#### Version introduced
+## Version introduced
 
 5.0 RC1
 
-#### Recommended action
+## Recommended action
 
 The new defaults are likely to work when communicating with modern clients or servers. If you need to expand the default cipher suite list to accept legacy clients (or to contact legacy servers), either specify a `CipherSuitePolicy` value or change the OpenSSL configuration file. On many Linux distributions, the OpenSSL configuration file is at */etc/ssl/openssl.cnf*.
 
@@ -51,19 +51,19 @@ CipherString = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE
 
 On the Red Hat Enterprise Linux, CentOS, and Fedora distributions, .NET applications default to the cipher suites permitted by the system-wide cryptographic policies. On these distributions, use the crypto-policies configuration instead of *openssl.cnf*.
 
-#### Category
-
-- Cryptography
-- Security
-
-#### Affected APIs
+## Affected APIs
 
 Not detectible via API analysis.
 
 <!--
 
-#### Affected APIs
+### Affected APIs
 
 - Not detectible via API analysis.
+
+### Category
+
+- Cryptography
+- Security
 
 -->

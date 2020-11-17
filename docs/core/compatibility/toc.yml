@@ -2,22 +2,42 @@
   href: index.md
 - name: Compatibility
   href: categories.md
-- name: Page selectors
-  href: breaking-changes.md
-- name: By version
+- name: .NET 5+ versions
   expanded: true
   items:
-  - name: 3.1 to 5.0
-    href: 3.1-5.0.md
-  - name: 3.0 to 3.1
-    href: 3.0-3.1.md
-  - name: 2.2 to 3.1
-    href: 2.2-3.1.md
-  - name: 2.2 to 3.0
-    href: 2.2-3.0.md
-  - name: 2.0 to 2.1
-    href: 2.0-2.1.md
-  - name: Obsoletions in .NET 5+
+  - name: .NET 5.0
+    items:
+    - name: Overview
+      href: net5-breaking-changes-overview.md
+    - name: Code analysis
+      items:
+      - name: CA1416 warning
+        href: code-analysis/5.0/ca1416-platform-compatibility-analyzer.md
+      - name: CA1417 warning
+        href: code-analysis/5.0/ca1417-outattributes-on-pinvoke-string-parameters.md
+      - name: CA1831 warning
+        href: code-analysis/5.0/ca1831-range-based-indexer-on-string.md
+      - name: CA2013 warning
+        href: code-analysis/5.0/ca2013-referenceequals-on-value-types.md
+      - name: CA2014 warning
+        href: code-analysis/5.0/ca2014-stackalloc-in-loops.md
+      - name: CA2015 warning
+        href: code-analysis/5.0/ca2015-finalizers-for-memorymanager-types.md
+      - name: CA2200 warning
+        href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
+      - name: CA2247 warning
+        href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+    - name: Interop
+      items:
+      - name: Support for WinRT is removed
+        href: interop/5.0/built-in-support-for-winrt-removed.md
+      - name: Casting RCW to InterfaceIsIInspectable throws exception
+        href: interop/5.0/casting-rcw-to-inspectable-interface-throws-exception.md
+      - name: No A/W suffix probing on non-Windows platforms
+        href: interop/5.0/function-suffix-pinvoke.md
+    - name: (This file will eventually go away)
+      href: 3.1-5.0.md
+  - name: Obsoleted APIs with custom IDs
     items:
     - name: Overview
       displayName: syslib, obsolete, obsoletion
@@ -46,40 +66,52 @@
       href: syslib0011.md
     - name: SYSLIB0012
       href: syslib0012.md
-  - name: .NET Framework to .NET Core
-    items:
-    - name: Breaking changes
-      href: fx-core.md
-    - name: Unavailable technologies
-      href: ../porting/net-framework-tech-unavailable.md?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: APIs that always throw
-      href: unsupported-apis.md
-- name: By technology area
+- name: .NET Core versions
   expanded: true
   items:
-  - name: ASP.NET Core
-    href: aspnetcore.md
-  - name: Code analysis
-    href: code-analysis.md
-  - name: Core .NET libraries
-    href: corefx.md
-  - name: Cryptography
-    href: cryptography.md
-  - name: Entity Framework Core
-    href: /ef/core/what-is-new/ef-core-3.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: Globalization
-    href: globalization.md
-  - name: Interop
-    href: interop.md
-  - name: MSBuild
-    href: msbuild.md
-  - name: Networking
-    href: networking.md
-  - name: Serialization
-    href: serialization.md
-  - name: Visual Basic
-    href: visualbasic.md
-  - name: Windows Forms
-    href: winforms.md
-  - name: WPF
-    href: wpf.md
+  - name: Page selectors
+    href: breaking-changes.md
+  - name: By versions
+    items:
+    - name: 3.0 to 3.1
+      href: 3.0-3.1.md
+    - name: 2.2 to 3.1
+      href: 2.2-3.1.md
+    - name: 2.2 to 3.0
+      href: 2.2-3.0.md
+    - name: 2.0 to 2.1
+      href: 2.0-2.1.md
+    - name: .NET Framework to .NET Core
+      items:
+      - name: Breaking changes
+        href: fx-core.md
+      - name: Unavailable technologies
+        href: ../porting/net-framework-tech-unavailable.md?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: APIs that always throw
+        href: unsupported-apis.md
+  - name: By technology area
+    items:
+    - name: ASP.NET Core
+      href: aspnetcore.md
+    - name: Core .NET libraries
+      href: corefx.md
+    - name: Cryptography
+      href: cryptography.md
+    - name: Entity Framework Core
+      href: /ef/core/what-is-new/ef-core-3.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Globalization
+      href: globalization.md
+    - name: Interop
+      href: interop.md
+    - name: MSBuild
+      href: msbuild.md
+    - name: Networking
+      href: networking.md
+    - name: Serialization
+      href: serialization.md
+    - name: Visual Basic
+      href: visualbasic.md
+    - name: Windows Forms
+      href: winforms.md
+    - name: WPF
+      href: wpf.md

@@ -1,7 +1,7 @@
 ---
 title: "Sorted Collection Types"
 ms.date: 04/30/2020
-|helpviewer_keywords: 
+helpviewer_keywords: 
   - "SortedDictionary collection type"
   - "SortedList class, grouping data in collections"
   - "grouping data in collections, SortedList collection type"

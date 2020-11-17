@@ -15,7 +15,7 @@ Rule CA2013 finds instances where <xref:System.Object.ReferenceEquals(System.Obj
 
 ## Version introduced
 
-5.0 Preview 8
+5.0
 
 ## Recommended action
 

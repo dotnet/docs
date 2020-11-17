@@ -15,7 +15,7 @@ Rule CA2247 finds calls to the <xref:System.Threading.Tasks.TaskCompletionSource
 
 ## Version introduced
 
-5.0 Preview 8
+5.0
 
 ## Recommended action
 

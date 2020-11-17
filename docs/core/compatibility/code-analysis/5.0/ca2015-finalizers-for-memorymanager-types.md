@@ -15,7 +15,7 @@ Rule CA2015 flags types that derive from <xref:System.Buffers.MemoryManager%601>
 
 ## Version introduced
 
-5.0 Preview 8
+5.0
 
 ## Recommended action
 

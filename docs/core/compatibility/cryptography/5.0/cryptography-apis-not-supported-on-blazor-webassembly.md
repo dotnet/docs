@@ -1,3 +1,8 @@
+---
+title: "Breaking change: System.Security.Cryptography APIs not supported on Blazor WebAssembly"
+description: Learn about the breaking change in .NET 5.0 where cryptography APIs throw an exception when run on a browser.
+ms.date: 09/16/2020
+---
 # System.Security.Cryptography APIs not supported on Blazor WebAssembly
 
 <xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> at run time when run on a browser.
@@ -15,7 +20,7 @@ Microsoft is unable to ship OpenSSL as a dependency in the Blazor WebAssembly co
 
 ## Version introduced
 
-5.0 RC1
+5.0
 
 ## Recommended action
 

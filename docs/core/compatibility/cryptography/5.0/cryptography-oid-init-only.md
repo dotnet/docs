@@ -1,3 +1,8 @@
+---
+title: "Breaking change: Cryptography.Oid is functionally init-only"
+description: Learn about the breaking change in .NET 5.0 where property setters on the Cryptography.Oid class now throw an exception if you attempt to change a value.
+ms.date: 08/16/2020
+---
 # System.Security.Cryptography.Oid is functionally init-only
 
 The <xref:System.Security.Cryptography.Oid?displayProperty=fullName> class, which is used to represent ASN.1 Object Identifier values and their "friendly" names, was previously fully mutable. This mutability was often overlooked or came as a surprise. The property setters now throw a <xref:System.PlatformNotSupportedException> when you attempt to change the value after it's already been assigned.
@@ -14,7 +19,7 @@ This change enables the reuse of <xref:System.Security.Cryptography.Oid> objects
 
 ## Version introduced
 
-5.0 Preview 8
+5.0
 
 ## Recommended action
 

@@ -25,7 +25,7 @@ catch (ArithmeticException e)
 
 ## Version introduced
 
-5.0 RC1
+5.0
 
 ## Recommended action
 

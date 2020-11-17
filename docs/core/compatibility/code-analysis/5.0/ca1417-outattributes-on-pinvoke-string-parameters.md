@@ -22,7 +22,7 @@ The .NET runtime maintains a table, called the intern pool, that contains a sing
 
 ## Version introduced
 
-5.0 Preview 8
+5.0
 
 ## Recommended action
 

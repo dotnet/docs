@@ -25,7 +25,7 @@ ReadOnlySpan<char> slice = str.AsSpan()[1..3];
 
 ## Version introduced
 
-5.0 Preview 8
+5.0
 
 ## Recommended action
 

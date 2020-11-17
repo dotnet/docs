@@ -204,7 +204,8 @@ To collect traces using `dotnet-trace`:
 
 ## Launch a child application and collect a trace from its startup using dotnet-trace
 
-NOTE: This works for apps running .NET 5.0 or later only.
+> [!IMPORTANT]
+> This works for apps running .NET 5.0 or later only.
 
 Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5.0 or later, it is possible to do this by using dotnet-trace.
 

@@ -96,7 +96,7 @@ let myFunBad (a:decimal)(b)c = a + b + c
 
 ### Place parameters on a new line for long definitions
 
-If you have a very long function definition, place the parameters on new lines and indent them to match the indentation level of the subsequent parameter.
+If you have a long function definition, place the parameters on new lines and indent them to match the indentation level of the subsequent parameter.
 
 ```fsharp
 module M =
@@ -302,7 +302,7 @@ Namespaces, exceptions, events, and project/`.dll` names should also use PascalC
 
 ### Avoid underscores in names
 
-Historically, some F# libraries have used underscores in names. However, this is no longer widely accepted, partly because it clashes with .NET naming conventions. That said, some F# programmers use underscores heavily, partly for historical reasons, and tolerance and respect is important. However, be aware that the style is often disliked by others who have a choice about whether to use it.
+Historically, some F# libraries have used underscores in names. However, this is no longer widely accepted, partly because it clashes with .NET naming conventions. That said, some F# programmers use underscores heavily, partly for historical reasons, and tolerance and respect is important. However, the style is often disliked by others who have a choice about whether to use it.
 
 One exception includes interoperating with native components, where underscores are common.
 
@@ -637,9 +637,9 @@ In some cases, `do...yield` may aid in readability. These cases, though subjecti
 ## Formatting if expressions
 
 Indentation of conditionals depends on the size and complexity of the expressions that make them up.
-Simply write them on one line when:
+Write them on one line when:
 
-- `cond`, `e1` and `e2` are short
+- `cond`, `e1`, and `e2` are short
 - `e1` and `e2` are not `if/then/else` expressions themselves.
 
 ```fsharp
@@ -884,7 +884,7 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
 
-### Formatting constructors, static members and member invocations
+### Formatting constructors, static members, and member invocations
 
 If the expression is short, separate arguments with spaces and keep it in one line.
 
@@ -986,7 +986,7 @@ Avoid placing the attribute on the same line as the value.
 
 ## Formatting computation expression operations
 
-When creating custom operations for [computation expressions](../language-reference/computation-expressions.md) it is recommended to use camelCase naming:
+When creating custom operations for [computation expressions](../language-reference/computation-expressions.md), it is recommended to use camelCase naming:
 
 ```fsharp
 type MathBuilder () =
@@ -1025,5 +1025,5 @@ let myNumber =
     }
 ```
 
-The naming convention used should ultimately be driven by the domain being modeled.
+The domain that's being modeled should ultimately drive the naming convention.
 If it is idiomatic to use a different convention, that convention should be used instead.

@@ -9,11 +9,19 @@ ms.date: 02/26/2020
 
 ## Install dotnet-counters
 
+### Option 1 - Install as dotnet global tool:
+
 To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
 ```dotnetcli
 dotnet tool install --global dotnet-counters
 ```
+
+### Option 2 - Direct download:
+
+- Win ([x86](https://aka.ms/dotnet-counters/win-x86) | [x64](https://aka.ms/dotnet-counters/win-x64) | [arm](https://aka.ms/dotnet-counters/win-arm) | [arm-x64](https://aka.ms/dotnet-counters/win-arm64))
+- macOS ([x64](https://aka.ms/dotnet-counters/osx-x64))
+- Linux ([x64](https://aka.ms/dotnet-counters/linux-x64) | [arm](https://aka.ms/dotnet-counters/linux-arm) | [arm64](https://aka.ms/dotnet-counters/linux-arm64) | [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) | [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64))
 
 ## Synopsis
 

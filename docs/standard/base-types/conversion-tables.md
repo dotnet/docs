@@ -1,7 +1,6 @@
 ---
 title: "Type Conversion Tables in .NET"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "widening conversions"
   - "narrowing conversions"

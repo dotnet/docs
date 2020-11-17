@@ -1,7 +1,6 @@
 ---
 title: "Compilation and Reuse in Regular Expressions"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "parsing text with regular expressions, compilation"
   - "searching with regular expressions, compilation"

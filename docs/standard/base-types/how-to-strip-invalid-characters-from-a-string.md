@@ -2,7 +2,6 @@
 title: "How to: Strip Invalid Characters from a String"
 description: Read an example that shows how to strip potentially harmful characters from a string by using the static Regex.Replace method.
 ms.date: "06/30/2020"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

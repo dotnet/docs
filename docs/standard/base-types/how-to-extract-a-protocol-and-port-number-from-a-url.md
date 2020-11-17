@@ -1,7 +1,6 @@
 ---
 title: "How to: Extract a Protocol and Port Number from a URL"
 ms.date: "06/30/2020"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

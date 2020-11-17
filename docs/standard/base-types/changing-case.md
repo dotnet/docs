@@ -2,7 +2,6 @@
 title: "Changing Case in .NET"
 description: Learn how to change in the case of strings in .NET.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

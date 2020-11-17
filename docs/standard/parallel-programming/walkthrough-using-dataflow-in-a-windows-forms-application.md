@@ -1,7 +1,6 @@
 ---
 title: "Walkthrough: Using Dataflow in a Windows Forms Application"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "TPL dataflow library, in Windows Forms"
   - "Task Parallel Library, dataflows"

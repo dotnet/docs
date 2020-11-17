@@ -1,7 +1,6 @@
 ---
 title: "How to: Iterate File Directories with PLINQ"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "PLINQ queries, how to iterate directories"
 ms.assetid: 354e8ce3-35c4-431c-99ca-7661d1f3901b

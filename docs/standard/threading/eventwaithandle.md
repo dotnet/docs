@@ -1,7 +1,6 @@
 ---
 title: "EventWaitHandle"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "threading [.NET], EventWaitHandle class"
   - "EventWaitHandle class"

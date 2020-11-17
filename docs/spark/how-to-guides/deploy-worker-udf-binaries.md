@@ -55,7 +55,7 @@ Once the Spark application is [bundled](https://spark.apache.org/docs/latest/sub
 ### After submitting my Spark application, I get the error `System.TypeLoadException: Could not load type 'System.Runtime.Remoting.Contexts.Context'`.
 > **Error:** [Error] [TaskRunner] [0] ProcessStream() failed with exception: System.TypeLoadException: Could not load type 'System.Runtime.Remoting.Contexts.Context' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=...'.
 
-**Answer:** Check the `Microsoft.Spark.Worker` version you are using. There are two versions: **.NET Framework 4.6.1** and **.NET Core 2.1.x**. In this case, `Microsoft.Spark.Worker.net461.win-x64-<version>` (which you can [download](https://github.com/dotnet/spark/releases)) should be used since `System.Runtime.Remoting.Contexts.Context` is only for .NET Framework.
+**Answer:** Check the `Microsoft.Spark.Worker` version you are using. There are two versions: **.NET Framework 4.6.1** and **.NET Core 3.1.x**. In this case, `Microsoft.Spark.Worker.net461.win-x64-<version>` (which you can [download](https://github.com/dotnet/spark/releases)) should be used since `System.Runtime.Remoting.Contexts.Context` is only for .NET Framework.
 
 ### How do I run my spark application with UDFs on YARN? Which environment variables and parameters should I use?
 
@@ -69,7 +69,7 @@ spark-submit \
 --conf spark.yarn.appMasterEnv.DOTNET_WORKER_DIR=./worker/Microsoft.Spark.Worker-<version> \
 --conf spark.yarn.appMasterEnv.DOTNET_ASSEMBLY_SEARCH_PATHS=./udfs \
 --archives hdfs://<path to your files>/Microsoft.Spark.Worker.net461.win-x64-<version>.zip#worker,hdfs://<path to your files>/mySparkApp.zip#udfs \
-hdfs://<path to jar file>/microsoft-spark-2.4.x-<version>.jar \
+hdfs://<path to jar file>/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar \
 hdfs://<path to your files>/mySparkApp.zip mySparkApp
 ```
 

@@ -49,7 +49,7 @@ The following APIs are more event oriented. Rather than logging simple strings t
   - Only allows tracing serializable objects.
   - Can be consumed in-process via any [EventListener](xref:System.Diagnostics.Tracing.EventListener) instances configured to consume the EventSource.
   - Can be consumed out-of-process via:
-    - .NET Core's EventPipe on all platforms
+    - [.NET Core's EventPipe](./eventpipe.md) on all platforms
     - [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal)
     - [LTTng tracing framework for Linux](https://lttng.org/)
       - Walkthrough: [Collect an LTTng trace using PerfCollect](trace-perfcollect-lttng.md).

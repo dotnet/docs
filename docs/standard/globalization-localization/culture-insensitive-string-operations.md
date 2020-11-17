@@ -1,7 +1,6 @@
 ---
 title: "Culture-Insensitive String Operations"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "culture, culture-insensitive string operations"
   - "case-sensitive comparisons"

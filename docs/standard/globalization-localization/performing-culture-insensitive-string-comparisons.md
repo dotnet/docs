@@ -1,7 +1,6 @@
 ---
 title: "Performing Culture-Insensitive String Comparisons"
 ms.date: "08/22/2018"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

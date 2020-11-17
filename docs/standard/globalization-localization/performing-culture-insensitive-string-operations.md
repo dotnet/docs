@@ -1,7 +1,6 @@
 ---
 title: "Performing Culture-Insensitive String Operations"
 ms.date: "08/22/2018"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "case mappings"
   - "custom case mappings"

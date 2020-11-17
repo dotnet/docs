@@ -2,7 +2,6 @@
 title: "Common Design Patterns"
 description: "See links that describe a couple of common design patterns in .NET: dependency properties and the dispose pattern."
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "design patterns in class libraries"
   - "class library design guidelines [.NET Framework], design patterns"

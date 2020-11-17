@@ -1,7 +1,6 @@
 ---
 title: "Designing for Extensibility"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "extending class libraries"
   - "extensibility with class libraries in .NET Framework"

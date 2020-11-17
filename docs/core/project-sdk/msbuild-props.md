@@ -117,7 +117,7 @@ The following XML excludes the `System.Security` assembly from trimming.
 
 ### UseAppHost
 
-The `UseAppHost` property was introduced in the 2.1.400 version of the .NET SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
+The `UseAppHost` property controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
 
 In .NET Core 3.0 and later versions, a framework-dependent executable is created by default. Set the `UseAppHost` property to `false` to disable generation of the executable.
 
@@ -348,7 +348,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 - [PackageReference](#packagereference)
 - [ProjectReference](#projectreference)
 - [Reference](#reference)
-- [Restore properties](#restore-properties)
+- [Restore-related properties](#restore-related-properties)
 
 ### AssetTargetFallback
 
@@ -406,13 +406,44 @@ The `Include` attribute specifies the name of the file, and the `HintPath` metad
 </ItemGroup>
 ```
 
-### Restore properties
+### Restore-related properties
 
 Restoring a referenced package installs all of its direct dependencies and all the dependencies of those dependencies. You can customize package restoration by specifying properties such as `RestorePackagesPath` and `RestoreIgnoreFailedSources`. For more information about these and other properties, see [restore target](/nuget/reference/msbuild-targets#restore-target).
 
 ```xml
 <PropertyGroup>
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
+
+## Hosting properties and items
+
+- [EnableComHosting](#enablecomhosting)
+- [EnableDynamicLoading](#enabledynamicloading)
+
+### EnableComHosting
+
+The `EnableComHosting` property indicates that an assembly provides a COM server. Setting the `EnableComHosting` to `true` also implies that [EnableDynamicLoading](#enabledynamicloading) is `true`.
+
+```xml
+<PropertyGroup>
+  <EnableComHosting>True</EnableComHosting>
+</PropertyGroup>
+```
+
+For more information, see [Expose .NET components to COM](../native-interop/expose-components-to-com.md).
+
+### EnableDynamicLoading
+
+The `EnableDynamicLoading` property indicates that an assembly is a dynamically loaded component. The component could be a [COM library](/windows/win32/com/the-component-object-model) or a non-COM library that can be [used from a native host](../tutorials/netcore-hosting.md). Setting this property to `true` has the following effects:
+
+- A *.runtimeconfig.json* file is generated.
+- [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward) is set to `LatestMinor`.
+- NuGet references are copied locally.
+
+```xml
+<PropertyGroup>
+  <EnableDynamicLoading>true</EnableDynamicLoading>
 </PropertyGroup>
 ```
 

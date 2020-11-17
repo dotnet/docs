@@ -2,7 +2,7 @@
 title: .NET introduction and overview
 description: Learn about .NET, a free, open-source development platform for building many kinds of apps.
 author: tdykstra
-ms.date: 09/28/2020
+ms.date: 11/16/2020
 ms.custom: "updateeachrelease"
 ---
 # Introduction to .NET
@@ -258,9 +258,9 @@ For more information, see [.NET application publishing overview](deploying/index
 
 ## Runtime libraries
 
-.NET has an expansive standard set of class libraries. The core set is referred to as the base class library (BCL). The complete set is referred to as the runtime libraries or framework libraries. These libraries provide implementations for many general-purpose and workload-specific types and utility functionality.
+.NET has an expansive standard set of class libraries, known as [runtime libraries](../standard/glossary.md#runtime), [framework libraries](../standard/glossary.md#framework-libraries), or the [base class library (BCL)](../standard/glossary.md#bcl). These libraries provide implementations for many general-purpose and workload-specific types and utility functionality.
 
-Here are some examples of types defined in the runtime libraries:
+Here are some examples of types defined in the .NET runtime libraries:
 
 * Primitive types, such as <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Int32?displayProperty=nameWithType>.
 * Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
@@ -270,9 +270,9 @@ Here are some examples of types defined in the runtime libraries:
 * [Serialization](../standard/serialization/index.md) utility types, such as <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> and <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>.
 * High-performance types, such as <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Numerics.Vector?displayProperty=nameWithType>, and [Pipelines](../standard/io/pipelines.md).
 
-For more information, see [Framework libraries](../standard/framework-libraries.md) and [the source code for the libraries](https://github.com/dotnet/runtime/tree/master/src/libraries).
+For more information, see the [Runtime libraries overview](../standard/runtime-libraries-overview.md). The source code for the libraries is in [the GitHub dotnet/runtime repository](https://github.com/dotnet/runtime/tree/master/src/libraries).
 
-## Microsoft.Extensions libraries
+### Extensions to the runtime libraries
 
 Libraries for some commonly used application functionality aren't included in the runtime libraries but are made available in NuGet packages, such as the following:
 
@@ -338,6 +338,7 @@ Some of the terminology for .NET can be confusing because the same word is used 
   | target framework | The collection of APIs that a .NET app or library relies on. Examples: .NET Core 3.1, .NET Standard 2.0 |
   | Target Framework Moniker (TFM)  | A TFM is a standardized token format for specifying the target framework of a .NET app or library. Example: `net462` for .NET Framework 4.6.2. |
   | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet-core). "Framework" in this usage is the same thing as the "runtime" that you download from the .NET download page. |
+  | framework libraries | Sometimes used as a synonym for [runtime libraries](#runtime-libraries). |
 
 * **SDK**
 

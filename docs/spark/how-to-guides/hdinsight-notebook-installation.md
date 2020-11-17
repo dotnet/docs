@@ -68,7 +68,7 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
    | Name | *Install .NET for Apache Spark Interactive Notebook Experience* |
    | Bash script URI | The URI to which you uploaded `install-interactive-notebook.sh`. |
    | Node type(s)| Head and Worker |
-   | Parameters | .NET for Apache Spark version. You can check [.NET for Apache Spark releases](https://github.com/dotnet/spark/releases). For example, if you want to install Sparkdotnet version 0.6.0 then it would be `0.6.0`.
+   | Parameters | .NET for Apache Spark version. You can check [.NET for Apache Spark releases](https://github.com/dotnet/spark/releases). For example, if you want to install Sparkdotnet version 1.0.0 then it would be `1.0.0`.
 
    Move to the next step when green checkmarks appear next to the status of the script action.
 
@@ -96,7 +96,7 @@ Follow the instructions in the [Stop Livy server](#stop-the-livy-server) section
 
    * **Property 2** Use the version of .NET for Apache Spark which you had included in the previous script action.
        * Key:&ensp;&ensp;`spark.dotnet.packages`
-       * Value: `["nuget: Microsoft.Spark, 0.6.0", "nuget: Microsoft.Spark.Extensions.Delta, 0.6.0"]`
+       * Value: `["nuget: Microsoft.Spark, 1.0.0", "nuget: Microsoft.Spark.Extensions.Delta, 1.0.0"]`
 
    * **Property 3**
        * Key:&ensp;&ensp;`spark.dotnet.interpreter`

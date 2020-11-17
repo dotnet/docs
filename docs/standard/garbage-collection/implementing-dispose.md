@@ -2,7 +2,6 @@
 title: "Implement a Dispose method"
 description: In this article, learn to implement the Dispose method, which releases unmanaged resources used by your code in .NET.
 ms.date: 09/08/2020
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"

@@ -176,6 +176,7 @@
         "docs/machine-learning/**/*.*": "dotnet-ml",
         "docs/standard/**/**.md": "dotnet-fundamentals",
         "docs/standard/data/**/**.md": "dotnet-data",
+        "docs/standard/design-guidelines/*.md": "dotnet",
         "docs/standard/security/*.md": "dotnet",
         "docs/visual-basic/**/**.md": "dotnet-visualbasic",
         "docs/spark/**/**.md": "dotnet-spark"
@@ -457,6 +458,7 @@
         "docs/framework/wpf/**/**.md": "dotnet-wpf",
         "docs/framework/xaml-services/**/**.md": "dotnet-wpf",
         "docs/standard/analyzers/**.md": "dotnet-analyzers",
+        "docs/standard/design-guidelines/*.md": "dotnet-standard",
         "docs/standard/security/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics",
         "docs/visual-basic/misc/**/**.md": "vb-diagnostics"

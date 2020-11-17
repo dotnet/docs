@@ -3,7 +3,7 @@ title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
 ms.date: 11/06/2020
 ms.custom: "updateeachrelease"
-ms.technology: dotnet-standard
+ms.technology: dotnet-support
 ---
 # Target frameworks in SDK-style projects
 

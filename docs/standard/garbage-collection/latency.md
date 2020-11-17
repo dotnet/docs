@@ -1,7 +1,6 @@
 ---
 title: "Latency Modes"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "garbage collection, intrusiveness"
   - "garbage collection, latency modes"

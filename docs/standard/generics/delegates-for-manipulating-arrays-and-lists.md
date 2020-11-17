@@ -1,7 +1,6 @@
 ---
 title: "Generic Delegates for Manipulating Arrays and Lists"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "delegates [.NET], generic delegates"
   - "chaining delegates"

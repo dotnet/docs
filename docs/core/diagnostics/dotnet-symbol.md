@@ -5,7 +5,7 @@ ms.date: 11/17/2020
 ---
 # Symbol downloader (dotnet-symbol)
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions, ✔️ .NET 5.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
 ## Install
 

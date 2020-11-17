@@ -5,7 +5,7 @@ ms.date: 11/17/2020
 ---
 # Heap analysis tool (dotnet-gcdump)
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions, ✔️ .NET 5.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Install
 

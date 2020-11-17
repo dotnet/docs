@@ -5,10 +5,10 @@ ms.date: 11/17/2020
 ---
 # Dump collection and analysis utility (dotnet-dump)
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions, ✔️ .NET 5.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 > [!NOTE]
-> `dotnet-dump` for macOS is only supported with .NET 5.0 and later.
+> `dotnet-dump` for macOS is only supported with .NET 5.0 and later versions.
 
 ## Install
 

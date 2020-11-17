@@ -1,11 +1,11 @@
 ---
 title: dotnet-sos diagnostic tool - .NET CLI
-description: Learn how to install and use the dotnet-sos CLI tool manage the SOS debugger extension which are used with native debuggers on Windows and Linux. 
+description: Learn how to install and use the dotnet-sos CLI tool to manage the SOS debugger extension, which is used with native debuggers on Windows and Linux. 
 ms.date: 11/17/2020
 ---
 # SOS installer (dotnet-sos)
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions, ✔️ .NET 5.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
 ## Install
 

@@ -42,7 +42,7 @@ The following table is a summary of the differences between EventPipe and ETW/LT
 
 You can use EventPipe to trace your .NET application in many ways:
 
-* Use one of the [diagnostics tools](#tools-using-eventpipe) that are built on top of EventPipe.
+* Use one of the [diagnostics tools](#tools-that-use-eventpipe) that are built on top of EventPipe.
 
 * Use [Microsoft.Diagnostics.NETCore.Client](https://github.com/dotnet/diagnostics/blob/master/documentation/diagnostics-client-library-instructions.md) library to write your own tool to configure and start EventPipe sessions yourself.
 

@@ -1,5 +1,5 @@
 ---
-title: "exception runtime events"
+title: "Exception runtime events"
 description: See .NET runtime events that collect diagnostic information specific to the exceptions and exception handling.
 ms.date: "11/13/2020"
 ms.topic: reference

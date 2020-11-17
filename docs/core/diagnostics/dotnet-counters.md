@@ -1,27 +1,33 @@
 ---
-title: dotnet-counters - .NET Core
-description: Learn how to install and use the dotnet-counter command-line tool.
-ms.date: 02/26/2020
+title: dotnet-counters diagnostic tool - .NET CLI
+description: Learn how to install and use the dotnet-counter CLI tool for ad-hoc health monitoring and first-level performance investigation.
+ms.date: 11/17/2020
 ---
-# dotnet-counters
+# Investigate performance counters (dotnet-counters)
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions, ✔️ .NET 5.0 SDK and later versions
 
-## Install dotnet-counters
+## Install
 
-### Option 1 - Install as dotnet global tool:
+There are two ways to download and install `dotnet-counters`:
 
-To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+- **dotnet global tool:**
 
-```dotnetcli
-dotnet tool install --global dotnet-counters
-```
+  To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
-### Option 2 - Direct download:
+  ```dotnetcli
+  dotnet tool install --global dotnet-counters
+  ```
 
-- Win ([x86](https://aka.ms/dotnet-counters/win-x86) | [x64](https://aka.ms/dotnet-counters/win-x64) | [arm](https://aka.ms/dotnet-counters/win-arm) | [arm-x64](https://aka.ms/dotnet-counters/win-arm64))
-- macOS ([x64](https://aka.ms/dotnet-counters/osx-x64))
-- Linux ([x64](https://aka.ms/dotnet-counters/linux-x64) | [arm](https://aka.ms/dotnet-counters/linux-arm) | [arm64](https://aka.ms/dotnet-counters/linux-arm64) | [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) | [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64))
+- **Direct download:**
+
+  Download the tool executable that matches your platform:
+
+  | OS  | Platform |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-counters/win-x86) \| [x64](https://aka.ms/dotnet-counters/win-x64) \| [arm](https://aka.ms/dotnet-counters/win-arm) \| [arm-x64](https://aka.ms/dotnet-counters/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-counters/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-counters/linux-x64) \| [arm](https://aka.ms/dotnet-counters/linux-arm) \| [arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64) |
 
 ## Synopsis
 

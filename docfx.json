@@ -174,9 +174,9 @@
         "docs/fsharp/**/**.md": "dotnet-fsharp",
         "docs/fundamentals/**/*.md": "dotnet-fundamentals",
         "docs/machine-learning/**/*.*": "dotnet-ml",
-        "docs/standard/data/**/**.md": "dotnet-data",
-        "docs/standard/security/**.md": "dotnet",
         "docs/standard/**/**.md": "dotnet-fundamentals",
+        "docs/standard/data/**/**.md": "dotnet-data",
+        "docs/standard/security/*.md": "dotnet",
         "docs/visual-basic/**/**.md": "dotnet-visualbasic",
         "docs/spark/**/**.md": "dotnet-spark"
       },

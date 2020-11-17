@@ -66,7 +66,7 @@ There are two ways to control the nullable context. At the project level, you ca
 For more information, see the following proposals for the [C# language specification](~/_csharplang/spec/introduction.md):
 
 - [Nullable reference types](~/_csharplang/proposals/csharp-8.0/nullable-reference-types.md)
-- [Draft nullable reference types specification](~/_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md)
+- [Draft nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md)
 
 ## See also
 

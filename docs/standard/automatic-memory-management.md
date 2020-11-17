@@ -1,7 +1,6 @@
 ---
 title: "Automatic Memory Management"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "garbage collection, automatic memory management"
   - "memory, allocating"

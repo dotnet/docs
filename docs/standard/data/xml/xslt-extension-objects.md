@@ -1,7 +1,6 @@
 ---
 title: "XSLT Extension Objects"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: a4ebdbad-087c-4cfe-acc0-17c48142f81a
 ---
 # XSLT Extension Objects

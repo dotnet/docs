@@ -1,7 +1,6 @@
 ---
 title: "Resolving External XSLT Style Sheets and Documents"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
 ---
 # Resolving External XSLT Style Sheets and Documents

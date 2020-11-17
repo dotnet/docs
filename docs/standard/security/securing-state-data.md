@@ -2,7 +2,6 @@
 title: "Securing State Data"
 description: Declare state data as private or internal variables to limit access to it. Such data can still be accessed through reflection, serialization, and in debugging.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "security [.NET], state data"
   - "code security, state data"

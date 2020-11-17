@@ -1,7 +1,6 @@
 ---
 title: "Sorted Collection Types"
 ms.date: 04/30/2020
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "SortedDictionary collection type"
   - "SortedList class, grouping data in collections"

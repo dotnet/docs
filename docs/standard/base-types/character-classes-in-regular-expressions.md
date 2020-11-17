@@ -2,7 +2,6 @@
 title: Character Classes in .NET Regular Expressions
 description: Learn how to use character classes to represent a set of characters in .NET regular expressions.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

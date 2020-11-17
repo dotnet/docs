@@ -2,7 +2,6 @@
 title: "Standard date and time format strings"
 description: Learn how to use a standard date and time format string to define the text representation of a date and time value in .NET.
 ms.date: 11/05/2020
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"

@@ -1,7 +1,6 @@
 ---
 title: "XSLT Stylesheet Scripting Using <msxsl:script>"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

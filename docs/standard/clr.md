@@ -3,7 +3,6 @@ title: "Common Language Runtime (CLR) overview - .NET"
 titleSuffix: ""
 description: Get started with common language runtime (CLR), .NET's run-time environment. The CLR runs code and provides services to make the development process easier.
 ms.date: 10/22/2020
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "compiling source code, runtime functionality"
   - "code, execution"

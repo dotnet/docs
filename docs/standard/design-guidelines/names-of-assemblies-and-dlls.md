@@ -2,7 +2,6 @@
 title: "Names of Assemblies and DLLs"
 description: Learn guidelines for naming assemblies and dynamic-link libraries (DLLs). An assembly can span one or more files, but it usually maps one-to-one with a DLL.
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "names [.NET Framework], DLLs"
   - "names [.NET Framework], assemblies"

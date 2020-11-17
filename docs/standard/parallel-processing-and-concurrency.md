@@ -2,7 +2,6 @@
 title: "Parallel Processing, Concurrency, and Async Programming in .NET"
 description: "Learn how to make your application more responsive and faster with .NET capabilities for parallel processing and asynchronous programming"
 ms.date: "04/06/2018"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "parallel processing [.NET]"
   - "concurrency [.NET]"

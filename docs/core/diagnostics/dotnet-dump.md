@@ -60,7 +60,7 @@ Captures a dump from a process.
 ### Synopsis
 
 ```console
-dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag]
+dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--output] [--diag]
 ```
 
 ### Options
@@ -71,7 +71,11 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 
 - **`-p|--process-id <PID>`**
 
-  Specifies the process ID number to collect a memory dump from.
+  Specifies the process ID number to collect a dump from.
+
+- **`-n|--name <name>`**
+
+  Specifies the name of the process to collect a dump from.
 
 - **`--type <Full|Heap|Mini>`**
 

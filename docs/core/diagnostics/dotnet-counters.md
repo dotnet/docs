@@ -59,14 +59,18 @@ Periodically collect selected counter values and export them into a specified fi
 ### Synopsis
 
 ```console
-dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
+dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
 ```
 
 ### Options
 
 - **`-p|--process-id <PID>`**
 
-  The ID of the process to be monitored.
+  The ID of the process to be collect counter data from.
+
+- **`-n|--name <name>`**
+
+  The name of the process to be collect counter data from.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -164,7 +168,7 @@ Displays periodically refreshing values of selected counters.
 ### Synopsis
 
 ```console
-dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--counters] [-- <command>]
+dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters] [-- <command>]
 ```
 
 ### Options
@@ -172,6 +176,10 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 - **`-p|--process-id <PID>`**
 
   The ID of the process to be monitored.
+
+- **`-n|--name <name>`**
+
+  The name of the process to be monitored.
 
 - **`--refresh-interval <SECONDS>`**
 

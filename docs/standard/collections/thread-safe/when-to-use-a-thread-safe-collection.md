@@ -2,7 +2,6 @@
 title: "When to Use a Thread-Safe Collection"
 description: Know when to use a thread-safe collection in .NET. There are 5 collection types that are specially designed to support multithreaded add & remove operations.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "thread-safe collections, when to upgrade"
 ms.assetid: a9babe97-e457-4ff3-b528-a1bc940d5320

@@ -1,7 +1,6 @@
 ---
 title: "Node Sets in Transformations"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: ad034f0e-ff8b-4a71-9a4c-528c754263c4
 ---
 # Node Sets in Transformations

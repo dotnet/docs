@@ -1,7 +1,6 @@
 ---
 title: "Type Support in the System.Xml Classes"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 63570538-06e3-4401-ad4d-ac50be90c7bf
 ---
 # Type Support in the System.Xml Classes

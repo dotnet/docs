@@ -2,7 +2,6 @@
 title: "Commonly Used Collection Types"
 description: Learn about commonly used collection types in .NET, such as hash tables, queues, stacks, bags, dictionaries, and lists.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "collections [.NET], generic"
   - "objects [.NET], grouping in collections"

@@ -1,7 +1,6 @@
 ---
 title: "Node Set Navigation Using XPathNavigator"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 1a954b41-7173-40bc-8544-d430f209b1e5
 ---
 # Node Set Navigation Using XPathNavigator

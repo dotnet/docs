@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 11/06/2020
+ms.date: 11/16/2020
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
@@ -57,7 +57,7 @@ For .NET 5.0 apps and libraries, the `net5.0` Target Framework Moniker (TFM) com
 
 Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9, which brings many new features to the language. Here are a few highlights:
 
-- Records: Immutable reference types that behave like value types, and introduce the new `with` keyword into the language.
+- Records: reference types with value-based equality semantics and non-destructive mutation supported by a new `with` expression.
 - Relational pattern matching: Extends pattern matching capabilities to relational operators for comparative evaluations and expressions, including logical patterns - new keywords `and`, `or`, and `not`.
 - Top-level statements: As a means for accelerating adoption and learning of C#, the `Main` method can be omitted and application as simple as the following is valid:
 
@@ -135,35 +135,6 @@ There are new features in and for [System.Text.Json](../standard/serialization/s
 - [Allow custom converters to handle null](../standard/serialization/system-text-json-converters-how-to.md#handle-null-values)
 - [Copy JsonSerializerOptions](../standard/serialization/system-text-json-how-to.md#copy-jsonserializeroptions)
 - [Create JsonSerializerOptions with web defaults](../standard/serialization/system-text-json-how-to.md#web-defaults-for-jsonserializeroptions)
-
-## .NET MAUI
-
-.NET MAUI is an evolution of the increasingly popular Xamarin.Forms toolkit, and is open-source on GitHub at [dotnet/maui](https://github.com/dotnet/maui). With .NET MAUI, the choice for .NET developers is simplified, providing a single stack that supports all modern workloads: Android, iOS, macOS, and Windows. With .NET MAUI, you get a single project developer experience that targets multiple platforms and devices.
-
-> [!IMPORTANT]
-> .NET MAUI is in early preview. Sample source code can be found at [xamarin/net6-samples](https://github.com/xamarin/net6-samples).
-
-### Model-View-Update pattern
-
-Developers love modern development patterns. A fluent approach to UI development, inspired by "The Elm Architecture" is the [model-view-update](https://elmprogramming.com/model-view-update-part-1.html) or MVU pattern. MVU promotes a one-way flow of data and state management, as well as a code-first development experience that rapidly updates the UI by applying only the changes necessary.
-
-As an example, consider the following counter written in .NET MAUI using the MVU pattern:
-
-```csharp
-readonly State<int> _count = 0;
-
-[Body]
-View body() => new StackLayout
-{
-    new Label("Welcome to .NET MAUI!"),
-    new Button(
-        () => $"You clicked {_count} times.",
-        () => ++ _count.Value)
-    )
-};
-```
-
-For more information, see the [.NET MAUI roadmap](https://github.com/dotnet/maui/wiki/Roadmap), and [Introducing .NET MAUI](https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui) article.
 
 ## See also
 

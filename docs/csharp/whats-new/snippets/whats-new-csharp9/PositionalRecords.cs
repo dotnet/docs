@@ -53,6 +53,10 @@ namespace NewCsharp9
             // <Wither>
             Person brother = person with { FirstName = "Paul" };
             // </Wither>
+
+            // <WithCopy>
+            Person clone = person with { };
+            // </WithCopy>
         }
     }
 }

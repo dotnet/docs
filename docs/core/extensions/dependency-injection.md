@@ -43,8 +43,8 @@ public class Worker : BackgroundService
 
 The class creates and directly depends on the `MessageWriter` class. Hard-coded dependencies, such as in the previous example, are problematic and should be avoided for the following reasons:
 
-- To replace `MessageWriter` with a different implementation, the `MessageService` class must be modified.
-- If `MessageWriter` has dependencies, they must also be configured by the `MessageService` class. In a large project with multiple classes depending on `MessageWriter`, the configuration code becomes scattered across the app.
+- To replace `MessageWriter` with a different implementation, the `Worker` class must be modified.
+- If `MessageWriter` has dependencies, they must also be configured by the `Worker` class. In a large project with multiple classes depending on `MessageWriter`, the configuration code becomes scattered across the app.
 - This implementation is difficult to unit test. The app should use a mock or stub `MessageWriter` class, which isn't possible with this approach.
 
 Dependency injection addresses these problems through:

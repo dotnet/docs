@@ -1,6 +1,6 @@
 ---
-title: dotnet-stack tool - .NET Core
-description: Installing and using the dotnet-stack command-line tool.
+title: dotnet-stack diagnostic tool - .NET CLI
+description: Learn how to install and use the dotnet-stack CLI tool which captures and prints the managed stacks for all threads in the target .NET process.
 ms.date: 11/17/2020
 ---
 # Inspect managed stack traces (dotnet-stack)
@@ -13,7 +13,7 @@ There are two ways to download and install `dotnet-stack`:
 
 - **dotnet global tool:**
 
-  To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-stack), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+  To install the latest release version of the `dotnet-stack` [NuGet package](https://www.nuget.org/packages/dotnet-stack), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
   ```dotnetcli
   dotnet tool install --global dotnet-stack
@@ -41,7 +41,7 @@ The `dotnet-stack` tool:
 
 * Is a cross-platform .NET Core tool.
 * Captures and prints the managed stacks for all threads in the target .NET process.
-* Is built on [`EventPipe`](./eventpipe.md) of the .NET Core runtime.
+* Utilizes [`EventPipe`](./eventpipe.md) tracing provided by the .NET Core runtime.
 
 ## Options
 
@@ -62,7 +62,7 @@ The `dotnet-stack` tool:
 
 ## dotnet-stack report
 
-Collects a diagnostic trace from a running process.
+Prints the stack trace for each thread in the target process.
 
 ### Synopsis
 

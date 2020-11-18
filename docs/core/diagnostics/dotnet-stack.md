@@ -119,3 +119,22 @@ To report managed stacks using `dotnet-stack`:
     System.Console!System.Console.ReadKey()
     StackTracee!Tracee.Program.Main(class System.String[])
   ```
+
+  The output of `dotnet-stack` follows the following form:
+
+  - Comments in the output are prefixed with `#`.
+  - Each thread has a header that includes the native thread ID: `Thread (<thread-id>):`.
+  - Stack frames follow the form `Module!Method`.
+  - Transitions to unmanaged code are represented as `[Native Frames]` in the output.
+
+  ```
+  # comment
+  Thread (0x1234):
+    module!Method
+    module!Method
+
+  Thread (0x5678):
+    [Native Frames]
+    Module!Method
+    Module!Method
+  ```

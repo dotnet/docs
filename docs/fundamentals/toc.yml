@@ -332,7 +332,9 @@ items:
     - name: Logging and tracing
       href: ../core/diagnostics/logging-tracing.md
     - name: Runtime Events
-      href: ../fundamentals/diagnostics/runtime-events.md
+      items:
+      - name: Overview
+        href: ../fundamentals/diagnostics/runtime-events.md
       - name: Contention Events
         href: ../fundamentals/diagnostics/runtime-contention-events.md
       - name: Exception Events

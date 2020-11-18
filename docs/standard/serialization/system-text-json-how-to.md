@@ -114,7 +114,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 
 * By default, all public properties are serialized. You can [specify properties to ignore](system-text-json-ignore-properties.md).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
-* By default, JSON is minified. You can [pretty-print the JSON](system-text-json-customize-serialization.md#serialize-to-formatted-json).
+* By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](system-text-json-customize-properties.md).
 * By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references](system-text-json-configure-options.md#preserve-references-and-handle-circular-references).
 * By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](#include-fields).

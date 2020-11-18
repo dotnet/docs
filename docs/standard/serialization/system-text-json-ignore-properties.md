@@ -79,7 +79,7 @@ Here's an example type to serialize and JSON output:
 This option applies only to serialization. During deserialization, read-only properties are ignored by default.
 
 ::: zone pivot="dotnet-5-0"
-This option applies only to properties. To ignore read-only fields when [serializing fields](system-text-json-serialization.md#include-fields), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
+This option applies only to properties. To ignore read-only fields when [serializing fields](system-text-json-how-to.md#include-fields), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
 ::: zone-end
 
 ### Ignore all null-value properties

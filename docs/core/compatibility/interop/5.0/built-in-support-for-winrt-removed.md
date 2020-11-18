@@ -9,7 +9,7 @@ Built-in support for consumption of [Windows runtime (WinRT)](/uwp/winrt-cref/wi
 
 ## Version introduced
 
-5.0 Preview 6
+5.0
 
 ## Change description
 

@@ -1,8 +1,13 @@
-### Globalization APIs use ICU libraries on Windows
+---
+title: "Breaking change: Globalization APIs use ICU libraries on Windows"
+description: Learn about the globalization breaking change in .NET 5.0 where ICU libraries are used for globalization functionality instead of NLS.
+ms.date: 05/19/2020
+---
+# Globalization APIs use ICU libraries on Windows
 
 .NET 5.0 and later versions use [International Components for Unicode (ICU)](http://site.icu-project.org/home) libraries for globalization functionality when running on Windows 10 May 2019 Update or later.
 
-#### Change description
+## Change description
 
 In .NET Core 1.0 - 3.1 and .NET Framework 4 and later, .NET libraries use [National Language Support (NLS)](/windows/win32/intl/national-language-support) APIs for globalization functionality on Windows. For example, NLS functions were used to compare strings, get culture information, and perform string casing in the appropriate culture.
 
@@ -11,11 +16,11 @@ Starting in .NET 5.0, if an app is running on Windows 10 May 2019 Update or late
 > [!NOTE]
 > Windows 10 May 2019 Update and later versions ship with the ICU native library. If the .NET runtime can't load ICU, it uses NLS instead.
 
-#### Behavioral differences
+## Behavioral differences
 
 You might see changes in your app even if you don't realize you're using globalization facilities. This section lists a couple of the behavioral changes you might see, but there are others too.
 
-##### String.IndexOf
+### String.IndexOf
 
 Consider the following code that calls <xref:System.String.IndexOf(System.String)?displayProperty=nameWithType> to find the index of the newline character in a string.
 
@@ -30,11 +35,11 @@ Console.WriteLine(idx);
 
 To fix this code by conducting an ordinal search instead of a culture-sensitive search, call the <xref:System.String.IndexOf(System.String,System.StringComparison)> overload and pass in <xref:System.StringComparison.Ordinal?displayProperty=nameWithType> as an argument.
 
-You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../../../docs/fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../../../docs/fundamentals/code-analysis/quality-rules/ca1309.md) to find these call sites in your code.
+You can run code analysis rules [CA1307: Specify StringComparison for clarity](../../../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309: Use ordinal StringComparison](../../../../fundamentals/code-analysis/quality-rules/ca1309.md) to find these call sites in your code.
 
-For more information, see [Behavior changes when comparing strings on .NET 5+](../../../../docs/standard/base-types/string-comparison-net-5-plus.md).
+For more information, see [Behavior changes when comparing strings on .NET 5+](../../../../standard/base-types/string-comparison-net-5-plus.md).
 
-##### Currency symbol
+### Currency symbol
 
 Consider the following code that formats a string using the currency format specifier `C`. The current thread's culture is set to a culture that includes only the language and not the country.
 
@@ -46,24 +51,19 @@ string text = string.Format("{0:C}", 100);
 - In previous versions of .NET on Windows, the value of text is `"100,00 €"`.
 - In .NET 5.0 and later versions on Windows 19H1 and later versions, the value of text is `"100,00 ¤"`, which uses the international currency symbol instead of the euro. In ICU, the design is that a currency is a property of a country or region, not a language.
 
-#### Reason for change
+## Reason for change
 
 This change was introduced to unify .NET's globalization behavior across all supported operating systems. It also provides the ability for applications to bundle their own globalization libraries rather than depend on the operating system's built-in libraries.
 
-#### Version introduced
+## Version introduced
 
-.NET 5.0 Preview 4
+.NET 5.0
 
-#### Recommended action
+## Recommended action
 
-No action is required on the part of the developer. However, if you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../../docs/core/run-time-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../docs/standard/globalization-localization/globalization-icu.md) article.
+No action is required on the part of the developer. However, if you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../run-time-config/globalization.md#nls) to revert to that behavior. For more information about the available switches, see the [.NET globalization and ICU](../../../../standard/globalization-localization/globalization-icu.md) article.
 
-#### Category
-
-- Core .NET libraries
-- Globalization
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Span%601?displayProperty=fullName>
 - <xref:System.String?displayProperty=fullName>
@@ -76,7 +76,7 @@ No action is required on the part of the developer. However, if you wish to cont
 
 <!--
 
-#### Affected APIs
+### Affected APIs
 
 - ``T:System.Span`1``
 - `T:System.String`
@@ -86,5 +86,10 @@ No action is required on the part of the developer. However, if you wish to cont
 - ``T:System.Collections.Generic.SortedDictionary`2``
 - ``T:System.Collections.Generic.SortedList`2``
 - ``T:System.Collections.Generic.SortedSet`1``
+
+### Category
+
+- Core .NET libraries
+- Globalization
 
 -->

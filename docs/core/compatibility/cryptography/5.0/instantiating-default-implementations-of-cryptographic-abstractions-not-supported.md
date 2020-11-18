@@ -1,8 +1,13 @@
-### Instantiating default implementations of cryptographic abstractions is not supported
+---
+title: "Breaking change: Instantiating default implementations of cryptographic abstractions is not supported"
+description: Learn about the breaking change in .NET 5.0 where the parameterless Create() overloads on cryptographic abstractions are obsolete.
+ms.date: 10/16/2020
+---
+# Instantiating default implementations of cryptographic abstractions is not supported
 
 The parameterless `Create()` overloads on cryptographic abstractions are obsolete as warning as of .NET 5.0.
 
-#### Change description
+## Change description
 
 In .NET Framework 2.0 - 4.8, abstract cryptographic primitive factories such as <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> can be configured to return different algorithms. For example, on a default install of .NET Framework 4.8, the parameterless, static method <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> returns an instance of the SHA1 algorithm, as shown in the following snippet.
 
@@ -21,7 +26,7 @@ alg = HashAlgorithm.Create();
 Console.WriteLine(alg.GetType());
 ```
 
-You can also use [machine-wide configuration](../../../../docs/framework/configure-apps/map-algorithm-names-to-cryptography-classes.md) to change the default algorithm without needing to call into `CryptoConfig` programmatically.
+You can also use [machine-wide configuration](../../../../framework/configure-apps/map-algorithm-names-to-cryptography-classes.md) to change the default algorithm without needing to call into `CryptoConfig` programmatically.
 
 In .NET Core 2.0 - 3.1, abstract cryptographic primitive factories such as <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> always throw a <xref:System.PlatformNotSupportedException>.
 
@@ -58,17 +63,17 @@ This is a compile-time only change. There is no run-time change from previous ve
 >   Aes aesAlg = Aes.Create();
 >   ```
 
-#### Reason for change
+## Reason for change
 
 The cryptographic configuration system present in .NET Framework is no longer present in .NET Core and .NET 5.0+, since that legacy system doesn't allow for proper cryptographic agility. .NET's backward-compatibility requirements also prohibit the framework from updating certain cryptographic APIs to keep up with advances in cryptography. For example, the <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> method was introduced in .NET Framework 1.0, when the SHA-1 hash algorithm was state-of-the-art. Twenty years have passed, and now SHA-1 is considered broken, but we cannot change <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> to return a different algorithm. Doing so would introduce an unacceptable breaking change in consuming applications.
 
 Best practice dictates that libraries that consume cryptographic primitives (such as AES, SHA-*, and RSA) should be in full control over how they consume these primitives. Applications that require future-proofing should utilize higher-level libraries that wrap these primitives and add key management and cryptographic agility capabilities. These libraries are often provided by the hosting environment. One example is [ASP.NET's Data Protection library](/aspnet/core/security/data-protection/), which handles these concerns on behalf of the calling application.
 
-#### Version introduced
+## Version introduced
 
-5.0 RC1
+5.0
 
-#### Recommended action
+## Recommended action
 
 - The recommended course of action is to replace calls to the now-obsolete APIs with calls to factory methods for specific algorithms, for example, <xref:System.Security.Cryptography.Aes.Create?displayProperty=nameWithType>. This gives you full control over which algorithms are instantiated.
 
@@ -105,11 +110,7 @@ Best practice dictates that libraries that consume cryptographic primitives (suc
   > [!NOTE]
   > Suppressing `SYSLIB0007` disables only the obsoletion warnings for the cryptography APIs listed here. It does not disable any other warnings. Additionally, even if you suppress the warning, these obsoleted APIs will still throw a <xref:System.PlatformNotSupportedException> at run time.
 
-#### Category
-
-- Cryptography
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create?displayProperty=fullName>
 - <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=fullName>
@@ -119,12 +120,16 @@ Best practice dictates that libraries that consume cryptographic primitives (suc
 
 <!--
 
-#### Affected APIs
+### Affected APIs
 
 - `M:System.Security.Cryptography.AsymmetricAlgorithm.Create`
 - `M:System.Security.Cryptography.HashAlgorithm.Create`
 - `M:System.Security.Cryptography.HMAC.Create`
 - `M:System.Security.Cryptography.KeyedHashAlgorithm.Create`
 - `M:System.Security.Cryptography.SymmetricAlgorithm.Create`
+
+### Category
+
+- Cryptography
 
 -->

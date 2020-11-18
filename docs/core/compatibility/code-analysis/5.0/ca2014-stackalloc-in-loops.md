@@ -15,7 +15,7 @@ Rule CA2014 looks for C# code where a [stackalloc expression](../../../../csharp
 
 ## Version introduced
 
-5.0 Preview 8
+5.0
 
 ## Recommended action
 

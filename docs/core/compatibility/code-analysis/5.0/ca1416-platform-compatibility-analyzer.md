@@ -48,7 +48,7 @@ In projects that target platforms for which APIs that they use aren't available,
 
 ## Version introduced
 
-5.0 RC1
+5.0
 
 ## Recommended action
 

@@ -1,30 +1,36 @@
 ---
-title: dotnet-dump - .NET Core
-description: Installing and using the dotnet-dump command-line tool.
-ms.date: 10/14/2019
+title: dotnet-dump diagnostic tool - .NET CLI
+description: Learn how to install and use the dotnet-dump CLI tool to collect and analyze Windows and Linux dumps without any native debugger.
+ms.date: 11/17/2020
 ---
 # Dump collection and analysis utility (dotnet-dump)
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 > [!NOTE]
-> `dotnet-dump` is supported on macOS with .NET Core 5.0+.
+> `dotnet-dump` for macOS is only supported with .NET 5.0 and later versions.
 
-## Install dotnet-dump
+## Install
 
-### Option 1 - Install as dotnet global tool:
+There are two ways to download and install `dotnet-dump`:
 
-To install the latest release version of the `dotnet-dump` [NuGet package](https://www.nuget.org/packages/dotnet-dump), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+- **dotnet global tool:**
 
-```dotnetcli
-dotnet tool install -g dotnet-dump
-```
+  To install the latest release version of the `dotnet-dump` [NuGet package](https://www.nuget.org/packages/dotnet-dump), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
-### Option 2 - Direct download:
+  ```dotnetcli
+  dotnet tool install --global dotnet-dump
+  ```
 
-- Win ([x86](https://aka.ms/dotnet-dump/win-x86) | [x64](https://aka.ms/dotnet-dump/win-x64) | [arm](https://aka.ms/dotnet-dump/win-arm) | [arm-x64](https://aka.ms/dotnet-dump/win-arm64))
-- macOS ([x64](https://aka.ms/dotnet-dump/osx-x64))
-- Linux ([x64](https://aka.ms/dotnet-dump/linux-x64) | [arm](https://aka.ms/dotnet-dump/linux-arm) | [arm64](https://aka.ms/dotnet-dump/linux-arm64) | [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) | [musl-arm64](https://aka.ms/dotnet-dump/linux-musl-arm64))
+- **Direct download:**
+
+  Download the tool executable that matches your platform:
+
+  | OS  | Platform |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [arm](https://aka.ms/dotnet-dump/win-arm) \| [arm-x64](https://aka.ms/dotnet-dump/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [arm](https://aka.ms/dotnet-dump/linux-arm) \| [arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
 
 ## Synopsis
 

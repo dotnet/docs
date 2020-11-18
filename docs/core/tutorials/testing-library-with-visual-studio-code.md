@@ -3,7 +3,7 @@ title: Test a .NET class library using Visual Studio Code
 description: Create a unit test project for a .NET class library. Verify that a .NET class library works correctly with unit tests.
 ms.date: 11/17/2020
 ---
-# Tutorial: Test a .NET class libraryusing Visual Studio Code
+# Tutorial: Test a .NET class library using Visual Studio Code
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 

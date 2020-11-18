@@ -18,9 +18,7 @@ namespace SystemTextJsonSamples
             // <UseUtf8Var>
             while (reader.Read())
             {
-                JsonTokenType tokenType = reader.TokenType;
-
-                switch (tokenType)
+                switch (reader.TokenType)
                 {
                     case JsonTokenType.StartObject:
                         total++;
@@ -32,8 +30,8 @@ namespace SystemTextJsonSamples
                         }
                         break;
                 }
-                // </UseUtf8Var>
             }
+            // </UseUtf8Var>
             Console.WriteLine($"{count} out of {total} have \"name\" properties");
         }
     }

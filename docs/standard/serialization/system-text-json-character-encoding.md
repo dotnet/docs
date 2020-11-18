@@ -22,7 +22,7 @@ By default, the serializer escapes all non-ASCII characters. That is, it replace
 }
 ```
 
-### Serialize language character sets
+## Serialize language character sets
 
 To serialize the character set(s) of one or more languages without escaping, specify [Unicode range(s)](xref:System.Text.Unicode.UnicodeRanges) when creating an instance of <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, as shown in the following example:
 
@@ -42,7 +42,7 @@ This code doesn't escape Cyrillic or Greek characters. If the `Summary` property
 
 To serialize all language sets without escaping, use <xref:System.Text.Unicode.UnicodeRanges.All?displayProperty=nameWithType>.
 
-### Serialize specific characters
+## Serialize specific characters
 
 An alternative is to specify individual characters that you want to allow through without being escaped. The following example serializes only the first two characters of `жарко`:
 
@@ -60,7 +60,7 @@ Here's an example of JSON produced by the preceding code:
 }
 ```
 
-### Serialize all characters
+## Serialize all characters
 
 To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping?displayProperty=nameWithType>, as shown in the following example:
 

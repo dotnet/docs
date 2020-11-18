@@ -4,7 +4,7 @@ description: "Learn how to migrate from Newtonsoft.Json to System.Text.Json. Inc
 author: tdykstra
 ms.author: tdykstra
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 11/13/2020
+ms.date: 11/18/2020
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
@@ -39,9 +39,9 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
 | Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
-| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) |
+| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](system-text-json-customize-properties.md#use-camel-case-for-all-json-property-names) |
 | Minimal character escaping                            | ✔️ [Strict character escaping, configurable](#minimal-character-escaping) |
-| `NullValueHandling.Ignore` global setting             | ✔️ [DefaultIgnoreCondition global option](system-text-json-how-to.md#ignore-all-null-value-properties) |[Conditionally ignore a property](#conditionally-ignore-a-property)
+| `NullValueHandling.Ignore` global setting             | ✔️ [DefaultIgnoreCondition global option](system-text-json-ignore-properties.md#ignore-all-null-value-properties) |[Conditionally ignore a property](#conditionally-ignore-a-property)
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
 | Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
@@ -80,9 +80,9 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
 | Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
-| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) |
+| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](system-text-json-customize-properties.md#use-camel-case-for-all-json-property-names) |
 | Minimal character escaping                            | ✔️ [Strict character escaping, configurable](#minimal-character-escaping) |
-| `NullValueHandling.Ignore` global setting             | ✔️ [IgnoreNullValues global option](system-text-json-how-to.md#ignore-all-null-value-properties) |
+| `NullValueHandling.Ignore` global setting             | ✔️ [IgnoreNullValues global option](system-text-json-ignore-properties.md#ignore-all-null-value-properties) |
 | Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
 | Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
@@ -125,9 +125,9 @@ This is not an exhaustive list of `Newtonsoft.Json` features. The list includes 
 
 ### Case-insensitive deserialization
 
-During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The <xref:System.Text.Json> default is case-sensitive, which gives better performance since it's doing an exact match. For information about how to do case-insensitive matching, see [Case-insensitive property matching](system-text-json-how-to.md#case-insensitive-property-matching).
+During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The <xref:System.Text.Json> default is case-sensitive, which gives better performance since it's doing an exact match. For information about how to do case-insensitive matching, see [Case-insensitive property matching](system-text-json-configure-options.md#case-insensitive-property-matching).
 
-If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`.
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](system-text-json-customize-properties.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`.
 
 ::: zone pivot="dotnet-5-0"
 ASP.NET Core also enables deserializing [quoted numbers](#allow-or-write-numbers-in-quotes) by default.
@@ -135,15 +135,15 @@ ASP.NET Core also enables deserializing [quoted numbers](#allow-or-write-numbers
 
 ### Minimal character escaping
 
-During serialization, `Newtonsoft.Json` is relatively permissive about letting characters through without escaping them. That is, it doesn't replace them with `\uxxxx` where `xxxx` is the character's code point. Where it does escape them, it does so by emitting a `\` before the character (for example, `"` becomes `\"`). <xref:System.Text.Json> escapes more characters by default to provide defense-in-depth protections against cross-site scripting (XSS) or information-disclosure attacks and does so by using the six-character sequence. `System.Text.Json` escapes all non-ASCII characters by default, so you don't need to do anything if you're using `StringEscapeHandling.EscapeNonAscii` in `Newtonsoft.Json`. `System.Text.Json` also escapes HTML-sensitive characters, by default. For information about how to override the default `System.Text.Json` behavior, see [Customize character encoding](system-text-json-how-to.md#customize-character-encoding).
+During serialization, `Newtonsoft.Json` is relatively permissive about letting characters through without escaping them. That is, it doesn't replace them with `\uxxxx` where `xxxx` is the character's code point. Where it does escape them, it does so by emitting a `\` before the character (for example, `"` becomes `\"`). <xref:System.Text.Json> escapes more characters by default to provide defense-in-depth protections against cross-site scripting (XSS) or information-disclosure attacks and does so by using the six-character sequence. `System.Text.Json` escapes all non-ASCII characters by default, so you don't need to do anything if you're using `StringEscapeHandling.EscapeNonAscii` in `Newtonsoft.Json`. `System.Text.Json` also escapes HTML-sensitive characters, by default. For information about how to override the default `System.Text.Json` behavior, see [Customize character encoding](system-text-json-character-encoding.md).
 
 ### Comments
 
-During deserialization, `Newtonsoft.Json` ignores comments in the JSON by default. The <xref:System.Text.Json> default is to throw exceptions for comments because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't include them. For information about how to allow comments, see [Allow comments and trailing commas](system-text-json-how-to.md#allow-comments-and-trailing-commas).
+During deserialization, `Newtonsoft.Json` ignores comments in the JSON by default. The <xref:System.Text.Json> default is to throw exceptions for comments because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't include them. For information about how to allow comments, see [Allow comments and trailing commas](system-text-json-configure-options.md#allow-comments-and-trailing-commas).
 
 ### Trailing commas
 
-During deserialization, `Newtonsoft.Json` ignores trailing commas by default. It also ignores multiple trailing commas (for example, `[{"Color":"Red"},{"Color":"Green"},,]`). The <xref:System.Text.Json> default is to throw exceptions for trailing commas because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't allow them. For information about how to make `System.Text.Json` accept them, see [Allow comments and trailing commas](system-text-json-how-to.md#allow-comments-and-trailing-commas). There's no way to allow multiple trailing commas.
+During deserialization, `Newtonsoft.Json` ignores trailing commas by default. It also ignores multiple trailing commas (for example, `[{"Color":"Red"},{"Color":"Green"},,]`). The <xref:System.Text.Json> default is to throw exceptions for trailing commas because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't allow them. For information about how to make `System.Text.Json` accept them, see [Allow comments and trailing commas](system-text-json-configure-options.md#allow-comments-and-trailing-commas). There's no way to allow multiple trailing commas.
 
 ### Converter registration precedence
 
@@ -229,9 +229,9 @@ For some of the following scenarios, workarounds are not practical or possible. 
 ::: zone pivot="dotnet-5-0"
 `Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To enable that behavior in <xref:System.Text.Json>, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> to <xref:System.Text.Json.Serialization.JsonNumberHandling.WriteAsString> or <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>, or use the [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute) attribute.
 
-If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies [web defaults](system-text-json-how-to.md#web-defaults-for-jsonserializeroptions) when it uses `System.Text.Json`, and web defaults allow quoted numbers.
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies [web defaults](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) when it uses `System.Text.Json`, and web defaults allow quoted numbers.
 
-For more information, see [Allow or write numbers in quotes](system-text-json-how-to.md#allow-or-write-numbers-in-quotes).
+For more information, see [Allow or write numbers in quotes](system-text-json-configure-options.md#allow-or-write-numbers-in-quotes).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -240,7 +240,7 @@ For more information, see [Allow or write numbers in quotes](system-text-json-ho
 * It serializes them as JSON strings.
 * It accepts JSON numbers and numbers within quotes while deserializing.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/LongToStringConverter":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/LongToStringConverter.cs":::
 
 Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-property) on individual `long` properties or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 ::: zone-end
@@ -250,7 +250,7 @@ Register this custom converter by [using an attribute](system-text-json-converte
 The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which constructor to call when deserializing to a POCO.
 
 ::: zone pivot="dotnet-5-0"
-`System.Text.Json` also has a [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute) attribute. For more information, see [Immutable types and Records](system-text-json-how-to.md#immutable-types-and-records).
+`System.Text.Json` also has a [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute) attribute. For more information, see [Immutable types and Records](system-text-json-configure-options.md#immutable-types-and-records).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -306,7 +306,7 @@ For that functionality, you can write a custom converter. Here's a sample POCO a
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRuntimeIgnoreConverter":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRuntimeIgnoreConverter.cs":::
 
 The converter causes the `Summary` property to be omitted from serialization if its value is null, an empty string, or "N/A".
 
@@ -388,13 +388,13 @@ Custom converters can be implemented for types that don't have built-in support.
 
 ### Polymorphic serialization
 
-`Newtonsoft.Json` automatically does polymorphic serialization. For information about the limited polymorphic serialization capabilities of <xref:System.Text.Json>, see [Serialize properties of derived classes](system-text-json-how-to.md#serialize-properties-of-derived-classes).
+`Newtonsoft.Json` automatically does polymorphic serialization. For information about the limited polymorphic serialization capabilities of <xref:System.Text.Json>, see [Serialize properties of derived classes](system-text-json-configure-options.md#serialize-properties-of-derived-classes).
 
 The workaround described there is to define properties that may contain derived classes as type `object`. If that isn't possible, another option is to create a converter with a `Write` method for the whole inheritance type hierarchy like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 
 ### Polymorphic deserialization
 
-`Newtonsoft.Json` has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing. It uses the metadata while deserializing to do polymorphic deserialization. <xref:System.Text.Json> can do a limited range of [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) but not polymorphic deserialization.
+`Newtonsoft.Json` has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing. It uses the metadata while deserializing to do polymorphic deserialization. <xref:System.Text.Json> can do a limited range of [polymorphic serialization](system-text-json-configure-options.md#serialize-properties-of-derived-classes) but not polymorphic deserialization.
 
 To support polymorphic deserialization, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 
@@ -430,7 +430,7 @@ If you own the target type, the best workaround is to make the property in quest
 
 Another workaround is to make a converter for the type, such as the following example that handles null values for `DateTimeOffset` types:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DateTimeOffsetNullHandlingConverter":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DateTimeOffsetNullHandlingConverter.cs":::
 
 Register this custom converter by [using an attribute on the property](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-property) or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
@@ -455,7 +455,7 @@ After deserialization, the `Date` property has 1/1/0001 (`default(DateTimeOffset
 `Newtonsoft.Json` can deserialize to immutable classes and structs because it can use constructors that have parameters.
 
 ::: zone pivot="dotnet-5-0"
-In <xref:System.Text.Json>, use the [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute) attribute to specify use of a parameterized constructor. Records in C# 9 are also immutable and are supported as deserialization targets. For more information, see [Immutable types and Records](system-text-json-how-to.md#immutable-types-and-records).
+In <xref:System.Text.Json>, use the [[JsonConstructor]](xref:System.Text.Json.Serialization.JsonConstructorAttribute) attribute to specify use of a parameterized constructor. Records in C# 9 are also immutable and are supported as deserialization targets. For more information, see [Immutable types and Records](system-text-json-configure-options.md#immutable-types-and-records).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -467,7 +467,7 @@ Here's an immutable struct with multiple constructor parameters:
 
 And here's a converter that serializes and deserializes this struct:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ImmutablePointConverter":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ImmutablePointConverter.cs":::
 
 Register this custom converter by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
@@ -493,7 +493,7 @@ The following JSON is deserialized without error:
 
 To make deserialization fail if no `Date` property is in the JSON, implement a custom converter. The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverter":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverter.cs":::
 
 Register this custom converter by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> collection.
 
@@ -513,7 +513,7 @@ Here are the `WeatherForecast*` types:
 
 And here is the converter:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverterForAttributeRegistration":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverterForAttributeRegistration.cs":::
 
 The required properties converter would require additional logic if you need to handle attributes such as [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) or different options, such as custom encoders. Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
 
@@ -541,7 +541,7 @@ In <xref:System.Text.Json>, the only format that has built-in support is ISO 860
 
 In <xref:System.Text.Json>, you can simulate callbacks by writing a custom converter. The following example shows a custom converter for a POCO. The converter includes code that displays a message at each point that corresponds to a `Newtonsoft.Json` callback.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastCallbacksConverter":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecastCallbacksConverter.cs":::
 
 Register this custom converter by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
@@ -557,7 +557,7 @@ For more information about custom converters that recursively call `Serialize` o
 `Newtonsoft.Json` can use private and internal property setters and getters via the `JsonProperty` attribute.
 
 ::: zone pivot="dotnet-5-0"
-<xref:System.Text.Json> supports private and internal property setters and getters via the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. For sample code, see [Non-public property accessors](system-text-json-how-to.md#non-public-property-accessors).
+<xref:System.Text.Json> supports private and internal property setters and getters via the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute. For sample code, see [Non-public property accessors](system-text-json-configure-options.md#non-public-property-accessors).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -586,7 +586,7 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 ### MissingMemberHandling
 
-`Newtonsoft.Json` can be configured to throw exceptions during deserialization if the JSON includes properties that are missing in the target type. <xref:System.Text.Json> ignores extra properties in the JSON, except when you use the [[JsonExtensionData] attribute](system-text-json-how-to.md#handle-overflow-json). There's no workaround for the missing member feature.
+`Newtonsoft.Json` can be configured to throw exceptions during deserialization if the JSON includes properties that are missing in the target type. <xref:System.Text.Json> ignores extra properties in the JSON, except when you use the [[JsonExtensionData] attribute](system-text-json-configure-options.md#handle-overflow-json). There's no workaround for the missing member feature.
 
 ### TraceWriter
 
@@ -646,7 +646,7 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 * Use the built-in enumerators (<xref:System.Text.Json.JsonElement.EnumerateArray%2A> and <xref:System.Text.Json.JsonElement.EnumerateObject%2A>) rather than doing your own indexing or loops.
 * Don't do a sequential search on the whole `JsonDocument` through every property by using `RootElement`. Instead, search on nested JSON objects based on the known structure of the JSON data. For example, if you're looking for a `Grade` property in `Student` objects, loop through the `Student` objects and get the value of `Grade` for each, rather than searching through all `JsonElement` objects looking for `Grade` properties. Doing the latter will result in unnecessary passes over the same data.
 
-For a code example, see [Use JsonDocument for access to data](system-text-json-how-to.md#use-jsondocument-for-access-to-data).
+For a code example, see [Use JsonDocument for access to data](system-text-json-customize-serialization.md#use-jsondocument-for-access-to-data).
 
 ## Utf8JsonReader compared to JsonTextReader
 
@@ -660,7 +660,7 @@ Because the `Utf8JsonReader` type is a *ref struct*, it has [certain limitations
 
 ### Read UTF-8 text
 
-To achieve the best possible performance while using the `Utf8JsonReader`, read JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For a code example, see [Filter data using Utf8JsonReader](system-text-json-how-to.md#filter-data-using-utf8jsonreader).
+To achieve the best possible performance while using the `Utf8JsonReader`, read JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For a code example, see [Filter data using Utf8JsonReader](system-text-json-customize-serialization.md#filter-data-using-utf8jsonreader).
 
 ### Read with a Stream or PipeReader
 
@@ -670,7 +670,7 @@ For synchronous reading, you could read the JSON payload until the end of the st
 
 Since the `Utf8JsonReader` considers the input to be JSON text, a UTF-8 byte order mark (BOM) is considered invalid JSON. The caller needs to filter that out before passing the data to the reader.
 
-For code examples, see [Use Utf8JsonReader](system-text-json-how-to.md#use-utf8jsonreader).
+For code examples, see [Use Utf8JsonReader](system-text-json-customize-serialization.md#use-utf8jsonreader).
 
 ### Read with multi-segment ReadOnlySequence
 
@@ -696,7 +696,7 @@ Don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> to do byte-by-byte
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/ValueTextEqualsExample.cs" id="DefineUtf8Var":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ValueTextEqualsExample.cs" id="UseUtf8Var&highlight=11":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ValueTextEqualsExample.cs" id="UseUtf8Var" highlight="9":::
 
 ### Read null values into nullable value types
 

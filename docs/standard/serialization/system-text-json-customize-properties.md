@@ -22,7 +22,7 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](system-text-json-converters-how-to.md).
 
-### Customize individual property names
+## Customize individual property names
 
 To set the name of individual properties, use the [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attribute.
 
@@ -44,7 +44,7 @@ The property name set by this attribute:
 * Applies in both directions, for serialization and deserialization.
 * Takes precedence over property naming policies.
 
-### Use camel case for all JSON property names
+## Use camel case for all JSON property names
 
 To use camel case for all JSON property names, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
 
@@ -68,7 +68,7 @@ The camel case property naming policy:
 * Applies to serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not camel case.
 
-### Use a custom JSON property naming policy
+## Use a custom JSON property naming policy
 
 To use a custom JSON property naming policy, create a class that derives from <xref:System.Text.Json.JsonNamingPolicy> and override the <xref:System.Text.Json.JsonNamingPolicy.ConvertName%2A> method, as shown in the following example:
 
@@ -96,7 +96,7 @@ The JSON property naming policy:
 * Applies to serialization and deserialization.
 * Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not upper case.
 
-### Camel case dictionary keys
+## Camel case dictionary keys
 
 If a property of an object to be serialized is of type `Dictionary<string,TValue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
 
@@ -118,7 +118,7 @@ Serializing an object with a dictionary named `TemperatureRanges` that has key-v
 
 The camel case naming policy for dictionary keys applies to serialization only. If you deserialize a dictionary, the keys will match the JSON file even if you specify `JsonNamingPolicy.CamelCase` for the `DictionaryKeyPolicy`.
 
-### Enums as strings
+## Enums as strings
 
 By default, enums are serialized as numbers. To serialize enum names as strings, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter>.
 

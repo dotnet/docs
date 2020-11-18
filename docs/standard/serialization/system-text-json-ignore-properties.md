@@ -30,7 +30,7 @@ When serializing C# objects to JavaScript Object Notation (JSON), by default, al
 * [All null-value properties](#ignore-all-null-value-properties)
 ::: zone-end
 
-### Ignore individual properties
+## Ignore individual properties
 
 To ignore individual properties, use the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute.
 
@@ -58,7 +58,7 @@ The following example illustrates use of the [[JsonIgnore]](xref:System.Text.Jso
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="10,13,16":::
 ::: zone-end
 
-### Ignore all read-only properties
+## Ignore all read-only properties
 
 A property is read-only if it contains a public getter but not a public setter. To ignore all read-only properties when serializing, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> to `true`, as shown in the following example:
 
@@ -82,7 +82,7 @@ This option applies only to serialization. During deserialization, read-only pro
 This option applies only to properties. To ignore read-only fields when [serializing fields](system-text-json-how-to.md#include-fields), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
 ::: zone-end
 
-### Ignore all null-value properties
+## Ignore all null-value properties
 
 ::: zone pivot="dotnet-5-0"
 To ignore all null-value properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull>, as shown in the following example:
@@ -113,7 +113,7 @@ Here's an example object to serialize and JSON output:
 
 ::: zone-end
 
-### Ignore all default-value properties
+## Ignore all default-value properties
 
 ::: zone pivot="dotnet-5-0"
 To prevent serialization of default values in value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:

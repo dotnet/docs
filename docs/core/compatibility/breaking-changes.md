@@ -5,7 +5,7 @@ ms.date: 11/16/2020
 ---
 # Breaking changes reference overview
 
-Use this reference section to find breaking changes that might apply to you if you are upgrading your app to a newer version of .NET. You can navigate the table of contents either by .NET version or by technology area.
+Use this reference section to find breaking changes that might apply to you if you're upgrading your app to a newer version of .NET. You can navigate the table of contents either by .NET version or by technology area.
 
 ## GitHub issues and announcements
 

@@ -204,7 +204,7 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Additional resources
 
-* [Develop libraries with the .NET Core CLI](libraries.md)
+* [Develop libraries with the .NET CLI](libraries.md)
 * [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
 
 ## Next steps
@@ -212,4 +212,4 @@ Initially, the new console app project doesn't have access to the class library.
 In this tutorial, you created a solution, added a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
 
 > [!div class="nextstepaction"]
-> [Test a .NET Standard library with .NET Core using Visual Studio Code](testing-library-with-visual-studio-code.md)
+> [Test a .NET Standard library with .NET using Visual Studio Code](testing-library-with-visual-studio-code.md)

@@ -99,6 +99,8 @@ The following example shows a comparison of `null` checks:
 
 [!code-csharp[is#11](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern11.cs#11)]
 
+The expression `x is null` is computed differently for reference types and nullable value types. For nullable value types, it uses <xref:System.Nullable%601.HasValue?displayProperty=nameWithType>. For reference types, it uses `x == null`.
+
 ### var pattern
 
 A pattern match with the `var` pattern always succeeds. Its syntax is:

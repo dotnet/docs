@@ -414,6 +414,8 @@ items:
         href: ../core/diagnostics/dotnet-sos.md
     - name: .NET Core diagnostics tutorials
       items:
+      - name: Collect performance trace in Linux with PerfCollect
+        href: ../core/diagnostics/trace-perfcollect-lttng.md
       - name: Get perf metrics with EventCounters
         href: ../core/diagnostics/event-counter-perf.md
       - name: Debug a memory leak

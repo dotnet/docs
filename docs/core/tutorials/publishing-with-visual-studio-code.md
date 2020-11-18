@@ -1,7 +1,7 @@
 ---
 title: Publish a .NET Core console application using Visual Studio Code
 description: Publishing creates the set of files that are needed to run a .NET Core application.
-ms.date: 07/04/2020
+ms.date: 11/17/2020
 ---
 # Tutorial: Publish a .NET Core console application using Visual Studio Code
 
@@ -50,7 +50,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Select the **Explorer** in the left navigation bar.
 
-1. Expand *bin/Release/netcoreapp3.1/publish*.
+1. Expand *bin/Release/net5.0/publish*.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output.png" alt-text="Explorer showing published files":::
 

@@ -41,10 +41,10 @@ ASP.NET Core 5.0 is based on .NET 5.0 but retains the name "Core" to avoid confu
 
 There are no plans to port the following technologies from .NET Framework to .NET 5.0, but there are alternatives in .NET 5.0:
 
-| Technology                             | Recommended alternative                                                                         |
-|----------------------------------------|-------------------------------------------------------------------------------------------------|
-| Web Forms                              | ASP.NET Core [Blazor](/aspnet/core/blazor) or [Razor Pages](/aspnet/core/tutorials/razor-pages) |
-| Windows Workflow (WF)                  | [Open-source CoreWF](https://github.com/UiPath-Open/corewf)                                     |
+| Technology            | Recommended alternative                                                                         |
+|-----------------------|-------------------------------------------------------------------------------------------------|
+| Web Forms             | ASP.NET Core [Blazor](/aspnet/core/blazor) or [Razor Pages](/aspnet/core/tutorials/razor-pages) |
+| Windows Workflow (WF) | [Open-source CoreWF](https://github.com/UiPath-Open/corewf)                                     |
 
 ### Windows Communication Foundation
 

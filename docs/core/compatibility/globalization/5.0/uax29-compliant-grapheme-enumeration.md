@@ -1,10 +1,15 @@
-### StringInfo and TextElementEnumerator are now UAX29-compliant
+---
+title: "Breaking change: StringInfo and TextElementEnumerator are now UAX29-compliant"
+description: Learn about the globalization breaking change in .NET 5.0 where StringInfo and TextElementEnumerator process grapheme clusters according to the latest version of the Unicode Standard.
+ms.date: 04/07/2020
+---
+# StringInfo and TextElementEnumerator are now UAX29-compliant
 
 Prior to this change, <xref:System.Globalization.StringInfo?displayProperty=fullName> and <xref:System.Globalization.TextElementEnumerator?displayProperty=fullName> didn't properly handle all grapheme clusters. Some graphemes were split into their constituent components instead of being kept together. Now, <xref:System.Globalization.StringInfo> and <xref:System.Globalization.TextElementEnumerator> process grapheme clusters according to the latest version of the Unicode Standard.
 
 In addition, the <xref:Microsoft.VisualBasic.Strings.StrReverse%2A?displayProperty=fullName> method, which reverses the characters in a string in Visual Basic, now also follows the Unicode standard for grapheme clusters.
 
-#### Change description
+## Change description
 
 A [grapheme](https://www.unicode.org/glossary/#grapheme) or [extended grapheme cluster](https://www.unicode.org/glossary/#extended_grapheme_cluster) is a single user-perceived character that may be made up of multiple Unicode code points. For example, the string containing the Thai character "kam" (:::no-loc text="กำ":::) consists of the following two characters:
 
@@ -79,19 +84,15 @@ In addition, starting in .NET 5, the <xref:Microsoft.VisualBasic.Strings.StrReve
 
 These changes are part of a wider set of Unicode and UTF-8 improvements in .NET, including an extended grapheme cluster enumeration API to complement the Unicode scalar-value enumeration APIs that were introduced with the <xref:System.Text.Rune?displayProperty=fullName> type in .NET Core 3.0.
 
-#### Version introduced
+## Version introduced
 
-.NET 5.0 Preview 1
+.NET 5.0
 
-#### Recommended action
+## Recommended action
 
 You don't need to take any action. Your apps will automatically behave in a more standards-compliant manner in a variety of globalization-related scenarios.
 
-#### Category
-
-Globalization
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Globalization.StringInfo?displayProperty=fullName>
 - <xref:System.Globalization.TextElementEnumerator?displayProperty=fullName>
@@ -99,10 +100,14 @@ Globalization
 
 <!--
 
-#### Affected APIs
+### Affected APIs
 
 - `T:System.Globalization.StringInfo`
 - `T:System.Globalization.TextElementEnumerator`
 - `Overload:Microsoft.VisualBasic.Strings.StrReverse`
+
+### Category
+
+Globalization
 
 -->

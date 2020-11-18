@@ -57,6 +57,14 @@
           href: interop/5.0/casting-rcw-to-inspectable-interface-throws-exception.md
         - name: No A/W suffix probing on non-Windows platforms
           href: interop/5.0/function-suffix-pinvoke.md
+      - name: Globalization
+        items:
+        - name: Use ICU libraries on Windows
+          href: globalization/5.0/icu-globalization-api.md
+        - name: StringInfo and TextElementEnumerator are UAX29-compliant
+          href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
+        - name: Unicode category changed for Latin-1 characters
+          href: globalization/5.0/unicode-categories-for-latin1-chars.md
       - name: (This file will eventually go away)
         href: 3.1-5.0.md
     - name: .NET Core 3.1
@@ -110,7 +118,17 @@
     - name: Entity Framework Core
       href: /ef/core/what-is-new/ef-core-3.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Globalization
-      href: globalization.md
+      items:
+      - name: .NET 5.0
+        items:
+        - name: Use ICU libraries on Windows
+          href: globalization/5.0/icu-globalization-api.md
+        - name: StringInfo and TextElementEnumerator are UAX29-compliant
+          href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
+        - name: Unicode category changed for Latin-1 characters
+          href: globalization/5.0/unicode-categories-for-latin1-chars.md
+      - name: .NET 3.0
+        href: globalization.md
     - name: Interop
       items:
       - name: .NET 5.0

@@ -53,7 +53,7 @@ namespace PreserveReferences
 //
 //Tyler serialized:
 //{
-//    "$id": "1",
+//  "$id": "1",
 //  "Name": "Tyler Stein",
 //  "Manager": null,
 //  "DirectReports": {

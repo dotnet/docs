@@ -269,10 +269,10 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 
 <xref:System.Text.Json> provides the following ways to ignore properties or fields while serializing:
 
-* The [[JsonIgnore]](system-text-json-how-to.md#ignore-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
-* The [IgnoreReadOnlyProperties](system-text-json-how-to.md#ignore-all-read-only-properties) global option lets you ignore all read-only properties.
+* The [[JsonIgnore]](system-text-json-ignore-properties.md#ignore-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
+* The [IgnoreReadOnlyProperties](system-text-json-ignore-properties.md#ignore-all-read-only-properties) global option lets you ignore all read-only properties.
 * If you're [Including fields](system-text-json-how-to.md#include-fields), the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global option lets you ignore all read-only fields.
-* The `DefaultIgnoreCondition` global option lets you [ignore all value type properties that have default values](system-text-json-how-to.md#ignore-all-default-value-properties), or [ignore all reference type properties that have null values](system-text-json-how-to.md#ignore-all-null-value-properties).
+* The `DefaultIgnoreCondition` global option lets you [ignore all value type properties that have default values](system-text-json-ignore-properties.md#ignore-all-default-value-properties), or [ignore all reference type properties that have null values](system-text-json-ignore-properties.md#ignore-all-null-value-properties).
 
 ::: zone-end
 
@@ -280,9 +280,9 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 
 <xref:System.Text.Json> in .NET Core 3.1 provides the following ways to ignore properties while serializing:
 
-* The [[JsonIgnore]](system-text-json-how-to.md#ignore-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
-* The [IgnoreNullValues](system-text-json-how-to.md#ignore-all-null-value-properties) global option lets you ignore all null-value properties.
-* The [IgnoreReadOnlyProperties](system-text-json-how-to.md#ignore-all-read-only-properties) global option lets you ignore all read-only properties.
+* The [[JsonIgnore]](system-text-json-ignore-properties.md#ignore-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
+* The [IgnoreNullValues](system-text-json-ignore-properties.md#ignore-all-null-value-properties) global option lets you ignore all null-value properties.
+* The [IgnoreReadOnlyProperties](system-text-json-ignore-properties.md#ignore-all-read-only-properties) global option lets you ignore all read-only properties.
 ::: zone-end
 
 These options **don't** let you:
@@ -751,7 +751,7 @@ The following sections explain recommended programming patterns for using `Utf8J
 
 To achieve the best possible performance while using the `Utf8JsonWriter`, write JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. Use <xref:System.Text.Json.JsonEncodedText> to cache and pre-encode known string property names and values as statics, and pass those to the writer, rather than using UTF-16 string literals. This is faster than caching and using UTF-8 byte arrays.
 
-This approach also works if you need to do custom escaping. `System.Text.Json` doesn't let you disable escaping while writing a string. However, you could pass in your own custom <xref:System.Text.Encodings.Web.JavaScriptEncoder> as an option to the writer, or create your own `JsonEncodedText` that uses your `JavascriptEncoder` to do the escaping, and then write the `JsonEncodedText` instead of the string. For more information, see [Customize character encoding](system-text-json-how-to.md#customize-character-encoding).
+This approach also works if you need to do custom escaping. `System.Text.Json` doesn't let you disable escaping while writing a string. However, you could pass in your own custom <xref:System.Text.Encodings.Web.JavaScriptEncoder> as an option to the writer, or create your own `JsonEncodedText` that uses your `JavascriptEncoder` to do the escaping, and then write the `JsonEncodedText` instead of the string. For more information, see [Customize character encoding](system-text-json-character-encoding.md).
 
 ### Write raw values
 
@@ -764,7 +764,7 @@ doc.WriteTo(writer);
 
 ### Customize character escaping
 
-The [StringEscapeHandling](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_StringEscapeHandling.htm) setting of `JsonTextWriter` offers options to escape all non-ASCII characters **or** HTML characters. By default, `Utf8JsonWriter` escapes all non-ASCII **and** HTML characters. This escaping is done for defense-in-depth security reasons. To specify a different escaping policy, create a <xref:System.Text.Encodings.Web.JavaScriptEncoder> and set <xref:System.Text.Json.JsonWriterOptions.Encoder?displayProperty=nameWithType>. For more information, see [Customize character encoding](system-text-json-how-to.md#customize-character-encoding).
+The [StringEscapeHandling](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_StringEscapeHandling.htm) setting of `JsonTextWriter` offers options to escape all non-ASCII characters **or** HTML characters. By default, `Utf8JsonWriter` escapes all non-ASCII **and** HTML characters. This escaping is done for defense-in-depth security reasons. To specify a different escaping policy, create a <xref:System.Text.Encodings.Web.JavaScriptEncoder> and set <xref:System.Text.Json.JsonWriterOptions.Encoder?displayProperty=nameWithType>. For more information, see [Customize character encoding](system-text-json-character-encoding.md).
 
 ### Customize JSON format
 

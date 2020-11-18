@@ -1,27 +1,34 @@
 ---
 title: dotnet-stack tool - .NET Core
 description: Installing and using the dotnet-stack command-line tool.
-ms.date: 11/21/2019
+ms.date: 11/17/2020
 ---
-# dotnet-stack performance analysis utility
+# Inspect managed stack traces (dotnet-stack)
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
-## Install dotnet-stack
+## Install
 
-### Option 1 - Install as dotnet global tool:
+There are two ways to download and install `dotnet-stack`:
 
-Install `dotnet-stack` [NuGet package](https://www.nuget.org/packages/dotnet-stack) with the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+- **dotnet global tool:**
 
-```dotnetcli
-dotnet tool install --global dotnet-stack
-```
+  To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-stack), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
-### Option 2 - Direct download:
+  ```dotnetcli
+  dotnet tool install --global dotnet-stack
+  ```
 
-- Win ([x86](https://aka.ms/dotnet-stack/win-x86) | [x64](https://aka.ms/dotnet-stack/win-x64) | [arm](https://aka.ms/dotnet-stack/win-arm) | [arm-x64](https://aka.ms/dotnet-stack/win-arm64))
-- macOS ([x64](https://aka.ms/dotnet-stack/osx-x64))
-- Linux ([x64](https://aka.ms/dotnet-stack/linux-x64) | [arm](https://aka.ms/dotnet-stack/linux-arm) | [arm64](https://aka.ms/dotnet-stack/linux-arm64) | [musl-x64](https://aka.ms/dotnet-stack/linux-musl-x64) | [musl-arm64](https://aka.ms/dotnet-stack/linux-musl-arm64))
+- **Direct download:**
+
+  Download the tool executable that matches your platform:
+
+  | OS  | Platform |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-stack/win-x86) \| [x64](https://aka.ms/dotnet-stack/win-x64) \| [arm](https://aka.ms/dotnet-stack/win-arm) \| [arm-x64](https://aka.ms/dotnet-stack/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-stack/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-stack/linux-x64) \| [arm](https://aka.ms/dotnet-stack/linux-arm) \| [arm64](https://aka.ms/dotnet-stack/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-stack/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-stack/linux-musl-arm64) |
+
 
 ## Synopsis
 
@@ -34,9 +41,8 @@ dotnet-stack [-h, --help] [--version] <command>
 The `dotnet-stack` tool:
 
 * Is a cross-platform .NET Core tool.
-* Reports the managed stacks for all threads in .NET process.
+* Captures and prints the managed stacks for all threads in the target .NET process.
 * Is built on [`EventPipe`](./eventpipe.md) of the .NET Core runtime.
-* Delivers the same experience on Windows, Linux, or macOS.
 
 ## Options
 

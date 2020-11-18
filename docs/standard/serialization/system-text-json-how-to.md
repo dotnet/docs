@@ -33,7 +33,8 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 ```
 
-Attributes from the <xref:System.Runtime.Serialization> namespace aren't supported in `System.Text.Json`.
+> [!IMPORTANT]
+> Attributes from the <xref:System.Runtime.Serialization> namespace aren't supported in `System.Text.Json`.
 
 ## How to write .NET objects as JSON (serialize)
 
@@ -182,7 +183,7 @@ To deserialize from a file by using asynchronous code, call the <xref:System.Tex
 
 ### Deserialize from UTF-8
 
-To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> overload that takes a `Utf8JsonReader` or a `ReadOnlySpan<byte>`, as shown in the following examples. The examples assume the JSON is in a byte array named jsonUtf8Bytes.
+To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> overload that takes a `ReadOnlySpan<byte>` or a `Utf8JsonReader`, as shown in the following examples. The examples assume the JSON is in a byte array named jsonUtf8Bytes.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs" id="Deserialize1":::
 

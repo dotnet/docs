@@ -1598,26 +1598,26 @@ items:
       href: ../standard/serialization/index.md
     - name: JSON serialization
       items:
-      - name: JSON serialization overview
+      - name: Overview
         href: ../standard/serialization/system-text-json-overview.md
         displayName: json serialization
       - name: How to serialize and deserialize JSON
         href: ../standard/serialization/system-text-json-how-to.md
       - name: JSON serialization basics
         items:
-        - name: How to configure serialization options
+        - name: Configure serialization options
           href: ../standard/serialization/system-text-json-configure-options.md
-        - name: How to ignore properties
+        - name: Ignore properties
           href: ../standard/serialization/system-text-json-ignore-properties.md
-        - name: How to customize character encoding
+        - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: How to customize property names
+        - name: Customize property names
           href: ../standard/serialization/system-text-json-customize-properties.md
       - name: Advanced serialization
         items:
-        - name: How to write custom serializers and deserializers
+        - name: Write custom serializers and deserializers
           href: ../standard/serialization/system-text-json-customize-serialization.md
-        - name: How to write custom converters
+        - name: Write custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
       - name: How to migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md

@@ -14,6 +14,7 @@ namespace ImmutableTypes
         public Forecast(DateTime date, int temperatureC, string summary) =>
             (Date, TemperatureC, Summary) = (date, temperatureC, summary);
     }
+
     public class Program
     {
         public static void Main()

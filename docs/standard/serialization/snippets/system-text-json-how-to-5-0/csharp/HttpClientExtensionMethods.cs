@@ -17,7 +17,7 @@ namespace HttpClientExtensionMethods
     {
         public static async Task Main()
         {
-            HttpClient client = new()
+            using HttpClient client = new()
             {
                 BaseAddress = new Uri("https://jsonplaceholder.typicode.com")
             };

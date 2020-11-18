@@ -192,12 +192,12 @@ When you deserialize the JSON shown earlier into this sample type, the extra dat
 
 | Property | Value | Notes |
 |--|--|--|
-| `Date` | `8/1/2019 12:00:00 AM -07:00` |  |
+| `Date` | `"8/1/2019 12:00:00 AM -07:00"` |  |
 | `TemperatureCelsius` | `0` | Case-sensitive mismatch (`temperatureCelsius` in the JSON), so the property isn't set. |
-| `Summary` | `Hot` |  |
+| `Summary` | `"Hot"` |  |
 | `ExtensionData` | `temperatureCelsius: 25` | Since the case didn't match, this JSON property is an extra and becomes a key-value pair in the dictionary. |
-|  | DatesAvailable:<br>  8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
-|  | SummaryWords:<br>Cool<br>Windy<br>Humid | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
+| `DatesAvailable` | `[ "8/1/2019 12:00:00 AM -07:00", "8/2/2019 12:00:00 AM -07:00" ]` | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
+| `SummaryWords` | `[ "Cool", "Windy", "Humid" ]` | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
 
 When the target object is serialized, the extension data key value pairs become JSON properties just as they were in the incoming JSON:
 
@@ -279,7 +279,7 @@ Instead of:
 
 To serialize numbers in quotes or accept numbers in quotes across the entire input object graph, set <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A?displayProperty=nameWithType> as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs" highlight="27-28":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/QuotedNumbers.cs" highlight="27-29":::
 
 When you use `System.Text.Json` indirectly through ASP.NET Core, quoted numbers are allowed when deserializing because ASP.NET Core specifies [web default options](xref:System.Text.Json.JsonSerializerDefaults.Web).
 
@@ -363,7 +363,7 @@ Serializing and deserializing JSON payloads from the network are common operatio
 
 The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="26,33":::
 
 There are also extension methods for System.Text.Json on [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
 ::: zone-end

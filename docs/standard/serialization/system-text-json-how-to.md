@@ -117,7 +117,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * By default, JSON is minified. You can [pretty-print the JSON](system-text-json-customize-serialization.md#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](system-text-json-customize-properties.md).
 * By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references](system-text-json-configure-options.md#preserve-references-and-handle-circular-references).
-* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](system-text-json-customize-serialization.md#include-fields).
+* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](#include-fields).
 
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
@@ -194,12 +194,12 @@ The following behaviors apply when deserializing JSON:
 
 ::: zone pivot="dotnet-5-0"
 
-* By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
+* By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-configure-options.md#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Non-public constructors are ignored by the serializer.
 * Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](system-text-json-configure-options.md#immutable-types-and-records).
 * By default, enums are supported as numbers. You can [serialize enum names as strings](system-text-json-customize-properties.md#enums-as-strings).
-* By default, fields are ignored. You can [include fields](system-text-json-configure-options.md#include-fields).
+* By default, fields are ignored. You can [include fields](#include-fields).
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-configure-options.md#allow-comments-and-trailing-commas).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
@@ -208,7 +208,7 @@ When you use System.Text.Json indirectly in an ASP.NET Core app, some default be
 
 ::: zone pivot="dotnet-core-3-1"
 
-* By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching). ASP.NET Core apps [specify case-insensitivity by default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
+* By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-configure-options.md#case-insensitive-property-matching). ASP.NET Core apps [specify case-insensitivity by default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * A parameterless constructor, which can be public, internal, or private, is used for deserialization.
 * Deserialization to immutable objects or read-only properties isn't supported.
@@ -245,7 +245,7 @@ Here's an example type to be serialized and pretty-printed JSON output:
 ::: zone pivot="dotnet-5-0"
 Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting or the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to include fields when serializing or deserializing, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="15,17,19,31":::
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="16,18,20,32-35":::
 
 To ignore read-only fields, use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
 ::: zone-end

@@ -1,18 +1,20 @@
 ---
-title: Create a .NET Standard class library using Visual Studio Code
-description: Learn how to create a .NET Standard class library using Visual Studio Code.
-ms.date: 06/08/2020
+title: Create a .NET class library using Visual Studio Code
+description: Learn how to create a .NET class library using Visual Studio Code.
+ms.date: 11/17/2020
 ---
-# Tutorial: Create a .NET Standard library using Visual Studio Code
+# Tutorial: Create a .NET class library using Visual Studio Code
 
 In this tutorial, you create a simple utility library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
 
-A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.0 allows your library to be called by any .NET implementation that supports that version of .NET Standard. When you finish your class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 5, it can be called by any application that targets .NET 5. This tutorial shows how to target .NET 5.
+
+When you create a class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 
 ## Prerequisites
 
 1. [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-2. The [.NET Core 3.1 SDK or later](https://dotnet.microsoft.com/download)
+2. The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download)
 
 ## Create a solution
 
@@ -75,15 +77,15 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
-1. Check to make sure that the library targets the correct version of .NET Standard. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
+1. Check to make sure that the library targets .NET 5. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
-   The `TargetFramework` element shows that the project targets .NET Standard 2.0.
+   The `TargetFramework` element shows that the project targets .NET 5.0.
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
 
      <PropertyGroup>
-       <TargetFramework>netstandard2.0</TargetFramework>
+       <TargetFramework>net5.0</TargetFramework>
      </PropertyGroup>
 
    </Project>

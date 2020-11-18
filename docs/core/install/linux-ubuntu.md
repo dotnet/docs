@@ -48,7 +48,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 ## 20.10 ✔️
 
 > [!IMPORTANT]
-> .NET Core 2.1 is not yet available in the package feed.
+> .NET Core 2.1 isn't yet available in the package feed.
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 

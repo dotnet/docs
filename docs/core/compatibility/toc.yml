@@ -75,6 +75,18 @@
           href: msbuild/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: msbuild/5.0/targetframework-name-change.md
+      - name: Networking
+        items:
+        - name: Cookie path handling conforms to RFC 6265
+          href: networking/5.0/cookie-path-conforms-to-rfc6265.md
+        - name: LocalEndPoint is updated after calling SendToAsync
+          href: networking/5.0/localendpoint-updated-on-sendtoasync.md
+        - name: MulticastOption.Group doesn't accept null
+          href: networking/5.0/multicastoption-group-doesnt-accept-null.md
+        - name: Streams allow successive Begin operations
+          href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
+        - name: WinHttpHandler removed from .NET runtime
+          href: networking/5.0/winhttphandler-removed-from-runtime.md
       - name: (This file will eventually go away)
         href: 3.1-5.0.md
     - name: .NET Core 3.1
@@ -167,7 +179,21 @@
       - name: .NET 3.0
         href: msbuild.md
     - name: Networking
-      href: networking.md
+      items:
+      - name: .NET 5.0
+        items:
+        - name: Cookie path handling conforms to RFC 6265
+          href: networking/5.0/cookie-path-conforms-to-rfc6265.md
+        - name: LocalEndPoint is updated after calling SendToAsync
+          href: networking/5.0/localendpoint-updated-on-sendtoasync.md
+        - name: MulticastOption.Group doesn't accept null
+          href: networking/5.0/multicastoption-group-doesnt-accept-null.md
+        - name: Streams allow successive Begin operations
+          href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
+        - name: WinHttpHandler removed from .NET runtime
+          href: networking/5.0/winhttphandler-removed-from-runtime.md
+      - name: .NET 2.0-3.0
+        href: networking.md
     - name: Serialization
       href: serialization.md
     - name: Visual Basic

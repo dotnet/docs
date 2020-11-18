@@ -1,13 +1,13 @@
 ---
-title: Create a .NET Standard class library using Visual Studio
-description: Learn how to create a .NET Standard class library using Visual Studio.
+title: Create a .NET class library using Visual Studio
+description: Learn how to create a .NET class library using Visual Studio.
 ms.date: 08/07/2020
 dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet,contperfq1"
 ---
-# Tutorial: Create a .NET Standard library using Visual Studio
+# Tutorial: Create a .NET class library using Visual Studio
 
 In this tutorial, you create a simple class library that contains a single string-handling method.
 
@@ -17,7 +17,7 @@ When you finish your class library, you can distribute it as a NuGet package or 
 
 ## Prerequisites
 
-- [Visual Studio 2019 version 16.6 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. .NET Core 3.1 SDK is automatically installed when you select this workload.
+- [Visual Studio 2019 version 16.6 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. The .NET 5.0 SDK is automatically installed when you select this workload.
 
 ## Create a solution
 
@@ -37,7 +37,7 @@ To create the blank solution:
 
 ## Create a class library project
 
-1. Add a new .NET Standard class library project named "StringLibrary" to the solution.
+1. Add a new .NET class library project named "StringLibrary" to the solution.
 
    1. Right-click on the solution in **Solution Explorer** and select **Add** > **New Project**.
 
@@ -45,7 +45,7 @@ To create the blank solution:
 
    1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box. Then, choose **Create**.
 
-1. Check to make sure that the library targets the correct version of .NET Standard. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET Standard 2.0.
+1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 5.0.
 
    ![Project properties for the class library](./media/library-with-visual-studio/library-project-properties.png)
 
@@ -70,7 +70,7 @@ To create the blank solution:
 
 Add a console application that uses the class library. The app will prompt the user to enter a string and report whether the string begins with an uppercase character.
 
-1. Add a new .NET Core console application named "ShowCase" to the solution.
+1. Add a new .NET console application named "ShowCase" to the solution.
 
    1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
 
@@ -117,15 +117,14 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Additional resources
 
-* [Develop libraries with the .NET Core CLI](libraries.md)
-* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
+* [Develop libraries with the .NET CLI](libraries.md)
 
 ## Next steps
 
 In this tutorial, you created a class library. In the next tutorial, you learn how to unit test the class library.
 
 > [!div class="nextstepaction"]
-> [Unit test a .NET Standard library using Visual Studio](testing-library-with-visual-studio.md)
+> [Unit test a .NET class library using Visual Studio](testing-library-with-visual-studio.md)
 
 Or you can skip automated unit testing and learn how to share the library by creating a NuGet package:
 
@@ -135,4 +134,4 @@ Or you can skip automated unit testing and learn how to share the library by cre
 Or learn how to publish a console app. If you publish the console app from the solution you created in this tutorial, the class library goes with it as a *.dll* file.
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application using Visual Studio](publishing-with-visual-studio.md)
+> [Publish a .NET console application using Visual Studio](publishing-with-visual-studio.md)

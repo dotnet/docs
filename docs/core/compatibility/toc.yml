@@ -65,6 +65,16 @@
           href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
         - name: Unicode category changed for Latin-1 characters
           href: globalization/5.0/unicode-categories-for-latin1-chars.md
+      - name: MSBuild
+        items:
+        - name: Directory.Packages.props files imported by default
+          href: msbuild/5.0/directory-packages-props-imported-by-default.md
+        - name: NETCOREAPP3_1 preprocessor symbol not defined
+          href: msbuild/5.0/netcoreapp3_1-preprocessor-symbol-not-defined.md
+        - name: PublishDepsFilePath behavior change
+          href: msbuild/5.0/publishdepsfilepath-behavior-change.md
+        - name: TargetFramework change from netcoreapp to net
+          href: msbuild/5.0/targetframework-name-change.md
       - name: (This file will eventually go away)
         href: 3.1-5.0.md
     - name: .NET Core 3.1
@@ -142,7 +152,20 @@
       - name: .NET Core 2.1-3.0
         href: interop.md
     - name: MSBuild
-      href: msbuild.md
+      items:
+      - name: .NET 5.0
+        items:
+        - name: Directory.Packages.props files imported by default
+          href: msbuild/5.0/directory-packages-props-imported-by-default.md
+        - name: NETCOREAPP3_1 preprocessor symbol not defined
+          href: msbuild/5.0/netcoreapp3_1-preprocessor-symbol-not-defined.md
+        - name: PublishDepsFilePath behavior change
+          href: msbuild/5.0/publishdepsfilepath-behavior-change.md
+        - name: TargetFramework change from netcoreapp to net
+          href: msbuild/5.0/targetframework-name-change.md
+      - name: (This file will eventually go away)
+      - name: .NET 3.0
+        href: msbuild.md
     - name: Networking
       href: networking.md
     - name: Serialization

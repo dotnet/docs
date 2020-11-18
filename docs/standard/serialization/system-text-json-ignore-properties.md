@@ -130,8 +130,7 @@ There is no built-in way to prevent serialization of properties with value type 
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to customize property names when serializing JSON](system-text-json-customize-properties.md)
-* [How to write custom converters](system-text-json-converters-how-to.md)
-* [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
+* [How to configure serialization options](system-text-json-configure-options.md)
+* [How to customize character encoding](system-text-json-character-encoding.md)
+* [How to customize property names](system-text-json-customize-properties.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

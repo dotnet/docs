@@ -463,7 +463,7 @@ In <xref:System.Text.Json>, use the [[JsonConstructor]](xref:System.Text.Json.Se
 
 Here's an immutable struct with multiple constructor parameters:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ImmutablePoint.cs#ImmutablePoint)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ImmutablePoint.cs" id="ImmutablePoint":::
 
 And here's a converter that serializes and deserializes this struct:
 

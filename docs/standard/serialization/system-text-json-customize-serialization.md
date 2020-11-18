@@ -77,7 +77,7 @@ The preceding code assumes that the `jsonUtf8` variable is a byte array that con
 
 The following example shows how to synchronously read a file, and search for a value.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderFromFile.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderFromFile.cs":::
 
 For an asynchronous version of this example, see [.NET samples JSON project](https://github.com/dotnet/samples/blob/18e31a5f1abd4f347bf96bfdc3e40e2cfb36e319/core/json/Program.cs).
 

@@ -157,8 +157,7 @@ Enum string names can be deserialized as well, as shown in the following example
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to write custom converters](system-text-json-converters-how-to.md)
-* [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
+* [How to configure serialization options](system-text-json-configure-options.md)
+* [How to ignore properties](system-text-json-ignore-properties.md)
+* [How to customize character encoding](system-text-json-character-encoding.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
-<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)-->

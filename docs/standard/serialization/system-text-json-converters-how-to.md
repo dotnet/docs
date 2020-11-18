@@ -44,7 +44,7 @@ There are two patterns for creating a custom converter: the basic pattern and th
 
 * <xref:System.Collections.Generic.Dictionary%602>
 * <xref:System.Enum>
-* <xref:System.Collections.List%601>
+* <xref:System.Collections.Generic.List%601>
 
 Some examples of types that can be handled by the basic pattern include:
 
@@ -273,7 +273,7 @@ The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e
 
 ### Support polymorphic deserialization
 
-Built-in features provide a limited range of [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) but no support for deserialization at all. Deserialization requires a custom converter.
+Built-in features provide a limited range of [polymorphic serialization](system-text-json-configure-options.md#serialize-properties-of-derived-classes) but no support for deserialization at all. Deserialization requires a custom converter.
 
 Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at run time. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 
@@ -330,7 +330,7 @@ The following code registers the converter:
 
 By default, the serializer handles null values as follows:
 
-* For reference types and `Nullable<T>` types:
+* For reference types and <xref:System.Nullable%601> types:
 
   * It does not pass `null` to custom converters on serialization.
   * It does not pass `JsonTokenType.Null` to custom converters on deserialization.

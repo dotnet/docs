@@ -192,10 +192,10 @@ When you deserialize the JSON shown earlier into this sample type, the extra dat
 
 | Property | Value | Notes |
 |--|--|--|
-| Date | 8/1/2019 12:00:00 AM -07:00 |  |
-| TemperatureCelsius | 0 | Case-sensitive mismatch (`temperatureCelsius` in the JSON), so the property isn't set. |
-| Summary | Hot |  |
-| ExtensionData | temperatureCelsius: 25 | Since the case didn't match, this JSON property is an extra and becomes a key-value pair in the dictionary. |
+| `Date` | `8/1/2019 12:00:00 AM -07:00` |  |
+| `TemperatureCelsius` | `0` | Case-sensitive mismatch (`temperatureCelsius` in the JSON), so the property isn't set. |
+| `Summary` | `Hot` |  |
+| `ExtensionData` | `temperatureCelsius: 25` | Since the case didn't match, this JSON property is an extra and becomes a key-value pair in the dictionary. |
 |  | DatesAvailable:<br>  8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
 |  | SummaryWords:<br>Cool<br>Windy<br>Humid | Extra property from the JSON becomes a key-value pair, with an array as the value object. |
 

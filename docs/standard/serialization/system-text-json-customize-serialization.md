@@ -1,10 +1,8 @@
 ---
-title: "How to serialize and deserialize JSON using C# - .NET"
-description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 11/13/2020
-ms.custom: contperfq2
+title: How to write custom serializers and deserializers for JSON
+description: "Learn how to write custom serializers and deserializers for JSON, using the System.Text.Json namespace."
+ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -12,235 +10,110 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to serialize JSON in .NET
+# How to write custom serializers and deserializers for JSON
 
-This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
+<xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers.
 
-The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
+<xref:System.Text.Json.Utf8JsonWriter?displayProperty=fullName> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
 
-Most of the serialization sample code sets <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to "pretty-print" the JSON (with indentation and whitespace for human readability). For production use, you would typically accept the default value of `false` for this setting.
+<xref:System.Text.Json.JsonDocument?displayProperty=fullName> provides the ability to build a read-only Document Object Model (DOM) by using `Utf8JsonReader`. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
 
-The code examples refer to the following class and variants of it:
+The following sections show how to use these tools for reading and writing JSON.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="SnippetWF":::
+## Use JsonDocument for access to data
 
-## Namespaces
+The following example shows how to use the <xref:System.Text.Json.JsonDocument> class for random access to data in a JSON string:
 
-The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. The code examples shown in this article require `using` directives for one or both of these namespaces:
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/JsonDocumentDataAccess.cs" id="AverageGrades1":::
 
-```csharp
-using System.Text.Json;
-using System.Text.Json.Serialization;
-```
+The preceding code:
 
-Attributes from the <xref:System.Runtime.Serialization> namespace aren't supported in `System.Text.Json`.
+* Assumes the JSON to analyze is in a string named `jsonString`.
+* Calculates an average grade for objects in a `Students` array that have a `Grade` property.
+* Assigns a default grade of 70 for students who don't have a grade.
+* Counts students by incrementing a `count` variable with each iteration. An alternative is to call <xref:System.Text.Json.JsonElement.GetArrayLength%2A>, as shown in the following example:
 
-## Serialize to formatted JSON
+  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/JsonDocumentDataAccess.cs" id="AverageGrades2":::
 
-To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true`:
+Here's an example of the JSON that this code processes:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="SerializePrettyPrint":::
+:::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
 
-Here's an example type to be serialized and pretty-printed JSON output:
+## Use JsonDocument to write JSON
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+The following example shows how to write JSON from a <xref:System.Text.Json.JsonDocument>:
 
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot"
-}
-```
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/JsonDocumentWriteJson.cs" id="Serialize":::
 
-## Include fields
+The preceding code:
 
-::: zone pivot="dotnet-5-0"
-Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProperty=nameWithType> global setting or the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute to include fields when serializing or deserializing, as shown in the following example:
+* Reads a JSON file, loads the data into a `JsonDocument`, and writes formatted (pretty-printed) JSON to a file.
+* Uses <xref:System.Text.Json.JsonDocumentOptions> to specify that comments in the input JSON are allowed but ignored.
+* When finished, calls <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> on the writer. An alternative is to let the writer auto-flush when it's disposed.
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="15,17,19,31":::
+Here's an example of JSON input to be processed by the example code:
 
-To ignore read-only fields, use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
-::: zone-end
+:::code language="json" source="snippets/system-text-json-how-to/csharp/Grades.json":::
 
-::: zone pivot="dotnet-core-3-1"
-Fields are not supported in System.Text.Json in .NET Core 3.1. [Custom converters](system-text-json-converters-how-to.md) can provide this functionality.
-::: zone-end
+The result is the following pretty-printed JSON output:
 
-## Customize character encoding
+:::code language="json" source="snippets/system-text-json-how-to/csharp/GradesPrettyPrint.json":::
 
-By default, the serializer escapes all non-ASCII characters.  That is, it replaces them with `\uxxxx` where `xxxx` is the Unicode code of the character.  For example, if the `Summary` property is set to Cyrillic жарко, the `WeatherForecast` object is serialized as shown in this example:
+## Use Utf8JsonWriter
 
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "\u0436\u0430\u0440\u043A\u043E"
-}
-```
+The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter> class:
 
-### Serialize language character sets
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8WriterToStream.cs" id="Serialize":::
 
-To serialize the character set(s) of one or more languages without escaping, specify [Unicode range(s)](xref:System.Text.Unicode.UnicodeRanges) when creating an instance of <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, as shown in the following example:
+## Use Utf8JsonReader
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
+The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="LanguageSets":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderFromBytes.cs" id="Deserialize":::
 
-This code doesn't escape Cyrillic or Greek characters. If the `Summary` property is set to Cyrillic жарко, the `WeatherForecast` object is serialized as shown in this example:
+The preceding code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "жарко"
-}
-```
+### Filter data using Utf8JsonReader
 
-To serialize all language sets without escaping, use <xref:System.Text.Unicode.UnicodeRanges.All?displayProperty=nameWithType>.
+The following example shows how to synchronously read a file, and search for a value.
 
-### Serialize specific characters
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderFromFile.cs)]
 
-An alternative is to specify individual characters that you want to allow through without being escaped. The following example serializes only the first two characters of жарко:
+For an asynchronous version of this example, see [.NET samples JSON project](https://github.com/dotnet/samples/blob/18e31a5f1abd4f347bf96bfdc3e40e2cfb36e319/core/json/Program.cs).
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
+The preceding code:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="SelectedCharacters":::
+* Assumes the JSON contains an array of objects and each object may contain a "name" property of type string.
+* Counts objects and "name" property values that end with "University".
+* Assumes the file is encoded as UTF-16 and transcodes it into UTF-8. A file encoded as UTF-8 can be read directly into a `ReadOnlySpan<byte>`, by using the following code:
 
-Here's an example of JSON produced by the preceding code:
+  ```csharp
+  ReadOnlySpan<byte> jsonReadOnlySpan = File.ReadAllBytes(fileName);
+  ```
 
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "жа\u0440\u043A\u043E"
-}
-```
+  If the file contains a UTF-8 byte order mark (BOM), remove it before passing the bytes to the `Utf8JsonReader`, since the reader expects text. Otherwise, the BOM is considered invalid JSON, and the reader throws an exception.
 
-### Serialize all characters
+Here's a JSON sample that the preceding code can read. The resulting summary message is "2 out of 4 have names that end with 'University'":
 
-To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping?displayProperty=nameWithType>, as shown in the following example:
+:::code language="json" source="snippets/system-text-json-how-to/csharp/Universities.json":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
+### Read from a stream using Utf8JsonReader
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="UnsafeRelaxed":::
+When reading a large file (a gigabyte or more in size, for example), you might want to avoid having to load the entire file into memory at once. For this scenario, you can use a <xref:System.IO.FileStream>.
 
-> [!CAUTION]
-> Compared to the default encoder, the `UnsafeRelaxedJsonEscaping` encoder is more permissive about allowing characters to pass through unescaped:
->
-> * It doesn't escape HTML-sensitive characters such as `<`, `>`, `&`, and `'`.
-> * It doesn't offer any additional defense-in-depth protections against XSS or information disclosure attacks, such as those which might result from the client and server disagreeing on the *charset*.
->
-> Use the unsafe encoder only when it's known that the client will be interpreting the resulting payload as UTF-8 encoded JSON. For example, you can use it if the server is sending the response header `Content-Type: application/json; charset=utf-8`. Never allow the raw `UnsafeRelaxedJsonEscaping` output to be emitted into an HTML page or a `<script>` element.
+When using the `Utf8JsonReader` to read from a stream, the following rules apply:
 
-## Serialize properties of derived classes
+* The buffer containing the partial JSON payload must be at least as large as the largest JSON token within it so that the reader can make forward progress.
+* The buffer must be at least as large as the largest sequence of white space within the JSON.
+* The reader doesn't keep track of the data it has read until it completely reads the next <xref:System.Text.Json.Utf8JsonReader.TokenType%2A> in the JSON payload. So when there are bytes left over in the buffer, you have to pass them to the reader again. You can use <xref:System.Text.Json.Utf8JsonReader.BytesConsumed%2A> to determine how many bytes are left over.
 
-Serialization of a polymorphic type hierarchy is not supported. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
+The following code illustrates how to read from a stream. The example shows a <xref:System.IO.MemoryStream>. Similar code will work with a <xref:System.IO.FileStream>, except when the `FileStream` contains a UTF-8 BOM at the start. In that case, you need to strip those three bytes from the buffer before passing the remaining bytes to the `Utf8JsonReader`. Otherwise the reader would throw an exception, since the BOM is not considered a valid part of the JSON.
 
-For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
+The sample code starts with a 4KB buffer and doubles the buffer size each time it finds that the size is not large enough to fit a complete JSON token, which is required for the reader to make forward progress on the JSON payload. The JSON sample provided in the snippet triggers a buffer size increase only if you set a very small initial buffer size, for example, 10 bytes. If you set the initial buffer size to 10, the `Console.WriteLine` statements illustrate the cause and effect of buffer size increases. At the 4KB initial buffer size, the entire sample JSON is shown by each `Console.WriteLine`, and the buffer size never has to be increased.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Utf8ReaderPartialRead.cs":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFDerived":::
-
-And suppose the type argument of the `Serialize` method at compile time is `WeatherForecast`:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeDefault":::
-
-In this scenario, the `WindSpeed` property is not serialized even if the `weatherForecast` object is actually a `WeatherForecastDerived` object. Only the base class properties are serialized:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot"
-}
-```
-
-This behavior is intended to help prevent accidental exposure of data in a derived runtime-created type.
-
-To serialize the properties of the derived type in the preceding example, use one of the following approaches:
-
-* Call an overload of <xref:System.Text.Json.JsonSerializer.Serialize%2A> that lets you specify the type at run time:
-
-  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeGetType":::
-
-* Declare the object to be serialized as `object`.
-
-  :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeObject":::
-
-In the preceding example scenario, both approaches cause the `WindSpeed` property to be included in the JSON output:
-
-```json
-{
-  "WindSpeed": 35,
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot"
-}
-```
-
-> [!IMPORTANT]
-> These approaches provide polymorphic serialization only for the root object to be serialized, not for properties of that root object.
-
-You can get polymorphic serialization for lower-level objects if you define them as type `object`. For example, suppose your `WeatherForecast` class has a property named `PreviousForecast` that can be defined as type `WeatherForecast` or `object`:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPrevious":::
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPreviousAsObject":::
-
-If the `PreviousForecast` property contains an instance of `WeatherForecastDerived`:
-
-* The JSON output from serializing `WeatherForecastWithPrevious` **doesn't include** `WindSpeed`.
-* The JSON output from serializing `WeatherForecastWithPreviousAsObject` **includes** `WindSpeed`.
-
-To serialize `WeatherForecastWithPreviousAsObject`, it isn't necessary to call `Serialize<object>` or `GetType` because the root object isn't the one that may be of a derived type. The following code example doesn't call `Serialize<object>` or `GetType`:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeSecondLevel":::
-
-The preceding code correctly serializes `WeatherForecastWithPreviousAsObject`:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-  "PreviousForecast": {
-    "WindSpeed": 35,
-    "Date": "2019-08-01T00:00:00-07:00",
-    "TemperatureCelsius": 25,
-    "Summary": "Hot"
-  }
-}
-```
-
-The same approach of defining properties as `object` works with interfaces. Suppose you have the following interface and implementation, and you want to serialize a class with properties that contain implementation instances:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/IForecast.cs)]
-
-When you serialize an instance of `Forecasts`, only `Tuesday` shows the `WindSpeed` property, because `Tuesday` is defined as `object`:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializePolymorphic.cs" id="SerializeInterface":::
-
-The following example shows the JSON that results from the preceding code:
-
-```json
-{
-  "Monday": {
-    "Date": "2020-01-06T00:00:00-08:00",
-    "TemperatureCelsius": 10,
-    "Summary": "Cool"
-  },
-  "Tuesday": {
-    "Date": "2020-01-07T00:00:00-08:00",
-    "TemperatureCelsius": 11,
-    "Summary": "Rainy",
-    "WindSpeed": 10
-  }
-}
-```
-
-For more information about polymorphic **serialization**, and for information about **deserialization**, see [How to migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md#polymorphic-serialization).
+The preceding example sets no limit to how large the buffer can grow. If the token size is too large, the code could fail with an <xref:System.OutOfMemoryException> exception. This can happen if the JSON contains a token that is around 1 GB or more in size, because doubling the 1 GB size results in a size that is too large to fit into an `int32` buffer.
 
 ## See also
 
@@ -249,4 +122,3 @@ For more information about polymorphic **serialization**, and for information ab
 * [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
-<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)-->

@@ -3,7 +3,6 @@ title: How to customize property names when serializing JSON
 description: "Learn how to customize properties when serializing with System.Text.Json in .NET."
 ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -73,7 +72,7 @@ The camel case property naming policy:
 
 To use a custom JSON property naming policy, create a class that derives from <xref:System.Text.Json.JsonNamingPolicy> and override the <xref:System.Text.Json.JsonNamingPolicy.ConvertName%2A> method, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/UpperCaseNamingPolicy.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/UpperCaseNamingPolicy.cs":::
 
 Then set the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> property to an instance of your naming policy class:
 

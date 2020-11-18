@@ -1,6 +1,6 @@
 ---
 title: Publish a .NET console application using Visual Studio
-description: Publishing creates the set of files that are needed to run a .NET application.
+description: Learn how to use Visual Studio to create the set of files that are needed to run a .NET application.
 ms.date: 06/08/2020
 dev_langs:
   - "csharp"

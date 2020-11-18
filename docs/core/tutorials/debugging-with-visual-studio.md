@@ -173,7 +173,7 @@ Once you've tested the Debug version of your application, you should also compil
 
 To build and test the Release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 
-![default Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-release.png)
+![default Visual Studio toolbar with release highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-release.png)
 
 When you press <kbd>F5</kbd> or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of the application. You can test it as you did the Debug version.
 

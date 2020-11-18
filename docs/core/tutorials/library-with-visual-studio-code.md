@@ -44,7 +44,7 @@ Start by creating a blank solution to put the class library project in. A soluti
 
 ## Create a class library project
 
-Add a new .NET Standard class library project named "StringLibrary" to the solution.
+Add a new .NET class library project named "StringLibrary" to the solution.
 
 1. In the terminal, run the following command to create the library project:
 
@@ -112,7 +112,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.dll
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net5.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
        0 Error(s)
@@ -205,11 +205,10 @@ Initially, the new console app project doesn't have access to the class library.
 ## Additional resources
 
 * [Develop libraries with the .NET CLI](libraries.md)
-* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
 
 ## Next steps
 
 In this tutorial, you created a solution, added a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
 
 > [!div class="nextstepaction"]
-> [Test a .NET Standard library with .NET using Visual Studio Code](testing-library-with-visual-studio-code.md)
+> [Test a .NET class library with .NET using Visual Studio Code](testing-library-with-visual-studio-code.md)

@@ -9,7 +9,7 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 ## Prerequisites
 
-- This tutorial works with the solution that you create in [Create a .NET Standard library using Visual Studio Code](library-with-visual-studio-code.md).
+- This tutorial works with the solution that you create in [Create a .NET library using Visual Studio Code](library-with-visual-studio-code.md).
 
 ## Create a unit test project
 
@@ -17,7 +17,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Start Visual Studio Code.
 
-1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library using Visual Studio Code](library-with-visual-studio-code.md).
+1. Open the `ClassLibraryProjects` solution you created in [Create a .NET library using Visual Studio Code](library-with-visual-studio-code.md).
 
 1. Create a unit test project named "StringLibraryTest".
 
@@ -166,7 +166,7 @@ Visual Studio Code starts the test project with the debugger attached. Execution
 
 ## Additional resources
 
-* [Unit testing in .NET and .NET Standard](../testing/index.md)
+* [Unit testing in .NET](../testing/index.md)
 
 ## Next steps
 

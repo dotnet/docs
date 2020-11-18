@@ -105,4 +105,4 @@ In the following steps, you'll look at the files created by the publish process.
 In this tutorial, you published a console app. In the next tutorial, you create a class library.
 
 > [!div class="nextstepaction"]
-> [Create a .NET Standard library using Visual Studio Code](library-with-visual-studio-code.md)
+> [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md)

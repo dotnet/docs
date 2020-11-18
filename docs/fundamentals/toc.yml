@@ -376,6 +376,26 @@ items:
       href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
       href: ../core/diagnostics/logging-tracing.md
+    - name: Runtime Events
+      items:
+      - name: Overview
+        href: ../fundamentals/diagnostics/runtime-events.md
+      - name: Contention Events
+        href: ../fundamentals/diagnostics/runtime-contention-events.md
+      - name: Exception Events
+        href: ../fundamentals/diagnostics/runtime-exception-events.md
+      - name: Garbage Collection Events
+        href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
+      - name: Interop Events
+        href: ../fundamentals/diagnostics/runtime-interop-events.md
+      - name: Loader and Binder Events
+        href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
+      - name: Method Events
+        href: ../fundamentals/diagnostics/runtime-method-events.md
+      - name: ThreadPool Events
+        href: ../fundamentals/diagnostics/runtime-thread-events.md
+      - name: Type System Events
+        href: ../fundamentals/diagnostics/runtime-type-events.md
     - name: Collect diagnostics in containers
       href: ../core/diagnostics/diagnostics-in-containers.md
     - name: .NET Core CLI global tools

@@ -69,6 +69,8 @@ var result = await daprClient.InvokeMethodAsync<Order, SubmitOrderResult>(
 
 The `order` object is serialized internally (with `System.Text.JsonSerializer`) and sent as the request payload. The .NET SDK takes care of the call to the sidecar. It also deserializes the response to a `SubmitOrderResult` object.
 
+Alternatively, you can use the `InvokeMethodWithResponseAsync` or `InvokeMethodRawAsync` method to invoke a remote method. With these specialized methods, you can get access to the response headers and the raw response bytes respectively.
+
 Using the .NET SDK, you can call services that expose both gRPC or HTTP/REST APIs. When calling a service listening on HTTP, you can use the `HttpExtension` class to configure the HTTP call details. The `HttpExtension` class provides access to the following properties:
 
 - HTTP Verb: (for example, `POST`, `GET`, `PUT`, `PATCH`, and `DELETE`). The default verb used is `POST`.

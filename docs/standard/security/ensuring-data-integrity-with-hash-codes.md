@@ -2,7 +2,6 @@
 title: "Ensuring Data Integrity with Hash Codes"
 description: Learn how to ensure data integrity using hash codes in .NET. A hash value is a numeric value of a fixed length that uniquely identifies data.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

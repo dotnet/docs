@@ -2,7 +2,6 @@
 title: Backtracking in .NET Regular Expressions
 description: Learn how to control backtracking in regular expression pattern matching.
 ms.date: "11/12/2018"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

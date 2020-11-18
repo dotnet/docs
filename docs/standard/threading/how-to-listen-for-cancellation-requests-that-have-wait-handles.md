@@ -1,7 +1,6 @@
 ---
 title: "How to: Listen for Cancellation Requests That Have Wait Handles"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

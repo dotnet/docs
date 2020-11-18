@@ -7,7 +7,7 @@ Only supported versions of .NET Core are available through Snap.
 
 ### Install the SDK
 
-Snap packages for .NET SDK are all published under the same identifier: `dotnet-sdk`. A specific version of the SDK can be installed by specifying the channel. The SDK includes the coresponding runtime. The following table list the channels:
+Snap packages for .NET SDK are all published under the same identifier: `dotnet-sdk`. A specific version of the SDK can be installed by specifying the channel. The SDK includes the corresponding runtime. The following table lists the channels:
 
 | .NET version | Snap package             |
 |--------------|--------------------------|
@@ -68,7 +68,7 @@ Running 'dotnet restore' on /home/myhome/test/test.csproj...
 /snap/dotnet-sdk/27/sdk/2.2.103/NuGet.targets(114,5): error :   The remote certificate is invalid according to the validation procedure. [/home/myhome/test/test.csproj]
 ```
 
-To resolve this issue, set a few enviornment variables:
+To resolve this issue, set a few environment variables:
 
 ```bash
 export SSL_CERT_FILE=[path-to-certificate-file]

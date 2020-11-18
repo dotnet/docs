@@ -1,7 +1,6 @@
 ---
 title: "Static Class Design"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "type design guidelines, static classes"
   - "class library design guidelines [.NET Framework], classes"

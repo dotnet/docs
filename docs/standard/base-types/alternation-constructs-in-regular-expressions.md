@@ -2,7 +2,6 @@
 title: Alternation Constructs in .NET Regular Expressions
 description: Learn how to use alternation constructs for conditional matching in regular expressions.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

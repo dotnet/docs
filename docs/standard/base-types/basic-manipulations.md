@@ -2,7 +2,6 @@
 title: Basic String Manipulations in .NET
 description: See an example that calls many string methods.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"

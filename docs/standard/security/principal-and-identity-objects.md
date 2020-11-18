@@ -2,7 +2,6 @@
 title: "Principal and Identity Objects"
 description: Read about identity objects, which represent users in .NET. Also read about principal objects, which encapsulate both an identity object & a role.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "WindowsIdentity objects"
   - "GenericIdentity objects"

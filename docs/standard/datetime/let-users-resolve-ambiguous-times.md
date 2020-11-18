@@ -1,7 +1,6 @@
 ---
 title: "How to: Let users resolve ambiguous times"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "time zones [.NET], ambiguous time"
   - "ambiguous time [.NET]"

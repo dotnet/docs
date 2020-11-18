@@ -1,7 +1,6 @@
 ---
 title: "XML Schema Object Model Overview"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 896a1e12-5655-42c6-8cdd-89c12862b34b
 ---
 # XML Schema Object Model Overview

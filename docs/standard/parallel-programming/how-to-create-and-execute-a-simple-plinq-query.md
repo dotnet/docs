@@ -1,7 +1,6 @@
 ---
 title: "How to: Create and Execute a Simple PLINQ Query"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

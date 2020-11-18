@@ -1,7 +1,6 @@
 ---
 title: "Regular Expression Example: Changing Date Formats"
 ms.date: "06/30/2020"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

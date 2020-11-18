@@ -1,7 +1,6 @@
 ---
 title: "Working with XML Schemas"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: bbbcc70c-bf9a-4f6a-af72-1bab5384a187
 ---
 # Working with XML Schemas

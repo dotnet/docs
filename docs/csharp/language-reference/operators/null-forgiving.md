@@ -2,9 +2,9 @@
 description: "! (null-forgiving) operator - C# reference"
 title: "! (null-forgiving) operator - C# reference"
 ms.date: 10/11/2019
-f1_keywords: 
+f1_keywords:
   - "nullForgiving_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "null-forgiving operator [C#]"
   - "! operator [C#]"
 ---

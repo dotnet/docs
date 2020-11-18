@@ -77,4 +77,3 @@ To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncod
 > Use the unsafe encoder only when it's known that the client will be interpreting the resulting payload as UTF-8 encoded JSON. For example, you can use it if the server is sending the response header `Content-Type: application/json; charset=utf-8`. Never allow the raw `UnsafeRelaxedJsonEscaping` output to be emitted into an HTML page or a `<script>` element.
 
 ## See also
-

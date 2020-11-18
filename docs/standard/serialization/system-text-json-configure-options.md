@@ -11,75 +11,9 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to work with JsonSerializerOptions instances
+# How to configure serialization options
 
-In this article, you'll learn how to control serialization of C# objects with the <xref:System.Text.Json.JsonSerializerOptions> object.
-
-## Customize character encoding
-
-By default, the serializer escapes all non-ASCII characters. That is, it replaces them with `\uxxxx` where `xxxx` is the Unicode code of the character.  For example, if the `Summary` property is set to Cyrillic жарко, the `WeatherForecast` object is serialized as shown in this example:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "\u0436\u0430\u0440\u043A\u043E"
-}
-```
-
-### Serialize language character sets
-
-To serialize the character set(s) of one or more languages without escaping, specify [Unicode range(s)](xref:System.Text.Unicode.UnicodeRanges) when creating an instance of <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, as shown in the following example:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="LanguageSets":::
-
-This code doesn't escape Cyrillic or Greek characters. If the `Summary` property is set to Cyrillic жарко, the `WeatherForecast` object is serialized as shown in this example:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "жарко"
-}
-```
-
-To serialize all language sets without escaping, use <xref:System.Text.Unicode.UnicodeRanges.All?displayProperty=nameWithType>.
-
-### Serialize specific characters
-
-An alternative is to specify individual characters that you want to allow through without being escaped. The following example serializes only the first two characters of `жарко`:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="SelectedCharacters":::
-
-Here's an example of JSON produced by the preceding code:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "жа\u0440\u043A\u043E"
-}
-```
-
-### Serialize all characters
-
-To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping?displayProperty=nameWithType>, as shown in the following example:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="UnsafeRelaxed":::
-
-> [!CAUTION]
-> Compared to the default encoder, the `UnsafeRelaxedJsonEscaping` encoder is more permissive about allowing characters to pass through unescaped:
->
-> * It doesn't escape HTML-sensitive characters such as `<`, `>`, `&`, and `'`.
-> * It doesn't offer any additional defense-in-depth protections against XSS or information disclosure attacks, such as those which might result from the client and server disagreeing on the *charset*.
->
-> Use the unsafe encoder only when it's known that the client will be interpreting the resulting payload as UTF-8 encoded JSON. For example, you can use it if the server is sending the response header `Content-Type: application/json; charset=utf-8`. Never allow the raw `UnsafeRelaxedJsonEscaping` output to be emitted into an HTML page or a `<script>` element.
+In this article, you'll learn how to control the serialization of C# objects with <xref:System.Text.Json.JsonSerializerOptions> instances. Additionally, you will learn how to use various property, constructor, and class-level attributes to future define serialization and deserialization behaviors.
 
 ## Serialize properties of derived classes
 
@@ -164,7 +98,7 @@ The preceding code correctly serializes `WeatherForecastWithPreviousAsObject`:
 
 The same approach of defining properties as `object` works with interfaces. Suppose you have the following interface and implementation, and you want to serialize a class with properties that contain implementation instances:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/IForecast.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/IForecast.cs":::
 
 When you serialize an instance of `Forecasts`, only `Tuesday` shows the `WindSpeed` property, because `Tuesday` is defined as `object`:
 

@@ -42,17 +42,17 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 
 There are two patterns for creating a custom converter: the basic pattern and the factory pattern. The factory pattern is for converters that handle type `Enum` or open generics. The basic pattern is for non-generic and closed generic types.  For example, converters for the following types require the factory pattern:
 
-* `Dictionary<TKey, TValue>`
-* `Enum`
-* `List<T>`
+* <xref:System.Collections.Generic.Dictionary%602>
+* <xref:System.Enum>
+* <xref:System.Collections.List%601>
 
 Some examples of types that can be handled by the basic pattern include:
 
 * `Dictionary<int, string>`
 * `WeekdaysEnum`
 * `List<DateTimeOffset>`
-* `DateTime`
-* `Int32`
+* <xref:System.DateTime>
+* <xref:System.Int32>
 
 The basic pattern creates a class that can handle one type. The factory pattern creates a class that determines, at run time, which specific type is required and dynamically creates the appropriate converter.
 
@@ -60,13 +60,13 @@ The basic pattern creates a class that can handle one type. The factory pattern 
 
 The following sample is a converter that overrides default serialization for an existing data type. The converter uses mm/dd/yyyy format for `DateTimeOffset` properties.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DateTimeOffsetConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DateTimeOffsetConverter.cs":::
 
 ## Sample factory pattern converter
 
 The following code shows a custom converter that works with `Dictionary<Enum,TValue>`. The code follows the factory pattern because the first generic type parameter is `Enum` and the second is open. The `CanConvert` method returns `true` only for a `Dictionary` with two generic parameters, the first of which is an `Enum` type. The inner converter gets an existing converter to handle whichever type is provided at run time for `TValue`.
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
 
 The preceding code is the same as what is shown in the [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
 
@@ -156,11 +156,11 @@ The code to deserialize also doesn't require the use of `Converters`:
 
 Here's code that creates a struct and applies the `[JsonConverter]` attribute to it:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Temperature.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/Temperature.cs":::
 
 Here's the custom converter for the preceding struct:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/TemperatureConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/TemperatureConverter.cs":::
 
 The `[JsonConvert]` attribute on the struct registers the custom converter as the default for properties of type `Temperature`. The converter is automatically used on the `TemperatureCelsius` property of the following type when you serialize or deserialize it:
 
@@ -212,7 +212,7 @@ For scenarios that require type inference, the following code shows a custom con
 * Strings to `string`
 * Everything else to `JsonElement`
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ObjectToInferredTypesConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/ObjectToInferredTypesConverter.cs":::
 
 The following code registers the converter:
 
@@ -244,7 +244,7 @@ The built-in support for dictionary collections is for `Dictionary<string, TValu
 
 The following code shows a custom converter that works with `Dictionary<Enum,TValue>`:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/DictionaryTKeyEnumTValueConverter.cs":::
 
 The following code registers the converter:
 
@@ -281,7 +281,7 @@ The following code shows a base class, two derived classes, and a custom convert
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/Person.cs" id="Person":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminator.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/PersonConverterWithTypeDiscriminator.cs":::
 
 The following code registers the converter:
 
@@ -320,7 +320,7 @@ To support serialization and deserialization that retains the original order in 
 
 The following code shows a custom converter that enables round-tripping to and from `Stack<T>` objects:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/JsonConverterFactoryForStackOfT.cs)]
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/JsonConverterFactoryForStackOfT.cs":::
 
 The following code registers the converter:
 

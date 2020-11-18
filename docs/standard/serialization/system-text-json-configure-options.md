@@ -1,7 +1,7 @@
 ---
-title: "How to use System.Text.Json serialization options"
-description: "Learn how to use the System.Text.Json serialization options in .NET."
-ms.date: 11/13/2020
+title: How to configure serialization options
+description: "Learn how to configure JsonSerializerOptions instances, and use JSON serialization attributes to control how your objects are serialized and deserialized."
+ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:

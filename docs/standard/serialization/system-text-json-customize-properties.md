@@ -1,7 +1,7 @@
 ---
 title: How to customize property names when serializing JSON
 description: "Learn how to customize properties when serializing with System.Text.Json in .NET."
-ms.date: 11/13/2020
+ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -13,119 +13,147 @@ helpviewer_keywords:
 
 # How to customize property names when serializing JSON
 
-When serializing C# objects to JavaScript Object Notation (JSON), by default, all public properties are serialized. If you don't want some of them to appear in the resulting JSON, you have several options. In this article you learn how to ignore various properties:
+By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. In this article, you'll learn how to:
 
-::: zone pivot="dotnet-5-0"
+* [Customize individual property names](#customize-individual-property-names)
+* [Convert all property names to camel case](#use-camel-case-for-all-json-property-names)
+* [Implement a custom property naming policy](#use-a-custom-json-property-naming-policy)
+* [Convert dictionary keys to camel case](#camel-case-dictionary-keys)
+* [Convert enums to strings and camel case](#enums-as-strings)
 
-* [Individual properties](#ignore-individual-properties)
-* [All read-only properties](#ignore-all-read-only-properties)
-* [All null-value properties](#ignore-all-null-value-properties)
-* [All default-value properties](#ignore-all-default-value-properties)
-::: zone-end
+For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](system-text-json-converters-how-to.md).
 
-::: zone pivot="dotnet-core-3-1"
+### Customize individual property names
 
-* [Individual properties](#ignore-individual-properties)
-* [All read-only properties](#ignore-all-read-only-properties)
-* [All null-value properties](#ignore-all-null-value-properties)
-::: zone-end
+To set the name of individual properties, use the [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attribute.
 
-### Ignore individual properties
+Here's an example type to serialize and resulting JSON:
 
-To ignore individual properties, use the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute.
-
-Here's an example type to serialize and JSON output:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithIgnoreAttribute":::
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-}
-```
-
-::: zone pivot="dotnet-5-0"
-You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property. The <xref:System.Text.Json.Serialization.JsonIgnoreCondition> enum provides the following options:
-
-* `Always` - The property is always ignored. If no `Condition` is specified, this option is assumed.
-* `Never` - The property is always serialized and deserialized, regardless of the `DefaultIgnoreCondition`, `IgnoreReadOnlyProperties`, and `IgnoreReadOnlyFields` global settings.
-* `WhenWritingDefault` - The property is ignored on serialization if it's a reference type `null` or a value type `default`.
-* `WhenWritingNull` - The property is ignored on serialization if it's a reference type `null`.
-
-The following example illustrates use of the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="10,13,16":::
-::: zone-end
-
-### Ignore all read-only properties
-
-A property is read-only if it contains a public getter but not a public setter. To ignore all read-only properties when serializing, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> to `true`, as shown in the following example:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExcludeReadOnlyProperties.cs" id="Serialize":::
-
-Here's an example type to serialize and JSON output:
-
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithROProperty":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPropertyNameAttribute":::
 
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
   "TemperatureCelsius": 25,
   "Summary": "Hot",
+  "Wind": 35
 }
 ```
 
-This option applies only to serialization. During deserialization, read-only properties are ignored by default.
+The property name set by this attribute:
 
-::: zone pivot="dotnet-5-0"
-This option applies only to properties. To ignore read-only fields when [serializing fields](system-text-json-serialization.md#include-fields), use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
-::: zone-end
+* Applies in both directions, for serialization and deserialization.
+* Takes precedence over property naming policies.
 
-### Ignore all null-value properties
+### Use camel case for all JSON property names
 
-::: zone pivot="dotnet-5-0"
-To ignore all null-value properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull>, as shown in the following example:
+To use camel case for all JSON property names, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreNullOnSerialize.cs" highlight="28":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundTripCamelCasePropertyNames.cs" id="Serialize":::
 
-::: zone-end
+Here's an example class to serialize and JSON output:
 
-::: zone pivot="dotnet-core-3-1"
-To ignore all null-value properties when serializing, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property to `true`, as shown in the following example:
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPropertyNameAttribute":::
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExcludeNullValueProperties.cs" id="Serialize":::
+```json
+{
+  "date": "2019-08-01T00:00:00-07:00",
+  "temperatureCelsius": 25,
+  "summary": "Hot",
+  "Wind": 35
+}
+```
 
-Here's an example object to serialize and JSON output:
+The camel case property naming policy:
 
-| Property             | Value                         |
-|----------------------|-------------------------------|
-| `Date`               | `8/1/2019 12:00:00 AM -07:00` |
-| `TemperatureCelsius` | `25`                          |
-| `Summary`            | `null`                        |
+* Applies to serialization and deserialization.
+* Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not camel case.
+
+### Use a custom JSON property naming policy
+
+To use a custom JSON property naming policy, create a class that derives from <xref:System.Text.Json.JsonNamingPolicy> and override the <xref:System.Text.Json.JsonNamingPolicy.ConvertName%2A> method, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/UpperCaseNamingPolicy.cs)]
+
+Then set the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> property to an instance of your naming policy class:
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripPropertyNamingPolicy.cs" id="Serialize":::
+
+Here's an example class to serialize and JSON output:
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPropertyNameAttribute":::
+
+```json
+{
+  "DATE": "2019-08-01T00:00:00-07:00",
+  "TEMPERATURECELSIUS": 25,
+  "SUMMARY": "Hot",
+  "Wind": 35
+}
+```
+
+The JSON property naming policy:
+
+* Applies to serialization and deserialization.
+* Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not upper case.
+
+### Camel case dictionary keys
+
+If a property of an object to be serialized is of type `Dictionary<string,TValue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCamelCaseDictionaryKeys.cs" id="Serialize":::
+
+Serializing an object with a dictionary named `TemperatureRanges` that has key-value pairs `"ColdMinTemp", 20` and `"HotMinTemp", 40` would result in JSON output like the following example:
 
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25
+  "TemperatureCelsius": 25,
+  "Summary": "Hot",
+  "TemperatureRanges": {
+    "coldMinTemp": 20,
+    "hotMinTemp": 40
+  }
 }
 ```
 
-::: zone-end
+The camel case naming policy for dictionary keys applies to serialization only. If you deserialize a dictionary, the keys will match the JSON file even if you specify `JsonNamingPolicy.CamelCase` for the `DictionaryKeyPolicy`.
 
-### Ignore all default-value properties
+### Enums as strings
 
-::: zone pivot="dotnet-5-0"
-To prevent serialization of default values in value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:
+By default, enums are serialized as numbers. To serialize enum names as strings, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter>.
 
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="28":::
-::: zone-end
+For example, suppose you need to serialize the following class that has an enum:
 
-The <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault> setting also prevents serialization of null-value reference type properties.
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithEnum":::
 
-::: zone pivot="dotnet-core-3-1"
-There is no built-in way to prevent serialization of properties with value type defaults in `System.Text.Json` in .NET Core 3.1.
-::: zone-end
+If the Summary is `Hot`, by default the serialized JSON has the numeric value 3:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureCelsius": 25,
+  "Summary": 3
+}
+```
+
+The following sample code serializes the enum names instead of the numeric values, and converts the names to camel case:
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs" id="Serialize":::
+
+The resulting JSON looks like the following example:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureCelsius": 25,
+  "Summary": "hot"
+}
+```
+
+Enum string names can be deserialized as well, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripEnumAsString.cs" id="Deserialize":::
 
 ## See also
 

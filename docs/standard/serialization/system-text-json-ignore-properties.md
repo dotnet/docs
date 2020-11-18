@@ -1,7 +1,7 @@
 ---
-title: How to customize property names when serializing JSON
-description: "Learn how to customize properties when serializing with System.Text.Json in .NET."
-ms.date: 11/17/2020
+title: How to ignore properties when serializing JSON
+description: "Learn how to ignore properties when serializing with System.Text.Json in .NET."
+ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to customize property names when serializing JSON
+# How to ignore properties when serializing JSON
 
 When serializing C# objects to JavaScript Object Notation (JSON), by default, all public properties are serialized. If you don't want some of them to appear in the resulting JSON, you have several options. In this article you learn how to ignore various properties:
 
@@ -130,8 +130,8 @@ There is no built-in way to prevent serialization of properties with value type 
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
+* [How to customize property names when serializing JSON](system-text-json-customize-properties.md)
 * [How to write custom converters](system-text-json-converters-how-to.md)
 * [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
-<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)-->

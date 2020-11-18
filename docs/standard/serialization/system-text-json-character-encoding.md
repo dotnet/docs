@@ -3,7 +3,6 @@ title: How to customize character encoding
 description: "Learn how to customize character encoding while serializing to and deserializing from JSON in .NET."
 ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
-zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"

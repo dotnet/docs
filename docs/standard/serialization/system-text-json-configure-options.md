@@ -1,5 +1,5 @@
 ---
-title: How to configure serialization options
+title: How to configure serialization options with System.Text.Json
 description: "Learn how to configure JsonSerializerOptions instances, and use JSON serialization attributes to control how your objects are serialized and deserialized."
 ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to configure serialization options
+# How to configure serialization options with System.Text.Json
 
 In this article, you'll learn how to control the serialization of C# objects with <xref:System.Text.Json.JsonSerializerOptions> instances. Additionally, you will learn how to use various property, constructor, and class-level attributes to future define serialization and deserialization behaviors.
 

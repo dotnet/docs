@@ -1,5 +1,5 @@
 ---
-title: How to ignore properties when serializing JSON
+title: How to ignore properties with System.Text.Json
 description: "Learn how to ignore properties when serializing with System.Text.Json in .NET."
 ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to ignore properties when serializing JSON
+# How to ignore properties with System.Text.Json
 
 When serializing C# objects to JavaScript Object Notation (JSON), by default, all public properties are serialized. If you don't want some of them to appear in the resulting JSON, you have several options. In this article you learn how to ignore various properties:
 

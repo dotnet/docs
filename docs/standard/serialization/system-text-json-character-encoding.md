@@ -1,5 +1,5 @@
 ---
-title: How to customize character encoding
+title: How to customize character encoding with System.Text.Json
 description: "Learn how to customize character encoding while serializing to and deserializing from JSON in .NET."
 ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to customize character encoding
+# How to customize character encoding with System.Text.Json
 
 By default, the serializer escapes all non-ASCII characters. That is, it replaces them with `\uxxxx` where `xxxx` is the Unicode code of the character. For example, if the `Summary` property in the following JSON is set to Cyrillic `жарко`, the `WeatherForecast` object is serialized as shown in this example:
 

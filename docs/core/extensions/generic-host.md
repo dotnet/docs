@@ -69,7 +69,7 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A> method:
   - EventLog (only when running on Windows)
 - Enables scope validation and [dependency validation](xref:Microsoft.Extensions.DependencyInjection.ServiceProviderOptions.ValidateOnBuild) when the environment is `Development`.
 
-The `ConfigureServices` method exposes the ability to add services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection?displayProperty=nameWithType> instance. Later, these services can be made available from dependency injection.
+The `ConfigureServices` method exposes the ability to add services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection?displayProperty=nameWithType> instance. Later, these services can be made availably from dependency injection.
 
 ## Framework-provided services
 

@@ -44,7 +44,7 @@ Create a .NET console app project named "HelloWorld".
 
    ![Configure your new project window with Project name, location, and solution name fields](./media/with-visual-studio/configure-new-project.png)
 
-1. In the **Additional information** dialog, select **.NET 5.0 (Current)**.
+1. In the **Additional information** dialog, select **.NET 5.0 (Current)**, and then select **Create**.
 
    :::image type="content" source="media/with-visual-studio/additional-info.png" alt-text="Additional information dialog":::
 

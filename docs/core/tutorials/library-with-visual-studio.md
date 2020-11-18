@@ -11,13 +11,13 @@ ms.custom: "vs-dotnet,contperfq1"
 
 In this tutorial, you create a simple class library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.0 allows your library to be called by any .NET implementation that supports that version of .NET Standard.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 5, it can be called by any application that targets .NET 5. This tutorial shows how to target .NET 5.
 
-When you finish your class library, you can distribute it as a NuGet package or as a component bundled with the application that uses it.
+When you create a class library, you can distribute it as a NuGet package or as a component bundled with the application that uses it.
 
 ## Prerequisites
 
-- [Visual Studio 2019 version 16.6 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. The .NET 5.0 SDK is automatically installed when you select this workload.
+- [Visual Studio 2019 version 16.8 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. The .NET 5.0 SDK is automatically installed when you select this workload. This tutorial assumes you have enabled **Show all .NET Core templates in the New project**, as shown in [Tutorial: Create a .NET console application using Visual Studio](with-visual-studio.md).
 
 ## Create a solution
 
@@ -41,13 +41,13 @@ To create the blank solution:
 
    1. Right-click on the solution in **Solution Explorer** and select **Add** > **New Project**.
 
-   1. On the **Add a new project** page, enter **library** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list. Choose the **Class Library (.NET Standard)** template, and then choose **Next**.
+   1. On the **Add a new project** page, enter **library** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list. Choose the **Class Library** template, and then choose **Next**.
 
-   1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box. Then, choose **Create**.
+   1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box, and then choose **Next**.
+
+   1. on the **Additional information** page, select **.NET 5.0 (Current)**, and then choose **Create**.
 
 1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 5.0.
-
-   ![Project properties for the class library](./media/library-with-visual-studio/library-project-properties.png)
 
 1. If you're using Visual Basic, clear the text in the **Root namespace** text box.
 
@@ -76,9 +76,11 @@ Add a console application that uses the class library. The app will prompt the u
 
    1. On the **Add a new project** page, enter **console** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list.
 
-   1. Choose the **Console App (.NET Core)** template, and then choose **Next**.
+   1. Choose the **Console Application** template, and then choose **Next**.
 
-   1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then choose **Create**.
+   1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then choose **Next**.
+
+   1. On the **Additional information** page, select **.NET 5.0 (Current)** in the **Target Framework** box. Then choose **Create**.
 
 1. In the code window for the *Program.cs* or *Program.vb* file, replace all of the code with the following code.
 

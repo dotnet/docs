@@ -29,9 +29,11 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Add a new project** page, enter **mstest** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list.
 
-   1. Choose the **MSTest Test Project (.NET Core)** template, and then choose **Next**.
+   1. Choose the **Unit Test Project** template, and then choose **Next**.
 
-   1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Create**.
+   1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Next**.
+   
+   1. On the **Additional information** page, select **.NET 5.0 (Current)** in the **Target Framework** box. Then choose **Create**.
 
 1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use is not shown, change the language selector at the top of the page.
 

@@ -1,11 +1,11 @@
 ---
 title: Create a .NET class library using Visual Studio Code
 description: Learn how to create a .NET class library using Visual Studio Code.
-ms.date: 11/17/2020
+ms.date: 11/18/2020
 ---
 # Tutorial: Create a .NET class library using Visual Studio Code
 
-In this tutorial, you create a simple utility library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
+In this tutorial, you create a simple utility library that contains a single string-handling method.
 
 A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 5, it can be called by any application that targets .NET 5. This tutorial shows how to target .NET 5.
 

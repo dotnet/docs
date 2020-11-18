@@ -39,7 +39,7 @@ let str = $"A pair of braces: {{}}"
 
 ## Typed interpolated strings
 
-Interpolated strings can also have F# format specifiers to enforce type safey.
+Interpolated strings can also have F# format specifiers to enforce type safety.
 
 ```fsharp
 let name = "Phillip"
@@ -67,7 +67,7 @@ printfn $"""Name: {"Phillip"}, Age: %d{age}"""
 
 ## Aligning expressions in interpolated strings
 
-You can left-align or right-align expressions inside interpolated strings with `|` and a specification of how many spaces. The following interpolated string aligns the left and right expressions to the left and right, respectively, by 7  spaces.
+You can left-align or right-align expressions inside interpolated strings with `|` and a specification of how many spaces. The following interpolated string aligns the left and right expressions to the left and right, respectively, by seven spaces.
 
 ```fsharp
 printfn $"""|{"Left",-7}|{"Right",7}|"""
@@ -84,7 +84,7 @@ printfn $"The speed of light is {speedOfLight:N3} km/s."
 // "The speed of light is 299,792.458 km/s."
 ```
 
-Additionally, an interpolated string can also be typechecked as a <xref:System.FormattableString> via a type annotation:
+Additionally, an interpolated string can also be type checked as a <xref:System.FormattableString> via a type annotation:
 
 ```fsharp
 let frmtStr = $"The speed of light is {speedOfLight:N3} km/s." : FormattableString

@@ -1,7 +1,6 @@
 ---
 title: "How to: Prevent a Child Task from Attaching to its Parent"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

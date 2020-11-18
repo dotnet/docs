@@ -1,7 +1,6 @@
 ---
 title: "How to: Restore time zones from an embedded resource"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

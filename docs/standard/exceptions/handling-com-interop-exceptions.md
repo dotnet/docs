@@ -1,7 +1,6 @@
 ---
 title: "Handling COM Interop Exceptions"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "unmanaged code, exceptions"
   - "exceptions, unmanaged code"

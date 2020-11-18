@@ -1,7 +1,6 @@
 ---
 title: "Inferring an XML Schema"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: b18e7ffd-3c04-482d-9934-ba2f6a59b2c9
 ---
 # Inferring an XML Schema

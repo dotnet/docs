@@ -88,6 +88,8 @@ For instance, to allow you to make the best choice for your application .NET off
 
 - [C# string interpolation](../../csharp/language-reference/tokens/interpolated.md) can simplify writing logging code.
 
+- [Runtime Provider Event List](../../fundamentals/diagnostics/runtime-events.md)
+
 - The <xref:System.Exception.Message?displayProperty=nameWithType> property is useful for logging exceptions.
 
 - The <xref:System.Diagnostics.StackTrace?displayProperty=nameWithType> class can be useful to provide stack info in your logs.

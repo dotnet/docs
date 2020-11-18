@@ -1,7 +1,6 @@
 ---
 title: "Exceptions Interoperability"
 ms.date: "01/16/2020"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "unmanaged code, exceptions"
   - "exceptions, unmanaged code"

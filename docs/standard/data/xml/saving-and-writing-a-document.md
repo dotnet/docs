@@ -1,7 +1,6 @@
 ---
 title: "Saving and Writing a Document"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

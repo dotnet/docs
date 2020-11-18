@@ -1,7 +1,6 @@
 ---
 title: "XmlDataDocument Input to XslTransform"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: a0b536b6-cdb3-4a44-86c2-3b2ebc7bd4c9
 ---
 # XmlDataDocument Input to XslTransform

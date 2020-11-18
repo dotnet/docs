@@ -1,7 +1,6 @@
 ---
 title: "Managed Execution Process"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "source code language"
   - "code, managed execution process"

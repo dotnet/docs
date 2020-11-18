@@ -1,7 +1,6 @@
 ---
 title: "XSLT Transformations Over Different Stores"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 369850e9-004a-45d2-b5c3-5060d9135adb
 ---
 # XSLT Transformations Over Different Stores

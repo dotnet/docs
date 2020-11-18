@@ -2,7 +2,6 @@
 title: "Overview of synchronization primitives"
 description: "Learn about .NET thread synchronization primitives used to synchronize access to a shared resource or control thread interaction"
 ms.date: "10/01/2018"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "synchronization, threads"
   - "threading [.NET],synchronizing threads"

@@ -1,7 +1,6 @@
 ---
 title: "How to: Display Dates in Non-Gregorian Calendars"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

@@ -2,7 +2,6 @@
 title: "Security and On-the-Fly Code Generation"
 description: Generating code on behalf of lesser-trust code that runs at a higher trust is a security concern, especially when a caller can influence code generation.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "code security, on-the-fly code generation"
   - "on-the-fly code generation"

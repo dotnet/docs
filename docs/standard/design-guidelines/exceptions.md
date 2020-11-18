@@ -1,7 +1,6 @@
 ---
 title: "Design Guidelines for Exceptions"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "exceptions [.NET Framework], design guidelines"
   - "class library design guidelines [.NET Framework], exceptions"

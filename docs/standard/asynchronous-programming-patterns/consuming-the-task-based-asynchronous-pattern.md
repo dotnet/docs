@@ -2,7 +2,6 @@
 title: "Consuming the Task-based Asynchronous Pattern"
 description: Learn to consume the Task-based Asynchronous Pattern (TAP) when working with asynchronous operations.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - ".NET and TAP"
   - "asynchronous design patterns, .NET"

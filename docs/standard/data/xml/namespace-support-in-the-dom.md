@@ -1,7 +1,6 @@
 ---
 title: "Namespace Support in the DOM"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: f0548ead-0fed-41ee-b33e-117ba900d3bc
 ---
 # Namespace Support in the DOM

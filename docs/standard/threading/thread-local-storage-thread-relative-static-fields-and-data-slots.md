@@ -1,7 +1,6 @@
 ---
 title: "Thread Local Storage: Thread-Relative Static Fields and Data Slots"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "threading [.NET], local storage"
   - "threading [.NET], thread-relative static fields"

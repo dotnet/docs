@@ -1,7 +1,6 @@
 ---
 title: "Best Practices for Implementing the Event-based Asynchronous Pattern"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"

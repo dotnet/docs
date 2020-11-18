@@ -1,7 +1,6 @@
 ---
 title: "Dates, times, and time zones"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "time zone objects [.NET]"
   - "date and time data [.NET]"

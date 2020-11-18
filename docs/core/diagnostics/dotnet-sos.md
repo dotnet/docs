@@ -1,19 +1,33 @@
 ---
-title: dotnet-sos - .NET Core
-description: Learn how to install and use the dotnet-sos command-line tool.
-ms.date: 08/26/2020
+title: dotnet-sos diagnostic tool - .NET CLI
+description: Learn how to install and use the dotnet-sos CLI tool to manage the SOS debugger extension, which is used with native debuggers on Windows and Linux. 
+ms.date: 11/17/2020
 ---
 # SOS installer (dotnet-sos)
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-## Install dotnet-sos
+## Install
 
-To install the latest release version of the `dotnet-sos` [NuGet package](https://www.nuget.org/packages/dotnet-sos), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+There are two ways to download and install `dotnet-sos`:
 
-```dotnetcli
-dotnet tool install -g dotnet-sos
-```
+- **dotnet global tool:**
+
+  To install the latest release version of the `dotnet-sos` [NuGet package](https://www.nuget.org/packages/dotnet-sos), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+
+  ```dotnetcli
+  dotnet tool install --global dotnet-sos
+  ```
+
+- **Direct download:**
+
+  Download the tool executable that matches your platform:
+
+  | OS  | Platform |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-sos/win-x86) \| [x64](https://aka.ms/dotnet-sos/win-x64) \| [arm](https://aka.ms/dotnet-sos/win-arm) \| [arm-x64](https://aka.ms/dotnet-sos/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-sos/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-sos/linux-x64) \| [arm](https://aka.ms/dotnet-sos/linux-arm) \| [arm64](https://aka.ms/dotnet-sos/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-sos/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-sos/linux-musl-arm64) |
 
 ## Synopsis
 

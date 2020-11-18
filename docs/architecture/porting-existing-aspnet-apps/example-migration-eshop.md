@@ -284,7 +284,30 @@ bundles.Add(new StyleBundle("~/Content/css").Include(
           "~/Content/site.css"));
 ```
 
-The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine.
+Building again reveals one more error loading jQuery validation on the Create and Edit views. Replace it with this script:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" integrity="sha512-O/nUTF5mdFkhEoQHFn9N5wmgYyW323JO6v8kr6ltSRKriZyTr/8417taVWeabVS4iONGk2V444QD0P2cwhuTkg==" crossorigin="anonymous"></script>
+```
+
+The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can collect the data for this in `Startup` as static variables and then display them on the layout page. Add these two properties to `Startup.cs`:
+
+```csharp
+public static DateTime StartTime { get; } = DateTime.UtcNow;
+public static string MachineName { get; } = Environment.MachineName;
+```
+
+Then replace the content of the footer in the layout with code:
+
+```razor
+<section class="col-sm-6">
+    <img class="esh-app-footer-text hidden-xs" src="~/images/main_footer_text.png" width="335" height="26" alt="footer text image" />
+    <br />
+<small>@eShopPorted.Startup.MachineName - @eShopPorted.Startup.StartTime.ToString() UTC</small>
+</section>
+```
+
+At this point, the app once more builds successfully. However, trying to run it just yields "Hello World!" because the empty ASP.NET Core template is only configured to display that in response to any request. In the next section I complete the migration by configuring the app to use ASP.NET Core MVC, including dependency injection and configuration. Once that's in place, the app should run, and then it will be time to fix the `TODO:` tasks that were created earlier.
 
 ## Migrate app startup components
 
@@ -304,7 +327,7 @@ The last thing to fix in the views is the reference to `Session` to display how 
   - Pros and Cons of EF6 vs. EF Core
   - Upgrading to EF Core
 - Discuss other data providers
- 
+
 ## Fix all TODO tasks
 
 ## References

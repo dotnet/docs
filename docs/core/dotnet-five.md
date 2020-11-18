@@ -136,17 +136,17 @@ For more information on project templates from the .NET CLI, see [`dotnet new`](
 
 There are new features in and for [System.Text.Json](../standard/serialization/system-text-json-overview.md):
 
-- [Preserve references and handle circular references](../standard/serialization/system-text-json-how-to.md#preserve-references-and-handle-circular-references)
-- [HttpClient and HttpContent extension methods](../standard/serialization/system-text-json-how-to.md#httpclient-and-httpcontent-extension-methods)
-- [Allow or write numbers in quotes](../standard/serialization/system-text-json-how-to.md#allow-or-write-numbers-in-quotes)
-- [Support immutable types and C# 9 Records](../standard/serialization/system-text-json-how-to.md#immutable-types-and-records)
-- [Support non-public property accessors](../standard/serialization/system-text-json-how-to.md#non-public-property-accessors)
-- [support fields](../standard/serialization/system-text-json-how-to.md#include-fields)
-- [Conditionally ignore properties](../standard/serialization/system-text-json-how-to.md#ignore-properties)
+- [Preserve references and handle circular references](../standard/serialization/system-text-json-configure-options.md#preserve-references-and-handle-circular-references)
+- [HttpClient and HttpContent extension methods](../standard/serialization/system-text-json-configure-options.md#httpclient-and-httpcontent-extension-methods)
+- [Allow or write numbers in quotes](../standard/serialization/system-text-json-configure-options.md#allow-or-write-numbers-in-quotes)
+- [Support immutable types and C# 9 Records](../standard/serialization/system-text-json-configure-options.md#immutable-types-and-records)
+- [Support non-public property accessors](../standard/serialization/system-text-json-configure-options.md#non-public-property-accessors)
+- [support fields](../standard/serialization/system-text-json-customize-serialization.md#include-fields)
+- [Conditionally ignore properties](../standard/serialization/system-text-json-ignore-properties.md)
 - [Support non-string-key dictionaries](../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md#dictionary-with-non-string-key)
 - [Allow custom converters to handle null](../standard/serialization/system-text-json-converters-how-to.md#handle-null-values)
-- [Copy JsonSerializerOptions](../standard/serialization/system-text-json-how-to.md#copy-jsonserializeroptions)
-- [Create JsonSerializerOptions with web defaults](../standard/serialization/system-text-json-how-to.md#web-defaults-for-jsonserializeroptions)
+- [Copy JsonSerializerOptions](../standard/serialization/system-text-json-configure-options.md#copy-jsonserializeroptions)
+- [Create JsonSerializerOptions with web defaults](../standard/serialization/system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions)
 
 ## See also
 

@@ -22,7 +22,7 @@ Most of the serialization sample code sets <xref:System.Text.Json.JsonSerializer
 
 The code examples refer to the following class and variants of it:
 
-:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="SnippetWF":::
+:::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
 
 ## Namespaces
 
@@ -112,22 +112,22 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 ### Serialization behavior
 ::: zone pivot="dotnet-5-0"
 
-* By default, all public properties are serialized. You can [specify properties to ignore](#ignore-properties).
+* By default, all public properties are serialized. You can [specify properties to ignore](system-text-json-ignore-properties.md).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
-* By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
-* By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
-* By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references](#preserve-references-and-handle-circular-references).
-* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](#include-fields).
+* By default, JSON is minified. You can [pretty-print the JSON](system-text-json-customize-serialization.md#serialize-to-formatted-json).
+* By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](system-text-json-customize-properties.md).
+* By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references](system-text-json-configure-options.md#preserve-references-and-handle-circular-references).
+* By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](system-text-json-customize-serialization.md#include-fields).
 
-When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
 
-* By default, all public properties are serialized. You can [specify properties to ignore](#ignore-properties).
+* By default, all public properties are serialized. You can [specify properties to ignore](system-text-json-ignore-properties.md).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
-* By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
+* By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](system-text-json-customize-properties.md).
 * Circular references are detected and exceptions thrown.
 * [Fields](../../csharp/programming-guide/classes-and-structs/fields.md) are ignored.
 ::: zone-end
@@ -197,47 +197,30 @@ The following behaviors apply when deserializing JSON:
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Non-public constructors are ignored by the serializer.
-* Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](#immutable-types-and-records).
-* By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
-* By default, fields are ignored. You can [include fields](#include-fields).
-* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
+* Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](system-text-json-configure-options.md#immutable-types-and-records).
+* By default, enums are supported as numbers. You can [serialize enum names as strings](system-text-json-customize-properties.md#enums-as-strings).
+* By default, fields are ignored. You can [include fields](system-text-json-configure-options.md#include-fields).
+* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-configure-options.md#allow-comments-and-trailing-commas).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
-When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
+When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
 
-* By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching). ASP.NET Core apps [specify case-insensitivity by default](#web-defaults-for-jsonserializeroptions).
+* By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching). ASP.NET Core apps [specify case-insensitivity by default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * A parameterless constructor, which can be public, internal, or private, is used for deserialization.
 * Deserialization to immutable objects or read-only properties isn't supported.
-* By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
+* By default, enums are supported as numbers. You can [serialize enum names as strings](system-text-json-customize-properties.md#enums-as-strings).
 * Fields aren't supported.
-* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
+* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-configure-options.md#allow-comments-and-trailing-commas).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
 ::: zone-end
 
 You can [implement custom converters](system-text-json-converters-how-to.md) to provide functionality that isn't supported by the built-in converters.
-
-## HttpClient and HttpContent extension methods
-
-::: zone pivot="dotnet-5-0"
-
-Serializing and deserializing JSON payloads from the network are common operations. Extension methods on [HttpClient](xref:System.Net.Http.Json.HttpClientJsonExtensions) and [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions) let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
-
-The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
-
-There are also extension methods for System.Text.Json on [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-Extension methods on `HttpClient` and `HttpContent` are not available in System.Text.Json in .NET Core 3.1.
-::: zone-end
 
 ## See also
 

@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Comparing middleware to modules and handlers
 
-If your existing ASP.NET MVC or Web API app uses OWIN/Katana, you're most likely already familiar with the concept of middleware and porting it to ASP.NET Core should be fairly straightforward. However, most ASP.NET apps rely on HttpModules and HttpHandlers instead of middleware. Migrating these to ASP.NET Core requires additional effort.
+If your existing ASP.NET MVC or Web API app uses OWIN/Katana, you're most likely already familiar with the concept of middleware and porting it to ASP.NET Core should be fairly straightforward. However, most ASP.NET apps rely on HTTP modules and HTTP handlers instead of middleware. Migrating these to ASP.NET Core requires additional effort.
 
 ## ASP.NET modules and handlers
 
@@ -19,7 +19,7 @@ If your app is using custom HTTP modules or HTTP handlers, you will need a plan 
 
 ASP.NET Core defines a request pipeline in each app's `Configure` method. This request pipeline defines how an incoming request is handled by the app, with each method in the pipeline calling the next method until eventually a method terminates, and the chain of *middleware* terminates and returns back up the stack. Middleware can target all requests, or can be configured to only map to certain requests based on the requested path or other factors. It can be configured wholly in the `Configure` method of an app, or implemented in a separate class.
 
-Behavior in an ASP.NET MVC app that leverages HTTP Modules will probably be best suited to [custom middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.1). Custom HTTP handlers can be replaced with custom routes or endpoints that respond to the same path.
+Behavior in an ASP.NET MVC app that leverages HTTP modules will probably be best suited to [custom middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.1). Custom HTTP handlers can be replaced with custom routes or endpoints that respond to the same path.
 
 ## References
 

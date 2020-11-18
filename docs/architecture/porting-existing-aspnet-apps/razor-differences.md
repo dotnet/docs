@@ -15,7 +15,7 @@ Tag Helpers enable server-side code to participate in creating and rendering HTM
 
 ## Razor Pages
 
-Razor Pages offer an alternative to Controllers, Actions, and Views for page- and form-based apps. [Razor Pages were compared to ASP.NET MVC earlier in this chapter](./comparing-razor-pages-aspnet-mvc.md).
+Razor Pages offer an alternative to controllers, actions, and views for page- and form-based apps. [Razor Pages were compared to ASP.NET MVC earlier in this chapter](./comparing-razor-pages-aspnet-mvc.md).
 
 ## References
 

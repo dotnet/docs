@@ -138,7 +138,7 @@ app.UseEndpoints(endpoints =>
 });
 ```
 
-The above code snippet is used (in addition to UseRouting) to configure a variety of endpoints, including Health Checks, Controllers, and Razor Pages. For Controllers, the above configuration specifies a default routing convention, which is the fairly standard `{controller}/{action}/{id?}` pattern that's been recommended since the first versions of ASP.NET MVC.
+The above code snippet is used (in addition to `UseRouting`) to configure a variety of endpoints, including Health Checks, controllers, and Razor Pages. For controllers, the above configuration specifies a default routing convention, which is the fairly standard `{controller}/{action}/{id?}` pattern that's been recommended since the first versions of ASP.NET MVC.
 
 ### Attribute routing
 
@@ -160,7 +160,7 @@ public abstract class BaseApiController : ControllerBase, IApiController
 {}
 ```
 
-Using this attribute, classes inheriting from this type would route URLs to actions based on the controller name, action name, and an optional integer id parameter.
+Using this attribute, classes inheriting from this type would route URLs to actions based on the controller name, action name, and an optional integer `id` parameter.
 
 ## References
 

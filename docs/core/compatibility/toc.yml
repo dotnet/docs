@@ -87,6 +87,20 @@
           href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
         - name: WinHttpHandler removed from .NET runtime
           href: networking/5.0/winhttphandler-removed-from-runtime.md
+      - name: Serialization
+        items:
+        - name: BinaryFormatter.Deserialize rewraps exceptions
+          href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
+        - name: JsonSerializer.Deserialize requires single-character string
+          href: serialization/5.0/deserializing-json-into-char-requires-single-character.md
+        - name: ASP.NET Core apps deserialize quoted numbers
+          href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
+        - name: JsonSerializer.Serialize throws ArgumentNullException
+          href: serialization/5.0/jsonserializer-serialize-throws-argumentnullexception-for-null-type.md
+        - name: Non-public, parameterless constructors not used for deserialization
+          href: serialization/5.0/non-public-parameterless-constructors-not-used-for-deserialization.md
+        - name: Options are honored when serializing key-value pairs
+          href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
       - name: (This file will eventually go away)
         href: 3.1-5.0.md
     - name: .NET Core 3.1
@@ -195,7 +209,21 @@
       - name: .NET 2.0-3.0
         href: networking.md
     - name: Serialization
-      href: serialization.md
+      items:
+      - name: .NET 5.0
+        items:
+        - name: BinaryFormatter.Deserialize rewraps exceptions
+          href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
+        - name: JsonSerializer.Deserialize requires single-character string
+          href: serialization/5.0/deserializing-json-into-char-requires-single-character.md
+        - name: ASP.NET Core apps deserialize quoted numbers
+          href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
+        - name: JsonSerializer.Serialize throws ArgumentNullException
+          href: serialization/5.0/jsonserializer-serialize-throws-argumentnullexception-for-null-type.md
+        - name: Non-public, parameterless constructors not used for deserialization
+          href: serialization/5.0/non-public-parameterless-constructors-not-used-for-deserialization.md
+        - name: Options are honored when serializing key-value pairs
+          href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
     - name: Visual Basic
       href: visualbasic.md
     - name: Windows Forms

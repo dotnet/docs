@@ -1,8 +1,13 @@
-### JsonSerializer.Deserialize requires single-character string
+---
+title: "Breaking change: Deserialize requires single-character string"
+description: Learn about the breaking change in .NET 5.0 where JsonSerializer.Deserialize requires a single-character string.
+ms.date: 10/18/2020
+---
+# JsonSerializer.Deserialize requires single-character string
 
 When the type parameter is <xref:System.Char>, the string argument to <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> must contain a single character for deserialization to succeed.
 
-#### Change description
+## Change description
 
 In previous .NET versions, if you pass a multi-character string to <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> and the type parameter is <xref:System.Char>, the deserialization succeeds and only the first character is deserialized.
 
@@ -17,30 +22,30 @@ JsonSerializer.Deserialize<char>("\"abc\"");
 JsonSerializer.Deserialize<char>("\"a\"");
 ```
 
-#### Version introduced
+## Version introduced
 
 5.0
 
-#### Reason for change
+## Reason for change
 
 <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> parses text that represents a single JSON value into an instance of the type specified by the generic type parameter. Parsing should only succeed when the provided payload is valid for the specified generic type parameter. For a <xref:System.Char> value type, a valid payload is a single character string.
 
-#### Recommended action
+## Recommended action
 
 When parsing a string into a <xref:System.Char> type using <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType>, make sure the string consists of a single character.
 
-#### Category
-
-Serialization
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.String,System.Text.Json.JsonSerializerOptions)?displayProperty=fullName>
 
 <!--
 
-#### Affected APIs
+### Affected APIs
 
 - `M:System.Text.Json.JsonSerializer.Deserialize``1(System.String,System.Text.Json.JsonSerializerOptions)`
+
+### Category
+
+Serialization
 
 -->

@@ -31,18 +31,18 @@ Create a .NET console app project named "HelloWorld".
 
 1. On the start page, choose **Create a new project**.
 
-   ![Create a new project button selected on the Visual Studio start page](./media/with-visual-studio/start-window.png)
+   :::image type="content" source="./media/with-visual-studio/start-window.png" alt-text="Create a new project button selected on the Visual Studio start page":::
 
 1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console Application** template, and then choose **Next**.
 
-   ![Create a new project window with filters selected](./media/with-visual-studio/create-new-project.png)
+   :::image type="content" source="./media/with-visual-studio/create-new-project.png" alt-text="Create a new project window with filters selected":::
 
    > [!TIP]
    > If you don't see the .NET templates, you're probably missing the required workload. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. Make sure you have the **.NET Core cross-platform development** workload installed.
 
 1. In the **Configure your new project** dialog,  enter **HelloWorld** in the **Project name** box. Then choose **Create**.
 
-   ![Configure your new project window with Project name, location, and solution name fields](./media/with-visual-studio/configure-new-project.png)
+   :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
 
 1. In the **Additional information** dialog, select **.NET 5.0 (Current)**, and then select **Create**.
 
@@ -87,7 +87,7 @@ If the language you want to use is not shown, change the language selector at th
 
    A console window opens with the text "Hello World!" printed on the screen.
 
-   ![Console window showing Hello World Press any key to continue](./media/with-visual-studio/hello-world-console.png)
+   :::image type="content" source="./media/with-visual-studio/hello-world-console.png" alt-text="Console window showing Hello World Press any key to continue":::
 
 1. Press any key to close the console window.
 
@@ -110,7 +110,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
-   ![Console window with modified program output](./media/with-visual-studio/hello-world-update.png)
+   :::image type="content" source="./media/with-visual-studio/hello-world-update.png" alt-text="Console window with modified program output":::
 
 1. Press any key to close the console window.
 

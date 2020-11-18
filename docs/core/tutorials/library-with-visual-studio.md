@@ -31,7 +31,7 @@ To create the blank solution:
 
 3. On the **Create a new project** page, enter **solution** in the search box. Choose the **Blank Solution** template, and then choose **Next**.
 
-   ![Blank solution template in Visual Studio](media/library-with-visual-studio/blank-solution.png)
+   :::image type="content" source="media/library-with-visual-studio/blank-solution.png" alt-text="Blank solution template in Visual Studio":::
 
 4. On the **Configure your new project** page, enter **ClassLibraryProjects** in the **Project name** box. Then choose **Create**.
 
@@ -45,13 +45,13 @@ To create the blank solution:
 
    1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box, and then choose **Next**.
 
-   1. on the **Additional information** page, select **.NET 5.0 (Current)**, and then choose **Create**.
+   1. On the **Additional information** page, select **.NET 5.0 (Current)**, and then choose **Create**.
 
 1. Check to make sure that the library targets the correct version of .NET. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET 5.0.
 
 1. If you're using Visual Basic, clear the text in the **Root namespace** text box.
 
-   ![Project properties for the class library](./media/library-with-visual-studio/vb/library-project-properties.png)
+   :::image type="content" source="./media/library-with-visual-studio/vb/library-project-properties.png" alt-text="Project properties for the class library":::
 
    For each project, Visual Basic automatically creates a namespace that corresponds to the project name. In this tutorial, you define a top-level namespace by using the [`namespace`](../../visual-basic/language-reference/statements/namespace-statement.md) keyword in the code file.
 
@@ -97,21 +97,21 @@ Initially, the new console app project doesn't have access to the class library.
 
 1. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node, and select **Add Project Reference**.
 
-   ![Add reference context menu in Visual Studio](media/library-with-visual-studio/add-reference-context-menu.png)
+   :::image type="content" source="media/library-with-visual-studio/add-reference-context-menu.png" alt-text="Add reference context menu in Visual Studio":::
 
 1. In the **Reference Manager** dialog, select the **StringLibrary** project, and select **OK**.
 
-   ![Reference Manager dialog with StringLibrary selected](media/library-with-visual-studio/manage-project-references.png)
+   :::image type="content" source="media/library-with-visual-studio/manage-project-references.png" alt-text="Reference Manager dialog with StringLibrary selected":::
 
 ## Run the app
 
 1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu.
 
-   ![Visual Studio project context menu to set startup project](media/library-with-visual-studio/set-startup-project-context-menu.png)
+   :::image type="content" source="media/library-with-visual-studio/set-startup-project-context-menu.png" alt-text="Visual Studio project context menu to set startup project":::
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to compile and run the program without debugging.
 
-   ![Visual Studio project toolbar showing Debug button](media/library-with-visual-studio/visual-studio-project-toolbar.png)
+   :::image type="content" source="media/library-with-visual-studio/visual-studio-project-toolbar.png" alt-text="Visual Studio project toolbar showing Debug button":::
 
 1. Try out the program by entering strings and pressing <kbd>Enter</kbd>, then press <kbd>Enter</kbd> to exit.
 

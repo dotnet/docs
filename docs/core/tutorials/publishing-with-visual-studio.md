@@ -23,27 +23,27 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 1. Make sure that Visual Studio is using the Release build configuration. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
-   ![Visual Studio toolbar with release build selected](media/publishing-with-visual-studio/visual-studio-toolbar-release.png)
+   :::image type="content" source="media/publishing-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build selected":::
 
 1. Right-click on the **HelloWorld** project (not the HelloWorld solution) and select **Publish** from the menu.
 
-   ![Visual Studio Publish context menu](media/publishing-with-visual-studio/publish-context-menu.png)
+   :::image type="content" source="media/publishing-with-visual-studio/publish-context-menu.png" alt-text="Visual Studio Publish context menu":::
 
 1. On the **Target** tab of the **Publish** page, select **Folder**, and then select **Next**.
 
-   ![Pick a publish target in Visual Studio](media/publishing-with-visual-studio/pick-publish-target.png)
+   :::image type="content" source="media/publishing-with-visual-studio/pick-publish-target.png" alt-text="Pick a publish target in Visual Studio":::
 
 1. On the **Specific Target** tab of the **Publish** page, select **Folder**, and then select **Next**.
 
-   ![Pick the specific publish target in Visual Studio](media/publishing-with-visual-studio/pick-specific-publish-target.png)
+   :::image type="content" source="media/publishing-with-visual-studio/pick-specific-publish-target.png" alt-text="Pick the specific publish target in Visual Studio":::
 
 1. On the **Location** tab of the **Publish** page, select **Finish**.
 
-   ![Visual Studio Publish page Location tab](media/publishing-with-visual-studio/publish-page-loc-tab.png)
+   :::image type="content" source="media/publishing-with-visual-studio/publish-page-loc-tab.png" alt-text="Visual Studio Publish page Location tab":::
 
 1. On the **Publish** tab of the **Publish** window, select **Publish**.
 
-   ![Visual Studio Publish window](media/publishing-with-visual-studio/publish-page.png)
+   :::image type="content" source="media/publishing-with-visual-studio/publish-page.png" alt-text="Visual Studio Publish window":::
 
 ## Inspect the files
 

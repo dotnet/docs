@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to use System.Text.Json serialization options
+# How to work with JsonSerializerOptions instances
 
 In this article, you'll learn how to control serialization of C# objects with the <xref:System.Text.Json.JsonSerializerOptions> object.
 
@@ -49,7 +49,7 @@ To serialize all language sets without escaping, use <xref:System.Text.Unicode.U
 
 ### Serialize specific characters
 
-An alternative is to specify individual characters that you want to allow through without being escaped. The following example serializes only the first two characters of жарко:
+An alternative is to specify individual characters that you want to allow through without being escaped. The following example serializes only the first two characters of `жарко`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
 

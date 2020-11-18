@@ -96,15 +96,15 @@
       - name: .NET 5.0
         items:
         - name: Cryptography APIs not supported on browser
-          href: cryptography/cryptography-apis-not-supported-on-blazor-webassembly.md
+          href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
         - name: Cryptography.Oid is init-only
-          href: cryptography/cryptography-oid-init-only.md
+          href: cryptography/5.0/cryptography-oid-init-only.md
         - name: Default TLS cipher suites on Linux
-          href: cryptography/default-cipher-suites-for-tls-on-linux.md
+          href: cryptography/5.0/default-cipher-suites-for-tls-on-linux.md
         - name: Create() overloads on cryptographic abstractions are obsolete
-          href: cryptography/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md
+          href: cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md
         - name: Default FeedbackSize value changed
-          href: cryptography/tripledes-default-feedback-size-change.md
+          href: cryptography/5.0/tripledes-default-feedback-size-change.md
       - name: .NET Core 2.1-3.0
         href: cryptography.md
     - name: Entity Framework Core

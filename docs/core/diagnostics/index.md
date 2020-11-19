@@ -59,7 +59,7 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 ### PerfCollect
 
-[PerfCollect](trace-perfcollect-lttng.md) is a bash-script you can use to collect traces with `perf` and `LTTng` for a more in-depth performance analysis of .NET apps running on Linux distributions.
+[PerfCollect](trace-perfcollect-lttng.md) is a bash script you can use to collect traces with `perf` and `LTTng` for a more in-depth performance analysis of .NET apps running on Linux distributions.
 
 ## .NET Core diagnostics tutorials
 
@@ -77,4 +77,4 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 ### Measure performance using EventCounters
 
-[Tutorial: Measure performance using EventCounters in .NET](event-counter-perf.md) shows you how to use <xref:System.Diagnostics.Tracing.EventCounter> API to measure performance in your .NET app.
+[Tutorial: Measure performance using EventCounters in .NET](event-counter-perf.md) shows you how to use the <xref:System.Diagnostics.Tracing.EventCounter> API to measure performance in your .NET app.

@@ -1,8 +1,13 @@
-### Microsoft.DotNet.PlatformAbstractions package removed
+---
+title: "Breaking change: Microsoft.DotNet.PlatformAbstractions package removed"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+ms.date: 11/01/2020
+---
+# Microsoft.DotNet.PlatformAbstractions package removed
 
 No new versions of the [Microsoft.DotNet.PlatformAbstractions NuGet package](https://www.nuget.org/packages/Microsoft.DotNet.PlatformAbstractions/) will be produced.
 
-#### Change description
+## Change description
 
 Previously, new versions of the <xref:Microsoft.DotNet.PlatformAbstractions?displayProperty=fullName> library were produced alongside new versions of .NET Core. Going forward, no new functionality will be added to the library, and no new major versions will be released. However, existing versions of the library will continue to work and be serviced.
 
@@ -10,11 +15,11 @@ The <xref:Microsoft.DotNet.PlatformAbstractions?displayProperty=fullName> librar
 
 The scenarios enabled by the <xref:Microsoft.DotNet.PlatformAbstractions?displayProperty=fullName> library are now possible without it. Existing versions will continue to work, even in .NET 5.0 and later, and will be serviced along with previous versions of .NET Core. However, new functionality won't be added to the library. Instead, new functionality will be added to other libraries and APIs.
 
-#### Version introduced
+## Version introduced
 
-5.0 Preview 6
+5.0
 
-#### Recommended action
+## Recommended action
 
 - You can continue to use older versions of the library if they meet your requirements.
 
@@ -31,13 +36,9 @@ The scenarios enabled by the <xref:Microsoft.DotNet.PlatformAbstractions?display
   | `RuntimeEnvironment.OperatingSystemVersion` | <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType> and <xref:System.Environment.OSVersion?displayProperty=nameWithType> |
 
   > [!NOTE]
-  > Most use cases for `RuntimeEnvironment.OperatingSystem` and `RuntimeEnvironment.OperatingSystemVersion` are for display purposes, for example, displaying to a user, logging, and telemetry. It's not recommended to make run-time decisions based on an operating system (OS) version. <xref:System.Environment.OSVersion?displayProperty=nameWithType> now [returns the correct version](../../../../docs/core/compatibility/corefx.md#environmentosversion-returns-the-correct-operating-system-version) for Windows and macOS operating systems. However, for most Unix distributions, what is considered to be the "OS version" is not as straightforward. For example, it could be the Linux kernel version, or it could be the distro version. For most Unix platforms, <xref:System.Environment.OSVersion?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType> return the version that's returned by `uname`. To get the Linux distro name and version information, the recommended approach is to read the */etc/os-release* file.
+  > Most use cases for `RuntimeEnvironment.OperatingSystem` and `RuntimeEnvironment.OperatingSystemVersion` are for display purposes, for example, displaying to a user, logging, and telemetry. It's not recommended to make run-time decisions based on an operating system (OS) version. <xref:System.Environment.OSVersion?displayProperty=nameWithType> now [returns the correct version](../../../../core/compatibility/corefx.md#environmentosversion-returns-the-correct-operating-system-version) for Windows and macOS operating systems. However, for most Unix distributions, what is considered to be the "OS version" is not as straightforward. For example, it could be the Linux kernel version, or it could be the distro version. For most Unix platforms, <xref:System.Environment.OSVersion?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.RuntimeInformation.OSDescription?displayProperty=nameWithType> return the version that's returned by `uname`. To get the Linux distro name and version information, the recommended approach is to read the */etc/os-release* file.
 
-#### Category
-
-Core .NET libraries
-
-#### Affected APIs
+## Affected APIs
 
 - `Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath`
 - <xref:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner?displayProperty=fullName>
@@ -49,7 +50,11 @@ Core .NET libraries
 
 <!--
 
-#### Affected APIs
+## Category
+
+Core .NET libraries
+
+### Affected APIs
 
 - `P:Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath`
 - `T:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner`

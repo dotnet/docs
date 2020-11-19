@@ -1,14 +1,19 @@
-### Vector\<T> always throws NotSupportedException for unsupported types
+---
+title: "Breaking change: Vector\<T> always throws NotSupportedException for unsupported types"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+ms.date: 11/01/2020
+---
+# Vector\<T> always throws NotSupportedException for unsupported types
 
 <xref:System.Numerics.Vector%601?displayProperty=nameWithType> now always throws a <xref:System.NotSupportedException> for unsupported type parameters.
 
-#### Change description
+## Change description
 
 Previously, members of <xref:System.Numerics.Vector%601> would not always throw a <xref:System.NotSupportedException> when `T` was an [unsupported type](#unsupported-types). The exception wasn't always thrown because of code paths that supported hardware acceleration. For example, `Vector<bool> + Vector<bool>` returned `default` instead of throwing an exception on platforms that have no hardware acceleration, such as ARM32. For unsupported types, <xref:System.Numerics.Vector%601> members exhibited inconsistent behavior across different platforms and hardware configurations.
 
 Starting in .NET 5.0, <xref:System.Numerics.Vector%601> members always throw a <xref:System.NotSupportedException> on all hardware configurations when `T` is not a supported type.
 
-##### Unsupported types
+### Unsupported types
 
 The supported types for the type parameter of <xref:System.Numerics.Vector%601> are:
 
@@ -25,25 +30,25 @@ The supported types for the type parameter of <xref:System.Numerics.Vector%601> 
 
 The supported types have not changed, however, they may change in the future.
 
-#### Version introduced
+## Version introduced
 
-5.0 Preview 8
+5.0
 
-#### Recommended action
+## Recommended action
 
 Don't use an unsupported type for the type parameter of <xref:System.Numerics.Vector%601>.
 
-#### Category
-
-Core .NET libraries
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Numerics.Vector%601?displayProperty=fullName> and all its members
 
 <!--
 
-#### Affected APIs
+### Category
+
+Core .NET libraries
+
+### Affected APIs
 
 - ``T:System.Numerics.Vector`1``
 

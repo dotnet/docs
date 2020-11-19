@@ -1,8 +1,13 @@
-### LastIndexOf has improved handling of empty search strings
+---
+title: "Breaking change: LastIndexOf has improved handling of empty search strings"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+ms.date: 11/01/2020
+---
+# LastIndexOf has improved handling of empty search strings
 
 <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> and related APIs now return correct values when searching for a zero-length (or zero-length equivalent) substring within a larger string.
 
-#### Change description
+## Change description
 
 In .NET Framework and .NET Core 1.0 - 3.1, <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> and related APIs might return an incorrect value when the caller searches for a zero-length substring.
 
@@ -24,25 +29,21 @@ Console.WriteLine(span.LastIndexOf("")); // prints '5' (correct)
 
 In these examples, `5` is the correct answer because `"Hello".Substring(5)` and `"Hello".AsSpan().Slice(5)` both produce an empty string, which is trivially equal to the empty substring that is sought.
 
-#### Reason for change
+## Reason for change
 
 This change was part of an overall bug fixing effort around string handling for .NET 5. It also helps unify our behavior between Windows and non-Windows platforms. For more information, see [dotnet/runtime#13383](https://github.com/dotnet/runtime/issues/13383) and [dotnet/runtime##13382](https://github.com/dotnet/runtime/issues/13382).
 
-#### Version introduced
+## Version introduced
 
 5.0
 
-#### Recommended action
+## Recommended action
 
 You don't need to take any action. The .NET 5.0 runtime provides the new behaviors automatically.
 
 There is no compatibility switch to restore the old behavior.
 
-#### Category
-
-Core .NET libraries
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.String.LastIndexOf%2A?displayProperty=fullName>
 - <xref:System.Globalization.CompareInfo.LastIndexOf%2A?displayProperty=fullName>
@@ -50,7 +51,11 @@ Core .NET libraries
 
 <!--
 
-#### Affected APIs
+## Category
+
+Core .NET libraries
+
+### Affected APIs
 
 - `Overload:System.String.LastIndexOf`
 - `Overload:System.Globalization.CompareInfo.LastIndexOf`

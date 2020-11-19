@@ -1,10 +1,15 @@
-### Global assembly cache APIs are obsolete
+---
+title: "Breaking change: Global assembly cache APIs are obsolete"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+ms.date: 11/01/2020
+---
+# Global assembly cache APIs are obsolete
 
 .NET Core and .NET 5.0 and later versions eliminate the concept of the global assembly cache (GAC) that was present in .NET Framework. As such, all .NET Core and .NET 5+ APIs that deal with the GAC either fail or perform no operation.
 
 To help steer developers away from these APIs, some GAC-related APIs are marked as obsolete, and generate a `SYSLIB0005` warning at compile time. These APIs may be removed in a future version of .NET.
 
-#### Change description
+## Change description
 
 The following APIs are marked obsolete.
 
@@ -30,15 +35,15 @@ Console.WriteLine(asm.GlobalAssemblyCache);
 
 This is a compile-time only change. There is no run-time change from previous versions of .NET Core.
 
-#### Reason for change
+## Reason for change
 
 The global assembly cache (GAC) does not exist as a concept in .NET Core and .NET 5.0 and later versions.
 
-#### Version introduced
+## Version introduced
 
 .NET 5.0
 
-#### Recommended action
+## Recommended action
 
 - If your application queries the <xref:System.Reflection.Assembly.GlobalAssemblyCache> property, consider removing the call. If you use the <xref:System.Reflection.Assembly.GlobalAssemblyCache> value to choose between an "assembly in the GAC"-flow vs. an "assembly not in the GAC"-flow at run time, reconsider whether the flow still makes sense for a .NET Core or .NET 5.0+ application.
 
@@ -66,17 +71,17 @@ The global assembly cache (GAC) does not exist as a concept in .NET Core and .NE
 
   Suppressing `SYSLIB0005` disables only the <xref:System.Reflection.Assembly.GlobalAssemblyCache> obsoletion warning. It does not disable any other warnings.
 
-#### Category
-
-Core .NET libraries
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Reflection.Assembly.GlobalAssemblyCache?displayProperty=fullName>
 
 <!--
 
-#### Affected APIs
+## Category
+
+Core .NET libraries
+
+### Affected APIs
 
 - `P:System.Reflection.Assembly.GlobalAssemblyCache`
 

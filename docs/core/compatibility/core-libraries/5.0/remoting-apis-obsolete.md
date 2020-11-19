@@ -1,8 +1,13 @@
-### Remoting APIs are obsolete
+---
+title: "Breaking change: Remoting APIs are obsolete"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+ms.date: 11/01/2020
+---
+# Remoting APIs are obsolete
 
 Some remoting-related APIs are marked as obsolete and generate a `SYSLIB0010` warning at compile time. These APIs may be removed in a future version of .NET.
 
-#### Change description
+## Change description
 
 The following remoting APIs are marked obsolete.
 
@@ -24,19 +29,19 @@ obj.InitializeLifetimeService();
 
 This is a compile-time only change. There is no run-time change from previous versions of .NET Core.
 
-#### Reason for change
+## Reason for change
 
 [.NET remoting](/previous-versions/dotnet/netframework-1.1/kwdt6w2k(v=vs.71)) is a legacy technology. It allows instantiating an object in another process (potentially even on a different machine) and interacting with that object as if it were an ordinary, in-process .NET object instance. The .NET remoting infrastructure only exists in .NET Framework 2.x - 4.x. .NET Core and .NET 5.0 and later versions don't have support for .NET remoting, and the remoting APIs either don't exist or always throw exceptions on these runtimes.
 
 To help steer developers away from these APIs, we are obsoleting selected remoting-related APIs. These APIs may be removed entirely in a future version of .NET.
 
-#### Version introduced
+## Version introduced
 
 .NET 5.0
 
-#### Recommended action
+## Recommended action
 
-- Consider using WCF or HTTP-based REST services to communicate with objects in other applications or across machines. For more information, see [.NET Framework technologies unavailable on .NET Core](../../../../docs/core/porting/net-framework-tech-unavailable.md).
+- Consider using WCF or HTTP-based REST services to communicate with objects in other applications or across machines. For more information, see [.NET Framework technologies unavailable on .NET Core](../../../porting/net-framework-tech-unavailable.md).
 
 - If you must continue to use the obsolete APIs, you can suppress the `SYSLIB0010` warning in code.
 
@@ -62,18 +67,18 @@ To help steer developers away from these APIs, we are obsoleting selected remoti
 
   Suppressing `SYSLIB0010` disables only the remoting API obsoletion warnings. It does not disable any other warnings. Additionally, it doesn't change the hardcoded run-time behavior of always throwing <xref:System.PlatformNotSupportedException>.
 
-#### Category
-
-Core .NET libraries
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.MarshalByRefObject.GetLifetimeService?displayProperty=fullName>
 - <xref:System.MarshalByRefObject.InitializeLifetimeService?displayProperty=fullName>
 
 <!--
 
-#### Affected APIs
+### Category
+
+Core .NET libraries
+
+### Affected APIs
 
 - `M:System.MarshalByRefObject.GetLifetimeService`
 - `M:System.MarshalByRefObject.InitializeLifetimeService`

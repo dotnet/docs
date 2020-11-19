@@ -1,10 +1,15 @@
-### Parameter names changed in reference assemblies
+---
+title: "Breaking change: Parameter names changed in reference assemblies"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+ms.date: 11/01/2020
+---
+# Parameter names changed in reference assemblies
 
 Some reference assembly parameter names have changed to match parameter names in the implementation assemblies.
 
-#### Change description
+## Change description
 
-In previous .NET versions, some [reference assembly](../../../../docs/standard/assembly/reference-assemblies.md) parameter names are different to their corresponding parameters in the implementation assembly. This can cause problems while using named arguments and reflection.
+In previous .NET versions, some [reference assembly](../../../../standard/assembly/reference-assemblies.md) parameter names are different to their corresponding parameters in the implementation assembly. This can cause problems while using named arguments and reflection.
 
 In .NET 5.0, these mismatched parameter names were updated in the reference assemblies to exactly match the corresponding parameter names in the implementation assemblies.
 
@@ -29,23 +34,19 @@ The following table shows the APIs and parameter names that changed.
 | <xref:System.StringNormalizationExtensions.Normalize(System.String,System.Text.NormalizationForm)?displayProperty=nameWithType> | `value` | `strInput` |
 | <xref:System.StringNormalizationExtensions.Normalize(System.String)?displayProperty=nameWithType> | `value` | `strInput` |
 
-#### Reason for change
+## Reason for change
 
 The parameter names were changed for consistency and to avoid failures when using named arguments and reflection.
 
-#### Version introduced
+## Version introduced
 
 5.0
 
-#### Recommended action
+## Recommended action
 
 If you encounter a compiler error due to a parameter name change, update the parameter name accordingly.
 
-#### Category
-
-Core .NET libraries
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.CodeDom.Compiler.CodeGenerator.GenerateStatements(System.CodeDom.CodeStatementCollection)?displayProperty=fullName>
 - <xref:System.ComponentModel.ParenthesizePropertyNameAttribute.Equals(System.Object)?displayProperty=fullName>
@@ -66,7 +67,11 @@ Core .NET libraries
 
 <!--
 
-#### Affected APIs
+### Category
+
+Core .NET libraries
+
+### Affected APIs
 
 - `M:System.CodeDom.Compiler.CodeGenerator.GenerateStatements(System.CodeDom.CodeStatementCollection)`
 - `M:System.Diagnostics.StackFrame.#ctor(System.Boolean)`

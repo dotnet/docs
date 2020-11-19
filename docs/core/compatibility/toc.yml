@@ -23,8 +23,70 @@
         items:
         - name: ASP.NET Core apps deserialize quoted numbers
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
+        - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
+          href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
+        - name: Resource in endpoint routing is HttpContext
+          href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
+        - name: Microsoft-prefixed Azure integration packages removed
+          href: aspnet-core/5.0/azure-integration-packages-removed.md
+        - name: "Blazor: Updated browser support"
+          href: aspnet-core/5.0/blazor-browser-support-updated.md
+        - name: "Blazor: Insignificant whitespace trimmed by compiler"
+          href: aspnet-core/5.0/blazor-components-trim-insignificant-whitespace.md
+        - name: "Blazor: JSObjectReference and JSInProcessObjectReference types are internal"
+          href: aspnet-core/5.0/blazor-jsobjectreference-to-internal.md
+        - name: "Blazor: Target framework of NuGet packages changed"
+          href: aspnet-core/5.0/blazor-packages-target-framework-changed.md
+        - name: "Blazor: ProtectedBrowserStorage feature moved to shared framework"
+          href: aspnet-core/5.0/blazor-protectedbrowserstorage-moved.md
+        - name: "Blazor: RenderTreeFrame readonly public fields are now properties"
+          href: aspnet-core/5.0/blazor-rendertreeframe-fields-become-properties.md
+        - name: "Blazor: Updated validation logic for static web assets"
+          href: aspnet-core/5.0/blazor-static-web-assets-validation-logic-updated.md
         - name: Cryptography APIs not supported on browser
           href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
+        - name: "Extensions: Package reference changes"
+          href: aspnet-core/5.0/extensions-package-reference-changes.md
+        - name: Kestrel and IIS BadHttpRequestException types are obsolete
+          href: aspnet-core/5.0/http-badhttprequestexception-obsolete.md
+        - name: HttpClient instances created by IHttpClientFactory log integer status codes
+          href: aspnet-core/5.0/http-httpclient-instances-log-integer-status-codes.md
+        - name: "HttpSys: Client certificate renegotiation disabled by default"
+          href: aspnet-core/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md
+        - name: "IIS: UrlRewrite middleware query strings are preserved"
+          href: aspnet-core/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md
+        - name: "Kestrel: Configuration changes detected by default"
+          href: aspnet-core/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md
+        - name: "Kestrel: Default supported TLS protocol versions changed"
+          href: aspnet-core/5.0/kestrel-default-supported-tls-protocol-versions-changed.md
+        - name: "Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions"
+          href: aspnet-core/5.0/kestrel-disables-http2-over-tls.md
+        - name: "Kestrel: Libuv transport marked as obsolete"
+          href: aspnet-core/5.0/kestrel-libuv-transport-obsolete.md
+        - name: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed
+          href: aspnet-core/5.0/localization-members-removed.md
+        - name: Pubternal APIs removed
+          href: aspnet-core/5.0/localization-pubternal-apis-removed.md
+        - name: Obsolete constructor removed in request localization middleware
+          href: aspnet-core/5.0/localization-requestlocalizationmiddleware-constructor-removed.md
+        - name: "Middleware: Database error page marked as obsolete"
+          href: aspnet-core/5.0/middleware-database-error-page-obsolete.md
+        - name: Exception handler middleware throws original exception
+          href: aspnet-core/5.0/middleware-exception-handler-throws-original-exception.md
+        - name: ObjectModelValidator calls a new overload of Validate
+          href: aspnet-core/5.0/mvc-objectmodelvalidator-calls-new-overload.md
+        - name: Cookie name encoding removed
+          href: aspnet-core/5.0/security-cookie-name-encoding-removed.md
+        - name: IdentityModel NuGet package versions updated
+          href: aspnet-core/5.0/security-identitymodel-nuget-package-versions-updated.md
+        - name: "SignalR: MessagePack Hub Protocol options type changed"
+          href: aspnet-core/5.0/signalr-messagepack-hub-protocol-options-changed.md
+        - name: "SignalR: MessagePack Hub Protocol moved"
+          href: aspnet-core/5.0/signalr-messagepack-package.md
+        - name: UseSignalR and UseConnections methods removed
+          href: aspnet-core/5.0/signalr-usesignalr-useconnections-removed.md
+        - name: CSV content type changed to standards-compliant
+          href: aspnet-core/5.0/static-files-csv-content-type-changed.md
       - name: Code analysis
         items:
         - name: CA1416 warning
@@ -149,8 +211,70 @@
         items:
         - name: ASP.NET Core apps deserialize quoted numbers
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
+        - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
+          href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
+        - name: Resource in endpoint routing is HttpContext
+          href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
+        - name: Microsoft-prefixed Azure integration packages removed
+          href: aspnet-core/5.0/azure-integration-packages-removed.md
+        - name: "Blazor: Updated browser support"
+          href: aspnet-core/5.0/blazor-browser-support-updated.md
+        - name: "Blazor: Insignificant whitespace trimmed by compiler"
+          href: aspnet-core/5.0/blazor-components-trim-insignificant-whitespace.md
+        - name: "Blazor: JSObjectReference and JSInProcessObjectReference types are internal"
+          href: aspnet-core/5.0/blazor-jsobjectreference-to-internal.md
+        - name: "Blazor: Target framework of NuGet packages changed"
+          href: aspnet-core/5.0/blazor-packages-target-framework-changed.md
+        - name: "Blazor: ProtectedBrowserStorage feature moved to shared framework"
+          href: aspnet-core/5.0/blazor-protectedbrowserstorage-moved.md
+        - name: "Blazor: RenderTreeFrame readonly public fields are now properties"
+          href: aspnet-core/5.0/blazor-rendertreeframe-fields-become-properties.md
+        - name: "Blazor: Updated validation logic for static web assets"
+          href: aspnet-core/5.0/blazor-static-web-assets-validation-logic-updated.md
         - name: Cryptography APIs not supported on browser
           href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
+        - name: "Extensions: Package reference changes"
+          href: aspnet-core/5.0/extensions-package-reference-changes.md
+        - name: Kestrel and IIS BadHttpRequestException types are obsolete
+          href: aspnet-core/5.0/http-badhttprequestexception-obsolete.md
+        - name: HttpClient instances created by IHttpClientFactory log integer status codes
+          href: aspnet-core/5.0/http-httpclient-instances-log-integer-status-codes.md
+        - name: "HttpSys: Client certificate renegotiation disabled by default"
+          href: aspnet-core/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md
+        - name: "IIS: UrlRewrite middleware query strings are preserved"
+          href: aspnet-core/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md
+        - name: "Kestrel: Configuration changes detected by default"
+          href: aspnet-core/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md
+        - name: "Kestrel: Default supported TLS protocol versions changed"
+          href: aspnet-core/5.0/kestrel-default-supported-tls-protocol-versions-changed.md
+        - name: "Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions"
+          href: aspnet-core/5.0/kestrel-disables-http2-over-tls.md
+        - name: "Kestrel: Libuv transport marked as obsolete"
+          href: aspnet-core/5.0/kestrel-libuv-transport-obsolete.md
+        - name: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed
+          href: aspnet-core/5.0/localization-members-removed.md
+        - name: Pubternal APIs removed
+          href: aspnet-core/5.0/localization-pubternal-apis-removed.md
+        - name: Obsolete constructor removed in request localization middleware
+          href: aspnet-core/5.0/localization-requestlocalizationmiddleware-constructor-removed.md
+        - name: "Middleware: Database error page marked as obsolete"
+          href: aspnet-core/5.0/middleware-database-error-page-obsolete.md
+        - name: Exception handler middleware throws original exception
+          href: aspnet-core/5.0/middleware-exception-handler-throws-original-exception.md
+        - name: ObjectModelValidator calls a new overload of Validate
+          href: aspnet-core/5.0/mvc-objectmodelvalidator-calls-new-overload.md
+        - name: Cookie name encoding removed
+          href: aspnet-core/5.0/security-cookie-name-encoding-removed.md
+        - name: IdentityModel NuGet package versions updated
+          href: aspnet-core/5.0/security-identitymodel-nuget-package-versions-updated.md
+        - name: "SignalR: MessagePack Hub Protocol options type changed"
+          href: aspnet-core/5.0/signalr-messagepack-hub-protocol-options-changed.md
+        - name: "SignalR: MessagePack Hub Protocol moved"
+          href: aspnet-core/5.0/signalr-messagepack-package.md
+        - name: UseSignalR and UseConnections methods removed
+          href: aspnet-core/5.0/signalr-usesignalr-useconnections-removed.md
+        - name: CSV content type changed to standards-compliant
+          href: aspnet-core/5.0/static-files-csv-content-type-changed.md
       - name: .NET Core 3.0-3.1
         href: aspnetcore.md
     - name: Code analysis

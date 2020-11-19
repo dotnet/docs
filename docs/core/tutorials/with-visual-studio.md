@@ -1,42 +1,52 @@
 ---
-title: Create a .NET Core console application using Visual Studio
-description: Learn how to create a .NET Core console application with C# or Visual Basic using Visual Studio.
+title: Create a .NET console application using Visual Studio
+description: Learn how to create a .NET console application with C# or Visual Basic using Visual Studio.
 ms.date: 06/08/2020
 dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet"
 ---
-# Tutorial: Create a .NET Core console application using Visual Studio
+# Tutorial: Create a .NET console application using Visual Studio
 
-This tutorial shows how to create and run a .NET Core console application in Visual Studio 2019.
+This tutorial shows how to create and run a .NET console application in Visual Studio 2019.
 
 ## Prerequisites
 
-- [Visual Studio 2019 version 16.6 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. The .NET Core 3.1 SDK is automatically installed when you select this workload.
+- [Visual Studio 2019 version 16.8 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. The .NET 5.0 SDK is automatically installed when you select this workload.
 
-  For more information, see [Install the .NET Core SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
+  For more information, see [Install the .NET SDK with Visual Studio](../install/windows.md#install-with-visual-studio).
 
 ## Create the app
 
-Create a .NET Core console app project named "HelloWorld".
+Create a .NET console app project named "HelloWorld".
 
 1. Start Visual Studio 2019.
 
+1. Select **Tools** > **Options** > **Environment** > **Preview features**, and then select **Show all .NET Core templates in the New project (requires restart)**.
+
+   :::image type="content" source="media/with-visual-studio/dotnet-options.png" alt-text="Show all .NET templates option":::
+
+1. Close and reopen Visual Studio.
+
 1. On the start page, choose **Create a new project**.
 
-   ![Create a new project button selected on the Visual Studio start page](./media/with-visual-studio/start-window.png)
+   :::image type="content" source="./media/with-visual-studio/start-window.png" alt-text="Create a new project button selected on the Visual Studio start page":::
 
-1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
+1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console Application** template, and then choose **Next**.
 
-   ![Create a new project window with filters selected](./media/with-visual-studio/create-new-project.png)
+   :::image type="content" source="./media/with-visual-studio/create-new-project.png" alt-text="Create a new project window with filters selected":::
 
    > [!TIP]
-   > If you don't see the .NET Core templates, you're probably missing the required workload. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. Make sure you have the **.NET Core cross-platform development** workload installed.
+   > If you don't see the .NET templates, you're probably missing the required workload. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. Make sure you have the **.NET Core cross-platform development** workload installed.
 
 1. In the **Configure your new project** dialog,  enter **HelloWorld** in the **Project name** box. Then choose **Create**.
 
-   ![Configure your new project window with Project name, location, and solution name fields](./media/with-visual-studio/configure-new-project.png)
+   :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configure your new project window with Project name, location, and solution name fields":::
+
+1. In the **Additional information** dialog, select **.NET 5.0 (Current)**, and then select **Create**.
+
+   :::image type="content" source="media/with-visual-studio/additional-info.png" alt-text="Additional information dialog":::
 
 The template creates a simple "Hello World" application. It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window.
 
@@ -75,9 +85,9 @@ If the language you want to use is not shown, change the language selector at th
 
 1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
-   A console window opens with the text "Hello World!" printed on the screen and some Visual Studio debug information.
+   A console window opens with the text "Hello World!" printed on the screen.
 
-   ![Console window showing Hello World Press any key to continue](./media/with-visual-studio/hello-world-console.png)
+   :::image type="content" source="./media/with-visual-studio/hello-world-console.png" alt-text="Console window showing Hello World Press any key to continue":::
 
 1. Press any key to close the console window.
 
@@ -100,13 +110,17 @@ Enhance the application to prompt the user for their name and display it along w
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
-   ![Console window with modified program output](./media/with-visual-studio/hello-world-update.png)
+   :::image type="content" source="./media/with-visual-studio/hello-world-update.png" alt-text="Console window with modified program output":::
 
 1. Press any key to close the console window.
 
+## Additional resources
+
+- [Current releases and long-term support releases](../releases-and-support.md#net-core-and-net-5-version-lifecycles)
+
 ## Next steps
 
-In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
+In this tutorial, you created a .NET console application. In the next tutorial, you debug the app.
 
 > [!div class="nextstepaction"]
-> [Debug a .NET Core console application using Visual Studio](debugging-with-visual-studio.md)
+> [Debug a .NET console application using Visual Studio](debugging-with-visual-studio.md)

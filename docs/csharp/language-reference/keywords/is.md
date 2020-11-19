@@ -11,16 +11,14 @@ ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
 ---
 # is (C# Reference)
 
-The `is` operator checks if the result of an expression is compatible with a given type, or (starting with C# 7.0) tests an expression against a pattern. For information about the type-testing `is` operator see the [is operator](../operators/type-testing-and-cast.md#is-operator) section of the [Type-testing and cast operators](../operators/type-testing-and-cast.md) article.
+The `is` operator checks if the result of an expression is compatible with a given type, or (starting with C# 7.0) tests an expression against a pattern. For information about the type-testing `is` operator, see the [is operator](../operators/type-testing-and-cast.md#is-operator) section of the [Type-testing and cast operators](../operators/type-testing-and-cast.md) article.
 
 ## Pattern matching with `is`
 
 Starting with C# 7.0, the `is` and [switch](switch.md) statements support pattern matching. The `is` keyword supports the following patterns:
 
-- [Type pattern](#type-pattern), which tests whether an expression can be converted to a specified type and, if it can be, casts it to a variable of that type.
-
+- [Type pattern](#type-pattern), which tests whether an expression can be converted to a specified type and, if it can be, casts the variable to a variable of that type.
 - [Constant pattern](#constant-pattern), which tests whether an expression evaluates to a specified constant value.
-
 - [var pattern](#var-pattern), a match that always succeeds and binds the value of an expression to a new local variable.
 
 ### Type pattern
@@ -33,19 +31,16 @@ When using the type pattern to perform pattern matching, `is` tests whether an e
 
 Where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`.
 
-The `is` expression is `true` if *expr* isn't `null`, and any of the following is true:
+The `is` expression is `true` if *expr* isn't `null`, and any of the following conditions is true:
 
 - *expr* is an instance of the same type as *type*.
-
 - *expr* is an instance of a type that derives from *type*. In other words, the result of *expr* can be upcast to an instance of *type*.
-
 - *expr* has a compile-time type that is a base class of *type*, and *expr* has a runtime type that is *type* or is derived from *type*. The *compile-time type* of a variable is the variable's type as defined in its declaration. The *runtime type* of a variable is the type of the instance that is assigned to that variable.
-
 - *expr* is an instance of a type that implements the *type* interface.
 
 Beginning with C# 7.1, *expr* may have a compile-time type defined by a generic type parameter and its constraints.
 
-If *expr* is `true` and `is` is used with an `if` statement, *varname* is assigned within the `if` statement only. The scope of *varname* is from the `is` expression to the end of the block enclosing the `if` statement. Using *varname* in any other location generates a compile-time error for use of a variable that has not been assigned.
+If *expr* is `true` and `is` is used with an `if` statement, *varname* is assigned within the `if` statement only. The scope of *varname* is from the `is` expression to the end of the block enclosing the `if` statement. Using *varname* in any other location generates a compile-time error for use of a variable that hasn't been assigned.
 
 The following example uses the `is` type pattern to provide the implementation of a type's <xref:System.IComparable.CompareTo(System.Object)?displayProperty=nameWithType> method.
 
@@ -98,6 +93,8 @@ Checking for `null` can be performed using the constant pattern. The `null` keyw
 The following example shows a comparison of `null` checks:
 
 [!code-csharp[is#11](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern11.cs#11)]
+
+The expression `x is null` is computed differently for reference types and nullable value types. For nullable value types, it uses <xref:System.Nullable%601.HasValue?displayProperty=nameWithType>. For reference types, it uses `x == null`.
 
 ### var pattern
 

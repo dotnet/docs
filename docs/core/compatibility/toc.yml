@@ -21,6 +21,8 @@
       items:
       - name: ASP.NET Core
         items:
+        - name: ASP.NET Core apps deserialize quoted numbers
+          href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
         - name: Cryptography APIs not supported on browser
           href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
       - name: Code analysis
@@ -145,6 +147,8 @@
       items:
       - name: .NET 5.0
         items:
+        - name: ASP.NET Core apps deserialize quoted numbers
+          href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
         - name: Cryptography APIs not supported on browser
           href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
       - name: .NET Core 3.0-3.1

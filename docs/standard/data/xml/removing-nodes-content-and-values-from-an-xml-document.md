@@ -1,7 +1,6 @@
 ---
 title: "Removing Nodes, Content, and Values from an XML Document"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: d818a29a-6ee5-4725-97c4-78cf60a156b6
 ---
 # Removing Nodes, Content, and Values from an XML Document

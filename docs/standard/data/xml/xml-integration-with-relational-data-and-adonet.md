@@ -1,7 +1,6 @@
 ---
 title: "XML Integration with Relational Data and ADO.NET"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: f6ebb1a1-f2ca-49b9-92c9-0150940cf6e6
 ---
 # XML Integration with Relational Data and ADO.NET

@@ -1,15 +1,15 @@
 ---
-title: Debug a .NET Core console application using Visual Studio Code
-description: Learn how to debug a .NET Core console app using Visual Studio Code.
+title: Debug a .NET console application using Visual Studio Code
+description: Learn how to debug a .NET console app using Visual Studio Code.
 ms.date: 05/26/2020
 ---
-# Tutorial: Debug a .NET Core console application using Visual Studio Code
+# Tutorial: Debug a .NET console application using Visual Studio Code
 
-This tutorial introduces the debugging tools available in Visual Studio Code for working with .NET Core apps.
+This tutorial introduces the debugging tools available in Visual Studio Code for working with .NET apps.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application using Visual Studio Code](with-visual-studio-code.md).
+- This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
 
 ## Use Debug build configuration
 
@@ -21,7 +21,7 @@ By default, Visual Studio Code launch settings use the Debug build configuration
 
 1. Start Visual Studio Code.
 
-1. Open the folder of the project that you created in [Create a .NET Core console application using Visual Studio Code](with-visual-studio-code.md).
+1. Open the folder of the project that you created in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
 
 ## Set a breakpoint
 
@@ -218,4 +218,4 @@ dotnet run --configuration Release
 In this tutorial, you used Visual Studio Code debugging tools. In the next tutorial, you publish a deployable version of the app.
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application using Visual Studio Code](publishing-with-visual-studio-code.md)
+> [Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)

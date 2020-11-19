@@ -1504,7 +1504,7 @@ namespace ObjectServicesConceptsCS
                         entityCollection.Count);
 
                     if (contains == false)
-                        Console.WriteLine("The removed entity is not in in the collection any more.");
+                        Console.WriteLine("The removed entity is not in the collection any more.");
 
                     //Use IRelatedEnd to add the entity back.
                     relEnd.Add(newSalesOrder1);

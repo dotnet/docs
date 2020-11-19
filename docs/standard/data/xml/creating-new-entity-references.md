@@ -1,7 +1,6 @@
 ---
 title: "Creating New Entity References"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: a42f81b3-0403-4e34-b346-7d2129804e54
 ---
 # Creating New Entity References

@@ -2,7 +2,6 @@
 title: "Regular Expression Example: Scanning for HREFs"
 description: See an example of regular expressions in .NET. The example searches an input string and displays all href attribute values and their locations.
 ms.date: "06/30/2020"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

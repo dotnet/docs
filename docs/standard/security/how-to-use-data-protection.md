@@ -2,7 +2,6 @@
 title: "How to: Use Data Protection"
 description: Learn how to use data protection by accessing the data protection API (DPAPI) in .NET.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

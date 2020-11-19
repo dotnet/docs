@@ -1,7 +1,6 @@
 ---
 title: "Inferring Schemas from XML Documents"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

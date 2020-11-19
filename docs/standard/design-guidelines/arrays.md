@@ -1,7 +1,6 @@
 ---
 title: "Arrays"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "class library design guidelines [.NET Framework], arrays"
   - "arrays [.NET Framework], usage guidelines"

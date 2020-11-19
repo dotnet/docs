@@ -1,7 +1,6 @@
 ---
 title: "How to: Use JoinBlock to Read Data From Multiple Sources"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

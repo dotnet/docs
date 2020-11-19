@@ -1,7 +1,6 @@
 ---
 title: "Observer Design Pattern Best Practices"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "observer design pattern [.NET], best practices"
   - "best practices [.NET], observer design pattern"

@@ -1,8 +1,7 @@
 ---
 title: "Hashtable and Dictionary Collection Types"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
-helpviewer_keywords: 
+\helpviewer_keywords: 
   - "Hashtable class, grouping data in collections"
   - "Hashtable collection type"
   - "hash tables"

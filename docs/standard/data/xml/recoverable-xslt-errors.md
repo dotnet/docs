@@ -1,7 +1,6 @@
 ---
 title: "Recoverable XSLT Errors"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 484929b0-fefb-4629-87ee-ebdde70ff1f8
 ---
 # Recoverable XSLT Errors

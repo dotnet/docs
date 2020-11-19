@@ -1,7 +1,6 @@
 ---
 title: "Best Practices for Developing World-Ready Applications"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "global applications, best practices"
   - "world-ready applications, best practices"

@@ -1,10 +1,10 @@
 ---
 title: Read environmental conditions from a sensor
-description: Learn how .NET can be used to build applications for IoT devices and scenarios.
+description: Learn how to read termperature, barometric pressure, and humidity with the .NET IoT Libraries.
 author: camsoper
 ms.author: casoper
-ms.date: 11/2/2020
-ms.topic: overview
+ms.date: 11/14/2020
+ms.topic: tutorial
 ms.prod: dotnet
 ---
 

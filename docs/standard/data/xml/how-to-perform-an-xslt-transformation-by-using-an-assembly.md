@@ -1,7 +1,6 @@
 ---
 title: "How to: Perform an XSLT Transformation by Using an Assembly"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

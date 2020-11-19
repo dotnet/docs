@@ -1,7 +1,6 @@
 ---
 title: "Extending XSLT Style Sheets"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: df4ba2bf-a99e-4d22-bbf3-04fc67669dbc
 ---
 # Extending XSLT Style Sheets

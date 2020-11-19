@@ -184,5 +184,5 @@ You can see both the SDK versions and runtime versions with the command `dotnet 
 ## Next steps
 
 - [Install the .NET Runtime and SDK for Windows](windows.md).
-- [Install the .NET Runtime and SDK for MacOS](linux.md).
-- [Install the .NET Runtime and SDK for Linux](macos.md).
+- [Install the .NET Runtime and SDK for macOS](macos.md).
+- [Install the .NET Runtime and SDK for Linux](linux.md).

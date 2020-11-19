@@ -1,8 +1,7 @@
 ---
 title: "Managed and Unmanaged Threading in Windows"
 ms.date: "10/24/2018"
-ms.technology: dotnet-standard
-helpviewer_keywords: 
+elpviewer_keywords: 
   - "threading [.NET], unmanaged"
   - "threading [.NET], managed"
   - "threading [.NET], managed"

@@ -155,7 +155,7 @@ namespace Microsoft.ServiceModel.Samples
     }
     //</snippet6>
 
-    // This custom IdentityVerifier uses the supplied OrgEndpointIdentity to check that that
+    // This custom IdentityVerifier uses the supplied OrgEndpointIdentity to check that
     // X.509 certificate's distinguished name claim contains the organization name; for example, O=Contoso.
     //<snippet5>
     class CustomIdentityVerifier : IdentityVerifier

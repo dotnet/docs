@@ -1,6 +1,6 @@
 ---
 title: dotnet tool update command
-description: The dotnet tool update command updates the specified .NET Core tool on your machine.
+description: The dotnet tool update command updates the specified .NET tool on your machine.
 ms.date: 07/08/2020
 ---
 # dotnet tool update
@@ -9,7 +9,7 @@ ms.date: 07/08/2020
 
 ## Name
 
-`dotnet tool update` - Updates the specified [.NET Core tool](global-tools.md) on your machine.
+`dotnet tool update` - Updates the specified [.NET tool](global-tools.md) on your machine.
 
 ## Synopsis
 
@@ -38,7 +38,7 @@ dotnet tool update -h|--help
 
 ## Description
 
-The `dotnet tool update` command provides a way for you to update .NET Core tools on your machine to the latest stable version of the package. The command uninstalls and reinstalls a tool, effectively updating it. To use the command, you specify one of the following options:
+The `dotnet tool update` command provides a way for you to update .NET tools on your machine to the latest stable version of the package. The command uninstalls and reinstalls a tool, effectively updating it. To use the command, you specify one of the following options:
 
 * To update a global tool that was installed in the default location, use the `--global` option
 * To update a global tool that was installed in a custom location, use the `--tool-path` option.
@@ -50,7 +50,7 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
 - **`PACKAGE_ID`**
 
-  Name/ID of the NuGet package that contains the .NET Core global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
+  Name/ID of the NuGet package that contains the .NET global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
 
@@ -138,7 +138,7 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
 ## See also
 
-- [.NET Core tools](global-tools.md)
+- [.NET tools](global-tools.md)
 - [Semantic versioning](https://semver.org)
-- [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
-- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)

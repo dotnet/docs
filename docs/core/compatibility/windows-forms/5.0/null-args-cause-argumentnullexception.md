@@ -1,26 +1,27 @@
-### WinForms methods now throw ArgumentNullException
+---
+title: "Breaking change: WinForms methods now throw ArgumentNullException"
+description: Learn about the breaking change in .NET 5.0 where some Windows Forms methods now throw an ArgumentNullException for null arguments.
+ms.date: 09/18/2020
+---
+# WinForms methods now throw ArgumentNullException
 
 Some Windows Forms methods now throw an <xref:System.ArgumentNullException> for null arguments, where previously they threw a <xref:System.NullReferenceException>.
 
-#### Change description
+## Change description
 
 Previously, certain Windows Forms methods threw a <xref:System.NullReferenceException> if passed an argument that was null. Starting in .NET 5.0, these methods now throw an <xref:System.ArgumentNullException> for null arguments, instead.
 
 Throwing an <xref:System.ArgumentNullException> conforms to the behavior of the .NET runtime. It also improves the debugging experience by clearly communicating that an argument is null and which argument it is.
 
-#### Version introduced
+## Version introduced
 
 .NET 5.0
 
-#### Recommended action
+## Recommended action
 
 If you call any of these methods and your code currently catches a <xref:System.NullReferenceException> for null arguments, catch an <xref:System.ArgumentNullException> instead. In addition, consider updating the code to prevent passing null arguments to the listed methods.
 
-#### Category
-
-Windows Forms
-
-#### Affected APIs
+## Affected APIs
 
 The following table lists the affected methods and parameters:
 
@@ -53,9 +54,9 @@ The following table lists the affected methods and parameters:
 > | <xref:System.Windows.Forms.ListView.ListViewItemCollection.Find(System.String,System.Boolean)?displayProperty=nameWithType> | `key` is `null` or empty | RC1 |
 > | <xref:System.Windows.Forms.ScrollableControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)?displayProperty=nameWithType> | `e` | RC1 |
 
-<!-- 
+<!--
 
-#### Affected APIs
+### Affected APIs
 
 - `M:System.Windows.Forms.Control.ControlCollection.#ctor(System.Windows.Forms.Control)`
 - `M:System.Windows.Forms.TabControl.GetToolTipText(System.Object)`
@@ -82,5 +83,9 @@ The following table lists the affected methods and parameters:
 - `M:System.Windows.Forms.TreeNodeCollection.Find(System.String,System.Boolean)`
 - `M:System.Windows.Forms.ListView.ListViewItemCollection.Find(System.String,System.Boolean)`
 - `M:System.Windows.Forms.ScrollableControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)`
+
+### Category
+
+Windows Forms
 
 -->

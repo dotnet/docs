@@ -19,6 +19,10 @@
     items:
     - name: .NET 5.0
       items:
+      - name: ASP.NET Core
+        items:
+        - name: Cryptography APIs not supported on browser
+          href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
       - name: Code analysis
         items:
         - name: CA1416 warning
@@ -101,6 +105,32 @@
           href: serialization/5.0/non-public-parameterless-constructors-not-used-for-deserialization.md
         - name: Options are honored when serializing key-value pairs
           href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
+      - name: Windows Forms
+        items:
+        - name: OutputType set to WinExe
+          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+        - name: DataGridView doesn't reset custom fonts
+          href: windows-forms/5.0/datagridview-doesnt-reset-custom-font-settings.md
+        - name: Methods throw ArgumentException
+          href: windows-forms/5.0/invalid-args-cause-argumentexception.md
+        - name: Methods throw ArgumentNullException
+          href: windows-forms/5.0/null-args-cause-argumentnullexception.md
+        - name: Properties throw ArgumentOutOfRangeException
+          href: windows-forms/5.0/invalid-args-cause-argumentoutofrangeexception.md
+        - name: TextFormatFlags.ModifyString is obsolete
+          href: windows-forms/5.0/modifystring-field-of-textformatflags-obsolete.md
+        - name: DataGridView APIs throw InvalidOperationException
+          href: windows-forms/5.0/null-owner-causes-invalidoperationexception.md
+        - name: WinForms apps use Microsoft.NET.Sdk
+          href: windows-forms/5.0/sdk-and-target-framework-change.md
+        - name: Removed status bar controls
+          href: windows-forms/5.0/winforms-deprecated-controls.md
+      - name: WPF
+        items:
+        - name: OutputType set to WinExe
+          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+        - name: WPF apps use Microsoft.NET.Sdk
+          href: windows-forms/5.0/sdk-and-target-framework-change.md
       - name: (This file will eventually go away)
         href: 3.1-5.0.md
     - name: .NET Core 3.1
@@ -112,7 +142,13 @@
   - name: Breaking changes by area
     items:
     - name: ASP.NET Core
-      href: aspnetcore.md
+      items:
+      - name: .NET 5.0
+        items:
+        - name: Cryptography APIs not supported on browser
+          href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
+      - name: .NET Core 3.0-3.1
+        href: aspnetcore.md
     - name: Code analysis
       items:
       - name: .NET 5.0
@@ -227,9 +263,37 @@
     - name: Visual Basic
       href: visualbasic.md
     - name: Windows Forms
-      href: winforms.md
+      items:
+      - name: .NET 5.0
+        items:
+        - name: OutputType set to WinExe
+          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+        - name: DataGridView doesn't reset custom fonts
+          href: windows-forms/5.0/datagridview-doesnt-reset-custom-font-settings.md
+        - name: Methods throw ArgumentException
+          href: windows-forms/5.0/invalid-args-cause-argumentexception.md
+        - name: Methods throw ArgumentNullException
+          href: windows-forms/5.0/null-args-cause-argumentnullexception.md
+        - name: Properties throw ArgumentOutOfRangeException
+          href: windows-forms/5.0/invalid-args-cause-argumentoutofrangeexception.md
+        - name: TextFormatFlags.ModifyString is obsolete
+          href: windows-forms/5.0/modifystring-field-of-textformatflags-obsolete.md
+        - name: DataGridView APIs throw InvalidOperationException
+          href: windows-forms/5.0/null-owner-causes-invalidoperationexception.md
+        - name: WinForms apps use Microsoft.NET.Sdk
+          href: windows-forms/5.0/sdk-and-target-framework-change.md
+        - name: Removed status bar controls
+          href: windows-forms/5.0/winforms-deprecated-controls.md
+      - name: .NET Core 3.0-3.1
+        href: winforms.md
     - name: WPF
-      href: wpf.md
+      items:
+      - name: .NET 5.0
+        items:
+        - name: OutputType set to WinExe
+          href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+        - name: WPF apps use Microsoft.NET.Sdk
+          href: windows-forms/5.0/sdk-and-target-framework-change.md
   - name: SYSLIB warnings
     items:
     - name: Overview

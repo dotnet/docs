@@ -84,7 +84,7 @@
 
 		'<SnippetInput_OvwHandlingInputKeyDownHandler>
 		Private Sub OnOverviewKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-			' If the "A" key is is pressed, open a MessageBox.
+			' If the "A" key is pressed, open a MessageBox.
 			If e.Key = Key.A Then
 				MessageBox.Show("The A key was pressed!")
 			End If

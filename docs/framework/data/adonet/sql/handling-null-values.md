@@ -88,7 +88,7 @@ WHERE TerritoryID IN (1, 2, 3)
   
  In addition, the following rules apply for an instance of `DataRow.["columnName"]` null assignments:  
   
-1. The default *default* value is `DbNull.Value` for all except the strongly typed null columns where it is the appropriate strongly typed null value.  
+1. The *default* value is `DbNull.Value` for all except the strongly typed null columns where it is the appropriate strongly typed null value.  
   
 2. Null values are never written out during serialization to XML files (as in "xsi:nil").  
   

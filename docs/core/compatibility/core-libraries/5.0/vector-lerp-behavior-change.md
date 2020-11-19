@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Behavior change for Vector2.Lerp and Vector4.Lerp"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where the implementation of Vector2.Lerp and Vector4.Lerp changed to correctly account for a floating-point rounding error.
 ms.date: 11/01/2020
 ---
 # Behavior change for Vector2.Lerp and Vector4.Lerp

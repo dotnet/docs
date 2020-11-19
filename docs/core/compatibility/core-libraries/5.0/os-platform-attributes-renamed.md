@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: OSPlatform attributes renamed or removed"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where OS platform attributes that were introduced in a preview version have been removed or renamed.
 ms.date: 11/01/2020
 ---
 # OSPlatform attributes renamed or removed

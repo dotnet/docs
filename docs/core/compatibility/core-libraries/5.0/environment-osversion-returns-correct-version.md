@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Environment.OSVersion returns the correct operating system version"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where Environment.OSVersion returns the actual version of the operating system instead of, for example, the OS that's selected for application compatibility.
 ms.date: 11/01/2020
 ---
 # Environment.OSVersion returns the correct operating system version

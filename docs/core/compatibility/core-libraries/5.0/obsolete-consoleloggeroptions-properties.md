@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Obsolete properties on ConsoleLoggerOptions"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where the ConsoleLoggerFormat type and some properties on ConsoleLoggerOptions are now obsolete.
 ms.date: 11/01/2020
 ---
 # Obsolete properties on ConsoleLoggerOptions

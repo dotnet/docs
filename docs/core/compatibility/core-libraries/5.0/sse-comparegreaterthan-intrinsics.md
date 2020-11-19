@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: SSE and SSE2 CompareGreaterThan methods properly handle NaN inputs"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where SSE and SSE2 comparison methods have been fixed to properly handle NaN inputs.
 ms.date: 11/01/2020
 ---
 # SSE and SSE2 CompareGreaterThan methods properly handle NaN inputs

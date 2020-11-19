@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: API obsoletions with non-default diagnostic IDs"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
 ms.date: 11/01/2020
 ---
 # API obsoletions with non-default diagnostic IDs

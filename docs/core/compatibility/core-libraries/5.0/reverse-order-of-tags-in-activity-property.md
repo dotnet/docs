@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Order of tags in Activity.Tags is reversed"
-description: Learn about the .NET 5.0 breaking change in core .NET libraries where ."
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where Activity.Tags now stores items in the list according to the order they are added.
 ms.date: 11/01/2020
 ---
 # Order of tags in Activity.Tags is reversed

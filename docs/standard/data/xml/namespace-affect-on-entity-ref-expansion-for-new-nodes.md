@@ -1,7 +1,6 @@
 ---
 title: "Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 64359aee-aab0-4042-9a32-d19789af6ca7
 ---
 # Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes

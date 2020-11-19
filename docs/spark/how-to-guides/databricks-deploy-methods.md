@@ -17,7 +17,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
 1. Navigate to your Databricks Workspace and create a job. Choose a title for your job, and then select **Configure spark-submit**. Paste the following parameters in the job configuration, then select **Confirm**.
 
     ```
-    ["--files","/dbfs/<path-to>/<app assembly/file to deploy to worker>","--class","org.apache.spark.deploy.dotnet.DotnetRunner","/dbfs/<path-to>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar","/dbfs/<path-to>/<app name>.zip","<app bin name>","app arg1","app arg2"]
+    ["--files","/dbfs/<path-to>/<app assembly/file to deploy to worker>","--class","org.apache.spark.deploy.dotnet.DotnetRunner","/dbfs/<path-to>/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar","/dbfs/<path-to>/<app name>.zip","<app bin name>","app arg1","app arg2"]
     ```
 
     > [!NOTE]
@@ -35,7 +35,7 @@ Alternatively, you can use [Set Jar](/azure/databricks/jobs#--create-a-job) in y
 
 1. Navigate to your Databricks cluster and select **Jobs** from the left-side menu, followed by **Set JAR**.
 
-2. Upload the appropriate `microsoft-spark-<spark-version>-<spark-dotnet-version>.jar`.
+2. Upload the appropriate `microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar`.
 
 3. Modify the following parameters to include the correct name for the executable that you published in place of `<your-app-name>`:
 

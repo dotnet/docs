@@ -1,7 +1,6 @@
 ---
 title: "Type Design Guidelines"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "type design guidelines"
   - "type design guidelines, about type design guidelines"

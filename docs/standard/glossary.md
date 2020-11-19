@@ -1,8 +1,7 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 10/13/2020
-ms.technology: dotnet-standard
+ms.date: 11/16/2020
 ---
 # .NET Glossary
 
@@ -50,11 +49,18 @@ An assembly may include types such as interfaces, classes, structures, enumerati
 
 ## BCL
 
-Base Class Library. Also known as *framework libraries*.
+Base Class Library.
 
 A set of libraries that comprise the System.\* (and to a limited extent Microsoft.\*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on.
 
-The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). The majority of the BCL APIs for this newer implementation of .NET are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
+The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). The majority of these BCL APIs are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
+
+The following terms often refer to the same collection of APIs that BCL refers to:
+
+- [core .NET libraries](../core/compatibility/3.1-5.0.md#core-net-libraries)
+- [framework libraries](#framework-libraries)
+- [runtime libraries](#runtime)
+- [shared framework](#shared-framework)
 
 ## CLR
 
@@ -100,12 +106,18 @@ In general, a comprehensive collection of APIs that facilitates development and 
 
 The word "framework" has a different meaning in the following terms:
 
+- [framework libraries](#framework-libraries)
 - [.NET Framework](#net-framework)
+- [shared framework](#shared-framework)
 - [target framework](#target-framework)
 - [TFM (target framework moniker)](#tfm)
 - [framework-dependent app](../core/deploying/index.md#publish-framework-dependent)
 
-In legacy .NET documentation, "framework" sometimes refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET 5 a framework.
+Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET 5 a framework.
+
+## framework libraries
+
+Meaning depends on context. May refer to the framework libraries for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions), in which case it refers to the same libraries that [BCL](#bcl) refers to. It may also refer to the ASP.NET Core framework libraries, which build on the BCL and provide additional APIs for web apps.
 
 ## GC
 
@@ -139,7 +151,7 @@ An implementation of .NET includes:
 Examples of .NET implementations:
 
 - [.NET Framework](#net-framework)
-- [.NET 5 and later versions (including .NET Core 2.1-3.1](#net-5-and-later-versions)
+- [.NET 5 and later versions (including .NET Core 2.1-3.1)](#net-5-and-later-versions)
 - [Universal Windows Platform (UWP)](#uwp)
 - [Mono](#mono)
 
@@ -252,21 +264,34 @@ In general, the execution environment for a managed program. The OS is part of t
 - .NET Native (for UWP)
 - Mono runtime
 
-The word "runtime" has a different meaning in the following contexts:
+The word "runtime" has a different meaning in some contexts:
 
-* The [.NET download page](https://dotnet.microsoft.com/download).
+* *.NET runtime* on the [.NET 5.0 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
 
-  "Runtime" here means the [CLR](#clr) together with the [BCL](#bcl) (framework libraries), that you can download and install on a machine so that you can run [framework-dependent](../core/deploying/index.md#publish-framework-dependent) apps on the machine.
+  You can download the *.NET runtime* or other runtimes, such as the *ASP.NET Core runtime*. A *runtime* in this usage is the set of components that must be installed on a machine to run a [framework-dependent](../core/deploying/index.md#publish-framework-dependent) app on the machine. The .NET runtime includes the [CLR](#clr) and the .NET [shared framework](#shared-framework), which provides the [BCL](#bcl).
 
-* The [Runtime Identifier (RID)](../core/rid-catalog.md) for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+* *.NET runtime libraries*
 
-  "Runtime" here means the OS platform and CPU architecture that a .NET app runs on, for example: `linux-x64`.
+  Refers to the same libraries that [BCL](#bcl) refers to. However, other runtimes, such as the ASP.NET Core runtime, have different [shared frameworks](#shared-framework), with additional libraries that build on the BCL.
 
-Legacy .NET documentation sometimes uses "runtime" in the sense of an [implementation of .NET](#implementation-of-net), as in the following examples:
+* [Runtime Identifier (RID)](../core/rid-catalog.md).
 
-- "The various .NET runtimes implement specific versions of .NET Standard."
-- "Libraries that are intended to run on multiple runtimes should target this framework." (referring to .NET Standard)
-- "The various .NET runtimes implement specific versions of .NET Standard. … Each .NET runtime version advertises the highest .NET Standard version it supports …"
+  *Runtime* here means the OS platform and CPU architecture that a .NET app runs on, for example: `linux-x64`.
+
+* Sometimes "runtime" is used in the sense of an [implementation of .NET](#implementation-of-net), as in the following examples:
+
+  - "The various .NET runtimes implement specific versions of .NET Standard. … Each .NET runtime version advertises the highest .NET Standard version it supports …"
+  - "Libraries that are intended to run on multiple runtimes should target this framework." (referring to .NET Standard)
+
+## shared framework
+
+Meaning depends on context. The *.NET shared framework* refers to the libraries included in the [.NET runtime](#runtime). In this case, the *shared framework* for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) refers to the same libraries that [BCL](#bcl) refers to.
+
+There are other shared frameworks. The *ASP.NET Core shared framework* refers to the libraries included in the [ASP.NET Core runtime](#runtime), which includes the BCL plus additional APIs for use by web apps.
+
+For [framework-dependent apps](../core/deploying/index.md#publish-framework-dependent), the shared framework consists of libraries that are contained in assemblies installed in a folder on the machine that runs the app. For [self-contained apps](../core/deploying/index.md#publish-self-contained), the shared framework assemblies are included with the app.
+
+For more information, see [Deep-dive into .NET Core primitives, part 2: the shared framework](https://natemcmaster.com/blog/2018/08/29/netcore-primitives-2/).
 
 ## stack
 

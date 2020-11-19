@@ -1,7 +1,6 @@
 ---
 title: "XSLT Security Considerations"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: fea695be-617c-4977-9567-140e820436fc
 ---
 # XSLT Security Considerations

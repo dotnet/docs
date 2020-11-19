@@ -1,7 +1,6 @@
 ---
 title: "Parameter Design"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "member design guidelines [.NET Framework], parameters"
   - "members [.NET Framework], parameters"

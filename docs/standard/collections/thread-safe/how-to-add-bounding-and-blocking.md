@@ -1,7 +1,6 @@
 ---
 title: "How to: Add Bounding and Blocking Functionality to a Collection"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "thread-safe collections, custom blocking collections"
 ms.assetid: 4c2492de-3876-4873-b5a1-000bb404d770

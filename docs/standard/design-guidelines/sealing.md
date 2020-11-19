@@ -1,7 +1,6 @@
 ---
 title: "Sealing"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "limiting extensibility"
   - "classes [.NET Framework], sealing"

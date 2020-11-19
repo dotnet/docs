@@ -1,7 +1,6 @@
 ---
 title: "Interface Design"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "interfaces [.NET Framework], design guidelines"
   - "type design guidelines, interfaces"

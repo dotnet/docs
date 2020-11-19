@@ -1,6 +1,6 @@
 ---
 title: dotnet tool search command
-description: The dotnet tool search command searches the .NET Core tools that are published to NuGet.org.
+description: The dotnet tool search command searches the .NET tools that are published to NuGet.org.
 ms.date: 11/11/2020
 ---
 # dotnet tool search
@@ -9,7 +9,7 @@ ms.date: 11/11/2020
 
 ## Name
 
-`dotnet tool search` - Searches all [.NET Core tools](global-tools.md) that are published to NuGet.
+`dotnet tool search` - Searches all [.NET tools](global-tools.md) that are published to NuGet.
 
 ## Synopsis
 
@@ -94,6 +94,6 @@ The command uses the [NuGet Search API](/nuget/api/search-query-service-resource
 
 ## See also
 
-- [.NET Core tools](global-tools.md)
-- [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
-- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)
+- [.NET tools](global-tools.md)
+- [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)

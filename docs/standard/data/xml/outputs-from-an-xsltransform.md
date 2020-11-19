@@ -1,7 +1,6 @@
 ---
 title: "Outputs from an XslTransform"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 8e149d32-4b2f-493f-9e4b-d0d93475acde
 ---
 # Outputs from an XslTransform

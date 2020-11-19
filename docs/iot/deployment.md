@@ -1,16 +1,16 @@
 ---
 title: Deploy .NET apps to Raspberry Pi
-description: Learn how .NET can be used to build applications for IoT devices and scenarios.
+description: Learn how to deploy .NET apps to Raspberry Pi.
 author: camsoper
 ms.author: casoper
-ms.date: 11/2/2020
-ms.topic: overview
+ms.date: 11/13/2020
+ms.topic: how-to
 ms.prod: dotnet
 ---
 
 # Deploy .NET apps to Raspberry Pi
 
-Deployment of .NET apps to Raspberry Pi is the identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](/dotnet/core/deploying).
+Deployment of .NET apps to Raspberry Pi is identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](/dotnet/core/deploying).
 
 ## Deploying a framework-dependent app
 

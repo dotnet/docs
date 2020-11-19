@@ -1,7 +1,6 @@
 ---
 title: "Member Overloading"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "default arguments"
   - "members [.NET Framework], overloaded"

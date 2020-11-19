@@ -1,7 +1,6 @@
 ---
 title: "Dynamic Updates to NodeLists and NamedNodeMaps"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 76c511fd-6704-4ca4-8078-860a68d898ad
 ---
 # Dynamic Updates to NodeLists and NamedNodeMaps

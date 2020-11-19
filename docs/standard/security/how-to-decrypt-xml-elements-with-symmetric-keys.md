@@ -1,7 +1,6 @@
 ---
 title: "How to: Decrypt XML Elements with Symmetric Keys"
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

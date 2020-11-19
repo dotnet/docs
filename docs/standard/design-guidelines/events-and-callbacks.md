@@ -1,7 +1,6 @@
 ---
 title: "Events and Callbacks"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "events [.NET Framework], extensibility"
   - "methods [.NET Framework], callback"

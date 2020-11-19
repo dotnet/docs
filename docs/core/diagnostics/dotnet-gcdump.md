@@ -1,19 +1,33 @@
 ---
-title: dotnet-gcdump - .NET Core
-description: Installing and using the dotnet-gcdump command-line tool.
-ms.date: 07/26/2020
+title: dotnet-gcdump diagnostic tool - .NET CLI
+description: Learn how to install and use dotnet-gcdump CLI tool to collect GC (Garbage Collector) dumps of live .NET processes using the .NET EventPipe.
+ms.date: 11/17/2020
 ---
 # Heap analysis tool (dotnet-gcdump)
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-## Install dotnet-gcdump
+## Install
 
-To install the latest release version of the `dotnet-gcdump` [NuGet package](https://www.nuget.org/packages/dotnet-gcdump), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+There are two ways to download and install `dotnet-gcdump`:
 
-```dotnetcli
-dotnet tool install -g dotnet-gcdump
-```
+- **dotnet global tool:**
+
+  To install the latest release version of the `dotnet-gcdump` [NuGet package](https://www.nuget.org/packages/dotnet-gcdump), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+
+  ```dotnetcli
+  dotnet tool install --global dotnet-gcdump
+  ```
+
+- **Direct download:**
+
+  Download the tool executable that matches your platform:
+
+  | OS  | Platform |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-gcdump/win-x86) \| [x64](https://aka.ms/dotnet-gcdump/win-x64) \| [arm](https://aka.ms/dotnet-gcdump/win-arm) \| [arm-x64](https://aka.ms/dotnet-gcdump/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-gcdump/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-gcdump/linux-x64) \| [arm](https://aka.ms/dotnet-gcdump/linux-arm) \| [arm64](https://aka.ms/dotnet-gcdump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64) |
 
 ## Synopsis
 
@@ -23,7 +37,7 @@ dotnet-gcdump [-h|--help] [--version] <command>
 
 ## Description
 
-The `dotnet-gcdump` global tool is a way to collect GC (Garbage Collector) dumps of live .NET processes. It uses the EventPipe technology, which is a cross-platform alternative to ETW on Windows. GC dumps are created by triggering a GC in the target process, turning on special events, and regenerating the graph of object roots from the event stream. This process allows for GC dumps to be collected while the process is running and with minimal overhead. These dumps are useful for several scenarios:
+The `dotnet-gcdump` global tool collects GC (Garbage Collector) dumps of live .NET processes using [EventPipe](./eventpipe.md). GC dumps are created by triggering a GC in the target process, turning on special events, and regenerating the graph of object roots from the event stream. This process allows for GC dumps to be collected while the process is running and with minimal overhead. These dumps are useful for several scenarios:
 
 - Comparing the number of objects on the heap at several points in time.
 - Analyzing roots of objects (answering questions like, "what still has a reference to this type?").

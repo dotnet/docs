@@ -1137,7 +1137,7 @@ Class Source1
                 Console.WriteLine("EntityCollection count after one entity has been removed: {0}", entityCollection.Count)
 
                 If contains = False Then
-                    Console.WriteLine("The removed entity is not in in the collection any more.")
+                    Console.WriteLine("The removed entity is not in the collection any more.")
                 End If
 
                 'Use IRelatedEnd to add the entity back. 

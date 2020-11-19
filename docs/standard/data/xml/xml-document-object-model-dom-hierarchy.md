@@ -1,7 +1,6 @@
 ---
 title: "XML Document Object Model (DOM) Hierarchy"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 9d187d4f-c76e-4223-a670-cc290783ce47
 ---
 # XML Document Object Model (DOM) Hierarchy

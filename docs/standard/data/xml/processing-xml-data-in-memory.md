@@ -1,7 +1,6 @@
 ---
 title: "Processing XML Data In-Memory"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 1bbb4d05-ead7-4bda-8ece-f86d35c57ad4
 ---
 # Processing XML Data In-Memory

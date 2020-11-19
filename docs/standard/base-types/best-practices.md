@@ -2,7 +2,6 @@
 title: Best Practices for Regular Expressions in .NET
 description: Learn how to create efficient, effective regular expressions in .NET.
 ms.date: "06/30/2020"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"

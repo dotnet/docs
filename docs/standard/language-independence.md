@@ -1,11 +1,10 @@
 ---
 title: Language independence and language-independent components
 description: Learn how you can develop in one of many supported languages in .NET, such as C#, C++/CLI, F#, IronPython, VB, Visual COBOL, and PowerShell.
-ms.date: 07/22/2016
 dev_langs:
   - "csharp"
   - "vb"
-ms.technology: dotnet-standard
+ms.date: 07/22/2016
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
 ---
 

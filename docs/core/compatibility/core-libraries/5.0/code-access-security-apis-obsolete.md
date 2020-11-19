@@ -1,8 +1,13 @@
-### Most code access security APIs are obsolete
+---
+title: "Breaking change: Most code access security APIs are obsolete"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where most code access security (CAS)-related types in .NET are now obsolete as warning.
+ms.date: 11/01/2020
+---
+# Most code access security APIs are obsolete
 
 Most code access security (CAS)-related types in .NET are now obsolete as warning. This includes CAS attributes, such as <xref:System.Security.Permissions.SecurityPermissionAttribute>, CAS permission objects, such as <xref:System.Net.SocketPermission>, <xref:System.Security.Policy.EvidenceBase>-derived types, and other supporting APIs.
 
-#### Change description
+## Change description
 
 In .NET Framework 2.x - 4.x, CAS attributes and APIs can influence the course of code execution, including ensuring that CAS-demand stack walks succeed or fail.
 
@@ -56,17 +61,17 @@ public void DoSomething()
 
 This is a compile-time only change. There is no run-time change from previous versions of .NET Core. Methods that perform no operation in .NET Core 2.x - 3.x will continue to perform no operation at run time in .NET 5.0 and later. Methods that throw <xref:System.PlatformNotSupportedException> in .NET Core 2.x - 3.x will continue to throw a <xref:System.PlatformNotSupportedException> at run time in .NET 5.0 and later.
 
-#### Reason for change
+## Reason for change
 
-[Code access security (CAS)](../../../../docs/framework/misc/code-access-security.md) is an unsupported legacy technology. The infrastructure to enable CAS exists only in .NET Framework 2.x - 4.x, but is deprecated and not receiving servicing or security fixes.
+[Code access security (CAS)](../../../../framework/misc/code-access-security.md) is an unsupported legacy technology. The infrastructure to enable CAS exists only in .NET Framework 2.x - 4.x, but is deprecated and not receiving servicing or security fixes.
 
-Due to CAS's deprecation, the [supporting infrastructure was not brought forward to .NET Core](../../../../docs/core/porting/net-framework-tech-unavailable.md) or .NET 5.0+. However, the APIs were brought forward so that apps could cross-compile against .NET Framework and .NET Core. This led to "fail open" scenarios, where some CAS-related APIs exist and are callable but perform no action at run time. This can lead to security issues for components that expect the runtime to honor CAS-related attributes or programmatic API calls. To better communicate that the runtime doesn't respect these attributes or APIs, we have obsoleted the majority of them in .NET 5.0.
+Due to CAS's deprecation, the [supporting infrastructure was not brought forward to .NET Core](../../../porting/net-framework-tech-unavailable.md) or .NET 5.0+. However, the APIs were brought forward so that apps could cross-compile against .NET Framework and .NET Core. This led to "fail open" scenarios, where some CAS-related APIs exist and are callable but perform no action at run time. This can lead to security issues for components that expect the runtime to honor CAS-related attributes or programmatic API calls. To better communicate that the runtime doesn't respect these attributes or APIs, we have obsoleted the majority of them in .NET 5.0.
 
-#### Version introduced
+## Version introduced
 
-5.0 RC1
+5.0
 
-#### <a id="cas-action">Recommended action</a>
+## <a id="cas-action">Recommended action</a>
 
 - If you're asserting any security permission, remove the attribute or call that asserts the permission.
 
@@ -116,7 +121,7 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
   }
   ```
 
-- If you're demanding <xref:System.Security.Permissions.PrincipalPermission>, consult the guidance for [PrincipalPermissionAttribute is obsolete as error](../../../../docs/core/compatibility/corefx.md#permission-action). That guidance applies for both <xref:System.Security.Permissions.PrincipalPermission> and <xref:System.Security.Permissions.PrincipalPermissionAttribute>.
+- If you're demanding <xref:System.Security.Permissions.PrincipalPermission>, consult the guidance for [PrincipalPermissionAttribute is obsolete as error](principalpermissionattribute-obsolete.md). That guidance applies for both <xref:System.Security.Permissions.PrincipalPermission> and <xref:System.Security.Permissions.PrincipalPermissionAttribute>.
 
 - If you absolutely must disable these warnings (which is not recommended), you can suppress the `SYSLIB0003` warning in code.
 
@@ -150,13 +155,9 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
 
   > [!NOTE]
   > Suppressing `SYSLIB0003` disables only the CAS-related obsoletion warnings. It does not disable any other warnings or change the behavior of the .NET 5.0+ runtime.
-
-#### Category
-
-- Core .NET libraries
 - Security
 
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.AppDomain.PermissionSet?displayProperty=fullName>
 - <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>
@@ -303,7 +304,12 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
 
 <!--
 
-#### Affected APIs
+#### Category
+
+- Core .NET libraries
+- Security
+
+### Affected APIs
 
 - `P:System.AppDomain.PermissionSet`
 - `T:System.Configuration.ConfigurationPermission`

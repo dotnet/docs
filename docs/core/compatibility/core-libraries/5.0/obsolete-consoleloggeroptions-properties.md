@@ -1,8 +1,13 @@
-### Obsolete properties on ConsoleLoggerOptions
+---
+title: "Breaking change: Obsolete properties on ConsoleLoggerOptions"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where the ConsoleLoggerFormat type and some properties on ConsoleLoggerOptions are now obsolete.
+ms.date: 11/01/2020
+---
+# Obsolete properties on ConsoleLoggerOptions
 
 The <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat?displayProperty=nameWithType> type and some properties on <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions> are now obsolete.
 
-#### Change description
+## Change description
 
 Starting in .NET 5.0, the <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat?displayProperty=nameWithType> type and several properties on <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions> are obsolete. The obsolete properties are:
 
@@ -14,17 +19,17 @@ Starting in .NET 5.0, the <xref:Microsoft.Extensions.Logging.Console.ConsoleLogg
 
 With the introduction of new formatters, these properties are now available on the individual formatters.
 
-#### Reason for change
+## Reason for change
 
 The <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format> property is an enumeration type, which cannot represent a custom formatter.
 
 The remaining properties were set on <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions> and applied to both of the built-in formats for console logs. However, with the introduction of a new formatter API, it makes more sense for formatting to be represented on the formatter-specific options. This change provides better separation between the logger and logger formatters.
 
-#### Version introduced
+## Version introduced
 
-5.0 Preview 8
+5.0
 
-#### Recommended action
+## Recommended action
 
 - Use the new <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.FormatterName?displayProperty=nameWithType> property in place of the <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format?displayProperty=nameWithType> property. For example:
 
@@ -103,12 +108,7 @@ New configuration file:
 }
 ```
 
-#### Category
-
-- Core .NET libraries
-- ASP.NET
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes?displayProperty=fullName>
@@ -118,7 +118,12 @@ New configuration file:
 
 <!--
 
-#### Affected APIs
+#### Category
+
+- Core .NET libraries
+- ASP.NET
+
+### Affected APIs
 
 - `P:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors`
 - `P:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes`

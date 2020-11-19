@@ -1,10 +1,15 @@
-### BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps
+---
+title: "Breaking change: BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where serialize and deserialize methods on BinaryFormatter, Formatter, and IFormatter are obsolete.
+ms.date: 11/01/2020
+---
+# BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps
 
 `Serialize` and `Deserialize` methods on <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, <xref:System.Runtime.Serialization.Formatter>, and <xref:System.Runtime.Serialization.IFormatter> are now obsolete as warning. Additionally, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is prohibited by default for ASP.NET apps.
 
-#### Change description
+## Change description
 
-Due to [security vulnerabilities](../../../../docs/standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following methods are now obsolete and produce a compile-time warning with ID `SYSLIB0011`. Additionally, in ASP.NET Core 5.0 and later apps, they will throw a <xref:System.NotSupportedException>, unless the web app has re-enabled <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> functionality.
+Due to [security vulnerabilities](../../../../standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following methods are now obsolete and produce a compile-time warning with ID `SYSLIB0011`. Additionally, in ASP.NET Core 5.0 and later apps, they will throw a <xref:System.NotSupportedException>, unless the web app has re-enabled <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> functionality.
 
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType>
@@ -16,17 +21,17 @@ The following serialization methods are also obsolete and produce warning `SYSLI
 - <xref:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>
 
-#### Version introduced
+## Version introduced
 
-5.0 Preview 8
+5.0
 
-#### Reason for change
+## Reason for change
 
 These methods are marked obsolete as part of an effort to wind down usage of <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> within the .NET ecosystem.
 
-#### Recommended action
+## Recommended action
 
-- Stop using <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> in your code. Instead, consider using <xref:System.Text.Json.JsonSerializer> or <xref:System.Xml.Serialization.XmlSerializer>. For more information, see [BinaryFormatter security guide](../../../../docs/standard/serialization/binaryformatter-security-guide.md).
+- Stop using <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> in your code. Instead, consider using <xref:System.Text.Json.JsonSerializer> or <xref:System.Xml.Serialization.XmlSerializer>. For more information, see [BinaryFormatter security guide](../../../../standard/serialization/binaryformatter-security-guide.md).
 
 - You can temporarily suppress the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> compile-time warning, which is `SYSLIB0011`. We recommend that you thoroughly assess your code for risks before choosing this option. The easiest way to suppress the warnings is to surround the individual call site with `#pragma` directives.
 
@@ -54,7 +59,7 @@ These methods are marked obsolete as part of an effort to wind down usage of <xr
 
   If you suppress the warning in the project file, the warning is suppressed for all code files in the project. Suppressing `SYSLIB0011` does not suppress warnings caused by using other obsolete APIs.
 
-- To continue using <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> in ASP.NET apps, you can re-enable it in the project file. However, it's strongly recommended not to do this. For more information, see [BinaryFormatter security guide](../../../../docs/standard/serialization/binaryformatter-security-guide.md).
+- To continue using <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> in ASP.NET apps, you can re-enable it in the project file. However, it's strongly recommended not to do this. For more information, see [BinaryFormatter security guide](../../../../standard/serialization/binaryformatter-security-guide.md).
 
   ```xml
   <PropertyGroup>
@@ -66,12 +71,7 @@ These methods are marked obsolete as part of an effort to wind down usage of <xr
 
 For more information about recommended actions, see [Resolving BinaryFormatter obsoletion and disablement errors](https://aka.ms/binaryformatter).
 
-#### Category
-
-- Core .NET libraries
-- ASP.NET
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=fullName>
@@ -82,7 +82,12 @@ For more information about recommended actions, see [Resolving BinaryFormatter o
 
 <!--
 
-#### Affected APIs
+#### Category
+
+- Core .NET libraries
+- ASP.NET Core
+
+### Affected APIs
 
 - `Overload:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize`
 - `Overload:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize`

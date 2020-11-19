@@ -1,10 +1,15 @@
-### UTF-7 code paths are obsolete
+---
+title: "Breaking change: UTF-7 code paths are obsolete"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where the UTF7 and UTF7Encoding constructors are obsolete.
+ms.date: 11/01/2020
+---
+# UTF-7 code paths are obsolete
 
 The UTF-7 encoding is no longer in wide use among applications, and many specs now [forbid its use](https://security.stackexchange.com/a/68609/3573) in interchange. It's also occasionally [used as an attack vector](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=utf-7) in applications that don't anticipate encountering UTF-7-encoded data. Microsoft warns against use of <xref:System.Text.UTF7Encoding?displayProperty=nameWithType> because it doesn't provide error detection.
 
 Consequently, the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> property and <xref:System.Text.UTF7Encoding.%23ctor%2A> constructors are now obsolete. Additionally, <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> and <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> no longer allow you to specify `UTF-7`.
 
-#### Change description
+## Change description
 
 Previously, you could create an instance of the UTF-7 encoding by using the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> APIs. For example:
 
@@ -41,17 +46,17 @@ foreach (EncodingInfo encInfo in Encoding.GetEncodings())
 }
 ```
 
-#### Reason for change
+## Reason for change
 
 Many applications call `Encoding.GetEncoding("encoding-name")` with an encoding name value that's provided by an untrusted source. For example, a web client or server might take the `charset` portion of the `Content-Type` header and pass the value directly to `Encoding.GetEncoding` without validating it. This could allow a malicious endpoint to specify `Content-Type: ...; charset=utf-7`, which could cause the receiving application to misbehave.
 
 Additionally, disabling UTF-7 code paths allows optimizing compilers, such as those used by Blazor, to remove these code paths entirely from the resulting application. As a result, the compiled applications run more efficiently and take less disk space.
 
-#### Version introduced
+## Version introduced
 
-5.0 Preview 8
+5.0
 
-#### Recommended action
+## Recommended action
 
 In most cases, you don't need to take any action. However, for apps that have previously activated UTF-7-related code paths, consider the guidance that follows.
 
@@ -112,7 +117,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
 
 - If you must support `Encoding.GetEncoding("utf-7", ...)`:
 
-  You can re-enable support for this via a compatibility switch. This compatibility switch can be specified in the application's *.csproj* file or in a [run-time configuration file](../../../../docs/core/run-time-config/index.md), as shown in the following examples.
+  You can re-enable support for this via a compatibility switch. This compatibility switch can be specified in the application's *.csproj* file or in a [run-time configuration file](../../../run-time-config/index.md), as shown in the following examples.
 
   In the application's *.csproj* file:
 
@@ -139,12 +144,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
   > [!TIP]
   > If you re-enable support for UTF-7, you should perform a security review of code that calls <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>.
 
-#### Category
-
-- Core .NET libraries
-- Security
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Text.Encoding.UTF7?displayProperty=fullName>
 - <xref:System.Text.UTF7Encoding.%23ctor>
@@ -157,7 +157,12 @@ In most cases, you don't need to take any action. However, for apps that have pr
 
 <!--
 
-#### Affected APIs
+#### Category
+
+- Core .NET libraries
+- Security
+
+### Affected APIs
 
 - `System.Text.Encoding.UTF7`
 - `System.Text.UTF7Encoding.#ctor`

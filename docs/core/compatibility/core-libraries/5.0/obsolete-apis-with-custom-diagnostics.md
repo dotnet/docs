@@ -1,8 +1,13 @@
-### API obsoletions with non-default diagnostic IDs
+---
+title: "Breaking change: API obsoletions with non-default diagnostic IDs"
+description: Learn about the .NET 5.0 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
+ms.date: 11/01/2020
+---
+# API obsoletions with non-default diagnostic IDs
 
-Some APIs have been marked as obsolete, starting in .NET 5.0. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../docs/csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
+Some APIs have been marked as obsolete, starting in .NET 5.0. This breaking change is specific to APIs that have been marked as obsolete *with a custom diagnostic ID*. Suppressing the default obsoletion diagnostic ID, which is [CS0618](../../../../csharp/language-reference/compiler-messages/cs0618.md) for the C# compiler, does not suppress the warnings that the compiler generates when these APIs are used.
 
-#### Change description
+## Change description
 
 In previous .NET versions, these APIs can be used without any build warning. In .NET 5.0 and later versions, use of these APIS produces a compile-time warning or error with a custom diagnostic ID. The use of custom diagnostic IDs allows you to suppress the obsoletion warnings individually instead of blanket-suppressing all obsoletion warnings.
 
@@ -23,32 +28,28 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | `SYSLIB0011` | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. | Warning |
 | `SYSLIB0012` | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. | Warning |
 
-#### Version introduced
+## Version introduced
 
 .NET 5.0
 
-#### Recommended action
+## Recommended action
 
 - Follow the specific guidance provided for the each diagnostic ID using the URL link provided on the warning.
 
 - Warnings or errors for these obsoletions can't be suppressed using the standard diagnostic ID for obsolete types or members; use the custom `SYSLIBxxxx` diagnostic ID value instead.
 
-#### Category
+## Affected APIs
 
-- Core .NET libraries
-
-#### Affected APIs
-
-##### SYSLIB0001
+### SYSLIB0001
 
 - <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType>
 - <xref:System.Text.UTF7Encoding.%23ctor%2A>
 
-##### SYSLIB0002
+### SYSLIB0002
 
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute.%23ctor(System.Security.Permissions.SecurityAction)>
 
-##### SYSLIB0003
+### SYSLIB0003
 
 Classes in the `System.Security.Permissions` namespace:
 
@@ -220,7 +221,7 @@ Classes and members that depend on code access security types:
 - <xref:System.Security.Policy.Zone?displayProperty=fullName>
 - <xref:System.Security.SecurityManager?displayProperty=fullName>
 
-##### SYSLIB0004
+### SYSLIB0004
 
 - <xref:System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(System.Runtime.CompilerServices.RuntimeHelpers.TryCode,System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode,System.Object)?displayProperty=nameWithType>
 - <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions?displayProperty=nameWithType>
@@ -232,16 +233,16 @@ Classes and members that depend on code access security types:
 - <xref:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute?displayProperty=nameWithType>
 - <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute?displayProperty=nameWithType>
 
-##### SYSLIB0005
+### SYSLIB0005
 
 - <xref:System.Reflection.Assembly.GlobalAssemblyCache?displayProperty=nameWithType>
 
-##### SYSLIB0006
+### SYSLIB0006
 
 - <xref:System.Threading.Thread.Abort?displayProperty=nameWithType>
 - <xref:System.Threading.Thread.Abort(System.Object)?displayProperty=nameWithType>
 
-##### SYSLIB0007
+### SYSLIB0007
 
 - <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create?displayProperty=fullName>
 - <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=fullName>
@@ -249,21 +250,21 @@ Classes and members that depend on code access security types:
 - <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=fullName>
 - <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=fullName>
 
-##### SYSLIB0008
+### SYSLIB0008
 
 - <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator?displayProperty=nameWithType>
 
-##### SYSLIB0009
+### SYSLIB0009
 
 - <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>
 - <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType>
 
-##### SYSLIB0010
+### SYSLIB0010
 
 - <xref:System.MarshalByRefObject.GetLifetimeService?displayProperty=nameWithType>
 - <xref:System.MarshalByRefObject.InitializeLifetimeService?displayProperty=nameWithType>
 
-##### SYSLIB0011
+### SYSLIB0011
 
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType>
@@ -272,7 +273,7 @@ Classes and members that depend on code access security types:
 - <xref:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>
 
-##### SYSLIB0012
+### SYSLIB0012
 
 - <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType>

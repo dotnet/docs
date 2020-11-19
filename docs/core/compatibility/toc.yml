@@ -3,6 +3,7 @@
 - name: Types of compatibility
   href: categories.md
 - name: Reference
+  expanded: true
   items:
   - name: Overview
     href: breaking-changes.md
@@ -25,6 +26,8 @@
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
         - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
           href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
+        - name: BinaryFormatter serialization methods are obsolete
+          href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
         - name: Resource in endpoint routing is HttpContext
           href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
         - name: Microsoft-prefixed Azure integration packages removed
@@ -63,6 +66,8 @@
           href: aspnet-core/5.0/kestrel-disables-http2-over-tls.md
         - name: "Kestrel: Libuv transport marked as obsolete"
           href: aspnet-core/5.0/kestrel-libuv-transport-obsolete.md
+        - name: Obsolete properties on ConsoleLoggerOptions
+          href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
         - name: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed
           href: aspnet-core/5.0/localization-members-removed.md
         - name: Pubternal APIs removed
@@ -105,6 +110,64 @@
           href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+      - name: Core .NET libraries
+        items:
+        - name: Assembly-related API changes for single-file publishing
+          href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
+        - name: BinaryFormatter serialization methods are obsolete
+          href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+        - name: Code access security APIs are obsolete
+          href: core-libraries/5.0/code-access-security-apis-obsolete.md
+        - name: CreateCounterSetInstance throws InvalidOperationException
+          href: core-libraries/5.0/createcountersetinstance-throws-invalidoperation.md
+        - name: Default ActivityIdFormat is W3C
+          href: core-libraries/5.0/default-activityidformat-changed.md
+        - name: Environment.OSVersion returns the correct version
+          href: core-libraries/5.0/environment-osversion-returns-correct-version.md
+        - name: FrameworkDescription's value is .NET not .NET Core
+          href: core-libraries/5.0/frameworkdescription-returns-net-not-net-core.md
+        - name: GAC APIs are obsolete
+          href: core-libraries/5.0/global-assembly-cache-apis-obsolete.md
+        - name: Hardware intrinsic IsSupported checks
+          href: core-libraries/5.0/hardware-instrinsics-issupported-checks.md
+        - name: IntPtr and UIntPtr implement IFormattable
+          href: core-libraries/5.0/intptr-uintptr-implement-iformattable.md
+        - name: LastIndexOf handles empty search strings
+          href: core-libraries/5.0/lastindexof-improved-handling-of-empty-values.md
+        - name: URI paths with non-ASCII characters on Unix
+          href: core-libraries/5.0/non-ascii-chars-in-uri-parsed-correctly.md
+        - name: API obsoletions with non-default diagnostic IDs
+          href: core-libraries/5.0/obsolete-apis-with-custom-diagnostics.md
+        - name: Obsolete properties on ConsoleLoggerOptions
+          href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
+        - name: Complexity of LINQ OrderBy.First
+          href: core-libraries/5.0/orderby-firstordefault-complexity-increase.md
+        - name: OSPlatform attributes renamed or removed
+          href: core-libraries/5.0/os-platform-attributes-renamed.md
+        - name: Microsoft.DotNet.PlatformAbstractions package removed
+          href: core-libraries/5.0/platformabstractions-package-removed.md
+        - name: PrincipalPermissionAttribute is obsolete
+          href: core-libraries/5.0/principalpermissionattribute-obsolete.md
+        - name: Parameter name changes from preview versions
+          href: core-libraries/5.0/reference-assembly-parameter-names-rc1.md
+        - name: Parameter name changes in reference assemblies
+          href: core-libraries/5.0/reference-assembly-parameter-names.md
+        - name: Remoting APIs are obsolete
+          href: core-libraries/5.0/remoting-apis-obsolete.md
+        - name: Order of Activity.Tags list is reversed
+          href: core-libraries/5.0/reverse-order-of-tags-in-activity-property.md
+        - name: SSE and SSE2 comparison methods handle NaN
+          href: core-libraries/5.0/sse-comparegreaterthan-intrinsics.md
+        - name: Thread.Abort is obsolete
+          href: core-libraries/5.0/thread-abort-obsolete.md
+        - name: Uri recognition of UNC paths on Unix
+          href: core-libraries/5.0/unc-path-recognition-unix.md
+        - name: UTF-7 code paths are obsolete
+          href: core-libraries/5.0/utf-7-code-paths-obsolete.md
+        - name: Behavior change for Vector2.Lerp and Vector4.Lerp
+          href: core-libraries/5.0/vector-lerp-behavior-change.md
+        - name: Vector<T> throws NotSupportedException
+          href: core-libraries/5.0/vectort-throws-notsupportedexception.md
       - name: Cryptography
         items:
         - name: Cryptography APIs not supported on browser
@@ -155,6 +218,14 @@
           href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
         - name: WinHttpHandler removed from .NET runtime
           href: networking/5.0/winhttphandler-removed-from-runtime.md
+      - name: Security
+        items:
+        - name: Code access security APIs are obsolete
+          href: core-libraries/5.0/code-access-security-apis-obsolete.md
+        - name: PrincipalPermissionAttribute is obsolete
+          href: core-libraries/5.0/principalpermissionattribute-obsolete.md
+        - name: UTF-7 code paths are obsolete
+          href: core-libraries/5.0/utf-7-code-paths-obsolete.md
       - name: Serialization
         items:
         - name: BinaryFormatter.Deserialize rewraps exceptions
@@ -195,8 +266,6 @@
           href: windows-forms/5.0/automatically-infer-winexe-output-type.md
         - name: WPF apps use Microsoft.NET.Sdk
           href: windows-forms/5.0/sdk-and-target-framework-change.md
-      - name: (This file will eventually go away)
-        href: 3.1-5.0.md
     - name: .NET Core 3.1
       href: 3.0-3.1.md
     - name: .NET Core 3.0
@@ -213,6 +282,8 @@
           href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
         - name: AzureAD.UI and AzureADB2C.UI APIs obsolete
           href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
+        - name: BinaryFormatter serialization methods are obsolete
+          href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
         - name: Resource in endpoint routing is HttpContext
           href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
         - name: Microsoft-prefixed Azure integration packages removed
@@ -251,6 +322,8 @@
           href: aspnet-core/5.0/kestrel-disables-http2-over-tls.md
         - name: "Kestrel: Libuv transport marked as obsolete"
           href: aspnet-core/5.0/kestrel-libuv-transport-obsolete.md
+        - name: Obsolete properties on ConsoleLoggerOptions
+          href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
         - name: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed
           href: aspnet-core/5.0/localization-members-removed.md
         - name: Pubternal APIs removed
@@ -298,7 +371,67 @@
         - name: CA2247 warning
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
     - name: Core .NET libraries
-      href: corefx.md
+      items:
+      - name: .NET 5.0
+        items:
+        - name: Assembly-related API changes for single-file publishing
+          href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
+        - name: BinaryFormatter serialization methods are obsolete
+          href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+        - name: Code access security APIs are obsolete
+          href: core-libraries/5.0/code-access-security-apis-obsolete.md
+        - name: CreateCounterSetInstance throws InvalidOperationException
+          href: core-libraries/5.0/createcountersetinstance-throws-invalidoperation.md
+        - name: Default ActivityIdFormat is W3C
+          href: core-libraries/5.0/default-activityidformat-changed.md
+        - name: Environment.OSVersion returns the correct version
+          href: core-libraries/5.0/environment-osversion-returns-correct-version.md
+        - name: FrameworkDescription's value is .NET not .NET Core
+          href: core-libraries/5.0/frameworkdescription-returns-net-not-net-core.md
+        - name: GAC APIs are obsolete
+          href: core-libraries/5.0/global-assembly-cache-apis-obsolete.md
+        - name: Hardware intrinsic IsSupported checks
+          href: core-libraries/5.0/hardware-instrinsics-issupported-checks.md
+        - name: IntPtr and UIntPtr implement IFormattable
+          href: core-libraries/5.0/intptr-uintptr-implement-iformattable.md
+        - name: LastIndexOf handles empty search strings
+          href: core-libraries/5.0/lastindexof-improved-handling-of-empty-values.md
+        - name: URI paths with non-ASCII characters on Unix
+          href: core-libraries/5.0/non-ascii-chars-in-uri-parsed-correctly.md
+        - name: API obsoletions with non-default diagnostic IDs
+          href: core-libraries/5.0/obsolete-apis-with-custom-diagnostics.md
+        - name: Obsolete properties on ConsoleLoggerOptions
+          href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
+        - name: Complexity of LINQ OrderBy.First
+          href: core-libraries/5.0/orderby-firstordefault-complexity-increase.md
+        - name: OSPlatform attributes renamed or removed
+          href: core-libraries/5.0/os-platform-attributes-renamed.md
+        - name: Microsoft.DotNet.PlatformAbstractions package removed
+          href: core-libraries/5.0/platformabstractions-package-removed.md
+        - name: PrincipalPermissionAttribute is obsolete
+          href: core-libraries/5.0/principalpermissionattribute-obsolete.md
+        - name: Parameter name changes from preview versions
+          href: core-libraries/5.0/reference-assembly-parameter-names-rc1.md
+        - name: Parameter name changes in reference assemblies
+          href: core-libraries/5.0/reference-assembly-parameter-names.md
+        - name: Remoting APIs are obsolete
+          href: core-libraries/5.0/remoting-apis-obsolete.md
+        - name: Order of Activity.Tags list is reversed
+          href: core-libraries/5.0/reverse-order-of-tags-in-activity-property.md
+        - name: SSE and SSE2 comparison methods handle NaN
+          href: core-libraries/5.0/sse-comparegreaterthan-intrinsics.md
+        - name: Thread.Abort is obsolete
+          href: core-libraries/5.0/thread-abort-obsolete.md
+        - name: Uri recognition of UNC paths on Unix
+          href: core-libraries/5.0/unc-path-recognition-unix.md
+        - name: UTF-7 code paths are obsolete
+          href: core-libraries/5.0/utf-7-code-paths-obsolete.md
+        - name: Behavior change for Vector2.Lerp and Vector4.Lerp
+          href: core-libraries/5.0/vector-lerp-behavior-change.md
+        - name: Vector<T> throws NotSupportedException
+          href: core-libraries/5.0/vectort-throws-notsupportedexception.md
+      - name: .NET 1.0-3.1
+        href: corefx.md
     - name: Cryptography
       items:
       - name: .NET 5.0
@@ -372,6 +505,16 @@
           href: networking/5.0/winhttphandler-removed-from-runtime.md
       - name: .NET 2.0-3.0
         href: networking.md
+    - name: Security
+      items:
+      - name: .NET 5.0
+        items:
+        - name: Code access security APIs are obsolete
+          href: core-libraries/5.0/code-access-security-apis-obsolete.md
+        - name: PrincipalPermissionAttribute is obsolete
+          href: core-libraries/5.0/principalpermissionattribute-obsolete.md
+        - name: UTF-7 code paths are obsolete
+          href: core-libraries/5.0/utf-7-code-paths-obsolete.md
     - name: Serialization
       items:
       - name: .NET 5.0

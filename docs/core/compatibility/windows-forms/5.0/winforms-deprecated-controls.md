@@ -1,8 +1,13 @@
-### Removed status bar controls
+---
+title: "Breaking change: Removed status bar controls"
+description: Learn about the breaking change in .NET 5.0 where some Windows Forms controls are no longer available.
+ms.date: 07/18/2020
+---
+# Removed status bar controls
 
 Starting in .NET 5.0, some Windows Forms controls are no longer available.
 
-#### Change description
+## Change description
 
 Starting with .NET 5.0, some of the status bar-related Windows Forms controls are no longer available. Replacement controls that have better design and support were introduced in .NET Framework 2.0. The deprecated controls were previously removed from designer toolboxes but were still available to be used. Now, they have been completely removed.
 
@@ -18,11 +23,11 @@ The following types are no longer available:
 * `StatusBarPanelClickEventHandler`
 * `StatusBarPanelStyle`
 
-#### Version introduced
+## Version introduced
 
-5.0 Preview 1
+5.0
 
-#### Recommended action
+## Recommended action
 
 Move to the replacement APIs for these controls and their scenarios:
 
@@ -31,11 +36,7 @@ Move to the replacement APIs for these controls and their scenarios:
 | StatusBar         | <xref:System.Windows.Forms.StatusStrip>          |
 | StatusBarPanel    | <xref:System.Windows.Forms.ToolStripStatusLabel> |
 
-#### Category
-
-Windows Forms
-
-#### Affected APIs
+## Affected APIs
 
 - <xref:System.Windows.Forms.StatusBar?displayProperty=fullName>
 - <xref:System.Windows.Forms.StatusBarDrawItemEventArgs?displayProperty=fullName>
@@ -47,9 +48,9 @@ Windows Forms
 - <xref:System.Windows.Forms.StatusBarPanelClickEventHandler?displayProperty=fullName>
 - <xref:System.Windows.Forms.StatusBarPanelStyle?displayProperty=fullName>
 
-<!-- 
+<!--
 
-#### Affected APIs
+### Affected APIs
 
 - `T:System.Windows.Forms.StatusBar`
 - `T:System.Windows.Forms.StatusBarDrawItemEventArgs`
@@ -59,6 +60,10 @@ Windows Forms
 - `T:System.Windows.Forms.StatusBarPanelBorderStyle`
 - `T:System.Windows.Forms.StatusBarPanelClickEventArgs`
 - `T:System.Windows.Forms.StatusBarPanelClickEventHandler`
-- `T:System.Windows.Forms.StatusBarPanelStyle` 
+- `T:System.Windows.Forms.StatusBarPanelStyle`
+
+### Category
+
+Windows Forms
 
 -->

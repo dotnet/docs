@@ -6,7 +6,7 @@ ms.date: 11/18/2020
 ---
 # .NET Install Tool for Extension Authors
 
-The [.NET Install Tool for Extension Authors](https://github.com/dotnet/vscode-dotnet-runtime) is a VSCode extension that allows acquisition of the .NET Core runtime specifically for VSCode extension authors. This tool is intended to be leveraged in extensions that are written in .NET and require .NET to boot pieces of the extension (e.g. a language server). The extension is not intended to be used directly by users to install .NET for development.
+The [.NET Install Tool for Extension Authors](https://github.com/dotnet/vscode-dotnet-runtime) is a VSCode extension that allows acquisition of the .NET Core runtime specifically for VSCode extension authors. This tool is intended to be leveraged in extensions that are written in .NET and require .NET to boot pieces of the extension (for example, a language server). The extension is not intended to be used directly by users to install .NET for development.
 
 ## Getting started: Extension Authors
 
@@ -21,9 +21,9 @@ Check out this [sample extension](https://github.com/dotnet/vscode-dotnet-runtim
 
 For more examples, check out these open source extensions that currently leverage this tool:
 
-[Azure Resource Manager (ARM) Tools for Visual Studio Code](https://github.com/microsoft/vscode-azurearmtools)
+- [Azure Resource Manager (ARM) Tools for Visual Studio Code](https://github.com/microsoft/vscode-azurearmtools)
 
-[.NET Interactive Notebooks](https://github.com/dotnet/interactive/tree/main/src/dotnet-interactive-vscode)
+- [.NET Interactive Notebooks](https://github.com/dotnet/interactive/tree/main/src/dotnet-interactive-vscode)
 
 ## Getting started: End Users
 

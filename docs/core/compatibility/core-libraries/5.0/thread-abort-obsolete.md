@@ -70,7 +70,7 @@ Given that <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> 
 
 <!--
 
-### Category
+#### Category
 
 Core .NET libraries
 

@@ -1,5 +1,5 @@
 ---
-title: Base class library breaking changes
+title: .NET library breaking changes
 description: Lists the breaking changes in core .NET libraries for .NET Core versions 1.0-3.0.
 ms.date: 07/27/2020
 ---

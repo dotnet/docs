@@ -77,7 +77,7 @@ The global assembly cache (GAC) does not exist as a concept in .NET Core and .NE
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

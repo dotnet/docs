@@ -1,12 +1,12 @@
 ---
 title: ASP.NET Core breaking changes
 titleSuffix: ""
-description: Lists the breaking changes in ASP.NET Core.
+description: Lists the breaking changes in ASP.NET Core 3.0 and 3.1.
 ms.date: 11/03/2020
 author: scottaddie
 ms.author: scaddie
 ---
-# ASP.NET Core breaking changes
+# ASP.NET Core breaking changes for versions 3.0 and 3.1
 
 ASP.NET Core provides the web app development features used by .NET Core.
 

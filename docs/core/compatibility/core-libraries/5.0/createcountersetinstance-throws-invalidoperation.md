@@ -30,7 +30,7 @@ If you catch <xref:System.ArgumentException> exceptions in your app when calling
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

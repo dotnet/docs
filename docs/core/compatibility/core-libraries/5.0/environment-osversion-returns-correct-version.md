@@ -31,7 +31,7 @@ Review and test any code that uses <xref:System.Environment.OSVersion?displayPro
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

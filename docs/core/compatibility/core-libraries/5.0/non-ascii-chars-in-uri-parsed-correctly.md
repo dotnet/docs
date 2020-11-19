@@ -48,7 +48,7 @@ If you have code that expects and accounts for the duplicated path segments, you
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

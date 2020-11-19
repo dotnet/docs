@@ -26,4 +26,4 @@ For more information about recommended actions, see [Resolving BinaryFormatter o
 ## See also
 
 - [Resolving BinaryFormatter obsoletion and disablement errors](https://aka.ms/binaryformatter)
-- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](corefx.md#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps)
+- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](core-libraries/5.0/binaryformatter-serialization-obsolete.md)

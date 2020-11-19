@@ -28,7 +28,7 @@ No action is necessary. However, if you want to maintain the old behavior, you c
 
 <!--
 
-### Category
+#### Category
 
 Core .NET libraries
 

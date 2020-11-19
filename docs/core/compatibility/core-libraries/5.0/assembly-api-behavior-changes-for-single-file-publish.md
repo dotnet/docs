@@ -37,7 +37,7 @@ Avoid dependencies on the file location of assemblies when publishing as a singl
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

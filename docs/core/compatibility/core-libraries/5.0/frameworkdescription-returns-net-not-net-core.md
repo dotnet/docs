@@ -31,7 +31,7 @@ Update any code that searches for ".NET Core" in the string returned by <xref:Sy
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

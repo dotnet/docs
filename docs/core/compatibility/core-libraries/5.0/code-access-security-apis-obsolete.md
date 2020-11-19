@@ -304,7 +304,7 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
 
 <!--
 
-### Category
+#### Category
 
 - Core .NET libraries
 - Security

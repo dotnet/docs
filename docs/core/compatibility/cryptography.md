@@ -1,9 +1,9 @@
 ---
 title: Cryptography breaking changes
-description: Lists cryptography-related breaking changes in .NET Core.
+description: Lists cryptography-related breaking changes in .NET Core 2.1-3.0.
 ms.date: 04/22/2020
 ---
-# Cryptography breaking changes
+# Cryptography breaking changes for .NET Core 2.1-3.0
 
 The following breaking changes are documented on this page:
 

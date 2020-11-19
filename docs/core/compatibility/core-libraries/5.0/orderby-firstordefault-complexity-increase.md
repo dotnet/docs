@@ -37,7 +37,7 @@ No action is required on the developer's part.
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

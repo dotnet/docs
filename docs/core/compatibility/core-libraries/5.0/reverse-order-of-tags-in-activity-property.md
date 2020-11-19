@@ -25,7 +25,7 @@ If your app has a dependency on the <xref:System.Diagnostics.Activity.Tags?displ
 
 <!--
 
-### Category
+#### Category
 
 Core .NET libraries
 

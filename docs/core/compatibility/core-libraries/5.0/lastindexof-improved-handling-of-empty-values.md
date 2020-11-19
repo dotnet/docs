@@ -51,7 +51,7 @@ There is no compatibility switch to restore the old behavior.
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

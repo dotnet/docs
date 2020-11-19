@@ -40,7 +40,7 @@ If necessary, adjust code that checks `IsSupported` to check for the appropriate
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

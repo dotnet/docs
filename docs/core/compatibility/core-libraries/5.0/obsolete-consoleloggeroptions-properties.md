@@ -118,7 +118,7 @@ New configuration file:
 
 <!--
 
-### Category
+#### Category
 
 - Core .NET libraries
 - ASP.NET

@@ -157,7 +157,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
 
 <!--
 
-### Category
+#### Category
 
 - Core .NET libraries
 - Security

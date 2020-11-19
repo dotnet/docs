@@ -67,7 +67,7 @@ As an example of how the methods were previously incorrect, you can implement `C
 
 <!--
 
-### Category
+#### Category
 
 Core .NET libraries
 

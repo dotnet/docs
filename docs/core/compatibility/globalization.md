@@ -1,9 +1,9 @@
 ---
 title: Globalization breaking changes
-description: Lists the breaking changes in globalization in .NET Core.
+description: Lists the breaking changes in globalization in .NET Core 3.0.
 ms.date: 04/07/2020
 ---
-# Globalization breaking changes
+# Globalization breaking changes in .NET Core 3.0
 
 The following breaking changes are documented on this page:
 

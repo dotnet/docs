@@ -33,7 +33,7 @@ Not detectable via API analysis.
 
 <!--
 
-## Category
+### Category
 
 Core .NET libraries
 

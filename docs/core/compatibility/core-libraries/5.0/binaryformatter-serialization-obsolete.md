@@ -82,7 +82,7 @@ For more information about recommended actions, see [Resolving BinaryFormatter o
 
 <!--
 
-### Category
+#### Category
 
 - Core .NET libraries
 - ASP.NET Core

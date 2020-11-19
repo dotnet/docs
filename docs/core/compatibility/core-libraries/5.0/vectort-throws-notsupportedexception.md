@@ -44,7 +44,7 @@ Don't use an unsupported type for the type parameter of <xref:System.Numerics.Ve
 
 <!--
 
-### Category
+#### Category
 
 Core .NET libraries
 

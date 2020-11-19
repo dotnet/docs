@@ -1,8 +1,9 @@
 ---
-title: How to customize character encoding with System.Text.Json
-description: "Learn how to customize character encoding while serializing to and deserializing from JSON in .NET."
-ms.date: 11/18/2020
+title: How to handle circular references with System.Text.Json
+description: "Learn how to handle circular references while serializing to and deserializing from JSON in .NET."
+ms.date: 11/19/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
+zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -10,9 +11,9 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to ...
+# How to handle circular references with System.Text.Json
 
-...
+In this article, you will learn how to handle circular references with the `System.Text.Json` namespace.
 
 ## Preserve references and handle circular references
 

@@ -1,7 +1,7 @@
 ---
-title: How to customize character encoding with System.Text.Json
-description: "Learn how to customize character encoding while serializing to and deserializing from JSON in .NET."
-ms.date: 11/18/2020
+title: How to serialize polymorphic objects with System.Text.Json
+description: "Learn how to serialize polymorphic objects while serializing to and deserializing from JSON in .NET."
+ms.date: 11/19/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -10,13 +10,13 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to ...
+# How to serialize polymorphic objects with System.Text.Json
 
-...
+In this article, you will learn how to serialize polymorphic objects with the `System.Text.Json` namespace.
 
 ## Serialize properties of derived classes
 
-Serialization of a polymorphic type hierarchy is not supported. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
+Serialization of a polymorphic type hierarchy is _not_ supported. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
 
 For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
 

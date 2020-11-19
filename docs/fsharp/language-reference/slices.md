@@ -1,15 +1,15 @@
 ---
 title: Slices
 description: Learn how to use slices for existing F# data types and how to define your own slices for other data types.
-ms.date: 12/23/2019
+ms.date: 11/19/2020
 ---
 # Slices
 
-In F#, a slice is a subset of any data type that has a `GetSlice` method in its definition or in an in-scope [type extension](type-extensions.md). It is most commonly used with F# arrays and lists. This article explains how to take slices from existing F# types and how to define your own slices.
+This article explains how to take slices from existing F# types and how to define your own slices.
 
-Slices are similar to [indexers](./members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones.
+In F#, a slice is a subset of any data type. It is most commonly used with F# arrays and lists. Slices are similar to [indexers](./members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones.
 
-F# currently has intrinsic support for slicing strings, lists, arrays, and 2D arrays.
+F# currently has intrinsic support for slicing strings, lists, arrays, and 2D arrays. You can add slicing to your own data types by using the `GetSlice` method in your type definition or in an in-scope [type extension](type-extensions.md).
 
 ## Basic slicing with F# lists and arrays
 

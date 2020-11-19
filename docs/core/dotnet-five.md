@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET 5
 description: Learn about .NET 5, a cross platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 11/16/2020
+ms.date: 11/18/2020
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
@@ -41,11 +41,23 @@ ASP.NET Core 5.0 is based on .NET 5.0 but retains the name "Core" to avoid confu
 
 There are no plans to port the following technologies from .NET Framework to .NET 5.0, but there are alternatives in .NET 5.0:
 
-| Technology                             | Recommended alternative                                                                         |
-|----------------------------------------|-------------------------------------------------------------------------------------------------|
-| Web Forms                              | ASP.NET Core [Blazor](/aspnet/core/blazor) or [Razor Pages](/aspnet/core/tutorials/razor-pages) |
-| Windows Communication Foundation (WCF) | [gRPC](/aspnet/core/grpc)                                                                       |
-| Windows Workflow (WF)                  | [Open-source CoreWF](https://github.com/UiPath-Open/corewf)                                     |
+| Technology            | Recommended alternative                                                                         |
+|-----------------------|-------------------------------------------------------------------------------------------------|
+| Web Forms             | ASP.NET Core [Blazor](/aspnet/core/blazor) or [Razor Pages](/aspnet/core/tutorials/razor-pages) |
+| Windows Workflow (WF) | [Open-source CoreWF](https://github.com/UiPath-Open/corewf)                                     |
+
+### Windows Communication Foundation
+
+The original implementation of the [Windows Communication Foundation (WCF)](../framework/wcf/index.md) was only supported on Windows, however; there is a client port available from the .NET Foundation. It is entirely [open source](https://github.com/dotnet/wcf), cross platform, and supported by Microsoft. The core NuGet packages are listed below:
+
+- [System.ServiceModel.Duplex](https://www.nuget.org/packages/System.ServiceModel.Duplex)
+- [System.ServiceModel.Federation](https://www.nuget.org/packages/System.ServiceModel.Federation)
+- [System.ServiceModel.Http](https://www.nuget.org/packages/System.ServiceModel.Http)
+- [System.ServiceModel.NetTcp](https://www.nuget.org/packages/System.ServiceModel.NetTcp)
+- [System.ServiceModel.Primitives](https://www.nuget.org/packages/System.ServiceModel.Primitives)
+- [System.ServiceModel.Security](https://www.nuget.org/packages/System.ServiceModel.Security)
+
+The community maintains the server components that compliment the aforementioned client libraries. The GitHub repository can be found at [CoreWCF](https://github.com/CoreWCF/CoreWCF). The server components are _not_ officially supported by Microsoft. For an alternative to WCF, consider [gRPC](/aspnet/core/grpc).
 
 ## .NET 5.0 doesn't replace .NET Standard
 

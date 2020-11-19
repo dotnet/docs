@@ -498,7 +498,7 @@ namespace csrefLINQExamples
     //this snippet is out of order. ok.
 
     //removing as just too error-prone
-    //<s n i p p e t 2 2 >
+    //<snippet 22>
     //class CatchAndContinue
     //{
     //    static void Main()
@@ -515,7 +515,7 @@ namespace csrefLINQExamples
     //    }
 
     //}
-    //< / s n i p p e t 2 2 >
+    //</snippet 22>
 
 #region moreOldCode
     //// Create a list of filenames.

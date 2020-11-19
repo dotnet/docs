@@ -200,7 +200,6 @@ Unlike C#, when you `open type` on two types that expose a member with the same 
 
 This feature implements [F# RFC FS-1068](https://github.com/fsharp/fslang-design/blob/master/FSharp-5.0/FS-1068-open-type-declaration.md).
 
-
 ## Consistent slicing behavior for built-in data types
 
 Behavior for slicing the built-in `FSharp.Core` data types (array, list, string, 2D array, 3D array, 4D array) used to not be consistent prior to F# 5. Some edge-case behavior threw an exception and some wouldn't. In F# 5, all built-in types now return empty slices for slices that are impossible to generate:

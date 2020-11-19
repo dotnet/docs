@@ -1,5 +1,5 @@
 ---
-title: "Breaking change: Parameter names changed in RC1"
+title: "Breaking change: Parameter names changed in RC2"
 description: Learn about the .NET 5.0 breaking change in core .NET libraries where some reference assembly parameter names have changed from preview and release-candidate versions of .NET 5.0.
 ms.date: 11/01/2020
 ---

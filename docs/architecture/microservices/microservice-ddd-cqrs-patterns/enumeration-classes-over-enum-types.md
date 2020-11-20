@@ -1,7 +1,7 @@
 ---
 title: Using Enumeration classes instead of enum types
 description: .NET Microservices Architecture for Containerized .NET Applications | Lear how you can use enumeration classes, instead of enums, as a way to solve some limitations of the latter.
-ms.date: 10/08/2018
+ms.date: 11/20/2020
 ---
 # Use enumeration classes instead of enum types
 
@@ -9,7 +9,7 @@ ms.date: 10/08/2018
 
 Instead, you can create Enumeration classes that enable all the rich features of an object-oriented language.
 
-However, this isn't a critical topic and in many cases, for simplicity, you can still use regular [enum types](../../../csharp/language-reference/builtin-types/enum.md) if that's your preference. Anyway, the use of enumeration classes is more related to business-related concepts.
+However, this isn't a critical topic and in many cases, for simplicity, you can still use regular [enum types](../../../csharp/language-reference/builtin-types/enum.md) if that's your preference. The use of enumeration classes is more related to business-related concepts.
 
 ## Implement an Enumeration base class
 

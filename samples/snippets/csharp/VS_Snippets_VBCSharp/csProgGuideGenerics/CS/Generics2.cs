@@ -85,7 +85,7 @@ public class SortedList<T> : GenericList<T> where T : System.IComparable<T>
             while (current.next != null)
             {
                 //  Because we need to call this method, the SortedList
-                //  class is constrained on IEnumerable<T>
+                //  class is constrained on IComparable<T>
                 if (current.Data.CompareTo(current.next.Data) > 0)
                 {
                     Node tmp = current.next;

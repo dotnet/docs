@@ -85,7 +85,7 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 ## Referencing packages in F# Interactive
 
 > [!NOTE]
-> Package management is an F# 5 feature and is currently available using the latest .NET 5 SDK.
+> Package management is available using .NET 5 SDK or later.
 
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
@@ -100,7 +100,7 @@ JsonConvert.SerializeObject(data)
 If a version is not specified, the highest available non-preview package is taken. To reference a specific version, introduce the version via a comma. This can be handy when referencing a preview version of a package. For example, consider this script using a preview version of [DiffSharp](https://diffsharp.github.io/):
 
 ```fsharp
-#r "nuget: DiffSharp-lite,1.0.0-preview-328097867"
+#r "nuget: DiffSharp-lite, 1.0.0-preview-328097867"
 open DiffSharp
 
 // A 1D tensor
@@ -116,6 +116,9 @@ printfn "%A" (f (dsharp.tensor 1.2))
 ```
 
 You can specify as many package references as you like in a script.
+
+> [!WARNING]
+> There's currently a limitation for scripts that use framework references like `Microsoft.NET.Sdk.Web`. Packages like Saturn, Giraffe or Falco are not available yet. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417)
 
 ## Referencing assemblies on disk with F# interactive
 

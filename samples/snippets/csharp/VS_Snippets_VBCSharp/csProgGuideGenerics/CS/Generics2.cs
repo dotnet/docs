@@ -1,4 +1,7 @@
-﻿//<Snippet29>
+﻿namespace GenericsTwo
+{
+
+//<Snippet29>
 //Type parameter T in angle brackets.
 public class GenericList<T> : System.Collections.Generic.IEnumerable<T>
 {
@@ -145,9 +148,9 @@ public class Person : System.IComparable<Person>
     }
 }
 
-class Program
+public class Program
 {
-    static void Main()
+    public static void Main()
     {
         //Declare and instantiate a new generic SortedList class.
         //Person is the type argument.
@@ -195,3 +198,4 @@ class Program
     }
 }
 //</Snippet29>
+}

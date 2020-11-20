@@ -29,7 +29,7 @@ The information stored in a type can include the following items:
 - The location where the memory for variables will be allocated at run time.
 - The kinds of operations that are permitted.
 
-The compiler uses type information to make sure all operations are performed in your code are *type safe*. For example, if you declare a variable of type [int](../../language-reference/builtin-types/integral-numeric-types.md), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [bool](../../language-reference/builtin-types/bool.md), the compiler generates an error, as shown in the following example:
+The compiler uses type information to make sure all operations that are performed in your code are *type safe*. For example, if you declare a variable of type [int](../../language-reference/builtin-types/integral-numeric-types.md), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [bool](../../language-reference/builtin-types/bool.md), the compiler generates an error, as shown in the following example:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="TypeSafeExample":::
 
@@ -48,7 +48,7 @@ The types of method parameters and return values are specified in the method dec
 
 :::code language="csharp" source="snippets/index/Program.cs" id="GetName":::
 
-After you declare a variable, you can''t redeclare it with a new type, and you can't assign a value not compatible with its declared type. For example, you can't declare an [int](../../language-reference/builtin-types/integral-numeric-types.md) and then assign it a Boolean value of `true`. However, values can be converted to other types, for example when they're assigned to new variables or passed as method arguments. A *type conversion* that doesn't cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code.
+After you declare a variable, you can't redeclare it with a new type, and you can't assign a value not compatible with its declared type. For example, you can't declare an [int](../../language-reference/builtin-types/integral-numeric-types.md) and then assign it a Boolean value of `true`. However, values can be converted to other types, for example when they're assigned to new variables or passed as method arguments. A *type conversion* that doesn't cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code.
 
 For more information, see [Casting and Type Conversions](./casting-and-type-conversions.md).
 
@@ -146,21 +146,21 @@ As stated previously, you can implicitly type a local variable (but not class me
 
 It can be inconvenient to create a named type for simple sets of related values that you don't intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous Types](../classes-and-structs/anonymous-types.md).
 
-Ordinary value types can't have a value of [null](../../language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](../../language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable value types are especially useful when you're passing data to and from databases in which numeric values might be null. For more information, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md).
+Ordinary value types can't have a value of [null](../../language-reference/keywords/null.md). However, you can create nullable value types by appending a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](../../language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable value types are especially useful when you're passing data to and from databases in which numeric values might be null. For more information, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md).
 
 ## Compile-time type and runtime type
 
-Any variable may have distinct compile time and runtime types. The *compile-time type* is the declared or inferred type of the variable in the source code. The *runtime type* is the type of the instance referred to by that variable. Often those two types are the same, as in the following example:
+A variable can have different compile-time and run-time types. The *compile-time type* is the declared or inferred type of the variable in the source code. The *run-time type* is the type of the instance referred to by that variable. Often those two types are the same, as in the following example:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="CompileTimeType":::
 
-In other cases, the declared type is different, as shown in the following two examples:
+In other cases, the compile-time type is different, as shown in the following two examples:
 
 :::code language="csharp" source="snippets/index/Program.cs" id="RuntimeTypes":::
 
-In both of the preceding examples, the runtime type is a `string`. The compile-time type is `object` in the first line, and `IEnumerable<char>` in the second.
+In both of the preceding examples, the run-time type is a `string`. The compile-time type is `object` in the first line, and `IEnumerable<char>` in the second.
 
-It's important to understand when the compile-time type and the runtime type apply when the two types are different for a variable. The compile-time type determines all the actions taken by the compiler. These compiler actions include method call resolution, overload resolution, available implicit and explicit casts. The runtime type determines all actions that are resolved at runtime. These runtime actions include virtual method call dispatch, `is` expressions and `switch` expression evaluation, and other type testing APIs. Understand which type applies to which operation to better understand how your code interacts with types.
+If the two types are different for a variable, it's important to understand when the compile-time type and the run-time type apply. The compile-time type determines all the actions taken by the compiler. These compiler actions include method call resolution, overload resolution, and available implicit and explicit casts. The run-time type determines all actions that are resolved at run time. These run-time actions include dispatching virtual method calls, evaluating `is` and `switch` expressions, and other type testing APIs. To better understand how your code interacts with types, recognize which action applies to which type.
 
 ## Related sections
 

@@ -84,9 +84,6 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 
 ## Referencing packages in F# Interactive
 
-> [!NOTE]
-> Package management is available using .NET 5 SDK or later.
-
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
 ```fsharp

@@ -15,7 +15,7 @@ show quick information about types or members. Additionally, the XML file can be
 like [fsdocs](http://fsprojects.github.io/FSharp.Formatting/) to generate API reference websites.
 
 XML documentation comments, like all other comments, are ignored by the compiler, unless the options described below are enabled to check the validity and
-completeness of comments at compile-time.
+completeness of comments at compile time.
 
 You can generate the XML file at compile time by doing one of the following:
 
@@ -32,10 +32,10 @@ There are two ways to write XML documentation comments: with and without XML tag
 
 ## Comments without XML tags
 
-If a `///` comment does not start with a `<` then the entire comment text is taken as the summary documentation for the code construct
+If a `///` comment does not start with a `<`, then the entire comment text is taken as the summary documentation for the code construct
 that immediately follows. Use this method when you want to write only a brief summary for each construct.
 
-The comment is encoded to XML during documentation preparation, so characters such as `<`, `>` and `&` need not be escaped. If you don't specify a summary tag
+The comment is encoded to XML during documentation preparation, so characters such as `<`, `>`, and `&` need not be escaped. If you don't specify a summary tag
 explicitly, you should not specify other tags, such as **param** or **returns** tags.
 
 The following example shows the alternative method, without XML tags. In this example, the entire text in the comment is considered a summary.
@@ -44,7 +44,7 @@ The following example shows the alternative method, without XML tags. In this ex
 
 ## Comments with XML tags
 
-If a comment body begins with `<` (normally `<summary>`) then it is treated as an XML formatted comment
+If a comment body begins with `<` (normally `<summary>`), then it is treated as an XML formatted comment
 body using XML tags. This second enables you to specify separate notes
 for a short summary, additional remarks, documentation for each parameter and type parameter and exceptions thrown, and a description of the return value.
 
@@ -89,7 +89,7 @@ When `--warnon:3390` is enabled, the compiler verifies the syntax of the XML and
 
 ## Documenting F# Constructs
 
-F# constructs such as modules, members, union cases and record fields are documented by a `///` comment immediately prior to their declaration.
+F# constructs such as modules, members, union cases, and record fields are documented by a `///` comment immediately prior to their declaration.
 If needed, implicit constructors of classes are documented by giving a `///` comment prior to the argument list. For example:
 
 ```fsharp
@@ -110,7 +110,7 @@ Some features of XML documentation in C# and other .NET languages are not suppor
   Simple C#-style cross-references such as `cref="Console"` are not elaborated to full XML signatures
   and these elements are not checked by the F# compiler. Some documentation tooling
   may allow the use of these cross-references by subsequent processing, but the full signatures should be used.
-  
+
 - The tags `<include>`, `<inheritdoc>` are not supported by the F# compiler. No error is given if they are used, but
   they are simply copied to the generated documentation file without otherwise affecting the documentation generated.
 
@@ -130,7 +130,7 @@ Documenting code is recommended for many reasons. What follows are some best pra
 
 - For the sake of consistency, all publicly visible types and their members should be documented. If you must do it, do it all.
 
-- At a bare minimum, modules, types and their members should have a plain `///` comment or `<summary>` tag. This will show in an autocompletion tooltip window in F# editing tools.
+- At a bare minimum, modules, types, and their members should have a plain `///` comment or `<summary>` tag. This will show in an autocompletion tooltip window in F# editing tools.
 
 - Documentation text should be written using complete sentences ending with full stops.
 

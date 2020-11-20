@@ -35,7 +35,12 @@ Here's example JSON with camel case property names. It can be deserialized into 
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to configure serialization options](system-text-json-configure-options.md)
-* [How to ignore properties](system-text-json-ignore-properties.md)
-* [How to customize property names](system-text-json-customize-properties.md)
+* [Instantiate JsonSerializerOptions](system-text-json-configure-options.md)
+* [Customize property names and values](system-text-json-customize-properties.md)
+* [Ignore properties](system-text-json-ignore-properties.md)
+* [Allow invalid JSON](system-text-json-invalid-json.md)
+* [Handle overflow JSON](system-text-json-handle-overflow.md)
+* [Preserve circular references](system-text-json-handle-circular-refs.md)
+* [Immutable types and non-public accessors](system-text-json-immutability.md)
+* [Polymorphic serialization](system-text-json-polymorphism.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

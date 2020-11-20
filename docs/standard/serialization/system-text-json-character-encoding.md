@@ -79,7 +79,6 @@ To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncod
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to configure serialization options](system-text-json-configure-options.md)
-* [How to ignore properties](system-text-json-ignore-properties.md)
-* [How to customize property names](system-text-json-customize-properties.md)
+* [How to write custom serializers and deserializers](system-text-json-customize-serialization.md)
+* [How to write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

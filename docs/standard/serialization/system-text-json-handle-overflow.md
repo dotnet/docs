@@ -79,7 +79,12 @@ Notice that the `ExtensionData` property name doesn't appear in the JSON. This b
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to configure serialization options](system-text-json-configure-options.md)
-* [How to ignore properties](system-text-json-ignore-properties.md)
-* [How to customize property names](system-text-json-customize-properties.md)
+* [Instantiate JsonSerializerOptions](system-text-json-configure-options.md)
+* [Enable case-insensitive matching](system-text-json-character-casing.md)
+* [Customize property names and values](system-text-json-customize-properties.md)
+* [Ignore properties](system-text-json-ignore-properties.md)
+* [Allow invalid JSON](system-text-json-invalid-json.md)
+* [Preserve circular references](system-text-json-handle-circular-refs.md)
+* [Immutable types and non-public accessors](system-text-json-immutability.md)
+* [Polymorphic serialization](system-text-json-polymorphism.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

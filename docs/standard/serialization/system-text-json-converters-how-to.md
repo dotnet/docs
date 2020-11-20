@@ -367,9 +367,7 @@ If you need to make a converter that modifies the behavior of an existing built-
 
 * [Source code for built-in converters](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
 * [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
-* [System.Text.Json overview](system-text-json-overview.md)
-* [How to use System.Text.Json](system-text-json-how-to.md)
-* [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [How to customize character encoding](system-text-json-character-encoding.md)
+* [How to write custom serializers and deserializers](system-text-json-customize-serialization.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)
-<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)-->

@@ -157,7 +157,12 @@ Enum string names can be deserialized as well, as shown in the following example
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to configure serialization options](system-text-json-configure-options.md)
-* [How to ignore properties](system-text-json-ignore-properties.md)
-* [How to customize character encoding](system-text-json-character-encoding.md)
+* [Instantiate JsonSerializerOptions](system-text-json-configure-options.md)
+* [Enable case-insensitive matching](system-text-json-character-casing.md)
+* [Ignore properties](system-text-json-ignore-properties.md)
+* [Allow invalid JSON](system-text-json-invalid-json.md)
+* [Handle overflow JSON](system-text-json-handle-overflow.md)
+* [Preserve circular references](system-text-json-handle-circular-refs.md)
+* [Immutable types and non-public accessors](system-text-json-immutability.md)
+* [Polymorphic serialization](system-text-json-polymorphism.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

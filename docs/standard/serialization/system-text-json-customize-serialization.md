@@ -118,7 +118,6 @@ The preceding example sets no limit to how large the buffer can grow. If the tok
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to write custom converters](system-text-json-converters-how-to.md)
-* [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
-* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
+* [How to customize character encoding](system-text-json-character-encoding.md)
+* [How to write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

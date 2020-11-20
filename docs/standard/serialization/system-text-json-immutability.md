@@ -48,7 +48,12 @@ Non-public property accessors are not supported in .NET Core 3.1. For more infor
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to configure serialization options](system-text-json-configure-options.md)
-* [How to ignore properties](system-text-json-ignore-properties.md)
-* [How to customize property names](system-text-json-customize-properties.md)
+* [Instantiate JsonSerializerOptions](system-text-json-configure-options.md)
+* [Enable case-insensitive matching](system-text-json-character-casing.md)
+* [Customize property names and values](system-text-json-customize-properties.md)
+* [Ignore properties](system-text-json-ignore-properties.md)
+* [Allow invalid JSON](system-text-json-invalid-json.md)
+* [Handle overflow JSON](system-text-json-handle-overflow.md)
+* [Preserve circular references](system-text-json-handle-circular-refs.md)
+* [Polymorphic serialization](system-text-json-polymorphism.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

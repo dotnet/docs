@@ -8,9 +8,9 @@ ms.date: 11/20/2020
 
 This article explains how to take slices from existing F# types and how to define your own slices.
 
-In F#, a slice is a subset of any data type. It is most commonly used with F# arrays and lists. Slices are similar to [indexers](./members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones. Slices use the `..` operator syntax to select the range of specified indices in a data type. For more information, see the [looping expression reference article](./loops-for-in-expression.md).
+In F#, a slice is a subset of any data type.  Slices are similar to [indexers](./members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones. Slices use the `..` operator syntax to select the range of specified indices in a data type. For more information, see the [looping expression reference article](./loops-for-in-expression.md).
 
-F# currently has intrinsic support for slicing strings, lists, arrays, and multidimensional (2D,3D,4D) arrays. You can add slicing to your custom data types by using the `GetSlice` method in your type definition or in an in-scope [type extension](type-extensions.md).
+Although slicing is most commonly used with F# arrays and lists, F# currently has intrinsic support for slicing strings, lists, arrays, and multidimensional (2D,3D,4D) arrays. You can add slicing to your custom data types by using the `GetSlice` method in your type definition or in an in-scope [type extension](type-extensions.md).
 
 ## Slicing F# lists and arrays
 
@@ -144,7 +144,7 @@ printfn "%A" xs.[2..5] // Includes the 5th index
 
 ## Built-in F# empty slices
 
-F# lists, arrays, sequences, strings, 2D arrays, 3D arrays, and 4D arrays will all produce an empty slice if the syntax could produce a slice that doesn't exist.
+F# lists, arrays, sequences, strings, multidimensional (2D,3D,4D) arrays will all produce an empty slice if the syntax could produce a slice that doesn't exist.
 
 Consider the following:
 
@@ -158,7 +158,11 @@ let emptyArray = a.[-2..(-1)]
 let emptyString = s.[-2..(-1)]
 ```
 
-C# developers may expect these to throw an exception rather than produce an empty slice. This is a design decision rooted in the fact that empty collections compose in F#. An empty F# list can be composed with another F# list, an empty string can be added to an existing string, and so on. It can be common to take slices based on values passed in as parameters, and being tolerant of out-of-bounds by producing an empty collection fits with the compositional nature of F# code.
+> [!IMPORTANT]
+> C# developers may expect these to throw an exception rather than produce an empty slice. This is a
+> design decision rooted in the fact that empty collections compose in F#. An empty F# list can be
+> composed with another F# list, an empty string can be added to an existing string, and so on. It can
+> be common to take slices based on values passed in as parameters, and being tolerant of out-of-bounds > by producing an empty collection fits with the compositional nature of F# code.
 
 ## Fixed-index slices for 3D and 4D arrays
 

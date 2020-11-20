@@ -79,6 +79,12 @@ landingContent:
             url: language-reference/functions/index.md
           - text: "F# types"
             url: language-reference/fsharp-types.md
+  - title: "F# Tools"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "F# Interactive"
+            url: tools/fsharp-interactive/index.md
 
   - title: "F# Core Library reference"
     linkLists:

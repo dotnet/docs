@@ -164,7 +164,7 @@ Namespace Overview
                 batchBlock.Post(i)
             Next i
             ' Set the block to the completed state. This causes
-            ' the block to propagate out any any remaining
+            ' the block to propagate out any remaining
             ' values as a final batch.
             batchBlock.Complete()
 

@@ -50,7 +50,7 @@ void IPAddresses( String^ server )
 
          // Display the server IP address in the standard format. In 
          // IPv4 the format will be dotted-quad notation, in IPv6 it will be
-         // in in colon-hexadecimal notation.
+         // in colon-hexadecimal notation.
          Console::WriteLine( "Address: {0}", curAdd );
          
          // Display the server IP address in byte format.

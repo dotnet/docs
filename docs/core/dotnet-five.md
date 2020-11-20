@@ -48,7 +48,7 @@ There are no plans to port the following technologies from .NET Framework to .NE
 
 ### Windows Communication Foundation
 
-The original implementation of the [Windows Communication Foundation (WCF)](../framework/wcf/index.md) was only supported on Windows, however; there is a client port available from the .NET Foundation. It is entirely [open source](https://github.com/dotnet/wcf), cross platform, and supported by Microsoft. The core NuGet packages are listed below:
+The original implementation of [Windows Communication Foundation (WCF)](../framework/wcf/index.md) was only supported on Windows. However, there is a client port available from the .NET Foundation. It is entirely [open source](https://github.com/dotnet/wcf), cross platform, and supported by Microsoft. The core NuGet packages are listed below:
 
 - [System.ServiceModel.Duplex](https://www.nuget.org/packages/System.ServiceModel.Duplex)
 - [System.ServiceModel.Federation](https://www.nuget.org/packages/System.ServiceModel.Federation)
@@ -57,7 +57,7 @@ The original implementation of the [Windows Communication Foundation (WCF)](../f
 - [System.ServiceModel.Primitives](https://www.nuget.org/packages/System.ServiceModel.Primitives)
 - [System.ServiceModel.Security](https://www.nuget.org/packages/System.ServiceModel.Security)
 
-The community maintains the server components that compliment the aforementioned client libraries. The GitHub repository can be found at [CoreWCF](https://github.com/CoreWCF/CoreWCF). The server components are _not_ officially supported by Microsoft. For an alternative to WCF, consider [gRPC](/aspnet/core/grpc).
+The community maintains the server components that complement the aforementioned client libraries. The GitHub repository can be found at [CoreWCF](https://github.com/CoreWCF/CoreWCF). The server components are _not_ officially supported by Microsoft. For an alternative to WCF, consider [gRPC](/aspnet/core/grpc).
 
 ## .NET 5.0 doesn't replace .NET Standard
 

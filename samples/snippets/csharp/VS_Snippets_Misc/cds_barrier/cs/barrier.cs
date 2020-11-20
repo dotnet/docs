@@ -123,8 +123,8 @@ class BarrierDemo
             }
         }
 
-        // Perform n tasks to run in in parallel. For simplicity
-       // all threads execute the same method in this example.
+        // Perform n tasks to run in parallel. For simplicity
+        // all threads execute the same method in this example.
         static void Main()
         {
             var app = new BarrierDemo();

@@ -73,7 +73,7 @@ The body of the method consists of two blocks of code:
 
   - **Managed objects that consume large amounts of memory or consume scarce resources.** Assign large managed object references to `null` to make them more likely to be unreachable. This releases them faster than if they were reclaimed non-deterministically, and this is usually done outside of the conditional block.
 
-If the method call comes from a finalizer, only the code that frees unmanaged resources should execute. The implementer is responsible for ensuring the the false path doesn't interact with managed objects that may have been reclaimed. This is important because the order in which the garbage collector destroys managed objects during finalization is non-deterministic.
+If the method call comes from a finalizer, only the code that frees unmanaged resources should execute. The implementer is responsible for ensuring that the false path doesn't interact with managed objects that may have been reclaimed. This is important because the order in which the garbage collector destroys managed objects during finalization is non-deterministic.
 
 ## Cascade dispose calls
 

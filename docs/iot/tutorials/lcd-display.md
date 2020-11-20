@@ -32,7 +32,7 @@ In this topic, you will use .NET to display text on an LCD character display usi
 
 ## Prepare the hardware
 
-Use jumper wires to connect the the four pins on the I2C GPIO expander to the Raspberry Pi as follows:
+Use jumper wires to connect the four pins on the I2C GPIO expander to the Raspberry Pi as follows:
 
 - GND to ground
 - VCC to 5V

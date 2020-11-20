@@ -792,15 +792,15 @@
         static void SequentialDemo()
         {
             var orders = GetOrders();
-            var query = (from ord in orders.AsParallel()
-                         orderby ord.CustomerID
+            var query = (from order in orders.AsParallel()
+                         orderby order.OrderID
                          select new
                          {
-                             Details = ord.OrderID,
-                             Date = ord.OrderDate,
-                             Shipped = ord.ShippedDate
-                         }).
-                                AsSequential().Take(5);
+                             order.OrderID,
+                             OrderedOn = order.OrderDate,
+                             ShippedOn = order.ShippedDate
+                         })
+                         .AsSequential().Take(5);
         }
         //</snippet24>
 

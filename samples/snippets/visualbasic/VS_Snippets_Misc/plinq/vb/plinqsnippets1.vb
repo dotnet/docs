@@ -772,7 +772,7 @@ Module PLinqSnippetsVB
 
             Dim orders = GetOrders()
             Dim query = From ord In orders.AsParallel()
-                        Order By ord.CustomerID
+                        Order By ord.OrderID
                         Select New With
                         {
                             ord.OrderID,

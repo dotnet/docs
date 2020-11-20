@@ -170,7 +170,7 @@ For F# 3D and 4D arrays, you can "fix" a particular index and slice other dimens
 
 To illustrate this, consider the following 3D array:
 
-*z = 0*
+<!-- *z = 0* -->
 
 | x\y   | 0 | 1 |
 |-------|---|---|

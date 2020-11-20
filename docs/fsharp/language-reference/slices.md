@@ -144,9 +144,9 @@ printfn $"{xs.[2..5]}" // Includes the 5th index
 
 ## Built-in F# empty slices
 
-F# lists, arrays, sequences, strings, 2D arrays, 3D arrays, and 4D arrays will all produce an empty slice if the syntax could produce a slice that doesn't exist.
+F# lists, arrays, sequences, strings, multidimensional (2D, 3D, 4D) arrays will all produce an empty slice if the syntax could produce a slice that doesn't exist.
 
-Consider the following:
+Consider the following example:
 
 ```fsharp
 let l = [ 1..10 ]
@@ -158,7 +158,11 @@ let emptyArray = a.[-2..(-1)]
 let emptyString = s.[-2..(-1)]
 ```
 
-C# developers may expect these to throw an exception rather than produce an empty slice. This is a design decision rooted in the fact that empty collections compose in F#. An empty F# list can be composed with another F# list, an empty string can be added to an existing string, and so on. It can be common to take slices based on values passed in as parameters, and being tolerant of out-of-bounds by producing an empty collection fits with the compositional nature of F# code.
+> [!IMPORTANT]
+> C# developers may expect these to throw an exception rather than produce an empty slice. This is a
+> design decision rooted in the fact that empty collections compose in F#. An empty F# list can be
+> composed with another F# list, an empty string can be added to an existing string, and so on. It can
+> be common to take slices based on values passed in as parameters, and being tolerant of out-of-bounds > by producing an empty collection fits with the compositional nature of F# code.
 
 ## Fixed-index slices for 3D and 4D arrays
 
@@ -167,12 +171,14 @@ For F# 3D and 4D arrays, you can "fix" a particular index and slice other dimens
 To illustrate this, consider the following 3D array:
 
 *z = 0*
+
 | x\y   | 0 | 1 |
 |-------|---|---|
 | **0** | 0 | 1 |
 | **1** | 2 | 3 |
 
 *z = 1*
+
 | x\y   | 0 | 1 |
 |-------|---|---|
 | **0** | 4 | 5 |
@@ -196,7 +202,7 @@ for z in 0..dim-1 do
 m.[*, 0, 1]
 ```
 
-The last line fixes the `y` and `z` indicies of the 3D array and takes the rest of the `x` values that correspond to the matrix.
+The last line fixes the `y` and `z` indices of the 3D array and takes the rest of the `x` values that correspond to the matrix.
 
 ## See also
 

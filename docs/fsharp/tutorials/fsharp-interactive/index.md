@@ -86,6 +86,7 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 
 > [!NOTE]
 > Package management is an F# 5 feature and is currently available using the latest .NET 5 SDK.
+> Package management system is extensible, read more [about other extensions](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
 
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
@@ -116,6 +117,8 @@ printfn "%A" (f (dsharp.tensor 1.2))
 ```
 
 You can specify as many package references as you like in a script.
+
+Read more about [package management extensibility and other extensions](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
 
 ## Referencing assemblies on disk with F# interactive
 

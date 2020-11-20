@@ -182,7 +182,7 @@ To illustrate this, consider the following 3D array:
 | **0** | 0 | 1 |
 | **1** | 2 | 3 | -->
 
-<!-- *z = 1* -->
+*z = 1*
 
 | x\y   | 0 | 1 |
 |-------|---|---|

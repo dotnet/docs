@@ -35,6 +35,10 @@ The following versions of .NET are no longer supported. The downloads for these 
 - 2.2
 - 2.0
 
+## Remove preview versions
+
+[!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
+
 ## How to install other versions
 
 Consult the [Red Hat documentation for .NET](https://access.redhat.com/documentation/net/5.0/) on the steps required to install other releases of .NET.

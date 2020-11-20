@@ -65,7 +65,7 @@ Periodically collect selected counter values and export them into a specified fi
 ### Synopsis
 
 ```console
-dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
+dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
 ```
 
 ### Options
@@ -77,6 +77,10 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 - **`-n|--name <name>`**
 
   The name of the process to be collect counter data from.
+
+- **`--diagnostic-port`**
+
+  The name of the diagnostic port to create. See [using diagnostic port](#using-diagnostic-port) for how to use this option to start monitoring counters from app startup.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -100,6 +104,9 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 
   > [!NOTE]
   > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
+  > [!NOTE]
+  > Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
 
 ### Examples
 
@@ -174,7 +181,7 @@ Displays periodically refreshing values of selected counters.
 ### Synopsis
 
 ```console
-dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters] [-- <command>]
+dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters] [-- <command>]
 ```
 
 ### Options
@@ -186,6 +193,10 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 - **`-n|--name <name>`**
 
   The name of the process to be monitored.
+
+- **`--diagnostic-port`**
+
+  The name of the diagnostic port to create. See [using diagnostic port](#using-diagnostic-port) for how to use this option to start monitoring counters from app startup.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -201,6 +212,9 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 
   > [!NOTE]
   > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
+  > [!NOTE]
+  > Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
 
 ### Examples
 
@@ -310,3 +324,64 @@ dotnet-counters ps [-h|--help]
   15683 WebApi     /home/suwhang/repos/WebApi/WebApi
   16324 dotnet     /usr/local/share/dotnet/dotnet
 ```
+
+## Using diagnostic port
+
+  > [!IMPORTANT]
+  > This works for apps running .NET 5.0 or later only.
+
+Diagnostic port is a new runtime feature that was added in .NET 5 that allows you to start monitoring or collecting counters from app startup. To do this using `dotnet-counters`, you can either use `dotnet-counters <collect|monitor> -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
+
+Using `dotnet-counters <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly monitor it from its startup.
+
+However, when you want to gain a finer control over the lifetime of the app being monitored (for example, monitor the app for the first 10 minutes only and continue executing) or if you need to interact with the app using the CLI, using `--diagnostic-port` option allows you to control both the target app being monitored and `dotnet-counters`.
+
+1. The command below makes dotnet-counters create a diagnostics socket named `myport.sock` and wait for a connection.
+
+```dotnet-cli
+dotnet-counters collect --diagnostic-port myport.sock
+```
+
+Output:
+```bash
+Waiting for connection on myport.sock
+Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/suwhang/myport.sock
+```
+
+2. On a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value suggested by `dotnet-counters`.
+
+```bash
+export DOTNET_DiagnosticPorts=/home/suwhang/myport.sock
+./my-dotnet-app arg1 arg2
+```
+
+This should then enable `dotnet-counters` to start collecting counters on `my-dotnet-app`:
+
+```bash
+Waiting for connection on myport.sock
+Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
+Starting a counter session. Press Q to quit.
+```
+
+  > [!IMPORTANT]
+  > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
+
+## FAQ
+
+1. Can a single process of `dotnet-counters` monitor/collect counters from multiple applications at once using diagnostic ports?
+
+> No. A single process of `dotnet-counters` can only collect or monitor counters from a single application at once.
+
+2. `dotnet-counters` is stuck at "Waiting for connection on ....".
+
+> Make sure your application is running .NET 5 and is launched with the correct environment variable suggested by `dotnet-counters`.
+
+3. My app is stuck with a message similar to one below:
+
+```bash
+The runtime has been configured to pause during startup and is awaiting a Diagnostics IPC ResumeStartup command from a Diagnostic Port.
+DOTNET_DiagnosticPorts="myport.sock"
+DOTNET_DefaultDiagnosticPortSuspend=0
+```
+
+> This may happen when some other process has already connected to `dotnet-counters`. Make sure you didn't accidentally launch a child process or are using a wrong socket name that's being used by another instance of active application.

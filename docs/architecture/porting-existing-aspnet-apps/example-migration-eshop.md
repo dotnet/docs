@@ -311,6 +311,8 @@ At this point, the app once more builds successfully. However, trying to run it 
 
 ## Migrate app startup components
 
+The last step in migrating is to take the app startup tasks from `Global.asax` and the classes it calls and migrate these to their ASP.NET Core equivalents. These include configuration of MVC itself, setting up dependency injection, and working with the new configuration system.
+
 - Migrate Global.asax items
   - Show migrations for CORS, filters, route constraints, etc.
   - Show how to configure MVC with binders, formatters, areas, DI

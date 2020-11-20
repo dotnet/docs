@@ -256,34 +256,34 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
 1. The command below makes `dotnet-trace` create a diagnostics socket named `myport.sock` and wait for a connection.
 
-```dotnet-cli
-dotnet-trace collect --diagnostic-port myport.sock
-```
+    > ```dotnet-cli
+    > dotnet-trace collect --diagnostic-port myport.sock
+    > ```
 
-  Output:
+    Output:
 
-  ```bash
-  Waiting for connection on myport.sock
-  Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/suwhang/myport.sock
-  ```
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/suwhang/myport.sock
+    > ```
 
 2. On a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value suggested by `dotnet-trace`.
 
-  ```bash
-  export DOTNET_DiagnosticPorts=/home/suwhang/myport.sock
-  ./my-dotnet-app arg1 arg2
-  ```
+    > ```bash
+    > export DOTNET_DiagnosticPorts=/home/suwhang/myport.sock
+    > ./my-dotnet-app arg1 arg2
+    > ```
 
-  This should then enable `dotnet-trace` to start tracing `my-dotnet-app`:
+    This should then enable `dotnet-trace` to start tracing `my-dotnet-app`:
 
-  ```bash
-  Waiting for connection on myport.sock
-  Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
-  Starting a counter session. Press Q to quit.
-  ```
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
+    > Starting a counter session. Press Q to quit.
+    > ```
 
-  > [!IMPORTANT]
-  > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
+    > [!IMPORTANT]
+    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
 
 ## View the trace captured from dotnet-trace
 

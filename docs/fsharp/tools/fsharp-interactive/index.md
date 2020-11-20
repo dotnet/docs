@@ -70,7 +70,7 @@ let getOddSquares xs =
     |> List.filter (fun x -> x % 2 <> 0)
     |> List.map (fun x -> x * x)
 
-getOddSquares [1..10]
+printfn "%A" (getOddSquares [1..10])
 ```
 
 When this file is created in your machine, you can run it with `dotnet fsi` and see the output directly in your terminal window:

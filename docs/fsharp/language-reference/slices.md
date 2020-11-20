@@ -10,7 +10,7 @@ This article explains how to take slices from existing F# types and how to defin
 
 In F#, a slice is a subset of any data type.  Slices are similar to [indexers](./members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones. Slices use the `..` operator syntax to select the range of specified indices in a data type. For more information, see the [looping expression reference article](./loops-for-in-expression.md).
 
-Although slicing is most commonly used with F# arrays and lists, F# currently has intrinsic support for slicing strings, lists, arrays, and multidimensional (2D,3D,4D) arrays. You can add slicing to your custom data types by using the `GetSlice` method in your type definition or in an in-scope [type extension](type-extensions.md).
+F# currently has intrinsic support for slicing strings, lists, arrays, and multidimensional (2D, 3D, 4D) arrays. Slicing is most commonly used with F# arrays and lists. You can add slicing to your custom data types by using the `GetSlice` method in your type definition or in an in-scope [type extension](type-extensions.md).
 
 ## Slicing F# lists and arrays
 
@@ -144,9 +144,9 @@ printfn "%A" xs.[2..5] // Includes the 5th index
 
 ## Built-in F# empty slices
 
-F# lists, arrays, sequences, strings, multidimensional (2D,3D,4D) arrays will all produce an empty slice if the syntax could produce a slice that doesn't exist.
+F# lists, arrays, sequences, strings, multidimensional (2D, 3D, 4D) arrays will all produce an empty slice if the syntax could produce a slice that doesn't exist.
 
-Consider the following:
+Consider the following example:
 
 ```fsharp
 let l = [ 1..10 ]
@@ -177,22 +177,12 @@ To illustrate this, consider the following 3D array:
 | **0** | 0 | 1 |
 | **1** | 2 | 3 |
 
-<!-- | x\y   | 0 | 1 |
-|---|---|---|
-| **0** | 0 | 1 |
-| **1** | 2 | 3 | -->
-
 *z = 1*
 
 | x\y   | 0 | 1 |
 |-------|---|---|
 | **0** | 4 | 5 |
 | **1** | 6 | 7 |
-
-<!-- | x\y   | 0 | 1 |
-|---|---|---|
-| **0** | 4 | 5 |
-| **1** | 6 | 7 | -->
 
 If you want to extract the slice `[| 4; 5 |]` from the array, use a fixed-index slice.
 
@@ -212,7 +202,7 @@ for z in 0..dim-1 do
 m.[*, 0, 1]
 ```
 
-The last line fixes the `y` and `z` indicies of the 3D array and takes the rest of the `x` values that correspond to the matrix.
+The last line fixes the `y` and `z` indices of the 3D array and takes the rest of the `x` values that correspond to the matrix.
 
 ## See also
 

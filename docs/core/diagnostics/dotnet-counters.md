@@ -365,23 +365,3 @@ Starting a counter session. Press Q to quit.
 
   > [!IMPORTANT]
   > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
-
-## FAQ
-
-1. Can a single process of `dotnet-counters` monitor/collect counters from multiple applications at once using diagnostic ports?
-
-> No. A single process of `dotnet-counters` can only collect or monitor counters from a single application at once.
-
-2. `dotnet-counters` is stuck at "Waiting for connection on ....".
-
-> Make sure your application is running .NET 5 and is launched with the correct environment variable suggested by `dotnet-counters`.
-
-3. My app is stuck with a message similar to one below:
-
-```bash
-The runtime has been configured to pause during startup and is awaiting a Diagnostics IPC ResumeStartup command from a Diagnostic Port.
-DOTNET_DiagnosticPorts="myport.sock"
-DOTNET_DefaultDiagnosticPortSuspend=0
-```
-
-> This may happen when some other process has already connected to `dotnet-counters`. Make sure you didn't accidentally launch a child process or are using a wrong socket name that's being used by another instance of active application.

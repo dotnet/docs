@@ -5,6 +5,8 @@ ms.date: 07/20/2015
 helpviewer_keywords:
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
+ms.topic: how-to
+ms.custom: contperfq2
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
 ---
 # How to implement a lightweight class with auto-implemented properties (C# Programming Guide)

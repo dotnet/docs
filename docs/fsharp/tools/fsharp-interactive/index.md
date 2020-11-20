@@ -118,7 +118,7 @@ printfn "%A" (f (dsharp.tensor 1.2))
 You can specify as many package references as you like in a script.
 
 > [!WARNING]
-> There's currently a limitation for scripts that use framework references like `Microsoft.NET.Sdk.Web`. Packages like Saturn, Giraffe or Falco are not available yet. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417)
+> There's currently a limitation for scripts that use framework references (e.g.`Microsoft.NET.Sdk.Web` or  `Microsoft.NET.Sdk.WindowsDesktop`). Packages like Saturn, Giraffe, WinForms are not available. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417).
 
 ## Referencing assemblies on disk with F# interactive
 

@@ -264,13 +264,13 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
     > ```bash
     > Waiting for connection on myport.sock
-    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/suwhang/myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ```
 
-2. On a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value suggested by `dotnet-trace`.
+2. In a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value in the `dotnet-trace` output.
 
     > ```bash
-    > export DOTNET_DiagnosticPorts=/home/suwhang/myport.sock
+    > export DOTNET_DiagnosticPorts=/home/user/myport.sock
     > ./my-dotnet-app arg1 arg2
     > ```
 

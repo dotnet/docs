@@ -50,23 +50,6 @@ Here are the options that have different defaults for web apps:
 A `JsonSerializerOptions` constructor that specifies a set of defaults is not available in .NET Core 3.1.
 ::: zone-end
 
-## HttpClient and HttpContent extension methods
-
-::: zone pivot="dotnet-5-0"
-
-Serializing and deserializing JSON payloads from the network are common operations. Extension methods on [HttpClient](xref:System.Net.Http.Json.HttpClientJsonExtensions) and [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions) let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](#web-defaults-for-jsonserializeroptions).
-
-The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
-
-:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="26,33":::
-
-There are also extension methods for System.Text.Json on [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
-::: zone-end
-
-::: zone pivot="dotnet-core-3-1"
-Extension methods on `HttpClient` and `HttpContent` are not available in System.Text.Json in .NET Core 3.1.
-::: zone-end
-
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)

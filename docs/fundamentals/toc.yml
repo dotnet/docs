@@ -1605,34 +1605,34 @@ items:
         href: ../standard/serialization/system-text-json-how-to.md
       - name: Control serialization behavior
         items:
-        - name: Polymorphic serialization
-          href: ../standard/serialization/system-text-json-polymorphism.md
+        - name: Instantiate JsonSerializerOptions
+          href: ../standard/serialization/system-text-json-configure-options.md
+        - name: Enable case-insensitive matching
+          href: ../standard/serialization/system-text-json-character-casing.md
+        - name: Customize property names
+          href: ../standard/serialization/system-text-json-customize-properties.md
+        - name: Ignore properties
+          href: ../standard/serialization/system-text-json-ignore-properties.md
         - name: Allow invalid JSON
           href: ../standard/serialization/system-text-json-invalid-json.md
-        - name: Character casing
-          href: ../standard/serialization/system-text-json-character-casing.md
-        - name: Overflow
+        - name: Handle overflow JSON
           href: ../standard/serialization/system-text-json-handle-overflow.md
-        - name: Circular references
+        - name: Preserve circular references
           href: ../standard/serialization/system-text-json-handle-circular-refs.md
         - name: Immutable types and non-public accessors
           href: ../standard/serialization/system-text-json-immutability.md
-        - name: Work with JsonSerializerOptions
-          href: ../standard/serialization/system-text-json-configure-options.md
-        - name: Ignore properties
-          href: ../standard/serialization/system-text-json-ignore-properties.md
-        - name: Customize character encoding
-          href: ../standard/serialization/system-text-json-character-encoding.md
-        - name: Customize property names
-          href: ../standard/serialization/system-text-json-customize-properties.md
+        - name: Polymorphic serialization
+          href: ../standard/serialization/system-text-json-polymorphism.md
+      - name: How to migrate from Newtonsoft.Json
+        href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
       - name: Advanced
         items:
+        - name: Customize character encoding
+          href: ../standard/serialization/system-text-json-character-encoding.md
         - name: Custom serializers and deserializers
           href: ../standard/serialization/system-text-json-customize-serialization.md
         - name: Custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
-      - name: How to migrate from Newtonsoft.Json
-        href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
     - name: Binary serialization
       items:
       - name: Overview

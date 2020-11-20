@@ -1,6 +1,6 @@
 ---
-title: How to customize property names with System.Text.Json
-description: "Learn how to customize properties when serializing with System.Text.Json in .NET."
+title: How to customize property names and values with System.Text.Json
+description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
 ms.date: 11/18/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to customize property names with System.Text.Json
+# How to customize property names and values with System.Text.Json
 
 By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. In this article, you'll learn how to:
 

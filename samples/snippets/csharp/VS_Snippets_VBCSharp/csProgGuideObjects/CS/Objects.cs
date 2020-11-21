@@ -4,22 +4,6 @@ using System.Text;
 
 namespace CsCsrefProgrammingObjects
 {
-
-    //-----------------------------------------------------------------------------
-    //<Snippet1>
-    public struct Coords
-    {
-        public int x, y;
-
-        public Coords(int p1, int p2)
-        {
-            x = p1;
-            y = p2;
-        }
-    }
-    //</Snippet1>
-
-    //-----------------------------------------------------------------------------
     namespace WrapCoords
     {
         //<Snippet4>

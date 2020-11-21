@@ -645,9 +645,9 @@ namespace CsCsrefProgrammingGenerics
     //<Snippet41>
     namespace ConsoleApplication1
     {
-        class Program
+        public class Program
         {
-            static void Main(string[] args)
+            public static void Main(string[] args)
             {
                 // Test with a non-empty list of integers.
                 GenericList<int> gll = new GenericList<int>();

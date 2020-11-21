@@ -1,11 +1,11 @@
 ---
-title: "What's New in Windows Workflow Foundation in .NET 4.5"
+title: "What's New in Windows Workflow Foundation in .NET Framework 4.5"
 description: Windows Workflow Foundation in .NET Framework 4.5 introduces many new features, such as new activities, designer capabilities, and workflow development models.
 ms.date: "03/30/2017"
 ms.assetid: 195c43a8-e0a8-43d9-aead-d65a9e6751ec
 ---
 
-# What's New in Windows Workflow Foundation in .NET 4.5
+# What's New in Windows Workflow Foundation in .NET Framework 4.5
 
 Windows Workflow Foundation (WF) in .NET Framework 4.5 introduces many new features, such as new activities, designer capabilities, and workflow development models. Many, but not all, of the new workflow features introduced in .NET Framework 4.5 are supported in the re-hosted workflow designer. For more information about the new features that are supported, see [Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer](wf-features-in-the-rehosted-workflow-designer.md). For more information about migrating .NET Framework 3.0 and .NET Framework 3.5 workflow applications to use the latest version, see [Migration Guidance](migration-guidance.md). This article provides an overview of the new workflow features introduced in .NET Framework 4.5.
 

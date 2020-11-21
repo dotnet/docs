@@ -24,7 +24,7 @@ Community-maintained tools are available to help detect which .NET Framework ver
 
 - [https://github.com/jmalarcon/DotNetVersions](https://github.com/jmalarcon/DotNetVersions)
 
-  A .NET 2.0 command-line tool.
+  A .NET Framework 2.0 command-line tool.
 
 - [https://github.com/EliteLoser/DotNetVersionLister](https://github.com/EliteLoser/DotNetVersionLister)
 

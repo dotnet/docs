@@ -117,7 +117,7 @@ In .NET Framework 3.5, there were a few limitations in the design of known types
 
 - It was not possible for users to specify what xsi:type they would like to have appear on the wire to, for instance, make the size of a serialization instance on the wire smaller.
 
-The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these issues in .NET 4.5.
+The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these issues in .NET Framework 4.5.
 
 ### Getting Started
 
@@ -139,7 +139,7 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 ## Flowchart
 
-Flowchart is a well-known paradigm to visually represent domain problems. It is a new control flow style we're introducing in .NET 4. A core characteristic of Flowchart is that only one activity is executed at any given time. Flowcharts can express loops and alternative outcomes, but cannot natively express concurrent execution of multiple nodes.
+Flowchart is a well-known paradigm to visually represent domain problems. It is a new control flow style we're introducing in .NET Framework 4. A core characteristic of Flowchart is that only one activity is executed at any given time. Flowcharts can express loops and alternative outcomes, but cannot natively express concurrent execution of multiple nodes.
 
 ### Getting Started
 

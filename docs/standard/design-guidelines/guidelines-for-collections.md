@@ -1,7 +1,6 @@
 ---
 title: "Guidelines for Collections"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
 ---
 # Guidelines for Collections

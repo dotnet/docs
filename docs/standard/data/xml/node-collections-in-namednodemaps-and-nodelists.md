@@ -1,7 +1,6 @@
 ---
 title: "Node Collections in NamedNodeMaps and NodeLists"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 025954b8-7aa8-47c5-a1c1-f81064fb4d65
 ---
 # Node Collections in NamedNodeMaps and NodeLists

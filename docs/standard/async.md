@@ -4,7 +4,6 @@ description: Learn how async programming is a key technique that makes it straig
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 ms.assetid: 1e38e9d9-8284-46ee-a15f-199adc4f26f4
 ---
 # Async Overview

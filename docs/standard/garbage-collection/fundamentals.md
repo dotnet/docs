@@ -2,7 +2,6 @@
 title: Fundamentals of garbage collection
 description: Learn how the garbage collector works and how it can be configured for optimum performance.
 ms.date: 11/15/2019
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "garbage collection, generations"
   - "garbage collection, background"

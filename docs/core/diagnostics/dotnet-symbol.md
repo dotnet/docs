@@ -1,18 +1,18 @@
 ---
-title: dotnet-symbol - .NET Core
-description: Installing and using the dotnet-symbol command-line tool.
-ms.date: 08/26/2020
+title: dotnet-symbol diagnostic tool - .NET CLI
+description: Learn how to install and use the dotnet-symbol CLI tool to download files required for debugging .NET dumps and minidumps. 
+ms.date: 11/17/2020
 ---
 # Symbol downloader (dotnet-symbol)
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-## Install dotnet-symbol
+## Install
 
-To install the latest release version of the `dotnet-symbol` [NuGet package](https://www.nuget.org/packages/dotnet-symbol), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+To install the latest release version of the `dotnet-trace` [NuGet package](https://www.nuget.org/packages/dotnet-trace), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
 ```dotnetcli
-dotnet tool install -g dotnet-symbol
+dotnet tool install --global dotnet-symbol
 ```
 
 ## Synopsis

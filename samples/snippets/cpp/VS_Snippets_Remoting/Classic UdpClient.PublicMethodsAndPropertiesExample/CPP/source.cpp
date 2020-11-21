@@ -8,7 +8,7 @@ using namespace System::Net::Sockets;
 public ref class MyUdpClientExample
 {
 public:
-   //  MyUdpClientConstructor is just used to illustrate the different constructors available in in the UdpClient class.
+   //  MyUdpClientConstructor is just used to illustrate the different constructors available in the UdpClient class.
    static void MyUdpClientConstructor( String^ myConstructorType )
    {
       if ( myConstructorType->Equals( "PortNumberExample" ) )

@@ -1,7 +1,6 @@
 ---
 title: "Using User-Filtered Exception Handlers"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "user-filtered exceptions"
   - "exceptions, user-filtered"

@@ -1,10 +1,10 @@
 ---
 title: Display text on an LCD
-description: Learn how .NET can be used to build applications for IoT devices and scenarios.
+description: Learn how to display characters on a liquid crystal display with the .NET IoT Libraries.
 author: camsoper
 ms.author: casoper
-ms.date: 11/2/2020
-ms.topic: overview
+ms.date: 11/13/2020
+ms.topic: tutorial
 ms.prod: dotnet
 ---
 <!--markdownlint-disable DOCSMD011 -->
@@ -32,7 +32,7 @@ In this topic, you will use .NET to display text on an LCD character display usi
 
 ## Prepare the hardware
 
-Use jumper wires to connect the the four pins on the I2C GPIO expander to the Raspberry Pi as follows:
+Use jumper wires to connect the four pins on the I2C GPIO expander to the Raspberry Pi as follows:
 
 - GND to ground
 - VCC to 5V

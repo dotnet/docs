@@ -1,7 +1,6 @@
 ---
 title: "How to: Convert between .NET Framework and Windows Runtime streams (Windows only)"
 ms.date: "01/14/2019"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

@@ -1,7 +1,6 @@
 ---
 title: "Extension Methods"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 ms.assetid: 5de945cb-88f4-49d7-b0e6-f098300cf357
 ---
 # Extension Methods

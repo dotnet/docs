@@ -1,7 +1,6 @@
 ---
 title: "Unsealed Classes"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "classes [.NET Framework], unsealed"
   - "unsealed classes"

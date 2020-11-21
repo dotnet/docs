@@ -1,7 +1,6 @@
 ---
 title: "Load Data from a Reader"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 7e74918c-bc72-4977-a49b-e1520a6d8f60
 ---
 # Load Data from a Reader

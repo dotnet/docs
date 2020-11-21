@@ -1,7 +1,6 @@
 ---
 title: "How to: Implement Dynamic Partitions"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

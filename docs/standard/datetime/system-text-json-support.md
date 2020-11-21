@@ -1,7 +1,6 @@
 ---
 title: DateTime and DateTimeOffset support in System.Text.Json
 description: An overview of how DateTime and DateTimeOffset types are supported in the System.Text.Json library.
-ms.technology: dotnet-standard
 author: layomia
 ms.author: laakinri
 ms.date: 07/22/2019

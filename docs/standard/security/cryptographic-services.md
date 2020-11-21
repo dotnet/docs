@@ -2,7 +2,6 @@
 title: "Cryptographic Services"
 description: An overview of the encryption methods and practices supported by .NET.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "cryptography [.NET]"
   - "pattern of derived class inheritance"

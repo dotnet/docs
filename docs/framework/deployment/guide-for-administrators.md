@@ -9,17 +9,17 @@ ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
 ---
 # .NET Framework Deployment Guide for Administrators
 
-This step-by-step article describes how a system administrator can deploy the .NET Framework 4.5 and its system dependencies across a network by using Microsoft Endpoint Configuration Manager. This article assumes that all target client computers meet the minimum requirements for the .NET Framework. For a list of the software and hardware requirements for installing the .NET Framework 4.5, see [System Requirements](../get-started/system-requirements.md).
+This step-by-step article describes how a system administrator can deploy .NET Framework 4.5 and its system dependencies across a network by using Microsoft Endpoint Configuration Manager. This article assumes that all target client computers meet the minimum requirements for .NET Framework. For a list of the software and hardware requirements for installing .NET Framework 4.5, see [System Requirements](../get-started/system-requirements.md).
 
 > [!NOTE]
-> The software referenced in this document, including, without limitation, the .NET Framework 4.5, Configuration Manager, and Active Directory, are each subject to license terms and conditions. These instructions assume that such license terms and conditions have been reviewed and accepted by the appropriate licensees of the software. These instructions do not waive any of the terms and conditions of such license agreements.
+> The software referenced in this document, including, without limitation, .NET Framework 4.5, Configuration Manager, and Active Directory, are each subject to license terms and conditions. These instructions assume that such license terms and conditions have been reviewed and accepted by the appropriate licensees of the software. These instructions do not waive any of the terms and conditions of such license agreements.
 >
-> For information about support for the .NET Framework, see [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) on the Microsoft Support website.
+> For information about support for .NET Framework, see [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) on the Microsoft Support website.
 
 This topic contains the following sections:
 
 - [The deployment process](#the_deployment_process)
-- [Deploying the .NET Framework](#deploying_in_a_test_environment)
+- [Deploying .NET Framework](#deploying_in_a_test_environment)
 - [Create a collection](#creating_a_collection)
 - [Create a package and program](#creating_a_package)
 - [Select a distribution point](#select_dist_point)
@@ -33,7 +33,7 @@ This topic contains the following sections:
 
 When you have the supporting infrastructure in place, you use Configuration Manager to deploy the .NET Framework redistributable package to computers on the network. Building the infrastructure involves creating and defining five primary areas: collections, a package and program for the software, distribution points, and deployments.
 
-- **Collections** are groups of Configuration Manager resources, such as users, user groups, or computers, to which the .NET Framework is deployed. For more information, see [Introduction to collections in Configuration Manager](/configmgr/core/clients/manage/collections/introduction-to-collections) in the Configuration Manager documentation library.
+- **Collections** are groups of Configuration Manager resources, such as users, user groups, or computers, to which .NET Framework is deployed. For more information, see [Introduction to collections in Configuration Manager](/configmgr/core/clients/manage/collections/introduction-to-collections) in the Configuration Manager documentation library.
 
 - **Packages and programs** typically represent software applications to be installed on a client computer, but they might also contain individual files, updates, or even individual commands. For more information, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs) in the Configuration Manager documentation library.
 
@@ -46,9 +46,9 @@ When you have the supporting infrastructure in place, you use Configuration Mana
 
 <a name="deploying_in_a_test_environment"></a>
 
-## Deploying the .NET Framework
+## Deploying .NET Framework
 
-You can use Configuration Manager to deploy a silent installation of the .NET Framework 4.5, where the users do not interact with the installation process. Follow these steps:
+You can use Configuration Manager to deploy a silent installation of .NET Framework 4.5, where the users do not interact with the installation process. Follow these steps:
 
 1. [Create a collection](#creating_a_collection).
 
@@ -88,7 +88,7 @@ To create a collection:
 
 ### Create a package and program for the .NET Framework redistributable package
 
-The following steps create a package for the .NET Framework redistributable manually. The package contains the specified parameters for installing the .NET Framework and the location from where the package will be distributed to the target computers.
+The following steps create a package for the .NET Framework redistributable manually. The package contains the specified parameters for installing .NET Framework and the location from where the package will be distributed to the target computers.
 
 To create a package:
 
@@ -130,7 +130,7 @@ The following table describes the command-line options specified in step 7.
 |**/norestart**|Prevents the Setup program from rebooting automatically. If you use this option, Configuration Manager must handle the computer restart.|
 |**/chainingpackage** *PackageName*|Specifies the name of the package that is doing the chaining. This information is reported with other installation session information for those who have signed up for the Microsoft Customer Experience Improvement Program (CEIP). If the package name includes spaces, use double quotation marks as delimiters; for example: **/chainingpackage "Chaining Product"**.|
 
-These steps create a package named .NET Framework 4.5. The program deploys a silent installation of the .NET Framework 4.5. In a silent installation, users do not interact with the installation process, and the chaining application has to capture the return code and handle rebooting; see [Getting Progress Information from an Installation Package](/previous-versions/cc825975(v=vs.100)).
+These steps create a package named .NET Framework 4.5. The program deploys a silent installation of .NET Framework 4.5. In a silent installation, users do not interact with the installation process, and the chaining application has to capture the return code and handle rebooting; see [Getting Progress Information from an Installation Package](/previous-versions/cc825975(v=vs.100)).
 
 <a name="select_dist_point"></a>
 
@@ -156,7 +156,7 @@ Use the following steps to select a distribution point for the .NET Framework 4.
 
 8. Complete the wizard.
 
-The package now contains all the information you need to silently deploy the .NET Framework 4.5. Before you deploy the package and program, verify that it was installed on the distribution point; see the "Content status monitoring" section of [Monitor content you distribute with Configuration Manager](/configmgr/core/servers/deploy/configure/monitor-content-you-have-distributed) in the Configuration Manager Documentation Library.
+The package now contains all the information you need to silently deploy .NET Framework 4.5. Before you deploy the package and program, verify that it was installed on the distribution point; see the "Content status monitoring" section of [Monitor content you distribute with Configuration Manager](/configmgr/core/servers/deploy/configure/monitor-content-you-have-distributed) in the Configuration Manager Documentation Library.
 
 <a name="deploying_package"></a>
 
@@ -178,12 +178,12 @@ To deploy the .NET Framework 4.5 package and program:
 
 7. On the **Deployment Settings** page of the wizard, confirm that **Action** is set to **Install**, and **Purpose** is set to **Required**. This ensures that the software package will be a mandatory installation on the targeted computers. Choose **Next**.
 
-8. On the **Scheduling** page of the wizard, specify when you want the .NET Framework to be installed. You can choose **New** to assign an installation time, or instruct the software to install when the user logs on or off, or as soon as possible. Choose **Next**.
+8. On the **Scheduling** page of the wizard, specify when you want .NET Framework to be installed. You can choose **New** to assign an installation time, or instruct the software to install when the user logs on or off, or as soon as possible. Choose **Next**.
 
 9. On the **User Experience** page of the wizard, use the default values and choose **Next**.
 
     > [!WARNING]
-    > Your production environment might have policies that require different selections for the deployment schedule. For information about these options, see [Advertisement Name Properties: Schedule Tab](/previous-versions/system-center/configuration-manager-2007/bb694016(v=technet.10)).
+    > Your production environment might have policies that require different selections for the deployment schedule.
 
 10. On the **Distribution Points** page of the wizard, use the default values and choose **Next**.
 
@@ -215,8 +215,6 @@ For more information about the infrastructure for testing the deployment of the 
 
 - [Site Administration for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10))
 
-- [Configuration Manager Single Site Planning and Deployment](/previous-versions/system-center/configuration-manager-2007/bb680961(v=technet.10))
-
 **System Center 2012 Configuration Manager client for Windows computers:**
 
 - [Deploying Clients for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))
@@ -232,7 +230,7 @@ The following log files are generated during .NET Framework setup:
 - %temp%\Microsoft .NET Framework *version*\*.txt
 - %temp%\Microsoft .NET Framework *version*\*.html
 
-where *version* is the version of the .NET Framework that you're installing, such as 4.5 or 4.7.2.
+where *version* is the version of .NET Framework that you're installing, such as 4.5 or 4.7.2.
 
 You can also specify the directory to which log files are written by using the `/log` command-line option in the .NET Framework installation command. For more information, see [.NET Framework deployment guide for developers](deployment-guide-for-developers.md#command-line-options).
 

@@ -1,7 +1,6 @@
 ---
 title: "How to: Add or remove Access Control List entries (.NET Framework only)"
 ms.date: "01/14/2019"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

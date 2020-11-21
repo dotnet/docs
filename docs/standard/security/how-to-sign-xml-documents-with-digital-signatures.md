@@ -2,7 +2,6 @@
 title: "How to: Sign XML Documents with Digital Signatures"
 description: Learn how to sign XML documents with digital signatures. Use classes in the System.Security.Cryptography.Xml namespace in .NET.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

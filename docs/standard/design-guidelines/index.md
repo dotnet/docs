@@ -3,7 +3,6 @@ title: "Framework Design Guidelines"
 description: See framework design guidelines for designing libraries that extend and interact with .NET, to ensure API consistency and ease of use.
 titleSuffix: ""
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "libraries, .NET Framework class library"
   - "class library design guidelines [.NET Framework], about"

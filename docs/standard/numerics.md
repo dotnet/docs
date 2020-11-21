@@ -1,7 +1,6 @@
 ---
 title: "Numerics in .NET"
 ms.date: "10/18/2018"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "SIMD"
   - "System.Numerics.Vectors"

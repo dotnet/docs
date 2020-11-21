@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorNativeType Enumeration
+
 Contains values that describe native unmanaged types.  
   
 ## Syntax  
@@ -132,6 +133,7 @@ typedef enum CorNativeType {
 |`NATIVE_TYPE_MAX`|An invalid value.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

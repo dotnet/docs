@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugErrorInfoEnum::Next Method
+
 `ICorDebugErrorInfoEnum::Next` is obsolete. Do not call this method.  
   
 ## See also

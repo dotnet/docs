@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetHashFromAssemblyFileW Function
+
 Gets a hash of the specified assembly file, using the specified hash algorithm. The path to the assembly file must be specified as a Unicode string.  
   
  This function has been deprecated. Use the [ICLRStrongName::GetHashFromAssemblyFileW](../hosting/iclrstrongname-gethashfromassemblyfilew-method.md) method instead.  
@@ -33,6 +34,7 @@ HRESULT GetHashFromAssemblyFileW (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] The path to the file to be hashed. This parameter must be a Unicode string.  
   
@@ -49,6 +51,7 @@ HRESULT GetHashFromAssemblyFileW (
  [out] The returned size, in bytes, of `pbHash`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

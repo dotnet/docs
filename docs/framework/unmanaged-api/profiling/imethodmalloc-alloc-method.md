@@ -41,6 +41,7 @@ PVOID Alloc (
  The `Alloc` method should be used in conjunction with the [ICorProfilerInfo::SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) method.
 
 ## Requirements
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** CorProf.idl, CorProf.h

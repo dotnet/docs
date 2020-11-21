@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetFieldRVA Method
+
 Sets a global variable value for the relative virtual address of the field referenced by the specified token.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SetFieldRVA (
 ```  
   
 ## Parameters  
+
  `fd`  
  [in] The token for the target field.  
   
@@ -36,6 +38,7 @@ HRESULT SetFieldRVA (
  [in] The address of a code or data area.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

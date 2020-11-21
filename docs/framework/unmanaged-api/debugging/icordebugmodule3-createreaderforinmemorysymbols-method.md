@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugModule3::CreateReaderForInMemorySymbols Method
+
 Creates a debug symbol reader for a dynamic module.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT CreateReaderForInMemorySymbols (
 ```  
   
 ## Parameters  
+
  riid  
  [in] The IID of the COM interface to return. Typically, this is an [ISymUnmanagedReader Interface](../diagnostics/isymunmanagedreader-interface.md).  
   
@@ -35,6 +37,7 @@ HRESULT CreateReaderForInMemorySymbols (
  [out] Pointer to a pointer to the returned interface.  
   
 ## Return Value  
+
  S_OK  
  Successfully created the reader.  
   
@@ -48,6 +51,7 @@ HRESULT CreateReaderForInMemorySymbols (
  Unable to create the reader.  
   
 ## Remarks  
+
  This method can also be used to create a symbol reader object for in-memory (non-dynamic) modules, but only after the symbols are first available (indicated by the [UpdateModuleSymbols Method](icordebugmanagedcallback-updatemodulesymbols-method.md) callback).  
   
  This method returns a new reader instance every time it is called (like [CComPtrBase::CoCreateInstance](/cpp/atl/reference/ccomptrbase-class#cocreateinstance)). Therefore, the debugger should cache the result and request a new instance only when the underlying data may have changed (that is, when a [LoadClass Method](icordebugmanagedcallback-loadclass-method.md) callback is received).  
@@ -55,6 +59,7 @@ HRESULT CreateReaderForInMemorySymbols (
  Dynamic modules do not have any symbols available until the first type has been loaded (as indicated by the [LoadClass Method](icordebugmanagedcallback-loadclass-method.md) callback).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

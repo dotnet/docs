@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedSymbolSearchInfo Interface
+
 Provides methods that get information about the search path. Obtain this interface by calling `QueryInterface` on an object that implements the [ISymUnmanagedReader](isymunmanagedreader-interface.md) interface.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides methods that get information about the search path. Obtain this interfa
 |[GetSearchPathLength Method](isymunmanagedsymbolsearchinfo-getsearchpathlength-method.md)|Gets the search path length.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

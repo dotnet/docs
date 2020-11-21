@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_GC_THREAD_STATS Structure
+
 Contains per-thread statistics pertaining to garbage collection.  
   
 ## Syntax  
@@ -35,9 +36,11 @@ typedef struct _COR_GC_THREAD_STATS {
 |`Flags`|The number of bytes promoted to a higher generation at the most recent garbage collection.|  
   
 ## Remarks  
+
  [ICLRTask::GetMemStats](iclrtask-getmemstats-method.md) takes an output parameter of type `COR_GC_THREAD_STATS`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SaveToStream Method
+
 Saves all metadata in the current scope to the specified `IStream`.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SaveToStream (
 ```  
   
 ## Parameters  
+
  `pIStream`  
  [in] The writable stream to save to.  
   
@@ -36,6 +38,7 @@ HRESULT SaveToStream (
  [in] Reserved. Must be zero.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

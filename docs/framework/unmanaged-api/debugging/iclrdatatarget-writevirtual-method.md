@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRDataTarget::WriteVirtual Method
+
 Writes data from the specified buffer to the specified virtual memory address.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT WriteVirtual (
 ```  
   
 ## Parameters  
+
  `address`  
  [in] A CLRDATA_ADDRESS that stores the virtual memory address.  
   
@@ -45,6 +47,7 @@ HRESULT WriteVirtual (
  [out] A pointer to the actual number of bytes that were written.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  

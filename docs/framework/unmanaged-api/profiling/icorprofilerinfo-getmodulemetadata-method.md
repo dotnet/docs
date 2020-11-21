@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetModuleMetaData Method
+
 Gets a metadata interface instance that maps to the specified module.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetModuleMetaData(
 ```  
   
 ## Parameters  
+
  `moduleId`  
  [in] The ID of the module to which the interface instance will be mapped.  
   
@@ -43,11 +45,13 @@ HRESULT GetModuleMetaData(
  [out] A pointer to the address of the metadata interface instance.  
   
 ## Remarks  
+
  You may ask for the metadata to be opened in read/write mode, but this will result in slower metadata execution of the program, because changes made to the metadata cannot be optimized as they were from the compiler.  
   
  Some modules (such as resource modules) have no metadata. In those cases, `GetModuleMetaData` will return an HRESULT value of S_FALSE, and a null in *`ppOut`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

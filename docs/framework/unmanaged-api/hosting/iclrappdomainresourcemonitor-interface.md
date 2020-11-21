@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAppDomainResourceMonitor Interface
+
 Provides methods that inspect an application domain's memory and CPU usage.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides methods that inspect an application domain's memory and CPU usage.
 |[GetCurrentCpuTime Method](iclrappdomainresourcemonitor-getcurrentcputime-method.md)|Gets the total processor time that has been used by all threads while executing in the current application domain, since the application domain was created.|  
   
 ## Remarks  
+
  The `ICLRAppDomainResourceMonitor` interface provides functionality that is similar to the following managed properties:  
   
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>  
@@ -40,6 +42,7 @@ Provides methods that inspect an application domain's memory and CPU usage.
 - <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=nameWithType>  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

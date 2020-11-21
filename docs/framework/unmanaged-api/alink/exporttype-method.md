@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ExportType Method
+
 Specifies that a type is exportable.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT ExportType(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  ID of the assembly to export from.  
   
@@ -51,9 +53,11 @@ HRESULT ExportType(
  Receives token for exported type.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h  
   
 ## See also

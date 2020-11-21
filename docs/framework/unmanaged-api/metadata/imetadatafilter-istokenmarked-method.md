@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataFilter::IsTokenMarked Method
+
 Gets a value indicating whether the specified metadata token has been marked as processed.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT IsTokenMarked (
 ```  
   
 ## Parameters  
+
  `tk`  
  [in] The token to examine for a processing mark.  
   
@@ -36,6 +38,7 @@ HRESULT IsTokenMarked (
  [out] A value that is `true` if `tk` has been processed; otherwise `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

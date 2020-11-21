@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_DEBUG_STEP_RANGE Structure
+
 Contains the offset information for a range of code.  
   
  This structure is used by the [ICorDebugStepper::StepRange](icordebugstepper-steprange-method.md) method.  
@@ -37,6 +38,7 @@ typedef struct {
 |`endOffset`|The offset of the end of the range.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  

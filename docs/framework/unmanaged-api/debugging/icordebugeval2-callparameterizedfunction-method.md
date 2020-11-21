@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEval2::CallParameterizedFunction Method
+
 Sets up a call to the specified ICorDebugFunction, which can be nested inside a class whose constructor takes <xref:System.Type> parameters, or can itself take <xref:System.Type> parameters.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT CallParameterizedFunction (
 ```  
   
 ## Parameters  
+
  `pFunction`  
  [in] A pointer to an `ICorDebugFunction` object that represents the function to be called.  
   
@@ -48,6 +50,7 @@ HRESULT CallParameterizedFunction (
  [in] An array of pointers, each of which points to an ICorDebugValue object that represents a value passed in a function argument.  
   
 ## Remarks  
+
  `CallParameterizedFunction` is like [ICorDebugEval::CallFunction](icordebugeval-callfunction-method.md) except that the function may be inside a class with type parameters, may itself take type parameters, or both. The type arguments should be given first for the class, and then for the function.  
   
  If the function is in a different application domain, a transition will occur. However, all type and value arguments must be in the target application domain.  
@@ -55,6 +58,7 @@ HRESULT CallParameterizedFunction (
  Function evaluation can be performed only in limited scenarios. If `CallParameterizedFunction` or `ICorDebugEval::CallFunction` fails, the returned HRESULT will indicate the most general possible reason for failure.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

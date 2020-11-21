@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRStrongName Interface
+
 Provides basic global static functions for signing assemblies with strong names. All `ICLRStrongName` methods return standard COM HRESULTs.  
   
 ## Methods  
@@ -49,9 +50,11 @@ Provides basic global static functions for signing assemblies with strong names.
 |[StrongNameTokenFromPublicKey Method](iclrstrongname-strongnametokenfrompublickey-method.md)|Gets a token representing a public key.|  
   
 ## Remarks  
+
  You can get an instance of the `ICLRStrongName` by calling the [ICLRRuntimeInfo::GetInterface](iclrruntimeinfo-getinterface-method.md) method using `CLSID_CLRStrongName` and `IID_ICLRStrongName` as parameters.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

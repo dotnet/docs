@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetParamProps Method
+
 Sets or changes features of a method parameter that was defined by a prior call to [IMetaDataEmit::DefineParam](imetadataemit-defineparam-method.md).  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT SetParamProps (
 ```  
   
 ## Parameters  
+
  `pd`  
  [in] The token for the target parameter.  
   
@@ -52,6 +54,7 @@ HRESULT SetParamProps (
  [in] The size in (Unicode) characters of `pValue`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

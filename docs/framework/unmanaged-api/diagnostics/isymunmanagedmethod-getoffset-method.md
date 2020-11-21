@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedMethod::GetOffset Method
+
 Returns the offset within this method that corresponds to a given position within a document.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetOffset(
 ```  
   
 ## Parameters  
+
  `document`  
  [in] A pointer to the document for which the offset is requested.  
   
@@ -43,9 +45,11 @@ HRESULT GetOffset(
  [out] A pointer to a `ULONG32` that receives the offsets.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

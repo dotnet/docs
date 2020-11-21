@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # EBindPolicyLevels Enumeration
+
 Provides flags to specify the level at which to apply or modify assembly policy.  
   
 ## Syntax  
@@ -47,9 +48,11 @@ typedef enum {
 |`ePolicyUnifiedToCLR`|Specifies that policy should be unified to that of the common language runtime (CLR).|  
   
 ## Remarks  
+
  This enumeration is passed to methods of the [ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md) interface to specify changes in application policy.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

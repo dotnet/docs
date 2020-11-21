@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyEmit Interface
+
 Provides methods that support the self-description model used by the common language runtime to resolve and consume resources.  
   
 ## Methods  
@@ -36,6 +37,7 @@ Provides methods that support the self-description model used by the common lang
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerFunctionEnum Interface
+
 Provides methods to sequentially iterate through a collection of functions in the common language runtime.  
   
 ## Methods  
@@ -29,11 +30,13 @@ Provides methods to sequentially iterate through a collection of functions in th
 |[Skip Method](icorprofilerfunctionenum-skip-method.md)|Advances the enumerator's cursor from its current position so that the specified number of elements are skipped.|  
   
 ## Remarks  
+
  The `ICorProfilerFunctionEnum` interface is an enumerator. It allows the receiver of an array to pull elements from the sender at a rate that is appropriate for the receiver. In other words, the receiver is able to explicitly control the flow of array elements, thereby avoiding the problems associated with passing large arrays as method parameters.  
   
  `ICorProfilerFunctionEnum` enumerates over functions that have already been JIT-compiled, but does not include functions that are loaded from native images generated with Ngen.exe.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

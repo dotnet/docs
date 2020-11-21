@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 72020b72-9611-4bc3-b1e7-5a16b023bfa3
 ---
 # ICorDebugMergedAssemblyRecord::GetPublicKeyToken Method
+
 Gets the assembly's public key token.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT GetPublicKeyToken(
 ```  
   
 ## Parameters  
+
  `cbPublicKeyToken`  
  [in] The maximum number of bytes in the `pbPublicKeyToken` array.  
   
@@ -27,12 +29,14 @@ HRESULT GetPublicKeyToken(
  [out] A pointer to a byte array that contains the assembly's public key token.  
   
 ## Remarks  
+
  An assembly's public key token is the last eight bytes of a SHA1 hash of its public key.  
   
 > [!NOTE]
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

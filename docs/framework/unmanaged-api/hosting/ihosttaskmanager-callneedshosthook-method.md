@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTaskManager::CallNeedsHostHook Method
+
 Enables the host to specify whether the common language runtime (CLR) can inline the specified call to an unmanaged function.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT CallNeedsHostHook (
 ```  
   
 ## Parameters  
+
  `target`  
  [in] The address within the mapped portable executable (PE) file of the unmanaged function that is to be called.  
   
@@ -47,11 +49,13 @@ HRESULT CallNeedsHostHook (
 |E_FAIL|An unknown catastrophic failure has occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  To help optimize code execution, the CLR performs an analysis of each platform invoke call during compilation to determine whether the call can be inlined. `CallNeedsHostHook` enables the host to override that decision by requiring that a call to an unmanaged function be hooked. If the host requires a hook, the runtime does not inline the call.  
   
  The host typically would require a hook where it must adjust a floating-point state, or upon receiving notification that a call is entering a state where the host cannot track the runtime's requests for memory or any locks taken. When the host requires that the call be hooked, the runtime notifies the host of transitions to and from managed code by using calls to [EnterRuntime](ihosttaskmanager-enterruntime-method.md), [LeaveRuntime](ihosttaskmanager-leaveruntime-method.md), [ReverseEnterRuntime](ihosttaskmanager-reverseenterruntime-method.md), and [ReverseLeaveRuntime](ihosttaskmanager-reverseleaveruntime-method.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

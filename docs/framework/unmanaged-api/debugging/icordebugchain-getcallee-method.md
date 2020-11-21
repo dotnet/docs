@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugChain::GetCallee Method
+
 Gets the chain that was called by this chain.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetCallee (
 ```  
   
 ## Parameters  
+
  `ppChain`  
  [out] A pointer to the address of an ICorDebugChain object that represents the called chain. If this chain is currently executing (that is, if this chain is not waiting for a called chain to return), `ppChain` will be null.  
   
 ## Remarks  
+
  This chain will wait for the called chain to return before it resumes execution. The called chain may be on another thread in the case of cross-thread marshaled calls.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

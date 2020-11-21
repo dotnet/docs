@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMetaHost::EnumerateInstalledRuntimes Method
+
 Returns an enumeration that contains a valid [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface for each version of the common language runtime (CLR) that is installed on a computer.  
   
 ## Syntax  
@@ -27,10 +28,12 @@ HRESULT EnumerateInstalledRuntimes (
 ```  
   
 ## Parameters  
+
  `ppEnumerator`  
  [out] An enumeration of [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interfaces corresponding to each version of the CLR that is installed on the computer.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -39,6 +42,7 @@ HRESULT EnumerateInstalledRuntimes (
 |E_POINTER|`ppEnumerator` is null.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

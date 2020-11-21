@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugChain::IsManaged Method
+
 Gets a value that indicates whether this chain is running managed code.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT IsManaged (
 ```  
   
 ## Parameters  
+
  `pManaged`  
  [out] `true` if this chain is running managed code; otherwise, `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

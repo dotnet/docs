@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugDataTarget Interface
+
 Provides a callback interface that provides access to a particular target process.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides a callback interface that provides access to a particular target proces
 |[GetThreadContext Method](icordebugdatatarget-getthreadcontext-method.md)|Requests the current thread context for the specified thread.|  
   
 ## Remarks  
+
  `ICorDebugDataTarget` and its methods have the following characteristics:  
   
 - The debugging services call methods on this interface to access memory and other data in the target process.  
@@ -43,6 +45,7 @@ Provides a callback interface that provides access to a particular target proces
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

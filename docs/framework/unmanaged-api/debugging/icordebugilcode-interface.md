@@ -12,6 +12,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILCode Interface
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  Represents a segment of intermediate language (IL) code.  
@@ -23,6 +24,7 @@ topic_type:
 |[GetEHClauses Method](icordebugilcode-getehclauses-method.md)|Returns a pointer to a list of exception handling (EH) clauses that are defined for this IL.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

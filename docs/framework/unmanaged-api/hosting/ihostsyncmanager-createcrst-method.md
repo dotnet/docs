@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSyncManager::CreateCrst Method
+
 Creates a critical section object for synchronization.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT CreateCrst (
 ```  
   
 ## Parameters  
+
  `ppCrst`  
  [out] A pointer to the address of an [IHostCrst](ihostcrst-interface.md) instance implemented by the host, or null if the critical section could not be created.  
   
@@ -44,9 +46,11 @@ HRESULT CreateCrst (
 |E_OUTOFMEMORY|Not enough memory was available to create the requested critical section.|  
   
 ## Remarks  
+
  Critical section objects provide synchronization similar to that provided by a mutex object, except that critical sections can be used only by the threads of a single process. `CreateCrst` mirrors the Win32 `InitializeCriticalSection` function.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

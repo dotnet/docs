@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataConverter::GetTypeLibFromMetaData Method
+
 Gets a pointer to an `ITypeLib` instance that represents the type library that has the specified library and module names.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetTypeLibFromMetaData (
 ```  
   
 ## Parameters  
+
  `strModule`  
  [in] The name of the type library's module.  
   
@@ -40,6 +42,7 @@ HRESULT GetTypeLibFromMetaData (
  [out] A pointer to a location that receives the address of the `ITypeLib` instance that represents the type library.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

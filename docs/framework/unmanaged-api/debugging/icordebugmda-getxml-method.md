@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugMDA::GetXML Method
+
 Gets the full XML stream associated with the managed debugging assistant (MDA) represented by [ICorDebugMDA](icordebugmda-interface.md).  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetXML (
 ```  
   
 ## Parameters  
+
  `cchName`  
  [in] The size of the `szName` array.  
   
@@ -41,9 +43,11 @@ HRESULT GetXML (
  [out] An array in which to store the XML stream. The array may be empty.  
   
 ## Remarks  
+
  The `GetXML` method can potentially affect performance, depending on the size of the associated XML stream.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

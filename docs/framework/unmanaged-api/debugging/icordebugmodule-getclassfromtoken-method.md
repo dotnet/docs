@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugModule::GetClassFromToken Method
+
 Gets the class specified by the metadata token.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetClassFromToken(
 ```  
   
 ## Parameters  
+
  `typedef`  
  [in] An `mdTypeDef` metadata token that references the metadata of a class.  
   
@@ -36,6 +38,7 @@ HRESULT GetClassFromToken(
  [out] A pointer to the address of an ICorDebugClass object that represents the class.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # AssemblyComparisonResult Enumeration
+
 Indicates the equivalence of two assembly identities, as determined by the [CompareAssemblyIdentity](compareassemblyidentity-function.md) function.  
   
 ## Syntax  
@@ -55,6 +56,7 @@ typedef enum _tagAssemblyComparisonResult {
 |`ACR_Unknown`|Indicates that the reason for non-equivalency is not known.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # TypeNameFactory Coclass
+
 Provides an interface for managing the deconstruction of a type name.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ coclass TypeNameFactory {
 |[ITypeNameFactory Interface](itypenamefactory-interface.md)|This interface supports the .NET Framework infrastructure and is not intended to be used directly from your code.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameSignatureSize Function
+
 Returns the size of the strong name signature. `StrongNameSignatureSize` is typically used by compilers to determine how much space to reserve in the file when creating a delay-signed assembly.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameSignatureSize](../hosting/iclrstrongname-strongnamesignaturesize-method.md) method instead.  
@@ -31,6 +32,7 @@ BOOLEAN StrongNameSignatureSize (
 ```  
   
 ## Parameters  
+
  `pbPublicKeyBlob`  
  [in] A structure of type [PublicKeyBlob](publickeyblob-structure.md) that contains the public portion of the key pair used to generate the strong name signature.  
   
@@ -41,12 +43,15 @@ BOOLEAN StrongNameSignatureSize (
  [in] The number of bytes required to store the strong name signature.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
+
  If the `StrongNameSignatureSize` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

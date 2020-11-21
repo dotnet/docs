@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostIoCompletionManager::GetAvailableThreads Method
+
 Gets the number of I/O completion threads, of the total number of threads managed by the host, that are not currently servicing requests.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetAvailableThreads (
 ```  
   
 ## Parameters  
+
  `pdwAvailableIoCompletionThreads`  
  [out] A pointer to the number of I/O completion threads managed by the host that are currently available to service requests.  
   
@@ -44,9 +46,11 @@ HRESULT GetAvailableThreads (
 |E_NOTIMPL|The host does not provide an implementation of `GetAvailableThreads`.|  
   
 ## Remarks  
+
  A host might want exclusive control over the size of the I/O completion thread pool, for reasons such as implementation, performance, or scalability. Therefore, the host is not required to implement `GetAvailableThreads`. In this case, the host should return E_NOTIMPL from this method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

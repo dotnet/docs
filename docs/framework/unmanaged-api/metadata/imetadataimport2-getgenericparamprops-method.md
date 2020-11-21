@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport2::GetGenericParamProps Method
+
 Gets the metadata associated with the generic parameter represented by the specified token.  
   
 ## Syntax  
@@ -35,6 +36,7 @@ HRESULT GetGenericParamProps (
 ```  
   
 ## Parameters  
+
  `gp`  
  [in] The token that represents the generic parameter for which to return metadata.  
   
@@ -60,6 +62,7 @@ HRESULT GetGenericParamProps (
  [out] The returned size of the name, in wide characters.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

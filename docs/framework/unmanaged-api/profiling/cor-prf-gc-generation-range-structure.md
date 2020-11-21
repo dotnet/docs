@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_PRF_GC_GENERATION_RANGE Structure
+
 Describes a range (that is, block) of memory that is undergoing garbage collection.  
   
 ## Syntax  
@@ -39,9 +40,11 @@ typedef struct COR_PRF_GC_GENERATION_RANGE {
 |`rangeLengthReserved`|A pointer to an integer that specifies the size of the memory block (that is, the amount of memory reserved for the block).|  
   
 ## Remarks  
+
  The `rangeLength` value is guaranteed to be accurate only if [ICorProfilerInfo2::GetGenerationBounds](icorprofilerinfo2-getgenerationbounds-method.md) or [ICorProfilerInfo2::GetObjectGeneration](icorprofilerinfo2-getobjectgeneration-method.md), both of which use the `COR_PRF_GC_GENERATION_RANGE` structure, is called from the [ICorProfilerCallback2::GarbageCollectionStarted](icorprofilercallback2-garbagecollectionstarted-method.md) or the [ICorProfilerCallback2::GarbageCollectionFinished](icorprofilercallback2-garbagecollectionfinished-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

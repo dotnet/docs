@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CLR_DEBUGGING_VERSION Structure
+
 Defines the product version of the common language runtime (CLR) for debugging purposes.  
   
 ## Syntax  
@@ -42,9 +43,11 @@ typedef struct _CLR_DEBUGGING_VERSION
 |`wRevision`|The revision number.|  
   
 ## Remarks  
+
  The `CLR_DEBUGGING_VERSION` structure is the same as the COR_VERSION structure, however, the `CLR_DEBUGGING_VERSION` structure provides an additional structure version field (`wStructVersion`). Currently, this field must be set to zero.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  

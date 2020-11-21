@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # FunctionEnter3 Function
+
 Notifies the profiler that control is being passed to a function.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
   \[in] The identifier of the function to which control is passed.
 
 ## Remarks  
+
  The `FunctionEnter3` callback function notifies the profiler as functions are being called, but does not support argument inspection. Use the [ICorProfilerInfo3::SetEnterLeaveFunctionHooks3 method](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) to register your implementation of this function.  
   
  The `FunctionEnter3` function is a callback; you must implement it. The implementation must use the `__declspec(naked)` storage-class attribute.  
@@ -42,6 +44,7 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
 - On exit, you must restore the stack by popping off all the parameters that were pushed by its caller.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

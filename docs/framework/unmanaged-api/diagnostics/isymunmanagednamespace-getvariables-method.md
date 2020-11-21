@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedNamespace::GetVariables Method
+
 Returns all variables defined at global scope within this namespace.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetVariables(
 ```  
   
 ## Parameters  
+
  `cVars`  
  [in] A `ULONG32` that indicates the size of the `pVars` array.  
   
@@ -40,9 +42,11 @@ HRESULT GetVariables(
  [out] A pointer to a buffer that contains the namespaces.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: efc64414-77c3-48d0-881a-8594ed416aad
 ---
 # Debugging Global Static Functions
+
 This section describes the unmanaged global static functions that the debugging API uses.  
   
 ## In This Section  
+
  [_EFN_GetManagedExcepStack Function](efn-getmanagedexcepstack-function.md)  
  Given a managed exception object address, returns a string version of the stack trace contained inside.  
   
@@ -30,6 +32,7 @@ This section describes the unmanaged global static functions that the debugging 
  Points to a function that is called by the CLR data access services to create the specified interface object for the specified target process.  
   
 ## Related Sections  
+
  [Debugging Coclasses](debugging-coclasses.md)  
   
  [Debugging Interfaces](debugging-interfaces.md)  

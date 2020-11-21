@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRStrongName::StrongNameKeyGenEx Method
+
 Generates a new public/private key pair with the specified key size, for strong name use.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT StrongNameKeyGenEx (
 ```  
   
 ## Parameters  
+
  `wszKeyContainer`  
  [in] The requested key container name. `wszKeyContainer` must either be a non-empty string or null to generate a temporary name.  
   
@@ -52,14 +54,17 @@ HRESULT StrongNameKeyGenEx (
  [out] The size, in bytes, of `ppbKeyBlob`.  
   
 ## Return Value  
+
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Remarks  
+
  The .NET Framework versions 1.0 and 1.1 require a `dwKeySize` of 1024 bits to sign an assembly with a strong name; version 2.0 adds supports for 2048-bit keys.  
   
  After the key is retrieved, you should call the [ICLRStrongName::StrongNameFreeBuffer](iclrstrongname-strongnamefreebuffer-method.md) method to release the allocated memory.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

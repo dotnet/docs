@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILFrame::GetStackValue Method
+
 This method has not been implemented.  
   
 ## Syntax  
@@ -29,4 +30,5 @@ HRESULT GetStackValue (
 ```  
   
 ## Requirements  
+
  **Header:** CorDebug.idl, CorDebug.h

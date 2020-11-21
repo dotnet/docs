@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedDocument::GetURL Method
+
 Returns the uniform resource locator (URL) for this document.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetURL(
 ```  
   
 ## Parameters  
+
  `cchUrl`  
  [in] The size, in characters, of the `szURL` buffer.  
   
@@ -39,6 +41,7 @@ HRESULT GetURL(
  [out] The buffer containing the URL.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, an error code.  
   
 ## See also

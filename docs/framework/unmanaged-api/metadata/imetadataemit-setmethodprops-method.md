@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetMethodProps Method
+
 Sets or updates the feature, stored at the specified relative virtual address, of a method defined by a prior call to [IMetaDataEmit::DefineMethod](imetadataemit-definemethod-method.md).  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT SetMethodProps (
 ```  
   
 ## Parameters  
+
  `md`  
  [in] The token for the method to be changed.  
   
@@ -44,6 +46,7 @@ HRESULT SetMethodProps (
  [in] The implementation flags for the method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

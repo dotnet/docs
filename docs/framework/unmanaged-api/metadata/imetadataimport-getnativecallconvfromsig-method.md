@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetNativeCallConvFromSig Method
+
 Gets the native calling convention for the method that is represented by the specified signature pointer.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetNativeCallConvFromSig (
 ```  
   
 ## Parameters  
+
  `pvSig`  
  [in] A pointer to the metadata signature of the method to return the calling convention for.  
   
@@ -40,6 +42,7 @@ HRESULT GetNativeCallConvFromSig (
  [out] A pointer to the native calling convention.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

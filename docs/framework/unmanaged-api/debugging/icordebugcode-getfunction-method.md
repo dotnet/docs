@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugCode::GetFunction Method
+
 Gets the "ICorDebugFunction" associated with this "ICorDebugCode".  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetFunction (
 ```  
   
 ## Parameters  
+
  `ppFunction`  
  [out] A pointer to the address of the function.  
   
 ## Remarks  
+
  `ICorDebugCode` and `ICorDebugFunction` maintain a one-to-one relationship.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

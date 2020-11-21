@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo3::GetFunctionLeave3Info Method
+
 Provides the stack frame and return value of the function that is being reported to the profiler by the [FunctionLeave3WithInfo function](functionleave3withinfo-function.md) function. This method can be called only during the `FunctionLeave3WithInfo` callback.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetFunctionLeave3Info(
 ```  
   
 ## Parameters  
+
  `functionId`  
  [in] The `FunctionID` of the function that is returning.  
   
@@ -45,6 +47,7 @@ HRESULT GetFunctionLeave3Info(
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

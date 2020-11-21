@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostAssemblyStore Interface
+
 Provides methods that allow a host to load assemblies and modules independently of the common language runtime (CLR).  
   
 ## Methods  
@@ -26,6 +27,7 @@ Provides methods that allow a host to load assemblies and modules independently 
 |[ProvideModule Method](ihostassemblystore-providemodule-method.md)|Resolves a module within an assembly or a linked (not embedded) resource file.|  
   
 ## Remarks  
+
  `IHostAssemblyStore` provides a way for a host to load assemblies efficiently based on assembly identity. The host loads assemblies by returning `IStream` instances that point directly at the bytes.  
   
  The CLR determines whether a host has implemented `IHostAssemblyStore` by calling `IHostAssemblyManager::GetNonHostAssemblyStores` upon initialization. This allows the host, for example, to control binding to user assemblies, but to rely on the runtime to bind to .NET Framework assemblies.  
@@ -37,6 +39,7 @@ Provides methods that allow a host to load assemblies and modules independently 
 > The .NET Framework version 2.0 does not provide a way for the host to load the native image of an assembly, as provided by the [Native Image Generator (Ngen.exe)](../../tools/ngen-exe-native-image-generator.md) utility.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

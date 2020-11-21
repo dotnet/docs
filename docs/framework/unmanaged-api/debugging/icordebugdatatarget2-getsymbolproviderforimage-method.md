@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b7c0a2f0-e904-43b3-98e1-d669e8a589e8
 ---
 # ICorDebugDataTarget2::GetSymbolProviderForImage Method
+
 Returns the symbol-provider for a module from the base address of that module.  
   
 ## Syntax  
@@ -16,6 +17,7 @@ HRESULT GetSymbolProviderForImage(
 ```  
   
 ## Parameters  
+
  `imageBaseAddress`  
  [in] A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents the base address of a module.  
   
@@ -28,6 +30,7 @@ HRESULT GetSymbolProviderForImage(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

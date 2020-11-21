@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugFrame::GetStackRange Method
+
 Gets the absolute address range of this stack frame.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetStackRange (
 ```  
   
 ## Parameters  
+
  `pStart`  
  [out] A pointer to a `CORDB_ADDRESS` that specifies the starting address of the stack frame represented by this `ICorDebugFrame` object.  
   
@@ -36,9 +38,11 @@ HRESULT GetStackRange (
  [out] A pointer to a `CORDB_ADDRESS` that specifies the ending address of the stack frame represented by this `ICorDebugFrame` object.  
   
 ## Remarks  
+
  The address range of the stack is useful for piecing together interleaved stack traces gathered from multiple debugging engines. The numeric range provides no information about the contents of the stack frame. It is meaningful only for comparison of stack frame locations.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

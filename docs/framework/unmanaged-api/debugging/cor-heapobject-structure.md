@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_HEAPOBJECT Structure
+
 Provides information about an object on the managed heap.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ typedef struct _COR_HEAPOBJECT {
 |`type`|A [COR_TYPEID](cor-typeid-structure.md) token that represents the type of the object.|  
   
 ## Remarks  
+
  `COR_HEAPOBJECT` instances can be retrieved by enumerating an [ICorDebugHeapEnum](icordebugheapenum-interface.md) interface object that is populated by calling the [ICorDebugProcess5::EnumerateHeap](icordebugprocess5-enumerateheap-method.md) method.  
   
  A `COR_HEAPOBJECT` instance provides information either about a live object on the managed heap, or about an object that is not rooted by any object but has not yet been collected by the garbage collector.  
@@ -48,6 +50,7 @@ typedef struct _COR_HEAPOBJECT {
  The `COR_HEAPOBJECT` structure includes a reference-counted COM interface. If you retrieve a `COR_HEAPOBJECT` instance from the enumerator by calling the [ICorDebugHeapEnum::Next](icordebugheapenum-next-method.md) method, you must subsequently release the reference.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

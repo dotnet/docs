@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::GetStaticFieldInfo Method
+
 Gets a value that indicates the kind of static that applies to the specified field.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetStaticFieldInfo (
 ```  
   
 ## Parameters  
+
  `classId`  
  [in] The ID of the class in which the static field is defined.  
   
@@ -39,11 +41,13 @@ HRESULT GetStaticFieldInfo (
  [out] A pointer to a value of the [COR_PRF_STATIC_TYPE](cor-prf-static-type-enumeration.md) enumeration that indicates whether the specified field is static, and if so, the kind of static that applies to the field.  
   
 ## Remarks  
+
  This information can be used to determine which function to call to get the address of the static field.  
   
  The profiler code should still check the metadata for a static field to ensure that it actually has an address. Static literals (that is, constants) exist only in the metadata and do not have an address.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

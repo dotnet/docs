@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugChainReason Enumeration
+
 Indicates the reason or reasons for the initiation of a call chain.  
   
 ## Syntax  
@@ -57,9 +58,11 @@ typedef enum CorDebugChainReason {
 |`CHAIN_FUNC_EVAL`|The chain was initiated by a function evaluation.|  
   
 ## Remarks  
+
  Use the [ICorDebugChain::GetReason](icordebugchain-getreason-method.md) method to ascertain the reasons for the initiation of a call chain.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

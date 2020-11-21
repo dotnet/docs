@@ -14,6 +14,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILFrame4::GetLocalVariableEx Method
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  Gets the value of the specified local variable in this intermediate language (IL) stack frame, and optionally accesses a variable added in profiler ReJIT instrumentation.  
@@ -29,6 +30,7 @@ HRESULT GetLocalVariableEx(
 ```  
   
 ## Parameters  
+
  `flags`  
  [in] An [ILCodeKind](ilcodekind-enumeration.md) enumeration member that specifies whether a variable added in profiler ReJIT instrumentation is included in the frame.  
   
@@ -39,9 +41,11 @@ HRESULT GetLocalVariableEx(
  [out] A pointer to the address of an "ICorDebugValue" object that represents the retrieved value.  
   
 ## Remarks  
+
  This method is similar to the [GetLocalVariable](icordebugilframe-getlocalvariable-method.md) method, except that it optionally accesses a variable added in profiler ReJIT instrumentation. Calling this method with a `flags` value of `ILCODE_ORIGINAL_IL` is equivalent to calling [GetLocalVariable](icordebugilframe-getlocalvariable-method.md); if the method is instrumented with additional local variables, those variables cannot be accessed. `ILCODE_REJIT_IL` allows the debugger to access the local variables added in profiler ReJIT instrumentation. If the IL is not instrumented, the method returns `E_INVALIDARG`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

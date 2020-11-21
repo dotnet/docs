@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAssemblyReferenceList Interface
+
 Manages a list of assemblies that are loaded by the common language runtime (CLR) and not by the host.  
   
 ## Methods  
@@ -26,9 +27,11 @@ Manages a list of assemblies that are loaded by the common language runtime (CLR
 |[IsStringAssemblyReferenceInList Method](iclrassemblyreferencelist-isstringassemblyreferenceinlist-method.md)|Gets a value that indicates whether the supplied name matches the name of an assembly in the list.|  
   
 ## Remarks  
+
  Call the [ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList](iclrassemblyidentitymanager-getclrassemblyreferencelist-method.md) method to get a pointer to an instance of `ICLRAssemblyReferenceList`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebug::CreateProcess Method
+
 Launches a process and its primary thread under the control of the debugger.  
   
 ## Syntax  
@@ -39,6 +40,7 @@ HRESULT CreateProcess (
 ```  
   
 ## Parameters  
+
  `lpApplicationName`  
  [in] Pointer to a null-terminated string that specifies the module to be executed by the launched process. The module is executed in the security context of the calling process.  
   
@@ -76,6 +78,7 @@ HRESULT CreateProcess (
  [out] A pointer to the address of a ICorDebugProcess object that represents the process.  
   
 ## Remarks  
+
  The parameters of this method are the same as those of the Win32 `CreateProcess` method.  
   
  To enable unmanaged mixed-mode debugging, set `dwCreationFlags` to DEBUG_PROCESS &#124; DEBUG_ONLY_THIS_PROCESS. If you want to use only managed debugging, do not set these flags.  
@@ -85,6 +88,7 @@ HRESULT CreateProcess (
  Interop debugging is not supported on Win9x and non-x86 platforms such as IA-64-based and AMD64-based platforms.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

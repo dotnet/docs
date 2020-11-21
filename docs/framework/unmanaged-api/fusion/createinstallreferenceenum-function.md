@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # CreateInstallReferenceEnum Function
+
 Gets a pointer to an [IInstallReferenceEnum](iinstallreferenceenum-interface.md) instance that represents a list of an application's references to the specified assembly.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT CreateInstallReferenceEnum (
 ```  
   
 ## Parameters  
+
  `ppRefEnum`  
  [out] The returned `IInstallReferenceEnum` pointer.  
   
@@ -45,6 +47,7 @@ HRESULT CreateInstallReferenceEnum (
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

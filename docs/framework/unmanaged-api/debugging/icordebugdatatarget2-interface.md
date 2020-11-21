@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 13f11388-2f91-48d8-98d6-6a4a63cb5746
 ---
 # ICorDebugDataTarget2 Interface
+
 Logically extends the [ICorDebugDataTarget](icordebugdatatarget-interface.md)interface.  
   
 ## Methods  
@@ -22,6 +23,7 @@ Logically extends the [ICorDebugDataTarget](icordebugdatatarget-interface.md)int
 > This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

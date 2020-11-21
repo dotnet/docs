@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugRegisterSet::SetThreadContext Method
+
 `SetThreadContext` is not implemented in the .NET Framework version 2.0. Do not call this method.  
   
 > [!NOTE]
@@ -33,6 +34,7 @@ HRESULT SetThreadContext (
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

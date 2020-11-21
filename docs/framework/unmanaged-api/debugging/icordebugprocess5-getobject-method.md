@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess5::GetObject Method
+
 Converts an object address to an "ICorDebugObjectValue" object.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetObject(
 ```  
   
 ## Parameters  
+
  `addr`  
  [in] The object address.  
   
@@ -36,9 +38,11 @@ HRESULT GetObject(
  [out] A pointer to the address of an  "ICorDebugObjectValue" object.  
   
 ## Remarks  
+
  If `addr` does not point to a valid managed object, the `GetObject` method returns `E_FAIL`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

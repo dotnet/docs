@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
 ---
 # Quantifiers in Regular Expressions
+
 Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found.  The following table lists the quantifiers supported by .NET.  
   
 |Greedy quantifier|Lazy quantifier|Description|  
@@ -33,12 +34,14 @@ Quantifiers specify how many instances of a character, group, or character class
 > Nesting quantifiers (for example, as the regular expression pattern `(a*)*` does) can increase the number of comparisons that the regular expression engine must perform, as an exponential function of the number of characters in the input string. For more information about this behavior and its workarounds, see [Backtracking](backtracking-in-regular-expressions.md).  
   
 ## Regular Expression Quantifiers  
+
  The following sections list the quantifiers supported by .NET regular expressions.  
   
 > [!NOTE]
 > If the *, +, ?, {, and } characters are encountered in a regular expression pattern, the regular expression engine interprets them as quantifiers or part of quantifier constructs unless they are included in a [character class](character-classes-in-regular-expressions.md). To interpret these as literal characters outside a character class, you must escape them by preceding them with a backslash. For example, the string `\*` in a regular expression pattern is interpreted as a literal asterisk ("\*") character.  
   
 ### Match Zero or More Times: *  
+
  The `*` quantifier matches the preceding element zero or more times. It is equivalent to the `{0,}` quantifier. `*` is a greedy quantifier whose lazy equivalent is `*?`.  
   
  The following example illustrates this regular expression. Of the nine digit groups in the input string, five match the pattern and four (`95`, `929`, `9219`, and `9919`) do not.  
@@ -56,6 +59,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\b`|End at a word boundary.|  
   
 ### Match One or More Times: +  
+
  The `+` quantifier matches the preceding element one or more times. It is equivalent to `{1,}`. `+` is a greedy quantifier whose lazy equivalent is `+?`.  
   
  For example, the regular expression `\ban+\w*?\b` tries to match entire words that begin with the letter `a` followed by one or more instances of the letter `n`. The following example illustrates this regular expression. The regular expression matches the words `an`, `annual`, `announcement`, and `antique`, and correctly fails to match `autumn` and `all`.  
@@ -73,6 +77,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\b`|End at a word boundary.|  
   
 ### Match Zero or One Time: ?  
+
  The `?` quantifier matches the preceding element zero or one time. It is equivalent to `{0,1}`. `?` is a greedy quantifier whose lazy equivalent is `??`.  
   
  For example, the regular expression `\ban?\b` tries to match entire words that begin with the letter `a` followed by zero or one instances of the letter `n`. In other words, it tries to match the words `a` and `an`. The following example illustrates this regular expression.  
@@ -89,6 +94,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\b`|End at a word boundary.|  
   
 ### Match Exactly n Times: {n}  
+
  The `{`*n*`}` quantifier matches the preceding element exactly *n* times, where *n* is any integer. `{`*n*`}` is a greedy quantifier whose lazy equivalent is `{`*n*`}?`.  
   
  For example, the regular expression `\b\d+\,\d{3}\b` tries to match a word boundary followed by one or more decimal digits followed by three decimal digits followed by a word boundary. The following example illustrates this regular expression.  
@@ -107,6 +113,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\b`|End at a word boundary.|  
   
 ### Match at Least n Times: {n,}  
+
  The `{`*n*`,}` quantifier matches the preceding element at least *n* times, where *n* is any integer. `{`*n*`,}` is a greedy quantifier whose lazy equivalent is `{`*n*`,}?`.  
   
  For example, the regular expression `\b\d{2,}\b\D+` tries to match a word boundary followed by at least two digits followed by a word boundary and a non-digit character. The following example illustrates this regular expression. The regular expression fails to match the phrase `"7 days"` because it contains just one decimal digit, but it successfully matches the phrases `"10 weeks and 300 years"`.  
@@ -124,6 +131,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\D+`|Match at least one non-decimal digit.|  
   
 ### Match Between n and m Times: {n,m}  
+
  The `{`*n*`,`*m*`}` quantifier matches the preceding element at least *n* times, but no more than *m* times, where *n* and *m* are integers. `{`*n*`,`*m*`}` is a greedy quantifier whose lazy equivalent is `{`*n*`,`*m*`}?`.  
   
  In the following example, the regular expression `(00\s){2,4}` tries to match between two and four occurrences of two zero digits followed by a space. Note that the final portion of the input string includes this pattern five times rather than the maximum of four. However, only the initial portion of this substring (up to the space and the fifth pair of zeros) matches the regular expression pattern.  
@@ -132,6 +140,7 @@ Quantifiers specify how many instances of a character, group, or character class
  [!code-vb[RegularExpressions.Quantifiers#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#6)]  
   
 ### Match Zero or More Times (Lazy Match): *?  
+
  The `*?` quantifier matches the preceding element zero or more times, but as few times as possible. It is the lazy counterpart of the greedy quantifier `*`.  
   
  In the following example, the regular expression `\b\w*?oo\w*?\b` matches all words that contain the string `oo`.  
@@ -150,6 +159,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\b`|End on a word boundary.|  
   
 ### Match One or More Times (Lazy Match): +?  
+
  The `+?` quantifier matches the preceding element one or more times, but as few times as possible. It is the lazy counterpart of the greedy quantifier `+`.  
   
  For example, the regular expression `\b\w+?\b` matches one or more characters separated by word boundaries. The following example illustrates this regular expression.  
@@ -158,6 +168,7 @@ Quantifiers specify how many instances of a character, group, or character class
  [!code-vb[RegularExpressions.Quantifiers#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#8)]  
   
 ### Match Zero or One Time (Lazy Match): ??  
+
  The `??` quantifier matches the preceding element zero or one time, but as few times as possible. It is the lazy counterpart of the greedy quantifier `?`.  
   
  For example, the regular expression `^\s*(System.)??Console.Write(Line)??\(??` attempts to match the strings "Console.Write" or "Console.WriteLine". The string can also include "System." before "Console", and it can be followed by an opening parenthesis. The string must be at the beginning of a line, although it can be preceded by white space. The following example illustrates this regular expression.  
@@ -177,6 +188,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\(??`|Match zero or one occurrence of the opening parenthesis.|  
   
 ### Match Exactly n Times (Lazy Match): {n}?  
+
  The `{`*n*`}?` quantifier matches the preceding element exactly `n` times, where *n* is any integer. It is the lazy counterpart of the greedy quantifier `{`*n*`}`.  
   
  In the following example, the regular expression `\b(\w{3,}?\.){2}?\w{3,}?\b` is used to identify a Web site address. Note that it matches "www.microsoft.com" and "msdn.microsoft.com", but does not match "mywebsite" or "mycompany.com".  
@@ -194,11 +206,13 @@ Quantifiers specify how many instances of a character, group, or character class
 |`\b`|End the match on a word boundary.|  
   
 ### Match at Least n Times (Lazy Match): {n,}?  
+
  The `{`*n*`,}?` quantifier matches the preceding element at least `n` times, where *n* is any integer, but as few times as possible. It is the lazy counterpart of the greedy quantifier `{`*n*`,}`.  
   
  See the example for the `{`*n*`}?` quantifier in the previous section for an illustration. The regular expression in that example uses the `{`*n*`,}` quantifier to match a string that has at least three characters followed by a period.  
   
 ### Match Between n and m Times (Lazy Match): {n,m}?  
+
  The `{`*n*`,`*m*`}?` quantifier matches the preceding element between `n` and `m` times, where *n* and *m* are integers, but as few times as possible. It is the lazy counterpart of the greedy quantifier `{`*n*`,`*m*`}`.  
   
  In the following example, the regular expression `\b[A-Z](\w*?\s*?){1,10}[.!?]` matches sentences that contain between one and ten words. It matches all the sentences in the input string except for one sentence that contains 18 words.  
@@ -217,7 +231,9 @@ Quantifiers specify how many instances of a character, group, or character class
 |`[.!?]`|Match any one of the punctuation characters ".", "!", or "?".|  
   
 <a name="Greedy"></a>
+
 ## Greedy and Lazy Quantifiers  
+
  A number of the quantifiers have two versions:  
   
 - A greedy version.  
@@ -243,6 +259,7 @@ Quantifiers specify how many instances of a character, group, or character class
  In most cases, regular expressions with greedy and lazy quantifiers return the same matches. They most commonly return different results when they are used with the wildcard (`.`) metacharacter, which matches any character.  
   
 ## Quantifiers and Empty Matches  
+
  The quantifiers `*`, `+`, and `{`*n*`,`*m*`}` and their lazy counterparts never repeat after an empty match when the minimum number of captures has been found. This rule prevents quantifiers from entering infinite loops on empty subexpression matches when the maximum number of possible group captures is infinite or near infinite.  
   
  For example, the following code shows the result of a call to the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> method with the regular expression pattern `(a?)*`, which matches zero or one "a" character zero or more times. Note that the single capturing group captures each "a" as well as <xref:System.String.Empty?displayProperty=nameWithType>, but that there is no second empty match, because the first empty match causes the quantifier to stop repeating.  

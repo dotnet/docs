@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: e39324ee-72e5-42d4-a80d-bf3ee7fc6c59
 ---
 # Parsing Numeric Strings in NET
+
 All numeric types have two static parsing methods, `Parse` and `TryParse`, that you can use to convert the string representation of a number into a numeric type. These methods enable you to parse strings that were produced by using the format strings documented in [Standard Numeric Format Strings](standard-numeric-format-strings.md) and [Custom Numeric Format Strings](custom-numeric-format-strings.md). By default, the `Parse` and `TryParse` methods can successfully convert strings that contain integral decimal digits only to integer values. They can successfully convert strings that contain integral and fractional decimal digits, group separators, and a decimal separator to floating-point values. The `Parse` method throws an exception if the operation fails, whereas the `TryParse` method returns `false`.  
   
 ## Parsing and Format Providers  
+
  Typically, the string representations of numeric values differ by culture. Elements of numeric strings such as currency symbols, group (or thousands) separators, and decimal separators all vary by culture. Parsing methods either implicitly or explicitly use a format provider that recognizes these culture-specific variations. If no format provider is specified in a call to the `Parse` or `TryParse` method, the format provider associated with the current thread culture (the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType> property) is used.  
   
  A format provider is represented by an <xref:System.IFormatProvider> implementation. This interface has a single member, the <xref:System.IFormatProvider.GetFormat%2A> method, whose single parameter is a <xref:System.Type> object that represents the type to be formatted. This method returns the object that provides formatting information. .NET supports the following two <xref:System.IFormatProvider> implementations for parsing numeric strings:  
@@ -30,6 +32,7 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
  [!code-vb[Parsing.Numbers#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/parsing.numbers/vb/formatproviders1.vb#1)]  
   
 ## Parsing and NumberStyles Values  
+
  The style elements (such as white space, group separators, and decimal separator) that the parse operation can handle are defined by a <xref:System.Globalization.NumberStyles> enumeration value. By default, strings that represent integer values are parsed by using the <xref:System.Globalization.NumberStyles.Integer?displayProperty=nameWithType> value, which permits only numeric digits, leading and trailing white space, and a leading sign. Strings that represent floating-point values are parsed using a combination of the <xref:System.Globalization.NumberStyles.Float?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> values; this composite style permits decimal digits along with leading and trailing white space, a leading sign, a decimal separator, a group separator, and an exponent. By calling an overload of the `Parse` or `TryParse` method that includes a parameter of type <xref:System.Globalization.NumberStyles> and setting one or more <xref:System.Globalization.NumberStyles> flags, you can control the style elements that can be present in the string for the parse operation to succeed.  
   
  For example, a string that contains a group separator cannot be converted to an <xref:System.Int32> value by using the <xref:System.Int32.Parse%28System.String%29?displayProperty=nameWithType> method. However, the conversion succeeds if you use the <xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType> flag, as the following example illustrates.  
@@ -68,6 +71,7 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
 |<xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>|Includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType>, <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>, and <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> styles.|  
   
 ## Parsing and Unicode Digits  
+
  The Unicode standard defines code points for digits in various writing systems. For example, code points from U+0030 to U+0039 represent the basic Latin digits 0 through 9, code points from U+09E6 to U+09EF represent the Bangla digits 0 through 9, and code points from U+FF10 to U+FF19 represent the Fullwidth digits 0 through 9. However, the only numeric digits recognized by parsing methods are the basic Latin digits 0-9 with code points from U+0030 to U+0039. If a numeric parsing method is passed a string that contains any other digits, the method throws a <xref:System.FormatException>.  
   
  The following example uses the <xref:System.Int32.Parse%2A?displayProperty=nameWithType> method to parse strings that consist of digits in different writing systems. As the output from the example shows, the attempt to parse the basic Latin digits succeeds, but the attempt to parse the Fullwidth, Arabic-Indic, and Bangla digits fails.  

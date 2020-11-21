@@ -29,6 +29,7 @@ TAP uses a single method to represent the initiation and completion of an asynch
  For examples of how the TAP syntax differs from the syntax used in legacy asynchronous programming patterns such as the Asynchronous Programming Model (APM) and the Event-based Asynchronous Pattern (EAP), see [Asynchronous Programming Patterns](index.md).  
   
 ## Initiating an asynchronous operation  
+
  An asynchronous method that is based on TAP can do a small amount of work synchronously, such as validating arguments and initiating the asynchronous operation, before it returns the resulting task. Synchronous work should be kept to the minimum so the asynchronous method can return quickly. Reasons for a quick return include:  
   
 - Asynchronous methods may be invoked from user interface (UI) threads, and any long-running synchronous work could harm the responsiveness of the application.  
@@ -38,19 +39,23 @@ TAP uses a single method to represent the initiation and completion of an asynch
  In some cases, the amount of work required to complete the operation is less than the amount of work required to launch the operation asynchronously. Reading from a stream where the read operation can be satisfied by data that is already buffered in memory is an example of such a scenario. In such cases, the operation may complete synchronously, and may return a task that has already been completed.  
   
 ## Exceptions  
+
  An asynchronous method should raise an exception to be thrown out of the asynchronous method call only in response to a usage error. Usage errors should never occur in production code. For example, if passing a null reference (`Nothing` in Visual Basic) as one of the method's arguments causes an error state (usually represented by an <xref:System.ArgumentNullException> exception), you can modify the calling code to ensure that a null reference is never passed. For all other errors, exceptions that occur when an asynchronous method is running should be assigned to the returned task, even if the asynchronous method happens to complete synchronously before the task is returned. Typically, a task contains at most one exception. However, if the task represents multiple operations (for example, <xref:System.Threading.Tasks.Task.WhenAll%2A>), multiple exceptions may be associated with a single task.  
   
 ## Target environment  
+
  When you implement a TAP method, you can determine where asynchronous execution occurs. You may choose to execute the workload on the thread pool, implement it by using asynchronous I/O (without being bound to a thread for the majority of the operation's execution), run it on a specific thread (such as the UI thread), or use any number of potential contexts. A TAP method may even have nothing to execute, and may just return a <xref:System.Threading.Tasks.Task> that represents the occurrence of a condition elsewhere in the system (for example, a task that represents data arriving at a queued data structure).
 
  The caller of the TAP method may block waiting for the TAP method to complete by synchronously waiting on the resulting task, or may run additional (continuation) code when the asynchronous operation completes. The creator of the continuation code has control over where that code executes. You may create the continuation code either explicitly, through methods on the <xref:System.Threading.Tasks.Task> class (for example, <xref:System.Threading.Tasks.Task.ContinueWith%2A>) or implicitly, by using language support built on top of continuations (for example, `await` in C#, `Await` in Visual Basic, `AwaitValue` in F#).  
   
 ## Task status  
+
  The <xref:System.Threading.Tasks.Task> class provides a life cycle for asynchronous operations, and that cycle is represented by the <xref:System.Threading.Tasks.TaskStatus> enumeration. To support corner cases of types that derive from <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601>,  and to support the separation of construction from scheduling, the <xref:System.Threading.Tasks.Task> class exposes a <xref:System.Threading.Tasks.Task.Start%2A> method. Tasks that are created by the public <xref:System.Threading.Tasks.Task> constructors are referred to as *cold tasks*, because they begin their life cycle in the non-scheduled <xref:System.Threading.Tasks.TaskStatus.Created> state and are scheduled only when <xref:System.Threading.Tasks.Task.Start%2A> is called on these instances.
 
  All other tasks begin their life cycle in a hot state, which means that the asynchronous operations they represent have already been initiated and their task status is an enumeration value other than <xref:System.Threading.Tasks.TaskStatus.Created?displayProperty=nameWithType>. All tasks that are returned from TAP methods must be activated. **If a TAP method internally uses a task's constructor to instantiate the task to be returned, the TAP method must call <xref:System.Threading.Tasks.Task.Start%2A> on the <xref:System.Threading.Tasks.Task> object before returning it.** Consumers of a TAP method may safely assume that the returned task is active and should not try to call <xref:System.Threading.Tasks.Task.Start%2A> on any <xref:System.Threading.Tasks.Task> that is returned from a TAP method. Calling <xref:System.Threading.Tasks.Task.Start%2A> on an active task results in an <xref:System.InvalidOperationException> exception.  
   
 ## Cancellation (optional)  
+
  In TAP, cancellation is optional for both asynchronous method implementers and asynchronous method consumers. If an operation allows cancellation, it exposes an overload of the asynchronous method that accepts a cancellation token (<xref:System.Threading.CancellationToken> instance). By convention, the parameter is named `cancellationToken`.  
   
  [!code-csharp[Conceptual.TAP#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap/cs/examples1.cs#1)]
@@ -63,6 +68,7 @@ TAP uses a single method to represent the initiation and completion of an asynch
  For asynchronous methods that want to expose the ability to be canceled first and foremost, you don't have to provide an overload that doesn't accept a cancellation token. For methods that cannot be canceled, do not provide overloads that accept a cancellation token; this helps indicate to the caller whether the target method is actually cancelable.  Consumer code that does not desire cancellation may call a method that accepts a <xref:System.Threading.CancellationToken> and provide <xref:System.Threading.CancellationToken.None%2A> as the argument value. <xref:System.Threading.CancellationToken.None%2A> is functionally equivalent to the default <xref:System.Threading.CancellationToken>.  
   
 ## Progress reporting (optional)  
+
  Some asynchronous operations benefit from providing progress notifications; these are typically used to update a user interface with information about the progress of the asynchronous operation.
 
  In TAP, progress is handled through an <xref:System.IProgress%601> interface, which is passed to the asynchronous method as a parameter that is usually named `progress`.  Providing the progress interface when the asynchronous method is called helps eliminate race conditions that result from incorrect usage (that is, when event handlers that are incorrectly registered after the operation starts may miss updates).  More importantly, the progress interface supports varying implementations of progress, as determined by the consuming code.  For example, the consuming code may only care about the latest progress update, or may want to buffer all updates, or may want to invoke an action for each update, or may want to control whether the invocation is marshaled to a particular thread. All these options may be achieved by using a different implementation of the interface, customized to the particular consumer's needs.  As with cancellation, TAP implementations should provide an <xref:System.IProgress%601> parameter only if the API supports progress notifications.
@@ -87,6 +93,7 @@ TAP uses a single method to represent the initiation and completion of an asynch
  If TAP implementations provide overloads that accept a `progress` parameter, they must allow the argument to be `null`, in which case no progress is reported. TAP implementations should report the progress to the <xref:System.Progress%601> object synchronously, which enables the asynchronous method to quickly provide progress. It also allows the consumer of the progress to determine how and where best to handle the information. For example, the progress instance could choose to marshal callbacks and raise events on a captured synchronization context.  
   
 ## IProgress\<T> implementations  
+
 .NET provides the <xref:System.Progress%601> class, which implements <xref:System.IProgress%601>. The <xref:System.Progress%601> class is declared as follows:  
   
 ```csharp  
@@ -102,6 +109,7 @@ public class Progress<T> : IProgress<T>
  An instance of <xref:System.Progress%601> exposes a <xref:System.Progress%601.ProgressChanged> event, which is raised every time the asynchronous operation reports a progress update. The <xref:System.Progress%601.ProgressChanged> event is raised on the <xref:System.Threading.SynchronizationContext> object that was captured when the <xref:System.Progress%601> instance was instantiated. If no synchronization context was available, a default context that targets the thread pool is used. Handlers may be registered with this event. A single handler may also be provided to the <xref:System.Progress%601> constructor for convenience, and behaves just like an event handler for the <xref:System.Progress%601.ProgressChanged> event. Progress updates are raised asynchronously to avoid delaying the asynchronous operation while event handlers are executing. Another <xref:System.IProgress%601> implementation could choose to apply different semantics.  
   
 ## Choosing the overloads to provide  
+
  If a TAP implementation uses both the optional <xref:System.Threading.Tasks.TaskFactory.CancellationToken%2A> and optional <xref:System.IProgress%601> parameters, it could potentially require up to four overloads:  
   
 ```csharp  

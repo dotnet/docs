@@ -33,6 +33,7 @@ This article lists the guidelines to consider when designing an API to be serial
   Serialization is an important design consideration for any type, because programs might need to persist or transmit instances of the type.
 
 ### Choosing the right serialization technology to support
+
  Any given type can support none, one, or more of the serialization technologies.
 
 - CONSIDER supporting *data contract serialization* if instances of your type might need to be persisted or used in Web Services.
@@ -46,6 +47,7 @@ This article lists the guidelines to consider when designing an API to be serial
 - AVOID supporting runtime serialization or XML serialization just for general persistence reasons. Prefer data contract serialization instead
 
 #### Data contract serialization
+
  Types can support data contract serialization by applying the <xref:System.Runtime.Serialization.DataContractAttribute> to the type and the <xref:System.Runtime.Serialization.DataMemberAttribute> to the members (fields and properties) of the type.
 
  [!code-csharp[SerializationGuidelines#1](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#1)]
@@ -91,6 +93,7 @@ This article lists the guidelines to consider when designing an API to be serial
      For more information, see [Forward-Compatible Data Contracts](../../framework/wcf/feature-details/forward-compatible-data-contracts.md).
 
 #### XML serialization
+
  Data contract serialization is the main (default) serialization technology in .NET Framework, but there are serialization scenarios that data contract serialization does not support. For example, it does not give you full control over the shape of XML produced or consumed by the serializer. If such fine control is required, *XML serialization* has to be used, and you need to design your types to support this serialization technology.
 
 1. AVOID designing your types specifically for XML Serialization, unless you have a very strong reason to control the shape of the XML produced. This serialization technology has been superseded by the Data Contract Serialization discussed in the previous section.
@@ -103,6 +106,7 @@ This article lists the guidelines to consider when designing an API to be serial
 2. CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what's offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute.
 
 #### Runtime serialization
+
  *Runtime serialization* is a technology used by .NET Remoting. If you think your types will be transported using .NET Remoting, make sure they support runtime serialization.
 
  The basic support for *runtime serialization* can be provided by applying the <xref:System.SerializableAttribute> attribute, and more advanced scenarios involve implementing a simple *runtime serializable pattern* (implement -<xref:System.Runtime.Serialization.ISerializable> and provide a serialization constructor).

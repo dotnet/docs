@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 56b6e9c7-ed82-4a65-a647-7be32c83bcc8
 ---
 # Process XML Data Using the DOM Model
+
 The XML Document Object Model (DOM) treats XML data as a standard set of objects and is used to process XML data in memory. The `System.Xml` namespace provides a programmatic representation of XML documents, fragments, nodes, or node-sets. It is based on the World Wide Web Consortium (W3C) DOM Level 1 Core and the DOM Level 2 Core recommendations.  
   
  The <xref:System.Xml.XmlDocument> class represents an XML document. It includes members for retrieving and creating all other XML objects. Using the <xref:System.Xml.XmlDocument>, and its related classes, you can construct XML documents, load and access data, modify data, and save changes.  
@@ -49,5 +50,6 @@ The XML Document Object Model (DOM) treats XML data as a standard set of objects
 - [Extending the DOM](extending-the-dom.md)  
   
 ## Related Sections  
+
  [Process XML Data Using the XPath Data Model](process-xml-data-using-the-xpath-data-model.md)  
  Discusses XML processing using the <xref:System.Xml.XPath.XPathNavigator> class.

@@ -37,6 +37,7 @@ The composite formatting feature is supported by methods such as the following:
 - The <xref:System.Diagnostics.TraceSource.TraceInformation%28System.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method, which writes an informational method to trace listeners.  
   
 ## Composite Format String  
+
  A composite format string and object list are used as arguments of methods that support the composite formatting feature. A composite format string consists of zero or more runs of fixed text intermixed with one or more format items. The fixed text is any string that you choose, and each format item corresponds to an object or boxed structure in the list. The composite formatting feature returns a new result string where each format item is replaced by the string representation of the corresponding object in the list.  
   
  Consider the following <xref:System.String.Format%2A> code fragment.  
@@ -47,6 +48,7 @@ The composite formatting feature is supported by methods such as the following:
  The fixed text is "`Name =` " and "`, hours =` ". The format items are "`{0}`", whose index is 0, which corresponds to the object `name`, and "`{1:hh}`", whose index is 1, which corresponds to the object `DateTime.Now`.  
   
 ## Format Item Syntax  
+
  Each format item takes the following form and consists of the following components:  
   
  `{` *index*[`,`*alignment*][`:`*formatString*]`}`  
@@ -54,6 +56,7 @@ The composite formatting feature is supported by methods such as the following:
  The matching braces ("{" and "}") are required.  
   
 ### Index Component  
+
  The mandatory *index* component, also called a parameter specifier, is a number starting from 0 that identifies a corresponding item in the list of objects. That is, the format item whose parameter specifier is 0 formats the first object in the list, the format item whose parameter specifier is 1 formats the second object in the list, and so on. The following example includes four parameter specifiers, numbered zero through three,  to represent prime numbers less than ten:  
   
  [!code-csharp[Formatting.Composite#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/index1.cs#7)]
@@ -67,6 +70,7 @@ The composite formatting feature is supported by methods such as the following:
  Each format item can refer to any object in the list. For example, if there are three objects, you can format the second, first, and third object by specifying a composite format string like this: "{1} {0} {2}". An object that is not referenced by a format item is ignored. A <xref:System.FormatException> is thrown at run time if a parameter specifier designates an item outside the bounds of the list of objects.  
   
 ### Alignment Component  
+
  The optional *alignment* component is a signed integer indicating the preferred formatted field width. If the value of *alignment* is less than the length of the formatted string, *alignment* is ignored and the length of the formatted string is used as the field width. The formatted data in the field is right-aligned if *alignment* is positive and left-aligned if *alignment* is negative. If padding is necessary, white space is used. The comma is required if *alignment*  is specified.  
   
  The following example defines two arrays, one containing the names of employees and the other containing the hours they worked over a two-week period. The composite format string left-aligns the names in a 20-character field, and right-aligns their hours in a 5-character field. Note that the "N1" standard format string is also used to format the hours with one fractional digit.  
@@ -75,6 +79,7 @@ The composite formatting feature is supported by methods such as the following:
  [!code-vb[Formatting.Composite#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/alignment1.vb#8)]  
   
 ### Format String Component  
+
  The optional *formatString* component is a format string that is appropriate for the type of object being formatted. Specify a standard or custom numeric format string if the corresponding object is a numeric value, a standard or custom date and time format string if the corresponding object is a <xref:System.DateTime> object, or an [enumeration format string](enumeration-format-strings.md) if the corresponding object is an enumeration value. If *formatString* is not specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.  
   
  The following table lists types or categories of types in the .NET class library that support a predefined set of format strings, and provides links to the topics that list the supported format strings. Note that string formatting is an extensible mechanism that makes it possible to define new format strings for all existing types as well as to define a set of format strings supported by an application-defined type. For more information, see the <xref:System.IFormattable> and <xref:System.ICustomFormatter> interface topics.  
@@ -88,6 +93,7 @@ The composite formatting feature is supported by methods such as the following:
 |<xref:System.TimeSpan>|[Standard TimeSpan Format Strings](standard-timespan-format-strings.md)<br /><br /> [Custom TimeSpan Format Strings](custom-timespan-format-strings.md)|  
   
 ### Escaping Braces  
+
  Opening and closing braces are interpreted as starting and ending a format item. Consequently, you must use an escape sequence to display a literal opening brace or closing brace. Specify two opening braces ("{{") in the fixed text to display one opening brace ("{"), or two closing braces ("}}") to display one closing brace ("}"). Braces in a format item are interpreted sequentially in the order they are encountered. Interpreting nested braces is not supported.  
   
  The way escaped braces are interpreted can lead to unexpected results. For example, consider the format item "{{{0:D}}}", which is intended to display an opening brace, a numeric value formatted as a decimal number, and a closing brace. However, the format item is actually interpreted in the following manner:  
@@ -108,6 +114,7 @@ The composite formatting feature is supported by methods such as the following:
  [!code-vb[Formatting.Composite#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Composite/vb/Escaping1.vb#2)]  
   
 ### Processing Order  
+
  If the call to the composite formatting method includes an <xref:System.IFormatProvider> argument whose value is not `null`, the runtime calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method to request an <xref:System.ICustomFormatter> implementation. If the method is able to return an <xref:System.ICustomFormatter> implementation, it's cached for the duration of the call of the composite formatting method.
   
  Each value in the parameter list that corresponds to a format item is converted to a string as follows:  
@@ -129,6 +136,7 @@ The composite formatting feature is supported by methods such as the following:
  Alignment is applied after the preceding steps have been performed.  
   
 ## Code Examples  
+
  The following example shows one string created using composite formatting and another created using an object's `ToString` method. Both types of formatting produce equivalent results.  
   
  [!code-csharp[Formatting.Composite#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Composite/cs/Composite1.cs#3)]

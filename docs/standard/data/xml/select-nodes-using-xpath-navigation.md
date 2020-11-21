@@ -8,9 +8,11 @@ dev_langs:
 ms.assetid: 8e4450dc-56b3-472b-b467-32f5694f83ad
 ---
 # Select Nodes Using XPath Navigation
+
 The XML Document Object Model (DOM) contains methods that allow you to use XML Path Language (XPath) navigation to query information in the DOM. You can use XPath to find a single, specific node or to find all nodes that match some criteria.  
   
 ## XPath Select Methods  
+
  The DOM classes provide two methods for XPath selection: the <xref:System.Xml.XmlNode.SelectSingleNode%2A> method and the <xref:System.Xml.XmlNode.SelectNodes%2A> method. The <xref:System.Xml.XmlNode.SelectSingleNode%2A> method returns the first node that matches the selection criteria. The <xref:System.Xml.XmlNode.SelectNodes%2A> method returns an <xref:System.Xml.XmlNodeList> that contains the matching nodes.  
   
  The following example uses the <xref:System.Xml.XmlNode.SelectSingleNode%2A> method to select the first `book` node in which the author's last name meets the specified criteria. The bookstore.xml file (which is provided at the end of this topic) is used as the input file.  
@@ -116,12 +118,14 @@ this doc.DocumentElement.FirstChild.SelectNodes(. . .);
 > When the underlying document is modified, it is advisable to rerun the select. If the node modified is one that could cause the node to be added to the node list when it was not previously, or would now cause it to be removed from the node list, there is no guarantee that the node list is now accurate.  
   
 ## Namespaces in XPath Expressions  
+
  XPath expressions can include namespaces. Namespace resolution is supported using the <xref:System.Xml.XmlNamespaceManager>. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the <xref:System.Xml.XmlNamespaceManager>, and the <xref:System.Xml.XmlNamespaceManager> is passed to the <xref:System.Xml.XmlNode.SelectNodes%28System.String%2CSystem.Xml.XmlNamespaceManager%29> or <xref:System.Xml.XmlNode.SelectSingleNode%28System.String%2CSystem.Xml.XmlNamespaceManager%29> method. Notice that the code examples above use the <xref:System.Xml.XmlNamespaceManager> to resolve the namespace of the bookstore.xml document.  
   
 > [!NOTE]
 > If the XPath expression does not include a prefix, it is assumed that the namespace Uniform Resource Identifier (URI) is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the <xref:System.Xml.XmlNamespaceManager>; otherwise, no nodes will be selected.  
   
 #### Input File  
+
  The following is the bookstore.xml file that is used as the input file in the examples in this topic:  
   
 ```xml  

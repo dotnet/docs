@@ -33,6 +33,7 @@ Every assembly, whether static or dynamic, contains a collection of data that de
 - Renders the assembly self-describing.  
   
 ## Assembly manifest contents  
+
  The following table shows the information contained in the assembly manifest. The first four items: assembly name, version number, culture, and strong name information make up the assembly's identity.  
   
 |Information|Description|  

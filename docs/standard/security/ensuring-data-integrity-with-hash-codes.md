@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 33660f33-b70f-4dca-8c87-ab35cfc2961a
 ---
 # Ensuring Data Integrity with Hash Codes
+
 A hash value is a numeric value of a fixed length that uniquely identifies data. Hash values represent large amounts of data as much smaller numeric values, so they are used with digital signatures. You can sign a hash value more efficiently than signing the larger value. Hash values are also useful for verifying the integrity of data sent through insecure channels. The hash value of received data can be compared to the hash value of data as it was sent to determine whether the data was altered.  
   
 This topic describes how to generate and verify hash codes by using the classes in the <xref:System.Security.Cryptography> namespace.  

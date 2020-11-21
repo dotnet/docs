@@ -20,6 +20,7 @@ ms.assetid: d3a77ea1-75d2-4969-a8c3-3e1e3e1aaedc
 This section describes general naming conventions that relate to word choice, guidelines on using abbreviations and acronyms, and recommendations on how to avoid using language-specific names.
 
 ## Word Choice
+
  ✔️ DO choose easily readable identifier names.
 
  For example, a property named `HorizontalAlignment` is more English-readable than `AlignmentHorizontal`.
@@ -37,6 +38,7 @@ This section describes general naming conventions that relate to word choice, gu
  According to Rule 4 of the Common Language Specification (CLS), all compliant languages must provide a mechanism that allows access to named items that use a keyword of that language as an identifier. C#, for example, uses the @ sign as an escape mechanism in this case. However, it is still a good idea to avoid common keywords because it is much more difficult to use a method with the escape sequence than one without it.
 
 ## Using Abbreviations and Acronyms
+
  ❌ DO NOT use abbreviations or contractions as part of identifier names.
 
  For example, use `GetWindow` rather than `GetWin`.
@@ -44,6 +46,7 @@ This section describes general naming conventions that relate to word choice, gu
  ❌ DO NOT use any acronyms that are not widely accepted, and even if they are, only when necessary.
 
 ## Avoiding Language-Specific Names
+
  ✔️ DO use semantically interesting names rather than language-specific keywords for type names.
 
  For example, `GetLength` is a better name than `GetInt`.
@@ -72,6 +75,7 @@ This section describes general naming conventions that relate to word choice, gu
  ✔️ DO  use a common name, such as `value` or `item`, rather than repeating the type name, in the rare cases when an identifier has no semantic meaning and the type of the parameter is not important.
 
 ## Naming New Versions of Existing APIs
+
  ✔️ DO use a name similar to the old API when creating new versions of an existing API.
 
  This helps to highlight the relationship between the APIs.

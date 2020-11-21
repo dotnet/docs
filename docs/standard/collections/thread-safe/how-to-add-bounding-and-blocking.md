@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 4c2492de-3876-4873-b5a1-000bb404d770
 ---
 # How to: Add Bounding and Blocking Functionality to a Collection
+
 This example shows how to add bounding and blocking functionality to a custom collection class by implementing the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601?displayProperty=nameWithType> interface in the class, and then using a class instance as the internal storage mechanism for a <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType>. For more information about bounding and blocking, see [BlockingCollection Overview](blockingcollection-overview.md).  
   
 ## Example  
+
  The custom collection class is a basic priority queue in which the priority levels are represented as an array of <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType> objects. No additional ordering is performed within each queue.  
   
  In the client code, three tasks are started. The first task just polls for keyboard strokes to enable cancellation at any point during execution. The second task is the producer thread; it adds new items to the blocking collection and gives each item a priority based on a random value. The third task removes items from the collection as they become available.  

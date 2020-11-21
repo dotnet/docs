@@ -42,6 +42,7 @@ The version corresponds to the version number of all .NET Framework assemblies t
 > The runtime treats assembly names as case-insensitive when binding to an assembly, but preserves whatever case is used in an assembly name. Several tools in the Windows SDK handle assembly names as case-sensitive. For best results, manage assembly names as though they were case-sensitive.
 
 ## Name application components
+
  The runtime does not consider the file name when determining an assembly's identity. The assembly identity, which consists of the assembly name, version, culture, and strong name, must be clear to the runtime.
 
  For example, if you have an assembly called *myAssembly.exe* that references an assembly called *myAssembly.dll*, binding occurs correctly if you execute *myAssembly.exe*. However, if another application executes *myAssembly.exe* using the method <xref:System.AppDomain.ExecuteAssembly%2A?displayProperty=nameWithType>, the runtime determines that `myAssembly` is already loaded when *myAssembly.exe* requests binding to `myAssembly`. In this case, *myAssembly.dll* is never loaded. Because *myAssembly.exe* does not contain the requested type, a <xref:System.TypeLoadException> occurs.

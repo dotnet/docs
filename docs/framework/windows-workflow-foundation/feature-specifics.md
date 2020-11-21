@@ -109,7 +109,7 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 ## Data Contract Resolver
 
-In .NET 3.5, there were a few limitations in the design of known types:
+In .NET Framework 3.5, there were a few limitations in the design of known types:
 
 - Adding known types dynamically, during serialization or deserialization, was not possible.
 
@@ -259,7 +259,7 @@ A user needs to be prompted for input. Under normal circumstances, the developer
 
 ## WCF Routing Service
 
-The Routing Service is designed to be a generic software Router that allows you to control how WCF messages flow in between your clients and services. The Routing Service allows you to decouple your clients from your services, which gives you much more freedom in terms of the configurations that you can support and the flexibility you have when considering how to host your services. In .NET 3.5, clients and services were tightly coupled; a client had to know about all of the services it needed to talk to and where they were located. In addition, WCF in .NET Framework 3.5 had the following limitations:
+The Routing Service is designed to be a generic software Router that allows you to control how WCF messages flow in between your clients and services. The Routing Service allows you to decouple your clients from your services, which gives you much more freedom in terms of the configurations that you can support and the flexibility you have when considering how to host your services. In .NET Framework 3.5, clients and services were tightly coupled; a client had to know about all of the services it needed to talk to and where they were located. In addition, WCF in .NET Framework 3.5 had the following limitations:
 
 - Error handling was complex, as this logic had to be hard-coded into the client.
 

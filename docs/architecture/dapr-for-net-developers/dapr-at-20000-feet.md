@@ -21,7 +21,7 @@ This book looks at Dapr from the viewpoint of a .NET developer. In this chapter,
 
 ## What is Dapr?
 
-Imagine flying in a jet at 20,000 feet. You look out the window and see the landscape from a wide perspective. Let's do the same for Dapr. Visualize yourself flying over at Dapr at 20,000 feet. What would you see?
+Imagine flying in a jet at 20,000 feet. You look out the window and see the landscape from a wide perspective. Let's do the same for Dapr. Visualize yourself flying over Dapr at 20,000 feet. What would you see?
 
 At its core, Dapr is a `portable, event-driven runtime`. 
 

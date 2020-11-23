@@ -20,7 +20,7 @@ The result of a `with` expression has the same runtime type as the expression's 
 
 :::code language="csharp" source="snippets/with-expression/InheritanceExample.cs" :::
 
-In case of a reference-type member, only the reference to an instance is copied when a record is copied. Both the copy and original record have access to the same reference-type instance. The following example demonstrates that behavior:
+In the case of a reference-type member, only the reference to an instance is copied when a record is copied. Both the copy and original record have access to the same reference-type instance. The following example demonstrates that behavior:
 
 :::code language="csharp" source="snippets/with-expression/ExampleWithReferenceType.cs" :::
 

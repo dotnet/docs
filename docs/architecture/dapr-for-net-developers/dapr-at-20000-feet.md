@@ -167,7 +167,7 @@ This pattern is named Sidecar because it resembles a sidecar attached to a motor
 
 ### Hosting Environments
 
-Dapr can be hosted in multiple environments. It can self-host for local development. Dapr can also deploy to Kubernetes, a group of VMs, or edge environments such as Azure IoT Edge.
+Dapr has cross-platform support and can run in many different environments, such as Kubernetes, a group of VMs, or edge environments such as Azure IoT Edge.
 
 For local development, the easiest way to get started is [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted). In self-hosted mode, the microservices and accompanying Dapr sidecars run in separate local processes without a container orchestrator such as Kubernetes. To get started with self-hosted mode, [download and install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr/). 
 
@@ -179,7 +179,11 @@ Figure 2-5 shows an application and Dapr hosted in two separate memory processes
 
 By default, Dapr will install Docker containers for Redis and Zipkin to ensure that building blocks such as state management and observability work out of the box. If you don't want to install Docker on your local machine, you can even [run Dapr in self-hosted mode without any Docker containers](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). However, you must install default components such as Redis for state management and pub/sub manually. 
 
+<<<<<<< HEAD
 Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
+=======
+For production scenarios, we recommend [hosting Dapr on Kubernetes](https://docs.dapr.io/getting-started/install-dapr/#install-dapr-on-a-kubernetes-cluster). You can install Dapr on any Kubernetes cluster, such as Minikube, Azure Kubernetes Service, Google Cloud Kubernetes Engine, and Amazon Elastic Kubernetes Service. Figure 2-7 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
+>>>>>>> acea3e91ea9e6dc723bfd2e34ee7559db8e28f01
 
 ![Sidecar architecture](./media/kubernetes-hosted-dapr-sidecar.png)
 
@@ -195,9 +199,9 @@ As you've seen, Dapr exposes a sidecar architecture to decouple your application
 
 Looking at the previous figure, one might question the latency and overhead incurred for each call.  
 
-The Dapr team has invested heavily in performance. A tremendous amount of engineering effort has gone into to making Dapr efficient. Calls between Dapr sidecars are always made with gRPC, which delivers high performance and small, binary payloads. In most cases, the additional overhead should be less than 1 millisecond. 
+The Dapr team has invested heavily in performance. A tremendous amount of engineering effort has gone into making Dapr efficient. Calls between Dapr sidecars are always made with gRPC, which delivers high performance and small, binary payloads. In most cases, the additional overhead should be less than 1 millisecond. 
 
-To increase performance, developers can implement calls to Dapr building blocks with gRPC. 
+To increase performance, developers can call the Dapr building blocks with gRPC. 
 
 gRPC is a modern, high-performance framework that evolves the age-old [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol. gRPC uses HTTP/2 for its transport protocol, which provides significant performance enhancements over HTTP RESTFul service, including:
 

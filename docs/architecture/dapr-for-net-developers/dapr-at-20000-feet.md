@@ -209,7 +209,7 @@ gRPC is a modern, high-performance framework that evolves the age-old [remote pr
 
 Service mesh is another rapidly evolving technology for distributed applications. 
 
-A service mesh is a configurable infrastructure layer with built-in capabilities to handle service-to-service communication, resiliency, load balancing, and telemetry capture. It moves the responsibility for these concerns out of the services and into service mesh layer. Like Dapr, a service mesh also exposes a sidecar architecture.
+A service mesh is a configurable infrastructure layer with built-in capabilities to handle service-to-service communication, resiliency, load balancing, and telemetry capture. It moves the responsibility for these concerns out of the services and into the service mesh layer. Like Dapr, a service mesh also follows a sidecar architecture.
 
 Figure 2-8 shows an application that implements service mesh technology.
 

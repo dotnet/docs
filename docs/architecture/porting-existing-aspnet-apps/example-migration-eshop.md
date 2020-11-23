@@ -388,7 +388,7 @@ app.UseMvc(routes =>
 });
 ```
 
-**NOTE:** With ASP.NET Core 3.1 and later, this is changed to use endpoints, but for the initial port to ASP.NET Core 2.2 this is the proper syntax for mapping conventional routes.
+**NOTE:** With ASP.NET Core 3.0 and later, this is changed to use endpoints, but for the initial port to ASP.NET Core 2.2 this is the proper syntax for mapping conventional routes.
 
 With these changes in place, the `Configure` method is almost done. The original template's `app.Run` method that prints "Hello World!" should be deleted. At this point the method is as shown here:
 
@@ -413,7 +413,72 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 }
 ```
 
+Now it's time to configure MVC services, followed by the rest of the app's support for dependency injection (DI). So far, the `eShopPorted` project's `ConfigureServices` method has remained completely empty. Now it's time to start populating it.
 
+First, to get ASP.NET Core MVC to work properly, it needs to be added:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc();
+}
+```
+
+This is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call, but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment; for now let's migrate the app's dependency injection.
+
+#### Migrate dependency injection configuration
+
+The original app's `Global.asax` defines the following method, called when the app starts up:
+
+```csharp
+protected IContainer RegisterContainer()
+{
+  var builder = new ContainerBuilder();
+
+  builder.RegisterControllers(typeof(MvcApplication).Assembly);
+
+  var mockData = bool.Parse(ConfigurationManager.AppSettings["UseMockData"]);
+  builder.RegisterModule(new ApplicationModule(mockData));
+
+  var container = builder.Build();
+  DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+
+  return container;
+}
+```
+
+This code configures an [Autofac](https://autofac.org/) container, reads a config setting to determine whether real or mock data should be used, and passes this setting into an Autofac module (found in the app's `/Modules` directory). Fortunately, Autofac supports .NET Core, so the module can be migrated directly. Copy the folder into the new project and updates the class's namespace and it should compile.
+
+ASP.NET Core has built-in support for dependency injection, but you can wire up a third party container such as Autofac easily if necessary. In this case, since the app is already configured to use Autofac, the simplest solution is to maintain its usage. To do so, the `ConfigureServices` method signature must be modified to return an `IServiceProvider`, and the Autofac container instance must be configured and returned from the method.
+
+**Note:** In .NET Core 3.0 and later the process for integrating a third party DI container has changed.
+
+Part of configuring Autofac requires a call to `builder.Populate(services)`. This extension is found in the `Autofac.Extensions.DependencyInjection` NuGet package, which must be installed before the code will compile.
+
+After modifying `ConfigureServices` to configure an Autofac container, the new method is as shown here:
+
+```csharp
+public IServiceProvider ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc();
+
+    // Create Autofac container builder
+    var builder = new ContainerBuilder();
+    builder.Populate(services);
+    bool useMockData = true; // TODO: read from config
+    builder.RegisterModule(new ApplicationModule(useMockData));
+
+    ILifetimeScope container = builder.Build();
+
+    return new AutofacServiceProvider(container);
+}
+```
+
+For now, the setting for `useMockData` is set to `true`; we will read this from config in a moment. At this point, the app compiles and should load successfully when run, as shown in Figure 4-12.
+
+![Figure 4-12](media/Figure4-12.png)
+
+**Figure 4-12. Ported eShop app running locally with mock data.**
 
 - Migrate Global.asax items
   - Show migrations for CORS, filters, route constraints, etc.

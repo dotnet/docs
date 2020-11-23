@@ -17,8 +17,8 @@ Microsoft provides a range of base images for building and running .NET Core app
 
 | Image | Description |
 | ----- | ----------- |
-| [mcr.microsoft.com/dotnet/core/sdk](https://hub.docker.com/_/microsoft-dotnet-core-sdk/) | For building applications with `docker build`. Not to be used in production. |
-| [mcr.microsoft.com/dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) | Contains the runtime and ASP.NET Core dependencies. For production. |
+| [mcr.microsoft.com/dotnet/sdk](https://hub.docker.com/_/microsoft-dotnet-sdk/) | For building applications with `docker build`. Not to be used in production. |
+| [mcr.microsoft.com/dotnet/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) | Contains the runtime and ASP.NET Core dependencies. For production. |
 
 For each image, there are four variants based on different Linux distributions, distinguished by tags.
 
@@ -40,7 +40,7 @@ A Docker image is defined by a *Dockerfile*. This is a text file that contains a
 
 ```dockerfile
 # Application build steps
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0 as builder
+FROM mcr.microsoft.com/dotnet/sdk:3.0 as builder
 
 WORKDIR /src
 
@@ -51,7 +51,7 @@ RUN dotnet restore
 RUN dotnet publish -c Release -o /published src/StockData/StockData.csproj
 
 # Runtime image creation
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
+FROM mcr.microsoft.com/dotnet/aspnet:3.0
 
 # Uncomment the line below if running with HTTPS
 # ENV ASPNETCORE_URLS=https://+:443
@@ -90,7 +90,7 @@ Microsoft base images for Docker set the `ASPNETCORE_URLS` environment variable 
 
 ```dockerfile
 # Runtime image creation
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
+FROM mcr.microsoft.com/dotnet/aspnet:3.0
 
 ENV ASPNETCORE_URLS=https://+:443
 ```

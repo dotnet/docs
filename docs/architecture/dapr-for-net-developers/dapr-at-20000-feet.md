@@ -175,7 +175,7 @@ In [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted) Dapr 
 
 **Figure 2-6**. Self-hosted Dapr sidecar
 
-Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-7 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
+For production scenarios, we recommend [hosting Dapr on Kubernetes](https://docs.dapr.io/getting-started/install-dapr/#install-dapr-on-a-kubernetes-cluster). You can install Dapr on any Kubernetes cluster, such as Minikube, Azure Kubernetes Service, Google Cloud Kubernetes Engine, and Amazon Elastic Kubernetes Service. Figure 2-7 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
 
 ![Sidecar architecture](./media/kubernetes-hosted-dapr-sidecar.png)
 

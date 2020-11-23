@@ -167,7 +167,7 @@ This pattern is named Sidecar because it resembles a sidecar attached to a motor
 
 ### Hosting Environments
 
-Dapr can be hosted in multiple environments. It can self-host for local development. Dapr can also deploy to Kubernetes, a group of VMs, or edge environments such as Azure IoT Edge.
+Dapr has cross-platform support and can run in many different environments, such as Kubernetes, a group of VMs, or edge environments such as Azure IoT Edge.
 
 For local development, the easiest way to get started is [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted). In self-hosted mode, the microservices and accompanying Dapr sidecars run in separate local processes without a container orchestrator such as Kubernetes. To get started with self-hosted mode, [download and install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr/). 
 

@@ -17,19 +17,9 @@ What started as a prototype has evolved into a highly successful open-source pro
 
 This book looks at Dapr from the viewpoint of a .NET developer. In this chapter, we help you build a solid conceptual understanding of Dapr and how it works. Later on, we present practical, hands-on instruction on how to use Dapr in your applications.
 
-## What is Dapr?
-
 Imagine flying in a jet at 20,000 feet. You look out the window and see the landscape from a wide perspective. Let's do the same for Dapr. Visualize yourself flying over Dapr at 20,000 feet. What would you see?
 
-At its core, Dapr is a **portable, event-driven runtime**. 
-
- - **Portable** - You write your application code once and run it on public clouds and edge devices. With a configuration file, you specify distributed application capabilities that you wish to include in your environment. These capabilities include service invocation, state management, and publish & subscribe messaging. Later, should you move your app, you update the configuration with bindings for the new environment. Your service does not have any direct dependencies on specific implementations of the capabilities. Dapr takes care of that for you.
-
-  - **Event-driven** - Dapr supports event-driven resource binding and pub-sub messaging capabilities. You can receive events from or sends events to external resources, such as datastores, streaming services, or web hooks. You can also use message brokers to publish and subscribe to events - with minimal code and, again, no direct dependency on a specific implementation.
-
- - **Runtime** - Dapr exposes a runtime engine that runs your services - whatever the programming platform. For example, Dotnet Core is a runtime engine - you run services within it. Dapr is *also* a runtime engine. You invoke the Dapr runtime and instruct it to start the dotnet runtime. Under the hood, Dapr implements a distributed runtime* by operating along side with your application using a sidecar architecture. More about *sidecars* coming up.
-
-## What does Dapr solve?
+## Dapr and the problem it solves?
 
 Dapr addresses a large challenge inherent in modern distributed applications: **Complexity**. 
 
@@ -148,8 +138,6 @@ Perhaps you start with Azure Redis Cache as your state store. You specify it wit
 
 Note that in the `spec` section, you configure Dapr to use the Redis Cache for state management. The section also contains component specific metadata. In this case, you can use it to configure additional Redis settings.
 
-Dapr configuration files closely resemble Kubernetes manifest files. They follow the Kubernetes [custom resource definition](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/) format. Essentially, they define a policy that affects how a building block behaves. You can dymamically update these definitions to bind to different resources without stopping the application.
-
 At a later time, the application is ready to go to production. For the production environment, you may want to change your state management to Azure Table Storage. Azure Table Storage provides state management capabilities that are affordable and highly durable.
 
 At the time of this writing, the following component types are provided by Dapr:
@@ -176,19 +164,6 @@ Dapr exposes its building blocks and components through a [sidecar architecture]
 
 This pattern is named Sidecar because it resembles a sidecar attached to a motorcycle. In the previous figure, note how the Dapr sidecar is attached to your service to provide distributed application capabilities. 
 
-Figure 2-5 shows an example of a Dapr sidecar for state management.
-
-![Sidecar architecture](./media/sidecar-state-mgmt.png)
-
-**Figure 2-5**. Sidecar architecture for state management.
-
-In this scenario, the search service, on the left, needs to manage application state with a state store. Note how the search service runs within its own process. It contains a YAML-based configuration file specifying the state store implementation it wishes to consume from Dapr.
-
-The Dapr runtime on the right exposes a State Management building block exposed as a side car. The YAML configuration specifies the exact state management component to use. 
-
-In the middle, note how the search service and Dapr are decoupled and communicate via HTTP or gRPC.
-
-It's important to understand that the search service has no direct dependencies to underlying state store. Instead it consumes the Dapr State Management building block, exposed as a stand-alone sidecar service. The building block is then responsible for calling into state store component. 
 
 ### Hosting Environments
 
@@ -230,7 +205,7 @@ gRPC is a modern, high-performance framework that evolves the age-old [remote pr
 
 Service mesh is another rapidly evolving technology for distributed applications. 
 
-A service mesh is a configurable infrastructure layer with built-in capabilities to handle service-to-service communication, resiliency, load balancing, and telemetry capture. It moves the responsibility for these concerns out of the microservices and into service mesh layer. Like Dapr, a service mesh also exposes a sidecar architecture.
+A service mesh is a configurable infrastructure layer with built-in capabilities to handle service-to-service communication, resiliency, load balancing, and telemetry capture. It moves the responsibility for these concerns out of the services and into service mesh layer. Like Dapr, a service mesh also exposes a sidecar architecture.
 
 Figure 2-8 shows an application that implements service mesh technology.
 
@@ -238,7 +213,7 @@ Figure 2-8 shows an application that implements service mesh technology.
 
 **Figure 2-8**. Service mesh with a side car.
 
-Note in the previous figure how messages are intercepted by a proxy that runs alongside each microservice. Each proxy can be configured with traffic rules specific to the microservice. It understands messages and can route them across your services and the outside world.
+Note in the previous figure how messages are intercepted by a proxy that runs alongside each service. Each proxy can be configured with traffic rules specific to the service. It understands messages and can route them across your services and the outside world.
 
 So the question becomes, "Is Dapr a service mesh?"
 

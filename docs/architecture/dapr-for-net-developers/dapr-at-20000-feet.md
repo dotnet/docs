@@ -23,7 +23,7 @@ Imagine flying in a jet at 20,000 feet. You look out the window and see the land
 
 Dapr addresses a large challenge inherent in modern distributed applications: **Complexity**. 
 
-Through an architecture of pluggable components, Dapr helps simplify plumbing concerns. It enables your services to bind to distributed application capabilities. The runtime provides a **dynamic glue** that fuses your application with these capabilities *without* adding tightly coupled dependencies on infrastructure such as databases and message brokers. For example, your application may require a state store. You could write custom code to target Redis Cache and inject it into your service at runtime. However, Dapr greatly simplifies your experience by providing you with an abstraction out-of-the-box. You instruct your service to invoke a Dapr **building block** that dynamically binds to Redis Cache via a configuration. With this model, your service delegates the call to Dapr, which calls Redis on your behalf. Your service has no SDK, library, or direct reference to Redis. You code against the common Dapr state management API, not the Redis Cache API.
+Through an architecture of pluggable components, Dapr helps simplify plumbing concerns. It enables your services to bind to distributed application capabilities. The runtime provides a **dynamic glue** that fuses your application with these capabilities. It does so *without* adding tightly coupled dependencies on infrastructure such as databases and message brokers. For example, your application may require a state store. You could write custom code to target Redis Cache and inject it into your service at runtime. However, Dapr greatly simplifies your experience by providing you with an abstraction out-of-the-box. You instruct your service to invoke a Dapr **building block** that dynamically binds to Redis Cache via a configuration. With this model, your service delegates the call to Dapr, which calls Redis on your behalf. Your service has no SDK, library, or direct reference to Redis. You code against the common Dapr state management API, not the Redis Cache API.
 
 Figure 2-1 shows Dapr from 20,000 feet.
 
@@ -136,7 +136,7 @@ Perhaps you start with Azure Redis Cache as your state store. You specify it wit
        value: <bool> # Optional. Allowed: true, false.
    ```   
 
-Note that in the **spec** section, you configure Dapr to use the Redis Cache for state management. The section also contains component specific metadata. In this case, you can use it to configure additional Redis settings.
+In the **spec** section, you configure Dapr to use the Redis Cache for state management. The section also contains component-specific metadata. In this case, you can use it to configure additional Redis settings.
 
 At a later time, the application is ready to go to production. For the production environment, you may want to change your state management to Azure Table Storage. Azure Table Storage provides state management capabilities that are affordable and highly durable.
 
@@ -167,9 +167,9 @@ This pattern is named Sidecar because it resembles a sidecar attached to a motor
 
 ### Hosting Environments
 
-Dapr has cross-platform support and can run in many different environments, such as Kubernetes, a group of VMs, or edge environments such as Azure IoT Edge.
+Dapr has cross-platform support and can run in many different environments. These environments include Kubernetes, a group of VMs, or edge environments such as Azure IoT Edge.
 
-For local development, the easiest way to get started is [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted). In self-hosted mode, the microservices and accompanying Dapr sidecars run in separate local processes without a container orchestrator such as Kubernetes. To get started with self-hosted mode, [download and install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr/). 
+For local development, the easiest way to get started is [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted). In self-hosted mode, the microservices and Dapr sidecars run in separate local processes without a container orchestrator such as Kubernetes. To get started with self-hosted mode, [download and install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr/). 
 
 Figure 2-5 shows an application and Dapr hosted in two separate memory processes communicating via HTTP or gRPC.
 
@@ -177,13 +177,9 @@ Figure 2-5 shows an application and Dapr hosted in two separate memory processes
 
 **Figure 2-5**. Self-hosted Dapr sidecar
 
-By default, Dapr will install Docker containers for Redis and Zipkin to ensure that building blocks such as state management and observability work out of the box. If you don't want to install Docker on your local machine, you can even [run Dapr in self-hosted mode without any Docker containers](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). However, you must install default components such as Redis for state management and pub/sub manually. 
+By default, Dapr will install Docker containers for Redis and Zipkin to ensure building blocks such as state management and observability work out of the box. If you don't want to install Docker on your local machine, you can even [run Dapr in self-hosted mode without any Docker containers](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). However, you must install default components such as Redis for state management and pub/sub manually. 
 
-<<<<<<< HEAD
-Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
-=======
-For production scenarios, we recommend [hosting Dapr on Kubernetes](https://docs.dapr.io/getting-started/install-dapr/#install-dapr-on-a-kubernetes-cluster). You can install Dapr on any Kubernetes cluster, such as Minikube, Azure Kubernetes Service, Google Cloud Kubernetes Engine, and Amazon Elastic Kubernetes Service. Figure 2-7 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
->>>>>>> Update docs/architecture/dapr-for-net-developers/dapr-at-20000-feet.md
+For production scenarios, we recommend [hosting Dapr on Kubernetes](https://docs.dapr.io/getting-started/install-dapr/#install-dapr-on-a-kubernetes-cluster). You can install Dapr on any Kubernetes cluster, such as Minikube, Azure Kubernetes Service, Google Cloud Kubernetes Engine, and Amazon Elastic Kubernetes Service. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
 
 ![Sidecar architecture](./media/kubernetes-hosted-dapr-sidecar.png)
 

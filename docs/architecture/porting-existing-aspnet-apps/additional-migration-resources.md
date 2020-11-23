@@ -1,6 +1,6 @@
 ---
 title: Additional migration resources
-description: What deployment strategies can teams use while migrating from ASP.NET to ASP.NET Core? Can an incremental migration allow side-by-side deployment of .NET Framework and .NET Core apps, providing a seamless end user experience?
+description: Where can teams find resources to help as they port their .NET Framework apps to .NET Core?
 author: ardalis
 ms.date: 11/13/2020
 ---
@@ -11,7 +11,7 @@ As you're planning and executing your migration from ASP.NET MVC and/or Web API 
 
 ## Official documentation
 
-The official documentation website, [docs.microsoft.com](https://docs.microsoft.com/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to documentation. For any problem you're facing, it's worth searching the documentation to see if there's already information there covering the issue and offering a solution or workaround.
+The official documentation website, [docs.microsoft.com](https://docs.microsoft.com/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to docs articles, but for any problem you're facing it's often worth at least doing a quick search of the docs to see if there is already information there covering the issue and offering a solution or workaround.
 
 ## GitHub
 

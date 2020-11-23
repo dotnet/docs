@@ -13,7 +13,7 @@
         - name: Strategies for migrating incrementally
           href: incremental-migration-strategies.md
         - name: Strategies for migrating ASP.NET Web Forms apps
-          href: migrating-web-forms.md
+          href: migrate-web-forms.md
         - name: Deployment strategies
           href: deployment-strategies.md
         - name: Additional migration resources
@@ -52,7 +52,7 @@
         - name: Testing differences
           href: testing-differences.md
     - name: Migrate large solutions
-      href: migrating-large-solutions.md
+      href: migrate-large-solutions.md
       items:
         - name: Identify sequence of projects to migrate
           href: identify-migration-sequence.md
@@ -64,12 +64,5 @@
       href: example-migration-eshop.md
     - name: Deployment scenarios
       href: deployment-scenarios.md
-    - name: Case studies
-      href: case-studies.md
-      items:
-        - name: DasBlog to Core case study
-          href: dasblog-core-case-study.md
-        - name: Stack Overflow case study
-          href: stack-overflow-case-study.md
     - name: Summary
       href: summary.md

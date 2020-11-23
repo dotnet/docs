@@ -1,6 +1,6 @@
 ---
 title: Example migration of eShop to ASP.NET Core
-description: 
+description: A walkthrough of a migrating an existing ASP.NET MVC app to ASP.NET Core, using a sample online store app as a reference.
 author: ardalis
 ms.date: 11/13/2020
 ---

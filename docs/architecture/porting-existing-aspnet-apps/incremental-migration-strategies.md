@@ -27,4 +27,4 @@ By the time the application is running on .NET Core 3.1, migrating to the curren
 
 >[!div class="step-by-step"]
 >[Previous](choose-net-core-version.md)
->[Next](migrating-web-forms.md)
+>[Next](migrate-web-forms.md)

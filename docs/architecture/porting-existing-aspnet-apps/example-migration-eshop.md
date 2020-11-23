@@ -480,16 +480,67 @@ For now, the setting for `useMockData` is set to `true`; we will read this from 
 
 **Figure 4-12. Ported eShop app running locally with mock data.**
 
-- Migrate Global.asax items
-  - Show migrations for CORS, filters, route constraints, etc.
-  - Show how to configure MVC with binders, formatters, areas, DI
-- Migrate DI (if present previously)
-  - Integrating Autofac with eShop and updating it for .NET Core
-- Migrate configuration (web.config to appsettings.json etc.)
-  - Show strategies to co-exist old and new config especially if needed by dependent (.NET Standard) libraries
-  - Update framework features that depended on configuration (WCF client, tracing) to be configured in code instead
+#### Migrate appSettings
+
+ASP.NET Core uses a new [configuration system](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2), which by default leverages an `appSettings.json` file. By using `CreateDefaultBuilder` in `Program.cs`, the default configuration is already set up in the app. To get access to config, classes just need to request it in their constructor, and the `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, simply request an instance of `IConfiguration` from its constructor:
+
+```csharp
+public Startup(IConfiguration configuration)
+{
+  Configuration = configuration;
+}
+
+public IConfiguration Configuration { get; }
+```
+
+The original app referenced its settings using `ConfigurationManager.AppSettings`, so a quick search for all references of this term yields the set of settings the new app needs. There are only two:
+
+- UseMockData
+- UseCustomizationData
+
+If your app has more complex configuration, especially if it's using custom configuration sections, you will probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [Options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.2). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
+
+First, modify the ported app's `appsettings.json` file and add the two settings in the root:
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "UseMockData": "true",
+  "UseCustomizationData" :  "true"
+}
+```
+
+Now, modify `ConfigureServices` to access the `UseMockData` setting from the `Configuration` property (where previously we set the value to `true`):
+
+```csharp
+  bool useMockData = Configuration.GetValue<bool>("UseMockData");
+```
+
+At this point the setting is pulled from configuration. The other settings, "UseCustomizationData", is used by the `CatalogDBInitializer` class. When we first ported this class, we commented out the access to `ConfigurationManager.AppSettings["UseCustomizationData"]`. Now it's time to modify it to use ASP.NET Core configuration. Modify the constructor of `CatalogDBInitializer` as follows:
+
+```csharp
+  // add using Microsoft.Extensions.Configuration
+  public CatalogDBInitializer(CatalogItemHiLoGenerator indexGenerator,
+      IConfiguration configuration)
+  {
+      this.indexGenerator = indexGenerator;
+      useCustomizationData = configuration.GetValue<bool>("UseCustomizationData");
+  }
+```
+
+All access to configuration within the web app should be modified in this manner to use the new `IConfiguration` type. Dependencies that require access to .NET Framework configuration can include such settings in an `app.config` file added to the web project. The dependent projects can work with `ConfigurationManager` to access settings, and should not require any changes if they already use this approach. However, since ASP.NET Core apps run as their own executable, they don't reference `web.config` but rather `app.config`. By migrating settings from the legacy app's `web.config` file to a new `app.config` file in the ASP.NET Core app, components that use `ConfigurationManager` to access their settings will continue to function properly.
+
+The app's migration is nearly complete - the only thing remaining is to configure data access.
   
 ## Data access considerations
+
+ASP.NET Core apps running on .NET Framework can continue to leverage Entity Framework. If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
+
 
 - Data access with EF
   - Migrating EF6 as-is
@@ -498,6 +549,14 @@ For now, the setting for `useMockData` is set to `true`; we will read this from 
 - Discuss other data providers
 
 ## Fix all TODO tasks
+
+
+## Additional MVC Customizations
+
+  - Show migrations for CORS, filters, route constraints, etc.
+  - Show how to configure MVC with binders, formatters, areas, DI
+
+  - Update framework features that depended on configuration (WCF client, tracing) to be configured in code instead
 
 ## References
 

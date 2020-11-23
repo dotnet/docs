@@ -2,7 +2,6 @@
 title: How to use character encoding classes in .NET
 description: Learn how to use character encoding classes in .NET.
 ms.date: "12/22/2017"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"

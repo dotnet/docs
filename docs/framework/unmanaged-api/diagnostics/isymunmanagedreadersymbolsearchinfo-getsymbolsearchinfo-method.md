@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo Method
+
 Gets symbol search information.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetSymbolSearchInfo(
 ```  
   
 ## Parameters  
+
  `cSearchInfo`  
  [in] A `ULONG32` that indicates the size of `rgpSearchInfo`.  
   
@@ -40,9 +42,11 @@ HRESULT GetSymbolSearchInfo(
  [out] A pointer that is set to the returned [ISymUnmanagedSymbolSearchInfo](isymunmanagedsymbolsearchinfo-interface.md) interface.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

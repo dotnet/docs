@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # EClrEvent Enumeration
+
 Describes the common language runtime (CLR) events for which the host can register callbacks.  
   
 ## Syntax  
@@ -39,6 +40,7 @@ typedef enum {
 |`Event_StackOverflow`|Specifies that a stack overflow error has occurred.|  
   
 ## Remarks  
+
  The host can register callbacks for any of the event types described by `EClrEvent` by calling methods of the [ICLROnEventManager](iclroneventmanager-interface.md) interface. The host gets a pointer to this interface by calling the [ICLRControl::GetCLRManager](iclrcontrol-getclrmanager-method.md) method.  
   
  The `Event_CLRDisabled` and `Event_DomainUnload` events can be raised more than once and from different threads to signal an unload or the disabling of the CLR.  
@@ -46,6 +48,7 @@ typedef enum {
  The `Event_MDAFired` event raises the creation of an [MDAInfo](mdainfo-structure.md) instance that contains the details of the MDA message. For more information about MDAs, see [Diagnosing Errors with Managed Debugging Assistants](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

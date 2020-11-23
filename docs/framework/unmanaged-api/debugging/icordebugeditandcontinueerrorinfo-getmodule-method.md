@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEditAndContinueErrorInfo::GetModule Method
+
 `GetModule` is obsolete. Do not call this method.  
   
 ## See also

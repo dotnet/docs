@@ -109,6 +109,7 @@ A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xre
 Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
 
 ## Serialization behavior
+
 ::: zone pivot="dotnet-5-0"
 
 * By default, all public properties are serialized. You can [specify properties to ignore](#ignore-properties).

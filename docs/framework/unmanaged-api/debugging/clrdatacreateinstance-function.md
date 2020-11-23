@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # CLRDataCreateInstance Function
+
 Creates an interface object for the specified target item.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT CLRDataCreateInstance (
 ```  
   
 ## Parameters  
+
  `iid`  
  [in] The identifier of the interface to be instantiated.  
   
@@ -40,9 +42,11 @@ HRESULT CLRDataCreateInstance (
  [out] A pointer to the address of the returned interface object.  
   
 ## Remarks  
+
  The `ICLRDataTarget` object is implemented by the writer of the debugging application. The implementation depends on the type of target item being represented. The target item may be a process, memory dump, remote machine, and so on.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl  

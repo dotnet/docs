@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # FunctionEnter2 Function
+
 Notifies the profiler that control is being passed to a function and provides information about the stack frame and function arguments. This function supersedes the [FunctionEnter](functionenter-function.md) function.  
   
 ## Syntax  
@@ -52,6 +53,7 @@ void __stdcall FunctionEnter2 (
   In order to access argument information, the `COR_PRF_ENABLE_FUNCTION_ARGS` flag must be set. The profiler can use the [ICorProfilerInfo::SetEventMask](icorprofilerinfo-seteventmask-method.md) method to set the event flags.
 
 ## Remarks  
+
  The values of the `func` and `argumentInfo` parameters are not valid after the `FunctionEnter2` function returns because the values may change or be destroyed.  
   
  The `FunctionEnter2` function is a callback; you must implement it. The implementation must use the `__declspec`(`naked`) storage-class attribute.  
@@ -67,6 +69,7 @@ void __stdcall FunctionEnter2 (
  Also, the `FunctionEnter2` function must not call into managed code or in any way cause a managed memory allocation.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

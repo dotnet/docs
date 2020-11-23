@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter::DefineGlobalVariable Method
+
 Defines a single global variable.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT DefineGlobalVariable(
 ```  
   
 ## Parameters  
+
  `name`  
  [in] A pointer to a `WCHAR` that defines the global variable name.  
   
@@ -59,9 +61,11 @@ HRESULT DefineGlobalVariable(
  [in] The third address for the parameter specification.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

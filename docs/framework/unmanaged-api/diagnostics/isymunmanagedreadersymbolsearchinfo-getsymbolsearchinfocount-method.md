@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount Method
+
 Gets a count of symbol search information.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT GetSymbolSearchInfoCount(
 ```  
   
 ## Parameters  
+
  `pcSearchInfo`  
  ]out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the search information.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

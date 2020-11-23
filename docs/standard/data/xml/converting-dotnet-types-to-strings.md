@@ -1,7 +1,6 @@
 ---
 title: "Converting .NET Types to Strings"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: dc2e2b65-f623-4dc3-938b-d2a054d6832c
 ---
 # Convert .NET types to strings

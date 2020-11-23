@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7c036772-d58a-47f1-a5fa-31779898ef0d
 ---
 # ICorDebugLoadedModule::GetBaseAddress Method
+
 Gets the base address of the loaded module.  
   
 ## Syntax  
@@ -15,6 +16,7 @@ HRESULT GetBaseAddress(
 ```  
   
 ## Parameters  
+
  `pAddress`  
  [out] A pointer to the base address of the loaded module.  
   
@@ -24,6 +26,7 @@ HRESULT GetBaseAddress(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

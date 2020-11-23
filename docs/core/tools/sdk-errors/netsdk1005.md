@@ -10,7 +10,7 @@ f1_keywords:
 ---
 # NETSDK1005 and NETSDK1047: Asset file is missing target
 
-**This article applies to:** ✔️ .NET 2.1.100 SDK and later versions
+**This article applies to:** ✔️ .NET Core 2.1.100 SDK and later versions
 
 When the .NET SDK issues error NETSDK1005 or NETSDK1047, the project's assets file is missing information on one of your target frameworks. This can usually be fixed by ensuring that restore is run and that the missing target value is included in the `TargetFrameworks` property of your project.
 

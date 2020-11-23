@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IReferenceIdentity Interface
+
 Represents a reference to the unique signature of a code object.  
   
 ## Methods  
@@ -28,6 +29,7 @@ Represents a reference to the unique signature of a code object.
 |`IReferenceIdentity::SetAttribute`|Sets the attribute that has the specified namespace and the specified name to the specified value.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  

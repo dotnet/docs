@@ -133,7 +133,7 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new
   items:
-  - name: What's new in .NET 5
+  - name: What's new in .NET 5.0
     href: ../core/dotnet-five.md
   - name: What's new in .NET Core 3.1
     href: ../core/whats-new/dotnet-core-3-1.md
@@ -372,8 +372,30 @@ items:
       href: ../core/diagnostics/debug-linux-dumps.md
     - name: EventCounters
       href: ../core/diagnostics/event-counters.md
+    - name: EventPipe
+      href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
       href: ../core/diagnostics/logging-tracing.md
+    - name: Runtime Events
+      items:
+      - name: Overview
+        href: ../fundamentals/diagnostics/runtime-events.md
+      - name: Contention Events
+        href: ../fundamentals/diagnostics/runtime-contention-events.md
+      - name: Exception Events
+        href: ../fundamentals/diagnostics/runtime-exception-events.md
+      - name: Garbage Collection Events
+        href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
+      - name: Interop Events
+        href: ../fundamentals/diagnostics/runtime-interop-events.md
+      - name: Loader and Binder Events
+        href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
+      - name: Method Events
+        href: ../fundamentals/diagnostics/runtime-method-events.md
+      - name: ThreadPool Events
+        href: ../fundamentals/diagnostics/runtime-thread-events.md
+      - name: Type System Events
+        href: ../fundamentals/diagnostics/runtime-type-events.md
     - name: Collect diagnostics in containers
       href: ../core/diagnostics/diagnostics-in-containers.md
     - name: .NET Core CLI global tools
@@ -392,6 +414,8 @@ items:
         href: ../core/diagnostics/dotnet-sos.md
     - name: .NET Core diagnostics tutorials
       items:
+      - name: Collect performance trace in Linux with PerfCollect
+        href: ../core/diagnostics/trace-perfcollect-lttng.md
       - name: Get perf metrics with EventCounters
         href: ../core/diagnostics/event-counter-perf.md
       - name: Debug a memory leak
@@ -1590,8 +1614,6 @@ items:
         href: ../standard/serialization/how-to-chunk-serialized-data.md
       - name: "How to: Determine if a .NET Standard object is serializable"
         href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
-      - name: Sample
-        href: ../standard/serialization/basic-serialization-technology-sample.md
     - name: XML and SOAP serialization
       items:
       - name: Overview

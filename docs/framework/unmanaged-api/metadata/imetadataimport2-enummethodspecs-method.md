@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport2::EnumMethodSpecs Method
+
 Gets an enumerator for an array of MethodSpec tokens associated with the specified MethodDef or MemberRef token.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT EnumMethodSpecs (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator for `rMethodSpecs`.  
   
@@ -55,6 +57,7 @@ HRESULT EnumMethodSpecs (
 |`S_FALSE`|`phEnum` has no member elements. In this case, `pcMethodSpecs` is set to 0 (zero).|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IGCHost Interface
+
 Provides methods for obtaining information about the garbage collection system and for controlling some aspects of garbage collection.  
   
 > [!NOTE]
@@ -35,6 +36,7 @@ Provides methods for obtaining information about the garbage collection system a
 |[SetVirtualMemLimit Method](igchost-setvirtualmemlimit-method.md)|Sets the maximum size of the runtime's virtual memory.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  

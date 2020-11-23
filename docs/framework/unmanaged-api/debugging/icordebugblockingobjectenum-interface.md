@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugBlockingObjectEnum Interface
+
 Provides an enumerator for a list of [CorDebugBlockingObject](cordebugblockingobject-structure.md) structures. This interface is a subclass of the ICorDebugEnum interface.  
   
 ## Methods  
@@ -25,12 +26,14 @@ Provides an enumerator for a list of [CorDebugBlockingObject](cordebugblockingob
 |[Next Method](icordebugblockingobjectenum-next-method.md)|Enumerates through a list of [CorDebugBlockingObject](cordebugblockingobject-structure.md) structures.|  
   
 ## Remarks  
+
  Each `CorDebugBlockingObject` structure represents an object that is blocking a thread.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

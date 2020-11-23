@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # LockClrVersion Function
+
 Allows the host to determine which version of the common language runtime (CLR) will be used within the process before explicitly initializing the CLR.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -32,6 +33,7 @@ HRESULT LockClrVersion (
 ```  
   
 ## Parameters  
+
  `hostCallback`  
  [in] The function to be called by the CLR upon initialization.  
   
@@ -42,6 +44,7 @@ HRESULT LockClrVersion (
  [in] The function to be called by the host to inform the CLR that initialization is complete.  
   
 ## Return Value  
+
  This method returns standard COM error codes, as defined in WinError.h, in addition to the following values.  
   
 |Return code|Description|  
@@ -50,6 +53,7 @@ HRESULT LockClrVersion (
 |E_INVALIDARG|One or more of the arguments is null.|  
   
 ## Remarks  
+
  The host calls `LockClrVersion` before initializing the CLR. `LockClrVersion` takes three parameters, all of which are callbacks of type [FLockClrVersionCallback](flockclrversioncallback-function-pointer.md). This type is defined as follows.  
   
 ```cpp  
@@ -77,6 +81,7 @@ typedef HRESULT ( __stdcall *FLockClrVersionCallback ) ();
  All the calls from `pBeginHostSetup` to `pEndHostSetup` must occur on a single thread or fiber, with the same logical stack. This thread can be different from the thread upon which `hostCallback` is called.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

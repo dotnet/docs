@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRDataTarget::SetTLSValue Method
+
 Sets a value in the thread local storage (TLS) of the specified thread in the target process. This method is called by the common language runtime (CLR) data access services.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetTLSValue (
 ```  
   
 ## Parameters  
+
  `threadID`  
  [in] The operating system identifier of a thread in the target process.  
   
@@ -40,9 +42,11 @@ HRESULT SetTLSValue (
  [in] A `CLRDATA_ADDRESS` value that specifies the value to place in the given TLS location.  
   
 ## Remarks  
+
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugArrayValue::GetElementAtPosition Method
+
 Gets the element at the given position, treating the array as a zero-based, single-dimensional array.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetElementAtPosition (
 ```  
   
 ## Parameters  
+
  `nPosition`  
  [in] The position of the element to be retrieved.  
   
@@ -36,9 +38,11 @@ HRESULT GetElementAtPosition (
  [out] A pointer to the address of an ICorDebugValue object that represents the value of the element.  
   
 ## Remarks  
+
  The layout of a multi-dimension array follows the C++ style of array layout.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

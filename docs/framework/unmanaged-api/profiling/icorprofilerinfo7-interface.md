@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: cf37c462-73c5-412a-a7f8-bb26ca746313
 ---
 # ICorProfilerInfo7 Interface
+
 [Supported in the .NET Framework 4.6.1 and later versions]  
   
  A subclass of [ICorProfilerInfo6](icorprofilerinfo6-interface.md) that provides a method to apply newly defined metadata to a module and that provides access to an in-memory symbol stream.  
@@ -17,6 +18,7 @@ ms.assetid: cf37c462-73c5-412a-a7f8-bb26ca746313
 |[ReadInMemorySymbols](icorprofilerinfo7-readinmemorysymbols.md)|Reads bytes from an in-memory symbol stream.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

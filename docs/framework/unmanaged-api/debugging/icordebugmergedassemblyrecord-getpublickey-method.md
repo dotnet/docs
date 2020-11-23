@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6f4e78ba-082b-489d-8b58-4c35fbcc7a5b
 ---
 # ICorDebugMergedAssemblyRecord::GetPublicKey Method
+
 Gets the assembly's public key.  
   
 ## Syntax  
@@ -16,6 +17,7 @@ HRESULT GetPublicKey(
 ```  
   
 ## Parameters  
+
  `cbPublicKey`  
  [in] The maximum number of bytes in the `pbPublicKey` array.  
   
@@ -31,6 +33,7 @@ HRESULT GetPublicKey(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

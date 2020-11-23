@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedVariable::GetName Method
+
 Gets the name of this variable.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetName(
 ```  
   
 ## Parameters  
+
  `cchName`  
  [in] The length of the buffer that the `pcchName` parameter points to.  
   
@@ -40,9 +42,11 @@ HRESULT GetName(
  [out] The buffer that stores the name.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::Save Method
+
 Saves all metadata in the current scope to the file at the specified address.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT Save (
 ```  
   
 ## Parameters  
+
  `wzFile`  
  [in] The name of the file to save to. If this value is null, the in-memory copy will be saved to the last location that was used.  
   
@@ -36,6 +38,7 @@ HRESULT Save (
  [in] Reserved. Must be zero.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataError::OnError Method
+
 Provides notification of errors that occur during the metadata merge.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT OnError (
 ```  
   
 ## Parameters  
+
  `hrError`  
  [in] The HRESULT error value returned to the calling method.  
   
@@ -36,6 +38,7 @@ HRESULT OnError (
  [in] The metadata token of the code object that was being merged when the error occurred.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

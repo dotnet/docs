@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSecurityManager::SetThreadToken Method
+
 Sets a handle for the currently executing thread.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetThreadToken (
 ```  
   
 ## Parameters  
+
  `hToken`  
  [in] A handle to the token to set for the currently executing thread.  
   
@@ -43,11 +45,13 @@ HRESULT SetThreadToken (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  `IHostSecurityManager::SetThreadToken` behaves similarly to the corresponding Win32 function of the same name, except that the Win32 function allows the caller to pass in a handle to an arbitrary thread, while `IHostSecurityManager::SetThreadToken` can associate a token only with the currently executing thread.  
   
  The `HANDLE` type is not COM-compliant; that is, its size is specific to an operating system and it requires custom marshaling. Thus, this token is for use only within the process, between the CLR and the host.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

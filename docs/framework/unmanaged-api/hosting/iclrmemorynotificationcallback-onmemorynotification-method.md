@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMemoryNotificationCallback::OnMemoryNotification Method
+
 Notifies the common language runtime (CLR) of the memory load on the computer.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT OnMemoryNotification (
 ```  
   
 ## Parameters  
+
  `eMemoryAvailable`  
  [in] One of the [EMemoryAvailable](ememoryavailable-enumeration.md) values, indicating the memory pressure the computer is currently experiencing.  
   
@@ -43,12 +45,14 @@ HRESULT OnMemoryNotification (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The CLR registers a callback to `OnMemoryNotification` by using a call to the [IHostMemoryManager::RegisterMemoryNotificationCallback](ihostmemorymanager-registermemorynotificationcallback-method.md) method. The runtime uses the information returned in the callback to free additional memory when the host reports that memory resources are running low.  
   
 > [!NOTE]
 > Calls to `OnMemoryNotification` never block. They always return immediately.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

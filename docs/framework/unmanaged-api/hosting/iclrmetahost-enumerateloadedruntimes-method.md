@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMetaHost::EnumerateLoadedRuntimes Method
+
 Returns an enumeration that includes a valid [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface pointer for each version of the common language runtime (CLR) that is loaded in a given process. This method supersedes the [GetVersionFromProcess](getversionfromprocess-function.md) function.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT EnumerateLoadedRuntimes (
 ```  
   
 ## Parameters  
+
  `hndProcess`  
  [in] The handle of the process to inspect for loaded runtimes.  
   
@@ -36,6 +38,7 @@ HRESULT EnumerateLoadedRuntimes (
  [out] An <xref:Microsoft.VisualStudio.OLE.Interop.IEnumUnknown> enumeration of [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interfaces corresponding to each CLR that is loaded by the process.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -44,9 +47,11 @@ HRESULT EnumerateLoadedRuntimes (
 |E_POINTER|`ppEnumerator` is null.|  
   
 ## Remarks  
+
  This method is lists all loaded runtimes, even if they were loaded with deprecated functions such as [CorBindToRuntime](corbindtoruntime-function.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

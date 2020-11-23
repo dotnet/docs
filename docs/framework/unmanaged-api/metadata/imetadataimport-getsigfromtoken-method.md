@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetSigFromToken Method
+
 Gets the binary metadata signature associated with the specified token.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetSigFromToken (
 ```  
   
 ## Parameters  
+
  `mdSig`  
  [in] The token to return the binary metadata signature for.  
   
@@ -40,6 +42,7 @@ HRESULT GetSigFromToken (
  [out] The size in bytes of the binary metadata signature.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

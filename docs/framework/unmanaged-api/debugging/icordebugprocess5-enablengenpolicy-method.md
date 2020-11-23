@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess5::EnableNGENPolicy Method
+
 Sets a value that determines how an application loads native images while running under a managed debugger.  
   
 ## Syntax  
@@ -28,15 +29,18 @@ HRESULT EnableNGENPolicy(
 ```  
   
 ## Parameters  
+
  `ePolicy`  
  [in] A [CorDebugNGenPolicy](cordebugngenpolicy-enumeration.md) constant that determines how an application loads native images while running under a managed debugger.  
   
 ## Remarks  
+
  If the policy is set successfully, the method returns `S_OK`. If `ePolicy` is outside the range of the enumerated values defined by [CorDebugNGenPolicy](cordebugngenpolicy-enumeration.md), the method returns `E_INVALIDARG` and the method call has no effect. If the policy of the Native Image Generator (Ngen.exe) cannot be updated, the method returns `E_FAIL`.  
   
  The `ICorDebugProcess5::EnableNGenPolicy` method can be called at any time during the lifetime of the process. The policy is in effect for any modules that are loaded after the policy is set.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

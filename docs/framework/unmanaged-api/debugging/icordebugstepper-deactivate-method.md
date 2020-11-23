@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStepper::Deactivate Method
+
 Causes this ICorDebugStepper to cancel the last step command that it received.  
   
 ## Syntax  
@@ -26,9 +27,11 @@ HRESULT Deactivate ();
 ```  
   
 ## Remarks  
+
  A new stepping command may be issued after the most recently received step command has been canceled.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

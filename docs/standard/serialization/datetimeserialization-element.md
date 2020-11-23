@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 90fda55c-7730-41e9-bc4b-6423a4b920af
 ---
 # \<dateTimeSerialization> Element
+
 Determines the serialization mode of <xref:System.DateTime> objects.  
   
  \<configuration>  
@@ -23,6 +24,7 @@ Determines the serialization mode of <xref:System.DateTime> objects.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -32,6 +34,7 @@ Determines the serialization mode of <xref:System.DateTime> objects.
 |`mode`|Optional. Specifies the serialization mode. Set to one of the <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode> values. The default is **RoundTrip**.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

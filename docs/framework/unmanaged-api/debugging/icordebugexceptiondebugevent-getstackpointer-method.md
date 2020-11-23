@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d8f66a1c-16be-4264-afc5-bc2dfbb4a682
 ---
 # ICorDebugExceptionDebugEvent::GetStackPointer Method
+
 Gets the stack pointer for this exception debug event.  
   
 ## Syntax  
@@ -15,10 +16,12 @@ HRESULT GetStackPointer(
 ```  
   
 ## Parameters  
+
  `pStackPointer`  
  [out] A pointer to the address of the stack pointer for this exception debug event. See the Remarks section for more information.  
   
 ## Remarks  
+
  The meaning of this stack pointer depends on the event type, as shown in the following table.  
   
 |Event type|Meaning of `pStackPointer` value|  
@@ -34,6 +37,7 @@ HRESULT GetStackPointer(
  The event type is available from the [ICorDebugDebugEvent::GetEventKind](icordebugdebugevent-geteventkind-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

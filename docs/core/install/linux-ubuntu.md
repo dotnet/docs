@@ -47,9 +47,17 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 ## 20.10 ✔️
 
-.NET 5 and .NET Core 3.1 package feeds for Ubuntu 20.10 currently have an issue. For more information about the issue, see [GitHub issue dotnet/core#5549](https://github.com/dotnet/core/issues/5549). This article will be updated when the issue is resolved.
+> [!IMPORTANT]
+> .NET Core 2.1 isn't yet available in the package feed.
 
-To install .NET 5 or .NET Core 3.1 on Ubuntu 20.10, follow the instructions for [20.04](#2004-).
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
 ## 20.04 ✔️
 

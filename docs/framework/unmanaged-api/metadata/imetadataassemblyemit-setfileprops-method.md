@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyEmit::SetFileProps Method
+
 Modifies the specified `File` metadata structure.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT SetFileProps (
 ```  
   
 ## Parameters  
+
  `file`  
  [in] The metadata token that specifies the `File` metadata structure to be modified.  
   
@@ -44,9 +46,11 @@ HRESULT SetFileProps (
  [in] A bitwise combination of [CorFileFlags](corfileflags-enumeration.md) values that specify various attributes of the file.  
   
 ## Remarks  
+
  To create a `File` metadata structure, use the [IMetaDataAssemblyEmit::DefineFile](imetadataassemblyemit-definefile-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

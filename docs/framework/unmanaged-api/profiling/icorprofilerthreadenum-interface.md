@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerThreadEnum Interface
+
 Provides methods to sequentially iterate through a collection of threads in the common language runtime.  
   
 ## Methods  
@@ -29,9 +30,11 @@ Provides methods to sequentially iterate through a collection of threads in the 
 |[Skip Method](icorprofilerthreadenum-skip-method.md)|Advances the enumerator's cursor from its current position to skip the specified number of elements.|  
   
 ## Remarks  
+
  The `ICorProfilerThreadEnum` interface is an enumerator. It allows the receiver of an array to pull elements from the sender at a rate that is appropriate for the receiver. In other words, the receiver is able to explicitly control the flow of array elements, thereby avoiding the problems associated with passing large arrays as method parameters.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

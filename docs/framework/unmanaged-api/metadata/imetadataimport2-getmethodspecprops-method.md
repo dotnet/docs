@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport2::GetMethodSpecProps Method
+
 Gets the metadata signature of the method referenced by the specified MethodSpec token.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetMethodSpecProps (
 ```  
   
 ## Parameters  
+
  `mi`  
  [in] A MethodSpec token that represents the instantiation of the method.  
   
@@ -44,6 +46,7 @@ HRESULT GetMethodSpecProps (
  [out] The size, in bytes, of `ppvSigBlob`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

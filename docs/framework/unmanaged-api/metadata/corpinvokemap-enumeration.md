@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorPinvokeMap Enumeration
+
 Specifies options for a PInvoke call.  
   
 ## Syntax  
@@ -83,6 +84,7 @@ typedef enum  CorPinvokeMap {
 |`pmMaxValue`|Reserved.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

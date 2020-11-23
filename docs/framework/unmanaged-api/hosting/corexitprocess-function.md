@@ -20,6 +20,7 @@ topic_type:
   - "apiref"
 ---
 # CorExitProcess Function
+
 Shuts down the current unmanaged process.  
   
  This function has been deprecated in the .NET Framework 4. Use the [ICLRMetaHost::ExitProcess](iclrmetahost-exitprocess-method.md) method instead.  
@@ -33,6 +34,7 @@ void STDMETHODCALLTYPE CorExitProcess (
 ```  
   
 ## Parameters  
+
  `exitCode`  
  An integer that specifies the process exit code.  
   
@@ -42,6 +44,7 @@ void STDMETHODCALLTYPE CorExitProcess (
 > Beginning with the .NET Framework 4, `CorExitProcess` exits every started runtime in the process, not just the runtime to which the legacy APIs have been bound.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

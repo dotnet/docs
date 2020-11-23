@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorSymVarFlag Enumeration
+
 Indicates whether a variable is compiler-generated.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ typedef enum CorSymVarFlag
 |`VAR_IS_COMP_GEN`|Indicates that the given variable is compiler-generated.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

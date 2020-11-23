@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback2::FinalizeableObjectQueued Method
+
 Notifies the code profiler that an object with a finalizer has been queued to the finalizer thread for execution of its `Finalize` method.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT FinalizeableObjectQueued(
 ```  
   
 ## Parameters  
+
  `finalizerFlags`  
  [in] A value of the [COR_PRF_FINALIZER_FLAGS](cor-prf-finalizer-flags-enumeration.md) enumeration that describes aspects of the finalizer.  
   
@@ -35,6 +37,7 @@ HRESULT FinalizeableObjectQueued(
  [in] The ID of the object that has been queued.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

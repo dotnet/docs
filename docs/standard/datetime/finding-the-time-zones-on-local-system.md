@@ -1,7 +1,6 @@
 ---
 title: "Finding the time zones defined on a local system"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "time zones [.NET], local"
   - "time zones [.NET], finding local system time zones"

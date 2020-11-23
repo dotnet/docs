@@ -2,7 +2,6 @@
 title: "Walkthrough: Creating a Cryptographic Application"
 description: Walk through the creation of a cryptographic application. Learn how to encrypt and decrypt content in a Windows Forms application.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

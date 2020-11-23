@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedScope2 Interface
+
 Represents a lexical scope within a method. This interface extends the [ISymUnmanagedScope](isymunmanagedscope-interface.md) interface with methods that get information about constants defined within the scope.  
   
 ## Methods  
@@ -26,6 +27,7 @@ Represents a lexical scope within a method. This interface extends the [ISymUnma
 |[GetConstants Method](isymunmanagedscope2-getconstants-method.md)|Gets the local constants defined within this scope.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

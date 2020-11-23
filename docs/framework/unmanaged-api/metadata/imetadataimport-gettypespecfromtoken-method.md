@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetTypeSpecFromToken Method
+
 Gets the binary metadata signature of the type specification represented by the specified token.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetTypeSpecFromToken (
 ```  
   
 ## Parameters  
+
  `typespec`  
  [in] The TypeSpec token associated with the requested metadata signature.  
   
@@ -40,9 +42,11 @@ HRESULT GetTypeSpecFromToken (
  [out] The size, in bytes, of the metadata signature.  
   
 ## Return Value  
+
  An HRESULT that indicates success or failure. Failures can be tested with the FAILED macro.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

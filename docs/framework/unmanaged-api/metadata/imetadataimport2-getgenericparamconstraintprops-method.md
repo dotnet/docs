@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport2::GetGenericParamConstraintProps Method
+
 Gets the metadata associated with the generic parameter constraint represented by the specified constraint token.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetGenericParamConstraintProps (
 ```  
   
 ## Parameters  
+
  `gpc`  
  [in] The token to the generic parameter constraint for which to return the metadata.  
   
@@ -40,6 +42,7 @@ HRESULT GetGenericParamConstraintProps (
  [out] A pointer to a TypeDef, TypeRef, or TypeSpec token that represents a constraint on `ptGenericParam`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

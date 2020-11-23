@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSecurityManager::SetSecurityContext Method
+
 Sets the security context of the currently executing thread.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SetSecurityContext (
 ```  
   
 ## Parameters  
+
  `eContextType`  
  [in] One of the [EContextType](econtexttype-enumeration.md) values, indicating what type of context the common language runtime (CLR) is placing on the host.  
   
@@ -47,11 +49,13 @@ HRESULT SetSecurityContext (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The CLR calls `SetSecurityContext` in several scenarios. Before it executes class and module constructors and finalizers, the CLR calls `SetSecurityContext` to protect the host from execution failures. It then resets the security context to its original state after execution of the constructor or finalizer, by using another call to `SetSecurityContext`. A similar pattern occurs with I/O completion. If the host implements [IHostIoCompletionManager](ihostiocompletionmanager-interface.md), the CLR calls `SetSecurityContext` after the host calls [ICLRIoCompletionManager::OnComplete](iclriocompletionmanager-oncomplete-method.md).  
   
  At asynchronous points in worker threads, the CLR calls `SetSecurityContext` within <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=nameWithType> or within [IHostThreadPoolManager::QueueUserWorkItem](ihostthreadpoolmanager-queueuserworkitem-method.md), depending on whether the host or the CLR is implementing the thread pool.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

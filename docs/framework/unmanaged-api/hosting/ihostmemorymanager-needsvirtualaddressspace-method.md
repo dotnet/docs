@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostMemoryManager::NeedsVirtualAddressSpace Method
+
 Notifies the host that the common language runtime (CLR) is going to attempt to use the specified memory.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT NeedsVirtualAddressSpace (
 ```  
   
 ## Parameters  
+
  `startAddress`  
  [in] The starting address of the memory.  
   
@@ -36,11 +38,13 @@ HRESULT NeedsVirtualAddressSpace (
  [in] The size, in bytes, of the memory.  
   
 ## Remarks  
+
  The `NeedsVirtualAddressSpace` method is a callback method and must be implemented by the writer of the hosting application. It is called by the CLR.  
   
  If the host does not want the CLR to use the specified memory, it may return an E_OUTOFMEMORY HRESULT.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

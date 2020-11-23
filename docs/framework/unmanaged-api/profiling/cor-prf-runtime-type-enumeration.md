@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_PRF_RUNTIME_TYPE Enumeration
+
 Contains values that indicate the version of the common language runtime (CLR): desktop or CoreCLR, which is used in Silverlight.  
   
 ## Syntax  
@@ -38,6 +39,7 @@ typedef enum
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

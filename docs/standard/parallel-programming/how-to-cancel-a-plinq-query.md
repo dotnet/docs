@@ -1,7 +1,6 @@
 ---
 title: "How to: Cancel a PLINQ Query"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 80b14640-edfa-4153-be1b-3e003d3e9c1a
 ---
 # How to: Cancel a PLINQ Query
+
 The following examples show two ways to cancel a PLINQ query. The first example shows how to cancel a query that consists mostly of data traversal. The second example shows how to cancel a query that contains a user function that is computationally expensive.
 
 > [!NOTE]

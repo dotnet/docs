@@ -2,7 +2,6 @@
 title: "Security and Race Conditions"
 description:: Describes pitfalls to avoid around security holes exploited by race conditions, including dispose methods, constructors, cached objects, and finalizers.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

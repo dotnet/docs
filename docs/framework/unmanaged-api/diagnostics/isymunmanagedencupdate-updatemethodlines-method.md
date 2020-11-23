@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedENCUpdate::UpdateMethodLines Method
+
 Allows updating the line information for a method that has not been recompiled, but whose lines have moved independently. A delta for each statement is allowed.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT UpdateMethodLines(
 ```  
   
 ## Parameters  
+
  `mdMethodToken`  
  [in] The metadata of the method token.  
   
@@ -39,9 +41,11 @@ HRESULT UpdateMethodLines(
  [in] A `ULONG` containing the size of the `pDeltas` parameter.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

@@ -1,9 +1,9 @@
 ---
 title: Quickstart - Use .NET to drive a Raspberry Pi Sense HAT
-description: Learn how .NET can be used to build applications for IoT devices and scenarios.
+description: Get started with .NET IoT Libraries in 5 minutes using a Sense HAT, an add-on board for Raspberry Pi.
 author: camsoper
 ms.author: casoper
-ms.date: 11/2/2020
+ms.date: 11/13/2020
 ms.topic: quickstart
 ms.prod: dotnet
 ---
@@ -43,7 +43,7 @@ The command downloads and runs a script. The script:
 - Builds the project.
 - Runs the project.
 
-Observe the console output as sensor data is displayed. The LED matrix displays a yellow pixel on a field of blue. Holding the joystick in any direction moves the yellow pixel in that direction.
+Observe the console output as sensor data is displayed. The LED matrix displays a yellow pixel on a field of blue. Holding the joystick in any direction moves the yellow pixel in that direction. Clicking the center joystick button causes the background to switch from blue to red.
 
 ## Get the source code
 

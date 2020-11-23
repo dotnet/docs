@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: ee1fbb7a-b0f9-482f-8cd0-6df37e6586a2
 ---
 # Diagnostics Symbol Store (Unmanaged API Reference)
+
 The diagnostics symbol store API enables a compiler to generate symbol information for use by a debugger.  
   
 ## In This Section  
+
  [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)  
  Describes the unmanaged interfaces that the diagnostics symbol store API uses.  
   

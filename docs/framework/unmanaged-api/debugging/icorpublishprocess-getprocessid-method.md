@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishProcess::GetProcessID Method
+
 Gets the operating system identifier for this process.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetProcessID (
 ```  
   
 ## Parameters  
+
  `pid`  
  [out] A pointer to the identifier of the process represented by this [ICorPublishProcess](icorpublishprocess-interface.md) object.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  

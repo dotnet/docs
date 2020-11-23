@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread::GetAppDomain Method
+
 Gets an interface pointer to the application domain in which this ICorDebugThread is currently executing.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetAppDomain (
 ```  
   
 ## Parameters  
+
  `ppAppDomain`  
  [out] A pointer to an ICorDebugAppDomain object that represents the application domain in which this thread is currently executing.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

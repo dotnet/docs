@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugArrayValue::HasBaseIndicies Method
+
 Gets a value that indicates whether any dimensions of this array have a base index of non-zero.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT HasBaseIndicies (
 ```  
   
 ## Parameters  
+
  `pbHasBaseIndicies`  
  [out] A pointer to a Boolean value that is `true` if one or more dimensions of this `ICorDebugArrayValue` object have a base index of non-zero; otherwise, the Boolean value is `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

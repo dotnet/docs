@@ -24,10 +24,10 @@ The following table is a list of currently supported .NET releases on both RHEL 
 - A ❌ indicates that the version of RHEL or .NET isn't supported on that RHEL release.
 - When both a version of RHEL and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| RHEL                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+| RHEL                     | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [8](#rhel-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ [7](#rhel-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [8](#rhel-8-)        | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [7](#rhel-7--net-50) | ✔️ 2.1        | ✔️ [3.1](#rhel-7--net-core-31)        | ✔️ [5.0](#rhel-7--net-50) |
 
 The following versions of .NET are no longer supported. The downloads for these still remain published:
 
@@ -41,11 +41,30 @@ Consult the [Red Hat documentation for .NET](https://access.redhat.com/documenta
 
 ## RHEL 8 ✔️
 
-.NET is included in the AppStream repositories for RHEL 8.
+> [!TIP]
+> .NET 5.0 isn't yet available in the AppStream repositories, but .NET Core 3.1 is. To install .NET Core 3.1, use the `dnf install` command with the appropriate package, such as `aspnetcore-runtime-3.1` or `dotnet-sdk-3.1`. The following instructions are for .NET 5.0.
+
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/8/prod.repo
+```
 
 [!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
-## RHEL 7 ✔️
+## RHEL 7 ✔️ .NET 5.0
+
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+```
+
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-yum.md)]
+
+## RHEL 7 ✔️ .NET Core 3.1
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -57,37 +76,37 @@ sudo yum install scl-utils
 
 ### Install the SDK
 
-The .NET SDK allows you to develop apps with .NET. If you install the .NET SDK, you don't need to install the corresponding runtime. To install the .NET SDK, run the following commands:
+.NET Core SDK allows you to develop apps with .NET Core. If you install .NET Core SDK, you don't need to install the corresponding runtime. To install .NET Core SDK, run the following commands:
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms
-yum install rh-dotnet50 -y
-scl enable rh-dotnet50 bash
+yum install rh-dotnet31 -y
+scl enable rh-dotnet31 bash
 ```
 
-Red Hat does not recommend permanently enabling `rh-dotnet50` because it may affect other programs. For example, `rh-dotnet50` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet` permanently, add the following line to your _~/.bashrc_ file.
+Red Hat does not recommend permanently enabling `rh-dotnet31` because it may affect other programs. For example, `rh-dotnet31` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet` permanently, add the following line to your _~/.bashrc_ file.
 
 ```bash
-source scl_source enable rh-dotnet50
+source scl_source enable rh-dotnet31
 ```
 
 ### Install the runtime
 
-The ASP.NET Core Runtime allows you to run apps that were made with .NET that didn't provide the runtime. The following commands install the ASP.NET Core Runtime, which is the most compatible runtime for .NET. In your terminal, run the following commands:
+The .NET Core Runtime allows you to run apps that were made with .NET Core that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms
-yum install rh-dotnet50-aspnetcore-runtime-5.0 -y
-scl enable rh-dotnet50-aspnetcore-runtime-5.0 bash
+yum install rh-dotnet31-aspnetcore-runtime-3.1 -y
+scl enable rh-dotnet31-aspnetcore-runtime-3.1 bash
 ```
 
-Red Hat doesn't recommend permanently enabling `rh-dotnet50-aspnetcore-runtime-5.0` because it may affect other programs. For example, `rh-dotnet50-aspnetcore-runtime-5.0` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet50-aspnetcore-runtime-5.0` permanently, add the following line to your _~/.bashrc_ file.
+Red Hat does not recommend permanently enabling `rh-dotnet31-aspnetcore-runtime-3.1` because it may affect other programs. For example, `rh-dotnet31-aspnetcore-runtime-3.1` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet31-aspnetcore-runtime-3.1` permanently, add the following line to your _~/.bashrc_ file.
 
 ```bash
-source scl_source enable rh-dotnet50-aspnetcore-runtime-5.0
+source scl_source enable rh-dotnet31-aspnetcore-runtime-3.1
 ```
 
-As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime, which doesn't include ASP.NET Core support: replace `rh-dotnet50-aspnetcore-runtime-5.0` in the previous commands with `rh-dotnet50-dotnet-runtime-5.0`.
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet31-aspnetcore-runtime-3.1` in the commands above with `rh-dotnet31-dotnet-runtime-3.1`.
 
 ## Snap
 

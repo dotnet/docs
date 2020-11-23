@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugHeapValue3::GetMonitorEventWaitList Method
+
 Provides an ordered list of threads that are queued on the event that is associated with a monitor lock.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetMonitorEventWaitList (
 ```  
   
 ## Parameters  
+
  `ppThreadEnum`  
  [out] The ICorDebugThreadEnum enumerator that provides the ordered list of threads.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -42,6 +45,7 @@ HRESULT GetMonitorEventWaitList (
 ## Exceptions  
   
 ## Remarks  
+
  The first thread in the list is the first thread that is released by the next call to <xref:System.Threading.Monitor.Pulse%28System.Object%29?displayProperty=nameWithType>. The next thread in the list is released on the following call, and so on.  
   
  If the list is not empty, this method returns S_OK. If the list is empty, the method returns S_FALSE; in this case, the enumeration is still valid, although it is empty.  
@@ -53,6 +57,7 @@ HRESULT GetMonitorEventWaitList (
  If an error occurs such that it cannot be determined which, if any, threads are waiting for the monitor, the method returns an HRESULT that indicates failure.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

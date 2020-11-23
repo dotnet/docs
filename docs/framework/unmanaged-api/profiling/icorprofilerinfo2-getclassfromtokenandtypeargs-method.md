@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::GetClassFromTokenAndTypeArgs Method
+
 Gets the `ClassID` of a type by using the specified metadata token and the `ClassID` values of any type arguments.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetClassFromTokenAndTypeArgs(
 ```  
   
 ## Parameters  
+
  `moduleID`  
  [in] The ID of the module in which the type resides.  
   
@@ -47,6 +49,7 @@ HRESULT GetClassFromTokenAndTypeArgs(
  [out] A pointer to the `ClassID` of the specified type.  
   
 ## Remarks  
+
  Calling the `GetClassFromTokenAndTypeArgs` method with an `mdTypeRef` instead of an `mdTypeDef` metadata token can have unpredictable results; callers should resolve the `mdTypeRef` to an `mdTypeDef` when passing it.  
   
  If the type is not already loaded, calling `GetClassFromTokenAndTypeArgs` will trigger loading, which is a dangerous operation in many contexts. For example, calling this method during loading of modules or other types could lead to an infinite loop as the runtime attempts to circularly load things.  
@@ -54,6 +57,7 @@ HRESULT GetClassFromTokenAndTypeArgs(
  In general, use of `GetClassFromTokenAndTypeArgs` is discouraged. If profilers are interested in events for a particular type, they should store the `ModuleID` and `mdTypeDef` of that type, and use [ICorProfilerInfo2::GetClassIDInfo2](icorprofilerinfo2-getclassidinfo2-method.md) to check whether a given `ClassID` is that of the desired type.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

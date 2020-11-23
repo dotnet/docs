@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugClass::GetModule Method
+
 Gets the module that defines this class.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetModule (
 ```  
   
 ## Parameters  
+
  `pModule`  
  [out] A pointer to the address of an ICorDebugModule object that represents the module in which this class is defined.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

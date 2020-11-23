@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymENCUnmanagedMethod::GetSourceExtentInDocument Method
+
 Gets the smallest start line and largest end line for the method in a specific document.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetSourceExtentInDocument(
 ```  
   
 ## Parameters  
+
  `document`  
  [in] A pointer to the document.  
   
@@ -39,9 +41,11 @@ HRESULT GetSourceExtentInDocument(
  [out] A pointer to a `ULONG32` that receives the end line.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

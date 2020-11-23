@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IEnumReferenceIdentity Interface
+
 Serves as an enumerator for a collection of `IReferenceIdentity` objects.  
   
 ## Methods  
@@ -28,6 +29,7 @@ Serves as an enumerator for a collection of `IReferenceIdentity` objects.
 |`IEnumReferenceIdentity::Skip`|Moves the instruction pointer forward by the specified number of elements, starting at the current position.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  

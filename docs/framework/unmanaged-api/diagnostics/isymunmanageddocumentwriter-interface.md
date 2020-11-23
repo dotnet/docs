@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedDocumentWriter Interface
+
 Provides methods for writing to a document referenced by a symbol store.  
   
 ## Methods  
@@ -26,6 +27,7 @@ Provides methods for writing to a document referenced by a symbol store.
 |[SetSource Method](isymunmanageddocumentwriter-setsource-method.md)|Sets embedded source for a document that is being written.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

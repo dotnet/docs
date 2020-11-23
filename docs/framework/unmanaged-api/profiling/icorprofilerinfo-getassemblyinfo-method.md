@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetAssemblyInfo Method
+
 Accepts an assembly ID, and returns the assembly's name and the ID of its manifest module.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT GetAssemblyInfo(
 ```  
   
 ## Parameters  
+
  `assemblyId`  
  [in] The identifier of the assembly.  
   
@@ -52,11 +54,13 @@ HRESULT GetAssemblyInfo(
  [out] A pointer to the ID of the assembly's manifest module.  
   
 ## Remarks  
+
  After this method returns, you must verify that the `szName` buffer was large enough to contain the full name of the assembly. To do this, compare the value that `pcchName` points to with the value of the `cchName` parameter. If `pcchName` points to a value that is larger than `cchName`, allocate a larger `szName` buffer, update `cchName` with the new, larger size, and call `GetAssemblyInfo` again.  
   
  Alternatively, you can first call `GetAssemblyInfo` with a zero-length `szName` buffer to obtain the correct buffer size. You can then adjust the buffer size based on the value returned in `pcchName` and call `GetAssemblyInfo` again.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

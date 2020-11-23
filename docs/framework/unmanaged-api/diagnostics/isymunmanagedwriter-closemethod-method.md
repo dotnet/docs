@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter::CloseMethod Method
+
 Closes the current method. Once a method is closed, no more symbols can be defined within it.  
   
 ## Syntax  
@@ -26,9 +27,11 @@ HRESULT CloseMethod();
 ```  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

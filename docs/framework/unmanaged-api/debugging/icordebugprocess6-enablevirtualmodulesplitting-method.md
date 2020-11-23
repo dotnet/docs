@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e7733bd3-68da-47f9-82ef-477db5f2e32d
 ---
 # ICorDebugProcess6::EnableVirtualModuleSplitting Method
+
 Enables or disables virtual module splitting.  
   
 ## Syntax  
@@ -15,10 +16,12 @@ HRESULT EnableVirtualModuleSplitting(
 ```  
   
 ## Parameters  
+
  `enableSplitting`  
  `true` to enable virtual module splitting; `false` to disable it.  
   
 ## Remarks  
+
  Virtual module splitting causes [ICorDebug](icordebug-interface.md) to recognize modules that were merged together during the build process and present them as a group of separate modules rather than a single large module. Doing this changes the behavior of various [ICorDebug](icordebug-interface.md) methods described below.  
   
 > [!NOTE]
@@ -27,6 +30,7 @@ HRESULT EnableVirtualModuleSplitting(
  This method can be called and the value of `enableSplitting` can be changed at any time. It does not cause any stateful functional changes in an [ICorDebug](icordebug-interface.md) object, other than altering the behavior of the methods listed in the [Virtual module splitting and the unmanaged debugging APIs](#APIs) section at the time they are called. Using virtual modules does incur a performance penalty when calling those methods. In addition, significant in-memory caching of the virtualized metadata may be required to correctly implement the [IMetaDataImport](../metadata/imetadataimport-interface.md) APIs, and these caches may be retained even after virtual module splitting has been turned off.  
   
 ## Terminology  
+
  The following terms are used when describing virtual module splitting:  
   
  container modules, or containers  
@@ -41,9 +45,11 @@ HRESULT EnableVirtualModuleSplitting(
  Both container modules and sub-modules are represented by ICorDebugModule interface objects. However, the behavior of the interface is slightly different in each case, as the \<x-ref to section> section describes.  
   
 ## Modules and assemblies  
+
  Multi-module assemblies are not supported for assembly merging scenarios, so there is a one-to-one relationship between a module and an assembly. Each ICorDebugModule object, regardless of whether it represents a container module or a sub-module, has a corresponding ICorDebugAssembly object. The [ICorDebugModule::GetAssembly](icordebugmodule-getassembly-method.md) method converts from the module to the assembly. To map in the other direction, the [ICorDebugAssembly::EnumerateModules](icordebugassembly-enumeratemodules-method.md) method enumerates only 1 module. Because assembly and module form a tightly coupled pair in this case, the terms assembly and module become largely interchangeable.  
   
 ## Behavioral differences  
+
  Container modules have the following behaviors and characteristics:  
   
 - Their metadata for all of the constituent sub-modules is merged together.  
@@ -75,6 +81,7 @@ HRESULT EnableVirtualModuleSplitting(
 - The ICorDebugAssembly3.GetContainerAssembly method returns the containing module.  
   
 ## Interfaces retrieved from modules  
+
  A variety of interfaces can be created or retrieved from modules. Some of these include:  
   
 - An ICorDebugClass object, which is returned by the [ICorDebugModule::GetClassFromToken](icordebugmodule-getclassfromtoken-method.md) method.  
@@ -84,7 +91,9 @@ HRESULT EnableVirtualModuleSplitting(
  These objects are always cached by [ICorDebug](icordebug-interface.md), and they will have the same pointer identity regardless of whether they were created or queried from the container module or a sub-module. The sub-module provides a filtered view of these cached objects, not a separate cache with its own copies.  
   
 <a name="APIs"></a>
+
 ## Virtual module splitting and the unmanaged debugging APIs  
+
  The following table shows how virtual module splitting affects the behavior of other methods in the unmanaged debugging API.  
   
 |Method|`enableSplitting` = `true`|`enableSplitting` = `false`|  
@@ -96,6 +105,7 @@ HRESULT EnableVirtualModuleSplitting(
 |[ICorDebugCode::GetCode](icordebugcode-getcode-method.md) (when referring to IL code only)|Returns IL that would be valid in a pre-merge assembly image. Specifically, any inline metadata tokens will correctly be TypeRef or MemberRef tokens when the types being referred to are not defined in the virtual module containing the IL. These TypeRef or MemberRef tokens can be looked up in the [IMetaDataImport](../metadata/imetadataimport-interface.md) object for the corresponding virtual ICorDebugModule object.|Returns the IL in the post-merge assembly image.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

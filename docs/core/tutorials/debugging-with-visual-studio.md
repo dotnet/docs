@@ -1,19 +1,19 @@
 ---
-title: Debug a .NET Core console application using Visual Studio
-description: Learn how to debug a .NET Core console app using Visual Studio.
+title: Debug a .NET console application using Visual Studio
+description: Learn how to debug a .NET console app using Visual Studio.
 ms.date: 06/08/2020
 dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet"
 ---
-# Tutorial: Debug a .NET Core console application using Visual Studio
+# Tutorial: Debug a .NET console application using Visual Studio
 
 This tutorial introduces the debugging tools available in Visual Studio.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application using Visual Studio](with-visual-studio.md).
+- This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio](with-visual-studio.md).
 
 ## Use Debug build configuration
 
@@ -25,11 +25,11 @@ In the Debug configuration, a program compiles with full symbolic debug informat
 
 1. Start Visual Studio.
 
-1. Open the project that you created in [Create a .NET Core console application using Visual Studio](with-visual-studio.md).
+1. Open the project that you created in [Create a .NET console application using Visual Studio](with-visual-studio.md).
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
-   ![Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-debug.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/visual-studio-toolbar-debug.png" alt-text="Visual Studio toolbar with debug highlighted":::
 
 ## Set a breakpoint
 
@@ -39,7 +39,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
-   ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/set-breakpoint-in-editor.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/set-breakpoint-in-editor.png" alt-text="Visual Studio Program window with breakpoint set":::
 
 1. Press <kbd>F5</kbd> to run the program in Debug mode. Another way to start debugging is by choosing **Debug** > **Start Debugging** from the menu.
 
@@ -47,7 +47,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 1. Program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes. The **Locals** window displays the values of variables that are defined in the currently executing method.
 
-   ![Screenshot of a breakpoint in Visual Studio](./media/debugging-with-visual-studio/breakpoint-hit.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-hit.png" alt-text="Screenshot of a breakpoint in Visual Studio":::
 
 ## Use the Immediate window
 
@@ -61,13 +61,13 @@ The **Immediate** window lets you interact with the application you're debugging
 
    The **Immediate** window displays the value of the string variable and the properties of the <xref:System.DateTime> value. In addition, the values of the variables are updated in the **Locals** window.
 
-   ![Locals and Immediate Windows in Visual Studio 2019](./media/debugging-with-visual-studio/locals-immediate-window.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/locals-immediate-window.png" alt-text="Locals and Immediate Windows in Visual Studio 2019":::
 
 1. Press <kbd>F5</kbd> to continue program execution. Another way to continue is by choosing **Debug** > **Continue** from the menu.
 
    The values displayed in the console window correspond to the changes you made in the **Immediate** window.
 
-   ![Console window showing the entered values](./media/debugging-with-visual-studio/console-window.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/console-window.png" alt-text="Console window showing the entered values":::
 
 1. Press any key to exit the application and stop debugging.
 
@@ -77,7 +77,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Right-click on the red dot that represents the breakpoint. In the context menu, select **Conditions** to open the **Breakpoint Settings** dialog. Select the box for **Conditions** if it's not already selected.
 
-   ![Editor showing breakpoint settings panel - C#](./media/debugging-with-visual-studio/breakpoint-settings.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/breakpoint-settings.png" alt-text="Editor showing breakpoint settings panel - C#":::
 
 1. For the **Conditional Expression**, enter the following code in the field that shows example code that tests if `x` is 5. If the language you want to use is not shown, change the language selector at the top of the page.
 
@@ -115,7 +115,7 @@ The program displays the string that the user enters. What happens if the user d
 
    The question mark directs the immediate window to [evaluate an expression](/visualstudio/ide/reference/immediate-window#enter-commands).
 
-   ![Immediate Window returning a value of true after the statement is executed - C#](./media/debugging-with-visual-studio/immediate-window-output.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/immediate-window-output.png" alt-text="Immediate Window returning a value of true after the statement is executed - C#":::
 
 1. Press <kbd>F5</kbd> to continue program execution.
 
@@ -133,11 +133,11 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    C#
 
-   ![Visual Studio step into method - C#](./media/debugging-with-visual-studio/step-into-method.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/step-into-method.png" alt-text="Visual Studio step into method - C#":::
 
    Visual Basic
 
-   ![Visual Studio step into method - Visual Basic](./media/debugging-with-visual-studio/vb-step-into-method.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/vb-step-into-method.png" alt-text="Visual Studio step into method - Visual Basic":::
 
    At this point, the **Locals** window shows that the `args` array is empty, and `name` and `date` have default values. In addition, Visual Studio has opened a blank console window.
 
@@ -145,11 +145,11 @@ Visual Studio also allows you to step line by line through a program and monitor
 
    C#
 
-   ![Visual Studio step in method source - C#](./media/debugging-with-visual-studio/step-into-source-method.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/step-into-source-method.png" alt-text="Visual Studio step in method source - C#":::
 
    Visual Basic
 
-   ![Visual Studio step into method source - Visual Basic](./media/debugging-with-visual-studio/vb-step-into-source-method.png)
+   :::image type="content" source="./media/debugging-with-visual-studio/vb-step-into-source-method.png" alt-text="Visual Studio step into method source - Visual Basic":::
 
 1. Press <kbd>F11</kbd>. Visual Studio highlights the statement that includes the `name` variable assignment. The **Locals** window shows that `name` is `null`, and the console window displays the string "What is your name?".
 
@@ -173,7 +173,7 @@ Once you've tested the Debug version of your application, you should also compil
 
 To build and test the Release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 
-![default Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-release.png)
+:::image type="content" source="./media/debugging-with-visual-studio/visual-studio-toolbar-release.png" alt-text="default Visual Studio toolbar with release highlighted":::
 
 When you press <kbd>F5</kbd> or choose **Build Solution** from the **Build** menu, Visual Studio compiles the Release version of the application. You can test it as you did the Debug version.
 
@@ -182,4 +182,4 @@ When you press <kbd>F5</kbd> or choose **Build Solution** from the **Build** men
 In this tutorial, you used Visual Studio debugging tools. In the next tutorial, you publish a deployable version of the app.
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application using Visual Studio](publishing-with-visual-studio.md)
+> [Publish a .NET console application using Visual Studio](publishing-with-visual-studio.md)

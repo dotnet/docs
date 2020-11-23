@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter::SetUserEntryPoint Method
+
 Specifies the user-defined method that is the entry point for this module. For example, this entry point could be the user's main method instead of compiler-generated stubs before main.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT SetUserEntryPoint(
 ```  
   
 ## Parameters  
+
  `entryMethod`  
  [in] The metadata token for the method that is the user entry point.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

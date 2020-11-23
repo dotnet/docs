@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebug::SetUnmanagedHandler Method
+
 Specifies the event handler object for unmanaged events.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT SetUnmanagedHandler (
 ```  
   
 ## Parameters  
+
  `pCallback`  
  [in] A pointer to an [ICorDebugUnmanagedCallback](icordebugunmanagedcallback-interface.md) object that represents the event handler for unmanaged events.  
   
 ## Remarks  
+
  The event handler object for unmanaged events must be set after a call to [ICorDebug::Initialize](icordebug-initialize-method.md) and before any calls to [ICorDebug::CreateProcess](icordebug-createprocess-method.md) or [ICorDebug::DebugActiveProcess](icordebug-debugactiveprocess-method.md). However, for legacy purposes, you are not required to set the event handler object for unmanaged events until the first native debug event is raised. Specifically, if `ICorDebug::CreateProcess` has set the CREATE_SUSPENDED flag, native debug events cannot be dispatched until the main thread is resumed.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

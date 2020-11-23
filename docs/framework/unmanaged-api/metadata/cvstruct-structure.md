@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CVStruct Structure
+
 Contains information that is used when installing a module or a composite image.  
   
 ## Syntax  
@@ -39,6 +40,7 @@ typedef struct {
 |Build|Build number.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

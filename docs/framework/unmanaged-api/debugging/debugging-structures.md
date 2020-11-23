@@ -12,6 +12,7 @@ ms.assetid: 173ba2c2-ab34-49ae-b6a8-e5c49882bf05
 This section describes the unmanaged structures that the debugging API uses.
 
 ## In This Section
+
  [CLRDATA_ADDRESS_RANGE Structure](clrdata-address-range-structure.md)
  Defines an address range.
 

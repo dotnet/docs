@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # ShutdownDbgTransportManager Function
+
 Shuts down the transport manager for a connection to a remote target machine.  
   
 ## Syntax  
@@ -27,6 +28,7 @@ void InitDbgTransportManager ();
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CoreClrRemoteDebuggingInterfaces.h  

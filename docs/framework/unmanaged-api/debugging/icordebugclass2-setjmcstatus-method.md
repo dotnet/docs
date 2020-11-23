@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugClass2::SetJMCStatus Method
+
 For each method of the class, sets a value that indicates whether the method is user-defined code.  
   
 ## Syntax  
@@ -28,15 +29,18 @@ HRESULT SetJMCStatus (
 ```  
   
 ## Parameters  
+
  `bIsJustMyCode`  
  [in] Set to `true` to indicate that the method is user-defined code; otherwise, set to `false`.  
   
 ## Remarks  
+
  A just-my-code (JMC) stepper will skip non-user-defined code. User-defined code must be a subset of debuggable code.  
   
  `SetJMCStatus` returns an HRESULT value of S_FALSE if it fails to set the value for any method, even if it successfully sets the value for all other methods.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

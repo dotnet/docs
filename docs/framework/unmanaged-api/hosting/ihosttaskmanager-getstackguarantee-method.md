@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTaskManager::GetStackGuarantee Method
+
 Gets the amount of stack space that is guaranteed to be available after a stack operation completes, but before the closing of a process.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetStackGuarantee(
 ```  
   
 ## Parameters  
+
  `pGuarantee`  
  [out] A pointer to the number of bytes that are available.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

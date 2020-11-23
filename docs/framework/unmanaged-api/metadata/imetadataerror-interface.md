@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataError Interface
+
 Provides a callback mechanism for reporting errors during the metadata merge.  
   
 > [!NOTE]
@@ -28,6 +29,7 @@ Provides a callback mechanism for reporting errors during the metadata merge.
 |[OnError Method](imetadataerror-onerror-method.md)|Provides notification of errors that occur during the metadata merge.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

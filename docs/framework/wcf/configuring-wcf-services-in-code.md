@@ -5,55 +5,55 @@ ms.date: "03/30/2017"
 ms.assetid: 193c725d-134f-4d31-a8f8-4e575233bff6
 ---
 # Configuring WCF Services in Code
-Windows Communication Foundation (WCF) allows developers to configure services using configuration files or code.  Configuration files are useful when a service needs to be configured after being deployed. When using configuration files, an IT professional only needs to update the configuration file, no recompilation is required. Configuration files, however, can be complex and difficult to maintain. There is no support for debugging configuration files and configuration elements are referenced by names which makes authoring configuration files error-prone and difficult. WCF also allows you to configure services in code. In earlier versions of WCF (4.0 and earlier) configuring services in code was easy in self-hosted scenarios, the <xref:System.ServiceModel.ServiceHost> class allowed you to configure endpoints and behaviors prior to calling ServiceHost.Open. In web hosted scenarios, however, you don’t have direct access to the <xref:System.ServiceModel.ServiceHost> class. To configure a web hosted service you were required to create a `System.ServiceModel.ServiceHostFactory` that created the <xref:System.ServiceModel.Activation.ServiceHostFactory> and performed any needed configuration. Starting with .NET 4.5, WCF provides an easier way to configure both self-hosted and web hosted services in code.  
-  
-## The Configure method  
- Simply define a public static method called `Configure` with the following signature in your service implementation class:  
-  
-```csharp  
-public static void Configure(ServiceConfiguration config)  
-```  
-  
- The Configure method takes a <xref:System.ServiceModel.ServiceConfiguration> instance that enables the developer to add endpoints and behaviors. This method is called by WCF before the service host is opened. When defined, any service configuration settings specified in an app.config or web.config file will be ignored.  
-  
- The following code snippet illustrates how to define the `Configure` method and add a service endpoint, an endpoint behavior and service behaviors:  
-  
-```csharp  
-public class Service1 : IService1  
-    {  
-        public static void Configure(ServiceConfiguration config)  
-        {  
-            ServiceEndpoint se = new ServiceEndpoint(new ContractDescription("IService1"), new BasicHttpBinding(), new EndpointAddress("basic"));  
-            se.Behaviors.Add(new MyEndpointBehavior());  
-            config.AddServiceEndpoint(se);  
-  
-            config.Description.Behaviors.Add(new ServiceMetadataBehavior { HttpGetEnabled = true });  
-            config.Description.Behaviors.Add(new ServiceDebugBehavior { IncludeExceptionDetailInFaults = true });  
-        }  
-  
-        public string GetData(int value)  
-        {  
+Windows Communication Foundation (WCF) allows developers to configure services using configuration files or code.  Configuration files are useful when a service needs to be configured after being deployed. When using configuration files, an IT professional only needs to update the configuration file, no recompilation is required. Configuration files, however, can be complex and difficult to maintain. There is no support for debugging configuration files and configuration elements are referenced by names which makes authoring configuration files error-prone and difficult. WCF also allows you to configure services in code. In earlier versions of WCF (4.0 and earlier) configuring services in code was easy in self-hosted scenarios, the <xref:System.ServiceModel.ServiceHost> class allowed you to configure endpoints and behaviors prior to calling ServiceHost.Open. In web hosted scenarios, however, you don’t have direct access to the <xref:System.ServiceModel.ServiceHost> class. To configure a web hosted service you were required to create a `System.ServiceModel.ServiceHostFactory` that created the <xref:System.ServiceModel.Activation.ServiceHostFactory> and performed any needed configuration. Starting with .NET Framework 4.5, WCF provides an easier way to configure both self-hosted and web hosted services in code.
+
+## The Configure method
+ Simply define a public static method called `Configure` with the following signature in your service implementation class:
+
+```csharp
+public static void Configure(ServiceConfiguration config)
+```
+
+ The Configure method takes a <xref:System.ServiceModel.ServiceConfiguration> instance that enables the developer to add endpoints and behaviors. This method is called by WCF before the service host is opened. When defined, any service configuration settings specified in an app.config or web.config file will be ignored.
+
+ The following code snippet illustrates how to define the `Configure` method and add a service endpoint, an endpoint behavior and service behaviors:
+
+```csharp
+public class Service1 : IService1
+    {
+        public static void Configure(ServiceConfiguration config)
+        {
+            ServiceEndpoint se = new ServiceEndpoint(new ContractDescription("IService1"), new BasicHttpBinding(), new EndpointAddress("basic"));
+            se.Behaviors.Add(new MyEndpointBehavior());
+            config.AddServiceEndpoint(se);
+
+            config.Description.Behaviors.Add(new ServiceMetadataBehavior { HttpGetEnabled = true });
+            config.Description.Behaviors.Add(new ServiceDebugBehavior { IncludeExceptionDetailInFaults = true });
+        }
+
+        public string GetData(int value)
+        {
             return $"You entered: {value}";
-        }  
-  
-        public CompositeType GetDataUsingDataContract(CompositeType composite)  
-        {  
-            if (composite == null)  
-            {  
-                throw new ArgumentNullException("composite");  
-            }  
-            if (composite.BoolValue)  
-            {  
-                composite.StringValue += "Suffix";  
-            }  
-            return composite;  
-        }  
-    }  
-```  
-  
- To enable a protocol such as https for a service, you can either explicitly add an endpoint that uses the protocol or you can automatically add endpoints by calling ServiceConfiguration.EnableProtocol(Binding) which adds an endpoint for each base address compatible with the protocol and each service contract defined. The following code illustrates how to use the ServiceConfiguration.EnableProtocol method:  
-  
-```csharp  
+        }
+
+        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        {
+            if (composite == null)
+            {
+                throw new ArgumentNullException("composite");
+            }
+            if (composite.BoolValue)
+            {
+                composite.StringValue += "Suffix";
+            }
+            return composite;
+        }
+    }
+```
+
+ To enable a protocol such as https for a service, you can either explicitly add an endpoint that uses the protocol or you can automatically add endpoints by calling ServiceConfiguration.EnableProtocol(Binding) which adds an endpoint for each base address compatible with the protocol and each service contract defined. The following code illustrates how to use the ServiceConfiguration.EnableProtocol method:
+
+```csharp
 public class Service1 : IService1
 {
     public string GetData(int value);
@@ -70,10 +70,10 @@ public class Service1 : IService1
        config.AddServiceEndpoint(typeof(IService1), new BasicHttpBinding(),"basic");
     }
 }
-```  
-  
- The settings in the <`protocolMappings`> section are only used if no application endpoints are added to the <xref:System.ServiceModel.ServiceConfiguration> programmatically.You can optionally load the service configuration from the default application configuration file by calling <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> and then change the settings. The <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration> class also allows you to load configuration from a centralized configuration. The following code illustrates how to implement this:  
-  
+```
+
+ The settings in the <`protocolMappings`> section are only used if no application endpoints are added to the <xref:System.ServiceModel.ServiceConfiguration> programmatically.You can optionally load the service configuration from the default application configuration file by calling <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> and then change the settings. The <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration> class also allows you to load configuration from a centralized configuration. The following code illustrates how to implement this:
+
 ```csharp
 public class Service1 : IService1
 {
@@ -82,12 +82,12 @@ public class Service1 : IService1
     {
           config.LoadFromConfiguration(ConfigurationManager.OpenMappedExeConfiguration(new ExeConfigurationFileMap { ExeConfigFilename = @"c:\sharedConfig\MyConfig.config" }, ConfigurationUserLevel.None));
     }
-}  
-```  
-  
+}
+```
+
 > [!IMPORTANT]
-> Note that <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> ignores <`host`> settings within the <`service`> tag of <`system.serviceModel`>. Conceptually, <`host`> is about host configuration, not service configuration, and it gets loaded before the Configure method executes.  
-  
+> Note that <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> ignores <`host`> settings within the <`service`> tag of <`system.serviceModel`>. Conceptually, <`host`> is about host configuration, not service configuration, and it gets loaded before the Configure method executes.
+
 ## See also
 
 - [Configuring Services Using Configuration Files](configuring-services-using-configuration-files.md)

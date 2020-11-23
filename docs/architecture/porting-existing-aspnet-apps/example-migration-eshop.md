@@ -541,7 +541,6 @@ The app's migration is nearly complete - the only thing remaining is to configur
 
 ASP.NET Core apps running on .NET Framework can continue to leverage Entity Framework. If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
 
-
 - Data access with EF
   - Migrating EF6 as-is
   - Pros and Cons of EF6 vs. EF Core
@@ -550,13 +549,11 @@ ASP.NET Core apps running on .NET Framework can continue to leverage Entity Fram
 
 ## Fix all TODO tasks
 
-
 ## Additional MVC Customizations
 
-  - Show migrations for CORS, filters, route constraints, etc.
-  - Show how to configure MVC with binders, formatters, areas, DI
-
-  - Update framework features that depended on configuration (WCF client, tracing) to be configured in code instead
+- Show migrations for CORS, filters, route constraints, etc.
+- Show how to configure MVC with binders, formatters, areas, DI
+- Update framework features that depended on configuration (WCF client, tracing) to be configured in code instead
 
 ## References
 

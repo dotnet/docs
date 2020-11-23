@@ -152,30 +152,6 @@ Dapr configuration files closely resemble Kubernetes manifest files. They follow
 
 At a later time, the application is ready to go to production. For the production environment, you may want to change your state management to Azure Table Storage. Azure Table Storage provides state management capabilities that are affordable and highly durable.
 
-While your service code would remain the same, you would modify the definition of your state component, as follows:
-
-   ```yaml   
-   apiVersion: dapr.io/v1alpha1
-   kind: Component
-   metadata:
-     name: <NAME>
-     namespace: <NAMESPACE>
-   spec:
-     type: state.azure.tablestorage
-     metadata:
-       - name: accountName
-         value: <REPLACE-WITH-ACCOUNT-NAME>
-       - name: accountKey
-         value: <REPLACE-WITH-ACCOUNT-KEY>
-       - name: tableName
-         value: <REPLACE-WITH-TABLE-NAME>
-   ```   
-Note how the `spec` section now specifies Azure Table Storage. Based on the new configuration, Dapr will bind state management calls to Azure Table Storage.
-
-With this model, the developer is never exposed to the Redis or Azure Table Storage APIs. Dapr abstracts these APIs away in its component and binding. 
-
-A building block can use a combination of components. For example, the Actor and the State Management building blocks both consume a State component. As another example, the Pub/Sub building block consumes a Pub/Sub component.
-
 At the time of this writing, the following component types are provided by Dapr:
 
 | Component | Description |
@@ -192,13 +168,13 @@ As our jet completes it fly over of Dapr, we look back once more and can see how
 
 ### Sidecar Architecture
 
-Dapr runs in a separate process alongside your service. This is called a [sidecar architecture](https://docs.microsoft.com/azure/architecture/patterns/sidecar).  Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
+Dapr exposes its building blocks and components through a [sidecar architecture](https://docs.microsoft.com/azure/architecture/patterns/sidecar). A sidecar enables that Dapr to run in a separate memory process or separate container alongside your service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
 
 ![Sidecar architecture](./media/sidecar-generic.png)
 
 **Figure 2-4**. Sidecar architecture.
 
-This pattern is named Sidecar because it resembles a sidecar attached to a motorcycle. In the previous figure, note how the Dapr sidecar is attached to your service to provide distributed application capabilities. The Dapr sidecar shares the same lifecycle as your service. It's created and retired alongside the parent. 
+This pattern is named Sidecar because it resembles a sidecar attached to a motorcycle. In the previous figure, note how the Dapr sidecar is attached to your service to provide distributed application capabilities. 
 
 Figure 2-5 shows an example of a Dapr sidecar for state management.
 

@@ -2,7 +2,7 @@
 title: Dapr @ 20,000 feet
 description: A high-level overview of what dapr is, what it does, and how it works
 author: robvet 
-ms.date: 11/08/2020
+ms.date: 11/23/2020
 ---
 
 # Dapr @ 20,000 feet
@@ -78,7 +78,7 @@ We provide detailed explanation and code samples for each Dapr building block in
 
 While building blocks expose an API to invoke distributed application capabilities, Dapr components provide the concrete implementation to make it happen. 
 
-Consider, the Dapr `state store` component. It provides a uniform way to manage state for CRUD operations. Without any change to your service code, you could switch between any of the following Dapr state components:
+Consider, the Dapr **state store** component. It provides a uniform way to manage state for CRUD operations. Without any change to your service code, you could switch between any of the following Dapr state components:
 
 - AWS DynamoDB
 - Aerospike
@@ -136,7 +136,7 @@ Perhaps you start with Azure Redis Cache as your state store. You specify it wit
        value: <bool> # Optional. Allowed: true, false.
    ```   
 
-Note that in the `spec` section, you configure Dapr to use the Redis Cache for state management. The section also contains component specific metadata. In this case, you can use it to configure additional Redis settings.
+Note that in the **spec** section, you configure Dapr to use the Redis Cache for state management. The section also contains component specific metadata. In this case, you can use it to configure additional Redis settings.
 
 At a later time, the application is ready to go to production. For the production environment, you may want to change your state management to Azure Table Storage. Azure Table Storage provides state management capabilities that are affordable and highly durable.
 
@@ -169,17 +169,21 @@ This pattern is named Sidecar because it resembles a sidecar attached to a motor
 
 Dapr can be hosted in multiple environments. It can self-host for local development. Dapr can also deploy to Kubernetes, a group of VMs, or edge environments such as Azure IoT Edge.
 
-In [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted) Dapr runs as a separate sidecar, which your service code can invoke via HTTP or gRPC. Self-hosting modes allows for local development. Figure 2-6 shows an application and Dapr  hosted in two separate memory processes communicating via HTTP or gRPC.
+For local development, the easiest way to get started is [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted). In self-hosted mode, the microservices and accompanying Dapr sidecars run in separate local processes without a container orchestrator such as Kubernetes. To get started with self-hosted mode, [download and install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr/). 
+
+Figure 2-5 shows an application and Dapr hosted in two separate memory processes communicating via HTTP or gRPC.
 
 ![Sidecar architecture](./media/self-hosted-dapr-sidecar.png)
 
-**Figure 2-6**. Self-hosted Dapr sidecar
+**Figure 2-5**. Self-hosted Dapr sidecar
 
-Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-7 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
+By default, Dapr will install Docker containers for Redis and Zipkin to ensure that building blocks such as state management and observability work out of the box. If you don't want to install Docker on your local machine, you can even [run Dapr in self-hosted mode without any Docker containers](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). However, you must install default components such as Redis for state management and pub/sub manually. 
+
+Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
 
 ![Sidecar architecture](./media/kubernetes-hosted-dapr-sidecar.png)
 
-**Figure 2-7**. Kubernetes-hosted Dapr sidecar
+**Figure 2-6**. Kubernetes-hosted Dapr sidecar
 
 ## Dapr performance considerations
 
@@ -217,9 +221,9 @@ Note in the previous figure how messages are intercepted by a proxy that runs al
 
 So the question becomes, "Is Dapr a service mesh?"
 
-While both technologies use a sidecar architecture, each is different. Dapr provides distributed application features. A service mesh provides a dedicated network infrastructure layer.
+While both use a sidecar architecture, each technology has a different purpose. Dapr provides distributed application features. A service mesh provides a dedicated network infrastructure layer.
 
-As each technology works at a different level, both can work together in the same application. Connected together, application traffic would route to the Dapr sidecar first and then the service mesh sidecar and then out. On the other end, traffic would traverse the stack in reverse order: Service mesh to Dapr to application. 
+As each works at a different level, both can work together in the same application. For example, a service mesh could provide networking communication between services; Dapr could provide application services such as state management or actor services. 
 
 Figure 2-9 shows an application that implements both Dapr and service mesh technology.
 

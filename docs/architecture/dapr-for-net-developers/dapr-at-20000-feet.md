@@ -199,7 +199,7 @@ As you've seen, Dapr exposes a sidecar architecture to decouple your application
 
 Looking at the previous figure, one might question the latency and overhead incurred for each call.  
 
-The Dapr team has invested heavily in performance. A tremendous amount of engineering effort has gone into to making Dapr efficient. Calls between Dapr sidecars are always made with gRPC, which delivers high performance and small, binary payloads. In most cases, the additional overhead should be less than 1 millisecond. 
+The Dapr team has invested heavily in performance. A tremendous amount of engineering effort has gone into making Dapr efficient. Calls between Dapr sidecars are always made with gRPC, which delivers high performance and small, binary payloads. In most cases, the additional overhead should be less than 1 millisecond. 
 
 To increase performance, developers can implement calls to Dapr building blocks with gRPC. 
 

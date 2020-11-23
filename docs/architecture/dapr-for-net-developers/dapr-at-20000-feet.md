@@ -182,7 +182,7 @@ Figure 2-5 shows an example of a Dapr sidecar for state management.
 
 **Figure 2-5**. Sidecar architecture for state management.
 
-In this scenario, the search service, on the left, needs to manage application state with a state store. Note how the search service runs within its own runtime. It contains a YAML-based configuration file specifying the state store implementation it wishes to consume from Dapr.
+In this scenario, the search service, on the left, needs to manage application state with a state store. Note how the search service runs within its own process. It contains a YAML-based configuration file specifying the state store implementation it wishes to consume from Dapr.
 
 The Dapr runtime on the right exposes a State Management building block exposed as a side car. The YAML configuration specifies the exact state management component to use. 
 

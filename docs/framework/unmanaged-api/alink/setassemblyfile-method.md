@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # SetAssemblyFile Method
+
 Assigns the name of the assembly to be built. Not for use when producing unbound modules.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetAssemblyFile(
 ```  
   
 ## Parameters  
+
  `pszFilename`  
  Fully qualified name of the manifest file.  
   
@@ -43,9 +45,11 @@ HRESULT SetAssemblyFile(
  Pointer to ID of resulting assembly.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h.  
   
 ## See also

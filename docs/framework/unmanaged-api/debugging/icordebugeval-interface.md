@@ -35,6 +35,7 @@ Provides methods to enable the debugger to execute code within the context of th
 |[NewString Method](icordebugeval-newstring-method.md)|Allocates a new string object with the specified contents.|  
   
 ## Remarks  
+
  An `ICorDebugEval` object is created in the context of a specific thread that is used to perform the evaluations. All objects and types used in a given evaluation must reside within the same application domain. That application domain need not be the same as the current application domain of the thread. Evaluations can be nested.  
   
  The evaluation's operations do not complete until the debugger calls [ICorDebugController::Continue](icordebugcontroller-continue-method.md), and then receives an [ICorDebugManagedCallback::EvalComplete](icordebugmanagedcallback-evalcomplete-method.md) callback. If you need to use the evaluation functionality without allowing other threads to run, suspend the threads by using either [ICorDebugController::SetAllThreadsDebugState](icordebugcontroller-setallthreadsdebugstate-method.md) or [ICorDebugController::Stop](icordebugcontroller-stop-method.md) before calling [ICorDebugController::Continue](icordebugcontroller-continue-method.md).  
@@ -47,6 +48,7 @@ Provides methods to enable the debugger to execute code within the context of th
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

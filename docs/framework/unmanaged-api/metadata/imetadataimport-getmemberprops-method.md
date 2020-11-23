@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetMemberProps Method
+
 Gets information stored in the metadata for a specified member definition, including the name, binary signature, and relative virtual address, of the <xref:System.Type> member referenced by the specified metadata token. This is a simple helper method: if *mb* is a MethodDef, then **GetMethodProps** is called; if *mb* is a FieldDef, then **GetFieldProps** is called. See these other methods for details.
   
 ## Syntax  
@@ -40,6 +41,7 @@ HRESULT GetMemberProps (
 ```  
   
 ## Parameters  
+
  `mb`  
  [in] The token that references the member to get the associated metadata for.  
   
@@ -80,6 +82,7 @@ HRESULT GetMemberProps (
  [out] The size in characters of `ppValue`, or zero if `ppValue` does not hold a string.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

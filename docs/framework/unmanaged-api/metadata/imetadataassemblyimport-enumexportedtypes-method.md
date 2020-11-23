@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyImport::EnumExportedTypes Method
+
 Enumerates the exported types referenced in the assembly manifest in the current metadata scope.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT EnumExportedTypes (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be a null value when the `EnumExportedTypes` method is called for the first time.  
   
@@ -51,6 +53,7 @@ HRESULT EnumExportedTypes (
 |`S_FALSE`|There are no tokens to enumerate. In this case, `pcTokens` is set to zero.|  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

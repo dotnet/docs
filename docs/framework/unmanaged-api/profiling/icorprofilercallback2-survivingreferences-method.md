@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback2::SurvivingReferences Method
+
 Reports the layout of objects in the heap as a result of a non-compacting garbage collection.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT SurvivingReferences(
 ```  
   
 ## Parameters  
+
  `cSurvivingObjectIDRanges`  
  [in] The number of blocks of contiguous objects that survived as the result of the non-compacting garbage collection. That is, the value of `cSurvivingObjectIDRanges` is the size of the `objectIDRangeStart` and `cObjectIDRangeLength` arrays, which store an `ObjectID` and a length, respectively, for each block of objects.  
   
@@ -64,6 +66,7 @@ HRESULT SurvivingReferences(
  Multiple `SurvivingReferences` callbacks might be received during a particular garbage collection, due to limited internal buffering, multiple threads reporting in the case of server garbage collection, and other reasons. In the case of multiple callbacks during a garbage collection, the information is cumulative — all references that are reported in any `SurvivingReferences` callback survive the garbage collection.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

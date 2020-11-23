@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # SetPEKind Method
+
 Determines the portable executable type, either machine-specific or machine-agnostic.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetPEKind(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  ID of the assembly.  
   
@@ -43,9 +45,11 @@ HRESULT SetPEKind(
  The target machine architecture, as indicated in the NT header.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h.  
   
 ## See also

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRProbingAssemblyEnum::Get Method
+
 Gets the assembly identity at the specified index.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT Get (
 ```  
   
 ## Parameters  
+
  `dwIndex`  
  [in] The zero-based index of the assembly identity to return.  
   
@@ -53,11 +55,13 @@ HRESULT Get (
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to any hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The identity at index 0 is the identity specific to the processor architecture. The identity at index 1 is the architecture-neutral assembly for Microsoft intermediate language (MSIL). The identity at index 2 contains no architecture information.  
   
  `Get` is typically called twice. The first call supplies a null value for `pwzBuffer`, and sets `pcchBufferSize` to the size appropriate for `pwzBuffer`. The second call supplies an appropriately sized `pwzBuffer`, and contains the canonical assembly identity data upon completion.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

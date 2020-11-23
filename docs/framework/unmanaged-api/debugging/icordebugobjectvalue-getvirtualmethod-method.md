@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugObjectValue::GetVirtualMethod Method
+
 `GetVirtualMethod` is not implemented in this version of the .NET Framework.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetVirtualMethod (
 ```  
   
 ## Requirements  
+
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also

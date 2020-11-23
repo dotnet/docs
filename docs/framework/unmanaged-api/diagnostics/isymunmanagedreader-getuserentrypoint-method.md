@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedReader::GetUserEntryPoint Method
+
 Returns the method that was specified as the user entry point for the module, if any. For example, this method could be the user's main method rather than compiler-generated stubs before the main method.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT GetUserEntryPoint (
 ```  
   
 ## Parameters  
+
  `pToken`  
  [out] A pointer to a variable that receives the entry point.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

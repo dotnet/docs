@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback3::InitializeForAttach Method
+
 Called by the common language runtime (CLR) to give the profiler an opportunity to initialize its state after an attach operation.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT InitializeForAttach(
 ```  
   
 ## Parameters  
+
  `pCorProfilerInfoUnk`  
  [in] An interface pointer for the `ICorProfilerInfo*` interface.  
   
@@ -39,9 +41,11 @@ HRESULT InitializeForAttach(
  [in] The size, in bytes, of the data that `pvClientData` points to.  
   
 ## Remarks  
+
  The CLR calls `InitializeForAttach` to give the profiler an opportunity to request callbacks.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

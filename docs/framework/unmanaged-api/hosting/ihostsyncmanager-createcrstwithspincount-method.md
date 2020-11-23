@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSyncManager::CreateCrstWithSpinCount Method
+
 Creates a critical section object with spin count for synchronization.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT CreateCrstWithSpinCount (
 ```  
   
 ## Parameters  
+
  `dwSpinCount`  
  [in] Specifies the spin count for the critical section object.  
   
@@ -48,9 +50,11 @@ HRESULT CreateCrstWithSpinCount (
 |E_OUTOFMEMORY|Not enough memory was available to create the requested critical section.|  
   
 ## Remarks  
+
  A spin count is used only on a multi-processor system. The spin count specifies the number of times a calling thread must spin before it performs a wait operation on a semaphore that is associated with an unavailable critical section. If the critical section becomes free during the spin operation, the calling thread avoids the wait operation. `CreateCrstWithSpinCount` mirrors the Win32 `InitializeCriticalSectionAndSpinCount` function.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

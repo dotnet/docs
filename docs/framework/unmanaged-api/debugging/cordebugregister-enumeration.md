@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugRegister Enumeration
+
 Specifies the registers associated with a given processor architecture.  
   
 ## Syntax  
@@ -184,6 +185,7 @@ typedef enum CorDebugRegister {
 |`REGISTER_ARM_LR`|The link register (R14) on the ARM processor.|  
   
 ## Remarks  
+
  There are 128 general-purpose data registers and 128 floating-point data registers on the IA-64 processor, but only values `REGISTER_IA64_R0` and `REGISTER_IA64_F0` are provided. The other values can be determined as follows:  
   
 - Add the register number to `REGISTER_IA64_R0` for values `REGISTER_IA64_R1` through `REGISTER_IA64_R127`, which correspond to the #1 data register through the #127 data register on the IA-64 processor.  
@@ -193,6 +195,7 @@ typedef enum CorDebugRegister {
  For example, if you need to specify the #83 data register on the IA-64 processor, use `REGISTER_IA64_R0` + 83.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

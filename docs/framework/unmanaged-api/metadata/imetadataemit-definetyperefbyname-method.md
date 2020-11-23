@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineTypeRefByName Method
+
 Gets a metadata token for a type that is defined in the specified scope, which is outside the current scope.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT DefineTypeRefByName (
 ```  
   
 ## Parameters  
+
  `tkResolutionScope`  
  [in] The token specifying the resolution scope. The following token types are valid:  
   
@@ -50,6 +52,7 @@ HRESULT DefineTypeRefByName (
  [out] A pointer to the `mdTypeRef` token that is assigned to the type.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

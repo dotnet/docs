@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameGetPublicKey Function
+
 Gets the public key from a private/public key pair. The key pair can be supplied either as a key container name within a cryptographic service provider (CSP) or as a raw collection of bytes.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameGetPublicKey](../hosting/iclrstrongname-strongnamegetpublickey-method.md) method instead.  
@@ -34,6 +35,7 @@ BOOLEAN StrongNameGetPublicKey (
 ```  
   
 ## Parameters  
+
  `szKeyContainer`  
  [in] The name of the key container that contains the public/private key pair. If `pbKeyBlob` is null, `szKeyContainer` must specify a valid container within the CSP. In this case, `StrongNameGetPublicKey` extracts the public key from the key pair stored in the container.  
   
@@ -54,14 +56,17 @@ BOOLEAN StrongNameGetPublicKey (
  [out] The size of the returned public key BLOB.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
+
  The public key is contained in a [PublicKeyBlob](publickeyblob-structure.md) structure.  
   
  If the `StrongNameGetPublicKey` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

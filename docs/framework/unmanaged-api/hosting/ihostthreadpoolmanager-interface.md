@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostThreadPoolManager Interface
+
 Provides methods that enable the common language runtime (CLR) to configure the thread pool and to queue work items to the thread pool.  
   
 ## Methods  
@@ -30,9 +31,11 @@ Provides methods that enable the common language runtime (CLR) to configure the 
 |[SetMinThreads Method](ihostthreadpoolmanager-setminthreads-method.md)|Sets the minimum number of idle threads that the host must maintain in anticipation of requests.|  
   
 ## Remarks  
+
  The host is not required to configure the thread pool by using the values specified in calls to the `SetMaxThreads` and `SetMinThreads` methods. In this case, the host should return an HRESULT value of E_NOTIMPL from these methods.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

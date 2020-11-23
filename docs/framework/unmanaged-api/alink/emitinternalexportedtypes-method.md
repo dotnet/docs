@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # EmitInternalExportedTypes Method
+
 Emits types added to the assembly. Call this method after known internal types have been added.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT EmitInternalExportedTypes(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  ID of assembly.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h  
   
 ## See also

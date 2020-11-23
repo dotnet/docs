@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # GetStartupNotificationEvent Function
+
 Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetStartupNotificationEvent
 ```  
   
 ## Parameters  
+
  `debuggeePID`  
  [in] Process identifier of the target process from which to receive CLR startup notifications.  
   
@@ -38,6 +40,7 @@ HRESULT GetStartupNotificationEvent
  [out] A pointer to a handle that will be signaled by a CLR on startup.  
   
 ## Return Value  
+
  S_OK  
  Successfully obtained the handle to the startup notification event.  
   
@@ -48,11 +51,13 @@ HRESULT GetStartupNotificationEvent
  Unable to obtain the handle to the startup notification event.  
   
 ## Remarks  
+
  On the Windows operating system, `debuggeePID` maps to an OS process identifier.  
   
  The event is signaled before any managed code is executed by the CLR that signaled the event.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  

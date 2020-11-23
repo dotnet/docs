@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugExceptionObjectStackFrame Structure
+
 Represents stack frame information from an exception object.  
   
 ## Syntax  
@@ -39,9 +40,11 @@ typedef struct CorDebugExceptionObjectStackFrame {
 |`isLastForeignExceptionFrame`|A value that indicates whether the frame is the last frame in a foreign exception.|  
   
 ## Remarks  
+
  The caller must release the pointer to the ICorDebugModule object once it is no longer in use.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

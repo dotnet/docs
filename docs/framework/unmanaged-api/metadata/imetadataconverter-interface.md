@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataConverter Interface
+
 Provides methods to map type libraries to their metadata signatures, and to convert from one to the other.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides methods to map type libraries to their metadata signatures, and to conv
 |[GetTypeLibFromMetaData Method](imetadataconverter-gettypelibfrommetadata-method.md)|Gets a pointer to an `ITypeLib` instance that represents the type library that has the specified module and library names.|  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

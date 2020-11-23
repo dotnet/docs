@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 229b2188-9168-4b44-a987-e1f515494688
 ---
 # Fusion Global Static Functions
+
 This section describes the unmanaged global static functions that the fusion API uses.  
   
 ## In This Section  
+
  [ClearDownloadCache Function](cleardownloadcache-function.md)  
  Clears the global assembly cache of downloaded assemblies.  
   
@@ -60,6 +62,7 @@ This section describes the unmanaged global static functions that the fusion API
  Gets the post-policy display name for an assembly.  
   
 ## Related Sections  
+
  [Fusion Interfaces](fusion-interfaces.md)  
   
  [Fusion Enumerations](fusion-enumerations.md)  

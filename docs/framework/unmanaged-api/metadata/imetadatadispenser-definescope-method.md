@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataDispenser::DefineScope Method
+
 Creates a new area in memory in which you can create new metadata.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT DefineScope (
 ```  
   
 ## Parameters  
+
  `rclsid`  
  [in] The CLSID of the version of metadata structures to be created. This value must be CLSID_CorMetaDataRuntime for the .NET Framework version 2.0.  
   
@@ -46,11 +48,13 @@ HRESULT DefineScope (
  [out] The pointer to the returned interface.  
   
 ## Remarks  
+
  `DefineScope` creates a set of in-memory metadata tables, generates a unique GUID (module version identifier, or MVID) for the metadata, and creates an entry in the module table for the compilation unit being emitted.  
   
  You can attach attributes to the metadata scope as a whole by using the [IMetaDataEmit::SetModuleProps](imetadataemit-setmoduleprops-method.md) or [IMetaDataEmit::DefineCustomAttribute](imetadataemit-definecustomattribute-method.md) method, as appropriate.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

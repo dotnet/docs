@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugModule::GetToken Method
+
 Gets the token for the table entry for this module.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetToken(
 ```  
   
 ## Parameters  
+
  `pToken`  
  [out] A pointer to the `mdModule` token that references the module's metadata.  
   
 ## Remarks  
+
  The token can be passed to the [IMetaDataImport](../metadata/imetadataimport-interface.md), [IMetaDataImport2](../metadata/imetadataimport2-interface.md), and [IMetaDataAssemblyImport](../metadata/imetadataassemblyimport-interface.md) metadata import interfaces.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

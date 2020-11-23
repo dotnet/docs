@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEditAndContinueSnapshot::CopyMetaData Method
+
 `CopyMetaData` is obsolete. Do not call this method.  
   
 ## See also

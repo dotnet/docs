@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # CreateICeeFileGen Function
+
 Creates an [ICeeFileGen](iceefilegen-class.md) object.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -31,18 +32,22 @@ HRESULT CreateICeeFileGen (
 ```  
   
 ## Parameters  
+
  `ceeFileGen`  
  [out] A pointer to the address of a new `ICeeFileGen` object.  
   
 ## Return Value  
+
  This method returns standard COM error codes.  
   
 ## Remarks  
+
  The `ICeeFileGen` object is used to create common language runtime (CLR) portable executable (PE) files.  
   
  Call the [DestroyICeeFileGen](destroyiceefilegen-function.md) function to destroy the `ICeeFileGen` object when finished.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ICeeFileGen.h  

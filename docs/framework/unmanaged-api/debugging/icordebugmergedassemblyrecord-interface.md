@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fe280b11-9479-4e34-a07c-0d1ea8088422
 ---
 # ICorDebugMergedAssemblyRecord Interface
+
 Provides information about a merged assembly.  
   
 ## Methods  
@@ -23,6 +24,7 @@ Provides information about a merged assembly.
 > This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

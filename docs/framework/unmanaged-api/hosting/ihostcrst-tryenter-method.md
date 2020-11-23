@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostCrst::TryEnter Method
+
 Attempts to enter the critical section represented by the current [IHostCrst](ihostcrst-interface.md) instance.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT TryEnter (
 ```  
   
 ## Parameters  
+
  `option`  
  [in] One of the [WAIT_OPTION](wait-option-enumeration.md) values, indicating what action the host should take if the operation blocks.  
   
@@ -47,9 +49,11 @@ HRESULT TryEnter (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  `TryEnter` returns immediately and indicates whether the calling thread entered the critical section. This method mirrors the Wind32 `TryEnterCriticalSection` function.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

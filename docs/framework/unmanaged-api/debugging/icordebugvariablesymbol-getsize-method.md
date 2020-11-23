@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: add0cd9d-9a29-49b1-ae07-d9d3786b4ccd
 ---
 # ICorDebugVariableSymbol::GetSize Method
+
 Gets the size of a variable in bytes.  
   
 ## Syntax  
@@ -15,6 +16,7 @@ HRESULT GetSize(
 ```  
   
 ## Parameters  
+
  `pcbValue`  
  A pointer to a 32-bit unsigned integer containing the size of the variable.  
   
@@ -24,6 +26,7 @@ HRESULT GetSize(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

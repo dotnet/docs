@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CLR_DEBUGGING_PROCESS_FLAGS Enumeration
+
 Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](iclrdebugging-openvirtualprocess-method.md) method.  
   
 ## Syntax  
@@ -36,11 +37,13 @@ typedef enum CLR_DEBUGGING_PROCESS_FLAGS
 |`CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH`|The managed event that is pending is a <xref:System.Diagnostics.Debugger.Launch%2A?displayProperty=nameWithType> request.|  
   
 ## Remarks  
+
  Catch-up events include process, application domain, assembly, module, and thread creation notifications that bring the debugger up to the current state after it has attached to a process. Non-catch-up events, which are indicated by the `CLR_DEBUGGING_MANAGED_EVENT_PENDING` flag, include all other debugger events, such as exceptions and managed debugging assistant (MDA) notifications.  
   
  The `CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH` flag enables the runtime to differentiate between a terminating exception and a request to attach a managed debugger that can be canceled.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Metahost.idl, Metahost.h  

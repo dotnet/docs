@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IActionOnCLREvent Interface
+
 Provides the [IActionOnCLREvent::OnEvent](iactiononclrevent-onevent-method.md) method, which performs callbacks on events that have been registered by using a call to the [ICLROnEventManager::RegisterActionOnEvent](iclroneventmanager-registeractiononevent-method.md) method.  
   
 ## Methods  
@@ -25,6 +26,7 @@ Provides the [IActionOnCLREvent::OnEvent](iactiononclrevent-onevent-method.md) m
 |[OnEvent Method](iactiononclrevent-onevent-method.md)|Performs a callback for a registered event.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

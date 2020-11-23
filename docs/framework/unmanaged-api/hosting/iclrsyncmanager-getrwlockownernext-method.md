@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRSyncManager::GetRWLockOwnerNext Method
+
 Gets the next [IHostTask](ihosttask-interface.md) instance that is blocked on the current reader-writer lock.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetRWLockOwnerNext (
 ```  
   
 ## Parameters  
+
  `Iterator`  
  [in] The iterator that was created by using a call to [CreateRWLockOwnerIterator](iclrsyncmanager-createrwlockowneriterator-method.md).  
   
@@ -47,12 +49,14 @@ HRESULT GetRWLockOwnerNext (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  If `ppOwnerHostTask` is set to null, the iteration has terminated, and the host should call the [DeleteRWLockOwnerIterator](iclrsyncmanager-deleterwlockowneriterator-method.md) method.  
   
 > [!NOTE]
 > The CLR calls `AddRef` on the `IHostTask` to which `ppOwnerHostTask` points to prevent this task from exiting while the host holds the pointer. The host must call `Release` to decrement the reference count when it is finished.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

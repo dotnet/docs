@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 07a1a6e1-db73-4555-81df-bc4054c51492
 ---
 # .NET Framework 4 Hosting Global Static Functions
+
 The .NET Framework 4 introduces one new exported method in MSCorEE.dll: [CLRCreateIntstance](clrcreateinstance-function.md).  
   
 ## In This Section  
+
  [CLRCreateInstance Function](clrcreateinstance-function.md)  
  Provides one of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
   

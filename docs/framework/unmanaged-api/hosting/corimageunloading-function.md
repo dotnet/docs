@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # _CorImageUnloading Function
+
 Notifies the loader when the managed module images are unloaded.  
   
  This function is not implemented. If called, it returns E_NOTIMPL.  
@@ -29,10 +30,12 @@ STDAPI (VOID) _CorImageUnloading(
 ```  
   
 ## Parameters  
+
  `ImageBase`  
  [in] A pointer to the starting location of the image to unload.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

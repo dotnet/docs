@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IApartmentCallback Interface
+
 Provides methods for making callbacks within an apartment. An *apartment* is a logical container within a process for objects that share the same thread access requirements.  
   
 ## Methods  
@@ -25,6 +26,7 @@ Provides methods for making callbacks within an apartment. An *apartment* is a l
 |[DoCallback Method](iapartmentcallback-docallback-method.md)|Executes the specified function within an apartment.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

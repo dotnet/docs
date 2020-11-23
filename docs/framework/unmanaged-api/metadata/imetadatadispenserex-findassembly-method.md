@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataDispenserEx::FindAssembly Method
+
 This method is not implemented. If called, it returns E_NOTIMPL.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT FindAssembly(
 ```  
   
 ## Parameters  
+
  `szAppBase`  
  [in] Not used.  
   
@@ -56,6 +58,7 @@ HRESULT FindAssembly(
  [out] The number of characters actually returned in `szName`.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IInstallReferenceEnum Interface
+
 Represents an enumerator for the referenced assemblies installed in the global assembly cache.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ interface IInstallReferenceEnum : IUnknown {
 |[GetNextInstallReferenceItem Method](iinstallreferenceenum-getnextinstallreferenceitem-method.md)|Gets a pointer to the next `IInstallReferenceItem` contained in this `IInstallReferenceEnum`.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

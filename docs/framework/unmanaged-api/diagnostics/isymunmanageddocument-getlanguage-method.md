@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedDocument::GetLanguage Method
+
 Gets the language identifier of this document  
   
 ## Syntax  
@@ -27,10 +28,12 @@ HRESULT GetLanguage(
 ```  
   
 ## Parameters  
+
  `pRetVal`  
  [out] A pointer to a variable that receives the language identifier.  
   
 ## Return Value  
+
  S_OK if the method succeeds.  
   
 ## See also

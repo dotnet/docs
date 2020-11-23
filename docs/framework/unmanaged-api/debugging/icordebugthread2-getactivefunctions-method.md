@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread2::GetActiveFunctions Method
+
 Gets information about the active function in each of this thread's frames.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetActiveFunctions (
 ```  
   
 ## Parameters  
+
  `cFunctions`  
  [in] The size of the `pFunctions` array.  
   
@@ -43,11 +45,13 @@ HRESULT GetActiveFunctions (
  The first element will be used for the leaf frame, and so on back to the root of the stack.  
   
 ## Remarks  
+
  If `pFunctions` is null on input, `GetActiveFunctions` returns only the number of functions that are on the stack. That is, If `pFunctions` is null on input, `GetActiveFunctions` returns a value only in `pcFunctions`.  
   
  The `GetActiveFunctions` method is intended as an optimization over getting the same information from frames in a stack trace, and includes only frames that would have had an ICorDebugILFrame object for them in the full stack trace.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

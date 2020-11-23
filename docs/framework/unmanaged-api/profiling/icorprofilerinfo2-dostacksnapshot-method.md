@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::DoStackSnapshot Method
+
 Walks the managed frames on the stack for the specified thread, and sends information to the profiler through a callback.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT DoStackSnapshot(
 ```  
   
 ## Parameters  
+
  `thread`  
  [in] The ID of the target thread.  
   
@@ -59,6 +61,7 @@ HRESULT DoStackSnapshot(
  [in] The size of the `CONTEXT` structure, which is referenced by the `context` parameter.  
   
 ## Remarks  
+
  Passing null for `thread` yields a snapshot of the current thread. Snapshots can be taken of other threads only if the target thread is suspended at the time.  
   
  When the profiler wants to walk the stack, it calls `DoStackSnapshot`. Before the CLR returns from that call, it calls your `StackSnapshotCallback` several times, once for each managed frame (or run of unmanaged frames) on the stack. When unmanaged frames are encountered, you must walk them yourself.  
@@ -70,11 +73,13 @@ HRESULT DoStackSnapshot(
  A stack walk can be synchronous or asynchronous, as explained in the following sections.  
   
 ## Synchronous Stack Walk  
+
  A synchronous stack walk involves walking the stack of the current thread in response to a callback. It does not require seeding or suspending.  
   
  You make a synchronous call when, in response to the CLR calling one of your profiler's [ICorProfilerCallback](icorprofilercallback-interface.md) (or [ICorProfilerCallback2](icorprofilercallback2-interface.md)) methods, you call `DoStackSnapshot` to walk the stack of the current thread. This is useful when you want to see what the stack looks like at a notification such as [ICorProfilerCallback::ObjectAllocated](icorprofilercallback-objectallocated-method.md). You just call `DoStackSnapshot` from within your `ICorProfilerCallback` method, passing null in the `context` and `thread` parameters.  
   
 ## Asynchronous Stack Walk  
+
  An asynchronous stack walk entails walking the stack of a different thread, or walking the stack of the current thread, not in response to a callback, but by hijacking the current thread's instruction pointer. An asynchronous walk requires a seed if the top of the stack is unmanaged code that is not part of a platform invoke (PInvoke) or COM call, but helper code in the CLR itself. For example, code that does just-in-time (JIT) compiling or garbage collection is helper code.  
   
  You obtain a seed by directly suspending the target thread and walking its stack yourself, until you find the topmost managed frame. After the target thread is suspended, get the target thread's current register context. Next, determine whether the register context points to unmanaged code by calling [ICorProfilerInfo::GetFunctionFromIP](icorprofilerinfo-getfunctionfromip-method.md) — if it returns a `FunctionID` equal to zero, the frame is unmanaged code. Now, walk the stack until you reach the first managed frame, and then calculate the seed context based on the register context for that frame.  
@@ -92,6 +97,7 @@ HRESULT DoStackSnapshot(
  There is also a risk of deadlock if you call `DoStackSnapshot` from a thread that your profiler has created so that you can walk the stack of a separate target thread. The first time the thread you created enters certain `ICorProfilerInfo*` methods (including `DoStackSnapshot`), the CLR will perform per-thread, CLR-specific initialization on that thread. If your profiler has suspended the target thread whose stack you are trying to walk, and if that target thread happened to own a lock necessary for performing this per-thread initialization, a deadlock will occur. To avoid this deadlock, make an initial call into `DoStackSnapshot` from your profiler-created thread to walk a separate target thread, but do not suspend the target thread first. This initial call ensures that the per-thread initialization can complete without deadlock. If `DoStackSnapshot` succeeds and reports at least one frame, after that point, it will be safe for that profiler-created thread to suspend any target thread and call `DoStackSnapshot` to walk the stack of that target thread.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

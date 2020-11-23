@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRStrongName::GetHashFromFileW Method
+
 Generates a hash over the contents of the file specified by a Unicode string.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetHashFromFileW (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] The Unicode name of the file to hash.  
   
@@ -48,12 +50,15 @@ HRESULT GetHashFromFileW (
  [out] The size, in bytes, of `pbHash`.  
   
 ## Return Value  
+
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Remarks  
+
  This method is the same as the [ICLRStrongName::GetHashFromFile](iclrstrongname-gethashfromfile-method.md) method, except that the file name specification is Unicode instead of ANSI.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

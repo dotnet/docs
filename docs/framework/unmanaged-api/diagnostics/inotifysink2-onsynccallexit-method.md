@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # INotifySink2::OnSyncCallExit Method
+
 Gets invoked when exiting a call.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT OnSyncCallExit
 ```  
   
 ## Parameters  
+
  `in_CallID`  
  [in] ID of the call being exited. See [CALL_ID Structure](call-id-structure.md).  
   
@@ -41,9 +43,11 @@ HRESULT OnSyncCallExit
  [out] Size of the call buffer, in bytes.  
   
 ## Return Value  
+
  S_OK if the method succeeds.  
   
 ## Requirements  
+
  **Header:** ProtocolNotify2.idl  
   
 ## See also

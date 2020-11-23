@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugObjectValue::SetFromManagedCopy Method
+
 `SetFromManagedCopy` is obsolete. Do not call this method.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetFromManagedCopy (
 ```  
   
 ## Requirements  
+
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also

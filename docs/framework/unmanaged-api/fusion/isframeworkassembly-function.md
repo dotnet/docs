@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IsFrameworkAssembly Function
+
 Gets a value that indicates whether the specified assembly is managed.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT IsFrameworkAssembly (
 ```  
   
 ## Parameters  
+
  `pwzAssemblyReference`  
  [in] The name of the assembly to check.  
   
@@ -43,6 +45,7 @@ HRESULT IsFrameworkAssembly (
  [in] The size of `pwzFrameworkAssemblyIdentity`.  
   
 ## Remarks  
+
  The `pwzAssemblyReference` parameter is a pointer to a character string that contains the name of an assembly.  
   
  If this assembly is part of the .NET Framework, the `pbIsFrameworkAssembly` parameter will contain a Boolean value of `true`.  
@@ -50,6 +53,7 @@ HRESULT IsFrameworkAssembly (
  If the named assembly is not part of the .NET Framework, or if the `pwzAssemblyReference` parameter does not name an assembly, `pbIsFrameworkAssembly` will contain a Boolean value of `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
 ## See also

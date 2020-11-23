@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # SetManifestFile Method
+
 Enables you to specify or reset the manifest file that the linker uses when it creates the assembly.  
   
 ## Syntax  
@@ -27,17 +28,21 @@ HRESULT SetManifestFile(
 ```  
   
 ## Parameters  
+
  `pszFile`  
   
  The name of the manifest file whose contents are put into the Win32 resources blob.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Remarks  
+
  Call this before asking for the Win32ResBlob. The value of the `pszFile` parameter is the name of the manifest file whose contents are read and put in the Win32 resources with ID of RT_MANIFEST. When called by using a parameter of NULL, any previously read manifest is cleared. This enables one to reset the state of the linker to that of initialization time.  
   
 ## Requirements  
+
  Requires aLink.h  
   
 ## See also

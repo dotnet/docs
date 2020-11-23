@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IcorDebugVariableHome::GetLiveRange Method
+
 Gets the native range over which this variable is live.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetLiveRange(
 ```  
   
 ## Parameters  
+
  `pStartOffset`  
  [out] The logical offset at which the variable is first live.  
   
@@ -36,6 +38,7 @@ HRESULT GetLiveRange(
  [out] The logical offset immediately after the point at which the variable is last live.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

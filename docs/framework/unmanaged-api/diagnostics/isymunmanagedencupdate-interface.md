@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedENCUpdate Interface
+
 Provides functions for the Edit and Continue feature.  
   
 ## Methods  
@@ -29,6 +30,7 @@ Provides functions for the Edit and Continue feature.
 |[UpdateSymbolStore2 Method](isymunmanagedencupdate-updatesymbolstore2-method.md)|Allows a compiler to omit functions that have not been modified from the program database (PDB) stream, provided that the line information meets the requirements. The correct line information can be determined with the old PDB line information and one delta for all lines in the function.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

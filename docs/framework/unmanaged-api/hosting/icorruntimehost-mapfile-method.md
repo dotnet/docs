@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorRuntimeHost::MapFile Method
+
 Maps the specified file into memory. This method is obsolete.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT MapFile(
 ```  
   
 ## Parameters  
+
  `hFile`  
  [in] The handle of the file to be mapped.  
   
@@ -36,6 +38,7 @@ HRESULT MapFile(
  [out] The starting memory address at which to begin mapping the file.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

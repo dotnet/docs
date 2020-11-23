@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IAssemblyCache Interface
+
 Represents the global assembly cache for use by the fusion technology.  
   
 ## Methods  
@@ -29,6 +30,7 @@ Represents the global assembly cache for use by the fusion technology.
 |[UninstallAssembly Method](iassemblycache-uninstallassembly-method.md)|Uninstalls the specified assembly from the global assembly cache.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

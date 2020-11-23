@@ -12,6 +12,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo5 Interface
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  A subclass of [ICorProfilerInfo4](icorprofilerinfo4-interface.md) that provides methods for use by code profilers to communicate with the common language runtime (CLR) to control event monitoring.  
@@ -24,9 +25,11 @@ topic_type:
 |[SetEventMask2 Method](icorprofilerinfo5-seteventmask2-method.md)|Sets a value that specifies the types of events for which the profiler wants to receive event notifications from the CLR.|  
   
 ## Remarks  
+
  The methods available on this interface are intended to replace the [ICorProfilerInfo::GetEventMask](icorprofilerinfo-geteventmask-method.md) and [ICorProfilerInfo::SetEventMask](icorprofilerinfo-seteventmask-method.md) methods.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetPermissionSetProps Method
+
 Gets the metadata associated with the <xref:System.Security.PermissionSet?displayProperty=nameWithType> represented by the specified Permission token.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetPermissionSetProps (
 ```  
   
 ## Parameters  
+
  `pm`  
  [in] The Permission metadata token that represents the permission set to get the metadata properties for.  
   
@@ -44,6 +46,7 @@ HRESULT GetPermissionSetProps (
  [out] The size in bytes of `ppvPermission`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

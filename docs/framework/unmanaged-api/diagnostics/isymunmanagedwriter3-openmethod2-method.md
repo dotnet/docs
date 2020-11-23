@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter3::OpenMethod2 Method
+
 Opens a method and provides its real section offset in the image.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT OpenMethod2(
 ```  
   
 ## Parameters  
+
  `method`  
  [in] The metadata token for the method to be opened.  
   
@@ -39,9 +41,11 @@ HRESULT OpenMethod2(
  [in] The offset in the image.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

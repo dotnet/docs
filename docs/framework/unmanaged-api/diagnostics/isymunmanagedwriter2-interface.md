@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter2 Interface
+
 Represents a symbol writer, and provides methods to define documents, sequence points, lexical scopes, and variables. This interface extends the [ISymUnmanagedWriter](isymunmanagedwriter-interface.md) interface.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Represents a symbol writer, and provides methods to define documents, sequence p
 |[DefineLocalVariable2 Method](isymunmanagedwriter2-definelocalvariable2-method.md)|Defines a single variable in the current lexical scope.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # EPolicyAction Enumeration
+
 Describes the policy actions the host can set for operations described by [EClrOperation](eclroperation-enumeration.md) and failures described by [EClrFailure](eclrfailure-enumeration.md).  
   
 ## Syntax  
@@ -51,9 +52,11 @@ typedef enum {
 |`eUnloadAppDomain`|Specifies that the <xref:System.AppDomain> should be unloaded. The CLR attempts to run finalizers.|  
   
 ## Remarks  
+
  The host sets policy actions by calling methods of the [ICLRPolicyManager](iclrpolicymanager-interface.md) interface. For information about rude and graceful aborts, see the [EClrOperation](eclroperation-enumeration.md) enumeration.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

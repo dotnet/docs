@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAppDomainResourceMonitor::GetCurrentSurvived Method
+
 Gets the number of bytes that survived the last full, blocking garbage collection and that are referenced by the current application domain.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
 ```  
   
 ## Parameters  
+
  `dwAppDomainId`  
  [in] The ID of the requested application domain.  
   
@@ -39,6 +41,7 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
  [out] A pointer to the total number of bytes that survived from the last garbage collection. After a full collection, this number represents the number of the bytes that are held in managed heaps. After an ephemeral collection, this number represents the number of bytes that are held live in ephemeral generations. This parameter can be `null`.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -47,11 +50,13 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
 |COR_E_APPDOMAINUNLOADED|The application domain has been unloaded or does not exist.|  
   
 ## Remarks  
+
  Statistics are updated only after a full, blocking garbage collection; that is, a collection that includes all generations and that stops the application while collection occurs. For example, the <xref:System.GC.Collect?displayProperty=nameWithType> method overload performs a full, blocking collection. Concurrent garbage collection occurs in the background and does not block the application.  
   
  The `GetCurrentSurvived` method is the unmanaged equivalent of the managed <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=nameWithType> property.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

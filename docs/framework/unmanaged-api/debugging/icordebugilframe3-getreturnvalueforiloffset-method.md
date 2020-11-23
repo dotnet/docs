@@ -15,6 +15,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILFrame3::GetReturnValueForILOffset Method
+
 Gets an "ICorDebugValue" object that encapsulates the return value of a function.  
   
 ## Syntax  
@@ -27,6 +28,7 @@ HRESULT GetReturnValueForILOffset(
 ```  
   
 ## Parameters  
+
  `ILOffset`  
  The IL offset. See the Remarks section.  
   
@@ -34,6 +36,7 @@ HRESULT GetReturnValueForILOffset(
  A pointer to the address of an "ICorDebugValue" interface object that provides information about the return value of a function call.  
   
 ## Remarks  
+
  This method is used along with the [ICorDebugCode3::GetReturnValueLiveOffset](icordebugcode3-getreturnvalueliveoffset-method.md) method to get the return value of a method. It is particularly useful in the case of methods whose return values are ignored, as in the following two code examples. The first example calls the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method, but ignores the method's return value.  
   
  [!code-csharp[Unmanaged.Debugging.MRV#1](../../../../samples/snippets/csharp/VS_Snippets_CLR/unmanaged.debugging.mrv/cs/mrv1.cs#1)]
@@ -56,6 +59,7 @@ HRESULT GetReturnValueForILOffset(
  The `ICorDebugILFrame3::GetReturnValueForILOffset` method is available only on x86-based and AMD64 systems.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

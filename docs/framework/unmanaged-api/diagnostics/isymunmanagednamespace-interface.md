@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedNamespace Interface
+
 Represents a namespace.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Represents a namespace.
 |[GetVariables Method](isymunmanagednamespace-getvariables-method.md)|Returns all variables defined at global scope within this namespace.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

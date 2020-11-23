@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRGCManager2 Interface
+
 Provides methods that allow a host to interact with the common language runtime's garbage collection system.  
   
 ## Methods  
@@ -25,11 +26,13 @@ Provides methods that allow a host to interact with the common language runtime'
 |[SetGCStartupLimitsEx Method](iclrgcmanager2-setgcstartuplimitsex-method.md)|Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0. Enables generation 0 and segment sizes larger than `DWORD`.|  
   
 ## Remarks  
+
  This interface inherits from the [ICLRGCManager Interface](iclrgcmanager-interface.md).  
   
  The common language runtime (CLR) implements its garbage collection mechanism with the managed <xref:System.GC> type. For more information about the garbage collection system, see [Garbage Collection](../../../standard/garbage-collection/index.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

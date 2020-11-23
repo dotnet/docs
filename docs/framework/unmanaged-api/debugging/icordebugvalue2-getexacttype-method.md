@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugValue2::GetExactType Method
+
 Gets an interface pointer to an "ICorDebugType" object that represents the <xref:System.Type> of this value.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetExactType (
 ```  
   
 ## Parameters  
+
  `ppType`  
  [out] A pointer to the address of an `ICorDebugType` object that represents the <xref:System.Type> of the value represented by this "ICorDebugValue2" object.  
   
 ## Remarks  
+
  The generics-aware `GetExactType` method supersedes both the [ICorDebugObjectValue::GetClass](icordebugobjectvalue-getclass-method.md) and the [ICorDebugValue::GetType](icordebugvalue-gettype-method.md) methods, each of which return information about the type of a value.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedScope::GetLocalCount Method
+
 Gets a count of the local variables defined within this scope.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT GetLocalCount(
 ```  
   
 ## Parameters  
+
  `pRetVal`  
  [out] A pointer to a `ULONG32` that receives the count of local variables.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

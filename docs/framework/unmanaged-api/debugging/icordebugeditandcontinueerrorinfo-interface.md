@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEditAndContinueErrorInfo Interface
+
 `ICorDebugEditAndContinueErrorInfo` is obsolete. Do not use this interface.  
   
 ## See also

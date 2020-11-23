@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: f8f20967-ea17-4900-bf05-87a078095fe6
 ---
 # Fusion (Unmanaged API Reference)
+
 The fusion API enables a runtime host to access the properties of an application's resources in order to locate the correct versions of those resources for the application.  
   
 ## In This Section  
+
  [Fusion Interfaces](fusion-interfaces.md)  
  Describes the unmanaged interfaces that the fusion API uses.  
   

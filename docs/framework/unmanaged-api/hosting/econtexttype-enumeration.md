@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # EContextType Enumeration
+
 Describes the security context of the currently executing thread.  
   
 ## Syntax  
@@ -35,9 +36,11 @@ typedef enum {
 |`eRestrictedContext`|Indicates a context over which the host has lower privileges, such as the garbage collector, or class or module constructors.|  
   
 ## Remarks  
+
  The CLR supplies one of the `EContextType` values as a parameter value in calls to the `IHostSecurityManager::GetSecurityContext` and `IHostSecurityManager::SetSecurityContext` methods.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

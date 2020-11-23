@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference Method
+
 Gets an [ICLRProbingAssemblyEnum](iclrprobingassemblyenum-interface.md) enumerator for the assembly identities referenced by the assembly with the specified identity type.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetProbingAssembliesFromReference (
 ```  
   
 ## Parameters  
+
  `dwMachineType`  
  [in] A valid value that specifies the processor architecture, as defined in WinNT.h.  
   
@@ -55,6 +57,7 @@ HRESULT GetProbingAssembliesFromReference (
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

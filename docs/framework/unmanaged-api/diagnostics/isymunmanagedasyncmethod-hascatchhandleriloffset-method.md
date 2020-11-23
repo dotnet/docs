@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a9ce105c-6495-49ab-b0e5-903a48ebadb3
 ---
 # ISymUnmanagedAsyncMethod::HasCatchHandlerILOffset Method
+
 See [DefineCatchHandlerILOffset Method](isymunmanagedasyncmethodpropertieswriter-definecatchhandleriloffset-method.md).  
   
 ## Syntax  
@@ -19,9 +20,11 @@ HRESULT HasCatchHandlerILOffset(    [out, retval] BOOL* pRetVal);
 |`pRetVal`||  
   
 ## Return Value  
+
  Returns `HRESULT`.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

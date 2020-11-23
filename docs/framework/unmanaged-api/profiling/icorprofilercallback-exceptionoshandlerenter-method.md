@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ExceptionOSHandlerEnter Method
+
 Not implemented. A profiler that needs unmanaged exception information must obtain this information through other means.  
   
 ## Syntax  
@@ -27,6 +28,7 @@ HRESULT ExceptionOSHandlerEnter(
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

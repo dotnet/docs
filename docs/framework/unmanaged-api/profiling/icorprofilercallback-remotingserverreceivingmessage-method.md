@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::RemotingServerReceivingMessage Method
+
 Notifies the profiler that the process has received a remote method invocation or activation request.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT RemotingClientSendingMessage(
 ```  
   
 ## Parameters  
+
  `pCookie`  
  [in] A value that will correspond with the value provided in [ICorProfilerCallback::RemotingClientSendingMessage](icorprofilercallback-remotingclientsendingmessage-method.md) under these conditions:  
   
@@ -43,9 +45,11 @@ HRESULT RemotingClientSendingMessage(
  [in] A value that is `true` if the call is asynchronous; otherwise, `false`.  
   
 ## Remarks  
+
  If the message request is asynchronous, the request can be serviced by any arbitrary thread.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

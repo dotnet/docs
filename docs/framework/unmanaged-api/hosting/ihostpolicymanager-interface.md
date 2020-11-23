@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostPolicyManager Interface
+
 Provides methods that notify the host of the actions the common language runtime (CLR) performs in case of aborts, timeouts, or failures.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides methods that notify the host of the actions the common language runtime
 |[OnTimeout Method](ihostpolicymanager-ontimeout-method.md)|Notifies the host that the CLR is about to take the action specified by a call to [ICLRPolicyManager::SetActionOnTimeout](iclrpolicymanager-setactionontimeout-method.md) in response to a timeout.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

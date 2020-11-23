@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::UnmanagedToManagedTransition Method
+
 Notifies the profiler that a transition from unmanaged code to managed code has occurred.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT UnmanagedToManagedTransition(
 ```  
   
 ## Parameters  
+
  `functionId`  
  [in] The ID of the function that is being called.  
   
@@ -35,11 +37,13 @@ HRESULT UnmanagedToManagedTransition(
  [in] A value of the [COR_PRF_TRANSITION_REASON](cor-prf-transition-reason-enumeration.md) enumeration that indicates whether the transition occurred because of a call into managed code from unmanaged code, or because of a return from an unmanaged function called by a managed one.  
   
 ## Remarks  
+
  If the value of `reason` is COR_PRF_TRANSITION_RETURN and `functionId` is not null, the function ID is that of the unmanaged function, and will never have been compiled using the just-in-time (JIT) compiler. Unmanaged functions have some basic information associated with them, such as a name and some metadata.  
   
  If the value of `reason` is COR_PRF_TRANSITION_CALL, it may be possible that the called function (that is, the managed function) has not yet been JIT-compiled.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

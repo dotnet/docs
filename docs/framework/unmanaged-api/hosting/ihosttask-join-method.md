@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTask::Join Method
+
 Blocks the calling task until the task represented by the current [IHostTask](ihosttask-interface.md) instance completes, the specified time interval elapses, or [IHostTask::Alert](ihosttask-alert-method.md) is called.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT Join (
 ```  
   
 ## Parameters  
+
  `milliseconds`  
  [in] The time interval, in milliseconds, to wait for the task to terminate. If this interval elapses before the task terminates, the calling task unblocks.  
   
@@ -47,6 +49,7 @@ HRESULT Join (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

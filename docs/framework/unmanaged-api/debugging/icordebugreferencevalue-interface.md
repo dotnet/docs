@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugReferenceValue Interface
+
 Provides methods that manage a value that is a reference to an object. (That is, this interface provides methods that manage a pointer.) This interface implements "ICorDebugValue".  
   
 ## Methods  
@@ -29,6 +30,7 @@ Provides methods that manage a value that is a reference to an object. (That is,
 |[SetValue Method](icordebugreferencevalue-setvalue-method.md)|Sets the current memory address. That is, this method sets this `ICorDebugReferenceValue` to point to an object.|  
   
 ## Remarks  
+
  The common language runtime (CLR) may do a garbage collection on objects when the debugged process is continued. The garbage collection may move objects around in memory. An `ICorDebugReferenceValue` will either cooperate with the garbage collection so that its information is updated after the garbage collection, or it will be invalidated implicitly before the garbage collection.  
   
  The `ICorDebugReferenceValue` object may be implicitly invalidated after the debugged process has been continued. The derived "ICorDebugHandleValue" is not invalidated until it is explicitly released or exposed.  
@@ -37,6 +39,7 @@ Provides methods that manage a value that is a reference to an object. (That is,
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

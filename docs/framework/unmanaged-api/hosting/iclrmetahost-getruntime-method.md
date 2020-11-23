@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMetaHost::GetRuntime Method
+
 Gets the [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface that corresponds to a particular version of the common language runtime (CLR). This method supersedes the [CorBindToRuntimeEx](corbindtoruntimeex-function.md) function used with the [STARTUP_LOADER_SAFEMODE](startup-flags-enumeration.md) flag.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetRuntime (
 ```  
   
 ## Parameters  
+
  `pwzVersion`  
  [in] The .NET Framework compilation version stored in the metadata, in the format "v*A*.*B*[.*X*]". *A*, *B*, and *X* are decimal numbers that correspond to the major version, the minor version, and the build number.  
   
@@ -45,6 +47,7 @@ HRESULT GetRuntime (
  [out] A pointer to the [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface that corresponds to the requested runtime.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -53,9 +56,11 @@ HRESULT GetRuntime (
 |E_POINTER|`pwzVersion` or `ppRuntime` is null.|  
   
 ## Remarks  
+
  This method interacts consistently with legacy interfaces such as the [ICorRuntimeHost](icorruntimehost-interface.md) interface and legacy functions such as the deprecated `CorBindTo*` functions (see [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md) in the .NET Framework 2.0 hosting API). That is, runtimes that are loaded with the legacy API are visible to the new API, and runtimes that are loaded with the new API are visible to the legacy API.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

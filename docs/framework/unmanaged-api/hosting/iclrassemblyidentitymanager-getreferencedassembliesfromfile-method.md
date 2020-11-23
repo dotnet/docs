@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAssemblyIdentityManager::GetReferencedAssembliesFromFile Method
+
 Gets an [ICLRReferenceAssemblyEnum](iclrreferenceassemblyenum-interface.md) instance that contains a list of assemblies referenced by the assembly at the specified file path.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetReferencedAssembliesFromFile (
 ```  
   
 ## Parameters  
+
  `pwzFilePath`  
  [in] The path to the assembly to be evaluated.  
   
@@ -55,9 +57,11 @@ HRESULT GetReferencedAssembliesFromFile (
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The caller can choose to exclude a set of known assembly references from the returned list. This set is defined by the `pExcludeAssembliesList` parameter.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

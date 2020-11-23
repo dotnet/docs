@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSemaphore Interface
+
 Represents the host's implementation of a semaphore for threading.  
   
 ## Methods  
@@ -26,6 +27,7 @@ Represents the host's implementation of a semaphore for threading.
 |[Wait Method](ihostsemaphore-wait-method.md)|Causes the current `IHostSemaphore` instance to wait until it is owned or the specified amount of time elapses.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

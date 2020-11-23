@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTask2::BeginPreventAsyncAbort Method
+
 Delays new thread abort requests from resulting in thread aborts on the current thread.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT BeginPreventAsyncAbort();
 ```  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -34,6 +36,7 @@ HRESULT BeginPreventAsyncAbort();
 |HOST_E_INVALIDOPERATION|The method was called on a thread which is not the current thread.|  
   
 ## Remarks  
+
  Calling this method increments the delay-thread-abort counter for the current thread by one.  
   
  Calls to `BeginPreventAsyncAbort` and [ICLRTask2::EndPreventAsyncAbort](iclrtask2-endpreventasyncabort-method.md) can be nested. As long as the counter is greater than zero, thread aborts for the current thread are delayed. If this call is not paired with a call to the `EndPreventAsyncAbort` method, it is possible to reach a state in which thread aborts cannot be delivered to the current thread.  
@@ -43,6 +46,7 @@ HRESULT BeginPreventAsyncAbort();
  The functionality that is exposed by this feature is used internally by the virtual machine (VM). Misuse of these methods may cause unspecified behavior in the VM. For example, calling `EndPreventAsyncAbort` without first calling `BeginPreventAsyncAbort` could set the counter to zero when the VM has previously incremented it. Similarly, the internal counter is not checked for overflow. If it exceeds its integral limit because it is incremented by both the host and the VM, the resulting behavior is unspecified.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

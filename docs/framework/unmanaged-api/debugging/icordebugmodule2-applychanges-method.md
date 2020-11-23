@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugModule2::ApplyChanges Method
+
 Applies the changes in the metadata and the changes in the Microsoft intermediate language (MSIL) code to the running process.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT ApplyChanges (
 ```  
   
 ## Parameters  
+
  `cbMetadata`  
  [in] Size, in bytes, of the delta metadata.  
   
@@ -46,6 +48,7 @@ HRESULT ApplyChanges (
  [in] Buffer that contains the updated MSIL code.  
   
 ## Remarks  
+
  The `pbMetadata` parameter is in a special delta metadata format (as output by [IMetaDataEmit2::SaveDeltaToMemory](../metadata/imetadataemit2-savedeltatomemory-method.md)). `pbMetadata` takes previous metadata as a base and describes individual changes to apply to that base.  
   
  In contrast, the `pbIL[`] parameter contains the new MSIL for the updated method, and is meant to completely replace the previous MSIL for that method  
@@ -57,6 +60,7 @@ HRESULT ApplyChanges (
  If the `ApplyChanges` method fails, the debug session is in an invalid state and must be restarted.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

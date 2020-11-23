@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAssemblyIdentityManager Interface
+
 Provides methods that support communication between the host and the common language runtime (CLR) about assemblies.  
   
 ## Methods  
@@ -31,9 +32,11 @@ Provides methods that support communication between the host and the common lang
 |[IsStronglyNamed Method](iclrassemblyidentitymanager-isstronglynamed-method.md)|Gets a value that indicates whether the specified assembly is strongly named.|  
   
 ## Remarks  
+
  Use `ICLRAssemblyIdentityManager` to get instances of `ICLRAssemblyReferenceList` and to enumerate assembly identities.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

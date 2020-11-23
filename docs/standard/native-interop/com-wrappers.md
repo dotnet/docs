@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: e56c485b-6b67-4345-8e66-fd21835a6092
 ---
 # COM Wrappers
+
 COM differs from the .NET runtime object model in several important ways:  
   
 - Clients of COM objects must manage the lifetime of those objects; the common language runtime manages the lifetime of objects in its environment.  

@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 27ece374-ed5b-49ef-9cec-b20db34a65e8
 ---
 # How to: Specify a Task Scheduler in a Dataflow Block
+
 This document demonstrates how to associate a specific task scheduler when you use dataflow in your application. The example uses the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair?displayProperty=nameWithType> class in a Windows Forms application to show when reader tasks are active and when a writer task is active. It also uses the <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=nameWithType> method to enable a dataflow block to run on the user-interface thread.
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
@@ -24,6 +25,7 @@ This document demonstrates how to associate a specific task scheduler when you u
 3. Add a <xref:System.Windows.Forms.Timer> control to the form. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property to `2500`.  
   
 ## Adding Dataflow Functionality  
+
  This section describes how to create the dataflow blocks that participate in the application and how to associate each one with a task scheduler.  
   
 ### To Add Dataflow Functionality to the Application  
@@ -67,6 +69,7 @@ This document demonstrates how to associate a specific task scheduler when you u
  This example also uses the <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair> class to enable some dataflow blocks to act concurrently, and another dataflow block to act exclusive with respect to all other dataflow blocks that run on the same <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair> object. This technique is useful when multiple dataflow blocks share a resource and some require exclusive access to that resource, because it eliminates the requirement to manually synchronize access to that resource. The elimination of manual synchronization can make code more efficient.  
   
 ## Example  
+
  The following example shows the complete code for Form1.cs (Form1.vb for Visual Basic).  
   
  [!code-csharp[TPLDataflow_WriterReadersWinForms#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#100)]

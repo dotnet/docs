@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
 ---
 # How to: Cancel a Task and Its Children
+
 These examples show how to perform the following tasks:  
   
 1. Create and start a cancelable task.  
@@ -23,6 +24,7 @@ These examples show how to perform the following tasks:
  The calling thread does not forcibly end the task; it only signals that cancellation is requested. If the task is already running, it is up to the user delegate to notice the request and respond appropriately. If cancellation is requested before the task runs, then the user delegate is never executed and the task object transitions into the Canceled state.  
   
 ## Example  
+
  This example shows how to terminate a <xref:System.Threading.Tasks.Task> and its children in response to a cancellation request. It also shows that when a user delegate terminates by throwing a <xref:System.Threading.Tasks.TaskCanceledException>, the calling thread can optionally use the <xref:System.Threading.Tasks.Task.Wait%2A> method or <xref:System.Threading.Tasks.Task.WaitAll%2A> method to wait for the tasks to finish. In this case, you must use a `try/catch` block to handle the exceptions on the calling thread.  
   
  [!code-csharp[TPL_Cancellation#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_cancellation/cs/cancel1.cs#04)]

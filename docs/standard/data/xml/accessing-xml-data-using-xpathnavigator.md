@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: c57b46e6-5c77-408f-bc4e-67a5dcc9cc05
 ---
 # Accessing XML Data using XPathNavigator
+
 The <xref:System.Xml.XPath.XPathNavigator> class provides methods to navigate nodes, extract XML data and access strongly typed XML data in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object.  
   
 ## In This Section  
+
  [Node Set Navigation Using XPathNavigator](node-set-navigation-using-xpathnavigator.md)  
  Describes the node set navigation methods of the <xref:System.Xml.XPath.XPathNavigator> class used to navigate nodes in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object.  
   

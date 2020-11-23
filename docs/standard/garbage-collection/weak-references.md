@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 6a600fe5-3af3-4c64-82da-10a0a8e2d79b
 ---
 # Weak References
+
 The garbage collector cannot collect an object in use by an application while the application's code can reach that object. The application is said to have a strong reference to the object.  
   
  A weak reference permits the garbage collector to collect the object while still allowing the application to access the object. A weak reference is valid only during the indeterminate amount of time until the object is collected when no strong references exist. When you use a weak reference, the application can still obtain a strong reference to the object, which prevents it from being collected. However, there is always the risk that the garbage collector will get to the object first before a strong reference is reestablished.  
@@ -23,6 +24,7 @@ The garbage collector cannot collect an object in use by an application while th
  To establish a weak reference with an object, you create a <xref:System.WeakReference> using the instance of the object to be tracked. You then set the <xref:System.WeakReference.Target%2A> property to that object and set the original reference to the object to `null`. For a code example, see <xref:System.WeakReference> in the class library.  
   
 ## Short and Long Weak References  
+
  You can create a short weak reference or a long weak reference:  
   
 - Short  
@@ -38,6 +40,7 @@ The garbage collector cannot collect an object in use by an application while th
  To establish a strong reference and use the object again, cast the <xref:System.WeakReference.Target%2A> property of a <xref:System.WeakReference> to the type of the object. If the <xref:System.WeakReference.Target%2A> property returns `null`, the object was collected; otherwise, you can continue to use the object because the application has regained a strong reference to it.  
   
 ## Guidelines for Using Weak References  
+
  Use long weak references only when necessary as the state of the object is unpredictable after finalization.  
   
  Avoid using weak references to small objects because the pointer itself may be as large or larger.  

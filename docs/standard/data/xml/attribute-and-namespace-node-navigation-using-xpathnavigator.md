@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 23975f88-e0af-4b88-93de-9e20e11880ad
 ---
 # Attribute and Namespace Node Navigation Using XPathNavigator
+
 The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation methods, the first set, found in the [Node Set Navigation Using XPathNavigator](node-set-navigation-using-xpathnavigator.md) topic, are used to navigate *node sets* in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object. The second set, described in this topic, are used to navigate *attribute and namespace nodes* in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object.  
   
 ## Attribute Node Navigation  
+
  Attributes are properties of an element, not children of an element. This distinction is important, because of the methods of the <xref:System.Xml.XPath.XPathNavigator> class used to navigate sibling, parent, and child nodes.  
   
  For example, the <xref:System.Xml.XPath.XPathNavigator.MoveToPrevious%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToNext%2A> methods are not used to navigate from an element to an attribute or between attributes. Instead, attributes have distinct methods of navigation.  
@@ -25,6 +27,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation
 > When the <xref:System.Xml.XPath.XPathNavigator> object is positioned on an attribute or namespace node, the <xref:System.Xml.XPath.XPathNavigator.MoveToChild%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFirst%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFirstChild%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToNext%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToPrevious%2A> methods always return `false`, and have no effect on the position of the <xref:System.Xml.XPath.XPathNavigator>. The exceptions are the <xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A>, and <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> methods.  
   
 ## Namespace Node Navigation  
+
  Each element has an associated set of namespace nodes, one for each distinct namespace prefix that is bound to a namespace URI in scope for the element (including the XML prefix bound to the `http://www.w3.org/XML/1998/namespace` namespace, which is implicitly declared in every XML document) and one for the default namespace if one is in scope for the element. The element is the parent of each of these namespace nodes; however, a namespace node is not a child of its parent element.  
   
  As with attributes, the <xref:System.Xml.XPath.XPathNavigator.MoveToPrevious%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToNext%2A> methods are not used to navigate from an element to a namespace node, or between namespace nodes. Instead, namespace nodes have distinct methods of navigation.  
@@ -43,6 +46,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation
 > When the <xref:System.Xml.XPath.XPathNavigator> object is positioned on an attribute or namespace node, the <xref:System.Xml.XPath.XPathNavigator.MoveToChild%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFirst%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFirstChild%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToNext%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToPrevious%2A> methods always return `false`, and have no effect on the position of the <xref:System.Xml.XPath.XPathNavigator>. The exceptions are the <xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>, <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A>, and <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> methods.  
   
 ### The XPathNamespaceScope Enumeration  
+
  When navigating namespace nodes the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> methods can be called with an <xref:System.Xml.XPath.XPathNamespaceScope> parameter. These methods behave differently than their counterparts called with no parameters. The <xref:System.Xml.XPath.XPathNamespaceScope> enumeration has values of <xref:System.Xml.XPath.XPathNamespaceScope.All>, <xref:System.Xml.XPath.XPathNamespaceScope.ExcludeXml>, or <xref:System.Xml.XPath.XPathNamespaceScope.Local>.  
   
  The following examples show what namespaces are returned by the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> methods at various scopes in an XML document.  

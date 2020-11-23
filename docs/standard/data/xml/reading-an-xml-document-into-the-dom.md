@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: a4fb291f-5630-49ba-a49a-5b66c3b71e49
 ---
 # Reading an XML Document into the DOM
+
 XML information is read into memory from different formats. It can be read from a string, stream, URL, text reader, or a class derived from the <xref:System.Xml.XmlReader>.  
   
  The <xref:System.Xml.XmlDocument.Load%2A> method brings the document into memory and has overloaded methods available to take data from each of the different formats. There is also a <xref:System.Xml.XmlDocument.LoadXml%2A> method that reads XML from a string.  

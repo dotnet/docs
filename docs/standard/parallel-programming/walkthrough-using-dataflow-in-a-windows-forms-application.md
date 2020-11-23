@@ -8,16 +8,19 @@ helpviewer_keywords:
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
 ---
 # Walkthrough: Using Dataflow in a Windows Forms Application
+
 This document demonstrates how to create a network of dataflow blocks that perform image processing in a Windows Forms application.  
   
  This example loads image files from the specified folder, creates a composite image, and displays the result. The example uses the dataflow model to route images through the network. In the dataflow model, independent components of a program communicate with one another by sending messages. When a component receives a message, it performs some action and then passes the result to another component. Compare this with the control flow model, in which an application uses control structures, for example, conditional statements, loops, and so on, to control the order of operations in a program.  
   
 ## Prerequisites  
+
  Read [Dataflow](dataflow-task-parallel-library.md) before you start this walkthrough.  
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
 
 ## Sections  
+
  This walkthrough contains the following sections:  
   
 - [Creating the Windows Forms Application](#winforms)  
@@ -29,7 +32,9 @@ This document demonstrates how to create a network of dataflow blocks that perfo
 - [The Complete Example](#complete)  
   
 <a name="winforms"></a>
+
 ## Creating the Windows Forms Application  
+
  This section describes how to create the basic Windows Forms application and add controls to the main form.  
   
 ### To Create the Windows Forms Application  
@@ -45,7 +50,9 @@ This document demonstrates how to create a network of dataflow blocks that perfo
 5. Add a <xref:System.Windows.Forms.PictureBox> object to the main form. Set the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
 <a name="network"></a>
+
 ## Creating the Dataflow Network  
+
  This section describes how to create the dataflow network that performs image processing.  
   
 ### To Create the Dataflow Network  
@@ -95,7 +102,9 @@ This document demonstrates how to create a network of dataflow blocks that perfo
  This example uses a shared cancellation token instead of setting the <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> property because the <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> property permanently cancels dataflow block execution. A cancellation token enables this example to reuse the same dataflow network multiple times, even when the user cancels one or more operations. For an example that uses <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> to permanently cancel the execution of a dataflow block, see [How to: Cancel a Dataflow Block](how-to-cancel-a-dataflow-block.md).  
   
 <a name="ui"></a>
+
 ## Connecting the Dataflow Network to the User Interface  
+
  This section describes how to connect the dataflow network to the user interface. The creation of the composite image and cancellation of the operation are initiated from the **Choose Folder** and **Cancel** buttons. When the user chooses either of these buttons, the appropriate action is initiated in an asynchronous manner.  
   
 ### To Connect the Dataflow Network to the User Interface  
@@ -113,7 +122,9 @@ This document demonstrates how to create a network of dataflow blocks that perfo
      [!code-csharp[TPLDataflow_CompositeImages#7](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_compositeimages/cs/compositeimages/form1.cs#7)]  
   
 <a name="complete"></a>
+
 ## The Complete Example  
+
  The following example shows the complete code for this walkthrough.  
   
  [!code-csharp[TPLDataflow_CompositeImages#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_compositeimages/cs/compositeimages/form1.cs#100)]  

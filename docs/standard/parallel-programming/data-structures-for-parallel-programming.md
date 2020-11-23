@@ -10,6 +10,7 @@ ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
 .NET provides several types that are useful in parallel programming, including a set of concurrent collection classes, lightweight synchronization primitives, and types for lazy initialization. You can use these types with any multithreaded application code, including the Task Parallel Library and PLINQ.  
   
 ## Concurrent Collection Classes  
+
  The collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace provide thread-safe add and remove operations that avoid locks wherever possible and use fine-grained locking where locks are necessary. A concurrent collection class does not require user code to take any locks when it accesses items. The concurrent collection classes can significantly improve performance over types such as <xref:System.Collections.ArrayList?displayProperty=nameWithType> and <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> (with user-implemented locking) in scenarios where multiple threads add and remove items from a collection.  
   
  The following table lists the concurrent collection classes:  
@@ -25,6 +26,7 @@ ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
  For more information, see [Thread-Safe Collections](../collections/thread-safe/index.md).  
   
 ## Synchronization Primitives  
+
  The synchronization primitives in the <xref:System.Threading?displayProperty=nameWithType> namespace enable fine-grained concurrency and faster performance by avoiding expensive locking mechanisms found in legacy multithreading code.
   
  The following table lists the synchronization types:  
@@ -45,6 +47,7 @@ ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
 - [How to: Synchronize Concurrent Operations with a Barrier](../threading/how-to-synchronize-concurrent-operations-with-a-barrier.md).  
   
 ## Lazy Initialization Classes  
+
  With lazy initialization, the memory for an object is not allocated until it is needed. Lazy initialization can improve performance by spreading object allocations evenly across the lifetime of a program. You can enable lazy initialization for any custom type by wrapping the type <xref:System.Lazy%601>.  
   
  The following table lists the lazy initialization types:  
@@ -58,6 +61,7 @@ ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
  For more information, see [Lazy Initialization](../../framework/performance/lazy-initialization.md).  
   
 ## Aggregate Exceptions  
+
  The <xref:System.AggregateException?displayProperty=nameWithType> type can be used to capture multiple exceptions that are thrown concurrently on separate threads, and return them to the joining thread as a single exception. The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> types and PLINQ use <xref:System.AggregateException> extensively for this purpose. For more information, see [Exception Handling](exception-handling-task-parallel-library.md) and [How to: Handle Exceptions in a PLINQ Query](how-to-handle-exceptions-in-a-plinq-query.md).  
   
 ## See also

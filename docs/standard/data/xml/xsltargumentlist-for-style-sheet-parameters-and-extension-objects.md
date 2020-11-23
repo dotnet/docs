@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: de2f0dce-6b98-4908-bba7-ed150cc50355
 ---
 # XsltArgumentList for Style Sheet Parameters and Extension Objects
+
 The <xref:System.Xml.Xsl.XsltArgumentList> class contains Extensible Stylesheet Language for Transformations (XSLT) parameters and XSLT extension objects. When passed into the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method, these parameters and extension objects can be invoked from style sheets.  
   
 > [!NOTE]
@@ -25,6 +26,7 @@ The <xref:System.Xml.Xsl.XsltArgumentList> class contains Extensible Stylesheet 
 - Supports passing result tree fragments to the style sheet with the use of the <xref:System.Xml.XPath.XPathNodeIterator>.  
   
 ## XSLT Style Sheet Parameters  
+
  XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method. A qualified name and namespace Uniform Resource Identifier (URI) are associated with the parameter object at that time.  
   
  The parameter object should correspond to a World Wide Web Consortium (W3C) type. The following table shows the corresponding W3C types, the equivalent .NET Framework classes (type), and whether the W3C type is an XML Path Language (XPath) type or XSLT type.  
@@ -48,6 +50,7 @@ The <xref:System.Xml.Xsl.XsltArgumentList> class contains Extensible Stylesheet 
 3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
 ### Example  
+
  The following example uses the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method to create a parameter to hold a calculated discount date. The discount date is calculated to be 20 days from the order date.  
   
 ```vb  
@@ -131,6 +134,7 @@ public class Sample
 ```  
   
 ### Input  
+
  order.xml  
   
 ```xml  
@@ -172,6 +176,7 @@ public class Sample
 ```  
   
 ## XSLT Extension Objects  
+
  XSLT extension objects are added to the <xref:System.Xml.Xsl.XsltArgumentList> using the <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> method. A qualified name and namespace URI are associated with the extension object at that time.  
   
  When an object is added, the caller of the <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> must be fully trusted in the security policy. If the caller is semi-trusted, the addition will fail.  
@@ -189,6 +194,7 @@ public class Sample
 3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
 ### Example  
+
  The following example calculates the circumference of a circle given its radius.  
   
 ```vb  
@@ -299,6 +305,7 @@ public class Sample
 ```  
   
 ### Input  
+
  number.xml  
   
 ```xml  
@@ -335,6 +342,7 @@ public class Sample
 ```  
   
 ### Output  
+
  `<circles xmlns:myObj="urn:myObj">`  
   
  `<circle>`  

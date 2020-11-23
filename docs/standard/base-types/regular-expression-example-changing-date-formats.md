@@ -14,11 +14,13 @@ helpviewer_keywords:
 ms.assetid: 5fcc75a5-09d7-45ae-a4c0-9ad6085ac83d
 ---
 # Regular Expression Example: Changing Date Formats
+
 The following code example uses the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method to replace dates that have the form *mm*/*dd*/*yy* with dates that have the form *dd*-*mm*-*yy*.  
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
 ## Example  
+
  [!code-csharp[RegularExpressions.Examples.ChangeDateFormats#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.ChangeDateFormats/cs/Example_ChangeDateFormats1.cs#1)]
  [!code-vb[RegularExpressions.Examples.ChangeDateFormats#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Examples.ChangeDateFormats/vb/Example_ChangeDateFormats1.vb#1)]  
   
@@ -28,6 +30,7 @@ The following code example uses the <xref:System.Text.RegularExpressions.Regex.R
  [!code-vb[RegularExpressions.Examples.ChangeDateFormats#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Examples.ChangeDateFormats/vb/Example_ChangeDateFormats1.vb#2)]  
   
 ## Comments  
+
  The regular expression pattern  `\b(?<month>\d{1,2})/(?<day>\d{1,2})/(?<year>\d{2,4})\b` is interpreted as shown in the following table.  
   
 |Pattern|Description|  

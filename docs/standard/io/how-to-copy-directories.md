@@ -22,6 +22,7 @@ For an example of asynchronous file copy, see [Asynchronous file I/O](asynchrono
 This example copies subdirectories by setting the `copySubDirs` of the `DirectoryCopy` method to `true`. The `DirectoryCopy` method recursively copies subdirectories by calling itself on each subdirectory until there are no more to copy.  
   
 ## Example  
+
  [!code-csharp[System.IO.Directory_Copy#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Directory_Copy/cs/program.cs#1)]
  [!code-vb[System.IO.Directory_Copy#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Directory_Copy/vb/Program.vb#1)]  
   

@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: 3a59d31c-0ec5-4de6-a2a9-558531c8116e
 ---
 # Resolving External Resources During XSLT Processing
+
 There are several times during an XSLT transformation when you may need to resolve external resources.  
   
 ## Using the XmlResolver Class  
+
  The <xref:System.Xml.XmlResolver> class is used to resolve external resources. The following table describes when the <xref:System.Xml.XmlResolver> becomes involved during XSLT processing.  
   
 |XSLT task|What the XmlResolver is used for|  
@@ -30,6 +32,7 @@ There are several times during an XSLT transformation when you may need to resol
 - If you want to ensure that no external resources are accessed, you can specify `null` for the <xref:System.Xml.XmlResolver> argument.  
   
 ## Example  
+
  The following example compiles a style sheet that is stored on a network resource. An <xref:System.Xml.XmlUrlResolver> object specifies the credentials necessary to access the style sheet.  
   
  [!code-csharp[XslCompiledTransform.Load#11](../../../../samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#11)]

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d0cbf517-d9f6-4097-9851-4fa62903decd
 ---
 # Support for the msxsl:node-set() Function
+
 The `msxsl:node-set` function enables you to convert a result tree fragment into a node set. The resulting node set always contains a single node and is the root node of the tree.  
   
 > [!NOTE]
@@ -12,6 +13,7 @@ The `msxsl:node-set` function enables you to convert a result tree fragment into
  The `msxsl:node-set` function enables you to convert a result tree fragment into a node set. The resulting node set always contains a single node and is the root node of the tree.  
   
 ## Example  
+
  In the following example, `$books` is a variable that is a node tree in the style sheet. The for-each statement combined with the `node-set` function allows the user to iterate over this node tree as a node set.  
   
 ## nodeset.xsl  
@@ -37,6 +39,7 @@ The `msxsl:node-set` function enables you to convert a result tree fragment into
 ```  
   
 ## Output  
+
  The output of the transformation is  
   
 ```xml  

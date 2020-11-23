@@ -45,6 +45,7 @@ The recommended way to run custom methods during and after serialization is to a
  In addition, when adding a new field to an existing serializable type, apply the <xref:System.Runtime.Serialization.OptionalFieldAttribute> attribute to the field. The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> ignores the absence of the field when a stream that is missing the new field is processed.  
   
 ## Implementing the ISerializable interface  
+
  The other way to control serialization is achieved by implementing the <xref:System.Runtime.Serialization.ISerializable> interface on an object. Note, however, that the method in the previous section supersedes this method to control serialization.  
   
  In addition, you should not use default serialization on a class that is marked with the [Serializable](xref:System.SerializableAttribute) attribute and has declarative or imperative security at the class level or on its constructors. Instead, these classes should always implement the <xref:System.Runtime.Serialization.ISerializable> interface.  

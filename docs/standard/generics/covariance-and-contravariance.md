@@ -65,6 +65,7 @@ When you're referring to a type system, covariance, contravariance, and invarian
 - Starting in C# 9, covariant return types are supported. An overriding method can declare a more derived return type the method it overrides, and an overriding, read-only property can declare a more derived type.
 
 <a name="InterfaceCovariantTypeParameters"></a>
+
 ## Generic interfaces with covariant type parameters
 
 Several generic interfaces have covariant type parameters, for example, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.Generic.IEnumerator%601>, <xref:System.Linq.IQueryable%601>, and <xref:System.Linq.IGrouping%602>. All the type parameters of these interfaces are covariant, so the type parameters are used only for the return types of the members.  

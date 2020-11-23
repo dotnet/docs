@@ -7,15 +7,18 @@ dev_langs:
 ms.assetid: fde6f43f-c594-486f-abcb-2211197fae20
 ---
 # Script Blocks Using msxsl:script
+
 The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts using the `msxsl:script` element. When the style sheet is loaded, any defined functions are compiled to Microsoft intermediate language (MSIL) by the Code Document Object Model (CodeDOM) and are executed during run time. The assembly generated from the embedded script block is separate than the assembly generated for the style sheet.  
   
 ## Enable XSLT Script  
+
  Support for embedded scripts is an optional XSLT setting on the <xref:System.Xml.Xsl.XslCompiledTransform> class. Script support is disabled by default. To enable script support, create an <xref:System.Xml.Xsl.XsltSettings> object with the <xref:System.Xml.Xsl.XsltSettings.EnableScript%2A> property set to `true` and pass the object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
   
 > [!NOTE]
 > XSLT scripting should be enabled only if you require script support and you are working in a fully trusted environment.  
   
 ## msxsl:script Element Definition  
+
  The `msxsl:script` element is a Microsoft extension to the XSLT 1.0 recommendation and has the following definition:  
   
 ```xml  
@@ -40,6 +43,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
 ```  
   
 ## Script Functions  
+
  Functions can be declared within the `msxsl:script` element. When a function is declared, it is contained in a script block. Style sheets can contain multiple script blocks, each operating independent of the other. That means that if you are executing inside a script block, you cannot call a function that you defined in another script block unless it is declared to have the same namespace and the same scripting language. Because each script block can be in its own language, and the block is parsed according to the grammar rules of that language parser we recommend that you use the correct syntax for the language in use. For example, if you are in a Microsoft C# script block, use the C# comment syntax.  
   
  The supplied arguments and return values to the function can be of any type. Because the W3C XPath types are a subset of the common language runtime (CLR) types, type conversion takes place on types that are not considered to be an XPath type. The following table shows the corresponding W3C types and the equivalent CLR type.  
@@ -57,9 +61,11 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
  All other types throw an error.  
   
 ### Importing Namespaces and Assemblies  
+
  The <xref:System.Xml.Xsl.XslCompiledTransform> class predefines a set of assemblies and namespaces that are supported by default by the `msxsl:script` element. However, you can use classes and members belonging to a namespace that is not on the predefined list by importing the assembly and namespace in `msxsl:script` block.  
   
 #### Assemblies  
+
  The following two assemblies are referenced by default:  
   
 - System.dll  
@@ -83,6 +89,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
  The `name` attribute contains the name of the assembly and the `href` attribute contains the path to the assembly. The assembly name can be a full name, such as "System.Data, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089", or a short name, such as "System.Web".  
   
 #### Namespaces  
+
  The following namespaces are included by default:  
   
 - System  
@@ -113,15 +120,18 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
 ```  
   
 ## Example  
+
  The following example uses an embedded script to calculate the circumference of a circle given its radius.  
   
  [!code-csharp[XSLT_Script#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XSLT_Script/CS/xslt_script.cs#1)]
  [!code-vb[XSLT_Script#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XSLT_Script/VB/xslt_script.vb#1)]  
   
 #### number.xml  
+
  [!code-xml[XSLT_Script#2](../../../../samples/snippets/xml/VS_Snippets_Data/XSLT_Script/XML/number.xml#2)]  
   
 #### calc.xsl  
+
  [!code-xml[XSLT_Script#3](../../../../samples/snippets/xml/VS_Snippets_Data/XSLT_Script/XML/calc.xsl#3)]  
   
 ### Output  

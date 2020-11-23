@@ -29,11 +29,13 @@ The localizability review consists of the following three checks:
 - [Have you tested your application with international data?](#test)
 
 <a name="global"></a>
+
 ## Implement globalization recommendations
 
 If you have designed and developed your application with localization in mind, and if you have followed the recommendations discussed in the [Globalization](globalization.md) article, the localizability review will largely be a quality assurance pass. Otherwise, during this stage you should review and implement the recommendations for [globalization](globalization.md) and fix the errors in source code that prevent localization.
 
 <a name="culture"></a>
+
 ## Handle culture-sensitive features
 
 .NET does not provide programmatic support in a number of areas that vary widely by culture. In most cases, you have to write custom code to handle feature areas like the following:
@@ -52,6 +54,7 @@ If you have designed and developed your application with localization in mind, a
    [!code-vb[Conceptual.Localizability#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.localizability/vb/ismetric1.vb#1)]
 
 <a name="test"></a>
+
 ## Test your application
 
 Before you localize your application, you should test it by using international data on international versions of the operating system. Although most of the user interface will not be localized at this point, you will be able to detect problems such as the following:

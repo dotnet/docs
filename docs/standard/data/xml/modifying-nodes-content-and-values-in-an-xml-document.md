@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 761773e0-db72-4986-b9f5-a522213d8397
 ---
 # Modifying Nodes, Content, and Values in an XML Document
+
 There are many ways you can modify the nodes and content in a document. You can:  
   
 - Change the value of nodes using the <xref:System.Xml.XmlNode.Value%2A> property.  

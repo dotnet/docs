@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 4bcbc883-2a91-418f-b968-6c86a25e9737
 ---
 # Steps in the serialization process
+
 When the <xref:System.Runtime.Serialization.Formatter.Serialize%2A> method is called on a [formatter](xref:System.Runtime.Serialization.Formatter), object serialization proceeds according to the following sequence of rules:
 
 - A check is made to determine whether the formatter has a surrogate selector. If the formatter does, check whether the surrogate selector handles objects of the given type. If the selector handles the object type, <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=nameWithType> is called on the surrogate selector.

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ffd97806-ab43-4538-8de2-5828bfbbde57
 ---
 # Entity References are Expanded and Not Preserved
+
 When the entity reference is expanded and replaced by the text it represents, the **XmlEntityReference** node is not created. Instead, the entity declaration is parsed, and nodes created from the content in the declaration are copied in the place of the **XmlEntityReference**. Therefore, in the `&publisher;` example, the `&publisher;` is not saved, but instead, an **XmlText** node is created.  
   
  ![expanded tree structure](media/xmlentityref-expanded-nodes.gif "xmlentityref_expanded_nodes")  

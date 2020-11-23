@@ -15,6 +15,7 @@ You can use a <xref:System.Threading.Mutex> object to provide exclusive access t
  For code examples, see the reference documentation for the <xref:System.Threading.Mutex.%23ctor%2A> constructors.  
   
 ## Using Mutexes  
+
  A thread calls the <xref:System.Threading.WaitHandle.WaitOne%2A> method of a mutex to request ownership. The call blocks until the mutex is available, or until the optional timeout interval elapses. The state of a mutex is signaled if no thread owns it.  
   
  A thread releases a mutex by calling its <xref:System.Threading.Mutex.ReleaseMutex%2A> method. Mutexes have thread affinity; that is, the mutex can be released only by the thread that owns it. If a thread releases a mutex it does not own, an <xref:System.ApplicationException> is thrown in the thread.  
@@ -24,11 +25,13 @@ You can use a <xref:System.Threading.Mutex> object to provide exclusive access t
  If a thread owns a <xref:System.Threading.Mutex>, that thread can specify the same <xref:System.Threading.Mutex> in repeated wait-request calls without blocking its execution; however, it must release the <xref:System.Threading.Mutex> as many times to release ownership.  
   
 ## Abandoned Mutexes  
+
  If a thread terminates without releasing a <xref:System.Threading.Mutex>, the mutex is said to be abandoned. This often indicates a serious programming error because the resource the mutex is protecting might be left in an inconsistent state. An <xref:System.Threading.AbandonedMutexException> is thrown in the next thread that acquires the mutex.
   
  In the case of a system-wide mutex, an abandoned mutex might indicate that an application has been terminated abruptly (for example, by using Windows Task Manager).  
   
 ## Local and System Mutexes  
+
  Mutexes are of two types: local mutexes and named system mutexes. If you create a <xref:System.Threading.Mutex> object using a constructor that accepts a name, it is associated with an operating-system object of that name. Named system mutexes are visible throughout the operating system and can be used to synchronize the activities of processes. You can create multiple <xref:System.Threading.Mutex> objects that represent the same named system mutex, and you can use the <xref:System.Threading.Mutex.OpenExisting%2A> method to open an existing named system mutex.  
   
  A local mutex exists only within your process. It can be used by any thread in your process that has a reference to the local <xref:System.Threading.Mutex> object. Each <xref:System.Threading.Mutex> object is a separate local mutex.  

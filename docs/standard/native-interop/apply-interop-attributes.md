@@ -16,11 +16,13 @@ helpviewer_keywords:
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
 ---
 # Applying Interop Attributes
+
 The <xref:System.Runtime.InteropServices> namespace provides three categories of interop-specific attributes: those applied by you at design time, those applied by COM interop tools and APIs during the conversion process, and those applied either by you or COM interop.  
   
  If you are unfamiliar with the task of applying attributes to managed code, see [Extending Metadata Using Attributes](../attributes/index.md). Like other custom attributes, you can apply interop-specific attributes to types, methods, properties, parameters, fields, and other members.  
   
 ## Design-Time Attributes  
+
  You can adjust the outcome of the conversion process performed by COM interop tools and APIs by using design-time attributes. The following table describes the attributes that you can apply to your managed source code. COM interop tools, on occasion, might also apply the attributes described in this table.  
   
 |Attribute|Description|  
@@ -49,6 +51,7 @@ The <xref:System.Runtime.InteropServices> namespace provides three categories of
 |<xref:System.Runtime.InteropServices.StructLayoutAttribute>|Controls the physical layout of the fields of a class.<br /><br /> COM interop tools can apply this attribute.|  
   
 ## Conversion-Tool Attributes  
+
  The following table describes attributes that COM interop tools apply during the conversion process. You do not apply these attributes at design time.  
   
 |Attribute|Description|  

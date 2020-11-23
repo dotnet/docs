@@ -5,10 +5,13 @@ ms.date: "03/30/2017"
 ms.assetid: 682643fc-b848-4e42-8c0d-50deeaeb5f2a
 ---
 # Managing Namespaces in an XML Document
+
 XML namespaces associate element and attribute names in an XML document with custom and predefined URIs. To create these associations, you define prefixes for namespace URIs, and use those prefixes to qualify element and attribute names in XML data. Namespaces prevent element and attribute name collisions, and enable elements and attributes of the same name to be handled and validated differently.  
   
 <a name="declare"></a>
+
 ## Declaring namespaces  
+
  To declare a namespace on an element, you use the `xmlns:` attribute:  
   
  `xmlns:<name>=<"uri">`  
@@ -26,7 +29,9 @@ XML namespaces associate element and attribute names in an XML document with cus
  To signify that an element is a part of a particular namespace, add the namespace prefix to it. For example, if a `Author` element belongs to the `mybook` namespace, it is declared as `<mybook:Author>`.  
   
 <a name="scope"></a>
+
 ## Declaration scope  
+
  A namespace is effective from its point of declaration until the end of the element it was declared in. In this example, the namespace defined in the `BOOK` element doesn't apply to elements outside the `BOOK` element, such as the `Publisher` element:  
   
 ```xml  
@@ -53,6 +58,7 @@ XML namespaces associate element and attribute names in an XML document with cus
 ```  
   
 ## Managing namespaces  
+
  The <xref:System.Xml.XmlNamespaceManager> class stores a collection of namespace URIs and their prefixes, and lets you look up, add, and remove namespaces from this collection. In certain contexts, this class is required for better XML processing performance. For example, the <xref:System.Xml.Xsl.XsltContext> class uses <xref:System.Xml.XmlNamespaceManager> for XPath support.  
   
  The namespace manager doesn't perform any validation on the namespaces, but assumes that prefixes and namespaces have already been verified and conform to the [W3C Namespaces](https://www.w3.org/TR/REC-xml-names/) specification.  

@@ -147,7 +147,7 @@ Perhaps you start with Azure Redis Cache as your state store. You specify it wit
    ```   
 Note how the `spec` section specifies Azure Redis Cache. Dapr will send your state management calls to Redis Cache. Under the hood, Dapr binds to the Redis Cache component on your behalf.
 
-If you're familiar with Kubernetes, you'll note how Dapr configuration files closely resemble Kubernetes manifest files. Essentially, they define a policy that affects how each Dapr instance behaves and the specific distributed application capabilities required. Configuration can be applied to Dapr instances dynamically.
+Dapr configuration files closely resemble Kubernetes manifest files. They follow the Kubernetes [custom resource definition](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/) format. Essentially, they define a policy that affects how a building block behaves. You can dymamically update these definitions to bind to different resources without stopping the application.
 
 At a later time, you may want to migrate your state management to Azure Table Storage. Azure Table Storage provides state management capabilities that are affordable and highly durable.
 

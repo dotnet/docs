@@ -20,6 +20,8 @@
     items:
     - name: .NET 5.0
       items:
+      - name: Overview
+        href: 5.0.md
       - name: ASP.NET Core
         items:
         - name: ASP.NET Core apps deserialize quoted numbers
@@ -267,11 +269,11 @@
         - name: WPF apps use Microsoft.NET.Sdk
           href: windows-forms/5.0/sdk-and-target-framework-change.md
     - name: .NET Core 3.1
-      href: 3.0-3.1.md
+      href: 3.1.md
     - name: .NET Core 3.0
-      href: 2.2-3.0.md
+      href: 3.0.md
     - name: .NET Core 2.1
-      href: 2.0-2.1.md
+      href: 2.1.md
   - name: Breaking changes by area
     items:
     - name: ASP.NET Core

@@ -1,9 +1,9 @@
 ---
 title: Windows Forms breaking changes
-description: Lists the breaking changes in Windows Forms for .NET Core and .NET 5.
+description: Lists the breaking changes in Windows Forms for .NET Core 3.0 and 3.1.
 ms.date: 09/08/2020
 ---
-# Breaking changes in Windows Forms
+# Breaking changes in Windows Forms for .NET Core 3.0 and 3.1
 
 Windows Forms support was added to .NET Core in version 3.0. This article lists breaking changes for Windows Forms by the .NET version in which they were introduced. If you're upgrading a Windows Forms app from .NET Framework or from a previous version of .NET Core (3.0 or later), this article applies to you.
 
@@ -11,15 +11,6 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
-| [TextFormatFlags.ModifyString is obsolete](#textformatflagsmodifystring-is-obsolete) | 5.0 |
-| [DataGridView no longer resets fonts for customized cell styles](#datagridview-no-longer-resets-fonts-for-customized-cell-styles) | 5.0 |
-| [OutputType set to WinExe for WPF and WinForms apps](#outputtype-set-to-winexe-for-wpf-and-winforms-apps) | 5.0 |
-| [DataGridView-related APIs now throw InvalidOperationException](#datagridview-related-apis-now-throw-invalidoperationexception) | 5.0 |
-| [WinForms and WPF apps use Microsoft.NET.Sdk](#winforms-and-wpf-apps-use-microsoftnetsdk) | 5.0 |
-| [Removed status bar controls](#removed-status-bar-controls) | 5.0 |
-| [WinForms methods now throw ArgumentException](#winforms-methods-now-throw-argumentexception) | 5.0 |
-| [WinForms methods now throw ArgumentNullException](#winforms-methods-now-throw-argumentnullexception) | 5.0 |
-| [WinForms properties now throw ArgumentOutOfRangeException](#winforms-properties-now-throw-argumentoutofrangeexception) | 5.0 |
 | [Removed controls](#removed-controls) | 3.1 |
 | [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown) | 3.1 |
 | [Control.DefaultFont changed to Segoe UI 9 pt](#default-control-font-changed-to-segoe-ui-9-pt) | 3.0 |
@@ -33,44 +24,6 @@ The following breaking changes are documented on this page:
 | [EnableVisualStyleValidation compatibility switch not supported](#enablevisualstylevalidation-compatibility-switch-not-supported) | 3.0 |
 | [UseLegacyContextMenuStripSourceControlValue compatibility switch not supported](#uselegacycontextmenustripsourcecontrolvalue-compatibility-switch-not-supported) | 3.0 |
 | [UseLegacyImages compatibility switch not supported](#uselegacyimages-compatibility-switch-not-supported) | 3.0 |
-
-## .NET 5.0
-
-[!INCLUDE [modifystring-field-of-textformatflags-obsolete](../../../includes/core-changes/windowsforms/5.0/modifystring-field-of-textformatflags-obsolete.md)]
-
-***
-
-[!INCLUDE [datagridview-doesnt-reset-custom-font-settings](../../../includes/core-changes/windowsforms/5.0/datagridview-doesnt-reset-custom-font-settings.md)]
-
-***
-
-[!INCLUDE [automatically-infer-winexe-output-type](../../../includes/core-changes/windowsforms/5.0/automatically-infer-winexe-output-type.md)]
-
-***
-
-[!INCLUDE [null-owner-causes-invalidoperationexception](../../../includes/core-changes/windowsforms/5.0/null-owner-causes-invalidoperationexception.md)]
-
-***
-
-[!INCLUDE [sdk-and-target-framework-change](../../../includes/core-changes/windowsforms/5.0/sdk-and-target-framework-change.md)]
-
-***
-
-[!INCLUDE [winforms-deprecated-controls](../../../includes/core-changes/windowsforms/5.0/winforms-deprecated-controls.md)]
-
-***
-
-[!INCLUDE [invalid-args-cause-argumentexception](../../../includes/core-changes/windowsforms/5.0/invalid-args-cause-argumentexception.md)]
-
-***
-
-[!INCLUDE [null-args-cause-argumentnullexception](../../../includes/core-changes/windowsforms/5.0/null-args-cause-argumentnullexception.md)]
-
-***
-
-[!INCLUDE [invalid-args-cause-argumentoutofrangeexception](../../../includes/core-changes/windowsforms/5.0/invalid-args-cause-argumentoutofrangeexception.md)]
-
-***
 
 ## .NET Core 3.1
 

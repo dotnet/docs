@@ -9,11 +9,9 @@ ms.date: 11/08/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed out that they dramatically increase architectural and operational complexity. With that in mind, the question becomes, how can we "have our cake" and "eat it too?" That is, how can we take advantage of the agility, but minimize the complexity.
+In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed out that they dramatically increase architectural and operational complexity. With that in mind, the question becomes, how can we "have our cake" and "eat it too?" That is, how can we take advantage of the agility of distributed architecture, but minimize the complexity?
 
-Ladies and Gentlemen, please stand and welcome.... `Dapr`.
-
-Dapr, or *Distributed Application Runtime*, is a new way to build modern distributed applications.
+Dapr, or *Distributed Application Runtime*, is a new way to build modern distributed applications while streamlining the underlying plumbing. 
 
 What started as a prototype has evolved into a highly successful open-source project. Its sponsor, Microsoft, has closely partnered with customers and the open-source community to design and build Dapr. The Dapr project brings together developers from all backgrounds to solve some of the toughest challenges of developing distributed applications.     
 
@@ -23,17 +21,17 @@ This book looks at Dapr from the viewpoint of a .NET developer. In this chapter,
 
 Imagine flying in a jet at 20,000 feet. You look out the window and see the landscape from a wide perspective. Let's do the same for Dapr. Visualize yourself flying over Dapr at 20,000 feet. What would you see?
 
-At its core, Dapr is a `portable, event-driven runtime`. 
+At its core, Dapr is a **portable, event-driven runtime**. 
 
- - `Portable` - Your write your application code once and run it on public clouds and edge devices. With a configuration file, you specify distributed application capabilities that you wish to include in your environment. These capabilities include service-to-service invocation, state management, and pub/sub messaging. Later, should you move your app, you update the configuration with bindings for the new environment. Your service never holds direct references to distributed application capabilities - Dapr does that.
+ - **Portable** - Your write your application code once and run it on public clouds and edge devices. With a configuration file, you specify distributed application capabilities that you wish to include in your environment. These capabilities include service-to-service invocation, state management, and pub/sub messaging. Later, should you move your app, you update the configuration with bindings for the new environment. Your service never holds direct references to distributed application capabilities - Dapr does that.
 
-  - `Event-driven` - Dapr supports event-driven resource binding and pub-sub messaging services. You can receive events from or sends events to external resources, such as datastores, streaming services, or web hooks. You can also publish and subscribe to events from message brokers - with minimal code and, again, no direct reference to the external service. 
+  - **Event-driven** - Dapr supports event-driven resource binding and pub-sub messaging services. You can receive events from or sends events to external resources, such as datastores, streaming services, or web hooks. You can also publish and subscribe to events from message brokers - with minimal code and, again, no direct reference to the external service. 
 
- - `Runtime` - Dapr exposes a runtime engine that runs your services - whatever the programming platform. For example, Dotnet Core is a runtime engine - you run services within it. Dapr is *also* a runtime engine. You invoke the Dapr runtime and instruct it to start the dotnet runtime. Under the hood, Dapr implements a `distributed runtime` by operating along side with your application using a `sidecar` architecture. More about *sidecars* coming up.
+ - **Runtime** - Dapr exposes a runtime engine that runs your services - whatever the programming platform. For example, Dotnet Core is a runtime engine - you run services within it. Dapr is *also* a runtime engine. You invoke the Dapr runtime and instruct it to start the dotnet runtime. Under the hood, Dapr implements a distributed runtime* by operating along side with your application using a sidecar architecture. More about *sidecars* coming up.
 
 ## What does Dapr solve?
 
-Dapr addresses a large challenge inherent in modern distributed applications: `Complexity`. 
+Dapr addresses a large challenge inherent in modern distributed applications: **Complexity**. 
 
 Through an architecture of pluggable components, Dapr helps simplify plumbing concerns. It enables your services to bind to distributed application capabilities. The runtime provides a `dynamic glue` that fuses together service component plumbing *without* tightly coupled references. For example, your application may require a state store. You could write custom code to wrap Azure Redis Cache and inject it into your service at runtime. However, Dapr greatly simplifies your experience. You instruct your  service to invoke a Dapr `building block` that dynamically binds to Redis Cache via a configuration. With this model, your service delegates the call to Dapr, which, calls Redis on your behalf. Your service has no SDK, library, or reference to Redis. You code against the common Dapr state management API, not the Redis Cache API.
 
@@ -68,13 +66,13 @@ The following table describes the services provided by each block.
 
 | Building Block | Description |
 | :-------- | :-------- |
-| [Service-to-service communication](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Invoke direct, secure service-to-service calls using platform agnostic protocols and well-known endpoints. |
-| [Asynchronous messaging](https://github.com/dapr/components-contrib/tree/master/state) | Implement secure, scalable pub/sub messaging between services. |
-| [State](https://github.com/dapr/components-contrib/tree/master/pubsub) | Support contextual information for long running stateful services. |
+| [Service-to-service invocation](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Invoke direct, secure service-to-service calls using platform agnostic protocols and well-known endpoints. |
+| [Publish and subscribe](https://github.com/dapr/components-contrib/tree/master/state) | Implement secure, scalable pub/sub messaging between services. |
+| [State management](https://github.com/dapr/components-contrib/tree/master/pubsub) | Support contextual information for long running stateful services. |
 | [Observability](https://github.com/dapr/components-contrib/tree/master/bindings) | Monitor and measure message calls across networked services. |
 | [Secrets](https://github.com/dapr/components-contrib/tree/master/middleware) | Securely access external secret stores. |
 | [Actors](https://github.com/dapr/components-contrib/tree/master/secretstores) | Encapsulate logic and data in reusable actor objects. |
-| [Resource bindings](https://github.com/dapr/components-contrib/tree/master/exporters) | Trigger code from events raised by external resources with bi-directional communication. |
+| [Resource bindings and triggers](https://github.com/dapr/components-contrib/tree/master/exporters) | Trigger code from events raised by external resources with bi-directional communication. |
 
 Building blocks abstract the implementation of distributed application capabilities from your services. Figure 2-3 shows this interaction. 
 

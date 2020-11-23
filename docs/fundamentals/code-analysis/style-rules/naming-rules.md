@@ -19,15 +19,15 @@ helpviewer_keywords:
 ---
 # Naming rules
 
-Naming rules concern the naming of .NET programming language code elements, such as classes, properties, and methods. For example, you can specify that public members must be capitalized or that private fields must begin with `_`.
+Naming rules let you specify and enforce the naming of .NET programming language code elements, such as classes, properties, and methods. For example, you can specify that public members must be capitalized or that private fields must begin with `_`.
 
 A naming rule has three parts:
 
-* The group of symbols it applies to.
-* The naming style to associate with the rule.
+* The _symbol group_ it applies to. In our examples above, that's the "public members" or "private fields" portion of the rule.
+* The _naming style_ to associate with the rule. In our examples above, that's the "must be capitalized" or "must begin with `_`" portion of the rule.
 * The severity for enforcing the convention.
 
-You define naming rules in an EditorConfig file.
+You define naming rules in an EditorConfig file. First, you must define the symbol group and naming style, and give each of them a title. Then you specify the naming rule which links everything together.
 
 ## General syntax
 

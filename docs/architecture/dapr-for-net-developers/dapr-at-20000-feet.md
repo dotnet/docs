@@ -201,7 +201,7 @@ Looking at the previous figure, one might question the latency and overhead incu
 
 The Dapr team has invested heavily in performance. A tremendous amount of engineering effort has gone into making Dapr efficient. Calls between Dapr sidecars are always made with gRPC, which delivers high performance and small, binary payloads. In most cases, the additional overhead should be less than 1 millisecond. 
 
-To increase performance, developers can implement calls to Dapr building blocks with gRPC. 
+To increase performance, developers can call the Dapr building blocks with gRPC. 
 
 gRPC is a modern, high-performance framework that evolves the age-old [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol. gRPC uses HTTP/2 for its transport protocol, which provides significant performance enhancements over HTTP RESTFul service, including:
 

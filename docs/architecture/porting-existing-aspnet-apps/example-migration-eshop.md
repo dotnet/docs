@@ -311,7 +311,109 @@ At this point, the app once more builds successfully. However, trying to run it 
 
 ## Migrate app startup components
 
-The last step in migrating is to take the app startup tasks from `Global.asax` and the classes it calls and migrate these to their ASP.NET Core equivalents. These include configuration of MVC itself, setting up dependency injection, and working with the new configuration system.
+The last step in migrating is to take the app startup tasks from `Global.asax` and the classes it calls and migrate these to their ASP.NET Core equivalents. These include configuration of MVC itself, setting up dependency injection, and working with the new configuration system. In ASP.NET Core, these tasks are done in the `Startup.cs` file.
+
+### Configure MVC
+
+The original ASP.NET MVC app has the following code in its `Application_Start` in `Global.asax`, which runs when the application starts up:
+
+```csharp
+protected void Application_Start()
+{
+    container = RegisterContainer();
+    AreaRegistration.RegisterAllAreas();
+    FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+    RouteConfig.RegisterRoutes(RouteTable.Routes);
+    BundleConfig.RegisterBundles(BundleTable.Bundles);
+    ConfigDataBase();
+}
+```
+
+Looking at these lines one by one, the `RegisterContainer` method sets up dependency injection, which will be ported below. The next three lines configure different parts of MVC: areas, filters, and routes. Bundles are replaced by static files in the ported app. The last line sets up data access for the app, which will be shown in a later section.
+
+Since this app isn't actually using areas, there's nothing that needs to be done to migrate the area registration call. If your app does need to migrate areas, the [docs specify how to configure areas in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/controllers/areas).
+
+The call to register global filters invokes a helper on the `FilterConfig` class in the app's `App_Start` folder:
+
+```csharp
+public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+{
+    filters.Add(new HandleErrorAttribute());
+}
+```
+
+The only attribute added to the app is the ASP.NET MVC filter, `HandleErrorAttribute`. This filter ensures that when an exception occurs as part of a request, a default action and view are displayed, rather than the exception details. In ASP.NET Core, this same functionality is performed by the `UseExceptionHandler` middleware. The detailed error messages aren't enabled by default, either. They must be configured using the `UseDeveloperExceptionPage` middleware. To configure this behavior to match the original app, the following code must be added to the start of the `Configure` method in `Startup.cs`:
+
+```csharp
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+    else
+    {
+        app.UseExceptionHandler("/Error");
+    }
+    // ...
+}
+```
+
+This takes care of the only filter used by the eShop app, and in this case it was done through the use of built-in middleware. If you do have global filters that must be configured in your app, this is done when MVC is wired up in the `ConfigureServices` method, which is shown later in this chapter.
+
+The last piece of MVC-related logic that needs to be migrated are the app's default routes. The call to `RouteConfig.RegisterRoutes(RouteTable.Routes)` passes the MVC route table to the `RegisterRoutes` helper method, where the following code is executed when the app starts up:
+
+```csharp
+public static void RegisterRoutes(RouteCollection routes)
+{
+    routes.MapMvcAttributeRoutes();
+    routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+    routes.MapRoute(
+        name: "Default",
+        url: "{controller}/{action}/{id}",
+        defaults: new { controller = "Catalog", action = "Index", id = UrlParameter.Optional }
+    );
+}
+```
+
+Taking this code line by line, the first line sets up support for attribute routes. This is built into ASP.NET Core so it's not necessary to configure it separately. Likewise, `{resource}.axd` files are not used with ASP.NET Core, so there's no need to ignore such routes. The `MapRoute` method configures the default for MVC, which uses the typical `{controller}/{action}/{id}` route template. It also specifies the defaults for this template, such that the `CatalogController` is the default controller used and the `Index` method is the default action. Larger apps will frequently include more calls to `MapRoute` to set up additional routes.
+
+ASP.NET Core MVC supports [conventional routing and attribute routing](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.2). Conventional routing is analogous to how the route table is configured in the `RegisterRoutes` method listed previously. To set up conventional routing with a default route like the one used in the eShop app, add the following code to the bottom of the `Configure` method in `Startup.cs`:
+
+```csharp
+app.UseMvc(routes =>
+{
+   routes.MapRoute("default", "{controller=Catalog}/{action=Index}/{id?}");
+});
+```
+
+**NOTE:** With ASP.NET Core 3.1 and later, this is changed to use endpoints, but for the initial port to ASP.NET Core 2.2 this is the proper syntax for mapping conventional routes.
+
+With these changes in place, the `Configure` method is almost done. The original template's `app.Run` method that prints "Hello World!" should be deleted. At this point the method is as shown here:
+
+```csharp
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+    if (env.IsDevelopment())
+    {
+        app.UseDeveloperExceptionPage();
+    }
+    else
+    {
+        app.UseExceptionHandler("/Home/Error");
+    }
+
+    app.UseStaticFiles();
+
+    app.UseMvc(routes =>
+    {
+        routes.MapRoute("default", "{controller=Catalog}/{action=Index}/{id?}");
+    });
+}
+```
+
+
 
 - Migrate Global.asax items
   - Show migrations for CORS, filters, route constraints, etc.
@@ -336,6 +438,7 @@ The last step in migrating is to take the app startup tasks from `Global.asax` a
 
 - [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing)
 - [Your API and ViewModels Should Not Reference Domain Models](https://ardalis.com/your-api-and-view-models-should-not-reference-domain-models/)
+- [Developer Exception Page Middleware](https://docs.microsoft.com/aspnet/core/fundamentals/error-handling#developer-exception-page)
 
 >[!div class="step-by-step"]
 >[Previous](strategies-migrating-in-production.md)

@@ -4,7 +4,6 @@ description: Language-Integrated Query (LINQ) provides language-level querying c
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"

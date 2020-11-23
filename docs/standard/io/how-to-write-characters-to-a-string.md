@@ -1,7 +1,6 @@
 ---
 title: "How to: Write characters to a string"
 ms.date: "01/21/2019"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

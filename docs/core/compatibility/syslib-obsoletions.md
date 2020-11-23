@@ -55,9 +55,14 @@ Project file:
    <TargetFramework>net5.0</TargetFramework>
    <!-- NoWarn below suppresses SYSLIB0001 project-wide -->
    <NoWarn>$(NoWarn);SYSLIB0001</NoWarn>
+   <!-- To suppress multiple warnings, you can use multiple NoWarn elements -->
+   <NoWarn>$(NoWarn);SYSLIB0002</NoWarn>
+   <NoWarn>$(NoWarn);SYSLIB0003</NoWarn>
+   <!-- Alternatively, you can suppress multiple warnings by using a semicolon-delimited list -->
+   <NoWarn>$(NoWarn);SYSLIB0001;SYSLIB0002;SYSLIB0003</NoWarn>
   </PropertyGroup>
 </Project>
 ```
 
 > [!NOTE]
-> Suppressing a warning in this way only disables that specific obsoletion warning. It doesn't disable any other warnings, including other obsoletion warnings.
+> Suppressing warnings in this way only disables the obsoletion warnings you specify. It doesn't disable any other warnings, including obsoletion warnings with different diagnostic IDs.

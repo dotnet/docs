@@ -60,7 +60,7 @@ This example produces the following output:
 
 ## Example: Create a dictionary and load it from XML data
 
-The next example creates a dictionary loads loads it from XML data.
+The next example creates a dictionary loads it from XML data.
 
 ```csharp
 XElement root = new XElement("Root",

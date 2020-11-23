@@ -11,7 +11,7 @@ F# Interactive (dotnet fsi) is used to run F# code interactively at the console,
 
 To run F# Interactive from the console, run `dotnet fsi`. You will find `dotnet fsi` in any .NET SDK.
 
-For information about command line options available, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
+For information about available command-line options, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
 
 ## Executing code directly in F# Interactive
 
@@ -56,7 +56,7 @@ val it : unit = ()
 >
 ```
 
-The code's formatting is preserved, and there is a double semiclon (`;;`) terminating the input. F# Interactive then evaluated the code and printed the results!
+The code's formatting is preserved, and there is a double semicolon (`;;`) terminating the input. F# Interactive then evaluated the code and printed the results!
 
 ## Scripting with F\#
 
@@ -80,11 +80,12 @@ dotnet fsi Script.fsx
 [1; 9; 25; 49; 81]
 ```
 
-F# scripting is natively supported in [Visual Studio](../../get-started/get-started-visual-studio.md), [Visual Studio Code](../../get-started/get-started-vscode.md), and [Visual Studio for Mac](../../get-started/get-started-visual-studio-for-mac.md).
+F# scripting is natively supported in [Visual Studio](../../get-started/get-started-visual-studio.md), [Visual Studio Code](../../get-started/get-started-vscode.md), and [Visual Studio for Mac](../../get-started/get-started-with-visual-studio-for-mac.md).
 
 ## Referencing packages in F# Interactive
 
-> [!NOTE] Package management is an F# 5 feature and is currently available using the latest .NET 5 SDK.
+> [!NOTE]
+> Package management is an F# 5 feature and is currently available using the latest .NET 5 SDK.
 
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
@@ -145,7 +146,7 @@ You can specify as many assembly references as you like in a script.
 
 ## Loading other scripts
 
-When scripting, it can often be helpful to use different scripts for different tasks. Sometimes you may want to re-use code from on script in another. Rather than copy-pasting its contents into your file, you can simple load and evaluate it with `#load`.
+When scripting, it can often be helpful to use different scripts for different tasks. Sometimes you may want to reuse code from on script in another. Rather than copy-pasting its contents into your file, you can simple load and evaluate it with `#load`.
 
 Consider the following `Script1.fsx`:
 
@@ -197,7 +198,7 @@ from
 fsi
 ```
 
-Note that you can also use `System.Environment.GetCommandLineArgs()` to access the same arguments.
+You can also use `System.Environment.GetCommandLineArgs()` to access the same arguments.
 
 ## F# Interactive directive reference
 
@@ -205,7 +206,7 @@ The `#r` and `#load` directives seen previously are only available in F# Interac
 
 |Directive|Description|
 |---------|-----------|
-|`#r "nuget:..."`|References a package from Nuget|
+|`#r "nuget:..."`|References a package from NuGet|
 |`#r "assembly-name.dll"`|References an assembly on disk|
 |`#load "file-name.fsx"`|Reads a source file, compiles it, and runs it.|
 |`#help`|Displays information about available directives.|
@@ -238,7 +239,7 @@ Code entered in the same session has access to any constructs entered previously
 
 When run in Visual Studio, F# Interactive runs independently of your project, so, for example, you cannot use constructs defined in your project in F# Interactive unless you copy the code for the function into the interactive window.
 
-You can control the F# Interactive command line arguments (options) by adjusting the settings. On the **Tools** menu, select **Options...**, and then expand **F# Tools**. The two settings that you can change are the F# Interactive options and the **64-bit F# Interactive** setting, which is relevant only if you are running F# Interactive on a 64-bit machine. This setting determines whether you want to run the dedicated 64-bit version of **fsi.exe** or **fsianycpu.exe**, which uses the machine architecture to determine whether to run as a 32-bit or 64-bit process.
+You can control the F# Interactive command-line arguments (options) by adjusting the settings. On the **Tools** menu, select **Options...**, and then expand **F# Tools**. The two settings that you can change are the F# Interactive options and the **64-bit F# Interactive** setting, which is relevant only if you are running F# Interactive on a 64-bit machine. This setting determines whether you want to run the dedicated 64-bit version of **fsi.exe** or **fsianycpu.exe**, which uses the machine architecture to determine whether to run as a 32-bit or 64-bit process.
 
 ## Related articles
 

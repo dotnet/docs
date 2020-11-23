@@ -1,7 +1,6 @@
 ---
 title: "Induced Collections"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "garbage collection, forced"
 ms.assetid: 019008fe-4708-4e65-bebf-04fd9941e149

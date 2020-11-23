@@ -21,7 +21,7 @@ In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://docs.microsoft.com/dotnet/core/install/)
+- [.NET Core 3.1 SDK](../../core/install/index.yml)
 - [Apache Spark](https://spark.apache.org/downloads.html)
 - [Apache Spark .NET Worker](https://github.com/dotnet/spark/releases)
 
@@ -43,7 +43,7 @@ To work with Jupyter Notebooks, you'll need two things.
 
 ## Start .NET for Apache Spark
 
-Run the following command to start .NET for Apache Spark in debug mode. This `spark-submit` command starts a process and waits for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<version>.jar` for the respective version of .NET for Apache Spark you're using.
+Run the following command to start .NET for Apache Spark in debug mode. This `spark-submit` command starts a process and waits for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar` for the respective version of .NET for Apache Spark you're using.
 
 **Ubuntu**
 

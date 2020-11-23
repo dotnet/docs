@@ -1,7 +1,6 @@
 ---
 title: "Optimization for Shared Web Hosting"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "garbage collection, Web hosting"
   - "garbage collection, optimizing"

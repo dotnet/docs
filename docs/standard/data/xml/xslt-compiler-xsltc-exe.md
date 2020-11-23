@@ -1,7 +1,6 @@
 ---
 title: "XSLT Compiler (xsltc.exe)"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 672a5ac8-8305-4d28-ba10-11089c2c0924
 ---
 # XSLT Compiler (xsltc.exe)

@@ -1,7 +1,6 @@
 ---
 title: "XPath Namespace Navigation"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 06cc7abb-7416-415c-9dd6-67751b8cabd5
 ---
 # XPath Namespace Navigation

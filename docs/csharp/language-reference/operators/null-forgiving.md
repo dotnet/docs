@@ -2,9 +2,9 @@
 description: "! (null-forgiving) operator - C# reference"
 title: "! (null-forgiving) operator - C# reference"
 ms.date: 10/11/2019
-f1_keywords: 
+f1_keywords:
   - "nullForgiving_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "null-forgiving operator [C#]"
   - "! operator [C#]"
 ---
@@ -45,7 +45,7 @@ In the preceding example, you don't need to use the null-forgiving operator beca
 
 ## C# language specification
 
-For more information, see [The null-forgiving operator](~/_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md#the-null-forgiving-operator) section of the [draft of the nullable reference types specification](~/_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md).
+For more information, see [The null-forgiving operator](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md#the-null-forgiving-operator) section of the [draft of the nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md).
 
 ## See also
 

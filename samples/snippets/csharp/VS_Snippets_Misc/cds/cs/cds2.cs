@@ -394,7 +394,7 @@ namespace Demos
                 private static void Test2()
                 {
                     string cmdText = "";
-                    // was s n i p p e t 10 removed per joshp
+                    // was snippet 10 removed per joshp
 
                     Lazy<DataInitializedFromDb> _data =
                         new Lazy<DataInitializedFromDb>(delegate
@@ -414,7 +414,7 @@ namespace Demos
                     {
                         ProcessData(_data.Value);
                     }
-                    ///s n i p p e t 10
+                    ///snippet 10
                 }
 
                 private static int Compute(int i){return i;}

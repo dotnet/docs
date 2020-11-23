@@ -1,15 +1,15 @@
 ---
-title: "Tutorial: Create a .NET Core tool"
-description: Learn how to create a .NET Core tool. A tool is a console application that is installed by using the .NET Core CLI.
+title: "Tutorial: Create a .NET tool"
+description: Learn how to create a .NET tool. A tool is a console application that is installed by using the .NET CLI.
 ms.topic: tutorial
 ms.date: 02/12/2020
 ---
 
-# Tutorial: Create a .NET Core tool using the .NET Core CLI
+# Tutorial: Create a .NET tool using the .NET CLI
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-This tutorial teaches you how to create and package a .NET Core tool. The .NET Core CLI lets you create a console application as a tool, which others can install and run. .NET Core tools are NuGet packages that are installed from the .NET Core CLI. For more information about tools, see [.NET Core tools overview](global-tools.md).
+This tutorial teaches you how to create and package a .NET tool. The .NET CLI lets you create a console application as a tool, which others can install and run. .NET tools are NuGet packages that are installed from the .NET CLI. For more information about tools, see [.NET tools overview](global-tools.md).
 
 The tool that you'll create is a console application that takes a message as input and displays the message along with lines of text that create the image of a robot.
 
@@ -186,7 +186,7 @@ Before you can pack and distribute the application as a tool, you need to modify
 
 ## Troubleshoot
 
-If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).
+If you get an error message while following the tutorial, see [Troubleshoot .NET tool usage issues](troubleshoot-usage-issues.md).
 
 ## Next steps
 

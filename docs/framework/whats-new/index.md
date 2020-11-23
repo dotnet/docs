@@ -1753,7 +1753,7 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
 - **Open-source .NET Framework packages**
 
-  .NET Core packages such as the immutable collections, [SIMD APIs](https://www.nuget.org/packages/Microsoft.Bcl.Simd), and networking APIs such as those found in the <xref:System.Net.Http> namespace are now available as open-source packages on [GitHub](https://github.com/). To access the code, see [.NET on GitHub](https://github.com/dotnet/runtime). For more information and how to contribute to these packages, see [.NET Core and Open-Source](../get-started/net-core-and-open-source.md), [.NET Home Page on GitHub](https://github.com/dotnet/home).
+  .NET Core packages such as the immutable collections, [SIMD APIs](https://www.nuget.org/packages/Microsoft.Bcl.Simd), and networking APIs such as those found in the <xref:System.Net.Http> namespace are now available as open-source packages on [GitHub](https://github.com/). To access the code, see [.NET on GitHub](https://github.com/dotnet/runtime). For more information and how to contribute to these packages, see [Introduction to .NET](../../core/introduction.md), [.NET Home Page on GitHub](https://github.com/dotnet/home).
 
 <a name="v452"></a>
 
@@ -2129,3 +2129,4 @@ The Portable Class Library project in Visual Studio 2012 (and later versions) en
 - [What's New in Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019)
 - [ASP.NET](/aspnet)
 - [What's New for C++ in Visual Studio](/cpp/what-s-new-for-visual-cpp-in-visual-studio)
+- [Download the .NET SDK](https://dotnet.microsoft.com/download)

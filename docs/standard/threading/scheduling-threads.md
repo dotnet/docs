@@ -1,7 +1,6 @@
 ---
 title: "Scheduling threads"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "threading [.NET], scheduling"
   - "scheduling threads"

@@ -75,7 +75,7 @@ Builds in all subdirectories of the directory containing that file will use the 
 
 ## C# language version reference
 
-The following table shows all current C# language versions. Your compiler may not necessarily understand every value if it's older. If you install .NET Core 3.0 or later, then you have access to everything listed.
+The following table shows all current C# language versions. Your compiler may not necessarily understand every value if it's older. If you install the latest .NET SDK, then you have access to everything listed.
 
 [!INCLUDE [langversion-table](includes/langversion-table.md)]
 
@@ -101,7 +101,8 @@ The following table shows all current C# language versions. Your compiler may no
 > 7.1
 > 7.2
 > 7.3
-> 8.0 (default)
+> 8.0
+> 9.0 (default)
 > latestmajor
 > preview
 > latest

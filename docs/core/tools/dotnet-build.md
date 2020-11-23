@@ -33,7 +33,7 @@ The `dotnet build` command builds the project and its dependencies into a set of
 - A *.runtimeconfig.json* file, which specifies the shared runtime and its version for an application.
 - Other libraries that the project depends on (via project references or NuGet package references).
 
-For executable projects targeting versions earlier than .NET Core 3.0, library dependencies from NuGet are typically NOT copied to the output folder.  They're resolved from the NuGet global packages folder at run time. With that in mind, the product of `dotnet build` isn't ready to be transferred to another machine to run. To create a version of the application that can be deployed, you need to publish it (for example, with the [dotnet publish](dotnet-publish.md) command). For more information, see [.NET Core Application Deployment](../deploying/index.md).
+For executable projects targeting versions earlier than .NET Core 3.0, library dependencies from NuGet are typically NOT copied to the output folder.  They're resolved from the NuGet global packages folder at run time. With that in mind, the product of `dotnet build` isn't ready to be transferred to another machine to run. To create a version of the application that can be deployed, you need to publish it (for example, with the [dotnet publish](dotnet-publish.md) command). For more information, see [.NET Application Deployment](../deploying/index.md).
 
 For executable projects targeting .NET Core 3.0 and later, library dependencies are copied to the output folder. This means that if there isn't any other publish-specific logic (such as Web projects have), the build output should be deployable.
 
@@ -147,7 +147,7 @@ The project or solution file to build. If a project or solution file isn't speci
   dotnet build --runtime ubuntu.18.04-x64
   ```
 
-- Build the project and use the specified NuGet package source during the restore operation (.NET Core 2.0 SDK and later versions):
+- Build the project and use the specified NuGet package source during the restore operation:
 
   ```dotnetcli
   dotnet build --source c:\packages\mypackages

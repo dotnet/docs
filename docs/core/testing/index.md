@@ -38,7 +38,7 @@ Keep in mind there are [best practices](unit-testing-best-practices.md) for writ
 
 ### xUnit
 
-[xUnit](https://xunit.net) is a free, open source, community-focused unit testing tool for .NET. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing .NET apps. xUnit.net works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](/apps/xamarin). It is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under their code of conduct.
+[xUnit](https://xunit.net) is a free, open source, community-focused unit testing tool for .NET. Written by the original inventor of NUnit v2, xUnit.net is the latest technology for unit testing .NET apps. xUnit.net works with ReSharper, CodeRush, TestDriven.NET, and [Xamarin](https://dotnet.microsoft.com/apps/xamarin). It is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under their code of conduct.
 
 For more information, see the following resources:
 

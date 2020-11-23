@@ -11,7 +11,7 @@ public ref class MyTcpClientExample
 public:
 
    // <Snippet1>
-   //  MyTcpClientConstructor is just used to illustrate the different constructors available in in the TcpClient class
+   //  MyTcpClientConstructor is just used to illustrate the different constructors available in the TcpClient class
    static void MyTcpClientConstructor( String^ myConstructorType )
    {
       if ( myConstructorType == "IPAddressExample" )

@@ -2,7 +2,6 @@
 title: "Custom date and time format strings"
 description: Learn to use custom date and time format strings to convert DateTime or DateTimeOffset values into text representations, or to parse strings for dates & times.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.topic: reference
 dev_langs: 
 - "csharp"

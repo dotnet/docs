@@ -3,7 +3,6 @@ title: .NET API analyzer
 description: Learn how the .NET API Analyzer can help detect deprecated APIs and platform compatibility issues.
 author: oliag
 ms.date: 02/20/2020
-ms.technology: dotnet-standard
 ---
 # .NET API analyzer
 

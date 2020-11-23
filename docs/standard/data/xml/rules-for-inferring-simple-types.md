@@ -1,7 +1,6 @@
 ---
 title: "Rules for Inferring Simple Types"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: 394624d6-4da0-430a-8a88-46efe40f14de
 ---
 # Rules for Inferring Simple Types

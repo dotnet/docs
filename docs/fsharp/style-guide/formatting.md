@@ -96,7 +96,7 @@ let myFunBad (a:decimal)(b)c = a + b + c
 
 ### Place parameters on a new line for long definitions
 
-If you have a very long function definition, place the parameters on new lines and indent them to match the indentation level of the subsequent parameter.
+If you have a long function definition, place the parameters on new lines and indent them to match the indentation level of the subsequent parameter.
 
 ```fsharp
 module M =
@@ -302,7 +302,7 @@ Namespaces, exceptions, events, and project/`.dll` names should also use PascalC
 
 ### Avoid underscores in names
 
-Historically, some F# libraries have used underscores in names. However, this is no longer widely accepted, partly because it clashes with .NET naming conventions. That said, some F# programmers use underscores heavily, partly for historical reasons, and tolerance and respect is important. However, be aware that the style is often disliked by others who have a choice about whether to use it.
+Historically, some F# libraries have used underscores in names. However, this is no longer widely accepted, partly because it clashes with .NET naming conventions. That said, some F# programmers use underscores heavily, partly for historical reasons, and tolerance and respect is important. However, the style is often disliked by others who have a choice about whether to use it.
 
 One exception includes interoperating with native components, where underscores are common.
 
@@ -636,21 +636,17 @@ In some cases, `do...yield` may aid in readability. These cases, though subjecti
 
 ## Formatting if expressions
 
-Indentation of conditionals depends on the sizes of the expressions that make them up. If `cond`, `e1` and `e2` are short, simply write them on one line:
+Indentation of conditionals depends on the size and complexity of the expressions that make them up.
+Write them on one line when:
+
+- `cond`, `e1`, and `e2` are short
+- `e1` and `e2` are not `if/then/else` expressions themselves.
 
 ```fsharp
 if cond then e1 else e2
 ```
 
-If either `cond`, `e1` or `e2` are longer, but not multi-line:
-
-```fsharp
-if cond
-then e1
-else e2
-```
-
-If any of the expressions are multi-line:
+If any of the expressions are multi-line or `if/then/else` expressions.
 
 ```fsharp
 if cond then
@@ -659,13 +655,26 @@ else
     e2
 ```
 
-Multiple conditionals with `elif` and `else` are indented at the same scope as the `if`:
+Multiple conditionals with `elif` and `else` are indented at the same scope as the `if` when they follow the rules of the one line `if/then/else` expressions.
 
 ```fsharp
 if cond1 then e1
 elif cond2 then e2
 elif cond3 then e3
 else e4
+```
+
+If any of the conditions or expressions is multi-line, the entire `if/then/else` expression is multi-line:
+
+```fsharp
+if cond1 then
+    e1
+elif cond2 then
+    e2
+elif cond3 then
+    e3
+else
+    e4
 ```
 
 ### Pattern matching constructs
@@ -875,6 +884,41 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
 
+### Formatting constructors, static members, and member invocations
+
+If the expression is short, separate arguments with spaces and keep it in one line.
+
+```fsharp
+let person = new Person(a1, a2)
+
+let myRegexMatch = Regex.Match(input, regex)
+
+let untypedRes = checker.ParseFile(file, source, opts)
+```
+
+If the expression is long, use newlines and indent one scope, rather than indenting to the bracket.
+
+```fsharp
+let person =
+    new Person(
+        argument1,
+        argument2
+    )
+
+let myRegexMatch =
+    Regex.Match(
+        "my longer input string with some interesting content in it",
+        "myRegexPattern"
+    )
+
+let untypedRes =
+    checker.ParseFile(
+        fileName,
+        sourceText,
+        parsingOptionsWithDefines
+    )
+```
+
 ## Formatting attributes
 
 [Attributes](../language-reference/attributes.md) are placed above a construct:
@@ -942,7 +986,7 @@ Avoid placing the attribute on the same line as the value.
 
 ## Formatting computation expression operations
 
-When creating custom operations for [computation expressions](../language-reference/computation-expressions.md) it is recommended to use camelCase naming:
+When creating custom operations for [computation expressions](../language-reference/computation-expressions.md), it is recommended to use camelCase naming:
 
 ```fsharp
 type MathBuilder () =
@@ -981,5 +1025,5 @@ let myNumber =
     }
 ```
 
-The naming convention used should ultimately be driven by the domain being modeled.
+The domain that's being modeled should ultimately drive the naming convention.
 If it is idiomatic to use a different convention, that convention should be used instead.

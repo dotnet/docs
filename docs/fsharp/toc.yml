@@ -41,6 +41,8 @@
     href: tutorials/fsharp-interactive/index.md
 - name: What's new in F#
   items:
+  - name: F# 5.0
+    href: whats-new/fsharp-50.md
   - name: F# 4.7
     href: whats-new/fsharp-47.md
   - name: F# 4.6
@@ -97,6 +99,8 @@
     href: language-reference/unit-type.md
   - name: Strings
     href: language-reference/strings.md
+  - name: Interpolated strings
+    href: language-reference/interpolated-strings.md
   - name: Tuples
     href: language-reference/tuples.md
   - name: F# Collection Types
@@ -246,6 +250,8 @@
     href: language-reference/byrefs.md
   - name: Reference Cells
     href: language-reference/reference-cells.md
+  - name: nameof
+    href: language-reference/nameof.md
   - name: Compiler Directives
     href: language-reference/compiler-directives.md
   - name: Compiler Options

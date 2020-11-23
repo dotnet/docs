@@ -1,7 +1,6 @@
 ---
 title: "Blocking Application Execution by Ending an Async Operation"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "blocks, asynchronous operations"
   - "AsyncWaitHandle property"

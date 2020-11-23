@@ -1,7 +1,9 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
+description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
 ms.date: "01/10/2020"
 no-loc: [System.Text.Json, Newtonsoft.Json]
+zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"
@@ -21,10 +23,20 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 
 You can also write custom converters to customize or extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
 
+::: zone pivot="dotnet-5-0"
+
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
+* [Support polymorphic deserialization](#support-polymorphic-deserialization).
+* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
 * [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+::: zone-end
 
 ## Custom converter patterns
 
@@ -170,10 +182,20 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
-* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties)
-* [Support Dictionary with non-string key](#support-dictionary-with-non-string-key)
-* [Support polymorphic deserialization](#support-polymorphic-deserialization)
+::: zone pivot="dotnet-5-0"
+
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
+* [Support polymorphic deserialization](#support-polymorphic-deserialization).
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
+* [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
+* [Support polymorphic deserialization](#support-polymorphic-deserialization).
+* [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
+::: zone-end
 
 ### Deserialize inferred types to object properties
 
@@ -214,6 +236,8 @@ Without the custom converter, deserialization puts a `JsonElement` in each prope
 
 The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
 
+::: zone pivot="dotnet-core-3-1"
+
 ### Support Dictionary with non-string key
 
 The built-in support for dictionary collections is for `Dictionary<string, TValue>`. That is, the key must be a string. To support a dictionary with an integer or some other type as the key, a custom converter is required.
@@ -245,6 +269,7 @@ The JSON output from serialization looks like the following example:
 ```
 
 The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries.
+::: zone-end
 
 ### Support polymorphic deserialization
 
@@ -281,7 +306,7 @@ The converter can deserialize JSON that was created by using the same converter 
 
 The converter code in the preceding example reads and writes each property manually. An alternative is to call `Deserialize` or `Serialize` to do some of the work. For an example, see [this StackOverflow post](https://stackoverflow.com/a/59744873/12509023).
 
-### Support round-trip for Stack\<T>
+### Support round trip for Stack\<T>
 
 If you deserialize a JSON string into a <xref:System.Collections.Generic.Stack%601> object and then serialize that object, the contents of the stack are in reverse order. This behavior applies to the following types and interface, and user-defined types that derive from them:
 
@@ -300,6 +325,29 @@ The following code shows a custom converter that enables round-tripping to and f
 The following code registers the converter:
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/RoundtripStackOfT.cs?name=SnippetRegister)]
+
+## Handle null values
+
+By default, the serializer handles null values as follows:
+
+* For reference types and `Nullable<T>` types:
+
+  * It does not pass `null` to custom converters on serialization.
+  * It does not pass `JsonTokenType.Null` to custom converters on deserialization.
+  * It returns a `null` instance on deserialization.
+  * It writes `null` directly with the writer on serialization.
+
+* For non-nullable value types:
+
+  * It passes `JsonTokenType.Null` to custom converters on deserialization. (If no custom converter is available, a `JsonException` exception is thrown by the internal converter for the type.)
+
+This null-handling behavior is primarily to optimize performance by skipping an extra call to the converter. In addition, it avoids forcing converters for nullable types to check for `null` at the start of every `Read` and `Write` method override.
+
+::: zone pivot="dotnet-5-0"
+To enable a custom converter to handle `null` for a reference or value type, override <xref:System.Text.Json.Serialization.JsonConverter%601.HandleNull%2A?displayProperty=nameWithType> to return `true`, as shown in the following example:
+
+:::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterHandleNull.cs" highlight="19":::
+::: zone-end
 
 ## Other custom converter samples
 

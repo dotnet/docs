@@ -1,7 +1,6 @@
 ---
 title: "Mapping XML Data Types to CLR Types"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: cabdfcad-f359-479b-b71c-8b2fad42ca49
 ---
 

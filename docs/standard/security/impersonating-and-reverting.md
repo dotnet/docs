@@ -1,7 +1,6 @@
 ---
 title: "Impersonating and Reverting"
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

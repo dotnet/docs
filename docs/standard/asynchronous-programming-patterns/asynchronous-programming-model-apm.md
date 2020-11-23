@@ -2,7 +2,6 @@
 title: "Asynchronous Programming Model (APM)"
 description: Learn about the Asynchronous Programming Model (APM) in .NET. Discover how to begin and end an asynchronous operation.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "ending asynchronous operations"
   - "starting asynchronous operations"

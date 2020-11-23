@@ -2,7 +2,6 @@
 title: "Member Design Guidelines"
 description: Learn member design guidelines in .NET. Members include methods, properties, events, constructors, and fields.
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "member design guidelines [.NET Framework], about member design guidelines"
   - "members [.NET Framework], design guidelines"

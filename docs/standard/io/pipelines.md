@@ -2,7 +2,6 @@
 title: I/O pipelines - .NET
 description: Learn how to efficiently use I/O pipelines in .NET and avoid problems in your code.
 ms.date: 08/27/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "Pipelines"
   - "Pipelines I/O"

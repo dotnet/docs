@@ -852,10 +852,10 @@ This also applies to mutable setters:
 
 ```fsharp
 // Preferred approach
-ctx.Response.Headers.[HeaderNames.ContentType]
-    <- Constants.jsonApiMediaType |> StringValues
-ctx.Response.Headers.[HeaderNames.ContentLength]
-    <- bytes.Length |> string |> StringValues
+ctx.Response.Headers.[HeaderNames.ContentType] <-
+    Constants.jsonApiMediaType |> StringValues
+ctx.Response.Headers.[HeaderNames.ContentLength] <-
+    bytes.Length |> string |> StringValues
 
 // Not OK
 ctx.Response.Headers.[HeaderNames.ContentType] <- Constants.jsonApiMediaType

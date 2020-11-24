@@ -541,10 +541,59 @@ The app's migration is nearly complete - the only thing remaining is to configur
 
 ASP.NET Core apps running on .NET Framework can continue to leverage Entity Framework. If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
 
-- Data access with EF
-  - Migrating EF6 as-is
-  - Pros and Cons of EF6 vs. EF Core
-  - Upgrading to EF Core
+As it happens, configuring EF 6 in the eShop sample migration doesn't require any special work, since this work was performed in the Autofac `ApplicationModule`. The only problem is that currently the `CatalogDBContext` class tries to read its connection string from `web.config`. To address this, the connection details need to be added to `appsettings.json` and then the connection string must be passed into `CatalogDBContext` when it is created.
+
+First, `appsettings.json` is updated to include the connection string. The full file is listed here:
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=eShopPorted;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "UseMockData": "false",
+  "UseCustomizationData": "true"
+}
+```
+
+Next, the connection string must be passed into the constructor when the DbContext is created. Since the instances is created by Autofac, the change needs to be made in `ApplicationModule`. Modify the module to take in a `connectionString` in its constructor and assign it to a field. Then modify the registration for `CatalogDBContext` to add connection string as a parameter:
+
+```csharp
+builder.RegisterType<CatalogDBContext>()
+  .WithParameter("connectionString", _connectionString)
+  .InstancePerLifetimeScope();
+```
+
+The parameter must also be added to a new constructor overload in `CatalogDBContext` itself:
+
+```csharp
+public CatalogDBContext(string connectionString) : base(connectionString)
+{
+}
+```
+
+Finally, `ConfigureServices` must read the connection string from `Config` and pass it into the `ApplicationModule` when it instantiates it:
+
+```csharp
+bool useMockData = Configuration.GetValue<bool>("UseMockData");
+string connectionString = Configuration.GetConnectionString("DefaultConnection");
+builder.RegisterModule(new ApplicationModule(useMockData, connectionString));
+```
+
+With this in place, the app runs as it did before, connecting to a SQL Server database when `UseMockData` is false.
+
+The app can be deployed and run in production at this point, converted to ASP.NET Core but still running on .NET Framework and EF 6. If desired, the app can be migrated to run on .NET Core and Entity Framework Core, which will bring additional advantages described in earlier chapters. Specific to Entity Framework, [this documentation compares EF Core and EF6](https://docs.microsoft.com/ef/efcore-and-ef6/) and includes a grid showing which library supports each of dozens of individual features.
+
+### Migrate to Entity Framework Core
+
+Assuming a decision is made to migrate to EF Core, the steps can be fairly straightforward, especially if the original app used a code-based model approach. When [preparing to port from EF 6 to EF Core](https://docs.microsoft.com/ef/efcore-and-ef6/porting/), review the availability of features in the destination version of EF Core you'll be using. Review the documentation on [porting from and EDMX-based model](https://docs.microsoft.com/ef/efcore-and-ef6/porting/port-edmx) versus [porting from a code-based model](https://docs.microsoft.com/ef/efcore-and-ef6/porting/port-code).
+
+- Upgrading to EF Core
 - Discuss other data providers
 
 ## Fix all TODO tasks

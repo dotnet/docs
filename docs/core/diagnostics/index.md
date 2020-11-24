@@ -25,7 +25,7 @@ This article helps you find the various tools you need.
 
 ## Dumps
 
-A [dump](./dumps.md) is a file that contains snapshot of the process at the time they were created and can be useful for examining the state of your application for debugging various issues. 
+A [dump](./dumps.md) is a file that contains snapshot of the process at the time they were created and can be useful for examining the state of your application for debugging various issues.
 
 ## Collect diagnostics in containers
 

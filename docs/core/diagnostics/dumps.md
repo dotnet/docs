@@ -34,7 +34,7 @@ The table below shows the environment variables you can configure for collecting
 
 ### Types of dumps in .NET
 
-You can collect different types of the dump depending on the purpose. This can be configured with the `COMPlus_DbgMiniDumpType` when using environment variable, or the `--type` flag when you are using `dotnet-dump`. Refer to the table below on what types of dumps you can collect in .NET. 
+You can collect different types of the dump depending on the purpose. This can be configured with the `COMPlus_DbgMiniDumpType` when using environment variable, or the `--type` flag when you are using `dotnet-dump`. Refer to the table below on what types of dumps you can collect in .NET.
 
 |Value|Name|Description|
 |-----|----|-----------|

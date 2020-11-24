@@ -814,7 +814,7 @@ let function1 arg1 arg2 arg3 arg4 =
     arg3 + arg4
 ```
 
-### Formatting pipeline operators or mutable setters
+### Formatting pipeline operators or mutable assignments
 
 Pipeline `|>` operators should go underneath the expressions they operate on.
 

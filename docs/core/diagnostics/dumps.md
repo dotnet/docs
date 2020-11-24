@@ -17,17 +17,40 @@ Dumps can be collected in a variety of ways depending on which platform you are 
 
 ### Using dotnet-dump
 
-`dotnet-dump` is a CLI tool that allows you to collect and analyze dumps. For more information on how to use it to collect dumps with `dotnet-dump`, refer to [its documentation](dotnet-dump.md).
+`dotnet-dump` is a CLI tool that allows you to collect and analyze dumps. For more information on how to use it to collect dumps with `dotnet-dump`, refer to [its documentation](dotnet-dump.md)
 
 ### Using environment variables
 
 For some situations, it may be more desirable to use environment variables to collect dumps. For example, capturing a dump when an exception is thrown helps you identify issue by examining the state of the app when it crashed.
 
+The table below shows the environment variables you can configure for collecting dumps.
 
+|Environment variable|Description|Default value|
+|-------|---------|---|
+|`COMPlus_DbgEnableMiniDump`|If set to 1, enable core dump generation.|0|
+|`COMPlus_DbgMiniDumpType`|Type of the dump to be collected. (See [Types of dumps](#types-of-dumps-in-.net) to learn more)|2 (`MiniDumpWithPrivateReadWriteMemory`)|
+|`COMPlus_DbgMiniDumpName`|Path to a file to write the dump to.|`/tmp/coredump.<pid>`|
+|`COMPlus_CreateDumpDiagnostics`|If set to 1, enable diagnostic logging of dump process.|0|
 
-COMPlus_DbgEnableMiniDump: if set to "1", enables this core dump generation. The default is NOT to generate a dump.
-COMPlus_DbgMiniDumpType: See below. Default is "2" MiniDumpWithPrivateReadWriteMemory.
-COMPlus_DbgMiniDumpName: if set, use as the template to create the dump path and file name. The pid can be placed in the name with %d. The default is /tmp/coredump.%d.
-COMPlus_CreateDumpDiagnostics: if set to "1", enables the createdump utilities diagnostic messages (TRACE macro).
+### Types of dumps in .NET
 
-##
+You can collect different types of the dump depending on the purpose. This can be configured with the `COMPlus_DbgMiniDumpType` when using environment variable, or the `--type` flag when you are using `dotnet-dump`. Refer to the table below on what types of dumps you can collect in .NET. 
+
+|Value|Name|Description|
+|-----|----|-----------|
+|1|`MiniDumpNormal`|Include just the information necessary to capture stack traces for all existing threads in a process. Limited GC heap memory and information.|
+|2|`MiniDumpWithPrivateReadWriteMemory`|Includes the GC heaps and information necessary to capture stack traces for all existing threads in a process.|
+|3|`MiniDumpFilterTriage`|Include just the information necessary to capture stack traces for all existing threads in a process. Limited GC heap memory and information.|
+|4|`MiniDumpWithFullMemory`|Include all accessible memory in the process. The raw memory data is included at the end, so that the initial structures can be mapped directly without the raw memory information. This option can result in a very large file.|
+
+## Analyze dumps
+
+Dumps can be analyzed using [`dotnet-dump`](dotnet-dump.md).
+
+## See More
+
+Learn more about how you can leverage dumps to help diagnosing problems in your .NET application.
+
+* [Debug Linux dumps](debug-linux-dumps.md) tutorial walks you through how to debug a dump that was collected in Linux.
+
+* [Debug deadlock](debug-deadlock.md) tutorial walks you through how to debug a deadlock in your .NET application using dumps.

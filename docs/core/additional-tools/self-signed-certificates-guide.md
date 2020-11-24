@@ -25,11 +25,11 @@ This sample requires [Docker 17.06](https://docs.docker.com/release-notes/docker
 
 ## Prepare sample app
 
-You'll need to prepare the sample app depending on which runtime you'd like to use for testing.
+You'll need to prepare the sample app depending on which runtime you'd like to use for testing, either [.NET Core 3.1](#prepare-net-core-31-sample-app) or [.NET 5](#prepare-net-5-sample-app).
 
-For this guide, you'll be using a [sample app](https://hub.docker.com/_/microsoft-dotnet-samples) and make changes where appropriate.
+For this guide, you'll use a [sample app](https://hub.docker.com/_/microsoft-dotnet-samples) and make changes where appropriate.
 
-### Prepare .NET Core 3.1 sample app
+### .NET Core 3.1 sample app
 
 Get the sample app.
 
@@ -92,7 +92,7 @@ Build the container for testing locally.
 docker build -t aspnetapp:my-sample -f Dockerfile .
 ```
 
-### Prepare .NET 5 sample app
+### .NET 5 sample app
 
 For this guide, the [sample aspnetapp](https://hub.docker.com/_/microsoft-dotnet-samples) should be checked for .NET 5.
 
@@ -157,7 +157,15 @@ Build the container for testing locally.
 docker build -t aspnetapp:my-sample -f Dockerfile .
 ```
 
-## Create a self-signed certificate with dotnet dev-certs
+## Create a self-signed certificate
+
+You can create a self-signed certificate:
+
+- [With dotnet dev-certs](#with-dotnet-dev-certs)
+- [With PowerShell](#with-powershell)
+- [With OpenSSL](#with-openssl)
+
+### With dotnet dev-certs
 
 You can use `dotnet dev-certs` to work with self-signed certificates. This example uses a PowerShell console.
 
@@ -186,7 +194,7 @@ docker run --rm -it -p 8000:80 -p 8001:443 -e ASPNETCORE_URLS="https://+;http://
 
 Once the application starts, navigate to `https://localhost:8001` in your web browser.
 
-### Clean up
+#### Clean up
 
 If the secrets and certificates are not in use, be sure to clean them up.
 
@@ -195,7 +203,7 @@ dotnet user-secrets remove "Kestrel:Certificates:Development:Password" -p aspnet
 dotnet dev-certs https --clean
 ```
 
-## Create a self-signed certificate with PowerShell
+### With PowerShell
 
 You can use PowerShell to generate self-signed certificates. The [PKI Client](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps&preserver-view=true) can be used to generate a self-signed certificate.
 
@@ -233,7 +241,7 @@ Once the application is up, navigate to contoso.com:8001 in a browser.
 
 Be sure that the host entries are updated for `contoso.com` to answer on  the appropriate ip address (for example 127.0.0.1). If the certificate isn't recognized, make sure that the certificate that is loaded with the container is also trusted on the host, and that there's appropriate SAN / DNS entries for `contoso.com`.
 
-### Clean up
+#### Clean up
 
 ```powershell
 $cert | Remove-Item
@@ -241,7 +249,7 @@ Get-ChildItem $certFilePath | Remove-Item
 $rootCert | Remove-item
 ```
 
-## Create a self-signed certificate with OpenSSL
+### With OpenSSL
 
 You can use [OpenSSL](https://www.openssl.org/) to create self-signed certificates. This example will use WSL / Ubuntu and a bash shell with `OpenSSL`.
 
@@ -331,7 +339,7 @@ Once the application is up, navigate to contoso.com:8001 in a browser.
 
 Be sure that the host entries are updated for `contoso.com` to answer on  the appropriate ip address (for example 127.0.0.1). If the certificate isn't recognized, make sure that the certificate that is loaded with the container is also trusted on the host, and that there's appropriate SAN / DNS entries for `contoso.com`.
 
-### Clean up
+#### Clean up
 
 Be sure to clean up the self-signed certificates once done testing.
 

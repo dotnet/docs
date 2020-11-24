@@ -25,7 +25,7 @@ This sample requires [Docker 17.06](https://docs.docker.com/release-notes/docker
 
 ## Prepare sample app
 
-You'll need to prepare the sample app depending on which runtime you'd like to use for testing, either [.NET Core 3.1](#prepare-net-core-31-sample-app) or [.NET 5](#prepare-net-5-sample-app).
+You'll need to prepare the sample app depending on which runtime you'd like to use for testing, either [.NET Core 3.1](#net-core-31-sample-app) or [.NET 5](#net-5-sample-app).
 
 For this guide, you'll use a [sample app](https://hub.docker.com/_/microsoft-dotnet-samples) and make changes where appropriate.
 

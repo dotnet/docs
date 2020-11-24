@@ -1,6 +1,6 @@
 ---
 title: Dumps - .NET
-description: An introduction to dumps in .NET Core.
+description: An introduction to dumps in .NET.
 ms.date: 10/12/2020
 ---
 

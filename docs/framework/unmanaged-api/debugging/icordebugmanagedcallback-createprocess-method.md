@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback::CreateProcess Method
+
 Notifies the debugger when a process has been attached or started for the first time.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT CreateProcess (
 ```  
   
 ## Parameters  
+
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process that has been attached or started.  
   
 ## Remarks  
+
  This method is not called until the common language runtime is initialized. Most of the [ICorDebug](icordebug-interface.md) methods will return CORDBG_E_NOTREADY before the `CreateProcess` callback.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

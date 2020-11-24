@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICeeGen::ComputePointer Method
+
 Determines the buffer for the specified code section.  
   
  This method is obsolete and should not be used.  
@@ -32,6 +33,7 @@ HRESULT ComputePointer (
 ```  
   
 ## Parameters  
+
  `section`  
  [in] The code section for which to return a buffer.  
   
@@ -42,6 +44,7 @@ HRESULT ComputePointer (
  [out] A pointer to the returned buffer.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
 ---
 # Generic Delegates for Manipulating Arrays and Lists
+
 This topic provides an overview of generic delegates for conversions, search predicates, and actions to be taken on elements of an array or collection.  
   
 ## Generic Delegates for Manipulating Arrays and Lists  
+
  The <xref:System.Action%601> generic delegate represents a method that performs some action on an element of the specified type. You can create a method that performs the desired action on the element, create an instance of the <xref:System.Action%601> delegate to represent that method, and then pass the array and the delegate to the <xref:System.Array.ForEach%2A?displayProperty=nameWithType> static generic method. The method is called for every element of the array.  
   
  The <xref:System.Collections.Generic.List%601> generic class also provides a <xref:System.Collections.Generic.List%601.ForEach%2A> method that uses the <xref:System.Action%601> delegate. This method is not generic.  
@@ -30,6 +32,7 @@ This topic provides an overview of generic delegates for conversions, search pre
  The <xref:System.Converter%602> generic delegate allows you to define a conversion between two types, and to convert an array of one type into an array of the other, or to convert a list of one type to a list of the other. Create a method that converts the elements of the existing list to a new type, create a delegate instance to represent the method, and use the <xref:System.Array.ConvertAll%2A?displayProperty=nameWithType> generic static method to produce an array of the new type from the original array, or the <xref:System.Collections.Generic.List%601.ConvertAll%60%601%28System.Converter%7B%600%2C%60%600%7D%29?displayProperty=nameWithType> generic instance method to produce a list of the new type from the original list.  
   
 ### Chaining Delegates  
+
  Many of the methods that use these delegates return an array or list, which can be passed to another method. For example, if you want to select certain elements of an array, convert those elements to a new type, and save them in a new array, you can pass the array returned by the <xref:System.Array.FindAll%2A> generic method to the <xref:System.Array.ConvertAll%2A> generic method. If the new element type lacks a natural sort order, you can pass the array returned by the <xref:System.Array.ConvertAll%2A> generic method to the <xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Comparison%7B%60%600%7D%29> generic method.  
   
 ## See also

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorGenericParamAttr Enumeration
+
 Contains values that describe the <xref:System.Type> parameters for generic types, as used in calls to [IMetaDataEmit2::DefineGenericParam](imetadataemit2-definegenericparam-method.md).  
   
 ## Syntax  
@@ -52,6 +53,7 @@ typedef enum CorGenericParamAttr {
 |`gpDefaultConstructorConstraint`|Indicates that the <xref:System.Type> parameter must have a default public constructor that takes no parameters.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

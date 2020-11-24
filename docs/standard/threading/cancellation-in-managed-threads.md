@@ -45,6 +45,7 @@ The general pattern for implementing the cooperative cancellation model is:
 - Listeners can be notified of cancellation requests by polling, callback registration, or waiting on wait handles.  
   
 ## Cancellation Types  
+
  The cancellation framework is implemented as a set of related types, which are listed in the following table.  
   
 |Type name|Description|  
@@ -56,6 +57,7 @@ The general pattern for implementing the cooperative cancellation model is:
  The cancellation model is integrated into .NET in several types. The most important ones are <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> and <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType>. We recommend that you use this cooperative cancellation model for all new library and application code.  
   
 ## Code Example  
+
  In the following example, the requesting object creates a <xref:System.Threading.CancellationTokenSource> object, and then passes its <xref:System.Threading.CancellationTokenSource.Token%2A> property to the cancelable operation. The operation that receives the request monitors the value of the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property of the token by polling. When the value becomes `true`, the listener can terminate in whatever manner is appropriate. In this example, the method just exits, which is all that is required in many cases.  
   
 > [!NOTE]
@@ -65,6 +67,7 @@ The general pattern for implementing the cooperative cancellation model is:
  [!code-vb[Cancellation#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex1.vb#1)]  
   
 ## Operation Cancellation Versus Object Cancellation  
+
  In the cooperative cancellation framework, cancellation refers to operations, not objects. The cancellation request means that the operation should stop as soon as possible after any required cleanup is performed. One cancellation token should refer to one "cancelable operation," however that operation may be implemented in your program. After the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property of the token has been set to `true`, it cannot be reset to `false`. Therefore, cancellation tokens cannot be reused after they have been canceled.  
   
  If you require an object cancellation mechanism, you can base it on the operation cancellation mechanism by calling the <xref:System.Threading.CancellationToken.Register%2A?displayProperty=nameWithType> method, as shown in the following example.  
@@ -75,6 +78,7 @@ The general pattern for implementing the cooperative cancellation model is:
  If an object supports more than one concurrent cancelable operation, pass a separate token as input to each distinct cancelable operation. That way, one operation can be cancelled without affecting the others.  
   
 ## Listening and Responding to Cancellation Requests  
+
  In the user delegate, the implementer of a cancelable operation determines how to terminate the operation in response to a cancellation request. In many cases, the user delegate can just perform any required cleanup and then return immediately.  
   
  However, in more complex cases, it might be necessary for the user delegate to notify library code that cancellation has occurred. In such cases, the correct way to terminate the operation is for the delegate to call the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A>, method, which will cause an <xref:System.OperationCanceledException> to be thrown. Library code can catch this exception on the user delegate thread and examine the exception's token to determine whether the exception indicates cooperative cancellation or some other exceptional situation.  
@@ -82,6 +86,7 @@ The general pattern for implementing the cooperative cancellation model is:
  The <xref:System.Threading.Tasks.Task> class handles <xref:System.OperationCanceledException> in this way. For more information, see [Task Cancellation](../parallel-programming/task-cancellation.md).  
   
 ### Listening by Polling  
+
  For long-running computations that loop or recurse, you can listen for a cancellation request by periodically polling the value of the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=nameWithType> property. If its value is `true`, the method should clean up and terminate as quickly as possible. The optimal frequency of polling depends on the type of application. It is up to the developer to determine the best polling frequency for any given program. Polling itself does not significantly impact performance. The following example shows one possible way to poll.  
   
  [!code-csharp[Cancellation#3](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex11.cs#3)]
@@ -90,6 +95,7 @@ The general pattern for implementing the cooperative cancellation model is:
  For a more complete example, see [How to: Listen for Cancellation Requests by Polling](how-to-listen-for-cancellation-requests-by-polling.md).  
   
 ### Listening by Registering a Callback  
+
  Some operations can become blocked in such a way that they cannot check the value of the cancellation token in a timely manner. For these cases, you can register a callback method that unblocks the method when a cancellation request is received.  
   
  The <xref:System.Threading.CancellationToken.Register%2A> method returns a <xref:System.Threading.CancellationTokenRegistration> object that is used specifically for this purpose. The following example shows how to use the <xref:System.Threading.CancellationToken.Register%2A> method to cancel an asynchronous Web request.  
@@ -110,6 +116,7 @@ The general pattern for implementing the cooperative cancellation model is:
  For a more complete example, see [How to: Register Callbacks for Cancellation Requests](how-to-register-callbacks-for-cancellation-requests.md).  
   
 ### Listening by Using a Wait Handle  
+
  When a cancelable operation can block while it waits on a synchronization primitive such as a <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> or <xref:System.Threading.Semaphore?displayProperty=nameWithType>, you can use the <xref:System.Threading.CancellationToken.WaitHandle%2A?displayProperty=nameWithType> property to enable the operation to wait on both the event and the cancellation request. The wait handle of the cancellation token will become signaled in response to a cancellation request, and the method can use the return value of the <xref:System.Threading.WaitHandle.WaitAny%2A> method to determine whether it was the cancellation token that signaled. The operation can then just exit, or throw a <xref:System.OperationCanceledException>, as appropriate.  
   
  [!code-csharp[Cancellation#5](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex9.cs#5)]
@@ -123,6 +130,7 @@ The general pattern for implementing the cooperative cancellation model is:
  For a more complete example, see [How to: Listen for Cancellation Requests That Have Wait Handles](how-to-listen-for-cancellation-requests-that-have-wait-handles.md).  
   
 ### Listening to Multiple Tokens Simultaneously  
+
  In some cases, a listener may have to listen to multiple cancellation tokens simultaneously. For example, a cancelable operation may have to monitor an internal cancellation token in addition to a token passed in externally as an argument to a method parameter. To accomplish this, create a linked token source that can join two or more tokens into one token, as shown in the following example.  
   
  [!code-csharp[Cancellation#7](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex13.cs#7)]
@@ -131,6 +139,7 @@ The general pattern for implementing the cooperative cancellation model is:
  Notice that you must call `Dispose` on the linked token source when you are done with it. For a more complete example, see [How to: Listen for Multiple Cancellation Requests](how-to-listen-for-multiple-cancellation-requests.md).  
   
 ## Cooperation Between Library Code and User Code  
+
  The unified cancellation framework makes it possible for library code to cancel user code, and for user code to cancel library code in a cooperative manner. Smooth cooperation depends on each side following these guidelines:  
   
 - If library code provides cancelable operations, it should also provide public methods that accept an external cancellation token so that user code can request cancellation.  

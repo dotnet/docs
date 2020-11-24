@@ -7,13 +7,13 @@ ms.date: 04/28/2018
 
 ![Cover image of the Modernize .NET applications guide.](./media/index/web-application-guide-cover-image.png)
 
-PUBLISHED BY  
-Microsoft Press and Microsoft DevDiv  
-Divisions of Microsoft Corporation  
-One Microsoft Way  
-Redmond, Washington 98052-6399  
+PUBLISHED BY
+Microsoft Press and Microsoft DevDiv
+Divisions of Microsoft Corporation
+One Microsoft Way
+Redmond, Washington 98052-6399
 
-Copyright © 2020 by Microsoft Corporation  
+Copyright © 2020 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced in any form or by any means without the written permission of the publisher.
 
@@ -31,12 +31,12 @@ Author:
 > **Cesar de la Torre**, Sr. PM, .NET Product Team, Microsoft Corp.
 
 Participants and reviewers:
-> **Scott Hunter**, Partner Director PM, .NET team, Microsoft  
-> **Paul Yuknewicz**, Principal PM Manager, Visual Studio Tools team, Microsoft  
-> **Lisa Guthrie**, Sr. PM, Visual Studio Tools team, Microsoft  
-> **Ankit Asthana**, Principal PM Manager, .NET team, Microsoft  
-> **Unai Zorrilla**, Developer Lead, Plain Concepts  
-> **Javier Valero**, Chief Operating Officer at Grupo Solutio  
+> **Scott Hunter**, Partner Director PM, .NET team, Microsoft
+> **Paul Yuknewicz**, Principal PM Manager, Visual Studio Tools team, Microsoft
+> **Lisa Guthrie**, Sr. PM, Visual Studio Tools team, Microsoft
+> **Ankit Asthana**, Principal PM Manager, .NET team, Microsoft
+> **Unai Zorrilla**, Developer Lead, Plain Concepts
+> **Javier Valero**, Chief Operating Officer at Grupo Solutio
 
 ## Introduction
 
@@ -97,7 +97,7 @@ Table 1-1 describes the main benefits of and reasons for choosing each migration
 
 ### Key technologies and architectures by maturity level
 
-.NET Framework applications initially started with the .NET Framework version 1.0, which was released in late 2001. Then, companies moved towards newer versions (such as 2.0, 3.5 and .NET 4.x). Most of those applications ran on Windows Server and Internet Information Server (IIS), and used a relational database, like SQL Server, Oracle, MySQL, or any other RDBMS.
+.NET Framework applications initially started with the .NET Framework version 1.0, which was released in late 2001. Then, companies moved towards newer versions (such as 2.0, 3.5 and .NET Framework 4.x). Most of those applications ran on Windows Server and Internet Information Server (IIS), and used a relational database, like SQL Server, Oracle, MySQL, or any other RDBMS.
 
 Most existing .NET applications might nowadays be based on .NET Framework 4.x, or even on .NET Framework 3.5, and use web frameworks like ASP.NET MVC, ASP.NET Web Forms, ASP.NET Web API, Windows Communication Foundation (WCF), ASP.NET SignalR, and ASP.NET Web Pages. These established .NET Framework technologies depend on Windows. That dependency is important to consider if you are simply migrating legacy apps and you want to make minimal changes to your application infrastructure.
 

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3caa78c1-3448-4b7b-b83c-228ee857635e
 ---
 # Copying Existing Nodes from One Document to Another
+
 The **ImportNode** method is the mechanism by which a node or entire node subtree is copied from one **XmlDocument** to another. The node returned from the call is a copy of the node from the source document, including attribute values, the node name, node type, and all namespace-related attributes such as the prefix, local name, and namespace Uniform Resource Identifier (URI). The source document is not changed. After you have imported the node, you still have to add it to the tree using one of the methods used to insert nodes.  
   
  When the node is attached to its new document, the new document owns the node. The reason is that each node, when created, has an owning document, even if the nodes are created in separate document fragments. This is a requirement of the XML Document Object Model (DOM) and is enforced by the factory creation design on the **XmlDocument** class. For example, **CreateElement**, is the only way to create new nodes.  

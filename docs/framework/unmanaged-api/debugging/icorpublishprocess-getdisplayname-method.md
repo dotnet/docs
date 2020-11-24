@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishProcess::GetDisplayName Method
+
 Gets the full path of the executable for the process referenced by this [ICorPublishProcess](icorpublishprocess-interface.md).  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetDisplayName (
 ```  
   
 ## Parameters  
+
  `cchName`  
  [in] The size of the `szName` array.  
   
@@ -41,6 +43,7 @@ HRESULT GetDisplayName (
  [out] An array to store the name, including the full path, of the executable. The name is null-terminated.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  

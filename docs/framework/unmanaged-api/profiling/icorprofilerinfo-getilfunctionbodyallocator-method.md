@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetILFunctionBodyAllocator Method
+
 Gets an interface that provides a method to allocate memory to be used for swapping out the body of a method in Microsoft intermediate language (MSIL) code.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetILFunctionBodyAllocator(
 ```  
   
 ## Parameters  
+
  `moduleId`  
  [in] The ID of the module in which the method resides.  
   
@@ -35,9 +37,11 @@ HRESULT GetILFunctionBodyAllocator(
  [out] A pointer to an [IMethodMalloc](imethodmalloc-interface.md) interface that provides a method to allocate the memory.  
   
 ## Remarks  
+
  A method body in MSIL code must be located as a relative virtual address (RVA), relative to the loaded module, which means that it follows the module within 4 GB. To make it easier for a tool to swap out the body of a method, the `GetILFunctionBodyAllocator` method ensures that memory is allocated within that range.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

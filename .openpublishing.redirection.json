@@ -207,8 +207,28 @@
             "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
         },
         {
+            "source_path": "docs/core/compatibility/3.1-5.0.md",
+            "redirect_url": "/dotnet/core/compatibility/breaking-changes"
+        },
+        {
+            "source_path": "docs/core/compatibility/code-analysis.md",
+            "redirect_url": "/dotnet/core/compatibility/code-analysis/5.0/ca1416-platform-compatibility-analyzer"
+        },
+        {
+            "source_path": "docs/core/compatibility/interop.md",
+            "redirect_url": "/dotnet/core/compatibility/interop/5.0/built-in-support-for-winrt-removed"
+        },
+        {
             "source_path": "docs/core/compatibility/framework-core.md",
             "redirect_url": "/dotnet/core/compatibility/fx-core"
+        },
+        {
+            "source_path": "docs/core/compatibility/serialization.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/5.0/binaryformatter-deserialize-rewraps-exceptions"
+        },
+        {
+            "source_path": "docs/core/compatibility/wpf.md",
+            "redirect_url": "/dotnet/core/compatibility/windows-forms/5.0/automatically-infer-winexe-output-type"
         },
         {
             "source_path": "docs/core/deploying/applications.md",
@@ -374,8 +394,7 @@
         },
         {
             "source_path": "docs/core/porting/wpf.md",
-            "redirect_url": "/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/core/preview3/deploying/index.md",
@@ -8516,13 +8535,11 @@
         },
         {
             "source_path": "docs/framework/wpf/advanced/xaml-overview-wpf.md",
-            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml?view=netdesktop-5.0",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/advanced/xaml-resources.md",
-            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml-resources-define?view=netdesktop-5.0",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml-resources-define?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/advanced/xaml-syntax-in-detail.md",
@@ -9574,8 +9591,7 @@
         },
         {
             "source_path": "docs/framework/wpf/controls/styling-and-templating.md",
-            "redirect_url": "/dotnet/desktop/wpf/fundamentals/styles-templates-overview?view=netdesktop-5.0",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/styles-templates-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/controls/tabcontrol-styles-and-templates.md",
@@ -9723,8 +9739,7 @@
         },
         {
             "source_path": "docs/framework/wpf/data/data-binding-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/data/data-binding-wpf.md",

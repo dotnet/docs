@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeInfo::LoadErrorString Method
+
 Translates an HRESULT value into an appropriate error message for the specified culture.  
   
  This method supersedes the following functions:  
@@ -36,6 +37,7 @@ HRESULT LoadErrorString(
 ```  
   
 ## Parameters  
+
  `iResourceID`  
  [in] The HRESULT to translate.  
   
@@ -49,6 +51,7 @@ HRESULT LoadErrorString(
  [in] The culture identifier. To use the default culture, you must specify -1.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -58,6 +61,7 @@ HRESULT LoadErrorString(
 |E_INVALIDARG|`pwzBuffer` is null.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

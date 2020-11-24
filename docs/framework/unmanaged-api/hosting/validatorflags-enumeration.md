@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ValidatorFlags Enumeration
+
 Contains values that indicate the type of validation that should be performed in a call to the [ICLRValidator::Validate](iclrvalidator-validate-method.md) method.  
   
 ## Syntax  
@@ -41,6 +42,7 @@ enum ValidatorFlags {
 |`VALIDATOR_SHOW_SOURCE_LINES`|Specifies that validation error messages should include the lines of source code that raise validation errors. This field value is not valid in the .NET Framework version 2.0.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugModule::IsInMemory Method
+
 Gets a value that indicates whether this module exists only in memory.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT IsInMemory(
 ```  
   
 ## Parameters  
+
  `pInMemory`  
  [out] `true` if this module exists only in memory; otherwise, `false`.  
   
 ## Remarks  
+
  The common language runtime (CLR) supports the loading of modules from raw streams of bytes. Such modules are called *in-memory modules* and do not exist on disk.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

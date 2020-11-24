@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ThreadCreated Method
+
 Notifies the profiler that a thread has been created.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT ThreadCreated(
 ```  
   
 ## Parameters  
+
  `threadId`  
  [in] The ID of the thread that has been created.  
   
 ## Remarks  
+
  The `threadId` value is immediately valid.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

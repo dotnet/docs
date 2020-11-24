@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetCustomAttributeValue Method
+
 Sets or updates the value of a custom attribute defined by a prior call to [IMetaDataEmit::DefineCustomAttribute](imetadataemit-definecustomattribute-method.md).  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetCustomAttributeValue (
 ```  
   
 ## Parameters  
+
  `pcv`  
  [in] The token of the target custom attribute.  
   
@@ -40,6 +42,7 @@ HRESULT SetCustomAttributeValue (
  [in] The size, in bytes, of the custom attribute.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

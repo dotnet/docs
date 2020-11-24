@@ -24,6 +24,7 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 ```  
   
 ## Parameters  
+
  `pModulusBlob`  
  [in] The base64-encoded Modulus blob (from the \<Modulus> element).  See the [CRYPTOAPI_BLOB](/windows/win32/api/dpapi/ns-dpapi-crypt_integer_blob) structure.  
   
@@ -34,6 +35,7 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
  [out] A pointer to WCHAR * to receive the hex-encoded public key token.  
   
 ## Return Value  
+
  `S_OK` if the function succeeds. Otherwise, returns an error code.  
   
 ## See also

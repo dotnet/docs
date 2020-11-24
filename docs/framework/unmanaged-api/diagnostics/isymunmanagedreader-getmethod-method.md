@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedReader::GetMethod Method
+
 Gets a symbol reader method, given a method token.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetMethod (
 ```  
   
 ## Parameters  
+
  `token`  
  [in] The method token.  
   
@@ -35,9 +37,11 @@ HRESULT GetMethod (
  [out] A pointer to the returned interface.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

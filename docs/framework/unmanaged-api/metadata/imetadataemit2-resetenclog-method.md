@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit2::ResetENCLog Method
+
 Resets the edit-and-continue log and starts a new session.  
   
 ## Syntax  
@@ -26,9 +27,11 @@ HRESULT ResetENCLog ();
 ```  
   
 ## Parameters  
+
  `ResetENCLog` takes no parameters.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

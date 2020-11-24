@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 17fc5d76-75a9-4933-83f0-594de7f973f3
 ---
 # ICorDebugAssembly3 Interface
+
 Logically extends the ICorDebugAssembly interface to provide support for container assemblies and their contained assemblies.  
   
 ## Methods  
@@ -19,6 +20,7 @@ Logically extends the ICorDebugAssembly interface to provide support for contain
 > The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # METAHOST_POLICY_FLAGS Enumeration
+
 Provides binding policies that are common to most runtime hosts. This enumeration is used by the [ICLRMetaHostPolicy::GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md) method.  
   
 ## Syntax  
@@ -48,6 +49,7 @@ typedef enum {
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Metahost.h  

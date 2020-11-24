@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyEmit::DefineManifestResource Method
+
 Creates a `ManifestResource` structure containing metadata for the specified manifest resource, and returns the associated metadata token.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT DefineManifestResource (
 ```  
   
 ## Parameters  
+
  `szName`  
  [in] The name of the resource.  
   
@@ -48,9 +50,11 @@ HRESULT DefineManifestResource (
  [out] A pointer to the returned metadata token.  
   
 ## Remarks  
+
  One `ManifestResource` metadata structure must be defined for each resource that is implemented in each of the assembly's files.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

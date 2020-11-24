@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineCustomAttribute Method
+
 Creates a definition for a custom attribute with the specified metadata signature, to be attached to the specified object, and gets a token to that custom attribute definition.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT DefineCustomAttribute (
 ```  
   
 ## Parameters  
+
  `tkObj`  
  [in] The token for the owner item.  
   
@@ -48,6 +50,7 @@ HRESULT DefineCustomAttribute (
  [out] The `mdCustomAttribute` token assigned.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

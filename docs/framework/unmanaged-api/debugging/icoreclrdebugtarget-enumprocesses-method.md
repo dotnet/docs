@@ -19,6 +19,7 @@ topic_type:
   - "apiref"
 ---
 # ICoreClrDebugTarget::EnumProcesses Method
+
 Enumerates the processes that are running on a remote computer.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT EnumProcesses (
 ```  
   
 ## Parameters  
+
  `pcProcs`  
  [out] The number of processes returned in `ppProcs`. This value can be 0 (zero).  
   
@@ -38,6 +40,7 @@ HRESULT EnumProcesses (
  [out] An array of [CoreClrDebugProcInfo](coreclrdebugprocinfo-structure.md) structures that represent the processes running on the remote computer.  
   
 ## Return Value  
+
  S_OK  
  Success.  
   
@@ -48,9 +51,11 @@ HRESULT EnumProcesses (
  Other failures.  
   
 ## Remarks  
+
  To free the memory that was allocated by this method, call the [ICoreClrDebugTarget::FreeMemory](icoreclrdebugtarget-freememory-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CoreClrRemoteDebuggingInterfaces.h  

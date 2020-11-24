@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CeeSectionRelocType Enumeration
+
 Provides values to influence the type of `reloc` instruction emitted in a call to [ICeeGen::AddSectionReloc](iceegen-addsectionreloc-method.md).  
   
 ## Syntax  
@@ -63,6 +64,7 @@ typedef enum  {
 |`srRelocPtr`|A value indicating that the pre-fixup contents of memory are a pointer rather than a section offset.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

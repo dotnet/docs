@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IValidator::FormatEventInfo Method
+
 Gets the error message corresponding to the specified validation error.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT FormatEventInfo(
 ```  
   
 ## Parameters  
+
  `hVECode`  
  [in] The HRESULT value that was passed to the validation error handler.  
   
@@ -48,6 +50,7 @@ HRESULT FormatEventInfo(
  [in] A safe array that contains additional parameters describing the error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  

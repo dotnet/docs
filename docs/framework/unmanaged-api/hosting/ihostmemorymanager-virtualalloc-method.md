@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostMemoryManager::VirtualAlloc Method
+
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualAlloc` reserves or commits a region of pages in the virtual address space of the calling process.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT VirtualAlloc (
 ```  
   
 ## Parameters  
+
  `pAddress`  
  [in] A pointer to the starting address of the region to allocate.  
   
@@ -64,11 +66,13 @@ HRESULT VirtualAlloc (
 |E_OUTOFMEMORY|Not enough memory was available to complete the allocation request|  
   
 ## Remarks  
+
  You reserve a region in the address space of your process by calling `VirtualAlloc`. The `pAddress` parameter contains the beginning address of the memory block you want. This parameter is typically set to null. The operating system keeps a record of free address ranges available to your process. A `pAddress` value of null instructs the system to reserve the region wherever it sees fit. Alternatively, you can provide a specific starting address for the memory block. In both cases, the output parameter `ppMem` is returned as a pointer to the allocated memory. The function itself returns an HRESULT value.  
   
  The Win32 `VirtualAlloc` function does not have a `ppMem` parameter, and returns the pointer to the allocated memory instead. For more information, see the Windows Platform documentation.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICeeGen::GenerateCeeFile Method
+
 Generates a code-base file that contains the code base currently loaded into this [ICeeGen](iceegen-interface.md) interface.  
   
  This method is obsolete and should not be used.  
@@ -28,9 +29,11 @@ HRESULT GenerateCeeFile ();
 ```  
   
 ## Parameters  
+
  `GenerateCeeFile` takes no parameters.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

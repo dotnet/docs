@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEval::Abort Method
+
 Aborts the computation this ICorDebugEval object is currently performing.  
   
 ## Syntax  
@@ -26,9 +27,11 @@ HRESULT Abort ();
 ```  
   
 ## Remarks  
+
  If the evaluation is nested and it is not the most recent one, the `Abort` method may fail.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

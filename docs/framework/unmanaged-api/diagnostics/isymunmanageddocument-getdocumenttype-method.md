@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedDocument::GetDocumentType Method
+
 Gets the document type of this document.  
   
 ## Syntax  
@@ -27,10 +28,12 @@ HRESULT GetDocumentType(
 ```  
   
 ## Parameters  
+
  `pRetVal`  
  [out] Pointer to a variable that receives the document type.  
   
 ## Return Value  
+
  S_OK if the method succeeds.  
   
 ## See also

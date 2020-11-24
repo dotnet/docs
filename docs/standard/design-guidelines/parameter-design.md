@@ -34,6 +34,7 @@ This section provides broad guidelines on parameter design, including sections w
  This better communicates the relationship between the methods.
 
 ### Choosing Between Enum and Boolean Parameters  
+
  ✔️ DO use enums if a member would otherwise have two or more Boolean parameters.
 
  ❌ DO NOT use Booleans unless you are absolutely sure there will never be a need for more than two values.
@@ -43,6 +44,7 @@ This section provides broad guidelines on parameter design, including sections w
  ✔️ CONSIDER using Booleans for constructor parameters that are truly two-state values and are simply used to initialize Boolean properties.
 
 ### Validating Arguments
+
  ✔️ DO validate arguments passed to public, protected, or explicitly implemented members. Throw <xref:System.ArgumentException?displayProperty=nameWithType>, or one of its subclasses, if the validation fails.
 
  Note that the actual validation does not necessarily have to happen in the public or protected member itself. It could happen at a lower level in some private or internal routine. The main point is that the entire surface area that is exposed to the end users checks the arguments.
@@ -60,6 +62,7 @@ This section provides broad guidelines on parameter design, including sections w
  If the member is security sensitive, you are encouraged to make a copy and then validate and process the argument.
 
 ### Parameter Passing
+
  From the perspective of a framework designer, there are three main groups of parameters: by-value parameters, `ref` parameters, and `out` parameters.
 
  When an argument is passed through a by-value parameter, the member receives a copy of the actual argument passed in. If the argument is a value type, a copy of the argument is put on the stack. If the argument is a reference type, a copy of the reference is put on the stack. Most popular CLR languages, such as C#, VB.NET, and C++, default to passing parameters by value.
@@ -77,6 +80,7 @@ This section provides broad guidelines on parameter design, including sections w
  There are some limited exceptions to the rule, such as a method that can be used to swap references.
 
 ### Members with Variable Number of Parameters
+
  Members that can take a variable number of arguments are expressed by providing an array parameter. For example, <xref:System.String> provides the following method:
 
 ```csharp
@@ -134,6 +138,7 @@ public class String {
  Some CLR languages, such as C++, support an alternative convention for passing variable parameter lists called `varargs` methods. The convention should not be used in frameworks, because it is not CLS compliant.
 
 ### Pointer Parameters
+
  In general, pointers should not appear in the public surface area of a well-designed managed code framework. Most of the time, pointers should be encapsulated. However, in some cases pointers are required for interoperability reasons, and using pointers in such cases is appropriate.
 
  ✔️ DO provide an alternative for any member that takes a pointer argument, because pointers are not CLS-compliant.

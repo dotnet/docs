@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ModuleUnloadFinished Method
+
 Notifies the profiler that a module has finished unloading.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT ModuleUnloadFinished(
 ```  
   
 ## Parameters  
+
  `moduleId`  
  [in] The ID of the module that was unloaded.  
   
@@ -35,11 +37,13 @@ HRESULT ModuleUnloadFinished(
  [in] An HRESULT that indicates whether the module was unloaded successfully.  
   
 ## Remarks  
+
  The value of `moduleId` is not valid for an information request after the [ICorProfilerCallback::ModuleUnloadStarted](icorprofilercallback-moduleunloadstarted-method.md) method returns.  
   
  Some parts of unloading the class might continue after the `ModuleUnloadFinished` callback. A failure HRESULT in `hrStatus` indicates a failure. However, a success HRESULT in `hrStatus` indicates only that the first part of unloading the module has succeeded.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

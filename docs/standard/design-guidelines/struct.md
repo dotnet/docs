@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 1f48b2d8-608c-4be6-9ba4-d8f203ed9f9f
 ---
 # Struct Design
+
 The general-purpose value type is most often referred to as a struct, its C# keyword. This section provides guidelines for general struct design.
 
  ❌ DO NOT provide a parameterless constructor for a struct.

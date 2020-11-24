@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
 ---
 # Profiling Interfaces
+
 This section describes the unmanaged interfaces that enable you to profile a program that is being executed by the common language runtime (CLR).  
   
 ## In This Section  
+
  [ICLRProfiling Interface](iclrprofiling-interface.md)  
  Provides the [AttachProfiler](iclrprofiling-attachprofiler-method.md) method, which enables a profiler to attach to a running process.  
   
@@ -84,6 +86,7 @@ Provides a callback method that the common language runtime uses to notify the p
  Provides the [Alloc](imethodmalloc-alloc-method.md) method to allocate memory for a new Microsoft intermediate language (MSIL) function body.  
   
 ## Related Sections  
+
  [Profiling Overview](profiling-overview.md)  
   
  [Profiling Global Static Functions](profiling-global-static-functions.md)  

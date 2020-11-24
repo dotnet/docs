@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: bc496a91-fefb-4ce0-ab4c-61f09964119a
 ---
 # Equality Operators
+
 This section discusses overloading equality operators and refers to `operator==` and `operator!=` as equality operators.
 
  ❌ DO NOT overload one of the equality operators and not the other.
@@ -23,11 +24,13 @@ This section discusses overloading equality operators and refers to `operator==`
  For example, return false if one of the arguments is null instead of throwing `NullReferenceException`.
 
 ## Equality Operators on Value Types
+
  ✔️ DO overload the equality operators on value types, if equality is meaningful.
 
  In most programming languages, there is no default implementation of `operator==` for value types.
 
 ## Equality Operators on Reference Types
+
  ❌ AVOID overloading equality operators on mutable reference types.
 
  Many languages have built-in equality operators for reference types. The built-in operators usually implement the reference equality, and many developers are surprised when the default behavior is changed to the value equality.

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugBreakpoint::Activate Method
+
 Sets the active state of this `ICorDebugBreakpoint`.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT Activate (
 ```  
   
 ## Parameters  
+
  `bActive`  
  [in] Set this value to `true` to specify the state as active; otherwise, set this value to `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -625,6 +625,7 @@ The following example includes the "zzz" custom format specifier in a custom for
 ## Date and time separator specifiers
 
 ### <a name="timeSeparator"></a> The ":" custom format specifier
+
 The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds. The appropriate localized time separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> property of the current or specified culture.
 
 > [!NOTE]

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerFunctionEnum::GetCount Method
+
 Gets the number of functions that were loaded by the application or forcibly loaded by the profiler.  
   
 ## Syntax  
@@ -26,10 +27,12 @@ HRESULT GetCount([out] ULONG * pcelt);
 ```  
   
 ## Parameters  
+
  `celt`  
  [out] The number of functions that were loaded.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -21,6 +21,7 @@ The following examples show how to read text synchronously and asynchronously fr
 > These code examples do not apply to Universal Windows (UWP) apps, because the Windows Runtime provides different stream types for reading and writing to files. For an example that shows how to read text from a file in a UWP app, see [Quickstart: Reading and writing files](/previous-versions/windows/apps/hh758325(v=win.10)). For examples that show how to convert between .NET Framework streams and Windows Runtime streams, see [How to: Convert between .NET Framework streams and Windows Runtime streams](how-to-convert-between-dotnet-streams-and-winrt-streams.md).  
   
 ## Example: Synchronous read in a console app  
+
 The following example shows a synchronous read operation within a console app. This example opens the text file using a stream reader, copies the contents to a string, and outputs the string to the console.  
   
 > [!IMPORTANT]
@@ -30,6 +31,7 @@ The following example shows a synchronous read operation within a console app. T
 :::code language="vb" source="snippets/how-to-read-text-from-a-file/vb/sync-console/Program.vb":::
   
 ## Example: Asynchronous read in a WPF app
+
  The following example shows an asynchronous read operation in a Windows Presentation Foundation (WPF) app.  
   
 > [!IMPORTANT]

@@ -18,6 +18,7 @@ Most .NET methods that perform culture-sensitive string operations by default pr
  This section provides the following articles to demonstrate how to perform culture-insensitive string operations using .NET methods that are culture-sensitive by default.  
   
 ## In this section  
+
  [Performing Culture-Insensitive String Comparisons](performing-culture-insensitive-string-comparisons.md)  
  Describes how to use the <xref:System.String.Compare%2A?displayProperty=nameWithType> and <xref:System.String.CompareTo%2A?displayProperty=nameWithType> methods to perform culture-insensitive string comparisons.  
   
@@ -31,6 +32,7 @@ Most .NET methods that perform culture-sensitive string operations by default pr
  Describes how to use the <xref:System.Array.Sort%2A?displayProperty=nameWithType> and <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType> methods to perform culture-insensitive operations in arrays.  
   
 ## Related sections  
+
  [Culture-Insensitive String Operations](culture-insensitive-string-operations.md)  
  Describes why you should be aware of culture when performing operations on strings and provides guidelines for when to perform culture-sensitive operations and when to perform culture-insensitive operations.
 

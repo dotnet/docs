@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IGCThreadControl Interface
+
 Provides methods for participating in the scheduling of threads that would otherwise be blocked for a garbage collection.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides methods for participating in the scheduling of threads that would other
 |[ThreadIsBlockingForSuspension Method](igcthreadcontrol-threadisblockingforsuspension-method.md)|Notifies the host that the thread making the call is about to block, perhaps for a garbage collection or other suspension.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

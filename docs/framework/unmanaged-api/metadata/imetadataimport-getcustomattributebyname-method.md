@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetCustomAttributeByName Method
+
 Gets the custom attribute, given its name and owner.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetCustomAttributeByName (
 ```  
   
 ## Parameters  
+
  `tkObj`  
  [in] A metadata token representing the object that owns the custom attribute.  
   
@@ -44,9 +46,11 @@ HRESULT GetCustomAttributeByName (
  [out] The size in bytes of the data returned in *`ppData`.  
   
 ## Remarks  
+
  It is legal to define multiple custom attributes for the same owner; they may even have the same name. However, `GetCustomAttributeByName` returns only one instance. (`GetCustomAttributeByName` returns the first instance that it encounters.) To find all instances of a custom attribute, call the [IMetaDataImport::EnumCustomAttributes](imetadataimport-enumcustomattributes-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

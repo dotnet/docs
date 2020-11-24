@@ -179,7 +179,7 @@ namespace MultitargetLib
             return $"Dotnet Foundation mentions .NET {dotNetCount} times!";
         }
 #else
-        // .NET 4.5+ can use async/await!
+        // .NET Framework 4.5+ can use async/await!
         public async Task<string> GetDotNetCountAsync()
         {
             string url = "https://www.dotnetfoundation.org/";

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread::GetUserState Method
+
 Gets the current user state of this ICorDebugThread.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetUserState (
 ```  
   
 ## Parameters  
+
  `pState`  
  [out] A pointer to a bitwise combination of CorDebugUserState enumeration values that describe the current user state of this thread.  
   
 ## Remarks  
+
  The user state of the thread is the state of the thread when it is examined by the program that is being debugged. A thread may have multiple state bits set.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

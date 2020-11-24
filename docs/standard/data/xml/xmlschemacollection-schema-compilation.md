@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 76f28770-7126-428f-9ed5-7b5ae8bad5ee
 ---
 # XmlSchemaCollection Schema Compilation
+
 The **XmlSchemaCollection** is a cache or library where XML-Data Reduced (XDR) and XML Schema definition language (XSD) schemas can be stored and validated. **XmlSchemaCollection** improves performance by caching schemas in memory instead of accessing them from a file or URL.  
   
 > [!NOTE]
@@ -16,18 +17,23 @@ The **XmlSchemaCollection** is a cache or library where XML-Data Reduced (XDR) a
 > The <xref:System.Xml.Schema.XmlSchemaCollection> class is now obsolete and has been replaced with the <xref:System.Xml.Schema.XmlSchemaSet> class. For more information about the <xref:System.Xml.Schema.XmlSchemaSet> class see, [XmlSchemaSet for Schema Compilation](xmlschemaset-for-schema-compilation.md).  
   
 ## Add Schemas to the Collection  
+
  Schemas are loaded to the collection using the **Add** method of **XmlSchemaCollection**, at which time the schema is associated with a namespace URI. For XML Schemas, the namespace URI will typically be the target namespace for the schema. For XDR schemas, the namespace URI is the namespace specified when the schema was added to the collection.  
   
 ## Check for a Schema in the Collection  
+
  You can check to see if a schema is in the collection by using the **Contains** method. The **Contains** method takes either an **XmlSchema** object (for XML Schemas only) or a string representing the namespace URI associated with the schema (for XML Schemas and XDR schemas).  
   
 ## Retrieve a Schema from the Collection  
+
  You can retrieve a schema from the collection by using the **Item** property. The **Item** property takes a string representing the namespace URI associated with the schema, typically its target namespace, and returns an **XmlSchema** object. The **Item** property applies to XML Schemas only. The return value is always a null reference for XDR schemas because they do not have an object model available.  
   
 ## Validate XML Documents Using XmlSchemaCollection  
+
  You can validate an XML instance document using an **XmlSchemaCollection** by creating the **XmlSchemaCollection** object, adding your schemas to the collection, and setting the **Schemas** property on the **XmlValidatingReader** to assign the created **XmlSchemaCollection** to the **XmlValidatingReader**.  
   
 ### Improved Performance  
+
  It is recommended, if you are validating more than one document against the same schema, that you use the **XmlSchemaCollection** because it provides better performance by caching schemas in memory.  
   
  The following code example creates the **XmlSchemaCollection** object, adds schemas to the collection, and sets the **Schemas** property.  

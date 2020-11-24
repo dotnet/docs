@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTaskManager::CreateTask Method
+
 Requests that the host create a new task.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT CreateTask (
 ```  
   
 ## Parameters  
+
  `stacksize`  
  [in] The requested size, in bytes, of the requested stack, or 0 (zero) for the default size.  
   
@@ -56,9 +58,11 @@ HRESULT CreateTask (
 |E_OUTOFMEMORY|Not enough memory was available to create the requested task.|  
   
 ## Remarks  
+
  The CLR calls `CreateTask` to request that the host create a new task. The host returns an interface pointer to an `IHostTask` instance. The returned task must remain suspended until it is explicitly started by a call to `IHostTask::Start`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

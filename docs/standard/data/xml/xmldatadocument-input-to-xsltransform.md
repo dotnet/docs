@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a0b536b6-cdb3-4a44-86c2-3b2ebc7bd4c9
 ---
 # XmlDataDocument Input to XslTransform
+
 > [!NOTE]
 > The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](migrating-from-the-xsltransform-class.md) for more information.  
   

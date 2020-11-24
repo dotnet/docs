@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread::GetObject Method
+
 Gets an interface pointer to the common language runtime (CLR) thread.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetObject (
 ```  
   
 ## Parameters  
+
  `ppObject`  
  [out] A pointer to the address of an ICorDebugValue interface object that represents the CLR thread.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

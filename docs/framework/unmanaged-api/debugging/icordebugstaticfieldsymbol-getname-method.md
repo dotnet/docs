@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e2be4af2-15d1-4e6a-8b68-1d78c93294a4
 ---
 # ICorDebugStaticFieldSymbol::GetName Method
+
 Gets the name of the static field.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT GetName(
 ```  
   
 ## Parameters  
+
  `cchName`  
  [in] The number of characters in the `szName` buffer.  
   
@@ -32,6 +34,7 @@ HRESULT GetName(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

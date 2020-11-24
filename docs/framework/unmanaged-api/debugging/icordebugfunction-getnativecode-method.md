@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugFunction::GetNativeCode Method
+
 Gets the native code for the function that is represented by this ICorDebugFunction instance.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetNativeCode (
 ```  
   
 ## Parameters  
+
  `ppCode`  
  [out] A pointer to the ICorDebugCode instance that represents the native code for this function, or null, if this function is Microsoft intermediate language (MSIL) code that has not been just-in-time (JIT) compiled.  
   
 ## Remarks  
+
  If the function that is represented by this `ICorDebugFunction` instance has been JIT-compiled more than once, as in the case of generic types, `GetNativeCode` returns a random native code object.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

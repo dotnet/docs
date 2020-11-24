@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread2::GetConnectionID Method
+
 Gets the connection identifier for this ICorDebugThread2 object.  
   
 ## Syntax  
@@ -28,15 +29,18 @@ HRESULT GetConnectionID (
 ```  
   
 ## Parameters  
+
  `pdwConnectionId`  
  [out] A `CONNID` that represents the connection identifier.  
   
 ## Remarks  
+
  The `GetConnectionID` method returns zero in the `pdwConnectionId` parameter, if this thread is not part of a connection.  
   
  If this thread is connected to an instance of Microsoft SQL Server 2005 Analysis Services (SSAS), the `CONNID` maps to a server process identifier (SPID).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

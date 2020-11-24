@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread3::CreateStackWalk Method
+
 Creates an [ICorDebugStackWalk](icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
   
 ## Syntax  
@@ -26,10 +27,12 @@ HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);
 ```  
   
 ## Parameters  
+
  `ppStackWalk`  
  [out] A pointer to address of the [ICorDebugStackWalk](icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -40,9 +43,11 @@ HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);
 ## Exceptions  
   
 ## Remarks  
+
  If the `CreateStackWalk` method succeeds, the returned `ICorDebugStackWalk` object's context is set to the thread's current context.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

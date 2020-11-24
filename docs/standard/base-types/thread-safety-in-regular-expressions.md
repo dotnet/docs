@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 7c4a167b-5236-4cde-a2ca-58646230730f
 ---
 # Thread Safety in Regular Expressions
+
 The <xref:System.Text.RegularExpressions.Regex> class itself is thread safe and immutable (read-only). That is, **Regex** objects can be created on any thread and shared between threads; matching methods can be called from any thread and never alter any global state.  
   
  However, result objects (**Match** and **MatchCollection**) returned by **Regex** should be used on a single thread. Although many of these objects are logically immutable, their implementations could delay computation of some results to improve performance, and as a result, callers must serialize access to them.  

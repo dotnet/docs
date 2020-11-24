@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetTypeDefProps Method
+
 Sets features of a type defined by a prior call to [IMetaDataEmit::DefineTypeDef](imetadataemit-definetypedef-method.md).  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT SetTypeDefProps (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] An `mdTypeDef` token obtained from original call to [IMetaDataEmit::DefineTypeDef](imetadataemit-definetypedef-method.md).  
   
@@ -44,6 +46,7 @@ HRESULT SetTypeDefProps (
  [in] An array of tokens for the interfaces that this type implements. These `mdTypeRef` tokens are obtained using [IMetaDataEmit::DefineImportType](imetadataemit-defineimporttype-method.md). The last element of the array is must be `mdTokenNil`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

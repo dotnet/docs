@@ -27,6 +27,7 @@ After you've obtained an isolated store, you can create directories and files fo
  Isolated storage file creation will throw an <xref:System.IO.IsolatedStorage.IsolatedStorageException> if the path contains a directory that does not exist.
   
 ## Example  
+
  The following code example illustrates how to create files and directories in an isolated store.  
   
  [!code-csharp[Conceptual.IsolatedStorage#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source.cs#1)]

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 88c304d5-edaa-4c0e-a8e1-144e8a76877e
 ---
 # ICorDebugLoadedModule::GetName Method
+
 Gets the name of the loaded module.  
   
 ## Syntax  
@@ -18,6 +19,7 @@ HRESULT GetName(
 ```  
   
 ## Parameters  
+
  `cchName`  
  [in] The number of characters in the `szName` buffer.  
   
@@ -33,6 +35,7 @@ HRESULT GetName(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -72,6 +72,7 @@ struct DacpMethodDescData
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, define the structure as specified above.
 
 ## Requirements
+
 **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** None  
 **Library:** None  

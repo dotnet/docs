@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # PreBindAssemblyEx Function
+
 Gets the post-policy display name for an assembly.  
   
  This function supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
@@ -34,6 +35,7 @@ HRESULT PreBindAssemblyEx (
 ```  
   
 ## Parameters  
+
  `pAppCtx`  
  [in] Identifies the application context.  
   
@@ -53,9 +55,11 @@ HRESULT PreBindAssemblyEx (
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
   
 ## Remarks  
+
  The `ppNamePostPolicy` output parameter is set only if the function returns HRESULT FUSION_E_REF_DEF_MISMATCH. Otherwise, it is null.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

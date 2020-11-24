@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: bc177b2f-7528-4ae4-83db-aacfb04b86d0
 ---
 # Design Guidelines for Exceptions
+
 Exception handling has many advantages over return-value-based error reporting. Good framework design helps the application developer realize the benefits of exceptions. This section discusses the benefits of exceptions and presents guidelines for using them effectively.  
   
 ## In This Section  
+
  [Exception Throwing](exception-throwing.md)  
  [Using Standard Exception Types](using-standard-exception-types.md)  
  [Exceptions and Performance](exceptions-and-performance.md)  

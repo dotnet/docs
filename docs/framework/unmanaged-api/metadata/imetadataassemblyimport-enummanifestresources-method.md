@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyImport::EnumManifestResources Method
+
 Gets a pointer to an enumerator for the resources referenced in the current assembly manifest.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT EnumManifestResources (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be a null value when the `EnumManifestResources` method is called for the first time.  
   
@@ -51,6 +53,7 @@ HRESULT EnumManifestResources (
 |`S_FALSE`|There are no tokens to enumerate. In this case, `pcTokens` is set to zero.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

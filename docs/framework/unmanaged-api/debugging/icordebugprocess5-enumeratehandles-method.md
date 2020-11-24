@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess5::EnumerateHandles Method
+
 Gets an enumerator for object handles in a process.  
   
 ## Syntax  
@@ -27,6 +28,7 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
 ```  
   
 ## Parameters  
+
  `types`  
  [in] A bitwise combination of [CorGCReferenceType](corgcreferencetype-enumeration.md) values that specifies the type of handles to include in the collection.  
   
@@ -34,6 +36,7 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
  [out] A pointer to the address of an [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md) that is an enumerator for the objects to be garbage-collected.  
   
 ## Remarks  
+
  `EnumerateHandles` is a helper function that supports inspection of the handle table. It is similar to the [ICorDebugProcess5::EnumerateGCReferences](icordebugprocess5-enumerategcreferences-method.md) method, except that rather than populating an [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md) collection with all objects to be garbage-collected, it includes only objects that have handles from the handle table.  
   
  The `types` parameter specifies the handle types to include in the collection. `types` can be any of the following three members of the [CorGCReferenceType](corgcreferencetype-enumeration.md) enumeration:  
@@ -45,6 +48,7 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
 - `CorHandleAll` (all handles).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

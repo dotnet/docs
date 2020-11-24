@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyImport Interface
+
 Provides methods to access and examine the contents of an assembly manifest.  
   
 ## Methods  
@@ -38,6 +39,7 @@ Provides methods to access and examine the contents of an assembly manifest.
 |[GetManifestResourceProps Method](imetadataassemblyimport-getmanifestresourceprops-method.md)|Gets the property settings of the specified manifest resource.|  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

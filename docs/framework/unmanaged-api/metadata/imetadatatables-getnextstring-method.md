@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataTables::GetNextString Method
+
 Gets the index of the next string in the current table column.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetNextString (
 ```  
   
 ## Parameters  
+
  `ixString`  
  [in] The index value from a string table column.  
   
@@ -36,6 +38,7 @@ HRESULT GetNextString (
  [out] A pointer to the index of the next string in the column.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

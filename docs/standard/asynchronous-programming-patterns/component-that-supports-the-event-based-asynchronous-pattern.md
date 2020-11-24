@@ -45,6 +45,7 @@ If you are writing a class with some operations that may incur noticeable delays
  To copy the code in this topic as a single listing, see [How to: Implement a Client of the Event-based Asynchronous Pattern](how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
 ## Creating the Component  
+
  The first step is to create the component that will implement the Event-based Asynchronous Pattern.  
   
 ### To create the component  
@@ -52,6 +53,7 @@ If you are writing a class with some operations that may incur noticeable delays
 - Create a class called `PrimeNumberCalculator` that inherits from <xref:System.ComponentModel.Component>.  
   
 ## Defining Public Asynchronous Events and Delegates  
+
  Your component communicates to clients using events. The _MethodName_**Completed** event alerts clients to the completion of an asynchronous task, and the _MethodName_**ProgressChanged** event informs clients of the progress of an asynchronous task.  
   
 ### To define asynchronous events for clients of your component:  
@@ -77,6 +79,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-vb[System.ComponentModel.AsyncOperationManager#6](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#6)]  
   
 ## Checkpoint  
+
  At this point, you can build the component.  
   
 ### To test your component  
@@ -93,6 +96,7 @@ If you are writing a class with some operations that may incur noticeable delays
      These warnings will be cleared in the next section.  
   
 ## Defining Private Delegates  
+
  The asynchronous aspects of the `PrimeNumberCalculator` component are implemented internally with a special delegate known as a <xref:System.Threading.SendOrPostCallback>. A <xref:System.Threading.SendOrPostCallback> represents a callback method that executes on a <xref:System.Threading.ThreadPool> thread. The callback method must have a signature that takes a single parameter of type <xref:System.Object>, which means you will need to pass state among delegates in a wrapper class. For more information, see <xref:System.Threading.SendOrPostCallback>.  
   
 ### To implement your component's internal asynchronous behavior:  
@@ -124,6 +128,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-vb[System.ComponentModel.AsyncOperationManager#23](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#23)]  
   
 ## Implementing Public Events  
+
  Components that implement the Event-based Asynchronous Pattern communicate to clients using events. These events are invoked on the proper thread with the help of the <xref:System.ComponentModel.AsyncOperation> class.  
   
 ### To raise events to your component's clients:  
@@ -134,6 +139,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-vb[System.ComponentModel.AsyncOperationManager#24](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#24)]  
   
 ## Implementing the Completion Method  
+
  The completion delegate is the method that the underlying, free-threaded asynchronous behavior will invoke when the asynchronous operation ends by successful completion, error, or cancellation. This invocation happens on an arbitrary thread.  
   
  This method is where the client's task ID is removed from the internal collection of unique client tokens. This method also ends the lifetime of a particular asynchronous operation by calling the <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> method on the corresponding <xref:System.ComponentModel.AsyncOperation>. This call raises the completion event on the thread that is appropriate for the application model. After the <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> method is called, this instance of <xref:System.ComponentModel.AsyncOperation> can no longer be used, and any subsequent attempts to use it will throw an exception.  
@@ -148,6 +154,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-vb[System.ComponentModel.AsyncOperationManager#26](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#26)]  
   
 ## Checkpoint  
+
  At this point, you can build the component.  
   
 ### To test your component  
@@ -163,6 +170,7 @@ If you are writing a class with some operations that may incur noticeable delays
      This warning will be resolved in the next section.  
   
 ## Implementing the Worker Methods  
+
  So far, you have implemented the supporting asynchronous code for the `PrimeNumberCalculator` component. Now you can implement the code that does the actual work. You will implement three methods: `CalculateWorker`, `BuildPrimeNumberList`, and `IsPrime`. Together, `BuildPrimeNumberList` and `IsPrime` comprise a well-known algorithm called the Sieve of Eratosthenes, which determines if a number is prime by finding all the prime numbers up to the square root of the test number. If no divisors are found by that point, the test number is prime.  
   
  If this component were written for maximum efficiency, it would remember all the prime numbers discovered by various invocations for different test numbers. It would also check for trivial divisors like 2, 3, and 5. The intent of this example is to demonstrate how time-consuming operations can be executed asynchronously, however, so these optimizations are left as an exercise for you.  
@@ -202,6 +210,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-vb[System.ComponentModel.AsyncOperationManager#29](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#29)]  
   
 ## Checkpoint  
+
  At this point, you can build the component.  
   
 ### To test your component  
@@ -211,6 +220,7 @@ If you are writing a class with some operations that may incur noticeable delays
      All that remains to be written are the methods to start and cancel asynchronous operations, `CalculatePrimeAsync` and `CancelAsync`.  
   
 ## Implementing the Start and Cancel Methods  
+
  You start the worker method on its own thread by calling `BeginInvoke` on the delegate that wraps it. To manage the lifetime of a particular asynchronous operation, you call the <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A> method on the <xref:System.ComponentModel.AsyncOperationManager> helper class. This returns an <xref:System.ComponentModel.AsyncOperation>, which marshals calls on the client's event handlers to the proper thread or context.  
   
  You cancel a particular pending operation by calling <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> on its corresponding <xref:System.ComponentModel.AsyncOperation>. This ends that operation, and any subsequent calls to its <xref:System.ComponentModel.AsyncOperation> will throw an exception.  
@@ -228,6 +238,7 @@ If you are writing a class with some operations that may incur noticeable delays
      [!code-vb[System.ComponentModel.AsyncOperationManager#4](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#4)]  
   
 ## Checkpoint  
+
  At this point, you can build the component.  
   
 ### To test your component  
@@ -239,6 +250,7 @@ If you are writing a class with some operations that may incur noticeable delays
  For an example client that uses the `PrimeNumberCalculator` component, see [How to: Implement a Client of the Event-based Asynchronous Pattern](how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
 ## Next Steps  
+
  You can fill out this example by writing `CalculatePrime`, the synchronous equivalent of `CalculatePrimeAsync` method. This will make the `PrimeNumberCalculator` component fully compliant with the Event-based Asynchronous Pattern.  
   
  You can improve this example by retaining the list of all the prime numbers discovered by various invocations for different test numbers. Using this approach, each task will benefit from the work done by previous tasks. Be careful to protect this list with `lock` regions, so access to the list by different threads is serialized.  

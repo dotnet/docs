@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_FIELD_OFFSET Structure
+
 Stores the offset, within a class, of the specified field.  
   
 ## Syntax  
@@ -35,9 +36,11 @@ typedef struct COR_FIELD_OFFSET {
 |`ulOffset`|The field's offset within its class.|  
   
 ## Remarks  
+
  [IMetaDataImport::GetClassLayout](imetadataimport-getclasslayout-method.md) and [IMetaDataEmit::SetClassLayout](imetadataemit-setclasslayout-method.md) methods take a parameter of type `COR_FIELD_OFFSET`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h, CorProf.idl  

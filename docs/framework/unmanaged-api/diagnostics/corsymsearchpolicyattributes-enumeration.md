@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorSymSearchPolicyAttributes Enumeration
+
 Specifies the policy to be used when doing a search for a symbol reader. These constants are used by the [ISymUnmanagedBinder2::GetReaderForFile2](isymunmanagedbinder2-getreaderforfile2-method.md) and [ISymUnmanagedBinder3::GetReaderFromCallback](isymunmanagedbinder3-getreaderfromcallback-method.md) methods.  
   
 > [!IMPORTANT]
@@ -43,6 +44,7 @@ typedef enum CorSymSearchPolicyAttributes
 |`AllowReferencePathAccess`|Searches for the PDB in the place where the .exe file is.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

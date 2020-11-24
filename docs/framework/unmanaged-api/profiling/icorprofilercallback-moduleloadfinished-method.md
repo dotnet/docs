@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ModuleLoadFinished Method
+
 Notifies the profiler that a module has finished loading.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT ModuleLoadFinished(
 ```  
   
 ## Parameters  
+
  `moduleId`  
  [in] The ID of the module that has finished loading.  
   
@@ -35,11 +37,13 @@ HRESULT ModuleLoadFinished(
  [in] An HRESULT that indicates whether the module was loaded successfully.  
   
 ## Remarks  
+
  The value of `moduleId` is not valid for an information request until the `ModuleLoadFinished` method is called.  
   
  Some parts of loading the module might continue after the `ModuleLoadFinished` callback. A failure HRESULT in `hrStatus` indicates a failure. However, a success HRESULT in `hrStatus` indicates only that the first part of loading the module has succeeded.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

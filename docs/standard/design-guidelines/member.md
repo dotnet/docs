@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 0ce93180-1d7b-4f8c-9306-f828b2d66b8f
 ---
 # Member Design Guidelines
+
 Methods, properties, events, constructors, and fields are collectively referred to as members. Members are ultimately the means by which framework functionality is exposed to the end users of a framework.  
   
  Members can be virtual or nonvirtual, concrete or abstract, static or instance, and can have several different scopes of accessibility. All this variety provides incredible expressiveness but at the same time requires care on the part of the framework designer.  
@@ -17,6 +18,7 @@ Methods, properties, events, constructors, and fields are collectively referred 
  This chapter offers basic guidelines that should be followed when designing members of any type.  
   
 ## In This Section  
+
  [Member Overloading](member-overloading.md)  
  [Property Design](property.md)  
  [Constructor Design](constructor.md)  

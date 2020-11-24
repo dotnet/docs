@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataFilter::UnmarkAll Method
+
 Removes the processing marks from all the tokens in the current metadata scope.  
   
 ## Syntax  
@@ -26,9 +27,11 @@ HRESULT UnmarkAll ();
 ```  
   
 ## Parameters  
+
  `UnmarkAll` takes no parameters.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

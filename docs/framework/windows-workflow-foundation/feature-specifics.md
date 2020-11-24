@@ -109,7 +109,7 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 ## Data Contract Resolver
 
-In .NET 3.5, there were a few limitations in the design of known types:
+In .NET Framework 3.5, there were a few limitations in the design of known types:
 
 - Adding known types dynamically, during serialization or deserialization, was not possible.
 
@@ -117,7 +117,7 @@ In .NET 3.5, there were a few limitations in the design of known types:
 
 - It was not possible for users to specify what xsi:type they would like to have appear on the wire to, for instance, make the size of a serialization instance on the wire smaller.
 
-The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these issues in .NET 4.5.
+The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these issues in .NET Framework 4.5.
 
 ### Getting Started
 
@@ -139,7 +139,7 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 ## Flowchart
 
-Flowchart is a well-known paradigm to visually represent domain problems. It is a new control flow style we're introducing in .NET 4. A core characteristic of Flowchart is that only one activity is executed at any given time. Flowcharts can express loops and alternative outcomes, but cannot natively express concurrent execution of multiple nodes.
+Flowchart is a well-known paradigm to visually represent domain problems. It is a new control flow style we're introducing in .NET Framework 4. A core characteristic of Flowchart is that only one activity is executed at any given time. Flowcharts can express loops and alternative outcomes, but cannot natively express concurrent execution of multiple nodes.
 
 ### Getting Started
 
@@ -259,7 +259,7 @@ A user needs to be prompted for input. Under normal circumstances, the developer
 
 ## WCF Routing Service
 
-The Routing Service is designed to be a generic software Router that allows you to control how WCF messages flow in between your clients and services. The Routing Service allows you to decouple your clients from your services, which gives you much more freedom in terms of the configurations that you can support and the flexibility you have when considering how to host your services. In .NET 3.5, clients and services were tightly coupled; a client had to know about all of the services it needed to talk to and where they were located. In addition, WCF in .NET Framework 3.5 had the following limitations:
+The Routing Service is designed to be a generic software Router that allows you to control how WCF messages flow in between your clients and services. The Routing Service allows you to decouple your clients from your services, which gives you much more freedom in terms of the configurations that you can support and the flexibility you have when considering how to host your services. In .NET Framework 3.5, clients and services were tightly coupled; a client had to know about all of the services it needed to talk to and where they were located. In addition, WCF in .NET Framework 3.5 had the following limitations:
 
 - Error handling was complex, as this logic had to be hard-coded into the client.
 

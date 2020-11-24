@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7ede6f9e-a3ac-49a4-8488-ab8360a44aa4
 ---
 # Removing Attributes from an Element Node in the DOM
+
 There are many ways to remove attributes. One technique is to remove them from the attribute collection. To do this, the following steps are performed:  
   
 1. Get the attribute collection from the element using `XmlAttributeCollection attrs = elem.Attributes;`.  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::EnumMethodsWithName Method
+
 Enumerates methods that have the specified name and that are defined by the type referenced by the specified TypeDef token.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT EnumMethodsWithName (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be NULL for the first call of this method.  
   
@@ -52,6 +54,7 @@ HRESULT EnumMethodsWithName (
  [out] The number of MethodDef tokens returned in `rMethods`.  
   
 ## Remarks  
+
  This method enumerates fields and methods, but not properties or events. Unlike [IMetaDataImport::EnumMethods](imetadataimport-enummethods-method.md), `EnumMethodsWithName` discards all method tokens that do not have the specified name.  
   
 ## Return Value  
@@ -62,6 +65,7 @@ HRESULT EnumMethodsWithName (
 |`S_FALSE`|There are no tokens to enumerate. In that case, `pcTokens` is zero.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

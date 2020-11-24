@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataValidate::ValidateMetaData Method
+
 Validates the metadata signatures of the objects in the current metadata scope.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT ValidateMetaData ();
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

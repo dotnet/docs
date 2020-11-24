@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugAssembly::GetAppDomain Method
+
 Gets an interface pointer to the application domain that contains this `ICorDebugAssembly` instance.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetAppDomain (
 ```  
   
 ## Parameters  
+
  `ppAppDomain`  
  [out] A pointer to the address of an ICorDebugAppDomain interface that represents the application domain.  
   
 ## Remarks  
+
  If this assembly is the system assembly, `GetAppDomain` returns null.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

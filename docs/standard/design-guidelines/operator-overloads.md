@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 37585bf2-4c27-4dee-849a-af70e3338cc1
 ---
 # Operator Overloads
+
 Operator overloads allow framework types to appear as if they were built-in language primitives.
 
  Although allowed and useful in some situations, operator overloads should be used cautiously. There are many cases in which operator overloading has been abused, such as when framework designers started to use operators for operations that should be simple methods. The following guidelines should help you decide when and how to use operator overloading.
@@ -79,9 +80,11 @@ Operator overloads allow framework types to appear as if they were built-in lang
 |`~`|`op_OnesComplement`|`OnesComplement`|
 
 ### Overloading Operator ==
+
  Overloading `operator ==` is quite complicated. The semantics of the operator need to be compatible with several other members, such as <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
 ### Conversion Operators
+
  Conversion operators are unary operators that allow conversion from one type to another. The operators must be defined as static members on either the operand or the return type. There are two types of conversion operators: implicit and explicit.
 
  ❌ DO NOT provide a conversion operator if such conversion is not clearly expected by the end users.

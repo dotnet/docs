@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IAssemblyCache::QueryAssemblyInfo Method
+
 Gets the requested data about the specified assembly.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT QueryAssemblyInfo (
 ```  
   
 ## Parameters  
+
  `dwFlags`  
  [in] Flags defined in Fusion.idl. The following values are supported:  
   
@@ -44,6 +46,7 @@ HRESULT QueryAssemblyInfo (
  [in, out] An [ASSEMBLY_INFO](assembly-info-structure.md) structure that contains data about the assembly.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

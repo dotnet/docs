@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetHandler Method
+
 Sets the method referenced by the specified `IUnknown` pointer as a notification callback for token remaps.  
   
 ## Syntax  
@@ -28,15 +29,18 @@ HRESULT SetHandler (
 ```  
   
 ## Parameters  
+
  `pUnk`  
  [in] The handler to register.  
   
 ## Remarks  
+
  The metadata engine sends notification by using the method that is provided by `SetHandler`, to compilers that do not generate records in an optimized way and that would like to optimize saved records.  
   
  If the callback method is not provided through `SetHandler`, no optimization will be performed on save except where several import scopes have been merged using `IMapToken` on merge for each scope.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

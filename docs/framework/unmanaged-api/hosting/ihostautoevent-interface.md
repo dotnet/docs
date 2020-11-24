@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostAutoEvent Interface
+
 Provides a representation of the host's implementation of an auto-reset event.  
   
 ## Methods  
@@ -26,6 +27,7 @@ Provides a representation of the host's implementation of an auto-reset event.
 |[Wait Method](ihostautoevent-wait-method.md)|Causes the current `IHostAutoEvent` instance to wait until the event is owned or a specified amount of time elapses.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

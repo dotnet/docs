@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # BucketParameters Structure
+
 Stores the type name of an event and the parameters for the current exception that is associated with the event.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ typedef struct _BucketParameters {
 |`pszParams`|An array of strings, each of which specifies a parameter for the current exception associated with the event.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  

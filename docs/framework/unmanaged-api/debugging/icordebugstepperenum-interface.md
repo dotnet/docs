@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStepperEnum Interface
+
 Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

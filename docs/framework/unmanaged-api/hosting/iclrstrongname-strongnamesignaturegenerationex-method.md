@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRStrongName::StrongNameSignatureGenerationEx Method
+
 Generates a strong name signature for the specified assembly, according to the specified flags.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT StrongNameSignatureGenerationEx (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] The path to the file that contains the manifest of the assembly for which the strong name signature will be generated.  
   
@@ -66,9 +68,11 @@ HRESULT StrongNameSignatureGenerationEx (
 - `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
   
 ## Return Value  
+
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Remarks  
+
  Specify null for `wszFilePath` to calculate the size of the signature without creating the signature.  
   
  The signature can be either stored directly in the file, or returned to the caller.  
@@ -78,6 +82,7 @@ HRESULT StrongNameSignatureGenerationEx (
  If `SN_TEST_SIGN` is specified, the common language runtime header is not modified to indicate that the assembly is signed with a strong name.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

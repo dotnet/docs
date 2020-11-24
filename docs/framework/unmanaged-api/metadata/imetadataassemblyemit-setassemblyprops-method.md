@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyEmit::SetAssemblyProps Method
+
 Modifies the specified `Assembly` metadata structure.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT SetAssemblyProps (
 ```  
   
 ## Parameters  
+
  `pma`  
  [in] The metadata token that specifies the `Assembly` metadata structure to be modified.  
   
@@ -56,9 +58,11 @@ HRESULT SetAssemblyProps (
  [in] A bitwise combination of [AssemblyFlags](assemblyflags-enumeration.md) values that specify various attributes of the assembly.  
   
 ## Remarks  
+
  To create an `Assembly` metadata structure, use the [IMetaDataAssemblyEmit::DefineAssembly](imetadataassemblyemit-defineassembly-method.md) method.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

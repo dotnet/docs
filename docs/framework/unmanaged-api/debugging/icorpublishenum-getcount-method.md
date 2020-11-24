@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishEnum::GetCount Method
+
 Gets the number of items in the enumeration.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetCount (
 ```  
   
 ## Parameters  
+
  `pcelt`  
  [out] A pointer to the number of items in the enumeration.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostAssemblyManager::GetNonHostStoreAssemblies Method
+
 Gets an interface pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) that represents the list of assemblies that the host expects the common language runtime (CLR) to load.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetNonHostStoreAssemblies (
 ```  
   
 ## Parameters  
+
  `ppReferenceList`  
  [out] A pointer to the address of an `ICLRAssemblyReferenceList` that contains a list of references to assemblies that the host expects the CLR to load.  
   
@@ -44,6 +46,7 @@ HRESULT GetNonHostStoreAssemblies (
 |E_OUTOFMEMORY|Not enough memory was available to create the list of references for the requested `ICLRAssemblyReferenceList`.|  
   
 ## Remarks  
+
  The CLR resolves references using the following set of guidelines:  
   
 - First, it consults the list of assembly references returned by `GetNonHostStoreAssemblies`.  
@@ -60,6 +63,7 @@ HRESULT GetNonHostStoreAssemblies (
 > Upon initialization, the CLR calls `GetNonHostStoreAssemblies` only once. The method is not called again.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

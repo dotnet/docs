@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugAssembly2::IsFullyTrusted Method
+
 Gets a value that indicates whether the assembly has been granted full trust by the runtime security system.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT IsFullyTrusted(
 ```  
   
 ## Parameters  
+
  `pbFullyTrusted`  
  [out] `true` if the assembly has been granted full trust by the runtime security system; otherwise, `false`.  
   
 ## Remarks  
+
  This method returns an HRESULT of CORDBG_E_NOTREADY if the security policy for the assembly has not yet been resolved, that is, if no code in the assembly has been run yet.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

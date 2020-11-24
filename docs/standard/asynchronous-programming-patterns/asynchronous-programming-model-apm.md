@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
 ---
 # Asynchronous Programming Model (APM)
+
 An asynchronous operation that uses the <xref:System.IAsyncResult> design pattern is implemented as two methods named `BeginOperationName` and `EndOperationName` that begin and end the asynchronous operation *OperationName* respectively. For example, the <xref:System.IO.FileStream> class provides the <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.EndRead%2A> methods to asynchronously read bytes from a file. These methods implement the asynchronous version of the <xref:System.IO.FileStream.Read%2A> method.  
   
 > [!NOTE]
@@ -21,6 +22,7 @@ An asynchronous operation that uses the <xref:System.IAsyncResult> design patter
  After calling `BeginOperationName`, an application can continue executing instructions on the calling thread while the asynchronous operation takes place on a different thread. For each call to `BeginOperationName`, the application should also call `EndOperationName` to get the results of the operation.  
   
 ## Beginning an Asynchronous Operation  
+
  The `BeginOperationName` method begins asynchronous operation *OperationName* and returns an object that implements the <xref:System.IAsyncResult> interface. <xref:System.IAsyncResult> objects store information about an asynchronous operation. The following table shows information about an asynchronous operation.  
   
 |Member|Description|  
@@ -35,6 +37,7 @@ An asynchronous operation that uses the <xref:System.IAsyncResult> design patter
  `BeginOperationName` returns control to the calling thread immediately. If the `BeginOperationName` method throws exceptions, the exceptions are thrown before the asynchronous operation is started. If the `BeginOperationName` method throws exceptions, the callback method is not invoked.  
   
 ## Ending an Asynchronous Operation  
+
  The `EndOperationName` method ends asynchronous operation *OperationName*. The return value of the `EndOperationName` method is the same type returned by its synchronous counterpart and is specific to the asynchronous operation. For example, the <xref:System.IO.FileStream.EndRead%2A> method returns the number of bytes read from a <xref:System.IO.FileStream> and the <xref:System.Net.Dns.EndGetHostByName%2A> method returns an <xref:System.Net.IPHostEntry> object that contains information about a host computer. The `EndOperationName` method takes any out or ref parameters declared in the signature of the synchronous version of the method. In addition to the parameters from the synchronous method, the `EndOperationName` method also includes an <xref:System.IAsyncResult> parameter. Callers must pass the instance returned by the corresponding call to `BeginOperationName`.  
   
  If the asynchronous operation represented by the <xref:System.IAsyncResult> object has not completed when `EndOperationName` is called, `EndOperationName` blocks the calling thread until the asynchronous operation is complete. Exceptions thrown by the asynchronous operation are thrown from the `EndOperationName` method. The effect of calling the `EndOperationName` method multiple times with the same <xref:System.IAsyncResult> is not defined. Likewise, calling the `EndOperationName` method with an <xref:System.IAsyncResult> that was not returned by the related Begin method is also not defined.  

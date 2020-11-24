@@ -12,6 +12,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugCodeInvokePurpose Enumeration
+
 Describes why an exported function calls managed code.  
   
 ## Syntax  
@@ -36,12 +37,14 @@ typedef enum CorDebugCodeInvokePurpose
 |`CODE_INVOKE_PURPOSE_INTERFACE_DISPATCH`|The managed code will run the implementation for some interface method that was called.|  
   
 ## Remarks  
+
  This enumeration is used by the [ICorDebugProcess6::GetExportStepInfo](icordebugprocess6-getexportstepinfo-method.md) method to provide information about stepping through managed code.  
   
 > [!NOTE]
 > This enumeration is intended for use in .NET Native debugging scenarios only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

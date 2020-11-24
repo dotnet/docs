@@ -4,6 +4,7 @@ ms.date: "10/22/2008"
 ms.assetid: bebb27ac-9712-4196-9931-de19fc04dbac
 ---
 # Serialization
+
 Serialization is the process of converting an object into a format that can be readily persisted or transported. For example, you can serialize an object, transport it over the Internet using HTTP, and deserialized it at the destination machine.
 
  The .NET Framework offers three main serialization technologies optimized for various serialization scenarios. The following table lists these technologies and the main Framework types related to these technologies.
@@ -17,6 +18,7 @@ Serialization is the process of converting an object into a format that can be r
  ✔️ DO think about serialization when you design new types.
 
 ## Choosing the Right Serialization Technology to Support
+
  ✔️ CONSIDER supporting Data Contract Serialization if instances of your type might need to be persisted or used in Web Services.
 
  ✔️ CONSIDER supporting the XML Serialization instead of or in addition to Data Contract Serialization if you need more control over the XML format that is produced when the type is serialized.
@@ -28,6 +30,7 @@ Serialization is the process of converting an object into a format that can be r
  ❌ AVOID supporting Runtime Serialization or XML Serialization just for general persistence reasons. Prefer Data Contract Serialization instead.
 
 ## Supporting Data Contract Serialization
+
  Types can support Data Contract Serialization by applying the <xref:System.Runtime.Serialization.DataContractAttribute> to the type and the <xref:System.Runtime.Serialization.DataMemberAttribute> to the members (fields and properties) of the type.
 
  ✔️ CONSIDER marking data members of your type public if the type can be used in partial trust.
@@ -57,6 +60,7 @@ Serialization is the process of converting an object into a format that can be r
  The interface allows the serializer to ensure that no data is lost during round-tripping. The <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A?displayProperty=nameWithType> property is used to store any data from the future version of the type that is unknown to the current version, and so it cannot store it in its data members. When the current version is subsequently serialized and deserialized into a future version, the additional data will be available in the serialized stream.
 
 ## Supporting XML Serialization
+
  Data Contract Serialization is the main (default) serialization technology in the .NET Framework, but there are serialization scenarios that Data Contract Serialization does not support. For example, it does not give you full control over the shape of XML produced or consumed by the serializer. If such fine control is required, XML Serialization has to be used, and you need to design your types to support this serialization technology.
 
  ❌ AVOID designing your types specifically for XML Serialization, unless you have a very strong reason to control the shape of the XML produced. This serialization technology has been superseded by the Data Contract Serialization discussed in the previous section.
@@ -64,6 +68,7 @@ Serialization is the process of converting an object into a format that can be r
  ✔️ CONSIDER implementing the <xref:System.Xml.Serialization.IXmlSerializable> interface if you want even more control over the shape of the serialized XML than what’s offered by applying the XML Serialization attributes. Two methods of the interface, <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> and <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A>, allow you to fully control the serialized XML stream. You can also control the XML schema that gets generated for the type by applying the `XmlSchemaProviderAttribute`.
 
 ## Supporting Runtime Serialization
+
  Runtime Serialization is a technology used by .NET Remoting. If you think your types will be transported using .NET Remoting, you need to make sure they support Runtime Serialization.
 
  The basic support for Runtime Serialization can be provided by applying the <xref:System.SerializableAttribute>, and more advanced scenarios involve implementing a simple Runtime Serializable Pattern (implement <xref:System.Runtime.Serialization.ISerializable> and provide serialization constructor).

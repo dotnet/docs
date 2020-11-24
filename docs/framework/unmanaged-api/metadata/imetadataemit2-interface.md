@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit2 Interface
+
 Extends the [IMetaDataEmit](imetadataemit-interface.md) interface primarily to provide the ability to work with generic types.  
   
 ## Methods  
@@ -32,6 +33,7 @@ Extends the [IMetaDataEmit](imetadataemit-interface.md) interface primarily to p
 |[SetGenericParamProps Method](imetadataemit2-setgenericparamprops-method.md)|Sets property values for the generic parameter definition referenced by the specified token.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

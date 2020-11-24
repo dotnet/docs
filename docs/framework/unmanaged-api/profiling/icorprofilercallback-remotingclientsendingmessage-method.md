@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::RemotingClientSendingMessage Method
+
 Notifies the profiler that the client is sending a request to the server.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT RemotingClientSendingMessage(
 ```  
   
 ## Parameters  
+
  `pCookie`  
  [in] A value that corresponds with the value provided in [ICorProfilerCallback::RemotingServerReceivingMessage](icorprofilercallback-remotingserverreceivingmessage-method.md) under these conditions:  
   
@@ -43,6 +45,7 @@ HRESULT RemotingClientSendingMessage(
  [in] A value that is `true` if the call is asynchronous; otherwise, `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

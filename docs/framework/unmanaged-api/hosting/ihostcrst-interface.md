@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostCrst Interface
+
 Serves as the host's representation of a critical section for threading.  
   
 ## Methods  
@@ -28,9 +29,11 @@ Serves as the host's representation of a critical section for threading.
 |[TryEnter Method](ihostcrst-tryenter-method.md)|Attempts to enter the critical section, and reports success or failure immediately.|  
   
 ## Remarks  
+
  `IHostCrst` allows the common language runtime (CLR) to communicate directly with the host's representation of a critical section, rather than using Win32 functions such as `EnterCriticalSection` or `LeaveCriticalSection`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

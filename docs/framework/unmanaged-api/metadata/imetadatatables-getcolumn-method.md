@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataTables::GetColumn Method
+
 Gets a pointer to the value contained in the cell of the specified column and row in the given table.  
   
 ## Syntax  
@@ -66,6 +67,7 @@ The interpretion of the value returned through `pVal` depends on the column's ty
 | `iBLOB` (103)            | Blob heap index | *pVal* is an index into the Blob heap. Use [IMetadataTables::GetBlob](imetadatatables-getblob-method.md) to get the actual column Blob value. |
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

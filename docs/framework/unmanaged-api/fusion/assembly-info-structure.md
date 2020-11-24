@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ASSEMBLY_INFO Structure
+
 Contains information about an assembly that is registered in the global assembly cache.  
   
 ## Syntax  
@@ -41,6 +42,7 @@ typedef struct _ASSEMBLY_INFO {
 |`cchBuf`|The number of wide characters, including the null terminator, that `pszCurrentAssemblyPathBuf` contains.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

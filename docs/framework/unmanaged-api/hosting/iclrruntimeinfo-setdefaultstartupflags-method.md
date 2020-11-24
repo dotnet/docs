@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeInfo::SetDefaultStartupFlags Method
+
 Sets the startup flags and the host configuration file that will be used to start the runtime. This method supersedes the use of the `startupFlags` parameter in the [CorBindToRuntimeEx](corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](corbindtoruntimehost-function.md) functions.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetDefaultStartupFlags(
 ```  
   
 ## Parameters  
+
  `dwStartupFlags`  
  [in] The host startup flags to set. Use the same flags as with the [CorBindToRuntimeEx](corbindtoruntimeex-function.md) and [CorBindToRuntimeHost](corbindtoruntimehost-function.md) functions.  
   
@@ -35,6 +37,7 @@ HRESULT SetDefaultStartupFlags(
  [in] The directory path of the host configuration file to set.  
   
 ## Return Value  
+
  This method returns the following specific HRESULT as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -42,9 +45,11 @@ HRESULT SetDefaultStartupFlags(
 |S_OK|The method completed successfully.|  
   
 ## Remarks  
+
  A multithreaded host should synchronize calls to this method. Otherwise, thread A might call the `SetStartupFlags` method after thread B completes a call to `SetStartupFlags` and before thread B starts the runtime.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

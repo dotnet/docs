@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerObjectEnum::Reset Method
+
 Moves this enumerator's cursor to the starting position of the sequence.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT Reset ();
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

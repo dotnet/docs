@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: af02460f-2a45-496e-bc4e-a1ac4f80fe11
 ---
 # ICorDebugDataTarget2::EnumerateThreadIDs Method
+
 Returns a list of active thread IDs.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT EnumerateThreadIDs(
 ```  
   
 ## Parameters  
+
  cThreadIDs  
  [in] The maximum number of threads whose IDs can be returned.  
   
@@ -32,6 +34,7 @@ HRESULT EnumerateThreadIDs(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).**Header:** CorDebug.idl, CorDebug.h  
   
  **Library:** CorGuids.lib  

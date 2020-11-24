@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetTypeLibInfo Function
+
 Returns information about the specified type library by examining its [TLIBATTR](/windows/win32/api/oaidl/ns-oaidl-tlibattr) structure.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetTypeLibInfo(
 ```  
   
 ## Parameters  
+
  `szFile`  
  [in] The file name of the type library.  
   
@@ -51,11 +53,13 @@ HRESULT GetTypeLibInfo(
  [out] The minor version number of the type library. For example, for version *x.y*, the minor version number is *y*.  
   
 ## Remarks  
+
  The `GetTypeLibInfo` function is called by the [Tlbexp.exe (Type Library Exporter)](../../tools/tlbexp-exe-type-library-exporter.md). This tool generates a type library that describes the types in a common language runtime (CLR) assembly.  
   
  If any parameter is null, the function returns an `HRESULT` of `E_POINTER`. Otherwise, it returns `S_OK`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** TlbRef.h  

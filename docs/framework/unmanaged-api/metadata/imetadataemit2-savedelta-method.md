@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit2::SaveDelta Method
+
 Saves changes from the current edit-and-continue session to the specified file.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SaveDelta (
 ```  
   
 ## Parameters  
+
  `szFile`  
  [in] The file name under which to save changes.  
   
@@ -36,6 +38,7 @@ HRESULT SaveDelta (
  [in] Reserved. Must be zero.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

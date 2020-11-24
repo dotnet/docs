@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTaskManager::GetCurrentTaskType Method
+
 Gets the type of the task that is currently executing.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetCurrentTaskType(
 ```  
   
 ## Parameters  
+
  `pTaskType`  
  [out] A pointer to a value of the [ETaskType](etasktype-enumeration.md) enumeration that indicates the type of task that is currently executing.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

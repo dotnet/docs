@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugFrame::GetFunctionToken Method
+
 Gets the metadata token for the function that contains the code associated with this stack frame.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetFunctionToken (
 ```  
   
 ## Parameters  
+
  `pToken`  
  [out] A pointer to an `mdMethodDef` token that references the metadata for the function.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

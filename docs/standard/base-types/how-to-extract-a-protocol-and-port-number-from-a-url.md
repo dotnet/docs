@@ -14,11 +14,13 @@ helpviewer_keywords:
 ms.assetid: ab7f62b3-6d2c-4efb-8ac6-28600df5fd5c
 ---
 # How to: Extract a Protocol and Port Number from a URL
+
 The following example extracts a protocol and port number from a URL.  
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
 ## Example  
+
  The example uses the <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method to return the protocol followed by a colon followed by the port number.  
   
  [!code-csharp[RegularExpressions.Examples.Protocol#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.Protocol/cs/Example.cs#1)]

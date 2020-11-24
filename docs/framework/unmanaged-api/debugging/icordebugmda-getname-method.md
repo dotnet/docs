@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugMDA::GetName Method
+
 Gets a string containing the name of the managed debugging assistant (MDA) represented by [ICorDebugMDA](icordebugmda-interface.md).  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetName (
 ```  
   
 ## Parameters  
+
  `cchName`  
  [in] The size of the `szName` array.  
   
@@ -41,9 +43,11 @@ HRESULT GetName (
  [out] An array in which to store the name.  
   
 ## Remarks  
+
  MDA names are unique values. The `GetName` method is a convenient performance alternative to getting the XML stream and extracting the name from the stream based on the schema.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

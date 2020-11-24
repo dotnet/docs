@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyEmit::DefineAssembly Method
+
 Creates an `Assembly` structure containing metadata for the specified assembly and returns the associated metadata token.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT DefineAssembly (
 ```  
   
 ## Parameters  
+
  `pbPublicKey`  
  [in] The public key that identifies the publisher of the assembly, or NULL if the assembly is not strongly named.  
   
@@ -56,9 +58,11 @@ HRESULT DefineAssembly (
  [out] A pointer to the metadata token.  
   
 ## Remarks  
+
  Only one `Assembly` metadata structure can be defined within a manifest.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

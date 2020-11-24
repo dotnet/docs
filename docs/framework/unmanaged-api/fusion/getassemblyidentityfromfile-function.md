@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # GetAssemblyIdentityFromFile Function
+
 Gets a pointer to an `IUnknown` object with the specified `IID` in the assembly at the specified file path.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetAssemblyIdentityFromFile (
 ```  
   
 ## Parameters  
+
  `pwzFilePath`  
  [in] A valid path to the requested assembly.  
   
@@ -41,6 +43,7 @@ HRESULT GetAssemblyIdentityFromFile (
  [out] The returned interface pointer.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

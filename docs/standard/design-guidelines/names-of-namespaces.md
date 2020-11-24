@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: a49058d2-0276-43a7-9502-04adddf857b2
 ---
 # Names of Namespaces
+
 As with other naming guidelines, the goal when naming namespaces is creating sufficient clarity for the programmer using the framework to immediately know what the content of the namespace is likely to be. The following template specifies the general rule for naming namespaces:
 
  `<Company>.(<Product>|<Technology>)[.<Feature>][.<Subnamespace>]`
@@ -37,6 +38,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
  For example, do not use `Debug` as a namespace name and then also provide a class named `Debug` in the same namespace. Several compilers require such types to be fully qualified.
 
 ### Namespaces and Type Name Conflicts
+
  ❌ DO NOT introduce generic type names such as `Element`, `Node`, `Log`, and `Message`.
 
  There is a very high probability that doing so will lead to type name conflicts in common scenarios. You should qualify the generic type names (`FormElement`, `XmlNode`, `EventLog`, `SoapMessage`).

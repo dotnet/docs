@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IGCHost::SetGCStartupLimits Method
+
 Sets the segment size and the maximum size for generation 0.  
   
 > [!IMPORTANT]
@@ -32,6 +33,7 @@ HRESULT SetGCStartupLimits (
 ```  
   
 ## Parameters  
+
  `SegmentSize`  
  [in] The size of the segment used by the garbage collection system.  
   
@@ -39,9 +41,11 @@ HRESULT SetGCStartupLimits (
  [in] The maximum size for generation 0.  
   
 ## Remarks  
+
  The `SetGCStartupLimits` method may be called only once. These values cannot be changed later.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorConfiguration::SetDebuggerThreadControl Method
+
 Sets the callback interface that the debugging services will call as common language runtime (CLR) threads are blocked and unblocked for debugging.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT SetDebuggerThreadControl (
 ```  
   
 ## Parameters  
+
  `pDebuggerThreadControl`  
  [in] A pointer to an [IDebuggerThreadControl](idebuggerthreadcontrol-interface.md) object that notifies the host about the blocking and unblocking of threads by the debugging services.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

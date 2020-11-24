@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetPropertyProps Method
+
 Gets the metadata for the property represented by the specified token.  
   
 ## Syntax  
@@ -43,6 +44,7 @@ HRESULT GetPropertyProps (
 ```  
   
 ## Parameters  
+
  `prop`  
  [in] A token that represents the property to return metadata for.  
   
@@ -92,6 +94,7 @@ HRESULT GetPropertyProps (
  [out] The number of MethodDef tokens returned in `rmdOtherMethod`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

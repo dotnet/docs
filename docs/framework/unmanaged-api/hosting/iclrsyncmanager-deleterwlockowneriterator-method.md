@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRSyncManager::DeleteRWLockOwnerIterator Method
+
 Requests that the common language runtime (CLR) destroy an iterator that was created by a call to [ICLRSyncManager::CreateRWLockOwnerIterator](iclrsyncmanager-createrwlockowneriterator-method.md).  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT DeleteRWLockOwnerIterator (
 ```  
   
 ## Parameters  
+
  `Iterator`  
  [in] The iterator that was created by using a call to `CreateRWLockOwnerIterator`.  
   
@@ -43,9 +45,11 @@ HRESULT DeleteRWLockOwnerIterator (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The host can call this method and `CreateRWLockOwnerIterator` to ensure that its threading implementation remains synchronized.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

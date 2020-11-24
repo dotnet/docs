@@ -16,11 +16,13 @@ topic_type:
   - "apiref"
 ---
 # ITypeNameBuilder Interface
+
 Provides methods for building a type name.  
   
  This interface supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

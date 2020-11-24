@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55
 ---
 # Commonly Used Collection Types
+
 Collection types are the common variations of data collections, such as hash tables, queues, stacks, bags, dictionaries, and lists.  
   
  Collections are based on the <xref:System.Collections.ICollection> interface, the <xref:System.Collections.IList> interface, the <xref:System.Collections.IDictionary> interface, or their generic counterparts. The <xref:System.Collections.IList> interface and the <xref:System.Collections.IDictionary> interface are both derived from the <xref:System.Collections.ICollection> interface; therefore, all collections are based on the <xref:System.Collections.ICollection> interface either directly or indirectly. In collections based on the <xref:System.Collections.IList> interface (such as <xref:System.Array>, <xref:System.Collections.ArrayList>, or <xref:System.Collections.Generic.List%601>) or directly on the <xref:System.Collections.ICollection> interface (such as <xref:System.Collections.Queue>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, <xref:System.Collections.Stack>, <xref:System.Collections.Concurrent.ConcurrentStack%601>, or <xref:System.Collections.Generic.LinkedList%601>), every element contains only a value. In collections based on the <xref:System.Collections.IDictionary> interface (such as the <xref:System.Collections.Hashtable> and <xref:System.Collections.SortedList> classes, the <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Generic.SortedList%602> generic classes), or the <xref:System.Collections.Concurrent.ConcurrentDictionary%602> classes, every element contains both a key and a value.  The <xref:System.Collections.ObjectModel.KeyedCollection%602> class is unique because it is a list of values with keys embedded within the values and, therefore, it behaves like a list and like a dictionary.  
@@ -34,6 +35,7 @@ Collection types are the common variations of data collections, such as hash tab
 |[Generics](../generics/index.md)|Describes the generics feature, including the generic collections, delegates, and interfaces provided by .NET. Provides links to feature documentation for C#, Visual Basic, and Visual C++, and to supporting technologies such as reflection.|  
   
 ## Reference  
+
  <xref:System.Collections?displayProperty=nameWithType>  
   
  <xref:System.Collections.Generic?displayProperty=nameWithType>  

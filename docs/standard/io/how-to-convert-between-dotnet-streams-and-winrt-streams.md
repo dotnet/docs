@@ -13,6 +13,7 @@ ms.assetid: 23a763ea-8348-4244-9f8c-a4280b870b47
 The <xref:System.IO.WindowsRuntimeStreamExtensions?displayProperty=nameWithType> class contains methods that make these conversions easy. However, underlying differences between .NET Framework and Windows Runtime streams affect the results of using these methods, as described in the following sections:
 
 ## Convert from a Windows Runtime to a .NET Framework stream
+
 To convert from a Windows Runtime stream to a .NET Framework stream, use one of the following <xref:System.IO.WindowsRuntimeStreamExtensions?displayProperty=nameWithType> methods:
 
 - <xref:System.IO.WindowsRuntimeStreamExtensions.AsStream%2A?displayProperty=nameWithType> converts a random-access stream in the Windows Runtime to a managed stream in .NET for UWP apps.
@@ -26,6 +27,7 @@ The Windows Runtime offers stream types that support reading only, writing only,
 It's best practice to use the conversion method that matches the capabilities of the Windows Runtime stream you want to convert. However, since <xref:Windows.Storage.Streams.IRandomAccessStream> is readable and writeable (it implements both <xref:Windows.Storage.Streams.IOutputStream> and <xref:Windows.Storage.Streams.IInputStream>), the conversion methods maintain the capabilities of the original stream. For example, using <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A?displayProperty=nameWithType> to convert an <xref:Windows.Storage.Streams.IRandomAccessStream> doesn't limit the converted .NET Framework stream to being readable. It's also writable.
 
 ## Example: Convert Windows Runtime random-access to .NET Framework stream
+
 To convert from a Windows Runtime random-access stream to a .NET Framework stream, use the <xref:System.IO.WindowsRuntimeStreamExtensions.AsStream%2A?displayProperty=nameWithType> method.
 
 The following code example prompts you to select a file, opens it with Windows Runtime APIs, and then converts it to a .NET Framework stream. It reads the stream and outputs it to a text block. You would typically manipulate the stream with .NET Framework APIs before outputting the results.
@@ -36,6 +38,7 @@ To run this example, create a UWP XAML app that contains a text block named `Tex
   [!code-vb[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/vb/mainpage1.xaml.vb)]
 
 ## Convert from a .NET Framework to a Windows Runtime stream
+
 To convert from a .NET Framework stream to a Windows Runtime stream, use one of the following <xref:System.IO.WindowsRuntimeStreamExtensions?displayProperty=nameWithType> methods:
 
 - <xref:System.IO.WindowsRuntimeStreamExtensions.AsInputStream%2A?displayProperty=nameWithType> converts a managed stream in .NET for UWP apps to an input stream in the Windows Runtime.

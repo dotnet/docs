@@ -13,6 +13,7 @@ ms.assetid: 359b10eb-ec05-4cc6-ac96-c2b060afc4de
 XML documents can be validated against an XML schema definition language (XSD) schema in an <xref:System.Xml.Schema.XmlSchemaSet>.  
   
 ## Validate XML documents  
+
  XML documents are validated by the <xref:System.Xml.XmlReader.Create%2A> method of the <xref:System.Xml.XmlReader> class. To validate an XML document, construct an <xref:System.Xml.XmlReaderSettings> object that contains an XML schema definition language (XSD) schema with which to validate the XML document.  
   
 > [!NOTE]

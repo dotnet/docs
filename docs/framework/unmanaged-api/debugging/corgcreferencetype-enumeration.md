@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorGCReferenceType Enumeration
+
 Identifies the source of an object to be garbage-collected.  
   
 ## Syntax  
@@ -59,6 +60,7 @@ typedef enum {
 |`CorHandleAll`|Return all references from the handle table. This value is used by the [ICorDebugProcess5::EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) method only.|  
   
 ## Remarks  
+
  The `CorGCReferenceType` enumeration is used as follows:  
   
 - As the value of the `type` field of the [COR_GC_REFERENCE](cor-gc-reference-structure.md) structure, it indicates the source of a reference or handle.  
@@ -66,6 +68,7 @@ typedef enum {
 - As the `types` argument to the [ICorDebugProcess5::EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) method, it specifies the types of handles to include in the enumeration.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

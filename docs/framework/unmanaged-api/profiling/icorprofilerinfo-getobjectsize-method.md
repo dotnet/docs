@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetObjectSize Method
+
 Gets the size of a specified object.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetObjectSize(
 ```  
   
 ## Parameters  
+
  `objectId`  
  [in] The ID of the object.  
   
@@ -48,6 +50,7 @@ HRESULT GetObjectSize(
 - On 64-bit Windows, the alignment is always 8 bytes.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

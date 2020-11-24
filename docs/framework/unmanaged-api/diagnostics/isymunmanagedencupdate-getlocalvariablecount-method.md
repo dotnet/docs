@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedENCUpdate::GetLocalVariableCount Method
+
 Gets the number of local variables.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetLocalVariableCount(
 ```  
   
 ## Parameters  
+
  `mdMethodToken`  
  [in] The metadata token of methods.  
   
@@ -35,9 +37,11 @@ HRESULT GetLocalVariableCount(
  [out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the number of local variables.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

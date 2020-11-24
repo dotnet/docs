@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback2 Interface
+
 Provides methods to support debugger exception handling and managed debugging assistants (MDAs). `ICorDebugManagedCallback2` is a logical extension of the [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) interface.  
   
 ## Methods  
@@ -32,6 +33,7 @@ Provides methods to support debugger exception handling and managed debugging as
 |[MDANotification Method](icordebugmanagedcallback2-mdanotification-method.md)|Provides notification that code execution has encountered a managed debugging assistant (MDA) message.|  
   
 ## Remarks  
+
  The `ICorDebugManagedCallback2` interface extends the `ICorDebugManagedCallback` interface to handle new debug events introduced in the .NET Framework version 2.0.  
   
  A debugger must implement `ICorDebugManagedCallback2` if it is debugging .NET Framework 2.0 applications. An instance of `ICorDebugManagedCallback` or `ICorDebugManagedCallback2` is passed as the callback object to [ICorDebug::SetManagedHandler](icordebug-setmanagedhandler-method.md).  
@@ -40,6 +42,7 @@ Provides methods to support debugger exception handling and managed debugging as
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

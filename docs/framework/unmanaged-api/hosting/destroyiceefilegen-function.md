@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # DestroyICeeFileGen Function
+
 Destroys an [ICeeFileGen](iceefilegen-class.md) object.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -31,16 +32,20 @@ HRESULT DestroyICeeFileGen (
 ```  
   
 ## Parameters  
+
  `ceeFileGen`  
  [in] The `ICeeFileGen` object to destroy.  
   
 ## Return Value  
+
  This method returns standard COM error codes.  
   
 ## Remarks  
+
  `DestroyICeeFileGen` destroys the `ICeeFileGen` object created by the [CreateICeeFileGen](createiceefilegen-function.md) function.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ICeeFileGen.h  

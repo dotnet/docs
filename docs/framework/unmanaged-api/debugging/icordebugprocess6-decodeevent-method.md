@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1453bc0c-6e0d-4d5a-b176-22607f8a3e6c
 ---
 # ICorDebugProcess6::DecodeEvent Method
+
 Decodes managed debug events that have been encapsulated in the payload of specially crafted native exception debug events.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ HRESULT DecodeEvent(
 ```  
   
 ## Parameters  
+
  `pRecord`  
  [in] A pointer to a byte array from a native exception debug event that includes information about a managed debug event.  
   
@@ -44,6 +46,7 @@ HRESULT DecodeEvent(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

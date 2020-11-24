@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IManagedObject Interface
+
 Provides methods for controlling a managed object.  
   
 ## Methods  
@@ -26,6 +27,7 @@ Provides methods for controlling a managed object.
 |[GetSerializedBuffer Method](imanagedobject-getserializedbuffer-method.md)|Gets the string representation of this managed object.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

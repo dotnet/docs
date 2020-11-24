@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugRegisterSet::GetRegistersAvailable Method
+
 Gets a bit mask indicating which registers in this [ICorDebugRegisterSet](icordebugregisterset-interface.md) are currently available.  
   
 ## Syntax  
@@ -28,15 +29,18 @@ HRESULT GetRegistersAvailable (
 ```  
   
 ## Parameters  
+
  `pAvailable`  
  [out] A bit mask that indicates which registers are currently available.  
   
 ## Remarks  
+
  A register may be unavailable if its value cannot be determined for the given situation.  
   
  The returned mask contains a bit for each register (1 << the register index). The bit value is 1 if the register is available, or 0 if it is not available.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

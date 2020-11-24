@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 127cbc0c-cbed-48fd-9c89-7c5d4f98f163
 ---
 # Property Design
+
 Although properties are technically very similar to methods, they are quite different in terms of their usage scenarios. They should be seen as smart fields. They have the calling syntax of fields, and the flexibility of methods.
 
  ✔️ DO create get-only properties if the caller should not be able to change the value of the property.
@@ -32,6 +33,7 @@ Although properties are technically very similar to methods, they are quite diff
  Property getters should be simple operations and should not have any preconditions. If a getter can throw an exception, it should probably be redesigned to be a method. Notice that this rule does not apply to indexers, where we do expect exceptions as a result of validating the arguments.
 
 ### Indexed Property Design
+
  An indexed property is a special property that can have parameters and can be called with special syntax similar to array indexing.
 
  Indexed properties are commonly referred to as indexers. Indexers should be used only in APIs that provide access to items in a logical collection. For example, a string is a collection of characters, and the indexer on <xref:System.String?displayProperty=nameWithType> was added to access its characters.
@@ -63,6 +65,7 @@ Although properties are technically very similar to methods, they are quite diff
  This is enforced by the C# compiler.
 
 ### Property Change Notification Events
+
  Sometimes it is useful to provide an event notifying the user of changes in a property value. For example, `System.Windows.Forms.Control` raises a `TextChanged` event after the value of its `Text` property has changed.
 
  ✔️ CONSIDER raising change notification events when property values in high-level APIs (usually designer components) are modified.

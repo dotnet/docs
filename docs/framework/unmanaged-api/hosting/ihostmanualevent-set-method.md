@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostManualEvent::Set Method
+
 Sets the current [IHostManualEvent](ihostmanualevent-interface.md) instance to a signaled state.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ HRESULT Set ();
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

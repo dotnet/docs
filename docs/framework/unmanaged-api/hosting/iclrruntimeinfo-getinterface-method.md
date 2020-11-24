@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeInfo::GetInterface Method
+
 Loads the CLR into the current process and returns runtime interface pointers, such as [ICLRRuntimeHost](iclrruntimehost-interface.md), [ICLRStrongName](iclrstrongname-interface.md), and [IMetaDataDispenserEx](../metadata/imetadatadispenser-interface.md).  
   
  This method supersedes all the `CorBindTo`* functions in the [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md) section.  
@@ -31,6 +32,7 @@ HRESULT GetInterface(
 ```  
   
 ## Parameters  
+
  `rclsid`  
  [in] The CLSID interface for the coclass.  
   
@@ -41,6 +43,7 @@ HRESULT GetInterface(
  [out] A pointer to the queried interface.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -51,6 +54,7 @@ HRESULT GetInterface(
 |CLR_E_SHIM_LEGACYRUNTIMEALREADYBOUND|A different runtime was already bound to the legacy CLR version 2 activation policy.|  
   
 ## Remarks  
+
  This method causes the CLR to be loaded but not initialized.  
   
  The following table shows the supported combinations for `rclsid` and `riid`.  
@@ -67,6 +71,7 @@ HRESULT GetInterface(
 |CLSID_CLRStrongName|IID_ICLRStrongName|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

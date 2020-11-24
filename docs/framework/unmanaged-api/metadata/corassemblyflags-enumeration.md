@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorAssemblyFlags Enumeration
+
 Contains values that describe the metadata applied to an assembly compilation.  
   
 ## Syntax  
@@ -71,6 +72,7 @@ typedef enum CorAssemblyFlags {
 |`afContentType_WindowsRuntime`|Indicates the Windows Runtime content type.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

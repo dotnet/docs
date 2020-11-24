@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 4c4ea526-9203-486f-b72d-29d61c5b3c6d
 ---
 # Capitalization Conventions
+
 The guidelines in this chapter lay out a simple method for using case that, when applied consistently, make identifiers for types, members, and parameters easy to read.
 
 ## Capitalization Rules for Identifiers
+
  To differentiate words in an identifier, capitalize the first letter of each word in the identifier. Do not use underscores to differentiate words, or for that matter, anywhere in identifiers. There are two appropriate ways to capitalize identifiers, depending on the use of the identifier:
 
 - PascalCasing
@@ -54,6 +56,7 @@ The guidelines in this chapter lay out a simple method for using case that, when
 |Parameter|Camel|`public class Convert {` <br />  `public static int ToInt32(string value);` <br /> `}`|
 
 ## Capitalizing Compound Words and Common Terms
+
  Most compound terms are treated as single words for purposes of capitalization.
 
  ❌ DO NOT capitalize each word in so-called closed-form compound words.
@@ -89,6 +92,7 @@ The guidelines in this chapter lay out a simple method for using case that, when
 |`Writable`|`writable`|`Writeable`|
 
 ## Case Sensitivity
+
  Languages that can run on the CLR are not required to support case-sensitivity, although some do. Even if your language supports it, other languages that might access your framework do not. Any APIs that are externally accessible, therefore, cannot rely on case alone to distinguish between two names in the same context.
 
  ❌ DO NOT assume that all programming languages are case sensitive. They are not. Names cannot differ by case alone.

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugCode3 Interface
+
 Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide information about a managed return value.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide i
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

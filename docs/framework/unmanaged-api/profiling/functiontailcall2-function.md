@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # FunctionTailcall2 Function
+
 Notifies the profiler that the currently executing function is about to perform a tail call to another function and provides information about the stack frame.  
   
 ## Syntax  
@@ -45,6 +46,7 @@ void __stdcall FunctionTailcall2 (
   The profiler should treat this as an opaque handle that can be passed back to the execution engine in the [ICorProfilerInfo2::GetFunctionInfo2](icorprofilerinfo2-getfunctioninfo2-method.md) method.
 
 ## Remarks  
+
  The target function of the tail call will use the current stack frame, and will return directly to the caller of the function that made the tail call. This means that a [FunctionLeave2](functionleave2-function.md) callback will not be issued for a function that is the target of a tail call.  
   
  The value of the `func` parameter is not valid after the `FunctionTailcall2` function returns because the value may change or be destroyed.  
@@ -62,6 +64,7 @@ void __stdcall FunctionTailcall2 (
  Also, the `FunctionTailcall2` function must not call into managed code or in any way cause a managed memory allocation.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

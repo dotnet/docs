@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugInternalFrame2 Interface
+
 Provides information about internal frames, including stack address and position in relation to ICorDebugFrame objects.  
   
 ## Methods  
@@ -26,12 +27,14 @@ Provides information about internal frames, including stack address and position
 |[IsCloserToLeaf Method](icordebuginternalframe2-isclosertoleaf-method.md)|Checks whether the `this` internal frame is closer to the leaf than the specified ICorDebugFrame object.|  
   
 ## Remarks  
+
  This interface extends the ICorDebugInternalFrame interface.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

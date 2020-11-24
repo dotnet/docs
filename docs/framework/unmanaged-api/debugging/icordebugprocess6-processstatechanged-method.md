@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fb6d30d9-54f3-462b-8ebf-ce0440791ad5
 ---
 # ICorDebugProcess6::ProcessStateChanged Method
+
 Notifies [ICorDebug](icordebug-interface.md) that the process is running.  
   
 ## Syntax  
@@ -13,16 +14,19 @@ HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);
 ```  
   
 ## Parameters  
+
  `change`  
  [in] A member of the [ProcessStateChanged](icordebugprocess6-processstatechanged-method.md) enumeration  
   
 ## Remarks  
+
  The debugger calls this method to notify [ICorDebug](icordebug-interface.md) that the process is running.  
   
 > [!NOTE]
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

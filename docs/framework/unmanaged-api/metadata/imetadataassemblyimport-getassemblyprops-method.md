@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyImport::GetAssemblyProps Method
+
 Gets the set of properties for the assembly with the specified metadata signature.  
   
 ## Syntax  
@@ -36,6 +37,7 @@ HRESULT GetAssemblyProps (
 ```  
   
 ## Parameters  
+
  `mda`  
  [in]. The `mdAssembly` metadata token that represents the assembly for which to get the properties.  
   
@@ -64,6 +66,7 @@ HRESULT GetAssemblyProps (
  [out] Flags that describe the metadata applied to an assembly. This value is a combination of one or more [CorAssemblyFlags](corassemblyflags-enumeration.md) values.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

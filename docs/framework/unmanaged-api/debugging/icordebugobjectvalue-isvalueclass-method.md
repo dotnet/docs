@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugObjectValue::IsValueClass Method
+
 Gets a value that indicates whether this object value is a value type.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT IsValueClass (
 ```  
   
 ## Parameters  
+
  `pbIsValueClass`  
  [out] A pointer to a Boolean value that is `true` if the object value, represented by this "ICorDebugObjectValue", is a value type rather than a reference type; otherwise, `pbIsValueClass` is `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

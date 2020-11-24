@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # EnumCustomAttributes Method
+
 Retrieves assembly-level custom attributes.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT EnumCustomAttributes(
 ```  
   
 ## Parameters  
+
  `hEnum`  
  Handle of enumerator.  
   
@@ -48,9 +50,11 @@ HRESULT EnumCustomAttributes(
  Optionally receives count of token values.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h  
   
 ## See also

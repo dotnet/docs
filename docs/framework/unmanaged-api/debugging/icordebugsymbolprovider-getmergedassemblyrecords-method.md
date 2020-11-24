@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: cc4c510d-550d-4941-af34-81987caf3425
 ---
 # ICorDebugSymbolProvider::GetMergedAssemblyRecords Method
+
 Gets the symbol records for all the merged assemblies.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT GetMergedAssemblyRecords(
 ```  
   
 ## Parameters  
+
  `cRequestedRecords`  
  [in] The number of symbol records requested.  
   
@@ -32,6 +34,7 @@ HRESULT GetMergedAssemblyRecords(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

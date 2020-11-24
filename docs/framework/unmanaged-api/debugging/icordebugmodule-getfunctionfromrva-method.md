@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugModule::GetFunctionFromRVA Method
+
 This method has not been implemented in the current version of the .NET Framework.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetFunctionFromRVA(
 ```  
   
 ## Requirements  
+
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 12e6a262-d9ac-49b8-9b80-1e653a2a3819
 ---
 # ICorDebugExceptionDebugEvent::GetNativeIP Method
+
 Gets the native instruction pointer for this exception debug event.  
   
 ## Syntax  
@@ -15,10 +16,12 @@ HRESULT GetNativeIP(
 ```  
   
 ## Parameters  
+
  `pIP`  
  [out] A pointer to the instruction pointer for this exception debug event. See the Remarks section for more information.  
   
 ## Remarks  
+
  The meaning of this instruction pointer depends on the event type, as shown in the following table.  
   
 |Event type|Meaning of `pStackPointer` value|  
@@ -34,6 +37,7 @@ HRESULT GetNativeIP(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

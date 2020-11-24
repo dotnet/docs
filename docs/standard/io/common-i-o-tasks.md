@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: bf00c380-706a-4e38-b829-454a480629fc
 ---
 # Common I/O Tasks
+
 The <xref:System.IO> namespace provides several classes that allow for various actions, such as reading and writing, to be performed on files, directories, and streams. For more information, see [File and Stream I/O](index.md).  
   
 ## Common File Tasks  

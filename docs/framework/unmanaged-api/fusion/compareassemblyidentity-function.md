@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # CompareAssemblyIdentity Function
+
 Compares two assembly identities to determine whether they are equivalent.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ STDAPI CompareAssemblyIdentity (
 ```  
   
 ## Parameters  
+
  `pwzAssemblyIdentity1`  
  [in] The textual identity of the first assembly in the comparison.  
   
@@ -52,9 +54,11 @@ STDAPI CompareAssemblyIdentity (
  [out] An [AssemblyComparisonResult](assemblycomparisonresult-enumeration.md) enumeration that contains detailed information about the comparison.  
   
 ## Return Value  
+
  `pfEquivalent` returns a Boolean value that indicates whether the two assemblies are equivalent. `pResult` returns one of the `AssemblyComparisonResult` values, to give a more detailed reason for the value of `pfEquivalent`.  
   
 ## Remarks  
+
  `CompareAssemblyIdentity` checks whether `pwzAssemblyIdentity1` and `pwzAssemblyIdentity2` are equivalent. `pfEquivalent` is set to `true` under one or more of the following conditions:  
   
 - The two assembly identities are equivalent. For strongly named assemblies, equivalency requires the assembly name, version, public key token, and culture to be identical. For simply named assemblies, equivalency requires a match on the assembly name and culture.  
@@ -68,6 +72,7 @@ STDAPI CompareAssemblyIdentity (
  The `pResult` parameter includes specific information about why the two assemblies are considered equivalent or not equivalent. For more information, see [AssemblyComparisonResult Enumeration](assemblycomparisonresult-enumeration.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

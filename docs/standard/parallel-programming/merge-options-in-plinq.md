@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: e8f7be3b-88de-4f33-ab14-dc008e76c1ba
 ---
 # Merge Options in PLINQ
+
 When a query is executing as parallel, PLINQ partitions the source sequence so that multiple threads can work on different parts concurrently, typically on separate threads. If the results are to be consumed on one thread, for example, in a `foreach` (`For Each` in Visual Basic) loop, then the results from every thread must be merged back into one sequence. The kind of merge that PLINQ performs depends on the operators that are present in the query. For example, operators that impose a new order on the results must buffer all elements from all threads. From the perspective of the consuming thread (which is also that of the application user) a fully buffered query might run for a noticeable period of time before it produces its first result. Other operators, by default, are partially buffered; they yield their results in batches. One operator, <xref:System.Linq.ParallelEnumerable.ForAll%2A> is not buffered by default. It yields all elements from all threads immediately.  
   
  By using the <xref:System.Linq.ParallelEnumerable.WithMergeOptions%2A> method, as shown in the following example, you can provide a hint to PLINQ that indicates what kind of merging to perform.  
@@ -21,6 +22,7 @@ When a query is executing as parallel, PLINQ partitions the source sequence so t
  If the particular query cannot support the requested option, then the option will just be ignored. In most cases, you do not have to specify a merge option for a PLINQ query. However, in some cases you may find by testing and measurement that a query executes best in a non-default mode. A common use of this option is to force a chunk-merging operator to stream its results in order to provide a more responsive user interface.  
   
 ## ParallelMergeOptions  
+
  The <xref:System.Linq.ParallelMergeOptions> enumeration includes the following options that specify, for supported query shapes, how the final output of the query is yielded when the results are consumed on one thread:  
   
 - `Not Buffered`  
@@ -36,6 +38,7 @@ When a query is executing as parallel, PLINQ partitions the source sequence so t
      The <xref:System.Linq.ParallelMergeOptions.FullyBuffered> option causes the output of the whole query to be buffered before any of the elements are yielded. When you use this option, it can take longer before the first element is available on the consuming thread, but the complete results might still be produced faster than by using the other options.  
   
 ## Query Operators that Support Merge Options  
+
  The following table lists the operators that support all merge option modes, subject to the specified restrictions.  
   
 |Operator|Restrictions|  

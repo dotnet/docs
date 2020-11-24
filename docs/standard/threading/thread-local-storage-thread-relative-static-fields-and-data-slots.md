@@ -21,6 +21,7 @@ You can use managed thread local storage (TLS) to store data that's unique to a 
 You can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> class to create thread-local objects that are initialized lazily when the object is first consumed. For more information, see [Lazy Initialization](../../framework/performance/lazy-initialization.md).  
   
 ## Uniqueness of Data in Managed TLS  
+
  Whether you use thread-relative static fields or data slots, data in managed TLS is unique to the combination of thread and application domain.  
   
 - Within an application domain, one thread cannot modify data from another thread, even when both threads use the same field or slot.  
@@ -32,6 +33,7 @@ You can use the <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithT
  Similarly, when a thread gets the same named data slot in two different application domains, the data in the first application domain remains independent of the data in the second application domain.  
   
 ## Thread-Relative Static Fields  
+
  If you know that a piece of data is always unique to a thread and application-domain combination, apply the <xref:System.ThreadStaticAttribute> attribute to the static field. Use the field as you would use any other static field. The data in the field is unique to each thread that uses it.  
   
  Thread-relative static fields provide better performance than data slots and have the benefit of compile-time type checking.  

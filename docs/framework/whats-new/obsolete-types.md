@@ -1,6 +1,6 @@
 ---
 title: "Obsolete Types in .NET Framework"
-description: See the list of types that are obsolete in .NET Framework 4.5 and .NET 4.6, organized by assembly. Recommended alternatives are also listed.
+description: See the list of types that are obsolete in .NET Framework 4.5 and .NET Framework 4.6, organized by assembly. Recommended alternatives are also listed.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - ".NET Framework 4.5, obsolete types"
@@ -128,8 +128,8 @@ The following tables list the types that have been declared obsolete in system a
 |<xref:System.Runtime.InteropServices.UCOMITypeLib?displayProperty=nameWithType>|Use <xref:System.Runtime.InteropServices.ComTypes.ITypeLib?displayProperty=nameWithType> instead.|
 |<xref:System.Runtime.InteropServices.VARDESC?displayProperty=nameWithType>|Use <xref:System.Runtime.InteropServices.ComTypes.VARDESC?displayProperty=nameWithType> instead.|
 |<xref:System.Runtime.InteropServices.VARFLAGS?displayProperty=nameWithType>|Use <xref:System.Runtime.InteropServices.ComTypes.VARFLAGS?displayProperty=nameWithType> instead.|
-|<xref:System.Security.SecurityCriticalScope?displayProperty=nameWithType>|<xref:System.Security.SecurityCriticalScope> is only used for .NET 2.0 transparency compatibility.|
-|<xref:System.Security.SecurityTreatAsSafeAttribute?displayProperty=nameWithType>|<xref:System.Security.SecurityTreatAsSafeAttribute> is only used for .NET 2.0 transparency compatibility. Please use the <xref:System.Security.SecuritySafeCriticalAttribute?displayProperty=nameWithType> instead.|
+|<xref:System.Security.SecurityCriticalScope?displayProperty=nameWithType>|<xref:System.Security.SecurityCriticalScope> is only used for .NET Framework 2.0 transparency compatibility.|
+|<xref:System.Security.SecurityTreatAsSafeAttribute?displayProperty=nameWithType>|<xref:System.Security.SecurityTreatAsSafeAttribute> is only used for .NET Framework 2.0 transparency compatibility. Please use the <xref:System.Security.SecuritySafeCriticalAttribute?displayProperty=nameWithType> instead.|
 |<xref:System.Security.Policy.FirstMatchCodeGroup?displayProperty=nameWithType>|This type is obsolete and will be removed in a future release of the .NET Framework.|
 |<xref:System.Security.Policy.PermissionRequestEvidence?displayProperty=nameWithType>|Assembly level declarative security is obsolete and is no longer enforced by the CLR by default.|
 |<xref:System.Security.Policy.UnionCodeGroup?displayProperty=nameWithType>|This type is obsolete and will be removed in a future release of the .NET Framework.|

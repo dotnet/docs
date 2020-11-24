@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugGenericValue::GetValue Method
+
 Copies the value of this generic into the specified buffer.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetValue (
 ```  
   
 ## Parameters  
+
  `pTo`  
  [out] A pointer to the value that is represented by this ICorDebugGenericValue object. The value may be a simple type or a reference type (that is, a pointer).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

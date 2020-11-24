@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 63570538-06e3-4401-ad4d-ac50be90c7bf
 ---
 # Type Support in the System.Xml Classes
+
 In the .NET Framework version 2.0, the core XML classes have been enhanced to include type support features. The <xref:System.Xml.XmlReader>, <xref:System.Xml.XmlWriter>, and <xref:System.Xml.XPath.XPathNavigator> classes include type support features including the ability to convert between XML Schema types and common language runtime (CLR) types.  
   
  In the .NET Framework version 2.0, the <xref:System.Xml.XmlReader>, <xref:System.Xml.XmlWriter>, and <xref:System.Xml.XPath.XPathNavigator> classes have been enhanced to include type support features.  
@@ -20,6 +21,7 @@ In the .NET Framework version 2.0, the core XML classes have been enhanced to in
 > In the .NET Framework version 1.0 the <xref:System.Xml.XmlConvert> class was needed to convert between XML Schema and CLR types.  
   
 ## In This Section  
+
  [Mapping XML Data Types to CLR Types](mapping-xml-data-types-to-clr-types.md)  
  Describes the default mappings of XML data types to CLR types.  
   
@@ -30,4 +32,5 @@ In the .NET Framework version 2.0, the core XML classes have been enhanced to in
  Describes how to use the <xref:System.Xml.XmlConvert> class to convert between XML Schema and CLR types.  
   
 ## Related Sections  
+
  [Accessing Strongly Typed XML Data Using XPathNavigator](accessing-strongly-typed-xml-data-using-xpathnavigator.md)

@@ -4,11 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: 394624d6-4da0-430a-8a88-46efe40f14de
 ---
 # Rules for Inferring Simple Types
+
 Describes how the <xref:System.Xml.Schema.XmlSchemaInference> class infers the data type for attributes and elements.  
   
  The <xref:System.Xml.Schema.XmlSchemaInference> class infers the data type for attributes and elements as simple types. This section describes the potential inferred types, how multiple differing values are reconciled to a single type, and how schema-defining `xsi` attributes are handled.  
   
 ## Inferred Types  
+
  The <xref:System.Xml.Schema.XmlSchemaInference> class infers element and attribute values as simple types and includes a type attribute in the resulting schema. All inferred types are simple types. No base types or facets are included as part of the resulting schema.  
   
  Values are examined individually as they are encountered in the XML document. The type is inferred for a value at the time it is examined. If a type has been inferred for an attribute or element, and a value for the attribute or element is encountered that does not match the currently inferred type, the <xref:System.Xml.Schema.XmlSchemaInference> class promotes the type for each of a set of rules. These rules are discussed in the Type Promotion section, later in this topic.  
@@ -38,6 +40,7 @@ Describes how the <xref:System.Xml.Schema.XmlSchemaInference> class infers the d
 |string|One or more Unicode characters.|  
   
 ## Type Promotion  
+
  The <xref:System.Xml.Schema.XmlSchemaInference> class examines attribute and element values one at a time. As values are encountered, the most restrictive, unsigned type is inferred. If a type has been inferred for an attribute or element, and a new value is encountered that does not match the currently inferred type, the inferred type is promoted to a new type that applies to both the currently inferred type and the new value. The <xref:System.Xml.Schema.XmlSchemaInference> class does consider previous values when promoting the inferred type.  
   
  For example, consider the following XML fragments from two XML documents:  

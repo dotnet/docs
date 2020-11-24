@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8e149d32-4b2f-493f-9e4b-d0d93475acde
 ---
 # Outputs from an XslTransform
+
 Since style sheets can determine the output format using an `<xsl:output>` statement with the `method` attribute, the following table describes what the output format is when the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method is used to write the output, and the output format is declared as a <xref:System.IO.Stream> or <xref:System.IO.TextWriter>.  
   
 > [!NOTE]
@@ -46,6 +47,7 @@ Since style sheets can determine the output format using an `<xsl:output>` state
 - media-type: the media-type  
   
 ## Escaping Special Characters  
+
  The `<xsl:text disable-output-escaping>` tag is used to indicate whether or not special characters need to be escaped into an XML form (for example, using `<&lt>` in place of the `"<"` symbol) or left in the present condition. The `disable-output-escaping` attribute is ignored when transforming to an <xref:System.Xml.XmlReader> or <xref:System.Xml.XmlWriter> object and has no effect on special characters.  
   
 ## See also

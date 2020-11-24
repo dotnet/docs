@@ -20,6 +20,7 @@ topic_type:
   - "apiref"
 ---
 # CoEEShutDownCOM Function
+
 Forces the common language runtime (CLR) to release all interface pointers it holds inside runtime callable wrappers (RCW). This has the effect of releasing all RCW caches. This global function is deprecated in the .NET Framework 4. Instead, use the entry point for a specific runtime.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ void CoEEShutDownCOM ();
 ```  
   
 ## Remarks  
+
  The `CoEEShutDownCOM` function first releases all the RCWs in all contexts and in all caches, and then removes any tear-down notification existing in setup. No DLL unloading occurs.  
   
 > [!CAUTION]
@@ -37,6 +39,7 @@ void CoEEShutDownCOM ();
  Beginning with the .NET Framework 4, call the entry point for this function on the specific runtime you want to affect. To get the entry point, call the [ICLRRuntimeInfo::GetProcAddress](iclrruntimeinfo-getprocaddress-method.md) method and specify "CoEEShutDownCOM".  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

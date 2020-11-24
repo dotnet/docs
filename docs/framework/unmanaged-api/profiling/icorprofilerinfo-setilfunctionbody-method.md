@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::SetILFunctionBody Method
+
 Replaces the body of the specified function in the specified module.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SetILFunctionBody(
 ```  
   
 ## Parameters  
+
  `moduleId`  
  [in] The ID of the module in which the function resides.  
   
@@ -39,6 +41,7 @@ HRESULT SetILFunctionBody(
  [in] The new header for the function.  
   
 ## Remarks  
+
  The `SetILFunctionBody` method replaces the relative virtual address of the function in the metadata so that it points to the new function body, and adjusts any internal data structures as required.  
   
  The `SetILFunctionBody` method can be called on only those functions that have never been compiled by a just-in-time (JIT) compiler.  
@@ -46,6 +49,7 @@ HRESULT SetILFunctionBody(
  Use the [ICorProfilerInfo::GetILFunctionBodyAllocator](icorprofilerinfo-getilfunctionbodyallocator-method.md) method to allocate space for the new method to ensure that the buffer is compatible.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

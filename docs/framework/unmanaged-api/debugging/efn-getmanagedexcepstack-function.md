@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # \_EFN\_GetManagedExcepStack Function
+
 Given a managed exception object address, returns a string version of the stack trace contained inside.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT _EFN_GetManagedExcepStack(
 ```  
   
 ## Parameters  
+
  `Client`  
  [in] The client being debugged.  
   
@@ -43,9 +45,11 @@ HRESULT _EFN_GetManagedExcepStack(
  [out] The number of characters available in the string buffer.  
   
 ## Remarks  
+
  If there is no managed code on the thread currently in context, the function returns HRESULT SOS_E_NOMANAGEDCODE with a facility value of 0xa0 and an error code of 0x1000.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** SOS_Stacktrace.h  

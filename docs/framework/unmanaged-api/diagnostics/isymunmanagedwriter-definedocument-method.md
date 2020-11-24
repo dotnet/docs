@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter::DefineDocument Method
+
 Defines a source document. GUIDs are provided for known languages, vendors, and document types.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT DefineDocument(
 ```  
   
 ## Parameters  
+
  `url`  
  [in] A pointer to a `WCHAR` that defines the uniform resource locator (URL) that identifies the document.  
   
@@ -47,9 +49,11 @@ HRESULT DefineDocument(
  [out] A pointer to the returned [ISymUnmanagedWriter](isymunmanagedwriter-interface.md) interface.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

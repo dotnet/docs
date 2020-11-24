@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo3 Interface
+
 Provides methods that code profilers use to communicate with the common language runtime (CLR) to control event monitoring and to request information. The `ICorProfilerInfo3` interface is an extension of the [ICorProfilerInfo2](icorprofilerinfo2-interface.md) interface. It provides new methods supported in the .NET Framework 4 and later versions.  
   
 ## Methods  
@@ -38,11 +39,13 @@ Provides methods that code profilers use to communicate with the common language
 |[SetFunctionIDMapper2 Method](icorprofilerinfo3-setfunctionidmapper2-method.md)|Specifies the profiler-implemented function that will be called to map `FunctionID` values to alternative values, which are passed to the profiler's function entry/exit hooks. This method extends [ICorProfilerInfo::SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md) with a parameter that profilers may use to disambiguate among runtimes.|  
   
 ## Remarks  
+
  The CLR implements the methods of the `ICorProfilerInfo3` interface by using the free-threaded model. Each method returns an HRESULT to indicate success or failure. For a list of possible return codes, see the CorError.h file.  
   
  The CLR passes an `ICorProfilerInfo3` interface to each code profiler during initialization, using the profiler's implementation of the [ICorProfilerCallback::Initialize](icorprofilercallback-initialize-method.md) or [ICorProfilerCallback3::InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) method. A code profiler can then call the `ICorProfilerInfo3` methods to get information about managed code that is being executed under the control of the CLR.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

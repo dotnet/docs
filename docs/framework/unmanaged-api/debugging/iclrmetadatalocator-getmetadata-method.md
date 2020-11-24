@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMetadataLocator::GetMetadata Method
+
 Called by the common language runtime (CLR) data access services to retrieve the metadata of an image.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ HRESULT GetMetadata(
 ```  
   
 ## Parameters  
+
  `imagePath`  
  [in] A string that specifies the path of the image file.  
   
@@ -65,9 +67,11 @@ HRESULT GetMetadata(
  [out] The size of the metadata that is returned.  
   
 ## Remarks  
+
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  

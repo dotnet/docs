@@ -4,6 +4,7 @@ ms.date: "10/22/2008"
 ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
 ---
 # Guidelines for Collections
+
 Any type designed specifically to manipulate a group of objects having some common characteristic can be considered a collection. It is almost always appropriate for such types to implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>, so in this section we only consider types implementing one or both of those interfaces to be collections.
 
  ❌ DO NOT use weakly typed collections in public APIs.
@@ -25,6 +26,7 @@ Any type designed specifically to manipulate a group of objects having some comm
  ❌ DO NOT implement both `IEnumerator<T>` and `IEnumerable<T>` on the same type. The same applies to the nongeneric interfaces `IEnumerator` and `IEnumerable`.
 
 ## Collection Parameters
+
  ✔️ DO use the least-specialized type possible as a parameter type. Most members taking collections as parameters use the `IEnumerable<T>` interface.
 
  ❌ AVOID using <xref:System.Collections.Generic.ICollection%601> or <xref:System.Collections.ICollection> as a parameter just to access the `Count` property.
@@ -32,6 +34,7 @@ Any type designed specifically to manipulate a group of objects having some comm
  Instead, consider using `IEnumerable<T>` or `IEnumerable` and dynamically checking whether the object implements `ICollection<T>` or `ICollection`.
 
 ## Collection Properties and Return Values
+
  ❌ DO NOT provide settable collection properties.
 
  Users can replace the contents of the collection by clearing the collection first and then adding the new contents. If replacing the whole collection is a common scenario, consider providing the `AddRange` method on the collection.
@@ -63,6 +66,7 @@ Any type designed specifically to manipulate a group of objects having some comm
  The general rule is that null and empty (0 item) collections or arrays should be treated the same.
 
 ### Snapshots Versus Live Collections
+
  Collections representing a state at some point in time are called snapshot collections. For example, a collection containing rows returned from a database query would be a snapshot. Collections that always represent the current state are called live collections. For example, a collection of `ComboBox` items is a live collection.
 
  ❌ DO NOT return snapshot collections from properties. Properties should return live collections.
@@ -74,6 +78,7 @@ Any type designed specifically to manipulate a group of objects having some comm
  In general, all collections representing a shared resource (e.g., files in a directory) are volatile. Such collections are very difficult or impossible to implement as live collections unless the implementation is simply a forward-only enumerator.
 
 ## Choosing Between Arrays and Collections
+
  ✔️ DO prefer collections over arrays.
 
  Collections provide more control over contents, can evolve over time, and are more usable. In addition, using arrays for read-only scenarios is discouraged because the cost of cloning the array is prohibitive. Usability studies have shown that some developers feel more comfortable using collection-based APIs.
@@ -87,6 +92,7 @@ Any type designed specifically to manipulate a group of objects having some comm
  ❌ DO NOT use arrays for properties if the property would have to return a new array (e.g., a copy of an internal array) every time the property getter is called.
 
 ## Implementing Custom Collections
+
  ✔️ CONSIDER inheriting from `Collection<T>`, `ReadOnlyCollection<T>`, or `KeyedCollection<TKey,TItem>` when designing new collections.
 
  ✔️ DO implement `IEnumerable<T>` when designing new collections. Consider implementing `ICollection<T>` or even `IList<T>` where it makes sense.
@@ -100,6 +106,7 @@ Any type designed specifically to manipulate a group of objects having some comm
  ❌ DO NOT inherit from nongeneric base collections such as `CollectionBase`. Use `Collection<T>`, `ReadOnlyCollection<T>`, and `KeyedCollection<TKey,TItem>` instead.
 
 ### Naming Custom Collections
+
  Collections (types that implement `IEnumerable`) are created mainly for two reasons: (1) to create a new data structure with structure-specific operations and often different performance characteristics than existing data structures (e.g.,  <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.LinkedList%601>, <xref:System.Collections.Generic.Stack%601>), and (2) to create a specialized collection for holding a specific set of items (e.g.,  <xref:System.Collections.Specialized.StringCollection>). Data structures are most often used in the internal implementation of applications and libraries. Specialized collections are mainly to be exposed in APIs (as property and parameter types).
 
  ✔️ DO use the "Dictionary" suffix in names of abstractions implementing `IDictionary` or `IDictionary<TKey,TValue>`.

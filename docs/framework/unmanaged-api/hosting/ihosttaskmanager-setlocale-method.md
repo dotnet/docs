@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTaskManager::SetLocale Method
+
 Notifies the host that the common language runtime (CLR) has changed the locale, or culture, on the currently executing task.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetLocale (
 ```  
   
 ## Parameters  
+
  `lcid`  
  [in] The locale identifier value that maps to the newly assigned geographical culture and language.  
   
@@ -44,9 +46,11 @@ HRESULT SetLocale (
 |E_NOTIMPL|The host does not allow managed user code to modify the locale.|  
   
 ## Remarks  
+
  The runtime calls `SetLocale` when the value of the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> property is changed by managed code. This method provides an opportunity for the host to execute any mechanisms it might have for synchronization of locales. If a host does not allow the locale to be changed from managed code, or does not implement a mechanism to synchronize locales, it should return E_NOTIMPL from this method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

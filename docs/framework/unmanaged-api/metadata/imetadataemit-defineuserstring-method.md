@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineUserString Method
+
 Gets a metadata token for the specified literal string.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT DefineUserString (
 ```  
   
 ## Parameters  
+
  `szString`  
  [in] The user string to store.  
   
@@ -40,6 +42,7 @@ HRESULT DefineUserString (
  [out] The string token assigned.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

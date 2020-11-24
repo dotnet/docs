@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 10cfea92-db5e-4bcb-b301-ef029bcf77a3
 ---
 # Metadata (Unmanaged API Reference)
+
 The metadata API enables a client, such as a compiler, to generate or access a component's metadata without the types being loaded by the common language runtime (CLR).  
   
 ## In This Section  
+
  [Metadata Interfaces](metadata-interfaces.md)  
  Describes the unmanaged interfaces that provide access to the metadata exposed by the .NET Framework types, methods, fields, and so on.  
   

@@ -7,19 +7,19 @@ ms.date: 11/19/2020
 
 # Generate self-signed certificates with the .NET CLI
 
-When using self-signed certificates, there's different ways to create and use them for development and testing scenarios.  In this guide, you'll cover using self-signed certificates with `dotnet dev-certs`, and other options like `PowerShell` and `OpenSSL`.
+When using self-signed certificates, there are different ways to create and use them for development and testing scenarios.  In this guide, you'll cover using self-signed certificates with `dotnet dev-certs`, and other options like `PowerShell` and `OpenSSL`.
 
 You can then validate that the certificate will load using an example such as an [ASP.NET Core app](https://github.com/dotnet/dotnet-docker/blob/master/samples/run-aspnetcore-https-development.md) hosted in a container.
 
 ## Prerequisites
 
-In the sample, you can utilize either `.netcore 3.1` or `.net 5`.
+In the sample, you can utilize either .NET Core 3.1 or .NET 5.
 
-For `dotnet dev-certs`, be sure to have the appropriate version of `dotnet` installed:
+For `dotnet dev-certs`, be sure to have the appropriate version of .NET installed:
 
-* [Install dotnet on Windows](../install/windows.md)
-* [Install dotnet on Linux](../install/linux.md)
-* [Install dotnet on macOS](../install/macos.md)
+* [Install .NET on Windows](../install/windows.md)
+* [Install .NET on Linux](../install/linux.md)
+* [Install .NET on macOS](../install/macos.md)
 
 This sample requires [Docker 17.06](https://docs.docker.com/release-notes/docker-ce) or later of the [Docker client](https://www.docker.com/products/docker).
 
@@ -56,7 +56,7 @@ Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 </Project>
 ```
 
-Modify the Dockerfile to make sure the runtime points to .netcore 3.1:
+Modify the Dockerfile to make sure the runtime points to .NET Core 3.1:
 
 ```Dockerfile
 # https://hub.docker.com/_/microsoft-dotnet-core
@@ -94,11 +94,11 @@ docker build -t aspnetapp:my-sample -f Dockerfile .
 
 ### Prepare .NET 5 sample app
 
-For this guide, the [sample aspnetapp](https://hub.docker.com/_/microsoft-dotnet-samples) should be checked for .net 5.
+For this guide, the [sample aspnetapp](https://hub.docker.com/_/microsoft-dotnet-samples) should be checked for .NET 5.
 
-Check sample app [Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/Dockerfile) is using .net 5.
+Check sample app [Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/Dockerfile) is using .NET 5.
 
-Depending on the host os, the aspnet runtime may need to be updated. For example, changing from `mcr.microsoft.com/dotnet/aspnet:5.0-nanoservercore-2009 AS runtime` to `mcr.microsoft.com/dotnet/aspnet:5.0-windowsservercore-ltsc2019 AS runtime` in the Dockerfile will help with targeting the appropriate Windows runtime.
+Depending on the host OS, the ASP.NET runtime may need to be updated. For example, changing from `mcr.microsoft.com/dotnet/aspnet:5.0-nanoservercore-2009 AS runtime` to `mcr.microsoft.com/dotnet/aspnet:5.0-windowsservercore-ltsc2019 AS runtime` in the Dockerfile will help with targeting the appropriate Windows runtime.
 
 For example, this will help with testing the certificates on Windows:
 
@@ -142,7 +142,7 @@ Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 ```
 
 > [!NOTE]
-> If you're looking to use dotnet publish parameters to *trim* the deployment, you should make sure that the appropriate dependencies are included for supporting SSL certificates.
+> If you want to use `dotnet publish` parameters to *trim* the deployment, make sure that the appropriate dependencies are included for supporting SSL certificates.
 Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trim-self-contained.md#support-for-ssl-certificates) when using trimming for self-contained deployments.
 
 Make sure you're pointing to the sample app.

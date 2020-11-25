@@ -24,11 +24,11 @@ The Dapr Service Invocation building block resolves these challenges by using a 
 
 ## How it works
 
-Let's start with an example. Consider two services, Service A and Service B. Service A needs to call the `catalog/items` API on Service B. While Service A could take a dependency on Service B and make a `direct call` to it, Service A instead invokes the Service Invocation API on the Dapr sidecar. Figure 4-x shows the operation.
+Let's start with an example. Consider two services, Service A and Service B. Service A needs to call the `catalog/items` API on Service B. While Service A could take a dependency on Service B and make a `direct call` to it, Service A instead invokes the Service Invocation API on the Dapr sidecar. Figure 6-1 shows the operation.
 
 ![How it Dapr service invocation works](./media/service-invocation/howitworks.png)
 
-**Figure 4-x**. How Dapr service invocation works.
+**Figure 6-1**. How Dapr service invocation works.
 
 The sidecar takes care of the rest. It first uses the pluggable name resolution component to resolve the address of service B. The self-hosted mode uses mDNS to find it. When running in Kubernetes mode, the Kubernetes name resolution component uses the Kubernetes DNS service to determine the address.
 
@@ -102,11 +102,11 @@ var result = await daprClient.InvokeMethodAsync<IEnumerable<CatalogItem>>(
 
 ## Reference case: eShopOnDapr
 
-The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture from Microsoft uses a mix of HTTP/REST and gRPC services. The use of gRPC is limited to the communication between aggregator and back-end services. Figure 4-x show the architecture:
+The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture from Microsoft uses a mix of HTTP/REST and gRPC services. The use of gRPC is limited to the communication between aggregator and back-end services. Figure 6-2 show the architecture:
 
 ![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshoponcontainers.png)
 
-**Figure 4-x**. gRPC and HTTP/REST calls in eShopOnContainers.
+**Figure 6-2**. gRPC and HTTP/REST calls in eShopOnContainers.
 
 In the previous figure:
 
@@ -118,6 +118,8 @@ In the previous figure:
 In the recently updated eShopOnDapr implementation, the services and API Gateway have been *Daprized* by adding Dapr sidecar containers:
 
 ![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshopondapr.png)
+
+**Figure 6-3**. Dapr sidecars added to eShopOnContainers.
 
 1. The front-end still uses HTTP/REST to call the API Gateway.
 2. The Envoy API Gateway forwards requests to the `invoke` API of its sidecar to use Dapr service invocation to make calls to the HTTP/REST APIs of the aggregator and back-end services.
@@ -197,11 +199,11 @@ GET http://localhost/api/v1/catalog/items?pageSize=20
 
 ### Make aggregated service calls using the .NET SDK
 
-Most calls from the eShop front-end can be forwarded to a single back-end service by the API gateway. Some scenarios, however, require multiple back-end services to work together to complete a request from the front-end. For these more complex calls, eShop uses the Web Shopping Aggregator service to mediate the work across different services. Figure 4-x show the processing sequence of adding an item to your shopping basket:
+Most calls from the eShop front-end can be forwarded to a single back-end service by the API gateway. Some scenarios, however, require multiple back-end services to work together to complete a request from the front-end. For these more complex calls, eShop uses the Web Shopping Aggregator service to mediate the work across different services. Figure 6-4 show the processing sequence of adding an item to your shopping basket:
 
 ![Update basket sequence diagram](./media/service-invocation/updatebasket.png)
 
-**Figure 4-x**. Update shopping basket sequence.
+**Figure 6-4**. Update shopping basket sequence.
 
 In the previous figure, the Web Shopping Aggregator service retrieves catalog items from the Catalog API. It must then validate the items are still available and contain the correct price. Next, the Web Shopping Aggregator service saves the updated shopping basket by calling the Basket API.
 

@@ -367,6 +367,8 @@ items:
       href: ../core/additional-tools/index.md
     - name: .NET uninstall tool
       href: ../core/additional-tools/uninstall-tool.md
+    - name: Generate self-signed certificates
+      href: ../core/additional-tools/self-signed-certificates-guide.md
     - name: WCF web service reference provider
       href: ../core/additional-tools/wcf-web-service-reference-guide.md
     - name: WCF service utility
@@ -384,8 +386,12 @@ items:
       href: ../core/diagnostics/index.md
     - name: Managed debuggers
       href: ../core/diagnostics/managed-debuggers.md
-    - name: Debug Linux dumps
-      href: ../core/diagnostics/debug-linux-dumps.md
+    - name: Dumps
+      items:
+      - name: Collection and analyze dumps
+        href: ../core/diagnostics/dumps.md
+      - name: Debug Linux dumps
+        href: ../core/diagnostics/debug-linux-dumps.md
     - name: EventCounters
       href: ../core/diagnostics/event-counters.md
     - name: EventPipe

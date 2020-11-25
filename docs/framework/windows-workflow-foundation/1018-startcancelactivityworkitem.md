@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 68b4fa1d-eee6-4a2a-8c16-7e9d89f08ab9
 ---
 # 1018 - StartCancelActivityWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 68b4fa1d-eee6-4a2a-8c16-7e9d89f08ab9
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a CancelActivityWorkItem is starting execution.  
   
 ## Message  
+
  Starting execution of a CancelActivityWorkItem for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  
   
 ## Details  

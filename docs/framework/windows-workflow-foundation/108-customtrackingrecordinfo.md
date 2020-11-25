@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5bee501e-4e00-42cd-b949-e88009c3d4e8
 ---
 # 108 - CustomTrackingRecordInfo
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 5bee501e-4e00-42cd-b949-e88009c3d4e8
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a activity within a workflow instance emits CustomTrackingRecord with level Info.  
   
 ## Message  
+
  TrackRecord = CustomTrackingRecord, InstanceID = %1, RecordNumber=%2, EventTime=%3,  Name=%4, ActivityName=%5, ActivityId=%6, ActivityInstanceId=%7, ActivityTypeName=%8, Data=%9, Annotations=%10, ProfileName = %11  
   
 ## Details  

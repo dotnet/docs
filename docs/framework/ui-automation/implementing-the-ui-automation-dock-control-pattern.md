@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: ea3d2212-7c8e-4dd7-bf08-73141ca2d4fb
 ---
 # Implementing the UI Automation Dock Control Pattern
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -20,7 +21,9 @@ ms.assetid: ea3d2212-7c8e-4dd7-bf08-73141ca2d4fb
 Docking Example from Visual Studio Where "Class View" Window Is DockPosition.Right and "Error List" Window Is DockPosition.Bottom  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## Implementation Guidelines and Conventions  
+
  When implementing the Dock control pattern, note the following guidelines and conventions:  
   
 - <xref:System.Windows.Automation.Provider.IDockProvider> does not expose any properties of the docking container or any properties of controls that are docked adjacent to the current control within the docking container.  
@@ -32,7 +35,9 @@ Docking Example from Visual Studio Where "Class View" Window Is DockPosition.Rig
 - On a multi-monitor system, controls should dock to the left or right side of the current monitor. If that is not possible, they should dock to the left side of the leftmost monitor or the right side of the rightmost monitor.  
   
 <a name="Required_Members_for_IDockProvider"></a>
+
 ## Required Members for IDockProvider  
+
  The following properties and methods are required for implementing the IDockProvider interface.  
   
 |Required members|Member type|Notes|  
@@ -43,7 +48,9 @@ Docking Example from Visual Studio Where "Class View" Window Is DockPosition.Rig
  This control pattern has no associated events.  
   
 <a name="Exceptions"></a>
+
 ## Exceptions  
+
  Providers must throw the following exceptions.  
   
 |Exception type|Condition|  

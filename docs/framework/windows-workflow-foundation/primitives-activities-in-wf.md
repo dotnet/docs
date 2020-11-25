@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8e9009d1-236e-4d8e-86fc-e43132bf6dfc
 ---
 # Primitives Activities in WF
+
 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] provides several system-provided activities that provide a convenient mechanism for performing common tasks.  
   
 |Activity|Description|  

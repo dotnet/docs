@@ -10,12 +10,14 @@ helpviewer_keywords:
 ms.assetid: 665b01b5-25f5-47a1-ab11-cffe8ebbf2a7
 ---
 # UI Automation Clients for Managed Code How-to Topics
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
  This section provides detailed information about implementing features of [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] in a client application.  
   
 ## In This Section  
+
  [Find a UI Automation Element Based on a Property Condition](find-a-ui-automation-element-based-on-a-property-condition.md)  
  [Navigate Among UI Automation Elements with TreeWalker](navigate-among-ui-automation-elements-with-treewalker.md)  
  [Find a UI Automation Element for a List Item](find-a-ui-automation-element-for-a-list-item.md)  

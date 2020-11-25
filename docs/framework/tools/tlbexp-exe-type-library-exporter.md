@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
 ---
 # Tlbexp.exe (Type Library Exporter)
+
 The Type Library Exporter generates a type library that describes the types defined in a common language runtime assembly.  
   
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
@@ -50,6 +51,7 @@ tlbexp assemblyName [options]
 > The command-line options for Tlbexp.exe are case-insensitive and can be supplied in any order. You only need to specify enough of the option to uniquely identify it. For example, **/n** is equivalent to **/nologo**, and **/o:** *outfile.tlb* is equivalent to **/out:** *outfile.tlb*.  
   
 ## Remarks  
+
  Tlbexp.exe generates a type library that contains definitions of the types defined in the assembly. Applications such as Visual Basic 6.0 can use the generated type library to bind to the .NET types defined in the assembly.  
   
 > [!IMPORTANT]
@@ -90,6 +92,7 @@ HRESULT StructDispSafe([out, retval] SAFEARRAY(IDispatch*)* pRetVal);
  The Type Library Exporter is supported on Microsoft Windows 2000 and later.  
   
 ## Examples  
+
  The following command generates a type library with the same name as the assembly found in `myTest.dll`.  
   
 ```console  

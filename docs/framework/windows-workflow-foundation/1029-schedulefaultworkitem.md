@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3a56b29e-f740-459d-8576-d81e58bf5a03
 ---
 # 1029 - ScheduleFaultWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 3a56b29e-f740-459d-8576-d81e58bf5a03
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a FaultWorkItem has been scheduled.  
   
 ## Message  
+
  A FaultWorkItem has been scheduled for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  The exception was propagated from Activity '%4', DisplayName: '%5', InstanceId: '%6'.  
   
 ## Details  

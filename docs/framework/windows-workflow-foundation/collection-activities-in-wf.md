@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2680c3e2-9902-4968-b98d-cab776103dbe
 ---
 # Collection Activities in WF
+
 Collection activities are used to work with collection objects in a workflow. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] has system-provided activities for adding and removing items from a collection, testing for the existence of an item in a collection, and clearing a collection. `ExistsInCollection` and `RemoveFromCollection` have an <xref:System.Activities.OutArgument%601> of type <xref:System.Boolean>, which indicates the result.  
   
 > [!IMPORTANT]
@@ -19,6 +20,7 @@ Collection activities are used to work with collection objects in a workflow. [!
 |<xref:System.Activities.Statements.RemoveFromCollection%601>|Removes an item from a specified collection and returns `true` if the item was successfully removed.|  
   
 ## Using collection activities  
+
  The following code example demonstrates how to interact with a collection declared as a workflow variable. The collection used is a <xref:System.Collections.Generic.List%601> of <xref:System.String> objects named `fruitList`.  
   
 ```csharp  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ab7d50a0-5347-4390-8445-1def4dfdff6a
 ---
 # 101 - WorkflowInstanceUnhandledExceptionRecord
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: ab7d50a0-5347-4390-8445-1def4dfdff6a
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a workflow instance emits WorkflowInstanceUnhandledExceptionRecord.  
   
 ## Message  
+
  TrackRecord = WorkflowInstanceUnhandledExceptionRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, SourceName = %5, SourceId = %6, SourceInstanceId = %7, SourceTypeName=%8, Exception=%9, Annotations= %10, ProfileName = %11  
   
 ## Details  

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "marshaling data, COM interop"
 ---
 # Marshaling Data with COM Interop
+
 COM interop provides support for both using COM objects from managed code and exposing managed objects to COM. Support for marshaling data to and from COM is extensive and almost always provides the correct marshaling behavior.  
   
  The Windows SDK includes the following COM interop tools:  
@@ -18,6 +19,7 @@ COM interop provides support for both using COM objects from managed code and ex
  The following sections link to topics that describe the processes for customizing interop wrappers when you can (or must) supply the marshaler with additional type information.  
   
 ## In This Section  
+
 [How to: Create Wrappers Manually](how-to-create-wrappers-manually.md)
 Describes how to create a COM wrapper manually in managed source code.
 
@@ -25,6 +27,7 @@ Describes how to create a COM wrapper manually in managed source code.
  Describes how to migrate managed DCOM code to WCF for the most secure solution.  
   
 ## Related Sections  
+
  [COM Data Types](/previous-versions/dotnet/netframework-4.0/sak564ww(v=vs.100))  
  Provides corresponding managed and unmanaged data types.  
   

@@ -12,11 +12,13 @@ helpviewer_keywords:
 ms.assetid: a3f752bb-8945-4e1b-8163-71def6e9f137
 ---
 # COM Interop Sample: .NET Client and COM Server
+
 This sample demonstrates how a [.NET client](#cpconcominteropsamplenetclientcomserveranchor1), built to access a [COM server](#cpconcominteropsamplenetclientcomserveranchor2), creates an instance of a COM coclass and calls class members to perform mortgage calculations.  
   
  In this example, the client creates and calls an instance of the **Loan** coclass, passes four arguments (one of those four being equal to zero) to the instance, and displays the computations. Code fragments from this sample appear throughout this section.  
   
 <a name="cpconcominteropsamplenetclientcomserveranchor1"></a>
+
 ## .NET Client  
   
 ```vb  
@@ -147,6 +149,7 @@ public class LoanApp {
 ```  
   
 <a name="cpconcominteropsamplenetclientcomserveranchor2"></a>
+
 ## COM Server  
   
 ```cpp  

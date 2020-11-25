@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: afdcd9bd-b462-4b2a-aac7-bebf9c80be81
 ---
 # Tracking
+
 This section contains samples that demonstrate workflow tracking in Windows Workflow Foundation (WF).
 
 ## In This Section
+
  [Custom Tracking](custom-tracking.md)
  Demonstrates how to create a custom tracking participant and write the contents of the tracking data to console.
 

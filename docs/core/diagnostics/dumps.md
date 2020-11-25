@@ -15,13 +15,12 @@ Dumps can be collected in a variety of ways depending on which platform you are 
 > [!NOTE]
 > Collecting a dump inside a container requires PTRACE capability, which can be added via `--cap-add=SYS_PTRACE` or `--privileged`.
 
-### Using dotnet-dump
+> [!NOTE]
+> Dumps may contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidances in mind.
 
-`dotnet-dump` is a CLI tool that allows you to collect and analyze dumps. For more information on how to use it to collect dumps with `dotnet-dump`, see [Dump collection and analysis utility](dotnet-dump.md)
+### Collecting dumps on crash
 
-### Using environment variables
-
-For some situations, it may be more desirable to use environment variables to collect dumps. For example, capturing a dump when an exception is thrown helps you identify an issue by examining the state of the app when it crashed.
+You can use environment variables to configure your application to collect a dump upon a crash. This is helpful when you want to get an understanding of why a crash happened. For example, capturing a dump when an exception is thrown helps you identify an issue by examining the state of the app when it crashed.
 
 The following table shows the environment variables you can configure for collecting dumps.
 
@@ -31,6 +30,12 @@ The following table shows the environment variables you can configure for collec
 |`COMPlus_DbgMiniDumpType`|Type of the dump to be collected. (See [Types of dumps](#types-of-dumps-in-.net) to learn more)|2 (`MiniDumpWithPrivateReadWriteMemory`)|
 |`COMPlus_DbgMiniDumpName`|Path to a file to write the dump to.|`/tmp/coredump.<pid>`|
 |`COMPlus_CreateDumpDiagnostics`|If set to 1, enable diagnostic logging of dump process.|0|
+
+### Collecting dumps at specific point in time
+
+You may want to collect a dump when the app hasn't crashed yet. For example, if you want to examine the state of an application that seems to be in a deadlock, configuring the environment variables to collect dumps on crash will not be helpful because the app is still running.
+
+To collect dump at your own request, you can use `dotnet-dump`, which is a CLI tool for collecting and analyzing dumps. For more information on how to use it to collect dumps with `dotnet-dump`, see [Dump collection and analysis utility](dotnet-dump.md).
 
 ### Types of dumps in .NET
 

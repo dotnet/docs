@@ -13,11 +13,11 @@ The [Publish-Subscribe pattern](https://docs.microsoft.com/azure/architecture/pa
 
 The primary advantage of the Publish-Subscribe pattern is `loose coupling,` sometimes referred to as [temporal decoupling](https://docs.microsoft.com/azure/architecture/guide/technology-choices/messaging#decoupling). The pattern decouples services that send messages (the **publishers**) from services that consume messages (the **subscribers**). Both publishers and subscribers are unaware of each other - both are dependent on a centralized **message broker** that distributes the messages. 
 
-Figure 4-x shows the high-level architecture of the publish/subscribe pattern.
+Figure 7-1 shows the high-level architecture of the publish/subscribe pattern.
 
 ![The Publish/Subscribe pattern](./media/pubsub-pattern.png)
 
-**Figure 4-x**. The publish/subscribe pattern.
+**Figure 7-1**. The publish/subscribe pattern.
 
 From the previous figure, note the steps of the pattern:
 
@@ -38,11 +38,11 @@ Here is where Dapr comes to the rescue. The Dapr Publish/Subscribe building bloc
 
 The Dapr Publish/Subscribe building block provides a platform agnostic API framework to send and receive messages. Your services publish messages to a named [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#topics-and-subscriptions). Your services subscribe to a topic to consume messages.
 
-Underneath the hood, your service makes a network call to a Dapr pub/sub building block, exposed as a [sidecar](https://docs.microsoft.com/azure/architecture/patterns/sidecar). This building block then makes calls into a pre-defined Dapr component that encapsulates a specific message broker product. Figure 4-x shows the Dapr pub/sub messaging stack.
+Underneath the hood, your service makes a network call to a Dapr pub/sub building block, exposed as a [sidecar](https://docs.microsoft.com/azure/architecture/patterns/sidecar). This building block then makes calls into a pre-defined Dapr component that encapsulates a specific message broker product. Figure 7-2 shows the Dapr pub/sub messaging stack.
 
 ![The Publish/Subscribe stack](./media/dapr-pub-sub-stack.png)
 
-**Figure 4-x**. The Dapr Publish/Subscribe stack.
+**Figure 7-2**. The Dapr Publish/Subscribe stack.
 
 The Dapr publish-subscribe building block can be invoked in a number of ways.
 
@@ -92,11 +92,11 @@ The response from the call contains a list of topics to which the applications w
 
 In this example, you can see the application wants to subscribe to topics `newOrder` and `newProduct`. It registers the endpoints `/orders` and `/productCatalog/products`for each, respectively. For both subscriptions, the application is binding to the Dapr component named `pubsub`. You can implement this endpoint yourself. But Dapr also provides more intuitive ways of implementing it. We'll address this later in this section.
 
-Figure 4-x presents the flow of the example.
+Figure 7-3 presents the flow of the example.
 
 ![Example Publish/Subscribe flow with Dapr](media/pubsub-dapr-pattern.png)
 
-**Figure 4-x**. Publish/subscribe flow with Dapr.
+**Figure 7-3**. Publish/subscribe flow with Dapr.
 
 From the previous figure, note the flow:
 

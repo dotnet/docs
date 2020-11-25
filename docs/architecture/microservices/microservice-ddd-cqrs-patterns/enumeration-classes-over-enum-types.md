@@ -1,7 +1,7 @@
 ---
 title: Using Enumeration classes instead of enum types
 description: .NET Microservices Architecture for Containerized .NET Applications | Lear how you can use enumeration classes, instead of enums, as a way to solve some limitations of the latter.
-ms.date: 11/20/2020
+ms.date: 11/25/2020
 ---
 # Use enumeration classes instead of enum types
 
@@ -27,10 +27,10 @@ public abstract class Enumeration : IComparable
     public override string ToString() => Name;
 
     public static IEnumerable<T> GetAll<T>() where T : Enumeration =>
-            typeof(T).GetFields(BindingFlags.Public |
-                                BindingFlags.Static |
-                                BindingFlags.DeclaredOnly)
-                      .Select(f => f.GetValue(null)).Cast<T>();
+        typeof(T).GetFields(BindingFlags.Public |
+                            BindingFlags.Static |
+                            BindingFlags.DeclaredOnly)
+                 .Select(f => f.GetValue(null)).Cast<T>();
 
     public override bool Equals(object obj)
     {
@@ -54,13 +54,15 @@ public abstract class Enumeration : IComparable
 You can use this class as a type in any entity or value object, as for the following `CardType` : `Enumeration` class:
 
 ```csharp
-public class CardType : Enumeration
+public class CardType
+    : Enumeration
 {
-    public static readonly CardType Amex = new CardType(1, nameof(Amex));
-    public static readonly CardType Visa = new CardType(2, nameof(Visa));
-    public static readonly CardType MasterCard = new CardType(3, nameof(MasterCard));
+    public static CardType Amex = new CardType(1, nameof(Amex));
+    public static CardType Visa = new CardType(2, nameof(Visa));
+    public static CardType MasterCard = new CardType(3, nameof(MasterCard));
 
-    public CardType(int id, string name) : base(id, name)
+    public CardType(int id, string name)
+        : base(id, name)
     {
     }
 }

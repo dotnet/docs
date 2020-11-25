@@ -60,7 +60,7 @@ HRESULT GetRuntimeNameByAddress(
 The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 16th slot of the virtual-method table.
 
 > [!NOTE]
-If the buffer is not large enough for the name, this method returns `S_FALSE` and sets `nameLen` to the required buffer length.
+> If the buffer is not large enough for the name, this method returns `S_FALSE` and sets `nameLen` to the required buffer length.
 
 ## Requirements
 

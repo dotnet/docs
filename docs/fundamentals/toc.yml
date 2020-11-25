@@ -131,21 +131,37 @@ items:
         displayName: tutorials, visual studio for mac, vs for mac
     - name: More tutorials
       href: ../core/tutorials/index.md
-- name: What's new
+- name: What's new in .NET
   items:
-  - name: What's new in .NET 5.0
-    href: ../core/dotnet-five.md
-  - name: What's new in .NET Core 3.1
-    href: ../core/whats-new/dotnet-core-3-1.md
-  - name: What's new in .NET Core 3.0
-    href: ../core/whats-new/dotnet-core-3-0.md
-  - name: What's new in .NET Core 2.2
+  - name: .NET 5.0
+    items:
+    - name: What's new
+      href: ../core/dotnet-five.md
+    - name: Breaking changes
+      href: ../core/compatibility/5.0.md
+  - name: .NET Core 3.1
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-core-3-1.md
+    - name: Breaking changes
+      href: ../core/compatibility/3.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 3.0
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-core-3-0.md
+    - name: Breaking changes
+      href: ../core/compatibility/3.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 2.2
     href: ../core/whats-new/dotnet-core-2-2.md
-  - name: What's new in .NET Core 2.1
-    href: ../core/whats-new/dotnet-core-2-1.md
-  - name: What's new in .NET Core 2.0
+  - name: .NET Core 2.1
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-core-2-1.md
+    - name: Breaking changes
+      href: ../core/compatibility/2.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 2.0
     href: ../core/whats-new/dotnet-core-2-0.md
-  - name: What's new in .NET Standard
+  - name: .NET Standard
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Tools and diagnostics
   items:
@@ -317,9 +333,9 @@ items:
         - name: Microsoft.NET.Sdk
           href: ../core/project-sdk/msbuild-props.md
         - name: Microsoft.NET.Sdk.Web
-          href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         - name: Microsoft.NET.Sdk.Razor
-          href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Target frameworks
       href: ../standard/frameworks.md
     - name: Additions to the csproj format

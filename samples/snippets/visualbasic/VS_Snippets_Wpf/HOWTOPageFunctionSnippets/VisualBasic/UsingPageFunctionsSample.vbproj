@@ -18,11 +18,8 @@
     <StartProgram>$(WINDIR)\System32\PresentationHost.exe</StartProgram>
     <ApplicationExtension>.xbap</ApplicationExtension>
     <StartArguments>-debug "$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName)$(ApplicationExtension)"</StartArguments>
-    <SignManifests>True</SignManifests>
     <BootstrapperEnabled>false</BootstrapperEnabled>
     <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
-    <ManifestKeyFile>HOWTOPageFunctionSnippets_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>2AB14A668E88FA1350005A43E1B748B8B2936E66</ManifestCertificateThumbprint>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -104,7 +101,6 @@
       <SubType>Code</SubType>
       <DependentUpon>GetStringPageFunction.xaml</DependentUpon>
     </Compile>
-    <None Include="HOWTOPageFunctionSnippets_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <AppDesigner Include="My Project\" />
   </ItemGroup>

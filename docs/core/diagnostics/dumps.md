@@ -6,24 +6,24 @@ ms.date: 10/12/2020
 
 # Dumps
 
-A dump is a file that contains snapshot of the process at the time they were created and can be useful for examining the state of your application for debugging. Dumps can be used for post-mortem debugging of your .NET application when it is difficult to attach a debugger to it (for example, when the app is running in production). Using dumps allows you to capture the state of the problematic process and examine it without having to stop it from running while being analyzed.
+A dump is a file that contains snapshot of the process at the time it was created and can be useful for examining the state of your application. Dumps can be used for post-mortem debugging of your .NET application when it is difficult to attach a debugger to it such as production or CI environments. Using dumps allows you to capture the state of the problematic process and examine it without having to stop the application.
 
 ## Collect dumps
 
 Dumps can be collected in a variety of ways depending on which platform you are running your app on.
 
 > [!NOTE]
-> Collecting a dump inside a container requires PTRACE capability which can be added via `--cap-add=SYS_PTRACE` or `--privileged`.
+> Collecting a dump inside a container requires PTRACE capability, which can be added via `--cap-add=SYS_PTRACE` or `--privileged`.
 
 ### Using dotnet-dump
 
-`dotnet-dump` is a CLI tool that allows you to collect and analyze dumps. For more information on how to use it to collect dumps with `dotnet-dump`, refer to [its documentation](dotnet-dump.md)
+`dotnet-dump` is a CLI tool that allows you to collect and analyze dumps. For more information on how to use it to collect dumps with `dotnet-dump`, see [Dump collection and analysis utility](dotnet-dump.md)
 
 ### Using environment variables
 
-For some situations, it may be more desirable to use environment variables to collect dumps. For example, capturing a dump when an exception is thrown helps you identify issue by examining the state of the app when it crashed.
+For some situations, it may be more desirable to use environment variables to collect dumps. For example, capturing a dump when an exception is thrown helps you identify an issue by examining the state of the app when it crashed.
 
-The table below shows the environment variables you can configure for collecting dumps.
+The following table shows the environment variables you can configure for collecting dumps.
 
 |Environment variable|Description|Default value|
 |-------|---------|---|
@@ -34,7 +34,7 @@ The table below shows the environment variables you can configure for collecting
 
 ### Types of dumps in .NET
 
-You can collect different types of the dump depending on the purpose. This can be configured with the `COMPlus_DbgMiniDumpType` when using environment variable, or the `--type` flag when you are using `dotnet-dump`. Refer to the table below on what types of dumps you can collect in .NET.
+You can collect different types of the dump depending on the purpose. This can be configured with the `COMPlus_DbgMiniDumpType` when using environment variable, or the `--type` flag when you are using `dotnet-dump`. The following table shows the types of dumps you can collect in .NET.
 
 |Value|Name|Description|
 |-----|----|-----------|
@@ -47,7 +47,7 @@ You can collect different types of the dump depending on the purpose. This can b
 
 Dumps can be analyzed using [`dotnet-dump`](dotnet-dump.md).
 
-## See More
+## See also
 
 Learn more about how you can leverage dumps to help diagnosing problems in your .NET application.
 

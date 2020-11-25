@@ -7,29 +7,29 @@ ms.date: 11/19/2020
 
 # Generate self-signed certificates with the .NET CLI
 
-When using self-signed certificates, there's different ways to create and use them for development and testing scenarios.  In this guide, you'll cover using self-signed certificates with `dotnet dev-certs`, and other options like `PowerShell` and `OpenSSL`.
+When using self-signed certificates, there are different ways to create and use them for development and testing scenarios.  In this guide, you'll cover using self-signed certificates with `dotnet dev-certs`, and other options like `PowerShell` and `OpenSSL`.
 
 You can then validate that the certificate will load using an example such as an [ASP.NET Core app](https://github.com/dotnet/dotnet-docker/blob/master/samples/run-aspnetcore-https-development.md) hosted in a container.
 
 ## Prerequisites
 
-In the sample, you can utilize either `.netcore 3.1` or `.net 5`.
+In the sample, you can utilize either .NET Core 3.1 or .NET 5.
 
-For `dotnet dev-certs`, be sure to have the appropriate version of `dotnet` installed:
+For `dotnet dev-certs`, be sure to have the appropriate version of .NET installed:
 
-* [Install dotnet on Windows](../install/windows.md)
-* [Install dotnet on Linux](../install/linux.md)
-* [Install dotnet on macOS](../install/macos.md)
+* [Install .NET on Windows](../install/windows.md)
+* [Install .NET on Linux](../install/linux.md)
+* [Install .NET on macOS](../install/macos.md)
 
 This sample requires [Docker 17.06](https://docs.docker.com/release-notes/docker-ce) or later of the [Docker client](https://www.docker.com/products/docker).
 
 ## Prepare sample app
 
-You'll need to prepare the sample app depending on which runtime you'd like to use for testing.
+You'll need to prepare the sample app depending on which runtime you'd like to use for testing, either [.NET Core 3.1](#net-core-31-sample-app) or [.NET 5](#net-5-sample-app).
 
-For this guide, you'll be using a [sample app](https://hub.docker.com/_/microsoft-dotnet-samples) and make changes where appropriate.
+For this guide, you'll use a [sample app](https://hub.docker.com/_/microsoft-dotnet-samples) and make changes where appropriate.
 
-### Prepare .NET Core 3.1 sample app
+### .NET Core 3.1 sample app
 
 Get the sample app.
 
@@ -56,7 +56,7 @@ Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 </Project>
 ```
 
-Modify the Dockerfile to make sure the runtime points to .netcore 3.1:
+Modify the Dockerfile to make sure the runtime points to .NET Core 3.1:
 
 ```Dockerfile
 # https://hub.docker.com/_/microsoft-dotnet-core
@@ -92,13 +92,13 @@ Build the container for testing locally.
 docker build -t aspnetapp:my-sample -f Dockerfile .
 ```
 
-### Prepare .NET 5 sample app
+### .NET 5 sample app
 
-For this guide, the [sample aspnetapp](https://hub.docker.com/_/microsoft-dotnet-samples) should be checked for .net 5.
+For this guide, the [sample aspnetapp](https://hub.docker.com/_/microsoft-dotnet-samples) should be checked for .NET 5.
 
-Check sample app [Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/Dockerfile) is using .net 5.
+Check sample app [Dockerfile](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/Dockerfile) is using .NET 5.
 
-Depending on the host os, the aspnet runtime may need to be updated. For example, changing from `mcr.microsoft.com/dotnet/aspnet:5.0-nanoservercore-2009 AS runtime` to `mcr.microsoft.com/dotnet/aspnet:5.0-windowsservercore-ltsc2019 AS runtime` in the Dockerfile will help with targeting the appropriate Windows runtime.
+Depending on the host OS, the ASP.NET runtime may need to be updated. For example, changing from `mcr.microsoft.com/dotnet/aspnet:5.0-nanoservercore-2009 AS runtime` to `mcr.microsoft.com/dotnet/aspnet:5.0-windowsservercore-ltsc2019 AS runtime` in the Dockerfile will help with targeting the appropriate Windows runtime.
 
 For example, this will help with testing the certificates on Windows:
 
@@ -142,7 +142,7 @@ Make sure the `aspnetapp.csproj` includes the appropriate target framework:
 ```
 
 > [!NOTE]
-> If you're looking to use dotnet publish parameters to *trim* the deployment, you should make sure that the appropriate dependencies are included for supporting SSL certificates.
+> If you want to use `dotnet publish` parameters to *trim* the deployment, make sure that the appropriate dependencies are included for supporting SSL certificates.
 Update the [dotnet-docker\samples\aspnetapp\aspnetapp.csproj](https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/aspnetapp/aspnetapp.csproj) to ensure that the appropriate assemblies are included in the container. For reference, check how to update the .csproj file to [support ssl certificates](../deploying/trim-self-contained.md#support-for-ssl-certificates) when using trimming for self-contained deployments.
 
 Make sure you're pointing to the sample app.
@@ -157,7 +157,15 @@ Build the container for testing locally.
 docker build -t aspnetapp:my-sample -f Dockerfile .
 ```
 
-## Create a self-signed certificate with dotnet dev-certs
+## Create a self-signed certificate
+
+You can create a self-signed certificate:
+
+- [With dotnet dev-certs](#with-dotnet-dev-certs)
+- [With PowerShell](#with-powershell)
+- [With OpenSSL](#with-openssl)
+
+### With dotnet dev-certs
 
 You can use `dotnet dev-certs` to work with self-signed certificates. This example uses a PowerShell console.
 
@@ -186,7 +194,7 @@ docker run --rm -it -p 8000:80 -p 8001:443 -e ASPNETCORE_URLS="https://+;http://
 
 Once the application starts, navigate to `https://localhost:8001` in your web browser.
 
-### Clean up
+#### Clean up
 
 If the secrets and certificates are not in use, be sure to clean them up.
 
@@ -195,7 +203,7 @@ dotnet user-secrets remove "Kestrel:Certificates:Development:Password" -p aspnet
 dotnet dev-certs https --clean
 ```
 
-## Create a self-signed certificate with PowerShell
+### With PowerShell
 
 You can use PowerShell to generate self-signed certificates. The [PKI Client](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps&preserver-view=true) can be used to generate a self-signed certificate.
 
@@ -233,7 +241,7 @@ Once the application is up, navigate to contoso.com:8001 in a browser.
 
 Be sure that the host entries are updated for `contoso.com` to answer on  the appropriate ip address (for example 127.0.0.1). If the certificate isn't recognized, make sure that the certificate that is loaded with the container is also trusted on the host, and that there's appropriate SAN / DNS entries for `contoso.com`.
 
-### Clean up
+#### Clean up
 
 ```powershell
 $cert | Remove-Item
@@ -241,7 +249,7 @@ Get-ChildItem $certFilePath | Remove-Item
 $rootCert | Remove-item
 ```
 
-## Create a self-signed certificate with OpenSSL
+### With OpenSSL
 
 You can use [OpenSSL](https://www.openssl.org/) to create self-signed certificates. This example will use WSL / Ubuntu and a bash shell with `OpenSSL`.
 
@@ -331,7 +339,7 @@ Once the application is up, navigate to contoso.com:8001 in a browser.
 
 Be sure that the host entries are updated for `contoso.com` to answer on  the appropriate ip address (for example 127.0.0.1). If the certificate isn't recognized, make sure that the certificate that is loaded with the container is also trusted on the host, and that there's appropriate SAN / DNS entries for `contoso.com`.
 
-### Clean up
+#### Clean up
 
 Be sure to clean up the self-signed certificates once done testing.
 

@@ -145,16 +145,13 @@
   </PropertyGroup>
   <!--
     This section enables pre- and post-build steps. However, in VSTO use
-    MSBuild tasks instead of these properties.       
+    MSBuild tasks instead of these properties.
   -->
   <PropertyGroup>
     <PreBuildEvent>
     </PreBuildEvent>
     <PostBuildEvent>
     </PostBuildEvent>
-    <SignManifests>true</SignManifests>
-    <ManifestKeyFile>OfficeWalkthroughCS_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>878CD49273E393C9A699C6F5162F98E27D45538F</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!--
     This section specifies references for the project.
@@ -204,7 +201,7 @@
 
     A "Compile" element specifies a source file to compile.
     An "EmbeddedResource" element specifies an .resx file for embedded resources.
-    A "None" element specifies a file that is not to be passed to the compiler (for instance, 
+    A "None" element specifies a file that is not to be passed to the compiler (for instance,
     a text file or XML file).
     The "AppDesigner" element specifies the directory where the application properties files
     can be found.
@@ -224,7 +221,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="OfficeWalkthroughCS_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

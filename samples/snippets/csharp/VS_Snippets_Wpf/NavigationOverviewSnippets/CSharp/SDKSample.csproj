@@ -15,7 +15,6 @@
     <StartProgram>$(WINDIR)\System32\PresentationHost.exe</StartProgram>
     <ApplicationExtension>.xbap</ApplicationExtension>
     <StartArguments>-debug "$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName)$(ApplicationExtension)"</StartArguments>
-    <SignManifests>True</SignManifests>
     <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
     <HostInBrowser>true</HostInBrowser>
     <InstallFrom>Web</InstallFrom>
@@ -24,8 +23,6 @@
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>Publish\</PublishUrl>
-    <ManifestKeyFile>SDKSample_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>DD4462739E27D86E6A1FCC11107636D21B6B8364</ManifestCertificateThumbprint>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <ProductVersion>10.0.20821</ProductVersion>
@@ -404,7 +401,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SDKSample_TemporaryKey.pfx" />
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ---
 title: "IXCLRDataProcess::GetRuntimeNameByAddress Method"
-ms.date: "01/16/2019"
+ms.date: "4/27/2020"
 api.name:
   - "IXCLRDataProcess::GetRuntimeNameByAddress Method"
 api.location:
@@ -38,10 +38,10 @@ HRESULT GetRuntimeNameByAddress(
 ## Parameters
 
 `address`\
-[in] A CLRDATA_ADDRESS that stores the virtual memory address.
+[in] A `CLRDATA_ADDRESS` value that represents a code address.
 
 `flags`\
-[in] Set to '0'
+[in] Set to '0'.
 
 `bufLen`\
 [in] The length of the buffer.
@@ -50,23 +50,23 @@ HRESULT GetRuntimeNameByAddress(
 [out] A pointer to the number of characters returned.
 
 `namBuf`\
-[out, size_is(`bufLen`)] The input buffer of length `bufLen`.
+[out, size_is(`bufLen`)] The input buffer of length `bufLen` that stores the runtime name.
 
 `displacement`\
-[out] A pointer to the code offset.
+[out] A `CLRDATA_ADDRESS` pointer to the code offset of the returned symbol.
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 16th slot of the virtual method table.
+The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 16th slot of the virtual-method table.
 
 > [!NOTE]
-Returns S_FALSE if the buffer is not large enough for the name, and sets nameLen to be the buffer length needed.
+If the buffer is not large enough for the name, this method returns `S_FALSE` and sets `nameLen` to the required buffer length.
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
-**Header:** None
-**Library:** None
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md)\
+**Header:** None\
+**Library:** None\
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also

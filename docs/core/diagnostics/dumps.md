@@ -28,7 +28,7 @@ The following table shows the environment variables you can configure for collec
 |Environment variable|Description|Default value|
 |-------|---------|---|
 |`COMPlus_DbgEnableMiniDump`|If set to 1, enable core dump generation.|0|
-|`COMPlus_DbgMiniDumpType`|Type of the dump to be collected. (See [Types of dumps](#types-of-dumps-in-.net) to learn more)|2 (`MiniDumpWithPrivateReadWriteMemory`)|
+|`COMPlus_DbgMiniDumpType`|Type of dump to be collected. For more information, see [Types of dumps](#types-of-dumps-in-.net).|2 (`MiniDumpWithPrivateReadWriteMemory`)|
 |`COMPlus_DbgMiniDumpName`|Path to a file to write the dump to.|`/tmp/coredump.<pid>`|
 |`COMPlus_CreateDumpDiagnostics`|If set to 1, enable diagnostic logging of dump process.|0|
 

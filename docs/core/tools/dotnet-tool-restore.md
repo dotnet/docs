@@ -9,7 +9,7 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet tool restore` - Installs on your machine the .NET local tools that are in scope for the current directory.
+`dotnet tool restore` - Installs the .NET local tools that are in scope for the current directory.
 
 ## Synopsis
 

@@ -37,7 +37,7 @@ The sidecar next forwards the request to the service B sidecar. The service B si
 Because the calls flow through sidecars, Dapr can inject some useful cross-cutting behaviors:
 
 - automatically retry calls upon failure.
-- encrypt traffic using automatic mutual TLS.
+- make calls between services secure with mutual (mTLS) authentication, including automatic certificate rollover.
 - control what operations clients can do using access control policies.
 - capture traces and metrics for all calls between services to provide insights and diagnostics.
 
@@ -58,9 +58,7 @@ In the next section, we'll use the native .NET SDK to make service invocation ca
 
 ### Using the .NET SDK
 
-The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with a simple and language-specific way to interact with Dapr. For most Dapr interactions, you use the .NET `DaprClient` class.
-
-For example, calling the `InvokeMethodAsync` method from `DaprClient` invokes a remote method. In the following example, we submit an order by calling the `order/submit` method of the `orderservice` application:
+You can use the `InvokeMethodAsync` method from `DaprClient` to invoke a remote method. In the following example, we submit an order by calling the `order/submit` method of the `orderservice` application:
 
 ``` csharp
 var result = await daprClient.InvokeMethodAsync<Order, SubmitOrderResult>(
@@ -317,7 +315,7 @@ The eShopOnDapr reference architecture shows how we improved the original eShopO
 
 ### References
 
-- [Dapr Service Invocation](https://github.com/dapr/docs/blob/master/concepts/service-invocation/README.md)
+- [Dapr Service Invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/)
 
 - [Monitoring distributed cloud-native applications](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/observability-patterns)
 

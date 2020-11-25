@@ -191,24 +191,36 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/compatibility/2.0-2.1.md",
+            "redirect_url": "/dotnet/core/compatibility/2.1"
+        },
+        {
+            "source_path": "docs/core/compatibility/2.2-3.0.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path": "docs/core/compatibility/3.0.6-3.0.7.md",
-            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path": "docs/core/compatibility/3.0.7-3.0.8.md",
-            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path": "docs/core/compatibility/3.0.8-3.0.9.md",
-            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path": "docs/core/compatibility/3.0.9-3.0rc1.md",
-            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
+            "source_path": "docs/core/compatibility/3.0-3.1.md",
+            "redirect_url": "/dotnet/core/compatibility/3.1"
         },
         {
             "source_path": "docs/core/compatibility/3.1-5.0.md",
-            "redirect_url": "/dotnet/core/compatibility/breaking-changes"
+            "redirect_url": "/dotnet/core/compatibility/5.0"
         },
         {
             "source_path": "docs/core/compatibility/code-analysis.md",

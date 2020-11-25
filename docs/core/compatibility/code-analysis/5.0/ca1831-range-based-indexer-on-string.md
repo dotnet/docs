@@ -35,7 +35,7 @@ ReadOnlySpan<char> slice = str.AsSpan()[1..3];
   ReadOnlySpan<char> slice = str.AsSpan()[1..3];
   ```
 
-- If you don't want to change your code, you can disable the rule by setting its severity to `suggestion` or `none`. For more information, see [Configure code analysis rules](../../../../fundamentals/productivity/configure-code-analysis-rules.md).
+- If you don't want to change your code, you can disable the rule by setting its severity to `suggestion` or `none`. For more information, see [Configure code analysis rules](../../../../fundamentals/code-analysis/configuration-options.md).
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../project-sdk/msbuild-props.md#enablenetanalyzers).
 

@@ -52,7 +52,7 @@ Refer to the following figures as needed:
 
 Complete the following steps in your preferred development environment:
 
-1. Create a new .NET Console App using either the [.NET CLI](/dotnet/core/tools/dotnet-new) or [Visual Studio](/dotnet/core/tutorials/with-visual-studio). Name it *LcdTutorial*.
+1. Create a new .NET Console App using either the [.NET CLI](../../core/tools/dotnet-new.md) or [Visual Studio](../../core/tutorials/with-visual-studio.md). Name it *LcdTutorial*.
 
     ```dotnetcli
     dotnet new console -o LcdTutorial
@@ -65,7 +65,7 @@ Complete the following steps in your preferred development environment:
 
     In the preceding code:
 
-    - A [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in a new `I2cConnectionSettings` with the `busId` and `deviceAddress` parameters. This `I2cDevice` represents the I2C bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations) creates an instance of `I2cDevice` by calling `I2cDevice.Create` and passing in a new `I2cConnectionSettings` with the `busId` and `deviceAddress` parameters. This `I2cDevice` represents the I2C bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
 
         > [!WARNING]
         > The device address for the GPIO expander depends on the chip used by the manufacturer. GPIO expanders equipped with a PCF8574 use the address `0x27`, while those using PCF8574A chips use `0x3F`. Consult your LCD's documentation.

@@ -6,7 +6,7 @@ ms.date: 10/12/2020
 
 # Dumps
 
-A dump is a file that contains a snapshot of the process at the time it was created and can be useful for examining the state of your application. Dumps can be used for post-mortem debugging of your .NET application when it is difficult to attach a debugger to it such as production or CI environments. Using dumps allows you to capture the state of the problematic process and examine it without having to stop the application.
+A dump is a file that contains a snapshot of the process at the time it was created and can be useful for examining the state of your application. Dumps can be used to debug your .NET application when it is difficult to attach a debugger to it such as production or CI environments. Using dumps allows you to capture the state of the problematic process and examine it without having to stop the application.
 
 ## Collect dumps
 

@@ -1449,6 +1449,8 @@
     - name: IXCLRDataProcess Interface
       href: ixclrdataprocess-interface.md
       items:
+      - name: GetRuntimeNameByAddress
+        href: ixclrdataprocess-getruntimenamebyaddress-method.md
       - name: GetAppDomainByUniqueId
         href: ixclrdataprocess-getappdomainbyuniqueid-method.md
       - name: StartEnumModules

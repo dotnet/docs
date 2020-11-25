@@ -62,6 +62,8 @@ The following terms often refer to the same collection of APIs that BCL refers t
 - [runtime libraries](#runtime)
 - [shared framework](#shared-framework)
 
+hi
+
 ## CLR
 
 Common Language Runtime.

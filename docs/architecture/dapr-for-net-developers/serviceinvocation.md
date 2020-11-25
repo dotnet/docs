@@ -30,7 +30,7 @@ Let's start with an example. Consider two services, Service A and Service B. Ser
 
 **Figure 4-x**. How Dapr service invocation works.
 
-The sidecar takes care of the rest. It first uses the pluggable service discovery mechanism to resolve the address of service B. The self-hosted mode uses mDNS to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.
+The sidecar takes care of the rest. It first uses the pluggable name resolution component to resolve the address of service B. The self-hosted mode uses mDNS to find it. When running in Kubernetes mode, the Kubernetes name resolution component uses the Kubernetes DNS service to determine the address.
 
 The sidecar next forwards the request to the service B sidecar. The service B sidecar makes the actual `catalog/items` request against the service B API. The response returned by service B will flow back through the sidecars to service A.
 
@@ -98,7 +98,7 @@ var result = await daprClient.InvokeMethodAsync<IEnumerable<CatalogItem>>(
             ["pagesize"] = "10"
         }
     });
-``` 
+```
 
 ## Reference case: eShopOnDapr
 

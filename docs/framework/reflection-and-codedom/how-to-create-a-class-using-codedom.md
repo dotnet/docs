@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 0ceb70fe-36e1-49bb-922b-e9f615c20a14
 ---
 # How to: Create a Class Using CodeDOM
+
 The following procedures illustrate how to create and compile a CodeDOM graph that generates a class containing two fields, three properties, a method, a constructor, and an entry point.  
   
 1. Create a console application that will use CodeDOM code to generate the source code for a class.  
@@ -88,6 +89,7 @@ The following procedures illustrate how to create and compile a CodeDOM graph th
 2. Compile and execute the generating class.  
   
 ## Example  
+
  The following code example shows the code from the preceding steps.  
   
  [!code-csharp[CodeDOM Class Sample#1](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDOM Class Sample/CS/program.cs#1)]

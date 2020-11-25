@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 1432aa2d-bd83-4346-bf3b-a1b7920e2aa9
 ---
 # How to: Load Assemblies into an Application Domain
+
 There are several ways to load an assembly into an application domain. The recommended way is to use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.Load%2A> method of the <xref:System.Reflection.Assembly?displayProperty=nameWithType> class. Other ways assemblies can be loaded include:  
   
 - The <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class loads an assembly given its file location. Loading assemblies with this method uses a different load context.  
@@ -33,6 +34,7 @@ There are several ways to load an assembly into an application domain. The recom
  You can specify the way the just-in-time (JIT) compiled code from loaded assemblies is shared between application domains. For more information, see [Application domains and assemblies](application-domains.md#application-domains-and-assemblies).  
   
 ## Example  
+
  The following code loads an assembly named "example.exe" or "example.dll" into the current application domain, gets a type named `Example` from the assembly, gets a parameterless method named `MethodA` for that type, and executes the method. For a complete discussion on obtaining information from a loaded assembly, see [Dynamically Loading and Using Types](../reflection-and-codedom/dynamically-loading-and-using-types.md).  
   
  [!code-cpp[System.AppDomain.Load#2](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.appdomain.load/cpp/source2.cpp#2)]

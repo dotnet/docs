@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: c5ac9920-5b6e-4dc9-bf2d-1f6f8ad3b0bf
 ---
 # Marshaling Different Types of Arrays
+
 An array is a reference type in managed code that contains one or more elements of the same type. Although arrays are reference types, they are passed as In parameters to unmanaged functions. This behavior is inconsistent with way managed arrays are passed to managed objects, which is as In/Out parameters. For additional details, see [Copying and Pinning](copying-and-pinning.md).  
   
  The following table lists marshaling options for arrays and describes their usage.  
@@ -25,6 +26,7 @@ An array is a reference type in managed code that contains one or more elements 
 |Of structures with strings.|Passes an array of structures that contain only strings as an In/Out parameter. Members of the array can be changed.|  
   
 ## Example  
+
  This sample demonstrates how to pass the following types of arrays:  
   
 - Array of integers by value.  
@@ -100,10 +102,12 @@ typedef struct _MYPERSON
  The `NativeMethods` class contains a set of methods called by the `App` class. For specific details about passing arrays, see the comments in the following sample. An array, which is a reference type, is passed as an In parameter by default. For the caller to receive the results, **InAttribute** and **OutAttribute** must be applied explicitly to the argument containing the array.  
   
 ### Declaring Prototypes  
+
  [!code-csharp[Conceptual.Interop.Marshaling#31](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/arrays.cs#31)]
  [!code-vb[Conceptual.Interop.Marshaling#31](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/arrays.vb#31)]  
   
 ### Calling Functions  
+
  [!code-csharp[Conceptual.Interop.Marshaling#32](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/arrays.cs#32)]
  [!code-vb[Conceptual.Interop.Marshaling#32](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/arrays.vb#32)]  
   

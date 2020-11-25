@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 28a3f509-07e2-4dbe-81df-874c5e969cc4
 ---
 # MDbg.exe (.NET Framework Command-Line Debugger)
+
 The NET Framework Command-Line Debugger helps tools vendors and application developers find and fix bugs in programs that target the .NET Framework common language runtime. This tool uses the runtime debugging API to provide debugging services. You can use MDbg.exe to debug only managed code; there is no support for debugging unmanaged code.  
   
 This tool is available through NuGet. For installation information, see [MDbg 0.1.0](https://www.nuget.org/packages/MDbg/0.1.0). To run the tool, use the Package Manager Console. For more information about how to use the Package Manager Console, see the [Package Manager Console](/nuget/tools/package-manager-console) article.
@@ -21,6 +22,7 @@ MDbg [ProgramName[arguments]] [options]
 ```  
   
 ## Commands  
+
  When you are in the debugger (as indicated by the **mdbg>** prompt), type one of the commands described in the next section:  
   
  **command** [*arguments*]  
@@ -79,6 +81,7 @@ MDbg [ProgramName[arguments]] [options]
 |**x** [`-c`*numSymbols*] [*module*[`!`*pattern*]]|Displays functions that match the `pattern` for a module.<br /><br /> If *numSymbols* is specified, the output is limited to the specified number. If `!` (indicating a regular expression) is not specified for *pattern*, all functions are displayed. If *module* is not provided, all loaded modules are displayed. Symbols (*~#*) can be used to set breakpoints using the **break** command.|  
   
 ## Remarks  
+
  Compile the application to be debugged by using compiler-specific flags that cause your compiler to generate debugging symbols. Refer to your compiler's documentation for more information about these flags. You can debug optimized applications, but some debugging information will be missing. For example, many local variables will not be visible and source lines will be inaccurate.  
   
  After you compile your application, type **mdbg** at the command prompt to start a debugging session, as shown in the following example.  

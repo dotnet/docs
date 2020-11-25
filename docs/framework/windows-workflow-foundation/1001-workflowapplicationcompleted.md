@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7a2ab59a-cf66-437a-b01e-f8f7268a3f7a
 ---
 # 1001 - WorkflowApplicationCompleted
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 7a2ab59a-cf66-437a-b01e-f8f7268a3f7a
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a workflow application has completed in the Closed state.  
   
 ## Message  
+
  WorkflowInstance Id: '%1' has completed in the Closed state.  
   
 ## Details  

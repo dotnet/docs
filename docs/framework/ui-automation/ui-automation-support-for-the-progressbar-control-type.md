@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
 ---
 # UI Automation Support for the ProgressBar Control Type
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -19,7 +20,9 @@ ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the ProgressBar control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all list controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
 <a name="Required_UI_Automation_Tree_Structure"></a>
+
 ## Required UI Automation Tree Structure  
+
  The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to progress bar controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
 |Control View|Content View|  
@@ -29,7 +32,9 @@ ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
  The progress bar controls do not have any children in the control or content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.  
   
 <a name="Required_UI_Automation_Properties"></a>
+
 ## Required UI Automation Properties  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to progress bar controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Property|Value|Notes|  
@@ -46,7 +51,9 @@ ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The progress bar control is always included in the control view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.|  
   
 <a name="Required_UI_Automation_Control_Patterns_and_Properties"></a>
+
 ## Required UI Automation Control Patterns and Properties  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by progress bar controls. For more information on control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
 |Control Pattern/Pattern Property|Support/Value|Notes|  
@@ -61,7 +68,9 @@ ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
 |<xref:System.Windows.Automation.Provider.IRangeValueProvider.LargeChange%2A>|NaN|This property is not required because progress bar controls are read-only.|  
   
 <a name="Required_UI_Automation_Events"></a>
+
 ## Required UI Automation Events  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all progress bar controls. For more information on events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Event|Support|Notes|  

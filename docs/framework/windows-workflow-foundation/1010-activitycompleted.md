@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d256284e-3fd2-4c33-82f4-abb617575706
 ---
 # 1010 - ActivityCompleted
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: d256284e-3fd2-4c33-82f4-abb617575706
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates an activity has completed execution.  
   
 ## Message  
+
  Activity '%1', DisplayName: '%2', InstanceId: '%3' has completed in the '%4' state.  
   
 ## Details  

@@ -5,12 +5,15 @@ ms.date: "03/30/2017"
 ms.assetid: c933aca2-4cd0-4ff1-9df9-267143f25a6f
 ---
 # Certificate Selection and Validation
+
 The <xref:System.Net> classes support several ways to select and validate <xref:System.Security.Cryptography.X509Certificates> for Secure Socket Layer (SSL) connections. A client can select one or more certificates to authenticate itself to a server. A server can require that a client certificate have one or more specific attributes for authentication.  
   
 ## Definition  
+
  A certificate is an ASCII byte stream that contains a public key, attributes (such as version number, serial number, and expiration date) and a digital signature from a Certificate Authority. Certificates are used to establish an encrypted connection or to authenticate a client to a server.  
   
 ## Client Certificate Selection and Validation  
+
  A client can select one or more certificates for a specific SSL connection. Client certificates can be associated with the SSL connection to a web server or an SMTP mail server. A client adds certificates to a collection of <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class objects. Using email as an example, the certificate collection is an instance of a <xref:System.Security.Cryptography.X509Certificates.X509CertificateCollection>) associated with the <xref:System.Net.Mail.SmtpClient.ClientCertificates%2A> property of the <xref:System.Net.Mail.SmtpClient> class. The <xref:System.Net.HttpWebRequest> class has a similar <xref:System.Net.HttpWebRequest.ClientCertificates%2A> property.  
   
  The primary difference between the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> and the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class is that the private key must reside in the certificate store for the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> class.  
@@ -22,6 +25,7 @@ The <xref:System.Net> classes support several ways to select and validate <xref:
  A remote server can verify that a client certificate is valid, current, and signed by the appropriate Certificate Authority. A delegate can be added to the <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A> to enforce certificate validation.  
   
 ## Client Certificate Selection  
+
  The .NET Framework selects the client certificate to present to the server in the following manner:  
   
 1. If a client certificate was presented previously to the server, the certificate is cached when first presented and is reused for subsequent client certificate requests.  
@@ -31,6 +35,7 @@ The <xref:System.Net> classes support several ways to select and validate <xref:
 3. If this is the first challenge for a client certificate, the Framework enumerates the certificates in <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class objects associated with the connection, looking for a match between the list of certificate issuers provided by the server and the client certificate issuer name. The first certificate that matches is sent to the server. If no certificate matches or the certificate collection is empty, then an anonymous credential is sent to the server.  
   
 ## Tools for Certificate Configuration  
+
  A number of tools are available for client and server certificate configuration.  
   
  The *Winhttpcertcfg.exe* tool can be used to configure client certificates. The *Winhttpcertcfg.exe* tool is provided as one of the tools with the Windows Server 2003 Resource Kit. This tool is also available as a download as part of the Windows Server 2003 Resource Kit Tools at [www.microsoft.com](https://www.microsoft.com).  

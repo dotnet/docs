@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 2a69f32e-007f-47d0-ab96-535311641428
 ---
 # Using and Creating Activities
+
 The topics in this section describe the system-provided activities available in Windows Workflow Foundation (WF).  
   
 ## In This Section  
+
  [Built-In Activity Library](net-framework-4-5-built-in-activity-library.md)  
  Describes the system-provided activities available in [!INCLUDE[wf1](../../../includes/wf1-md.md)].  
   

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 0229efde-19ac-4bdc-a187-c6227a7bd1a5
 ---
 # Programming Model Item Tree
+
 This sample demonstrates how to navigate the <xref:System.Activities.Presentation.Model.ModelItem> tree using declarative data binding from the Windows Presentation Foundation (WPF) Tree View.
 
 ## Sample Details
+
  The <xref:System.Activities.Presentation.Model.ModelItem> tree is the abstraction that is used by the Windows Workflow Designer infrastructure to expose the data about the underlying instance being edited. The following illustration is a depiction of the various layers of infrastructure within the Workflow Designer.
 
  ![Diagram that shows the Workflow Designer architecture.](./media/programming-model-item-tree/workflow-designer-architecture.jpg)

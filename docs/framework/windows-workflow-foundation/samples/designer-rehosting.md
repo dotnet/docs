@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b676ad31-5f64-4d84-9a36-b4d7113a2f4d
 ---
 # Designer Rehosting
+
 Designer rehosting is a common scenario that refers to hosting the workflow design canvas inside of a custom application. The hosting application most people are familiar with is Visual Studio, however there are a number of scenarios where showing the workflow designer in an application may be useful:  
   
 - Monitoring applications (allowing an end user to visualize the process, as well as runtime data about the process such as the currently active state, aggregate execution time data, or other information about an instance of the workflow).  
@@ -17,6 +18,7 @@ Designer rehosting is a common scenario that refers to hosting the workflow desi
 - Using the rehosted toolbox and property grid as well.  
   
 ## Rehosting the designer  
+
  This sample shows how to create the WPF layout to contain the designer, seen in the following grid layout (Toolbox code omitted for space concerns). Note the naming of the borders which contain the designer and property grid.  
   
 ```xaml  
@@ -52,6 +54,7 @@ protected override void OnInitialized(EventArgs e)
 ```  
   
 ## Using the rehosted toolbox  
+
  This sample uses the rehosted toolbox control declaratively in XAML. Note that in code, one can pass a type to the <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper> constructor.  
   
 ```xaml  

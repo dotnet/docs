@@ -13,12 +13,14 @@ helpviewer_keywords:
 ms.assetid: a03af4d9-2771-43cc-b07b-d468dca23190
 ---
 # Register a Client-Side Provider Assembly
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
  This topic shows how to register a DLL that contains client-side UI Automation providers.  
   
 ## Example  
+
  The following example shows how to register an assembly that contains a provider for a console window.  
   
  [!code-csharp[UIAClientSideProvider_snip#102](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClientSideProvider_snip/CSharp/CSClientProgram.cs#102)]

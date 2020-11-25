@@ -31,6 +31,7 @@ If you have an existing *.editorconfig* file for editor settings such as indent 
 > Visual Studio provides an *.editorconfig* item template that makes is easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
 
 ### Example
+
 Following is an example EditorConfig file to configure options and rule severity:
 
 ```ini
@@ -87,6 +88,7 @@ Unlike EditorConfig files, which must be named `.editorconfig`, global config fi
 > The top-level entry `is_global = true` is required even when the file is named `.globalconfig`.
 
 ### Example
+
 Following is an example global AnalyzerConfig file to configure options and rule severity at the project level:
 
 ```ini

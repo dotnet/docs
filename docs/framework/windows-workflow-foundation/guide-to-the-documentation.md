@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: a75025be-f225-430f-90cf-98f7022db436
 ---
 # Guide to the Windows Workflow Documentation
+
 This topic contains information about how to use the Windows Workflow Foundation documentation. The linked documents are recommended starting points grouped according to specific interests and levels of expertise.  
   
 ## New to Windows Workflow Foundation Programming  

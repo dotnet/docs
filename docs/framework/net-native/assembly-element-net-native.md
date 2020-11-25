@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: cfe629eb-1106-4113-86e1-052f402d8d8b
 ---
 # \<Assembly> Element (.NET Native)
+
 Applies runtime reflection policy to all the types in a specified assembly.  
   
 ## Syntax  
@@ -23,6 +24,7 @@ Applies runtime reflection policy to all the types in a specified assembly.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -69,6 +71,7 @@ Applies runtime reflection policy to all the types in a specified assembly.
 |[\<Library>](library-element-net-native.md)|Defines the assembly that contains types and type members whose metadata is available for reflection at run time. The [\<Library>](library-element-net-native.md) element can have zero or one `<Assembly>` element.|  
   
 ## Remarks  
+
  The `<Assembly>` element defines runtime policy for all the types in an assembly. It differs from the [\<Library>](library-element-net-native.md) element, which specifies a library but depends on its child elements to define runtime reflection policy. The `<Assembly>` element applies to all the types in an assembly unless they are overridden by a child element.  
   
  The following example shows how you can apply runtime policy to all the types in assemblies within your app package by assigning the `Name` attribute a value of "*Application\*". The `<Assembly>` element must be a child of the [\<Application>](application-element-net-native.md) element.  

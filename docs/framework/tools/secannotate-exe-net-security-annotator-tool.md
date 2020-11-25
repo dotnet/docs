@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 8104d208-7813-4a1d-8a75-58f9a7bcb8c9
 ---
 # SecAnnotate.exe (.NET Security Annotator Tool)
+
 The .NET Security Annotator tool (SecAnnotate.exe) is a command-line application that identifies the `SecurityCritical` and `SecuritySafeCritical` portions of one or more assemblies.  
   
  A Visual Studio extension, [Security Annotator](https://marketplace.visualstudio.com/items?itemName=sheldonb.SecurityAnnotator), provides a graphical user interface to SecAnnotate.exe and enables you to run the tool from Visual Studio.  
@@ -43,6 +44,7 @@ SecAnnotate.exe [parameters] [assemblies]
 |`/y:` *directory*<br /><br /> or<br /><br /> `/symbolpath:` *directory*|Includes the specified directory when searching for symbol files during annotation.|  
   
 ## Remarks  
+
  Parameters and assemblies may also be provided in a response file that is specified on the command line and prefixed with an at sign (@). Each line in the response file should contain a single parameter or assembly name.  
   
  For more information about the .NET Security Annotator, see the entry [Using SecAnnotate to Analyze Your Assemblies for Transparency Violations](/archive/blogs/shawnfa/using-secannotate-to-analyze-your-assemblies-for-transparency-violations-an-example) in the .NET Security blog.  

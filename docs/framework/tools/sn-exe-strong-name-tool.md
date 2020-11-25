@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: c1d2b532-1b8e-4c7a-8ac5-53b801135ec6
 ---
 # Sn.exe (Strong Name Tool)
+
 The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../standard/assembly/strong-named.md). Sn.exe provides options for key management, signature generation, and signature verification.  
   
 > [!WARNING]
@@ -73,6 +74,7 @@ sn [-quiet][option [parameter(s)]]
 > All Sn.exe options are case-sensitive and must be typed exactly as shown to be recognized by the tool.  
   
 ## Remarks  
+
  The **-R** and **–Rc** options are useful with assemblies that have been delay-signed. In this scenario, only the public key has been set at compile time and signing is performed later, when the private key is known.  
   
 > [!NOTE]
@@ -81,6 +83,7 @@ sn [-quiet][option [parameter(s)]]
 The Strong Name tool assumes that public/private key pairs are generated with the `AT_SIGNATURE` algorithm identifier. Public/private key pairs generated with the `AT_KEYEXCHANGE` algorithm generate an error.
 
 ## Examples  
+
  The following command creates a new, random key pair and stores it in `keyPair.snk`.  
   
 ```console  

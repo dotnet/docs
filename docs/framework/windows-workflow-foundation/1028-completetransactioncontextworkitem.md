@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 95423f9d-d29a-460e-bcd8-096e80af5bd0
 ---
 # 1028 - CompleteTransactionContextWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 95423f9d-d29a-460e-bcd8-096e80af5bd0
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a TransactionContextWorkItem has completed.  
   
 ## Message  
+
  A TransactionContextWorkItem has completed for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  
   
 ## Details  

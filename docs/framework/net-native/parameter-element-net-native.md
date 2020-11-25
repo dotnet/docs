@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 22aaa1f3-596f-4733-93db-f4bcabcb5240
 ---
 # \<Parameter> Element (.NET Native)
+
 Applies reflection policy to the type of the argument passed to a method.  
   
 ## Syntax  
@@ -23,6 +24,7 @@ Applies reflection policy to the type of the argument passed to a method.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -54,6 +56,7 @@ Applies reflection policy to the type of the argument passed to a method.
 |*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -63,6 +66,7 @@ Applies reflection policy to the type of the argument passed to a method.
 |[\<Method>](method-element-net-native.md)|Applies runtime reflection policy to a constructor or method.|  
   
 ## Remarks  
+
  The `<Parameter>` element is a child of the [\<Method>](method-element-net-native.md) element and is used to apply policy to a particular method parameter. The specific method parameter is specified by name rather than by type. At least one attribute that represents a policy type, such as `Activate` or `Dynamic`, must be present.  
   
 ## See also

@@ -14,21 +14,27 @@ helpviewer_keywords:
 ms.assetid: 96e7b2c1-843f-4d64-b519-740c3a18b50a
 ---
 # notMarshalable MDA
+
 The `notMarshalable` managed debugging assistant (MDA) is activated when the common language runtime (CLR) encounters a COM interface pointer without a valid registered proxy/stub or an incorrect `IMarshal` interface implementation while attempting to marshal the interface across contexts.  
   
 ## Symptoms  
+
  Calls are not serviced, or calls occur in the wrong context for COM interface pointers.  
   
 ## Cause  
+
  No valid registered proxy/stub or an incorrect `IMarshal` while attempting to marshal the interface across contexts.  
   
 ## Resolution  
+
  Make sure you have a proxy stub registered and that the `IMarshal` implementation is valid.  
   
 ## Effect on the Runtime  
+
  This MDA has no effect on the runtime.  
   
 ## Output  
+
  A message describing the problem.  
   
 ## Configuration  

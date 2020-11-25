@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 02ce6699-49b5-4a0b-b0d5-1003c491232e
 ---
 # Mgmtclassgen.exe (Management Strongly Typed Class Generator)
+
 The Management Strongly Typed Class Generator tool enables you to quickly generate an early-bound managed class for a specified Windows Management Instrumentation (WMI) class. The generated class simplifies the code you must write to access an instance of the WMI class.  
   
 ## Syntax  
@@ -39,6 +40,7 @@ WMIClass [options]
 |**/?**|Displays command syntax and options for the tool.|  
   
 ## Remarks  
+
  Mgmtclassgen.exe uses the <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType> method. Therefore, you can use any custom code provider to generate code in managed languages other than C#, Visual Basic, and JScript.  
   
  Note that generated classes are bound to the schema for which they are generated. If the underlying schema changes, you must regenerate the class if you want it to reflect changes to the schema.  
@@ -87,6 +89,7 @@ WMIClass [options]
  For more information about WMI, see the **Windows Management Instrumentation** topic in the Platform SDK documentation.  
   
 ## Examples  
+
  The following command generates a managed class in C# code for the **Win32_LogicalDisk** WMI class in the **Root\cimv2** namespace. The tool writes the managed class to the source file at c:\disk.cs in the **ROOT.CIMV2.Win32** namespace.  
   
 ```console  

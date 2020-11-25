@@ -35,6 +35,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
 ```
 
 ## Parameters
+
  All arguments to Mpgo.exe are case-insensitive. Commands are prefixed with a dash.
 
 > [!NOTE]
@@ -59,6 +60,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
 |`-RemoveNativeImages`|Cleans up from a run where `–LeaveNativeImages` was specified. If you specify `-RemoveNativeImages`, Mpgo.exe ignores any arguments except `-64bit` and `–AssemblyList`, and exits after removing all instrumented native images.|
 
 ## Remarks
+
  You can use both `–AssemblyList` and `- AssemblyListFile` multiple times on the command line.
 
  If you do not specify full path names when specifying assemblies, Mpgo.exe looks in the current directory. If you specify an incorrect path, Mpgo.exe displays an error message but continues to generate data for other assemblies. If you specify an assembly that is not loaded during the training scenario, no training data is generated for that assembly.
@@ -93,6 +95,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
  This process ensures that all assemblies have optimization data. If you check in updated optimized assemblies (steps 1 and 2) more frequently, the performance numbers will be more consistent throughout product development.
 
 ## Using Mpgo.exe from Visual Studio
+
  You can run Mpgo.exe from Visual Studio (see the article [How to: Specify Build Events (C#)](/visualstudio/ide/how-to-specify-build-events-csharp)) with the following restrictions:
 
 - You cannot use quoted paths with trailing slash marks, because Visual Studio macros also use trailing slash marks by default. (For example, `–OutDir "C:\Output Folder\"` is invalid.) To work around this restriction, you can escape the trailing slash. (For example, use `-OutDir "$(OutDir)\"` instead.)
@@ -100,7 +103,9 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
 - By default, Mpgo.exe is not on the Visual Studio build path. You must either add the path to Visual Studio or specify the full path on the Mpgo command line. You can use either the `–Scenario` or the `–Import` parameter in the post-build event in Visual Studio. However, the typical process is to use `–Scenario` one time from a Developer Command Prompt for Visual Studio, and then use `–Import` to update the optimized assemblies after each build; for example:  `"C:\Program Files\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\mpgo.exe" -import "$(OutDir)tmp" -assemblylist "$(TargetPath)" -outdir "$(OutDir)\"`.
 
 <a name="samples"></a>
+
 ## Examples
+
  The following Mpgo.exe command from a Developer Command Prompt for Visual Studio optimizes a tax application:
 
 ```console

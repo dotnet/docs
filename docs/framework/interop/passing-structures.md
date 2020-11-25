@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 9b92ac73-32b7-4e1b-862e-6d8d950cf169
 ---
 # Passing Structures
+
 Many unmanaged functions expect you to pass, as a parameter to the function, members of structures (user-defined types in Visual Basic) or members of classes that are defined in managed code. When passing structures or classes to unmanaged code using platform invoke, you must provide additional information to preserve the original layout and alignment. This topic introduces the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, which you use to define formatted types. For managed structures and classes, you can select from several predictable layout behaviors supplied by the **LayoutKind** enumeration.  
   
  Central to the concepts presented in this topic is an important difference between structure and class types. Structures are value types and classes are reference types — classes always provide at least one level of memory indirection (a pointer to a value). This difference is important because unmanaged functions often demand indirection, as shown by the signatures in the first column of the following table. The managed structure and class declarations in the remaining columns show the degree to which you can adjust the level of indirection in your declaration.Declarations are provided for both Visual Basic and Visual C#.  
@@ -29,6 +30,7 @@ Many unmanaged functions expect you to pass, as a parameter to the function, mem
 - Use a class passed by reference when the unmanaged function demands two levels of indirection.  
   
 ## Declaring and Passing Structures  
+
  The following example shows how to define the `Point` and `Rect` structures in managed code, and pass the types as parameter to the **PtInRect** function in the User32.dll file. **PtInRect** has the following unmanaged signature:  
   
 ```cpp
@@ -83,6 +85,7 @@ internal static class NativeMethods
 ```  
   
 ## Declaring and Passing Classes  
+
  You can pass members of a class to an unmanaged DLL function, as long as the class has a fixed member layout. The following example demonstrates how to pass members of the `MySystemTime` class, which are defined in sequential order, to the **GetSystemTime** in the User32.dll file. **GetSystemTime** has the following unmanaged signature:  
   
 ```cpp

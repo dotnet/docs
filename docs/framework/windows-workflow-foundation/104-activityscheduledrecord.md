@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ae202178-8fb1-4646-a3aa-18beeda8ff93
 ---
 # 104 - ActivityScheduledRecord
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: ae202178-8fb1-4646-a3aa-18beeda8ff93
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when an activity within a workflow instance emits ActivityScheduledRecord  
   
 ## Message  
+
  TrackRecord = ActivityScheduledRecord, InstanceID = %1,  RecordNumber = %2, EventTime = %3, Name = %4, ActivityId = %5, ActivityInstanceId = %6, ActivityTypeName = %7, ChildActivityName = %8, ChildActivityId = %9, ChildActivityInstanceId = %10, ChildActivityTypeName =%11, Annotations=%12, ProfileName = %13  
   
 ## Details  

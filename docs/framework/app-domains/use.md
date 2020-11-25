@@ -49,6 +49,7 @@ Provides guidance on using the <xref:System.AppDomain.AssemblyResolve?displayPro
 Represents an application domain. Provides methods for creating and controlling application domains.  
   
 ## Related Sections  
+
 [Assemblies in .NET](../../standard/assembly/index.md)  
 Provides an overview of the functions performed by assemblies.  
   

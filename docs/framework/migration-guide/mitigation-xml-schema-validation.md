@@ -8,12 +8,15 @@ dev_langs:
 ms.assetid: b73dd4f4-f2dc-47a2-9425-3896e92321fb
 ---
 # Mitigation: XML Schema Validation
+
 In the .NET Framework 4.6, XSD schema validation detects a violation of the unique constraint if a compound key is used and one key is empty.  
   
 ## Impact  
+
  The impact of this change should be minimal: based on the schema specification, a schema validation error is expected if `xsd:unique` is violated by using a compound key with an empty key.  
   
 ## Mitigation  
+
  Whether a schema validation error is detected if a compound key has one empty key is a configurable feature:  
   
 - Starting with the apps that target the .NET Framework 4.6, detection of the schema validation error is enabled by default; however, it is possible to opt out of it, so that the schema validation error will not be detected.  

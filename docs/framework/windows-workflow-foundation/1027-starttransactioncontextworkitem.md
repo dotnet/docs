@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 116ae5ec-b9d5-4231-824e-270d00eea7b8
 ---
 # 1027 - StartTransactionContextWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 116ae5ec-b9d5-4231-824e-270d00eea7b8
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a TransactionContextWorkItem is starting execution.  
   
 ## Message  
+
  Starting execution of a TransactionContextWorkItem for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  
   
 ## Details  

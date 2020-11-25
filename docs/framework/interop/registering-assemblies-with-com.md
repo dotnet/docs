@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 87925795-a3ae-4833-b138-125413478551
 ---
 # Registering Assemblies with COM
+
 You can run a command-line tool called the [Assembly Registration Tool (Regasm.exe)](../tools/regasm-exe-assembly-registration-tool.md) to register or unregister an assembly for use with COM. Regasm.exe adds information about the class to the system registry so COM clients can use the .NET Framework class transparently. The <xref:System.Runtime.InteropServices.RegistrationServices> class provides the equivalent functionality.  
   
  A managed component must be registered in the Windows registry before it can be activated from a COM client. The following table shows the keys that Regasm.exe typically adds to the Windows registry. (000000 indicates the actual GUID value.)  
@@ -32,6 +33,7 @@ You can run a command-line tool called the [Assembly Registration Tool (Regasm.e
  Regasm.exe also creates the InProcServer32 key under the HKCR\CLSID\\{0000…0000} key. The default value for the key is set to the name of the DLL that initializes the common language runtime (Mscoree.dll).  
   
 ## Examining Registry Entries  
+
  COM interop provides a standard class factory implementation to create an instance of any .NET Framework class. Clients can call **DllGetClassObject** on the managed DLL to get a class factory and create objects, just as they would with any other COM component.  
   
  For the `InprocServer32` subkey, a reference to Mscoree.dll appears in place of a traditional COM type library to indicate that the common language runtime creates the managed object.  

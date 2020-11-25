@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: a54e407c-c2b5-4319-a648-60e43413664b
 ---
 # How to: Make X.509 Certificates Accessible to WCF
+
 To make an X.509 certificate accessible to Windows Communication Foundation (WCF), application code must specify the certificate store name and location. In certain circumstances, the process identity must have access to the file that contains the private key associated with the X.509 certificate. To obtain the private key associated with an X.509 certificate in a certificate store, WCF must have permission to do so. By default, only the owner and the System account can access the private key of a certificate.  
   
 ### To make X.509 certificates accessible to WCF  

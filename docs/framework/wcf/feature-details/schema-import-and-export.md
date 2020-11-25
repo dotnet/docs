@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 0da32b50-ccd9-463a-844c-7fe803d3bf44
 ---
 # Schema Import and Export
+
 Windows Communication Foundation (WCF) includes a new serialization engine, the <xref:System.Runtime.Serialization.DataContractSerializer>. The `DataContractSerializer` translates between .NET Framework objects and XML (in both directions). In addition to the serializer itself, WCF includes associated schema import and schema export mechanisms. *Schema* is a formal, precise, and machine-readable description of the shape of XML that the serializer produces or that the deserializer can access. WCF uses the World Wide Web Consortium (W3C) XML Schema definition language (XSD) as its schema representation, which is widely interoperable with numerous third-party platforms.  
   
  The schema import component, <xref:System.Runtime.Serialization.XsdDataContractImporter>, takes an XSD schema document and generates .NET Framework classes (normally data contract classes) such that the serialized forms correspond to the given schema.  
@@ -36,9 +37,11 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
  The <xref:System.Runtime.Serialization.XsdDataContractExporter> enables you to do the reverse—take types that are serializable with the `DataContractSerializer` and generate an XSD Schema document.  
   
 ## Fidelity Is Not Guaranteed  
+
  It is not guaranteed that schema or types make a round trip with total fidelity. (A *round trip* means to import a schema to create a set of classes, and export the result to create a schema again.) The same schema may not be returned. Reversing the process is also not guaranteed to preserve fidelity. (Export a type to generate its schema, and then import the type back. It is unlikely the same type is returned.)  
   
 ## Supported Types  
+
  The data contract model supports only a limited subset of the WC3 schema. Any schema that does not conform to this subset will cause an exception during the import process. For example, there is no way to specify that a data member of a data contract should be serialized as an XML attribute. Thus, schemas that require the use of XML attributes are not supported and will cause exceptions during import, because it is impossible to generate a data contract with the correct XML projection.  
   
  For example, the following schema fragment cannot be imported using the default import settings.  

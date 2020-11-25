@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 9b4368ca-0bd3-40dc-a539-bcd5779cee5f
 ---
 # WCF Feature Details
+
 Windows Communication Foundation (WCF) allows extensive control over the messaging functions of an application. The topics in this section go into detail about the available features. For more information about basic programming, see [Basic WCF Programming](../basic-wcf-programming.md).  
   
 ## In This Section  
+
  [Workflow Services](workflow-services.md)  
  Describes how to create and configure workflow services.  
   
@@ -67,6 +69,7 @@ Windows Communication Foundation (WCF) allows extensive control over the messagi
  Describes the routing service.  
   
 ## Reference  
+
  <xref:System.ServiceModel>  
   
  <xref:System.ServiceModel.Channels>  
@@ -76,4 +79,5 @@ Windows Communication Foundation (WCF) allows extensive control over the messagi
  <xref:System.ServiceModel.Routing>  
   
 ## Related Sections  
+
  [Basic WCF Programming](../basic-wcf-programming.md)

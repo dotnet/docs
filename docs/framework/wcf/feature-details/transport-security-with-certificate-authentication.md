@@ -27,6 +27,7 @@ This article discusses using X.509 certificates for server and client authentica
 |Binding|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## Configure the Service  
+
  Since the service in this scenario is hosted under IIS, it is configured with a web.config file. The following web.config shows how to configure the <xref:System.ServiceModel.WSHttpBinding> to use transport security and X.509 client credentials.  
   
 ```xml  
@@ -58,6 +59,7 @@ This article discusses using X.509 certificates for server and client authentica
 ```  
   
 ## Configure the Client  
+
  The client can be configured in code or in an app.config file. The following example shows how to configure the client in code.  
   
 ```csharp

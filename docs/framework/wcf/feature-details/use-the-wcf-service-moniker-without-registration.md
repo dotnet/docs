@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: ee3cf5c0-24f0-4ae7-81da-73a60de4a1a8
 ---
 # How to: Use the Windows Communication Foundation Service Moniker without Registration
+
 To connect to and communicate with a Windows Communication Foundation (WCF) service, a WCF client application must have the details of the service address, the binding configuration, and the service contract.  
   
  The WCF service moniker typically obtains the required contract through prior registration of the required attribute types, but there might be cases where this is not feasible. In place of registration, the moniker can obtain the definition of the contract in the form of a Web Services Definition Language (WSDL) document, through the use of the `wsdl` parameter or through Metadata Exchange, through the use of the `mexAddress` parameter.  
@@ -16,6 +17,7 @@ To connect to and communicate with a Windows Communication Foundation (WCF) serv
 > Mutual authentication must be used to protect against request and response tampering or spoofing. Specifically, it is important for clients to be assured that the Metadata Exchange endpoint that is responding is the intended trusted party.  
   
 ## Example  
+
  This example shows the use of the service moniker with a MEX contract. A service with the following contract is exposed with a wsHttpBinding.  
   
 ```csharp

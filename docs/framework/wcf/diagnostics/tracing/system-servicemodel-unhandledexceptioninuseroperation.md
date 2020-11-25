@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b00612e4-84c7-4a53-849a-e693cdce7fca
 ---
 # System.ServiceModel.UnhandledExceptionInUserOperation
+
 System.ServiceModel.UnhandledExceptionInUserOperation  
   
 ## Description  
+
  Unhandled exception in user operation.  
   
 ## See also

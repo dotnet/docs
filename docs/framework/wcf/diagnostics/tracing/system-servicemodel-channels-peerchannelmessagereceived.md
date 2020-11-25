@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b68cfbbf-27fa-49d4-a2a1-c9f6af4876f2
 ---
 # System.ServiceModel.Channels.PeerChannelMessageReceived
+
 A new PeerChannel message was received.  
   
 ## Description  
+
  This trace occurs after the reception of a new message.  
   
 ## See also

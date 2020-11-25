@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 07a6fc3b-c360-42e0-b663-3d0f22cf4502
 ---
 # Route by Body
+
 This sample demonstrates how to implement a service that accepts message objects with any SOAP action. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service. The service implements a single `Calculate` operation that accepts a <xref:System.ServiceModel.Channels.Message> request parameter and returns a <xref:System.ServiceModel.Channels.Message> response.  
   
  In this sample, the client is a console application (.exe) and the service is hosted in IIS.  

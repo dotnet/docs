@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 0be7d232-485b-4f6d-9ed0-b4243c907376
 ---
 # Set-Up Instructions
+
 This set of topics describes how to set up services that are required to run a Windows Communication Foundation (WCF) service.  
   
 ## In This Section  
+
  [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md)  
  Outlines the steps for setting up the WCF samples.  
   
@@ -35,4 +37,5 @@ This set of topics describes how to set up services that are required to run a W
  Outlines the steps to install Message Queuing.  
   
 ## Related Sections  
+
  [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

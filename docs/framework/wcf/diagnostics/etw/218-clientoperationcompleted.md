@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b069bced-7bb2-4e01-8227-e5dbda17af09
 ---
 # 218 - ClientOperationCompleted
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: b069bced-7bb2-4e01-8227-e5dbda17af09
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by clients just after an operation completes. For one-way operations, this is just after the message is sent successfully. For request-response operations this is after the response is received.  
   
 ## Message  
+
  The Client completed executing Action '%1' associated with the '%2' contract. The message was sent to '%3'.  
   
 ## Details  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3913aae8-165f-4014-9262-7fe426f90cb2
 ---
 # ConfigurationCodeGenerator
+
 The ConfigurationCodeGenerator is a tool that you can use to expose your custom channel implementations to the configuration system. This allows users of your custom channel to configure your channel by using a .config file just as they would configure a system-provided binding such as `NetTcpBinding` or a custom binding using the `TcpTransportBindingElement`.  
   
  When you write a custom channel and expose it to the programming model by using a new `BindingElement` or `Binding`, you must create a set of classes to make the `BindingElement` or `Binding` configurable using a .config file. You can use the ConfigurationCodeGenerator tool to generate these classes and enhance your customer's experience.  

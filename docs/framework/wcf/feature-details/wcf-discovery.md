@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 462c4913-f388-45a9-9042-28ae96a4e735
 ---
 # WCF Discovery
+
 Windows Communication Foundation (WCF) provides support to enable services to be discoverable at runtime in an interoperable way using the WS-Discovery protocol. WCF services can announce their availability to the network using a multicast message or to a discovery proxy server. Client applications can search the network or a discovery proxy server to find services that meet a set of criteria. The topics in this section provide an overview and describe the programming model for this feature in detail.  
   
 ## In This Section  
+
  [WCF Discovery Overview](wcf-discovery-overview.md)  
  Provides an overview of WS-Discovery support provided by WCF.  
   

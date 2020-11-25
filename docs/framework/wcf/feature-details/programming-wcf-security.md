@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
 ---
 # Programming WCF Security
+
 This topic describes the fundamental programming tasks used to create a secure Windows Communication Foundation (WCF) application. This topic covers only authentication, confidentiality, and integrity, collectively known as *transfer security*. This topic does not cover authorization (the control of access to resources or services); for information on authorization, see [Authorization](authorization-in-wcf.md).  
   
 > [!NOTE]
@@ -18,6 +19,7 @@ This topic describes the fundamental programming tasks used to create a secure W
  Programming WCF security is based on three steps setting the following: the security mode, a client credential type, and the credential values. You can perform these steps either through code or configuration.  
   
 ## Setting the Security Mode  
+
  The following explains the general steps for programming with the security mode in WCF:  
   
 1. Select one of the predefined bindings appropriate to your application requirements. For a list of the binding choices, see [System-Provided Bindings](../system-provided-bindings.md). By default, nearly every binding has security enabled. The one exception is the <xref:System.ServiceModel.BasicHttpBinding> class (using configuration, the [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md)).  
@@ -49,6 +51,7 @@ This topic describes the fundamental programming tasks used to create a secure W
      A secure session occurs when a client and service create a channel using a symmetric key (both client and server use the same key for the length of a conversation, until the dialog is closed).  
   
 ## Setting the Client Credential Type  
+
  Select a client credential type as appropriate. For more information, see [Selecting a Credential Type](selecting-a-credential-type.md). The following client credential types are available:  
   
 - `Windows`  
@@ -86,12 +89,14 @@ This topic describes the fundamental programming tasks used to create a secure W
  [!code-vb[c_WsHttpService#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#1)]  
   
 ## Setting Service Credential Values  
+
  Once you select a client credential type, you must set the actual credentials for the service and client to use. On the service, credentials are set using the <xref:System.ServiceModel.Description.ServiceCredentials> class and returned by the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> property of the <xref:System.ServiceModel.ServiceHostBase> class. The binding in use implies the service credential type, the security mode chosen, and the type of the client credential. The following code sets a certificate for a service credential.  
   
  [!code-csharp[c_tcpService#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_tcpservice/cs/source.cs#3)]
  [!code-vb[c_tcpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpservice/vb/source.vb#3)]  
   
 ## Setting Client Credential Values  
+
  On the client, set client credential values using the <xref:System.ServiceModel.Description.ClientCredentials> class and returned by the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property of the <xref:System.ServiceModel.ClientBase%601> class. The following code sets a certificate as a credential on a client using the TCP protocol.  
   
  [!code-csharp[c_TcpClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_tcpclient/cs/source.cs#1)]

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7e794d03-141c-45ed-b6b1-6c0e104c1464
 ---
 # Queues and Reliable Sessions
+
 Queues and reliable sessions are the Windows Communication Foundation (WCF) features that implement reliable messaging. The topics contained in this section discuss the WCF reliable messaging features.  
   
  Reliable messaging is how a reliable messaging source (called the source) transfers messages reliably to a reliable messaging destination (called the destination).  
@@ -21,11 +22,13 @@ Queues and reliable sessions are the Windows Communication Foundation (WCF) feat
 - [Queues in WCF](queues-in-wcf.md), which offer both reliable transfers and separation between the source and the destination.  
   
 ## Reliable Sessions  
+
  Reliable sessions provide end-to-end reliable transfer of messages between a source and a destination using the WS-ReliableMessaging protocol regardless of the number or type of intermediaries that separate the messaging (source and destination) endpoints. This includes any transport intermediaries that do not use SOAP (for example, HTTP proxies) or intermediaries that use SOAP (for example, SOAP-based routers or bridges) that are required for messages to flow between the endpoints. Reliable sessions use an in-memory transfer window to mask SOAP message-level failures and re-establish connections in the case of transport failures.  
   
  Reliable sessions provide low-latency reliable message transfers. They provide for SOAP messages over any proxies or intermediaries, equivalent to what TCP provides for packets over IP bridges. For more information about reliable sessions, see [Reliable Sessions](reliable-sessions.md).  
   
 ## Queues  
+
  Queues in WCF provide both reliable transfers of messages and separation between sources and destinations at the cost of high latency. WCF queued communication is built on top of Message Queuing (also known as MSMQ).  
   
  MSMQ is shipped as an option with Windows that runs as an NT service. It captures messages for transmission in a transmission queue on behalf of the source and delivers it to a target queue. The target queue accepts messages on behalf of the destination for later delivery whenever the destination requests for messages. The MSMQ queue managers implement a reliable message-transfer protocol so that messages are not lost in transmission. The protocol can be native or SOAP-based, such as Soap Reliable Messaging Protocol (SRMP).  

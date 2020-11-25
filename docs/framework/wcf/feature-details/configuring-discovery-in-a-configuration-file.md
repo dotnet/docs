@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b9884c11-8011-4763-bc2c-c526b80175d0
 ---
 # Configuring Discovery in a Configuration File
+
 There are four major groups of configuration settings used in discovery. This topic will briefly describe each and show examples of how to configure them. Following each section will be a link to more in-depth documentation about each area.  
   
 ## Behavior Configuration  
+
  Discovery uses service behaviors and endpoint behaviors. The <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> behavior enables discovery for all of a service’s endpoints and allows you to specify announcement endpoints.  The following example shows how to add the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> and specify an announcement endpoint.  
   
 ```xml  
@@ -138,6 +140,7 @@ There are four major groups of configuration settings used in discovery. This to
  For more information about <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> and <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> see [WCF Discovery Overview](wcf-discovery-overview.md).  
   
 ## Binding Element Configuration  
+
  Binding element configuration is most interesting on the client side. You can use configuration to specify the find criteria used to discover services from a WCF client application.  The following example creates a custom binding with the <xref:System.ServiceModel.Discovery.DiscoveryClient> channel and specifies find criteria that includes a type and scope. In addition it specifies values for the <xref:System.ServiceModel.Discovery.FindCriteria.Duration%2A> and <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> properties.  
   
 ```xml  
@@ -180,6 +183,7 @@ There are four major groups of configuration settings used in discovery. This to
  For more information about find criteria see [Discovery Find and FindCriteria](discovery-find-and-findcriteria.md). For more information about discovery and binding elements see, [WCF Discovery Overview](wcf-discovery-overview.md)  
   
 ## Standard Endpoint Configuration  
+
  Standard endpoints are predefined endpoints that have default values for one or more properties (address, binding, or contract) or one or more property values that cannot change. .NET 4 ships with 3 discovery related standard endpoints: <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>, and <xref:System.ServiceModel.Discovery.DynamicEndpoint>.  The <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> is a standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. The <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint> is a standard endpoint that is pre-configured to send announcement messages over a UDP binding. The <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint that uses discovery to find the endpoint address of a discovered service dynamically at runtime.  Standard bindings are specified with an <`endpoint`> element that contains kind attribute that specified the type of standard endpoint to add. The following example shows how to add a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> and a <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>.  
   
 ```xml  

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 27c240cb-8cab-472c-87f8-c864f4978758
 ---
 # Configuration and Metadata Support
+
 This topic describes how to enable configuration and metadata support for bindings and binding elements.  
   
 ## Overview of Configuration and Metadata  
+
  This topic discusses the following tasks, which are optional items 1, 2, and 4 in the [Developing Channels](developing-channels.md) task list.  
   
 - Enabling configuration file support for a binding element.  
@@ -20,11 +22,13 @@ This topic describes how to enable configuration and metadata support for bindin
  For information about creating user-defined bindings and binding elements, see [Creating User-Defined Bindings](creating-user-defined-bindings.md) and [Creating a BindingElement](creating-a-bindingelement.md), respectively.  
   
 ## Adding Configuration Support  
+
  To enable configuration file support for a channel, you must implement two configuration sections, <xref:System.ServiceModel.Configuration.BindingElementExtensionElement?displayProperty=nameWithType>, which enables configuration support for binding elements, and the <xref:System.ServiceModel.Configuration.StandardBindingElement?displayProperty=nameWithType> and <xref:System.ServiceModel.Configuration.StandardBindingCollectionElement%602?displayProperty=nameWithType>, which enable configuration support for bindings.  
   
  An easier way to do this is to use the [ConfigurationCodeGenerator](../samples/configurationcodegenerator.md) sample tool to generate configuration code for your bindings and binding elements.  
   
 ### Extending BindingElementExtensionElement  
+
  The following example code is taken from the [Transport: UDP](../samples/transport-udp.md) sample. The `UdpTransportElement` is a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> that exposes `UdpTransportBindingElement` to the configuration system. With a few basic overrides, the sample defines the configuration section name, the type of the binding element and how to create the binding element. Users can then register the extension section in a configuration file as follows.  
   
 ```xml  
@@ -56,6 +60,7 @@ This topic describes how to enable configuration and metadata support for bindin
 ```  
   
 ### Adding Configuration for a Binding  
+
  The section `SampleProfileUdpBindingCollectionElement` is a <xref:System.ServiceModel.Configuration.StandardBindingCollectionElement%602> that exposes `SampleProfileUdpBinding` to the configuration system. The bulk of the implementation is delegated to the `SampleProfileUdpBindingConfigurationElement`, which derives from <xref:System.ServiceModel.Configuration.StandardBindingElement>. The `SampleProfileUdpBindingConfigurationElement` has properties that correspond to the properties on `SampleProfileUdpBinding`, and functions to map from the `ConfigurationElement` binding. Finally, the `OnApplyConfiguration` method is overridden in the `SampleProfileUdpBinding`, as shown in the following sample code.  
   
 ```csharp
@@ -112,12 +117,15 @@ protected override void OnApplyConfiguration(string configurationName)
 ```  
   
 ## Adding Metadata Support for a Binding Element  
+
  To integrate a channel into the metadata system, it must support both the import and export of policy. This allows tools such as [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to generate clients of the binding element.  
   
 ### Adding WSDL Support  
+
  The transport binding element in a binding is responsible for exporting and importing addressing information in metadata. When using a SOAP binding, the transport binding element should also export a correct transport URI in metadata. The following example code is taken from the [Transport: UDP](../samples/transport-udp.md) sample.  
   
 #### WSDL Export  
+
  To export addressing information, the `UdpTransportBindingElement` implements the <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=nameWithType> interface. The <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A?displayProperty=nameWithType> method adds the correct addressing information to the WSDL port.  
   
 ```csharp  
@@ -138,6 +146,7 @@ if (soapBinding != null)
 ```  
   
 #### WSDL Import  
+
  To extend the WSDL import system to handle importing the addresses, add the following configuration to the configuration file for Svcutil.exe as shown in the Svcutil.exe.config file:  
   
 ```xml  
@@ -172,9 +181,11 @@ if (transportBindingElement is UdpTransportBindingElement)
 ```  
   
 ### Adding Policy Support  
+
  The custom binding element can export policy assertions in the WSDL binding for a service endpoint to express the capabilities of that binding element. The following example code is taken from the [Transport: UDP](../samples/transport-udp.md) sample.  
   
 #### Policy Export  
+
  The `UdpTransportBindingElement` type implements <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=nameWithType> to add support for exporting policy. As a result, <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> includes `UdpTransportBindingElement` in the generation of policy for any binding that includes it.  
   
  In <xref:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy%2A?displayProperty=nameWithType>, add an assertion for UDP and another assertion if the channel is in multicast mode. This is because multicast mode affects how the communication stack is constructed, and thus must be coordinated between both sides.  
@@ -198,6 +209,7 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
 ```  
   
 #### Policy Import  
+
  To extend the policy import system, add the following configuration to the configuration file for Svcutil.exe as shown in the Svcutil.exe.config file:  
   
 ```xml  
@@ -221,6 +233,7 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
 2. Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
   
 ### Adding a Custom Standard Binding Importer  
+
  Svcutil.exe and the <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> type, by default, recognize and import system-provided bindings. Otherwise, the binding gets imported as a <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType> instance. To enable Svcutil.exe and the <xref:System.ServiceModel.Description.WsdlImporter> to import the `SampleProfileUdpBinding` the `UdpBindingElementImporter` also acts as a custom standard binding importer.  
   
  A custom standard binding importer implements the `ImportEndpoint` method on the <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=nameWithType> interface to examine the <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType> instance imported from metadata to see if it could have been generated by specific standard binding.  

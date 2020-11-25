@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 28b5a2f0-fbfc-477e-97d9-bea2c1bfbbbe
 ---
 # System.ServiceModel.Channels.MsmqLeftBatch
+
 System.ServiceModel.Channels.MsmqLeftBatch  
   
 ## Description  
+
  MSMQ left batching mode.  
   
 ## See also

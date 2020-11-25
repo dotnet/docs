@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e0ba2cbf-28cf-4b8b-b40b-bfdb8a77afa0
 ---
 # 4026 - WasConnected
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: e0ba2cbf-28cf-4b8b-b40b-bfdb8a77afa0
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when Windows Activation Service is connected.  
   
 ## Message  
+
  WAS Connected.  
   
 ## Details

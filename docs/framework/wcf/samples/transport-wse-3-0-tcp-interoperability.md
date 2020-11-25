@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5f7c3708-acad-4eb3-acb9-d232c77d1486
 ---
 # Transport: WSE 3.0 TCP Interoperability
+
 The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement a TCP duplex session as a custom Windows Communication Foundation (WCF) transport. It also demonstrates how you can use the extensibility of the channel layer to interface over the wire with existing deployed systems. The following steps show how to build this custom WCF transport:  
   
 1. Starting with a TCP socket, create client and server implementations of <xref:System.ServiceModel.Channels.IDuplexSessionChannel> that use DIME Framing to delineate message boundaries.  
@@ -17,6 +18,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
 5. Add a binding element that adds the custom transport to a channel stack. For more information, see [Adding a Binding Element].  
   
 ## Creating IDuplexSessionChannel  
+
  The first step in writing the WSE 3.0 TCP Interoperability Transport is to create an implementation of <xref:System.ServiceModel.Channels.IDuplexSessionChannel> on top of a <xref:System.Net.Sockets.Socket>. `WseTcpDuplexSessionChannel` derives from <xref:System.ServiceModel.Channels.ChannelBase>. The logic of sending a message consists of two main pieces: (1) Encoding the message into bytes, and (2) framing those bytes and sending them on the wire.  
   
  `ArraySegment<byte> encodedBytes = EncodeMessage(message);`  
@@ -44,6 +46,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
 - session.CloseOutputSession -- shut down the outbound data stream (half close).  
   
 ## Channel Factory  
+
  The next step in writing the TCP transport is to create an implementation of <xref:System.ServiceModel.Channels.IChannelFactory> for client channels.  
   
 - `WseTcpChannelFactory` derives from <xref:System.ServiceModel.Channels.ChannelFactoryBase>\<IDuplexSessionChannel>. It is a factory that overrides `OnCreateChannel` to produce client channels.  
@@ -71,6 +74,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
 - As part of the channel contract, any domain-specific exceptions are wrapped, such as `SocketException` in <xref:System.ServiceModel.CommunicationException>.  
   
 ## Channel Listener  
+
  The next step in writing the TCP transport is to create an implementation of <xref:System.ServiceModel.Channels.IChannelListener> for accepting server channels.  
   
 - `WseTcpChannelListener` derives from <xref:System.ServiceModel.Channels.ChannelListenerBase>\<IDuplexSessionChannel> and overrides On[Begin]Open and On[Begin]Close to control the lifetime of its listen socket. In OnOpen, a socket is created to listen on IP_ANY. More advanced implementations can create a second socket to listen on IPv6 as well. They can also allow the IP address to be specified in the hostname.  
@@ -86,6 +90,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
  When a new socket is accepted, a server channel is initialized with this socket. All the input and output is already implemented in the base class, so this channel is responsible for initializing the socket.  
   
 ## Adding a Binding Element  
+
  Now that the factories and channels are built, they must be exposed to the ServiceModel runtime through a binding. A binding is a collection of binding elements that represents the communication stack associated with a service address. Each element in the stack is represented by a binding element.  
   
  In the sample, the binding element is `WseTcpTransportBindingElement`, which derives from <xref:System.ServiceModel.Channels.TransportBindingElement>. It supports <xref:System.ServiceModel.Channels.IDuplexSessionChannel> and overrides the following methods to build the factories associated with our binding.  
@@ -109,6 +114,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
  It also contains members for cloning the `BindingElement` and returning our scheme (wse.tcp).  
   
 ## The WSE TCP Test Console  
+
  Test code for using this sample transport is available in TestCode.cs. The following instructions show how to set up the WSE `TcpSyncStockService` sample.  
   
  The test code creates a custom binding that uses MTOM as the encoding and `WseTcpTransport` as the transport. It also sets up the AddressingVersion to be conformant with WSE 3.0, as shown in the following code.  

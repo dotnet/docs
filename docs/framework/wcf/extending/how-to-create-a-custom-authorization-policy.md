@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 05b0549b-882d-4660-b6f0-5678543e5475
 ---
 # How to: Create a Custom Authorization Policy
+
 The Identity Model infrastructure in Windows Communication Foundation (WCF) supports a claim-based authorization model. Claims are extracted from tokens, optionally processed by custom authorization policy, and then placed into an <xref:System.IdentityModel.Policy.AuthorizationContext> that can then be examined to make authorization decisions. A custom policy can be used to transform claims from incoming tokens into claims expected by the application. In this way, the application layer can be insulated from the details on the differing claims served up by the different token types that WCF supports. This topic shows how to implement a custom authorization policy and how to add that policy to the collection of policies used by a service.  
   
 ### To implement a custom authorization policy  
@@ -64,6 +65,7 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
      [!code-vb[c_CustomAuthPol#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthpol/vb/source.vb#8)]  
   
 ## Example  
+
  The following example shows a complete <xref:System.IdentityModel.Policy.IAuthorizationPolicy> implementation.  
   
  [!code-csharp[c_CustomAuthPol#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customauthpol/cs/c_customauthpol.cs#5)]

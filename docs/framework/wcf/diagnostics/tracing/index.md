@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2649eae2-dbf8-421c-9cfb-cfa9e01de87f
 ---
 # Tracing
+
 Windows Communication Foundation (WCF) provides application instrumentation and diagnostic data for fault monitoring and analysis. You can use tracing instead of a debugger to understand how an application is behaving, or why it faults. You can also correlate faults and processing across components to provide an end-to-end experience.  
   
  WCF outputs the following data for diagnostic tracing:  
@@ -13,6 +14,7 @@ Windows Communication Foundation (WCF) provides application instrumentation and 
 - Windows error events when the tracing feature malfunctions.  
   
 ## In This Section  
+
  [Configuring Tracing](configuring-tracing.md)  
   
  This topic describes how you can configure tracing at different levels to suit your specific need.  

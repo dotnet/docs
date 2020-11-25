@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 75ff3e7e-ad6a-4ac2-a094-4247f523c5f5
 ---
 # System.ServiceModel.Channels.ListenerDisposed
+
 System.ServiceModel.Channels.ListenerDisposed  
   
 ## Description  
+
  Listener disposed.  
   
 ## See also

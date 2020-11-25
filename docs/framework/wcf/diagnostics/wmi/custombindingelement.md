@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: df959dc5-1aef-4338-a123-6ff3e7bc37af
 ---
 # CustomBindingElement
+
 CustomBindingElement  
   
 ## Syntax  
@@ -16,12 +17,15 @@ class CustomBindingElement : BindingElement
 ```  
   
 ## Methods  
+
  The CustomBindingElement class does not define any methods.  
   
 ## Properties  
+
  The CustomBindingElement class has the following property:  
   
 ### Name  
+
  Data type: string  
   
  Access type: Read-only  

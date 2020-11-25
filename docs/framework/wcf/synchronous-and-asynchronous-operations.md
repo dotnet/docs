@@ -11,11 +11,13 @@ helpviewer_keywords:
 ms.assetid: db8a51cb-67e6-411b-9035-e5821ed350c9
 ---
 # Synchronous and Asynchronous Operations
+
 This topic discusses implementing and calling asynchronous service operations.  
   
  Many applications call methods asynchronously because it enables the application to continue doing useful work while the method call runs. Windows Communication Foundation (WCF) services and clients can participate in asynchronous operation calls at two distinct levels of the application, which provide WCF applications even more flexibility to maximize throughput balanced against interactivity.  
   
 ## Types of Asynchronous Operations  
+
  All service contracts in WCF, no matter the parameters types and return values, use WCF attributes to specify a particular message exchange pattern between client and service. WCF automatically routes inbound and outbound messages to the appropriate service operation or running client code.  
   
  The client possesses only the service contract, which specifies the message exchange pattern for a particular operation. Clients can offer the developer any programming model they choose, so long as the underlying message exchange pattern is observed. So, too, can services implement operations in any manner, so long as the specified message pattern is observed.  
@@ -29,6 +31,7 @@ This topic discusses implementing and calling asynchronous service operations.
 - Message exchanges can be one-way, regardless of the implementation of the client or service.  
   
 ### Suggested Asynchronous Scenarios  
+
  Use an asynchronous approach in a service operation implementation if the operation service implementation makes a blocking call, such as doing I/O work. When you are in an asynchronous operation implementation, try to call asynchronous operations and methods to extend the asynchronous call path as far as possible. For example, call a `BeginOperationTwo()` from within `BeginOperationOne()`.  
   
 - Use an asynchronous approach in a client or calling application in the following cases:  
@@ -42,6 +45,7 @@ This topic discusses implementing and calling asynchronous service operations.
 - In general, if you have a choice between a synchronous and asynchronous call, choose the asynchronous call.  
   
 ### Implementing an Asynchronous Service Operation  
+
  Asynchronous operations can be implemented by using one of the three following methods:  
   
 1. The task-based asynchronous pattern  
@@ -51,6 +55,7 @@ This topic discusses implementing and calling asynchronous service operations.
 3. The IAsyncResult asynchronous pattern  
   
 #### Task-Based Asynchronous Pattern  
+
  The task-based asynchronous pattern is the preferred way to implement asynchronous operations because it is the easiest and most straight forward. To use this method simply implement your service operation and specify a return type of Task\<T>, where T is the type returned by the logical operation. For example:  
   
 ```csharp  
@@ -74,6 +79,7 @@ public class SampleService:ISampleService
 > When using the task-based asynchronous pattern, a T:System.AggregateException may be thrown if an exception occurs while waiting on the completion of the operation. This exception may occur on the client or services  
   
 #### Event-Based Asynchronous Pattern  
+
  A service that supports the Event-based Asynchronous Pattern will have one or more operations named MethodNameAsync. These methods may mirror synchronous versions, which perform the same operation on the current thread. The class may also have a MethodNameCompleted event and it may have a MethodNameAsyncCancel (or simply CancelAsync) method. A client wishing to call the operation will define an event handler to be called when the operation completes,  
   
  The following code snippet illustrates how to declare asynchronous operations using the event-based asynchronous pattern.  
@@ -105,6 +111,7 @@ public class AsyncExample
  For more information about the Event-based Asynchronous Pattern, see [The Event-Based Asynchronous Pattern](../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
   
 #### IAsyncResult Asynchronous Pattern  
+
  A service operation can be implemented in an asynchronous fashion using the .NET Framework asynchronous programming pattern and marking the `<Begin>` method with the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property set to `true`. In this case, the asynchronous operation is exposed in metadata in the same form as a synchronous operation: It is exposed as a single operation with a request message and a correlated response message. Client programming models then have a choice. They can represent this pattern as a synchronous operation or as an asynchronous one, so long as when the service is invoked a request-response message exchange takes place.  
   
  In general, with the asynchronous nature of the systems, you should not take a dependency on the threads.  The most reliable way of passing data to various stages of operation dispatch processing is to use extensions.  
@@ -153,6 +160,7 @@ Function EndDoWork(ByRef inout As String, ByRef outonly As String, ByVal result 
 > The <xref:System.ServiceModel.OperationContractAttribute> attribute is applied only to the `BeginDoWork` method. The resulting contract has one WSDL operation named `DoWork`.  
   
 ### Client-Side Asynchronous Invocations  
+
  A WCF client application can use any of three asynchronous calling models described previously  
   
  When using the task-based model, simply call the operation using the await keyword as shown in the following code snippet.  
@@ -180,9 +188,11 @@ svcutil http://localhost:8000/servicemodelsamples/service/mex /async
  In either case, applications can invoke an operation asynchronously even if the service is implemented synchronously, in the same way that an application can use the same pattern to invoke asynchronously a local synchronous method. How the operation is implemented is not significant to the client; when the response message arrives, its content is dispatched to the client's asynchronous <`End`> method and the client retrieves the information.  
   
 ### One-Way Message Exchange Patterns  
+
  You can also create an asynchronous message exchange pattern in which one-way operations (operations for which the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=nameWithType> is `true` have no correlated response) can be sent in either direction by the client or service independently of the other side. (This uses the duplex message exchange pattern with one-way messages.) In this case, the service contract specifies a one-way message exchange that either side can implement as asynchronous calls or implementations, or not, as appropriate. Generally, when the contract is an exchange of one-way messages, the implementations can largely be asynchronous because once a message is sent the application does not wait for a reply and can continue doing other work.  
   
 ### Event-based Asynchronous Clients and Message Contracts  
+
  The design guidelines for the event-based asynchronous model state that if more than one value is returned, one value is returned as the `Result` property and the others are returned as properties on the <xref:System.EventArgs> object. One result of this is that if a client imports metadata using the event-based asynchronous command options and the operation returns more than one value, the default <xref:System.EventArgs> object returns one value as the `Result` property and the remainder are properties of the <xref:System.EventArgs> object.  
   
  If you want to receive the message object as the `Result` property and have the returned values as properties on that object, use the **/messageContract** command option. This generates a signature that returns the response message as the `Result` property on the <xref:System.EventArgs> object. All internal return values are then properties of the response message object.  

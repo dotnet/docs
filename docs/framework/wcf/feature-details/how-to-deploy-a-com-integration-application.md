@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2e5a0510-db3c-4988-a09c-696285836650
 ---
 # How to: Deploy a COM+ Integration Application
+
 Once you have written a COM+ integration application, you may want to deploy it on another machine. This topic describes how to move a COM+ integration application from one machine to another.  
   
 ### Moving a COM+ hosted Integration App  

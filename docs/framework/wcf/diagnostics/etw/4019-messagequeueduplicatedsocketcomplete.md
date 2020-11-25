@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2dc5bde8-4f98-45ac-a768-50d417e8b65e
 ---
 # 4019 - MessageQueueDuplicatedSocketComplete
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 2dc5bde8-4f98-45ac-a768-50d417e8b65e
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when the message queue has completed duplicating socket.  
   
 ## Message  
+
  MessageQueueDuplicatedSocketComplete  
   
 ## Details

@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 0868866d-40b4-4341-8e42-eee3b7f15b69
 ---
 # Encryption of Digital Signatures
+
 By default, a message is signed and encrypted, and the signature is digitally encrypted. You can control this by creating a custom binding with an instance of the <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> or the <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> and then setting the `MessageProtectionOrder` property of either class to a <xref:System.ServiceModel.Security.MessageProtectionOrder> enumeration value. The default is <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature>. This process takes 10 to 40 percent longer than simply signing and encrypting. Disabling encryption of the signature, however, might allow an attacker to guess the contents of the message. This is possible because the signature element contains the hash code of the plain text of every signed part in the message. For example, although the message body is encrypted by default, the unencrypted signature contains the hash code of the message body. If the message is small, an attacker might be able to deduce the contents. Encrypting the signature reduces or eliminates this possibility.  
   
  Therefore, disable encryption of the signature only when the value of the content is low, and the performance gain will be significant, for example, when sending large binary files that have no security implications.  

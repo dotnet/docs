@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 9b7c10a7-2af6-44a2-8b1a-90bba0c7cf26
 ---
 # System.ServiceModel.Channels.MsmqMessageRejected
+
 MSMQ rejected the message.  
   
 ## Description  
+
  This trace indicates that an MSMQ message was rejected.  
   
  MSMQ messages can be rejected when Windows Communication Foundation (WCF) (used with either the NetMsmqBinding or MsmqIntegrationBinding) is unable to process them. Such messages are referred to as poison messages. A poison message is rejected when the `ReceiveErrorHandling` property on the NetMsmqBinding or MsmqIntegrationBinding is set to `Reject`. A rejected message is delivered back to the sender’s [Dead-Letter Queue](../../feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md).  

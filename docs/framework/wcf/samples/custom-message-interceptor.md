@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 73f20972-53f8-475a-8bfe-c133bfa225b0
 ---
 # Custom Message Interceptor
+
 This sample demonstrates the use of the channel extensibility model. In particular, it shows how to implement a custom binding element that creates channel factories and channel listeners to intercept all incoming and outgoing messages at a particular point in the run-time stack. The sample also includes a client and server that demonstrate the use of these custom factories.  
   
  In this sample, both the client and the service are console programs (.exe). The client and service both make use of a common library (.dll) that contains the custom binding element and its associated run-time objects.  
@@ -31,9 +32,11 @@ This sample demonstrates the use of the channel extensibility model. In particul
 4. Add a binding element extension section to expose the new binding element to the configuration system.  
   
 ## Channel Shapes  
+
  The first step in writing a custom layered channel is to decide which shapes are required for the channel. For our message inspector, we support any shape that the layer below us supports (for example, if the layer below us can build <xref:System.ServiceModel.Channels.IOutputChannel> and <xref:System.ServiceModel.Channels.IDuplexSessionChannel>, then we also expose <xref:System.ServiceModel.Channels.IOutputChannel> and <xref:System.ServiceModel.Channels.IDuplexSessionChannel>).  
   
 ## Channel Factory and Listener Factory  
+
  The next step in writing a custom layered channel is to create an implementation of <xref:System.ServiceModel.Channels.IChannelFactory> for client channels and of <xref:System.ServiceModel.Channels.IChannelListener> for service channels.  
   
  These classes take an inner factory and listener, and delegate all but the `OnCreateChannel` and `OnAcceptChannel` calls to the inner factory and listener.  
@@ -51,6 +54,7 @@ class InterceptingChannelListener<TChannel> : ListenerFactoryBase<TChannel>
 ```  
   
 ## Adding a Binding Element  
+
  The sample defines a custom binding element: `InterceptingBindingElement`. `InterceptingBindingElement` takes a `ChannelMessageInterceptor` as an input, and uses this `ChannelMessageInterceptor` to manipulate messages that pass through it. This is the only class that must be public. The factory, listener, and channels can all be internal implementations of the public run-time interfaces.  
   
 ```csharp
@@ -60,6 +64,7 @@ public class InterceptingBindingElement : BindingElement
 ```  
   
 ## Adding Configuration Support  
+
  To integrate with binding configuration, the library defines a configuration section handler as a binding element extension section. The client and server configuration files must register the binding element extension with the configuration system. Implementers that want to expose their binding element to the configuration system can derive from this class.  
   
 ```csharp
@@ -70,9 +75,11 @@ public abstract class InterceptingElement : BindingElementExtensionElement
 ```  
   
 ## Adding Policy  
+
  To integrate with our policy system, `InterceptingBindingElement` implements IPolicyExportExtension to signal that we should participate in generating policy. To support importing policy on a generated client, the user can register a derived class of `InterceptingBindingElementImporter` and override `CreateMessageInterceptor`() to generate their policy-enabled `ChannelMessageInterceptor` class.  
   
 ## Example: Droppable Message Inspector  
+
  Included in the sample is an example implementation of `ChannelMessageInspector` which drops messages.  
   
 ```csharp

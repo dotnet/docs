@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 4cc3b20b-778a-4ae8-b58c-a3822fb13065
 ---
 # Channels Extensibility
+
 This section contains samples that demonstrate custom channels.  
   
 ## In This Section  
+
  [Local Channel](local-channel.md)  
  Demonstrates the local channel, a WCF transport channel that is used for communication within the same application domain.  
   

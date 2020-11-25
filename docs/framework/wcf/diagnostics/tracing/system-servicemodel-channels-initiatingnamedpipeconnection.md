@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 23bd5f35-4a9c-4ccb-a153-f3f6f6594199
 ---
 # System.ServiceModel.Channels.InitiatingNamedPipeConnection
+
 System.ServiceModel.Channels.InitiatingNamedPipeConnection  
   
 ## Description  
+
  Initiating a named pipe connection.  
   
 ## See also

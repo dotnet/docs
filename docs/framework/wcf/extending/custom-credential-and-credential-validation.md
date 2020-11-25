@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: da831bec-e281-4d44-b343-437b5eef688e
 ---
 # Custom Credential and Credential Validation
+
 Security in Windows Communication Foundation (WCF) is based on the exchange of credentials between services and clients. Most security scenarios can be satisfied using common credential types, such as Windows (Kerberos), username and passwords, and certificates. However, if a new type of credential is required, the topics in this section explain how to handle and validate new types.  
   
 ## In This Section  
+
  [How to: Create a Service that Employs a Custom Certificate Validator](how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
  Explains how to customize WCF validation by inheriting from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.  
   
@@ -26,6 +28,7 @@ Security in Windows Communication Foundation (WCF) is based on the exchange of c
  Explains how to create a custom authenticator to authenticate a new credential type. This is the third topic in the series.  
   
 ## Reference  
+
  <xref:System.ServiceModel.Security>  
   
  <xref:System.IdentityModel.Claims>  
@@ -43,6 +46,7 @@ Security in Windows Communication Foundation (WCF) is based on the exchange of c
  <xref:System.ServiceModel.Description.ServiceCredentials>  
   
 ## Related Sections  
+
  [Authentication](../feature-details/authentication-in-wcf.md)  
   
  [Federation and Issued Tokens](../feature-details/federation-and-issued-tokens.md)  

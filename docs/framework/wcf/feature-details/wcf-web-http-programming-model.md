@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 2312a8d3-b66e-4623-ba42-978434300c7f
 ---
 # WCF Web HTTP Programming Model
+
 The Windows Communication Foundation (WCF) Web HTTP Programming Model allows developers to expose WCF service operations to non-SOAP endpoints. The topics in this section examine the feature in detail.  
   
 ## In This Section  
+
  [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md)  
  Provides an overview of the Windows Communication Foundation (WCF) Web HTTP Programming Model.  
   

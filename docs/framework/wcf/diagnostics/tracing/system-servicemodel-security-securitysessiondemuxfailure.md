@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 74b89d9a-22be-4799-b9fb-e3dfa5426dec
 ---
 # System.ServiceModel.Security.SecuritySessionDemuxFailure
+
 System.ServiceModel.Security.SecuritySessionDemuxFailure  
   
 ## Description  
+
  The incoming message is not part of an existing security session.  
   
 ## See also

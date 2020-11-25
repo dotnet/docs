@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 87afe601-5e25-4964-b9c5-aed6d3d35e1c
 ---
 # 3319 - SocketAcceptEnqueued
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 87afe601-5e25-4964-b9c5-aed6d3d35e1c
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted when the connection accept started.  
   
 ## Message  
+
  Connection accept started.  
   
 ## Details

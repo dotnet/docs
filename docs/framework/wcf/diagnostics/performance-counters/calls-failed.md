@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 52afeff8-333c-44a5-96ce-1f3c418523fc
 ---
 # Calls Failed
+
 Counter Name: Calls Failed  
   
 ## Description  
+
  Number of calls with unhandled exceptions in this operation. This counter is incremented every time there is an unhandled exception in this operation.  
   
 ## See also

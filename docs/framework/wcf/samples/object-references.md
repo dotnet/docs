@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7a93d260-91c3-4448-8f7a-a66fb562fc23
 ---
 # Object References
+
 This sample demonstrates how to pass objects by references between server and client. The sample uses simulated *social networks*. A social network consists of a `Person` class that contains a list of friends in which each friend is an instance of the `Person` class, with its own list of friends. This creates a graph of objects. The service exposes operations on these social networks.  
   
  In this sample, the service is hosted by Internet Information Services (IIS) and the client is a console application (.exe).  
@@ -12,6 +13,7 @@ This sample demonstrates how to pass objects by references between server and cl
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 ## Service  
+
  The `Person` class has the <xref:System.Runtime.Serialization.DataContractAttribute> attribute applied, with the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> field set to `true` to declare it as a reference type. All properties have the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute applied.  
   
 ```csharp
@@ -86,6 +88,7 @@ public List<Person> GetCommonFriends(List<Person> people)
 ```  
   
 ## Client  
+
  The client proxy is created using the **Add Service Reference** feature of Visual Studio.  
   
  A social network that consists of five `Person` objects is created. The client calls each of the three methods in the service.  

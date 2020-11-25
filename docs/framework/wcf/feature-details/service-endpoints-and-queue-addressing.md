@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7d2d59d7-f08b-44ed-bd31-913908b83d97
 ---
 # Service Endpoints and Queue Addressing
+
 This topic discusses how clients address services that read from queues and how service endpoints map to queues. As a reminder, the following illustration shows the classic Windows Communication Foundation (WCF) queued application deployment.  
   
  ![Queued Application Diagram](media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
@@ -11,6 +12,7 @@ This topic discusses how clients address services that read from queues and how 
  For the client to send the message to the service, the client addresses the message to the Target Queue. For the service to read messages from the queue, it sets its listen address to the Target Queue. Addressing in WCF is Uniform Resource Identifier (URI)-based while Message Queuing (MSMQ) queue names are not URI-based. It is therefore essential to understand how to address queues created in MSMQ using WCF.  
   
 ## MSMQ Addressing  
+
  MSMQ uses paths and format names to identify a queue. Paths specify a host name and a `QueueName`. Optionally, there can be a `Private$` between the host name and the `QueueName` to indicate a private queue that is not published in the Active Directory directory service.  
   
  Path names are mapped to "FormatNames" to determine additional aspects of the address, including routing and queue manager transfer protocol. The Queue Manager supports two transfer protocols: native MSMQ protocol and SOAP Reliable Messaging Protocol (SRMP).  
@@ -18,6 +20,7 @@ This topic discusses how clients address services that read from queues and how 
  For more information about MSMQ path and format names, see [About Message Queuing](/previous-versions/windows/desktop/legacy/ms706032(v=vs.85)).  
   
 ## NetMsmqBinding and Service Addressing  
+
  When addressing a message to a service, the scheme in the URI is chosen based on the transport used for communication. Each transport in WCF has a unique scheme. The scheme must reflect the nature of transport used for communication. For example, net.tcp, net.pipe, HTTP, and so on.  
   
  The MSMQ queued transport in WCF exposes a net.msmq scheme. Any message addressed using the net.msmq scheme is sent using the `NetMsmqBinding` over the MSMQ queued transport channel.  
@@ -43,6 +46,7 @@ This topic discusses how clients address services that read from queues and how 
  An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../samples/net-msmq-binding.md).  
   
 ### Multiple Contracts in a Queue  
+
  Messages in a queue can implement different contracts. In this case, it is essential that one of the following is true to successfully read and process all messages:  
   
 - Specify an endpoint for a service that implements all the contracts. This is the recommended approach.  
@@ -50,6 +54,7 @@ This topic discusses how clients address services that read from queues and how 
 - Specify multiple endpoints with different contracts, but ensure that all the endpoints use the same `NetMsmqBinding` object. The dispatching logic in ServiceModel uses a message pump that reads messages out of the transport channel for dispatch, which eventually de-multiplexes messages based on the contract to different endpoints. A message pump is created for a listen URI/Binding pair. The queue address is used as the Listen URI by the queued listener. Having all the endpoints use the same binding object ensures that a single message pump is used to read the message and de-multiplex to relevant endpoints based on the contract.  
   
 ### SRMP Messaging  
+
  As previously discussed, you can use the SRMP protocol for queue-to-queue transfers. This is commonly used when an HTTP transport transmits messages between the Transmission Queue and the Target Queue.  
   
  To use the SRMP transfer protocol, address messages using the net.msmq URI scheme, as mentioned previously, and specify the choice of SRMP or Secured SRMP in the `QueueTransferProtocol` property of the `NetMsmqBinding`.  
@@ -57,11 +62,13 @@ This topic discusses how clients address services that read from queues and how 
  Specifying the `QueueTransferProtocol` property is a send-only feature. This is an indication by the client which kind of queue transfer protocol to use.  
   
 ### Using Active Directory  
+
  MSMQ comes with support for Active Directory integration. When MSMQ is installed with Active Directory integration, the machine must be part of a Windows domain. Active Directory is used to publish queues for discovery; such queues are called *public queues*. When addressing a queue, the queue can be resolved using Active Directory. This is similar to how Domain Name System (DNS) is used to resolve the IP address of a network name. The `UseActiveDirectory` property in `NetMsmqBinding` is a Boolean that indicates whether the queued channel must use Active Directory to resolve the queue URI. By default it is set to `false`. If the `UseActiveDirectory` property is set to `true`, then the queued channel uses Active Directory to convert the net.msmq:// URI to format name.  
   
  The `UseActiveDirectory` property is meaningful only for the client that is sending the message because it is used to resolve the address of the queue when sending messages.  
   
 ### Mapping net.msmq URI to Message Queuing Format Names  
+
  The queued channel handles mapping the net.msmq URI name provided to the channel to MSMQ format names. The following table summarizes the rules used to map between them.  
   
 |WCF URI-based queue address|Use Active Directory property|Queue Transfer Protocol property|Resulting MSMQ format names|  
@@ -71,6 +78,7 @@ This topic discusses how clients address services that read from queues and how 
 |`Net.msmq://<machine-name>/private/abc`|True|Native|`PUBLIC=some-guid` (the GUID of the queue)|  
   
 ### Reading Messages from the Dead-Letter Queue or the Poison-Message Queue  
+
  To read messages from a poison-message queue that is a subqueue of the target queue, open the `ServiceHost` with the address of the subqueue.  
   
  Example: A service that reads from the poison-message queue of the PurchaseOrders private queue from the local machine would address net.msmq://localhost/private/PurchaseOrders;poison.  
@@ -86,6 +94,7 @@ This topic discusses how clients address services that read from queues and how 
  A WCF service verifies that all messages it receives were addressed to the particular queue it is listening on. If the message’s destination queue does not match the queue it is found in, the service does not process the message. This is an issue that services listening to a dead-letter queue must address because any message in the dead-letter queue was meant to be delivered elsewhere. To read messages from a dead-letter queue, or from a poison queue, a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode.Any> parameter must be used. For an example, see [Dead Letter Queues](../samples/dead-letter-queues.md).  
   
 ## MsmqIntegrationBinding and Service Addressing  
+
  The `MsmqIntegrationBinding` is used for communication with traditional MSMQ applications. To ease interoperation with an existing MSMQ application, WCF supports only format name addressing. Thus, messages sent using this binding must conform to the URI scheme:  
   
  msmq.formatname:\<*MSMQ-format-name*>>  

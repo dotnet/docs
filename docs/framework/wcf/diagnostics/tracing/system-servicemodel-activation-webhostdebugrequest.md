@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 632d8084-f492-47bd-a40d-f9281c130149
 ---
 # System.ServiceModel.Activation.WebHostDebugRequest
+
 System.ServiceModel.Activation.WebHostDebugRequest  
   
 ## Description  
+
  The request is for DEBUG verb.  
   
 ## See also

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: efac8d8a-4c91-45f4-8e33-9e370be55eae
 ---
 # System.ServiceModel.ExtensionCollectionIsEmpty
+
 System.ServiceModel.ExtensionCollectionIsEmpty  
   
 ## Description  
+
  The extension collection is empty.  
   
 ## See also

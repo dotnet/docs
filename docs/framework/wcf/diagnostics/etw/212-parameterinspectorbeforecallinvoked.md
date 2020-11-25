@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 063fc8d2-ceac-4c18-8368-de84f2c78035
 ---
 # 212 - ParameterInspectorBeforeCallInvoked
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 063fc8d2-ceac-4c18-8368-de84f2c78035
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted after the Service Model has invoked the `BeforeCall` method on a `ParameterInspector`.  
   
 ## Message  
+
  The Dispatcher invoked 'BeforeCall' on a ParameterInspector of type '%1'.  
   
 ## Details  

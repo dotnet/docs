@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0cf110b1-e25b-4d67-986b-10cb04dc4826
 ---
 # PrivacyNoticeBindingElement
+
 PrivacyNoticeBindingElement  
   
 ## Syntax  
@@ -17,12 +18,15 @@ class PrivacyNoticeBindingElement : BindingElement
 ```  
   
 ## Methods  
+
  The PrivacyNoticeBindingElement class does not define any methods.  
   
 ## Properties  
+
  The PrivacyNoticeBindingElement class has the following properties:  
   
 ### PrivacyNoticeVersion  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -30,6 +34,7 @@ class PrivacyNoticeBindingElement : BindingElement
  The privacy notice version.  
   
 ### Url  
+
  Data type: string  
   
  Access type: Read-only  

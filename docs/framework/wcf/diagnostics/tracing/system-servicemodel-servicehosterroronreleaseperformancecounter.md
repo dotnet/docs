@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 5a83a2c6-f86b-4dbe-8882-2984a3c38fc3
 ---
 # System.ServiceModel.ServiceHostErrorOnReleasePerformanceCounter
+
 System.ServiceModel.ServiceHostErrorOnReleasePerformanceCounter  
   
 ## Description  
+
  Errors occurred on the ServiceHost when calling ReleasePerformanceCounters. This trace can be used to determine errors when releasing performance counters.  
   
 ## See also

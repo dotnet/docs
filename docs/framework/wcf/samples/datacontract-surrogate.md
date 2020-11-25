@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b0188f3c-00a9-4cf0-a887-a2284c8fb014
 ---
 # DataContract Surrogate
+
 This sample demonstrates how processes like serialization, deserialization, schema export, and schema import can be customized using a data contract surrogate class. This sample shows how to use a surrogate in a client and server scenario where data is serialized and transmitted between a Windows Communication Foundation (WCF) client and service.  
   
 > [!NOTE]

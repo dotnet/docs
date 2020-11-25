@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: c6cb0065-b4f6-40eb-89ac-5e8f0e05e0de
 ---
 # System.ServiceModel.Security.SecurityTokenAuthenticatorOpened
+
 System.ServiceModel.Security.SecurityTokenAuthenticatorOpened  
   
 ## Description  
+
  A security token authenticator was opened.  
   
 ## See also

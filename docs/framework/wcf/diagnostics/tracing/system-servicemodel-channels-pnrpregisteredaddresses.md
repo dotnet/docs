@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b770e042-0555-4668-9b41-e20da092c16a
 ---
 # System.ServiceModel.Channels.PnrpRegisteredAddresses
+
 The Pnrp Resolver has registered the local node's addresses.  
   
 ## Description  
+
  This trace occurs after the PNRP service successfully registers the local node's addresses.  
   
 ## See also

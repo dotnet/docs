@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: 3b749493-bd8a-4ccb-893e-5948901a1486
 ---
 # Configuration Channel Factory
+
 This sample covers the usage of the <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>. The <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> allows central management of WCF client configuration. This can also be useful in scenarios in which configuration is selected or changed after the application domain load time.
 
 ## Demonstrates
+
  <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601>
 
 ## Discussion
+
  This sample shows how to use <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> to add a particular configuration file to a client application, without having to use the default application configuration file.
 
  The sample consists of two projects. The first project is a simple service that runs to reply to messages coming from the clients. The second project is a client application that builds two <xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601> objects using a <xref:System.Configuration.ExeConfigurationFileMap> for the Test.config configuration file and uses them to communicate with the service. Both clients communicate with the service using the configuration specified in Test.config.

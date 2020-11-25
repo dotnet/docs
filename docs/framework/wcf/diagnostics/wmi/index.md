@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: fe48738d-e31b-454d-b5ec-24c85c6bf79a
 ---
 # Using Windows Management Instrumentation for Diagnostics
+
 Windows Communication Foundation (WCF) exposes inspection data of a service at runtime through a WCF Windows Management Instrumentation (WMI) provider.  
   
 ## Enabling WMI  
+
  WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. For more information about the WMI SDK, see [Windows Management Instrumentation](/windows/desktop/WmiSdk/wmi-start-page). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  
   
  A WMI provider is a component that exposes instrumentation at runtime through a WBEM-compatible interface. It consists of a set of WMI objects that have attribute/value pairs. Pairs can be of a number of simple types. Management tools can connect to the services through the interface at runtime. WCF exposes attributes of services such as addresses, bindings, behaviors, and listeners.  
@@ -24,6 +26,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
  This configuration entry exposes a WMI interface. Management applications can now connect through this interface and access the management instrumentation of the application.  
   
 ## Accessing WMI Data  
+
  WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the .NET Framework. For more information, see [Using WMI](/windows/win32/wmisdk/using-wmi).  
   
 > [!CAUTION]
@@ -40,6 +43,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
  **Caution** WMI only supports a <xref:System.TimeSpan> value up to 3 decimal points. For example, if your service sets one of its properties to <xref:System.TimeSpan.MaxValue>, its value is truncated after 3 decimal points when viewed through WMI.  
   
 ## Security  
+
  Because the WCF WMI provider allows the discovery of services in an environment, you should exercise extreme caution for granting access to it. If you relax the default administrator-only access, you may allow less-trusted parties access to sensitive data in your environment. Specifically, if you loosen permissions on remote WMI access, flooding attacks can occur. If a process is flooded by excessive WMI requests, its performance can be degraded.  
   
  In addition, if you relax access permissions for the MOF file, less-trusted parties can manipulate the behavior of WMI and alter the objects that are loaded in the WMI schema. For example, fields can be removed such that critical data is concealed from the administrator or that fields that do not populate or cause exceptions are added to the file.  
@@ -59,6 +63,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
 4. Select the specific group or user that you want to control access and use the **Allow** or **Deny** checkbox to configure permissions.  
   
 ## Granting WCF WMI Registration Permissions to Additional Users  
+
  WCF exposes management data to WMI. It does so by hosting an in-process WMI provider, sometimes called a "decoupled provider". For the management data to be exposed, the account that registers this provider must have the appropriate permissions. In Windows, only a small set of privileged accounts can register decoupled providers by default. This is a problem because users commonly want to expose WMI data from a WCF service running under an account that is not in the default set.  
   
  To provide this access, an administrator must grant the following permissions to the additional account in the following order:  
@@ -135,6 +140,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
     ```  
   
 ### Granting Access to Arbitrary Users or Groups  
+
  The example in this section grants WMI Provider registration privileges to all local users. If you want to grant access to a user or group that is not built in, then you must obtain that user or group's Security Identifier (SID). There is no simple way to get the SID for an arbitrary user. One method is to log on as the desired user and then issue the following shell command.  
   
 ```console
@@ -144,6 +150,7 @@ Whoami /user
  This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](/windows/win32/wmisdk/using-wmi) tool from the Windows 2000 Resource Kit Tools for administrative tasks. This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. For more information, see [Well Known SIDs](https://support.microsoft.com/help/243330/well-known-security-identifiers-in-windows-operating-systems).  
   
 ## Accessing Remote WMI Object Instances  
+
  If you need to access WCF WMI instances on a remote machine, you must enable packet privacy on the tools that you use for access. The following section describes how to achieve these using the WMI CIM Studio, Windows Management Instrumentation Tester, as well as .NET SDK 2.0.  
   
 ### WMI CIM Studio
@@ -157,6 +164,7 @@ If you've installed WMI Administrative Tools, you can use the WMI CIM Studio to 
 2. In the **WMI CIM Studio Login** window, click the **Options >>** button to expand the window. Select **Packet privacy** for **Authentication level**, and click **OK**.  
   
 ### Windows Management Instrumentation Tester  
+
  This tool is installed by Windows. To run it, launch a command console by typing **cmd.exe** in the **Start/Run** dialog box and click **OK**. Then, type **wbemtest.exe** in the command window. The Windows Management Instrumentation Tester tool is then launched.  
   
 1. Click the **Connect** button on the top right corner of the window.  
@@ -164,6 +172,7 @@ If you've installed WMI Administrative Tools, you can use the WMI CIM Studio to 
 2. In the new window, enter **root\ServiceModel** for the **Namespace** field, and select **Packet privacy** for **Authentication level**. Click **Connect**.  
   
 ### Using Managed Code  
+
  You can also access remote WMI instances programmatically by using classes provided by the <xref:System.Management> namespace. The following code sample demonstrates how to do this.  
   
 ```csharp

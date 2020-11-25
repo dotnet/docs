@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b05c1742-8d0a-4673-9d71-725b18a3008e
 ---
 # How to: Add an ASP.NET AJAX Endpoint Without Using Configuration
+
 Windows Communication Foundation (WCF) allows you to create a service that exposes an ASP.NET AJAX-enabled endpoint that can be called from JavaScript on a client Web site. To create such an endpoint, you can either use a configuration file, as with all other WCF endpoints, or use a method that does not require any configuration elements. This topic demonstrates the second approach.  
   
  To create services with ASP.NET AJAX endpoints without configuration, the services must be hosted by Internet Information Services (IIS). To activate an ASP.NET AJAX endpoint using this approach, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> as the Factory parameter in the [\@ServiceHost](../../configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file. This custom factory is the component that automatically configures an ASP.NET AJAX endpoint so that it can be called from JavaScript on a client Web site.  

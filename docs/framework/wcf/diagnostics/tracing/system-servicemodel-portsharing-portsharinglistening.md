@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 05528126-de72-4801-93ab-397f3c32b809
 ---
 # System.ServiceModel.PortSharing.PortSharingListening
+
 System.ServiceModel.PortSharing.PortSharingListening  
   
 ## Description  
+
  The TransportManager is now successfully listening.  
   
 ## See also

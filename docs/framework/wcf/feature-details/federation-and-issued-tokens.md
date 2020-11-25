@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 4c31ee7d-a820-4067-8b84-a83049021bb6
 ---
 # Federation and Issued Tokens
+
 With Windows Communication Foundation (WCF), you can create clients that communicate securely with services that implement the WS-Federation and WS-Trust specifications. The specifications use XML, SOAP, and Web Services Description Language (WSDL) to provide mechanisms that enable authentication and authorization across different trust realms.  
   
 ## In This Section  
+
  [Federation](federation.md)  
  Provides an overview of federation.  
   
@@ -39,6 +41,7 @@ With Windows Communication Foundation (WCF), you can create clients that communi
  Describes how to disable secure sessions on a `WSFederationHttpBinding`. Disabling secure sessions is necessary when creating a Web farm that requires a session for each client.  
   
 ## Reference  
+
  <xref:System.IdentityModel.Claims>  
   
  <xref:System.ServiceModel.ServiceAuthorizationManager>  

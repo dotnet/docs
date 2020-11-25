@@ -24,6 +24,7 @@ After you create a service, the next step is to create a WCF client proxy. A cli
 The WCF client proxy can be generated manually by using the Service Model Metadata Utility Tool (SvcUtil.exe) for more information see, [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md). The WCF client proxy can also be generated within Visual Studio using the **Add Service Reference**  feature. To generate the WCF client proxy using either method the service must be running. If the service is self-hosted you must run the host. If the service is hosted in IIS/WAS you do not need to do anything else.
 
 ## ServiceModel Metadata Utility Tool
+
  The [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) is a command-line tool for generating code from metadata. The following use is an example of a basic Svcutil.exe command.
 
 ```console
@@ -54,6 +55,7 @@ Svcutil.exe <file1 [,file2]>
  With the service running, right click the project that will contain the WCF client proxy and select **Add** > **Service Reference**. In the **Add Service Reference Dialog**, type in the URL to the service you want to call and click the **Go** button. The dialog will display a list of services available at the address you specify. Double click the service to see the contracts and operations available, specify a namespace for the generated code, and click the **OK** button.
 
 ## Example
+
  The following code example shows a service contract created for a service.
 
 ```csharp
@@ -145,6 +147,7 @@ End Class
 ```
 
 ## Using the WCF Client
+
  To use the WCF client, create an instance of the WCF client, and then call its methods, as shown in the following code.
 
 ```csharp

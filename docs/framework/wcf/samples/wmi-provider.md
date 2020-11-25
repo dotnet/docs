@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 462f0db3-f4a4-4a4b-ac26-41fc25c670a4
 ---
 # WMI Provider
+
 This sample demonstrates how to gather data from Windows Communication Foundation (WCF) services at runtime by using the Windows Management Instrumentation (WMI) provider that is built into WCF. Also, this sample demonstrates how to add a user-defined WMI object to a service. The sample activates the WMI provider for the [Getting Started](getting-started-sample.md) and demonstrates how to gather data from the `ICalculator` service at runtime.  
   
  WMI is Microsoft's implementation of the Web-Based Enterprise Management (WBEM) standard. For more information about the WMI SDK, see [Windows Management Instrumentation](/windows/desktop/WmiSdk/wmi-start-page). WBEM is an industry standard for how applications expose management instrumentation to external management tools.  
@@ -23,6 +24,7 @@ This sample demonstrates how to gather data from Windows Communication Foundatio
  This configuration entry exposes a WMI interface. Management applications can now connect through this interface and access the management instrumentation of the application.  
   
 ## Custom WMI Object  
+
  Adding WMI objects to a service makes it possible to reveal user-defined information along with the built-in WMI provider information. This is accomplished by publishing the schema of the service to WMI by using the Installutil.exe application. Instructions to accomplish this, along with more details can be found in the setup instructions at the end of the topic.  
   
 ## Accessing WMI Information  

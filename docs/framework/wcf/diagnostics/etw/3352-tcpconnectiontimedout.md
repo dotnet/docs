@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8340caa6-1ccb-48b7-8340-5052d3c811f6
 ---
 # 3352 - TcpConnectionTimedOut
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 8340caa6-1ccb-48b7-8340-5052d3c811f6
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when the TCP connection timed out.  
   
 ## Message  
+
  SocketId:%1 to remote address %2 timed out.  
   
 ## Details

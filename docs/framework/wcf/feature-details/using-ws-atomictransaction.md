@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 04a4c200-0af0-4c5d-a3d9-87cb7339e054
 ---
 # Using WS-AtomicTransaction
+
 WS-AtomicTransaction (WS-AT) is an interoperable transaction protocol. It enables you to flow distributed transactions by using Web service messages, and coordinate in an interoperable manner between heterogeneous transaction infrastructures. WS-AT uses the two-phase commit protocol to drive an atomic outcome between distributed applications, transaction managers, and resource managers.  
   
  The WS-AT implementation Windows Communication Foundation (WCF) provides includes a protocol service built into the Microsoft Distributed Transaction Coordinator (MSDTC) transaction manager. Using WS-AT, WCF applications can flow transactions to other applications, including interoperable Web services built using third-party technology.  

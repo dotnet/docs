@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 381fdc3a-6e6c-4890-87fe-91cca6f4b476
 ---
 # WCF Web HTTP Programming Model Overview
+
 The Windows Communication Foundation (WCF) WEB HTTP programming model provides the basic elements required to build WEB HTTP services with WCF. WCF WEB HTTP services are designed to be accessed by the widest range of possible clients, including Web browsers and have the following unique requirements:  
   
 - **URIs and URI Processing** URIs play a central role in the design of WEB HTTP services. The WCF WEB HTTP programming model uses the <xref:System.UriTemplate> and <xref:System.UriTemplateTable> classes to provide URI processing capabilities.  
@@ -23,6 +24,7 @@ The Windows Communication Foundation (WCF) WEB HTTP programming model provides t
 > Installing the WebDAV extension for IIS can cause Web HTTP services to return an HTTP 405 error as the WebDAV extension attempts to handle all PUT requests. To work around this issue you can uninstall the WebDAV extension or disable the WebDAV extension for your web site. For more information, see [IIS and WebDav](https://learn.iis.net/page.aspx/357/webdav-for-iis-70/)  
   
 ## URI Processing with UriTemplate and UriTemplateTable  
+
  URI templates provide an efficient syntax for expressing large sets of structurally similar URIs. For example, the following template expresses the set of all three-segment URIs that begin with "a" and end with "c" without regard to the value of the intermediate segment: a/{segment}/c  
   
  This template describes URIs like the following:  
@@ -50,6 +52,7 @@ The Windows Communication Foundation (WCF) WEB HTTP programming model provides t
  The WCF Service Model makes use of <xref:System.UriTemplate> and <xref:System.UriTemplateTable> to associate service operations with a set of URIs described by a <xref:System.UriTemplate>. A service operation is associated with a <xref:System.UriTemplate>, using either the <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute>. For more information about <xref:System.UriTemplate> and <xref:System.UriTemplateTable>, see [UriTemplate and UriTemplateTable](uritemplate-and-uritemplatetable.md)  
   
 ## WebGet and WebInvoke Attributes  
+
  WCF WEB HTTP services make use of retrieval verbs (for example HTTP GET) in addition to various invoke verbs (for example HTTP POST, PUT, and DELETE). The WCF WEB HTTP programming model allows service developers to control the both the URI template and verb associated with their service operations with the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute>. The <xref:System.ServiceModel.Web.WebGetAttribute> and the <xref:System.ServiceModel.Web.WebInvokeAttribute> allow you to control how individual operations get bound to URIs and the HTTP methods associated with those URIs. For example, adding <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> in the following code.  
   
 ```csharp
@@ -93,6 +96,7 @@ interface ICustomer
  To see a complete sample of a WCF service that uses the WCF WEB HTTP programming model, see [How to: Create a Basic WCF Web HTTP Service](how-to-create-a-basic-wcf-web-http-service.md)  
   
 ## UriTemplate Query String Parameters and URLs  
+
  Web-style services can be called from a Web browser by typing a URL that is associated with a service operation. These service operations may take query string parameters that must be specified in a string form within the URL. The following table shows the types that can be passed within a URL and the format used.  
   
 |Type|Format|  
@@ -119,6 +123,7 @@ interface ICustomer
 |Types that have a `TypeConverterAttribute` that can convert the type to and from a string representation.|Depends on the Type Converter.|  
   
 ## Formats and the WCF WEB HTTP Programming Model  
+
  The WCF WEB HTTP programming model has new features to work with many different data formats. At the binding layer, the <xref:System.ServiceModel.WebHttpBinding> can read and write the following different kinds of data:  
   
 - XML  
@@ -136,6 +141,7 @@ interface ICustomer
 Because the WCF WEB HTTP programming model does not support the WS-* protocols, the only way to secure a WCF WEB HTTP service is to expose the service over HTTPS using SSL. For more information about setting up SSL with IIS 7.0, see [How to implement SSL in IIS](https://support.microsoft.com/help/299875/how-to-implement-ssl-in-iis).
   
 ## Troubleshooting the WCF WEB HTTP Programming Model  
+
  When calling WCF WEB HTTP services using a <xref:System.ServiceModel.Channels.ChannelFactoryBase%601> to create a channel, the <xref:System.ServiceModel.Description.WebHttpBehavior> uses the <xref:System.ServiceModel.EndpointAddress> set in the configuration file even if a different <xref:System.ServiceModel.EndpointAddress> is passed to the <xref:System.ServiceModel.Channels.ChannelFactoryBase%601>.  
   
 ## See also

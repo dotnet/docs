@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9bd1f305-ad03-4dd7-971f-fa1014b97c9b
 ---
 # Message Inspectors
+
 This sample demonstrates how to implement and configure client and service message inspectors.  
   
  A message inspector is an extensibility object that can be used in the service model's client runtime and dispatch runtime programmatically or through configuration and that can inspect and alter messages after they are received or before they are sent.  
@@ -12,6 +13,7 @@ This sample demonstrates how to implement and configure client and service messa
  This sample implements a basic client and service message validation mechanism that validates incoming messages against a set of configurable XML Schema documents. Note that this sample does not validate messages for each operation. This is an intentional simplification.  
   
 ## Message Inspector  
+
  Client message inspectors implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> interface and service message inspectors implement the <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector> interface. The implementations can be combined into a single class to form a message inspector that works for both sides. This sample implements such a combined message inspector. The inspector is constructed passing in a set of schemas against which incoming and outgoing messages are validated and allows the developer to specify whether incoming or outgoing messages are validated and whether the inspector is in dispatch or client mode, which affects the error handling as discussed later in this topic.  
   
 ```csharp
@@ -197,6 +199,7 @@ void ValidateMessageBody(ref System.ServiceModel.Channels.Message message, bool 
 ```  
   
 ## Behavior  
+
  Message inspectors are extensions to the client runtime or the dispatch runtime. Such extensions are configured using *behaviors*. A behavior is a class that changes the behavior of the service model runtime by changing the default configuration or adding extensions (such as message inspectors) to it.  
   
  The following `SchemaValidationBehavior` class is the behavior used to add this sample's message inspector to the client or dispatch runtime. The implementation is rather basic in both cases. In <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%2A> and <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior%2A>, the message inspector is created and added to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> collection of the respective runtime.  
@@ -254,6 +257,7 @@ public class SchemaValidationBehavior : IEndpointBehavior
 > This particular behavior does not double as an attribute and therefore cannot be added declaratively onto a contract type of a service type. This is a by-design decision made because the schema collection cannot be loaded in an attribute declaration and referring to an extra configuration location (for instance to the application settings) in this attribute means creating a configuration element that is not consistent with the rest of the service model configuration. Therefore, this behavior can only be added imperatively through code and through a service model configuration extension.  
   
 ## Adding the Message Inspector through Configuration  
+
  For configuring a custom behavior on an endpoint in the application configuration file, the service model requires implementers to create a configuration *extension element* represented by a class derived from <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>. This extension must then be added to the service model's configuration section for extensions as shown for the following extension discussed in this section.  
   
 ```xml  
@@ -362,6 +366,7 @@ public bool ValidateRequest
 ```  
   
 ## Adding Message Inspectors Imperatively  
+
  Except through attributes (which is not supported in this sample for the reason cited previously) and configuration, behaviors can quite easily be added to a client and service runtime using imperative code. In this sample, this is done in the client application to test the client message inspector. The `GenericClient` class is derived from <xref:System.ServiceModel.ClientBase%601>, which exposes the endpoint configuration to the user code. Before the client is implicitly opened the endpoint configuration can be changed, for instance by adding behaviors as shown in the following code. Adding the behavior on the service is largely equivalent to the client technique shown here and must be performed before the service host is opened.  
   
 ```csharp  

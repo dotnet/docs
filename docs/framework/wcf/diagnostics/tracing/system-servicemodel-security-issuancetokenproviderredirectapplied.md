@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: d69e50dc-f7d5-423d-9a1c-a23d558e78af
 ---
 # System.ServiceModel.Security.IssuanceTokenProviderRedirectApplied
+
 System.ServiceModel.Security.IssuanceTokenProviderRedirectApplied  
   
 ## Description  
+
  The IssuanceTokenProvider applied a redirection header.  
   
 ## See also

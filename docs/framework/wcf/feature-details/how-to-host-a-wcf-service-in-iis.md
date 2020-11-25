@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: b044b1c9-c1e5-4c9f-84d8-0f02f4537f8b
 ---
 # How to: Host a WCF Service in IIS
+
 This topic outlines the basic steps required to create a Windows Communication Foundation (WCF) service that is hosted in Internet Information Services (IIS). This topic assumes you are familiar with IIS and understand how to use the IIS management tool to create and manage IIS applications. For more information about IIS see [Internet Information Services](https://www.iis.net/). A WCF service that runs in the IIS environment takes full advantage of IIS features, such as process recycling, idle shutdown, process health monitoring, and message-based activation. This hosting option requires that IIS be properly configured, but it does not require that any hosting code be written as part of the application. You can use IIS hosting only with an HTTP transport.  
   
  For more information about how WCF and ASP.NET interact, see [WCF Services and ASP.NET](wcf-services-and-aspnet.md). For more information about configuring security, see [Security](security.md).  
@@ -64,6 +65,7 @@ This topic outlines the basic steps required to create a Windows Communication F
 11. To make sure the service is hosted correctly, open an instance of Internet Explorer and browse to the service's URL: `http://localhost/IISHostedCalc/Service.svc`  
   
 ## Example  
+
  The following is a complete listing of the code for the IIS hosted calculator service.  
   
  [!code-csharp[C_HowTo_HostInIIS#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/cs/source.cs#1)]

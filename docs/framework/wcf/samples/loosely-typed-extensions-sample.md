@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 56ce265b-8163-4b85-98e7-7692a12c4357
 ---
 # Loosely-Typed Extensions Sample
+
 The Syndication object model provides rich support for working with extension data—information that is present in a syndication feed's XML representation but not explicitly exposed by classes such as <xref:System.ServiceModel.Syndication.SyndicationFeed> and <xref:System.ServiceModel.Syndication.SyndicationItem>. This sample illustrates the basic techniques for working with extension data.  
   
  The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class for the purposes of the example. However, the patterns demonstrated in this sample can be used with all of the Syndication classes that support extension data:  
@@ -19,6 +20,7 @@ The Syndication object model provides rich support for working with extension da
  <xref:System.ServiceModel.Syndication.SyndicationLink>  
   
 ## Sample XML  
+
  For reference, the following XML document is used in this sample.  
   
 ```xml  
@@ -59,6 +61,7 @@ w.w3.org/2001/XMLSchema" xmlns="">
 - `<xElementExtension>` element.  
   
 ## Writing Extension Data  
+
  Attribute extensions are created by adding entries to the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> collection as shown in the following sample code.  
   
 ```csharp  
@@ -96,6 +99,7 @@ feed.ElementExtensions.Add(new XElement("xElementExtension",
 ```  
   
 ## Reading Extension Data  
+
  The values for attribute extensions can be obtained by looking up the attribute in the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> collection by its <xref:System.Xml.XmlQualifiedName> as shown in the following sample code.  
   
 ```csharp  

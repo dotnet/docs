@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e78aa8c6-b53b-4105-a900-d3e7a39670f2
 ---
 # HttpsTransportBindingElement
+
 HttpsTransportBindingElement  
   
 ## Syntax  
@@ -16,12 +17,15 @@ class HttpsTransportBindingElement : HttpTransportBindingElement
 ```  
   
 ## Methods  
+
  The HttpsTransportBindingElement class does not define any methods.  
   
 ## Properties  
+
  The HttpsTransportBindingElement class has the following property:  
   
 ### RequireClientCertificate  
+
  Data type: boolean  
   
  Access type: Read-only  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 35ae79a1-ec00-4db7-9073-4a5dbd62dc82
 ---
 # 3404 - WrappedKeyDecryptionSuccess
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 35ae79a1-ec00-4db7-9073-4a5dbd62dc82
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted when the wrapped key decryption has succeeded.  
   
 ## Message  
+
  Wrapped key decryption succeeded.  
   
 ## Details

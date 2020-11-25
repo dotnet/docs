@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 738705de-ad3e-40e0-b363-90305bddb140
 ---
 # Transport: UDP
+
 The UDP Transport sample demonstrates how to implement UDP unicast and multicast as a custom Windows Communication Foundation (WCF) transport. The sample describes the recommended procedure for creating a custom transport in WCF, by using the channel framework and following WCF best practices. The steps to create a custom transport are as follows:  
   
 1. Decide which of the channel [Message Exchange Patterns](#MessageExchangePatterns) (IOutputChannel, IInputChannel, IDuplexChannel, IRequestChannel, or IReplyChannel) your ChannelFactory and ChannelListener will support. Then decide whether you will support the sessionful variations of these interfaces.  
@@ -23,7 +24,9 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
 8. Add a binding section and binding configuration element to expose the binding to the configuration system. For more information, see [Adding Configuration Support](#AddingConfigurationSupport).  
   
 <a name="MessageExchangePatterns"></a>
+
 ## Message Exchange Patterns  
+
  The first step in writing a custom transport is to decide which Message Exchange Patterns (MEPs) are required for the transport. There are three MEPs to choose from:  
   
 - Datagram (IInputChannel/IOutputChannel)  
@@ -44,6 +47,7 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
 > For the UDP transport, the only MEP that is supported is Datagram, because UDP is inherently a "fire and forget" protocol.  
   
 ### The ICommunicationObject and the WCF object lifecycle  
+
  WCF has a common state machine that is used for managing the lifecycle of objects like <xref:System.ServiceModel.Channels.IChannel>, <xref:System.ServiceModel.Channels.IChannelFactory>, and <xref:System.ServiceModel.Channels.IChannelListener> that are used for communication. There are five states in which these communication objects can exist. These states are represented by the <xref:System.ServiceModel.CommunicationState> enumeration, and are as follows:  
   
 - Created: This is the state of a <xref:System.ServiceModel.ICommunicationObject> when it is first instantiated. No input/output (I/O) occurs in this state.  
@@ -61,7 +65,9 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
  There are events that fire for each state transition. The <xref:System.ServiceModel.ICommunicationObject.Abort%2A> method can be called at any time, and causes the object to transition immediately from its current state into the Closed state. Calling <xref:System.ServiceModel.ICommunicationObject.Abort%2A> terminates any unfinished work.  
   
 <a name="ChannelAndChannelListener"></a>
+
 ## Channel Factory and Channel Listener  
+
  The next step in writing a custom transport is to create an implementation of <xref:System.ServiceModel.Channels.IChannelFactory> for client channels and of <xref:System.ServiceModel.Channels.IChannelListener> for service channels. The channel layer uses a factory pattern for constructing channels. WCF provides base class helpers for this process.  
   
 - The <xref:System.ServiceModel.Channels.CommunicationObject> class implements <xref:System.ServiceModel.ICommunicationObject> and enforces the state machine previously described in Step 2.
@@ -75,9 +81,11 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
  In this sample, the factory implementation is contained in UdpChannelFactory.cs and the listener implementation is contained in UdpChannelListener.cs. The <xref:System.ServiceModel.Channels.IChannel> implementations are in UdpOutputChannel.cs and UdpInputChannel.cs.  
   
 ### The UDP Channel Factory  
+
  The `UdpChannelFactory` derives from <xref:System.ServiceModel.Channels.ChannelFactoryBase>. The sample overrides <xref:System.ServiceModel.Channels.ChannelFactoryBase.GetProperty%2A> to provide access to the message version of the message encoder. The sample also overrides <xref:System.ServiceModel.Channels.ChannelFactoryBase.OnClose%2A> so that we can tear down our instance of <xref:System.ServiceModel.Channels.BufferManager> when the state machine transitions.  
   
 #### The UDP Output Channel  
+
  The `UdpOutputChannel` implements <xref:System.ServiceModel.Channels.IOutputChannel>. The constructor validates the arguments and constructs a destination <xref:System.Net.EndPoint> object based on the <xref:System.ServiceModel.EndpointAddress> that is passed in.  
   
 ```csharp
@@ -103,6 +111,7 @@ this.socket.SendTo(messageBuffer.Array, messageBuffer.Offset, messageBuffer.Coun
 ```  
   
 ### The UdpChannelListener  
+
  The `UdpChannelListener` that the sample implements derives from the <xref:System.ServiceModel.Channels.ChannelListenerBase> class. It uses a single UDP socket to receive datagrams. The `OnOpen` method receives data using the UDP socket in an asynchronous loop. The data are then converted into messages using the Message Encoding Framework.  
   
 ```csharp
@@ -112,10 +121,13 @@ message = MessageEncoderFactory.Encoder.ReadMessage(new ArraySegment<byte>(buffe
  Because the same datagram channel represents messages that arrive from a number of sources, the `UdpChannelListener` is a singleton listener. There is, at most, one active <xref:System.ServiceModel.Channels.IChannel> associated with this listener at a time. The sample generates another one only if a channel that is returned by the `AcceptChannel` method is subsequently disposed. When a message is received, it is enqueued into this singleton channel.  
   
 #### UdpInputChannel  
+
  The `UdpInputChannel` class implements `IInputChannel`. It consists of a queue of incoming messages that is populated by the `UdpChannelListener`'s socket. These messages are dequeued by the `IInputChannel.Receive` method.  
   
 <a name="AddingABindingElement"></a>
+
 ## Adding a Binding Element  
+
  Now that the factories and channels are built, we must expose them to the ServiceModel runtime through a binding. A binding is a collection of binding elements that represents the communication stack associated with a service address. Each element in the stack is represented by a [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element.  
   
  In the sample, the binding element is `UdpTransportBindingElement`, which derives from <xref:System.ServiceModel.Channels.TransportBindingElement>. It overrides the following methods to build the factories associated with our binding.  
@@ -135,12 +147,15 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
  It also contains members for cloning the `BindingElement` and returning our scheme (soap.udp).  
   
 ## Adding Metadata Support for a Transport Binding Element  
+
  To integrate our transport into the metadata system, we must support both the import and export of policy. This allows us to generate clients of our binding through the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ### Adding WSDL Support  
+
  The transport binding element in a binding is responsible for exporting and importing addressing information in metadata. When using a SOAP binding, the transport binding element should also export a correct transport URI in metadata.  
   
 #### WSDL Export  
+
  To export addressing information the `UdpTransportBindingElement` implements the `IWsdlExportExtension` interface. The `ExportEndpoint` method adds the correct addressing information to the WSDL port.  
   
 ```csharp
@@ -161,6 +176,7 @@ if (soapBinding != null)
 ```  
   
 #### WSDL Import  
+
  To extend the WSDL import system to handle importing the addresses, we must add the following configuration to the configuration file for Svcutil.exe as shown in the Svcutil.exe.config file.  
   
 ```xml
@@ -195,9 +211,11 @@ if (transportBindingElement is UdpTransportBindingElement)
 ```  
   
 ### Adding Policy Support  
+
  The custom binding element can export policy assertions in the WSDL binding for a service endpoint to express the capabilities of that binding element.  
   
 #### Policy Export  
+
  The `UdpTransportBindingElement` type implements `IPolicyExportExtension` to add support for exporting policy. As a result, `System.ServiceModel.MetadataExporter` includes `UdpTransportBindingElement` in the generation of policy for any binding that includes it.  
   
  In `IPolicyExportExtension.ExportPolicy`, we add an assertion for UDP and another assertion if we are in multicast mode. This is because multicast mode affects how the communication stack is constructed, and thus must be coordinated between both sides.  
@@ -223,6 +241,7 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
 ```  
   
 #### Policy Import  
+
  To extend the Policy Import system, we must add the following configuration to the configuration file for Svcutil.exe as shown in the Svcutil.exe.config file.  
   
 ```xml
@@ -246,7 +265,9 @@ AddWSAddressingAssertion(context, encodingBindingElement.MessageVersion.Addressi
 2. Add the configuration section to Svcutil.exe.config in the same directory as Svcutil.exe.  
   
 <a name="AddingAStandardBinding"></a>
+
 ## Adding a Standard Binding  
+
  Our binding element can be used in the following two ways:  
   
 - Through a custom binding: A custom binding allows the user to create their own binding based on an arbitrary set of binding elements.  
@@ -271,6 +292,7 @@ public override BindingElementCollection CreateBindingElements()
 ```  
   
 ### Adding a Custom Standard Binding Importer  
+
  Svcutil.exe and the `WsdlImporter` type, by default, recognizes and imports system-defined bindings. Otherwise, the binding gets imported as a `CustomBinding` instance. To enable Svcutil.exe and the `WsdlImporter` to import the `SampleProfileUdpBinding` the `UdpBindingElementImporter` also acts as a custom standard binding importer.  
   
  A custom standard binding importer implements the `ImportEndpoint` method on the `IWsdlImportExtension` interface to examine the `CustomBinding` instance imported from metadata to see whether it could have been generated by a specific standard binding.  
@@ -296,10 +318,13 @@ if (context.Endpoint.Binding is CustomBinding)
  Generally, implementing a custom standard binding importer involves checking the properties of the imported binding elements to verify that only properties that could have been set by the standard binding have changed and all other properties are their defaults. A basic strategy for implementing a standard binding importer is to create an instance of the standard binding, propagate the properties from the binding elements to the standard binding instance that the standard binding supports, and the compare the binding elements from the standard binding with the imported binding elements.  
   
 <a name="AddingConfigurationSupport"></a>
+
 ## Adding Configuration Support  
+
  To expose our transport through configuration, we must implement two configuration sections. The first is a `BindingElementExtensionElement` for `UdpTransportBindingElement`. This is so that `CustomBinding` implementations can reference our binding element. The second is a `Configuration` for our `SampleProfileUdpBinding`.  
   
 ### Binding Element Extension Element  
+
  The section `UdpTransportElement` is a `BindingElementExtensionElement` that exposes `UdpTransportBindingElement` to the configuration system. With a few basic overrides, we define our configuration section name, the type of our binding element and how to create our binding element. We can then register our extension section in a configuration file as shown in the following code.  
   
 ```xml
@@ -331,6 +356,7 @@ if (context.Endpoint.Binding is CustomBinding)
 ```  
   
 ### Binding Section  
+
  The section `SampleProfileUdpBindingCollectionElement` is a `StandardBindingCollectionElement` that exposes `SampleProfileUdpBinding` to the configuration system. The bulk of the implementation is delegated to the `SampleProfileUdpBindingConfigurationElement`, which derives from `StandardBindingElement`. The `SampleProfileUdpBindingConfigurationElement` has properties that correspond to the properties on `SampleProfileUdpBinding`, and functions to map from the `ConfigurationElement` binding. Finally, override the `OnApplyConfiguration` method in our `SampleProfileUdpBinding`, as shown in the following sample code.  
   
 ```csharp
@@ -388,6 +414,7 @@ protected override void OnApplyConfiguration(string configurationName)
 ```  
   
 ## The UDP Test Service and Client  
+
  Test code for using this sample transport is available in the UdpTestService and UdpTestClient directories. The service code consists of two tests—one test sets up bindings and endpoints from code and the other does it through configuration. Both tests use two endpoints. One endpoint uses the `SampleUdpProfileBinding` with [\<reliableSession>](/previous-versions/ms731375(v=vs.90)) set to `true`. The other endpoint uses a custom binding with `UdpTransportBindingElement`. This is equivalent to using `SampleUdpProfileBinding` with [\<reliableSession>](/previous-versions/ms731375(v=vs.90)) set to `false`. Both tests create a service, add an endpoint for each binding, open the service and then wait for the user to hit ENTER before closing the service.  
   
  When you start the service test application you should see the following output.  

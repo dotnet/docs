@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
 ---
 # Transaction Protocols
+
 Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-Coordination protocols.  
   
 |Specification/Document|Version|Link|  
@@ -62,6 +63,7 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
 |xsd||<https://www.w3.org/2001/XMLSchema>|  
   
 ## Transaction Manager Bindings  
+
  R1001: Transaction Managers participating in a WS-AT 1.0 transaction must use SOAP 1.1 and WS-Addressing 2004/08 for WS-Atomic Transaction and WS-Coordination message exchanges.  
   
  R1002: Transaction Managers participating in a WS-AT 1.1 transaction must use SOAP 1.1 and WS-Addressing 2005/08 for WS-Atomic Transaction and WS-Coordination message exchanges.  
@@ -69,9 +71,11 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
  Application messages are not constrained to these bindings and are described later.  
   
 ### Transaction Manager HTTPS Binding  
+
  The transaction manager HTTPS binding relies solely on transport security to achieve security and establish trust between each sender-receiver pair in the transaction tree.  
   
 #### HTTPS Transport Configuration  
+
  X.509 certificates are used to establish Transaction Manager Identity. Client/server authentication is required, and client/server authorization is left as an implementation detail:  
   
 - R1111: X.509 certificates presented over the wire must have a subject name that matches the fully qualified domain name (FQDN) of the originating machine.  
@@ -79,20 +83,25 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
 - B1112: DNS must be functional between each sender-receiver pair in the system for X.509 subject name checks to succeed.  
   
 #### Activation and Registration Binding Configuration  
+
  WCF requires request/reply duplex binding with correlation over HTTPS. (For more information about correlation and descriptions of the request/reply message exchange patterns, see WS-Atomic Transaction, Section 8.)  
   
 #### 2PC Protocol Binding Configuration  
+
  WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
   
  B1131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
   
 ### Transaction Manager Mixed Security Binding  
+
  This is an alternate (mixed mode) binding that uses transport security combined with the WS-Coordination Issued Token model for identity establishment purposes. Activation and Registration are the only elements that differ between the two bindings.  
   
 #### HTTPS Transport Configuration  
+
  X.509 certificates are used to establish Transaction Manager Identity. Client/Server authentication is required, and client/server authorization is left as an implementation detail.  
   
 #### Activation Message Binding Configuration  
+
  Activation Messages usually do not participate in interoperability because they typically occur between an application and its local Transaction Manager.  
   
  B1221: WCF uses duplex HTTPS binding (described in [Messaging Protocols](messaging-protocols.md)) for Activation messages. Request and Reply messages are correlated using WS-Addressing 2004/08 for WS-AT 1.0 and WS-Addressing 2005/08 for WS-AT 1.1.  
@@ -106,6 +115,7 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
  A new `t:IssuedTokens` header should be generated for attaching to the outgoing `wscoor:CreateCoordinationContextResponse` message.  
   
 #### Registration Message Binding Configuration  
+
  B1231: WCF uses duplex HTTPS binding (described in [Messaging Protocols](messaging-protocols.md)). Request and Reply messages are correlated using WS-Addressing 2004/08 for WS-AT 1.0 and WS-Addressing 2005/08 for WS-AT 1.1.  
   
  WS-AtomicTransaction, Section 8, describes further details about correlation and descriptions of the message exchange patterns.  
@@ -115,11 +125,13 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
  The `wsse:Timestamp` element must be signed using the `SecurityContextToken STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
   
 #### 2PC Protocol Binding Configuration  
+
  WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
   
  B1241: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
   
 ## Application Message Exchange  
+
  Applications are free to use any particular binding for application-to-application messages, as long as the binding meets the following security requirements:  
   
 - R2001: Application-to-application messages must flow the `t:IssuedTokens` header along with the `CoordinationContext` in the header of the message.  
@@ -133,6 +145,7 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
 ## Message Examples  
   
 ### CreateCoordinationContext Request/Response Messages  
+
  The following messages follow a request/response pattern.  
   
 #### CreateCoordinationContext with WSCoor 1.0  
@@ -346,6 +359,7 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
 ```  
   
 ### Registration Messages  
+
  The following messages are registration messages.  
   
 #### Register with WSCoor 1.0  
@@ -536,6 +550,7 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 ```  
   
 ### Two Phase Commit Protocol Messages  
+
  The following message relates to the two-phase commit (2PC) protocol.  
   
 #### Commit with WSAT 1.0  
@@ -585,6 +600,7 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 ```  
   
 ### Application Messages  
+
  The following messages are application messages.  
   
 #### Application message-Request  

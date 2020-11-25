@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6b530ded-8f20-4d78-8bfe-1875276df6ba
 ---
 # 222 - OperationFailed
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 6b530ded-8f20-4d78-8bfe-1875276df6ba
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when the Service Model's default `OperationInvoker` has encountered an exception while invoking its method. Note that exceptions that derive from `FaultException` cause this event to not be emitted.  
   
 ## Message  
+
  The '%1' method threw an unhandled exception when invoked by the OperationInvoker. The method call duration was '%2' ms.  
   
 ## Details  

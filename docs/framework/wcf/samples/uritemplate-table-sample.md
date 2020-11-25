@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5dd1d38f-1989-4c64-820d-821f5a02216a
 ---
 # UriTemplate Table Sample
+
 The <xref:System.UriTemplateTable> class provides a dictionary-like associative table structure for working with a set of `UriTemplate` instances. Specific Uniform Resource Identifiers (URIs) can be matched efficiently against all templates in the table, and data associated with the matched template can be retrieved.  
   
  This sample demonstrates the following key concepts related to the `UriTemplateTable` class:  

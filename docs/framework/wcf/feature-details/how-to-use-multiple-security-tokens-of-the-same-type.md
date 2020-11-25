@@ -40,6 +40,7 @@ ms.assetid: cf179f48-4ed4-4caa-86a5-ef8eecc231cd
      [!code-csharp[C_CustomBinding#15](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#15)]  
   
 ## Example  
+
  The following is the entire method described by the preceding procedure.  
   
  [!code-csharp[C_CustomBinding#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#7)]  

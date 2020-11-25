@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 19053a36-4492-45a3-bfe6-0365ee0205a3
 ---
 # One-Way Services
+
 The default behavior of a service operation is the request-reply pattern. In a request-reply pattern, the client waits for the reply message, even if the service operation is represented in code as a `void` method. With a one-way operation, only one message is transmitted. The receiver does not send a reply message, nor does the sender expect one.  
   
  Use the one-way design pattern:  
@@ -38,6 +39,7 @@ public interface IOneWayCalculator
  For a complete example, see the [One-Way](../samples/one-way.md) sample.  
   
 ## Clients Blocking with One-Way Operations  
+
  It is important to realize that while some one-way applications return as soon as the outbound data is written to the network connection, in several scenarios the implementation of a binding or of a service can cause a WCF client to block using one-way operations. In WCF client applications, the WCF client object does not return until the outbound data has been written to the network connection. This is true for all message exchange patterns, including one-way operations; this means that any problem writing the data to the transport prevents the client from returning. Depending upon the problem, the result could be an exception or a delay in sending messages to the service.  
   
  For example, if the transport cannot find the endpoint, a <xref:System.ServiceModel.EndpointNotFoundException?displayProperty=nameWithType> exception is thrown without much delay. However, it is also possible that the service is unable to read the data off the wire for some reason, which prevents the client transport send operation from returning. In these cases, if the <xref:System.ServiceModel.Channels.Binding.SendTimeout%2A?displayProperty=nameWithType> period on the client transport binding is exceeded, a <xref:System.TimeoutException?displayProperty=nameWithType> is thrown—but not until the timeout period has been exceeded. It is also possible to fire so many messages at a service that the service cannot process them past a certain point. In this case, too, the one-way client blocks until the service can process the messages or until an exception is thrown.  

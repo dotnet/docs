@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
 ---
 # Message Security with a User Name Client
+
 The following illustration shows an Windows Communication Foundation (WCF) service and client secured using message-level security. The service is authenticated with an X.509 certificate. The client authenticates using a user name and password.  
   
  For a sample application, see [Message Security User Name](../samples/message-security-user-name.md).  
@@ -25,6 +26,7 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 |Binding|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## Service  
+
  The following code and configuration are meant to run independently. Do one of the following:  
   
 - Create a stand-alone service using the code with no configuration.  
@@ -32,12 +34,14 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 - Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
+
  The following code shows how to create a service endpoint that uses message security.  
   
  [!code-csharp[C_SecurityScenarios#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#9)]
  [!code-vb[C_SecurityScenarios#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#9)]  
   
 ### Configuration  
+
  The following configuration can be used instead of the code:  
   
 ```xml  
@@ -83,12 +87,14 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 ## Client  
   
 ### Code  
+
  The following code creates the client. The binding is to message mode security, and the client credential type is set to `UserName`. The user name and password can only be specified using code (it is not configurable). The code to return the user name and password is not shown here because it must be done at the application level. For example, use a Windows Forms dialog box to query the user for the data.  
   
  [!code-csharp[C_SecurityScenarios#16](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#16)]
  [!code-vb[C_SecurityScenarios#16](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#16)]  
   
 ### Configuration  
+
  The following code configures the client. The binding is to message mode security, and the client credential type is set to `UserName`. The user name and password can only be specified using code (it is not configurable).  
   
 ```xml  

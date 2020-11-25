@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 864ba12f-3331-4359-a359-6d6d387f1035
 ---
 # Using Sessions
+
 In Windows Communication Foundation (WCF) applications, a *session* correlates a group of messages into a conversation. WCF sessions are different than the session object available in ASP.NET applications, support different behaviors, and are controlled in different ways. This topic describes the features that sessions enable in WCF applications and how to use them.  
   
 ## Sessions in Windows Communication Foundation Applications  
+
  When a service contract specifies that it requires a session, that contract is specifying that all calls (that is, the underlying message exchanges that support the calls) must be part of the same conversation. If a contract specifies that it allows sessions but does not require one, clients can connect and either establish a session or not establish a session. If the session ends and a message is sent through the same channel an exception is thrown.  
   
  WCF sessions have the following main conceptual features:  
@@ -43,6 +45,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
 - How to understand and control the creation and termination of the session and the relationship of the session to the service instance.  
   
 ## Default Execution Behavior Using Sessions  
+
  A binding that attempts to initiate a session is called a *session-based* binding. Service contracts specify that they require, permit, or refuse session-based bindings by setting the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property on the service contract interface (or class) to one of the <xref:System.ServiceModel.SessionMode?displayProperty=nameWithType> enumeration values. By default, the value of this property is <xref:System.ServiceModel.SessionMode.Allowed>, which means that if a client uses a session-based binding with a WCF service implementation, the service establishes and uses the session provided.  
   
  When a WCF service accepts a client session, the following features are enabled by default:  
@@ -52,6 +55,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
 2. Different session-based bindings provide additional features.  
   
 ## System-Provided Session Types  
+
  A session-based binding supports the default association of a service instance with a particular session. However, different session-based bindings support different features in addition to enabling the session-based instancing control previously described.  
   
  WCF provides the following types of session-based application behavior:  
@@ -67,6 +71,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
  Setting the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property does not specify the type of session the contract requires, only that it requires one.  
   
 ## Creating a Contract That Requires a Session  
+
  Creating a contract that requires a session states that the group of operations that the service contract declares must all be executed within the same session and that messages must be delivered in order. To assert the level of session support that a service contract requires, set the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType> property on your service contract interface or class to the value of the <xref:System.ServiceModel.SessionMode?displayProperty=nameWithType> enumeration to specify whether the contract:  
   
 - Requires a session.  
@@ -85,6 +90,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
  If a service allows a session, then a session is established and used if the client initiates one; otherwise, no session is established.  
   
 ## Sessions and Service Instances  
+
  If you use the default instancing behavior in WCF, all calls between a WCF client object are handled by the same service instance. Therefore, at the application level, you can think of a session as enabling application behavior similar to local call behavior. For example, when you create a local object:  
   
 - A constructor is called.  
@@ -128,12 +134,15 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
  For more information about clients and sessions, see [Accessing Services Using a WCF Client](./feature-details/accessing-services-using-a-client.md).  
   
 ## Sessions Interact with InstanceContext Settings  
+
  There is an interaction between the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property, which controls the association between channels and specific service objects. For more information, see [Sessions, Instancing, and Concurrency](./feature-details/sessions-instancing-and-concurrency.md).  
   
 ### Sharing InstanceContext Objects  
+
  You can also control which session-based channel or call is associated with which <xref:System.ServiceModel.InstanceContext> object by performing that association yourself.
   
 ## Sessions and Streaming  
+
  When you have a large amount of data to transfer, the streaming transfer mode in WCF is a feasible alternative to the default behavior of buffering and processing messages in memory in their entirety. You may get unexpected behavior when streaming calls with a session-based binding. All streaming calls are made through a single channel (the datagram channel) that does not support sessions even if the binding being used is configured to use sessions. If multiple clients make streaming calls to the same service object over a session-based binding, and the service object's concurrency mode is set to single and its instance context mode is set to `PerSession`, all calls must go through the datagram channel and so only one call is processed at a time. One or more clients may then time out. You can work around this issue by either setting the service object's `InstanceContextMode` to `PerCall` or Concurrency to multiple.  
   
 > [!NOTE]

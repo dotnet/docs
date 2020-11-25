@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d621ecfe-3335-44cb-97cd-a6648eecd9e2
 ---
 # 4033 - RoutingTableLookupStart
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: d621ecfe-3335-44cb-97cd-a6648eecd9e2
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted when the routing table lookup has started.  
   
 ## Message  
+
  Routing table lookup started.  
   
 ## Details

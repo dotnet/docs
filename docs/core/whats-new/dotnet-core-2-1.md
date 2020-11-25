@@ -242,7 +242,7 @@ On Linux and macOS, you can only configure <xref:System.Net.Http.HttpClient> on 
 
 ### Breaking changes
 
-For information about breaking changes, see [Breaking changes for migration from version 2.0 to 2.1](/dotnet/core/compatibility/2.1).
+For information about breaking changes, see [Breaking changes for migration from version 2.0 to 2.1](../compatibility/2.1.md).
 
 ## See also
 

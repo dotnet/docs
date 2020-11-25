@@ -58,4 +58,4 @@ Unlike other obsoletion warnings, you can't suppress the error.
 
 ## See also
 
-- [PrincipalPermissionAttribute is obsolete as error](/dotnet/core/compatibility/5.0#principalpermissionattribute-is-obsolete-as-error)
+- [PrincipalPermissionAttribute is obsolete as error](5.0.md#principalpermissionattribute-is-obsolete-as-error)

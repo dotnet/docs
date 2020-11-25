@@ -34,5 +34,5 @@ void ProcessPendingWorkItemsNew(CancellationToken cancellationToken)
 
 ## See also
 
-- [Thread.Abort is obsolete - breaking change](/dotnet/core/compatibility/5.0#threadabort-is-obsolete)
+- [Thread.Abort is obsolete - breaking change](5.0.md#threadabort-is-obsolete)
 - [Cancellation in managed threads](../../standard/threading/cancellation-in-managed-threads.md)

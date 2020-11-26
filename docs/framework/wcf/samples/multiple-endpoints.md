@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 8f0c2e1f-9aee-41c2-8301-c72b7f664412
 ---
 # Multiple Endpoints
+
 The Multiple Endpoints sample demonstrates how to configure multiple endpoints on a service and how to communicate with each endpoint from a client. This sample is based on the [Getting Started](getting-started-sample.md). The service configuration has been modified to define two endpoints that support the `ICalculator` contract, but each at a different address using a different binding. The client configuration and code have been modified to communicate with both of the service endpoints.  
   
 > [!NOTE]

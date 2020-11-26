@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 6cebf975-41bd-443e-9540-fd2463c3eb23
 ---
 # Transport: Custom Transactions over UDP Sample
+
 This sample is based on the [Transport: UDP](transport-udp.md) sample in the Windows Communication Foundation (WCF)[Transport Extensibility](transport-extensibility.md). It extends the UDP Transport sample to support custom transaction flow and demonstrates the use of the <xref:System.ServiceModel.Channels.TransactionMessageProperty> property.  
   
 ## Code Changes in the UDP Transport Sample  
+
  To demonstrate transaction flow, the sample changes the service contract for `ICalculatorContract` to require a transaction scope for `CalculatorService.Add()`. The sample also adds an extra `System.Guid` parameter to the contract of the `Add` operation. This parameter is used to pass the identifier of the client transaction to the service.  
   
 ```csharp  

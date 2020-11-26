@@ -18,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: d51ad8cb-03ae-4a51-bfcd-cfcf6b98afa9
 ---
 # Web and Socket Permissions
+
 Internet security for applications using the <xref:System.Net> namespace is provided by the <xref:System.Net.WebPermission> and <xref:System.Net.SocketPermission> classes. The **WebPermission** class controls an application's right to request data from a URI or to serve a URI to the Internet. The **SocketPermission** class controls an application's right to use a <xref:System.Net.Sockets.Socket> to accept data on a local port or to contact remote devices using a transport protocol at another address, based on the host, port number, and transport protocol of the socket.  
   
  Which permission class you use depends on your application type. Applications that use <xref:System.Net.WebRequest> and its descendants should use the **WebPermission** class to manage permissions. Applications that use socket-level access should use the **SocketPermission** class to manage permissions.  

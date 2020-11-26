@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: ef9e739c-8a8a-4d11-9e25-cb42c62e3c76
 ---
 # Custom Composite using Native Activity
+
 This sample demonstrates how to write a <xref:System.Activities.NativeActivity> that schedules other <xref:System.Activities.Activity> objects to control the flow of a workflow’s execution. This sample uses two common control flows, Sequence and While, to demonstrate how to do this.
 
 ## Sample Details
+
  Starting with `MySequence`, the first thing to notice is that it derives from <xref:System.Activities.NativeActivity>. <xref:System.Activities.NativeActivity> is the <xref:System.Activities.Activity> object that exposes the full breadth of the workflow runtime through the <xref:System.Activities.NativeActivityContext> passed to the `Execute` method.
 
  `MySequence` exposes a public collection of <xref:System.Activities.Activity> objects that gets populated by the workflow author. Before the workflow is executed, the workflow runtime calls the <xref:System.Activities.Activity.CacheMetadata%2A> method on each activity in a workflow. During this process, the runtime establishes parent-child relationships for data scoping and lifetime management. The default implementation of the <xref:System.Activities.Activity.CacheMetadata%2A> method uses the <xref:System.ComponentModel.TypeDescriptor> instance class for the `MySequence` activity to add any public property of type <xref:System.Activities.Activity> or <xref:System.Collections.IEnumerable>\<<xref:System.Activities.Activity>> as children of the `MySequence` activity.

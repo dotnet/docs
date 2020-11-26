@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d3f475bd-f780-4bbe-b291-339387322964
 ---
 # ChannelPoolSettings
+
 ChannelPoolSettings  
   
 ## Syntax  
@@ -18,12 +19,15 @@ class ChannelPoolSettings
 ```  
   
 ## Methods  
+
  The ChannelPoolSettings class does not define any methods.  
   
 ## Properties  
+
  The ChannelPoolSettings class has the following properties:  
   
 ### IdleTimeout  
+
  Data type: datetime  
   
  Access type: Read-only  
@@ -31,6 +35,7 @@ class ChannelPoolSettings
  The maximum time the connection can be idle before being disconnected.  
   
 ### LeaseTimeout  
+
  Data type: datetime  
   
  Access type: Read-only  
@@ -38,6 +43,7 @@ class ChannelPoolSettings
  The maximum time for a lease operation to complete before timing out.  
   
 ### MaxOutboundChannelsPerEndpoint  
+
  Data type: sint32  
   
  Access type: Read-only  

@@ -13,12 +13,15 @@ helpviewer_keywords:
 ms.assetid: 44cd98ba-95e5-40a1-874d-e8e163612c51
 ---
 # releaseHandleFailed MDA
+
 The `releaseHandleFailed` managed debugging assistant (MDA) is activated is to notify developers when the <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> method of a class derived from <xref:System.Runtime.InteropServices.SafeHandle> or <xref:System.Runtime.InteropServices.CriticalHandle> returns `false`.  
   
 ## Symptoms  
+
  Resource or memory leaks.  If the <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> method of the class deriving from <xref:System.Runtime.InteropServices.SafeHandle> or <xref:System.Runtime.InteropServices.CriticalHandle> fails, then the resource encapsulated by the class might not have been released or cleaned up.  
   
 ## Cause  
+
  Users must provide the implementation of the <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> method if they create classes that derive from <xref:System.Runtime.InteropServices.SafeHandle> or <xref:System.Runtime.InteropServices.CriticalHandle>; thus, the circumstances are specific to the individual resource. However, the requirements are as follows:  
   
 - <xref:System.Runtime.InteropServices.SafeHandle> and <xref:System.Runtime.InteropServices.CriticalHandle> types represent wrappers around vital process resources. A memory leak would make the process unusable over time.  
@@ -28,6 +31,7 @@ The `releaseHandleFailed` managed debugging assistant (MDA) is activated is to n
 - Any failure that does occur during the execution of <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A>, impeding the release of the resource, is a bug in the implementation of the <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> method itself. It is the responsibility of the programmer to ensure that the contract is fulfilled, even if that code calls code authored by someone else to perform its function.  
   
 ## Resolution  
+
  The code that uses the specific <xref:System.Runtime.InteropServices.SafeHandle> (or <xref:System.Runtime.InteropServices.CriticalHandle>) type that raised the MDA notification should be reviewed, looking for places where the raw handle value is extracted from the <xref:System.Runtime.InteropServices.SafeHandle> and copied elsewhere. This is the usual cause of failures within <xref:System.Runtime.InteropServices.SafeHandle> or <xref:System.Runtime.InteropServices.CriticalHandle> implementations, because the usage of the raw handle value is then no longer tracked by the runtime. If the raw handle copy is subsequently closed, it can cause a later <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> call to fail because the close is attempted on the same handle, which is now invalid.  
   
  There are a number of ways in which incorrect handle duplication can occur:  
@@ -43,9 +47,11 @@ The `releaseHandleFailed` managed debugging assistant (MDA) is activated is to n
 - Note that some native handle types, such as all the Win32 handles that can be released via the `CloseHandle` function, share the same handle namespace. An erroneous release of one handle type can cause problems with another. For instance, accidentally closing a Win32 event handle twice might lead to an apparently unrelated file handle being closed prematurely. This happens when the handle is released and the handle value becomes available for use to track another resource, potentially of another type. If this happens and is followed by an erroneous second release, the handle of an unrelated thread might be invalidated.  
   
 ## Effect on the Runtime  
+
  This MDA has no effect on the CLR.  
   
 ## Output  
+
  A message indicating that a <xref:System.Runtime.InteropServices.SafeHandle> or a <xref:System.Runtime.InteropServices.CriticalHandle> failed to properly release the handle. For example:  
   
 ```output
@@ -67,6 +73,7 @@ and closing it directly or building another SafeHandle around it."
 ```  
   
 ## Example  
+
  The following is a code example that can activate the `releaseHandleFailed` MDA.  
   
 ```csharp

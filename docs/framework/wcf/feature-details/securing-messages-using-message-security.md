@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
 ---
 # Securing Messages Using Message Security
+
 This section discusses WCF message security when using <xref:System.ServiceModel.NetMsmqBinding>.  
   
 > [!NOTE]
@@ -22,6 +23,7 @@ This section discusses WCF message security when using <xref:System.ServiceModel
  WCF message security adds security headers to the WCF message that integrate with existing security infrastructures, such as a certificate or the Kerberos protocol.  
   
 ## Message Credential Type  
+
  Using message security, the service and client can present credentials to authenticate each another. You can select message security by setting the <xref:System.ServiceModel.NetMsmqBinding.Security%2A> mode to `Message` or `Both` (that is, use both transport security and message security).  
   
  The service can use the <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> property to inspect the credential used to authenticate the client. This can also be used for further authorization checks that the service chooses to implement.  
@@ -29,6 +31,7 @@ This section discusses WCF message security when using <xref:System.ServiceModel
  This section explains the different credential types and how to use them with queues.  
   
 ### Certificate  
+
  The certificate credential type uses an X.509 certificate to identify the service and the client.  
   
  In a typical scenario, the client and the service are issued a valid certificate by a trusted certification authority. Then the connection is established, the client authenticates the validity of the service using the service's certificate to decide whether it can trust the service. Similarly, the service uses the client's certificate to validate the client trust.  
@@ -38,6 +41,7 @@ This section discusses WCF message security when using <xref:System.ServiceModel
  On a computer running Windows, certificates are held in several kinds of stores. For more information about the different stores, see [Certificate stores](/previous-versions/windows/it-pro/windows-server-2003/cc757138(v=ws.10)).  
   
 ### Windows  
+
  Windows message credential type uses the Kerberos protocol.  
   
  The Kerberos protocol is a security mechanism that authenticates users on a domain and allows the authenticated users to establish secure contexts with other entities on a domain.  
@@ -49,12 +53,15 @@ This section discusses WCF message security when using <xref:System.ServiceModel
  The Kerberos protocol is used by default when choosing message credential.
   
 ### Username Password  
+
  Using this property, the client can authenticate to the server using a username password in the security header of the message.  
   
 ### IssuedToken  
+
  The client can use the security token service to issue a token that can then be attached to the message for the service to authenticate the client.  
   
 ## Using Transport and Message Security  
+
  When using both transport security and message security, the certificate used to secure the message both at the transport and the SOAP message level must be the same.  
   
 ## See also

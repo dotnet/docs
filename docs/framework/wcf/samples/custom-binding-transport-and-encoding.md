@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 6c0b353d-79ee-4e61-b348-be49ad0e9a16
 ---
 # Custom Binding Transport and Encoding
+
 A custom binding is defined by an ordered list of discrete binding elements. This sample demonstrates how to configure a custom binding with various transport and message encoding elements.  
   
 > [!NOTE]

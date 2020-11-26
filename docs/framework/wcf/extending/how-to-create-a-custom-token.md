@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 6d892973-1558-4115-a9e1-696777776125
 ---
 # How to: Create a Custom Token
+
 This topic shows how to create a custom security token using the <xref:System.IdentityModel.Tokens.SecurityToken> class, and how to integrate it with a custom security token provider and authenticator. For a complete code example see the [Custom Token](../samples/custom-token.md) sample.  
   
  A *security token* is essentially an XML element that is used by the Windows Communication Foundation (WCF) security framework to represent claims about a sender inside the SOAP message. WCF security provides various tokens for system-provided authentication modes. Examples include an X.509 certificate security token represented by the <xref:System.IdentityModel.Tokens.X509SecurityToken> class or a Username security token represented by the <xref:System.IdentityModel.Tokens.UserNameSecurityToken> class.  
@@ -26,6 +27,7 @@ This topic shows how to create a custom security token using the <xref:System.Id
  See the <xref:System.IdentityModel.Tokens> namespace for more classes that represent security tokens.  
   
 ## Procedures  
+
  A client application must be provided with a way to specify credit card information for the security infrastructure. This information is made available to the application by a custom client credentials class. The first step is to create a class to represent the credit card information for custom client credentials.  
   
 #### To create a class that represents credit card information inside client credentials  

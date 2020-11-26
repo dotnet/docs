@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 3dadd7f1-d207-4ea5-a73b-3e8aa44407f8
 ---
 # How to: Configure a WCF Client to interoperate with WSE3.0 Services
+
 Windows Communication Foundation (WCF) clients are wire-level compatible with Web Services Enhancements 3.0 for Microsoft .NET (WSE) services when WCF clients are configured to use the August 2004 version of the WS-Addressing specification.  
   
 ### To configure a WCF client to interoperate with a WSE 3.0 Web service  
@@ -50,6 +51,7 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
      [!code-vb[c_WCFClientToWSEService#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/client.vb#4)]  
   
 ## Example  
+
  The following code example defines a custom binding that exposes properties that correspond to the properties of a WSE 3.0 turnkey security assertion. The custom binding, which is named `WseHttpBinding`, is then used to specify the binding properties for a WCF client.  
 
 [!code-csharp[c_WCFClientToWSEService#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wcfclienttowseservice/cs/client.cs#0)]

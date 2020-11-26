@@ -9,12 +9,14 @@ helpviewer_keywords:
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29
 ---
 # How to: Create a Custom Binding Using the SecurityBindingElement
+
 Windows Communication Foundation (WCF) includes several system-provided bindings that can be configured but do not provide full flexibility when configuring all the security options that WCF supports. This topic demonstrates how to create a custom binding directly from individual binding elements and highlights some of the security settings that can be specified when creating such a binding. For more information about creating custom bindings, see [Extending Bindings](../extending/extending-bindings.md).  
   
 > [!WARNING]
 > <xref:System.ServiceModel.Channels.SecurityBindingElement> does not support the <xref:System.ServiceModel.Channels.IDuplexSessionChannel> channel shape, which is the default channel shape use by the TCP transport when <xref:System.ServiceModel.TransferMode> is set to <xref:System.ServiceModel.TransferMode.Buffered>. You must set <xref:System.ServiceModel.TransferMode> to <xref:System.ServiceModel.TransferMode.Streamed> in order to use <xref:System.ServiceModel.Channels.SecurityBindingElement> in this scenario.  
   
 ## Creating a Custom Binding  
+
  In WCF all bindings are made up of *binding elements*. Each binding element derives from the <xref:System.ServiceModel.Channels.BindingElement> class. For the standard system-provided bindings, the binding elements are created and configured for you, although you can customize some of the property settings.  
   
  In contrast, to create a custom binding, binding elements are created and configured and a <xref:System.ServiceModel.Channels.CustomBinding> is created from the binding elements.  
@@ -22,6 +24,7 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
  To do this, you add the individual binding elements to a collection represented by an instance of the <xref:System.ServiceModel.Channels.BindingElementCollection> class, and then set the `Elements` property of the `CustomBinding` equal to that object. You must add the binding elements in the following order: Transaction Flow, Reliable Session, Security, Composite Duplex, One-way, Stream Security, Message Encoding, and Transport. Note that not all the binding elements listed are required in every binding.  
   
 ## SecurityBindingElement  
+
  Three binding elements relate to message level security, all of which derive from the <xref:System.ServiceModel.Channels.SecurityBindingElement> class. The three are <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>, <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>, and <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>. The <xref:System.ServiceModel.Channels.TransportSecurityBindingElement> is used to provide Mixed mode security. The other two elements are used when the message layer provides security.  
   
  Additional classes are used when transport level security is provided:  
@@ -33,6 +36,7 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
 - <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement>  
   
 ## Required Binding Elements  
+
  There are a large number of possible binding elements that can be combined into a binding. Not all of these combinations are valid. This section describes the required elements that must be present in a security binding.  
   
  Valid security bindings depend on many factors, including the following:  
@@ -94,9 +98,11 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
 ## Example  
   
 ### Description  
+
  The following example provides a complete function to create a custom binding that uses a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>.  
   
 ### Code  
+
  [!code-csharp[c_CustomBinding#20](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#20)]
  [!code-vb[c_CustomBinding#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombinding/vb/source.vb#20)]  
   

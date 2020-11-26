@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2c8c31e0-42a9-4f46-865b-2da9ab16a0ba
 ---
 # 1037 - RuntimeTransactionComplete
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 2c8c31e0-42a9-4f46-865b-2da9ab16a0ba
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates the runtime transaction has completed.  
   
 ## Message  
+
  The runtime transaction has completed with the state '%1'.  
   
 ## Details  

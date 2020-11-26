@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 332ace82-2d9e-4fd9-a9a8-f077f43b4a08
 ---
 # 1223 - SwitchCaseNotFound
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 332ace82-2d9e-4fd9-a9a8-f077f43b4a08
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a case activity with a matching Expression result could not be found in a Switch activity.  
   
 ## Message  
+
  The Switch activity '%1' could not find a Case activity matching the Expression result.  
   
 ## Details  

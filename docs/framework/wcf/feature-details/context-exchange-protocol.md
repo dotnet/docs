@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3dfd38e0-ae52-491c-94f4-7a862b9843d4
 ---
 # Context Exchange Protocol
+
 This section describes the context exchange protocol introduced in Windows Communication Foundation (WCF) release .NET Framework version 3.5. This protocol allows the client channel to accept a context supplied by a service and apply it to all subsequent requests to that service sent over the same client channel instance. The implementation of the context exchange protocol can use one of the following two mechanisms to propagate the context between the server and the client: HTTP cookies or a SOAP header.  
   
  The context exchange protocol is implemented in a custom channel layer. The channel communicates the context to and from the application layer using a <xref:System.ServiceModel.Channels.ContextMessageProperty> property. For transmission between endpoints, the value of the context is either serialized as a SOAP header at the channel layer, or converted to or from the message properties that represent a HTTP request and response. In the latter case, it is expected that one of the underlying channel layers converts the HTTP request and response message properties to and from HTTP cookies, respectively. The choice of the mechanism used to exchange the context is done using the <xref:System.ServiceModel.Channels.ContextExchangeMechanism> property on the <xref:System.ServiceModel.Channels.ContextBindingElement>. Valid values are `HttpCookie` or `SoapHeader`.  
@@ -11,6 +12,7 @@ This section describes the context exchange protocol introduced in Windows Commu
  On the client, an instance of a channel can operate in two modes based on the settings on the channel property, <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A>.  
   
 ## Mode 1: Channel Context Management  
+
  This is the default mode where <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is set to `true`. In this mode the context channel manages the context and caches the context during its lifetime. Context can be retrieved from the channel through channel property `IContextManager` by calling the `GetContext` method. The channel can also be pre-initialized with specific context before being opened by calling the `SetContext` method on the channel property. Once the channel is initialized with context it cannot be reset.  
   
  The following is a list of invariants in this mode:  
@@ -27,6 +29,7 @@ This section describes the context exchange protocol introduced in Windows Commu
 - The <xref:System.ServiceModel.Channels.ContextMessageProperty> on incoming message is always null.  
   
 ## Mode 2: Application Context Management  
+
  This is the mode when <xref:System.ServiceModel.Channels.IContextManager.Enabled%2A> is set to `false`. In this mode the context channel does not manage context. It is the application's responsibility to retrieve, manage and apply context by using the <xref:System.ServiceModel.Channels.ContextMessageProperty>. Any attempt to call `GetContext` or `SetContext` results in an <xref:System.InvalidOperationException>.  
   
  No matter which mode is chosen the client channel factory supports <xref:System.ServiceModel.Channels.IRequestChannel>, <xref:System.ServiceModel.Channels.IRequestSessionChannel>, and <xref:System.ServiceModel.Channels.IDuplexSessionChannel> message exchange patterns.  

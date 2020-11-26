@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: b6f42b5a-bbf7-45cf-b917-7ec9fa7ae110
 ---
 # How to: Create a Secure Session
+
 With the exception of the [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md) binding, the system-provided bindings in Windows Communication Foundation (WCF) automatically use secure sessions when message security is enabled.  
   
  By default, secure sessions do not survive a Web server that is recycled. When a secure session is established, the client and the service cache the key that is associated with the secure session. As the messages are exchanged, only an identifier to the cached key is exchanged. If the Web server is recycled, the cache is also recycled, such that the Web server cannot retrieve the cached key for the identifier. If this happens, an exception is thrown back to the client. Secure sessions that use a stateful security context token (SCT) can survive a Web server being recycled. For more information about using a stateful SCT in a secure session, see [How to: Create a Security Context Token for a Secure Session](how-to-create-a-security-context-token-for-a-secure-session.md).  

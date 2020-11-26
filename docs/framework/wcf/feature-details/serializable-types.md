@@ -4,11 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: f1c8539a-6a79-4413-b294-896f0957b2cd
 ---
 # Serializable Types
+
 By default, the <xref:System.Runtime.Serialization.DataContractSerializer> serializes all publicly visible types. All public read/write properties and fields of the type are serialized.  
   
  You can change the default behavior by applying the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes to the types and members This feature can be useful in situations in which you have types that are not under your control and cannot be modified to add attributes. The <xref:System.Runtime.Serialization.DataContractSerializer> recognizes such "unmarked" types.  
   
 ## Serialization Defaults  
+
  You can apply the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes to explicitly control or customize the serialization of types and members. In addition, you can apply these attributes to private fields. However, even types that are not marked with these attributes are serialized and deserialized. The following rules and exceptions apply:  
   
 - The <xref:System.Runtime.Serialization.DataContractSerializer> infers a data contract from types without attributes using the default properties of the newly created types.  
@@ -30,6 +32,7 @@ By default, the <xref:System.Runtime.Serialization.DataContractSerializer> seria
 - To "opt out" of the serialization process for public members, properties, or fields, apply the <xref:System.Runtime.Serialization.IgnoreDataMemberAttribute> attribute to that member.  
   
 ## Inheritance  
+
  Unmarked types (types without the <xref:System.Runtime.Serialization.DataContractAttribute> attribute) can inherit from types that do have this attribute; however, the reverse is not permitted: types with the attribute cannot inherit from unmarked types. This rule is enforced primarily to ensure backward compatibility with code written in earlier versions of .NET Framework.  
   
 ## See also

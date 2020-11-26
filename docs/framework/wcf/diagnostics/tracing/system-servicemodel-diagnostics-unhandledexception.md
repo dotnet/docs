@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 6807fdfc-1e7e-42ca-8efe-a05b51de2f8f
 ---
 # System.ServiceModel.Diagnostics.UnhandledException
+
 System.ServiceModel.Diagnostics.UnhandledException  
   
 ## Description  
+
  Unhandled exception.  
   
 ## See also

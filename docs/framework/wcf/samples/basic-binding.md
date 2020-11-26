@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 2a0e8ac4-23e7-45ef-98dc-40691aac530a
 ---
 # Basic Binding
+
 This section contains basic samples that demonstrate using the binding attribute of an endpoint element.  
   
 ## In This Section  
+
  [Message Security Sample](message-security-sample.md)  
  Demonstrates how to implement an application that uses the `basicHttpBinding` and message security.  
   

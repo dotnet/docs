@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: 6bee5da4-adf7-42e6-8f78-63a9e5c6dbad
 ---
 # How to: Specify a Client Binding in Code
+
 In this example, a client is created to use a calculator service and the binding for that client is specified imperatively in code. The client accesses the `CalculatorService`, which implements the `ICalculator` interface, and both the service and the client use the <xref:System.ServiceModel.BasicHttpBinding> class.  
   
  This procedure assumes that the calculator service is running. For information about building the service, see [How to: Specify a Service Binding in Configuration](how-to-specify-a-service-binding-in-configuration.md). It also uses the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)Windows Communication Foundation (WCF) provides to automatically generate the client components. The tool generates the client code for accessing the service.  

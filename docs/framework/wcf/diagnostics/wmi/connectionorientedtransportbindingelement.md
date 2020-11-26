@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c1308313-f0e2-49e6-977d-6b4ce9ad35d1
 ---
 # ConnectionOrientedTransportBindingElement
+
 ConnectionOrientedTransportBindingElement  
   
 ## Syntax  
@@ -23,12 +24,15 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
 ```  
   
 ## Methods  
+
  The ConnectionOrientedTransportBindingElement class does not define any methods.  
   
 ## Properties  
+
  The ConnectionOrientedTransportBindingElement class has the following properties:  
   
 ### ChannelInitializationTimeout  
+
  Data type: datetime  
   
  Access type: Read-only  
@@ -36,6 +40,7 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
  The timespan that specifies how long the channel initialization has to complete before timing out.  
   
 ### ConnectionBufferSize  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -43,6 +48,7 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
  The size of the buffer used to transmit a chunk of the serialized message on the wire from the client or service.  
   
 ### HostNameComparisonMode  
+
  Data type: string  
   
  Access type: Read-only  
@@ -50,6 +56,7 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
  A value that indicates whether the hostname is used to reach the service when matching on the URI.  
   
 ### MaxBufferSize  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -57,6 +64,7 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
  The maximum size of the buffer to use.  
   
 ### MaxOutputDelay  
+
  Data type: datetime  
   
  Access type: Read-only  
@@ -64,6 +72,7 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
  The maximum interval of time that a chunk of a message or a full message can remain buffered in memory before being sent out.  
   
 ### MaxPendingAccepts  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -71,6 +80,7 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
  The maximum number of pending asynchronous accept threads that are available for processing incoming connections on the service.  
   
 ### MaxPendingConnections  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -78,6 +88,7 @@ class ConnectionOrientedTransportBindingElement : TransportBindingElement
  The maximum number of pending connections.  
   
 ### TransferMode  
+
  Data type: string  
   
  Access type: Read-only  

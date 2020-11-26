@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 947a9ae6-379c-43a3-9cd5-87f573a5739f
 ---
 # SendMail Custom Activity
+
 This sample demonstrates how to create a custom activity that derives from <xref:System.Activities.AsyncCodeActivity> to send mail using SMTP for use within a workflow application. The custom activity uses the capabilities of <xref:System.Net.Mail.SmtpClient> to send email asynchronously and to send mail with authentication. It also provides some end-user features like test mode, token replacement, file templates, and test drop path.  
   
  The following table details the arguments for the `SendMail` activity.  
@@ -28,6 +29,7 @@ This sample demonstrates how to create a custom activity that derives from <xref
 |TestDropPath|String|When this property is set, all emails are also saved in the specified file.<br /><br /> This property is intended to be used when you are testing or debugging workflows, to make sure that the format and contents of the outgoing emails is appropriate.|  
   
 ## Solution Contents  
+
  The solution contains two projects.  
   
 |Project|Description|Important Files|  
@@ -36,9 +38,11 @@ This sample demonstrates how to create a custom activity that derives from <xref
 |SendMailTestClient|Client to test the SendMail activity.  This project demonstrates two ways of invoking the SendMail activity: declaratively, and programmatically.|1.  Sequence1.xaml: workflow that invokes the SendMail activity.<br />2.  Program.cs: invokes Sequence1 and also creates a workflow programmatically that uses SendMail.|  
   
 ## Further configuration of the SendMail activity  
+
  Although not shown in the sample, users can perform addition configuration of the SendMail activity. The next three sections demonstrate how this is done.  
   
 ### Sending an email using tokens specified in the body  
+
  This code snippet demonstrates how you can send email with tokens in the body. Notice how the tokens are provided in the body property. Values for those tokens are provided to the tokens property.  
   
 ```csharp  
@@ -61,6 +65,7 @@ new SendMail
 ```  
   
 ### Sending an email using a template  
+
  This snippet shows how to send an email using a template tokens in the body. Notice that when setting the `BodyTemplateFilePath` property we don’t need to provide the value for Body property (the contents of the template file will be copied to the body).  
   
 ```csharp  
@@ -78,6 +83,7 @@ new SendMail
 ```  
   
 ### Sending Mails in Testing Mode  
+
  This code snippet shows how to set the two testing properties: by setting `TestMailTo` to all messages will be sent to `john.doe@contoso.con` (without regard of the values of To, Cc, Bcc). By setting TestDropPath all outgoing emails will be also recorded in the provided path. These properties can be set independently (they are not related).  
   
 ```csharp  
@@ -97,6 +103,7 @@ new SendMail
 ```  
   
 ## Set-Up Instructions  
+
  Access to a SMTP server is required for this sample.  
   
  For more information about setting up a SMTP server, see the following links.  

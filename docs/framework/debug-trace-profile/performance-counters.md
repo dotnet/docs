@@ -13,6 +13,7 @@ ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 This topic provides a list of performance counters you can find in the [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
 
 ## Exception performance counters  
+
  The Performance console .NET CLR Exceptions category includes counters that provide information about the exceptions thrown by an application. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -24,6 +25,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Throw to Catch Depth / Sec**|Displays the number of stack frames traversed, from the frame that threw the exception to the frame that handled the exception, per second. This counter resets to zero when an exception handler is entered, so nested exceptions show the handler-to-handler stack depth.<br /><br /> This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|  
 
 ## Interop performance counters  
+
  The Performance console .NET CLR Interop category includes counters that provide information about an application's interaction with COM components, COM+ services, and external type libraries. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -35,6 +37,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**# of TLB imports / sec**|Reserved for future use.|  
 
 ## JIT performance counters  
+
  The Performance console .NET CLR JIT category includes counters that provide information about code that has been JIT-compiled. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -47,6 +50,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Total # of IL Bytes Jitted**|Displays the total MSIL bytes JIT-compiled since the application started. This counter is equivalent to the **# of IL Bytes Jitted** counter.|  
 
 ## Loading performance counters  
+
  The Performance console .NET CLR Loading category includes counters that provide information about assemblies, classes, and application domains that are loaded. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -69,6 +73,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Total Classes Loaded**|Displays the cumulative number of classes loaded in all assemblies since the application started.|  
 
 ## Lock and thread performance counters  
+
  The Performance console .NET CLR LocksAndThreads category includes counters that provide information about managed locks and threads that an application uses. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -85,6 +90,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Total # of Contentions**|Displays the total number of times that threads in the runtime have attempted to acquire a managed lock unsuccessfully.|  
 
 ## Memory performance counters  
+
  The Performance console .NET CLR Memory category includes counters that provide information about the garbage collector. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -212,6 +218,7 @@ for (int i = 0; i < Array.Length; i++)
  For more information on accessing and managing performance counters in an application, see [Performance Counters](performance-counters.md).  
 
 ## Security performance counters  
+
  The Performance console .NET CLR Security category includes counters that provide information about the security checks that the common language runtime performs for an application. The following table describes these performance counters.  
   
 |Performance counter|Description|  

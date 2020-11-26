@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 ---
 # Selecting a Credential Type
+
 *Credentials* are the data Windows Communication Foundation (WCF) uses to establish either a claimed identity or capabilities. For example, a passport is a credential a government issues to prove citizenship in a country or region. In WCF, credentials can take many forms, such as user name tokens and X.509 certificates. This topic discusses credentials, how they are used in WCF, and how to select the right credential for your application.  
   
  In many countries and regions, a driver’s license is an example of a credential. A license contains data that represents a person's identity and capabilities. It contains proof of possession in the form of the possessor's picture. The license is issued by a trusted authority, usually a governmental department of licensing. The license is sealed, and can contain a hologram, showing that it has not been tampered with or counterfeited.  
@@ -16,6 +17,7 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
  With an X.509 certificate credential, the subject name, subject alternative name or specific fields within the certificate can be used as claims of identity, while other fields, such as the `Valid From` and `Valid To` fields, specify the validity of the certificate.  
   
 ## Transport Credential Types  
+
  The following table shows the possible types of client credentials that can be used by a binding in transport security mode. When creating a service, set the `ClientCredentialType` property to one of these values to specify the type of credential that the client must supply to communicate with your service. You can set the types in either code or configuration files.  
   
 |Setting|Description|  
@@ -29,6 +31,7 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 |Password|User must supply a user name and password. Validate the user name/password pair using Windows authentication or another custom solution.|  
   
 ### Message Client Credential Types  
+
  The following table shows the possible credential types that you can use when creating an application that uses message security. You can use these values in either code or configuration files.  
   
 |Setting|Description|  
@@ -40,6 +43,7 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 |Issued Token|A custom token type configured according to a security policy. The default token type is Security Assertions Markup Language (SAML). The token is issued by a secure token service. For more information, see [Federation and Issued Tokens](federation-and-issued-tokens.md).|  
   
 ### Negotiation Model of Service Credentials  
+
  *Negotiation* is the process of establishing trust between a client and a service by exchanging credentials. The process is performed iteratively between the client and the service, so as to disclose only the information necessary for the next step in the negotiation process. In practice, the end result is the delivery of a service's credential to the client to be used in subsequent operations.  
   
  With one exception, by default the system-provided bindings in WCF negotiate the service credential automatically when using message-level security. (The exception is the <xref:System.ServiceModel.BasicHttpBinding>, which does not enable security by default.) To disable this behavior, see the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> and <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.NegotiateServiceCredential%2A> properties.  
@@ -48,36 +52,44 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 > When SSL security is used with .NET Framework 3.5 and later, a WCF client uses both the intermediate certificates in its certificate store and the intermediate certificates received during SSL negotiation to perform certificate chain validation on the service's certificate. .NET Framework 3.0 only uses the intermediate certificates installed in the local certificate store.  
   
 #### Out-of-Band Negotiation  
+
  If automatic negotiation is disabled, the service credential must be provisioned at the client prior to sending any messages to the service. This is also known as an *out-of-band* provisioning. For example, if the specified credential type is a certificate, and automatic negotiation is disabled, the client must contact the service owner to receive and install the certificate on the computer running the client application. This can be done, for example, when you want to strictly control which clients can access a service in a business-to-business scenario. This out-of-band-negotiation can be done in email, and the X.509 certificate is stored in Windows certificate store, using a tool such as the Microsoft Management Console (MMC) Certificates snap-in.  
   
 > [!NOTE]
 > The <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property is used to provide the service with a certificate that was attained through out-of-band negotiation. This is necessary when using the <xref:System.ServiceModel.BasicHttpBinding> class because the binding does not allow automated negotiation. The property is also used in an uncorrelated duplex scenario. This is a scenario where a server sends a message to the client without requiring the client to send a request to the server first. Because the server does not have a request from the client, it must use the client's certificate to encrypt the message to the client.  
   
 ## Setting Credential Values  
+
  Once you select a security mode, you must specify the actual credentials. For example, if the credential type is set to "certificate," then you must associate a specific credential (such as a specific X.509 certificate) with the service or client.  
   
  Depending on whether you are programming a service or a client, the method for setting the credential value differs slightly.  
   
 ### Setting Service Credentials  
+
  If you are using transport mode, and you are using HTTP as the transport, you must use either Internet Information Services (IIS) or configure the port with a certificate. For more information, see [Transport Security Overview](transport-security-overview.md) and [HTTP Transport Security](http-transport-security.md).  
   
  To provision a service with credentials in code, create an instance of the <xref:System.ServiceModel.ServiceHost> class and specify the appropriate credential using the <xref:System.ServiceModel.Description.ServiceCredentials> class, accessed through the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> property.  
   
 #### Setting a Certificate  
+
  To provision a service with an X.509 certificate to be used to authenticate the service to clients, use the <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential> class.  
   
  To provision a service with a client certificate, use the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential> class.  
   
 #### Setting Windows Credentials  
+
  If the client specifies a valid user name and password, that credential is used to authenticate the client. Otherwise, the current logged-on user's credentials are used.  
   
 ### Setting Client Credentials  
+
  In WCF, client applications use a WCF client to connect to services. Every client derives from the <xref:System.ServiceModel.ClientBase%601> class, and the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property on the client allows the specification of various values of client credentials.  
   
 #### Setting a Certificate  
+
  To provision a service with an X.509 certificate that is used to authenticate the client to a service, use the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.  
   
 ## How Client Credentials Are Used to Authenticate a Client to the Service  
+
  Client credential information required to communicate with a service is provided using either the <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> property or the <xref:System.ServiceModel.ChannelFactory.Credentials%2A> property. The security channel uses this information to authenticate the client to the service. Authentication is accomplished through one of two modes:  
   
 - The client credentials are used once before the first message is sent, using the WCF client instance to establish a security context. All application messages are then secured through the security context.  
@@ -85,6 +97,7 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
 - The client credentials are used to authenticate every application message sent to the service. In this case, no context is established between the client and the service.  
   
 ### Established Identities Cannot Be Changed  
+
  When the first method is used, the established context is permanently associated with the client identity. That is, once the security context has been established, the identity associated with the client cannot be changed.  
   
 > [!IMPORTANT]

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 6c200c02-bc14-4b8d-bbab-9da31185b805
 ---
 # DataContractResolver
+
 This sample demonstrates how the serialization and deserialization processes can be customized by using the <xref:System.Runtime.Serialization.DataContractResolver> class. This sample shows how to use a DataContractResolver to map CLR types to and from an xsi:type representation during serialization and deserialization.
 
 ## Sample Details
+
  The sample defines the following CLR types.
 
 ```csharp

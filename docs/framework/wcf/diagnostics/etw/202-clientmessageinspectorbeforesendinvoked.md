@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0b02ca82-8a55-45e3-b2e2-ddfe28a7269c
 ---
 # 202 - ClientMessageInspectorBeforeSendInvoked
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 0b02ca82-8a55-45e3-b2e2-ddfe28a7269c
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted after the Service Model has invoked the `BeforeSendRequest` method on a client message inspector.  
   
 ## Message  
+
  The Dispatcher invoked 'BeforeSendRequest' on a ClientMessageInspector of type  '%1'.  
   
 ## Details  

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: dcf14dca-ce6d-4278-96ba-062f0a679075
 ---
 # Custom Activity Designers
+
 This section contains activity samples that use custom designers for display in the workflow designer.  
   
 ## In This Section  
+
  [Custom Composite Designers - Workflow Item Presenter](custom-composite-designers-workflow-item-presenter.md)  
  This sample shows how to build an activity designer that surfaces such a "drop zone."  
   

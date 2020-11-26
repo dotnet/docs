@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a82e2bf1-62ab-4c2d-83f3-3217a6aead2e
 ---
 # PNRP Clouds
+
 A PNRP "cloud" represents a set of nodes that can communicate with each other through the network. The term "cloud" is synonymous with "peer mesh" and "peer-to-peer graph".  
   
  Communication between nodes should never cross from one cloud to another. A <xref:System.Net.PeerToPeer.Cloud> instance is uniquely identified by its name, which is case-sensitive. A single peer or node may be connected to more than one cloud.  
@@ -19,6 +20,7 @@ A PNRP "cloud" represents a set of nodes that can communicate with each other th
  A third cloud, the site-specific cloud, corresponds to the site IPv6 address scope and site-local addresses. This cloud has been deprecated, although it is still supported in PNRP.  
   
 ## Clouds  
+
  PNRP clouds are represented by instances of the <xref:System.Net.PeerToPeer.Cloud> class. Groups of clouds used a peer are represented by instances of the enumerable <xref:System.Net.PeerToPeer.CloudCollection> class. Collections of PNRP clouds known to the current peer can be obtained by calling the static <xref:System.Net.PeerToPeer.Cloud.GetAvailableClouds%2A> method.  
   
  Individual clouds have unique names, represented as a 256 character Unicode string. These names, along with the above-mentioned scope, are used to construct unique instances of the Cloud class. These instances can be serialized and reconstructed for persistent usage.  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ec8d59e3-9937-4391-bb8c-fdaaf2cbb73e
 ---
 # Poison Message Handling in MSMQ 4.0
+
 This sample demonstrates how to perform poison message handling in a service. This sample is based on the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding`. The service is a self-hosted console application to enable you to observe the service receiving queued messages.
 
  In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.
@@ -15,6 +16,7 @@ This sample demonstrates how to perform poison message handling in a service. Th
  This sample illustrates the limited poison facilities provided on Windows Server 2003 and Windows XP platform and the full poison facilities provided on Windows Vista. In both samples, the objective is to move the poison message out of the queue to another queue. That queue can then be serviced by a poison message service.
 
 ## MSMQ v4.0 Poison Handling Sample
+
  In Windows Vista, MSMQ provides a poison subqueue facility that can be used to store poison messages. This sample demonstrates the best practice of dealing with poison messages using Windows Vista.
 
  The poison message detection in Windows Vista is sophisticated. There are 3 properties that help with detection. The <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> is number of times a given message is re-read from the queue and dispatched to the application for processing. A message is re-read from the queue when it is put back into the queue because the message cannot be dispatched to the application or the application rolls back the transaction in the service operation. <xref:System.ServiceModel.MsmqBindingBase.MaxRetryCycles%2A> is the number of times the message is moved to the retry queue. When <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> is reached, the message is moved to the retry queue. The property <xref:System.ServiceModel.MsmqBindingBase.RetryCycleDelay%2A> is the time delay after which the message is moved from the retry queue back to the main queue. The <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> is reset to 0. The message is tried again. If all attempts to read the message have failed, then the message is marked as poisoned.
@@ -149,6 +151,7 @@ public class OrderProcessorService : IOrderProcessor
 ```
 
 ## Processing messages from the poison message queue
+
  The poison message service reads messages from the final poison message queue and processes them.
 
  Messages in the poison message queue are messages that are addressed to the service that is processing the message, which could be different from the poison message service endpoint. Therefore, when the poison message service reads messages from the queue, the WCF channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is being received by the poison message service. To continue to receive the message even if the message is addressed to a different endpoint, we must add a `ServiceBehavior` to filter addresses where the match criterion is to match any service endpoint the message is addressed to. This is required to successfully process messages that you read from the poison message queue.

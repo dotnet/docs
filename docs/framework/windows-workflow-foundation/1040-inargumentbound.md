@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7dfaad1b-36c0-4575-84c1-31d63b0eaf5d
 ---
 # 1040 - InArgumentBound
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 7dfaad1b-36c0-4575-84c1-31d63b0eaf5d
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates an In argument has been bound.  
   
 ## Message  
+
  In argument '%1' on Activity '%2', DisplayName: '%3', InstanceId: '%4' has been bound with value: %5.  
   
 ## Details  

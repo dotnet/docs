@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8d1f0bf1-0151-45e6-be92-573d397b54de
 ---
 # 302 - UserDefinedWarningOccurred
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 8d1f0bf1-0151-45e6-be92-573d397b54de
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted from user code. Developers can emit this event when a custom-defined warning event occurs in their service. This can be done using the <xref:System.Diagnostics.Eventing> APIs. Additionally, there is a WCF sample that wraps that API and demonstrates how to properly emit this event.  
   
 ## Message  
+
  Name:'%1', Reference:'%2', Payload:%3  
   
 ## Details  

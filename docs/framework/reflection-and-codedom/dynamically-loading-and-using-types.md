@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: db985bec-5942-40ec-b13a-771ae98623dc
 ---
 # Dynamically Loading and Using Types
+
 Reflection provides infrastructure used by language compilers to implement implicit late binding. Binding is the process of locating the declaration (that is, the implementation) that corresponds to a uniquely specified type. When this process occurs at run time rather than at compile time, it is called late binding. Visual Basic allows you to use implicit late binding in your code; the Visual Basic compiler calls a helper method that uses reflection to obtain the object type. The arguments passed to the helper method cause the appropriate method to be invoked at run time. These arguments are the instance (an object) on which to invoke the method, the name of the invoked method (a string), and the arguments passed to the invoked method (an array of objects).  
   
  In the following example, the Visual Basic compiler uses reflection implicitly to call a method on an object whose type is not known at compile time. A **HelloWorld** class has a **PrintHello** method that prints out "Hello World" concatenated with some text that is passed to the **PrintHello** method. The **PrintHello** method called in this example is actually a <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>; the Visual Basic code allows the **PrintHello** method to be invoked as if the type of the object (helloObj) were known at compile time (early binding) rather than at run time (late binding).  
@@ -34,6 +35,7 @@ End Module
 ```  
   
 ## Custom Binding  
+
  In addition to being used implicitly by compilers for late binding, reflection can be used explicitly in code to accomplish late binding.  
   
  The [common language runtime](../../standard/clr.md) supports multiple programming languages, and the binding rules of these languages differ. In the early-bound case, code generators can completely control this binding. However, in late binding through reflection, binding must be controlled by customized binding. The <xref:System.Reflection.Binder> class provides custom control of member selection and invocation.  
@@ -47,6 +49,7 @@ End Module
  [!code-vb[Conceptual.Types.Dynamic#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.dynamic/vb/source1.vb#1)]  
   
 ### InvokeMember and CreateInstance  
+
  Use <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType> to invoke a member of a type. The **CreateInstance** methods of various classes, such as <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.CreateInstance%2A?displayProperty=nameWithType>, are specialized forms of **InvokeMember** that create new instances of the specified type. The **Binder** class is used for overload resolution and argument coercion in these methods.  
   
  The following example shows the three possible combinations of argument coercion (type conversion) and member selection. In Case 1, no argument coercion or member selection is needed. In Case 2, only member selection is needed. In Case 3, only argument coercion is needed.  

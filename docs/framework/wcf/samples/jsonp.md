@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: c13b4d7b-dac7-4ffd-9f84-765c903511e1
 ---
 # JSONP
+
 This sample demonstrates how to support JSON with Padding (JSONP) in WCF REST services. JSONP is a convention used to invoke cross-domain scripts by generating script tags in the current document. The result is returned in a specified callback function. JSONP is based on the idea that tags such as `<script src="http://..." >` can evaluate scripts from any domain and the script retrieved by those tags is evaluated within a scope in which other functions may already be defined.
 
 ## Demonstrates
+
  Cross-domain scripting with JSONP.
 
 ## Discussion
+
  The sample includes a Web page that dynamically adds a script block after the page has been rendered in the browser. This script block calls a WCF REST service that has a single operation, `GetCustomer`. The WCF REST service returns a customer’s name and address wrapped in a callback function name. When the WCF REST service responds, the callback function on the Web page is invoked with the customer data and the callback function displays the data on the Web page. The injection of the script tag and the execution of the callback function is automatically handled by the ASP.NET AJAX ScriptManager control. The usage pattern is the same as with all ASP.NET AJAX proxies, with the addition of one line to enable JSONP, as shown in the following code:
 
 ```csharp

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7fe95d1e-34bd-43ca-b92e-587d2d248fff
 ---
 # 1104 - WorkflowActivityResume
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 7fe95d1e-34bd-43ca-b92e-587d2d248fff
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a workflow activity has been resumed.  
   
 ## Message  
+
  WorkflowInstance Id: '%1' E2E Activity  
   
 ## Details  

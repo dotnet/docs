@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f0ce8af3-eb4c-48c8-b3d9-dd2f94b5574b
 ---
 # 4210 - SqlExceptionCaught
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: f0ce8af3-eb4c-48c8-b3d9-dd2f94b5574b
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a SQL exception was caught.  
   
 ## Message  
+
  Caught SQL Exception number %1 message %2.  
   
 ## Details  

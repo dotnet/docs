@@ -12,6 +12,7 @@ ms.assetid: 0ed69f73-5c01-4514-bd63-979c6e38d41d
 Security events are raised during strong name verification and Authenticode verification.  
 
 ## StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events  
+
  The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
@@ -35,6 +36,7 @@ Security events are raised during strong name verification and Authenticode veri
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
 
 ## AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events  
+
  The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  

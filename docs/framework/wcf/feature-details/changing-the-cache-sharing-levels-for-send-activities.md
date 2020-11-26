@@ -4,12 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: 03926a64-753d-460e-ac06-2a4ff8e1bbf5
 ---
 # Changing the Cache Sharing Levels for Send Activities
+
 The <xref:System.ServiceModel.Activities.SendMessageChannelCache> extension enables you to customize the cache sharing levels, the settings of the channel factory cache, and the settings of the channel cache for workflows that send messages to service endpoints using <xref:System.ServiceModel.Activities.Send> messaging activities. These workflows are typically client workflows but could also be workflow services that are hosted in a <xref:System.ServiceModel.WorkflowServiceHost>. The channel factory cache contains cached <xref:System.ServiceModel.ChannelFactory%601> objects. The channel cache contains cached channels.  
   
 > [!NOTE]
 > Workflows can use <xref:System.ServiceModel.Activities.Send> messaging activities to send either messages or parameters. The workflow runtime adds channel factories to the cache that create channels of type <xref:System.ServiceModel.Channels.IRequestChannel> when you use a <xref:System.ServiceModel.Activities.ReceiveReply> activity with a <xref:System.ServiceModel.Activities.Send> activity, and an <xref:System.ServiceModel.Channels.IOutputChannel> when just using a <xref:System.ServiceModel.Activities.Send> activity (no <xref:System.ServiceModel.Activities.ReceiveReply>).  
   
 ## The Cache Sharing Levels  
+
  By default, in a workflow hosted by a <xref:System.ServiceModel.WorkflowServiceHost> the cache used by <xref:System.ServiceModel.Activities.Send> messaging activities is shared across all workflow instances in the <xref:System.ServiceModel.WorkflowServiceHost> (host-level caching). For a client workflow that is not hosted by a <xref:System.ServiceModel.WorkflowServiceHost>, the cache is available only to the workflow instance (instance-level caching). The cache is only available for <xref:System.ServiceModel.Activities.Send> activities that do not use endpoints defined in configuration unless unsafe caching is enabled.  
   
  The following are the different cache sharing levels available for <xref:System.ServiceModel.Activities.Send> activities in a workflow and their recommended use:  
@@ -21,6 +23,7 @@ The <xref:System.ServiceModel.Activities.SendMessageChannelCache> extension enab
 - **No Cache**: The cache is turned off by default if you have a workflow that uses endpoints defined in configuration. It is also recommended to keep the cache turned off in this case because turning it on could be unsecure. For example, if a different identity (different credentials or using impersonation) is required for each send.  
   
 ## Changing the Cache Sharing Level for a Client Workflow  
+
  To set the cache sharing in a client workflow, add an instance of the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class as an extension to the desired set of workflow instances. This results in sharing the cache across all the workflow instances. The following code examples show how to perform these steps.  
   
  First, declare an instance of type <xref:System.ServiceModel.Activities.SendMessageChannelCache>.  
@@ -44,6 +47,7 @@ clientInstance2.Extensions.Add(sharedChannelCacheExtension);
 ```  
   
 ## Changing the Cache Sharing Level for a Hosted Workflow Service  
+
  To set the cache sharing in a hosted workflow service, add an instance of the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class as an extension to all the workflow service hosts. This results in sharing the cache across all the workflow service hosts. The following code examples show to perform these steps.  
   
  First, declare an instance  of type <xref:System.ServiceModel.Activities.SendMessageChannelCache> at the class level.  
@@ -80,6 +84,7 @@ serviceHost.WorkflowExtensions.Add(() => new SendMessageChannelCache
 ```  
   
 ## Customizing Cache Settings  
+
  You can customize the cache settings for the channel factory cache and the channel cache. The cache settings are defined in the <xref:System.ServiceModel.Activities.ChannelCacheSettings> class. The <xref:System.ServiceModel.Activities.SendMessageChannelCache> class defines default cache settings for the channel factory cache and the channel cache in its parameterless constructor. The following table lists the default values of these cache settings for each type of cache.  
   
 |Settings|LeaseTimeout (min)|IdleTimeout (min)|MaxItemsInCache|  

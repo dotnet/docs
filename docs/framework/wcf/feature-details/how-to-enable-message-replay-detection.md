@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 8b847e91-69a3-49e1-9e5f-0c455e50d804
 ---
 # How to: Enable Message Replay Detection
+
 A replay attack occurs when an attacker copies a stream of messages between two parties and replays the stream to one or more of the parties. Unless mitigated, the computers subject to the attack will process the stream as legitimate messages, resulting in a range of bad consequences, such as redundant orders of an item.  
   
  For more information about message replay detection, see [Message Replay Detection](/previous-versions/msp-n-p/ff649371(v=pandp.10)).  
@@ -69,15 +70,18 @@ A replay attack occurs when an attacker copies a stream of messages between two 
     ```  
   
 ## Example  
+
  The following example creates a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> using the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> method, and sets the replay properties of the binding.  
   
  [!code-csharp[c_ReplayDetection#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_replaydetection/cs/source.cs#1)]
  [!code-vb[c_ReplayDetection#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_replaydetection/vb/source.vb#1)]  
   
 ## Scope of Replay: Message Security Only  
+
  Note that the following procedures apply only to Message security mode. For Transport and Transport with Message Credential modes, the transport mechanisms detect replays.  
   
 ## Secure Conversation Notes  
+
  For bindings that enable secure conversations, you can adjust these settings both for the application channel as well as for the secure conversation bootstrap binding. For example, you can turn off replays for the application channel but enable them for the bootstrap channel that establishes the secure conversation.  
   
  If you do not use secure conversation sessions, replay detection does not guarantee detecting replays in server farm scenarios and when the process is recycled. This applies to the following system-provided bindings:  

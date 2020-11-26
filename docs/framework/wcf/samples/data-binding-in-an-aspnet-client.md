@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 68b49fa6-94e7-4d4c-a34e-902a2b3770b6
 ---
 # Data Binding in an ASP.NET Client
+
 This sample demonstrates how to bind data returned by a typical Windows Communication Foundation (WCF) service in a Web Forms application.  
   
 > [!NOTE]

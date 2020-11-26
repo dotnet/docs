@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
 ---
 # Implementing the UI Automation Grid Control Pattern
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -17,7 +18,9 @@ ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
  The <xref:System.Windows.Automation.GridPattern> control pattern is used to support controls that act as containers for a collection of child elements. The children of this element must implement <xref:System.Windows.Automation.Provider.IGridItemProvider> and be organized in a two-dimensional logical coordinate system that can be traversed by row and column. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## Implementation Guidelines and Conventions  
+
  When implementing the Grid control pattern, note the following guidelines and conventions:  
   
 - Grid coordinates are zero-based with the upper left (or upper right cell depending on locale) having coordinates (0, 0).  
@@ -38,7 +41,9 @@ Example of a Grid Control with Empty Coordinates
 - Use a <xref:System.Windows.Automation.AutomationFocusChangedEventHandler> to track traversal through the items or cells of a grid.  
   
 <a name="Required_Members_for_IGridProvider"></a>
+
 ## Required Members for IGridProvider  
+
  The following properties and methods are required for implementing the IGridProvider interface.  
   
 |Required members|Type|Notes|  
@@ -50,7 +55,9 @@ Example of a Grid Control with Empty Coordinates
  This control pattern has no associated events.  
   
 <a name="Exceptions"></a>
+
 ## Exceptions  
+
  Providers must throw the following exceptions.  
   
 |Exception type|Condition|  

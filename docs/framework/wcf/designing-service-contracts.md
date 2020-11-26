@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 8e89cbb9-ac84-4f0d-85ef-0eb6be0022fd
 ---
 # Designing Service Contracts
+
 This topic describes what service contracts are, how they are defined, what operations are available (and the implications for the underlying message exchanges), what data types are used, and other issues that help you design operations that satisfy the requirements of your scenario.  
   
 ## Creating a Service Contract  
+
  Services expose a number of operations. In Windows Communication Foundation (WCF) applications, define the operations by creating a method and marking it with the <xref:System.ServiceModel.OperationContractAttribute> attribute. Then, to create a service contract, group together your operations, either by declaring them within an interface marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute, or by defining them in a class marked with the same attribute. (For a basic example, see [How to: Define a Service Contract](how-to-define-a-wcf-service-contract.md).)  
   
  Any methods that do not have a <xref:System.ServiceModel.OperationContractAttribute> attribute are not service operations and are not exposed by WCF services.  
@@ -30,6 +32,7 @@ This topic describes what service contracts are, how they are defined, what oper
 - The restrictions for operation inputs and outputs.  
   
 ## Classes or Interfaces  
+
  Both classes and interfaces represent a grouping of functionality and, therefore, both can be used to define a WCF service contract. However, it is recommended that you use interfaces because they directly model service contracts. Without an implementation, interfaces do no more than define a grouping of methods with certain signatures. Implement a service contract interface and you have implemented a WCF service.  
   
  All the benefits of managed interfaces apply to service contract interfaces:  
@@ -54,6 +57,7 @@ This topic describes what service contracts are, how they are defined, what oper
  At this point, you should understand the difference between defining your service contract by using an interface and by using a class. The next step is deciding what data can be passed back and forth between a service and its clients.  
   
 ## Parameters and Return Values  
+
  Each operation has a return value and a parameter, even if these are `void`. However, unlike a local method, in which you can pass references to objects from one object to another, service operations do not pass references to objects. Instead, they pass copies of the objects.  
   
  This is significant because each type used in a parameter or return value must be serializable; that is, it must be possible to convert an object of that type into a stream of bytes and from a stream of bytes into an object.  
@@ -64,6 +68,7 @@ This topic describes what service contracts are, how they are defined, what oper
 > The value of the parameter names in the operation signature are part of the contract and are case sensitive. If you want to use the same parameter name locally but modify the name in the published metadata, see the <xref:System.ServiceModel.MessageParameterAttribute?displayProperty=nameWithType>.  
   
 #### Data Contracts  
+
  Service-oriented applications like Windows Communication Foundation (WCF) applications are designed to interoperate with the widest possible number of client applications on both Microsoft and non-Microsoft platforms. For the widest possible interoperability, it is recommended that you mark your types with the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes to create a data contract, which is the portion of the service contract that describes the data that your service operations exchange.  
   
  Data contracts are opt-in style contracts: No type or data member is serialized unless you explicitly apply the data contract attribute. Data contracts are unrelated to the access scope of the managed code: Private data members can be serialized and sent elsewhere to be accessed publicly. (For a basic example of a data contract, see [How to: Create a Basic Data Contract for a Class or Structure](./feature-details/how-to-create-a-basic-data-contract-for-a-class-or-structure.md).) WCF handles the definition of the underlying SOAP messages that enable the operation's functionality as well as the serialization of your data types into and out of the body of the messages. As long as your data types are serializable, you do not need to think about the underlying message exchange infrastructure when designing your operations.  
@@ -71,9 +76,11 @@ This topic describes what service contracts are, how they are defined, what oper
  Although the typical WCF application uses the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes to create data contracts for operations, you can use other serialization mechanisms. The standard <xref:System.Runtime.Serialization.ISerializable>, <xref:System.SerializableAttribute> and <xref:System.Xml.Serialization.IXmlSerializable> mechanisms all work to handle the serialization of your data types into the underlying SOAP messages that carry them from one application to another. You can employ more serialization strategies if your data types require special support. For more information about the choices for serialization of data types in WCF applications, see [Specifying Data Transfer in Service Contracts](./feature-details/specifying-data-transfer-in-service-contracts.md).  
   
 #### Mapping Parameters and Return Values to Message Exchanges  
+
  Service operations are supported by an underlying exchange of SOAP messages that transfer application data back and forth, in addition to the data required by the application to support certain standard security, transaction, and session-related features. Because this is the case, the signature of a service operation dictates a certain underlying *message exchange pattern* (MEP) that can support the data transfer and the features an operation requires. You can specify three patterns in the WCF programming model: request/reply, one-way, and duplex message patterns.  
   
 ##### Request/Reply  
+
  A request/reply pattern is one in which a request sender (a client application) receives a reply with which the request is correlated. This is the default MEP because it supports an operation in which one or more parameters are passed to the operation and a return value is passed back to the caller. For example, the following C# code example shows a basic service operation that takes one string and returns a string.  
   
 ```csharp  
@@ -107,6 +114,7 @@ Sub Hello (ByVal greeting As String)
  The preceding example can slow client performance and responsiveness if the operation takes a long time to perform, but there are advantages to request/reply operations even when they return `void`. The most obvious one is that SOAP faults can be returned in the response message, which indicates that some service-related error condition has occurred, whether in communication or processing. SOAP faults that are specified in a service contract are passed to the client application as a <xref:System.ServiceModel.FaultException%601> object, where the type parameter is the type specified in the service contract. This makes notifying clients about error conditions in WCF services easy. For more information about exceptions, SOAP faults, and error handling, see [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md). To see an example of a request/reply service and client, see [How to: Create a Request-Reply Contract](./feature-details/how-to-create-a-request-reply-contract.md). For more information about issues with the request-reply pattern, see [Request-Reply Services](./feature-details/request-reply-services.md).  
   
 ##### One-way  
+
  If the client of a WCF service application should not wait for the operation to complete and does not process SOAP faults, the operation can specify a one-way message pattern. A one-way operation is one in which a client invokes an operation and continues processing after WCF writes the message to the network. Typically this means that unless the data being sent in the outbound message is extremely large the client continues running almost immediately (unless there is an error sending the data). This type of message exchange pattern supports event-like behavior from a client to a service application.  
   
  A message exchange in which one message is sent and none are received cannot support a service operation that specifies a return value other than `void`; in this case an <xref:System.InvalidOperationException> exception is thrown.  
@@ -130,6 +138,7 @@ Sub Hello (ByVal greeting As String)
  This method is identical to the preceding request/reply example, but setting the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true` means that although the method is identical, the service operation does not send a return message and clients return immediately once the outbound message has been handed to the channel layer. For an example, see [How to: Create a One-Way Contract](./feature-details/how-to-create-a-one-way-contract.md). For more information about the one-way pattern, see [One-Way Services](./feature-details/one-way-services.md).  
   
 ##### Duplex  
+
  A duplex pattern is characterized by the ability of both the service and the client to send messages to each other independently whether using one-way or request/reply messaging. This form of two-way communication is useful for services that must communicate directly to the client or for providing an asynchronous experience to either side of a message exchange, including event-like behavior.  
   
  The duplex pattern is slightly more complex than the request/reply or one-way patterns because of the additional mechanism for communicating with the client.  
@@ -144,6 +153,7 @@ Sub Hello (ByVal greeting As String)
 > When a service receives a duplex message, it looks at the `ReplyTo` element in that incoming message to determine where to send the reply. If the channel that is used to receive the message is not secured, then an untrusted client could send a malicious message with a target machine's `ReplyTo`, leading to a denial of service (DOS) of that target machine.  
   
 ##### Out and Ref Parameters  
+
  In most cases, you can use `in` parameters (`ByVal` in Visual Basic) and `out` and `ref` parameters (`ByRef` in Visual Basic). Because both `out` and `ref` parameters indicate that data is returned from an operation, an operation signature such as the following specifies that a request/reply operation is required even though the operation signature returns `void`.  
   
 ```csharp  
@@ -170,6 +180,7 @@ End Interface
  In addition, using `out` or `ref` parameters requires that the operation have an underlying response message to carry back the modified object. If your operation is a one-way operation, an <xref:System.InvalidOperationException> exception is thrown at runtime.  
   
 ### Specify Message Protection Level on the Contract  
+
  When designing your contract, you must also decide the message protection level of services that implement your contract. This is necessary only if message security is applied to the binding in the contract's endpoint. If the binding has security turned off (that is, if the system-provided binding sets the <xref:System.ServiceModel.SecurityMode?displayProperty=nameWithType> to the value <xref:System.ServiceModel.SecurityMode.None?displayProperty=nameWithType>) then you do not have to decide on the message protection level for the contract. In most cases, system-provided bindings with message-level security applied provide a sufficient protection level and you do not have to consider the protection level for each operation or for each message.  
   
  The protection level is a value that specifies whether the messages (or message parts) that support a service are signed, signed and encrypted, or sent without signatures or encryption. The protection level can be set at various scopes: At the service level, for a particular operation, for a message within that operation, or a message part. Values set at one scope become the default value for smaller scopes unless explicitly overridden. If a binding configuration cannot provide the required minimum protection level for the contract, an exception is thrown. And when no protection level values are explicitly set on the contract, the binding configuration controls the protection level for all messages if the binding has message security. This is the default behavior.  
@@ -255,11 +266,13 @@ End Interface
  For more information about protection levels and how to use them, see [Understanding Protection Level](understanding-protection-level.md). For more information about security, see [Securing Services](securing-services.md).  
   
 ##### Other Operation Signature Requirements  
+
  Some application features require a particular kind of operation signature. For example, the <xref:System.ServiceModel.NetMsmqBinding> binding supports durable services and clients, in which an application can restart in the middle of communication and pick up where it left off without missing any messages. (For more information, see [Queues in WCF](./feature-details/queues-in-wcf.md).) However, durable operations must take only one `in` parameter and have no return value.  
   
  Another example is the use of <xref:System.IO.Stream> types in operations. Because the <xref:System.IO.Stream> parameter includes the entire message body, if an input or an output (that is, `ref` parameter, `out` parameter, or return value) is of type <xref:System.IO.Stream>, then it must be the only input or output specified in your operation. In addition, the parameter or return type must be either <xref:System.IO.Stream>, <xref:System.ServiceModel.Channels.Message?displayProperty=nameWithType>, or <xref:System.Xml.Serialization.IXmlSerializable?displayProperty=nameWithType>. For more information about streams, see [Large Data and Streaming](./feature-details/large-data-and-streaming.md).  
   
 ##### Names, Namespaces, and Obfuscation  
+
  The names and namespaces of the .NET types in the definition of contracts and operations are significant when contracts are converted into WSDL and when contract messages are created and sent. Therefore, it is strongly recommended that service contract names and namespaces are explicitly set using the `Name` and `Namespace` properties of all supporting contract attributes such as the <xref:System.ServiceModel.ServiceContractAttribute>, <xref:System.ServiceModel.OperationContractAttribute>, <xref:System.Runtime.Serialization.DataContractAttribute>,  <xref:System.Runtime.Serialization.DataMemberAttribute>, and other contract attributes.  
   
  One result of this is that if the names and namespaces are not explicitly set, the use of IL obfuscation on the assembly alters the contract type names and namespaces and results in modified WSDL and wire exchanges that typically fail. If you do not set the contract names and namespaces explicitly but do intend to use obfuscation, use the <xref:System.Reflection.ObfuscationAttribute> and <xref:System.Reflection.ObfuscateAssemblyAttribute> attributes to prevent the modification of the contract type names and namespaces.  

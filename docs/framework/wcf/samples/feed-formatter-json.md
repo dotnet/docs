@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: f9c0b295-55e7-48ea-b308-ba51c7d31143
 ---
 # Feed Formatter (JSON)
+
 This sample shows how to serialize an instance of a <xref:System.ServiceModel.Syndication.SyndicationFeed> class in JavaScript Object Notation (JSON) format by using a custom <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> and the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
   
 ## Architecture of the Sample  
+
  The sample implements a class named `JsonFeedFormatter` that inherits from <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter>. The `JsonFeedFormatter` class relies on the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> to read and write the data in JSON format. Internally, the formatter uses a custom set of data contract types named `JsonSyndicationFeed` and `JsonSyndicationItem` to control the format of the JSON data produced by the serializer. These implementation details are hidden from the end user, allowing calls to be made against the standard <xref:System.ServiceModel.Syndication.SyndicationFeed> and <xref:System.ServiceModel.Syndication.SyndicationItem> classes.  
   
 ## Writing JSON feeds  
+
  Writing a JSON feed can be accomplished by using the `JsonFeedFormatter` (implemented in this sample) with the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> as shown in the following sample code.  
   
 ```csharp  
@@ -28,6 +31,7 @@ writeSerializer.WriteObject(stream, new JsonFeedFormatter(feed));
 ```  
   
 ## Reading a JSON feed  
+
  Obtaining a <xref:System.ServiceModel.Syndication.SyndicationFeed> from a stream of JSON-formatted data can be accomplished with the `JsonFeedFormatter` as show in the following code.  
   
  `//Read in the feed using the DataContractJsonSerializer`  

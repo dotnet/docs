@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: aa2d37ed-2bfa-439b-89e8-a9354027f155
 ---
 # 107 -- BookmarkResumptionRecord
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: aa2d37ed-2bfa-439b-89e8-a9354027f155
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a workflow instance emits a BookmarkResumptionRecord.  
   
 ## Message  
+
  TrackRecord = BookmarkResumptionRecord, InstanceID=%1, RecordNumber=%2,EventTime=%3, Name=%4, SubInstanceID=%5,  OwnerActivityName=%6, OwnerActivityId =%7, OwnerActivityInstanceId=%8, OwnerActivityTypeName=%9, Annotations=%10, ProfileName = %11  
   
 ## Details  

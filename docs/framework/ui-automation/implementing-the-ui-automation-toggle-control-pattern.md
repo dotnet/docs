@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3cfe875f-b0c0-413d-9703-5f14e6a1a30e
 ---
 # Implementing the UI Automation Toggle Control Pattern
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -17,7 +18,9 @@ ms.assetid: 3cfe875f-b0c0-413d-9703-5f14e6a1a30e
  The <xref:System.Windows.Automation.TogglePattern> control pattern is used to support controls that can cycle through a set of states and maintain a state once set. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## Implementation Guidelines and Conventions  
+
  When implementing the Toggle control pattern, note the following guidelines and conventions:  
   
 - Controls that do not maintain state when activated, such as buttons, toolbar buttons, and hyperlinks, must implement <xref:System.Windows.Automation.Provider.IInvokeProvider> instead.  
@@ -29,7 +32,9 @@ ms.assetid: 3cfe875f-b0c0-413d-9703-5f14e6a1a30e
 - The RadioButton control does not implement <xref:System.Windows.Automation.Provider.IToggleProvider>, as it is not capable of cycling through its valid states.  
   
 <a name="Required_Members_for_IToggleProvider"></a>
+
 ## Required Members for IToggleProvider  
+
  The following properties and methods are required for implementing <xref:System.Windows.Automation.Provider.IToggleProvider>.  
   
 |Required member|Member type|Notes|  
@@ -40,7 +45,9 @@ ms.assetid: 3cfe875f-b0c0-413d-9703-5f14e6a1a30e
  This control pattern has no associated events.  
   
 <a name="Exceptions"></a>
+
 ## Exceptions  
+
  This control pattern has no associated exceptions.  
   
 ## See also

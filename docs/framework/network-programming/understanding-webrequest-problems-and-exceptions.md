@@ -5,9 +5,11 @@ ms.date: "03/30/2017"
 ms.assetid: 74a361a5-e912-42d3-8f2e-8e9a96880a2b
 ---
 # Understanding WebRequest Problems and Exceptions
+
 <xref:System.Net.WebRequest> and its derived classes (<xref:System.Net.HttpWebRequest>, <xref:System.Net.FtpWebRequest>, and <xref:System.Net.FileWebRequest>) throw exceptions to signal an abnormal condition. Sometimes the resolution of these problems is not obvious.  
   
 ## Solutions  
+
  Examine the <xref:System.Net.WebException.Status%2A> property of the <xref:System.Net.WebException> to determine the problem. The following table shows several status values and some possible resolutions.  
   
 |Status|Details|Solution|  

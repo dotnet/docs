@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bc825c7c-8c90-48f7-9336-9a978a8246c6
 ---
 # 112 - WorkflowInstanceSuspendedRecord
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: bc825c7c-8c90-48f7-9336-9a978a8246c6
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a workflow instance emits WorkflowInstanceSuspended Record.  
   
 ## Message  
+
  TrackRecord = WorkflowInstanceSuspendedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, Reason = %5, Annotations = %6, ProfileName = %7  
   
 ## Details  

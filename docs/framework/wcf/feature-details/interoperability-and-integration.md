@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 0d925119-01a1-45c2-9ea0-23061323ad33
 ---
 # Interoperability and Integration
+
 This section covers interoperability and integration with Windows Communication Foundation (WCF).  
   
 ## In This Section  
+
  [Web Services Protocols Interoperability Guide](web-services-protocols-interoperability-guide.md)  
  WCF is built to interoperate with Web services that support a set of specifications known as the Web services specifications. This topic lists specifications that are supported and the bindings that support them.  
   
@@ -41,7 +43,9 @@ This section covers interoperability and integration with Windows Communication 
  Describes how WCF provides both services and clients that use "Plain Old XML" (POX) messages.  
   
 ## Reference  
+
  <xref:System.ServiceModel>  
   
 ## Related Sections  
+
  [Extending WCF](../extending/index.md)

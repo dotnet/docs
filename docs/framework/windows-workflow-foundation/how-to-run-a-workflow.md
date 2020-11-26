@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: f814ff82-fe2b-4614-aebb-b768c3e61179
 ---
 # How to: Run a Workflow
+
 This topic is a continuation of the Windows Workflow Foundation Getting Started tutorial and discusses how to create a workflow host and run the workflow defined in the previous [How to: Create a Workflow](how-to-create-a-workflow.md) topic.
 
 > [!NOTE]
@@ -146,6 +147,7 @@ This topic is a continuation of the Windows Workflow Foundation Getting Started 
      For instructions about how to add persistence to a workflow application, see the next topic, [How to: Create and Run a Long Running Workflow](how-to-create-and-run-a-long-running-workflow.md).
 
 ## Example
+
  The following example is the complete code listing for the `Main` method.
 
 > [!NOTE]

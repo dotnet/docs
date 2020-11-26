@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3d2ceffe-a7bf-4bd9-a5a2-9406423bd7f8
 ---
 # Extended Protection for Authentication Overview
+
 Extended Protection for Authentication helps protect against man-in-the-middle (MITM) attacks, in which an attacker intercepts a client’s credentials and forwards them to a server.  
   
  Consider a scenario with three participants: a client, server, and attacker. The server has the URL `https://server`, whereas the attacker has the URL `https://attacker`. The attacker tricks the client into accessing the attacker as if it were the server. The attacker then sends a request to the server. If the attacker is trying to access a secure resource, the server replies to the attacker with a WWW-Authenticate header. The attacker does not have the authentication information, so it sends the WWW-Authenticate header on to the client. The client sends the Authorization header to the attacker, and the attacker sends the header on to the server and gets access to the secure resources using the client’s credentials.  

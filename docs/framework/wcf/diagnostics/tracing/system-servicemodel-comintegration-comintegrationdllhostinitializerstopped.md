@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 6b2912d4-21a4-4a9c-bb68-8626fca5cc39
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStopped
+
 System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStopped  
   
 ## Description  
+
  The ServiceModelInitializer has stopped the configured services.  
   
 ## See also

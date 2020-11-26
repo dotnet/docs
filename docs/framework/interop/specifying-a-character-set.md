@@ -27,6 +27,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
      Provides 2-byte character Unicode formatting, distinguished by a "W" appended to the entry-point name. Calls to **MessageBoxW** always marshal strings in Unicode format.  
   
 ## String Marshaling and Name Matching  
+
  The `CharSet` field accepts the following values:  
   
  <xref:System.Runtime.InteropServices.CharSet.Ansi> (default value)  

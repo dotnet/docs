@@ -23,6 +23,7 @@ helpviewer_keywords:
 ms.assetid: 0444ddf3-c3f6-44ed-a999-f710d9c3e0cf
 ---
 # Using the CodeDOM
+
 The CodeDOM provides types that represent many common types of source code elements. You can design a program that builds a source code model using CodeDOM elements to assemble an object graph. This object graph can be rendered as source code using a CodeDOM code generator for a supported programming language. The CodeDOM can also be used to compile source code into a binary assembly.  
   
  Some common uses for the CodeDOM include:  
@@ -32,15 +33,19 @@ The CodeDOM provides types that represent many common types of source code eleme
 - Dynamic compilation: supporting code compilation in single or multiple languages.  
   
 ## Building a CodeDOM Graph  
+
  The <xref:System.CodeDom> namespace provides classes for representing the logical structure of source code, independent of language syntax.  
   
 ### The Structure of a CodeDOM Graph  
+
  The structure of a CodeDOM graph is like a tree of containers. The top-most, or root, container of each compilable CodeDOM graph is a <xref:System.CodeDom.CodeCompileUnit>. Every element of your source code model must be linked into the graph through a property of a <xref:System.CodeDom.CodeObject> in the graph.  
   
 ### Building a Source Code Model for a Sample Hello World Program  
+
  The following walkthrough provides an example of how to build a CodeDOM object graph that represents the code for a simple Hello World application. For the complete source code for this code example, see the <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType> topic.  
   
 #### Creating a compile unit  
+
  The CodeDOM defines an object called a <xref:System.CodeDom.CodeCompileUnit>, which can reference a CodeDOM object graph that models the source code to compile. A **CodeCompileUnit** has properties for storing references to attributes, namespaces, and assemblies.  
   
  The CodeDom providers that derive from the <xref:System.CodeDom.Compiler.CodeDomProvider> class contain methods that process the object graph referenced by a **CodeCompileUnit**.  
@@ -56,6 +61,7 @@ The CodeDOM provides types that represent many common types of source code eleme
  A <xref:System.CodeDom.CodeSnippetCompileUnit> can contain a section of source code that is already in the target language, but cannot be rendered to another language.  
   
 #### Defining a namespace  
+
  To define a namespace, create a <xref:System.CodeDom.CodeNamespace> and assign a name for it using the appropriate constructor or by setting its **Name** property.  
   
  [!code-cpp[CodeDomExample#13](../../../samples/snippets/cpp/VS_Snippets_CLR/CodeDomExample/CPP/source2.cpp#13)]
@@ -63,6 +69,7 @@ The CodeDOM provides types that represent many common types of source code eleme
  [!code-vb[CodeDomExample#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source2.vb#13)]  
   
 #### Importing a namespace  
+
  To add a namespace import directive to the namespace, add a <xref:System.CodeDom.CodeNamespaceImport> that indicates the namespace to import to the **CodeNamespace.Imports** collection.  
   
  The following code adds an import for the **System** namespace to the **Imports** collection of a **CodeNamespace** named `samples`:  
@@ -72,6 +79,7 @@ The CodeDOM provides types that represent many common types of source code eleme
  [!code-vb[CodeDomExample#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source2.vb#14)]  
   
 #### Linking code elements into the object graph  
+
  All code elements that form a CodeDOM graph must be linked to the <xref:System.CodeDom.CodeCompileUnit> that is the root element of the tree by a series of references between elements directly referenced from the properties of the root object of the graph. Set an object to a property of a container object to establish a reference from the container object.  
   
  The following statement adds the `samples` **CodeNamespace** to the **Namespaces** collection property of the root **CodeCompileUnit**.  
@@ -81,6 +89,7 @@ The CodeDOM provides types that represent many common types of source code eleme
  [!code-vb[CodeDomExample#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source2.vb#15)]  
   
 #### Defining a type  
+
  To declare a class, structure, interface, or enumeration using the CodeDOM, create a new <xref:System.CodeDom.CodeTypeDeclaration>, and assign it a name. The following example demonstrates this using a constructor overload to set the **Name** property:  
   
  [!code-cpp[CodeDomExample#16](../../../samples/snippets/cpp/VS_Snippets_CLR/CodeDomExample/CPP/source2.cpp#16)]
@@ -96,9 +105,11 @@ The CodeDOM provides types that represent many common types of source code eleme
  [!code-vb[CodeDomExample#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source2.vb#17)]  
   
 #### Adding class members to a class  
+
  The <xref:System.CodeDom> namespace provides a variety of elements that can be used to represent class members. Each class member can be added to the **Members** collection of a <xref:System.CodeDom.CodeTypeDeclaration>.  
   
 #### Defining a code entry point method for an executable  
+
  If you are building code for an executable program, it is necessary to indicate the entry point of a program by creating a <xref:System.CodeDom.CodeEntryPointMethod> to represent the method at which program execution should begin.  
   
  The following example demonstrates how to define an entry point method that contains a <xref:System.CodeDom.CodeMethodInvokeExpression> that calls **System.Console.WriteLine** to print "Hello World!":  
@@ -116,6 +127,7 @@ The CodeDOM provides types that represent many common types of source code eleme
  Now the <xref:System.CodeDom.CodeCompileUnit> named `compileUnit` contains the CodeDOM graph for a simple Hello World program. For information on generating and compiling code from a CodeDOM graph, see [Generating Source Code and Compiling a Program from a CodeDOM Graph](generating-and-compiling-source-code-from-a-codedom-graph.md).  
   
 ### More information on building a CodeDOM graph  
+
  The CodeDOM supports the many common types of code elements found in programming languages that support the common language runtime. The CodeDOM was not designed to provide elements to represent all possible programming language features. Code that cannot be represented easily with CodeDOM elements can be encapsulated in a <xref:System.CodeDom.CodeSnippetExpression>, a <xref:System.CodeDom.CodeSnippetStatement>, a <xref:System.CodeDom.CodeSnippetTypeMember>, or a <xref:System.CodeDom.CodeSnippetCompileUnit>. However, snippets cannot be translated to other languages automatically by the CodeDOM.  
   
  For documentation for the each of the CodeDOM types, see the reference documentation for the <xref:System.CodeDom> namespace.  

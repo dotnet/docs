@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ad207f04-b038-4f33-95e9-27a361df8ecd
 ---
 # 217 - ClientOperationPrepared
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: ad207f04-b038-4f33-95e9-27a361df8ecd
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by clients just before an operation is sent to the service.  
   
 ## Message  
+
  The Client is executing Action '%1' associated with the '%2' contract. The message will be sent to '%3'.  
   
 ## Details  

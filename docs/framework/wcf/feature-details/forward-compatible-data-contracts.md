@@ -9,16 +9,19 @@ helpviewer_keywords:
 ms.assetid: 413c9044-26f8-4ecb-968c-18495ea52cd9
 ---
 # Forward-Compatible Data Contracts
+
 A feature of the Windows Communication Foundation (WCF) data contract system is that contracts can evolve over time in nonbreaking ways. That is, a client with an older version of a data contract can communicate with a service with a newer version of the same data contract, or a client with a newer version of a data contract can communicate with an older version of the same data contract. For more information, see [Best Practices: Data Contract Versioning](../best-practices-data-contract-versioning.md).  
   
  You can apply most of the versioning features on an as-needed basis when new versions of an existing data contract are created. However, one versioning feature, *round-tripping*, must be built into the type from the first version in order to work properly.  
   
 ## Round-Tripping  
+
  Round-tripping occurs when data passes from a new version to an old version and back to the new version of a data contract. Round-tripping guarantees that no data is lost. Enabling round-tripping makes the type forward-compatible with any future changes supported by the data contract versioning model.  
   
  To enable round-tripping for a particular type, the type must implement the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. The interface contains one property, <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> (returning the <xref:System.Runtime.Serialization.ExtensionDataObject> type). The property stores any data from future versions of the data contract that is unknown to the current version.  
   
 ### Example  
+
  The following data contract is not forward-compatible with future changes.  
   
  [!code-csharp[C_DataContract#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontract/cs/source.cs#7)]

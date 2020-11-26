@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: e56fb9df-5286-4be7-b313-540c4d876cd7
 ---
 # invalidApartmentStateChange MDA
+
 The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated by either of two problems:  
   
 - An attempt is made to change the COM apartment state of a thread that has already been initialized by COM to a different apartment state.  
@@ -33,14 +34,17 @@ The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated
 - The `CoUninitialize` method (or the `CoInitializeEx` method) with a different concurrency model is called on the thread.  
   
 ## Resolution  
+
  Set the apartment state of the thread before it begins executing, or apply either the <xref:System.STAThreadAttribute> attribute or the <xref:System.MTAThreadAttribute> attribute to the main method of the application.  
   
  For the second cause, ideally, the code that calls the `CoUninitialize` method should be modified to delay the call until the thread is about to terminate and there are no RCWs and their underlying COM components still in use by the thread. However, if it is not possible to modify the code that calls the `CoUninitialize` method, then no RCWs should be used from threads that are uninitialized in this way.  
   
 ## Effect on the Runtime  
+
  This MDA has no effect on the CLR.  
   
 ## Output  
+
  The COM apartment state of the current thread, and the state that the code was attempting to apply.  
   
 ## Configuration  
@@ -54,6 +58,7 @@ The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated
 ```  
   
 ## Example  
+
  The following code example demonstrates a situation that can activate this MDA.  
   
 ```csharp

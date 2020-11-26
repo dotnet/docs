@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 1e8d04dd-b7cf-41e7-8560-54b4381beb0f
 ---
 # Transactions in WCF
+
 The Windows Communication Foundation (WCF) transactions feature allows several components to concurrently participate in a data operation. The topics in this section examine the feature in detail.  
   
 ## In This Section  
+
  [Windows Communication Foundation Transactions Overview](transactions-overview.md)  
  An overview of the transactions feature provided by WCF.  
   
@@ -25,6 +27,7 @@ The Windows Communication Foundation (WCF) transactions feature allows several c
 ## Reference  
   
 ## Related Sections  
+
  [Basic WCF Programming](../basic-wcf-programming.md)  
   
 ## See also

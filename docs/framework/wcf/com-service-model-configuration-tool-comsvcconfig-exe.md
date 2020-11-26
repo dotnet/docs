@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 7717c6c2-85fc-418b-a8ed-bad8e61cec5c
 ---
 # COM+ Service Model Configuration Tool (ComSvcConfig.exe)
+
 The COM+ Service Model Configuration command-line tool (ComSvcConfig.exe) enables you to configure COM+ interfaces to be exposed as Web services.  
   
 ## Syntax  
@@ -53,6 +54,7 @@ ComSvcConfig.exe /install | /uninstall | /list [/application:<ApplicationID | Ap
 ## Examples  
   
 ### Description  
+
  The following example adds the `IFinances` interface of the `ItemOrders.IFinancial` component (from the OnlineStore COM+ application) to the set of interfaces that are exposed as Web services, using the COM+ hosting mode. All warnings will be output in addition to any errors encountered.  
   
 ### Code  
@@ -62,6 +64,7 @@ ComSvcConfig.exe /install /application:OnlineStore /contract:ItemOrders.Financia
 ```  
   
 ### Description  
+
  The following example adds the `IStockLevels` interface of the `ItemInventory.Warehouse` component (from the OnlineWarehouse COM+ application) to the set of interfaces that are exposed as Web services, using the Web hosting mode. The Web service is Web hosted in the OnlineWarehouse virtual directory of IIS.  
   
 ### Code  
@@ -71,6 +74,7 @@ ComSvcConfig.exe /install /application:OnlineWarehouse /contract:ItemInventory.W
 ```  
   
 ### Description  
+
  The following example removes the `IFinances` interface of the `ItemOrders.Financial` component (from the OnlineStore COM+ application) from the set of interfaces that are exposed as Web services.  
   
 ### Code  
@@ -80,6 +84,7 @@ ComSvcConfig.exe /uninstall /application:OnlineStore /interface:ItemOrders.Finan
 ```  
   
 ### Description  
+
  The following example lists currently exposed COM+ hosted interfaces, along with the corresponding address and binding details, for the OnlineStore COM+ application on the local machine.  
   
 ### Code  

@@ -8,11 +8,13 @@ helpviewer_keywords:
 ms.assetid: 005c894b-af70-48aa-a1c1-c99338083c27
 ---
 # Transports in Windows Communication Foundation
+
 The transport layer is at the lowest level of the channel stack. The main transports used in Windows Communication Foundation (WCF) are HTTP, HTTPS, TCP, and named pipes. The topics in this section discuss choosing among these transports, configuring the transport, and setting tuning properties.  
   
  WCF includes additional transports. For information about Message Queuing (also known as MSMQ) transport, see [Queues and Reliable Sessions](queues-and-reliable-sessions.md). For information about peer-to-peer transport, see [Peer-to-Peer Networking](peer-to-peer-networking.md).  
   
 ## In This Section  
+
  [Choosing a Transport](choosing-a-transport.md)  
  Describes the three main transports and considerations in selecting one.  
   
@@ -38,6 +40,7 @@ The transport layer is at the lowest level of the channel stack. The main transp
  Describes how to use the Net.TCP Port Sharing component of WCF.  
   
 ## Reference  
+
  <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
   
  <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
@@ -47,6 +50,7 @@ The transport layer is at the lowest level of the channel stack. The main transp
  <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>  
   
 ## Related Sections  
+
  [Bindings](bindings.md)  
   
  [Extending Bindings](../extending/extending-bindings.md)

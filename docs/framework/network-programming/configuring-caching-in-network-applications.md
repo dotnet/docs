@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 3f694a1c-de5d-47cf-a6eb-cfc369fb8a9f
 ---
 # Configuring Caching in Network Applications
+
 To configure caching, you must specify a cache policy at the application or <xref:System.Net.WebRequest> level. The following topics provide code examples that demonstrate configuring applications and requests to use caching.  
   
 - [How to: Set a Location-Based Cache Policy for an Application](how-to-set-a-location-based-cache-policy-for-an-application.md)  

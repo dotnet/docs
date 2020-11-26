@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: eb16e5e2-4c8d-4f61-a479-9c965fcec80c
 ---
 # SAML Token Provider
+
 This sample demonstrates how to implement a custom client SAML token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with a CardSpace token provider. Custom token providers are useful in the following cases:
 
 - If you have a credential store that these token providers cannot operate with.
@@ -292,6 +293,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
  On the service, the claims associated with the caller are displayed. When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.
 
 ## Setup Batch File
+
  The Setup.bat batch file included with this sample allows you to configure the server with the relevant certificate to run a self-hosted application that requires server certificate-based security. This batch file must be modified to work across computers or to work in a non-hosted case.
 
  The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration.

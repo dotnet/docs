@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: cf37078c-dcb4-45e0-acaf-2f196521b226
 ---
 # SRMP
+
 This sample demonstrates how to perform transacted queued communication by using Message Queuing (MSMQ) over HTTP.  
   
  In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.  
@@ -29,12 +30,15 @@ This sample demonstrates how to perform transacted queued communication by using
 8. Run the client. Ensure that you change the endpoint address to point to the machine name or IP address instead of localhost. The client sends a message and exits.  
   
 ## Requirements  
+
  To run this sample, IIS must be installed on both the service and the client machines in addition to MSMQ.  
   
 ## Demonstrates  
+
  The sample demonstrates sending WCF queued messages using MSMQ over HTTP. This is also called SRMP messaging. When a queued message is sent, MSMQ on the sending machine transfers the messages to the receiving queue manager over TCP or HTTP transport. By choosing SRMP, the user indicates the choice of HTTP as a transport for queue transfer. SRMP Secure enables the use of HTTPS.  
   
 ## Example  
+
  The sample code is based on the transacted sample. How you send a message to the queue and receive a message from the queue using SRMP is the same as sending and receiving messages using a Native protocol.  
   
  The configuration for the client is changed to indicate the choice of the queue transfer protocol. The queue transfer protocol can be one of Native, SRMP or SrmpSecure. By default, the transfer protocol is Native. The client and service specify in the configuration to use SRMP in this example.  

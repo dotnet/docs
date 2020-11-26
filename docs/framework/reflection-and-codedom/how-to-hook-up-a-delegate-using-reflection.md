@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 076ee62d-a964-449e-a447-c31b33518b81
 ---
 # How to: Hook Up a Delegate Using Reflection
+
 When you use reflection to load and run assemblies, you cannot use language features like the C# `+=` operator or the Visual Basic [AddHandler statement](../../visual-basic/language-reference/statements/addhandler-statement.md) to hook up events. The following procedures show how to hook up an existing method to an event by getting all the necessary types through reflection, and how to create a dynamic method using reflection emit and hook it up to an event.  
   
 > [!NOTE]
@@ -63,6 +64,7 @@ When you use reflection to load and run assemblies, you cannot use language feat
      [!code-vb[HookUpDelegate#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#12)]  
   
 <a name="procedureSection1"></a>
+
 ### To generate an event handler at run time by using a dynamic method  
   
 1. Event-handler methods can be generated at run time, using lightweight dynamic methods and reflection emit. To construct an event handler, you need the return type and parameter types of the delegate. These can be obtained by examining the delegate's `Invoke` method. The following code uses the `GetDelegateReturnType` and `GetDelegateParameterTypes` methods to obtain this information. The code for these methods can be found in the Example section later in this topic.  
@@ -92,6 +94,7 @@ When you use reflection to load and run assemblies, you cannot use language feat
      [!code-vb[HookUpDelegate#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#12)]  
   
 ## Example  
+
  The following code example shows how to hook up an existing method to an event using reflection, and also how to use the <xref:System.Reflection.Emit.DynamicMethod> class to emit a method at run time and hook it up to an event.  
   
  [!code-cpp[HookUpDelegate#1](../../../samples/snippets/cpp/VS_Snippets_CLR/HookUpDelegate/cpp/source.cpp#1)]

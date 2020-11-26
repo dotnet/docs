@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e53b029c-9d6d-4c0a-9cdc-5cfca8a5ca47
 ---
 # \<Event> Element (.NET Native)
+
 Applies runtime reflection policy to an event.  
   
 ## Syntax  
@@ -15,6 +16,7 @@ Applies runtime reflection policy to an event.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,6 +40,7 @@ Applies runtime reflection policy to an event.
 |*policy_setting*|The setting to apply to this policy type for the event. Possible values are `Auto`, `Excluded`, `Included`, and `Required`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -48,6 +51,7 @@ Applies runtime reflection policy to an event.
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type and all its members.|  
   
 ## Remarks  
+
  If an event's policy is not explicitly defined, it inherits the runtime policy of its parent element.  
   
 ## See also

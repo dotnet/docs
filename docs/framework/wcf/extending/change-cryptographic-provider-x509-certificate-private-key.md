@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: b4254406-272e-4774-bd61-27e39bbb6c12
 ---
 # How to: Change the Cryptographic Provider for an X.509 Certificate's Private Key
+
 This topic shows how to change the cryptographic provider used to provide an X.509 certificate's private key and how to integrate the provider into the Windows Communication Foundation (WCF) security framework. For more information about using certificates, see [Working with Certificates](../feature-details/working-with-certificates.md).  
   
  The WCF security framework provides a way to introduce new security token types as described in [How to: Create a Custom Token](how-to-create-a-custom-token.md). It is also possible to use a custom token to replace existing system-provided token types.  
@@ -19,6 +20,7 @@ This topic shows how to change the cryptographic provider used to provide an X.5
  The following example is for demonstration purposes only. It does not replace the default Windows cryptographic provider, but it shows where such a provider could be integrated.  
   
 ## Procedures  
+
  Every security token that has an associated security key or keys must implement the <xref:System.IdentityModel.Tokens.SecurityToken.SecurityKeys%2A> property, which returns a collection of keys from the security token instance. If the token is an X.509 security token, the collection contains a single instance of the <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey> class that represents both public and private keys associated with the certificate. To replace the default cryptographic provider used to provide the certificate's keys, create a new implementation of this class.  
   
 #### To create a custom X.509 asymmetric key  

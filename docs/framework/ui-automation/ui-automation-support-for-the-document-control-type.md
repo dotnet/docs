@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
 ---
 # UI Automation Support for the Document Control Type
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -19,6 +20,7 @@ ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the Document control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all document controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
 ## Required UI Automation Tree Structure  
+
  The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to document controls and describes what can be contained in each view. For more information about the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
 |Control View|Content View|  
@@ -26,6 +28,7 @@ ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
 |Document<br /><br /> -   Varies|Document<br /><br /> -   Varies|  
   
 ## Required UI Automation Properties  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to document controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Property|Value|Notes|  
@@ -42,6 +45,7 @@ ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|See notes.|The document control typically gets its names from the file name it is loaded from. This is often displayed in a containing window or frame title.|  
   
 ## Required UI Automation Control Patterns  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by document controls. For more information about control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
 |Control Pattern|Support|Notes|  
@@ -51,6 +55,7 @@ ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Never|The document control does not support this control pattern because the contents of the control often span more than one page. UI Automation clients should use <xref:System.Windows.Automation.TextPattern> to obtain text information about a document.|  
   
 ## Required UI Automation Events  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all document controls. For more information about events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Event|Support|Notes|  

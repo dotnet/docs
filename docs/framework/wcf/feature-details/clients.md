@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: cce50025-0318-4a5e-9ce8-c67feab83b06
 ---
 # Clients
+
 The topics in this section cover the client architecture, how to access a Windows Communication Foundation (WCF) service, how to configure a WCF client, and some security consideration for WCF clients.  
   
 ## In This Section  
+
  [WCF Client Architecture](client-architecture.md)  
  Describes the WCF client architecture.  
   

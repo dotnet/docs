@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 63584434-e709-471d-9e96-97d3d99e70d6
 ---
 # 1025 - BookmarkScopeInitialized
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 63584434-e709-471d-9e96-97d3d99e70d6
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a BookmarkScope has been initialized.  
   
 ## Message  
+
  The BookmarkScope that had TemporaryId: '%1' has been initialized with Id: '%2'.  
   
 ## Details  

@@ -12,6 +12,7 @@ helpviewer_keywords:
 These events collect information about worker and I/O threads in the threadpool. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
 
 ## IOThreadCreate_V1 event
+
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -33,6 +34,7 @@ These events collect information about worker and I/O threads in the threadpool.
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
 ## IOThreadTerminate_V1 event
+
  The following table shows the keyword and level
 
 |Keyword for raising the event|Level
@@ -54,6 +56,7 @@ These events collect information about worker and I/O threads in the threadpool.
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
 ## IOThreadRetire_V1 event
+
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -75,6 +78,7 @@ These events collect information about worker and I/O threads in the threadpool.
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
 ## IOThreadUnretire_V1 event
+
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -176,6 +180,7 @@ These events collect information about worker and I/O threads in the threadpool.
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
 ## ThreadPoolWorkerThreadAdjustmentSample event
+
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -196,6 +201,7 @@ These events collect information about worker and I/O threads in the threadpool.
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CLR or CoreCLR.|
 
 ## ThreadPoolWorkerThreadAdjustmentAdjustment event
+
  The following table shows the keyword and level.
 
 |Keyword for raising the event|Level|
@@ -379,6 +385,7 @@ These events collect information about worker and I/O threads in the threadpool.
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
 ## ThreadRunning event
+
  The following table shows the keywords and level.
 
 |Keyword for raising the event|Level|

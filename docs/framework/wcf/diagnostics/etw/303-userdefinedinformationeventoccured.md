@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5ed5acaf-3755-4417-92c4-4ebc8e854ca1
 ---
 # 303 - UserDefinedInformationEventOccured
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 5ed5acaf-3755-4417-92c4-4ebc8e854ca1
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted from user code. Developers can emit this event when a custom-defined informational event occurs in their service. This can be done using the <xref:System.Diagnostics.Eventing> APIs. Additionally, there is a WCF sample that wraps that API and demonstrates how to properly emit this event.  
   
 ## Message  
+
  Name:'%1', Reference:'%2', Payload:%3  
   
 ## Details  

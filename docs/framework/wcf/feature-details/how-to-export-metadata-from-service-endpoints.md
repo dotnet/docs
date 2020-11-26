@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: b6c4dfd0-f270-43ec-961a-e16eb6af2f2c
 ---
 # How to: Export Metadata from Service Endpoints
+
 This topic explains how to export metadata from service endpoints.  
   
 ### To export metadata from service endpoints  
@@ -41,12 +42,14 @@ This topic explains how to export metadata from service endpoints.
 7. You can now use the metadata, such as write it to a file by calling the <xref:System.ServiceModel.Description.MetadataSet.WriteTo%28System.Xml.XmlWriter%29> method.  
   
 ## Example  
+
  The following is the full code listing for this example.  
   
  [!code-csharp[S_UEWsdlExporter#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_uewsdlexporter/cs/program.cs#0)]
  [!code-vb[S_UEWsdlExporter#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdlexporter/vb/program.vb#0)]  
   
 ## Compiling the Code  
+
  When compiling Program.cs reference System.ServiceModel.dll.  
   
 ## See also

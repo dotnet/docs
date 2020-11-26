@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fc5dac57-b3eb-4826-b505-c6d269e4774d
 ---
 # 1023 - CompleteBookmarkWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: fc5dac57-b3eb-4826-b505-c6d269e4774d
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a BookmarkWorkItem has completed.  
   
 ## Message  
+
  A BookmarkWorkItem has completed for Activity '%1', DisplayName: '%2', InstanceId: '%3'. BookmarkName: %4, BookmarkScope: %5.  
   
 ## Details  

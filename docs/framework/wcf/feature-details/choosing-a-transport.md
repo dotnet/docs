@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: b169462b-f7b6-4cf4-9fca-d306909ee8bf
 ---
 # Choosing a Transport
+
 This topic discusses criteria for choosing among the three main transports that are included in Windows Communication Foundation (WCF): HTTP, TCP, and named pipes. WCF also includes a message queuing (also known as MSMQ) transport, but this document does not cover message queuing.  
   
  The WCF programming model separates endpoint operations (as expressed in a service contract) from the transport mechanism that connects two endpoints. This gives you the flexibility to decide how to expose your services to the network.  
@@ -18,9 +19,11 @@ This topic discusses criteria for choosing among the three main transports that 
  After you choose a transport, you must select a binding that uses it. You can choose a system-provided binding (see [System-Provided Bindings](../system-provided-bindings.md)), or you can build your own custom binding (see [Custom Bindings](../extending/custom-bindings.md)). You can also create your own binding. For more information, see [Creating User-Defined Bindings](../extending/creating-user-defined-bindings.md).  
   
 ## Advantages of Each Transport  
+
  This section describes the main reasons for choosing any one of the three main transports, including a detailed decision chart for choosing among them.  
   
 ### When to Use HTTP Transport  
+
  HTTP is a request/response protocol between clients and servers. The most common application consists of Web-browser clients that communicate with a Web server. The client sends a request to a server, which listens for client request messages. When the server receives a request, it returns a response, which contains the status of the request. If successful, optional data, such as a Web page, an error message, or other information is returned. For more information about the HTTP protocol, see [HTTP - Hypertext Transfer Protocol](https://www.w3.org/Protocols/).  
   
  The HTTP protocol is not connection-based—once the response is sent, no state is maintained. To handle multiple-page transactions, the application must persist any necessary state.  
@@ -28,6 +31,7 @@ This topic discusses criteria for choosing among the three main transports that 
  In WCF, the HTTP transport binding is optimized for interoperability with legacy non-WCF systems. If all communicating parties are using WCF, the TCP-based or named pipes-based bindings are faster. For more information, see <xref:System.ServiceModel.NetTcpBinding> and <xref:System.ServiceModel.NetNamedPipeBinding>.  
   
 ### When to Use the TCP Transport  
+
  TCP is a connection-based, stream-oriented delivery service with end-to-end error detection and correction. *Connection-based* means that a communication session between hosts is established before exchanging data. A host is any device on a TCP/IP network identified by a logical IP address.  
   
  TCP provides reliable data delivery and ease of use. Specifically, TCP notifies the sender of packet delivery, guarantees that packets are delivered in the same order in which they are sent, retransmits lost packets, and ensures that data packets are not duplicated. Note that this reliable delivery applies between two TCP/IP nodes, and is not the same thing as *WS-ReliableMessaging*, which applies between endpoints, no matter how many intermediate nodes they may include.  
@@ -35,6 +39,7 @@ This topic discusses criteria for choosing among the three main transports that 
  The WCF TCP transport is optimized for the scenario where both ends of the communication are using WCF. This binding is the fastest WCF binding for scenarios that involve communicating between different machines. The message exchanges use the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> for optimized message transfer. TCP provides duplex communication and so can be used to implement duplex contracts, even if the client is behind network address translation (NAT).  
   
 ### When to Use the Named Pipe Transport  
+
  A named pipe is an object in the Windows operating system kernel, such as a section of shared memory that processes can use for communication. A named pipe has a name, and can be used for one-way or duplex communication between processes on a single machine.  
   
  When communication is required between different WCF applications on a single computer, and you want to prevent any communication from another machine, then use the named pipes transport. An additional restriction is that processes running from Windows Remote Desktop may be restricted to the same Windows Remote Desktop session unless they have elevated privileges.  
@@ -43,6 +48,7 @@ This topic discusses criteria for choosing among the three main transports that 
 > When using the named pipe transport with a weak wildcard URL reservation on multiple sites hosted in IIS, the following error may occur: An error occurred in the Activation Service 'NetPipeActivator' of the protocol 'net.pipe' while trying to listen for the site '2', thus the protocol is disabled for the site temporarily. See the exception message for more details. URL: WeakWildcard:net.pipe:/\<machine name>/ Status: ConflictingRegistration Exception:  Process Name: SMSvcHost Process ID: 1076\  
   
 ## Decision Points for Choosing a Transport  
+
  The following table describes the common decision points used to choose a transport. You should consider any additional attributes and transports that apply to your application. Identify the attributes that are important for your application, identify the transports that associate favorably with each of your attributes, and then select the transports that work best with your attribute set.  
   
 |Attribute|Description|Favored transports|  

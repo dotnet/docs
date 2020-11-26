@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: a64d01c6-f221-4f58-93e5-da4e87a5682e
 ---
 # Handling Exceptions and Faults
+
 Exceptions are used to communicate errors locally within the service or the client implementation. Faults, on the other hand, are used to communicate errors across service boundaries, such as from the server to the client or vice versa. In addition to faults, transport channels often use transport-specific mechanisms to communicate transport-level errors. For example, HTTP transport uses status codes such as 404 to communicate a non-existing endpoint URL (there is no endpoint to send back a fault). This document consists of three sections that provide guidance to custom channel authors. The first section provides guidance on when and how to define and throw exceptions. The second section provides guidance around generating and consuming faults. The third section explains how to provide trace information to aid the user of your custom channel in troubleshooting running applications.  
   
 ## Exceptions  
+
  There are two things to keep in mind when throwing an exception: First it has to be of a type that allows users to write correct code that can react appropriately to the exception. Second, it has to provide enough information for the user to understand what went wrong, the failure impact, and how to fix it. The following sections give guidance around exception types and messages for Windows Communication Foundation (WCF) channels. There is also general guidance around exceptions in .NET in the Design Guidelines for Exceptions document.  
   
 ### Exception Types  
+
  All exceptions thrown by channels must be either a <xref:System.TimeoutException?displayProperty=nameWithType>, <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>, or a type derived from <xref:System.ServiceModel.CommunicationException>. (Exceptions such as <xref:System.ObjectDisposedException> may also be thrown, but only to indicate that the calling code has misused the channel. If a channel is used correctly, it must only throw the given exceptions.) WCF provides seven exception types that derive from <xref:System.ServiceModel.CommunicationException> and are designed to be used by channels. There are other <xref:System.ServiceModel.CommunicationException>-derived exceptions that are designed to be used by other parts of the system. These exception types are:  
   
 |Exception Type|Meaning|Inner Exception Content|Recovery Strategy|  
@@ -26,6 +29,7 @@ Exceptions are used to communicate errors locally within the service or the clie
  Define a new exception type only if that type corresponds to a specific recovery strategy different from all of the existing exception types. If you do define a new exception type, it must derive from <xref:System.ServiceModel.CommunicationException> or one of its derived classes.  
   
 ### Exception Messages  
+
  Exception messages are targeted at the user not the program so they should provide sufficient information to help the user understand and solve the problem. The three essential parts of a good exception message are:  
   
  What happened. Provide a clear description of the problem using terms that relate to the user's experience. For example, a bad exception message would be "Invalid configuration section". This leaves the user wondering which configuration section is incorrect and why it is incorrect. An improved message would be "Invalid configuration section \<customBinding>". An even better message would be "Cannot add the transport named myTransport to the binding named myBinding because the binding already has a transport named myTransport". This is a very specific message using terms and names that the user can easily identify in the application's configuration file. However, there are still a few key components missing.  
@@ -35,6 +39,7 @@ Exceptions are used to communicate errors locally within the service or the clie
  How the user should correct the problem. The most important part of the message is helping the user fix the problem. The message should include some guidance or hints about what to check or fix to remedy the problem. For example, "ServiceHost failed to Open due to a configuration error: Cannot add the transport named myTransport to the binding named myBinding because the binding already has a transport named myTransport. Please ensure there is only one transport in the binding".  
   
 ## Communicating Faults  
+
  SOAP 1.1 and SOAP 1.2 both define a specific structure for faults. There are some differences between the two specifications but in general, the Message and MessageFault types are used to create and consume faults.  
   
  ![Handling exceptions and faults](./media/wcfc-soap1-1andsoap1-2faultcomparisonc.gif "wcfc_SOAP1-1AndSOAP1-2FaultComparisonc")  
@@ -108,6 +113,7 @@ public class FaultReason
  The fault detail contents are exposed on MessageFault using various methods including the `GetDetail`\<T> and `GetReaderAtDetailContents`(). The fault detail is an opaque element for carrying additional detail about the fault. This is useful if there is some arbitrary structured detail that you want to carry with the fault.  
   
 ### Generating Faults  
+
  This section explains the process of generating a fault in response to an error condition detected in a channel or in a message property created by the channel. A typical example is sending back a fault in response to a request message that contains invalid data.  
   
  When generating a fault, the custom channel should not send the fault directly, rather, it should throw an exception and let the layer above decide whether to convert that exception to a fault and how to send it. To aid in this conversion, the channel should provide a `FaultConverter` implementation that can convert the exception thrown by the custom channel to the appropriate fault. `FaultConverter` is defined as:  
@@ -173,6 +179,7 @@ public override bool OnTryCreateFaultMessage(Exception exception,
  An implication of this pattern is that exceptions thrown between layers for error conditions that require faults must contain enough information for the corresponding fault generator to create the correct fault. As a custom channel author, you may define exception types that correspond to different fault conditions if such exceptions do not already exist. Note that exceptions traversing channel layers should communicate the error condition rather than opaque fault data.  
   
 ### Fault Categories  
+
  There are generally three categories of faults:  
   
 1. Faults that are pervasive throughout the entire stack. These faults could be encountered at any layer in the channel stack, for example InvalidCardinalityAddressingException.  
@@ -188,6 +195,7 @@ public override bool OnTryCreateFaultMessage(Exception exception,
  Category 3. Faults are only generated and sent by a single layer in the processor. Therefore all the exceptions are contained within the layer. To improve consistency among channels and ease maintenance, your custom channel should use the pattern specified previously to generate fault messages even for internal faults.  
   
 ### Interpreting Received Faults  
+
  This section provides guidance for generating the appropriate exception when receiving a fault message. The decision tree for processing a message at every layer in the stack is as follows:  
   
 1. If the layer considers the message to be invalid, the layer should do its 'invalid message' processing. Such processing is specific to the layer but could include dropping the message, tracing, or throwing an exception that gets converted to a fault. Examples include security receiving a message that is not secured properly, or RM receiving a message with a bad sequence number.  
@@ -280,6 +288,7 @@ public override bool OnTryCreateException(
  For specific fault conditions that have distinct recovery scenarios, consider defining a derived class of `ProtocolException`.  
   
 ### MustUnderstand Processing  
+
  SOAP defines a general fault for signaling that a required header was not understood by the receiver. This fault is known as the `mustUnderstand` fault. In WCF, custom channels never generate `mustUnderstand` faults. Instead, the WCF Dispatcher, which is located at the top of the WCF communication stack, checks to see that all headers that were marked as MustUnderstand=true were understood by the underlying stack. If any were not understood, a `mustUnderstand` fault is generated at that point. (The user can choose to turn off this `mustUnderstand` processing and have the application receive all message headers. In that case the application is responsible for performing `mustUnderstand` processing.) The generated fault includes a NotUnderstood header that contains the names of all headers with MustUnderstand=true that were not understood.  
   
  If your protocol channel sends a custom header with MustUnderstand=true and receives a `mustUnderstand` fault, it must figure out whether that fault is due to the header it sent. There are two members on the `MessageFault` class that are useful for this:  
@@ -301,6 +310,7 @@ public class MessageFault
  If a channel emits a header that is marked MustUnderstand = true, then that layer should also implement the Exception Generation API pattern and should convert `mustUnderstand` faults caused by that header to a more useful exception as described previously.  
   
 ## Tracing  
+
  The .NET Framework provides a mechanism to trace program execution as a way to aid diagnosing production applications or intermittent problems where it is not possible to just attach a debugger and step through the code. The core components of this mechanism are in the <xref:System.Diagnostics?displayProperty=nameWithType> namespace and consist of:  
   
 - <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType>, which is the source of trace information to be written, <xref:System.Diagnostics.TraceListener?displayProperty=nameWithType>, which is an abstract base class for concrete listeners that receive the information to be traced from the <xref:System.Diagnostics.TraceSource> and output it to a listener-specific destination. For example, <xref:System.Diagnostics.XmlWriterTraceListener> outputs trace information to an XML file. Finally, <xref:System.Diagnostics.TraceSwitch?displayProperty=nameWithType>, which lets the application user control the tracing verbosity and is typically specified in configuration.  
@@ -310,6 +320,7 @@ public class MessageFault
  ![Handling exceptions and faults](./media/wcfc-tracinginchannelsc.gif "wcfc_TracingInChannelsc")  
   
 ### Tracing from a Custom Channel  
+
  Custom channels should write out trace messages to assist in diagnosing problems when it is not possible to attach a debugger to the running application. This involves two high level tasks: Instantiating a <xref:System.Diagnostics.TraceSource> and calling its methods to write traces.  
   
  When instantiating a <xref:System.Diagnostics.TraceSource>, the string you specify becomes the name of that source. This name is used to configure (enable/disable/set tracing level) the trace source. It also appears in the trace output itself. Custom channels should use a unique source name to help readers of the trace output understand where the trace information comes from. Using the name of the assembly that is writing the information as the name of the trace source is the common practice. For example, WCF uses System.ServiceModel as the trace source for information written from the System.ServiceModel assembly.  
@@ -328,6 +339,7 @@ udpsource.TraceInformation("UdpInputChannel received a message");
 > It is highly recommended that you specify a trace source name that is unique to your custom channel to help trace output readers understand where the output came from.  
   
 #### Integrating with the Trace Viewer  
+
  Traces generated by your channel can be output in a format readable by the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) by using <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType> as the trace listener. This is not something you, as the channel developer, need to do. Rather, it is the application user (or the person troubleshooting the application) that needs to configure this trace listener in the application's configuration file. For example, the following configuration outputs trace information from both <xref:System.ServiceModel?displayProperty=nameWithType> and `Microsoft.Samples.Udp` to the file named `TraceEventsFile.e2e`:  
   
 ```xml  
@@ -362,6 +374,7 @@ udpsource.TraceInformation("UdpInputChannel received a message");
 ```  
   
 #### Tracing Structured Data  
+
  <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> has a <xref:System.Diagnostics.TraceSource.TraceData%2A> method that takes one or more objects that are to be included in the trace entry. In general, the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method is called on each object and the resulting string is written as part of the trace entry. When using <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType> to output traces, you can pass an <xref:System.Xml.XPath.IXPathNavigable?displayProperty=nameWithType> as the data object to <xref:System.Diagnostics.TraceSource.TraceData%2A>. The resulting trace entry includes the XML provided by the <xref:System.Xml.XPath.XPathNavigator?displayProperty=nameWithType>. Here is an example entry with XML application data:  
   
 ```xml  

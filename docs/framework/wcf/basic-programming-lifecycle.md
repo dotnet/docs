@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 7cf21bfe-23bd-46aa-8033-609f851dbf76
 ---
 # Basic Programming Lifecycle
+
 Windows Communication Foundation (WCF) enables applications to communicate whether they are on the same computer, across the Internet, or on different application platforms. This topic outlines the tasks that are required to build a WCF application. For a working sample application, see [Getting Started Tutorial](getting-started-tutorial.md).  
   
 ## The Basic Tasks  
+
  The basic tasks to perform are, in order:  
   
 1. Define the service contract. A service contract specifies the signature of a service, the data it exchanges, and other contractually required data. For more information, see [Designing Service Contracts](designing-service-contracts.md).  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 54688101-becf-42f3-80ca-f53a7b527620
 ---
 # 1032 - ScheduleRuntimeWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 54688101-becf-42f3-80ca-f53a7b527620
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a RuntimeWorkItem has been scheduled.  
   
 ## Message  
+
  A runtime work item has been scheduled for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  
   
 ## Details  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bafbbd89-eab8-4e9a-b4c3-b7b0178e12d8
 ---
 # How to: Create a WCF Service that Communicates over WebSockets
+
 WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> binding to communicate over WebSockets.  WebSockets will be used when the <xref:System.ServiceModel.NetHttpBinding> determines the service contract defines a callback contract. This topic describes how to implement a WCF service and client that uses the <xref:System.ServiceModel.NetHttpBinding> to communicate over WebSockets.  
   
 ### Define the Service  
@@ -155,6 +156,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
          There is nothing special you need to do in the client configuration, just specify the client side endpoint using the `NetHttpBinding`.  
   
 ## Example  
+
  The following is the complete code used in this topic.  
   
 ```csharp  

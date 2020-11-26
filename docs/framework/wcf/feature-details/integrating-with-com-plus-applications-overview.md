@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: e481e48f-7096-40eb-9f20-7f0098412941
 ---
 # Integrating with COM+ Applications Overview
+
 Windows Communication Foundation (WCF) provides a rich environment for creating distributed applications. If you are already using component-based application logic hosted in COM+, you can use WCF to extend your existing logic rather than having to rewrite it. A common scenario is when you want to expose existing COM+ or Enterprise Services business logic through Web Services.  
   
  When an interface on a COM+ component is exposed as a Web service, the specification and contract of these services are determined by an automatic mapping that is performed at application initialization time. The following list shows the conceptual model for this mapping:  
@@ -39,6 +40,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
 4. Configure any additional service settings in the application configuration file. For more information about how to configure a component, see [How to: Configure COM+ Service Settings](how-to-configure-com-service-settings.md).  
   
 ## Supported Interfaces  
+
  There are some restrictions on the type of interfaces that can be exposed as a Web service. The following types of interfaces are not supported:  
   
 - Interfaces that pass object references as parameters - the following limited object reference approach is described in the Limited Object Reference Support section.  
@@ -56,6 +58,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
 - Interfaces from Enterprise Services components that have not been added to the global assembly cache.  
   
 ### Limited Object Reference Support  
+
  Because a number of deployed COM+ components do use objects by reference parameters, such as returning an ADO Recordset object, COM+ integration includes limited support for object reference parameters. The support is limited to objects that implement the `IPersistStream` COM interface. This includes ADO Recordset objects and can be implemented for application specific COM objects.  
   
  To enable this support, the ComSvcConfig.exe tool provides the **allowreferences** switch that disables the regular method signature parameter and checks that the tool runs to ensure that object reference parameters are not being used. In addition, the object types that you pass as parameters must be named and identified within the <`persistableTypes`> configuration element that is a child of the <`comContract`> element.  
@@ -68,6 +71,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
 > Due to the custom and platform-specific nature of the serialization approach, this is best suited for use between WCF clients and WCF services.  
   
 ## Selecting the Hosting Mode  
+
  COM+ exposes Web services in one of the following hosting modes:  
   
 - COM+-hosted  
@@ -83,6 +87,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
      The Web service and the COM+ application logic are hosted within the Web server worker process. This provides automatic activation of the Web-hosted mode without causing a process hop for Web service requests. The disadvantage is that the server application cannot be accessed through DCOM.  
   
 ### Security Considerations  
+
  Like other WCF services, the security settings for the exposed service are administered through configuration settings for the WCF channel. Traditional DCOM security settings such as the DCOM machine-wide permissions settings are not enforced. To enforce COM+ application roles, "component-level access checks" authorization must be enabled for the component.  
   
  The use of a non-secured binding can leave communication open to tampering or information disclosure. To prevent this, it is recommended that you use a secured binding.  

@@ -5,9 +5,11 @@ ms.date: "03/30/2017"
 ms.assetid: 30c2d66c-04a8-41a5-ad31-646b937f61b5
 ---
 # Mitigation: Deserialization of Objects Across App Domains
+
 In some cases, when an app uses two or more app domains with different application bases, the attempt to deserialize objects in the logical call context across app domains throws an exception.  
   
 ## Diagnosing the issue  
+
  The issue arises under the following sequence of conditions:  
   
 1. An app uses two or more app domains with different application bases.  
@@ -31,6 +33,7 @@ In some cases, when an app uses two or more app domains with different applicati
 6. Because the types that are in the logical call context cannot be resolved in the default app domain, an exception is thrown.  
   
 ## Mitigation  
+
  To work around this issue, do the following  
   
 1. Look for the call to `get_Evidence` in the call stack when the exception is thrown. The exception can be any of a large subset of exceptions, including <xref:System.IO.FileNotFoundException> and <xref:System.Runtime.Serialization.SerializationException>.  

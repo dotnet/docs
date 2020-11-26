@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
 ---
 # UriTemplate and UriTemplateTable
+
 Web developers require the ability to describe the shape and layout of the URIs that their services respond to. Windows Communication Foundation (WCF) added two new classes to give developers control over their URIs. <xref:System.UriTemplate> and <xref:System.UriTemplateTable> form the basis of the URI-based dispatch engine in WCF. These classes can also be used on their own, allowing developers to take advantage of templates and the URI mapping mechanism without implementing a WCF service.  
   
 ## Templates  
+
  A template is a way to describe a set of relative URIs. The set of URI templates in the following table shows how a system that retrieves various types of weather information might be defined.  
   
 |Data|Template|  
@@ -19,6 +21,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
  This table describes a set of structurally similar URIs. Each entry is a URI template. The segments in curly braces describe variables. The segments not in curly braces describe literal strings. The WCF template classes allow a developer to take an incoming URI, for example, "/weather/wa/seattle/cycling", and match it to a template that describes it, "/weather/{state}/{city}/{activity}".  
   
 ## UriTemplate  
+
  <xref:System.UriTemplate> is a class that encapsulates a URI template. The constructor takes a string parameter that defines the template. This string contains the template in the format described in the next section. The <xref:System.UriTemplate> class provides methods that allow you match an incoming URI to a template, generate a URI from a template, retrieve a collection of variable names used in the template, determine whether two templates are equivalent, and return the template's string.  
   
  <xref:System.UriTemplate.Match%28System.Uri%2CSystem.Uri%29> takes a base address and a candidate URI and attempts to match the URI to the template. If the match is successful, a <xref:System.UriTemplateMatch> instance is returned. The <xref:System.UriTemplateMatch> object contains a base URI, the candidate URI, a name/value collection of the query parameters, an array of the relative path segments, a name/value collection of variables that were matched, the <xref:System.UriTemplate> instance used to perform the match, a string that contains any unmatched portion of the candidate URI (used when the template has a wildcard), and an object that is associated with the template.  
@@ -49,6 +52,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
  Schemes like file:// and urn:// do not conform to the HTTP URI grammar and cause unpredictable results when used with URI templates.  
   
 ### Template String Syntax  
+
  A template has three parts: a path, an optional query, and an optional fragment. For an example, see the following template:  
   
 `"/weather/{state}/{city}?forecast={length)#frag1`  
@@ -104,6 +108,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
 - "?y=2&&X=3" – Query string must be name value pairs, names cannot start with '&'.  
   
 ### Compound Path Segments  
+
  Compound path segments allow a single URI path segment to contain multiple variables as well as variables combined with literals. The following are examples of valid compound path segments.  
   
 - /filename.{ext}/  
@@ -121,9 +126,11 @@ Web developers require the ability to describe the shape and layout of the URIs 
 - /{shoe}{boat} - Variables must be separated by a literal.  
   
 ### Matching and Compound Path Segments  
+
  Compound path segments allow you to define a UriTemplate that has multiple variables within a single path segment. For example, in the following template string: "Addresses/{state}.{city}" two variables (state and city) are defined within the same segment. This template would match a URL such as `http://example.com/Washington.Redmond` but it will also match an URL like `http://example.com/Washington.Redmond.Microsoft`. In the latter case, the state variable will contain "Washington" and the city variable will contain "Redmond.Microsoft". In this case any text (except ‘/’) will match the {city} variable. If you want a template that will not match the "extra" text, place the variable in a separate template segment, for example: "Addresses/{state}/{city}.  
   
 ### Named Wildcard Segments  
+
  A named wildcard segment is any path variable segment whose variable name begins with the wildcard character ‘\*’. The following template string contains a named wildcard segment named "shoe".  
   
 `"literal/{*shoe}"`  
@@ -143,6 +150,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
 - Named wildcard segments cannot end with "/".  
   
 ### Default Variable Values  
+
  Default variable values allow you to specify default values for variables within a template. Default variables can be specified with the curly braces that declare the variable or as a collection passed to the UriTemplate constructor. The following template shows two ways to specify a <xref:System.UriTemplate> with variables with default values.  
   
 ```csharp
@@ -227,9 +235,11 @@ When a variable is given a default value of `null` there are some additional con
 - `UriTemplate t = new UriTemplate("{shoe=null}/{boat=x}/{bed=null}"); // shoe cannot have a null default because boat does not have a default null value`
 
 ### Default Values and Matching  
+
  When matching a candidate URI with a template that has default values, the default values are placed in the <xref:System.UriTemplateMatch.BoundVariables%2A> collection if values are not specified in the candidate URI.  
   
 ### Template Equivalence  
+
  Two templates are said to be *structurally equivalent* when all of the templates' literals match and they have variables in the same segments. For example the following templates are structurally equivalent:  
   
 - /a/{var1}/b b/{var2}?x=1&y=2  
@@ -247,6 +257,7 @@ When a variable is given a default value of `null` there are some additional con
 - Query strings are unordered.  
   
 ## UriTemplateTable  
+
  The <xref:System.UriTemplateTable> class represents an associative table of <xref:System.UriTemplate> objects bound to an object of the developer's choosing. A <xref:System.UriTemplateTable> must contain at least one <xref:System.UriTemplate> prior to calling <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29>. The contents of a <xref:System.UriTemplateTable> can be changed until <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called. Validation is performed when <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called. The type of validation performed depends upon the value of the `allowMultiple` parameter to <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29>.  
   
  When <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> is called passing in `false`, the <xref:System.UriTemplateTable> checks to make sure there are no templates in the table. If it finds any structurally equivalent templates, it throws an exception. This is used in conjunction with <xref:System.UriTemplateTable.MatchSingle%28System.Uri%29> when you want to ensure only one template matches an incoming URI.  
@@ -259,6 +270,7 @@ When a variable is given a default value of `null` there are some additional con
 > While the <xref:System.UriTemplateTable> allows base addresses that use schemes other than HTTP, the scheme and port number are ignored when matching candidate URIs to templates.  
   
 ### Query String Ambiguity  
+
  Templates that share an equivalent path contain ambiguous query strings if there is a URI that matches more than one template.  
   
  The following sets of query strings are unambiguous within themselves:  

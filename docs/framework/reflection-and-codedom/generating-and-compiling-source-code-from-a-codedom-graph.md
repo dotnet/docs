@@ -29,9 +29,11 @@ helpviewer_keywords:
 ms.assetid: 6c864c8e-6dd3-4a65-ace0-36879d9a9c42
 ---
 # Generating and Compiling Source Code from a CodeDOM Graph
+
 The <xref:System.CodeDom.Compiler> namespace provides interfaces for generating source code from CodeDOM object graphs and for managing compilation with supported compilers. A code provider can produce source code in a particular programming language according to a CodeDOM graph. A class that derives from <xref:System.CodeDom.Compiler.CodeDomProvider> can typically provide methods for generating and compiling code for the language the provider supports.  
   
 ## Using a CodeDOM code provider to generate source code  
+
  To generate source code in a particular language, you need a CodeDOM graph that represents the structure of the source code to generate.  
   
  The following example demonstrate how to create an instance of a <xref:Microsoft.CSharp.CSharpCodeProvider>:  
@@ -47,6 +49,7 @@ The <xref:System.CodeDom.Compiler> namespace provides interfaces for generating 
  [!code-vb[CodeDomExample#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source3.vb#22)]  
   
 ## Using a CodeDOM code provider to compile assemblies  
+
  **Invoking compilation**  
   
  To compile an assembly using a CodeDom provider, you must have either source code to compile in a language for which you have a compiler, or a CodeDOM graph that source code to compile can be generated from.  
@@ -84,6 +87,7 @@ The <xref:System.CodeDom.Compiler> namespace provides interfaces for generating 
  [!code-vb[CodeDomExample#23](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source3.vb#23)]  
   
 ## Languages with Initial Support  
+
  The .NET Framework provides code compilers and code generators for the following languages: C#, Visual Basic, C++, and JScript. CodeDOM support can be extended to other languages by implementing language-specific code generators and code compilers.  
   
 ## See also

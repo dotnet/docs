@@ -61,6 +61,7 @@ vbc -out:myAssembly.exe myCode.vb
 ```
 
 ## Create library assemblies
+
  A library assembly is similar to a class library. It contains types that will be referenced by other assemblies, but it has no entry point to begin execution.
 
 To create a library assembly, at the command prompt, type the following command:

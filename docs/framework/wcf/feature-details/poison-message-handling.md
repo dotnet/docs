@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8d1c5e5a-7928-4a80-95ed-d8da211b8595
 ---
 # Poison Message Handling
+
 A *poison message* is a message that has exceeded the maximum number of delivery attempts to the application. This situation can arise when a queue-based application cannot process a message because of errors. To meet reliability demands, a queued application receives messages under a transaction. Aborting the transaction in which a queued message was received leaves the message in the queue so that the message is retried under a new transaction. If the problem that caused the transaction to abort is not corrected, the receiving application can get stuck in a loop receiving and aborting the same message until the maximum number of delivery attempts has been exceeded and a poison message results.  
   
  A message can become a poison message for many reasons. The most common reasons are application-specific. For example, if an application reads a message from a queue and performs some database processing, the application may fail to get a lock on the database, causing it to abort the transaction. Because the database transaction was aborted, the message remains in the queue, which causes the application to reread the message a second time and make another attempt to acquire a lock on the database. Messages can also become poison if they contain invalid information. For example, a purchase order may contain an invalid customer number. In these cases, the application may voluntarily abort the transaction and force the message to become a poison message.  
@@ -11,6 +12,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
  On rare occasions, messages can fail to get dispatched to the application. The Windows Communication Foundation (WCF) layer may find a problem with the message, such as if the message has the wrong frame, invalid message credentials attached to it, or an invalid action header. In these cases, the application never receives the message; however, the message can still become a poison message and be processed manually.  
   
 ## Handling Poison Messages  
+
  In WCF, poison message handling provides a mechanism for a receiving application to deal with messages that cannot be dispatched to the application or messages that are dispatched to the application but that fail to be processed because of application-specific reasons. Configure poison message handling with the following properties in each of the available queued bindings:  
   
 - `ReceiveRetryCount`. An integer value that indicates the maximum number of times to retry delivery of a message from the application queue to the application. The default value is 5. This is sufficient in cases where an immediate retry fixes the problem, such as with a temporary deadlock on a database.  
@@ -54,6 +56,7 @@ The following are the maximum number of delivery attempts made for a message:
 > You can alter properties in these bindings based on the requirements of your WCF service. The entire poison message handling mechanism is local to the receiving application. The process is invisible to the sending application unless the receiving application ultimately stops and sends a negative acknowledgment back to the sender. In that case, the message is moved to the sender's dead-letter queue.  
   
 ## Best Practice: Handling MsmqPoisonMessageException  
+
  When the service determines that a message is poison, the queued transport throws a <xref:System.ServiceModel.MsmqPoisonMessageException> that contains the `LookupId` of the poison message.  
   
  A receiving application can implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface to handle any errors that the application requires. For more information, see [Extending Control Over Error Handling and Reporting](../samples/extending-control-over-error-handling-and-reporting.md).  
@@ -75,20 +78,25 @@ The following are the maximum number of delivery attempts made for a message:
  In addition, if the `ReceiveErrorHandling` is set to `Fault`, the `ServiceHost` faults when encountering the poison message. You can hook up to the faulted event and shut down the service, take corrective actions, and restart. For example, the `LookupId` in the <xref:System.ServiceModel.MsmqPoisonMessageException> propagated to the `IErrorHandler` can be noted and when the service host faults, you could use the `System.Messaging` API to receive the message from the queue using the `LookupId` to remove the message from the queue and store the message in some external store or another queue. You can then restart `ServiceHost` to resume normal processing. The [Poison Message Handling in MSMQ 4.0](../samples/poison-message-handling-in-msmq-4-0.md) demonstrates this behavior.  
   
 ## Transaction Time-Out and Poison Messages  
+
  A class of errors can occur between the queued transport channel and the user code. These errors can be detected by layers in-between, such as the message security layer or the service dispatching logic. For example, a missing X.509 certificate detected in the SOAP security layer and a missing action are cases where the message does get dispatched to the application. When this happens, the service model drops the message. Because the message is read in a transaction and an outcome for that transaction cannot be provided, the transaction eventually times out, aborts, and the message is put back into the queue. In other words, for a certain class of errors, the transaction does not immediately abort but waits until the transaction times out. You can modify the transaction time-out for a service using <xref:System.ServiceModel.ServiceBehaviorAttribute>.  
   
  To change the transaction time-out on a computer-wide basis, modify the machine.config file and set the appropriate transaction time-out. It is important to note that, depending on the time-out set in the transaction, the transaction eventually aborts and goes back to the queue and its abort count is incremented. Eventually, the message becomes poison and the right disposition is made according to the user settings.  
   
 ## Sessions and Poison Messages  
+
  A session undergoes the same retry and poison-message handling procedures as a single message. The properties previously listed for poison messages apply to the entire session. This means that the entire session is retried and goes to a final poison-message queue or the sender’s dead-letter queue if the message is rejected.  
   
 ## Batching and Poison Messages  
+
  If a message becomes a poison message and is part of a batch, then the entire batch is rolled back and the channel returns to reading one message at a time. For more information about batching, see [Batching Messages in a Transaction](batching-messages-in-a-transaction.md)  
   
 ## Poison-message Handling for Messages in a Poison Queue  
+
  Poison-message handling does not end when a message is placed in the poison-message queue. Messages in the poison-message queue must still be read and handled. You can use a subset of the poison-message handling settings when reading messages from the final poison subqueue. The applicable settings are `ReceiveRetryCount` and `ReceiveErrorHandling`. You can set `ReceiveErrorHandling` to Drop, Reject, or Fault. `MaxRetryCycles` is ignored and an exception is thrown if `ReceiveErrorHandling` is set to Move.  
   
 ## Windows Vista, Windows Server 2003, and Windows XP Differences  
+
  As noted earlier, not all poison-message handling settings apply to Windows Server 2003 and Windows XP. The following key differences between Message Queuing on Windows Server 2003, Windows XP, and Windows Vista are relevant to poison-message handling:  
   
 - Message Queuing in Windows Vista supports subqueues, while Windows Server 2003 and Windows XP do not support subqueues. Subqueues are used in poison-message handling. The retry queues and the poison queue are subqueues to the application queue that is created based on the poison-message handling settings. The `MaxRetryCycles` dictates how many retry subqueues to create. Therefore, when running on Windows Server 2003 or Windows XP, `MaxRetryCycles` are ignored and `ReceiveErrorHandling.Move` is not allowed.  

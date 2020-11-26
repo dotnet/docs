@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 41f727b5-b142-4c1b-b046-492b96135ae6
 ---
 # Designing Workflows
+
 The topics in this section describe the flow-control paradigms used in workflow development.  
   
 ## In This Section  
+
  [Flowchart Workflows](flowchart-workflows.md)  
  Shows how to create workflows using the familiar flowchart paradigm.  
   

@@ -161,4 +161,5 @@ public Customer GetCustomer(string id)
 ```  
   
 ## Security Considerations  
+
  Requests that require authorization should not have their responses cached, because the authorization is not performed when the response is served from the cache.  Caching such responses would introduce a serious security vulnerability.  Usually, requests that require authorization provide user-specific data and therefore server-side caching is not even beneficial.  In such situations, client-side caching or simply not caching at all will be more appropriate.

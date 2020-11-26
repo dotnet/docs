@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 442d4f71-c64e-4c62-816a-a66c38e7d3ec
 ---
 # Default Service Behavior
+
 This sample demonstrates how service behavior settings can be configured. The sample is based on the [Getting Started](getting-started-sample.md), which implements the `ICalculator` service contract. This sample explicitly defines service behaviors and operation behaviors using the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes. You can configure behaviors in configuration files or imperatively in code (as this sample demonstrates).  
   
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a0285d1c-550f-4c14-9c36-a96e97f1c4e4
 ---
 # 301 - UserDefinedErrorOccurred
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: a0285d1c-550f-4c14-9c36-a96e97f1c4e4
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted from user code. Developers can emit this event when a custom-defined error occurs in their service. This can be done using the <xref:System.Diagnostics.Eventing> APIs. Additionally, there is a WCF sample that wraps that API and demonstrates how to properly emit this event.  
   
 ## Message  
+
  Name:'%1', Reference:'%2', Payload:%3  
   
 ## Details  

@@ -19,6 +19,7 @@ helpviewer_keywords:
 ms.assetid: 81de9f59-8177-4d98-b25d-43fc32a98383
 ---
 # Using Client Sockets
+
 Before you can initiate a conversation through a <xref:System.Net.Sockets.Socket>, you must create a data pipe between your application and the remote device. Although other network address families and protocols exist, this example shows how to create a TCP/IP connection to a remote service.  
   
  TCP/IP uses a network address and a service port number to uniquely identify a service. The network address identifies a specific device on the network; the port number identifies the specific service on that device to connect to. The combination of network address and service port is called an endpoint, which is represented in the .NET Framework by the <xref:System.Net.EndPoint> class. A descendant of **EndPoint** is defined for each supported address family; for the IP address family, the class is <xref:System.Net.IPEndPoint>.  

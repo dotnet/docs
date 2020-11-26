@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bdb6e4e8-ec85-4629-a43a-7836d445ecab
 ---
 # 3405 - EncryptedDataProcessingStart
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: bdb6e4e8-ec85-4629-a43a-7836d445ecab
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted when the encrypted data processing has started.  
   
 ## Message  
+
  Encrypted data processing started.  
   
 ## Details

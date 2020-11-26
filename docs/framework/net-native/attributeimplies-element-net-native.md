@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
 ---
 # \<AttributeImplies> Element (.NET Native)
+
 Defines policy for code elements the containing attribute is applied to.  
   
 ## Syntax  
@@ -22,6 +23,7 @@ Defines policy for code elements the containing attribute is applied to.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -46,6 +48,7 @@ Defines policy for code elements the containing attribute is applied to.
 |*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -55,6 +58,7 @@ Defines policy for code elements the containing attribute is applied to.
 |[\<Type>](type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
   
 ## Remarks  
+
  The `<AttributeImplies>` element is used if its containing type is an attribute (that is, a class derived from <xref:System.Attribute?displayProperty=nameWithType>). If the attribute is applied to a particular program element, the policy defined by the `<AttributeImplies>` element applies to that program element.  
   
  The reflection, serialization, and interop attributes are all optional, although at least one should be present.  

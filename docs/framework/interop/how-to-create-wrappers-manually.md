@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: cc2a70d8-6a58-4071-a8cf-ce28c018c09b
 ---
 # How to: Create Wrappers Manually
+
 If you decide to declare COM types manually in managed source code, the best place to start is with an existing Interface Definition Language (IDL) file or type library. When you do not have the IDL file or cannot generate a type library file, you can simulate the COM types by creating managed declarations and exporting the resulting assembly to a type library.  
   
 ### To simulate COM types from managed source  
@@ -28,6 +29,7 @@ If you decide to declare COM types manually in managed source code, the best pla
 4. As with the types imported with Tlbimp.exe, some require additional information, which you can add directly to your code. For details, see [How to: Edit Interop Assemblies](/previous-versions/dotnet/netframework-4.0/8zbc969t(v=vs.100)).  
   
 ## Example  
+
  The following code shows an example of the `ISATest` interface and `SATest` class in IDL and the corresponding types in C# source code.  
   
  **IDL or type library file**  

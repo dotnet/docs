@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 45620011-8b04-4f87-ab5a-65b24145e17d
 ---
 # 1034 - CompleteRuntimeWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 45620011-8b04-4f87-ab5a-65b24145e17d
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a RuntimeWorkItem has completed.  
   
 ## Message  
+
  A runtime work item has completed for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  
   
 ## Details  

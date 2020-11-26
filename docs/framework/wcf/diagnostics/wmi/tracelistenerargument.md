@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b6c84090-bf96-43f4-9fb0-1ce8fd9c8efe
 ---
 # TraceListenerArgument
+
 TraceListenerArgument  
   
 ## Syntax  
@@ -17,12 +18,15 @@ class TraceListenerArgument
 ```  
   
 ## Methods  
+
  The TraceListenerArgument class does not define any methods.  
   
 ## Properties  
+
  The TraceListenerArgument class has the following properties:  
   
 ### Name  
+
  Data type: string  
   
  Access type: Read-only  
@@ -30,6 +34,7 @@ class TraceListenerArgument
  The name of the argument.  
   
 ### Value  
+
  Data type: string  
   
  Access type: Read-only  

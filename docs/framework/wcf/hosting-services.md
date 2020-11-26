@@ -17,6 +17,7 @@ These hosting options range from running inside a console application to server 
 ## Hosting options
 
 ### Self-Host in a Managed Application
+
  WCF services can be hosted in any managed application. This is the most flexible option because it requires the least infrastructure to deploy. You embed the code for the service inside the managed application code and then create and open an instance of the <xref:System.ServiceModel.ServiceHost> to make the service available. For more information, see [How to: Host a WCF Service in a Managed Application](how-to-host-a-wcf-service-in-a-managed-application.md).
 
  This option enables two common scenarios: WCF services running inside console applications and rich client applications such as those based on Windows Presentation Foundation (WPF) or Windows Forms (WinForms). Hosting a WCF service inside a console application is typically useful during the application's development phase. This makes them easy to debug, easy to get trace information from to find out what is happening inside of the application, and easy to move around by copying them to new locations. This hosting option also makes it easy for rich client applications, such as WPF and WinForms applications, to communicate with the outside world. For example, a peer-to-peer collaboration client that uses WPF for its user interface and also hosts a WCF service that allows other clients to connect to it and share information.
@@ -38,6 +39,7 @@ Windows Process Activation Service (WAS) is the new process activation mechanism
  This hosting option requires that WAS be properly configured, but it does not require you to write any hosting code as part of the application. For more information about how to configure WAS hosting, see [How to: Host a WCF Service in WAS](./feature-details/how-to-host-a-wcf-service-in-was.md).
 
 ## Choose a Hosting Environment
+
  The following table summarizes some of the key benefits and scenarios associated with each of the hosting options.
 
 |Hosting Environment|Common Scenarios|Key Benefits and Limitations|

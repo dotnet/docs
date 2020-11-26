@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 21922b4d-9a83-45cb-a6fc-5b1c2f9a2c17
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationInstanceReleased
+
 System.ServiceModel.ComIntegration.ComIntegrationInstanceReleased  
   
 ## Description  
+
  ComPlus: Released instance.  
   
 ## See also

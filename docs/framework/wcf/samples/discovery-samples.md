@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 522a00b4-a789-4e8c-b8d7-a4c3d863a182
 ---
 # Discovery (Samples)
+
 This section contains samples related to the Discovery feature.  
   
 ## In This Section  
+
  [Announcements](announcements-sample.md)  
  Demonstrates how to use announcements with the discovery feature.  
   

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 2afe044d-df4a-49a4-9865-38700474c3dd
 ---
 # Security Extensibility
+
 This section contains samples that demonstrate custom security in Windows Communication Foundation (WCF).  
   
 ## In This Section  
+
  [Durable Issued Token Provider](durable-issued-token-provider.md)  
  Demonstrates how to implement a custom client issued token provider.  
   

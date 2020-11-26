@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: a219cb2c-9fa2-4c90-9b26-939e0788f178
 ---
 # COM Interop Sample: COM Client and .NET Server
+
 This sample demonstrates the interoperation of a [COM Client](#cpconcominteropsamplecomclientnetserveranchor1) and a [.NET Server](#cpconcominteropsamplecomclientnetserveranchor2) that performs mortgage calculations. In this example, the client creates and calls an instance of the managed `Loan` class, passes four arguments (one of those four being equal to zero) to the instance, and displays the computations. Code examples from this sample appear throughout this section.  
   
 <a name="cpconcominteropsamplecomclientnetserveranchor1"></a>
+
 ## COM Client  
   
 ```cpp  
@@ -81,6 +83,7 @@ int main(int argc, char* argv[])
 ```  
   
 <a name="cpconcominteropsamplecomclientnetserveranchor2"></a>
+
 ## .NET Server  
   
 ```vb  

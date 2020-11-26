@@ -7,11 +7,13 @@ dev_langs:
 ms.assetid: c8329832-bf66-4064-9034-bf39f153fc2d
 ---
 # Accessing Services Using a Client
+
 Client applications must create, configure, and use WCF client or channel objects to communicate with services. The [WCF Client Overview](../wcf-client-overview.md) topic provides an overview of the objects and steps involved in creating basic client and channel objects and using them.  
   
  This topic provides in-depth information about some of the issues with client applications and client and channel objects that may be useful depending upon your scenario.  
   
 ## Overview  
+
  This topic describes behavior and issues relating to:  
   
 - Channel and session lifetimes.  
@@ -23,6 +25,7 @@ Client applications must create, configure, and use WCF client or channel object
 - Initializing channels interactively.  
   
 ### Channel and Session Lifetimes  
+
  Windows Communication Foundation (WCF) applications includes two categories of channels, datagram and sessionful.  
   
  A *datagram* channel is a channel in which all messages are uncorrelated. With a datagram channel, if an input or output operation fails, the next operation is typically unaffected, and the same channel can be reused. Because of this, datagram channels typically do not fault.  
@@ -37,11 +40,13 @@ Client applications must create, configure, and use WCF client or channel object
  Most of the system-provided bindings (which expose channels to the application layer) use sessions by default, but the <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType> does not. For more information, see [Using Sessions](../using-sessions.md).  
   
 ### The Proper Use of Sessions  
+
  Sessions provide a way to know if the entire message exchange is complete, and if both sides considered it successful. It is recommended that a calling application open the channel, use it, and close the channel inside one try block. If a session channel is open, and the <xref:System.ServiceModel.ICommunicationObject.Close%2A?displayProperty=nameWithType> method is called once, and that call returns successfully, then the session was successful. Successful in this case means that all delivery guarantees the binding specified were met, and the other side did not call <xref:System.ServiceModel.ICommunicationObject.Abort%2A?displayProperty=nameWithType> on the channel before calling <xref:System.ServiceModel.ICommunicationObject.Close%2A>.  
   
  The following section provides an example of this client approach.  
   
 ### Handling Exceptions  
+
  Handling exceptions in client applications is straightforward. If a channel is opened, used, and closed inside a try block, then the conversation has succeeded, unless an exception is thrown. Typically, if an exception is thrown the conversation is aborted.  
   
 > [!NOTE]
@@ -60,6 +65,7 @@ Client applications must create, configure, and use WCF client or channel object
  For more complete information about working with error information at the application level, see [Specifying and Handling Faults in Contracts and Services](../specifying-and-handling-faults-in-contracts-and-services.md). [Expected Exceptions](../samples/expected-exceptions.md) describes expected exceptions and shows how to handle them. For more information about how to handle errors when developing channels, see [Handling Exceptions and Faults](../extending/handling-exceptions-and-faults.md).  
   
 ### Client Blocking and Performance  
+
  When an application synchronously calls a request-reply operation, the client blocks until a return value is received or an exception (such as a <xref:System.TimeoutException?displayProperty=nameWithType>) is thrown. This behavior is similar to local behavior. When an application synchronously invokes an operation on a WCF client object or channel, the client does not return until the channel layer can write the data to the network or until an exception is thrown. And while the one-way message exchange pattern (specified by marking an operation with <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A?displayProperty=nameWithType> set to `true`) can make some clients more responsive, one-way operations can also block, depending upon the binding and what messages have already been sent. One-way operations are only about the message exchange, no more and no less. For more information, see [One-Way Services](one-way-services.md).  
   
  Large data chunks can slow client processing no matter what the message exchange pattern. To understand how to handle these issues, see [Large Data and Streaming](large-data-and-streaming.md).  
@@ -69,6 +75,7 @@ Client applications must create, configure, and use WCF client or channel object
  For more information about increasing client performance, see [Middle-Tier Client Applications](middle-tier-client-applications.md).  
   
 ### Enabling the User to Select Credentials Dynamically  
+
  The <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer> interface enables applications to display a user interface that enables the user to choose credentials with which a channel is created before the timeout timers start.  
   
  Application developers can make use of an inserted <xref:System.ServiceModel.Dispatcher.IInteractiveChannelInitializer> in two ways. The client application can call either <xref:System.ServiceModel.ClientBase%601.DisplayInitializationUI%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.IClientChannel.DisplayInitializationUI%2A?displayProperty=nameWithType> (or an asynchronous version) prior to opening the channel (the *explicit* approach) or call the first operation (the *implicit* approach).  

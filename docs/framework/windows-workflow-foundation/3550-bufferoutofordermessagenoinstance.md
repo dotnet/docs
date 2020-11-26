@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1299d294-99b8-430e-98b1-55f5f17002f3
 ---
 # 3550 - BufferOutOfOrderMessageNoInstance
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 1299d294-99b8-430e-98b1-55f5f17002f3
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  Indicates a buffered receive has failed. The operation will be attempted again when the service instance is ready to process this particular operation.  
   
 ## Message  
+
  Operation '%1' cannot be performed at this time. Another attempt will be made when the service instance is ready to process this particular operation.  
   
 ## Details  

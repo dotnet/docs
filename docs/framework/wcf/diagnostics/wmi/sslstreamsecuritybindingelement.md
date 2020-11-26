@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 18130d50-8996-4257-9c60-bc457f8654d8
 ---
 # SslStreamSecurityBindingElement
+
 SslStreamSecurityBindingElement  
   
 ## Syntax  
@@ -16,12 +17,15 @@ class SslStreamSecurityBindingElement : BindingElement
 ```  
   
 ## Methods  
+
  The SslStreamSecurityBindingElement class does not define any methods.  
   
 ## Properties  
+
  The SslStreamSecurityBindingElement class has the following property:  
   
 ### RequireClientCertificate  
+
  Data type: boolean  
   
  Access type: Read-only  

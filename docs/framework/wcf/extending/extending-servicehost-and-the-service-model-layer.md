@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 954c138a-1cd0-45a0-8abe-e4d2b8ff5400
 ---
 # Extending ServiceHost and the Service Model Layer
+
 The service model layer is responsible for pulling incoming messages out of the underlying channels, translating them into method invocations in application code, and sending the results back to the caller. Service model extensions modify or implement execution or communication behavior and features involving client or dispatcher functionality, custom behaviors, message and parameter interception, and other extensibility functionality.  
   
 ## In This Section  
+
  [Extending Clients](extending-clients.md)  
  Describes the interfaces that can intercept and modify the client runtime, as well as the classes into which you can insert your custom extensions in client applications. For example, you can perform custom client message logging, perform custom message serialization, and so on.  
   

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: b0fcdd87-3add-4345-bca9-e891205e02ba
 ---
 # Implementing the UI Automation Value Control Pattern
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -17,7 +18,9 @@ ms.assetid: b0fcdd87-3add-4345-bca9-e891205e02ba
  The <xref:System.Windows.Automation.ValuePattern> control pattern is used to support controls that have an intrinsic value not spanning a range and that can be represented as a string. This string can be editable, depending on the control and its settings. For examples of controls that implement this pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## Implementation Guidelines and Conventions  
+
  When implementing the Value control pattern, note the following guidelines and conventions:  
   
 - Controls such as <xref:System.Windows.Automation.ControlType.ListItem> and <xref:System.Windows.Automation.ControlType.TreeItem> must support <xref:System.Windows.Automation.ValuePattern> if the value of any of the items is editable, regardless of the current edit mode of the control. The parent control must also support <xref:System.Windows.Automation.ValuePattern> if the child items are editable.  
@@ -39,7 +42,9 @@ Example of Color Swatch String Mapping
 - A control should have its <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty> set to `true` and its <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty> set to `false` before allowing a call to <xref:System.Windows.Automation.Provider.IValueProvider.SetValue%2A>.  
   
 <a name="Required_Members_for_the_IValueProvider_Interface"></a>
+
 ## Required Members for IValueProvider  
+
  The following properties and methods are required for implementing <xref:System.Windows.Automation.Provider.IValueProvider>.  
   
 |Required members|Member type|Notes|  
@@ -49,7 +54,9 @@ Example of Color Swatch String Mapping
 |<xref:System.Windows.Automation.ValuePattern.SetValue%2A>|Method|None|  
   
 <a name="Exceptions"></a>
+
 ## Exceptions  
+
  Providers must throw the following exceptions.  
   
 |Exception type|Condition|  

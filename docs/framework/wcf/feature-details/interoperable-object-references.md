@@ -4,9 +4,11 @@ ms.date: "04/15/2019"
 ms.assetid: cb8da4c8-08ca-4220-a16b-e04c8f527f1b
 ---
 # Interoperable object references
+
 By default, <xref:System.Runtime.Serialization.DataContractSerializer> serializes objects by value. You can use the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> property to instruct the data contract serializer to preserve object references when serializing objects.  
   
 ## Generated XML  
+
  As an example, consider the following object:  
   
 ```csharp  
@@ -46,6 +48,7 @@ public class SomeClass
  However, <xref:System.Runtime.Serialization.XsdDataContractExporter> doesn't describe the `id` and `ref` attributes in its schema, even when the `preserveObjectReferences` property is set to `true`.  
   
 ## Using IsReference  
+
  To generate object reference information that's valid according to the schema that describes it, apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to a type, and set the <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A> flag to `true`. The following example modifies class `X` in the previous example by adding `IsReference`:  
   
 ```csharp

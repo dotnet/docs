@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: 99ebe70b-8980-447f-b785-ecfcbdbaea72
 ---
 # Microsoft.Transactions.TransactionBridge.RecoveredCoordinatorInvalidMetadata
+
 The endpoint reference found in a coordinator recovery log entry contained invalid or incompatible metadata.  
   
 ## Description  
+
  The system cannot create a proxy for a recovered coordinator enlistment.  
   
 ## Troubleshooting  
+
  Contact Microsoft if problem persists.  
   
 ## See also

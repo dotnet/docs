@@ -4,12 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: 5f050181-8fdd-4a4e-9d16-f84c22a88a97
 ---
 # Runtime Exceptions in .NET Native Apps
+
 It is important to test the release builds of your Universal Windows Platform app on their target platforms because the debug and release configurations are completely different. By default, the debug configuration uses the .NET Core runtime to compile your app, but the release configuration uses .NET Native to compile your app to native code.  
   
 > [!IMPORTANT]
 > For information on dealing with the [MissingMetadataException](missingmetadataexception-class-net-native.md), [MissingInteropDataException](missinginteropdataexception-class-net-native.md), and [MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md) exceptions that you may encounter when testing the release versions of your app, see "Step 4: Manually resolve missing metadata: in the [Getting Started](getting-started-with-net-native.md) topic, as well as [Reflection and .NET Native](reflection-and-net-native.md) and [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md).  
   
 ## Debug and release builds  
+
  When the debug build executes against the .NET Core runtime, it has not been compiled to native code. This makes all of the services ordinarily provided by the runtime available to your app.  
   
  On the other hand, the release build compiles to native code for its target platforms, removes most dependencies on external runtimes and libraries, and heavily optimizes code for maximum performance.  
@@ -26,7 +28,9 @@ It is important to test the release builds of your Universal Windows Platform ap
 > You can control whether the debug and release builds are compiled with the .NET Native tool chain by checking or unchecking the **Compile with .NET Native tool chain** box.   Note, however, that the Windows Store will always compile the production version of your app with the .NET Native tool chain.  
   
 <a name="Messages"></a>
+
 ## Runtime exception messages  
+
  To minimize application executable size, .NET Native does not include the full text of exception messages. As a result, runtime exceptions thrown in release builds may not display the full text of exception messages. Instead, the text may consist of a substring along with a link to follow for more information. For example, the exception information may appear as:  
   
 ```output
@@ -46,7 +50,9 @@ Additional information: Value does not fall within the expected range.
 ```  
   
 <a name="CallStack"></a>
+
 ## Runtime call stack  
+
  Because of inlining and other optimizations, the call stack displayed by an app compiled by the .NET Native tool chain may not help you to  clearly identify the path to a runtime exception.  
   
  To get the full stack, run the debug build instead.  

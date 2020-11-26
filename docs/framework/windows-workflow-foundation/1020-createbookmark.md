@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4bee948d-816f-4803-85cc-3883b5e23d10
 ---
 # 1020 - CreateBookmark
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 4bee948d-816f-4803-85cc-3883b5e23d10
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a bookmark has been created for an activity.  
   
 ## Message  
+
  A Bookmark has been created for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  BookmarkName: %4, BookmarkScope: %5.  
   
 ## Details  

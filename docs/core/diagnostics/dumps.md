@@ -46,17 +46,6 @@ You may want to collect a dump when the app hasn't crashed yet. For example, if 
 
 To collect dump at your own request, you can use `dotnet-dump`, which is a CLI tool for collecting and analyzing dumps. For more information on how to use it to collect dumps with `dotnet-dump`, see [Dump collection and analysis utility](dotnet-dump.md).
 
-### Types of dumps in .NET
-
-You can collect different types of the dump depending on the purpose. This can be configured with the `COMPlus_DbgMiniDumpType` when using environment variable, or the `--type` flag when you are using `dotnet-dump`. The following table shows the types of dumps you can collect in .NET.
-
-|Value|Name|Description|
-|-----|----|-----------|
-|1|`MiniDumpNormal`|Include just the information necessary to capture stack traces for all existing threads in a process. Limited GC heap memory and information.|
-|2|`MiniDumpWithPrivateReadWriteMemory`|Includes the GC heaps and information necessary to capture stack traces for all existing threads in a process.|
-|3|`MiniDumpFilterTriage`|Include just the information necessary to capture stack traces for all existing threads in a process. Limited GC heap memory and information.|
-|4|`MiniDumpWithFullMemory`|Include all accessible memory in the process. The raw memory data is included at the end, so that the initial structures can be mapped directly without the raw memory information. This option can result in a very large file.|
-
 ## Analyze dumps
 
 Dumps can be analyzed using [`dotnet-dump`](dotnet-dump.md).

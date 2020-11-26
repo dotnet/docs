@@ -393,5 +393,5 @@ With Dapr, you can plug a supported message broker product into your application
 ### References
 
 >[!div class="step-by-step"]
->[Previous](index.md)
->[Next](index.md)
+>[Previous](serviceinvocation.md)
+>[Next](bindings-buildingblock.md)

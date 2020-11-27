@@ -24,31 +24,42 @@ The Dapr Service Invocation building block resolves these challenges by using a 
 
 ## How it works
 
-Let's start with an example. Consider two services, Service A and Service B. Service A needs to call the `catalog/items` API on Service B. While Service A could take a dependency on Service B and make a `direct call` to it, Service A instead invokes the Service Invocation API on the Dapr sidecar. Figure 4-x shows the operation.
+Let's start with an example. Consider two services: Service A and Service B. Service A needs to call the `catalog/items` API on Service B. While Service A could obtain a reference to and call Service B, direct calls bewteen services can get complicated fast and result in a dependency between the services. 
+
+Why not let a Dapr sidecar handle this call for you? Figure 4-x shows the operation.
 
 ![How it Dapr service invocation works](./media/service-invocation/howitworks.png)
 
 **Figure 4-x**. How Dapr service invocation works.
 
-The sidecar takes care of the rest. It first uses the pluggable service discovery mechanism to resolve the address of service B. The self-hosted mode uses mDNS to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.
+- Step #1: Service A invokes the Service Invocation API on the Service A sidecar. The sidecar uses the pluggable service discovery mechanism to resolve the address of service B. The self-hosted mode uses mDNS to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.
 
-The sidecar next forwards the request to the service B sidecar. The service B sidecar makes the actual `catalog/items` request against the service B API. The response returned by service B will flow back through the sidecars to service A.
+- Step #2: Service A sidecar forwards the request to the service B sidecar. 
 
+- Step #3: The service B sidecar makes the actual `catalog/items` request against the service B API. 
+
+- Step #4: Service B returns the response back to its sidecar.
+
+- Step #5: The Service B sidecare forwards the response back to the 
+ service A sidecar.
+
+- Step #6: The service A sidecare returns the response back to service A.
+ 
 Because the calls flow through sidecars, Dapr can inject some useful cross-cutting behaviors:
 
-- automatically retry calls upon failure.
-- encrypt traffic using automatic mutual TLS.
-- control what operations clients can do using access control policies.
-- capture traces and metrics for all calls between services to provide insights and diagnostics.
+- Automatically retry calls upon failure.
+- Encrypt traffic using automatic mutual TLS.
+- Control what operations clients can do using access control policies.
+- Capture traces and metrics for all calls between services to provide insights and diagnostics.
 
-To invoke a service using Dapr, use the `invoke` API on the Dapr sidecar:
+To invoke a service using Dapr, use the **invoke** API on the Dapr sidecar:
 
 ``` http
 http://localhost:<daprPort>/v1.0/invoke/<applicationid>/method/<methodname>
 ```
  > The above call is made with the Dapr HTTP API. Out-of-the-box, Dapr natively supports HTTP and gRPC. These APIs enable any application stack that supports HTTP or gRPC to consume Dapr services.
 
-In the following example, we use *curl* to call the `catalog/items` 'GET' endpoint of `serviceb`:
+In the following example, we use *curl* to call the `catalog/items` 'GET' endpoint of `Service B`:
 
 ``` curl
 curl http://localhost:3500/v1.0/invoke/serviceb/method/catalog/items
@@ -67,13 +78,13 @@ var result = await daprClient.InvokeMethodAsync<Order, SubmitOrderResult>(
     "orderservice", "order/submit", order);
 ```
 
-The `order` object is serialized internally (with `System.Text.JsonSerializer`) and sent as the request payload. The .NET SDK takes care of the call to the sidecar. It also deserializes the response to a `SubmitOrderResult` object.
+The `order` object is serialized internally (with `System.Text.JsonSerializer`) for you and sent as the request payload. The .NET SDK takes care of the call to the sidecar. It also deserializes the response to a `SubmitOrderResult` object.
 
-Alternatively, you can use the `InvokeMethodWithResponseAsync` or `InvokeMethodRawAsync` method to invoke a remote method. With these specialized methods, you can get access to the response headers and the raw response bytes respectively.
+Alternatively, you can use the `InvokeMethodWithResponseAsync` or `InvokeMethodRawAsync` method to invoke a remote method. With these specialized methods, you get direct access to the response headers and the raw response bytes respectively.
 
 Using the .NET SDK, you can call services that expose both gRPC or HTTP/REST APIs. When calling a service listening on HTTP, you can use the `HttpExtension` class to configure the HTTP call details. The `HttpExtension` class provides access to the following properties:
 
-- HTTP Verb: (for example, `POST`, `GET`, `PUT`, `PATCH`, and `DELETE`). The default verb used is `POST`.
+- HTTP Verb: (`POST`, `GET`, `PUT`, `PATCH`, and `DELETE`). The default verb is `POST`.
 - ContentType: The content-type of the HTTP request, such as `application/json`.
 - QueryString: A collection of query string parameters.
 - Headers: A collection of HTTP request headers.
@@ -120,10 +131,12 @@ In the recently updated eShopOnDapr implementation, the services and API Gateway
 ![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshopondapr.png)
 
 1. The front-end still uses HTTP/REST to call the API Gateway.
-2. The Envoy API Gateway forwards requests to the `invoke` API of its sidecar to use Dapr service invocation to make calls to the HTTP/REST APIs of the aggregator and back-end services.
+2. The Envoy API Gateway forwards HTTP requests to its Dapr sidecar which invokes either the sidecar services iether for the aggregator service or back-end services.
 3. The Web Shopping Aggregator service uses the Dapr .NET SDK to call the HTTP/REST APIs of the back-end services. 
 
-Out-of-the box, Dapr implements all calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST, you still get gRPC performance benefits for the calls between the sidecars. Architecturally speaking, the sidecar calls matter most for performance in a real-world scenario because sidecars often are located on different machines.
+Out-of-the box, Dapr implements all calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST, you still get gRPC performance benefits for the calls between the sidecars. 
+
+> Architecturally speaking, the sidecar calls matter most for performance in a real-world scenario because sidecars often are located on different machines.
 
 > Note that the Service Invocation building block acts as a bridge between protocols. Calls to and from the sidecars use either gRPC or HTTP protocols. Therefore, services can communicate using HTTP, gRPC or a combination of both. 
 

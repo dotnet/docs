@@ -236,7 +236,7 @@ In the book, [Learning Dapr](https://www.amazon.com/Learning-Dapr-Building-Distr
 
 This chapter introduced you to Dapr, a Distributed Application Runtime.
 
-Dapr is an open-source project sponsored by Microsoft with close collaboration from customers and the open-source community. 
+Dapr is an open-source project sponsored by Microsoft with close collaboration from customers and the open-source community.
 
 At its core, Dapr helps reduce the inherent complexity of distributed microservice applications. It's built upon a concept of building block APIs. Dapr building blocks Expose common distributed application capabilities, such as state management, service-to-service invocation, and pub/sub messaging. Dapr components lie beneath the building blocks and provide the concrete implementation for each capability. Applications bind to various components through configuration files.
 

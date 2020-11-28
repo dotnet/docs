@@ -2,29 +2,29 @@
 title: The Service Invocation building block
 description: A description of the Service Invocation building block and how to apply it
 author: amolenk
-ms.date: 09/26/2020
+ms.date: 11/27/2020
 ---
 
 # The Service Invocation building block
 
-In a distributed system, services often need to communicate with other services to complete business operations. The [Dapr Service Invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) enables you to streamline communication between services using either gRPC or HTTP protocols, while providing additional benefits.
+In a distributed system, a service often needs to communicate with another service to complete a business operation. While always a best practice to implement asynchronous communication, sometimes a direct synchronous call between services is unavoidable. However, when required, the [Dapr Service Invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) can help you streamline communication between services.
 
 ## What it solves
 
 Making calls between services in a distributed application may appear easy, but there are many challenges involved. For example, ...
 
-- How do you even know where the other services are? 
+- How do you know where the other services are? 
 - Once you've got a service address, how do you call that service securely?
 - What happens if that call fails? 
 - How do you handle retries when short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur? 
 
 Lastly, as distributed applications can consist of many different services, capturing insights into the application and service call graphs are critical to diagnose production issues.
 
-The Dapr Service Invocation building block resolves these challenges by using a Dapr sidecar as a reverse proxy for your service.
+The Dapr [Service Invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) resolves these challenges by using a Dapr sidecar as a reverse proxy for your service.
 
 ## How it works
 
-Let's start with an example. Consider two services: Service A and Service B. Service A needs to call the `catalog/items` API on Service B. While Service A could obtain a reference to and call Service B, direct calls bewteen services can get complicated fast and result in a dependency between the services. 
+Let's start with an example. Consider two services: Service A and Service B. Service A needs to call the `catalog/items` API on Service B. While Service A could obtain a reference to and call Service B, direct calls can become complicated fast and result in a dependency between the services. 
 
 Why not let a Dapr sidecar handle this call for you? Figure 4-x shows the operation.
 
@@ -32,7 +32,9 @@ Why not let a Dapr sidecar handle this call for you? Figure 4-x shows the operat
 
 **Figure 4-x**. How Dapr service invocation works.
 
-- Step #1: Service A invokes the Service Invocation API on the Service A sidecar. The sidecar uses the pluggable service discovery mechanism to resolve the address of service B. The self-hosted mode uses mDNS to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.
+- Step #1: Service A invokes the Service Invocation API on the Service A sidecar. 
+
+ >  Note that the sidecar uses the pluggable service discovery mechanism to resolve the address of service B. The self-hosted mode uses mDNS to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.  What were once self-contained, independent services, able to evolve independently and deploy frequently, now become coupled to each other. 
 
 - Step #2: Service A sidecar forwards the request to the service B sidecar. 
 
@@ -40,10 +42,10 @@ Why not let a Dapr sidecar handle this call for you? Figure 4-x shows the operat
 
 - Step #4: Service B returns the response back to its sidecar.
 
-- Step #5: The Service B sidecare forwards the response back to the 
+- Step #5: The Service B sidecar forwards the response back to the 
  service A sidecar.
 
-- Step #6: The service A sidecare returns the response back to service A.
+- Step #6: The service A sidecar returns the response back to service A.
  
 Because the calls flow through sidecars, Dapr can inject some useful cross-cutting behaviors:
 
@@ -131,7 +133,7 @@ In the recently updated eShopOnDapr implementation, the services and API Gateway
 ![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshopondapr.png)
 
 1. The front-end still uses HTTP/REST to call the API Gateway.
-2. The Envoy API Gateway forwards HTTP requests to its Dapr sidecar which invokes either the sidecar services iether for the aggregator service or back-end services.
+2. The Envoy API Gateway forwards HTTP requests to its Dapr sidecar that invokes either the sidecar services either for the aggregator service or back-end services.
 3. The Web Shopping Aggregator service uses the Dapr .NET SDK to call the HTTP/REST APIs of the back-end services. 
 
 Out-of-the box, Dapr implements all calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST, you still get gRPC performance benefits for the calls between the sidecars. 
@@ -190,7 +192,7 @@ public class CatalogController : ControllerBase
     }
 ```
 
-First, the front-end makes a direct HTTP call to the Envoy API gateway. 
+First, the front end makes a direct HTTP call to the Envoy API gateway. 
 
 ```
 GET http://<api-gateway>/c/api/v1/catalog/items?pageSize=20
@@ -210,7 +212,7 @@ GET http://localhost/api/v1/catalog/items?pageSize=20
 
 ### Make aggregated service calls using the .NET SDK
 
-Most calls from the eShop front-end can be forwarded to a single back-end service by the API gateway. Some scenarios, however, require multiple back-end services to work together to complete a request from the front-end. For these more complex calls, eShop uses the Web Shopping Aggregator service to mediate the work across different services. Figure 4-x show the processing sequence of adding an item to your shopping basket:
+Most calls from the eShop front end can be forwarded to a single back-end service by the API gateway. Some scenarios, however, require multiple back-end services to work together to complete a request from the front end. For these more complex calls, eShop uses the Web Shopping Aggregator service to mediate the work across different services. Figure 4-x show the processing sequence of adding an item to your shopping basket:
 
 ![Update basket sequence diagram](./media/service-invocation/updatebasket.png)
 

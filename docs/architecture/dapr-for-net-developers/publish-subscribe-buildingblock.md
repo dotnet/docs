@@ -21,10 +21,10 @@ Figure 4-x shows the high-level architecture of the publish/subscribe pattern.
 
 From the previous figure, note the steps of the pattern:
 
-1. Publishers send messages to the message broker. 
-2. Subscribers bind to a subscription on the message broker. 
-3. The message broker forwards a copy of the message to interested subscriptions.
-4. Subscribers consume messages from their subscriptions.
+- Publishers send messages to the message broker. 
+- Subscribers bind to a subscription on the message broker. 
+- The message broker forwards a copy of the message to interested subscriptions.
+- Subscribers consume messages from their subscriptions.
 
 Most message brokers encapsulate a queueing mechanism that can persist messages once received. With it, the message broker guarantees `durablity` by storing the message. Subscribers don't need to be immediately available or even online when a publisher sends a message.  Once available, the subscriber receives and processes the message.  Dapr guarantees `At-Least-Once` semantics for message delivery. Once a message is published, it will be delivered at least once to any subscriber.
 
@@ -65,7 +65,7 @@ curl -X POST http://localhost:3500/v1.0/publish/pubsub/newOrder \
   -d '{ "orderId": "1234", "productId": "5678", "amount": 2 }'
 ```
 
-You receive messages by subscribing to a topic. Upon startup, the Dapr runtime will query your application on a well-known endpoint to identify and create the required subscriptions.
+You receive messages by subscribing to a topic. As your application starts, you'll need to invoke the following command so that Dapr can identify and create the necessary subscriptions:
 
 ``` http
 http://localhost:<appPort>/dapr/subscribe
@@ -90,7 +90,7 @@ The response from the call contains a list of topics to which the applications w
 ]
 ```
 
-In this example, you can see the application wants to subscribe to topics `newOrder` and `newProduct`. It registers the endpoints `/orders` and `/productCatalog/products`for each, respectively. For both subscriptions, the application is binding to the Dapr component named `pubsub`. You can implement this endpoint yourself. But Dapr also provides more intuitive ways of implementing it. We'll address this later in this section.
+In the JSON response, you can see the application wants to subscribe to topics `newOrder` and `newProduct`. It registers the endpoints `/orders` and `/productCatalog/products` for each, respectively. For both subscriptions, the application is binding to the Dapr component named `pubsub`. 
 
 Figure 4-x presents the flow of the example.
 

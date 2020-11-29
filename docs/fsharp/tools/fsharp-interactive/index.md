@@ -1,7 +1,7 @@
 ---
 title: F# Interactive (dotnet) Reference
 description: Learn how F# Interactive (dotnet fsi) is used to run F# code interactively at the console or to execute F# scripts.
-ms.date: 10/31/2020
+ms.date: 11/29/2020
 f1_keywords:
  - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
 ---
@@ -111,6 +111,17 @@ let f (x: Tensor) = sin (sqrt x)
 
 printfn "%A" (f (dsharp.tensor 1.2))
 ```
+
+### Specifying a package source
+
+You can also specify a package source with the `#i` command. The following example specifies a remote and a local source:
+
+```fsharp
+#i "nuget:https://my-remote-package-source/index.json
+#i @"path-to-my-local-source"
+```
+
+This will tell the resolution engine under the covers to also take into account the remote and/or local sources added to a script.
 
 You can specify as many package references as you like in a script.
 

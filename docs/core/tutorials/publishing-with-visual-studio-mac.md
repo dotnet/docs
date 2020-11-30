@@ -1,7 +1,7 @@
 ---
 title: Publish a .NET Core console application using Visual Studio for Mac
-description: Publishing creates the set of files that are needed to run a .NET Core application.
-ms.date: 06/08/2020
+description: Learn how to use Visual Studio for Mac to create the set of files that are needed to run a .NET application.
+ms.date: 11/18/2020
 ---
 # Tutorial: Publish a .NET Core console application using Visual Studio for Mac
 

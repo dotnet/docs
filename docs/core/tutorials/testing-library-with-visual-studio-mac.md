@@ -1,7 +1,7 @@
 ---
 title: Test a .NET Standard class library with .NET Core using Visual Studio for Mac
 description: Create a unit test project for a .NET Core class library. Verify that a .NET Core class library works correctly with unit tests.
-ms.date: 06/08/2020
+ms.date: 11/18/2020
 ---
 # Test a .NET Standard class library with .NET Core using Visual Studio
 

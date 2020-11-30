@@ -1,7 +1,7 @@
 ---
 title: Create a .NET Standard class library using Visual Studio for Mac
 description: Learn how to create a .NET Standard class library using Visual Studio for Mac.
-ms.date: 06/08/2020
+ms.date: 11/18/2020
 ---
 # Tutorial: Create a .NET Standard library using Visual Studio for Mac
 

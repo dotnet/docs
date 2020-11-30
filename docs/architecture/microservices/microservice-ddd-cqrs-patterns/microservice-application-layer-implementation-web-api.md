@@ -658,7 +658,7 @@ public class IdentifiedCommandHandler<T, R> : IRequestHandler<IdentifiedCommand<
                     commandId,
                     command);
 
-                // Send the embeded business command to mediator so it runs its related CommandHandler
+                // Send the embedded business command to mediator so it runs its related CommandHandler
                 var result = await _mediator.Send(command, cancellationToken);
 
                 _logger.LogInformation(

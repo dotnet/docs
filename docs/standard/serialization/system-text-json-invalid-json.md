@@ -75,7 +75,7 @@ To allow or write quoted numbers for specific properties, fields, or types, use 
 * [Customize property names and values](system-text-json-customize-properties.md)
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Handle overflow JSON](system-text-json-handle-overflow.md)
-* [Preserve circular references](preserve-references.md)
+* [Preserve circular references](system-text-json-preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

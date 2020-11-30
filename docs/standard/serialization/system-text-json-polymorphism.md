@@ -132,6 +132,6 @@ For more information about polymorphic **serialization**, and for information ab
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
 * [Handle overflow JSON](system-text-json-handle-overflow.md)
-* [Preserve circular references](preserve-references.md)
+* [Preserve circular references](system-text-json-preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

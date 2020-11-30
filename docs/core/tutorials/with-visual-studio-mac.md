@@ -1,11 +1,11 @@
 ---
-title: Create a .NET Core console application using Visual Studio for Mac
-description: Learn how to create a .NET Core console application using Visual Studio for Mac.
-ms.date: 06/02/2020
+title: Create a .NET console application using Visual Studio for Mac
+description: Learn how to create a .NET console application using Visual Studio for Mac.
+ms.date: 11/30/2020
 ---
-# Tutorial: Create a .NET Core console application using Visual Studio for Mac
+# Tutorial: Create a .NET console application using Visual Studio for Mac
 
-This tutorial shows how to create and run a .NET Core console application using Visual Studio for Mac.
+This tutorial shows how to create and run a .NET console application using Visual Studio for Mac.
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -15,15 +15,15 @@ This tutorial shows how to create and run a .NET Core console application using 
 
 ## Prerequisites
 
-* [Visual Studio for Mac version 8.8 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
+* [Visual Studio for Mac version 8.8 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET development. For more information, see the following resources:
 
   * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
   * [Supported macOS versions](../install/windows.md).
-  * [.NET Core versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
+  * [.NET versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
 
 ## Create the app
 
-Create a .NET Core console app project named "HelloWorld".
+Create a .NET console app project named "HelloWorld".
 
 1. Start Visual Studio for Mac.
 
@@ -35,7 +35,7 @@ Create a .NET Core console app project named "HelloWorld".
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-dialog.png" alt-text="New project templates list":::
 
-1. In the **Target Framework** drop-down of the **Configure your new Console Application** dialog, select **.NET Core 3.1**, and select **Next**.
+1. In the **Target Framework** drop-down of the **Configure your new Console Application** dialog, select **.NET 3.1**, and select **Next**.
 
    :::image type="content" source="media/with-visual-studio-mac/target-framework.png" alt-text="Select Target Framework":::
 
@@ -96,7 +96,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Next steps
 
-In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
+In this tutorial, you created a .NET console application. In the next tutorial, you debug the app.
 
 > [!div class="nextstepaction"]
-> [Debug a .NET Core console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md)
+> [Debug a .NET console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md)

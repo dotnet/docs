@@ -1,15 +1,15 @@
 ---
-title: Test a .NET Standard class library with .NET Core using Visual Studio for Mac
-description: Create a unit test project for a .NET Core class library. Verify that a .NET Core class library works correctly with unit tests.
+title: Test a .NET class library using Visual Studio for Mac
+description: Create a unit test project for a .NET class library. Verify that a .NET class library works correctly with unit tests.
 ms.date: 11/18/2020
 ---
-# Test a .NET Standard class library with .NET Core using Visual Studio
+# Test a .NET class library using Visual Studio
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
 ## Prerequisites
 
-- This tutorial works with the solution that you create in [Create a .NET Standard library using Visual Studio for Mac](library-with-visual-studio-mac.md).
+- This tutorial works with the solution that you create in [Create a .NET class library using Visual Studio for Mac](library-with-visual-studio-mac.md).
 
 ## Create a unit test project
 
@@ -17,7 +17,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Start Visual Studio for Mac.
 
-1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library using Visual Studio for Mac](library-with-visual-studio-mac.md).
+1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library using Visual Studio for Mac](library-with-visual-studio-mac.md).
 
 1. In the **Solution** pad, <kbd>ctrl</kbd>-click the `ClassLibraryProjects` solution and select **Add** > **New Project**.
 
@@ -25,7 +25,7 @@ Unit tests provide automated software testing during your development and publis
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-project.png" alt-text="Visual Studio Mac New Project dialog creating test project":::
 
-1. Select **.NET Core 3.1**. Name the new project "StringLibraryTest" and select **Create**.
+1. Select **.NET 5.0**. Name the new project "StringLibraryTest" and select **Create**.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png" alt-text="Visual Studio Mac New Project dialog providing project name":::
 
@@ -159,13 +159,13 @@ To test the Release build:
 
 ## Debug tests
 
-If you're using Visual Studio for Mac as your IDE, you can use the same process shown in [Tutorial: Debug a .NET Core console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, <kbd>ctrl</kbd>-click the **StringLibraryTests** project, and select **Start Debugging Project** from the context menu.
+If you're using Visual Studio for Mac as your IDE, you can use the same process shown in [Tutorial: Debug a .NET console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, <kbd>ctrl</kbd>-click the **StringLibraryTests** project, and select **Start Debugging Project** from the context menu.
 
 Visual Studio starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 
 ## Additional resources
 
-* [Unit testing in .NET Core and .NET Standard](../testing/index.md)
+* [Unit testing in .NET](../testing/index.md)
 
 ## Next steps
 
@@ -182,4 +182,4 @@ If you publish a library as a NuGet package, others can install and use it. To l
 A library doesn't have to be distributed as a package. It can be bundled with a console app that uses it. To learn how to publish a console app, see the earlier tutorial in this series:
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application using Visual Studio for Mac](publishing-with-visual-studio-mac.md)
+> [Publish a .NET console application using Visual Studio for Mac](publishing-with-visual-studio-mac.md)

@@ -1,13 +1,13 @@
 ---
-title: Create a .NET Standard class library using Visual Studio for Mac
-description: Learn how to create a .NET Standard class library using Visual Studio for Mac.
+title: Create a .NET class library using Visual Studio for Mac
+description: Learn how to create a .NET class library using Visual Studio for Mac.
 ms.date: 11/18/2020
 ---
-# Tutorial: Create a .NET Standard library using Visual Studio for Mac
+# Tutorial: Create a .NET class library using Visual Studio for Mac
 
 In this tutorial, you create a class library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
 
-A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.1 can be used by an application that targets any .NET implementation that supports version 2.1 of .NET Standard. When you finish your class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
+A *class library* defines types and methods that are called by an application. When you finish your class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -17,11 +17,11 @@ A *class library* defines types and methods that are called by an application. A
 
 ## Prerequisites
 
-* [Install Visual Studio for Mac version 8.6 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
+* [Install Visual Studio for Mac version 8.6 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET development. For more information, see the following resources:
 
   * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
   * [Supported macOS versions](../install/macos.md).
-  * [.NET Core versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
+  * [.NET versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
 
 ## Create a solution with a class library project
 
@@ -31,13 +31,13 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
 1. In the start window, select **New Project**.
 
-1. In the **New Project** dialog under the **Multi-Platform** node, select **Library**, then select the **.NET Standard Library** template, and select **Next**.
+1. In the **New Project** dialog under the **Multi-Platform** node, select **Library**, then select the **.NET Library** template, and select **Next**.
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New Project dialog":::
 
-1. In the **Configure your new .NET Standard Library** dialog, choose ".NET Standard 2.1", and select **Next**.
+1. In the **Configure your new .NET Library** dialog, choose ".NET 5.0", and select **Next**.
 
-   :::image type="content" source="media/library-with-visual-studio-mac/choose-net-std-21.png" alt-text="Choose .NET Standard 2.1":::
+   :::image type="content" source="media/library-with-visual-studio-mac/choose-net-std-21.png" alt-text="Choose .NET 5.0":::
 
 1. Name the project "StringLibrary" and the solution "ClassLibraryProjects". Leave **Create a project directory within the solution directory** selected. Select **Create**.
 
@@ -69,7 +69,7 @@ Add a console application that uses the class library. The app will prompt the u
 
 1. In the **Solution** pad, <kbd>ctrl</kbd>-click the `ClassLibraryProjects` solution. Add a new **Console Application** project by selecting the template from the **Web and Console** > **App** templates, and select **Next**.
 
-1. Select **.NET Core 3.1** as the **Target Framework** and select **Next**.
+1. Select **.NET 5.0** as the **Target Framework** and select **Next**.
 
 1. Name the project **ShowCase**. Select **Create** to create the project in the solution.
 
@@ -101,8 +101,7 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Additional resources
 
-* [Develop libraries with the .NET Core CLI](libraries.md)
-* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
+* [Develop libraries with the .NET CLI](libraries.md)
 * [Visual Studio 2019 for Mac Release Notes](/visualstudio/releasenotes/vs2019-mac-relnotes)
 
 ## Next steps
@@ -110,4 +109,4 @@ Initially, the new console app project doesn't have access to the class library.
 In this tutorial, you created a solution and a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
 
 > [!div class="nextstepaction"]
-> [Test a .NET Standard library with .NET Core using Visual Studio for Mac](testing-library-with-visual-studio-mac.md)
+> [Test a .NET class library using Visual Studio for Mac](testing-library-with-visual-studio-mac.md)

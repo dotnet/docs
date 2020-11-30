@@ -10,10 +10,8 @@ namespace SystemTextJsonSamples
     public class JsonConverterFactoryForStackOfT : JsonConverterFactory
     {
         public override bool CanConvert(Type typeToConvert)
-        {
-            return typeToConvert.IsGenericType &&
-                typeToConvert.GetGenericTypeDefinition() == typeof(Stack<>);
-        }
+            => typeToConvert.IsGenericType
+            && typeToConvert.GetGenericTypeDefinition() == typeof(Stack<>);
 
         public override JsonConverter CreateConverter(
             Type typeToConvert, JsonSerializerOptions options)

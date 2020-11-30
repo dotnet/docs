@@ -1608,10 +1608,36 @@ items:
         displayName: json serialization
       - name: How to serialize and deserialize JSON
         href: ../standard/serialization/system-text-json-how-to.md
-      - name: How to write custom converters
-        href: ../standard/serialization/system-text-json-converters-how-to.md
+      - name: Control serialization behavior
+        items:
+        - name: Instantiate JsonSerializerOptions
+          href: ../standard/serialization/system-text-json-configure-options.md
+        - name: Enable case-insensitive matching
+          href: ../standard/serialization/system-text-json-character-casing.md
+        - name: Customize property names and values
+          href: ../standard/serialization/system-text-json-customize-properties.md
+        - name: Ignore properties
+          href: ../standard/serialization/system-text-json-ignore-properties.md
+        - name: Allow invalid JSON
+          href: ../standard/serialization/system-text-json-invalid-json.md
+        - name: Handle overflow JSON
+          href: ../standard/serialization/system-text-json-handle-overflow.md
+        - name: Preserve references
+          href: ../standard/serialization/system-text-json-preserve-references.md
+        - name: Immutable types and non-public accessors
+          href: ../standard/serialization/system-text-json-immutability.md
+        - name: Polymorphic serialization
+          href: ../standard/serialization/system-text-json-polymorphism.md
       - name: How to migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+      - name: Advanced
+        items:
+        - name: Customize character encoding
+          href: ../standard/serialization/system-text-json-character-encoding.md
+        - name: Custom serializers and deserializers
+          href: ../standard/serialization/write-custom-serializer-deserializer.md
+        - name: Custom converters
+          href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization
       items:
       - name: Overview

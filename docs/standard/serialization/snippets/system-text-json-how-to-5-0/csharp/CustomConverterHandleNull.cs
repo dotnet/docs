@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -19,28 +18,23 @@ namespace CustomConverterHandleNull
         public override bool HandleNull => true;
 
         public override string Read(
-            ref Utf8JsonReader reader, 
-            Type typeToConvert, 
-            JsonSerializerOptions options)
-        {
-            string val = reader.GetString();
-            return val ?? "No description provided.";
-        }
+            ref Utf8JsonReader reader,
+            Type typeToConvert,
+            JsonSerializerOptions options) =>
+            reader.GetString() ?? "No description provided.";
 
         public override void Write(
-            Utf8JsonWriter writer, 
-            string value, 
-            JsonSerializerOptions options)
-        {
+            Utf8JsonWriter writer,
+            string value,
+            JsonSerializerOptions options) =>
             writer.WriteStringValue(value);
-        }
     }
 
     public class Program
     {
         public static void Main()
         {
-            string json = "{\"x\":1,\"y\":2,\"Description\":null}";
+            string json = @"{""x"":1,""y"":2,""Description"":null}";
 
             Point point = JsonSerializer.Deserialize<Point>(json);
             Console.WriteLine($"Description: {point.Description}");

@@ -1,23 +1,20 @@
-﻿using Microsoft.VisualBasic.CompilerServices;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using System.Reflection;
 
 namespace SystemTextJsonSamples
 {
     public class Utilities
     {
-        public static void DisplayPropertyValues(object o)
+        public static void DisplayPropertyValues(object obj)
         {
-            var objectType = o.GetType();
+            Type objectType = obj.GetType();
             Console.WriteLine($"{objectType.Name} object");
-            var properties = objectType.GetProperties();
-            foreach (var property in properties)
+            foreach (PropertyInfo property in objectType.GetProperties())
             {
                 if (!property.PropertyType.FullName.Contains("Collections") &&
                     !property.PropertyType.FullName.Contains("[]"))
                 {
-                    Console.WriteLine($"{property.Name}: {property.GetGetMethod().Invoke(o, null)}");
+                    Console.WriteLine($"{property.Name}: {property.GetGetMethod().Invoke(obj, null)}");
                 }
             }
         }

@@ -10,10 +10,10 @@ namespace NonStringKeyDictionary
         {
             Dictionary<int, string> numbers = new()
             {
-                { 0, "zero" },
-                { 1, "one" },
-                { 34, "thirty four" },
-                { 55, "fifty five" },
+                [0] = "zero",
+                [1] = "one",
+                [34] = "thirty four",
+                [55] = "fifty five"
             };
 
             JsonSerializerOptions options = new()
@@ -21,12 +21,14 @@ namespace NonStringKeyDictionary
                 WriteIndented = true
             }; 
             
-            string json = JsonSerializer.Serialize<Dictionary<int, string>>
-                (numbers, options);
+            string json =
+                JsonSerializer.Serialize<Dictionary<int, string>>(numbers, options);
+
             Console.WriteLine($"Output JSON: {json}");
 
-            var dictionary = JsonSerializer.Deserialize<Dictionary<int, string>>
-                (json);
+            var dictionary =
+                JsonSerializer.Deserialize<Dictionary<int, string>>(json);
+
             Console.WriteLine($"dictionary[55]: {dictionary[55]}");
         }
     }

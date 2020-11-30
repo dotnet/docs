@@ -13,34 +13,34 @@ namespace SystemTextJsonSamples
             weatherForecast.DisplayPropertyValues();
 
             Console.WriteLine("Base class generic type - derived class properties omitted");
-            // <SnippetSerializeDefault>
+            // <SerializeDefault>
             var serializeOptions = new JsonSerializerOptions
             {
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize<WeatherForecast>(weatherForecast, serializeOptions);
-            // </SnippetSerializeDefault>
+            // </SerializeDefault>
 
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
             Console.WriteLine("Object generic type parameter - derived class properties included");
-            // <SnippetSerializeObject>
+            // <SerializeObject>
             serializeOptions = new JsonSerializerOptions
             {
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize<object>(weatherForecast, serializeOptions);
-            // </SnippetSerializeObject>
+            // </SerializeObject>
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
             Console.WriteLine("GetType() type parameter - derived class properties included");
-            // <SnippetSerializeGetType>
+            // <SerializeGetType>
             serializeOptions = new JsonSerializerOptions
             {
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, weatherForecast.GetType(), serializeOptions);
-            // </SnippetSerializeGetType>
+            // </SerializeGetType>
             Console.WriteLine($"JSON output:\n{jsonString}\n");
         }
     }

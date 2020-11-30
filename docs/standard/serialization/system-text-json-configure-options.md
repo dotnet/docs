@@ -1,7 +1,7 @@
 ---
 title: How to instantiate JsonSerializerOptions with System.Text.Json
-description: "Learn how to instantiate JsonSerializerOptions instances by copying existing instances or with web defaults.."
-ms.date: 11/18/2020
+description: "Learn how to instantiate JsonSerializerOptions instances by copying existing instances or with web defaults."
+ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 # How to instantiate JsonSerializerOptions instances with System.Text.Json
 
-In this article, you'll learn how to control the serialization of C# objects with <xref:System.Text.Json.JsonSerializerOptions> instances.
+In this article, you'll learn how to instantiate <xref:System.Text.Json.JsonSerializerOptions> instances by copying existing instances or with web defaults.
 
 ## Copy JsonSerializerOptions
 
@@ -58,7 +58,7 @@ A `JsonSerializerOptions` constructor that specifies a set of defaults is not av
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
 * [Handle overflow JSON](system-text-json-handle-overflow.md)
-* [Preserve circular references](system-text-json-handle-circular-refs.md)
+* [Preserve circular references](preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

@@ -1,7 +1,7 @@
 ---
 title: How to handle overflow JSON with System.Text.Json
 description: "Learn how to handle overflow JSON while serializing to and deserializing from JSON in .NET."
-ms.date: 11/19/2020
+ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -84,7 +84,7 @@ Notice that the `ExtensionData` property name doesn't appear in the JSON. This b
 * [Customize property names and values](system-text-json-customize-properties.md)
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
-* [Preserve circular references](system-text-json-handle-circular-refs.md)
+* [Preserve circular references](preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

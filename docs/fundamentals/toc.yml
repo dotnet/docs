@@ -1618,7 +1618,7 @@ items:
         - name: Handle overflow JSON
           href: ../standard/serialization/system-text-json-handle-overflow.md
         - name: Preserve references
-          href: ../standard/serialization/system-text-json-handle-circular-refs.md
+          href: ../standard/serialization/preserve-references.md
         - name: Immutable types and non-public accessors
           href: ../standard/serialization/system-text-json-immutability.md
         - name: Polymorphic serialization
@@ -1630,7 +1630,7 @@ items:
         - name: Customize character encoding
           href: ../standard/serialization/system-text-json-character-encoding.md
         - name: Custom serializers and deserializers
-          href: ../standard/serialization/system-text-json-customize-serialization.md
+          href: ../standard/serialization/write-custom-serializer-deserializer.md
         - name: Custom converters
           href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization

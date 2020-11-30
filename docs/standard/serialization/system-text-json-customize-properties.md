@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 11/18/2020
+ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -162,7 +162,7 @@ Enum string names can be deserialized as well, as shown in the following example
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
 * [Handle overflow JSON](system-text-json-handle-overflow.md)
-* [Preserve circular references](system-text-json-handle-circular-refs.md)
+* [Preserve circular references](preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

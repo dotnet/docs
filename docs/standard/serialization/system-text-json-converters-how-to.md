@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 11/18/2020
+ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
@@ -273,7 +273,7 @@ The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e
 
 ### Support polymorphic deserialization
 
-Built-in features provide a limited range of [polymorphic serialization](system-text-json-configure-options.md#serialize-properties-of-derived-classes) but no support for deserialization at all. Deserialization requires a custom converter.
+Built-in features provide a limited range of [polymorphic serialization](system-text-json-polymorphism.md) but no support for deserialization at all. Deserialization requires a custom converter.
 
 Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at run time. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 
@@ -368,6 +368,6 @@ If you need to make a converter that modifies the behavior of an existing built-
 * [Source code for built-in converters](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
 * [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
 * [How to customize character encoding](system-text-json-character-encoding.md)
-* [How to write custom serializers and deserializers](system-text-json-customize-serialization.md)
+* [How to write custom serializers and deserializers](write-custom-serializer-deserializer.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

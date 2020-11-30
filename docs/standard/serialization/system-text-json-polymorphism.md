@@ -1,7 +1,7 @@
 ---
 title: How to serialize properties of derived classes with System.Text.Json
 description: "Learn how to serialize polymorphic objects while serializing to and deserializing from JSON in .NET."
-ms.date: 11/19/2020
+ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -132,6 +132,6 @@ For more information about polymorphic **serialization**, and for information ab
 * [Ignore properties](system-text-json-ignore-properties.md)
 * [Allow invalid JSON](system-text-json-invalid-json.md)
 * [Handle overflow JSON](system-text-json-handle-overflow.md)
-* [Preserve circular references](system-text-json-handle-circular-refs.md)
+* [Preserve circular references](preserve-references.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

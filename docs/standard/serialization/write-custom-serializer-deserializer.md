@@ -1,7 +1,7 @@
 ---
 title: How to write custom serializers and deserializers with System.Text.Json
 description: "Learn how to write custom serializers and deserializers for JSON, using the System.Text.Json namespace."
-ms.date: 11/18/2020
+ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"

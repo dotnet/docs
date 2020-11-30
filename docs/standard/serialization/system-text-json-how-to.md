@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 11/18/2020
+ms.date: 11/30/2020
 ms.custom: contperfq2
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -100,7 +100,7 @@ The following example shows the same JSON, but formatted (that is, pretty-printe
 }
 ```
 
-### Serialize to UTF-8
+## Serialize to UTF-8
 
 To serialize to UTF-8, call the <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes%2A?displayProperty=nameWithType> method:
 
@@ -117,7 +117,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](system-text-json-customize-properties.md).
-* By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references](system-text-json-configure-options.md#preserve-references-and-handle-circular-references).
+* By default, circular references are detected and exceptions thrown. You can [preserve references and handle circular references](preserve-references.md).
 * By default, [fields](../../csharp/programming-guide/classes-and-structs/fields.md) are ignored. You can [include fields](#include-fields).
 
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
@@ -181,7 +181,7 @@ To deserialize from a file by using asynchronous code, call the <xref:System.Tex
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs" id="Deserialize":::
 
-### Deserialize from UTF-8
+## Deserialize from UTF-8
 
 To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> overload that takes a `ReadOnlySpan<byte>` or a `Utf8JsonReader`, as shown in the following examples. The examples assume the JSON is in a byte array named jsonUtf8Bytes.
 
@@ -189,19 +189,19 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs" id="Deserialize2":::
 
-### Deserialization behavior
+## Deserialization behavior
 
 The following behaviors apply when deserializing JSON:
 
 ::: zone pivot="dotnet-5-0"
 
-* By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-configure-options.md#case-insensitive-property-matching).
+* By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-character-casing.md).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Non-public constructors are ignored by the serializer.
-* Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](system-text-json-configure-options.md#immutable-types-and-records).
+* Deserialization to immutable objects or read-only properties is supported. See [Immutable types and Records](system-text-json-immutability.md).
 * By default, enums are supported as numbers. You can [serialize enum names as strings](system-text-json-customize-properties.md#enums-as-strings).
 * By default, fields are ignored. You can [include fields](#include-fields).
-* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-configure-options.md#allow-comments-and-trailing-commas).
+* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-invalid-json.md).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
@@ -209,13 +209,13 @@ When you use System.Text.Json indirectly in an ASP.NET Core app, some default be
 
 ::: zone pivot="dotnet-core-3-1"
 
-* By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-configure-options.md#case-insensitive-property-matching). ASP.NET Core apps [specify case-insensitivity by default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
+* By default, property name matching is case-sensitive. You can [specify case-insensitivity](system-text-json-character-casing.md). ASP.NET Core apps [specify case-insensitivity by default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * A parameterless constructor, which can be public, internal, or private, is used for deserialization.
 * Deserialization to immutable objects or read-only properties isn't supported.
 * By default, enums are supported as numbers. You can [serialize enum names as strings](system-text-json-customize-properties.md#enums-as-strings).
 * Fields aren't supported.
-* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-configure-options.md#allow-comments-and-trailing-commas).
+* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](system-text-json-invalid-json.md).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
 When you use System.Text.Json indirectly in an ASP.NET Core app, some default behaviors are different. For more information, see [Web defaults for JsonSerializerOptions](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions).

@@ -3,7 +3,7 @@ title: Unit testing C# with MSTest and .NET Core
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: ncarandini
 ms.author: wiwagn
-ms.date: 09/08/2017
+ms.date: 10/21/2020
 ---
 # Unit testing C# with MSTest and .NET Core
 
@@ -100,17 +100,11 @@ namespace Prime.UnitTests.Services
     [TestClass]
     public class PrimeService_IsPrimeShould
     {
-        private readonly PrimeService _primeService;
-
-        public PrimeService_IsPrimeShould()
-        {
-            _primeService = new PrimeService();
-        }
-
         [TestMethod]
         public void IsPrime_InputIs1_ReturnFalse()
         {
-            var result = _primeService.IsPrime(1);
+            var primeService = new PrimeService();
+            bool result = primeService.IsPrime(1);
 
             Assert.IsFalse(result, "1 should not be prime");
         }

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 42f03841-286b-42d8-ba58-18c75422bc8e
 ---
 # User Name Password Validator
+
 This sample demonstrates how to implement a custom UserNamePassword Validator. This is useful in cases where none of the built-in UserNamePassword Validation modes is appropriate for the requirements of the application; for example, when username/password pairs are stored in some external store, such as a database. This sample shows a service that has a custom validator that checks for two particular username/password pairs. The client uses such a username/password pair to authenticate to the service.
 
 > [!IMPORTANT]
@@ -245,6 +246,7 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
  When you run the sample, the operation requests and responses are displayed in the client console window. The client should successfully call all the methods. Press ENTER in the client window to shut down the client.
 
 ## Setup Batch File
+
  The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run a self-hosted application that requires server certificate-based security. This batch file must be modified to work across machines or to work in a non-self-hosted case.
 
  The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration.

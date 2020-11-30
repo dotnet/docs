@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 13f269e3-ebb1-433c-86cf-54fbd866a627
 ---
 # Endpoint Addresses
+
 Every endpoint has an address associated with it, which is used to locate and identify the endpoint. This address consists primarily of a Uniform Resource Identifier (URI), which specifies the location of the endpoint. The endpoint address is represented in the Windows Communication Foundation (WCF) programming model by the <xref:System.ServiceModel.EndpointAddress> class, which contains an optional <xref:System.ServiceModel.EndpointAddress.Identity%2A> property that enables the authentication of the endpoint by other endpoints that exchange messages with it, and a set of optional <xref:System.ServiceModel.EndpointAddress.Headers%2A> properties, which define any other SOAP headers required to reach the service. The optional headers provide additional and more detailed addressing information to identify or interact with the service endpoint. The address of an endpoint is represented on the wire as a WS-Addressing endpoint reference (EPR).  
   
 ## URI Structure of an Address  
+
  The address URI for most transports has four parts. For example, the four parts of the URI `http://www.fabrikam.com:322/mathservice.svc/secureEndpoint` can be itemized as follows:  
   
 - Scheme: `http:`
@@ -22,18 +24,23 @@ Every endpoint has an address associated with it, which is used to locate and id
 - Path: /mathservice.svc/secureEndpoint  
   
 ## Defining an Address for a Service  
+
  The endpoint address for a service can be specified either imperatively using code or declaratively through configuration. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. Generally, it is more practical to define service endpoints using configuration rather than code. Keeping the binding and addressing information out of the code allows them to change without having to recompile or redeploy the application.  
   
 ### Defining an Address in Configuration  
+
  To define an endpoint in a configuration file, use the [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) element. For details and an example, see [Specifying an Endpoint Address](../specifying-an-endpoint-address.md).  
   
 ### Defining an Address in Code  
+
  An endpoint address can be created in code with the <xref:System.ServiceModel.EndpointAddress> class. For details and an example, see [Specifying an Endpoint Address](../specifying-an-endpoint-address.md).  
   
 ### Endpoints in WSDL  
+
  An endpoint address can also be represented in WSDL as a WS-Addressing EPR element inside the corresponding endpoint's `wsdl:port` element. The EPR contains the endpoint's address as well as any address properties. For details and an example, see [Specifying an Endpoint Address](../specifying-an-endpoint-address.md).  
   
 ## Multiple IIS Binding Support in .NET Framework 3.5  
+
  Internet service providers often host many applications on the same server and site to increase the site density and lower total cost of ownership. These applications are typically bound to different base addresses. An Internet Information Services (IIS) Web site can contain multiple applications. The applications in a site can be accessed through one or more IIS bindings.  
   
  IIS bindings provide two pieces of information: a binding protocol, and binding information. The binding protocol defines the scheme over which communication occurs, and binding information is the information used to access the site.  
@@ -76,6 +83,7 @@ Every endpoint has an address associated with it, which is used to locate and id
  The base addresses supplied by IIS may have addresses bound to other schemes not present in `baseAddressPrefixFilters` list. These addresses are not filtered out.  
   
 ## Multiple IIS Binding Support in .NET Framework 4 and later  
+
  Starting in .NET 4, you can enable support for multiple bindings in IIS without having to pick a single base address, by setting <xref:System.ServiceModel.ServiceHostingEnvironment>’s <xref:System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled%2A> setting to true. This support is limited to HTTP protocol schemes.  
   
  The following is an example of configuration code that uses multipleSiteBindingsEnabled on [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md).  
@@ -92,6 +100,7 @@ Every endpoint has an address associated with it, which is used to locate and id
  For details and examples, see [Supporting Multiple IIS Site Bindings](supporting-multiple-iis-site-bindings.md) and <xref:System.ServiceModel.ServiceHostingEnvironment.MultipleSiteBindingsEnabled%2A>.  
   
 ## Extending Addressing in WCF Services  
+
  The default addressing model of WCF services uses the endpoint address URI for the following purposes:  
   
 - To specify the service listening address, the location at which the endpoint listens for messages,  
@@ -107,6 +116,7 @@ Every endpoint has an address associated with it, which is used to locate and id
  The transport address that the `via` specifies is the location to which a message should initially be sent on its way to some other remote address specified by the `to` parameter at which the service is located. In most Internet scenarios, the `via` URI is the same as the <xref:System.ServiceModel.EndpointAddress.Uri%2A> property of the final `to` address of the service. You only distinguish between these two addresses when you must do manual routing.  
   
 ### Addressing Headers  
+
  An endpoint can be addressed by one or more SOAP headers in addition to its basic URI. One set of scenarios where this is useful is a set of SOAP intermediary scenarios where an endpoint requires clients of that endpoint to include SOAP headers targeted at intermediaries.  
   
  You can define custom address headers in two ways—by using either code or configuration:  
@@ -118,6 +128,7 @@ Every endpoint has an address associated with it, which is used to locate and id
  Configuration is generally preferable to code, as it allows you to change the headers after deployment.  
   
 ### Custom Listening Addresses  
+
  You can set the listening address to a different value than the endpoint’s URI. This is useful in intermediary scenarios where the SOAP address to be exposed is that of a public SOAP intermediary, whereas the address where the endpoint actually listens is a private network address.  
   
  You can specify a custom listening address by using either code or configuration:  
@@ -127,6 +138,7 @@ Every endpoint has an address associated with it, which is used to locate and id
 - In configuration, specify a custom listening address with the `ListenUri` attribute of the service [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) element.  
   
 ### Custom SOAP Address Filter  
+
  The <xref:System.ServiceModel.EndpointAddress.Uri%2A> is used in conjunction with any <xref:System.ServiceModel.EndpointAddress.Headers%2A> property to define an endpoint’s SOAP address filter (<xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A>). By default, this filter verifies that an incoming message has a `To` message header that matches the endpoint’s URI and that all of the required endpoint headers are present in the message.  
   
  In some scenarios, an endpoint receives all messages that arrive on the underlying transport, and not just those with the appropriate `To` header. To enable this, the user can use the <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> class.  

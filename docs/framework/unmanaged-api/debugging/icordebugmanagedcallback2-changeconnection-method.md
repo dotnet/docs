@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback2::ChangeConnection Method
+
 Notifies the debugger that the set of tasks associated with the specified connection has changed.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT ChangeConnection (
 ```  
   
 ## Parameters  
+
  `pProcess`  
  [in] A pointer to an "ICorDebugProcess" object that represents the process containing the connection that changed.  
   
@@ -36,6 +38,7 @@ HRESULT ChangeConnection (
  [in] The ID of the connection that changed.  
   
 ## Remarks  
+
  A `ChangeConnection` callback will be fired in either of the following cases:  
   
 - When a debugger attaches to a process that contains connections. In this case, the runtime will generate and dispatch a [ICorDebugManagedCallback2::CreateConnection](icordebugmanagedcallback2-createconnection-method.md) event and a `ChangeConnection` event for each connection in the process. A `ChangeConnection` event is generated for every existing connection, regardless of whether that connection’s set of tasks has been changed since its creation.  
@@ -45,6 +48,7 @@ HRESULT ChangeConnection (
  The debugger should scan all threads in the process to pick up the new changes.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRDataTarget::GetImageBase Method
+
 Gets the base memory address of the specified image.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetImageBase (
 ```  
   
 ## Parameters  
+
  `imagePath`  
  [in] The file name of the image, including its path.  
   
@@ -36,9 +38,11 @@ HRESULT GetImageBase (
  [out] A pointer to a CLRDATA_ADDRESS that stores the base address of the image.  
   
 ## Remarks  
+
  The image file name may or may not have a path. If a path is specified, matching is done on the whole path; otherwise, matching is done only on the file name.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  

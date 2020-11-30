@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 765ff77b-7682-4ea3-90eb-e4d751e37379
 ---
 # Bindings and Binding Elements
+
 Bindings are collections of special configuration elements, called *binding elements*, which are evaluated by the service runtime whenever a client or service endpoint is being constructed. The type and order of the binding elements within a binding determines the selection and stacking order of the protocol and transport channels in an endpoint's channel stack.  
   
  Bindings, especially the system-provided bindings, usually also have a number of configuration properties that reflect the most commonly modified properties of the encapsulated binding elements.  
@@ -13,6 +14,7 @@ Bindings are collections of special configuration elements, called *binding elem
  A binding must contain exactly one transport binding element. Each transport binding element implies a default message encoding binding element, which can be overridden by adding at most one message encoding binding element to the binding. In addition to the transport and encoder binding elements, the binding may contain any number of protocol binding elements that together implement the functionality needed to service and send a SOAP message from one endpoint to another. For details, see [Using Bindings to Configure Services and Clients](../using-bindings-to-configure-services-and-clients.md).  
   
 ## Extending Bindings and Binding Elements  
+
  Windows Communication Foundation (WCF) includes system-provided bindings that cover a wide range of scenarios. (For more, see [System-Provided Bindings](../system-provided-bindings.md).) There may be times, however, when you need to create and use a binding that is not included in WCF. The following scenarios require the creation of a new binding.  
   
 - To use a new binding element (such as a new transport, encoding, or protocol binding element), you must create a new binding that includes that binding element. For example, if you added a custom `UdpTransportBindingElement` for UDP transport, you would need to create a new binding to make use of it. For information about performing this behavior using the <xref:System.ServiceModel.Channels.CustomBinding?displayProperty=nameWithType> type, see [Custom Bindings](custom-bindings.md).  
@@ -24,6 +26,7 @@ Bindings are collections of special configuration elements, called *binding elem
 - To perform some customization of metadata, typically but not necessarily to configure or use some custom binding element. For more information about providing metadata support to bindings and binding elements, see [Configuration and Metadata Support](configuration-and-metadata-support.md).  
 
 ## Channels, Bindings, and Binding Elements  
+
  Bindings and binding elements are the connection between the application programming model, which includes the attributes and behaviors, and the channel model, which includes the factories and listeners, message encoders, and transport and protocol implementations. Typically, binding elements and bindings are implemented to enable channels to be used by the application layer.  
   
  The channel layer hands off or receives messages to and from the service layer and transports those messages between endpoints. On a client, the channel layer is a stack of channel factories that create channels to a network endpoint. On a service, the channel layer is a stack of channel listeners that accept channels received at a network endpoint.  

@@ -122,7 +122,7 @@ void UploadFileInBackground( String^ address, String^ fileName )
    Uri ^uri = gcnew Uri(address);
    String^ method = "POST";
    
-   // Specify that that UploadFileCallback method gets called
+   // Specify that UploadFileCallback method gets called
    // when the file upload completes.
    client->UploadFileCompleted += gcnew UploadFileCompletedEventHandler( UploadFileCallback );
    client->UploadFileAsync( uri, method, fileName, waiter );

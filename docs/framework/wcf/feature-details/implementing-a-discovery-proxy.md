@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: dda20e79-8df3-438e-a281-69d779d978ec
 ---
 # Implementing a Discovery Proxy
+
 This section describes the steps required to implement a discovery proxy. A discovery proxy is a standalone service that contains a repository of services. Clients can query a discovery proxy to find discoverable services that the proxy is aware of. How a proxy is populated with services is up to the implementer. For example, a discovery proxy can connect to an existing service repository and make that information discoverable, an administrator can use a management API to add discoverable services to a proxy, or a discovery proxy can use the announcement functionality to update its internal cache.  
   
  The WCF implementation provides base classes that allow you to easily build a proxy. You can utilize these APIs to build a Discovery Proxy on top of your existing repository.  
@@ -11,6 +12,7 @@ This section describes the steps required to implement a discovery proxy. A disc
  The discovery proxy implemented here is like any other WCF services, in that you can also make the discovery proxy discoverable and have the clients locate its endpoints.  
   
 ## In This Section  
+
  [How to: Implement a Discovery Proxy](how-to-implement-a-discovery-proxy.md)  
  Describes how to implement a discovery proxy.  
   

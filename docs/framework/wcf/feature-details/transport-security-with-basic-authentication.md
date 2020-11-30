@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: b54f491d-196b-4279-876c-76b83ec0442c
 ---
 # Transport Security with Basic Authentication
+
 The following illustration shows a Windows Communication Foundation (WCF) service and client. The server needs a valid X.509 certificate that can be used for Secure Sockets Layer (SSL), and the clients must trust the server’s certificate. Further, the Web service already has an SSL implementation that can be used. For more information about enabling basic authentication on Internet Information Services (IIS), see <https://docs.microsoft.com/iis/configuration/system.webserver/security/authentication/basicauthentication>.  
   
  ![Screenshot that shows transport security with basic authentication.](./media/transport-security-with-basic-authentication/transport-security-basic-authentication.gif)  
@@ -23,6 +24,7 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
 |Binding|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## Service  
+
  The following code and configuration are meant to run independently. Do one of the following:  
   
 - Create a stand-alone service using the code with no configuration.  
@@ -30,12 +32,14 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
 - Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
+
  The following code shows how to create a service endpoint that uses a Windows domain user name and password for transfer security. Note that the service requires an X.509 certificate to authenticate to the client. For more information, see [Working with Certificates](working-with-certificates.md) and [How to: Configure a Port with an SSL Certificate](how-to-configure-a-port-with-an-ssl-certificate.md).  
   
  [!code-csharp[C_SecurityScenarios#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#1)]
  [!code-vb[C_SecurityScenarios#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#1)]  
   
 ## Configuration  
+
  The following configures a service to use basic authentication with transport-level security:  
   
 ```xml  
@@ -67,6 +71,7 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
 ## Client  
   
 ### Code  
+
  The following code shows the client code that includes the user name and password. Note that the user must provide a valid Windows user name and password. The code to return the user name and password is not shown here. Use a dialog box or other interface to query the user for the information.  
   
 > [!NOTE]
@@ -76,6 +81,7 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
  [!code-vb[C_SecurityScenarios#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#2)]  
   
 ### Configuration  
+
  The following code shows the client configuration.  
   
 > [!NOTE]

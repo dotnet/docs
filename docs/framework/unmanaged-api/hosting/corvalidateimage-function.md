@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # _CorValidateImage Function
+
 Validates managed module images, and notifies the operating system loader after they have been loaded.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ STDAPI _CorValidateImage (
 ```  
   
 ## Parameters  
+
  `ImageBase`  
  [in] A pointer to the starting location of the image to validate as managed code. The image must already be loaded into memory.  
   
@@ -35,6 +37,7 @@ STDAPI _CorValidateImage (
  [in] The file name of the image.  
   
 ## Return Value  
+
  This function returns the standard values `E_INVALIDARG`, `E_OUTOFMEMORY`, `E_UNEXPECTED`, and `E_FAIL`, as well as the following values.  
   
 |Return value|Description|  
@@ -43,6 +46,7 @@ STDAPI _CorValidateImage (
 |`STATUS_SUCCESS`|The image is valid. This value has the HRESULT 0x00000000L.|  
   
 ## Remarks  
+
  In Windows XP and later versions, the operating system loader checks for managed modules by examining the COM Descriptor Directory bit in the common object file format (COFF) header. A set bit indicates a managed module. If the loader detects a managed module, it loads MsCorEE.dll and calls `_CorValidateImage`, which performs the following actions:  
   
 - Confirms that the image is a valid managed module.  
@@ -66,6 +70,7 @@ STDAPI _CorValidateImage (
  The loader calls the [_CorImageUnloading](corimageunloading-function.md) function when managed module images are unloaded. However, this function does not perform any action; it just returns.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 93312eaf-07e0-4a55-b4f7-4cdbbc4dee2d
 ---
 # State Machine Activities in WF
+
 .NET Framework 4.5 provides several system-provided activities and activity designers for creating state machine workflows.  
   
 |||  

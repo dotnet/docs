@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 99770573-c815-4428-a38c-e4335c8bd7ce
 ---
 # Message Security with a Certificate Client
+
 The following scenario shows a Windows Communication Foundation (WCF) client and service secured using message security mode. Both the client and the service are authenticated with certificates. For more information, see [Distributed Application Security](distributed-application-security.md).
 
  ![Screenshot that shows a client with certificate.](./media/message-security-with-a-certificate-client/client-with-certificate.gif)  
@@ -25,6 +26,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 |Binding|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## Service  
+
  The following code and configuration are meant to run independently. Do one of the following:  
   
 - Create a stand-alone service using the code with no configuration.  
@@ -32,12 +34,14 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 - Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
+
  The following code shows how to create a service endpoint that uses message security to establish a secure context.  
   
  [!code-csharp[C_SecurityScenarios#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#10)]
  [!code-vb[C_SecurityScenarios#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#10)]  
   
 ### Configuration  
+
  The following configuration can be used instead of the code.  
   
 ```xml  
@@ -79,6 +83,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 ```  
   
 ## Client  
+
  The following code and configuration are meant to run independently. Do one of the following:  
   
 - Create a stand-alone client using the code (and client code).  
@@ -89,12 +94,14 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
 ### Code  
+
  The following code creates the client. The binding is to message mode security, and the client credential type is set to `Certificate`.  
   
  [!code-csharp[C_SecurityScenarios#17](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#17)]
  [!code-vb[C_SecurityScenarios#17](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#17)]  
   
 ### Configuration  
+
  The following configuration specifies the client certificate using an endpoint behavior. For more information about certificates, see [Working with Certificates](working-with-certificates.md). The code also uses an <`identity`> element to specify a Domain Name System (DNS) of the expected server identity. For more information about identity, see [Service Identity and Authentication](service-identity-and-authentication.md).  
   
 ```xml  

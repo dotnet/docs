@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport2::EnumGenericParamConstraints Method
+
 Gets an enumerator for an array of generic parameter constraints associated with the generic parameter represented by the specified token.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT EnumGenericParamConstraints (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator.  
   
@@ -55,6 +57,7 @@ HRESULT EnumGenericParamConstraints (
 |`S_FALSE`|`phEnum` has no member elements. In this case, `pcGenericParameterConstraints` is set to 0 (zero).|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

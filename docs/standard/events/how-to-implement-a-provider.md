@@ -1,17 +1,17 @@
 ---
 title: "How to: Implement a Provider"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "observer design pattern [.NET Framework], implementing providers"
-  - "providers [.NET Framework], in observer design pattern"
-  - "observables [.NET Framework], in observer design pattern"
+  - "observer design pattern [.NET], implementing providers"
+  - "providers [.NET], in observer design pattern"
+  - "observables [.NET], in observer design pattern"
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
 ---
 # How to: Implement a Provider
+
 The observer design pattern requires a division between a provider, which monitors data and sends notifications, and one or more observers, which receive notifications (callbacks) from the provider. This topic discusses how to create a provider. A related topic, [How to: Implement an Observer](how-to-implement-an-observer.md), discusses how to create an observer.  
   
 ### To create a provider  
@@ -47,6 +47,7 @@ The observer design pattern requires a division between a provider, which monito
      [!code-vb[Conceptual.ObserverDesign.HowTo#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#6)]  
   
 ## Example  
+
  The following example contains the complete source code for defining an <xref:System.IObservable%601> implementation for a temperature monitoring application. It includes the `Temperature` structure, which is the data sent to observers, and the `TemperatureMonitor` class, which is the <xref:System.IObservable%601> implementation.  
   
  [!code-csharp[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#7)]

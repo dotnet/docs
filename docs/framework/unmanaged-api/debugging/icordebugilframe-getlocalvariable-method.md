@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILFrame::GetLocalVariable Method
+
 Gets the value of the specified local variable in this Microsoft intermediate language (MSIL) stack frame.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetLocalVariable (
 ```  
   
 ## Parameters  
+
  `dwIndex`  
  [in] The index of the local variable in this MSIL stack frame.  
   
@@ -36,9 +38,11 @@ HRESULT GetLocalVariable (
  [out] A pointer to the address of an ICorDebugValue object that represents the retrieved value.  
   
 ## Remarks  
+
  The `GetLocalVariable` method can be used either in an MSIL stack frame or in a just-in-time (JIT) compiled frame.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

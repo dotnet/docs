@@ -5,6 +5,8 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# Language, copy constructor"
   - "copy constructor [C#]"
+ms.topic: how-to
+ms.custom: contperfq2
 ms.assetid: fba899b5-fc41-428e-a745-3ebdbf37990a
 ---
 # How to write a copy constructor (C# Programming Guide)

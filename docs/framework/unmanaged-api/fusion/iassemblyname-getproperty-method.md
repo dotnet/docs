@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IAssemblyName::GetProperty Method
+
 Gets a pointer to the property referenced by the specified property identifier.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetProperty (
 ```  
   
 ## Parameters  
+
  `PropertyId`  
  [in] The unique identifier for the requested property.  
   
@@ -40,6 +42,7 @@ HRESULT GetProperty (
  [in, out] The size, in bytes, of `pvProperty`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

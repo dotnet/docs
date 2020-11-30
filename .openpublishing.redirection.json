@@ -191,24 +191,56 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/compatibility/2.0-2.1.md",
+            "redirect_url": "/dotnet/core/compatibility/2.1"
+        },
+        {
+            "source_path": "docs/core/compatibility/2.2-3.0.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path": "docs/core/compatibility/3.0.6-3.0.7.md",
-            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path": "docs/core/compatibility/3.0.7-3.0.8.md",
-            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path": "docs/core/compatibility/3.0.8-3.0.9.md",
-            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path": "docs/core/compatibility/3.0.9-3.0rc1.md",
-            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
+            "source_path": "docs/core/compatibility/3.0-3.1.md",
+            "redirect_url": "/dotnet/core/compatibility/3.1"
+        },
+        {
+            "source_path": "docs/core/compatibility/3.1-5.0.md",
+            "redirect_url": "/dotnet/core/compatibility/5.0"
+        },
+        {
+            "source_path": "docs/core/compatibility/code-analysis.md",
+            "redirect_url": "/dotnet/core/compatibility/code-analysis/5.0/ca1416-platform-compatibility-analyzer"
+        },
+        {
+            "source_path": "docs/core/compatibility/interop.md",
+            "redirect_url": "/dotnet/core/compatibility/interop/5.0/built-in-support-for-winrt-removed"
         },
         {
             "source_path": "docs/core/compatibility/framework-core.md",
             "redirect_url": "/dotnet/core/compatibility/fx-core"
+        },
+        {
+            "source_path": "docs/core/compatibility/serialization.md",
+            "redirect_url": "/dotnet/core/compatibility/serialization/5.0/binaryformatter-deserialize-rewraps-exceptions"
+        },
+        {
+            "source_path": "docs/core/compatibility/wpf.md",
+            "redirect_url": "/dotnet/core/compatibility/windows-forms/5.0/automatically-infer-winexe-output-type"
         },
         {
             "source_path": "docs/core/deploying/applications.md",
@@ -365,13 +397,16 @@
             "redirect_url": "/dotnet/core/deploying"
         },
         {
+            "source_path": "docs/core/porting/winforms.md",
+            "redirect_url": "/dotnet/desktop/winforms/migration/?view=netdesktop-5.0"
+        },
+        {
             "source_path": "docs/core/porting/winforms-breaking-changes.md",
             "redirect_url": "/dotnet/core/compatibility/fx-core"
         },
         {
             "source_path": "docs/core/porting/wpf.md",
-            "redirect_url": "/dotnet/desktop-wpf/migration/convert-project-from-net-framework",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/core/preview3/deploying/index.md",
@@ -2615,15 +2650,15 @@
             "redirect_url": "/dotnet/csharp/programming-guide/types/index"
         },
         {
-            "source_path": "docs/csharp/csharp-7-1.md",
+            "source_path": "docs/csharp/whats-new/csharp-7-1.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
         },
         {
-            "source_path": "docs/csharp/csharp-7-2.md",
+            "source_path": "docs/csharp/whats-new/csharp-7-2.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
         },
         {
-            "source_path": "docs/csharp/csharp-7-3.md",
+            "source_path": "docs/csharp/whats-new/csharp-7-3.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
         },
         {
@@ -2642,11 +2677,11 @@
         },
         {
             "source_path": "docs/desktop-wpf/data/index.md",
-            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview"
+            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/desktop-wpf/fundamentals/index.md",
-            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml"
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/desktop-wpf/fundamentals/styles-templates-create-apply-style.md",
@@ -2682,7 +2717,7 @@
         },
         {
             "source_path": "docs/desktop-wpf/migration/index.md",
-            "redirect_url": "/dotnet/desktop-wpf/migration/differences-from-net-framework"
+            "redirect_url": "/dotnet/desktop/wpf/migration/differences-from-net-framework?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/desktop-wpf/migration/types-migrated-from-wpf-to-system-xaml.md",
@@ -2874,43 +2909,67 @@
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0003.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0003-ide0009.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0003-ide0009"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0007.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0007-ide0008.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0007-ide0008"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0008.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0007-ide0008.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0007-ide0008"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0009.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0003-ide0009.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0003-ide0009"
+        },
+        {
+            "source_path": "docs/fundamentals/code-analysis/style-rules/ide0020.md",
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0020-ide0038"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0023.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0023-ide0024.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0023-ide0024"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0024.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0023-ide0024.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0023-ide0024"
+        },
+        {
+            "source_path": "docs/fundamentals/code-analysis/style-rules/ide0029.md",
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0029-ide0030"
+        },
+        {
+            "source_path": "docs/fundamentals/code-analysis/style-rules/ide0030.md",
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0029-ide0030"
+        },
+        {
+            "source_path": "docs/fundamentals/code-analysis/style-rules/ide0038.md",
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0020-ide0038"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0047.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0047-ide0048.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0047-ide0048"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0048.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0047-ide0048.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0047-ide0048"
+        },
+        {
+            "source_path": "docs/fundamentals/code-analysis/style-rules/ide0054.md",
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0054-ide0074"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide0055.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/formatting-rules.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/formatting-rules"
+        },
+        {
+            "source_path": "docs/fundamentals/code-analysis/style-rules/ide0074.md",
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/ide0054-ide0074"
         },
         {
             "source_path": "docs/fundamentals/code-analysis/style-rules/ide1006.md",
-            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/naming-rules.md"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/style-rules/naming-rules"
         },
         {
             "source_path": "docs/fundamentals/productivity/code-analysis.md",
@@ -3208,6 +3267,10 @@
         {
             "source_path": "docs/framework/docker/index.md",
             "redirect_url": "/dotnet/framework"
+        },
+        {
+            "source_path": "docs/framework/get-started/net-core-and-open-source.md",
+            "redirect_url": "/dotnet/core/introduction"
         },
         {
             "source_path": "docs/framework/install/net-framework-3-5-on-windows-8-plus.md",
@@ -8484,13 +8547,11 @@
         },
         {
             "source_path": "docs/framework/wpf/advanced/xaml-overview-wpf.md",
-            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/advanced/xaml-resources.md",
-            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml-resources-define",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/xaml-resources-define?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/advanced/xaml-syntax-in-detail.md",
@@ -8854,7 +8915,7 @@
         },
         {
             "source_path": "docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md",
-            "redirect_url": "/dotnet/desktop-wpf/themes/how-to-create-apply-template"
+            "redirect_url": "/dotnet/desktop/wpf/themes/how-to-create-apply-template?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/controls/datagrid-styles-and-templates.md",
@@ -9542,8 +9603,7 @@
         },
         {
             "source_path": "docs/framework/wpf/controls/styling-and-templating.md",
-            "redirect_url": "/dotnet/desktop-wpf/fundamentals/styles-templates-overview",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/fundamentals/styles-templates-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/controls/tabcontrol-styles-and-templates.md",
@@ -9691,12 +9751,11 @@
         },
         {
             "source_path": "docs/framework/wpf/data/data-binding-overview.md",
-            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/data/data-binding-wpf.md",
-            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview"
+            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/data/data-templating-overview.md",
@@ -9728,7 +9787,7 @@
         },
         {
             "source_path": "docs/framework/wpf/data/how-to-bind-to-a-web-service.md",
-            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview"
+            "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0"
         },
         {
             "source_path": "docs/framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md",
@@ -11199,6 +11258,11 @@
             "redirect_url": "/dotnet/standard/index"
         },
         {
+            "source_path": "docs/standard/analyzers/framework-analyzer.md",
+            "redirect_url": "/dotnet/framework/code-analyzers",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/assembly-format.md",
             "redirect_url": "/dotnet/standard/assembly/file-format",
             "redirect_document_id": true
@@ -11428,6 +11492,30 @@
             "redirect_url": "/dotnet/standard/"
         },
         {
+            "source_path": "docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md",
+            "redirect_url": "/dotnet/framework/cross-platform/app-resources-for-libraries-that-target-multiple-platforms"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md",
+            "redirect_url": "/dotnet/framework/cross-platform/portable-class-library"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/index.md",
+            "redirect_url": "/dotnet/framework/cross-platform/index"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/passing-a-uri-to-the-windows-runtime.md",
+            "redirect_url": "/dotnet/framework/cross-platform/passing-a-uri-to-the-windows-runtime"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md",
+            "redirect_url": "/dotnet/framework/cross-platform/support-for-windows-store-apps-and-windows-runtime"
+        },
+        {
+            "source_path": "docs/standard/cross-platform/using-portable-class-library-with-model-view-view-model.md",
+            "redirect_url": "/dotnet/framework/cross-platform/using-portable-class-library-with-model-view-view-model"
+        },
+        {
             "source_path": "docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md",
             "redirect_url": "/dotnet/api/System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
         },
@@ -11442,6 +11530,10 @@
         {
             "source_path": "docs/standard/design-guidelines/dispose-pattern.md",
             "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
+        },
+        {
+            "source_path": "docs/standard/events/how-to-consume-events-in-a-web-forms-application.md",
+            "redirect_url": "/aspnet/web-forms/overview/how-to-consume-events"
         },
         {
             "source_path": "docs/standard/exceptions.md",
@@ -11549,6 +11641,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md",
+            "redirect_url": "/dotnet/standard/parallel-programming/tpl-and-traditional-async-programming",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/portability-analyzer.md",
             "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
             "redirect_document_id": true
@@ -11560,6 +11657,10 @@
         {
             "source_path": "docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md",
             "redirect_url": "/dotnet/standard/serialization/add-element-for-schemaimporterextensions"
+        },
+        {
+            "source_path": "docs/standard/serialization/basic-serialization-technology-sample.md",
+            "redirect_url": "/dotnet/standard/serialization/xml-and-soap-serialization"
         },
         {
             "source_path": "docs/standard/serialization/custom-serialization-order-with-xmlserializer.md",
@@ -11575,7 +11676,7 @@
         },
         {
             "source_path": "docs/standard/serialization/samples-binary.md",
-            "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
+            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
         },
         {
             "source_path": "docs/standard/serialization/samples-xml.md",
@@ -11583,7 +11684,7 @@
         },
         {
             "source_path": "docs/standard/serialization/schemaimporterextension-technology-sample.md",
-            "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
+            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
         },
         {
             "source_path": "docs/standard/serialization/serialization-how-to-topics.md",
@@ -11599,11 +11700,11 @@
         },
         {
             "source_path": "docs/standard/serialization/version-tolerant-serialization-technology-sample.md",
-            "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
+            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
         },
         {
             "source_path": "docs/standard/serialization/web-services-generics-serialization-technology-sample.md",
-            "redirect_url": "/dotnet/standard/serialization/basic-serialization-technology-sample"
+            "redirect_url": "/dotnet/standard/serialization/binary-serialization"
         },
         {
             "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
@@ -12932,6 +13033,10 @@
         {
             "source_path": "docs/visual-basic/sample-applications.md",
             "redirect_url": "/samples/browse/?languages=vb"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/fsharp-interactive/index.md",
+            "redirect_url": "/dotnet/fsharp/tools/fsharp-interactive"
         }
     ]
 }

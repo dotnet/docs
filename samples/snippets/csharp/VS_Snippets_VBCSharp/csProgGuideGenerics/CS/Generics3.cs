@@ -242,7 +242,7 @@ static class VarianceWorkaround
 
 namespace GenericVariance
 {
-    class Program
+    public class Program
     {
         //<Snippet58>
         static void PrintObjects(IEnumerable<object> objects)
@@ -259,7 +259,7 @@ namespace GenericVariance
             // this will fail if the collection provided is a wrapped collection
             objects.Add(new object());
         }
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //<Snippet55>
             List<int> ints = new List<int>();

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugObjectValue2::GetVirtualMethodAndType Method
+
 This method is not yet implemented.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetVirtualMethodAndType (
 ```  
   
 ## Remarks  
+
  Gets interface pointers to the "ICorDebugFunction" and "ICorDebugType" instances that represent the most derived method and type for the specified member reference.  
   
 ## See also

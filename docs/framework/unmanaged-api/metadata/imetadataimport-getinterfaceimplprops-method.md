@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetInterfaceImplProps Method
+
 Gets a pointer to the metadata tokens for the <xref:System.Type> that implements the specified method, and for the interface that declares that method.
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetInterfaceImplProps (
 ```  
   
 ## Parameters  
+
  `iiImpl`  
  [in] The metadata token representing the method to return the class and interface tokens for.  
   
@@ -68,6 +70,7 @@ Recall, the token is a 4-byte value:
 `GetInterfaceImplProps` returns the information held in the row whose token you provide in the `iImpl` argument.
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

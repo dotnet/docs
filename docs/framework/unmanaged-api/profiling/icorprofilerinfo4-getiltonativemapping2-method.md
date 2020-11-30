@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo4::GetILToNativeMapping2 Method
+
 Gets a map from Microsoft intermediate language (MSIL) offsets to native offsets for the code contained in the JIT-recompiled version of the specified function.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetILToNativeMapping(
 ```  
   
 ## Parameters  
+
  `functionId`  
  [in] The ID of the function that contains the code.  
   
@@ -48,6 +50,7 @@ HRESULT GetILToNativeMapping(
  [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` structures, each of which specifies the offsets. After the `GetILToNativeMapping2` method returns, `map` will contain some or all of the `COR_DEBUG_IL_TO_NATIVE_MAP` structures.  
   
 ## Remarks  
+
  `GetILToNativeMapping2` is similar to the [ICorProfilerInfo::GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md) method, except that it will allow the profiler to specify the ID of the recompiled function in future releases.  
   
 > [!NOTE]
@@ -60,6 +63,7 @@ HRESULT GetILToNativeMapping(
  Alternatively, you can first call `GetILToNativeMapping2` with a zero-length `map` buffer to obtain the correct buffer size. You can then set the buffer size to the value returned in `pcMap` and call `GetILToNativeMapping2` again.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

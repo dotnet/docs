@@ -2,7 +2,6 @@
 title: "Implementing the Event-based Asynchronous Pattern"
 description: Learn how to implement the Event-based Asynchronous Pattern (EAP) in .NET. EAP is a standard way to package a class that has asynchronous features.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,11 +9,11 @@ helpviewer_keywords:
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"
   - "BackgroundWorker component"
-  - "events [.NET Framework], asynchronous"
+  - "events [.NET], asynchronous"
   - "Asynchronous Pattern"
   - "AsyncOperationManager class"
-  - "threading [.NET Framework], asynchronous features"
-  - "components [.NET Framework], asynchronous"
+  - "threading [.NET], asynchronous features"
+  - "components [.NET], asynchronous"
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 43402d19-8d30-426d-8785-1a4478233bfa
@@ -207,7 +206,7 @@ Invoke that event handler on the appropriate thread as described in [Best Practi
 
 ## Handling Out and Ref Parameters in Methods
 
-Although the use of `out` and `ref` is, in general, discouraged in the .NET Framework, here are the rules to follow when they are present:
+Although the use of `out` and `ref` is, in general, discouraged in .NET, here are the rules to follow when they are present:
 
 Given a synchronous method *MethodName*:
 

@@ -24,6 +24,7 @@ The style rules in this section concern the following modifier preferences that 
 The style rules in this section concern the following modifier preferences that are specific to C#:
 
 - [Make local function static (IDE0062)](ide0062.md)
+- [Make struct fields writable (IDE0064)](ide0064.md)
 
 ## See also
 

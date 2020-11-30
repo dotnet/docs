@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: 020ee981-c889-4b12-a3ea-91823ef46444
 ---
 # Encoding Binary Objects with ByteStream Encoder
+
 Sending and receiving raw binary data with Windows Communication Foundation (WCF) is configured using <xref:System.ServiceModel.Channels.ByteStreamMessageEncodingBindingElement>.  
   
 ## Byte Stream Message Encoder Architecture  
+
  The binary message encoder used by WCF has no facility for processing, validating, or identifying the underlying binary data in the message. The data package is encoded into XML, sent, received, and decoded. The encoder processes the data after being passed to the transport and before the message is sent to the message queue. Functionally, the binary encoder wraps the message data in `<binary>` elements for sending and removes the elements after the message is received.  
   
 ## Using the Byte Stream Message Encoder  
+
  The following example shows a service contract that implements the byte stream message encoder.  
   
 ```csharp  
@@ -31,6 +34,7 @@ void ProcessMessage(Message message) ;
 ```  
   
 ## Scenarios  
+
  The Byte Stream Encoder is useful in the following scenarios.  
   
 - Transferring a JPEG image between computers using WCF. In this scenario, the image will arrive through the transport from an outside source, and the data sent will be the raw bytes that make up the image. A service will receive the binary data and display the image.  

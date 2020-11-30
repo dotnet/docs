@@ -14,6 +14,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo5::GetEventMask2 Method
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  Gets the current event categories for which the profiler wants to receive notifications from the common language runtime (CLR).  It provides functionality not provided by the [ICorProfilerInfo::GetEventMask](icorprofilerinfo-geteventmask-method.md) method.  
@@ -28,6 +29,7 @@ HRESULT GetEventMask2(
 ```  
   
 ## Parameters  
+
  `pdwEventsLow`  
  [out] A pointer to a 4-byte value that specifies the categories of events. Each bit controls a different capability, behavior, or type of event. The bits are described in the [COR_PRF_MONITOR](cor-prf-monitor-enumeration.md) enumeration.  
   
@@ -35,11 +37,13 @@ HRESULT GetEventMask2(
  [out] A pointer to a 4-byte value that specifies the categories of events.  Each bit controls a different capability, behavior, or type of event. The bits are described in the [COR_PRF_HIGH_MONITOR](cor-prf-high-monitor-enumeration.md) enumeration.  
   
 ## Remarks  
+
  The `GetEventMask2` method is used to determine which callbacks the profiler has subscribed to. Typically, you perform a logical OR of the `pdwEventsLow` and `pdwEventsHigh` values and any new bits you want to set, and then call the [SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) method.  
   
  This method is the recommended alternative to the [GetEventMask](icorprofilerinfo-geteventmask-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

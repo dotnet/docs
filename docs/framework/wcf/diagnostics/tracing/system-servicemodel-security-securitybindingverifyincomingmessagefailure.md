@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: a4447ad6-7f41-47ef-bdd1-8b4a908e156f
 ---
 # System.ServiceModel.Security.SecurityBindingVerifyIncomingMessageFailure
+
 System.ServiceModel.Security.SecurityBindingVerifyIncomingMessageFailure  
   
 ## Description  
+
  The security protocol cannot verify the incoming message.  
   
 ## See also

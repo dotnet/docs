@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: a704fb1d-6cf8-4fd1-9aee-e70d7055c812
 ---
 # System.ServiceModel.UnhandledAction
+
 System.ServiceModel.UnhandledAction  
   
 ## Description  
+
  No service available to handle this action.  
   
  All the traces for performance counter can be used to debug performance counter related issues.  

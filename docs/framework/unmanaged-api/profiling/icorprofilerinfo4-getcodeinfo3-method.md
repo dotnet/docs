@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo4::GetCodeInfo3 Method
+
 Gets the extents of native code associated with the JIT-recompiled version of the specified function.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetCodeInfo3(
 ```  
   
 ## Parameters  
+
  `functionID`  
  [in] The ID of the function with which the native code is associated.  
   
@@ -48,6 +50,7 @@ HRESULT GetCodeInfo3(
  [out] A caller-provided buffer. After the method returns, it contains an array of `COR_PRF_CODE_INFO` structures, each of which describes a block of native code.  
   
 ## Remarks  
+
  The `GetCodeInfo3` method is similar to [GetCodeInfo2](icorprofilerinfo2-getcodeinfo2-method.md), except that it will get the JIT-recompiled ID of the function that contains the specified IP address.  
   
 > [!NOTE]
@@ -60,6 +63,7 @@ HRESULT GetCodeInfo3(
  Alternatively, you can first call `GetCodeInfo3` with a zero-length `codeInfos` buffer to obtain the correct buffer size. You can then set the `codeInfos` buffer size to the value returned in `pcCodeInfos`, multiplied by the size of a [COR_PRF_CODE_INFO](cor-prf-code-info-structure.md) structure, and call `GetCodeInfo3` again.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

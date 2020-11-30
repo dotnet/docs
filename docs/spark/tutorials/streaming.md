@@ -3,7 +3,7 @@ title: Structured Streaming with .NET for Apache Spark tutorial
 description: In this tutorial, you learn how to use .NET for Apache Spark for Spark Structured Streaming.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
 ---
 
@@ -18,8 +18,6 @@ In this tutorial, you learn how to:
 > * Create and run a .NET for Apache Spark application
 > * Use netcat to create a data stream
 > * Use user-defined functions and SparkSQL to analyze streaming data
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 
@@ -149,7 +147,7 @@ Structured streaming in Spark processes data through a series of small **batches
 After starting a new netcat session, open a new terminal and run your `spark-submit` command, similar to the following command:
 
 ```powershell
-spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /path/to/microsoft-spark-<version>.jar Microsoft.Spark.CSharp.Examples.exe Sql.Streaming.StructuredNetworkCharacterCount localhost 9999
+spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /path/to/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar Microsoft.Spark.CSharp.Examples.exe Sql.Streaming.StructuredNetworkCharacterCount localhost 9999
 ```
 
 > [!NOTE]

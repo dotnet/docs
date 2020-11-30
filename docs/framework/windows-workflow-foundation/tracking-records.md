@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 51adbda3-bd8b-4892-a8ea-d343186472d2
 ---
 # Tracking Records
+
 The workflow runtime is instrumented to emit tracking records to follow the execution of a workflow instance.  
   
 ## Tracking Records  
+
  The following table details the tracking records that the workflow runtime emits.  
   
 |Tracking record|Description|  

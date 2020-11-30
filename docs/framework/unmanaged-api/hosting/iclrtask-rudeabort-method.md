@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTask::RudeAbort Method
+
 Instructs the common language runtime (CLR) to abort the task represented by the current [ICLRTask Interface](iclrtask-interface.md) instance immediately and unconditionally.  
   
 ## Syntax  
@@ -37,9 +38,11 @@ HRESULT RudeAbort ();
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  A host calls `RudeAbort` to abort a task immediately. Finalizers and exception handling routines are not guaranteed to be executed.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

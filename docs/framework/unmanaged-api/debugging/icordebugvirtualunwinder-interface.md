@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a09e9ccc-0b37-43e3-95c1-bc5fa7ee5f42
 ---
 # ICorDebugVirtualUnwinder Interface
+
 Provides methods to help in stack unwinding.  
   
 ## Methods  
@@ -14,12 +15,14 @@ Provides methods to help in stack unwinding.
 |[Next Method](icordebugvirtualunwinder-next-method.md)|Advances to the caller's context.|  
   
 ## Remarks  
+
  The members of the `ICorDebugVirtualUnwinder` interface are implemented by the debugger to help in stack unwinding.  
   
 > [!NOTE]
 > This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

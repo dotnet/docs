@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 81731998-d5e7-49e4-ad38-c8e6d01689d0
 ---
 # Integrated Windows Authentication with Extended Protection
+
 Enhancements were made that affect how integrated Windows authentication is handled by the <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Security.SslStream>, <xref:System.Net.Security.NegotiateStream>, and related classes in the <xref:System.Net> and related namespaces. Support was added for extended protection to enhance security.  
   
  These changes can affect applications that use these classes to make web requests and receive responses where integrated Windows authentication is used. This change can also impact web servers and client applications that are configured to use integrated Windows authentication.  
@@ -13,6 +14,7 @@ Enhancements were made that affect how integrated Windows authentication is hand
  The changes to support extended protection are available only for applications on Windows 7 and Windows Server 2008 R2. The extended protection features are not available on earlier versions of Windows.  
   
 ## Overview  
+
  The design of integrated Windows authentication allows for some credential challenge responses to be universal, meaning they can be re-used or forwarded. The challenge responses should be constructed at a minimum with target specific information and preferably also with some channel specific information. Services can then provide extended protection to ensure that credential challenge responses contain service specific information such as a Service Principal Name (SPN). With this information in the credential exchanges, services are able to better protect against malicious use of credential challenge responses that might have been improperly used.  
   
  The extended protection design is an enhancement to authentication protocols designed to mitigate authentication relay attacks. It revolves around the concept of channel and service binding information.  
@@ -58,6 +60,7 @@ Enhancements were made that affect how integrated Windows authentication is hand
  Extended protection is currently supported on Windows 7. A mechanism is provided so an application can determine if the operating system supports extended protection.  
   
 ## Changes to Support Extended Protection  
+
  The authentication process used with integrated Windows authentication, depending on the authentication protocol used, often includes a challenge issued by the destination computer and sent back to the client computer. Extended protection adds new features to this authentication process  
   
  The <xref:System.Security.Authentication.ExtendedProtection> namespace provides support for authentication using extended protection for applications. The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> class in this namespace represents a channel binding. The <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> class in this namespace represents the extended protection policy used by the server to validate incoming client connections. Other class members are used with extended protection.  
@@ -101,6 +104,7 @@ Enhancements were made that affect how integrated Windows authentication is hand
  A <xref:System.Net.Configuration.SmtpNetworkElement> property was added to support configuration of extended protection for SMTP clients in the <xref:System.Net.Security> namespace.  
   
 ## Extended Protection for Client Applications  
+
  Extended protection support for most client applications happens automatically. The <xref:System.Net.HttpWebRequest> and <xref:System.Net.Mail.SmtpClient> classes support extended protection whenever the underlying version of Windows supports extended protection. An <xref:System.Net.HttpWebRequest> instance sends an SPN constructed from the <xref:System.Uri>. By default, an <xref:System.Net.Mail.SmtpClient> instance sends an SPN constructed from the host name of the SMTP mail server.  
   
  For custom authentication, client applications can use the <xref:System.Net.HttpWebRequest.EndGetRequestStream%28System.IAsyncResult%2CSystem.Net.TransportContext%40%29?displayProperty=nameWithType> or <xref:System.Net.HttpWebRequest.GetRequestStream%28System.Net.TransportContext%40%29?displayProperty=nameWithType> methods in the <xref:System.Net.HttpWebRequest> class that allow retrieving the <xref:System.Net.TransportContext> and the CBT using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method.  
@@ -110,6 +114,7 @@ Enhancements were made that affect how integrated Windows authentication is hand
  The <xref:System.Net.Mail.SmtpClient.TargetName%2A> property can be used to set a custom SPN to use for integrated Windows authentication for the SMTP connection.  
   
 ## Extended Protection for Server Applications  
+
  <xref:System.Net.HttpListener> automatically provides mechanisms for validating service bindings when performing HTTP authentication.  
   
  The most secure scenario is to enable extended protection for `HTTPS://` prefixes. In this case, set <xref:System.Net.HttpListener.ExtendedProtectionPolicy%2A?displayProperty=nameWithType> to an <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy> with <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> or <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always>, and <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario> set to <xref:System.Security.Authentication.ExtendedProtection.ProtectionScenario.TransportSelected> A value of  <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported> puts <xref:System.Net.HttpListener> in partially hardened mode, while <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always> corresponds to fully hardened mode.  

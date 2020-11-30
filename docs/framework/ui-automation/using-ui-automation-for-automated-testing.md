@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 ---
 # Using UI Automation for Automated Testing
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -24,6 +25,7 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 > The intent of this overview is to showcase the new and improved automated testing capabilities of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]. This overview is not intended to provide information on accessibility features and will not address accessibility other than where necessary.  
   
 ## UI Automation in a Provider  
+
  For a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] to be automated, a developer of an application or control must look at what actions an end-user can perform on the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] object using standard keyboard and mouse interaction.  
   
  Once these key actions have been identified, the corresponding [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns (that is, the control patterns that mirror the functionality and behavior of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] element) should be implemented on the control. For example, user interaction with a combo box control (such as the run dialog) typically involves expanding and collapsing the combo box to hide or display a list of items, selecting an item from that list, or adding a new value via keyboard input.  
@@ -32,6 +34,7 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 > With other accessibility models, developers must gather information directly from individual buttons, menus, or other controls. Unfortunately, every control type comes in dozens of minor variations. In other words, even though ten variations of a pushbutton may all work the same way and perform the same function, they must all be treated as unique controls. There is no way to know that these controls are functionally equivalent. Control patterns were developed to represent these common control behaviors. For more information, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
 ### Implementing UI Automation  
+
  As mentioned earlier, without the unified model provided by [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], test tools and developers are required to know framework-specific information in order to expose properties and behaviors of controls in that framework. Since there can be several different UI frameworks present at any single time within Windows operating systems, including Win32, Windows Forms, and Windows Presentation Foundation (WPF), it can be a daunting task to test multiple applications with controls that seem similar. For example, the following table outlines the framework-specific property names required to retrieve the name (or text) associated with a button control and shows the single equivalent [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] property.  
   
 |UI Automation Control Type|UI Framework|Framework Specific Property|UI Automation Property|  
@@ -45,11 +48,13 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
  Information on implementing [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] in a provider can be found at [UI Automation Providers for Managed Code](ui-automation-providers-for-managed-code.md). Information on implementing control patterns is available at [UI Automation Control Patterns](ui-automation-control-patterns.md) and [UI Automation Text Pattern](ui-automation-text-pattern.md).  
   
 ## UI Automation in a Client  
+
  The goal of many automated test tools and scenarios is the consistent and repeatable manipulation of the user interface. This can involve unit testing specific controls through to the recording and playback of test scripts that iterate through a series of generic actions on a group of controls.  
   
  A complication that arises from automated applications is the difficulty synchronizing a test with a dynamic target. For example, a list box control, such as one contained in the Windows Task Manager, that displays a list of currently running applications. Since the items in the list box are dynamically updated outside the control of the test application, attempting to repeat the selection of a specific item in the list box with any consistency is impossible. Similar issues can also arise when attempting to repeat simple focus changes in a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] that is outside the control of the test application.  
   
 ### Programmatic Access  
+
  Programmatic access provides the ability to imitate, through code, any interaction and experience exposed by traditional mouse and keyboard input. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] enables programmatic access through five components:  
   
 - The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree facilitates navigation through the structure of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. The tree is built from the collection of hWnd's. For more information, see [UI Automation Tree Overview](ui-automation-tree-overview.md)  
@@ -63,18 +68,22 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 - Automation events provide event notifications and information. For more information, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   
 ### Key Properties for Test Automation  
+
  The ability to uniquely identify and subsequently locate any control within the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] provides the basis for automated test applications to operate on that [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. There are several [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] properties used by clients and providers that assist in this.  
   
 #### AutomationID  
+
  Uniquely identifies an automation element from its siblings. <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> is not localized, unlike a property such as <xref:System.Windows.Automation.AutomationElement.NameProperty> that is typically localized if a product gets shipped in multiple languages. See [Use the AutomationID Property](use-the-automationid-property.md).  
   
 > [!NOTE]
 > <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> does not guarantee a unique identity throughout the automation tree. For example, an application may contain a menu control with multiple top-level menu items that, in turn, have multiple child menu items. These secondary menu items may be identified by a generic scheme such as "Item1, Item 2, Item3, etc.", allowing duplicate identifiers for children across top-level menu items.  
   
 #### ControlType  
+
  Identifies the type of control represented by an automation element. Significant information can be inferred from knowledge of the control type. See [UI Automation Control Types Overview](ui-automation-control-types-overview.md).  
   
 #### NameProperty  
+
  This is a text string that identifies or explains a control. <xref:System.Windows.Automation.AutomationElement.NameProperty> should be used with caution since it can be localized. See [UI Automation Properties Overview](ui-automation-properties-overview.md).  
   
 ### Implementing UI Automation in a Test Application  
@@ -89,6 +98,7 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 |Automate the UI|Automated test scripts can now control any [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] of interest from a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] framework using the information and functionality exposed by the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns.|  
   
 ## Related Tools and Technologies  
+
  There are a number of related tools and technologies that support automated testing with [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].  
   
 - Inspect.exe is a graphical user interface (GUI) application that can be used to gather [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] information for both provider and client development and debugging. Inspect.exe is included in the Windows SDK.  
@@ -96,6 +106,7 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 - MSAABridge exposes [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] information to Active Accessibility clients. The primary goal of bridging [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] to Active Accessibility is to allow existing Active Accessibility clients the ability to interact with any framework that has implemented [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)].  
   
 ## Security  
+
  For security information, see [UI Automation Security Overview](ui-automation-security-overview.md).  
   
 ## See also

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 24edae24-8ced-43c4-948b-f400ba42b2a5
 ---
 # System.ServiceModel.MetadataExchangeClientReceiveReply
+
 System.ServiceModel.MetadataExchangeClientReceiveReply  
   
 ## Description  
+
  The MetadataExchangeClient received a reply.  
   
 ## See also

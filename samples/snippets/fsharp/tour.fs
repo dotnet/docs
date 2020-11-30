@@ -76,8 +76,8 @@ module Immutability =
 
     /// Binding a value to a name via 'let' makes it immutable.
     ///
-    /// The second line of code fails to compile because 'number' is immutable and bound.
-    /// Re-defining 'number' to be a different value is not allowed in F#.
+    /// The second line of code compiles, but 'number' from that point onward will shadow the previous definition.
+    /// There is no way to access the previous definition of 'number' due to shadowing.
     let number = 2
     // let number = 3
 
@@ -733,7 +733,7 @@ module PatternMatching =
 
     /// Find all managers/executives named "Dave" who do not have any reports.
     /// This uses the 'function' shorthand to as a lambda expression.
-    let rec findDaveWithOpenPosition(emps : List<Employee>) =
+    let findDaveWithOpenPosition(emps : List<Employee>) =
         emps
         |> List.filter(function
                        | Manager({First = "Dave"}, []) -> true // [] matches an empty list.
@@ -985,9 +985,9 @@ module Events =
 
 
 
-#if COMPILED
-module BoilerPlateForForm = 
-    [<System.STAThread>]
-    do ()
-    do System.Windows.Forms.Application.Run()
-#endif
+//#if COMPILED
+//module BoilerPlateForForm = 
+//    [<System.STAThread>]
+//    do ()
+//    do System.Windows.Forms.Application.Run()
+//#endif

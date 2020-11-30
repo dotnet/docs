@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Install and use .NET Core local tools"
+title: "Tutorial: Install and use .NET local tools"
 description: Learn how to install and use a .NET tool as a local tool.
 ms.topic: tutorial
 ms.date: 02/12/2020
 ---
 
-# Tutorial: Install and use a .NET Core local tool using the .NET Core CLI
+# Tutorial: Install and use a .NET local tool using the .NET CLI
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
@@ -196,7 +196,7 @@ dotnet tool uninstall dotnetsay
 
 ## Troubleshoot
 
-If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).
+If you get an error message while following the tutorial, see [Troubleshoot .NET tool usage issues](troubleshoot-usage-issues.md).
 
 ## See also
 

@@ -15,21 +15,27 @@ helpviewer_keywords:
 ms.assetid: 103eb3a3-1cf0-4406-8a9a-a7798fdc22d1
 ---
 # gcUnmanagedToManaged MDA
+
 The `gcUnmanagedToManaged` managed debugging assistant (MDA) causes a garbage collection whenever a thread transitions from unmanaged to managed code.  
   
 ## Symptoms  
+
  An application running unmanaged user components using COM and platform invoke is causing a nondeterministic access violation in the CLR.  
   
 ## Cause  
+
  If an application is running unmanaged user components, then those components might have corrupted the garbage-collected heap. This causes an access violation in the CLR when the garbage collector tries to walk the object graph.  
   
 ## Resolution  
+
  Enabling this assistant reduces the time between when the unmanaged component corrupts the garbage-collected heap and when the access violation happens by forcing a garbage collection to occur before every managed transition.  
   
 ## Effect on the Runtime  
+
  Causes a garbage collection whenever a thread transitions from unmanaged to managed code.  
   
 ## Output  
+
  This MDA produces no output.  
   
 ## Configuration  

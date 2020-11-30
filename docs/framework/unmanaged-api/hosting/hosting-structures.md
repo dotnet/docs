@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 492e010f-7493-4134-9505-f7008ccdaae6
 ---
 # Hosting Structures
+
 This section describes the unmanaged structures that the hosting API uses.  
   
 ## In This Section  
+
  [AssemblyBindInfo Structure](assemblybindinfo-structure.md)  
  Provides detailed information about the referenced assembly.  
   
@@ -36,6 +38,7 @@ This section describes the unmanaged structures that the hosting API uses.
  Stores the type of overflow that occurred and information on the exception that was thrown due to the overflow.  
   
 ## Related Sections  
+
  [Hosting Coclasses](hosting-coclasses.md)  
   
  [Hosting Interfaces](hosting-interfaces.md)  

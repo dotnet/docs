@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorRuntimeHost::CreateEvidence Method
+
 Gets an interface pointer of type <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType>, which allows the host to create security evidence to pass to the [CreateDomain](icorruntimehost-createdomain-method.md) or [CreateDomainEx](icorruntimehost-createdomainex-method.md) method.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT CreateEvidence (
 ```  
   
 ## Parameters  
+
  `pEvidence`  
  [out] A interface pointer to an <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType> instance used to create security evidence. This pointer is typed `IUnknown`, so callers should typically call `QueryInterface` on this interface to obtain a pointer to an <xref:System.Security.Principal.IIdentity?displayProperty=nameWithType>.  
   
@@ -41,9 +43,11 @@ HRESULT CreateEvidence (
 |HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
   
 ## Remarks  
+
  This method returns an empty collection that cannot be populated from native code. You should use the <xref:System.Security.Policy.Evidence> method instead.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

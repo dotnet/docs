@@ -1,7 +1,9 @@
 ---
 title: Use broadcast variables in .NET for Apache Spark
 description: Learn how to use broadcast variables in .NET for Apache Spark applications.
-ms.date: 06/25/2020
+ms.author: nidutta
+author: Niharikadutta
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -11,8 +13,6 @@ ms.custom: mvc,how-to
 In this article, you learn how to use broadcast variables in .NET for Apache Spark. [Broadcast variables in Apache Spark](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) are mechanisms for sharing variables across executors that are meant to be read-only. Broadcast variables allow you to keep a read-only variable cached on each machine rather than shipping a copy of it with tasks. You can use broadcast variables to give every node a copy of a large input dataset in an efficient manner.
 
 Because the data is sent only once, broadcast variables have performance benefits when compared to local variables that are shipped to the executors with each task. Refer to the [official broadcast variable documentation](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) to get a deeper understanding of broadcast variables and why they are used.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Create broadcast variables
 
@@ -91,6 +91,11 @@ Func<Column, Column> udf2 = Udf<string, string>(
 // Calling udf2 works fine as expected
 df.Select(udf2(df["_1"])).Show();
 ```
+
+## FAQs
+
+**Why don't Broadcast Variables work with .NET Interactive?**  
+Broadcast variables don't work with interactive scenarios because of .NET interactive's design of appending each object defined in a cell with its cell submission class, which since is not marked serializable, fails with the same exception as shown previously. For more information, please check out [this article](dotnet-interactive-udf-issue.md).
 
 ## Next steps
 

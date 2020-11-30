@@ -2,7 +2,6 @@
 title: "How to: Use Data Protection"
 description: Learn how to use data protection by accessing the data protection API (DPAPI) in .NET.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
@@ -29,7 +28,7 @@ ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
   
 Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a copy of an array of bytes. This functionality is available in .NET Framework, .NET Core, and .NET 5.  You can specify that data encrypted by the current user account can be decrypted only by the same user account, or you can specify that data encrypted by the current user account can be decrypted by any account on the computer.  See the <xref:System.Security.Cryptography.DataProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedData> options.  
   
-### To encrypt data to a file or stream using data protection  
+## Encrypt data to a file or stream using data protection  
   
 1. Create random entropy.  
   

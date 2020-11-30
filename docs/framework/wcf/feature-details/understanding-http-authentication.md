@@ -5,11 +5,13 @@ ms.date: "03/30/2017"
 ms.assetid: 9376309a-39e3-4819-b47b-a73982b57620
 ---
 # Understanding HTTP Authentication
+
 Authentication is the process of identifying whether a client is eligible to access a resource. The HTTP protocol supports authentication as a means of negotiating access to a secure resource.  
   
  The initial request from a client is typically an anonymous request, not containing any authentication information. HTTP server applications can deny the anonymous request while indicating that authentication is required. The server application sends WWW-Authentication headers to indicate the supported authentication schemes. This document describes several authentication schemes for HTTP and discusses their support in Windows Communication Foundation (WCF).  
   
 ## HTTP Authentication Schemes  
+
  The server can specify multiple authentication schemes for the client to choose from. The following table describes some of the authentication schemes commonly found in Windows applications.  
   
 |Authentication Scheme|Description|  
@@ -22,6 +24,7 @@ Authentication is the process of identifying whether a client is eligible to acc
 |Windows Live ID|The underlying Windows HTTP service includes authentication using federated protocols. However, the standard HTTP transports in WCF do not support the use of federated authentication schemes, such as Microsoft Windows Live ID. Support for this feature is currently available through the use of message security. For more information, see [Federation and Issued Tokens](federation-and-issued-tokens.md).|  
   
 ## Choosing an Authentication Scheme  
+
  When selecting the potential authentication schemes for an HTTP server, a few items to consider include the following:  
   
 - Consider whether the resource needs to be protected. Using HTTP authentication requires transmitting more data and can limit interoperability with clients. Allow anonymous access to resources that do not need to be protected.  

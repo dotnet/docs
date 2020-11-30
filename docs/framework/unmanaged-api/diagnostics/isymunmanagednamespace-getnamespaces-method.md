@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedNamespace::GetNamespaces Method
+
 Gets the children of this namespace.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetNamespaces(
 ```  
   
 ## Parameters  
+
  `cNameSpaces`  
  [in] A `ULONG32` that indicates the size of the `namespaces` array.  
   
@@ -40,9 +42,11 @@ HRESULT GetNamespaces(
  [out] A pointer to the buffer that contains the namespaces.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: c145e2f6-f402-41f5-8b5a-eee03978737b
 ---
 # Extending WCF
+
 Windows Communication Foundation (WCF) allows you to modify and extend run time components to precisely control and extend service-based applications. The topics in this section go in depth about the extensibility architecture. For more information about basic programming, see [Basic WCF Programming](../basic-wcf-programming.md).  
   
 ## In This Section  
+
  [Extending ServiceHost and the Service Model Layer](extending-servicehost-and-the-service-model-layer.md)  
  The service model layer is responsible for pulling incoming messages out of the underlying channels, translating them into method invocations in application code, and sending the results back to the caller.  Service model extensions modify or implement execution or communication behavior and features involving dispatcher functionality, custom behaviors, message and parameter interception, and other extensibility functionality.  
   
@@ -30,6 +32,7 @@ Windows Communication Foundation (WCF) allows you to modify and extend run time 
  Encoders and serializers translate data from one form to another. The topics in this section discuss how to extend the supplied classes to meet special requirements.  
   
 ## Reference  
+
  <xref:System.ServiceModel>  
   
  <xref:System.ServiceModel.Channels>  
@@ -45,6 +48,7 @@ Windows Communication Foundation (WCF) allows you to modify and extend run time 
  <xref:System.IdentityModel.Tokens>  
   
 ## Related Sections  
+
  [Basic WCF Programming](../basic-wcf-programming.md)  
   
  [WCF Feature Details](../feature-details/index.md)  

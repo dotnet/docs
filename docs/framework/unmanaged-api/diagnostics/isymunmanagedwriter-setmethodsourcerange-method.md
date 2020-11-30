@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter::SetMethodSourceRange Method
+
 Specifies the true start and end of a method within a source file. Use this method to specify the extent of a method independently of the sequence points that exist within the method.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT SetMethodSourceRange(
 ```  
   
 ## Parameters  
+
  `startDoc`  
  [in] A pointer to the document containing the starting position.  
   
@@ -51,9 +53,11 @@ HRESULT SetMethodSourceRange(
  [in] The ending column number.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

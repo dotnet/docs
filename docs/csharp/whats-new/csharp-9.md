@@ -26,6 +26,8 @@ C# 9.0 adds the following features and enhancements to the C# language:
 
 C# 9.0 is supported on **.NET 5**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
+You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
+
 ## Record types
 
 C# 9.0 introduces ***record types***, which are a reference type that provides synthesized methods to provide value semantics for equality. Records are immutable by default.
@@ -60,7 +62,7 @@ The compiler synthesizes different versions of the methods above. The method sig
 
 In addition to the familiar `Equals` overloads, `operator ==`, and `operator !=`, the compiler synthesizes a new `EqualityContract` property. The property returns a `Type` object that matches the type of the record. If the base type is `object`, the property is `virtual`. If the base type is another record type, the property is an `override`. If the record type is `sealed`, the property is `sealed`. The synthesized `GetHashCode` uses the `GetHashCode` from all properties and fields declared in the base type and the record type. These synthesized methods enforce value-based equality throughout an inheritance hierarchy. That means a `Student` will never be considered equal to a `Person` with the same name. The types of the two records must match as well as all properties shared among the record types being equal.
 
-Records also have a synthesized constructor and a "clone" method for creating copies. The synthesized constructor has one argument of the record type. It produces a new record with the same values for all properties of the record. This constructor is private if the record is sealed, otherwise it's protected. The synthesized "clone" method supports copy construction for record hierarchies. The term "clone" is in quotes because the actual name is compiler generated. You can't create a method named `Clone` in a record type. The synthesized "clone" method returns the type of record being copied using virtual dispatch. The compiler adds different modifiers for the "clone" method depending on the access modifiers on the `record`:
+Records also have a synthesized constructor and a "clone" method for creating copies. The synthesized constructor has a single parameter of the record type. It produces a new record with the same values for all properties of the record. This constructor is private if the record is sealed, otherwise it's protected. The synthesized "clone" method supports copy construction for record hierarchies. The term "clone" is in quotes because the actual name is compiler generated. You can't create a method named `Clone` in a record type. The synthesized "clone" method returns the type of record being copied using virtual dispatch. The compiler adds different modifiers for the "clone" method depending on the access modifiers on the `record`:
 
 - If the record type is `abstract`, the "clone" method is also `abstract`. If the base type isn't `object`, the method is also `override`.
 - For record types that aren't `abstract` when the base type is `object`:
@@ -92,17 +94,23 @@ The compiler produces a `Deconstruct` method for positional records. The `Decons
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="DeconstructRecord":::
 
-Finally, records support ***with-expressions***. A ***with-expression*** instructs the compiler to create a copy of a record, but *with* specified properties modified:
+Finally, records support [`with` expressions](../language-reference/operators/with-expression.md). A ***`with` expression*** instructs the compiler to create a copy of a record, but *with* specified properties modified:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="Wither":::
 
-The above line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is "Paul". You can set any number of properties in a with-expression.  Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method. The earlier `Dog` record example contains a hand coded <xref:System.String.ToString> method as an example.
+The previous line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is `"Paul"`. You can set any number of properties in a `with` expression. You can also use `with` expressions to create an exact copy. You specify the empty set for the properties to modify:
+
+:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="WithCopy":::
+
+Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method. The earlier `Dog` record example contains a hand coded <xref:System.String.ToString> method as an example.
+
+Learn more about record types in this [exploration of records](../tutorials/exploration/records.md) tutorial.
 
 ## Init only setters
 
 ***Init only setters*** provide consistent syntax to initialize members of an object. Property initializers make it clear which value is setting which property. The downside is that those properties must be settable. Starting with C# 9.0, you can create `init` accessors instead of `set` accessors for properties and indexers. Callers can use property initializer syntax to set these values in creation expressions, but those properties are readonly once construction has completed. Init only setters provide a window to change state. That window closes when the construction phase ends. The construction phase effectively ends after all initialization, including property initializers and with-expressions have completed.
 
-The preceding example for positional records demonstrates using an init-only setter to set a property using a with expression. You can declare init only setters in any type you write. For example, the following struct defines a weather observation structure:
+You can declare `init` only setters in any type you write. For example, the following struct defines a weather observation structure:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/WeatherObservation.cs" ID="DeclareWeatherObservation":::
 
@@ -150,7 +158,7 @@ System.Console.WriteLine("Hello World!");
 
 Only one file in your application may use top-level statements. If the compiler finds top-level statements in multiple source files, it’s an error. It’s also an error if you combine top-level statements with a declared program entry point method, typically a `Main` method. In a sense, you can think that one file contains the statements that would normally be in the `Main` method of a `Program` class.  
 
-One of the most common uses for this feature is creating teaching materials. Beginner C# developers can write the canonical “Hello World!” in one or two lines of code. None of the extra ceremony is needed. However, seasoned developers will find many uses for this feature as well. Top-level statements enable a script-like experience for experimentation similar to what Jupyter notebooks provide. Top-level statements are great for small console programs and utilities. Azure functions are an ideal use case for top-level statements.
+One of the most common uses for this feature is creating teaching materials. Beginner C# developers can write the canonical “Hello World!” in one or two lines of code. None of the extra ceremony is needed. However, seasoned developers will find many uses for this feature as well. Top-level statements enable a script-like experience for experimentation similar to what Jupyter notebooks provide. Top-level statements are great for small console programs and utilities. Azure Functions are an ideal use case for top-level statements.
 
 Most importantly, top-level statements don't limit your application’s scope or complexity. Those statements can access or use any .NET class. They also don’t limit your use of command-line arguments or return values. Top-level statements can access an array of strings named args. If the top-level statements return an integer value, that value becomes the integer return code from a synthesized `Main` method. The top-level statements may contain async expressions. In that case, the synthesized entry point returns a `Task`, or `Task<int>`.
 
@@ -220,23 +228,23 @@ A similar feature improves the target type resolution of [conditional expression
 
 Starting in C# 9.0, you can add the `static` modifier to [lambda expressions](../language-reference/operators/lambda-expressions.md) or [anonymous methods](../language-reference/operators/delegate-operator.md). Static lambda expressions are analogous to the `static` local functions: a static lambda or anonymous method can't capture local variables or instance state. The `static` modifier prevents accidentally capturing other variables.
 
-Covariant return types provide flexibility for the return types of overridden functions. An overridden virtual function can return a type derived from the return type declared in the base class method. This can be useful for Records, and for other types that support virtual clone or factory methods.
+Covariant return types provide flexibility for the return types of [override](../language-reference/keywords/override.md) methods. An override method can return a type derived from the return type of the overridden base method. This can be useful for records and for other types that support virtual clone or factory methods.
 
 In addition, the [`foreach` loop](../language-reference/keywords/foreach-in.md) will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
 
 Next, you can use discards as parameters to lambda expressions. This convenience enables you to avoid naming the argument, and the compiler may avoid using it. You use the `_` for any argument. For more information, see the [Input parameters of a lambda expression](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../language-reference/operators/lambda-expressions.md) article.
 
-Finally, you can now apply attributes to local functions. For example, you can apply nullable attribute annotations to local functions.
+Finally, you can now apply attributes to [local functions](../programming-guide/classes-and-structs/local-functions.md). For example, you can apply [nullable attribute annotations](../language-reference/attributes/nullable-analysis.md) to local functions.
 
 ## Support for code generators
 
 Two final features support C# code generators. C# code generators are a component you can write that is similar to a roslyn analyzer or code fix. The difference is that code generators analyze code and write new source code files as part of the compilation process. A typical code generator searches code for attributes or other conventions.
 
-A code generator read attributes or other code elements using the Roslyn analysis APIs. From that information, it adds new code to the compilation. Source generators can only add code; they aren't allowed to modify any existing code in the compilation.
+A code generator reads attributes or other code elements using the Roslyn analysis APIs. From that information, it adds new code to the compilation. Source generators can only add code; they aren't allowed to modify any existing code in the compilation.
 
 The two features added for code generators are extensions to ***partial method syntax***, and ***module initializers***. First, the changes to partial methods. Before C# 9.0, partial methods are `private` but can't specify an access modifier, have a `void` return, and can't have `out` parameters. These restrictions meant that if no method implementation is provided, the compiler removes all calls to the partial method. C# 9.0 removes these restrictions, but requires that partial method declarations have an implementation. Code generators can provide that implementation. To avoid introducing a breaking change, the compiler considers any partial method without an access modifier to follow the old rules. If the partial method includes the `private` access modifier, the new rules govern that partial method.
 
-The second new feature for code generators is ***module initializers***. Module initializers are methods that have the <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> attribute attached to them. These methods will be called by the runtime when the assembly loads. A module initializer method:
+The second new feature for code generators is ***module initializers***. Module initializers are methods that have the <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> attribute attached to them. These methods will be called by the runtime before any other field access or method invocation within the entire module. A module initializer method:
 
 - Must be static
 - Must be parameterless

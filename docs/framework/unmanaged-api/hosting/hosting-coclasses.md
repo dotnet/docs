@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: e32d8667-58ee-4760-814f-d22963881622
 ---
 # Hosting Coclasses
+
 This section describes the unmanaged API coclasses that the hosting API uses.  
   
 ## In This Section  
+
  [CLRRuntimeHost Coclass](clrruntimehost-coclass.md)  
  Provides interfaces for managing code execution by the runtime.  
   
@@ -24,6 +26,7 @@ This section describes the unmanaged API coclasses that the hosting API uses.
  Provides an interface for managing the deconstruction of a type name.  
   
 ## Related Sections  
+
  [Hosting Interfaces](hosting-interfaces.md)  
   
  [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)  

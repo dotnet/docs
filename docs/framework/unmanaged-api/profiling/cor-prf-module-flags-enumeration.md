@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_PRF_MODULE_FLAGS Enumeration
+
 Specifies the properties of a module.  
   
 ## Syntax  
@@ -46,9 +47,11 @@ typedef enum
 |COR_PRF_MODULE_WINDOWS_RUNTIME|The Windows Runtime content type flag is set in the metadata for this module's assembly. This is the case for all Windows Metadata (.winmd) modules.|  
   
 ## Remarks  
+
  Bits from COR_PRF_MODULE_FLAGS are returned to the profiler in the `pdwModuleFlags` output parameter of the [ICorProfilerInfo3::GetModuleInfo2](icorprofilerinfo3-getmoduleinfo2-method.md) method. Some combinations of two or more flags are possible, but not all combinations are possible.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

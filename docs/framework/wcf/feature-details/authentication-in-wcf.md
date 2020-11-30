@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 9254d873-843d-4c6e-bea4-8184ac3e44f4
 ---
 # Authentication in WCF
+
 The following topics show a number of different mechanisms in Windows Communication Foundation (WCF) that provide authentication, for example, Windows authentication, X.509 certificates, and user name and passwords.  
   
 ## In This Section  
+
  [How to: Use the ASP.NET Membership Provider](how-to-use-the-aspnet-membership-provider.md)  
  ASP.NET features include a membership and role provider, a database to store user name/password pairs for authentication, and user roles for authorization. This topic explains how WCF services can use the same database to authenticate and authorize users.  
   
@@ -27,9 +29,11 @@ The following topics show a number of different mechanisms in Windows Communicat
  Focuses on common problems encountered when using Windows authentication.  
   
 ## Reference  
+
  <xref:System.ServiceModel>  
   
 ## Related Sections  
+
  [Common Security Scenarios](common-security-scenarios.md)  
   
 ## See also

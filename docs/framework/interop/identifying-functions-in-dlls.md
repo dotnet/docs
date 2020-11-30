@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 3e3f6780-6d90-4413-bad7-ba641220364d
 ---
 # Identifying Functions in DLLs
+
 The identity of a DLL function consists of the following elements:  
   
 - Function name or ordinal  

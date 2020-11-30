@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # AssemblyFlags Enumeration
+
 Contains values that describe run-time features of an assembly.  
   
 ## Syntax  
@@ -41,9 +42,11 @@ typedef enum {
 |`afNonSideBySideMachine`|Specifies that the assembly cannot execute with other versions if they are running on the same computer.|  
   
 ## Remarks  
+
  The values between 0x0010 and 0x0070, inclusive, are used to describe side-by-side compatibility features of the referenced assembly. If none of these values are set, the assembly is assumed to be side-by-side compatible.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MsCorEE.h  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 24ae0d35-f3a3-419b-afd6-686e22aae27b
 ---
 # PeerSecuritySettings
+
 PeerSecuritySettings  
   
 ## Syntax  
@@ -17,12 +18,15 @@ class PeerSecuritySettings
 ```  
   
 ## Methods  
+
  The PeerSecuritySettings class does not define any methods.  
   
 ## Properties  
+
  The PeerSecuritySettings class has the following properties:  
   
 ### Mode  
+
  Data type: string  
   
  Access type: Read-only  
@@ -30,6 +34,7 @@ class PeerSecuritySettings
  Whether message-level and transport-level security are used by an endpoint configured with the binding.  
   
 ### Transport  
+
  Data type: PeerTransportSecuritySettings  
   
  Access type: Read-only  

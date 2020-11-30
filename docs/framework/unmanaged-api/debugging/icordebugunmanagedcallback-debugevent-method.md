@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugUnmanagedCallback::DebugEvent Method
+
 Notifies the debugger that a native event has been fired.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT DebugEvent (
 ```  
   
 ## Parameters  
+
  `pDebugEvent`  
  [in] A pointer to the native event.  
   
@@ -36,6 +38,7 @@ HRESULT DebugEvent (
  [in] `true`, if interaction with the managed process state is impossible after an unmanaged event occurs, until the debugger calls [ICorDebugController::Continue](icordebugcontroller-continue-method.md); otherwise, `false`.  
   
 ## Remarks  
+
  If the thread being debugged is a Win32 thread, do not use any members of the Win32 debugging interface. You can call `ICorDebugController::Continue` only on a Win32 thread and only when continuing past an out-of-band event.  
   
  The `DebugEvent` callback does not follow the standard rules for callbacks. When you call `DebugEvent`, the process will be in the raw, OS-debug stopped state. The process will not be synchronized. It will automatically enter the synchronized state when necessary to satisfy requests for information about managed code, which may result in other nested `DebugEvent` callbacks.  
@@ -45,6 +48,7 @@ HRESULT DebugEvent (
  In the .NET Framework version 2.0, the debugger should immediately continue past an out-of-band breakpoint event. The debugger should be using the [ICorDebugProcess2::SetUnmanagedBreakpoint](icordebugprocess2-setunmanagedbreakpoint-method.md) and [ICorDebugProcess2::ClearUnmanagedBreakpoint](icordebugprocess2-clearunmanagedbreakpoint-method.md) methods to add and remove breakpoints. These methods will skip over any out-of-band breakpoints automatically. Thus, the only out-of-band breakpoints that get dispatched should be raw breakpoints that are already in the instruction stream, such as a call to the Win32 `DebugBreak` function. Do not try to use `ICorDebugProcess::ClearCurrentException`, [ICorDebugProcess::GetThreadContext](icordebugprocess-getthreadcontext-method.md), [ICorDebugProcess::SetThreadContext](icordebugprocess-setthreadcontext-method.md), or any other member of the [debugging API](index.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

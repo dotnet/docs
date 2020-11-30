@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::AppDomainShutdownFinished Method
+
 Notifies the profiler that an application domain has been unloaded from a process.  
   
 ## Syntax  
@@ -38,11 +39,13 @@ HRESULT AppDomainShutdownFinished(
   \[in] An HRESULT that indicates whether the application domain was unloaded successfully.
 
 ## Remarks  
+
  The value of `appDomainId` is not valid for an information request after the [ICorProfilerCallback::AppDomainShutdownStarted](icorprofilercallback-appdomainshutdownstarted-method.md) method returns.  
   
  Some parts of unloading the application domain might continue after the `AppDomainCreationFinished` callback. A failure HRESULT in `hrStatus` indicates a failure. However, a success HRESULT in `hrStatus` indicates only that the first part of unloading the application domain has succeeded.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

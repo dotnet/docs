@@ -14,6 +14,7 @@ This article discusses criteria for choosing among the message encoders that are
  When connecting to a pre-existing client or server, you may not have a choice about using a particular message encoding since you need to encode your messages in a way that the other side is expecting. However, if you are writing a WCF service, you can expose your service through multiple endpoints, each using a different message encoding. This allows clients to choose the best encoding for talking to your service over the endpoint that is best for them, as well as giving your clients the flexibility to choose the encoding that is best for them. Using multiple endpoints also allows you to combine the advantages of different message encodings with other binding elements.  
   
 ## System-Provided Encoders  
+
  WCF includes three message encoders, which are represented by the following three classes:  
   
 - <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>, the text message encoder, supports both plain XML encoding and SOAP encoding. The plain XML encoding mode of the text message encoder is called "plain old XML" (POX) to distinguish it from text-based SOAP encoding. To enable POX, set the <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement.MessageVersion%2A> property to <xref:System.ServiceModel.Channels.MessageVersion.None%2A>. Use the text message encoder to interoperate with non-WCF endpoints.  
@@ -23,6 +24,7 @@ This article discusses criteria for choosing among the message encoders that are
 - <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>, the binding element, specifies the character encoding and message versioning for messages using MTOM encoding. MTOM is an efficient technology for transmitting binary data in WCF messages. The MTOM encoder attempts to create a balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text. In terms of efficiency, among the encoders WCF provides, MTOM is in-between text (the slowest) and binary (the fastest).  
   
 ## How to Choose a Message Encoder  
+
  The following table describes common factors used to choose a message encoder. Prioritize the factors that are important for your application, and then choose the message encoders that work best with these factors. Be sure to consider any additional factors not listed in this table and any custom message encoders that may be required in your application.  
   
 |Factor|Description|Encoders that support this factor|  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedConstant::GetValue Method
+
 Gets the value of the constant.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetValue(
 ```  
   
 ## Parameters  
+
  `pValue`  
  [out] A pointer to a variable that receives the value.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

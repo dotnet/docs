@@ -1,13 +1,12 @@
 ---
 title: "How to: Restore time zones from an embedded resource"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "time zones [.NET Framework], deserializing"
-  - "time zones [.NET Framework], restoring"
+  - "time zones [.NET], deserializing"
+  - "time zones [.NET], restoring"
 ms.assetid: 6b7b4de9-da07-47e3-8f4c-823f81798ee7
 ---
 # How to: Restore time zones from an embedded resource

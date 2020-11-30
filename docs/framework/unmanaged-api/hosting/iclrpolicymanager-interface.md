@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRPolicyManager Interface
+
 Provides methods that allow the host to specify policy actions to be taken in the event of failures and timeouts.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Provides methods that allow the host to specify policy actions to be taken in th
 |[SetUnhandledExceptionPolicy Method](iclrpolicymanager-setunhandledexceptionpolicy-method.md)|Specifies the behavior of the CLR when an unhandled exception occurs.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::ResetEnum Method
+
 Resets the specified enumerator to the specified position.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT ResetEnum (
 ```  
   
 ## Parameters  
+
  `hEnum`  
  [in] The enumerator to reset.  
   
@@ -36,6 +38,7 @@ HRESULT ResetEnum (
  [in] The new position at which to place the enumerator.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -520,7 +520,7 @@ namespace csrefLINQExamples
      */
     //</snippet65>
 
-    //<s n i p p e t66>
+    //<snippet 66>
     class Test2
     {
         Func<int, bool> f;
@@ -545,7 +545,7 @@ namespace csrefLINQExamples
             Console.ReadKey();
         }
     }
-    //</s n i p p e t66>
+    //</snippet 66>
 
     //reserving numbers 67-79 for anonymous methods
 

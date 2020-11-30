@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 51b25c86-292c-43e4-8d13-273d2badc8ad
 ---
 # How to: Configure Workflow Unhandled Exception Behavior with WorkflowServiceHost
+
 The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> is a behavior that enables you to specify the action to take if an unhandled exception occurs within a workflow hosted in <xref:System.ServiceModel.Activities.WorkflowServiceHost>. This topic shows how to configure this behavior in a configuration file.  
   
 ### To configure WorkflowUnhandledExceptionBehavior  

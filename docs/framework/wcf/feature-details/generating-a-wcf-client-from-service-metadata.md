@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 27f8f545-cc44-412a-b104-617e0781b803
 ---
 # Generating a WCF Client from Service Metadata
+
 This topic describes how to use the various switches in Svcutil.exe to generate clients from metadata documents.  
   
  Metadata documents can be on a durable storage or be retrieved online. Online retrieval follows either the WS-MetadataExchange protocol or the Microsoft Discovery (DISCO) protocol. Svcutil.exe issues the following metadata requests simultaneously to retrieve metadata:  

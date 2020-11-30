@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugHeapValue3::GetThreadOwningMonitorLock Method
+
 Returns the managed thread that owns the monitor lock on this object.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetThreadOwningMonitorLock (
 ```  
   
 ## Parameters  
+
  `ppThread`  
  [out] The managed thread that owns the monitor lock on this object.  
   
@@ -36,6 +38,7 @@ HRESULT GetThreadOwningMonitorLock (
  [out] The number of times this thread would have to release the lock before it returns to being unowned.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -46,6 +49,7 @@ HRESULT GetThreadOwningMonitorLock (
 ## Exceptions  
   
 ## Remarks  
+
  If a managed thread owns the monitor lock on this object:  
   
 - The method returns S_OK.  
@@ -59,6 +63,7 @@ HRESULT GetThreadOwningMonitorLock (
  If an error occurs such that it cannot be determined which, if any, thread owns the monitor lock on this object, the method returns an HRESULT that indicates failure.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

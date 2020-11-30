@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 6406f162-a53d-487e-b281-3f232fce15f1
 ---
 # System.ServiceModel.Channels.ChannelCreated
+
 System.ServiceModel.Channels.ChannelCreated  
   
 ## Description  
+
  A channel was created.  
   
 ## See also

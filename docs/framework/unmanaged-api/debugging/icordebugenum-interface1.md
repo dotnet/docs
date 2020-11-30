@@ -29,6 +29,7 @@ Serves as the abstract base interface for the enumerators that are used by a deb
 |[Skip Method](icordebugenum-skip-method.md)|Moves the cursor forward in the enumeration by the specified number of items.|  
   
 ## Remarks  
+
  The following enumerators derive from `ICorDebugEnum`:  
   
 - "ICorDebugAppDomainEnum"  
@@ -77,6 +78,7 @@ Serves as the abstract base interface for the enumerators that are used by a deb
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

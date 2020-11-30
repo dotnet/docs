@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorRuntimeHost Interface
+
 Provides methods that enable the host to start and stop the common language runtime (CLR) explicitly, to create and configure application domains, to access the default domain, and to enumerate all domains running in the process.  
   
  In the .NET Framework version 2.0, this interface is superceded by [ICLRRuntimeHost](iclrruntimehost-interface.md).  
@@ -45,6 +46,7 @@ Provides methods that enable the host to start and stop the common language runt
 |[UnloadDomain Method](icorruntimehost-unloaddomain-method.md)|Unloads the specified application domain from the current process.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

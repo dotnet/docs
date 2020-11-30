@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICeeGen::GetIlSection Method
+
 Gets the section of the intermediate language code base referenced by the specified handle.  
   
  This method is obsolete and should not be used.  
@@ -30,10 +31,12 @@ HRESULT GetIlSection (
 ```  
   
 ## Parameters  
+
  `section`  
  [in] The handle to the section to get.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

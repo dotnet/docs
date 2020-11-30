@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugBoxValue::GetObject Method
+
 Gets the boxed value.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetObject (
 ```  
   
 ## Parameters  
+
  `ppObject`  
  [out] A pointer to the address of an ICorDebugObjectValue object that represents the boxed value.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

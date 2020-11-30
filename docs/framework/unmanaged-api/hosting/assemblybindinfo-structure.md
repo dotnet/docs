@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # AssemblyBindInfo Structure
+
 Provides detailed information about the referenced assembly.  
   
 ## Syntax  
@@ -39,9 +40,11 @@ typedef struct _AssemblyBindInfo {
 |`ePolicyLevel`|One of the [EPolicyAction](epolicyaction-enumeration.md) values that indicate which versioning policies, if any, should be applied to the referenced assembly.|  
   
 ## Remarks  
+
  The host supplies the unique identifier `dwAppDomainId` to the common language runtime (CLR). After a call to `IHostAssemblyStore::ProvideAssembly` returns, the runtime uses the identifier to determine whether the contents of the `IStream` have been mapped. If so, the runtime loads the existing copy rather than remapping the stream. The runtime also uses this identifier as a lookup key for streams returned from calls to [IHostAssemblyStore::ProvideModule](ihostassemblystore-providemodule-method.md). Therefore, the identifier must be unique for module requests and for assembly requests.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  

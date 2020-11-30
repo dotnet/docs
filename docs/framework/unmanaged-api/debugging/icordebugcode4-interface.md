@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugCode4 Interface
+
 Provides a method that enables a debugger to enumerate the local variables and arguments in a function.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Provides a method that enables a debugger to enumerate the local variables and a
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

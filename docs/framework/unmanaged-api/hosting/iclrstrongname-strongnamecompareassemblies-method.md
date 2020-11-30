@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRStrongName::StrongNameCompareAssemblies Method
+
 Determines whether two assemblies differ only by their strong name signatures.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT StrongNameCompareAssemblies (
 ```  
   
 ## Parameters  
+
  `wszAssembly1`  
  [in] The path to the first assembly.  
   
@@ -46,9 +48,11 @@ HRESULT StrongNameCompareAssemblies (
 - `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
   
 ## Return Value  
+
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
@@ -58,6 +62,7 @@ HRESULT StrongNameCompareAssemblies (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## Remarks  
+
  The strong name signature of an assembly consists of the assembly's text name, version, culture, and public key token.  
   
 ## See also

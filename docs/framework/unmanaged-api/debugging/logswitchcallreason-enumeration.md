@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # LogSwitchCallReason Enumeration
+
 Indicates the operation that was performed on a debugging/tracing switch.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ typedef enum LogSwitchCallReason {
 |`SWITCH_DELETE`|A debugging/tracing switch was deleted.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

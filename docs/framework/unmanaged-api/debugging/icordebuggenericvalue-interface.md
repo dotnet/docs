@@ -27,6 +27,7 @@ A subclass of "ICorDebugValue" that applies to all values. This interface provid
 |[SetValue Method](icordebuggenericvalue-setvalue-method.md)|Copies a new value from the specified buffer.|  
   
 ## Remarks  
+
  `ICorDebugGenericValue` is a sub-interface because it is non-remotable.  
   
  For reference types, the value is the reference rather than the contents of the reference.  
@@ -37,6 +38,7 @@ A subclass of "ICorDebugValue" that applies to all values. This interface provid
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

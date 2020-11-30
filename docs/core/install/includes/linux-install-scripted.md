@@ -7,16 +7,16 @@ The script defaults to installing the latest SDK [long term support (LTS)](https
 ./dotnet-install.sh -c Current
 ```
 
-To install .NET Core Runtime instead of the SDK, use the `--runtime` parameter.
+To install .NET Runtime instead of the SDK, use the `--runtime` parameter.
 
 ```bash
 ./dotnet-install.sh -c Current --runtime aspnetcore
 ```
 
-You can install a specific version by altering the `-c` parameter to indicate the specific version. The following command installs .NET Core SDK 3.1.
+You can install a specific version by altering the `-c` parameter to indicate the specific version. The following command installs .NET SDK 5.0.
 
 ```bash
-./dotnet-install.sh -c 3.1
+./dotnet-install.sh -c 5.0
 ```
 
 For more information, see [dotnet-install scripts reference](../../tools/dotnet-install-script.md).

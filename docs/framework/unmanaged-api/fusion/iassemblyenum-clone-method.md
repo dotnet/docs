@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IAssemblyEnum::Clone Method
+
 Creates a shallow copy of this [IAssemblyEnum](iassemblyenum-interface.md) object.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT Clone (
 ```  
   
 ## Parameters  
+
  `ppEnum`  
  [out] A pointer to the copy.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

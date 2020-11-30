@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6e13bf96-5de0-4476-b646-5f150774418d
 ---
 # Custom Binding Imperative
+
 The sample demonstrates how to write imperative code to define and use custom bindings without using a configuration file or a Windows Communication Foundation (WCF) generated client. This sample combines the features provided by the HTTP transport and the reliable session channel to create a reliable HTTP-based binding. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service.  
   
 > [!NOTE]

@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 711ab251-cfdb-4280-aaa6-9bc1b341cdc3
 ---
 # Metadata Enumerations
+
 This section describes the unmanaged enumerations that the metadata API uses.  
   
 ## In This Section  
+
  [AssemblyFlags Enumeration](assemblyflags-enumeration.md)  
  Contains values that describe the run-time features of an assembly.  
   
@@ -150,6 +152,7 @@ This section describes the unmanaged enumerations that the metadata API uses.
  Specifies constants used by [CoUninitializeEE](../hosting/couninitializeee-function.md) when initializing the common language runtime.  
   
 ## Related Sections  
+
  [Metadata Interfaces](metadata-interfaces.md)  
   
  [Metadata Global Static Functions](metadata-global-static-functions.md)  

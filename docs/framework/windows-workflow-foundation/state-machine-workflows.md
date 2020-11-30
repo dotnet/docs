@@ -5,9 +5,11 @@ ms.date: "03/30/2017"
 ms.assetid: 344caacd-bf3b-4716-bd5a-eca74fc5a61d
 ---
 # State Machine Workflows
+
 A state machine is a well-known paradigm for developing programs. The <xref:System.Activities.Statements.StateMachine> activity, along with <xref:System.Activities.Statements.State>, <xref:System.Activities.Statements.Transition>, and other activities can be used to build state machine workflow programs. This topic provides an overview of creating state machine workflows.  
   
 ## State Machine Workflow Overview  
+
  State machine workflows provide a modeling style with which you can model your workflow in an event-driven manner. A <xref:System.Activities.Statements.StateMachine> activity contains the states and transitions that make up the logic of the state machine, and can be used anywhere an activity can be used. There are several classes in the state machine runtime:  
   
 - <xref:System.Activities.Statements.StateMachine>  
@@ -23,6 +25,7 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
  A state machine workflow must have one and only one initial state, and at least one final state. Each state that is not a final state must have at least one transition. The following sections cover creating and configuring states and transitions.  
   
 ## Creating and Configuring States  
+
  A <xref:System.Activities.Statements.State> represents a state in which a state machine can be in. To add a <xref:System.Activities.Statements.State> to a workflow, drag the **State** activity designer from the **State Machine** section of the **Toolbox** and drop it onto a <xref:System.Activities.Statements.StateMachine> activity on the Windows Workflow Designer surface.  
   
  ![Screenshot of the State Machine section of the Toolbox.](./media/state-machine-workflows/state-machine-section-toolbox.jpg)  
@@ -32,12 +35,14 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
  A state that represents a terminating state in a state machine is called a final state. A final state is a state that has its <xref:System.Activities.Statements.State.IsFinal%2A> property set to `true`, has no <xref:System.Activities.Statements.State.Exit%2A> activity, and no transitions originating from it. To add a final state to a workflow, drag a **FinalState** activity designer from the **State Machine** section of the **Toolbox** and drop it onto a <xref:System.Activities.Statements.StateMachine> activity on the Windows Workflow Designer surface. A state machine workflow must have at least one final state.  
   
 ### Configuring Entry and Exit Actions  
+
  A state can have an <xref:System.Activities.Statements.State.Entry%2A> and an <xref:System.Activities.Statements.State.Exit%2A> action. (A state configured as a final state may have only an entry action). When a workflow instance enters a state, any activities in the entry action execute. When the entry action is complete, the triggers for the state's transitions are scheduled. When a transition to another state is confirmed, the activities in the exit action are executed, even if the state transitions back to the same state. After the exit action completes, the activities in the transition's action execute, and then the new state is transitioned to, and its entry actions are scheduled.  
   
 > [!NOTE]
 > When debugging a state machine workflow, breakpoints can be placed on the root state machine activity and states within the state machine workflow. Breakpoints may not be placed directly on the transitions, but they may be placed on any activities contained within the states and transitions.  
   
 ## Creating and Configuring Transitions  
+
  All states must have at least one transition, except for a final state, which may not have any transitions. Transitions may be added after a state is added to a state machine workflow, or they can be created as the state is dropped.  
   
  To add a <xref:System.Activities.Statements.State> and create a transition in one step, drag a **State** activity from the **State Machine** section of the **Toolbox** and hover it over another state in the workflow designer. When the dragged <xref:System.Activities.Statements.State> is over another <xref:System.Activities.Statements.State>, four triangles will appear around the other <xref:System.Activities.Statements.State>. If the <xref:System.Activities.Statements.State> is dropped onto one of the four triangles, it is added to the state machine and a transition is created from the source <xref:System.Activities.Statements.State> to the dropped destination <xref:System.Activities.Statements.State>. For more information, see [Transition Activity Designer](/visualstudio/workflow-designer/transition-activity-designer).  
@@ -57,6 +62,7 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
  For more information on creating state machine workflows, see [How to: Create a State Machine Workflow](how-to-create-a-state-machine-workflow.md), [StateMachine Activity Designer](/visualstudio/workflow-designer/statemachine-activity-designer), [State Activity Designer](/visualstudio/workflow-designer/state-activity-designer), [FinalState Activity Designer](/visualstudio/workflow-designer/finalstate-activity-designer), and [Transition Activity Designer](/visualstudio/workflow-designer/transition-activity-designer).  
   
 ## State Machine Terminology  
+
  This section defines the state machine vocabulary used throughout this topic.  
   
  State  

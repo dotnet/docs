@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILFrame::EnumerateArguments Method
+
 Gets an enumerator for the arguments in this frame.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT EnumerateArguments (
 ```  
   
 ## Parameters  
+
  `ppValueEnum`  
  [out] A pointer to the address of an ICorDebugValueEnum object that is the enumerator for the arguments in this frame.  
   
 ## Remarks  
+
  `EnumerateArguments` gets an enumerator that can list the arguments available in the call frame that is represented by this ICorDebugILFrame object. The list will include arguments that are [vararg](/cpp/windows/vararg) (that is, a variable number of arguments) as well as arguments that are not `vararg`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

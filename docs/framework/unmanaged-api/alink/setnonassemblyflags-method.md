@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # SetNonAssemblyFlags Method
+
 Sets flags that are not assembly-specific.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT SetNonAssemblyFlags(
 ```  
   
 ## Parameters  
+
  `afFlags`  
  ALink flags.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h  
   
 ## See also

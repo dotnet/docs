@@ -1,7 +1,6 @@
 ---
 title: "Performing Culture-Insensitive String Operations in Collections"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,7 +8,7 @@ helpviewer_keywords:
   - "CaseInsensitiveComparer class, using"
   - "CollectionsUtil.CreateCaseInsensitiveHashtable method"
   - "culture-insensitive string operations, collections"
-  - "collections [.NET Framework], culture-insensitive string operations"
+  - "collections [.NET], culture-insensitive string operations"
   - "CaseInsensitiveHashCodeProvider class, using"
   - "ArrayList.Sort method"
   - "SortedList class, culture-insensitive string operations"

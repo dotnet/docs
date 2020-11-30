@@ -14,7 +14,6 @@
     <StartProgram>$(WINDIR)\System32\PresentationHost.exe</StartProgram>
     <ApplicationExtension>.xbap</ApplicationExtension>
     <StartArguments>-debug "$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName)$(ApplicationExtension)"</StartArguments>
-    <SignManifests>True</SignManifests>
     <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
     <HostInBrowser>true</HostInBrowser>
     <InstallFrom>Web</InstallFrom>
@@ -23,8 +22,6 @@
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>Publish\</PublishUrl>
-    <ManifestKeyFile>XBAPAppDefSnippets_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>218E3899C8BC84BA36BA896023C2277808B6B87A</ManifestCertificateThumbprint>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -79,7 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\app.manifest" />
-    <None Include="XBAPAppDefSnippets_TemporaryKey.pfx" />
     <AppDesigner Include="My Project\" />
   </ItemGroup>
   <ItemGroup>

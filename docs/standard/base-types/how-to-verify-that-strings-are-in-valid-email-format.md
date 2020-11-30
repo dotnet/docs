@@ -2,7 +2,6 @@
 title: "How to verify that strings are in valid email format"
 description: Read an example of how a regular expression verifies that strings are in a valid email format in .NET.
 ms.date: "06/30/2020"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,13 +9,13 @@ helpviewer_keywords:
   - "regular expressions, examples"
   - "user input, examples"
   - "Regex.IsMatch method"
-  - "regular expressions [.NET Framework], examples"
+  - "regular expressions [.NET], examples"
   - "examples [Visual Basic], strings"
   - "IsValidEmail"
   - "validation, email strings"
   - "input, checking"
-  - "strings [.NET Framework], examples [Visual Basic]"
-  - "email [.NET Framework], validating"
+  - "strings [.NET], examples [Visual Basic]"
+  - "email [.NET], validating"
   - "IsMatch method"
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
 ---
@@ -51,7 +50,7 @@ To verify that the email address is valid, the `IsValidEmail` method calls the <
 The domain name along with the @ character is passed to the `DomainMapper` method, which uses the <xref:System.Globalization.IdnMapping> class to translate Unicode characters that are outside the US-ASCII character range to Punycode. The method also sets the `invalid` flag to `True` if the <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=nameWithType> method detects any invalid characters in the domain name. The method returns the Punycode domain name preceded by the @ symbol to the `IsValidEmail` method.
 
 > [!TIP]
-> It's recommended that you use use the simple `(@)(.+)$` regular expression pattern to normalize the domain and then return a value indicating that it passed or failed. However, the example in this article describes how to further use a regular expression to validate the email. Regardless of how you validate an email, you should always send a test email to the address to make sure it exists.
+> It's recommended that you use the simple `(@)(.+)$` regular expression pattern to normalize the domain and then return a value indicating that it passed or failed. However, the example in this article describes how to further use a regular expression to validate the email. Regardless of how you validate an email, you should always send a test email to the address to make sure it exists.
 
 The `IsValidEmail` method then calls the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%29?displayProperty=nameWithType> method to verify that the address conforms to a regular expression pattern.
 
@@ -78,5 +77,5 @@ In this example, the regular expression pattern `^[^@\s]+@[^@\s]+\.[^@\s]+$` is 
 
 ## See also
 
-- [.NET Framework Regular Expressions](regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)
 - [How far should one take e-mail address validation?](https://softwareengineering.stackexchange.com/questions/78353/how-far-should-one-take-e-mail-address-validation#78363)

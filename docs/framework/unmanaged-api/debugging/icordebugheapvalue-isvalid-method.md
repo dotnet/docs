@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugHeapValue::IsValid Method
+
 Gets a value that indicates whether the object represented by this ICorDebugHeapValue is valid.  
   
  This method has been deprecated in the .NET Framework version 2.0.  
@@ -30,15 +31,18 @@ HRESULT IsValid (
 ```  
   
 ## Parameters  
+
  `pbValid`  
  [out] A pointer to a Boolean value that indicates whether this value on the heap is valid.  
   
 ## Remarks  
+
  The value is invalid if it has been reclaimed by the garbage collector.  
   
  This method has been deprecated. In the .NET Framework 2.0, all values are valid until [ICorDebugController::Continue](icordebugcontroller-continue-method.md) is called, at which time the values are invalidated.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

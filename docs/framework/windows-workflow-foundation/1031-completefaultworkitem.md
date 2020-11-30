@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 95f4ccb0-6be4-41f3-9330-fae43165828f
 ---
 # 1031 - CompleteFaultWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 95f4ccb0-6be4-41f3-9330-fae43165828f
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a FaultWorkItem has completed.  
   
 ## Message  
+
  A FaultWorkItem has completed for Activity '%1', DisplayName: '%2', InstanceId: '%3'. The exception was propagated from Activity '%4', DisplayName: '%5', InstanceId: '%6'.  
   
 ## Details  

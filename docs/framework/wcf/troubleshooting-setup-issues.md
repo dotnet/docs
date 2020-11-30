@@ -8,6 +8,7 @@ ms.assetid: 1644f885-c408-4d5f-a5c7-a1a907bc8acd
 This article describes how to troubleshoot Windows Communication Foundation (WCF) setup issues.  
   
 ## Some Windows Communication Foundation Registry Keys are not Repaired by Performing an MSI Repair Operation on the .NET Framework 3.0  
+
  If you delete any of the following registry keys:  
   
 - HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ServiceModelService 3.0.0.0  
@@ -59,6 +60,7 @@ This article describes how to troubleshoot Windows Communication Foundation (WCF
  [WorkFlow Service Registration Tool (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) can be found at %windir%\Microsoft.NET\framework\v3.5\ or %windir%\Microsoft.NET\framework64\v3.5\  
   
 ## Configure IIS Properly for WCF/WF Webhost after Installing .NET Framework 3.5  
+
  When .NET Framework 3.5 installation fails to configure additional WCF-related IIS configuration settings, it logs an error in the installation log and continues. Any attempt to run WorkflowServices applications will fail, since the required configuration settings are missing. For example, loading xoml or rules service can fail.  
   
  To workaround this problem, use the [WorkFlow Service Registration Tool (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) with the `/c` switch to properly configure IIS script maps on the machine. [WorkFlow Service Registration Tool (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) can be found at %windir%\Microsoft.NET\framework\v3.5\ or %windir%\Microsoft.NET\framework64\v3.5\  

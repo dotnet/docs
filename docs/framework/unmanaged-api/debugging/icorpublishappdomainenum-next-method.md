@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishAppDomainEnum::Next Method
+
 Gets the specified number of application domains that currently exist in the process, starting at the current position.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT Next (
 ```  
   
 ## Parameters  
+
  `celt`  
  [in] The number of elements to be retrieved.  
   
@@ -41,6 +43,7 @@ HRESULT Next (
  [out] Pointer to the number of application domains actually returned. This value may be null if `celt` is one.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  

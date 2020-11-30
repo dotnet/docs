@@ -15,6 +15,7 @@ topic_type:
   - "apiref"
 ---
 # ResolveTypeLib Method
+
 Resolves the simple name of a type library by returning its fully qualified path.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT ResolveTypeLib(
 ```  
   
 ## Parameters  
+
  `bstrSimpleName`  
  [in] A [BSTR](/previous-versions/windows/desktop/automat/bstr) that contains the simple name of the type library.  
   
@@ -53,11 +55,13 @@ HRESULT ResolveTypeLib(
  [out] A pointer to a [BSTR](/previous-versions/windows/desktop/automat/bstr) that contains the full path of the type library named in the `bstrSimpleName` parameter.  
   
 ## Remarks  
+
  The `ResolveTypeLib` method is called by the [LoadTypeLibWithResolver function](loadtypelibwithresolver-function.md) during [Tlbexp.exe (Type Library Exporter)](../../tools/tlbexp-exe-type-library-exporter.md) processing.  
   
  Custom implementations of this interface must return a [BSTR](/previous-versions/windows/desktop/automat/bstr) that contains the full path of the type library named in the `bstrSimpleName` parameter.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** TlbRef.idl, TlbRef.h  

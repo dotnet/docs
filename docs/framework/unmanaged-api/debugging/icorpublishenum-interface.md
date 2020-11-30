@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishEnum Interface
+
 Serves as the abstract base interface for the enumerators that are used in the publishing of information about processes and application domains.  
   
 ## Methods  
@@ -28,6 +29,7 @@ Serves as the abstract base interface for the enumerators that are used in the p
 |[Skip Method](icorpublishenum-skip-method.md)|Moves the cursor forward in the enumeration by the specified number of items.|  
   
 ## Remarks  
+
  The following enumerators derive from `ICorPublishEnum`:  
   
 - [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md)  
@@ -35,6 +37,7 @@ Serves as the abstract base interface for the enumerators that are used in the p
 - [ICorPublishProcessEnum](icorpublishprocessenum-interface.md)  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  

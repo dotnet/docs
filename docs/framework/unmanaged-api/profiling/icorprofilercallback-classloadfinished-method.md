@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ClassLoadFinished Method
+
 Notifies the profiler that a class has finished loading.  
   
 ## Syntax  
@@ -38,11 +39,13 @@ HRESULT ClassLoadFinished(
   \[in] An HRESULT that indicates whether the class loaded successfully.
 
 ## Remarks  
+
  The value of `classId` is not valid for an information request until the `ClassLoadFinished` method is called.  
   
  Some parts of loading the class might continue after the `ClassLoadFinished` callback. A failure HRESULT in `hrStatus` indicates a failure. However, a success HRESULT in `hrStatus` indicates only that the first part of loading the class has succeeded.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

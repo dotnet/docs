@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0283955a-b4ae-458d-ad9e-6fbb6f529e3d
 ---
 # How to: Create a Service That Returns Arbitrary Data Using The WCF Web HTTP Programming Model
+
 Sometimes developers must have full control of how data is returned from a service operation. This is the case when a service operation must return data in a format not supported by WCF. This topic discusses using the WCF WEB HTTP Programming Model to create such a service. This service has one operation that returns a stream.  
   
 ### To implement the service contract  
@@ -102,6 +103,7 @@ Sometimes developers must have full control of how data is returned from a servi
 2. Open Internet Explorer and type in `http://localhost:8000/Service/GetImage?width=50&height=40` you should see a yellow rectangle with a blue diagonal line through the center.  
   
 ## Example  
+
  The following is a complete listing of the code for this topic.  
   
 ```csharp  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugInterfaceVersion Enumeration
+
 Specifies an interface, a version of the .NET Framework, or a version of the .NET Framework in which an interface was introduced.  
   
 ## Syntax  
@@ -125,6 +126,7 @@ typedef enum CorDebugInterfaceVersion {
 ```  
   
 ## Members  
+
  The following table provides links from each enumeration value to the corresponding interface. In addition, the table indicates the first version of the .NET Framework that the interface was supported in.  
   
 |Member|Specifies|.NET Framework version|  
@@ -214,9 +216,11 @@ typedef enum CorDebugInterfaceVersion {
 |`CorDebugLatestVersion`|The version of the .NET Framework, including all of its service packs, is the latest version.|-|  
   
 ## Remarks  
+
  A debugger can use the `CorDebugInterfaceVersion` enumeration in the [CreateDebuggingInterfaceFromVersion](../hosting/createdebugginginterfacefromversion-function.md) function to specify the highest version of the .NET Framework that the debugger supports.  
   
 ## Interface Names  
+
  The number that appears at the end of the interface names in the debugging API (for example, the "3" in `ICorDebugThread3`) specifies the version of the interface, not the version of the .NET Framework. All interface names in the debugging API include version numbers except for interfaces that were introduced in the .NET Framework version 1. Any correspondence between interface version numbers and.NET Framework version numbers are coincidental.  
   
 - Interfaces that were introduced in the .NET Framework version 1.0 do not include numbers, because they are all implicitly version 1.  
@@ -230,6 +234,7 @@ typedef enum CorDebugInterfaceVersion {
 - The .NET Framework 4 introduces a mix of interface versions. For example, both `ICorDebugThread3` and `ICorDebugThread4` appear as the third and fourth versions of the `ICorDebugThread` interface. The .NET Framework 4 also introduces the first version of the `ICorDebugStackWalk` interface and the second version of the `ICorDebugNativeFrame` interface (`ICorDebugNativeFrame2`).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

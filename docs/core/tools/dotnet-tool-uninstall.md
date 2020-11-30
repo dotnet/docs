@@ -1,6 +1,6 @@
 ---
 title: dotnet tool uninstall command
-description: The dotnet tool uninstall command uninstalls the specified .NET Core tool from your machine.
+description: The dotnet tool uninstall command uninstalls the specified .NET tool from your machine.
 ms.date: 02/14/2020
 ---
 # dotnet tool uninstall
@@ -9,7 +9,7 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet tool uninstall` - Uninstalls the specified [.NET Core tool](global-tools.md) from your machine.
+`dotnet tool uninstall` - Uninstalls the specified [.NET tool](global-tools.md) from your machine.
 
 ## Synopsis
 
@@ -25,7 +25,7 @@ dotnet tool uninstall -h|--help
 
 ## Description
 
-The `dotnet tool uninstall` command provides a way for you to uninstall .NET Core tools from your machine. To use the command, you specify one of the following options:
+The `dotnet tool uninstall` command provides a way for you to uninstall .NET tools from your machine. To use the command, you specify one of the following options:
 
 * To uninstall a global tool that was installed in the default location, use the `--global` option.
 * To uninstall a global tool that was installed in a custom location,  use the `--tool-path` option.
@@ -37,7 +37,7 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET Cor
 
 - **`PACKAGE_NAME`**
 
-  Name/ID of the NuGet package that contains the .NET Core tool to uninstall. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
+  Name/ID of the NuGet package that contains the .NET tool to uninstall. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
 
@@ -73,6 +73,6 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET Cor
 
 ## See also
 
-- [.NET Core tools](global-tools.md)
-- [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
-- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)
+- [.NET tools](global-tools.md)
+- [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)

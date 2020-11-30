@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
 ---
 # .NET Native Reflection API Reference
+
 .NET Native includes three new exception types: [System.Runtime.CompilerServices.MissingInteropDataException](missinginteropdataexception-class-net-native.md), [System.Reflection.MissingMetadataException](missingmetadataexception-class-net-native.md), and [System.Reflection.MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md). Note the following about all three exception types:  
   
  These types are for internal use only.  
@@ -20,6 +21,7 @@ ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
 > This reference documents three exception types that are unique to .NET Native. For reference documentation for the .NET Framework core reflection API, see the <xref:System.Reflection>, <xref:System.Reflection.Context> and <xref:System.Reflection.Emit> namespaces. For reference documentation for the .NET Framework core interop API, see <xref:System.Runtime.InteropServices>.  
   
 ## System.Reflection namespace  
+
  The <xref:System.Reflection> namespace contains the core types used for reflection in the .NET Framework. For .NET Native, it also includes two new exception types:  
   
 |Class|Description|  
@@ -30,6 +32,7 @@ ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
  For documentation about the other types in this namespace, see the <xref:System.Reflection> reference pages in the .NET Framework documentation set.  
   
 ## System.Runtime.CompilerServices namespace  
+
  The <xref:System.Runtime.CompilerServices> namespace includes types designed for user by language compilers. For .NET Native, it also includes a new exception type:  
   
 |Class|Description|  

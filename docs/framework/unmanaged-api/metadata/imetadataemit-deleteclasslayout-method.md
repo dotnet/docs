@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DeleteClassLayout Method
+
 Destroys the class layout metadata signature for the type represented by the specified token.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT DeleteClassLayout (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] An `mdTypeDef` metadata token that represents the type for which the class layout will be deleted.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

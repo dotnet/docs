@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # LoadStringRC Function
+
 Translates an HRESULT value into an error message by using the default culture of the current thread.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -32,6 +33,7 @@ HRESULT LoadStringRC (
 ```  
   
 ## Parameters  
+
  `iResourceID`  
  [in] An HRESULT.  
   
@@ -45,6 +47,7 @@ HRESULT LoadStringRC (
  [in] Ignored.  
   
 ## Return Value  
+
  This method returns standard Component Object Model (COM) error codes, as defined in WinError.h, in addition to the following values.  
   
 |Return code|Description|  
@@ -53,9 +56,11 @@ HRESULT LoadStringRC (
 |E_INVALIDARG|`szBuffer` is null or `iMax` is zero (0).|  
   
 ## Remarks  
+
  If the method does not complete successfully, `szBuffer` contains an empty string.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

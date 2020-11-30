@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c201309c-c528-4b92-a53c-4d48151c5749
 ---
 # NamedPipeTransportBindingElement
+
 NamedPipeTransportBindingElement  
   
 ## Syntax  
@@ -16,12 +17,15 @@ class NamedPipeTransportBindingElement : ConnectionOrientedTransportBindingEleme
 ```  
   
 ## Methods  
+
  The NamedPipeTransportBindingElement class does not define any methods.  
   
 ## Properties  
+
  The NamedPipeTransportBindingElement class has the following property:  
   
 ### ConnectionPoolSettings  
+
  Data type: NamedPipeConnectionPoolSettings  
   
  Access type: Read-only  

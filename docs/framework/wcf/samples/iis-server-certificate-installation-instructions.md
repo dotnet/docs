@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 11281490-d2ac-4324-8f33-e7714611a34b
 ---
 # Internet Information Services (IIS) Server Certificate Installation Instructions
+
 To run the samples that securely communicate with Internet Information Services (IIS), you must create and install a server certificate.  
   
 ## Step 1. Creating Certificates  
+
  To create a certificate for your computer, open a Developer Command Prompt for Visual Studio with administrator privileges and run the Setup.bat that is included in each of the samples that use secure communication with IIS. Ensure that the path includes the folder that contains Makecert.exe before you run this batch file. The following command is used to create the certificate in Setup.bat.  
   
 ```console  
@@ -14,6 +16,7 @@ makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exc
 ```  
   
 ## Step 2. Installing Certificates  
+
  The steps required to install the certificates you just created depend on which version of IIS you are using.  
   
 #### To install IIS on IIS 5.1 (Windows XP) and IIS 6.0 (Windows Server 2003)  

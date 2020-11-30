@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineMethodImpl Method
+
 Creates a definition for implementation of a method inherited from an interface, and returns a token to that method-implementation definition.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT DefineMethodImpl (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] The `mdTypedef` token of the implementing class.  
   
@@ -40,6 +42,7 @@ HRESULT DefineMethodImpl (
  [in] The `mdMethodDef` or `mdMemberRef` token of the interface method being implemented.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

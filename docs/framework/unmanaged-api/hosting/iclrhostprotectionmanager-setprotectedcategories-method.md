@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRHostProtectionManager::SetProtectedCategories Method
+
 Specifies which categories of managed types and members should be blocked from running in partially trusted code.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetProtectedCategories (
 ```  
   
 ## Parameters  
+
  `categories`  
  [in] A combination of [EApiCategories](eapicategories-enumeration.md) values, indicating which categories of managed types and members should be blocked from running in partially trusted code.  
   
@@ -43,9 +45,11 @@ HRESULT SetProtectedCategories (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  Each `EApiCategories` value refers to a list of managed types and members. The `EApiCategories` enumeration and the `SetProtectedCategories` method are directly related to the managed <xref:System.Security.Permissions.HostProtectionAttribute> class, which is used to mark managed types and members that expose capabilities corresponding to the categories described by `EApiCategories`. For more information, see <xref:System.Security.Permissions.HostProtectionAttribute> and the <xref:System.Security.Permissions.HostProtectionResource> enumeration, which directly corresponds to `EApiCategories`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

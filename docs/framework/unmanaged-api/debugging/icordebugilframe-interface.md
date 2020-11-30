@@ -34,12 +34,14 @@ Represents a stack frame of Microsoft intermediate language (MSIL) code. This in
 |[SetIP Method](icordebugilframe-setip-method.md)|Sets the instruction pointer to the specified offset location in the MSIL code.|  
   
 ## Remarks  
+
  The `ICorDebugILFrame` interface is a specialized ICorDebugFrame interface. It is used either for MSIL code frames or for just-in-time (JIT) compiled frames. The JIT-compiled frames implement both the `ICorDebugILFrame` interface and the ICorDebugNativeFrame interface.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

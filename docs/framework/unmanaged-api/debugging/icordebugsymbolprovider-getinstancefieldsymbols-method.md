@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a29b9233-ee67-4b53-b8bc-c00b281e7edb
 ---
 # ICorDebugSymbolProvider::GetInstanceFieldSymbols Method
+
 Gets the instance field symbols that correspond to a typespec signature.  
   
 ## Syntax  
@@ -19,6 +20,7 @@ HRESULT GetInstanceFieldSymbols(
 ```  
   
 ## Parameters  
+
  `cbSignature`  
  [in] The number of bytes in the `typeSig` array.  
   
@@ -40,6 +42,7 @@ HRESULT GetInstanceFieldSymbols(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

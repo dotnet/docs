@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback::LoadAssembly Method
+
 Notifies the debugger that a common language runtime (CLR) assembly has been successfully loaded.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT LoadAssembly (
 ```  
   
 ## Parameters  
+
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain into which the assembly has been loaded.  
   
@@ -36,6 +38,7 @@ HRESULT LoadAssembly (
  [in] A pointer to an ICorDebugAssembly object that represents the assembly.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

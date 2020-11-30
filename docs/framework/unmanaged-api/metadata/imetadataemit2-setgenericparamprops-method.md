@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit2::SetGenericParamProps Method
+
 Sets property values for the generic parameter definition referenced by the specified token.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT SetGenericParamProps (
 ```  
   
 ## Parameters  
+
  `gp`  
  [in] The token for the generic parameter definition for which to set values.  
   
@@ -48,6 +50,7 @@ HRESULT SetGenericParamProps (
  [in] Optional. A zero-terminated array of type constraints. Array members must be an `mdTypeDef`, `mdTypeRef`, or `mdTypeSpec` metadata token.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

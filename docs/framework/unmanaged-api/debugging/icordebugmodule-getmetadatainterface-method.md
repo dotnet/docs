@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugModule::GetMetaDataInterface Method
+
 Gets a metadata interface object that can be used to examine the metadata for the module.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetMetaDataInterface (
 ```  
   
 ## Parameters  
+
  `riid`  
  [in] The reference ID that specifies the metadata interface.  
   
@@ -36,9 +38,11 @@ HRESULT GetMetaDataInterface (
  [out] A pointer to the address of an `T:IUnknown` object that is one of the [metadata interfaces](../metadata/metadata-interfaces.md).  
   
 ## Remarks  
+
  The debugger can use the `GetMetaDataInterface` method to make a copy of the original metadata for a module, which it must do in order to edit that module. The debugger calls `GetMetaDataInterface` to get an [IMetaDataEmit](../metadata/imetadataemit-interface.md) interface object for the module, then calls [IMetaDataEmit::SaveToMemory](../metadata/imetadataemit-savetomemory-method.md) to save a copy of the module's metadata to memory.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

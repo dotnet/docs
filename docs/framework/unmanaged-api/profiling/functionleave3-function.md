@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # FunctionLeave3 Function
+
 Notifies the profiler that control is being returned from a function.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);
   \[in] The identifier of the function from which control is returned.
   
 ## Remarks  
+
  The `FunctionLeave3` callback function notifies the profiler as functions are being called, but does not support return value inspection. Use the [ICorProfilerInfo3::SetEnterLeaveFunctionHooks3 method](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) to register your implementation of this function.  
   
  The `FunctionLeave3` function is a callback; you must implement it. The implementation must use the `__declspec(naked)` storage-class attribute.  
@@ -46,6 +48,7 @@ void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);
  The `FunctionLeave3` function must not call into managed code or cause a managed memory allocation in any way.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

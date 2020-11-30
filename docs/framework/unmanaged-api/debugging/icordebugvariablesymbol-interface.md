@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0e58b85e-69bd-41ff-bedb-8cdc8be6a7a2
 ---
 # ICorDebugVariableSymbol Interface
+
 Retrieves the debug symbol information for a variable.  
   
 ## Methods  
@@ -22,6 +23,7 @@ Retrieves the debug symbol information for a variable.
 > This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

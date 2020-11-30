@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: a015a040-9fdf-4147-9ea9-f83b570be1d4
 ---
 # Extending Security
+
 To accommodate new claim types and custom tokens, you can extend the security infrastructure of Windows Communication Foundation (WCF). The topics in this section show you how this is done.  
   
 ## In This Section  
@@ -32,6 +33,7 @@ To accommodate new claim types and custom tokens, you can extend the security in
  Explains how to change the cryptographic provider used to provide an X.509 certificate's private key and how to integrate the provider into the Windows Communication Foundation (WCF) framework.  
   
 ## Reference  
+
  <xref:System.ServiceModel.ServiceAuthorizationManager>  
   
  <xref:System.ServiceModel.Security>  
@@ -45,6 +47,7 @@ To accommodate new claim types and custom tokens, you can extend the security in
  <xref:System.IdentityModel.Selectors>  
   
 ## Related Sections  
+
  [Security](../feature-details/security.md)  
   
  [Basic WCF Programming](../basic-wcf-programming.md)  

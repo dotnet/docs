@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a2a30b37-d6e2-4552-820e-e60b2bbe8829
 ---
 # Data Binding in a Windows Forms Client
+
 This sample demonstrates how to bind to data returned by a Windows Communication Foundation (WCF) service in a Windows Forms application.  
   
 > [!NOTE]

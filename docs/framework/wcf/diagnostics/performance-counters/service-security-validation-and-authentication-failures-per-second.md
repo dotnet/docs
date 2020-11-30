@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 4af18009-e778-490b-9ba6-e76485285830
 ---
 # Service: Security Validation and Authentication Failures Per Second
+
 Counter name: Security Validation and Authentication Failures Per Second.  
   
 ## Description  
+
  This counter is incremented whenever a message is rejected due to a security problem not covered by the "Security Calls Not Authorized" counter. Such problems include:  
   
 - Client token cannot be read from the message.  

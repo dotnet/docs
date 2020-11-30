@@ -2,14 +2,13 @@
 title: "Regular Expression Options"
 description: Learn how to use regular expression options in .NET, such as case-insensitive matching, multiline mode, and right-to-left mode.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
   - "regular expressions, options"
   - "constructs, options"
-  - ".NET Framework regular expressions, options"
+  - ".NET regular expressions, options"
   - "inline option constructs"
   - "options parameter"
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9

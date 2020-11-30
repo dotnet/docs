@@ -18,11 +18,8 @@
     <StartProgram>$(WINDIR)\System32\PresentationHost.exe</StartProgram>
     <ApplicationExtension>.xbap</ApplicationExtension>
     <StartArguments>-debug "$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName)$(ApplicationExtension)"</StartArguments>
-    <SignManifests>True</SignManifests>
     <BootstrapperEnabled>false</BootstrapperEnabled>
     <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
-    <ManifestKeyFile>BrowserInteropHelperSnippet_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>D37CBB2A54E21D802EED5C4025B68C8AE9BEA541</ManifestCertificateThumbprint>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -90,7 +87,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BrowserInteropHelperSnippet_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <AppDesigner Include="My Project\" />
   </ItemGroup>

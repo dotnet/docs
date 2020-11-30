@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 4afd40c3-68f2-41c5-8ec1-4951bc148b9c
 ---
 # How to: Generate Interop Assemblies from Type Libraries
+
 The [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md) is a command-line tool that converts the coclasses and interfaces contained in a COM type library to metadata. This tool creates an interop assembly and namespace for the type information automatically. After the metadata of a class is available, managed clients can create instances of the COM type and call its methods, just as if it were a .NET instance. Tlbimp.exe converts an entire type library to metadata at once and cannot generate type information for a subset of the types defined in a type library.  
   
 ### To generate an interop assembly from a type library  
@@ -22,6 +23,7 @@ The [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-import
      Adding the **/out:** switch produces an interop assembly with an altered name, such as LOANLib.dll. Altering the interop assembly name can help distinguish it from the original COM DLL and prevent problems that can occur from having duplicate names.  
   
 ## Example  
+
  The following command produces the Loanlib.dll assembly in the `Loanlib` namespace.  
   
 ```console  

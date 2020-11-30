@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ImportTypes Method
+
 Initiates the importing of types from each scope imported via [ImportFile Method](importfile-method.md).  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT ImportTypes(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  ID of the assembly to import to.  
   
@@ -51,9 +53,11 @@ HRESULT ImportTypes(
  Optionally receives count of types in the indicated scope.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h  
   
 ## See also

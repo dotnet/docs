@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
 ---
 # Certmgr.exe (Certificate Manager Tool)
+
 The Certificate Manager tool (Certmgr.exe) manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).  
   
  The Certificate Manager is automatically installed with Visual Studio. To start the tool, use the [Command Prompts](developer-command-prompt-for-vs.md).  
@@ -66,6 +67,7 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
 |**/?**|Displays command syntax and options for the tool.|  
   
 ## Remarks  
+
  Certmgr.exe performs the following basic functions:  
   
 - Displays certificates, CTLs, and CRLs to the console.  
@@ -88,6 +90,7 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
  For more information about certificates, see [Working with Certificates](../wcf/feature-details/working-with-certificates.md).  
   
 ## Examples  
+
  The following command displays a default system store called `my` with verbose output.  
   
 ```console  

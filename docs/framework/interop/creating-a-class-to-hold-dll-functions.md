@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: e08e4c34-0223-45f7-aa55-a3d8dd979b0f
 ---
 # Creating a Class to Hold DLL Functions
+
 Wrapping a frequently used DLL function in a managed class is an effective approach to encapsulate platform functionality. Although it is not mandatory to do so in every case, providing a class wrapper is convenient because defining DLL functions can be cumbersome and error-prone. If you are programming in Visual Basic or C#, you must declare DLL functions within a class or Visual Basic module.  
   
  Within a class, you define a static method for each DLL function you want to call. The definition can include additional information, such as the character set or the calling convention used in passing method arguments; by omitting this information, you select the default settings. For a complete list of declaration options and their default settings, see [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md).  

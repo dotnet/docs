@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 97340f4d-4e09-4e42-a17a-982b3868dbcf
 ---
 # 206 - ErrorHandlerInvoked
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 97340f4d-4e09-4e42-a17a-982b3868dbcf
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted after an `ErrorHandler` has had an opportunity to handle an exception that occurred in a service operation.  
   
 ## Message  
+
  The Dispatcher invoked an ErrorHandler of type '%1' with an exception of type '%3'. ErrorHandled == '%2'.  
   
 ## Details  

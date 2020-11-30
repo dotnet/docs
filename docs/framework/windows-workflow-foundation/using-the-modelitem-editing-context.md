@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 7f9f1ea5-0147-4079-8eca-be94f00d3aa1
 ---
 # Using the ModelItem Editing Context
+
 The <xref:System.Activities.Presentation.Model.ModelItem> editing context is the object that the host application uses to communicate with the designer. <xref:System.Activities.Presentation.EditingContext> exposes two methods, <xref:System.Activities.Presentation.EditingContext.Items%2A> and <xref:System.Activities.Presentation.EditingContext.Services%2A>, which can be used  
   
 ## The Items collection  
+
  The <xref:System.Activities.Presentation.EditingContext.Items%2A> collection is used to access data that is shared between the host and the designer, or data that is available to all designers. This collection has the following capabilities, accessed via the <xref:System.Activities.Presentation.ContextItemManager> class:  
   
 1. <xref:System.Activities.Presentation.ContextItemManager.GetValue%2A>  
@@ -18,6 +20,7 @@ The <xref:System.Activities.Presentation.Model.ModelItem> editing context is the
 4. <xref:System.Activities.Presentation.ContextItemManager.SetValue%2A>  
   
 ## The Services collection  
+
  The <xref:System.Activities.Presentation.EditingContext.Services%2A> collection is used to access services that the designer uses to interact with the host, or services that all designers use. This collection has the following methods of note:  
   
 1. <xref:System.Activities.Presentation.ServiceManager.Publish%2A>  
@@ -29,6 +32,7 @@ The <xref:System.Activities.Presentation.Model.ModelItem> editing context is the
 4. <xref:System.Activities.Presentation.ServiceManager.GetService%2A>  
   
 ## Assigning a designer an activity  
+
  To specify which designer an activity uses, the Designer attribute is used.  
   
 ```csharp  
@@ -39,6 +43,7 @@ public sealed class MyClass : CodeActivity
 ```  
   
 ## Creating a service  
+
  To create a service that serves as a conduit of information between the designer and the host, an interface and an implementation must be created. The interface is used by the <xref:System.Activities.Presentation.ServiceManager.Publish%2A> method to define the members of the service, and the implementation contains the logic for the service. In the following code example, a service interface and implementation are created.  
   
 ```csharp  
@@ -61,6 +66,7 @@ public interface IMyService
 ```  
   
 ## Publishing a service  
+
  For a designer to consume a service, it must first be published by the host using the <xref:System.Activities.Presentation.ServiceManager.Publish%2A> method.  
   
 ```csharp  
@@ -68,6 +74,7 @@ this.Context.Services.Publish<IMyService>(new MyServiceImpl);
 ```  
   
 ## Subscribing to a service  
+
  The designer obtains access to the service using the <xref:System.Activities.Presentation.ServiceManager.Subscribe%2A> method in the <xref:System.Activities.Presentation.WorkflowViewElement.OnModelItemChanged%2A> method. The following code snippet demonstrates how to subscribe to a service.  
   
 ```csharp  
@@ -87,9 +94,11 @@ protected override void OnModelItemChanged(object newItem)
 ```  
   
 ## Sharing data using the Items collection  
+
  Using the Items collection is similar to using the Services collection, except that <xref:System.Activities.Presentation.ContextItemManager.SetValue%2A> is used instead of Publish. This collection is more appropriate for sharing simple data between the designers and the host, rather than complex functionality.  
   
 ## EditingContext host items and services  
+
  The .NET Framework provides a number of built-in items and services accessed through the editing context.  
   
  Items:  

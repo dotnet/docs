@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: ec1a7bb1-c787-45ec-8292-73d104f3d7bb
 ---
 # System.ServiceModel.PerformanceCountersFailedOnRelease
+
 System.ServiceModel.PerformanceCountersFailedOnRelease  
   
 ## Description  
+
  Unloading the performance counters failed.  
   
 ## See also

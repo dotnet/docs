@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 2d06c2aa-d0d7-4e5e-ad7e-77416aa1c10b
 ---
 # How to: Secure a Service with an X.509 Certificate
+
 Securing a service with an X.509 certificate is a basic technique that most bindings in Windows Communication Foundation (WCF) use. This topic walks through the steps of configuring a self-hosted service with an X.509 certificate.  
   
  A prerequisite is a valid certificate that can be used to authenticate the server. The certificate must be issued to the server by a trusted certificate authority. If the certificate is not valid, any client trying to use the service will not trust the service, and consequently no connection will be made. For more information about using certificates, see [Working with Certificates](working-with-certificates.md).  
@@ -56,12 +57,14 @@ Securing a service with an X.509 certificate is a basic technique that most bind
      [!code-vb[C_SecureWithCertificate#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#8)]  
   
 ## Example  
+
  The following example uses the <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A> method to configure a service with an X.509 certificate.  
   
  [!code-csharp[C_SecureWithCertificate#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#9)]
  [!code-vb[C_SecureWithCertificate#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#9)]  
   
 ## Compiling the Code  
+
  The following namespaces are required to compile the code:  
   
 - <xref:System>  

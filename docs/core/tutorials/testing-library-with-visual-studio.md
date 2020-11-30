@@ -1,19 +1,19 @@
 ---
-title: Test a .NET Standard class library with .NET Core using Visual Studio
-description: Create a unit test project for a .NET Core class library. Verify that a .NET Core class library works correctly with unit tests.
-ms.date: 06/08/2020
+title: Test a .NET class library using Visual Studio
+description: Learn how to use Visual Studio to create and run a unit test project for a .NET class library.
+ms.date: 11/18/2020
 dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet"
 ---
-# Tutorial: Test a .NET Standard class library with .NET Core using Visual Studio
+# Tutorial: Test a .NET class library with .NET using Visual Studio
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
 ## Prerequisites
 
-- This tutorial works with the solution that you create in [Create a .NET Standard library using Visual Studio](library-with-visual-studio.md).
+- This tutorial works with the solution that you create in [Create a .NET class library using Visual Studio](library-with-visual-studio.md).
 
 ## Create a unit test project
 
@@ -21,7 +21,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Start Visual Studio.
 
-1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library using Visual Studio](library-with-visual-studio.md).
+1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library using Visual Studio](library-with-visual-studio.md).
 
 1. Add a new unit test project named "StringLibraryTest" to the solution.
 
@@ -29,9 +29,11 @@ Unit tests provide automated software testing during your development and publis
 
    1. On the **Add a new project** page, enter **mstest** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list.
 
-   1. Choose the **MSTest Test Project (.NET Core)** template, and then choose **Next**.
+   1. Choose the **Unit Test Project** template, and then choose **Next**.
 
-   1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Create**.
+   1. On the **Configure your new project** page, enter **StringLibraryTest** in the **Project name** box. Then choose **Next**.
+
+   1. On the **Additional information** page, select **.NET 5.0 (Current)** in the **Target Framework** box. Then choose **Create**.
 
 1. Visual Studio creates the project and opens the class file in the code window with the following code. If the language you want to use is not shown, change the language selector at the top of the page.
 
@@ -116,21 +118,21 @@ To create the test methods:
 1. On the menu bar, select **File** > **Save UnitTest1.cs As** or **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Save File As dialog](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Visual Studio Save File As dialog":::
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Advanced Save Options dialog](./media/testing-library-with-visual-studio/advanced-save-options.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Visual Studio Advanced Save Options dialog":::
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be correct.
 
 1. On the menu bar, select **Test** > **Run All Tests**. If the **Test Explorer** window doesn't open, open it by choosing **Test** > **Test Explorer**. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
    > [!div class="mx-imgBorder"]
-   > ![Test Explorer window with passing tests](./media/testing-library-with-visual-studio/test-explorer-window.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Test Explorer window with passing tests":::
 
 ## Handle test failures
 
@@ -152,14 +154,14 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 1. Run the test by selecting **Test** > **Run All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
    > [!div class="mx-imgBorder"]
-   > ![Test Explorer window with failing tests](./media/testing-library-with-visual-studio/failed-test-window.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Test Explorer window with failing tests":::
 
 1. Select the failed test, `TestDoesNotStartWith`.
 
    The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
    > [!div class="mx-imgBorder"]
-   > ![Test Explorer window showing the IsFalse assertion failure](./media/testing-library-with-visual-studio/failed-test-detail.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Test Explorer window showing the IsFalse assertion failure":::
 
 1. Remove the string "Error" that you added in step 1. Rerun the test and the tests pass.
 
@@ -172,25 +174,25 @@ To test the Release build:
 1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**.
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio toolbar with release build highlighted](./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Visual Studio toolbar with release build highlighted":::
 
 1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
 
    > [!div class="mx-imgBorder"]
-   > ![StringLibrary context menu with build command](./media/testing-library-with-visual-studio/build-library-context-menu.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="StringLibrary context menu with build command":::
 
 1. Run the unit tests by choosing **Test Run** > **All Tests** from the menu bar. The tests pass.
 
 ## Debug tests
 
-If you're using Visual Studio as your IDE, you can use the same process shown in [Tutorial: Debug a .NET Core console application using Visual Studio](debugging-with-visual-studio.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, right-click the **StringLibraryTests** project, and select **Debug Tests** from the context menu.
+If you're using Visual Studio as your IDE, you can use the same process shown in [Tutorial: Debug a .NET console application using Visual Studio](debugging-with-visual-studio.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, right-click the **StringLibraryTests** project, and select **Debug Tests** from the context menu.
 
 Visual Studio starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 
 ## Additional resources
 
 * [Unit test basics - Visual Studio](/visualstudio/test/unit-test-basics)
-* [Unit testing in .NET Core and .NET Standard](../testing/index.md)
+* [Unit testing in .NET](../testing/index.md)
 
 ## Next steps
 
@@ -207,4 +209,4 @@ If you publish a library as a NuGet package, others can install and use it. To l
 A library doesn't have to be distributed as a package. It can be bundled with a console app that uses it. To learn how to publish a console app, see the earlier tutorial in this series:
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application using Visual Studio](publishing-with-visual-studio.md)
+> [Publish a .NET console application using Visual Studio](publishing-with-visual-studio.md)

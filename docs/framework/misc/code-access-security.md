@@ -20,7 +20,10 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
 # Code Access Security
 
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
-  
+
+> [!NOTE]
+> Because Code Access Security is deprecated, most modern code within the .NET ecosystem is not designed to operate within a partial trust environment. Applications that rely on CAS should not expect modern libraries to behave correctly within these environments, unless the library developer has taken explicit steps to ensure compatibility within the CAS sandbox.  
+
  Today's highly connected computer systems are frequently exposed to code originating from various, possibly unknown sources. Code can be attached to email, contained in documents, or downloaded over the Internet. Unfortunately, many computer users have experienced firsthand the effects of malicious mobile code, including viruses and worms, which can damage or destroy data and cost time and money.  
   
  Most common security mechanisms give rights to users based on their credentials (usually a password) and restrict resources (often directories and files) that the user is allowed to access. However, this approach fails to address several issues: users obtain code from many sources, some of which might be unreliable; code can contain bugs or vulnerabilities that enable it to be exploited by malicious code; and code sometimes does things that the user does not know it will do. As a result, computer systems can be damaged and private data can be leaked when cautious and trustworthy users run malicious or error-filled software. Most operating system security mechanisms require that every piece of code must be trusted in order to run, except perhaps for scripts on a Web page. Therefore, there is still a need for a widely applicable security mechanism that allows code originating from one computer system to execute with protection on another system, even when there is no trust relationship between the systems.  
@@ -35,7 +38,9 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
  All managed code that targets the common language runtime receives the benefits of code access security, even if that code does not make a single code access security call. For more information, see [Code Access Security Basics](code-access-security-basics.md).  
   
 <a name="key_functions"></a>
+
 ## Key Functions of Code Access Security  
+
  Code access security helps limit the access that code has to protected resources and operations. In the .NET Framework, code access security performs the following functions:  
   
 - Defines permissions and permission sets that represent the right to access various system resources.  
@@ -47,7 +52,9 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
 - Enforces restrictions on code at run time by comparing the granted permissions of every caller on the call stack to the permissions that callers must have.  
   
 <a name="walking_the_call_stack"></a>
+
 ## Walking the Call Stack  
+
  To determine whether code is authorized to access a resource or perform an operation, the runtime's security system walks the call stack, comparing the granted permissions of each caller to the permission being demanded. If any caller in the call stack does not have the demanded permission, a security exception is thrown and access is refused. The stack walk is designed to help prevent luring attacks, in which less-trusted code calls highly trusted code and uses it to perform unauthorized actions. Demanding permissions of all callers at run time affects performance, but it is essential to help protect code from luring attacks by less-trusted code. To optimize performance, you can have your code perform fewer stack walks. However, be sure that you don't expose a security weakness whenever you do this.  
   
  The following illustration shows the stack walk that results when a method in Assembly A4 demands that its callers have permission P.  
@@ -55,6 +62,7 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
  ![Code access security stack walk](media/slide-10a.gif "slide_10a")
   
 <a name="related_topics"></a>
+
 ## Related articles
   
 |Title|Description|  

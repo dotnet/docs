@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 98dd0af8-fce6-4255-ac32-42eb547eea67
 ---
 # Custom Message Filter
+
 This sample demonstrates how to replace the message filters that Windows Communication Foundation (WCF) uses to dispatch messages to endpoints.  
   
 > [!NOTE]

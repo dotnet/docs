@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedMethod::GetSequencePointCount Method
+
 Gets the count of sequence points within this method.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT GetSequencePointCount(
 ```  
   
 ## Parameters  
+
  `pRetVal`  
  [out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the sequence points.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

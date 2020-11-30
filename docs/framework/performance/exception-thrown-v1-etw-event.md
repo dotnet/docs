@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 0d3da389-6b7b-40f6-a877-fac546d6019c
 ---
 # Exception Thrown_V1 ETW Event
+
 This event captures information about the exceptions that are thrown.  
   
  The following table shows the keyword under which the event is raised, and the level of the event. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  

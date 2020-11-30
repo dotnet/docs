@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
 ---
 # MissingRuntimeArtifactException Class (.NET Native)
+
 **.NET for Windows apps for Windows 10, .NET Native only**  
   
  The exception that is thrown when metadata for a type or type member is available but its implementation has been removed.  
@@ -14,6 +15,7 @@ ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
 > The `MissingRuntimeArtifactException` class is intended solely for internal use by the .NET Native tool chain. It is not intended for use in third-party code, nor should you handle the exception in your application code. Instead, you eliminate the exception by adding entries to your [runtime directives file](runtime-directives-rd-xml-configuration-file-reference.md). For more information, see the Remarks section.  
   
 ## Syntax  
+
  [!code-csharp[ProjectN#22](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/missingruntimeartifactexception_syntax1.cs#22)]  
   
  Note that the `MissingRuntimeArtifactException` class derives from <xref:System.MemberAccessException>.  
@@ -60,6 +62,7 @@ ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
 |`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|Occurs when an exception is serialized to create an exception state object that contains serialized data about the exception. (Inherited from <xref:System.Exception?displayProperty=nameWithType>.)|  
   
 ## Usage Details  
+
  The `MissingRuntimeArtifactException` exception is thrown when an attempt is made to instantiate a type or invoke a type member and, although the type or member's metadata is present, its implementation has been removed.  
   
  Whether metadata and the implementation code to dynamically execute a method are available to an app at run time is defined by the runtime directives (XML configuration) file, \*.rd.xml. To prevent your app from throwing this exception, you must modify \*.rd.xml to ensure that the metadata needed by a type or type member is present at run time. For information about the format of the \*.rd.xml file, see [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md).  

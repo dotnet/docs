@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: f061443f-92df-4824-b36a-609c4cd14a17
 ---
 # How to: Publish Metadata for a Service Using a Configuration File
+
 This is one of two how-to topics that demonstrate publishing metadata for a Windows Communication Foundation (WCF) service. There are two ways to specify how a service should publish metadata, using a configuration file and using code. This topic shows how to publish metadata for a service using a configuration file.  
   
 > [!CAUTION]
@@ -177,6 +178,7 @@ namespace Metadata.Samples
      Because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> with the `httpGetEnabled` set to `true`, the service has publishing metadata enabled, and because no endpoints were explicitly added, the runtime adds the default endpoints. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).  
   
 ## Example  
+
  The following code example shows the implementation of a basic WCF service and the configuration file that publishes metadata for the service.  
   
 ```csharp  

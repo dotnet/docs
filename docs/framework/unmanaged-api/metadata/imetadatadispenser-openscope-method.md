@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataDispenser::OpenScope Method
+
 Opens an existing, on-disk file and maps its metadata into memory.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT OpenScope (
 ```  
   
 ## Parameters  
+
  `szScope`  
  [in] The name of the file to be opened. The file must contain common language runtime (CLR) metadata.  
   
@@ -46,6 +48,7 @@ HRESULT OpenScope (
  [out] The pointer to the returned interface.  
   
 ## Remarks  
+
  The in-memory copy of the metadata can be queried using methods from one of the "import" interfaces, or added to using methods from the one of the "emit" interfaces.  
   
  If the target file does not contain CLR metadata, the `OpenScope` method will fail.  
@@ -55,6 +58,7 @@ HRESULT OpenScope (
  In the .NET Framework version 2.0, scopes opened with `dwOpenFlags` set to ofRead are no longer shared. Use the ofReadOnly value to allow the scope to be shared. When a scope is shared, queries that use "read/write" metadata interfaces will fail.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

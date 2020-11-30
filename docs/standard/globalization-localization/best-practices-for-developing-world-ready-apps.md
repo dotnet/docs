@@ -1,12 +1,11 @@
 ---
 title: "Best Practices for Developing World-Ready Applications"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "global applications, best practices"
   - "world-ready applications, best practices"
-  - "globalization [.NET Framework], best practices"
-  - "international applications [.NET Framework], best practices"
+  - "globalization [.NET], best practices"
+  - "international applications [.NET], best practices"
 ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
 ---
 # Best practices for developing world-ready applications

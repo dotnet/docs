@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # Clone function
+
 Returns a new object that is a complete clone of the current object.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -59,6 +60,7 @@ This function wraps a call to the [IWbemClassObject::Clone](/windows/desktop/api
 The cloned object is a COM object that has a reference count of 1.
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  

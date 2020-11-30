@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # BlessIWbemServicesObject function
+
 Indicates whether the user credentials permit access to a specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]

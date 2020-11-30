@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::ResolveTypeRef Method
+
 Resolves a <xref:System.Type> reference represented by the specified TypeRef token.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT ResolveTypeRef (
 ```  
   
 ## Parameters  
+
  `tr`  
  [in] The TypeRef metadata token to return the referenced type information for.  
   
@@ -53,6 +55,7 @@ HRESULT ResolveTypeRef (
  If the type reference to be resolved has a resolution scope of AssemblyRef, the `ResolveTypeRef` method searches for a match only in the metadata scopes that have already been opened with calls to either the [IMetaDataDispenser::OpenScope](imetadatadispenser-openscope-method.md) method or the [IMetaDataDispenser::OpenScopeOnMemory](imetadatadispenser-openscopeonmemory-method.md) method. This is because `ResolveTypeRef` cannot determine from only the AssemblyRef scope where on disk or in the global assembly cache the assembly is stored.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

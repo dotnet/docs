@@ -37,10 +37,10 @@
       href: tutorials/type-providers/type-provider-security.md
     - name: Troubleshooting Type Providers
       href: tutorials/type-providers/troubleshooting-type-providers.md
-  - name: F# Interactive
-    href: tutorials/fsharp-interactive/index.md
 - name: What's new in F#
   items:
+  - name: F# 5.0
+    href: whats-new/fsharp-50.md
   - name: F# 4.7
     href: whats-new/fsharp-47.md
   - name: F# 4.6
@@ -97,6 +97,8 @@
     href: language-reference/unit-type.md
   - name: Strings
     href: language-reference/strings.md
+  - name: Interpolated strings
+    href: language-reference/interpolated-strings.md
   - name: Tuples
     href: language-reference/tuples.md
   - name: F# Collection Types
@@ -246,6 +248,8 @@
     href: language-reference/byrefs.md
   - name: Reference Cells
     href: language-reference/reference-cells.md
+  - name: nameof
+    href: language-reference/nameof.md
   - name: Compiler Directives
     href: language-reference/compiler-directives.md
   - name: Compiler Options
@@ -260,6 +264,10 @@
     href: language-reference/verbose-syntax.md
   - name: Compiler errors and warnings
     href: language-reference/compiler-messages/index.md
+- name: F# Tools
+  items:
+    - name: F# Interactive
+      href: tools/fsharp-interactive/index.md
 - name: F# style guide
   href: style-guide/index.md
   items:

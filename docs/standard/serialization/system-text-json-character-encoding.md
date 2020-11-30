@@ -1,7 +1,7 @@
 ---
 title: How to customize character encoding with System.Text.Json
 description: "Learn how to customize character encoding while serializing to and deserializing from JSON in .NET."
-ms.date: 11/18/2020
+ms.date: 11/30/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -79,6 +79,6 @@ To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncod
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to write custom serializers and deserializers](system-text-json-customize-serialization.md)
+* [How to write custom serializers and deserializers](write-custom-serializer-deserializer.md)
 * [How to write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [System.Text.Json API reference](xref:System.Text.Json)

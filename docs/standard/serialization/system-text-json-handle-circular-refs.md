@@ -1,5 +1,5 @@
 ---
-title: How to handle circular references with System.Text.Json
+title: How to preserve references and handle circular references with System.Text.Json
 description: "Learn how to handle circular references while serializing to and deserializing from JSON in .NET."
 ms.date: 11/19/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 # How to handle circular references with System.Text.Json
 
-In this article, you will learn how to handle circular references with the `System.Text.Json` namespace.
+In this article, you will learn how to preserve references and handle circular references with the `System.Text.Json` namespace.
 
 ## Preserve references and handle circular references
 

@@ -1,5 +1,5 @@
 ---
-title: How to serialize polymorphic objects with System.Text.Json
+title: How to serialize properties of derived classes with System.Text.Json
 description: "Learn how to serialize polymorphic objects while serializing to and deserializing from JSON in .NET."
 ms.date: 11/19/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
@@ -10,9 +10,9 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to serialize polymorphic objects with System.Text.Json
+# How to serialize properties of derived classes with System.Text.Json
 
-In this article, you will learn how to serialize polymorphic objects with the `System.Text.Json` namespace.
+In this article, you will learn how to serialize properties of derived classes with the `System.Text.Json` namespace.
 
 ## Serialize properties of derived classes
 

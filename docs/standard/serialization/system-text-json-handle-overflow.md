@@ -1,6 +1,6 @@
 ---
-title: How to handle overflow with System.Text.Json
-description: "Learn how to handle overflow while serializing to and deserializing from JSON in .NET."
+title: How to handle overflow JSON with System.Text.Json
+description: "Learn how to handle overflow JSON while serializing to and deserializing from JSON in .NET."
 ms.date: 11/19/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
@@ -10,9 +10,9 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to handle overflow with System.Text.Json
+# How to handle overflow JSON with System.Text.Json
 
-In this article, you will learn how to handle overflow with the `System.Text.Json` namespace.
+In this article, you will learn how to handle overflow JSON with the `System.Text.Json` namespace.
 
 ## Handle overflow JSON
 

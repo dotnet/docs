@@ -12,7 +12,7 @@ namespace NonStringKeyDictionary
             {
                 [0] = "zero",
                 [1] = "one",
-                [34]= "thirty four",
+                [34] = "thirty four",
                 [55] = "fifty five"
             };
 

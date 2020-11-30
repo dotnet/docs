@@ -1,6 +1,6 @@
 ---
-title: How to use immutable types with System.Text.Json
-description: "Learn how to immutable types while serializing to and deserializing from JSON in .NET."
+title: How to use immutable types and non-public accessors with System.Text.Json
+description: "Learn how to use immutable types and non-public accessors while serializing to and deserializing from JSON in .NET."
 ms.date: 11/19/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to use immutable types with System.Text.Json
+# How to use immutable types and non-public accessors with System.Text.Json
 
 In this article, you will learn how to use immutable types, such as Records, with the `System.Text.Json` namespace.
 

@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to serialize and deserialize JSON in .NET
+# How to serialize and deserialize (marshal and unmarshal) JSON in .NET
 
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to and deserialize from JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](system-text-json-migrate-from-newtonsoft-how-to.md).
 
@@ -110,7 +110,7 @@ A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xre
 
 Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
 
-### Serialization behavior
+## Serialization behavior
 ::: zone pivot="dotnet-5-0"
 
 * By default, all public properties are serialized. You can [specify properties to ignore](system-text-json-ignore-properties.md).

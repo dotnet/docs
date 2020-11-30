@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 # How to ignore properties with System.Text.Json
 
-When serializing C# objects to JavaScript Object Notation (JSON), by default, all public properties are serialized. If you don't want some of them to appear in the resulting JSON, you have several options. In this article you learn how to ignore various properties:
+When serializing C# objects to JavaScript Object Notation (JSON), by default, all public properties are serialized. If you don't want some of them to appear in the resulting JSON, you have several options. In this article you learn how to ignore properties based on various criteria:
 
 ::: zone pivot="dotnet-5-0"
 

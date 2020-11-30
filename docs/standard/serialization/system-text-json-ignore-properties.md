@@ -50,8 +50,8 @@ You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.
 
 * `Always` - The property is always ignored. If no `Condition` is specified, this option is assumed.
 * `Never` - The property is always serialized and deserialized, regardless of the `DefaultIgnoreCondition`, `IgnoreReadOnlyProperties`, and `IgnoreReadOnlyFields` global settings.
-* `WhenWritingDefault` - The property is ignored on serialization if it's a reference type `null` or a value type `default`.
-* `WhenWritingNull` - The property is ignored on serialization if it's a reference type `null`.
+* `WhenWritingDefault` - The property is ignored on serialization if it's a reference type `null`, a nullable value type `null`, or a value type `default`.
+* `WhenWritingNull` - The property is ignored on serialization if it's a reference type `null`, or a nullable value type `null`.
 
 The following example illustrates use of the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property:
 

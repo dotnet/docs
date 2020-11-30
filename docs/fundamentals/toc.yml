@@ -388,9 +388,10 @@ items:
       href: ../core/diagnostics/managed-debuggers.md
     - name: Dumps
       items:
-      - name: Collection and analyze dumps
+      - name: Overview
+        displayName: dumps
         href: ../core/diagnostics/dumps.md
-      - name: Debug Linux dumps
+      - name: Linux dumps
         href: ../core/diagnostics/debug-linux-dumps.md
     - name: EventCounters
       href: ../core/diagnostics/event-counters.md

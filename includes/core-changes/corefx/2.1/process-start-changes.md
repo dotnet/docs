@@ -8,7 +8,7 @@
 
 The following properties on <xref:System.Diagnostics.ProcessStartInfo?displayProperty=nameWithType> are only functional when <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayProperty=nameWithType> is `true`:
 
-- <xref:System.Diagnostics.ProcessStartInfo.CreateNewWindow?displayProperty=nameWithType>
+- <xref:System.Diagnostics.ProcessStartInfo.CreateNoWindow?displayProperty=nameWithType>
 - <xref:System.Diagnostics.ProcessStartInfo.ErrorDialog?displayProperty=nameWithType>
 - <xref:System.Diagnostics.ProcessStartInfo.Verb?displayProperty=nameWithType>
 - <xref:System.Diagnostics.ProcessStartInfo.WindowStyle?displayProperty=nameWithType>.

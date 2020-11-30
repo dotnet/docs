@@ -47,7 +47,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
 | No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
-| `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
 | Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting, [JsonNumberHandling] attribute](#allow-or-write-numbers-in-quotes) |
 | Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
 | Support for fields                                    | ✔️ [IncludeFields global setting, [JsonInclude] attribute](#public-and-non-public-fields) |
@@ -69,6 +68,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ⚠️ [Not supported, workaround](#add-to-collections-without-setters) |
+| `ReferenceLoopHandling` global setting                | ❌ [Not supported](#preserve-object-references-and-handle-loops) |
 | Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
 | `MissingMemberHandling` global setting                | ❌ [Not supported](#missingmemberhandling) |
 | Allow property names without quotes                   | ❌ [Not supported](#json-strings-property-names-and-string-values) |
@@ -349,8 +349,9 @@ Some related `Newtonsoft.Json` features are not supported:
 
 * [JsonPropertyAttribute.IsReference](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_IsReference.htm)
 * [JsonPropertyAttribute.ReferenceLoopHandling](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonPropertyAttribute_ReferenceLoopHandling.htm)
+* [JsonSerializerSettings.ReferenceLoopHandling](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializerSettings_ReferenceLoopHandling.htm)
 
-For more information, see [Preserve references and handle circular references](system-text-json-how-to.md#preserve-references-and-handle-circular-references)
+For more information, see [Preserve references and handle circular references](system-text-json-how-to.md#preserve-references-and-handle-circular-references).
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

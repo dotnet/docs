@@ -33,7 +33,7 @@ You define naming rules in an EditorConfig file.
 
 To define a naming rule, symbol group, or naming style, set one or more properties using the following syntax:
 
-```none
+```ini
 <prefix>.<title>.<propertyName> = <propertyValue>
 ```
 

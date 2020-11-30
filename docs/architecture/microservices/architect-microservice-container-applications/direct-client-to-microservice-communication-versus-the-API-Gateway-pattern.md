@@ -107,7 +107,7 @@ For more information, see [Gateway aggregation pattern](/azure/architecture/patt
 - Load balancing
 - Logging, tracing, correlation
 - Headers, query strings, and claims transformation
-- IP whitelisting
+- IP allowlisting
 
 For more information, see [Gateway offloading pattern](/azure/architecture/patterns/gateway-offloading).
 

@@ -163,6 +163,7 @@ Running .NET code inside web browsers is made possible by WebAssembly (abbreviat
 WebAssembly code can access the full functionality of the browser via JavaScript, called JavaScript interoperability, often shortened to JavaScript interop or JS interop. .NET code executed via WebAssembly in the browser runs in the browser's JavaScript sandbox with the protections that the sandbox provides against malicious actions on the client machine.
 
 For more details, see [Introduction to ASP.NET Core Blazor](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-5.0)
+
 ### Choosing a SPA Framework
 
 When considering which option will work best to support your SPA, keep in mind the following considerations:

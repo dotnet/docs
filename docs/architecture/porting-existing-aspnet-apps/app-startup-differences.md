@@ -11,7 +11,7 @@ ASP.NET MVC applications lived entirely within Internet Information Server (IIS)
 
 ## ASP.NET MVC Startup
 
-Hosted within IIS, ASP.NET applications rely on IIS to instantiate certain objects and call certain methods when a request arrives. ASP.NET creates an instance of the `Global.asax` class, which derives from `HttpApplication`. When the first request is received, before handling the request itself, ASP.NET calls the `Application_Start` method on the `Global.asax` class. Any logic that needs to run when the ASP.NET MVC application begins can be added to this method.
+Hosted within IIS, ASP.NET applications rely on IIS to instantiate certain objects and call certain methods when a request arrives. ASP.NET creates an instance of the `Global.asax` file's class, which derives from `HttpApplication`. When the first request is received, before handling the request itself, ASP.NET calls the `Application_Start` method in the `Global.asax` file's class. Any logic that needs to run when the ASP.NET MVC application begins can be added to this method.
 
 Many NuGet packages for ASP.NET MVC and Web API use the [WebActivator](https://github.com/davidebbo/WebActivator) package to let them run some code during application startup. By convention, this code would typically be added to an `App_Start` folder and would be configured via attribute to run either immediately before or just after `Application_Start`.
 
@@ -44,7 +44,7 @@ public class Program
 
 The code shown in Figure 2-1 creates a *host* for the application, builds it, and runs it. The ASP.NET Core application runs within the host configured by the `IHostBuilder` shown. While it's possible to completely configure an ASP.NET Core app using the `IHostBuilder`, typically the bulk of this work is done in a `Startup` class.
 
-The `Startup` class exposes two methods to the host, `ConfigureServices` and `Configure`. The `ConfigureServices` method is used to define the services the app will use and their respective lifetimes. The `Configure` method is used to define how each request to the app will be handled by setting up a request pipeline composed of middleware.
+The `Startup` class exposes two methods to the host: `ConfigureServices` and `Configure`. The `ConfigureServices` method is used to define the services the app will use and their respective lifetimes. The `Configure` method is used to define how each request to the app will be handled by setting up a request pipeline composed of middleware.
 
 In addition to code related to configuring the application's services or request pipeline, apps may have other code that must run when the app begins. Such code is typically placed in `Program.cs` or registered as an `IHostedService` which will be started by the [generic host](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-3.1) when the application starts.
 
@@ -52,7 +52,7 @@ The `IHostedService` interface just exposes two methods, `StartAsync` and `StopA
 
 ## Porting considerations
 
-Teams looking to migrate from apps from ASP.NET MVC to ASP.NET Core will need to identify what code is being run when their app starts up and determine the appropriate location for such code in their ASP.NET Core app. For custom code needed to run when the app starts up, especially async code, the recommended approach is typically to put such code into `IHostedService` implementations.
+Teams looking to migrate their apps from ASP.NET MVC to ASP.NET Core need to identify what code is being run when their app starts up and determine the appropriate location for such code in their ASP.NET Core app. For custom code needed to run when the app starts up, especially async code, the recommended approach is typically to put such code into `IHostedService` implementations.
 
 ## References
 

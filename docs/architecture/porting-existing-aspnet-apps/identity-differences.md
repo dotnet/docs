@@ -17,12 +17,12 @@ If you migrate your ASP.NET Identity users to ASP.NET Core Identity, you may nee
 
 One of the biggest differences when it comes to ASP.NET Core Identity compared to ASP.NET Identity is how little code you need to include in your project. ASP.NET Core Identity now ships as a Razor Class Library, meaning its UI and logic are all available from a NuGet package. You can override the existing UI and logic by [scaffolding the ASP.NET Core Identity files](https://docs.microsoft.com/aspnet/core/security/authentication/scaffold-identity) but even in this case you need only scaffold the pages you want to modify, not every one that exists.
 
-## Migrating from OWIN / Katana
+## Migrate from OWIN / Katana
 
-TODO: Expand on this scenario here:
+The following resources offer some guidance for migrating from OWIN / Katana:
 
-[Migration](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/#globalasax-file-replacement)
-[Katana to ASPNET 5](https://devblogs.microsoft.com/aspnet/katana-asp-net-5-and-bridging-the-gap/)
+- [Migration](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/#globalasax-file-replacement)
+- [Katana to ASPNET 5](https://devblogs.microsoft.com/aspnet/katana-asp-net-5-and-bridging-the-gap/)
 
 ## References
 

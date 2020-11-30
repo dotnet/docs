@@ -1,6 +1,6 @@
 ---
 title: Understand and update dependencies
-description: In order to migrate a .NET Framework project to .NET Core, first all of its dependencies must be updated to work with .NET Core. This section examines tools and approaches that can be used to plan migrations for large apps.
+description: To migrate a .NET Framework project to .NET Core, its dependencies must be updated to work with .NET Core. This section examines tools and approaches that can be used to plan migrations for large apps.
 author: ardalis
 ms.date: 11/13/2020
 ---
@@ -13,21 +13,21 @@ After identifying the sequence in which the app's individual projects must be mi
 
 **Figure 3-4. .NET Portability Analyzer report details.**
 
-## Updating Class Library dependencies
+## Update class library dependencies
 
 Large apps typically involve multiple projects, and most projects other than the ASP.NET MVC web project are likely to be class libraries. Class libraries tend to be the easiest to port between .NET platforms, especially compared to ASP.NET projects, which are among the most difficult (and typically need to be re-created).
 
-Teams can consider the [try-convert tool](https://github.com/dotnet/try-convert) for migrating class libraries to .NET Core. The try-convert tool analyzes a .NET project file and attempts to migrate it to the .NET Core project file format, making any modifications it can safely perform in the process. This tool won't work on an ASP.NET project, but can help speed up the process of migrating class libraries.
+Teams can consider the [try-convert tool](https://github.com/dotnet/try-convert) for migrating class libraries to .NET Core. The try-convert tool analyzes a .NET Framework project file and attempts to migrate it to the .NET Core project file format, making any modifications it can safely perform in the process. This tool won't work on an ASP.NET project, but can help speed up the process of migrating class libraries.
 
 The try-convert tool is deployed as a .NET Core command line tool. It only runs on Windows, since it's designed to work with .NET Framework apps. You can install it by running the following command from a command prompt:
 
-```powershell
+```dotnetcli
 dotnet tool install -g try-convert
 ```
 
-Once you've successfully installed the tool, you can run it from the command prompt by simply running `try-convert` in the folder where the class library's project file is located.
+Once you've successfully installed the tool, you can run `try-convert` in the folder where the class library's project file is located.
 
-## Updating NuGet package dependencies
+## Update NuGet package dependencies
 
 Analyze your use of third party NuGet packages and determine if any of them do not yet support .NET Standard (or do support it but only with a new version). It can be helpful to [update NuGet packages to use `<PackageReference>` syntax using Visual Studios converter tool](https://docs.microsoft.com/nuget/consume-packages/migrate-packages-config-to-package-reference), so that top-level dependencies are visible. Next, check whether the current or later versions of these packages support .NET Core or .NET Standard. This information can be found on [nuget.org] or within Visual Studio for each package.
 
@@ -35,9 +35,9 @@ If support exists using the version of the package the app currently uses, great
 
 In some cases, no version of a given package works with .NET Core. In that case, teams have a couple options. They can continue depending on the .NET Framework version, but this has limitations. The app will only run on Windows, and the team may want to run Portability Analyzer on the package's binaries to see if there are any issues likely to be encountered. Certainly the team will want to test thoroughly. The other option is to find a different package or, if the required package is open source, upgrade it to .NET Standard or .NET Core themselves.
 
-## Migrating ASP.NET MVC Projects
+## Migrate ASP.NET MVC projects
 
-The `System.Web` namespace and types do not exist in .NET Core, so when you're analyzing dependencies and using tools like `try-convert` you'll find they don't offer many suggestions for automatic migration of ASP.NET MVC projects and any code in them that references `System.Web`. For these projects, you will need to start with a new ASP.NET Core web project and manually migrate files to this project.
+The `System.Web` namespace and types don't exist in .NET Core. When you're analyzing dependencies and using tools like `try-convert`, you'll find they don't offer many suggestions for automatic migration of ASP.NET MVC projects and any code in them that references `System.Web`. For these projects, you'll need to start with a new ASP.NET Core web project and manually migrate files to this project.
 
 In general, it's a good practice to minimize how much of an app's business logic lives in its user interface layer. It's also best to keep controllers and views small. Apps that have followed this guidance will be easier to port than those that have a significant amount of their logic in the ASP.NET web project. If you have an app you're considering porting, but haven't begun the process yet, keep this in mind as you maintain it. Any effort you put toward minimizing how much code is in the ASP.NET MVC or Web API project will likely result in less work when the time comes to port the app.
 

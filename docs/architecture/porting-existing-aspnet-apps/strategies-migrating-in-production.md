@@ -9,17 +9,17 @@ ms.date: 11/13/2020
 
 Many teams have .NET Framework apps they plan to migrate to .NET Core, but the app is so large that the migration will require a significant amount of time to complete. The original app needs to live on while the migration is done piece by piece. There needs to be a way for the old and new versions of the app to work together side by side, or for the old version to be migrated in place, at least some of the way, without breaking it. Teams can employ a number of different strategies to support these goals.
 
-## Refactoring the .NET Framework solution
+## Refactor the .NET Framework solution
 
 A good place to start if you know eventually you're going to port a .NET Framework app to .NET Core is to refactor it to work better with .NET Core. This means updating individual class libraries to target .NET Standard and moving as much logic out of your ASP.NET MVC projects and into these class libraries. Any code you have in .NET Standard libraries should move relatively easily from .NET Framework to .NET Core.
 
 When refactoring, make sure you're following good refactoring fundamentals. That means having tests that verify what the system does before you start refactoring, and then running these tests when you're done to confirm you didn't change the system's behavior. You may need to add characterization tests to the system if you don't already have a good suite of automated tests you can rely on.
 
-## Extracting front-end assets to CDN
+## Extract front-end assets to a CDN
 
-If your .NET Framework apps include a lot of static assets, like scripts, CSS files, or images, you may be abel to migrate these to a separate CDN. Then, update the existing app to reference the CDN links for these assets.  When you port the app to .NET Core, these static files won't be part of the migration, and you'll just continue referencing them from the CDN in the ASP.NET Core app.
+If your .NET Framework apps include a lot of static assets, like scripts, CSS files, or images, you may be abel to migrate these to a separate CDN. Then, update the existing app to reference the CDN links for these assets. When you port the app to .NET Core, these static files won't be part of the migration, and you'll just continue referencing them from the CDN in the ASP.NET Core app.
 
-## Extracting and migrating individual microservices
+## Extract and migrate individual microservices
 
 Large .NET Framework apps may already be comprised of separate front end systems that can be migrated individually. Or they may be candidates for migration to a microservices architecture, with some pieces of existing ASP.NET MVC apps being pulled out into new ASP.NET Core microservice implementations. You can learn more about microservices in the associated ebook, [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
@@ -27,13 +27,13 @@ For example, the existing app might have a set of features it uses related to us
 
 ## Deploy multiple versions of the app side-by-side in IIS
 
-Using a combination of host headers and redirects, an existing ASP.NET MVC app can be configured to run side by side with an ASP.NET Core app on the same IIS server. As pieces of functionality, such as individual controllers, are ported to ASP.NET Core, their routes and URLs are mapped within IIS to target the ASP.NET Core web site or sub-application (IIS Virtual Directories are not supported with ASP.NET Core apps). An ASP.NET Core app can be hosted as an IIS sub-application (sub-app). The sub-app's path becomes part of the root app's URL.
+Using a combination of host headers and redirects, an existing ASP.NET MVC app can be configured to run side by side with an ASP.NET Core app on the same IIS server. As pieces of functionality, such as individual controllers, are ported to ASP.NET Core, their routes and URLs are mapped within IIS to target the ASP.NET Core web site or sub-application (IIS virtual directories aren't supported with ASP.NET Core apps). An ASP.NET Core app can be hosted as an IIS sub-application (sub-app). The sub-app's path becomes part of the root app's URL.
 
 ## Apply the Strangler pattern
 
 Large ASP.NET MVC apps can be gradually replaced with a new ASP.NET Core app by incrementally migrating pieces of functionality. One approach to this is called the [strangler pattern](https://docs.microsoft.com/azure/architecture/patterns/strangler), named for strangler vines that strangle and eventually tear down trees. This approach relies on first implementing a facade layer over top of the existing solution. This facade should be built using the new approach to the problem, or an off-the-shelf solution such as an API gateway.
 
-Once the facade is in place, you can route part of it to a new ASP.NET Core app. As you port more and more of the original .NET Framework app to .NET Core, you continue to update the facade layer accordingly, sending  more and more of the facade's total functionality to the new system. Figure 3-5 shows the strangler pattern progression over time.
+Once the facade is in place, you can route part of it to a new ASP.NET Core app. As you port more and more of the original .NET Framework app to .NET Core, you continue to update the facade layer accordingly, sending more and more of the facade's total functionality to the new system. Figure 3-5 shows the strangler pattern progression over time.
 
 ## Multi-targeting approaches
 
@@ -45,7 +45,7 @@ These techniques allow a single common codebase to be maintained while new funct
 
 **Figure 3-5. The Strangler pattern over time.**
 
-Eventually, the entire facade layer corresponds to the new, modern implementation. At this point both the legacy system and the face layer can be retired.
+Eventually, the entire facade layer corresponds to the new, modern implementation. At this point, both the legacy system and the face layer can be retired.
 
 ## Summary
 
@@ -56,7 +56,7 @@ Frequently, large ASP.NET MVC and Web API apps will not be ported to ASP.NET Cor
 - [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook)
 - [eShopOnContainers Reference Microservices Application](https://github.com/dotnet-architecture/eShopOnContainers)
 - [Host ASP.NET Core on Windows with IIS](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
-- [Strangler pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler)
+- [Strangler pattern](https://docs.microsoft.com/azure/architecture/patterns/strangler)
 
 >[!div class="step-by-step"]
 >[Previous](understand-update-dependencies.md)

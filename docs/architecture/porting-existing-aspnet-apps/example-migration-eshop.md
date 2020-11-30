@@ -593,22 +593,245 @@ The app can be deployed and run in production at this point, converted to ASP.NE
 
 Assuming a decision is made to migrate to EF Core, the steps can be fairly straightforward, especially if the original app used a code-based model approach. When [preparing to port from EF 6 to EF Core](https://docs.microsoft.com/ef/efcore-and-ef6/porting/), review the availability of features in the destination version of EF Core you'll be using. Review the documentation on [porting from and EDMX-based model](https://docs.microsoft.com/ef/efcore-and-ef6/porting/port-edmx) versus [porting from a code-based model](https://docs.microsoft.com/ef/efcore-and-ef6/porting/port-code).
 
-- Upgrading to EF Core
-- Discuss other data providers
+To upgrade to EF Core 2.2, the basic steps involved are to add the appropriate NuGet package(s) and update namespaces. Then adjust how the connection string is passed to the `DbContext` type and how they're wired up for dependency injection.
+
+EF Core is added as a package reference to the project:
+
+```xml
+<PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+```
+
+The reference to EF 6 is removed:
+
+```xml
+<PackageReference Include="EntityFramework" Version="6.2.0" />
+```
+
+The compiler will report errors in `CatalogDBContext` and `CatalogDBInitializer`. `CatalogDbContext` needs to have the old namespaces removed and replaced with `Microsoft.EntityFrameworkCore`. Its constructors can be removed. `DbModelBuilder` should be replaced with `ModelBuilder`. The helper methods for configuring types are moved to separate classes implementing `IEntityTypeConfiguration<T>`. Then the `CatalogDBContext` class's `OnModelCreating` method simply becomes:
+
+```csharp
+protected override void OnModelCreating(ModelBuilder builder)
+{
+    builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+    base.OnModelCreating(builder);
+}
+```
+
+A few other changes involved:
+
+- `HasDatabaseGeneratedOption(DatabaseGeneratedOption.None)` replaced with `ValueGeneratedNever()`
+- `HasRequired<T>` replaced with `HasOne<T>`
+- Installed `Microsoft.EntityFrameworkCore.Relational` package
+- Add a constructor to `CatalogDBContext` taking `DbContextOptions` and passing it to the base constructor
+
+An example configuration class for `CatalogType` is shown here:
+
+```csharp
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace eShopPorted.Models.Config
+{
+    public class CatalogTypeConfig : IEntityTypeConfiguration<CatalogType>
+    {
+        public void Configure(EntityTypeBuilder<CatalogType> builder)
+        {
+            builder.ToTable("CatalogType");
+
+            builder.HasKey(ci => ci.Id);
+
+            builder.Property(ci => ci.Id)
+               .IsRequired();
+
+            builder.Property(cb => cb.Type)
+                .IsRequired()
+                .HasMaxLength(100);
+        }
+    }
+}
+```
+
+The `CatalogDBInitializer` and its base class, `CreateDatabaseIfNotExists<T>`, are not compatible with EF Core. The purpose of this class is to create and seed the database. Using EF Core will [create and drop the associated database for a `DbContext`](https://docs.microsoft.com/ef/core/managing-schemas/ensure-created) using these methods:
+
+```csharp
+dbContext.Database.EnsureDeleted();
+dbContext.Database.EnsureCreated();
+```
+
+Seeding data in EF Core can be done with manual scripts, or as part of the type configuration. Along with other entity properties, seed data can be configured in `IEntityTypeConfiguration` classes by using `builder.HasData()`. The original app loaded seed data from CSV files in the `Setup` directory. Given that there are only a handful of items, these data records can instead be added as part of the entity configuration. This approach works well for lookup data in tables that change infrequently. Adding the following to `CatalogTypeConfig`'s `Configure` method ensures the associated rows are present when the database is created:
+
+```csharp
+builder.HasData(
+    new CatalogType { Id = 1, Type = "Mug" },
+    new CatalogType { Id = 2, Type = "T-Shirt" },
+    new CatalogType { Id = 3, Type = "Sheet" },
+    new CatalogType { Id = 4, Type = "USB Memory Stick" }
+);
+```
+
+The initial app includes a `PreconfiguredData` class, though, which includes data for `CatalogBrand` and `CatalogType`, so using this method the `HasData` call reduces to:
+
+```csharp
+builder.HasData(
+    PreconfiguredData.GetPreconfiguredCatalogBrands()
+);
+```
+
+The `CatalogItem` data can also be pulled from `PreconfiguredData`, and assuming the associated images are kept in source control, that is the last table needed for the app to function. The `CatalogDBInitializer` class can be removed, along with any references to it. The `CatalogItemHiLoGenerator` class and the SQL files in the `Infrastructure` directory are also removed, along with any references to them (in `CatalogService`, `ApplicationModule`).
+
+With the elimination of the special key generator classes for `CatalogItem`, this code now is removed from `CatalogItemConfig`:
+
+```csharp
+builder.Property(ci => ci.Id)
+    .ValueGeneratedNever()
+    .IsRequired();
+```
+
+With these modifications, the ASP.NET Core app builds, but it doesn't yet work with EF Core, which must still be configured for dependency injection. With EF Core, the simplest way to configure it is in `ConfigureServices`:
+
+```csharp
+public IServiceProvider ConfigureServices(IServiceCollection services)
+{
+    services.AddMvc();
+    bool useMockData = Configuration.GetValue<bool>("UseMockData");
+    if (!useMockData)
+    {
+        string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+        services.AddDbContext<CatalogDBContext>(options =>
+            options.UseSqlServer(connectionString)
+        );
+    }
+
+    // Create Autofac container builder
+    var builder = new ContainerBuilder();
+    builder.Populate(services);
+    builder.RegisterModule(new ApplicationModule(useMockData));
+
+    ILifetimeScope container = builder.Build();
+
+    return new AutofacServiceProvider(container);
+}
+```
+
+The final version of Autofac's `ApplicationModule` only configures one type, depending on whether the app is configured to use mock data:
+
+```csharp
+public class ApplicationModule : Module
+{
+    private bool _useMockData;
+
+    public ApplicationModule(bool useMockData)
+    {
+        _useMockData = useMockData;
+    }
+    protected override void Load(ContainerBuilder builder)
+    {
+        if (_useMockData)
+        {
+            builder.RegisterType<CatalogServiceMock>()
+                .As<ICatalogService>()
+                .SingleInstance();
+        }
+        else
+        {
+            builder.RegisterType<CatalogService>()
+                .As<ICatalogService>()
+                .InstancePerLifetimeScope();
+        }
+    }
+}
+```
+
+The ported app runs, but doesn't display any data if configured to use non-mock data. The seed data added through `HasData` is only inserted when migrations are applied. The source app didn't use migrations, and if it had, they wouldn't migrate as-is. The best approach is to start with a new migration script. To do this, add a package reference for `Microsoft.EntityFrameworkCore.Design` and open a terminal window in the project root. Then run:
+
+```terminal
+dotnet ef migrations add Initial
+```
+
+Drop the existing `eShopPorted` database if it exists, then run:
+
+```terminal
+dotnet ef database update
+```
+
+This creates and seeds the database. It's now ready to run, with a few small updates left to address.
 
 ## Fix all TODO tasks
 
+Running the ported app at this point reveals that no pictures are shown on the page. This is because the `PictureUri` property of `CatalogItem` is never set. Looking at the list of `TODO` items we created using Visual Studio's Task List, the only one that remains is in `CatalogController`, with a note to "Reference pic from wwwroot." The code in question is:
+
+```csharp
+private void AddUriPlaceHolder(CatalogItem item)
+{
+    //TODO: Reference pic from wwwroot
+    //item.PictureUri = this.Url.RouteUrl(PicController.GetPicRouteName, new { catalogItemId = item.Id }, this.Request.Url.Scheme);
+}
+```
+
+The simplest fix for this is to reference the public image files in the site's public `wwwroot/Pics` directory. This can be accomplished by replacing the method with this:
+
+```csharp
+private void AddUriPlaceHolder(CatalogItem item)
+{
+    item.PictureUri = $"/Pics/{item.Id}.png";
+}
+```
+
+With this change, running the app reveals the images work as before.
+
 ## Additional MVC Customizations
 
-- Show migrations for CORS, filters, route constraints, etc.
-- Show how to configure MVC with binders, formatters, areas, DI
-- Update framework features that depended on configuration (WCF client, tracing) to be configured in code instead
+The eShopLegacyMVC app is fairly simple, so there isn't much to configure in terms of default MVC behavior. However, if you do need to configure additional MVC components, such as CORS, filters, route constraints, etc., you generally provide this information in `Startup.ConfigureServices`, where `UseMvc` is called. For example, the following code listing configures [CORS](https://docs.microsoft.com/aspnet/core/security/cors?view=aspnetcore-2.2) and sets up a global action filter:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddCors(options =>
+    {
+        options.AddPolicy(MyAllowSpecificOrigins,
+        builder =>
+        {
+            builder.WithOrigins("http://example.com",
+                                "http://www.contoso.com")
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+        });
+    });
+
+    services.AddMvc(options =>
+    {
+      options.Filters.Add(new SampleGlobalActionFilter());
+    }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+}
+```
+
+**Note:** To finish configuring CORS, you must also call `app.UseCors()` in `Configure`.
+
+Other advanced scenarios, like adding [custom model binders](https://docs.microsoft.com/aspnet/core/mvc/advanced/custom-model-binding?view=aspnetcore-2.2), formatters, and more are covered in the detailed ASP.NET Core docs. Generally these can be applied on an individual controller or action basis, or globally using the same options approach shown in the previous code listing.
+
+## Other dependencies
+
+Dependencies that use .NET Framework features that had a dependency on the legacy configuration model, such as the WCF client type and tracing code, must be modified when ported. Rather than having these types pull in their configuration information directly, they should be configured in code. For example, a connection to a WCF service that was configured in `web.config` in an ASP.NET app to use `basicHttpBinding` could instead be configured programmatically with code like the following:
+
+```csharp
+BasicHttpBinding binding = new BasicHttpBinding();
+binding.MaxReceivedMessageSize = 2000000;
+
+var endpointAddress = new EndpointAddress("http://localhost:9200/ExampleService");
+
+var myClient = new MyServiceClient(binding, endpointAddress);
+```
+
+Rather than relying on config files for its settings, WCF clients and other .NET Framework types should have their settings specified in code. Configured in this manner, these types can continue to work in ASP.NET Core 2.2 apps.
 
 ## References
 
 - [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing)
 - [Your API and ViewModels Should Not Reference Domain Models](https://ardalis.com/your-api-and-view-models-should-not-reference-domain-models/)
 - [Developer Exception Page Middleware](https://docs.microsoft.com/aspnet/core/fundamentals/error-handling#developer-exception-page)
+- [Deep Dive into EF Core HasData](https://docs.microsoft.com/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding)
 
 >[!div class="step-by-step"]
 >[Previous](strategies-migrating-in-production.md)

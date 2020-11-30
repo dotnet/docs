@@ -12,6 +12,7 @@ The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class
  As an example, this sample shows how to implement an extension element defined in the proposed Atom Threading Extensions RFC. This is for demonstration purposes only and this sample is not intended to be a full implementation of the proposed specification.  
   
 ## Sample XML  
+
  The following XML example shows an Atom 1.0 entry with an additional `<in-reply-to>` extension element.  
   
 ```xml  
@@ -38,6 +39,7 @@ The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class
  The `<in-reply-to>` element specifies three required attributes (`ref`, `type` and `href`) while also allowing for the presence of additional extension attributes and extension elements.  
   
 ## Modeling the In-Reply-To element  
+
  In this sample, the `<in-reply-to>` element is modeled as CLR that implements <xref:System.Xml.Serialization.IXmlSerializable>, which enables its use with the <xref:System.Runtime.Serialization.DataContractSerializer>. It also implements some methods and properties for accessing the element's data, as shown in the following sample code.  
   
 ```csharp  
@@ -180,6 +182,7 @@ public void WriteXml(System.Xml.XmlWriter writer)
 ```  
   
 ## ThreadedFeed and ThreadedItem  
+
  In the sample, `SyndicationItems` with `InReplyTo` extensions are modeled by the `ThreadedItem` class. Similarly, the `ThreadedFeed` class is a `SyndicationFeed` whose items are all instances of `ThreadedItem`.  
   
  The `ThreadedFeed` class inherits from `SyndicationFeed` and overrides `OnCreateItem` to return a `ThreadedItem`. It also implements a method for accessing the `Items` collection as `ThreadedItems`, as shown in the following code.  

@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 98bf7dc4-d49a-4129-a59b-db7a7ec8c241
 ---
 # Integrating with COM+ Applications
+
 Windows Communication Foundation (WCF) provides a rich environment for creating distributed applications. If you have a substantial investment in component-based application logic hosted in COM+, you can use WCF to extend your existing logic rather than having to rewrite it. The topics within this section describe how to use COM+ with WCF.  
   
 ## In This Section  
+
  [Integrating with COM+ Applications Overview](integrating-with-com-plus-applications-overview.md)  
  Gives an overview of when and how to integrate COM+ components.  
   
@@ -27,6 +29,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
  Explains how to move a COM+ integration application.  
   
 ## Reference  
+
  <xref:System.ServiceModel>  
   
 ## See also

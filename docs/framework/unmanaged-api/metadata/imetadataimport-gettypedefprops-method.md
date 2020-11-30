@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetTypeDefProps Method
+
 Returns metadata information for the <xref:System.Type> represented by the specified TypeDef token.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT GetTypeDefProps (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] The TypeDef token that represents the type to return metadata for.  
   
@@ -52,6 +54,7 @@ HRESULT GetTypeDefProps (
  [out] A TypeDef or TypeRef metadata token that represents the base type of the requested type.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

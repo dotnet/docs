@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b0885b65-4e74-4bc9-bbf0-eb7ebe566da1
 ---
 # Behaviors
+
 This section contains samples that demonstrate Windows Communication Foundation (WCF) service behaviors.  
   
 ## In This Section  
+
  [Concurrency](concurrency.md)  
  Demonstrates using the <xref:System.ServiceModel.ServiceBehaviorAttribute> with the <xref:System.ServiceModel.ConcurrencyMode> enumeration, which controls whether an instance of a service processes messages sequentially or concurrently.  
   

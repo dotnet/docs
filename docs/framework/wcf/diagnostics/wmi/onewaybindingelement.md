@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5c7e17c3-39b9-4214-ae08-9e6141734305
 ---
 # OneWayBindingElement
+
 OneWayBindingElement  
   
 ## Syntax  
@@ -18,12 +19,15 @@ class OneWayBindingElement : BindingElement
 ```  
   
 ## Methods  
+
  The OneWayBindingElement class does not define any methods.  
   
 ## Properties  
+
  The OneWayBindingElement class has the following properties:  
   
 ### ChannelPoolSettings  
+
  Data type: ChannelPoolSettings  
   
  Access type: Read-only  
@@ -31,6 +35,7 @@ class OneWayBindingElement : BindingElement
  The channel pool settings.  
   
 ### MaxAcceptedChannels  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -38,6 +43,7 @@ class OneWayBindingElement : BindingElement
  The maximum number of accepted channels.  
   
 ### PacketRoutable  
+
  Data type: boolean  
   
  Access type: Read-only  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostManualEvent::Wait Method
+
 Causes the current [IHostManualEvent](ihostmanualevent-interface.md) instance to wait until it is owned, or a specified amount of time elapses.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT Wait (
 ```  
   
 ## Parameters  
+
  `dwMilliseconds`  
  [in] The number of milliseconds to wait before returning, if the current `IHostManualEvent` instance is not owned.  
   
@@ -48,6 +50,7 @@ HRESULT Wait (
 |HOST_E_DEADLOCK|The host detected a deadlock during the wait interval, and chose the current `IHostManualEvent` instance as the deadlock victim.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

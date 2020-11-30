@@ -2,19 +2,18 @@
 title: "Custom numeric format strings"
 description: Learn how to create a custom numeric format string to format numeric data in .NET. A custom numeric format string has one or more custom numeric specifiers.
 ms.date: "06/25/2018"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
 helpviewer_keywords:
-  - "numeric format strings [.NET Framework]"
-  - "formatting [.NET Framework], numbers"
+  - "numeric format strings [.NET]"
+  - "formatting [.NET], numbers"
   - "format strings"
   - "custom numeric format strings"
-  - "numbers [.NET Framework], formatting"
+  - "numbers [.NET], formatting"
   - "format specifiers, numeric"
-  - "formatting numbers [.NET Framework]"
+  - "formatting numbers [.NET]"
   - "format specifiers, custom numeric format strings"
 ms.assetid: 6f74fd32-6c6b-48ed-8241-3c2b86dea5f4
 ---

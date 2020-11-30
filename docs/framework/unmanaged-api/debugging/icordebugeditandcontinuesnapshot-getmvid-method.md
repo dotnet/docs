@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEditAndContinueSnapshot::GetMvid Method
+
 `GetMvid` is obsolete. Do not call this method.  
   
 ## See also

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 19710ae3-f197-4d28-ba9d-52e465006819
 ---
 # Behavior Security
+
 This section includes samples that demonstrate configuring security for service behaviors.  
   
 ## In This Section  
+
  [Service Auditing Behavior](service-auditing-behavior.md)  
  This sample demonstrates how to use the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> to enable auditing of security events during service operations.  
   

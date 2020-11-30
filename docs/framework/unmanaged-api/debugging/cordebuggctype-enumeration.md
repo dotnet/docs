@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugGCType Enumeration
+
 Indicates whether the garbage collector is running on a workstation or a server.  
   
 ## Syntax  
@@ -39,6 +40,7 @@ typedef enum CorDebugGCType {
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

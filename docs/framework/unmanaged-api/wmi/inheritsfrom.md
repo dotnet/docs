@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # InheritsFrom function
+
 Determines whether the current class or instance derives from a specified parent class.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -56,6 +57,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 This function wraps a call to the [IWbemClassObject::InheritsFrom](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-inheritsfrom) method.
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  

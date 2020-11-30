@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRProbingAssemblyEnum Interface
+
 Provides methods that enable the host to get the probing identities of an assembly by using the assembly's identity information that is internal to the common language runtime (CLR), without needing to create or understand that identity.  
   
 ## Methods  
@@ -25,9 +26,11 @@ Provides methods that enable the host to get the probing identities of an assemb
 |[Get Method](iclrprobingassemblyenum-get-method.md)|Gets the assembly identity at the specified index.|  
   
 ## Remarks  
+
  Methods such as [ICLRAssemblyIdentityManager::GetProbingAssembliesFromReference](iclrassemblyidentitymanager-getprobingassembliesfromreference-method.md) return an `ICLRProbingAssemblyEnum` instance.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

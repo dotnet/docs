@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
 ---
 # Internet Unsecured Client and Service
+
 The following illustration shows an example of a public, unsecured Windows Communication Foundation (WCF) client and service:  
   
  ![Screenshot that shows an unsecured Internet scenario](./media/internet-unsecured-client-and-service/public-unsecured-internet.gif)  
@@ -22,6 +23,7 @@ The following illustration shows an example of a public, unsecured Windows Commu
 |Confidentiality|None|  
   
 ## Service  
+
  The following code and configuration are meant to run independently. Do one of the following:  
   
 - Create a stand-alone service using the code with no configuration.  
@@ -29,12 +31,14 @@ The following illustration shows an example of a public, unsecured Windows Commu
 - Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
+
  The following code shows how to create an endpoint with no security. By default, the <xref:System.ServiceModel.BasicHttpBinding> has the security mode set to <xref:System.ServiceModel.BasicHttpSecurityMode.None>.  
   
  [!code-csharp[C_UnsecuredService#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_unsecuredservice/cs/source.cs#1)]
  [!code-vb[C_UnsecuredService#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_unsecuredservice/vb/source.vb#1)]  
   
 ### Service Configuration  
+
  The following code sets up the same endpoint using configuration.  
   
 ```xml  
@@ -62,6 +66,7 @@ The following illustration shows an example of a public, unsecured Windows Commu
 ```  
   
 ## Client  
+
  The following code and configuration are meant to run independently. Do one of the following:  
   
 - Create a stand-alone client using the code (and client code).  
@@ -72,12 +77,14 @@ The following illustration shows an example of a public, unsecured Windows Commu
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
 ### Code  
+
  The following code shows a basic WCF client that accesses an unsecured endpoint.  
   
  [!code-csharp[C_UnsecuredClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_unsecuredclient/cs/source.cs#1)]
  [!code-vb[C_UnsecuredClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_unsecuredclient/vb/source.vb#1)]  
   
 ### Client Configuration  
+
  The following code configures the client.  
   
 ```xml  

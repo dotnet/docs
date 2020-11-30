@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::Merge Method
+
 Adds the specified imported scope to the list of scopes to be merged.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT Merge (
 ```  
   
 ## Parameters  
+
  `pImport`  
  [in] A pointer to an [IMetaDataImport](imetadataimport-interface.md) object that identifies the imported scope to be merged.  
   
@@ -40,9 +42,11 @@ HRESULT Merge (
  [in] A pointer to an [IUnknown](/cpp/atl/iunknown) object that specifies the errors.  
   
 ## Remarks  
+
  Call [IMetaDataEmit::MergeEnd](imetadataemit-mergeend-method.md) to trigger the merger of metadata into a single scope.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

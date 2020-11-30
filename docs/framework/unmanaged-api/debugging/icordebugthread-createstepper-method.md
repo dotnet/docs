@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread::CreateStepper Method
+
 Creates an ICorDebugStepper object that allows stepping through the active frame of this ICorDebugThread.  
   
 ## Syntax  
@@ -28,15 +29,18 @@ HRESULT CreateStepper (
 ```  
   
 ## Parameters  
+
  `ppStepper`  
  [out] A pointer to the address of an `ICorDebugStepper` object that allows stepping through the active frame of this thread.  
   
 ## Remarks  
+
  The active frame may be unmanaged code.  
   
  The `ICorDebugStepper` interface must be used to perform the actual stepping.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

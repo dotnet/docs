@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILFrame::GetIP Method
+
 Gets the value of the instruction pointer and a bitwise combination value that describes how the value of the instruction pointer was obtained.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetIP (
 ```  
   
 ## Parameters  
+
  `pnOffset`  
  [out] The value of the instruction pointer.  
   
@@ -36,11 +38,13 @@ HRESULT GetIP (
  [out] A pointer to a bitwise combination of the CorDebugMappingResult enumeration values that describe how the value of the instruction pointer was obtained.  
   
 ## Remarks  
+
  The value of the instruction pointer is the stack frame's offset into the function's Microsoft intermediate language (MSIL) code. If the stack frame is active, this address is the next instruction to execute. If the stack frame is not active, this address is the next instruction to execute when the stack frame is reactivated.  
   
  If this frame is a just-in-time (JIT) compiled frame, the value of the instruction pointer will be determined by mapping backwards from the actual native instruction pointer, so the value may be only approximate.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

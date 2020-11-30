@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
 ---
 # WCF Security Terminology
+
 Some of the terminology used when discussing security may be unfamiliar. This topic provides short explanations of some of security terms, but is not intended to provide comprehensive documentation for every item.  
   
  For more information about terms used in Windows Communication Foundation (WCF) documentation, see [Fundamental Windows Communication Foundation Concepts](../fundamental-concepts.md).  

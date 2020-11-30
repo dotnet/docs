@@ -6,7 +6,7 @@ public class RequestEventSource : EventSource
     public static readonly RequestEventSource Log = new RequestEventSource();
 
     private IncrementingPollingCounter _requestRateCounter;
-    private int _requestCount = 0;
+    private long _requestCount = 0;
 
     private RequestEventSource() =>
         _requestRateCounter = new IncrementingPollingCounter("request-rate", this, () => _requestCount)

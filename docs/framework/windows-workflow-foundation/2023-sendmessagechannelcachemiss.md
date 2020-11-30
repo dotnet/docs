@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 93b5f0fa-c09e-4252-91b1-898ead4d0f2d
 ---
 # 2023 - SendMessageChannelCacheMiss
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 93b5f0fa-c09e-4252-91b1-898ead4d0f2d
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a cache miss in the SendMessageChannelCache.  
   
 ## Message  
+
  SendMessageChannelCache miss  
   
 ## Details  

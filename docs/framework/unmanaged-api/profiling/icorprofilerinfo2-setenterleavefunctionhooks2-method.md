@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::SetEnterLeaveFunctionHooks2 Method
+
 Specifies profiler-implemented functions to be called on the updated versions of the "enter", "leave", and "tailcall" hooks of managed functions.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SetEnterLeaveFunctionHooks2(
 ```  
   
 ## Parameters  
+
  `pFuncEnter`  
  [in] A pointer to the implementation to be used as the [FunctionEnter2](functionenter2-function.md) callback.  
   
@@ -39,6 +41,7 @@ HRESULT SetEnterLeaveFunctionHooks2(
  [in] A pointer to the implementation to be used as the [FunctionTailcall2](functiontailcall2-function.md) callback.  
   
 ## Remarks  
+
  The `SetEnterLeaveFunctionHooks2` method is similar to the [ICorProfilerInfo::SetEnterLeaveFunctionHooks](icorprofilerinfo-setenterleavefunctionhooks-method.md) method. Use the former to specify functions to be used as the newer versions of the enter/leave/tailcall callbacks, and the latter to specify functions to be used as the older versions of the enter/leave/tailcall callbacks.  
   
  Only one set of callbacks may be active at a time. Thus, if a profiler calls both `ICorProfilerInfo::SetEnterLeaveFunctionHooks` and `SetEnterLeaveFunctionHooks2`, `SetEnterLeaveFunctionHooks2` is used.  
@@ -46,6 +49,7 @@ HRESULT SetEnterLeaveFunctionHooks2(
  The `SetEnterLeaveFunctionHooks2` method may be called only from the profiler's [ICorProfilerCallback::Initialize](icorprofilercallback-initialize-method.md) callback.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b3bc7f31-95ff-46e1-8308-d206ec426f6e
 ---
 # KnownAssemblyAttribute
+
 This sample demonstrates how the serialization and deserialization processes can be customized by using the <xref:System.Runtime.Serialization.DataContractResolver> class. This sample shows how to dynamically add known types during serialization and deserialization.  
   
 ## Sample Details  
+
  This sample is composed of four projects. One of them corresponds to the service, to be hosted by IIS, which defines the following service contract.  
   
 ```csharp

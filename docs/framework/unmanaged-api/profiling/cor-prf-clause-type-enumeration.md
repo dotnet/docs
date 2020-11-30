@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_PRF_CLAUSE_TYPE Enumeration
+
 Indicates the type of exception clause that the code has just entered or left.  
   
 ## Syntax  
@@ -39,6 +40,7 @@ typedef enum {
 |`COR_PRF_CLAUSE_FINALLY`|The exception clause is a `finally` statement.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

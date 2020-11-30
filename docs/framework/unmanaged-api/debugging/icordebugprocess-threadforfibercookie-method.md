@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess::ThreadForFiberCookie Method
+
 This method is not implemented.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT ThreadForFiberCookie (
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

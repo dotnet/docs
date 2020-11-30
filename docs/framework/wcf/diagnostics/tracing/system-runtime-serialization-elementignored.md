@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 795fc64f-07af-4b88-9256-1b154d2b209d
 ---
 # System.Runtime.Serialization.ElementIgnored
+
 System.Runtime.Serialization.ElementIgnored  
   
 ## Description  
+
  An unrecognized element was encountered in the XML during deserialization, which was ignored.  
   
 ## See also

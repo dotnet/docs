@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRPolicyManager::SetUnhandledExceptionPolicy Method
+
 Specifies the behavior of the common language runtime (CLR) when an unhandled exception occurs.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetUnhandledExceptionPolicy (
 ```  
   
 ## Parameters  
+
  `policy`  
  [in] One of the [EClrUnhandledException](eclrunhandledexception-enumeration.md) values, indicating whether the behavior is set by the CLR or the host.  
   
@@ -43,9 +45,11 @@ HRESULT SetUnhandledExceptionPolicy (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  By default, the CLR is the final handler for all unhandled exceptions, and its default behavior is to tear down the process. The host can change this behavior by setting the `policy` value to eHostDeterminedPolicy. This value allows the host to implement its own default behavior, as with earlier versions of the CLR.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

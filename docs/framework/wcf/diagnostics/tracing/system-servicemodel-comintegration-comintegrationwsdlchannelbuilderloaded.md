@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b816e27e-e902-4009-bd61-325d68195f28
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationWsdlChannelBuilderLoaded
+
 System.ServiceModel.ComIntegration.ComIntegrationWsdlChannelBuilderLoaded  
   
 ## Description  
+
  ComPlus: The WSDL channel builder is loaded.  
   
 ## See also

@@ -12,6 +12,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILCode2 Interface
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  Logically extends the [ICorDebugILCode](icordebugilcode-interface.md) interface to provide methods that return the token for a function's local variable signature, and that map a profiler's instrumented intermediate language (IL) offsets to original method IL offsets.  
@@ -24,6 +25,7 @@ topic_type:
 |[GetLocalVarSigToken Method](icordebugilcode2-getlocalvarsigtoken-method.md)|Gets the metadata token for the local variable signature for the function that is represented by this instance.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

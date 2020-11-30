@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1bd2e4ed-a557-43f9-ba98-4c70cb75c154
 ---
 # How to: Create a Transactional Service
+
 This sample demonstrates various aspects of creating a transactional service and the use of a client-initiated transaction to coordinate service operations.  
   
 ### Creating a transactional service  

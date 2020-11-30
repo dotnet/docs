@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: eaaa7651-e6e5-4fae-9dad-c1867d38b586
 ---
 # MsmqIntegrationBindingElement
+
 MsmqIntegrationBindingElement  
   
 ## Syntax  
@@ -16,12 +17,15 @@ class MsmqIntegrationBindingElement : MsmqBindingElementBase
 ```  
   
 ## Methods  
+
  The MsmqIntegrationBindingElement class does not define any methods.  
   
 ## Properties  
+
  The MsmqIntegrationBindingElement class has the following property:  
   
 ### SerializationFormat  
+
  Data type: string  
   
  Access type: Read-only  

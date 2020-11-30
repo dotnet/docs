@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # GetMethodOrigin function
+
 Determines the class in which a method is declared.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -64,6 +65,7 @@ Because a class can inherit methods from one or more base classes, developers of
 The `pstrClassName` parameter must not point to a valid `BSTR` before the function is called because this is an `out` parameter; this pointer is not deallocated after the function returns.
 
 ## Requirements  
+
 **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  

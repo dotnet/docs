@@ -13,21 +13,27 @@ helpviewer_keywords:
 ms.assetid: 2f5d9e7c-ae51-4155-a435-54347aa1f091
 ---
 # marshalCleanupError MDA
+
 The `marshalCleanupError` managed debugging assistant (MDA) is activated when the common language runtime (CLR) encounters an error while attempting to clean up temporary structures and memory used for marshaling data types between native and managed code boundaries.  
   
 ## Symptoms  
+
  A memory leak occurs when making native and managed code transitions, runtime state such as thread culture is not restored, or errors occur in <xref:System.Runtime.InteropServices.SafeHandle> cleanup.  
   
 ## Cause  
+
  An unexpected error occurred while cleaning up temporary structures.  
   
 ## Resolution  
+
  Review all <xref:System.Runtime.InteropServices.SafeHandle> destructor, finalizer, and custom marshaler implementations for errors.  
   
 ## Effect on the Runtime  
+
  This MDA has no effect on the CLR.  
   
 ## Output  
+
  A message reporting the operation that failed during cleanup.  
   
 ## Configuration  

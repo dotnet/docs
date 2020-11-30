@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::SetEventMask Method
+
 Sets a value that specifies the types of events for which the profiler wants to receive notification from the common language runtime (CLR).  
   
 ## Syntax  
@@ -27,6 +28,7 @@ HRESULT SetEventMask(
 ```  
   
 ## Parameters  
+
  `dwEvents`  
  [in] A 4-byte value that specifies the categories of events. Each bit controls a different capability, behavior, or type of event. The bits are described in the [COR_PRF_MONITOR](cor-prf-monitor-enumeration.md) enumeration.  
   
@@ -36,6 +38,7 @@ HRESULT SetEventMask(
 > You should call the [SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) method instead of this method. Although the `SetEventMask` method continues to be supported, [SetEventMask2](icorprofilerinfo5-seteventmask2-method.md) provides additional functionality.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

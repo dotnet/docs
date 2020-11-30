@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStepper::Step Method
+
 Causes this ICorDebugStepper to single-step through its containing thread, and optionally, to continue single-stepping through functions that are called within the thread.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT Step (
 ```  
   
 ## Parameters  
+
  `bStepIn`  
  [in] Set to `true` to step into a function that is called within the thread. Set to `false` to step over the function.  
   
 ## Remarks  
+
  The step completes when the common language runtime performs the next managed instruction in this stepper's frame. If `Step` is called on a stepper, which is not in managed code, the step will complete when the next managed code instruction is executed by the thread.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

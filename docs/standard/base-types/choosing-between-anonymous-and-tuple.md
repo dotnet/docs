@@ -4,7 +4,6 @@ description: Learn when it's appropriate to choose between anonymous types, and 
 author: IEvangelist
 ms.author: dapine
 ms.date: 07/01/2020
-ms.technology: dotnet-standard
 ---
 # Choosing between anonymous and tuple types
 

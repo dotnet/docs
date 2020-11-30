@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 32485d0a-dcdb-45bc-b1e3-79fa9ad9439b
 ---
 # 119 - WorkflowInstanceUpdatedRecord
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 32485d0a-dcdb-45bc-b1e3-79fa9ad9439b
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a workflow instance is updated.  
   
 ## Message  
+
  TrackRecord= WorkflowInstanceUpdatedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, State = %5, OriginalDefinitionIdentity = %6, UpdatedDefinitionIdentity = %7, Annotations = %8, ProfileName = %9  
   
 ## Details  

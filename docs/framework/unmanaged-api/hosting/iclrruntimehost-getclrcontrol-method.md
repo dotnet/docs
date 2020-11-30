@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeHost::GetCLRControl Method
+
 Gets an interface pointer of type [ICLRControl Interface](iclrcontrol-interface.md) that hosts can use to customize aspects of the common language runtime (CLR).  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetCLRControl(
 ```  
   
 ## Parameters  
+
  `pCLRControl`  
  [out] An interface pointer of type [ICLRControl Interface](iclrcontrol-interface.md) that enables hosts to configure additional aspects of the CLR.  
   
@@ -44,9 +46,11 @@ HRESULT GetCLRControl(
 |HOST_E_INVALIDOPERATION|The CLR has already started.|  
   
 ## Remarks  
+
  `ICLRControl` provides the [GetCLRManager Method](iclrcontrol-getclrmanager-method.md) method, which enables the host to get an interface pointer to one of the manager types.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

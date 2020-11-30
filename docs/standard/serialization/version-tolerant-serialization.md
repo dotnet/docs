@@ -1,6 +1,6 @@
 ---
 title: "Version tolerant serialization"
-description: The .NET Framework 2.0 introduces Version Tolerant Serialization, a set of features that make it easier to modify serializable types.
+description: Learn about Version Tolerant Serialization, a set of features that make it easier to modify serializable types.
 ms.date: "08/08/2017"
 dev_langs: 
   - "csharp"
@@ -17,12 +17,12 @@ ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
 ---
 # Version tolerant serialization
 
-In version 1.0 and 1.1 of the .NET Framework, creating serializable types that would be reusable from one version of an application to the next was problematic. If a type was modified by adding extra fields, the following problems would occur:
+In the earliest versions of .NET Framework, creating serializable types that would be reusable from one version of an application to the next was problematic. If a type was modified by adding extra fields, the following problems would occur:
 
 - Older versions of an application would throw exceptions when asked to deserialize new versions of the old type.
 - Newer versions of an application would throw exceptions when deserializing older versions of a type with missing data.
 
-Version Tolerant Serialization (VTS) is a set of features introduced in .NET Framework 2.0 that makes it easier, over time, to modify serializable types. Specifically, the VTS features are enabled for classes to which the <xref:System.SerializableAttribute> attribute has been applied, including generic types. VTS makes it possible to add new fields to those classes without breaking compatibility with other versions of the type. For a working sample application, see [Version Tolerant Serialization Technology Sample](basic-serialization-technology-sample.md).
+Version Tolerant Serialization (VTS) is a set of features that makes it easier, over time, to modify serializable types. Specifically, the VTS features are enabled for classes to which the <xref:System.SerializableAttribute> attribute has been applied, including generic types. VTS makes it possible to add new fields to those classes without breaking compatibility with other versions of the type. For a working sample application, see [Version Tolerant Serialization Technology Sample](basic-serialization-technology-sample.md).
 
 The VTS features are enabled when using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. Additionally, all features except extraneous data tolerance are also enabled when using the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>. For more information about using these classes for serialization, see [Binary Serialization](binary-serialization.md).
 
@@ -182,9 +182,7 @@ End Class
 
 ## The VersionAdded property
 
-The **OptionalFieldAttribute** has the **VersionAdded** property. In version 2.0 of the .NET Framework, this isn't used. However, it's important to set this property correctly to ensure that the type will be compatible with future serialization engines.
-
-The property indicates which version of a type a given field has been added. It should be incremented by exactly one (starting at 2) every time the type is modified, as shown in the following example:
+The **OptionalFieldAttribute** has the **VersionAdded** property. The property indicates which version of a type a given field has been added. It should be incremented by exactly one (starting at 2) every time the type is modified, as shown in the following example:
 
 ```csharp
 // Version 1.0

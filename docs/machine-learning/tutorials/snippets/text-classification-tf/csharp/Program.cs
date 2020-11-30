@@ -87,7 +87,7 @@ namespace TextClassificationTF
                 // </SnippetScoreTensorFlowModel>
 
                 // <SnippetCopyColumns>
-                // Retrieves the 'Prediction' from TensorFlow and and copies to a column
+                // Retrieves the 'Prediction' from TensorFlow and copies to a column
                 .Append(mlContext.Transforms.CopyColumns("Prediction", "Prediction/Softmax"));
             // </SnippetCopyColumns>
 

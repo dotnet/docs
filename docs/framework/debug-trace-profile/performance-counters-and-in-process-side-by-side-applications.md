@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: 6888f9be-c65b-4b03-a07b-df7ebdee2436
 ---
 # Performance Counters and In-Process Side-By-Side Applications
+
 Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the performance counters on a per-runtime basis. This topic describes the registry change needed to enable this functionality.  
   
 ## The Default Behavior  
+
  By default, the Performance Monitor displays performance counters on a per-application basis. However, there are two scenarios in which this is problematic:  
   
 - When you monitor two applications that have the same name. For example, if both applications are named myapp.exe, one will be displayed as **myapp** and the other as **myapp#1** in the **Instance** column. In this case, it is difficult to match a performance counter to a particular application. It is not clear whether the data collected for **myapp#1** refers to the first myapp.exe or the second myapp.exe.  
@@ -25,6 +27,7 @@ Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the
  You can set a registry key to eliminate this ambiguity. For applications developed using the .NET Framework 4, this registry change adds a process identifier followed by a runtime instance identifier to the application name in the **Instance** column. Instead of *application* or *application*#1, the application is now identified as *application*_`p`*processID*\_`r`*runtimeID* in the **Instance** column. If an application was developed using a previous version of the common language runtime, that instance is represented as *application\_*`p`*processID* provided that the .NET Framework 4 is installed.  
   
 ## Performance Counters for In-Process Side-by-Side Applications  
+
  To handle performance counters for multiple common language runtime versions that are hosted in a single application, you must change a single registry key setting, as shown in the following table.  
   
 |||  

@@ -32,12 +32,14 @@ A subclass of "ICorDebugValue" that represents a value that contains an object.
 |[SetFromManagedCopy Method](icordebugobjectvalue-setfrommanagedcopy-method.md)|Obsolete. Do not call this method.|  
   
 ## Remarks  
+
  An `ICorDebugObjectValue` remains valid until the process being debugged is continued.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

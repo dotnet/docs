@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ad4ba56d-3bcb-4c10-ba90-1cc66e2175a1
 ---
 # \<Property> Element (.NET Native)
+
 Applies runtime reflection policy to a property.  
   
 ## Syntax  
@@ -16,6 +17,7 @@ Applies runtime reflection policy to a property.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -40,6 +42,7 @@ Applies runtime reflection policy to a property.
 |*policy_setting*|The setting to apply to this policy type for the property. Possible values are `Auto`, `Excluded`, `Included`, and `Required`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -50,9 +53,11 @@ Applies runtime reflection policy to a property.
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type and all its members.|  
   
 ## Remarks  
+
  If a property's policy is not explicitly defined, it inherits the runtime policy of its parent element.  
   
 ## Example  
+
  The following example uses reflection to instantiate a `Book` object and display its property values. The original default.rd.xml file for the project appears as follows:  
   
 ```xml  

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: bb0190ff-0738-4e54-8d22-c97d343708bf
 ---
 # How to: Create a Service that Employs a Custom Certificate Validator
+
 This topic shows how to implement a custom certificate validator and how to configure client or service credentials to replace the default certificate validation logic with the custom certificate validator.  
   
  If the X.509 certificate is used to authenticate a client or service, Windows Communication Foundation (WCF) by default uses the Windows certificate store and Crypto API to validate the certificate and to ensure that it is trusted. Sometimes the built-in certificate validation functionality is not enough and must be changed. WCF provides an easy way to change the validation logic by allowing users to add a custom certificate validator. If a custom certificate validator is specified, WCF does not use the built-in certificate validation logic but relies on the custom validator instead.  
@@ -117,9 +118,11 @@ This topic shows how to implement a custom certificate validator and how to conf
 ## Example  
   
 ### Description  
+
  The following sample shows an implementation of a custom certificate validator and its usage on the service.  
   
 ### Code  
+
  [!code-csharp[c_CustomCertificateValidator#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customcertificatevalidator/cs/source.cs#3)]
  [!code-vb[c_CustomCertificateValidator#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customcertificatevalidator/vb/source.vb#3)]  
   

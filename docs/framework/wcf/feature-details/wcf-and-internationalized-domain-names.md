@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: c8a3e10a-8bc2-4a78-8d86-a562ba6e65fa
 ---
 # WCF and Internationalized Domain Names
+
 Support has been added to allow for WCF services with Internationalized Domain Names (IDN). An internationalized domain name is a domain name that contains non-ASCII characters. This support includes both the ability to host a WCF service with an IDN name and a WCF client to talk to a web service with an IDN name.  
   
 ## System.Uri and IDN  
+
  <xref:System.Uri> has two properties <xref:System.Uri.Host%2A> and <xref:System.Uri.DnsSafeHost%2A>. These properties contain Unicode or Punycode values depending upon the IDN configuration settings.  
   
  IDN is enabled in an application’s configuration file using the following XML  

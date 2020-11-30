@@ -2,7 +2,6 @@
 title: Alternation Constructs in .NET Regular Expressions
 description: Learn how to use alternation constructs for conditional matching in regular expressions.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,7 +12,7 @@ helpviewer_keywords:
   - "alternation constructs"
   - "optional matching patterns"
   - "constructs, alternation"
-  - ".NET Framework regular expressions, alternation constructs"
+  - ".NET regular expressions, alternation constructs"
 ms.assetid: 071e22e9-fbb0-4ecf-add1-8d2424f9f2d1
 ---
 # Alternation Constructs in Regular Expressions
@@ -25,6 +24,7 @@ Alternation constructs modify a regular expression to enable either/or or condit
 - [Conditional matching based on a valid captured group](#Conditional_Group)
 
 <a name="Either_Or"></a>
+
 ## Pattern Matching with &#124;
 
 You can use the vertical bar (`|`) character to match any one of a series of patterns, where the `|` character separates each pattern.
@@ -57,6 +57,7 @@ The regular expression `\b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` is interpreted as s
 |`\b`|End the match at a word boundary.|  
   
 <a name="Conditional_Expr"></a>
+
 ## Conditional matching with an expression
 
 This language element attempts to match one of two patterns depending on whether it can match an initial pattern. Its syntax is:  
@@ -88,6 +89,7 @@ The regular expression pattern `\b(?(\d{2}-)\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` is
 |`\b`|Match a word boundary.|  
 
 <a name="Conditional_Group"></a>
+
 ## Conditional matching based on a valid captured group
 
 This language element attempts to match one of two patterns depending on whether it has matched a specified capturing group. Its syntax is:

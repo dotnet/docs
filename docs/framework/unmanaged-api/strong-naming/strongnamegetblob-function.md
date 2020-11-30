@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameGetBlob Function
+
 Fills the specified buffer with the binary representation of the executable file at the specified address.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameGetBLob](../hosting/iclrstrongname-strongnamegetblob-method.md) method instead.  
@@ -31,6 +32,7 @@ BOOLEAN StrongNameGetBlob (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] A valid path to the executable file to be loaded.  
   
@@ -41,12 +43,15 @@ BOOLEAN StrongNameGetBlob (
  [in, out] The requested maximum size, in bytes, of `pbBlob`. Upon return, the actual size, in bytes, of `pbBlob`.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
+
  If the `StrongNameGetBlob` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

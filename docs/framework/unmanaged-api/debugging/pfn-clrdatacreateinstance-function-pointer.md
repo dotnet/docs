@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # PFN_CLRDataCreateInstance Function Pointer
+
 Points to a function that creates an interface object for the specified target item.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (
 ```  
   
 ## Parameters  
+
  `iid`  
  [in] The identifier of the interface to be instantiated.  
   
@@ -39,9 +41,11 @@ typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (
  [out] A pointer to the address of the returned interface object.  
   
 ## Remarks  
+
  The `ICLRDataTarget` object is implemented by the writer of the debugging application. The implementation depends on the type of target item being represented. The target item may be a process, memory dump, remote machine, and so on.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl  

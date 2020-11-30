@@ -27,7 +27,7 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 | 4.0                    | Windows SDK for Windows 7 and .NET Framework 4         |
 | 2.0, 3.0, and 3.5      | .NET Framework 3.5 SP1 Runtime (or Windows 8+ version) |
 
-## How to target the .NET Standard
+## How to target .NET Standard
 
 If you're not familiar with .NET Standard, refer to [.NET Standard](../../standard/net-standard.md) to learn more.
 
@@ -179,7 +179,7 @@ namespace MultitargetLib
             return $"Dotnet Foundation mentions .NET {dotNetCount} times!";
         }
 #else
-        // .NET 4.5+ can use async/await!
+        // .NET Framework 4.5+ can use async/await!
         public async Task<string> GetDotNetCountAsync()
         {
             string url = "https://www.dotnetfoundation.org/";

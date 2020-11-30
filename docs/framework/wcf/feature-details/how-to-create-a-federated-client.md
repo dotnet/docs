@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 56ece47e-98bf-4346-b92b-fda1fc3b4d9c
 ---
 # How to: Create a Federated Client
+
 In Windows Communication Foundation (WCF), creating a client for a *federated service* consists of three main steps:  
   
 1. Configure a [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) or similar custom binding. For more information about creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md). Alternatively, run the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) against the metadata endpoint of the federated service to generate a configuration file for communicating with the federated service and one or more security token services.  
@@ -135,20 +136,24 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
     ```  
   
 ## Example  
+
  The following code sample configures an instance of the <xref:System.ServiceModel.Security.IssuedTokenClientCredential> class in code.  
   
  [!code-csharp[c_FederatedClient#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_federatedclient/cs/source.cs#2)]
  [!code-vb[c_FederatedClient#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federatedclient/vb/source.vb#2)]  
   
 ## .NET Framework Security  
+
  To prevent possible information disclosure, clients that are running the Svcutil.exe tool to process metadata from federated endpoints should ensure that the resulting security token service addresses are what they expect. This is especially important when a security token service exposes multiple endpoints, because the Svcutil.exe tool generates the resulting configuration file to use the first such endpoint, which may not be the one the client should be using.  
   
 ## LocalIssuer Required  
+
  If clients are expected to always use a local issuer, note the following: the default output of Svcutil.exe results in the local issuer not being used if the second-to-last security token service in the chain specifies an issuer address or issuer metadata address.  
   
  For more information about setting the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerAddress%2A>, <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerBinding%2A>, and <xref:System.ServiceModel.Security.IssuedTokenClientCredential.LocalIssuerChannelBehaviors%2A> properties of the <xref:System.ServiceModel.Security.IssuedTokenClientCredential> class, see [How to: Configure a Local Issuer](how-to-configure-a-local-issuer.md).  
   
 ## Scoped Certificates  
+
  If service certificates must be specified for communicating with any of the security token services, typically because certificate negotiation is not being used, they can be specified using the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property of the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential> class. The <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetDefaultCertificate%2A> method takes a <xref:System.Uri> and an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> as parameters. The specified certificate is used when communicating with endpoints at the specified URI. Alternatively, you can use the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.SetScopedCertificate%2A> method to add a certificate to the collection returned by the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property.  
   
 > [!NOTE]

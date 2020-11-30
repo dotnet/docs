@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: b9170583-8c34-43bd-97bb-6c0c8dddeee0
 ---
 # Importing Schema to Generate Classes
+
 To generate classes from schemas that are usable with Windows Communication Foundation (WCF), use the <xref:System.Runtime.Serialization.XsdDataContractImporter> class. This topic describes the process and variations.  
   
 ## The Import Process
+
  The schema import process starts with an <xref:System.Xml.Schema.XmlSchemaSet> and produces a <xref:System.CodeDom.CodeCompileUnit>.  
   
  The `XmlSchemaSet` is a part of the .NET Framework’s Schema Object Model (SOM) that represents a set of XML Schema definition language (XSD) schema documents. To create an `XmlSchemaSet` object from a set of XSD documents, deserialize each document into an <xref:System.Xml.Schema.XmlSchema> object (using the <xref:System.Xml.Serialization.XmlSerializer>) and add these objects to a new `XmlSchemaSet`.  
@@ -39,9 +41,11 @@ To generate classes from schemas that are usable with Windows Communication Foun
 5. Access the `CodeCompileUnit` through the <xref:System.Runtime.Serialization.XsdDataContractImporter.CodeCompileUnit%2A> property.  
   
 ### Import Options: Customizing the Generated Types  
+
  You can set the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property of the <xref:System.Runtime.Serialization.XsdDataContractImporter> to an instance of the <xref:System.Runtime.Serialization.ImportOptions> class to control various aspects of the import process. A number of options directly influence the types that are generated.  
   
 #### Controlling the Access Level (GenerateInternal or the /internal switch)  
+
  This corresponds to the **/internal** switch on the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
  Normally, public types are generated from schema, with private fields and matching public data member properties. To generate internal types instead, set the <xref:System.Runtime.Serialization.ImportOptions.GenerateInternal%2A> property to `true`.  
@@ -52,6 +56,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  [!code-vb[c_SchemaImportExport#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb/source.vb#2)]  
   
 #### Controlling Namespaces (Namespaces or the /namespace switch)  
+
  This corresponds to the **/namespace** switch on the `Svcutil.exe` tool.  
   
  Normally, types generated from schema are generated into .NET Framework namespaces, with each XSD namespace corresponding to a particular .NET Framework namespace according to a mapping described in [Data Contract Schema Reference](data-contract-schema-reference.md). You can customize this mapping by the <xref:System.Runtime.Serialization.ImportOptions.Namespaces%2A> property to a <xref:System.Collections.Generic.Dictionary%602>. If a given XSD namespace is found in the dictionary, the matching .NET Framework namespace is also taken from your dictionary.  
@@ -66,6 +71,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  [!code-vb[c_SchemaImportExport#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb/source.vb#8)]  
   
 #### Adding the SerializableAttribute (GenerateSerializable or the /serializable switch)  
+
  This corresponds to the **/serializable** switch on the `Svcutil.exe` tool.  
   
  Sometimes it is important for the types generated from the schema to be usable with .NET Framework runtime serialization engines (for example, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> classes). This is useful when using types for .NET Framework remoting. To enable this, you must apply the <xref:System.SerializableAttribute> attribute to the generated types in addition to the regular <xref:System.Runtime.Serialization.DataContractAttribute> attribute. The attribute is generated automatically if the `GenerateSerializable` import option is set to `true`.  
@@ -76,6 +82,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  [!code-vb[c_SchemaImportExport#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb/source.vb#4)]  
   
 #### Adding Data Binding Support (EnableDataBinding or the /enableDataBinding switch)  
+
  This corresponds to the **/enableDataBinding** switch on the Svcutil.exe tool.  
   
  Sometimes, you may want to bind the types generated from the schema to graphical user interface components so that any update to instances of these types will automatically update the UI. The `XsdDataContractImporter` can generate types that implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface in such a way that any property change triggers an event. If you are generating types for use with a client UI programming environment that supports this interface (such as Windows Presentation Foundation (WPF)), set the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> property to `true` to enable this feature.  
@@ -86,6 +93,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  [!code-vb[C_SchemaImportExport#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb/source.vb#5)]  
   
 ### Import Options: Choosing Collection Types  
+
  Two special patterns in XML represent collections of items: lists of items and associations between one item and another. The following is an example of a list of strings.  
   
  [!code-xml[C_SchemaImportExport#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#11)]  
@@ -124,6 +132,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  The `ReferencedCollectionTypes` property corresponds to the **/collectionType** switch on the SvcUtil.exe tool. Note that to reference multiple collection types, the **/collectionType** switch must be specified multiple times. If the type is not in the MsCorLib.dll, its assembly must also be referenced using the **/reference** switch.  
   
 #### Import Options: Referencing Existing Types  
+
  Occasionally, types in schema correspond to existing .NET Framework types, and there is no need to generate these types from scratch. (This section applies only to noncollection types. For collection types, see the preceding section.)  
   
  For example, you may have a standard company-wide "Person" data contract type that you always want used when representing a person. Whenever some service makes use of this type, and its schema appears in the service metadata, you may want to reuse the existing `Person` type when importing this schema instead of generating a new one for every service.  
@@ -138,6 +147,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
 > When using the Svcutil.exe or (in Visual Studio) the **Add Service Reference** tools, all of the types in MsCorLib.dll are automatically referenced.  
   
 #### Import Options: Importing Non-DataContract Schema as IXmlSerializable types  
+
  The <xref:System.Runtime.Serialization.XsdDataContractImporter> supports a limited subset of the schema. If unsupported schema constructs are present (for example, XML attributes), the import attempt fails with an exception. However, setting the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property to `true` extends the range of schema supported. When set to `true`, the <xref:System.Runtime.Serialization.XsdDataContractImporter> generates types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface. This enables direct access to the XML representation of these types.  
   
 ##### Design Considerations  
@@ -155,6 +165,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  The <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> option corresponds to the **/importXmlTypes** switch on the Svcutil.exe tool.  
   
 ##### Working with Generated IXmlSerializable Types  
+
  The generated `IXmlSerializable` types contain a private field, named "nodesField," that returns an array of <xref:System.Xml.XmlNode> objects. When deserializing an instance of such a type, you can access the XML data directly through this field by using the XML Document Object Model. When serializing an instance of this type, you can set this field to the desired XML data and it will be serialized.  
   
  This is accomplished through the `IXmlSerializable` implementation. In the generated `IXmlSerializable` type, the <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> implementation calls the <xref:System.Runtime.Serialization.XmlSerializableServices.ReadNodes%2A> method of the <xref:System.Runtime.Serialization.XmlSerializableServices> class. The method is a helper method that converts XML provided through an <xref:System.Xml.XmlReader> to an array of <xref:System.Xml.XmlNode> objects. The <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A> implementation does the opposite and converts the array of `XmlNode` objects to a sequence of <xref:System.Xml.XmlWriter> calls. This is accomplished using the <xref:System.Runtime.Serialization.XmlSerializableServices.WriteNodes%2A> method.  
@@ -167,6 +178,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
 > The <xref:System.Runtime.Serialization.XmlSerializableServices> type exists solely to support this particular feature. It is not recommended for use for any other purpose.  
   
 #### Import Options: Advanced Options  
+
  The following are advanced import options:  
   
 - <xref:System.Runtime.Serialization.ImportOptions.CodeProvider%2A> property. Specify the <xref:System.CodeDom.Compiler.CodeDomProvider> to use to generate the code for the generated classes. The import mechanism attempts to avoid features that the <xref:System.CodeDom.Compiler.CodeDomProvider> does not support. If the <xref:System.Runtime.Serialization.ImportOptions.CodeProvider%2A> is not set, the full set of .NET Framework features is used with no restrictions.  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # MDAInfo Structure
+
 Provides details about the `Event_MDAFired` event, which triggers the creation of a managed debugging assistant (MDA).  
   
 ## Syntax  
@@ -35,6 +36,7 @@ typedef struct _MDAInfo {
 |`lpMDAMessage`|The output message provided by the current MDA.|  
   
 ## Remarks  
+
  Managed debugging assistants (MDAs) are debugging aids that work in conjunction with the common language runtime (CLR) to perform tasks such as identifying invalid conditions in the runtime execution engine or dumping additional information about the state of the engine. MDAs generate XML messages about events that are otherwise difficult to trap. They are especially useful for debugging transitions between managed and unmanaged code.  
   
  The runtime takes the following steps when an event that triggers the creation of an MDA is fired:  
@@ -46,6 +48,7 @@ typedef struct _MDAInfo {
  The host can choose to activate MDAs and to be notified when an MDA is activated. This gives the host an opportunity to override default behavior and to abort the managed thread that raised the event, to prevent it from corrupting the process state. For more information about using MDAs, see [Diagnosing Errors with Managed Debugging Assistants](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  

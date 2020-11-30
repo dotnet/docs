@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3abd2071-0f28-40ba-b9a0-d52bd94cd2f6
 ---
 # \<ImpliesType> Element (.NET Native)
+
 Applies policy to a type, if that policy has been applied to the containing type or method.  
   
 ## Syntax  
@@ -23,6 +24,7 @@ Applies policy to a type, if that policy has been applied to the containing type
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -54,6 +56,7 @@ Applies policy to a type, if that policy has been applied to the containing type
 |*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -65,6 +68,7 @@ Applies policy to a type, if that policy has been applied to the containing type
 |[\<Method>](method-element-net-native.md)|Applies reflection policy to a method.|  
   
 ## Remarks  
+
  The `<ImpliesType>` element is primarily intended for use by libraries. It addresses the following scenario:  
   
 - If a routine needs to reflect on one type, it necessarily needs to reflect on a second type.  

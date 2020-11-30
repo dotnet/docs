@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_ACTIVE_FUNCTION Structure
+
 Contains information about the functions that are currently active in a thread's frames. This structure is used by the [ICorDebugThread2::GetActiveFunctions](icordebugthread2-getactivefunctions-method.md) method.  
   
 ## Syntax  
@@ -41,6 +42,7 @@ typedef struct  _COR_ACTIVE_FUNCTION {
 |`flags`|Reserved for future extensibility.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  

@@ -2,18 +2,17 @@
 title: "Custom date and time format strings"
 description: Learn to use custom date and time format strings to convert DateTime or DateTimeOffset values into text representations, or to parse strings for dates & times.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.topic: reference
 dev_langs: 
 - "csharp"
 - "vb"
 helpviewer_keywords: 
-  - "formatting [.NET Framework], dates"
+  - "formatting [.NET], dates"
   - "custom DateTime format string"
   - "format specifiers, custom date and time"
   - "format strings"
   - "custom date and time format strings"
-  - "formatting [.NET Framework], time"
+  - "formatting [.NET], time"
   - "date and time strings"
 ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
 ---
@@ -626,6 +625,7 @@ The following example includes the "zzz" custom format specifier in a custom for
 ## Date and time separator specifiers
 
 ### <a name="timeSeparator"></a> The ":" custom format specifier
+
 The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds. The appropriate localized time separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> property of the current or specified culture.
 
 > [!NOTE]

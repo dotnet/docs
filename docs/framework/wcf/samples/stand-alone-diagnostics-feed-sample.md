@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d31c6c1f-292c-4d95-8e23-ed8565970ea5
 ---
 # Stand-Alone Diagnostics Feed Sample
+
 This sample demonstrates how to create an RSS/Atom feed for syndication with Windows Communication Foundation (WCF). It is a basic "Hello World" program that shows the basics of the object model and how to set it up on a Windows Communication Foundation (WCF) service.  
   
  WCF models syndication feeds as service operations that return a special data type, <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter>. Instances of <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> can serialize a feed into both the RSS 2.0 and Atom 1.0 formats. The following sample code shows the contract used.  

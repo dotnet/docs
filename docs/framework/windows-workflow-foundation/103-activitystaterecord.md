@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 57636a9a-561e-44aa-aef9-1f1894aaa6dd
 ---
 # 103 - ActivityStateRecord
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 57636a9a-561e-44aa-aef9-1f1894aaa6dd
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a activity within a workflow instance emits ActivityStateRecord  
   
 ## Message  
+
  TrackRecord = ActivityStateRecord, InstanceID = %1, RecordNumber=%2, EventTime=%3, State = %4, Name=%5, ActivityId=%6, ActivityInstanceId=%7, ActivityTypeName=%8, Arguments=%9, Variables=%10, Annotations=%11, ProfileName = %12  
   
 ## Details  

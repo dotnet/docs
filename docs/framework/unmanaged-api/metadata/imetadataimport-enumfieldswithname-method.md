@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::EnumFieldsWithName Method
+
 Enumerates FieldDef tokens of the specified type with the specified name.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT EnumFieldsWithName (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator.  
   
@@ -52,6 +54,7 @@ HRESULT EnumFieldsWithName (
  [out] The actual number of FieldDef tokens returned in `rFields`.  
   
 ## Remarks  
+
  Unlike [IMetaDataImport::EnumFields](imetadataimport-enumfields-method.md), `EnumFieldsWithName` discards all field tokens that do not have the specified name.  
   
 ## Return Value  
@@ -62,6 +65,7 @@ HRESULT EnumFieldsWithName (
 |`S_FALSE`|There are no fields to enumerate. In that case, `pcTokens` is zero.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

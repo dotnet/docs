@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess5::EnumerateGCReferences Method
+
 Gets an enumerator for all objects that are to be garbage-collected in a process.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT EnumerateGCReferences(
 ```  
   
 ## Parameters  
+
  `enumerateWeakReferences`  
  [in] A Boolean value that indicates whether weak references are also to be enumerated. If `enumerateWeakReferences` is `true`, the `ppEnum` enumerator includes both strong references and weak references. If `enumerateWeakReferences` is `false`, the enumerator includes only strong references.  
   
@@ -36,9 +38,11 @@ HRESULT EnumerateGCReferences(
  [out] A pointer to the address of an [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md) that is an enumerator for the objects to be garbage-collected.  
   
 ## Remarks  
+
  This method provides a way to determine the full rooting chain for any managed object in a process and can be used to determine why an object is still alive.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

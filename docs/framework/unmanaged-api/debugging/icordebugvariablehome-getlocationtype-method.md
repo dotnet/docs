@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugVariableHome::GetLocationType Method
+
 Gets the type of the variable's native location.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetLocationType(
 ```  
   
 ## Parameters  
+
  `pLocationType`  
  [out] A pointer to the type of the variable's native location.  See the [VariableLocationType](variablelocationtype-enumeration.md) enumeration for more information.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

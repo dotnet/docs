@@ -6,6 +6,8 @@ helpviewer_keywords:
   - "enumerations [C#]"
   - "extension methods [C#], for enums"
   - "enum extensibility [C#]"
+ms.topic: how-to
+ms.custom: contperfq2
 ms.assetid: 100106f9-1e54-462c-8ebe-3892fe23b6eb
 ---
 # How to create a new method for an enumeration (C# Programming Guide)

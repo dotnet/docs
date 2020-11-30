@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetHistoryFileDirectory Function
+
 Retrieves the path of the application history directory.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetHistoryFileDirectory (
 ```  
   
 ## Parameters  
+
  `wzDir`  
  [out] A buffer to hold the path to the application history directory.  
   
@@ -35,6 +37,7 @@ HRESULT GetHistoryFileDirectory (
  [in, out] The length of the buffer.  
   
 ## Return Value  
+
  This method returns standard COM error codes, as defined in the WinError.h file in addition to the following values.  
   
 |Return code|Description|  
@@ -43,9 +46,11 @@ HRESULT GetHistoryFileDirectory (
 |E_INVALIDARG|`wzDir` or `pdwSize` is null, or the version string is incorrect.|  
   
 ## Remarks  
+
  On successful completion, the `pdwSize` argument is set to the length of the path string.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

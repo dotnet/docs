@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bb32aa60-5207-4711-9f08-110e8ac327e5
 ---
 # 215 - MessageReceivedByTransport
+
 ## Properties  
   
 |||  
@@ -14,12 +15,14 @@ ms.assetid: bb32aa60-5207-4711-9f08-110e8ac327e5
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event occurs when a TCP-based transport receives a message. Note that at the transport level, multiple messages can be exchanged between clients and services for a single operation. This can be due to infrastructure behavior, security is a good example. Therefore, the number of `MessageReceivedByTransport` events that are emitted vary based on your service's binding and its configuration.  
   
 > [!NOTE]
 > This event is not emitted for one-way transports.  
   
 ## Message  
+
  The transport received a message from '%1'.  
   
 ## Details  

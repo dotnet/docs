@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 0fd35dff-e1ff-4902-a89b-093f0e34466f
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationMexMonikerMetadataExchangeComplete
+
 System.ServiceModel.ComIntegration.ComIntegrationMexMonikerMetadataExchangeComplete  
   
 ## Description  
+
  The service moniker completed retrieval of metadata  
   
 ## See also

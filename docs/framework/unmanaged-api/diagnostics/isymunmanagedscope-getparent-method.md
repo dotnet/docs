@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedScope::GetParent Method
+
 Gets the parent scope of this scope.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT GetParent(
 ```  
   
 ## Parameters  
+
  `pRetVal`  
  [out] A pointer to the returned [ISymUnmanagedScope](isymunmanagedscope-interface.md) interface.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

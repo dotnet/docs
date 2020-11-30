@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # NOTIFY_FILTER Enumeration
+
 Identifies callbacks for debugger functions. For more information, see the [INotifySource2::SetNotifyFilter](inotifysource2-setnotifyfilter-method.md) method.  
   
 ## Syntax  
@@ -46,6 +47,7 @@ enum tagNOTIFY_FILTER
 |`NOTIFY_FILTER_NONE`|Indicates that no notification methods should be invoked.|  
   
 ## Requirements  
+
  **Header:** ProtocolNotify2.idl  
   
 ## See also

@@ -19,10 +19,10 @@ One of the biggest differences when it comes to ASP.NET Core Identity compared t
 
 ## Migrate from OWIN / Katana
 
-TODO: Expand on this scenario here:
+The following resources offer some guidance for migrating from OWIN / Katana:
 
-[Migration](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/#globalasax-file-replacement)
-[Katana to ASPNET 5](https://devblogs.microsoft.com/aspnet/katana-asp-net-5-and-bridging-the-gap/)
+- [Migration](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/#globalasax-file-replacement)
+- [Katana to ASPNET 5](https://devblogs.microsoft.com/aspnet/katana-asp-net-5-and-bridging-the-gap/)
 
 ## References
 

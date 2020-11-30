@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedReader::GetDocument Method
+
 Finds a document. The document language, vendor, and type are optional.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetDocument (
 ```  
   
 ## Parameters  
+
  `url`  
  [in] The URL that identifies the document.  
   
@@ -47,9 +49,11 @@ HRESULT GetDocument (
  [out] A pointer to the returned interface.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

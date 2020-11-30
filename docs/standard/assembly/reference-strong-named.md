@@ -5,7 +5,7 @@ ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "strong-named assemblies, compile-time references"
   - "compile-time assembly referencing"
-  - "assemblies [.NET Framework], strong-named"
+  - "assemblies [.NET], strong-named"
   - "assembly binding, strong-named"
 ms.assetid: 4c6a406a-b5eb-44fa-b4ed-4e95bb95a813
 dev_langs: 
@@ -14,6 +14,7 @@ dev_langs:
   - "cpp"
 ---
 # How to: Reference a strong-named assembly
+
 The process for referencing types or resources in a strong-named assembly is usually transparent. You can make the reference either at compile time (early binding) or at run time.  
   
 A compile-time reference occurs when you indicate to the compiler that the assembly to be compiled explicitly references another assembly. When you use compile-time referencing, the compiler automatically gets the public key of the targeted strong-named assembly and places it in the assembly reference of the assembly being compiled.

@@ -2,19 +2,19 @@
 title: "How to: Display Milliseconds in Date and Time Values"
 description: In this article, learn how to include a date and time's millisecond component in formatted date and time strings in .NET.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "DateTime.ToString method"
   - "displaying date and time data"
-  - "time [.NET Framework], milliseconds"
-  - "dates [.NET Framework], milliseconds"
-  - "milliseconds [.NET Framework]"
+  - "time [.NET], milliseconds"
+  - "dates [.NET], milliseconds"
+  - "milliseconds [.NET]"
 ms.assetid: ae1a0610-90b9-4877-8eb6-4e30bc5e00cf
 ---
 # How to: Display Milliseconds in Date and Time Values
+
 The default date and time formatting methods, such as <xref:System.DateTime.ToString?displayProperty=nameWithType>, include the hours, minutes, and seconds of a time value but exclude its milliseconds component. This topic shows how to include a date and time's millisecond component in formatted date and time strings.  
   
 ### To display the millisecond component of a DateTime value  
@@ -24,6 +24,7 @@ The default date and time formatting methods, such as <xref:System.DateTime.ToSt
 2. To extract the string representation of a time's millisecond component, call the date and time value's <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> or <xref:System.DateTimeOffset.ToString%2A> method, and pass the `fff` or `FFF` custom format pattern either alone or with other custom format specifiers as the `format` parameter.  
   
 ## Example  
+
  The example displays the millisecond component of a <xref:System.DateTime> and a <xref:System.DateTimeOffset> value to the console, both alone and included in a longer date and time string.  
   
  [!code-csharp[Formatting.HowTo.Millisecond#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.Millisecond/cs/Millisecond.cs#1)]

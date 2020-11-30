@@ -30,6 +30,7 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
 3. If the reservation is deleted successfully, the following message is displayed. **URL reservation successfully deleted**  
   
 ## Creating a New Security Group and New Restricted URL Reservation  
+
  To replace the WCF URL reservation with a restricted reservation you must first create a new security group. You can do this in one of two ways: from a command prompt or from the computer management console. You only have to do one.  
   
 ### To create a new security group from a command prompt  

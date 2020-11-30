@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a4fe59e7-44d8-43c6-a1f8-40c45223adca
 ---
 # WebContentTypeMapper Sample
+
 This sample demonstrates how to map new content types to Windows Communication Foundation (WCF) message body formats.  
   
  The <xref:System.ServiceModel.Description.WebHttpEndpoint> element plugs in the Web message encoder, which allows WCF to receive JSON, XML, or raw binary messages at the same endpoint. The encoder determines the body format of the message by looking at the HTTP content-type of the request. This sample introduces the <xref:System.ServiceModel.Channels.WebContentTypeMapper> class, which allows the user to control the mapping between content type and body format.  

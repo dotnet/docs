@@ -4,23 +4,25 @@ description: This article summarizes COM interop attributes of the System.Runtim
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "design-time attributes"
-  - ".NET Framework, exposing components to COM"
-  - "attributes [.NET Framework], design-time functionality"
+  - ".NET, exposing components to COM"
+  - "attributes [.NET], design-time functionality"
   - "conversion-tool attributes"
-  - "attributes [.NET Framework], interop-specific"
-  - "attributes [.NET Framework], conversion-tool"
+  - "attributes [.NET], interop-specific"
+  - "attributes [.NET], conversion-tool"
   - "interoperation with unmanaged code, applying attributes"
-  - "interoperation with unmanaged code, exposing .NET Framework components"
+  - "interoperation with unmanaged code, exposing .NET components"
   - "COM interop, exposing COM components"
   - "COM interop, applying attributes"
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
 ---
 # Applying Interop Attributes
+
 The <xref:System.Runtime.InteropServices> namespace provides three categories of interop-specific attributes: those applied by you at design time, those applied by COM interop tools and APIs during the conversion process, and those applied either by you or COM interop.  
   
  If you are unfamiliar with the task of applying attributes to managed code, see [Extending Metadata Using Attributes](../attributes/index.md). Like other custom attributes, you can apply interop-specific attributes to types, methods, properties, parameters, fields, and other members.  
   
 ## Design-Time Attributes  
+
  You can adjust the outcome of the conversion process performed by COM interop tools and APIs by using design-time attributes. The following table describes the attributes that you can apply to your managed source code. COM interop tools, on occasion, might also apply the attributes described in this table.  
   
 |Attribute|Description|  
@@ -45,10 +47,11 @@ The <xref:System.Runtime.InteropServices> namespace provides three categories of
 |<xref:System.Runtime.InteropServices.OptionalAttribute>|Indicates that a parameter is optional.<br /><br /> COM interop tools can apply this attribute.|  
 |<xref:System.Runtime.InteropServices.OutAttribute>|Indicates that the data in a field or parameter must be marshaled from a called object back to its caller.|  
 |<xref:System.Runtime.InteropServices.PreserveSigAttribute>|Suppresses the HRESULT or retval signature transformation that normally takes place during interoperation calls. The attribute affects marshaling as well as type library exporting.<br /><br /> COM interop tools can apply this attribute.|  
-|<xref:System.Runtime.InteropServices.ProgIdAttribute>|Specifies the ProgID of a .NET Framework class. Can be used to attribute classes.|  
+|<xref:System.Runtime.InteropServices.ProgIdAttribute>|Specifies the ProgID of a .NET class. Can be used to attribute classes.|  
 |<xref:System.Runtime.InteropServices.StructLayoutAttribute>|Controls the physical layout of the fields of a class.<br /><br /> COM interop tools can apply this attribute.|  
   
 ## Conversion-Tool Attributes  
+
  The following table describes attributes that COM interop tools apply during the conversion process. You do not apply these attributes at design time.  
   
 |Attribute|Description|  

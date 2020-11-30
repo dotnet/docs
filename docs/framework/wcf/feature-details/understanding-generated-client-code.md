@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: c3f6e4b0-1131-4c94-aa39-a197c5c2f2ca
 ---
 # Understanding Generated Client Code
+
 The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) generates client code and a client application configuration file for use in building client applications. This topic provides a tour of generated code examples for standard service contract scenarios. For more information about building a client application using the generated code, see [WCF Client Overview](../wcf-client-overview.md).  
   
 ## Overview  
+
  If you use Visual Studio to generate Windows Communication Foundation (WCF) client types for your project, you typically do not need to examine the generated client code. If you are not using a development environment that performs the same services for you, you can use a tool such as Svcutil.exe to generate client code and then use that code to develop your client application.  
   
  Because Svcutil.exe has a number of options that modify the generated type information, this topic does not discuss all scenarios. However, the following standard tasks involve locating generated code:  
@@ -25,6 +27,7 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-
 - Identifying the helper service contract channel interface.  
   
 ### Finding Service Contract Interfaces  
+
  To locate the interfaces that model service contracts, search for interfaces that are marked with the <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType> attribute. Often this attribute can be difficult to locate with a quick read due to the presence of other attributes and the explicit properties set on the attribute itself. Remember that the service contract interface and the client contract interface are two different types. The following code example shows the original service contract.  
   
  [!code-csharp[C_GeneratedCodeFiles#22](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#22)]  
@@ -36,6 +39,7 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-
  You can use the generated service contract interface along with the <xref:System.ServiceModel.ChannelFactory?displayProperty=nameWithType> class to create a WCF channel object with which to invoke service operations. For more information, see [How to: Use the ChannelFactory](how-to-use-the-channelfactory.md).  
   
 ### Finding WCF Client Classes  
+
  To locate the WCF client class that implements the service contract you want to use, search for an extension of <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>, where the type parameter is the service contract interface that you previously located and that extends that interface. The following code example shows the <xref:System.ServiceModel.ClientBase%601> class of type `ISampleService`.  
   
  [!code-csharp[C_GeneratedCodeFiles#14](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#14)]  
@@ -46,6 +50,7 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-
 > When SvcUtil.exe generates a WCF client class, it adds a <xref:System.Diagnostics.DebuggerStepThroughAttribute> to the client class that prevents debuggers from stepping through the WCF client class.  
   
 ### Finding Data Types  
+
  To locate data types in the generated code, the most basic mechanism is to identify the type name specified in a contract and search the code for that type declaration. For example, the following contract specifies that the `SampleMethod` can return a SOAP fault of type `microsoft.wcf.documentation.SampleFault`.  
   
  [!code-csharp[C_GeneratedCodeFiles#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#11)]  
@@ -57,6 +62,7 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-
  In this case the data type is the detail type thrown by a specific exception on the client, a <xref:System.ServiceModel.FaultException%601> where the detail type parameter is `microsoft.wcf.documentation.SampleFault`. For more information about data types, see [Specifying Data Transfer in Service Contracts](specifying-data-transfer-in-service-contracts.md). For more information about handling exceptions in clients, see [Sending and Receiving Faults](../sending-and-receiving-faults.md).  
   
 ### Finding Callback Contracts for Duplex Services  
+
  If you locate a service contract for which the contract interface specifies a value for the <xref:System.ServiceModel.ServiceContractAttribute.CallbackContract%2A?displayProperty=nameWithType> property, then that contract specifies a duplex contract. Duplex contracts require the client application to create a callback class that implements the callback contract and pass an instance of that class to the <xref:System.ServiceModel.DuplexClientBase%601?displayProperty=nameWithType> or <xref:System.ServiceModel.DuplexChannelFactory%601?displayProperty=nameWithType> used to communicate with the service. For more information about duplex clients, see [How to: Access Services with a Duplex Contract](how-to-access-services-with-a-duplex-contract.md).  
   
  The following contract specifies a callback contract of type `SampleDuplexHelloCallback`.  
@@ -70,6 +76,7 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-
  [!code-vb[C_GeneratedCodeFiles#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_generatedcodefiles/vb/duplexproxycode.vb#4)]  
   
 ### Finding Service Contract Channel Interfaces  
+
  When using the <xref:System.ServiceModel.ChannelFactory> class with a service contract interface, you must cast to the <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface to explicitly open, close, or abort the channel. To make it easier to work with, the Svcutil.exe tool also generates a helper interface that implements both the service contract interface and <xref:System.ServiceModel.IClientChannel> to enable you to interact with the client channel infrastructure without having to cast. The following code shows the definition of a helper client channel that implements the preceding service contract.  
   
  [!code-csharp[C_GeneratedCodeFiles#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#13)]  

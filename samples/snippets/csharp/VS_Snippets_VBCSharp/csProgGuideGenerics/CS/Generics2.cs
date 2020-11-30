@@ -1,4 +1,7 @@
-﻿//<Snippet29>
+﻿namespace GenericsTwo
+{
+
+//<Snippet29>
 //Type parameter T in angle brackets.
 public class GenericList<T> : System.Collections.Generic.IEnumerable<T>
 {
@@ -85,7 +88,7 @@ public class SortedList<T> : GenericList<T> where T : System.IComparable<T>
             while (current.next != null)
             {
                 //  Because we need to call this method, the SortedList
-                //  class is constrained on IEnumerable<T>
+                //  class is constrained on IComparable<T>
                 if (current.Data.CompareTo(current.next.Data) > 0)
                 {
                     Node tmp = current.next;
@@ -145,9 +148,9 @@ public class Person : System.IComparable<Person>
     }
 }
 
-class Program
+public class Program
 {
-    static void Main()
+    public static void Main()
     {
         //Declare and instantiate a new generic SortedList class.
         //Person is the type argument.
@@ -195,3 +198,4 @@ class Program
     }
 }
 //</Snippet29>
+}

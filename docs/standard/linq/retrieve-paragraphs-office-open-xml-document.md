@@ -12,7 +12,7 @@ ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
 
 This article provides an example that opens an Office Open XML document and retrieves a collection of all of the paragraphs in the document.
 
-For more information on Office Open XML, see [Open XML SDK](https://github.com/OfficeDev/Open-XML-SDK) and [Eric White's Blog](http://www.ericwhite.com/).
+For more information on Office Open XML, see [Open XML SDK](https://github.com/OfficeDev/Open-XML-SDK) and [Eric White's Blog](https://www.ericwhite.com/).
 
 ## Example: Retrieve the paragraphs from an Office Open XML document
 

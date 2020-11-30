@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 201923b5-5162-4a8a-8d4c-e7bd242748d5
 ---
 # Common Security Scenarios
+
 The topics in this section catalog a number of possible client and service security configurations. Configurations vary according to a number of factors. For example, whether a service or client is on an intranet, or whether the security is provided by Windows or transport (such as HTTPS).  
   
 ## In This Section  
+
  [Internet Unsecured Client and Service](internet-unsecured-client-and-service.md)  
  An example of a public, unsecured client and service.  
   
@@ -52,9 +54,11 @@ The topics in this section catalog a number of possible client and service secur
  A client accesses one or more Web services that are distributed across a network. The Web services access additional resources (such as databases or other Web services) that must be secured.  
   
 ## Reference  
+
  <xref:System.ServiceModel>  
   
 ## Related Sections  
+
  [Authorization](authorization-in-wcf.md)  
   
  [Security Overview](security-overview.md)  

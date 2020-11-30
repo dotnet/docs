@@ -8,6 +8,8 @@ helpviewer_keywords:
   - "properties [C#], declaring"
   - "read/write properties [C#]"
   - "accessors [C#], declaring properties with"
+ms.topic: how-to
+ms.custom: contperfq2
 ms.assetid: a4962fef-af7e-4c4b-a929-4ae4d646ab8a
 ---
 # How to declare and use read write properties (C# Programming Guide)

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugRegisterSet Interface
+
 Represents the set of registers available on the computer that is currently executing code.  
   
 ## Methods  
@@ -29,12 +30,14 @@ Represents the set of registers available on the computer that is currently exec
 |[SetThreadContext Method](icordebugregisterset-setthreadcontext-method.md)|Not implemented for the .NET Framework 2.0.|  
   
 ## Remarks  
+
  The `ICorDebugRegisterSet` interface supports only 32-bit registers. Use the [ICorDebugRegisterSet2](icordebugregisterset2-interface.md) interface on platforms such as IA-64 that require additional registers.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

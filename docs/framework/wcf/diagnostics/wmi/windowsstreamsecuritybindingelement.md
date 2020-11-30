@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4b0508c5-669c-4fe3-9225-8a10f8ee3be4
 ---
 # WindowsStreamSecurityBindingElement
+
 WindowsStreamSecurityBindingElement  
   
 ## Syntax  
@@ -16,12 +17,15 @@ class WindowsStreamSecurityBindingElement : BindingElement
 ```  
   
 ## Methods  
+
  The WindowsStreamSecurityBindingElement class does not define any methods.  
   
 ## Properties  
+
  The WindowsStreamSecurityBindingElement class has the following property:  
   
 ### ProtectionLevel  
+
  Data type: string  
   
  Access type: Read-only  

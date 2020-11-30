@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: dfcfa36c-d3bb-44b4-aa15-1c922c6f73e6
 ---
 # Transfer
+
 This topic describes transfer in the Windows Communication Foundation (WCF) activity tracing model.  
   
 ## Transfer Definition  
+
  Transfers between activities represent causal relationships between events in the related activities within endpoints. Two activities are related with transfers when control flows between these activities, for example, a method call crossing activity boundaries. In WCF, when bytes are incoming on the service, the Listen At activity is transferred to the Receive Bytes activity where the message object is created. For a list of end-to-end tracing scenarios, and their respective activity and tracing design, see [End-To-End Tracing Scenarios](end-to-end-tracing-scenarios.md).  
   
  To emit transfer traces, use the `ActivityTracing` setting on the trace source as demonstrated by the following configuration code.  
@@ -16,6 +18,7 @@ This topic describes transfer in the Windows Communication Foundation (WCF) acti
 ```  
   
 ## Using Transfer to Correlate Activities Within Endpoints  
+
  Activities and transfers permit the user to probabilistically locate the root cause of an error. For example, if we transfer back and forth between activities M and N respectively in components M and N, and a crash happens in N right after the transfer back to M, we can draw the conclusion that it is likely due to N’s passing data back to M.  
   
  A transfer trace is emitted from activity M to activity N when there is a flow of control between M and N. For example, N performs some work for M because of a method call crossing the activities’ boundaries. N may already exist or has been created. N is spawned by M when N is a new activity that performs some work for M.  
@@ -27,6 +30,7 @@ This topic describes transfer in the Windows Communication Foundation (WCF) acti
  A nesting relationship does not necessarily exist between activities M and N. This can happen due to two reasons. First, when activity M does not monitor the actual processing performed in N although M initiated N. Second, when N already exists.  
   
 ## Example of Transfers  
+
  The following lists two transfer examples.  
   
 - When you create a service host, the constructor gains control from the calling code, or the calling code transfers to the constructor. When the constructor has finished executing, it returns control to the calling code, or the constructor transfers back to the calling code. This is the case of a nested relationship.  
@@ -34,6 +38,7 @@ This topic describes transfer in the Windows Communication Foundation (WCF) acti
 - When a listener starts processing transport data, it creates a new thread and hands to the Receive Bytes activity the appropriate context for processing, passing control and data. When that thread has finished processing the request, the Receive Bytes activity passes nothing back to the listener. In this case, we have a transfer in but no transfer out of the new thread activity. The two activities are related but not nested.  
   
 ## Activity Transfer Sequence  
+
  A well-formed activity transfer sequence includes the following steps.  
   
 1. Begin a new activity, which consists of selecting a new gAId.  

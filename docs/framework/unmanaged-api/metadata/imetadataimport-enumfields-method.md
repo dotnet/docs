@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::EnumFields Method
+
 Enumerates FieldDef tokens for the type referenced by the specified TypeDef token.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT EnumFields (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator.  
   
@@ -55,6 +57,7 @@ HRESULT EnumFields (
 |`S_FALSE`|There are no fields to enumerate. In that case, `pcTokens` is zero.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e5ae8c31-19bc-4655-88b3-6b75cd6a1bd5
 ---
 # Runtime Activities in WF
+
 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] provides several system-provided activities for accessing the features of the workflow runtime, such as persistence and termination.  
   
 |Activity|Description|  

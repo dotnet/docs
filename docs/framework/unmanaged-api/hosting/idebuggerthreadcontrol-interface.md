@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IDebuggerThreadControl Interface
+
 Provides methods for notifying the host about the blocking and unblocking of threads by the debugging services.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides methods for notifying the host about the blocking and unblocking of thr
 |[StartBlockingForDebugger Method](idebuggerthreadcontrol-startblockingfordebugger-method.md)|Notifies the host that the debugging services are about to start blocking all threads.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

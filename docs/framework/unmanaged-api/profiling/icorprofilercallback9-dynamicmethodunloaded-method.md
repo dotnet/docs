@@ -10,6 +10,7 @@ api_type:
   - "COM"
 ---
 # ICorProfilerCallback9::DynamicMethodUnloaded Method
+
 [Supported in the .NET Framework 4.7.2 and later versions]  
   
 Notifies the profiler whenever a dynamic method is garbage collected and subsequently unloaded.  
@@ -23,10 +24,12 @@ HRESULT DynamicMethodUnloaded(
 ```  
   
 ## Parameters  
+
 [in] `functionId`  
 The identifier of the in-memory function that has been garbage collected and unloaded.
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -20,6 +20,7 @@ Remoting allows you to set up transparent calling between application domains, p
  Generally, you should never expose methods, properties, or events that are protected by declarative [LinkDemand](link-demands.md) and <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> security checks. With remoting, these checks are not enforced. Other security checks, such as <xref:System.Security.Permissions.SecurityAction.Demand>, [Assert](using-the-assert-method.md), and so on, work between application domains within a process but do not work in cross-process or cross-machine scenarios.  
   
 ## Protected objects  
+
  Some objects hold security state in themselves. These objects should not be passed to untrusted code, which would then acquire security authorization beyond its own permissions.  
   
  One example is creating a <xref:System.IO.FileStream> object. The <xref:System.Security.Permissions.FileIOPermission> is demanded at the time of creation and, if it succeeds, the file object is returned. However, if this object reference is passed to code without file permissions, the object will be able to read and write to this particular file.  
@@ -27,6 +28,7 @@ Remoting allows you to set up transparent calling between application domains, p
  The simplest defense for such an object is to demand the same **FileIOPermission** of any code that seeks to get the object reference through a public API element.  
   
 ## Application domain crossing issues  
+
  To isolate code in managed hosting environments, it is common to generate multiple child application domains with explicit policy reducing the permission levels for various assemblies. However, the policy for those assemblies remains unchanged in the default application domain. If one of the child application domains can force the default application domain to load an assembly, the effect of code isolation is lost and types in the forcibly loaded assembly will be able to run code at a higher level of trust.  
   
  An application domain can force another application domain to load an assembly and run code contained therein by calling a proxy to an object hosted in the other application domain. To obtain a cross-application-domain proxy, the application domain hosting the object must distribute one through a method call parameter or return value. Or, if the application domain was just created, the creator has a proxy to the <xref:System.AppDomain> object by default. Thus, to avoid breaking code isolation, an application domain with a higher level of trust should not distribute references to marshaled-by-reference objects (instances of classes derived from <xref:System.MarshalByRefObject>) in its domain to application domains with lower levels of trust.  

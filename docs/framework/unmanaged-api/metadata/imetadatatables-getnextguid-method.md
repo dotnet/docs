@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataTables::GetNextGuid Method
+
 Gets the index of the next GUID value in the current table column.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetNextGuid (
 ```  
   
 ## Parameters  
+
  `ixGuid`  
  [in] The index value from a GUID table column.  
   
@@ -40,6 +42,7 @@ HRESULT GetNextGuid (
   We do not recommend the use of this method, because it does not return consistent results. For information about the GUID table, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](../../../standard/components.md#applicable-standards) and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

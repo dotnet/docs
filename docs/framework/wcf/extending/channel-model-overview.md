@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 07a81e11-3911-4632-90d2-cca99825b5bd
 ---
 # Channel Model Overview
+
 The Windows Communication Foundation (WCF) channel stack is a layered communication stack with one or more channels that process messages. At the bottom of the stack is a transport channel that is responsible for adapting the channel stack to the underlying transport (for example, TCP, HTTP, SMTP and other types of transport.). Channels provide a low-level programming model for sending and receiving messages. This programming model relies on several interfaces and other types collectively known as the WCF channel model. This topic discusses channel shapes, the construction of a basic channel listener (on the service) and channel factory (on the client).  
   
 ## Channel Stack  
+
  WCF endpoints communicate with the world using a communication stack called the channel stack. The following diagram compares the channel stack with other communication stacks, for example TCP/IP.  
   
  ![Channel Model](./media/wcfc-channelstackhighlevelc.gif "wcfc_ChannelStackHighLevelc")  
@@ -20,6 +22,7 @@ The Windows Communication Foundation (WCF) channel stack is a layered communicat
  Messages flow through the communication stack as <xref:System.ServiceModel.Channels.Message> objects. As shown in figure above, the bottom channel is called a transport channel. It is the channel that is responsible for sending and receiving messages to and from other parties. This includes the responsibility of transforming the <xref:System.ServiceModel.Channels.Message> object to and from the format used to communicate with other parties. Above the transport channel there can be any number of protocol channels each responsible for providing a communication function such as reliable delivery guarantees. Protocol channels operate on messages flowing through them in the form of the <xref:System.ServiceModel.Channels.Message> object. They typically either transform the message, for example, by adding headers or encrypting the body, or send and receive their own protocol control messages, for example, receipt acknowledgments.  
   
 ## Channel Shapes  
+
  Each channel implements one or more interfaces known as channel shape interfaces or channel shapes. Those channel shapes provide the communication-oriented methods such as send and receive or request and reply that the channel implements and the user of the channel calls. At the base of the channel shapes is the <xref:System.ServiceModel.Channels.IChannel> interface, which is an interface that provides a `GetProperty`\<T> method intended as a layered mechanism to access arbitrary features exposed by channels in the stack. The five channel shapes that extend <xref:System.ServiceModel.Channels.IChannel> are:  
   
 - <xref:System.ServiceModel.Channels.IInputChannel>  
@@ -47,11 +50,13 @@ The Windows Communication Foundation (WCF) channel stack is a layered communicat
  The channel shapes are patterned after some of the fundamental message exchange patterns supported by existing transport protocols. For example, one-way messaging corresponds to an <xref:System.ServiceModel.Channels.IInputChannel>/<xref:System.ServiceModel.Channels.IOutputChannel> pair, request-reply corresponds to <xref:System.ServiceModel.Channels.IRequestChannel>/<xref:System.ServiceModel.Channels.IReplyChannel> pairs and two-way duplex communications corresponds to <xref:System.ServiceModel.Channels.IDuplexChannel> (which extends both <xref:System.ServiceModel.Channels.IInputChannel> and <xref:System.ServiceModel.Channels.IOutputChannel>).  
   
 ## Programming with the Channel Stack  
+
  Channel stacks are typically created using a factory pattern where a binding creates the channel stack. On the send side, a binding is used to build a <xref:System.ServiceModel.ChannelFactory>, which in turn builds a channel stack and returns a reference to the top channel in the stack. The application can then use this channel to send messages. For more information, see [Client Channel-Level Programming](client-channel-level-programming.md).  
   
  On the receive side a binding is used to build a <xref:System.ServiceModel.Channels.IChannelListener>, which listens for incoming messages. The <xref:System.ServiceModel.Channels.IChannelListener> provides messages to the listening application by creating channel stacks and handing the application reference to the top channel. The application then uses this channel to receive incoming messages. For more information, see [Service Channel-Level Programming](service-channel-level-programming.md).  
   
 ## The Channel Object Model  
+
  The channel object model is the core set of interfaces required to implement channels, channel listeners and channel factories. There are also some base classes provided to assist in custom implementations.  
   
  Channel listeners are responsible for listening for incoming messages, then delivering them to the layer above through channels created by the channel listener.  

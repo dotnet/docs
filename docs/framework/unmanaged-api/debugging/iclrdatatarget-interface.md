@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRDataTarget Interface
+
 Provides methods for interaction with a target item of the common language runtime (CLR).  
   
 ## Methods  
@@ -35,9 +36,11 @@ Provides methods for interaction with a target item of the common language runti
 |[WriteVirtual Method](iclrdatatarget-writevirtual-method.md)|Writes data from the specified buffer to the specified virtual memory address.|  
   
 ## Remarks  
+
  The API client (that is, the debugger) must implement this interface as appropriate for the particular target item. For example, a live process would have an implementation different from that of a memory dump.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  

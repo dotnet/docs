@@ -14,6 +14,8 @@
       href: ../../../../_csharplang/proposals/csharp-7.0/binary-literals.md
     - name: Digit separators
       href: ../../../../_csharplang/proposals/csharp-7.0/digit-separators.md
+    - name: Async task types
+      href: ../../../../_csharplang/proposals/csharp-7.0/task-types.md
   - name: C# 7.1 specification proposals
     items:
     - name: Async main method
@@ -63,7 +65,7 @@
     - name: Nullable reference types - proposal
       href: ../../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
     - name: Nullable reference types - specification
-      href: ../../../../_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md
+      href: ../../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
     - name: Recursive pattern matching
       href: ../../../../_csharplang/proposals/csharp-8.0/patterns.md
     - name: Default interface methods
@@ -88,6 +90,8 @@
       href: ../../../../_csharplang/proposals/csharp-9.0/records.md
     - name: Top-level statements
       href: ../../../../_csharplang/proposals/csharp-9.0/top-level-statements.md
+    - name: Nullable reference types - specification
+      href: ../../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
     - name: Pattern matching enhancements
       href: ../../../../_csharplang/proposals/csharp-9.0/patterns3.md
     - name: Init only setters
@@ -116,3 +120,5 @@
       href: ../../../../_csharplang/proposals/csharp-9.0/function-pointers.md
     - name: Surpress emitting localsinit flag
       href: ../../../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
+    - name: Unconstrained type parameter annotations
+      href: ../../../../_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md

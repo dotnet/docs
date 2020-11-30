@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "assembly manifest, viewing information"
   - "Ildasm.exe"
   - "MSIL Disassembler"
-  - "assemblies [.NET Framework], viewing contents"
+  - "assemblies [.NET], viewing contents"
   - "viewing assembly information"
   - "MSIL"
   - "viewing MSIL information"

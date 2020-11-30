@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 9c5b1cc7-84f3-45f8-9226-d59c278e8c42
 ---
 # How to: Inspect and Modify Messages on the Service
+
 You can inspect or modify the incoming or outgoing messages across a Windows Communication Foundation (WCF) client by implementing a <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType> and inserting it into the service runtime. For more information, see [Extending Dispatchers](extending-dispatchers.md). The equivalent feature on the service is the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>.  
   
 ### To inspect or modify messages  
@@ -18,6 +19,7 @@ You can inspect or modify the incoming or outgoing messages across a Windows Com
 3. Insert your behavior prior to calling the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> method on the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType>. For details, see [Configuring and Extending the Runtime with Behaviors](configuring-and-extending-the-runtime-with-behaviors.md).  
   
 ## Example  
+
  The following code examples show, in order:  
   
 - A service inspector implementation.  

@@ -20,6 +20,8 @@ Code style rules are divided into following subcategories:
 
 - [Language rules](style-rules/language-rules.md)
 
+- [Unnecessary code rules](style-rules/unnecessary-code-rules.md)
+
 - [Formatting rules](style-rules/formatting-rules.md)
 
 - [Naming rules](style-rules/naming-rules.md)

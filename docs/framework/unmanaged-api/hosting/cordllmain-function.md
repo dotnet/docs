@@ -30,6 +30,7 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
 ```  
   
 ## Parameters  
+
  `hInst`  
  [in] The instance handle of the loaded module.  
   
@@ -40,9 +41,11 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
  [in] Unused.  
   
 ## Return Value  
+
  This method returns `true` for success and `false` if an error occurs.  
   
 ## Remarks  
+
  This function is called by the operating system loader for DLL assemblies. For executable assemblies, the loader calls the [\_CorExeMain](corexemain-function.md) function instead.  
   
  The operating system loader calls this method regardless of the entry point specified in the DLL file.  

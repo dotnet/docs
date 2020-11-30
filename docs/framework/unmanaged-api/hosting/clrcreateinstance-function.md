@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # CLRCreateInstance Function
+
 Provides one of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT CLRCreateInstance(
 ```  
   
 ## Parameters  
+
  `clsid`  
  [in] One of three class identifiers: CLSID_CLRMetaHost, CLSID_CLRMetaHostPolicy, or CLSID_CLRDebugging.  
   
@@ -40,6 +42,7 @@ HRESULT CLRCreateInstance(
  [out] One of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -48,6 +51,7 @@ HRESULT CLRCreateInstance(
 |E_POINTER|`ppInterface` is null.|  
   
 ## Remarks  
+
  The following table shows the supported combinations for `clsid` and `riid`.  
   
 |`clsid`|`riid`|  
@@ -75,6 +79,7 @@ hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

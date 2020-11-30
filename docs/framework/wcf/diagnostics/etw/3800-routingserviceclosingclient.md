@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0baf214b-fa19-4871-a314-735c5939f92c
 ---
 # 3800 - RoutingServiceClosingClient
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 0baf214b-fa19-4871-a314-735c5939f92c
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted when the Routing Service is closing the client.  
   
 ## Message  
+
  The Routing Service is closing client '%1'.  
   
 ## Details

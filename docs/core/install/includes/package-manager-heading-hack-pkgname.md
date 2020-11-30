@@ -16,6 +16,7 @@ Chooses the SDK or the runtime. Valid options are:
 - **version**\
 The version of the SDK or runtime to install. This article will always give the instructions for the latest supported version. Valid options are any released version, such as:
 
+  - 5.0
   - 3.1
   - 3.0
   - 2.1
@@ -24,10 +25,11 @@ The version of the SDK or runtime to install. This article will always give the 
 
 ### Examples
 
-- Install the ASP.NET Core 3.1 runtime: `aspnetcore-runtime-3.1`
+- Install the ASP.NET Core 5.0 runtime: `aspnetcore-runtime-5.0`
 - Install the .NET Core 2.1 runtime: `dotnet-runtime-2.1`
+- Install the .NET 5.0 SDK: `dotnet-sdk-5.0`
 - Install the .NET Core 3.1 SDK: `dotnet-sdk-3.1`
 
 ### Package missing
 
-If the package-version combination doesn't work, it's not available. For example, there isn't an ASP.NET Core SDK, the SDK components are included with the .NET Core SDK. The value `aspnetcore-sdk-2.2` is incorrect and should be `dotnet-sdk-2.2`. For a list of Linux distributions supported by .NET Core, see [.NET Core dependencies and requirements](../linux.md).
+If the package-version combination doesn't work, it's not available. For example, there isn't an ASP.NET Core SDK, the SDK components are included with the .NET SDK. The value `aspnetcore-sdk-2.2` is incorrect and should be `dotnet-sdk-2.2`. For a list of Linux distributions supported by .NET Core, see [.NET dependencies and requirements](../linux.md).

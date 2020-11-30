@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorMethodImpl Enumeration
+
 Contains values that describe method implementation features.  
   
 ## Syntax  
@@ -68,6 +69,7 @@ typedef enum CorMethodImpl {
 |`miMaxMethodImplVal`|The maximum valid value for a `CorMethodImpl`.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

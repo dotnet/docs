@@ -1,15 +1,15 @@
 ---
-title: Test a .NET Standard class library with .NET Core using Visual Studio Code
-description: Create a unit test project for a .NET Core class library. Verify that a .NET Core class library works correctly with unit tests.
-ms.date: 06/08/2020
+title: Test a .NET class library using Visual Studio Code
+description: Learn how to use Visual Studio Code and the .NET CLI to create and run a unit test project for a .NET class library.
+ms.date: 11/17/2020
 ---
-# Tutorial: Test a .NET Standard class library with .NET Core using Visual Studio Code
+# Tutorial: Test a .NET class library using Visual Studio Code
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 
 ## Prerequisites
 
-- This tutorial works with the solution that you create in [Create a .NET Standard library using Visual Studio Code](library-with-visual-studio-code.md).
+- This tutorial works with the solution that you create in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
 
 ## Create a unit test project
 
@@ -17,7 +17,7 @@ Unit tests provide automated software testing during your development and publis
 
 1. Start Visual Studio Code.
 
-1. Open the `ClassLibraryProjects` solution you created in [Create a .NET Standard library using Visual Studio Code](library-with-visual-studio-code.md).
+1. Open the `ClassLibraryProjects` solution you created in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
 
 1. Create a unit test project named "StringLibraryTest".
 
@@ -108,13 +108,9 @@ To create the test methods:
 
    ```output
    Starting test execution, please wait...
-
    A total of 1 test files matched the specified pattern.
 
-   Test Run Successful.
-   Total tests: 3
-        Passed: 3
-    Total time: 5.1116 Seconds
+   Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 3 ms - StringLibraryTest.dll (net5.0)
    ```
 
 ## Handle test failures
@@ -138,20 +134,14 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
    ```output
    Starting test execution, please wait...
-
    A total of 1 test files matched the specified pattern.
-     X TestDoesNotStartWithUpper [283ms]
+     Failed TestDoesNotStartWithUpper [28 ms]
      Error Message:
       Assert.IsFalse failed. Expected for 'Error': false; Actual: True
      Stack Trace:
-        at StringLibraryTest.UnitTest1.TestDoesNotStartWithUpper() in C:\
-   Projects\ClassLibraryProjects\StringLibraryTest\UnitTest1.cs:line 33
+        at StringLibraryTest.UnitTest1.TestDoesNotStartWithUpper() in C:\ClassLibraryProjects\StringLibraryTest\UnitTest1.cs:line 33
 
-   Test Run Failed.
-   Total tests: 3
-        Passed: 2
-        Failed: 1
-    Total time: 1.7825 Seconds
+   Failed!  - Failed:     1, Passed:     2, Skipped:     0, Total:     3, Duration: 31 ms - StringLibraryTest.dll (net5.0)
    ```
 
 1. Remove the string "Error" that you added in step 1. Rerun the test and the tests pass.
@@ -170,13 +160,13 @@ Now that the tests have all passed when running the Debug build of the library, 
 
 ## Debug tests
 
-If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET Core console application using Visual Studio Code](debugging-with-visual-studio-code.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Run All Tests** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
+If you're using Visual Studio Code as your IDE, you can use the same process shown in [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, open *StringLibraryTest/UnitTest1.cs*, and select **Run All Tests** between lines 7 and 8. If you're unable to find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
 
 Visual Studio Code starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 
 ## Additional resources
 
-* [Unit testing in .NET Core and .NET Standard](../testing/index.md)
+* [Unit testing in .NET](../testing/index.md)
 
 ## Next steps
 
@@ -193,4 +183,4 @@ If you publish a library as a NuGet package, others can install and use it. To l
 A library doesn't have to be distributed as a package. It can be bundled with a console app that uses it. To learn how to publish a console app, see the earlier tutorial in this series:
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application using Visual Studio Code](publishing-with-visual-studio-code.md)
+> [Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)

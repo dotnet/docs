@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ObjectAllocated Method
+
 Notifies the profiler that memory within the heap has been allocated for an object.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT ObjectAllocated(
 ```  
   
 ## Parameters  
+
  `objectId`  
  [in] The ID of the object for which memory was allocated.  
   
@@ -35,9 +37,11 @@ HRESULT ObjectAllocated(
  [in] The ID of the class of which the object is an instance.  
   
 ## Remarks  
+
  The `ObjectedAllocated` method is not called for allocations from either the stack or unmanaged memory. The `classId` parameter can refer to a class in managed code that has not been loaded yet. The profiler will receive a class load callback for that class immediately after the `ObjectAllocated` callback.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 5d039e48-8188-4f43-a9bd-d6c58c075173
 ---
 # System.ServiceModel.Activation.MessageQueueDuplicatedSocketError
+
 System.ServiceModel.Activation.MessageQueueDuplicatedSocketError  
   
 ## Description  
+
  An error occurred while duplicating a socket.  
   
 ## See also

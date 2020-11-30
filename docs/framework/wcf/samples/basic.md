@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 04e4d3bd-ab89-4b50-8f42-2a4430751a9c
 ---
 # Basic
+
 This section includes sections of samples that demonstrate basic Windows Communication Foundation (WCF)functionality.  
   
 ## In This Section  
+
  [Getting Started](getting-started-sample.md)  
  Demonstrates how to implement a typical service and a typical client using WCF.  
   

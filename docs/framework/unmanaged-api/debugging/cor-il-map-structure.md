@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_IL_MAP Structure
+
 Specifies changes in the relative offset of a function.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ typedef struct _COR_IL_MAP {
 |`fAccurate`|`true` if the mapping is known to be accurate; otherwise, `false`.|  
   
 ## Remarks  
+
  The format of the map is as follows: The debugger will assume that `oldOffset` refers to an MSIL offset within the original, unmodified MSIL code. The `newOffset` parameter refers to the corresponding MSIL offset within the new, instrumented code.  
   
  For stepping to work properly, the following requirements should be met:  
@@ -74,6 +76,7 @@ typedef struct _COR_IL_MAP {
 - A new offset of 20 or higher will be mapped to old offset 9.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorProf.idl  

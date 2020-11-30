@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # CorLaunchApplication Function
+
 Starts the application at the specified network path, using the specified manifests and other application data.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -36,6 +37,7 @@ HRESULT CorLaunchApplication (
 ```  
   
 ## Parameters  
+
  `dwClickOnceHost`  
  [in] A value of the [HOST_TYPE](host-type-enumeration.md) enumeration that specifies the type of host that is launching the application.  
   
@@ -58,6 +60,7 @@ HRESULT CorLaunchApplication (
  [out] A pointer to information about the process in which the application has been loaded.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

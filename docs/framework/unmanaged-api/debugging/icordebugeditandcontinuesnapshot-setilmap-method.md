@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEditAndContinueSnapshot::SetILMap Method
+
 `SetILMap` is obsolete. Do not call this method.  
   
 ## See also

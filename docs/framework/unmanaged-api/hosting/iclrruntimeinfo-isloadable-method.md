@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeInfo::IsLoadable Method
+
 Indicates whether the runtime associated with this interface can be loaded into the current process, taking into account other runtimes that might already be loaded into the process.  
   
 ## Syntax  
@@ -27,10 +28,12 @@ HRESULT IsLoadable(
 ```  
   
 ## Parameters  
+
  `pbLoadable`  
  [out] `true` if this runtime could be loaded into the current process; otherwise, `false`.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -39,11 +42,13 @@ HRESULT IsLoadable(
 |E_POINTER|`pbLoadable` is null.|  
   
 ## Remarks  
+
  If another runtime is already loaded into the process, and the runtime associated with this interface can be loaded for in-process side-by-side execution, `pbLoadable` returns `true`. If the two runtimes cannot run side-by-side in-process, `pbLoadable` returns `false`. For example, the common language runtime (CLR) version 4 can run side-by-side in the same process with CLR version 2.0 or CLR version 1.1. However, CLR version 1.1 and CLR version 2.0 cannot run side-by-side in-process.  
   
  If no runtimes are loaded into the process, this method always returns `true`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

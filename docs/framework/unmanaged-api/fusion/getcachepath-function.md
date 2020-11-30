@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # GetCachePath Function
+
 Gets the path to the cached assembly, using the specified flags.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetCachePath (
 ```  
   
 ## Parameters  
+
  `dwCacheFlags`  
  [in] An [ASM_CACHE_FLAGS](asm-cache-flags-enumeration.md) value that indicates the source of the cached assembly.  
   
@@ -41,6 +43,7 @@ HRESULT GetCachePath (
  [in, out] The requested maximum length of `pwzCachePath`, and upon return, the actual length of `pwzCachePath`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

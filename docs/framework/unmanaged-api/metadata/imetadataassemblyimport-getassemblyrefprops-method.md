@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyImport::GetAssemblyRefProps Method
+
 Gets the set of properties for the assembly reference with the specified metadata signature.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ HRESULT GetAssemblyRefProps (
 ```  
   
 ## Parameters  
+
  `mdar`  
  [in] The `mdAssemblyRef` metadata token that represents the assembly reference for which to get the properties.  
   
@@ -68,9 +70,11 @@ HRESULT GetAssemblyRefProps (
  [out] A pointer to flags that describe the metadata applied to an assembly. The flags value is a combination of one or more [CorAssemblyFlags](corassemblyflags-enumeration.md) values.  
   
 ## Return Value  
+
  This method returns S_OK if it succeeds; otherwise, it returns one of the error codes defined in the Winerror.h header file.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: aa4a3a6f-05ec-4efd-bdbf-2181e13e6468
 ---
 # Version-Tolerant Serialization Callbacks
+
 The data contract programming model fully supports the version-tolerant serialization callback methods that the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> classes support.  
   
 ## Version-Tolerant Attributes  
+
  There are four callback attributes. Each attribute can be applied to a method that the serialization/deserialization engine calls at various times. The table below explains when to use each attribute.  
   
 |Attribute|When the corresponding method is called|  
@@ -32,6 +34,7 @@ The data contract programming model fully supports the version-tolerant serializ
  You can mark only one method per type with each of the preceding callback attributes.  
   
 ### Example  
+
  [!code-csharp[C_DataContract#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontract/cs/source.cs#9)]
  [!code-vb[C_DataContract#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontract/vb/source.vb#9)]  
   

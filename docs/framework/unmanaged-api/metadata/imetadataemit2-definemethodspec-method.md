@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit2::DefineMethodSpec Method
+
 Creates a generic instance of a method, and gets a token to the definition.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT DefineMethodSpec (
 ```  
   
 ## Parameters  
+
  `tkParent`  
  [in] A token for the method of which to create the generic instance. The token must be of type `mdMethodDef` or `mdMemberRef`.  
   
@@ -44,6 +46,7 @@ HRESULT DefineMethodSpec (
  [out] A token to the metadata signature definition of the method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

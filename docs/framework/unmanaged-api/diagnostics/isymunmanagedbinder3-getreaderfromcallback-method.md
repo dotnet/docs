@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedBinder3::GetReaderFromCallback Method
+
 Allows the user to implement or supply via callback either an `IID_IDiaReadExeAtRVACallback` or `IID_IDiaReadExeAtOffsetCallback` to obtain the debug directory information from memory.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetReaderFromCallback(
 ```  
   
 ## Parameters  
+
  `importer`  
  [in] A pointer to the metadata import interface.  
   
@@ -51,9 +53,11 @@ HRESULT GetReaderFromCallback(
  [out] A pointer that is set to the returned [ISymUnmanagedReader](isymunmanagedreader-interface.md) interface.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl  
   
 ## See also

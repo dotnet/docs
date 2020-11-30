@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b2046c38-53d8-4a6c-a084-d6c7091d92b1
 ---
 # ConcurrencyMode Reentrant
+
 This sample demonstrates the necessity and implications of using ConcurrencyMode.Reentrant on a service implementation. ConcurrencyMode.Reentrant implies that the service (or callback) processes only one message at a given time (analogous to `ConcurencyMode.Single`). To ensure thread safety, Windows Communication Foundation (WCF) locks the `InstanceContext` processing a message so that no other messages can be processed. In case of Reentrant mode, the `InstanceContext` is unlocked just before the service makes an outgoing call thereby allowing the subsequent call, (which can be reentrant as demonstrated in the sample) to get the lock next time it comes in to the service. To demonstrate the behavior, the sample shows how a client and service can send messages between each other using a duplex contract.  
   
  The contract defined is a duplex contract with the `Ping` method being implemented by the service and the callback method `Pong` being implemented by the client. A client invokes the server's `Ping` method with a tick count thereby initiating the call. The service checks whether the tick count is not equal to 0 and then invokes the callbacks `Pong` method while decrementing the tick count. This is done by the following code in the sample.  
@@ -47,6 +48,7 @@ public void Pong(int ticks)
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 ## Demonstrates  
+
  To run the sample, build the client and server projects. Then open two command windows and change the directories to the \<sample>\CS\Service\bin\debug and \<sample>\CS\Client\bin\debug directories. Then start the service by typing `service.exe` and then invoke the Client.exe with the initial value of ticks passed as an input argument. A sample output for 10 ticks is shown.  
   
 ```console  

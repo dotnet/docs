@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 62210fd8-a372-4d55-ab9b-c99827d1885e
 ---
 # How to: Exchange Messages with WCF Endpoints and Message Queuing Applications
+
 You can integrate existing Message Queuing (MSMQ) applications with Windows Communication Foundation (WCF) applications by using the MSMQ integration binding to convert MSMQ messages to and from WCF messages. This allows you to call into MSMQ receiver applications from WCF clients as well as call into WCF services from MSMQ sender applications.  
   
  In this section, we explain how to use <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> for queued communication between (1) a WCF client and an MSMQ application service written using System.Messaging and (2) an MSMQ application client and a WCF service.  

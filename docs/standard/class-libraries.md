@@ -3,7 +3,6 @@ title: .NET class libraries
 description: Learn how .NET class libraries enable you to group useful functionality into modules that can be used by multiple applications.
 author: richlander
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
 ---
 # .NET class libraries
@@ -36,9 +35,9 @@ Many library developers have switched from producing multiple platform-specific 
 
 .NET Standard libraries are a replacement of the platform-specific and portable libraries concepts. They are platform-specific in the sense that they expose all functionality from the underlying platform (no synthetic platforms or platform intersections). They are portable in the sense that they work on all supporting platforms.
 
-The .NET Standard exposes a set of library _contracts_. .NET implementations must support each contract fully or not at all. Each implementation, therefore, supports a set of .NET Standard contracts. The corollary is that each .NET Standard class library is supported on the platforms that support its contract dependencies.
+.NET Standard exposes a set of library _contracts_. .NET implementations must support each contract fully or not at all. Each implementation, therefore, supports a set of .NET Standard contracts. The corollary is that each .NET Standard class library is supported on the platforms that support its contract dependencies.
 
-The .NET Standard does not expose the entire functionality of the .NET Framework (nor is that a goal), however, they do expose many more APIs than Portable Class Libraries. More APIs will be added over time.
+.NET Standard does not expose the entire functionality of the .NET Framework (nor is that a goal), however, they do expose many more APIs than Portable Class Libraries. More APIs will be added over time.
 
 The following platforms support .NET Standard libraries:
 

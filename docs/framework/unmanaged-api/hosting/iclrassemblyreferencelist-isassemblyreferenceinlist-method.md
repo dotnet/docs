@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAssemblyReferenceList::IsAssemblyReferenceInList Method
+
 Gets a value that indicates whether the supplied pointer refers to an assembly in the list.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT IsAssemblyReferenceInList (
 ```  
   
 ## Parameters  
+
  `pName`  
  [in] An interface pointer to the assembly for which to search. Valid values are of type `IAssemblyName` or `IReferenceIdentity`.  
   
@@ -40,6 +42,7 @@ HRESULT IsAssemblyReferenceInList (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the common language runtime is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

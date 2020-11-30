@@ -2,7 +2,6 @@
 title: "Names of Type Members"
 description: Learn the guidelines for naming type members in .NET, such as methods, properties, events, and fields.
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "events [.NET Framework], names"
   - "methods [.NET Framework], names"
@@ -15,9 +14,11 @@ helpviewer_keywords:
 ms.assetid: af5a0903-36af-4c2a-b848-cf959affeaa5
 ---
 # Names of Type Members
+
 Types are made of members: methods, properties, events, constructors, and fields. The following sections describe guidelines for naming type members.
 
 ## Names of Methods
+
  Because methods are the means of taking action, the design guidelines require that method names be verbs or verb phrases. Following this guideline also serves to distinguish method names from property and type names, which are noun or adjective phrases.
 
  ✔️ DO give methods names that are verbs or verb phrases.
@@ -31,6 +32,7 @@ public class String {
 ```
 
 ## Names of Properties
+
  Unlike other members, properties should be given noun phrase or adjective names. That is because a property refers to data, and the name of the property reflects that. PascalCasing is always used for property names.
 
  ✔️ DO name properties using a noun, noun phrase, or adjective.
@@ -58,6 +60,7 @@ public class Control {
 ```
 
 ## Names of Events
+
  Events always refer to some action, either one that is happening or one that has occurred. Therefore, as with methods, events are named with verbs, and verb tense is used to indicate the time when the event is raised.
 
  ✔️ DO name events with a verb or a verb phrase.
@@ -81,6 +84,7 @@ public class Control {
  ✔️ DO name event argument classes with the "EventArgs" suffix.
 
 ## Names of Fields
+
  The field-naming guidelines apply to static public and protected fields. Internal and private fields are not covered by guidelines, and public or protected instance fields are not allowed by the [member design guidelines](member.md).
 
  ✔️ DO use PascalCasing in field names.

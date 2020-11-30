@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostIoCompletionManager::GetMaxThreads Method
+
 Gets the maximum number of threads that the host can allot to service I/O requests.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetMaxThreads (
 ```  
   
 ## Parameters  
+
  `pdwMaxIoCompletionThreads`  
  [out] A pointer to the maximum number of threads in the thread pool that the host can allot to service I/O requests.  
   
@@ -44,9 +46,11 @@ HRESULT GetMaxThreads (
 |E_NOTIMPL|The host does not provide an implementation of `GetMaxThreads`.|  
   
 ## Remarks  
+
  A host might want exclusive control over the number of threads that can be allotted to process I/O requests, for reasons such as implementation, performance, or scalability. For this reason, the host is not required to implement `GetMaxThreads`. In this case, the host should return E_NOTIMPL from this method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

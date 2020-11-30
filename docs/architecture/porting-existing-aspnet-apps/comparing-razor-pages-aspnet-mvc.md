@@ -18,6 +18,7 @@ As part of a move from ASP.NET MVC to ASP.NET Core, teams should consider whethe
 ## References
 
 - [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/)
+- [Simpler ASP.NET Core Apps with Razor Pages](https://docs.microsoft.com/archive/msdn-magazine/2017/september/asp-net-core-simpler-asp-net-mvc-apps-with-razor-pages)
 
 >[!div class="step-by-step"]
 >[Previous](routing-differences.md)

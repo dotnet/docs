@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugVariableHome::GetCode Method
+
 Gets the "ICorDebugCode" instance that contains this [ICorDebugVariableHome](icordebugvariablehome-interface.md) object.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetCode(
 ```  
   
 ## Parameters  
+
  `ppCode`  
  [out] A pointer to the address of the "ICorDebugCode" instance that contains this [ICorDebugVariableHome](icordebugvariablehome-interface.md) object.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

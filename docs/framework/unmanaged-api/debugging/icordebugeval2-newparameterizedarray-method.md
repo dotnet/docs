@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEval2::NewParameterizedArray Method
+
 Allocates a new array of the specified element type and dimensions.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT NewParameterizedArray(
 ```  
   
 ## Parameters  
+
  `pElementType`  
  [in] A pointer to an ICorDebugType object that represents the type of element stored in the array.  
   
@@ -44,9 +46,11 @@ HRESULT NewParameterizedArray(
  [in] Optional. The lower bound of each dimension of the array. If this value is omitted, a lower bound of zero is assumed for each dimension.  
   
 ## Remarks  
+
  The elements of the array may be instances of a generic type. The array is always created in the application domain in which the thread is currently running. In the .NET Framework 2.0, the value of `rank` must be 1.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

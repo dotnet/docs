@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugReferenceValue::Dereference Method
+
 Gets the object that is referenced.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT Dereference (
 ```  
   
 ## Parameters  
+
  `ppValue`  
  [out] A pointer to the address of an ICorDebugValue that represents the object to which this ICorDebugReferenceValue object points.  
   
 ## Remarks  
+
  The `ICorDebugValue` object is valid only while its reference has not yet been disabled.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

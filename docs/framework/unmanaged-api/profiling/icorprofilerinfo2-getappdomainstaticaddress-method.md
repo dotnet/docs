@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::GetAppDomainStaticAddress Method
+
 Gets the address of the specified application domain-static field that is in the scope of the specified application domain.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ RESULT GetAppDomainStaticAddress(
 ```  
   
 ## Parameters  
+
  `classId`  
  [in] The class ID of the class that contains the requested application domain-static field.  
   
@@ -43,6 +45,7 @@ RESULT GetAppDomainStaticAddress(
  [out] A pointer to the address of the static field that is within the specified application domain.  
   
 ## Remarks  
+
  The `GetAppDomainStaticAddress` method may return one of the following:  
   
 - A CORPROF_E_DATAINCOMPLETE HRESULT if the given static field has not been assigned an address in the specified context.  
@@ -52,6 +55,7 @@ RESULT GetAppDomainStaticAddress(
  Before a class’s class constructor is completed, `GetAppDomainStaticAddress` will return CORPROF_E_DATAINCOMPLETE for all its static fields, although some of the static fields may already be initialized and rooting garbage collection objects.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

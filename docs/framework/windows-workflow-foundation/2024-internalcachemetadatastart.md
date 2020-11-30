@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 18758528-6d3b-4d25-9427-12d2d3f4ec4e
 ---
 # 2024 - InternalCacheMetadataStart
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 18758528-6d3b-4d25-9427-12d2d3f4ec4e
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates the start of InternalCacheMetadata on an activity.  
   
 ## Message  
+
  InternalCacheMetadata started on activity '%1'.  
   
 ## Details  

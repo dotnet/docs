@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugGuidToTypeMapping Structure
+
 Maps a Windows Runtime GUID to its corresponding ICorDebugType object.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ typedef struct CorDebugGuidToTypeMapping {
 |`pType`|A pointer to an ICorDebugType object that provides information about the cached type.|  
   
 ## Requirements  
+
  **Platforms:** Windows Runtime.  
   
  **Header:** CorDebug.idl, CorDebug.h  

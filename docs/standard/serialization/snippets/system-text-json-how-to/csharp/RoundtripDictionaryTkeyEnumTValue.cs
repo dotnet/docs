@@ -9,21 +9,28 @@ namespace SystemTextJsonSamples
         {
             string jsonString;
 
-            WeatherForecastWithEnumDictionary weatherForecast = WeatherForecastFactories.CreateWeatherForecastWithEnumDictionary();
+            WeatherForecastWithEnumDictionary weatherForecast =
+                WeatherForecastFactories.CreateWeatherForecastWithEnumDictionary();
 
-            // <SnippetRegister>
+            // <Register>
             var serializeOptions = new JsonSerializerOptions();
             serializeOptions.Converters.Add(new DictionaryTKeyEnumTValueConverter());
-            // </SnippetRegister>
+            // </Register>
             serializeOptions.WriteIndented = true;
             jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
-            // <SnippetDeserialize>
-            var deserializeOptions = new JsonSerializerOptions();
-            deserializeOptions.Converters.Add(new DictionaryTKeyEnumTValueConverter());
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithEnumDictionary>(jsonString, deserializeOptions);
-            // </SnippetDeserialize>
+            // <Deserialize>
+            var deserializeOptions = new JsonSerializerOptions
+            {
+                Converters =
+                {
+                    new DictionaryTKeyEnumTValueConverter()
+                }
+            };
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithEnumDictionary>(
+                jsonString, deserializeOptions);
+            // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }
     }

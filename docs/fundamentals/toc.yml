@@ -138,7 +138,7 @@ items:
     - name: What's new
       href: ../core/dotnet-five.md
     - name: Breaking changes
-      href: ../core/compatibility/5.0.md
+      href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET Core 3.1
     items:
     - name: What's new
@@ -367,6 +367,8 @@ items:
       href: ../core/additional-tools/index.md
     - name: .NET uninstall tool
       href: ../core/additional-tools/uninstall-tool.md
+    - name: Generate self-signed certificates
+      href: ../core/additional-tools/self-signed-certificates-guide.md
     - name: WCF web service reference provider
       href: ../core/additional-tools/wcf-web-service-reference-guide.md
     - name: WCF service utility
@@ -385,9 +387,12 @@ items:
     - name: Managed debuggers
       href: ../core/diagnostics/managed-debuggers.md
     - name: Dumps
-      href: ../core/diagnostics/dumps.md
-    - name: Debug Linux dumps
-      href: ../core/diagnostics/debug-linux-dumps.md
+      items:
+      - name: Overview
+        displayName: dumps
+        href: ../core/diagnostics/dumps.md
+      - name: Linux dumps
+        href: ../core/diagnostics/debug-linux-dumps.md
     - name: EventCounters
       href: ../core/diagnostics/event-counters.md
     - name: EventPipe
@@ -1603,10 +1608,36 @@ items:
         displayName: json serialization
       - name: How to serialize and deserialize JSON
         href: ../standard/serialization/system-text-json-how-to.md
-      - name: How to write custom converters
-        href: ../standard/serialization/system-text-json-converters-how-to.md
+      - name: Control serialization behavior
+        items:
+        - name: Instantiate JsonSerializerOptions
+          href: ../standard/serialization/system-text-json-configure-options.md
+        - name: Enable case-insensitive matching
+          href: ../standard/serialization/system-text-json-character-casing.md
+        - name: Customize property names and values
+          href: ../standard/serialization/system-text-json-customize-properties.md
+        - name: Ignore properties
+          href: ../standard/serialization/system-text-json-ignore-properties.md
+        - name: Allow invalid JSON
+          href: ../standard/serialization/system-text-json-invalid-json.md
+        - name: Handle overflow JSON
+          href: ../standard/serialization/system-text-json-handle-overflow.md
+        - name: Preserve references
+          href: ../standard/serialization/system-text-json-preserve-references.md
+        - name: Immutable types and non-public accessors
+          href: ../standard/serialization/system-text-json-immutability.md
+        - name: Polymorphic serialization
+          href: ../standard/serialization/system-text-json-polymorphism.md
       - name: How to migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+      - name: Advanced
+        items:
+        - name: Customize character encoding
+          href: ../standard/serialization/system-text-json-character-encoding.md
+        - name: Custom serializers and deserializers
+          href: ../standard/serialization/write-custom-serializer-deserializer.md
+        - name: Custom converters
+          href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization
       items:
       - name: Overview
@@ -2249,7 +2280,7 @@ items:
     - name: Use the Windows Compatibility Pack
       href: ../core/porting/windows-compat-pack.md
     - name: Port Windows Forms projects
-      href: ../core/porting/winforms.md
+      href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
     - name: Port WPF projects
       href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
     - name: Port C++/CLI projects

@@ -7,22 +7,15 @@ namespace SystemTextJsonSamples
 {
     public class ImmutablePointConverter : JsonConverter<ImmutablePoint>
     {
-        private readonly JsonEncodedText XName = JsonEncodedText.Encode("X");
-        private readonly JsonEncodedText YName = JsonEncodedText.Encode("Y");
+        private readonly JsonEncodedText _xName = JsonEncodedText.Encode("X");
+        private readonly JsonEncodedText _yName = JsonEncodedText.Encode("Y");
 
         private readonly JsonConverter<int> _intConverter;
 
-        public ImmutablePointConverter(JsonSerializerOptions options)
-        {
-            if (options?.GetConverter(typeof(int)) is JsonConverter<int> intConverter)
-            {
-                _intConverter = intConverter;
-            }
-            else
-            {
-                throw new InvalidOperationException();
-            }
-        }
+        public ImmutablePointConverter(JsonSerializerOptions options) => 
+            _intConverter = options?.GetConverter(typeof(int)) is JsonConverter<int> intConverter
+                ? intConverter
+                : throw new InvalidOperationException();
 
         public override ImmutablePoint Read(
             ref Utf8JsonReader reader,
@@ -34,11 +27,8 @@ namespace SystemTextJsonSamples
                 throw new JsonException();
             };
 
-            int x = default;
-            bool xSet = false;
-
-            int y = default;
-            bool ySet = false;
+            int? x = default;
+            int? y = default;
 
             // Get the first property.
             reader.Read();
@@ -47,15 +37,13 @@ namespace SystemTextJsonSamples
                 throw new JsonException();
             }
 
-            if (reader.ValueTextEquals(XName.EncodedUtf8Bytes))
+            if (reader.ValueTextEquals(_xName.EncodedUtf8Bytes))
             {
                 x = ReadProperty(ref reader, options);
-                xSet = true;
             }
-            else if (reader.ValueTextEquals(YName.EncodedUtf8Bytes))
+            else if (reader.ValueTextEquals(_yName.EncodedUtf8Bytes))
             {
                 y = ReadProperty(ref reader, options);
-                ySet = true;
             }
             else
             {
@@ -69,11 +57,11 @@ namespace SystemTextJsonSamples
                 throw new JsonException();
             }
 
-            if (xSet && reader.ValueTextEquals(YName.EncodedUtf8Bytes))
+            if (x.HasValue && reader.ValueTextEquals(_yName.EncodedUtf8Bytes))
             {
                 y = ReadProperty(ref reader, options);
             }
-            else if (ySet && reader.ValueTextEquals(XName.EncodedUtf8Bytes))
+            else if (y.HasValue && reader.ValueTextEquals(_xName.EncodedUtf8Bytes))
             {
                 x = ReadProperty(ref reader, options);
             }
@@ -89,7 +77,7 @@ namespace SystemTextJsonSamples
                 throw new JsonException();
             }
 
-            return new ImmutablePoint(x, y);
+            return new ImmutablePoint(x.GetValueOrDefault(), y.GetValueOrDefault());
         }
 
         private int ReadProperty(ref Utf8JsonReader reader, JsonSerializerOptions options)
@@ -112,8 +100,8 @@ namespace SystemTextJsonSamples
             JsonSerializerOptions options)
         {
             writer.WriteStartObject();
-            WriteProperty(writer, XName, point.X, options);
-            WriteProperty(writer, YName, point.Y, options);
+            WriteProperty(writer, _xName, point.X, options);
+            WriteProperty(writer, _yName, point.Y, options);
             writer.WriteEndObject();
         }
     }

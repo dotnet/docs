@@ -24,17 +24,20 @@ namespace QuotedNumbers
 
             JsonSerializerOptions options = new()
             {
-                NumberHandling = JsonNumberHandling.AllowReadingFromString |
+                NumberHandling =
+                    JsonNumberHandling.AllowReadingFromString |
                     JsonNumberHandling.WriteAsString,
                 WriteIndented = true
             };
 
-            string forecastJson = JsonSerializer.Serialize<Forecast>
-                (forecast, options);
+            string forecastJson =
+                JsonSerializer.Serialize<Forecast>(forecast, options);
+
             Console.WriteLine($"Output JSON:\n{forecastJson}");
 
             Forecast forecastDeserialized =
                 JsonSerializer.Deserialize<Forecast>(forecastJson, options);
+
             Console.WriteLine($"Date: {forecastDeserialized.Date}");
             Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");
             Console.WriteLine($"Summary: {forecastDeserialized.Summary}");

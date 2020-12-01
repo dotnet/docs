@@ -13,8 +13,10 @@ namespace SystemTextJsonSamples
             var point2 = new ImmutablePoint(3, 4);
             var points = new List<ImmutablePoint> { point1, point2 };
 
-            var serializeOptions = new JsonSerializerOptions();
-            serializeOptions.WriteIndented = true;
+            var serializeOptions = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
             jsonString = JsonSerializer.Serialize(points, serializeOptions);
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 

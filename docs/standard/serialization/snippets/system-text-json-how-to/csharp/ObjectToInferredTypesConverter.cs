@@ -10,48 +10,21 @@ namespace SystemTextJsonSamples
         public override object Read(
             ref Utf8JsonReader reader,
             Type typeToConvert,
-            JsonSerializerOptions options)
-        {
-            if (reader.TokenType == JsonTokenType.True)
+            JsonSerializerOptions options) => reader.TokenType switch
             {
-                return true;
-            }
-
-            if (reader.TokenType == JsonTokenType.False)
-            {
-                return false;
-            }
-
-            if (reader.TokenType == JsonTokenType.Number)
-            {
-                if (reader.TryGetInt64(out long l))
-                {
-                    return l;
-                }
-
-                return reader.GetDouble();
-            }
-
-            if (reader.TokenType == JsonTokenType.String)
-            {
-                if (reader.TryGetDateTime(out DateTime datetime))
-                {
-                    return datetime;
-                }
-
-                return reader.GetString();
-            }
-
-            // Use JsonElement as fallback.
-            // Newtonsoft uses JArray or JObject.
-            using JsonDocument document = JsonDocument.ParseValue(ref reader);
-            return document.RootElement.Clone();
-        }
+                JsonTokenType.True => true,
+                JsonTokenType.False => false,
+                JsonTokenType.Number when reader.TryGetInt64(out long l) => l,
+                JsonTokenType.Number => reader.GetDouble(),
+                JsonTokenType.String when reader.TryGetDateTime(out DateTime datetime) => datetime,
+                JsonTokenType.String => reader.GetString(),
+                _ => JsonDocument.ParseValue(ref reader).RootElement.Clone()
+            };
 
         public override void Write(
             Utf8JsonWriter writer,
             object objectToWrite,
             JsonSerializerOptions options) =>
-                throw new InvalidOperationException("Should not get here.");
+            throw new InvalidOperationException("Should not get here.");
     }
 }

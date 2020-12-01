@@ -20,7 +20,7 @@ namespace IgnoreNullOnSerialize
             {
                 Date = DateTime.Now,
                 Summary = null,
-                TemperatureC = default(int)
+                TemperatureC = default
             };
 
             JsonSerializerOptions options = new()
@@ -28,8 +28,9 @@ namespace IgnoreNullOnSerialize
                 DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
             };
 
-            string forecastJson = JsonSerializer.Serialize<Forecast>
-                (forecast, options);
+            string forecastJson =
+                JsonSerializer.Serialize<Forecast>(forecast, options);
+            
             Console.WriteLine(forecastJson);
         }
     }

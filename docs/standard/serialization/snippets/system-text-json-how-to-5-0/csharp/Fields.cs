@@ -10,6 +10,7 @@ namespace Fields
         public int TemperatureC;
         public string Summary;
     }
+
     public class Forecast2
     {
         [JsonInclude]
@@ -19,14 +20,16 @@ namespace Fields
         [JsonInclude]
         public string Summary;
     }
+
     public class Program
     {
         public static void Main()
         {
-            var json = "{\"Date\":\"2020-09-06T11:31:01.923395-07:00\",\"TemperatureC\":-1,\"Summary\":\"Cold\"} ";
+            var json =
+                @"{""Date"":""2020-09-06T11:31:01.923395-07:00"",""TemperatureC"":-1,""Summary"":""Cold""} ";
             Console.WriteLine($"Input JSON: {json}");
 
-            var options = new JsonSerializerOptions()
+            var options = new JsonSerializerOptions
             {
                 IncludeFields = true,
             };
@@ -36,8 +39,9 @@ namespace Fields
             Console.WriteLine($"forecast.TemperatureC: {forecast.TemperatureC}");
             Console.WriteLine($"forecast.Summary: {forecast.Summary}");
 
-            var roundTrippedJson = JsonSerializer.Serialize<Forecast>
-                (forecast, options);
+            var roundTrippedJson =
+                JsonSerializer.Serialize<Forecast>(forecast, options);
+
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
 
             options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
@@ -47,8 +51,9 @@ namespace Fields
             Console.WriteLine($"forecast2.TemperatureC: {forecast2.TemperatureC}");
             Console.WriteLine($"forecast2.Summary: {forecast2.Summary}");
 
-            roundTrippedJson = JsonSerializer.Serialize<Forecast2>
-                (forecast2, options);
+            roundTrippedJson =
+                JsonSerializer.Serialize<Forecast2>(forecast2, options);
+            
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
         }
     }

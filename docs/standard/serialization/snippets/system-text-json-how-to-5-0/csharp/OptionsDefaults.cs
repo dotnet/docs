@@ -26,18 +26,19 @@ namespace OptionsDefaults
                 WriteIndented = true
             };
 
-            Console.WriteLine
-                ($"PropertyNameCaseInsensitive: {options.PropertyNameCaseInsensitive}");
-            Console.WriteLine
-                ($"JsonNamingPolicy: {options.PropertyNamingPolicy}");
-            Console.WriteLine
-                ($"NumberHandling: {options.NumberHandling}");
+            Console.WriteLine(
+                $"PropertyNameCaseInsensitive: {options.PropertyNameCaseInsensitive}");
+            Console.WriteLine(
+                $"JsonNamingPolicy: {options.PropertyNamingPolicy}");
+            Console.WriteLine(
+                $"NumberHandling: {options.NumberHandling}");
 
             string forecastJson = JsonSerializer.Serialize<Forecast>(forecast, options);
             Console.WriteLine($"Output JSON:\n{forecastJson}");
 
-            Forecast forecastDeserialized = 
+            Forecast forecastDeserialized =
                 JsonSerializer.Deserialize<Forecast>(forecastJson, options);
+
             Console.WriteLine($"Date: {forecastDeserialized.Date}");
             Console.WriteLine($"TemperatureC: {forecastDeserialized.TemperatureC}");
             Console.WriteLine($"Summary: {forecastDeserialized.Summary}");

@@ -50,7 +50,7 @@ let test p str =
 test pfloat "1.234"
 ```
 
-This feature implements [F# Tooling RFC FST-1027](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1027-fsi-references.md). For more information on package references, see the [F# Interactive](../tutorials/fsharp-interactive/index.md) tutorial.
+This feature implements [F# Tooling RFC FST-1027](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1027-fsi-references.md). For more information on package references, see the [F# Interactive](../tools/fsharp-interactive/index.md) tutorial.
 
 ## String interpolation
 

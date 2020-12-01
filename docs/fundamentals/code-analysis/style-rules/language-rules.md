@@ -83,7 +83,7 @@ The style rules in this section are applicable to both C# and Visual Basic.
 
 The style rules in this section are applicable to C# language only.
 
-- ['var' preferences](ide0003-ide0009.md)
+- ['var' preferences](ide0007-ide0008.md)
   - [csharp_style_var_for_built_in_types](ide0007-ide0008.md#csharp_style_var_for_built_in_types)
   - [csharp_style_var_when_type_is_apparent](ide0007-ide0008.md#csharp_style_var_when_type_is_apparent)
   - [csharp_style_var_elsewhere](ide0007-ide0008.md#csharp_style_var_elsewhere)

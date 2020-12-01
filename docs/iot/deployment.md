@@ -10,7 +10,7 @@ ms.prod: dotnet
 
 # Deploy .NET apps to Raspberry Pi
 
-Deployment of .NET apps to Raspberry Pi is identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](/dotnet/core/deploying).
+Deployment of .NET apps to Raspberry Pi is identical to that of any other platform. Your app can run as *self-contained* or *framework-dependent* deployment modes. There are advantages to each strategy. For more information, see [.NET application publishing overview](../core/deploying/index.md).
 
 ## Deploying a framework-dependent app
 
@@ -18,7 +18,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
 
 1. [!INCLUDE [ensure-ssh](includes/ensure-ssh.md)]
 
-1. Install .NET on the Raspberry Pi using the [dotnet-install scripts](/dotnet/core/tools/dotnet-install-script). Complete the following steps from a Bash prompt on the Raspberry Pi (local or SSH):
+1. Install .NET on the Raspberry Pi using the [dotnet-install scripts](../core/tools/dotnet-install-script.md). Complete the following steps from a Bash prompt on the Raspberry Pi (local or SSH):
     1. Run the following command to install .NET:
 
         ```bash
@@ -46,7 +46,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
 
 1. Publish the app on the development computer as follows, depending on development environment.
     - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder?view=vs-2019). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Framework-dependent* and **Target runtime** is set to *Portable*.
-    - If using the **.NET CLI**, use the [dotnet publish](/dotnet/core/tools/dotnet-publish) command. No additional arguments are required.
+    - If using the **.NET CLI**, use the [dotnet publish](../core/tools/dotnet-publish.md) command. No additional arguments are required.
 
 1. [!INCLUDE [sftp-client](includes/sftp-client.md)]
 
@@ -64,7 +64,7 @@ To deploy your app as a self-contained app, complete the following steps:
 
 1. Publish the app on the development computer as follows, depending on development environment.
     - If using **Visual Studio**, [deploy the app to a local folder](/visualstudio/deployment/quickstart-deploy-to-local-folder?view=vs-2019). Before publishing, select **Edit** in the publish profile summary and select the **Settings** tab. Ensure that **Deployment mode** is set to *Self-contained* and **Target runtime** is set to *linux-arm*.
-    - If using the **.NET CLI**, use the [dotnet publish](/dotnet/core/tools/dotnet-publish) command with the `-r linux-arm` argument:
+    - If using the **.NET CLI**, use the [dotnet publish](../core/tools/dotnet-publish.md) command with the `-r linux-arm` argument:
 
         ```dotnetcli
         dotnet publish -r linux-arm

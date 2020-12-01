@@ -23,9 +23,9 @@ namespace JsonIgnoreAttributeExample
         {
             Forecast forecast = new()
             {
-                Date = default(DateTime),
+                Date = default,
                 Summary = null,
-                TemperatureC = default(int)
+                TemperatureC = default
             };
 
             JsonSerializerOptions options = new()
@@ -33,8 +33,9 @@ namespace JsonIgnoreAttributeExample
                 DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault
             };
 
-            string forecastJson = JsonSerializer.Serialize<Forecast>
-                (forecast,options);
+            string forecastJson =
+                JsonSerializer.Serialize<Forecast>(forecast,options);
+
             Console.WriteLine(forecastJson);
         }
     }

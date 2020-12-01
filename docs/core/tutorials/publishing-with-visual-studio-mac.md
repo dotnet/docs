@@ -1,7 +1,7 @@
 ---
 title: Publish a .NET console application using Visual Studio for Mac
 description: Learn how to use Visual Studio for Mac to create the set of files that are needed to run a .NET application.
-ms.date: 11/18/2020
+ms.date: 11/30/2020
 ---
 # Tutorial: Publish a .NET console application using Visual Studio for Mac
 
@@ -64,7 +64,7 @@ As the preceding image shows, the published output includes the following files:
 1. Open a terminal and navigate to the *publish* folder. To do that, enter `cd` and then paste the path that you copied earlier. For example:
 
    ```console
-   cd ~/Projects/HelloWorld/HelloWorld/bin/Release/netcoreapp3.1/publish/
+   cd ~/Projects/HelloWorld/HelloWorld/bin/Release/net5.0/publish/
    ```
 
 1. Run the app by using the `dotnet` command:

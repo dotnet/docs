@@ -23,8 +23,6 @@ This tutorial shows how to create and run a .NET console application using Visua
 
 ## Create the app
 
-Create a .NET console app project named "HelloWorld".
-
 1. Start Visual Studio for Mac.
 
 1. Select **New** in the start window.
@@ -35,9 +33,7 @@ Create a .NET console app project named "HelloWorld".
 
    :::image type="content" source="media/with-visual-studio-mac/visual-studio-mac-new-dialog.png" alt-text="New project templates list":::
 
-1. In the **Target Framework** drop-down of the **Configure your new Console Application** dialog, select **.NET 3.1**, and select **Next**.
-
-   :::image type="content" source="media/with-visual-studio-mac/target-framework.png" alt-text="Select Target Framework":::
+1. In the **Target Framework** drop-down of the **Configure your new Console Application** dialog, select **.NET 5.0**, and select **Next**.
 
 1. Type "HelloWorld" for the **Project Name**, and select **Create**.
 

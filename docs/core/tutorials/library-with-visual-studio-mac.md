@@ -1,7 +1,7 @@
 ---
 title: Create a .NET class library using Visual Studio for Mac
 description: Learn how to create a .NET class library using Visual Studio for Mac.
-ms.date: 11/18/2020
+ms.date: 11/30/2020
 ---
 # Tutorial: Create a .NET class library using Visual Studio for Mac
 
@@ -17,7 +17,7 @@ A *class library* defines types and methods that are called by an application. W
 
 ## Prerequisites
 
-* [Install Visual Studio for Mac version 8.6 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET development. For more information, see the following resources:
+* [Install Visual Studio for Mac version 8.8 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET development. For more information, see the following resources:
 
   * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
   * [Supported macOS versions](../install/macos.md).
@@ -31,19 +31,17 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
 1. In the start window, select **New Project**.
 
-1. In the **New Project** dialog under the **Multi-Platform** node, select **Library**, then select the **.NET Library** template, and select **Next**.
+1. In the **Choose a template for your new project** dialog select **Web and Console** > **Library** > **Class Library**, and then select **Next**.
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New Project dialog":::
 
 1. In the **Configure your new .NET Library** dialog, choose ".NET 5.0", and select **Next**.
 
-   :::image type="content" source="media/library-with-visual-studio-mac/choose-net-std-21.png" alt-text="Choose .NET 5.0":::
-
 1. Name the project "StringLibrary" and the solution "ClassLibraryProjects". Leave **Create a project directory within the solution directory** selected. Select **Create**.
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project-options.png" alt-text="Visual Studio for Mac New project dialog options":::
 
-1. From the main menu, select **View** > **Pads** > **Solution**, and select the dock icon to keep the pad open.
+1. From the main menu, select **View** > **Solution**, and select the dock icon to keep the pad open.
 
    :::image type="content" source="media/library-with-visual-studio-mac/solution-dock-icon.png" alt-text="Dock icon for Solution pad":::
 
@@ -93,7 +91,7 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Run the app
 
-1. <kbd>ctrl</kbd>-click on the ShowCase project and select **Run project** from the context menu.
+1. <kbd>ctrl</kbd>-click the **ShowCase** project and select **Run project** from the context menu.
 
 1. Try out the program by entering strings and pressing <kbd>enter</kbd>, then press <kbd>enter</kbd> to exit.
 

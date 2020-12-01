@@ -25,7 +25,9 @@ Unit tests provide automated software testing during your development and publis
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-project.png" alt-text="Visual Studio Mac New Project dialog creating test project":::
 
-1. Select **.NET 5.0**. Name the new project "StringLibraryTest" and select **Create**.
+1. Select **.NET 5.0** as the **Target Framework** and select **Next**.
+
+1. Name the new project "StringLibraryTest" and select **Create**.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png" alt-text="Visual Studio Mac New Project dialog providing project name":::
 

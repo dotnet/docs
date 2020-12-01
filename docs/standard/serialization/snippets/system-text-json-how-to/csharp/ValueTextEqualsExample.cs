@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Text;
 using System.Text.Json;
 
@@ -7,21 +6,19 @@ namespace SystemTextJsonSamples
 {
     public class ValueTextEqualsExample
     {
-        // <SnippetDefineUtf8Var>
+        // <DefineUtf8Var>
         private static readonly byte[] s_nameUtf8 = Encoding.UTF8.GetBytes("name");
-        // </SnippetDefineUtf8Var>
+        // </DefineUtf8Var>
         public static void Run(ReadOnlySpan<byte> jsonReadOnlySpan)
         {
             int count = 0;
             int total = 0;
             var reader = new Utf8JsonReader(jsonReadOnlySpan);
 
-            // <SnippetUseUtf8Var>
+            // <UseUtf8Var>
             while (reader.Read())
             {
-                JsonTokenType tokenType = reader.TokenType;
-
-                switch (tokenType)
+                switch (reader.TokenType)
                 {
                     case JsonTokenType.StartObject:
                         total++;
@@ -33,8 +30,8 @@ namespace SystemTextJsonSamples
                         }
                         break;
                 }
-                // </SnippetUseUtf8Var>
             }
+            // </UseUtf8Var>
             Console.WriteLine($"{count} out of {total} have \"name\" properties");
         }
     }

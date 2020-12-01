@@ -3,7 +3,7 @@ title: App startup
 description: Learn how to define the startup logic for your app.
 author: csharpfritz
 ms.author: jefritz
-ms.date: 02/25/2020
+ms.date: 11/20/2020
 ---
 # App startup
 
@@ -16,13 +16,13 @@ The default web forms `Application_Start` method has grown in purpose over years
 - `RouteConfig` - Application URL routing
 - `BundleConfig` - CSS and JavaScript bundling and minification
 
-Each of these individual files reside in the `App_Start` folder and run only once at the start of our application.  `RouteConfig` in the default project template adds the `FriendlyUrlSettings` for web forms to allow application URLs to omit the `.ASPX` file extension.  The default template also contains a directive that provides permanent HTTP redirect status codes (HTTP 301) for the `.ASPX` pages to the friendly URL with the file name that omits the extension.
+Each of these individual files resides in the `App_Start` folder and run only once at the start of our application.  `RouteConfig` in the default project template adds the `FriendlyUrlSettings` for web forms to allow application URLs to omit the `.ASPX` file extension.  The default template also contains a directive that provides permanent HTTP redirect status codes (HTTP 301) for the `.ASPX` pages to the friendly URL with the file name that omits the extension.
 
 With ASP.NET Core and Blazor, these methods are either simplified and consolidated into the `Startup` class or they are eliminated in favor of common web technologies.
 
 ## Blazor Server Startup Structure
 
-Blazor Server applications reside on top of an ASP.NET Core 3.0 or later application.  ASP.NET Core web applications are configured through a pair of methods in the `Startup.cs` class on the root folder of the application.  The Startup class's default content is listed below
+Blazor Server applications reside on top of an ASP.NET Core 3.0 or later version.  ASP.NET Core web applications are configured through a pair of methods in the `Startup.cs` class on the root folder of the application.  The Startup class's default content is listed below
 
 ```csharp
 public class Startup
@@ -73,7 +73,7 @@ public class Startup
 
 Like the rest of ASP.NET Core, the Startup class is created with dependency injection principles.  The `IConfiguration` is provided to the constructor and stashed in a public property for later access during configuration.
 
-The `ConfigureServices` method introduced in ASP.NET Core allows for the various ASP.NET Core framework services to be configured for the framework's built-in dependency injection container.  The various `services.Add*` methods add services that enable features such as authentication, razor pages, MVC controller routing, SignalR, and Blazor Server interactions among many others.  This method was not needed in web forms, as the parsing and handling of the ASPX, ASCX, ASHX, and ASMX files was defined by referencing ASP.NET in the web.config configuration file.  More information about dependency injection in ASP.NET Core is available in the [online documentation](/aspnet/core/fundamentals/dependency-injection).
+The `ConfigureServices` method introduced in ASP.NET Core allows for the various ASP.NET Core framework services to be configured for the framework's built-in dependency injection container.  The various `services.Add*` methods add services that enable features such as authentication, razor pages, MVC controller routing, SignalR, and Blazor Server interactions among many others.  This method was not needed in web forms, as the parsing and handling of the ASPX, ASCX, ASHX, and ASMX files were defined by referencing ASP.NET in the web.config configuration file.  More information about dependency injection in ASP.NET Core is available in the [online documentation](/aspnet/core/fundamentals/dependency-injection).
 
 The `Configure` method introduces the concept of the HTTP pipeline to ASP.NET Core.  In this method, we declare from top to bottom the [Middleware](middleware.md) that will handle every request sent to our application. Most of these features in the default configuration were scattered across the web forms configuration files and are now in one place for ease of reference.
 
@@ -83,7 +83,7 @@ Next, an unexpected configuration method is listed to `UseStaticFiles`.  In ASP.
 
 The next line is the first that replicates one of the configuration options from web forms: `UseRouting`.  This method adds the ASP.NET Core router to the pipeline and it can be either configured here or in the individual files that it can consider routing to.  More information about routing configuration can be found in the [Routing section](pages-routing-layouts.md).
 
-The final statement in this method defines the endpoints that ASP.NET Core is listening on.  These are the web accessible locations that you can access on the web server and receive some content handled by .NET and returned to you.  The first entry, `MapBlazorHub` configures a SignalR hub for use in providing the real-time and persistent connection to the server where the state and rendering of Blazor components is handled.  The `MapFallbackToPage` method call indicates the web-accessible location of the page that starts the Blazor application and also configures the application to handle deep-linking requests from the client-side.  You will see this feature at work if you open a browser and navigate directly to Blazor handled route in your application, such as `/counter` in the default project template. The request gets handled by the *_Host.cshtml* fallback page, which then runs the Blazor router and renders the counter page.
+The final statement in this method defines the endpoints that ASP.NET Core is listening on.  These routes are the web accessible locations that you can access on the web server and receive some content handled by .NET and returned to you.  The first entry, `MapBlazorHub` configures a SignalR hub for use in providing the real-time and persistent connection to the server where the state and rendering of Blazor components is handled.  The `MapFallbackToPage` method call indicates the web-accessible location of the page that starts the Blazor application and also configures the application to handle deep-linking requests from the client-side.  You will see this feature at work if you open a browser and navigate directly to Blazor handled route in your application, such as `/counter` in the default project template. The request gets handled by the *_Host.cshtml* fallback page, which then runs the Blazor router and renders the counter page.
 
 ## Upgrading the BundleConfig Process
 

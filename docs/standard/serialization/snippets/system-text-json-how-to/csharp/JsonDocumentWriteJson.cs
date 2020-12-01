@@ -11,7 +11,7 @@ namespace SystemTextJsonSamples
             string inputFileName = "Grades.json";
             string outputFileName = "GradesOutput.json";
 
-            // <SnippetSerialize>
+            // <Serialize>
             string jsonString = File.ReadAllText(inputFileName);
 
             var writerOptions = new JsonWriterOptions
@@ -47,7 +47,7 @@ namespace SystemTextJsonSamples
             writer.WriteEndObject();
 
             writer.Flush();
-            // </SnippetSerialize>
+            // </Serialize>
             Console.WriteLine($"Output file is {outputFileName}");
         }
     }

@@ -27,8 +27,9 @@ namespace CopyOptions
             };
 
             JsonSerializerOptions optionsCopy = new(options);
-            string forecastJson = JsonSerializer.Serialize<Forecast>
-                (forecast, optionsCopy);
+            string forecastJson =
+                JsonSerializer.Serialize<Forecast>(forecast, optionsCopy);
+
             Console.WriteLine($"Output JSON:\n{forecastJson}");
         }
     }

@@ -16,7 +16,7 @@ namespace SystemTextJsonSamples
         }
         private static void AverageGrades(string jsonString)
         {
-            // <SnippetAverageGrades1>
+            // <AverageGrades1>
             double sum = 0;
             int count = 0;
 
@@ -40,11 +40,11 @@ namespace SystemTextJsonSamples
 
             double average = sum / count;
             Console.WriteLine($"Average grade : {average}");
-            // </SnippetAverageGrades1>
+            // </AverageGrades1>
         }
         private static void AverageGrades_Alternative(string jsonString)
         {
-            // <SnippetAverageGrades2>
+            // <AverageGrades2>
             double sum = 0;
             int count = 0;
 
@@ -70,7 +70,7 @@ namespace SystemTextJsonSamples
 
             double average = sum / count;
             Console.WriteLine($"Average grade : {average}");
-            // </SnippetAverageGrades2>
+            // </AverageGrades2>
         }
     }
 }

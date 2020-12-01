@@ -15,14 +15,14 @@ namespace SystemTextJsonSamples
 }";
             Console.WriteLine($"JSON input:\n{jsonString}\n");
 
-            // <SnippetDeserialize>
+            // <Deserialize>
             var options = new JsonSerializerOptions
             {
                 ReadCommentHandling = JsonCommentHandling.Skip,
                 AllowTrailingCommas = true,
             };
             var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, options);
-            // </SnippetDeserialize>
+            // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }
     }

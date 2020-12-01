@@ -43,18 +43,19 @@ namespace SystemTextJsonSamples
 }";
             Console.WriteLine($"JSON input:\n{jsonString}\n");
 
-            // <SnippetDeserialize>
-            WeatherForecastWithExtensionData weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithExtensionData>(jsonString);
+            // <Deserialize>
+            WeatherForecastWithExtensionData weatherForecast = 
+                JsonSerializer.Deserialize<WeatherForecastWithExtensionData>(jsonString);
             weatherForecast.DisplayPropertyValues();
-            // </SnippetDeserialize>
+            // </Deserialize>
 
-            // <SnippetSerialize>
+            // <Serialize>
             var serializeOptions = new JsonSerializerOptions
             {
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);
-            // </SnippetSerialize>
+            // </Serialize>
             Console.WriteLine($"JSON output:\n{jsonString}\n");
         }
     }

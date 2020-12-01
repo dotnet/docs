@@ -4,16 +4,16 @@ using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
-    // <SnippetWF>
+    // <WF>
     public class WeatherForecast
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
         public string Summary { get; set; }
     }
-    // </SnippetWF>
+    // </WF>
 
-    // <SnippetWFWithReqPptyConverterAttr>
+    // <WFWithReqPptyConverterAttr>
     [JsonConverter(typeof(WeatherForecastRequiredPropertyConverterForAttributeRegistration))]
     public class WeatherForecastWithRequiredPropertyConverterAttribute
     {
@@ -22,12 +22,13 @@ namespace SystemTextJsonSamples
         public string Summary { get; set; }
     }
 
-    public class WeatherForecastWithoutRequiredPropertyConverterAttribute : WeatherForecastWithRequiredPropertyConverterAttribute
+    public class WeatherForecastWithoutRequiredPropertyConverterAttribute :
+        WeatherForecastWithRequiredPropertyConverterAttribute
     {
     }
-    // </SnippetWFWithReqPptyConverterAttr>
+    // </WFWithReqPptyConverterAttr>
 
-    // <SnippetWFWithPrevious>
+    // <WFWithPrevious>
     public class WeatherForecastWithPrevious
     {
         public DateTimeOffset Date { get; set; }
@@ -35,9 +36,9 @@ namespace SystemTextJsonSamples
         public string Summary { get; set; }
         public WeatherForecast PreviousForecast { get; set; }
     }
-    // </SnippetWFWithPrevious>
+    // </WFWithPrevious>
 
-    // <SnippetWFWithPreviousAsObject>
+    // <WFWithPreviousAsObject>
     public class WeatherForecastWithPreviousAsObject
     {
         public DateTimeOffset Date { get; set; }
@@ -45,9 +46,9 @@ namespace SystemTextJsonSamples
         public string Summary { get; set; }
         public object PreviousForecast { get; set; }
     }
-    // </SnippetWFWithPreviousAsObject>
+    // </WFWithPreviousAsObject>
 
-    // <SnippetWFWithLong>
+    // <WFWithLong>
     public class WeatherForecastWithLong
     {
         public DateTimeOffset Date { get; set; }
@@ -55,9 +56,9 @@ namespace SystemTextJsonSamples
         public long TemperatureCelsius { get; set; }
         public string Summary { get; set; }
     }
-    // </SnippetWFWithLong>
+    // </WFWithLong>
 
-    // <SnippetWFWithDefault>
+    // <WFWithDefault>
     public class WeatherForecastWithDefault
     {
         public WeatherForecastWithDefault()
@@ -69,9 +70,9 @@ namespace SystemTextJsonSamples
         public int TemperatureCelsius { get; set; }
         public string Summary { get; set; }
     }
-    // </SnippetWFWithDefault>
+    // </WFWithDefault>
 
-    // <SnippetWFWithExtensionData>
+    // <WFWithExtensionData>
     public class WeatherForecastWithExtensionData
     {
         public DateTimeOffset Date { get; set; }
@@ -80,9 +81,9 @@ namespace SystemTextJsonSamples
         [JsonExtensionData]
         public Dictionary<string, object> ExtensionData { get; set; }
     }
-    // </SnippetWFWithExtensionData>
+    // </WFWithExtensionData>
 
-    // <SnippetWFWithConverterAttribute>
+    // <WFWithConverterAttribute>
     public class WeatherForecastWithConverterAttribute
     {
         [JsonConverter(typeof(DateTimeOffsetConverter))]
@@ -90,9 +91,9 @@ namespace SystemTextJsonSamples
         public int TemperatureCelsius { get; set; }
         public string Summary { get; set; }
     }
-    // </SnippetWFWithConverterAttribute>
+    // </WFWithConverterAttribute>
 
-    // <SnippetWFWithPropertyNameAttribute>
+    // <WFWithPropertyNameAttribute>
     public class WeatherForecastWithPropertyNameAttribute
     {
         public DateTimeOffset Date { get; set; }
@@ -101,9 +102,9 @@ namespace SystemTextJsonSamples
         [JsonPropertyName("Wind")]
         public int WindSpeed { get; set; }
     }
-    // </SnippetWFWithPropertyNameAttribute>
+    // </WFWithPropertyNameAttribute>
 
-    // <SnippetWFWithIgnoreAttribute>
+    // <WFWithIgnoreAttribute>
     public class WeatherForecastWithIgnoreAttribute
     {
         public DateTimeOffset Date { get; set; }
@@ -111,25 +112,25 @@ namespace SystemTextJsonSamples
         [JsonIgnore]
         public string Summary { get; set; }
     }
-    // </SnippetWFWithIgnoreAttribute>
+    // </WFWithIgnoreAttribute>
 
-    // <SnippetWFDerived>
+    // <WFDerived>
     public class WeatherForecastDerived : WeatherForecast
     {
         public int WindSpeed { get; set; }
     }
-    // </SnippetWFDerived>
+    // </WFDerived>
 
-    // <SnippetWFWithObjectProperties>
+    // <WFWithObjectProperties>
     public class WeatherForecastWithObjectProperties
     {
         public object Date { get; set; }
         public object TemperatureCelsius { get; set; }
         public object Summary { get; set; }
     }
-    // </SnippetWFWithObjectProperties>
+    // </WFWithObjectProperties>
 
-    // <SnippetWFWithROProperty>
+    // <WFWithROProperty>
     public class WeatherForecastWithROProperty
     {
         public DateTimeOffset Date { get; set; }
@@ -137,18 +138,18 @@ namespace SystemTextJsonSamples
         public string Summary { get; set; }
         public int WindSpeedReadOnly { get; private set; } = 35;
     }
-    // </SnippetWFWithROProperty>
+    // </WFWithROProperty>
 
-    // <SnippetWFWithTemperatureStruct>
+    // <WFWithTemperatureStruct>
     public class WeatherForecastWithTemperatureStruct
     {
         public DateTimeOffset Date { get; set; }
         public Temperature TemperatureCelsius { get; set; }
         public string Summary { get; set; }
     }
-    // </SnippetWFWithTemperatureStruct>
+    // </WFWithTemperatureStruct>
 
-    // <SnippetWFWithDictionary>
+    // <WFWithDictionary>
     public class WeatherForecastWithDictionary
     {
         public DateTimeOffset Date { get; set; }
@@ -156,9 +157,9 @@ namespace SystemTextJsonSamples
         public string Summary { get; set; }
         public Dictionary<string, int> TemperatureRanges { get; set; }
     }
-    // </SnippetWFWithDictionary>
+    // </WFWithDictionary>
 
-    // <SnippetWFWithEnumDictionary>
+    // <WFWithEnumDictionary>
     public class WeatherForecastWithEnumDictionary
     {
         public DateTimeOffset Date { get; set; }
@@ -171,9 +172,9 @@ namespace SystemTextJsonSamples
     {
         Cold, Hot
     }
-    // </SnippetWFWithEnumDictionary>
+    // </WFWithEnumDictionary>
 
-    // <SnippetWFWithPOCOs>
+    // <WFWithPOCOs>
     public class WeatherForecastWithPOCOs
     {
         public DateTimeOffset Date { get; set; }
@@ -190,9 +191,9 @@ namespace SystemTextJsonSamples
         public int High { get; set; }
         public int Low { get; set; }
     }
-    // </SnippetWFWithPOCOs>
+    // </WFWithPOCOs>
 
-    // <SnippetWFWithEnum>
+    // <WFWithEnum>
     public class WeatherForecastWithEnum
     {
         public DateTimeOffset Date { get; set; }
@@ -204,7 +205,7 @@ namespace SystemTextJsonSamples
     {
         Cold, Cool, Warm, Hot
     }
-    // </SnippetWFWithEnum>
+    // </WFWithEnum>
 
     public static class WeatherForecastExtensions
     {
@@ -289,21 +290,24 @@ namespace SystemTextJsonSamples
             Utilities.DisplayPropertyValues(wf);
             Console.WriteLine();
         }
+
         public static void DisplayPropertyValues(this WeatherForecastWithTemperatureStruct wf)
         {
             Utilities.DisplayPropertyValues(wf);
             Console.WriteLine();
         }
+
         public static void DisplayPropertyValues(this WeatherForecastWithEnumDictionary wf)
         {
             Utilities.DisplayPropertyValues(wf);
             Console.Write($"TemperatureRanges:\n");
             foreach (KeyValuePair<SummaryWordsEnum, int> kvp in wf.TemperatureRanges)
             {
-                Console.Write($"  {kvp.Key.ToString()}, {kvp.Value}\n");
+                Console.Write($"  {kvp.Key}, {kvp.Value}\n");
             }
             Console.WriteLine();
         }
+
         public static void DisplayPropertyValues(this WeatherForecastWithDictionary wf)
         {
             Utilities.DisplayPropertyValues(wf);
@@ -314,6 +318,7 @@ namespace SystemTextJsonSamples
             }
             Console.WriteLine();
         }
+
         public static void DisplayPropertyValues(this WeatherForecastWithPOCOs wf)
         {
             Utilities.DisplayPropertyValues(wf);
@@ -331,6 +336,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine();
         }
     }
+
     public static class WeatherForecastFactories
     {
         public static WeatherForecast CreateWeatherForecast()
@@ -434,6 +440,7 @@ namespace SystemTextJsonSamples
             };
             return weatherForecast;
         }
+
         public static WeatherForecast CreateWeatherForecastCyrillic()
         {
             var weatherForecast = new WeatherForecast
@@ -489,6 +496,7 @@ namespace SystemTextJsonSamples
             };
             return weatherForecast;
         }
+
         public static WeatherForecastWithTemperatureStruct CreateWeatherForecastWithTemperatureStruct()
         {
             var weatherForecast = new WeatherForecastWithTemperatureStruct
@@ -499,6 +507,7 @@ namespace SystemTextJsonSamples
             };
             return weatherForecast;
         }
+
         public static WeatherForecastWithEnumDictionary CreateWeatherForecastWithEnumDictionary()
         {
             var weatherForecast = new WeatherForecastWithEnumDictionary
@@ -510,6 +519,7 @@ namespace SystemTextJsonSamples
             };
             return weatherForecast;
         }
+
         public static WeatherForecastWithDictionary CreateWeatherForecastWithDictionary()
         {
             var weatherForecast = new WeatherForecastWithDictionary
@@ -521,6 +531,7 @@ namespace SystemTextJsonSamples
             };
             return weatherForecast;
         }
+
         public static WeatherForecastWithPOCOs CreateWeatherForecastWithPOCOs()
         {
             var weatherForecast = new WeatherForecastWithPOCOs

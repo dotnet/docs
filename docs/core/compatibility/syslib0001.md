@@ -45,4 +45,4 @@ Consequently, the following APIs are marked obsolete, starting in .NET 5.0. Use 
 
 ## See also
 
-- [UTF-7 code paths are obsolete](3.1-5.0.md#utf-7-code-paths-are-obsolete)
+- [UTF-7 code paths are obsolete](core-libraries/5.0/utf-7-code-paths-obsolete.md)

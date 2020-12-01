@@ -5,9 +5,9 @@ ms.date: 11/30/2020
 ---
 # Tutorial: Create a .NET class library using Visual Studio for Mac
 
-In this tutorial, you create a class library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
+In this tutorial, you create a class library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. When you finish your class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 5, it can be called by any application that targets .NET 5. This tutorial shows how to target .NET 5.
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:

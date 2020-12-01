@@ -35,7 +35,7 @@ A Visual Studio solution serves as a container for one or more projects. Create 
 
    :::image type="content" source="media/library-with-visual-studio-mac/visual-studio-mac-new-project.png" alt-text="New Project dialog":::
 
-1. In the **Configure your new .NET Library** dialog, choose **.NET 5.0**, and select **Next**.
+1. In the **Configure your new Class Library** dialog, choose **.NET 5.0**, and select **Next**.
 
 1. Name the project "StringLibrary" and the solution "ClassLibraryProjects". Leave **Create a project directory within the solution directory** selected. Select **Create**.
 

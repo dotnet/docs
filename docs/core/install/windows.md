@@ -27,22 +27,26 @@ The following table is a list of currently supported .NET releases and the versi
 
 Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 
-- A ✔️ indicates that the version of Windows or .NET Core is still supported.
-- A ❌ indicates that the version of Windows or .NET Core isn't supported on that Windows release.
-- When both a version of Windows and a version of .NET Core have ✔️, that OS and .NET combination is supported.
+> [!TIP]
+> A `+` symbol represents the minimum version.
 
-| Operating System                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
-|-----------------------------|---------------|---------------|----------------|
-| ✔️ Windows 10, Version 2004 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ Windows 10, Version 1909 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ Windows 10, Version 1903 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ✔️ Windows 10, Version 1809 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ Windows 10, Version 1803 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ Windows 10, Version 1709 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ Windows 10, Version 1703 | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ❌ Windows 10, Version 1607 | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
-| ❌ Windows 10, Version 1511 | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
-| ❌ Windows 10, Version 1507 | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| Operating System            | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
+|-----------------------------|---------------|---------------|--------|
+| Windows 10, Version 2004    | ✔️           | ✔️            | ✔️    |
+| Windows 10, Version 1909    | ✔️           | ✔️            | ✔️    |
+| Windows 10, Version 1903    | ✔️           | ✔️            | ✔️    |
+| Windows 10, Version 1809    | ✔️           | ✔️            | ✔️    |
+| Windows 10, Version 1803    | ✔️           | ✔️            | ✔️    |
+| Windows 10, Version 1709    | ✔️           | ✔️            | ✔️    |
+| Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
+| Windows 8.1                 | ✔️           | ✔️            | ✔️    |
+| Windows 7 SP1 [ESU][esu]    | ✔️           | ✔️            | ✔️    |
+| Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
+| Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
+| Windows Server 2012 R2      | ✔️           | ✔️            | ✔️    |
+| Windows Server Core 2012 R2 | ✔️           | ✔️            | ✔️    |
+| Nano Server, Version 1809+  | ✔️           | ✔️            | ✔️    |
+| Nano Server, Version 1803   | ✔️           | ✔️            | ❌    |
 
 ## Unsupported releases
 
@@ -106,7 +110,7 @@ The following Windows versions are supported with .NET Core 3.1:
 | OS                            | Version                        | Architectures   |
 | ----------------------------- | ------------------------------ | --------------- |
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
-| Windows 10 Client             | Version 1609+                  | x64, x86        |
+| Windows 10 Client             | Version 1607+                  | x64, x86        |
 | Windows Server                | 2012 R2+                       | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
 
@@ -114,7 +118,7 @@ For more information about .NET Core 3.1 supported operating systems, distributi
 
 # [.NET Core 3.0](#tab/netcore30)
 
-*.NET Core 3.0 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+*.NET Core 3.0 is currently ❌ out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 The following Windows versions are supported with .NET Core 3.0:
 
@@ -132,7 +136,7 @@ For more information about .NET Core 3.0 supported operating systems, distributi
 
 # [.NET Core 2.2](#tab/netcore22)
 
-*.NET Core 2.2 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+*.NET Core 2.2 is currently ❌ out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 The following Windows versions are supported with .NET Core 2.2:
 
@@ -172,11 +176,11 @@ For more information about .NET Core 2.1 supported operating systems, distributi
 
 Additional dependencies are required if you're installing the .NET SDK or runtime on the following Windows versions:
 
-- ❌ Windows 7 SP1
-- ❌ Windows Vista SP 2
-- ✔️ Windows 8.1
-- ✔️ Windows Server 2008 R2
-- ✔️ Windows Server 2012 R2
+- Windows 7 SP1 [ESU][esu]
+- Windows Vista SP 2
+- Windows 8.1
+- Windows Server 2008 R2
+- Windows Server 2012 R2
 
 Install the following:
 
@@ -255,15 +259,25 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core).
 01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
+## Windows Installer
+
+The [download page](https://dotnet.microsoft.com/download/dotnet-core) for .NET provides Windows Installer executables.
+
+When you use the MSI files to install .NET< you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
+
+```console
+dotnet-sdk-3.1.301-win-x64.exe DOTNETHOME_X64="F:\dotnet\x64" DOTNETHOME_X86="F:\dotnet\x86"
+```
+
 ## Download and manually install
 
 As an alternative to the Windows installers for .NET, you can download and manually install the SDK or runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an [installer](https://dotnet.microsoft.com/download/dotnet-core).
 
 Both .NET SDK and .NET Runtime can be manually installed after they've been downloaded. If you install .NET SDK, you don't need to install the corresponding runtime. First, download a binary release for either the SDK or the runtime from one of the following sites:
 
-- ✔️ [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
-- ✔️ [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- ✔️ [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
+- [.NET 5.0 downloads](https://dotnet.microsoft.com/download/dotnet/5.0)
+- [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core)
 
 Create a directory to extract .NET to, for example `%USERPROFILE%\dotnet`. Then, extract the downloaded zip file into that directory.
@@ -296,3 +310,5 @@ For more information about using .NET in a Docker container, see [Introduction t
 - [Tutorial: Hello World tutorial](../tutorials/with-visual-studio.md).
 - [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
+
+[esu]: /troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq

@@ -1,6 +1,6 @@
 ---
 title: How to instantiate JsonSerializerOptions with System.Text.Json
-description: "Learn best practices and available constructors for instantiating JsonSerializerOptions instances."
+description: "Learn how to avoid performance issues and how to use available constructors for JsonSerializerOptions instances."
 ms.date: 12/02/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -19,13 +19,13 @@ This article explains how to avoid performance problems when you use <xref:Syste
 
 If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. This guidance applies to code you write for custom converters and when you call <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType>.
 
-The following code demonstrates the magnitude of the performance penalty for using new options instances.
+The following code demonstrates the performance penalty for using new options instances.
 
 :::code language="csharp" source="snippets/system-text-json-configure-options/csharp/ReuseOptionsInstances.cs":::
 
 The preceding code serializes a small object 100,000 times using the same options instance. Then it serializes the same object the same number of times and creates a new options instance each time. A typical run time difference is 186 milliseconds compared to 52,810 milliseconds. The difference is even greater if you increase the number of iterations.
 
-The serializer undergoes a warm-up phase during the first serialization or deserialization of each type in the object graph when a new options instance is passed to it. This warm-up includes creating a cache of metadata that is needed for serialization or deserialization. The metadata includes funcs to property getters, setters, constructor arguments, specified attributes, and so forth. This cache is stored in the options instance, which is why we recommend that you reuse options instances on subsequent calls to the serializer.
+The serializer undergoes a warm-up phase during the first serialization of each type in the object graph when a new options instance is passed to it. This warm-up includes creating a cache of metadata that is needed for serialization. The metadata includes delegates to property getters, setters, constructor arguments, specified attributes, and so forth. This metadata cache is stored in the options instance. The same warm-up process and cache applies to deserialization.
 
 ## Copy JsonSerializerOptions
 

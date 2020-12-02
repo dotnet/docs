@@ -23,9 +23,11 @@ The following code demonstrates the performance penalty for using new options in
 
 :::code language="csharp" source="snippets/system-text-json-configure-options/csharp/ReuseOptionsInstances.cs":::
 
-The preceding code serializes a small object 100,000 times using the same options instance. Then it serializes the same object the same number of times and creates a new options instance each time. A typical run time difference is 186 milliseconds compared to 52,810 milliseconds. The difference is even greater if you increase the number of iterations.
+The preceding code serializes a small object 100,000 times using the same options instance. Then it serializes the same object the same number of times and creates a new options instance each time. A typical run time difference is 190 compared to 40,140 milliseconds. The difference is even greater if you increase the number of iterations.
 
 The serializer undergoes a warm-up phase during the first serialization of each type in the object graph when a new options instance is passed to it. This warm-up includes creating a cache of metadata that is needed for serialization. The metadata includes delegates to property getters, setters, constructor arguments, specified attributes, and so forth. This metadata cache is stored in the options instance. The same warm-up process and cache applies to deserialization.
+
+The size of the metadata cache in a `JsonSerializerOptions` instance depends on the number of types to be serialized. If you pass numerous dynamically generated types to the serializer, the cache size will grow excessively, and you can end up with an `OutOfMemoryException`.
 
 ## Copy JsonSerializerOptions
 

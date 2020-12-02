@@ -41,12 +41,12 @@ namespace OptionsPerfDemo
                 };
             }
 
-            string forecastJson = JsonSerializer.Serialize<Forecast>(forecast, options);
+            _ = JsonSerializer.Serialize<Forecast>(forecast, options);
         }
     }
 }
 
 // Produces output like the following example:
 //
-//Elapsed time using one options instance: 186
-//Elapsed time creating new options instances: 52810
+//Elapsed time using one options instance: 190
+//Elapsed time creating new options instances: 40140

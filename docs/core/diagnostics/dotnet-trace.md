@@ -109,7 +109,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--profile <profile-name>`**
 
-  A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly. The table below shows the list of profiles that are available in `dotnet-trace`.
+  A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly. The following profiles are available:
 
  | Profile | Description |
  |---------|-------------|

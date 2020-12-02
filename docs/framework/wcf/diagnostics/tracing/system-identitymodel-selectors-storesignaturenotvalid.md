@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 9087bf09-cb15-41ec-bd7a-6338789953d0
 ---
 # System.IdentityModel.Selectors.StoreSignatureNotValid
+
 System.IdentityModel.Selectors.StoreSignatureNotValid  
   
 ## Description  
+
  The signature of the file is invalid.  
   
 ## See also

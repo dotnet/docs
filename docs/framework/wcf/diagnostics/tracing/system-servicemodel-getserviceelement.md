@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 80535b67-f196-467b-93aa-ea9de902a2e5
 ---
 # System.ServiceModel.GetServiceElement
+
 System.ServiceModel.GetServiceElement  
   
 ## Description  
+
  This trace is emitted when constructing a service host, at Information level. It provides a description of the service contract and binding.  
   
 ## See also

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 6261d28d-d449-425a-b9fc-a4ee14079134
 ---
 # Service: Calls Per Second
+
 Counter Name: Calls Per Second.  
   
 ## Description  
+
  Number of calls to this service in a second.  
   
  This counter is of performance counter type [PERF_COUNTER_COUNTER](/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10)), whose value is calculated using the following formula.  

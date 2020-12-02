@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugSetContextFlag Enumeration
+
 Indicates whether the context is from the active (or leaf) frame on the stack or has been computed by unwinding from another frame.  
   
 ## Syntax  
@@ -36,9 +37,11 @@ typedef enum CorDebugSetContextFlag
 |SET_CONTEXT_FLAG_UNWIND_FRAME|The context has been computed by unwinding from another frame.|  
   
 ## Remarks  
+
  `CorDebugSetContextFlag` provides values that are used by the [ICorDebugStackWalk::SetContext](icordebugstackwalk-setcontext-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

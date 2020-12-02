@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorRuntimeHost::GetConfiguration Method
+
 Gets an object that allows the host to specify the callback configuration of the common language runtime (CLR).  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetConfiguration(
 ```  
   
 ## Parameters  
+
  `pConfiguration`  
  [out] A pointer to the address of an [ICorConfiguration](icorconfiguration-interface.md) object that can be used to configure the CLR.  
   
 ## Remarks  
+
  The CLR must be configured prior to its initialization; otherwise, the `GetConfiguration` method returns an HRESULT indicating an error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

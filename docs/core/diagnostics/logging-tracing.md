@@ -49,7 +49,7 @@ The following APIs are more event oriented. Rather than logging simple strings t
   - Only allows tracing serializable objects.
   - Can be consumed in-process via any [EventListener](xref:System.Diagnostics.Tracing.EventListener) instances configured to consume the EventSource.
   - Can be consumed out-of-process via:
-    - .NET Core's EventPipe on all platforms
+    - [.NET Core's EventPipe](./eventpipe.md) on all platforms
     - [Event Tracing for Windows (ETW)](/windows/win32/etw/event-tracing-portal)
     - [LTTng tracing framework for Linux](https://lttng.org/)
       - Walkthrough: [Collect an LTTng trace using PerfCollect](trace-perfcollect-lttng.md).
@@ -87,6 +87,8 @@ For instance, to allow you to make the best choice for your application .NET off
 - [Logging in .NET](../extensions/logging.md) provides an overview of the logging techniques it supports.
 
 - [C# string interpolation](../../csharp/language-reference/tokens/interpolated.md) can simplify writing logging code.
+
+- [Runtime Provider Event List](../../fundamentals/diagnostics/runtime-events.md)
 
 - The <xref:System.Exception.Message?displayProperty=nameWithType> property is useful for logging exceptions.
 

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo3::GetStringLayout2 Method
+
 Gets information about the layout of a string object. This method supersedes the [ICorProfilerInfo2::GetStringLayout](icorprofilerinfo2-getstringlayout-method.md) method.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetStringLayout2(
 ```  
   
 ## Parameters  
+
  `pStringLengthOffset`  
  [out] A pointer to the offset of the location, relative to the `ObjectID` pointer, that stores the length of the string itself. The length is stored as a `DWORD`.  
   
@@ -35,9 +37,11 @@ HRESULT GetStringLayout2(
  [out] A pointer to the offset of the buffer, relative to the `ObjectID` pointer, which stores the string of wide characters.  
   
 ## Remarks  
+
  Strings may or may not be null-terminated.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataInfo Interface
+
 Provides a method that gets information about the mapping of metadata from an on-disk file into memory.  
   
 ## Methods  
@@ -25,6 +26,7 @@ Provides a method that gets information about the mapping of metadata from an on
 |[GetFileMapping Method](imetadatainfo-getfilemapping-method.md)|Gets the memory region of the mapped file, and the kind of mapping.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

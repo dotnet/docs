@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetCLRIdentityManager Function
+
 Gets a pointer to an interface that allows the common language runtime (CLR) to manage identities.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -30,6 +31,7 @@ STDAPI GetCLRIdentityManager(
 ```  
   
 ## Parameters  
+
  `riid`  
  [in] A `REFIID` (an interface identifier) that specifies which interface to get. This value must be either IID_ICLRAssemblyIdentityManager or IID_ICLRHostBindingPolicyManager.  
   
@@ -37,9 +39,11 @@ STDAPI GetCLRIdentityManager(
  [out] A pointer to the address of either an [ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md) or an [ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md) object.  
   
 ## Remarks  
+
  Call the [GetRealProcAddress](getrealprocaddress-function.md) function to get a pointer to the `GetCLRIdentityManager` function.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameCompareAssemblies Function
+
 Determines whether two assemblies differ only by their strong name signatures.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameCompareAssemblies](../hosting/iclrstrongname-strongnamecompareassemblies-method.md) method instead.  
@@ -31,6 +32,7 @@ BOOLEAN StrongNameCompareAssemblies (
 ```  
   
 ## Parameters  
+
  `wszAssembly1`  
  [in] The path to the first assembly.  
   
@@ -47,9 +49,11 @@ BOOLEAN StrongNameCompareAssemblies (
 - `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
@@ -59,6 +63,7 @@ BOOLEAN StrongNameCompareAssemblies (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## Remarks  
+
  The strong name signature of an assembly consists of the assembly's text name, version, culture, and public key token.  
   
  If the `StrongNameCompareAssemblies` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  

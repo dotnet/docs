@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: ef2b31c3-7426-43e7-9924-92339b96556d
 ---
 # CLR ETW Events
+
 The topics in this section describe event tracing for Windows (ETW) events. Each event has an associated keyword and level, which are described in the [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md) topic. The CLR has two providers for the events:  
   
 - The runtime provider, which raises events depending on which keywords (categories of events) are enabled. The CLR runtime provider GUID is e13c0d23-ccbc-4e12-931b-d9cc2eee27e4.  
@@ -18,6 +19,7 @@ The topics in this section describe event tracing for Windows (ETW) events. Each
  For more information about the providers, see [CLR ETW Providers](clr-etw-providers.md).  
   
 ## In This Section  
+
  [Runtime Information Events](runtime-information-etw-events.md)  
  Captures information about the runtime, including the SKU, version number, the manner in which the runtime was activated, the command-line parameters it was started with, the GUID (if applicable), and other relevant information.  
   

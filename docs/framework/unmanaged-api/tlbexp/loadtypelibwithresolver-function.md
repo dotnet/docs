@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # LoadTypeLibWithResolver Function
+
 Loads a type library and uses the supplied [ITypeLibResolver interface](itypelibresolver-interface.md) to resolve any internally referenced type libraries.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT LoadTypeLibWithResolver(
 ```  
   
 ## Parameters  
+
  `szFile`  
  [in] The file path of the type library.  
   
@@ -48,6 +50,7 @@ HRESULT LoadTypeLibWithResolver(
  [out] A reference to the type library that is being loaded.  
   
 ## Return Value  
+
  One of the HRESULT values listed in the following table.  
   
 |Return value|Meaning|  
@@ -62,6 +65,7 @@ HRESULT LoadTypeLibWithResolver(
 |`TYPE_E_CANTLOADLIBRARY`|The type library or DLL could not be loaded.|  
   
 ## Remarks  
+
  The [Tlbexp.exe (Type Library Exporter)](../../tools/tlbexp-exe-type-library-exporter.md) calls the `LoadTypeLibWithResolver` function during the assembly-to-type-library conversion process.  
   
  This function loads the specified type library with minimal access to the registry. The function then examines the type library for internally referenced type libraries, each of which must be loaded and added to the parent type library.  
@@ -77,6 +81,7 @@ HRESULT LoadTypeLibWithResolver(
  If you call `LoadTypeLibWithResolver` directly, you must supply your own [ITypeLibResolver interface](itypelibresolver-interface.md) implementation.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** TlbRef.h  

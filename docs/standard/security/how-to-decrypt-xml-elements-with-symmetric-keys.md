@@ -1,7 +1,6 @@
 ---
 title: "How to: Decrypt XML Elements with Symmetric Keys"
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
@@ -48,6 +47,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
      [!code-vb[HowToEncryptXMLElementSymmetric#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/vb/sample.vb#13)]  
   
 ## Example  
+
  This example assumes that a file named `"test.xml"` exists in the same directory as the compiled program.  It also assumes that `"test.xml"` contains a `"creditcard"` element.  You can place the following XML into a file called `test.xml` and use it with this example.  
   
 ```xml  

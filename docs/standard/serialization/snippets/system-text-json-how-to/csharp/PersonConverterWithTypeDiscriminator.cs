@@ -15,7 +15,8 @@ namespace SystemTextJsonSamples
         public override bool CanConvert(Type typeToConvert) =>
             typeof(Person).IsAssignableFrom(typeToConvert);
 
-        public override Person Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override Person Read(
+            ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             if (reader.TokenType != JsonTokenType.StartObject)
             {
@@ -80,7 +81,8 @@ namespace SystemTextJsonSamples
             throw new JsonException();
         }
 
-        public override void Write(Utf8JsonWriter writer, Person person, JsonSerializerOptions options)
+        public override void Write(
+            Utf8JsonWriter writer, Person person, JsonSerializerOptions options)
         {
             writer.WriteStartObject();
 

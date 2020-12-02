@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: bbf20f5b-eca1-4661-af04-cb8837f9af05
 ---
 # How to: Ping a Host
+
 This sample shows how to ping a remote host.  
   
 ## Example  
@@ -116,6 +117,7 @@ namespace Examples.System.Net.NetworkInformation.PingTest
 ```  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the **System.Net** namespace.

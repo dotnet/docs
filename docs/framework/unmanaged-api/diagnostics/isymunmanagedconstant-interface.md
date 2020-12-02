@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedConstant Interface
+
 Provides access to unmanaged constants.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides access to unmanaged constants.
 |[GetValue Method](isymunmanagedconstant-getvalue-method.md)|Gets the value of the constant.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

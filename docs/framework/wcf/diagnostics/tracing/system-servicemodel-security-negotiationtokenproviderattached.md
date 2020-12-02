@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: f5602e5e-aaaf-42ca-9afc-d2c699447db7
 ---
 # System.ServiceModel.Security.NegotiationTokenProviderAttached
+
 System.ServiceModel.Security.NegotiationTokenProviderAttached  
   
 ## Description  
+
  NegotiationTokenProvider was attached.  
   
 ## See also

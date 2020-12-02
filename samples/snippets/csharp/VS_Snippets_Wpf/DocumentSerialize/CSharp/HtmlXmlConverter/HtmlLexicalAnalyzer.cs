@@ -648,7 +648,7 @@ namespace SdkSample
                 }
                 else
                 {
-                    // Not an end. Save character and continue continue reading
+                    // Not an end. Save character and continue reading
                     _nextToken.Append(_previousCharacter);
                     continue;
                 }

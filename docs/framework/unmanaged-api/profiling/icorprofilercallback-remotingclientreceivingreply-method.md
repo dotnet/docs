@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::RemotingClientReceivingReply Method
+
 Notifies the profiler that the server-side portion of a remoting call has completed and the client is now receiving and about to process the reply.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT RemotingClientReceivingReply(
 ```  
   
 ## Parameters  
+
  `pCookie`  
  [in] A value that will correspond with the value provided in [ICorProfilerCallback::RemotingServerSendingReply](icorprofilercallback-remotingserversendingreply-method.md) under these conditions:  
   
@@ -43,6 +45,7 @@ HRESULT RemotingClientReceivingReply(
  [in] A value that is `true` if the call is asynchronous; otherwise, `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

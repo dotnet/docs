@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetClassFromToken Method
+
 Gets the ID of the class, given the metadata token. This method is obsolete in the .NET Framework version 2.0. Use [ICorProfilerInfo2::GetClassFromTokenAndTypeArgs](icorprofilerinfo2-getclassfromtokenandtypeargs-method.md) instead.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetClassFromToken(
 ```  
   
 ## Parameters  
+
  `moduleID`  
  [in] The ID of the module that contains the class.  
   
@@ -39,9 +41,11 @@ HRESULT GetClassFromToken(
  [out] A pointer to the class ID.  
   
 ## Remarks  
+
  This method is obsolete; instead, use `ICorProfilerInfo2::GetClassFromTokenAndTypeArgs` for all types.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

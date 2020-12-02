@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ea2b3827-63da-497b-b2c3-d5cebefe57a1
 ---
 # 1125 - InvokeMethodIsNotStatic
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: ea2b3827-63da-497b-b2c3-d5cebefe57a1
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  During CacheMetadata step, InvokeMethod activity indicates the method to be invoked is not static.  
   
 ## Message  
+
  InvokeMethod '%1' - method is not Static.  
   
 ## Details  

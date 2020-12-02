@@ -9,7 +9,7 @@ f1_keywords:
 ---
 # NETSDK1013: The TargetFramework value was not recognized
 
-**This article applies to:** ✔️ .NET 3.1.100 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.1.100 SDK and later versions
 
 The SDK tries to parse the values provided in the project file for `<TargetFramework>` or `<TargetFrameworks>` into a well known value.  If the value is not recognized, the `TargetFrameworkIdentifier` or `TargetFrameworkVersion` value may be set to an empty string or `Unsupported`.
 

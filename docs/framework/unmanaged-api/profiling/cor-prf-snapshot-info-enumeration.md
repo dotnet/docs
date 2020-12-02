@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_PRF_SNAPSHOT_INFO Enumeration
+
 Specifies how much data to pass back with a stack snapshot in each call to the profiler's [StackSnapshotCallback](stacksnapshotcallback-function.md) function.  
   
 ## Syntax  
@@ -37,9 +38,11 @@ typedef enum _COR_PRF_SNAPSHOT_INFO {
 |`COR_PRF_SNAPSHOT_X86_OPTIMIZED`|Indicates that a simpler, alternative stack-walking algorithm will be used.|  
   
 ## Remarks  
+
  Values that are provided by the `COR_PRF_SNAPSHOT_INFO` enumeration are passed as parameters to the [DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -5,6 +5,7 @@ ms.date: 08/19/2019
 ms.assetid: c30e972b-1693-4e05-b115-c31831fdf9f2
 ---
 # How to: Share an assembly with other applications
+
 Assemblies can be private or shared: by default, most simple programs consist of a private assembly because they are not intended to be used by other applications.  
 
 In order to share an assembly with other applications, it must be placed in the [global assembly cache (GAC)](gac.md).  

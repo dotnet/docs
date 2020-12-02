@@ -1,7 +1,7 @@
 ---
 title: "Member access operators and expressions - C# reference"
 description: "Learn about C# operators that you can use to access type members."
-ms.date: 04/17/2020
+ms.date: 11/13/2020
 author: pkulikov
 f1_keywords: 
   - "._CSharpKeyword"
@@ -131,9 +131,6 @@ If `a.x` or `a[x]` is of a non-nullable value type `T`, `a?.x` or `a?[x]` is of 
 In the preceding example, if you don't use the `??` operator, `numbers?.Length < 2` evaluates to `false` when `numbers` is `null`.
 
 The null-conditional member access operator `?.` is also known as the Elvis operator.
-
-> [!NOTE]
-> In C# 8, the [null-forgiving operator](null-forgiving.md) terminates the list of preceding null-conditional operations. For example, the expression `x?.y!.z` is parsed as `(x?.y)!.z`. Due to this interpretation, `z` is evaluated even if `x` is `null`, which may result in a <xref:System.NullReferenceException>.
 
 ### Thread-safe delegate invocation
 

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugObjectValue::GetFieldValue Method
+
 Gets the value of the specified field of the specified class for this object value.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetFieldValue (
 ```  
   
 ## Parameters  
+
  `pClass`  
  [in] A pointer to an "ICorDebugClass" object that represents the class for which to get the field value.  
   
@@ -40,11 +42,13 @@ HRESULT GetFieldValue (
  [out] A pointer to an "ICorDebugValue" object that represents the value of the specified field.  
   
 ## Remarks  
+
  The class, specified in the `pClass` parameter, must be in the hierarchy of the object value's class, and the field must be a field of that class.  
   
  The `GetFieldValue` method will still succeed for generic objects and generic classes. For example, if MyDictionary\<V> inherits from Dictionary\<string,V>, and the object value is of type MyDictionary\<int32>, passing the `ICorDebugClass` object for Dictionary\<K,V> will successfully get a field of Dictionary\<string,int32>.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

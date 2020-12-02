@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
 ---
 # Configuration Sample
+
 This sample demonstrates the use of a configuration file to make a service discoverable.  
   
 > [!NOTE]
@@ -19,6 +20,7 @@ This sample demonstrates the use of a configuration file to make a service disco
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Configuration`  
   
 ## Service Configuration  
+
  The configuration file in this sample demonstrates two features:  
   
 - Making the service discoverable over a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.  
@@ -149,6 +151,7 @@ This sample demonstrates the use of a configuration file to make a service disco
 ```  
   
 ## Client Configuration  
+
  In the application configuration file for the client, a `standardEndpoint` of type `dynamicEndpoint` is used to utilize discovery as shown in the following config snippet.  
   
 ```xml  

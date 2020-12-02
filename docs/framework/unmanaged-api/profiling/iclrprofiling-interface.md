@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRProfiling Interface
+
 Provides the [ICLRProfiling::AttachProfiler](iclrprofiling-attachprofiler-method.md) method, which enables a profiler to attach to a running process.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides the [ICLRProfiling::AttachProfiler](iclrprofiling-attachprofiler-method
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

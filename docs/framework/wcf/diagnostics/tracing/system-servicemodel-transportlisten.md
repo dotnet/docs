@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: a5e6438c-6562-42f2-8a3b-2bdecf9dc4af
 ---
 # System.ServiceModel.TransportListen
+
 System.ServiceModel.TransportListen  
   
 ## Description  
+
  Listen at the specified address.  
   
 ## See also

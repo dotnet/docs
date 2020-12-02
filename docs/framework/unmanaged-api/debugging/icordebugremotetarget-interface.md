@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugRemoteTarget Interface
+
 Provides methods that enable developers to debug Silverlight-based applications in the common language runtime (CLR) environment.  
   
 ## Syntax  
@@ -40,9 +41,11 @@ interface ICorDebugRemoteTarget  : IUnknown
 |[ICorDebugRemoteTarget::GetHostName Method](icordebugremotetarget-gethostname-method.md)|Returns the host name or the IP address of a remote machine.|  
   
 ## Remarks  
+
  Mixed-mode (that is, managed and native code) debugging is not supported on Windows 95, Windows 98, or Windows ME, or on non-x86 platforms (such as IA-64 and AMD64).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  

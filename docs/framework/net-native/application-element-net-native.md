@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9
 ---
 # \<Application> Element (.NET Native)
+
 Serves as a container for application-wide types and type members whose metadata is available for reflection at run time, and applies runtime reflection policy to all the program elements in an app.  
   
  \<Directives> Element  
@@ -25,6 +26,7 @@ Serves as a container for application-wide types and type members whose metadata
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements. In the Child Elements table, policy refers to the kind of metadata that is made available for particular program elements at run time.  
   
 ### Attributes  
@@ -69,6 +71,7 @@ Serves as a container for application-wide types and type members whose metadata
 |[\<Directives>](directives-element-net-native.md)|The root element of a runtime directives file.|  
   
 ## Remarks  
+
  The [\<Directives>](directives-element-net-native.md) element can contain zero or one `<Application>` element. Multiple `<Application>` elements in a single reflection directives file are not supported.  
   
  The `<Application>` element can be used in one of two ways:  

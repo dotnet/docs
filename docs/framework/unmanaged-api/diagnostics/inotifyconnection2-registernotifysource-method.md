@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # INotifyConnection2::RegisterNotifySource Method
+
 Installs a specified notification source.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT RegisterNotifySource
 ```  
   
 ## Parameters  
+
  `in_pNotifySource`  
  [in] Specifies the object to be used as the notification source.  
   
@@ -37,9 +39,11 @@ HRESULT RegisterNotifySource
  [out] Receives the object to be used as the notification sink.  
   
 ## Return Value  
+
  S_OK if the method succeeds.  
   
 ## Requirements  
+
  **Header:** ProtocolNotify2.idl  
   
 ## See also

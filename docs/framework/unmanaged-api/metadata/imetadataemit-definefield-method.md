@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineField Method
+
 Creates a definition for a field with the specified metadata signature, and gets a token to that field definition.  
   
 ## Syntax  
@@ -36,6 +37,7 @@ HRESULT DefineField (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] The `mdTypeDef` token for the enclosing class or interface.  
   
@@ -64,6 +66,7 @@ HRESULT DefineField (
  [out] The `mdFieldDef` token assigned.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

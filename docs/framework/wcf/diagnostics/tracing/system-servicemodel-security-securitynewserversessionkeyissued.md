@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 2fccc492-61ea-45a8-8f1b-be65dedc5e46
 ---
 # System.ServiceModel.Security.SecurityNewServerSessionKeyIssued
+
 System.ServiceModel.Security.SecurityNewServerSessionKeyIssued  
   
 ## Description  
+
  A new security session key was issued by the server.  
   
 ## See also

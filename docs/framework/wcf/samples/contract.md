@@ -8,6 +8,7 @@ ms.assetid: 305eeb65-a52f-459e-9aa8-0ef071eade16
 This section contains samples that demonstrate contracts in Windows Communication Foundation (WCF).  
   
 ## In This Section  
+
  [Data Contracts](data-contracts.md)  
  Demonstrates data contracts in WCF.  
   

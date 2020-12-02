@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8c8bee26-9ad4-4e01-bd16-0e1fd510fb6b
 ---
 # 4207 - MaximumRetriesExceededForSqlCommand
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 8c8bee26-9ad4-4e01-bd16-0e1fd510fb6b
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates SQL provider is giving up retrying a SQL command as the maximum number of retries have been performed.  
   
 ## Message  
+
  Giving up retrying a SQL command as the maximum number of retries have been performed.  
   
 ## Details  

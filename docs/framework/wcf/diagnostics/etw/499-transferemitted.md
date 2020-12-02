@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 07a26434-a7a0-40fc-b5d0-3520a04328ae
 ---
 # 499 - TransferEmitted
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 07a26434-a7a0-40fc-b5d0-3520a04328ae
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when the transfer event takes place.  
   
 ## Message  
+
  Transfer event emitted.  
   
 ## Details  

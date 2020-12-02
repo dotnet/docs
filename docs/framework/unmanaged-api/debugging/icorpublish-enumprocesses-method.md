@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublish::EnumProcesses Method
+
 Gets an enumerator for the managed processes running on this computer.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT EnumProcesses (
 ```  
   
 ## Parameters  
+
  `Type`  
  A value of the [COR_PUB_ENUMPROCESS](cor-pub-enumprocess-enumeration.md) enumeration that specifies the type of process to be retrieved. In the current version, only COR_PUB_MANAGEDONLY is valid.  
   
@@ -36,11 +38,13 @@ HRESULT EnumProcesses (
  A pointer to the address of an [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) instance that is the enumerator of the processes.  
   
 ## Remarks  
+
  The enumerator's collection of processes is based on a snapshot of the processes that are running when the `EnumProcesses` method is called. The enumerator will not include any processes that terminate before or start after `EnumProcesses` is called.  
   
  The `EnumProcesses` method may be called more than once on this [ICorPublish](icorpublish-interface.md) instance to create a new up-to-date collection of processes. Existing collections will not be affected by subsequent calls of the `EnumProcesses` method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  

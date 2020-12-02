@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
 ---
 # Untyped Request/Reply
+
 This sample demonstrates how to define operation contracts that use the Message class.  
   
 > [!NOTE]

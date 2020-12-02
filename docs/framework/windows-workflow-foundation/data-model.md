@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: d5752e51-cfc9-4499-af71-53b6daae9879
 ---
 # Windows Workflow Foundation Data Model
+
 The Windows Workflow Foundation data model is composed of three concepts: variables, arguments, and expressions. Variables represent the storage of data and arguments represent the flow of data into and out of an activity. Arguments are bound (assigned a value) using expressions that may reference variables.  
   
 ## In This Section  
+
  [Variables and Arguments](variables-and-arguments.md).  
  Describes the concepts of variables and arguments and how they are used.  
   

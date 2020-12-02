@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 1b2f45c5-2bed-4979-b0ee-8f9efcfec028
 ---
 # Windows Service Host
+
 This sample demonstrates a Windows Communication Foundation (WCF) service hosted in a managed Windows Service. Windows Services are controlled using the Services applet in **Control Panel** and can be configured to start up automatically after a system reboot. The sample consists of a client program and an Windows Service program. The service is implemented as an .exe program and contains its own hosting code. In other hosting environments, such as Windows Process Activation Services (WAS) or Internet Information Services (IIS), it is not necessary for you to write hosting code.
 
 > [!NOTE]

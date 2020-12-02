@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorRuntimeHost::CreateDomainSetup Method
+
 Gets an interface pointer of type IAppDomainSetup to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. `IAppDomainSetup` provides methods to configure aspects of an application domain before it is created.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT CreateDomainSetup (
 ```  
   
 ## Parameters  
+
  `pAppDomainSetup`  
  [out] An interface pointer to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. This parameter is typed as `IUnknown`, so callers should generally call `QueryInterface` on this pointer to obtain an interface pointer of type `IAppDomainSetup`.  
   
@@ -41,9 +43,11 @@ HRESULT CreateDomainSetup (
 |HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
   
 ## Remarks  
+
  The pointer returned from this method is typically passed as a parameter to the [CreateDomainEx](icorruntimehost-createdomainex-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

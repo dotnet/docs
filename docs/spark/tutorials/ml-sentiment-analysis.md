@@ -193,7 +193,7 @@ dotnet publish
 Then navigate to the console app's publish folder and run the following `spark-submit` command. Remember to update the command with the actual path of your Microsoft Spark jar file.
 
 ```dotnetcli
-%SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local microsoft-spark-2.4.x-0.10.0.jar dotnet MLSparkModelML.ConsoleApp.dll
+%SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local microsoft-spark-2-4_2.11-1.0.0.jar dotnet MLSparkModelML.ConsoleApp.dll
 ```
 
 ## Get the code

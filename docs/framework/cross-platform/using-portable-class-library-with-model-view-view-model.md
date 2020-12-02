@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 41a0b9f8-15a2-431a-bc35-e310b2953b03
 ---
 # Using Portable Class Library with Model-View-View Model
+
 You can use the .NET Framework [Portable Class Library](portable-class-library.md) to implement the Model-View-View Model (MVVM) pattern and share assemblies across multiple platforms.
 
 [!INCLUDE[standard](../../../includes/pcl-to-standard.md)]
@@ -21,6 +22,7 @@ You can use the .NET Framework [Portable Class Library](portable-class-library.m
  This topic does not provide general information about the MVVM pattern. It only provides information about how to use Portable Class Library to implement MVVM. For more information about MVVM, see the [MVVM Quickstart Using the Prism Library 5.0 for WPF](/previous-versions/msp-n-p/gg430857(v=pandp.40)).
 
 ## Classes That Support MVVM
+
  When you target the .NET Framework 4.5, .NET for Windows 8.x Store apps, Silverlight, or Windows Phone 7.5 for your Portable Class Library project, the following classes are available for implementing the MVVM pattern:
 
 - <xref:System.Collections.ObjectModel.ObservableCollection%601?displayProperty=nameWithType> class
@@ -46,11 +48,13 @@ You can use the .NET Framework [Portable Class Library](portable-class-library.m
 - All classes in the <xref:System.ComponentModel.DataAnnotations?displayProperty=nameWithType> namespace
 
 ## Implementing MVVM
+
  To implement MVVM, you typically create both the model and the view model in a Portable Class Library project, because a Portable Class Library project cannot reference a non-portable project. The model and view model can be in the same project or in separate projects. If you use separate projects, add a reference from the view model project to the model project.
 
  After you compile the model and view model projects, you reference those assemblies in the app that contains the view. If the view interacts only with the view model, you only have to reference the assembly that contains the view model.
 
 ### Model
+
  The following example shows a simplified model class that could reside in a Portable Class Library project.
 
  [!code-csharp[PortableClassLibraryMVVM#1](../../../samples/snippets/csharp/VS_Snippets_CLR/portableclasslibrarymvvm/cs/customer.cs#1)]
@@ -62,6 +66,7 @@ You can use the .NET Framework [Portable Class Library](portable-class-library.m
  [!code-vb[PortableClassLibraryMVVM#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/portableclasslibrarymvvm/vb/customerrepository.vb#2)]
 
 ### View Model
+
  A base class for view models is frequently added when implementing the MVVM pattern. The following example shows a base class.
 
  [!code-csharp[PortableClassLibraryMVVM#3](../../../samples/snippets/csharp/VS_Snippets_CLR/portableclasslibrarymvvm/cs/viewmodelbase.cs#3)]
@@ -78,6 +83,7 @@ You can use the .NET Framework [Portable Class Library](portable-class-library.m
  [!code-vb[PortableClassLibraryMVVM#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/portableclasslibrarymvvm/vb/customerviewmodel.vb#5)]  
   
 ### View  
+
  From a .NET Framework 4.5 app, Windows 8.x Store app, Silverlight-based app, or Windows Phone 7.5 app, you can reference the assembly that contains the model and view model projects.  You then create a view that interacts with the view model. The following example shows a simplified Windows Presentation Foundation (WPF) app that retrieves and updates data from the view model. You could create similar views in Silverlight, Windows Phone, or Windows 8.x Store apps.  
   
  [!code-xaml[PortableClassLibraryMVVM#6](../../../samples/snippets/csharp/VS_Snippets_CLR/portableclasslibrarymvvm/cs/mainwindow.xaml#6)]  

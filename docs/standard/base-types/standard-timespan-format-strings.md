@@ -2,7 +2,6 @@
 title: "Standard TimeSpan format strings"
 description: Review standard TimeSpan format strings, which use a single format specifier to define the text representation of a TimeSpan value in .NET.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
@@ -42,6 +41,7 @@ The following table lists the standard time interval format specifiers.
 |"G"|General long format|This specifier always outputs days and seven fractional digits. It is culture-sensitive and takes the form `[-]d':'hh':'mm':'ss.fffffff`.<br /><br /> More information: [The General Long ("G") Format Specifier](#the-general-long-g-format-specifier).|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
 
 ## The Constant ("c") Format Specifier  
+
  The "c" format specifier returns the string representation of a <xref:System.TimeSpan> value in the following form:  
   
  [-][*d*.]*hh*:*mm*:*ss*[.*fffffff*]  
@@ -68,6 +68,7 @@ The following table lists the standard time interval format specifiers.
  [!code-vb[Conceptual.TimeSpan.Standard#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardc1.vb#1)]  
 
 ## The General Short ("g") Format Specifier  
+
  The "g" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a compact form by including only the elements that are necessary. It has the following form:  
   
  [-][*d*:]*h*:*mm*:*ss*[.*FFFFFFF*]  
@@ -92,6 +93,7 @@ The following table lists the standard time interval format specifiers.
  [!code-vb[Conceptual.TimeSpan.Standard#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardshort1.vb#4)]  
 
 ## The General Long ("G") Format Specifier  
+
  The "G" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a long form that always includes both days and fractional seconds. The string that results from the "G" standard format specifier has the following form:  
   
  [-]*d*:*hh*:*mm*:*ss*.*fffffff*  

@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 3a120ab2-f5ef-4c9b-8595-d3ed7247c342
 ---
 # EInitializeNewDomainFlags Enumeration
+
 Enables the host to provide the runtime with information about the initialization of an application domain.  
   
 ## Syntax  
@@ -33,9 +34,11 @@ typedef enum {
 |`eInitializeNewDomainFlags_NoSecurityChanges`|Informs the common language runtime (CLR) that the host will not make changes to the security state of the application domain in the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.|  
   
 ## Remarks  
+
  The [ICLRDomainManager::SetAppDomainManagerType](iclrdomainmanager-setappdomainmanagertype-method.md) method takes a parameter of type `EInitializeNewDomainFlags`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # QualifierSet_EndEnumeration function
+
 Terminates the enumeration begun with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]

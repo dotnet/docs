@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSyncManager::CreateRWLockWriterEvent Method
+
 Creates an auto-reset event object for the implementation of a writer lock.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT CreateRWLockWriterEvent (
 ```  
   
 ## Parameters  
+
  `cookie`  
  [in] A cookie to associate with the auto-reset event.  
   
@@ -48,9 +50,11 @@ HRESULT CreateRWLockWriterEvent (
 |E_OUTOFMEMORY|Not enough memory was available to create the requested event object.|  
   
 ## Remarks  
+
  The CLR calls the `CreateRWLockWriterEvent` method to get a reference to an `IHostAutoEvent` instance to use in its implementation of a writer lock. The host can use the specified cookie to determine which tasks are waiting on the lock by calling the iteration methods of the [ICLRSyncManager](iclrsyncmanager-interface.md) interface.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

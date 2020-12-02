@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedVariable::GetSignature Method
+
 Gets the signature of this variable.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetSignature(
 ```  
   
 ## Parameters  
+
  `cSig`  
  [in] The length of the buffer pointed to by the `sig` parameter.  
   
@@ -40,9 +42,11 @@ HRESULT GetSignature(
  [out] The buffer that stores the signature.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

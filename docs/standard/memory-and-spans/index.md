@@ -1,7 +1,6 @@
 ---
 title: "Memory and spans"
 ms.date: "10/03/2018"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "Memory<T>"
   - "Span<T>"

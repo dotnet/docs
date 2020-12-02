@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7065c508-46c4-49ea-a7cf-e038e9246e29
 ---
 # 3406 - EncryptedDataProcessingSuccess
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 7065c508-46c4-49ea-a7cf-e038e9246e29
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted when the encrypted data processing has succeeded.  
   
 ## Message  
+
  Encrypted data processing succeeded.  
   
 ## Details

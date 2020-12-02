@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 37a43c8e-493d-4e35-a24f-ab0d4c6d5ce7
 ---
 # System.ServiceModel.Activation.ServiceContinue
+
 System.ServiceModel.Activation.ServiceContinue  
   
 ## Description  
+
  A request to continue the service was received.  
   
 ## See also

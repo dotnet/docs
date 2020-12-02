@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineProperty Method
+
 Creates a property definition for the specified type, with the specified `get` and `set` method accessors, and gets a token to that property definition.  
   
 ## Syntax  
@@ -39,6 +40,7 @@ HRESULT DefineProperty (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] The token for class or interface on which the property is being defined.  
   
@@ -76,6 +78,7 @@ HRESULT DefineProperty (
  [out] The `mdProperty` token assigned.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

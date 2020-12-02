@@ -168,6 +168,8 @@ Run the program, and check the results.
 
 ## Summary
 
+If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/master/docs/csharp/tutorials/intro-to-csharp/snippets/object-oriented-programming).
+
 This tutorial demonstrated many of the techniques used in Object-Oriented programming:
 
 - You used *Abstraction* when you kept many details `private` in each class.

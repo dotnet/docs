@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 42ed860a-a022-4682-8b7f-7c9870784671
 ---
 # Example: Troubleshooting Dynamic Programming
+
 > [!NOTE]
 > This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
   
@@ -28,6 +29,7 @@ App!$43_System::Threading::SendOrPostCallback.InvokeOpenStaticThunk
  Let's try to troubleshoot this exception by using the three-step approach outlined in the "Manually resolve missing metadata" section of [Getting Started](getting-started-with-net-native.md).  
   
 ## What was the app doing?  
+
  The first thing to note is the `async` keyword machinery at the base of the stack.  Determining what the app was really doing in an `async` method can be problematic, because the stack has lost the context of the originating call and has run the `async` code on a different thread. However, we can deduce that the app is trying to load its first page.  In the implementation for `NavigationArgs.Setup`, the following code caused the access violation:  
   
 `AppViewModel.Current.LayoutVM.PageMap`  
@@ -45,9 +47,11 @@ App!$43_System::Threading::SendOrPostCallback.InvokeOpenStaticThunk
  In dynamic programming, a good practice when using reflection APIs under .NET Native is to use the <xref:System.Type.GetType%2A?displayProperty=nameWithType> overloads that throw an exception on failure.  
   
 ## Is this an isolated case?  
+
  Other issues might also arise when using `App.Core.ViewModels`.  You must decide whether it’s worth identifying and fixing each missing metadata exception, or saving time and adding directives for a larger class of types.  Here, adding `dynamic` metadata for `App.Core.ViewModels` might be the best approach if the resulting size increase of the output binary isn’t an issue.  
   
 ## Could the code be rewritten?  
+
  If the app had used `typeof(LayoutApplicationVM)` instead of `Type.GetType("LayoutApplicationVM")`, the tool chain could have preserved `browse` metadata.  However, it still wouldn't have created `invoke` metadata, which would have led to a [MissingMetadataException](missingmetadataexception-class-net-native.md) exception when instantiating the type. To prevent the exception, you'd still have to add a runtime directive for the namespace or the type that specifies the `dynamic` policy. For information on runtime directives, see the [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md).  
   
 ## See also

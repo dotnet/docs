@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetPublicKeyToken Method
+
 Retrieves the public key token for a given keyfile or key container.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetPublicKeyToken(
 ```  
   
 ## Parameters  
+
  `pszKeyFile`  
  Filename of the key.  
   
@@ -43,9 +45,11 @@ HRESULT GetPublicKeyToken(
  Specifies the size, in bytes, of the buffer indicated by `pvPublicKeyToken`. Upon return, contains actual number of bytes used.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h.  
   
 ## See also

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # SetAssemblyFile2 Method
+
 Sets the name of and options for a new assembly. Do not call this method when you produce unbound modules.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetAssemblyFile2(
 ```  
   
 ## Parameters  
+
  `pszFilename`  
  Name of manifest file.  
   
@@ -43,9 +45,11 @@ HRESULT SetAssemblyFile2(
  Receives unique ID for the assembly being constructed.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h.  
   
 ## See also

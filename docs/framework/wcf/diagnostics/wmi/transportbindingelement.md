@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 54ecfbee-53c0-410c-a7fa-a98f2e40c545
 ---
 # TransportBindingElement
+
 TransportBindingElement  
   
 ## Syntax  
@@ -19,12 +20,15 @@ class TransportBindingElement : BindingElement
 ```  
   
 ## Methods  
+
  The TransportBindingElement class does not define any methods.  
   
 ## Properties  
+
  The TransportBindingElement class has the following properties:  
   
 ### ManualAddressing  
+
  Data type: boolean  
   
  Access type: Read-only  
@@ -32,6 +36,7 @@ class TransportBindingElement : BindingElement
  A boolean value that specifies whether the user wants to take control of message addressing.  
   
 ### MaxBufferPoolSize  
+
  Data type: sint64  
   
  Access type: Read-only  
@@ -39,6 +44,7 @@ class TransportBindingElement : BindingElement
  The maximum buffer pool size for the binding.  
   
 ### MaxReceivedMessageSize  
+
  Data type: sint64  
   
  Access type: Read-only  
@@ -46,6 +52,7 @@ class TransportBindingElement : BindingElement
  The maximum size for a message that is processed by this binding.  
   
 ### Scheme  
+
  Data type: string  
   
  Access type: Read-only  

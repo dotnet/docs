@@ -117,4 +117,4 @@ For community support, see the [Community page](https://dotnet.microsoft.com/pla
 
 ## See also
 
-For for more information, including supported date ranges for each version of .NET Core and for .NET 5, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+For more information, including supported date ranges for each version of .NET Core and for .NET 5, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).

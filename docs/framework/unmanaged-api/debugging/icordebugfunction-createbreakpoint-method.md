@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugFunction::CreateBreakpoint Method
+
 Creates a breakpoint at the beginning of this function.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT CreateBreakpoint (
 ```  
   
 ## Parameters  
+
  `ppBreakpoint`  
  [out] A pointer to the address of an ICorDebugFunctionBreakpoint object that represents the new breakpoint for the function.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

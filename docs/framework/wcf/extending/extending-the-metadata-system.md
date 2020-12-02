@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 8c6b3b00-61b8-4589-8fa5-546cc33719bf
 ---
 # Extending the Metadata System
+
 The Windows Communication Foundation (WCF) metadata system is a group of classes and interfaces that represent metadata required to implement service-based applications. Modify or extend the classes or implement and configure the interfaces to export and import custom metadata such as Web Services Description Language (WSDL) extensions or custom WS-PolicyAttachments assertions.  
   
 ## In This Section  
+
  [Exporting Custom Metadata for a WCF Extension](exporting-custom-metadata-for-a-wcf-extension.md)  
  Describes how to implement and use the <xref:System.ServiceModel.Description.IPolicyExportExtension?displayProperty=nameWithType> interface to embed custom policy assertions in WSDL documents.  
   

@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # Next function
+
 Retrieves the next property in an enumeration that begins with a call to [BeginEnumeration](beginenumeration.md).
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTaskManager::CreateTask Method
+
 Requests explicitly that the common language runtime (CLR) create a new task.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT CreateTask (
 ```  
   
 ## Parameters  
+
  `pTask`  
  [out] A pointer to the address of a newly created [ICLRTask](iclrtask-interface.md), or null, if the task could not be created.  
   
@@ -44,6 +46,7 @@ HRESULT CreateTask (
 |E_OUTOFMEMORY|Not enough memory is available to allocate the requested resource.|  
   
 ## Remarks  
+
  The CLR creates a new task automatically upon initialization, when user code creates a thread by using types in the <xref:System.Threading> namespace, or when the size of the thread pool is increased. It also creates tasks when unmanaged code makes a call to a managed function.  
   
  `CreateTask` allows the host to make an explicit request that the CLR create a new task. For example, the host can invoke this method to preinitialize data structures.  
@@ -52,6 +55,7 @@ HRESULT CreateTask (
 > The new task is returned in a suspended state and remains suspended until the host explicitly calls [IHostTask::Start](ihosttask-start-method.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

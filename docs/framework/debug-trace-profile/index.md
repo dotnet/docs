@@ -16,11 +16,13 @@ helpviewer_keywords:
 ms.assetid: 4a04863e-2475-46f4-bc3f-3c11510c2a4b
 ---
 # Debugging, Tracing, and Profiling
+
 To debug a .NET Framework application, the compiler and runtime environment must be configured to enable a debugger to attach to the application and to produce both symbols and line maps, if possible, for the application and its corresponding Microsoft intermediate language (MSIL). After a managed application has been debugged, it can be profiled to boost performance. Profiling evaluates and describes the lines of source code that generate the most frequently executed code, and how much time it takes to execute them.  
   
  .NET Framework applications are easily debugged by using Visual Studio, which handles many of the configuration details. If Visual Studio is not installed, you can examine and improve the performance of .NET Framework applications by using the debugging classes in the .NET Framework <xref:System.Diagnostics> namespace. This namespace includes the <xref:System.Diagnostics.Trace>, <xref:System.Diagnostics.Debug>, and <xref:System.Diagnostics.TraceSource> classes for tracing execution flow, and the <xref:System.Diagnostics.Process>, <xref:System.Diagnostics.EventLog>, and <xref:System.Diagnostics.PerformanceCounter> classes for profiling code.  
   
 ## In This Section  
+
  [Enabling JIT-Attach Debugging](enabling-jit-attach-debugging.md)  
  Shows how to configure the registry to JIT-attach a debug engine to a .NET Framework application.  
   
@@ -40,6 +42,7 @@ To debug a .NET Framework application, the compiler and runtime environment must
  Describes the counters that you can use to track the performance of an application.  
   
 ## Related Sections  
+
  [Debug ASP.NET or ASP.NET Core apps in Visual Studio](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
  Provides prerequisites and instructions for how to debug an ASP.NET application during development or after deployment.  
   

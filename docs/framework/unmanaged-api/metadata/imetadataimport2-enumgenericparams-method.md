@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport2::EnumGenericParams Method
+
 Gets an enumerator for an array of generic parameter tokens associated with the specified TypeDef or MethodDef token.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT EnumGenericParams (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator.  
   
@@ -55,6 +57,7 @@ HRESULT EnumGenericParams (
 |`S_FALSE`|`phEnum` has no member elements. In this case, `pcGenericParams` is set to 0 (zero).|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -2,7 +2,6 @@
 title: "Destroying threads"
 description: Know your options when you need to destroy a thread in .NET, such as cooperative cancellation or the Thread.Abort method. Learn to handle ThreadAbortException.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
@@ -25,6 +24,7 @@ To terminate the execution of the thread, you usually use the [cooperative cance
  Threads that are waiting on a call to the <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> method can be interrupted by other threads that call <xref:System.Threading.Thread.Interrupt%2A?displayProperty=nameWithType>.  
   
 ## Handling ThreadAbortException  
+
  If you expect your thread to be aborted, either as a result of calling <xref:System.Threading.Thread.Abort%2A> from your own code or as a result of unloading an application domain in which the thread is running (<xref:System.AppDomain.Unload%2A?displayProperty=nameWithType> uses <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> to terminate threads), your thread must handle the <xref:System.Threading.ThreadAbortException> and perform any final processing in a `finally` clause, as shown in the following code.  
   
 ```vb  

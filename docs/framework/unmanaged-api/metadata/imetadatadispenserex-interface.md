@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataDispenserEx Interface
+
 Extends the [IMetaDataDispenser Interface](imetadatadispenser-interface.md) interface to provide the capability to control how the metadata APIs operate on the current metadata scope.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Extends the [IMetaDataDispenser Interface](imetadatadispenser-interface.md) inte
 |[SetOption Method](imetadatadispenserex-setoption-method.md)|Sets the specified option to a given value for the current metadata scope. The option controls how calls to the current metadata scope are handled.|  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

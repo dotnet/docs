@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetILFunctionBody Method
+
 Gets a pointer to the body of a method in Microsoft intermediate language (MSIL) code, starting at its header.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetILFunctionBody(
 ```  
   
 ## Parameters  
+
  `moduleId`  
  [in] The ID of the module in which the function resides.  
   
@@ -43,11 +45,13 @@ HRESULT GetILFunctionBody(
  [out] An integer that specifies the size of the method.  
   
 ## Remarks  
+
  A method is scoped by the module in which it lives. Because the `GetILFunctionBody` method is designed to give a tool access to the MSIL code before it has been loaded by the common language runtime (CLR), it uses the metadata token of the method to find the desired instance.  
   
  `GetILFunctionBody` can return a CORPROF_E_FUNCTION_NOT_IL HRESULT if the `methodId` points to a method without any MSIL code (such as an abstract method, or a platform invoke (PInvoke) method).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

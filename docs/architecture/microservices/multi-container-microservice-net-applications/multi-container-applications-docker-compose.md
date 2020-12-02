@@ -432,7 +432,7 @@ The values set in the run-time environment always override the values defined in
 If you are exploring Docker and .NET Core on sources on the Internet, you will find Dockerfiles that demonstrate the simplicity of building a Docker image by copying your source into a container. These examples suggest that by using a simple configuration, you can have a Docker image with the environment packaged with your application. The following example shows a simple Dockerfile in this vein.
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+FROM mcr.microsoft.com/dotnet/sdk:3.1
 WORKDIR /app
 ENV ASPNETCORE_URLS http://+:80
 EXPOSE 80
@@ -453,7 +453,7 @@ The .NET team has been doing important work to make .NET Core and ASP.NET Core a
 
 3. **Production**: The focus is fast deploying and starting of containers, so these images are limited to the binaries and content needed to run the application.
 
-The .NET team provides four basic variants in [dotnet/core](https://hub.docker.com/_/microsoft-dotnet-core/) (at Docker Hub):
+The .NET team provides four basic variants in [dotnet/core](https://hub.docker.com/_/microsoft-dotnet/) (at Docker Hub):
 
 1. **sdk**: for development and build scenarios
 1. **aspnet**: for ASP.NET production scenarios

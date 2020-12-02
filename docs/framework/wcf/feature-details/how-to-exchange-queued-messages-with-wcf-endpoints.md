@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 938e7825-f63a-4c3d-b603-63772fabfdb3
 ---
 # How to: Exchange Queued Messages with WCF Endpoints
+
 Queues ensure that reliable messaging can occur between a client and a Windows Communication Foundation (WCF) service, even if the service is not available at the time of communication. The following procedures show how to ensure durable communication between a client and a service by using the standard queued binding when implementing the WCF service.  
   
  This section explains how to use <xref:System.ServiceModel.NetMsmqBinding> for queued communication between a WCF client and a WCF service.  
@@ -58,6 +59,7 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
      [!code-vb[S_Msmq_Transacted#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#8)]  
   
 ## Example  
+
  The following examples show the service code, hosting application, App.config file, and client code included for this example.  
   
  [!code-csharp[S_Msmq_Transacted#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/service.cs#9)]

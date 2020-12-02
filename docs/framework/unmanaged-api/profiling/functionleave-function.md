@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # FunctionLeave Function
+
 Notifies the profiler that a function is about to return to the caller.  
   
 > [!NOTE]
@@ -36,6 +37,7 @@ void __stdcall FunctionLeave (
   \[in] The identifier of the function that is returning.
 
 ## Remarks  
+
  The `FunctionLeave` function is a callback; you must implement it. The implementation must use the `__declspec`(`naked`) storage-class attribute.  
   
  The execution engine does not save any registers before calling this function.  
@@ -49,6 +51,7 @@ void __stdcall FunctionLeave (
  Also, the `FunctionLeave` function must not call into managed code or in any way cause a managed memory allocation.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: 128dc092-9eb2-4e33-9470-9a7f62b60df6
 ---
 # Asynchronous Communication
+
 This sample demonstrates how the communication between two different Windows Workflow Foundation (WF) services is done asynchronously by default.  
   
 ## Demonstrates  
+
  Asynchronous communication between [!INCLUDE[wf1](../../../../includes/wf1-md.md)] services.  
   
 ## Discussion  
+
  This sample shows how the communication between [!INCLUDE[wf1](../../../../includes/wf1-md.md)] applications is done asynchronously by using the messaging activities provided by .NET Framework.  
   
  This sample consists of the following three projects.  

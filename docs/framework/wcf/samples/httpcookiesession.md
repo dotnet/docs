@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 101cb624-8303-448a-a3af-933247c1e109
 ---
 # HttpCookieSession
+
 This sample demonstrates how to build a custom protocol channel to use HTTP cookies for session management. This channel enables communication between Windows Communication Foundation (WCF) services and ASMX clients or between WCF clients and ASMX services.  
   
  When a client calls a Web method in an ASMX Web service that is session-based, the ASP.NET engine does the following:  
@@ -28,9 +29,11 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Channels\HttpCookieSession`  
   
 ## HttpCookieSession Channel Message Exchange Pattern  
+
  This sample enables sessions for ASMX-like scenarios. At the bottom of our channel stack, we have the HTTP transport that supports <xref:System.ServiceModel.Channels.IRequestChannel> and <xref:System.ServiceModel.Channels.IReplyChannel>. It is the job of the channel to provide sessions to the higher levels of the channel stack. The sample implements two channels, (<xref:System.ServiceModel.Channels.IRequestSessionChannel> and <xref:System.ServiceModel.Channels.IReplySessionChannel>) that support sessions.  
   
 ## Service Channel  
+
  The sample provides a service channel in the `HttpCookieReplySessionChannelListener` class. This class implements the <xref:System.ServiceModel.Channels.IChannelListener> interface and converts the <xref:System.ServiceModel.Channels.IReplyChannel> channel from lower in the channel stack to a <xref:System.ServiceModel.Channels.IReplySessionChannel>. This process can be divided into the following parts:  
   
 - When the channel listener is opened, it accepts an inner channel from its inner listener. Because the inner listener is a datagram listener and the lifetime of an accepted channel is decoupled from the lifetime of the listener, we can close the inner listener and only hold on to the inner channel  
@@ -71,9 +74,11 @@ InputQueue<RequestContext> requestQueue;
  We use the `channelMapping` to track the `ReplySessionChannels`, and we do not close our underlying `innerChannel` until all the accepted channels have been closed. This way `HttpCookieReplySessionChannel` can exist beyond the lifetime of `HttpCookieReplySessionChannelListener`. We also do not have to worry about the listener getting garbage collected underneath us because the accepted channels keep a reference to their listener through the `OnClosed` callback.  
   
 ## Client channel  
+
  The corresponding client channel is in the `HttpCookieSessionChannelFactory` class. During channel creation, the channel factory wraps the inner request channel with an `HttpCookieRequestSessionChannel`. The `HttpCookieRequestSessionChannel` class forwards the calls to the underlying request channel. When the client closes the proxy, `HttpCookieRequestSessionChannel` sends a message to the service that indicates that the channel is being closed. Thus, the service channel stack can gracefully shutdown the session channel that is in use.  
   
 ## Binding and Binding Element  
+
  After creating the service and client channels, the next step is to integrate them into the WCF runtime. Channels are exposed to WCF through bindings and binding elements. A binding consists of one or many binding elements. WCF offers several system-defined bindings; for example, BasicHttpBinding or WSHttpBinding. The `HttpCookieSessionBindingElement` class contains the implementation for the binding element. It overrides the channel listener and channel factory creation methods to do the necessary channel listener or channel factory instantiations.  
   
  The sample uses policy assertions for the service description. This allows the sample to publish its channel requirements to other clients that can consume the service. For example, this binding element publishes policy assertions to let potential clients know that it supports sessions. Because the sample enables the `ExchangeTerminateMessage` property in the binding element configuration, it adds the necessary assertions to show that the service supports an extra message exchange action to terminate the session conversation. Clients can then use this action. The following WSDL code shows the policy assertions created from the `HttpCookieSessionBindingElement`.  
@@ -92,9 +97,11 @@ InputQueue<RequestContext> requestQueue;
  The `HttpCookieSessionBinding` class is a system-provided binding that uses the binding element described previously.  
   
 ## Adding the Channel to the Configuration System  
+
  The sample provides two classes that expose the sample channel through configuration. The first is a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> for the `HttpCookieSessionBindingElement`. The bulk of the implementation is delegated to the `HttpCookieSessionBindingConfigurationElement`, which derives from <xref:System.ServiceModel.Configuration.StandardBindingElement>. The `HttpCookieSessionBindingConfigurationElement` has properties that correspond to the properties on `HttpCookieSessionBindingElement`.  
   
 ### Binding Element Extension Section  
+
  The section `HttpCookieSessionBindingElementSection` is a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> that exposes `HttpCookieSessionBindingElement` to the configuration system. With a few overrides the configuration section name, the type of the binding element and how to create the binding element are defined. We can then register the extension section in a configuration file as follows:  
   
 ```xml  
@@ -124,6 +131,7 @@ InputQueue<RequestContext> requestQueue;
 ```  
   
 ## Test Code  
+
  Test code for using this sample transport is available in the Client and Service directories. It consists of two tests—one test uses a binding with `allowCookies` set to `true` on the client. The second test enables explicit shutdown (using the terminate message exchange) on the binding.  
   
  When you run the sample, you should see the following output:  

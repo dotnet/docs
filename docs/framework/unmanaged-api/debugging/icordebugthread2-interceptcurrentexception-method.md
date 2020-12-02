@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread2::InterceptCurrentException Method
+
 Allows a debugger to intercept the current exception on this thread.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT InterceptCurrentException (
 ```  
   
 ## Parameters  
+
  `pFrame`  
  [in] A pointer to an ICorDebugFrame that represents the active stack frame.  
   
 ## Remarks  
+
  The `InterceptCurrentException` method can be called between an exception callback ([ICorDebugManagedCallback::Exception](icordebugmanagedcallback-exception-method.md) or [ICorDebugManagedCallback2::Exception](icordebugmanagedcallback2-exception-method.md)) and the associated call to [ICorDebugController::Continue](icordebugcontroller-continue-method.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

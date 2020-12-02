@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bf94f090-5265-4112-8e57-5b4e20e070d0
 ---
 # ICorDebugProcess6::MarkDebuggerAttached Method
+
 Changes the internal state of the debugee so that the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method in the .NET Framework Class Library returns `true`.  
   
 ## Syntax  
@@ -15,10 +16,12 @@ HRESULT MarkDebuggerAttached(
 ```  
   
 ## Parameters  
+
  `fIsAttached`  
  `true` if the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method should indicate that a debugger is attached; `false` otherwise.  
   
 ## Return Value  
+
  The method can return the values listed in the following table.  
   
 |Return value|Description|  
@@ -33,6 +36,7 @@ HRESULT MarkDebuggerAttached(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

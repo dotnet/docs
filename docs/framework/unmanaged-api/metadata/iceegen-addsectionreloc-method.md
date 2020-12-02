@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICeeGen::AddSectionReloc Method
+
 Adds a .reloc instruction to the code base.  
   
  This method is obsolete and should not be used.  
@@ -33,6 +34,7 @@ HRESULT AddSectionReloc (
 ```  
   
 ## Parameters  
+
  `section`  
  [in] The section of in-memory code to which to add a .reloc instruction.  
   
@@ -46,6 +48,7 @@ HRESULT AddSectionReloc (
  [in] One of the [CeeSectionRelocType](ceesectionreloctype-enumeration.md) values, indicating the kind of .reloc instruction to add.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -23,6 +23,7 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -33,6 +34,7 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
 |**type**|Required. Specifies the schema  extension class to add. The **type** attribute value must be on one line, and include the fully qualified type name. When the assembly is placed in the Global Assembly Cache (GAC), it must also include the version, culture, and public key token of the signed assembly.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -42,6 +44,7 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
 |\<schemaImporterExtensions>|Contains the types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter>.|  
   
 ## Example  
+
  The following code example adds an extension type that the XmlSchemaImporter can use when mapping types.  
   
 ```xml  

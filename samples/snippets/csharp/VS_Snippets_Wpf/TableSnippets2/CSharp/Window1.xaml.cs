@@ -120,7 +120,7 @@ namespace TableSnippets
             // Manipulating cells (through rowgroups)...
 
             // <Snippet_Table_RowGroups_ManipCells>
-            // Alias the working for for ease in referencing.
+            // Alias the working row for ease in referencing.
             TableRow row = tbl.RowGroups[0].Rows[0];
             row.Cells[0].Background = Brushes.PapayaWhip;
             row.Cells[1].FontStyle = FontStyles.Italic;

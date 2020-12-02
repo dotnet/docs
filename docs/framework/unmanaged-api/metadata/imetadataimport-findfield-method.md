@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::FindField Method
+
 Gets a pointer to the FieldDef token for the field that is enclosed by the specified <xref:System.Type> and that has the specified name and metadata signature.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT FindField (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] The TypeDef token for the class or interface that encloses the field to search for. If this value is `mdTokenNil`, the lookup is done for a global variable.  
   
@@ -48,6 +50,7 @@ HRESULT FindField (
  [out] A pointer to the matching FieldDef token.  
   
 ## Remarks  
+
  You specify the field using its enclosing class or interface (`td`), its name (`szName`), and optionally its signature (`pvSigBlob`).  
   
  The signature passed to `FindField` must have been generated in the current scope, because signatures are bound to a particular scope. A signature can embed a token that identifies the enclosing class or value type. (The token is an index into the local TypeDef table). You cannot build a run-time signature outside the context of the current scope and use that signature as input to `FindField`.  
@@ -55,6 +58,7 @@ HRESULT FindField (
  `FindField` finds only fields that were defined directly in the class or interface; it does not find inherited fields.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

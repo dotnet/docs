@@ -1,19 +1,33 @@
 ---
-title: dotnet-counters - .NET Core
-description: Learn how to install and use the dotnet-counter command-line tool.
-ms.date: 02/26/2020
+title: dotnet-counters diagnostic tool - .NET CLI
+description: Learn how to install and use the dotnet-counter CLI tool for ad-hoc health monitoring and first-level performance investigation.
+ms.date: 11/17/2020
 ---
-# dotnet-counters
+# Investigate performance counters (dotnet-counters)
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
-## Install dotnet-counters
+## Install
 
-To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+There are two ways to download and install `dotnet-counters`:
 
-```dotnetcli
-dotnet tool install --global dotnet-counters
-```
+- **dotnet global tool:**
+
+  To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+
+  ```dotnetcli
+  dotnet tool install --global dotnet-counters
+  ```
+
+- **Direct download:**
+
+  Download the tool executable that matches your platform:
+
+  | OS  | Platform |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-counters/win-x86) \| [x64](https://aka.ms/dotnet-counters/win-x64) \| [arm](https://aka.ms/dotnet-counters/win-arm) \| [arm-x64](https://aka.ms/dotnet-counters/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-counters/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-counters/linux-x64) \| [arm](https://aka.ms/dotnet-counters/linux-arm) \| [arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64) |
 
 ## Synopsis
 
@@ -51,14 +65,18 @@ Periodically collect selected counter values and export them into a specified fi
 ### Synopsis
 
 ```console
-dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
+dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
 ```
 
 ### Options
 
 - **`-p|--process-id <PID>`**
 
-  The ID of the process to be monitored.
+  The ID of the process to be collect counter data from.
+
+- **`-n|--name <name>`**
+
+  The name of the process to be collect counter data from.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -80,8 +98,8 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 
   After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. `dotnet-counters` will launch a process with the provided command and collect the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
 
-> [!NOTE]
-> Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+  > [!NOTE]
+  > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
 
 ### Examples
 
@@ -156,7 +174,7 @@ Displays periodically refreshing values of selected counters.
 ### Synopsis
 
 ```console
-dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--counters] [-- <command>]
+dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters] [-- <command>]
 ```
 
 ### Options
@@ -164,6 +182,10 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 - **`-p|--process-id <PID>`**
 
   The ID of the process to be monitored.
+
+- **`-n|--name <name>`**
+
+  The name of the process to be monitored.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -239,7 +261,8 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
 
 - Launch `my-aspnet-server.exe` and monitor the # of assemblies loaded from its startup (.NET 5.0 or later only):
 
-  NOTE: This works for apps running .NET 5.0 or later only.
+  > [!IMPORTANT]
+  > This works for apps running .NET 5.0 or later only.
 
   ```console
   > dotnet-counters monitor --counters System.Runtime[assembly-count] -- my-aspnet-server.exe
@@ -253,7 +276,8 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [--cou
   
 - Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup (.NET 5.0 or later only):
 
-  NOTE: This works for apps running .NET 5.0 or later only.
+  > [!IMPORTANT]
+  > This works for apps running .NET 5.0 or later only.
 
   ```console
   > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size] -- my-aspnet-server.exe arg1 arg2

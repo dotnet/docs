@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostMemoryManager Interface
+
 Provides methods that allow the common language runtime (CLR) to make virtual memory requests through the host, instead of using the standard Win32 virtual memory functions.  
   
 ## Methods  
@@ -34,9 +35,11 @@ Provides methods that allow the common language runtime (CLR) to make virtual me
 |[VirtualQuery Method](ihostmemorymanager-virtualquery-method.md)|Serves as a logical wrapper for the corresponding Win32 function, which retrieves information about a range of pages in the virtual address space of the calling process.|  
   
 ## Remarks  
+
  `IHostMemoryManager` also provides methods for the CLR to obtain a pointer through which to make memory requests on the heap and to get the level of memory pressure in the process, as reported by the host.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

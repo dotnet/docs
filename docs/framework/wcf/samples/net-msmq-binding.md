@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: fe4bb696-f57c-4cb3-9b7e-9d95fe6b8323
 ---
 # Net MSMQ Binding
+
 This section contains samples that demonstrate using MSMQ binding attributes of an endpoint element.  
   
 ## In This Section  
+
  [Transacted MSMQ Binding](transacted-msmq-binding.md)  
  Demonstrates how to perform transacted queued communication by using Message Queuing (MSMQ).  
   

@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: d2221d1c-c9cb-48d1-b044-a3b4445c7f05
 ---
 # Message Security Windows
+
 This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBinding> binding to use message-level security with Windows authentication. This sample is based on the [Getting Started](getting-started-sample.md). In this sample, the service is hosted in Internet Information Services (IIS) and the client is a console application (.exe).  
   
 > [!NOTE]

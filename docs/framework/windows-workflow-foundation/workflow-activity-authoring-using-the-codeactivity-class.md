@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: cfe315c1-f86d-43ec-b9ce-2f8c469b1106
 ---
 # Workflow Activity Authoring Using the CodeActivity Class
+
 Activities created by inheriting from <xref:System.Activities.CodeActivity> can implement basic imperative behavior by overriding the <xref:System.Activities.CodeActivity.Execute%2A> method.
 
 ## Using CodeActivityContext
+
  Features of the workflow runtime can be accessed from within the <xref:System.Activities.CodeActivity.Execute%2A> method by using members of the `context` parameter, of type <xref:System.Activities.CodeActivityContext>. The features available through <xref:System.Activities.CodeActivityContext> include the following:
 
 - Getting and setting the values of variables and arguments.

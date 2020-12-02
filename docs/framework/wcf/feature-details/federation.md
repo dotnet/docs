@@ -10,14 +10,17 @@ helpviewer_keywords:
 ms.assetid: 2f1e646f-8361-48d4-9d5d-1b961f31ede4
 ---
 # Federation
+
 This topic provides a brief overview of the concept of federated security. It also describes Windows Communication Foundation (WCF) support for deploying federated security architectures. For a sample application that demonstrates federation, see [Federation Sample](../samples/federation-sample.md).  
   
 ## Definition of Federated Security  
+
  Federated security allows for clean separation between the service a client is accessing and the associated authentication and authorization procedures. Federated security also enables collaboration across multiple systems, networks, and organizations in different trust realms.  
   
  WCF provides support for building and deploying distributed systems that employ federated security.  
   
 ### Elements of a Federated Security Architecture  
+
  The federated security architecture has three key elements, as described in the following table.  
   
 |Element|Description|  
@@ -27,6 +30,7 @@ This topic provides a brief overview of the concept of federated security. It al
 |Security Token Service (STS)|A Web service that issues security tokens; that is, it makes assertions based on evidence that it trusts, to whomever trusts it. This forms the basis of trust brokering between domains.|  
   
 ### Example Scenario  
+
  The following illustration shows an example of federated security:  
   
  ![Diagram showing a typical federated security scenario.](./media/federation/typical-federated-security-scenario.gif)  
@@ -61,6 +65,7 @@ This topic provides a brief overview of the concept of federated security. It al
  Once the users obtain a security token from the STS A, they present the token to the STS B. Organization B proceeds to perform authorization of the users' requests and issues a security token to the users from its own set of security tokens. The users can then present their token to the resource at organization B and access the service.  
   
 ## Support for Federated Security in WCF  
+
  WCF provides turnkey support for deploying federated security architectures through the [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md).  
   
  The [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) element provides for a secure, reliable, interoperable binding that entails the use of HTTP as the underlying transport mechanism for request-reply communication style, employing text and XML as the wire format for encoding.  
@@ -68,6 +73,7 @@ This topic provides a brief overview of the concept of federated security. It al
  The use of [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) in a federated security scenario can be decoupled into two logically independent phases, as described in the following sections.  
   
 ### Phase 1: Design Phase  
+
  During the design phase, the client uses the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to read the policy the service endpoint exposes and to collect the service's authentication and authorization requirements. The appropriate proxies are constructed to create the following federated security communication pattern at the client:  
   
 - Obtain a security token from the STS in the client trust realm.  
@@ -79,14 +85,17 @@ This topic provides a brief overview of the concept of federated security. It al
 - Present the token to the service to access the service.  
   
 ### Phase 2: Run-Time Phase  
+
  During the run-time phase, the client instantiates an object of the WCF client class and makes a call using the WCF client. The underlying framework of WCF handles the previously mentioned steps in the federated security communication pattern and enables the client to seamlessly consume the service.  
   
 ## Sample Implementation Using WCF  
+
  The following illustration shows a sample implementation for a federated security architecture using native support from WCF.  
   
  ![Diagram showing a sample Federation security implementation.](./media/federation/federated-security-implementation.gif)  
   
 ### Example MyService  
+
  The service `MyService` exposes a single endpoint through `MyServiceEndpoint`. The following illustration shows the address, binding, and contract associated with the endpoint.  
   
  ![Diagram showing the MyServiceEndpoint details.](./media/federation/myserviceendpoint-details.gif)  
@@ -152,6 +161,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 [!code-vb[C_Federation#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb/source.vb#1)]  
   
 #### STS B  
+
  The following illustration shows the STS B. As stated earlier, a security token service (STS) is also a Web service and can have its associated endpoints, policy, and so on.  
   
  ![Diagram showing security token service B.](./media/federation/myservice-security-token-service-b.gif)  
@@ -214,6 +224,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
  [!code-vb[C_Federation#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb/source.vb#3)]  
   
 #### STS A  
+
  The following illustration shows the STS A.  
   
  ![Federation](media/sts-b.gif "STS_B")  
@@ -276,11 +287,13 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
  [!code-vb[C_Federation#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb/source.vb#5)]  
   
 ### Client at Organization A  
+
  The following illustration shows the client at organization A, along with the steps involved in making a `MyService` service call. The other functional components are also included for completeness.  
   
  ![Diagram showing the steps in a MyService service call.](./media/federation/federation-myservice-service-call-process.gif)  
   
 ## Summary  
+
  Federated security provides a clean division of responsibility and helps to build secure, scalable service architectures. As a platform for building and deploying distributed applications, WCF provides native support for implementing federated security.  
   
 ## See also

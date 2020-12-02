@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 07d5f01a-7b5b-40ea-9b15-f21561098fe4
 ---
 # How to: Define a Generic Type with Reflection Emit
+
 This topic shows how to create a simple generic type with two type parameters, how to apply class constraints, interface constraints, and special constraints to the type parameters, and how to create members that use the type parameters of the class as parameter types and return types.  
   
 > [!IMPORTANT]
@@ -104,6 +105,7 @@ This topic shows how to create a simple generic type with two type parameters, h
      [!code-vb[EmitGenericType#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/EmitGenericType/VB/source.vb#10)]  
   
 ## Example  
+
  The following code example defines a class named `Sample`, along with a base class and two interfaces. The program defines two generic type parameters for `Sample`, turning it into a generic type. Type parameters are the only thing that makes a type generic. The program shows this by displaying a test message before and after the definition of the type parameters.  
   
  The type parameter `TSecond` is used to demonstrate class and interface constraints, using the base class and interfaces, and the type parameter `TFirst` is used to demonstrate special constraints.  

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 2d191c9f-62f4-4c63-92dd-cda917fcf254
 ---
 # Custom Tracking
+
 This sample demonstrates how to create a custom tracking participant and write the contents of the tracking data to console. In addition, the sample demonstrates how to emit <xref:System.Activities.Tracking.CustomTrackingRecord> objects populated with user defined data. The console-based tracking participant filters the <xref:System.Activities.Tracking.TrackingRecord> objects emitted by the workflow using a tracking profile object created in code.
 
 ## Sample Details
+
  Windows Workflow Foundation (WF) provides a tracking infrastructure to track execution of a workflow instance. The tracking runtime implements a workflow instance to emit events related to the workflow lifecycle, events from workflow activities and custom tracking events. The following table details the primary components of the tracking infrastructure.
 
 |Component|Description|
@@ -27,6 +29,7 @@ This sample demonstrates how to create a custom tracking participant and write t
  The tracking participant subscribes for a subset of the emitted <xref:System.Activities.Tracking.TrackingRecord> objects using tracking profiles. A tracking profile contains tracking queries that allow subscribing for a particular tracking record type. Tracking profiles can be specified in code or in configuration.
 
 ### Custom Tracking Participant
+
  The tracking participant API allows extension of the tracking runtime with a user provided tracking participant that can include custom logic to handle <xref:System.Activities.Tracking.TrackingRecord> objects emitted by the workflow runtime.
 
  To write a tracking participant the user must implement <xref:System.Activities.Tracking.TrackingParticipant>. Specifically, the <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> method has to be implemented by the custom participant. This method is called when a <xref:System.Activities.Tracking.TrackingRecord> is emitted by the workflow runtime.
@@ -102,6 +105,7 @@ invoker.Extensions.Add(customTrackingParticipant);
 ```
 
 ### Emitting Custom Tracking Records
+
  This sample also demonstrates the ability to emit <xref:System.Activities.Tracking.CustomTrackingRecord> objects from a custom workflow activity:
 
 - The <xref:System.Activities.Tracking.CustomTrackingRecord> objects are created and populated with user-defined data that is desired to be emitted with the record.

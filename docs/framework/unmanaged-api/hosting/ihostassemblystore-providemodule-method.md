@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostAssemblyStore::ProvideModule Method
+
 Resolves a module within an assembly or a linked (but not an embedded) resource file.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT ProvideModule (
 ```  
   
 ## Parameters  
+
  `pBindInfo`  
  [in] A pointer to a [ModuleBindInfo](modulebindinfo-structure.md) instance that describes the requested module's <xref:System.AppDomain>, assembly, and module name.  
   
@@ -57,9 +59,11 @@ HRESULT ProvideModule (
 |E_NOT_SUFFICIENT_BUFFER|`pdwModuleId` is not large enough to contain the identifier that the host wants to return.|  
   
 ## Remarks  
+
  The identity value returned for `pdwModuleId` is specified by the host. Identifiers must be unique within the lifetime of a process. The CLR uses this value as the unique identifier for the associated stream. It checks each value against the values for `pAssemblyId` returned by calls to [ProvideAssembly](ihostassemblystore-provideassembly-method.md) and against the values for `pdwModuleId` returned by other calls to `ProvideModule`. If the host returns the same identifier value for another `IStream`, the CLR checks whether the contents of that stream have already been mapped. If so, the CLR loads the existing copy of the image instead of mapping a new one. Therefore, the identifier must also not overlap with the assembly identifiers returned from `ProvideAssembly`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # BeginEnumeration function
+
 Resets an enumerator back to the beginning of the enumeration.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -90,6 +91,7 @@ Constant  |Value  |Description  |
 | `WBEM_FLAG_PROPAGATED_ONLY` |  0x20 | Limit the enumeration to properties that are inherited from base classes. |
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  

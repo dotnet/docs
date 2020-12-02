@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRControl Interface
+
 Provides methods that allow a host to get references to, and configure aspects of, the common language runtime (CLR).  
   
 ## Methods  
@@ -26,6 +27,7 @@ Provides methods that allow a host to get references to, and configure aspects o
 |[SetAppDomainManagerType Method](iclrcontrol-setappdomainmanagertype-method.md)|Sets a type derived from <xref:System.AppDomainManager> as the type for application domain managers.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

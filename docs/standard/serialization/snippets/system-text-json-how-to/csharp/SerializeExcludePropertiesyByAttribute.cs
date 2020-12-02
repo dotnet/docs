@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Text.Encodings.Web;
 using System.Text.Json;
-using System.Text.Unicode;
 
 namespace SystemTextJsonSamples
 {
@@ -10,16 +8,17 @@ namespace SystemTextJsonSamples
         public static void Run()
         {
             string jsonString;
-            WeatherForecastWithIgnoreAttribute weatherForecast = WeatherForecastFactories.CreateWeatherForecastWithIgnoreAttribute();
+            WeatherForecastWithIgnoreAttribute weatherForecast =
+                WeatherForecastFactories.CreateWeatherForecastWithIgnoreAttribute();
             weatherForecast.DisplayPropertyValues();
 
-            // <SnippetSerialize>
+            // <Serialize>
             var options = new JsonSerializerOptions
             {
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, options);
-            // </SnippetSerialize>
+            // </Serialize>
             Console.WriteLine(jsonString);
             Console.WriteLine();
         }

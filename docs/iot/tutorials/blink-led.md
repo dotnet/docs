@@ -44,7 +44,7 @@ The image above depicts the following connections:
 
 Complete the following steps in your preferred development environment:
 
-1. Create a new .NET Console App using either the [.NET CLI](/dotnet/core/tools/dotnet-new) or [Visual Studio](/dotnet/core/tutorials/with-visual-studio). Name it *BlinkTutorial*.
+1. Create a new .NET Console App using either the [.NET CLI](../../core/tools/dotnet-new.md) or [Visual Studio](../../core/tutorials/with-visual-studio.md). Name it *BlinkTutorial*.
 
     ```dotnetcli
     dotnet new console -o BlinkTutorial
@@ -57,7 +57,7 @@ Complete the following steps in your preferred development environment:
 
     In the preceding code:
 
-    - A [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations) creates an instance of `GpioController`. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - GPIO pin 18 is opened for output
     - A `while` loop runs indefinitely. Each iteration:
         1. Writes a value to GPIO pin 18. If `ledOn` is true, it writes `PinValue.High` (on). Otherwise, it writes `PinValue.Low`.

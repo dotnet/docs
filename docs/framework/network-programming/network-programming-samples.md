@@ -5,12 +5,14 @@ ms.date: "03/30/2017"
 ms.assetid: 8efacc29-7367-47c2-8638-a4f66385ad91
 ---
 # Network Programming Samples
+
 This section contains descriptions and links to downloadable network programming samples that use classes in the <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.Security>, <xref:System.Net.Sockets>, and related namespaces.
   
 > [!NOTE]
 > All samples are available in the [.NET Framework SDK version 2.0 Samples Download](https://www.microsoft.com/download/confirmation.aspx?id=22181), which was released for the .NET Framework 2.0 and may be dated.
 
 ## In This Section  
+
  [Download Progress Indicator Technology Sample](/previous-versions/dotnet/netframework-3.0/t8w6294a(v=vs.85))  
  Shows how to display the progress of a file download.  
   
@@ -48,6 +50,7 @@ This section contains descriptions and links to downloadable network programming
  Demonstrates how to list the contents of an FTP server.  
 
 ## Reference  
+
  <xref:System.Net>  
   
  <xref:System.Net.NetworkInformation>  

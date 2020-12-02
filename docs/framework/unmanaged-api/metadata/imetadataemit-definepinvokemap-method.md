@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefinePinvokeMap Method
+
 Sets features of the PInvoke signature of the method referenced by the specified token.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT DefinePinvokeMap (
 ```  
   
 ## Parameters  
+
  `tk`  
  [in] The token for the target method.  
   
@@ -44,6 +46,7 @@ HRESULT DefinePinvokeMap (
  [in] The token for the target native DLL.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

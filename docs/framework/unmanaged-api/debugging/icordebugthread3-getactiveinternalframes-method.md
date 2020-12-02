@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread3::GetActiveInternalFrames Method
+
 Returns an array of internal frames ([ICorDebugInternalFrame2](icordebuginternalframe2-interface.md) objects) on the stack.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetActiveInternalFrames
 ```  
   
 ## Parameters  
+
  `cInternalFrames`  
  [in] The number of internal frames expected in `ppInternalFrames`.  
   
@@ -42,6 +44,7 @@ HRESULT GetActiveInternalFrames
  [in, out] A pointer to the address of an array of internal frames on the stack.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -53,6 +56,7 @@ HRESULT GetActiveInternalFrames
 ## Exceptions  
   
 ## Remarks  
+
  Internal frames are data structures pushed onto the stack by the runtime to store temporary data.  
   
  When you first call `GetActiveInternalFrames`, you should set the `cInternalFrames` parameter to 0 (zero), and the `ppInternalFrames` parameter to null. When `GetActiveInternalFrames` first returns, `pcInternalFrames` contains the count of the internal frames on the stack.  
@@ -62,6 +66,7 @@ HRESULT GetActiveInternalFrames
  Use the [ICorDebugStackWalk::GetFrame](icordebugthread3-getactiveinternalframes-method.md) method to return actual stack frames.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

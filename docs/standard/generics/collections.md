@@ -1,7 +1,6 @@
 ---
 title: "Generic Collections in .NET"
 ms.date: "02/15/2018"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

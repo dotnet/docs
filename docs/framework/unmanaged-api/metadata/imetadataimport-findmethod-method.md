@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::FindMethod Method
+
 Gets a pointer to the MethodDef token for the method that is enclosed by the specified <xref:System.Type> and that has the specified name and metadata signature.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT FindMethod (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] The `mdTypeDef` token for the type (a class or interface) that encloses the member to search for. If this value is `mdTokenNil`, then the lookup is done for a global function.  
   
@@ -48,6 +50,7 @@ HRESULT FindMethod (
  [out] A pointer to the matching MethodDef token.  
   
 ## Remarks  
+
  You specify the method using its enclosing class or interface (`td`), its name (`szName`), and optionally its signature (`pvSigBlob`). There might be multiple methods with the same name in a class or interface. In that case, pass the method's signature to find the unique match.  
   
  The signature passed to `FindMethod` must have been generated in the current scope, because signatures are bound to a particular scope. A signature can embed a token that identifies the enclosing class or value type. The token is an index into the local TypeDef table. You cannot build a run-time signature outside the context of the current scope and use that signature as input to input to `FindMethod`.  
@@ -55,6 +58,7 @@ HRESULT FindMethod (
  `FindMethod` finds only methods that were defined directly in the class or interface; it does not find inherited methods.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

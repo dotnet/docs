@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a3355d78-2a88-4109-8521-830d7cae260a
 ---
 # \<MethodInstantiation> Element (.NET Native)
+
 Applies runtime reflection policy to a constructed generic method.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ Applies runtime reflection policy to a constructed generic method.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -54,6 +56,7 @@ Applies runtime reflection policy to a constructed generic method.
 |*policy_setting*|The setting to apply to this policy type for the method. Possible values are `Auto`, `Excluded`, `Included`, and `Required`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -64,6 +67,7 @@ Applies runtime reflection policy to a constructed generic method.
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type and all its members.|  
   
 ## Remarks  
+
  The `<MethodInstantiation>` element overrides the runtime reflection policy of its corresponding open generic method.  
   
 ## See also

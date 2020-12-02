@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IAssemblyEnum Interface
+
 Represents an enumerator for an array of `IAssemblyName` objects.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Represents an enumerator for an array of `IAssemblyName` objects.
 |[Reset Method](iassemblyenum-reset-method.md)|Resets this `IAssemblyEnum` object to its starting position.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

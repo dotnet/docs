@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTask::SwitchIn Method
+
 Notifies the common language runtime (CLR) that the task that the current [ICLRTask](iclrtask-interface.md) instance represents is now in an operable state.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SwitchIn (
 ```  
   
 ## Parameters  
+
  `threadHandle`  
  [in] A handle to the physical thread on which the task represented by the current `ICLRTask` instance is executing.  
   
@@ -44,12 +46,14 @@ HRESULT SwitchIn (
 |HOST_E_INVALIDOPERATION|`SwitchIn` was called without an earlier call to [SwitchOut Method](iclrtask-switchout-method.md).|  
   
 ## Remarks  
+
  The `threadHandle` parameter represents a handle to the operating system thread on which the task represented by the current `ICLRTask` instance has been scheduled. If impersonation has occurred on this thread, you must call [IHostSecurityManager::RevertToSelf](ihostsecuritymanager-reverttoself-method.md) before switching in the task.  
   
 > [!NOTE]
 > A call to `SwitchIn` without an earlier call to `SwitchOut` fails with an HRESULT value of HOST_E_INVALIDOPERATION.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

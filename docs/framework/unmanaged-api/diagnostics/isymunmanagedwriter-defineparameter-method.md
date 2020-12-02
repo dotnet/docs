@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter::DefineParameter Method
+
 Defines a single parameter in the current method. The parameter type is taken from the parameter's position (sequence) within the method's signature.  
   
  If parameters are defined in the metadata for a given method, you do not have to define them again by using this method. The symbol readers must check the normal metadata for the parameters before checking the symbol store.  
@@ -35,6 +36,7 @@ HRESULT DefineParameter(
 ```  
   
 ## Parameters  
+
  `name`  
  [in] The parameter name.  
   
@@ -57,9 +59,11 @@ HRESULT DefineParameter(
  [in] The third address for the parameter specification.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

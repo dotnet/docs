@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # GetErrorInfo function
+
 Retrieves error information from the previous function call.  
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -35,6 +36,7 @@ An pointer to an [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oa
 This function wraps a call to the [IComThreadingInfo::GetErrorInfo](/windows/desktop/api/objidlbase/nf-objidlbase-icomthreadinginfo-getcurrentapartmenttype) method.
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.def  

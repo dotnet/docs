@@ -92,7 +92,7 @@ namespace Input_Ovw
         //<SnippetInput_OvwHandlingInputKeyDownHandler>
         private void OnOverviewKeyDown(object sender, KeyEventArgs e)
         {
-            // If the "A" key is is pressed, open a MessageBox.
+            // If the "A" key is pressed, open a MessageBox.
             if (e.Key == Key.A)
             {
                 MessageBox.Show("The A key was pressed!");

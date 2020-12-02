@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetAppDomainInfo Method
+
 Accepts an application domain ID. Returns an application domain name and the ID of the process that contains it.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetAppDomainInfo(
 ```  
   
 ## Parameters  
+
  `appDomainId`  
  [in] The ID of the application domain.  
   
@@ -48,11 +50,13 @@ HRESULT GetAppDomainInfo(
  [out] A pointer to the ID of the process that contains the application domain.  
   
 ## Remarks  
+
  After this method returns, you must verify that the `szName` buffer was large enough to contain the full name of the application domain. To do this, compare the value that `pcchName` points to with the value of the `cchName` parameter. If `pcchName` points to a value that is larger than `cchName`, allocate a larger `szName` buffer, update `cchName` with the new, larger size, and call `GetAppDomainInfo` again.  
   
  Alternatively, you can first call `GetAppDomainInfo` with a zero-length `szName` buffer to obtain the correct buffer size. You can then set the buffer size to the value returned in `pcchName` and call `GetAppDomainInfo` again.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

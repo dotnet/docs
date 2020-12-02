@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameSignatureGenerationEx Function
+
 Generates a strong name signature for the specified assembly, according to the specified flags.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameSignatureGenerationEx](../hosting/iclrstrongname-strongnamesignaturegenerationex-method.md) method instead.  
@@ -35,6 +36,7 @@ BOOLEAN StrongNameSignatureGenerationEx (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] The path to the file that contains the manifest of the assembly for which the strong name signature will be generated.  
   
@@ -67,9 +69,11 @@ BOOLEAN StrongNameSignatureGenerationEx (
 - `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
+
  Specify null for `wszFilePath` to calculate the size of the signature without creating the signature.  
   
  The signature can be either stored directly in the file, or returned to the caller.  
@@ -81,6 +85,7 @@ BOOLEAN StrongNameSignatureGenerationEx (
  If the `StrongNameSignatureGenerationEx` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

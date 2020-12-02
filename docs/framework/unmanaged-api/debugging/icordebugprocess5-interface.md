@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess5 Interface
+
 Extends the ICorDebugProcess interface to support access to the managed heap, to provide information about garbage collection of managed objects, and to determine whether a debugger loads images from the application local native image cache.  
   
 ## Methods  
@@ -36,12 +37,14 @@ Extends the ICorDebugProcess interface to support access to the managed heap, to
 |[GetTypeLayout Method](icordebugprocess5-gettypelayout-method.md)|Gets information about the layout of an object in memory based on its type identifier.|  
   
 ## Remarks  
+
  This interface logically extends the ICorDebugProcess, ICorDebugProcess2, and [ICorDebugProcess3](icordebugprocess3-interface.md) interfaces.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either from another machine or from another process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

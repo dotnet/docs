@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SystemTextJsonSamples
 {
-    // <SnippetPerson>
+    // <Person>
     public class Person
     {
         public string Name { get; set; }
@@ -18,7 +18,7 @@ namespace SystemTextJsonSamples
     {
         public string OfficeNumber { get; set; }
     }
-    // </SnippetPerson>
+    // </Person>
 
     public static class PersonExtensions
     {
@@ -31,14 +31,11 @@ namespace SystemTextJsonSamples
 
     public static class PersonFactories
     {
-        public static List<Person> CreatePeople()
-        {
-            var people = new List<Person>
+        public static List<Person> CreatePeople() =>
+            new List<Person>
             {
                 new Customer { CreditLimit = 10000, Name = "John" },
                 new Employee { OfficeNumber = "555-1234", Name = "Nancy" }
             };
-            return people;
-        }
     }
 }

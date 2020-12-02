@@ -34,6 +34,10 @@ The following versions of .NET are no longer supported. The downloads for these 
 - 2.2
 - 2.0
 
+## Remove preview versions
+
+[!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
+
 ## How to install other versions
 
 [!INCLUDE [hack-pkgname](./includes/package-manager-heading-hack-pkgname.md)]

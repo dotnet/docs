@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataTables::GetUserStringHeapSize Method
+
 Gets the size, in bytes, of the user string heap.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetUserStringHeapSize (
 ```  
   
 ## Parameters  
+
  `pcbBlobs`  
  [out] A pointer to the size, in bytes, of the user string heap.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -24,10 +24,10 @@ namespace SystemTextJsonSamples
             WeatherForecastWithObjectProperties weatherForecastWithObjectProperties = JsonSerializer.Deserialize<WeatherForecastWithObjectProperties>(jsonString);
             weatherForecastWithObjectProperties.DisplayPropertyValues();
 
-            // <SnippetRegister>
+            // <Register>
             var deserializeOptions = new JsonSerializerOptions();
             deserializeOptions.Converters.Add(new ObjectToInferredTypesConverter());
-            // </SnippetRegister>
+            // </Register>
             weatherForecastWithObjectProperties = JsonSerializer.Deserialize<WeatherForecastWithObjectProperties>(jsonString, deserializeOptions);
             weatherForecastWithObjectProperties.DisplayPropertyValues();
         }

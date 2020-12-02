@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ModuleBindInfo Structure
+
 Provides detailed information about the referenced module and the assembly that contains it.  
   
 ## Syntax  
@@ -37,9 +38,11 @@ typedef struct _ModuleBindInfo {
 |`lpModuleName`|The name of the referenced module.|  
   
 ## Remarks  
+
  `ModuleBindInfo` is passed as a parameter to `IHostAssemblyStore::ProvideModule`. The host supplies the unique identifier `dwAppDomainId` to the common language runtime (CLR). After a call to the [IHostAssemblyStore::ProvideAssembly](ihostassemblystore-provideassembly-method.md) method returns, the runtime uses the identifier to determine whether the contents of the `IStream` have been mapped. If so, the runtime loads the existing copy rather than remapping the stream. The runtime also uses this identifier as a lookup key for streams that are returned from calls to the `IHostAssemblyStore::ProvideAssembly` method. Therefore, the identifier must be unique for module requests as well as for assembly requests.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  

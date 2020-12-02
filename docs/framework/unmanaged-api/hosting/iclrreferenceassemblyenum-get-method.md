@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRReferenceAssemblyEnum::Get Method
+
 Gets the assembly identity at the supplied index.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT Get (
 ```  
   
 ## Parameters  
+
  `dwIndex`  
  [in] The zero-based index of the assembly identity to return.  
   
@@ -53,9 +55,11 @@ HRESULT Get (
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  `Get` is typically called twice. The first call supplies a null value for `pwzBuffer`, and sets `pcchBufferSize` to the size appropriate for `pwzBuffer`. The second call supplies an appropriately sized `pwzBuffer`, and contains the canonical assembly identity data upon completion.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

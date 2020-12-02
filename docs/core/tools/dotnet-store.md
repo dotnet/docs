@@ -45,7 +45,7 @@ dotnet store -h|--help
 
 - **`--framework-version <FRAMEWORK_VERSION>`**
 
-  Specifies the .NET Core SDK version. This option enables you to select a specific framework version beyond the framework specified by the `-f|--framework` option.
+  Specifies the .NET SDK version. This option enables you to select a specific framework version beyond the framework specified by the `-f|--framework` option.
 
 - **`-h|--help`**
 
@@ -53,7 +53,7 @@ dotnet store -h|--help
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Specifies the path to the runtime package store. If not specified, it defaults to the *store* subdirectory of the user profile .NET Core installation directory.
+  Specifies the path to the runtime package store. If not specified, it defaults to the *store* subdirectory of the user profile .NET installation directory.
 
 - **`--skip-optimization`**
 

@@ -10,7 +10,8 @@ namespace SystemTextJsonSamples
             string jsonString;
 
             // Serialize to create input JSON
-            WeatherForecast weatherForecast = WeatherForecastFactories.CreateWeatherForecast();
+            WeatherForecast weatherForecast =
+                WeatherForecastFactories.CreateWeatherForecast();
             var serializeOptions = new JsonSerializerOptions
             {
                 WriteIndented = true
@@ -20,14 +21,22 @@ namespace SystemTextJsonSamples
 
             // Deserialize without converter
             // Properties are JsonElement type.
-            WeatherForecastWithObjectProperties weatherForecastWithObjectProperties = JsonSerializer.Deserialize<WeatherForecastWithObjectProperties>(jsonString);
+            WeatherForecastWithObjectProperties weatherForecastWithObjectProperties =
+                JsonSerializer.Deserialize<WeatherForecastWithObjectProperties>(jsonString);
             weatherForecastWithObjectProperties.DisplayPropertyValues();
 
-            // <SnippetRegister>
-            var deserializeOptions = new JsonSerializerOptions();
-            deserializeOptions.Converters.Add(new ObjectToInferredTypesConverter());
-            // </SnippetRegister>
-            weatherForecastWithObjectProperties = JsonSerializer.Deserialize<WeatherForecastWithObjectProperties>(jsonString, deserializeOptions);
+            // <Register>
+            var deserializeOptions = new JsonSerializerOptions
+            {
+                Converters =
+                {
+                    new ObjectToInferredTypesConverter()
+                }
+            };
+            // </Register>
+            weatherForecastWithObjectProperties =
+                JsonSerializer.Deserialize<WeatherForecastWithObjectProperties>(
+                    jsonString, deserializeOptions);
             weatherForecastWithObjectProperties.DisplayPropertyValues();
         }
     }

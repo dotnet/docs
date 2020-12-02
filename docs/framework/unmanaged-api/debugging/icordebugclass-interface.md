@@ -28,6 +28,7 @@ Represents a type, which can be either basic or complex (that is, user-defined).
 |[GetToken Method](icordebugclass-gettoken-method.md)|Gets the `TypeDef` metadata token for this class.|  
   
 ## Remarks  
+
  The `ICorDebugClass` interface represents an uninstantiated generic type. The ICorDebugType interface represents an instantiated generic type. For example, `Hashtable<K, V>` would be represented by `ICorDebugClass`, whereas `Hashtable<Int32, String>` would be represented by `ICorDebugType`.  
   
  Non-generic types are represented by both `ICorDebugClass` and `ICorDebugType`. The latter interface was introduced in the .NET Framework version 2.0 to deal with type instantiation.  
@@ -36,6 +37,7 @@ Represents a type, which can be either basic or complex (that is, user-defined).
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

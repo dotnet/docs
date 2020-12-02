@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f
 ---
 # UI Automation Support for the CheckBox Control Type
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -19,7 +20,9 @@ ms.assetid: 9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the CheckBox control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all check box controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
 <a name="Required_UI_Automation_Tree_Structure"></a>
+
 ## Required UI Automation Tree Structure  
+
  The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to check box controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
 |Control View|Content View|  
@@ -30,6 +33,7 @@ ms.assetid: 9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f
 > Check boxes never have child elements in the control or content view. If the control does need to contain child elements this indicates that another control type should be used.  
   
 ### Required UI Automation Properties  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to check box controls. For more information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Property|Value|Notes|  
@@ -46,7 +50,9 @@ ms.assetid: 9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|See notes.|The value of the check box control's `Name` property is the text that is displayed beside the box that maintains the toggle state.|  
   
 <a name="Required_UI_Automation_Control_Patterns"></a>
+
 ## Required UI Automation Control Patterns  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by all check box controls. For more information about control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
 |Control Pattern|Support|Notes|  
@@ -54,7 +60,9 @@ ms.assetid: 9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f
 |<xref:System.Windows.Automation.Provider.IToggleProvider>|Required|Allows the check box to be cycled through its internal states programmatically.|  
   
 <a name="Required_UI_Automation_Events"></a>
+
 ## Required UI Automation Events  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all check box controls. For more information about events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Event|Support|Notes|  
@@ -67,7 +75,9 @@ ms.assetid: 9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f
 |<xref:System.Windows.Automation.TogglePatternIdentifiers.ToggleStateProperty> property-changed event.|Required|None|  
   
 <a name="Default_Action"></a>
+
 ## Default Action  
+
  The default action of the check box is to cause a radio button to become focused and toggle its current state. As mentioned previously, check boxes either present a binary (Yes/No) (On/Off) decision to the user or a tertiary (On, Off, Indeterminate). If the check box is binary the default action causes the "on" state to become "off" or the "off" state to become "on". In a tertiary state check box the default action cycles through the states of the check box in the same order as if the user had sent successive mouse clicks to the control.  
   
 ## See also

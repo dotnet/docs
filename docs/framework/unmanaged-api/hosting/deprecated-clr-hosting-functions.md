@@ -9,11 +9,13 @@ helpviewer_keywords:
 ms.assetid: 91fbbb35-e543-4814-b806-371cebae8c5a
 ---
 # Deprecated CLR Hosting Functions
+
 This section describes the unmanaged global static functions that earlier versions of the hosting API used.  
   
  With the exception of the infrastructure functions (`_Cor*` functions), which are used only by the .NET Framework, these functions have been deprecated in the .NET Framework 4.  
   
 ## Activation functions  
+
  [ClrCreateManagedInstance Function](clrcreatemanagedinstance-function.md)  
  Deprecated. Creates an instance of the specified managed type.  
   
@@ -51,6 +53,7 @@ This section describes the unmanaged global static functions that earlier versio
  Deprecated. Gets version and directory information about the CLR requested by an application.  
   
 ## CLR version functions  
+
  The functions in this section return a CLR version; they do not activate the CLR.  
   
  [GetCORVersion Function](getcorversion-function.md)  
@@ -72,6 +75,7 @@ This section describes the unmanaged global static functions that earlier versio
  Deprecated. Allows the host to determine which version of the CLR will be used within the process before explicitly initializing the CLR.  
   
 ## Hosting functions  
+
  [CallFunctionShim Function](callfunctionshim-function.md)  
  Deprecated. Makes a call to the function that has the specified name and parameters in the specified library.  
   
@@ -133,6 +137,7 @@ This section describes the unmanaged global static functions that earlier versio
  Deprecated. Points to a function that notifies the host that a wait handle has either been signaled or timed out.  
   
 ## Infrastructure functions  
+
  The functions in this section are for use by the .NET Framework only.  
   
  [_CorDllMain Function](cordllmain-function.md)  

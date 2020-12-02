@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyImport::FindExportedTypeByName Method
+
 Gets a pointer to an exported type, given its name and enclosing type.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT FindExportedTypeByName (
 ```  
   
 ## Parameters  
+
  `szName`  
  [in] The name of the exported type.  
   
@@ -40,9 +42,11 @@ HRESULT FindExportedTypeByName (
  [out] A pointer to the `mdExportedType` token that represents the exported type.  
   
 ## Remarks  
+
  The `FindExportedTypeByName` method uses the standard rules employed by the common language runtime for resolving references.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

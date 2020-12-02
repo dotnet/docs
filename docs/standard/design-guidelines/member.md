@@ -2,7 +2,6 @@
 title: "Member Design Guidelines"
 description: Learn member design guidelines in .NET. Members include methods, properties, events, constructors, and fields.
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "member design guidelines [.NET Framework], about member design guidelines"
   - "members [.NET Framework], design guidelines"
@@ -11,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 0ce93180-1d7b-4f8c-9306-f828b2d66b8f
 ---
 # Member Design Guidelines
+
 Methods, properties, events, constructors, and fields are collectively referred to as members. Members are ultimately the means by which framework functionality is exposed to the end users of a framework.  
   
  Members can be virtual or nonvirtual, concrete or abstract, static or instance, and can have several different scopes of accessibility. All this variety provides incredible expressiveness but at the same time requires care on the part of the framework designer.  
@@ -18,6 +18,7 @@ Methods, properties, events, constructors, and fields are collectively referred 
  This chapter offers basic guidelines that should be followed when designing members of any type.  
   
 ## In This Section  
+
  [Member Overloading](member-overloading.md)  
  [Property Design](property.md)  
  [Constructor Design](constructor.md)  

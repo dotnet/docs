@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugType2::GetTypeID Method
+
 Gets a [COR_TYPEID](cor-typeid-structure.md) for this type.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetTypeID(
 ```  
   
 ## Parameters  
+
  `id`  
  [out] A pointer to the [COR_TYPEID](cor-typeid-structure.md) for this ICorDebugType.  
   
 ## Return Value  
+
  The return value is `S_OK` on success, or a failure `HRESULT` code on failure. The `HRESULT` codes include the following:  
   
 |Return code|Description|  
@@ -41,11 +44,13 @@ HRESULT GetTypeID(
 |`CORDBG_E_UNSUPPORTED`|The type is not supported.|  
   
 ## Remarks  
+
  This method provides a mapping from the ICorDebugType, which represents a type that may or may not have been loaded into the runtime, to a [COR_TYPEID](cor-typeid-structure.md), which serves as an opaque handle that identifies a type loaded into the runtime.  
   
  When the type that the ICorDebugType represents has not yet been loaded, this method returns `CORDBG_E_CLASS_NOT_LOADED`.  If the type is not supported, it returns `CORDBG_E_UNSUPPORTED`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

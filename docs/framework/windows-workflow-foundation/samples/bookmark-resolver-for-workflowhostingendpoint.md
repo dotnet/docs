@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: 97fd5816-935e-4625-ad04-e6f6befa07de
 ---
 # Bookmark Resolver for WorkflowHostingEndpoint
+
 This sample demonstrates how the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> can be used with <xref:System.ServiceModel.Activities.WorkflowServiceHost> to create workflow instances.  
   
 ## Demonstrates  
+
  <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint>, <xref:System.ServiceModel.Activities.WorkflowServiceHost>  
   
 ## Discussion  
+
  This sample uses the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> to create workflow instances hosted using <xref:System.ServiceModel.Activities.WorkflowServiceHost>. <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> is an extensibility point for <xref:System.ServiceModel.Activities.WorkflowServiceHost> that can be used in the following scenarios:  
   
 - Creating new workflow instances.  

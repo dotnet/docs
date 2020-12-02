@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # STARTUP_FLAGS Enumeration
+
 Contains values that indicate the startup behavior of the common language runtime (CLR). By default, garbage collection is non-concurrent, and only the base class library is loaded into the domain-neutral area.  
   
 ## Syntax  
@@ -67,6 +68,7 @@ typedef enum {
 |`STARTUP_ARM`|Specifies that application domain resource monitoring is enabled. See the <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType> property and [\<appDomainResourceMonitoring> Element](../../configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md).|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

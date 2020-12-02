@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 39e69d1f-b771-4c16-9e18-696fa43b65b2
 ---
 # Workflow Persistence
+
 Workflow persistence is the durable capture of a workflow instance's state, independent of process or computer information. This is done to provide a well-known point of recovery for the workflow instance in the event of system failure, or to preserve memory by unloading workflow instances that are not actively doing work, or to move the state of the workflow instance from one node to another node in a server farm.  
   
  Persistence enables process agility, scalability, recovery in the face of failure, and the ability to manage memory more efficiently. The persistence process includes the identification of a persistence point, the gathering of the data to be saved, and finally the delegation of the actual storage of the data to a persistence provider.  
@@ -20,6 +21,7 @@ Workflow persistence is the durable capture of a workflow instance's state, inde
  Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [Persistence Concepts with Windows Server App Fabric](/previous-versions/appfabric/ee677272(v=azure.10))  
   
 ## Implicit Persistence Points  
+
  The following list contains examples of the conditions upon which a workflow is persisted when an instance store is associated with a workflow.  
   
 - When a **TransactionScope** activity completes or a **TransactedReceiveScope** activity completes.  

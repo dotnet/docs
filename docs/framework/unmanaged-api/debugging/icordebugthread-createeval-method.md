@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread::CreateEval Method
+
 Creates an ICorDebugEval object that collects and exposes the functionality of this ICorDebugThread.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT CreateEval (
 ```  
   
 ## Parameters  
+
  `ppEval`  
  [out] A pointer to the address of an `ICorDebugEval` object that collects and exposes the functionality of this thread.  
   
 ## Remarks  
+
  The evaluation object will push a new chain on the thread before doing its computation. This interrupts the computation currently being performed on the thread until the evaluation completes.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

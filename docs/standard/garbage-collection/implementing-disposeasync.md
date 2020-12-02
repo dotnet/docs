@@ -4,7 +4,6 @@ description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to
 author: IEvangelist
 ms.author: dapine
 ms.date: 10/26/2020
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
 helpviewer_keywords:

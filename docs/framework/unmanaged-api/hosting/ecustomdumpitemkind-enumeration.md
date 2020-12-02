@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ECustomDumpItemKind Enumeration
+
 Reserved for future extension of the [CustomDumpItem](customdumpitem-structure.md) structure.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ typedef enum {
 |`DUMP_ITEM_None`|Reserved for future use.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

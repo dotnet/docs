@@ -9,12 +9,14 @@ helpviewer_keywords:
 ms.assetid: d270ab45-542b-45c0-a240-e80aa4a61b95
 ---
 # UI Automation Fundamentals
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
  This section contains high-level overviews of the [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] API.  
   
 ## In This Section  
+
  [UI Automation Overview](ui-automation-overview.md)  
  [UI Automation and Microsoft Active Accessibility](ui-automation-and-microsoft-active-accessibility.md)  
  [UI Automation Tree Overview](ui-automation-tree-overview.md)  
@@ -25,6 +27,7 @@ ms.assetid: d270ab45-542b-45c0-a240-e80aa4a61b95
  [Using UI Automation for Automated Testing](using-ui-automation-for-automated-testing.md)  
   
 ## Reference  
+
  <xref:System.Windows.Automation>  
   
  <xref:System.Windows.Automation.Provider>  

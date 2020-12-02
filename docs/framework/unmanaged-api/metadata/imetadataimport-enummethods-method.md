@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::EnumMethods Method
+
 Enumerates MethodDef tokens representing methods of the specified type.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT EnumMethods (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be NULL for the first call of this method.  
   
@@ -55,6 +57,7 @@ HRESULT EnumMethods (
 |`S_FALSE`|There are no MethodDef tokens to enumerate. In that case, `pcTokens` is zero.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

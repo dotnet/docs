@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: cea87440-3519-4640-8494-b8a2b0e88c84
 ---
 # WSDL and Policy
+
 This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and WS-PolicyAttachment implementation details, as well as additional WS-Policy assertions and WSDL 1.1 extensions introduced by WCF.  
   
  WCF implements WS-Policy and WS-PolicyAttachment specifications submitted to W3C with constraints and clarifications described in this document.  
@@ -22,6 +23,7 @@ This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and
 |cdp|`http://schemas.microsoft.com/net/2006/06/duplex`|  
   
 ## WCF WSDL1.1 Extensions  
+
  WCF uses the following WSDL1.1 extensions to describe contract session requirements.  
   
  wsdl:portType/wsdl:operation/@msc:isInitiating  
@@ -34,6 +36,7 @@ This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and
  xs:boolean, indicates this contract requires session to be established.  
   
 ### SOAP 1.x HTTP Binding Transport URIs  
+
  WCF uses the following URIs to indicate transports to be used for WSDL 1.1, SOAP 1.1, and SOAP 1.2 binding extension elements.  
   
 |Transport|URI|  
@@ -44,6 +47,7 @@ This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and
 |Named Pipes|`http://schemas.microsoft.com/soap/named-pipe`|  
   
 ## Policy Assertions Implemented by WCF  
+
  In addition to policy assertions introduced in the Web Services specifications (WS-*) and mentioned in other sections of this document, WCF implements the following policy assertions.  
   
 |Policy assertion|Policy subject|Description|  

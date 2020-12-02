@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMetaHost::RequestRuntimeLoadedNotification Method
+
 Provides a callback function that is guaranteed to be called when a common language runtime (CLR) version is first loaded, but not yet started. This method supersedes the [LockClrVersion](lockclrversion-function.md) function.  
   
 ## Syntax  
@@ -27,10 +28,12 @@ HRESULT RequestRuntimeLoadedNotification (
 ```  
   
 ## Parameters  
+
  `pCallbackFunction`  
  [in] The callback function that is invoked when a new runtime has been loaded.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -39,6 +42,7 @@ HRESULT RequestRuntimeLoadedNotification (
 |E_POINTER|`pCallbackFunction` is null.|  
   
 ## Remarks  
+
  The callback works in the following way:  
   
 - The callback is invoked only when a runtime is loaded for the first time.  
@@ -82,6 +86,7 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
 > Host applications must not call `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` outside the scope of the `pCallbackFunction` parameter.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

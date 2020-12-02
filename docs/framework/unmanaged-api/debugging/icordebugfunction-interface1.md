@@ -33,6 +33,7 @@ Represents a managed function or method.
 |[GetToken Method](icordebugfunction-gettoken-method.md)|Gets the metadata token for this function.|  
   
 ## Remarks  
+
  The `ICorDebugFunction` interface does not represent a function with generic type parameters. For example, an `ICorDebugFunction` instance would represent `Func<T>` but not `Func<string>`. Call [ICorDebugILFrame2::EnumerateTypeParameters](icordebugilframe2-enumeratetypeparameters-method.md) to get the generic type parameters.  
   
  The relationship between a method's metadata token, `mdMethodDef`, and a method's `ICorDebugFunction` object is dependent upon whether Edit and Continue is allowed on the function:  
@@ -45,6 +46,7 @@ Represents a managed function or method.
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

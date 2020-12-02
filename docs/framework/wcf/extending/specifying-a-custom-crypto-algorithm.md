@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d662a305-8e09-451d-9a59-b0f12b012f1d
 ---
 # Specifying a Custom Crypto Algorithm
+
 WCF allows you to specify a custom crypto algorithm to use when encrypting data or computing digital signatures. This is done by the following steps:  
   
 1. Derive a class from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>  
@@ -13,6 +14,7 @@ WCF allows you to specify a custom crypto algorithm to use when encrypting data 
 3. Configure the binding with the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>-derived class.  
   
 ## Derive a class from SecurityAlgorithmSuite  
+
  The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> is an abstract base class that allows you to specify the algorithm to use when performing various security related operations. For example, computing a hash for a digital signature or encrypting a message. The following code shows how to derive a class from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>:  
   
 ```csharp  
@@ -81,6 +83,7 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
 ```  
   
 ## Register the Custom Algorithm  
+
  Registration can be done in a configuration file or in imperative code. Registering a custom algorithm is done by creating a mapping between a class that implements a crypto service provider and an alias. The alias is then mapped to a URI which is used when specifying the algorithm in the WCF service’s binding. The following configuration snippet illustrates how to register a custom algorithm in config:  
   
 ```xml  
@@ -110,6 +113,7 @@ CryptoConfig.AddAlgorithm(typeof(SHA256CryptoServiceProvider), "http://contoso.c
 ```  
   
 ## Configure the Binding  
+
  You configure the binding by specifying the custom <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>-derived class in the binding settings as shown in the following code snippet:  
   
 ```csharp  

@@ -17,9 +17,11 @@ helpviewer_keywords:
 ms.assetid: f3fc7533-6956-42c6-bbc3-73e5a221027d
 ---
 # Socket Code Examples
+
 The following code examples demonstrate how to use the <xref:System.Net.Sockets.Socket> class as a client to connect to remote network services and as a server to listen for connections from remote clients.  
   
 ## In This Section  
+
  [Synchronous Client Socket Example](synchronous-client-socket-example.md)  
  Shows how to implement a synchronous <xref:System.Net.Sockets.Socket> client that connects to a server and displays the data returned from the server.  
   
@@ -33,6 +35,7 @@ The following code examples demonstrate how to use the <xref:System.Net.Sockets.
  Shows how to implement an asynchronous <xref:System.Net.Sockets.Socket> server that accepts connections from a client and echoes back the data received from the client.  
   
 ## Related Sections  
+
  [Sockets](sockets.md)  
  Provides basic information about the <xref:System.Net.Sockets> namespace and the <xref:System.Net.Sockets.Socket> class.  
   

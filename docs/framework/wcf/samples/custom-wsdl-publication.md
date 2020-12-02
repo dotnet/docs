@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3b3e8103-2c95-4db3-a05b-46aa8e9d4d29
 ---
 # Custom WSDL Publication
+
 This sample demonstrates how to:  
   
 - Implement a <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=nameWithType> on a custom <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> attribute to export attribute properties as WSDL annotations.  
@@ -18,6 +19,7 @@ This sample demonstrates how to:
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 ## Service  
+
  The service in this sample is marked with two custom attributes. The first, the `WsdlDocumentationAttribute`, accepts a string in the constructor and can be applied to provide a contract interface or operation with a string that describes its usage. The second, `WsdlParamOrReturnDocumentationAttribute`, can be applied to return values or parameters to describe those values in the operation. The following example shows a service contract, `ICalculator`, described using these attributes.  
   
 ```csharp  
@@ -164,9 +166,11 @@ for (int i = 0; i < args.Length; i++)
 ```  
   
 ## Svcutil client  
+
  This sample does not use Svcutil.exe. The contract is provided in the generatedClient.cs file so that after the sample demonstrates custom WSDL import and code generation, the service can be invoked. To use the following custom WSDL importer for this example, you can run Svcutil.exe and specify the `/svcutilConfig` option, giving the path to the client configuration file used in this sample, which references the `WsdlDocumentation.dll` library. To load the `WsdlDocumentationImporter`, however, Svuctil.exe must be able to locate and load the `WsdlDocumentation.dll` library, which means either that it is registered in the global assembly cache, in the path, or is in the same directory as Svcutil.exe. For a basic sample such as this, the easiest thing to do is to copy Svcutil.exe and the client configuration file into the same directory as `WsdlDocumentation.dll` and run it from there.  
   
 ## The Custom WSDL Importer  
+
  The custom <xref:System.ServiceModel.Description.IWsdlImportExtension> object `WsdlDocumentationImporter` also implements <xref:System.ServiceModel.Description.IContractBehavior> and <xref:System.ServiceModel.Description.IOperationBehavior> to be added to the imported ServiceEndpoints and <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> and <xref:System.ServiceModel.Description.IOperationContractGenerationExtension> to be invoked to modify the code generation when the contract or operation code is being created.  
   
  First, in the <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> method, the sample determines whether the WSDL annotation is at the contract or operation level, and adds itself as a behavior at the appropriate scope, passing the imported annotation text to its constructor.  
@@ -213,6 +217,7 @@ public void GenerateOperation(OperationContractGenerationContext context)
 ```  
   
 ## The Client Application  
+
  The client application loads the custom WSDL importer by specifying it in the application configuration file.  
   
 ```xml  

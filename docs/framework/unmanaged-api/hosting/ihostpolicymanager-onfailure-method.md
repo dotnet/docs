@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostPolicyManager::OnFailure Method
+
 Notifies the host that the common language runtime (CLR) is about to take the action specified by a call to the [ICLRPolicyManager::SetActionOnFailure](iclrpolicymanager-setactiononfailure-method.md) method in response to a resource allocation or reclamation failure.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT OnFailure(
 ```  
   
 ## Parameters  
+
  `failure`  
  [in] One of the [EClrFailure](eclrfailure-enumeration.md) values, indicating the kind of failure to which the CLR is responding.  
   
@@ -47,6 +49,7 @@ HRESULT OnFailure(
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

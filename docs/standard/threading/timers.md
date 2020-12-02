@@ -2,7 +2,6 @@
 title: "Timers"
 description: Learn what .NET timers to use in a multithreaded environment.
 ms.date: "07/03/2018"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 839b765c-3e41-44ce-bf1b-dc10453db18e
 ---
 # StrongNameSignatureGeneration Function
+
 Generates a strong name signature for the specified assembly.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameSignatureGeneration](../hosting/iclrstrongname-strongnamesignaturegeneration-method.md) method instead.  
@@ -33,6 +34,7 @@ BOOLEAN StrongNameSignatureGeneration (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] The path to the file that contains the manifest of the assembly for which the strong name signature will be generated.  
   
@@ -60,9 +62,11 @@ BOOLEAN StrongNameSignatureGeneration (
  [out] The size, in bytes, of the returned signature.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
+
  Specify null for `wszFilePath` to calculate the size of the signature without creating the signature.  
   
  The signature can be stored either directly in the file, or returned to the caller.  
@@ -70,6 +74,7 @@ BOOLEAN StrongNameSignatureGeneration (
  If the `StrongNameSignatureGeneration` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

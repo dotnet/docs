@@ -14,6 +14,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess7::SetWriteableMetadataUpdateMode Method
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  Configures how the debugger handles in-memory updates to metadata within the target process.  
@@ -27,13 +28,16 @@ HRESULT SetWriteableMetadataUpdateMode(
 ```  
   
 ## Parameters  
+
  `flags`  
  A [WriteableMetadataUpdateMode](writeablemetadataupdatemode-enumeration.md) enumeration value that specifies whether in-memory updates to metadata in the target process are visible (`WriteableMetadataUpdateMode::AlwaysShowUpdates`) or not visible (`WriteableMetadataUpdateMode::LegacyCompatPolicy`) to the debugger.  
   
 ## Remarks  
+
  Updates to the metadata of the target process can come from Edit and Continue, a profiler, or <xref:System.Reflection.Emit?displayProperty=nameWithType>.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

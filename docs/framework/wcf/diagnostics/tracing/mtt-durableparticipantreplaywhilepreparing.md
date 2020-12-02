@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 10ef3876-6f8e-4d4e-8444-f47847b64795
 ---
 # Microsoft.Transactions.TransactionBridge.DurableParticipantReplayWhilePreparing
+
 The WS-AT protocol service received a Replay message from a durable participant, which did not respond to Prepare. Consequently, the transaction was aborted.  
   
 ## Description  
+
  Traced if a Replay message is received while a Durable participant is still Preparing. This is an illegal message for this state and the transaction is going to be aborted.  
   
 ## Troubleshooting

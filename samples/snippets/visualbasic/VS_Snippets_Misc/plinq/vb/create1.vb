@@ -2,10 +2,9 @@
 Option Strict On
 
 ' <Snippet11>
-Imports System.Linq
 
-Module Example
-    Public Sub Main()
+Public Class Program
+    Public Shared Sub Main()
         Dim source = Enumerable.Range(100, 20000)
 
         ' Result sequence might be out of order.
@@ -31,14 +30,15 @@ Module Example
                               Select num).ToArray()
 
         ' Method syntax is also supported
-        Dim parallelQuery3 = source.AsParallel().Where(Function(n)
-                                                           Return (n Mod 10) = 0
-                                                       End Function).Select(Function(n)
-                                                                                Return n
-                                                                            End Function)
+        Dim parallelQuery3 =
+            source.AsParallel().Where(Function(n)
+                                          Return (n Mod 10) = 0
+                                      End Function).Select(Function(n)
+                                                               Return n
+                                                           End Function)
 
         For Each i As Integer In parallelQuery3
-            Console.Write("{0} ", i)
+            Console.Write($"{i} ")
         Next
 
 
@@ -49,10 +49,10 @@ Module Example
 
     ' A toy function to demonstrate syntax. Typically you need a more
     ' computationally expensive method to see speedup over sequential queries.
-    Sub DoSomething(ByVal i As Integer)
-        Console.Write("{0:###.## }", Math.Sqrt(i))
+    Shared Sub DoSomething(ByVal i As Integer)
+        Console.Write($"{Math.Sqrt(i):###.##} ")
     End Sub
-End Module
+End Class
 ' </Snippet11>
 
 

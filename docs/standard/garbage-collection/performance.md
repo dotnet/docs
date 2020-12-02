@@ -2,7 +2,6 @@
 title: "Garbage Collection and Performance"
 description: Read about issues related to garbage collection and memory usage. Learn to minimize the effect of garbage collection on your applications.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "garbage collection, troubleshooting"
   - "garbage collection, performance"

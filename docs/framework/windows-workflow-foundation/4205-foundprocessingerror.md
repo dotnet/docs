@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f2235a15-dd87-439e-8cb9-8b1b89a3dacf
 ---
 # 4205 - FoundProcessingError
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: f2235a15-dd87-439e-8cb9-8b1b89a3dacf
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates SQL provider command has failed.  
   
 ## Message  
+
  Command failed: %1  
   
 ## Details  

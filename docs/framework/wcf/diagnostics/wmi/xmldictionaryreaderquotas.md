@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9b4ca8b4-0a89-4758-97ab-528a8ce18f07
 ---
 # XmlDictionaryReaderQuotas
+
 XmlDictionaryReaderQuotas  
   
 ## Syntax  
@@ -20,12 +21,15 @@ class XmlDictionaryReaderQuotas
 ```  
   
 ## Methods  
+
  The XmlDictionaryReaderQuotas class does not define any methods.  
   
 ## Properties  
+
  The XmlDictionaryReaderQuotas class has the following properties:  
   
 ### MaxArrayLength  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -33,6 +37,7 @@ class XmlDictionaryReaderQuotas
  The maximum allowed array length.  
   
 ### MaxBytesPerRead  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -40,6 +45,7 @@ class XmlDictionaryReaderQuotas
  The maximum allowed bytes returned for each read.  
   
 ### MaxDepth  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -47,6 +53,7 @@ class XmlDictionaryReaderQuotas
  The maximum nested node depth for each read.  
   
 ### MaxNameTableCharCount  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -54,6 +61,7 @@ class XmlDictionaryReaderQuotas
  The maximum characters allowed in a table name.  
   
 ### MaxStringContentLength  
+
  Data type: sint32  
   
  Access type: Read-only  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # CoUninitializeCor Function
+
 `CoUninitializeCor` is obsolete.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ STDAPI_(void) CoUninitializeCor(void);
 ```  
   
 ## Remarks  
+
  The common language runtime cannot be unloaded from a process. To completely remove the runtime from a running process, you must shut down that process.  
   
 ## See also

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo4::EnumThreads Method
+
 Returns an enumerator that provides methods to sequentially iterate through the collection of all managed threads in the profiled process.  
   
 ## Syntax  
@@ -27,12 +28,14 @@ HRESULT EnumThreads([out]
 ```  
   
 ## Parameters  
+
  `ppEnum`  
  [out] A pointer to an [ICorProfilerThreadEnum](icorprofilerthreadenum-interface.md) interface.  
   
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

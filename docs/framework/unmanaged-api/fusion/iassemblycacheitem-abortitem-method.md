@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IAssemblyCacheItem::AbortItem Method
+
 Allows the assembly in the global assembly cache to perform cleanup operations before it is released.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT AbortItem ();
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

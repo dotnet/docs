@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess2::SetUnmanagedBreakpoint Method
+
 Sets an unmanaged breakpoint at the specified native image offset.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT SetUnmanagedBreakpoint (
 ```  
   
 ## Parameters  
+
  `address`  
  [in] A `CORDB_ADDRESS` object that specifies the native image offset.  
   
@@ -45,9 +47,11 @@ HRESULT SetUnmanagedBreakpoint (
  [out] A pointer to the number of bytes returned in the `buffer` array.  
   
 ## Remarks  
+
  If the native image offset is within the common language runtime (CLR), the breakpoint will be ignored. This allows the CLR to avoid dispatching an out-of-band breakpoint, when the breakpoint is set by the debugger.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -1,8 +1,8 @@
 ---
-title: The Publish/Subscribe building block
-description: A description of the Publish/Subscribe building-block and how to apply it
+title: The Dapr Publish/Subscribe building block
+description: A description of the Dapr Publish/Subscribe building-block and how to apply it
 author: edwinvw
-ms.date: 11/21/2020
+ms.date: 11/29/2020
 ---
 
 # The Publish/Subscribe building block
@@ -11,7 +11,7 @@ The [Publish-Subscribe pattern](https://docs.microsoft.com/azure/architecture/pa
 
 ## What it solves
 
-The primary advantage of the Publish-Subscribe pattern is `loose coupling,` sometimes referred to as [temporal decoupling](https://docs.microsoft.com/azure/architecture/guide/technology-choices/messaging#decoupling). The pattern decouples services that send messages (the **publishers**) from services that consume messages (the **subscribers**). Both publishers and subscribers are unaware of each other - both are dependent on a centralized **message broker** that distributes the messages. 
+The primary advantage of the Publish-Subscribe pattern is **loose coupling**, sometimes referred to as [temporal decoupling](https://docs.microsoft.com/azure/architecture/guide/technology-choices/messaging#decoupling). The pattern decouples services that send messages (the **publishers**) from services that consume messages (the **subscribers**). Both publishers and subscribers are unaware of each other - both are dependent on a centralized **message broker** that distributes the messages. 
 
 Figure 7-1 shows the high-level architecture of the publish/subscribe pattern.
 
@@ -21,18 +21,18 @@ Figure 7-1 shows the high-level architecture of the publish/subscribe pattern.
 
 From the previous figure, note the steps of the pattern:
 
-1. Publishers send messages to the message broker. 
-2. Subscribers bind to a subscription on the message broker. 
-3. The message broker forwards a copy of the message to interested subscriptions.
-4. Subscribers consume messages from their subscriptions.
+- Publishers send messages to the message broker. 
+- Subscribers bind to a subscription on the message broker. 
+- The message broker forwards a copy of the message to interested subscriptions.
+- Subscribers consume messages from their subscriptions.
 
-Most message brokers encapsulate a queueing mechanism that can persist messages once received. With it, the message broker guarantees `durablity` by storing the message. Subscribers don't need to be immediately available or even online when a publisher sends a message.  Once available, the subscriber receives and processes the message.  Dapr guarantees `At-Least-Once` semantics for message delivery. Once a message is published, it will be delivered at least once to any subscriber.
+Most message brokers encapsulate a queueing mechanism that can persist messages once received. With it, the message broker guarantees **durablity** by storing the message. Subscribers don't need to be immediately available or even online when a publisher sends a message.  Once available, the subscriber receives and processes the message.  Dapr guarantees **At-Least-Once** semantics for message delivery. Once a message is published, it will be delivered at least once to any interested subscriber.
 
- > If your service can only process a message once, you'll need to provide an [idempotency check](https://docs.microsoft.com/azure/architecture/microservices/design/api-design#idempotent-operations) to ensure that the same message is not processed twice. While such logic can be coded, keep in mind that some message brokers, such as Azure Service Bus, provide built-in `duplicate detection` message capabilities. 
+ > If your service can only process a message once, you'll need to provide an [idempotency check](https://docs.microsoft.com/azure/architecture/microservices/design/api-design#idempotent-operations) to ensure that the same message is not processed multiple times. While such logic can be coded, some message brokers, such as Azure Service Bus, provide built-in *duplicate detection* messaging capabilities. 
 
-There are several message broker products available - both commercially and open-source. Each has advantages and drawbacks. Your job is to match your system requirements to the appropriate broker. Once selected, it's a best practice to decouple your application from message broker plumbing. You do this by wrapping the broker inside an `abstraction`. The abstraction encapsulates the message plumbing and exposes generic publish and subscribe operations to your code. Your code communicates with the abstraction, not the actual message broker. While a wise decision, you'll have to write and maintain the abstraction and its underlying implementation. This approach requires custom code that can be complex, repetitive, and error-prone. 
+There are several message broker products available - both commercially and open-source. Each has advantages and drawbacks. Your job is to match your system requirements to the appropriate broker. Once selected, it's a best practice to decouple your application from message broker plumbing. You do this by wrapping the broker inside an *abstraction*. The abstraction encapsulates the message plumbing and exposes generic publish and subscribe operations to your code. Your code communicates with the abstraction, not the actual message broker. While a wise decision, you'll have to write and maintain the abstraction and its underlying implementation. This approach requires custom code that can be complex, repetitive, and error-prone. 
 
-Here is where Dapr comes to the rescue. The Dapr Publish/Subscribe building block provides the messaging abstraction and implementation out-of-the-box. The custom code you would have had to write is prebuilt and encapsulated inside the Dapr building block. You bind to it and consume it. Instead of writing messaging plumbing code, you and your team focus on creating business functionality that adds value to your customers.
+Here's where Dapr comes to your rescue. The Dapr Publish/Subscribe building block provides the messaging abstraction and implementation out-of-the-box. The custom code you would have had to write is prebuilt and encapsulated inside the Dapr building block. You bind to it and consume it. Instead of writing messaging plumbing code, you and your team focus on creating business functionality that adds value to your customers.
 
 ## How it works
 
@@ -65,7 +65,7 @@ curl -X POST http://localhost:3500/v1.0/publish/pubsub/newOrder \
   -d '{ "orderId": "1234", "productId": "5678", "amount": 2 }'
 ```
 
-You receive messages by subscribing to a topic. Upon startup, the Dapr runtime will query your application on a well-known endpoint to identify and create the required subscriptions.
+You receive messages by subscribing to a topic. At startup, the following Dapr command will identify and create the required subscriptions:
 
 ``` http
 http://localhost:<appPort>/dapr/subscribe
@@ -73,7 +73,7 @@ http://localhost:<appPort>/dapr/subscribe
 
 - `<appPort>` informs the Dapr sidecar of the port upon which your application is listening.
 
-The response from the call contains a list of topics to which the applications will subscribe. Each includes an endpoint to call when a message comes in on that topic. Here is an example of a response:
+The response from the call contains a list of topics to which the applications will subscribe. Each includes an endpoint to call when a message comes in on that topic. Here's an example of a response:
 
 ```json
 [
@@ -90,7 +90,7 @@ The response from the call contains a list of topics to which the applications w
 ]
 ```
 
-In this example, you can see the application wants to subscribe to topics `newOrder` and `newProduct`. It registers the endpoints `/orders` and `/productCatalog/products`for each, respectively. For both subscriptions, the application is binding to the Dapr component named `pubsub`. You can implement this endpoint yourself. But Dapr also provides more intuitive ways of implementing it. We'll address this later in this section.
+In the JSON response, you can see the application wants to subscribe to topics `newOrder` and `newProduct`. It registers the endpoints `/orders` and `/productCatalog/products` for each, respectively. For both subscriptions, the application is binding to the Dapr component named `pubsub`. 
 
 Figure 7-3 presents the flow of the example.
 
@@ -138,7 +138,7 @@ To receive messages, you bind an endpoint to a subscription for a registered top
 public async Task<ActionResult> CreateOrder(Order order)
 ```
 
- > You must add a reference to the NuGet package `Dapr.AspNetCore` in your project to consume the AspNetCore integration.
+ > You must add a reference to the NuGet package `Dapr.AspNetCore` in your project to consume the Dapr AspNetCore integration.
 
 To bind this action method to a topic, you decorate it with the `Topic` attribute:
 
@@ -155,7 +155,7 @@ You specify two key elements with this attribute:
 
 Dapr then invokes that action method as it receives messages for that topic.
 
-You also need to configure ASP.NET Core to use Dapr. Enabling it is easy. The Dapr .NET SDK provides several extension methods that can be invoked in the `Startup` class.
+You'll also need to enable ASP.NET Core to use Dapr. The Dapr .NET SDK provides several extension methods that can be invoked in the `Startup` class.
 
 In the `ConfigureServices` method, you must add the following extension method:
 
@@ -167,7 +167,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-Append the `AddDapr` extension-method to the `AddControllers` extension-method. It registers the necessary services to integrate Dapr into the MVC pipeline. It also registers a `DaprClient` instance into the dependency injection container, which then can be injected anywhere into your service.
+Appending the `AddDapr` extension-method to the `AddControllers` extension-method registers the necessary services to integrate Dapr into the MVC pipeline. It also registers a `DaprClient` instance into the dependency injection container, which then can be injected anywhere into your service.
 
 In the `Configure` method, you must add the following middleware components to enable Dapr:
 
@@ -185,15 +185,15 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-The call to `UseCloudEvents` adds **CloudEvents** middleware is to the ASP.NET Core middleware pipeline. This middleware will unwrap requests that use the CloudEvents structured format, so the receiving method receives the event payload directly.
+The call to `UseCloudEvents` adds **CloudEvents** middleware into to the ASP.NET Core middleware pipeline. This middleware will unwrap requests that use the CloudEvents structured format, so the receiving method can read the event payload directly.
 
 > [CloudEvents](https://cloudevents.io/) is a standardized messaging format, providing a common way to describe event information across platforms. Dapr embraces CloudEvents. For more about CloudEvents, see the [cloudevents specification](https://github.com/cloudevents/spec/tree/v1.0).
 
-The call to `MapSubscribeHandler` in the endpoint routing configuration will add a Dapr subscribe endpoint to the application. This endpoint will respond to requests on `/dapr/subscribe`. When this endpoint is called, it will automatically find all WebAPI operations decorated with the `Topic` attribute and return a response with all the subscriptions.
+The call to `MapSubscribeHandler` in the endpoint routing configuration will add a Dapr subscribe endpoint to the application. This endpoint will respond to requests on `/dapr/subscribe`. When this endpoint is called, it will automatically find all WebAPI action methods decorated with the `Topic` attribute and instruct Dapr to create subscriptions for them.
 
 ### Pub/sub components
 
-Dapr [Publish/Subscribe components](https://github.com/dapr/components-contrib/tree/master/pubsub) handle the actual transport of the messages. Several are available. Each encapsulates a specific message broker product to implement the Publish/Subscribe building block. At the time of writing, the following Publish/Subscribe components were available:
+Dapr [Publish/Subscribe components](https://github.com/dapr/components-contrib/tree/master/pubsub) handle the actual transport of the messages. Several are available. Each encapsulates a specific message broker product to implement the Publish/Subscribe building block functionalities. At the time of writing, the following Publish/Subscribe components were available:
 
 - Hazelcast
 - Redis Streams
@@ -207,11 +207,11 @@ Dapr [Publish/Subscribe components](https://github.com/dapr/components-contrib/t
 
  > Note for the Azure cloud stack how both messaging functionality (Azure Service Bus) and event streaming (Azure Event Hub) are available.
 
-These components are created by the community in a [component-contrib repository on GitHub](https://github.com/dapr/components-contrib/tree/master/pubsub). You can write your own Dapr component for a message broker that isn't yet supported.
+These components are created by the community in a [component-contrib repository on GitHub](https://github.com/dapr/components-contrib/tree/master/pubsub). You're encouraged to write your own Dapr component for a message broker that isn't yet supported.
 
 ### Configuring Publish/Subscribe components
 
-You can configure Dapr to use a particular Publish/Subscribe component. The configuration contains several fields, including a **name** field. This name is important because you can configure multiple Publish/Subscribe components for Dapr to use. When you want to send or receive a message, you must include the name of the message broker to use (as we saw in the `PublishEventAsync` method signature shown earlier).
+You then specify the Publish/Subscribe component(s) you wish to implement. The configuration contains several fields, including a **name** field. This name is important because you can configure multiple Publish/Subscribe components for Dapr to use. When you want to send or receive a message, you must include the name of the message broker to use (as we saw in the `PublishEventAsync` method signature shown earlier).
 
 Below you see an example of a Dapr configuration file for configuring a RabbitMQ message broker component:
 
@@ -229,7 +229,7 @@ spec:
     value: true
 ```
 
-In this example, you can see that you can specify any message broker-specific configuration in the `metadata` block. In this case, RabbitMQ is configured to create durable queues. Each of the components' configuration will have its own set of possible fields. You can read which fields are available in the documentation of each Publish/Subscribe component.
+In this example, you can see that you can specify any message broker-specific configuration in the `metadata` block. In this case, RabbitMQ is configured to create durable queues. Each of the components' configuration will have its own set of possible fields. You can read which fields are available in the documentation of each [Publish/Subscribe component](https://github.com/dapr/components-contrib/tree/master/pubsub).
 
 The Publish/Subscribe building block also provides a declarative way of subscribing to a topic. Below you see an example of a Dapr configuration file for configuring a subscription:
 
@@ -252,13 +252,13 @@ You have to specify several elements with every subscription:
 - The name of the Dapr Publish/Subscribe component you want to use (in this case `pubsub`).
 - The name of the topic to subscribe to (in this case `newOrder`).
 - The API operation that needs to be called for this topic (in this case `/orders`).
-- The scope this subscription applies to. With the scope you specify which services subscribe to the topic.
+- The [scope](https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-scopes/) can specify which services can publish and subscribe to a topic. 
 
-## Reference case: eShopOnDapr
+## Reference architecture: eShopOnDapr
 
-As mentioned earlier in this book, we modernized the well-known [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) reference architecture to support Dapr. The eShopOnContainers app was created several years ago as end-to-end reference architecture for constructing a microservices application. In this book, we call our evolution, `eShopOnDapr`.
+As mentioned earlier in this book, we modernized the popular [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) reference architecture to support Dapr. The original eShopOnContainers app was created several years ago as end-to-end reference architecture for constructing a microservices application. We call our evolution, `eShopOnDapr`. It provides an up-to-date reference architecture to help you implement Dapr in your applications.
 
-The eShop application uses the Publish/Subscribe pattern in several places for communicating [integration events](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/#integration-events), for example:
+Both versions of eShop use the Publish/Subscribe pattern in several places for communicating [integration events](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/#integration-events), for example:
 
 - When a user checks-out a shopping basket.
 - When a payment for an order has succeeded.
@@ -277,7 +277,7 @@ public interface IEventBus
 }
 ```
 
-Multiple concrete implementations exist for this abstraction, each for a different message broker: RabbitMQ and Azure Service Bus. Each implementation implements both the publish and subscribe aspects of the abstraction. As mentioned earlier in this module, creating and maintaining each implementation amounts to a large piece of custom code that is complex, redundant, and error prone.
+Multiple concrete implementations were built for this abstraction,  including RabbitMQ and Azure Service Bus. Each implementation includes a great deal of custom plumbing code that was complex and difficult to maintain.
 
 ### Publishing events
 
@@ -321,17 +321,17 @@ public class DaprEventBus : IEventBus
 }
 ```
 
-As you can see in the code snippet, the topic name is derived from event type's name. Because all eShop services use the `IEventBus` abstraction, retrofitting Dapr required no change to the mainline application code.
+As you can see in the code snippet, the topic name is derived from event type's name. Because all eShop services use the `IEventBus` abstraction, retrofitting Dapr required *absolutely no change* to the mainline application code.
 
- >Note in the implementation that we cast the event parameter to a `dynamic`. This workaround addresses an issue found in the `System.Text.Json` serializer that the SDK uses to serialize and deserialize messages. In the eShop code an event is sometimes explicitly declared as the base-class for events `IntegrationEvent` (because the specific event-type is determined dynamically based on business-logic). As a result, the event isn't serialized correctly and the message payload won't contain all the fields of the event. Our workaround circumvents the issues and correctly serializes the fields.
-
-With Dapr, the infrastructure code is dramatically simplified. It doesn't need to distinguish between the different message brokers. Dapr provides this abstraction for you. And if needed,  you can configure multiple message broker components. 
+ > Note how we cast the event parameter to a C# `dynamic` type. This workaround addresses an issue found in the `System.Text.Json` serializer, the SDK used to serialize/deserialize messages. eShop events derive from an `IntegrationEvent` base class. This abstraction enables the event-type to be dynamically determined based on business logic. With that, the event wasn't serialized correctly. Our workaround circumvents the issue and correctly serializes the fields.  
+ 
+ With Dapr, the infrastructure code is **dramatically simplified**. It doesn't need to distinguish between the different message brokers. Dapr provides this abstraction for you. And if needed,  you can swap out message brokers or configure multiple message broker components. 
 
 ### Subscribing to events
 
-The earlier eShopOnContainers application contains *SubscriptionManagers* that handle subscription implementation. Each specific message broker that implements `IEventBus` contains a fair amount of complex message broker-specific code for handling subscriptions. Each service that wants to receive events needs to explicitly register a handler for each event-type upon startup.
+The earlier eShopOnContainers application contained *SubscriptionManagers* that handled subscription implementation. Each specific message broker that implemented `IEventBus` contained a fair amount of complex message broker-specific code for handling subscriptions. Each service that needed to receive events would have to explicitly register a handler for each event-type upon startup.
 
-In eShopOnDapr, we streamlined the entire process with the ASP.NET Core Dapr libraries. We simply created a controller in each service with a method for each event to handle. We decorated each controller-method with the corresponding `Topic` attribute the message is published to. Here's a code snippet taken from the `PaymentService`:
+In eShopOnDapr, we streamlined the process using Dapr ASP.NET Core libraries. For each event, we created an action method in the controller. We decorated the action method with the corresponding `Topic` attribute and the name of the event to handle. Here's a code snippet taken from the `PaymentService`:
 
 ```csharp
 [Route("api/v1/[controller]")]
@@ -357,7 +357,7 @@ public class IntegrationEventController : ControllerBase
 }
 ```
 
-In the previous code snippet, note how the event type's name is used as the topic to which to subscribe. The `OrderStatusChangedToValidatedIntegrationEventHandler` is an event-handler that already exists in eShopOnContainers. Because Dapr now handles the plumbing around subscriptions and message brokers, a large amount of original code became obsolete and was removed from the code-base. Much of this code was complex.
+In the previous code snippet, note how the event type's name is used as the topic to which to subscribe. The `OrderStatusChangedToValidatedIntegrationEventHandler` is an event-handler that already exists in eShopOnContainers. Because Dapr implements the plumbing around subscriptions and message brokers, a large amount of original code became obsolete and was removed from the code-base. Much of this code was complex and challenging to maintain.
 
 ### Using Publish/Subscribe components
 
@@ -378,7 +378,7 @@ spec:
 
 Note how the [NATS message broker](https://nats.io/) is configured for this example. To change message brokers, you need only to configure a different message broker, such as RabbitMQ or Azure Service Bus and update the yaml file. With Dapr, there are no changes to your mainline service code when switching message brokers.
 
-Finally, you might ask, "Why would I need multiple message brokers in an application?". Many times a system will handle workloads with different characteristics. One event may occur 10 times a day, but another event occurs 5000 times per second. For these scenarios you might partition messaging traffic and use a different message broker for each workload. With Dapr, you add multiple Publish/Subscribe component configurations, each with a different name.
+Finally, you might ask, "Why would I need multiple message brokers in an application?". Many times a system will handle workloads with different characteristics. One event may occur 10 times a day, but another event occurs 5000 times per second. You may benefit by partitioning messaging traffic to different message broker types. With Dapr, you add multiple Publish/Subscribe component configurations, each with a different name.
 
 ## Summary
 

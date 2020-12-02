@@ -4,7 +4,7 @@ description: Learn how to approach migrating an existing ASP.NET Web Forms app t
 author: twsouthwick
 ms.author: tasou
 no-loc: [Blazor, WebAssembly]
-ms.date: 09/19/2019
+ms.date: 11/20/2020
 ---
 # Migrate from ASP.NET Web Forms to Blazor
 
@@ -25,7 +25,7 @@ If these or other new features are compelling enough, there may be value in migr
 
 As described in the [hosting models](hosting-models.md) chapter, a Blazor app can be hosted in two different ways: server-side and client-side. The server-side model uses ASP.NET Core SignalR connections to manage the DOM updates while running any actual code on the server. The client-side model runs as WebAssembly within a browser and requires no server connections. There are a number of differences that may affect which is best for a specific app:
 
-- Running as WebAssembly is still in development and may not support all features (such as threading) at the current time
+- Running as WebAssembly doesn't support all features (such as threading) at the current time
 - Chatty communication between the client and server may cause latency issues in server-side mode
 - Access to databases and internal or protected services require a separate service with client-side hosting
 
@@ -33,11 +33,11 @@ At the time of writing, the server-side model more closely resembles Web Forms. 
 
 ## Create a new project
 
-This initial migration step is to create a new project. This project type is based on the SDK style projects of .NET Core and simplifies much of the boilerplate that was used in previous project formats. For more detail, please see the chapter on [Project Structure](project-structure.md).
+This initial migration step is to create a new project. This project type is based on the SDK style projects of .NET and simplifies much of the boilerplate that was used in previous project formats. For more detail, please see the chapter on [Project Structure](project-structure.md).
 
 Once the project has been created, install the libraries that were used in the previous project. In older Web Forms projects, you may have used the *packages.config* file to list the required NuGet packages. In the new SDK-style project, *packages.config* has been replaced with `<PackageReference>` elements in the project file. A benefit to this approach is that all dependencies are installed transitively. You only list the top-level dependencies you care about.
 
-Many of the dependencies you're using are available for .NET Core, including Entity Framework 6 and log4net. If there's no .NET Core or .NET Standard version available, the .NET Framework version can often be used. Your mileage may vary. Any API used that isn't available in .NET Core causes a runtime error. Visual Studio notifies you of such packages. A yellow icon appears on the project's **References** node in **Solution Explorer**.
+Many of the dependencies you're using are available for .NET, including Entity Framework 6 and log4net. If there's no .NET or .NET Standard version available, the .NET Framework version can often be used. Your mileage may vary. Any API used that isn't available in .NET causes a runtime error. Visual Studio notifies you of such packages. A yellow icon appears on the project's **References** node in **Solution Explorer**.
 
 In the Blazor-based eShop project, you can see the packages that are installed. Previously, the *packages.config* file listed every package used in the project, resulting in a file almost 50 lines long. A snippet of *packages.config* is:
 
@@ -72,12 +72,13 @@ The Blazor project lists the dependencies you require within an `<ItemGroup>` el
 ```xml
 <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.3" />
-    <PackageReference Include="EntityFramework" Version="6.3.0-preview9-19423-04" />
-    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="2.2.12" />
 </ItemGroup>
 ```
 
-One NuGet package that simplifies the life of Web Forms developers is the [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md). Although .NET Core is cross-platform, some features are only available on Windows. Windows-specific features are made available by installing the compatibility pack. Examples of such features include the Registry, WMI, and Directory Services. The package adds around 20,000 APIs and activates many services with which you may already be familiar. The eShop project doesn't require the compatibility pack; but if your projects use Windows-specific features, the package eases the migration efforts.
+One NuGet package that simplifies the life of Web Forms developers is the [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md). Although .NET is cross-platform, some features are only available on Windows. Windows-specific features are made available by installing the compatibility pack. Examples of such features include the Registry, WMI, and Directory Services. The package adds around 20,000 APIs and activates many services with which you may already be familiar. The eShop project doesn't require the compatibility pack; but if your projects use Windows-specific features, the package eases the migration efforts.
 
 ## Enable startup process
 
@@ -237,15 +238,15 @@ public class Startup
 }
 ```
 
-One significant change you may notice from Web Forms is the prominence of DI. DI has been a guiding principle in the ASP.NET Core design. It supports customization of almost all aspects of the ASP.NET Core framework. There's even a built-in service provider that can be used for many scenarios. If more customization is required, it can be supported by the many community projects. For example, you can carry forward your third-party DI library investment.
+One significant change you may notice from Web Forms is the prominence of DI. DI has been a guiding principle in the ASP.NET Core design. It supports customization of almost all aspects of the ASP.NET Core framework. There's even a built-in service provider that can be used for many scenarios. If more customization is required, it can be supported by many community projects. For example, you can carry forward your third-party DI library investment.
 
-In the original eShop app, there's some configuration for session management. Since server-side Blazor uses ASP.NET Core SignalR for communication, session state isn't supported as the connections may occur independent of an HTTP context. An app that uses session state requires rearchitecting before running as a Blazor app.
+In the original eShop app, there's some configuration for session management. Since server-side Blazor uses ASP.NET Core SignalR for communication, the session state isn't supported as the connections may occur independent of an HTTP context. An app that uses the session state requires rearchitecting before running as a Blazor app.
 
 For more information about app startup, see [App startup](app-startup.md).
 
 ## Migrate HTTP modules and handlers to middleware
 
-HTTP modules and handlers are common patterns in Web Forms to control the HTTP request pipeline. Classes that implement `IHttpModule` or `IHttpHandler` could be registered and process incoming requests. Web Forms configures modules and handlers in the *web.config* file. Web Forms is also heavily based on app lifecycle event handling. ASP.NET Core uses middleware instead. Middleware is registered in the `Configure` method of the `Startup` class. Middleware execution order is determined by the registration order.
+HTTP modules and handlers are common patterns in Web Forms to control the HTTP request pipeline. Classes that implement `IHttpModule` or `IHttpHandler` could be registered and process incoming requests. Web Forms configure modules and handlers in the *web.config* file. Web Forms is also heavily based on app lifecycle event handling. ASP.NET Core uses middleware instead. Middleware is registered in the `Configure` method of the `Startup` class. Middleware execution order is determined by the registration order.
 
 In the [Enable startup process](#enable-startup-process) section, a lifecycle event was raised by Web Forms as the `Application_BeginRequest` method. This event isn't available in ASP.NET Core. One way to achieve this behavior is to implement middleware as seen in the *Startup.cs* file example. This middleware does the same logic and then transfers control to the next handler in the middleware pipeline.
 
@@ -550,11 +551,11 @@ In Blazor, the equivalent markup is provided in a *Create.razor* file:
 </EditForm>
 ```
 
-The `EditForm` context includes validation support and can be wrapped around input. Data annotations are a common way to add validation. Such validation support can be added via the `DataAnnotationsValidator` component. For more information on this mechanism, see [ASP.NET Core Blazor forms and validation](/aspnet/core/blazor/forms-validation).
+The `EditForm` context includes validation support and can be wrapped around an input. Data annotations are a common way to add validation. Such validation support can be added via the `DataAnnotationsValidator` component. For more information on this mechanism, see [ASP.NET Core Blazor forms and validation](/aspnet/core/blazor/forms-validation).
 
 ## Migrate configuration
 
-In a Web Forms project, configuration data is most commonly stored in the *web.config* file. The configuration data is accessed with `ConfigurationManager`. Services were often required to parse objects. With .NET Framework 4.7.2, composability was added to configuration via `ConfigurationBuilders`. These builders allowed developers to add various sources for configuration that was then composed at runtime to retrieve the necessary values.
+In a Web Forms project, configuration data is most commonly stored in the *web.config* file. The configuration data is accessed with `ConfigurationManager`. Services were often required to parse objects. With .NET Framework 4.7.2, composability was added to the configuration via `ConfigurationBuilders`. These builders allowed developers to add various sources for the configuration that was then composed at runtime to retrieve the necessary values.
 
 ASP.NET Core introduced a flexible configuration system that allows you to define the configuration source or sources used by your app and deployment. The `ConfigurationBuilder` infrastructure that you may be using in your Web Forms app was modeled after the concepts used in the ASP.NET Core configuration system.
 
@@ -608,7 +609,7 @@ By default, environment variables, JSON files (*appsettings.json* and *appsettin
 
 ## Migrate data access
 
-Data access is an important aspect of any app. The eShop project stores catalog information in a database and retrieves the data with Entity Framework (EF) 6. Since EF 6 is supported in .NET Core 3.0, the project can continue to use it.
+Data access is an important aspect of any app. The eShop project stores catalog information in a database and retrieves the data with Entity Framework (EF) 6. Since EF 6 is supported in .NET 5.0, the project can continue to use it.
 
 The following EF-related changes were necessary to eShop:
 

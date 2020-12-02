@@ -4,7 +4,7 @@ description: An introduction to Blazor and writing full-stack web apps with .NET
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 09/11/2019
+ms.date: 11/20/2020
 ---
 # An introduction to Blazor for ASP.NET Web Forms developers
 
@@ -25,7 +25,7 @@ When .NET and ASP.NET Web Forms first shipped, the platform ecosystem looked muc
 
 Most modern web frameworks are now also open-source, which has a number of benefits. Users aren't beheld to a single project owner to fix bugs and add features. Open-source projects provide improved transparency on development progress and upcoming changes. Open-source projects enjoy contributions from an entire community, and they foster a supportive open-source ecosystem. Despite the risks of open-source, many consumers and contributors have found suitable mitigations that enable them to enjoy the benefits of an open-source ecosystem in a safe and reasonable way. Examples of such mitigations include contributor license agreements, friendly licenses, pedigree scans, and supporting foundations.
 
-The .NET community has embraced both cross-platform support and open-source. .NET Core is an open-source and cross-platform implementation of .NET that runs on a plethora of platforms, including Windows, macOS, and various Linux distributions. Xamarin provides Mono, an open-source version of .NET. Mono runs on Android, iOS, and a variety of other form factors, including watches and smart TVs. Microsoft has announced that [.NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/) will reconcile .NET Core and Mono into "a single .NET runtime and framework that can be used everywhere and that has uniform runtime behaviors and developer experiences."
+The .NET community has embraced both cross-platform support and open-source. .NET Core is an open-source and cross-platform implementation of .NET that runs on a plethora of platforms, including Windows, macOS, and various Linux distributions. Xamarin provides Mono, an open-source version of .NET. Mono runs on Android, iOS, and a variety of other form factors, including watches and smart TVs. Microsoft has released [.NET 5](https://devblogs.microsoft.com/dotnet/announcing-net-5-0/) that reconciled .NET Core and Mono into "a single .NET runtime and framework that can be used everywhere and that has uniform runtime behaviors and developer experiences."
 
 Will ASP.NET Web Forms benefit from the move to open-source and cross-platform support? The answer, unfortunately, is no, or at least not to the same extent as the rest of the platform. The .NET team [recently made it clear](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/) that ASP.NET Web Forms won't be ported to .NET Core or .NET 5. Why is that?
 
@@ -47,11 +47,11 @@ But bridging two different platforms and ecosystems (.NET and JavaScript) comes 
 
 In 2015, the major browser vendors joined forces in a W3C Community Group to create a new open web standard called WebAssembly. WebAssembly is a byte code for the Web. If you can compile your code to WebAssembly, it can then run on any browser on any platform at near native speed. Initial efforts focused on C/C++. The result was a dramatic demonstration of running native 3D graphics engines directly in the browser without plugins. WebAssembly has since been standardized and implemented by all major browsers.
 
-Work on running .NET on WebAssembly was announced in late 2017 and is expected to ship in 2020, including support from .NET 5. The ability to run .NET code directly in the browser enables full-stack web development with .NET.
+Work on running .NET on WebAssembly was announced in late 2017 and released in 2020, including support from .NET 5. The ability to run .NET code directly in the browser enables full-stack web development with .NET.
 
 ## Blazor: full-stack web development with .NET
 
-On its own, the ability to run .NET code in a browser doesn't provide an end-to-end experience for creating client-side web apps. That's where Blazor comes in. Blazor is a client-side web UI framework based on C# instead of JavaScript. Blazor can run directly in the browser via WebAssembly. No browser plugins are required. Alternatively, Blazor apps can run server-side on .NET Core and handle all user interactions over a real-time connection with the browser.
+On its own, the ability to run .NET code in a browser doesn't provide an end-to-end experience for creating client-side web apps. That's where Blazor comes in. Blazor is a client-side web UI framework based on C# instead of JavaScript. Blazor can run directly in the browser via WebAssembly. No browser plugins are required. Alternatively, Blazor apps can run server-side on .NET and handle all user interactions over a real-time connection with the browser.
 
 Blazor has great tooling support in Visual Studio and Visual Studio Code. The framework also includes a full UI component model and has built-in facilities for:
 
@@ -68,12 +68,12 @@ This book provides an introduction to Blazor that is catered specifically to ASP
 
 - How to build Blazor apps.
 - How Blazor works.
-- How Blazor relates to .NET Core.
+- How Blazor relates to .NET.
 - Reasonable strategies for migrating existing ASP.NET Web Forms apps to Blazor where appropriate.
 
 ## Get started with Blazor
 
-Getting started with Blazor is easy. Go to <https://blazor.net> and follow the links to install the appropriate .NET Core SDK and Blazor project templates. You'll also find instructions for setting up the Blazor tooling in Visual Studio or Visual Studio Code.
+Getting started with Blazor is easy. Go to <https://blazor.net> and follow the links to install the appropriate .NET SDK and Blazor project templates. You'll also find instructions for setting up the Blazor tooling in Visual Studio or Visual Studio Code.
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

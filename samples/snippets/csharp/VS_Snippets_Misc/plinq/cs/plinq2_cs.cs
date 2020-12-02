@@ -1,17 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Linq;
 
 class Example
 {
-   public static void Main()
-   {
-      IntroTopic_OptInModel();
-      IntroTopic_OptIntoOrdering();
-      ForAllOperator();
-      CustomPartitioners();
-   }
+    public static void Main()
+    {
+        IntroTopic_OptInModel();
+        IntroTopic_OptIntoOrdering();
+        ForAllOperator();
+        CustomPartitioners();
+    }
 
     static void IntroTopic_OptInModel()
     {
@@ -38,9 +38,10 @@ class Example
     {
         var numbers = Enumerable.Range(0, 1000);
         // <snippet3>
-        var evenNums = from num in numbers.AsParallel().AsOrdered()
-                      where num % 2 == 0
-                      select num;
+        var evenNums =
+            from num in numbers.AsParallel().AsOrdered()
+            where num % 2 == 0
+            select num;
         // </snippet3>
     }
 
@@ -50,9 +51,10 @@ class Example
 
         // <snippet4>
         var nums = Enumerable.Range(10, 10000);
-        var query = from num in nums.AsParallel()
-                    where num % 10 == 0
-                    select num;
+        var query =
+            from num in nums.AsParallel()
+            where num % 10 == 0
+            select num;
 
         // Process the results as each thread completes
         // and add them to a System.Collections.Concurrent.ConcurrentBag(Of Int)
@@ -63,33 +65,35 @@ class Example
 
     static void CustomPartitioners()
     {
-       // <Snippet2>
-       int[] arr = new int[9999];
-       Partitioner<int> partitioner = new MyArrayPartitioner<int>(arr);
-       var query = partitioner.AsParallel().Select(x => SomeFunction(x));
-       // </Snippet2>
+        // <Snippet2>
+        int[] arr = new int[9999];
+        Partitioner<int> partitioner = new MyArrayPartitioner<int>(arr);
+        var query = partitioner.AsParallel().Select(SomeFunction);
+        // </Snippet2>
     }
 
     public static int SomeFunction(int x)
     {
-       return x * x;
+        return x * x;
     }
 }
 
 class MyArrayPartitioner<T> : Partitioner<T>
 {
-   private List<T> list = new List<T>();
+    private readonly List<T> _list = new();
 
-   public MyArrayPartitioner(T[] arr)
-   {
-      foreach (var element in arr)
-        list.Add(element);
-   }
+    public MyArrayPartitioner(T[] arr)
+    {
+        foreach (var element in arr)
+        {
+            _list.Add(element);
+        }
+    }
 
-   public override IList<IEnumerator<T>> GetPartitions(int partitionCount)
-   {
-      List<IEnumerator<T>> enumList = new List<IEnumerator<T>>();
-      enumList.Add(list.GetEnumerator());
-      return enumList;
-   }
+    public override IList<IEnumerator<T>> GetPartitions(int partitionCount)
+    {
+        List<IEnumerator<T>> enumList = new();
+        enumList.Add(_list.GetEnumerator());
+        return enumList;
+    }
 }

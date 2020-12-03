@@ -3,7 +3,6 @@ description: "using keyword - C# Reference"
 title: "using keyword - C# Reference"
 ms.date: 04/05/2019
 f1_keywords: 
-  - "using_CSharpKeyword"
   - "using"
 helpviewer_keywords: 
   - "using keyword [C#]"

@@ -35,10 +35,7 @@ namespace OptionsPerfDemo
         {
             _ = JsonSerializer.Serialize<Forecast>(
                 forecast,
-                options ?? new JsonSerializerOptions()
-                {
-                    WriteIndented = true
-                });
+                options ?? new JsonSerializerOptions() { WriteIndented = true });
         }
     }
 }

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 64359aee-aab0-4042-9a32-d19789af6ca7
 ---
 # Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes
+
 Because the content of an entity declaration can contain almost anything, there is a possibility that the content could contain an element like `<!ENTITY aname "<elem>test</elem>">`.  
   
  When the XML is parsed, `&aname;` is not expanded with its replacement content at parse time. The expansion of the XML is not done because resolution of the namespace for the element cannot occur until the node is placed in the document. Until that time, there is no knowledge of what namespace is in scope. When the node is put into the document, then the namespace resolution occurs, and the resulting entity content is parsed into its appropriate nodes.  

@@ -9,6 +9,7 @@ namespace SystemTextJsonSamples
     {
         private static readonly byte[] s_nameUtf8 = Encoding.UTF8.GetBytes("name");
         private static ReadOnlySpan<byte> Utf8Bom => new byte[] { 0xEF, 0xBB, 0xBF };
+
         public static void Run()
         {
             // ReadAllBytes if the file encoding is UTF-8:
@@ -25,7 +26,6 @@ namespace SystemTextJsonSamples
             //string fileName = "Universities.json";
             //string jsonString = File.ReadAllText(fileName);
             //ReadOnlySpan<byte> jsonReadOnlySpan = Encoding.UTF8.GetBytes(jsonString);
-
 
             int count = 0;
             int total = 0;

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 57c614e5-18a9-4e87-bfd5-d0fe3396a192
 ---
 # \<Namespace> Element (.NET Native)
+
 Applies runtime reflection policy to all the types in a specified namespace.  
   
 ## Syntax  
@@ -23,6 +24,7 @@ Applies runtime reflection policy to all the types in a specified namespace.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -71,6 +73,7 @@ Applies runtime reflection policy to all the types in a specified namespace.
 |`<Namespace>`|Applies reflection policy to all types in a parent namespace.|  
   
 ## Remarks  
+
  The `Activate`, `Browse`, `Dynamic`, and `Serialize` attributes are all optional. If none are present, the `<Namespace>` element serves only as a container for child elements. If they are present, the `<Namespace>` element applies runtime reflection policy to all the types in the specified namespace.  
   
  When it is a child of the [\<Assembly>](assembly-element-net-native.md) element, the `<Namespace>` element overrides the runtime reflection policy defined by the  [\<Assembly>](assembly-element-net-native.md) element.  

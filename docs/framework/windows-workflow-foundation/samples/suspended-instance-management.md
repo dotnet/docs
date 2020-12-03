@@ -4,14 +4,17 @@ ms.date: "03/30/2017"
 ms.assetid: f5ca3faa-ba1f-4857-b92c-d927e4b29598
 ---
 # Suspended Instance Management
+
 This sample demonstrates how to manage workflow instances that have been suspended.  The default action for <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> is `AbandonAndSuspend`. This means that by default, unhandled exceptions thrown from a workflow instance hosted in the <xref:System.ServiceModel.WorkflowServiceHost> will cause the instance to be disposed from memory (abandoned) and the durable/persisted version of the instance to be marked as suspended. A suspended workflow instance will not be able to run until it has been unsuspended.
 
  The sample shows how a command-line utility can be implemented to query for suspended instances, and how to give the user the option to resume or terminate the instance. In this sample, a workflow service intentionally throws an exception, causing it to become suspended. The command-line utility can then be used to query for the instance and subsequently resume or terminate the instance.
 
 ## Demonstrates
+
  <xref:System.ServiceModel.WorkflowServiceHost> with <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior> and <xref:System.ServiceModel.Activities.WorkflowControlEndpoint> in Windows Workflow Foundation (WF).
 
 ## Discussion
+
  The command-line utility implemented in this sample is specific to the SQL instance store implementation that ships in [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]. If you have a custom implementation of the instance store, then you can adapt this utility by replacing the `WorkflowInstanceCommand` implementations in the sample with implementations that are specific to your instance store.
 
  The provided implementation runs SQL commands against the SQL instance store directly to list suspended instances, and it relies on a <xref:System.ServiceModel.Activities.WorkflowControlEndpoint> added to the <xref:System.ServiceModel.WorkflowServiceHost> in order to resume or terminate the instances.

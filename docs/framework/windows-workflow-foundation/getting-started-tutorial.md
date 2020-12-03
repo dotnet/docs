@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: c2d3585f-6b1a-4d4f-9865-bd7cd31c5d42
 ---
 # Getting Started Tutorial
+
 This section contains a set of walkthrough topics that introduce you to programming Windows Workflow Foundation (WF) applications. By following the procedures in these topics, you will build an application that is a number guessing game. The first topic in the tutorial leads you through the steps to create the custom activities required for the workflow. In the second topic, these activities are assembled along with built-in workflow activities into a flowchart workflow. In the third topic, the host application is configured to run the workflow, and in the final topic persistence is introduced. Each step in this process depends on the previous steps, so we recommend that you complete them in order.  
   
 ## In This Section  
+
  [How to: Create an Activity](how-to-create-an-activity.md)  
  Describes how to create a custom activity that derives from <xref:System.Activities.NativeActivity%601>, and how to compose this activity along with a built-in activity into a composite activity using the activity designer.  
   

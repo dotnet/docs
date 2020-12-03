@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # FunctionLeave3WithInfo Function
+
 Notifies the profiler that control is being returned from a function, and provides a handle that can be passed to the [ICorProfilerInfo3::GetFunctionLeave3Info method](icorprofilerinfo3-getfunctionleave3info-method.md) to retrieve the stack frame and the return value.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ void __stdcall FunctionLeave3WithInfo(
   \[in] An opaque handle that represents information about a given stack frame. This handle is valid only during the callback to which it is passed.
 
 ## Remarks  
+
  The `FunctionLeave3WithInfo` callback method notifies the profiler as functions are called, and allows the profiler to use the [ICorProfilerInfo3::GetFunctionLeave3Info method](icorprofilerinfo3-getfunctionleave3info-method.md) to inspect the return value. To access return value information, the `COR_PRF_ENABLE_FUNCTION_RETVAL` flag has to be set. The profiler can use the [ICorProfilerInfo::SetEventMask method](icorprofilerinfo-seteventmask-method.md) to set the event flags, and then use the [ICorProfilerInfo3::SetEnterLeaveFunctionHooks3WithInfo method](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md) to register your implementation of this function.  
   
  The `FunctionLeave3WithInfo` function is a callback; you must implement it. The implementation must use the `__declspec(naked)` storage-class attribute.  
@@ -52,6 +54,7 @@ void __stdcall FunctionLeave3WithInfo(
  The `FunctionLeave3WithInfo` function must not call into managed code or cause a managed memory allocation in any way.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

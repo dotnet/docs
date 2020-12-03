@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b5d8c1c1-6844-4947-9759-c7f1b564bded
 ---
 # About the System.Net.PeerToPeer.Collaboration Namespace
+
 The <xref:System.Net.PeerToPeer.Collaboration> namespace provides classes and APIs that are used to implement peer collaboration activities using the Peer-to-Peer Collaboration Infrastructure.  
   
 ## Classes  
+
  The main classes used in the implementation of a Peer-to-Peer Collaboration activity are:  
   
 - The <xref:System.Net.PeerToPeer.Collaboration.ContactManager>, which can be used to store peer contacts.  

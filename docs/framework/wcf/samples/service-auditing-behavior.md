@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 59bf0cda-e496-4418-a3a1-2f0f6e85f8ce
 ---
 # Service Auditing Behavior
+
 This sample demonstrates how to use the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> to enable auditing of security events during service operations. This sample is based on the [Getting Started](getting-started-sample.md). The service and client have been configured using the [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md). The `mode` attribute of the [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) has been set to `Message` and `clientCredentialType` has been set to `Windows`. In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]

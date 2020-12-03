@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 428c68b6-a7b4-44be-b280-75905f46612c
 ---
 # Strong Naming (Unmanaged API Reference)
+
 The strong naming API enables a client to administer strong name signing for assemblies.  
   
  Signing an assembly with a strong name adds a public key encryption to the file containing the assembly manifest. Strong name signing helps verify name uniqueness, prevents name spoofing, and provides callers with a unique identity when a reference is resolved. However, no level of trust is associated with a strong name.  

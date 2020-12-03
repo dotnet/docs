@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 0fe844e3-5b6f-4fe7-ad15-22459501738b
 ---
 # Event Handling in an XML Document Using the XmlNodeChangedEventArgs
+
 The **XmlNodeChangedEventArgs** encapsulates the arguments passed to the event handlers registered on the **XmlDocument** object for handling events. The events and a description of when they are fired is given in the following table.  
   
 |Event|Fired|  

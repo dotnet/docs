@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # AddFile2 Method
+
 Adds files to the assembly. Can also be used to create unbound modules.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT AddFile2(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  ID for the assembly to which the file is added.  
   
@@ -48,9 +50,11 @@ HRESULT AddFile2(
  Receives ID for the file being added.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h.  
   
 ## See also

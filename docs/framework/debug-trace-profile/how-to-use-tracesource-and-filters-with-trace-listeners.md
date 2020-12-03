@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 21dc2169-947d-453a-b0e2-3dac3ba0cc9f
 ---
 # How to: Use TraceSource and Filters with Trace Listeners
+
 One of the new features in the .NET Framework version 2.0 is an enhanced tracing system. The basic premise is unchanged: tracing messages are sent through switches to listeners, which report the data to an associated output medium. A primary difference for version 2.0 is that traces can be initiated through instances of the <xref:System.Diagnostics.TraceSource> class. <xref:System.Diagnostics.TraceSource> is intended to function as an enhanced tracing system and can be used in place of the static methods of the older <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> tracing classes. The familiar <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes still exist, but the recommended practice is to use the <xref:System.Diagnostics.TraceSource> class for tracing.  
   
  This topic describes the use of a <xref:System.Diagnostics.TraceSource> coupled with an application configuration file.  It is possible, although not recommended, to trace using a <xref:System.Diagnostics.TraceSource> without the use of a configuration file. For information on tracing without a configuration file, see [How to: Create and Initialize Trace Sources](how-to-create-and-initialize-trace-sources.md).  

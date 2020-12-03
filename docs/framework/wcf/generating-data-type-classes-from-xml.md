@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e4e5e4e8-527f-44d1-92fa-8904a08784ea
 ---
 # Generating Data Type Classes from XML
+
 .NET Framework 4.5 includes a new feature to generate data type classes from XML. This topic describes how to automatically generate data types for the .NET Blog RSS feed.  
   
 ### Obtaining the XML from the .NET Blog RSS feed  

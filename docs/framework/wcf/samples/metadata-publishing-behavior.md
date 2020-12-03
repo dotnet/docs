@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 78c13633-d026-4814-910e-1c801cffdac7
 ---
 # Metadata Publishing Behavior
+
 The Metadata Publishing Behavior sample demonstrates how to control the metadata publishing features of a service. To prevent unintentional disclosure of potentially sensitive service metadata, the default configuration for Windows Communication Foundation (WCF) services disables metadata publishing. This behavior is secure by default, but also means that you cannot use a metadata import tool (such as Svcutil.exe) to generate the client code required to call the service unless the service’s metadata publishing behavior is explicitly enabled in configuration.  
   
 > [!IMPORTANT]

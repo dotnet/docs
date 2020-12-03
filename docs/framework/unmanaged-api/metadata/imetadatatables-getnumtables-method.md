@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataTables::GetNumTables Method
+
 Gets the number of tables in the scope of the current `IMetaDataTables` instance.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetNumTables (
 ```  
   
 ## Parameters  
+
  `pcTables`  
  [out] A pointer to the number of tables in the current instance scope.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

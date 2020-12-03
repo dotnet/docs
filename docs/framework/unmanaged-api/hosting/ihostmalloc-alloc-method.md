@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostMAlloc::Alloc Method
+
 Requests that the host allocate the specified amount of memory from the heap.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT Alloc (
 ```  
   
 ## Parameters  
+
  `cbSize`  
  [in] The size, in bytes, of the current memory allocation request.  
   
@@ -52,9 +54,11 @@ HRESULT Alloc (
 |E_OUTOFMEMORY|Not enough memory was available to complete the allocation request.|  
   
 ## Remarks  
+
  The CLR gets an interface pointer to an `IHostMalloc` instance by calling the [IHostMemoryManager::CreateMalloc](ihostmemorymanager-createmalloc-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

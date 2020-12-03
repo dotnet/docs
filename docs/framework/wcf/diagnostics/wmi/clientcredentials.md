@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 41dffd6b-8f14-4fed-aefb-2a1bb168efb3
 ---
 # ClientCredentials
+
 ClientCredentials  
   
 ## Syntax  
@@ -23,12 +24,15 @@ class ClientCredentials : Behavior
 ```  
   
 ## Methods  
+
  The ClientCredentials class does not define any methods.  
   
 ## Properties  
+
  The ClientCredentials class has the following properties:  
   
 ### ClientCertificate  
+
  Data type: string  
   
  Access type: Read-only  
@@ -36,6 +40,7 @@ class ClientCredentials : Behavior
  The X.509 certificate the client uses to authenticate to the service.  
   
 ### HttpDigest  
+
  Data type: string  
   
  Access type: Read-only  
@@ -43,6 +48,7 @@ class ClientCredentials : Behavior
  The current Http Digest credential.  
   
 ### IssuedToken  
+
  Data type: string  
   
  Access type: Read-only  
@@ -50,6 +56,7 @@ class ClientCredentials : Behavior
  The endpoint address and binding used to contact the local security token service.  
   
 ### Peer  
+
  Data type: string  
   
  Access type: Read-only  
@@ -57,6 +64,7 @@ class ClientCredentials : Behavior
  The credentials that the peer node uses to authenticate itself to other nodes in the mesh.  
   
 ### ServiceCertificate  
+
  Data type: string  
   
  Access type: Read-only  
@@ -64,6 +72,7 @@ class ClientCredentials : Behavior
  The service's X.509 certificate.  
   
 ### SupportInteractive  
+
  Data type: boolean  
   
  Access type: Read-only  
@@ -71,6 +80,7 @@ class ClientCredentials : Behavior
  A Boolean value that specifies whether the credential supports interactive negotiation.  
   
 ### UserName  
+
  Data type: string  
   
  Access type: Read-only  
@@ -78,6 +88,7 @@ class ClientCredentials : Behavior
  The username and password the client uses to authenticate itself to the service.  
   
 ### Windows  
+
  Data type: string  
   
  Access type: Read-only  

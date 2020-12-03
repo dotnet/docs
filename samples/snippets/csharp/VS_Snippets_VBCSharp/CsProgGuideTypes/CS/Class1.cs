@@ -514,21 +514,6 @@ namespace CsProgGuideTypes
 
     class ValueTypeConversion
     {
-        class MyClass
-        {
-            byte numA = 0xA;
-
-            //<snippet35>
-            public string GetName(int ID)
-            {
-                if (ID < names.Length)
-                    return names[ID];
-                else
-                    return String.Empty;
-            }
-            private string[] names = { "Spencer", "Sally", "Doug" };
-            //</snippet35>
-        }
         static void Main()
         {
             //<snippet34>
@@ -537,31 +522,6 @@ namespace CsProgGuideTypes
             int num = 2147483647;
             long bigNum = num;
             //</snippet34>
-
-            //<snippet36>
-            // Declaration only:
-            float temperature;
-            string name;
-            MyClass myClass;
-
-            // Declaration with initializers (four examples):
-            char firstLetter = 'C';
-            var limit = 3;
-            int[] source = { 0, 1, 2, 3, 4, 5 };
-            var query = from item in source
-                        where item <= limit
-                        select item;
-            //</snippet36>
-
-            //<snippet37>
-            string s = "The answer is " + 5.ToString();
-            // Outputs: "The answer is 5"
-            Console.WriteLine(s);
-
-            Type type = 12345.GetType();
-            // Outputs: "System.Int32"
-            Console.WriteLine(type);
-            //</snippet37>
         }
     }
 
@@ -717,26 +677,6 @@ namespace CsProgGuideTypes
     }
     //</snippet41>
 
-    class TypesIntro
-    {
-        static void Main()
-        {
-
-            int i = (int)System.IO.FileMode.Create;
-            /*
-            //<snippet42>
-            int a = 5;
-            int b = a + 2; //OK
-
-            bool test = true;
-
-            // Error. Operator '+' cannot be applied to operands of type 'int' and 'bool'.
-            int c = a + test;
-            //</snippet42>
-            */
-        }
-    }
-
     //<snippet43>
     class ValueTypeDemo
     {
@@ -779,32 +719,6 @@ namespace CsProgGuideTypes
         After calling PassByReference, num = 5
     */
     //</snippet43>
-
-    //<snippet44>
-    public enum FileMode
-    {
-        CreateNew = 1,
-        Create = 2,
-        Open = 3,
-        OpenOrCreate = 4,
-        Truncate = 5,
-        Append = 6,
-    }
-    //</snippet44>
-
-    class Arrays
-    {
-        static void Main()
-        {
-            //<snippet45>
-            // Declare and initialize an array of integers.
-            int[] nums = { 1, 2, 3, 4, 5 };
-
-            // Access an instance property of System.Array.
-            int len = nums.Length;
-            //</snippet45>
-        }
-    }
 
     //<Snippet46>
     class Base { }

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorRuntimeHost::GetDefaultDomain Method
+
 Gets an interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType> that represents the default domain for the current process.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetDefaultDomain (
 ```  
   
 ## Parameters  
+
  `pAppDomain`  
  [out] An interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType> to the <xref:System.AppDomain> instance that represents the default application domain for the process.  
   
@@ -43,6 +45,7 @@ HRESULT GetDefaultDomain (
 |HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

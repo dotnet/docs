@@ -31,6 +31,7 @@ Implements ICorDebugEnum methods, and enumerates arrays of objects by their rela
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

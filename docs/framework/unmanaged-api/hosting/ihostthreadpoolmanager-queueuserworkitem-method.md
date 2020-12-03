@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostThreadPoolManager::QueueUserWorkItem Method
+
 Queues a function for execution, and specifies an object containing data to be used by that function. The function executes when a thread becomes available.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT QueueUserWorkItem (
 ```  
   
 ## Parameters  
+
  `Function`  
  [in] A function pointer that represents the function to execute.  
   
@@ -51,9 +53,11 @@ HRESULT QueueUserWorkItem (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  `QueueUserWorkItem` queues a work item to a worker thread in the thread pool. Its signature and parameter types are identical to those of the corresponding Win32 function, which has the same name. For more information, see the Windows Platform documentation.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

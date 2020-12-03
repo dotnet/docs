@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedScope::GetNamespaces Method
+
 Gets the namespaces that are being used within this scope.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetNamespaces(
 ```  
   
 ## Parameters  
+
  `cNameSpaces`  
  [in] The size of the `namespaces` array.  
   
@@ -41,9 +43,11 @@ HRESULT GetNamespaces(
  [out] The array that receives the namespaces.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter::Initialize Method
+
 Sets the metadata emitter interface with which this writer will be associated, and sets the output file name to which the debugging symbols will be written.  
   
  This method can be called only once, and it must be called before any other writer methods. Some writers may require a file name. However, you can always pass a file name to this method without any negative effect on writers that do not use the file name.  
@@ -32,6 +33,7 @@ HRESULT Initialize(
 ```  
   
 ## Parameters  
+
  `emitter`  
  [in] A pointer to the metadata emitter interface.  
   
@@ -45,9 +47,11 @@ HRESULT Initialize(
  [in] `true` if this is a full rebuild; `false` if this is an incremental compilation.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

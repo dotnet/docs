@@ -25,6 +25,7 @@ There are two types of memory-mapped files:
      Non-persisted files are memory-mapped files that are not associated with a file on a disk. When the last process has finished working with the file, the data is lost and the file is reclaimed by garbage collection. These files are suitable for creating shared memory for inter-process communications (IPC).  
   
 ## Processes, Views, and Managing Memory  
+
  Memory-mapped files can be shared across multiple processes. Processes can map to the same memory-mapped file by using a common name that is assigned by the process that created the file.  
   
  To work with a memory-mapped file, you must create a view of the entire memory-mapped file or a part of it. You can also create multiple views to the same part of the memory-mapped file, thereby creating concurrent memory. For two views to remain concurrent, they have to be created from the same memory-mapped file.  
@@ -42,6 +43,7 @@ There are two types of memory-mapped files:
  ![Screenshot that shows views to a memory&#45;mapped file.](./media/memory-mapped-files/memory-map-persist-file.png)  
   
 ## Programming with Memory-Mapped Files  
+
  The following table provides a guide for using memory-mapped file objects and their members.  
   
 |Task|Methods or properties to use|  
@@ -55,6 +57,7 @@ There are two types of memory-mapped files:
 |To delay allocating memory until a view is created (non-persisted files only).<br /><br /> (To determine the current system page size, use the <xref:System.Environment.SystemPageSize%2A?displayProperty=nameWithType> property.)|<xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> method with the <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions.DelayAllocatePages?displayProperty=nameWithType> value.<br /><br /> - or -<br /><br /> <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen%2A> methods that have a <xref:System.IO.MemoryMappedFiles.MemoryMappedFileOptions> enumeration as a parameter.|  
   
 ### Security  
+
  You can apply access rights when you create a memory-mapped file, by using the following methods that take a <xref:System.IO.MemoryMappedFiles.MemoryMappedFileAccess> enumeration as a parameter:  
   
 - <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A?displayProperty=nameWithType>  
@@ -72,6 +75,7 @@ There are two types of memory-mapped files:
 ## Examples  
   
 ### Persisted Memory-Mapped Files  
+
  The <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile%2A> methods create a memory-mapped file from an existing file on disk.  
   
  The following example creates a memory-mapped view of a part of an extremely large file and manipulates a portion of it.  
@@ -87,6 +91,7 @@ There are two types of memory-mapped files:
  [!code-vb[MemoryMappedFiles.MemoryMappedFile.OpenExisting#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/memorymappedfiles.memorymappedfile.openexisting/vb/program.vb#1)]  
   
 ### Non-Persisted Memory-Mapped Files  
+
  The <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew%2A> and <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen%2A> methods create a memory-mapped file that is not mapped to an existing file on disk.  
   
  The following example consists of three separate processes (console applications) that write Boolean values to a memory-mapped file. The following sequence of actions occur:  

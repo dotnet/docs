@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # CloseCLREnumeration Function
+
 Closes any valid common language runtime (CLR) continue-startup events located in an array of handles returned by the [EnumerateCLRs function](enumerateclrs-function.md), and frees the memory for the handle and string path arrays.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT CloseCLREnumeration (
 ```  
   
 ## Parameters  
+
  `pHandleArray`  
  [in] Pointer to the array of event handles returned from the [EnumerateCLRs function](enumerateclrs-function.md).  
   
@@ -41,6 +43,7 @@ HRESULT CloseCLREnumeration (
  [in] DWORD that contains the size (length) of either `pHandleArray` or `pStringArray` (they are the same).  
   
 ## Return Value  
+
  S_OK  
  Handles opened by the [EnumerateCLRs function](enumerateclrs-function.md) are closed, and memory allocated for the handle and string arrays is freed.  
   
@@ -51,6 +54,7 @@ HRESULT CloseCLREnumeration (
  The function is unable to free the memory for `pHandleArray` and `pStringArray`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  

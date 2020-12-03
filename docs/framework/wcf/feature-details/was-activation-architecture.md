@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 58aeffb0-8f3f-4b40-80c8-15f3f1652fd3
 ---
 # WAS Activation Architecture
+
 This topic itemizes and discusses the components of the Windows Process Activation Service (also known as WAS).  
   
 ## Activation Components  
+
  WAS consists of several architectural components:  
   
 - Listener adapters. Windows services that receive messages on specific network protocols and communicate with WAS to route incoming messages to the correct worker process.  
@@ -24,6 +26,7 @@ This topic itemizes and discusses the components of the Windows Process Activati
  ![Screenshot that shows the WAS architecture.](./media/was-activation-architecture/windows-process-application-service-architecture.gif)  
   
 ### Listener Adapters  
+
  Listener adapters are individual Windows services that implement the network communication logic used to receive messages using the network protocol on which they listen. The following table lists the listener adapters for Windows Communication Foundation (WCF) protocols.  
   
 |Listener adapter service name|Protocol|Notes|  
@@ -53,6 +56,7 @@ This topic itemizes and discusses the components of the Windows Process Activati
 ```  
   
 ### Protocol Handlers  
+
  Process and AppDomain protocol handlers for specific protocols are registered in the machine-level Web.config file.  
   
 ```xml  

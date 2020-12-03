@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b5e994c3-3535-4aff-8e1b-b69be22e9a22
 ---
 # International Resource Identifier Support in System.Uri
+
 The <xref:System.Uri?displayProperty=nameWithType> class has been extended with International Resource Identifier (IRI) and Internationalized Domain Names (IDN) support. These enhancements are available in .NET Framework 3.5, 3.0 SP1, and 2.0 SP1.  
   
 ## IRI and IDN Support  
+
  Web addresses are typically expressed using Uniform Resource Identifiers (URI) that consist of a very restricted set of characters:  
   
 - Upper and lower case ASCII letters from the English alphabet.  

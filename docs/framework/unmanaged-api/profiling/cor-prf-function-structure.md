@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_PRF_FUNCTION Structure
+
 Provides a unique representation of a function by combining its ID with the ID of its recompiled version.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ typedef struct _COR_PRF_FUNCTION {    FunctionID functionId;    ReJITID    reJit
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

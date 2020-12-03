@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineSecurityAttributeSet Method
+
 Creates a set of security permissions to attach to the object referenced by the specified token.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT DefineSecurityAttributeSet (
 ```  
   
 ## Parameters  
+
  `tkObj`  
  [in] The token to which the security information is attached.  
   
@@ -44,6 +46,7 @@ HRESULT DefineSecurityAttributeSet (
  [out] If the method fails, specifies the index in `rSecAttrs` of the element that caused the problem.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

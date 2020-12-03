@@ -126,7 +126,7 @@ namespace StreamingFromServer {
          Console.WriteLine("Done");
       }
 
-      // Application retrieving a large BLOB from SQL Server in .NET 4.5 using the new asynchronous capability
+      // Application retrieving a large BLOB from SQL Server in .NET Framework 4.5 using the new asynchronous capability
       private static async Task CopyBinaryValueToFile() {
          string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "binarydata.bin");
 
@@ -154,7 +154,7 @@ namespace StreamingFromServer {
          }
       }
 
-      // Application transferring a large Text File from SQL Server in .NET 4.5
+      // Application transferring a large Text File from SQL Server in .NET Framework 4.5
       private static async Task PrintTextValues() {
          using (SqlConnection connection = new SqlConnection(connectionString)) {
             await connection.OpenAsync();
@@ -189,7 +189,7 @@ namespace StreamingFromServer {
          }
       }
 
-      // Application transferring a large Xml Document from SQL Server in .NET 4.5
+      // Application transferring a large Xml Document from SQL Server in .NET Framework 4.5
       private static async Task PrintXmlValues() {
          using (SqlConnection connection = new SqlConnection(connectionString)) {
             await connection.OpenAsync();
@@ -232,7 +232,7 @@ namespace StreamingFromServer {
          }
       }
 
-      // Application transferring a large Xml Document from SQL Server in .NET 4.5
+      // Application transferring a large Xml Document from SQL Server in .NET Framework 4.5
       // This goes via NVarChar and TextReader to enable asynchronous reading
       private static async Task PrintXmlValuesViaNVarChar() {
          XmlReaderSettings xmlSettings = new XmlReaderSettings() {
@@ -389,7 +389,7 @@ namespace StreamingToServer {
          }
       }
 
-      // Application transferring a large BLOB to SQL Server in .NET 4.5
+      // Application transferring a large BLOB to SQL Server in .NET Framework 4.5
       private static async Task StreamBLOBToServer() {
          using (SqlConnection conn = new SqlConnection(connectionString)) {
             await conn.OpenAsync();
@@ -407,7 +407,7 @@ namespace StreamingToServer {
          }
       }
 
-      // Application transferring a large Text File to SQL Server in .NET 4.5
+      // Application transferring a large Text File to SQL Server in .NET Framework 4.5
       private static async Task StreamTextToServer() {
          using (SqlConnection conn = new SqlConnection(connectionString)) {
             await conn.OpenAsync();

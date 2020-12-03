@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 10d202bc-19e1-4b5c-bbf1-9a977322a9ca
 ---
 # Order Preservation in PLINQ
+
 In PLINQ, the goal is to maximize performance while maintaining correctness. A query should run as fast as possible but still produce the correct results. In some cases, correctness requires the order of the source sequence to be preserved; however, ordering can be computationally expensive. Therefore, by default, PLINQ does not preserve the order of the source sequence. In this regard, PLINQ resembles [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)], but is unlike LINQ to Objects, which does preserve ordering.  
   
  To override the default behavior, you can turn on order-preservation by using the <xref:System.Linq.ParallelEnumerable.AsOrdered%2A> operator on the source sequence. You can then turn off order preservation later in the query by using the <xref:System.Linq.ParallelEnumerable.AsUnordered%2A> method. With both methods, the query is processed based on the heuristics that determine whether to execute the query as parallel or as sequential. For more information, see [Understanding Speedup in PLINQ](understanding-speedup-in-plinq.md).  
@@ -33,6 +34,7 @@ In PLINQ, the goal is to maximize performance while maintaining correctness. A q
  Note that PLINQ preserves the ordering of a sequence produced by order-imposing operators for the rest of the query. In other words, operators such as <xref:System.Linq.ParallelEnumerable.OrderBy%2A> and <xref:System.Linq.ParallelEnumerable.ThenBy%2A> are treated as if they were followed by a call to <xref:System.Linq.ParallelEnumerable.AsOrdered%2A>.  
   
 ## Query Operators and Ordering  
+
  The following query operators introduce order preservation into all subsequent operations in a query, or until <xref:System.Linq.ParallelEnumerable.AsUnordered%2A> is called:  
   
 - <xref:System.Linq.ParallelEnumerable.OrderBy%2A>  

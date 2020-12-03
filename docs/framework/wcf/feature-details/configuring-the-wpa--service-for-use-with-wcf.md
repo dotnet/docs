@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1d50712e-53cd-4773-b8bc-a1e1aad66b78
 ---
 # Configuring the Windows Process Activation Service for Use with Windows Communication Foundation
+
 This topic describes the steps required to set up Windows Process Activation Service (also known as WAS) in Windows Vista to host Windows Communication Foundation (WCF) services that do not communicate over HTTP network protocols. The following sections outline the steps for this configuration:  
   
 - Install (or confirm the installation of) the WCF activation components required.  
@@ -15,6 +16,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
 - Build a WCF service that exposes a non-HTTP endpoint.  
   
 ## Configuring a Site with Non-HTTP bindings  
+
  To use a non-HTTP binding with WAS, the site binding must be added to the WAS configuration. The configuration store for WAS is the applicationHost.config file, located in the %windir%\system32\inetsrv\config directory. This configuration store is shared by both WAS and IIS 7.0.  
   
  applicationHost.config is an XML text file that can be opened with any standard text editor (such as Notepad). However, the IIS 7.0 command-line configuration tool (appcmd.exe) is the preferred way to add non-HTTP site bindings.  
@@ -40,6 +42,7 @@ appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInf
 ```  
   
 ## Enabling an Application to Use Non-HTTP Protocols  
+
  You can enable or disable individual network protocolsat the application level. The following command illustrates how to enable both the HTTP and net.tcp protocols for an application that runs in the `Default Web Site`.  
   
 ```console  
@@ -86,6 +89,7 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
  If you see this error ensure WAS for Non-HTTP Activation is installed and configured properly. For more information, see [How to: Install and Configure WCF Activation Components](how-to-install-and-configure-wcf-activation-components.md).  
   
 ## Building a WCF Service That Uses WAS for Non-HTTP activation  
+
  Once you perform the steps to install and configure WAS (see [How to: Install and Configure WCF Activation Components](how-to-install-and-configure-wcf-activation-components.md)), configuring a service to use WAS for activation is similar to configuring a service that is hosted in IIS.  
   
  For detailed instructions about building a WAS-activated WCF service, see [How to: Host a WCF Service in WAS](how-to-host-a-wcf-service-in-was.md).  

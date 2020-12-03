@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: bfe18481-c3ae-4305-a666-2ee63eac3dff
 ---
 # System.ServiceModel.Channels.MsmqUnexpectedAcknowledgment
+
 System.ServiceModel.Channels.MsmqUnexpectedAcknowledgment  
   
 ## Description  
+
  Unexpected acknowledgment value.  
   
 ## See also

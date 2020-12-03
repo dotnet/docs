@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
 ---
 # Resolving External XSLT Style Sheets and Documents
+
 There are several times during a transformation when you may need to resolve external resources.  
   
 > [!NOTE]
@@ -18,6 +19,7 @@ There are several times during a transformation when you may need to resolve ext
 - During <xref:System.Xml.Xsl.XslTransform.Transform%2A> to resolve any `document()` functions.  
   
 ## Using the XmlResolver Class  
+
  If authentication is required to access a network resource, use the <xref:System.Xml.Xsl.XslTransform.Load%2A> methods that have an <xref:System.Xml.XmlResolver> parameter to pass the <xref:System.Xml.XmlResolver> object, which has the necessary credential properties set.  
   
  If you have a custom <xref:System.Xml.XmlResolver> that you want to use, or if you need to specify different credentials, the following table lists the task required, depending on when the external resource needs resolution.  

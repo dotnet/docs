@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 7e8cc303-6e77-4116-aa8b-7ea297a3a467
 ---
 # Authenticode (Unmanaged API Reference)
+
 Supports the Authenticode XrML license creation and verification module.  
   
 ## In This Section  
+
  [_AxlGetIssuerPublicKeyHash Function](axlgetissuerpublickeyhash-function.md)  
  Retrieves the SHA-1 hash of the public key associated with the private key that is used to sign the specified certificate.  
   

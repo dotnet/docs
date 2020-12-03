@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b64e15c2-cb2c-4314-9074-ce2c6717232e
 ---
 # 1103 - WorkflowActivitySuspend
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: b64e15c2-cb2c-4314-9074-ce2c6717232e
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a workflow activity has been suspended.  
   
 ## Message  
+
  WorkflowInstance Id: '%1' E2E Activity  
   
 ## Details  

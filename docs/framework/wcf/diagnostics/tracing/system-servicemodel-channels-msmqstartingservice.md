@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 7248afaf-5ad9-4d7a-ba07-781a60a0ef9b
 ---
 # System.ServiceModel.Channels.MsmqStartingService
+
 System.ServiceModel.Channels.MsmqStartingService  
   
 ## Description  
+
  The hosting environment started the service.  
   
 ## See also

@@ -31,6 +31,7 @@ Represents an assembly. This interface is an extension of the ICorDebugAssembly 
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

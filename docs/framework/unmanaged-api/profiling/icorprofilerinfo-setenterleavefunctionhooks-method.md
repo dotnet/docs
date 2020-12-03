@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::SetEnterLeaveFunctionHooks Method
+
 Specifies profiler-implemented functions to be called on "enter", "leave", and "tailcall" hooks of managed functions.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SetEnterLeaveFunctionHooks(
 ```  
   
 ## Parameters  
+
  `pFuncEnter`  
  [in] A pointer to the implementation to be used as the [FunctionEnter](functionenter-function.md) callback.  
   
@@ -39,6 +41,7 @@ HRESULT SetEnterLeaveFunctionHooks(
  [in] A pointer to the implementation to be used as the [FunctionTailcall](functiontailcall-function.md) callback.  
   
 ## Remarks  
+
  In the .NET Framework version 1.0, each function pointer can be null to disable that corresponding callback.  
   
  Only one set of callbacks can be active at a time. Thus, if a profiler calls both `SetEnterLeaveFunctionHooks` and [ICorProfilerInfo2::SetEnterLeaveFunctionHooks2](icorprofilerinfo2-setenterleavefunctionhooks2-method.md), then `SetEnterLeaveFunctionHooks2` takes precedence.  
@@ -46,6 +49,7 @@ HRESULT SetEnterLeaveFunctionHooks(
  The `SetEnterLeaveFunctionHooks` method can be called only from the profiler's [ICorProfilerCallback::Initialize](icorprofilercallback-initialize-method.md) callback.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

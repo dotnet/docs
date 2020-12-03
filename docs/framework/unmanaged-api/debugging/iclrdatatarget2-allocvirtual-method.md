@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRDataTarget2::AllocVirtual Method
+
 Called by the common language runtime (CLR) data access services to allocate memory in the address space of this target process.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT AllocVirtual(
 ```  
   
 ## Parameters  
+
  `addr`  
  [in] A `CLRDATA_ADDRESS` value that specifies the requested starting address of the memory to be allocated.  
   
@@ -48,11 +50,13 @@ HRESULT AllocVirtual(
  [out] A pointer to a `CLRDATA_ADDRESS` value that specifies the actual starting address of the allocated memory.  
   
 ## Remarks  
+
  The `AllocVirtual` method serves as a logical wrapper for the Win32 `VirtualAlloc` function.  
   
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  

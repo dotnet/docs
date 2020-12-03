@@ -101,7 +101,7 @@ val it : bool = true
 
 The pipe-forward operator, and more, are covered in later tutorials.
 
-This is only a glimpse into what you can do with F# Interactive.  To learn more, check out [Interactive Programming with F#](../tutorials/fsharp-interactive/index.md).
+This is only a glimpse into what you can do with F# Interactive.  To learn more, check out [Interactive Programming with F#](../tools/fsharp-interactive/index.md).
 
 ## Next steps
 

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: eda4355d-0bd0-4dc9-80a2-d2c832152272
 ---
 # WCF Services and Event Tracing for Windows
+
 This sample demonstrates how to use the analytic tracing in Windows Communication Foundation (WCF) to emit events in Event Tracing for Windows (ETW). The analytic traces are events emitted at key points in the WCF stack that allow troubleshooting of WCF services in production environment.
 
  Analytic trace in WCF services is tracing that can be turned on in a production environment with minimal impact on performance. These traces are emitted as events to an ETW session.

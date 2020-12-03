@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: e78e845f-c325-46e2-927d-81616f97f7d5
 ---
 # NetNamedPipeBinding
+
 This sample demonstrates the `netNamedPipeBinding` binding, which provides cross-process communication on the same machine. Named pipes do not work across machines. This sample is based on The [Getting Started](getting-started-sample.md) calculator service.  
   
  In this sample, the service is self-hosted. Both the client and the service are console applications.  

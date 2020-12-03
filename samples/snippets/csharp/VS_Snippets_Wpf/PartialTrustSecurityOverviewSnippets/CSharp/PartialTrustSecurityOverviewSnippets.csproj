@@ -15,7 +15,6 @@
     <StartProgram>$(WINDIR)\System32\PresentationHost.exe</StartProgram>
     <ApplicationExtension>.xbap</ApplicationExtension>
     <StartArguments>-debug "$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName)$(ApplicationExtension)"</StartArguments>
-    <SignManifests>True</SignManifests>
     <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
     <HostInBrowser>true</HostInBrowser>
     <InstallFrom>Web</InstallFrom>
@@ -24,8 +23,6 @@
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>Publish\</PublishUrl>
-    <ManifestKeyFile>PartialTrustSecurityOverviewSnippets_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>95F4763A5755EE0225BEFD7428421E5F0A2D23D9</ManifestCertificateThumbprint>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <ProductVersion>10.0.20821</ProductVersion>
@@ -72,7 +69,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="PartialTrustSecurityOverviewSnippets_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />
     <AppDesigner Include="Properties\" />
   </ItemGroup>

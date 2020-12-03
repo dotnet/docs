@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 16aaa80d-3ffe-47c4-8b16-ec65c4d25f8d
 ---
 # Custom Binding Reliable Session over HTTPS
+
 This sample demonstrates the use of SSL transport security with Reliable Sessions. Reliable Sessions implements the WS-Reliable Messaging protocol. You can have a secure reliable session by composing WS-Security over Reliable Sessions. But sometimes, you may choose to instead use HTTP transport security with SSL.  
   
 > [!IMPORTANT]
@@ -16,6 +17,7 @@ This sample demonstrates the use of SSL transport security with Reliable Session
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Custom\ReliableSessionOverHttps`  
   
 ## Sample Details  
+
  SSL ensures that the packets themselves are secured. It is important to note that this is different from securing the reliable session using WS-Secure Conversation.  
   
  To use reliable session over HTTPS, you must create a custom binding. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service. A custom binding is created using the reliable session binding element and the [\<httpsTransport>](../../configure-apps/file-schema/wcf/httpstransport.md). The following configuration is of the custom binding.  

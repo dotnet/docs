@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugController::IsRunning Method
+
 Gets a value that indicates whether the threads in the process are currently running freely.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT IsRunning (
 ```  
   
 ## Parameters  
+
  `pbRunning`  
  [out] A pointer to a value that is `true` if the threads in the process are running freely; otherwise, `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

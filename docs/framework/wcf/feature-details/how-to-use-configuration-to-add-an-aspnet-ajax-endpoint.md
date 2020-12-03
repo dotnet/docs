@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7cd0099e-dc3a-47e4-a38c-6e10f997f6ea
 ---
 # How to: Use Configuration to Add an ASP.NET AJAX Endpoint
+
 Windows Communication Foundation (WCF) allows you to create a service that makes an ASP.NET AJAX-enabled endpoint available that can be called from JavaScript on a client Web site. To create such an endpoint, you can either use a configuration file, as with all other Windows Communication Foundation (WCF) endpoints, or use a method that does not require any configuration elements. This topic demonstrates the configuration approach.  
   
  The part of the procedure that enables the service endpoint to become ASP.NET AJAX-enabled consists of configuring the endpoint to use the <xref:System.ServiceModel.WebHttpBinding> and to add the [\<enableWebScript>](../../configure-apps/file-schema/wcf/enablewebscript.md) endpoint behavior. After configuring the endpoint, the steps to implement and host the service are similar to those used by any WCF service. For a working example, see the [AJAX Service Using HTTP POST](../samples/ajax-service-using-http-post.md).  

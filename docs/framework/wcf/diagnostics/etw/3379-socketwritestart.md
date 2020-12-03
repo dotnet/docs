@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 26523526-258b-4721-b681-ef1a19f33fa1
 ---
 # 3379 - SocketWriteStart
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 26523526-258b-4721-b681-ef1a19f33fa1
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted with the SocketWrite start.  
   
 ## Message  
+
  SocketId:%1 writing '%2' bytes to '%3'.  
   
 ## Details

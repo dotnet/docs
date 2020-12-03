@@ -6,11 +6,13 @@ helpviewer_keywords:
 ms.assetid: 1328c61c-06e5-455f-9ebd-ceefb59d3867
 ---
 # Extending Clients
+
 In a calling application, the service model layer is responsible for translating method invocations in application code into outbound messages, pushing them to the underlying channels, translating results back into return values and out parameters in application code, and returning the results back to the caller. Service model extensions modify or implement execution or communication behavior and features involving client or dispatcher functionality, custom behaviors, message and parameter interception, and other extensibility functionality.  
   
  This topic describes how to use the <xref:System.ServiceModel.Dispatcher.ClientRuntime> and <xref:System.ServiceModel.Dispatcher.ClientOperation> classes in a Windows Communication Foundation (WCF) client application to modify the default execution behavior of a WCF client or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about extending the service runtime, see [Extending Dispatchers](extending-dispatchers.md). For more information about the behaviors that modify and insert customization objects into the client runtime, see [Configuring and Extending the Runtime with Behaviors](configuring-and-extending-the-runtime-with-behaviors.md).  
   
 ## Clients  
+
  On a client, a WCF client object or client channel converts method invocations into outgoing messages and incoming messages to operation results that are returned to the calling application. (For more information about client types, see [WCF Client Architecture](../feature-details/client-architecture.md).)  
   
  WCF client types have runtime types that handle this endpoint- and operation-level functionality. When an application calls an operation, the <xref:System.ServiceModel.Dispatcher.ClientOperation> translates the outbound objects into a message, processes interceptors, confirms that the outbound call conforms to the target contract, and hands the outbound message to the <xref:System.ServiceModel.Dispatcher.ClientRuntime>, which is responsible for creating and managing outbound channels (and inbound channels in the case of duplex services), handling extra outbound message processing (such as header modification), processing message interceptors in both directions, and routing inbound duplex calls to the appropriate client-side <xref:System.ServiceModel.Dispatcher.DispatchRuntime> object. Both the <xref:System.ServiceModel.Dispatcher.ClientOperation> and <xref:System.ServiceModel.Dispatcher.ClientRuntime> provide similar services when messages (including faults) are returned to the client.  
@@ -20,6 +22,7 @@ In a calling application, the service model layer is responsible for translating
  Modifying the properties or inserting customizations are done by using contract, endpoint, and operation behaviors. For more information about how to use these types of behaviors to perform client runtime customizations, see [Configuring and Extending the Runtime with Behaviors](configuring-and-extending-the-runtime-with-behaviors.md).  
   
 ## Scenarios  
+
  There a number of reasons to extend the client system, including:  
   
 - Custom Message Validation. A user may want to enforce that a message is valid for a certain schema. This can be done by implementing the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> interface and assigning the implementation to the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors%2A> property. For examples, see [How to: Inspect or Modify Messages on the Client](how-to-inspect-or-modify-messages-on-the-client.md) and [How to: Inspect or Modify Messages on the Client](how-to-inspect-or-modify-messages-on-the-client.md).  
@@ -33,6 +36,7 @@ In a calling application, the service model layer is responsible for translating
 - Custom Parameter Validation. A user may want to enforce that typed parameters are valid (as opposed to XML). This can be done using the parameter inspector interfaces. For an example, see [How to: Inspect or Modify Parameters](how-to-inspect-or-modify-parameters.md) or [Client Validation](../samples/client-validation.md).  
   
 ### Using the ClientRuntime Class  
+
  The <xref:System.ServiceModel.Dispatcher.ClientRuntime> class is an extensibility point to which you can add extension objects that intercept messages and extend client behavior. Interception objects can process all messages in a particular contract, process only messages for particular operations, perform custom channel initialization, and implement other custom client application behavior.  
   
 - The <xref:System.ServiceModel.Dispatcher.ClientRuntime.CallbackDispatchRuntime%2A> property returns the dispatch run-time object for service-initiated callback clients.  
@@ -70,6 +74,7 @@ In a calling application, the service model layer is responsible for translating
  For examples that demonstrate interception across a WCF client, see [How to: Inspect or Modify Messages on the Client](how-to-inspect-or-modify-messages-on-the-client.md).  
   
 ### Using the ClientOperation Class  
+
  The <xref:System.ServiceModel.Dispatcher.ClientOperation> class is the location for client run-time modifications and insertion point for custom extensions that are scoped to only one service operation. (To modify client run-time behavior for all messages in a contract, use the <xref:System.ServiceModel.Dispatcher.ClientRuntime> class.)  
   
  Use the <xref:System.ServiceModel.Dispatcher.ClientRuntime.Operations%2A> property to locate the <xref:System.ServiceModel.Dispatcher.ClientOperation> object that represents a particular service operation. The following properties enable you to insert custom objects into the WCF client system:  

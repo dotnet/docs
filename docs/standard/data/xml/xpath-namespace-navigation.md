@@ -4,11 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: 06cc7abb-7416-415c-9dd6-67751b8cabd5
 ---
 # XPath Namespace Navigation
+
 To use XPath queries with XML documents, you have to correctly address XML namespaces and the elements contained by namespaces. Namespaces prevent ambiguities that can occur when names are used in more than one context; for example, the name `ID` may refer to more than one identifier associated with different elements of an XML document. Namespace syntax specifies URIs, names, and prefixes that distinguish the elements of an XML document.  
   
  The example in this topic demonstrates the use of prefixes in navigating an XML document with <xref:System.Xml.XPath.XPathNavigator>. For more information about namespaces and syntax, see [XML Files: Understanding XML Namespaces](/previous-versions/dotnet/articles/bb986013(v=msdn.10)).  
   
 ## Namespace Declarations  
+
  Namespace declarations make the elements of an XML document distinguishable and addressable when using an instance of <xref:System.Xml.XPath.XPathNavigator>. Namespace prefixes provide a brief syntax for addressing namespaces.  
   
  Prefixes are defined by the form: `<e:Envelope xmlns:e=http://schemas.xmlsoap.org/soap/envelope/>.` In this syntax the prefix "`e`" is an abbreviation for the formal URI of the namespace. You can identify the `Body` element as a member of the `Envelope` namespace by using the syntax: `e:Body`.  
@@ -29,6 +31,7 @@ To use XPath queries with XML documents, you have to correctly address XML names
 ```  
   
 ## Navigation by Namespace Prefix  
+
  The code in this section uses <xref:System.Xml.XPath.XPathNavigator> and <xref:System.Xml.XmlNamespaceManager> objects to select the `Search` element from the XML document in the previous section. The query `xpath` includes namespace prefixes on each element in the path. Specifying the precise identity of the namespaces that contain each element assures correct navigation to the `Search` element by the <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A> method.  
   
 ```csharp  

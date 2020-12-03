@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ExceptionSearchFilterLeave Method
+
 Notifies the profiler that a user filter has just finished executing.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT ExceptionSearchFilterLeave();
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

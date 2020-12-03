@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEval::NewString Method
+
 Allocates a new string instance with the specified contents.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT NewString (
 ```  
   
 ## Parameters  
+
  `string`  
  [in] Pointer to the contents for the string.  
   
 ## Remarks  
+
  The string is always created in the application domain in which the thread is currently executing.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

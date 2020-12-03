@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: aef4e781-240b-45bc-bff8-400053037e71
 ---
 # 220 - MessageSentToTransport
+
 ## Properties  
   
 |||  
@@ -14,12 +15,14 @@ ms.assetid: aef4e781-240b-45bc-bff8-400053037e71
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when the Service Model sends a message to the transport.  
   
 > [!NOTE]
 > This event will not be emitted for one-way transports.  
   
 ## Message  
+
  The Dispatcher sent a message to the transport. Correlation ID == '%1'.  
   
 ## Details  

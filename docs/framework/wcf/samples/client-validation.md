@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f0c1f805-1a81-4d0d-a112-bf5e2e87a631
 ---
 # Client Validation
+
 Services frequently publish metadata to enable automatic generation and configuration of client proxy types. When the service is not trusted, client applications should validate that the metadata conforms to the client application's policy regarding security, transactions, the type of service contract and so on. The following sample demonstrates how to write a client endpoint behavior that validates the service endpoint to ensure that service endpoint is safe to use.  
   
  The service exposes four service endpoints. The first endpoint uses the WSDualHttpBinding, the second endpoint uses NTLM authentication, the third endpoint enables transaction flow, and the fourth endpoint uses certificate-based authentication.  

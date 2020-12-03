@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # SYMLINEDELTA Structure
+
 Provides information to the symbol handler about methods that were moved as a result of edits.  
   
 ## Syntax  
@@ -36,6 +37,7 @@ typedef struct _SYMLINEDELTA
 |`delta`|The number of lines the method was moved.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl  
   
 ## See also

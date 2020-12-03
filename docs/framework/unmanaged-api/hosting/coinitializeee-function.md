@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # CoInitializeEE Function
+
 Ensures that the common language runtime execution engine is loaded into a process. This function is deprecated in the .NET Framework 4. Use the [ICLRRuntimeHost::Start](iclrruntimehost-start-method.md) method instead.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT CoInitializeEE (
 ```  
   
 ## Parameters  
+
  `fFlags`  
  [in] One of the [COINITIEE](../metadata/coinitiee-enumeration.md) enumeration constants.  
   
 ## Return Value  
+
  This method returns standard COM error codes as defined in Winerror.h, and the values in the following table.  
   
 |Return code|Description|  
@@ -41,9 +44,11 @@ HRESULT CoInitializeEE (
 |E_FAIL|The execution engine could not be loaded.|  
   
 ## Remarks  
+
  This method loads the execution engine if it has not been previously loaded.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

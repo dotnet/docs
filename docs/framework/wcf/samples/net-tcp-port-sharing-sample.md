@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 03da5959-0574-4e91-8a53-05854b6c55dc
 ---
 # Net.TCP Port Sharing Sample
+
 The TCP/IP protocol uses a 16-bit number, called a port, to differentiate connections to multiple network applications running on the same machine. If an application is listening on a port, then all TCP traffic for that port goes to that application. Other applications cannot listen on that port at the same time.  
   
 > [!IMPORTANT]
@@ -28,6 +29,7 @@ Unhandled Exception: System.ServiceModel.CommunicationException: The TransportMa
  Port sharing is enabled on the server by setting the <xref:System.ServiceModel.NetTcpBinding.PortSharingEnabled%2A> property of the <xref:System.ServiceModel.NetTcpBinding> binding or the <xref:System.ServiceModel.Channels.TcpTransportBindingElement> binding element. The client does not have to know how port sharing has been configured to use it on the server.  
   
 ## Enabling Port Sharing  
+
  The following code demonstrates enabling port sharing on the server. It starts an instance of the `ICalculator` service on a fixed port with a random URI path. Even though two services can share the same port, their overall endpoint addresses still must be unique so that the NetTcp Port Sharing Service can route messages to the correct application.  
 
 ```csharp
@@ -50,6 +52,7 @@ Unhandled Exception: System.ServiceModel.AddressAlreadyInUseException: There is 
 ```  
   
 ## Running the Sample  
+
  You can use the test client to check that messages are correctly routed to services sharing the port.  
 
 ```csharp

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetHandleFromThread Method
+
 Maps the ID of a thread to a Win32 thread handle.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetHandleFromThread(
 ```  
   
 ## Parameters  
+
  `threadId`  
  [in] The thread ID to be mapped.  
   
@@ -35,9 +37,11 @@ HRESULT GetHandleFromThread(
  [out] A pointer to a Win32 thread handle.  
   
 ## Remarks  
+
  The profiler must call the Win32 `DuplicateHandle` function on the handle before using it.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

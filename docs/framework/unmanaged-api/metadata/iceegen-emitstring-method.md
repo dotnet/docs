@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICeeGen::EmitString Method
+
 Emits the specified string into the code base.  
   
  This method is obsolete and should not be used.  
@@ -31,6 +32,7 @@ HRESULT EmitString (
 ```  
   
 ## Parameters  
+
  `lpString`  
  [in] The string to emit.  
   
@@ -38,6 +40,7 @@ HRESULT EmitString (
  [out] The relative virtual address of the emitted string.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTask::Reset Method
+
 Informs the common language runtime (CLR) that the host has completed a task, and enables the CLR to reuse the current [ICLRTask](iclrtask-interface.md) instance to represent another task.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT Reset (
 ```  
   
 ## Parameters  
+
  `fFull`  
  [in] `true`, if the runtime should reset all thread-related static values in addition to the security and locale information related to the current `ICLRTask` instance; otherwise, `false`.  
   
@@ -45,6 +47,7 @@ HRESULT Reset (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The CLR can recycle previously created `ICLRTask` instances to avoid the overhead of repeatedly creating new instances every time it needs a fresh task. The host enables this feature by calling `ICLRTask::Reset` instead of [ICLRTask::ExitTask](iclrtask-exittask-method.md) when it has completed a task. The following list summarizes the normal life cycle of an `ICLRTask` instance:  
   
 1. The runtime creates a new `ICLRTask` instance.  
@@ -62,6 +65,7 @@ HRESULT Reset (
  This approach works well when the host also has a pool of reusable worker tasks. When the host destroys one of its `IHostTask` instances, it destroys the corresponding `ICLRTask` by calling `ExitTask`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bc3410f6-ebca-4bca-9b45-fc38c74fa9cb
 ---
 # ICorDebugMergedAssemblyRecord::GetSimpleName Method
+
 Gets the simple name of the assembly.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT GetSimpleName(
 ```  
   
 ## Parameters  
+
  `cchName`  
  [in] The number of characters in the `szName` buffer.  
   
@@ -27,12 +29,14 @@ HRESULT GetSimpleName(
  A pointer to a character array.  
   
 ## Remarks  
+
  This method retrieves the simple name of an assembly (such as "System.Collections"), without a file extension, version, culture, or public key token. It corresponds to the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property in managed code.  
   
 > [!NOTE]
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

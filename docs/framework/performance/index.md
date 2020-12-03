@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: c1676cca-3f1a-41ec-b469-9029566074fc
 ---
 # .NET Framework Performance
+
 If you want to create apps with great performance, you should design and plan for performance just as you would design any other feature of your app. You can use the tools provided by Microsoft to measure your app's performance, and, if needed, make improvements to memory use, code throughput, and responsiveness. This topic lists the performance analysis tools that Microsoft provides, and provides links to other topics that cover performance for specific areas of app development.  
   
 ## Designing and planning for performance  
+
  If you want a great performing app, you must design performance into your app just as you would design any other feature. You should determine the performance-critical scenarios in your app, set performance goals, and measure performance for these app scenarios early and often. Because each app is different and has different performance-critical execution paths, determining those paths early and focusing your efforts enable you to maximize your productivity.  
   
  You don’t have to be completely familiar with your target platform to create a high-performance app. However, you should develop an understanding of which parts of your target platform are costly in terms of performance. You can do this by measuring performance early in your development process.  
@@ -18,9 +20,11 @@ If you want to create apps with great performance, you should design and plan fo
  To determine the areas that are crucial to performance and to establish your performance goals, always consider the user experience. Startup time and responsiveness are two key areas that will affect the user’s perception of your app. If your app uses a lot of memory, it may appear sluggish to the user or affect other apps running on the system, or, in some cases, it could fail the Windows Store or Windows Phone Store submission process. Also, if you determine which parts of your code execute more frequently, you can make sure that these portions of your code are well optimized.  
   
 ## Analyzing performance  
+
  As part of your overall development plan, set points during development where you will measure the performance of your app and compare the results with the goals you set previously. Measure your app in the environment and hardware that you expect your users to have. By analyzing your app’s performance early and often you can change architectural decisions that would be costly and expensive to fix later in the development cycle. The following sections describe performance tools you can use to analyze your apps and discuss event tracing, which is used by these tools.  
   
 ### Performance tools  
+
  Here are some of the performance tools you can use with your .NET Framework apps.  
   
 |Tool|Description|  
@@ -31,9 +35,11 @@ If you want to create apps with great performance, you should design and plan fo
 |[Windows Performance Analyzer](https://www.microsoft.com/p/windows-performance-analyzer/9n0w1b2bxgnz?activetab=pivot:overviewtab)|Use to determine overall system performance such as your app's memory and storage use when multiple apps are running on the same computer. This tool is available from the download center as part of the Windows Assessment and Deployment Kit (ADK) for Windows 8. For more information, see [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer).|
   
 ### Event tracing for Windows (ETW)  
+
  ETW is a technique that lets you obtain diagnostic information about running code and is essential for many of the performance tools mentioned previously. ETW creates logs when particular events are raised by .NET Framework apps and Windows. With ETW, you can enable and disable logging dynamically, so that you can perform detailed tracing in a production environment without restarting your app. The .NET Framework offers support for ETW events, and ETW is used by many profiling and performance tools to generate performance data. These tools often enable and disable ETW events, so familiarity with them is helpful. You can use specific ETW events to collect performance information about particular components of your app. For more information about ETW support in the .NET Framework, see [ETW Events in the Common Language Runtime](etw-events-in-the-common-language-runtime.md) and [ETW Events in Task Parallel Library and PLINQ](etw-events-in-task-parallel-library-and-plinq.md).  
   
 ## Performance by app type  
+
  Each type of .NET Framework app has its own best practices, considerations, and tools for evaluating performance. The following table links to performance topics for specific .NET Framework app types.  
   
 |App type|See|  

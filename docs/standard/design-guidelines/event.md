@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 67b3c6e2-6a8f-480d-a78f-ebeeaca1b95a
 ---
 # Event Design
+
 Events are the most commonly used form of callbacks (constructs that allow the framework to call into user code). Other callback mechanisms include members taking delegates, virtual members, and interface-based plug-ins. Data from usability studies indicate that the majority of developers are more comfortable using events than they are using the other callback mechanisms. Events are nicely integrated with Visual Studio and many languages.
 
  It is important to note that there are two groups of events: events raised before a state of the system changes, called pre-events, and events raised after a state changes, called post-events. An example of a pre-event would be `Form.Closing`, which is raised before a form is closed. An example of a post-event would be `Form.Closed`, which is raised after a form is closed.
@@ -46,6 +47,7 @@ Events are the most commonly used form of callbacks (constructs that allow the f
  Use <xref:System.ComponentModel.CancelEventArgs?displayProperty=nameWithType> or its subclass as the event argument to allow the end user to cancel events.
 
 ### Custom Event Handler Design
+
  There are cases in which `EventHandler<T>` cannot be used, such as when the framework needs to work with earlier versions of the CLR, which did not support Generics. In such cases, you might need to design and develop a custom event handler delegate.
 
  ✔️ DO use a return type of void for event handlers.

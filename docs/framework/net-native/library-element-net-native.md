@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f642276b-33fb-4a81-b882-8808c31ba69e
 ---
 # \<Library> Element (.NET Native)
+
 Defines the assembly that contains types and type members whose metadata is available for reflection at run time.  
   
  \<Directives> Element  
@@ -16,6 +17,7 @@ Defines the assembly that contains types and type members whose metadata is avai
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -46,6 +48,7 @@ Defines the assembly that contains types and type members whose metadata is avai
 |[\<Directives>](directives-element-net-native.md)|The root element of a runtime directives file.|  
   
 ## Remarks  
+
  The [\<Directives>](directives-element-net-native.md) element can contain zero, one, or more `<Library>` elements.  
   
  The `<Library>` element serves as a container to define the program elements whose metadata is needed at run time; this element doesn't express policy. At compile time, compiler tools search only the library designated by the `<Library>` element for program elements identified by its child elements. In contrast, compiler tools search all libraries, including.NET Framework core libraries, for program elements identified by child elements of the [\<Application>](application-element-net-native.md) element.  

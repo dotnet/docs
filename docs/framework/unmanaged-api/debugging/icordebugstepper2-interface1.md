@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStepper2 Interface
+
 Provides support for just my code (JMC) debugging.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Provides support for just my code (JMC) debugging.
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

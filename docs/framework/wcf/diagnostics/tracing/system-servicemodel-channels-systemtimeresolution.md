@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: eaab4ce9-b16a-4fe8-9271-3a1ab1dfa93a
 ---
 # System.ServiceModel.Channels.SystemTimeResolution
+
 System.ServiceModel.Channels.SystemTimeResolution  
   
 ## Description  
+
  The operating system's timer resolution was detected as *n* ticks, which is approximately *m* milliseconds. Where *n* and *m* are numeric values.  
   
 ## See also

@@ -24,6 +24,7 @@ helpviewer_keywords:
 ms.assetid: 1b1b5e67-3ff3-40c0-8154-322cfd6ef0ae
 ---
 # Introduction to Windows Service Applications
+
 Microsoft Windows services, formerly known as NT services, enable you to create long-running executable applications that run in their own Windows sessions. These services can be automatically started when the computer boots, can be paused and restarted, and do not show any user interface. These features make services ideal for use on a server or whenever you need long-running functionality that does not interfere with other users who are working on the same computer. You can also run services in the security context of a specific user account that is different from the logged-on user or the default computer account. For more information about services and Windows sessions, see the Windows SDK documentation.  
   
  You can easily create services by creating an application that is installed as a service. For example, suppose you want to monitor performance counter data and react to threshold values. You could write a Windows Service application that listens to the performance counter data, deploy the application, and begin collecting and analyzing data.  
@@ -33,6 +34,7 @@ Microsoft Windows services, formerly known as NT services, enable you to create 
  After you create and build the application, you can install it by running the command-line utility InstallUtil.exe and passing the path to the service's executable file. You can then use the **Services Control Manager** to start, stop, pause, resume, and configure your service. You can also accomplish many of these same tasks in the **Services** node in **Server Explorer** or by using the <xref:System.ServiceProcess.ServiceController> class.  
   
 ## Service Applications vs. Other Visual Studio Applications  
+
  Service applications function differently from many other project types in several ways:  
   
 - The compiled executable file that a service application project creates must be installed on the server before the project can function in a meaningful way. You cannot debug or run a service application by pressing F5 or F11; you cannot immediately run a service or step into its code. Instead, you must install and start your service, and then attach a debugger to the service's process. For more information, see [How to: Debug Windows Service Applications](how-to-debug-windows-service-applications.md).  
@@ -50,6 +52,7 @@ Microsoft Windows services, formerly known as NT services, enable you to create 
 - Windows service applications run in their own security context and are started before the user logs into the Windows computer on which they are installed. You should plan carefully what user account to run the service within; a service running under the system account has more permissions and privileges than a user account.  
   
 ## Service Lifetime  
+
  A service goes through several internal states in its lifetime. First, the service is installed onto the system on which it will run. This process executes the installers for the service project and loads the service into the **Services Control Manager** for that computer. The **Services Control Manager** is the central utility provided by Windows to administer services.  
   
  After the service has been loaded, it must be started. Starting the service allows it to begin functioning. You can start a service from the **Services Control Manager**, from **Server Explorer**, or from code by calling the <xref:System.ServiceProcess.ServiceController.Start%2A> method. The <xref:System.ServiceProcess.ServiceController.Start%2A> method passes processing to the application's <xref:System.ServiceProcess.ServiceBase.OnStart%2A> method and processes any code you have defined there.  
@@ -59,11 +62,13 @@ Microsoft Windows services, formerly known as NT services, enable you to create 
  You can pause, stop, or resume a service from the **Services Control Manager**, from **Server Explorer**, or by calling methods in code. Each of these actions can call an associated procedure in the service (<xref:System.ServiceProcess.ServiceBase.OnStop%2A>, <xref:System.ServiceProcess.ServiceBase.OnPause%2A>, or <xref:System.ServiceProcess.ServiceBase.OnContinue%2A>), in which you can define additional processing to be performed when the service changes state.  
   
 ## Types of Services  
+
  There are two types of services you can create in Visual Studio using the .NET Framework. Services that are the only service in a process are assigned the type <xref:System.ServiceProcess.ServiceType.Win32OwnProcess>. Services that share a process with another service are assigned the type <xref:System.ServiceProcess.ServiceType.Win32ShareProcess>. You can retrieve the service type by querying the <xref:System.ServiceProcess.ServiceController.ServiceType%2A> property.  
   
  You might occasionally see other service types if you query existing services that were not created in Visual Studio. For more information on these, see the <xref:System.ServiceProcess.ServiceType>.  
   
 ## Services and the ServiceController Component  
+
  The <xref:System.ServiceProcess.ServiceController> component is used to connect to an installed service and manipulate its state; using a <xref:System.ServiceProcess.ServiceController> component, you can start and stop a service, pause and continue its functioning, and send custom commands to a service. However, you do not need to use a <xref:System.ServiceProcess.ServiceController> component when you create a service application. In fact, in most cases your <xref:System.ServiceProcess.ServiceController> component should exist in a separate application from the Windows service application that defines your service.  
   
  For more information, see <xref:System.ServiceProcess.ServiceController>.  

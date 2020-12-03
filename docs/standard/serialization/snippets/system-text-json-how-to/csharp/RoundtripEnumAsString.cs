@@ -9,7 +9,8 @@ namespace SystemTextJsonSamples
         public static void Run()
         {
             string jsonString;
-            WeatherForecastWithEnum weatherForecast = WeatherForecastFactories.CreateWeatherForecastWithEnum();
+            WeatherForecastWithEnum weatherForecast =
+                WeatherForecastFactories.CreateWeatherForecastWithEnum();
             weatherForecast.DisplayPropertyValues();
 
             var options = new JsonSerializerOptions
@@ -19,19 +20,29 @@ namespace SystemTextJsonSamples
             jsonString = JsonSerializer.Serialize(weatherForecast, options);
             Console.WriteLine($"JSON with enum as number:\n{jsonString}\n");
 
-            // <SnippetSerialize>
-            options = new JsonSerializerOptions();
-            options.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
-            options.WriteIndented = true;
+            // <Serialize>
+            options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Converters =
+                {
+                    new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)
+                }
+            };
             jsonString = JsonSerializer.Serialize(weatherForecast, options);
-            // </SnippetSerialize>
+            // </Serialize>
             Console.WriteLine($"JSON with enum as string:\n{jsonString}\n");
 
-            // <SnippetDeserialize>
-            options = new JsonSerializerOptions();
-            options.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
+            // <Deserialize>
+            options = new JsonSerializerOptions
+            {
+                Converters =
+                {
+                    new JsonStringEnumConverter(JsonNamingPolicy.CamelCase)
+                }
+            };
             weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithEnum>(jsonString, options);
-            // </SnippetDeserialize>
+            // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }
     }

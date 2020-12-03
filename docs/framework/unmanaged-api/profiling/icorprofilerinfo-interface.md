@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo Interface
+
 Provides methods for use by code profilers to communicate with the common language runtime (CLR) to control event monitoring and request information.  
   
 > [!NOTE]
@@ -60,6 +61,7 @@ Provides methods for use by code profilers to communicate with the common langua
 |[SetILInstrumentedCodeMap Method](icorprofilerinfo-setilinstrumentedcodemap-method.md)|Specifies how the offsets of a specified function's original MSIL map to the new offsets of the function's profiler-modified MSIL.|  
   
 ## Remarks  
+
  A profiler calls a method in the `ICorProfilerInfo` interface to communicate with the CLR to control event monitoring and request information.  
   
  The methods of the `ICorProfilerInfo` interface are implemented by the CLR using the free-threaded model. Each method returns an HRESULT to indicate success or failure. See CorError.h for a list of possible return codes.  
@@ -67,6 +69,7 @@ Provides methods for use by code profilers to communicate with the common langua
  The CLR passes, via the profiler's implementation of [ICorProfilerCallback::Initialize](icorprofilercallback-initialize-method.md), an `ICorProfilerInfo` interface to each code profiler during initialization. A code profiler can then call methods of the `ICorProfilerInfo` interface to get information about managed code being executed under the control of the CLR.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

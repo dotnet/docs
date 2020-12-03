@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: a6c27cbf-30c0-4f8b-ad21-0e4e25e5fc7a
 ---
 # System.ServiceModel.Security.SecuritySessionAbortedFaultReceived
+
 System.ServiceModel.Security.SecuritySessionAbortedFaultReceived  
   
 ## Description  
+
  Client security session received a session aborted fault from the server.  
   
 ## See also

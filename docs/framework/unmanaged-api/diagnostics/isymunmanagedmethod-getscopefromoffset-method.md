@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedMethod::GetScopeFromOffset Method
+
 Gets the most enclosing lexical scope within this method that encloses the given offset. This can be used to start local variable searches.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetScopeFromOffset(
 ```  
   
 ## Parameters  
+
  `offset`  
  [in] A `ULONG` that contains the offset.  
   
@@ -35,9 +37,11 @@ HRESULT GetScopeFromOffset(
  [out] A pointer that is set to the returned [ISymUnmanagedScope](isymunmanagedscope-interface.md) interface.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

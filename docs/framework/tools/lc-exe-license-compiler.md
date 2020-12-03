@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 2de803b8-495e-4982-b209-19a72aba0460
 ---
 # Lc.exe (License Compiler)
+
 The License Compiler reads text files that contain licensing information and produces a binary file that can be embedded in a common language runtime executable as a resource.  
   
  A .licx text file is automatically generated or updated by the Windows Forms Designer whenever a licensed control is added to the form. As part of compilation, the project system will transform the .licx text file into a .licenses binary resource that provides support for .NET control licensing. The binary resource will then be embedded in the project output.  
@@ -72,6 +73,7 @@ lc /target:myApp /complist:hostapplic.txt /complist:hostapplic2.txt /complist: h
 ```  
   
 ## Response File Example  
+
  The following listing shows an example of a response file, `response.rsp`. For more information on response files, see [Response Files](/visualstudio/msbuild/msbuild-response-files).  
   
 ```text  

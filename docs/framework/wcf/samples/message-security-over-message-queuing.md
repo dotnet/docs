@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 329aea9c-fa80-45c0-b2b9-e37fd7b85b38
 ---
 # Message Security over Message Queuing
+
 This sample demonstrates how to implement an application that uses WS-Security with X.509v3 certificate authentication for the client and requires server authentication using the server's X.509v3 certificate over MSMQ. Message security is sometimes more desirable to ensure that the messages in the MSMQ store stay encrypted and the application can perform its own authentication of the message.
 
  This sample is based on the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample. The messages are encrypted and signed.
@@ -77,9 +78,11 @@ This sample demonstrates how to implement an application that uses WS-Security w
     > This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.
 
 ## Requirements
+
  This sample requires that MSMQ is installed and running.
 
 ## Demonstrates
+
  The client encrypts the message using the public key of the service and signs the message using its own certificate. The service reading the message from the queue authenticates the client certificate with the certificate in its trusted people store. It then decrypts the message and dispatches the message to the service operation.
 
  Because the Windows Communication Foundation (WCF) message is carried as a payload in the body of the MSMQ message, the body remains encrypted in the MSMQ store. This secures the message from unwanted disclosure of the message. Note that MSMQ itself is not aware whether the message it is carrying is encrypted.
@@ -87,6 +90,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
  The sample demonstrates how mutual authentication at the message level can be used with MSMQ. The certificates are exchanged out-of-band. This is always the case with queued application because the service and the client do not have to be up and running at the same time.
 
 ## Description
+
  The sample client and service code are the same as the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample with one difference. The operation contract is annotated with protection level, which suggests that the message must be signed and encrypted.
 
 ```csharp

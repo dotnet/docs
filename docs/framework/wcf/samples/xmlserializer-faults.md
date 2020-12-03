@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c6b80f14-64f4-4162-ae76-71664cf42fd3
 ---
 # XmlSerializer Faults
+
 The <xref:System.Xml.Serialization.XmlSerializer> fault contract sample demonstrates how to communicate error information from a service to a client using the <xref:System.Xml.Serialization.XmlSerializer>. The sample is based on the [Getting Started](getting-started-sample.md), with some additional code added to the service to convert an internal exception to a fault. The client attempts to perform division by zero to force an error condition on the service.  
   
 > [!NOTE]

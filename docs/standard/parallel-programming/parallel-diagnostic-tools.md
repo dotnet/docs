@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 38f7302a-ddf6-4179-ba19-f49e00395b9f
 ---
 # Parallel Diagnostic Tools
+
 Visual Studio provides extensive support for debugging and profiling multi-threaded applications.  
   
 ## Debugging  
+
  The Visual Studio debugger adds new windows for debugging parallel applications. For more information, see the following topics:  
   
 - [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window)  
@@ -18,6 +20,7 @@ Visual Studio provides extensive support for debugging and profiling multi-threa
 - [Walkthrough: Debugging a Parallel Application](/visualstudio/debugger/walkthrough-debugging-a-parallel-application).  
   
 ## Profiling  
+
  The Concurrency Visualizer report views enable you to visualize how the threads in a parallel program interact with each other and with threads from other processes on the system. For more information, see [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer).  
   
 ## See also

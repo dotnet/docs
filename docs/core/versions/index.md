@@ -108,4 +108,4 @@ For an interactive table of the .NET Standard versions, and how they correspond 
 - [.NET Core distribution packaging](../distribution-packaging.md)
 - [.NET Core Support Lifecycle Fact Sheet](https://dotnet.microsoft.com/platform/support/policy)
 - [.NET Core 2+ Version Binding](https://github.com/dotnet/designs/issues/3)
-- [Docker images for .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/)
+- [Docker images for .NET Core](https://hub.docker.com/_/microsoft-dotnet/)

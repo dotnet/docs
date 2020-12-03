@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRHostBindingPolicyManager Interface
+
 Provides methods for the host to evaluate current binding policy and communicate policy changes for a specified assembly.  
   
 ## Methods  
@@ -26,6 +27,7 @@ Provides methods for the host to evaluate current binding policy and communicate
 |[ModifyApplicationPolicy Method](iclrhostbindingpolicymanager-modifyapplicationpolicy-method.md)|Modifies the binding policy for the specified assembly, and creates a new version of the policy.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

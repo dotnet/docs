@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess::GetObject Method
+
 This method has not been implemented.  
   
 ## Syntax  

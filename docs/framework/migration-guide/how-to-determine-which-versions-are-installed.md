@@ -24,7 +24,7 @@ Community-maintained tools are available to help detect which .NET Framework ver
 
 - [https://github.com/jmalarcon/DotNetVersions](https://github.com/jmalarcon/DotNetVersions)
 
-  A .NET 2.0 command-line tool.
+  A .NET Framework 2.0 command-line tool.
 
 - [https://github.com/EliteLoser/DotNetVersionLister](https://github.com/EliteLoser/DotNetVersionLister)
 
@@ -92,7 +92,7 @@ Use PowerShell commands to check the value of the **Release** entry of the **HKE
 The following examples check the value of the **Release** entry to determine whether .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
 
 ```powershell
-(Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -ge 394802
+(Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -ge 394802
 ```
 
 ### Query the registry using code

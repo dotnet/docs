@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: c9175af4-c27c-4765-bf45-b8f7528a7282
 ---
 # How to: Enable the Net.TCP Port Sharing Service
+
 Windows Communication Foundation (WCF) uses a Windows service called the Net.TCP Port Sharing Service to facilitate the sharing of TCP ports across multiple processes. This service is installed as part of WCF, but the service is not enabled by default as a security precaution and so must be manually enabled prior to first use. This topic describes how to configure the Net TCP Port Sharing Service using the Microsoft Management Console (MMC) snap-In.  
   
  After you enable the Net.TCP Port Sharing Service and start it manually, see [How to: Configure a WCF Service to Use Port Sharing](how-to-configure-a-wcf-service-to-use-port-sharing.md) for information about how to configure your service to use this service.  

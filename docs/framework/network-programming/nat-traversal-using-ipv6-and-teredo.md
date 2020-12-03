@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 568cd245-3300-49ef-a995-d81bf845d961
 ---
 # NAT Traversal using IPv6 and Teredo
+
 Enhancements were made that provide support for Network Address Translation (NAT) traversal. These changes are designed for use with IPv6 and Teredo, but they are also applicable to other IP tunneling technologies. These enhancements affect classes in the <xref:System.Net> and related namespaces.  
   
  These changes can affect client and server applications that plan to use IP tunneling technologies.  
@@ -11,6 +12,7 @@ Enhancements were made that provide support for Network Address Translation (NAT
  The changes to support NAT traversal are available only for applications using .NET Framework version 4. These features are not available on earlier versions of the .NET Framework.  
   
 ## Overview  
+
  The Internet Protocol version 4 (IPv4) defined an IPv4 address as 32 bits long. As a result, IPv4 supports approximately 4 billion unique IP addresses (2^32). As the number of computers and network devices on the Internet expanded in the 1990s, the limits of the IPv4 address space became apparent.  
   
  One of several techniques used to extend the lifetime of IPv4 has been to deploy NAT to allow a single unique public IP address to represent a large number of private IP addresses (private Intranet). The private IP addresses behind the NAT device share the single public IPv4 address. The NAT device may be a dedicated hardware device (an inexpensive Wireless Access Point and router, for example) or a computer running a service to provide NAT. A device or service for this public IP address translates IP network packets between the public Internet and the private Intranet.  
@@ -24,6 +26,7 @@ Enhancements were made that provide support for Network Address Translation (NAT
  Teredo is one of the IPv6 transition technologies which brings IPv6 connectivity to IPv4 networks. Teredo is documented in RFC 4380 published by the Internet Engineering Task Force (IETF). Windows XP SP2 and later provide support for a virtual Teredo adapter which can provide a public IPv6 address in the range 2001:0::/32. This IPv6 address can be used to listen for incoming connections from the Internet and can be provided to IPv6 enabled clients that wish to connect to the listening service. This frees an application from worrying about how to address a computer behind a NAT device, since the application can just connect to it using its IPv6 Teredo address.  
   
 ## Enhancements to Support NAT Traversal and Teredo  
+
  Enhancements are added to the <xref:System.Net>, <xref:System.Net.NetworkInformation>, and <xref:System.Net.Sockets> namespaces for supporting NAT traversal using IPv6 and Teredo.  
   
  Several methods are added to the <xref:System.Net.NetworkInformation.IPGlobalProperties?displayProperty=nameWithType> class to get the list of unicast IP addresses on the host. The <xref:System.Net.NetworkInformation.IPGlobalProperties.BeginGetUnicastAddresses%2A> method begins an asynchronous request to retrieve the stable unicast IP address table on the local computer. The <xref:System.Net.NetworkInformation.IPGlobalProperties.EndGetUnicastAddresses%2A> method ends a pending asynchronous request to retrieve the stable unicast IP address table on the local computer. The <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUnicastAddresses%2A> method is a synchronous request to retrieve the stable unicast IP address table on the local computer, waiting until the address table stabilizes if necessary.  

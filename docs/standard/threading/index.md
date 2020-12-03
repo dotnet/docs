@@ -15,6 +15,7 @@ Whether you're developing for computers with one processor or several, you want 
 > Starting with .NET Framework 4, multithreaded programming is greatly simplified with the <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> classes, [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md), concurrent collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace, and a programming model that is based on the concept of tasks rather than threads. For more information, see [Parallel Programming](../parallel-programming/index.md).  
   
 ## In This Section  
+
  [Managed Threading Basics](managed-threading-basics.md)  
  Provides an overview of managed threading and discusses when to use multiple threads.  
   
@@ -28,6 +29,7 @@ Whether you're developing for computers with one processor or several, you want 
  Describes the managed classes you can use to synchronize the activities of threads and the data of objects accessed on different threads, and provides an overview of thread pool threads.  
   
 ## Reference  
+
  <xref:System.Threading>  
  Contains classes for using and synchronizing managed threads.  
   
@@ -38,6 +40,7 @@ Whether you're developing for computers with one processor or several, you want 
  Contains classes for creating and scheduling concurrent processing tasks.  
   
 ## Related Sections  
+
  [Application Domains](../../framework/app-domains/application-domains.md)  
  Provides an overview of application domains and their use by the Common Language Infrastructure.  
   

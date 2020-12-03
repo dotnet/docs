@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
 ---
 # Setting Up a Profiling Environment
+
 > [!NOTE]
 > There have been substantial changes to profiling in the .NET Framework 4.  
   
@@ -35,6 +36,7 @@ ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
 > To use .NET Framework versions 2.0, 3.0, and 3.5 profilers in the .NET Framework 4 and later versions, you must set the COMPLUS_ProfAPI_ProfilerCompatibilitySetting environment variable.  
   
 ## Environment Variable Scope  
+
  How you set the COR_ENABLE_PROFILING and COR_PROFILER environment variables will determine their scope of influence. You can set these variables in one of the following ways:  
   
 - If you set the variables in an [ICorDebug::CreateProcess](../debugging/icordebug-createprocess-method.md) call, they will apply only to the application that you are running at the time. (They will also apply to other applications started by that application that inherit the environment.)  
@@ -56,6 +58,7 @@ ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
 - Because the profiler is a COM object that is instantiated in-process, each profiled application will have its own copy of the profiler. Therefore, a single profiler instance does not have to handle data from multiple applications. However, you will have to add logic to the profiler's logging code to prevent log file overwrites from other profiled applications.  
   
 ## Initializing the Profiler  
+
  When both environment variable checks pass, the CLR creates an instance of the profiler in a similar manner to the COM `CoCreateInstance` function. The profiler is not loaded through a direct call to `CoCreateInstance`. Therefore, a call to `CoInitialize`, which requires setting the threading model, is avoided. The CLR then calls the [ICorProfilerCallback::Initialize](icorprofilercallback-initialize-method.md) method in the profiler. The signature of this method is as follows.  
   
 ```cpp  
@@ -65,6 +68,7 @@ HRESULT Initialize(IUnknown *pICorProfilerInfoUnk)
  The profiler must query `pICorProfilerInfoUnk` for an [ICorProfilerInfo](icorprofilerinfo-interface.md) or [ICorProfilerInfo2](icorprofilerinfo2-interface.md) interface pointer and save it so that it can request more information later during profiling.  
   
 ## Setting Event Notifications  
+
  The profiler then calls the [ICorProfilerInfo::SetEventMask](icorprofilerinfo-seteventmask-method.md) method to specify which categories of notifications it is interested in. For example, if the profiler is interested only in function enter and leave notifications and garbage collection notifications, it specifies the following.  
   
 ```cpp  
@@ -78,7 +82,9 @@ pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)
  Certain profiler events are immutable. This means that as soon as these events are set in the `ICorProfilerCallback::Initialize` callback, they cannot be turned off and new events cannot be turned on. Attempts to change an immutable event will result in `ICorProfilerInfo::SetEventMask` returning a failed HRESULT.  
   
 <a name="windows_service"></a>
+
 ## Profiling a Windows Service  
+
  Profiling a Windows Service is like profiling a common language runtime application. Both profiling operations are enabled through environment variables. Because a Windows Service is started when the operating system starts, the environment variables discussed previously in this topic must already be present and set to the required values before the system starts. In addition, the profiling DLL must already be registered on the system.  
   
  After you set the COR_ENABLE_PROFILING and COR_PROFILER environment variables and register the profiler DLL, you should restart the target computer so that the Windows Service can detect those changes.  

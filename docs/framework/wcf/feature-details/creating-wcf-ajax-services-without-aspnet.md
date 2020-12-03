@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ba4a7d1b-e277-4978-9f62-37684e6dc934
 ---
 # Creating WCF AJAX Services without ASP.NET
+
 Windows Communication Foundation (WCF) AJAX services can be accessed from any JavaScript-enabled Web page, without requiring ASP.NET AJAX. This topic describes how to create such a WCF service.  
   
  For instructions on using WCF with ASP.NET AJAX, see [Creating WCF Services for ASP.NET AJAX](creating-wcf-services-for-aspnet-ajax.md).  
@@ -17,6 +18,7 @@ Windows Communication Foundation (WCF) AJAX services can be accessed from any Ja
 - Accessing WCF AJAX services.  
   
 ## Creating an AJAX Endpoint  
+
  The most basic way to enable AJAX support in a WCF service is to use the <xref:System.ServiceModel.Activation.WebServiceHostFactory> in the .svc file associated with the service, as in the following example.  
   
 ```text
@@ -56,6 +58,7 @@ Windows Communication Foundation (WCF) AJAX services can be accessed from any Ja
  For a working example, see the [AJAX Service with JSON and XML](../samples/ajax-service-with-json-and-xml-sample.md).  
   
 ## Creating an AJAX-Compatible Service Contract  
+
  By default, service contracts exposed over an AJAX endpoint return data in the XML format. Also, by default service operations are accessible through HTTP POST requests to URLs that include the endpoint address followed by the operation name, as shown in the following example.  
   
 ```csharp
@@ -96,6 +99,7 @@ string[] GetCities(string firstLetters, int maxNumber);
 ```  
   
 ## Accessing AJAX Services  
+
  WCF AJAX endpoints always accept both JSON and XML requests.  
   
  HTTP POST requests with a content-type of "application/json" are treated as JSON, and those with content-type that indicate XML (for example, "text/xml") are treated as XML.  

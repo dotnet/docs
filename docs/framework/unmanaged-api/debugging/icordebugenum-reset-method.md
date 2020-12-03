@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEnum::Reset Method
+
 Moves the cursor to the beginning of the enumeration.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT Reset ();
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

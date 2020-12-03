@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 7e7303a9-4064-4738-b4e7-b75974ed70d2
 ---
 # Viewing Type Information
+
 The <xref:System.Type?displayProperty=nameWithType> class is central to reflection. The common language runtime creates the **Type** for a loaded type when reflection requests it. You can use a **Type** object's methods, fields, properties, and nested classes to find out everything about that type.  
   
  Use <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> to obtain **Type** objects from assemblies that have not been loaded, passing in the name of the type or types you want. Use <xref:System.Type.GetType%2A?displayProperty=nameWithType> to get the **Type** objects from an assembly that is already loaded. Use <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType> and <xref:System.Reflection.Module.GetTypes%2A?displayProperty=nameWithType> to obtain module **Type** objects.  
@@ -40,6 +41,7 @@ The <xref:System.Type?displayProperty=nameWithType> class is central to reflecti
  If you have a **Type**, you can use the <xref:System.Type.Module%2A?displayProperty=nameWithType> property to obtain an object that encapsulates the module containing that type. Use the <xref:System.Reflection.Module.Assembly%2A?displayProperty=nameWithType> property to locate an object that encapsulates the assembly containing the module. You can obtain the assembly that encapsulates the type directly by using the <xref:System.Type.Assembly%2A?displayProperty=nameWithType> property.  
   
 ## System.Type and ConstructorInfo  
+
  The following example shows how to list the constructors for a class, in this case, the <xref:System.String> class.  
   
  [!code-cpp[Conceptual.Types.ViewInfo#1](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.types.viewinfo/cpp/source1.cpp#1)]
@@ -47,6 +49,7 @@ The <xref:System.Type?displayProperty=nameWithType> class is central to reflecti
  [!code-vb[Conceptual.Types.ViewInfo#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.viewinfo/vb/source1.vb#1)]  
   
 ## MemberInfo, MethodInfo, FieldInfo, and PropertyInfo  
+
  Obtain information about the type's methods, properties, events, and fields using <xref:System.Reflection.MemberInfo>, <xref:System.Reflection.MethodInfo>, <xref:System.Reflection.FieldInfo>, or <xref:System.Reflection.PropertyInfo> objects.  
   
  The following example uses **MemberInfo** to list the number of members in the **System.IO.File** class and uses the <xref:System.Type.IsPublic%2A> property to determine the visibility of the class.  

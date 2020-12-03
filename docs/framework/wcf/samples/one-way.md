@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
 ---
 # One-Way
+
 This sample demonstrates a service contact with one-way service operations. The client does not wait for service operations to complete as is the case with two-way service operations. This sample is based on the [Getting Started](getting-started-sample.md) and uses the `wsHttpBinding` binding. The service in this sample is a self-hosted console application to enable you to observe the service that receives and processes requests. The client is also a console application.  
   
 > [!NOTE]

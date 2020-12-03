@@ -14,7 +14,7 @@ Module Module1
         Console.WriteLine("{0} even numbers out of {1} total",
                           evenNums.Count(), source.Count())
         ' The example displays the following output:
-        '       5000 even numbers out of 10000 total      
+        '       5000 even numbers out of 10000 total
         ' </snippet1>
 
     End Sub
@@ -71,7 +71,7 @@ Module Module1
         'Order Preservation In PLINQ 1st snippet
         '<snippet8>
         Dim cityQuery = From city In cities.AsParallel()
-                        Where City.Population > 10000
+                        Where city.Population > 10000
                         Take (1000)
         '</snippet8>
 
@@ -79,7 +79,7 @@ Module Module1
         'Order Preservation In PLINQ 2nd snippet
         '<snippet9>
         Dim orderedCities = From city In cities.AsParallel().AsOrdered()
-                            Where City.Population > 10000
+                            Where city.Population > 10000
                             Take (1000)
         '</snippet9>
 
@@ -101,8 +101,8 @@ Module Module1
 
         '<snippet7>
         Dim orderedCities3 = From city In cities.AsParallel()
-                             Where City.Population > 10000
-                             Order By City.Name
+                             Where city.Population > 10000
+                             Order By city.Name
                              Take (1000)
         '</snippet7>
 
@@ -156,8 +156,6 @@ Module Module1
 
     '<snippet23>
     Class MergeOptions2
-
-
         Sub DoMergeOptions()
 
             Dim nums = Enumerable.Range(1, 10000)
@@ -168,7 +166,7 @@ Module Module1
                             Where n Mod 2 = 0
                             Select ExpensiveFunc(n)
 
-            Dim sw = System.Diagnostics.Stopwatch.StartNew()
+            Dim sw = Stopwatch.StartNew()
             For Each line In scanLines
                 Console.WriteLine(line)
             Next
@@ -180,7 +178,7 @@ Module Module1
         ' A function that demonstrates what a fly
         ' sees when it watches television :-)
         Function ExpensiveFunc(ByVal i As Integer) As String
-            System.Threading.Thread.SpinWait(2000000)
+            Threading.Thread.SpinWait(2000000)
             Return String.Format("{0} *****************************************", i)
         End Function
     End Class

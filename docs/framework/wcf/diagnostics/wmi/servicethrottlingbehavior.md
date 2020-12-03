@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 37b9e517-1f1f-4ec4-9fcb-2b8016794f5b
 ---
 # ServiceThrottlingBehavior
+
 ServiceThrottlingBehavior  
   
 ## Syntax  
@@ -18,12 +19,15 @@ class ServiceThrottlingBehavior : Behavior
 ```  
   
 ## Methods  
+
  The ServiceThrottlingBehavior class does not define any methods.  
   
 ## Properties  
+
  The ServiceThrottlingBehavior class has the following properties:  
   
 ### MaxConcurrentCalls  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -31,6 +35,7 @@ class ServiceThrottlingBehavior : Behavior
  The maximum number of messages actively processing across all dispatcher objects in a ServiceHost.  
   
 ### MaxConcurrentInstances  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -38,6 +43,7 @@ class ServiceThrottlingBehavior : Behavior
  The maximum number of service objects that can execute at one time.  
   
 ### MaxConcurrentSessions  
+
  Data type: sint32  
   
  Access type: Read-only  

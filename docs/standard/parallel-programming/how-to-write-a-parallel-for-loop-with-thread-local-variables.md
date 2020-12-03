@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 68384064-7ee7-41e2-90e3-71f00bde01bb
 ---
 # How to: Write a Parallel.For Loop with Thread-Local Variables
+
 This example shows how to use thread-local variables to store and retrieve state in each separate task that is created by a <xref:System.Threading.Tasks.Parallel.For%2A> loop. By using thread-local data, you can avoid the overhead of synchronizing a large number of accesses to shared state. Instead of writing to a shared resource on each iteration, you compute and store the value until all iterations for the task are complete. You can then write the final result once to the shared resource, or pass it to another method.  
   
 ## Example  
+
  The following example calls the <xref:System.Threading.Tasks.Parallel.For%60%601%28System.Int32%2CSystem.Int32%2CSystem.Func%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Threading.Tasks.ParallelLoopState%2C%60%600%2C%60%600%7D%2CSystem.Action%7B%60%600%7D%29> method to calculate the sum of the values in an array that contains one million elements. The value of each element is equal to its index.  
   
  [!code-csharp[TPL_Parallel#05](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/forandforeach_simple.cs#05)]

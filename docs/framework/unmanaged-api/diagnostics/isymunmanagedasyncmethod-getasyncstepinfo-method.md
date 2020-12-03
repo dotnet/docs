@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3ef5b4b8-4ac7-4906-849b-f932c5e3db07
 ---
 # ISymUnmanagedAsyncMethod::GetAsyncStepInfo Method
+
 See [DefineAsyncStepInfo Method](isymunmanagedasyncmethodpropertieswriter-defineasyncstepinfo-method.md).  
   
 ## Syntax  
@@ -23,9 +24,11 @@ HRESULT GetAsyncStepInfo(    [in] ULONG32 cStepInfo,    [out] ULONG32 *pcStepInf
 |`breakpointMethod`||  
   
 ## Return Value  
+
  Returns `HRESULT`.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

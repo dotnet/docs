@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: ed324eff-4aff-4a76-b6c0-04e6c0d8f5a9
 ---
 # How to: Display Dates in Non-Gregorian Calendars
+
 The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregorian calendar as their default calendar. This means that calling a date and time value's `ToString` method displays the string representation of that date and time in the Gregorian calendar, even if that date and time was created using another calendar. This is illustrated in the following example, which uses two different ways to create a date and time value with the Persian calendar, but still displays those date and time values in the Gregorian calendar when it calls the <xref:System.DateTime.ToString%2A> method. This example reflects two commonly used but incorrect techniques for displaying the date in a particular calendar.  
   
  [!code-csharp[Formatting.HowTo.Calendar#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.Calendar/cs/Calendar1.cs#1)]
@@ -57,6 +58,7 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
     - <xref:System.Globalization.Calendar.GetMilliseconds%2A> , to display the milliseconds in the second in the appropriate calendar.  
   
 ## Example  
+
  The example displays a date using two different calendars. It displays the date after defining the Hijri calendar as the default calendar for the ar-JO culture, and displays the date using the Persian calendar, which is not supported as an optional calendar by the fa-IR culture.  
   
  [!code-csharp[Formatting.HowTo.Calendar#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.Calendar/cs/Calendar1.cs#2)]

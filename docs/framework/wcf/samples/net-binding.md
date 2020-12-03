@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 4d10072a-ae0a-486a-b713-49703e26d9bf
 ---
 # Net Binding
+
 This section contains samples that demonstrate using network binding attributes of an endpoint element.  
   
 ## In This Section  
+
  [Net MSMQ Binding](net-msmq-binding.md)  
  Demonstrate using MSMQ binding attributes of an endpoint element.  
   

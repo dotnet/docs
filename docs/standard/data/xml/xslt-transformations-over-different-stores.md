@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 369850e9-004a-45d2-b5c3-5060d9135adb
 ---
 # XSLT Transformations Over Different Stores
+
 > [!NOTE]
 > The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](migrating-from-the-xsltransform-class.md) for more information.  
   

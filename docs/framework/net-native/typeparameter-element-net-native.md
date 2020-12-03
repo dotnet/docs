@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d37bb1b7-1ddc-4c6d-8ecf-583f804a2479
 ---
 # \<TypeParameter> Element (.NET Native)
+
 Applies policy to the type represented by a Type argument passed to a method.  
   
 ## Syntax  
@@ -23,6 +24,7 @@ Applies policy to the type represented by a Type argument passed to a method.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -54,6 +56,7 @@ Applies policy to the type represented by a Type argument passed to a method.
 |*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -63,6 +66,7 @@ Applies policy to the type represented by a Type argument passed to a method.
 |[\<Method>](method-element-net-native.md)|Applies runtime reflection policy to a constructor or method.|  
   
 ## Remarks  
+
  The `<TypeParameter>` element is similar to the [\<Parameter>](parameter-element-net-native.md) element, except that it can be applied only to parameters of type <xref:System.Type>. It applies policy to whatever type is represented at run time by the type argument specified by the `Name` attribute.  
   
  For example, the NewtonSoft JSON serializer includes a static `JsonConvert.DeserializeObject(String value, Type type)` method. The following reflection directives:  

@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: fe60aaa0-ae43-4b1c-9be1-426af66ba757
 ---
 # XSLT Parameters
+
 XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method. A qualified name and namespace URI are associated with the parameter object at that time.  
   
 ### To use an XSLT parameter  
@@ -18,6 +19,7 @@ XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using th
 3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
   
 ## Parameter Types  
+
  The parameter object should correspond to a W3C type. The following table shows the corresponding W3C types, the equivalent Microsoft .NET classes (type), and whether the W3C type is an XPath type or XSLT type.  
   
 |W3C type|Equivalent .NET class (type)|XPath or XSLT type|  
@@ -36,6 +38,7 @@ XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using th
  All other types throw an error.  
   
 ## Example  
+
  The following example uses the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method to create a parameter to hold calculated discount date. The discount date is calculated to be 20 days from the order date.  
   
  [!code-csharp[XSLT_Param#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XSLT_Param/CS/xsltparam.cs#1)]
@@ -44,9 +47,11 @@ XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using th
 ### Input  
   
 ##### order.xml  
+
  [!code-xml[XSLT_Param#2](../../../../samples/snippets/xml/VS_Snippets_Data/XSLT_Param/XML/order.xml#2)]  
   
 ##### discount.xsl  
+
  [!code-xml[XSLT_Param#3](../../../../samples/snippets/xml/VS_Snippets_Data/XSLT_Param/XML/discount.xsl#3)]  
   
 ### Output  

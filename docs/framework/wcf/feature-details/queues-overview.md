@@ -10,6 +10,7 @@ ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
 This section introduces the general and core concepts behind queued communication. Subsequent sections go into details about how the queuing concepts described here are manifested in Windows Communication Foundation (WCF).  
   
 ## Basic Queuing Concepts  
+
  When designing a distributed application, choosing the right transport for communication between services and clients is important. Several factors affect the kind of transport to use. One important factor—isolation between the service, the client, and the transport—determines use of a queued transport or a direct transport, such as TCP or HTTP. Due to the nature of direct transports such as TCP and HTTP, communication stops altogether if the service or the client stop functioning or if the network fails. The service, the client, and the network must be running at the same time for the application to work. Queued transports provide isolation, which means that if the service or client fail or if communication links between them fail, the client and service can continue to function.  
   
  Queues provide reliable communication even with failures in the communicating parties or the network. Queues capture and deliver messages exchanged between the communicating parties. Queues are typically backed by some kind of a store, which can be volatile or durable. Queues store messages from a client on behalf of a service and later forward these messages to the service. The indirection queues provide ensured isolation of failure by either party, thus making it the preferred communication mechanism for high-availability systems and disconnected services. The indirection comes with the cost of high latency. *Latency* is the time delay between the time the client sends a message and the time the service receives it. This means that once a message is sent, you do not know when that message may be processed. Most queued applications cope with high latency. The following illustration shows a conceptual model of queued communication.  
@@ -29,6 +30,7 @@ This section introduces the general and core concepts behind queued communicatio
  Thus, the queue manager provides the required isolation so that the sender and receiver can independently fail without affecting actual communication. The benefit of extra indirection that queues provide also enables multiple application instances to read from the same queue, so that farming work among the nodes achieves higher throughput. Therefore, it is not uncommon to see queues being used to achieve higher scale and throughput requirements.  
   
 ## Queues and Transactions  
+
  Transactions allow you to group a set of operations together so that if one operation fails, all of the operations fail. An example of how to use transactions is when a person uses an ATM to transfer $1,000 from their savings account to their checking account. This entails the following operations:  
   
 - Withdrawing $1,000 from the savings account.  
@@ -48,6 +50,7 @@ This section introduces the general and core concepts behind queued communicatio
  The client transaction processes and sends the message. When the transaction is committed, the message is in the transmission queue. On the service, the transaction reads the message from the target queue, processes the message, and then commits the transaction. If an error occurs during the processing, the message is rolled back and placed in the target queue.  
   
 ## Asynchronous Communication Using Queues  
+
  Queues provide an asynchronous means of communication. Applications that send messages using queues cannot wait for the message to be received and processed by the receiver because of high latency introduced by the queue manager. Messages can remain in the queue for a far longer time than the application intended. To avoid this, the application can specify a Time-To-Live value on the message. This value specifies how long the message should remain in the transmission queue. If this time value is exceeded, and the message still has not been sent to the target queue, the message can be transferred to a dead-letter queue.  
   
  When the sender sends a message, the return from the send operation implies that the message only made it to the transmission queue on the sender. As such, if there is a failure in getting the message to the target queue, the sending application cannot know about it immediately. To take note of such failures, the failed message is transferred to a dead-letter queue.  
@@ -61,11 +64,13 @@ This section introduces the general and core concepts behind queued communicatio
  The following sections discuss these concepts.  
   
 ## Dead-Letter Queue Programming  
+
  Dead-letter queues contain messages that failed to reach the target queue for various reasons. The reasons can range from expired messages to connectivity issues preventing transfer of the message to the target queue.  
   
  Typically, an application can read messages from a system-wide dead-letter queue, determine what went wrong, and take appropriate action, such as correcting the errors and resending the message or taking note of it.  
   
 ## Poison Message Queue Programming  
+
  After a message makes it to the target queue, the service may repeatedly fail to process the message. For example, an application reading a message from the queue under a transaction and updating a database may find the database temporarily disconnected. In this case, the transaction is rolled back, a new transaction is created, and the message is reread from the queue. A second attempt may succeed or fail. In some cases, depending on the cause of the error, the message may repeatedly fail delivery to the application. In this case, the message is deemed as "poison." Such messages are moved to a poison queue that can be read by a poison-handling application.  
   
 ## See also

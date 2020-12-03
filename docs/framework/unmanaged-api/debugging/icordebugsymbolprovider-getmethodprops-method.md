@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8f836b80-b7a5-460b-bf76-5f0e45652aea
 ---
 # ICorDebugSymbolProvider::GetMethodProps Method
+
 Returns information about method properties, such as the method's metadata token and information about its generic parameters, given a relative virtual address (RVA) in that method.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ HRESULT GetMethodProps(
 ```  
   
 ## Parameters  
+
  `codeRVA`  
  [in] A relative virtual address in the method about which information is to be retrieved.  
   
@@ -39,12 +41,14 @@ HRESULT GetMethodProps(
  [out] A buffer that holds the typespec signatures of all generic parameters.  
   
 ## Remarks  
+
  To get the required size of the method's `signature` array, set the `cbSignature` argument to 0 and `signature` to **null**. When the method returns, `pcbSignature` will contain the number of bytes required for the `signature` array.  
   
 > [!NOTE]
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

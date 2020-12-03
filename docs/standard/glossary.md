@@ -57,7 +57,7 @@ The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-
 
 The following terms often refer to the same collection of APIs that BCL refers to:
 
-- [core .NET libraries](../core/compatibility/3.1-5.0.md#core-net-libraries)
+- [core .NET libraries](../core/compatibility/corefx.md)
 - [framework libraries](#framework-libraries)
 - [runtime libraries](#runtime)
 - [shared framework](#shared-framework)

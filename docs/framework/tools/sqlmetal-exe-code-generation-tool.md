@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
 ---
 # SqlMetal.exe (Code Generation Tool)
+
 The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the .NET Framework. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
   
 - From a database, generate source code and mapping attributes or a mapping file.  
@@ -34,6 +35,7 @@ sqlmetal [options] [<input file>]
 ```  
   
 ## Options  
+
  To view the most current option list, type `sqlmetal /?` at a command prompt from the installed location.  
   
  **Connection Options**  
@@ -81,6 +83,7 @@ sqlmetal [options] [<input file>]
 |**\<input file>**|Specifies a SQL Server Express .mdf file, a SQL Server Compact 3.5 .sdf file, or a .dbml intermediate file.|  
   
 ## Remarks  
+
  SqlMetal functionality actually involves two steps:  
   
 - Extracting the metadata of the database into a .dbml file.  
@@ -104,6 +107,7 @@ sqlmetal [options] [<input file>]
  To specify an input file name, add the name to the command line as the input file. Including the file name in the connection string (using the **/conn** option) is not supported.  
   
 ## Examples  
+
  Generate a .dbml file that includes extracted SQL metadata:  
   
  **sqlmetal /server:myserver /database:northwind /dbml:mymeta.dbml**  

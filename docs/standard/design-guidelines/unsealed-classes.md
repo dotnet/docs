@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 9a3bd505-90f5-4053-9f0d-3cf5fa3d3ebf
 ---
 # Unsealed Classes
+
 Sealed classes cannot be inherited from, and they prevent extensibility. In contrast, classes that can be inherited from are called unsealed classes.
 
  ✔️ CONSIDER using unsealed classes with no added virtual or protected members as a great way to provide inexpensive yet much appreciated extensibility to a framework.

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text.Json;
 
 namespace SystemTextJsonSamples
@@ -12,19 +11,19 @@ namespace SystemTextJsonSamples
             WeatherForecastWithDictionary weatherForecast = WeatherForecastFactories.CreateWeatherForecastWithDictionary();
             weatherForecast.DisplayPropertyValues();
 
-            // <SnippetSerialize>
+            // <Serialize>
             var options = new JsonSerializerOptions
             {
                 DictionaryKeyPolicy = JsonNamingPolicy.CamelCase,
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, options);
-            // </SnippetSerialize>
+            // </Serialize>
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
-            // <SnippetDeserialize>
+            // <Deserialize>
             weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDictionary>(jsonString);
-            // </SnippetDeserialize>
+            // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }
     }

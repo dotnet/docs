@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 8bd974e1-90db-4152-95a3-1d4b1a7734f8
 ---
 # Impersonating the Client
+
 The Impersonation sample demonstrates how to impersonate the caller application at the service so that the service can access system resources on behalf of the caller.  
   
  This sample is based on the [Self-Host](self-host.md) sample. The service and client configuration files are the same as that of the [Self-Host](self-host.md) sample.  

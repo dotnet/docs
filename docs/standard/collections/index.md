@@ -21,6 +21,7 @@ There are two main types of collections; generic collections and non-generic col
 Starting with .NET Framework 4, the collections in the <xref:System.Collections.Concurrent> namespace provide efficient thread-safe operations for accessing collection items from multiple threads. The immutable collection classes in the <xref:System.Collections.Immutable> namespace ([NuGet package](https://www.nuget.org/packages/System.Collections.Immutable)) are inherently thread-safe because operations are performed on a copy of the original collection and the original collection cannot be modified.
 
 <a name="BKMK_Commoncollectionfeatures"></a>
+
 ## Common collection features
 
 All collections provide methods for adding, removing, or finding items in the collection. In addition, all collections that directly or indirectly implement the <xref:System.Collections.ICollection> interface or the <xref:System.Collections.Generic.ICollection%601> interface share these features:
@@ -52,6 +53,7 @@ In addition, many collection classes contain the following features:
     Non-generic collection types in the <xref:System.Collections> namespace provide some thread safety with synchronization; typically exposed through the <xref:System.Collections.ICollection.SyncRoot%2A> and  <xref:System.Collections.ICollection.IsSynchronized%2A> members. These collections are not thread-safe by default. If you require scalable and efficient multi-threaded access to a collection, use one of the classes in the <xref:System.Collections.Concurrent> namespace or consider using an immutable collection. For more information, see [Thread-Safe Collections](thread-safe/index.md).
 
 <a name="BKMK_Choosingacollection"></a>
+
 ## Choose a collection
 
 In general, you should use generic collections. The following table describes some common collection scenarios and the collection classes you can use for those scenarios. If you are new to generic collections, this table will help you choose the generic collection that works the best for your task.
@@ -89,6 +91,7 @@ A `List<T>` can be efficiently enumerated using either a `for` loop or a `foreac
 Additionally, `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>`. That's because they both use binary trees. The significant difference, of course, is that `ImmutableSortedSet<T>` uses an immutable binary tree. Since `ImmutableSortedSet<T>` also offers a <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder?displayProperty=nameWithType> class that allows mutation, you can have both immutability and performance.
 
 <a name="BKMK_RelatedTopics"></a>
+
 ## Related Topics
 
 |Title|Description|
@@ -103,7 +106,9 @@ Additionally, `SortedSet<T>` has the same complexity as `ImmutableSortedSet<T>`.
 |System.Collections.Immutable|Introduces the immutable collections and provides links to the collection types.|
 
 <a name="BKMK_Reference"></a>
+
 ## Reference
+
 <xref:System.Array?displayProperty=nameWithType>
 <xref:System.Collections?displayProperty=nameWithType>
 <xref:System.Collections.Concurrent?displayProperty=nameWithType>

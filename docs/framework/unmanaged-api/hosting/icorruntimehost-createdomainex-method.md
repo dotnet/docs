@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorRuntimeHost::CreateDomainEx Method
+
 Creates an application domain. The caller receives an interface pointer, of type <xref:System._AppDomain>, to an instance of type <xref:System.AppDomain?displayProperty=nameWithType>. This method allows the caller to pass an IAppDomainSetup instance to configure additional features of the returned <xref:System._AppDomain> instance.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT CreateDomainEx (
 ```  
   
 ## Parameters  
+
  `pwzFriendlyName`  
  [in] An optional parameter used to give a friendly name to the domain. This friendly name can be displayed in user interfaces such as debuggers to identify the domain.  
   
@@ -53,9 +55,11 @@ HRESULT CreateDomainEx (
 |HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
   
 ## Remarks  
+
  `CreateDomainEx` extends the capabilities of [CreateDomain](icorruntimehost-createdomain-method.md) by allowing the caller to pass in an `IAppDomainSetup` instance with property values for configuring the application domain.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

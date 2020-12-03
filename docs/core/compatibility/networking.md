@@ -1,43 +1,16 @@
 ---
 title: Networking breaking changes
-description: Lists the breaking changes in networking in .NET Core.
+description: Lists the breaking changes in networking in .NET Core 2.0 and 3.0.
 ms.date: 05/05/2020
 ---
-# Networking breaking changes
+# Networking breaking changes in .NET Core 2.0 and 3.0
 
 The following breaking changes are documented on this page:
 
 | Breaking change | Introduced version |
 | - | - |
-| [NegotiateStream and SslStream allow successive Begin operations](#negotiatestream-and-sslstream-allow-successive-begin-operations) | 5.0 |
-| [Socket.LocalEndPoint is updated after calling SendToAsync](#socketlocalendpoint-is-updated-after-calling-sendtoasync) | 5.0 |
-| [WinHttpHandler removed from .NET runtime](#winhttphandler-removed-from-net-runtime) | 5.0 |
-| [MulticastOption.Group doesn't accept a null value](#multicastoptiongroup-doesnt-accept-a-null-value) | 5.0 |
-| [Cookie Path handling now conforms to RFC 6265](#cookie-path-handling-now-conforms-to-rfc-6265) | 5.0 |
 | [Default value of HttpRequestMessage.Version changed to 1.1](#default-value-of-httprequestmessageversion-changed-to-11) | 3.0 |
 | [WebClient.CancelAsync doesn't always cancel immediately](#webclientcancelasync-doesnt-always-cancel-immediately) | 2.0 |
-
-## .NET 5.0
-
-[!INCLUDE [negotiatestream-sslstream-dont-fail-on-successive-begin-calls](../../../includes/core-changes/networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md)]
-
-***
-
-[!INCLUDE [localendpoint-updated-on-sendtoasync](../../../includes/core-changes/networking/5.0/localendpoint-updated-on-sendtoasync.md)]
-
-***
-
-[!INCLUDE [winhttphandler-removed-from-runtime](../../../includes/core-changes/networking/5.0/winhttphandler-removed-from-runtime.md)]
-
-***
-
-[!INCLUDE [multicastoption-group-doesnt-accept-null](../../../includes/core-changes/networking/5.0/multicastoption-group-doesnt-accept-null.md)]
-
-***
-
-[!INCLUDE [cookie-path-conforms-to-rfc6265](../../../includes/core-changes/networking/5.0/cookie-path-conforms-to-rfc6265.md)]
-
-***
 
 ## .NET Core 3.0
 

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CeeSectionRelocExtra Union
+
 Represents an address offset that is used by the [ICeeGen](iceegen-interface.md) interface to relocate a section.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ typedef union  {
 |`highAdj`|The upper address adjustment for the section.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

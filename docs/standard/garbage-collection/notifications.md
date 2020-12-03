@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: e12d8e74-31e3-4035-a87d-f3e66f0a9b89
 ---
 # Garbage Collection Notifications
+
 There are situations in which a full garbage collection (that is, a generation 2 collection) by the common language runtime may adversely affect performance. This can be an issue particularly with servers that process large volumes of requests; in this case, a long garbage collection can cause a request time-out. To prevent a full collection from occurring during a critical period, you can be notified that a full garbage collection is approaching and then take action to redirect the workload to another server instance. You can also induce a collection yourself, provided that the current server instance does not need to process requests.  
   
  The <xref:System.GC.RegisterForFullGCNotification%2A> method registers for a notification to be raised when the runtime senses that a full garbage collection is approaching. There are two parts to this notification: when the full garbage collection is approaching and when the full garbage collection has completed.  
@@ -26,6 +27,7 @@ There are situations in which a full garbage collection (that is, a generation 2
  The <xref:System.GC.WaitForFullGCApproach%2A> and the <xref:System.GC.WaitForFullGCComplete%2A> methods are designed to work together. Using one without the other can produce indeterminate results.  
   
 ## Full Garbage Collection  
+
  The runtime causes a full garbage collection when any of the following scenarios are true:  
   
 - Enough memory has been promoted into generation 2 to cause the next generation 2 collection.  
@@ -43,6 +45,7 @@ There are situations in which a full garbage collection (that is, a generation 2
  The third scenario also contributes to the uncertainty of when you will receive the notification. Although this is not a guarantee, it does prove to be a useful way to mitigate the effects of an inopportune full garbage collection by redirecting the requests during this time or inducing the collection yourself when it can be better accommodated.  
   
 ## Notification Threshold Parameters  
+
  The <xref:System.GC.RegisterForFullGCNotification%2A> method has two parameters to specify the threshold values of the generation 2 objects and the large object heap. When those values are met, a garbage collection notification should be raised. The following table describes these parameters.  
   
 |Parameter|Description|  
@@ -57,6 +60,7 @@ There are situations in which a full garbage collection (that is, a generation 2
 ## Example  
   
 ### Description  
+
  In the following example, a group of servers service incoming Web requests. To simulate the workload of processing requests, byte arrays are added to a <xref:System.Collections.Generic.List%601> collection. Each server registers for a garbage collection notification and then starts a thread on the `WaitForFullGCProc` user method to continuously monitor the <xref:System.GCNotificationStatus> enumeration that is returned by the <xref:System.GC.WaitForFullGCApproach%2A> and the <xref:System.GC.WaitForFullGCComplete%2A> methods.  
   
  The <xref:System.GC.WaitForFullGCApproach%2A> and the <xref:System.GC.WaitForFullGCComplete%2A> methods call their respective event-handling user methods when a notification is raised:  

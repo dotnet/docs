@@ -175,7 +175,7 @@ Unlike `yield`, `yield!` must be explicitly specified. Its behavior isn't implic
 The `return` keyword wraps a value in the type corresponding to the computation expression. Aside from computation expressions using `yield`, it is used to "complete" a computation expression:
 
 ```fsharp
-let req = // 'req' is of type is 'Async<data>'
+let req = // 'req' is of type 'Async<data>'
     async {
         let! data = fetch url
         return data
@@ -192,7 +192,7 @@ let result = Async.RunSynchronously req
 The `return!` keyword realizes the value of a computation expression and wraps that result in the type corresponding to the computation expression:
 
 ```fsharp
-let req = // 'req' is of type is 'Async<data>'
+let req = // 'req' is of type 'Async<data>'
     async {
         return! fetch url
     }

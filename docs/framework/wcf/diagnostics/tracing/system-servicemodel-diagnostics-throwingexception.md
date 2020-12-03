@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 5d543c68-1fd2-4512-a219-baf698136ef0
 ---
 # System.ServiceModel.Diagnostics.ThrowingException
+
 System.ServiceModel.Diagnostics.ThrowingException  
   
 ## Description  
+
  Throwing an exception.  
   
 ## See also

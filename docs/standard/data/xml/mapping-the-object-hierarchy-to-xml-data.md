@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 450e350b-6a68-4634-a2a5-33f4dc33baf0
 ---
 # Mapping the Object Hierarchy to XML Data
+
 When an XML document is in memory, the conceptual representation is a tree. For programming, you have an object hierarchy to access the nodes of the tree. The following example shows you how the XML content becomes nodes.  
   
  As the XML is read into the XML Document Object Model (DOM), the pieces are translated into nodes, and these nodes retain additional metadata about themselves, such as their node type and values. The node type is its object and is what determines what actions can be performed and what properties can be set or retrieved.  

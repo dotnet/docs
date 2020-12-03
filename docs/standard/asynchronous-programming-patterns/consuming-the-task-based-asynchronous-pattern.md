@@ -27,6 +27,7 @@ You can use the [await](../../csharp/language-reference/operators/await.md) keyw
  There are several important variations of this behavior.  For performance reasons, if a task has already completed by the time the task is awaited, control is not yielded, and the function continues to execute.  Additionally, returning to the original context isn't always the desired behavior and can be changed; this is described in more detail in the next section.
 
 ### Configuring Suspension and Resumption with Yield and ConfigureAwait
+
  Several methods provide more control over an asynchronous method's execution. For example, you can use the <xref:System.Threading.Tasks.Task.Yield%2A?displayProperty=nameWithType> method to introduce a yield point into the asynchronous method:
 
 ```csharp
@@ -104,6 +105,7 @@ var cts = new CancellationTokenSource();
 - The code that consumes the API may selectively determine the asynchronous invocations that cancellation requests will be propagated to.
 
 ## Monitoring Progress
+
  Some asynchronous methods expose progress through a progress interface passed into the asynchronous method.  For example, consider a function that asynchronously downloads a string of text, and along the way raises progress updates that include the percentage of the download that has completed thus far.  Such a method could be consumed in a Windows Presentation Foundation (WPF) application as follows:
 
 ```csharp
@@ -120,10 +122,13 @@ private async void btnDownload_Click(object sender, RoutedEventArgs e)
 ```
 
 <a name="combinators"></a>
+
 ## Using the Built-in Task-based Combinators
+
  The <xref:System.Threading.Tasks> namespace includes several methods for composing and working with tasks.
 
 ### Task.Run
+
  The <xref:System.Threading.Tasks.Task> class includes several <xref:System.Threading.Tasks.Task.Run%2A> methods that let you easily offload work as a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> to the thread pool, for example:
 
 ```csharp
@@ -154,6 +159,7 @@ public async void button1_Click(object sender, EventArgs e)
  Such overloads are logically equivalent to using the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> method in conjunction with the <xref:System.Threading.Tasks.TaskExtensions.Unwrap%2A> extension method in the Task Parallel Library.
 
 ### Task.FromResult
+
  Use the <xref:System.Threading.Tasks.Task.FromResult%2A> method in scenarios where data may already be available and just needs to be returned from a task-returning method lifted into a <xref:System.Threading.Tasks.Task%601>:
 
 ```csharp
@@ -172,6 +178,7 @@ private async Task<int> GetValueAsyncInternal(string key)
 ```
 
 ### Task.WhenAll
+
  Use the <xref:System.Threading.Tasks.Task.WhenAll%2A> method to asynchronously wait on multiple asynchronous operations that are represented as tasks.  The method has multiple overloads that support a set of non-generic tasks or a non-uniform set of generic tasks (for example, asynchronously waiting for multiple void-returning operations, or asynchronously waiting for multiple value-returning methods where each value may have a different type) and to support a uniform set of generic tasks (such as asynchronously waiting for multiple `TResult`-returning methods).
 
  Let's say you want to send email messages to several customers. You can overlap sending the messages so you're not waiting for one message to complete before sending the next. You can also find out when the send operations have completed and whether any errors have occurred:
@@ -239,6 +246,7 @@ catch(Exception exc)
 ```
 
 ### Task.WhenAny
+
  You can use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to asynchronously wait for just one of multiple asynchronous operations represented as tasks to complete.  This method serves four primary use cases:
 
 - Redundancy:  Performing an operation multiple times and selecting the one that completes first (for example, contacting multiple stock quote web services that will produce a single result and selecting the one that completes the fastest).
@@ -250,6 +258,7 @@ catch(Exception exc)
 - Early bailout:  For example, an operation represented by task t1 can be grouped in a <xref:System.Threading.Tasks.Task.WhenAny%2A> task with another task t2, and you can wait on the <xref:System.Threading.Tasks.Task.WhenAny%2A> task. Task t2 could represent a time-out, or cancellation, or some other signal that causes the <xref:System.Threading.Tasks.Task.WhenAny%2A> task to complete before t1 completes.
 
 #### Redundancy
+
  Consider a case where you want to make a decision about whether to buy a stock.  There are several stock recommendation web services that you trust, but depending on daily load, each service can end up being slow at different times.  You can use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to receive a notification when any operation completes:
 
 ```csharp
@@ -336,6 +345,7 @@ if (await recommendation) BuyStock(symbol);
 ```
 
 #### Interleaving
+
  Consider a case where you're downloading images from the web and processing each image (for example, adding the image to a UI control). You process the images sequentially on the UI thread, but want to download the images as concurrently as possible. Also, you don't want to hold up adding the images to the UI until they're all downloaded. Instead, you want to add them as they complete.
 
 ```csharp
@@ -376,6 +386,7 @@ while(imageTasks.Count > 0)
 ```
 
 #### Throttling
+
  Consider the interleaving example, except that the user is downloading so many images that the downloads have to be throttled; for example, you want only a specific number of downloads to happen concurrently. To achieve this, you can start a subset of the asynchronous operations.  As operations complete, you can start additional operations to take their place:
 
 ```csharp
@@ -410,6 +421,7 @@ while(imageTasks.Count > 0)
 ```
 
 #### Early Bailout
+
  Consider that you're waiting asynchronously for an operation to complete while simultaneously responding to a user's cancellation request (for example, the user clicked a cancel button). The following code illustrates this scenario:
 
 ```csharp
@@ -473,6 +485,7 @@ public async void btnRun_Click(object sender, EventArgs e)
  Another example of early bailout involves using the <xref:System.Threading.Tasks.Task.WhenAny%2A> method in conjunction with the <xref:System.Threading.Tasks.Task.Delay%2A> method, as discussed in the next section.
 
 ### Task.Delay
+
  You can use the <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> method to introduce pauses into an asynchronous method's execution.  This is useful for many kinds of functionality, including building polling loops and delaying the handling of user input for a predetermined period of time.  The <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> method can also be useful in combination with <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> for implementing time-outs on awaits.
 
  If a task that's part of a larger asynchronous operation (for example, an ASP.NET web service) takes too long to complete, the overall operation could suffer, especially if it fails to ever complete.  For this reason, it's important to be able to time out when waiting on an asynchronous operation.  The synchronous <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType>, and <xref:System.Threading.Tasks.Task.WaitAny%2A?displayProperty=nameWithType> methods accept time-out values, but the corresponding <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A?displayProperty=nameWithType>/<xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> and the previously mentioned <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>/<xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> methods do not.  Instead, you can use <xref:System.Threading.Tasks.Task.Delay%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> in combination to implement a time-out.
@@ -530,9 +543,11 @@ public async void btnDownload_Click(object sender, RoutedEventArgs e)
 ```
 
 ## Building Task-based Combinators
+
  Because a task is able to completely represent an asynchronous operation and provide synchronous and asynchronous capabilities for joining with the operation, retrieving its results, and so on, you can build useful libraries of combinators that compose tasks to build larger patterns. As discussed in the previous section, .NET includes several built-in combinators, but you can also build your own. The following sections provide several examples of potential combinator methods and types.
 
 ### RetryOnFault
+
  In many situations, you may want to retry an operation if a previous attempt fails.  For synchronous code, you might build a helper method such as `RetryOnFault` in the following example to accomplish this:
 
 ```csharp
@@ -597,6 +612,7 @@ string pageContents = await RetryOnFault(
 ```
 
 ### NeedOnlyOne
+
  Sometimes, you can take advantage of redundancy to improve an operation's latency and chances for success.  Consider multiple web services that provide stock quotes, but at various times of the day, each service may provide different levels of quality and response times.  To deal with these fluctuations, you may issue requests to all the web services, and as soon as you get a response from one, cancel the remaining requests.  You can implement a helper function to make it easier to implement this common pattern of launching multiple operations, waiting for any, and then canceling the rest. The `NeedOnlyOne` function in the following example illustrates this scenario:
 
 ```csharp
@@ -627,6 +643,7 @@ double currentPrice = await NeedOnlyOne(
 ```
 
 ### Interleaved Operations
+
  There is a potential performance problem with using the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to support an interleaving scenario when you're working with large sets of tasks. Every call to <xref:System.Threading.Tasks.Task.WhenAny%2A> results in a continuation being registered with each task. For N number of tasks, this results in O(N<sup>2</sup>) continuations created over the lifetime of the interleaving operation. If you're working with a large set of tasks, you can use a combinator (`Interleaved` in the following example) to address the performance issue:
 
 ```csharp
@@ -668,6 +685,7 @@ foreach(var task in Interleaved(tasks))
 ```
 
 ### WhenAllOrFirstException
+
  In certain scatter/gather scenarios, you might want to wait for all tasks in a set, unless one of them faults, in which case you want to stop waiting as soon as the exception occurs.  You can accomplish that with a combinator method such as `WhenAllOrFirstException` in the following example:
 
 ```csharp
@@ -691,9 +709,11 @@ public static Task<T[]> WhenAllOrFirstException<T>(IEnumerable<Task<T>> tasks)
 ```
 
 ## Building Task-based Data Structures
+
  In addition to the ability to build custom task-based combinators, having a data structure in <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> that represents both the results of an asynchronous operation and the necessary synchronization to join with it makes it a powerful type on which to build custom data structures to be used in asynchronous scenarios.
 
 ### AsyncCache
+
  One important aspect of a task is that it may be handed out to multiple consumers, all of whom may await it, register continuations with it, get its result or exceptions (in the case of <xref:System.Threading.Tasks.Task%601>), and so on.  This makes <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> perfectly suited to be used in an asynchronous caching infrastructure.  Here's an example of a small but powerful asynchronous cache built on top of <xref:System.Threading.Tasks.Task%601>:
 
 ```csharp
@@ -745,6 +765,7 @@ private async void btnDownload_Click(object sender, RoutedEventArgs e)
 ```
 
 ### AsyncProducerConsumerCollection
+
  You can also use tasks to build data structures for coordinating asynchronous activities.  Consider one of the classic parallel design patterns: producer/consumer.  In this pattern, producers generate data that is consumed by consumers, and the producers and consumers may run in parallel. For example, the consumer processes item 1, which was previously generated by a producer who is now producing item 2.  For the producer/consumer pattern, you invariably need some data structure to store the work created by producers so that the consumers may be notified of new data and find it when available.
 
  Here's a simple data structure, built on top of tasks, that enables asynchronous methods to be used as producers and consumers:

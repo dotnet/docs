@@ -4,12 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
 ---
 # Security validation
+
 This sample demonstrates how to use a custom behavior to validate services on a computer to ensure they meet specific criteria. In this sample, services are validated by the custom behavior by scanning through each endpoint on the service and checking to see whether they contain secure binding elements. This sample is based on the [Getting Started](getting-started-sample.md).  
   
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 ## Endpoint Validation Custom Behavior  
+
  By adding user code to the `Validate` method contained in the <xref:System.ServiceModel.Description.IServiceBehavior> interface, custom behavior can be given to a service or endpoint to perform user-defined actions. The following code is used to loop through each endpoint contained in a service, which searches through their binding collections for secure bindings.  
   
 ```csharp

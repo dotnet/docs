@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRStrongName::StrongNameSignatureVerificationEx Method
+
 Gets a value that indicates whether the assembly manifest at the supplied path contains a strong name signature.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT StrongNameSignatureVerificationEx (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] The path to the portable executable (.exe or .dll) file for the assembly to be verified.  
   
@@ -40,12 +42,15 @@ HRESULT StrongNameSignatureVerificationEx (
  [out] `true` if the strong name signature was verified; otherwise, `false`. `pfWasVerified` is also set to `false` if the verification was successful due to registry settings.  
   
 ## Return Value  
+
  `S_OK` if the verification was successful; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Remarks  
+
  The [ICLRStrongName::StrongNameSignatureVerificationEx](iclrstrongname-strongnamesignatureverificationex-method.md) method provides a capability similar to the [ICLRStrongName::StrongNameSignatureVerification](iclrstrongname-strongnamesignatureverification-method.md) method. However, the second input parameter and the output parameter for [ICLRStrongName::StrongNameSignatureVerificationEx](iclrstrongname-strongnamesignatureverificationex-method.md) are of type `BOOLEAN` instead of `DWORD`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

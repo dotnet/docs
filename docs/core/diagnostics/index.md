@@ -23,6 +23,10 @@ This article helps you find the various tools you need.
 
 [Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
 
+## Dumps
+
+A [dump](./dumps.md) is a file that contains a snapshot of the process at the time of creation. These can be useful for examining the state of your application for debugging purposes.
+
 ## Collect diagnostics in containers
 
 The same diagnostics tools that are used in non-containerized Linux environments can also be used to [collect diagnostics in containers](diagnostics-in-containers.md). There are just a few usage changes needed to make sure the tools work in a Docker container.
@@ -57,6 +61,10 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 [dotnet-sos](dotnet-sos.md) is used to install the [SOS debugging extension](../../framework/tools/sos-dll-sos-debugging-extension.md) on Linux or MacOS (or on Windows if using older debugging tools).
 
+### PerfCollect
+
+[PerfCollect](trace-perfcollect-lttng.md) is a bash script you can use to collect traces with `perf` and `LTTng` for a more in-depth performance analysis of .NET apps running on Linux distributions.
+
 ## .NET Core diagnostics tutorials
 
 ### Debug a memory leak
@@ -70,3 +78,7 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 ### Debug deadlock
 
 [Tutorial: Debug deadlock](debug-deadlock.md) shows you how to use the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
+
+### Measure performance using EventCounters
+
+[Tutorial: Measure performance using EventCounters in .NET](event-counter-perf.md) shows you how to use the <xref:System.Diagnostics.Tracing.EventCounter> API to measure performance in your .NET app.

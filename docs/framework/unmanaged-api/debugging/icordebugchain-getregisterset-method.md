@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugChain::GetRegisterSet Method
+
 Gets the register set for the active part of this chain.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetRegisterSet (
 ```  
   
 ## Parameters  
+
  `ppRegisters`  
  [out] A pointer to the address of an [ICorDebugRegisterSet](icordebugregisterset-interface.md) object that represents the register set for the active part of this chain.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

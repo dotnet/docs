@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1ccff72e-d76b-4e36-93a2-e51f7b32dc83
 ---
 # How To: Service Data Partitioning
+
 This topic outlines the basic steps required to partition messages across multiple instances of the same destination service. Service data partitioning is typically used when you need to scale a service in order to provide better quality of service, or when you need to handle requests from different customers in a specific way. For example, messages from high value or "Gold" customers may need to be processed at a higher priority than messages from a standard customer.  
   
  In this example, messages are routed to one of two instances of the regularCalc service. Both instances of the service are identical; however the service represented by the calculator1 endpoint processes messages received from high value customers, the calculator 2 endpoint processes messages from other customers  
@@ -93,6 +94,7 @@ This topic outlines the basic steps required to partition messages across multip
     ```  
   
 ## Example  
+
  The following is a complete listing of the configuration file.  
   
 ```xml  

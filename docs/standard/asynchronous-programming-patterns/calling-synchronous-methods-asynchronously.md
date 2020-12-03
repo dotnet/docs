@@ -49,6 +49,7 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
 > No matter which technique you use, always call `EndInvoke` to complete your asynchronous call.
 
 ## Defining the Test Method and Asynchronous Delegate
+
  The code examples that follow demonstrate various ways of calling the same long-running method, `TestMethod`, asynchronously. The `TestMethod` method displays a console message to show that it has begun processing, sleeps for a few seconds, and then ends. `TestMethod` has an `out` parameter to demonstrate the way such parameters are added to the signatures of `BeginInvoke` and `EndInvoke`. You can handle `ref` parameters similarly.
 
  The following code example shows the definition of `TestMethod` and the delegate named `AsyncMethodCaller` that can be used to call `TestMethod` asynchronously. To compile the code examples, you must include the definitions for `TestMethod` and the `AsyncMethodCaller` delegate.
@@ -58,6 +59,7 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
  [!code-vb[AsyncDelegateExamples#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/TestMethod.vb#1)]
 
 ## Waiting for an Asynchronous Call with EndInvoke
+
  The simplest way to execute a method asynchronously is to start executing the method by calling the delegate's `BeginInvoke` method, do some work on the main thread, and then call the delegate's `EndInvoke` method. `EndInvoke` might block the calling thread because it does not return until the asynchronous call completes. This is a good technique to use with file or network operations.
 
 > [!IMPORTANT]
@@ -68,6 +70,7 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
  [!code-vb[AsyncDelegateExamples#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/EndInvoke.vb#2)]
 
 ## Waiting for an Asynchronous Call with WaitHandle
+
  You can obtain a <xref:System.Threading.WaitHandle> by using the <xref:System.IAsyncResult.AsyncWaitHandle%2A> property of the <xref:System.IAsyncResult> returned by `BeginInvoke`. The <xref:System.Threading.WaitHandle> is signaled when the asynchronous call completes, and you can wait for it by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method.
 
  If you use a <xref:System.Threading.WaitHandle>, you can perform additional processing before or after the asynchronous call completes, but before calling `EndInvoke` to retrieve the results.
@@ -80,6 +83,7 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
  [!code-vb[AsyncDelegateExamples#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/WaitHandle.vb#3)]
 
 ## Polling for Asynchronous Call Completion
+
  You can use the <xref:System.IAsyncResult.IsCompleted%2A> property of the <xref:System.IAsyncResult> returned by `BeginInvoke` to discover when the asynchronous call completes. You might do this when making the asynchronous call from a thread that services the user interface. Polling for completion allows the calling thread to continue executing while the asynchronous call executes on a <xref:System.Threading.ThreadPool> thread.
 
  [!code-cpp[AsyncDelegateExamples#4](../../../samples/snippets/cpp/VS_Snippets_CLR/AsyncDelegateExamples/cpp/polling.cpp#4)]
@@ -87,6 +91,7 @@ The code examples in this topic demonstrate four common ways to use `BeginInvoke
  [!code-vb[AsyncDelegateExamples#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AsyncDelegateExamples/VB/polling.vb#4)]
 
 ## Executing a Callback Method When an Asynchronous Call Completes
+
  If the thread that initiates the asynchronous call does not need to be the thread that processes the results, you can execute a callback method when the call completes. The callback method is executed on a <xref:System.Threading.ThreadPool> thread.
 
  To use a callback method, you must pass `BeginInvoke` an <xref:System.AsyncCallback> delegate that represents the callback method. You can also pass an object that contains information to be used by the callback method. In the callback method, you can cast the <xref:System.IAsyncResult>, which is the only parameter of the callback method, to an <xref:System.Runtime.Remoting.Messaging.AsyncResult> object. You can then use the <xref:System.Runtime.Remoting.Messaging.AsyncResult.AsyncDelegate%2A?displayProperty=nameWithType> property to get the delegate that was used to initiate the call so that you can call `EndInvoke`.

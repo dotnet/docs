@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7ab1a70f-ec11-46ff-8869-cd8ca679cc51
 ---
 # ICorDebugProcess8 Interface
+
 [Supported in the .NET Framework 4.6 and later versions]  
   
  Logically extends the ICorDebugProcess interface to enable or disable certain types of [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) exception callbacks.  
@@ -17,6 +18,7 @@ ms.assetid: 7ab1a70f-ec11-46ff-8869-cd8ca679cc51
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

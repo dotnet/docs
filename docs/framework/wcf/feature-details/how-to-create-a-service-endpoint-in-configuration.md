@@ -5,9 +5,11 @@ ms.date: 06/16/2016
 ms.assetid: f474e25d-2a27-4f31-84c5-395c442b8e70
 ---
 # How to: Create a Service Endpoint in Configuration
+
 Endpoints provide clients with access to the functionality a Windows Communication Foundation (WCF) service offers. You can define one or more endpoints for a service by using a combination of relative and absolute endpoint addresses, or if you do not define any service endpoints, the runtime provides some by default for you. This topic shows how to add endpoints using a configuration file that contain both relative and absolute addresses.  
   
 ## Example  
+
  The following service configuration specifies a base address and five endpoints.  
   
 ```xml  
@@ -63,6 +65,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 ```  
   
 ## Example  
+
  The base address is specified using the `add` element, under service/host/baseAddresses, as shown in the following sample.  
   
 ```xml  
@@ -76,6 +79,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 ```  
   
 ## Example  
+
  The first endpoint definition shown in the following sample specifies a relative address, which means the endpoint address is a combination of the base address and the relative address following the rules of Uniform Resource Identifier (URI) composition. The relative address is empty (""), so the endpoint address is the same as the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service`.  
   
 ```xml  
@@ -85,6 +89,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 ```  
   
 ## Example  
+
  The second endpoint definition also specifies a relative address, as shown in the following sample configuration. The relative address, "test", is appended to the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service/test`.  
   
 ```xml  
@@ -94,6 +99,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 ```  
   
 ## Example  
+
  The third endpoint definition specifies an absolute address, as shown in the following sample configuration. The base address plays no role in the address. The actual endpoint address is `http://localhost:8001/hello/servicemodelsamples`.  
   
 ```xml  
@@ -103,6 +109,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 ```  
   
 ## Example  
+
  The fourth endpoint address specifies an absolute address and a different transport—TCP. The base address plays no role in the address. The actual endpoint address is net.tcp://localhost:9000/servicemodelsamples/service.  
   
 ```xml  
@@ -112,6 +119,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
 ```  
   
 ## Example  
+
  To use the default endpoints provided by the runtime, do not specify any service endpoints in either the code or the configuration file. In this example, the runtime creates the default endpoints when the service is opened. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).  
   
 ```xml  

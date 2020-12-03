@@ -56,10 +56,10 @@ dotnet-counters ps
    1400180 sample-counters C:\sample-counters\bin\Debug\netcoreapp3.1\sample-counters.exe
 ```
 
-Pass the <xref:System.Diagnostics.Tracing.EventSource> name to the `counter_list` switch to start monitoring your counter:
+Pass the <xref:System.Diagnostics.Tracing.EventSource> name to the `--counters` option to start monitoring your counter:
 
 ```console
-dotnet-counters monitor --process-id 1400180 Sample.EventCounter.Minimal
+dotnet-counters monitor --process-id 1400180 --counters Sample.EventCounter.Minimal
 ```
 
 The following example shows monitor output:

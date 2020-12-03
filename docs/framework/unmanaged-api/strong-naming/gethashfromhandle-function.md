@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetHashFromHandle Function
+
 Generates a hash over the contents of the file with the specified file handle, using the specified hash algorithm.  
   
  This function has been deprecated. Use the [ICLRStrongName::GetHashFromHandle](../hosting/iclrstrongname-gethashfromhandle-method.md) method instead.  
@@ -33,6 +34,7 @@ HRESULT GetHashFromHandle (
 ```  
   
 ## Parameters  
+
  `hFile`  
  [in] The handle of the file to be hashed.  
   
@@ -49,6 +51,7 @@ HRESULT GetHashFromHandle (
  [out] The size, in bytes, of the returned `pbHash`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

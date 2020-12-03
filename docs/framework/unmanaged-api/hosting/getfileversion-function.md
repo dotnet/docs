@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetFileVersion Function
+
 Gets the common language runtime (CLR) version information of the specified file, using the specified buffer.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -32,6 +33,7 @@ HRESULT GetFileVersion (
 ```  
   
 ## Parameters  
+
  `szFilename`  
  [in] The path of the file to be examined.  
   
@@ -45,6 +47,7 @@ HRESULT GetFileVersion (
  [out] The size, in bytes, of the returned `szBuffer`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

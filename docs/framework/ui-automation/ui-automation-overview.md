@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
 ---
 # UI Automation Overview
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -26,7 +27,9 @@ UI Automation provides full functionality on supported Windows operating systems
  UI Automation providers offer some support for Microsoft Active Accessibility client applications through a built-in bridging service.  
   
 <a name="Providers_and_Clients"></a>
+
 ## Providers and Clients  
+
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] has four main components, as shown in the following table.  
   
 |Component|Description|  
@@ -57,7 +60,9 @@ UI Automation provides full functionality on supported Windows operating systems
 |<xref:System.Windows.Automation.Peers>|PresentationFramework|Developers of UI Automation providers for [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].|  
   
 <a name="UI_Automation_Model"></a>
+
 ## UI Automation Model  
+
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] exposes every piece of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] to client applications as an <xref:System.Windows.Automation.AutomationElement>. Elements are contained in a tree structure, with the desktop as the root element. Clients can filter the raw view of the tree as a control view or a content view. Applications can also create custom views.  
   
  <xref:System.Windows.Automation.AutomationElement> objects expose common properties of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements they represent. One of these properties is the control type, which defines its basic appearance and functionality as a single recognizable entity: for example, a button or check box.  

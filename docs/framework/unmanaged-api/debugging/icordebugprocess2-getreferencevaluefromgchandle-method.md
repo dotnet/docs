@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess2::GetReferenceValueFromGCHandle Method
+
 Gets a reference pointer to the specified managed object that has a garbage collection handle.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetReferenceValueFromGCHandle (
 ```  
   
 ## Parameters  
+
  `handle`  
  [in] A pointer to a managed object that has a garbage collection handle. This value is a <xref:System.IntPtr> object and can be retrieved from the <xref:System.Runtime.InteropServices.GCHandle> for the managed object.  
   
@@ -36,6 +38,7 @@ HRESULT GetReferenceValueFromGCHandle (
  [out] A pointer to the address of an ICorDebugReferenceValue object that represents a reference to the specified managed object.  
   
 ## Remarks  
+
  Do not confuse the returned reference value with a garbage collection reference value.  
   
  The returned reference behaves like a normal reference. It is disabled when code execution continues after a breakpoint. The lifetime of the target object is not affected by the lifetime of the reference value.  
@@ -44,6 +47,7 @@ HRESULT GetReferenceValueFromGCHandle (
 > The `GetReferenceValueFromGCHandle` method does not validate the handle. Therefore, the `GetReferenceValueFromGCHandle` method can potentially corrupt both the debugger and the code being debugged if an invalid handle is passed.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

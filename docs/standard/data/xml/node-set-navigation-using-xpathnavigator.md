@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 1a954b41-7173-40bc-8544-d430f209b1e5
 ---
 # Node Set Navigation Using XPathNavigator
+
 You can navigate over nodes in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object using the node set navigation methods of the <xref:System.Xml.XPath.XPathNavigator> class. You can navigate over all the nodes or over a selected set of nodes returned by one of the selection methods of the <xref:System.Xml.XPath.XPathNavigator> class.  
   
 ## Element Node Set Navigation  
+
  The <xref:System.Xml.XPath.XPathNavigator> class provides several methods used to navigate element nodes. The following table shows the navigation methods available and a description of how they move; this does not include methods used to navigate attribute and namespace nodes.  
   
  For more information about selecting nodes in an <xref:System.Xml.XPath.XPathNavigator> object, see [Selecting, Evaluating and Matching XML Data using XPathNavigator](selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md). For more information about navigating attribute and namespace nodes, see [Attribute and Namespace Node Navigation Using XPathNavigator](attribute-and-namespace-node-navigation-using-xpathnavigator.md).  
@@ -25,6 +27,7 @@ You can navigate over nodes in an <xref:System.Xml.XPath.XPathDocument> or <xref
 |<xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A>|Moves the <xref:System.Xml.XPath.XPathNavigator> to the root node of the XML document.|  
   
 ## Comments and Processing Instruction Node Navigation  
+
  The following <xref:System.Xml.XPath.XPathNavigator> class methods are valid for moving to comments or processing instructions from other nodes in an XML document.  
   
 - <xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>  

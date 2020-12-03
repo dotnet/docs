@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameKeyGenEx Function
+
 Generates a new public/private key pair with the specified key size, for strong name use.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyGenEx](../hosting/iclrstrongname-strongnamekeygenex-method.md) method instead.  
@@ -33,6 +34,7 @@ BOOLEAN StrongNameKeyGenEx (
 ```  
   
 ## Parameters  
+
  `wszKeyContainer`  
  [in] The requested key container name. `wszKeyContainer` must be a non-empty string, or null to generate a temporary name.  
   
@@ -53,9 +55,11 @@ BOOLEAN StrongNameKeyGenEx (
  [out] The size, in bytes, of `ppbKeyBlob`.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
+
  The .NET Framework versions 1.0 and 1.1 require a `dwKeySize` of 1024 bits to sign an assembly with a strong name; version 2.0 adds supports for 2048-bit keys.  
   
  After the key is retrieved, you should call the [StrongNameFreeBuffer](strongnamefreebuffer-function.md) function to release the allocated memory.  
@@ -63,6 +67,7 @@ BOOLEAN StrongNameKeyGenEx (
  If the `StrongNameKeyGenEx` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

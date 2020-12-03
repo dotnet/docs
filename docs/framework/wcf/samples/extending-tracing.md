@@ -22,9 +22,11 @@ This sample demonstrates how to extend the Windows Communication Foundation (WCF
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ExtendingTracing`  
   
 ## Tracing and Activity Propagation  
+
  User-defined activity tracing allows the user to create their own trace activities to group traces into logical units of work, correlate activities through transfers and propagation, and lessen the performance cost of WCF tracing (for example, the disk space cost of a log file).  
   
 ### Add custom sources  
+
  User-defined traces can be added to both client and service code. Adding trace sources to the client or service configuration files allows for these custom traces to be recorded and displayed in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md). The following code shows how to add a user-defined trace source named `ServerCalculatorTraceSource` to the configuration file.  
   
 ```xml  
@@ -63,6 +65,7 @@ This sample demonstrates how to extend the Windows Communication Foundation (WCF
 ```  
   
 ### Correlate activities  
+
  To correlate activities directly across endpoints, the `propagateActivity` attribute must be set to `true` in the `System.ServiceModel` trace source. Also, to propagate traces without going through WCF activities, ServiceModel Activity Tracing must be turned off. This can be seen in the following code example.  
   
 > [!NOTE]
@@ -81,6 +84,7 @@ This sample demonstrates how to extend the Windows Communication Foundation (WCF
 ```  
   
 ### Lessen performance cost  
+
  Setting `ActivityTracing` to off in the `System.ServiceModel` trace source generates a trace file that contains only user-defined activity traces, without any of the ServiceModel activity traces included. Excluding ServiceModel activity traces results in a much smaller log file. However, the opportunity to correlate WCF processing traces is lost.  
   
 ## Set up, build, and run the sample  

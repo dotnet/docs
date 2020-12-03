@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: cb33ba49-8b1f-4099-8acb-240404a46d9a
 ---
 # Message Filters
+
 To implement content-based routing, the Routing Service uses <xref:System.ServiceModel.Dispatcher.MessageFilter> implementations that inspect specific sections of a message, such as the address, endpoint name, or a specific XPath statement. If none of the message filters provided with [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] meet your needs, you can create a custom filter by creating a new implementation of the base <xref:System.ServiceModel.Dispatcher.MessageFilter> class.  
   
  When configuring the Routing Service, you must define filter elements (<xref:System.ServiceModel.Routing.Configuration.FilterElement> objects) that describe the type of **MessageFilter** and any supporting data required to create the filter, such as specific string values to search for within the message. Note that creating the filter elements only defines the individual message filters; to use the filters to evaluate and route messages you must also define a filter table (<xref:System.ServiceModel.Routing.Configuration.FilterTableEntryCollection>).  
@@ -13,6 +14,7 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
  Each entry in the filter table references a filter element and specifies the client endpoint that a message will be routed to if the message matches the filter. The filter table entries also allow you to specify a collection of backup endpoints (<xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection>), which defines a list of endpoints that the message will be transmitted to in the event of a transmission failure when sending to the primary endpoint. These endpoints will be tried in the order specified until one succeeds.  
   
 ## Message Filters  
+
  The message filters used by the Routing Service provide common message selection functionality, such as evaluating the name of the endpoint that a message was sent to, the SOAP action, or the address or address prefix that the message was sent to. Filters can also be joined with an `AND` condition, so that messages will only be routed to an endpoint if the message matches both filters. You can also create custom filters by creating your own implementation of <xref:System.ServiceModel.Dispatcher.MessageFilter>.  
   
  The following table lists the <xref:System.ServiceModel.Routing.Configuration.FilterType> used by the Routing Service, the class that implements the specific message filter, and the required <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> parameters.  
@@ -51,6 +53,7 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
 > Simply defining a filter does not cause messages to be evaluated against the filter. The filter must be added to a filter table, which is then associated with the service endpoint exposed by the Routing Service.  
   
 ### Namespace Table  
+
  When using an XPath filter, the filter data that contains the XPath query can become extremely large due to the use of namespaces. To alleviate this problem the Routing Service provides the ability to define your own namespace prefixes by using the namespace table.  
   
  The namespace table is a collection of <xref:System.ServiceModel.Routing.Configuration.NamespaceElement> objects that defines the namespace prefixes for common namespaces that can be used in an XPath. The following are the default namespaces and namespace prefixes that are contained in the namespace table.  
@@ -77,6 +80,7 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
 ```  
   
 ## Filter Tables  
+
  While each filter element defines a logical comparison that can be applied to a message, the filter table provides the association between the filter element and the destination client endpoint. A filter table is a named collection of <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement> objects that define the association between a filter, a primary destination endpoint, and a list of alternative backup endpoints. The filter table entries also allow you to specify an optional priority for each filter condition. The following example defines two filters and then defines a filter table that associates each filter with a destination endpoint.  
   
 ```xml  
@@ -97,6 +101,7 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
 ```  
   
 ### Filter Evaluation Priority  
+
  By default, all entries in the filter table are evaluated simultaneously, and the message being evaluated is routed to the endpoint(s) associated with each matching filter entry. If multiple filters evaluate to `true`, and the message is one-way or duplex, the message is multicast to the endpoints for all matching filters. Request-reply messages cannot be multicast because only one reply can be returned to the client.  
   
  More complex routing logic can be implemented by specifying priority levels for each filter; the Routing Service evaluates all filters at the highest priority level first. If a message matches a filter of this level, no filters of a lower priority are processed. For example, an incoming one-way message is first evaluated against all filters with a priority of 2. The message does not match any filter at this priority level, so next the message is compared against filters with a priority of 1. Two priority 1 filters match the message, and because it is a one-way message it is routed to both destination endpoints.  Because a match was found among the priority 1 filters, no filters of priority 0 are evaluated.  
@@ -127,6 +132,7 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
 > When possible, use exclusive filters instead of specifying a priority because priority evaluation can result in performance degradation.  
   
 ### Backup Lists  
+
  Each filter in the filter table can optionally specify a backup list, which is a named collection of endpoints (<xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection>). This collection contains an ordered list of endpoints that the message will be transmitted to in the event of a <xref:System.ServiceModel.CommunicationException> when sending to the primary endpoint specified in <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.EndpointName%2A>. The following example defines a backup list named "backupServiceEndpoints" that contains two endpoints.  
   
 ```xml  

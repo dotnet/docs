@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 118f97d1-7110-4d1b-b0bd-4143252c0bb0
 ---
 # XPathNavigator in Transformations
+
 The <xref:System.Xml.XPath.XPathNavigator> class provides read-only random access to data and is designed for use as an input to Extensible Stylesheet Language for Transformations (XSLT). It is implemented on the <xref:System.Xml.XPath.XPathDocument>, <xref:System.Xml.XmlDataDocument>, and <xref:System.Xml.XmlDocument>. The <xref:System.Xml.XPath.XPathNavigator> is based upon the World Wide Web Consortium (W3C) Data Model as described in section 5 of the XML Path Language (XPath) recommendation.  
   
  The <xref:System.Xml.XPath.XPathNavigator> defines a cursor model over any store and provides fast, read-only XPath queries over any data store. The <xref:System.Xml.XPath.XPathNavigator> is also the class to use for iterating over result tree fragments.  
@@ -101,6 +102,7 @@ public class sample
 ```  
   
 ## Output  
+
  The result of the transformation is found in the file **out.xml**:  
   
 ```xml  

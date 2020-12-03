@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 8b0e97f3-7877-44fd-bc76-e05d36d5d79c
 ---
 # Naming Resources
+
 Because localizable resources can be referenced via certain objects as if they were properties, the naming guidelines for resources are similar to property guidelines.
 
  ✔️ DO use PascalCasing in resource keys.

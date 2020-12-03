@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTask::LocksHeld Method
+
 Gets the number of locks currently held on the task.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT LocksHeld (
 ```  
   
 ## Parameters  
+
  `pLockCount`  
  [out] The number of locks held on the task at the time of the method call.  
   
@@ -43,6 +45,7 @@ HRESULT LocksHeld (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

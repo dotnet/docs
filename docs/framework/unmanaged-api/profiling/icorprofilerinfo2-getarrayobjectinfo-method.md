@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::GetArrayObjectInfo Method
+
 Gets detailed information about an array object.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetArrayObjectInfo(
 ```  
   
 ## Parameters  
+
  `objectId`  
  [in] The ID of a valid array object.  
   
@@ -47,9 +49,11 @@ HRESULT GetArrayObjectInfo(
  [out] A pointer to the address of the raw buffer for the array, which is laid out according to the C++ convention.  
   
 ## Remarks  
+
  The `pDimensionSizes` and `pDimensionLowerBounds` are parallel arrays, so the elements located at the same index in each array are characteristics of the same entity.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

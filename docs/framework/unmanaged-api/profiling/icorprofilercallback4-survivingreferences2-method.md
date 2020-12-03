@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback4::SurvivingReferences2 Method
+
 Reports the layout of objects in the heap as a result of a non-compacting garbage collection. This method is called if the profiler has implemented the [ICorProfilerCallback4](icorprofilercallback4-interface.md) interface. This callback replaces the [ICorProfilerCallback2::SurvivingReferences](icorprofilercallback2-survivingreferences-method.md) method, because it can report larger ranges of objects whose lengths exceed what can be expressed in a ULONG.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT SurvivingReferences2(
 ```  
   
 ## Parameters  
+
  `cSurvivingObjectIDRanges`  
  [in] The number of blocks of contiguous objects that survived as the result of the non-compacting garbage collection. That is, the value of `cSurvivingObjectIDRanges` is the size of the `objectIDRangeStart` and `cObjectIDRangeLength` arrays, which store an `ObjectID` and a length, respectively, for each block of objects.  
   
@@ -45,6 +47,7 @@ HRESULT SurvivingReferences2(
  A size is specified for each block that is referenced in the `objectIDRangeStart` array.  
   
 ## Remarks  
+
  The elements of the `objectIDRangeStart` and `cObjectIDRangeLength` arrays should be interpreted as follows to determine whether an object survived the garbage collection. Assume that an `ObjectID` value (`ObjectID`) lies within the following range:  
   
  `ObjectIDRangeStart[i]` <= `ObjectID` < `ObjectIDRangeStart[i]` + `cObjectIDRangeLength[i]`  
@@ -62,6 +65,7 @@ HRESULT SurvivingReferences2(
  If the profiler implements both the [ICorProfilerCallback](icorprofilercallback-interface.md) and the [ICorProfilerCallback4](icorprofilercallback4-interface.md) interfaces, the `SurvivingReferences2` method is called before the [ICorProfilerCallback2::SurvivingReferences](icorprofilercallback2-survivingreferences-method.md) method, but only if `SurvivingReferences2` returns successfully. Profilers can return an HRESULT that indicates failure from the `SurvivingReferences2` method to avoid calling the second method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6a14125f-1a8d-41a1-8a32-659ca0ad12de
 ---
 # \<Field> Element (.NET Native)
+
 Applies runtime reflection policy to a field.  
   
 ## Syntax  
@@ -16,6 +17,7 @@ Applies runtime reflection policy to a field.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -40,6 +42,7 @@ Applies runtime reflection policy to a field.
 |*policy_setting*|The setting to apply to this policy type for the field. Possible values are `Auto`, `Excluded`, `Included`, and `Required`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -50,6 +53,7 @@ Applies runtime reflection policy to a field.
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type and all its members.|  
   
 ## Remarks  
+
  If a field's policy is not explicitly defined, it inherits the runtime policy of its parent element.  
   
 ## See also

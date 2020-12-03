@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: bf28aae3-ddfb-4a86-b55d-1957f08c4e10
 ---
 # Designer
+
 This section contains samples that demonstrate how to use Windows Workflow Designer.
 
 ## In This Section
+
  [Removing the View State the Designer Adds to an XAML File](removing-the-view-state-the-designer-adds-to-an-xaml-file.md)
  Demonstrates how to create a class that derives from <xref:System.Windows.Markup.XamlWriter> and removes view state from a XAML file.
 

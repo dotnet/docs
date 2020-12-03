@@ -15,9 +15,11 @@ helpviewer_keywords:
 ms.assetid: c4a942bb-2651-4b65-8718-809f892a0659
 ---
 # dateTimeInvalidLocalFormat MDA
+
 The `dateTimeInvalidLocalFormat` MDA is activated when a <xref:System.DateTime> instance that is stored as a Universal Coordinated Time (UTC) is formatted using a format that is intended to be used only for local <xref:System.DateTime> instances. This MDA is not activated for unspecified or default <xref:System.DateTime> instances.  
   
 ## Symptom  
+
  An application is manually serializing a UTC <xref:System.DateTime> instance using a local format:  
   
 ```csharp
@@ -26,9 +28,11 @@ Serialize(myDateTime.ToString("yyyy-MM-dd'T'HH:mm:ss.fffffffzzz"));
 ```  
   
 ### Cause  
+
  The 'z' format for the <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> method includes the local time zone offset, for example, "+10:00" for Sydney time. As such, it will only produce a meaningful result if the value of the <xref:System.DateTime> is local. If the value is UTC time, <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> includes the local time zone offset, but it does not display or adjust the time zone specifier.  
   
 ### Resolution  
+
  UTC <xref:System.DateTime> instances should be formatted in a way that indicates that they are UTC. The recommended format for UTC times to use a 'Z' to denote UTC time:  
   
 ```csharp
@@ -44,9 +48,11 @@ Serialize(myDateTime.ToString("o"));
 ```  
   
 ## Effect on the Runtime  
+
  This MDA does not affect the runtime.  
   
 ## Output  
+
  There is no special output as a result of this MDA activating., However, the call stack can be used to determine the location of the <xref:System.DateTime.ToString%2A> call that activated the MDA.  
   
 ## Configuration  
@@ -60,6 +66,7 @@ Serialize(myDateTime.ToString("o"));
 ```  
   
 ## Example  
+
  Consider an application that is indirectly serializing a UTC <xref:System.DateTime> value by using the <xref:System.Xml.XmlConvert> or <xref:System.Data.DataSet> class, in the following manner.  
   
 ```csharp

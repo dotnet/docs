@@ -14,6 +14,7 @@ ms.assetid: f60d9bc5-8ade-4471-8ecf-5a07a936c82d
 This section describes what client applications do, how to configure, create, and use a Windows Communication Foundation (WCF) client, and how to secure client applications.  
   
 ## Using WCF Client Objects  
+
  A client application is a managed application that uses a WCF client to communicate with another application. Creating a client application for a WCF service requires the following steps:  
   
 1. Obtain the service contract, bindings, and address information for a service endpoint.  
@@ -37,6 +38,7 @@ The following sections discuss these steps and provide brief introductions to th
 - Calling services using client channels.  
   
 ## Obtain the Service Contract, Bindings, and Addresses  
+
  In WCF, services and clients model contracts using managed attributes, interfaces, and methods. To connect to a service in a client application, you need to obtain the type information for the service contract. Typically, you obtain type information for the service contract by using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md). The utility downloads metadata from the service, converts it to a managed source code file in the language of your choice, and creates a client application configuration file that you can use to configure your WCF client object. For example, if you are going to create a WCF client object to invoke a `MyCalculatorService`, and you know that the metadata for that service is published at `http://computerName/MyCalculatorService/Service.svc?wsdl`, then the following code example shows how to use Svcutil.exe to obtain a `ClientCode.vb` file that contains the service contract in managed code.  
   
 ```console  
@@ -48,11 +50,13 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
  For an example of this process, see [How to: Create a Client](how-to-create-a-wcf-client.md). For more complete information about contracts, see [Contracts](./feature-details/contracts.md).  
   
 ## Create a WCF Client Object  
+
  A WCF client is a local object that represents a WCF service in a form that the client can use to communicate with the remote service. WCF client types implement the target service contract, so when you create one and configure it, you can then use the client object directly to invoke service operations. The WCF run time converts the method calls into messages, sends them to the service, listens for the reply, and returns those values to the WCF client object as return values or `out` or `ref` parameters.  
   
  You can also use WCF client channel objects to connect with and use services. For details, see [WCF Client Architecture](./feature-details/client-architecture.md).  
   
 #### Creating a New WCF Object  
+
  To illustrate the use of a <xref:System.ServiceModel.ClientBase%601> class, assume the following simple service contract has been generated from a service application.  
   
 > [!NOTE]
@@ -69,6 +73,7 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
  It is recommended that you create your WCF client object first, and then use it and close it inside a single try/catch block. Don't use the `using` statement (`Using` in Visual Basic) because it can mask exceptions in certain failure modes. For more information, see the following sections as well as [Use Close and Abort to release WCF client resources](./samples/use-close-abort-release-wcf-client-resources.md).  
   
 ### Contracts, Bindings, and Addresses  
+
  Before you can create a WCF client object, you must configure the client object. Specifically, it must have a service *endpoint* to use. An endpoint is the combination of a service contract, a binding, and an address. (For more information about endpoints, see [Endpoints: Addresses, Bindings, and Contracts](./feature-details/endpoints-addresses-bindings-and-contracts.md).) Typically, this information is located in the [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-of-client.md) element in a client application configuration file, such as the one the Svcutil.exe tool generates, and is loaded automatically when you create your client object. Both WCF client types also have overloads that enable you to programmatically specify this information.  
   
  For example, a generated configuration file for an `ISampleService` used in the preceding examples contains the following endpoint information.  
@@ -78,6 +83,7 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
  This configuration file specifies a target endpoint in the `<client>` element. For more information about using multiple target endpoints, see the <xref:System.ServiceModel.ClientBase%601.%23ctor%2A> or the <xref:System.ServiceModel.ChannelFactory%601.%23ctor%2A> constructors.  
   
 ## Calling Operations  
+
  Once you have a client object created and configured, create a try/catch block, call operations in the same way that you would if the object were local, and close the WCF client object. When the client application calls the first operation, WCF automatically opens the underlying channel, and the underlying channel is closed when the object is recycled. (Alternatively, you can also explicitly open and close the channel prior to or subsequent to calling other operations.)  
   
  For example, if you have the following service contract:  
@@ -128,9 +134,11 @@ End Interface
  [!code-csharp[C_GeneratedCodeFiles#20](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/cs/proxycode.cs#20)]  
   
 ## Handling Errors  
+
  Exceptions can occur in a client application when opening the underlying client channel (whether explicitly or automatically by calling an operation), using the client or channel object to call operations, or when closing the underlying client channel. It is recommended at a minimum that applications expect to handle possible <xref:System.TimeoutException?displayProperty=nameWithType> and <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType> exceptions in addition to any <xref:System.ServiceModel.FaultException?displayProperty=nameWithType> objects thrown as a result of SOAP faults returned by operations. SOAP faults specified in the operation contract are raised to client applications as a <xref:System.ServiceModel.FaultException%601?displayProperty=nameWithType> where the type parameter is the detail type of the SOAP fault. For more information about handling error conditions in a client application, see [Sending and Receiving Faults](sending-and-receiving-faults.md). For a complete sample the shows how to handle errors in a client, see [Expected Exceptions](./samples/expected-exceptions.md).  
   
 ## Configuring and Securing Clients  
+
  Configuring a client starts with the required loading of target endpoint information for the client or channel object, usually from a configuration file, although you can also load this information programmatically using the client constructors and properties. However, additional configuration steps are required to enable certain client behavior and for many security scenarios.  
   
  For example, security requirements for service contracts are declared in the service contract interface, and if Svcutil.exe created a configuration file, that file usually contains a binding that is capable of supporting the security requirements of the service. In some cases, however, more security configuration may be required, such as configuring client credentials. For complete information about the configuration of security for WCF clients, see [Securing Clients](securing-clients.md).  
@@ -138,6 +146,7 @@ End Interface
  In addition, some custom modifications can be enabled in client applications, such as custom run-time behaviors. For more information about how to configure a custom client behavior, see [Configuring Client Behaviors](configuring-client-behaviors.md).  
   
 ## Creating Callback Objects for Duplex Services  
+
  Duplex services specify a callback contract that the client application must implement in order to provide a callback object for the service to call according to the requirements of the contract. Although callback objects are not full services (for example, you cannot initiate a channel with a callback object), for the purposes of implementation and configuration they can be thought of as a kind of service.  
   
  Clients of duplex services must:  
@@ -162,9 +171,11 @@ End Interface
  [!code-csharp[S_DualHttp#134](../../../samples/snippets/csharp/VS_Snippets_CFX/s_dualhttp/cs/program.cs#134)]  
   
 ## Calling Services Asynchronously  
+
  How operations are called is entirely up to the client developer. This is because the messages that make up an operation can be mapped to either synchronous or asynchronous methods when expressed in managed code. Therefore, if you want to build a client that calls operations asynchronously, you can use Svcutil.exe to generate asynchronous client code using the `/async` option. For more information, see [How to: Call Service Operations Asynchronously](./feature-details/how-to-call-wcf-service-operations-asynchronously.md).  
   
 ## Calling Services Using WCF Client Channels  
+
  WCF client types extend <xref:System.ServiceModel.ClientBase%601>, which itself derives from <xref:System.ServiceModel.IClientChannel?displayProperty=nameWithType> interface to expose the underlying channel system. You can invoke services by using the target service contract with the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType> class. For details, see [WCF Client Architecture](./feature-details/client-architecture.md).  
   
 ## See also

@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: f8dbdfb3-6858-4f95-abe3-3a1db7878926
 ---
 # Concurrency
+
 The Concurrency sample demonstrates using the <xref:System.ServiceModel.ServiceBehaviorAttribute> with the <xref:System.ServiceModel.ConcurrencyMode> enumeration, which controls whether an instance of a service processes messages sequentially or concurrently. The sample is based on the [Getting Started](getting-started-sample.md), which implements the `ICalculator` service contract. This sample defines a new contract, `ICalculatorConcurrency`, which inherits from `ICalculator`, providing two additional operations for inspecting the state of the service concurrency. By altering the concurrency setting, you can observe the change in behavior by running the client.  
   
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  

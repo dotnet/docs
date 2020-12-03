@@ -8,11 +8,13 @@ dev_langs:
 ms.assetid: ef6402be-2f8e-4be2-8d3e-a80891cdef8b
 ---
 # XPath Queries and Namespaces
+
 XPath queries are aware of namespaces in an XML document and can use namespace prefixes to qualify element and attribute names. Qualifying element and attribute names with a namespace prefix limits the nodes returned by an XPath query to only those nodes that belong to a specific namespace.  
   
  For example if the prefix `books` maps to the namespace `http://www.contoso.com/books`, then the following XPath query `/books:books/books:book` selects only those `book` elements in the namespace `http://www.contoso.com/books`.  
   
 ## The XmlNamespaceManager  
+
  To use namespaces in an XPath query, an object derived from the <xref:System.Xml.IXmlNamespaceResolver> interface like the <xref:System.Xml.XmlNamespaceManager> class is constructed with the namespace URI and prefix to include in the XPath query.  
   
  The <xref:System.Xml.XmlNamespaceManager> object may be used in the query in each of the following ways.  
@@ -30,6 +32,7 @@ XPath queries are aware of namespaces in an XML document and can use namespace p
 - <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A>  
   
 ### The Default Namespace  
+
  In the XML document that follows, the default namespace with an empty prefix is used to declare the `http://www.contoso.com/books` namespace.  
   
 ```xml  

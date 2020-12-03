@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b
 ---
 # Framework Design Guidelines
+
 This section provides guidelines for designing libraries that extend and interact with the .NET Framework. The goal is to help library designers ensure API consistency and ease of use by providing a unified programming model that is independent of the programming language used for development. We recommend that you follow these design guidelines when developing classes and components that extend the .NET Framework. Inconsistent library design adversely affects developer productivity and discourages adoption.  
   
  The guidelines are organized as simple recommendations prefixed with the terms `Do`, `Consider`, `Avoid`, and `Do not`. These guidelines are intended to help class library designers understand the trade-offs between different solutions. There might be situations where good library design requires that you violate these design guidelines. Such cases should be rare, and it is important that you have a clear and compelling reason for your decision.  
@@ -17,6 +18,7 @@ This section provides guidelines for designing libraries that extend and interac
  These guidelines are excerpted from the book *Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition*, by Krzysztof Cwalina and Brad Abrams.  
   
 ## In This Section  
+
  [Naming Guidelines](naming-guidelines.md)  
  Provides guidelines for naming assemblies, namespaces, types, and members in class libraries.  
   

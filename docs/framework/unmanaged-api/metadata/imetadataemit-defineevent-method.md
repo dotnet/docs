@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineEvent Method
+
 Creates a definition for an event with the specified metadata signature, and gets a token to that event definition.  
   
 ## Syntax  
@@ -36,6 +37,7 @@ HRESULT DefineEvent (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] The token for the target class or interface. This is either a `mdTypeDef` or `mdTypeDefNil` token.  
   
@@ -64,6 +66,7 @@ HRESULT DefineEvent (
  [out] The metadata token assigned to the event.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

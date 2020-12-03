@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEval2::NewParameterizedObjectNoConstructor Method
+
 Instantiates a new parameterized type object of the specified class without attempting to call a constructor method.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT NewParameterizedObjectNoConstructor (
 ```  
   
 ## Parameters  
+
  `pClass`  
  [in] A pointer to an ICorDebugClass object that represents the class of the object to be instantiated.  
   
@@ -40,9 +42,11 @@ HRESULT NewParameterizedObjectNoConstructor (
  [in] An array of pointers, each of which points to an ICorDebugType object that represents a type argument for the object that is being instantiated.  
   
 ## Remarks  
+
  The `NewParameterizedObjectNoConstructor` method will fail if an incorrect number of type arguments or the wrong types of type arguments are passed.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

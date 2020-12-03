@@ -1,19 +1,20 @@
 ---
 title: Slices
 description: Learn how to use slices for existing F# data types and how to define your own slices for other data types.
-ms.date: 12/23/2019
+ms.date: 11/20/2020
 ---
+
 # Slices
 
-In F#, a slice is a subset of any data type that has a `GetSlice` method in its definition or in an in-scope [type extension](type-extensions.md). It is most commonly used with F# arrays and lists. This article explains how to take slices from existing F# types and how to define your own slices.
+This article explains how to take slices from existing F# types and how to define your own slices.
 
-Slices are similar to [indexers](./members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones.
+In F#, a slice is a subset of any data type.  Slices are similar to [indexers](./members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones. Slices use the `..` operator syntax to select the range of specified indices in a data type. For more information, see the [looping expression reference article](./loops-for-in-expression.md).
 
-F# currently has intrinsic support for slicing strings, lists, arrays, and 2D arrays.
+F# currently has intrinsic support for slicing strings, lists, arrays, and multidimensional (2D, 3D, 4D) arrays. Slicing is most commonly used with F# arrays and lists. You can add slicing to your custom data types by using the `GetSlice` method in your type definition or in an in-scope [type extension](type-extensions.md).
 
-## Basic slicing with F# lists and arrays
+## Slicing F# lists and arrays
 
-The most common data types that are sliced are F# lists and arrays. The following example demonstrates how to do this with lists:
+The most common data types that are sliced are F# lists and arrays.  The following example demonstrates how to slice lists:
 
 ```fsharp
 // Generate a list of 100 integers
@@ -83,8 +84,6 @@ let twoByTwo = A.[0..1,0..1]
 printfn "%A" twoByTwo
 ```
 
-The F# core library does not currently define `GetSlice` for 3D arrays. If you wish to slice 3D arrays or other arrays of more dimensions, define the `GetSlice` member yourself.
-
 ## Defining slices for other data structures
 
 The F# core library defines slices for a limited set of types. If you wish to define slices for more data types, you can do so either in the type definition itself or in a type extension.
@@ -145,9 +144,9 @@ printfn "%A" xs.[2..5] // Includes the 5th index
 
 ## Built-in F# empty slices
 
-F# lists, arrays, sequences, strings, 2D arrays, 3D arrays, and 4D arrays will all produce an empty slice if the syntax could produce a slice that doesn't exist.
+F# lists, arrays, sequences, strings, multidimensional (2D, 3D, 4D) arrays will all produce an empty slice if the syntax could produce a slice that doesn't exist.
 
-Consider the following:
+Consider the following example:
 
 ```fsharp
 let l = [ 1..10 ]
@@ -159,7 +158,11 @@ let emptyArray = a.[-2..(-1)]
 let emptyString = s.[-2..(-1)]
 ```
 
-C# developers may expect these to throw an exception rather than produce an empty slice. This is a design decision rooted in the fact that empty collections compose in F#. An empty F# list can be composed with another F# list, an empty string can be added to an existing string, and so on. It can be common to take slices based on values passed in as parameters, and being tolerant of out-of-bounds by producing an empty collection fits with the compositional nature of F# code.
+> [!IMPORTANT]
+> C# developers may expect these to throw an exception rather than produce an empty slice. This is a
+> design decision rooted in the fact that empty collections compose in F#. An empty F# list can be
+> composed with another F# list, an empty string can be added to an existing string, and so on. It can
+> be common to take slices based on values passed in as parameters, and being tolerant of out-of-bounds > by producing an empty collection fits with the compositional nature of F# code.
 
 ## Fixed-index slices for 3D and 4D arrays
 
@@ -168,12 +171,14 @@ For F# 3D and 4D arrays, you can "fix" a particular index and slice other dimens
 To illustrate this, consider the following 3D array:
 
 *z = 0*
+
 | x\y   | 0 | 1 |
 |-------|---|---|
 | **0** | 0 | 1 |
 | **1** | 2 | 3 |
 
 *z = 1*
+
 | x\y   | 0 | 1 |
 |-------|---|---|
 | **0** | 4 | 5 |
@@ -197,7 +202,7 @@ for z in 0..dim-1 do
 m.[*, 0, 1]
 ```
 
-The last line fixes the `y` and `z` indicies of the 3D array and takes the rest of the `x` values that correspond to the matrix.
+The last line fixes the `y` and `z` indices of the 3D array and takes the rest of the `x` values that correspond to the matrix.
 
 ## See also
 

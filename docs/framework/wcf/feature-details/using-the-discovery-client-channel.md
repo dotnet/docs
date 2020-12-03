@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 1494242a-1d64-4035-8ecd-eb4f06c8d2ba
 ---
 # Using the Discovery Client Channel
+
 When writing a WCF client application you need to know the endpoint address of the service you are calling. In many situations the endpoint address of a service is not known in advance or the address of the service changes over time. The Discovery Client Channel allows you to write a WCF client application, describe the service you want to call, and the client channel automatically sends a probe request. When a service responds, the discovery client channel retrieves the endpoint address for the service from the probe response and uses it to call the service.  
   
 ## Using the Discovery Client Channel  
+
  To use the Discovery Client Channel, add an instance of the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> to your client channel stack. Alternatively you can use the <xref:System.ServiceModel.Discovery.DynamicEndpoint> and a <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is automatically added to your binding if not already present.  
   
 > [!CAUTION]
@@ -54,4 +56,5 @@ catch (EndpointNotFoundException ex)
 ```  
   
 ## Security and the Discovery Client Channel  
+
  When using the discovery client channel, two endpoints are being specified. One is used for discovery messages, usually <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, and the other is the application endpoint. When implementing a secure service, care must be taken to secure both endpoints. For more information about security, see [Securing Services and Clients](securing-services-and-clients.md).

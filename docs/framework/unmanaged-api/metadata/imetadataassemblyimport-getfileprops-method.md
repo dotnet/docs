@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyImport::GetFileProps Method
+
 Gets the properties of the file with the specified metadata signature.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT GetFileProps (
 ```  
   
 ## Parameters  
+
  `mdf`  
  [in] The `mdFile` metadata token that represents the file for which to get the properties.  
   
@@ -56,6 +58,7 @@ HRESULT GetFileProps (
  [out] A pointer to the flags that describe the metadata applied to a file. The flags value is a combination of one or more [CorFileFlags](corfileflags-enumeration.md) values.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

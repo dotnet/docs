@@ -14,11 +14,12 @@ namespace ImmutableTypes
         public Forecast(DateTime date, int temperatureC, string summary) =>
             (Date, TemperatureC, Summary) = (date, temperatureC, summary);
     }
+
     public class Program
     {
         public static void Main()
         {
-            var json = "{\"date\":\"2020-09-06T11:31:01.923395-07:00\",\"temperatureC\":-1,\"summary\":\"Cold\"} ";
+            var json = @"{""date"":""2020-09-06T11:31:01.923395-07:00"",""temperatureC"":-1,""summary"":""Cold""} ";
             Console.WriteLine($"Input JSON: {json}");
 
             var options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
@@ -29,8 +30,8 @@ namespace ImmutableTypes
             Console.WriteLine($"forecast.TemperatureC: {forecast.TemperatureC}");
             Console.WriteLine($"forecast.Summary: {forecast.Summary}");
 
-            var roundTrippedJson = JsonSerializer.Serialize<Forecast>
-                (forecast, options);
+            var roundTrippedJson =
+                JsonSerializer.Serialize<Forecast>(forecast, options);
 
             Console.WriteLine($"Output JSON: {roundTrippedJson}");
 

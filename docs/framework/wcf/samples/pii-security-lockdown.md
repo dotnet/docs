@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
 ---
 # PII Security Lockdown
+
 This sample demonstrates how to control several security-related features of a Windows Communication Foundation (WCF) service by:  
   
 - Encrypting sensitive information in a service's configuration file.  
@@ -22,6 +23,7 @@ This sample demonstrates how to control several security-related features of a W
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
   
 ## Discussion  
+
  Each of these features can be used separately or together to control aspects of a service's security. This is not a definitive guide to securing a WCF service.  
   
  The .NET Framework configuration files can contain sensitive information such as connection strings to connect to databases. In shared, Web-hosted scenarios it may be desirable to encrypt this information in the configuration file for a service so that the data contained within the configuration file is resistant to casual viewing. .NET Framework 2.0 and later has the ability to encrypt portions of the configuration file using the Windows Data Protection application programming interface (DPAPI) or the RSA Cryptographic provider. The aspnet_regiis.exe using the DPAPI or RSA can encrypt select portions of a configuration file.  
@@ -31,6 +33,7 @@ This sample demonstrates how to control several security-related features of a W
  This sample demonstrates how to control the logging of known Personally Identifiable Information (PII) in trace and message logs, such as username and password. By default, logging of known PII is disabled however in certain situations logging of PII can be important in debugging an application. This sample is based on the [Getting Started](getting-started-sample.md). In addition, this sample uses tracing and message logging. For more information, see the [Tracing and Message Logging](tracing-and-message-logging.md) sample.  
   
 ## Encrypting Configuration File Elements  
+
  For security purposes in a shared Web-hosting environment, it may be desirable to encrypt certain configuration elements, such as database connection strings that may contain sensitive information. A configuration element may be encrypted using the aspnet_regiis.exe tool found in the .NET Framework folder For example, %WINDIR%\Microsoft.NET\Framework\v4.0.20728.  
   
 #### To encrypt the values in the appSettings section in Web.config for the sample  
@@ -44,6 +47,7 @@ This sample demonstrates how to control several security-related features of a W
  More information about encrypting sections of configuration files can be found by reading a how-to on DPAPI in ASP.NET configuration ([Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](/previous-versions/msp-n-p/ff649248(v=pandp.10))) and a how-to on RSA in ASP.NET configuration ([How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](/previous-versions/msp-n-p/ff650304(v=pandp.10))).  
   
 ## Locking configuration file elements  
+
  In Web-hosted scenarios, it is possible to have services in subdirectories of services. In these situations, configuration values for the service in the subdirectory are calculated by examining values in Machine.config and successively merging with any Web.config files in parent directories moving down the directory tree and finally merging the Web.config file in the directory that contains the service. The default behavior for most configuration elements is to allow configuration files in subdirectories to override the values set in parent directories. In certain situations it may be desirable to prevent configuration files in subdirectories from overriding values set in parent directory configuration.  
   
  The .NET Framework provides a way to lock configuration file elements so that configurations that override locked configuration elements throw run-time exceptions.  
@@ -68,6 +72,7 @@ This sample demonstrates how to control several security-related features of a W
  Locking of configuration elements can be more specific. A list of elements can be specified as the value to the `lockElements` to lock a set of elements within a collection of sub-elements. A list of attributes can be specified as the value to the `lockAttributes` to lock a set of attributes within an element. An entire collection of elements or attributes can be locked except for a specified list by specifying the `lockAllElementsExcept` or `lockAllAttributesExcept` attributes on a node.  
   
 ## PII Logging Configuration  
+
  Logging of PII is controlled by two switches: a computer-wide setting found in Machine.config that allows a computer administrator to permit or deny logging of PII and an application setting that allows an application administrator to toggle logging of PII for each source in a Web.config or App.config file.  
   
  The computer-wide setting is controlled by setting `enableLoggingKnownPii` to `true` or `false`, in the `machineSettings` element in Machine.config. For example, the following allows applications to turn on logging of PII.  

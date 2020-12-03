@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataDispenser::OpenScopeOnMemory Method
+
 Opens an area of memory that contains existing metadata. That is, this method opens a specified area of memory in which the existing data is treated as metadata.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT OpenScopeOnMemory (
 ```  
   
 ## Parameters  
+
  `pData`  
  [in] A pointer that specifies the starting address of the memory area.  
   
@@ -50,6 +52,7 @@ HRESULT OpenScopeOnMemory (
  [out] The pointer to the returned interface.  
   
 ## Remarks  
+
  The in-memory copy of the metadata can be queried using methods from one of the "import" interfaces, or added to using methods from the one of the "emit" interfaces.  
   
  The `OpenScopeOnMemory` method is similar to the [IMetaDataDispenser::OpenScope](imetadatadispenser-openscope-method.md) method, except that the metadata of interest already exists in memory, rather than in a file on disk.  
@@ -57,6 +60,7 @@ HRESULT OpenScopeOnMemory (
  If the target area of memory does not contain common language runtime (CLR) metadata, the `OpenScopeOnMemory` method will fail.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

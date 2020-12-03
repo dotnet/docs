@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread2 Interface
+
 Serves as a logical extension to the ICorDebugThread interface.  
   
 ## Methods  
@@ -34,6 +35,7 @@ Serves as a logical extension to the ICorDebugThread interface.
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -48,6 +48,12 @@ Authors:
 Participants and Reviewers:
 
 > **Nish Anil**, Senior Program Manager, .NET team, Microsoft
+>
+> **Mark Fussell**, Prinicpal Program Manager, Azure Incubations, Microsoft
+>
+> **Yaron Schneider**, Prinicpal Software Engineer, Azure Incubations, Microsoft
+>
+> **Ori Zohar**, Senior Program Manager, Azure Incubations, Microsoft
 
 Editors:
 
@@ -64,8 +70,6 @@ The audience for this guide is mainly developers, development leads, and archite
 A secondary audience is technical decision-makers who plan to choose whether to build their applications using a cloud-native approach.
 
 ## How you can use this guide
-
-Blah
 
 This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf) form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
 

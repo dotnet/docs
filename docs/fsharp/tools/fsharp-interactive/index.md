@@ -84,6 +84,9 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 
 ## Referencing packages in F# Interactive
 
+> [!NOTE]
+> Package management system is extensible, read more [about other extensions](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
+
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 
 ```fsharp
@@ -127,6 +130,8 @@ You can specify as many package references as you like in a script.
 
 > [!NOTE]
 > There's currently a limitation for scripts that use framework references (e.g.`Microsoft.NET.Sdk.Web` or  `Microsoft.NET.Sdk.WindowsDesktop`). Packages like Saturn, Giraffe, WinForms are not available. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417).
+
+Read more about [package management extensibility and other extensions](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
 
 ## Referencing assemblies on disk with F# interactive
 

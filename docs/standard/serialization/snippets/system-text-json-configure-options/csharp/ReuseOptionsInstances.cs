@@ -31,17 +31,14 @@ namespace OptionsPerfDemo
             Console.WriteLine($"Elapsed time creating new options instances: {watch.ElapsedMilliseconds}");
         }
 
-        private static void Serialize(Forecast forecast, JsonSerializerOptions options)
+        private static void Serialize(Forecast forecast, JsonSerializerOptions? options)
         {
-            if (options == null)
-            {
-                options = new JsonSerializerOptions()
+            _ = JsonSerializer.Serialize<Forecast>(
+                forecast,
+                options ?? new JsonSerializerOptions()
                 {
                     WriteIndented = true
-                };
-            }
-
-            _ = JsonSerializer.Serialize<Forecast>(forecast, options);
+                });
         }
     }
 }

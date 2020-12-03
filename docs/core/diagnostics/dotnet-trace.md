@@ -109,7 +109,13 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--profile <profile-name>`**
 
-  A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly.
+  A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly. The following profiles are available:
+
+ | Profile | Description |
+ |---------|-------------|
+ |`cpu-sampling`|Useful for tracking CPU usage and general .NET runtime information. This is the default option if no profile or providers are specified.|
+ |`gc-verbose`|Tracks GC collections and samples object allocations.|
+ |`gc-collect`|Tracks GC collections only at very low overhead.|
 
 - **`--providers <list-of-comma-separated-providers>`**
 

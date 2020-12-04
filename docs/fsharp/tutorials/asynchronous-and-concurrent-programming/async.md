@@ -51,7 +51,7 @@ let printTotalFileBytes path =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
-        printfn "File %s has %d bytes" fileName bytes.Length
+        printfn $"File {fileName} has %d{bytes.Length} bytes"
     }
 
 [<EntryPoint>]
@@ -81,7 +81,7 @@ let printTotalFileBytes path =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
-        printfn "File %s has %d bytes" fileName bytes.Length
+        printfn $"File {fileName} has %d{bytes.Length} bytes"
     }
 
 [<EntryPoint>]
@@ -113,7 +113,7 @@ let printTotalFileBytes path =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
-        printfn "File %s has %d bytes" fileName bytes.Length
+        printfn $"File {fileName} has %d{bytes.Length} bytes"
     }
 
 [<EntryPoint>]

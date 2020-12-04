@@ -28,7 +28,7 @@ class Program
         // Now that the connection string has been parsed,
         // you can work with individual items.
         Console.WriteLine(builder.Password);
-        builder.Password = "new@1Password";
+        builder.Password = "[PLACEHOLDER]";
         builder.AsynchronousProcessing = true;
 
         // You can refer to connection keys using strings,

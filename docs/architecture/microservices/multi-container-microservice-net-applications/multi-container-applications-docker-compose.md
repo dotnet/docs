@@ -34,7 +34,7 @@ services:
   catalog-api:
     image: eshop/catalog-api
     environment:
-      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=your@password
+      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
     expose:
       - "80"
     ports:
@@ -48,7 +48,7 @@ services:
   ordering-api:
     image: eshop/ordering-api
     environment:
-      - ConnectionString=Server=sqldata;Database=Services.OrderingDb;User Id=sa;Password=your@password
+      - ConnectionString=Server=sqldata;Database=Services.OrderingDb;User Id=sa;Password=[PLACEHOLDER]
     ports:
       - "5102:80"
     #extra hosts can be used for standalone SQL Server or services at the dev PC
@@ -68,7 +68,7 @@ services:
 
   sqldata:
     environment:
-      - SA_PASSWORD=your@password
+      - SA_PASSWORD=[PLACEHOLDER]
       - ACCEPT_EULA=Y
     ports:
       - "5434:1433"
@@ -96,7 +96,7 @@ Focusing on a single container, the catalog-api container-microservice has a str
   catalog-api:
     image: eshop/catalog-api
     environment:
-      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=your@password
+      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
     expose:
       - "80"
     ports:
@@ -303,7 +303,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
-      - ConnectionString=${ESHOP_AZURE_CATALOG_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=Pass@word}
+      - ConnectionString=${ESHOP_AZURE_CATALOG_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]}
       - PicBaseUrl=${ESHOP_AZURE_STORAGE_CATALOG_URL:-http://localhost:5202/api/v1/catalog/items/[0]/pic/}
       - EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
       - EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
@@ -322,7 +322,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
-      - ConnectionString=${ESHOP_AZURE_MARKETING_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.MarketingDb;User Id=sa;Password=Pass@word}
+      - ConnectionString=${ESHOP_AZURE_MARKETING_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.MarketingDb;User Id=sa;Password=[PLACEHOLDER]}
       - MongoConnectionString=${ESHOP_AZURE_COSMOSDB:-mongodb://nosqldata}
       - MongoDatabase=MarketingDb
       - EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
@@ -364,7 +364,7 @@ services:
       - "5100:80"
   sqldata:
     environment:
-      - SA_PASSWORD=Pass@word
+      - SA_PASSWORD=[PLACEHOLDER]
       - ACCEPT_EULA=Y
     ports:
       - "5433:1433"
@@ -464,10 +464,10 @@ For faster startup, runtime images also automatically set aspnetcore\_urls to po
 
 #### Additional resources
 
-- **Building Optimized Docker Images with ASP.NET Core**  
+- **Building Optimized Docker Images with ASP.NET Core**
   <https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core>
 
-- **Building Docker Images for .NET Core Applications**  
+- **Building Docker Images for .NET Core Applications**
   [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 > [!div class="step-by-step"]

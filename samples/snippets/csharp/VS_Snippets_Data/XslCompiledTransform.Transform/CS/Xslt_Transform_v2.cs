@@ -60,11 +60,11 @@ writer.Close();
 //</snippet3>
 }
 
-//==============================//		
+//==============================//
 // Transform with document function
 static void XslCompiledTransform_Transform4()  {
 	string UserName = "username";
-	string SecurelyStoredPassword = "psswd";
+	string SecurelyStoredPassword = "[PLACEHOLDER]";
 	string Domain= "domain";
 
 //<snippet4>

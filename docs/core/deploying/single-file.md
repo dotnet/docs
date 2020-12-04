@@ -74,6 +74,23 @@ For example, to place some files in the publish directory but not bundle them in
 </ItemGroup>
 ```
 
+## Extract bundled files
+
+When single-file application is running, it extracts bundled files and uses extracted files instead of using them directly in the memory.
+This preserves original .NET Core single-file application behavior.
+
+```xml
+<IncludeAllContentForSelfExtract>True</IncludeAllContentForSelfExtract>
+```
+
+For example, add the following property to the project file of an assembly to extract bundled files:
+
+```xml
+<PropertyGroup>
+  <IncludeAllContentForSelfExtract>True</IncludeAllContentForSelfExtract>
+</PropertyGro>
+```
+
 ## Include PDB files inside the bundle
 
 The PDB file for an assembly can be embedded into the assembly itself (the `.dll`) using the setting below. Since the symbols are part of the assembly, they will be part of the single-file application as well:

@@ -64,8 +64,8 @@ module IntegersAndNumbers =
     /// This is a list of all tuples containing all the numbers from 0 to 99 and their squares.
     let sampleTableOfSquares = [ for i in 0 .. 99 -> (i, i*i) ]
 
-    // The next line prints a list that includes tuples, using '%A' for generic printing.
-    printfn "The table of squares from 0 to 99 is:\n%A" sampleTableOfSquares
+    // The next line prints a list that includes tuples, using an interpolated string.
+    printfn $"The table of squares from 0 to 99 is:\n{sampleTableOfSquares}"
 
 
 /// Values in F# are immutable by default.  They cannot be changed
@@ -84,14 +84,14 @@ module Immutability =
     /// A mutable binding.  This is required to be able to mutate the value of 'otherNumber'.
     let mutable otherNumber = 2
 
-    printfn "'otherNumber' is %d" otherNumber
+    printfn $"'otherNumber' is {otherNumber}"
 
     // When mutating a value, use '<-' to assign a new value.
     //
     // Note that '=' is not the same as this.  '=' is used to test equality.
     otherNumber <- otherNumber + 1
 
-    printfn "'otherNumber' changed to be %d" otherNumber
+    printfn $"'otherNumber' changed to be {otherNumber}" 
 
 
 /// Much of F# programming consists of defining functions that transform input data to produce
@@ -110,13 +110,13 @@ module BasicFunctions =
 
     // This line uses '%d' to print the result as an integer. This is type-safe.
     // If 'result1' were not of type 'int', then the line would fail to compile.
-    printfn "The result of squaring the integer 4573 and adding 3 is %d" result1
+    printfn $"The result of squaring the integer 4573 and adding 3 is %d{result1}"
 
     /// When needed, annotate the type of a parameter name using '(argument:type)'.  Parentheses are required.
     let sampleFunction2 (x:int) = 2*x*x - x/5 + 3
 
     let result2 = sampleFunction2 (7 + 4)
-    printfn "The result of applying the 2nd sample function to (7 + 4) is %d" result2
+    printfn $"The result of applying the 2nd sample function to (7 + 4) is %d{result2}"
 
     /// Conditionals use if/then/elif/else.
     ///
@@ -130,7 +130,7 @@ module BasicFunctions =
     let result3 = sampleFunction3 (6.5 + 4.5)
 
     // This line uses '%f' to print the result as a float.  As with '%d' above, this is type-safe.
-    printfn "The result of applying the 3rd sample function to (6.5 + 4.5) is %f" result3
+    printfn $"The result of applying the 3rd sample function to (6.5 + 4.5) is %f{result3}"
 
 
 /// Booleans are fundamental data types in F#.  Here are some examples of Booleans and conditional logic.
@@ -149,7 +149,7 @@ module Booleans =
     let boolean3 = not boolean1 && (boolean2 || false)
 
     // This line uses '%b'to print a boolean value.  This is type-safe.
-    printfn "The expression 'not boolean1 && (boolean2 || false)' is %b" boolean3
+    printfn $"The expression 'not boolean1 && (boolean2 || false)' is %b{boolean3}"
 
 
 /// Strings are fundamental data types in F#.  Here are some examples of Strings and basic String manipulation.
@@ -177,7 +177,7 @@ module StringManipulation =
     /// Substrings use the indexer notation.  This line extracts the first 7 characters as a substring.
     /// Note that like many languages, Strings are zero-indexed in F#.
     let substring = helloWorld.[0..6]
-    printfn "%s" substring
+    printfn $"{substring}"
 
 
 /// Tuples are simple combinations of data values into a combined value.
@@ -194,13 +194,13 @@ module Tuples =
     /// meaning that it will work with any type.
     let swapElems (a, b) = (b, a)
 
-    printfn "The result of swapping (1, 2) is %A" (swapElems (1,2))
+    printfn $"The result of swapping (1, 2) is {(swapElems (1,2))}"
 
     /// A tuple consisting of an integer, a string,
     /// and a double-precision floating point number.
     let tuple2 = (1, "fred", 3.1415)
 
-    printfn "tuple1: %A\ttuple2: %A" tuple1 tuple2
+    printfn $"tuple1: {tuple1}\ttuple2: {tuple2}"
 
     /// Tuples are normally objects, but they can also be represented as structs.
     ///
@@ -215,7 +215,7 @@ module Tuples =
     let convertFromStructTuple (struct(a, b)) = (a, b)
     let convertToStructTuple (a, b) = struct(a, b)
 
-    printfn "Struct Tuple: %A\nReference tuple made from the Struct Tuple: %A" sampleStructTuple (sampleStructTuple |> convertFromStructTuple)
+    printfn $"Struct Tuple: {sampleStructTuple}\nReference tuple made from the Struct Tuple: {(sampleStructTuple |> convertFromStructTuple)}"
 
 
 /// The F# pipe operators ('|>', '<|', etc.) and F# composition operators ('>>', '<<')
@@ -246,7 +246,7 @@ module PipelinesAndComposition =
         let result = List.map addOne squares
         result
 
-    printfn "processing %A through 'squareOddValuesAndAddOne' produces: %A" numbers (squareOddValuesAndAddOne numbers)
+    printfn $"processing {numbers} through 'squareOddValuesAndAddOne' produces: {squareOddValuesAndAddOne numbers}"
     
     /// A shorter way to write 'squareOddValuesAndAddOne' is to nest each
     /// sub-result into the function calls themselves.
@@ -256,7 +256,7 @@ module PipelinesAndComposition =
     let squareOddValuesAndAddOneNested values = 
         List.map addOne (List.map square (List.filter isOdd values))
 
-    printfn "processing %A through 'squareOddValuesAndAddOneNested' produces: %A" numbers (squareOddValuesAndAddOneNested numbers)
+    printfn $"processing {numbers} through 'squareOddValuesAndAddOneNested' produces: {squareOddValuesAndAddOneNested numbers}"
 
     /// A preferred way to write 'squareOddValuesAndAddOne' is to use F# pipe operators.
     /// This allows you to avoid creating intermediate results, but is much more readable
@@ -267,7 +267,7 @@ module PipelinesAndComposition =
         |> List.map square
         |> List.map addOne
 
-    printfn "processing %A through 'squareOddValuesAndAddOnePipeline' produces: %A" numbers (squareOddValuesAndAddOnePipeline numbers)
+    printfn $"processing {numbers} through 'squareOddValuesAndAddOnePipeline' produces: {squareOddValuesAndAddOnePipeline numbers}"
 
     /// You can shorten 'squareOddValuesAndAddOnePipeline' by moving the second `List.map` call
     /// into the first, using a Lambda Function.
@@ -279,7 +279,7 @@ module PipelinesAndComposition =
         |> List.filter isOdd
         |> List.map(fun x -> x |> square |> addOne)
 
-    printfn "processing %A through 'squareOddValuesAndAddOneShorterPipeline' produces: %A" numbers (squareOddValuesAndAddOneShorterPipeline numbers)
+    printfn $"processing {numbers} through 'squareOddValuesAndAddOneShorterPipeline' produces: {squareOddValuesAndAddOneShorterPipeline numbers}"
 
     /// Lastly, you can eliminate the need to explicitly take 'values' in as a parameter by using '>>'
     /// to compose the two core operations: filtering out even numbers, then squaring and adding one.
@@ -297,7 +297,7 @@ module PipelinesAndComposition =
     let squareOddValuesAndAddOneComposition =
         List.filter isOdd >> List.map (square >> addOne)
 
-    printfn "processing %A through 'squareOddValuesAndAddOneComposition' produces: %A" numbers (squareOddValuesAndAddOneComposition numbers)
+    printfn $"processing {numbers} through 'squareOddValuesAndAddOneComposition' produces: {squareOddValuesAndAddOneComposition numbers}"
 
 
 /// Lists are ordered, immutable, singly-linked lists.  They are eager in their evaluation.
@@ -332,7 +332,7 @@ module Lists =
                   yield System.DateTime(2017, month, day) ]
 
     // Print the first 5 elements of 'daysList' using 'List.take'.
-    printfn "The first 5 days of 2017 are: %A" (daysList |> List.take 5)
+    printfn $"The first 5 days of 2017 are: {daysList |> List.take 5}"
 
     /// Computations can include conditionals.  This is a list containing the tuples
     /// which are the coordinates of the black squares on a chess board.
@@ -356,7 +356,7 @@ module Lists =
         |> List.filter (fun x -> x % 3 = 0)
         |> List.sumBy (fun x -> x * x)
 
-    printfn "The sum of the squares of numbers up to 1000 that are divisible by 3 is: %d" sumOfSquares
+    printfn $"The sum of the squares of numbers up to 1000 that are divisible by 3 is: %d{sumOfSquares}"
 
 
 /// Arrays are fixed-size, mutable collections of elements of the same type.
@@ -390,7 +390,7 @@ module Arrays =
 
     /// You can loop over arrays and lists using 'for' loops.
     for word in array4 do 
-        printfn "word: %s" word
+        printfn $"word: {word}"
 
     // You can modify the contents of an array element by using the left arrow assignment operator.
     //
@@ -404,7 +404,7 @@ module Arrays =
         |> Array.filter (fun x -> x.StartsWith "h")
         |> Array.sumBy (fun x -> x.Length)
 
-    printfn "The sum of the lengths of the words in Array 2 is: %d" sumOfLengthsOfWords
+    printfn $"The sum of the lengths of the words in Array 2 is: %d{sumOfLengthsOfWords}"
 
 
 /// Sequences are a logical series of elements, all of the same type.  These are a more general type than Lists and Arrays.
@@ -449,7 +449,7 @@ module Sequences =
         |> Seq.truncate 100
         |> Seq.toList
 
-    printfn "First 100 elements of a random walk: %A" first100ValuesOfRandomWalk
+    printfn $"First 100 elements of a random walk: {first100ValuesOfRandomWalk}"
 
 
 /// Recursive functions can call themselves. In F#, functions are only recursive
@@ -465,7 +465,7 @@ module RecursiveFunctions =
     let rec factorial n = 
         if n = 0 then 1 else n * factorial (n-1)
 
-    printfn "Factorial of 6 is: %d" (factorial 6)
+    printfn $"Factorial of 6 is: %d{factorial 6}"
 
     /// Computes the greatest common factor of two integers.
     ///
@@ -477,7 +477,7 @@ module RecursiveFunctions =
         elif a < b then greatestCommonFactor a (b - a)
         else greatestCommonFactor (a - b) b
 
-    printfn "The Greatest Common Factor of 300 and 620 is %d" (greatestCommonFactor 300 620)
+    printfn $"The Greatest Common Factor of 300 and 620 is %d{greatestCommonFactor 300 620}"
 
     /// This example computes the sum of a list of integers using recursion.
     let rec sumList xs =
@@ -497,7 +497,7 @@ module RecursiveFunctions =
 
     let oneThroughTen = [1; 2; 3; 4; 5; 6; 7; 8; 9; 10]
 
-    printfn "The sum 1-10 is %d" (sumListTailRecursive oneThroughTen)
+    printfn $"The sum 1-10 is %d{sumListTailRecursive oneThroughTen}"
 
 
 /// Records are an aggregate of named values, with optional members (such as methods).
@@ -536,7 +536,7 @@ module RecordTypes =
     let showContactCard (c: ContactCard) = 
         c.Name + " Phone: " + c.Phone + (if not c.Verified then " (unverified)" else "")
 
-    printfn "Alf's Contact Card: %s" (showContactCard contact1)
+    printfn $"Alf's Contact Card: {showContactCard contact1}"
 
     /// This is an example of a Record with a member.
     type ContactCardAlternate =
@@ -556,7 +556,7 @@ module RecordTypes =
           Address = "111 Alf Street" }
    
     // Members are accessed via the '.' operator on an instantiated type.
-    printfn "Alf's alternate contact card is %s" contactAlternate.PrintedContactCard
+    printfn $"Alf's alternate contact card is {contactAlternate.PrintedContactCard}"
 
     /// Records can also be represented as structs via the 'Struct' attribute.
     /// This is helpful in situations where the performance of structs outweighs
@@ -628,7 +628,7 @@ module DiscriminatedUnions =
     /// This example prints all the cards in a playing deck.
     let printAllCards() = 
         for card in fullDeck do 
-            printfn "%s" (showPlayingCard card)
+            printfn $"{showPlayingCard card}"
 
     // Single-case DUs are often used for domain modeling.  This can buy you extra type safety
     // over primitive types such as strings and ints.
@@ -651,7 +651,7 @@ module DiscriminatedUnions =
     let unwrapSSN (SSN s) = s
 
     // Printing single-case DUs is simple with unwrapping functions.
-    printfn "Address: %s, Name: %s, and SSN: %d" (address |> unwrapAddress) (name |> unwrapName) (ssn |> unwrapSSN)
+    printfn $"Address: {address |> unwrapAddress}, Name: {name |> unwrapName}, and SSN: {ssn |> unwrapSSN}"
 
     /// Discriminated Unions also support recursive definitions.
     ///
@@ -772,10 +772,10 @@ module PatternMatching =
 
     /// Pattern Matching via 'function' keyword and Active Patterns often looks like this.
     let printParseResult = function
-        | Int x -> printfn "%d" x
-        | Double x -> printfn "%f" x
-        | Date d -> printfn "%s" (d.ToString())
-        | TimeSpan t -> printfn "%s" (t.ToString())
+        | Int x -> printfn $"%d{x}"
+        | Double x -> printfn $"%f{x}"
+        | Date d -> printfn $"%O{d}"
+        | TimeSpan t -> printfn $"%O{t}"
         | _ -> printfn "Nothing was parse-able!"
 
     // Call the printer with some different values to parse.
@@ -839,7 +839,7 @@ module UnitsOfMeasure =
     let sampleValue3 = sampleValue2 * mile.asMeter   
 
     // Values using Units of Measure can be used just like the primitive numeric type for things like printing.
-    printfn "After a %f race I would walk %f miles which would be %f meters" sampleValue1 sampleValue2 sampleValue3
+    printfn $"After a %f{sampleValue1} race I would walk %f{sampleValue2} miles which would be %f{sampleValue3} meters"
 
 
 /// Classes are a way of defining new object types in F#, and support standard Object-oriented constructs.
@@ -877,7 +877,7 @@ module DefiningClasses =
     /// Get a new scaled vector object, without modifying the original object.
     let vector2 = vector1.Scale(10.0)
 
-    printfn "Length of vector1: %f\nLength of vector2: %f" vector1.Length vector2.Length
+    printfn $"Length of vector1: %f{vector1.Length}\nLength of vector2: %f{vector2.Length}"
 
 
 /// Generic classes allow types to be defined with respect to a set of type parameters.
@@ -954,7 +954,7 @@ module ParallelArrayProgramming =
         |> Array.Parallel.map (fun x -> computeSomeFunction (x % 20))
 
     // Next, print the results.
-    printfn "Parallel computation results: %A" (computeResults())
+    printfn $"Parallel computation results: {computeResults}"
 
 
 
@@ -968,7 +968,7 @@ module Events =
 
     // Next, add handler to the event.
     simpleEvent.Publish.Add(
-        fun x -> printfn "this is handler was added with Publish.Add: %d" x)
+        fun x -> printfn $"this is handler was added with Publish.Add: %d{x}")
 
     // Next, trigger the event.
     simpleEvent.Trigger(5)

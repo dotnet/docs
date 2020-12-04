@@ -66,3 +66,19 @@ landingContent:
             url: linux-sles.md
           - text: Ubuntu
             url: linux-ubuntu.md
+
+# Card
+  - title: "Q&A"
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Standalone installers
+            url: /answers/topics/dotnet-ad-installer.html
+          - text: Visual Studio installers
+            url: /answers/topics/dotnet-ad-vs.html
+          - text: Linux feeds
+            url: /answers/topics/dotnet-ad-linux.html
+          - text: Docker
+            url: /answers/topics/dotnet-ad-docker.html
+          - text: Enterprise deployment
+            url: /answers/topics/dotnet-ad-enterprise.html

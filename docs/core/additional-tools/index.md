@@ -23,6 +23,10 @@ The [.NET Core Uninstall Tool](https://github.com/dotnet/cli-lab/releases) (`dot
 
 [dotnet-trace](../diagnostics/dotnet-trace.md) collects profiling data from your app that can help in scenarios where you need to find out what causes an app to run slow.
 
+## .NET Install tool for extension authors
+
+The [.NET Install tool for extension authors](https://github.com/dotnet/vscode-dotnet-runtime) is a Visual Studio Code extension that allows acquisition of the .NET Core runtime specifically for VS Code extension authors. This tool is intended to be leveraged in extensions that are written in .NET and require .NET to boot pieces of the extension (for example, a language server). The extension is not intended to be used directly by users to install .NET for development.
+
 ## WCF Web Service Reference tool
 
 The WCF (Windows Communication Foundation) [Web Service Reference tool](wcf-web-service-reference-guide.md) is a Visual Studio connected service provider that made its debut in [Visual Studio 2017 version 15.5](/visualstudio/releasenotes/vs2017-relnotes-v15.5#WCFTools). This tool retrieves metadata from a web service in the current solution, on a network location, or from a WSDL file. It generates a source file compatible with .NET Core, defining a WCF proxy class with methods that you can use to access the web service operations.

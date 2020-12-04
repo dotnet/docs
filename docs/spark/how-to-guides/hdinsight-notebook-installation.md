@@ -1,16 +1,16 @@
 ---
-title: Install .NET for Apache Spark on Jupyter notebooks on Azure HDInsight Spark clusters
+title: Install .NET for Apache Spark on Jupyter Notebooks on Azure HDInsight Spark clusters
 description: Learn how to install .NET for Apache Spark on Azure HDInsight's Jupyter Notebooks.
 ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
 
-# Install .NET for Apache Spark on Jupyter notebooks on Azure HDInsight Spark clusters
+# Install .NET for Apache Spark on Jupyter Notebooks on Azure HDInsight Spark clusters
 
-This article teaches you how to install .NET for Apache Spark on Jupyter notebooks on Azure HDInsight Spark clusters. You can deploy .NET for Apache Spark on Azure HDInsight clusters through a combination of the command line and the Azure portal (for more information, see [how to deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md)), but notebooks provide a more interactive and iterative experience.
+This article teaches you how to install .NET for Apache Spark on Jupyter Notebooks on Azure HDInsight Spark clusters. You can deploy .NET for Apache Spark on Azure HDInsight clusters through a combination of the command line and the Azure portal (for more information, see [how to deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md)), but notebooks provide a more interactive and iterative experience.
 
-Azure HDInsight clusters already come with Jupyter notebooks, so all you have to do is configure the Jupyter notebooks to run .NET for Apache Spark. To use .NET for Apache Spark in your Jupyter notebooks, a C# REPL is needed to execute your C# code line-by-line and to preserve execution state when necessary. [Try .NET](https://github.com/dotnet/try) has been integrated as the official .NET REPL.
+Azure HDInsight clusters already come with Jupyter Notebooks, so all you have to do is configure the Jupyter Notebooks to run .NET for Apache Spark. To use .NET for Apache Spark in your Jupyter Notebooks, a C# REPL is needed to execute your C# code line-by-line and to preserve execution state when necessary. [Try .NET](https://github.com/dotnet/try) has been integrated as the official .NET REPL.
 
 To enable .NET for Apache Spark through the Jupyter Notebooks experience, you need to follow a few manual steps through [Ambari](/azure/hdinsight/hdinsight-hadoop-manage-ambari) and submit [script actions](/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) on the HDInsight Spark cluster.
 
@@ -116,11 +116,11 @@ Follow the instructions in the [Stop Livy server](#stop-the-livy-server) section
 
    When prompted, select **CONFIRM RESTART ALL** to continue, then click **OK** to finish.
 
-## Submit jobs through a Jupyter notebook
+## Submit jobs through a Jupyter Notebook
 
-After finishing the previous steps, you can now submit your .NET for Apache Spark jobs through Jupyter notebooks.
+After finishing the previous steps, you can now submit your .NET for Apache Spark jobs through Jupyter Notebooks.
 
-1. Create a new .NET for Apache Spark notebook. Launch a Jupyter notebook from your HDI cluster in the Azure portal.
+1. Create a new .NET for Apache Spark notebook. Launch a Jupyter Notebook from your HDI cluster in the Azure portal.
 
    ![Launch Jupyter Notebook](./media/hdinsight-notebook-installation/launch-notebook.png)
 

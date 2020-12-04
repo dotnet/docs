@@ -82,8 +82,8 @@ You can use the named fields in a pattern matching expression as follows.
 ```fsharp
 let matchShape shape =
     match shape with
-    | Rectangle(height = h) -> printfn "Rectangle with length %f" h
-    | Circle(r) -> printfn "Circle with radius %f" r
+    | Rectangle(height = h) -> printfn $"Rectangle with length %f{h}"
+    | Circle(r) -> printfn $"Circle with radius %f{r}"
 ```
 
 The use of the named field is optional, so in the previous example, both `Circle(r)` and `Circle(radius = r)` have the same effect.
@@ -92,7 +92,7 @@ When you specify multiple fields, use the semicolon (;) as a separator.
 
 ```fsharp
 match shape with
-| Rectangle(height = h; width = w) -> printfn "Rectangle with height %f and width %f" h w
+| Rectangle(height = h; width = w) -> printfn $"Rectangle with height %f{h} and width %f{w}"
 | _ -> ()
 ```
 

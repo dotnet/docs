@@ -15,7 +15,7 @@ helpviewer_keywords:
 By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. In this article, you'll learn how to:
 
 > [!NOTE]
-> The [web defaults](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
+> The [web default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is camel case.
 
 * [Customize individual property names](#customize-individual-property-names)
 * [Convert all property names to camel case](#use-camel-case-for-all-json-property-names)

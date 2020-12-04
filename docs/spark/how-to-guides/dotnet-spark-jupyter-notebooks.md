@@ -1,5 +1,5 @@
 ---
-title: Use Jupyter notebooks
+title: Use Jupyter Notebooks
 titleSuffix: .NET for Apache Spark
 description: Use .NET for Apache Spark in interactive environments like Jupyter Notebook, Jupyter Lab, or Visual Studio Code (VS Code)
 ms.author: luquinta
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.custom: mvc, how-to
 ---
 
-# Use .NET for Apache Spark in Jupyter notebooks
+# Use .NET for Apache Spark in Jupyter Notebooks
 
 In this article, you learn how to run .NET for Apache Spark jobs interactively in Jupyter Notebook and Visual Studio Code (VS Code) with .NET Interactive.
 

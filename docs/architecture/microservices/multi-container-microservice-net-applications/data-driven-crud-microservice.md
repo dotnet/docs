@@ -228,7 +228,7 @@ You can use the ASP.NET Core settings and add a ConnectionString property to you
 
 ```json
 {
-    "ConnectionString": "Server=tcp:127.0.0.1,5433;Initial Catalog=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=Pass@word",
+    "ConnectionString": "Server=tcp:127.0.0.1,5433;Initial Catalog=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]",
     "ExternalCatalogBaseUrl": "http://localhost:5101",
     "Logging": {
         "IncludeScopes": false,
@@ -251,7 +251,7 @@ From your docker-compose.yml or docker-compose.override.yml files, you can initi
 #
 catalog-api:
   environment:
-    - ConnectionString=Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=Pass@word
+    - ConnectionString=Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]
     # Additional environment variables for this service
   ports:
     - "5101:80"

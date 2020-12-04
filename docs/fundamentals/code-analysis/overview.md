@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # Overview of .NET source code analysis
 
-.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and code style issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK. (Previously, you installed code quality analyzers as a [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers), and code style analyzers were installed with Visual Studio.)
+.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and code style issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK. For users who are unable to move to the newer .NET SDK or prefer a NuGet package based model for on-demand analyzer package version updates, they are also available as `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). These analyzers are target platform agnostic, i.e. your project does not need to target a specific .NET target platform. They work fine for projects targeting  `net5` as well as earlier .NET versions, such as `netcoreapp`, `netstandard`, `net472`, etc.
 
 - [Code quality analysis ("CAxxxx" rules)](#code-quality-analysis)
 - [Code style analysis ("IDExxxx" rules)](#code-style-analysis)

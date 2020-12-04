@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a50e088e-3a45-4267-bd51-1a3e6c2d246d
 ---
 # Workflow Execution Properties
+
 Through thread local storage (TLS), the CLR maintains an execution context for each thread. This execution context governs well-known thread properties such as the thread identity, the ambient transaction, and the current permission set in addition to user-defined thread properties like named slots.  
   
  Unlike programs directly targeting the CLR, workflow programs are hierarchically scoped trees of activities that execute in a thread-agnostic environment. This implies that the standard TLS mechanisms cannot directly be used to determine what context is in scope for a given work item. For example, two parallel branches of execution might use different transactions, yet the scheduler might interleave their execution on the same CLR thread.  
@@ -11,6 +12,7 @@ Through thread local storage (TLS), the CLR maintains an execution context for e
  Workflow execution properties provide a mechanism to add context specific properties to an activity’s environment. This allows an activity to declare which properties are in scope for its sub-tree and also provides hooks for setting up and tearing down TLS to properly interoperate with CLR objects.  
   
 ## Creating and Using Workflow Execution Properties  
+
  Workflow execution properties usually implement the <xref:System.Activities.IExecutionProperty> interface, though properties focused on messaging may implement <xref:System.ServiceModel.Activities.ISendMessageCallback> and <xref:System.ServiceModel.Activities.IReceiveMessageCallback> instead. To create a workflow execution property, create a class that implements the <xref:System.Activities.IExecutionProperty> interface and implement the members <xref:System.Activities.IExecutionProperty.SetupWorkflowThread%2A> and <xref:System.Activities.IExecutionProperty.CleanupWorkflowThread%2A>. These members provide the execution property with an opportunity to properly set up and tear down the thread local storage during each pulse of work of the activity that contains the property, including any child activities. In this example, a `ConsoleColorProperty` is created that sets the `Console.ForegroundColor`.  
   
 ```csharp  

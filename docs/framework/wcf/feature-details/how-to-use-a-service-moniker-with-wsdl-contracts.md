@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a88d9650-bb50-4f48-8c85-12f5ce98a83a
 ---
 # How to: Use a Service Moniker with WSDL Contracts
+
 There are situations when you may want to have a completely self-contained COM Interop client. The service you want to call may not expose a MEX endpoint, and the WCF client DLL may not be registered for COM interop. In these cases, you can create a WSDL file that describes the service and pass it into the WCF service moniker. This topic describes how to call the Getting Started WCF sample using a WCF WSDL moniker.  
   
 ### Using the WSDL service moniker  

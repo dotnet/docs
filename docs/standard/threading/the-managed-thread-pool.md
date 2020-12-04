@@ -2,7 +2,6 @@
 title: "The managed thread pool"
 description: Learn about the .NET thread pool that provides background worker threads
 ms.date: "08/02/2018"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "thread pooling [.NET]"
   - "thread pools [.NET]"

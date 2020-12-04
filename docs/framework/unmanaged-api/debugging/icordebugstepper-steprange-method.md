@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStepper::StepRange Method
+
 Causes this ICorDebugStepper to single-step through its containing thread, and to return when it reaches code beyond the last of the specified ranges.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT StepRange (
 ```  
   
 ## Parameters  
+
  `bStepIn`  
  [in] Set to `true` to step into a function that is called within the thread. Set to `false` to step over the function.  
   
@@ -40,6 +42,7 @@ HRESULT StepRange (
  [in] The size of the `ranges` array.  
   
 ## Remarks  
+
  The `StepRange` method works like the [ICorDebugStepper::Step](icordebugstepper-step-method.md) method, except that it does not complete until code outside the given range is reached.  
   
  This can be more efficient than stepping one instruction at a time. Ranges are specified as a list of offset pairs from the start of the stepper's frame.  
@@ -47,6 +50,7 @@ HRESULT StepRange (
  Ranges are relative to the Microsoft intermediate language (MSIL) code of a method. Call [ICorDebugStepper::SetRangeIL](icordebugstepper-setrangeil-method.md) with `false` to make the ranges relative to the native code of a method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

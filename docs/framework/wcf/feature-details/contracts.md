@@ -8,11 +8,13 @@ helpviewer_keywords:
 ms.assetid: c8364183-4ac1-480b-804a-c5e6c59a5d7d
 ---
 # Contracts
+
 This section shows you how to define and implement Windows Communication Foundation (WCF)contracts. A service contract specifies what an endpoint communicates to the outside world. At a more concrete level, it is a statement about a set of specific messages organized into basic message exchange patterns (MEPs), such as request/reply, one-way, and duplex. If a service contract is a logically related set of message exchanges, a service operation is a single message exchange. For example, a `Hello` operation must obviously accept one message (so the caller can announce the greeting) and may or may not return a message (depending upon the courtesy of the operation).  
   
  For more information about contracts and other core WCF concepts, see [Fundamental Windows Communication Foundation Concepts](../fundamental-concepts.md). This topic focuses on understanding service contracts. For more information about how to build clients that use service contracts to connect to services, see [WCF Client Overview](../wcf-client-overview.md). For more information about client channels, the client architecture, and other client issues, see [Clients](clients.md).  
   
 ## Overview  
+
  This topic provides a high-level conceptual orientation to designing and implementing WCF services. Subtopics provide more detailed information about the specifics of designing and implementation. Before designing and implementing your WCF application, it is recommended that you:  
   
 - Understand what a service contract is, how it works, and how to create one.  
@@ -20,6 +22,7 @@ This section shows you how to define and implement Windows Communication Foundat
 - Understand that contracts state minimum requirements that run-time configuration or the hosting environment may not support.  
   
 ## Service Contracts  
+
  A service contract is a statement that provides information about:  
   
 - The grouping of operations in a service.  
@@ -53,6 +56,7 @@ This section shows you how to define and implement Windows Communication Foundat
  In addition, WCF also provides the ability to develop service contracts entirely at the message level. For more information about developing service contracts at the message level, see [Using Message Contracts](using-message-contracts.md). For more information about developing services in non-SOAP XML, see [Interoperability with POX Applications](interoperability-with-pox-applications.md).  
   
 ### Understanding the Hierarchy of Requirements  
+
  A service contract groups the operations; specifies the MEP, message types, and data types those messages carry; and indicates categories of run-time behavior an implementation must have to support the contract (for example, it may require that messages be encrypted and signed). The service contract itself, however, does not specify precisely how these requirements are met, only that they must be. What type of encryption or how a message is signed is up to the implementation and configuration of a compliant service.  
   
  Notice the way that the contract requires certain things of the service contract implementation and the run-time configuration to add behavior. The set of requirements that must be met to expose a service for use builds on the preceding set of requirements. If a contract makes requirements of the implementation, an implementation can require yet more of the configuration and bindings that enable the service to run. Finally, the host application must also support any requirements that the service configuration and bindings add.  

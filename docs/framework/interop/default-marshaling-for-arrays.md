@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc
 ---
 # Default Marshaling for Arrays
+
 In an application consisting entirely of managed code, the common language runtime passes array types as In/Out parameters. In contrast, the interop marshaler passes an array as In parameters by default.  
   
  With [pinning optimization](copying-and-pinning.md), a blittable array can appear to operate as an In/Out parameter when interacting with objects in the same apartment. However, if you later export the code to a type library used to generate the cross-machine proxy, and that library is used to marshal your calls across apartments, the calls can revert to true In parameter behavior.  
@@ -18,6 +19,7 @@ In an application consisting entirely of managed code, the common language runti
  Arrays are complex by nature, and the distinctions between managed and unmanaged arrays warrant more information than other non-blittable types.  
   
 ## Managed Arrays  
+
  Managed array types can vary; however, the <xref:System.Array?displayProperty=nameWithType> class is the base class of all array types. The **System.Array** class has properties for determining the rank, length, and lower and upper bounds of an array, as well as methods for accessing, sorting, searching, copying, and creating arrays.  
   
  These array types are dynamic and do not have a corresponding static type defined in the base class library. It is convenient to think of each combination of element type and rank as a distinct type of array. Therefore, a one-dimensional array of integers is of a different type than a one-dimensional array of double types. Similarly a two-dimensional array of integers is different from a one-dimensional array of integers. The bounds of the array are not considered when comparing types.  
@@ -31,9 +33,11 @@ In an application consisting entirely of managed code, the common language runti
 |**ELEMENT_TYPE_SZARRAY**|Specified by type.|1|0|*type* **[** *n* **]**|  
   
 ## Unmanaged Arrays  
+
  Unmanaged arrays are either COM-style safe arrays or C-style arrays with fixed or variable length. Safe arrays are self-describing arrays that carry the type, rank, and bounds of the associated array data. C-style arrays are one-dimensional typed arrays with a fixed lower bound of 0. The marshaling service has limited support for both types of arrays.  
   
 ## Passing Array Parameters to .NET Code  
+
  Both C-style arrays and safe arrays can be passed to .NET code from unmanaged code as either a safe array or a C-style array. The following table shows the unmanaged type value and the imported type.  
   
 |Unmanaged type|Imported type|  
@@ -42,6 +46,7 @@ In an application consisting entirely of managed code, the common language runti
 |*Type*  **[]**|**ELEMENT_TYPE_SZARRAY** **\<** *ConvertedType* **>**<br /><br /> Rank = 1, lower bound = 0. Size is known only if provided in the managed signature.|  
   
 ### Safe Arrays  
+
  When a safe array is imported from a type library to a .NET assembly, the array is converted to a one-dimensional array of a known type (such as **int**). The same type conversion rules that apply to parameters also apply to array elements. For example, a safe array of **BSTR** types becomes a managed array of strings and a safe array of variants becomes a managed array of objects. The **SAFEARRAY** element type is captured from the type library and saved in the **SAFEARRAY** value of the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration.  
   
  Because the rank and bounds of the safe array cannot be determined from the type library, the rank is assumed to equal 1 and the lower bound is assumed to equal 0. The rank and bounds must be defined in the managed signature produced by the [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md). If the rank passed to the method at run time differs, a <xref:System.Runtime.InteropServices.SafeArrayRankMismatchException> is thrown. If the type of the array passed at run time differs, a <xref:System.Runtime.InteropServices.SafeArrayTypeMismatchException> is thrown. The following example shows safe arrays in managed and unmanaged code.  
@@ -76,6 +81,7 @@ void New3([MarshalAs(UnmanagedType.SafeArray, SafeArraySubType=VT_BSTR)]
  Multidimensional, or nonzero-bound safe arrays, can be marshaled into managed code if the method signature produced by Tlbimp.exe is modified to indicate an element type of **ELEMENT_TYPE_ARRAY** instead of **ELEMENT_TYPE_SZARRAY**. Alternatively, you can use the **/sysarray** switch with Tlbimp.exe to import all arrays as <xref:System.Array?displayProperty=nameWithType> objects. In cases where the array being passed is known to be multidimensional, you can edit the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompile it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](/previous-versions/dotnet/netframework-4.0/e753eftz(v=vs.100)).  
   
 ### C-Style Arrays  
+
  When a C-style array is imported from a type library to a .NET assembly, the array is converted to **ELEMENT_TYPE_SZARRAY**.  
   
  The array element type is determined from the type library and preserved during the import. The same conversion rules that apply to parameters also apply to array elements. For example, an array of **LPStr** types becomes an array of **String** types. Tlbimp.exe captures the array element type and applies the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to the parameter.  
@@ -173,6 +179,7 @@ void New3(ref String ar);
  The interop marshaler uses the **CoTaskMemAlloc** and **CoTaskMemFree** methods to allocate and retrieve memory. Memory allocation performed by unmanaged code must also use these methods.  
   
 ## Passing Arrays to COM  
+
  All managed array types can be passed to unmanaged code from managed code. Depending on the managed type and the attributes applied to it, the array can be accessed as a safe array or a C-style array, as shown in the following table.  
   
 |Managed array type|Exported as|  
@@ -184,6 +191,7 @@ void New3(ref String ar);
  There is a limitation in OLE Automation relating to arrays of structures that contain LPSTR or LPWSTR.  Therefore, **String** fields have to be marshaled as **UnmanagedType.BSTR**. Otherwise, an exception will be thrown.  
   
 ### ELEMENT_TYPE_SZARRAY  
+
  When a method containing an **ELEMENT_TYPE_SZARRAY** parameter (one-dimensional array) is exported from a .NET assembly to a type library, the array parameter is converted to a **SAFEARRAY** of a given type. The same conversion rules apply to the array element types. The contents of the managed array are automatically copied from managed memory into the **SAFEARRAY**. For example:  
   
 #### Managed signature  
@@ -242,6 +250,7 @@ HRESULT New(LPStr ar[]);
  Although the marshaler has the length information needed to marshal the array, the array length is usually passed as a separate argument to convey the length to the callee.  
   
 ### ELEMENT_TYPE_ARRAY  
+
  When a method containing an **ELEMENT_TYPE_ARRAY** parameter is exported from a .NET assembly to a type library, the array parameter is converted to a **SAFEARRAY** of a given type. The contents of the managed array are automatically copied from managed memory into the **SAFEARRAY**. For example:  
   
 #### Managed signature  
@@ -305,6 +314,7 @@ void New(long [][][] ar );
 ```  
   
 ### ELEMENT_TYPE_CLASS \<System.Array>  
+
  When a method containing a <xref:System.Array?displayProperty=nameWithType> parameter is exported from a .NET assembly to a type library, the array parameter is converted to an **_Array** interface. The contents of the managed array are accessible only through the methods and properties of the **_Array** interface. **System.Array** can also be marshaled as a **SAFEARRAY** by using the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute. When marshaled as a safe array, the array elements are marshaled as variants. For example:  
   
 #### Managed signature  
@@ -327,6 +337,7 @@ HRESULT New([in] SAFEARRAY(VARIANT) ar);
 ```  
   
 ### Arrays within Structures  
+
  Unmanaged structures can contain embedded arrays. By default, these embedded array fields are marshaled as a SAFEARRAY. In the following example, `s1` is an embedded array that is allocated directly within the structure itself.  
   
 #### Unmanaged representation  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess::IsTransitionStub Method
+
 Gets a value that indicates whether an address is inside a stub that will cause a transition to managed code.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT IsTransitionStub(
 ```  
   
 ## Parameters  
+
  `address`  
  [in] A `CORDB_ADDRESS` value that specifies the address in question.  
   
@@ -35,11 +37,13 @@ HRESULT IsTransitionStub(
  [out] A pointer to a Boolean value that is `true` if the specified address is inside a stub that will cause a transition to managed code; otherwise *`pbTransitionStub` is `false`.  
   
 ## Remarks  
+
  The `IsTransitionStub` method can be used by unmanaged stepping code to decide when to return stepping control to the managed stepper.  
   
  You can also identity transition stubs by looking at information in the portable executable (PE) file.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

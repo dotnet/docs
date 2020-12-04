@@ -1,13 +1,13 @@
 ---
 title: "XSLT Stylesheet Scripting Using <msxsl:script>"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
 ---
 # XSLT Stylesheet Scripting Using \<msxsl:script>
+
 The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using the `script` element.  
   
 > [!NOTE]
@@ -93,6 +93,7 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
  This throws an exception because the ampersands are not escaped. The document is loaded as XML, and no special treatment is applied to the text between the `msxsl:script` element tags.  
   
 ## Example  
+
  The following example uses an embedded script to calculate the circumference of a circle given its radius.  
   
 ```vb  
@@ -160,6 +161,7 @@ public class Sample
 ```  
   
 ## Input  
+
  number.xml  
   
 ```xml  

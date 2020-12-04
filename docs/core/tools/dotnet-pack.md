@@ -1,6 +1,6 @@
 ---
 title: dotnet pack command
-description: The dotnet pack command creates NuGet packages for your .NET Core project.
+description: The dotnet pack command creates NuGet packages for your .NET project.
 ms.date: 04/28/2020
 ---
 # dotnet pack
@@ -112,7 +112,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 - **`-s|--serviceable`**
 
-  Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
+  Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET Framework 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -179,7 +179,7 @@ Web projects aren't packable by default. To override the default behavior, add t
   ```
 
   For information about how to use `NuspecFile`, `NuspecBasePath`, and `NuspecProperties`, see the following resources:
-  
+
   - [Packing using a .nuspec](/nuget/reference/msbuild-targets#packing-using-a-nuspec)
   - [Advanced extension points to create customized package](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
-  - [Global properties](/visualstudio/msbuild/msbuild-properties?view=vs-2019#global-properties)
+  - [Global properties](/visualstudio/msbuild/msbuild-properties#global-properties)

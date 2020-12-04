@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugMDA Interface
+
 Represents a managed debugging assistant (MDA) message.  
   
 ## Methods  
@@ -34,6 +35,7 @@ Represents a managed debugging assistant (MDA) message.
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

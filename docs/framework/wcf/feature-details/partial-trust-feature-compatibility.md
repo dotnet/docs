@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: a36a540b-1606-4e63-88e0-b7c59e0e6ab7
 ---
 # Partial Trust Feature Compatibility
+
 Windows Communication Foundation (WCF) supports a limited subset of functionality when running in a partially-trusted environment. The features supported in partial trust are designed around a specific set of scenarios as described in the [Supported Deployment Scenarios](supported-deployment-scenarios.md) topic.  
   
 ## Minimum Permission Requirements  
+
  WCF supports a subset of features in applications running under either of the following standard named permission sets:  
   
 - Medium Trust permissions  
@@ -16,6 +18,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
  Attempting to use WCF in partially-trusted applications with more restrictive permissions may result in security exceptions at runtime.  
   
 ## Contracts  
+
  Contracts are subject to the following restrictions when running under partial trust:  
   
 - The service class that implements the `[ServiceContract]` interface must be `public` and have a `public` constructor. If it defines `[OperationContract]` methods, these must be `public`. If it instead implements a `[ServiceContract]` interface, those method implementations can be explicit or `private`, provided that the `[ServiceContract]` interface is `public`.  
@@ -25,17 +28,21 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
 - `[MessageContract]` classes and their members can be `public`. If the `[MessageContract]` class is defined in the application assembly it can be `internal` and have `internal` members.  
   
 ## System-Provided Bindings  
+
  The <xref:System.ServiceModel.BasicHttpBinding> and <xref:System.ServiceModel.WebHttpBinding> are fully supported in a partial trust environment. The <xref:System.ServiceModel.WSHttpBinding> is supported for Transport security mode only.  
   
  Bindings that use transports other than HTTP, such as the <xref:System.ServiceModel.NetTcpBinding>, the <xref:System.ServiceModel.NetNamedPipeBinding>, or the <xref:System.ServiceModel.NetMsmqBinding>, are not supported when running in a partial trust environment.  
   
 ## Custom Bindings  
+
  Custom bindings can be created and used in a partial trust environment, but must follow the restrictions specified in this section.  
   
 ### Transports  
+
  The only allowed transport binding elements are <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>.  
   
 ### Encoders  
+
  The following encoders are allowed:  
   
 - The text encoder (<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>).  
@@ -47,12 +54,15 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
  The Message Transmission Optimization Mechanism (MTOM) encoders are not supported.  
   
 ### Security  
+
  Partially-trusted applications can use WCF's transport-level security features for securing their communication. Message-level security is not supported. Configuring a binding to use message-level security results in an exception at runtime.  
   
 ### Unsupported Bindings  
+
  Bindings that use reliable messaging, transactions, or message-level security are not supported.  
   
 ## Serialization  
+
  Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Xml.Serialization.XmlSerializer> are supported in a partial trust environment. However, use of the <xref:System.Runtime.Serialization.DataContractSerializer> is subject to the following conditions:  
   
 - All serializable `[DataContract]` types must be `public`.  
@@ -68,11 +78,13 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
  See the Serialization section in [Partial Trust Best Practices](partial-trust-best-practices.md) for more information about security when using <xref:System.Runtime.Serialization.DataContractSerializer> safely in a partially-trusted application.  
   
 ### Collection Types  
+
  Some collection types implement both <xref:System.Collections.Generic.IEnumerable%601> and <xref:System.Collections.IEnumerable>. Examples include types that implement <xref:System.Collections.Generic.ICollection%601>. Such types can implement a `public` implementation of `GetEnumerator()`, and an explicit implementation of `GetEnumerator()`. In this case, <xref:System.Runtime.Serialization.DataContractSerializer> invokes the `public` implementation of `GetEnumerator()`, and not the explicit implementation of `GetEnumerator()`. If none of the `GetEnumerator()` implementations are `public` and all are explicit implementations, then <xref:System.Runtime.Serialization.DataContractSerializer> invokes `IEnumerable.GetEnumerator()`.  
   
  For collection types when WCF is running in a partial trust environment, if none of the `GetEnumerator()` implementations are `public`, or none of them are explicit interface implementations, then a security exception is thrown.  
   
 ### NetDataContractSerializer  
+
  Many .NET Framework collection types such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ArrayList>, <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Hashtable> are not supported by the <xref:System.Runtime.Serialization.NetDataContractSerializer> in partial trust. These types have the `[Serializable]` attribute set, and as stated previously in the Serialization section, this attribute is not supported in partial trust. The <xref:System.Runtime.Serialization.DataContractSerializer> treats collections in a special way and is thus able to get around this restriction, but the <xref:System.Runtime.Serialization.NetDataContractSerializer> has no such mechanism to circumvent this restriction.  
   
  The <xref:System.DateTimeOffset> type is not supported by the <xref:System.Runtime.Serialization.NetDataContractSerializer> in partial trust.  
@@ -80,6 +92,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
  A surrogate cannot be used with the <xref:System.Runtime.Serialization.NetDataContractSerializer> (using the <xref:System.Runtime.Serialization.SurrogateSelector> mechanism) when running in partial trust. Note that this restriction applies to using a surrogate, not to serializing it.  
   
 ## Enabling Common Behaviors to Run  
+
  Service or endpoint behaviors not marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute (APTCA) that are added to the [\<commonBehaviors>](../../configure-apps/file-schema/wcf/commonbehaviors.md) section of a configuration file are not run when the application runs in a partial trust environment and no exception is thrown when this occurs. To enforce the running of common behaviors, you must do one of the following options:  
   
 - Mark your common behavior with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute so that it can run when deployed as a partial trust application. Note that a registry entry can be set on the computer to prevent APTCA-marked assemblies from running. .  
@@ -89,6 +102,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
  For an example of a common behavior, see [How to: Lock Down Endpoints in the Enterprise](../extending/how-to-lock-down-endpoints-in-the-enterprise.md).  
   
 ## Configuration  
+
  With one exception, partially-trusted code can only load WCF configuration sections in the local `app.config` file. To load WCF configuration sections that reference WCF sections in machine.config or in a root web.config file requires ConfigurationPermission(Unrestricted). Without this permission, references to WCF configuration sections (behaviors, bindings) outside of the local configuration file results in an exception when the configuration is loaded.  
   
  The one exception is known-type configuration for serialization, as described in the Serialization section of this topic.  
@@ -99,12 +113,15 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
 ## Diagnostics  
   
 ### Event Logging  
+
  Limited event logging is supported under partial trust. Only service activation faults and tracing/message logging failures are logged to the Event Log. The maximum number of events that can be logged by a process is 5, to avoid writing excessive messages to the Event Log.  
   
 ### Message Logging  
+
  Message logging does not work when WCF is run in a partial trust environment. If enabled under partial trust, it does not fail service activation, but no message is logged.  
   
 ### Tracing  
+
  Restricted tracing functionality is available when running in a partial trust environment. In the <`listeners`> element in the configuration file, the only types that you can add are <xref:System.Diagnostics.TextWriterTraceListener> and the new <xref:System.Diagnostics.EventSchemaTraceListener>. Use of the standard <xref:System.Diagnostics.XmlWriterTraceListener> may result in incomplete or incorrect logs.  
   
  Supported trace sources are:  
@@ -135,6 +152,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
 > To avoid flooding the trace files with duplicate errors, WCF disables tracing of the resource or action after the first security failure. There is one exception trace for each failed resource access, the first time an attempt is made to access the resource or perform the action.  
   
 ## WCF Service Host  
+
  WCF service host does not support partial trust. If you want to use a WCF service in partial trust, do not use the WCF Service Library Project template in Visual Studio to build your service. Instead, create a new Web site in Visual Studio by choosing the WCF service Web site template, which can host the service in a Web server on which WCF partial trust is supported.  
   
 ## Other Limitations  
@@ -152,6 +170,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
  Use of WCF features that are not supported in a partial trust environment may result in exceptions at runtime.  
   
 ## Unlisted Features  
+
  The best way to discover that a piece of information or action is unavailable when running in a partial trust environment is to try to access the resource or do the action inside of a `try` block, and then `catch` the failure. To avoid flooding the trace files with duplicate errors, WCF disables tracing of the resource or action after the first security failure. There is one exception trace for each failed resource access, the first time an attempt is made to access the resource or perform the action.  
   
 ## See also

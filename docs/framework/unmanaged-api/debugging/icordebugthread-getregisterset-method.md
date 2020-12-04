@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread::GetRegisterSet Method
+
 Gets an interface pointer to the register set that is associated with the active part of this ICorDebugThread object.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetRegisterSet (
 ```  
   
 ## Parameters  
+
  `ppRegisters`  
  [out] A pointer to the address of an [ICorDebugRegisterSet](icordebugregisterset-interface.md) interface object that represents the register set for the active part of this thread.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

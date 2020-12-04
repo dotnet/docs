@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugChain::GetStackRange Method
+
 Gets the address range of the stack segment for this chain.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetStackRange (
 ```  
   
 ## Parameters  
+
  `pStart`  
  [out] A pointer to a `CORDB_ADDRESS` value that is the starting address of the stack segment.  
   
@@ -36,9 +38,11 @@ HRESULT GetStackRange (
  [out] A pointer to a `CORDB_ADDRESS` value that is the ending address of the stack segment.  
   
 ## Remarks  
+
  The numeric range is meaningful only for comparison of stack frame locations. You cannot make any assumptions about what is actually stored on the stack.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

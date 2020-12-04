@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICeeFileGen Class
+
 Provides functionality for creating a native portable executable (PE) file. The interface will typically be used by compilers to generate their compiled output executable.  
   
 > [!NOTE]
@@ -229,6 +230,7 @@ public:
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ICeeFileGen.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLROnEventManager::RegisterActionOnEvent Method
+
 Registers a callback pointer for the specified event.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT RegisterActionOnEvent (
 ```  
   
 ## Parameters  
+
  `event`  
  [in] One of the [EClrEvent](eclrevent-enumeration.md) values, indicating the event for which to register the callback pointer described by `pAction`.  
   
@@ -47,12 +49,14 @@ HRESULT RegisterActionOnEvent (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The host can register callbacks for either or both of the two event types described by `EClrEvent`. The host gets the `ICLROnEventManager` interface by calling the [ICLRControl::GetCLRManager](iclrcontrol-getclrmanager-method.md) method.  
   
 > [!NOTE]
 > The events that `RegisterActionOnEvent` registers can be fired more than once and from different threads to signal an unload or the disabling of the CLR.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

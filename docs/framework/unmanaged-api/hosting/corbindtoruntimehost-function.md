@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorBindToRuntimeHost Function
+
 Enables hosts to load a specified version of the common language runtime (CLR) into a process.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -36,6 +37,7 @@ HRESULT CorBindToRuntimeHost (
 ```  
   
 ## Parameters  
+
  `pwszVersion`  
  [in] A string that describes the version of the CLR you want to load.  
   
@@ -72,6 +74,7 @@ HRESULT CorBindToRuntimeHost (
  [out] An interface pointer to the version of the runtime that was loaded.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  

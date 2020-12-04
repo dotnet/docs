@@ -1,7 +1,6 @@
 ---
 title: "Time zone overview"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "time zones [.NET], about time zones"
   - "transition time [.NET]"

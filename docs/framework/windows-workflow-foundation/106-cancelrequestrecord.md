@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f72a59aa-8093-4a8e-94df-40acaffb1ffb
 ---
 # 106 - CancelRequestRecord
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: f72a59aa-8093-4a8e-94df-40acaffb1ffb
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a activity within a workflow instance emits cancelrequestedrecord.  
   
 ## Message  
+
  TrackRecord = CancelRequestedRecord, InstanceID=%1, RecordNumber=%2, EventTime=%3, Name=%4, ActivityId=%5, ActivityInstanceId=%6, ActivityTypeName = %7, ChildActivityName = %8, ChildActivityId = %9, ChildActivityInstanceId = %10, ChildActivityTypeName =%11, Annotations=%12, ProfileName = %13  
   
 ## Details  

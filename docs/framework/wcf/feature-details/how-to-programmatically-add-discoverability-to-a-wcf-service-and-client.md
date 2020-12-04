@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1
 ---
 # How to: Programmatically Add Discoverability to a WCF Service and Client
+
 This topic explains how to make a Windows Communication Foundation (WCF) service discoverable. It is based on the [Self-Host](../samples/self-host.md) sample.  
   
 ### To configure the existing Self-Host service sample for Discovery  
@@ -214,6 +215,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
     ```  
   
 ## Example  
+
  The following is a listing of the code for this sample. Because this code is based on the [Self-Host](../samples/self-host.md) sample, only those files that are changed are listed. For more information about the Self-Host sample, see [Setup Instructions](../samples/set-up-instructions.md).  
   
 ```csharp  

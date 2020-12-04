@@ -7,11 +7,13 @@ helpviewer_keywords:
 ms.assetid: 74db0632-1bf0-428b-89c8-bd53b64332e7
 ---
 # Working with NATs and Firewalls
+
 The client and server of a network connection frequently do not have a direct and open path for communication. Packets are filtered, routed, analyzed, and transformed both on the endpoint machines and by intermediate machines on the network. Network address translations (NATs) and firewalls are common examples of intermediate applications that can participate in network communication.  
   
  Windows Communication Foundation (WCF) transports, and message exchange patterns (MEPs) react differently to, the presence of NATs and firewalls. This topic describes how NATs and firewalls function in common network topologies. Recommendations for specific combinations of WCF transports and MEPs are given that help make your applications more robust to NATs and firewalls on the network.  
   
 ## How NATs Affect Communication  
+
  NAT was created to enable several machines to share a single external IP address. A port-remapping NAT maps an internal IP address and port for a connection to an external IP address with a new port number. The new port number allows the NAT to correlate return traffic with the original communication. Many home users now have an IP address that is only privately routable and rely on a NAT to provide global routing of packets.  
   
  A NAT does not provide a security boundary. However, common NAT configurations prevent the internal machines from being directly addressed. This both protects the internal machines from some unwanted connections and makes it difficult to write server applications that must asynchronously send data back to the client. The NAT rewrites the addresses in packets to make it seem like connections are originating at the NAT machine. This causes the server to fail when it attempts to open a connection back to the client. If the server uses the client's perceived address, it fails because the client address cannot be publicly routed. If the server uses the NAT address, it fails to connect because no application is listening on that machine.  
@@ -19,6 +21,7 @@ The client and server of a network connection frequently do not have a direct an
  Some NATs support the configuration of forwarding rules to allow external machines to connect to a particular internal machine. The instructions for configuring forwarding rules varies among different NATs, and asking end users to change their NAT configuration is not recommended for most applications. Many end users either cannot or do not want to change their NAT configuration for a particular application.  
   
 ## How Firewalls Affect Communication  
+
  A *firewall* is a software or hardware device that applies rules to the traffic passing through to decide whether to allow or deny passage. You can configure firewalls to examine incoming and/or outgoing streams of traffic. The firewall provides a security boundary for the network at either the edge of the network or on the endpoint host. Business users have traditionally kept their servers behind a firewall to prevent malicious attacks. Since the introduction of the personal firewall in Windows XP SP2, the number of home users behind a firewall has greatly increased as well. This makes it likely that one or both ends of a connection have a firewall examining packets.  
   
  Firewalls vary greatly in terms of their complexity and capability for examining packets. Simple firewalls apply rules based on the source and destination addresses and ports in packets. Intelligent firewalls can also examine the contents of packets to make decisions. These firewalls come in many different configurations and are often used for specialized applications.  
@@ -30,6 +33,7 @@ The client and server of a network connection frequently do not have a direct an
  Teredo is an IPv6 transition technology that enables the direct addressability of machines behind a NAT. Teredo relies on the use of a server that can be publicly and globally routed to advertise potential connections. The Teredo server gives the application client and server a common meeting point at which they can exchange connection information. The machines then request a temporary Teredo address, and packets are tunneled through the existing network. Teredo support in WCF requires enabling IPv6 and Teredo support in the operating system. Windows XP and later operating systems support Teredo. Windows Vista and later operating systems support IPv6 by default and only require the user to enable Teredo. Windows XP SP2 and Windows Server 2003 require the user to enable both IPv6 and Teredo. For more information, see the [Teredo Overview](/previous-versions/windows/it-pro/windows-xp/bb457011(v=technet.10)).  
   
 ## Choosing a Transport and Message Exchange Pattern  
+
  Selecting a transport and MEP is a three-step process:  
   
 1. Analyze the addressability of the endpoint machines. Enterprise servers commonly have direct addressability, while end users commonly have their addressability blocked by NATs. If both endpoints are behind a NAT, such as in peer-to-peer scenarios between end users, then you might need a technology such as Teredo to provide addressability.  

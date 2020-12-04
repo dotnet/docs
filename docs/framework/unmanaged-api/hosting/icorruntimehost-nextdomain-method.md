@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorRuntimeHost::NextDomain Method
+
 Gets an interface pointer to the next domain in the enumeration.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT NextDomain (
 ```  
   
 ## Parameters  
+
  `hEnum`  
  [in] The enumerator that was obtained through a call to [EnumDomains](icorruntimehost-enumdomains-method.md).  
   
@@ -45,6 +47,7 @@ HRESULT NextDomain (
 |HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

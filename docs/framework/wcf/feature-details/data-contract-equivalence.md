@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: f06f3c7e-c235-4ec1-b200-68142edf1ed1
 ---
 # Data Contract Equivalence
+
 For a client to successfully send data of a certain type to a service, or a service to successfully send data to a client, the sent type does not necessarily have to exist on the receiving end. The only requirement is that the data contracts of both types be equivalent. (Sometimes, strict equivalence is not required, as discussed in [Data Contract Versioning](data-contract-versioning.md).)  
   
  For data contracts to be equivalent, they must have the same namespace and name. Additionally, each data member on one side must have an equivalent data member on the other side.  
@@ -28,6 +29,7 @@ For a client to successfully send data of a certain type to a service, or a serv
  [!code-vb[C_DataContractNames#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractnames/vb/source.vb#5)]  
   
 ## Data Member Order and Data Contract equivalence  
+
  Using the <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> class may affect data contract equivalence. The data contracts must have members that appear in the same order to be equivalent. The default order is alphabetical. For more information, see [Data Member Order](data-member-order.md).  
   
  For example, the following code results in equivalent data contracts.  
@@ -41,6 +43,7 @@ For a client to successfully send data of a certain type to a service, or a serv
  [!code-vb[C_DataContractNames#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractnames/vb/source.vb#7)]  
   
 ## Inheritance, Interfaces, and Data Contract Equivalence  
+
  When determining equivalence, a data contract that inherits from another data contract is treated as if it is just one data contract that includes all of the data members from the base type. Keep in mind that the order of the data members must match and that base type members precede derived type members in the order. Furthermore, if, as in the following code example, two data members have the same order value, the ordering for those data members is alphabetical. For more information, see [Data Member Order](data-member-order.md).  
   
  In the following example, the data contract for type `Employee` is equivalent to the data contract for the type `Worker`.  

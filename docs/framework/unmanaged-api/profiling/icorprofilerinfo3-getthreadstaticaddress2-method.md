@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo3::GetThreadStaticAddress2 Method
+
 Gets the address of the specified thread-static field that is in the scope of the specified thread and application domain.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetThreadStaticAddress2(
 ```  
   
 ## Parameters  
+
  `classId`  
  [in] The ID of the class that contains the requested thread-static field.  
   
@@ -47,6 +49,7 @@ HRESULT GetThreadStaticAddress2(
  [out] A pointer to the address of the static field that is within the specified thread.  
   
 ## Remarks  
+
  The `GetThreadStaticAddress2` method may return one of the following:  
   
 - A CORPROF_E_DATAINCOMPLETE HRESULT if the given static field has not been assigned an address in the specified context.  
@@ -58,6 +61,7 @@ HRESULT GetThreadStaticAddress2(
  The [ICorProfilerInfo2::GetThreadStaticAddress](icorprofilerinfo2-getthreadstaticaddress-method.md) method is similar to the `GetThreadStaticAddress2` method, but does not accept an application domain argument.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

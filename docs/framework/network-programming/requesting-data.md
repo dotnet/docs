@@ -20,9 +20,11 @@ helpviewer_keywords:
 ms.assetid: df6f1e1d-6f2a-45dd-8141-4a85c3dafe1d
 ---
 # Requesting Data
+
 Developing applications that run in the distributed operating environment of today's Internet requires an efficient, easy-to-use method for retrieving data from resources of all types. Pluggable protocols let you develop applications that use a single interface to retrieve data from multiple Internet protocols.  
   
 ## Uploading and Downloading Data from an Internet Server  
+
  For simple request and response transactions, the <xref:System.Net.WebClient> class provides the easiest method for uploading data to or downloading data from an Internet server. **WebClient** provides methods for uploading and downloading files, sending and receiving streams, and sending a data buffer to the server and receiving a response. **WebClient** uses the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes to make the actual connections to the Internet resource, so any registered pluggable protocol is available for use.  
   
  Client applications that need to make more complex transactions request data from servers using the **WebRequest** class and its descendants. **WebRequest** encapsulates the details of connecting to the server, sending the request, and receiving the response. **WebRequest** is an abstract class that defines a set of properties and methods that are available to all applications that use pluggable protocols. Descendants of **WebRequest**, such as <xref:System.Net.HttpWebRequest>, implement the properties and methods defined by **WebRequest** in a way that is consistent with the underlying protocol.  

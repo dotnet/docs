@@ -12,12 +12,15 @@ namespace HttpClientExtensionMethods
         public string Username { get; set; }
         public string Email { get; set; }
     }
+
     public class Program
     {
         public static async Task Main()
         {
-            var client = new HttpClient();
-            client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com");
+            using HttpClient client = new()
+            {
+                BaseAddress = new Uri("https://jsonplaceholder.typicode.com")
+            };
 
             // Get the user information.
             User user = await client.GetFromJsonAsync<User>("users/1");
@@ -29,8 +32,7 @@ namespace HttpClientExtensionMethods
             // Post a new user.
             HttpResponseMessage response = await client.PostAsJsonAsync("users", user);
             Console.WriteLine(
-                (response.IsSuccessStatusCode ? "Success" : "Error")
-                    + $" - {response.StatusCode}");
+                $"{(response.IsSuccessStatusCode ? "Success" : "Error")} - {response.StatusCode}");
         }
     }
 }

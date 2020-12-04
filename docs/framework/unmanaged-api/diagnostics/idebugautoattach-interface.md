@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IDebugAutoAttach Interface
+
 Defines the interface for server-invoked debugger auto attach.  
   
 ## Methods  
@@ -25,6 +26,7 @@ Defines the interface for server-invoked debugger auto attach.
 |[AutoAttach Method](idebugautoattach-autoattach-method.md)|Performs server-invoked debugger auto attach.|  
   
 ## Requirements  
+
  **Header:** DbgAutoAttach.idl  
   
 ## See also

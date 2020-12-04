@@ -1,7 +1,6 @@
 ---
 title: "XML Documents and Data"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 ms.assetid: e695047f-3c0f-4045-8708-5baea91cc380
 ---
 # XML Documents and Data

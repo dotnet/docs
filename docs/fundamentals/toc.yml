@@ -43,7 +43,7 @@ items:
       href: ../core/install/templates.md
     - name: macOS Notarization issues
       href: ../core/install/macos-notarization-issues.md
-    - name: How to check .NET Core versions
+    - name: How to check .NET versions
       href: ../core/install/how-to-detect-installed-versions.md
     - name: Install localized IntelliSense
       href: ../core/install/localized-intellisense.md
@@ -131,21 +131,37 @@ items:
         displayName: tutorials, visual studio for mac, vs for mac
     - name: More tutorials
       href: ../core/tutorials/index.md
-- name: What's new
+- name: What's new in .NET
   items:
-  - name: What's new in .NET 5
-    href: ../core/dotnet-five.md
-  - name: What's new in .NET Core 3.1
-    href: ../core/whats-new/dotnet-core-3-1.md
-  - name: What's new in .NET Core 3.0
-    href: ../core/whats-new/dotnet-core-3-0.md
-  - name: What's new in .NET Core 2.2
+  - name: .NET 5.0
+    items:
+    - name: What's new
+      href: ../core/dotnet-five.md
+    - name: Breaking changes
+      href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 3.1
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-core-3-1.md
+    - name: Breaking changes
+      href: ../core/compatibility/3.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 3.0
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-core-3-0.md
+    - name: Breaking changes
+      href: ../core/compatibility/3.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 2.2
     href: ../core/whats-new/dotnet-core-2-2.md
-  - name: What's new in .NET Core 2.1
-    href: ../core/whats-new/dotnet-core-2-1.md
-  - name: What's new in .NET Core 2.0
+  - name: .NET Core 2.1
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-core-2-1.md
+    - name: Breaking changes
+      href: ../core/compatibility/2.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 2.0
     href: ../core/whats-new/dotnet-core-2-0.md
-  - name: What's new in .NET Standard
+  - name: .NET Standard
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Tools and diagnostics
   items:
@@ -244,6 +260,8 @@ items:
           href: ../core/tools/dotnet-tool-restore.md
         - name: dotnet tool run
           href: ../core/tools/dotnet-tool-run.md
+        - name: dotnet tool search
+          href: ../core/tools/dotnet-tool-search.md
         - name: dotnet tool uninstall
           href: ../core/tools/dotnet-tool-uninstall.md
         - name: dotnet tool update
@@ -315,9 +333,9 @@ items:
         - name: Microsoft.NET.Sdk
           href: ../core/project-sdk/msbuild-props.md
         - name: Microsoft.NET.Sdk.Web
-          href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         - name: Microsoft.NET.Sdk.Razor
-          href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Target frameworks
       href: ../standard/frameworks.md
     - name: Additions to the csproj format
@@ -349,6 +367,10 @@ items:
       href: ../core/additional-tools/index.md
     - name: .NET uninstall tool
       href: ../core/additional-tools/uninstall-tool.md
+    - name: .NET install tool for extension authors
+      href: ../core/additional-tools/vscode-dotnet-runtime.md
+    - name: Generate self-signed certificates
+      href: ../core/additional-tools/self-signed-certificates-guide.md
     - name: WCF web service reference provider
       href: ../core/additional-tools/wcf-web-service-reference-guide.md
     - name: WCF service utility
@@ -366,12 +388,39 @@ items:
       href: ../core/diagnostics/index.md
     - name: Managed debuggers
       href: ../core/diagnostics/managed-debuggers.md
-    - name: Debug Linux dumps
-      href: ../core/diagnostics/debug-linux-dumps.md
+    - name: Dumps
+      items:
+      - name: Overview
+        displayName: dumps
+        href: ../core/diagnostics/dumps.md
+      - name: Linux dumps
+        href: ../core/diagnostics/debug-linux-dumps.md
     - name: EventCounters
       href: ../core/diagnostics/event-counters.md
+    - name: EventPipe
+      href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
       href: ../core/diagnostics/logging-tracing.md
+    - name: Runtime Events
+      items:
+      - name: Overview
+        href: ../fundamentals/diagnostics/runtime-events.md
+      - name: Contention Events
+        href: ../fundamentals/diagnostics/runtime-contention-events.md
+      - name: Exception Events
+        href: ../fundamentals/diagnostics/runtime-exception-events.md
+      - name: Garbage Collection Events
+        href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
+      - name: Interop Events
+        href: ../fundamentals/diagnostics/runtime-interop-events.md
+      - name: Loader and Binder Events
+        href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
+      - name: Method Events
+        href: ../fundamentals/diagnostics/runtime-method-events.md
+      - name: ThreadPool Events
+        href: ../fundamentals/diagnostics/runtime-thread-events.md
+      - name: Type System Events
+        href: ../fundamentals/diagnostics/runtime-type-events.md
     - name: Collect diagnostics in containers
       href: ../core/diagnostics/diagnostics-in-containers.md
     - name: .NET Core CLI global tools
@@ -390,6 +439,8 @@ items:
         href: ../core/diagnostics/dotnet-sos.md
     - name: .NET Core diagnostics tutorials
       items:
+      - name: Collect performance trace in Linux with PerfCollect
+        href: ../core/diagnostics/trace-perfcollect-lttng.md
       - name: Get perf metrics with EventCounters
         href: ../core/diagnostics/event-counter-perf.md
       - name: Debug a memory leak
@@ -1412,6 +1463,8 @@ items:
       href: ../standard/attributes/retrieving-information-stored-in-attributes.md
 - name: Runtime libraries
   items:
+  - name: Overview
+    href: ../standard/runtime-libraries-overview.md
   - name: Format numbers, dates, other types
     items:
     - name: Overview
@@ -1446,7 +1499,7 @@ items:
         href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
       - name: Display dates in non-Gregorian calendars
         href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
-  - name: Strings
+  - name: Work with strings
     items:
     - name: Character encoding in .NET
       href: ../standard/base-types/character-encoding-introduction.md
@@ -1481,109 +1534,71 @@ items:
         href: ../standard/base-types/stringbuilder.md
       - name: "How to: Perform basic string manipulations"
         href: ../standard/base-types/basic-manipulations.md
-    - name: Regular expressions in .NET
+    - name: Parse (convert) strings
       items:
       - name: Overview
-        href: ../standard/base-types/regular-expressions.md
-        displayName: regular expressions
-      - name: Language reference
-        items:
-        - name: Overview
-          href: ../standard/base-types/regular-expression-language-quick-reference.md
-        - name: Character escapes
-          href: ../standard/base-types/character-escapes-in-regular-expressions.md
-        - name: Character classes
-          href: ../standard/base-types/character-classes-in-regular-expressions.md
-        - name: Anchors
-          href: ../standard/base-types/anchors-in-regular-expressions.md
-        - name: Grouping constructs
-          href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
-        - name: Quantifiers
-          href: ../standard/base-types/quantifiers-in-regular-expressions.md
-        - name: Backreference constructs
-          href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
-        - name: Alternation constructs
-          href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
-        - name: Substitutions
-          href: ../standard/base-types/substitutions-in-regular-expressions.md
-        - name: Regular expression options
-          href: ../standard/base-types/regular-expression-options.md
-        - name: Miscellaneous constructs
-          href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
-      - name: Best practices for regular expressions
-        href: ../standard/base-types/best-practices.md
-      - name: Regular expression object model
-        href: ../standard/base-types/the-regular-expression-object-model.md
-      - name: Regular expression behavior
-        items:
-        - name: Overview
-          href: ../standard/base-types/details-of-regular-expression-behavior.md
-        - name: Backtracking
-          href: ../standard/base-types/backtracking-in-regular-expressions.md
-        - name: Compilation and reuse
-          href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
-        - name: Thread safety
-          href: ../standard/base-types/thread-safety-in-regular-expressions.md
-      - name: Examples
-        items:
-        - name: Scan for HREFs
-          href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
-        - name: Change date formats
-          href: ../standard/base-types/regular-expression-example-changing-date-formats.md
-        - name: Extract a protocol and port number from a URL
-          href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
-        - name: Strip invalid characters from a string
-          href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
-        - name: Verify that strings are in valid email format
-          href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
-  - name: Parse (convert) strings
+        href: ../standard/base-types/parsing-strings.md
+      - name: Parse numeric strings
+        href: ../standard/base-types/parsing-numeric.md
+      - name: Parse date and time strings
+        href: ../standard/base-types/parsing-datetime.md
+      - name: Parse other strings
+        href: ../standard/base-types/parsing-other.md
+  - name: Regular expressions
     items:
     - name: Overview
-      href: ../standard/base-types/parsing-strings.md
-    - name: Parse numeric strings
-      href: ../standard/base-types/parsing-numeric.md
-    - name: Parse date and time strings
-      href: ../standard/base-types/parsing-datetime.md
-    - name: Parse other strings
-      href: ../standard/base-types/parsing-other.md
-  - name: Dependency injection
-    items:
-    - name: Overview
-      href: ../core/extensions/dependency-injection.md
-      displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
-    - name: Use dependency injection
-      href: ../core/extensions/dependency-injection-usage.md
-      displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
-    - name: Dependency injection guidelines
-      href: ../core/extensions/dependency-injection-guidelines.md
-      displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
-  - name: Configuration
-    items:
-    - name: Overview
-      href: ../core/extensions/configuration.md
-      displayName: configuration,config,configuration sources,config sources
-    - name: Configuration providers
-      href: ../core/extensions/configuration-providers.md
-      displayName: configuration providers,config providers
-    - name: Implement a custom configuration provider
-      href: ../core/extensions/custom-configuration-provider.md
-      displayName: custom configuration,custom config,custom configuration provider,custom config provider
-    - name: Options pattern
-      href: ../core/extensions/options.md
-  - name: Logging
-    items:
-    - name: Overview
-      href: ../core/extensions/logging.md
-    - name: Logging providers
-      href: ../core/extensions/logging-providers.md
-    - name: Implement a custom logging provider
-      href: ../core/extensions/custom-logging-provider.md
-    - name: High-performance logging
-      href: ../core/extensions/high-performance-logging.md
-    - name: Console log formatting
-      href: ../core/extensions/console-log-formatter.md
-  - name: HostBuilder (generic host)
-    href: ../core/extensions/generic-host.md
+      href: ../standard/base-types/regular-expressions.md
+      displayName: regular expressions
+    - name: Language reference
+      items:
+      - name: Overview
+        href: ../standard/base-types/regular-expression-language-quick-reference.md
+      - name: Character escapes
+        href: ../standard/base-types/character-escapes-in-regular-expressions.md
+      - name: Character classes
+        href: ../standard/base-types/character-classes-in-regular-expressions.md
+      - name: Anchors
+        href: ../standard/base-types/anchors-in-regular-expressions.md
+      - name: Grouping constructs
+        href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
+      - name: Quantifiers
+        href: ../standard/base-types/quantifiers-in-regular-expressions.md
+      - name: Backreference constructs
+        href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
+      - name: Alternation constructs
+        href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
+      - name: Substitutions
+        href: ../standard/base-types/substitutions-in-regular-expressions.md
+      - name: Regular expression options
+        href: ../standard/base-types/regular-expression-options.md
+      - name: Miscellaneous constructs
+        href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
+    - name: Best practices for regular expressions
+      href: ../standard/base-types/best-practices.md
+    - name: Regular expression object model
+      href: ../standard/base-types/the-regular-expression-object-model.md
+    - name: Regular expression behavior
+      items:
+      - name: Overview
+        href: ../standard/base-types/details-of-regular-expression-behavior.md
+      - name: Backtracking
+        href: ../standard/base-types/backtracking-in-regular-expressions.md
+      - name: Compilation and reuse
+        href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
+      - name: Thread safety
+        href: ../standard/base-types/thread-safety-in-regular-expressions.md
+    - name: Examples
+      items:
+      - name: Scan for HREFs
+        href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
+      - name: Change date formats
+        href: ../standard/base-types/regular-expression-example-changing-date-formats.md
+      - name: Extract a protocol and port number from a URL
+        href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
+      - name: Strip invalid characters from a string
+        href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
+      - name: Verify that strings are in valid email format
+        href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
   - name: Serialization
     items:
     - name: Overview
@@ -1595,10 +1610,36 @@ items:
         displayName: json serialization
       - name: How to serialize and deserialize JSON
         href: ../standard/serialization/system-text-json-how-to.md
-      - name: How to write custom converters
-        href: ../standard/serialization/system-text-json-converters-how-to.md
+      - name: Control serialization behavior
+        items:
+        - name: Instantiate JsonSerializerOptions
+          href: ../standard/serialization/system-text-json-configure-options.md
+        - name: Enable case-insensitive matching
+          href: ../standard/serialization/system-text-json-character-casing.md
+        - name: Customize property names and values
+          href: ../standard/serialization/system-text-json-customize-properties.md
+        - name: Ignore properties
+          href: ../standard/serialization/system-text-json-ignore-properties.md
+        - name: Allow invalid JSON
+          href: ../standard/serialization/system-text-json-invalid-json.md
+        - name: Handle overflow JSON
+          href: ../standard/serialization/system-text-json-handle-overflow.md
+        - name: Preserve references
+          href: ../standard/serialization/system-text-json-preserve-references.md
+        - name: Immutable types and non-public accessors
+          href: ../standard/serialization/system-text-json-immutability.md
+        - name: Polymorphic serialization
+          href: ../standard/serialization/system-text-json-polymorphism.md
       - name: How to migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+      - name: Advanced
+        items:
+        - name: Customize character encoding
+          href: ../standard/serialization/system-text-json-character-encoding.md
+        - name: Custom serializers and deserializers
+          href: ../standard/serialization/write-custom-serializer-deserializer.md
+        - name: Custom converters
+          href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization
       items:
       - name: Overview
@@ -1624,8 +1665,6 @@ items:
         href: ../standard/serialization/how-to-chunk-serialized-data.md
       - name: "How to: Determine if a .NET Standard object is serializable"
         href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
-      - name: Sample
-        href: ../standard/serialization/basic-serialization-technology-sample.md
     - name: XML and SOAP serialization
       items:
       - name: Overview
@@ -1753,6 +1792,44 @@ items:
       href: ../standard/io/memory-mapped-files.md
   - name: The System.Console class
     href: ../standard/building-console-apps.md
+  - name: Dependency injection
+    items:
+    - name: Overview
+      href: ../core/extensions/dependency-injection.md
+      displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
+    - name: Use dependency injection
+      href: ../core/extensions/dependency-injection-usage.md
+      displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
+    - name: Dependency injection guidelines
+      href: ../core/extensions/dependency-injection-guidelines.md
+      displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
+  - name: Configuration
+    items:
+    - name: Overview
+      href: ../core/extensions/configuration.md
+      displayName: configuration,config,configuration sources,config sources
+    - name: Configuration providers
+      href: ../core/extensions/configuration-providers.md
+      displayName: configuration providers,config providers
+    - name: Implement a custom configuration provider
+      href: ../core/extensions/custom-configuration-provider.md
+      displayName: custom configuration,custom config,custom configuration provider,custom config provider
+    - name: Options pattern
+      href: ../core/extensions/options.md
+  - name: Logging
+    items:
+    - name: Overview
+      href: ../core/extensions/logging.md
+    - name: Logging providers
+      href: ../core/extensions/logging-providers.md
+    - name: Implement a custom logging provider
+      href: ../core/extensions/custom-logging-provider.md
+    - name: High-performance logging
+      href: ../core/extensions/high-performance-logging.md
+    - name: Console log formatting
+      href: ../core/extensions/console-log-formatter.md
+  - name: HostBuilder (generic host)
+    href: ../core/extensions/generic-host.md
 - name: Data access
   items:
   - name: LINQ
@@ -2205,7 +2282,7 @@ items:
     - name: Use the Windows Compatibility Pack
       href: ../core/porting/windows-compat-pack.md
     - name: Port Windows Forms projects
-      href: ../core/porting/winforms.md
+      href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
     - name: Port WPF projects
       href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
     - name: Port C++/CLI projects

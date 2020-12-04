@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugFrame::GetCaller Method
+
 Gets a pointer to the ICorDebugFrame object in the current chain that called this frame.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetCaller (
 ```  
   
 ## Parameters  
+
  `ppFrame`  
  [out] A pointer to the address of an `ICorDebugFrame` object that represents the calling frame. This value is null if the called frame is the outermost frame in the current chain.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

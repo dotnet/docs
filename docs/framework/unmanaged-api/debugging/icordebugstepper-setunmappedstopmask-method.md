@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStepper::SetUnmappedStopMask Method
+
 Sets a value that specifies the type of unmapped code in which execution will halt.  
   
 ## Syntax  
@@ -28,17 +29,20 @@ HRESULT SetUnmappedStopMask (
 ```  
   
 ## Parameters  
+
  `mask`  
  [in] A value of the CorDebugUnmappedStop enumeration that specifies the type of unmapped code in which the debugger will halt execution.  
   
  The default value is STOP_OTHER_UNMAPPED. The value STOP_UNMANAGED is only valid with interop debugging.  
   
 ## Remarks  
+
  When the debugger finds a just-in-time (JIT) compilation that has no corresponding mapping to Microsoft intermediate language (MSIL), it halts execution if the flag specifying that type of unmapped code has been set; otherwise, stepping transparently continues.  
   
  If the debugger doesn't use a stepper to enter a method, then it won't necessarily step over unmapped code.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0f194476-72f1-467e-bdce-674306316e64
 ---
 # ServiceMetadataBehavior
+
 ServiceMetadataBehavior  
   
 ## Syntax  
@@ -20,12 +21,15 @@ class ServiceMetadataBehavior : Behavior
 ```  
   
 ## Methods  
+
  The ServiceMetadataBehavior class does not define any methods.  
   
 ## Properties  
+
  The ServiceMetadataBehavior class has the following properties:  
   
 ### ExternalMetadataLocation  
+
  Data type: string  
   
  Access type: Read-only  
@@ -33,6 +37,7 @@ class ServiceMetadataBehavior : Behavior
  Sets the location to which the service redirects metadata requests.  
   
 ### HttpGetEnabled  
+
  Data type: boolean  
   
  Access type: Read-only  
@@ -40,6 +45,7 @@ class ServiceMetadataBehavior : Behavior
  Controls whether the service publishes its WSDL at the address controlled by the `HttpGetUrl` attribute.  
   
 ### HttpGetUrl  
+
  Data type: string  
   
  Access type: Read-only  
@@ -47,6 +53,7 @@ class ServiceMetadataBehavior : Behavior
  Sets the location at which the service WSDL is published for retrieval using HTTP.  
   
 ### HttpsGetEnabled  
+
  Data type: boolean  
   
  Access type: Read-only  
@@ -54,6 +61,7 @@ class ServiceMetadataBehavior : Behavior
  Controls whether the service publishes its WSDL over HTTPS at the address controlled by the `HttpsGetUrl` attribute.  
   
 ### HttpsGetUrl  
+
  Data type: string  
   
  Access type: Read-only  

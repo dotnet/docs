@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDeclSecurity Enumeration
+
 Specifies the security actions that can be performed using declarative security.  
   
 ## Syntax  
@@ -75,6 +76,7 @@ typedef enum CorDeclSecurity {
 |`dclMaximumValue`|Reserved.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

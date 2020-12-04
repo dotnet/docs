@@ -25,7 +25,7 @@ The `dotnet help` command opens up the reference page for more detailed informat
 
 - **`COMMAND_NAME`**
 
-  Name of the .NET Core CLI command. For a list of the valid CLI commands, see [CLI commands](index.md#cli-commands).
+  Name of the .NET CLI command. For a list of the valid CLI commands, see [CLI commands](index.md#cli-commands).
 
 ## Options
 

@@ -12,6 +12,7 @@ api_type:
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901
 ---
 # ICorProfilerInfo7::ReadInMemorySymbols
+
 [Supported in the .NET Framework 4.6.1 and later versions]  
   
  Reads bytes from an in-memory symbol stream.  
@@ -29,6 +30,7 @@ HRESULT ReadInMemorySymbols(
 ```  
   
 ## Parameters  
+
  `moduleId`  
  [in] The identifier of the module containing the in-memory stream.  
   
@@ -45,17 +47,20 @@ HRESULT ReadInMemorySymbols(
  [out] When the method returns, contains the actual number of bytes read.  
   
 ## Return Value  
+
  `S_OK`, if a non-zero number of bytes were read.  
   
  `CORPROF_E_MODULE_IS_DYNAMIC`, if the module was created using <xref:System.Reflection.Emit>.  
   
 ## Remarks  
+
  The `ReadInMemorySymbols` method attempts to read `countSymbolBytes` of data starting at offset      `symbolsReadOffset` within the in-memory stream. The data is copied to `pSymbolBytes`, which is expected to have `countSymbolBytes` of space available.     `pCountSymbolsBytesRead` contains the actual number of bytes read, which may be less than `countSymbolBytes` if the end of the stream is reached.  
   
 > [!NOTE]
 > The current implementation does not support Reflection.Emit. If the module was created by using Reflection.Emit, the method returns `CORPROF_E_MODULE_IS_DYNAMIC`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

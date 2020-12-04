@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 5a200b78-1a46-4104-b7fb-da6dbab33893
 ---
 # Default Message Contract
+
 The Default Message Contract sample demonstrates a service where a custom user-defined message is passed to and from service operations. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator interface as a typed service. Instead of the individual service operations for addition, subtraction, multiplication, and division used in the [Getting Started](getting-started-sample.md), this sample passes a custom message that contains both the operands and the operator, and returns the result of the arithmetic calculation.  
   
  The client is a console program (.exe) and the service library (.dll) is hosted by Internet Information Services (IIS). Client activity is visible in the console window.  

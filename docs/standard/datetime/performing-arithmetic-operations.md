@@ -1,7 +1,6 @@
 ---
 title: "Performing arithmetic operations with dates and times"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

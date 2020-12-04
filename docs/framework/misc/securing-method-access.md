@@ -51,6 +51,7 @@ public class Class1
 ```  
   
 ## Excluding Classes and Members from Use by Untrusted Code  
+
  Use the declarations shown in this section to prevent specific classes and methods, as well as properties and events, from being used by partially trusted code. By applying these declarations to a class, you apply the protection to all its methods, properties, and events. However, field access is not affected by declarative security. Note also that link demands help protect against only the immediate callers and might still be subject to luring attacks.  
   
 > [!NOTE]

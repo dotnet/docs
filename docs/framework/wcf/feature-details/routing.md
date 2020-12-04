@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: bd56516c-420d-4c4e-97f9-f72d28d149a9
 ---
 # Routing
+
 The topics in this section cover the Routing Service. The Routing Service is a generic configurable SOAP intermediary that lets you configure content-based routing, set up protocol bridging, handle communication errors, and dynamically update routing logic at run time.  
   
 ## In This Section  
+
  [Routing Service](routing-service.md)  
  Provides an overview of the features of the Routing Service.  
   

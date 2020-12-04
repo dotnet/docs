@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 72a47a51-e5e7-4b76-b24a-299d51e0ae5a
 ---
 # Streaming Message Transfer
+
 Windows Communication Foundation (WCF) transports support two modes for transferring messages:  
   
 - Buffered transfers hold the entire message in a memory buffer until the transfer is complete. A buffered message must be completely delivered before a receiver can read it.  
@@ -15,6 +16,7 @@ Windows Communication Foundation (WCF) transports support two modes for transfer
  By default, the HTTP, TCP/IP, and named pipe transports use buffered transfers. This document describes how to switch these transports from a buffered to streamed transfer mode and the consequences of doing so.  
   
 ## Enabling Streamed Transfers  
+
  Selecting between buffered and streamed transfer modes is done on the binding element of the transport. The binding element has a <xref:System.ServiceModel.TransferMode> property that can be set to `Buffered`, `Streamed`, `StreamedRequest`, or `StreamedResponse`. Setting the transfer mode to `Streamed` enables streaming communication in both directions. Setting the transfer mode to `StreamedRequest` or `StreamedResponse` enables streaming communication in the indicated direction only.  
   
  The <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.NetTcpBinding>, and <xref:System.ServiceModel.NetNamedPipeBinding> bindings expose the <xref:System.ServiceModel.TransferMode> property. For other transports, you must create a custom binding to set the transfer mode.  
@@ -24,11 +26,13 @@ Windows Communication Foundation (WCF) transports support two modes for transfer
  For code samples, see [How to: Enable Streaming](how-to-enable-streaming.md).  
   
 ## Enabling Asynchronous Streaming  
+
  To enable asynchronous streaming, add the  <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior> endpoint behavior to the service host and set its <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.AsynchronousSendEnabled%2A> property to `true`.  
   
  This version of WCF also adde the capability of true asynchronous streaming on the send side. This improves scalability of the service in scenarios where it is streaming messages to multiple clients some of which are slow in reading; possibly due to network congestion or are not reading at all. In these scenarios WCF no longer blocks individual threads on the service per client. This ensures that the service is able to process many more clients thereby improving the scalability of the service.  
   
 ## Restrictions on Streamed Transfers  
+
  Using the streamed transfer mode causes the run time to enforce additional restrictions.  
   
  Operations that occur across a streamed transport can have a contract with at most one input or output parameter. That parameter corresponds to the entire body of the message and must be a <xref:System.ServiceModel.Channels.Message>, a derived type of <xref:System.IO.Stream>, or an <xref:System.Xml.Serialization.IXmlSerializable> implementation. Having a return value for an operation is equivalent to having an output parameter.  
@@ -38,6 +42,7 @@ Windows Communication Foundation (WCF) transports support two modes for transfer
  SOAP headers are always buffered, even when the transfer mode is set to streamed. The headers for a message must not exceed the size of the `MaxBufferSize` transport quota. For more information about this setting, see [Transport Quotas](transport-quotas.md).  
   
 ## Differences Between Buffered and Streamed Transfers  
+
  Changing the transfer mode from buffered to streamed also changes the native channel shape of the TCP and named pipe transports. For buffered transfers, the native channel shape is <xref:System.ServiceModel.Channels.IDuplexSessionChannel>. For streamed transfers, the native channels are <xref:System.ServiceModel.Channels.IRequestChannel> and <xref:System.ServiceModel.Channels.IReplyChannel>. Changing the transfer mode in an existing application that uses these transports directly (that is, not through a service contract) requires changing the expected channel shape for channel factories and listeners.  
   
 ## See also

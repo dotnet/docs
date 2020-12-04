@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 1f9bcd9b-8f8f-47fa-8f1e-0d47236eb800
 ---
 # How to: Access a WSE 3.0 Service with a WCF Client
+
 Windows Communication Foundation (WCF) clients are wire-level compatible with Web Services Enhancements (WSE) 3.0 for Microsoft .NET services when WCF clients are configured to use the August 2004 version of the WS-Addressing specification. However, WSE 3.0 services do not support the metadata exchange (MEX) protocol, so when you use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to create a WCF client class, the security settings are not applied to the generated WCF client. Therefore, you must specify the security settings that the WSE 3.0 service requires after the WCF client is generated.  
   
  You can apply these security settings by using a custom binding to take into account the WSE 3.0 service's requirements and the interoperable requirements between a WSE 3.0 service and a WCF client. These interoperability requirements include the aforementioned use of the August 2004 WS-Addressing specification and the  WSE 3.0default message protection of <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt>. The default message protection for WCF is <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature>. This topic details how to create a WCF binding that interoperates with a WSE 3.0 service. WCF also provides a sample that incorporates this binding. For more information about this sample, see [Interoperating with ASMX Web Services](../samples/interoperating-with-asmx-web-services.md).  
@@ -52,6 +53,7 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
      [!code-vb[c_WCFClientToWSEService#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wcfclienttowseservice/vb/client.vb#4)]  
   
 ## Example  
+
  The following code example defines a custom binding that exposes properties that correspond to the properties of a WSE 3.0 turnkey security assertion. That custom binding, which is named `WseHttpBinding`, is then used to specify the binding properties for a WCF client that communicates with the WSSecurityAnonymous WSE 3.0 QuickStart sample.  
 
 ## See also

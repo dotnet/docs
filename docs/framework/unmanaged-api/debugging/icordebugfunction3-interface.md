@@ -12,6 +12,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugFunction3 Interface
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  Logically extends the ICorDebugFunction interface to provide access to code from a ReJIT request.  
@@ -25,6 +26,7 @@ topic_type:
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

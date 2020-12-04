@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostThreadPoolManager::GetMaxThreads Method
+
 Gets the maximum number of threads that the host maintains concurrently in the thread pool.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetMaxThreads (
 ```  
   
 ## Parameters  
+
  `pdwMaxWorkerThreads`  
  [out] A pointer to the maximum number of threads that the host maintains in the thread pool.  
   
@@ -44,11 +46,13 @@ HRESULT GetMaxThreads (
 |E_NOTIMPL|The host does not provide an implementation of `GetMaxThreads`.|  
   
 ## Remarks  
+
  The CLR calls `GetMaxThreads` to determine the total number of threads in the thread pool. The [GetAvailableThreads](ihostthreadpoolmanager-getavailablethreads-method.md) method gets the number of threads that are not currently processing work items. All requests above the returned value of the `pdwMaxWorkerThreads` parameter remain queued until threads become available.  
   
  If the host does not provide an implementation of `GetMaxThreads`, it should return an HRESULT value of E_NOTIMPL.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

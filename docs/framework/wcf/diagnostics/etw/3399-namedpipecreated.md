@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1619c06b-4d27-4e23-8967-bb1d19a27792
 ---
 # 3399 - NamedPipeCreated
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 1619c06b-4d27-4e23-8967-bb1d19a27792
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted when the named pipe was created.  
   
 ## Message  
+
  NamedPipe '%1' created.  
   
 ## Details

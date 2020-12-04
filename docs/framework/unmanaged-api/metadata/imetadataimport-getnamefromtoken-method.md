@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetNameFromToken Method
+
 Gets the UTF-8 name of the object referenced by the specified metadata token. This method is obsolete.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetNameFromToken (
 ```  
   
 ## Parameters  
+
  `tk`  
  [in] The token representing the object to return the name for.  
   
@@ -36,9 +38,11 @@ HRESULT GetNameFromToken (
  [out] A pointer to the UTF-8 object name in the heap.  
   
 ## Remarks  
+
  `GetNameFromToken` is obsolete. As an alternative, call a method to get the properties of the particular type of token required, such as `GetFieldProps` for a field or `GetMethodProps` for a method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # LoadStringRCEx Function
+
 Translates an HRESULT value to an appropriate error message for the specified culture.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -34,6 +35,7 @@ HRESULT LoadStringRCEx (
 ```  
   
 ## Parameters  
+
  `lcid`  
  [in] A culture identifier. Pass -1 for `lcid` to use the default culture.  
   
@@ -53,6 +55,7 @@ HRESULT LoadStringRCEx (
  [out] A pointer to the length of the error message.  
   
 ## Return Value  
+
  This method returns standard COM error codes, as defined in WinError.h, in addition to the following values.  
   
 |Return code|Description|  
@@ -61,9 +64,11 @@ HRESULT LoadStringRCEx (
 |E_INVALIDARG|`szBuffer` is null, or `iMax` is zero (0).|  
   
 ## Remarks  
+
  If the method does not complete successfully, `szBuffer` contains an empty string.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

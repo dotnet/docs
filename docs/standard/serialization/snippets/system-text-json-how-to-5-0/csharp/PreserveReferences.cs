@@ -40,7 +40,9 @@ namespace PreserveReferences
 
             Employee tylerDeserialized =
                 JsonSerializer.Deserialize<Employee>(tylerJson, options);
-            Console.WriteLine("Tyler is manager of Tyler's first direct report: ");
+
+            Console.WriteLine(
+                "Tyler is manager of Tyler's first direct report: ");
             Console.WriteLine(
                 tylerDeserialized.DirectReports[0].Manager == tylerDeserialized);
         }
@@ -51,7 +53,7 @@ namespace PreserveReferences
 //
 //Tyler serialized:
 //{
-//    "$id": "1",
+//  "$id": "1",
 //  "Name": "Tyler Stein",
 //  "Manager": null,
 //  "DirectReports": {

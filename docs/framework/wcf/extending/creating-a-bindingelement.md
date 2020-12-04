@@ -4,14 +4,17 @@ ms.date: "03/30/2017"
 ms.assetid: 01a35307-a41f-4ef6-a3db-322af40afc99
 ---
 # Creating a BindingElement
+
 Bindings and binding elements (objects that extend <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType>, respectively) are the place where the Windows Communication Foundation (WCF) application model is associated with channel factories and channel listeners. Without bindings, using custom channels requires programming at the channel level as described in [Service Channel-Level Programming](service-channel-level-programming.md) and [Client Channel-Level Programming](client-channel-level-programming.md). This topic discusses the minimum requirement to enable using your channel in WCF, the development of a <xref:System.ServiceModel.Channels.BindingElement> for your channel, and enable use from the application as described in step 4 of [Developing Channels](developing-channels.md).  
   
 ## Overview  
+
  Creating a <xref:System.ServiceModel.Channels.BindingElement> for your channel enables developers to use it in an WCF application. <xref:System.ServiceModel.Channels.BindingElement> objects can be used from the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> class to connect an WCF application to your channel without having to the precise type information of your channel.  
   
  Once a <xref:System.ServiceModel.Channels.BindingElement> has been created, you can enable more functionality depending upon your requirements by following the remaining channel development steps described in [Developing Channels](developing-channels.md).  
   
 ## Adding a Binding Element  
+
  To implement a custom <xref:System.ServiceModel.Channels.BindingElement>, write a class that inherits from <xref:System.ServiceModel.Channels.BindingElement>. For example, if you have developed a `ChunkingChannel` that can break up large messages into chunks and reassemble them on the other end, you can use this channel in any binding by implementing a <xref:System.ServiceModel.Channels.BindingElement> and configuring the binding to use it. The remainder of this topic uses the `ChunkingChannel` as an example to demonstrate the requirements of implementing a binding element.  
   
  A `ChunkingBindingElement` is responsible for creating the `ChunkingChannelFactory` and `ChunkingChannelListener`. It overrides <xref:System.ServiceModel.Channels.BindingElement.CanBuildChannelFactory%2A> and <xref:System.ServiceModel.Channels.BindingElement.CanBuildChannelListener%2A> implementations, and checks that the type parameter is <xref:System.ServiceModel.Channels.IDuplexSessionChannel> (in our example this is the only channel shape supported by the `ChunkingChannel`) and that the other binding elements in the binding support this channel shape.  
@@ -39,11 +42,13 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
  It also contains members for cloning the `BindingElement` and returning our scheme (soap.udp).  
   
 #### Protocol Binding Elements  
+
  New binding elements can replace or augment any of the included binding elements, adding new transports, encodings, or higher-level protocols. To create a new Protocol Binding Element, start by extending the <xref:System.ServiceModel.Channels.BindingElement> class. At a minimum, you must then implement the <xref:System.ServiceModel.Channels.BindingElement.Clone%2A?displayProperty=nameWithType> and implement the `ChannelProtectionRequirements` using <xref:System.ServiceModel.Channels.IChannel.GetProperty%2A?displayProperty=nameWithType>. This returns the <xref:System.ServiceModel.Security.ChannelProtectionRequirements> for this binding element.  For more information, see <xref:System.ServiceModel.Security.ChannelProtectionRequirements>.  
   
  <xref:System.ServiceModel.Channels.BindingElement.Clone%2A> should return a fresh copy of this binding element. As a best practice, we recommend that binding element authors implement <xref:System.ServiceModel.Channels.BindingElement.Clone%2A> by using a copy constructor that calls the base copy constructor, then clones any additional fields in this class.  
   
 #### Transport Binding Elements  
+
  To create a new Transport Binding Element, extend the <xref:System.ServiceModel.Channels.TransportBindingElement> interface. At a minimum, you must then implement the <xref:System.ServiceModel.Channels.BindingElement.Clone%2A> method and the <xref:System.ServiceModel.Channels.TransportBindingElement.Scheme%2A?displayProperty=nameWithType> property.  
   
  <xref:System.ServiceModel.Channels.BindingElement.Clone%2A> – Should return a fresh copy of this Binding Element.  As a best practice, we recommend that Binding Element authors implement Clone by way of a copy constructor that calls the base copy constructor, then clones any additional fields in this class.  
@@ -51,6 +56,7 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
  <xref:System.ServiceModel.Channels.TransportBindingElement.Scheme%2A> – The <xref:System.ServiceModel.Channels.TransportBindingElement.Scheme%2A> get property returns the URI scheme for the transport protocol represented by the binding element. For example, the <xref:System.ServiceModel.Channels.HttpTransportBindingElement?displayProperty=nameWithType> and the <xref:System.ServiceModel.Channels.TcpTransportBindingElement?displayProperty=nameWithType> return "http" and "net.tcp" from their respective <xref:System.ServiceModel.Channels.TransportBindingElement.Scheme%2A> properties.  
   
 #### Encoding Binding Elements  
+
  To create new Encoding Binding Elements, start by extending the <xref:System.ServiceModel.Channels.BindingElement> class and implementing the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement?displayProperty=nameWithType> class. At a minimum, you must then implement the <xref:System.ServiceModel.Channels.BindingElement.Clone%2A>, <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A?displayProperty=nameWithType> methods and the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion%2A?displayProperty=nameWithType> property.  
   
 - <xref:System.ServiceModel.Channels.BindingElement.Clone%2A>. Returns a fresh copy of this binding element. As a best practice, we recommend that binding element authors implement <xref:System.ServiceModel.Channels.BindingElement.Clone%2A> by using a copy constructor that calls the base copy constructor, then clones any additional fields in this class.  

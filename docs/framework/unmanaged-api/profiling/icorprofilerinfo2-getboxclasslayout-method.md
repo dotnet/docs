@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::GetBoxClassLayout Method
+
 Gets information about where the specified value type is located when it is boxed.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetBoxClassLayout(
 ```  
   
 ## Parameters  
+
  `classId`  
  [in] The ID of the class that describes the value type that is boxed.  
   
@@ -35,9 +37,11 @@ HRESULT GetBoxClassLayout(
  [out] An integer that is the offset, relative to the boxed object ID pointer, of the value type.  
   
 ## Remarks  
+
  The `pBufferOffset` value is the location of the value type within a box. After `pBufferOffset` is applied to a boxed object, the value type's class layout can be used to interpret the object's value.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

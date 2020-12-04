@@ -1,7 +1,6 @@
 ---
 title: "Deciding When to Implement the Event-based Asynchronous Pattern"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"

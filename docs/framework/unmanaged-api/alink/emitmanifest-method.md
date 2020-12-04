@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # EmitManifest Method
+
 Emits the final manifest. Call this method after importing all other files and setting all options. Do not call this method for unbound modules.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT EmitManifest(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  ID of the assembly.  
   
@@ -40,9 +42,11 @@ HRESULT EmitManifest(
  Optionally receives the assembly manifest token.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h.  
   
 ## See also

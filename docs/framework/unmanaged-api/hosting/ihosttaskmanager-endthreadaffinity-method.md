@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTaskManager::EndThreadAffinity Method
+
 Notifies the host that managed code is exiting the period in which the current task must not be moved to another operating system thread, following an earlier call to [IHostTaskManager::BeginThreadAffinity](ihosttaskmanager-beginthreadaffinity-method.md).  
   
 ## Syntax  
@@ -38,9 +39,11 @@ HRESULT EndThreadAffinity ();
 |E_UNEXPECTED|`EndThreadAffinity` was called without an earlier corresponding call to `BeginThreadAffinity`.|  
   
 ## Remarks  
+
  The CLR makes a corresponding call to `BeginThreadAffinity` on the current task before calling `EndThreadAffinity`. In the absence of such a corresponding call, the host's implementation of [IHostTaskManager](ihosttaskmanager-interface.md) should return E_UNEXPECTED, and take no action.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

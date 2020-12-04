@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList Method
+
 Gets an interface pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) instance from the supplied list of partial assembly identities.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT  GetCLRAssemblyReferenceList (
 ```  
   
 ## Parameters  
+
  `ppwzAssemblyReferences`  
  [in] An array of null-terminated strings in the form "name, property=value..." that specify a list of partial assembly identities.  
   
@@ -51,6 +53,7 @@ HRESULT  GetCLRAssemblyReferenceList (
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

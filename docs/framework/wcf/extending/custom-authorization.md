@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 4f90311a-2593-462e-9174-2f7ac78217b9
 ---
 # Custom Authorization
+
 Authorization is the process of controlling access to resources and tasks. The topics in this section enable you to create to implement different claim types, or policies.  
   
 ## In This Section  
+
  [How to: Create a Custom Authorization Policy](how-to-create-a-custom-authorization-policy.md)  
  Describes how to create a custom policy.  
   
@@ -23,9 +25,11 @@ Authorization is the process of controlling access to resources and tasks. The t
  Illustrates the scenario when <xref:System.ServiceModel.Description.PrincipalPermissionMode.Custom> is used in combination with a custom authorization policy and a custom principal.  
   
 ## Reference  
+
  <xref:System.IdentityModel.Claims>  
   
 ## Related Sections  
+
  [Authorization](../feature-details/authorization-in-wcf.md)  
   
  [Extending Security](extending-security.md)

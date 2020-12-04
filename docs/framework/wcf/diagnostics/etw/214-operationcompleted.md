@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a6287eef-023f-4816-813c-1802c82366df
 ---
 # 214 - OperationCompleted
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: a6287eef-023f-4816-813c-1802c82366df
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when the Service Model's default `OperationInvoker` has completed a call to a method without that method throwing an exception.  
   
 ## Message  
+
  An OperationInvoker completed the call to the '%1' method. The method call duration was '%2' ms.  
   
 ## Details  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ExceptionSearchFunctionLeave Method
+
 Notifies the profiler that the search phase of exception handling has finished searching a function.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT ExceptionSearchFunctionLeave();
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::RemotingClientInvocationStarted Method
+
 Notifies the profiler that a remoting call has started.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT RemotingClientInvocationStarted();
 ```  
   
 ## Remarks  
+
  This event is the same for synchronous and asynchronous calls.  
   
  Each of the following pairs of callbacks will occur on the same thread:  
@@ -43,6 +45,7 @@ HRESULT RemotingClientInvocationStarted();
 - The profiler does not receive accurate notifications for asynchronous remoting events.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

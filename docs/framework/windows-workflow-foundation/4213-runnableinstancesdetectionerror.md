@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 979ec935-bd9f-4798-be9a-25e08c4b94cf
 ---
 # 4213 - RunnableInstancesDetectionError
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 979ec935-bd9f-4798-be9a-25e08c4b94cf
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Detection of runnable instances failed due to an exception  
   
 ## Message  
+
  Detection of runnable instances failed due to the following exception  
   
 ## Details  

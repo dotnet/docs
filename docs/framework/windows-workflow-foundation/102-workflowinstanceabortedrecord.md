@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bde4378d-4eea-4907-aaf2-c1a2bc770a37
 ---
 # 102 - WorkflowInstanceAbortedRecord
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: bde4378d-4eea-4907-aaf2-c1a2bc770a37
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a workflow instance emits WorkflowInstanceAbortedRecord.  
   
 ## Message  
+
  TrackRecord = WorkflowInstanceAbortedRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, Reason = %5, Annotations = %6, ProfileName = %7  
   
 ## Details  

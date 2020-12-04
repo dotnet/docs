@@ -1,7 +1,6 @@
 ---
 title: "For Further Reading (Parallel Programming)"
 ms.date: "04/26/2018"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "tasks, further reading"
 ms.assetid: 98aee307-dde6-4cad-bb58-078497b8064f

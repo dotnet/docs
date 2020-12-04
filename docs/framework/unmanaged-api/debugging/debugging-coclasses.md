@@ -8,13 +8,16 @@ helpviewer_keywords:
 ms.assetid: 94f94159-108e-436c-99e7-dff3beeb2503
 ---
 # Debugging Coclasses
+
 This section describes the unmanaged coclasses that the debugging API uses.  
   
 ## In This Section  
+
  [CorpubPublish Coclass](corpubpublish-coclass.md)  
  Provides interfaces for publishing information about application domains and processes.  
   
 ## Related Sections  
+
  [Debugging Interfaces](debugging-interfaces.md)  
   
  [Debugging Global Static Functions](debugging-global-static-functions.md)  

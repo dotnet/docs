@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # AddImport Method
+
 Adds imports to the assembly.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT AddImport(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  Unique ID of assembly to be augmented.  
   
@@ -44,9 +46,11 @@ HRESULT AddImport(
  Pointer to token that receives the ID for the resulting file.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h  
   
 ## See also

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9a48c05b-1949-416e-933c-52549b6fcf5e
 ---
 # ICorDebugDataTarget3::GetLoadedModules Method
+
 Gets a list of the modules that have been loaded so far.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT GetLoadedModules(
 ```  
   
 ## Parameters  
+
  `cRequestedModules`  
  [in] The number of modules for which information is requested.  
   
@@ -32,6 +34,7 @@ HRESULT GetLoadedModules(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

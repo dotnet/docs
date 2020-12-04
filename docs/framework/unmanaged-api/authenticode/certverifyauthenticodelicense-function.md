@@ -10,6 +10,7 @@ api_type:
 ms.assetid: 00118de7-33c6-41c4-8e1f-5d5e35e0da83
 ---
 # CertVerifyAuthenticodeLicense Function
+
 Verifies the validity of an Authenticode XrML license.  
   
 ## Syntax  
@@ -24,6 +25,7 @@ HRESULT CertVerifyAuthenticodeLicense (
 ```  
   
 ## Parameters  
+
  `pLicenseBlob`  
  [in] The Authenticode XrML license to be verified.  
   
@@ -55,6 +57,7 @@ HRESULT CertVerifyAuthenticodeLicense (
  See [AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure](axl-authenticode-timestamper-info-structure.md).  
   
 ## Return Value  
+
  Returns `S_OK` if successful. Otherwise, returns an error code.  
   
 ## See also

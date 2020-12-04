@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorCheckDuplicatesFor Enumeration
+
 Specifies the metadata tokens that will be checked for duplicates.  
   
 ## Syntax  
@@ -91,6 +92,7 @@ typedef enum CorCheckDuplicatesFor {
 |`MDDupDefault`|Check for duplicates of `mdMemberRef`, `mdTypeRef`, `mdSignature`, `mdTypeSpec`, and `mdMethodSpec` tokens.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

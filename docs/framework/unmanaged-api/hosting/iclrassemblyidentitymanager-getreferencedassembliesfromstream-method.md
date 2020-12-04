@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream Method
+
 Gets a pointer to an [ICLRReferenceAssemblyEnum](iclrreferenceassemblyenum-interface.md) object that contains assembly identity data for the assemblies referenced by the assembly in the specified stream.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetReferencedAssembliesFromStream (
 ```  
   
 ## Parameters  
+
  `pStream`  
  [in] An interface pointer to an `IStream` containing the assembly to be evaluated.  
   
@@ -55,9 +57,11 @@ HRESULT GetReferencedAssembliesFromStream (
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The caller can choose to exclude a set of known assembly references from the returned list. This set is defined by `pExcludeAssembliesList`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

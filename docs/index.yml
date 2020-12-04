@@ -34,7 +34,7 @@ highlightedContent:
     # Card
     - title: "Create your first web app."
       itemType: learn
-      url: /learn/aspnet/hello-world-tutorial/intro
+      url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
     # Card
     - title: "Build .NET applications with C#"
       itemType: learn
@@ -93,6 +93,9 @@ conceptualContent:
         - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
           itemType: video
           text: What is .NET?
+        - url: /answers/products/dotnet
+          itemType: get-started
+          text: .NET on Q&A
         - url: ./core/introduction.md
           itemType: overview
           text: Overview of .NET

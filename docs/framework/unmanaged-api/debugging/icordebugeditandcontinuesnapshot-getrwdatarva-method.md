@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEditAndContinueSnapshot::GetRwDataRVA Method
+
 `GetRwDataRVA` is obsolete. Do not call this method.  
   
 ## See also

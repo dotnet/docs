@@ -33,6 +33,7 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
 |[\<system.xml.serialization> Element](system-xml-serialization-element.md)|The top-level element for controlling XML serialization.|  
   
 ## Example  
+
  The following code example illustrates how to add types that are used by the <xref:System.Xml.Serialization.XmlSchemaImporter> when mapping XSD types to .NET types.  
   
 ```xml  

@@ -6,6 +6,8 @@ helpviewer_keywords:
   - "named and optional arguments [C#], Office programming"
   - "optional arguments [C#], Office programming"
   - "named arguments [C#], Office programming"
+ms.topic: how-to
+ms.custom: contperfq2
 ms.assetid: 65b8a222-bcd8-454c-845f-84adff5a356f
 ---
 # How to use named and optional arguments in Office programming (C# Programming Guide)

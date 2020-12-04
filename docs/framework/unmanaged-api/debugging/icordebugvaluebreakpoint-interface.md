@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugValueBreakpoint Interface
+
 Extends the ICorDebugBreakpoint interface to provide access to specific values.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Extends the ICorDebugBreakpoint interface to provide access to specific values.
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

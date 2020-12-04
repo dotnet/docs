@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugNativeFrame2::IsChild Method
+
 Determines whether the current frame is a child frame.  
   
 ## Syntax  
@@ -26,10 +27,12 @@ HRESULT IsChild([out] BOOL * pIsChild);
 ```  
   
 ## Parameters  
+
  `pIsChild`  
  [out] A Boolean value that specifies whether the current frame is a child frame.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -41,9 +44,11 @@ HRESULT IsChild([out] BOOL * pIsChild);
 ## Exceptions  
   
 ## Remarks  
+
  The `IsChild` method returns `true` if the frame object on which you call the method is a child of another frame. If this is the case, use the [IsMatchingParentFrame](icordebugnativeframe2-ismatchingparentframe-method.md) method to check whether a frame is its parent.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

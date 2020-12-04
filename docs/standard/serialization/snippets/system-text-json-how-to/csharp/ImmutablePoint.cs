@@ -1,6 +1,6 @@
 ﻿namespace SystemTextJsonSamples
 {
-    // <SnippetImmutablePoint>
+    // <ImmutablePoint>
     public readonly struct ImmutablePoint
     {
         public ImmutablePoint(int x, int y)
@@ -12,5 +12,5 @@
         public int X { get; }
         public int Y { get; }
     }
-    // </SnippetImmutablePoint>
+    // </ImmutablePoint>
 }

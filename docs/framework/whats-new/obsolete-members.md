@@ -1,6 +1,6 @@
 ---
 title: "Obsolete members - .NET Framework"
-description: See the list of type members that are obsolete in .NET 4.5 and later versions. Type members are grouped by assembly. Members of obsolete types are excluded here.
+description: See the list of type members that are obsolete in .NET Framework 4.5 and later versions. Type members are grouped by assembly. Members of obsolete types are excluded here.
 ms.date: "10/17/2017"
 helpviewer_keywords:
   - ".NET Framework, obsolete members"
@@ -128,7 +128,7 @@ This article doesn't list the members of obsolete types. For a list of obsolete 
 > |<xref:System.Security.HostSecurityManagerOptions?displayProperty=nameWithType>|<xref:System.Security.HostSecurityManagerOptions.HostPolicyLevel>|AppDomain policy levels are obsolete and will be removed in a future release of the .NET Framework.|
 > |<xref:System.Security.PermissionSet?displayProperty=nameWithType>|<xref:System.Security.PermissionSet.ConvertPermissionSet%2A>|This method is obsolete and should no longer be used.|
 > |<xref:System.Security.PermissionSet?displayProperty=nameWithType>|<xref:System.Security.PermissionSet.Deny%2A>|<xref:System.Security.PermissionSet.Deny%2A> is obsolete and will be removed in a future release of the .NET Framework.|
-> |<xref:System.Security.SecurityCriticalAttribute?displayProperty=nameWithType>|<xref:System.Security.SecurityCriticalAttribute.Scope%2A>|<xref:System.Security.SecurityCriticalScope?displayProperty=nameWithType> is only used for .NET 2.0 transparency compatibility.|
+> |<xref:System.Security.SecurityCriticalAttribute?displayProperty=nameWithType>|<xref:System.Security.SecurityCriticalAttribute.Scope%2A>|<xref:System.Security.SecurityCriticalScope?displayProperty=nameWithType> is only used for .NET Framework 2.0 transparency compatibility.|
 > |<xref:System.Security.SecurityManager?displayProperty=nameWithType>|<xref:System.Security.SecurityManager.CheckExecutionRights%2A>|Because execution permission checks can no longer be turned off, the <xref:System.Security.SecurityManager.CheckExecutionRights%2A> property no longer has any effect.|
 > |<xref:System.Security.SecurityManager?displayProperty=nameWithType>|<xref:System.Security.SecurityManager.IsGranted%2A>|<xref:System.Security.SecurityManager.IsGranted%2A> is obsolete and will be removed in a future release of the .NET Framework. Use either the <xref:System.AppDomain.PermissionSet%2A?displayProperty=nameWithType> property or the <xref:System.Reflection.Assembly.PermissionSet%2A?displayProperty=nameWithType> property instead.|
 > |<xref:System.Security.SecurityManager?displayProperty=nameWithType>|<xref:System.Security.SecurityManager.LoadPolicyLevelFromFile%2A>|This method is obsolete and will be removed in a future release of the .NET Framework.|

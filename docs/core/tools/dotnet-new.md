@@ -1,6 +1,6 @@
 ---
 title: dotnet new command
-description: The dotnet new command creates new .NET Core projects based on the specified template.
+description: The dotnet new command creates new .NET projects based on the specified template.
 no-loc: [Blazor, WebAssembly]
 ms.date: 09/04/2020
 ---
@@ -27,7 +27,7 @@ dotnet new -h|--help
 
 ## Description
 
-The `dotnet new` command creates a .NET Core project or other artifacts based on a template.
+The `dotnet new` command creates a .NET project or other artifacts based on a template.
 
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
@@ -48,7 +48,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
   - If the CLI can't find a template match when invoking `dotnet new`, not even partial.
   - If there's a newer version of the template available. In this case, the project or artifact is created but the CLI warns you about an updated version of the template.
 
-  The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
+  The following table shows the templates that come pre-installed with the .NET SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
 | Templates                                    | Short name                      | Language     | Tags                                  | Introduced |
 |----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
@@ -127,7 +127,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`--nuget-source <SOURCE>`**
 
-  Specifies a NuGet source to use during install. Available since .NET Core 2.1 SDK.
+  Specifies a NuGet source to use during install.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -169,6 +169,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -188,7 +189,7 @@ Each project template may have additional options available. The core templates 
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp<version>` to create a .NET Core Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net5.0` or `netcoreapp<version>` to create a .NET Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value for .NET 5.0 SDK is `net5.0`.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -206,7 +207,7 @@ Each project template may have additional options available. The core templates 
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `net5.0`. Available since .NET Core 3.1 SDK.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -260,6 +261,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -283,6 +285,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.2         | `netcoreapp2.2` |
@@ -507,6 +510,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.1` |
@@ -594,6 +598,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -646,6 +651,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
@@ -666,6 +672,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
@@ -751,6 +758,7 @@ Each project template may have additional options available. The core templates 
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.1` |
@@ -765,7 +773,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--sdk-version <VERSION_NUMBER>`**
 
-  Specifies the version of the .NET Core SDK to use in the *global.json* file.
+  Specifies the version of the .NET SDK to use in the *global.json* file.
 
 ***
 

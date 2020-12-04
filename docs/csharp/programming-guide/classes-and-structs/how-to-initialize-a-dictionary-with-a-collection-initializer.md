@@ -4,6 +4,8 @@ description: Learn how to initialize a dictionary in C#, using either the Add me
 ms.date: 12/20/2018
 helpviewer_keywords: 
   - "collection initializers [C#], with Dictionary"
+ms.topic: how-to
+ms.custom: contperfq2
 ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
 ---
 # How to initialize a dictionary with a collection initializer (C# Programming Guide)

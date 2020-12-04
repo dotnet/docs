@@ -1,7 +1,6 @@
 ---
 title: "Use foreach to remove items in a BlockingCollection"
 ms.date: 05/04/2020
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"

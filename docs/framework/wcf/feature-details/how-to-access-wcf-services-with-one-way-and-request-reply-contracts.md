@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7e10d3a5-fcf4-4a4b-a8d6-92ee2c988b3b
 ---
 # How to: Access WCF Services with One-Way and Request-Reply Contracts
+
 The following procedures describe how to access a Windows Communication Foundation (WCF) service that defines a one-way contract and a request-reply contract and that does not use the duplex communication pattern.  
   
 ### To define the service  
@@ -241,6 +242,7 @@ The following procedures describe how to access a Windows Communication Foundati
     ```  
   
 ## Example  
+
  The following is a complete listing of the code used  in this topic.  
   
 ```csharp  

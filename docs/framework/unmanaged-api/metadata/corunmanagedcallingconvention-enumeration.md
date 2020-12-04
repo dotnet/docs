@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorUnmanagedCallingConvention Enumeration
+
 Specifies the calling conventions for unmanaged code.  
   
 ## Syntax  
@@ -50,9 +51,11 @@ typedef enum CorUnmanagedCallingConvention {
 |`IMAGE_CEE_CS_CALLCONV_FASTCALL`|Not used.|  
   
 ## Remarks  
+
  The CLR does not support the "fast" calling convention in the .NET Framework version 1.0.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

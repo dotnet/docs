@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback::Breakpoint Method
+
 Notifies the debugger when a breakpoint is encountered.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT Breakpoint (
 ```  
   
 ## Parameters  
+
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain that contains the breakpoint.  
   
@@ -40,6 +42,7 @@ HRESULT Breakpoint (
  [in] A pointer to an ICorDebugBreakpoint object that represents the breakpoint.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

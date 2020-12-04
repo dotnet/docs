@@ -11,7 +11,7 @@ metadata:
   ms.collection: collection
   author: camsoper
   ms.author: casoper
-  ms.date: 10/20/2020
+  ms.date: 11/13/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -30,6 +30,10 @@ landingContent:
         links:
           - text: .NET IoT Libraries overview  
             url: intro.md               
+      - linkListType: get-started
+        links:
+          - text: .NET IoT on Q&A
+            url: /answers/topics/dotnet-iot.html
       - linkListType: deploy
         links:
           - text: Deploy .NET apps to Raspberry Pi  

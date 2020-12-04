@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymENCUnmanagedMethod::GetLineFromOffset Method
+
 Gets the line information associated with an offset. If the offset parameter (`dwOffset`) is not a sequence point, this method gets the line information associated with the previous offset.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetLineFromOffset(
 ```  
   
 ## Parameters  
+
  `dwOffset`  
  [in] A `ULONG32` that contains the offset.  
   
@@ -51,9 +53,11 @@ HRESULT GetLineFromOffset(
  [out] A pointer to a `ULONG32` that receives the associated sequence point.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStepper Interface
+
 Represents a step in code execution that is performed by a debugger, serves as an identifier between the issuance and completion of a command, and provides a way to cancel a step.  
   
 ## Methods  
@@ -32,6 +33,7 @@ Represents a step in code execution that is performed by a debugger, serves as a
 |[StepRange Method](icordebugstepper-steprange-method.md)|Causes this `ICorDebugStepper` to single-step through its containing thread, and to return when it reaches code beyond the last of the specified ranges.|  
   
 ## Remarks  
+
  The `ICorDebugStepper` interface serves the following purposes:  
   
 - It acts as an identifier between a step command that is issued and the completion of that command.  
@@ -48,6 +50,7 @@ Represents a step in code execution that is performed by a debugger, serves as a
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

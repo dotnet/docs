@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e33cf876-8979-440b-9b23-4a12d1139960
 ---
 # Using Activity Delegates
+
 Activity delegates enable activity authors to expose callbacks with specific signatures, for which users of the activity can provide activity-based handlers. Two types of activity delegates are available: <xref:System.Activities.ActivityAction%601> is used to define activity delegates that do not have a return value, and <xref:System.Activities.ActivityFunc%601> is used to define activity delegates that do have a return value.
 
 Activity delegates are useful in scenarios where a child activity must be constrained to having a certain signature. For example, a <xref:System.Activities.Statements.While> activity can contain any type of child activity with no constraints, but the body of a <xref:System.Activities.Statements.ForEach%601> activity is an <xref:System.Activities.ActivityAction%601>, and the child activity that is ultimately executed by <xref:System.Activities.Statements.ForEach%601> must have an <xref:System.Activities.InArgument%601> that is the same type of the members of the collection that the <xref:System.Activities.Statements.ForEach%601> enumerates.

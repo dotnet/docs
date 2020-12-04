@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo3::GetFunctionEnter3Info Method
+
 Provides the stack frame and argument information of the function that is being reported to the profiler by the [FunctionEnter3WithInfo](functionenter3withinfo-function.md) function. This method can be called only during the `FunctionEnter3WithInfo` callback.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetFunctionEnter3Info(
 ```  
   
 ## Parameters  
+
  `functionId`  
  [in] The `FunctionID` of the function that is being entered.  
   
@@ -48,9 +50,11 @@ HRESULT GetFunctionEnter3Info(
  [out] A pointer to a [COR_PRF_FUNCTION_ARGUMENT_INFO](cor-prf-function-argument-info-structure.md) structure that describes the locations of the function's arguments in memory, in left-to-right order.  
   
 ## Remarks  
+
  The profiler must allocate sufficient space for the `COR_PRF_FUNCTION_ARGUMENT_INFO` structure of the function that is being inspected, and must indicate the size in the `pcbArgumentInfo` parameter.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

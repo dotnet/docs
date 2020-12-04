@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
 ---
 # SignTool.exe (Sign Tool)
+
 Sign Tool is a command-line tool that digitally signs files, verifies signatures in files, and time-stamps files.  
   
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
@@ -49,7 +50,9 @@ signtool [command] [options] [file_name | ...]
 |**/debug**|Displays debugging information.|  
   
 <a name="catdb"></a>
+
 ## catdb Command Options  
+
  The following table lists the options that can be used with the `catdb` command.  
   
 |Catdb option|Description|  
@@ -60,7 +63,9 @@ signtool [command] [options] [file_name | ...]
 |`/u`|Specifies that a unique name is automatically generated for the added catalog files. If necessary, the catalog files are renamed to prevent name conflicts with existing catalog files. If this option is not specified, Sign Tool overwrites any existing catalog that has the same name as the catalog being added.|  
   
 <a name="sign"></a>
+
 ## sign Command Options  
+
  The following table lists the options that can be used with the `sign` command.  
   
 |Sign command option|Description|  
@@ -97,7 +102,9 @@ signtool [command] [options] [file_name | ...]
  For usage examples, see [Using SignTool to Sign a File](/windows/desktop/SecCrypto/using-signtool-to-sign-a-file).  
   
 <a name="TimeStamp"></a>
+
 ## TimeStamp Command Options  
+
  The following table lists the options that can be used with the `TimeStamp` command.  
   
 |TimeStamp option|Description|  
@@ -111,6 +118,7 @@ signtool [command] [options] [file_name | ...]
  For a usage example, see [Adding Time Stamps to Previously Signed Files](/windows/desktop/SecCrypto/adding-time-stamps-to-previously-signed-files).  
   
 <a name="Verify"></a>
+
 ## Verify Command Options  
   
 |Verify option|Description|  
@@ -137,6 +145,7 @@ signtool [command] [options] [file_name | ...]
  For usage examples, see [Using SignTool to Verify a File Signature](/windows/desktop/SecCrypto/using-signtool-to-verify-a-file-signature).  
   
 ## Return Value  
+
  Sign Tool returns one of the following exit codes when it terminates.  
   
 |Exit code|Description|  
@@ -146,6 +155,7 @@ signtool [command] [options] [file_name | ...]
 |2|Execution has completed with warnings.|  
 
 ## Examples  
+
  The following command adds the catalog file MyCatalogFileName.cat to the system component and driver database. The `/u` option generates a unique name if necessary to prevent replacing an existing catalog file named `MyCatalogFileName.cat`.  
   
 ```console  

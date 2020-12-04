@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorPEKind Enumeration
+
 Contains values that describe a portable executable (PE) file, as returned from a call to [IMetaDataImport2::GetPEKind](imetadataimport2-getpekind-method.md).  
   
 ## Syntax  
@@ -45,9 +46,11 @@ typedef enum CorPEKind {
 |pe32BitPreferred|Indicates that this PE file is platform-neutral and prefers to be loaded in a 32-bit environment.|  
   
 ## Remarks  
+
  These values can be used in bitwise combinations.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

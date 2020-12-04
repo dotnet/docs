@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStepper2::SetJMC Method
+
 Sets a value that specifies whether this ICorDebugStepper steps only through code that is authored by an application's developer. This process is also known as just my code (JMC) debugging.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT SetJMC (
 ```  
   
 ## Parameters  
+
  `fIsJMCStepper`  
  [in] Set to `true` to step only through code that is authored by an application's developer; otherwise, set to `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

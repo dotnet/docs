@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread2::GetTaskID Method
+
 Gets the identifier of the task running on this thread.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT GetTaskID (
 ```  
   
 ## Parameters  
+
  `pTaskId`  
  [out] A pointer to the identifier of the task running on the thread represented by this ICorDebugThread2 object.  
   
 ## Remarks  
+
  A task can only be running on the thread if the thread is associated with a connection. `GetTaskID` returns zero in `pTaskId` if the thread is not associated with a connection.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

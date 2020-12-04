@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess::IsOSSuspended Method
+
 Gets a value that indicates whether the specified thread has been suspended as a result of the debugger stopping this process.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT IsOSSuspended(
 ```  
   
 ## Parameters  
+
  `threadID`  
  [in] The ID of thread in question.  
   
@@ -35,11 +37,13 @@ HRESULT IsOSSuspended(
  [out] A pointer to a Boolean value that is `true` if the specified thread has been suspended; otherwise *`pbSuspended` is `false`.  
   
 ## Remarks  
+
  When the specified thread has been suspended as a result of the debugger stopping this process, the specified thread's Win32 suspend count is incremented by one. The debugger user interface (UI) may want to take this information into account if it displays the operating system (OS) suspend count of the thread to the user.  
   
  The `IsOSSuspended` method makes sense only in the context of unmanaged debugging. During managed debugging, threads are cooperatively suspended rather than OS-suspended.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

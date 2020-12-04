@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ExceptionUnwindFinallyLeave Method
+
 Notifies the profiler that the unwind phase of exception handling has left a `finally` clause.  
   
 ## Syntax  
@@ -26,11 +27,13 @@ HRESULT ExceptionUnwindFinallyLeave();
 ```  
   
 ## Remarks  
+
  The profiler should not block during this call because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled. If the profiler blocks here and a garbage collection is attempted, the runtime will block until this callback returns.  
   
  Also, during this call, the profiler must not call into managed code or in any way cause a managed-memory allocation.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

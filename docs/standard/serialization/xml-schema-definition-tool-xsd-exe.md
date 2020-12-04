@@ -44,6 +44,7 @@ xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/paramet
 |**/p\[arameters\]:**_file.xml_|Read options for various operation modes from the specified .xml file. The short form is `/p:`. For more information, see the [Remarks](#remarks) section.|
 
 ## XSD File Options
+
  You must specify only one of the following options for .xsd files.
 
 |Option|Description|
@@ -199,6 +200,7 @@ The following table shows the attributes that can also be used with the `<xsd>` 
 |help|Displays command syntax and options for the tool. Set to `true` or `false`.|
 
 ## Examples
+
  The following command generates an XML schema from `myFile.xdr` and saves it to the current directory.
 
 ```console

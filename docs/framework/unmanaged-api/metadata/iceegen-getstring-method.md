@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICeeGen::GetString Method
+
 Gets the string stored at the specified relative virtual address.  
   
  This method is obsolete and should not be used.  
@@ -31,6 +32,7 @@ HRESULT GetString (
 ```  
   
 ## Parameters  
+
  `RVA`  
  [in] The relative virtual address of the string to return.  
   
@@ -38,6 +40,7 @@ HRESULT GetString (
  [out] The returned string.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

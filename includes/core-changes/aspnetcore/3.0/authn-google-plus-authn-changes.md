@@ -55,7 +55,7 @@ The mitigation given for ASP.NET Core 2.x can also be used for ASP.NET Core 3.0.
     o.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
     o.Authority = "https://accounts.google.com";
     o.ResponseType = OpenIdConnectResponseType.Code;
-    o.CallbackPath = "/signin-google"; // Or register the default "/sigin-oidc"
+    o.CallbackPath = "/signin-google"; // Or register the default "/signin-oidc"
     o.Scope.Add("email");
 });
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();

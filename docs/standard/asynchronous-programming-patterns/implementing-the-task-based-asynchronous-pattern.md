@@ -13,20 +13,24 @@ helpviewer_keywords:
 ms.assetid: fab6bd41-91bd-44ad-86f9-d8319988aa78
 ---
 # Implementing the Task-based Asynchronous Pattern
+
 You can implement the Task-based Asynchronous Pattern (TAP) in three ways: by using the C# and Visual Basic compilers in Visual Studio, manually, or through a combination of the compiler and manual methods. The following sections discuss each method in detail. You can use the TAP pattern to implement both compute-bound and I/O-bound asynchronous operations. The [Workloads](#workloads) section discusses each type of operation.
 
 ## Generating TAP methods
 
 ### Using the compilers
+
 Starting with .NET Framework 4.5, any method that is attributed with the `async` keyword (`Async` in Visual Basic) is considered an asynchronous method, and the C# and Visual Basic compilers perform the necessary transformations to implement the method asynchronously by using TAP. An asynchronous method should return either a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> or a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> object. For the latter, the body of the function should return a `TResult`, and the compiler ensures that this result is made available through the resulting task object. Similarly, any exceptions that go unhandled within the body of the method are marshaled to the output task and cause the resulting task to end in the <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=nameWithType> state. The exception to this rule is when an <xref:System.OperationCanceledException> (or derived type) goes unhandled, in which case the resulting task ends in the <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> state.
 
 ### Generating TAP methods manually
+
 You may implement the TAP pattern manually for better control over implementation. The compiler relies on the public surface area exposed from the <xref:System.Threading.Tasks?displayProperty=nameWithType> namespace and supporting types in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace. To implement the TAP yourself, you create a <xref:System.Threading.Tasks.TaskCompletionSource%601> object, perform the asynchronous operation, and when it completes, call the <xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult%2A>, <xref:System.Threading.Tasks.TaskCompletionSource%601.SetException%2A>, or <xref:System.Threading.Tasks.TaskCompletionSource%601.SetCanceled%2A> method, or the `Try` version of one of these methods. When you implement a TAP method manually, you must complete the resulting task when the represented asynchronous operation completes. For example:
 
 [!code-csharp[Conceptual.TAP_Patterns#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#1)]
 [!code-vb[Conceptual.TAP_Patterns#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#1)]
 
 ### Hybrid approach
+
  You may find it useful to implement the TAP pattern manually but to delegate the core logic for the implementation to the compiler. For example, you may want to use the hybrid approach when you want to verify arguments outside a compiler-generated asynchronous method so that exceptions can escape to the method's direct caller rather than being exposed through the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> object:
 
  [!code-csharp[Conceptual.TAP_Patterns#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#2)]
@@ -35,9 +39,11 @@ You may implement the TAP pattern manually for better control over implementatio
  Another case where such delegation is useful is when you're implementing fast-path optimization and want to return a cached task.
 
 ## Workloads
+
 You may implement both compute-bound and I/O-bound asynchronous operations as TAP methods. However, when TAP methods are exposed publicly from a library, they should be provided only for workloads that involve I/O-bound operations (they may also involve computation, but should not be purely computational). If a method is purely compute-bound, it should be exposed only as a synchronous implementation. The code that consumes it may then choose whether to wrap an invocation of that synchronous method into a task to offload the work to another thread or to achieve parallelism. And if a method is I/O-bound, it should be exposed only as an asynchronous implementation.
 
 ### Compute-bound tasks
+
 The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class is ideally suited for representing computationally intensive operations. By default, it takes advantage of special support within the <xref:System.Threading.ThreadPool> class to provide efficient execution, and it also provides significant control over when, where, and how asynchronous computations execute.
 
 You can generate compute-bound tasks in the following ways:
@@ -68,6 +74,7 @@ Compute-bound tasks end in a <xref:System.Threading.Tasks.TaskStatus.Canceled> s
 If another exception goes unhandled within the body of the task, the task ends in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, and any attempts to wait on the task or access its result causes an exception to be thrown.
 
 ### I/O-bound tasks
+
 To create a task that should not be directly backed by a thread for the entirety of its execution, use the <xref:System.Threading.Tasks.TaskCompletionSource%601> type. This type exposes a <xref:System.Threading.Tasks.TaskCompletionSource%601.Task%2A> property that returns an associated <xref:System.Threading.Tasks.Task%601> instance. The life cycle of this task is controlled by <xref:System.Threading.Tasks.TaskCompletionSource%601> methods such as <xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult%2A>, <xref:System.Threading.Tasks.TaskCompletionSource%601.SetException%2A>, <xref:System.Threading.Tasks.TaskCompletionSource%601.SetCanceled%2A>, and their `TrySet` variants.
 
 Let's say that you want to create a task that will complete after a specified period of time. For example, you may want to delay an activity in the user interface. The <xref:System.Threading.Timer?displayProperty=nameWithType> class already provides the ability to asynchronously invoke a delegate after a specified period of time, and by using <xref:System.Threading.Tasks.TaskCompletionSource%601> you can put a <xref:System.Threading.Tasks.Task%601> front on the timer, for example:
@@ -86,6 +93,7 @@ The <xref:System.Threading.Tasks.TaskCompletionSource%601> class doesn't have a 
 [!code-vb[Conceptual.TAP_Patterns#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#6)]
 
 ### Mixed compute-bound and I/O-bound tasks
+
 Asynchronous methods are not limited to just compute-bound or I/O-bound operations but may represent a mixture of the two. In fact, multiple asynchronous operations are often combined into larger mixed operations. For example, the `RenderAsync` method in a previous example performed a computationally intensive operation to render an image based on some input `imageData`. This `imageData` could come from a web service that you asynchronously access:
 
 [!code-csharp[Conceptual.TAP_Patterns#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#7)]

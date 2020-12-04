@@ -1,7 +1,6 @@
 ---
 title: "Threading objects and features"
 ms.date: "10/01/2018"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "threading [.NET], features"
   - "managed threading"

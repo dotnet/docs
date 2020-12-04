@@ -7,12 +7,14 @@ helpviewer_keywords:
 ms.assetid: a4f39bfc-3c5e-4d51-a312-71c5c3ce0afd
 ---
 # Tracing and Message Logging
+
 This sample demonstrates how to enable tracing and message logging. The resulting traces and message logs are viewed using the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md). This sample is based on the [Getting Started](getting-started-sample.md).  
   
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 ## Tracing  
+
  Windows Communication Foundation (WCF) uses the tracing mechanism defined in the <xref:System.Diagnostics> namespace. In this tracing model, trace data is produced by trace sources that applications implement. Each source is identified by a name. Trace consumers create trace listeners for the trace sources for which they want to retrieve information. To receive trace data, you must create a listener for the trace source. In WCF, this can be done by adding the following code to either the service’s or client’s configuration file by setting the Service Model trace source `switchValue`:  
   
 ```xml  
@@ -41,6 +43,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
  For more information about trace sources, see the Trace Source section in the [Configuring Tracing](../diagnostics/tracing/configuring-tracing.md) topic.  
   
 ## Activity Tracing and Propagation  
+
  Having `ActivityTracing` enabled and `propagateActivity` set to `true` in the `system.ServiceModel` trace sources for both the client and service provide correlation of traces within logical units of processing (activities), across activities within endpoints (through activity transfers), and across activities spanning multiple endpoints (through activity ID propagation).  
   
  These three mechanisms (activities, transfers, and propagation) can help you locate the root cause of an error more quickly using the Service Trace Viewer tool. For more information, see [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md).  
@@ -56,6 +59,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
  For more information about user-defined activity trace, please see the [Extending Tracing](extending-tracing.md) sample.  
   
 ## Message Logging  
+
  Message logging can be enabled both on the client and service of any WCF application. To enable message logging, you must add the following code to either the client or service:  
   
 ```xml  

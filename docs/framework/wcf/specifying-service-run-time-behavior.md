@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: 5c5450ea-6af1-4b75-a267-613d0ac54707
 ---
 # Specifying Service Run-Time Behavior
+
 Once you have designed a service contract ([Designing Service Contracts](designing-service-contracts.md)) and implemented your service contract ([Implementing Service Contracts](implementing-service-contracts.md)) you can configure the operation behavior of the service runtime. This topic discusses system-provided service and operation behaviors and describes where to find more information to create new behaviors. While some behaviors are applied as attributes, many are applied using an application configuration file or programmatically. For more information about configuring your service application, see [Configuring Services](configuring-services.md).  
   
 ## Overview  
+
  The contract defines the inputs, outputs, data types, and capabilities of a service of that type. Implementing a service contract creates a class that, when configured with a binding at an address, fulfills the contract it implements. Contractual, binding, and address information are all known by the client; without them, the client cannot make use of the service.  
   
  However, operation specifics, such as threading issues or instance management, are opaque to clients. Once you have implemented your service contract, you can configure a large number of operation characteristics by using *behaviors*. Behaviors are objects that modify the Windows Communication Foundation (WCF) runtime by either setting a runtime property or by inserting a customization type into the runtime. For more information about modifying the runtime by creating user-defined behaviors, see [Extending ServiceHost and the Service Model Layer](./extending/extending-servicehost-and-the-service-model-layer.md).  
@@ -19,6 +21,7 @@ Once you have designed a service contract ([Designing Service Contracts](designi
  This topic provides an overview of the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes, describes the various scopes at which behaviors can operate, and provides a quick description of many of the system-provided behaviors at the various scopes that may be of interest to WCF developers.  
   
 ## ServiceBehaviorAttribute and OperationBehaviorAttribute  
+
  The most important behaviors are the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes, which you can use to control:  
   
 - Instance lifetimes  
@@ -47,6 +50,7 @@ Once you have designed a service contract ([Designing Service Contracts](designi
  Many of the properties require additional support from the binding. For example, an operation that requires a transaction from the client must be configured to use a binding that supports flowed transactions.  
   
 ### Well-Known Singleton Services  
+
  You can use the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes to control certain lifetimes, both of the <xref:System.ServiceModel.InstanceContext> and of the service objects that implement the operations.  
   
  For example, the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property controls how often the <xref:System.ServiceModel.InstanceContext> is released, and the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A?displayProperty=nameWithType> properties control when the service object is released.  
@@ -58,6 +62,7 @@ Once you have designed a service contract ([Designing Service Contracts](designi
  Note that when an object is provided to this constructor, some features related to the Windows Communication Foundation (WCF) instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> has no effect when a well-known object instance is provided. Similarly, any other instance release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> class always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> property is set to <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=nameWithType> for all operations.  
   
 ## Other Service, Endpoint, Contract, and Operation Behaviors  
+
  Service behaviors, such as the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute, operate across an entire service. For example, if you set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.ConcurrencyMode.Multiple?displayProperty=nameWithType> you must handle thread synchronization issues inside each operation in that service yourself. Endpoint behaviors operate across an endpoint; many of the system-provided endpoint behaviors are for client functionality. Contract behaviors operate at the contract level, and operation behaviors modify operation delivery.  
   
  Many of these behaviors are implemented on attributes, and you make use of them as you do the <xref:System.ServiceModel.ServiceBehaviorAttribute> and <xref:System.ServiceModel.OperationBehaviorAttribute> attributes—by applying them to the appropriate service class or operation implementation. Other behaviors, such as the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> or <xref:System.ServiceModel.Description.ServiceDebugBehavior> objects, are typically applied using an application configuration file, although they can also be used programmatically.  
@@ -69,6 +74,7 @@ Once you have designed a service contract ([Designing Service Contracts](designi
  The following sections describe many of the most useful system-provided behaviors that you can use to modify the runtime delivery of your service or client. See the reference topic to determine how to use each one.  
   
 ### Service Behaviors  
+
  The following behaviors operate on services.  
   
 - <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>. Applied to a WCF service to indicate whether that service can be run in ASP.NET Compatibility Mode.  
@@ -86,6 +92,7 @@ Once you have designed a service contract ([Designing Service Contracts](designi
 - <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>. Configures run-time throughput settings that enable you to tune service performance.  
   
 ### Endpoint Behaviors  
+
  The following behaviors operate on endpoints. Many of these behaviors are used in client applications.  
   
 - <xref:System.ServiceModel.CallbackBehaviorAttribute>. Configures a callback service implementation in a duplex client application.  
@@ -103,9 +110,11 @@ Once you have designed a service contract ([Designing Service Contracts](designi
 - <xref:System.ServiceModel.Description.TransactedBatchingBehavior>. Optimizes the receive operations for transports that support transactional receives.  
   
 ### Contract Behaviors  
+
  <xref:System.ServiceModel.DeliveryRequirementsAttribute>. Specifies the feature requirements that bindings must provide to the service or client implementation.  
   
 ### Operation Behaviors  
+
  The following operation behaviors specify serialization and transaction controls for operations.  
   
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>. Represents the run-time behavior of the <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>.  

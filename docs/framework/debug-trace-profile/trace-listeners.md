@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 444b0d33-67ea-4c36-9e94-79c50f839025
 ---
 # Trace Listeners
+
 When using **Trace**, **Debug** and <xref:System.Diagnostics.TraceSource>, you must have a mechanism for collecting and recording the messages that are sent. Trace messages are received by *listeners*. The purpose of a listener is to collect, store, and route tracing messages. Listeners direct the tracing output to an appropriate target, such as a log, window, or text file.  
   
  Listeners are available to the **Debug**, **Trace**, and <xref:System.Diagnostics.TraceSource> classes, each of which can send its output to a variety of listener objects. The following are the commonly used predefined listeners:  
@@ -67,6 +68,7 @@ System.Diagnostics.Trace.Listeners.Add(
 ```  
   
 ## Developer-Defined Listeners  
+
  You can define your own listeners by inheriting from the **TraceListener** base class and overriding its methods with your customized methods. For more information on creating developer-defined listeners, see <xref:System.Diagnostics.TraceListener> in the .NET Framework reference.  
   
 ## See also

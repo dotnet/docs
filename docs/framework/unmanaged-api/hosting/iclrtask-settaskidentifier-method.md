@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTask::SetTaskIdentifier Method
+
 Instructs the common language runtime (CLR) to associate the specified identifier value with the task represented by the current [ICLRTask](iclrtask-interface.md) instance.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetTaskIdentifier (
 ```  
   
 ## Parameters  
+
  `Asked`  
  [in] The unique identifier for the common language runtime to associate with the task represented by the current `ICLRTask` instance.  
   
@@ -43,9 +45,11 @@ HRESULT SetTaskIdentifier (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The host can associate an identifier with a task to help integrate the CLR and the host in a debugging environment. The identifier has no meaning for the CLR. The CLR passes it along to a debugger application. The debugger can use this identifier to associate a CLR call stack with a host call stack, and enable their respective trace information to be unified when viewed in the debugger's user interface.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

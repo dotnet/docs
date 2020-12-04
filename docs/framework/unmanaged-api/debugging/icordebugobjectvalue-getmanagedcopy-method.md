@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugObjectValue::GetManagedCopy Method
+
 `GetManagedCopy` is obsolete. Do not call this method.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetManagedCopy (
 ```  
   
 ## Requirements  
+
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also

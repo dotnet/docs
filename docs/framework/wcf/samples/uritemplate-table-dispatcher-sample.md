@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3b32975d-ba90-4c5c-83bc-2fbb48f11c0c
 ---
 # UriTemplate Table Dispatcher Sample
+
 The <xref:System.UriTemplateTable> class provides a dictionary-like associative table structure for working with a set of <xref:System.UriTemplate> instances. This sample demonstrates a basic dispatching engine built using `UriTemplateTable`, a common usage scenario for the `UriTemplateTable` class.  
   
  This sample demonstrates the following key concepts for the `UriTemplateTable` class:  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymENCUnmanagedMethod::GetFileNameFromOffset Method
+
 Gets the file name for the line associated with an offset.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetFileNameFromOffset(
 ```  
   
 ## Parameters  
+
  `dwOffset`  
  [in] A `ULONG32` that contains the offset.  
   
@@ -44,9 +46,11 @@ HRESULT GetFileNameFromOffset(
  [out] The buffer that contains the file names.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

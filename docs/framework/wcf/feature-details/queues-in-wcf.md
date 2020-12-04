@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 43008409-1bb4-4bd4-85d7-862c8f10ae20
 ---
 # Queues in Windows Communication Foundation
+
 The topics in this section discuss Windows Communication Foundation (WCF) support for queues. WCF provides support for queuing by leveraging Microsoft Message Queuing (previously known as MSMQ) as a transport and enables the following scenarios:  
   
 - Loosely coupled applications. Sending applications can send messages to queues without needing to know whether the receiving application is available to process the message. The queue provides processing independence that allows a sending application to send messages to the queue at a rate that does not depend on how fast the receiving applications can process the messages. Overall system availability increases when sending messages to a queue is not tightly coupled to message processing.  
@@ -19,6 +20,7 @@ The topics in this section discuss Windows Communication Foundation (WCF) suppor
  To use the queues feature in a WCF application, you can use one of the standard bindings, or you can create a custom binding if one of the standard bindings does not satisfy your requirements. For more information about relevant standard bindings and how to choose one, see [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md). For more information about creating custom bindings, see [Custom Bindings](../extending/custom-bindings.md).  
   
 ## In This Section  
+
  [Queues Overview](queues-overview.md)  
  An overview of message queuing concepts.  
   

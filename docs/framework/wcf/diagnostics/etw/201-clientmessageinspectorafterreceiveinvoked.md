@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9ff637f1-cc26-4400-ab9b-546f70e5057d
 ---
 # 201 - ClientMessageInspectorAfterReceiveInvoked
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 9ff637f1-cc26-4400-ab9b-546f70e5057d
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted after the Service Model has invoked the `AfterReceiveReply` method on a client message inspector.  
   
 ## Message  
+
  The Dispatcher invoked 'AfterReceiveReply' on a ClientMessageInspector of type '%1'.  
   
 ## Details  

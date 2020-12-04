@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: 96dd26e2-46e7-4de0-9a29-4fcb05bf187b
 ---
 # Transport Security with Windows Authentication
+
 The following scenario shows a Windows Communication Foundation (WCF) client and service secured by Windows security. For more information about programming, see [How to: Secure a Service with Windows Credentials](../how-to-secure-a-service-with-windows-credentials.md).  
   
  An intranet Web service displays human resources information. The client is a Windows Form application. The application is deployed in a domain with a Kerberos controller securing the domain.  
@@ -25,6 +26,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 |Binding|<xref:System.ServiceModel.NetTcpBinding>|  
   
 ## Service  
+
  The following code and configuration are meant to run independently. Do one of the following:  
   
 - Create a stand-alone service using the code with no configuration.  
@@ -32,12 +34,14 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 - Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
+
  The following code shows how to create a service endpoint that uses a Windows security.  
   
  [!code-csharp[C_SecurityScenarios#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#3)]
  [!code-vb[C_SecurityScenarios#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#3)]  
   
 ### Configuration  
+
  The following configuration can be used instead of the code to set up the service endpoint:  
   
 ```xml  
@@ -69,6 +73,7 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 ```  
   
 ## Client  
+
  The following code and configuration are meant to run independently. Do one of the following:  
   
 - Create a stand-alone client using the code (and client code).  
@@ -79,12 +84,14 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
   
 ### Code  
+
  The following code creates the client. The binding is configured to use the Transport mode security, with the TCP transport, with the client credential type set to Windows.  
   
  [!code-csharp[C_SecurityScenarios#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#4)]
  [!code-vb[C_SecurityScenarios#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#4)]  
   
 ### Configuration  
+
  The following configuration can be used instead of the code to create the client.  
   
 ```xml  

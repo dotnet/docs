@@ -2,6 +2,8 @@
 description: "using statement - C# Reference"
 title: "using statement - C# Reference"
 ms.date: 05/29/2020
+f1_keywords:
+  - "using-statement_CSharpKeyword"
 helpviewer_keywords:
   - "using statement [C#]"
 ms.assetid: afc355e6-f0b9-4240-94dd-0d93f17d9fc3

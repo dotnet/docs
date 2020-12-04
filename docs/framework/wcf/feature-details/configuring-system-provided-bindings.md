@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 443f8d65-f1f2-4311-83b3-4d8fdf7ccf16
 ---
 # Configuring System-Provided Bindings
+
 Bindings specify the communication mechanism to use when talking to an endpoint and indicate how to connect to an endpoint. Bindings consist of elements that define how the Windows Communication Foundation (WCF) channels are layered up to provide the required communication features. A binding contains three types of elements:  
   
 - Protocol channel binding elements, which determine the security, reliability, context flow settings, or user-defined protocols to use with messages that are sent to the endpoint.  
@@ -25,6 +26,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 > Do not use duplex contracts with bindings that do not support security, or that have security disabled, unless the network exchange is secured by some other means.  
   
 ## System-Provided Bindings  
+
  The following bindings are shipped with WCF.  
   
 |Binding|Configuration Element|Description|  
@@ -43,6 +45,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 |<xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>|[\<msmqIntegrationBinding>](../../configure-apps/file-schema/wcf/msmqintegrationbinding.md)|A binding that is suitable for cross-machine communication between a WCF application and existing Message Queuing (also known as MSMQ) applications.|  
   
 ## Binding Features  
+
  The next table shows some of the key features each of the system-provided bindings provided. The bindings are listed in the first column and information regarding the features is described in the table. The following table provides a key for the binding abbreviations used. To select a binding, determine which column satisfies all of the row features you need.  
   
 |Binding|Interoperability|Mode of Security (Default)|Session<br /><br /> (Default)|Transactions|Duplex|  

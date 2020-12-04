@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9aa2c71e-a4ab-4aed-b76d-4795e8493b70
 ---
 # 1140 - FlowchartStart
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 9aa2c71e-a4ab-4aed-b76d-4795e8493b70
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a Flowchart start has been scheduled.  
   
 ## Message  
+
  Flowchart '%1' - Start has been scheduled.  
   
 ## Details  

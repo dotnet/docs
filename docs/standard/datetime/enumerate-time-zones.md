@@ -1,7 +1,6 @@
 ---
 title: "How to: Enumerate time zones present on a computer"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

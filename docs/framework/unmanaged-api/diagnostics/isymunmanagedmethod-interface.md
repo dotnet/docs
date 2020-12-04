@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedMethod Interface
+
 Represents a method within the symbol store. This interface provides access to only the symbol-related attributes of a method, instead of the type-related attributes.  
   
 ## Methods  
@@ -34,6 +35,7 @@ Represents a method within the symbol store. This interface provides access to o
 |[GetToken Method](isymunmanagedmethod-gettoken-method.md)|Returns the metadata token for this method.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

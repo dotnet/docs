@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: fba62a55-36bd-401e-bcd2-5be8e2d34891
 ---
 # IALink2 Interface
+
 Complements the [IALink Interface](ialink-interface.md) by declaring methods that operate on newer metadata interfaces such as [IMetaDataEmit2 Interface](../metadata/imetadataemit2-interface.md). Additionally, IALink2 declares methods that provide additional usage flexibility over the original IALink interfaces.  
   
 ## In This Section  
+
  [AddFile2 Method](addfile2-method.md)  
   
  [EmitAssembly Method](emitassembly-method.md)  

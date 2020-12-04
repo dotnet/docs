@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread4 Interface
+
 Provides thread blocking information.  
   
 ## Methods  
@@ -27,12 +28,14 @@ Provides thread blocking information.
 |[GetCurrentCustomDebuggerNotification Method](icordebugthread4-getcurrentcustomdebuggernotification-method.md)|Gets the current [ICorDebugManagedCallback3::CustomNotification](icordebugmanagedcallback3-customnotification-method.md) object on the current thread.|  
   
 ## Remarks  
+
  This interface is a logical extension of the ICorDebugThread, ICorDebugThread2, and [ICorDebugThread3](icordebugthread3-interface.md) interfaces.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback::LogSwitch Method
+
 Notifies the debugger that a common language runtime (CLR) managed thread has called a method in the <xref:System.Diagnostics.Switch> class to create, modify, or delete a debugging/tracing switch.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT LogSwitch (
 ```  
   
 ## Parameters  
+
  `PAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the managed thread that created, modified, or deleted a debugging/tracing switch.  
   
@@ -51,6 +53,7 @@ HRESULT LogSwitch (
  [in] A pointer to the name of the parent of the debugging/tracing switch.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

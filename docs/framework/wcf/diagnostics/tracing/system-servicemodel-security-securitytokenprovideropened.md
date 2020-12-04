@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b8222922-35d9-4361-8bc0-d360164a9266
 ---
 # System.ServiceModel.Security.SecurityTokenProviderOpened
+
 System.ServiceModel.Security.SecurityTokenProviderOpened  
   
 ## Description  
+
  A security token provider was opened.  
   
 ## See also

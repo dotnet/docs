@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 42055ee0-6d0c-443d-9d89-788dfc345d6d
 ---
 # Security Considerations in WCF
+
 The topics in this section list various security-related items to consider when designing a Windows Communication Foundation (WCF) application.  
   
 ## In This Section  
+
  [Information Disclosure](information-disclosure.md)  
  Discusses the various ways that information can be disclosed or attacked, and how to mitigate this.  
   
@@ -33,6 +35,7 @@ The topics in this section list various security-related items to consider when 
  Lists various scenarios that do not support a particular aspect of security and should be avoided or considered.  
   
 ## Reference  
+
  <xref:System.IdentityModel.Tokens>  
   
  <xref:System.IdentityModel.Claims>  
@@ -42,6 +45,7 @@ The topics in this section list various security-related items to consider when 
  <xref:System.ServiceModel>  
   
 ## Related Sections  
+
  [Security Guidance and Best Practices](security-guidance-and-best-practices.md)  
   
 ## See also

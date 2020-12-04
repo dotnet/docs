@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_PRF_EX_CLAUSE_INFO Structure
+
 Stores information about a specific exception clause instance and its associated frame.  
   
 ## Syntax  
@@ -39,6 +40,7 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
 |`shadowStackPointer`|The pointer to the shadow stack. This value is the contents of the BSP register and applies only to IA64.|  
   
 ## Remarks  
+
  When an exception notification is received, [ICorProfilerInfo2::GetNotifiedExceptionClauseInfo](icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md) can be used to get the native address and frame information for the exception clause (`catch`/`finally`/filter) that is about to be run or has just been run.  
   
  Execution of an exception clause involves these callbacks from the common language runtime (CLR):  
@@ -56,6 +58,7 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
 - [ICorProfilerCallback::ExceptionSearchFilterLeave](icorprofilercallback-exceptionsearchfilterleave-method.md)  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

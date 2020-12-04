@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefinePermissionSet Method
+
 Creates a definition for a permission set with the specified metadata signature, and gets a token to that permission set definition.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT DefinePermissionSet (
 ```  
   
 ## Parameters  
+
  `tk`  
  [in] The object to be decorated.  
   
@@ -48,6 +50,7 @@ HRESULT DefinePermissionSet (
  [out] The returned permission token.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

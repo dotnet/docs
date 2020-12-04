@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e503ae46-ad6b-4fcb-8c0e-146d59a8eff1
 ---
 # 1011 - ScheduleExecuteActivityWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: e503ae46-ad6b-4fcb-8c0e-146d59a8eff1
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates an ExecuteActivityWorkItem has been scheduled.  
   
 ## Message  
+
  An ExecuteActivityWorkItem has been scheduled for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  
   
 ## Details  

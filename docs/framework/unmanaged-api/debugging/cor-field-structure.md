@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_FIELD Structure
+
 Provides information about a field in an object.  
   
 ## Syntax  
@@ -41,6 +42,7 @@ typedef struct COR_FIELD{
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

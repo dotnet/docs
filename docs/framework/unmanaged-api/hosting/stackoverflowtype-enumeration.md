@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StackOverflowType Enumeration
+
 Contains values that indicate the underlying cause of a stack overflow event.  
   
 ## Syntax  
@@ -37,9 +38,11 @@ typedef enum {
 |`SO_Other`|The stack overflow was caused by unmanaged code.|  
   
 ## Remarks  
+
  This information is passed to the host through a call to the [IActionOnCLREvent::OnEvent](iactiononclrevent-onevent-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

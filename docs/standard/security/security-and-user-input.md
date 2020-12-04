@@ -2,7 +2,6 @@
 title: "Security and User Input"
 description: Your code might pass user-entered data as parameters to other code, which can affect security. You can do range checking to reject problematic input.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "security [.NET], user input"
   - "user input, security"

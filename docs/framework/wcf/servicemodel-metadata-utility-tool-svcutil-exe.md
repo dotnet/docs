@@ -40,7 +40,7 @@ The tool has a five minute timeout when retrieving metadata. This timeout only a
 
 ### Multi-targeting
 
-The tool does not support multi-targeting. If you want to generate a .NET 4 artifact from *svcutil.exe*, use the *svcutil.exe* from the .NET 4 SDK. To generate a .NET 3.5 artifact, use the executable from the .NET 3.5 SDK.
+The tool does not support multi-targeting. If you want to generate a .NET Framework 4 artifact from *svcutil.exe*, use the *svcutil.exe* from the .NET Framework 4 SDK. To generate a .NET Framework 3.5 artifact, use the executable from the .NET Framework 3.5 SDK.
 
 ### Accessing WSDL Documents
 

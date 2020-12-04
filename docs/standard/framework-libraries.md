@@ -3,7 +3,6 @@ title: Framework Libraries
 description: Learn how libraries provide implementations for many general and app-specific types, algorithms, and utility functionality.
 author: richlander
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
 ---
 # Framework Libraries
@@ -34,7 +33,7 @@ The BCL provides the most foundational types and utility functionality and are t
 
 .NET includes a set of data structures that are the workhorses of almost any .NET apps. These are mostly collections, but also include other types.
 
-* <xref:System.Array> - Represents an array of strongly types objects that can be accessed by index. Has a fixed size, per its construction.
+* <xref:System.Array> - Represents an array of strongly typed objects that can be accessed by index. Has a fixed size, per its construction.
 * <xref:System.Collections.Generic.List%601> - Represents a strongly typed list of objects that can be accessed by index. Is automatically resized as needed.
 * <xref:System.Collections.Generic.Dictionary%602> - Represents a collection of values that are indexed by a key. Values can be accessed via key. Is automatically resized as needed.
 * <xref:System.Uri> - Provides an object representation of a uniform resource identifier (URI) and easy access to the parts of the URI.

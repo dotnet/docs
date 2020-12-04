@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # INotifyConnection2 Interface
+
 Declares methods for registering and unregistering a connection notification source.  
   
 ## Methods  
@@ -26,6 +27,7 @@ Declares methods for registering and unregistering a connection notification sou
 |[UnregisterNotifySource Method](inotifyconnection2-unregisternotifysource-method.md)|Removes a specified notification source object from the connection.|  
   
 ## Requirements  
+
  **Header:** ProtocolNotify2.idl  
   
 ## See also

@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: ec0a8d63-11b3-4acd-b398-da1e37e97382
 ---
 # Tlbimp.exe (Type Library Importer)
+
 The Type Library Importer converts the type definitions found within a COM type library into equivalent definitions in a common language runtime assembly. The output of Tlbimp.exe is a binary file (an assembly) that contains runtime metadata for the types defined within the original type library. You can examine this file with tools such as [Ildasm.exe](ildasm-exe-il-disassembler.md).  
   
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
@@ -67,6 +68,7 @@ tlbimp tlbFile [options]
 > The command-line options for Tlbimp.exe are case-insensitive and can be supplied in any order. You only need to specify enough of the option to uniquely identify it. Therefore, **/n** is equivalent to **/nologo** and **/ou:** *outfile.dll* is equivalent to **/out:** *outfile.dll*.  
   
 ## Remarks  
+
  Tlbimp.exe performs conversions on an entire type library at one time. You cannot use the tool to generate type information for a subset of the types defined within a single type library.  
   
  It is often useful or necessary to be able to assign [strong names](../../standard/assembly/strong-named.md) to assemblies. Therefore, Tlbimp.exe includes options for supplying the information necessary to generate strongly named assemblies. Both the **/keyfile:** and **/keycontainer:** options sign assemblies with strong names. Therefore, it is logical to supply only one of these options at a time.  
@@ -78,6 +80,7 @@ tlbimp tlbFile [options]
  A resource ID can optionally be appended to a type library file when importing a type library from a module containing multiple type libraries. Tlbimp.exe is able to locate this file only if it is in the current directory or if you specify the full path. See the example later in this topic.  
   
 ## Examples  
+
  The following command generates an assembly with the same name as the type library found in `myTest.tlb` and with the .dll extension.  
   
 ```console  

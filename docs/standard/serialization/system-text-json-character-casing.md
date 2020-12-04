@@ -19,7 +19,7 @@ In this article, you will learn how to enable case-insensitive property name mat
 By default, deserialization looks for case-sensitive property name matches between JSON and the target object properties. To change that behavior, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive?displayProperty=nameWithType> to `true`:
 
 > [!NOTE]
-> The [web defaults](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is case-insensitive.
+> The [web default](system-text-json-configure-options.md#web-defaults-for-jsonserializeroptions) is case-insensitive.
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeCaseInsensitive.cs" id="Deserialize":::
 

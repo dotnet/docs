@@ -57,7 +57,7 @@ This event may be raised zero or more times between `DeserializationStart` and `
 
 This event contains a payload with one argument.
 
-* _typeName_ (`string`): The assembly-qualified name (see <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType>) of the type being deserialized.
+* `typeName` (`string`): The assembly-qualified name (see <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType>) of the type being deserialized.
 
 ### \[Advanced\] Subscribing to a subset of notifications
 

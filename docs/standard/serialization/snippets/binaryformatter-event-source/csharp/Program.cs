@@ -19,9 +19,11 @@ namespace BinaryFormatterEventSample
             _globalListener = new ConsoleEventListener();
             _globalListener.EventSourceCreated += (sender, args) =>
             {
-                if (args.EventSource?.Name == "System.Runtime.Serialization.Formatters.Binary.BinaryFormatterEventSource")
+                if (args.EventSource?.Name ==
+                    "System.Runtime.Serialization.Formatters.Binary.BinaryFormatterEventSource")
                 {
-                    ((EventListener)sender).EnableEvents(args.EventSource, EventLevel.LogAlways);
+                    ((EventListener)sender)
+                        .EnableEvents(args.EventSource, EventLevel.LogAlways);
                 }
             };
 
@@ -45,8 +47,14 @@ namespace BinaryFormatterEventSample
 
             Person rehydratedPerson = DeserializePerson(serializedPerson);
 
-            Console.WriteLine($"Rehydrated person {rehydratedPerson.FirstName} {rehydratedPerson.LastName}");
-            Console.WriteLine($"Favorite book: {rehydratedPerson.FavoriteBook.Title} by {rehydratedPerson.FavoriteBook.Author}, list price {rehydratedPerson.FavoriteBook.Price}");
+            Console.WriteLine
+                ($"Rehydrated person {rehydratedPerson.FirstName} {rehydratedPerson.LastName}");
+            Console.Write
+                ($"Favorite book: {rehydratedPerson.FavoriteBook.Title} ");
+            Console.Write
+                ($"by {rehydratedPerson.FavoriteBook.Author}, ");
+            Console.WriteLine
+                ($"list price {rehydratedPerson.FavoriteBook.Price}");
         }
 
         private static byte[] SerializePerson(Person p)

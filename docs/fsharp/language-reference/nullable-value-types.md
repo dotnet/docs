@@ -1,9 +1,10 @@
 ---
-title: Nullable Value Types
-description: Learn how to use Nullable Value Types, a way to represent a value type that can also be null, in F#.
+title: Nullable value types
+description: Learn how to use nullable value types, a way to represent a value type that can also be null, in F#.
 ms.date: 11/19/2020
 ---
-# Nullable Value Types
+
+# Nullable value types
 
 A _nullable value type_ `Nullable<'T>` represents any [struct](structures.md) type that could also be `null`. This is helpful when interacting with libraries and components that may choose to represent these kinds of types, like integers, with a `null` value for efficiency reasons. The underlying type that backs this construct is <xref:System.Nullable%601?displayProperty=nameWithType>.
 
@@ -14,7 +15,7 @@ Nullable<'T>
 Nullable value
 ```
 
-## Declaration and assignment with values
+## Declare and assign with values
 
 Declaring a nullable value type is just like declaring any wrapper-like type in F#:
 
@@ -43,7 +44,7 @@ let mutable x = Nullable 12
 x <- Nullable 13
 ```
 
-## Assigning null
+## Assign null
 
 You cannot directly assign `null` to a nullable value type. Use `Nullable()` instead:
 
@@ -54,7 +55,7 @@ a <- Nullable()
 
 This is because `Nullable<'T>` does not have `null` as a proper value.
 
-## Passing and assigning to members
+## Pass and assign to members
 
 A key difference between working with members and F# values is that nullable value types can be implicitly inferred when you're working with members. Consider the folling method that takes a nullable value type as input:
 
@@ -63,7 +64,6 @@ type C() =
     member _.M(x: Nullable<int>) = x.HasValue
     member val NVT = Nullable 12 with get, set
 
-
 let c = C()
 c.M(12)
 c.NVT <- 12
@@ -71,7 +71,7 @@ c.NVT <- 12
 
 In the previous example, you can pass `12` to the method `M`. You can also assign `12` to the auto property `NVT`. The F# compiler will implicitly convert a call or assignment like this when the target type matches the input, if the input can be constructed as a nullabel value type.
 
-## Examination of an instance of a nullable value type
+## Examine a nullable value type instance
 
 Unlike [Options](options.md), which are a generalized construct for representing a possible value, nullable value types are not used with pattern matching. Instead, you need to use an [`if`](conditional-expressions-if-then-else.md) expression and check the `HasValue` property.
 

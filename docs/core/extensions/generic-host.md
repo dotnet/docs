@@ -3,7 +3,7 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 09/18/2020
+ms.date: 12/04/2020
 ---
 
 # .NET Generic Host
@@ -123,7 +123,7 @@ To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.C
 
 The following example creates host configuration:
 
-:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="13-19":::
+:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="19-25":::
 
 ## App configuration
 

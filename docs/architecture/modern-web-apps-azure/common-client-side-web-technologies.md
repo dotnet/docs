@@ -172,7 +172,7 @@ When considering which option will work best to support your SPA, keep in mind t
 
 - How opinionated is the framework, and do you agree with its default way of doing things?
 
-- Does it (or a companion library) includes all of the features your app requires?
+- Does it (or a companion library) include all of the features your app requires?
 
 - Is it well documented?
 

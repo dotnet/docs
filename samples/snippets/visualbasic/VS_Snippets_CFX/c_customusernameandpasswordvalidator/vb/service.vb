@@ -87,7 +87,7 @@ Public Class CalculatorService
             If Not (userName = "test1" AndAlso password = "[PLACEHOLDER]") AndAlso Not (userName = "test2" AndAlso password = "[PLACEHOLDER]") Then
                 ' This throws an informative fault to the client.
                 Throw New FaultException("Unknown Username or Incorrect Password")
-                ' When you do not want to throw an inforrmative fault to the client,
+                ' When you do not want to throw an informative fault to the client,
                 ' throw the following exception:
                 ' Throw New SecurityTokenException("Unknown Username or Incorrect Password")
             End If

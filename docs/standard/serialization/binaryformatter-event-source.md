@@ -83,7 +83,7 @@ The following code:
 
 The preceding code produces output similar to the following example:
 
-```txt
+```output
 Event SerializationStart (id=10) received.
 Event SerializingObject (id=12) received.
 typeName = BinaryFormatterEventSample.Person, BinaryFormatterEventSample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null

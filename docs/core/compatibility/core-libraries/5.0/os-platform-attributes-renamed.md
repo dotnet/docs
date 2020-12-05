@@ -28,7 +28,7 @@ In .NET 5.0 RC1 and later, when a project targets an OS-specific flavor of .NET 
 
 ## Reason for change
 
-.NET 5.0 Preview 8 introduced attributes in <xref:System.Runtime.Versioning> to specify supported platforms for APIs. The attributes are consumed by the [Platform compatibility analyzer](../../code-analysis/5.0/ca1416-platform-compatibility-analyzer.md) to produce build warnings when platform-specific APIs are consumed on platforms that don't supported those APIs.
+.NET 5.0 Preview 8 introduced attributes in <xref:System.Runtime.Versioning> to specify supported platforms for APIs. The attributes are consumed by the [Platform compatibility analyzer](../../code-analysis/5.0/ca1416-platform-compatibility-analyzer.md) to produce build warnings when platform-specific APIs are consumed on platforms that don't support those APIs.
 
 For .NET 5.0 RC1, an additional feature was added to the platform compatibility analyzer for platform exclusion. The feature allows APIs to be marked as entirely unsupported on OS platforms. That feature prompted changes to the attributes, including using more suitable names. The `ObsoletedInOSPlatformAttribute` was removed because it was no longer needed.
 

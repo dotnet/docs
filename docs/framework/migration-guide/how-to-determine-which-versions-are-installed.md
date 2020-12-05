@@ -35,6 +35,14 @@ Community-maintained tools are available to help detect which .NET Framework ver
 
 For information about detecting the installed updates for each version of .NET Framework, see [How to: Determine which .NET Framework updates are installed](how-to-determine-which-net-framework-updates-are-installed.md).
 
+## Determine which .NET version an app is running on
+
+You can use the <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> property to query for which .NET implementation your app is running on. If the app is running on .NET Framework, the output will be similar to:
+
+```output
+.NET Framework 4.8.4250.0
+```
+
 ## Detect .NET Framework 4.5 and later versions
 
 The version of .NET Framework (4.5 and later) installed on a machine is listed in the registry at **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**. If the **Full** subkey is missing, then .NET Framework 4.5 or above isn't installed.
@@ -231,14 +239,6 @@ The .NET Framework CLR installed with .NET Framework is versioned separately. Th
   ```output
   Version: 4.0.30319.18010
   ```
-
-## Determine which .NET version an app is running on
-
-You can use the <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> property to query for which .NET implementation your app is running on. If the app is running on .NET Framework, the output will be similar to:
-
-```output
-.NET Framework 4.8.4250.0
-```
 
 ## See also
 

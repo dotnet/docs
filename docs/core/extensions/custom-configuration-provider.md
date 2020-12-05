@@ -3,7 +3,7 @@ title: Implement a custom configuration provider in .NET
 description: Learn how to implement a custom configuration provider in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/16/2020
+ms.date: 12/04/2020
 ms.topic: how-to
 ---
 
@@ -53,7 +53,7 @@ An `AddEntityConfiguration` extension method permits adding the configuration so
 
 The following code shows how to use the custom `EntityConfigurationProvider` in *Program.cs*:
 
-:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="21-22":::
+:::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="27-28":::
 
 ## See also
 

@@ -75,20 +75,20 @@ Public Class CalculatorService
         Inherits UserNamePasswordValidator
         ' </snippet3>
         ' <snippet4>
-        ' This method validates users. It allows in two users, test1 and test2 
+        ' This method validates users. It allows in two users, test1 and test2
         ' with passwords 1tset and 2tset respectively.
-        ' This code is for illustration purposes only and 
-        ' must not be used in a production environment because it is not secure.	
+        ' This code is for illustration purposes only and
+        ' must not be used in a production environment because it is not secure.
         Public Overrides Sub Validate(ByVal userName As String, ByVal password As String)
             If Nothing = userName OrElse Nothing = password Then
                 Throw New ArgumentNullException()
             End If
 
-            If Not (userName = "test1" AndAlso password = "1tset") AndAlso Not (userName = "test2" AndAlso password = "2tset") Then
+            If Not (userName = "test1" AndAlso password = "[PLACEHOLDER]") AndAlso Not (userName = "test2" AndAlso password = "[PLACEHOLDER]") Then
                 ' This throws an informative fault to the client.
                 Throw New FaultException("Unknown Username or Incorrect Password")
-                ' When you do not want to throw an infomative fault to the client,
-                ' throw the following exception.
+                ' When you do not want to throw an informative fault to the client,
+                ' throw the following exception:
                 ' Throw New SecurityTokenException("Unknown Username or Incorrect Password")
             End If
 

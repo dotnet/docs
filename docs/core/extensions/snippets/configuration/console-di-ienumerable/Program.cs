@@ -9,7 +9,7 @@ namespace ConsoleDI.Example
     {
         static Task Main(string[] args)
         {
-            IHost host = CreateHostBuilder(args).Build();
+            using IHost host = CreateHostBuilder(args).Build();
 
             _ = host.Services.GetService<ExampleService>();
 

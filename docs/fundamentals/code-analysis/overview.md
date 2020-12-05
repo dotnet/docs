@@ -25,7 +25,7 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 ## Code quality analysis
 
-_Code quality analysis ("CAxxxx") rules_ inspect your C# or Visual Basic code for security, performance, design and other issues. Analysis is enabled, by default, for projects that target .NET 5.0 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.
+*Code quality analysis* ("CAxxxx") rules inspect your C# or Visual Basic code for security, performance, design and other issues. Analysis is enabled, by default, for projects that target .NET 5.0 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.
 
 > [!TIP]
 > In Visual Studio, you can enable or disable code analysis using the Project Properties window. To access the Project Properties window, right-click on a project within Solution Explorer and select **Properties**. Next, select the **Code Analysis** tab, and then either select or clear the checkbox to **Enable .NET analyzers**.
@@ -97,12 +97,14 @@ By default, you'll get the latest code analysis rules and default rule severitie
 
 ## Code style analysis
 
-[Code style analysis](/visualstudio/ide/editorconfig-code-style-settings-reference) ("IDExxxx") rules enable you to define and maintain consistent code style in your codebase. Following are the default settings:
+*Code style analysis* ("IDExxxx") rules enable you to define and maintain consistent code style in your codebase. The default enablement settings are:
 
 - Command line build: Code style analysis is disabled, by default, for all .NET projects on command-line builds.
 - Visual Studio: Code style analysis is enabled, by default, for all .NET projects inside Visual Studio as [code refactoring quick actions](/visualstudio/ide/code-generation-in-visual-studio).
 
 Starting .NET 5.0, you can enable code style analysis on build, both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
+
+For a full list of code-style analysis rules, see [Code style rules](style-rules/index.md).
 
 > [!NOTE]
 > The code style analysis feature is experimental and may change between the .NET 5 and .NET 6 releases.

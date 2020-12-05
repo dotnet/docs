@@ -8,7 +8,7 @@ class Program
 {
     static Task Main(string[] args)
     {
-        IHost host = CreateHostBuilder(args).Build();
+        using IHost host = CreateHostBuilder(args).Build();
 
         var logger = host.Services.GetRequiredService<ILogger<Program>>();
 

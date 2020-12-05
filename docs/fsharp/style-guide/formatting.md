@@ -418,14 +418,14 @@ type PostalAddress =
     { Address: string
       City: string
       Zip: string }
-    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
 
 // Not OK
 type PostalAddress =
   { Address: string
     City: string
     Zip: string }
-    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
 
 // Unusual in F#
 type PostalAddress =
@@ -446,7 +446,7 @@ type PostalAddress =
         City: string
         Zip: string
     }
-    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
 
 type MyRecord =
     {
@@ -774,14 +774,14 @@ The same guidelines apply for lambda expressions as function arguments. If the b
 ```fsharp
 let printListWithOffset a list1 =
     List.iter
-        (fun elem -> printfn "%d" (a + elem))
+        (fun elem -> printfn $"%d{a + elem}")
         list1
 
 // OK if lambda body is long enough
 let printListWithOffset a list1 =
     List.iter
         (fun elem ->
-            printfn "%d" (a + elem))
+            printfn $"%d{a + elem}")
         list1
 ```
 

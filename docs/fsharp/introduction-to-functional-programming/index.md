@@ -94,7 +94,7 @@ There is a special type, `unit`, that is used when there is nothing to return. F
 
 ```fsharp
 let printString (str: string) =
-    printfn "String is: %s" str
+    printfn $"String is: {str}"
 ```
 
 The signature looks like this:
@@ -152,7 +152,7 @@ Here is another example of a non-pure function, because it performs a side effec
 
 ```fsharp
 let addOneToValue x =
-    printfn "x is %d" x
+    printfn $"x is %d{x}"
     x + 1
 ```
 

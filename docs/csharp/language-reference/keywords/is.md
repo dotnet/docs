@@ -26,7 +26,7 @@ Starting with C# 7.0, the `is` and [switch](switch.md) statements support patter
 When using the type pattern to perform pattern matching, `is` tests whether an expression can be converted to a specified type and, if it can be, casts it to a variable of that type. It's a straightforward extension of the `is` statement that enables concise type evaluation and conversion. The general form of the `is` type pattern is:
 
 ```csharp
-   expr is type varname
+expr is type varname
 ```
 
 Where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`.

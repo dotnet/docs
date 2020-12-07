@@ -53,8 +53,6 @@ These specific rules aren't enabled by default. To enable them and show any viol
 </PropertyGroup>
 ```
 
-For more information about enabling code analyzers, see [Enable or install first-party .NET analyzers](/visualstudio/code-quality/install-net-analyzers?view=vs-2019&preserve-view=true).
-
 The following snippet shows examples of code that produces the relevant code analyzer warnings or errors.
 
 ```cs
@@ -62,7 +60,7 @@ The following snippet shows examples of code that produces the relevant code ana
 // Potentially incorrect code - answer might vary based on locale.
 //
 string s = GetString();
-// Produces analyzer warning CA1310 for string; CA1310 matches on char ','
+// Produces analyzer warning CA1310 for string; CA1307 matches on char ','
 int idx = s.IndexOf(",");
 Console.WriteLine(idx);
 
@@ -98,11 +96,6 @@ SortedSet<string> mySet = new SortedSet<string>(StringComparer.Ordinal);
 List<string> list = GetListOfStrings();
 list.Sort(StringComparer.Ordinal);
 ```
-
-For more information about these code analyzer rules, including when it might be appropriate to suppress these rules in your own code base, see the following articles:
-
-* [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md)
-* [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md)
 
 ### Revert back to NLS behaviors
 

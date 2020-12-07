@@ -10,6 +10,8 @@ You can install Microsoft.Diagnostics.NETCore.Client by using [NuGet](https://ww
 
 ## Use Microsoft.Diagnostics.NETCore.Client to write your own diagnostic tools
 
+These samples show how to use Microsoft.Diagnostics.NETCore.Client library. Some of these examples also show parsing the event payloads by using [TraceEvent](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/) library.
+
 ### Attach to a process and print out all the runtime GC events in real time to the console
 
 This sample shows an example on starting an EventPipe session with the [.NET runtime provider](../../fundamentals/diagnostics/runtime-events.md) with the GC keyword at informational level, and use `EventPipeEventSource` provided by the [TraceEvent library](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/) to parse the events coming in and print the name of each event to the console in real time.
@@ -33,14 +35,13 @@ public void PrintRuntimeGCEvents(int processId)
         var source = new EventPipeEventSource(session.EventStream);
 
         source.Clr.All += (TraceEvent obj) => {
-            Console.WriteLine(obj.EventName);
+            Console.WriteLine(obj.ToString());
         };
 
         try
         {
             source.Process();
         }
-        // NOTE: TraceEvent currently throws a generic Exception class upon error. It is something that needs to be added to TraceEvent.
         catch (Exception e)
         {
             Console.WriteLine("Error encountered while processing events");
@@ -60,7 +61,7 @@ using Microsoft.Diagnostics.NETCore.Client;
 public void TriggerCoreDump(int processId)
 {
     var client = new DiagnosticsClient(processId);
-    client.WriteDump(DumpType.Normal);
+    client.WriteDump(DumpType.Normal, "/tmp/minidump.dmp");
 }
 ```
 
@@ -70,6 +71,8 @@ This sample shows an example where you monitor the `cpu-usage` counter published
 
 ```cs
 using Microsoft.Diagnostics.NETCore.Client;
+using Microsoft.Diagnostics.Tracing.Parsers;
+using System.Diagnostics.Tracing;
 
 public void TriggerDumpOnCpuUsage(int processId, int threshold)
 {
@@ -92,25 +95,23 @@ public void TriggerDumpOnCpuUsage(int processId, int threshold)
         {
             if (obj.EventName.Equals("EventCounters"))
             {
-                // I know this part is ugly. But this is all TraceEvent.
-                var payloadFields = (IDictionary<string, object>)(obj.GetPayloadValueByName("Payload"));
+                IDictionary<string, object> payloadVal = (IDictionary<string, object>)(obj.PayloadValue(0));
+                IDictionary<string, object> payloadFields = (IDictionary<string, object>)(payloadVal["Payload"]);
                 if (payloadFields["Name"].ToString().Equals("cpu-usage"))
                 {
-                    double cpuUsage = Double.Parse(payloadFields["Mean"]);
+                    double cpuUsage = Double.Parse(payloadFields["Mean"].ToString());
                     if (cpuUsage > (double)threshold)
                     {
                         client.WriteDump(DumpType.Normal, "/tmp/minidump.dmp");
                     }
                 }
             }
-        }
+        };
         try
         {
             source.Process();
         }
-        catch (EventStreamException) {}
-
-        }
+        catch (Exception) {}
     }
 }
 ```
@@ -120,7 +121,8 @@ public void TriggerDumpOnCpuUsage(int processId, int threshold)
 This sample shows an example where we trigger an EventPipe session for certain period of time, with the default CLR trace keyword as well as the sample profiler, and read from the stream that gets created as a result and write the bytes out to a file. Essentially this is what `dotnet-trace` uses internally to write a trace file.
 
 ```cs
-
+using Microsoft.Diagnostics.Tracing;
+using Microsoft.Diagnostics.Tracing.Parsers;
 using Microsoft.Diagnostics.NETCore.Client;
 using System.Diagnostics;
 using System.IO;
@@ -156,13 +158,14 @@ This sample shows how to use `DiagnosticsClient.GetPublishedProcesses` API to pr
 
 ```cs
 using Microsoft.Diagnostics.NETCore.Client;
+using System.Diagnostics;
 using System.Linq;
 
 public static void PrintProcessStatus()
 {
     var processes = DiagnosticsClient.GetPublishedProcesses()
-        .Select(GetProcessById)
-        .Where(process => process != null)
+        .Select(Process.GetProcessById)
+        .Where(process => process != null);
 
     foreach (var process in processes)
     {
@@ -178,6 +181,7 @@ This sample shows an example where we create two tasks, one that parses the even
 ```cs
 using Microsoft.Diagnostics.NETCore.Client;
 using Microsoft.Diagnostics.Tracing.Parsers;
+using System.Threading.Tasks;
 
 public static void PrintEventsLive(int processId)
 {
@@ -193,7 +197,7 @@ public static void PrintEventsLive(int processId)
         Task streamTask = Task.Run(() =>
         {
             var source = new EventPipeEventSource(session.EventStream);
-            source.Dynamic.All += (TraceEvent obj) =>
+            source.Clr.All += (TraceEvent obj) =>
             {
                 Console.WriteLine(obj.EventName);
             };
@@ -214,7 +218,7 @@ public static void PrintEventsLive(int processId)
             Console.WriteLine("Press Enter to exit");
             while (Console.ReadKey().Key != ConsoleKey.Enter)
             {
-                Thread.Sleep(100);
+                Task.Delay(100);
             }
             session.Stop();
         });
@@ -291,7 +295,6 @@ public void WriteDump(DumpType dumpType, string dumpPath=null, bool logDumpGener
 Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#enum-dumptype) enum.
 
 * `dumpType` : Type of the dump to be requested.
-
 * `dumpPath` : The path to the dump to be written out to.
 * `logDumpGeneration` : If set to `true`, the target application will write out diagnostic logs during dump generation.
 

@@ -67,6 +67,10 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 ## .NET Core diagnostics tutorials
 
+### Write your own diagnostic tool
+
+[Microsoft.Diagnostics.NETCore.Client](microsoft-diagnostics-netcore-client.md) library lets you write your own custom diagnostic tool best suited for your diagnostic scenario.
+
 ### Debug a memory leak
 
 [Tutorial: Debug a memory leak](debug-memory-leak.md) walks through finding a memory leak. The [dotnet-counters](dotnet-counters.md) tool is used to confirm the leak and the [dotnet-dump](dotnet-dump.md) tool is used to diagnose the leak.

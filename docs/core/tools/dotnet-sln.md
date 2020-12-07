@@ -201,6 +201,6 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
   dotnet sln mysolution.sln add mylib2\mylib2.csproj --solution-folder mylibs
   ```
 
-  The following screen shot shows the result in Visual Studio 2019 **Solution Explorer**:
+  The following screenshot shows the result in Visual Studio 2019 **Solution Explorer**:
 
   :::image type="content" source="media/dotnet-sln/dotnet-sln-solution-folder.png" alt-text="Solution Explorer showing class library projects grouped into a solution folder.":::

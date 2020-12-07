@@ -43,7 +43,7 @@ This section provides two options for dealing with unexpected behavior changes i
 - [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md)
 - [CA1310: Specify StringComparison for correctness](../../fundamentals/code-analysis/quality-rules/ca1310.md)
 
-Enable the analyzer through the SDK by setting the following project properties:
+These specific rules aren't enabled by default. To enable them and show any violations as build errors, set the following properties in your project file:
 
 ```xml
 <PropertyGroup>
@@ -55,7 +55,7 @@ Enable the analyzer through the SDK by setting the following project properties:
 
 For more information about enabling code analyzers, see [Enable or install first-party .NET analyzers](/visualstudio/code-quality/install-net-analyzers?view=vs-2019&preserve-view=true).
 
-For example:
+The following snippet shows examples of code that produces the relevant code analyzer warnings or errors.
 
 ```cs
 //

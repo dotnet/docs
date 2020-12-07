@@ -35,12 +35,19 @@ Community-maintained tools are available to help detect which .NET Framework ver
 
 For information about detecting the installed updates for each version of .NET Framework, see [How to: Determine which .NET Framework updates are installed](how-to-determine-which-net-framework-updates-are-installed.md).
 
-## Determine which .NET version an app is running on
+## Determine which .NET implementation and version an app is running on
 
-You can use the <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> property to query for which .NET implementation your app is running on. If the app is running on .NET Framework, the output will be similar to:
+You can use the <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType> property to query for which .NET implementation and version your app is running on. If the app is running on .NET Framework, the output will be similar to:
 
 ```output
 .NET Framework 4.8.4250.0
+```
+
+By comparison, if the app is running on .NET Core or .NET 5+, the output will be similar to:
+
+```output
+.NET Core 3.1.9
+.NET 5.0.0
 ```
 
 ## Detect .NET Framework 4.5 and later versions

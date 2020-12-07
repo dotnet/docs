@@ -251,7 +251,7 @@ public DiagnosticsClient
 {
     public DiagnosticsClient(int processId);
     public EventPipeSession StartEventPipeSession(IEnumerable<EventPipeProvider> providers, bool requestRundown=true, int circularBufferMB=256);
-    public void WriteDump(DumpType dumpType, string dumpPath=null, bool logDumpGeneration=false);
+    public void WriteDump(DumpType dumpType, string dumpPath, bool logDumpGeneration=false);
     public void AttachProfiler(TimeSpan attachTimeout, Guid profilerGuid, string profilerPath, byte[] additionalData=null);
     public static IEnumerable<int> GetPublishedProcesses();
 }
@@ -289,7 +289,7 @@ public EventPipeSession StartEventPipeSession(EventPipeProvider providers, bool 
 * `circularBufferMB` : The size of the circular buffer to be used as a buffer for writing events within the runtime.
 
 ```csharp
-public void WriteDump(DumpType dumpType, string dumpPath=null, bool logDumpGeneration=false);
+public void WriteDump(DumpType dumpType, string dumpPath, bool logDumpGeneration=false);
 ```
 
 Request a dump for post-mortem debugging of the target application. The type of the dump can be specified using the [`DumpType`](#enum-dumptype) enum.

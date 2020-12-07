@@ -45,14 +45,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 ## CentOS 8 ✔️
 
-> [!TIP]
-> .NET 5.0 isn't yet available in the default package repositories, but .NET Core 3.1 is. To install .NET Core 3.1, use the `dnf install` command with the appropriate package, such as `aspnetcore-runtime-3.1` or `dotnet-sdk-3.1`. The following instructions are for .NET 5.0.
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm -Uvh https://packages.microsoft.com/config/centos/8/packages-microsoft-prod.rpm
-```
+.NET 5.0 is available in the default package repositories for CentOS 8.
 
 [!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 

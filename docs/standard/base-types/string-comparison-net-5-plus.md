@@ -53,7 +53,7 @@ Enable the analyzer through the SDK by setting the following project properties:
 </PropertyGroup>
 ```
 
-For more information about enabling code analyzers, see [Enable or install first-party .NET analyzers](/visualstudio/code-quality/install-net-analyzers?view=vs-2019).
+For more information about enabling code analyzers, see [Enable or install first-party .NET analyzers](/visualstudio/code-quality/install-net-analyzers?view=vs-2019&preserve-view=true).
 
 For example:
 

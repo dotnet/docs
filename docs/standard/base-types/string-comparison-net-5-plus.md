@@ -37,9 +37,7 @@ This section provides two options for dealing with unexpected behavior changes i
 
 ### Enable code analyzers
 
-[Code analyzers](../../fundamentals/code-analysis/overview.md) can detect possibly buggy call sites. To help guard against any surprising behaviors, we recommend enabling .NET compiler platform (Roslyn) analyzers in your project. The analyzers help flag code that might inadvertently be using a linguistic comparer when an ordinal comparer was likely intended.
-
-Enable the following rules:
+[Code analyzers](../../fundamentals/code-analysis/overview.md) can detect possibly buggy call sites. To help guard against any surprising behaviors, we recommend enabling .NET compiler platform (Roslyn) analyzers in your project. The analyzers help flag code that might inadvertently be using a linguistic comparer when an ordinal comparer was likely intended. The following rules should help flag these issues:
 
 - [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md)
 - [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md)

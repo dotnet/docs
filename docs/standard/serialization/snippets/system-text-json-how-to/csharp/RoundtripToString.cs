@@ -12,7 +12,7 @@ namespace SystemTextJsonSamples
             weatherForecast.DisplayPropertyValues();
 
             // <Serialize>
-            string jsonString = JsonSerializer.Serialize(weatherForecast);
+            string jsonString = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
             // </Serialize>
 
             // <SerializeWithGenericParameter>
@@ -26,7 +26,7 @@ namespace SystemTextJsonSamples
             {
                 WriteIndented = true,
             };
-            jsonString = JsonSerializer.Serialize(weatherForecast, options);
+            jsonString = JsonSerializer.Serialize<WeatherForecast>(weatherForecast, options);
             // </SerializePrettyPrint>
             Console.WriteLine($"Pretty-printed JSON output:\n{jsonString}\n");
 

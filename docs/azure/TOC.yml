@@ -6,17 +6,17 @@
     - name: Introduction to Azure and .NET
       href: intro.md
     - name: Key Azure services for .NET developers
-      href: service-overview.md      
+      href: key-azure-services.md      
     - name: Configure your development environment
       items: 
       - name: Create an Azure account
-        href: ./sdk/async-methods.md
+        href: create-azure-account.md
       - name: Configure Visual Studio for Azure Development
-        href: ./sdk/async-methods.md
+        href: configure-visual-studio.md
       - name: Configure VS Code for Azure Development
-        href: ./sdk/async-methods.md
+        href: configure-vs-code.md
       - name: Install the Azure CLI
-        href: ./install-azure-cli.md        
+        href: install-azure-cli.md        
     - name: Azure Terms
       href: authentication.md    
 - name: Migrate to Azure

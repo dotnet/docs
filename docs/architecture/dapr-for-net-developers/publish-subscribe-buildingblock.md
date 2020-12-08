@@ -11,7 +11,7 @@ The [Publish-Subscribe pattern](https://docs.microsoft.com/azure/architecture/pa
 
 ## What it solves
 
-The primary advantage of the Publish-Subscribe pattern is **loose coupling**, sometimes referred to as [temporal decoupling](https://docs.microsoft.com/azure/architecture/guide/technology-choices/messaging#decoupling). The pattern decouples services that send messages (the **publishers**) from services that consume messages (the **subscribers**). Both publishers and subscribers are unaware of each other - both are dependent on a centralized **message broker** that distributes the messages. 
+The primary advantage of the Publish-Subscribe pattern is **loose coupling**, sometimes referred to as [temporal decoupling](https://docs.microsoft.com/azure/architecture/guide/technology-choices/messaging#decoupling). The pattern decouples services that send messages (the **publishers**) from services that consume messages (the **subscribers**). Both publishers and subscribers are unaware of each other - both are dependent on a centralized **message broker** that distributes the messages.
 
 Figure 7-1 shows the high-level architecture of the publish/subscribe pattern.
 
@@ -21,16 +21,16 @@ Figure 7-1 shows the high-level architecture of the publish/subscribe pattern.
 
 From the previous figure, note the steps of the pattern:
 
-- Publishers send messages to the message broker. 
-- Subscribers bind to a subscription on the message broker. 
+- Publishers send messages to the message broker.
+- Subscribers bind to a subscription on the message broker.
 - The message broker forwards a copy of the message to interested subscriptions.
 - Subscribers consume messages from their subscriptions.
 
 Most message brokers encapsulate a queueing mechanism that can persist messages once received. With it, the message broker guarantees **durablity** by storing the message. Subscribers don't need to be immediately available or even online when a publisher sends a message.  Once available, the subscriber receives and processes the message.  Dapr guarantees **At-Least-Once** semantics for message delivery. Once a message is published, it will be delivered at least once to any interested subscriber.
 
- > If your service can only process a message once, you'll need to provide an [idempotency check](https://docs.microsoft.com/azure/architecture/microservices/design/api-design#idempotent-operations) to ensure that the same message is not processed multiple times. While such logic can be coded, some message brokers, such as Azure Service Bus, provide built-in *duplicate detection* messaging capabilities. 
+ > If your service can only process a message once, you'll need to provide an [idempotency check](https://docs.microsoft.com/azure/architecture/microservices/design/api-design#idempotent-operations) to ensure that the same message is not processed multiple times. While such logic can be coded, some message brokers, such as Azure Service Bus, provide built-in *duplicate detection* messaging capabilities.
 
-There are several message broker products available - both commercially and open-source. Each has advantages and drawbacks. Your job is to match your system requirements to the appropriate broker. Once selected, it's a best practice to decouple your application from message broker plumbing. You do this by wrapping the broker inside an *abstraction*. The abstraction encapsulates the message plumbing and exposes generic publish and subscribe operations to your code. Your code communicates with the abstraction, not the actual message broker. While a wise decision, you'll have to write and maintain the abstraction and its underlying implementation. This approach requires custom code that can be complex, repetitive, and error-prone. 
+There are several message broker products available - both commercially and open-source. Each has advantages and drawbacks. Your job is to match your system requirements to the appropriate broker. Once selected, it's a best practice to decouple your application from message broker plumbing. You do this by wrapping the broker inside an *abstraction*. The abstraction encapsulates the message plumbing and exposes generic publish and subscribe operations to your code. Your code communicates with the abstraction, not the actual message broker. While a wise decision, you'll have to write and maintain the abstraction and its underlying implementation. This approach requires custom code that can be complex, repetitive, and error-prone.
 
 Here's where Dapr comes to your rescue. The Dapr Publish/Subscribe building block provides the messaging abstraction and implementation out-of-the-box. The custom code you would have had to write is prebuilt and encapsulated inside the Dapr building block. You bind to it and consume it. Instead of writing messaging plumbing code, you and your team focus on creating business functionality that adds value to your customers.
 
@@ -51,6 +51,7 @@ At the lowest level, any programming platform can invoke the building block over
 ``` http
 http://localhost:<daprPort>/v1.0/publish/<pubsubname>/<topic>
 ```
+
 Note the Dapr specific URL segments in the above call:
 
 - `<daprPort>` provides the port number upon which the Dapr sidecar is listening.
@@ -92,7 +93,7 @@ The response from the call contains a list of topics to which the applications w
 ]
 ```
 
-In the JSON response, you can see the application wants to subscribe to topics `newOrder` and `newProduct`. It registers the endpoints `/orders` and `/productCatalog/products` for each, respectively. For both subscriptions, the application is binding to the Dapr component named `pubsub`. 
+In the JSON response, you can see the application wants to subscribe to topics `newOrder` and `newProduct`. It registers the endpoints `/orders` and `/productCatalog/products` for each, respectively. For both subscriptions, the application is binding to the Dapr component named `pubsub`.
 
 Figure 7-3 presents the flow of the example.
 
@@ -254,7 +255,7 @@ You have to specify several elements with every subscription:
 - The name of the Dapr Publish/Subscribe component you want to use (in this case `pubsub`).
 - The name of the topic to subscribe to (in this case `newOrder`).
 - The API operation that needs to be called for this topic (in this case `/orders`).
-- The [scope](https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-scopes/) can specify which services can publish and subscribe to a topic. 
+- The [scope](https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-scopes/) can specify which services can publish and subscribe to a topic.
 
 ## Reference architecture: eShopOnDapr
 
@@ -326,7 +327,7 @@ public class DaprEventBus : IEventBus
 As you can see in the code snippet, the topic name is derived from event type's name. Because all eShop services use the `IEventBus` abstraction, retrofitting Dapr required *absolutely no change* to the mainline application code.
 
 > Note how we cast the event parameter to a C# `dynamic` type. This workaround addresses an issue found in the `System.Text.Json` serializer, the Dapr SDK uses to serialize/deserialize messages. In the eShop code, an event is sometimes explicitly declared as the base-class for events `IntegrationEvent`. This is done because the specific event-type is determined dynamically at runtime based on business-logic, as seen in the following example:
- 
+
 ```csharp
 IntegrationEvent orderPaymentIntegrationEvent;
 
@@ -339,10 +340,10 @@ else
     orderPaymentIntegrationEvent = new OrderPaymentFailedIntegrationEvent(@event.OrderId);
 }
 ```
- 
-As a result, the event isn't serialized correctly and the message payload won't contain all the fields of the event. Our workaround circumvents the issue and correctly serializes the fields.  
- 
-With Dapr, the infrastructure code is **dramatically simplified**. It doesn't need to distinguish between the different message brokers. Dapr provides this abstraction for you. And if needed, you can swap out message brokers or configure multiple message broker components. 
+
+As a result, the event isn't serialized correctly and the message payload won't contain all the fields of the event. Our workaround circumvents the issue and correctly serializes the fields.
+
+With Dapr, the infrastructure code is **dramatically simplified**. It doesn't need to distinguish between the different message brokers. Dapr provides this abstraction for you. And if needed, you can swap out message brokers or configure multiple message broker components.
 
 ### Subscribing to events
 

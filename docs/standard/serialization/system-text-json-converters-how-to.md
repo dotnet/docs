@@ -100,7 +100,7 @@ The serializer provides special handling for exception types <xref:System.Text.J
 
 ### JsonException
 
-If you throw a `JsonException` without a message, the serializer creates a message that includes the path to the part of the JSON that caused the error. For example, the statement `throw new JsonException();` produces an error message like the following example:
+If you throw a `JsonException` without a message, the serializer creates a message that includes the path to the part of the JSON that caused the error. For example, the statement `throw new JsonException()` produces an error message like the following example:
 
 ```output
 Unhandled exception. System.Text.Json.JsonException:
@@ -112,7 +112,7 @@ If you do provide a message (for example, `throw new JsonException("Error occurr
 
 ### NotSupportedException
 
-If you throw a `NotSupportedException`, you always get the path information in the message. If you provide a message, the path information is appended to it. For example, the statement `throw new NotSupportedException("Error occurred.");` produces an error message like the following example:
+If you throw a `NotSupportedException`, you always get the path information in the message. If you provide a message, the path information is appended to it. For example, the statement `throw new NotSupportedException("Error occurred.")` produces an error message like the following example:
 
 ```output
 Error occurred. The unsupported member type is located on type
@@ -126,7 +126,7 @@ When the JSON payload contains tokens that are not valid for the type being dese
 
 When you want to disallow certain types, throw a `NotSupportedException`. This exception is what the serializer automatically throws for types that are not supported. For example, `System.Type` is not supported for security reasons, so an attempt to deserialize it results in a `NotSupportedException`.
 
-You can throw other exceptions as needed, but they will not automatically include JSON path information.
+You can throw other exceptions as needed, but they don't automatically include JSON path information.
 
 ## Register a custom converter
 

@@ -10,7 +10,7 @@ zone_pivot_groups: operating-systems-set-one
 
 # How to check that .NET is already installed
 
-This article teaches you how to check which versions of the .NET runtime and SDK are installed on your computer. .NET may have already been installed if you have an integrated development environment, such as Visual Studio or Visual Studio for Mac.
+This article teaches you how to check which versions of the .NET runtime and SDK are installed on your computer. If you have an integrated development environment, such as Visual Studio or Visual Studio for Mac, .NET may have already been installed.
 
 Installing an SDK installs the corresponding runtime.
 
@@ -134,7 +134,7 @@ Microsoft.NETCore.App 5.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 ## Check for install folders
 
-It's possible that .NET is installed but not added to the `PATH` variable for your operating system or user profile. Running the commands from the previous sections may not work. As an alternative, you can check that the .NET install folders exist.
+It's possible that .NET is installed but not added to the `PATH` variable for your operating system or user profile. In this case, the commands from the previous sections may not work. As an alternative, you can check that the .NET install folders exist.
 
 When you install .NET from an installer or script, it's installed to a standard folder. Much of the time the installer or script you're using to install .NET gives you an option to install to a different folder. If you choose to install to a different folder, adjust the start of the folder path.
 
@@ -186,3 +186,7 @@ You can see both the SDK versions and runtime versions with the command `dotnet 
 - [Install the .NET Runtime and SDK for Windows](windows.md).
 - [Install the .NET Runtime and SDK for macOS](macos.md).
 - [Install the .NET Runtime and SDK for Linux](linux.md).
+
+## See also
+
+- [Determine which .NET Framework versions are installed](../../framework/migration-guide/how-to-determine-which-versions-are-installed.md)

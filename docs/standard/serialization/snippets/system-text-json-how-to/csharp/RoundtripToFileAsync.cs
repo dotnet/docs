@@ -18,6 +18,7 @@ namespace SystemTextJsonSamples
             await JsonSerializer.SerializeAsync(createStream, weatherForecast);
             // </Serialize>
             Console.WriteLine($"The result is in {fileName}\n");
+            await createStream.DisposeAsync();
 
             // <Deserialize>
             using FileStream openStream = File.OpenRead(fileName);

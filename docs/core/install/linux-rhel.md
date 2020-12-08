@@ -45,28 +45,51 @@ Consult the [Red Hat documentation for .NET](https://access.redhat.com/documenta
 
 ## RHEL 8 ✔️
 
-> [!TIP]
-> .NET 5.0 isn't yet available in the AppStream repositories, but .NET Core 3.1 is. To install .NET Core 3.1, use the `dnf install` command with the appropriate package, such as `aspnetcore-runtime-3.1` or `dotnet-sdk-3.1`. The following instructions are for .NET 5.0.
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/8/prod.repo
-```
+.NET is included in the AppStream repositories for RHEL 8.
 
 [!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
 ## RHEL 7 ✔️ .NET 5.0
 
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+The following command installs the `scl-utils` package:
 
 ```bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+sudo yum install scl-utils
 ```
 
-[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-yum.md)]
+### Install the SDK
+
+The .NET SDK allows you to develop apps with .NET . If you install the .NET SDK, you don't need to install the corresponding runtime. To install .NET SDK, run the following commands:
+
+```bash
+subscription-manager repos --enable=rhel-7-server-dotnet-rpms
+yum install rh-dotnet50 -y
+scl enable rh-dotnet50 bash
+```
+
+Red Hat does not recommend permanently enabling `rh-dotnet50` because it may affect other programs. If you want to enable `rh-dotnet` permanently, add the following line to your _~/.bashrc_ file.
+
+```bash
+source scl_source enable rh-dotnet50
+```
+
+### Install the runtime
+
+The .NET Runtime allows you to run apps that were made with .NET that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
+
+```bash
+subscription-manager repos --enable=rhel-7-server-dotnet-rpms
+yum install rh-dotnet50-aspnetcore-runtime-5.0 -y
+scl enable rh-dotnet50 bash
+```
+
+Red Hat does not recommend permanently enabling `rh-dotnet50` because it may affect other programs. If you want to enable `rh-dotnet50` permanently, add the following line to your _~/.bashrc_ file.
+
+```bash
+source scl_source enable rh-dotnet50
+```
+
+As an alternative to the ASP.NET Core Runtime, you can install the .NET Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet50-aspnetcore-runtime-5.0` in the commands above with `rh-dotnet50-dotnet-runtime-5.0`.
 
 ## RHEL 7 ✔️ .NET Core 3.1
 
@@ -101,13 +124,13 @@ The .NET Core Runtime allows you to run apps that were made with .NET Core that 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms
 yum install rh-dotnet31-aspnetcore-runtime-3.1 -y
-scl enable rh-dotnet31-aspnetcore-runtime-3.1 bash
+scl enable rh-dotnet31 bash
 ```
 
-Red Hat does not recommend permanently enabling `rh-dotnet31-aspnetcore-runtime-3.1` because it may affect other programs. For example, `rh-dotnet31-aspnetcore-runtime-3.1` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet31-aspnetcore-runtime-3.1` permanently, add the following line to your _~/.bashrc_ file.
+Red Hat does not recommend permanently enabling `rh-dotnet31` because it may affect other programs. For example, `rh-dotnet31` includes a version of `libcurl` that differs from the base RHEL version. This may lead to issues in programs that do not expect a different version of `libcurl`. If you want to enable `rh-dotnet31` permanently, add the following line to your _~/.bashrc_ file.
 
 ```bash
-source scl_source enable rh-dotnet31-aspnetcore-runtime-3.1
+source scl_source enable rh-dotnet31
 ```
 
 As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Runtime that doesn't include ASP.NET Core support: replace `rh-dotnet31-aspnetcore-runtime-3.1` in the commands above with `rh-dotnet31-dotnet-runtime-3.1`.

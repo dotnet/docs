@@ -1,0 +1,42 @@
+---
+title: Configure Visual Studio Code for Azure Development with .NET
+description: This article helps you configure Visual Studio Code for Azure development including getting the right plugins installed and configured in VS Code
+ms.date: 11/30/2020
+ms.custom: azure-sdk-dotnet
+ms.author: daberry
+author: daberry
+---
+
+# Configure Visual Studio Code for Azure Development
+
+If you are using Visual Studio Code, whether for .NET development, for building single page applications using frameworks like Angular, React or Vue, or for writing applications in another language like Python, you will want to configure Visual Studio code for Azure development.
+
+### Step 1: Download Visual Studio Code
+
+If you already have Visual Studio Code installed, you can skip this step
+
+> [!div class="nextstepaction"]
+> [Download Visual Studio Code](https://code.visualstudio.com/download)
+
+### Step 2. Install the Azure Tools Extension Pack
+
+The [Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) contains extensions for working with Azure App Service, Azure Functions, Azure Storage, Cosmos DB and Azure Virtual Machines all in one convenient package.
+
+To install the extension from Visual Studio Code, first type (`Ctrl+Shift+X`) to bring up the Extensions window.  Then search for the `Azure Tools` extension and finally click **Install** button to install the extension.  
+
+![Screenshot of the Visual Studio Code showing extensions panel searching for the Azure Tools extension pack](./media/visual-studio-code-azure-tools.png)
+
+To learn more about installing extensions in Visual Studio Code, refer to the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) document on the Visual Studio Code website.
+
+### Step 3. Login to your Azure account with Azure Tools
+
+On the left hand panel, you will now see an Azure icon.  Click on this icon and a control panel for Azure services will appear.  Choose `Sign in to Azure...` under any service to complete the sign in process for the Azure tools in Visual Studio Code.
+
+![Screenshot of the Visual Studio Code showing how to login the Azure tools to Azure](./media/visual-studio-code-azure-login.png)
+
+### Next Steps
+
+Next, you will want to install the Azure CLI (Command Line Interface) on your workstation
+
+> [!div class="nextstepaction"]
+> [Install the Azure CLI](./install-azure-cli.md)

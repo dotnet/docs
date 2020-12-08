@@ -1,6 +1,6 @@
 ---
 title: Connection strings
-ms.date: 12/13/2019
+ms.date: 12/08/2020
 description: The supported keywords and values of connection strings.
 ---
 # Connection strings
@@ -55,9 +55,15 @@ The encryption key. When specified, `PRAGMA key` is sent immediately after openi
 > [!WARNING]
 > Password has no effect when encryption isn't supported by the native SQLite library.
 
+> [!NOTE]
+> The Password keyword was added in version 3.0.
+
 ### Foreign Keys
 
 A value indicating whether to enable foreign key constraints.
+
+> [!NOTE]
+> The Foreign Keys keyword was added in version 3.0.
 
 | Value   | Description
 | ------- | --- |
@@ -71,6 +77,9 @@ SQLite library.
 ### Recursive triggers
 
 A value that indicates whether to enable recursive triggers.
+
+> [!NOTE]
+> The Recursive Triggers keyword was added in version 3.0.
 
 | Value | Description                                                                 |
 | ----- | --------------------------------------------------------------------------- |

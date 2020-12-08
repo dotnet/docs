@@ -161,15 +161,15 @@ The end result of this approach is for controllers to be much smaller and focuse
 
 > ### References – Mapping Requests to Responses
 >
-> - **Routing to Controller Actions**
+> - **Routing to Controller Actions**\
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
-> - **Model Binding**
+> - **Model Binding**\
  > <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
-> - **Model Validation**
+> - **Model Validation**\
  > <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
-> - **Filters**
+> - **Filters**\
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
-> - **ApiController Attribute**
+> - **ApiController Attribute**\
  > <https://docs.microsoft.com/aspnet/core/web-api/>
 
 ## Working with dependencies
@@ -383,13 +383,13 @@ You can read more about implementing filters and download a working sample from 
 
 > ### References – Structuring applications
 >
-> - **Areas**
+> - **Areas**\
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
-> - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**
+> - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**\
 >   <https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc>
-> - **Filters**
+> - **Filters**\
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
-> - **MSDN Magazine – Real World ASP.NET Core MVC Filters**
+> - **MSDN Magazine – Real World ASP.NET Core MVC Filters**\
 >   <https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters>
 
 ## Security
@@ -493,13 +493,13 @@ Blazor Server applications can leverage the same authentication features as any 
 
 > ### References – Authentication
 >
-> - **Authentication Actions and Defaults**
+> - **Authentication Actions and Defaults**\
 >   <https://stackoverflow.com/a/52493428>
-> - **Authentication and Authorization for SPAs**
+> - **Authentication and Authorization for SPAs**\
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization>
-> - **ASP.NET Core Blazor Authentication and Authorization**
+> - **ASP.NET Core Blazor Authentication and Authorization**\
 >   <https://docs.microsoft.com/aspnet/core/blazor/security/>
-> - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**
+> - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**\
 >   <https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization>
 
 ### Authorization
@@ -576,17 +576,17 @@ Be especially careful about "rolling your own" implementation of cryptography, u
 
 > ### References – Security
 >
-> - **Security Docs Overview**
+> - **Security Docs Overview**\
 >   <https://docs.microsoft.com/aspnet/core/security/>
-> - **Enforcing SSL in an ASP.NET Core App**
+> - **Enforcing SSL in an ASP.NET Core App**\
 >   <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
-> - **Introduction to Identity**
+> - **Introduction to Identity**\
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity>
-> - **Introduction to Authorization**
+> - **Introduction to Authorization**\
 >   <https://docs.microsoft.com/aspnet/core/security/authorization/introduction>
-> - **Authentication and Authorization for API Apps in Azure App Service**
+> - **Authentication and Authorization for API Apps in Azure App Service**\
 >   <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
-> - **Identity Server**
+> - **Identity Server**\
 >   <https://github.com/IdentityServer>
 
 ## Client communication
@@ -645,9 +645,9 @@ Consider ways in which your applications communicate directly with client applic
 
 > ### References – Client Communication
 >
-> - **ASP.NET Core SignalR**
+> - **ASP.NET Core SignalR**\
 >   <https://github.com/dotnet/aspnetcore/tree/master/src/SignalR>
-> - **WebSocket Manager**
+> - **WebSocket Manager**\
 >   <https://github.com/radu-matei/websocket-manager>
 
 ## Domain-driven design – Should you apply it?
@@ -694,7 +694,7 @@ A hybrid approach would be to only use DDD for the transactional or more complex
 
 > ### References – Domain-Driven Design
 >
-> - **DDD in Plain English (StackOverflow Answer)**
+> - **DDD in Plain English (StackOverflow Answer)**\
 >   <https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-ddd-in-plain-english-please/1222488#1222488>
 
 ## Deployment
@@ -737,13 +737,13 @@ _Learn more about Azure deployment options in [Chapter 10](development-process-f
 
 > ### References – Deployment
 >
-> - **Hosting and Deployment Overview**
+> - **Hosting and Deployment Overview**\
 >   <https://docs.microsoft.com/aspnet/core/publishing/>
-> - **When to use Kestrel with a reverse proxy**
+> - **When to use Kestrel with a reverse proxy**\
 >   <https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
-> - **Host ASP.NET Core apps in Docker**
+> - **Host ASP.NET Core apps in Docker**\
 >   <https://docs.microsoft.com/aspnet/core/publishing/docker>
-> - **Introducing Azure Application Gateway**
+> - **Introducing Azure Application Gateway**\
 >   <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
 
 >[!div class="step-by-step"]

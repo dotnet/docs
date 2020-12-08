@@ -1,5 +1,11 @@
 ### XML parsing changes
 
+| Name    | Value   |
+|:--------|:--------|
+| Scope   | Minor   |
+| Version | 4.5.2   |
+| Type    | Runtime |
+
 #### Details
 
 For security reasons, the following changes were introduced into XML parsing APIS:
@@ -12,13 +18,7 @@ For security reasons, the following changes were introduced into XML parsing API
 
 #### Suggestion
 
-To revert to the previous behavior, set [\<EnableLegacyXmlSettings> element](../../../../docs/framework/configure-apps/file-schema/runtime/enablelegacyxmlsettings-element.md) to `1`.
-
-| Name    | Value   |
-|:--------|:--------|
-| Scope   | Minor   |
-| Version | 4.5.2   |
-| Type    | Runtime |
+To revert to the previous behavior, you can set a value in the registry. Add a DWORD value named `EnableLegacyXmlSettings` to the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\XML` registry key, and set its value to `1`. You can also add the registry value in the HKEY_CURRENT_USER hive instead.
 
 #### Affected APIs
 

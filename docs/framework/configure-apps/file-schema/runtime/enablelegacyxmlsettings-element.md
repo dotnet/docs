@@ -24,17 +24,17 @@ Specifies whether to use XML parsing settings from .NET Framework 4.5.1 and earl
 
 ### enabled attribute
 
-|Value|Description|
-|-----------|-----------------|
-|0|.|
-|1.|
+| Value | Description                           |
+|-------|---------------------------------------|
+| 0     | Don't use legacy XML reader settings. |
+| 1     | Use legacy XML reader settings.       |
 
 ## Parent elements
 
-|Element|Description|
-|-------------|-----------------|
-|`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
-|`runtime`|Contains information about runtime initialization options.|
+| Element         | Description                                                                                                       |
+|-----------------|-------------------------------------------------------------------------------------------------------------------|
+| `configuration` | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| `runtime`       | Contains information about runtime initialization options.                                                        |
 
 ## Remarks
 
@@ -49,4 +49,4 @@ To revert to pre-4.5.2 defaults, set the `EnableLegacyXmlSettings` element to `1
 
 - [\<runtime> Element](runtime-element.md)
 - [\<configuration> Element](../configuration-element.md)
-- [XML parsing changes](../../../../../includes/migration-guide/runtime/xml/xml-parse-changes.md)
+- [XML runtime changes for .NET Framework 4.5.2](../../../migration-guide/runtime/4.5.1-4.5.2.md)

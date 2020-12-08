@@ -36,6 +36,7 @@ Run-time settings are used by the common language runtime to configure applicati
 &nbsp;&nbsp;&nbsp;&nbsp;[\<disableCommitThreadStack>](disablecommitthreadstack-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<disableFusionUpdatesFromADManager>](disablefusionupdatesfromadmanager-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<EnableAmPmParseAdjustment>](enableampmparseadjustment-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<EnableLegacyXmlSettings>](enablelegacyxmlsettings-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<enforceFIPSPolicy>](enforcefipspolicy-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<etwEnable>](etwenable-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<forcePerformanceCounterUniqueSharedMemoryReads>](forceperformancecounteruniquesharedmemoryreads-element.md)\

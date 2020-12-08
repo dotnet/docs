@@ -45,24 +45,22 @@ The following rules are enabled, by default, in .NET 5.0.
 | [CA2200](/visualstudio/code-quality/ca2200) | Usage | Warning | Rethrow to preserve stack details
 | [CA2247](/visualstudio/code-quality/ca2247) | Usage | Warning | Argument passed to TaskCompletionSource constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
 
-You can change the severity of these rules to disable them or elevate them to errors. You can also enable more rules.
+You can change the severity of these rules to disable them or elevate them to errors. You can also [enable more rules](#enable-additional-rules).
 
 - For a list of rules that are included with each .NET SDK version, see [Analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 - For a list of all the code quality rules, see [Code quality rules](quality-rules/index.md).
 
-### Analysis mode
+### Enable additional rules
 
-In the default analysis mode, some rules are [enabled by default](#enabled-rules) as build warnings. Some other rules are enabled by default only as Visual Studio IDE suggestions with corresponding code fixes. The remaining rules are disabled by default. The [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md) includes each rule's default severity and whether or not the rule is enabled by default in the default analysis mode.
+*Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode, only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
 
-You can [configure code analysis rules](configuration-options.md) to enable or disable an individual rule or a category of rules. Additionally, you can use the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property to switch to one of the following custom analysis modes:
+| Value | Description | Example |
+| - | - |
+| `AllDisabledByDefault` | This is the most conservative mode. All rules are disabled by default. You can selectively [opt into](configuration-options.md) individual rules to enable them. | `<AnalysisMode>AllDisabledByDefault</AnalysisMode>` |
+| `AllEnabledByDefault` | This is the most aggressive mode. All rules are enabled as build warnings. You can selectively [opt out of](configuration-options.md) individual rules to disable them. | `<AnalysisMode>AllEnabledByDefault</AnalysisMode>` |
+| `Default` | The default mode, where a handful of rules are enabled as warnings, others are enabled only as Visual Studio IDE suggestions with corresponding code fixes, and the rest are disabled completely. You can selectively [opt into or out of](configuration-options.md) individual rules to disable them. | `<AnalysisMode>Default</AnalysisMode>` |
 
-- _Aggressive_ or _Opt-out_ mode: All rules are enabled by default as build warnings. You can selectively [opt out](configuration-options.md) of individual rules to disable them.
-
-  `<AnalysisMode>AllEnabledByDefault</AnalysisMode>`
-
-- _Conservative_ or _Opt-in_ mode: All rules are disabled by default. You can selectively [opt into](configuration-options.md) individual rules to enable them.
-
-  `<AnalysisMode>AllDisabledByDefault</AnalysisMode>`
+To find the default severity for each available rule and whether or not the rule is enabled in the default analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 
 ### Treat warnings as errors
 

@@ -11,24 +11,24 @@ helpviewer_keywords:
 ---
 # Overview of .NET source code analysis
 
-.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and code style issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK. If you don't want to move to the .NET 5+ SDK or if you prefer a NuGet package-based model, the analyzers are also available in the `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). You might prefer a package-based model for on-demand version updates.
+.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and code style issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK and you don't need to install them separately. If your project targets .NET 5 or later, code analysis is enabled by default. If your project target a different .NET implementation, for example, .NET Core, .NET Standard, or .NET Framework, you must manually enable code analysis by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`.
+
+If you don't want to move to the .NET 5+ SDK or if you prefer a NuGet package-based model, the analyzers are also available in the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). You might prefer a package-based model for on-demand version updates.
 
 > [!NOTE]
-> .NET analyzers are target-framework agnostic. That is, your project does not need to target a specific .NET framework. The analyzers work for projects that target `net5.0` as well as earlier .NET versions, such as `netcoreapp`, `netstandard`, and `net472`.
+> .NET analyzers are target-framework agnostic. That is, your project does not need to target a specific .NET implementation. The analyzers work for projects that target `net5.0` as well as earlier .NET versions, such as `netcoreapp3.1` and `net472`.
 
 If rule violations are found by an analyzer, they're reported as a suggestion, warning, or error, depending on how each rule is [configured](configuration-options.md). Code analysis violations appear with the prefix "CA" or "IDE" to differentiate them from compiler errors.
-
-> [!TIP]
->
-> - You can also install third party analyzers, such as [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), and [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
-> - If you're using Visual Studio, many analyzer rules have associated *code fixes* that you can apply to correct the problem. Code fixes are shown in the light bulb icon menu.
 
 ## Code quality analysis
 
 *Code quality analysis* ("CAxxxx") rules inspect your C# or Visual Basic code for security, performance, design and other issues. Analysis is enabled, by default, for projects that target .NET 5.0 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.
 
 > [!TIP]
-> In Visual Studio, you can enable or disable code analysis using the Project Properties window. To access the Project Properties window, right-click on a project within Solution Explorer and select **Properties**. Next, select the **Code Analysis** tab, and then either select or clear the checkbox to **Enable .NET analyzers**.
+> If you're using Visual Studio:
+>
+> - Many analyzer rules have associated *code fixes* that you can apply to correct the problem. Code fixes are shown in the light bulb icon menu.
+> - You can enable or disable code analysis using the Project Properties window. To access the Project Properties window, right-click on a project within Solution Explorer and select **Properties**. Next, select the **Code Analysis** tab, and then either select or clear the checkbox to **Enable .NET analyzers**.
 
 ### Enabled rules
 
@@ -54,11 +54,11 @@ You can change the severity of these rules to disable them or elevate them to er
 
 *Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode, only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
 
-| Value | Description | Example |
+| Value | Description |
 | - | - |
-| `AllDisabledByDefault` | This is the most conservative mode. All rules are disabled by default. You can selectively [opt into](configuration-options.md) individual rules to enable them. | `<AnalysisMode>AllDisabledByDefault</AnalysisMode>` |
-| `AllEnabledByDefault` | This is the most aggressive mode. All rules are enabled as build warnings. You can selectively [opt out of](configuration-options.md) individual rules to disable them. | `<AnalysisMode>AllEnabledByDefault</AnalysisMode>` |
-| `Default` | The default mode, where a handful of rules are enabled as warnings, others are enabled only as Visual Studio IDE suggestions with corresponding code fixes, and the rest are disabled completely. You can selectively [opt into or out of](configuration-options.md) individual rules to disable them. | `<AnalysisMode>Default</AnalysisMode>` |
+| `AllDisabledByDefault` | This is the most conservative mode. All rules are disabled by default. You can selectively [opt into](configuration-options.md) individual rules to enable them.<br /><br />`<AnalysisMode>AllDisabledByDefault</AnalysisMode>` |
+| `AllEnabledByDefault` | This is the most aggressive mode. All rules are enabled as build warnings. You can selectively [opt out of](configuration-options.md) individual rules to disable them.<br /><br />`<AnalysisMode>AllEnabledByDefault</AnalysisMode>` |
+| `Default` | The default mode, where a handful of rules are enabled as warnings, others are enabled only as Visual Studio IDE suggestions with corresponding code fixes, and the rest are disabled completely. You can selectively [opt into or out of](configuration-options.md) individual rules to disable them.<br /><br />`<AnalysisMode>Default</AnalysisMode>` |
 
 To find the default severity for each available rule and whether or not the rule is enabled in the default analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 
@@ -142,6 +142,10 @@ dotnet_diagnostic.CA1822.severity = none
 Visual Studio provides additional ways to suppress warnings from code analysis rules. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
 
 For more information about rule severities, see [Configure rule severity](configuration-options.md#severity-level).
+
+## Third-party analyzers
+
+In addition to the official .NET analyzers, you can also install third party analyzers, such as [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), and [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
 ## See also
 

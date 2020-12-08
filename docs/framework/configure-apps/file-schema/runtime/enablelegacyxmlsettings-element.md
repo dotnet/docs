@@ -38,9 +38,15 @@ Specifies whether to use XML parsing settings from .NET Framework 4.5.1 and earl
 
 ## Remarks
 
+A breaking change was introduced in .NET Framework 4.5.2. The following default values were changed:
 
+- <xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities?displayProperty=nameWithType> is set to 10 million by default.
+- <xref:System.Xml.XmlReaderSettings.XmlResolver?displayProperty=nameWithType> is set to `null` by default.
+
+To revert to pre-4.5.2 defaults, set the `EnableLegacyXmlSettings` element to `1`.
 
 ## See also
 
 - [\<runtime> Element](runtime-element.md)
 - [\<configuration> Element](../configuration-element.md)
+- [XML parsing changes](../../../../../includes/migration-guide/runtime/xml/xml-parse-changes.md)

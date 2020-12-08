@@ -30,6 +30,6 @@ To revert to the previous behavior, set [\<EnableLegacyXmlSettings> element](../
 #### Affected APIs
 
 - `P:System.Xml.XmlReaderSettings.MaxCharactersFromEntities`
-- `P:System.Xml.XmlTextReader.XmlResolver`
+- `P:System.Xml.XmlReaderSettings.XmlResolver`
 
 -->

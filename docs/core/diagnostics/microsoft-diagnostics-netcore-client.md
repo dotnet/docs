@@ -6,7 +6,7 @@ Microsoft.Diagnostics.NETCore.Client (also known as the Diagnostics Client libra
 
 ## Install
 
-You can install Microsoft.Diagnostics.NETCore.Client by using [NuGet](https://www.nuget.org/packages/Microsoft.Diagnostics.NETCore.Client/).
+You can acquire [Microsoft.Diagnostics.NETCore.Client](https://www.nuget.org/packages/Microsoft.Diagnostics.NETCore.Client/) by adding a `PackageReference` to your project. The package is hosted on `NuGet.org`. 
 
 ## Use Microsoft.Diagnostics.NETCore.Client to write your own diagnostic tools
 
@@ -14,7 +14,7 @@ These samples show how to use Microsoft.Diagnostics.NETCore.Client library. Some
 
 ### Attach to a process and print out all the runtime GC events in real time to the console
 
-This sample shows an example on starting an EventPipe session with the [.NET runtime provider](../../fundamentals/diagnostics/runtime-events.md) with the GC keyword at informational level, and use `EventPipeEventSource` provided by the [TraceEvent library](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/) to parse the events coming in and print the name of each event to the console in real time.
+This snippet shows how to start an EventPipe session using the [.NET runtime provider](../../fundamentals/diagnostics/runtime-events.md) with the GC keyword at informational level and how to use the `EventPipeEventSource` class provided by the [TraceEvent library](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/) to parse the incoming events and print their names to the console in real time.
 
 ```cs
 using Microsoft.Diagnostics.NETCore.Client;
@@ -67,7 +67,7 @@ public void TriggerCoreDump(int processId)
 
 ### Trigger a core dump when CPU usage goes above a certain threshold
 
-This sample shows an example where you monitor the `cpu-usage` counter published by the .NET runtime and request a dump when the CPU usage grows beyond a certain threshold.
+This sample shows how to monitor the `cpu-usage` counter published by the .NET runtime and request a dump when the CPU usage grows beyond a certain threshold.
 
 ```cs
 using Microsoft.Diagnostics.NETCore.Client;
@@ -118,7 +118,7 @@ public void TriggerDumpOnCpuUsage(int processId, int threshold)
 
 ### Trigger a CPU trace for given number of seconds
 
-This sample shows an example where we trigger an EventPipe session for certain period of time, with the default CLR trace keyword as well as the sample profiler, and read from the stream that gets created as a result and write the bytes out to a file. Essentially this is what `dotnet-trace` uses internally to write a trace file.
+This sample shows how to trigger an EventPipe session for certain period of time with the default CLR trace keyword as well as the sample profiler. Afterward, it reads the output stream and writes the bytes out to a file. Essentially this is what [`dotnet-trace`](dotnet-trace.md) uses internally to write a trace file.
 
 ```cs
 using Microsoft.Diagnostics.Tracing;
@@ -165,7 +165,7 @@ public static void PrintProcessStatus()
 {
     var processes = DiagnosticsClient.GetPublishedProcesses()
         .Select(Process.GetProcessById)
-        .Where(process => process != null);
+        .Where(process => process is not null);
 
     foreach (var process in processes)
     {
@@ -393,7 +393,7 @@ public class EventPipeSession : IDisposable
 }
 ```
 
-This class represents an ongoing EventPipe session that has been started. It is immutable and acts as a handle to an EventPipe session of the given runtime.
+This class represents an ongoing EventPipe session. It is immutable and acts as a handle to an EventPipe session of the given runtime.
 
 ```csharp
 public Stream EventStream { get; }

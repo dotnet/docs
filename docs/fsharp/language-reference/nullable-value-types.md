@@ -69,7 +69,7 @@ c.M(12)
 c.NVT <- 12
 ```
 
-In the previous example, you can pass `12` to the method `M`. You can also assign `12` to the auto property `NVT`. The F# compiler will implicitly convert a call or assignment like this when the target type matches the input, if the input can be constructed as a nullabel value type.
+In the previous example, you can pass `12` to the method `M`. You can also assign `12` to the auto property `NVT`. If the input can be constructed as a nullable value type, the F# compiler will implicitly convert a call or assignment like this when the target type matches the input.
 
 ## Examine a nullable value type instance
 

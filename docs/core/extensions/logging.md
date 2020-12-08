@@ -157,7 +157,7 @@ namespace Example
         private readonly ILogger _logger;
 
         public DefaultService(ILoggerFactory loggerFactory) =>
-            _logger = logger.CreateLogger("CustomCategory");
+            _logger = loggerFactory.CreateLogger("CustomCategory");
 
         // ...
     }

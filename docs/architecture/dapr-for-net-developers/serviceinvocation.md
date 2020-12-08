@@ -13,10 +13,10 @@ Across a distributed system, one service often needs to communicate with another
 
 Making calls between services in a distributed application may appear easy, but there are many challenges involved. For example, ...
 
-- How do you know where the other services are? 
+- How do you know where the other services are?
 - Once you've got a service address, how do you call that service securely?
-- What happens if that call fails? 
-- How do you handle retries when short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur? 
+- What happens if that call fails?
+- How do you handle retries when short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur?
 
 Lastly, as distributed applications compose many different services, capturing insights across service call graphs are critical to diagnosing production issues.
 
@@ -32,21 +32,21 @@ Let's start with an example. Consider two services: Service A and Service B. Ser
 
 Note the steps from the previous figure:
 
-- Step #1: Service A makes a call to the `catalog/items` endpoint in service B by invoking the Service Invocation API on the Service A sidecar. 
+- Step #1: Service A makes a call to the `catalog/items` endpoint in service B by invoking the Service Invocation API on the Service A sidecar.
 
- >  The sidecar uses a pluggable name resolution mechanism to resolve the address of service B. In self-hosted mode, Dapr uses [mDNS](https://www.ionos.com/digitalguide/server/know-how/multicast-dns/) to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.  
+  > The sidecar uses a pluggable name resolution mechanism to resolve the address of service B. In self-hosted mode, Dapr uses [mDNS](https://www.ionos.com/digitalguide/server/know-how/multicast-dns/) to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.  
 
 - Step #2: The service A sidecar forwards the request to the service B sidecar.
 
-- Step #3: The service B sidecar makes the actual `catalog/items` request against the service B API. 
+- Step #3: The service B sidecar makes the actual `catalog/items` request against the service B API.
 
 - Step #4: Service B executes the request and returns a response back to its sidecar.
 
-- Step #5: The Service B sidecar forwards the response back to the 
+- Step #5: The Service B sidecar forwards the response back to the
  service A sidecar.
 
 - Step #6: The service A sidecar returns the response back to service A.
- 
+
 Because the calls flow through sidecars, Dapr can inject some useful cross-cutting behaviors:
 
 - Automatically retry calls upon failure.
@@ -59,8 +59,9 @@ Any application can invoke a Dapr sidecar by using the native **invoke** API bui
 ``` http
 http://localhost:<daprPort>/v1.0/invoke/<applicationid>/method/<methodname>
 ```
- > The Dapr native APIs enable any application stack that supports HTTP or gRPC to consume Dapr services.
- 
+
+> The Dapr native APIs enable any application stack that supports HTTP or gRPC to consume Dapr services.
+
 In the following example, we use *curl* to call the `catalog/items` 'GET' endpoint of `Service B`:
 
 ``` curl
@@ -71,7 +72,7 @@ In the next section, we'll use the .NET SDK to simplify service invocation calls
 
 ### Using the .NET SDK
 
-The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with an intuitive and language-specific way to interact with Dapr. 
+The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with an intuitive and language-specific way to interact with Dapr.
 The .NET `DaprClient` class can be used for most interactions.
 
 Calling the `InvokeMethodAsync` method from `DaprClient` invokes a  method on a remote service. The following example submits an order by calling the `order/submit` method of the `orderservice` application:
@@ -85,8 +86,7 @@ The third argument, an `order` object, is serialized internally (with `System.Te
 
 You can also use `InvokeMethodWithResponseAsync` or `InvokeMethodRawAsync` to invoke a remote method. These specialized methods provide you with direct access to response headers and raw response bytes, respectively.
 
-With the Dapr .NET SDK, your service can call another service via HTTP/REST or gRPC. For HTTP-based services, the `HttpExtension` class 
-provides access to common HTTP properties:
+With the Dapr .NET SDK, your service can call another service via HTTP/REST or gRPC. For HTTP-based services, the `HttpExtension` class provides access to common HTTP properties:
 
 - HTTP Verb: (`POST`, `GET`, `PUT`, `PATCH`, and `DELETE`). The default verb is `POST`.
 - ContentType: The content-type of the HTTP request, such as `application/json`.
@@ -143,17 +143,17 @@ Note the updated steps from the previous figure:
 
 - Step #1: The front-end still uses HTTP/REST to call the API Gateway.
 
-- Step #2: The API Gateway forwards HTTP requests to its Dapr sidecar. 
+- Step #2: The API Gateway forwards HTTP requests to its Dapr sidecar.
 
 - Step #3: The API Gateway sidecar sends the request to the sidecar of the aggregator or back-end service.
 
-- Step #4:  The aggregator service uses the Dapr .NET SDK to call back-end services through their sidecar architecture. 
+- Step #4:  The aggregator service uses the Dapr .NET SDK to call back-end services through their sidecar architecture.
 
-Dapr implements calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST, you still get [gRPC performance benefits](https://docs.microsoft.com/dotnet/architecture/cloud-native/grpc#grpc-benefits) for calls between sidecars. 
+Dapr implements calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST, you still get [gRPC performance benefits](https://docs.microsoft.com/dotnet/architecture/cloud-native/grpc#grpc-benefits) for calls between sidecars.
 
 > Architecturally speaking, calls between sidecars have the highest opportunity for system performance gain. In real-world scenarios, sidecars often are located on different machines.
 
-> Note that the Service Invocation building block acts as a bridge between protocols. Calls to and from the sidecars support gRPC or HTTP protocols. Therefore, services can communicate with each other using HTTP, gRPC or a combination of both. 
+> Note that the Service Invocation building block acts as a bridge between protocols. Calls to and from the sidecars support gRPC or HTTP protocols. Therefore, services can communicate with each other using HTTP, gRPC or a combination of both.
 
 The eShopOnDapr reference application benefits from the Dapr Service Invocation building block. The features include service discovery, automatic mTLS, and observability.
 
@@ -163,8 +163,7 @@ Both the original and updated eShop application leverage the [Envoy proxy](https
 
 In the original eShopOnContainers implementation, the Envoy proxy gateway forwarded incoming HTTP requests directly to aggregator or back-end services. In the new eShopOnDapr, the Envoy proxy forwards request to a Dapr sidecar. The sidecar provides service invocation, mTLS, and observability.
 
-Envoy is configured using a YAML definition file to control the proxy's behavior. To enable 
-Envoy to forward HTTP requests to a Dapr sidecar container, we added a `dapr` cluster to the configuration. The cluster configuration contains a host that points to the HTTP port upon which the Dapr sidecar is listening:
+Envoy is configured using a YAML definition file to control the proxy's behavior. To enable Envoy to forward HTTP requests to a Dapr sidecar container, we added a `dapr` cluster to the configuration. The cluster configuration contains a host that points to the HTTP port upon which the Dapr sidecar is listening:
 
 ``` yaml
 clusters:
@@ -208,7 +207,7 @@ public class CatalogController : ControllerBase
     }
 ```
 
-First, the front end makes a direct HTTP call to the Envoy API gateway. 
+First, the front end makes a direct HTTP call to the Envoy API gateway.
 
 ```
 GET http://<api-gateway>/c/api/v1/catalog/items?pageSize=20
@@ -226,7 +225,7 @@ The sidecar handles service discovery and routes the request to the Catalog API 
 GET http://localhost/api/v1/catalog/items?pageSize=20
 ```
 
-> Note how calls made to the Envoy Proxy gateway use native Dapr HTTP calls and not the Dapr .NET SDK. 
+> Note how calls made to the Envoy Proxy gateway use native Dapr HTTP calls and not the Dapr .NET SDK.
 
 ### Make aggregated service calls using the .NET SDK
 
@@ -295,12 +294,12 @@ public class CatalogService : ICatalogService
             DaprAppId,
             "api/v1/catalog/items",
             new HTTPExtension
-            { 
+            {
                 QueryString = new Dictionary<string, string>
                 {
                     ["ids"] = string.Join(",", ids),
                 },
-                Verb = HTTPVerb.Get 
+                Verb = HTTPVerb.Get
             });
     }
 
@@ -342,7 +341,7 @@ We don't need to explicitly specify the HTTP verb for this POST call as `POST` i
 
 ## Summary
 
-In this chapter, we introduced the Service Invocation building block. We showed how to invoke remote methods both by making direct HTTP calls to the Dapr sidecar, and by using the Dapr .NET SDK. 
+In this chapter, we introduced the Service Invocation building block. We showed how to invoke remote methods both by making direct HTTP calls to the Dapr sidecar, and by using the Dapr .NET SDK.
 
 The eShopOnDapr reference architecture shows how we modernized the original eShopOnContainers solution by using Dapr service invocation. Adding Dapr to eShop provides benefits such as automatic retries, message encryption using mTLS, and improved observability.
 
@@ -351,7 +350,6 @@ The eShopOnDapr reference architecture shows how we modernized the original eSho
 - [Dapr Service Invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/)
 
 - [Monitoring distributed cloud-native applications](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/observability-patterns)
-
 
 >[!div class=“step-by-step”]
 >[Previous](~index.md~)

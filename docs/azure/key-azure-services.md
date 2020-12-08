@@ -11,7 +11,6 @@ author: daberry
 
 While Azure contains over 100 services, the following Azure services are the services you will use most frequently as a .NET Developer.
 
-
 | **Service** |         | **Description**      |
 | :--:|:------|:------------|
 | ![App Service Icon](./media/app-services.svg) | **Azure App Service** | Azure App Service is a fully managed platform for hosting web applications and APIs in Azure.  It features automatic load balancing and auto-scaling in a highly available environment.  You pay only for the compute resources you use and free tiers are available. |

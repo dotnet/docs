@@ -170,8 +170,8 @@ namespace TourOfCsharp
             F<int>(1);      // Invokes F<int>(int)
             F(1, 1);        // Invokes F(double, double)
         }
-        // </Overloading>
     }
+    // </Overloading>
 
     // <ListExample>
     public class MyList<T>

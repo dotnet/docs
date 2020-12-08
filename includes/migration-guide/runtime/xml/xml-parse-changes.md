@@ -12,7 +12,7 @@ For security reasons, the following changes were introduced into XML parsing API
 
 #### Suggestion
 
-To revert to the previous behavior, set [\<EnableLegacyXmlSettings> element](../../../../docs/framework/configure-apps/file-schema/runtime/enablelegacyxmlsettings-element copy.md) to `1`.
+To revert to the previous behavior, set [\<EnableLegacyXmlSettings> element](../../../../docs/framework/configure-apps/file-schema/runtime/enablelegacyxmlsettings-element.md) to `1`.
 
 | Name    | Value   |
 |:--------|:--------|

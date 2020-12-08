@@ -28,7 +28,7 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 > If you're using Visual Studio:
 >
 > - Many analyzer rules have associated *code fixes* that you can apply to correct the problem. Code fixes are shown in the light bulb icon menu.
-> - You can enable or disable code analysis using the Project Properties window. To access the Project Properties window, right-click on a project within Solution Explorer and select **Properties**. Next, select the **Code Analysis** tab, and then either select or clear the checkbox to **Enable .NET analyzers**.
+> - You can enable or disable code analysis by right-clicking on a project in Solution Explorer and selecting **Properties** > **Code Analysis** tab > **Enable .NET analyzers**.
 
 ### Enabled rules
 

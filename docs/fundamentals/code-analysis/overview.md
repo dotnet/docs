@@ -93,21 +93,20 @@ By default, you'll get the latest code analysis rules and default rule severitie
 
 - Install the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) to decouple rule updates from .NET SDK updates. Installing the package turns off the built-in SDK analyzers and generates a build warning if the SDK contains a newer analyzer assembly version than that of the NuGet package.
 
-## Code style analysis
+## Code-style analysis
 
-*Code style analysis* ("IDExxxx") rules enable you to define and maintain consistent code style in your codebase. The default enablement settings are:
+*Code-style analysis* ("IDExxxx") rules enable you to define and maintain consistent code style in your codebase. The default enablement settings are:
 
-- Command line build: Code style analysis is disabled, by default, for all .NET projects on command-line builds.
-- Visual Studio: Code style analysis is enabled, by default, for all .NET projects inside Visual Studio as [code refactoring quick actions](/visualstudio/ide/code-generation-in-visual-studio).
+- Command-line build: Code-style analysis is disabled, by default, for all .NET projects on command-line builds.
+- Visual Studio: Code-style analysis is enabled, by default, for all .NET projects inside Visual Studio as [code refactoring quick actions](/visualstudio/ide/code-generation-in-visual-studio).
 
-Starting .NET 5.0, you can enable code style analysis on build, both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
+Starting .NET 5.0, you can enable code-style analysis on build, both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
 
 For a full list of code-style analysis rules, see [Code style rules](style-rules/index.md).
 
-> [!NOTE]
-> The code style analysis feature is experimental and may change between the .NET 5 and .NET 6 releases.
+### Enable on build
 
-Steps to enable code style analysis on build:
+Follow these steps to enable code-style analysis on build:
 
 1. Set the MSBuild property [EnforceCodeStyleInBuild](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) to `true`.
 
@@ -130,6 +129,9 @@ Steps to enable code style analysis on build:
    # IDE0040: Accessibility modifiers required (disabled on build)
    dotnet_diagnostic.IDE0040.severity = silent
    ```
+
+> [!NOTE]
+> The code-style analysis feature is experimental and may change between the .NET 5 and .NET 6 releases.
 
 ## Suppress a warning
 

@@ -8,7 +8,7 @@ public class ProcessTracker
     {
         var processes = DiagnosticsClient.GetPublishedProcesses()
             .Select(Process.GetProcessById)
-            .Where(process => process is not null);
+            .Where(process => process != null);
 
         foreach (var process in processes)
         {

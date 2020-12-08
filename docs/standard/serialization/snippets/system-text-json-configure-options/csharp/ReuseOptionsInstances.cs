@@ -25,13 +25,13 @@ namespace OptionsPerfDemo
             watch = Stopwatch.StartNew();
             for (int i = 0; i < iterations; i++)
             {
-                Serialize(forecast, null);
+                Serialize(forecast);
             }
             watch.Stop();
             Console.WriteLine($"Elapsed time creating new options instances: {watch.ElapsedMilliseconds}");
         }
 
-        private static void Serialize(Forecast forecast, JsonSerializerOptions? options)
+        private static void Serialize(Forecast forecast, JsonSerializerOptions? options = null)
         {
             _ = JsonSerializer.Serialize<Forecast>(
                 forecast,

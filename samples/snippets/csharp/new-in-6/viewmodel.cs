@@ -6,23 +6,6 @@ namespace UXComponents
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        // <nameofNotify>
-        public string LastName
-        {
-            get { return lastName; }
-            set
-            {
-                if (value != lastName)
-                {
-                    lastName = value;
-                    PropertyChanged?.Invoke(this,
-                        new PropertyChangedEventArgs(nameof(LastName)));
-                }
-            }
-        }
-        private string lastName;
-        // </nameofNotify>
-
         // <QualifiedNameofNotify>
         public string FirstName
         {

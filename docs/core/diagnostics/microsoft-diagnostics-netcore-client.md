@@ -173,7 +173,7 @@ public EventPipeProvider(string name,
                          IDictionary<string, string> arguments = null)
 ```
 
-Creates a new instance of `EventPipeProvider` with the given provider name, [EventLevel](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.tracing.eventlevel), keywords, and arguments.
+Creates a new instance of `EventPipeProvider` with the given provider name, <xref:System.Diagnostics.Tracing.EventLevel>, keywords, and arguments.
 
 ```csharp
 public string Name { get; }

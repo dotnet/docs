@@ -69,3 +69,4 @@ Design rules support adherence to the [.NET Framework Design Guidelines](../../.
 | [CA1068: CancellationToken parameters must come last](ca1068.md) | A method has a CancellationToken parameter that is not the last parameter. |
 | [CA1069: Enums should not have duplicate values](ca1069.md) | An enumeration has multiple members which are explicitly assigned the same constant value. |
 | [CA1070: Do not declare event fields as virtual](ca1070.md) | A [field-like event](../../../csharp/event-pattern.md#defining-and-raising-field-like-events) was declared as virtual. |
+| [CA1071: Override base.Equals when implementing IEquatable](ca1071.md) | A derived type implements <xref:System.IEquatable%601>, but does not override the base class <xref:System.IEquatable%601.Equals%2A> method. |

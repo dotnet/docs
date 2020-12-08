@@ -1,0 +1,11 @@
+- name: .NET
+  tocHref: /dotnet/
+  topicHref: /dotnet/index
+  items:
+  - name: ML.NET                 # Original doc set name
+    tocHref: /dotnet/machine-learning/                   # Destination doc set route
+    topicHref: /dotnet/machine-learning/index      # Original doc set route
+    items:
+    - name: ONNX AML               # Destination doc set name
+      tocHref: /azure/machine-learning/      # Destination doc set route
+      topicHref: /dotnet/machine-learning/index    # Original doc set route

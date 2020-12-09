@@ -3,7 +3,7 @@ title: Implement a DisposeAsync method
 description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/26/2020
+ms.date: 12/09/2020
 dev_langs:
   - "csharp"
 helpviewer_keywords:
@@ -126,6 +126,8 @@ If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `o
 > Avoid this pattern as it could lead to unexpected behavior.
 
 ## See also
+
+As a point of reference, see the <xref:System.Text.Json.Utf8JsonWriter> source code's implementation of both `IDisposable` and `IAsyncDisposable` [on GitHub](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/src/System/Text/Json/Writer/Utf8JsonWriter.cs#L297-L345).
 
 - <xref:System.IAsyncDisposable>
 - <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>

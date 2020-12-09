@@ -2,7 +2,7 @@ using Microsoft.Diagnostics.NETCore.Client;
 using Microsoft.Diagnostics.Tracing.Parsers;
 using System.Threading.Tasks;
 
-public class Tracer
+public partial class Tracer
 {
     public static void PrintEventsLive(int processId)
     {

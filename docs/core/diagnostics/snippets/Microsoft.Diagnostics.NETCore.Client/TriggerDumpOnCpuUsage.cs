@@ -2,7 +2,7 @@ using Microsoft.Diagnostics.NETCore.Client;
 using Microsoft.Diagnostics.Tracing.Parsers;
 using System.Diagnostics.Tracing;
 
-public class Dumper
+public partial class Dumper
 {
     public static void TriggerDumpOnCpuUsage(int processId, int threshold)
     {

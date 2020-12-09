@@ -1,6 +1,6 @@
 using Microsoft.Diagnostics.NETCore.Client;
 
-public class Dumper
+public partial class Dumper
 {
     public static void TriggerCoreDump(int processId)
     {

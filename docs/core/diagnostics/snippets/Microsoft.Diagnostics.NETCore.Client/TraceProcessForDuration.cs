@@ -3,9 +3,9 @@ using Microsoft.Diagnostics.Tracing.Parsers;
 using Microsoft.Diagnostics.NETCore.Client;
 using System.Diagnostics;
 using System.IO;
-using System.Threading.Task;
+using System.Threading.Tasks;
 
-public class Tracer
+public partial class Tracer
 {
     public void TraceProcessForDuration(int processId, int duration, string traceName)
     {

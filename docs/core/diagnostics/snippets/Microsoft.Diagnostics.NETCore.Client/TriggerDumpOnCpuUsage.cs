@@ -1,5 +1,9 @@
 using Microsoft.Diagnostics.NETCore.Client;
+using Microsoft.Diagnostics.Tracing;
+using Microsoft.Diagnostics.Tracing.EventPipe;
 using Microsoft.Diagnostics.Tracing.Parsers;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 
 public partial class Dumper

@@ -11,15 +11,15 @@ author: daberry
 
 To use Azure, you need an Azure account.  Your Azure account is the credential you use to sign into Azure services like the [Azure Portal](https://portal.azure.com) or [Cloud Shell](https://shell.azure.com).
 
-## Option 1. Use monthly Azure credits for Visual Studio subscribers
+## Option 1: Use monthly Azure credits for Visual Studio subscribers
 
 If you have a Visual Studio subscription, your subscription includes credits for using Azure.  Activate your credits by visiting the [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers/) page.
 
-## Option 2. Sign up for a free Azure account
+## Option 2: Sign up for a free Azure account
 
 You can create an [Azure account for free](https://azure.microsoft.com/free/dotnet/) and receive 12 months of popular services for free and a $200 credit to explore Azure for 30 days.
 
-## Option 3. Use a corporate account
+## Option 3: Use a corporate account
 
 If you are using Azure at work, talk to your company's cloud administrator to get your Azure credentials and then login to your account with the [Azure Portal](https://portal.azure.com).
 

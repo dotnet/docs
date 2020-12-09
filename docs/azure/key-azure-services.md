@@ -23,3 +23,7 @@ While Azure contains over 100 services, the following Azure services are the ser
 | ![Cognitive Services Icon](./media/cognitive-services.svg) | **Cognitive Services**   | Azure Cognitive Services are a collection of cloud-based services that allow you to add AI based capabilities to your application.  Examples include computer vision, speech recognition, language understanding and anomaly detection. |
 
 For the full list of Azure products and services, visit the [Azure documentation home page](/azure/?product=all)
+
+### Next Steps
+
+Start configuring your Azure development environment by [Creating an Azure Account](create-azure-account.md)

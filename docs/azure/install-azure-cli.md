@@ -23,3 +23,9 @@ The Azure CLI is available for Windows, macOS and Linux.
 
 > [!div class="nextstepaction"]
 > [Install the Azure CLI for Linux](/cli/azure/install-azure-cli-apt)
+
+### Azure Cloud Shell
+
+You can also use the Azure CLI in the Azure Cloud Shell at [https://shell.azure.com](https://shell.azure.com).  The Azure Cloud Shell is a fully functional, browser based shell for managing Azure resources.  The Azure Cloud Shell is useful when you need a command line environment but are working on a device where you are unable to install the Azure CLI.
+
+![Screenshot of the Azure Cloud Shell running in a browser](media/azure-cloud-shell.png)

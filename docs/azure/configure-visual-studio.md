@@ -7,7 +7,7 @@ ms.author: daberry
 author: daberry
 ---
 
-# Configure Visual Studio for Azure Development with .NET
+# Configure Visual Studio for Azure development with .NET
 
 Visual Studio includes tooling to help with the development and deployment of applications on Azure.  This guide will help you make sure that you have Visual Studio properly configured for Azure development.
 

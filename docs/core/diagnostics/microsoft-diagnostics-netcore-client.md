@@ -254,13 +254,21 @@ Exceptions that are thrown from the library are `DiagnosticsClientException`s or
 public class DiagnosticsClientException : Exception
 ```
 
+#### UnsupportedCommandException
+
+```csharp
+public class UnsupportedCommandException : DiagnosticsClientException
+```
+
+This may be thrown when the command is not supported by either the library or the target process' runtime.
+
 #### UnsupportedProtocolException
 
 ```csharp
 public class UnsupportedProtocolException : DiagnosticsClientException
 ```
 
-This may be thrown when the command is not supported by either the library or the target process' runtime.
+This may be thrown when the target process' runtime is not compatible with the diagnostics IPC protocol used by the library.
 
 #### ServerNotAvailableException
 

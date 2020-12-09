@@ -52,7 +52,8 @@ System.Text.Json in .NET Core 3.1 only supports serialization by value and throw
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [Instantiate JsonSerializerOptions](system-text-json-configure-options.md)
+* [How to serialize and deserialize JSON](system-text-json-how-to.md)
+* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
 * [Enable case-insensitive matching](system-text-json-character-casing.md)
 * [Customize property names and values](system-text-json-customize-properties.md)
 * [Ignore properties](system-text-json-ignore-properties.md)
@@ -60,4 +61,10 @@ System.Text.Json in .NET Core 3.1 only supports serialization by value and throw
 * [Handle overflow JSON](system-text-json-handle-overflow.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](system-text-json-character-encoding.md)
+* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
+* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
+* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

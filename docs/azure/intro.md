@@ -10,8 +10,6 @@ ms.date: 06/20/2020
 
 Azure is a cloud platform designed to simplify the process of building modern applications.  Whether you choose to host your applications entirely in Azure or extend your on-premises applications with Azure services, Azure helps you create applications that are scalable, reliable and maintainable.  With extensive support for tools you already use like Visual Studio and Visual Studio Code and an comprehensive SDK library, Azure is designed to make you, the .NET developer productive right from the start.
 
-This guide is an introduction to the Azure platform for .NET developers and designed to get you up and running on Azure quickly. It provides instructions for setting up your development environment and how to start using Azure in your applications.  
-
 ## Application Development Scenarios on Azure
 
 You can incorporate Azure into your application in different ways depending on your needs.
@@ -20,7 +18,7 @@ You can incorporate Azure into your application in different ways depending on y
 
 - **Hybrid cloud application development scenarios -** Existing applications can incorporate Azure services to extend their capabilities.  This could include adding full-text searching capability with [Azure Cognitive Search](/azure/search/search-what-is-azure-search), securely storing application secrets in [Azure Key Vault](/azure/key-vault/) or adding vision, speech and language understanding capabilities with [Azure Cognitive Services](/azure/cognitive-services/).  These services are fully managed by Azure and can be easily added to your application without changing your current application architecture or deployment model.
 
-- **Modern serverless architectures -** Azure Functions simplify building solutions to handle event-driven workflows, whether responding to HTTP requests, handling file uploads in Blob storage or processing events in a queue.  You write only the code necessary to handle your event without worrying about servers or framework code.  Further, you can take advantage of over 250 connectors to other services and applications to tackle your toughest integration problems.
+- **Modern serverless architectures -** Azure Functions simplify building solutions to handle event-driven workflows, whether responding to HTTP requests, handling file uploads in Blob storage or processing events in a queue.  You write only the code necessary to handle your event without worrying about servers or framework code.  Further, you can take advantage of over 250 connectors to other Azure and third party services to tackle your toughest integration problems.
 
 ## Accessing Azure services from .NET Applications
 

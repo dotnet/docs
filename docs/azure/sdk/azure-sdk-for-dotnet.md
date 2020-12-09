@@ -11,7 +11,7 @@ author: daberry
 
 ## What is the Azure SDK for .NET
 
-The **Azure SDK for .NET** is designed to make it easy to use Azure services from your .NET applications.  Whether it is uploading and downloading files to Blob Storage, retrieving application secrets from Azure Key Vault or processing notifications from Azure Event Hubs, The Azure SDK for .NET provides a consistent and familiar interface to access Azure services.  
+The **Azure SDK for .NET** is designed to make it easy to use Azure services from your .NET applications.  Whether it is uploading and downloading files to Blob Storage, retrieving application secrets from Azure Key Vault or processing notifications from Azure Event Hubs, the Azure SDK for .NET provides a consistent and familiar interface to access Azure services.  
 
 The Azure SDK for .NET is available as series of NuGet packages that can be used in both .NET Core (2.1 and higher) and .NET Framework (4.6.1 and higher) applications.
 

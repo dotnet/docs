@@ -1,7 +1,7 @@
 ---
 title: How to preserve references with System.Text.Json
 description: "Learn how to preserve references and handle circular references while serializing to and deserializing from JSON in .NET."
-ms.date: 11/30/2020
+ms.date: 12/09/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -11,11 +11,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to handle circular references with System.Text.Json
-
-In this article, you will learn how to handle circular references with the `System.Text.Json` namespace.
-
-## Preserve references and handle circular references
+# How to preserve references and handle circular references with System.Text.Json
 
 ::: zone pivot="dotnet-5-0"
 
@@ -52,7 +48,8 @@ System.Text.Json in .NET Core 3.1 only supports serialization by value and throw
 ## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [Instantiate JsonSerializerOptions](system-text-json-configure-options.md)
+* [How to serialize and deserialize JSON](system-text-json-how-to.md)
+* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
 * [Enable case-insensitive matching](system-text-json-character-casing.md)
 * [Customize property names and values](system-text-json-customize-properties.md)
 * [Ignore properties](system-text-json-ignore-properties.md)
@@ -60,4 +57,10 @@ System.Text.Json in .NET Core 3.1 only supports serialization by value and throw
 * [Handle overflow JSON](system-text-json-handle-overflow.md)
 * [Immutable types and non-public accessors](system-text-json-immutability.md)
 * [Polymorphic serialization](system-text-json-polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](system-text-json-character-encoding.md)
+* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
+* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
+* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

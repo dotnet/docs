@@ -528,7 +528,7 @@ The required properties converter would require additional logic if you need to 
 * The `DateTimeZoneHandling` setting can be used to serialize all `DateTime` values as UTC dates.
 * The `DateFormatString` setting and `DateTime` converters can be used to customize the format of date strings.
 
-In <xref:System.Text.Json>, the only format that has built-in support is ISO 8601-1:2019 since it's widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
+<xref:System.Text.Json> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
 
 ### Callbacks
 
@@ -799,10 +799,20 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 
 ## Additional resources
 
-<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)[Restore this when the roadmap is updated.]-->
 * [System.Text.Json overview](system-text-json-overview.md)
-* [How to use System.Text.Json](system-text-json-how-to.md)
-* [How to write custom converters](system-text-json-converters-how-to.md)
-* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
+* [How to serialize and deserialize JSON](system-text-json-how-to.md)
+* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
+* [Enable case-insensitive matching](system-text-json-character-casing.md)
+* [Customize property names and values](system-text-json-customize-properties.md)
+* [Ignore properties](system-text-json-ignore-properties.md)
+* [Allow invalid JSON](system-text-json-invalid-json.md)
+* [Handle overflow JSON](system-text-json-handle-overflow.md)
+* [Preserve references](system-text-json-preserve-references.md)
+* [Immutable types and non-public accessors](system-text-json-immutability.md)
+* [Polymorphic serialization](system-text-json-polymorphism.md)
+* [Customize character encoding](system-text-json-character-encoding.md)
+* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
+* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

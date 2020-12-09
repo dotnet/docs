@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 11/30/2020
+ms.date: 12/09/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords: 
@@ -18,7 +18,7 @@ This article shows how to create custom converters for the JSON serialization cl
 
 A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters:
 
-* To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format instead of the default  ISO 8601-1:2019 format.
+* To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format. By default, ISO 8601-1:2019 is supported, including the RFC 3339 profile. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
 * To support a custom value type. For example, a `PhoneNumber` struct.
 
 You can also write custom converters to customize or extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
@@ -368,8 +368,20 @@ If you need to make a converter that modifies the behavior of an existing built-
 ## Additional resources
 
 * [Source code for built-in converters](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
-* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
-* [How to customize character encoding](system-text-json-character-encoding.md)
-* [How to write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [System.Text.Json overview](system-text-json-overview.md)
+* [How to serialize and deserialize JSON](system-text-json-how-to.md)
+* [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)
+* [Enable case-insensitive matching](system-text-json-character-casing.md)
+* [Customize property names and values](system-text-json-customize-properties.md)
+* [Ignore properties](system-text-json-ignore-properties.md)
+* [Allow invalid JSON](system-text-json-invalid-json.md)
+* [Handle overflow JSON](system-text-json-handle-overflow.md)
+* [Preserve references](system-text-json-preserve-references.md)
+* [Immutable types and non-public accessors](system-text-json-immutability.md)
+* [Polymorphic serialization](system-text-json-polymorphism.md)
+* [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [Customize character encoding](system-text-json-character-encoding.md)
+* [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
+* [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

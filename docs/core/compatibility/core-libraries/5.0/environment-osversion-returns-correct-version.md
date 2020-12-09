@@ -9,13 +9,15 @@ ms.date: 11/01/2020
 
 ## Change description
 
-In previous .NET versions, <xref:System.Environment.OSVersion?displayProperty=nameWithType> returns an OS version that may be incorrect when an application runs under Windows compatibility mode. For more information, see [GetVersionExA function remarks](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa#remarks).
+In previous .NET versions, <xref:System.Environment.OSVersion?displayProperty=nameWithType> returns an OS version that may be incorrect when an application runs under Windows compatibility mode. For more information, see [GetVersionExA function remarks](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa#remarks). On macOS, it returns the underlying Darwin kernel version.
 
-Starting in .NET 5.0, <xref:System.Environment.OSVersion?displayProperty=nameWithType> returns the actual version of the operating system.
+Starting in .NET 5.0, <xref:System.Environment.OSVersion?displayProperty=nameWithType> returns the actual version of the operating system for Windows and macOS.
 
 ## Reason for change
 
 Users of this property expect it to return the actual version of the operating system. Most .NET apps don't specify their supported version in their application manifest, and thus get the default supported version from the dotnet host. As a result, the compatibility shim is rarely meaningful for the app that's running. When Windows releases a new version and an older dotnet host is still in use, these apps may get an incorrect OS version. Returning the actual version is more inline with developers' expectations of this API.
+
+With the introduction of <xref:System.OperatingSystem.IsWindowsVersionAtLeast?displayProperty=nameWithType>, <xref:System.OperatingSystem.IsMacOSVersionAtLeast?displayProperty=nameWithType>, and <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute?displayProperty=nameWithType> in .NET 5.0, <xref:System.Environment.OSVersion?displayProperty=nameWithType> was changed to be consistent for Windows and macOS.
 
 ## Version introduced
 

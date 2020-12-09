@@ -13,6 +13,13 @@ In previous .NET versions, <xref:System.Environment.OSVersion?displayProperty=na
 
 Starting in .NET 5.0, <xref:System.Environment.OSVersion?displayProperty=nameWithType> returns the actual version of the operating system for Windows and macOS.
 
+The following table shows the difference in behavior.
+
+|  | Previous .NET Versions | .NET 5 |
+|--|------------------------|---------|
+| Windows | 6.2.9200.0 | 10.0.19042.0 |
+| macOS | 19.6.0.0 | 10.15.7 |
+
 ## Reason for change
 
 Users of this property expect it to return the actual version of the operating system. Most .NET apps don't specify their supported version in their application manifest, and thus get the default supported version from the dotnet host. As a result, the compatibility shim is rarely meaningful for the app that's running. When Windows releases a new version and an older dotnet host is still in use, these apps may get an incorrect OS version. Returning the actual version is more inline with developers' expectations of this API.

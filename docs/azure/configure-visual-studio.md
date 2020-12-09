@@ -34,4 +34,4 @@ To authenticate your Azure account from Visual Studio, select the `Tools > Optio
 
 ### Next Steps
 
-If you also use [Visual Studio Code](https://code.visualstudio.com/) for development in .NET or any other language, you should also [configure Visual Studio Code for Azure development](./configure-visual-stuido-code.md). Otherwise, proceed to [Installing the Azure CLI](./install-azure-cli.md).
+If you also use [Visual Studio Code](https://code.visualstudio.com/) for development in .NET or any other language, you should also [configure Visual Studio Code for Azure development](./configure-vs-code.md). Otherwise, proceed to [Installing the Azure CLI](./install-azure-cli.md).

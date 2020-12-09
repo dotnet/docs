@@ -9,7 +9,7 @@ author: daberry
 
 # Configure Visual Studio Code for Azure Development
 
-If you are using Visual Studio Code, whether for .NET development, for building single page applications using frameworks like Angular, React or Vue, or for writing applications in another language like Python, you will want to configure Visual Studio code for Azure development.
+If you are using Visual Studio Code, whether for .NET development, for building single page applications using frameworks like Angular, React or Vue, or for writing applications in another language like Python, you will want to configure Visual Studio Code for Azure development.
 
 ### Step 1: Download Visual Studio Code
 

@@ -25,6 +25,8 @@ To revert to the previous behavior, you can set a value in the registry. Add a D
 - <xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities?displayProperty=fullName>
 - <xref:System.Xml.XmlReaderSettings.XmlResolver?displayProperty=fullName>
 
+In addition, any XML API that depends on <xref:System.Xml.XmlResolver>, either directly or indirectly, is affected.
+
 <!--
 
 #### Affected APIs

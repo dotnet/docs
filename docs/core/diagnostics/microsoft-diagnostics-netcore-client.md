@@ -22,43 +22,43 @@ These samples show how to use Microsoft.Diagnostics.NETCore.Client library. Some
 
 This snippet shows how to start an EventPipe session using the [.NET runtime provider](../../fundamentals/diagnostics/runtime-events.md) with the GC keyword at informational level and how to use the `EventPipeEventSource` class provided by the [TraceEvent library](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/) to parse the incoming events and print their names to the console in real time.
 
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/PrintRuntimeGCEvents.cs":::
+:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/PrintRuntimeGCEvents.cs":::
 
 ### Write a core dump
 
 This sample shows how to trigger the collection of a [core dump](dumps.md) using `DiagnosticsClient`.
 
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/TriggerCoreDump.cs":::
+:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/TriggerCoreDump.cs":::
 
 ### Trigger a core dump when CPU usage goes above a certain threshold
 
 This sample shows how to monitor the `cpu-usage` counter published by the .NET runtime and request a dump when the CPU usage grows beyond a certain threshold.
 
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/TriggerDumpOnCpuUsage.cs":::
+:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/TriggerDumpOnCpuUsage.cs":::
 
 ### Trigger a CPU trace for given number of seconds
 
 This sample shows how to trigger an EventPipe session for certain period of time with the default CLR trace keyword as well as the sample profiler. Afterward, it reads the output stream and writes the bytes out to a file. Essentially this is what [`dotnet-trace`](dotnet-trace.md) uses internally to write a trace file.
 
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/TraceProcessForDuration.cs":::
+:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/TraceProcessForDuration.cs":::
 
 ### Print names of all .NET processes that published a diagnostics server to connect
 
 This sample shows how to use `DiagnosticsClient.GetPublishedProcesses` API to print the names of the .NET processes that published a diagnostics IPC channel.
 
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/PrintProcessStatus.cs":::
+:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/PrintProcessStatus.cs":::
 
 ### Parse events in real-time for a specified period of time
 
 This sample shows an example where we create two tasks, one that parses the events coming in live with `EventPipeEventSource` and one that reads the console input for a user input signaling the program to end. If the target app exists before the users presses enter, the app exists gracefully. Otherwise, `inputTask` will send the Stop command to the pipe and exit gracefully.
 
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/PrintEventsLive.cs":::
+:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/PrintEventsLive.cs":::
 
 ### Attach an ICorProfiler profiler
 
 This sample shows how to attach an ICorProfiler to a process via profiler attach.
 
-:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/ProfilerAttach.cs":::
+:::code language="csharp" source="snippets/Microsoft.Diagnostics.NETCore.Client/csharp/ProfilerAttach.cs":::
 
 ## API Description
 

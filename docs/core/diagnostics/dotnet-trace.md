@@ -101,7 +101,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--diagnostic-port <path-to-port>`**
 
-  The name of the diagnostic port to create. See [Use diagnostic port to collect a trace from app startup](#use-diagnostic-port-to-collect-a-trace-fromm-app-startup) to learn how to use this option to collect a trace from app startup.
+  The name of the diagnostic port to create. See [Use diagnostic port to collect a trace from app startup](#use-diagnostic-port-to-collect-a-trace-from-app-startup) to learn how to use this option to collect a trace from app startup.
 
 - **`-o|--output <trace-file-path>`**
 

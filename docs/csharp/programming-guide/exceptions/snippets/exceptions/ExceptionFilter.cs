@@ -4,6 +4,7 @@ namespace exceptions
 {
     public class ExceptionFilter
     {
+        // <ShowExceptionFilter>
         public static void Main()
         {
             try
@@ -24,6 +25,27 @@ namespace exceptions
             Console.WriteLine($"\tMessage: {e.Message}");
             return false;
         }
+        // </ShowExceptionFilter>
+
+        // <DemonstrateExceptionFilter>
+        int GetInt(int[] array, int index)
+        {
+            try
+            {
+                return array[index];
+            }
+            catch (IndexOutOfRangeException e) when (index < 0) 
+            {
+                throw new ArgumentOutOfRangeException(
+                    "Parameter index cannot be negative.", e);
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                throw new ArgumentOutOfRangeException(
+                    "Parameter index cannot be greater than the array size.", e);
+            }
+        }
+        // </DemonstrateExceptionFilter>
     }
 }
 

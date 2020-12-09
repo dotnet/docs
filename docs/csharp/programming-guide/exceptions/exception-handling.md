@@ -25,7 +25,7 @@ A `try` block without a `catch` or `finally` block causes a compiler error.
 
 A `catch` block can specify the type of exception to catch. The type specification is called an *exception filter*. The exception type should be derived from <xref:System.Exception>. In general, don't specify <xref:System.Exception> as the exception filter unless either you know how to handle all exceptions that might be thrown in the `try` block, or you've included a [throw](../../language-reference/keywords/throw.md) statement at the end of your `catch` block.
 
-Multiple `catch` blocks with different exception filters can be chained together. The `catch` blocks are evaluated from top to bottom in your code, but only one `catch` block is executed for each exception that is thrown. The first `catch` block that specifies the exact type or a base class of the thrown exception is executed. If no `catch` block specifies a matching exception filter, a `catch` block that doesn't have a filter is selected, if one is present in the statement. It's important to position `catch` blocks with the most specific (that is, the most derived) exception types first.
+Multiple `catch` blocks with different exception classes can be chained together. The `catch` blocks are evaluated from top to bottom in your code, but only one `catch` block is executed for each exception that is thrown. The first `catch` block that specifies the exact type or a base class of the thrown exception is executed. If no `catch` block specifies a matching exception class, a `catch` block that doesn't have any type is selected, if one is present in the statement. It's important to position `catch` blocks with the most specific (that is, the most derived) exception classes first.
 
 Catch exceptions when the following conditions are true:
 
@@ -33,7 +33,17 @@ Catch exceptions when the following conditions are true:
 - You can create and throw a new, more specific exception.
   :::code language="csharp" source="snippets/exceptions/Program.cs" id="ThrowMoreSpecificException":::
 - You want to partially handle an exception before passing it on for additional handling. In the following example, a `catch` block is used to add an entry to an error log before rethrowing the exception.
-  :::code language="csharp" source="snippetsexceptions/Program.cs" id="RethrowError":::
+  :::code language="csharp" source="snippets/exceptions/Program.cs" id="RethrowError":::
+
+You can also specify *exception filters* to add a boolean expression to a catch clause. These indicate that a specific catch clause matches only when that condition is true. In the following example, both catch clauses use the same exception class, but an additional condition is checked to create a different error message:
+
+:::code language="csharp" source="snippets/exceptions/ExceptionFilter.cs" ID="DemonstrateExceptionFilter":::
+
+An exception filter that always returns `false` can be used to examine all exceptions but not process them. A typical use is to log exceptions:
+
+:::code language="csharp" source="snippets/exceptions/ExceptionFilter.cs" ID="ShowExceptionFilter":::
+
+The `LogException` method always returns `false`, no `catch` clause using this exception filter matches. The catch clause can be general, using <xref:System.Exception?displayProperty=nameWithType>, and later clauses can process more specific exception classes.
 
 ## Finally Blocks
 

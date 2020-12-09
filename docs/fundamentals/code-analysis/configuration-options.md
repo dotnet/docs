@@ -9,7 +9,9 @@ no-loc: ["EditorConfig"]
 
 Code analysis rules have various configuration options. These options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md) using the syntax `<option key> = <option value>`.
 
-The most common option you'll configure is a rule's severity. You can configure severity level for all analyzer rules, including [code quality rules](quality-rules/index.md) and [code style rules](style-rules/index.md).
+The most common option you'll configure is a [rule's severity](#severity-level). You can configure severity level for all analyzer rules, including [code quality rules](quality-rules/index.md) and [code style rules](style-rules/index.md). For example, to enable a rule as a warning, you can add the following key-value pair to an EditorConfig file.
+
+`dotnet_diagnostic.<rule ID>.severity = warning`
 
 You can also configure additional options to customize rule behavior:
 

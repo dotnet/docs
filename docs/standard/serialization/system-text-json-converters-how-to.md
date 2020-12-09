@@ -38,6 +38,8 @@ You can also write custom converters to customize or extend `System.Text.Json` w
 * [Support round-trip for Stack\<T>](#support-round-trip-for-stackt).
 ::: zone-end
 
+In the code you write for a custom converter, be aware of the substantial performance penalty for using new <xref:System.Text.Json.JsonSerializerOptions> instances. For more information, see [Reuse JsonSerializerOptions instances](system-text-json-configure-options.md#reuse-jsonserializeroptions-instances).
+
 ## Custom converter patterns
 
 There are two patterns for creating a custom converter: the basic pattern and the factory pattern. The factory pattern is for converters that handle type `Enum` or open generics. The basic pattern is for non-generic and closed generic types.  For example, converters for the following types require the factory pattern:

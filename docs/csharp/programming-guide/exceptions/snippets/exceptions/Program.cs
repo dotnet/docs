@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace exceptions
 {
@@ -46,9 +47,9 @@ namespace exceptions
         // <TestFinally>
         static void TestFinally()
         {
-            System.IO.FileStream file = null;
+            FileStream? file = null;
             //Change the path to something that works on your machine.
-            System.IO.FileInfo fileInfo = new System.IO.FileInfo("./file.txt");
+            FileInfo fileInfo = new System.IO.FileInfo("./file.txt");
 
             try
             {
@@ -58,20 +59,17 @@ namespace exceptions
             finally
             {
                 // Closing the file allows you to reopen it immediately - otherwise IOException is thrown.
-                if (file != null)
-                {
-                    file.Close();
-                }
+                file?.Close();
             }
 
             try
             {
                 file = fileInfo.OpenWrite();
-                System.Console.WriteLine("OpenWrite() succeeded");
+                Console.WriteLine("OpenWrite() succeeded");
             }
-            catch (System.IO.IOException)
+            catch (IOException)
             {
-                System.Console.WriteLine("OpenWrite() failed");
+                Console.WriteLine("OpenWrite() failed");
             }
         }
         // </TestFinally>
@@ -130,9 +128,9 @@ namespace exceptions
             {
                 return array[index];
             }
-            catch (System.IndexOutOfRangeException e)
+            catch (IndexOutOfRangeException e)
             {
-                throw new System.ArgumentOutOfRangeException(
+                throw new ArgumentOutOfRangeException(
                     "Parameter index is out of range.", e);
             }
         }
@@ -145,7 +143,7 @@ namespace exceptions
             {
                 // Try to access a resource.
             }
-            catch (System.UnauthorizedAccessException e)
+            catch (UnauthorizedAccessException e)
             {
                 // Call a custom error logging procedure.
                 LogError(e);
@@ -154,14 +152,14 @@ namespace exceptions
             }
             // </RethrowError>
         }
-        static void LogError(System.Exception ex) { }
+        static void LogError(Exception ex) { }
 
 
         static void CloseOptionally()
         {
             //<CleanupIfNotNull>
-            System.IO.FileStream file = null;
-            System.IO.FileInfo fileinfo = new System.IO.FileInfo("./file.txt");
+            FileStream? file = null;
+            FileInfo fileinfo = new System.IO.FileInfo("./file.txt");
             try
             {
                 file = fileinfo.OpenWrite();
@@ -180,7 +178,7 @@ namespace exceptions
         {
             if (original is null)
             {
-                throw new System.ArgumentException("Parameter cannot be null", "original");
+                throw new ArgumentException("Parameter cannot be null", "original");
             }
         }
         // </CantComplete>
@@ -192,9 +190,9 @@ namespace exceptions
             {
                 return array[index];
             }
-            catch (System.IndexOutOfRangeException ex)
+            catch (IndexOutOfRangeException ex)
             {
-                System.ArgumentException argEx = new System.ArgumentException("Index is out of range", "index", ex);
+                ArgumentException argEx = new ArgumentException("Index is out of range", "index", ex);
                 throw argEx;
             }
         }
@@ -203,8 +201,8 @@ namespace exceptions
         // <NoCleanup>
         static void CodeWithoutCleanup()
         {
-            System.IO.FileStream file = null;
-            System.IO.FileInfo fileInfo = new System.IO.FileInfo("C:\\file.txt");
+            FileStream? file = null;
+            FileInfo fileInfo = new FileInfo("./file.txt");
 
             file = fileInfo.OpenWrite();
             file.WriteByte(0xF);
@@ -216,26 +214,23 @@ namespace exceptions
         // <WithCleanup>
         static void CodeWithCleanup()
         {
-            System.IO.FileStream file = null;
-            System.IO.FileInfo fileInfo = null;
+            FileStream? file = null;
+            FileInfo? fileInfo = null;
 
             try
             {
-                fileInfo = new System.IO.FileInfo("C:\\file.txt");
+                fileInfo = new FileInfo("./file.txt");
 
                 file = fileInfo.OpenWrite();
                 file.WriteByte(0xF);
             }
-            catch (System.UnauthorizedAccessException e)
+            catch (UnauthorizedAccessException e)
             {
-                System.Console.WriteLine(e.Message);
+                Console.WriteLine(e.Message);
             }
             finally
             {
-                if (file != null)
-                {
-                    file.Close();
-                }
+                file?.Close();
             }
         }
         // </WithCleanup>

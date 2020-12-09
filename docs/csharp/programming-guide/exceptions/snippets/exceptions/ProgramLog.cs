@@ -1,22 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace exceptions
 {
     // <ProgramLog>
-    class ProgramLog
+    public class ProgramLog
     {
-        System.IO.FileStream logFile = null;
-        void OpenLog(System.IO.FileInfo fileName, System.IO.FileMode mode) { }
+        FileStream logFile = null!;
+        public void OpenLog(FileInfo fileName, FileMode mode) { }
 
-        void WriteLog()
+        public void WriteLog()
         {
-            if (!this.logFile.CanWrite)
+            if (!logFile.CanWrite)
             {
-                throw new System.InvalidOperationException("Logfile cannot be read-only");
+                throw new InvalidOperationException("Logfile cannot be read-only");
             }
             // Else write data to the log and return.
         }

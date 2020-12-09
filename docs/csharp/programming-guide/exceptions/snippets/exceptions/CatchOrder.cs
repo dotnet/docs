@@ -9,7 +9,7 @@ namespace exceptions
         {
             try
             {
-                using (var sw = new StreamWriter(@"C:\test\test.txt"))
+                using (var sw = new StreamWriter("./test.txt"))
                 {
                     sw.WriteLine("Hello");
                 }

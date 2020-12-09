@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace exceptions
 {
@@ -12,7 +8,7 @@ namespace exceptions
         {
             try
             {
-                string s = null;
+                string? s = null;
                 Console.WriteLine(s.Length);
 
             }

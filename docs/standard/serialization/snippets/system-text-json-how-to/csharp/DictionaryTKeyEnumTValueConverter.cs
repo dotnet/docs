@@ -122,7 +122,9 @@ namespace SystemTextJsonSamples
 
                 foreach ((TKey key, TValue value) in dictionary)
                 {
-                    writer.WritePropertyName(key.ToString());
+                    var propertyName = key.ToString();
+                    writer.WritePropertyName
+                        (options.PropertyNamingPolicy?.ConvertName(propertyName) ?? propertyName);
 
                     if (_valueConverter != null)
                     {

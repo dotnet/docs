@@ -127,7 +127,7 @@ If an exception is thrown from the `AnotherAsyncDisposable` constructor, then `o
 
 ## See also
 
-As a point of reference, see the <xref:System.Text.Json.Utf8JsonWriter> source code's implementation of both `IDisposable` and `IAsyncDisposable` [on GitHub](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/src/System/Text/Json/Writer/Utf8JsonWriter.cs#L297-L345).
+For a dual implementation example of `IDisposable` and `IAsyncDisposable`, see the <xref:System.Text.Json.Utf8JsonWriter> source code [on GitHub](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/src/System/Text/Json/Writer/Utf8JsonWriter.cs#L297-L345).
 
 - <xref:System.IAsyncDisposable>
 - <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>

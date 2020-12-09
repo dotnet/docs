@@ -26,4 +26,4 @@ namespace exceptions
         }
     }
 }
-}
+

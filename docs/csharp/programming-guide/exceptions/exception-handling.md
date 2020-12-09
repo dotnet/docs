@@ -13,11 +13,11 @@ A [try](../../language-reference/keywords/try-catch.md) block is used by C# prog
 
 The following examples show a `try-catch` statement, a `try-finally` statement, and a `try-catch-finally` statement.
 
-:::code language="csharp" source="snippets/Program.cs" id="TryCatchStructure":::
+:::code language="csharp" source="snippets/exceptions/Program.cs" id="TryCatchStructure":::
 
-:::code language="csharp" source="snippets/Program.cs" id="TryFinallyStructure":::
+:::code language="csharp" source="snippets/exceptions/Program.cs" id="TryFinallyStructure":::
 
-:::code language="csharp" source="snippets/Program.cs" id="TryCatchFinallyStructure":::
+:::code language="csharp" source="snippets/exceptions/Program.cs" id="TryCatchFinallyStructure":::
 
 A `try` block without a `catch` or `finally` block causes a compiler error.
 
@@ -31,9 +31,9 @@ Catch exceptions when the following conditions are true:
 
 - You have a good understanding of why the exception might be thrown, and you can implement a specific recovery, such as prompting the user to enter a new file name when you catch a <xref:System.IO.FileNotFoundException> object.
 - You can create and throw a new, more specific exception.
-  :::code language="csharp" source="snippets/Program.cs" id="ThrowMoreSpecificException":::
+  :::code language="csharp" source="snippets/exceptions/Program.cs" id="ThrowMoreSpecificException":::
 - You want to partially handle an exception before passing it on for additional handling. In the following example, a `catch` block is used to add an entry to an error log before rethrowing the exception.
-  :::code language="csharp" source="snippets/Program.cs" id="RethrowError":::
+  :::code language="csharp" source="snippetsexceptions/Program.cs" id="RethrowError":::
 
 ## Finally Blocks
 
@@ -43,7 +43,7 @@ The `finally` block can be used to release resources such as file streams, datab
 
 In the following example, the `finally` block is used to close a file that is opened in the `try` block. Notice that the state of the file handle is checked before the file is closed. If the `try` block can't open the file, the file handle still has the value `null` and the `finally` block doesn't try to close it. Instead, if the file is opened successfully in the `try` block, the `finally` block closes the open file.
 
-:::code language="csharp" source="snippets/Program.cs" id="CleanupIfNotNull":::
+:::code language="csharp" source="snippets/exceptions/Program.cs" id="CleanupIfNotNull":::
 
 ## C# Language Specification
 

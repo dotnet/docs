@@ -22,24 +22,66 @@ items:
       - name: Overview
         href: ../core/install/linux.md
       - name: Ubuntu
-        href: ../core/install/linux-ubuntu.md
+        items:
+        - name: "20.10"
+          href: ../core/install/linux-ubuntu.md
+        - name: "20.04 (LTS)"
+          href: ../core/install/linux-ubuntu.md
+        - name: "18.04 (LTS)"
+          href: ../core/install/linux-ubuntu.md
+        - name: "16.04 (LTS)"
+          href: ../core/install/linux-ubuntu.md
+        - name: "Out-of-support releases"
+          href: ../core/install/linux-ubuntu.md
       - name: Alpine
-        href: ../core/install/linux-alpine.md
+        items:
+        - name: "3.12"
+          href: ../core/install/linux-alpine.md
+        - name: "3.11"
+          href: ../core/install/linux-alpine.md
+        - name: "3.10"
+          href: ../core/install/linux-alpine.md
+        - name: "Out-of-support releases"
+          href: ../core/install/linux-alpine.md
       - name: CentOS
-        href: ../core/install/linux-centos.md
+        items:
+        - name: "8"
+          href: ../core/install/linux-centos.md
+        - name: "7"
+          href: ../core/install/linux-centos.md
       - name: Debian
-        href: ../core/install/linux-debian.md
+        items:
+        - name: "10"
+          href: ../core/install/linux-debian.md
+        - name: "9"
+          href: ../core/install/linux-debian.md
+        - name: "Out-of-support releases"
+          href: ../core/install/linux-debian.md
       - name: Fedora
-        href: ../core/install/linux-fedora.md
-      - name: OpenSUSE
+        items:
+        - name: "33"
+          href: ../core/install/linux-fedora.md
+        - name: "32"
+          href: ../core/install/linux-fedora.md
+        - name: "Out-of-support releases"
+          href: ../core/install/linux-fedora.md
+      - name: OpenSUSE 15
         href: ../core/install/linux-opensuse.md
       - name: Redhat Enterprise Linux
-        href: ../core/install/linux-rhel.md
+        items:
+        - name: "8"
+          href: ../core/install/linux-rhel.md
+        - name: "7"
+          href: ../core/install/linux-rhel.md
       - name: SLES
-        href: ../core/install/linux-sles.md
+        items:
+        - name: "15"
+          href: ../core/install/linux-sles.md
+        - name: "12 SP2"
+          href: ../core/install/linux-sles.md
       - name: Install with Snap
         href: ../core/install/linux-snap.md
-      - name: Install manually
+      - name: Install script & binaries
         href: ../core/install/linux-scripted-manual.md
       
     - name: Remove outdated runtimes and SDKs

@@ -49,13 +49,13 @@ The following versions of .NET are no longer supported. The downloads for these 
 - libstdc++
 - zlib
 
-## Scripted install
+## Install
 
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
+There aren't any installers or packages published for Alpine Linux and you must install .NET by one of the following methods:
 
-## Manual install
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
+- [Snap package](linux-snap.md)
+- [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
+- [Manual binary extraction](linux-scripted-manual.md#manual-install)
 
 ## Next steps
 

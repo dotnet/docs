@@ -1,4 +1,4 @@
-### Excluded symbol names
+### Exclude specific symbols
 
 You can exclude specific symbols, such as types and methods, from analysis. For example, to specify that the rule should not run on any code within types named `MyType`, add the following key-value pair to an *.editorconfig* file in your project:
 

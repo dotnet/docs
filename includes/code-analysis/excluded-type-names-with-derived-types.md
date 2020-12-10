@@ -1,4 +1,4 @@
-### Excluded type names with derived types
+### Exclude specific types and their derived types
 
 You can exclude specific types and their derived types from analysis. For example, to specify that the rule should not run on any methods within types named `MyType` and their derived types, add the following key-value pair to an *.editorconfig* file in your project:
 

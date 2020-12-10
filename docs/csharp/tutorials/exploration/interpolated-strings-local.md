@@ -1,6 +1,7 @@
 ---
 title: String interpolation - C# tutorial
 description: This tutorial shows you how to use the C# string interpolation feature to include formatted expression results in a larger string.
+ms.technology: csharp-fundamentals
 ms.date: 10/23/2018
 ---
 # Use string interpolation to construct formatted strings

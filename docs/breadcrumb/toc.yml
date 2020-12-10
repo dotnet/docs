@@ -321,15 +321,19 @@ items:
         - name: Tour of C#
           tocHref: /dotnet/csharp/tour-of-csharp/
           topicHref: /dotnet/csharp/tour-of-csharp/index
+        - name: Learn to program in C#
+          tocHref: /dotnet/csharp/tutorials/intro-to-csharp/
+          topicHref: /dotnet/csharp/tutorials/intro-to-csharp/index
       - name: Tutorials
         tocHref: /dotnet/csharp/tutorials/
         topicHref: /dotnet/csharp/tutorials/index
-      - name: Tour
-        tocHref: /dotnet/csharp/tour-of-csharp/
-        topicHref: /dotnet/csharp/tour-of-csharp/index
       - name: What's new
         tocHref: /dotnet/csharp/whats-new/
         topicHref: /dotnet/csharp/whats-new/index
+        items:
+        - name: Exploration
+          tocHref: /dotnet/csharp/whats-new/
+          topicHref: /dotnet/csharp/whats-new/index
       - name: .NET Compiler Platform SDK
         tocHref: /dotnet/csharp/roslyn-sdk/
         topicHref: /dotnet/csharp/roslyn-sdk/index

@@ -72,7 +72,7 @@ Collects a diagnostic trace from a running process.
 ```console
 dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
-    [-n, --name <name>]  [-o|--output <trace-file-path>] [-p|--process-id <pid>]
+    [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
     [-- <command>] (for target applications running .NET 5.0 or later)
 ```
@@ -98,6 +98,10 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 - **`-n, --name <name>`**
 
   The name of the process to collect the trace from.
+
+- **`--diagnostic-port <path-to-port>`**
+
+  The name of the diagnostic port to create. See [Use diagnostic port to collect a trace from app startup](#use-diagnostic-port-to-collect-a-trace-from-app-startup) to learn how to use this option to collect a trace from app startup.
 
 - **`-o|--output <trace-file-path>`**
 
@@ -244,6 +248,48 @@ You can stop collecting the trace by pressing `<Enter>` or `<Ctrl + C>` key. Doi
 > Launching `hello.exe` via dotnet-trace will make its input/output to be redirected and you won't be able to interact with its stdin/stdout.
 > Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process.
 > If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable.
+
+## Use diagnostic port to collect a trace from app startup
+
+  > [!IMPORTANT]
+  > This works for apps running .NET 5.0 or later only.
+
+Diagnostic port is a new runtime feature that was added in .NET 5 that allows you to start tracing from app startup. To do this using `dotnet-trace`, you can either use `dotnet-trace collect -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
+
+Using `dotnet-trace <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly trace it from its startup.
+
+However, when you want to gain a finer control over the lifetime of the app being traced (for example, monitor the app for the first 10 minutes only and continue executing) or if you need to interact with the app using the CLI, using `--diagnostic-port` option allows you to control both the target app being monitored and `dotnet-trace`.
+
+1. The command below makes `dotnet-trace` create a diagnostics socket named `myport.sock` and wait for a connection.
+
+    > ```dotnet-cli
+    > dotnet-trace collect --diagnostic-port myport.sock
+    > ```
+
+    Output:
+
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/user/myport.sock
+    > ```
+
+2. In a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value in the `dotnet-trace` output.
+
+    > ```bash
+    > export DOTNET_DiagnosticPorts=/home/user/myport.sock
+    > ./my-dotnet-app arg1 arg2
+    > ```
+
+    This should then enable `dotnet-trace` to start tracing `my-dotnet-app`:
+
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
+    > Starting a counter session. Press Q to quit.
+    > ```
+
+    > [!IMPORTANT]
+    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
 
 ## View the trace captured from dotnet-trace
 

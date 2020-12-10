@@ -1,6 +1,6 @@
 ---
 title: Nullable value types
-description: Learn how to use nullable value types, a way to represent a value type that can also be null, in F#.
+description: Learn how to use nullable value types, a way to represent value types that can also be null, in F#.
 ms.date: 11/19/2020
 ---
 
@@ -57,7 +57,7 @@ This is because `Nullable<'T>` does not have `null` as a proper value.
 
 ## Pass and assign to members
 
-A key difference between working with members and F# values is that nullable value types can be implicitly inferred when you're working with members. Consider the folling method that takes a nullable value type as input:
+A key difference between working with members and F# values is that nullable value types can be implicitly inferred when you're working with members. Consider the following method that takes a nullable value type as input:
 
 ```fsharp
 type C() =
@@ -69,7 +69,7 @@ c.M(12)
 c.NVT <- 12
 ```
 
-In the previous example, you can pass `12` to the method `M`. You can also assign `12` to the auto property `NVT`. The F# compiler will implicitly convert a call or assignment like this when the target type matches the input, if the input can be constructed as a nullabel value type.
+In the previous example, you can pass `12` to the method `M`. You can also assign `12` to the auto property `NVT`. If the input can be constructed as a nullable value type and it matches the target type, the F# compiler will implicitly convert such calls or assignments.
 
 ## Examine a nullable value type instance
 

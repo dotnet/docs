@@ -44,7 +44,7 @@ app.UseEndpoints(endpoints =>
 });
 ```
 
-In this example, a route named "default" has been added to the routing table. It defines a route template with placeholders for _controller_, _action_, and _id_. The controller and action placeholders have the default specified ("Home" and "Index", respectively), and the id placeholder is optional (by virtue of a "?" applied to it). The convention defined here states that the first part of a request should correspond to the name of the controller, the second part to the action, and then if necessary a third part will represent an id parameter. Conventional routes are typically defined in one place for the application, such as in the Configure method in the Startup class.
+In this example, a route named "default" has been added to the routing table. It defines a route template with placeholders for `controller`, `action`, and `id`. The `controller` and `action` placeholders have the default specified (`Home` and `Index`, respectively), and the `id` placeholder is optional (by virtue of a "?" applied to it). The convention defined here states that the first part of a request should correspond to the name of the controller, the second part to the action, and then if necessary a third part will represent an ID parameter. Conventional routes are typically defined in one place for the application, such as in the `Configure` method in the `Startup` class.
 
 Attribute routes are applied to controllers and actions directly, rather than specified globally. This approach has the advantage of making them much more discoverable when you're looking at a particular method, but does mean that routing information is not kept in one place in the application. With attribute routes, you can easily specify multiple routes for a given action, as well as combine routes between controllers and actions. For example:
 
@@ -83,7 +83,7 @@ In the previous example, the page in question would match a route with an intege
 "/Products/123"
 ```
 
-Once a given request has been matched to a route, but before the action method is called, ASP.NET Core MVC will perform [model binding](/aspnet/core/mvc/models/model-binding) and [model validation](/aspnet/core/mvc/models/validation) on the request. Model binding is responsible for converting incoming HTTP data into the .NET types specified as parameters of the action method to be called. For example, if the action method expects an `int id` parameter, model binding will attempt to provide this parameter from a value provided as part of the request. To do so, model binding looks for values in a posted form, values in the route itself, and query string values. Assuming an id value is found, it will be converted to an integer before being passed into the action method.
+Once a given request has been matched to a route, but before the action method is called, ASP.NET Core MVC will perform [model binding](/aspnet/core/mvc/models/model-binding) and [model validation](/aspnet/core/mvc/models/validation) on the request. Model binding is responsible for converting incoming HTTP data into the .NET types specified as parameters of the action method to be called. For example, if the action method expects an `int id` parameter, model binding will attempt to provide this parameter from a value provided as part of the request. To do so, model binding looks for values in a posted form, values in the route itself, and query string values. Assuming an `id` value is found, it will be converted to an integer before being passed into the action method.
 
 After binding the model but before calling the action method, model validation occurs. Model validation uses optional attributes on the model type, and can help ensure that the provided model object conforms to certain data requirements. Certain values may be specified as required, or limited to a certain length or numeric range, etc. If validation attributes are specified but the model does not conform to their requirements, the property ModelState.IsValid will be false, and the set of failing validation rules will be available to send to the client making the request.
 
@@ -97,7 +97,7 @@ Web API projects should consider using the `[ApiController]` attribute, which ca
 
 For page-based applications, Razor Pages do a great job of keeping controllers from getting too large. Each individual page is given its own files and classes dedicated just to its handler(s). Prior to the introduction of Razor Pages, many view-centric applications would have large controller classes responsible for many different actions and views. These classes would naturally grow to have many responsibilities and dependencies, making them harder to maintain. If you find your view-based controllers are growing too large, consider refactoring them to use Razor Pages, or introducing a pattern like a mediator.
 
-The mediator design pattern is used to reduce coupling between classes while allowing communication between them. In ASP.NET Core MVC applications, this pattern is frequently employed to break up controllers into smaller pieces by using *handlers* to do the work of action methods. The popular [MediatR NuGet package](https://www.nuget.org/packages/MediatR/) is often used to accomplish this. Typically, controllers include many different action methods, each of which may require certain dependencies. The set of all dependencies required by any action must be passed into the controller's constructor. When using Mediatr, the only dependency a controller has is on an instance of the mediator. Each action then uses the mediator instance to send a message, which is processed by a handler. The handler is specific to a single action and thus only needs the dependencies required by that action. An example of a controller using MediatR is shown here:
+The mediator design pattern is used to reduce coupling between classes while allowing communication between them. In ASP.NET Core MVC applications, this pattern is frequently employed to break up controllers into smaller pieces by using *handlers* to do the work of action methods. The popular [MediatR NuGet package](https://www.nuget.org/packages/MediatR/) is often used to accomplish this. Typically, controllers include many different action methods, each of which may require certain dependencies. The set of all dependencies required by any action must be passed into the controller's constructor. When using MediatR, the only dependency a controller has is on an instance of the mediator. Each action then uses the mediator instance to send a message, which is processed by a handler. The handler is specific to a single action and thus only needs the dependencies required by that action. An example of a controller using MediatR is shown here:
 
 ```csharp
 public class OrderController : Controller
@@ -161,15 +161,15 @@ The end result of this approach is for controllers to be much smaller and focuse
 
 > ### References – Mapping Requests to Responses
 >
-> - **Routing to Controller Actions**
+> - **Routing to Controller Actions**\
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
-> - **Model Binding**
+> - **Model Binding**\
  > <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
-> - **Model Validation**
+> - **Model Validation**\
  > <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
-> - **Filters**
+> - **Filters**\
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
-> - **ApiController Attribute**
+> - **ApiController Attribute**\
  > <https://docs.microsoft.com/aspnet/core/web-api/>
 
 ## Working with dependencies
@@ -383,13 +383,13 @@ You can read more about implementing filters and download a working sample from 
 
 > ### References – Structuring applications
 >
-> - **Areas**  
+> - **Areas**\
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
-> - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**  
+> - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**\
 >   <https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc>
-> - **Filters**  
+> - **Filters**\
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
-> - **MSDN Magazine – Real World ASP.NET Core MVC Filters**  
+> - **MSDN Magazine – Real World ASP.NET Core MVC Filters**\
 >   <https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters>
 
 ## Security
@@ -439,7 +439,7 @@ You can learn more about [configuring two-factor authentication](/aspnet/core/se
 
 Authentication is the process of determining who is accessing the system. If you're using ASP.NET Core Identity and the configuration methods shown in the previous section, it will automatically configure some authentication defaults in the application. However, you can also configure these defaults manually, or override the ones set by AddIdentity. If you're using Identity, it configures cookie-based authentication as the default *scheme*.
 
-In web-based authentication, there are typically up to 5 actions that may be performed in the course of authenticating a client of a system. These are:
+In web-based authentication, there are typically up to five actions that may be performed in the course of authenticating a client of a system. These are:
 
 - Authenticate. Use the information provided by the client to create an identity for them to use within the application.
 - Challenge. This action is used to require the client to identify themselves.
@@ -493,13 +493,13 @@ Blazor Server applications can leverage the same authentication features as any 
 
 > ### References – Authentication
 >
-> - **Authentication Actions and Defaults**  
+> - **Authentication Actions and Defaults**\
 >   <https://stackoverflow.com/a/52493428>
-> - **Authentication and Authorization for SPAs**
+> - **Authentication and Authorization for SPAs**\
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization>
-> - **ASP.NET Core Blazor Authentication and Authorization**
+> - **ASP.NET Core Blazor Authentication and Authorization**\
 >   <https://docs.microsoft.com/aspnet/core/blazor/security/>
-> - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**
+> - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**\
 >   <https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization>
 
 ### Authorization
@@ -576,17 +576,17 @@ Be especially careful about "rolling your own" implementation of cryptography, u
 
 > ### References – Security
 >
-> - **Security Docs Overview**  
+> - **Security Docs Overview**\
 >   <https://docs.microsoft.com/aspnet/core/security/>
-> - **Enforcing SSL in an ASP.NET Core App**  
+> - **Enforcing SSL in an ASP.NET Core App**\
 >   <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
-> - **Introduction to Identity**  
+> - **Introduction to Identity**\
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity>
-> - **Introduction to Authorization**  
+> - **Introduction to Authorization**\
 >   <https://docs.microsoft.com/aspnet/core/security/authorization/introduction>
-> - **Authentication and Authorization for API Apps in Azure App Service**  
+> - **Authentication and Authorization for API Apps in Azure App Service**\
 >   <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
-> - **Identity Server**  
+> - **Identity Server**\
 >   <https://github.com/IdentityServer>
 
 ## Client communication
@@ -645,9 +645,9 @@ Consider ways in which your applications communicate directly with client applic
 
 > ### References – Client Communication
 >
-> - **ASP.NET Core SignalR**  
+> - **ASP.NET Core SignalR**\
 >   <https://github.com/dotnet/aspnetcore/tree/master/src/SignalR>
-> - **WebSocket Manager**  
+> - **WebSocket Manager**\
 >   <https://github.com/radu-matei/websocket-manager>
 
 ## Domain-driven design – Should you apply it?
@@ -694,7 +694,7 @@ A hybrid approach would be to only use DDD for the transactional or more complex
 
 > ### References – Domain-Driven Design
 >
-> - **DDD in Plain English (StackOverflow Answer)**  
+> - **DDD in Plain English (StackOverflow Answer)**\
 >   <https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-ddd-in-plain-english-please/1222488#1222488>
 
 ## Deployment
@@ -737,13 +737,13 @@ _Learn more about Azure deployment options in [Chapter 10](development-process-f
 
 > ### References – Deployment
 >
-> - **Hosting and Deployment Overview**  
+> - **Hosting and Deployment Overview**\
 >   <https://docs.microsoft.com/aspnet/core/publishing/>
-> - **When to use Kestrel with a reverse proxy**  
+> - **When to use Kestrel with a reverse proxy**\
 >   <https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
-> - **Host ASP.NET Core apps in Docker**  
+> - **Host ASP.NET Core apps in Docker**\
 >   <https://docs.microsoft.com/aspnet/core/publishing/docker>
-> - **Introducing Azure Application Gateway**  
+> - **Introducing Azure Application Gateway**\
 >   <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
 
 >[!div class="step-by-step"]

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace exceptions
+namespace Exceptions
 {
     public class ExceptionFilter
     {
@@ -11,7 +11,6 @@ namespace exceptions
             {
                 string? s = null;
                 Console.WriteLine(s.Length);
-
             }
             catch (Exception e) when (LogException(e))
             {
@@ -48,4 +47,3 @@ namespace exceptions
         // </DemonstrateExceptionFilter>
     }
 }
-

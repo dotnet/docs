@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace exceptions
+namespace Exceptions
 {
     // <ProgramLog>
     public class ProgramLog

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace exceptions
+namespace Exceptions
 {
     class Program
     {
@@ -11,7 +11,6 @@ namespace exceptions
             TestThrowCatch();
             CatchOrder.Main();
             TestFinally();
-
         }
 
         private static void TestThrowCatch()
@@ -37,10 +36,7 @@ namespace exceptions
         }
         private static void TestThrow()
         {
-            CustomException ex =
-                new CustomException("Custom exception in TestThrow()");
-
-            throw ex;
+            throw new CustomException("Custom exception in TestThrow()");
         }
         // </ThrowException>
 
@@ -176,10 +172,7 @@ namespace exceptions
         // <CantComplete>
         static void CopyObject(SampleClass original)
         {
-            if (original is null)
-            {
-                throw new ArgumentException("Parameter cannot be null", "original");
-            }
+            _ = original ?? throw new ArgumentException("Parameter cannot be null", nameof(original));
         }
         // </CantComplete>
 
@@ -192,8 +185,7 @@ namespace exceptions
             }
             catch (IndexOutOfRangeException ex)
             {
-                ArgumentException argEx = new ArgumentException("Index is out of range", "index", ex);
-                throw argEx;
+                throw new ArgumentException("Index is out of range", nameof(index), ex);
             }
         }
         // </InvalidArg>

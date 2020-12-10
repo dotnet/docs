@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace exceptions
+namespace Exceptions
 {
     // <DefineExceptionClass>
-    [Serializable()]
-    public class InvalidDepartmentException : System.Exception
+    [Serializable]
+    public class InvalidDepartmentException : Exception
     {
         public InvalidDepartmentException() : base() { }
         public InvalidDepartmentException(string message) : base(message) { }

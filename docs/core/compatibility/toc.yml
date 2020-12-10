@@ -18,14 +18,6 @@
   - name: Breaking changes by version
     expanded: true
     items:
-    - name: .NET 5.0.1
-      items:
-      - name: Overview
-        href: 5.0.1.md
-      - name: Globalization
-        items:
-        - name: ListSeparator values changed
-          href: globalization/5.0/listseparator-value-change.md
     - name: .NET 5.0
       items:
       - name: Overview
@@ -200,6 +192,8 @@
           href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
         - name: Unicode category changed for Latin-1 characters
           href: globalization/5.0/unicode-categories-for-latin1-chars.md
+        - name: ListSeparator values changed
+          href: globalization/5.0/listseparator-value-change.md
       - name: Interop
         items:
         - name: Support for WinRT is removed
@@ -476,8 +470,6 @@
           href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
         - name: Unicode category changed for Latin-1 characters
           href: globalization/5.0/unicode-categories-for-latin1-chars.md
-      - name: .NET 5.1
-        items:
         - name: ListSeparator values changed
           href: globalization/5.0/listseparator-value-change.md
       - name: .NET 3.0

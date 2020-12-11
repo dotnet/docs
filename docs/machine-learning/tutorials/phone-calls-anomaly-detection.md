@@ -85,7 +85,7 @@ Add a new class to your project:
 
     `PhoneCallsData` specifies an input data class. The [LoadColumn](xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29) attribute specifies which columns (by column index) in the dataset should be loaded.
 
-    `PhoneCallsPrediction` specifies the prediction data class. For SR-CNN detector, the prediction is variable accroding to the [detect mode](https://docs.microsoft.com/en-us/dotnet/api/microsoft.ml.timeseries.srcnndetectmode?view=ml-dotnet) specified. In this sample we select the AnomalyAndMargin mode. It outputs seven columns. In most cases, `IsAnomaly`, `ExpectedValue`, `UpperBoundary` and `LowerBoundary` are informative enough. They tell you if a point is anomaly, the expected value of the point and the lower / upper boundary region of the point.
+    `PhoneCallsPrediction` specifies the prediction data class. For SR-CNN detector, the prediction depends on the [detect mode](xref:Microsoft.ML.TimeSeries.SrCnnDetectMode) specified. In this sample we select the `AnomalyAndMargin` mode. The output contains seven columns. In most cases, `IsAnomaly`, `ExpectedValue`, `UpperBoundary` and `LowerBoundary` are informative enough. They tell you if a point is an anomaly, the expected value of the point and the lower / upper boundary region of the point.
 
 5. Add the following code to the line right above the `Main` method to specify those paths:
 

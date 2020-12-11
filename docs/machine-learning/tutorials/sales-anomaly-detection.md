@@ -379,6 +379,6 @@ In this tutorial, you learned how to:
 
 ## Next steps
 
-Check out the Machine Learning samples GitHub repository to explore a seasonality dat a anomaly detection sample.
+Check out the Machine Learning samples GitHub repository to explore a seasonality data anomaly detection sample.
 > [!div class="nextstepaction"]
 > [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls)

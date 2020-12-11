@@ -62,7 +62,7 @@ namespace consoleasync
 
 ## Modify consoleasync.csproj
 
-Let's update the C# language version the project uses to version 8.0. Edit the _consoleasync.csproj_ file and add the `<LangVersion>` setting to a `<PropertyGroup>` node.
+Let's update the C# language version the project uses to version 9.0. Edit the _consoleasync.csproj_ file and add the `<LangVersion>` setting to a `<PropertyGroup>` node.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -160,18 +160,11 @@ Console Application                               console                  [C#],
 Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
 Class library                                     classlib                 [C#], F#, VB      Common/Library
 WPF Application                                   wpf                      [C#], VB          Common/WPF
-WPF Class library                                 wpflib                   [C#], VB          Common/WPF
-WPF Custom Control Library                        wpfcustomcontrollib      [C#], VB          Common/WPF
-WPF User Control Library                          wpfusercontrollib        [C#], VB          Common/WPF
-Windows Forms App                                 winforms                 [C#], VB          Common/WinForms
-Windows Forms Control Library                     winformscontrollib       [C#], VB          Common/WinForms
-Windows Forms Class Library                       winformslib              [C#], VB          Common/WinForms
-Worker Service                                    worker                   [C#], F#          Common/Worker/Web
 ```
 
 ### Test the project template
 
-Now that you have an item template installed, test it.
+Now that you have a project template installed, test it.
 
 1. Navigate to the _test_ folder
 
@@ -203,7 +196,7 @@ Congratulations! You created and deployed a project template with .NET. In prepa
 
 ### Uninstall the template
 
-Because you installed the template by using a file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the path listed to uninstall your template with the `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>` command.
+Because you installed the template by using a file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the `Uninstall Command` listed to uninstall your template.
 
 ```dotnetcli
 dotnet new -u
@@ -215,31 +208,31 @@ You get output similar to the following.
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
-  Microsoft.DotNet.Common.ItemTemplates
+  Microsoft.DotNet.Common.ProjectTemplates.2.2
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.2
+      Version: 1.0.2-beta4
+      Author: Microsoft
     Templates:
-      dotnet gitignore file (gitignore)
-      global.json file (globaljson)
-      NuGet Config (nugetconfig)
-      Solution File (sln)
-      Dotnet local tool manifest file (tool-manifest)
-      Web Config (webconfig)
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.2.2
 
 ... cut to save space ...
 
-  NUnit3.DotNetNew.Template
-    Templates:
-      NUnit 3 Test Project (nunit) C#
-      NUnit 3 Test Item (nunit-test) C#
-      NUnit 3 Test Project (nunit) F#
-      NUnit 3 Test Item (nunit-test) F#
-      NUnit 3 Test Project (nunit) VB
-      NUnit 3 Test Item (nunit-test) VB
-  C:\working\templates\consoleasync
+  C:\Test\templatetutorial\working\templates\consoleasync
     Templates:
       Example templates: async project (consoleasync) C#
+    Uninstall Command:
+      dotnet new -u C:\working\templates\consoleasync
 ```
 
-To uninstall a template, run the following command.
+To uninstall the template that you created, run the `Uninstall Command` that is shown in the output.
 
 ```dotnetcli
 dotnet new -u C:\working\templates\consoleasync

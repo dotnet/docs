@@ -2,7 +2,7 @@
 title: Create an item template for dotnet new - .NET CLI
 description: Learn how to create an item template for the dotnet new command. Item templates can contain any number of files.
 author: adegeo
-ms.date: 06/25/2019
+ms.date: 12/11/2020
 ms.topic: tutorial
 ms.author: adegeo
 ---
@@ -138,13 +138,6 @@ Example templates: string extensions              stringext                [C#] 
 Console Application                               console                  [C#], F#, VB      Common/Console
 Class library                                     classlib                 [C#], F#, VB      Common/Library
 WPF Application                                   wpf                      [C#], VB          Common/WPF
-WPF Class library                                 wpflib                   [C#], VB          Common/WPF
-WPF Custom Control Library                        wpfcustomcontrollib      [C#], VB          Common/WPF
-WPF User Control Library                          wpfusercontrollib        [C#], VB          Common/WPF
-Windows Forms App                                 winforms                 [C#], VB          Common/WinForms
-Windows Forms Control Library                     winformscontrollib       [C#], VB          Common/WinForms
-Windows Forms Class Library                       winformslib              [C#], VB          Common/WinForms
-Worker Service                                    worker                   [C#], F#          Common/Worker/Web
 ```
 
 ## Test the item template
@@ -213,7 +206,7 @@ Congratulations! You created and deployed an item template with .NET. In prepara
 
 ## Uninstall the template
 
-Because you installed the template by file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the path listed to uninstall your template with the `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>` command.
+Because you installed the template by file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the `Uninstall Command` listed to uninstall your template.
 
 ```dotnetcli
 dotnet new -u
@@ -222,34 +215,34 @@ dotnet new -u
 You get output similar to the following.
 
 ```console
-Template Instantiation Commands for .NET CLI
+Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
-  Microsoft.DotNet.Common.ItemTemplates
+  Microsoft.DotNet.Common.ProjectTemplates.2.2
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.2
+      Version: 1.0.2-beta4
+      Author: Microsoft
     Templates:
-      dotnet gitignore file (gitignore)
-      global.json file (globaljson)
-      NuGet Config (nugetconfig)
-      Solution File (sln)
-      Dotnet local tool manifest file (tool-manifest)
-      Web Config (webconfig)
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.2.2
 
 ... cut to save space ...
 
-  NUnit3.DotNetNew.Template
-    Templates:
-      NUnit 3 Test Project (nunit) C#
-      NUnit 3 Test Item (nunit-test) C#
-      NUnit 3 Test Project (nunit) F#
-      NUnit 3 Test Item (nunit-test) F#
-      NUnit 3 Test Project (nunit) VB
-      NUnit 3 Test Item (nunit-test) VB
-  C:\working\templates\extensions
+C:\Test\templatetutorial\working\templates\extensions
     Templates:
       Example templates: string extensions (stringext) C#
+    Uninstall Command:
+      dotnet new -u C:\working\templates\extensions
 ```
 
-To uninstall a template, run the following command.
+To uninstall the template that you created, run the `Uninstall Command` that is shown in the output.
 
 ```dotnetcli
 dotnet new -u C:\working\templates\extensions

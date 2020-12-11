@@ -133,22 +133,22 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
     }
     ```
 
-2. Use the [DetectSeasonality](xref:Microsoft.ML.TimeSeriesCatalog.DetectSeasonality) function to detect period. Add it to the `DetectPeriod()` method with the following code:
+2. Use the [DetectSeasonality](xref:Microsoft.ML.TimeSeriesCatalog.DetectSeasonality) function to detect period. Add it to the `DetectPeriod` method with the following code:
 
     [!code-csharp[DetectSeasonality](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DetectSeasonality)]
 
-3. Display the period value by adding the following as the next line of code in the `DetectPeriod()` method:
+3. Display the period value by adding the following as the next line of code in the `DetectPeriod` method:
 
     [!code-csharp[DisplayPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DisplayPeriod)]
 
-4. Add the following call to the `DetectPeriod()`method in the `Main()` method:
+4. Add the following call to the `DetectPeriod` method in the `Main` method:
 
     [!code-csharp[CallDetectPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#CallDetectPeriod)]
 
 
 ### Period detection results
 
-Your results should be similar to the following.
+Run the application. Your results should be similar to the following.
 
 ```console
 Period of the series is: 7.
@@ -156,11 +156,11 @@ Period of the series is: 7.
 
 ## Detect Anomaly
 
-In this step, we use the [`SrCnnEntireDetector`](xref:Microsoft.ML.Transforms.TimeSeries.SrCnnEntireAnomalyDetector) to find anomalies.
+In this step, you use the [`SrCnnEntireDetector`](xref:Microsoft.ML.Transforms.TimeSeries.SrCnnEntireAnomalyDetector) to find anomalies.
 
-### Create the DetectAnomaly() method
+### Create the DetectAnomaly method
 
-1. Create the `DetectAnomaly()` method, just after the `Main()` method, using the following code:
+1. Create the `DetectAnomaly` method, just below the `DetectPeriod` method, using the following code:
 
     ```csharp
     static void DetectAnomaly(MLContext mlContext, IDataView phoneCalls, int period)
@@ -169,19 +169,19 @@ In this step, we use the [`SrCnnEntireDetector`](xref:Microsoft.ML.Transforms.Ti
     }
     ```
 
-2. Setup [SrCnnEntireAnomalyDetectorOptions](xref:Microsoft.ML.Transforms.TimeSeries.SrCnnEntireAnomalyDetectorOptions) in the `DetectAnomaly()` method with the following code:
+2. Setup [SrCnnEntireAnomalyDetectorOptions](xref:Microsoft.ML.Transforms.TimeSeries.SrCnnEntireAnomalyDetectorOptions) in the `DetectAnomaly` method with the following code:
 
     [!code-csharp[SetupSrCnnParameters](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#SetupSrCnnParameters)]
 
-3. Detect anomaly by SR-CNN algorithm by adding the following line of code in the `DetectAnomaly()` method:
+3. Detect anomaly by SR-CNN algorithm by adding the following line of code in the `DetectAnomaly` method:
 
     [!code-csharp[DetectAnomaly](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DetectAnomaly)]
 
-4. Convert the output data view into a strongly typed `IEnumerable` for easier display using the `CreateEnumerable()`method with the following code:
+4. Convert the output data view into a strongly typed `IEnumerable` for easier display using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) method with the following code:
 
     [!code-csharp[CreateEnumerableForResult](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#CreateEnumerableForResult)]
 
-5. Create a display header with the following code as the next line in the `DetectAnomaly()` method:
+5. Create a display header with the following code as the next line in the `DetectAnomaly` method:
 
     [!code-csharp[DisplayHeader](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DisplayHeader)]
 

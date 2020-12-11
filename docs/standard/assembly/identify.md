@@ -90,6 +90,5 @@ The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the te
 ## See also
 
 - <xref:System.Reflection.AssemblyName>
-- [C# programming guide](../../csharp/programming-guide/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)
 - [Assemblies in .NET](index.md)

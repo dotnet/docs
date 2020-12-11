@@ -29,6 +29,5 @@ The `return` statement terminates execution of the method in which it appears an
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [return Statement](/cpp/cpp/return-statement-cpp)

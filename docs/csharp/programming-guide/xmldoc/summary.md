@@ -32,7 +32,7 @@ The text for the `<summary>` tag is the only source of information about the typ
 
 Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [DocFX](https://dotnet.github.io/docfx/) or [Sandcastle](https://github.com/EWSoftware/SHFB).
 
-## Example
+## Example comments
 
 [!code-csharp[csProgGuideDocComments#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#12)]
 
@@ -61,7 +61,7 @@ The previous example produces the following XML file.
 </doc>
 ```
 
-## Example
+## Example cref
 
 The following example shows how to make a `cref` reference to a generic type.
 
@@ -95,5 +95,4 @@ The previous example produces the following XML file.
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Recommended tags for documentation comments](./recommended-tags-for-documentation-comments.md)

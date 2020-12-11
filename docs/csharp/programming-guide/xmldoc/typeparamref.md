@@ -37,5 +37,4 @@ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-optio
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Recommended tags for documentation comments](./recommended-tags-for-documentation-comments.md)

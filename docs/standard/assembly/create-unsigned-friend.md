@@ -146,5 +146,4 @@ There are similarities between the <xref:System.Runtime.CompilerServices.Interna
 - [Assemblies in .NET](index.md)
 - [Friend assemblies](friend.md)
 - [How to: Create signed friend assemblies](create-signed-friend.md)
-- [C# programming guide](../../csharp/programming-guide/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)

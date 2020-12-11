@@ -32,5 +32,4 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)

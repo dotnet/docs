@@ -26,6 +26,5 @@ In this example, a counter is initialized to count from 1 to 10. By using the `c
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [break Statement](/cpp/cpp/break-statement-cpp)

@@ -40,5 +40,4 @@ ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Preprocessor Directives](./index.md)

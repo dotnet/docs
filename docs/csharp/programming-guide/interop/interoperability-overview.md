@@ -64,4 +64,3 @@ For more information, see [Consuming Unmanaged DLL Functions](../../../framework
 - [Introduction to COM Interop in Visual Basic](../../../visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)
 - [Marshaling between Managed and Unmanaged Code](../../../framework/interop/interop-marshaling.md)
 - [Interoperating with Unmanaged Code](../../../framework/interop/index.md)
-- [C# Programming Guide](../index.md)

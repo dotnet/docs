@@ -98,4 +98,3 @@ At this point, you can again build and run the application. The first time it ru
 ## See also
 
 - [Serialization (C#)](index.md)
-- [C# Programming Guide](../../index.md)

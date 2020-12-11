@@ -91,6 +91,5 @@ There are two main ways in which the security and reliability of indexers can be
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Indexers](./index.md)
 - [Properties](../classes-and-structs/properties.md)

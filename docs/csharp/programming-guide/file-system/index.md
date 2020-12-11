@@ -30,5 +30,4 @@ The following articles show how to use C# and .NET to perform various basic oper
 
 - [File and Stream I/O](../../../standard/io/index.md)
 - [How to copy, delete, and move files and folders (C# Programming Guide)](how-to-copy-delete-and-move-files-and-folders.md)
-- [C# Programming Guide](../index.md)
 - <xref:System.IO?displayProperty=nameWithType>

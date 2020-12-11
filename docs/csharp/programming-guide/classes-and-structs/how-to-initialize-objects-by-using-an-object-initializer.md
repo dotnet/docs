@@ -29,5 +29,4 @@ Object initializers can be used to set indexers in an object. The following exam
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object and Collection Initializers](object-and-collection-initializers.md)

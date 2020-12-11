@@ -36,6 +36,5 @@ The code analysis rule [CA1715](/visualstudio/code-quality/ca1715) can be used t
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Generics](./index.md)
 - [Differences Between C++ Templates and C# Generics](./differences-between-cpp-templates-and-csharp-generics.md)

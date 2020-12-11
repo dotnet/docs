@@ -40,5 +40,4 @@ class MainClass
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Preprocessor Directives](./index.md)

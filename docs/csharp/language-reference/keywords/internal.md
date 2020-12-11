@@ -33,7 +33,7 @@ public class BaseClass
   
  It is an error to reference a type or a member with internal access outside the assembly within which it was defined.  
   
-## Example  
+## Examples
 
  This example contains two files, `Assembly1.cs` and `Assembly1_a.cs`. The first file contains an internal base class, `BaseClass`. In the second file, an attempt to instantiate `BaseClass` will produce an error.  
   
@@ -58,8 +58,6 @@ class TestAccess
 }  
 ```  
   
-## Example  
-
  In this example, use the same files you used in example 1, and change the accessibility level of `BaseClass` to `public`. Also change the accessibility level of the member `intM` to `internal`. In this case, you can instantiate the class, but you cannot access the internal member.  
   
 ```csharp  
@@ -91,7 +89,6 @@ For more information, see [Declared accessibility](~/_csharplang/spec/basic-conc
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Access Modifiers](./access-modifiers.md)
 - [Accessibility Levels](./accessibility-levels.md)

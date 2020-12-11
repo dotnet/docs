@@ -28,8 +28,6 @@ In addition to the rules, there are a number of identifier [naming conventions](
   
 ## See also
 
-- [C# Programming Guide](../index.md)
-- [Inside a C# Program](./index.md)
 - [C# Reference](../../language-reference/index.md)
 - [Classes](../classes-and-structs/classes.md)
 - [Structure types](../../language-reference/builtin-types/struct.md)

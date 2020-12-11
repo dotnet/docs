@@ -155,4 +155,3 @@ Console.WriteLine(expr.Compile()(4));
 - [How to modify expression trees (C#)](./how-to-modify-expression-trees.md)
 - [Lambda Expressions](../../../language-reference/operators/lambda-expressions.md)
 - [Dynamic Language Runtime Overview](../../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md)
-- [Programming Concepts (C#)](../index.md)

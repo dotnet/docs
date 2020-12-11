@@ -57,7 +57,6 @@ For more information, see the [C# Language Specification](~/_csharplang/spec/typ
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Types](../types/index.md)
 - [\<typeparam>](../xmldoc/typeparam.md)
 - [\<typeparamref>](../xmldoc/typeparamref.md)

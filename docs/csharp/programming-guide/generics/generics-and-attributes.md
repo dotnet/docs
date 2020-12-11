@@ -41,6 +41,5 @@ Attributes can be applied to generic types in the same way as non-generic types.
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Generics](./index.md)
 - [Attributes](../../../standard/attributes/index.md)

@@ -22,7 +22,6 @@ C# doesn't provide a copy constructor for objects, but you can write one yoursel
 ## See also
 
 - <xref:System.ICloneable>
-- [C# Programming Guide](../index.md)
 - [Classes and Structs](./index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./destructors.md)

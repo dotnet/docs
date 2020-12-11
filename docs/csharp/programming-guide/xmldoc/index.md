@@ -50,7 +50,3 @@ For more information, see:
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
-
-## See also
-
-- [C# Programming Guide](../index.md)

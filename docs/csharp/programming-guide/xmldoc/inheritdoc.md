@@ -1,5 +1,6 @@
 ---
 title: "<inheritdoc> - C# Programming Guide"
+description: "Eliminate unwanted copying and pasting of duplicate XML by inheriting XML comments from base classes and interfaces."
 ms.date: 01/21/2020
 f1_keywords: 
   - "inheritdoc"
@@ -37,5 +38,4 @@ If you want to copy the comments from a specific member you can use the `cref` a
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md)

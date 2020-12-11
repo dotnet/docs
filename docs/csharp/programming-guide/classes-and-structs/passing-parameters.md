@@ -30,5 +30,4 @@ For more information, see [Argument lists](~/_csharplang/spec/expressions.md#arg
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Methods](./methods.md)

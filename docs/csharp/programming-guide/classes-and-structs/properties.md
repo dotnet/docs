@@ -70,7 +70,6 @@ For more information, see [Properties](~/_csharplang/spec/classes.md#properties)
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Using Properties](./using-properties.md)
 - [Indexers](../indexers/index.md)
 - [get keyword](../../language-reference/keywords/get.md)

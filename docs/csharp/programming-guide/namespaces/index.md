@@ -42,7 +42,6 @@ For more information, see the [Namespaces](~/_csharplang/spec/namespaces.md) sec
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Using Namespaces](using-namespaces.md)
 - [How to use the My namespace](how-to-use-the-my-namespace.md)
 - [Identifier names](../inside-a-program/identifier-names.md)

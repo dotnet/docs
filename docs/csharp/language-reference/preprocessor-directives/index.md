@@ -38,4 +38,3 @@ A preprocessor directive must be the only instruction on a line.
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)

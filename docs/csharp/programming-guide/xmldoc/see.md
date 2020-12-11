@@ -38,5 +38,4 @@ The following example shows a `<see>` tag within a summary section.
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Recommended tags for documentation comments](./recommended-tags-for-documentation-comments.md)

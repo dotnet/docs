@@ -24,6 +24,5 @@ To share an assembly:
   
 ## See also
 
-- [C# programming guide](../../../api/index.md)
 - [Programming concepts (Visual Basic)](../../../api/index.md)
 - [Program with assemblies](../../standard/assembly/index.md)

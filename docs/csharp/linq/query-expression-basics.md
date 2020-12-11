@@ -168,7 +168,6 @@ For more information, see [Perform a subquery on a grouping operation](perform-a
 
 ## See also
 
-- [C# programming guide](../programming-guide/index.md)
 - [Language Integrated Query (LINQ)](index.md)
 - [Query keywords (LINQ)](../language-reference/keywords/query-keywords.md)
 - [Standard query operators overview](../programming-guide/concepts/linq/standard-query-operators-overview.md)

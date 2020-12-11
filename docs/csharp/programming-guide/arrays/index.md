@@ -45,13 +45,6 @@ The <xref:System.Array> class provides many other useful methods and properties 
 
 ## See also
 
-- [How to use single-dimensional arrays](single-dimensional-arrays.md)
-- [How to use multi-dimensional arrays](multidimensional-arrays.md)
-- [How to use jagged arrays](jagged-arrays.md)
-- [Using foreach with arrays](using-foreach-with-arrays.md)
-- [Passing arrays as arguments](passing-arrays-as-arguments.md)
-- [Implicitly typed arrays](implicitly-typed-arrays.md)
-- [C# Programming Guide](../index.md)
 - [Collections](../concepts/collections.md)
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

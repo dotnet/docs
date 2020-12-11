@@ -56,6 +56,5 @@ person.SetAge(person.GetAge() + 1);
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Properties](./properties.md)
 - [Classes and Structs](./index.md)

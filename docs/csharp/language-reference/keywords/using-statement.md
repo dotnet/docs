@@ -57,7 +57,6 @@ For more information, see [The using statement](~/_csharplang/spec/statements.md
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [using Directive](using-directive.md)
 - [Garbage Collection](../../../standard/garbage-collection/index.md)

@@ -65,5 +65,4 @@ For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C
 ## See also
 
 - <xref:System.Delegate>
-- [C# Programming Guide](../index.md)
 - [Events](../events/index.md)

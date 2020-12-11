@@ -95,5 +95,4 @@ The summary for this other type.
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md)

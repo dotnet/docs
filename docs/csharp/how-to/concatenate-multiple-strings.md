@@ -53,5 +53,4 @@ combines an array of words by adding a space between each word in the array:
 
 - <xref:System.String>
 - <xref:System.Text.StringBuilder>
-- [C# programming guide](../programming-guide/index.md)
 - [Strings](../programming-guide/strings/index.md)

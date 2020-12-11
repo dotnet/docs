@@ -111,6 +111,3 @@ Classes and structs are two of the basic constructs of the common type system in
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See also
-
-- [C# Programming Guide](../index.md)

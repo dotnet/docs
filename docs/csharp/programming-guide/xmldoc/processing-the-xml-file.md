@@ -81,6 +81,5 @@ The following examples show how the ID strings for a class and its members are g
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [-doc (C# compiler options)](../../language-reference/compiler-options/doc-compiler-option.md)
 - [XML documentation comments](./index.md)

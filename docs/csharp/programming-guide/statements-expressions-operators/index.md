@@ -33,5 +33,4 @@ The C# code that comprises an application consists of statements made up of keyw
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Casting and Type Conversions](../types/casting-and-type-conversions.md)

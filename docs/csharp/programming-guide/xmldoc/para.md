@@ -36,5 +36,4 @@ See [\<summary>](./summary.md) for an example of using `<para>`.
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Recommended tags for documentation comments](./recommended-tags-for-documentation-comments.md)

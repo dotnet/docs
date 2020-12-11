@@ -44,7 +44,6 @@ Constants are immutable values which are known at compile time and do not change
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Classes and Structs](./index.md)
 - [Properties](./properties.md)
 - [Types](../types/index.md)

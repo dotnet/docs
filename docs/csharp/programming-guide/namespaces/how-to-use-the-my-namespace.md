@@ -38,6 +38,5 @@ The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) pro
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Namespaces](./index.md)
 - [Using Namespaces](./using-namespaces.md)

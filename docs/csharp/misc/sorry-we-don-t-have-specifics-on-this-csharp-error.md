@@ -1,5 +1,6 @@
 ---
 title: "Sorry, we don't have specifics on this C# error"
+description: "This error does not have an article associated with it"
 ms.date: 08/04/2020
 f1_keywords:
   - "CS0181"
@@ -752,6 +753,5 @@ Provides a QA website for questions about and issues with Visual C#.
   
 ## See also
 
-- [C# Programming Guide](../programming-guide/index.md)
 - [C# Reference](../language-reference/index.md)
 - [Talk to Us](/visualstudio/ide/feedback-options)

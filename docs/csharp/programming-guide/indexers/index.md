@@ -64,5 +64,4 @@ For more information, see [Indexers](~/_csharplang/spec/classes.md#indexers) in 
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Properties](../classes-and-structs/properties.md)

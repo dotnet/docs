@@ -66,6 +66,5 @@ An interface has the following properties:
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Inheritance](../classes-and-structs/inheritance.md)
 - [Identifier names](../inside-a-program/identifier-names.md)

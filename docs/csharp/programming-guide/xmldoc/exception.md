@@ -44,5 +44,4 @@ For more information about exception handling, see [Exceptions and Exception Han
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Recommended tags for documentation comments](recommended-tags-for-documentation-comments.md)

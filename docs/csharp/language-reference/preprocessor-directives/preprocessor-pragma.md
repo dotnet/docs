@@ -33,7 +33,6 @@ ms.assetid: 5b7944cd-d402-46a1-ad8f-feffb2d83673
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Preprocessor Directives](./index.md)
 - [#pragma warning](./preprocessor-pragma-warning.md)
 - [#pragma checksum](./preprocessor-pragma-checksum.md)

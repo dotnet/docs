@@ -25,5 +25,4 @@ Parameters declared for a method without [in](./in-parameter-modifier.md), [ref]
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)

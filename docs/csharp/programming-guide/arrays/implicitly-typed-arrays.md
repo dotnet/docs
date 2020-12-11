@@ -29,7 +29,6 @@ When you create an anonymous type that contains an array, the array must be impl
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Implicitly Typed Local Variables](../classes-and-structs/implicitly-typed-local-variables.md)
 - [Arrays](./index.md)
 - [Anonymous Types](../classes-and-structs/anonymous-types.md)

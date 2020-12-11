@@ -67,7 +67,6 @@ The [get](../../language-reference/keywords/get.md) and [set](../../language-ref
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Properties](./properties.md)
 - [Indexers](../indexers/index.md)
 - [Access Modifiers](./access-modifiers.md)

@@ -36,5 +36,4 @@ See the [\<example>](./example.md) article for an example of how to use the `<co
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Recommended tags for documentation comments](./recommended-tags-for-documentation-comments.md)

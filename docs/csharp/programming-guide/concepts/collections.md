@@ -594,7 +594,6 @@ private static IEnumerable<int> EvenSequence(
 ## See also
 
 - [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
-- [Programming Concepts (C#)](./index.md)
 - [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
 - [LINQ to Objects (C#)](./linq/linq-to-objects.md)
 - [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/introduction-to-plinq.md)

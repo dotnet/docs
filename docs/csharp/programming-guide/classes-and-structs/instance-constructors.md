@@ -58,7 +58,6 @@ Instance constructors are used to create and initialize any instance member vari
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Classes and Structs](./index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./destructors.md)

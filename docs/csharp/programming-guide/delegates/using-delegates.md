@@ -64,7 +64,6 @@ Comparing delegates of two different types assigned at compile-time will result 
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Delegates](./index.md)
 - [Using Variance in Delegates](../concepts/covariance-contravariance/using-variance-in-delegates.md)
 - [Variance in Delegates](../concepts/covariance-contravariance/variance-in-delegates.md)

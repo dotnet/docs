@@ -12,20 +12,16 @@ The following examples show how to copy, move, and delete files and folders in a
   
  Use <xref:System.IO.FileSystemWatcher?displayProperty=nameWithType> to provide events that will enable you to calculate the progress when operating on multiple files. Another approach is to use platform invoke to call the relevant file-related methods in the Windows Shell. For information about how to perform these file operations asynchronously, see [Asynchronous File I/O](../../../standard/io/asynchronous-file-i-o.md).  
   
-## Example  
+## Examples  
 
  The following example shows how to copy files and directories.  
   
  [!code-csharp[csFilesandFolders#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#7)]  
   
-## Example  
-
  The following example shows how to move files and directories.  
   
  [!code-csharp[csFilesandFolders#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#8)]  
   
-## Example  
-
  The following example shows how to delete files and directories.  
   
  [!code-csharp[csFilesandFolders#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS/FileIteration.cs#9)]  
@@ -33,7 +29,6 @@ The following examples show how to copy, move, and delete files and folders in a
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../index.md)
 - [File System and the Registry (C# Programming Guide)](index.md)
 - [How to provide a progress dialog box for file operations](how-to-provide-a-progress-dialog-box-for-file-operations.md)
 - [File and Stream I/O](../../../standard/io/index.md)

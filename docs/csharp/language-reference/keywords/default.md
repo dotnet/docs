@@ -19,5 +19,4 @@ The `default` keyword can be used in two ways:
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)

@@ -13,13 +13,13 @@ ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9
 
 The `break` statement terminates the closest enclosing loop or [switch](./switch.md) statement in which it appears. Control is passed to the statement that follows the terminated statement, if any.
 
-## Example
+## Break a loop
 
 In this example, the conditional statement contains a counter that is supposed to count from 1 to 100; however, the `break` statement terminates the loop after 4 counts.
 
 [!code-csharp[csrefKeywordsJump#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#1)]
 
-## Example
+## Break a switch
 
 This example demonstrates the use of `break` in a [switch](./switch.md) statement.
 
@@ -32,7 +32,7 @@ Enter your selection (1, 2, or 3): 4
 Sorry, invalid selection.
 ```
 
-## Example
+## Break an inner loop
 
 In this example, the `break` statement is used to break out of an inner nested loop, and return control to the outer loop. Control is _only_ returned one level up in the nested loops.
 
@@ -51,6 +51,5 @@ In this example, the `break` statement is only used to break out of the current 
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [switch](./switch.md)

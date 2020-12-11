@@ -119,7 +119,6 @@ For more information about input/output methods, see <xref:System.IO>.
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Samples and tutorials](../../../samples-and-tutorials/index.md)
 - [Main() and Command-Line Arguments](../main-and-command-args/index.md)
 - [Getting Started with Visual C#](/visualstudio/ide/quickstart-csharp-console)

@@ -54,7 +54,6 @@ For more information and examples, see [Static Constructors](./static-constructo
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Classes and Structs](./index.md)
 - [Finalizers](./destructors.md)
 - [static](../../language-reference/keywords/static.md)

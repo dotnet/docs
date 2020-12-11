@@ -53,5 +53,4 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../index.md)
 - [File System and the Registry (C# Programming Guide)](./index.md)

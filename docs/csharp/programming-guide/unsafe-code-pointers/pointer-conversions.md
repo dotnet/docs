@@ -37,7 +37,6 @@ The following table shows the predefined implicit pointer conversions. Implicit 
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Pointer types](pointer-types.md)
 - [Reference types](../../language-reference/keywords/reference-types.md)
 - [Value types](../../language-reference/builtin-types/value-types.md)

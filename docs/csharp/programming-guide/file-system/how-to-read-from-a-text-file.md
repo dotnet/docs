@@ -43,5 +43,4 @@ If you are not using the text files from [How to write to a text file](./how-to-
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../index.md)
 - [File System and the Registry (C# Programming Guide)](./index.md)

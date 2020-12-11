@@ -25,4 +25,3 @@ Special characters are predefined, contextual characters that modify the program
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)

@@ -32,6 +32,4 @@ For more information, see [Basic concepts](~/_csharplang/spec/basic-concepts.md)
   
 ## See also
 
-- [C# Programming Guide](../index.md)
-- [Inside a C# Program](./index.md)
 - [C# Reference](../../language-reference/index.md)

@@ -56,6 +56,5 @@ key.Close();
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../index.md)
 - [File System and the Registry (C# Programming Guide)](./index.md)
 - [Read, write and delete from the registry with C#](https://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)

@@ -78,7 +78,6 @@ For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Unsafe Code and Pointers](index.md)
 - [Pointer Conversions](pointer-conversions.md)
 - [Reference types](../../language-reference/keywords/reference-types.md)

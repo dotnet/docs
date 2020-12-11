@@ -39,7 +39,6 @@ A variable of a [reference type](../../language-reference/keywords/reference-typ
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Passing Parameters](./passing-parameters.md)
 - [ref](../../language-reference/keywords/ref.md)
 - [in](../../language-reference/keywords/in-parameter-modifier.md)

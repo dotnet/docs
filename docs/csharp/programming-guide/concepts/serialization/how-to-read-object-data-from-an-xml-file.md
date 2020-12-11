@@ -65,4 +65,3 @@ Replace the file name "c:\temp\SerializationOverview.xml" with the name of the f
 - <xref:System.IO.StreamWriter>
 - [How to write object data to an XML file (C#)](./how-to-write-object-data-to-an-xml-file.md)
 - [Serialization (C#)](./index.md)
-- [C# Programming Guide](../../index.md)

@@ -21,7 +21,6 @@ This example accesses the elements of both arrays using indices rather than a se
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Unsafe Code and Pointers](index.md)
 - [-unsafe (C# Compiler Options)](../../language-reference/compiler-options/unsafe-compiler-option.md)
 - [Garbage Collection](../../../standard/garbage-collection/index.md)

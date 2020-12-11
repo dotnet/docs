@@ -42,5 +42,4 @@ See [\<summary>](./summary.md) for an example of using \<seealso>.
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [Recommended tags for documentation comments](./recommended-tags-for-documentation-comments.md)

@@ -45,7 +45,6 @@ Arrays can have more than one dimension. For example, the following declaration 
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Arrays](./index.md)
 - [Single-Dimensional Arrays](./single-dimensional-arrays.md)
 - [Jagged Arrays](./jagged-arrays.md)

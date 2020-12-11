@@ -88,6 +88,5 @@ For more information, see the [Destructors](~/_csharplang/spec/classes.md#destru
 ## See also
 
 - <xref:System.IDisposable>
-- [C# Programming Guide](../index.md)
 - [Constructors](./constructors.md)
 - [Garbage Collection](../../../standard/garbage-collection/index.md)

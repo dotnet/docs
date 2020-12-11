@@ -33,5 +33,4 @@ The `@` special character serves as a verbatim identifier. It can be used in the
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Special Characters](./index.md)

@@ -90,7 +90,6 @@ For more information, see the [Conversions](~/_csharplang/spec/conversions.md) s
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Types](./index.md)
 - [Cast expression](../../language-reference/operators/type-testing-and-cast.md#cast-expression)
 - [User-defined conversion operators](../../language-reference/operators/user-defined-conversion-operators.md)

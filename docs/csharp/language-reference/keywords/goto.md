@@ -17,13 +17,11 @@ A common use of `goto` is to transfer control to a specific switch-case label or
 
 The `goto` statement is also useful to get out of deeply nested loops.
 
-## Example
+## Examples
 
 The following example demonstrates using `goto` in a [switch](switch.md) statement.
 
 [!code-csharp[csrefKeywordsJump#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#4)]
-
-## Example
 
 The following example demonstrates using `goto` to break out from nested loops.
 
@@ -36,6 +34,5 @@ The following example demonstrates using `goto` to break out from nested loops.
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [goto Statement (C++)](/cpp/cpp/goto-statement-cpp)

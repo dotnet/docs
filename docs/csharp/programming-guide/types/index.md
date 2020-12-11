@@ -180,6 +180,5 @@ For more information, see the following articles:
 ## See also
 
 - [C# Reference](../../language-reference/index.md)
-- [C# Programming Guide](../index.md)
 - [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)
 - [Integral types](../../language-reference/builtin-types/integral-numeric-types.md)

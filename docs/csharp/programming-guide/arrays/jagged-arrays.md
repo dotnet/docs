@@ -62,7 +62,6 @@ A jagged array is an array whose elements are arrays, possibly of different size
 ## See also
 
 - <xref:System.Array>
-- [C# Programming Guide](../index.md)
 - [Arrays](./index.md)
 - [Single-Dimensional Arrays](./single-dimensional-arrays.md)
 - [Multidimensional Arrays](./multidimensional-arrays.md)

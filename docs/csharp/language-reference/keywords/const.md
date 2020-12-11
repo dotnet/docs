@@ -47,8 +47,6 @@ public const int C2 = C1 + 100;
 
 [!code-csharp[csrefKeywordsModifiers#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#5)]
 
-## Example
-
 This example demonstrates how to use constants as local variables.
 
 [!code-csharp[csrefKeywordsModifiers#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#6)]
@@ -60,7 +58,6 @@ This example demonstrates how to use constants as local variables.
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Modifiers](index.md)
 - [readonly](./readonly.md)

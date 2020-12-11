@@ -71,13 +71,11 @@ A property overriding a virtual property can also be [sealed](../../language-ref
 > [!NOTE]
 > It is an error to use a [virtual](../../language-reference/keywords/virtual.md), [abstract](../../language-reference/keywords/abstract.md), or [override](../../language-reference/keywords/override.md) modifier on an accessor of a [static](../../language-reference/keywords/static.md) property.
 
-## Example
+## Examples
 
 This example demonstrates instance, static, and read-only properties. It accepts the name of the employee from the keyboard, increments `NumberOfEmployees` by 1, and displays the Employee name and number.
 
 [!code-csharp[csProgGuideProperties#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#2)]
-
-## Example
 
 This example demonstrates how to access a property in a base class that is hidden by another property that has the same name in a derived class:
 
@@ -95,15 +93,12 @@ The following are important points in the previous example:
 
      For more information about hiding members, see the [new Modifier](../../language-reference/keywords/new-modifier.md).
 
-## Example
-
 In this example, two classes, `Cube` and `Square`, implement an abstract class, `Shape`, and override its abstract `Area` property. Note the use of the [override](../../language-reference/keywords/override.md) modifier on the properties. The program accepts the side as an input and calculates the areas for the square and cube. It also accepts the area as an input and calculates the corresponding side for the square and cube.
 
 [!code-csharp[csProgGuideProperties#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#6)]
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Properties](properties.md)
 - [Interface Properties](interface-properties.md)
 - [Auto-Implemented Properties](auto-implemented-properties.md)

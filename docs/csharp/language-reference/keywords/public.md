@@ -39,7 +39,6 @@ For more information, see [Declared accessibility](~/_csharplang/spec/basic-conc
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)

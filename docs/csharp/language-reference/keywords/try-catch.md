@@ -175,7 +175,6 @@ For more information, see [The try statement](~/_csharplang/spec/statements.md#t
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)
 - [throw](throw.md)

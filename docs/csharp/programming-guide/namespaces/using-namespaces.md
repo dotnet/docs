@@ -87,7 +87,6 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET cl
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Namespaces](./index.md)
 - [Member access expression](../../language-reference/operators/member-access-operators.md#member-access-expression-)
 - [:: operator](../../language-reference/operators/namespace-alias-qualifier.md)

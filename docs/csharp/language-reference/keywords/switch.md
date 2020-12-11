@@ -198,7 +198,6 @@ For more information, see [The switch statement](~/_csharplang/spec/statements.m
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [if-else](if-else.md)
 - [Pattern Matching](../../pattern-matching.md)

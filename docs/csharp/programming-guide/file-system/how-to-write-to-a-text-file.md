@@ -32,6 +32,5 @@ These examples show various ways to write text to a file. The first two examples
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [File System and the Registry (C# Programming Guide)](./index.md)
 - [Sample: Save a collection to Application Storage](https://code.msdn.microsoft.com/CSWinStoreAppSaveCollection-bed5d6e6)

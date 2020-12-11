@@ -20,7 +20,7 @@ Tags are processed on code constructs such as types and type members.
   
 ## Tags  
   
-|||||  
+| | | |  
 |---|---|---|---|
 |[\<c>](./code-inline.md)|[\<para>](./para.md)|[\<see>](./see.md)*|[\<value>](./value.md)  
 |[\<code>](./code.md)|[\<param>](./param.md)*|[\<seealso>](./seealso.md)*|  
@@ -41,6 +41,5 @@ If you want angle brackets to appear in the text of a documentation comment, use
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [-doc (C# compiler options)](../../language-reference/compiler-options/doc-compiler-option.md)
 - [XML documentation comments](./index.md)

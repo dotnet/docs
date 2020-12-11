@@ -151,4 +151,3 @@ string s = String.Empty;
 |[Comparing Strings](../../../standard/base-types/comparing.md)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
 |[Using the StringBuilder Class](../../../standard/base-types/stringbuilder.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
 |[LINQ and Strings](../concepts/linq/linq-and-strings.md)|Provides information about how to perform various string operations by using LINQ queries.|  
-|[C# Programming Guide](../index.md)|Provides links to topics that explain programming constructs in C#.|  

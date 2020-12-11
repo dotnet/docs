@@ -69,7 +69,6 @@ Fixed size buffers differ from regular arrays in the following ways:
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Unsafe Code and Pointers](index.md)
 - [fixed Statement](../../language-reference/keywords/fixed-statement.md)
 - [Interoperability](../interop/index.md)

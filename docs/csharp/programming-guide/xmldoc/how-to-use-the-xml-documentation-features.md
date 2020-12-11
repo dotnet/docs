@@ -128,7 +128,6 @@ XML documentation starts with `///`. When you create a new project, the wizards 
 
 ## See also
 
-- [C# programming guide](../index.md)
 - [-doc (C# compiler options)](../../language-reference/compiler-options/doc-compiler-option.md)
 - [XML documentation comments](./index.md)
 - [DocFX documentation processor](https://dotnet.github.io/docfx/)

@@ -20,7 +20,7 @@ A protected member is accessible within its class and by derived class instances
 
 For a comparison of `protected` with the other access modifiers, see [Accessibility Levels](accessibility-levels.md).
 
-## Example
+## Examples
 
 A protected member of a base class is accessible in a derived class only if the access occurs through the derived class type. For example, consider the following code segment:
 
@@ -29,8 +29,6 @@ A protected member of a base class is accessible in a derived class only if the 
 The statement `a.x = 10` generates an error because it is made within the static method Main, and not an instance of class B.
 
 Struct members cannot be protected because the struct cannot be inherited.
-
-## Example
 
 In this example, the class `DerivedPoint` is derived from `Point`. Therefore, you can access the protected members of the base class directly from the derived class.
 
@@ -49,7 +47,6 @@ For more information, see [Declared accessibility](~/_csharplang/spec/basic-conc
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)

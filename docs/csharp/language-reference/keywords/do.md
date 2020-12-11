@@ -32,6 +32,5 @@ For more information, see [The do statement](~/_csharplang/spec/statements.md#th
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [while statement](while.md)

@@ -64,6 +64,3 @@ The features that have been implemented in C# versions after 6.0 are represented
 
  [Using the Visual Studio Development Environment for C#](/visualstudio/get-started/csharp)  
  Provides links to conceptual and task topics that describe the IDE and Editor.  
-  
- [C# Programming Guide](../programming-guide/index.md)  
- Includes information about how to use the C# programming language.

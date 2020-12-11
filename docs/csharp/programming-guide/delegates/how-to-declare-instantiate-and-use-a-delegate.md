@@ -70,6 +70,5 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Events](../events/index.md)
 - [Delegates](./index.md)

@@ -50,7 +50,6 @@ For more information, see [Unsafe code](~/_csharplang/spec/unsafe-code.md) in th
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [fixed Statement](fixed-statement.md)
 - [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md)

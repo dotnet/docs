@@ -39,6 +39,5 @@ A [value-type](../../language-reference/builtin-types/value-types.md) variable c
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Passing Parameters](./passing-parameters.md)
 - [Passing Reference-Type Parameters](./passing-reference-type-parameters.md)

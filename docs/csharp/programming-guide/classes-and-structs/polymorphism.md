@@ -109,7 +109,6 @@ For more information, see [base](../../language-reference/keywords/base.md).
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Inheritance](./inheritance.md)
 - [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md)
 - [Methods](./methods.md)

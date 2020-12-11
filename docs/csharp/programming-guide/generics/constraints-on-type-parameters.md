@@ -119,7 +119,6 @@ You could use it as shown in the following sample to create an enum and build a 
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](./index.md)
 - [Generic Classes](./generic-classes.md)
 - [new Constraint](../../language-reference/keywords/new-constraint.md)

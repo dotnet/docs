@@ -204,7 +204,7 @@ In this step, we use the [`SrCnnEntireDetector`](xref:Microsoft.ML.Transforms.Ti
 
 ## Anomaly detection results
 
-Your results should be similar to the following. During processing, messages are displayed. You may see warnings, or processing messages. Some messages have been removed from the following results for clarity.
+Run the application. Your results should be similar to the following. During processing, messages are displayed. You may see warnings, or processing messages. Some messages have been removed from the following results for clarity.
 
 ```console
 Detect period of the series

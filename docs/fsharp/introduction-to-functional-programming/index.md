@@ -49,7 +49,7 @@ So, why is the signature important? In typed functional programming, the impleme
 
 ### Expressions
 
-Expressions are constructs that evaluate to a value. In contrast to statements, which perform an action, expressions can be thought of performing an action that gives back a value. Expressions are almost always used in favor of statements in functional programming.
+Expressions are constructs that evaluate to a value. In contrast to statements, which perform an action, expressions can be thought of performing an action that gives back a value. Expressions are almost always used in functional programming instead of statements.
 
 Consider the previous function, `addOne`. The body of `addOne` is an expression:
 

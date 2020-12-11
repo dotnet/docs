@@ -121,7 +121,7 @@ In this tutorial, you will see that these procedures can be completed using two 
 
 In the first step, we invoke the `DetectSeasonality` function to determine the period of the series.
 
-### Create the DetectPeriod() method
+### Create the DetectPeriod method
 
 The `DetectPeriod()` method:
 

@@ -124,7 +124,7 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
 ### Create the DetectPeriod method
 
 
-1. Create the `DetectPeriod()` method, just after the `Main()` method, using the following code:
+1. Create the `DetectPeriod` method, just below the `Main` method, using the following code:
 
     ```csharp
     static void DetectPeriod(MLContext mlContext, IDataView phoneCalls)

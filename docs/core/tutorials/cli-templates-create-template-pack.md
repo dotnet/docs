@@ -79,6 +79,7 @@ Next, open the _templatepack.csproj_ file in your favorite editor and replace th
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -93,7 +94,9 @@ The `<PropertyGroup>` settings in the XML above is broken into three groups. The
 
 The `<TargetFramework>` setting must be set so that MSBuild will run properly when you run the pack command to compile and pack the project.
 
-The last three settings have to do with configuring the project correctly to include the templates in the appropriate folder in the NuGet pack when it's created.
+The next three settings have to do with configuring the project correctly to include the templates in the appropriate folder in the NuGet pack when it's created.
+
+The last setting suppresses a warning message that doesn't apply to template pack projects.
 
 The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes everything in the _templates_ folder as content. It's also set to exclude any _bin_ folder or _obj_ folder to prevent any compiled code (if you tested and compiled your templates) from being included. Second, the `<Compile>` setting excludes all code files from compiling no matter where they're located. This setting prevents the project being used to create a template pack from trying to compile the code in the _templates_ folder hierarchy.
 

@@ -1,7 +1,7 @@
 ---
 title: Details of XML serialization
 description: Serialization converts an object into a form that can be transported. This article provides an overview of XML serialization and the XmlSerializer class.
-ms.date: "03/30/2017"
+ms.date: 12/09/2020
 dev_langs: 
   - "csharp"
   - "vb"
@@ -42,7 +42,7 @@ When creating an application that uses the **XmlSerializer**, be aware of the fo
 - The **XmlSerializer** creates C# (.cs) files and compiles them into .dll files in the directory named by the TEMP environment variable; serialization occurs with those DLLs.
 
   > [!NOTE]
-  > These serialization assemblies can be generated in advance and signed by using the SGen.exe tool. This does not work a server of Web services. In other words, it is only for client use and for manual serialization.
+  > These serialization assemblies can be generated in advance and signed by using the SGen.exe tool. This does not work on a server of Web services. In other words, it is only for client use and for manual serialization.
 
   The code and the DLLs are vulnerable to a malicious process at the time of creation and compilation. When using a computer running Microsoft Windows NT 4.0 or later, it might be possible for two or more users to share the TEMP directory. Sharing a TEMP directory is dangerous if the two accounts have different security privileges and the higher-privilege account runs an application using the **XmlSerializer**. In this case, one user can breach the computer's security by replacing either the .cs or .dll file that is compiled. To eliminate this concern, always be sure that each account on the computer has its own profile. By default, the TEMP environment variable points to a different directory for each account.
 
@@ -52,7 +52,7 @@ When creating an application that uses the **XmlSerializer**, be aware of the fo
 
 - The **XmlSerializer** serializes data and runs any code using any type given to it.
 
-  There are two ways in which a malicious object presents a threat. It could run malicious code or it could inject malicious code into the C# file created by the **XmlSerializer**. In the first case, if a malicious object tries to run a destructive procedure, code access security helps prevent any damage from being done. In the second case, there is a theoretical possibility that a malicious object may somehow inject code into the C# file created by the **XmlSerializer**. Although this issue has been examined thoroughly, and such an attack is considered unlikely, you should take the precaution of never serializing data with an unknown and untrusted type.
+  There are two ways in which a malicious object presents a threat. It could run malicious code or it could inject malicious code into the C# file created by the **XmlSerializer**. In the second case, there is a theoretical possibility that a malicious object may somehow inject code into the C# file created by the **XmlSerializer**. Although this issue has been examined thoroughly, and such an attack is considered unlikely, you should take the precaution of never serializing data with an unknown and untrusted type.
 
 - Serialized sensitive data might be vulnerable.
 

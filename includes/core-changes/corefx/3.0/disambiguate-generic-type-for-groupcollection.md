@@ -62,6 +62,6 @@ Any extension method that accepts an <xref:System.Collections.Generic.IEnumerabl
 - `Overload:System.Data.DataTableExtensions.CopyToDataTable`
 - `Overload:System.Linq.Enumerable.Count`
 - `Overload:System.Linq.ParallelEnumerable.AsParallel`
-- `Overload:System.Linq.Queryable.AsQueryable```
+- `Overload:System.Linq.Queryable.AsQueryable`
 
 -->

@@ -146,7 +146,6 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
 
     [!code-csharp[CallDetectPeriod](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#CallDetectPeriod)]
 
-
 ### Period detection results
 
 Run the application. Your results should be similar to the following.

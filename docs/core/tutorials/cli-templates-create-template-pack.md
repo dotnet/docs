@@ -89,7 +89,7 @@ Next, open the _templatepack.csproj_ file in your favorite editor and replace th
 </Project>
 ```
 
-The `<PropertyGroup>` settings in the XML above is broken into three groups. The first group deals with properties required for a NuGet package. The three `<Package` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PackageId>` value is used to uninstall the template pack with a single name instead of a directory path. It can also be used to install the template pack from a NuGet feed. The remaining settings such as `<Title>` and `<PackageTags>` have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
+The `<PropertyGroup>` settings in the XML above is broken into three groups. The first group deals with properties required for a NuGet package. The three `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. Specifically the `<PackageId>` value is used to uninstall the template pack with a single name instead of a directory path. It can also be used to install the template pack from a NuGet feed. The remaining settings such as `<Title>` and `<PackageTags>` have to do with metadata displayed on the NuGet feed. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
 
 The `<TargetFramework>` setting must be set so that MSBuild will run properly when you run the pack command to compile and pack the project.
 
@@ -137,7 +137,7 @@ Templates                                         Short Name               Langu
 --------------------------------------------      -------------------      ------------      ----------------------
 Example templates: string extensions              stringext                [C#]              Common/Code
 Console Application                               console                  [C#], F#, VB      Common/Console
-Example templates: async project                  consoleasync             [C#]              Common/Console/C#8
+Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
 Class library                                     classlib                 [C#], F#, VB      Common/Library
 ```
 
@@ -155,29 +155,33 @@ dotnet new -u
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
-  Microsoft.DotNet.Common.ItemTemplates
+  Microsoft.DotNet.Common.ProjectTemplates.2.2
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.2
+      Version: 1.0.2-beta4
+      Author: Microsoft
     Templates:
-      dotnet gitignore file (gitignore)
-      global.json file (globaljson)
-      NuGet Config (nugetconfig)
-      Solution File (sln)
-      Dotnet local tool manifest file (tool-manifest)
-      Web Config (webconfig)
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.2.2
 
 ... cut to save space ...
 
-  NUnit3.DotNetNew.Template
-    Templates:
-      NUnit 3 Test Project (nunit) C#
-      NUnit 3 Test Item (nunit-test) C#
-      NUnit 3 Test Project (nunit) F#
-      NUnit 3 Test Item (nunit-test) F#
-      NUnit 3 Test Project (nunit) VB
-      NUnit 3 Test Item (nunit-test) VB
   AdatumCorporation.Utility.Templates
+    Details:
+      NuGetPackageId: AdatumCorporation.Utility.Templates
+      Version: 1.0.0
+      Author: Me
     Templates:
       Example templates: async project (consoleasync) C#
       Example templates: string extensions (stringext) C#
+    Uninstall Command:
+      dotnet new -u AdatumCorporation.Utility.Templates
 ```
 
 Run `dotnet new -u AdatumCorporation.Utility.Templates` to uninstall the template. The `dotnet new` command will output help information that should omit the templates you previously installed.

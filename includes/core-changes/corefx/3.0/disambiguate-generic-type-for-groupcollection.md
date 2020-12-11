@@ -16,7 +16,7 @@ In previous versions of .NET, there was no ambiguity and no compiler error.
 
 #### Reason for change
 
-This was an [unintentional breaking change](https://github.com/dotnet/corefx/pull/30077). Because it has been like this for some time, we don't plan to revert it. In additional, such a change would itself be breaking.
+This was an [unintentional breaking change](https://github.com/dotnet/corefx/pull/30077). Because it has been like this for some time, we don't plan to revert it. In addition, such a change would itself be breaking.
 
 #### Recommended action
 
@@ -53,10 +53,10 @@ Any extension method that accepts an <xref:System.Collections.Generic.IEnumerabl
 
 #### Affected APIs
 
-- ```M:System.Collections.Immutable.ImmutableArray.ToImmutableArray``1(System.Collections.Generic.IEnumerable{``0})```
+- ``M:System.Collections.Immutable.ImmutableArray.ToImmutableArray``1(System.Collections.Generic.IEnumerable{``0})``
 - `Overload:System.Collections.Immutable.ImmutableDictionary.ToImmutableDictionary`
 - `Overload:System.Collections.Immutable.ImmutableHashSet.ToImmutableHashSet`
-- ```M:System.Collections.Immutable.ImmutableList.ToImmutableList``1(System.Collections.Generic.IEnumerable{``0})```
+- ``M:System.Collections.Immutable.ImmutableList.ToImmutableList``1(System.Collections.Generic.IEnumerable{``0})``
 - `Overload:System.Collections.Immutable.ImmutableSortedDictionary.ToImmutableSortedDictionary`
 - `Overload:System.Collections.Immutable.ImmutableSortedSet.ToImmutableSortedSet`
 - `Overload:System.Data.DataTableExtensions.CopyToDataTable`

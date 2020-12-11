@@ -5,13 +5,13 @@ ms.date: 12/10/2020
 ---
 # TextInfo.ListSeparator values changed
 
-The default <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values for different cultures have been reverted to their pre-.NET 5.0 values.
+The default <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values for different cultures have been reverted to their pre-.NET 5.0 values on Windows.
 
 ## Change description
 
-In .NET 5.0.0, the default <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values for different cultures changed. On Windows, the values changed as part of the [Globalization APIs use ICU libraries on Windows](icu-globalization-api.md) change. On Linux and macOS, instead of using decimal separators, the values for <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> were also obtained from International Components for Unicode (ICU).
+In .NET 5.0.0, as part of the [switch from NLS to ICU libraries](icu-globalization-api.md), the default <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values for different cultures changed on Windows. The decimal separator for a given culture was used as the <xref:System.Globalization.TextInfo.ListSeparator> value. Decimal separator values are obtained from International Components for Unicode (ICU). On Linux and macOS, there was no change in <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values.
 
-Starting in .NET 5.0.1, the values for <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> are identical to the values in .NET Framework and .NET Core 1.0 - 3.1. That is, on Windows, the <xref:System.Globalization.TextInfo.ListSeparator> values are obtained from National Language Support (NLS). On Linux and macOS, the <xref:System.Globalization.TextInfo.ListSeparator> values are obtained from the decimal separator values.
+Starting in .NET 5.0.1, the values for <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> are identical to the values in .NET Framework and .NET Core 1.0 - 3.1 on Windows. That is, the <xref:System.Globalization.TextInfo.ListSeparator> values are obtained from National Language Support (NLS) instead of ICU (via the decimal separator value).
 
 ## Version introduced
 
@@ -19,11 +19,11 @@ Starting in .NET 5.0.1, the values for <xref:System.Globalization.TextInfo.ListS
 
 ## Reason for change
 
-Developers reported that they use the <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> property when parsing comma-separated value (CSV) files, and the new <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values broke the parsing.
+Developers reported that they use the <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> property when parsing comma-separated value (CSV) files, and the new <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values broke that parsing.
 
 ## Recommended action
 
-Unless you updated your parsing code to handle the list separator value changes in .NET 5.0.0, no action is necessary on your part. If you implemented new CSV-parsing functionality in .NET 5.0.0, then you'll need to update your code to account for the <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> changes in .NET 5.0.1.
+Unless you updated your parsing code to handle the list separator value changes in .NET 5.0.0, no action is necessary on your part. If you implemented new CSV-parsing functionality in .NET 5.0.0 using <xref:System.Globalization.TextInfo.ListSeparator>, update your code to account for the <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> changes in .NET 5.0.1.
 
 ## Affected APIs
 

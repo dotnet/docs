@@ -198,7 +198,7 @@ In this step, we use the [`SrCnnEntireDetector`](xref:Microsoft.ML.Transforms.Ti
 
     [!code-csharp[DisplayAnomalyDetectionResults](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DisplayAnomalyDetectionResults)]
 
-7. Add the following call to the `DetectAnomaly()`method in the `Main()` method:
+7. Add the following call to the `DetectAnomaly` method in the `Main` method:
 
     [!code-csharp[CallDetectAnomaly](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#CallDetectAnomaly)]
 

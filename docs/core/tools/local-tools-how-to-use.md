@@ -2,7 +2,7 @@
 title: "Tutorial: Install and use .NET local tools"
 description: Learn how to install and use a .NET tool as a local tool.
 ms.topic: tutorial
-ms.date: 02/12/2020
+ms.date: 12/09/2020
 ---
 
 # Tutorial: Install and use a .NET local tool using the .NET CLI
@@ -200,4 +200,4 @@ If you get an error message while following the tutorial, see [Troubleshoot .NET
 
 ## See also
 
-For more information, see [.NET Core tools](global-tools.md)
+For more information, see [.NET tools](global-tools.md)

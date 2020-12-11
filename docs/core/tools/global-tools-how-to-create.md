@@ -13,13 +13,13 @@ This tutorial teaches you how to create and package a .NET tool. The .NET CLI le
 
 The tool that you'll create is a console application that takes a message as input and displays the message along with lines of text that create the image of a robot.
 
-This is the first in a series of three tutorials. In this tutorial, you create and package a tool. In the next two tutorials you [use the tool as a global tool](global-tools-how-to-use.md) and [use the tool as a local tool](local-tools-how-to-use.md).
+This is the first in a series of three tutorials. In this tutorial, you create and package a tool. In the next two tutorials you [use the tool as a global tool](global-tools-how-to-use.md) and [use the tool as a local tool](local-tools-how-to-use.md). The procedures for creating a tool are the same whether you use it as a global tool or as a local tool.
 
 ## Prerequisites
 
-- [.NET Core SDK 3.1](https://dotnet.microsoft.com/download) or a later version.
+- [.NET SDK 5.0](https://dotnet.microsoft.com/download) or a later version.
 
-  This tutorial and the following [tutorial for global tools](global-tools-how-to-use.md) apply to .NET Core SDK 2.1 and later versions because global tools are available starting in that version. But this tutorial assumes you have installed 3.1 or later so that you have the option of continuing on to the [local tools tutorial](local-tools-how-to-use.md). Local tools are available starting in .NET Core SDK 3.0. The procedures for creating a tool are the same whether you use it as a global tool or as a local tool.
+  This tutorial uses .NET SDK 5.0, but global tools are available starting in .NET Core SDK 2.1. Local tools are available starting in .NET Core SDK 3.0.
   
 - A text editor or code editor of your choice.
 
@@ -153,7 +153,7 @@ Before you can pack and distribute the application as a tool, you need to modify
 
    `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the project file name without the *.csproj* extension.
 
-   `<PackageOutputPath>` is an optional element that determines where the NuGet package will be produced. The NuGet package is what the .NET Core CLI uses to install your tool.
+   `<PackageOutputPath>` is an optional element that determines where the NuGet package will be produced. The NuGet package is what the .NET CLI uses to install your tool.
 
    The project file now looks like the following example:
 
@@ -163,7 +163,7 @@ Before you can pack and distribute the application as a tool, you need to modify
      <PropertyGroup>
 
        <OutputType>Exe</OutputType>
-       <TargetFramework>netcoreapp3.1</TargetFramework>
+       <TargetFramework>net5.0</TargetFramework>
   
        <PackAsTool>true</PackAsTool>
        <ToolCommandName>botsay</ToolCommandName>

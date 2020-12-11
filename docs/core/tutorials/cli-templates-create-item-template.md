@@ -1,5 +1,5 @@
 ---
-title: Create an item template for dotnet new - .NET Core CLI
+title: Create an item template for dotnet new - .NET CLI
 description: Learn how to create an item template for the dotnet new command. Item templates can contain any number of files.
 author: adegeo
 ms.date: 06/25/2019
@@ -9,7 +9,7 @@ ms.author: adegeo
 
 # Tutorial: Create an item template
 
-With .NET Core, you can create and deploy templates that generate projects, files, even resources. This tutorial is part one of a series that teaches you how to create, install, and uninstall, templates for use with the `dotnet new` command.
+With .NET, you can create and deploy templates that generate projects, files, even resources. This tutorial is part one of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
 
 In this part of the series, you'll learn how to:
 
@@ -23,7 +23,7 @@ In this part of the series, you'll learn how to:
 
 ## Prerequisites
 
-* [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download) or later versions.
+* [.NET 5.0 SDK](https://dotnet.microsoft.com/download) or a later version.
 * Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
@@ -80,7 +80,7 @@ Now that you have the content of the template created, you need to create the te
 
 ## Create the template config
 
-Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\extensions_.
+Templates are recognized by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\extensions_.
 
 When you create a template, all files and folders in the template folder are included as part of the template except for the special config folder. This config folder is named _.template.config_.
 
@@ -111,7 +111,7 @@ Open the _template.json_ with your favorite text editor and paste in the followi
 }
 ```
 
-This config file contains all the settings for your template. You can see the basic settings, such as `name` and `shortName`, but there's also a `tags/type` value that is set to `item`. This categorizes your template as an item template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET Core recommends so that users can easily filter the type of template they're searching for.
+This config file contains all the settings for your template. You can see the basic settings, such as `name` and `shortName`, but there's also a `tags/type` value that is set to `item`. This categorizes your template as an item template. There's no restriction on the type of template you create. The `item` and `project` values are common names that .NET recommends so that users can easily filter the type of template they're searching for.
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the \*.json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
@@ -132,14 +132,19 @@ Options:
 
 ... cut to save space ...
 
-Templates                                         Short Name            Language          Tags
--------------------------------------------------------------------------------------------------------------------------------
-Example templates: string extensions              stringext             [C#]              Common/Code
-Console Application                               console               [C#], F#, VB      Common/Console
-Class library                                     classlib              [C#], F#, VB      Common/Library
-WPF Application                                   wpf                   [C#], VB          Common/WPF
-Windows Forms (WinForms) Application              winforms              [C#], VB          Common/WinForms
-Worker Service                                    worker                [C#]              Common/Worker/Web
+Templates                                         Short Name               Language          Tags
+--------------------------------------------      -------------------      ------------      ----------------------
+Example templates: string extensions              stringext                [C#]              Common/Code
+Console Application                               console                  [C#], F#, VB      Common/Console
+Class library                                     classlib                 [C#], F#, VB      Common/Library
+WPF Application                                   wpf                      [C#], VB          Common/WPF
+WPF Class library                                 wpflib                   [C#], VB          Common/WPF
+WPF Custom Control Library                        wpfcustomcontrollib      [C#], VB          Common/WPF
+WPF User Control Library                          wpfusercontrollib        [C#], VB          Common/WPF
+Windows Forms App                                 winforms                 [C#], VB          Common/WinForms
+Windows Forms Control Library                     winformscontrollib       [C#], VB          Common/WinForms
+Windows Forms Class Library                       winformslib              [C#], VB          Common/WinForms
+Worker Service                                    worker                   [C#], F#          Common/Worker/Web
 ```
 
 ## Test the item template
@@ -204,7 +209,7 @@ You get the following output.
 !dlroW olleH
 ```
 
-Congratulations! You created and deployed an item template with .NET Core. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files from the _test_ folder too. This will get you back to a clean state ready for the next major section of this tutorial.
+Congratulations! You created and deployed an item template with .NET. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files from the _test_ folder too. This will get you back to a clean state ready for the next major section of this tutorial.
 
 ## Uninstall the template
 
@@ -217,7 +222,7 @@ dotnet new -u
 You get output similar to the following.
 
 ```console
-Template Instantiation Commands for .NET Core CLI
+Template Instantiation Commands for .NET CLI
 
 Currently installed items:
   Microsoft.DotNet.Common.ItemTemplates

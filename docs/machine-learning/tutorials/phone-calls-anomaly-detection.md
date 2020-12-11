@@ -123,7 +123,6 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
 
 ### Create the DetectPeriod method
 
-The `DetectPeriod()` method:
 
 1. Create the `DetectPeriod()` method, just after the `Main()` method, using the following code:
 

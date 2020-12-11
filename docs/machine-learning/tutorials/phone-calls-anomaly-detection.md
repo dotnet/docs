@@ -61,6 +61,8 @@ The following table is a data preview from your \*.csv file:
 | 2018/10/3  | 34.49893429  |
 | ...    | ....   |
 
+This file represents a time-series. Each row in the file is a data point. Each data piont has two attributes, namely, `timestamp` and `value`, to reprensent the number of phone calls at each day. The number of phone calls is transformed to de-sensitivity.
+
 ### Create classes and define paths
 
 Next, define your input and prediction class data structures.
@@ -83,7 +85,7 @@ Add a new class to your project:
 
     [!code-csharp[DeclareTypes](./snippets/phone-calls-anomaly-detection/csharp/PhoneCallsData.cs#DeclareTypes "Declare data record types")]
 
-    `PhoneCallsData` specifies an input data class. The [LoadColumn](xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29) attribute specifies which columns (by column index) in the dataset should be loaded.
+    `PhoneCallsData` specifies an input data class. The [LoadColumn](xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29) attribute specifies which columns (by column index) in the dataset should be loaded. It has two attributes `timestamp` and `value` that correspond to the same attributes in the data file.
 
     `PhoneCallsPrediction` specifies the prediction data class. For SR-CNN detector, the prediction depends on the [detect mode](xref:Microsoft.ML.TimeSeries.SrCnnDetectMode) specified. In this sample we select the `AnomalyAndMargin` mode. The output contains seven columns. In most cases, `IsAnomaly`, `ExpectedValue`, `UpperBoundary` and `LowerBoundary` are informative enough. They tell you if a point is an anomaly, the expected value of the point and the lower / upper boundary region of the point.
 

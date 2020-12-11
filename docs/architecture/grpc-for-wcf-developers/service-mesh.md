@@ -1,7 +1,7 @@
 ---
 title: Service meshes - gRPC for WCF developers
 description: Using a service mesh to route and balance requests to gRPC services in a Kubernetes cluster.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Service meshes
@@ -14,9 +14,9 @@ A service mesh is an infrastructure component that takes control of routing serv
 - Encryption
 - Monitoring
 
-Kubernetes service meshes work by adding an extra container, called a *sidecar proxy*, to each pod included in the mesh. The proxy takes over handling all inbound and outbound network requests. You can then keep configuration and management of networking matters separate from the application containers. In many cases, this separation doesn't require any changes to the application code.
+Kubernetes service meshes work by adding an extra container, called a *sidecar proxy*, to each pod included in the mesh. The proxy takes over handling all inbound and outbound network requests. You can then keep the configuration and management of networking matters separate from the application containers. In many cases, this separation doesn't require any changes to the application code.
 
-In the [previous chapter's example](kubernetes.md#test-the-application), the gRPC requests from the web application were all routed to a single instance of the gRPC service. This happens because the service's host name is resolved to an IP address, and that IP address is cached for the lifetime of the `HttpClientHandler` instance. It might be possible to work around this by handling DNS lookups manually or creating multiple clients. But this workaround would complicate the application code without adding any business or customer value.
+In the [previous chapter's example](kubernetes.md#test-the-application), the gRPC requests from the web application were all routed to a single instance of the gRPC service. This happens because the service's host name is resolved to an IP address, and that IP address is cached for the lifetime of the `HttpClientHandler` instance. It might be possible to work around this behavior by handling DNS lookups manually or creating multiple clients. But this workaround would complicate the application code without adding any business or customer value.
 
 When you use a service mesh, the requests from the application container are sent to the sidecar proxy. The sidecar proxy can then distribute them intelligently across all instances of the other service. The mesh can also:
 
@@ -47,7 +47,7 @@ Choosing a service mesh depends on multiple factors:
 In this example, you'll learn how to use the Linkerd service mesh with the *StockKube* application from [the previous section](kubernetes.md).
 To follow this example, you'll need to [install the Linkerd CLI](https://linkerd.io/2/getting-started/#step-1-install-the-cli). You can download Windows binaries from the section that lists GitHub releases. Be sure to use the most recent *stable* release and not one of the edge releases.
 
-With the Linkerd CLI installed, follow the [Getting Started](https://linkerd.io/2/getting-started/index.html) instructions to install the Linkerd components on your Kubernetes cluster. The instructions are straightforward, and installation should take only a couple of minutes on a local Kubernetes instance.
+With the Linkerd CLI installed, follow the [Getting Started](https://linkerd.io/2/getting-started/index.html) instructions to install the Linkerd components on your Kubernetes cluster. The instructions are straightforward, and the installation should take only a couple of minutes on a local Kubernetes instance.
 
 ### Add Linkerd to Kubernetes deployments
 

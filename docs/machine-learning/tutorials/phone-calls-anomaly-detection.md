@@ -115,7 +115,7 @@ Time series anomaly detection is the process of detecting time-series data outli
 
 To find anomaly on time series, you should first determine the period of the series. Then, the time series can be decomposed into several components as `Y = T + S + R`, where `Y` is the original series, `T` is the trend component, `S` is the seasonal componnent and `R` is the residual component of the series. This step is called [decomposition](https://en.wikipedia.org/wiki/Decomposition_of_time_series). Finally, detection is performed on the residual component to find the anomalies. In ML.NET, The SR-CNN algorithm is an advanced and novel algorithm that is based on Spectral Residual (SR) and Convolutional Neural Network(CNN) to detect anomaly on time-series( Refer to the [Time-Series Anomaly Detection Service at Microsoft](https://arxiv.org/pdf/1906.03821.pdf) paper for more details on this algorithm).
 
-In this tutorial, you will see that these procedures can be completed in ML.net with simply two function invokes.
+In this tutorial, you will see that these procedures can be completed using two functions.
 
 ## Detect Period
 

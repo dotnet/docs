@@ -21,17 +21,17 @@ If you already have Visual Studio Code installed, you can skip this step
 
 ### Step 2. Install the Azure Tools Extension Pack
 
-The [Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) contains extensions for working with Azure App Service, Azure Functions, Azure Storage, Cosmos DB and Azure Virtual Machines all in one convenient package.
+The [Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) contains extensions for working with Azure App Service, Azure Functions, Azure Storage, Cosmos DB, and Azure Virtual Machines all in one convenient package.
 
-To install the extension from Visual Studio Code, first type (`Ctrl+Shift+X`) to bring up the Extensions window.  Then search for the `Azure Tools` extension and finally click **Install** button to install the extension.  
+To install the extension from Visual Studio Code, first type (`Ctrl+Shift+X`) to bring up the Extensions window.  Then search for the `Azure Tools` extension and finally select **Install** button to install the extension.  
 
 ![Screenshot of the Visual Studio Code showing extensions panel searching for the Azure Tools extension pack](./media/visual-studio-code-azure-tools.png)
 
 To learn more about installing extensions in Visual Studio Code, refer to the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) document on the Visual Studio Code website.
 
-### Step 3. Login to your Azure account with Azure Tools
+### Step 3. Sign in to your Azure account with Azure Tools
 
-On the left hand panel, you will now see an Azure icon.  Click on this icon and a control panel for Azure services will appear.  Choose `Sign in to Azure...` under any service to complete the sign in process for the Azure tools in Visual Studio Code.
+On the left hand panel, you will now see an Azure icon.  Select on this icon and a control panel for Azure services will appear.  Choose `Sign in to Azure...` under any service to complete the sign in process for the Azure tools in Visual Studio Code.
 
 ![Screenshot of the Visual Studio Code showing how to login the Azure tools to Azure](./media/visual-studio-code-azure-login.png)
 

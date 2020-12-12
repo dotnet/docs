@@ -22,7 +22,7 @@ You can create an [Azure account for free](https://azure.microsoft.com/free/dotn
 
 ## Option 3: Use a corporate account
 
-If you are using Azure at work, talk to your company's cloud administrator to get your Azure credentials and then login to your account with the [Azure Portal](https://portal.azure.com).
+If you are using Azure at work, talk to your company's cloud administrator to get your Azure credentials and then sign in to your account with the [Azure Portal](https://portal.azure.com).
 
 ## Next Steps
 

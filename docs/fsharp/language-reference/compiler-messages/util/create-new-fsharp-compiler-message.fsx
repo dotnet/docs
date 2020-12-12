@@ -1,5 +1,5 @@
 (*
-Can be invoked from any directory, like this  
+Change the `messageNumber` and `messageTitle` and invoke from any directory, like this  
 `dotnet fsi ./pathToFile/create-new-fsharp-compiler-message.fsx`
 
 - creates a .md file with title, date, and SEO keywords

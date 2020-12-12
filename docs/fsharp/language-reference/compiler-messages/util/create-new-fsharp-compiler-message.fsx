@@ -5,6 +5,10 @@ Can be invoked from any directory, like this
 - creates a .md file with title, date, and SEO keywords
 - adds the .md file to toc.yml in the right order
 - creates an .fsx file for code snippets referenced in the .md file
+
+You can find error numbers here:
+- https://github.com/dotnet/fsharp/blob/main/src/fsharp/CompilerDiagnostics.fs#L218-L350
+- https://github.com/dotnet/fsharp/blob/main/src/fsharp/FSComp.txt#L34
 *)
 let messageNumber= "0026"
 let messageTitle= "Message title"

@@ -1,12 +1,12 @@
 ---
-title: Configuring proxies when using the Azure SDK for .NET 
+title: Configure a proxy server when using the Azure SDK for .NET 
 description: Use HTTP[S]_PROXY environment variables to define a proxy for the Azure SDK for .NET
 ms.date: 12/10/2020
 ms.topic: conceptual
 ms.custom: devx-track-dotnet
 ---
 
-# Configuring proxies when using the Azure SDK for .NET
+# Configure a proxy server when using the Azure SDK for .NET
 
 If your organization requires the use of a proxy server to access internet resources, you will need to set an environment variable with the proxy server information to use the Azure SDK for .NET.  
 

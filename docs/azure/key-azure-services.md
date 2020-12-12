@@ -10,7 +10,7 @@ author: daberry
 
 # Key Azure Services for .NET developers
 
-While Azure contains over 100 services, the following Azure services are the services you will use most frequently as a .NET Developer.
+While Azure contains over 100 services, the following Azure services are the services you will use most frequently as a .NET developer.
 
 | **Service** |         | **Description**      |
 | :--:|:------|:------------|

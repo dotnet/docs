@@ -35,7 +35,7 @@ On the left hand panel, you will now see an Azure icon.  Select on this icon and
 
 ![Screenshot of the Visual Studio Code showing how to login the Azure tools to Azure](./media/visual-studio-code-azure-login.png)
 
-### Next Steps
+### Next steps
 
 Next, you will want to install the Azure CLI (Command Line Interface) on your workstation
 

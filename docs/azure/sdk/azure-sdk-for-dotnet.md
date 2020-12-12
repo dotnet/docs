@@ -7,7 +7,7 @@ ms.author: daberry
 author: daberry
 ---
 
-# Azure SDK for .NET Overview
+# Azure SDK for .NET overview
 
 ## What is the Azure SDK for .NET
 

@@ -25,6 +25,6 @@ While Azure contains over 100 services, the following Azure services are the ser
 
 For the full list of Azure products and services, visit the [Azure documentation home page](/azure/?product=all)
 
-### Next Steps
+### Next steps
 
 Start configuring your Azure development environment by [Creating an Azure Account](create-azure-account.md)

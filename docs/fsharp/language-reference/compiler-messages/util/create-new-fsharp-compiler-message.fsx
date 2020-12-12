@@ -3,7 +3,7 @@ Can be invoked from any directory, like this
 `dotnet fsi ./pathToFile/create-new-fsharp-compiler-message.fsx`
 
 - creates a .md file with title, date, and SEO keywords
-- adds the .md file to toc.yml
+- adds the .md file to toc.yml in the right order
 - creates an .fsx file for code snippets referenced in the .md file
 *)
 let messageNumber= "0026"
@@ -53,20 +53,33 @@ File.WriteAllText(currentDirectory + "/../" + mdFilename, mdContents, Text.Encod
 /// Table of Contents entry
 printfn "Appending entry to toc.yml"
 
-let tocText = 
-    sprintf 
-        "
-  - name: %s - %s
-    href: ./%s"
-        prefixedMessageNumber
-        messageTitle
-        mdFilename
-
 let tocContents = 
-    File.ReadAllText(currentDirectory + "/../toc.yml")
-        .TrimEnd() + tocText + "\n"
+    File.ReadAllLines(currentDirectory + "/../toc.yml")
 
-File.WriteAllText(currentDirectory + "/../toc.yml", tocContents)
+let header = Array.take 3 tocContents
+
+let tocText =
+    let name = sprintf "  - name: %s - %s" prefixedMessageNumber messageTitle
+    let href = sprintf "    href: ./%s" mdFilename
+    [| name; href |]
+
+let body =
+    tocContents
+    |> Array.skip 3
+    |> Array.chunkBySize 2
+    |> Array.append [| tocText |]
+    |> Array.sort
+
+let sb = Text.StringBuilder()
+
+header |> Array.iter (sb.AppendLine >> ignore)
+
+body
+|> Array.iter (fun a -> 
+    sb.AppendLine a.[0] |> ignore
+    sb.AppendLine a.[1] |> ignore)
+
+File.WriteAllText(currentDirectory + "/../toc.yml", sb.ToString())
 
 /// F# script file to reference in .md file
 printfn "Writing %s" fsxFilename

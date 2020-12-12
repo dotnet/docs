@@ -1,5 +1,5 @@
 ---
-title: Key Azure Services for .NET Developers
+title: Key Azure Services for .NET developers
 description: Azure has over 100 services, but this article focuses on the ~8 or so services used by .NET developers most frequently
 ms.date: 11/30/2020
 ms.topic: conceptual

@@ -17,7 +17,7 @@ The Azure SDK for .NET is available as series of NuGet packages that can be used
 
 ![Diagram showing how .NET applications use the Azure SDK to access Azure services](./media/azure-sdk-for-dotnet-overview.png)
 
-## Using the Azure SDK for .NET in your applications
+## Use the Azure SDK for .NET in your applications
 
 To use an Azure SDK package in one of your .NET applications, you want to follow these steps.
 

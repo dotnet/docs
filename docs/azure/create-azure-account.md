@@ -1,5 +1,5 @@
 ---
-title: Create an Azure Account
+title: Create an Azure account
 description: To use Azure, you need an Azure account.  This article covers the three most common ways to sign up for an Azure account.
 ms.date: 11/30/2020
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.author: daberry
 author: daberry
 ---
 
-# Create an Azure Subscription
+# Create an Azure account
 
 To use Azure, you need an Azure account.  Your Azure account is the credential you use to sign into Azure services like the [Azure Portal](https://portal.azure.com) or [Cloud Shell](https://shell.azure.com).
 

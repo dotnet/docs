@@ -179,7 +179,7 @@ module M =
         (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         =
-            // ... the body of the method follows
+        // ... the body of the method follows
 ```
 
 This also applies to members, constructors, and parameters using tuples:
@@ -192,7 +192,7 @@ type TM() =
             aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
             aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
         ) =
-            // ... the body of the method
+        // ... the body of the method
 
 type TC
     (
@@ -200,7 +200,7 @@ type TC
         aSecondVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
         aThirdVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse
     ) =
-        // ... the body of the class follows
+    // ... the body of the class follows
 ```
 
 If the parameters are currified or there's an explicit return type annotation, it is preferable to place the `=` character on a new line:
@@ -213,7 +213,7 @@ type C() =
             aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
             aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
         ) : AReturnType =
-            // ... the body of the method
+        // ... the body of the method
     member _.LongMethodWithLotsOfCurrifiedParams
         (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)

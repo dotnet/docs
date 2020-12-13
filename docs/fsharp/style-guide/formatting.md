@@ -219,7 +219,7 @@ type C() =
         (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         =
-            // ... the body of the method
+        // ... the body of the method
 ```
 
 This is a way to avoid too long lines (in case return type might have long name) and have less line-damage when adding parameters.

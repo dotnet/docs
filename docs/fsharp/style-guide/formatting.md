@@ -832,11 +832,27 @@ with
 
 ## Formatting function parameter application
 
-In general, most function parameter application is done on the same line.
-
-If you wish to apply parameters to a function on a new line, indent them by one scope.
+In general, most function parameter application is done on the same line:
 
 ```fsharp
+let x = sprintf "\t%s - %i\n\r" x.IngredientName x.Quantity
+
+let printListWithOffset a list1 =
+    List.iter (fun elem -> printfn $"%d{a + elem}") list1
+```
+
+When pipelines are concerned, the same is typically also true, where a curried function is applied as an argument on the same line:
+
+```
+let printListWithOffsetPiped a list1 =
+    list1
+    |> List.iter (fun elem -> printfn $"%d{a + elem}")
+```
+
+However, you may wish to apply parameters to a function on a new line, as a matter of readability or because the list of arguments or the argument names are too long. In that case, indent with one scope:
+
+```fsharp
+
 // OK
 sprintf "\t%s - %i\n\r"
      x.IngredientName x.Quantity
@@ -854,23 +870,23 @@ let printVolumes x =
         (convertVolumeImperialPint x)
 ```
 
-The same guidelines apply for lambda expressions as function arguments. If the body of a lambda expression, the body can have another line, indented by one scope
+For lambda expressions, you may also want to consider placing the body of a lambda expression on a new line, indented by one scope, if it is long enough:
 
 ```fsharp
-let printListWithOffset a list1 =
-    List.iter
-        (fun elem -> printfn $"%d{a + elem}")
-        list1
-
-// OK if lambda body is long enough
 let printListWithOffset a list1 =
     List.iter
         (fun elem ->
             printfn $"%d{a + elem}")
         list1
+
+let printListWithOffsetPiped a list1 =
+    list1
+    |> List.iter
+        (fun elem ->
+            printfn $"%d{a + elem}")
 ```
 
-However, if the body of a lambda expression is more than one line, consider factoring it out into a separate function rather than have a multi-line construct applied as a single argument to a function.
+If the body of a lambda expression is multiple lines long, you should consider refactoring it into a locally-scoped function.
 
 ### Formatting infix operators
 

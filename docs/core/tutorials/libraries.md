@@ -3,7 +3,7 @@ title: Develop libraries with the .NET CLI
 description: Learn how to create .NET libraries using the .NET CLI. You'll create a library that supports multiple frameworks.
 author: cartermp
 ms.topic: how-to
-ms.date: 05/01/2017
+ms.date: 12/14/2020
 ---
 # Develop libraries with the .NET CLI
 
@@ -29,7 +29,7 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 
 ## How to target .NET 5.0 or .NET Standard
 
-You control your project's target framework by adding it to your project file (*.csproj* or *.fsproj*). For guidance on how to choose between targeting .NET 5.0 or .NET Standard see [.NET 5 and .NET Standard](../../standard/net-standard).
+You control your project's target framework by adding it to your project file (*.csproj* or *.fsproj*). For guidance on how to choose between targeting .NET 5.0 or .NET Standard see [.NET 5 and .NET Standard](../../standard/net-standard.md#net-5-and-net-standard).
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

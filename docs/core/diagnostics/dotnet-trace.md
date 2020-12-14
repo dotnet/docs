@@ -129,7 +129,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
 
 > [!NOTE]
-> Stopping the trace may take a long time for large applications. The runtime needs to send over "rundown information" which needs to iterate through the type cache for all managed code that was captured in the trace. 
+> Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.
 
 ## dotnet-trace convert
 
@@ -156,6 +156,9 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
 - **`-o|--output <output-filename>`**
 
   Output filename. Extension of target format will be added.
+
+> [!NOTE]
+> Converting `nettrace` files to `chromium` or `speedscope` files is irreversible - `speedscope` or `chromium` files do not have all the information to reconstruct `nettrace` file. The `convert` command still preserves the original `nettrace` file, so do not delete this file if you will be opening the nettrace file in the future.
 
 ## dotnet-trace ps
 

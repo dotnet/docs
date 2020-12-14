@@ -89,7 +89,7 @@ File.WriteAllText(currentDirectory + "/../toc.yml", sb.ToString())
 printfn "Writing %s" fsxFilename
 
 let fsxText = 
-    """(* comment *)
+    """// comment
 let someCode = 5
 printfn "%i" someCode
     """

@@ -6,14 +6,14 @@ ms.date: 12/15/2020
 
 # Create gRPC client libraries
 
-It isn't necessary to distribute client libraries for a gRPC application. You can create a shared library of `.proto` files within your organization, and other teams can use those files to generate client code in their own projects. But if you have a private NuGet repository and many other teams are using .NET, you can create and publish client NuGet packages as part of your service project. This can be a good way of sharing and promoting your service.
+It isn't necessary to distribute client libraries for a gRPC application. You can create a shared library of `.proto` files within your organization, and other teams can use those files to generate client code in their own projects. But if you have a private NuGet repository and many other teams are using .NET, you can create and publish client NuGet packages as part of your service project. This approach can be a good way of sharing and promoting your service.
 
-One advantage of distributing a client library is that you can enhance the generated gRPC and Protobuf classes with helpful "convenience" methods and properties. In the client code, as in the server, all the classes are declared as `partial`, so you can extend them without editing the generated code. This means it's easy to add constructors, methods, and calculated properties to the basic types.
+One advantage of distributing a client library is that you can enhance the generated gRPC and Protobuf classes with helpful "convenience" methods and properties. In the client code, as in the server, all the classes are declared as `partial`, so you can extend them without editing the generated code. This behavior means it's easy to add constructors, methods, and calculated properties to the basic types.
 
 > [!CAUTION]
 > You shouldn't use custom code to provide essential functionality. You don't want to restrict that essential functionality to .NET teams that use the shared library, and not provide it to teams that use other languages or platforms, such as Python or Java.
 
-Ensure that as many teams as possible can access your gRPC service. The best way to do this is to share `.proto` files so developers can generate their own clients. This is particularly true in a multi-platform environment, where different teams frequently use different programming languages and frameworks, or where your API is externally accessible.
+Ensure that as many teams as possible can access your gRPC service. The best way to do this functionality is to share `.proto` files so developers can generate their own clients. This approach is particularly true in a multi-platform environment, where different teams frequently use different programming languages and frameworks, or where your API is externally accessible.
 
 ## Useful extensions
 
@@ -23,7 +23,7 @@ With the .NET gRPC client libraries, there's a `ReadAllAsync` extension method f
 
 ### IObservable
 
-The `IObservable<T>` interface is the "reactive" inverse of `IEnumerable<T>`. Rather than pulling items from a stream, the reactive approach lets the stream push items to a subscriber. This is very similar to gRPC streams, and it's easy to wrap an `IObservable<T>` interface around an `IAsyncStreamReader<T>` interface.
+The `IObservable<T>` interface is the "reactive" inverse of `IEnumerable<T>`. Rather than pulling items from a stream, the reactive approach lets the stream push items to a subscriber. This behavior is very similar to gRPC streams, and it's easy to wrap an `IObservable<T>` interface around an `IAsyncStreamReader<T>` interface.
 
 This code is longer than the `IAsyncEnumerable<T>` code, because C# doesn't have built-in support for working with observables. You have to create the implementation class manually. It's a generic class, though, so a single implementation works across all types.
 

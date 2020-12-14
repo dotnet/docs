@@ -29,7 +29,7 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 
 ## How to target .NET 5.0 or .NET Standard
 
-For guidance on how to choose between targeting .NET 5.0 or .NET Standard see [.NET 5 and .NET Standard](../../standard/net-standard. You control your project's target framework by adding it to your project file (`.csproj` or `.fsproj`).
+You control your project's target framework by adding it to your project file (*.csproj* or *.fsproj*). For guidance on how to choose between targeting .NET 5.0 or .NET Standard see [.NET 5 and .NET Standard](../../standard/net-standard).
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

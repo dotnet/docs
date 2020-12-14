@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "properties [C#], abstract"
   - "abstract properties [C#]"
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.assetid: 672a90eb-47b9-4ae0-9914-af53852fddcb
 ---
 # How to define abstract properties (C# Programming Guide)

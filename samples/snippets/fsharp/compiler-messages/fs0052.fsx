@@ -5,5 +5,5 @@ System.DateTime.Now.ToString() |> printfn "%s"
 let now = System.DateTime.Now
 now.ToString() |> printfn "%s"
 
-(* no warn 2 *)
+// No warn 2
 System.DateTime.Now |> printfn "%A"

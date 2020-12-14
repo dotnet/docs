@@ -58,9 +58,9 @@ A class can contain declarations of the following members:
 
 - [Operators](../operators/index.md)
 
-- [Events](../../programming-guide/events/index.md)
+- [Events](../../events-overview.md)
 
-- [Delegates](../../programming-guide/delegates/index.md)
+- [Delegates](../../delegates-overview.md)
 
 - [Classes](../../programming-guide/classes-and-structs/classes.md)
 

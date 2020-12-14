@@ -5,7 +5,7 @@ ms.date: 08/06/2020
 ---
 # Program building blocks
 
-The types described in the previous article are built using these building blocks: [***members***](../programming-guide/classes-and-structs/members.md), [***expressions***, and ***statements***](../programming-guide/statements-expressions-operators/index.md).
+The types described in the previous article are built using these building blocks: [***members***](../programming-guide/classes-and-structs/members.md), ***expressions***, and [***statements***](../programming-guide/statements-expressions-operators/statements.md).
 
 ## Members
 

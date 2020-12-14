@@ -51,7 +51,7 @@ Classes and structs are two of the basic constructs of the common type system in
   
 - [Constructors](./constructors.md)  
   
-- [Events](../events/index.md)  
+- [Events](../../events-overview.md)  
   
 - [Finalizers](./destructors.md)  
   

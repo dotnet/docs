@@ -22,5 +22,4 @@ An event is a special kind of multicast delegate that can only be invoked from w
   
 ## See also
 
-- [Events](./index.md)
 - [event](../../language-reference/keywords/event.md)

@@ -55,7 +55,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 - [Finalizers](./destructors.md)  
   
-- [Events](../events/index.md)  
+- [Events](../../events-overview.md)  
   
 ## See also
 

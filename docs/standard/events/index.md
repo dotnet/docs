@@ -71,7 +71,7 @@ The following example shows an event handler method named `c_ThresholdReached` t
   
 ## Static and dynamic event handlers  
 
-.NET allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](../../visual-basic/programming-guide/language-features/events/index.md) (in Visual Basic) and [Events](../../csharp/programming-guide/events/index.md) (in C#).  
+.NET allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](../../visual-basic/programming-guide/language-features/events/index.md) (in Visual Basic) and [Events](../../csharp/events-overview.md) (in C#).  
   
 ## Raising multiple events
 
@@ -94,6 +94,5 @@ The following example shows an event handler method named `c_ThresholdReached` t
 - <xref:System.EventArgs>
 - <xref:System.Delegate>
 - [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)
-- [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)
 - [Events and routed events overview (UWP apps)](/windows/uwp/xaml-platform/events-and-routed-events-overview)
 - [Events in Windows Store 8.x apps](/previous-versions/windows/apps/hh758286(v=win.10))

@@ -56,7 +56,5 @@ By providing your own accessors, you can specify whether the two events are repr
   
 ## See also
 
-- [Events](./index.md)
-- [Delegates](../delegates/index.md)
 - [Explicit Interface Implementation](../interfaces/explicit-interface-implementation.md)
 - [How to raise base class events in derived classes](./how-to-raise-base-class-events-in-derived-classes.md)

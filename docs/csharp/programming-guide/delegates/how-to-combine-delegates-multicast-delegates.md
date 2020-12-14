@@ -20,4 +20,3 @@ This example demonstrates how to create multicast delegates. A useful property o
 ## See also
 
 - <xref:System.MulticastDelegate>
-- [Events](../events/index.md)

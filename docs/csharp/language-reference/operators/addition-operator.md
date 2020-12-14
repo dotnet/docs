@@ -39,8 +39,6 @@ For operands of the same [delegate](../builtin-types/reference-types.md#the-dele
 
 To perform delegate removal, use the [`-` operator](subtraction-operator.md#delegate-removal).
 
-For more information about delegate types, see [Delegates](../../programming-guide/delegates/index.md).
-
 ## Addition assignment operator +=
 
 An expression using the `+=` operator, such as
@@ -76,6 +74,5 @@ For more information, see the [Unary plus operator](~/_csharplang/spec/expressio
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [How to concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
-- [Events](../../programming-guide/events/index.md)
 - [Arithmetic operators](arithmetic-operators.md)
 - [- and -= operators](subtraction-operator.md)

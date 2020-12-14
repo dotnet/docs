@@ -38,8 +38,6 @@ In this example, the `break` statement is used to break out of an inner nested l
 
 [!code-csharp[csrefKeywordsJump#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#7)]
 
-## Example
-
 In this example, the `break` statement is only used to break out of the current branch during each iteration of the loop. The loop itself is unaffected by the instances of `break` that belong to the nested [switch](./switch.md) statement.
 
 [!code-csharp[csrefKeywordsJump#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#8)]

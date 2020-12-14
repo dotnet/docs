@@ -40,8 +40,6 @@ For operands of the same [delegate](../builtin-types/reference-types.md#the-dele
 
 To combine delegates, use the [`+` operator](addition-operator.md#delegate-combination).
 
-For more information about delegate types, see [Delegates](../../programming-guide/delegates/index.md).
-
 ## Subtraction assignment operator -=
 
 An expression using the `-=` operator, such as
@@ -76,6 +74,5 @@ For more information, see the [Unary minus operator](~/_csharplang/spec/expressi
 
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
-- [Events](../../programming-guide/events/index.md)
 - [Arithmetic operators](arithmetic-operators.md)
 - [+ and += operators](addition-operator.md)

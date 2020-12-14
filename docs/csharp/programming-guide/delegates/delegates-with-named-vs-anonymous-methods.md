@@ -23,20 +23,16 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) can be a
   
  Although the delegate can use an [out](../../language-reference/keywords/out-parameter-modifier.md) parameter, we do not recommend its use with multicast event delegates because you cannot know which delegate will be called.  
   
-## Example 1  
+## Examples  
 
  The following is a simple example of declaring and using a delegate. Notice that both the delegate, `Del`, and the associated method, `MultiplyNumbers`, have the same signature  
   
  [!code-csharp[csProgGuideDelegates#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#2)]  
   
-## Example 2  
-
  In the following example, one delegate is mapped to both static and instance methods and returns specific information from each.  
   
  [!code-csharp[csProgGuideDelegates#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#3)]  
   
 ## See also
 
-- [Delegates](./index.md)
 - [How to combine delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)
-- [Events](../events/index.md)

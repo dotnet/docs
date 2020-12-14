@@ -33,4 +33,3 @@ In addition to the rules, there are a number of identifier [naming conventions](
 - [Structure types](../../language-reference/builtin-types/struct.md)
 - [Namespaces](../namespaces/index.md)
 - [Interfaces](../interfaces/index.md)
-- [Delegates](../delegates/index.md)

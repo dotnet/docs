@@ -24,7 +24,7 @@ C# programs can consist of one or more files. Each file can contain zero or more
   
 - [Interfaces](../interfaces/index.md)  
   
-- [Delegates](../delegates/index.md)  
+- [Delegates](../../delegates-overview.md)  
   
 ## C# Language Specification  
 

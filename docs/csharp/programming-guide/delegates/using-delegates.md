@@ -56,7 +56,7 @@ Because delegate types are derived from `System.Delegate`, the methods and prope
 
 Delegates with more than one method in their invocation list derive from <xref:System.MulticastDelegate>, which is a subclass of `System.Delegate`. The above code works in either case because both classes support `GetInvocationList`.
 
-Multicast delegates are used extensively in event handling. Event source objects send event notifications to recipient objects that have registered to receive that event. To register for an event, the recipient creates a method designed to handle the event, then creates a delegate for that method and passes the delegate to the event source. The source calls the delegate when the event occurs. The delegate then calls the event handling method on the recipient, delivering the event data. The delegate type for a given event is defined by the event source. For more, see [Events](../events/index.md).
+Multicast delegates are used extensively in event handling. Event source objects send event notifications to recipient objects that have registered to receive that event. To register for an event, the recipient creates a method designed to handle the event, then creates a delegate for that method and passes the delegate to the event source. The source calls the delegate when the event occurs. The delegate then calls the event handling method on the recipient, delivering the event data. The delegate type for a given event is defined by the event source. For more, see [Events](../../events-overview.md).
 
 Comparing delegates of two different types assigned at compile-time will result in a compilation error. If the delegate instances are statically of the type `System.Delegate`, then the comparison is allowed, but will return false at run time. For example:
 
@@ -64,8 +64,6 @@ Comparing delegates of two different types assigned at compile-time will result 
 
 ## See also
 
-- [Delegates](./index.md)
 - [Using Variance in Delegates](../concepts/covariance-contravariance/using-variance-in-delegates.md)
 - [Variance in Delegates](../concepts/covariance-contravariance/variance-in-delegates.md)
 - [Using Variance for Func and Action Generic Delegates](../concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
-- [Events](../events/index.md)

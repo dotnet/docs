@@ -154,7 +154,7 @@ That is a thread-safe way to ensure that only a non-null `handler` is invoked. B
 
 ## Invocation expression ()
 
-Use parentheses, `()`, to call a [method](../../programming-guide/classes-and-structs/methods.md) or invoke a [delegate](../../programming-guide/delegates/index.md).
+Use parentheses, `()`, to call a [method](../../programming-guide/classes-and-structs/methods.md) or invoke a [delegate](../../delegates-overview.md).
 
 The following example demonstrates how to call a method, with or without arguments, and invoke a delegate:
 

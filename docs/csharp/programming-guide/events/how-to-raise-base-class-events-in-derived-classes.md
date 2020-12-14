@@ -21,7 +21,5 @@ The following simple example shows the standard way to declare events in a base 
   
 ## See also
 
-- [Events](./index.md)
-- [Delegates](../delegates/index.md)
 - [Access Modifiers](../classes-and-structs/access-modifiers.md)
 - [Creating Event Handlers in Windows Forms](/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms)

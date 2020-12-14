@@ -112,7 +112,7 @@ For more information, see [base](../../language-reference/keywords/base.md).
 - [Inheritance](./inheritance.md)
 - [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md)
 - [Methods](./methods.md)
-- [Events](../events/index.md)
+- [Events](../../events-overview.md)
 - [Properties](./properties.md)
 - [Indexers](../indexers/index.md)
 - [Types](../types/index.md)

@@ -36,5 +36,4 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) can defi
 - [Generic Methods](./generic-methods.md)
 - [Generic Classes](./generic-classes.md)
 - [Generic Interfaces](./generic-interfaces.md)
-- [Delegates](../delegates/index.md)
 - [Generics](../../../standard/generics/index.md)

@@ -1,6 +1,6 @@
 ---
 title: A Tour of C# - Major language areas
-description: New to C#? Learn the basics of the language.
+description: New to C#? Learn the major functional areas in the C# language.
 ms.date: 08/06/2020
 ---
 # Major language areas

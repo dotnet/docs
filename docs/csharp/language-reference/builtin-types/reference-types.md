@@ -128,7 +128,7 @@ public delegate int AnotherDelegate(MyType m, long num);
 
 In .NET, `System.Action` and `System.Func` types provide generic definitions for many common delegates. You likely don't need to define new custom delegate types. Instead, you can create instantiations of the provided generic types.
 
-A `delegate` is a reference type that can be used to encapsulate a named or an anonymous method. Delegates are similar to function pointers in C++; however, delegates are type-safe and secure. For applications of delegates, see [Delegates](../../programming-guide/delegates/index.md) and [Generic Delegates](../../programming-guide/generics/generic-delegates.md). Delegates are the basis for [Events](../../programming-guide/events/index.md). A delegate can be instantiated by associating it either with a named or anonymous method.
+A `delegate` is a reference type that can be used to encapsulate a named or an anonymous method. Delegates are similar to function pointers in C++; however, delegates are type-safe and secure. For applications of delegates, see [Delegates](../../delegates-overview.md) and [Generic Delegates](../../programming-guide/generics/generic-delegates.md). Delegates are the basis for [Events](../../events-overview.md). A delegate can be instantiated by associating it either with a named or anonymous method.
 
 The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together.
 
@@ -166,7 +166,6 @@ The following example uses `dynamic` in several declarations. The `Main` method 
 
 - [C# Reference](../index.md)
 - [C# Keywords](../keywords/index.md)
-- [Events](../../programming-guide/events/index.md)
 - [Using Type dynamic](../../programming-guide/types/using-type-dynamic.md)
 - [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)
 - [Basic String Operations](../../../standard/base-types/basic-string-operations.md)

@@ -68,7 +68,3 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
      A delegate can be either called synchronously, as in this example, or asynchronously by using `BeginInvoke` and `EndInvoke` methods.  
   
-## See also
-
-- [Events](../events/index.md)
-- [Delegates](./index.md)

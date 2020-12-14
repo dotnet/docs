@@ -14,30 +14,6 @@ ms.date: 11/14/2020
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
-## Supported distributions
-
-The following table is a list of currently supported .NET releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
-
-- A ✔️ indicates that the version of Fedora or .NET is still supported.
-- A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
-- When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
-
-| .NET Version  | Fedora 33 ✔️ | 32 ✔️ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
-| ------------  | ---------: | --: | --: | --: | --: | --: | --: |
-| .NET 5.0      | ✔️        | ✔️ | ❌|❌ |❌ |❌  |❌ |
-| .NET Core 3.1 | ✔️        | ✔️ | ✔️|✔️ |✔️ |❌  |❌ |
-| .NET Core 2.1 | ✔️        | ✔️ | ✔️|✔️ |✔️ |✔️  |✔️ |
-
-The following versions of .NET are no longer supported. The downloads for these still remain published:
-
-- 3.0
-- 2.2
-- 2.0
-
-## Remove preview versions
-
-[!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
-
 ## Install .NET 5.0
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -65,6 +41,30 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 The latest version of .NET available in the default package repositories for Fedora is .NET Core 3.1.
 
 [!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
+
+## Supported distributions
+
+The following table is a list of currently supported .NET releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
+
+- A ✔️ indicates that the version of Fedora or .NET is still supported.
+- A ❌ indicates that the version of Fedora or .NET isn't supported on that Fedora release.
+- When both a version of Fedora and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| .NET Version  | Fedora 33 ✔️ | 32 ✔️ | 31 ❌ | 30 ❌ | 29 ❌ | 28 ❌ | 27 ❌ |
+| ------------  | ---------: | --: | --: | --: | --: | --: | --: |
+| .NET 5.0      | ✔️        | ✔️ | ❌|❌ |❌ |❌  |❌ |
+| .NET Core 3.1 | ✔️        | ✔️ | ✔️|✔️ |✔️ |❌  |❌ |
+| .NET Core 2.1 | ✔️        | ✔️ | ✔️|✔️ |✔️ |✔️  |✔️ |
+
+The following versions of .NET are no longer supported. The downloads for these still remain published:
+
+- 3.0
+- 2.2
+- 2.0
+
+## Remove preview versions
+
+[!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
 ## Dependencies
 

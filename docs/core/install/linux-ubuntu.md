@@ -3,12 +3,12 @@ title: Install .NET on Ubuntu - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 11/14/2020
 ---
 
 # Install the .NET SDK or the .NET Runtime on Ubuntu
 
-.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an Ubuntu version falls out of support, .NET is no longer supported with that version. However, these instructions may help you to get .NET running on those versions, even though it isn't supported.
+.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an Ubuntu version falls out of support, .NET is no longer supported with that version.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 

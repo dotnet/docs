@@ -13,4 +13,4 @@ The following APIs are marked obsolete, starting in .NET 5.0. Use of these APIs 
 
 ## Suppress the warning
 
-If you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
+If you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](../syslib-obsoletions.md#suppress-warnings).

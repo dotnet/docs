@@ -53,13 +53,17 @@ sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com
 
 [!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
-## Install
+## Install .NET Core 3.1
 
 .NET 5.0 isn't yet available in the default package repositories. For more information about installing .NET 5.0, see [Install .NET 5.0](#install-net-50)
 
 The latest version of .NET available in the default package repositories for Fedora is .NET Core 3.1.
 
 [!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
+
+## Dependencies
+
+[!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
 ## Install on older Fedora releases
 
@@ -102,10 +106,6 @@ This section provides information on common errors you may get while using the p
 ### Failed to fetch
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
-
-## Dependencies
-
-[!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
 ## Next steps
 

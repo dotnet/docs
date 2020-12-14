@@ -17,8 +17,8 @@ The following table summarizes the changes for <xref:System.Globalization.TextIn
 
 | | .NET Framework<br/>.NET Core 1.0 - 3.1 | .NET 5.0 | .NET 5.0.1 |
 -|-|-|-
-| **Windows** | Obtain from NLS | Obtain from ICU (decimal separator)<br/>Can switch back to NLS. | Equivalent to NLS |
-| **Linux and macOS** | Obtain from ICU (decimal separator) | Obtain from ICU (decimal separator) | Equivalent to NLS |
+| **Windows** | Obtain from NLS | Decimal separator from ICU.<br/>Can switch back to NLS. | Equivalent to NLS |
+| **Linux and macOS** | Decimal separator from ICU | Decimal separator from ICU | Equivalent to NLS |
 
 ## Version introduced
 

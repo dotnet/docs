@@ -1,17 +1,24 @@
 ---
 title: "Breaking change: TextInfo.ListSeparator value change"
-description: Learn about the .NET 5.0 breaking change in where the default value of TextInfo.ListSeparator was changed between versions 5.0 and 5.0.1.
+description: Learn about the .NET 5.0 breaking change where the default value of TextInfo.ListSeparator was changed between versions 5.0 and 5.0.1.
 ms.date: 12/10/2020
 ---
 # TextInfo.ListSeparator values changed
 
-The default <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values for different cultures have been reverted to their pre-.NET 5.0 values on Windows.
+The default <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values for different cultures have changed on all operating systems.
 
 ## Change description
 
-In .NET 5.0.0, as part of the [switch from NLS to ICU libraries](icu-globalization-api.md), the default <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values for different cultures changed on Windows. The decimal separator for a given culture was used as the <xref:System.Globalization.TextInfo.ListSeparator> value. Decimal separator values are obtained from International Components for Unicode (ICU). On Linux and macOS, there was no change in <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values.
+In .NET 5.0.0, as part of the [switch from NLS to ICU libraries](icu-globalization-api.md), the default <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values for different cultures changed on Windows. Decimal separator values, obtained from International Components for Unicode (ICU), were used as the <xref:System.Globalization.TextInfo.ListSeparator> values. On Linux and macOS, there was no change in <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values; that is, they continued to use decimal separator values.
 
-Starting in .NET 5.0.1, the values for <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> are identical to the values in .NET Framework and .NET Core 1.0 - 3.1 on Windows. That is, the <xref:System.Globalization.TextInfo.ListSeparator> values are obtained from National Language Support (NLS) instead of ICU (via the decimal separator value).
+For all operating systems in .NET 5.0.1 and later versions, the values for <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> are equivalent to the values that would be obtained from NLS. For Windows, this means the values are equivalent to what they were in .NET Framework and .NET Core 1.0 - 3.1. For Linux and macOS, the <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values now match the <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values for Windows.
+
+The following table summarizes the changes for <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values.
+
+| | .NET Framework<br/>.NET Core 1.0 - 3.1 | .NET 5.0 | .NET 5.0.1 |
+-|-|-|-
+| **Windows** | Obtain from NLS | Obtain from ICU (decimal separator)<br/>Can switch back to NLS. | Equivalent to NLS |
+| **Linux and macOS** | Obtain from ICU (decimal separator) | Obtain from ICU (decimal separator) | Equivalent to NLS |
 
 ## Version introduced
 
@@ -23,7 +30,7 @@ Developers reported that they use the <xref:System.Globalization.TextInfo.ListSe
 
 ## Recommended action
 
-Unless you updated your parsing code to handle the list separator value changes in .NET 5.0.0, no action is necessary on your part. If you implemented new CSV-parsing functionality in .NET 5.0.0 using <xref:System.Globalization.TextInfo.ListSeparator>, update your code to account for the <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> changes in .NET 5.0.1.
+If your code relies on the previous decimal separator values, you can hardcode the desired <xref:System.Globalization.TextInfo.ListSeparator?displayProperty=nameWithType> values.
 
 ## Affected APIs
 

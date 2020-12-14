@@ -1,4 +1,4 @@
-(* warn *)
+// warn
 System.DateTime.Now.ToString() |> printfn "%s"
 
 (* no warn 1 *)

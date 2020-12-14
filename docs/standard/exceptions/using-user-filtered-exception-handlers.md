@@ -1,5 +1,5 @@
 ---
-title: "Using User-Filtered Exception Handlers"
+title: "Use user-filtered exception handlers"
 description: "Learn how to use user-filtered exception handlers in C# and Visual Basic."
 ms.date: 12/14/2020
 helpviewer_keywords: 
@@ -9,7 +9,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ---
-# Using User-Filtered Exception Handlers
+# Use user-filtered exception handlers
 
 User-filtered exception handlers catch and handle exceptions based on requirements you define for the exception. These handlers use the `catch` statement with the `when` keyword (`Catch` and `When` in Visual Basic).  
   

@@ -264,12 +264,12 @@ The following options let you specifically collect the GC events from the runtim
 
 * `perfcollect collect -gccollectonly`
 
-Collect only minimal set of GC collection events. This is the least verbose GC eventing collection profile with the lowest impact to the target app's performance. This command is analogous to `PerfView.exe /GCCollectOnly collect` command in PerfView.
+Collect only a minimal set of GC Collection events. This is the least verbose GC eventing collection profile with the lowest impact on the target app's performance. This command is analogous to `PerfView.exe /GCCollectOnly collect` command in PerfView.
 
 * `perfcollect collect -gconly`
 
-Collect more verbose GC collection events with JIT, Loader and Exception events. This requests more verbose events (such as the allocation information and GC join information) to the runtime and will have more impact to the target app's performance than `-gccollectonly` option. This command is analogous to `PerfView.exe /GCOnly collect` command in PerfView.
+Collect more verbose GC collection events with JIT, Loader, and Exception events. This requests more verbose events (such as the allocation information and GC join information) and will have more impact to the target app's performance than `-gccollectonly` option. This command is analogous to `PerfView.exe /GCOnly collect` command in PerfView.
 
 * `perfcollect collect -gcwithheap`
 
-Collect the most verbose GC collection events which tracks the heap survival and movements as well. This gives in-depth analysis of the GC behavior but will incur high performance cost as each GC can take more than two times longer. It is recommended you understand the performance implication of using this trace option when tracing in production servers.
+Collect the most verbose GC collection events which tracks the heap survival and movements as well. This gives in-depth analysis of the GC behavior but will incur high performance cost as each GC can take more than two times longer. It is recommended you understand the performance implication of using this trace option when tracing in production environments.

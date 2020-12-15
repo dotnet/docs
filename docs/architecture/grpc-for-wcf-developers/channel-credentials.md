@@ -20,7 +20,7 @@ Configure certificate authentication both at the host level (for example, on the
 
 ### Configure certificate validation on Kestrel
 
-You can configure Kestrel (the ASP.NET Core HTTP server) to require a client certificate, and optionally to carry out some validation of the supplied certificate, before accepting incoming connections. You do this configuration in the `CreateWebHostBuilder` method of the `Program` class, rather than in `Startup`.
+You can configure Kestrel (the ASP.NET Core HTTP server) to require a client certificate, and optionally to carry out some validation of the supplied certificate, before accepting incoming connections. You specify this configuration in the `CreateWebHostBuilder` method of the `Program` class, rather than in `Startup`.
 
 ```csharp
 public static IHostBuilder CreateHostBuilder(string[] args) =>

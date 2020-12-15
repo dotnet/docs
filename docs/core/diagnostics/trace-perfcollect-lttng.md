@@ -245,3 +245,31 @@ After this, you should get symbolic names for the native dlls when you run `perf
 ## Collect in a Docker container
 
 For more information on how to use `perfcollect` in container environments, see [Collect diagnostics in containers](./diagnostics-in-containers.md).
+
+## Learn more about collection options
+
+You can specify the following optional flags with `perfcollect` to better suit your diagnostic needs.
+
+### Collect for a specific duration
+
+When you want to collect a trace for a specific duration, you can use `-collectsec` option followed by a number specifying the total seconds to collect a trace for.
+
+### Collect threadtime traces
+
+Specifying `-threadtime` with `perfcollect` lets you collect per-thread CPU usage data. This lets you analyze where every thread was spending its CPU time.
+
+### Collect traces for managed memory and garbage collector performance
+
+The following options let you specifically collect the GC events from the runtime.
+
+* `perfcollect collect -gccollectonly`
+
+Collect only a minimal set of GC Collection events. This is the least verbose GC eventing collection profile with the lowest impact on the target app's performance. This command is analogous to `PerfView.exe /GCCollectOnly collect` command in PerfView.
+
+* `perfcollect collect -gconly`
+
+Collect more verbose GC collection events with JIT, Loader, and Exception events. This requests more verbose events (such as the allocation information and GC join information) and will have more impact to the target app's performance than `-gccollectonly` option. This command is analogous to `PerfView.exe /GCOnly collect` command in PerfView.
+
+* `perfcollect collect -gcwithheap`
+
+Collect the most verbose GC collection events which tracks the heap survival and movements as well. This gives in-depth analysis of the GC behavior but will incur high performance cost as each GC can take more than two times longer. It is recommended you understand the performance implication of using this trace option when tracing in production environments.

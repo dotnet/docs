@@ -10,9 +10,14 @@ The following breaking changes are documented on this page:
 | Breaking change | Version introduced |
 | - | - |
 | [Resource manifest file name change](#resource-manifest-file-name-change) | 3.0 |
+| [Design-time builds only return top-level package references](#design-time-builds-only-return-top-level-package-references) | 3.0 |
 
 ## .NET Core 3.0
 
 [!INCLUDE[Resource file names](~/includes/core-changes/msbuild/3.0/resource-manifest-name.md)]
+
+***
+
+[!INCLUDE [design-time-builds-return-top-level-package-refs](../../../includes/core-changes/msbuild/3.0/design-time-builds-return-top-level-package-refs.md)]
 
 ***

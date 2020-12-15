@@ -100,6 +100,7 @@ class BadExample
     static Assembly MyHandler(object source, ResolveEventArgs e)
     {
         Console.WriteLine("Resolving {0}", e.Name);
+        // DO NOT DO THIS: This causes a StackOverflowException
         return Assembly.Load(e.Name);
     }
 }
@@ -138,6 +139,7 @@ Class BadExample
     Shared Function MyHandler(ByVal source As Object, _
                               ByVal e As ResolveEventArgs) As Assembly
         Console.WriteLine("Resolving {0}", e.Name)
+        // DO NOT DO THIS: This causes a StackOverflowException
         Return Assembly.Load(e.Name)
     End Function
 End Class
@@ -163,6 +165,7 @@ internal:
     static Assembly^ MyHandler(Object^ source, ResolveEventArgs^ e)
     {
         Console::WriteLine("Resolving {0}", e->Name);
+        // DO NOT DO THIS: This causes a StackOverflowException
         return Assembly::Load(e->Name);
     }
 };

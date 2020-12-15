@@ -45,14 +45,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## 20.10 ✔️
-
-> [!IMPORTANT]
-> .NET Core 2.1 isn't yet available in the package feed.
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -174,7 +167,11 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## APT update SDK or runtime
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## Use APT to update .NET
 
 When a new patch release is available for .NET, you can simply upgrade it through APT with the following commands:
 

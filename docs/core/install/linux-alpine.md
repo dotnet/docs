@@ -14,6 +14,14 @@ This article describes how to install .NET on Alpine. When an Alpine version fal
 
 There are no installers for Alpine. You must either use the [install script](#scripted-install) or follow the [manual install](#manual-install) instructions.
 
+## Install
+
+There aren't any installers or packages published for Alpine Linux and you must install .NET by one of the following methods:
+
+- [Snap package](linux-snap.md)
+- [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
+- [Manual binary extraction](linux-scripted-manual.md#manual-install)
+
 ## Supported distributions
 
 The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases).
@@ -48,14 +56,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 - libssl1.0 (Alpine v3.8 or lower)
 - libstdc++
 - zlib
-
-## Install
-
-There aren't any installers or packages published for Alpine Linux and you must install .NET by one of the following methods:
-
-- [Snap package](linux-snap.md)
-- [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
-- [Manual binary extraction](linux-scripted-manual.md#manual-install)
 
 ## Next steps
 

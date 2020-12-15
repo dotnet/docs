@@ -36,10 +36,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## openSUSE 15 ✔️
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -53,6 +49,10 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
 [!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
+
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## Troubleshoot the package manager
 

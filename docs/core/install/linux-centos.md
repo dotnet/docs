@@ -39,10 +39,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## CentOS 8 ✔️
 
 .NET 5.0 is available in the default package repositories for CentOS 8.
@@ -58,6 +54,10 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 ```
 
 [!INCLUDE [linux-yum-install-50](includes/linux-install-50-yum.md)]
+
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## Troubleshoot the package manager
 

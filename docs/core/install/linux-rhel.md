@@ -39,10 +39,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
-
-Consult the [Red Hat documentation for .NET](https://access.redhat.com/documentation/net/5.0/) on the steps required to install other releases of .NET.
-
 ## RHEL 8 ✔️
 
 .NET is included in the AppStream repositories for RHEL 8.
@@ -138,6 +134,10 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Run
 ## Dependencies
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
+
+## How to install other versions
+
+Consult the [Red Hat documentation for .NET](https://access.redhat.com/documentation/net/5.0/) on the steps required to install other releases of .NET.
 
 ## Next steps
 

@@ -70,9 +70,9 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
-## Install on older Fedora releases
+## Install on older distributions
 
-Older version of Fedora don't contain .NET Core in the default package repositories. You must install .NET Core through the package manager by first added the Microsoft signing key and Microsoft package repository.
+Older versions of Fedora don't contain .NET Core in the default package repositories. You can install .NET with [snap](linux-snap.md), through the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
 
 01. First, add the Microsoft signing key to your list of trusted keys.
 

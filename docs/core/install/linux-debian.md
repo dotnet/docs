@@ -38,10 +38,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
-
-[!INCLUDE [hack-pkgname](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## Debian 10 ✔️
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
@@ -85,7 +81,11 @@ sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
-## APT update SDK or runtime
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## Use APT to update .NET
 
 When a new patch release is available for .NET, you can simply upgrade it through APT with the following commands:
 

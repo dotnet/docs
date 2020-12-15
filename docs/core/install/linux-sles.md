@@ -35,10 +35,6 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## SLES 15 ✔️
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -66,6 +62,10 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-p
 ```
 
 [!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
+
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## Troubleshoot the package manager
 

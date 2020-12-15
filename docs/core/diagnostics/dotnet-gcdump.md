@@ -64,7 +64,7 @@ You can collect multiple `.gcdump`s and open them simultaneously in Visual Studi
 Collects a GC dump from a currently running process.
 
 > [!WARNING]
-> This will trigger a gen-2 (full) garbage collection to the application to walk the GC heap which can suspend the runtime for a long time, especially when the GC heap is large. Do not use this command in performance-sensitive environments in such cases.
+> To walk the GC heap, this command triggers a generation 2 (full) garbage collection, which can suspend the runtime for a long time, especially when the GC heap is large. Don't use this command in performance-sensitive environments when the GC heap is large.
 
 ### Synopsis
 

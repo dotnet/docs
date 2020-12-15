@@ -158,7 +158,7 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
   Output filename. Extension of target format will be added.
 
 > [!NOTE]
-> Converting `nettrace` files to `chromium` or `speedscope` files is irreversible - `speedscope` or `chromium` files do not have all the information to reconstruct `nettrace` file. The `convert` command still preserves the original `nettrace` file, so do not delete this file if you will be opening the nettrace file in the future.
+> Converting `nettrace` files to `chromium` or `speedscope` files is irreversible. `speedscope` and `chromium` files don't have all the information necessary to reconstruct `nettrace` files. However, the `convert` command preserves the original `nettrace` file, so don't delete this file if you plan to open it in the future.
 
 ## dotnet-trace ps
 

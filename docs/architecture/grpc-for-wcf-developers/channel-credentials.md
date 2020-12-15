@@ -119,7 +119,7 @@ class Program
 
 ## Combine ChannelCredentials and CallCredentials
 
-You can configure your server to use both certificate and token authentication. Do this configuration, by applying the certificate changes to the Kestrel server, and using the JWT bearer middleware in ASP.NET Core.
+You can configure your server to use both certificate and token authentication. To do this, apply the certificate changes to the Kestrel server, and use the JWT bearer middleware in ASP.NET Core.
 
 To provide both `ChannelCredentials` and `CallCredentials` on the client, use the `ChannelCredentials.Create` method to apply the call credentials. You still need to apply certificate authentication by using the <xref:System.Net.Http.HttpClient> instance. If you pass any arguments to the `SslCredentials` constructor, the internal client code throws an exception. The `SslCredentials` parameter is only included in the `Grpc.Net.Client` package's `Create` method to maintain compatibility with the `Grpc.Core` package.
 

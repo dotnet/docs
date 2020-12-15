@@ -17,7 +17,7 @@ In previous .NET versions, a multi-`char` string in the JSON is successfully des
 char deserializedChar = JsonSerializer.Deserialize<char>("\"abc\"");
 ```
 
-In .NET 5.0 and later, anything other than a single-`char` string causes a <xref:System.Text.Json.JsonException> to be thrown when the deserialization target is a `char`. The following example is successfully deserialized in all .NET versions:
+In .NET 5.0 and later, anything other than a single-`char` string causes a <xref:System.Text.Json.JsonException> to be thrown when the deserialization target is a `char`. The following example string is successfully deserialized in all .NET versions:
 
 ```csharp
 // Correct usage.
@@ -44,7 +44,7 @@ When you deserialize JSON into a `char` target, make sure the string consists of
 
 ### Affected APIs
 
-- `M:System.Text.Json.JsonSerializer.Deserialize*`
+- `Overload:System.Text.Json.JsonSerializer.Deserialize`
 
 ### Category
 

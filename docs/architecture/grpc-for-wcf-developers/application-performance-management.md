@@ -6,7 +6,7 @@ ms.date: 12/15/2020
 
 # Application Performance Management
 
-In production environments like Kubernetes, it's important to monitor applications to ensure they're running optimally. Logging and metrics are  important in particular. ASP.NET Core, including gRPC, provides built-in support for producing and managing log messages and metrics data, as well as *tracing* data.
+In production environments like Kubernetes, it's important to monitor applications to ensure they're running optimally. Logging and metrics are important in particular. ASP.NET Core, including gRPC, provides built-in support for producing and managing log messages and metrics data, as well as *tracing* data.
 
 ## The difference between logging and metrics
 

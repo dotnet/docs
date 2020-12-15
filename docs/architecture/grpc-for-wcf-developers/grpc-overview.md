@@ -22,7 +22,7 @@ To achieve this standardization, the [Cloud Native Computing Foundation (CNCF)](
 - **General purpose and performant** – The framework should be usable by as broad a range of use-cases as possible, without compromising performance.
 - **Streaming** – The protocol should provide streaming semantics for large datasets or asynchronous messaging.
 - **Metadata exchange** – The protocol allows non-business data, such as authentication tokens, to be handled separately from actual business data.
-- **Standardized status codes** – The variability of error codes should be reduced to make error handling decisions clearer. Where additional, richer error handling is required, a mechanism should be provided for managing  behavior within the metadata exchange.
+- **Standardized status codes** – The variability of error codes should be reduced to make error handling decisions clearer. Where additional, richer error handling is required, a mechanism should be provided for managing behavior within the metadata exchange.
 
 >[!div class="step-by-step"]
 >[Previous](introduction.md)

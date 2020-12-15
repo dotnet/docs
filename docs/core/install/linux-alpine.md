@@ -12,8 +12,6 @@ This article describes how to install .NET on Alpine. When an Alpine version fal
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-There are no installers for Alpine. You must either use the [install script](#scripted-install) or follow the [manual install](#manual-install) instructions.
-
 ## Install
 
 There aren't any installers or packages published for Alpine Linux and you must install .NET by one of the following methods:

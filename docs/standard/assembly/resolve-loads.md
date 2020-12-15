@@ -1,8 +1,8 @@
 ---
 title: Resolve assembly loads
 description: This article describes the .NET AppDomain.AssemblyResolve event. Use this event for applications that require control over assembly loading.
-ms.date: "08/20/2019"
-helpviewer_keywords: 
+ms.date: 12/15/2020
+helpviewer_keywords:
   - "assemblies [.NET], resolving loads"
   - "application domains, loading assemblies"
   - "resolving assembly loads"
@@ -194,6 +194,111 @@ Resolving MyAssembly, Version=1.2.3.4, Culture=neutral, PublicKeyToken=null
 
 Process is terminated due to StackOverflowException.
 */
+```
+
+#### The correct way to handle AssemblyResolve
+
+When resolving assemblies from the <xref:System.AppDomain.AssemblyResolve> event handler, a <xref:System.StackOverflowException> will eventually be thrown if the handler uses the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> or <xref:System.AppDomain.Load%2A?displayProperty=nameWithType> method calls. Instead, use <xref:System.Reflection.Assembly.LoadFile%2A> or <xref:System.Reflection.Assembly.LoadFrom%2A> methods, as they do not raise the `AssemblyResolve` event.
+
+Imagine that `MyAssembly.dll` is located near the executing assembly, in a known location, it can be resolved using `Assembly.LoadFile` given the path to the assembly.
+
+```csharp
+using System;
+using System.IO;
+using System.Reflection;
+
+class CorrectExample
+{
+    static void Main()
+    {
+        AppDomain ad = AppDomain.CreateDomain("Test");
+        ad.AssemblyResolve += MyHandler;
+
+        try
+        {
+            object obj = ad.CreateInstanceAndUnwrap(
+                "MyAssembly, version=1.2.3.4, culture=neutral, publicKeyToken=null",
+                "MyType");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+
+    static Assembly MyHandler(object source, ResolveEventArgs e)
+    {
+        Console.WriteLine("Resolving {0}", e.Name);
+
+        var path = Path.GetFullPath("../../MyAssembly.dll");
+        return Assembly.LoadFile(path);
+     }
+}
+```
+
+```vb
+Imports System.IO
+Imports System.Reflection
+
+Class CorrectExample
+
+    Shared Sub Main()
+
+        Dim ad As AppDomain = AppDomain.CreateDomain("Test")
+        AddHandler ad.AssemblyResolve, AddressOf MyHandler
+
+        Try
+            Dim obj As Object = ad.CreateInstanceAndUnwrap(
+                "MyAssembly, version=1.2.3.4, culture=neutral, publicKeyToken=null",
+                "MyType")
+        Catch ex As Exception
+            Console.WriteLine(ex.Message)
+        End Try
+    End Sub
+
+    Shared Function MyHandler(ByVal source As Object,
+                              ByVal e As ResolveEventArgs) As Assembly
+        Console.WriteLine("Resolving {0}", e.Name)
+
+        Dim fullPath = Path.GetFullPath("../../MyAssembly.dll")
+        Return Assembly.LoadFile(fullPath)
+    End Function
+End Class
+```
+
+```cpp
+using namespace System;
+using namespace System::IO;
+using namespace System::Reflection;
+
+ref class Example
+{
+internal:
+    static Assembly^ MyHandler(Object^ source, ResolveEventArgs^ e)
+    {
+        Console::WriteLine("Resolving {0}", e->Name);
+
+        String^ fullPath = Path::GetFullPath("../../MyAssembly.dll");
+        return Assembly::LoadFile(fullPath);
+    }
+};
+
+void main()
+{
+    AppDomain^ ad = AppDomain::CreateDomain("Test");
+    ad->AssemblyResolve += gcnew ResolveEventHandler(&Example::MyHandler);
+
+    try
+    {
+        Object^ obj = ad->CreateInstanceAndUnwrap(
+            "MyAssembly, version=1.2.3.4, culture=neutral, publicKeyToken=null",
+            "MyType");
+    }
+    catch (Exception^ ex)
+    {
+        Console::WriteLine(ex->Message);
+    }
+}
 ```
 
 ## See also

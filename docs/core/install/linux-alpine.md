@@ -14,7 +14,7 @@ This article describes how to install .NET on Alpine. When an Alpine version fal
 
 ## Install
 
-There aren't any installers or packages published for Alpine Linux and you must install .NET by one of the following methods:
+Installers aren't available for Alpine Linux. You must install .NET in one of the following ways:
 
 - [Snap package](linux-snap.md)
 - [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
@@ -57,4 +57,5 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

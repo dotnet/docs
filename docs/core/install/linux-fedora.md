@@ -8,7 +8,7 @@ ms.date: 11/14/2020
 
 # Install the .NET SDK or the .NET Runtime on Fedora
 
-.NET is supported on Fedora. This article describes how to install .NET on Fedora. When a Fedora version falls out of support, .NET is no longer supported with that version.
+.NET is supported on Fedora and this article describes how to install .NET on Fedora. When a Fedora version falls out of support, .NET is no longer supported with that version.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 

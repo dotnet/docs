@@ -149,4 +149,5 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you also need 
 
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

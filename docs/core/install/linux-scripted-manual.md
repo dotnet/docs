@@ -10,6 +10,8 @@ ms.date: 12/10/2020
 
 .NET is supported on Linux and this article describes how to install .NET on Linux using the install script or by extracting the binaries. For a list of distributions that support the built-in package manager, see [Install .NET on Linux](linux.md).
 
+Alternatively, you can use [snap to install .NET](linux-snap.md).
+
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 ## .NET releases
@@ -145,5 +147,5 @@ This approach lets you install different versions into separate locations and ch
 
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
-- [Install the .NET SDK or the .NET Runtime with Snap](linux-snap.md)

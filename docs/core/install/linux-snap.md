@@ -110,5 +110,6 @@ The certificate location will vary by distro. Here are the locations for the dis
 
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
 - [Install the .NET SDK or the .NET Runtime manually](linux-scripted-manual.md)

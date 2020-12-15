@@ -14,7 +14,7 @@ The following breaking changes are documented on this page:
 
 ## .NET Core 3.1
 
-[!INCLUDE [design-time-builds-return-top-level-package-refs](../../../includes/core-changes/msbuild/3.0/design-time-builds-return-top-level-package-refs.md)]
+[!INCLUDE [design-time-builds-return-top-level-package-refs](../../../includes/core-changes/msbuild/3.1/design-time-builds-return-top-level-package-refs.md)]
 
 ***
 

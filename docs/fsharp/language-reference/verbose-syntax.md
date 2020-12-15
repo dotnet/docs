@@ -23,9 +23,9 @@ compound expressions
 </td>
 <td>
 
-```xml
-<expression1 />
-<expression2 />
+```fsharp
+<expression1>
+<expression2>
 ```
 
 </td><td>

@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: OutputType set to WinExe for WPF and WinForms apps"
-description: Learn about the breaking change in .NET 5.0 where OutputType is automatically set to WinExe for Windows Forms apps.
+description: Learn about the breaking change in .NET SDK 5.0.100 where OutputType is automatically set to WinExe for Windows Forms apps.
 ms.date: 09/18/2020
 ---
 # OutputType set to WinExe for WPF and WinForms apps
@@ -17,7 +17,7 @@ In previous versions of the .NET SDK, the value that's specified for `OutputType
 </PropertyGroup>
 ```
 
-Starting in the 5.0.1 version of the .NET SDK, `OutputType` is automatically set to `WinExe` for WPF and Windows Forms apps that target any framework version, including .NET Framework. For example:
+Starting in the 5.0.100 version of the .NET SDK, `OutputType` is automatically set to `WinExe` for WPF and Windows Forms apps that target any framework version, including .NET Framework. For example:
 
 ```xml
 <PropertyGroup>
@@ -31,7 +31,7 @@ It's assumed that most users don't want a console window to open when a WPF or W
 
 ## Version introduced
 
-.NET 5.0.1
+.NET 5.0.100
 
 ## Recommended action
 

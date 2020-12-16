@@ -1,5 +1,6 @@
 ---
 title: Create an item template for dotnet new - .NET CLI
+titleSuffix: ""
 description: Learn how to create an item template for the dotnet new command. Item templates can contain any number of files.
 author: adegeo
 ms.date: 12/11/2020

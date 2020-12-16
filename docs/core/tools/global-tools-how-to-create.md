@@ -17,10 +17,10 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 ## Prerequisites
 
-- [.NET SDK 5.0](https://dotnet.microsoft.com/download) or a later version.
+- [.NET SDK 5.0.100](https://dotnet.microsoft.com/download) or a later version.
 
   This tutorial uses .NET SDK 5.0, but global tools are available starting in .NET Core SDK 2.1. Local tools are available starting in .NET Core SDK 3.0.
-  
+
 - A text editor or code editor of your choice.
 
 ## Create a project
@@ -171,16 +171,16 @@ Before you can pack and distribute the application as a tool, you need to modify
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
-  
+
      <PropertyGroup>
 
        <OutputType>Exe</OutputType>
        <TargetFramework>net5.0</TargetFramework>
-  
+
        <PackAsTool>true</PackAsTool>
        <ToolCommandName>botsay</ToolCommandName>
        <PackageOutputPath>./nupkg</PackageOutputPath>
-  
+
      </PropertyGroup>
 
    </Project>
@@ -193,7 +193,7 @@ Before you can pack and distribute the application as a tool, you need to modify
    ```
 
    The *microsoft.botsay.1.0.0.nupkg* file is created in the folder identified by the `<PackageOutputPath>` value from the *microsoft.botsay.csproj* file, which in this example is the *./nupkg* folder.
-  
+
    When you want to release a tool publicly, you can upload it to `https://www.nuget.org`. Once the tool is available on NuGet, developers can install the tool by using the [dotnet tool install](dotnet-tool-install.md) command. For this tutorial you install the package directly from the local *nupkg* folder, so there's no need to upload the package to NuGet.
 
 ## Troubleshoot

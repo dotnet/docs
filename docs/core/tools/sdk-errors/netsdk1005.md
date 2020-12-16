@@ -12,7 +12,9 @@ f1_keywords:
 
 **This article applies to:** ✔️ .NET Core 2.1.100 SDK and later versions
 
-When the .NET SDK issues error NETSDK1005 or NETSDK1047, the project's assets file is missing information on one of your target frameworks. This can usually be fixed by ensuring that restore is run and that the missing target value is included in the `TargetFrameworks` property of your project.
+When the .NET SDK issues error NETSDK1005 or NETSDK1047, the project's assets file is missing information on one of your target frameworks. This error can usually be fixed by ensuring that restore is run and that the missing target value is included in the `TargetFrameworks` property of your project.
+
+This error can also result from the first build after installing Visual Studio 2019 version 16.8 or the first build after changing the target framework of a project. Build the project a second time to resolve the error.
 
 > [!NOTE]
 > There was a known issue with early builds of .NET 5 preview 8 when used with versions of Visual Studio 16.8 previews which resulted in this error. Specifically, if the missing target is `net5.0-windows7.0` or `net5.0`, ensure that you have updated to the latest versions of Visual Studio and the .NET 5 SDK.

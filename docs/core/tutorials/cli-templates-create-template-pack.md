@@ -46,10 +46,6 @@ dotnet new console -n templatepack -o .
 
 The `-n` parameter sets the _.csproj_ filename to _templatepack.csproj_. The `-o` parameter creates the files in the current directory. You should see a result similar to the following output.
 
-```dotnetcli
-dotnet new console -n templatepack -o .
-```
-
 ```console
 The template "Console Application" was created successfully.
 

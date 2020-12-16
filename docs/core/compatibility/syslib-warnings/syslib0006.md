@@ -30,9 +30,9 @@ void ProcessPendingWorkItemsNew(CancellationToken cancellationToken)
 }
 ```
 
-[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
 
 ## See also
 
-- [Thread.Abort is obsolete](core-libraries/5.0/thread-abort-obsolete.md)
-- [Cancellation in managed threads](../../standard/threading/cancellation-in-managed-threads.md)
+- [Thread.Abort is obsolete](../core-libraries/5.0/thread-abort-obsolete.md)
+- [Cancellation in managed threads](../../../standard/threading/cancellation-in-managed-threads.md)

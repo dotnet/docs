@@ -184,7 +184,7 @@ To deserialize from a file by using asynchronous code, call the <xref:System.Tex
 
 > [!TIP]
 > If you have JSON that you want to deserialize, and you don't have the class to deserialize it into, Visual Studio 2019 can automatically generate the class you need:
-> 
+>
 > 1. Copy the JSON that you need to deserialize.
 > 1. Create a class file and delete the template code.
 > 1. Choose **Edit** > **Paste Special** > **Paste JSON as Classes**.

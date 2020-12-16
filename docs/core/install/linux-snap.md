@@ -12,9 +12,12 @@ Use a Snap package to install the .NET SDK or .NET Runtime. Snaps are a great al
 
 A snap is a bundle of an app and its dependencies that works without modification across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Getting started with Snap](https://snapcraft.io/docs/getting-started).
 
+> [!CAUTION]
+> Snap packages aren't supported in WSL2 on Windows 10. As an alternative, use the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular WSL2 distribution. It's not recommended but you can try to enable snap with an [unsupported workaround from the snapcraft forums](https://forum.snapcraft.io/t/running-snaps-on-wsl2-insiders-only-for-now/13033).
+
 ## .NET releases
 
-Only ✔️ supported versions of .NET SDK are available through Snap. All versions (regardless of if it's supported) of the .NET Runtime are available through snap starting with version 2.1. The following table lists the .NET (and .NET Core) releases and whether or not they're still supported by Microsoft:
+Only ✔️ supported versions of .NET SDK are available through Snap. All versions of the .NET Runtime are available through snap starting with version 2.1. The following table lists the .NET (and .NET Core) releases:
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
@@ -24,7 +27,7 @@ Only ✔️ supported versions of .NET SDK are available through Snap. All versi
 |             | 1.1           |
 |             | 1.0           |
 
-For more information about the life-cycle of .NET releases, see [.NET Core and .NET 5 Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+For more information about the life cycle of .NET releases, see [.NET Core and .NET 5 Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## SDK or Runtime
 
@@ -52,7 +55,7 @@ Next, register the `dotnet` command for the system with the `snap alias` command
 sudo snap alias dotnet-sdk.dotnet dotnet
 ```
 
-This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke this specific version of .NET. But this is incompatible with most tutorials and examples as they expect a `dotnet` command to be used.
+This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke this specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be used.
 
 ## Install the runtime
 
@@ -78,11 +81,11 @@ Next, register the `dotnet` command for the system with the `snap alias` command
 sudo snap alias dotnet-runtime-50.dotnet dotnet
 ```
 
-This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-50.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke this specific version of .NET. But this is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
+The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-50.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
 
-## SSL Certificate errors
+## TLS/SSL Certificate errors
 
-When .NET is installed through Snap, it's possible that on some distros the .NET SSL certificates may not be found and you may receive an error similar to the following during `restore`:
+When .NET is installed through Snap, it's possible that on some distros the .NET TLS/SSL certificates may not be found and you may receive an error during `restore`:
 
 ```bash
 Processing post-creation actions...
@@ -93,14 +96,14 @@ Running 'dotnet restore' on /home/myhome/test/test.csproj...
 /snap/dotnet-sdk/27/sdk/2.2.103/NuGet.targets(114,5): error :   The remote certificate is invalid according to the validation procedure. [/home/myhome/test/test.csproj]
 ```
 
-To resolve this issue, set a few environment variables:
+To resolve this problem, set a few environment variables:
 
 ```bash
 export SSL_CERT_FILE=[path-to-certificate-file]
 export SSL_CERT_DIR=/dev/null
 ```
 
-The certificate location will vary by distro. Here are the locations for the distros where we have experienced the issue.
+The certificate location will vary by distro. Here are the locations for the distros where the issue has been experienced.
 
 | Distribution | Location                                            |
 |--------------|-----------------------------------------------------|
@@ -112,4 +115,3 @@ The certificate location will vary by distro. Here are the locations for the dis
 
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
-- [Install the .NET SDK or the .NET Runtime manually](linux-scripted-manual.md)

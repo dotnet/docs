@@ -10,13 +10,13 @@ ms.date: 12/10/2020
 
 .NET is supported on Linux and this article describes how to install .NET on Linux using the install script or by extracting the binaries. For a list of distributions that support the built-in package manager, see [Install .NET on Linux](linux.md).
 
-Alternatively, you can use [snap to install .NET](linux-snap.md).
+You can also install .NET with snap. For more information, see [Install the .NET SDK or the .NET Runtime with Snap](linux-snap.md).
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 ## .NET releases
 
-The following table lists the .NET (and .NET Core) releases and whether or not they're still supported by Microsoft:
+The following table lists the .NET (and .NET Core) releases:
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
@@ -26,7 +26,7 @@ The following table lists the .NET (and .NET Core) releases and whether or not t
 |             | 1.1           |
 |             | 1.0           |
 
-For more information about the life-cycle of .NET releases, see [.NET Core and .NET 5 Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+For more information about the life cycle of .NET releases, see [.NET Core and .NET 5 Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## Dependencies
 
@@ -101,7 +101,7 @@ For more information, see [dotnet-install scripts reference](../tools/dotnet-ins
 
 <!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
 
-As an alternative to the package managers, you can download and manually install the SDK and runtime. Manual install is usually performed as part of continuous integration testing or on an unsupported Linux distribution. For a developer or user, it's generally better to use a package manager.
+As an alternative to the package managers, you can download and manually install the SDK and runtime. Manual install is commonly used as part of continuous integration testing or on an unsupported Linux distribution. For a developer or user, it's better to use a package manager.
 
 If you install .NET SDK, you don't need to install the corresponding runtime. First, download a **binary** release for either the SDK or the runtime from one of the following sites:
 

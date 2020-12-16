@@ -356,7 +356,7 @@ items:
       href: programming-guide/concepts/attributes/index.md
     - name: Creating Custom Attributes
       href: programming-guide/concepts/attributes/creating-custom-attributes.md
-    - name: Accessing Attributes by Using Reflection
+    - name: Access Attributes with  Reflection
       href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
   - name: Exceptions and Exception Handling
     items:
@@ -371,35 +371,15 @@ items:
       href: programming-guide/exceptions/creating-and-throwing-exceptions.md
     - name: Compiler-Generated Exceptions
       href: programming-guide/exceptions/compiler-generated-exceptions.md
-    - name: "How to handle an exception using try-catch"
-      href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
-    - name: "How to execute cleanup code using finally"
-      href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
-    - name: "How to catch a non-CLS exception"
-      href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
   - name: Strings
+    href: programming-guide/strings/index.md
+  - name: Arrays and collections
     items:
-    - name: Programming with strings
-      href: programming-guide/strings/index.md
-    - name: "How to determine whether a string represents a numeric value"
-      href: programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md
-    - name: Split strings into substrings
-      href: how-to/parse-strings-using-split.md
-    - name: Concatenate strings
-      href: how-to/concatenate-multiple-strings.md
-    - name: Search strings
-      href: how-to/search-strings.md
-    - name: Modify string contents
-      href: how-to/modify-string-contents.md
-    - name: Compare strings
-      href: how-to/compare-strings.md
-    - name: String interpolation format and culture
-      href: tutorials/string-interpolation.md
-  - name: Arrays
-    items:
-    - name: Overview
+    - name: Arrays
       displayName: arrays
       href: programming-guide/arrays/index.md
+    - name: Collections
+      href: programming-guide/concepts/collections.md
     - name: Arrays as Objects
       href: programming-guide/arrays/arrays-as-objects.md
     - name: Single-Dimensional Arrays
@@ -414,8 +394,6 @@ items:
       href: programming-guide/arrays/passing-arrays-as-arguments.md
     - name: Implicitly Typed Arrays
       href: programming-guide/arrays/implicitly-typed-arrays.md
-  - name: Collections
-    href: programming-guide/concepts/collections.md
   - name: XML documentation comments
     items:
     - name: Overview
@@ -423,16 +401,90 @@ items:
       href: programming-guide/xmldoc/index.md
     - name: Documenting your code
       href: codedoc.md
-    - name: Recommended tags for documentation comments
+    - name: Recommended documentation tags
       href: programming-guide/xmldoc/recommended-tags-for-documentation-comments.md
     - name: Processing the XML file
       href: programming-guide/xmldoc/processing-the-xml-file.md
     - name: Delimiters for documentation tags
       href: programming-guide/xmldoc/delimiters-for-documentation-tags.md
-    - name: How to use the XML documentation features
+    - name: XML comments example
       href: programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md
 - name: Programming techniques
   items:
+  - name: strings
+    items:
+    - name: "How to: Does a string represents a number"
+      href: programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md
+    - name: Split strings into substrings
+      href: how-to/parse-strings-using-split.md
+    - name: Concatenate strings
+      href: how-to/concatenate-multiple-strings.md
+    - name: Search strings
+      href: how-to/search-strings.md
+    - name: Modify string contents
+      href: how-to/modify-string-contents.md
+    - name: Compare strings
+      href: how-to/compare-strings.md
+    - name: String interpolation format and culture
+      href: tutorials/string-interpolation.md
+  - name: Errors and exceptions
+    items:
+    - name: "How to handle an exception using try-catch"
+      href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
+    - name: "How to execute cleanup code using finally"
+      href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
+    - name: "How to catch a non-CLS exception"
+      href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
+  - name: Delegates and events
+    items:
+    - name: "How to combine delegates"
+      href: programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md
+    - name: "How to declare, instantiate, and use a delegate"
+      href: programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md
+    - name: "How to subscribe and unsubscribe events"
+      href: programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md
+    - name: "How to publish events that conform to .NET Guidelines"
+      href: programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md
+    - name: "How to raise base class events in derived classes"
+      href: programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md
+    - name: "How to implement interface events"
+      href: programming-guide/events/how-to-implement-interface-events.md
+    - name: "How to implement custom event accessors"
+      href: programming-guide/events/how-to-implement-custom-event-accessors.md
+  - name: Type members
+    items:
+    - name: "How to declare and use read write properties"
+      href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
+    - name: "How to declare a data class with auto-implemented properties"
+      href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
+    - name: "How to define abstract properties"
+      href: programming-guide/classes-and-structs/how-to-define-abstract-properties.md
+    - name: "How to define constants in C#"
+      href: programming-guide/classes-and-structs/how-to-define-constants.md
+    - name: "How to write a copy constructor"
+      href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
+    - name: "How to initialize objects in an object initializer"
+      href: programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md
+    - name: "How to initialize a dictionary"
+      href: programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md
+    - name: "How to explicitly implement interface members"
+      href: programming-guide/interfaces/how-to-explicitly-implement-interface-members.md
+    - name: "How to explicitly implement multiple interfaces"
+      href: programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md
+    - name: "How to implement and call a custom extension method"
+      href: programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md
+    - name: "How to create a new method for an enumeration"
+      href: programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md
+    - name: "Distinguish passing struct values and class references to a method"
+      href: programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
+  - name: Equality
+    items:
+    - name: Equality comparisons
+      href: programming-guide/statements-expressions-operators/equality-comparisons.md
+    - name: "How to define value equality for a type"
+      href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
+    - name: "How to test for reference equality (identity)"
+      href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
   - name: null safety
     items:
     - name: Nullable reference types
@@ -452,7 +504,7 @@ items:
       href: programming-guide/file-system/how-to-create-a-file-or-folder.md
     - name: "How to copy, delete, and move files and folders"
       href: programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md
-    - name: "How to provide a progress dialog box for file operations"
+    - name: "How to provide a progress dialog"
       href: programming-guide/file-system/how-to-provide-a-progress-dialog-box-for-file-operations.md
     - name: "How to write to a text file"
       href: programming-guide/file-system/how-to-write-to-a-text-file.md
@@ -462,60 +514,6 @@ items:
       href: programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md
     - name: "How to create a key in the registry"
       href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
-  - name: Types and objects
-    items:
-    - name: "How to explicitly implement interface members"
-      href: programming-guide/interfaces/how-to-explicitly-implement-interface-members.md
-    - name: "How to explicitly implement members of two interfaces"
-      href: programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md
-    - name: "How to define abstract properties"
-      href: programming-guide/classes-and-structs/how-to-define-abstract-properties.md
-    - name: "How to define constants in C#"
-      href: programming-guide/classes-and-structs/how-to-define-constants.md
-    - name: "How to write a copy constructor"
-      href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
-    - name: "How to know the difference between passing a struct and passing a class reference to a method"
-      href: programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
-    - name: "How to use implicitly typed local variables and arrays in a query expression"
-      href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
-    - name: "How to implement and call a custom extension method"
-      href: programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md
-    - name: "How to create a new method for an enumeration"
-      href: programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md
-    - name: "How to use named and optional arguments in Office programming"
-      href: programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md
-    - name: "How to declare and use read write properties"
-      href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
-    - name: "How to implement a lightweight class with auto-implemented properties"
-      href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
-    - name: "How to initialize objects by using an object initializer"
-      href: programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md
-    - name: "How to initialize a dictionary with a collection initializer"
-      href: programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md
-    - name: "How to return subsets of element properties in a query"
-      href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
-    - name: Equality comparisons
-      href: programming-guide/statements-expressions-operators/equality-comparisons.md
-    - name: "How to define value equality for a type"
-      href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
-    - name: "How to test for reference equality (identity)"
-      href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
-    - name: "How to combine delegates (Multicast Delegates) (C# Programming Guide)"
-      href: programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md
-    - name: "How to declare, instantiate, and use a delegate"
-      href: programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md
-    - name: "How to subscribe to and unsubscribe from events"
-      href: programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md
-    - name: "How to publish events that conform to .NET Guidelines"
-      href: programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md
-    - name: "How to raise base class events in derived classes"
-      href: programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md
-    - name: "How to implement interface events"
-      href: programming-guide/events/how-to-implement-interface-events.md
-    - name: "How to implement custom event accessors"
-      href: programming-guide/events/how-to-implement-custom-event-accessors.md
-    - name: "How to create a C/C++ union by using attributes"
-      href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
   - name: Converting between types
     items:
     - name: Casting and Type Conversions
@@ -526,16 +524,16 @@ items:
       href: programming-guide/types/how-to-convert-a-byte-array-to-an-int.md
     - name: "How to convert a string to a number"
       href: programming-guide/types/how-to-convert-a-string-to-a-number.md
-    - name: "How to convert between hexadecimal strings and numeric types"
+    - name: "How to convert hexadecimal strings and numeric types"
       href: programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md
 - name: Language Integrated Query (LINQ)
   items:
   - name: Overview of LINQ
     href: linq/index.md
+  - name: LINQ basics
+    href: programming-guide/concepts/linq/index.md
   - name: Query expression basics
     href: linq/query-expression-basics.md
-  - name: LINQ in C#
-    href: linq/linq-in-csharp.md
   - name: Write LINQ queries in C#
     href: linq/write-linq-queries.md
   - name: Query a collection of objects
@@ -570,9 +568,6 @@ items:
     href: linq/handle-null-values-in-query-expressions.md
   - name: Handle exceptions in queries
     href: linq/handle-exceptions-in-query-expressions.md
-  - name: Overview
-    displayName: LINQ overview
-    href: programming-guide/concepts/linq/index.md
   - name: Getting Started with LINQ in C#
     items:
     - name: Introduction to LINQ Queries
@@ -661,6 +656,10 @@ items:
         href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
       - name: "How to compute column values in a CSV text file (LINQ)"
         href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
+      - name: "How to use implicitly typed local variables and arrays in a query expression"
+        href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
+      - name: "How to return subsets of element properties in a query"
+        href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
     - name: LINQ and Reflection
       href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
     - name: "How to query an assembly's metadata with Reflection (LINQ)"
@@ -687,12 +686,8 @@ items:
       href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
     - name: "How to add custom methods for LINQ queries"
       href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
-  - name: LINQ to ADO.NET (Portal Page)
-    href: programming-guide/concepts/linq/linq-to-adonet-portal-page.md
-  - name: Enabling a Data Source for LINQ Querying
+  - name: Enabling a data source for LINQ
     href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
-  - name: Visual Studio IDE and Tools Support for LINQ
-    href: programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md
 - name: Task asynchronous programming model
   displayName: async, await, asynchronous programming, task, cancellation
   items:
@@ -723,18 +718,22 @@ items:
     items:
     - name: .NET Interoperability
       href: programming-guide/interop/index.md
-    - name: Interoperability Overview
+    - name: Interoperability overview
       href: programming-guide/interop/interoperability-overview.md
     - name: "How to use the My namespace"
       href: programming-guide/namespaces/how-to-use-the-my-namespace.md
-    - name: "How to access Office interop objects by using C# features"
+    - name: "How to create a C/C++ union by using attributes"
+      href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
+    - name: "How to access Office interop objects"
       href: programming-guide/interop/how-to-access-office-onterop-objects.md
-    - name: "How to use indexed properties in COM interop programming"
+    - name: "How to use indexed properties in COM interop"
       href: programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
     - name: "How to use platform invoke to play a WAV file"
       href: programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
-    - name: "Walkthrough: Office Programming (C# and Visual Basic)"
+    - name: "Walkthrough: Office programming"
       href: programming-guide/interop/walkthrough-office-programming.md
+    - name: "How to use named and optional arguments in Office programming"
+      href: programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md
     - name: Example COM Class
       href: programming-guide/interop/example-com-class.md
   - name: Write safe, efficient code
@@ -743,6 +742,9 @@ items:
     items:
     - name: Introduction to expression trees
       href: expression-trees.md
+    - name: Overview
+      displayName: expression trees
+      href: programming-guide/concepts/expression-trees/index.md
     - name: Expression Trees Explained
       href: expression-trees-explained.md
     - name: Expression Tree class types
@@ -755,26 +757,23 @@ items:
       href: expression-trees-building.md
     - name: Translating Expressions
       href: expression-trees-translating.md
+    - name: Debug expression trees in Visual Studio
+      href: programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md
+    - name: DebugView syntax
+      href: programming-guide/concepts/expression-trees/debugview-syntax.md
     - name: Summary
       href: expression-trees-summary.md
-    - name: Overview
-      displayName: expression trees
-      href: programming-guide/concepts/expression-trees/index.md
     - name: "How to execute expression trees"
       href: programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md
     - name: "How to modify expression trees"
       href: programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md
-    - name: "How to use expression trees to build dynamic queries"
+    - name: "How to build dynamic queries with expression trees"
       href: programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md
-    - name: Debugging Expression Trees in Visual Studio
-      href: programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md
-    - name: DebugView Syntax
-      href: programming-guide/concepts/expression-trees/debugview-syntax.md
   - name: dynamic type
     items:
-    - name: Using Type dynamic
+    - name: Using type dynamic
       href: programming-guide/types/using-type-dynamic.md
-    - name: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
+    - name: "Walkthrough: Create dynamic objects"
       href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
   - name: Reflection
     href: programming-guide/concepts/reflection.md
@@ -787,7 +786,7 @@ items:
       href: programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md
     - name: "How to read object data from an XML file"
       href: programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md
-    - name: "Walkthrough: Persisting an Object in Visual Studio"
+    - name: "Walkthrough: Persist objects in visual studio"
       href: programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md
   - name: Unsafe Code and Pointers
     items:
@@ -803,7 +802,7 @@ items:
         href: programming-guide/unsafe-code-pointers/pointer-types.md
       - name: Pointer conversions
         href: programming-guide/unsafe-code-pointers/pointer-conversions.md
-      - name: "How to use pointers to copy an array of bytes"
+      - name: "How to copy an array of bytes"
         href: programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md
   - name: .NET Compiler Platform SDK
     displayName: Roslyn, Analyzer, Codefix, Refactoring

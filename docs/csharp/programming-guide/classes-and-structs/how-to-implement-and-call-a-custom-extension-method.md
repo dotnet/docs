@@ -41,7 +41,6 @@ This topic shows how to implement your own extension methods for any .NET type. 
 ## See also
 
 - [Extension Methods](./extension-methods.md)
-- [LINQ (Language-Integrated Query)](../../linq/linq-in-csharp.md)
 - [Static Classes and Static Class Members](./static-classes-and-static-class-members.md)
 - [protected](../../language-reference/keywords/protected.md)
 - [internal](../../language-reference/keywords/internal.md)

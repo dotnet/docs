@@ -54,8 +54,8 @@ Unlike other obsoletion warnings, you can't suppress the error.
   }
   ```
 
-[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
 
 ## See also
 
-- [PrincipalPermissionAttribute is obsolete as error](core-libraries/5.0/principalpermissionattribute-obsolete.md)
+- [PrincipalPermissionAttribute is obsolete as error](../core-libraries/5.0/principalpermissionattribute-obsolete.md)

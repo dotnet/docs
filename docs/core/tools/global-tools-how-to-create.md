@@ -2,7 +2,7 @@
 title: "Tutorial: Create a .NET tool"
 description: Learn how to create a .NET tool. A tool is a console application that is installed by using the .NET CLI.
 ms.topic: tutorial
-ms.date: 02/12/2020
+ms.date: 12/14/2020
 ---
 
 # Tutorial: Create a .NET tool using the .NET CLI
@@ -30,10 +30,22 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 1. Navigate to the *repository* folder and enter the following command:
 
    ```dotnetcli
-   dotnet new console -n microsoft.botsay
+   dotnet new console -n microsoft.botsay -f net5.0
    ```
 
    The command creates a new folder named *microsoft.botsay* under the *repository* folder.
+
+   > [!NOTE]
+   > For this tutorial you create a tool that targets .NET 5.0. To target a different framework, change the `-f|--framework` option. To target multiple frameworks, change the `TargetFramework` element to a `TargetFrameworks` element in the project file, as shown in the following example:
+   >
+   > ```xml
+   > <Project Sdk="Microsoft.NET.Sdk">
+   >   <PropertyGroup>
+   >     <OutputType>Exe</OutputType>
+   >     <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
+   >   </PropertyGroup>
+   > </Project>
+   > ```
 
 1. Navigate to the *microsoft.botsay* folder.
 

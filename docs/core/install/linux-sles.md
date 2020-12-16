@@ -3,7 +3,7 @@ title: Install .NET on SLES - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on SLES.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 12/16/2020
 ---
 
 # Install the .NET SDK or the .NET Runtime on SLES
@@ -96,4 +96,5 @@ For .NET apps that use the *System.Drawing.Common* assembly, you'll also need th
 
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

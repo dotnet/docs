@@ -10,4 +10,4 @@ The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator?
 
 ## Suppress the warning
 
-If you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](syslib-obsoletions.md#suppress-warnings).
+If you cannot change your code, you can suppress the warning through a `#pragma` directive or a `<NoWarn>` project setting. For examples, see [Suppress warnings](../syslib-obsoletions.md#suppress-warnings).

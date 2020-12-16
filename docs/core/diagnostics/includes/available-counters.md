@@ -9,7 +9,7 @@ The following counters are published as part of .NET runtime, and are maintained
 | Counter | Description |
 |--|--|
 | :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`) | The percent of time in GC since the last GC |
-| :::no-loc text="Allocation Rate"::: (`alloc-rate`) | The rate of allocation in bytes |
+| :::no-loc text="Allocation Rate"::: (`alloc-rate`) | The number of bytes allocated per update interval |
 | :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of CPU usage of the process |
 | :::no-loc text="Exception Count"::: (`exception-count`) | The number of exceptions that have occurred |
 | :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | The number of bytes thought to be allocated based on <xref:System.GC.GetTotalMemory(System.Boolean)?displayProperty=nameWithType> |
@@ -40,7 +40,7 @@ The following counters are published as part of [ASP.NET Core](/aspnet/core) and
 |--|--|
 | :::no-loc text="Current Requests"::: (`current-requests`) | The total number of requests the have started, but not yet stopped |
 | :::no-loc text="Failed Requests"::: (`failed-requests`) | The total number of failed requests that have occurred for the life of the app |
-| :::no-loc text="Request Rate"::: (`requests-per-second`) | The number of requests that occur per second |
+| :::no-loc text="Request Rate"::: (`requests-per-second`) | The number of requests that occur per update interval |
 | :::no-loc text="Total Requests"::: (`total-requests`) | The total number of requests that have occurred for the life of the app |
 
 ### "Microsoft.AspNetCore.Http.Connections" counters
@@ -62,12 +62,12 @@ The following counters are published as part of the [ASP.NET Core Kestrel web se
 | Counter | Description |
 |--|--|
 | :::no-loc text="Connection Queue Length"::: (`connection-queue-length`) | The current length of the connection queue |
-| :::no-loc text="Connection Rate"::: (`connections-per-second`) | The number of connections per second to the web server |
+| :::no-loc text="Connection Rate"::: (`connections-per-second`) | The number of connections per update interval to the web server |
 | :::no-loc text="Current Connections"::: (`current-connections`) | The current number of active connections to the web server |
 | :::no-loc text="Current TLS Handshakes"::: (`current-tls-handshakes`) | The current number of TLS handshakes |
 | :::no-loc text="Current Upgraded Requests (WebSockets)"::: (`current-upgraded-requests`) | The current number of upgraded requests (WebSockets) |
 | :::no-loc text="Failed TLS Handshakes"::: (`failed-tls-handshakes`) | The total number of failed TLS handshakes |
 | :::no-loc text="Request Queue Length"::: (`request-queue-length`) | The current length of the request queue |
-| :::no-loc text="TLS Handshake Rate"::: (`tls-handshakes-per-second`) | The number of TLS handshakes per second |
+| :::no-loc text="TLS Handshake Rate"::: (`tls-handshakes-per-second`) | The number of TLS handshakes per update interval |
 | :::no-loc text="Total Connections"::: (`total-connections`) | The total number of connections to the web server |
 | :::no-loc text="Total TLS Handshakes"::: (`total-tls-handshakes`) | The total number of TLS handshakes with the web server |

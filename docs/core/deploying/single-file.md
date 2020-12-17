@@ -102,7 +102,7 @@ Here's a sample project file that specifies single-file publishing:
     <TargetFramework>net5.0</TargetFramework>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
-    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PublishTrimmed>true</PublishTrimmed>
     <PublishReadyToRun>true</PublishReadyToRun>
   </PropertyGroup>
@@ -114,9 +114,9 @@ These properties have the following functions:
 
 * `PublishSingleFile` - Enables single-file publishing.
 * `SelfContained` - Determines whether the app will be self-contained or framework-dependent.
-* `RuntimeIdentifier` - Specifies the OS and CPU type you are targeting.
-* `PublishTrimmed` - Enables use of assembly trimming, which is only supported for self-contained apps.
-* `PublishReadyToRun` - Enables ahead-of-time (AOT) compilation.
+* `RuntimeIdentifier` - Specifies the [OS and CPU type](../rid-catalog.md)1 you are targeting.
+* `PublishTrimmed` - Enables use of [assembly trimming](trim-self-contained.md), which is only supported for self-contained apps.
+* `PublishReadyToRun` - Enables [ahead-of-time (AOT) compilation](ready-to-run.md).
 
 **Notes:**
 

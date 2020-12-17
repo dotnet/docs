@@ -7,7 +7,7 @@ ms.date: 12/17/2020
 
 # Well-known EventCounters in .NET
 
-The .NET runtime and libraries implement and publish several [`EventCounter`](./event-counters.md) that can be used to identify and diagnose various performance issues.
+The .NET runtime and libraries implement and publish several [`EventCounter`](./event-counters.md) that can be used to identify and diagnose various performance issues. This document is a reference on the providers that can be used to monitor these `EventCounters` and their descriptions.
 
 ## System.Runtime counters
 
@@ -20,13 +20,13 @@ The following counters are published as part of .NET runtime (CoreCLR), and are 
 | :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of CPU usage of the process |
 | :::no-loc text="Exception Count"::: (`exception-count`) | The number of exceptions that have occurred |
 | :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | The number of bytes thought to be allocated based on <xref:System.GC.GetTotalMemory(System.Boolean)?displayProperty=nameWithType> |
-| :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | The number of times GC has occurred for Gen 0 |
+| :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | The number of times GC has occurred for Gen 0 per update interval |
 | :::no-loc text="Gen 0 Size"::: (`gen-0-size`) | The number of bytes for Gen 0 GC |
-| :::no-loc text="Gen 1 GC Count"::: (`gen-1-gc-count`) | The number of times GC has occurred for Gen 1 |
+| :::no-loc text="Gen 1 GC Count"::: (`gen-1-gc-count`) | The number of times GC has occurred for Gen 1 per update interval |
 | :::no-loc text="Gen 1 Size"::: (`gen-1-size`) | The number of bytes for Gen 1 GC |
-| :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`) | The number of times GC has occurred for Gen 2 |
+| :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`) | The number of times GC has occurred for Gen 2 per update interval |
 | :::no-loc text="Gen 2 Size"::: (`gen-2-size`) | The number of bytes for Gen 2 GC |
-| :::no-loc text="LOH Size"::: (`loh-size`) | The number of bytes for Gen 3 GC |
+| :::no-loc text="LOH Size"::: (`loh-size`) | The number of bytes for the large object heap |
 | :::no-loc text="POH Size"::: (`poh-size`) | The number of bytes for the pinned object heap (available on .NET 5 and later versions) |
 | :::no-loc text="GC Fragmentation"::: (`gc-fragmentation`) | The GC Heap Fragmentation (available on .NET 5 and later versions) |
 | :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`) | The number of times there was contention when trying to take the monitor's lock, based on <xref:System.Threading.Monitor.LockContentionCount?displayProperty=nameWithType> |

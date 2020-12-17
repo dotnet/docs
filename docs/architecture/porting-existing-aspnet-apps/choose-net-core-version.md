@@ -1,5 +1,5 @@
 ---
-title: Choosing the right .NET Core version
+title: Choose the right .NET Core version
 description: How should you determine which version of .NET Core to target?
 author: ardalis
 ms.date: 11/13/2020

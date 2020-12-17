@@ -3,7 +3,7 @@ title: Console log formatting
 description: Learn how to use available console log formatting, or implement custom log formatting for your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 10/22/2020
+ms.date: 12/17/2020
 ---
 
 # Console log formatting
@@ -146,6 +146,19 @@ A custom color formatter that handles applying custom colors could be defined as
 :::code language="csharp" source="snippets/logging/console-formatter-custom/CustomColorFormatter.cs" highlight="15-18,52-65":::
 
 When you run the application, the logs will show the `CustomPrefix` message in the color green when `FormatterOptions.ColorBehavior` is `Enabled`.
+
+> [!NOTE]
+> When <xref:Microsoft.Extensions.Logging.Console.LoggerColorBehavior> is `Disabled`, log messages do _not_ interpret embedded ANSI color codes within log messages. Instead, they output the raw message. For example, consider the following:
+>
+> ```csharp
+> logger.LogInformation("Random log \x1B[42mwith green background\x1B[49m message");
+> ```
+>
+> This would output the verbatim string, and it is _not_ colorized.
+>
+> ```output
+> Random log \x1B[42mwith green background\x1B[49m message
+> ```
 
 ## See also
 

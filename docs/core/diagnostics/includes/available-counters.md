@@ -38,7 +38,7 @@ The following counters are published as part of [ASP.NET Core](/aspnet/core) and
 
 | Counter | Description |
 |--|--|
-| :::no-loc text="Current Requests"::: (`current-requests`) | The total number of requests the have started, but not yet stopped |
+| :::no-loc text="Current Requests"::: (`current-requests`) | The total number of requests that have started, but not yet stopped |
 | :::no-loc text="Failed Requests"::: (`failed-requests`) | The total number of failed requests that have occurred for the life of the app |
 | :::no-loc text="Request Rate"::: (`requests-per-second`) | The number of requests that occur per update interval |
 | :::no-loc text="Total Requests"::: (`total-requests`) | The total number of requests that have occurred for the life of the app |

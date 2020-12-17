@@ -1,10 +1,17 @@
-## Available counters
+---
+title: Well-known EventCounters in .NET
+description: Review EventCounters published by the .NET runtime and libraries.
+ms.topic: reference
+ms.date: 12/17/2020
+---
 
-Throughout various .NET packages, basic metrics on Garbage Collection (GC), Just-in-Time (JIT), assemblies, exceptions, threading, networking, and web requests are published using EventCounters.
+# Well-known EventCounters in .NET
 
-### "System.Runtime" counters
+The .NET runtime and libraries implement and publish several [`EventCounter`](./event-counters.md) that can be used to identify and diagnose various performance issues.
 
-The following counters are published as part of .NET runtime, and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
+## System.Runtime
+
+The following counters are published as part of .NET runtime (CoreCLR), and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
 
 | Counter | Description |
 |--|--|
@@ -32,7 +39,7 @@ The following counters are published as part of .NET runtime, and are maintained
 | :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | The total size of ILs that are JIT-compiled, in bytes (available on .NET 5 and later versions) |
 | :::no-loc text="Method Jitted Count"::: (`method-jitted-count`) | The number of methods that are JIT-compiled (available on .NET 5 and later versions) |
 
-### "Microsoft.AspNetCore.Hosting" counters
+## "Microsoft.AspNetCore.Hosting" counters
 
 The following counters are published as part of [ASP.NET Core](/aspnet/core) and are maintained in [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
 
@@ -43,7 +50,7 @@ The following counters are published as part of [ASP.NET Core](/aspnet/core) and
 | :::no-loc text="Request Rate"::: (`requests-per-second`) | The number of requests that occur per update interval |
 | :::no-loc text="Total Requests"::: (`total-requests`) | The total number of requests that have occurred for the life of the app |
 
-### "Microsoft.AspNetCore.Http.Connections" counters
+## "Microsoft.AspNetCore.Http.Connections" counters
 
 The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
 
@@ -55,7 +62,7 @@ The following counters are published as part of [ASP.NET Core SignalR](/aspnet/c
 | :::no-loc text="Total Connections Stopped"::: (`connections-stopped`) | The total number of connections that have stopped |
 | :::no-loc text="Total Connections Timed Out"::: (`connections-timed-out`) | The total number of connections that have timed out |
 
-### "Microsoft-AspNetCore-Server-Kestrel" counters
+## "Microsoft-AspNetCore-Server-Kestrel" counters
 
 The following counters are published as part of the [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel) and are maintained in [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
 

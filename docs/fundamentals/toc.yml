@@ -396,7 +396,12 @@ items:
       - name: Linux dumps
         href: ../core/diagnostics/debug-linux-dumps.md
     - name: EventCounters
-      href: ../core/diagnostics/event-counters.md
+      items:
+      - name: Overview
+        displayName: EventCounters
+        href: ../core/diagnostics/event-counters.md
+      - name: Well-known Counters in .NET
+        href: ../core/diagnostics/available-counters.md
     - name: EventPipe
       href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing

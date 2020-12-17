@@ -9,7 +9,7 @@ ms.date: 12/17/2020
 
 The .NET runtime and libraries implement and publish several [`EventCounter`](./event-counters.md) that can be used to identify and diagnose various performance issues.
 
-## System.Runtime
+## System.Runtime counters
 
 The following counters are published as part of .NET runtime (CoreCLR), and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
 

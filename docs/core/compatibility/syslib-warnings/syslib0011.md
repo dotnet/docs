@@ -6,7 +6,7 @@ ms.date: 10/20/2020
 ---
 # SYSLIB0011: BinaryFormatter serialization is obsolete
 
-Due to [security vulnerabilities](../../standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following APIs are marked as obsolete, starting in .NET 5.0. Using them in code generates warning `SYSLIB0011` at compile time.
+Due to [security vulnerabilities](../../../standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following APIs are marked as obsolete, starting in .NET 5.0. Using them in code generates warning `SYSLIB0011` at compile time.
 
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType>
@@ -21,9 +21,9 @@ Consider using <xref:System.Text.Json.JsonSerializer> or <xref:System.Xml.Serial
 
 For more information about recommended actions, see [Resolving BinaryFormatter obsoletion and disablement errors](https://aka.ms/binaryformatter).
 
-[!INCLUDE [suppress-syslib-warning](../../../includes/suppress-syslib-warning.md)]
+[!INCLUDE [suppress-syslib-warning](../../../../includes/suppress-syslib-warning.md)]
 
 ## See also
 
 - [Resolving BinaryFormatter obsoletion and disablement errors](https://aka.ms/binaryformatter)
-- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](core-libraries/5.0/binaryformatter-serialization-obsolete.md)
+- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](../core-libraries/5.0/binaryformatter-serialization-obsolete.md)

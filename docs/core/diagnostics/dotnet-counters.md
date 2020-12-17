@@ -147,9 +147,9 @@ System.Runtime
     cpu-usage                                    Amount of time the process has utilized the CPU (ms)
     working-set                                  Amount of working set used by the process (MB)
     gc-heap-size                                 Total heap size reported by the GC (MB)
-    gen-0-gc-count                               Number of Gen 0 GCs / min
-    gen-1-gc-count                               Number of Gen 1 GCs / min
-    gen-2-gc-count                               Number of Gen 2 GCs / min
+    gen-0-gc-count                               Number of Gen 0 GCs per interval
+    gen-1-gc-count                               Number of Gen 1 GCs per interval
+    gen-2-gc-count                               Number of Gen 2 GCs per interval
     time-in-gc                                   % time in GC since the last GC
     gen-0-size                                   Gen 0 Heap Size
     gen-1-size                                   Gen 1 Heap Size
@@ -157,7 +157,7 @@ System.Runtime
     loh-size                                     LOH Heap Size
     alloc-rate                                   Allocation Rate
     assembly-count                               Number of Assemblies Loaded
-    exception-count                              Number of Exceptions / sec
+    exception-count                              Number of Exceptions per interval
     threadpool-thread-count                      Number of ThreadPool Threads
     monitor-lock-contention-count                Monitor Lock Contention Count
     threadpool-queue-length                      ThreadPool Work Items Queue Length

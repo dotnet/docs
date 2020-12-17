@@ -19,18 +19,18 @@ The following table provides an index to the `SYSLIBxxxx` obsoletions in .NET 5+
 
 | Diagnostic ID | Description |
 | - | - |
-| [SYSLIB0001](syslib0001.md) | The UTF-7 encoding is insecure and should not be used. Consider using UTF-8 instead. |
-| [SYSLIB0002](syslib0002.md) | <xref:System.Security.Permissions.PrincipalPermissionAttribute> is not honored by the runtime and must not be used. |
-| [SYSLIB0003](syslib0003.md) | Code access security (CAS) is not supported or honored by the runtime. |
-| [SYSLIB0004](syslib0004.md) | The constrained execution region (CER) feature is not supported. |
-| [SYSLIB0005](syslib0005.md) | The global assembly cache (GAC) is not supported. |
-| [SYSLIB0006](syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> is not supported and throws <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0007](syslib0007.md) | The default implementation of this cryptography algorithm is not supported. |
-| [SYSLIB0008](syslib0008.md) | The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API is not supported and throws <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0009](syslib0009.md) | The <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0010](syslib0010.md) | Some remoting APIs are not supported and throw <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0011](syslib0011.md) | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. |
-| [SYSLIB0012](syslib0012.md) | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. |
+| [SYSLIB0001](syslib-warnings/syslib0001.md) | The UTF-7 encoding is insecure and should not be used. Consider using UTF-8 instead. |
+| [SYSLIB0002](syslib-warnings/syslib0002.md) | <xref:System.Security.Permissions.PrincipalPermissionAttribute> is not honored by the runtime and must not be used. |
+| [SYSLIB0003](syslib-warnings/syslib0003.md) | Code access security (CAS) is not supported or honored by the runtime. |
+| [SYSLIB0004](syslib-warnings/syslib0004.md) | The constrained execution region (CER) feature is not supported. |
+| [SYSLIB0005](syslib-warnings/syslib0005.md) | The global assembly cache (GAC) is not supported. |
+| [SYSLIB0006](syslib-warnings/syslib0006.md) | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> is not supported and throws <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0007](syslib-warnings/syslib0007.md) | The default implementation of this cryptography algorithm is not supported. |
+| [SYSLIB0008](syslib-warnings/syslib0008.md) | The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API is not supported and throws <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0009](syslib-warnings/syslib0009.md) | The <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0010](syslib-warnings/syslib0010.md) | Some remoting APIs are not supported and throw <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0011](syslib-warnings/syslib0011.md) | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. |
+| [SYSLIB0012](syslib-warnings/syslib0012.md) | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. |
 
 ## Suppress warnings
 

@@ -21,6 +21,5 @@ In [chapter 4, you saw how a real ASP.NET MVC reference app was migrated to ASP.
 
 Finally, [chapter 5 detailed a number of specific deployment scenarios focused on IIS](deployment-deployment-scenarios.md). You saw how you can leverage your existing IIS web server to host parts of your app that have been ported to ASP.NET Core while keeping the app's public URLs consistent. IIS includes great support for URL rewriting and request routing that enables it to host multiple versions of your site side by side or even on different servers, with no change to the public-facing URLs the app exposes.
 
-
 >[!div class="step-by-step"]
 >[Previous](deployment-scenarios.md)

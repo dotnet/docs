@@ -3,7 +3,7 @@ title: Single file application
 description: Learn what single file application is and why you should consider using this application deployment model.
 author: lakshanf
 ms.author: lakshanf
-ms.date: 08/28/2020
+ms.date: 12/17/2020
 ---
 # Single file deployment and executable
 
@@ -89,6 +89,39 @@ For example, add the following property to the project file of an assembly to em
   <DebugType>embedded</DebugType>
 </PropertyGroup>
 ```
+
+## Publish a single file app - sample project file
+
+Here's a sample project file that specifies single-file publishing:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishTrimmed>true</PublishTrimmed>
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+</Project>
+```
+
+These properties have the following functions:
+
+* `PublishSingleFile` - Enables single-file publishing.
+* `SelfContained` - Determines whether the app will be self-contained or framework-dependent.
+* `RuntimeIdentifier` - Specifies the [OS and CPU type](../rid-catalog.md) you are targeting.
+* `PublishTrimmed` - Enables use of [assembly trimming](trim-self-contained.md), which is only supported for self-contained apps.
+* `PublishReadyToRun` - Enables [ahead-of-time (AOT) compilation](ready-to-run.md).
+
+**Notes:**
+
+* Apps are OS and architecture-specific. You need to publish for each configuration, such as Linux x64, Linux ARM64, Windows x64, and so forth.
+* Configuration files, such as *\*.runtimeconfig.json*, are included in the single file. If an additional configuration file is needed, you can place it beside the single file.
 
 ## Publish a single file app - CLI
 

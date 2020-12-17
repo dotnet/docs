@@ -22,6 +22,7 @@ namespace SystemTextJsonSamples
             writer.WriteString("date", DateTimeOffset.UtcNow);
             writer.WriteNumber("temp", 42);
             writer.WriteEndObject();
+            writer.Flush();
 
             string json = Encoding.UTF8.GetString(stream.ToArray());
             Console.WriteLine(json);

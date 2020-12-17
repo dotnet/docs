@@ -31,7 +31,7 @@ Note that calling `AddAzureKeyVault` requires the application ID that was regist
 ## Additional resources
 
 - **Using Azure Key Vault to protect application secrets** \
-  [https://docs.microsoft.com/azure/architecture/multitenant-identity](/azure/architecture/multitenant-identity-keyvault)
+  [https://docs.microsoft.com/azure/architecture/multitenant-identity](/azure/architecture/multitenant-identity)
 
 - **Safe storage of app secrets during development** \
   [https://docs.microsoft.com/aspnet/core/security/app-secrets](/aspnet/core/security/app-secrets)

@@ -30,11 +30,12 @@ public abstract class Enumeration : IComparable
         typeof(T).GetFields(BindingFlags.Public |
                             BindingFlags.Static |
                             BindingFlags.DeclaredOnly)
-                 .Select(f => f.GetValue(null)).Cast<T>();
+                 .Select(f => f.GetValue(null))
+                 .Cast<T>();
 
     public override bool Equals(object obj)
     {
-        if (!(obj is Enumeration otherValue))
+        if (obj is not Enumeration otherValue)
         {
             return false;
         }

@@ -40,7 +40,7 @@ public class Program
 }
 ```
 
-**Figure 2-1. A typical ASP.NET Core Program.cs file.
+**Figure 2-1**. A typical ASP.NET Core Program.cs file.
 
 The code shown in Figure 2-1 creates a *host* for the application, builds it, and runs it. The ASP.NET Core application runs within the host configured by the `IHostBuilder` shown. While it's possible to completely configure an ASP.NET Core app using the `IHostBuilder`, typically the bulk of this work is done in a `Startup` class.
 

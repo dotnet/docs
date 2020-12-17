@@ -80,8 +80,6 @@ public class GrpcStreamSubscription<T> : IDisposable
         _tokenSource = new CancellationTokenSource();
         token.Register(_tokenSource.Cancel);
 
-        _completed = false;
-
         _task = Run(_tokenSource.Token);
     }
 

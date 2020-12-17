@@ -17,7 +17,7 @@ In this tutorial, you learn how to:
 > * Detect period for a time series
 > * Detect anomaly for a periodical time series
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/ProductSalesAnomalyDetection) repository.
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/PhoneCallsAnomalyDetection) repository.
 
 ## Prerequisites
 
@@ -61,7 +61,7 @@ The following table is a data preview from your \*.csv file:
 | 2018/10/3  | 34.49893429  |
 | ...    | ....   |
 
-This file represents a time-series. Each row in the file is a data point. Each data piont has two attributes, namely, `timestamp` and `value`, to reprensent the number of phone calls at each day. The number of phone calls is transformed to de-sensitivity.
+This file represents a time-series. Each row in the file is a data point. Each data point has two attributes, namely, `timestamp` and `value`, to represent the number of phone calls at each day. The number of phone calls is transformed to de-sensitivity.
 
 ### Create classes and define paths
 
@@ -87,7 +87,7 @@ Add a new class to your project:
 
     `PhoneCallsData` specifies an input data class. The [LoadColumn](xref:Microsoft.ML.Data.LoadColumnAttribute.%23ctor%28System.Int32%29) attribute specifies which columns (by column index) in the dataset should be loaded. It has two attributes `timestamp` and `value` that correspond to the same attributes in the data file.
 
-    `PhoneCallsPrediction` specifies the prediction data class. For SR-CNN detector, the prediction depends on the [detect mode](xref:Microsoft.ML.TimeSeries.SrCnnDetectMode) specified. In this sample we select the `AnomalyAndMargin` mode. The output contains seven columns. In most cases, `IsAnomaly`, `ExpectedValue`, `UpperBoundary` and `LowerBoundary` are informative enough. They tell you if a point is an anomaly, the expected value of the point and the lower / upper boundary region of the point.
+    `PhoneCallsPrediction` specifies the prediction data class. For SR-CNN detector, the prediction depends on the [detect mode](xref:Microsoft.ML.TimeSeries.SrCnnDetectMode) specified. In this sample, we select the `AnomalyAndMargin` mode. The output contains seven columns. In most cases, `IsAnomaly`, `ExpectedValue`, `UpperBoundary`, and `LowerBoundary` are informative enough. They tell you if a point is an anomaly, the expected value of the point and the lower / upper boundary region of the point.
 
 5. Add the following code to the line right above the `Main` method to specify the path to your data file:
 
@@ -115,7 +115,7 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 
 Time series anomaly detection is the process of detecting time-series data outliers; points on a given input time-series where the behavior isn't what was expected, or "weird". These anomalies are typically indicative of some events of interest in the problem domain: a cyber-attack on user accounts, power outage, bursting RPS on a server, memory leak, etc.
 
-To find anomaly on time series, you should first determine the period of the series. Then, the time series can be decomposed into several components as `Y = T + S + R`, where `Y` is the original series, `T` is the trend component, `S` is the seasonal componnent and `R` is the residual component of the series. This step is called [decomposition](https://en.wikipedia.org/wiki/Decomposition_of_time_series). Finally, detection is performed on the residual component to find the anomalies. In ML.NET, The SR-CNN algorithm is an advanced and novel algorithm that is based on Spectral Residual (SR) and Convolutional Neural Network(CNN) to detect anomaly on time-series( Refer to the [Time-Series Anomaly Detection Service at Microsoft](https://arxiv.org/pdf/1906.03821.pdf) paper for more details on this algorithm).
+To find anomaly on time series, you should first determine the period of the series. Then, the time series can be decomposed into several components as `Y = T + S + R`, where `Y` is the original series, `T` is the trend component, `S` is the seasonal component, and `R` is the residual component of the series. This step is called [decomposition](https://en.wikipedia.org/wiki/Decomposition_of_time_series). Finally, detection is performed on the residual component to find the anomalies. In ML.NET, The SR-CNN algorithm is an advanced and novel algorithm that is based on Spectral Residual (SR) and Convolutional Neural Network(CNN) to detect anomaly on time-series. For more information on this algorithm, see [Time-Series Anomaly Detection Service at Microsoft](https://arxiv.org/pdf/1906.03821.pdf).
 
 In this tutorial, you will see that these procedures can be completed using two functions.
 
@@ -134,7 +134,7 @@ In the first step, we invoke the `DetectSeasonality` function to determine the p
     }
     ```
 
-2. Use the [DetectSeasonality](xref:Microsoft.ML.TimeSeriesCatalog.DetectSeasonality) function to detect period. Add it to the `DetectPeriod` method with the following code:
+2. Use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectSeasonality%2A> function to detect period. Add it to the `DetectPeriod` method with the following code:
 
     [!code-csharp[DetectSeasonality](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#DetectSeasonality)]
 
@@ -156,7 +156,7 @@ Period of the series is: 7.
 
 ## Detect Anomaly
 
-In this step, you use the [`SrCnnEntireDetector`](xref:Microsoft.ML.Transforms.TimeSeries.SrCnnEntireAnomalyDetector) to find anomalies.
+In this step, you use the <xref:Microsoft.ML.TimeSeriesCatalog.DetectEntireAnomalyBySrCnn%2A> method to find anomalies.
 
 ### Create the DetectAnomaly method
 
@@ -169,7 +169,7 @@ In this step, you use the [`SrCnnEntireDetector`](xref:Microsoft.ML.Transforms.T
     }
     ```
 
-2. Setup [SrCnnEntireAnomalyDetectorOptions](xref:Microsoft.ML.Transforms.TimeSeries.SrCnnEntireAnomalyDetectorOptions) in the `DetectAnomaly` method with the following code:
+2. Set up <xref:Microsoft.ML.TimeSeries.SrCnnEntireAnomalyDetectorOptions> in the `DetectAnomaly` method with the following code:
 
     [!code-csharp[SetupSrCnnParameters](./snippets/phone-calls-anomaly-detection/csharp/Program.cs#SetupSrCnnParameters)]
 
@@ -188,7 +188,7 @@ In this step, you use the [`SrCnnEntireDetector`](xref:Microsoft.ML.Transforms.T
     You'll display the following information in your change point detection results:
 
     * `Index` is the index of each point.
-    * `Anomaly` is the indicator of wheather each point is detected as anomaly.
+    * `Anomaly` is the indicator of whether each point is detected as anomaly.
     * `ExpectedValue` is the estimated value of each point.
     * `LowerBoundary` is the lowest value each point can be to be not anomaly.
     * `UpperBoundary` is the highest value each point can be to be not anomaly.
@@ -203,7 +203,7 @@ In this step, you use the [`SrCnnEntireDetector`](xref:Microsoft.ML.Transforms.T
 
 ## Anomaly detection results
 
-Run the application. Your results should be similar to the following. During processing, messages are displayed. You may see warnings, or processing messages. Some messages have been removed from the following results for clarity.
+Run the application. Your results should be similar to the following. During processing, messages are displayed. You may see warnings or processing messages. Some messages have been removed from the following results for clarity.
 
 ```console
 Detect period of the series
@@ -238,7 +238,7 @@ Index   Data    Anomaly AnomalyScore    Mag     ExpectedValue   BoundaryUnit    
 25,0,29.381125690882463,33.681408258162854,25.080843123602072
 26,0,5.261543539820418,9.561826107100808,0.9612609725400283
 27,0,5.4873712582971805,9.787653825577571,1.1870886910167897
-28,1,36.504694001629254,40.804976568909645,32.20441143434886  <-- alert is on, detecte anomaly
+28,1,36.504694001629254,40.804976568909645,32.20441143434886  <-- alert is on, detected anomaly
 ...
 ```
 

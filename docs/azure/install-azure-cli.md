@@ -23,7 +23,7 @@ The Azure CLI is available for Windows, macOS and Linux.
 > [Install the Azure CLI for macOS](/cli/azure/install-azure-cli-macos)
 
 > [!div class="nextstepaction"]
-> [Install the Azure CLI for Linux](/cli/azure/install-azure-cli-apt)
+> [Install the Azure CLI for Linux](/cli/azure/install-azure-cli-linux)
 
 ### Azure Cloud Shell
 

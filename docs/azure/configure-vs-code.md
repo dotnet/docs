@@ -41,7 +41,7 @@ On the left hand panel, you'll see an Azure icon. Select this icon, and a contro
 
 ### Next steps
 
-Next, you will want to install the Azure CLI (Command Line Interface) on your workstation
+Next, you will want to install the Azure CLI on your workstation.
 
 > [!div class="nextstepaction"]
 > [Install the Azure CLI](./install-azure-cli.md)

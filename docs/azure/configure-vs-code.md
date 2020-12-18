@@ -35,7 +35,7 @@ To learn more about installing extensions in Visual Studio Code, refer to the [E
 
 ### Step 3. Sign in to your Azure account with Azure Tools
 
-On the left hand panel, you will now see an Azure icon.  Select on this icon and a control panel for Azure services will appear.  Choose `Sign in to Azure...` under any service to complete the sign in process for the Azure tools in Visual Studio Code.
+On the left hand panel, you'll see an Azure icon. Select this icon, and a control panel for Azure services will appear. Choose **Sign in to Azure...** under any service to complete the authentication process for the Azure tools in Visual Studio Code.
 
 ![Screenshot of the Visual Studio Code showing how to login the Azure tools to Azure](./media/visual-studio-code-azure-login.png)
 

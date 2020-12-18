@@ -19,6 +19,10 @@ This article helps you find the various tools you need.
 
 [Logging and tracing](logging-tracing.md) are related techniques. They refer to instrumenting code to create log files. The files record the details of what a program does. These details can be used to diagnose the most complex problems. When combined with time stamps, these techniques are also valuable in performance investigations.
 
+## Metrics
+
+[EventCounters](event-counters.md) allows you to write metrics to identify and monitor performance issues. Metrics incur lower performance overhead compared to tracing, making it more suitable for an always-on performance monitoring. The .NET runtime and libraries publish several [well-known EventCounters](available-counters.md) that you can monitor as well.
+
 ## Unit testing
 
 [Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
@@ -30,10 +34,6 @@ A [dump](./dumps.md) is a file that contains a snapshot of the process at the ti
 ## Collect diagnostics in containers
 
 The same diagnostics tools that are used in non-containerized Linux environments can also be used to [collect diagnostics in containers](diagnostics-in-containers.md). There are just a few usage changes needed to make sure the tools work in a Docker container.
-
-## Debug Linux dumps
-
-[Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.
 
 ## .NET Core diagnostic global tools
 
@@ -78,6 +78,10 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 ### Debug deadlock
 
 [Tutorial: Debug deadlock](debug-deadlock.md) shows you how to use the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
+
+### Debug Linux dumps
+
+[Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.
 
 ### Measure performance using EventCounters
 

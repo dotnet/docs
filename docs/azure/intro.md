@@ -30,6 +30,6 @@ Whether your app is hosted in Azure or on-premises, access to most Azure service
 
 ![Diagram showing how .NET applications use the Azure SDK to access Azure services](./media/azure-sdk-for-dotnet-overview.png)
 
-## Next Steps
+## Next steps
 
 Next, learn about the most [commonly used Azure services](./key-azure-services.md) for .NET development.

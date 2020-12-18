@@ -24,7 +24,7 @@ You can create an [Azure account for free](https://azure.microsoft.com/free/dotn
 
 If you are using Azure at work, talk to your company's cloud administrator to get your Azure credentials and then sign in to your account with the [Azure Portal](https://portal.azure.com).
 
-## Next Steps
+## Next steps
 
 After creating an Azure account, be sure to bookmark the [Azure Portal](https://portal.azure.com) in your web browser for easy access to Azure.
 

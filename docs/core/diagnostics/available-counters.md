@@ -1,10 +1,17 @@
-## Available counters
+---
+title: Well-known EventCounters in .NET
+description: Review EventCounters published by the .NET runtime and libraries.
+ms.topic: reference
+ms.date: 12/17/2020
+---
 
-Throughout various .NET packages, basic metrics on Garbage Collection (GC), Just-in-Time (JIT), assemblies, exceptions, threading, networking, and web requests are published using EventCounters.
+# Well-known EventCounters in .NET
 
-### "System.Runtime" counters
+The .NET runtime and libraries implement and publish several [`EventCounter`](./event-counters.md) that can be used to identify and diagnose various performance issues. This document is a reference on the providers that can be used to monitor these `EventCounters` and their descriptions.
 
-The following counters are published as part of .NET runtime, and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
+## System.Runtime counters
+
+The following counters are published as part of .NET runtime (CoreCLR) and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
 
 | Counter | Description |
 |--|--|
@@ -13,13 +20,13 @@ The following counters are published as part of .NET runtime, and are maintained
 | :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of CPU usage of the process |
 | :::no-loc text="Exception Count"::: (`exception-count`) | The number of exceptions that have occurred |
 | :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | The number of bytes thought to be allocated based on <xref:System.GC.GetTotalMemory(System.Boolean)?displayProperty=nameWithType> |
-| :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | The number of times GC has occurred for Gen 0 |
+| :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | The number of times GC has occurred for Gen 0 per update interval |
 | :::no-loc text="Gen 0 Size"::: (`gen-0-size`) | The number of bytes for Gen 0 GC |
-| :::no-loc text="Gen 1 GC Count"::: (`gen-1-gc-count`) | The number of times GC has occurred for Gen 1 |
+| :::no-loc text="Gen 1 GC Count"::: (`gen-1-gc-count`) | The number of times GC has occurred for Gen 1 per update interval |
 | :::no-loc text="Gen 1 Size"::: (`gen-1-size`) | The number of bytes for Gen 1 GC |
-| :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`) | The number of times GC has occurred for Gen 2 |
+| :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`) | The number of times GC has occurred for Gen 2 per update interval |
 | :::no-loc text="Gen 2 Size"::: (`gen-2-size`) | The number of bytes for Gen 2 GC |
-| :::no-loc text="LOH Size"::: (`loh-size`) | The number of bytes for Gen 3 GC |
+| :::no-loc text="LOH Size"::: (`loh-size`) | The number of bytes for the large object heap |
 | :::no-loc text="POH Size"::: (`poh-size`) | The number of bytes for the pinned object heap (available on .NET 5 and later versions) |
 | :::no-loc text="GC Fragmentation"::: (`gc-fragmentation`) | The GC Heap Fragmentation (available on .NET 5 and later versions) |
 | :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`) | The number of times there was contention when trying to take the monitor's lock, based on <xref:System.Threading.Monitor.LockContentionCount?displayProperty=nameWithType> |
@@ -32,18 +39,18 @@ The following counters are published as part of .NET runtime, and are maintained
 | :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | The total size of ILs that are JIT-compiled, in bytes (available on .NET 5 and later versions) |
 | :::no-loc text="Method Jitted Count"::: (`method-jitted-count`) | The number of methods that are JIT-compiled (available on .NET 5 and later versions) |
 
-### "Microsoft.AspNetCore.Hosting" counters
+## "Microsoft.AspNetCore.Hosting" counters
 
 The following counters are published as part of [ASP.NET Core](/aspnet/core) and are maintained in [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
 
 | Counter | Description |
 |--|--|
-| :::no-loc text="Current Requests"::: (`current-requests`) | The total number of requests the have started, but not yet stopped |
+| :::no-loc text="Current Requests"::: (`current-requests`) | The total number of requests that have started, but not yet stopped |
 | :::no-loc text="Failed Requests"::: (`failed-requests`) | The total number of failed requests that have occurred for the life of the app |
 | :::no-loc text="Request Rate"::: (`requests-per-second`) | The number of requests that occur per update interval |
 | :::no-loc text="Total Requests"::: (`total-requests`) | The total number of requests that have occurred for the life of the app |
 
-### "Microsoft.AspNetCore.Http.Connections" counters
+## "Microsoft.AspNetCore.Http.Connections" counters
 
 The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
 
@@ -55,7 +62,7 @@ The following counters are published as part of [ASP.NET Core SignalR](/aspnet/c
 | :::no-loc text="Total Connections Stopped"::: (`connections-stopped`) | The total number of connections that have stopped |
 | :::no-loc text="Total Connections Timed Out"::: (`connections-timed-out`) | The total number of connections that have timed out |
 
-### "Microsoft-AspNetCore-Server-Kestrel" counters
+## "Microsoft-AspNetCore-Server-Kestrel" counters
 
 The following counters are published as part of the [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel) and are maintained in [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
 

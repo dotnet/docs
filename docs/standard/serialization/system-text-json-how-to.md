@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 12/02/2020
+ms.date: 12/16/2020
 ms.custom: contperf-fy21q2
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -181,6 +181,15 @@ To deserialize from a file by using synchronous code, read the file into a strin
 To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs" id="Deserialize":::
+
+> [!TIP]
+> If you have JSON that you want to deserialize, and you don't have the class to deserialize it into, Visual Studio 2019 can automatically generate the class you need:
+>
+> 1. Copy the JSON that you need to deserialize.
+> 1. Create a class file and delete the template code.
+> 1. Choose **Edit** > **Paste Special** > **Paste JSON as Classes**.
+>
+> The result is a class that you can use for your deserialization target.
 
 ## Deserialize from UTF-8
 

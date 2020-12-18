@@ -39,6 +39,8 @@ HRESULT GetHandleFromThread(
 ## Remarks  
 
  The profiler must call the Win32 `DuplicateHandle` function on the handle before using it.  
+
+ The handle returned from this method is owned by the runtime and the profiler should never close it.
   
 ## Requirements  
 

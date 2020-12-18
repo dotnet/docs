@@ -14,7 +14,7 @@ Visual Studio includes tooling to help with the development and deployment of ap
 
 ### Step 1: Download Visual Studio 2019
 
-If you already have Visual Studio 2019 installed, you can skip this step
+If you already have Visual Studio 2019 installed, you can skip this step.
 
 > [!div class="nextstepaction"]
 > [Download Visual Studio 2019](https://www.visualstudio.com/downloads/)

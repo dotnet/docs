@@ -23,7 +23,11 @@ If you already have Visual Studio Code installed, you can skip this step
 
 The [Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) contains extensions for working with Azure App Service, Azure Functions, Azure Storage, Cosmos DB, and Azure Virtual Machines all in one convenient package.
 
-To install the extension from Visual Studio Code, first type (`Ctrl+Shift+X`) to bring up the Extensions window.  Then search for the `Azure Tools` extension and finally select **Install** button to install the extension.  
+To install the extension from Visual Studio Code:
+
+1. Press <kbd>Ctrl+Shift+X</kbd> to open the **Extensions** window.
+1. Search for the *Azure Tools* extension.
+1. Select the **Install** button.
 
 ![Screenshot of the Visual Studio Code showing extensions panel searching for the Azure Tools extension pack](./media/visual-studio-code-azure-tools.png)
 

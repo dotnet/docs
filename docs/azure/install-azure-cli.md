@@ -14,7 +14,7 @@ In addition to the Azure Portal, Azure also offers the [Azure CLI](/cli/azure/) 
 
 In practice, most developers use both the Azure Portal and the Azure CLI. Where as the Azure Portal is useful when exploring new services and getting an overview of all of the resources in your Azure account, most developers find the Azure CLI to be faster and more efficient.  The Azure CLI can often accomplish in a single command what takes multiple steps in the Azure Portal.  In addition, since Azure CLI commands can be saved to a file, developers can assure that recurrent tasks are run the same way each time.
 
-The Azure CLI is available for Windows, macOS and Linux.
+The Azure CLI is available for Windows, macOS, and Linux.
 
 > [!div class="nextstepaction"]
 > [Install the Azure CLI for Windows](/cli/azure/install-azure-cli-windows?tabs=azure-cli)

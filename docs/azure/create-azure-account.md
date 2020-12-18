@@ -14,7 +14,7 @@ To use Azure, you need an Azure account.  Your Azure account is the credential y
 
 ## Option 1: Use monthly Azure credits for Visual Studio subscribers
 
-If you have a Visual Studio subscription, your subscription includes credits for using Azure.  Activate your credits by visiting the [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers/) page.
+If you have a Visual Studio subscription, your subscription includes credits for using Azure.  Activate your credits by visiting the [Monthly Azure credits for Visual Studio subscribers](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) page.
 
 ## Option 2: Sign up for a free Azure account
 

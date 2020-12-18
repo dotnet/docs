@@ -131,3 +131,7 @@ It's not recommended to delete the *dotnet* folder. Doing so would remove any gl
 
 - You'll break Visual Studio 2019 version 16.3 and later versions. You can run **Repair** to recover.
 - If there are .NET Core SDK entries in the **Apps & features** dialog, they'll be orphaned.
+
+## See also
+
+- [*global.json* overview](../tools/global-json.md)

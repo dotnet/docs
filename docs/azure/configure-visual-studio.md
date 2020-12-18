@@ -21,7 +21,7 @@ If you already have Visual Studio 2019 installed, you can skip this step.
 
 ### Step 2: Install Azure workloads
 
-Launch the **Visual Studio Installer** and validate that you have the workloads *Azure development* and *ASP.NET and web development* are installed.  If either of these workloads is not installed, select these workloads to install them.
+Launch the **Visual Studio Installer** and validate that you have the workloads **Azure development** and **ASP.NET and web development** are installed.  If either of these workloads is not installed, select these workloads to install them.
 
 ![Screenshot of the Visual Studio Installer showing the Azure development and ASP.NET and Web Development Workloads selected](./media/visual-studio-installer-azure-development.png)
 

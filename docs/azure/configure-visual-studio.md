@@ -12,20 +12,20 @@ author: daberry
 
 Visual Studio includes tooling to help with the development and deployment of applications on Azure.  This guide will help you make sure that you have Visual Studio properly configured for Azure development.
 
-### Step 1: Download Visual Studio 2019
+### Download Visual Studio 2019
 
 If you already have Visual Studio 2019 installed, you can skip this step.
 
 > [!div class="nextstepaction"]
 > [Download Visual Studio 2019](https://www.visualstudio.com/downloads/)
 
-### Step 2: Install Azure workloads
+### Install Azure workloads
 
 Launch the **Visual Studio Installer** and validate that you have the workloads **Azure development** and **ASP.NET and web development** are installed.  If either of these workloads is not installed, select these workloads to install them.
 
 ![Screenshot of the Visual Studio Installer showing the Azure development and ASP.NET and Web Development Workloads selected](./media/visual-studio-installer-azure-development.png)
 
-### Step 3: Authenticate Visual Studio with Azure
+### Authenticate Visual Studio with Azure
 
 When debugging apps through Visual Studio, Visual Studio can use your Azure account to authenticate and access Azure Resources with.  This account is also used when you publish apps directly from Visual Studio to Azure.
 

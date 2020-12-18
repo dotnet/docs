@@ -12,14 +12,14 @@ author: daberry
 
 If you are using Visual Studio Code, whether for .NET development, for building single page applications using frameworks like Angular, React or Vue, or for writing applications in another language like Python, you will want to configure Visual Studio Code for Azure development.
 
-### Step 1: Download Visual Studio Code
+### Download Visual Studio Code
 
 If you already have Visual Studio Code installed, you can skip this step
 
 > [!div class="nextstepaction"]
 > [Download Visual Studio Code](https://code.visualstudio.com/download)
 
-### Step 2. Install the Azure Tools Extension Pack
+### Install the Azure Tools Extension Pack
 
 The [Azure Tools Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) contains extensions for working with Azure App Service, Azure Functions, Azure Storage, Cosmos DB, and Azure Virtual Machines all in one convenient package.
 
@@ -33,7 +33,7 @@ To install the extension from Visual Studio Code:
 
 To learn more about installing extensions in Visual Studio Code, refer to the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) document on the Visual Studio Code website.
 
-### Step 3. Sign in to your Azure account with Azure Tools
+### Sign in to your Azure account with Azure Tools
 
 On the left hand panel, you'll see an Azure icon. Select this icon, and a control panel for Azure services will appear. Choose **Sign in to Azure...** under any service to complete the authentication process for the Azure tools in Visual Studio Code.
 

@@ -6,7 +6,7 @@
     - name: Introduction to Azure and .NET
       href: intro.md
     - name: Key Azure services for .NET developers
-      href: key-azure-services.md      
+      href: key-azure-services.md
     - name: Configure your development environment
       items: 
       - name: Create an Azure account
@@ -16,7 +16,7 @@
       - name: Configure VS Code for Azure development (cross-platform)
         href: configure-vs-code.md
       - name: Install the Azure CLI
-        href: install-azure-cli.md        
+        href: install-azure-cli.md
 - name: Migrate to Azure
   items:
     - name: Choose the right Azure hosting option
@@ -30,11 +30,11 @@
 - name: Azure SDK for .NET
   items:
     - name: What is the Azure SDK for .NET?
-      href: ./sdk/azure-sdk-for-dotnet.md      
+      href: ./sdk/azure-sdk-for-dotnet.md
     - name: Authentication
       href: authentication.md 
     - name: Logging
-      href: logging.md      
+      href: logging.md
     - name: Configuring a proxy server
       href: ./sdk/azure-sdk-configure-proxy.md
     - name: Package List

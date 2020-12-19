@@ -832,7 +832,7 @@ with
 
 ## Formatting function parameter application
 
-In general, most function parameter application is done on the same line:
+In general, most arguments are provided on the same line:
 
 ```fsharp
 let x = sprintf "\t%s - %i\n\r" x.IngredientName x.Quantity
@@ -849,7 +849,7 @@ let printListWithOffsetPiped a list1 =
     |> List.iter (fun elem -> printfn $"%d{a + elem}")
 ```
 
-However, you may wish to apply parameters to a function on a new line, as a matter of readability or because the list of arguments or the argument names are too long. In that case, indent with one scope:
+However, you may wish to pass arguments to a function on a new line, as a matter of readability or because the list of arguments or the argument names are too long. In that case, indent with one scope:
 
 ```fsharp
 

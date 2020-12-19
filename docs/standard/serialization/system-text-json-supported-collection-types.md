@@ -58,105 +58,101 @@ This article gives a quick overview of which collections are supported.
 | <xref:System.Collections.Generic.IReadOnlyList%601> |✔️|✔️|
 | <xref:System.Collections.Generic.ISet%601> |✔️|✔️|
 
-### System.Collections.Immutable namespace
+## System.Collections.Immutable namespace
 
 | Type | Serialization | Deserialization |
 | --- | --- | --- |
-| [`ImmutableArray<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1?view=netcore-3.1) |✔️|✔️|
-| [`ImmutableDictionary<string, TValue>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutabledictionary-2?view=netcore-3.1) |✔️|✔️|
-| [`ImmutableHashSet<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablehashset-1?view=netcore-3.1) |✔️|✔️|
-| [`IImmutableList<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutablelist-1?view=netcore-3.1) |✔️|✔️|
-| [`ImmutableQueue<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1?view=netcore-3.1) |✔️|✔️|
-| [`ImmutableSortedDictionary<string, TValue>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablesorteddictionary-2?view=netcore-3.1) |✔️|✔️|
-| [`ImmutableSortedSet<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablesortedset-1?view=netcore-3.1) |✔️|✔️|
-| [`ImmutableStack<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1?view=netcore-3.1)* |✔️|✔️|
-| [`IImmutableDictionary<string, TValue>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutabledictionary-2?view=netcore-3.1) |✔️|✔️|
-| [`IImmutableList<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutablelist-1?view=netcore-3.1) |✔️|✔️|
-| [`IImmutableQueue<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutablequeue-1?view=netcore-3.1) |✔️|✔️|
-| [`IImmutableSet<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutableset-1?view=netcore-3.1) |✔️|✔️|
-| [`IImmutableStack<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1?view=netcore-3.1)* |✔️|✔️|
+| <ImmutableArray%601> |✔️|✔️|
+| [ImmutableDictionary\<string, TValue>](xref:System.Collections.Immutable.ImmutableDictionary%602) |✔️|✔️|
+| <ImmutableHashSet%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablehashset-1?view=netcore-3.1) |✔️|✔️|
+| <IImmutableList%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutablelist-1?view=netcore-3.1) |✔️|✔️|
+| <ImmutableQueue%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1?view=netcore-3.1) |✔️|✔️|
+| [ImmutableSortedDictionary\<string, TValue>](xref:System.Collections.Immutable.ImmutableSortedDictionary%602) |✔️|✔️|
+| <ImmutableSortedSet%601> |✔️|✔️|
+| <ImmutableStack%601>\* |✔️|✔️|
+| [IImmutableDictionary\<string, TValue>](xref:System.Collections.Immutable.IImmutableDictionary%602) |✔️|✔️|
+| <IImmutableList%601> |✔️|✔️|
+| <IImmutableQueue%601> |✔️|✔️|
+| <IImmutableSet%601> |✔️|✔️|
+| <IImmutableStack%601>\* |✔️|✔️|
 
-### [`System.Collections.Specialized`](https://docs.microsoft.com/dotnet/api/system.collections.specialized?view=netcore-3.1)
-
-| Type | Serialization | Deserialization |
-| --- | --- | --- |
-| [`BitVector32`](https://docs.microsoft.com/dotnet/api/system.collections.specialized.bitvector32?view=netcore-3.1)** |✔️|❌|
-| [`HybridDictionary`](https://docs.microsoft.com/dotnet/api/system.collections.specialized.hybriddictionary?view=netcore-3.1) |✔️|✔️|
-| [`IOrderedDictionary`](https://docs.microsoft.com/dotnet/api/system.collections.specialized.iordereddictionary?view=netcore-3.1) |✔️|❌|
-| [`ListDictionary`](https://docs.microsoft.com/dotnet/api/system.collections.specialized.listdictionary?view=netcore-3.1) |✔️|✔️|
-| [`StringCollection`](https://docs.microsoft.com/dotnet/api/system.collections.specialized.stringcollection?view=netcore-3.1) |✔️|❌|
-| [`StringDictionary`](https://docs.microsoft.com/dotnet/api/system.collections.specialized.stringdictionary?view=netcore-3.1) |✔️|❌|
-| [`NameValueCollection`](https://docs.microsoft.com/dotnet/api/system.collections.specialized.namevaluecollection?view=netcore-3.1) |✔️|❌|
-
-### [`System.Collections.Concurrent`](https://docs.microsoft.com/dotnet/api/system.collections.concurrent?view=netcore-3.1)
+## System.Collections.Specialized namespace
 
 | Type | Serialization | Deserialization |
 | --- | --- | --- |
-| [`BlockingCollection<T>`](https://docs.microsoft.com/dotnet/api/system.collections.concurrent.blockingcollection-1?view=netcore-3.1) |✔️|❌|
-| [`ConcurrentBag<T>`](https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentbag-1?view=netcore-3.1) |✔️| NotSupported |
-| [`ConcurrentDictionary<string, TValue>`](https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2?view=netcore-3.1) |✔️|✔️|
-| [`ConcurrentQueue<T>`](https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=netcore-3.1) |✔️|✔️|
-| [`ConcurrentStack<T>`](https://docs.microsoft.com/dotnet/api/system.collections.concurrent.stack-1?view=netcore-3.1)* |✔️|✔️|
+| <xref:System.Collections.Specialized.BitVector32>\*\* |✔️|❌|
+| <xref:System.Collections.Specialized.HybridDictionary> |✔️|✔️|
+| <xref:System.Collections.Specialized.IOrderedDictionary> |✔️|❌|
+| <xref:System.Collections.Specialized.ListDictionary> |✔️|✔️|
+| <xref:System.Collections.Specialized.StringCollection> |✔️|❌|
+| <xref:System.Collections.Specialized.StringDictionary> |✔️|❌|
+| <xref:System.Collections.Specialized.NameValueCollection> |✔️|❌|
 
-### [`System.Collections.ObjectModel`](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel?view=netcore-3.1)
+## System.Collections.Concurrent namespace
 
 | Type | Serialization | Deserialization |
 | --- | --- | --- |
-| [`Collection<T>`](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1?view=netcore-3.1) |✔️|✔️|
-| [`ObservableCollection<T>`](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netcore-3.1) |✔️|✔️|
-| [`KeyedCollection<string, TValue>`](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.keyedcollection-2?view=netcore-3.1) |✔️|❌|
-| [`ReadOnlyCollection<T>`](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1?view=netcore-3.1) |✔️|❌|
-| [`ReadOnlyObservableCollection<T>`](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1?view=netcore-3.1) |✔️|❌|
-| [`ReadOnlyDictionary<string, TValue>`](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.readonlydictionary-2?view=netcore-3.1) |✔️|❌|
+| <xref:System.Collections.Concurrent.BlockingCollection%601> |✔️|❌|
+| <xref:System.Collections.Concurrent.ConcurrentBag%601> |✔️| ❌ |
+| [ConcurrentDictionary\<string, TValue>](xref:System.Collections.Concurrent.ConcurrentDictionary%602) |✔️|✔️|
+| <xref:System.Collections.Concurrent.ConcurrentQueue%601> |✔️|✔️|
+| <xref:System.Collections.Concurrent.ConcurrentStack%601>\* |✔️|✔️|
+
+## System.Collections.ObjectModel namespace
+
+| Type | Serialization | Deserialization |
+| --- | --- | --- |
+| <xref:System.Collections.ObjectModel.Collection%601> |✔️|✔️|
+| <xref:System.Collections.ObjectModel.ObservableCollection%601> |✔️|✔️|
+| [KeyedCollection\<string, TValue>](xref:System.Collections.ObjectModel.KeyedCollection%602) |✔️|❌|
+| <ReadOnlyCollection%601> |✔️|❌|
+| <ReadOnlyObservableCollection%601> |✔️|❌|
+| [ReadOnlyDictionary\<string, TValue>](xref:System.Collections.ObjectModel.ReadOnlyDictionary%602) |✔️|❌|
 
 ## Custom collections
 
-For the purpose of serialization and deserialization in System.Text.Json, any
-collection not in the BCL, (i.e. outside `System.Collections[.[.\*]]`), is considered
-a custom collection. This includes user-defined types and ASP.NET defined types,
-e.g. those in
-[Microsoft.Extensions.Primitives](https://docs.microsoft.com/dotnet/api/microsoft.extensions.primitives?view=dotnet-plat-ext-3.1).
+For serialization and deserialization in `System.Text.Json`, any
+collection type that is not in one of the preceding namespaces is considered
+a custom collection. Such types include user-defined types and types defined by ASP.NET Core. For example, <xref:Microsoft.Extensions.Primitives> is in this group.
 
-A custom collection is✔️for deserialization if it fulfils the following:
+All custom collections (everything that derives from `IEnumerable`) are supported for serialization, as long as their element types are supported.
 
-1. Is not an interface or abstract
-2. Has a parameter-less constructor
-3. Implements one or more of
-   [`IList`](https://docs.microsoft.com/dotnet/api/system.collections.ilist?view=netcore-3.1),
-   [`IList<T>`](https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1?view=netcore-3.1),
-   [`ICollection<T>`](https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1?view=netcore-3.1),
-   [`IDictionary`](https://docs.microsoft.com/dotnet/api/system.collections.idictionary?view=netcore-3.1),
-   [`IDictionary<string, TValue>`](https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2?view=netcore-3.1),
-   [`Stack<T>`](https://docs.microsoft.com/dotnet/api/system.collections.generic.stack-1?view=netcore-3.1)\*,
-   [`Queue<T>`](https://docs.microsoft.com/dotnet/api/system.collections.generic.queue-1?view=netcore-3.1),
-   [`ConcurrentStack<T>`](https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentstack-1?view=netcore-3.1)\*,
-   [`ConcurrentQueue<T>`](https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=netcore-3.1),
-   [`Stack`](https://docs.microsoft.com/dotnet/api/system.collections.stack?view=netcore-3.1)\*,
-   and [`Queue`](https://docs.microsoft.com/dotnet/api/system.collections.queue?view=netcore-3.1)
-4. The element type is✔️by [`JsonSerializer`](https://docs.microsoft.com/dotnet/api/system.text.json.jsonserializer?view=netcore-3.1)
+A custom collection is supported for deserialization if it fulfills the following requirements:
 
-All custom collections (everything that derives from [`IEnumerable`](https://docs.microsoft.com/dotnet/api/system.collections.ienumerable?view=netcore-3.1))
-are✔️for serialization, as long as their element types are supported.
+* It is not an interface or abstract
+* It has a parameterless constructor
+* It implements or inherits one or more of the following interfaces or classes:
+  * <xref:System.Collections.IList>
+  * <xref:System.Collections.Generic.IList%601>
+  * <xref:System.Collections.Generic.ICollection%601>
+  * <xref:System.Collections.IDictionary>
+  * [IDictionary\<string, TValue>](xref:System.Collections.Generic.IDictionary%602),
+  * <xref:System.Collections.Generic.Stack%601>\*
+  * <xref:System.Collections.Generic.Queue%601>
+  * <xref:System.Collections.Concurrent.ConcurrentStack%601>\*
+  * <xref:System.Collections.Concurrent.ConcurrentQueue%601>
+  * <xref:System.Collections.Stack>\*
+  * <xref:System.Collections.Queue>
+* The element type is supported by <xref:System.Text.Json.JsonSerializer>
 
-There are known issues with some custom collections where we don't offer round-trippable support.
-These include:
+There are known issues with some custom collections:
 
-- Support for [`ExpandoObject`](https://docs.microsoft.com/dotnet/api/system.dynamic.expandoobject?view=netcore-3.1): https://github.com/dotnet/corefx/issues/38007
-- Support for [`DynamicObject`](https://docs.microsoft.com/dotnet/api/system.dynamic.dynamicobject?view=netcore-3.1): https://github.com/dotnet/corefx/issues/41105
-- Support for [`DataTable`](https://docs.microsoft.com/dotnet/api/system.data.datatable?view=netcore-3.1): https://github.com/dotnet/corefx/issues/38712
-- Support for [`FormFile`](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.http.formfile?view=aspnetcore-3.1): https://github.com/dotnet/corefx/issues/41401
-- Support for [`IFormCollection`](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.http.iformcollection?view=aspnetcore-3.1)
-- Assigning `null` to value-type collections like [`ImmutableArray<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1?view=netcore-3.1): https://github.com/dotnet/corefx/issues/42399
+- <xref:System.Dynamic.ExpandoObject>: https://github.com/dotnet/corefx/issues/38007
+- <xref:System.Dynamic.DynamicObject>: https://github.com/dotnet/corefx/issues/41105
+- <xref:System.Data.DataTable>: https://github.com/dotnet/corefx/issues/38712
+- <xref:Microsoft.AspNetCore.Http.FormFile>: https://github.com/dotnet/corefx/issues/41401
+- <xref:Microsoft.AspNetCore.Http.IFormCollection>
+- Assigning `null` to value-type collections like [`ImmutableArray%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1?view=netcore-3.1): https://github.com/dotnet/corefx/issues/42399
 
 For more information, see the [open issues in System.Text.Json](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json).
 
 ---
 
 \* [`Stack`](https://docs.microsoft.com/dotnet/api/system.collections.stack?view=netcore-3.1),
-[`Stack<T>`](https://docs.microsoft.com/dotnet/api/system.collections.generic.stack-1?view=netcore-3.1),
-[`ImmutableStack<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1?view=netcore-3.1),
-[`IImmutableStack<T>`](https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1?view=netcore-3.1),
-and [`ConcurrentStack<T>`](https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentstack-1?view=netcore-3.1)
+[`Stack%601>(https://docs.microsoft.com/dotnet/api/system.collections.generic.stack-1?view=netcore-3.1),
+[`ImmutableStack%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1?view=netcore-3.1),
+[`IImmutableStack%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1?view=netcore-3.1),
+and [`ConcurrentStack%601>(https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentstack-1?view=netcore-3.1)
 instances; and instances of types that derive from them; are reversed on serialization. Thus, the serializer does not have round-trippable support
 for these types. See https://github.com/dotnet/corefx/issues/41887.
 

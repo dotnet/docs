@@ -1,14 +1,14 @@
 ---
-title: Migrate your relational databases to azure
-description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | migrate your relational databases to azure
-ms.date: 04/28/2018
+title: Migrate your relational databases to Azure
+description: Modernize Existing .NET Applications With Azure Cloud and Windows Containers | migrate your relational databases to Azure
+ms.date: 12/21/2020
 ---
 
-# Migrate your relational databases to azure
+# Migrate your relational databases to Azure
 
 Vision: Azure offers the most comprehensive database migration.
 
-In Azure, you can migrate your database servers directly to IaaS VMs (pure lift and shift), or you can migrate to Azure SQL Database, for additional benefits. Azure SQL Database offers managed instance and full database-as-a-service (DBaaS) options. Figure 3-1 shows the multiple relational database migration paths available in Azure.
+In Azure, you can migrate your database servers directly to IaaS VMs (pure lift and shift), or you can migrate to Azure SQL Database, for additional benefits. Azure SQL Database offers the managed instance and full database-as-a-service (DBaaS) options. Figure 3-1 shows the multiple relational database migration paths available in Azure.
 
 ![Database migration paths in Azure](./media/image3-1.png)
 
@@ -93,7 +93,7 @@ The automated workflow, with assessment reporting, guides you through the change
 
 Whenever you change an original RDBMS, you might need to retest. You also might need to change the SQL sentences or Object-Relational Mapping (ORM) code in your application, depending on testing results.
 
-If you have any other database (for example, IBM DB2) and you opt for a lift and shift approach, you might want to continue using those databases as IaaS VMs in Azure, unless you are willing to perform a more complex data migration. A more complex data migration will require additional effort because you'd be migrating to a different database type with new schema and different programming libraries.
+If you have any other database (for example, IBM DB2) and you opt for a lift and shift approach, you might want to continue using those databases as IaaS VMs in Azure, unless you are willing to perform a more complex data migration. A more complex data migration will require additional effort because you'd be migrating to a different database type with the new schema and different programming libraries.
 
 To learn how to migrate databases by using Azure Database Migration Service, see [Get to the cloud faster with Azure SQL Database Managed Instance and Azure Database Migration Service](https://channel9.msdn.com/Events/Build/2017/P4008).
 

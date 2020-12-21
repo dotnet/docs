@@ -1,7 +1,7 @@
 ---
 title: What about Cloud-Native applications?
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | What about Cloud-Native applications?
-ms.date: 04/28/2018
+ms.date: 12/21/2020
 ---
 
 # What about Cloud-Native applications?
@@ -41,7 +41,7 @@ For detailed guidance on how to design and develop cloud-native applications, re
 * [Architecting Cloud-Native .NET Applications for Azure](../../cloud-native/introduction.md)
 * [.NET Microservices: Architecture for containerized .NET applications](../../microservices/index.md).
 
-The most important factor to consider if you migrate a full application to the cloud-native model is that you must rearchitect to a microservices-based architecture. This clearly requires a significant investment in development because of the large refactoring process involved. This option usually is chosen for mission-critical applications that need new levels of scalability and long-term agility. But, you could start moving toward cloud-native by adding microservices for just a few new scenarios, and eventually refactor the application fully as microservices. This is an incremental approach that is the best option for some scenarios.
+The most important factor to consider if you migrate a full application to the cloud-native model is that you must rearchitect to a microservices-based architecture. This approach clearly requires a significant investment in development because of the large refactoring process involved. This option usually is chosen for mission-critical applications that need new levels of scalability and long-term agility. But, you could start moving toward cloud-native by adding microservices for just a few new scenarios, and eventually refactor the application fully as microservices. This step is an incremental approach that is the best option for some scenarios.
 
 ## What about microservices?
 
@@ -51,9 +51,9 @@ The microservices architecture is an advanced approach that you can use for appl
 
 However, microservices are not mandatory for any new or modern application. Microservices are not a "magic bullet," and they aren't the single, best way to create every application. How and when you use microservices depends on the type of application that you need to build.
 
-The microservices architecture is becoming the preferred approach for distributed and large or complex mission-critical applications that are based on multiple, independent subsystems in the form of autonomous services. In a microservices-based architecture, an application is built as a collection of services that can be independently developed, tested, versioned, deployed, and scaled. This can include any related, autonomous database per microservice.
+The microservices architecture is becoming the preferred approach for distributed and large or complex mission-critical applications that are based on multiple, independent subsystems in the form of autonomous services. In a microservices-based architecture, an application is built as a collection of services that can be independently developed, tested, versioned, deployed, and scaled. This approach can include any related, autonomous database per microservice.
 
-For a detailed look at a microservices architecture that you can implement by using .NET Core, see the downloadable PDF e-book [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook). The guide also is available [online](../../microservices/index.md).
+For a detailed look at a microservices architecture that you can implement by using .NET, see the downloadable PDF e-book [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook). The guide also is available [online](../../microservices/index.md).
 
 But even in scenarios in which microservices offer powerful capabilities-independent deployment, strong subsystem boundaries, and technology diversity-they also raise many new challenges. The challenges are related to distributed application development, such as fragmented and independent data models; achieving resilient communication between microservices; the need for eventual consistency; and operational complexity. Microservices introduce a higher level of complexity compared to traditional monolithic applications.
 

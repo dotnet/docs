@@ -17,7 +17,7 @@ The following counters are published as part of .NET runtime (CoreCLR) and are m
 |--|--|
 | :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`) | The percent of time in GC since the last GC |
 | :::no-loc text="Allocation Rate"::: (`alloc-rate`) | The number of bytes allocated per update interval |
-| :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of CPU usage of the process |
+| :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of the process's CPU usage relative to all of the system CPU resources |
 | :::no-loc text="Exception Count"::: (`exception-count`) | The number of exceptions that have occurred |
 | :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | The number of bytes thought to be allocated based on <xref:System.GC.GetTotalMemory(System.Boolean)?displayProperty=nameWithType> |
 | :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | The number of times GC has occurred for Gen 0 per update interval |

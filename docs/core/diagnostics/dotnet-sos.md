@@ -63,7 +63,7 @@ dotnet-sos install [--architecture <arch>]
 
 - **`--architecture <arch>`**
 
-  Specifies the processor architecture of the SOS binaries to install. By default, `dotnet-sos` installs the architecture of the host machine. Use this option when you are trying to install SOS for a different from the dotnet host architecture - for example, if you are running Arm32 binaries from an Arm64 host, you will need to install SOS with `dotnet-sos install --architecture Arm`.
+  Specifies the processor architecture of the SOS binaries to install. By default, `dotnet-sos` installs the architecture of the host machine. Use this option when you want to install SOS for an architecture that's different from the dotnet host architecture. For example, if you're running Arm32 binaries from an Arm64 host, you will need to install SOS with `dotnet-sos install --architecture Arm`.
 
   The following architectures are available:
 

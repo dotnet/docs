@@ -405,7 +405,12 @@ items:
     - name: EventPipe
       href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
-      href: ../core/diagnostics/logging-tracing.md
+      items:
+      - name: Overview
+        displayName: "logging and tracing"
+        href: ../core/diagnostics/logging-tracing.md
+      - name: Well-known event providers in .NET
+        href: ../core/diagnostics/well-known-event-providers.md
     - name: Runtime Events
       items:
       - name: Overview

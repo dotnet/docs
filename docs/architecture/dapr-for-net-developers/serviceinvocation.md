@@ -93,7 +93,7 @@ With the Dapr .NET SDK, your service can call another service via HTTP/REST or g
 - QueryString: A collection of query string parameters.
 - Headers: A collection of HTTP request headers.
 
-As an example, consider a call to following HTTP endpoint:
+As an example, consider a call to the following HTTP endpoint:
 
 ``` http
 http://<serviceb-address>/catalog/items?pagesize=10
@@ -161,7 +161,7 @@ The eShopOnDapr reference application benefits from the Dapr Service Invocation 
 
 Both the original and updated eShop application leverage the [Envoy proxy](https://www.envoyproxy.io/) as an API Gateway. Envoy is an open-source proxy and communication bus that is popular across modern distributed applications. Originating from Lyft, Envoy is owned and maintained by the [Cloud-Native Computing Foundation](https://www.cncf.io/).
 
-In the original eShopOnContainers implementation, the Envoy proxy gateway forwarded incoming HTTP requests directly to aggregator or back-end services. In the new eShopOnDapr, the Envoy proxy forwards request to a Dapr sidecar. The sidecar provides service invocation, mTLS, and observability.
+In the original eShopOnContainers implementation, the Envoy proxy gateway forwarded incoming HTTP requests directly to aggregator or back-end services. In the new eShopOnDapr, the Envoy proxy forwards the request to a Dapr sidecar. The sidecar provides service invocation, mTLS, and observability.
 
 Envoy is configured using a YAML definition file to control the proxy's behavior. To enable Envoy to forward HTTP requests to a Dapr sidecar container, we added a `dapr` cluster to the configuration. The cluster configuration contains a host that points to the HTTP port upon which the Dapr sidecar is listening:
 

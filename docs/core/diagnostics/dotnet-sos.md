@@ -56,8 +56,21 @@ Installs the [SOS extension](../../framework/tools/sos-dll-sos-debugging-extensi
 ### Synopsis
 
 ```console
-dotnet-sos install
+dotnet-sos install [--architecture <arch>]
 ```
+
+### Options
+
+- **`--architecture <arch>`**
+
+  Specifies the processor architecture of the SOS binaries to install. By default, `dotnet-sos` installs the architecture of the host machine. Use this option when you want to install SOS for an architecture that's different from the dotnet host architecture. For example, if you're running Arm32 binaries from an Arm64 host, you will need to install SOS with `dotnet-sos install --architecture Arm`.
+
+  The following architectures are available:
+
+  - `Arm`
+  - `Arm64`
+  - `X86`
+  - `X64`
 
 ## dotnet-sos uninstall
 

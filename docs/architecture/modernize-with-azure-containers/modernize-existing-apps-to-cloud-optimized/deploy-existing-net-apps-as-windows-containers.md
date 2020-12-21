@@ -87,8 +87,8 @@ When you add the image name to your Dockerfile file, you can select the operatin
 
 > | **Tag** | **System and version** |
 > |---|---|
-> | **microsoft/dotnet-framework:4.x-windowsservercore** | .NET Framework 4.x on Windows Server Core |
-> | **microsoft/aspnet:4.x-windowsservercore** | .NET Framework 4.x with additional ASP.NET customization, on Windows Server Core |
+> | **mcr.microsoft.com/dotnet/framework/runtime:4.x-windowsservercore-20H2** | .NET Framework 4.x on Windows Server Core |
+> | **mcr.microsoft.com/dotnet/framework/aspnet:4.x-windowsservercore-20H2** | .NET Framework 4.x with additional ASP.NET customization, on Windows Server Core |
 
 For .NET (cross-platform for Linux and Windows), the tags would look like the following:
 

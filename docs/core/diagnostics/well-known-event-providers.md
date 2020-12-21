@@ -7,13 +7,13 @@ ms.date: 12/21/2020
 
 # Well-known event providers in .NET
 
-The .NET runtime and libraries diagnostic events through a number of different event providers. Depending on your diagnostic needs, you can choose the appropriate providers to enable. This document describes a high-level overview of each of these event providers.
+The .NET runtime and libraries write diagnostic events through a number of different event providers. Depending on your diagnostic needs, you can choose the appropriate providers to enable. This document describes some of the most commonly used event providers in the .NET runtime and libraries.
 
 ## CoreCLR
 
 ### "Microsoft-Windows-DotNETRuntime" provider
 
-This provider emits various events from the .NET runtime, including the GC, Loader, JIT, Exception and other events from the runtime. Read more about each event from this provider in [Runtime Provider Events List](](../../fundamentals/diagnostics/runtime-events.md).
+This provider emits various events from the .NET runtime, including the GC, Loader, JIT, Exception and other events from the runtime. Read more about each event from this provider in [Runtime Provider Events List](../../fundamentals/diagnostics/runtime-events.md).
 
 ### "Microsoft-DotNETCore-SampleProfiler" provider
 
@@ -23,7 +23,7 @@ This provider is a .NET runtime event provider that is used for CPU sampling for
 
 ### "Microsoft-Extensions-DependencyInjection" provider
 
-This provider logs information from DependencyInjection. The table below shows events logged by `Microsoft-Extensions-DependencyInjection\ provider:
+This provider logs information from DependencyInjection. The table below shows events logged by `Microsoft-Extensions-DependencyInjection` provider:
 
 |Event name|Level|Description|
 |----------|-----|-----------|
@@ -34,7 +34,7 @@ This provider logs information from DependencyInjection. The table below shows e
 
 ### "System.Buffers.ArrayPoolEventSource" provider
 
-This provider logs information from <xref:System.Buffers.ArrayPool>. The table below shows the events logged by `ArrayPoolEventSource`.
+This provider logs information from <xref:System.Buffers.ArrayPool>. The table below shows the events logged by `ArrayPoolEventSource`:
 
 |Event name|Level|Description|
 |----------|-----|-----------|
@@ -105,7 +105,6 @@ This provider logs information on the [Task Parallel Library](../../standard/par
 
 ## ASP.NET Core
 
-ASP.NET Core also providers several event providers to help you diagnose issues in the ASP.NET Core stack. You can learn more about it in [ASP.NET Core documentation]()
-This provider is a ASP.NET Core event provider that logs various ASP.NET Core hosting related information such as HTTP connections and startup assemblies. 
+ASP.NET Core also provides several events to help you diagnose issues in the ASP.NET Core stack.
 
 To learn more about the events in ASP.NET Core and how to consume them, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).

@@ -34,7 +34,7 @@ This provider logs information from DependencyInjection. The table below shows e
 
 ### "System.Buffers.ArrayPoolEventSource" provider
 
-This provider logs information from <xref:System.Buffers.ArrayPool>. The table below shows the events logged by `ArrayPoolEventSource`:
+This provider logs information from the ArrayPool. The table below shows the events logged by `ArrayPoolEventSource`:
 
 |Event name|Level|Description|
 |----------|-----|-----------|
@@ -90,18 +90,18 @@ This provider logs information from <xref:System.Net.Sockets.Socket>. The table 
 
 ### "System.Threading.Tasks.TplEventSource" provider
 
-This provider logs information on the [Task Parallel Library](../../standard/parallel-programming/task-parallel-library-tpl), such as Task scheduler events. The table below shows the events logged by `TplEventSource`:
+This provider logs information on the [Task Parallel Library](../../standard/parallel-programming/task-parallel-library-tpl.md), such as Task scheduler events. The table below shows the events logged by `TplEventSource`:
 
 |Event name|Keyword|Level|Description|
 |----------|-------|-----|-----------|
-|`TaskScheduled`|`TaskTransfer`(`0x1`)<br /><br />`Tasks`(`0x2`)|Informational (4)|A <xref:System.Diagnostics.Threading.Tasks.Task> is queued to the Task scheduler.|
-|`TaskStarted`|`Tasks`(`0x2`)|Informational (4)|A <xref:System.Diagnostics.Threading.Tasks.Task> has started executing.|
-|`TaskCompleted`|`TaskStops`(`0x40`)|Informational (4)|A <xref:System.Diagnostics.Threading.Tasks.Task> has finished executing.|
-|`TaskWaitBegin`|`TaskTransfer`(`0x1`)<br /><br />`TaskWait`(`0x2`)|Informational (4)|Fired when an implicit or an explicit wait on a <xref:System.Diagnostics.Threading.Tasks.Task> completion has started.|
-|`TaskWaitEnd`|`Tasks`(`0x2`)|Verbose (5)|Fired when the wait for a <xref:System.Diagnostics.Threading.Tasks.Task> completion returns.|
+|`TaskScheduled`|`TaskTransfer`(`0x1`)<br /><br />`Tasks`(`0x2`)|Informational (4)|A <xref:System.Threading.Tasks.Task> is queued to the Task scheduler.|
+|`TaskStarted`|`Tasks`(`0x2`)|Informational (4)|A <xref:System.Threading.Tasks.Task> has started executing.|
+|`TaskCompleted`|`TaskStops`(`0x40`)|Informational (4)|A <xref:System.Threading.Tasks.Task> has finished executing.|
+|`TaskWaitBegin`|`TaskTransfer`(`0x1`)<br /><br />`TaskWait`(`0x2`)|Informational (4)|Fired when an implicit or an explicit wait on a <xref:System.Threading.Tasks.Task> completion has started.|
+|`TaskWaitEnd`|`Tasks`(`0x2`)|Verbose (5)|Fired when the wait for a <xref:System.Threading.Tasks.Task> completion returns.|
 |`TaskWaitContinuationStarted`|`Tasks`(`0x2`)|Verbose (5)|Fired when the work (method) associated with a TaskWaitEnd is started.|
 |`TaskWaitContinuationCompleted`|`TaskStops`(`0x40`)|Verbose (5)|Fired when the work (method) associated with a TaskWaitEnd is completed.|
-|`AwaitTaskContinuationScheduled`|`TaskTransfer`(`0x1`)<br /><br />`Tasks`(`0x2`)|Informational (4)|Fired when the an asynchronous continuation for a <xref:System.Diagnostics.Threading.Tasks.Task> is scheduled.|
+|`AwaitTaskContinuationScheduled`|`TaskTransfer`(`0x1`)<br /><br />`Tasks`(`0x2`)|Informational (4)|Fired when the an asynchronous continuation for a <xref:System.Threading.Tasks.Task> is scheduled.|
 
 ## ASP.NET Core
 

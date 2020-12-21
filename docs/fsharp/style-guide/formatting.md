@@ -174,11 +174,34 @@ If you have a long function definition, place the parameters on new lines and in
 
 ```fsharp
 module M =
-    let LongFunctionWithLotsOfParameters
+    let longFunctionWithLotsOfParameters
         (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         =
+        // ... the body of the method follows
+
+    let longFunctionWithLotsOfParametersAndReturnType
+        (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        : ReturnType =
+        // ... the body of the method follows
+
+    let longFunctionWithLongTupleParameter
+        (
+            aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
+        ) =
+        // ... the body of the method follows
+
+    let longFunctionWithLongTupleParameterAndReturnType
+        (
+            aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
+        ) : ReturnType =
         // ... the body of the method follows
 ```
 

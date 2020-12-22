@@ -90,6 +90,8 @@ For instance, to allow you to make the best choice for your application .NET off
 
 - [Runtime Provider Event List](../../fundamentals/diagnostics/runtime-events.md)
 
+- [Well-known Event Providers in .NET](well-known-event-providers.md)
+
 - The <xref:System.Exception.Message?displayProperty=nameWithType> property is useful for logging exceptions.
 
 - The <xref:System.Diagnostics.StackTrace?displayProperty=nameWithType> class can be useful to provide stack info in your logs.

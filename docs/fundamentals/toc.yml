@@ -409,27 +409,27 @@ items:
       - name: Overview
         displayName: "logging and tracing"
         href: ../core/diagnostics/logging-tracing.md
-      - name: Well-known event providers in .NET
+      - name: Well-known event providers
         href: ../core/diagnostics/well-known-event-providers.md
-    - name: Runtime Events
+    - name: Runtime events
       items:
       - name: Overview
         href: ../fundamentals/diagnostics/runtime-events.md
-      - name: Contention Events
+      - name: Contention events
         href: ../fundamentals/diagnostics/runtime-contention-events.md
-      - name: Exception Events
+      - name: Exception events
         href: ../fundamentals/diagnostics/runtime-exception-events.md
-      - name: Garbage Collection Events
+      - name: Garbage collection events
         href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
-      - name: Interop Events
+      - name: Interop events
         href: ../fundamentals/diagnostics/runtime-interop-events.md
-      - name: Loader and Binder Events
+      - name: Loader and binder events
         href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
-      - name: Method Events
+      - name: Method events
         href: ../fundamentals/diagnostics/runtime-method-events.md
-      - name: ThreadPool Events
+      - name: ThreadPool events
         href: ../fundamentals/diagnostics/runtime-thread-events.md
-      - name: Type System Events
+      - name: Type-system events
         href: ../fundamentals/diagnostics/runtime-type-events.md
     - name: Collect diagnostics in containers
       href: ../core/diagnostics/diagnostics-in-containers.md

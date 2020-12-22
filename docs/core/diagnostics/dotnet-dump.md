@@ -169,6 +169,8 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `syncblk <arguments>`               | Displays the SyncBlock holder info.                                                           |
 | `threads|setthread <threadid>`      | Sets or displays the current thread ID for the SOS commands.                                  |
 
+> [!NOTE] Additional details can be found in [SOS Debugging Extension for .NET](sos-debugging-extension.md)
+
 ## Using `dotnet-dump`
 
 The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) can each create core dumps.

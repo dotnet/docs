@@ -7,23 +7,23 @@ ms.date: 12/21/2020
 
 # Well-known event providers in .NET
 
-The .NET runtime and libraries write diagnostic events through a number of different event providers. Depending on your diagnostic needs, you can choose the appropriate providers to enable. This document describes some of the most commonly used event providers in the .NET runtime and libraries.
+The .NET runtime and libraries write diagnostic events through a number of different event providers. Depending on your diagnostic needs, you can choose the appropriate providers to enable. This article describes some of the most commonly used event providers in the .NET runtime and libraries.
 
 ## CoreCLR
 
 ### "Microsoft-Windows-DotNETRuntime" provider
 
-This provider emits various events from the .NET runtime, including the GC, Loader, JIT, Exception and other events from the runtime. Read more about each event from this provider in [Runtime Provider Events List](../../fundamentals/diagnostics/runtime-events.md).
+This provider emits various events from the .NET runtime, including GC, loader, JIT, exception, and other events. Read more about each event from this provider in [Runtime Provider Events List](../../fundamentals/diagnostics/runtime-events.md).
 
 ### "Microsoft-DotNETCore-SampleProfiler" provider
 
-This provider is a .NET runtime event provider that is used for CPU sampling for managed callstacks. When enabled, it captures a snapshot of all threads' managed callstacks every 10 ms. To enable this, you need to specify an <xref:System.Diagnostics.Tracing.EventLevel> of `Informational` or higher.
+This provider is a .NET runtime event provider that is used for CPU sampling for managed callstacks. When enabled, it captures a snapshot of each thread's managed callstack every 10 milliseconds. To enable this capture, you must specify an <xref:System.Diagnostics.Tracing.EventLevel> of `Informational` or higher.
 
-## Framework Libaries
+## Framework libraries
 
 ### "Microsoft-Extensions-DependencyInjection" provider
 
-This provider logs information from DependencyInjection. The table below shows events logged by `Microsoft-Extensions-DependencyInjection` provider:
+This provider logs information from DependencyInjection. The following table shows events logged by the `Microsoft-Extensions-DependencyInjection` provider:
 
 |Event name|Level|Description|
 |----------|-----|-----------|
@@ -34,7 +34,7 @@ This provider logs information from DependencyInjection. The table below shows e
 
 ### "System.Buffers.ArrayPoolEventSource" provider
 
-This provider logs information from the ArrayPool. The table below shows the events logged by `ArrayPoolEventSource`:
+This provider logs information from the ArrayPool. The following table shows the events logged by `ArrayPoolEventSource`:
 
 |Event name|Level|Description|
 |----------|-----|-----------|
@@ -57,7 +57,7 @@ This provider logs information from the HTTP stack. The table below shows the ev
 |ConnectionClosed|Informational (4)|An HTTP connection has been closed.|
 |RequestLeftQueue|Informational (4)|An HTTP request has left the request queue.|
 |RequestHeadersStart|Informational (4)|An HTTP request for header has started.|
-|RequestHeaderStop|Informational (4)|An HTTP requset for header has finished.|
+|RequestHeaderStop|Informational (4)|An HTTP request for header has finished.|
 |RequestContentStart|Informational (4)|An HTTP request for content has started.|
 |RequestContentStop|Informational (4)|An HTTP request for content has finished.|
 |ResponseHeadersStart|Informational (4)|An HTTP response for header has started.|
@@ -99,8 +99,8 @@ This provider logs information on the [Task Parallel Library](../../standard/par
 |`TaskCompleted`|`TaskStops`(`0x40`)|Informational (4)|A <xref:System.Threading.Tasks.Task> has finished executing.|
 |`TaskWaitBegin`|`TaskTransfer`(`0x1`)<br /><br />`TaskWait`(`0x2`)|Informational (4)|Fired when an implicit or an explicit wait on a <xref:System.Threading.Tasks.Task> completion has started.|
 |`TaskWaitEnd`|`Tasks`(`0x2`)|Verbose (5)|Fired when the wait for a <xref:System.Threading.Tasks.Task> completion returns.|
-|`TaskWaitContinuationStarted`|`Tasks`(`0x2`)|Verbose (5)|Fired when the work (method) associated with a TaskWaitEnd is started.|
-|`TaskWaitContinuationCompleted`|`TaskStops`(`0x40`)|Verbose (5)|Fired when the work (method) associated with a TaskWaitEnd is completed.|
+|`TaskWaitContinuationStarted`|`Tasks`(`0x2`)|Verbose (5)|Fired when the work (method) associated with a `TaskWaitEnd` is started.|
+|`TaskWaitContinuationCompleted`|`TaskStops`(`0x40`)|Verbose (5)|Fired when the work (method) associated with a `TaskWaitEnd` is completed.|
 |`AwaitTaskContinuationScheduled`|`TaskTransfer`(`0x1`)<br /><br />`Tasks`(`0x2`)|Informational (4)|Fired when the an asynchronous continuation for a <xref:System.Threading.Tasks.Task> is scheduled.|
 
 ## ASP.NET Core

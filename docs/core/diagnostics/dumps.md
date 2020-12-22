@@ -48,11 +48,11 @@ To collect dump at your own request, you can use `dotnet-dump`, which is a CLI t
 
 ## Analyze dumps
 
-Dumps can be analyzed using the [`dotnet-dump`](dotnet-dump.md) CLI tool or with [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/using-dump-files). 
+Dumps can be analyzed using the [`dotnet-dump`](dotnet-dump.md) CLI tool or with [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/using-dump-files). 
 
 > [!NOTE] Visual Studio 16.8 and later allows you to [open Linux dumps](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/) generated on .NET Core 3.1.7 or later.  
 
-> [!NOTE] If native debugging is necessary, the [SOS debugger extension](sos-debugging-extension.md) can be used with and LLDB on Linux/MacOS. SOS is also supported with [Windbg/cdb](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) on Windows though Visual Studio is recommended.
+> [!NOTE] If native debugging is necessary, the [SOS debugger extension](sos-debugging-extension.md) can be used with and LLDB on Linux/MacOS. SOS is also supported with [Windbg/cdb](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) on Windows though Visual Studio is recommended.
 
 ## See also
 

@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 # SOS debugging extension
 
-The SOS Debugging Extension lets you view information about code that is running inside the .NET Core runtime, both on live processes and dumps. The extension is pre-installed with [dotnet-dump](dotnet-dump.md) and [Windbg/dbg](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools), and can be [downloaded](dotnet-sos.md) for use with LLDB.  The SOS Debugging Extension is useful for collecting information about the managed heap, look for heap corruptions, display internal data types used by the runtime, and view information about all managed code running inside the runtime.
+The SOS Debugging Extension lets you view information about code that is running inside the .NET Core runtime, both on live processes and dumps. The extension is pre-installed with [dotnet-dump](dotnet-dump.md) and [Windbg/dbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools), and can be [downloaded](dotnet-sos.md) for use with LLDB.  The SOS Debugging Extension is useful for collecting information about the managed heap, look for heap corruptions, display internal data types used by the runtime, and view information about all managed code running inside the runtime.
 
 ## Syntax
 

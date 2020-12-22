@@ -97,7 +97,7 @@ The following counters are published by the HTTP stack.
 
 ## "System.Net.NameResolution" counters (Available on .NET 5 and later versions)
 
-The following counters track metrics related to name resolution.
+The following counters track metrics related to DNS lookups.
 
 | Counter | Description |
 |--|--|

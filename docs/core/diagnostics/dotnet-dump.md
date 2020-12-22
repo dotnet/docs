@@ -154,13 +154,13 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `dso|dumpstackobjects <arguments>`  | Displays all managed objects found within the bounds of the current stack.                    |
 | `eeheap <arguments>`                | Displays info about process memory consumed by internal runtime data structures.              |
 | `finalizequeue <arguments>`         | Displays all objects registered for finalization.                                             |
-| `gcroot <arguments>`                | Displays info about references (or roots) to an object at the specified address.              |
+| `gcroot <arguments>`                | Displays info about references (or roots) to the object at the specified address.             |
 | `gcwhere <arguments>`               | Displays the location in the GC heap of the argument passed in.                               |
 | `ip2md <arguments>`                 | Displays the `MethodDesc` structure at the specified address in JIT code.                     |
 | `histclear <arguments>`             | Releases any resources used by the family of `hist*` commands.                                |
 | `histinit <arguments>`              | Initializes the SOS structures from the stress log saved in the debuggee.                     |
 | `histobj <arguments>`               | Displays the garbage collection stress log relocations related to `<arguments>`.              |
-| `histobjfind <arguments>`           | Displays all the log entries that reference an object at the specified address.               |
+| `histobjfind <arguments>`           | Displays all the log entries that reference the object at the specified address.              |
 | `histroot <arguments>`              | Displays information related to both promotions and relocations of the specified root.        |
 | `lm|modules`                        | Displays the native modules in the process.                                                   |
 | `name2ee <arguments>`               | Displays the `MethodTable` and `EEClass` structures for the `<argument>`.                     |

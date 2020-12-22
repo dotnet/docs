@@ -146,23 +146,23 @@ However the common commands have been aliased so that you don't need the `sos` p
 |    `dumpobj`                          | Displays info the object at the specified address.
 |    `dumpstack`                        | Displays a native and managed stack trace.
 |    `eeheap`                           | Displays info about process memory consumed by internal runtime data structures.
-|    `eestack`                          | Runs dumpstack on all threads in the process.
-|    `gcroot`                           | Displays info about references (or roots) to an object at the specified address.
+|    `eestack`                          | Runs `dumpstack` on all threads in the process.
+|    `gcroot`                           | Displays info about references (or roots) to the object at the specified address.
 |    `histclear`                        | Releases any resources used by the family of Hist commands.
 |    `histinit`                         | Initializes the SOS structures from the stress log saved in the debuggee.
 |    `histobj`                          | Examines all stress log relocation records and displays the chain of garbage collection relocations that may have led to the address passed in as an argument.
-|    `histobjfind`                      | Displays all the log entries that reference an object at the specified address.
+|    `histobjfind`                      | Displays all the log entries that reference the object at the specified address.
 |    `histroot`                         | Displays information related to both promotions and relocations of the specified root.
 |    `ip2md`                            | Displays the `MethodDesc` structure at the specified address in code that has been JIT-compiled.
 |    `loadsymbols`                      | Load the .NET Core native module symbols.
 |    `name2ee`                          | Displays the `MethodTable` and `EEClass` structures for the specified type or method in the specified module.
 |    `pe`                               | Displays and formats fields of any object derived from the Exception class at the specified address.
-|    `setclrpath`                       | Set the path to load coreclr dac/dbi files. setclrpath `<path`>
+|    `setclrpath`                       | Set the path to load coreclr dac/dbi files: `setclrpath <path>`
 |    `sethostruntime`                   | Sets or displays the .NET Core runtime directory to use to run managed code in SOS.
 |    `setsymbolserver`                  | Enables the symbol server support.
-|    `setsostid`                        | Set the current os tid/thread index instead of using the one lldb provides. setsostid `<tid`> `<index`>
-|    `sos`                              | Various coreclr debugging commands. See 'soshelp' for more details. sos `<command-name`> `<args`>
-|    `soshelp`                          | Displays all available commands when no parameter is specified, or displays detailed help information about the specified command. soshelp `<command`>
+|    `setsostid`                        | Set the current OS tid/thread index instead of using the one lldb provides: `setsostid <tid> <index>`
+|    `sos`                              | Various coreclr debugging commands. See 'soshelp' for more details. `sos <command-name> <args>`
+|    `soshelp`                          | Displays all available commands when no parameter is specified, or displays detailed help information about the specified command: `soshelp <command>`
 |    `syncblk`                          | Displays the SyncBlock holder info.
 
 ## Windbg/cdb example usage

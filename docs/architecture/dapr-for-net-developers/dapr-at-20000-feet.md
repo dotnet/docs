@@ -150,7 +150,7 @@ At the time of this writing, the following component types are provided by Dapr:
 | [Bindings](https://github.com/dapr/components-contrib/tree/master/bindings) | Provides a uniform interface to trigger application events from external systems and invoke external systems with optional data payloads. |
 | [Middleware](https://github.com/dapr/components-contrib/tree/master/middleware) | Allows custom middleware to plug into the request processing pipeline and invoke additional actions on a request or response. |
 | [Secret stores](https://github.com/dapr/components-contrib/tree/master/secretstores) | Provides a uniform interface to interact with external secret stores, including cloud, edge, commercial, open-source services. |
-| [Tracing exporters](https://github.com/dapr/components-contrib/tree/master/exporters) | Provides uniform interface to open telemetry wrappers. |
+| [Tracing exporters](https://github.com/dapr/components-contrib/tree/master/exporters) | Provides a uniform interface to open telemetry wrappers. |
 
 As our jet completes it fly over of Dapr, we look back once more and can see how it connects together.
 

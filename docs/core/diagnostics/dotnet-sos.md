@@ -37,7 +37,9 @@ dotnet-sos [-h|--help] [options] [command]]
 
 ## Description
 
-The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging-extension.md) allowing inspection of managed .NET Core state from native debuggers like WinDbg/cdb on Windows and lldb on Linux and macOS. Recent versions of the [Windows Debugger](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) (>= version 10.0.18317.1001 of WinDbg or cdb) will load SOS automatically from the Microsoft extension gallery, so installing SOS via the `dotnet-sos` tool is only needed on Linux and macOS or on Windows if using older debugging tools.
+The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging-extension.md) allowing inspection of managed .NET Core state from native debuggers like lldb and windbg. 
+
+> [!NOTE] Installing SOS via the `dotnet-sos` tool is only needed on Linux or macOS.  It may also be needed Windows if using older debugging tools.  This is because recent versions of the [Windows Debugger](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) (>= version 10.0.18317.1001 of WinDbg or cdb) will load SOS automatically from the Microsoft extension gallery.  
 
 ## Options
 

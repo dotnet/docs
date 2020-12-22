@@ -79,7 +79,7 @@ The following counters are published as part of the [ASP.NET Core Kestrel web se
 | :::no-loc text="Total Connections"::: (`total-connections`) | The total number of connections to the web server |
 | :::no-loc text="Total TLS Handshakes"::: (`total-tls-handshakes`) | The total number of TLS handshakes with the web server |
 
-## "System.Net.Http" counters
+## "System.Net.Http" counters (Available on .NET 5 and later versions)
 
 The following counters are published by the HTTP stack.
 
@@ -95,7 +95,7 @@ The following counters are published by the HTTP stack.
 | :::no-loc text="HTTP 1.1 Requests Queue Duration"::: (`http11-requests-queue-duration`) | The average duration of the time HTTP 1.1 requests spent in the request queue |
 | :::no-loc text="HTTP 2.0 Requests Queue Duration"::: (`http20-requests-queue-duration`) | The average duration of the time HTTP 2.0 requests spent in the request queue |
 
-## "System.Net.NameResolution" counters
+## "System.Net.NameResolution" counters (Available on .NET 5 and later versions)
 
 The following counters track metrics related to name resolution.
 
@@ -104,7 +104,7 @@ The following counters track metrics related to name resolution.
 | :::no-loc text="DNS Lookups Requested"::: (`dns-lookups-requested`) | The number of DNS lookups requested since the process started |
 | :::no-loc text="Average DNS Lookup Duration"::: (`dns-lookups-duration`) | The average time taken for DNS lookups |
 
-## "System.Net.Security" counters
+## "System.Net.Security" counters (Available on .NET 5 and later versions)
 
 The following counters track metrics related to the Transport Layer Security protocol.
 
@@ -125,7 +125,7 @@ The following counters track metrics related to the Transport Layer Security pro
 | :::no-loc text="TLS 1.2 Handshake Duration"::: (`tls12-handshake-duration`) | The average duration of TLS 1.2 handshakes |
 | :::no-loc text="TLS 1.3 Handshake Duration"::: (`tls13-handshake-duration`) | The average duration of TLS 1.3 handshakes |
 
-## "System.Net.Sockets" counters
+## "System.Net.Sockets" counters (Available on .NET 5 and later versions)
 
 The following counters track metrics related to <xref:System.Net.Sockets.Socket>.
 

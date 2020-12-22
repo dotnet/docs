@@ -169,195 +169,43 @@ However the common commands have been aliased so that you don't need the SOS pre
 |    soshelp                          | Displays all available commands when no parameter is specified, or displays detailed help information about the specified command. soshelp `<command`>
 |    syncblk                          | Displays the SyncBlock holder info.
 
-## Examples
+## Windbg/cdb example usage
 
-### Windbg/cdb Example Usage
-
-The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
-
-```
-!dumparray -start 2 -length 5 -detail 00ad28d0
-```
-
- The following command displays the contents of an assembly at the address `1ca248`.
-
-```
-!dumpassembly 1ca248
-```
-
- The following command displays information about the garbage collector heap.
-
-```
-!dumpheap
-```
-
- The following command writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
-
-```
-!DumpLog
-```
-
- The following command displays the `MethodDesc` structure at the address `902f40`.
-
-```
-!dumpmd 902f40
-```
-
- The following command displays information about a module at the address `1caa50`.
-
-```
-!dumpmodule 1caa50
-```
-
- The following command displays information about an object at the address `a79d40`.
-
-```
-!DumpObj a79d40
-```
-
- The following command displays the fields of a value class at the address `00a79d9c` using the method table at the address `0090320c`.
-
-```
-!DumpVC 0090320c 00a79d9c
-```
-
- The following command displays the process memory used by the garbage collector.
-
-```
-!eeheap -gc
-```
-
- The following command displays all objects scheduled for finalization.
-
-```
-!finalizequeue
-```
-
- The following command determines the application domain of an object at the address `00a79d98`.
-
-```
-!findappdomain 00a79d98
-```
-
- The following command displays all garbage collector handles in the current process.
-
-```
-!gcinfo 5b68dbb8
-```
-
- The following command displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
-
-```
-!name2ee unittest.exe MainClass.Main
-```
-
- The following command displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
-
-```
-!token2ee unittest.exe 02000003
-```
+| Command  | Description
+| - | -
+| `!dumparray -start 2 -length 5 -detail 00ad28d0` | Displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
+| `!dumpassembly 1ca248` | Displays the contents of an assembly at the address `1ca248`.
+| `!dumpheap` | Displays information about the garbage collector heap.
+| `!DumpLog` | Writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
+ `!dumpmd 902f40` | Displays the `MethodDesc` structure at the address `902f40`.
+| `!dumpmodule 1caa50` | Displays information about a module at the address `1caa50`.
+| `!DumpObj a79d40` | Displays information about an object at the address `a79d40`.
+| `!DumpVC 0090320c 00a79d9c` | Displays the fields of a value class at the address `00a79d9c` using the method table at the address `0090320c`.
+| `!eeheap` -gc | Displays the process memory used by the garbage collector.
+| `!finalizequeue` | Displays all objects scheduled for finalization.
+| `!findappdomain 00a79d98` |  Determines the application domain of an object at the address `00a79d98`.
+| `!gcinfo 5b68dbb8` | Displays all garbage collector handles in the current process.
+| `!name2ee unittest.exe MainClass.Main` | Displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
+| `!token2ee unittest.exe 02000003` | Displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
 
 ### LLDB Example Usage
 
-The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
-
-```
-sos DumpArray -start 2 -length 5 -detail 00ad28d0
-```
-
- The following command displays the contents of an assembly at the address `1ca248`.
-
-```
-sos DumpAssembly 1ca248
-```
-
- The following command displays information about the garbage collector heap.
-
-```
-dumpheap
-```
-
- The following command writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
-
-```
-dumplog
-```
-
- The following command displays the `MethodDesc` structure at the address `902f40`.
-
-```
-dumpmd 902f40
-```
-
- The following command displays information about a module at the address `1caa50`.
-
-```
-dumpmodule 1caa50
-```
-
- The following command displays information about an object at the address `a79d40`.
-
-```
-dumpobj a79d40
-```
-
- The following command displays the fields of a value class at the address `00a79d9c` using the method table at the address `0090320c`.
-
-```
-sos DumpVC 0090320c 00a79d9c
-```
-
- The following command displays the process memory used by the garbage collector.
-
-```
-eeheap -gc
-```
-
- The following command determines the application domain of an object at the address `00a79d98`.
-
-```
-sos FindAppDomain 00a79d98
-```
-
- The following command displays all garbage collector handles in the current process.
-
-```
-sos GCInfo 5b68dbb8
-```
-
- The following command displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
-
-```
-name2ee unittest.exe MainClass.Main
-```
-
- The following command displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
-
-```
-sos Token2EE unittest.exe 02000003
-```
-
- The following displays the managed threads and the threadstate for one:
-
-```
-clrthreads
-
-ThreadCount:      2
-UnstartedThread:  0
-BackgroundThread: 1
-PendingThread:    0
-DeadThread:       0
-Hosted Runtime:   no
-                                                                                                        Lock
-       ID OSID ThreadOBJ           State GC Mode     GC Alloc Context                  Domain           Count Apt Exception
-   1    1 12fd 0000000000673A90    20020 Cooperative 00007FFF5801D9A0:00007FFF5801E808 0000000000654CD0 0     Ukn
-   7    2 1306 0000000000697E90    21220 Preemptive  0000000000000000:0000000000000000 0000000000654CD0 0     Ukn (Finalizer)
-(lldb) sos ThreadState 21220
-    Legal to Join
-    Background
-    CLR Owns
-    Fully initialized
-```
+| Command  | Description
+| - | -
+| `sos DumpArray -start 2 -length 5 -detail 00ad28d0` | Displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
+| `sos DumpAssembly 1ca248` | Displays the contents of an assembly at the address `1ca248`.
+| `dumpheap` | Displays information about the garbage collector heap.
+| `dumplog` | Writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
+| `dumpmd 902f40` | Displays the `MethodDesc` structure at the address `902f40`.
+| `dumpmodule 1caa50` | Displays information about a module at the address `1caa50`.
+| `dumpobj a79d40` | Displays information about an object at the address `a79d40`.
+| `sos DumpVC 0090320c 00a79d9c` | Displays the fields of a value class at the address `00a79d9c` using the method table at the address `0090320c`.
+| `eeheap -gc` | Displays the process memory used by the garbage collector.
+| `sos FindAppDomain 00a79d98` | Determines the application domain of an object at the address `00a79d98`.
+| `sos GCInfo 5b68dbb8` | Displays all garbage collector handles in the current process.
+| `name2ee unittest.exe MainClass.Main` | Displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
+| `sos Token2EE unittest.exe 02000003` | Displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
+| `clrthreads` | Displays the managed threads
 
 ## See also
 

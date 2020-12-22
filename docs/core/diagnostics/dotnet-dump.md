@@ -169,7 +169,8 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `syncblk <arguments>`               | Displays the SyncBlock holder info.                                                           |
 | `threads|setthread <threadid>`      | Sets or displays the current thread ID for the SOS commands.                                  |
 
-> [!NOTE] Additional details can be found in [SOS Debugging Extension for .NET](sos-debugging-extension.md)
+> [!NOTE]
+Additional details can be found in [SOS Debugging Extension for .NET](sos-debugging-extension.md)
 
 ## Using `dotnet-dump`
 

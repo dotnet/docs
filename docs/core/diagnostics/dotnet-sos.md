@@ -37,9 +37,10 @@ dotnet-sos [-h|--help] [options] [command]]
 
 ## Description
 
-The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging-extension.md) allowing inspection of managed .NET Core state from native debuggers like lldb and windbg.
+The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging-extension.md). This extension lets you inspect managed .NET Core state from native debuggers like lldb and windbg.
 
-> [!NOTE] Installing SOS via the `dotnet-sos` tool is only needed on Linux or macOS.  It may also be needed Windows if using older debugging tools.  This is because recent versions of the [Windows Debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) (>= version 10.0.18317.1001 of WinDbg or cdb) will load SOS automatically from the Microsoft extension gallery.  
+> [!NOTE]
+Installing SOS via the `dotnet-sos` tool is only needed on Linux or macOS.  It may also be needed Windows if using older debugging tools.  This is because recent versions of the [Windows Debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) (>= version 10.0.18317.1001 of WinDbg or cdb) will load SOS automatically from the Microsoft extension gallery.  
 
 ## Options
 
@@ -53,7 +54,7 @@ The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging
 
 ## dotnet-sos install
 
-Installs the [SOS extension](sos-debugging-extension.md) locally for debugging .NET Core processes. On macOS and Linux, the .lldbinit file will be updated so that the extension automatically loads at lldb startup. If installing SOS on Windows with older debugging tools (< version 10.0.18317.1001), you will need to manually load the extension in WinDbg or cdb by running `.load %USERPROFILE%\.dotnet\sos\sos.dll` in the debugger.
+Installs the [SOS extension](sos-debugging-extension.md) locally for debugging .NET Core processes. On macOS and Linux, the *.lldbinit* file will be updated so that the extension automatically loads at lldb startup. If you're installing SOS on Windows with older debugging tools (prior to version 10.0.18317.1001), you will need to manually load the extension in WinDbg or cdb by running `.load %USERPROFILE%\.dotnet\sos\sos.dll` in the debugger.
 
 ### Synopsis
 
@@ -76,7 +77,7 @@ dotnet-sos install [--architecture <arch>]
 
 ## dotnet-sos uninstall
 
-Uninstalls the [SOS extension](sos-debugging-extension.md) and, if on Linux or macOS, removes it from lldb configuration.
+Uninstalls the [SOS extension](sos-debugging-extension.md) and, on Linux and macOS, removes it from lldb configuration.
 
 ### Synopsis
 

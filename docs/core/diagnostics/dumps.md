@@ -48,7 +48,7 @@ To collect dump at your own request, you can use `dotnet-dump`, which is a CLI t
 
 ## Analyze dumps
 
-Dumps can be analyzed using [`dotnet-dump`](dotnet-dump.md).
+Dumps can be analyzed using [`dotnet-dump`](dotnet-dump.md), or the [SOS debugger extension](sos-debugging-extension.md) with [Windbg/cdb](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools) (Windows) and LLDB (Linux/MacOS).
 
 ## See also
 

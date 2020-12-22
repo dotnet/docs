@@ -135,13 +135,13 @@ However the common commands have been aliased so that you don't need the `sos` p
 |    `clru`                             | Displays an annotated disassembly of a managed method.
 |    `dso`                              | Displays all managed objects found within the bounds of the current stack.
 |    `dumpasync`                        | Displays info about async state machines on the garbage-collected heap.
-|    `dumpclass`                        | Displays information about the EEClass structure at the specified address.
+|    `dumpclass`                        | Displays information about the `EEClass` structure at the specified address.
 |    `dumpdomain`                       | Displays information all the AppDomains and all assemblies within the domains.
 |    `dumpheap`                         | Displays info about the garbage-collected heap and collection statistics about objects.
 |    `dumpil`                           | Displays the Microsoft intermediate language (MSIL) that is associated with a managed method.
 |    `dumplog`                          | Writes the contents of an in-memory stress log to the specified file.
-|    `dumpmd`                           | Displays information about the MethodDesc structure at the specified address.
-|    `dumpmodule`                       | Displays information about the EE module structure at the specified address.
+|    `dumpmd`                           | Displays information about the `MethodDesc` structure at the specified address.
+|    `dumpmodule`                       | Displays information about the module at the specified address.
 |    `dumpmt`                           | Displays information about the method table at the specified address.
 |    `dumpobj`                          | Displays info the object at the specified address.
 |    `dumpstack`                        | Displays a native and managed stack trace.
@@ -153,9 +153,9 @@ However the common commands have been aliased so that you don't need the `sos` p
 |    `histobj`                          | Examines all stress log relocation records and displays the chain of garbage collection relocations that may have led to the address passed in as an argument.
 |    `histobjfind`                      | Displays all the log entries that reference an object at the specified address.
 |    `histroot`                         | Displays information related to both promotions and relocations of the specified root.
-|    `ip2md`                            | Displays the MethodDesc structure at the specified address in code that has been JIT-compiled.
+|    `ip2md`                            | Displays the `MethodDesc` structure at the specified address in code that has been JIT-compiled.
 |    `loadsymbols`                      | Load the .NET Core native module symbols.
-|    `name2ee`                          | Displays the MethodTable structure and EEClass structure for the specified type or method in the specified module.
+|    `name2ee`                          | Displays the `MethodTable` and `EEClass` structures for the specified type or method in the specified module.
 |    `pe`                               | Displays and formats fields of any object derived from the Exception class at the specified address.
 |    `setclrpath`                       | Set the path to load coreclr dac/dbi files. setclrpath `<path`>
 |    `sethostruntime`                   | Sets or displays the .NET Core runtime directory to use to run managed code in SOS.

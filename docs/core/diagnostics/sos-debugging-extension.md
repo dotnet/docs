@@ -28,6 +28,8 @@ Many of the commands have aliases or short cuts under lldb:
 
 ## Commands
 
+The table of commands below are available under **Help** or **soshelp**.  Individual command help is available using `soshelp <command>`.
+
 |Command|Description|
 |-------------|-----------------|
 |**bpmd** [**-nofuturemodule**] [\<*module name*> \<*method name*>] [**-md** <`MethodDesc`>] **-list** **-clear** \<*pending breakpoint number*> **-clearall**|Creates a breakpoint at the specified method in the specified module.<br /><br /> If the specified module and method have not been loaded, this command waits for a notification that the module was loaded and just-in-time (JIT) compiled before creating a breakpoint.<br /><br /> You can manage the list of pending breakpoints by using the **-list**, **-clear**, and **-clearall** options:<br /><br /> The **-list** option generates a list of all the pending breakpoints. If a pending breakpoint has a non-zero module ID, that breakpoint is specific to a function in that particular loaded module. If the pending breakpoint has a zero module ID, that breakpoint applies to modules that have not yet been loaded.<br /><br /> Use the **-clear** or **-clearall** option to remove pending breakpoints from the list.|

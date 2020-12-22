@@ -78,3 +78,62 @@ The following counters are published as part of the [ASP.NET Core Kestrel web se
 | :::no-loc text="TLS Handshake Rate"::: (`tls-handshakes-per-second`) | The number of TLS handshakes per update interval |
 | :::no-loc text="Total Connections"::: (`total-connections`) | The total number of connections to the web server |
 | :::no-loc text="Total TLS Handshakes"::: (`total-tls-handshakes`) | The total number of TLS handshakes with the web server |
+
+## "System.Net.Http" counters
+
+The following counters are published by the HTTP stack.
+
+| Counter | Description |
+|--|--|
+| :::no-loc text="Requests Started"::: (`requests-started`) | The number of requests started since the process started |
+| :::no-loc text="Requests Started Rate"::: (`requests-started-rate`) | The number of requests started per update interval |
+| :::no-loc text="Requests Failed"::: (`requests-failed`) | The number of requests failed since the process started |
+| :::no-loc text="Requests Failed Rate"::: (`requests-failed-rate`) | The number of requests failed per update interval |
+| :::no-loc text="Current Requests"::: (`current-requests`) | Current number of active HTTP requests that have started but not yet completed or failed |
+| :::no-loc text="Current HTTP 1.1 Connections"::: (`http11-connections-current-total`) | The current number of HTTP 1.1 connections that have started but not yet completed or failed.|
+| :::no-loc text="Current HTTP 2.0 Connections"::: (`http20-connections-current-total`) | The current number of HTTP 2.0 connections that have started but not yet completed or failed.|
+| :::no-loc text="HTTP 1.1 Requests Queue Duration"::: (`http11-requests-queue-duration`) | The average duration of the time HTTP 1.1 requests spent in the request queue |
+| :::no-loc text="HTTP 2.0 Requests Queue Duration"::: (`http20-requests-queue-duration`) | The average duration of the time HTTP 2.0 requests spent in the request queue |
+
+## "System.Net.NameResolution" counters
+
+The following counters track metrics related to name resolution.
+
+| Counter | Description |
+|--|--|
+| :::no-loc text="DNS Lookups Requested"::: (`dns-lookups-requested`) | The number of DNS lookups requested since the process started |
+| :::no-loc text="Average DNS Lookup Duration"::: (`dns-lookups-duration`) | The average time taken for DNS lookups |
+
+## "System.Net.Security" counters
+
+The following counters track metrics related to the Transport Layer Security protocol.
+
+| Counter | Description |
+|--|--|
+| :::no-loc text="TLS handshakes completed"::: (`tls-handshake-rate`) | The number of TLS handshakes completed per update interval |
+| :::no-loc text="Total TLS handshakes completed"::: (`total-tls-handshakes`) | The total number of TLS handshakes completed since the process started |
+| :::no-loc text="Current TLS handshakes"::: (`current-tls-handshakes`) | The current number of TLS handshakes that have started but not yet completed |
+| :::no-loc text="Total TLS handshakes failed"::: (`failed-tls-handshakes`) | The total number of TLS handshakes failed since the process started |
+| :::no-loc text="All TLS Sessions Active"::: (`all-tls-sessions-open`) | The number of active all TLS sessions |
+| :::no-loc text="TLS 1.0 Sessions Active"::: (`tls10-sessions-open`) | The number of active TLS 1.0 sessions |
+| :::no-loc text="TLS 1.1 Sessions Active"::: (`tls11-sessions-open`) | The number of active TLS 1.1 sessions |
+| :::no-loc text="TLS 1.2 Sessions Active"::: (`tls12-sessions-open`) | The number of active TLS 1.2 sessions |
+| :::no-loc text="TLS 1.3 Sessions Active"::: (`tls13-sessions-open`) | The number of active TLS 1.3 sessions |
+| :::no-loc text="TLS Handshake Duration"::: (`all-tls-handshake-duration`) | The average duration of all TLS handshakes |
+| :::no-loc text="TLS 1.0 Handshake Duration"::: (`tls10-handshake-duration`) | The average duration of TLS 1.0 handshakes |
+| :::no-loc text="TLS 1.1 Handshake Duration"::: (`tls11-handshake-duration`) | The average duration of TLS 1.1 handshakes |
+| :::no-loc text="TLS 1.2 Handshake Duration"::: (`tls12-handshake-duration`) | The average duration of TLS 1.2 handshakes |
+| :::no-loc text="TLS 1.3 Handshake Duration"::: (`tls13-handshake-duration`) | The average duration of TLS 1.3 handshakes |
+
+## "System.Net.Sockets" counters
+
+The following counters track metrics related to <xref:System.Net.Sockets.Socket>.
+
+| Counter | Description |
+|--|--|
+| :::no-loc text="Outgoing Connections Established"::: (`outgoing-connections-established`) | The total number of outgoing connections established since the process started |
+| :::no-loc text="Incoming Connections Established"::: (`incoming-connections-established`) | The total number of incoming connections established since the process started |
+| :::no-loc text="Bytes Received"::: (`bytes-received`) | The total number of bytes received since the process started |
+| :::no-loc text="Bytes Sent"::: (`bytes-sent`) | The total number of bytes sent since the process started |
+| :::no-loc text="Datagrams Received"::: (`datagrams-received`) | The total number of datagrams received since the process started |
+| :::no-loc text="Datagrams Sent"::: (`datagrams-sent`) | The total number of datagrams sent since the process started |

@@ -14,13 +14,15 @@ The SOS Debugging Extension lets you view information about code that is running
 
 ## Syntax
 
-### Windows 
+### Windows
+
 `![command] [options]`
 
 ### Linux and MacOS
+
 `sos [command] [options]`
 
-Many of the commands have aliases or short cuts under lldb: 
+Many of the commands have aliases or short cuts under lldb:
 
 `clrstack [options]`
 
@@ -127,46 +129,47 @@ Please see [dotnet-sos](dotnet-sos) for instructions on configuring SOS for LLDB
 By default you can reach all the SOS commands by using: _sos [command\_name]_
 However the common commands have been aliased so that you don't need the SOS prefix:
 
-    bpmd            -- Creates a breakpoint at the specified managed method in the specified module.
-    clrstack        -- Provides a stack trace of managed code only.
-    clrthreads      -- List the managed threads running.
-    clru            -- Displays an annotated disassembly of a managed method.
-    dso             -- Displays all managed objects found within the bounds of the current stack.
-    dumpasync       -- Displays info about async state machines on the garbage-collected heap.
-    dumpclass       -- Displays information about a EE class structure at the specified address.
-    dumpdomain      -- Displays information all the AppDomains and all assemblies within the domains.
-    dumpheap        -- Displays info about the garbage-collected heap and collection statistics about objects.
-    dumpil          -- Displays the Microsoft intermediate language (MSIL) that is associated with a managed method.
-    dumplog         -- Writes the contents of an in-memory stress log to the specified file.
-    dumpmd          -- Displays information about a MethodDesc structure at the specified address.
-    dumpmodule      -- Displays information about a EE module structure at the specified address.
-    dumpmt          -- Displays information about a method table at the specified address.
-    dumpobj         -- Displays info about an object at the specified address.
-    dumpstack       -- Displays a native and managed stack trace.
-    eeheap          -- Displays info about process memory consumed by internal runtime data structures.
-    eestack         -- Runs dumpstack on all threads in the process.
-    gcroot          -- Displays info about references (or roots) to an object at the specified address.
-    histclear       -- Releases any resources used by the family of Hist commands.
-    histinit        -- Initializes the SOS structures from the stress log saved in the debuggee.
-    histobj         -- Examines all stress log relocation records and displays the chain of garbage collection relocations that may have led to the address passed in as an argument.
-    histobjfind     -- Displays all the log entries that reference an object at the specified address.
-    histroot        -- Displays information related to both promotions and relocations of the specified root.
-    ip2md           -- Displays the MethodDesc structure at the specified address in code that has been JIT-compiled.
-    loadsymbols     -- Load the .NET Core native module symbols.
-    name2ee         -- Displays the MethodTable structure and EEClass structure for the specified type or method in the specified module.
-    pe              -- Displays and formats fields of any object derived from the Exception class at the specified address.
-    setclrpath      -- Set the path to load coreclr dac/dbi files. setclrpath <path>
-    sethostruntime  -- Sets or displays the .NET Core runtime directory to use to run managed code in SOS.
-    setsymbolserver -- Enables the symbol server support.
-    setsostid       -- Set the current os tid/thread index instead of using the one lldb provides. setsostid <tid> <index>
-    sos             -- Various coreclr debugging commands. See 'soshelp' for more details. sos <command-name> <args>
-    soshelp         -- Displays all available commands when no parameter is specified, or displays detailed help information about the specified command. soshelp <command>
-    syncblk         -- Displays the SyncBlock holder info.
-
+| Command                             | Function                                                                                      |
+| ----------------------------------- | --------------------------------------------------------------------------------------------- |
+|    bpmd                             | Creates a breakpoint at the specified managed method in the specified module.
+|    clrstack                         | Provides a stack trace of managed code only.
+|    clrthreads                       | List the managed threads running.
+|    clru                             | Displays an annotated disassembly of a managed method.
+|    dso                              | Displays all managed objects found within the bounds of the current stack.
+|    dumpasync                        | Displays info about async state machines on the garbage-collected heap.
+|    dumpclass                        | Displays information about a EE class structure at the specified address.
+|    dumpdomain                       | Displays information all the AppDomains and all assemblies within the domains.
+|    dumpheap                         | Displays info about the garbage-collected heap and collection statistics about objects.
+|    dumpil                           | Displays the Microsoft intermediate language (MSIL) that is associated with a managed method.
+|    dumplog                          | Writes the contents of an in-memory stress log to the specified file.
+|    dumpmd                           | Displays information about a MethodDesc structure at the specified address.
+|    dumpmodule                       | Displays information about a EE module structure at the specified address.
+|    dumpmt                           | Displays information about a method table at the specified address.
+|    dumpobj                          | Displays info about an object at the specified address.
+|    dumpstack                        | Displays a native and managed stack trace.
+|    eeheap                           | Displays info about process memory consumed by internal runtime data structures.
+|    eestack                          | Runs dumpstack on all threads in the process.
+|    gcroot                           | Displays info about references (or roots) to an object at the specified address.
+|    histclear                        | Releases any resources used by the family of Hist commands.
+|    histinit                         | Initializes the SOS structures from the stress log saved in the debuggee.
+|    histobj                          | Examines all stress log relocation records and displays the chain of garbage collection relocations that may have led to the address passed in as an argument.
+|    histobjfind                      | Displays all the log entries that reference an object at the specified address.
+|    histroot                         | Displays information related to both promotions and relocations of the specified root.
+|    ip2md                            | Displays the MethodDesc structure at the specified address in code that has been JIT-compiled.
+|    loadsymbols                      | Load the .NET Core native module symbols.
+|    name2ee                          | Displays the MethodTable structure and EEClass structure for the specified type or method in the specified module.
+|    pe                               | Displays and formats fields of any object derived from the Exception class at the specified address.
+|    setclrpath                       | Set the path to load coreclr dac/dbi files. setclrpath <path>
+|    sethostruntime                   | Sets or displays the .NET Core runtime directory to use to run managed code in SOS.
+|    setsymbolserver                  | Enables the symbol server support.
+|    setsostid                        | Set the current os tid/thread index instead of using the one lldb provides. setsostid <tid> <index>
+|    sos                              | Various coreclr debugging commands. See 'soshelp' for more details. sos <command-name> <args>
+|    soshelp                          | Displays all available commands when no parameter is specified, or displays detailed help information about the specified command. soshelp <command>
+|    syncblk                          | Displays the SyncBlock holder info.
 
 ## Examples
 
-###Windbg/cdb Example Usage
+### Windbg/cdb Example Usage
 
 The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
 
@@ -251,9 +254,8 @@ The following command displays the contents of an array at the address `00ad28d0
 ```
 !token2ee unittest.exe 02000003
 ```
-
-
 ### LLDB Example Usage
+
 The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
 
 ```
@@ -336,8 +338,7 @@ sos Token2EE unittest.exe 02000003
 
 ```
 clrthreads
-```
-```
+
 ThreadCount:      2
 UnstartedThread:  0
 BackgroundThread: 1

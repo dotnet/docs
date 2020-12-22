@@ -127,43 +127,43 @@ Please see [dotnet-sos](dotnet-sos.md) for instructions on configuring SOS for L
 By default you can reach all the SOS commands by entering: `sos [command\_name]`
 However the common commands have been aliased so that you don't need the `sos` prefix:
 
-| Command                               | Function                                                                                      |
-| ------------------------------------- | --------------------------------------------------------------------------------------------- |
-|    `bpmd`                             | Creates a breakpoint at the specified managed method in the specified module.                 |
-|    `clrstack`                         | Provides a stack trace of managed code only.                                                  |
-|    `clrthreads`                       | List the managed threads that are running.                                                    |
-|    `clru`                             | Displays an annotated disassembly of a managed method.                                        |
-|    `dso`                              | Displays all managed objects found within the bounds of the current stack.                    |
-|    `dumpasync`                        | Displays info about async state machines on the garbage-collected heap.                       |
-|    `dumpclass`                        | Displays information about the `EEClass` structure at the specified address.                  |
-|    `dumpdomain`                       | Displays information all the AppDomains and all assemblies within the specified domain.       |
-|    `dumpheap`                         | Displays info about the garbage-collected heap and collection statistics about objects.       |
-|    `dumpil`                           | Displays the Microsoft intermediate language (MSIL) that is associated with a managed method. |
-|    `dumplog`                          | Writes the contents of an in-memory stress log to the specified file.                         |
-|    `dumpmd`                           | Displays information about the `MethodDesc` structure at the specified address.               |
-|    `dumpmodule`                       | Displays information about the module at the specified address.                               |
-|    `dumpmt`                           | Displays information about the method table at the specified address.                         |
-|    `dumpobj`                          | Displays info the object at the specified address.                                            |
-|    `dumpstack`                        | Displays a native and managed stack trace.                                                    |
-|    `eeheap`                           | Displays info about process memory consumed by internal runtime data structures.              |
-|    `eestack`                          | Runs `dumpstack` on all threads in the process.                                               |
-|    `gcroot`                           | Displays info about references (or roots) to the object at the specified address.             |
-|    `histclear`                        | Releases any resources used by the family of Hist commands.                                   |
-|    `histinit`                         | Initializes the SOS structures from the stress log saved in the debuggee.                     |
-|    `histobj`                          | Examines all stress log relocation records and displays the chain of garbage collection relocations that may have led to the address passed in as an argument. |
-|    `histobjfind`                      | Displays all the log entries that reference the object at the specified address.              |
-|    `histroot`                         | Displays information related to both promotions and relocations of the specified root.        |
-|    `ip2md`                            | Displays the `MethodDesc` structure at the specified address in code that has been JIT-compiled. |
-|    `loadsymbols`                      | Load the .NET Core native module symbols.                                                     |
-|    `name2ee`                          | Displays the `MethodTable` and `EEClass` structures for the specified type or method in the specified module. |
-|    `pe`                               | Displays and formats fields of any object derived from the <xref:System.Exception> class at the specified address. |
-|    `setclrpath`                       | Set the path to load coreclr dac/dbi files: `setclrpath <path>`                               |
-|    `sethostruntime`                   | Sets or displays the .NET Core runtime directory to use to run managed code in SOS.           |
-|    `setsymbolserver`                  | Enables the symbol server support.                                                            |
-|    `setsostid`                        | Set the current OS tid/thread index instead of using the one lldb provides: `setsostid <tid> <index>` |
-|    `sos`                              | Various coreclr debugging commands. See 'soshelp' for more details. `sos <command-name> <args>` |
-|    `soshelp`                          | Displays all available commands when no parameter is specified, or displays detailed help information about the specified command: `soshelp <command>` |
-|    `syncblk`                          | Displays the SyncBlock holder info.                                                           |
+| Command                               | Function
+| ------------------------------------- | ---------------------------------------------------------------------------------------------
+|    `bpmd`                             | Creates a breakpoint at the specified managed method in the specified module.
+|    `clrstack`                         | Provides a stack trace of managed code only.
+|    `clrthreads`                       | List the managed threads that are running.
+|    `clru`                             | Displays an annotated disassembly of a managed method.
+|    `dso`                              | Displays all managed objects found within the bounds of the current stack.
+|    `dumpasync`                        | Displays info about async state machines on the garbage-collected heap.
+|    `dumpclass`                        | Displays information about the `EEClass` structure at the specified address.
+|    `dumpdomain`                       | Displays information all the AppDomains and all assemblies within the specified domain.
+|    `dumpheap`                         | Displays info about the garbage-collected heap and collection statistics about objects.
+|    `dumpil`                           | Displays the Microsoft intermediate language (MSIL) that is associated with a managed method.
+|    `dumplog`                          | Writes the contents of an in-memory stress log to the specified file.
+|    `dumpmd`                           | Displays information about the `MethodDesc` structure at the specified address.
+|    `dumpmodule`                       | Displays information about the module at the specified address.
+|    `dumpmt`                           | Displays information about the method table at the specified address.
+|    `dumpobj`                          | Displays info the object at the specified address.
+|    `dumpstack`                        | Displays a native and managed stack trace.
+|    `eeheap`                           | Displays info about process memory consumed by internal runtime data structures.
+|    `eestack`                          | Runs `dumpstack` on all threads in the process.
+|    `gcroot`                           | Displays info about references (or roots) to the object at the specified address.
+|    `histclear`                        | Releases any resources used by the family of Hist commands.
+|    `histinit`                         | Initializes the SOS structures from the stress log saved in the debuggee.
+|    `histobj`                          | Examines all stress log relocation records and displays the chain of garbage collection relocations that may have led to the address passed in as an argument.
+|    `histobjfind`                      | Displays all the log entries that reference the object at the specified address.
+|    `histroot`                         | Displays information related to both promotions and relocations of the specified root.
+|    `ip2md`                            | Displays the `MethodDesc` structure at the specified address in code that has been JIT-compiled.
+|    `loadsymbols`                      | Load the .NET Core native module symbols.
+|    `name2ee`                          | Displays the `MethodTable` and `EEClass` structures for the specified type or method in the specified module.
+|    `pe`                               | Displays and formats fields of any object derived from the <xref:System.Exception> class at the specified address.
+|    `setclrpath`                       | Set the path to load coreclr dac/dbi files: `setclrpath <path>`
+|    `sethostruntime`                   | Sets or displays the .NET Core runtime directory to use to run managed code in SOS.
+|    `setsymbolserver`                  | Enables the symbol server support.
+|    `setsostid`                        | Set the current OS tid/thread index instead of using the one lldb provides: `setsostid <tid> <index>`
+|    `sos`                              | Various coreclr debugging commands. See 'soshelp' for more details. `sos <command-name> <args>`
+|    `soshelp`                          | Displays all available commands when no parameter is specified, or displays detailed help information about the specified command: `soshelp <command>`
+|    `syncblk`                          | Displays the SyncBlock holder info.
 
 ## Windbg/cdb example usage
 

@@ -188,7 +188,7 @@ However the common commands have been aliased so that you don't need the SOS pre
 | `!name2ee unittest.exe MainClass.Main` | Displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
 | `!token2ee unittest.exe 02000003` | Displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
 
-### LLDB Example Usage
+## LLDB example usage
 
 | Command  | Description
 | - | -

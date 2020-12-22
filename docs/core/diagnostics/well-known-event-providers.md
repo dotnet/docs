@@ -46,7 +46,7 @@ This provider logs information from the ArrayPool. The following table shows the
 
 ### "System.Net.Http" provider
 
-This provider logs information from the HTTP stack. The table below shows the events logged by `System.Net.Http` provider:
+This provider logs information from the HTTP stack. The following table shows the events logged by `System.Net.Http` provider:
 
 |Event name|Level|Description|
 |----------|-----|-----------|
@@ -67,7 +67,7 @@ This provider logs information from the HTTP stack. The table below shows the ev
 
 ### "System.Net.NameResolution" provider
 
-This provider logs information related to domain name resolution. The table below shows the events logged by `System.Net.NameResolution`:
+This provider logs information related to domain name resolution. The following table shows the events logged by `System.Net.NameResolution`:
 
 |Event name|Level|Description|
 |----------|-----|-----------|
@@ -77,7 +77,7 @@ This provider logs information related to domain name resolution. The table belo
 
 ### "System.Net.Sockets" provider
 
-This provider logs information from <xref:System.Net.Sockets.Socket>. The table below shows the events logged by `System.Net.Sockets` provider:
+This provider logs information from <xref:System.Net.Sockets.Socket>. The following table shows the events logged by `System.Net.Sockets` provider:
 
 |Event name|Level|Description|
 |----------|-----|-----------|
@@ -90,7 +90,7 @@ This provider logs information from <xref:System.Net.Sockets.Socket>. The table 
 
 ### "System.Threading.Tasks.TplEventSource" provider
 
-This provider logs information on the [Task Parallel Library](../../standard/parallel-programming/task-parallel-library-tpl.md), such as Task scheduler events. The table below shows the events logged by `TplEventSource`:
+This provider logs information on the [Task Parallel Library](../../standard/parallel-programming/task-parallel-library-tpl.md), such as Task scheduler events. The following table shows the events logged by `TplEventSource`:
 
 |Event name|Keyword|Level|Description|
 |----------|-------|-----|-----------|

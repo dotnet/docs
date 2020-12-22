@@ -30,11 +30,11 @@ The choice of which print style API to use is up to you. The key differences are
   - Useful for information that your customer may need to see in the release.
   - Because it's the simplest approach, it's often used for ad-hoc temporary debugging. This debug code is often never checked in to source control.
 - <xref:System.Diagnostics.Trace?displayProperty=nameWithType>
-  - Only enabled when `TRACE` is defined.
+  - Only enabled when `TRACE` is defined by adding `#define TRACE` to your source or specifying the option `/d:TRACE` when compiling.
   - Writes to attached <xref:System.Diagnostics.Trace.Listeners>, by default the <xref:System.Diagnostics.DefaultTraceListener>.
   - Use this API when creating logs that will be enabled in most builds.
 - <xref:System.Diagnostics.Debug?displayProperty=nameWithType>
-  - Only enabled when `DEBUG` is defined.
+  - Only enabled when `DEBUG` is defined by adding `#define DEBUG` to your source or specifying the option `/d:DEBUG` when compiling.
   - Writes to an attached debugger.
   - On `*nix` writes to stderr if `COMPlus_DebugWriteToStdErr` is set.
   - Use this API when creating logs that will be enabled only in debug builds.

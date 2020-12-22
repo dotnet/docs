@@ -67,7 +67,7 @@ This provider logs information from the HTTP stack. The table below shows the ev
 
 ### "System.Net.NameResolution" provider
 
-This provider logs information related to domain name resolution (DNS). The table below shows the events logged by `System.Net.NameResolution`:
+This provider logs information related to domain name resolution. The table below shows the events logged by `System.Net.NameResolution`:
 
 |Event name|Level|Description|
 |----------|-----|-----------|

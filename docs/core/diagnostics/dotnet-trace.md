@@ -329,13 +329,6 @@ dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCoun
 
 The preceding command disables runtime events and the managed stack profiler.
 
-## .NET Providers
+## See also
 
-The .NET Core runtime supports the following .NET providers. .NET Core uses the same keywords to enable both
-`Event Tracing for Windows (ETW)` and `EventPipe` traces.
-
-| Provider name                            | Information |
-|------------------------------------------|-------------|
-| `Microsoft-Windows-DotNETRuntime`        | [The Runtime Provider](../../framework/performance/clr-etw-providers.md#the-runtime-provider)<br>[CLR Runtime Keywords](../../framework/performance/clr-etw-keywords-and-levels.md#runtime) |
-| `Microsoft-Windows-DotNETRuntimeRundown` | [The Rundown Provider](../../framework/performance/clr-etw-providers.md#the-rundown-provider)<br>[CLR Rundown Keywords](../../framework/performance/clr-etw-keywords-and-levels.md#rundown) |
-| `Microsoft-DotNETCore-SampleProfiler`    | Enables the sample profiler. |
+- [Well-known event providers from .NET](well-known-event-providers.md)

@@ -48,7 +48,7 @@ To collect dump at your own request, you can use `dotnet-dump`, which is a CLI t
 
 ## Analyze dumps
 
-Dumps can be analyzed using the [`dotnet-dump`](dotnet-dump.md) CLI tool or with [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/using-dump-files). 
+Dumps can be analyzed using the [`dotnet-dump`](dotnet-dump.md) CLI tool or with [Visual Studio](https://docs.microsoft.com/visualstudio/debugger/using-dump-files).
 
 > [!NOTE] Visual Studio 16.8 and later allows you to [open Linux dumps](https://devblogs.microsoft.com/visualstudio/linux-managed-memory-dump-debugging/) generated on .NET Core 3.1.7 or later.  
 

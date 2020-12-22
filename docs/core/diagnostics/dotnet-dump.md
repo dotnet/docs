@@ -143,7 +143,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `dumpassembly <arguments>`          | Displays details about the assembly at the specified address.                                 |
 | `dumpclass <arguments>`             | Displays information about the `EEClass` structure at the specified address.                  |
 | `dumpdelegate <arguments>`          | Displays information about the delegate at the specified address.                             |
-| `dumpdomain <arguments>`            | Displays information all the AppDomains and all assemblies within the domains.                |
+| `dumpdomain <arguments>`            | Displays information all the AppDomains and all assemblies within the specified domain.       |
 | `dumpheap <arguments>`              | Displays info about the garbage-collected heap and collection statistics about objects.       |
 | `dumpil <arguments>`                | Displays the Microsoft intermediate language (MSIL) that is associated with a managed method. |
 | `dumplog <arguments>`               | Writes the contents of an in-memory stress log to the specified file.                         |

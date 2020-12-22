@@ -156,7 +156,7 @@ However the common commands have been aliased so that you don't need the `sos` p
 |    `ip2md`                            | Displays the `MethodDesc` structure at the specified address in code that has been JIT-compiled.
 |    `loadsymbols`                      | Load the .NET Core native module symbols.
 |    `name2ee`                          | Displays the `MethodTable` and `EEClass` structures for the specified type or method in the specified module.
-|    `pe`                               | Displays and formats fields of any object derived from the Exception class at the specified address.
+|    `pe`                               | Displays and formats fields of any object derived from the <xref:System.Exception> class at the specified address.
 |    `setclrpath`                       | Set the path to load coreclr dac/dbi files: `setclrpath <path>`
 |    `sethostruntime`                   | Sets or displays the .NET Core runtime directory to use to run managed code in SOS.
 |    `setsymbolserver`                  | Enables the symbol server support.

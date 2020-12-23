@@ -102,7 +102,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 
 ## Use IOptionsSnapshot to read updated data
 
-when you use <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>, options are computed once per request when accessed and are cached for the lifetime of the request. Changes to the configuration are read after the app starts when using configuration providers that support reading updated configuration values.
+When you use <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>, options are computed once per request when accessed and are cached for the lifetime of the request. Changes to the configuration are read after the app starts when using configuration providers that support reading updated configuration values.
 
 The difference between `IOptionsMonitor` and `IOptionsSnapshot` is that:
 

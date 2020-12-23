@@ -95,5 +95,5 @@ dotnet-symbol --host-only --debugging <dump file path>
 
 ## See also
 
-* [Debugging with symbols](/windows/win32/dxtecharts/debugging-with-symbols?redirectedfrom=MSDN)
-* [Portable PDB's](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)
+* [Debugging with symbols](/windows/win32/dxtecharts/debugging-with-symbols)
+* [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)

@@ -159,7 +159,7 @@ By default you can reach all the SOS commands by entering: `sos [command\_name]`
 |    `setclrpath`                       | Sets the path to load coreclr dac/dbi files. `setclrpath <path>`
 |    `sethostruntime`                   | Sets or displays the .NET Core runtime directory to use to run managed code in SOS.
 |    `setsymbolserver`                  | Enables the symbol server support.
-|    `setsostid`                        | Set the current OS tid/thread index instead of using the one lldb provides. `setsostid <tid> <index>`
+|    `setsostid`                        | Sets the current OS tid/thread index instead of using the one lldb provides. `setsostid <tid> <index>`
 |    `sos`                              | Various coreclr debugging commands. See 'soshelp' for more details. `sos <command-name> <args>`
 |    `soshelp`                          | Displays all available commands when no parameter is specified, or displays detailed help information about the specified command: `soshelp <command>`
 |    `syncblk`                          | Displays the SyncBlock holder info.

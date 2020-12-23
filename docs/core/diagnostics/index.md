@@ -31,6 +31,10 @@ This article helps you find the various tools you need.
 
 A [dump](./dumps.md) is a file that contains a snapshot of the process at the time of creation. These can be useful for examining the state of your application for debugging purposes.
 
+## Symbols
+
+Symbols are a fundamental requirement for debugging and other diagnostic tools. The contents of symbol files vary between languages, compilers, and platforms. At a very high level symbols are a mapping between the source code and the binary produced by the compiler. These mappings are used to provide things like line number information and names of your local variables in diagnostics tools such as [Visual Studio](/visualstudio/debugger/what-is-debugging) and [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).  The following link contains a detailed explanation of [symbols](/windows/win32/dxtecharts/debugging-with-symbols) for Windows, although many of the concepts apply to other platforms as well. [.NET portable symbols](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) have a "PDB" file extension similar to Windows PDB, though are not compatible with the Windows PDB format.
+
 ## Collect diagnostics in containers
 
 The same diagnostics tools that are used in non-containerized Linux environments can also be used to [collect diagnostics in containers](diagnostics-in-containers.md). There are just a few usage changes needed to make sure the tools work in a Docker container.

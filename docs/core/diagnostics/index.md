@@ -83,6 +83,10 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 [Tutorial: Debug deadlock](debug-deadlock.md) shows you how to use the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
 
+### Debug a StackOverflow
+
+[Tutorial: Debug a StackOverflow](debug-stackoverflow.md) demonstrates how to debug a <xref:System.StackOverflowException> on Linux.
+
 ### Debug Linux dumps
 
 [Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.

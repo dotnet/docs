@@ -51,7 +51,7 @@ There will be no new .NET Standard versions after 2.1. For more information, see
 
 ## Specification
 
-The .NET Standard specification is a standardized set of APIs. The specification is maintained by .NET implementors, specifically Microsoft (includes .NET Framework, .NET Core, and Mono) and Unity.
+The .NET Standard specification is a standardized set of APIs. The specification is maintained by .NET implementers, specifically Microsoft (includes .NET Framework, .NET Core, and Mono) and Unity.
 
 ### Official artifacts
 

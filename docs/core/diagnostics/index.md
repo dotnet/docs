@@ -59,7 +59,7 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 ### dotnet-sos
 
-[dotnet-sos](dotnet-sos.md) is used to install the [SOS debugging extension](../../framework/tools/sos-dll-sos-debugging-extension.md) on Linux or MacOS (or on Windows if using older debugging tools).
+[dotnet-sos](dotnet-sos.md) installs the [SOS debugging extension](sos-debugging-extension.md) on Linux and macOS (and on Windows if you're using [Windbg/cdb](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)).
 
 ### PerfCollect
 

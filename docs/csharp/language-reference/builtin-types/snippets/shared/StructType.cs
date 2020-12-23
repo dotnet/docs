@@ -59,8 +59,8 @@ namespace builtin_types
                 Y = y;
             }
 
-            public double X { get; init; }
-            public double Y { get; init; }
+            public double X { get; }
+            public double Y { get; }
 
             public override string ToString() => $"({X}, {Y})";
         }

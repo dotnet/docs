@@ -10,7 +10,7 @@ ms.date: 08/27/2020
 
 ## Collect dumps on Linux
 
-The two recommended ways of collecting dumps on Linux:
+The two recommended ways of collecting dumps on Linux are:
 
 * [`dotnet-dump`](dotnet-dump.md) CLI tool
 * [environment variables](dumps.md#collecting-dumps-on-crash) that collect dumps on crashes.

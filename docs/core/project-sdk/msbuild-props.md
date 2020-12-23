@@ -175,7 +175,17 @@ The `LangVersion` property lets you specify a specific programming language vers
 
 For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
 
+## Default item inclusion properties
+
+
+
 ## Code analysis properties
+
+- [AnalysisLevel](#analysislevel)
+- [AnalysisMode](#analysismode)
+- [CodeAnalysisTreatWarningsAsErrors](#codeanalysistreatwarningsaserrors)
+- [EnableNETAnalyzers](#enablenetanalyzers)
+- [EnforceCodeStyleInBuild](#enforcecodestyleinbuild)
 
 ### AnalysisLevel
 
@@ -441,7 +451,7 @@ Restoring a referenced package installs all of its direct dependencies and all t
 </PropertyGroup>
 ```
 
-## Hosting properties and items
+## Hosting properties
 
 - [EnableComHosting](#enablecomhosting)
 - [EnableDynamicLoading](#enabledynamicloading)

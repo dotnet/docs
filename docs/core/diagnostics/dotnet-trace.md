@@ -329,6 +329,31 @@ dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCoun
 
 The preceding command disables runtime events and the managed stack profiler.
 
+## Use .rsp file to avoid typing long commands
+
+`dotnet-trace` supports being launched with a `.rsp` file that contains the arguments to be passed. This can be useful when enabling providers that expect lengthy arguments or when using different shell environment strips different arguments. 
+
+For example, the following provider can be cumbersome to type out each time you want to trace:
+
+```cmd
+dotnet-trace collect --providers Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandBefore@Activity1Start:-Command;Command.CommandText;ConnectionId;Operation;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nSqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandAfter@Activity1Stop:\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuting@Activity2Start:-Command;Command.CommandText;ConnectionId;IsAsync;Command.Connection.ClientConnectionId;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted@Activity2Stop:",OtherProvider,AnotherProvider
+```
+
+In addition, the example above contains `"` as part of the argument. Because quotes are not handled equally by each shell, you may experience various issues when using different shells. For example, you will need to type a command in `zsh` different to the one you type in `cmd`.
+
+Instead of typing this each time, you can save the following into a file called `myprofile.rsp`.
+
+```txt
+--providers
+Microsoft-Diagnostics-DiagnosticSource:0x3:5:FilterAndPayloadSpecs="SqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandBefore@Activity1Start:-Command;Command.CommandText;ConnectionId;Operation;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nSqlClientDiagnosticListener/System.Data.SqlClient.WriteCommandAfter@Activity1Stop:\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuting@Activity2Start:-Command;Command.CommandText;ConnectionId;IsAsync;Command.Connection.ClientConnectionId;Command.Connection.ServerVersion;Command.CommandTimeout;Command.CommandType;Command.Connection.ConnectionString;Command.Connection.Database;Command.Connection.DataSource;Command.Connection.PacketSize\r\nMicrosoft.EntityFrameworkCore/Microsoft.EntityFrameworkCore.Database.Command.CommandExecuted@Activity2Stop:",OtherProvider,AnotherProvider
+```
+
+Once you've saved `myprofile.rsp`, you can launch `dotnet-trace` with this configuration with the following command:
+
+```bash
+dotnet-trace @myprofile.rsp
+```
+
 ## See also
 
 - [Well-known event providers from .NET](well-known-event-providers.md)

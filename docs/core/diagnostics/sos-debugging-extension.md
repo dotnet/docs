@@ -124,8 +124,7 @@ To load a specific version of SOS.dll, enter the following command into the Wind
 ### LLDB Debugger
 
 Please see [dotnet-sos](dotnet-sos.md) for instructions on configuring SOS for LLDB. SOS commands can be used on live processes or dumps.<br/><br/>
-By default you can reach all the SOS commands by entering: `sos [command\_name]`
-However the common commands have been aliased so that you don't need the `sos` prefix:
+By default you can reach all the SOS commands by entering: `sos [command\_name]`. However, the common commands have been aliased so that you don't need the `sos` prefix:
 
 | Command                               | Function
 | ------------------------------------- | ---------------------------------------------------------------------------------------------
@@ -157,10 +156,10 @@ However the common commands have been aliased so that you don't need the `sos` p
 |    `loadsymbols`                      | Load the .NET Core native module symbols.
 |    `name2ee`                          | Displays the `MethodTable` and `EEClass` structures for the specified type or method in the specified module.
 |    `pe`                               | Displays and formats fields of any object derived from the <xref:System.Exception> class at the specified address.
-|    `setclrpath`                       | Set the path to load coreclr dac/dbi files: `setclrpath <path>`
+|    `setclrpath`                       | Sets the path to load coreclr dac/dbi files. `setclrpath <path>`
 |    `sethostruntime`                   | Sets or displays the .NET Core runtime directory to use to run managed code in SOS.
 |    `setsymbolserver`                  | Enables the symbol server support.
-|    `setsostid`                        | Set the current OS tid/thread index instead of using the one lldb provides: `setsostid <tid> <index>`
+|    `setsostid`                        | Sets the current OS tid/thread index instead of using the one lldb provides. `setsostid <tid> <index>`
 |    `sos`                              | Various coreclr debugging commands. See 'soshelp' for more details. `sos <command-name> <args>`
 |    `soshelp`                          | Displays all available commands when no parameter is specified, or displays detailed help information about the specified command: `soshelp <command>`
 |    `syncblk`                          | Displays the SyncBlock holder info.
@@ -201,7 +200,7 @@ However the common commands have been aliased so that you don't need the `sos` p
 | `sos GCInfo 5b68dbb8` | Displays all garbage collector handles in the current process.
 | `name2ee unittest.exe MainClass.Main` | Displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
 | `sos Token2EE unittest.exe 02000003` | Displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
-| `clrthreads` | Displays the managed threads
+| `clrthreads` | Displays the managed threads.
 
 ## See also
 

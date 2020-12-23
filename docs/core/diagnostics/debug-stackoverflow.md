@@ -75,7 +75,7 @@ This article describes how to debug a StackOverflow with lldb. If you are runnin
     ...
     ````
 
-4. Use the SOS ip2md command to figure out what method is repeating in all those mystery frames
+4. The top frame `0x00007f59b40900cc` is repeated several times. Use the [SOS](sos-debugging-extension.md) `ip2md` command to figure out what method is located at the `0x00007f59b40900cc` address
 
     ````
     (lldb) ip2md 0x00007f59b40900cc
@@ -96,7 +96,7 @@ This article describes how to debug a StackOverflow with lldb. If you are runnin
     Source file:  /temp/Program.cs @ 9
     ````
 
-5. Go look at the indicated method temp.Program.Main(System.String[]) and  source "/temp/Program.cs @ 9" to see if you can figure out what you did wrong. If it still wasn't clear you could add logging in that area of the code.
+5. Go look at the indicated method temp.Program.Main(System.String[]) and source "/temp/Program.cs @ 9" to see if you can figure out what you did wrong. If it still wasn't clear you could add logging in that area of the code.
 
 ## See Also
 

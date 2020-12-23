@@ -331,7 +331,7 @@ The preceding command disables runtime events and the managed stack profiler.
 
 ## Use .rsp file to avoid typing long commands
 
-`dotnet-trace` supports being launched with a `.rsp` file that contains the arguments to be passed. This can be useful when enabling providers that expect lengthy arguments or when using different shell environment strips different arguments. 
+`dotnet-trace` supports being launched with a `.rsp` file that contains the arguments to be passed. This can be useful when enabling providers that expect lengthy arguments or when using different shell environment strips different arguments.
 
 For example, the following provider can be cumbersome to type out each time you want to trace:
 

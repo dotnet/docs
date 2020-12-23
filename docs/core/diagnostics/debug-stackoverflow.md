@@ -51,7 +51,13 @@ This article describes how to debug a StackOverflow with lldb. If you are runnin
     Written 58191872 bytes (14207 pages) to core file
     ````
 
-2. Debug the dump in lldb to see the failing stack
+2. Install the SOS extension using [dotnet-sos](dotnet-sos.md)
+
+    ````
+    dotnet-sos install
+    ````
+
+3. Debug the dump in lldb to see the failing stack
 
     ````
     lldb --core /temp/coredump.6412
@@ -69,7 +75,7 @@ This article describes how to debug a StackOverflow with lldb. If you are runnin
     ...
     ````
 
-3. Use the SOS ip2md command to figure out what method is repeating in all those mystery frames
+4. Use the SOS ip2md command to figure out what method is repeating in all those mystery frames
 
     ````
     (lldb) ip2md 0x00007f59b40900cc
@@ -90,7 +96,7 @@ This article describes how to debug a StackOverflow with lldb. If you are runnin
     Source file:  /temp/Program.cs @ 9
     ````
 
-4. Go look at the indicated method temp.Program.Main(System.String[]) and  source "/temp/Program.cs @ 9" to see if you can figure out what you did wrong. If it still wasn't clear you could add logging in that area of the code.
+5. Go look at the indicated method temp.Program.Main(System.String[]) and  source "/temp/Program.cs @ 9" to see if you can figure out what you did wrong. If it still wasn't clear you could add logging in that area of the code.
 
 ## See Also
 

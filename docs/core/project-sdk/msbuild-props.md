@@ -359,6 +359,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 ## Reference properties and items
 
 - [AssetTargetFallback](#assettargetfallback)
+- [DisableImplicitFrameworkReferences](#disableimplicitframeworkreferences)
 - [PackageReference](#packagereference)
 - [ProjectReference](#projectreference)
 - [Reference](#reference)
@@ -373,6 +374,16 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 ```xml
 <PropertyGroup>
   <AssetTargetFallback>net461</AssetTargetFallback>
+</PropertyGroup>
+```
+
+### DisableImplicitFrameworkReferences
+
+The `DisableImplicitFrameworkReferences` property lets you control whether to implicitly reference metapackages, such as [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) or [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library). Metapackages, which are packages that consist only of dependencies on other packages, are implicitly referenced based on the [TargetFramework](#targetframework). Set this property to `true` to disable implicit [PackageReference](#packagereference) items to packages in the metapackage. If you set this property to `true`, you can add explicit references to just the packages you need.
+
+```xml
+<PropertyGroup>
+  <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
 </PropertyGroup>
 ```
 

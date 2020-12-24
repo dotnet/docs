@@ -64,7 +64,8 @@ namespace toll_calculator
                 if (hour < 6)
                 {
                     return 0.75m;
-                } else if (hour < 10)
+                }
+                else if (hour < 10)
                 {
                     if (inbound)
                     {

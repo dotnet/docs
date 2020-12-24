@@ -465,7 +465,7 @@ The `RunArguments` property defines the arguments that are passed to the app whe
 
 ### RunWorkingDirectory
 
-The `RunWorkingDirectory` property defines the working directory for the application process to be started in.
+The `RunWorkingDirectory` property defines the working directory for the application process to be started in. If you don't specify a directory, `OutDir` is used as the working directory.
 
 ```xml
 <PropertyGroup>

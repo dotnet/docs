@@ -445,7 +445,7 @@ Restoring a referenced package installs all of its direct dependencies and all t
 
 ## Run properties
 
-The following properties are used for launching an app during development in Visual Studio or with the [`dotnet run`](../tools/dotnet-run.md) command:
+The following properties are used for launching an app with the [`dotnet run`](../tools/dotnet-run.md) command:
 
 - [RunArguments](#runarguments)
 - [RunWorkingDirectory](#runworkingdirectory)

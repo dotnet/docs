@@ -69,24 +69,28 @@ This article gives a quick overview of which collections are supported.
 | <ImmutableQueue%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablequeue-1?view=netcore-3.1) |✔️|✔️|
 | [ImmutableSortedDictionary\<string, TValue>](xref:System.Collections.Immutable.ImmutableSortedDictionary%602) |✔️|✔️|
 | <ImmutableSortedSet%601> |✔️|✔️|
-| <ImmutableStack%601>\* |✔️|✔️|
+| <ImmutableStack%601> \* |✔️|✔️|
 | [IImmutableDictionary\<string, TValue>](xref:System.Collections.Immutable.IImmutableDictionary%602) |✔️|✔️|
 | <IImmutableList%601> |✔️|✔️|
 | <IImmutableQueue%601> |✔️|✔️|
 | <IImmutableSet%601> |✔️|✔️|
-| <IImmutableStack%601>\* |✔️|✔️|
+| <IImmutableStack%601> ([Note](system-text-json-converters-how-to.md#support-round-trip-for-stackt)) |✔️|✔️|
+
+\* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
 
 ## System.Collections.Specialized namespace
 
 | Type | Serialization | Deserialization |
 | --- | --- | --- |
-| <xref:System.Collections.Specialized.BitVector32>\*\* |✔️|❌|
+| <xref:System.Collections.Specialized.BitVector32> \* |✔️|❌|
 | <xref:System.Collections.Specialized.HybridDictionary> |✔️|✔️|
 | <xref:System.Collections.Specialized.IOrderedDictionary> |✔️|❌|
 | <xref:System.Collections.Specialized.ListDictionary> |✔️|✔️|
 | <xref:System.Collections.Specialized.StringCollection> |✔️|❌|
 | <xref:System.Collections.Specialized.StringDictionary> |✔️|❌|
 | <xref:System.Collections.Specialized.NameValueCollection> |✔️|❌|
+
+\* No exception is thrown when deserializing <xref:System.Collections.Specialized.BitVector32>, but the <xref:System.Collections.Specialized.BitVector32.Data> property is skipped because it is read-only (doesn't have a public setter).
 
 ## System.Collections.Concurrent namespace
 
@@ -96,7 +100,9 @@ This article gives a quick overview of which collections are supported.
 | <xref:System.Collections.Concurrent.ConcurrentBag%601> |✔️| ❌ |
 | [ConcurrentDictionary\<string, TValue>](xref:System.Collections.Concurrent.ConcurrentDictionary%602) |✔️|✔️|
 | <xref:System.Collections.Concurrent.ConcurrentQueue%601> |✔️|✔️|
-| <xref:System.Collections.Concurrent.ConcurrentStack%601>\* |✔️|✔️|
+| <xref:System.Collections.Concurrent.ConcurrentStack%601> \* |✔️|✔️|
+
+\* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
 
 ## System.Collections.ObjectModel namespace
 
@@ -117,6 +123,8 @@ a custom collection. Such types include user-defined types and types defined by 
 
 All custom collections (everything that derives from `IEnumerable`) are supported for serialization, as long as their element types are supported.
 
+### Supported custom collections
+
 A custom collection is supported for deserialization if it fulfills the following requirements:
 
 * It is not an interface or abstract
@@ -127,43 +135,29 @@ A custom collection is supported for deserialization if it fulfills the followin
   * <xref:System.Collections.Generic.ICollection%601>
   * <xref:System.Collections.IDictionary>
   * [IDictionary\<string, TValue>](xref:System.Collections.Generic.IDictionary%602),
-  * <xref:System.Collections.Generic.Stack%601>\*
+  * <xref:System.Collections.Generic.Stack%601> \*
   * <xref:System.Collections.Generic.Queue%601>
-  * <xref:System.Collections.Concurrent.ConcurrentStack%601>\*
+  * <xref:System.Collections.Concurrent.ConcurrentStack%601> \*
   * <xref:System.Collections.Concurrent.ConcurrentQueue%601>
-  * <xref:System.Collections.Stack>\*
+  * <xref:System.Collections.Stack> \*
   * <xref:System.Collections.Queue>
 * The element type is supported by <xref:System.Text.Json.JsonSerializer>
 
+\* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
+
+### Custom collections with known issues
+
 There are known issues with some custom collections:
 
-- <xref:System.Dynamic.ExpandoObject>: https://github.com/dotnet/corefx/issues/38007
-- <xref:System.Dynamic.DynamicObject>: https://github.com/dotnet/corefx/issues/41105
-- <xref:System.Data.DataTable>: https://github.com/dotnet/corefx/issues/38712
-- <xref:Microsoft.AspNetCore.Http.FormFile>: https://github.com/dotnet/corefx/issues/41401
+- <xref:System.Dynamic.ExpandoObject>: See [dotnet/runtime#29690](https://github.com/dotnet/runtime/issues/29690).
+- <xref:System.Dynamic.DynamicObject>: See [dotnet/runtime#1808](https://github.com/dotnet/runtime/issues/1808).
+- <xref:System.Data.DataTable>: See [dotnet/docs#21366](https://github.com/dotnet/docs/issues/21366).
+- <xref:Microsoft.AspNetCore.Http.FormFile>: See [dotnet/runtime#1559](https://github.com/dotnet/runtime/issues/1559).]
 - <xref:Microsoft.AspNetCore.Http.IFormCollection>
-- Assigning `null` to value-type collections like [`ImmutableArray%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1?view=netcore-3.1): https://github.com/dotnet/corefx/issues/42399
-
-For more information, see the [open issues in System.Text.Json](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json).
-
----
-
-\* [`Stack`](https://docs.microsoft.com/dotnet/api/system.collections.stack?view=netcore-3.1),
-[`Stack%601>(https://docs.microsoft.com/dotnet/api/system.collections.generic.stack-1?view=netcore-3.1),
-[`ImmutableStack%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.immutablestack-1?view=netcore-3.1),
-[`IImmutableStack%601>(https://docs.microsoft.com/dotnet/api/system.collections.immutable.iimmutablestack-1?view=netcore-3.1),
-and [`ConcurrentStack%601>(https://docs.microsoft.com/dotnet/api/system.collections.concurrent.concurrentstack-1?view=netcore-3.1)
-instances; and instances of types that derive from them; are reversed on serialization. Thus, the serializer does not have round-trippable support
-for these types. See https://github.com/dotnet/corefx/issues/41887.
-
-\** No exception is thrown when deserializing [`BitVector32`](https://docs.microsoft.com/dotnet/api/system.collections.specialized.bitvector32?view=netcore-3.1),
-but the [`Data`](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.bitvector32.data?view=netcore-3.1)
-property skipped because it is read-only (doesn't have a public setter).
-
-
-
 
 ## See also
+
+For more information, see the [open issues in System.Text.Json](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json).
 
 * [System.Text.Json overview](system-text-json-overview.md)
 * [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)

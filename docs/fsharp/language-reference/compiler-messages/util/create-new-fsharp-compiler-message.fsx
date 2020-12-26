@@ -1,3 +1,4 @@
+#!/usr/bin/env -S dotnet fsi
 (*
 Change the `messageNumber` and `messageTitle` and invoke from any directory, like this  
 `dotnet fsi ./pathToFile/create-new-fsharp-compiler-message.fsx`

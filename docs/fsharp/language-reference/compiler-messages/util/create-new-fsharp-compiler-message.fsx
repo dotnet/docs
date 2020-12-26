@@ -1,7 +1,8 @@
 #!/usr/bin/env -S dotnet fsi
 (*
-Change `messageNumber` and `messageTitle` and invoke from any directory, like this  
-`dotnet fsi ./pathToFile/create-new-fsharp-compiler-message.fsx`. 
+Change `messageNumber` and `messageTitle` and invoke from any directory.
+At the root of this repository, the command would be:  
+`dotnet fsi ./docs/fsharp/language-reference/compiler-messages/util/create-new-fsharp-compiler-message.fsx`. 
 
 On macOS and some Linux distros the shebang allows you to skip `dotnet fsi`.
 
@@ -14,8 +15,8 @@ You can find error numbers here:
 - https://github.com/dotnet/fsharp/blob/main/src/fsharp/CompilerDiagnostics.fs#L218-L350
 - https://github.com/dotnet/fsharp/blob/main/src/fsharp/FSComp.txt#L34
 *)
-let messageNumber= "0026"
-let messageTitle= "Message title"
+let messageNumber= "0023"
+let messageTitle= "Name clash"
 
 open System
 open System.IO
@@ -77,6 +78,7 @@ let body =
     |> Array.chunkBySize 2
     |> Array.append [| tocText |]
     |> Array.sort
+    |> Array.distinctBy (fun a -> a.[0])
 
 let sb = Text.StringBuilder()
 

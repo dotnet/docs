@@ -15,8 +15,8 @@ You can find error numbers here:
 - https://github.com/dotnet/fsharp/blob/main/src/fsharp/CompilerDiagnostics.fs#L218-L350
 - https://github.com/dotnet/fsharp/blob/main/src/fsharp/FSComp.txt#L34
 *)
-let messageNumber= "0023"
-let messageTitle= "Name clash"
+let messageNumber= "0037"
+let messageTitle= "Duplicate definition"
 
 open System
 open System.IO

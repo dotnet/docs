@@ -1,8 +1,11 @@
 #!/usr/bin/env -S dotnet fsi
 (*
-Change the `messageNumber` and `messageTitle` and invoke from any directory, like this  
-`dotnet fsi ./pathToFile/create-new-fsharp-compiler-message.fsx`
+Change `messageNumber` and `messageTitle` and invoke from any directory, like this  
+`dotnet fsi ./pathToFile/create-new-fsharp-compiler-message.fsx`. 
 
+On macOS and some Linux distros the shebang allows you to skip `dotnet fsi`.
+
+This script
 - creates a .md file with title, date, and SEO keywords
 - adds the .md file to toc.yml in the right order
 - creates an .fsx file for code snippets referenced in the .md file

@@ -1,7 +1,7 @@
 #!/usr/bin/env -S dotnet fsi
 (*
 Change `messageNumber` and `messageTitle` and invoke from any directory.
-At the root of this repository, the command would be:  
+At the root of this repository, the command is:  
 `dotnet fsi ./docs/fsharp/language-reference/compiler-messages/util/create-new-fsharp-compiler-message.fsx`.
 
 On macOS and some Linux distros the shebang allows you to skip `dotnet fsi`.

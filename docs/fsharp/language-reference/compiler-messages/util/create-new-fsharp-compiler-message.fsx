@@ -21,11 +21,11 @@ let messageTitle= "Name clash"
 open System
 open System.IO
 
-let prefixedMessageNumber = "FS" + messageNumber
+let prefixedMessageNumber = $"FS{messageNumber}"
 let currentDirectory = __SOURCE_DIRECTORY__
 let date = DateTime.Now.ToString "MM/dd/yyyy"
-let mdFilename = "fs" + messageNumber + ".md"
-let fsxFilename= "fs" + messageNumber + ".fsx"
+let mdFilename = $"fs{messageNumber}.md"
+let fsxFilename= $"fs{messageNumber}.fsx"
 
 /// MD file
 printfn "Writing %s" mdFilename
@@ -57,19 +57,19 @@ helpviewer_keywords:
         prefixedMessageNumber
         fsxFilename
 
-File.WriteAllText(currentDirectory + "/../" + mdFilename, mdContents, Text.Encoding.UTF8)
+File.WriteAllText($"{currentDirectory}/../{mdFilename}", mdContents, Text.Encoding.UTF8)
 
 /// Table of Contents entry
 printfn "Appending entry to toc.yml"
 
 let tocContents = 
-    File.ReadAllLines(currentDirectory + "/../toc.yml")
+    File.ReadAllLines $"{currentDirectory}/../toc.yml"
 
 let header = Array.take 3 tocContents
 
 let tocText =
-    let name = sprintf "  - name: %s - %s" prefixedMessageNumber messageTitle
-    let href = sprintf "    href: ./%s" mdFilename
+    let name = $"  - name: {prefixedMessageNumber} - {messageTitle}"
+    let href = $"    href: ./{mdFilename}"
     [| name; href |]
 
 let body =
@@ -89,10 +89,10 @@ body
     sb.AppendLine a.[0] |> ignore
     sb.AppendLine a.[1] |> ignore)
 
-File.WriteAllText(currentDirectory + "/../toc.yml", sb.ToString())
+File.WriteAllText($"{currentDirectory}/../toc.yml", sb.ToString())
 
 /// F# script file to reference in .md file
-printfn "Writing %s" fsxFilename
+printfn $"Writing {fsxFilename}"
 
 let fsxText = 
     """// comment
@@ -101,7 +101,6 @@ printfn "%i" someCode
     """
 
 let fsxFolder = 
-    currentDirectory + 
-    "/../../../../../samples/snippets/fsharp/compiler-messages/"
+    $"{currentDirectory}/../../../../../samples/snippets/fsharp/compiler-messages/"
 
 File.WriteAllText(fsxFolder + fsxFilename, fsxText)

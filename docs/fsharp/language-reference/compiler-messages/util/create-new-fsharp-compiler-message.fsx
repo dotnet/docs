@@ -28,7 +28,7 @@ let mdFilename = $"fs{messageNumber}.md"
 let fsxFilename= $"fs{messageNumber}.fsx"
 
 /// MD file
-printfn "Writing %s" mdFilename
+printfn $"Writing {mdFilename}"
 
 let mdContents = 
     sprintf

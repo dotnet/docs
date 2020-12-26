@@ -2,7 +2,7 @@
 (*
 Change `messageNumber` and `messageTitle` and invoke from any directory.
 At the root of this repository, the command would be:  
-`dotnet fsi ./docs/fsharp/language-reference/compiler-messages/util/create-new-fsharp-compiler-message.fsx`. 
+`dotnet fsi ./docs/fsharp/language-reference/compiler-messages/util/create-new-fsharp-compiler-message.fsx`.
 
 On macOS and some Linux distros the shebang allows you to skip `dotnet fsi`.
 
@@ -43,7 +43,7 @@ helpviewer_keywords:
 # {prefixedMessageNumber}: {messageTitle}
 
 [!code-fsharp[{prefixedMessageNumber}-comment](~/samples/snippets/fsharp/compiler-messages/{fsxFilename}#L2-L3)]
-        "
+"
 
 File.WriteAllText($"{currentDirectory}/../{mdFilename}", mdContents, Text.Encoding.UTF8)
 
@@ -86,7 +86,7 @@ let fsxText =
     """(* comment *)
 let someCode = 5
 printfn "%i" someCode
-    """
+"""
 
 let fsxFolder = 
     $"{currentDirectory}/../../../../../samples/snippets/fsharp/compiler-messages/"

@@ -30,32 +30,20 @@ let fsxFilename= $"fs{messageNumber}.fsx"
 /// MD file
 printfn $"Writing {mdFilename}"
 
-let mdContents = 
-    sprintf
-        "\
+let mdContents = $"\
 ---
-title: \"Compiler error %s\"
-ms.date: %s
+title: \"Compiler error {prefixedMessageNumber}\"
+ms.date: {date}
 f1_keywords:
-  - \"%s\"
+  - \"{prefixedMessageNumber}\"
 helpviewer_keywords:
-  - \"%s\"
+  - \"{prefixedMessageNumber}\"
 ---
 
-# %s: %s
+# {prefixedMessageNumber}: {messageTitle}
 
-[!code-fsharp[%s-comment](~/samples/snippets/fsharp/compiler-messages/%s#L2-L3)]
+[!code-fsharp[{prefixedMessageNumber}-comment](~/samples/snippets/fsharp/compiler-messages/{fsxFilename}#L2-L3)]
         "
-        prefixedMessageNumber
-        date
-        prefixedMessageNumber
-        prefixedMessageNumber
-
-        prefixedMessageNumber
-        messageTitle
-
-        prefixedMessageNumber
-        fsxFilename
 
 File.WriteAllText($"{currentDirectory}/../{mdFilename}", mdContents, Text.Encoding.UTF8)
 

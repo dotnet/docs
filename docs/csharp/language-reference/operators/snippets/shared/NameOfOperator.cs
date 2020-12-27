@@ -17,17 +17,22 @@ namespace operators
             Console.WriteLine(nameof(numbers));  // output: numbers
             Console.WriteLine(nameof(numbers.Count));  // output: Count
             Console.WriteLine(nameof(numbers.Add));  // output: Add
+            
+            Console.WriteLine(nameof(Person.Age)); // output: Age
+            
             // </SnippetExamples>
 
             // <SnippetVerbatim>
             var @new = 5;
             Console.WriteLine(nameof(@new));  // output: new
-            // </SnippetVerbatim>
+            // </SnippetVerbatim>            
         }
 
         private class Person
         {
             string name;
+            
+            public int Age { get; set; }
 
             // <SnippetExceptionMessage>
             public string Name

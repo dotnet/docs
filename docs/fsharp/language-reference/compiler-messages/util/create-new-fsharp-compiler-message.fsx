@@ -1,7 +1,12 @@
+#!/usr/bin/env -S dotnet fsi
 (*
-Change the `messageNumber` and `messageTitle` and invoke from any directory, like this  
-`dotnet fsi ./pathToFile/create-new-fsharp-compiler-message.fsx`
+Change `messageNumber` and `messageTitle` and invoke from any directory.
+At the root of this repository, the command is:  
+`dotnet fsi ./docs/fsharp/language-reference/compiler-messages/util/create-new-fsharp-compiler-message.fsx`.
 
+On macOS and some Linux distros the shebang allows you to skip `dotnet fsi`.
+
+This script
 - creates a .md file with title, date, and SEO keywords
 - adds the .md file to toc.yml in the right order
 - creates an .fsx file for code snippets referenced in the .md file
@@ -10,61 +15,49 @@ You can find error numbers here:
 - https://github.com/dotnet/fsharp/blob/main/src/fsharp/CompilerDiagnostics.fs#L218-L350
 - https://github.com/dotnet/fsharp/blob/main/src/fsharp/FSComp.txt#L34
 *)
-let messageNumber= "0026"
-let messageTitle= "Message title"
+let messageNumber= "0037"
+let messageTitle= "Duplicate definition"
 
 open System
 open System.IO
 
-let prefixedMessageNumber = "FS" + messageNumber
+let prefixedMessageNumber = $"FS{messageNumber}"
 let currentDirectory = __SOURCE_DIRECTORY__
 let date = DateTime.Now.ToString "MM/dd/yyyy"
-let mdFilename = "fs" + messageNumber + ".md"
-let fsxFilename= "fs" + messageNumber + ".fsx"
+let mdFilename = $"fs{messageNumber}.md"
+let fsxFilename= $"fs{messageNumber}.fsx"
 
 /// MD file
-printfn "Writing %s" mdFilename
+printfn $"Writing {mdFilename}"
 
-let mdContents = 
-    sprintf
-        "\
+let mdContents = $"\
 ---
-title: \"Compiler error %s\"
-ms.date: %s
+title: \"Compiler error {prefixedMessageNumber}\"
+ms.date: {date}
 f1_keywords:
-  - \"%s\"
+  - \"{prefixedMessageNumber}\"
 helpviewer_keywords:
-  - \"%s\"
+  - \"{prefixedMessageNumber}\"
 ---
 
-# %s: %s
+# {prefixedMessageNumber}: {messageTitle}
 
-[!code-fsharp[%s-comment](~/samples/snippets/fsharp/compiler-messages/%s#L2-L3)]
-        "
-        prefixedMessageNumber
-        date
-        prefixedMessageNumber
-        prefixedMessageNumber
+[!code-fsharp[{prefixedMessageNumber}-comment](~/samples/snippets/fsharp/compiler-messages/{fsxFilename}#L2-L3)]
+"
 
-        prefixedMessageNumber
-        messageTitle
-
-        prefixedMessageNumber
-        fsxFilename
-
-File.WriteAllText(currentDirectory + "/../" + mdFilename, mdContents, Text.Encoding.UTF8)
+File.WriteAllText($"{currentDirectory}/../{mdFilename}", mdContents, Text.Encoding.UTF8)
 
 /// Table of Contents entry
 printfn "Appending entry to toc.yml"
 
 let tocContents = 
-    File.ReadAllLines(currentDirectory + "/../toc.yml")
+    File.ReadAllLines $"{currentDirectory}/../toc.yml"
 
 let header = Array.take 3 tocContents
 
 let tocText =
-    let name = sprintf "  - name: %s - %s" prefixedMessageNumber messageTitle
-    let href = sprintf "    href: ./%s" mdFilename
+    let name = $"  - name: {prefixedMessageNumber} - {messageTitle}"
+    let href = $"    href: ./{mdFilename}"
     [| name; href |]
 
 let body =
@@ -73,6 +66,7 @@ let body =
     |> Array.chunkBySize 2
     |> Array.append [| tocText |]
     |> Array.sort
+    |> Array.distinctBy (fun a -> a.[0])
 
 let sb = Text.StringBuilder()
 
@@ -83,19 +77,18 @@ body
     sb.AppendLine a.[0] |> ignore
     sb.AppendLine a.[1] |> ignore)
 
-File.WriteAllText(currentDirectory + "/../toc.yml", sb.ToString())
+File.WriteAllText($"{currentDirectory}/../toc.yml", sb.ToString())
 
 /// F# script file to reference in .md file
-printfn "Writing %s" fsxFilename
+printfn $"Writing {fsxFilename}"
 
 let fsxText = 
-    """// comment
+    """(* comment *)
 let someCode = 5
 printfn "%i" someCode
-    """
+"""
 
 let fsxFolder = 
-    currentDirectory + 
-    "/../../../../../samples/snippets/fsharp/compiler-messages/"
+    $"{currentDirectory}/../../../../../samples/snippets/fsharp/compiler-messages/"
 
 File.WriteAllText(fsxFolder + fsxFilename, fsxText)

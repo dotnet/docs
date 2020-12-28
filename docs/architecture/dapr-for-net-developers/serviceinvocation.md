@@ -300,7 +300,7 @@ public class CatalogService : ICatalogService
 }
 ```
 
-The `HTTPExtension` object is used to pass the query string and HTTP verb details to the Catalog API.
+The `HttpInvocationOptions` object is used to pass the query string and HTTP verb details to the Catalog API.
 
 The other call made by the aggregator service is to the Basket API. It only allows authorized requests. The access token is passed along in an *Authorization* request header to ensure the call succeeds:
 
@@ -328,7 +328,7 @@ public class BasketService : IBasketService
 }
 ```
 
-There is no need to explicitly specify the HTTP verb for this POST call as `POST` is the default value of `HTTPExtension.Verb`.
+There is no need to explicitly specify the HTTP method for this POST call as `Post` is the default value of `HttpInvocationOptions.Method`.
 
 ## Summary
 

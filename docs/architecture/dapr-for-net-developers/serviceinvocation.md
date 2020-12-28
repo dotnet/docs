@@ -1,51 +1,51 @@
 ---
-title: The Dapr Service Invocation building block
-description: A deep dive into the Dapr Service Invocation building block and how to apply it
+title: The Dapr service invocation building block
+description: A deep dive into the Dapr service invocation building block and how to apply it
 author: amolenk
 ms.date: 11/28/2020
 ---
 
-# The Service Invocation building block
+# The service invocation building block
 
-Across a distributed system, one service often needs to communicate with another to complete a business operation. The [Dapr Service Invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) can help you streamline the communication between services.
+Across a distributed system, one service often needs to communicate with another to complete a business operation. The [Dapr service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) can help streamline the communication between services.
 
 ## What it solves
 
-Making calls between services in a distributed application may appear easy, but there are many challenges involved. For example, ...
+Making calls between services in a distributed application may appear easy, but there are many challenges involved. For example:
 
-- How do you know where the other services are?
-- Once you've got a service address, how do you call that service securely?
-- What happens if that call fails?
-- How do you handle retries when short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur?
+- Where the other services are located
+- How to call service securely, given the service address
+- How to handle service call failure
+- How to handle retries when short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur
 
 Lastly, as distributed applications compose many different services, capturing insights across service call graphs are critical to diagnosing production issues.
 
-The [Dapr Service Invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) addresses these challenges by using a Dapr sidecar as a [reverse proxy](https://kemptechnologies.com/reverse-proxy/reverse-proxy/) for your service.
+The Dapr service invocation building block addresses these challenges by using a Dapr sidecar as a [reverse proxy](https://kemptechnologies.com/reverse-proxy/reverse-proxy/) for your service.
 
 ## How it works
 
-Let's start with an example. Consider two services: Service A and Service B. Service A needs to call the `catalog/items` API on Service B. While Service A could take a dependency on Service B and make a direct call to it, Service A instead invokes the Service Invocation API on the Dapr sidecar. Figure 6-1 shows the operation.
+Let's start with an example. Consider two services, "Service A" and "Service B". Service A needs to call the `catalog/items` API on Service B. While Service A could take a dependency on Service B and make a direct call to it, Service A instead invokes the service invocation API on the Dapr sidecar. Figure 6-1 shows the operation.
 
-![How it Dapr service invocation works](./media/service-invocation/howitworks.png)
+![How the Dapr service invocation works](./media/service-invocation/howitworks.png)
 
 **Figure 6-1**. How Dapr service invocation works.
 
 Note the steps from the previous figure:
 
-- Step #1: Service A makes a call to the `catalog/items` endpoint in service B by invoking the Service Invocation API on the Service A sidecar.
+1. Service A makes a call to the `catalog/items` endpoint in Service B by invoking the service invocation API on the Service A sidecar.
 
-  > The sidecar uses a pluggable name resolution mechanism to resolve the address of service B. In self-hosted mode, Dapr uses [mDNS](https://www.ionos.com/digitalguide/server/know-how/multicast-dns/) to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.  
+  > [!NOTE]
+  > The sidecar uses a pluggable name resolution mechanism to resolve the address of Service B. In self-hosted mode, Dapr uses [mDNS](https://www.ionos.com/digitalguide/server/know-how/multicast-dns/) to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.  
 
-- Step #2: The service A sidecar forwards the request to the service B sidecar.
+1. The Service A sidecar forwards the request to the Service B sidecar.
 
-- Step #3: The service B sidecar makes the actual `catalog/items` request against the service B API.
+1. The Service B sidecar makes the actual `catalog/items` request against the Service B API.
 
-- Step #4: Service B executes the request and returns a response back to its sidecar.
+1. Service B executes the request and returns a response back to its sidecar.
 
-- Step #5: The Service B sidecar forwards the response back to the
- service A sidecar.
+1. The Service B sidecar forwards the response back to the Service A sidecar.
 
-- Step #6: The service A sidecar returns the response back to service A.
+1. The Service A sidecar returns the response back to Service A.
 
 Because the calls flow through sidecars, Dapr can inject some useful cross-cutting behaviors:
 
@@ -60,9 +60,10 @@ Any application can invoke a Dapr sidecar by using the native **invoke** API bui
 http://localhost:<daprPort>/v1.0/invoke/<applicationid>/method/<methodname>
 ```
 
+> [!IMPORTANT]
 > The Dapr native APIs enable any application stack that supports HTTP or gRPC to consume Dapr services.
 
-In the following example, we use *curl* to call the `catalog/items` 'GET' endpoint of `Service B`:
+In the following example, a *curl* call is made to the `catalog/items` 'GET' endpoint of `Service B`:
 
 ``` curl
 curl http://localhost:3500/v1.0/invoke/serviceb/method/catalog/items
@@ -72,10 +73,9 @@ In the next section, we'll use the .NET SDK to simplify service invocation calls
 
 ### Using the .NET SDK
 
-The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with an intuitive and language-specific way to interact with Dapr.
-The .NET `DaprClient` class can be used for most interactions.
+The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with an intuitive and language-specific way to interact with Dapr. The .NET `DaprClient` class can be used for most interactions.
 
-Calling the `InvokeMethodAsync` method from `DaprClient` invokes a  method on a remote service. The following example submits an order by calling the `order/submit` method of the `orderservice` application:
+Calling the `DaprClient.InvokeMethodAsync` invokes a method on a remote service. The following example submits an order by calling the `order/submit` method of the `orderservice` application:
 
 ``` csharp
 var result = await daprClient.InvokeMethodAsync<Order, SubmitOrderResult>(
@@ -125,13 +125,13 @@ The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnC
 
 Note the steps from the previous figure:
 
-- Step #1: The front-end calls the [API Gateway](https://docs.microsoft.com/azure/architecture/microservices/design/gateway) using HTTP/REST.
+1. The front-end calls the [API Gateway](https://docs.microsoft.com/azure/architecture/microservices/design/gateway) using HTTP/REST.
 
-- Step #2: The API Gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core back-end service using HTTP/REST.
+1. The API Gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core back-end service using HTTP/REST.
 
-- Step #3: The API Gateway forwards complex requests that involve coordinated calls to multiple back-end services to the Web Shopping Aggregator service.
+1. The API Gateway forwards complex requests that involve coordinated calls to multiple back-end services to the Web Shopping Aggregator service.
 
-- Step #4: The aggregator service uses gRPC to call core back-end  services.
+1. The aggregator service uses gRPC to call core back-end services.
 
 In the recently updated eShopOnDapr implementation, the services and API Gateway have been *Daprized* by adding Dapr sidecar containers. Figure 6-3 show the updated architecture:
 
@@ -141,21 +141,20 @@ In the recently updated eShopOnDapr implementation, the services and API Gateway
 
 Note the updated steps from the previous figure:
 
-- Step #1: The front-end still uses HTTP/REST to call the API Gateway.
+1. The front-end still uses HTTP/REST to call the API Gateway.
 
-- Step #2: The API Gateway forwards HTTP requests to its Dapr sidecar.
+1. The API Gateway forwards HTTP requests to its Dapr sidecar.
 
-- Step #3: The API Gateway sidecar sends the request to the sidecar of the aggregator or back-end service.
+1. The API Gateway sidecar sends the request to the sidecar of the aggregator or back-end service.
 
-- Step #4:  The aggregator service uses the Dapr .NET SDK to call back-end services through their sidecar architecture.
+1.  The aggregator service uses the Dapr .NET SDK to call back-end services through their sidecar architecture.
 
-Dapr implements calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST, you still get [gRPC performance benefits](https://docs.microsoft.com/dotnet/architecture/cloud-native/grpc#grpc-benefits) for calls between sidecars.
+Dapr implements calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST, you still get [gRPC performance benefits](https://docs.microsoft.com/dotnet/architecture/cloud-native/grpc#grpc-benefits) for calls between sidecars. Architecturally speaking, calls between sidecars have the highest opportunity for system performance gain. In real-world scenarios, sidecars often are located on different machines.
 
-> Architecturally speaking, calls between sidecars have the highest opportunity for system performance gain. In real-world scenarios, sidecars often are located on different machines.
+> [!NOTE]
+> The service invocation building block acts as a bridge between protocols. Calls to and from the sidecars support gRPC or HTTP protocols. Therefore, services can communicate with each other using HTTP, gRPC or a combination of both.
 
-> Note that the Service Invocation building block acts as a bridge between protocols. Calls to and from the sidecars support gRPC or HTTP protocols. Therefore, services can communicate with each other using HTTP, gRPC or a combination of both.
-
-The eShopOnDapr reference application benefits from the Dapr Service Invocation building block. The features include service discovery, automatic mTLS, and observability.
+The eShopOnDapr reference application benefits from the Dapr service invocation building block. The features include service discovery, automatic mTLS, and observability.
 
 ### Forward HTTP requests using Envoy and Dapr
 
@@ -195,15 +194,15 @@ Consider a scenario where the front-end client wants to retrieve a list of catal
 [ApiController]
 public class CatalogController : ControllerBase
 {
-    ...
+    // Omitted for brevity...
 
     [HttpGet]
     [Route("items")]
     public async Task<IActionResult> ItemsAsync(
-        [FromQuery]int pageSize = 10,
-        [FromQuery]int pageIndex = 0)
+        [FromQuery] int pageSize = 10,
+        [FromQuery] int pageIndex = 0)
     {
-        ...
+        // ...
     }
 ```
 
@@ -235,7 +234,7 @@ Most calls from the eShop front-end are simple CRUD calls. The API gateway forwa
 
 **Figure 6-4**. Update shopping basket sequence.
 
-Note how the aggregator service first retrieves catalog items from the Catalog API. It then validates items availability and pricing. Finally, the aggregator service saves the updated shopping basket by calling the Basket API.
+The aggregator service first retrieves catalog items from the Catalog API. It then validates items availability and pricing. Finally, the aggregator service saves the updated shopping basket by calling the Basket API.
 
 Let's look at some code. The aggregator service contains a `BasketController` that provides an endpoint for updating the shopping basket:
 
@@ -273,7 +272,7 @@ public class BasketController : ControllerBase
 
 The `UpdateAllBasketAsync` method gets the *Authorization* header of the incoming request using a `FromHeader` attribute. The *Authorization* header contains the access token that is needed to call protected back-end services.
 
-After receiving a request to update the basket, the aggregator service calls the Catalog API to get the item details. The Basket controller uses an injected `ICatalogService` object to make that call and communicate with the Catalog API. The original implementation of the interface used gRPC to make the call. We changed the implementation to use Dapr service invocation:
+After receiving a request to update the basket, the aggregator service calls the Catalog API to get the item details. The Basket controller uses an injected `ICatalogService` object to make that call and communicate with the Catalog API. The original implementation of the interface used gRPC to make the call. The implementation was changed to use Dapr service invocation:
 
 ``` csharp
 public class CatalogService : ICatalogService
@@ -307,9 +306,9 @@ public class CatalogService : ICatalogService
 }
 ```
 
-Note how we use the `HTTPExtension` object to pass the query string and HTTP verb details to the Catalog API.
+The `HTTPExtension` object is used to pass the query string and HTTP verb details to the Catalog API.
 
-The other call made by the aggregator service is to the Basket API. It only allows authorized requests. We pass the access token along in an *Authorization* request header to ensure the call succeeds:
+The other call made by the aggregator service is to the Basket API. It only allows authorized requests. The access token is passed along in an *Authorization* request header to ensure the call succeeds:
 
 ``` csharp
 public class BasketService : IBasketService

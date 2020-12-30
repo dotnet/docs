@@ -61,7 +61,7 @@ http://localhost:<daprPort>/v1.0/invoke/<applicationid>/method/<methodname>
 ```
 
 > [!IMPORTANT]
-> The Dapr native APIs enable any application stack that supports HTTP or gRPC to consume Dapr services.
+> The Dapr native APIs enable any application stack that supports HTTP or gRPC to use Dapr building blocks.
 
 In the following example, a *curl* call is made to the `catalog/items` 'GET' endpoint of `Service B`:
 

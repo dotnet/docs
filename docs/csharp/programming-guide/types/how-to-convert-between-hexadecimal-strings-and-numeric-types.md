@@ -55,6 +55,12 @@ These examples show you how to perform the following tasks:
   
  [!code-csharp[csProgGuideTypes#38](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#38)]  
   
+## Example  
+
+ The following example shows how to convert a [byte](../../language-reference/builtin-types/integral-numeric-types.md) array to a hexadecimal string by calling the <xref:System.Convert.ToHexString?displayProperty=nameWithType> method.  
+  
+ [!code-csharp[csProgGuideTypes#40](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#40)]  
+  
 ## See also
 
 - [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)

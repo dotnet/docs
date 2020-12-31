@@ -94,11 +94,11 @@ The next couple of sections explain how to use more advanced features of the sta
 
 ### Consistency
 
-The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that it's impossible to build a distributed system that satisfies more than two out of the following three properties: **(C)onsistency**, **(A)vailability**, and **(P)artition Tolerance**. All distributed systems need to be able to deal with "P", because they use networking and network disruptions will occur. Therefore, real world distributed systems can either be "AP" or "CP".
+The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that it's impossible to build a distributed application that satisfies more than two out of the following three properties: **(C)onsistency**, **(A)vailability**, and **(P)artition Tolerance**. All distributed applications need to be able to deal with "P", because they use networking and network disruptions will occur. Therefore, real world distributed applications can either be "AP" or "CP".
 
-"AP" systems choose availability over consistency. This is supported in Dapr with the **eventual consistency** level, and is the default behavior of the state management building block. With eventual consistency, the state store should asynchronously replicate writes/deletes to the configured quorum after acknowledging the request. Read requests can return data from any of the replicas, including those that haven't received the latest updates yet.
+"AP" applications choose availability over consistency. This is supported in Dapr with the **eventual consistency** level, and is the default behavior of the state management building block. With eventual consistency, the state store should asynchronously replicate writes/deletes to the configured quorum after acknowledging the request. Read requests can return data from any of the replicas, including those that haven't received the latest updates yet.
 
-"CP" systems choose consistency over availability. This is supported by using the **strong consistency** level. In this case, the state store should synchronously replicate writes/deletes to the configured quorum *before* completing the request. Read operations should return the most up-to-date data consistently across replicas.
+"CP" applications choose consistency over availability. This is supported by using the **strong consistency** level. In this case, the state store should synchronously replicate writes/deletes to the configured quorum *before* completing the request. Read operations should return the most up-to-date data consistently across replicas.
 
 The consistency level for a state operation is set by attaching a consistency hint to the operation. If no consistency hint is set, the default behavior is **eventual**. The following *curl* command shows how to write a `Hello=World` key/value pair to a state store using a strong consistency hint:
 
@@ -119,13 +119,13 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name> \
 > [!IMPORTANT]
 > It is up to the state store component to try to fulfill the consistency hints attached to operations. Not all data stores will support different consistency levels. See the [list of supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) for more information.
 
-
-
 ### Concurrency
 
-...
+In any application with more than one user, there's a chance of multiple users updating the same data concurrently (at the same time). Dapr support optimistic concurrency control (OCC) to resolve these kind of conflicts. OCC is based on the assumption that in real world scenarios, update conflicts do not happen that often because users typically work on different parts of the data. Therefore, it's better to assume that an update will succeed and retry if it doesn't, instead of using (often unnecessary) locks in the data store which may impact performance.
 
+Dapr uses **ETags** to implement OCC. An ETag is a value attached to a specific version of a stored key/value pair. Each time the key/value pair is updated, the ETag is changed as well. To update data in the data store, the client must attach the ETag of the version to update to the request. The state store component should only allow the update if the attached ETag matches with the latest ETag in the data store. If some other client has updated the data in the meantime, the ETags will not match and the request will fail. At this point, the client may refresh the data and retry the update. This strategy is called **first-write-wins**.
 
+It is also possible to use a **last-write-wins** strategy. In this case, the client doesn't attach an ETag to the write request. The state store component will always allow the update to go through. Last-write-wins is useful for high-throughput write scenarios in which data contingency is low or has no negative effects.
 
 ### Bulk operations
 

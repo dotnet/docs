@@ -13,25 +13,26 @@ To try out the state management building block yourself, have a look at the [cou
 
 ## What it solves
 
-Distributed applications compose many different services. For some of the services, keeping track of state is critical. For example, consider the shopping basket service in eShop. If the service didn't keep track of state, the customer would loose the content of the shopping basket each time he/she left the website. That's not something that will make our customers very happy or is good for sales. To solve this, the shopping basket service stores its state in an external store, such as Redis.
+Distributed applications compose many different services. For some of the services, keeping track of state is critical. For example, consider the shopping basket service in eShop. If the service didn't keep track of state, the customer would loose the content of the shopping basket each time he/she left the website. That's not something that will make the customers very happy or is good for sales. To solve this, the shopping basket service stores its state in an external store, such as Redis.
 
-By storing the state in an external store instead of local memory, the service itself is still considered to be **stateless**. Stateless services are preferred over **statefull** services because they don't require that all requests from a specific user are handled by the same service instance. This means that stateless services can be very easily scaled horizontally as the number of users grows.
+> [!NOTE]
+> By storing the state in an external data store instead of local memory, the service itself can still be considered to be **stateless**. Stateless services are preferred over **statefull** services because they don't require that all requests from a specific user are handled by the same service instance. This means that stateless services can be very easily scaled horizontally as the number of users grows.
 
 While keeping track of state is an important part of a distributed application, it also comes with additional challenges.  For example:
 
-- Each service may require a different kind of persistent storage. 
-- Different users may be accessing and updating data at the same time.
-- Each service may require a different consistency level. For example, **strong consistency** vs **eventual consistency**.
-- Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling)  that may occur while interacting with the persistent store.
+- The application may require different types of data stores.
+- The application may require different consistency levels for accessing and updating data. 
+- Multiple users may be accessing and updating data at the same time, requiring some sort of conflict resolution.
+- Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling)  that may occur while interacting with the data store.
 
-The Dapr state management building block directly addresses these challenges. It provides a flexible way to integrate with different state stores without requiring you to learn any third-party SDKs.
+The Dapr state management building block directly addresses these challenges. It provides a flexible way to integrate with existing state stores without adding or learning any third-party SDKs.
 
 > [!IMPORTANT]
 > Dapr state management offers a key/value API. It is not optimized for other types of data such as large models of relational or graph data. For example, eShopOnDapr does not use Dapr state management to store all data in the application. Relational data used in the Catalog service is stored in SQL Server using Entity Framework Core. The Basket API does use Dapr state management to store the basket contents because that scenario is a good fit for a key/value store.
 
 ## How it works
 
-The Dapr sidecar provides the APIs to store and retrieve key/value pairs. The actual persistence of the data is done by a configurable state store component. You can choose from a growing collection of [supported state stores](LINK), such as Azure Cosmos DB, SQL Server, and Cassandra. When you initialize Dapr for local development in self hosted mode, Dapr automatically installs and configures Redis as a state store named `statestore`. See [chapter 3: "Getting started"](LINK) for more information on installing Dapr.
+The Dapr sidecar provides the APIs to store and retrieve key/value pairs. The actual persistence of the data is done by a configurable state store component. You can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/), such as Azure Cosmos DB, SQL Server, and Cassandra. When you initialize Dapr for local development in self hosted mode, Dapr automatically installs and configures Redis as a state store named `statestore`. See [chapter 3: "Getting started"](LINK) for more information on installing Dapr. As state stores are named, you can use multiple state store components per application.
 
 In figure 5-1, a Dapr-enabled service stores a key/value pair using the default `statestore` component. 
 
@@ -68,19 +69,73 @@ Let's have a look inside the Redis cache to see how Dapr persisted the data:
 
 **TODO Inside Redis**
 
-As you can see, Dapr uses the application id `ServiceA` as a prefix for the keys. This allows multiple Dapr instances to use the same state store without running into key collisions. It also means that it's very important to always specify an application id when running your application with Dapr. If you don't specify an application id, Dapr will generate a unique value when you run the application. Each time the application id changes, you will no longer be able to access any previously stored state because the key prefix is changed.
+As you can see, Dapr uses the application id `ServiceA` as a prefix for the keys. This allows multiple Dapr instances to use the same data store without running into key collisions. It also means that it's critical to always specify an application id when running your application with Dapr. If you don't specify an application id, Dapr will generate a unique value when you run the application. Each time the application id changes, you will no longer be able to access any previously stored state because the key prefix is changed.
 
 Retrieving the stored data is just another API call. In the example below, *curl* is used to retrieve the data by directly calling the sidecar API:
 
 ```
-curl http://localhost:3500/v1.0/state/statestore/hello
+curl http://localhost:3500/v1.0/state/statestore/basket1
 ```
 
  Running the curl command returns the stored state in the response body:
 
+```json
+{
+  "basket1": {
+    "customerId": 1,
+    "items": [
+      { "itemId": "DaprHoodie", "quantity": 1 }
+    ]
+  }
+}
 ```
-{"hello":"World"}
+
+The next couple of sections explain how to use more advanced features of the state management building block, such as setting consistency and concurrency requirements, retrying failed requests, and performing bulk operations.
+
+### Consistency
+
+The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that it's impossible to build a distributed system that satisfies more than two out of the following three properties: **(C)onsistency**, **(A)vailability**, and **(P)artition Tolerance**. All distributed systems need to be able to deal with "P", because they use networking and network disruptions will occur. Therefore, real world distributed systems can either be "AP" or "CP".
+
+"AP" systems choose availability over consistency. This is supported in Dapr with the **eventual consistency** level, and is the default behavior of the state management building block. With eventual consistency, the state store should asynchronously replicate writes/deletes to the configured quorum after acknowledging the request. Read requests can return data from any of the replicas, including those that haven't received the latest updates yet.
+
+"CP" systems choose consistency over availability. This is supported by using the **strong consistency** level. In this case, the state store should synchronously replicate writes/deletes to the configured quorum *before* completing the request. Read operations should return the most up-to-date data consistently across replicas.
+
+The consistency level for a state operation is set by attaching a consistency hint to the operation. If no consistency hint is set, the default behavior is **eventual**. The following *curl* command shows how to write a `Hello=World` key/value pair to a state store using a strong consistency hint:
+
+```bash
+curl -X POST http://localhost:3500/v1.0/state/<store_name> \
+  -H "Content-Type: application/json" \
+  -d '[
+        {
+          "key": "Hello",
+          "value": "World",
+          "options": {
+            "consistency": "strong"
+          }
+        }
+      ]' 
 ```
+
+> [!IMPORTANT]
+> It is up to the state store component to try to fulfill the consistency hints attached to operations. Not all data stores will support different consistency levels. See the [list of supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) for more information.
+
+
+
+### Concurrency
+
+...
+
+
+
+### Bulk operations
+
+### # Transactions
+
+
+
+### Retry policies
+
+...
 
 
 

@@ -117,7 +117,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name> \
 ```
 
 > [!IMPORTANT]
-> It is up to the state store component to try to fulfill the consistency hints attached to operations. Not all data stores will support different consistency levels. See the [list of supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) for more information.
+> It is up to the state store component to try to fulfill the consistency hints attached to operations. Not all data stores will support the different consistency levels. See the [list of supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) for more information.
 
 ### Concurrency
 
@@ -127,21 +127,76 @@ Dapr uses **ETags** to implement OCC. An ETag is a value attached to a specific 
 
 It is also possible to use a **last-write-wins** strategy. In this case, the client doesn't attach an ETag to the write request. The state store component will always allow the update to go through. Last-write-wins is useful for high-throughput write scenarios in which data contingency is low or has no negative effects.
 
-### Bulk operations
+### Transactions
 
-### # Transactions
+Dapr supports transactions to write multi-item changes to the data store as if it is a single operation. This functionality is only available for data stores that support [ACID](https://en.wikipedia.org/wiki/ACID) transactions, such as Redis, MongoDB, PostgreSQL, SQL Server, and Azure CosmosDB.
 
+In the example below, multiple operations are sent to the state store in a single transaction. Either all operations will succeed and the transaction is committed, or one or more operations fail and the transaction is rolled back.
 
+```bash
+curl -X POST http://localhost:3500/v1.0/state/<store_name>/transaction \
+  -H "Content-Type: application/json" \
+  -d '{
+        "operations": [
+          {
+            "operation": "upsert",
+            "request": { "key": "Key1", "value": "Value1"
+            }
+          },
+          {
+            "operation": "delete",
+            "request": { "key": "Key2" }
+          }
+        ]
+      }'
+```
 
-### Retry policies
+For data stores that don't support transactions, you can still update multiple keys in a single request as shown in the example below:
 
-...
+```bash
+curl -X POST http://localhost:3500/v1.0/state/<store_name> \
+  -H "Content-Type: application/json" \
+  -d '[
+        { "key": "Key1", "value": "Value1" },
+        { "key": "Key2", "value": "Value2" }
+      ]' 
+```
 
-
+With this bulk operation, Dapr will submit each key/value pair update as a separate request to the data store.
 
 ## Using the .NET SDK
 
-> **Don't forget to explain about using state directly in controllers**
+The Dapr .NET SDK provides language specific support for .NET Core developers. The .NET SDK provides ASP.NET Core integration, allowing you to manipulate state directly from ASP.NET Core Controllers. For example, **...**:
+
+```c#
+[HttpGet("{weatherForecast}")]
+public ActionResult<WeatherForecast> Get([FromState(StoreName)] StateEntry<WeatherForecast> weatherForecast)
+{
+    if (weatherForecast.Value is null)
+    {
+        return this.NotFound();
+    }
+
+    return weatherForecast.Value;
+}
+```
+
+You can also use the `DaprClient` class introduced in chapter 4 to ...
+
+```c#
+[HttpGet("{weatherForecast}")]
+public async Task<ActionResult<WeatherForecast>> Get([FromServices] DaprClient daprClient)
+{
+    var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>(StateStore, "weatherForecast");
+  
+    if (weatherForecast.Value is null)
+    {
+        return this.NotFound();
+    }
+
+    return weatherForecast.Value;
+}
+```
 
 
 

@@ -196,13 +196,7 @@ The SDK provides additional methods to retrieve data in bulk, delete data, and e
 
 ### ASP.NET Core integration
 
-For state management, it also provides ASP.NET Core integration, allowing you to manipulate state directly from ASP.NET Core Controllers. The example below shows a Web API that returns the weather forecast for a given city:
-
-Dapr allowing you to use model binding using the `FromState` binding source attribute.
-
-
-
-Dapr also provides ASP.NET Core integration. The `FromState` attribute enables injecting a key/value pair directly into a controller action method without using the `DaprClient`. The example below shows a Web API that returns the weather forecast for a given city:
+Dapr also provides ASP.NET Core integration for state management, allowing you to use ASP.NET Core model binding to load state. The `FromState` attribute enables injecting a key/value pair directly into a controller action method without having to use `DaprClient` directly. The example below shows a Web API that returns the weather forecast for a given city:
 
 ```c#
 [HttpGet("{city}")]
@@ -217,47 +211,20 @@ public ActionResult<WeatherForecast> Get([FromState("statestore", "city")] State
 }
 ```
 
-In the example, the controller loads the weather forecast from the state store named `statestore`. The name of the parameter in the route template that holds the key is set in the FromState... key of the data to get is automatically retrieved from the HTTP route based on the route template and the name of the `WeatherForecast` method parameter. 
+In the example, the controller loads the weather forecast from the state store named `statestore`. The second parameter of the `FromState` constructor is the name of the route template variable from which to get the state key. If you omit the second parameter, the name of the bound method parameter is used (which is `forecast` in this case) to look up the route template variable.
 
-If you omit the key parameter in the `FromState` attribute constructor, ...
-
-
-
-If you require access to the ...., you can also use StateEntry. For example, because you want to update
-
-
+The `StateEntry` class composes all the information on a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. It's very useful because access to the ETag value is required for OCC. It also provides methods that allow you to delete or update the retrieved data without requiring a `DaprClient` instance. In the following example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC. 
 
 ```c#
 [HttpPut("{city}")]
-public Task Put(WeatherForecast forecast, [FromState("statestore")] StateEntry<WeatherForecast> city)
+public async Task Put(WeatherForecast updatedForecast, [FromState("statestore", "city")] StateEntry<WeatherForecast> currentForecast)
 {
-    city.Value = forecast;
-    
-    return city.Save(); //??????????
+    currentForecast.Value = updatedForecast;
+
+    var succes = await currentForecast.TrySaveAsync();
+    // ... check result
 }
 ```
-
-
-
-In the example, the controller loads the weather forecast from the state store named `WeatherForecastStore`. 
-
-
-
-
-
-
-
-The `StateEntry` class composes all the information on a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. It's important to have access to the `ETag` for OCC. StateEntry is a useful container class, because it holds together all important information on a single key/value pair.
-
-
-
-If you want to use last-write-wins, or don't need to update, you can ignore StateEntry and use the direct type.
-
-
-
-
-
-
 
 ## Reference architecture: eShopOnDapr
 

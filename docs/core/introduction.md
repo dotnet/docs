@@ -140,6 +140,7 @@ The SDK download includes the following components:
 * The desktop runtime. Provides basic services for Windows desktop apps, including Windows Forms and WPF.
 
 The runtime download includes the following components:
+
 * The desktop or ASP.NET Core runtime.
 * The [.NET runtime](#clr). Provides a type system, assembly loading, a garbage collector, native interop, and other basic services.
 * [Runtime libraries](#runtime-libraries). Provides primitive data types and fundamental utilities.

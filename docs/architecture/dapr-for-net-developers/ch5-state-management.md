@@ -16,12 +16,12 @@ To try out the state management building block yourself, have a look at the [cou
 Distributed applications compose many different services. For some of the services, keeping track of state is critical. For example, consider the shopping basket service in eShop. If the service didn't keep track of state, the customer would loose the content of the shopping basket each time he/she left the website. That's not something that will make the customers very happy or is good for sales. To solve this, the shopping basket service stores its state in an external store, such as Redis.
 
 > [!NOTE]
-> By storing the state in an external data store instead of local memory, the service itself can still be considered to be **stateless**. Stateless services are preferred over **statefull** services because they don't require that all requests from a specific user are handled by the same service instance. This means that stateless services can be very easily scaled horizontally as the number of users grows.
+> By storing the state in an external data store instead of local memory, the service itself can still be considered to be **stateless**. Stateless services are preferred over **statefull** services because they don't require that all requests from a specific user are handled by the same service instance. This means that stateless services can be very easily scaled horizontally as the number of users grow.
 
 While keeping track of state is an important part of a distributed application, it also comes with additional challenges.  For example:
 
 - The application may require different types of data stores.
-- The application may require different consistency levels for accessing and updating data. 
+- The application may require different consistency levels for accessing and updating data.
 - Multiple users may be accessing and updating data at the same time, requiring some sort of conflict resolution.
 - Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling)  that may occur while interacting with the data store.
 
@@ -34,11 +34,11 @@ The Dapr state management building block directly addresses these challenges. It
 
 The Dapr sidecar provides the APIs to store and retrieve key/value pairs. The actual persistence of the data is done by a configurable state store component. You can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/), such as Azure Cosmos DB, SQL Server, and Cassandra. When you initialize Dapr for local development in self hosted mode, Dapr automatically installs and configures Redis as a state store named `statestore`. See [chapter 3: "Getting started"](LINK) for more information on installing Dapr. As state stores are named, you can use multiple state store components per application.
 
-In figure 5-1, a Dapr-enabled service stores a key/value pair using the default `statestore` component. 
+In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair using the default `statestore` component.
 
-**TODO** Figure 5.1
+![Diagram of storing a key/value pair in a Dapr state store.](media/state-management/howitworks.png)
 
-**Figure 5-1**. Store......
+**Figure 5-1**. Storing a key/value pair in a Dapr state store.
 
 1. The service calls the state API on the sidecar. The JSON payload in the request body contains the data to store. Because this is a JSON array, you can store multiple key/value pairs with a single API call.
 
@@ -67,9 +67,18 @@ In figure 5-1, a Dapr-enabled service stores a key/value pair using the default 
 
 Let's have a look inside the Redis cache to see how Dapr persisted the data:
 
-**TODO Inside Redis**
+```
+127.0.0.1:6379> KEYS *
+1) "basketservice||basket1"
 
-As you can see, Dapr uses the application id `ServiceA` as a prefix for the keys. This allows multiple Dapr instances to use the same data store without running into key collisions. It also means that it's critical to always specify an application id when running your application with Dapr. If you don't specify an application id, Dapr will generate a unique value when you run the application. Each time the application id changes, you will no longer be able to access any previously stored state because the key prefix is changed.
+127.0.0.1:6379> HGETALL basketservice||basket1
+1) "data"
+2) "{\"items\":[{\"itemId\":\"DaprHoodie\",\"quantity\":1}],\"customerId\":1}"
+3) "version"
+4) "1"
+```
+
+As you can see, Dapr uses the application id `basketservice` as a prefix for the key. This allows multiple Dapr instances to use the same data store without running into key collisions. It also means that it's critical to always specify an application id when running your application with Dapr. If you don't specify an application id, Dapr will generate a unique value when you run the application. Each time the application id changes, you will no longer be able to access any previously stored state because the key prefix is changed.
 
 Retrieving the stored data is just another API call. In the example below, *curl* is used to retrieve the data by directly calling the sidecar API:
 
@@ -81,12 +90,13 @@ curl http://localhost:3500/v1.0/state/statestore/basket1
 
 ```json
 {
-  "basket1": {
-    "customerId": 1,
-    "items": [
-      { "itemId": "DaprHoodie", "quantity": 1 }
-    ]
-  }
+  "items": [
+    {
+      "itemId": "DaprHoodie",
+      "quantity": 1
+    }
+  ],
+  "customerId": 1
 }
 ```
 
@@ -172,7 +182,7 @@ The Dapr .NET SDK provides language specific support for .NET Core developers. Y
 var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>("statestore", "AMS");
 ```
 
-If the state store does not contain any data for key `AMS`, the result will be `default(WeatherForecast)`. 
+If the state store does not contain any data for key `AMS`, the result will be `default(WeatherForecast)`.
 
 To write data to the data store, use the `SaveStateAsync<TValue>` method:
 
@@ -205,7 +215,6 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-
 Once configured, the `FromState` attribute enables injecting a key/value pair directly into a controller action method without having to use `DaprClient` directly. The example below shows a Web API that returns the weather forecast for a given city:
 
 ```c#
@@ -223,7 +232,7 @@ public ActionResult<WeatherForecast> Get([FromState("statestore", "city")] State
 
 In the example, the controller loads the weather forecast from the state store named `statestore`. The second parameter of the `FromState` constructor is the name of the route template variable from which to get the state key. If you omit the second parameter, the name of the bound method parameter is used (which is `forecast` in this case) to look up the route template variable.
 
-The `StateEntry` class composes all the information on a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. It's very useful because access to the ETag value is required for OCC. It also provides methods that allow you to delete or update the retrieved data without requiring a `DaprClient` instance. In the following example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC. 
+The `StateEntry` class composes all the information on a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. It's very useful because access to the ETag value is required for OCC. It also provides methods that allow you to delete or update the retrieved data without requiring a `DaprClient` instance. In the following example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC.
 
 ```c#
 [HttpPut("{city}")]
@@ -338,7 +347,7 @@ auth:
   secretStore: eshop-secretstore
 ```
 
-Changing the underlying data store is now very easy. For example, switching to Azure Table Storage only requires changing the contents of the configuration file. No code changes are necessary. 
+Changing the underlying data store is now very easy. For example, switching to Azure Table Storage only requires changing the contents of the configuration file. No code changes are necessary.
 
 ## Summary
 

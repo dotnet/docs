@@ -196,7 +196,17 @@ The SDK provides additional methods to retrieve data in bulk, delete data, and e
 
 ### ASP.NET Core integration
 
-Dapr also provides ASP.NET Core integration for state management, allowing you to use ASP.NET Core model binding to load state. The `FromState` attribute enables injecting a key/value pair directly into a controller action method without having to use `DaprClient` directly. The example below shows a Web API that returns the weather forecast for a given city:
+Dapr also provides ASP.NET Core integration for state management, allowing you to use ASP.NET Core model binding to load state. To configure the integration, be sure to call `IMVCBuilder.AddDapr` in your `Startup.cs`:
+
+```c#
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers().AddDapr();
+}
+```
+
+
+Once configured, the `FromState` attribute enables injecting a key/value pair directly into a controller action method without having to use `DaprClient` directly. The example below shows a Web API that returns the weather forecast for a given city:
 
 ```c#
 [HttpGet("{city}")]

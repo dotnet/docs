@@ -238,11 +238,115 @@ public async Task Put(WeatherForecast updatedForecast, [FromState("statestore", 
 
 ## Reference architecture: eShopOnDapr
 
+The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture uses an `IBasketRepository` interface to read and write data in the Basket service. The `RedisBasketRepository` class provides the implementation using Redis as the underlying data store:
 
+```c#
+public class RedisBasketRepository : IBasketRepository
+{
+    private readonly ConnectionMultiplexer _redis;
+    private readonly IDatabase _database;
+
+    public RedisBasketRepository(ConnectionMultiplexer redis)
+    {
+        _redis = redis;
+        _database = redis.GetDatabase();
+    }
+
+    public async Task<CustomerBasket> GetBasketAsync(string customerId)
+    {
+        var data = await _database.StringGetAsync(customerId);
+
+        if (data.IsNullOrEmpty)
+        {
+            return null;
+        }
+
+        return JsonConvert.DeserializeObject<CustomerBasket>(data);
+    }
+
+    // ...
+}
+```
+
+This code uses the third-party `StackExchange.Redis` NuGet package. The following steps are taken to load the basket for a given customer:
+
+1. Inject a `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the `Startup.cs` file:
+
+   ```c#
+   services.AddSingleton<ConnectionMultiplexer>(sp =>
+   {
+       var settings = sp.GetRequiredService<IOptions<BasketSettings>>().Value;
+       var configuration = ConfigurationOptions.Parse(settings.ConnectionString, true);
+       configuration.ResolveDns = true;
+       return ConnectionMultiplexer.Connect(configuration);
+   });
+   ```
+
+2. Use the `ConnectionMultiplexer` to create an `IDatabase` instance.
+
+3. Use the `IDatabase` instance to execute a Redis StringGet call using the given `customerId` as the key.
+
+4. Check if data is loaded from Redis; if not, return `null`.
+
+5. Deserialize the data from Redis to a `CustomerBasket` object and return the result.
+
+In the updated [eShopOnDapr](LINK) implementation, a new `DaprBasketRepository` class replaces the `RedisBasketRepository` class:
+
+```c#
+public class DaprBasketRepository : IBasketRepository
+{
+    private const string StoreName = "eshop-basket-statestore";
+
+    private readonly DaprClient _daprClient;
+
+    public DaprBasketRepository(DaprClient daprClient)
+    {
+        _dapr = dapr;
+    }
+
+    public async Task<CustomerBasket> GetBasketAsync(string customerId)
+    {
+        return await _dapr.GetStateAsync<CustomerBasket>(StoreName, customerId);
+    }
+
+    // ...
+}
+```
+
+The new code uses the Dapr .NET SDK to read and write data using the state management building block. The new steps to load the basket for a customer are:
+
+1. Inject a `DaprClient` into the constructor. The `DaprClient` is registered with the dependency injection framework in the `Startup.cs` file.
+2. Use the `DaprClient.GetStateAsync` method to load the customer's basket from the configured state store and return the result.
+
+The new implementation still uses Redis as the underlying data store. But instead of having a direct reference on the `StackExchange.Redis` NuGet package, a Dapr configuration file is all that's needed:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: eshop-basket-statestore
+  namespace: default
+spec:
+  type: state.redis
+  metadata:
+  - name: redisHost
+    value: redis:6379
+  - name: redisPassword
+    secretKeyRef:
+      name: redisPassword
+auth:
+  secretStore: eshop-secretstore
+```
+
+Changing the underlying data store is now very easy. For example, switching to Azure Table Storage only requires changing the contents of the configuration file. No code changes are necessary. 
 
 ## Summary
 
+The Dapr state management building block offers a key/value API for storing data in a variety of data stores. The API provides support for bulk operations, strong and eventual consistency, optimistic concurrency control, and multi-item transactions.
 
+The .NET SDK provides language specific support for .NET Core as well as integration with ASP.NET Core. Model bindings make it easy to access and update state from ASP.NET Core controller action methods.
+
+In eShopOnDapr, the benefits of using Dapr state management instead of having a direct reference to the third-party `StackExchange.Redis` NuGet package are clear. The new implementation uses less lines of code and replacing the underlying Redis cache with a different type of data store now only requires changes to the state store configuration file.
 
 ### References
 

@@ -326,22 +326,7 @@ public class DaprEventBus : IEventBus
 
 As you can see in the code snippet, the topic name is derived from event type's name. Because all eShop services use the `IEventBus` abstraction, retrofitting Dapr required *absolutely no change* to the mainline application code.
 
-> Note how we cast the event parameter to a C# `dynamic` type. This workaround addresses an issue found in the `System.Text.Json` serializer, the Dapr SDK uses to serialize/deserialize messages. In the eShop code, an event is sometimes explicitly declared as the base-class for events `IntegrationEvent`. This is done because the specific event-type is determined dynamically at runtime based on business-logic, as seen in the following example:
-
-```csharp
-IntegrationEvent orderPaymentIntegrationEvent;
-
-if (_settings.PaymentSucceeded && (!_settings.MaxOrderTotal.HasValue || @event.Total < _settings.MaxOrderTotal ))
-{
-    orderPaymentIntegrationEvent = new OrderPaymentSucceededIntegrationEvent(@event.OrderId);
-}
-else
-{
-    orderPaymentIntegrationEvent = new OrderPaymentFailedIntegrationEvent(@event.OrderId);
-}
-```
-
-As a result, the event isn't serialized correctly and the message payload won't contain all the fields of the event. Our workaround circumvents the issue and correctly serializes the fields.
+> Note how we cast the event parameter to a C# `dynamic` type. This workaround is necessary because in .NET 3.1 the `System.Text.Json` serializer does not support polymorphism yet. The Dapr SDK uses `System.Text.Json` to serialize/deserialize messages. In the eShop code, an event is sometimes explicitly declared as an `IntegrationEvent`, the base-class for integration events. This is done because the specific event-type is determined dynamically at runtime based on business-logic. As a result, the event is serialized using the type information of the base-class and not the derived class. The message payload won't contain all the fields of the event, but only those declared on the base-class. Our workaround circumvents this and all the fields are correctly serialized.
 
 With Dapr, the infrastructure code is **dramatically simplified**. It doesn't need to distinguish between the different message brokers. Dapr provides this abstraction for you. And if needed, you can swap out message brokers or configure multiple message broker components.
 

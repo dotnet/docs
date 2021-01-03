@@ -9,7 +9,7 @@ ms.date: 12/28/2020
 
 In a distributed application, services often need to keep track of state. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) helps you store state in a variety of persistent state stores.
 
-To try out the state management building block yourself, have a look at the [counter application walkthrough in chapter 4](LINK).
+To try out the state management building block yourself, have a look at the [counter application walkthrough in chapter 3](ch3-getting-started.md).
 
 ## What it solves
 
@@ -32,7 +32,7 @@ The Dapr state management building block directly addresses these challenges. It
 
 ## How it works
 
-The Dapr sidecar provides the APIs to store and retrieve key/value pairs. The actual persistence of the data is done by a configurable state store component. You can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/), such as Azure Cosmos DB, SQL Server, and Cassandra. When you initialize Dapr for local development in self hosted mode, Dapr automatically installs and configures Redis as a state store named `statestore`. See [chapter 3: "Getting started"](LINK) for more information on installing Dapr. As state stores are named, you can use multiple state store components per application.
+The Dapr sidecar provides the APIs to store and retrieve key/value pairs. The actual persistence of the data is done by a configurable state store component. You can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/), such as Azure Cosmos DB, SQL Server, and Cassandra. When you initialize Dapr for local development in self hosted mode, Dapr automatically installs and configures Redis as a state store named `statestore`. See [chapter 3: "Getting started"](ch3-getting-started.md) for more information on installing Dapr. As state stores are named, you can use multiple state store components per application.
 
 In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair using the default `statestore` component.
 
@@ -61,7 +61,7 @@ In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair us
    ```
 
    > [!NOTE]
-   > The metadata field `actorStateStore` indicates whether this state store can be used to store actor state. For more information on actors, see [chapter x](LINK).
+   > The metadata field `actorStateStore` indicates whether this state store can be used to store actor state. For more information on actors, see [chapter 11](ch11-actors.md).
 
 3. The sidecar persists the data in the Redis cache.
 
@@ -176,7 +176,7 @@ With this bulk operation, Dapr will submit each key/value pair update as a separ
 
 ## Using the .NET SDK
 
-The Dapr .NET SDK provides language specific support for .NET Core developers. You can use the `DaprClient` class introduced in [chapter 4](LINK) to read and write data. The following example demonstrates how to use the `GetStateAsync<TValue>` method to read data from the state store. The method takes the state store name `statestore` and the key `AMS` as parameters:
+The Dapr .NET SDK provides language specific support for .NET Core developers. You can use the `DaprClient` class introduced in [chapter 3](ch3-getting-started.md) to read and write data. The following example demonstrates how to use the `GetStateAsync<TValue>` method to read data from the state store. The method takes the state store name `statestore` and the key `AMS` as parameters:
 
 ```c#
 var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>("statestore", "AMS");
@@ -299,7 +299,7 @@ This code uses the third-party `StackExchange.Redis` NuGet package. The followin
 
 5. Deserialize the data from Redis to a `CustomerBasket` object and return the result.
 
-In the updated [eShopOnDapr](LINK) implementation, a new `DaprBasketRepository` class replaces the `RedisBasketRepository` class:
+In the updated [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr) implementation, a new `DaprBasketRepository` class replaces the `RedisBasketRepository` class:
 
 ```c#
 public class DaprBasketRepository : IBasketRepository

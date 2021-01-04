@@ -37,15 +37,15 @@ Note the steps from the previous figure:
     > [!NOTE]
     > The sidecar uses a pluggable name resolution mechanism to resolve the address of Service B. In self-hosted mode, Dapr uses [mDNS](https://www.ionos.com/digitalguide/server/know-how/multicast-dns/) to find it. When running in Kubernetes mode, the Kubernetes DNS service determines the address.  
 
-2. The Service A sidecar forwards the request to the Service B sidecar.
+1. The Service A sidecar forwards the request to the Service B sidecar.
 
-3. The Service B sidecar makes the actual `catalog/items` request against the Service B API.
+1. The Service B sidecar makes the actual `catalog/items` request against the Service B API.
 
-4. Service B executes the request and returns a response back to its sidecar.
+1. Service B executes the request and returns a response back to its sidecar.
 
-5. The Service B sidecar forwards the response back to the Service A sidecar.
+1. The Service B sidecar forwards the response back to the Service A sidecar.
 
-6. The Service A sidecar returns the response back to Service A.
+1. The Service A sidecar returns the response back to Service A.
 
 Because the calls flow through sidecars, Dapr can inject some useful cross-cutting behaviors:
 
@@ -127,11 +127,11 @@ Note the steps from the previous figure:
 
 1. The front-end calls the [API Gateway](https://docs.microsoft.com/azure/architecture/microservices/design/gateway) using HTTP/REST.
 
-2. The API Gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core back-end service using HTTP/REST.
+1. The API Gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core back-end service using HTTP/REST.
 
-3. The API Gateway forwards complex requests that involve coordinated calls to multiple back-end services to the Web Shopping Aggregator service.
+1. The API Gateway forwards complex requests that involve coordinated calls to multiple back-end services to the Web Shopping Aggregator service.
 
-4. The aggregator service uses gRPC to call core back-end services.
+1. The aggregator service uses gRPC to call core back-end services.
 
 In the recently updated eShopOnDapr implementation, Dapr sidecars are added to the services and API Gateway. Figure 6-3 show the updated architecture:
 
@@ -143,11 +143,11 @@ Note the updated steps from the previous figure:
 
 1. The front-end still uses HTTP/REST to call the API Gateway.
 
-2. The API Gateway forwards HTTP requests to its Dapr sidecar.
+1. The API Gateway forwards HTTP requests to its Dapr sidecar.
 
-3. The API Gateway sidecar sends the request to the sidecar of the aggregator or back-end service.
+1. The API Gateway sidecar sends the request to the sidecar of the aggregator or back-end service.
 
-4. The aggregator service uses the Dapr .NET SDK to call back-end services through their sidecar architecture.
+1. The aggregator service uses the Dapr .NET SDK to call back-end services through their sidecar architecture.
 
 Dapr implements calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST, you still get [gRPC performance benefits](https://docs.microsoft.com/dotnet/architecture/cloud-native/grpc#grpc-benefits) for calls between sidecars. Architecturally speaking, calls between sidecars have the highest opportunity for system performance gain. In real-world scenarios, sidecars often are located on different machines.
 

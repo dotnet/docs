@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 12/04/2020
+ms.date: 01/04/2021
 ---
 
 # Options pattern in .NET
@@ -27,8 +27,8 @@ Create the following `TransientFaultHandlingOptions` class:
 
 An options class:
 
-- It allows for either parameterless constructors, or for constructors where all parameters have default values
-- Properties can be read-write, or read-init only
+- Must be a non-abstract class with either a public parameterless constructor, or a public constructor where all parameters have default values.
+- All bindable properties must be read-write, or init only. Fields are **not** bound.
 
 The following code:
 

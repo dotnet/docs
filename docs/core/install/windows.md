@@ -264,11 +264,31 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 
 The [download page](https://dotnet.microsoft.com/download/dotnet-core) for .NET provides Windows Installer executables.
 
-When you use the MSI files to install .NET< you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
+When you use the Windows installers to install .NET, you can customize the installation path by setting the `DOTNETHOME_X64` and `DOTNETHOME_X86` parameters:
 
 ```console
 dotnet-sdk-3.1.301-win-x64.exe DOTNETHOME_X64="F:\dotnet\x64" DOTNETHOME_X86="F:\dotnet\x86"
 ```
+
+If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following switches:
+
+- `/install`\
+Installs .NET.
+
+- `/quiet`\
+Prevents any UI and prompts from displaying.
+
+- `norestart`\
+Suppresses any attempts to restart.
+
+```console
+dotnet-sdk-3.1.301-win-x64.exe /install /quiet /norestart
+```
+
+For more information, see [Standard Installer Command-Line Options](/windows/win32/msi/standard-installer-command-line-options).
+
+> [!TIP]
+> If the installer returns exit code 3010, it indicates that a reboot is required.
 
 ## Download and manually install
 

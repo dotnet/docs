@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 # Supported collection types in System.Text.Json
 
-<xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> supports a collection type for serialization if it:
+This article gives an overview of which collections are supported for serialization and deserialization. <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> supports a collection type for serialization if it:
 
 * Derives from <xref:System.Collections.IEnumerable>.
 * Contains elements that are serializable.
@@ -22,7 +22,7 @@ The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> met
 
 Deserialization is more complicated and is not supported for some collection types.
 
-This article gives an overview of which collections are supported.
+
 
 ## System.Collections namespace
 
@@ -50,7 +50,7 @@ This article gives an overview of which collections are supported.
 | <xref:System.Collections.Generic.HashSet%601>             | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedListNode%60>       | ✔️           | ❌              |
+| <xref:System.Collections.Generic.LinkedListNode%601>       | ✔️           | ❌              |
 | <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.SortedDictionary%602>    | ✔️           | ✔️              |
@@ -77,7 +77,7 @@ This article gives an overview of which collections are supported.
 | <xref:System.Collections.Generic.HashSet%601>                                                   | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.KeyValuePair%602>                                              | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.LinkedList%601>                                                | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.LinkedListNode%60>                                             | ✔️           | ❌              |
+| <xref:System.Collections.Generic.LinkedListNode%601>                                             | ✔️           | ❌              |
 | <xref:System.Collections.Generic.List%601>                                                      | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.Queue%601>                                                     | ✔️           | ✔️              |
 | [SortedDictionary\<string, TValue>](xref:System.Collections.Generic.SortedDictionary%602)       | ✔️           | ✔️              |
@@ -191,9 +191,9 @@ This article gives an overview of which collections are supported.
 | <xref:System.Collections.ObjectModel.Collection%601>           | ✔️            | ✔️             |
 | [KeyedCollection\<string, TValue>](xref:System.Collections.ObjectModel.KeyedCollection%602) |✔️|❌|
 | <xref:System.Collections.ObjectModel.ObservableCollection%601> | ✔️            | ✔️             |
-| <ReadOnlyCollection%601>                                       | ✔️            | ❌             |
+| <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>   | ✔️            | ❌             |
 | <xref:System.Collections.ObjectModel.ReadOnlyDictionary%602>   | ✔️            | ❌             |
-| <ReadOnlyObservableCollection%601>                             | ✔️            | ❌             |
+| <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601> | ✔️    | ❌             |
 
 ::: zone-end
 
@@ -204,9 +204,9 @@ This article gives an overview of which collections are supported.
 | <xref:System.Collections.ObjectModel.Collection%601>           | ✔️            | ✔️             |
 | [KeyedCollection\<string, TValue>](xref:System.Collections.ObjectModel.KeyedCollection%602) |✔️|❌|
 | <xref:System.Collections.ObjectModel.ObservableCollection%601> | ✔️            | ✔️             |
-| <ReadOnlyCollection%601>                                       | ✔️            | ❌             |
+| <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>   | ✔️            | ❌             |
 | [ReadOnlyDictionary\<string, TValue>](xref:System.Collections.ObjectModel.ReadOnlyDictionary%602) |✔️|❌|
-| <ReadOnlyObservableCollection%601>                             | ✔️            | ❌             |
+| <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601>| ✔️     | ❌             |
 
 ::: zone-end
 
@@ -216,7 +216,7 @@ Any collection type that isn't in one of the preceding namespaces is considered 
 
 All custom collections (everything that derives from `IEnumerable`) are supported for serialization, as long as their element types are supported.
 
-### Custom collection deserialization support
+### Custom collections with deserialization support
 
 A custom collection is supported for deserialization if it:
 

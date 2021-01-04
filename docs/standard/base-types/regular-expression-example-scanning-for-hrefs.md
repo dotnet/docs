@@ -33,7 +33,9 @@ The following example searches an input string and displays all the href="…" v
  [!code-vb[RegularExpressions.Examples.HREF#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Examples.HREF/vb/example.vb#2)]  
   
  The regular expression pattern `href\s*=\s*(?:["'](?<1>[^"']*)["']|(?<1>\S+))` is interpreted as shown in the following table.  
-  
+
+<!-- markdownlint-disable MD011 -->
+
 |Pattern|Description|  
 |-------------|-----------------|  
 |`href`|Match the literal string "href". The match is case-insensitive.|  
@@ -43,7 +45,9 @@ The following example searches an input string and displays all the href="…" v
 |`(?:\["'\](?<1>\[^"'\]*)["']\|(?<1>\S+))`|Match one of the following without assigning the result to a captured group:<br /> <ul><li><p>A quotation mark or apostrophe, followed by zero or more occurrences of any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern.</p></li><li><p>One or more non-white-space characters. The group named `1` is included in this pattern.</p></li></ul>|  
 |`(?<1>[^"']*)`|Assign zero or more occurrences of any character other than a quotation mark or apostrophe to the capturing group named `1`.|  
 |`(?<1>\S+)`|Assign one or more non-white-space characters to the capturing group named `1`.|  
-  
+
+<!-- markdownlint-enable MD011 -->
+
 ## Match Result Class  
 
  The results of a search are stored in the <xref:System.Text.RegularExpressions.Match> class, which provides access to all the substrings extracted by the search. It also remembers the string being searched and the regular expression being used, so it can call the <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method to perform another search starting where the last one ended.  

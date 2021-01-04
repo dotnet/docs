@@ -27,8 +27,8 @@ Create the following `TransientFaultHandlingOptions` class:
 
 An options class:
 
-* Must be non-abstract with a public parameterless constructor
-* Contain public read-write properties to bind (fields are ***not*** bound)
+- It allows for either parameterless constructors, or for constructors where all parameters have default values
+- Properties can be read-write, or read-init only
 
 The following code:
 

@@ -144,7 +144,7 @@ Deserialization is more complicated and is not supported for some collection typ
 
 | Type                                                      | Serialization | Deserialization |
 |-----------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.Specialized.BitVector32> \*      | ✔️           | ❌              |
+| <xref:System.Collections.Specialized.BitVector32>         | ✔️           | ❌\*            |
 | <xref:System.Collections.Specialized.HybridDictionary>    | ✔️           | ✔️              |
 | <xref:System.Collections.Specialized.IOrderedDictionary>  | ✔️           | ❌              |
 | <xref:System.Collections.Specialized.ListDictionary>      | ✔️           | ✔️              |
@@ -152,7 +152,7 @@ Deserialization is more complicated and is not supported for some collection typ
 | <xref:System.Collections.Specialized.StringDictionary>    | ✔️           | ❌              |
 | <xref:System.Collections.Specialized.NameValueCollection> | ✔️           | ❌              |
 
-\* When deserializing <xref:System.Collections.Specialized.BitVector32>, the <xref:System.Collections.Specialized.BitVector32.Data> property is skipped because it doesn't have a public setter. No exception is thrown.
+\* When <xref:System.Collections.Specialized.BitVector32> is deserialized, the <xref:System.Collections.Specialized.BitVector32.Data> property is skipped because it doesn't have a public setter. No exception is thrown.
 
 ## System.Collections.Concurrent namespace
 

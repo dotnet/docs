@@ -1,7 +1,7 @@
 ---
 title: "Supported collection types in System.Text.Json"
 description: "Learn which collection types are supported for serialization by the APIs in the System.Text.Json namespace."
-ms.date: 01/04/2021
+ms.date: 01/05/2021
 no-loc: [System.Text.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -222,6 +222,7 @@ A custom collection is supported for deserialization if it:
 
 * Isn't an interface or abstract.
 * Has a parameterless constructor.
+* Contains element types that are supported by <xref:System.Text.Json.JsonSerializer>.
 * Implements or inherits one or more of the following interfaces or classes:
   * <xref:System.Collections.Concurrent.ConcurrentQueue%601>
   * <xref:System.Collections.Concurrent.ConcurrentStack%601> \*
@@ -234,7 +235,6 @@ A custom collection is supported for deserialization if it:
   * <xref:System.Collections.Generic.Queue%601>
   * <xref:System.Collections.Stack> \*
   * <xref:System.Collections.Generic.Stack%601> \*
-* Contains element types that are supported by <xref:System.Text.Json.JsonSerializer>.
 
 ::: zone-end
 
@@ -242,6 +242,7 @@ A custom collection is supported for deserialization if it:
 
 * Isn't an interface or abstract.
 * Has a parameterless constructor.
+* Contains element types that are supported by <xref:System.Text.Json.JsonSerializer>.
 * Implements or inherits one or more of the following interfaces or classes:
   * <xref:System.Collections.Concurrent.ConcurrentQueue%601>
   * <xref:System.Collections.Concurrent.ConcurrentStack%601> \*
@@ -254,7 +255,6 @@ A custom collection is supported for deserialization if it:
   * <xref:System.Collections.Generic.Queue%601>
   * <xref:System.Collections.Stack> \*
   * <xref:System.Collections.Generic.Stack%601> \*
-* Contains element types that are supported by <xref:System.Text.Json.JsonSerializer>.
 
 ::: zone-end
 

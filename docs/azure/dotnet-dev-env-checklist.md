@@ -12,7 +12,7 @@ author: daberry
 
 This checklist is provided to help you make sure you have your development environment correctly configured for .NET development with Azure
 
-## Create an Azure Account
+## Create an Azure account
 
 To access Azure services or run applications in Azure, you need an Azure account.
 

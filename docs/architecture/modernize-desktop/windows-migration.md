@@ -335,4 +335,4 @@ If you want to know more details, Microsoft is sharing this roadmap in <https://
 
 >[!div class="step-by-step"]
 >[Previous](migrate-modern-applications.md)
->[Next](example-migration-core.md)
+>[Next](example-migration.md)

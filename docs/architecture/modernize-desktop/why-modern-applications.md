@@ -147,4 +147,4 @@ In this book, we'll introduce a new way of installing applications with MSIX tha
 
 >[!div class="step-by-step"]
 >[Previous](index.md)
->[Next](whats-new-dotnet-core.md)
+>[Next](whats-new-dotnet.md)

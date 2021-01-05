@@ -1,9 +1,9 @@
 ---
-title: Modernizing Desktop Apps on Windows 10 with .NET
-description: Learn how to modernize existing desktop apps with .NET
+title: Modernizing Desktop Apps on Windows 10 with .NET 5
+description: Learn how to modernize existing desktop apps with .NET 5
 ms.date: 12/29/2020
 ---
-# Modernizing Desktop Apps on Windows 10 with .NET
+# Modernizing Desktop Apps on Windows 10 with .NET 5
 
 ![Screenshot that shows the modernize desktop apps e-book cover.](./media/modernizing-existing-desktop-apps-ebook-cover.png)
 

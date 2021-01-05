@@ -218,5 +218,5 @@ Similar to CAS, Security Transparency separates sandboxed code from security cri
 Use security boundaries that are provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 
 >[!div class="step-by-step"]
->[Previous](whats-new-dotnet-core.md )
+>[Previous](whats-new-dotnet.md )
 >[Next](windows-migration.md)

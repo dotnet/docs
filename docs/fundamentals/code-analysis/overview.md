@@ -98,14 +98,17 @@ By default, you'll get the latest code analysis rules and default rule severitie
 *Code-style analysis* ("IDExxxx") rules enable you to define and maintain consistent code style in your codebase. The default enablement settings are:
 
 - Command-line build: Code-style analysis is disabled, by default, for all .NET projects on command-line builds.
-- Visual Studio: Code-style analysis is enabled, by default, for all .NET projects inside Visual Studio as [code refactoring quick actions](/visualstudio/ide/code-generation-in-visual-studio).
 
-Starting in .NET 5.0, you can enable code-style analysis on build, both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
+  Starting in .NET 5.0, you can [enable code-style analysis on build](#enable-on-build), both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
+
+- Visual Studio: Code-style analysis is enabled, by default, for all .NET projects inside Visual Studio as [code refactoring quick actions](/visualstudio/ide/code-generation-in-visual-studio).
 
 For a full list of code-style analysis rules, see [Code style rules](style-rules/index.md).
 
 ### Enable on build
 
+With the .NET 5.0 SDK and later versions, you can enable code-style analysis when building from the command-line and in Visual Studio. (However, for performance reasons, [a handful of code-style rules](https://github.com/dotnet/roslyn/blob/9f87b444da9c48a4d492b19f8337339056bf2b95/src/Analyzers/Core/Analyzers/EnforceOnBuildValues.cs#L95) will still apply only in the Visual Studio IDE.)
+ 
 Follow these steps to enable code-style analysis on build:
 
 1. Set the MSBuild property [EnforceCodeStyleInBuild](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) to `true`.
@@ -132,18 +135,6 @@ Follow these steps to enable code-style analysis on build:
 
 > [!NOTE]
 > The code-style analysis feature is experimental and may change between the .NET 5 and .NET 6 releases.
-
-## Suppress a warning
-
-To suppress a rule violation, set the severity option for that rule ID to `none` in an EditorConfig file. For example:
-
-```ini
-dotnet_diagnostic.CA1822.severity = none
-```
-
-Visual Studio provides additional ways to suppress warnings from code analysis rules. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
-
-For more information about rule severities, see [Configure rule severity](configuration-options.md#severity-level).
 
 ## Third-party analyzers
 

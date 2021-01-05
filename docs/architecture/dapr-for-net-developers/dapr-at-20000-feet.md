@@ -249,6 +249,6 @@ In the next chapters, we present practical, hands-on instruction on how to use D
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 - [Architecting Cloud-Native .NET Apps for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
 
->[!div class="step-by-step"]
->[Previous](the-world-is-distributed.md)
->[Next](index.md)
+> [!div class="step-by-step"]
+> [Previous](the-world-is-distributed.md)
+> [Next](index.md)

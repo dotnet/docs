@@ -108,7 +108,7 @@ For a full list of code-style analysis rules, see [Code style rules](style-rules
 ### Enable on build
 
 With the .NET 5.0 SDK and later versions, you can enable code-style analysis when building from the command-line and in Visual Studio. (However, for performance reasons, [a handful of code-style rules](https://github.com/dotnet/roslyn/blob/9f87b444da9c48a4d492b19f8337339056bf2b95/src/Analyzers/Core/Analyzers/EnforceOnBuildValues.cs#L95) will still apply only in the Visual Studio IDE.)
- 
+
 Follow these steps to enable code-style analysis on build:
 
 1. Set the MSBuild property [EnforceCodeStyleInBuild](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) to `true`.

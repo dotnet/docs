@@ -2,7 +2,7 @@
 title: Understanding Authentication in the Azure libraries for .NET
 description: Explains the different ways of authenticating with the Azure SDK for .NET.
 ms.date: 06/19/2020
-ms.custom: azure-sdk-dotnet
+ms.custom: devx-track-dotnet
 ---
 
 # Authenticate with the Azure SDK for .NET

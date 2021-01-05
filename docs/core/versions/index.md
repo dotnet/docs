@@ -14,16 +14,16 @@ The .NET Runtime has a major/minor/patch approach to versioning that follows [se
 
 The .NET SDK doesn't follow semantic versioning. The .NET SDK releases faster and its version numbers must communicate both the aligned runtime and the SDK's own minor and patch releases.
 
-The first two positions of the .NET SDK version number are locked to the .NET Runtime it released with. Each version of the SDK can create applications for this runtime or any lower version.
+The first two positions of the .NET SDK version number are locked to the .NET Runtime version it released with. Each version of the SDK can create applications for this runtime or any lower version.
 
-The third position of the SDK version number communicates both the minor and patch number. The minor version is multiplied by 100. Minor version 1, patch version 2 would be represented as 102. The final two digits represent the patch number. For example, here's a possible sequence of runtime and SDK version numbers:
+The third position of the SDK version number communicates both the minor and patch number. The minor version is multiplied by 100. The final two digits represent the patch number. Minor version 1, patch version 2 would be represented as 102. For example, here's a possible sequence of runtime and SDK version numbers:
 
 | Change                | .NET Runtime      | .NET SDK (\*)     |
 |-----------------------|-------------------|-------------------|
 | Initial release       | 2.2.0             | 2.2.100           |
-| SDK Patch             | 2.2.0             | 2.2.101           |
-| Runtime and SDK Patch | 2.2.1             | 2.2.102           |
-| SDK Feature change    | 2.2.1             | 2.2.200           |
+| SDK patch             | 2.2.0             | 2.2.101           |
+| Runtime and SDK patch | 2.2.1             | 2.2.102           |
+| SDK feature change    | 2.2.1             | 2.2.200           |
 
 NOTES:
 

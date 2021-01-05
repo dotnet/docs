@@ -1,12 +1,12 @@
 ---
 title: Why we recommend gRPC for WCF developers - gRPC for WCF developers
 description: A discussion of why gRPC is a good fit for WCF developers who want to migrate to modern architectures and platforms.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Why we recommend gRPC for WCF developers
 
-Before we dive deeply into the language and techniques of gRPC, it's worth discussing why gRPC is the right solution for Windows Communication Foundation (WCF) developers who want to migrate to .NET Core.
+Before we dive deeply into the language and techniques of gRPC, it's worth discussing why gRPC is the right solution for Windows Communication Foundation (WCF) developers who want to migrate to .NET.
 
 ## Similarity to WCF
 
@@ -32,7 +32,7 @@ gRPC is a comprehensive RPC solution. It works consistently across multiple lang
 
 ### Streaming
 
-gRPC has full bidirectional streaming, which provides similar functionality to WCF's full duplex services. gRPC streaming can operate over regular internet connections, load balancers, and service meshes.
+gRPC has full bidirectional streaming, which provides similar functionality to WCF's full-duplex services. gRPC streaming can operate over regular internet connections, load balancers, and service meshes.
 
 ### Deadline/timeouts and cancellation
 

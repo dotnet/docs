@@ -10,7 +10,10 @@ ms.date: 08/27/2020
 
 ## Collect dumps on Linux
 
-The two recommended ways of collecting dumps on Linux are the [`dotnet-dump`](dotnet-dump.md) or [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) tools.
+The two recommended ways of collecting dumps on Linux are:
+
+* [`dotnet-dump`](dotnet-dump.md) CLI tool
+* [Environment variables](dumps.md#collecting-dumps-on-crash) that collect dumps on crashes
 
 ### Managed dumps with `dotnet-dump`
 

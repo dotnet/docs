@@ -1,16 +1,16 @@
 ---
 title: Application Performance Management - gRPC for WCF Developers
 description: Logging, metrics, and tracing for ASP.NET Core gRPC applications.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Application Performance Management
 
-In production environments like Kubernetes, it's important to monitor applications to ensure they're running optimally. Logging and metrics are particularly important. ASP.NET Core, including gRPC, provides built-in support for producing and managing log messages and metrics data, as well as *tracing* data.
+In production environments like Kubernetes, it's important to monitor applications to ensure they're running optimally. Logging and metrics are important in particular. ASP.NET Core, including gRPC, provides built-in support for producing and managing log messages and metrics data, as well as *tracing* data.
 
 ## The difference between logging and metrics
 
-*Logging* is concerned with text messages that record detailed information about things that have happened in the system. Log messages might include exception data, like stack traces, or structured data that provides context about the message. Logging output is commonly written to a searchable text store.
+*Logging* is concerned with text messages that record detailed information about things that have happened in the system. Log messages might include exception data, like stack traces, or structured data that provide context about the message. Logging output is commonly written to a searchable text store.
 
 *Metrics* refers to numeric data designed to be aggregated and presented by using charts and graphs in a dashboard. The dashboard provides a view of the overall health and performance of an application. Metrics data can also be used to trigger automated alerts when a threshold is exceeded. Here are some examples of metrics data:
 
@@ -20,7 +20,7 @@ In production environments like Kubernetes, it's important to monitor applicatio
 
 ## Logging in ASP.NET Core gRPC
 
-ASP.NET Core provides built-in support for logging, in the form of the [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet package. The core parts of this library are included with the Web SDK, so there's no need to install it manually. By default, log messages are written to the standard output (the "console") and to any attached debugger. To write logs to persistent external data stores, you might need to import [optional logging sink packages](/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers).
+ASP.NET Core provides built-in support for logging, in the form of [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet package. The core parts of this library are included with the Web SDK, so there's no need to install it manually. By default, log messages are written to the standard output (the "console") and to any attached debugger. To write logs to persistent external data stores, you might need to import [optional logging sink packages](/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers).
 
 The ASP.NET Core gRPC framework writes detailed diagnostic logging messages to this logging framework, so they can be processed and stored along with your application's own messages.
 
@@ -105,7 +105,7 @@ The numerical nature of metrics data means that it's ideally suited to drive ale
 
 ## Distributed tracing
 
-Distributed tracing is a relatively recent development in monitoring, which has arisen from the increasing use of microservices and distributed architectures. A single request from a client browser, application, or device can be broken down into many steps and sub-requests, and involve the use of many services across a network. This makes it difficult to correlate log messages and metrics with the specific request that triggered them. Distributed tracing applies identifiers to requests, and this allows logs and metrics to be correlated with a particular operation. This is similar to [WCF's end-to-end tracing](../../framework/wcf/diagnostics/tracing/end-to-end-tracing.md), but it's applied across multiple platforms.
+Distributed tracing is a relatively recent development in monitoring, which has arisen from the increasing use of microservices and distributed architectures. A single request from a client browser, application, or device can be broken down into many steps and sub-requests, and involve the use of many services across a network. This activity makes it difficult to correlate log messages and metrics with the specific request that triggered them. Distributed tracing applies identifiers to requests, and allows logs and metrics to be correlated with a particular operation. This tracing is similar to [WCF's end-to-end tracing](../../framework/wcf/diagnostics/tracing/end-to-end-tracing.md), but it's applied across multiple platforms.
 
 Distributed tracing has grown quickly in popularity and is beginning to standardize. The Cloud Native Computing Foundation created the [Open Tracing standard](https://opentracing.io), attempting to provide vendor-neutral libraries for working with back ends like [Jaeger](https://www.jaegertracing.io/) and [Elastic APM](https://www.elastic.co/products/apm). At the same time, Google created the [OpenCensus project](https://opencensus.io/) to address the same set of problems. These two projects are merging into a new project, [OpenTelemetry](https://opentelemetry.io), which aims to be the industry standard of the future.
 
@@ -115,9 +115,9 @@ Distributed tracing is based on the concept of *spans*: named, timed operations 
 
 ### Distributed tracing with `DiagnosticSource`
 
-.NET Core has an internal module that maps well to distributed traces and spans: [DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#diagnosticsource-users-guide). As well as providing a simple way to produce and consume diagnostics within a process, the `DiagnosticSource` module has the concept of an *activity*. An activity is effectively an implementation of a distributed trace, or a span within a trace. The internals of the module take care of parent/child activities, including allocating identifiers. For more information about using the `Activity` type, see the [Activity User Guide on GitHub](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-user-guide).
+.NET has an internal module that maps well to distributed traces and spans: [DiagnosticSource](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#diagnosticsource-users-guide). As well as providing a simple way to produce and consume diagnostics within a process, the `DiagnosticSource` module has the concept of an *activity*. An activity is effectively an implementation of a distributed trace, or a span within a trace. The internals of the module take care of parent/child activities, including allocating identifiers. For more information about using the `Activity` type, see the [Activity User Guide on GitHub](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-user-guide).
 
-Because `DiagnosticSource` is a part of the core framework, it's supported by several core components. These include <xref:System.Net.Http.HttpClient>, Entity Framework Core, and ASP.NET Core, including explicit support in the gRPC framework. When ASP.NET Core receives a request, it checks for a pair of HTTP headers matching the [W3C Trace Context](https://www.w3.org/TR/trace-context) standard. If the headers are found, an activity is started by using the identity values and context from the headers. If no headers are found, an activity is started with generated identity values that match the standard format. Any diagnostics generated by the framework or by application code during the lifetime of this activity can be tagged with the trace and span identifiers. The `HttpClient` support extends this further by checking for a current activity on every request, and automatically adding the trace headers to the outgoing request.
+Because `DiagnosticSource` is a part of the core framework and later, it's supported by several core components. These include <xref:System.Net.Http.HttpClient>, Entity Framework Core, and ASP.NET Core, including explicit support in the gRPC framework. When ASP.NET Core receives a request, it checks for a pair of HTTP headers matching the [W3C Trace Context](https://www.w3.org/TR/trace-context) standard. If the headers are found, an activity is started by using the identity values and context from the headers. If no headers are found, an activity is started with generated identity values that match the standard format. Any diagnostics generated by the framework or by application code during the lifetime of this activity can be tagged with the trace and span identifiers. The `HttpClient` support extends this functionality further by checking for a current activity on every request, and automatically adding the trace headers to the outgoing request.
 
 The ASP.NET Core gRPC client and server libraries include explicit support for `DiagnosticSource` and `Activity`, and create activities and apply and use header information automatically.
 

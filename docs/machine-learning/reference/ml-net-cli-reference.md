@@ -94,7 +94,7 @@ mlnet classification
 Running `mlnet regression` will train a regression model. Choose this command if you want an ML Model to predict a numeric value (e.g. price prediction).
 
 ```console
-mlnet classification
+mlnet regression
 
 --dataset <path> (REQUIRED)
 
@@ -129,7 +129,7 @@ mlnet classification
 Running `mlnet recommendation` will train a recommendation model.  Choose this command if you want an ML Model to recommend items to users based on ratings (e.g. product recommendation).
 
 ```console
-mlnet classification
+mlnet recommendation
 
 --dataset <path> (REQUIRED)
 

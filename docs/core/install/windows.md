@@ -288,7 +288,7 @@ dotnet-sdk-3.1.301-win-x64.exe /install /quiet /norestart
 For more information, see [Standard Installer Command-Line Options](/windows/win32/msi/standard-installer-command-line-options).
 
 > [!TIP]
-> If the installer returns exit code 3010, it indicates that a reboot is required.
+> The installer returns an exit code of 0 for a success and an exit code of 3010 to indicate a reboot is required. Any other value is generally an error code.
 
 ## Download and manually install
 

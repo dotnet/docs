@@ -405,7 +405,7 @@ namespace csrefKeywordsModifiers
         public int y;
     }
 
-    class MainClass4
+    class MainClass
     {
         static void Main()
         {

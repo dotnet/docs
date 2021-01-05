@@ -3,6 +3,7 @@ title: "Supported collection types in System.Text.Json"
 description: "Learn which collection types are supported for serialization by the APIs in the System.Text.Json namespace."
 ms.date: 01/05/2021
 no-loc: [System.Text.Json]
+ms.topic: reference
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON serialization"
@@ -21,6 +22,8 @@ This article gives an overview of which collections are supported for serializat
 The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> method, and writes the elements.
 
 Deserialization is more complicated and is not supported for some collection types.
+
+The following sections are organized by namespace and show which types are supported for serialization and deserialization.
 
 ## System.Collections namespace
 
@@ -262,7 +265,7 @@ A custom collection is supported for deserialization if it:
 
 ### Custom collections with known issues
 
-There are known issues with some custom collections:
+There are known issues with the following custom collections:
 
 - <xref:System.Dynamic.ExpandoObject>: See [dotnet/runtime#29690](https://github.com/dotnet/runtime/issues/29690).
 - <xref:System.Dynamic.DynamicObject>: See [dotnet/runtime#1808](https://github.com/dotnet/runtime/issues/1808).
@@ -272,7 +275,7 @@ There are known issues with some custom collections:
 
 ## See also
 
-For more information, see the [open issues in System.Text.Json](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json).
+For more information about known issues, see the [open issues in System.Text.Json](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json).
 
 * [System.Text.Json overview](system-text-json-overview.md)
 * [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)

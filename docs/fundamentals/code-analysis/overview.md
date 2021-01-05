@@ -136,6 +136,18 @@ Follow these steps to enable code-style analysis on build:
 > [!NOTE]
 > The code-style analysis feature is experimental and may change between the .NET 5 and .NET 6 releases.
 
+## Suppress a warning
+
+To suppress a rule violation, set the severity option for that rule ID to `none` in an EditorConfig file. For example:
+
+```ini
+dotnet_diagnostic.CA1822.severity = none
+```
+
+Visual Studio provides additional ways to suppress warnings from code analysis rules. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
+
+For more information about rule severities, see [Configure rule severity](configuration-options.md#severity-level).
+
 ## Third-party analyzers
 
 In addition to the official .NET analyzers, you can also install third party analyzers, such as [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), and [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).

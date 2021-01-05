@@ -245,11 +245,8 @@ In the next chapters, we present practical, hands-on instruction on how to use D
 ### References
 
 - [Dapr documentation](https://dapr.io/)
-
 - [Learning Dapr](https://www.amazon.com/Learning-Dapr-Building-Distributed-Applications/dp/1492072427/ref=sr_1_1?dchild=1&keywords=dapr&qid=1604794794&sr=8-1)
-
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
-
 - [Architecting Cloud-Native .NET Apps for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
 
 >[!div class="step-by-step"]

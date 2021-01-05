@@ -230,7 +230,7 @@ Figure 2-9 shows an application that implements both Dapr and service mesh techn
 
 **Figure 2-9**. Dapr and service mesh together.
 
-In the book, [Learning Dapr](https://www.amazon.com/Learning-Dapr-Building-Distributed-Applications/dp/1492072427/ref=sr_1_1?dchild=1&keywords=dapr&qid=1604794794&sr=8-1), authors Haishi Bai and Yaron Schneider, provided detailed coverage of Dapr and service mesh integration.
+In the book, [Learning Dapr](https://www.amazon.com/Learning-Dapr-Building-Distributed-Applications/dp/1492072427/ref=sr_1_1?dchild=1&keywords=dapr&qid=1604794794&sr=8-1), authors Haishi Bai and Yaron Schneider, cover the integration of Dapr and service mesh.
 
 ## Summary
 

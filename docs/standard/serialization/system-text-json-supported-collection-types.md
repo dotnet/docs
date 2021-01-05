@@ -271,11 +271,11 @@ A custom collection is supported for deserialization if it:
   * <xref:System.Collections.Stack> \*
   * <xref:System.Collections.Generic.Stack%601> \*
 
-\*\* Non-`string` keys are not supported in .NET Core 3.1.
+  \*\* Non-`string` keys are not supported in .NET Core 3.1.
 
 ::: zone-end
 
-\* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
+  \* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
 
 ### Custom collections with known issues
 
@@ -287,9 +287,9 @@ There are known issues with the following custom collections:
 - <xref:Microsoft.AspNetCore.Http.FormFile?displayProperty=fullName>: See [dotnet/runtime#1559](https://github.com/dotnet/runtime/issues/1559).
 - <xref:Microsoft.AspNetCore.Http.IFormCollection?displayProperty=fullName>: See [dotnet/runtime#1559](https://github.com/dotnet/runtime/issues/1559).
 
-## See also
-
 For more information about known issues, see the [open issues in System.Text.Json](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json).
+
+## See also
 
 * [System.Text.Json overview](system-text-json-overview.md)
 * [Instantiate JsonSerializerOptions instances](system-text-json-configure-options.md)

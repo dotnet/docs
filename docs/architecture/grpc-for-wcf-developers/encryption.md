@@ -1,7 +1,7 @@
 ---
 title: Encryption and network security - gRPC for WCF Developers
 description: Some notes on network security and encryption in gRPC
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Encryption and network security
@@ -10,7 +10,7 @@ The network security model for Windows Communication Foundation (WCF) is extensi
 
 gRPC leaves secure networking to the underlying HTTP/2 protocol, which you can secure by using TLS certificates.
 
-Web browsers insist on using TLS connections for HTTP/2, but most programmatic clients, including .NET's `HttpClient`, can use HTTP/2 over unencrypted connections. `HttpClient` does require encryption by default, but you can override this by using an <xref:System.AppContext> switch.
+Web browsers insist on using TLS connections for HTTP/2, but most programmatic clients, including .NET's `HttpClient`, can use HTTP/2 over unencrypted connections. `HttpClient` does require encryption by default, but you can override this behavior by using an <xref:System.AppContext> switch.
 
 ```csharp
 AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);

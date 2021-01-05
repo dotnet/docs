@@ -206,7 +206,6 @@ The following sections are organized by namespace and show which types are suppo
 
 \* Non-`string` keys are not supported.
 
-
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

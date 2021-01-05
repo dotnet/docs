@@ -17,7 +17,7 @@ In addition to configuring your IDE and installing the Azure CLI, multiple other
 Azure PowerShell is a PowerShell module of cmdlets for managing Azure resource directly from PowerShell, either from the command line or from within PowerShell scripts.  Azure PowerShell supports PowerShell features like PowerShell objects and combining commands into pipelines.  If you have used PowerShell before or need to write complex automation scripts to manage Azure resources, you will want to install Azure PowerShell.
 
 > [!div class="nextstepaction"]
-> [Install Azure PowerShell](/powershell/azure/install-az-ps.md)
+> [Install Azure PowerShell](/powershell/azure/install-az-ps)
 
 ## Azure Storage Explorer
 
@@ -31,8 +31,8 @@ Azure Storage Explorer is a free, GUI tool for managing storage resources and da
 Azure Data Studio is a cross-platform database tool for accessing both on-premises and cloud databases.  It allows you to edit and execute SQL queries in addition to charting and visualizing result sets.  It supports all versions of SQL Server from SQL Server 2014 and later and Azure SQL.  If you plan to work with Azure SQL, download and install Azure Data Studio.
 
 > [!div class="nextstepaction"]
-> [Download Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio.md)
+> [Download Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio)
 
 ## Next Steps
 
-Validate your development environment is set up correctly using the [.NET on Azure development environment checklist](./dotnet-dev-env-checklist.md).
+Validate your development environment is set up correctly using the [.NET on Azure development environment checklist](./dotnet-dev-env-checklist).

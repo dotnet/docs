@@ -24,8 +24,8 @@ To access Azure services or run applications in Azure, you need an Azure account
 
 Popular tools like Visual Studio and Visual Studio Code have extensions available to let you work with Azure right from your IDE.
 
-* [Configure Visual Studio](./configure-visual-studio.md) for .NET development using Azure
-* [Configure Visual Studio Code](./configure-vs-code.md) for .NET Development using Azure
+* [Configure Visual Studio](./configure-visual-studio) for .NET development using Azure
+* [Configure Visual Studio Code](./configure-vs-code) for .NET Development using Azure
 
 ## Install the Azure CLI
 
@@ -41,7 +41,7 @@ These additional tools are designed to make you more productive when working wit
 
 * [Install Azure PowerShell](/powershell/azure/install-az-ps) if you plan on using PowerShell scripts to create and manage Azure resources
 * [Install Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) to upload, download, and manage data in Azure storage resources including blobs, queues, tables, and CosmosDB.
-* [Install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio.md) if you are working with Azure SQL
+* [Install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) if you are working with Azure SQL
 
 ## Bookmark the following sites
 

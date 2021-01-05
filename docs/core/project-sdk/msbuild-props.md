@@ -443,6 +443,36 @@ Restoring a referenced package installs all of its direct dependencies and all t
 </PropertyGroup>
 ```
 
+## Run properties
+
+The following properties are used for launching an app with the [`dotnet run`](../tools/dotnet-run.md) command:
+
+- [RunArguments](#runarguments)
+- [RunWorkingDirectory](#runworkingdirectory)
+
+### RunArguments
+
+The `RunArguments` property defines the arguments that are passed to the app when it is run.
+
+```xml
+<PropertyGroup>
+  <RunArguments>-mode dryrun</RunArguments>
+</PropertyGroup>
+```
+
+> [!TIP]
+> You can specify additional arguments to be passed to the app by using the [`--` option for `dotnet run`](../tools/dotnet-run.md#options).
+
+### RunWorkingDirectory
+
+The `RunWorkingDirectory` property defines the working directory for the application process to be started in. If you don't specify a directory, `OutDir` is used as the working directory.
+
+```xml
+<PropertyGroup>
+  <RunWorkingDirectory>c:\temp</RunWorkingDirectory>
+</PropertyGroup>
+```
+
 ## Hosting properties and items
 
 - [EnableComHosting](#enablecomhosting)

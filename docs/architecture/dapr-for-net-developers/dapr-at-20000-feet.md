@@ -55,7 +55,7 @@ A building block encapsulates a distributed application capability. You can acce
 The following table describes the services provided by each block.
 
 | Building Block | Description |
-| :-------- | :-------- |
+|----------------|-------------|
 | [Service-to-service invocation](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Invoke direct, secure service-to-service calls using platform agnostic protocols and well-known endpoints. |
 | [Publish and subscribe](https://github.com/dapr/components-contrib/tree/master/state) | Implement secure, scalable pub/sub messaging between services. |
 | [State management](https://github.com/dapr/components-contrib/tree/master/pubsub) | Support contextual information for long running stateful services. |

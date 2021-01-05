@@ -98,7 +98,7 @@ dotnet sln add [-h|--help]
 
 - **`-s|--solution-folder <PATH>`**
 
-  The destination solution folder path to add the projects to. Available since .NET Core 3.0 SDK.
+  The destination [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder) path to add the projects to. Available since .NET Core 3.0 SDK.
 
 ### `remove`
 

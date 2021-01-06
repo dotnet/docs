@@ -64,7 +64,7 @@ try-convert -p "<path to your project file>"
 
 Or:
 
-```text
+```dotnetcli
 try-convert -w "<path to your solution>"
 ```
 

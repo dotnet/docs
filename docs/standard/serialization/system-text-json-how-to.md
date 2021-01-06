@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 12/16/2020
+ms.date: 01/04/2021
 ms.custom: contperf-fy21q2
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -23,6 +23,9 @@ Most of the serialization sample code sets <xref:System.Text.Json.JsonSerializer
 The code examples refer to the following class and variants of it:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+
+> [!NOTE]
+> System.Text.Json uses [ref structs](../../csharp/language-reference/builtin-types/struct.md#ref-struct), which are not supported by Visual Basic. If you try to use System.Text.Json APIs with Visual Basic, you get BC40000 compile errors. The error message indicates that the problem is an obsolete API, but the actual issue is lack of `ref struct` support in the compiler.
 
 ## Namespaces
 

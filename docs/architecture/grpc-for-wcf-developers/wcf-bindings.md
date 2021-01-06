@@ -1,7 +1,7 @@
 ---
 title: WCF bindings and transports - gRPC for WCF developers
 description: Learn how the different WCF bindings and transports compare to gRPC.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # WCF bindings and transports
@@ -18,7 +18,7 @@ gRPC has many features of WCF's NetTCP binding, but they're not always implement
 
 ## HTTP
 
-The WCF binding called BasicHttpBinding is usually text based and uses SOAP as the wire format. It's slow compared to the NetTCP binding. It's generally used to provide cross-platform interoperability, or connection over internet infrastructure.
+The WCF binding called BasicHttpBinding is usually text-based and uses SOAP as the wire format. It's slow compared to the NetTCP binding. It's used to provide cross-platform interoperability, or connection over internet infrastructure.
 
 The equivalent in gRPC uses HTTP/2 as the underlying transport layer with the binary Protobuf wire format for messages. So it can offer performance at the NetTCP service level and full cross-platform interoperability with all modern programming languages and frameworks.
 
@@ -30,11 +30,11 @@ WCF provided a *named pipes* binding for communication between processes on the 
 
 MSMQ is a proprietary Windows message queue. WCF's binding to MSMQ enables "fire and forget" requests from clients that might be processed at any time in the future. gRPC doesn't natively provide any message queue functionality.
 
-The best alternative is to directly use a messaging system like Azure Service Bus, RabbitMQ, or Kafka. You can implement this with the client placing messages directly onto the queue, or a gRPC client streaming service that enqueues the messages.
+The best alternative is to directly use a messaging system like Azure Service Bus, RabbitMQ, or Kafka. You can implement this functionality with the client placing messages directly onto the queue, or a gRPC client streaming service that enqueues the messages.
 
 ## WebHttpBinding
 
-WebHttpBinding (also known as WCF REST), with the `WebGet` and `WebInvoke` attributes, enabled you to develop RESTful APIs that could speak JSON at a time when this was less common. If you have a RESTful API built with WCF REST, consider migrating it to a regular ASP.NET Core MVC Web API application. This migration would provide the same functionality as a conversion to gRPC.
+WebHttpBinding (also known as WCF REST), with the `WebGet` and `WebInvoke` attributes, enabled you to develop RESTful APIs that could speak JSON at a time when this behavior was less common. If you have a RESTful API built with WCF REST, consider migrating it to a regular ASP.NET Core MVC Web API application. This migration would provide the same functionality as a conversion to gRPC.
 
 >[!div class="step-by-step"]
 >[Previous](wcf-endpoints-grpc-methods.md)

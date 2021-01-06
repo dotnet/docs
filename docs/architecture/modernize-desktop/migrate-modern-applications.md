@@ -195,7 +195,7 @@ For more information on API compatibility, you can find documentation about brea
 
 Application domains (AppDomains) isolate apps from one another. AppDomains require runtime support and are expensive. Creating additional app domains isn't supported. For code isolation, we recommend separate processes or using containers as an alternative. For the dynamic loading of assemblies, we recommend the new <xref:System.Runtime.Loader.AssemblyLoadContext> class.
 
-To make code migration from .NET Framework easier, .NET exposes some of the AppDomain API surface. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>).
+To make code migration from .NET Framework easier, .NET exposes some of the `AppDomain` API surface. Some of the APIs function normally (for example, <xref:System.AppDomain.UnhandledException?displayProperty=nameWithType>), some members do nothing (for example, <xref:System.AppDomain.SetCachePath%2A>), and some of them throw <xref:System.PlatformNotSupportedException> (for example, <xref:System.AppDomain.CreateDomain%2A>).
 
 ### Remoting
 

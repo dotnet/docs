@@ -1,7 +1,7 @@
 ---
 title: Inner-loop development workflow for Docker apps
 description: Learn about "inner-loop" development workflow for Docker applications.
-ms.date: 08/06/2020
+ms.date: 01/06/2021
 ---
 
 # Inner-loop development workflow for Docker apps
@@ -80,11 +80,11 @@ To install the Docker extension, press Ctrl+Shift+P, type `ext install`, and the
 
 **Figure 4-23**. Installing the Docker Extension in Visual Studio Code
 
-### Step 2: Create a DockerFile related to an existing image (plain OS or dev environments like .NET Core, Node.js, and Ruby)
+### Step 2: Create a DockerFile related to an existing image (plain OS or dev environments like .NET, Node.js, and Ruby)
 
 You'll need a `DockerFile` per custom image to be built and per container to be deployed. If your app is made up of single custom service, you'll need a single `DockerFile`. But if your app is composed of multiple services (as in a microservices architecture), you'll need one `Dockerfile` per service.
 
-The `DockerFile` is commonly placed in the root folder of your app or service and contains the required commands so that Docker knows how to set up and run that app or service. You can create your `DockerFile` and add it to your project along with your code (node.js, .NET Core, etc.), or, if you're new to the environment, take a look at the following Tip.
+The `DockerFile` is commonly placed in the root folder of your app or service and contains the required commands so that Docker knows how to set up and run that app or service. You can create your `DockerFile` and add it to your project along with your code (node.js, .NET, etc.), or, if you're new to the environment, take a look at the following Tip.
 
 > [!TIP]
 > You can use the Docker extension to guide you when using the `Dockerfile` and `docker-compose.yml` files related to your Docker containers. Eventually, you'll probably write these kinds of files without this tool, but using the Docker extension is a good starting point that will accelerate your learning curve.
@@ -102,7 +102,7 @@ In Figure 4-24, you can see the steps to add the docker files to a project by us
 
 **Figure 4-24**. Docker files added using the **Add Docker files to Workspace** command
 
-When you add a DockerFile, you specify what base Docker image you'll be using (like using `FROM mcr.microsoft.com/dotnet/aspnet`). You'll usually build your custom image on top of a base image that you get from any official repository at the [Docker Hub registry](https://hub.docker.com/) (like an [image for .NET Core](https://hub.docker.com/_/microsoft-dotnet/) or the one [for Node.js](https://hub.docker.com/_/node/)).
+When you add a DockerFile, you specify what base Docker image you'll be using (like using `FROM mcr.microsoft.com/dotnet/aspnet`). You'll usually build your custom image on top of a base image that you get from any official repository at the [Docker Hub registry](https://hub.docker.com/) (like an [image for .NET](https://hub.docker.com/_/microsoft-dotnet/) or the one [for Node.js](https://hub.docker.com/_/node/)).
 
 > [!TIP]
 > You'll have to repeat this procedure for every project in your application. However, the extension will ask to overwrite the generated docker-compose file after the first time. You should reply to not overwrite it, so the extension creates separate docker-compose files, that you can then merge by hand, prior to running docker-compose.
@@ -111,15 +111,15 @@ When you add a DockerFile, you specify what base Docker image you'll be using (l
 
 Using an official repository of a language stack with a version number ensures that the same language features are available on all machines (including development, testing, and production).
 
-The following is a sample DockerFile for a .NET Core container:
+The following is a sample DockerFile for a .NET container:
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["src/WebApi/WebApi.csproj", "src/WebApi/"]
 RUN dotnet restore "src/WebApi/WebApi.csproj"
@@ -136,22 +136,22 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApi.dll"]
 ```
 
-In this case, the image is based on version 3.1 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows), as per the line `FROM mcr.microsoft.com/dotnet/aspnet:3.1`. (For more information about this topic, see the [ASP.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-aspnet/) page and the [.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet/) page).
+In this case, the image is based on version 5.0 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows), as per the line `FROM mcr.microsoft.com/dotnet/aspnet:5.0`. (For more information about this topic, see the [ASP.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-aspnet/) page and the [.NET Docker Image](https://hub.docker.com/_/microsoft-dotnet/) page).
 
 In the DockerFile, you can also instruct Docker to listen to the TCP port that you'll use at runtime (such as port 80 or 443).
 
-You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the `ENTRYPOINT` line with `["dotnet", "WebMvcApplication.dll"]` tells Docker to run a .NET Core application. If you're using the SDK and the .NET Core CLI (`dotnet CLI`) to build and run the .NET application, this setting would be different. The key point here is that the ENTRYPOINT line and other settings depend on the language and platform you choose for your application.
+You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the `ENTRYPOINT` line with `["dotnet", "WebMvcApplication.dll"]` tells Docker to run a .NET application. If you're using the SDK and the .NET CLI (`dotnet CLI`) to build and run the .NET application, this setting would be different. The key point here is that the ENTRYPOINT line and other settings depend on the language and platform you choose for your application.
 
 > [!TIP]
-> For more information about building Docker images for .NET Core applications, go to <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>.
+> For more information about building Docker images for .NET applications, go to <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>.
 >
 > To learn more about building your own images, go to <https://docs.docker.com/engine/tutorials/dockerimages/>.
 
 **Use multi-arch image repositories**
 
-A single image name in a repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is, Linux and Windows). For example, the [dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same image name.
+A single image name in a repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is, Linux and Windows). For example, the [dotnet/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same image name.
 
-Pulling the [dotnet/core/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) image from a Windows host pulls the Windows variant, whereas pulling the same image name from a Linux host pulls the Linux variant.
+Pulling the [dotnet/aspnet](https://hub.docker.com/_/microsoft-dotnet-aspnet/) image from a Windows host pulls the Windows variant, whereas pulling the same image name from a Linux host pulls the Linux variant.
 
 **_Create your base image from scratch_**
 
@@ -176,7 +176,7 @@ To create an image in your local environment and using the DockerFile, you can u
 
 Optionally, instead of directly running `docker build` from the project folder, you first can generate a deployable folder with the .NET libraries needed by using the run `dotnet publish` command, and then run `docker build`.
 
-This example creates a Docker image with the name `explore-docker-vscode/webapi:latest` (`:latest` is a tag, like a specific version). You can take this step for each custom image you need to create for your composed Docker application with several containers. However, we'll see in the next section that it's easier to do this using `docker-compose`.
+This example creates a Docker image with the name `webapi:latest` (`:latest` is a tag, like a specific version). You can take this step for each custom image you need to create for your composed Docker application with several containers. However, we'll see in the next section that it's easier to do this using `docker-compose`.
 
 You can find the existing images in your local repository (your development machine) by using the `docker images` command, as illustrated in Figure 4-26.
 
@@ -244,7 +244,7 @@ If your app has only a single container, you just need to run it by deploying it
 You can run the Docker image by using the docker run command, as shown here:
 
 ```console
-docker run -t -d -p 50080:80 explore-docker-vscode/webapp:latest
+docker run -t -d -p 50080:80 webapp:latest
 ```
 
 For this particular deployment, we'll be redirecting requests sent to port 50080 on the host to the internal port 80.
@@ -267,7 +267,7 @@ After you run `docker-compose up`, you deploy your application and its related c
 
 This step will vary depending on what your app is doing.
 
-In a simple .NET Core Web API "Hello World" deployed as a single container or service, you'd just need to access the service by providing the TCP port specified in the DockerFile.
+In a simple .NET Web API "Hello World" deployed as a single container or service, you'd just need to access the service by providing the TCP port specified in the DockerFile.
 
 On the Docker host, open a browser and navigate to that site; you should see your app/service running, as demonstrated in Figure 4-29.
 
@@ -285,9 +285,9 @@ You can test this by using the browser using CURL from the terminal, as depicted
 
 **Debugging a container running on Docker**
 
-Visual Studio Code supports debugging Docker if you're using Node.js and other platforms like .NET Core containers.
+Visual Studio Code supports debugging Docker if you're using Node.js and other platforms like .NET containers.
 
-You also can debug .NET Core or .NET Framework containers in Docker when using Visual Studio for Windows or Mac, as described in the next section.
+You also can debug .NET or .NET Framework containers in Docker when using Visual Studio for Windows or Mac, as described in the next section.
 
 > [!TIP]
 > To learn more about debugging Node.js Docker containers, see <https://blog.docker.com/2016/07/live-debugging-docker/> and <https://docs.microsoft.com/archive/blogs/user_ed/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more>.

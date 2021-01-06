@@ -1,13 +1,13 @@
 ---
 title: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 description: Get a high-level overview of the development and deployment process for developing and deploying containerized applications with Docker and Microsoft platform and tools.
-ms.date: 11/10/2020
+ms.date: 01/06/2021
 ---
 # Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 
 ![Book cover](./media/devops-book-cover-large-we.png)
 
-**EDITION v3.1** - Updated to ASP.NET Core 3.1
+**EDITION v5.0** - Updated to ASP.NET Core 5.0
 
 Refer [changelog](https://aka.ms/DockerLifecycleEbookChangelog) for the book updates and community contributions.
 

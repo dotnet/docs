@@ -1,7 +1,7 @@
 ---
 title: Docker terminology
 description: Learn some basic terminology that's used everyday when working with Docker.
-ms.date: 08/06/2020
+ms.date: 01/06/2021
 ---
 # Docker terminology
 
@@ -29,7 +29,7 @@ docker build
 
 **Registry**: A service that provides access to repositories. The default registry for most public images is [Docker Hub](https://hub.docker.com/) (owned by Docker as an organization). A registry usually contains repositories from multiple teams. Companies often have private registries to store and manage images they've created. Azure Container Registry is another example.
 
-**Multi-arch image**: For multi-architecture, it's a feature that simplifies the selection of the appropriate image, according to the platform where Docker is running. For example, when a Dockerfile requests a base image **FROM mcr.microsoft.com/dotnet/sdk:3.1** from the registry, it actually gets **3.1-sdk-nanoserver-1909**, **3.1-sdk-nanoserver-1809** or **3.1-sdk-buster-slim**, depending on the operating system and version where Docker is running.
+**Multi-arch image**: For multi-architecture, it's a feature that simplifies the selection of the appropriate image, according to the platform where Docker is running. For example, when a Dockerfile requests a base image **FROM mcr.microsoft.com/dotnet/sdk:5.0** from the registry, it actually gets **5.0-nanoserver-20H2**, **5.0-nanoserver-2004** or **5.0-buster-slim**, depending on the operating system and version where Docker is running.
 
 **Docker Hub**: A public registry to upload images and work with them. Docker Hub provides Docker image hosting, public or private registries, build triggers and web hooks, and integration with GitHub and Bitbucket.
 

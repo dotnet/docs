@@ -49,9 +49,9 @@ In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair us
 
 1. The service calls the state API on the sidecar. The JSON payload in the request body contains the data to store. Because this is a JSON array, you can store multiple key/value pairs with a single API call.
 
-2. The sidecar uses the statestore component configuration to determine where to persist the data. The configuration of the state store is defined in a component configuration YAML file.
+1. The sidecar uses the statestore component configuration to determine where to persist the data. The configuration of the state store is defined in a component configuration YAML file.
 
-3. The sidecar persists the data in the Redis cache.
+1. The sidecar persists the data in the Redis cache.
 
 Retrieving the stored data is just another API call. In the example below, *curl* is used to retrieve the data by directly calling the sidecar API:
 
@@ -357,13 +357,13 @@ This code uses the third-party `StackExchange.Redis` NuGet package. The followin
    });
    ```
 
-2. Use the `ConnectionMultiplexer` to create an `IDatabase` instance.
+1. Use the `ConnectionMultiplexer` to create an `IDatabase` instance.
 
-3. Use the `IDatabase` instance to execute a Redis StringGet call using the given `customerId` as the key.
+1. Use the `IDatabase` instance to execute a Redis StringGet call using the given `customerId` as the key.
 
-4. Check if data is loaded from Redis; if not, return `null`.
+1. Check if data is loaded from Redis; if not, return `null`.
 
-5. Deserialize the data from Redis to a `CustomerBasket` object and return the result.
+1. Deserialize the data from Redis to a `CustomerBasket` object and return the result.
 
 In the updated [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr) implementation, a new `DaprBasketRepository` class replaces the `RedisBasketRepository` class:
 
@@ -391,7 +391,7 @@ public class DaprBasketRepository : IBasketRepository
 The new code uses the Dapr .NET SDK to read and write data using the state management building block. The new steps to load the basket for a customer are:
 
 1. Inject a `DaprClient` into the constructor. The `DaprClient` is registered with the dependency injection framework in the `Startup.cs` file.
-2. Use the `DaprClient.GetStateAsync` method to load the customer's basket from the configured state store and return the result.
+1. Use the `DaprClient.GetStateAsync` method to load the customer's basket from the configured state store and return the result.
 
 The new implementation still uses Redis as the underlying data store. But instead of having a direct reference on the `StackExchange.Redis` NuGet package, a Dapr configuration file is all that's needed:
 

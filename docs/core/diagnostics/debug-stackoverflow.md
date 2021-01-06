@@ -34,10 +34,10 @@ Stack overflow.
 ````
 
 > [!NOTE]
-On .NET 5 and later, the callstack is output to the console.
+> On .NET 5 and later, the callstack is output to the console.
 
 > [!NOTE]
-This article describes how to debug a StackOverflow with lldb. If you are running on Windows, we suggest debugging the app with [Visual Studio](/visualstudio/debugger/what-is-debugging) or [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).  
+> This article describes how to debug a stack overflow with lldb. If you are running on Windows, we suggest debugging the app with [Visual Studio](/visualstudio/debugger/what-is-debugging) or [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).  
 
 ## Example
 

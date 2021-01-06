@@ -49,7 +49,7 @@ The `dotnet-symbol` global tool downloads files (symbols, DAC, modules, etc.) ne
 
 - **`--host-only`**
 
-  Download only the host program (i.e. dotnet) that lldb needs for loading core dumps.
+  Download only the host program (that is, dotnet) that lldb needs for loading core dumps.
 
 - **`--symbols`**
 

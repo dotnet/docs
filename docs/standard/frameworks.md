@@ -16,7 +16,7 @@ An app or library can also target a specific .NET implementation to gain access 
 
 For some target frameworks, such as .NET Framework, the APIs are defined by the assemblies that the framework installs on a system and may include application framework APIs (for example, ASP.NET).
 
-For package-based target frameworks (for example, .NET 5, .NET Core, and .NET Standard), the APIs are defined by the packages included in the app or library. A *metapackage* is a NuGet package that has no content of its own but is a list of dependencies (other packages). A NuGet package-based target framework implicitly specifies a metapackage that references all the packages that together make up the framework.
+For package-based target frameworks (for example, .NET 5, .NET Core, and .NET Standard), the APIs are defined by the NuGet packages included in the app or library.
 
 ## Latest versions
 

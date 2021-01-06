@@ -458,7 +458,9 @@ You can set the `AssetTargetFallback` property to one or more [target framework 
 
 ### DisableImplicitFrameworkReferences
 
-The `DisableImplicitFrameworkReferences` property lets you control whether to implicitly reference metapackages, such as [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) or [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library). Metapackages, which are packages that consist only of dependencies on other packages, are implicitly referenced based on the [TargetFramework](#targetframework). Set this property to `true` to disable implicit [PackageReference](#packagereference) items to packages in the metapackage. If you set this property to `true`, you can add explicit references to just the packages you need.
+The `DisableImplicitFrameworkReferences` property controls implicit `FrameworkReference` items when targeting .NET Core 3.0 and later versions. When targeting .NET Core 2.1 or .NET Standard 2.0 and earlier versions, it controls implicit [PackageReference](#packagereference) items to packages in a metapackage. (A metapackage is a framework-based package that consist only of dependencies on other packages.) This property also controls implicit references such as `System` and `System.Core` when targeting .NET Framework.
+
+Set this property to `true` to disable implicit `FrameworkReference` or [PackageReference](#packagereference) items. If you set this property to `true`, you can add explicit references to just the frameworks or packages you need.
 
 ```xml
 <PropertyGroup>
@@ -517,6 +519,36 @@ Restoring a referenced package installs all of its direct dependencies and all t
 ```xml
 <PropertyGroup>
   <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+</PropertyGroup>
+```
+
+## Run properties
+
+The following properties are used for launching an app with the [`dotnet run`](../tools/dotnet-run.md) command:
+
+- [RunArguments](#runarguments)
+- [RunWorkingDirectory](#runworkingdirectory)
+
+### RunArguments
+
+The `RunArguments` property defines the arguments that are passed to the app when it is run.
+
+```xml
+<PropertyGroup>
+  <RunArguments>-mode dryrun</RunArguments>
+</PropertyGroup>
+```
+
+> [!TIP]
+> You can specify additional arguments to be passed to the app by using the [`--` option for `dotnet run`](../tools/dotnet-run.md#options).
+
+### RunWorkingDirectory
+
+The `RunWorkingDirectory` property defines the working directory for the application process to be started in. If you don't specify a directory, `OutDir` is used as the working directory.
+
+```xml
+<PropertyGroup>
+  <RunWorkingDirectory>c:\temp</RunWorkingDirectory>
 </PropertyGroup>
 ```
 

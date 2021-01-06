@@ -1,7 +1,7 @@
 ---
 title: Create a new ASP.NET Core gRPC project - gRPC for WCF Developers
 description: Learn how to create a gRPC project by using Visual Studio or the command line.
-ms.date: 12/15/2020
+ms.date: 01/06/2021
 ---
 
 # Create a new ASP.NET Core gRPC project
@@ -11,7 +11,7 @@ The .NET SDK comes with a powerful CLI tool, `dotnet`, which enables you to crea
 ## Create the project by using Visual Studio
 
 > [!IMPORTANT]
-> To develop any ASP.NET Core 5.0 app, you need Visual Studio 2019 version 16.3 or later, with the **ASP.NET and web development** workload installed.
+> To develop any ASP.NET Core 5.0 app, you need Visual Studio 2019 version 16.8 or later, with the **ASP.NET and web development** workload installed.
 
 Create an empty solution called **TraderSys** from the *Blank Solution* template. Add a solution folder called `src`. Then, right-click on the folder and choose **Add** > **New Project**. Enter `grpc` in the template search box, and you should see a project template called `gRPC Service`.
 

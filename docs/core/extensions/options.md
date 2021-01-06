@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 01/04/2021
+ms.date: 01/06/2021
 ---
 
 # Options pattern in .NET
@@ -17,18 +17,20 @@ Options also provide a mechanism to validate configuration data. For more inform
 
 ## Bind hierarchical configuration
 
-The preferred way to read related configuration values is using the options pattern. For example, to read the following configuration values:
+The preferred way to read related configuration values is using the options pattern. The options pattern is possible through the <xref:Microsoft.Extensions.Options.IOptions%601> interface, where the generic type parameter `T` is constrained to `class`. The `IOptions<T>` can later be provided through dependency injection. For more information, see [Dependency injection in .NET](dependency-injection.md).
+
+For example, to read the following configuration values:
 
 :::code language="json" source="snippets/configuration/console-json/appsettings.json" range="3-6":::
 
 Create the following `TransientFaultHandlingOptions` class:
 
-:::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs" range="5-6":::
+:::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs" range="5-9":::
 
-An options class:
+When using the options pattern, an options class:
 
-- Must be a non-abstract class with either a public parameterless constructor, or a public constructor where all parameters have default values.
-- All bindable properties must be read-write, or init only. Fields are **not** bound.
+- Must be non-abstract with a public parameterless constructor
+- Contain public read-write properties to bind (fields are ***not*** bound)
 
 The following code:
 
@@ -36,6 +38,9 @@ The following code:
 * Displays the configuration data.
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="31-38":::
+
+> [!NOTE]
+> The <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind(Microsoft.Extensions.Configuration.IConfiguration,System.Object)?displayProperty=nameWithType> extension method allows for any `object` to be bound and is **not** constrained to a `class`.
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 

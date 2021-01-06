@@ -9,9 +9,9 @@ When you run an application in production, it's critical that you have insights 
 
 ## Monitor your application with Application Insights
 
-Application Insights is an extensible Application Performance Management (APM) service for web developers who work on multiple platforms. Use it to monitor your live web application. `Application Insights` automatically detects performance anomalies. It includes powerful analytics tools to help you diagnose issues, and to help you understand what users actually do with your app. Application Insights is designed to help you continuously improve performance and usability. It works for apps on a wide variety of platforms, including .NET, Node.js, and J2EE, whether hosted on-premises or in the cloud. Application Insights integrates with your DevOps processes, and has connection points to various development tools.
+Application Insights is an extensible Application Performance Management (APM) service for web developers who work on multiple platforms. Use it to monitor your live web application. Application Insights automatically detects performance anomalies. It includes powerful analytics tools to help you diagnose issues, and to help you understand what users actually do with your app. Application Insights is designed to help you continuously improve performance and usability. It works for apps on a wide variety of platforms, including .NET, Node.js, and J2EE, whether hosted on-premises or in the cloud. Application Insights integrates with your DevOps processes, and has connection points to various development tools.
 
-Figure 4-10 shows an example of how `Application Insights` monitors your application and how it surfaces those insights to a dashboard.
+Figure 4-10 shows an example of how Application Insights monitors your application and how it surfaces those insights to a dashboard.
 
 ![Screenshot of Application Insights monitoring dashboard.](./media/modernize-your-apps-with-monitoring-and-telemetry/application-insights-monitoring-dashboard.png)
 

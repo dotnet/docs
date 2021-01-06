@@ -1,7 +1,7 @@
 ---
 title: "Supported collection types in System.Text.Json"
 description: "Learn which collection types are supported for serialization by the APIs in the System.Text.Json namespace."
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 no-loc: [System.Text.Json]
 ms.topic: reference
 zone_pivot_groups: dotnet-version
@@ -47,28 +47,26 @@ The following sections are organized by namespace and show which types are suppo
 
 | Type                                                      | Serialization | Deserialization |
 |-----------------------------------------------------------|---------------|-----------------|
-| <xref:System.Collections.Generic.Dictionary%602>          | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.Dictionary%602> \*       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.HashSet%601>             | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.KeyValuePair%602>        | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.LinkedList%601>          | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.LinkedListNode%601>      | ✔️           | ❌              |
 | <xref:System.Collections.Generic.List%601>                | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.Queue%601>               | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.SortedDictionary%602>    | ✔️           | ✔️              |
-| [SortedList\<string, TValue>](xref:System.Collections.Generic.SortedList%602) \* | ✔️ | ✔️ |
+| <xref:System.Collections.Generic.SortedDictionary%602> \* | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.SortedList%602> \*       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.SortedSet%601>           | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.Stack%601>               | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IAsyncEnumerable%601>    | ❌           | ❌              |
 | <xref:System.Collections.Generic.ICollection%601>         | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IDictionary%602>         | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IDictionary%602> \*      | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IEnumerable%601>         | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IList%601>               | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.IReadOnlyCollection%601> | ✔️           | ✔️              |
-| <xref:System.Collections.Generic.IReadOnlyDictionary%602> | ✔️           | ✔️              |
+| <xref:System.Collections.Generic.IReadOnlyDictionary%602> \* | ✔️        | ✔️              |
 | <xref:System.Collections.Generic.IReadOnlyList%601>       | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet%601>                | ✔️           | ✔️              |
-
-\* Non-`string` keys are not supported.
 
 ::: zone-end
 
@@ -97,9 +95,9 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Generic.IReadOnlyList%601>                                             | ✔️           | ✔️              |
 | <xref:System.Collections.Generic.ISet%601>                                                      | ✔️           | ✔️              |
 
-\* Non-`string` keys are not supported in .NET Core 3.1.
-
 ::: zone-end
+
+\* See [Supported key types](#supported-key-types).
 
 ## System.Collections.Immutable namespace
 
@@ -108,14 +106,14 @@ The following sections are organized by namespace and show which types are suppo
 | Type                                                              | Serialization | Deserialization |
 |-------------------------------------------------------------------|---------------|-----------------|
 | <xref:System.Collections.Immutable.ImmutableArray%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableDictionary%602>       | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableDictionary%602> \*\*  | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableHashSet%601>          | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableList%601>            | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableQueue%601>            | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.ImmutableSortedDictionary%602> | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.ImmutableSortedDictionary%602> \*\* | ✔️      | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableSortedSet%601>        | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.ImmutableStack%601> \*         | ✔️           | ✔️              |
-| <xref:System.Collections.Immutable.IImmutableDictionary%602>      | ✔️           | ✔️              |
+| <xref:System.Collections.Immutable.IImmutableDictionary%602> \*\* | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableList%601>            | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableQueue%601>           | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableSet%601>             | ✔️           | ✔️              |
@@ -141,11 +139,11 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Immutable.IImmutableSet%601>                                                         | ✔️           | ✔️              |
 | <xref:System.Collections.Immutable.IImmutableStack%601> \*                                                    | ✔️           | ✔️              |
 
-\*\* Non-`string` keys are not supported in .NET Core 3.1.
-
 ::: zone-end
 
 \* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
+
+\*\* See [Supported key types](#supported-key-types).
 
 ## System.Collections.Specialized namespace
 
@@ -169,7 +167,7 @@ The following sections are organized by namespace and show which types are suppo
 |---------------------------------------------------------------|---------------|-----------------|
 | <xref:System.Collections.Concurrent.BlockingCollection%601>   | ✔️           | ❌              |
 | <xref:System.Collections.Concurrent.ConcurrentBag%601>        | ✔️           | ❌              |
-| <xref:System.Collections.Concurrent.ConcurrentDictionary%602> | ✔️           | ✔️              |
+| <xref:System.Collections.Concurrent.ConcurrentDictionary%602> \*\* | ✔️      | ✔️              |
 | <xref:System.Collections.Concurrent.ConcurrentQueue%601>      | ✔️           | ✔️              |
 | <xref:System.Collections.Concurrent.ConcurrentStack%601> \*   | ✔️           | ✔️              |
 
@@ -185,11 +183,11 @@ The following sections are organized by namespace and show which types are suppo
 | <xref:System.Collections.Concurrent.ConcurrentQueue%601>    | ✔️           | ✔️              |
 | <xref:System.Collections.Concurrent.ConcurrentStack%601> \* | ✔️           | ✔️              |
 
-\*\* Non-`string` keys are not supported in .NET Core 3.1.
-
 ::: zone-end
 
 \* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
+
+\*\* See [Supported key types](#supported-key-types).
 
 ## System.Collections.ObjectModel namespace
 
@@ -219,7 +217,7 @@ The following sections are organized by namespace and show which types are suppo
 | [ReadOnlyDictionary\<string, TValue>](xref:System.Collections.ObjectModel.ReadOnlyDictionary%602) \* |✔️|❌|
 | <xref:System.Collections.ObjectModel.ReadOnlyObservableCollection%601>| ✔️     | ❌             |
 
-\* Non-`string` keys are not supported in .NET Core 3.1.
+\* See [Supported key types](#supported-key-types).
 
 ::: zone-end
 
@@ -271,11 +269,11 @@ A custom collection is supported for deserialization if it:
   * <xref:System.Collections.Stack> \*
   * <xref:System.Collections.Generic.Stack%601> \*
 
-  \*\* Non-`string` keys are not supported in .NET Core 3.1.
-
 ::: zone-end
 
   \* See [Support round trip for Stack\<T>](system-text-json-converters-how-to.md#support-round-trip-for-stackt).
+
+  \*\* See [Supported key types](#supported-key-types).
 
 ### Custom collections with known issues
 
@@ -288,6 +286,39 @@ There are known issues with the following custom collections:
 - <xref:Microsoft.AspNetCore.Http.IFormCollection?displayProperty=fullName>: See [dotnet/runtime#1559](https://github.com/dotnet/runtime/issues/1559).
 
 For more information about known issues, see the [open issues in System.Text.Json](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json).
+
+## Supported key types
+
+::: zone pivot="dotnet-5-0"
+
+Supported types for the keys of `Dictionary` and `SortedList` types include the following:
+
+* `Boolean`
+* `Byte`
+* `DateTime`
+* `DateTimeOffset`
+* `Decimal`
+* `Double`
+* `Enum`
+* `Guid`
+* `Int16`
+* `Int32`
+* `Int64`
+* `Object` (Only on serialization and if the runtime type is one of the supported types in this list.)
+* `SByte`
+* `Single`
+* `String`
+* `UInt16`
+* `UInt32`
+* `UInt64`
+
+::: zone-end
+
+::: zone pivot="dotnet-core-3-1"
+
+\*\* Non-`string` keys for `Dictionary` and `SortedList` types are not supported in .NET Core 3.1.
+
+::: zone-end
 
 ## See also
 

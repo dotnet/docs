@@ -50,7 +50,7 @@ The benefits of .NET Core come from these three characteristics:
 
 Starting with .NET Core 3.0, besides the existing support for web and cloud, there's also support for desktop, IoT, and AI domains. The goal for this framework is impressive: to target every type of .NET development present and future. Microsoft plans to complete this vision with .NET 5 at the end of 2020. The "Core" name was removed to reinforce its uniqueness in the .NET world.
 
-## .NET 5 = .NET Core vNext
+## .NET 5 is .NET Core vNext
 
 .NET 5 is the next step forward with .NET Core. The .NET 5.0 aims to improve .NET in a few key ways:
 
@@ -58,7 +58,7 @@ Starting with .NET Core 3.0, besides the existing support for web and cloud, the
 - Expand the capabilities of .NET by taking the best of .NET Core, .NET Framework, Xamarin and Mono.
 - Build that product out of a single code-base that developers (Microsoft and the community) can work on and expand together and that improves all scenarios.
 
-This new release and direction are a game-changer for .NET. With .NET 5, your code and project files will look and feel the same no matter which type of app you’re building. You’ll have access to the same runtime, API and language capabilities with each app. This includes new [performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-2-1/) that get committed to corefx, practically daily. For more details refer [What's new in .NET 5](https://docs.microsoft.com/dotnet/core/dotnet-five).
+This new release and direction are a game-changer for .NET. With .NET 5, your code and project files will look and feel the same no matter which type of app you're building. You’ll have access to the same runtime, APIs, and language capabilities with each app. This includes new [performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/) that get committed to the runtime, practically daily. For more details refer [What's new in .NET 5](https://docs.microsoft.com/dotnet/core/dotnet-five).
 
 ![All domains of .NET 5](./media/whats-new-dotnet-core/all-domains-of-dotnet5.png)
 

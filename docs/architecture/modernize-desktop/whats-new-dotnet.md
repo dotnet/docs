@@ -50,7 +50,7 @@ The benefits of .NET Core come from these three characteristics:
 
 Starting with .NET Core 3.0, besides the existing support for web and cloud, there's also support for desktop, IoT, and AI domains. The goal for this framework is impressive: to target every type of .NET development present and future. Microsoft plans to complete this vision with .NET 5 at the end of 2020. The "Core" name was removed to reinforce its uniqueness in the .NET world.
 
-## .NET 5 = .NET Core vNext
+## .NET 5 is .NET Core vNext
 
 .NET 5 is the next step forward with .NET Core. The .NET 5.0 aims to improve .NET in a few key ways:
 

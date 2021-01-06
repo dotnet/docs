@@ -1,7 +1,7 @@
 ---
 title: Docker application DevOps workflow with Microsoft tools
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools DevOps workflow with Microsoft tools
-ms.date: 08/06/2020
+ms.date: 01/06/2021
 ---
 
 # Docker application DevOps workflow with Microsoft tools
@@ -10,7 +10,7 @@ ms.date: 08/06/2020
 
 With Visual Studio and Azure DevOps Services in the cloud, along with Team Foundation Server on-premises, development teams can productively build, test, and release containerized applications that target either Windows or Linux.
 
-Microsoft tools can automate the pipeline for specific implementations of containerized applications—Docker, .NET Core, or any combination with other platforms—from global builds and Continuous Integration (CI) and tests with Azure DevOps Services or Team Foundation Server, to Continuous Deployment (CD) to Docker environments (Development, Staging, Production), and to transmit analytics information about the services to the development team through Azure Monitor. Every code commit can initiate a build (CI) and automatically deploy the services to specific containerized environments (CD).
+Microsoft tools can automate the pipeline for specific implementations of containerized applications—Docker, .NET, or any combination with other platforms—from global builds and Continuous Integration (CI) and tests with Azure DevOps Services or Team Foundation Server, to Continuous Deployment (CD) to Docker environments (Development, Staging, Production), and to transmit analytics information about the services to the development team through Azure Monitor. Every code commit can initiate a build (CI) and automatically deploy the services to specific containerized environments (CD).
 
 Developers and testers can easily and quickly provision production-like development and test environments based on Docker by using templates in Microsoft Azure.
 

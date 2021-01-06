@@ -1,11 +1,11 @@
 ---
-title: Dapr @ 20,000 feet
+title: Dapr at 20,000 feet
 description: A high-level overview of what dapr is, what it does, and how it works
 author: robvet 
 ms.date: 11/23/2020
 ---
 
-# Dapr @ 20,000 feet
+# Dapr at 20,000 feet
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 

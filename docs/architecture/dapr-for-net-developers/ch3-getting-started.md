@@ -187,19 +187,19 @@ In the following walkthrough, you'll create a multi-container application from s
 
 1. In Visual Studio, create an **ASP.NET Core Web Application** project:
 
-   ![Screenshot of creating a new project](./media/ch4-getting-started/walkthrough-multicontainer-createproject.png)
+   ![Screenshot of creating a new project](./media/getting-started/walkthrough-multicontainer-createproject.png)
 
 1. Name your project `DaprFrontEnd` and your solution `DaprMultiContainer`:
 
-   ![Screenshot of configuring your new project](./media/ch4-getting-started/walkthrough-multicontainer-configureproject.png)
+   ![Screenshot of configuring your new project](./media/getting-started/walkthrough-multicontainer-configureproject.png)
 
-1. Select **Web Application** to create a web application with Razor pages. Do not select **Enable Docker Support**. You'll add Docker support later.
+2. Select **Web Application** to create a web application with Razor pages. Do not select **Enable Docker Support**. You'll add Docker support later.
 
-   ![Screenshot of creating a new ASP.NET Core web application](./media/ch4-getting-started/walkthrough-multicontainer-createwebapp.png)
+   ![Screenshot of creating a new ASP.NET Core web application](./media/getting-started/walkthrough-multicontainer-createwebapp.png)
 
-1. Add a second ASP.NET Core Web Application project to the same solution and call it *DaprBackEnd*. Select **API** as the project type, and clear the checkbox for **Configure for HTTPS**. It's recommended to deploy Dapr sidecars in the same network namespace as the application. Therefore, the Dapr sidecar is designed to use unencrypted HTTP to communicate with the application. Note that we still use HTTPS for the front-end and that Dapr provides support for mTLS to encrypt calls between services.
+3. Add a second ASP.NET Core Web Application project to the same solution and call it *DaprBackEnd*. Select **API** as the project type, and clear the checkbox for **Configure for HTTPS**. It's recommended to deploy Dapr sidecars in the same network namespace as the application. Therefore, the Dapr sidecar is designed to use unencrypted HTTP to communicate with the application. Note that we still use HTTPS for the front-end and that Dapr provides support for mTLS to encrypt calls between services.
 
-   ![Screenshot of creating the back-end web API](./media/ch4-getting-started/walkthrough-multicontainer-createwebapi.png)
+   ![Screenshot of creating the back-end web API](./media/getting-started/walkthrough-multicontainer-createwebapi.png)
 
 ### Add Dapr Service Invocation
 
@@ -309,17 +309,17 @@ In the final part of this walkthrough, you'll add container support and run the 
 
 1. Right-click the `DaprFrontEnd` project, and choose **Add > Container Orchestrator Support**. The **Add Container Orchestrator Support** dialog appears:
 
-   ![Screenshot of adding container orchestrator support](./media/ch4-getting-started/walkthrough-multicontainer-addorchestrator.png)
+   ![Screenshot of adding container orchestrator support](./media/getting-started/walkthrough-multicontainer-addorchestrator.png)
 
    Choose **Docker Compose**.
 
 1. In the next dialog, select **Linux** as the Target OS:
 
-   ![Screenshot of selecting Docker target OS](./media/ch4-getting-started/walkthrough-multicontainer-targetos.png)
+   ![Screenshot of selecting Docker target OS](./media/getting-started/walkthrough-multicontainer-targetos.png)
 
    Visual Studio creates a *docker-compose.yml* file and a *.dockerignore* file in the **docker-compose** folder in the solution:
 
-   ![Screenshot of the docker-compose project](./media/ch4-getting-started/walkthrough-multicontainer-dockersolution.png)
+   ![Screenshot of the docker-compose project](./media/getting-started/walkthrough-multicontainer-dockersolution.png)
 
    The *docker-compose.yml* file contains the front-end service:
 
@@ -403,7 +403,7 @@ In the final part of this walkthrough, you'll add container support and run the 
 
 4. Run the solution (**F5** or **Ctrl+F5**) to verify that it works as expected. If everything is configured correctly, you should see the weather forecast data:
 
-   ![Screenshot of the final solution showing the weather forecast data](./media/ch4-getting-started/walkthrough-multicontainer-result.png)
+   ![Screenshot of the final solution showing the weather forecast data](./media/getting-started/walkthrough-multicontainer-result.png)
 
    Note that when debugging, you can set breakpoints in both the front- and back-end. This makes it very easy to debug calls across services. For production scenarios, it's recommended to host your application on Kubernetes. The [eShopOnDapr sample application](...) contains scripts to deploy to Kubernetes.
 

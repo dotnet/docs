@@ -3,7 +3,7 @@ title: Install .NET on Linux with Snap - .NET
 description: Demonstrates how to install either the .NET SDK or the .NET Runtime on Linux with Snap.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/16/2020
+ms.date: 01/06/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime with Snap

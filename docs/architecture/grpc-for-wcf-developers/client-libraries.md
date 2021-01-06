@@ -1,7 +1,7 @@
 ---
 title: Create gRPC client libraries - gRPC for WCF Developers
 description: Discussion of shared client libraries/packages for gRPC services.
-ms.date: 12/15/2020
+ms.date: 01/06/2021
 ---
 
 # Create gRPC client libraries
@@ -142,7 +142,7 @@ namespace Grpc.Core
 
 ## Summary
 
-The <xref:System.IAsyncDisposable> and <xref:System.IObservable%601> models are both well-supported and well-documented ways of dealing with asynchronous streams of data in .NET. gRPC streams map well to both paradigms, offering close integration with .NET, and reactive and asynchronous programming styles.
+The <xref:System.IAsyncEnumerable> and <xref:System.IObservable> models are both well-supported and well-documented ways of dealing with asynchronous streams of data in .NET. gRPC streams map well to both paradigms, offering close integration with .NET, and reactive and asynchronous programming styles.
 
 >[!div class="step-by-step"]
 >[Previous](streaming-versus-repeated.md)

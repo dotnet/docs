@@ -1,7 +1,7 @@
 ---
 title: Docker - gRPC for WCF Developers
 description: Creating Docker images for ASP.NET Core gRPC applications
-ms.date: 12/15/2020
+ms.date: 01/06/2021
 ---
 
 # Create Docker images
@@ -10,7 +10,7 @@ This section covers the creation of Docker images for ASP.NET Core gRPC applicat
 
 ## Microsoft base images for ASP.NET Core applications
 
-Microsoft provides a range of base images for building and running .NET Core applications. To create an ASP.NET Core 3.0 image, you use two base images:
+Microsoft provides a range of base images for building and running .NET applications. To create an ASP.NET Core 5.0 image, you use two base images:
 
 - An SDK image to build and publish the application.
 - A runtime image for deployment.
@@ -24,10 +24,9 @@ For each image, there are four variants based on different Linux distributions, 
 
 | Image tag(s) | Linux | Notes |
 | --------- | ----- | ----- |
-| 5.0-buster, 5.0 | Debian 10 | The default image if no OS variant is specified. |
-| 5.0-alpine | Alpine 3.9 | Alpine base images are much smaller than Debian or Ubuntu ones. |
-| 5.0-disco | Ubuntu 19.04 | |
-| 5.0-bionic | Ubuntu 18.04 | |
+| 5.0-buster-slim, 5.0 | Debian 10 | The default image if no OS variant is specified. |
+| 5.0-alpine | Alpine 3.12 | Alpine base images are much smaller than Debian or Ubuntu ones. |
+| 5.0-focal| Ubuntu 20.04 | |
 
 The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ubuntu images. Some software packages or libraries might not be available in Alpine's package management. If you're not sure which image to use, you should probably choose the default Debian.
 
@@ -111,7 +110,7 @@ obj/
 For a `StockKube.sln` solution containing two different applications `StockData` and `StockWeb`, it's simplest to put the Dockerfile for each one of them in the base directory. In that case, to build the image, use the following `docker build` command from the same directory where `.sln` file resides.
 
 ```console
-docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
+docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
 ```
 
 The confusingly named `--tag` flag (which can be shortened to `-t`) specifies the whole name of the image, including the actual tag if specified. The `.` at the end specifies the context in which the build will be run; the current working directory for the `COPY` commands in the Dockerfile.
@@ -119,7 +118,7 @@ The confusingly named `--tag` flag (which can be shortened to `-t`) specifies th
 If you have multiple applications within a single solution, you can keep the Dockerfile for each application in its own folder, beside the `.csproj` file. You should still run the `docker build` command from the base directory to ensure that the solution and all the projects are copied into the image. You can specify a Dockerfile below the current directory by using the `--file` (or `-f`) flag.
 
 ```console
-docker build -t stockdata:1.0.0 -f .\src\StockData\Dockerfile .
+docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
 ```
 
 ## Run the image in a container on your machine

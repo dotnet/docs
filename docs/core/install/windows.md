@@ -32,6 +32,7 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 | Operating System            | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|--------|
+| Windows 10, Version 20H2    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 2004    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1909    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1903    | ✔️           | ✔️            | ✔️    |

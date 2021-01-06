@@ -15,9 +15,9 @@ Algorithms operate on **features**. Features are numerical values computed from 
 
 An algorithm is the math that executes to produce a **model**. Different algorithms produce models with different characteristics.
 
-With ML.NET, the same algorithm can be applied to different tasks. For example, Stochastic Dual Coordinated Ascent can be used for Binary Classification, Multiclass Classification, and Regression. The difference is in how the output of the algorithm is interpreted to match the task.
+With ML.NET, the same algorithm can be applied to different tasks. For example, Stochastic Dual Coordinate Ascent can be used for Binary Classification, Multiclass Classification, and Regression. The difference is in how the output of the algorithm is interpreted to match the task.
 
-For each algorithm/task combination, ML.NET provides a component that executes the training algorithm and does the interpretation. These components are called trainers. For example, the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> uses the **StochasticDualCoordinatedAscent** algorithm applied to the **Regression** task.
+For each algorithm/task combination, ML.NET provides a component that executes the training algorithm and makes the interpretation. These components are called trainers. For example, the <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> uses the **StochasticDualCoordinatedAscent** algorithm applied to the **Regression** task.
 
 ## Linear algorithms
 
@@ -25,11 +25,11 @@ Linear algorithms produce a model that calculates **scores** from a linear combi
 
 Linear algorithms work well for features that are [linearly separable](https://en.wikipedia.org/wiki/Linear_separability).
 
-Before training with a linear algorithm, the features should be normalized. This prevents one feature having more influence over the result than others.
+Before training with a linear algorithm, the features should be normalized. This prevents one feature from having more influence over the result than others.
 
-In general linear algorithms are scalable and fast, cheap to train, cheap to predict. They scale by the number of features and approximately by the size of the training data set.
+In general, linear algorithms are scalable, fast, cheap to train, and cheap to predict. They scale by the number of features and approximately by the size of the training data set.
 
-Linear algorithms make multiple passes over the training data. If your dataset fits into memory, then adding a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint%2A) to your ML.NET pipeline before appending the trainer, will make the training run faster.
+Linear algorithms make multiple passes over the training data. If your dataset fits into memory, then adding a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint%2A) to your ML.NET pipeline before appending the trainer will make the training run faster.
 
 **Linear Trainers**
 
@@ -71,7 +71,7 @@ Boosted decision trees are an ensemble of small trees where each tree scores the
 
 ## Meta algorithms
 
-These trainers create a multi-class trainer from a binary trainer. Use with <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>.
+These trainers create a multiclass trainer from a binary trainer. Use with <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>.
 
 |Algorithm|Properties|Trainers|
 |---------|----------|--------|

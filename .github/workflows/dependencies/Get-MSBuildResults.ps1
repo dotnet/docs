@@ -31,9 +31,9 @@
     None
 
 .NOTES
-    Version:        1.3
+    Version:        1.4
     Author:         adegeo@microsoft.com
-    Creation Date:  07/02/2020
+    Creation Date:  12/11/2020
     Purpose/Change: Add support for config file. Select distinct on project files.
 #>
 
@@ -150,6 +150,19 @@ foreach ($item in $workingSet) {
                     "CALL `"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat`"`n" +
                     "msbuild.exe `"$projectFile`" -restore:True" `
                     | Out-File ".\run.bat"
+                }
+                elseif ($settings.host -eq "custom") {
+                  Write-Host "- Using custom build host: $($settings.command)"
+
+                  $ExecutionContext.InvokeCommand.ExpandString($settings.command) | Out-File ".\run.bat"
+                }
+                elseif ($settings.host -eq "dotnet") {
+                  Write-Host "- Using dotnet build host"
+
+                  "dotnet build `"$projectFile`"" | Out-File ".\run.bat"
+                }
+                else {
+                  throw "snippets.5000.json file isn't valid."
                 }
             }
 

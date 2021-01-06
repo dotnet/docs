@@ -11,6 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [Passing GroupCollection to extension methods taking IEnumerable\<T> requires disambiguation](#passing-groupcollection-to-extension-methods-taking-ienumerablet-requires-disambiguation) | 3.0 |
 | [APIs that report version now report product and not file version](#apis-that-report-version-now-report-product-and-not-file-version) | 3.0 |
 | [Custom EncoderFallbackBuffer instances cannot fall back recursively](#custom-encoderfallbackbuffer-instances-cannot-fall-back-recursively) | 3.0 |
 | [Floating point formatting and parsing behavior changes](#floating-point-formatting-and-parsing-behavior-changed) | 3.0 |
@@ -29,6 +30,10 @@ The following breaking changes are documented on this page:
 | [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## .NET Core 3.0
+
+[!INCLUDE [disambiguate-generic-type-for-groupcollection](../../../includes/core-changes/corefx/3.0/disambiguate-generic-type-for-groupcollection.md)]
+
+***
 
 [!INCLUDE[APIs that report version now report product and not file version](~/includes/core-changes/corefx/3.0/version-information-changes.md)]
 

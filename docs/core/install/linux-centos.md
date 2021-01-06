@@ -3,7 +3,7 @@ title: Install .NET on CentOS - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on CentOS.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 01/06/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on CentOS
@@ -39,10 +39,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## CentOS 8 ✔️
 
 .NET 5.0 is available in the default package repositories for CentOS 8.
@@ -59,6 +55,10 @@ sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-
 
 [!INCLUDE [linux-yum-install-50](includes/linux-install-50-yum.md)]
 
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
 ## Troubleshoot the package manager
 
 This section provides information on common errors you may get while using the package manager to install .NET.
@@ -71,22 +71,11 @@ This section provides information on common errors you may get while using the p
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-## Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## Dependencies
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
-## Scripted install
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## Manual install
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

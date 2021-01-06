@@ -3,7 +3,7 @@ title: Install .NET on Windows
 description: Learn about what versions of Windows you can install .NET on.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 01/06/2021
 ---
 
 # Install .NET on Windows

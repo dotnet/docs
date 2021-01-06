@@ -2,21 +2,19 @@
 title: The Dapr state management building block
 description: A description of the state management building-block, its features, benefits, and how to apply it.
 author: sanderm
-ms.date: 12/28/2020
+ms.date: 01/06/2021
 ---
 
 # The Dapr state management building block
 
-In a distributed application, services often need to keep track of state. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) helps you store state in a variety of persistent state stores.
+Distributed applications compose many different services. For some of the services, keeping track of state is critical. For example, consider the shopping basket service in eShop. If the service didn't keep track of state, the customer would loose the content of the shopping basket each time he/she left the website. That's not something that will make customers very happy nor is good for sales. To solve this, the shopping basket service needs to persist its state in a data store, such as a SQL Database. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) makes it very easy to store state in a variety of external data stores.
+
+> [!NOTE]
+> By storing the state in an external data store instead of local memory, the service itself can still be considered to be **stateless**. Stateless services are preferred over **statefull** services because they don't require that all requests from a specific user are handled by the same service instance. This means that stateless services can be very easily scaled horizontally as the number of users grow.
 
 To try out the state management building block yourself, have a look at the [counter application walkthrough in chapter 3](ch3-getting-started.md).
 
 ## What it solves
-
-Distributed applications compose many different services. For some of the services, keeping track of state is critical. For example, consider the shopping basket service in eShop. If the service didn't keep track of state, the customer would loose the content of the shopping basket each time he/she left the website. That's not something that will make the customers very happy or is good for sales. To solve this, the shopping basket service stores its state in an external store, such as Redis.
-
-> [!NOTE]
-> By storing the state in an external data store instead of local memory, the service itself can still be considered to be **stateless**. Stateless services are preferred over **statefull** services because they don't require that all requests from a specific user are handled by the same service instance. This means that stateless services can be very easily scaled horizontally as the number of users grow.
 
 While keeping track of state is an important part of a distributed application, it also comes with additional challenges.  For example:
 
@@ -25,16 +23,25 @@ While keeping track of state is an important part of a distributed application, 
 - Multiple users may be accessing and updating data at the same time, requiring some sort of conflict resolution.
 - Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling)  that may occur while interacting with the data store.
 
-The Dapr state management building block directly addresses these challenges. It provides a flexible way to integrate with existing state stores without adding or learning any third-party SDKs.
+The Dapr state management building block directly addresses these challenges. It provides a flexible way to integrate with existing data stores without adding or learning any third-party SDKs.
 
 > [!IMPORTANT]
 > Dapr state management offers a key/value API. It is not optimized for other types of data such as large models of relational or graph data. For example, eShopOnDapr does not use Dapr state management to store all data in the application. Relational data used in the Catalog service is stored in SQL Server using Entity Framework Core. The Basket API does use Dapr state management to store the basket contents because that scenario is a good fit for a key/value store.
 
 ## How it works
 
-The Dapr sidecar provides the APIs to store and retrieve key/value pairs. The actual persistence of the data is done by a configurable state store component. You can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/), such as Azure Cosmos DB, SQL Server, and Cassandra. When you initialize Dapr for local development in self hosted mode, Dapr automatically installs and configures Redis as a state store named `statestore`. See [chapter 3: "Getting started"](ch3-getting-started.md) for more information on installing Dapr. As state stores are named, you can use multiple state store components per application.
+The Dapr sidecar provides the API to store and retrieve key/value pairs. The actual persistence of the data is done by a configurable state store component. You can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/), such as Azure Cosmos DB, SQL Server, and Cassandra.
 
-In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair using the default `statestore` component.
+The state management API supports both HTTP and gRPC. This is the base URL of the HTTP API:
+
+```http
+http://localhost:<daprPort>/v1.0/state/<state-store-name>/
+```
+
+- `<daprPort>`: the HTTP port that Dapr listens on.
+- `<state-store-name>`: the name of the state store component to use.
+
+In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair using the state store component named `statestore`.
 
 ![Diagram of storing a key/value pair in a Dapr state store.](media/state-management/howitworks.png)
 
@@ -42,43 +49,9 @@ In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair us
 
 1. The service calls the state API on the sidecar. The JSON payload in the request body contains the data to store. Because this is a JSON array, you can store multiple key/value pairs with a single API call.
 
-2. The sidecar uses the `statestore` component configuration to determine where to persist the data. The configuration of the state store is defined in a component configuration YAML file. Here's the out-of-the-box `statestore` configuration which uses Redis as the underlying store:
-
-   ```yaml
-   apiVersion: dapr.io/v1alpha1
-   kind: Component
-   metadata:
-     name: statestore
-   spec:
-     type: state.redis
-     metadata:
-     - name: redisHost
-       value: localhost:6379
-     - name: redisPassword
-       value: ""
-     - name: actorStateStore
-       value: "true"
-   ```
-
-   > [!NOTE]
-   > The metadata field `actorStateStore` indicates whether this state store can be used to store actor state. For more information on actors, see [chapter 11](ch11-actors.md).
+2. The sidecar uses the statestore component configuration to determine where to persist the data. The configuration of the state store is defined in a component configuration YAML file.
 
 3. The sidecar persists the data in the Redis cache.
-
-Let's have a look inside the Redis cache to see how Dapr persisted the data:
-
-```
-127.0.0.1:6379> KEYS *
-1) "basketservice||basket1"
-
-127.0.0.1:6379> HGETALL basketservice||basket1
-1) "data"
-2) "{\"items\":[{\"itemId\":\"DaprHoodie\",\"quantity\":1}],\"customerId\":1}"
-3) "version"
-4) "1"
-```
-
-As you can see, Dapr uses the application id `basketservice` as a prefix for the key. This allows multiple Dapr instances to use the same data store without running into key collisions. It also means that it's critical to always specify an application id when running your application with Dapr. If you don't specify an application id, Dapr will generate a unique value when you run the application. Each time the application id changes, you will no longer be able to access any previously stored state because the key prefix is changed.
 
 Retrieving the stored data is just another API call. In the example below, *curl* is used to retrieve the data by directly calling the sidecar API:
 
@@ -127,7 +100,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name> \
 ```
 
 > [!IMPORTANT]
-> It is up to the state store component to try to fulfill the consistency hints attached to operations. Not all data stores will support the different consistency levels. See the [list of supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) for more information.
+> It is up to the state store component to try to fulfill the consistency hints attached to operations. Not all data stores  support the different consistency levels.
 
 ### Concurrency
 
@@ -245,6 +218,99 @@ public async Task Put(WeatherForecast updatedForecast, [FromState("statestore", 
 }
 ```
 
+## State store components
+
+At the time of writing, Dapr provides support for the following state stores including full transaction support:
+
+- Azure CosmosDB
+- Azure SQL Server
+- MongoDB
+- PostgreSQL
+- Redis
+
+The following state stores are also supported, but don't have built-in support for multi-item transactions. You can still use these components for all other CRUD operations:
+
+- Aerospike
+- Azure Blob Storage
+- Azure Table Storage
+- Cassandra
+- Cloudstate
+- Couchbase
+- etcd
+- Google Cloud Firestore
+- Hashicorp Consul
+- Hazelcast
+- Memcached
+- Zookeeper
+
+### Configuration
+
+When you initialize Dapr for local development in self hosted mode, Dapr automatically installs and configures Redis as a state store named `statestore`. As state stores are named, you can use multiple state store components per application. Here's an example of the default state store configuration:
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: statestore
+spec:
+  type: state.redis
+  metadata:
+  - name: redisHost
+    value: localhost:6379
+  - name: redisPassword
+    value: ""
+  - name: actorStateStore
+    value: "true"
+```
+
+The Redis state store requires both `redisHost` and `redisPassword` metadata to be set to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. It's recommended to use a secret reference instead. To learn more about secret management, see [chapter 10](ch10-secrets.md).
+
+The other metadata field in the example, `actorStateStore`, indicates whether this state store can be used to store actor state. For more information on actors, see [chapter 11](ch11-actors.md).
+
+### Key prefix strategies
+
+State store components can use different strategies to store key/value pairs in the underlying data store. Consider the example from the beginning of this chapter where a Basket service stores the contents of a shopping basket for a customer:
+
+```bash
+curl -X POST http://localhost:3500/v1.0/state/statestore \
+  -H "Content-Type: application/json" \
+  -d '[{
+        "key": "basket1",
+        "value": {
+          "customerId": 1,
+          "items": [
+            { "itemId": "DaprHoodie", "quantity": 1 }
+          ]
+        }
+     }]' 
+```
+
+Let's have a look inside the Redis cache to see how the Redis state store component persisted the data:
+
+```
+127.0.0.1:6379> KEYS *
+1) "basketservice||basket1"
+
+127.0.0.1:6379> HGETALL basketservice||basket1
+1) "data"
+2) "{\"items\":[{\"itemId\":\"DaprHoodie\",\"quantity\":1}],\"customerId\":1}"
+3) "version"
+4) "1"
+```
+
+As you can see in the output above, the full Redis key for the data is `basketservice||basket1`. By default, Dapr uses the application id (`basketservice`) as a prefix for the key. This allows multiple Dapr instances to use the same data store without running into key collisions. It also means that it's critical to always specify an application id when running your application with Dapr. If you don't specify an application id, Dapr will generate a unique value when you run the application. Each time the application id changes, the application will no longer be able to access the state stored with the previous key prefix.
+
+It is possible to change this behavior and configure a different strategy for selecting the key prefix. If you want to use a constant value for the prefix, set the `keyPrefix` metadata field in the configuration to the desired value:
+
+```yaml
+spec:
+  metadata:
+  - name: keyPrefix
+  - value: MyPrefix
+```
+
+Having a constant key prefix allows you to access the state store from multiple Dapr applications. You can even omit the prefix completely by setting the value of `keyPrefix` to `none`.
+
 ## Reference architecture: eShopOnDapr
 
 The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture uses an `IBasketRepository` interface to read and write data in the Basket service. The `RedisBasketRepository` class provides the implementation using Redis as the underlying data store:
@@ -358,6 +424,8 @@ The .NET SDK provides language specific support for .NET Core as well as integra
 In eShopOnDapr, the benefits of using Dapr state management instead of having a direct reference to the third-party `StackExchange.Redis` NuGet package are clear. The new implementation uses less lines of code and replacing the underlying Redis cache with a different type of data store now only requires changes to the state store configuration file.
 
 ### References
+
+- [Dapr supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/)
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

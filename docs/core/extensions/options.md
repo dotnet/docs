@@ -17,7 +17,7 @@ Options also provide a mechanism to validate configuration data. For more inform
 
 ## Bind hierarchical configuration
 
-The preferred way to read related configuration values is using the options pattern. The options pattern is possible through the <xref:Microsoft.Extensions.Options.IOptions%601> interface, where the generic type parameter `T` is constrained to `class`. The `IOptions<T>` can later be provided through dependency injection. For more information, see [Dependency injection in .NET](dependency-injection.md).
+The preferred way to read related configuration values is using the options pattern. The options pattern is possible through the <xref:Microsoft.Extensions.Options.IOptions%601> interface, where the generic type parameter `TOptions` is constrained to `class`. The `IOptions<TOptions>` can later be provided through dependency injection. For more information, see [Dependency injection in .NET](dependency-injection.md).
 
 For example, to read the following configuration values:
 
@@ -27,6 +27,7 @@ Create the following `TransientFaultHandlingOptions` class:
 
 :::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs" range="5-9":::
 
+<span id="options-class"></span>
 When using the options pattern, an options class:
 
 - Must be non-abstract with a public parameterless constructor
@@ -39,9 +40,6 @@ The following code:
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="31-38":::
 
-> [!NOTE]
-> The <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind(Microsoft.Extensions.Configuration.IConfiguration,System.Object)?displayProperty=nameWithType> extension method allows for any `object` to be bound and is **not** constrained to a `class`.
-
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 
 [`ConfigurationBinder.Get<T>`](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A) binds and returns the specified type. `ConfigurationBinder.Get<T>` may be more convenient than using `ConfigurationBinder.Bind`. The following code shows how to use `ConfigurationBinder.Get<T>` with the `TransientFaultHandlingOptions` class:
@@ -51,13 +49,16 @@ IConfigurationRoot configurationRoot = configuration.Build();
 
 var options =
     configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
-        .Get<TransientFaultHandlingOptions>();
+                     .Get<TransientFaultHandlingOptions>();
 
 Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
 Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
 ```
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
+
+> [!IMPORTANT]
+> The <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> class exposes several APIs, such as `.Bind(object instance)` and `.Get<T>()` that are ***not*** contained to `class`. When using any of the [Options interfaces](#options-interfaces), you must adhere to aforementioned [options class constraints](#options-class).
 
 An alternative approach when using the options pattern is to bind the `"TransientFaultHandlingOptions"` section and add it to the [dependency injection service container](dependency-injection.md). In the following code, `TransientFaultHandlingOptions` is added to the service container with <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> and bound to configuration:
 

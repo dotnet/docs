@@ -340,7 +340,7 @@ The eShopOnDapr reference architecture shows how the original eShopOnContainers 
 
 - [Dapr service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/)
 
-- [Monitoring distributed cloud-native applications](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/observability-patterns)
+- [Monitoring distributed cloud-native applications](../../cloud-native/observability-patterns)
 
 >[!div class=“step-by-step”]
 >[Previous](~index.md~)

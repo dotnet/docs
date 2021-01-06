@@ -218,7 +218,7 @@ Figure 2-8 shows an application that implements service mesh technology.
 
 Note in the previous figure how messages are intercepted by a proxy that runs alongside each service. Each proxy can be configured with traffic rules specific to the service. It understands messages and can route them across your services and the outside world.
 
-So the question becomes, "Is Dapr a service mesh?"
+So the question becomes, "Is Dapr a service mesh?".
 
 While both use a sidecar architecture, each technology has a different purpose. Dapr provides distributed application features. A service mesh provides a dedicated network infrastructure layer.
 

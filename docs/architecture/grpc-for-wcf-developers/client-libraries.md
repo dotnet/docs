@@ -142,7 +142,7 @@ namespace Grpc.Core
 
 ## Summary
 
-The <xref:System.IAsyncEnumerable> and <xref:System.IObservable> models are both well-supported and well-documented ways of dealing with asynchronous streams of data in .NET. gRPC streams map well to both paradigms, offering close integration with .NET, and reactive and asynchronous programming styles.
+The <xref:System.Collections.Generic.IAsyncEnumerable%601> and <xref:System.IObservable%601> models are both well-supported and well-documented ways of dealing with asynchronous streams of data in .NET. gRPC streams map well to both paradigms, offering close integration with .NET, and reactive and asynchronous programming styles.
 
 >[!div class="step-by-step"]
 >[Previous](streaming-versus-repeated.md)

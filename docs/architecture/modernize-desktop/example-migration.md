@@ -58,7 +58,7 @@ An interesting aspect of this tool is that it only surfaces the differences from
 
 The [Try Convert](https://github.com/dotnet/try-convert/releases) tool is a great way to migrate a project. It's a global tool that attempts to upgrade your project file from the old style to the new SDK style, and retargets applicable projects to .NET 5. Once installed, you can run the following commands:
 
-```text
+```dotnetcli
 try-convert -p "<path to your project file>"
 ```
 

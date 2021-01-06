@@ -28,7 +28,6 @@ For each image, there are four variants based on different Linux distributions, 
 | 5.0-alpine | Alpine 3.12 | Alpine base images are much smaller than Debian or Ubuntu ones. |
 | 5.0-focal| Ubuntu 20.04 | |
 
-
 The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ubuntu images. Some software packages or libraries might not be available in Alpine's package management. If you're not sure which image to use, you should probably choose the default Debian.
 
 > [!IMPORTANT]

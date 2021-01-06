@@ -292,7 +292,7 @@ Notes:
 
 ### Step 3 - Uninstall .NET Core SDKs and Runtimes
 
-`dotnet-core-uninstall remove` uninstalls .NET Core SDKs and Runtimes that are specified by a collection of options. The tool can't be used to uninstall SDKs and Runtimes with version 5.0 or above.
+`dotnet-core-uninstall remove` uninstalls .NET Core SDKs and Runtimes that are specified by a collection of options. Versions 1.2 and later can uninstall SDKs and runtimes with version 5.0 or below and previous versions of the tool can be used to uninstall 3.1 and below.
 
 Since this tool has a destructive behavior, it's **highly** recommended that you do a dry run before running the remove command. The dry run will show you what .NET Core SDKs and runtimes will be removed when you use the `remove` command. Refer to [Should I remove a version?](../install/remove-runtime-sdk-versions.md#should-i-remove-a-version) to learn which SDKs and runtimes are safe to remove.
 

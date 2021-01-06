@@ -141,7 +141,7 @@ The SDK download includes the following components:
 
 The runtime download includes the following components:
 
-* The desktop or ASP.NET Core runtime.
+* Optionally, the desktop or ASP.NET Core runtime.
 * The [.NET runtime](#clr). Provides a type system, assembly loading, a garbage collector, native interop, and other basic services.
 * [Runtime libraries](#runtime-libraries). Provides primitive data types and fundamental utilities.
 * The `dotnet` [driver](tools/index.md#driver). A CLI command that runs framework-dependent apps.

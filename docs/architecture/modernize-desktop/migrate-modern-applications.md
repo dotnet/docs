@@ -77,7 +77,7 @@ You may also come across some issues when using configuration sections that were
 
 If you take this configuration to a .NET, you'll get an exception:
 
-Unrecognized configuration section system.diagnostics
+> Unrecognized configuration section System.Diagnostics
 
 This exception occurs because that section and the assembly responsible for handling that section was defined in the *machine.config* file, which now doesn't exist.
 

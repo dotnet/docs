@@ -14,7 +14,7 @@ The following sections explain what each walkthrough is about, its objectives an
 
 The following get-started walkthroughs provide consistent and comprehensive technical guidance for sample apps that you can lift and shift by using containers, and then move by using multiple deployment choices in Azure.
 
-Each of the following walkthroughs uses the new sample `eShopLegacy` and `eShopModernizing` apps, which are available on GitHub at <https://github.com/dotnet-architecture/eShopModernizing>.
+Each of the following walkthroughs uses the new sample eShopLegacy and eShopModernizing apps, which are available on GitHub at <https://github.com/dotnet-architecture/eShopModernizing>.
 
 - **Tour of eShop legacy apps (baseline apps to modernize)**
 

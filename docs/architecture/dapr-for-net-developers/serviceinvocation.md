@@ -5,7 +5,7 @@ author: amolenk
 ms.date: 11/28/2020
 ---
 
-# The service invocation building block
+# The Dapr service invocation building block
 
 Across a distributed system, one service often needs to communicate with another to complete a business operation. The [Dapr service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) can help streamline the communication between services.
 
@@ -20,7 +20,7 @@ Making calls between services in a distributed application may appear easy, but 
 
 Lastly, as distributed applications compose many different services, capturing insights across service call graphs are critical to diagnosing production issues.
 
-The Dapr service invocation building block addresses these challenges by using a Dapr sidecar as a [reverse proxy](https://kemptechnologies.com/reverse-proxy/reverse-proxy/) for your service.
+The service invocation building block addresses these challenges by using a Dapr sidecar as a [reverse proxy](https://kemptechnologies.com/reverse-proxy/reverse-proxy/) for your service.
 
 ## How it works
 
@@ -342,6 +342,6 @@ The eShopOnDapr reference architecture shows how the original eShopOnContainers 
 
 - [Monitoring distributed cloud-native applications](../../cloud-native/observability-patterns)
 
->[!div class=“step-by-step”]
+<!-- >[!div class=“step-by-step”]
 >[Previous](~index.md~)
->[Next](~index.md~)
+>[Next](~index.md~) -->

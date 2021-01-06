@@ -241,7 +241,7 @@ A custom collection is supported for deserialization if it:
   * <xref:System.Collections.Concurrent.ConcurrentStack%601> \*
   * <xref:System.Collections.Generic.ICollection%601>
   * <xref:System.Collections.IDictionary>
-  * <xref:System.Collections.Generic.IDictionary%602>
+  * <xref:System.Collections.Generic.IDictionary%602> \*\*
   * <xref:System.Collections.IList>
   * <xref:System.Collections.Generic.IList%601>
   * <xref:System.Collections.Queue>

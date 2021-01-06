@@ -68,7 +68,9 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 - **`-s|--source <SOURCE>`**
 
-  Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
+  Specifies the server URL. NuGet identifies a UNC or local folder source and simply copies the file there instead of pushing it using HTTP.
+  > [!IMPORTANT]
+  > Starting with NuGet 3.4.2, this is a mandatory parameter unless the NuGet config file specifies a `DefaultPushSource` value. For more information, see [Configuring NuGet behavior](/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`--skip-duplicate`**
 
@@ -88,7 +90,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
 ## Examples
 
-- Push *foo.nupkg* to the default push source, specifying an API key:
+- Push *foo.nupkg* to the default push source specified in the NuGet config file, using an API key:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
@@ -106,7 +108,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
   ```
 
-- Push *foo.nupkg* to the default push source:
+- Push *foo.nupkg* to the default push source specified in the NuGet config file:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg
@@ -118,13 +120,13 @@ The command pushes an existing package. It doesn't create a package. To create a
   dotnet nuget push foo.symbols.nupkg
   ```
 
-- Push *foo.nupkg* to the default push source, specifying a 360-second timeout:
+- Push *foo.nupkg* to the default push source specified in the NuGet config file, with a 360-second timeout:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg --timeout 360
   ```
 
-- Push all *.nupkg* files in the current directory to the default push source:
+- Push all *.nupkg* files in the current directory to the default push source specified in the NuGet config file:
 
   ```dotnetcli
   dotnet nuget push "*.nupkg"
@@ -138,7 +140,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   > [!NOTE]
   > The enclosing quotes are required for shells such as bash that perform file globbing. For more information, see [NuGet/Home#4393](https://github.com/NuGet/Home/issues/4393#issuecomment-667618120).
 
-- Push all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) server:
+- Push all *.nupkg* files to the default push source specified in the NuGet config file, even if a 409 Conflict response is returned by an HTTP(S) server:
 
   ```dotnetcli
   dotnet nuget push "*.nupkg" --skip-duplicate

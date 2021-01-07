@@ -70,7 +70,8 @@ try-convert -w "<path to your solution>"
 
 After the tool attempts the conversion, reload your files in Visual Studio to run and test. There's a possibility that Try Convert won't be able to perform the conversion due to the specifics of your project. In that case, you can refer the below steps.
 
-#### Create the new .NET project
+#### Migrate manually
+1. Create the new .NET project
 
 In most of the cases, you'll want to update your existing project to the new .NET format. However, you can also create a new project while maintaining the old one. The main drawback from updating the old project is that you lose designer support, which may be important for you. If you want to keep using the designer, you must create a new .NET project in parallel with the old one and share assets. If you need to modify UI elements in the designer, you can switch to the old project to do that. And since assets are linked, they'll be updated in the .NET project as well.
 

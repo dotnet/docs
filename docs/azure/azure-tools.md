@@ -33,6 +33,6 @@ Azure Data Studio is a cross-platform database tool for accessing both on-premis
 > [!div class="nextstepaction"]
 > [Download Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio)
 
-## Next Steps
+## Next steps
 
 Validate your development environment is set up correctly using the [.NET on Azure development environment checklist](./dotnet-dev-env-checklist.md).

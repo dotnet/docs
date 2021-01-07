@@ -12,7 +12,7 @@ author: daberry
 
 This checklist is provided to help you make sure you have your development environment correctly configured for .NET development with Azure
 
-## Create an Azure Account
+## Create an Azure account
 
 To access Azure services or run applications in Azure, you need an Azure account.
 
@@ -40,7 +40,7 @@ In addition to using the Azure portal, you will want to install the Azure CLI to
 These additional tools are designed to make you more productive when working with Azure.
 
 * [Install Azure PowerShell](/powershell/azure/install-az-ps) if you plan on using PowerShell scripts to create and manage Azure resources
-* [Install Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) to upload, download, and manage data in Azure storage resources including blobs, queues, tables, and CosmosDB.
+* [Install Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) to upload, download, and manage data in Azure storage resources including blobs, queues, tables, and CosmosDB.
 * [Install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) if you are working with Azure SQL
 
 ## Bookmark the following sites
@@ -48,4 +48,4 @@ These additional tools are designed to make you more productive when working wit
 You will use these sites frequently when doing Azure development.  Bookmark them for quick reference.
 
 * Azure Portal - [https://portal.azure.com/](https://portal.azure.com/)
-* Azure Cloud Shell - [https://portal.azure.com/](https://portal.azure.com/)
+* Azure Cloud Shell - [https://shell.azure.com/](https://shell.azure.com/)

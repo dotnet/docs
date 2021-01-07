@@ -22,9 +22,9 @@ Figure 7-1 shows the high-level architecture of the publish/subscribe pattern.
 From the previous figure, note the steps of the pattern:
 
 1. Publishers send messages to the message broker.
-2. Subscribers bind to a subscription on the message broker.
-3. The message broker forwards a copy of the message to interested subscriptions.
-4. Subscribers consume messages from their subscriptions.
+1. Subscribers bind to a subscription on the message broker.
+1. The message broker forwards a copy of the message to interested subscriptions.
+1. Subscribers consume messages from their subscriptions.
 
 Most message brokers encapsulate a queueing mechanism that can persist messages once received. With it, the message broker guarantees **durability** by storing the message. Subscribers don't need to be immediately available or even online when a publisher sends a message. Once available, the subscriber receives and processes the message.  Dapr guarantees **At-Least-Once** semantics for message delivery. Once a message is published, it will be delivered at least once to any interested subscriber.
 

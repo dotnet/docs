@@ -1,11 +1,11 @@
 ---
 title: When not to deploy to Windows Containers
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | When not to deploy to Windows Containers
-ms.date: 04/28/2018
+ms.date: 12/21/2020
 ---
 # When not to deploy to Windows Containers
 
-Some Windows technologies are not supported by Windows Containers. In those cases, you still need to migrate to standards VMs, usually with just Windows and IIS.
+Some Windows technologies are not supported by Windows Containers. In those cases, you still need to migrate to the standards VMs, usually with just Windows and IIS.
 
 Cases not supported in Windows Containers, as of May 2018:
 
@@ -27,7 +27,7 @@ Cases not supported in Windows Containers, as of May 2018:
 
 - Windows infrastructure roles (DNS, DHCP, DC, NTP, PRINT, File server, IAM etc.) are not supported scenarios.
 
-For additional not-supported scenarios and requests from the community, see the UserVoice forum for Windows Containers: <https://windowsserver.uservoice.com/forums/304624-containers>.
+For other nonsupported scenarios and requests from the community, see the UserVoice forum for Windows Containers: <https://windowsserver.uservoice.com/forums/304624-containers>.
 
 ### Additional resources
 

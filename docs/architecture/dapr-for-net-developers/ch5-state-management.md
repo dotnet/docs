@@ -48,9 +48,7 @@ In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair us
 **Figure 5-1**. Storing a key/value pair in a Dapr state store.
 
 1. The service calls the state API on the sidecar. The JSON payload in the request body contains the data to store. Because this is a JSON array, you can store multiple key/value pairs with a single API call.
-
 1. The sidecar uses the statestore component configuration to determine where to persist the data. The configuration of the state store is defined in a component configuration YAML file.
-
 1. The sidecar persists the data in the Redis cache.
 
 Retrieving the stored data is just another API call. In the example below, *curl* is used to retrieve the data by directly calling the sidecar API:
@@ -79,9 +77,9 @@ The following sections explain how to use more advanced features of the state ma
 
 The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that it's impossible to build a distributed application that satisfies more than two out of the following three properties: **(C)onsistency**, **(A)vailability**, and **(P)artition Tolerance**. All distributed applications need to be able to deal with "P", because they use networking and network disruptions will occur. Therefore, real world distributed applications can either be "AP" or "CP".
 
-"AP" applications choose availability over consistency. This is supported in Dapr with the **eventual consistency** level, and is the default behavior of the state management building block. With eventual consistency, the state store should asynchronously replicate writes/deletes to the configured quorum after acknowledging the request. Read requests can return data from any of the replicas, including those that haven't received the latest updates yet.
+"AP" applications choose availability over consistency. This is supported in Dapr with the **eventual consistency** level, and is the default behavior of the state management building block. Consider an underlying data store, such as Azure CosmosDB, which uses multiple replicas to store data redundantly. With eventual consistency, the state store should asynchronously update the replicas *after* acknowledging the request. Read requests can return data from any of the replicas, including those that haven't received the latest updates yet.
 
-"CP" applications choose consistency over availability. This is supported by using the **strong consistency** level. In this case, the state store should synchronously replicate writes/deletes to the configured quorum *before* completing the request. Read operations should return the most up-to-date data consistently across replicas.
+"CP" applications choose consistency over availability. This is supported by using the **strong consistency** level. In this case, the state store should synchronously update all required replicas *before* completing the request. Read operations should return the most up-to-date data consistently across replicas.
 
 The consistency level for a state operation is set by attaching a consistency hint to the operation. If no consistency hint is set, the default behavior is **eventual**. The following *curl* command shows how to write a `Hello=World` key/value pair to a state store using a strong consistency hint:
 
@@ -173,7 +171,7 @@ var (weatherForecast, etag) = await daprClient.GetStateAndETagAsync<WeatherForec
 var result = await daprClient.TrySaveStateAsync("statestore", city, weatherForecast, etag);
 ```
 
-The`TrySaveStateAsync` method fails when the data (and the associated ETag) in the state store has been changed since it was last retrieved. The method returns a boolean value to indicate whether the call succeeded. One way to handle the failure scenario is to simply reload the updated data from the state store and try making the changes again.
+The`TrySaveStateAsync` method fails when the data (and the associated ETag) in the state store has been changed since it was last retrieved. The method returns a boolean value to indicate whether the call succeeded. One way to handle the failure scenario is to simply reload the updated data from the state store and try making the changes again. This should also include checking whether it's still useful to make the changes now that the original data has been changed. If you always want your writes to succeed, no matter what other changes have been made to the data, it's easier to use the **last-write-wins** strategy.
 
 The SDK provides additional methods to retrieve data in bulk, delete data, and execute transactions. For more information, see the [Dapr .NET SDK repository](https://github.com/dapr/dotnet-sdk).
 

@@ -104,7 +104,7 @@ type SomeType
 
 ## Limitations
 
-Some features of XML documentation in C# and other .NET languages are not supported in C#.
+Some features of XML documentation in C# and other .NET languages are not supported in F#.
 
 - In F#, cross-references must use the full XML signature of the corresponding symbol, for example `cref="T:System.Console"`.
   Simple C#-style cross-references such as `cref="Console"` are not elaborated to full XML signatures

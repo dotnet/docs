@@ -228,7 +228,7 @@ The <xref:System.String> class lets you test for equality by calling either the 
 
 Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
 
-You should be careful when you use these methods, because forcing a string to a uppercase or lowercase is often used as a small normalization for comparing strings regardless of case. If so, consider using a case-insensitive comparison.
+Be careful when you use the <xref:System.String.ToUpper?displayProperty=nameWithType> and <xref:System.String.ToLower?displayProperty=nameWithType> methods, because forcing a string to a uppercase or lowercase is often used as a small normalization for comparing strings regardless of case. If so, consider using a case-insensitive comparison.
 
 The <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> and <xref:System.String.ToLowerInvariant%2A?displayProperty=nameWithType> methods are also available. <xref:System.String.ToUpperInvariant%2A> is the standard way to normalize case. Comparisons made using <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> are behaviorally the composition of two calls: calling <xref:System.String.ToUpperInvariant%2A> on both string arguments, and doing a comparison using <xref:System.StringComparison.Ordinal?displayProperty=nameWithType>.
 
@@ -238,7 +238,7 @@ Overloads are also available for converting to uppercase and lowercase in a spec
 
 Default interpretation: <xref:System.StringComparison.CurrentCulture?displayProperty=nameWithType>.
 
-These methods work similarly to the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> and <xref:System.String.ToLower%2A?displayProperty=nameWithType> methods described in the previous section.
+The <xref:System.Char.ToUpper(System.Char)?displayProperty=nameWithType> and <xref:System.Char.ToLower(System.Char)?displayProperty=nameWithType> methods work similarly to the <xref:System.String.ToUpper?displayProperty=nameWithType> and <xref:System.String.ToLower?displayProperty=nameWithType> methods described in the previous section.
 
 ### String.StartsWith and String.EndsWith
 

@@ -3,7 +3,7 @@ title: Install .NET on Alpine - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 01/06/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
@@ -12,7 +12,13 @@ This article describes how to install .NET on Alpine. When an Alpine version fal
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-There are no installers for Alpine. You must either use the [install script](#scripted-install) or follow the [manual install](#manual-install) instructions.
+## Install
+
+Installers aren't available for Alpine Linux. You must install .NET in one of the following ways:
+
+- [Snap package](linux-snap.md)
+- [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
+- [Manual binary extraction](linux-scripted-manual.md#manual-install)
 
 ## Supported distributions
 
@@ -49,14 +55,7 @@ The following versions of .NET are no longer supported. The downloads for these 
 - libstdc++
 - zlib
 
-## Scripted install
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## Manual install
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

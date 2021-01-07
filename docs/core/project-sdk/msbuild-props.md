@@ -73,15 +73,39 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 </PropertyGroup>
 ```
 
-## Publish properties and items
+## Publish properties, items, and metadata
 
 - [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
 - [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [CopyToPublishDirectory](#copytopublishdirectory)
+- [LinkBase](#linkbase)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [UseAppHost](#useapphost)
+
+### CopyToPublishDirectory
+
+The `CopyToPublishDirectory` metadata on an MSBuild item controls when the item is copied to the publish directory. Allowable values are `PreserveNewest`, only copies the item if it has changed, and `Always`, which always copies the item. From a performance standpoint, `PreserveNewest` is preferable because it enables an incremental build.
+
+```xml
+<ItemGroup>
+  <None Update="**/my_pattern/**" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+</ItemGroup>
+```
+
+### LinkBase
+
+For an item that's outside of the project directory and its subdirectories (the *project cone*), the publish target uses the item's [Link metadata](/visualstudio/msbuild/common-msbuild-item-metadata) to determine where to copy the item to. `Link` is also used to determine how to display items outside of the project cone in the Solution Explorer window of Visual Studio.
+
+If `Link` is not specified for an item that's outside of the project cone, it defaults to `%(LinkBase)\%(RecursiveDir)%(Filename)%(Extension)`. `LinkBase` lets you specify a sensible base folder for items outside of the project cone. The folder hierarchy under the base folder is preserved via `RecursiveDir`.
+
+```xml
+<ItemGroup>
+  <Content Include="..\Shared\**\*.cs" LinkBase="Shared" />
+</ItemGroup>
+```
 
 ### AppendTargetFrameworkToOutputPath
 

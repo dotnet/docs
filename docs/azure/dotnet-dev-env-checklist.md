@@ -24,8 +24,8 @@ To access Azure services or run applications in Azure, you need an Azure account
 
 Popular tools like Visual Studio and Visual Studio Code have extensions available to let you work with Azure right from your IDE.
 
-* [Configure Visual Studio](./configure-visual-studio) for .NET development using Azure
-* [Configure Visual Studio Code](./configure-vs-code) for .NET Development using Azure
+* [Configure Visual Studio](./configure-visual-studio.md) for .NET development using Azure
+* [Configure Visual Studio Code](./configure-vs-code.md) for .NET Development using Azure
 
 ## Install the Azure CLI
 

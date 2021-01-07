@@ -184,7 +184,7 @@ Insert a `COMReference` structure inside the project file like in the following 
 
 ## More things to consider
 
-Several technologies available to .NET Framework libraries aren't available for .NET Core or later. If your code relies on some of these technologies, consider the alternative approaches outlined in this section.
+Several technologies available to .NET Framework libraries aren't available for .NET Core or .NET 5. If your code relies on some of these technologies, consider the alternative approaches outlined in this section.
 
 The [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md) provides access to APIs that were previously available only for .NET Framework. It can be used on .NET Core and .NET Standard projects.
 

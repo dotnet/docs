@@ -126,7 +126,9 @@ var data = new OrderData
   amount = 2
 }
 
-await PublishEventAsync<OrderData>("pubsub", "newOrder", data);
+DaprClient daprClient = new DaprClientBuilder().Build();
+
+await daprClient.PublishEventAsync<OrderData>("pubsub", "newOrder", data);
 ```
 
 - The first argument `pubsub` is the name of the Dapr component that provides the message broker implementation. We'll address components later in this chapter.
@@ -271,10 +273,10 @@ Eventing in eShopOnContainers is based on the following `IEventBus` interface:
 ```csharp
 public interface IEventBus
 {
-    void Publish(IntegrationEvent @event);
+    void Publish(IntegrationEvent integrationEvent);
 
     void Subscribe<T, THandler>()
-        where T : IntegrationEvent
+        where TEvent : IntegrationEvent
         where THandler : IIntegrationEventHandler<T>;
 }
 ```
@@ -308,17 +310,17 @@ public class DaprEventBus : IEventBus
         _logger = logger;
     }
 
-    public async Task PublishAsync<TIntegrationEvent>(TIntegrationEvent @event)
+    public async Task PublishAsync<TIntegrationEvent>(TIntegrationEvent integrationEvent)
         where TIntegrationEvent : IntegrationEvent
     {
-        var topicName = @event.GetType().Name;
+        var topicName = integrationEvent.GetType().Name;
 
-        _logger.LogInformation("Publishing event {@Event} to {PubsubName}.{TopicName}", @event, DAPR_PUBSUB_NAME, topicName);
+        _logger.LogInformation("Publishing event {Event} to {PubsubName}.{TopicName}", integrationEvent, DAPR_PUBSUB_NAME, topicName);
 
         // Make sure to pass the concrete event type to PublishEventAsync,
         // which can be accomplished by casting the event to dynamic. This ensures
         // that all event fields are properly serialized.
-        await _dapr.PublishEventAsync(DAPR_PUBSUB_NAME, topicName, (dynamic)@event);
+        await _dapr.PublishEventAsync(DAPR_PUBSUB_NAME, topicName, (dynamic)integrationEvent);
     }
 }
 ```
@@ -352,10 +354,10 @@ public class IntegrationEventController : ControllerBase
 
     [HttpPost("OrderStatusChangedToValidated")]
     [Topic(DAPR_PUBSUB_NAME, "OrderStatusChangedToValidatedIntegrationEvent")]
-    public async Task OrderStarted(OrderStatusChangedToValidatedIntegrationEvent @event)
+    public async Task OrderStarted(OrderStatusChangedToValidatedIntegrationEvent integrationEvent)
     {
         var handler = _serviceProvider.GetRequiredService<OrderStatusChangedToValidatedIntegrationEventHandler>();
-        await handler.Handle(@event);
+        await handler.Handle(integrationEvent);
     }
 }
 ```

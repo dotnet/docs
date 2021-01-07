@@ -77,9 +77,9 @@ If the project has multiple target frameworks, focus the results of the command 
 
 `dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
 
-### Default compilation includes
+### Default includes and excludes
 
-The default includes and excludes for compile items, embedded resources, and `None` items are defined in the SDK. Unlike non-SDK .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This makes the project file smaller and easier to understand and edit by hand, if needed.
+The default includes and excludes for [`Compile` items](/visualstudio/msbuild/common-msbuild-project-items#compile), [embedded resources](/visualstudio/msbuild/common-msbuild-project-items#embeddedresource), and [`None` items](/visualstudio/msbuild/common-msbuild-project-items#none) are defined in the SDK. Unlike non-SDK .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This behavior makes the project file smaller and easier to understand and edit by hand, if needed.
 
 The following table shows which elements and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET SDK:
 
@@ -90,7 +90,7 @@ The following table shows which elements and which [globs](https://en.wikipedia.
 | None              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
 > [!NOTE]
-> The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the property `$(DefaultItemExcludes)`.
+> The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the [DefaultItemExcludes property](msbuild-props.md#defaultitemexcludes).
 
 #### Build errors
 
@@ -104,7 +104,7 @@ To resolve the errors, do one of the following:
 
 - Remove the explicit `Compile`, `EmbeddedResource`, or `None` items that match the implicit ones listed on the previous table.
 
-- Set the `EnableDefaultItems` property to `false` to disable all implicit file inclusion:
+- Set the [EnableDefaultItems property](msbuild-props.md#enabledefaultitems) to `false` to disable all implicit file inclusion:
 
   ```xml
   <PropertyGroup>
@@ -114,7 +114,7 @@ To resolve the errors, do one of the following:
 
   If you want to specify files to be published with your app, you can still use the known MSBuild mechanisms for that, for example, the `Content` element.
 
-- Selectively disable only `Compile`, `EmbeddedResource`, or `None` globs by setting the `EnableDefaultCompileItems`, `EnableDefaultEmbeddedResourceItems`, or `EnableDefaultNoneItems` property to `false`:
+- Selectively disable only `Compile`, `EmbeddedResource`, or `None` globs by setting the [EnableDefaultCompileItems](msbuild-props.md#enabledefaultcompileitems), [EnableDefaultEmbeddedResourceItems](msbuild-props.md#enabledefaultembeddedresourceitems), or [EnableDefaultNoneItems](msbuild-props.md#enabledefaultnoneitems) property to `false`:
 
   ```xml
   <PropertyGroup>

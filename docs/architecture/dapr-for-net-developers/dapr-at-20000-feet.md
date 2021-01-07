@@ -102,39 +102,38 @@ Consider, the Dapr **state store** component. It provides a uniform way to manag
 
 Each component provides the necessary implementation through a common state management interface:
 
-   ```go
-   type Store interface {
-     Init(metadata Metadata) error
-     Delete(req *DeleteRequest) error
-     BulkDelete(req []DeleteRequest) error
-     Get(req *GetRequest) (*GetResponse, error)
-     Set(req *SetRequest) error
-     BulkSet(req []SetRequest) error
-  }
-   ```
+ ```go
+ type Store interface {
+   Init(metadata Metadata) error
+   Delete(req *DeleteRequest) error
+   BulkDelete(req []DeleteRequest) error
+   Get(req *GetRequest) (*GetResponse, error)
+   Set(req *SetRequest) error
+   BulkSet(req []SetRequest) error
+}
 
-   > Note: The Dapr interface above along with all of Dapr has been written in the Golang, or Go, platform. Go is a popular language across the open source community and attests to cross-platform commitment of Dapr.
+> [!TIP]
+> The Dapr interface above along with all of Dapr has been written in the Golang, or Go, platform. Go is a popular language across the open source community and attests to cross-platform commitment of Dapr.
 
 Perhaps you start with Azure Redis Cache as your state store. You specify it with the following configuration:
 
-   ```yaml
-   apiVersion: dapr.io/v1alpha1
-   kind: Component
+ ```yaml
+ apiVersion: dapr.io/v1alpha1
+ kind: Component
+ metadata:
+   name: statestore
+   namespace: default
+ spec:
+   type: state.redis
    metadata:
-     name: statestore
-     namespace: default
-   spec:
-     type: state.redis
-     metadata:
-     - name: redisHost
-       value: <HOST>
-     - name: redisPassword
-       value: <PASSWORD>
-     - name: enableTLS
-       value: <bool> # Optional. Allowed: true, false.
-     - name: failover
-       value: <bool> # Optional. Allowed: true, false.
-   ```
+   - name: redisHost
+     value: <HOST>
+   - name: redisPassword
+     value: <PASSWORD>
+   - name: enableTLS
+     value: <bool> # Optional. Allowed: true, false.
+   - name: failover
+     value: <bool> # Optional. Allowed: true, false.
 
 In the **spec** section, you configure Dapr to use the Redis Cache for state management. The section also contains component-specific metadata. In this case, you can use it to configure additional Redis settings.
 
@@ -143,7 +142,7 @@ At a later time, the application is ready to go to production. For the productio
 At the time of this writing, the following component types are provided by Dapr:
 
 | Component | Description |
-| :-------- | :-------- |
+|-----------|-------------|
 | [Service discovery](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Used by the Service Invocation building block to integrate with the hosting environment to provide service-to-service discovery. |
 | [State](https://github.com/dapr/components-contrib/tree/master/state) | Provides a uniform interface to interact with a wide variety of state store implementations. |
 | [Pub/sub](https://github.com/dapr/components-contrib/tree/master/pubsub) | Provides a uniform interface to interact with a wide variety of message bus implementations. |
@@ -154,9 +153,9 @@ At the time of this writing, the following component types are provided by Dapr:
 
 As our jet completes it fly over of Dapr, we look back once more and can see how it connects together.
 
-### Sidecar Architecture
+### Sidecar architecture
 
-Dapr exposes its building blocks and components through a [sidecar architecture](https://docs.microsoft.com/azure/architecture/patterns/sidecar). A sidecar enables that Dapr to run in a separate memory process or separate container alongside your service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
+Dapr exposes its building blocks and components through a [sidecar architecture](https://docs.microsoft.com/azure/architecture/patterns/sidecar). A sidecar enables Dapr to run in a separate memory process or separate container alongside your service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
 
 ![Sidecar architecture](./media/sidecar-generic.png)
 
@@ -164,11 +163,11 @@ Dapr exposes its building blocks and components through a [sidecar architecture]
 
 This pattern is named Sidecar because it resembles a sidecar attached to a motorcycle. In the previous figure, note how the Dapr sidecar is attached to your service to provide distributed application capabilities.
 
-### Hosting Environments
+### Hosting environments
 
 Dapr has cross-platform support and can run in many different environments. These environments include Kubernetes, a group of VMs, or edge environments such as Azure IoT Edge.
 
-For local development, the easiest way to get started is [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted). In self-hosted mode, the microservices and Dapr sidecars run in separate local processes without a container orchestrator such as Kubernetes. To get started with self-hosted mode, [download and install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr/).
+For local development, the easiest way to get started is with [self-hosted mode](https://docs.dapr.io/concepts/overview/#self-hosted). In self-hosted mode, the microservices and Dapr sidecars run in separate local processes without a container orchestrator such as Kubernetes. For more information, see [download and install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr/).
 
 Figure 2-5 shows an application and Dapr hosted in two separate memory processes communicating via HTTP or gRPC.
 
@@ -194,7 +193,7 @@ As you've seen, Dapr exposes a sidecar architecture to decouple your application
 
 Looking at the previous figure, one might question the latency and overhead incurred for each call.  
 
-The Dapr team has invested heavily in performance. A tremendous amount of engineering effort has gone into making Dapr efficient. Calls between Dapr sidecars are always made with gRPC, which delivers high performance and small, binary payloads. In most cases, the additional overhead should be less than 1 millisecond.
+The Dapr team has invested heavily in performance. A tremendous amount of engineering effort has gone into making Dapr efficient. Calls between Dapr sidecars are always made with gRPC, which delivers high performance and small binary payloads. In most cases, the additional overhead should be sub-millisecond.
 
 To increase performance, developers can call the Dapr building blocks with gRPC.
 
@@ -216,7 +215,7 @@ Figure 2-8 shows an application that implements service mesh technology.
 
 **Figure 2-8**. Service mesh with a side car.
 
-Note in the previous figure how messages are intercepted by a proxy that runs alongside each service. Each proxy can be configured with traffic rules specific to the service. It understands messages and can route them across your services and the outside world.
+The previous figure depicts how messages are intercepted by a proxy that runs alongside each service. Each proxy can be configured with traffic rules specific to the service. It understands messages and can route them across your services and the outside world.
 
 So the question becomes, "Is Dapr a service mesh?".
 

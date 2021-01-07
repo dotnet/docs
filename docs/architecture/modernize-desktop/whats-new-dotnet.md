@@ -62,7 +62,7 @@ This new release and direction are a game-changer for .NET. With .NET 5, your co
 
 ![All domains of .NET 5](./media/whats-new-dotnet-core/all-domains-of-dotnet5.png)
 
-## .NET Framework vs. .NET
+## .NET Framework vs. .NET 5
 
 So now that you understand the relevance of .NET, you might be wondering what happens with .NET Framework. You could be asking questions like: do you have to abandon it? Is it going to disappear? What are my choices to modernize the applications I have on .NET Framework?
 

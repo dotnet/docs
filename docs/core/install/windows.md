@@ -175,7 +175,7 @@ For more information about .NET Core 2.1 supported operating systems, distributi
 
 ### <a name="additional-deps"></a> Windows 7 / Vista / 8.1 / Server 2008 R2 / Server 2012 R2
 
-Additional dependencies are required if you're installing the .NET SDK or runtime on the following Windows versions:
+More dependencies are required if you're installing the .NET SDK or runtime on the following Windows versions:
 
 - Windows 7 SP1 [ESU][esu]
 - Windows Vista SP 2
@@ -183,10 +183,10 @@ Additional dependencies are required if you're installing the .NET SDK or runtim
 - Windows Server 2008 R2
 - Windows Server 2012 R2
 
-Install the following:
+Install the following prerequisites:
 
-- [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=52685).
-- [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)
+- Microsoft Visual C++ 2015-2019 Redistributable [64-bit](https://aka.ms/vs/16/release/vc_redist.x64.exe) / [32-bit](https://aka.ms/vs/16/release/vc_redist.x86.exe)
+- KB3063858 [64-bit](https://www.microsoft.com/en-us/download/details.aspx?id=47442) / [32-bit](https://www.microsoft.com/en-us/download/details.aspx?id=47409)
 
 The previous requirements are also required if you come across one of the following errors:
 
@@ -199,6 +199,12 @@ The previous requirements are also required if you come across one of the follow
 > \- or -
 >
 > The library *hostfxr.dll* was found, but loading it from *C:\\\<path_to_app>\\hostfxr.dll* failed.
+
+You may encounter an error related to an invalid signature while installing .NET Core 2.1. To fix this error, do the following steps:
+
+01. Uninstall .NET Core 2.1.
+01. Import the [MicrosoftRootCertificateAuthority2011.cer](http://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409) certificate.
+01. Reinstall .NET Core 2.1.
 
 ## Install with PowerShell automation
 

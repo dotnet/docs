@@ -304,5 +304,6 @@ Extension methods on `HttpClient` and `HttpContent` are not available in System.
 * [Write custom serializers and deserializers](write-custom-serializer-deserializer.md)
 * [Write custom converters for JSON serialization](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support](../datetime/system-text-json-support.md)
+* [Supported collection types in System.Text.Json](system-text-json-supported-collection-types.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -1,7 +1,7 @@
 ---
 title: Reasons to modernize existing .NET apps to Cloud-Optimized applications
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Reasons to modernize existing .NET apps to Cloud-Optimized applications
-ms.date: 04/28/2018
+ms.date: 12/21/2020
 ---
 # Reasons to modernize existing .NET apps to Cloud-Optimized applications
 
@@ -17,7 +17,7 @@ The bottom line is that when an organization builds and manages applications tha
 
 Improvements in the cloud are mostly focused on meeting two goals: Reduce costs and improve business growth by improving agility. These goals are achieved by simplifying processes and reducing friction when you release and ship applications.
 
-Your application is Cloud-Optimized if you can-in an agile manner-develop your app autonomously from other on-premises apps, and then release, deploy, auto-scale, monitor, and troubleshoot your app in the cloud.
+Your application is Cloud-Optimized if you can-in an agile manner-develop your app autonomously from other on-premises apps, and then release, deploy, autoscale, monitor, and troubleshoot your app in the cloud.
 
 The key is *agility*. You can't ship with agility unless you reduce to an absolute minimum any deployment-to-production issues and dev/test environment issues. Containers (specifically, Docker, as a de facto standard) and managed services were designed specifically for this purpose.
 
@@ -47,7 +47,7 @@ Your organization can adopt these technologies and approaches gradually. You don
 
 You can get the following benefits by converting an existing application to a Cloud-Optimized application (without rearchitecting or coding):
 
-- **Lower costs, because the managed infrastructure is handled by the cloud provider**. Cloud-Optimized applications get the benefits of the cloud by using the cloud's out-of-the-box elasticity, autoscale, and high availability. Benefits are related not only to the compute features (VMs and containers), but also depend on resources in the cloud, like DBaaS, CaaS, and any infrastructure an application might needed.
+- **Lower costs, because the managed infrastructure is handled by the cloud provider**. Cloud-Optimized applications get the benefits of the cloud by using the cloud's out-of-the-box elasticity, autoscale, and high availability. Benefits are related not only to the compute features (VMs and containers), but also depend on the resources in the cloud, like DBaaS, CaaS, and any infrastructure an application might needed.
 
 - **Resilient application and infrastructure**. When you migrate to the cloud, you need to embrace transient failures; failures will occur in the cloud. Also, cloud infrastructure and hardware are "replaceable," which increases opportunities for transient downtime. At the same time, inner cloud capabilities and certain application development techniques that implement resiliency and automate recovery make it much easier to recover from unexpected failures in the cloud.
 

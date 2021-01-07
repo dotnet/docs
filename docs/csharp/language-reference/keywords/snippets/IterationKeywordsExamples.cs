@@ -46,8 +46,8 @@ namespace keywords
             int count = 0;
             foreach (int element in fibNumbers)
             {
-                count++;
                 Console.WriteLine($"Element #{count}: {element}");
+                count++;
             }
             Console.WriteLine($"Number of elements: {count}");
             // </Snippet1>

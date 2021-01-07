@@ -7,7 +7,7 @@ ms.date: 01/06/2021
 
 # The Dapr state management building block
 
-Distributed applications compose many different services. For some of the services, keeping track of state is critical. For example, consider the shopping basket service in eShop. If the service didn't keep track of state, the customer would loose the content of the shopping basket each time he/she left the website. That's not something that will make customers very happy nor is good for sales. To solve this, the shopping basket service needs to persist its state in a data store, such as a SQL Database. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) makes it very easy to store state in a variety of external data stores.
+Distributed applications are composed of many different services. For some of the services, keeping track of state is critical. For example, consider the shopping basket service in eShop. If the service wouldn't keep track of state, the customer would loose the content of the shopping basket each time he/she left the website. That's not really good for sales. To solve this, the shopping basket service needs to persist its state in a data store, such as a SQL Database. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) makes it very easy to store state in a variety of external data stores.
 
 > [!NOTE]
 > By storing the state in an external data store instead of local memory, the service itself can still be considered to be **stateless**. Stateless services are preferred over **statefull** services because they don't require that all requests from a specific user are handled by the same service instance. This means that stateless services can be very easily scaled horizontally as the number of users grow.
@@ -16,12 +16,12 @@ To try out the state management building block yourself, have a look at the [cou
 
 ## What it solves
 
-While keeping track of state is an important part of a distributed application, it also comes with additional challenges.  For example:
+While keeping track of state is an important part of a distributed application, it also comes with additional challenges. For example:
 
 - The application may require different types of data stores.
 - The application may require different consistency levels for accessing and updating data.
 - Multiple users may be accessing and updating data at the same time, requiring some sort of conflict resolution.
-- Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling)  that may occur while interacting with the data store.
+- Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that may occur while interacting with the data store.
 
 The Dapr state management building block directly addresses these challenges. It provides a flexible way to integrate with existing data stores without adding or learning any third-party SDKs.
 
@@ -73,7 +73,7 @@ curl http://localhost:3500/v1.0/state/statestore/basket1
 }
 ```
 
-The next couple of sections explain how to use more advanced features of the state management building block, such as setting consistency and concurrency requirements, retrying failed requests, and performing bulk operations.
+The following sections explain how to use more advanced features of the state management building block, such as setting consistency and concurrency requirements, retrying failed requests, and performing bulk operations.
 
 ### Consistency
 
@@ -104,11 +104,11 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name> \
 
 ### Concurrency
 
-In any application with more than one user, there's a chance of multiple users updating the same data concurrently (at the same time). Dapr support optimistic concurrency control (OCC) to resolve these kind of conflicts. OCC is based on the assumption that in real world scenarios, update conflicts do not happen that often because users typically work on different parts of the data. Therefore, it's better to assume that an update will succeed and retry if it doesn't, instead of using (often unnecessary) locks in the data store which may impact performance.
+In any application with more than one user, there's a chance of multiple users updating the same data concurrently (at the same time). Dapr support optimistic concurrency control (OCC) to resolve these kind of conflicts. OCC is based on the assumption that in real world scenarios, update conflicts do not happen that often because users typically work on different parts of the data. Therefore, it's better to assume that an update will succeed and retry if it doesn't, instead of using (often unnecessary) locks in the data store which may impact performance because of data contention.
 
 Dapr uses **ETags** to implement OCC. An ETag is a value attached to a specific version of a stored key/value pair. Each time the key/value pair is updated, the ETag is changed as well. To update data in the data store, the client must attach the ETag of the version to update to the request. The state store component should only allow the update if the attached ETag matches with the latest ETag in the data store. If some other client has updated the data in the meantime, the ETags will not match and the request will fail. At this point, the client may refresh the data and retry the update. This strategy is called **first-write-wins**.
 
-It is also possible to use a **last-write-wins** strategy. In this case, the client doesn't attach an ETag to the write request. The state store component will always allow the update to go through. Last-write-wins is useful for high-throughput write scenarios in which data contingency is low or has no negative effects.
+It is also possible to use a **last-write-wins** strategy. In this case, the client doesn't attach an ETag to the write request. The state store component will always allow the update to go through. Last-write-wins is useful for high-throughput write scenarios in which data contention is low or has no negative effects.
 
 ### Transactions
 
@@ -205,7 +205,7 @@ public ActionResult<WeatherForecast> Get([FromState("statestore", "city")] State
 
 In the example, the controller loads the weather forecast from the state store named `statestore`. The second parameter of the `FromState` constructor is the name of the route template variable from which to get the state key. If you omit the second parameter, the name of the bound method parameter is used (which is `forecast` in this case) to look up the route template variable.
 
-The `StateEntry` class composes all the information on a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. It's very useful because access to the ETag value is required for OCC. It also provides methods that allow you to delete or update the retrieved data without requiring a `DaprClient` instance. In the following example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC.
+The `StateEntry` class contains properties for all the information that is retrieved for a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. It's very useful because access to the ETag value is required for OCC. It also provides methods that allow you to delete or update the retrieved data without requiring a `DaprClient` instance. In the following example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC.
 
 ```c#
 [HttpPut("{city}")]
@@ -269,7 +269,7 @@ The other metadata field in the example, `actorStateStore`, indicates whether th
 
 ### Key prefix strategies
 
-State store components can use different strategies to store key/value pairs in the underlying data store. Consider the example from the beginning of this chapter where a Basket service stores the contents of a shopping basket for a customer:
+State store components can use different strategies to store key/value pairs in the underlying data store. Consider the example from the beginning of this chapter where the shopping basket service stores the contents of a shopping basket for a customer:
 
 ```bash
 curl -X POST http://localhost:3500/v1.0/state/statestore \
@@ -417,11 +417,14 @@ Changing the underlying data store is now very easy. For example, switching to A
 
 ## Summary
 
-The Dapr state management building block offers a key/value API for storing data in a variety of data stores. The API provides support for bulk operations, strong and eventual consistency, optimistic concurrency control, and multi-item transactions.
+The Dapr state management building block offers an API for storing key/value data in a variety of data stores. The API provides support for bulk operations, strong and eventual consistency, optimistic concurrency control, and multi-item transactions.
 
 The .NET SDK provides language specific support for .NET Core as well as integration with ASP.NET Core. Model bindings make it easy to access and update state from ASP.NET Core controller action methods.
 
-In eShopOnDapr, the benefits of using Dapr state management instead of having a direct reference to the third-party `StackExchange.Redis` NuGet package are clear. The new implementation uses less lines of code and replacing the underlying Redis cache with a different type of data store now only requires changes to the state store configuration file.
+In eShopOnDapr, the benefits of using Dapr state management instead of having a direct reference to the third-party `StackExchange.Redis` NuGet package are clear: 
+
+1. The new implementation uses less lines of code. 
+1. Replacing the underlying Redis cache with a different type of data store now only requires changes to the state store configuration file.
 
 ### References
 

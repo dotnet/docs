@@ -673,3 +673,4 @@ For more information, see [Including content in a package](/nuget/schema/msbuild
 ## See also
 
 - [High-level overview of changes in CLI](cli-msbuild-architecture.md)
+- [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md)

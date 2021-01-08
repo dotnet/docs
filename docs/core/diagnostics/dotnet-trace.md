@@ -29,6 +29,9 @@ There are two ways to download and install `dotnet-trace`:
   | macOS   | [x64](https://aka.ms/dotnet-trace/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-trace/linux-x64) \| [arm](https://aka.ms/dotnet-trace/linux-arm) \| [arm64](https://aka.ms/dotnet-trace/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-trace/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-trace/linux-musl-arm64) |
 
+> [!NOTE]
+> To use `dotnet-trace` on an x86 app, you need a corresponding x86 version of the tool.
+
 ## Synopsis
 
 ```console
@@ -143,6 +146,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > [!NOTE]
 > On Linux and macOS, this command expects the target application and `dotnet-trace` to share the same `TMPDIR` environment variable.
+
+> [!NOTE]
+> To collect a trace using `dotnet-trace`, it needs to be run as the same user as the user running target process or as root.
 
 ## dotnet-trace convert
 

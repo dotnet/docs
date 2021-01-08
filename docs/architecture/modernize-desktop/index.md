@@ -7,7 +7,7 @@ ms.date: 01/06/2021
 
 ![Screenshot that shows the modernize desktop apps e-book cover.](./media/modernizing-existing-desktop-apps-ebook-cover.png)
 
-EDITION v5.0 - Updated to .NET 5
+**EDITION v1.0.1** - Updated to .NET 5
 
 Refer [changelog](https://aka.ms/desktop-ebook-changelog) for the book updates and community contributions.
 

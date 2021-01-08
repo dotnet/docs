@@ -352,9 +352,9 @@ For more information, see [Self-contained deployments (SCD)](../deploying/index.
 ```
 
 > [!NOTE]
-> - `imports` on tools are not supported in csproj. Tools that need imports will not work with
-the new `Microsoft.NET.Sdk`.
-> - `DotNetCliToolReference` is deprecated in favor of [local tools](global-tools.md#install-a-local-tool).
+>
+> - `imports` on tools are not supported in csproj. Tools that need imports will not work with `Microsoft.NET.Sdk`.
+> - `DotNetCliToolReference` is now deprecated in favor of [local tools](global-tools.md#install-a-local-tool).
 
 ## buildOptions
 

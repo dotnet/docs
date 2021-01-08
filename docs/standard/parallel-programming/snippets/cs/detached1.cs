@@ -38,9 +38,9 @@ public class DetachedExample
 //     Running antecedent task 1...
 //     Launching attached child tasks...
 //     Finished launching detached child tasks...
+//     Executing continuation of Task 1
+//        Attached child task #1 running
+//        Attached child task #5 running
 //        Attached child task #2 running
 //        Attached child task #3 running
-//        Attached child task #1 running
 //        Attached child task #4 running
-//        Attached child task #5 running
-//     Executing continuation of Task 1

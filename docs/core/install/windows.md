@@ -177,34 +177,19 @@ For more information about .NET Core 2.1 supported operating systems, distributi
 
 More dependencies are required if you're installing the .NET SDK or runtime on the following Windows versions:
 
-- Windows 7 SP1 [ESU][esu]
-- Windows Vista SP 2
-- Windows 8.1
-- Windows Server 2008 R2
-- Windows Server 2012 R2
+| Operating System         | Prerequisites                                                                    |
+|--------------------------|----------------------------------------------------------------------------------|
+| Windows 7 SP1 [ESU][esu] | - Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] <br> - KB3063858 [64-bit][kb64] / [32-bit][kb32] <br> - [MicrosoftRootCertificateAuthority2011.cer](http://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409) (.NET Core 2.1 only) |
+| Windows Vista SP 2       | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
+| Windows 8.1              | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
+| Windows Server 2008 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
+| Windows Server 2012 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 
-Install the following prerequisites:
+The previous requirements are also required if you receive an error related to either of the following dlls:
 
-- Microsoft Visual C++ 2015-2019 Redistributable [64-bit](https://aka.ms/vs/16/release/vc_redist.x64.exe) / [32-bit](https://aka.ms/vs/16/release/vc_redist.x86.exe)
-- KB3063858 [64-bit](https://www.microsoft.com/en-us/download/details.aspx?id=47442) / [32-bit](https://www.microsoft.com/en-us/download/details.aspx?id=47409)
-
-The previous requirements are also required if you come across one of the following errors:
-
-> The program can't start because *api-ms-win-crt-runtime-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
->
-> \- or -
->
-> The program can't start because *api-ms-win-cor-timezone-l1-1-0.dll* is missing from your computer. Try reinstalling the program to fix this problem.
->
-> \- or -
->
-> The library *hostfxr.dll* was found, but loading it from *C:\\\<path_to_app>\\hostfxr.dll* failed.
-
-You may encounter an error related to an invalid signature while installing .NET Core 2.1. To fix this error, do the following steps:
-
-01. Uninstall .NET Core 2.1.
-01. Import the [MicrosoftRootCertificateAuthority2011.cer](http://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409) certificate.
-01. Reinstall .NET Core 2.1.
+- *api-ms-win-crt-runtime-l1-1-0.dll*
+- *api-ms-win-cor-timezone-l1-1-0.dll*
+- *hostfxr.dll*
 
 ## Install with PowerShell automation
 
@@ -319,3 +304,7 @@ For more information about using .NET in a Docker container, see [Introduction t
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
 
 [esu]: /troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq
+[vcc64]: https://aka.ms/vs/16/release/vc_redist.x64.exe
+[vcc32]: https://aka.ms/vs/16/release/vc_redist.x86.exe
+[kb64]: https://www.microsoft.com/en-us/download/details.aspx?id=47442
+[kb32]: https://www.microsoft.com/en-us/download/details.aspx?id=47409

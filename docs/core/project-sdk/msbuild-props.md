@@ -510,6 +510,26 @@ The project file snippet in the following example references the [System.Runtime
 
 For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
 
+### PackageTargetFallback
+
+The `PackageTargetFallback` property lets you specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the `dotnet` [Target x Moniker (TxM)](/nuget/reference/target-frameworks) to operate with packages that don't declare a `dotnet` TxM. If your project uses the `dotnet` TxM, then, unless you add `PackageTargetFallback`, all the packages it depends on must also have a dotnet TxM. `PackageTargetFallback` allows non-`dotnet` platforms to be compatible with `dotnet`.
+
+The following example provides the fallbacks for all targets in your project:
+
+```xml
+<PackageTargetFallback>
+    $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
+</PackageTargetFallback >
+```
+
+The following example specifies the fallbacks only for the `netcoreapp3.1` target:
+
+```xml
+<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp3.1'">
+    $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
+</PackageTargetFallback >
+```
+
 ### ProjectReference
 
 The `ProjectReference` item defines a reference to another project. The referenced project is added as a NuGet package dependency, that is, it's treated the same as a `PackageReference`.

@@ -352,8 +352,9 @@ For more information, see [Self-contained deployments (SCD)](../deploying/index.
 ```
 
 > [!NOTE]
-> `imports` on tools are not supported in csproj. Tools that need imports will not work with
+> - `imports` on tools are not supported in csproj. Tools that need imports will not work with
 the new `Microsoft.NET.Sdk`.
+> - `DotNetCliToolReference` is deprecated in favor of [local tools](global-tools.md#install-a-local-tool).
 
 ## buildOptions
 
@@ -607,7 +608,7 @@ In MSBuild, this is done using [items](/visualstudio/msbuild/common-msbuild-proj
   <EmbeddedResource Include="..\Shared\*.resx" />
   <Content Include="Views\**\*" PackagePath="%(Identity)" />
   <None Include="some/path/in/project.txt" Pack="true" PackagePath="in/package.txt" />
-  
+
   <None Include="notes.txt" CopyToOutputDirectory="Always" />
   <!-- CopyToOutputDirectory = { Always, PreserveNewest, Never } -->
 

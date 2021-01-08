@@ -141,6 +141,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 > [!NOTE]
 > Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.
 
+> [!NOTE]
+> On Linux and macOS, this command expects the target application and `dotnet-trace` to share the same `TMPDIR` environment variable.
+
 ## dotnet-trace convert
 
 Converts `nettrace` traces to alternate formats for use with alternate trace analysis tools.

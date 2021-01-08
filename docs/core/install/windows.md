@@ -179,7 +179,7 @@ More dependencies are required if you're installing the .NET SDK or runtime on t
 
 | Operating System         | Prerequisites                                                                    |
 |--------------------------|----------------------------------------------------------------------------------|
-| Windows 7 SP1 [ESU][esu] | - Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] <br> - KB3063858 [64-bit][kb64] / [32-bit][kb32] <br> - [MicrosoftRootCertificateAuthority2011.cer](http://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409) (.NET Core 2.1 only) |
+| Windows 7 SP1 [ESU][esu] | - Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] <br> - KB3063858 [64-bit][kb64] / [32-bit][kb32] <br> - [MicrosoftRootCertificateAuthority2011.cer](https://go.microsoft.com/fwlink/?linkid=747875&clcid=0x409) (.NET Core 2.1 only) |
 | Windows Vista SP 2       | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows 8.1              | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |
 | Windows Server 2008 R2   | Microsoft Visual C++ 2015-2019 Redistributable [64-bit][vcc64] / [32-bit][vcc32] |

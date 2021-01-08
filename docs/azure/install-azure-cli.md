@@ -33,4 +33,4 @@ You can also use the Azure CLI in the Azure Cloud Shell at [https://shell.azure.
 
 ### Next steps
 
-Next, you will want to [install additional Azure tools](azure-tools) like Azure Storage Explorer and Azure Data Studio to make you more productive with Azure.
+Next, you will want to [install additional Azure tools](./azure-tools.md) like Azure Storage Explorer and Azure Data Studio to make you more productive with Azure.

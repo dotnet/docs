@@ -111,6 +111,7 @@ Each component provides the necessary implementation through a common state mana
    Set(req *SetRequest) error
    BulkSet(req []SetRequest) error
 }
+```
 
 > [!TIP]
 > The Dapr interface above along with all of Dapr has been written in the Golang, or Go, platform. Go is a popular language across the open source community and attests to cross-platform commitment of Dapr.
@@ -134,6 +135,7 @@ Perhaps you start with Azure Redis Cache as your state store. You specify it wit
      value: <bool> # Optional. Allowed: true, false.
    - name: failover
      value: <bool> # Optional. Allowed: true, false.
+```
 
 In the **spec** section, you configure Dapr to use the Redis Cache for state management. The section also contains component-specific metadata. In this case, you can use it to configure additional Redis settings.
 

@@ -68,7 +68,7 @@ A challenge when implementing an event-driven architecture across multiple micro
 
 - Using a transactional (DTC-based) queue like MSMQ. (However, this is a legacy approach.)
 
-- Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
+- Using transaction log mining.
 
 - Using full [Event Sourcing](/azure/architecture/patterns/event-sourcing) pattern.
 

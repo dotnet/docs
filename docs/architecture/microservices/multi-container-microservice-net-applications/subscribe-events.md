@@ -98,7 +98,7 @@ As mentioned earlier in the architecture section, you can have several approache
 
 - Using the full [Event Sourcing pattern](/azure/architecture/patterns/event-sourcing).
 
-- Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
+- Using transaction log mining.
 
 - Using the [Outbox pattern](https://www.kamilgrzybek.com/design/the-outbox-pattern/). This is a transactional table to store the integration events (extending the local transaction).
 

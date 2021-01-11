@@ -9,7 +9,7 @@ ms.date: 11/13/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-In this chapter you'll see how to migrate a .NET Framework app to .NET Core. The chapter will examine a sample online store app written for ASP.NET 5 and will go leverage many of the concepts and tools described earlier in this book. You'll find the starting point application in the [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps; this chapter will focus on the `eShopLegacyMVCSolution`.
+In this chapter you'll see how to migrate a .NET Framework app to .NET Core. The chapter will examine a sample online store app written for ASP.NET 5.0 and will go leverage many of the concepts and tools described earlier in this book. You'll find the starting point app in the [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps; this chapter will focus on the `eShopLegacyMVCSolution`.
 
 The initial version of the project is shown in Figure 4-1. It's a fairly standard ASP.NET MVC 5 app.
 
@@ -19,7 +19,7 @@ The initial version of the project is shown in Figure 4-1. It's a fairly standar
 
 ## Run ApiPort to identify problematic APIs
 
-The first step in preparing to migrate is to run the ApiPort tool to get a sense of how many .NET Framework APIs the app calls, and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third party dependencies, and pay attention to System.Web dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](/understand-update-dependencies.md).
+The first step in preparing to migrate is to run the ApiPort tool to get a sense of how many .NET Framework APIs the app calls, and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](/understand-update-dependencies.md).
 
 After [installing and configuring the ApiPort tool](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer), run the analysis from within Visual Studio, as shown in Figure 4-2.
 
@@ -35,13 +35,13 @@ Choose the web project's assembly from the project's `/bin` folder, as shown in 
 
 If your solution includes several projects, you can choose all of them. The eShop sample includes just a single MVC project.
 
-Once the report is generated, open the file and review the results. The summary provides a high level view of what percentage of .NET Framework calls your app is making have compatible versions. Figure 4-4 shows the summary for the eShop MVC project.
+Once the report is generated, open the file and review the results. The summary provides a high-level view of what percentage of .NET Framework calls your app is making have compatible versions. Figure 4-4 shows the summary for the eShop MVC project.
 
 ![Figure 4-4](media/Figure4-4.png)
 
 **Figure 4-4. ApiPort summary.**
 
-For this app, about 80% of the .NET Framework calls are compatible, meaning 20% will need to be addressed in some way as part of the porting process. Viewing the details reveals that all of the incompatible calls are part of `System.Web`, which is an expected incompatibility. The dependencies on `System.Web` calls will be addressed when the app's controllers and related classes are migrated in a later step. Figure 4-5 lists some of the specific types found by the tool:
+For this app, about 80 percent of the .NET Framework calls are compatible, meaning 20 percent will need to be addressed in some way as part of the porting process. Viewing the details reveals that all of the incompatible calls are part of `System.Web`, which is an expected incompatibility. The dependencies on `System.Web` calls will be addressed when the app's controllers and related classes are migrated in a later step. Figure 4-5 lists some of the specific types found by the tool:
 
 ![Figure 4-5](media/Figure4-5.png)
 
@@ -51,7 +51,7 @@ Most of the incompatible types refer to `Controller` and various related attribu
 
 ## Update project files and NuGet reference syntax
 
-The next step is to migrate from the older .csproj file structure to the newer, simpler one introduced with .NET Core. In doing so, you will also migrate from using a `packages.config` file for NuGet references to using `<PackageReference>` elements in the project file.
+The next step is to migrate from the older *.csproj* file structure to the newer, simpler one introduced with .NET Core. In doing so, you'll also migrate from using a `packages.config` file for NuGet references to using `<PackageReference>` elements in the project file.
 
 The original project's `eShopLegacyMVC.csproj` file is 418 lines long. A sample of it is shown in Figure 4-6, which includes a miniature view of the entire file on the right side to offer a sense of its overall size and complexity.
 
@@ -59,25 +59,25 @@ The original project's `eShopLegacyMVC.csproj` file is 418 lines long. A sample 
 
 **Figure 4-6. The eShopLegacyMVC.csproj file structure.**
 
-A common way to create a new project file for an existing ASP.NET project is to create a new ASP.NET Core app using `dotnet new` or `File - New - Project` in Visual Studio. Then files can be copied from the old project to the new one to complete the migration.
+A common way to create a new project file for an existing ASP.NET project is to create a new ASP.NET Core app using `dotnet new` or **File** > **New** > **Project** in Visual Studio. Then files can be copied from the old project to the new one to complete the migration.
 
-In addition to the C# project file, NuGet dependencies are stored in a separate 45 line long `packages.config` file, shown in Figure 4-7.
+In addition to the C# project file, NuGet dependencies are stored in a separate 45-line `packages.config` file, as shown in Figure 4-7.
 
 ![Figure 4-7](media/Figure4-7.png)
 
 **Figure 4-7. The packages.config file.**
 
-After upgrading to the new csproj file format, you can migrate `packages.config` in class library projects using Visual Studio (this functionality doesn't work with ASP.NET projects, however). [Learn more about migrating package.config to PackageReference in Visual Studio](https://docs.microsoft.com/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator).
+After upgrading to the new *.csproj* file format, you can migrate `packages.config` in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating package.config to PackageReference in Visual Studio](https://docs.microsoft.com/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator).
 
 ## Create new ASP.NET Core project
 
-Add a new ASP.NET Core project to the existing app's solution to make moving files easier, as most of the work can be done from within Visual Studio's Solution Explorer. In Visual Studio, right-click on your app's solution and choose Add New Project. Choose ASP.NET Core web application, and give the new project a name as shown in Figure 4-8.
+Add a new ASP.NET Core project to the existing app's solution to make moving files easier, as most of the work can be done from within Visual Studio's **Solution Explorer**. In Visual Studio, right-click on your app's solution and choose **Add New Project**. Choose **ASP.NET Core web application**, and give the new project a name as shown in Figure 4-8.
 
 ![Figure 4-8](media/Figure4-8.png)
 
 **Figure 4-8. Add new ASP.NET Core web application.**
 
-The next dialog will ask you to choose which template to use. Select the Empty template, and be sure to also change the dropdown from .NET Core to .NET Framework, and select ASP.NET Core 2.2 as shown in Figure 4-9.
+The next dialog will ask you to choose which template to use. Select the **Empty** template, and be sure to also change the dropdown from .NET Core to .NET Framework, and select ASP.NET Core 2.2 as shown in Figure 4-9.
 
 ![Figure 4-9](media/Figure4-9.png)
 
@@ -85,7 +85,7 @@ The next dialog will ask you to choose which template to use. Select the Empty t
 
 ### Migrating NuGet Packages
 
-Since the built-in migration tool for migrating `packages.config` to PackageReference doesn't work on ASP.NET projects, you can use a community tool instead, or migrate by hand. A community tool I've used is available here and uses an XSL sheet to transform from one format to the other. To use it, first copy the `packages.config` file to the newly created ASP.NET Core project folder. Make a backup of your files (this script will remove the `package.config` file from all folders under where you run the script). Then run these commands from the project folder (or for the entire solution if you prefer):
+Since the built-in migration tool for migrating `packages.config` to `<PackageReference>` doesn't work on ASP.NET projects, you can use a community tool instead, or migrate by hand. A community tool I've used is available here and uses an XSL file to transform from one format to the other. To use it, first copy the `packages.config` file to the newly created ASP.NET Core project folder. Make a backup of your files (this script will remove the `package.config` file from all folders under where you run the script). Then run these commands from the project folder (or for the entire solution if you prefer):
 
 ```powershell
 iwr https://git.io/vdKaV -OutFile Convert-ToPackageReference.ps1
@@ -95,7 +95,7 @@ iwr https://git.io/vdKar -OutFile  Convert-ToPackageReference.xsl
 
 The first two commands download files so that they exist locally; the last line runs the script. After running it, try to build the new project. You'll most likely get some errors. To resolve them, you'll want to eliminate some references (like most of the `Microsoft.AspNet` and `System` packages), and you may need to remove some `xmlns` attributes.
 
-In most ASP.NET MVC apps, many client-side dependencies like Bootstrap and jQuery were deployed using NuGet packages. In .NET Core, NuGet packages are only used for server side functionality; client files should be managed through other means. Review the list of `PackageReference` elements added and remove and make note of any that are for client libraries, including:
+In most ASP.NET MVC apps, many client-side dependencies like Bootstrap and jQuery were deployed using NuGet packages. In .NET Core, NuGet packages are only used for server-side functionality; client files should be managed through other means. Review the list of `<PackageReference>` elements added and remove and make note of any that are for client libraries, including:
 
 - bootstrap
 - jQuery
@@ -104,23 +104,23 @@ In most ASP.NET MVC apps, many client-side dependencies like Bootstrap and jQuer
 - popper.js
 - Respond
 
-The static client files installed by NuGet for these packages will be copied over to the new project's `wwwroot` folder and hosted from there. It's worth considering whether these files are still needed by the app, and whether it makes sense to continue hosting them or to use a content delivery network (CDN) instead. Managing versions of these libraries can be done at build time using tools like [LibMan](https://docs.microsoft.com/aspnet/core/client-side/libman/) or [npm](https://www.npmjs.com/). Figure 4-10 shows the full eShopPorted.csproj file after migrating package references using the conversion tool shown and removing unnecessary packages.
+The static client files installed by NuGet for these packages will be copied over to the new project's `wwwroot` folder and hosted from there. It's worth considering whether these files are still needed by the app, and whether it makes sense to continue hosting them or to use a content delivery network (CDN) instead. Managing versions of these libraries can be done at build time using tools like [LibMan](https://docs.microsoft.com/aspnet/core/client-side/libman/) or [npm](https://www.npmjs.com/). Figure 4-10 shows the full *eShopPorted.csproj* file after migrating package references using the conversion tool shown and removing unnecessary packages.
 
 ![Figure 4-10](media/Figure4-10.png)
 
 **Figure 4-10. Package References in the eShopPorted.csproj file.**
 
-Note that the package references can be further compacted by making the `<Version>1.0.0.0</Version>` element a `Version=1.0.0.0` attribute on `<PackageReference>`.
+The package references can be further compacted by making the `<Version>1.0.0.0</Version>` element a `Version=1.0.0.0` attribute on `<PackageReference>`.
 
 ### Migrate static files
 
-Any static files the app uses, including third party scripts and frameworks but also custom images and stylesheets, must be copied from the old project to the new one. In ASP.NET MVC apps, files were typically accessed based on their location within the project folder. In ASP.NET Core apps, these static files will be accessed based on their location within the `wwwroot` folder. For the eShop project, there are static files in the `Content`, `fonts`, `Images`, `Pics`, and `Scripts` folders. The empty project template used in the previous step doesn't include this folder by default, or the middleware needed for it to work, so you'll need to add them.
+Any static files the app uses, including third-party scripts and frameworks but also custom images and stylesheets, must be copied from the old project to the new one. In ASP.NET MVC apps, files were typically accessed based on their location within the project folder. In ASP.NET Core apps, these static files will be accessed based on their location within the `wwwroot` folder. For the eShop project, there are static files in the `Content`, `fonts`, `Images`, `Pics`, and `Scripts` folders. The empty project template used in the previous step doesn't include this folder by default, or the middleware needed for it to work, so you'll need to add them.
 
 Add a `wwwroot` folder to the root of the project.
 
 Add `Microsoft.AspNetCore.StaticFiles` NuGet package (version 2.2.0).
 
-In `Startup.cs` add a call to `app.UseStaticFiles()` to the `Configure` method:
+In `Startup.cs`, add a call to `app.UseStaticFiles()` to the `Configure` method:
 
 ```csharp
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -151,7 +151,7 @@ Next the `ViewModel` folder, with its one class, is copied over. It's an easy on
 
 Next the `Services` folder is copied over. This folder's classes depend on Entity Framework classes from the `Models` folder, which is why it needed to be copied after that folder. Fortunately, it too builds without errors.
 
-That leaves the `Controllers` folder and its two `Controller` classes. After copying the folder to the new project and building, there are seven build errors. Four of them are related to `ViewBag` access and say `Missing compiler required member 'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create'` which I solve by adding a NuGet package reference to C#:
+That leaves the `Controllers` folder and its two `Controller` classes. After copying the folder to the new project and building, there are seven build errors. Four of them are related to `ViewBag` access and say `Missing compiler required member 'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create'`, which is solved by adding a NuGet package reference to C#:
 
 ```xml
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
@@ -191,9 +191,9 @@ private void AddUriPlaceHolder(CatalogItem item)
 }
 ```
 
-Both `this.Url` and `this.Request` cause compiler errors. Looking at how this code is used, its purpose is to build a link to the `PicController` action that renders image files. The same one we just discovered could probably be replace with direct links to the static files located in `wwwroot`. For now it's worth commenting this out and adding a `TODO:` comment to reference the pics another way.
+Both `this.Url` and `this.Request` cause compiler errors. Looking at how this code is used, its purpose is to build a link to the `PicController` action that renders image files. The same one we just discovered could probably be replace with direct links to the static files located in `wwwroot`. For now, it's worth commenting this out and adding a `TODO:` comment to reference the pics another way.
 
- It's worth noting here that the base `Controller` class used by the `CatalogController` class in which this code appears is still referring to `System.Web.Mvc.Controller`. No doubt there will be more errors to fix once we update this to use ASP.NET Core. First, remove the `using System.Web.Mvc;` line from the list of using statements in `CatalogController`. Next, add the NuGet package `Microsoft.AspNetCore.Mvc`. Finally, add a new using statement, `using Microsoft.AspNetCore.Mvc;` and build the app again.
+It's worth noting here that the base `Controller` class used by the `CatalogController` class in which this code appears is still referring to `System.Web.Mvc.Controller`. No doubt there will be more errors to fix once we update this to use ASP.NET Core. First, remove the `using System.Web.Mvc;` line from the list of `using` statements in `CatalogController`. Next, add the NuGet package `Microsoft.AspNetCore.Mvc`. Finally, add a `using Microsoft.AspNetCore.Mvc;` statement, and build the app again.
 
 This time there are 16 errors:
 
@@ -202,7 +202,7 @@ This time there are 16 errors:
 - `HttpNotFound` does not exist (3)
 - `SelectList` not found (8)
 
-Once more let's review these errors one by one. First, `SelectList` can be fixed by adding `using Microsoft.AspNetCore.Mvc.Rendering;` which eliminates half of the errors.
+Once more, let's review these errors one by one. First, `SelectList` can be fixed by adding `using Microsoft.AspNetCore.Mvc.Rendering;` which eliminates half of the errors.
 
 All references to `return HttpNotFound();` should be replaced with `return NotFound();`.
 
@@ -315,7 +315,7 @@ The last step in migrating is to take the app startup tasks from `Global.asax` a
 
 ### Configure MVC
 
-The original ASP.NET MVC app has the following code in its `Application_Start` in `Global.asax`, which runs when the application starts up:
+The original ASP.NET MVC app has the following code in its `Application_Start` in `Global.asax`, which runs when the app starts up:
 
 ```csharp
 protected void Application_Start()
@@ -449,9 +449,9 @@ protected IContainer RegisterContainer()
 
 This code configures an [Autofac](https://autofac.org/) container, reads a config setting to determine whether real or mock data should be used, and passes this setting into an Autofac module (found in the app's `/Modules` directory). Fortunately, Autofac supports .NET Core, so the module can be migrated directly. Copy the folder into the new project and updates the class's namespace and it should compile.
 
-ASP.NET Core has built-in support for dependency injection, but you can wire up a third party container such as Autofac easily if necessary. In this case, since the app is already configured to use Autofac, the simplest solution is to maintain its usage. To do so, the `ConfigureServices` method signature must be modified to return an `IServiceProvider`, and the Autofac container instance must be configured and returned from the method.
+ASP.NET Core has built-in support for dependency injection, but you can wire up a third-party container such as Autofac easily if necessary. In this case, since the app is already configured to use Autofac, the simplest solution is to maintain its usage. To do so, the `ConfigureServices` method signature must be modified to return an `IServiceProvider`, and the Autofac container instance must be configured and returned from the method.
 
-**Note:** In .NET Core 3.0 and later the process for integrating a third party DI container has changed.
+**Note:** In .NET Core 3.0 and later the process for integrating a third-party DI container has changed.
 
 Part of configuring Autofac requires a call to `builder.Populate(services)`. This extension is found in the `Autofac.Extensions.DependencyInjection` NuGet package, which must be installed before the code will compile.
 

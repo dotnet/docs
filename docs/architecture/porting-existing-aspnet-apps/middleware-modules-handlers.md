@@ -1,11 +1,11 @@
 ---
-title: Comparing middleware to modules and handlers
+title: Compare middleware to modules and handlers
 description: This section explores the differences in structure ASP.NET apps that leverage handlers and modules with ASP.NET Core apps that define middleware for their request handling pipelines.
 author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing middleware to modules and handlers
+# Compare middleware to modules and handlers
 
 If your existing ASP.NET MVC or Web API app uses OWIN/Katana, you're most likely already familiar with the concept of middleware and porting it to ASP.NET Core should be fairly straightforward. However, most ASP.NET apps rely on HTTP modules and HTTP handlers instead of middleware. Migrating these to ASP.NET Core requires additional effort.
 
@@ -13,7 +13,7 @@ If your existing ASP.NET MVC or Web API app uses OWIN/Katana, you're most likely
 
 [HTTP modules and HTTP handlers](https://docs.microsoft.com/troubleshoot/aspnet/http-modules-handlers) are an integral part of the ASP.NET architecture. While a request is being processed, each request is processed by multiple HTTP modules (for example, the authentication module and the session module) and is then processed by a single HTTP handler. After the handler has processed the request, the request flows back through the HTTP modules.
 
-If your app is using custom HTTP modules or HTTP handlers, you will need a plan to migrate these to ASP.NET Core, most likely as middleware.
+If your app is using custom HTTP modules or HTTP handlers, you'll need a plan to migrate these to ASP.NET Core, most likely as middleware.
 
 ## ASP.NET Core middleware
 

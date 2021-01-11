@@ -17,7 +17,7 @@ On Windows, the tool can only uninstall SDKs and Runtimes that were installed us
 
 On macOS, the tool can only uninstall SDKs and runtimes located in the */usr/local/share/dotnet* folder.
 
-Because of these limitations, the tool may not be able to uninstall all of the .NET Core SDKs and runtimes on your machine. You can use the `dotnet --info` command to find all of the .NET Core SDKs and runtimes installed, including those SDKs and runtimes that this tool can't remove. The `dotnet-core-uninstall list` command displays which SDKs can be uninstalled with the tool.
+Because of these limitations, the tool may not be able to uninstall all of the .NET Core SDKs and runtimes on your machine. You can use the `dotnet --info` command to find all of the .NET Core SDKs and runtimes installed, including those SDKs and runtimes that this tool can't remove. The `dotnet-core-uninstall list` command displays which SDKs can be uninstalled with the tool. Note that versions 1.2 and later can uninstall SDKs and runtimes with version 5.0 or below and previous versions of the tool can be used to uninstall 3.1 and below.
 
 ## Install the tool
 

@@ -50,7 +50,7 @@ public static class StringConversion
         const string inputString = "abc";
         if (Int32.TryParse(inputString, out int numValue))
         {
-            Console.WriteLine(inputString);
+            Console.WriteLine(numValue);
         }
         else
         {

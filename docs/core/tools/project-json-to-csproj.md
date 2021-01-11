@@ -247,6 +247,9 @@ The `<RuntimeFrameworkVersion>` value in the migrated project is determined by t
 </ItemGroup>
 ```
 
+> [!NOTE]
+> The `PackageTargetFallback` property is deprecated. Use [AssetTargetFallback](../project-sdk/msbuild-props.md#assettargetfallback) instead.
+
 ### dependency type
 
 #### type: project

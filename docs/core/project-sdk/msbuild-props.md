@@ -500,7 +500,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 
 ### AssetTargetFallback
 
-The `AssetTargetFallback` property lets you specify additional compatible framework versions for project references and NuGet packages. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`.
+The `AssetTargetFallback` property lets you specify additional compatible framework versions for project references and NuGet packages. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`. This property replaces the deprecated property `PackageTargetFallback`.
 
 You can set the `AssetTargetFallback` property to one or more [target framework versions](../../standard/frameworks.md#supported-target-frameworks).
 
@@ -562,26 +562,6 @@ Alternatively, the attribute can contain:
 
 - `None` – none of the assets are used.
 - `All` – all assets are used.
-
-### PackageTargetFallback
-
-The `PackageTargetFallback` property lets you specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the `dotnet` [Target x Moniker (TxM)](/nuget/reference/target-frameworks) to operate with packages that don't declare a `dotnet` TxM. If your project uses the `dotnet` TxM, then, unless you add `PackageTargetFallback`, all the packages it depends on must also have a dotnet TxM. `PackageTargetFallback` allows non-`dotnet` platforms to be compatible with `dotnet`.
-
-The following example provides the fallbacks for all targets in your project:
-
-```xml
-<PackageTargetFallback>
-    $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
-</PackageTargetFallback >
-```
-
-The following example specifies the fallbacks only for the `netcoreapp3.1` target:
-
-```xml
-<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp3.1'">
-    $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
-</PackageTargetFallback >
-```
 
 ### ProjectReference
 

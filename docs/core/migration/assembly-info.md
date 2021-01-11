@@ -29,9 +29,9 @@ Notes:
 
 - `AssemblyVersion` and `FileVersion` default to the value of `$(Version)` without the suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
 - `InformationalVersion` defaults to the value of `$(Version)`.
-- `InformationalVersion` has `$(SourceRevisionId)` appended if the property is present. It can be disabled using `IncludeSourceRevisionInInformationalVersion`.
+- If the `$(SourceRevisionId)` property is present, it's appended to `InformationalVersion`. You can disable this behavior using `IncludeSourceRevisionInInformationalVersion`.
 - `Copyright` and `Description` properties are also used for NuGet metadata.
-- `Configuration` is shared with all the build process and set via the `--configuration` parameter of `dotnet` commands.
+- `Configuration`, which defaults to `Debug`, is shared with all MSBuild targets. You can set it via the `--configuration` option of `dotnet` commands, for example, [dotnet pack](../tools/dotnet-pack.md).
 
 ## GenerateAssemblyInfo
 
@@ -39,4 +39,4 @@ A Boolean that enables or disables the AssemblyInfo generation. The default valu
 
 ## GeneratedAssemblyInfoFile
 
-The path of the generated assembly info file. Defaults to a file in the `$(IntermediateOutputPath)` (*obj*) directory.
+The relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (*obj*) directory.

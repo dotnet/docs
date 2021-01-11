@@ -91,7 +91,7 @@ The `CopyToPublishDirectory` metadata on an MSBuild item controls when the item 
 
 ```xml
 <ItemGroup>
-  <None Update="**/my_pattern/**" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  <None Update="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
 </ItemGroup>
 ```
 

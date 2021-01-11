@@ -18,7 +18,7 @@ This article shows how to use the <xref:System.Text.Json?displayProperty=fullNam
 
 The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
 
-Most of the serialization sample code sets <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to "pretty-print" the JSON (with indentation and whitespace for human readability). For production use, you would typically accept the default value of `false` for this setting.
+Most of the serialization sample code sets <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to "pretty-print" the JSON (with indentation and whitespace for human readability). For production use, you would typically accept the default value of `false` for this setting, since adding unnecessary whitespace may incur a noticeable, negative impact on performance and bandwidth usage.
 
 The code examples refer to the following class and variants of it:
 

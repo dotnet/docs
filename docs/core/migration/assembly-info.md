@@ -6,7 +6,7 @@ ms.date: 01/08/2021
 ---
 # Map AssemblyInfo attributes to properties
 
-[Assembly attributes](../../standard/assembly/set-attributes.md) that were typically present in an *AssemblyInfo* file in .NET Core 2.0 and earlier versions are automatically generated from properties, starting in .NET Core 2.1.
+[Assembly attributes](../../standard/assembly/set-attributes.md) that were typically present in an *AssemblyInfo* file in .NET Core 2.0 and earlier versions are automatically generated from MSBuild properties, starting in .NET Core 2.1.
 
 ## Properties per attribute
 

@@ -58,7 +58,7 @@ Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRe
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 
 > [!IMPORTANT]
-> The <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> class exposes several APIs, such as `.Bind(object instance)` and `.Get<T>()` that are ***not*** contained to `class`. When using any of the [Options interfaces](#options-interfaces), you must adhere to aforementioned [options class constraints](#options-class).
+> The <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> class exposes several APIs, such as `.Bind(object instance)` and `.Get<T>()` that are ***not*** constrained to `class`. When using any of the [Options interfaces](#options-interfaces), you must adhere to aforementioned [options class constraints](#options-class).
 
 An alternative approach when using the options pattern is to bind the `"TransientFaultHandlingOptions"` section and add it to the [dependency injection service container](dependency-injection.md). In the following code, `TransientFaultHandlingOptions` is added to the service container with <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> and bound to configuration:
 

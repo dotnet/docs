@@ -102,10 +102,10 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
   The name of the process to collect the GC dump from.
 
 > [!NOTE]
-> On Linux and macOS, this command expects the target application and `dotnet-gcdump` to share the same `TMPDIR` environment variable.
+> On Linux and macOS, this command expects the target application and `dotnet-gcdump` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
 
 > [!NOTE]
-> To collect a GC dump using `dotnet-gcdump`, it needs to be run as the same user as the user running target process or as root.
+> To collect a GC dump using `dotnet-gcdump`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
 
 ## `dotnet-gcdump ps`
 

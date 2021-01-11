@@ -27,7 +27,7 @@ ASP.NET Core assumes apps will use dependency injection. It's not just built int
 
 In addition to using the default implementation, apps can still use custom containers. The [documentation covers how to replace the default service container](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.1#default-service-container-replacement).
 
-Dependency injection is fundamental to ASP.NET Core. If your team is not already well-versed in this practice, you'll want to be sure you have a firm understanding of it before you port your app.
+Dependency injection is fundamental to ASP.NET Core. If your team isn't already well-versed in this practice, you'll want to understand it before porting your app.
 
 ## References
 

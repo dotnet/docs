@@ -57,7 +57,7 @@ Teams looking to migrate their apps from ASP.NET MVC to ASP.NET Core need to ide
 ## References
 
 - [ASP.NET Application Life Cycle Overview for IIS 7](https://docs.microsoft.com/previous-versions/aspnet/bb470252(v=vs.100))
-- [ASP.NET Application Life Cycle Overview for IIS 5 and 6](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178473(v=vs.100))
+- [ASP.NET Application Life Cycle Overview for IIS 5 and 6](https://docs.microsoft.com/previous-versions/aspnet/ms178473(v=vs.100))
 - [Getting Started with OWIN and Katana](https://docs.microsoft.com/aspnet/aspnet/overview/owin-and-katana/getting-started-with-owin-and-katana)
 - [WebActivator](https://github.com/davidebbo/WebActivator)
 - [App Startup in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup?view=aspnetcore-3.1)

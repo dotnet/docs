@@ -7,9 +7,9 @@ ms.date: 11/13/2020
 
 # Compare controllers in ASP.NET MVC and Web API with controllers in ASP.NET Core
 
-In ASP.NET MVC 5 and Web API 2, there were two different `Controller` base types. MVC controllers inherited from `Controller`; Web API controllers inherited from `ApiController`. In ASP.NET Core, this is no longer the case, and the object hierarchy has been merged. It is recommended that API controllers in ASP.NET Core inherit from `ControllerBase` and add the `[ApiController]` attribute, while standard view-based MVC controllers should inherit from `Controller`.
+In ASP.NET MVC 5 and Web API 2, there were two different `Controller` base types. MVC controllers inherited from `Controller`; Web API controllers inherited from `ApiController`. In ASP.NET Core, this is no longer the case, and the object hierarchy has been merged. It is recommended that API controllers in ASP.NET Core inherit from `ControllerBase` and add the `[ApiController]` attribute. Standard view-based MVC controllers should inherit from `Controller`.
 
-In both frameworks, Controllers are used to organize sets of action methods. Filters and routes can be applied on a Controller level in addition to at the action level, and these conventions can be extended further through the use of custom base `Controller` types with default behavior and attributes applied to them.
+In both frameworks, controllers are used to organize sets of action methods. Filters and routes can be applied on a controller level in addition to at the action level. These conventions can be extended further through the use of custom base `Controller` types with default behavior and attributes applied to them.
 
 In ASP.NET MVC, content negotiation isn't supported. ASP.NET Web API 2 does support content negotiation, as does ASP.NET Core. Using [content negotiation](https://docs.microsoft.com/aspnet/core/web-api/advanced/formatting), the format of the content returned to a request can be determined by headers the client provides indicating its preferred manner of receiving the content.
 

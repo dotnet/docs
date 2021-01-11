@@ -41,7 +41,7 @@ items:
         href: ../core/install/linux-snap.md
       - name: Install script & binaries
         href: ../core/install/linux-scripted-manual.md
-      
+
     - name: Remove outdated runtimes and SDKs
       href: ../core/install/remove-runtime-sdk-versions.md
     - name: Manage .NET templates
@@ -343,8 +343,6 @@ items:
           href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Target frameworks
       href: ../standard/frameworks.md
-    - name: Additions to the csproj format
-      href: ../core/tools/csproj.md
     - name: Dependency management
       href: ../core/tools/dependencies.md
   - name: Global and local tools
@@ -2282,6 +2280,8 @@ items:
       href: ../core/migration/index.md
     - name: Map between project.json and csproj
       href: ../core/tools/project-json-to-csproj.md
+    - name: Map AssemblyInfo attributes to properties
+      href: ../core/migration/assembly-info.md
     - name: Changes in CLI overview
       href: ../core/tools/cli-msbuild-architecture.md
     - name: Migrate from DNX

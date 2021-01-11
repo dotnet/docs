@@ -500,7 +500,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 
 ### AssetTargetFallback
 
-The `AssetTargetFallback` property lets you specify additional compatible framework versions for project references and NuGet packages. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`.
+The `AssetTargetFallback` property lets you specify additional compatible framework versions for project references and NuGet packages. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`. This property replaces the deprecated property `PackageTargetFallback`.
 
 You can set the `AssetTargetFallback` property to one or more [target framework versions](../../standard/frameworks.md#supported-target-frameworks).
 
@@ -526,7 +526,7 @@ Set this property to `true` to disable implicit `FrameworkReference` or [Package
 
 The `PackageReference` item defines a reference to a NuGet package.
 
-The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges). You can also add the following metadata to a project reference: `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets`.
+The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges). You can also add [asset attributes](#asset-attributes) to a package reference.
 
 The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
 
@@ -537,6 +537,31 @@ The project file snippet in the following example references the [System.Runtime
 ```
 
 For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
+
+#### Asset attributes
+
+The `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets` metadata can be added to a package reference.
+
+| Attribute | Description |
+| - | - |
+| `IncludeAssets` | Specifies which assets belonging to the package specified by `<PackageReference>` should be consumed. By default, all package assets are included. |
+| `ExcludeAssets`| Specifies which assets belonging to the package specified by `<PackageReference>` should not be consumed. |
+| `PrivateAssets` | Specifies which assets belonging to the package specified by `<PackageReference>` should be consumed but not flow to the next project. The `Analyzers`, `Build`, and `ContentFiles` assets are private by default when this attribute is not present. |
+
+These attributes can contain one or more of the following items, separated by a semicolon `;` if more than
+one is listed:
+
+- `Compile` – the contents of the *lib* folder are available to compile against.
+- `Runtime` – the contents of the *runtime* folder are distributed.
+- `ContentFiles` – the contents of the *contentfiles* folder are used.
+- `Build` – the props/targets in the *build* folder are used.
+- `Native` – the contents from native assets are copied to the *output* folder for runtime.
+- `Analyzers` – the analyzers are used.
+
+Alternatively, the attribute can contain:
+
+- `None` – none of the assets are used.
+- `All` – all assets are used.
 
 ### ProjectReference
 

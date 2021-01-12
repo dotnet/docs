@@ -18,7 +18,7 @@ ms.custom: "updateeachrelease"
   * [Windows Forms](/dotnet/desktop/winforms/)
   * [Universal Windows Platform (UWP)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)
 * [Games](https://dotnet.microsoft.com/apps/games)
-* [Internet of Things (IoT)](/dotnet/iot)
+* [Internet of Things (IoT)](../iot/index.yml)
 * [Machine learning](../machine-learning/index.yml)
 * [Console apps](tutorials/with-visual-studio-code.md)
 * [Windows services](/aspnet/core/host-and-deploy/windows-service)

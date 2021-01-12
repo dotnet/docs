@@ -128,7 +128,7 @@ Both web and offline installers are designed for x86-based and x64-based compute
 
 - .NET Framework 4.5 and later versions replace .NET Framework 4.0. When you install these versions on a system that has .NET Framework 4 installed, the assemblies are replaced.
 
-- Uninstalling .NET Framework 4.5 or later versions also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. See [Installing the .NET Framework 4](https://go.microsoft.com/fwlink/p/?LinkId=230665).
+- Uninstalling .NET Framework 4.5 or later versions also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. See [Installing the .NET Framework 4](/previous-versions/dotnet/netframework-4.0/5a4x27ek(v=vs.100)).
 
 - You must have administrative credentials to install .NET Framework 4.5 or later versions.
 

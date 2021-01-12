@@ -27,4 +27,4 @@ To use an Azure SDK package in one of your .NET applications, you want to follow
 
 3. **Write code using the SDK in your application -** When working with Azure services, your code will first create a client object to work with the service and then call methods on that client object to interact with the service.  Both synchronous and asynchronous methods are provided.  Examples of using each individual SDK package are provided throughout the Azure documentation.
 
-4. **Configure logging for the SDK (optional) -** If you need to diagnose issues between your application and Azure, you can [enable logging in the Azure SDK for .NET](./logging.md).
+4. **Configure logging for the SDK (optional) -** If you need to diagnose issues between your application and Azure, you can [enable logging in the Azure SDK for .NET](../logging.md).

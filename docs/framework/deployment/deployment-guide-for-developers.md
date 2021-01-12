@@ -320,7 +320,7 @@ See the following content:
 
 See the following content:
 
-- [Windows Installer error codes](/previous-versions//aa368542(v=vs.85))
+- [Windows Installer error codes](/previous-versions/aa368542(v=vs.85))
 
 - [Windows Update Agent result codes](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720442(v=ws.10))
 

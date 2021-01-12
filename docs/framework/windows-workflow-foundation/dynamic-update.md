@@ -54,8 +54,6 @@ ActivityBuilder ab = XamlServices.Load(
 DynamicUpdateServices.PrepareForUpdate(ab);
 ```
 
-> [!NOTE]
-> To download the sample code that accompanies this topic, see [Dynamic Update sample code](/samples/browse/).
 
 ### <a name="Update"></a> Update the workflow definition to reflect the desired changes
 
@@ -191,6 +189,3 @@ wfApp.Load(InstanceId);
 // Resume the workflow.
 // wfApp.ResumeBookmark(...);
 ```
-
-> [!NOTE]
-> To download the sample code that accompanies this topic, see [Dynamic Update sample code](/samples/browse/).

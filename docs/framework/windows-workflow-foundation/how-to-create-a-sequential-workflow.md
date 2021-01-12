@@ -13,7 +13,6 @@ Workflows can be constructed from built-in activities as well as from custom act
 
 > [!NOTE]
 > Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).
-
 > [!NOTE]
 > To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](/samples/browse/).
 

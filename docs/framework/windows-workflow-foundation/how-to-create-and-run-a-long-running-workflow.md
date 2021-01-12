@@ -13,7 +13,6 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
 
 > [!NOTE]
 > This tutorial step and the subsequent steps use all three workflow types from [How to: Create a Workflow](how-to-create-a-workflow.md). If you did not complete all three types you can download a completed version of the steps from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](/samples/browse/).
-
 > [!NOTE]
 > To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](/samples/browse/).
 

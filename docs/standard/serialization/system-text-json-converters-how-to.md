@@ -409,7 +409,6 @@ For information about how to preserve references, see [the .NET 5.0 version of t
 
 ::: zone-end
 
-
 ## Other custom converter samples
 
 The [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md) article contains additional samples of custom converters.

@@ -46,7 +46,6 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
 
 ## To create the workflow host form
 
-
 1. Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **New Item**.
 
 2. In the **Installed** templates list, choose **Windows Form**, type `WorkflowHostForm` in the **Name** box, and click **Add**.

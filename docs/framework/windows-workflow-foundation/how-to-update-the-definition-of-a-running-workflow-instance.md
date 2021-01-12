@@ -11,7 +11,6 @@ ms.assetid: 26dfac36-ae23-4909-9867-62495b55fb5e
 
 Dynamic update provides a mechanism for workflow application developers to update the workflow definition of a persisted workflow instance. The required change can be to implement a bug fix, new requirements, or to accommodate unexpected changes. This step in the tutorial demonstrates how to use dynamic update to modify  persisted instances of the `v1` number guessing workflow to match the new functionality introduced in [How to: Host Multiple Versions of a Workflow Side-by-Side](how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 
-
 ## In this topic
 
 - [To create the CreateUpdateMaps project](how-to-update-the-definition-of-a-running-workflow-instance.md#BKMK_CreateProject)

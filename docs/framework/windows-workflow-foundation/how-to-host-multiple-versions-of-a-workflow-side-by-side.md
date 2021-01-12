@@ -10,7 +10,6 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
 
 `WorkflowIdentity` provides a way for workflow application developers to associate a name and a version with a workflow definition, and for this information to be associated with a persisted workflow instance. This identity information can be used by workflow application developers to enable scenarios such as side-by-side execution of multiple versions of a workflow definition, and provides the cornerstone for other functionality such as dynamic update. This step in the tutorial demonstrates how to use `WorkflowIdentity` to host multiple versions of a workflow at the same time.
 
-
 ## In this topic
 
 In this step of the tutorial, the `WriteLine` activities in the workflow are modified to provide additional information, and a new `WriteLine` activity is added. A copy of the original workflow assembly is stored, and the host application is updated so that it can run both the original and the updated workflows at the same time.

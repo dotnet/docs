@@ -11,7 +11,7 @@ ASP.NET MVC apps support unit testing of controllers, but this approach often om
 
 [ASP.NET Core controllers can be unit tested](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing) just like ASP.NET MVC controllers, but with the same limitations. However, [ASP.NET Core supports fast, easy-to-author integration tests](https://docs.microsoft.com/aspnet/core/test/integration-tests) as well. Integration tests are hosted by a `TestHost` class and are typically configured in a custom `WebApplicationFactory` which can override or replace app dependencies. For instance, frequently during integration tests the app will target a different data source and may replace services that send emails with fake or mock implementations.
 
-ASP.NET MVC and Web API did not support anything like the integration testing scenarios available in ASP.NET Core. As part of any migration effort you should allocate time to write some integration tests for your newly-migrated system in order to ensure it's working as expected continues to do so. Even if you weren't writing tests of your web application logic before the migration, you should strongly consider doing so as you move to ASP.NET Core.
+ASP.NET MVC and Web API did not support anything like the integration testing scenarios available in ASP.NET Core. As part of any migration effort you should allocate time to write some integration tests for your newly-migrated system in order to ensure it's working as expected continues to do so. Even if you weren't writing tests of your web app logic before the migration, you should strongly consider doing so as you move to ASP.NET Core.
 
 ## References
 

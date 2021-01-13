@@ -30,7 +30,7 @@ namespace ConsoleJson.Example
 
                     IConfigurationRoot configurationRoot = configuration.Build();
 
-                    var options = new TransientFaultHandlingOptions();
+                    TransientFaultHandlingOptions options = new();
                     configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
                                      .Bind(options);
 

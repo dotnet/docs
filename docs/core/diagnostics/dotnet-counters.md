@@ -294,7 +294,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > dotnet-counters list
 
   Showing well-known counters for .NET (Core) version 3.1 only. Specific processes may support additional counters.
-  System.Runtime              
+  System.Runtime
       cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
       working-set                        Amount of working set used by the process (MB)
       gc-heap-size                       Total heap size reported by the GC (MB)
@@ -328,7 +328,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > dotnet-counters list --runtime-version 5.0
 
   Showing well-known counters for .NET (Core) version 5.0 only. Specific processes may support additional counters.
-  System.Runtime                     
+  System.Runtime
       cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
       working-set                        Amount of working set used by the process (MB)
       gc-heap-size                       Total heap size reported by the GC (MB)
@@ -353,7 +353,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       il-bytes-jitted                    Total IL bytes jitted
       methods-jitted-count               Number of methods jitted
 
-  Microsoft.AspNetCore.Hosting       
+  Microsoft.AspNetCore.Hosting
       requests-per-second   Number of requests between update intervals
       total-requests        Total number of requests
       current-requests      Current number of requests
@@ -370,7 +370,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       connection-queue-length     Length of Kestrel Connection Queue
       request-queue-length        Length total HTTP request queue
 
-  System.Net.Http                    
+  System.Net.Http
       requests-started        Total Requests Started
       requests-started-rate   Number of Requests Started between update intervals
       requests-aborted        Total Requests Aborted

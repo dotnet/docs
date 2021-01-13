@@ -159,6 +159,7 @@
         "docs/azure/sdk/**/*.*": "https://github.com/azure/azure-sdk-for-net",
         "docs/fsharp/**/**.md": "https://github.com/dotnet/fsharp",
         "docs/fundamentals/code-analysis/quality-rules/**/*.md": "https://github.com/dotnet/roslyn-analyzers/issues",
+        "docs/fundamentals/code-analysis/quality-rules/**/il*.md": "https://github.com/mono/linker/issues",
         "docs/fundamentals/code-analysis/style-rules/**/*.md": "https://github.com/dotnet/roslyn/issues",
         "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning",
         "docs/standard/data/sqlite/**/*.md": "https://github.com/dotnet/efcore",

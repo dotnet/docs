@@ -96,7 +96,7 @@ Class Example
         '<Snippet9>
         Dim returnType As Type = GetDelegateReturnType(tDelegate)
         If returnType IsNot GetType(Void) Then
-            Throw New ApplicationException("Delegate has a return type.")
+            Throw New Exception("Delegate has a return type.")
         End If
 
         Dim handler As New DynamicMethod( _
@@ -154,12 +154,12 @@ Class Example
         As Type()
 
         If d.BaseType IsNot GetType(MulticastDelegate) Then
-            Throw New ApplicationException("Not a delegate.")
+            Throw New Exception("Not a delegate.")
         End If
 
         Dim invoke As MethodInfo = d.GetMethod("Invoke")
         If invoke Is Nothing Then
-            Throw New ApplicationException("Not a delegate.")
+            Throw New Exception("Not a delegate.")
         End If
 
         Dim parameters As ParameterInfo() = invoke.GetParameters()
@@ -178,12 +178,12 @@ Class Example
     Private Function GetDelegateReturnType(ByVal d As Type) As Type
 
         If d.BaseType IsNot GetType(MulticastDelegate) Then
-            Throw New ApplicationException("Not a delegate.")
+            Throw New Exception("Not a delegate.")
         End If
 
         Dim invoke As MethodInfo = d.GetMethod("Invoke")
         If invoke Is Nothing Then
-            Throw New ApplicationException("Not a delegate.")
+            Throw New Exception("Not a delegate.")
         End If
 
         Return invoke.ReturnType

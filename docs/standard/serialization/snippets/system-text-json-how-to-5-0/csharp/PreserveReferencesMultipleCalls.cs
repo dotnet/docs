@@ -106,7 +106,7 @@ namespace PreserveReferencesMultipleCalls
 
             // Reset after serializing to avoid out of bounds memory growth in the resolver.
             myReferenceHandler.Reset();
-            // <//CallSerializer>
+            // <CallSerializer>
         }
 
         static void DoSomething(string json)
@@ -115,3 +115,26 @@ namespace PreserveReferencesMultipleCalls
         }
     }
 }
+
+// Output:
+//{
+//    "$id": "1",
+//  "Name": "Tyler Stein",
+//  "Manager": null,
+//  "DirectReports": {
+//        "$id": "2",
+//    "$values": [
+//      {
+//            "$id": "3",
+//        "Name": "Adrian King",
+//        "Manager": {
+//                "$ref": "1"
+//        },
+//        "DirectReports": null
+//      }
+//    ]
+//  }
+//}
+//{
+//    "$ref": "3"
+//}

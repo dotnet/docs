@@ -70,7 +70,7 @@ namespace PreserveReferencesMultipleCalls
 
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             Employee tyler = new()
             {
@@ -93,6 +93,7 @@ namespace PreserveReferencesMultipleCalls
         {
             // <CallSerializer>
             var options = new JsonSerializerOptions();
+            options.WriteIndented = true;
             var myReferenceHandler = new MyReferenceHandler();
             options.ReferenceHandler = myReferenceHandler;
 
@@ -103,7 +104,7 @@ namespace PreserveReferencesMultipleCalls
                 DoSomething(json);
             }
 
-            // Always reset after you are done serializing in order to avoid out of bounds memory growth in the resolver.
+            // Reset after serializing to avoid out of bounds memory growth in the resolver.
             myReferenceHandler.Reset();
             // <//CallSerializer>
         }

@@ -45,5 +45,3 @@ Joining is an important operation in queries that target data sources that have 
 - [LINQ to DataSet Examples](linq-to-dataset-examples.md)
 - [Standard Query Operators Overview (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Join Samples](https://go.microsoft.com/fwlink/?LinkId=187357)
-- [Dataset Samples](https://go.microsoft.com/fwlink/?LinkId=187358)

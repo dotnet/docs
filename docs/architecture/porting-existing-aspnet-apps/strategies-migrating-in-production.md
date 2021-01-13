@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Strategies for migrating while running in production
 
-Many teams have .NET Framework apps they plan to migrate to .NET Core, but the app is so large that the migration will require a significant amount of time to complete. The original app needs to live on while the migration is done piece by piece. There needs to be a way for the old and new versions of the app to work together side by side, or for the old version to be migrated in place, at least some of the way, without breaking it. Teams can employ a number of different strategies to support these goals.
+Many teams have .NET Framework apps they plan to migrate to .NET Core, but the app is so large that the migration will require a significant amount of time to complete. The original app needs to live on while the migration is done piece by piece. There needs to be a way for the old and new versions of the app to work together side by side, or for the old version to be migrated in place, at least some of the way, without breaking it. Teams can employ many different strategies to support these goals.
 
 ## Refactor the .NET Framework solution
 
@@ -17,11 +17,11 @@ When refactoring, make sure you're following good refactoring fundamentals. That
 
 ## Extract front-end assets to a CDN
 
-If your .NET Framework apps include a lot of static assets, like scripts, CSS files, or images, you may be abel to migrate these to a separate CDN. Then, update the existing app to reference the CDN links for these assets. When you port the app to .NET Core, these static files won't be part of the migration, and you'll just continue referencing them from the CDN in the ASP.NET Core app.
+If your .NET Framework apps include a lot of static assets, like scripts, CSS files, or images, you may be able to migrate these to a separate CDN. Then, update the existing app to reference the CDN links for these assets. When you port the app to .NET Core, these static files won't be part of the migration, and you'll just continue referencing them from the CDN in the ASP.NET Core app.
 
 ## Extract and migrate individual microservices
 
-Large .NET Framework apps may already be comprised of separate front end systems that can be migrated individually. Or they may be candidates for migration to a microservices architecture, with some pieces of existing ASP.NET MVC apps being pulled out into new ASP.NET Core microservice implementations. You can learn more about microservices in the associated ebook, [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+Large .NET Framework apps may already be comprised of separate front-end systems that can be migrated individually. Or they may be candidates for migration to a microservices architecture, with some pieces of existing ASP.NET MVC apps being pulled out into new ASP.NET Core microservice implementations. You can learn more about microservices in the associated ebook, [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
 
 For example, the existing app might have a set of features it uses related to user login and registration. These could be migrated to a separate microservice which could be built and deployed using ASP.NET Core and then integrated into the legacy .NET Framework app. Next, the app might have a few pages dedicated to tracking the individual user's shopping cart. These, too, could be pulled out into their own separate microservice and again integrated into the existing app. In this way, the original .NET Framework app continues running in production, but with more and more of its features coming from modernized .NET Core microservices.
 
@@ -49,7 +49,7 @@ Eventually, the entire facade layer corresponds to the new, modern implementatio
 
 ## Summary
 
-Frequently, large ASP.NET MVC and Web API apps will not be ported to ASP.NET Core all at once, but will migrate incrementally over some time. This section offers several strategies for performing this incremental migration. Choose the one(s) that will work best for your organization and application.
+Frequently, large ASP.NET MVC and Web API apps won't be ported to ASP.NET Core all at once, but will migrate incrementally over some time. This section offers several strategies for performing this incremental migration. Choose the one(s) that will work best for your organization and application.
 
 ## References
 

@@ -23,7 +23,7 @@ Figure 3-2 shows the installer for the [.NET Portability Analyzer Visual Studio 
 
 **Figure 3-2. .NET Portability Analyzer installer.**
 
-The extension supports Visual Studio 2017 and later. Once installed, you configure it from the **Analyze > Portability Analyzer Settings** menu, as shown in Figure 3-3.
+The extension supports Visual Studio 2017 and later. Once installed, you configure it from the **Analyze** > **Portability Analyzer Settings** menu, as shown in Figure 3-3.
 
 ![Configure the .NET Portability Analyzer extension](./media/Figure3-3.png)
 
@@ -62,7 +62,7 @@ Watch an overview of how to employ this approach in this [dotNetConf presentatio
 
 When automating a large suite of apps, it helps significantly if they follow consistent coding guidelines and project organization. Automation efforts rely on this consistency to be effective. In addition to parsing and migrating project files, common code patterns can be migrated automatically. Some code pattern examples include differences in how controller actions are declared or how they return results.
 
-For example, a migration script could search files matching `Controller.cs` for lines of code matching one of these patterns:
+For example, a migration script could search files matching *Controller.cs* for lines of code matching one of these patterns:
 
 ```csharp
    return new HttpStatusCodeResult(200);

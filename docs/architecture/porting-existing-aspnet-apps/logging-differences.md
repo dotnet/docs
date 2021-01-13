@@ -38,7 +38,7 @@ Support for logging in ASP.NET Core is extensive and flexible. [Refer to the doc
 
 How you migrate your .NET Framework app's logging to .NET Core will largely depend on how the app is logging now. If it's using a third-party NuGet package, refer to the upgrade documentation for that package. Most likely the upgrade path will be fairly straightforward. If you're using your own logging solution, you'll need to migrate it yourself, or consider this an opportunity to migrate to a third-party solution or the built-in support in ASP.NET Core.
 
-You can reference the `Microsoft.Extensions.Logging` package from .NET Framework apps as long as they are using NuGet version 4.3 or higher and are on .NET Framework 4.6.1 or higher. Once your app has referenced this package, you can convert your logging statements to use the new extensions prior to migrating the app to .NET Core. This can provide a stepping stone toward full migration, since the app can continue running on .NET Framework while logging using the newer extensions package.
+You can reference the `Microsoft.Extensions.Logging` package from .NET Framework apps as long as they are using NuGet 4.3 or later and are on .NET Framework 4.6.1 or later. Once your app has referenced this package, you can convert your logging statements to use the new extensions prior to migrating the app to .NET Core. This can provide a stepping stone toward full migration, since the app can continue running on .NET Framework while logging using the newer extensions package.
 
 ## References
 

@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Compare ASP.NET Identity and ASP.NET Core Identity
 
-In ASP.NET MVC, identity features are typically configured in `IdentityConfig.cs` in the `App_Start` folder. Review how this is configured in the existing app, and compare it to the [configuration required for ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity-configuration) in `Startup.cs`.
+In ASP.NET MVC, identity features are typically configured in *IdentityConfig.cs* in the *App_Start* folder. Review how this is configured in the existing app, and compare it to the [configuration required for ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity-configuration) in *Startup.cs*.
 
 ASP.NET Identity is an API that supports user interface login functionality and manages users, passwords, profile data, roles, claims, tokens, email confirmations, and more. It supports external login providers like Facebook, Google, Microsoft, and Twitter.
 

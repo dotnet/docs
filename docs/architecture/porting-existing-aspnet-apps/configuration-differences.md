@@ -11,7 +11,7 @@ How configuration values are stored and read changed dramatically between ASP.NE
 
 ## ASP.NET MVC configuration
 
-In ASP.NET apps, configuration uses the built-in .NET configuration files, *web.config* in the app folder and *machine.config* on the server. Most ASP.NET MVC and Web API apps store any settings they need in the configuration file's appsettings or connection strings elements. Some also use custom configuration sections that can be mapped to a settings class.
+In ASP.NET apps, configuration uses the built-in .NET configuration files, *web.config* in the app folder and *machine.config* on the server. Most ASP.NET MVC and Web API apps store their settings in the configuration file's `appSettings` or `connectionStrings` elements. Some also use custom configuration sections that can be mapped to a settings class.
 
 Configuration in a .NET Framework app is accessed using the `System.Configuration.ConfigurationManager` class. Unfortunately, this class provides static access to the configuration elements. As a result, very few ASP.NET MVC apps tend to abstract access to their configuration settings or inject them where needed. Instead, most .NET Framework apps tend to directly access the configuration system anywhere the app needs to use a setting.
 
@@ -24,7 +24,7 @@ string connString = ConfigurationManager.ConnectionStrings["DefaultConnection"]
 
 ## ASP.NET Core configuration
 
-In ASP.NET Core apps, configuration is, itself, configurable. However, most apps use a set of defaults provided as part of the standard project templates and the `ConfigureWebHostDefaults` method used in them. The default settings use JSON formatted files, with the ability to override settings in the base `appsettings.json` file with environment-specific files like `appsettings.Development.json`. Additionally, the default configuration system further overrides all file-based settings with any environment variable that exists for the same named setting. This is useful in many scenarios and is especially useful when deploying to a hosting environment, since it eliminates the need to worry about whether deploying configuration files will accidentally overwrite important production configuration settings.
+In ASP.NET Core apps, configuration is, itself, configurable. However, most apps use a set of defaults provided as part of the standard project templates and the `ConfigureWebHostDefaults` method used in them. The default settings use JSON formatted files, with the ability to override settings in the base *appsettings.json* file with environment-specific files like *appsettings.Development.json*. Additionally, the default configuration system further overrides all file-based settings with any environment variable that exists for the same named setting. This is useful in many scenarios and is especially useful when deploying to a hosting environment, since it eliminates the need to worry about whether deploying configuration files will accidentally overwrite important production configuration settings.
 
 Accessing configuration values can be done in many ways in .NET Core. Because dependency injection is built into .NET Core, configuration values are generally accessed through an interface that is injected into classes that need them. This can involve passing a large interface like `IConfiguration`, but usually it's better to pass just the settings required by the class using the [options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options).
 
@@ -48,7 +48,7 @@ public class TestModel : PageModel
 }
 ```
 
-**Figure 2-2. Accessing configuration values with IConfiguration.**
+**Figure 2-2. Accessing configuration values with `IConfiguration`.**
 
 Using the options pattern, settings access is similar but is strongly typed and more specific to the setting(s) needed by the consuming class, as Figure 2-3 demonstrates.
 

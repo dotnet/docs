@@ -1,6 +1,6 @@
 ---
 title: Example migration of eShop to ASP.NET Core
-description: A walkthrough of a migrating an existing ASP.NET MVC app to ASP.NET Core, using a sample online store app as a reference.
+description: A walkthrough of migrating an existing ASP.NET MVC app to ASP.NET Core, using a sample online store app as a reference.
 author: ardalis
 ms.date: 11/13/2020
 ---
@@ -9,7 +9,7 @@ ms.date: 11/13/2020
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-In this chapter you'll see how to migrate a .NET Framework app to .NET Core. The chapter will examine a sample online store app written for ASP.NET 5.0 and will go leverage many of the concepts and tools described earlier in this book. You'll find the starting point app in the [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps; this chapter will focus on the `eShopLegacyMVCSolution`.
+In this chapter, you'll see how to migrate a .NET Framework app to .NET Core. The chapter examines a sample online store app written for ASP.NET 5.0. The app will use many of the concepts and tools described earlier in this book. You'll find the starting point app in the [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing). There are several different starting point apps. This chapter focuses on the `eShopLegacyMVCSolution`.
 
 The initial version of the project is shown in Figure 4-1. It's a fairly standard ASP.NET MVC 5 app.
 
@@ -19,7 +19,7 @@ The initial version of the project is shown in Figure 4-1. It's a fairly standar
 
 ## Run ApiPort to identify problematic APIs
 
-The first step in preparing to migrate is to run the ApiPort tool to get a sense of how many .NET Framework APIs the app calls, and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](/understand-update-dependencies.md).
+The first step in preparing to migrate is to run the ApiPort tool. The tool identifies how many .NET Framework APIs the app calls and how many of these have .NET Standard or .NET Core equivalents. Focus primarily on your own app's logic, not third-party dependencies, and pay attention to `System.Web` dependencies that will need to be ported. The ApiPort tool was introduced in the last chapter on [understanding and updating dependencies](/understand-update-dependencies.md).
 
 After [installing and configuring the ApiPort tool](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer), run the analysis from within Visual Studio, as shown in Figure 4-2.
 
@@ -41,7 +41,7 @@ Once the report is generated, open the file and review the results. The summary 
 
 **Figure 4-4. ApiPort summary.**
 
-For this app, about 80 percent of the .NET Framework calls are compatible, meaning 20 percent will need to be addressed in some way as part of the porting process. Viewing the details reveals that all of the incompatible calls are part of `System.Web`, which is an expected incompatibility. The dependencies on `System.Web` calls will be addressed when the app's controllers and related classes are migrated in a later step. Figure 4-5 lists some of the specific types found by the tool:
+For this app, about 80 percent of the .NET Framework calls are compatible. 20 percent of the calls need to be addressed during the porting process. Viewing the details reveals that all of the incompatible calls are part of `System.Web`, which is an expected incompatibility. The dependencies on `System.Web` calls will be addressed when the app's controllers and related classes are migrated in a later step. Figure 4-5 lists some of the specific types found by the tool:
 
 ![Figure 4-5](media/Figure4-5.png)
 
@@ -51,9 +51,9 @@ Most of the incompatible types refer to `Controller` and various related attribu
 
 ## Update project files and NuGet reference syntax
 
-The next step is to migrate from the older *.csproj* file structure to the newer, simpler one introduced with .NET Core. In doing so, you'll also migrate from using a `packages.config` file for NuGet references to using `<PackageReference>` elements in the project file.
+Next, migrate from the older *.csproj* file structure to the newer, simpler structure introduced with .NET Core. In doing so, you'll also migrate from using a `packages.config` file for NuGet references to using `<PackageReference>` elements in the project file.
 
-The original project's `eShopLegacyMVC.csproj` file is 418 lines long. A sample of it is shown in Figure 4-6, which includes a miniature view of the entire file on the right side to offer a sense of its overall size and complexity.
+The original project's `eShopLegacyMVC.csproj` file is 418 lines long. A sample of the project file is shown in Figure 4-6. To offer a sense of its overall size and complexity, the right side of the image contains a miniature view of the entire file.
 
 ![Figure 4-6](media/Figure4-6.png)
 
@@ -77,7 +77,7 @@ Add a new ASP.NET Core project to the existing app's solution to make moving fil
 
 **Figure 4-8. Add new ASP.NET Core web application.**
 
-The next dialog will ask you to choose which template to use. Select the **Empty** template, and be sure to also change the dropdown from .NET Core to .NET Framework, and select ASP.NET Core 2.2 as shown in Figure 4-9.
+The next dialog will ask you to choose which template to use. Select the **Empty** template. Be sure to also change the dropdown from .NET Core to .NET Framework. Select ASP.NET Core 2.2, as shown in Figure 4-9.
 
 ![Figure 4-9](media/Figure4-9.png)
 
@@ -104,7 +104,7 @@ In most ASP.NET MVC apps, many client-side dependencies like Bootstrap and jQuer
 - popper.js
 - Respond
 
-The static client files installed by NuGet for these packages will be copied over to the new project's `wwwroot` folder and hosted from there. It's worth considering whether these files are still needed by the app, and whether it makes sense to continue hosting them or to use a content delivery network (CDN) instead. Managing versions of these libraries can be done at build time using tools like [LibMan](https://docs.microsoft.com/aspnet/core/client-side/libman/) or [npm](https://www.npmjs.com/). Figure 4-10 shows the full *eShopPorted.csproj* file after migrating package references using the conversion tool shown and removing unnecessary packages.
+The static client files installed by NuGet for these packages will be copied over to the new project's `wwwroot` folder and hosted from there. It's worth considering whether these files are still needed by the app, and whether it makes sense to continue hosting them or to use a content delivery network (CDN) instead. These library versions can be managed at build time using tools like [LibMan](https://docs.microsoft.com/aspnet/core/client-side/libman/) or [npm](https://www.npmjs.com/). Figure 4-10 shows the full *eShopPorted.csproj* file after migrating package references using the conversion tool shown and removing unnecessary packages.
 
 ![Figure 4-10](media/Figure4-10.png)
 
@@ -114,11 +114,11 @@ The package references can be further compacted by making the `<Version>1.0.0.0<
 
 ### Migrate static files
 
-Any static files the app uses, including third-party scripts and frameworks but also custom images and stylesheets, must be copied from the old project to the new one. In ASP.NET MVC apps, files were typically accessed based on their location within the project folder. In ASP.NET Core apps, these static files will be accessed based on their location within the `wwwroot` folder. For the eShop project, there are static files in the `Content`, `fonts`, `Images`, `Pics`, and `Scripts` folders. The empty project template used in the previous step doesn't include this folder by default, or the middleware needed for it to work, so you'll need to add them.
+Any static files the app uses, including third-party scripts and frameworks but also custom images and stylesheets, must be copied from the old project to the new one. In ASP.NET MVC apps, files were typically accessed based on their location within the project folder. In ASP.NET Core apps, these static files will be accessed based on their location within the `wwwroot` folder. For the eShop project, there are static files in the `Content`, `fonts`, `Images`, `Pics`, and `Scripts` folders. The **Empty** project template used in the previous step doesn't include this folder by default, or the middleware needed for it to work. You'll need to add them.
 
 Add a `wwwroot` folder to the root of the project.
 
-Add `Microsoft.AspNetCore.StaticFiles` NuGet package (version 2.2.0).
+Add version 2.2.0 of the `Microsoft.AspNetCore.StaticFiles` NuGet package.
 
 In `Startup.cs`, add a call to `app.UseStaticFiles()` to the `Configure` method:
 
@@ -143,7 +143,7 @@ Run the app and navigate to its `/Content/base.css` folder to verify that the st
 
 ### Migrate C# files
 
-Next, copy over the C# files used by the app, including standard MVC folders and their contents like `Controllers`, `Models`, `ViewModel`, and `Services`. There will most likely be some changes needed in these files, so it's best to copy one folder (or subfolder) at a time and compile to see what errors need to be addressed as you go.
+Next, copy over the C# files used by the app, including standard MVC folders and their contents like `Controllers`, `Models`, `ViewModel`, and `Services`. There will most likely be some changes needed in these files. It's best to copy one folder (or subfolder) at a time and compile to see what errors need to be addressed as you go.
 
 For the eShop sample, the first folder I choose to migrate is the `Models` folder, which includes C# entities and Entity Framework classes. This folder's classes are used by most of the others, so they won't work until these classes have been copied. After copying the folder and building, the compiler revealed errors related to missing namespace `System.Web.Hosting`, related access to `HostingEnvironment`, and a reference to `ConfigurationManager.AppSettings`. The solution to these issues will be to pass in the necessary path data; for now the breaking lines are commented out and a `TODO:` comment is added to each one to track it. After changing five lines, the Task List shows five items and the project builds.
 
@@ -163,7 +163,7 @@ The remaining three errors specify types that are defined in an assembly that is
 - `RouteValueDictionary`
 - `HttpRequestBase`
 
-Let's look at each error one by one. The first error occurs while trying to reference the `Server` property of `Controller` which no longer exists. The goal of the operation is to get the path to an image file in the app:
+Let's look at each error one by one. The first error occurs while trying to reference the `Server` property of `Controller`, which no longer exists. The goal of the operation is to get the path to an image file in the app:
 
 ```csharp
 if (item != null)
@@ -180,7 +180,7 @@ if (item != null)
 }
 ```
 
-There are two possible solutions to this problem. The first is to keep the functionality as it is, in which case rather than using `Server.MapPath` a fixed path referencing the image files' location in `wwwroot` should be used. Alternately, since the only purpose of this action method is to return a static image file, the references to this action in view files can be updated to reference the static files directly, which has the advantage of better runtime performance. Since no processing is being done as part of this action, there's no reason not to just serve the files directly. If it's not tenable to update all references to this action, the action could be rewritten to produce a redirect to the static file's location.
+There are two possible solutions to this problem. The first is to keep the functionality as it is. In this case, rather than using `Server.MapPath`, a fixed path referencing the image files' location in `wwwroot` should be used. Alternately, since the only purpose of this action method is to return a static image file, the references to this action in view files can be updated to reference the static files directly, which improves runtime performance. Since no processing is being done as part of this action, there's no reason not to just serve the files directly. If it's not tenable to update all references to this action, the action could be rewritten to produce a redirect to the static file's location.
 
 The next two errors both occur in the same private method in the same line of code:
 
@@ -191,24 +191,24 @@ private void AddUriPlaceHolder(CatalogItem item)
 }
 ```
 
-Both `this.Url` and `this.Request` cause compiler errors. Looking at how this code is used, its purpose is to build a link to the `PicController` action that renders image files. The same one we just discovered could probably be replace with direct links to the static files located in `wwwroot`. For now, it's worth commenting this out and adding a `TODO:` comment to reference the pics another way.
+Both `this.Url` and `this.Request` cause compiler errors. Looking at how this code is used, its purpose is to build a link to the `PicController` action that renders image files. The same one we just discovered could probably be replaced with direct links to the static files located in `wwwroot`. For now, it's worth commenting out this code and adding a `TODO:` comment to reference the pics another way.
 
-It's worth noting here that the base `Controller` class used by the `CatalogController` class in which this code appears is still referring to `System.Web.Mvc.Controller`. No doubt there will be more errors to fix once we update this to use ASP.NET Core. First, remove the `using System.Web.Mvc;` line from the list of `using` statements in `CatalogController`. Next, add the NuGet package `Microsoft.AspNetCore.Mvc`. Finally, add a `using Microsoft.AspNetCore.Mvc;` statement, and build the app again.
+It's worth noting that the base `Controller` class, used by the `CatalogController` class in which this code appears, is still referring to `System.Web.Mvc.Controller`. There will undoubtedly be more errors to fix once we update this to use ASP.NET Core. First, remove the `using System.Web.Mvc;` line from the list of `using` statements in `CatalogController`. Next, add the NuGet package `Microsoft.AspNetCore.Mvc`. Finally, add a `using Microsoft.AspNetCore.Mvc;` statement, and build the app again.
 
-This time there are 16 errors:
+This time, there are 16 errors:
 
 - `Include` is not a valid named attribute argument (2)
 - `HttpStatusCodeResult` not found (3)
 - `HttpNotFound` does not exist (3)
 - `SelectList` not found (8)
 
-Once more, let's review these errors one by one. First, `SelectList` can be fixed by adding `using Microsoft.AspNetCore.Mvc.Rendering;` which eliminates half of the errors.
+Once more, let's review these errors one by one. First, `SelectList` can be fixed by adding `using Microsoft.AspNetCore.Mvc.Rendering;`, which eliminates half of the errors.
 
 All references to `return HttpNotFound();` should be replaced with `return NotFound();`.
 
 All references to `return new HttpStatusCodeResult(HttpStatusCode.BadRequest);` should be replaced with `return BadRequest();`.
 
-That just leaves the use of `Include` with a `Bind` attribute on a couple of action methods that look like this:
+That just leaves the use of `Include` with a `[Bind]` attribute on a couple of action methods that look like this:
 
 ```csharp
 [HttpPost]
@@ -217,7 +217,7 @@ public ActionResult Create([Bind(Include = "Id,Name,Description,Price,PictureFil
 {
 ```
 
-The preceding code restricts model binding to the properties listed in the `Include` string. In ASP.NET Core MVC, the `Bind` attribute still exists, but no longer needs the `Include =` argument. Simply pass the list of properties directly to the `Bind` attribute:
+The preceding code restricts model binding to the properties listed in the `Include` string. In ASP.NET Core MVC, the `Bind` attribute still exists, but no longer needs the `Include =` argument. Pass the list of properties directly to the `[Bind]` attribute:
 
 ```csharp
 [HttpPost]
@@ -226,11 +226,11 @@ public ActionResult Create([Bind("Id,Name,Description,Price,PictureFileName,Cata
 {
 ```
 
-With these changes, the project compiles once more. Note that it's generally a better practice to use separate model types for controller inputs, rather than using model binding directly to your domain model or data model types.
+With these changes, the project compiles once more. It's generally a better practice to use separate model types for controller inputs, rather than using model binding directly to your domain model or data model types.
 
 ## Migrate views
 
-The two biggest ASP.NET Core MVC features related to views are [Razor Pages](https://docs.microsoft.com/aspnet/core/razor-pages/) and [Tag Helpers](https://docs.microsoft.com/aspnet/core/mvc/views/tag-helpers/built-in/). For the initial migration, we won't be leveraging either of these, but you should keep them mind if you intend to continue supporting the app once it's been migrated. The next step is simply to copy the `Views` folder from the original project into the new one. After building, there are nine errors.
+The two biggest ASP.NET Core MVC features related to views are [Razor Pages](https://docs.microsoft.com/aspnet/core/razor-pages/) and [Tag Helpers](https://docs.microsoft.com/aspnet/core/mvc/views/tag-helpers/built-in/). For the initial migration, we won't use either feature. You should, however, keep the features in mind if you continue supporting the app once it's been migrated. The next step is to copy the `Views` folder from the original project into the new one. After building, there are nine errors:
 
 - HttpContext does not exist (2)
 - Scripts does not exist (5)
@@ -250,9 +250,9 @@ Investigating these errors finds that most of them are in the main `_Layout.csht
 @Scripts.Render("~/bundles/bootstrap")
 ```
 
-The reference to modernizr can be removed. The references to bootstrap and jquery can be replaced with CDN links to the appropriate version.
+The reference to Modernizr can be removed. The references to Bootstrap and jQuery can be replaced with CDN links to the appropriate version.
 
-Replace `@Styles.Render` line with
+Replace `@Styles.Render` line with:
 
 ```html
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -266,7 +266,7 @@ Replace the last two `Scripts.Render` lines with:
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 ```
 
-Finally, after the bootstrap `<link>` add additional `<link>` elements for local styles your app uses. For eShop, the result is shown here:
+Finally, after the Bootstrap `<link>`, add additional `<link>` elements for local styles your app uses. For eShop, the result is shown here:
 
 ```html
 <link rel="stylesheet" href="~/Content/custom.css" />
@@ -274,7 +274,7 @@ Finally, after the bootstrap `<link>` add additional `<link>` elements for local
 <link rel="stylesheet" href="~/Content/Site.css" />
 ```
 
-To determine the order in which these should appear, look at your original app's rendered HTML, or review `BundleConfig.cs`, which for the eShop sample includes this line of code indicating the appropriate sequence:
+To determine the order in which the `<link>` elements should appear, look at your original app's rendered HTML. Alternatively, review `BundleConfig.cs`, which for the eShop sample includes this code indicating the appropriate sequence:
 
 ```csharp
 bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -284,13 +284,13 @@ bundles.Add(new StyleBundle("~/Content/css").Include(
           "~/Content/site.css"));
 ```
 
-Building again reveals one more error loading jQuery validation on the Create and Edit views. Replace it with this script:
+Building again reveals one more error loading jQuery Validation on the Create and Edit views. Replace it with this script:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" integrity="sha512-O/nUTF5mdFkhEoQHFn9N5wmgYyW323JO6v8kr6ltSRKriZyTr/8417taVWeabVS4iONGk2V444QD0P2cwhuTkg==" crossorigin="anonymous"></script>
 ```
 
-The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can collect the data for this in `Startup` as static variables and then display them on the layout page. Add these two properties to `Startup.cs`:
+The last thing to fix in the views is the reference to `Session` to display how long the app has been running, and on which machine. We can collect this data in `Startup` as static variables and display the variables on the layout page. Add these two properties to `Startup.cs`:
 
 ```csharp
 public static DateTime StartTime { get; } = DateTime.UtcNow;
@@ -307,11 +307,11 @@ Then replace the content of the footer in the layout with code:
 </section>
 ```
 
-At this point, the app once more builds successfully. However, trying to run it just yields "Hello World!" because the empty ASP.NET Core template is only configured to display that in response to any request. In the next section I complete the migration by configuring the app to use ASP.NET Core MVC, including dependency injection and configuration. Once that's in place, the app should run, and then it will be time to fix the `TODO:` tasks that were created earlier.
+At this point, the app once more builds successfully. However, trying to run it just yields "Hello World!" because the **Empty** ASP.NET Core template is only configured to display that in response to any request. In the next section, I complete the migration by configuring the app to use ASP.NET Core MVC, including dependency injection and configuration. Once that's in place, the app should run, and then it will be time to fix the `TODO:` tasks that were created earlier.
 
 ## Migrate app startup components
 
-The last step in migrating is to take the app startup tasks from `Global.asax` and the classes it calls and migrate these to their ASP.NET Core equivalents. These include configuration of MVC itself, setting up dependency injection, and working with the new configuration system. In ASP.NET Core, these tasks are done in the `Startup.cs` file.
+The last migration step is to take the app startup tasks from `Global.asax`, and the classes it calls, and migrate these to their ASP.NET Core equivalents. These tasks include configuration of MVC itself, setting up dependency injection, and working with the new configuration system. In ASP.NET Core, these tasks are done in the `Startup.cs` file.
 
 ### Configure MVC
 
@@ -359,7 +359,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-This takes care of the only filter used by the eShop app, and in this case it was done through the use of built-in middleware. If you do have global filters that must be configured in your app, this is done when MVC is wired up in the `ConfigureServices` method, which is shown later in this chapter.
+This takes care of the only filter used by the eShop app, and in this case it was done by using built-in middleware. If you have global filters that must be configured in your app, this is done when MVC is added in the `ConfigureServices` method, which is shown later in this chapter.
 
 The last piece of MVC-related logic that needs to be migrated are the app's default routes. The call to `RouteConfig.RegisterRoutes(RouteTable.Routes)` passes the MVC route table to the `RegisterRoutes` helper method, where the following code is executed when the app starts up:
 
@@ -377,7 +377,7 @@ public static void RegisterRoutes(RouteCollection routes)
 }
 ```
 
-Taking this code line by line, the first line sets up support for attribute routes. This is built into ASP.NET Core so it's not necessary to configure it separately. Likewise, `{resource}.axd` files are not used with ASP.NET Core, so there's no need to ignore such routes. The `MapRoute` method configures the default for MVC, which uses the typical `{controller}/{action}/{id}` route template. It also specifies the defaults for this template, such that the `CatalogController` is the default controller used and the `Index` method is the default action. Larger apps will frequently include more calls to `MapRoute` to set up additional routes.
+Taking this code line-by-line, the first line sets up support for attribute routes. This is built into ASP.NET Core, so it's unnecessary to configure it separately. Likewise, `{resource}.axd` files aren't used with ASP.NET Core, so there's no need to ignore such routes. The `MapRoute` method configures the default for MVC, which uses the typical `{controller}/{action}/{id}` route template. It also specifies the defaults for this template, such that the `CatalogController` is the default controller used and the `Index` method is the default action. Larger apps will frequently include more calls to `MapRoute` to set up additional routes.
 
 ASP.NET Core MVC supports [conventional routing and attribute routing](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.2). Conventional routing is analogous to how the route table is configured in the `RegisterRoutes` method listed previously. To set up conventional routing with a default route like the one used in the eShop app, add the following code to the bottom of the `Configure` method in `Startup.cs`:
 
@@ -388,9 +388,9 @@ app.UseMvc(routes =>
 });
 ```
 
-**NOTE:** With ASP.NET Core 3.0 and later, this is changed to use endpoints, but for the initial port to ASP.NET Core 2.2 this is the proper syntax for mapping conventional routes.
+**NOTE:** With ASP.NET Core 3.0 and later, this is changed to use endpoints. For the initial port to ASP.NET Core 2.2, this is the proper syntax for mapping conventional routes.
 
-With these changes in place, the `Configure` method is almost done. The original template's `app.Run` method that prints "Hello World!" should be deleted. At this point the method is as shown here:
+With these changes in place, the `Configure` method is almost done. The original template's `app.Run` method that prints "Hello World!" should be deleted. At this point, the method is as shown here:
 
 ```csharp
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -413,7 +413,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 }
 ```
 
-Now it's time to configure MVC services, followed by the rest of the app's support for dependency injection (DI). So far, the `eShopPorted` project's `ConfigureServices` method has remained completely empty. Now it's time to start populating it.
+Now it's time to configure MVC services, followed by the rest of the app's support for dependency injection (DI). So far, the `eShopPorted` project's `ConfigureServices` method has remained empty. Now it's time to start populating it.
 
 First, to get ASP.NET Core MVC to work properly, it needs to be added:
 
@@ -424,7 +424,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-This is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call, but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment; for now let's migrate the app's dependency injection.
+The preceding code is the minimal configuration required to get MVC features working. There are many additional features that can be configured from this call, but for now this will suffice to build the app. Running it now routes the default request properly, but since we've not yet configured DI, an error occurs while activating `CatalogController`, because no implementation of type `ICatalogService` has been provided yet. We'll return to configure MVC further in a moment. For now, let's migrate the app's dependency injection.
 
 #### Migrate dependency injection configuration
 
@@ -451,7 +451,7 @@ This code configures an [Autofac](https://autofac.org/) container, reads a confi
 
 ASP.NET Core has built-in support for dependency injection, but you can wire up a third-party container such as Autofac easily if necessary. In this case, since the app is already configured to use Autofac, the simplest solution is to maintain its usage. To do so, the `ConfigureServices` method signature must be modified to return an `IServiceProvider`, and the Autofac container instance must be configured and returned from the method.
 
-**Note:** In .NET Core 3.0 and later the process for integrating a third-party DI container has changed.
+**Note:** In .NET Core 3.0 and later, the process for integrating a third-party DI container has changed.
 
 Part of configuring Autofac requires a call to `builder.Populate(services)`. This extension is found in the `Autofac.Extensions.DependencyInjection` NuGet package, which must be installed before the code will compile.
 
@@ -474,31 +474,31 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
 }
 ```
 
-For now, the setting for `useMockData` is set to `true`; we will read this from config in a moment. At this point, the app compiles and should load successfully when run, as shown in Figure 4-12.
+For now, the setting for `useMockData` is set to `true`. This setting will be read from configuration in a moment. At this point, the app compiles and should load successfully when run, as shown in Figure 4-12.
 
 ![Figure 4-12](media/Figure4-12.png)
 
 **Figure 4-12. Ported eShop app running locally with mock data.**
 
-#### Migrate appSettings
+#### Migrate app settings
 
-ASP.NET Core uses a new [configuration system](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2), which by default leverages an `appSettings.json` file. By using `CreateDefaultBuilder` in `Program.cs`, the default configuration is already set up in the app. To get access to config, classes just need to request it in their constructor, and the `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, simply request an instance of `IConfiguration` from its constructor:
+ASP.NET Core uses a new [configuration system](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2), which by default leverages an `appSettings.json` file. By using `CreateDefaultBuilder` in `Program.cs`, the default configuration is already set up in the app. To get access to config, classes just need to request it in their constructor, and the `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
 
 ```csharp
 public Startup(IConfiguration configuration)
 {
-  Configuration = configuration;
+    Configuration = configuration;
 }
 
 public IConfiguration Configuration { get; }
 ```
 
-The original app referenced its settings using `ConfigurationManager.AppSettings`, so a quick search for all references of this term yields the set of settings the new app needs. There are only two:
+The original app referenced its settings using `ConfigurationManager.AppSettings`. A quick search for all references of this term yields the set of settings the new app needs. There are only two:
 
-- UseMockData
-- UseCustomizationData
+- `UseMockData`
+- `UseCustomizationData`
 
-If your app has more complex configuration, especially if it's using custom configuration sections, you will probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [Options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.2). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
+If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [Options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.2). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
 
 First, modify the ported app's `appsettings.json` file and add the two settings in the root:
 
@@ -521,7 +521,7 @@ Now, modify `ConfigureServices` to access the `UseMockData` setting from the `Co
   bool useMockData = Configuration.GetValue<bool>("UseMockData");
 ```
 
-At this point the setting is pulled from configuration. The other settings, "UseCustomizationData", is used by the `CatalogDBInitializer` class. When we first ported this class, we commented out the access to `ConfigurationManager.AppSettings["UseCustomizationData"]`. Now it's time to modify it to use ASP.NET Core configuration. Modify the constructor of `CatalogDBInitializer` as follows:
+At this point, the setting is pulled from configuration. The other settings, "UseCustomizationData", is used by the `CatalogDBInitializer` class. When we first ported this class, we commented out the access to `ConfigurationManager.AppSettings["UseCustomizationData"]`. Now it's time to modify it to use ASP.NET Core configuration. Modify the constructor of `CatalogDBInitializer` as follows:
 
 ```csharp
   // add using Microsoft.Extensions.Configuration
@@ -533,15 +533,15 @@ At this point the setting is pulled from configuration. The other settings, "Use
   }
 ```
 
-All access to configuration within the web app should be modified in this manner to use the new `IConfiguration` type. Dependencies that require access to .NET Framework configuration can include such settings in an `app.config` file added to the web project. The dependent projects can work with `ConfigurationManager` to access settings, and should not require any changes if they already use this approach. However, since ASP.NET Core apps run as their own executable, they don't reference `web.config` but rather `app.config`. By migrating settings from the legacy app's `web.config` file to a new `app.config` file in the ASP.NET Core app, components that use `ConfigurationManager` to access their settings will continue to function properly.
+All access to configuration within the web app should be modified in this manner to use the new `IConfiguration` type. Dependencies that require access to .NET Framework configuration can include such settings in an `app.config` file added to the web project. The dependent projects can work with `ConfigurationManager` to access settings, and shouldn't require any changes if they already use this approach. However, since ASP.NET Core apps run as their own executable, they don't reference `web.config` but rather `app.config`. By migrating settings from the legacy app's `web.config` file to a new `app.config` file in the ASP.NET Core app, components that use `ConfigurationManager` to access their settings will continue to function properly.
 
 The app's migration is nearly complete - the only thing remaining is to configure data access.
   
 ## Data access considerations
 
-ASP.NET Core apps running on .NET Framework can continue to leverage Entity Framework. If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
+ASP.NET Core apps running on .NET Framework can continue to leverage Entity Framework (EF). If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
 
-As it happens, configuring EF 6 in the eShop sample migration doesn't require any special work, since this work was performed in the Autofac `ApplicationModule`. The only problem is that currently the `CatalogDBContext` class tries to read its connection string from `web.config`. To address this, the connection details need to be added to `appsettings.json` and then the connection string must be passed into `CatalogDBContext` when it is created.
+As it happens, configuring EF 6 in the eShop sample migration doesn't require any special work, since this work was performed in the Autofac `ApplicationModule`. The only problem is that currently the `CatalogDBContext` class tries to read its connection string from `web.config`. To address this, the connection details need to be added to `appsettings.json` and then the connection string must be passed into `CatalogDBContext` when it's created.
 
 First, `appsettings.json` is updated to include the connection string. The full file is listed here:
 
@@ -561,7 +561,7 @@ First, `appsettings.json` is updated to include the connection string. The full 
 }
 ```
 
-Next, the connection string must be passed into the constructor when the DbContext is created. Since the instances is created by Autofac, the change needs to be made in `ApplicationModule`. Modify the module to take in a `connectionString` in its constructor and assign it to a field. Then modify the registration for `CatalogDBContext` to add connection string as a parameter:
+Next, the connection string must be passed into the constructor when the `DbContext` is created. Since the instances are created by Autofac, the change needs to be made in `ApplicationModule`. Modify the module to take in a `connectionString` in its constructor and assign it to a field. Then modify the registration for `CatalogDBContext` to add connection string as a parameter:
 
 ```csharp
 builder.RegisterType<CatalogDBContext>()
@@ -585,9 +585,9 @@ string connectionString = Configuration.GetConnectionString("DefaultConnection")
 builder.RegisterModule(new ApplicationModule(useMockData, connectionString));
 ```
 
-With this in place, the app runs as it did before, connecting to a SQL Server database when `UseMockData` is false.
+With this code in place, the app runs as it did before, connecting to a SQL Server database when `UseMockData` is `false`.
 
-The app can be deployed and run in production at this point, converted to ASP.NET Core but still running on .NET Framework and EF 6. If desired, the app can be migrated to run on .NET Core and Entity Framework Core, which will bring additional advantages described in earlier chapters. Specific to Entity Framework, [this documentation compares EF Core and EF6](https://docs.microsoft.com/ef/efcore-and-ef6/) and includes a grid showing which library supports each of dozens of individual features.
+The app can be deployed and run in production at this point, converted to ASP.NET Core but still running on .NET Framework and EF 6. If desired, the app can be migrated to run on .NET Core and Entity Framework Core, which will bring additional advantages described in earlier chapters. Specific to Entity Framework, [this documentation compares EF Core and EF 6](https://docs.microsoft.com/ef/efcore-and-ef6/) and includes a grid showing which library supports each of dozens of individual features.
 
 ### Migrate to Entity Framework Core
 
@@ -652,7 +652,7 @@ namespace eShopPorted.Models.Config
 }
 ```
 
-The `CatalogDBInitializer` and its base class, `CreateDatabaseIfNotExists<T>`, are not compatible with EF Core. The purpose of this class is to create and seed the database. Using EF Core will [create and drop the associated database for a `DbContext`](https://docs.microsoft.com/ef/core/managing-schemas/ensure-created) using these methods:
+The `CatalogDBInitializer` and its base class, `CreateDatabaseIfNotExists<T>`, are incompatible with EF Core. The purpose of this class is to create and seed the database. Using EF Core will [create and drop the associated database for a `DbContext`](https://docs.microsoft.com/ef/core/managing-schemas/ensure-created) using these methods:
 
 ```csharp
 dbContext.Database.EnsureDeleted();
@@ -746,13 +746,13 @@ public class ApplicationModule : Module
 
 The ported app runs, but doesn't display any data if configured to use non-mock data. The seed data added through `HasData` is only inserted when migrations are applied. The source app didn't use migrations, and if it had, they wouldn't migrate as-is. The best approach is to start with a new migration script. To do this, add a package reference for `Microsoft.EntityFrameworkCore.Design` and open a terminal window in the project root. Then run:
 
-```terminal
+```dotnetcli
 dotnet ef migrations add Initial
 ```
 
 Drop the existing `eShopPorted` database if it exists, then run:
 
-```terminal
+```dotnetcli
 dotnet ef database update
 ```
 
@@ -760,7 +760,7 @@ This creates and seeds the database. It's now ready to run, with a few small upd
 
 ## Fix all TODO tasks
 
-Running the ported app at this point reveals that no pictures are shown on the page. This is because the `PictureUri` property of `CatalogItem` is never set. Looking at the list of `TODO` items we created using Visual Studio's Task List, the only one that remains is in `CatalogController`, with a note to "Reference pic from wwwroot." The code in question is:
+Running the ported app at this point reveals that no pictures are shown on the page. This is because the `PictureUri` property of `CatalogItem` is never set. Looking at the list of `TODO` items we created using Visual Studio's **Task List**, the only one that remains is in `CatalogController`, with a note to "Reference pic from wwwroot." The code in question is:
 
 ```csharp
 private void AddUriPlaceHolder(CatalogItem item)
@@ -770,7 +770,7 @@ private void AddUriPlaceHolder(CatalogItem item)
 }
 ```
 
-The simplest fix for this is to reference the public image files in the site's public `wwwroot/Pics` directory. This can be accomplished by replacing the method with this:
+The simplest fix is to reference the public image files in the site's public `wwwroot/Pics` directory. This task can be accomplished by replacing the method with the following code:
 
 ```csharp
 private void AddUriPlaceHolder(CatalogItem item)
@@ -781,7 +781,7 @@ private void AddUriPlaceHolder(CatalogItem item)
 
 With this change, running the app reveals the images work as before.
 
-## Additional MVC Customizations
+## Additional MVC customizations
 
 The eShopLegacyMVC app is fairly simple, so there isn't much to configure in terms of default MVC behavior. However, if you do need to configure additional MVC components, such as CORS, filters, route constraints, etc., you generally provide this information in `Startup.ConfigureServices`, where `UseMvc` is called. For example, the following code listing configures [CORS](https://docs.microsoft.com/aspnet/core/security/cors?view=aspnetcore-2.2) and sets up a global action filter:
 
@@ -813,7 +813,7 @@ Other advanced scenarios, like adding [custom model binders](https://docs.micros
 
 ## Other dependencies
 
-Dependencies that use .NET Framework features that had a dependency on the legacy configuration model, such as the WCF client type and tracing code, must be modified when ported. Rather than having these types pull in their configuration information directly, they should be configured in code. For example, a connection to a WCF service that was configured in `web.config` in an ASP.NET app to use `basicHttpBinding` could instead be configured programmatically with code like the following:
+Dependencies that use .NET Framework features that had a dependency on the legacy configuration model, such as the WCF client type and tracing code, must be modified when ported. Rather than having these types pull in their configuration information directly, they should be configured in code. For example, a connection to a WCF service that was configured in an ASP.NET app's `web.config` to use `basicHttpBinding` could instead be configured programmatically with the following code:
 
 ```csharp
 BasicHttpBinding binding = new BasicHttpBinding();

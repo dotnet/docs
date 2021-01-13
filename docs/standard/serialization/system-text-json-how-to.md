@@ -27,7 +27,7 @@ The code examples refer to the following class and variants of it:
 > [!NOTE]
 > Parts of System.Text.Json use [ref structs](../../csharp/language-reference/builtin-types/struct.md#ref-struct), which are not supported by Visual Basic. If you try to use System.Text.Json ref struct APIs with Visual Basic you get BC40000 compiler errors. The error message indicates that the problem is an obsolete API, but the actual issue is lack of ref struct support in the compiler. The following parts of System.Text.Json aren't usable from Visual Basic:
 >
-> * The <xref:System.Text.Json.Utf8JsonReader> class isn't usable from Visual Basic.
+> * The <xref:System.Text.Json.Utf8JsonReader> class.
 > * Overloads of other APIs that include a <xref:System.Memory%601.Span> type. Most methods include overloads that use `String` instead of `Span`.
 >
 > These restrictions are in place because ref structs cannot be used safely without language support, even when just "passing data through." Subverting this error will result in Visual Basic code that can corrupt memory and should not be done.

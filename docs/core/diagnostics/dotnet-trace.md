@@ -89,9 +89,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--clrevents <clrevents>`**
 
-  A `+`-separated list of CLR runtime provider keywords to enable. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events to `dotnet-trace collect --clrevents gc+gchandle`. The table below shows the list of available keywords:
+  A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect --clrevents gc+gchandle --clreventlevel informational`. The table below shows the list of available keywords:
 
-  | Keyword Name | Corresponding Value |
+  | Keyword String Alias | Keyword Hex Value |
   | ------------ | ------------------- |
   | `gc` | `0x1` |
   | `gchandle` | `0x2` |

@@ -18,8 +18,8 @@ namespace PreserveReferencesMultipleCalls
     class MyReferenceResolver : ReferenceResolver
     {
         private uint _referenceCount;
-        private readonly Dictionary<string, object> _referenceIdToObjectMap = new Dictionary<string, object>();
-        private readonly Dictionary<object, string> _objectToReferenceIdMap = new Dictionary<object, string>(ReferenceEqualityComparer.Instance);
+        private readonly Dictionary<string, object> _referenceIdToObjectMap = new ();
+        private readonly Dictionary<object, string> _objectToReferenceIdMap = new (ReferenceEqualityComparer.Instance);
 
         public override void AddReference(string referenceId, object value)
         {

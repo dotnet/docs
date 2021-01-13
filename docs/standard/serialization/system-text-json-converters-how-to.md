@@ -377,7 +377,7 @@ To enable a custom converter to handle `null` for a reference or value type, ove
 
 ::: zone pivot="dotnet-5-0"
 
-By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for the following scenario:
+By default, reference data is only cached for each call to <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. To persist references from one `Serialize`/`Deserialize` call to another one, root the <xref:System.Text.Json.Serialization.ReferenceResolver> instance in the call site of `Serialize`/`Deserialize`. The following code shows an example for this scenario:
 
 * You write a custom converter for the `Company` type.
 * You don't want to manually serialize the `Supervisor` property, which is an `Employee`. You want to delegate that to the serializer and you also want to preserve the references that you have already saved.

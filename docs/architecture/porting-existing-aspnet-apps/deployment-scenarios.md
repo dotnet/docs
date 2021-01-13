@@ -42,7 +42,7 @@ Figure 5-1 shows how the ASP.NET Core 2.1 *api* app appears in IIS Manager as a 
 
 **Figure 5-1**. .NET Framework Site with .NET Core app in IIS.
 
-The *DotNetMvcApp* site is hosted as an MVC 5 app running on .NET Framework 4.7.2. It has its own IIS app pool configured in integrated mode and running .NET CLR version 4.0.30319. The *api* app is an ASP.NET Core app running on .NET Framework 4.6.1 (`net461`). It was added to the *DotNetMvcApp* as a new IIS app and configured to use its own Application Pool. Its Application Pool is also running in integrated mode but is configured with a .NET CLR version of **No Managed Code** since it will be executed using the [ASP.NET Core Module](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.1). The version of the ASP.NET Core app is just an example. It could also be configured to run on .NET Core 3.1 or .NET 5.0. Though at that point, it would no longer be able to target .NET Framework libraries (see [Choose the Right .NET Core Version](choose-net-core-version.md))
+The *DotNetMvcApp* site is hosted as an MVC 5 app running on .NET Framework 4.7.2. It has its own IIS app pool configured in integrated mode and running .NET CLR version 4.0.30319. The *api* app is an ASP.NET Core app running on .NET Framework 4.6.1 (`net461`). It was added to the *DotNetMvcApp* as a new IIS app and configured to use its own Application Pool. Its Application Pool is also running in integrated mode but is configured with a .NET CLR version of **No Managed Code** since it will be executed using the [ASP.NET Core Module](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.1&preserve-view=true). The version of the ASP.NET Core app is just an example. It could also be configured to run on .NET Core 3.1 or .NET 5.0. Though at that point, it would no longer be able to target .NET Framework libraries (see [Choose the Right .NET Core Version](choose-net-core-version.md))
 
 Configured in this manner, the only change that must be made in order for the ASP.NET Core app's APIs to be routed properly is to change its default route template from `[Route("[api/controller]")]` to `[Route("[controller]")]`.
 
@@ -65,7 +65,7 @@ A common approach to porting large apps from .NET Framework to ASP.NET Core is t
 - [Host ASP.NET Core on Windows with IIS](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
 - [URL Rewrite module and Application Request Routing](https://docs.microsoft.com/iis/extensions/url-rewrite-module/reverse-proxy-with-url-rewrite-v2-and-application-request-routing)
 - [URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite)
-- [ASP.NET Core Module](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.1)
+- [ASP.NET Core Module](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-2.1&preserve-view=true)
 - [Share authentication cookies among ASP.NET apps](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
 
 >[!div class="step-by-step"]

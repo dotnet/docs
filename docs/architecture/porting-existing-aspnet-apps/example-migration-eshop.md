@@ -387,7 +387,7 @@ public static void RegisterRoutes(RouteCollection routes)
 
 Taking this code line-by-line, the first line sets up support for attribute routes. This is built into ASP.NET Core, so it's unnecessary to configure it separately. Likewise, *{resource}.axd* files aren't used with ASP.NET Core, so there's no need to ignore such routes. The `MapRoute` method configures the default for MVC, which uses the typical `{controller}/{action}/{id}` route template. It also specifies the defaults for this template, such that the `CatalogController` is the default controller used and the `Index` method is the default action. Larger apps will frequently include more calls to `MapRoute` to set up additional routes.
 
-ASP.NET Core MVC supports [conventional routing and attribute routing](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.2). Conventional routing is analogous to how the route table is configured in the `RegisterRoutes` method listed previously. To set up conventional routing with a default route like the one used in the *eShop* app, add the following code to the bottom of the `Configure` method in *Startup.cs*:
+ASP.NET Core MVC supports [conventional routing and attribute routing](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.2&preserve-view=true). Conventional routing is analogous to how the route table is configured in the `RegisterRoutes` method listed previously. To set up conventional routing with a default route like the one used in the *eShop* app, add the following code to the bottom of the `Configure` method in *Startup.cs*:
 
 ```csharp
 app.UseMvc(routes =>
@@ -490,7 +490,7 @@ For now, the setting for `useMockData` is set to `true`. This setting will be re
 
 #### Migrate app settings
 
-ASP.NET Core uses a new [configuration system](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2), which by default leverages an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. The `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
+ASP.NET Core uses a new [configuration system](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2&preserve-view=true), which by default leverages an *appsettings.json* file. By using `CreateDefaultBuilder` in *Program.cs*, the default configuration is already set up in the app. To access configuration, classes just need to request it in their constructor. The `Startup` class is no exception. To start accessing configuration in `Startup` and the rest of the app, request an instance of `IConfiguration` from its constructor:
 
 ```csharp
 public Startup(IConfiguration configuration)
@@ -506,7 +506,7 @@ The original app referenced its settings using `ConfigurationManager.AppSettings
 - `UseMockData`
 - `UseCustomizationData`
 
-If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [Options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.2). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
+If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [Options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.2&preserve-view=true). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
 
 First, modify the ported app's `appsettings.json` file and add the two settings in the root:
 
@@ -791,7 +791,7 @@ With this change, running the app reveals the images work as before.
 
 ## Additional MVC customizations
 
-The *eShopLegacyMVC* app is fairly simple, so there isn't much to configure in terms of default MVC behavior. However, if you do need to configure additional MVC components, such as CORS, filters, and route constraints, you generally provide this information in `Startup.ConfigureServices`, where `UseMvc` is called. For example, the following code listing configures [CORS](https://docs.microsoft.com/aspnet/core/security/cors?view=aspnetcore-2.2) and sets up a global action filter:
+The *eShopLegacyMVC* app is fairly simple, so there isn't much to configure in terms of default MVC behavior. However, if you do need to configure additional MVC components, such as CORS, filters, and route constraints, you generally provide this information in `Startup.ConfigureServices`, where `UseMvc` is called. For example, the following code listing configures [CORS](https://docs.microsoft.com/aspnet/core/security/cors?view=aspnetcore-2.2&preserve-view=true) and sets up a global action filter:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -817,7 +817,7 @@ public void ConfigureServices(IServiceCollection services)
 
 **Note:** To finish configuring CORS, you must also call `app.UseCors()` in `Configure`.
 
-Other advanced scenarios, like adding [custom model binders](https://docs.microsoft.com/aspnet/core/mvc/advanced/custom-model-binding?view=aspnetcore-2.2), formatters, and more are covered in the detailed ASP.NET Core docs. Generally these can be applied on an individual controller or action basis, or globally using the same options approach shown in the previous code listing.
+Other advanced scenarios, like adding [custom model binders](https://docs.microsoft.com/aspnet/core/mvc/advanced/custom-model-binding?view=aspnetcore-2.2&preserve-view=true), formatters, and more are covered in the detailed ASP.NET Core docs. Generally these can be applied on an individual controller or action basis, or globally using the same options approach shown in the previous code listing.
 
 ## Other dependencies
 

@@ -46,7 +46,7 @@ The code shown in Figure 2-1 creates a *host* for the app, builds it, and runs i
 
 The `Startup` class exposes two methods to the host: `ConfigureServices` and `Configure`. The `ConfigureServices` method is used to define the services the app will use and their respective lifetimes. The `Configure` method is used to define how each request to the app will be handled by setting up a request pipeline composed of middleware.
 
-In addition to code related to configuring the app's services or request pipeline, apps may have other code that must run when the app begins. Such code is typically placed in *Program.cs* or registered as an `IHostedService`, which will be started by the [generic host](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-3.1) when the app starts.
+In addition to code related to configuring the app's services or request pipeline, apps may have other code that must run when the app begins. Such code is typically placed in *Program.cs* or registered as an `IHostedService`, which will be started by the [generic host](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-3.1&preserve-view=true) when the app starts.
 
 The `IHostedService` interface just exposes two methods, `StartAsync` and `StopAsync`. You register the interface in `ConfigureServices` and the host does the rest, calling the `StartAsync` method before the app starts up.
 
@@ -60,8 +60,8 @@ Teams looking to migrate their apps from ASP.NET MVC to ASP.NET Core need to ide
 - [ASP.NET Application Life Cycle Overview for IIS 5 and 6](https://docs.microsoft.com/previous-versions/aspnet/ms178473(v=vs.100))
 - [Getting Started with OWIN and Katana](https://docs.microsoft.com/aspnet/aspnet/overview/owin-and-katana/getting-started-with-owin-and-katana)
 - [WebActivator](https://github.com/davidebbo/WebActivator)
-- [App Startup in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup?view=aspnetcore-3.1)
-- [.NET Generic Host in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-3.1)
+- [App Startup in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup?view=aspnetcore-3.1&preserve-view=true)
+- [.NET Generic Host in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-3.1&preserve-view=true)
 - [IHostedService](https://docs.microsoft.com/dotnet/architecture/microservices/multi-container-microservice-net-applications/background-tasks-with-ihostedservice)
 
 >[!div class="step-by-step"]

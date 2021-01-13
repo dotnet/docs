@@ -106,7 +106,7 @@ namespace PreserveReferencesMultipleCalls
 
             // Reset after serializing to avoid out of bounds memory growth in the resolver.
             myReferenceHandler.Reset();
-            // <CallSerializer>
+            // </CallSerializer>
         }
 
         static void DoSomething(string json)

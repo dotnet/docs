@@ -141,7 +141,7 @@ namespace CustomConverterPreserveReferences
 
             // Reset after serializing to avoid out of bounds memory growth in the resolver.
             myReferenceHandler.Reset();
-            // <CallSerializer>
+            // </CallSerializer>
 
             Console.WriteLine(str);
         }

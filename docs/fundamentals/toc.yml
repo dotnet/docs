@@ -396,8 +396,6 @@ items:
       - name: Overview
         displayName: dumps
         href: ../core/diagnostics/dumps.md
-      - name: Debug a StackOverflow
-        href: ../core/diagnostics/debug-stackoverflow.md
       - name: Linux dumps
         href: ../core/diagnostics/debug-linux-dumps.md
       - name: SOS debugger extension
@@ -466,6 +464,8 @@ items:
         href: ../core/diagnostics/debug-highcpu.md
       - name: Debug deadlock
         href: ../core/diagnostics/debug-deadlock.md
+      - name: Debug a StackOverflow
+        href: ../core/diagnostics/debug-stackoverflow.md
   - name: Code analysis
     items:
     - name: Overview

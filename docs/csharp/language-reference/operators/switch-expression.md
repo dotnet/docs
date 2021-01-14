@@ -1,7 +1,7 @@
 ---
 title: "switch expression - C# reference"
 description: Learn how to use the C# switch expression for pattern matching and other data introspection
-ms.date: 03/19/2020
+ms.date: 01/14/2021
 ---
 # switch expression (C# reference)
 
@@ -42,10 +42,13 @@ Finally, you can add the `_` pattern and the `null` pattern to catch arguments t
 
 The preceding example adds a `null` pattern, and changes the `IEnumerable<T>` type pattern to a `_` pattern. The `null` pattern provides a null check as a switch expression arm. The expression for that arm throws an <xref:System.ArgumentNullException>. The `_` pattern matches all inputs that haven't been matched by previous arms. It must come after the `null` check, or it would match `null` inputs.
 
-You can read more in the C# language spec proposal for [recursive patterns](~/_csharplang/proposals/csharp-8.0/patterns.md#switch-expression).
+## Non-exhaustive switch expressions
+
+If none of a switch expression's patterns catches an argument, the runtime throws an exception. In .NET Core 3.0 and later versions, the exception is a <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType>. In .NET Framework, the exception is an <xref:System.InvalidOperationException>.
 
 ## See also
 
+- [C# language spec proposal for recursive patterns](~/_csharplang/proposals/csharp-8.0/patterns.md#switch-expression)
 - [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Pattern matching](../../pattern-matching.md)

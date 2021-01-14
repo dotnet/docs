@@ -1,7 +1,7 @@
 ---
 title: Implementing an event bus with RabbitMQ for the development or test environment
 description: .NET Microservices Architecture for Containerized .NET Applications | Use RabbitMQ to implement an event bus messaging for integration events for the development or test environments.
-ms.date: 10/02/2018
+ms.date: 01/13/2021
 ---
 # Implementing an event bus with RabbitMQ for the development or test environment
 
@@ -15,7 +15,7 @@ The event bus implementation with RabbitMQ lets microservices subscribe to event
 
 **Figure 6-21.** RabbitMQ implementation of an event bus
 
-RabbitMQ functions as an intermediary between message publisher and subscribers, to handle distribution. In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This is based on Dependency Injection so that you can swap from this dev/test version to a production version.
+RabbitMQ functions as an intermediary between message publisher and subscribers, to handle distribution. In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This implementation is based on Dependency Injection so that you can swap from this dev/test version to a production version.
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable
@@ -57,7 +57,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
 }
 ```
 
-The [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of the Publish method in the eShopOnContainers application is improved by using a [Polly](https://github.com/App-vNext/Polly) retry policy, which retries the task a certain number of times in case the RabbitMQ container is not ready. This can occur when docker-compose is starting the containers; for example, the RabbitMQ container might start more slowly than the other containers.
+The [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of the Publish method in the eShopOnContainers application is improved by using a [Polly](https://github.com/App-vNext/Polly) retry policy, which retries the task some times in case the RabbitMQ container is not ready. This scenario can occur when docker-compose is starting the containers; for example, the RabbitMQ container might start more slowly than the other containers.
 
 As mentioned earlier, there are many possible configurations in RabbitMQ, so this code should be used only for dev/test environments.
 

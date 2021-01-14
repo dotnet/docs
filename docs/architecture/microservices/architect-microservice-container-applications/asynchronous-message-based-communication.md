@@ -1,7 +1,7 @@
 ---
 title: Asynchronous message-based communication
 description: .NET Microservices Architecture for Containerized .NET Applications | Asynchronous message-based communications is an essential concept in the microservices architecture, because it's the best way to keep microservices independent from one another while also being synchronized eventually.
-ms.date: 09/20/2018
+ms.date: 01/13/2021
 ---
 
 # Asynchronous message-based communication
@@ -40,9 +40,9 @@ When you use a publish/subscribe communication, you might be using an event bus 
 
 ## Asynchronous event-driven communication
 
-When using asynchronous event-driven communication, a microservice publishes an integration event when something happens within its domain and another microservice needs to be aware of it, like a price change in a product catalog microservice. Additional microservices subscribe to the events so they can receive them asynchronously. When that happens, the receivers might update their own domain entities, which can cause more integration events to be published. This publish/subscribe system is usually performed by using an implementation of an event bus. The event bus can be designed as an abstraction or interface, with the API that's needed to subscribe or unsubscribe to events and to publish events. The event bus can also have one or more implementations based on any inter-process and messaging broker, like a messaging queue or service bus that supports asynchronous communication and a publish/subscribe model.
+When using asynchronous event-driven communication, a microservice publishes an integration event when something happens within its domain and another microservice needs to be aware of it, like a price change in a product catalog microservice. Additional microservices subscribe to the events so they can receive them asynchronously. When that happens, the receivers might update their own domain entities, which can cause more integration events to be published. This publish/subscribe system is performed by using an implementation of an event bus. The event bus can be designed as an abstraction or interface, with the API that's needed to subscribe or unsubscribe to events and to publish events. The event bus can also have one or more implementations based on any inter-process and messaging broker, like a messaging queue or service bus that supports asynchronous communication and a publish/subscribe model.
 
-If a system uses eventual consistency driven by integration events, it's recommended that this approach is made completely clear to the end user. The system shouldn't use an approach that mimics integration events, like SignalR or polling systems from the client. The end user and the business owner have to explicitly embrace eventual consistency in the system and realize that in many cases the business doesn't have any problem with this approach, as long as it's explicit. This is important because users might expect to see some results immediately and this might not happen with eventual consistency.
+If a system uses eventual consistency driven by integration events, it's recommended that this approach is made clear to the end user. The system shouldn't use an approach that mimics integration events, like SignalR or polling systems from the client. The end user and the business owner have to explicitly embrace eventual consistency in the system and realize that in many cases the business doesn't have any problem with this approach, as long as it's explicit. This approach is important because users might expect to see some results immediately and this aspect might not happen with eventual consistency.
 
 As noted earlier in the [Challenges and solutions for distributed data management](distributed-data-management.md) section, you can use integration events to implement business tasks that span multiple microservices. Thus, you'll have eventual consistency between those services. An eventually consistent transaction is made up of a collection of distributed actions. At each action, the related microservice updates a domain entity and publishes another integration event that raises the next action within the same end-to-end business task.
 
@@ -64,11 +64,11 @@ However, for mission-critical and production systems that need hyper-scalability
 
 ## Resiliently publishing to the event bus
 
-A challenge when implementing an event-driven architecture across multiple microservices is how to atomically update state in the original microservice while resiliently publishing its related integration event into the event bus, somehow based on transactions. The following are a few ways to accomplish this, although there could be additional approaches as well.
+A challenge when implementing an event-driven architecture across multiple microservices is how to atomically update state in the original microservice while resiliently publishing its related integration event into the event bus, somehow based on transactions. The following are a few ways to accomplish this functionality, although there could be additional approaches as well.
 
 - Using a transactional (DTC-based) queue like MSMQ. (However, this is a legacy approach.)
 
-- Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
+- Using transaction log mining.
 
 - Using full [Event Sourcing](/azure/architecture/patterns/event-sourcing) pattern.
 

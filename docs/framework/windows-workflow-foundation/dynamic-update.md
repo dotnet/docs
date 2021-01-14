@@ -54,9 +54,6 @@ ActivityBuilder ab = XamlServices.Load(
 DynamicUpdateServices.PrepareForUpdate(ab);
 ```
 
-> [!NOTE]
-> To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).
-
 ### <a name="Update"></a> Update the workflow definition to reflect the desired changes
 
 Once the workflow definition has been prepared for updating, the desired changes can be made. You can add or remove activities, add, move or delete public variables, add or remove arguments, and make changes to the signature of activity delegates. You cannot remove a running activity or change the signature of a running delegate. These changes may be made using code, or in a re-hosted workflow designer. In the following example, a custom `VerifyAppraisal` activity is added to the Sequence that makes up the body of the `MortgageWorkflow` from the previous example.
@@ -191,6 +188,3 @@ wfApp.Load(InstanceId);
 // Resume the workflow.
 // wfApp.ResumeBookmark(...);
 ```
-
-> [!NOTE]
-> To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).

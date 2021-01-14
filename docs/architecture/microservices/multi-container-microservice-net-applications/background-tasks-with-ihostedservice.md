@@ -1,13 +1,13 @@
 ---
 title: Implement background tasks in microservices with IHostedService and the BackgroundService class
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the new options to use IHostedService and BackgroundService to implement background tasks in microservices .NET Core.
-ms.date: 08/14/2020
+ms.date: 01/13/2021
 ---
 # Implement background tasks in microservices with IHostedService and the BackgroundService class
 
 Background tasks and scheduled jobs are something you might need to use in any application, whether or not it follows the microservices architecture pattern. The difference when using a microservices architecture is that you can implement the background task in a separate process/container for hosting so you can scale it down/up based on your need.
 
-From a generic point of view, in .NET Core we called these type of tasks *Hosted Services*, because they are services/logic that you host within your host/application/microservice. Note that in this case, the hosted service simply means a class with the background task logic.
+From a generic point of view, in .NET we called these type of tasks *Hosted Services*, because they are services/logic that you host within your host/application/microservice. Note that in this case, the hosted service simply means a class with the background task logic.
 
 Since .NET Core 2.0, the framework provides a new interface named <xref:Microsoft.Extensions.Hosting.IHostedService> helping you to easily implement hosted services. The basic idea is that you can register multiple background tasks (hosted services) that run in the background while your web host or host is running, as shown in the image 6-26.
 
@@ -62,7 +62,7 @@ Without using `IHostedService`, you could always start a background thread to ru
 
 ## The IHostedService interface
 
-When you register an `IHostedService`, .NET Core will call the `StartAsync()` and `StopAsync()` methods of your `IHostedService` type during application start and stop respectively. For more details, refer [IHostedService interface](/aspnet/core/fundamentals/host/hosted-services?tabs=visual-studio&view=aspnetcore-3.1#ihostedservice-interface)
+When you register an `IHostedService`, .NET will call the `StartAsync()` and `StopAsync()` methods of your `IHostedService` type during application start and stop respectively. For more details, refer [IHostedService interface](/aspnet/core/fundamentals/host/hosted-services?tabs=visual-studio&view=aspnetcore-3.1#ihostedservice-interface)
 
 As you can imagine, you can create multiple implementations of IHostedService and register them at the `ConfigureService()` method into the DI container, as shown previously. All those hosted services will be started and stopped along with the application/microservice.
 
@@ -70,13 +70,13 @@ As a developer, you are responsible for handling the stopping action of your ser
 
 ## Implementing IHostedService with a custom hosted service class deriving from the BackgroundService base class
 
-You could go ahead and create your custom hosted service class from scratch and implement the `IHostedService`, as you need to do when using .NET Core 2.0.
+You could go ahead and create your custom hosted service class from scratch and implement the `IHostedService`, as you need to do when using .NET Core 2.0 and later.
 
 However, since most background tasks will have similar needs in regard to the cancellation tokens management and other typical operations, there is a convenient abstract base class you can derive from, named `BackgroundService` (available since .NET Core 2.1).
 
 That class provides the main work needed to set up the background task.
 
-The next code is the abstract BackgroundService base class as implemented in .NET Core.
+The next code is the abstract BackgroundService base class as implemented in .NET.
 
 ```csharp
 // Copyright (c) .NET Foundation. Licensed under the Apache License, Version 2.0.
@@ -204,7 +204,7 @@ Class diagram: IWebHost and IHost can host many services, which inherit from Bac
 
 ### Deployment considerations and takeaways
 
-It is important to note that the way you deploy your ASP.NET Core `WebHost` or .NET Core `Host` might impact the final solution. For instance, if you deploy your `WebHost` on IIS or a regular Azure App Service, your host can be shut down because of app pool recycles. But if you are deploying your host as a container into an orchestrator like Kubernetes, you can control the assured number of live instances of your host. In addition, you could consider other approaches in the cloud especially made for these scenarios, like Azure Functions. Finally, if you need the service to be running all the time and are deploying on a Windows Server you could use a Windows Service.
+It is important to note that the way you deploy your ASP.NET Core `WebHost` or .NET `Host` might impact the final solution. For instance, if you deploy your `WebHost` on IIS or a regular Azure App Service, your host can be shut down because of app pool recycles. But if you are deploying your host as a container into an orchestrator like Kubernetes, you can control the assured number of live instances of your host. In addition, you could consider other approaches in the cloud especially made for these scenarios, like Azure Functions. Finally, if you need the service to be running all the time and are deploying on a Windows Server you could use a Windows Service.
 
 But even for a `WebHost` deployed into an app pool, there are scenarios like repopulating or flushing application's in-memory cache that would be still applicable.
 

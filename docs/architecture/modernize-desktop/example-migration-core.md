@@ -60,7 +60,7 @@ An interesting aspect of this tool is that it only surfaces the differences from
 
 In most of the cases, you'll want to update your existing project to the new .NET Core format. However, you can also create a new project while maintaining the old one. The main drawback from updating the old project is that you lose designer support, which may be important for you. If you want to keep using the designer, you must create a new .NET Core project in parallel with the old one and share assets. If you need to modify UI elements in the designer, you can switch to the old project to do that. And since assets are linked, they'll be updated in the .NET Core project as well.
 
-The [SDK-style project](../../core/project-sdk/msbuild-props.md) for .NET Core is a lot simpler than .NET Framework's project format. And apart from the previously mentioned `PackageReference` entries, you won't need to do much more. The new project format includes certain file extensions [by default](../../core/tools/csproj.md#default-compilation-includes-in-net-core-projects), such as `.cs` and `.xaml` files, without the need to explicitly include them in the project file.
+The [SDK-style project](../../core/project-sdk/msbuild-props.md) for .NET Core is a lot simpler than .NET Framework's project format. Apart from the previously mentioned `PackageReference` entries, you won't need to do much more. The new project format [includes files with certain extensions by default](../../core/project-sdk/overview.md#default-includes-and-excludes), such as `.cs` and `.xaml` files, without the need to explicitly include them in the project file.
 
 #### Assembly.info considerations
 

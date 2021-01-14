@@ -47,7 +47,7 @@ We recommend you use the following process when porting your project to .NET Cor
 
 1. Convert your project file to the new SDK-style files structure. You can create new projects for .NET Core and copy over source files, or attempt to convert your existing project file with a tool.
 
-   .NET Core uses a simplified (and different) [project file format](../tools/csproj.md) than .NET Framework. You'll need to convert your project files into this format to continue. This project style allows you to also target .NET Framework, which at this point you'll still want to target.
+   .NET Core uses a simplified (and different) [project file format](../project-sdk/overview.md) than .NET Framework. You'll need to convert your project files into this format to continue. This project style allows you to also target .NET Framework, which at this point you'll still want to target.
 
    You can attempt to port smaller solutions or individual projects in one operation to the .NET Core project file format with the [dotnet try-convert](https://github.com/dotnet/try-convert) tool. `dotnet try-convert` is not guaranteed to work for all your projects, and it may cause subtle changes in behavior that you depended on. Use it as a _starting point_ that automates the basic things that can be automated. It isn't a guaranteed solution to migrating a project, as there are many differences in the targets used by the SDK style projects compared to the old-style project files.
 

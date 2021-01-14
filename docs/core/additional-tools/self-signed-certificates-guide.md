@@ -205,7 +205,7 @@ dotnet dev-certs https --clean
 
 ### With PowerShell
 
-You can use PowerShell to generate self-signed certificates. The [PKI Client](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps&preserver-view=true) can be used to generate a self-signed certificate.
+You can use PowerShell to generate self-signed certificates. The [PKI Client](/powershell/module/pkiclient/new-selfsignedcertificate?preserve-view=true&view=win10-ps) can be used to generate a self-signed certificate.
 
 ```powershell
 $cert = New-SelfSignedCertificate -DnsName @("contoso.com", "www.contoso.com") -CertStoreLocation "cert:\LocalMachine\My"

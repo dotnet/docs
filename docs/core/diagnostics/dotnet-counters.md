@@ -29,6 +29,9 @@ There are two ways to download and install `dotnet-counters`:
   | macOS   | [x64](https://aka.ms/dotnet-counters/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-counters/linux-x64) \| [arm](https://aka.ms/dotnet-counters/linux-arm) \| [arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64) |
 
+> [!NOTE]
+> To use `dotnet-counters` on an x86 app, you need a corresponding x86 version of the tool.
+
 ## Synopsis
 
 ```console
@@ -107,6 +110,12 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
   > [!NOTE]
   > Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
+
+> [!NOTE]
+> On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
+
+> [!NOTE]
+> To collect metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
 
 ### Examples
 
@@ -216,6 +225,12 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > [!NOTE]
   > Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
 
+> [!NOTE]
+> On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable.
+
+> [!NOTE]
+> To monitor metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root.
+
 ### Examples
 
 - Monitor all counters from `System.Runtime` at a refresh interval of 3 seconds:
@@ -279,7 +294,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > dotnet-counters list
 
   Showing well-known counters for .NET (Core) version 3.1 only. Specific processes may support additional counters.
-  System.Runtime              
+  System.Runtime
       cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
       working-set                        Amount of working set used by the process (MB)
       gc-heap-size                       Total heap size reported by the GC (MB)
@@ -313,7 +328,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > dotnet-counters list --runtime-version 5.0
 
   Showing well-known counters for .NET (Core) version 5.0 only. Specific processes may support additional counters.
-  System.Runtime                     
+  System.Runtime
       cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
       working-set                        Amount of working set used by the process (MB)
       gc-heap-size                       Total heap size reported by the GC (MB)
@@ -338,7 +353,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       il-bytes-jitted                    Total IL bytes jitted
       methods-jitted-count               Number of methods jitted
 
-  Microsoft.AspNetCore.Hosting       
+  Microsoft.AspNetCore.Hosting
       requests-per-second   Number of requests between update intervals
       total-requests        Total number of requests
       current-requests      Current number of requests
@@ -355,7 +370,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       connection-queue-length     Length of Kestrel Connection Queue
       request-queue-length        Length total HTTP request queue
 
-  System.Net.Http                    
+  System.Net.Http
       requests-started        Total Requests Started
       requests-started-rate   Number of Requests Started between update intervals
       requests-aborted        Total Requests Aborted

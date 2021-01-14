@@ -66,8 +66,8 @@ For more information, see the following resources:
 - **`PROJECT|SOLUTION`**
 
   The project or solution to publish.
-  
-  * `PROJECT` is the path and filename of a [C#](csproj.md), F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
+
+  * `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
   * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory. Available since .NET Core 3.0 SDK.
 
@@ -126,16 +126,16 @@ For more information, see the following resources:
   ```
 
   - .NET Core 3.x SDK and later
-  
-    If a relative path is specified when publishing a project, the output directory generated is relative to the current working directory, not to the project file location.
 
-    If a relative path is specified when publishing a solution, all output for all projects goes into the specified folder relative to the current working directory. To make publish output go to separate folders for each project, specify a relative path by using the msbuild `PublishDir` property instead of the `--output` option. For example, `dotnet publish -p:PublishDir=.\publish` sends publish output for each project to a `publish` folder under the folder that contains the project file.
+    If you specify a relative path when publishing a project, the generated output directory is relative to the current working directory, not to the project file location.
+
+    If you specify a relative path when publishing a solution, all output for all projects goes into the specified folder relative to the current working directory. To make publish output go to separate folders for each project, specify a relative path by using the msbuild `PublishDir` property instead of the `--output` option. For example, `dotnet publish -p:PublishDir=.\publish` sends publish output for each project to a `publish` folder under the folder that contains the project file.
 
   - .NET Core 2.x SDK
-  
-    If a relative path is specified when publishing a project, the output directory generated is relative to the project file location, not to the current working directory.
 
-    If a relative path is specified when publishing a solution, each project's output goes into a separate folder relative to the project file location. If an absolute path is specified when publishing a solution, all publish output for all projects goes into the specified folder.
+    If you specify a relative path when publishing a project, the generated output directory is relative to the project file location, not to the current working directory.
+
+    If you specify a relative path when publishing a solution, each project's output goes into a separate folder relative to the project file location. If you specify an absolute path when publishing a solution, all publish output for all projects goes into the specified folder.
 
 - **`-p:PublishReadyToRun=true`**
 

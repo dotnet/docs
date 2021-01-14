@@ -1,15 +1,15 @@
 ---
 title: Applying simplified CQRS and DDD patterns in a microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the overall relation between CQRS and DDD patterns.
-ms.date: 10/08/2018
+ms.date: 01/13/2021
 ---
 # Apply simplified CQRS and DDD patterns in a microservice
 
-CQRS is an architectural pattern that separates the models for reading and writing data. The related term [Command Query Separation (CQS)](https://martinfowler.com/bliki/CommandQuerySeparation.html) was originally defined by Bertrand Meyer in his book *Object Oriented Software Construction*. The basic idea is that you can divide a system's operations into two sharply separated categories:
+CQRS is an architectural pattern that separates the models for reading and writing data. The related term [Command Query Separation (CQS)](https://martinfowler.com/bliki/CommandQuerySeparation.html) was originally defined by Bertrand Meyer in his book *Object-Oriented Software Construction*. The basic idea is that you can divide a system's operations into two sharply separated categories:
 
-- Queries. These return a result and do not change the state of the system, and they are free of side effects.
+- Queries. These queries return a result and do not change the state of the system, and they are free of side effects.
 
-- Commands. These change the state of a system.
+- Commands. These commands change the state of a system.
 
 CQS is a simple concept: it is about methods within the same object being either queries or commands. Each method either returns state or mutates state, but not both. Even a single repository pattern object can comply with CQS. CQS can be considered a foundational principle for CQRS.
 

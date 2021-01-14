@@ -73,7 +73,7 @@ All naming rule properties are required for a rule to take effect.
 | -- | -- |
 | `symbols` | The title of the symbol group, defining the symbols to which this rule should be applied |
 | `style` | The title of the naming style which should be associated with this rule |
-| `severity` |  Sets the severity with which to enforce the naming rule. Set the associated value to one of the available [severity levels](https://docs.microsoft.com/dotnet/fundamentals/code-analysis/configuration-options#severity-level).<sup>1</sup> |
+| `severity` |  Sets the severity with which to enforce the naming rule. Set the associated value to one of the available [severity levels](../configuration-options.md#severity-level).<sup>1</sup> |
 
 **Notes:**
 

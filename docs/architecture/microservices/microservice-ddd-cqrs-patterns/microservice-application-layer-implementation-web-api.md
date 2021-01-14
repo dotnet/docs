@@ -1,7 +1,7 @@
 ---
 title: Implementing the microservice application layer using the Web API
 description: Understand the Dependency Injection and the Mediator patterns and their implementation details in the Web API application layer.
-ms.date: 08/17/2020
+ms.date: 01/13/2021
 ---
 
 # Implement the microservice application layer using the Web API
@@ -22,7 +22,7 @@ ASP.NET Core includes a simple [built-in IoC container](/aspnet/core/fundamental
 
 Typically, you want to inject dependencies that implement infrastructure objects. A typical dependency to inject is a repository. But you could inject any other infrastructure dependency that you may have. For simpler implementations, you could directly inject your Unit of Work pattern object (the EF DbContext object), because the DBContext is also the implementation of your infrastructure persistence objects.
 
-In the following example, you can see how .NET Core is injecting the required repository objects through the constructor. The class is a command handler, which will get covered in the next section.
+In the following example, you can see how .NET is injecting the required repository objects through the constructor. The class is a command handler, which will get covered in the next section.
 
 ```csharp
 public class CreateOrderCommandHandler
@@ -106,7 +106,7 @@ The most common pattern when registering types in an IoC container is to registe
 
 #### Use the Scrutor library for automatic types registration
 
-When using DI in .NET Core, you might want to be able to scan an assembly and automatically register its types by convention. This feature is not currently available in ASP.NET Core. However, you can use the [Scrutor](https://github.com/khellang/Scrutor) library for that. This approach is convenient when you have dozens of types that need to be registered in your IoC container.
+When using DI in .NET, you might want to be able to scan an assembly and automatically register its types by convention. This feature is not currently available in ASP.NET Core. However, you can use the [Scrutor](https://github.com/khellang/Scrutor) library for that. This approach is convenient when you have dozens of types that need to be registered in your IoC container.
 
 #### Additional resources
 
@@ -498,7 +498,7 @@ In any case, this should be a decision based on your application's or microservi
 
 As a sample implementation, this guide proposes using the in-process pipeline based on the Mediator pattern to drive command ingestion and route commands, in memory, to the right command handlers. The guide also proposes applying [behaviors](https://github.com/jbogard/MediatR/wiki/Behaviors) in order to separate cross-cutting concerns.
 
-For implementation in .NET Core, there are multiple open-source libraries available that implement the Mediator pattern. The library used in this guide is the [MediatR](https://github.com/jbogard/MediatR) open-source library (created by Jimmy Bogard), but you could use another approach. MediatR is a small and simple library that allows you to process in-memory messages like a command, while applying decorators or behaviors.
+For implementation in .NET, there are multiple open-source libraries available that implement the Mediator pattern. The library used in this guide is the [MediatR](https://github.com/jbogard/MediatR) open-source library (created by Jimmy Bogard), but you could use another approach. MediatR is a small and simple library that allows you to process in-memory messages like a command, while applying decorators or behaviors.
 
 Using the Mediator pattern helps you to reduce coupling and to isolate the concerns of the requested work, while automatically connecting to the handler that performs that work—in this case, to command handlers.
 

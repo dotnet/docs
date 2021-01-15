@@ -230,6 +230,12 @@ If the parameters are currified, place the `=` character along with any return t
 
 ```fsharp
 type C() =
+    member _.LongMethodWithLotsOfCurrifiedParamsAndReturnType
+        (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        : ReturnType =
+        // ... the body of the method
     member _.LongMethodWithLotsOfCurrifiedParams
         (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
@@ -237,6 +243,8 @@ type C() =
         =
         // ... the body of the method
 ```
+
+This is a way to avoid too long lines (in case return type might have long name) and have less line-damage when adding parameters.
 
 ### Type annotations
 

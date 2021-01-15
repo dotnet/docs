@@ -226,17 +226,10 @@ type TC
     // ... the body of the class follows
 ```
 
-If the parameters are currified or there's an explicit return type annotation, it is preferable to place the `=` character on a new line:
+If the parameters are currified, place the `=` character along with any return type on a new line:
 
 ```fsharp
 type C() =
-    member _.LongMethodWithLotsOfParameters
-        (
-            aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
-            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
-            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
-        ) : AReturnType =
-        // ... the body of the method
     member _.LongMethodWithLotsOfCurrifiedParams
         (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
         (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
@@ -244,8 +237,6 @@ type C() =
         =
         // ... the body of the method
 ```
-
-This is a way to avoid too long lines (in case return type might have long name) and have less line-damage when adding parameters.
 
 ### Type annotations
 

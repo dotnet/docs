@@ -54,7 +54,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
  }
  ```
 
-Latest version of this script lives at https://github.com/dotnet/toolset/blob/master/scripts/register-completions.ps1.
+Latest version of this script lives at <https://github.com/dotnet/toolset/blob/master/scripts/register-completions.ps1>.
 
 ## bash
 
@@ -79,7 +79,7 @@ _dotnet_bash_complete()
 complete -f -F _dotnet_bash_complete dotnet
 ```
 
-Latest version of this script lives at https://github.com/dotnet/toolset/blob/master/scripts/register-completions.bash.
+Latest version of this script lives at <https://github.com/dotnet/toolset/blob/master/scripts/register-completions.bash>.
 
 ## zsh
 
@@ -106,4 +106,4 @@ _dotnet_zsh_complete()
 compdef _dotnet_zsh_complete dotnet
 ```
 
-Latest version of this script lives at https://github.com/dotnet/toolset/blob/master/scripts/register-completions.zsh.
+Latest version of this script lives at <https://github.com/dotnet/toolset/blob/master/scripts/register-completions.zsh>.

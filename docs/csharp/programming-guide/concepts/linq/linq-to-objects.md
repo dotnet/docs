@@ -30,9 +30,6 @@ The term "LINQ to Objects" refers to the use of LINQ queries with any <xref:Syst
  [LINQ and Reflection (C#)](how-to-query-an-assembly-s-metadata-with-reflection-linq.md)  
  Links to a sample that demonstrates how LINQ uses reflection.  
   
- [LINQ and File Directories (C#)](./linq-and-file-directories.md)  
- Explains how LINQ can be used to interact with file systems. Also includes links to articles that demonstrate these concepts.  
-  
  [How to query an ArrayList with LINQ (C#)](./how-to-query-an-arraylist-with-linq.md)  
  Demonstrates how to query an ArrayList in C#.  
   

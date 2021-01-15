@@ -73,8 +73,3 @@ class QuerySize
 ## Compiling the Code  
 
 Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
-  
-## See also
-
-- [LINQ to Objects (C#)](./linq-to-objects.md)
-- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

@@ -536,6 +536,8 @@ items:
     items:
     - name: Introduction to LINQ Queries
       href: programming-guide/concepts/linq/introduction-to-linq-queries.md
+    - name: Write LINQ queries in C#
+      href: linq/write-linq-queries.md
     - name: LINQ and Generic Types
       href: programming-guide/concepts/linq/linq-and-generic-types.md
     - name: Basic LINQ Query Operations
@@ -548,14 +550,8 @@ items:
       href: programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md
     - name: C# Features That Support LINQ
       href: programming-guide/concepts/linq/features-that-support-linq.md
-    - name: "How to use lambda expressions in a query"
-      href: programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md
-    - name: "Walkthrough: Writing Queries in C# (LINQ)"
-      href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
-  - name: Query expression basics
-    href: linq/query-expression-basics.md
-  - name: Write LINQ queries in C#
-    href: linq/write-linq-queries.md
+    - name: Query expression basics
+      href: linq/query-expression-basics.md
   - name: Standard Query Operators Overview
     items:
     - name: Overview
@@ -626,12 +622,20 @@ items:
       href: linq/handle-null-values-in-query-expressions.md
     - name: Handle exceptions in queries
       href: linq/handle-exceptions-in-query-expressions.md
+    - name: "How to use lambda expressions in a query"
+      href: programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md
+    - name: "Walkthrough: Writing Queries in C# (LINQ)"
+      href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
   - name: LINQ to Objects
     items:
     - name: Overview
       href: programming-guide/concepts/linq/linq-to-objects.md
+    - name: Enabling a data source for LINQ
+      href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
     - name: LINQ and Strings
       href: programming-guide/concepts/linq/linq-and-strings.md
+    - name: LINQ and Reflection
+      href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
     - name: How to articles
       items:
       - name: "How to count occurrences of a word in a string (LINQ)"
@@ -652,24 +656,6 @@ items:
         href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
       - name: "How to populate object collections from multiple sources (LINQ)"
         href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
-      - name: "How to split a file into many files by using groups (LINQ)"
-        href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
-      - name: "How to join content from dissimilar files (LINQ)"
-        href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
-      - name: "How to compute column values in a CSV text file (LINQ)"
-        href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
-      - name: "How to use implicitly typed local variables and arrays in a query expression"
-        href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
-      - name: "How to return subsets of element properties in a query"
-        href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
-    - name: LINQ and Reflection
-      href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
-    - name: "How to query an assembly's metadata with Reflection (LINQ)"
-      href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
-    - name: LINQ and File Directories
-      items:
-      - name: Overview
-        href: programming-guide/concepts/linq/linq-and-file-directories.md
       - name: "How to query for files with a specified attribute or name"
         href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
       - name: "How to group files by extension (LINQ)"
@@ -684,12 +670,22 @@ items:
         href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
       - name: "How to query the contents of files in a folder (LINQ)"
         href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
-    - name: "How to query an ArrayList with LINQ"
-      href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
-    - name: "How to add custom methods for LINQ queries"
-      href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
-  - name: Enabling a data source for LINQ
-    href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
+      - name: "How to split a file into many files by using groups (LINQ)"
+        href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
+      - name: "How to join content from dissimilar files (LINQ)"
+        href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
+      - name: "How to compute column values in a CSV text file (LINQ)"
+        href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
+      - name: "How to use implicitly typed local variables and arrays in a query expression"
+        href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
+      - name: "How to return subsets of element properties in a query"
+        href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
+      - name: "How to query an ArrayList with LINQ"
+        href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
+      - name: "How to add custom methods for LINQ queries"
+        href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
+      - name: "How to query an assembly's metadata with Reflection (LINQ)"
+        href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
 - name: Task asynchronous programming model
   displayName: async, await, asynchronous programming, task, cancellation
   items:
@@ -702,12 +698,10 @@ items:
     href: programming-guide/concepts/async/task-asynchronous-programming-model.md
   - name: Async return types
     href: programming-guide/concepts/async/async-return-types.md
-  - name: Cancel tasks
-    items:
-    - name: Cancel a list of tasks
-      href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
-    - name: Cancel tasks after a period of time
-      href: programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md
+  - name: Cancel a list of tasks
+    href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
+  - name: Cancel tasks after a period of time
+    href: programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md
   - name: Process asynchronous tasks as they complete
     href: programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md
   - name: Asynchronous file access

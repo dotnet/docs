@@ -52,7 +52,9 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
             [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
          }
  }
-```
+ ```
+
+Latest version of this script lives at https://github.com/dotnet/toolset/blob/master/scripts/register-completions.ps1.
 
 ## bash
 
@@ -77,6 +79,8 @@ _dotnet_bash_complete()
 complete -f -F _dotnet_bash_complete dotnet
 ```
 
+Latest version of this script lives at https://github.com/dotnet/toolset/blob/master/scripts/register-completions.bash.
+
 ## zsh
 
 To add tab completion to your **zsh** shell for the .NET CLI, add the following code to your `.zshrc` file:
@@ -84,12 +88,22 @@ To add tab completion to your **zsh** shell for the .NET CLI, add the following 
 ```zsh
 # zsh parameter completion for the dotnet CLI
 
-_dotnet_zsh_complete()
+_dotnet_zsh_complete() 
 {
   local completions=("$(dotnet complete "$words")")
 
-  reply=( "${(ps:\n:)completions}" )
+  # If the completion list is empty, just continue with filename selection
+  if [ -z "$completions" ]
+  then
+    _arguments '*::arguments: _normal'
+    return
+  fi
+
+  # This is not a variable assigment, don't remove spaces!
+  _values = "${(ps:\n:)completions}"
 }
 
-compctl -K _dotnet_zsh_complete dotnet
+compdef _dotnet_zsh_complete dotnet
 ```
+
+Latest version of this script lives at https://github.com/dotnet/toolset/blob/master/scripts/register-completions.zsh.

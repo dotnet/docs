@@ -23,6 +23,8 @@ The following code demonstrates the performance penalty for using new options in
 
 :::code language="csharp" source="snippets/system-text-json-configure-options/csharp/ReuseOptionsInstances.cs":::
 
+:::code language="vb" source="snippets/system-text-json-configure-options//ReuseOptionsInstances.vb":::
+
 The preceding code serializes a small object 100,000 times using the same options instance. Then it serializes the same object the same number of times and creates a new options instance each time. A typical run time difference is 190 compared to 40,140 milliseconds. The difference is even greater if you increase the number of iterations.
 
 The serializer undergoes a warm-up phase during the first serialization of each type in the object graph when a new options instance is passed to it. This warm-up includes creating a cache of metadata that is needed for serialization. The metadata includes delegates to property getters, setters, constructor arguments, specified attributes, and so forth. This metadata cache is stored in the options instance. The same warm-up process and cache applies to deserialization.
@@ -35,6 +37,8 @@ The size of the metadata cache in a `JsonSerializerOptions` instance depends on 
 There is a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerOptions)) that lets you create a new instance with the same options as an existing instance, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs" highlight="29":::
+
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/CopyOptions.vb" :::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
@@ -53,6 +57,8 @@ Here are the options that have different defaults for web apps:
 There's a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)?view=net-5.0&preserve-view=true) that lets you create a new instance with the default options that ASP.NET Core uses for web apps, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs" highlight="24":::
+
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/OptionsDefaults.vb" :::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

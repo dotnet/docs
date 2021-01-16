@@ -22,6 +22,8 @@ In this article, you will learn how to use immutable types, such as Records, wit
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypes.cs" highlight="13":::
 
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/ImmutableTypes.vb" highlight="13":::
+
 Records in C# 9 are also supported, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Records.cs":::
@@ -39,6 +41,8 @@ For types that are immutable because all their property setters are non-public, 
 To enable use of a non-public property accessor, use the [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute) attribute, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/NonPublicAccessors.cs" highlight="12,15":::
+
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/NonPublicAccessors.vb" :::
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"

@@ -1,7 +1,7 @@
 ---
 title: How to ignore properties with System.Text.Json
 description: "Learn how to ignore properties when serializing with System.Text.Json in .NET."
-ms.date: 11/30/2020
+ms.date: 01/15/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -38,6 +38,8 @@ Here's an example type to serialize and JSON output:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithIgnoreAttribute":::
 
+:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithIgnoreAttribute":::
+
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
@@ -56,6 +58,8 @@ You can specify conditional exclusion by setting the [[JsonIgnore]](xref:System.
 The following example illustrates use of the [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) attribute's `Condition` property:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/JsonIgnoreAttributeExample.cs" highlight="10,13,16":::
+
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/JsonIgnoreAttributeExample.vb" :::
 ::: zone-end
 
 ## Ignore all read-only properties
@@ -64,9 +68,13 @@ A property is read-only if it contains a public getter but not a public setter. 
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExcludeReadOnlyProperties.cs" id="Serialize":::
 
+:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeExcludeReadOnlyProperties.vb" id="Serialize":::
+
 Here's an example type to serialize and JSON output:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithROProperty":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithROProperty":::
 
 ```json
 {
@@ -89,12 +97,16 @@ To ignore all null-value properties, set the <xref:System.Text.Json.JsonSerializ
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreNullOnSerialize.cs" highlight="28":::
 
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/IgnoreNullOnSerialize.vb" :::
+
 ::: zone-end
 
 ::: zone pivot="dotnet-core-3-1"
 To ignore all null-value properties when serializing, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property to `true`, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeExcludeNullValueProperties.cs" id="Serialize":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeExcludeNullValueProperties.vb" id="Serialize":::
 
 Here's an example object to serialize and JSON output:
 
@@ -119,6 +131,8 @@ Here's an example object to serialize and JSON output:
 To prevent serialization of default values in value type properties, set the <xref:System.Text.Json.JsonSerializerOptions.DefaultIgnoreCondition> property to <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/IgnoreValueDefaultOnSerialize.cs" highlight="28":::
+
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/IgnoreValueDefaultOnSerialize.vb" highlight="28":::
 ::: zone-end
 
 The <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault> setting also prevents serialization of null-value reference type and nullable value type properties.

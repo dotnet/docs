@@ -23,6 +23,8 @@ By default, deserialization looks for case-sensitive property name matches betwe
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/DeserializeCaseInsensitive.cs" id="Deserialize":::
 
+:::code language="vb" source="snippets/system-text-json-how-to/vb/DeserializeCaseInsensitive.vb" id="Deserialize":::
+
 Here's example JSON with camel case property names. It can be deserialized into the following type that has Pascal case property names.
 
 ```json
@@ -34,6 +36,8 @@ Here's example JSON with camel case property names. It can be deserialized into 
 ```
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
 
 ## See also
 

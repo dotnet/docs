@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 01/12/2021
+ms.date: 01/15/2021
 ms.custom: contperf-fy21q2
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -24,13 +24,16 @@ The code examples refer to the following class and variants of it:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
 
-> [!NOTE]
-> Parts of System.Text.Json use [ref structs](../../csharp/language-reference/builtin-types/struct.md#ref-struct), which are not supported by Visual Basic. If you try to use System.Text.Json ref struct APIs with Visual Basic you get BC40000 compiler errors. The error message indicates that the problem is an obsolete API, but the actual issue is lack of ref struct support in the compiler. The following parts of System.Text.Json aren't usable from Visual Basic:
->
-> * The <xref:System.Text.Json.Utf8JsonReader> class.
-> * Overloads of other APIs that include a <xref:System.Memory%601.Span> type. Most methods include overloads that use `String` instead of `Span`.
->
-> These restrictions are in place because ref structs cannot be used safely without language support, even when just "passing data through." Subverting this error will result in Visual Basic code that can corrupt memory and should not be done.
+:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
+
+## Visual Basic support
+
+Parts of System.Text.Json use [ref structs](../../csharp/language-reference/builtin-types/struct.md#ref-struct), which are not supported by Visual Basic. If you try to use System.Text.Json ref struct APIs with Visual Basic you get BC40000 compiler errors. The error message indicates that the problem is an obsolete API, but the actual issue is lack of ref struct support in the compiler. The following parts of System.Text.Json aren't usable from Visual Basic:
+
+* The <xref:System.Text.Json.Utf8JsonReader> class. Since the <xref:System.Text.Json.Serialization.JsonConverter%601.Read%2A?displayProperty=nameWithType> method takes a `Utf8JsonReader` parameter, this limitation means you can't write use Visual Basic to write custom converters.
+* Overloads of other APIs that include a <xref:System.Memory%601.Span> type. Most methods include overloads that use `String` instead of `Span`.
+
+These restrictions are in place because ref structs cannot be used safely without language support, even when just "passing data through." Subverting this error will result in Visual Basic code that can corrupt memory and should not be done.
 
 ## Namespaces
 
@@ -52,23 +55,33 @@ The following example creates JSON as a string:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="Serialize":::
 
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Serialize":::
+
 The following example uses synchronous code to create a JSON file:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFile.cs" id="Serialize":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFile.vb" id="Serialize":::
 
 The following example uses asynchronous code to create a JSON file:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs" id="Serialize":::
 
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.cs" id="Serialize":::
+
 The preceding examples use type inference for the type being serialized. An overload of `Serialize()` takes a generic type parameter:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="SerializeWithGenericParameter":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
 ### Serialization example
 
 Here's an example class that contains collection-type properties and a user-defined type:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WFWithPOCOs":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WFWithPOCOs":::
 
 > [!TIP]
 > "POCO" stands for [plain old CLR object](https://en.wikipedia.org/wiki/Plain_old_CLR_object). A POCO is a .NET type that doesn't depend on any framework-specific types, for example, through inheritance or attributes.
@@ -113,6 +126,8 @@ The following example shows the same JSON, but formatted (that is, pretty-printe
 To serialize to UTF-8, call the <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes%2A?displayProperty=nameWithType> method:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs" id="Serialize":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToUtf8.vb" id="Serialize":::
 
 A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is also available.
 
@@ -182,13 +197,19 @@ The following example reads JSON from a string and creates an instance of the `W
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="Deserialize":::
 
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="Deserialize":::
+
 To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFile.cs" id="Deserialize":::
 
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFile.vb" id="Deserialize":::
+
 To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs" id="Deserialize":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Deserialize":::
 
 > [!TIP]
 > If you have JSON that you want to deserialize, and you don't have the class to deserialize it into, Visual Studio 2019 can automatically generate the class you need:
@@ -205,7 +226,11 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs" id="Deserialize1":::
 
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToUtf8.vb" id="Deserialize1":::
+
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToUtf8.cs" id="Deserialize2":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToUtf8.vb" id="Deserialize2":::
 
 ## Deserialization behavior
 
@@ -247,9 +272,13 @@ To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOption
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToString.cs" id="SerializePrettyPrint":::
 
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToString.vb" id="SerializePrettyPrint":::
+
 Here's an example type to be serialized and pretty-printed JSON output:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/WeatherForecast.cs" id="WF":::
+
+:::code language="vb" source="snippets/system-text-json-how-to/vb/WeatherForecast.vb" id="WF":::
 
 ```json
 {
@@ -268,6 +297,8 @@ Use the <xref:System.Text.Json.JsonSerializerOptions.IncludeFields?displayProper
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/Fields.cs" highlight="16,18,20,32-35":::
 
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/Fields.vb" :::
+
 To ignore read-only fields, use the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyFields%2A?displayProperty=nameWithType> global setting.
 ::: zone-end
 
@@ -284,6 +315,8 @@ Serializing and deserializing JSON payloads from the network are common operatio
 The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/HttpClientExtensionMethods.cs" highlight="26,33":::
+
+:::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/HttpClientExtensionMethods.vb" :::
 
 There are also extension methods for System.Text.Json on [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
 ::: zone-end

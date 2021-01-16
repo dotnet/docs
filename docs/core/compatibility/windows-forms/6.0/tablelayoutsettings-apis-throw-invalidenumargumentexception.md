@@ -22,7 +22,7 @@ Throwing <xref:System.ComponentModel.InvalidEnumArgumentException> is in line wi
 ## Recommended action
 
 - Update the code to prevent assigning incorrect values.
-- If necessary, handle an <xref:System.InvalidEnumArgumentException> when accessing these APIs.
+- If necessary, handle an <xref:System.ComponentModel.InvalidEnumArgumentException> when accessing these APIs.
 
 ## Affected APIs
 

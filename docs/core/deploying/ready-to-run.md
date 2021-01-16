@@ -1,7 +1,7 @@
 ---
 title: ReadyToRun deployment overview
 description: Learn what ReadyToRun deployments are and why you should consider using it as part of the publishing your app with .NET 5 and .NET Core 3.0 and later.
-author: davidwr
+author: davidwrighton
 ms.author: davidwr
 ms.date: 09/21/2020
 ---

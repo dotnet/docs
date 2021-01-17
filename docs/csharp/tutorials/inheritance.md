@@ -133,12 +133,12 @@ Because of implicit inheritance, you can call any inherited member from a `Simpl
 
 The following table lists the categories of types that you can create in C# and the types from which they implicitly inherit. Each base type makes a different set of members available through inheritance to implicitly derived types.
 
-| Type category | Implicitly inherits from                                                      |
-| ------------- | ----------------------------------------------------------------------------- |
-| class         | <xref:System.Object>                                                          |
-| struct        | <xref:System.ValueType>, <xref:System.Object>                                 |
-| enum          | <xref:System.Enum>, <xref:System.ValueType>, <xref:System.Object>             |
-| delegate      | <xref:System.MulticastDelegate>, <xref:System.Delegate>, <xref:System.Object> |
+| Type category                    | Implicitly inherits from                                                      |
+| -------------------------------- | ----------------------------------------------------------------------------- |
+| class                            | <xref:System.Object>                                                          |
+| struct (excluding `ref` structs) | <xref:System.ValueType>, <xref:System.Object>                                 |
+| enum                             | <xref:System.Enum>, <xref:System.ValueType>, <xref:System.Object>             |
+| delegate                         | <xref:System.MulticastDelegate>, <xref:System.Delegate>, <xref:System.Object> |
 
 ## Inheritance and an "is a" relationship
 

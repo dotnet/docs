@@ -1,12 +1,12 @@
 ---
 title: Introducing eShopOnContainers reference app
 description: Introducing the eShopOnContainers Cloud Native Microservices Reference App for ASP.NET Core and Azure.
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Introducing eShopOnContainers reference app
 
-Microsoft, in partnership with leading community experts, has produced a full-featured cloud-native microservices reference application, eShopOnContainers. This application is built to showcase using .NET Core and Docker, and optionally Azure, Kubernetes, and Visual Studio, to build an online storefront.
+Microsoft, in partnership with leading community experts, has produced a full-featured cloud-native microservices reference application, eShopOnContainers. This application is built to showcase using .NET and Docker, and optionally Azure, Kubernetes, and Visual Studio, to build an online storefront.
 
 ![eShopOnContainers Sample App Screenshot.](./media/eshoponcontainers-sample-app-screenshot.png)
 
@@ -45,7 +45,7 @@ The eShopOnContainers application is accessible from web or mobile clients that 
 
 The application's functionality is broken up into a number of distinct microservices. There are services responsible for authentication and identity, listing items from the product catalog, managing users' shopping baskets, and  placing orders. Each of these separate services has its own persistent storage. There's no single master data store with which all services interact. Instead, coordination and communication between the services is done on an as-needed basis and through the use of a message bus.
 
-Each of the different microservices is designed differently, based on their individual requirements. This means their technology stack may differ, although they're all built using .NET Core and designed for the cloud. Simpler services provide basic Create-Read-Update-Delete (CRUD) access to the underlying data stores, while more advanced services use Domain-Driven Design approaches and patterns to manage business complexity.
+Each of the different microservices is designed differently, based on their individual requirements. This means their technology stack may differ, although they're all built using .NET and designed for the cloud. Simpler services provide basic Create-Read-Update-Delete (CRUD) access to the underlying data stores, while more advanced services use Domain-Driven Design approaches and patterns to manage business complexity.
 
 ![Different kinds of microservices](./media/different-kinds-of-microservices.png)
 

@@ -11,7 +11,7 @@ Namespace SystemTextJsonSamples
             ' </Serialize>
 
             ' <SerializeWithGenericParameter>
-            ' Visual Basic code example not available.
+            jsonString = JsonSerializer.Serialize(Of WeatherForecastWithPOCOs)(weatherForecast)
             ' </SerializeWithGenericParameter>
 
             Console.WriteLine($"JSON output:{jsonString}")

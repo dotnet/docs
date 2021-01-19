@@ -46,6 +46,11 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 ```
 
+```vb
+Imports System.Text.Json
+Imports System.Text.Json.Serialization
+```
+
 > [!IMPORTANT]
 > Attributes from the <xref:System.Runtime.Serialization> namespace aren't supported in `System.Text.Json`.
 

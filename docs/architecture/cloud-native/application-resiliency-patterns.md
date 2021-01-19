@@ -77,7 +77,7 @@ Keep in mind that the intent of the Circuit Breaker pattern is *different* than 
 
 ## Testing for resiliency
 
-Testing for resiliency cannot always be done the same way that you test application functionality (by running unit tests, integration tests and so on). Instead, you must test how the end-to-end workload performs under failure conditions which only occur intermittently. For example: inject failures by crashing processes, expired certificates, make dependent services unavailable etc. Frameworks like [chaos-monkey](https://github.com/Netflix/chaosmonkey) can be used for such chaos testing.
+Testing for resiliency cannot always be done the same way that you test application functionality (by running unit tests, integration tests, and so on). Instead, you must test how the end-to-end workload performs under failure conditions, which only occur intermittently. For example: inject failures by crashing processes, expired certificates, make dependent services unavailable etc. Frameworks like [chaos-monkey](https://github.com/Netflix/chaosmonkey) can be used for such chaos testing.
 
 Application resiliency is a must for handling problematic requested operations. But, it's only half of the story. Next, we cover resiliency features available in the Azure cloud.
 

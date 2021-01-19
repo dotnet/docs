@@ -123,7 +123,7 @@ It enables API Gateway features for the following use cases:
 
 - Microservices implemented using serverless technologies such as [Azure Functions](/azure/azure-functions/functions-overview) and [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
 - Azure backing service resources such as Service Bus queues and topics, Azure storage, and others.
-- Microservices where traffic has occasional large spikes but remains low the majority of the time.
+- Microservices where traffic has occasional large spikes but remains low most the time.
 
 The consumption tier uses the same underlying service API Management components, but employs an entirely different architecture based on dynamically allocated resources. It aligns perfectly with the serverless computing model:
 

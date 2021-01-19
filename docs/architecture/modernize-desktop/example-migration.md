@@ -1,7 +1,7 @@
 ---
 title: Example of migrating to .NET 5
 description: Showing how to migrate a sample applications targeting  .NET Framework to .NET 5.
-ms.date: 12/29/2020
+ms.date: 01/19/2021
 ---
 
 # Example of migrating to .NET

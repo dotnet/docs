@@ -19,12 +19,12 @@ If your app is using custom HTTP modules or HTTP handlers, you'll need a plan to
 
 ASP.NET Core defines a request pipeline in each app's `Configure` method. This request pipeline defines how an incoming request is handled by the app, with each method in the pipeline calling the next method until eventually a method terminates, and the chain of *middleware* terminates and returns back up the stack. Middleware can target all requests, or can be configured to only map to certain requests based on the requested path or other factors. It can be configured wholly in the `Configure` method of an app, or implemented in a separate class.
 
-Behavior in an ASP.NET MVC app that leverages HTTP modules will probably be best suited to [custom middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.1). Custom HTTP handlers can be replaced with custom routes or endpoints that respond to the same path.
+Behavior in an ASP.NET MVC app that leverages HTTP modules will probably be best suited to [custom middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.1&preserve-view=true). Custom HTTP handlers can be replaced with custom routes or endpoints that respond to the same path.
 
 ## References
 
 - [ASP.NET HTTP modules and HTTP handlers](https://docs.microsoft.com/troubleshoot/aspnet/http-modules-handlers)
-- [ASP.NET Core middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.1)
+- [ASP.NET Core middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.1&preserve-view=true)
 
 >[!div class="step-by-step"]
 >[Previous](dependency-injection-differences.md)

@@ -1,6 +1,7 @@
 items:
 - name: C# documentation
   href: index.yml
+# - Get Started
 - name: Get Started
   items:
   - name: Introduction to C# and .NET
@@ -40,10 +41,29 @@ items:
       href: tutorials/intro-to-csharp/branches-and-loops-local.md
     - name: List collections
       href: tutorials/intro-to-csharp/arrays-and-collections.md
+- name: fundamentals
+  items:
+  - name: Type system
+  - name: Program structure
+  - name: Object oriented techniques
+  - name: Functional techniques
+  - name: Error handling
+
+# - Fundamental concepts
+#   - type system
+#   - program structure
+#   - object oriented techniques
+#   - functional techniques (data and pattern matching)
+#   - error handling
+
+
+# Move to fundamentals
     - name: Introduction to classes
       href: tutorials/intro-to-csharp/introduction-to-classes.md
     - name: Object-Oriented C#
       href: tutorials/intro-to-csharp/object-oriented-programming.md
+
+# - What's new
 - name: What's new
   items:
   - name: C# 9.0
@@ -156,6 +176,25 @@ items:
       href: tutorials/working-with-linq.md
     - name: Use attributes
       href: tutorials/attributes.md
+# - creating types (class, struct, record, tuple, anonymous)?
+# - null safety
+# - build algorithms (include events)
+#   - OO style
+#   - Functional style
+# - formatting text / culture
+# - data access / LINQ
+# - console and file i/o (include config)
+#   - network / web access
+# - async programmning
+# - platform interop < under andvanced?
+# - style and best practices
+# - advanced scenarios
+# - Language reference
+# - Specification
+# - Specification proposals
+
+
+
 - name: Program building blocks
   items:
   - name: Namespaces

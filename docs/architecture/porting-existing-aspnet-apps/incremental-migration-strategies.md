@@ -9,7 +9,7 @@ ms.date: 11/13/2020
 
 The biggest challenge with migrating any large app is figuring out how to break the very large process up into smaller pieces. There are several strategies that can be applied for this purpose, including breaking up the app into horizontal layers such as UI, data access, business logic, or breaking up the app into separate, smaller apps. Another strategy that can help in this regard is to upgrade some or all of the app to different framework versions on the way to a recent .NET Core release.
 
-Consider the challenge of migrating a large ASP.NET 4.5 app. One approach would be to migrate directly from .NET 4.5 to .NET Core 3.1. However, this approach would need to account for every breaking change between these two frameworks and versions, which are substantial.
+Consider the challenge of migrating a large ASP.NET 4.5 app. One approach would be to migrate directly from .NET Framework 4.5 to .NET Core 3.1. However, this approach would need to account for every breaking change between these two frameworks and versions, which are substantial.
 
 One recent addition to the .NET ecosystem that helps with interoperability between different .NET frameworks is [.NET Standard](https://dotnet.microsoft.com/platform/dotnet-standard). .NET Standard allows libraries to build against the agreed upon set of common APIs, ensuring they can be used in any .NET app. .NET Standard 2.0 is notable because it covers the vast majority of base class library functionality used by most .NET Framework and .NET Core apps. Unfortunately, the earliest version of .NET with support for .NET Standard 2.0 is .NET Framework 4.6.1.
 

@@ -7,7 +7,7 @@ ms.date: 11/13/2020
 
 # Compare authentication and authorization between ASP.NET MVC and ASP.NET Core
 
-In ASP.NET MVC 5, authentication is configured in `Startup.Auth.cs` in the `App_Start` folder. In ASP.NET Core MVC, this configuration occurs in `Startup.cs`. Authentication and authorization are performed using middleware added to the request pipeline in `ConfigureServices`:
+In ASP.NET MVC 5, authentication is configured in *Startup.Auth.cs* in the *App_Start* folder. In ASP.NET Core MVC, this configuration occurs in `Startup.cs`. Authentication and authorization are performed using middleware added to the request pipeline in `ConfigureServices`:
 
 ```csharp
 // inside Startup.ConfigureServices

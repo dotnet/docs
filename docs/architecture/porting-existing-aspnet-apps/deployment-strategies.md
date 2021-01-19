@@ -38,7 +38,7 @@ You can continue hosting your apps on IIS running on Windows. This is a fine opt
 
 ## Other options on Windows
 
-You can host apps side-by-side apps on Windows using any combination of Kestrel, HTTP.sys, and IIS hosts, in addition to Docker containers if needed. If your app requires a combination of Windows and Linux services, hosting on a Windows server with [WSL](https://docs.microsoft.com/windows/wsl/about) and/or Linux Docker containers provides a single server solution to hosting all parts of the app.
+You can host apps side-by-side apps on Windows using any combination of Kestrel, HTTP.sys, and IIS hosts, in addition to Docker containers, if needed. If your app requires a combination of Windows and Linux services, hosting on a Windows server with [WSL](https://docs.microsoft.com/windows/wsl/about) and/or Linux Docker containers provides a single server solution to hosting all parts of the app.
 
 ## References
 

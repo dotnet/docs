@@ -1,21 +1,24 @@
 ---
 title: Routing differences between ASP.NET MVC and ASP.NET Core
-description: How is routing defined and how does it work at runtime in ASP.NET MVC? How does this differ in ASP.NET Core apps?
+description: How is routing defined and how does it work at runtime in ASP.NET MVC? How does routing differ in ASP.NET Core apps?
 author: ardalis
 ms.date: 11/13/2020
 ---
 
 # Routing differences between ASP.NET MVC and ASP.NET Core
 
-Routing is responsible for mapping incoming browser requests to particular controller actions (or Razor Pages handlers). This section provides an overview of how routing differs between ASP.NET MVC (and Web API) and ASP.NET Core (MVC, Razor Pages, and otherwise).
+Routing is responsible for mapping incoming browser requests to particular controller actions (or Razor Pages handlers). This section covers how routing differs between ASP.NET MVC (and Web API) and ASP.NET Core (MVC, Razor Pages, and otherwise).
 
 ## Routing in ASP.NET MVC and Web API
 
-ASP.NET MVC offers two approaches to routing. The first is the route table, which is a collection of routes that can be used to match incoming requests to controller actions. The second is attribute routing, which performs the same function but is achieved by decorating the actions themselves, rather than editing a global route table.
+ASP.NET MVC offers two approaches to routing:
+
+1. The route table, which is a collection of routes that can be used to match incoming requests to controller actions.
+1. Attribute routing, which performs the same function but is achieved by decorating the actions themselves, rather than editing a global route table.
 
 ## Route table
 
-The route table is configured when the app starts up. Typically a static method call is used to configure the global route collection, like so:
+The route table is configured when the app starts up. Typically, a static method call is used to configure the global route collection, like so:
 
 ```csharp
 public class MvcApplication : System.Web.HttpApplication
@@ -38,11 +41,11 @@ public class MvcApplication : System.Web.HttpApplication
 }
 ```
 
-In the above code, the route table is managed by the `RouteCollection` type, which is used to add new routes with `MapRoute`. Routes are named and include a route string, which can include parameters for controllers, actions, areas, and other placeholders. If an app follows a standard convention, most of its actions can be handled by this single default route, with any exceptions to this convention configured using additional routes.
+In the preceding code, the route table is managed by the `RouteCollection` type, which is used to add new routes with `MapRoute`. Routes are named and include a route string, which can include parameters for controllers, actions, areas, and other placeholders. If an app follows a standard convention, most of its actions can be handled by this single default route, with any exceptions to this convention configured using additional routes.
 
 ### Attribute routing in ASP.NET MVC
 
-Routes that are defined with their actions may be easier to discover and reason about than those defined in an external location. Using attribute routing, an individual action method can have its route defined with a `[Route]` attribute:
+Routes that are defined with their actions may be easier to discover and reason about than routes defined in an external location. Using attribute routing, an individual action method can have its route defined with a `[Route]` attribute:
 
 ```csharp
 public class ProductsController
@@ -69,7 +72,7 @@ Setting up attribute routing requires adding one line to the default route table
 routes.MapMvcAttributeRoutes();
 ```
 
-Attribute routing can take advantage of route constraints, both built-in and custom, and supports named routes as well as areas using the [RouteArea] attribute. If your app uses areas, you'll need to be sure to configure support for them in your route registration code as well by adding one more line:
+Attribute routing can take advantage of route constraints, both built-in and custom, and supports named routes and areas using the `[RouteArea]` attribute. If your app uses areas, you'll need to configure support for them in your route registration code by adding one more line:
 
 ```csharp
 routes.MapMvcAttributeRoutes();
@@ -79,7 +82,7 @@ AreaRegistration.RegisterAllAreas();
 
 ### Attribute routing in ASP.NET Web API 2
 
-[Attribute routing in ASP.NET Web API 2](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2) is very similar to routing in ASP.NET MVC 5, with minor differences. Configuring Web API 2 is typically done in its own class which is called during app startup, and configuring attribute routing is done in this class:
+[Attribute routing in ASP.NET Web API 2](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2) is similar to routing in ASP.NET MVC 5, with minor differences. Configuring Web API 2 is typically done in its own class, which is called during app startup. Attribute routing configuration is handled in this class:
 
 ```csharp
 public static class WebApiConfig
@@ -99,9 +102,9 @@ public static class WebApiConfig
 }
 ```
 
-As shown in the listing above, attribute routing may be combined with convention-based routing in Web API apps.
+As shown in the preceding code, attribute routing may be combined with convention-based routing in Web API apps.
 
-In addition to attribute routing, [ASP.NET Web API chooses which action to call](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection) based on the HTTP method (for instance, GET or POST), the `{action}` placeholder in a route (if any), and parameters of the action. In many cases, the name of the action will help determine whether it is matched, since prefixing the action name with "Get" or "Post" is used to match the appropriate HTTP method to it. Alternatively, actions can be decorated with an appropriate HTTP method attribute, like `[HttpGet]`, allowing the use of action names that aren't prefixed with an HTTP method.
+In addition to attribute routing, [ASP.NET Web API chooses which action to call](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection) based on the HTTP method (for example, GET or POST), the `{action}` placeholder in a route (if any), and parameters of the action. In many cases, the name of the action will help determine whether it's matched, since prefixing the action name with "Get" or "Post" is used to match the appropriate HTTP method to it. Alternatively, actions can be decorated with an appropriate HTTP method attribute, like `[HttpGet]`, allowing the use of action names that aren't prefixed with an HTTP method.
 
 ```csharp
 public class ProductsController : ApiController
@@ -112,11 +115,11 @@ public class ProductsController : ApiController
 }
 ```
 
-Given the above controller, a GET request made to `localhost:123/products/` would match the `GetAll` action, while a GET request made to `localhost:123/products?name=ardalis` would match the `FindProductsByName` action.
+Given the above controller, an HTTP GET request to `localhost:123/products/` matches the `GetAll` action. An HTTP GET request to `localhost:123/products?name=ardalis` matches the `FindProductsByName` action.
 
 ## Routing in ASP.NET Core 3.1
 
-In ASP.NET Core, routing is handled by routing middleware, which matches the URLs of incoming requests to actions or other endpoints. Controller actions are either conventionally-routed or attribute-routed. Conventional routing is similar to the route table approach used in ASP.NET MVC and Web API. Whether you're using conventional, attribute, or both, you need to configure your app to use the routing middleware by adding this to your `Configure` method in `Startup`:
+In ASP.NET Core, routing is handled by routing middleware, which matches the URLs of incoming requests to actions or other endpoints. Controller actions are either conventionally routed or attribute-routed. Conventional routing is similar to the route table approach used in ASP.NET MVC and Web API. Whether you're using conventional, attribute, or both, you need to configure your app to use the routing middleware. To use the middleware, add the following code to your `Startup.Configure` method:
 
 ```csharp
 app.UseRouting();
@@ -124,7 +127,7 @@ app.UseRouting();
 
 ### Conventional routing
 
-With conventional routing, you set up one or more conventions that will be used to match incoming URLs to *endpoints* in the ap. In ASP.NET Core, these endpoints may be controller actions, like in ASP.NET MVC or Web API, but they could also be Razor Pages or Health Checks or SignalR hubs. All of these routable features are configured in a similar fashion using endpoints:
+With conventional routing, you set up one or more conventions that will be used to match incoming URLs to *endpoints* in the app. In ASP.NET Core, these endpoints may be controller actions, like in ASP.NET MVC or Web API. The endpoints could also be Razor Pages, Health Checks, or SignalR hubs. All of these routable features are configured in a similar fashion using endpoints:
 
 ```csharp
 // in Startup.Configure()
@@ -138,13 +141,13 @@ app.UseEndpoints(endpoints =>
 });
 ```
 
-The above code snippet is used (in addition to `UseRouting`) to configure a variety of endpoints, including Health Checks, controllers, and Razor Pages. For controllers, the above configuration specifies a default routing convention, which is the fairly standard `{controller}/{action}/{id?}` pattern that's been recommended since the first versions of ASP.NET MVC.
+The preceding code is used (in addition to `UseRouting`) to configure various endpoints, including Health Checks, controllers, and Razor Pages. For controllers, the above configuration specifies a default routing convention, which is the fairly standard `{controller}/{action}/{id?}` pattern that's been recommended since the first versions of ASP.NET MVC.
 
 ### Attribute routing
 
-Attribute routing in ASP.NET Core is the preferred approach for configuring routing in controllers. If you are building APIs, the `[ApiController]` attribute should be applied to your controllers, and among other things this attribute requires the use of attribute routing for actions in such controller classes.
+Attribute routing in ASP.NET Core is the preferred approach for configuring routing in controllers. If you're building APIs, the `[ApiController]` attribute should be applied to your controllers. Among other things, this attribute requires the use of attribute routing for actions in such controller classes.
 
-Attribute routing in ASP.NET Core works very similarly to in ASP.NET MVC and Web API. In addition to supporting the `[Route]` attribute, however, route information can also be specified as part of the HTTP method attribute:
+Attribute routing in ASP.NET Core behaves similarly in ASP.NET MVC and Web API. In addition to supporting the `[Route]` attribute, however, route information can also be specified as part of the HTTP method attribute:
 
 ```csharp
 [HttpGet("api/products/{id}")]
@@ -152,7 +155,7 @@ public async ActionResult<Product> Details(int id)
 {}
 ```
 
-As with previous version, you can specify a default route with placeholders, and add this at the controller class level or even on a base class. You use the same `[Route]` attribute for all of these cases. For example, a base API controller class might look like this:
+As with previous versions, you can specify a default route with placeholders, and add this at the controller class level or even on a base class. You use the same `[Route]` attribute for all of these cases. For example, a base API controller class might look like this:
 
 ```csharp
 [Route("api/{controller}/{action}/{id?:int}")]

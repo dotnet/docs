@@ -17,13 +17,13 @@ The main benefit of porting just the front end web layer to ASP.NET Core 2.1 is 
 
 If you have an existing app that may use this strategy, some things you can do today to help prepare for the process are to move as much business logic, data access, and other non-UI logic out of the ASP.NET projects and into separate class libraries as possible. It will also help if you have automated test coverage of your system, so that you can verify that behavior remains consistent before and after the migration.
 
-If your app is so large that you can't migrate the entire web app at once, and you need to be able to deploy the new ASP.NET Core app side by side with the existing ASP.NET app, there are deployment strategies that can be used to achieve this. These are covered in [Chapter 5: Deployment Scenarios](deployment-scenarios.md).
+If your app is so large that you can't migrate the entire web app at once, and you need to be able to deploy the new ASP.NET Core app side-by-side with the existing ASP.NET app, there are deployment strategies that can be used to achieve this. These are covered in [Chapter 5: Deployment Scenarios](deployment-scenarios.md).
 
-Keep in mind that ASP.NET Core 2.1 is the last LTS release of .NET Core that supports running on .NET Framework and consuming .NET Framework libraries. This release will be out of support soon, but ASP.NET Core 2.1 on .NET Framework will be supported as long as the .NET Framework (even after .NET Core 2.1 support ends). See the 'ASP.NET Core 2.1 on .NET Framework' section [here](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+Keep in mind that ASP.NET Core 2.1 is the last LTS release of .NET Core that supports running on .NET Framework and consuming .NET Framework libraries. This release will soon be unsupported, but ASP.NET Core 2.1 on .NET Framework will be supported as long as the .NET Framework (even after .NET Core 2.1 support ends). See the 'ASP.NET Core 2.1 on .NET Framework' section [here](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 ## References
 
-[Migrating from ASP.NET to ASP.NET Core 2.1](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/?view=aspnetcore-2.1)
+[Migrating from ASP.NET to ASP.NET Core 2.1](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/?view=aspnetcore-2.1&preserve-view=true)
 
 >[!div class="step-by-step"]
 >[Previous](migration-considerations.md)

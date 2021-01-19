@@ -48,15 +48,19 @@ The **-doc** option allows you to place documentation comments in an XML file.
   
  See [Recommended Tags for Documentation Comments](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md) for ways to generate documentation from comments in your code.  
   
-### To set this compiler option in the Visual Studio development environment  
-  
+### To set this compiler option in the Visual Studio 2019 development environment  
+
 1. Open the project's **Properties** page.  
+2. Click the **Build** tab.
+3. Modify the **XML documentation file** property.
   
-2. Click the **Build** tab.  
+### To set this compiler option in the Visual Studio for Mac development environment  
   
-3. Modify the **XML documentation file** property.  
-  
- For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
+1. Open the project's **Options** page.
+2. Select the **Compiler** tab.
+3. Select **Generate xml documentation** and enter the file name in the text box.
+
+For information on how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
   
 ## See also
 

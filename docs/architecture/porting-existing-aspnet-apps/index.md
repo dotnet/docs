@@ -63,7 +63,7 @@ Note that the target audience for this book is .NET developers with large, exist
 
 ## How you can use this guide
 
-You can read this book straight through, as we expect many readers to do. This will provide you first with considerations for whether you should port your app at all, followed by architectural differences between .NET and .NET Core. From there you'll learn strategies for migrating a large solution over time, and how to port a real app. Next, the book includes deployment scenarios that may help you address the need to run different apps while appearing as a single app to users. The book concludes with two case studies describing real apps that have made the move from ASP.NET MVC to ASP.NET Core.
+You can read this book straight through, as we expect many readers to do. This will provide you first with considerations for whether you should port your app at all, followed by architectural differences between .NET Framework and .NET Core. From there you'll learn strategies for migrating a large solution over time, and how to port a real app. Next, the book includes deployment scenarios that may help you address the need to run different apps while appearing as a single app to users. The book concludes with two case studies describing real apps that have made the move from ASP.NET MVC to ASP.NET Core.
 
 Whether or not you choose to start from the first chapter, you can also refer (back) to any of these chapters to learn about specific topics:
 

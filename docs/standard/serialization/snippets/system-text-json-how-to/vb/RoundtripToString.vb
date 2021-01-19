@@ -11,8 +11,6 @@ Namespace SystemTextJsonSamples
             ' </Serialize>
 
             ' <SerializeWithGenericParameter>
-            'jsonString = JsonSerializer.Serialize(weatherForecast)
-            'TODO
             ' </SerializeWithGenericParameter>
 
             Console.WriteLine($"JSON output:{jsonString}")

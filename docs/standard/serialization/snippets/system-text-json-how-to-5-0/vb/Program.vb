@@ -2,7 +2,6 @@
     Module Program
 
         Sub Main(args As String())
-            Console.WriteLine("Hello World!")
             Call Main1(args).Wait()
         End Sub
 
@@ -13,10 +12,6 @@
 
             Console.WriteLine("======== Immutable types =========")
             ImmutableTypes.Program.Main()
-            Console.WriteLine()
-
-            Console.WriteLine("======== Record support =========")
-            Records.Program.Main()
             Console.WriteLine()
 
             Console.WriteLine("======== Field support =========")

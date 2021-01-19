@@ -1,7 +1,6 @@
 ﻿Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
-    '<Obsolete("Ignore", False)>
     Public NotInheritable Class SerializeExcludeNullValueProperties
         Public Shared Sub Run()
             Dim jsonString As String

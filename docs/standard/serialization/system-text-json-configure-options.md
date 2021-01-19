@@ -4,6 +4,9 @@ description: "Learn how to avoid performance issues and how to use available con
 ms.date: 12/02/2020
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
+dev_langs:
+  - "csharp"
+  - "vb"
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -22,7 +25,6 @@ If you use `JsonSerializerOptions` repeatedly with the same options, don't creat
 The following code demonstrates the performance penalty for using new options instances.
 
 :::code language="csharp" source="snippets/system-text-json-configure-options/csharp/ReuseOptionsInstances.cs":::
-
 :::code language="vb" source="snippets/system-text-json-configure-options//ReuseOptionsInstances.vb":::
 
 The preceding code serializes a small object 100,000 times using the same options instance. Then it serializes the same object the same number of times and creates a new options instance each time. A typical run time difference is 190 compared to 40,140 milliseconds. The difference is even greater if you increase the number of iterations.
@@ -37,7 +39,6 @@ The size of the metadata cache in a `JsonSerializerOptions` instance depends on 
 There is a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerOptions)) that lets you create a new instance with the same options as an existing instance, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CopyOptions.cs" highlight="29":::
-
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/CopyOptions.vb" :::
 ::: zone-end
 
@@ -57,7 +58,6 @@ Here are the options that have different defaults for web apps:
 There's a [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)?view=net-5.0&preserve-view=true) that lets you create a new instance with the default options that ASP.NET Core uses for web apps, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/OptionsDefaults.cs" highlight="24":::
-
 :::code language="vb" source="snippets/system-text-json-how-to-5-0/vb/OptionsDefaults.vb" :::
 ::: zone-end
 

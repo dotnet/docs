@@ -2,7 +2,6 @@
 Imports System.Text.Json.Serialization
 
 Namespace SystemTextJsonSamples
-    '<Obsolete("Ignore", False)>
     Public NotInheritable Class RoundtripEnumAsString
         Public Shared Sub Run()
             Dim jsonString As String

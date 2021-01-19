@@ -2,7 +2,6 @@
 Imports System.Text
 
 Namespace SystemTextJsonSamples
-    ''<Obsolete("Ignore", False)>
     Module Program
         Sub Main(args As String())
             Console.WriteLine("Hello World!")
@@ -67,62 +66,11 @@ Namespace SystemTextJsonSamples
             Console.WriteLine(vbCrLf & "============================= Deserialize trailing commas and comments" & vbCrLf)
             DeserializeCommasComments.Run()
 
-            'Console.WriteLine(vbCrLf & "============================= Custom converter registration - Converters collection" & vbCrLf)
-            'RegisterConverterWithConverterscollection.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Custom converter registration - Converters attribute on property" & vbCrLf)
-            'RegisterConverterWithAttributeOnProperty.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Custom converter registration - attribute on type" & vbCrLf)
-            'RegisterConverterWithAttributeOnType.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Custom converter Dictionary with TKey = Enum" & vbCrLf)
-            'RoundtripDictionaryTkeyEnumTValue.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Custom converter Polymorphic" & vbCrLf)
-            'RoundtripPolymorphic.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Custom converter inferred types to Object" & vbCrLf)
-            'DeserializeInferredTypesToObject.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Custom converter long to string" & vbCrLf)
-            'RoundtripLongToString.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Callbacks" & vbCrLf)
-            'RoundtripCallbacks.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Required property converter" & vbCrLf)
-            'DeserializeRequiredProperty.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Required property converter using attribute registration" & vbCrLf)
-            'DeserializeRequiredPropertyUsingAttributeRegistration.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Null value to nonnullable type" & vbCrLf)
-            'DeserializeNullToNonnullableType.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Immutable struct" & vbCrLf)
-            'RoundtripImmutableStruct.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Runtime property exclusion" & vbCrLf)
-            'SerializeRuntimePropertyExclusion.Run()
-
             Console.WriteLine(vbCrLf & "============================= JsonDocument data access" & vbCrLf)
             JsonDocumentDataAccess.Run()
 
             Console.WriteLine(vbCrLf & "============================= JsonDocument write JSON" & vbCrLf)
             JsonDocumentWriteJson.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Utf8Reader from file" & vbCrLf)
-            'Utf8ReaderFromFile.Run()
-
-            'Dim jsonString As String = File.ReadAllText("Universities.json")
-            'ValueTextEqualsExample.Run(Encoding.UTF8.GetBytes(jsonString))
-
-            'Console.WriteLine(vbCrLf & "============================= Utf8Reader from byte array" & vbCrLf)
-            'Utf8ReaderFromBytes.Run()
-
-            'Console.WriteLine(vbCrLf & "============================= Utf8Reader partial read" & vbCrLf)
-            'Utf8ReaderPartialRead.Run()
 
             Console.WriteLine(vbCrLf & "============================= Utf8Writer to Stream" & vbCrLf)
             Utf8WriterToStream.Run()

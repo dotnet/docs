@@ -7,7 +7,6 @@ Imports System.Text.Unicode
 ' </Usings>
 
 Namespace SystemTextJsonSamples
-    '<Obsolete("Ignore", False)>
     Public NotInheritable Class SerializeCustomEncoding
         Public Shared Sub Run()
             Dim jsonString As String

@@ -1,2 +1,1 @@
-﻿' TODO: Skipped Null-able Directive enable
-' This exammple applies only to C#
+﻿' https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-how-to#visual-basic-support

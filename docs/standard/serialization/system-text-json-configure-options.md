@@ -1,7 +1,7 @@
 ---
 title: How to instantiate JsonSerializerOptions with System.Text.Json
 description: "Learn how to avoid performance issues and how to use available constructors for JsonSerializerOptions instances."
-ms.date: 12/02/2020
+ms.date: 01/19/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -25,7 +25,7 @@ If you use `JsonSerializerOptions` repeatedly with the same options, don't creat
 The following code demonstrates the performance penalty for using new options instances.
 
 :::code language="csharp" source="snippets/system-text-json-configure-options/csharp/ReuseOptionsInstances.cs":::
-:::code language="vb" source="snippets/system-text-json-configure-options/vb/ReuseOptionsInstances.vb":::
+<!--code language="vb" source="snippets/system-text-json-configure-options/vb/ReuseOptionsInstances.vb"-->
 
 The preceding code serializes a small object 100,000 times using the same options instance. Then it serializes the same object the same number of times and creates a new options instance each time. A typical run time difference is 190 compared to 40,140 milliseconds. The difference is even greater if you increase the number of iterations.
 

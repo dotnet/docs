@@ -9,10 +9,10 @@ Namespace SystemTextJsonSamples
             weatherForecast1.DisplayPropertyValues()
 
             ' <Serialize>
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .IgnoreNullValues = True,
-            .WriteIndented = True}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .IgnoreNullValues = True,
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast1, options)
             ' </Serialize>
             Console.WriteLine(jsonString)

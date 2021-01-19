@@ -1,4 +1,4 @@
-Imports System.IO
+﻿Imports System.IO
 Imports System.Text
 Imports System.Text.Json
 
@@ -6,9 +6,9 @@ Namespace SystemTextJsonSamples
     Public NotInheritable Class Utf8WriterToStream
         Public Shared Sub Run()
             ' <Serialize>
-            Dim options As JsonWriterOptions = New JsonWriterOptions With
-            { _
-            .Indented = True}
+            Dim options As JsonWriterOptions = New JsonWriterOptions With {
+                .Indented = True
+            }
 
             Dim stream As MemoryStream = New MemoryStream
             Dim writer As Utf8JsonWriter = New Utf8JsonWriter(stream, options)

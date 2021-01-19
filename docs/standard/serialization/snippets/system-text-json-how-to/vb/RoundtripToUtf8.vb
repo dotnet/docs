@@ -9,9 +9,9 @@ Namespace SystemTextJsonSamples
 
             ' <Serialize>
             Dim jsonUtf8Bytes As Byte()
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonUtf8Bytes = JsonSerializer.SerializeToUtf8Bytes(weatherForecast1, options)
             ' </Serialize>
             Console.WriteLine($"JSON output:{Encoding.UTF8.GetString(jsonUtf8Bytes)}")

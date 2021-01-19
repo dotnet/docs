@@ -15,9 +15,9 @@ Namespace SystemTextJsonSamples
             weatherForecast.DisplayPropertyValues()
 
             ' <Deserialize>
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .IgnoreNullValues = True}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .IgnoreNullValues = True
+            }
             weatherForecast = JsonSerializer.Deserialize(Of WeatherForecastWithDefault)(jsonString, options)
             ' </Deserialize>
             weatherForecast.DisplayPropertyValues()

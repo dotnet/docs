@@ -1,4 +1,4 @@
-Imports System.IO
+﻿Imports System.IO
 Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
@@ -10,13 +10,13 @@ Namespace SystemTextJsonSamples
             ' <Serialize>
             Dim jsonString As String = File.ReadAllText(inputFileName)
 
-            Dim writerOptions As JsonWriterOptions = New JsonWriterOptions With
-            { _
-            .Indented = True}
+            Dim writerOptions As JsonWriterOptions = New JsonWriterOptions With {
+                .Indented = True
+            }
 
-            Dim documentOptions As JsonDocumentOptions = New JsonDocumentOptions With
-            { _
-            .CommentHandling = JsonCommentHandling.Skip}
+            Dim documentOptions As JsonDocumentOptions = New JsonDocumentOptions With {
+                .CommentHandling = JsonCommentHandling.Skip
+            }
 
             Dim fs As FileStream = File.Create(outputFileName)
             Dim writer As Utf8JsonWriter = New Utf8JsonWriter(fs, options:=writerOptions)

@@ -8,18 +8,18 @@ Namespace SystemTextJsonSamples
             weatherForecast1.DisplayPropertyValues()
 
             ' <Serialize>
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .PropertyNamingPolicy = New UpperCaseNamingPolicy,
-            .WriteIndented = True}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .PropertyNamingPolicy = New UpperCaseNamingPolicy,
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast1, options)
             ' </Serialize>
             Console.WriteLine($"JSON output:{jsonString}")
 
             ' <Deserialize>
-            options = New JsonSerializerOptions With
-            {
-            .PropertyNamingPolicy = New UpperCaseNamingPolicy}
+            options = New JsonSerializerOptions With {
+                .PropertyNamingPolicy = New UpperCaseNamingPolicy
+            }
             weatherForecast1 = JsonSerializer.Deserialize(Of WeatherForecast)(jsonString, options)
             ' </Deserialize>
             weatherForecast1.DisplayPropertyValues()

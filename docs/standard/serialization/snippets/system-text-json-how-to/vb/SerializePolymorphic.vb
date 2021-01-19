@@ -10,9 +10,9 @@ Namespace SystemTextJsonSamples
 
             Console.WriteLine("Base class generic type - derived class properties omitted")
             ' <SerializeDefault>
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast1, options)
             ' </SerializeDefault>
 
@@ -20,42 +20,42 @@ Namespace SystemTextJsonSamples
 
             Console.WriteLine("Object generic type parameter - derived class properties included")
             ' <SerializeObject>
-            options = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            options = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(Of Object)(weatherForecast1, options)
             ' </SerializeObject>
             Console.WriteLine($"JSON output:{jsonString}")
 
             Console.WriteLine("GetType() type parameter - derived class properties included")
             ' <SerializeGetType>
-            options = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            options = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast1, weatherForecast1.[GetType](), options)
             ' </SerializeGetType>
             Console.WriteLine($"JSON output:{jsonString}")
 
             Console.WriteLine("Extra properties on interface implementations included only for object properties")
             ' <SerializeInterface>
-            Dim forecasts1 As New Forecasts With
-            {
-            .Monday = New Forecast With
-                {
-            .[Date] = DateTime.Parse("2020-01-06"),
-            .TemperatureCelsius = 10,
-            .Summary = "Cool",
-            .WindSpeed = 8},
-            .Tuesday = New Forecast With
-                {
-            .[Date] = DateTime.Parse("2020-01-07"),
-            .TemperatureCelsius = 11,
-            .Summary = "Rainy",
-            .WindSpeed = 10}}
+            Dim forecasts1 As New Forecasts With {
+                .Monday = New Forecast With {
+                    .[Date] = DateTime.Parse("2020-01-06"),
+                    .TemperatureCelsius = 10,
+                    .Summary = "Cool",
+                    .WindSpeed = 8
+                },
+                .Tuesday = New Forecast With {
+                    .[Date] = DateTime.Parse("2020-01-07"),
+                    .TemperatureCelsius = 11,
+                    .Summary = "Rainy",
+                    .WindSpeed = 10
+                }
+            }
 
-            options = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            options = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(forecasts1, options)
             ' </SerializeInterface>
             Console.WriteLine($"{jsonString}")
@@ -65,9 +65,9 @@ Namespace SystemTextJsonSamples
 
             Console.WriteLine("Second level derived class properties included only for object properties")
             ' <SerializeSecondLevel>
-            options = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            options = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecastWithPreviousAsObject1, options)
             ' </SerializeSecondLevel>
             Console.WriteLine($"JSON output with WindSpeed:{jsonString}")

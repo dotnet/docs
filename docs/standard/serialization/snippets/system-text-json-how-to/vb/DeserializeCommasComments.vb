@@ -13,10 +13,10 @@ Namespace SystemTextJsonSamples
             Console.WriteLine($"JSON input:{jsonString}")
 
             ' <Deserialize>
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .ReadCommentHandling = JsonCommentHandling.Skip,
-            .AllowTrailingCommas = True}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .ReadCommentHandling = JsonCommentHandling.Skip,
+                .AllowTrailingCommas = True
+            }
             Dim weatherForecast1 = JsonSerializer.Deserialize(Of WeatherForecast)(jsonString, options)
             ' </Deserialize>
             weatherForecast1.DisplayPropertyValues()

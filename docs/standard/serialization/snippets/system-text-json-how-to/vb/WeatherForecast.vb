@@ -288,139 +288,142 @@ Namespace SystemTextJsonSamples
 
     Public Module WeatherForecastFactories
         Public Function CreateWeatherForecast() As WeatherForecast
-            Dim weatherForecast1 As WeatherForecast = New WeatherForecast With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot"}
+            Dim weatherForecast1 As WeatherForecast = New WeatherForecast With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot"
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithPrevious() As WeatherForecastWithPrevious
-            Dim weatherForecast1 As WeatherForecastWithPrevious = New WeatherForecastWithPrevious With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot",
-            .PreviousForecast = CreateWeatherForecastDerived()}
+            Dim weatherForecast1 As WeatherForecastWithPrevious = New WeatherForecastWithPrevious With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot",
+                .PreviousForecast = CreateWeatherForecastDerived()
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithPreviousAsObject() As WeatherForecastWithPreviousAsObject
-            Dim weatherForecast1 As WeatherForecastWithPreviousAsObject = New WeatherForecastWithPreviousAsObject With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot",
-            .PreviousForecast = CreateWeatherForecastDerived()}
+            Dim weatherForecast1 As WeatherForecastWithPreviousAsObject = New WeatherForecastWithPreviousAsObject With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot",
+                .PreviousForecast = CreateWeatherForecastDerived()
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithROProperty() As WeatherForecastWithROProperty
-            Dim weatherForecast1 As WeatherForecastWithROProperty = New WeatherForecastWithROProperty With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot"}
+            Dim weatherForecast1 As WeatherForecastWithROProperty = New WeatherForecastWithROProperty With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot"
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithEnum() As WeatherForecastWithEnum
-            Dim weatherForecast1 As WeatherForecastWithEnum = New WeatherForecastWithEnum With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = Summary.Hot}
+            Dim weatherForecast1 As WeatherForecastWithEnum = New WeatherForecastWithEnum With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = Summary.Hot
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithPropertyNameAttribute() As WeatherForecastWithPropertyNameAttribute
-            Dim weatherForecast1 As WeatherForecastWithPropertyNameAttribute = New WeatherForecastWithPropertyNameAttribute With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot",
-            .WindSpeed = 35}
+            Dim weatherForecast1 As WeatherForecastWithPropertyNameAttribute = New WeatherForecastWithPropertyNameAttribute With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot",
+                .WindSpeed = 35
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithIgnoreAttribute() As WeatherForecastWithIgnoreAttribute
-            Dim weatherForecast1 As WeatherForecastWithIgnoreAttribute = New WeatherForecastWithIgnoreAttribute With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot"}
+            Dim weatherForecast1 As WeatherForecastWithIgnoreAttribute = New WeatherForecastWithIgnoreAttribute With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot"
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastCyrillic() As WeatherForecast
-            Dim weatherForecast1 As WeatherForecast = New WeatherForecast With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "жарко"}
+            Dim weatherForecast1 As WeatherForecast = New WeatherForecast With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "жарко"
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithExtensionData() As WeatherForecastWithExtensionData
-            Dim weatherForecast1 As WeatherForecastWithExtensionData = New WeatherForecastWithExtensionData With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot"}
+            Dim weatherForecast1 As WeatherForecastWithExtensionData = New WeatherForecastWithExtensionData With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot"
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastDerived() As WeatherForecastDerived
-            Dim weatherForecast1 As WeatherForecastDerived = New WeatherForecastDerived With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot",
-            .WindSpeed = 35}
+            Dim weatherForecast1 As WeatherForecastDerived = New WeatherForecastDerived With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot",
+                .WindSpeed = 35
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithObjectProperties() As WeatherForecastWithObjectProperties
-            Dim weatherForecast1 As WeatherForecastWithObjectProperties = New WeatherForecastWithObjectProperties With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot"}
+            Dim weatherForecast1 As WeatherForecastWithObjectProperties = New WeatherForecastWithObjectProperties With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot"
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithEnumDictionary() As WeatherForecastWithEnumDictionary
-            Dim weatherForecast1 As WeatherForecastWithEnumDictionary = New WeatherForecastWithEnumDictionary With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot",
-            .TemperatureRanges = New Dictionary(Of SummaryWordsEnum, Integer) From {
-                {SummaryWordsEnum.Cold, 20},
-                {SummaryWordsEnum.Hot, 40}}}
+            Dim weatherForecast1 As WeatherForecastWithEnumDictionary = New WeatherForecastWithEnumDictionary With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot",
+                .TemperatureRanges = New Dictionary(Of SummaryWordsEnum, Integer) From {
+                    {SummaryWordsEnum.Cold, 20},
+                    {SummaryWordsEnum.Hot, 40}
+                }
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithDictionary() As WeatherForecastWithDictionary
-            Dim weatherForecast1 As WeatherForecastWithDictionary = New WeatherForecastWithDictionary With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot",
-            .TemperatureRanges = New Dictionary(Of String, Integer) From {
-                {"ColdMinTemp", 20},
-                {"HotMinTemp", 40}}}
+            Dim weatherForecast1 As WeatherForecastWithDictionary = New WeatherForecastWithDictionary With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot",
+                .TemperatureRanges = New Dictionary(Of String, Integer) From {
+                    {"ColdMinTemp", 20},
+                    {"HotMinTemp", 40}
+                }
+            }
             Return weatherForecast1
         End Function
         Public Function CreateWeatherForecastWithPOCOs() As WeatherForecastWithPOCOs
-            Dim weatherForecast1 As WeatherForecastWithPOCOs = New WeatherForecastWithPOCOs With
-            {
-            .[Date] = DateTime.Parse("2019-08-01"),
-            .TemperatureCelsius = 25,
-            .Summary = "Hot",
-            .SummaryField = "Hot",
-            .DatesAvailable = New List(Of DateTimeOffset) From {
-                DateTime.Parse("2019-08-01"),
-                DateTime.Parse("2019-08-02")},
-            .TemperatureRanges = New Dictionary(Of String, HighLowTemps) From {
-                        {"Cold", New HighLowTemps With
-{
-                    .High = 20,
-                    .Low = -10}},
-                        {"Hot", New HighLowTemps With
-{
-                    .High = 60,
-                    .Low = 20}}},
-            .SummaryWords = New String() {"Cool", "Windy", "Humid"}}
+            Dim weatherForecast1 As WeatherForecastWithPOCOs = New WeatherForecastWithPOCOs With {
+                .[Date] = DateTime.Parse("2019-08-01"),
+                .TemperatureCelsius = 25,
+                .Summary = "Hot",
+                .SummaryField = "Hot",
+                .DatesAvailable = New List(Of DateTimeOffset) From {
+                    DateTime.Parse("2019-08-01"),
+                    DateTime.Parse("2019-08-02")
+                },
+                .TemperatureRanges = New Dictionary(Of String, HighLowTemps) From {
+                        {"Cold", New HighLowTemps With {
+                            .High = 20,
+                            .Low = -10
+                        }},
+                        {"Hot", New HighLowTemps With {
+                            .High = 60,
+                            .Low = 20}}
+                },
+                .SummaryWords = New String() {"Cool", "Windy", "Humid"}
+            }
             Return weatherForecast1
         End Function
     End Module

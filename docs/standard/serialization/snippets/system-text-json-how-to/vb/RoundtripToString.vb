@@ -17,9 +17,9 @@ Namespace SystemTextJsonSamples
             Console.WriteLine($"JSON output:{jsonString}")
 
             ' <SerializePrettyPrint>
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast, options)
             ' </SerializePrettyPrint>
             Console.WriteLine($"Pretty-printed JSON output:{jsonString}")

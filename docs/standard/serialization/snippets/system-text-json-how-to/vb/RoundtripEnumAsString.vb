@@ -8,16 +8,16 @@ Namespace SystemTextJsonSamples
             Dim weatherForecast As WeatherForecastWithEnum = WeatherForecastFactories.CreateWeatherForecastWithEnum()
             weatherForecast.DisplayPropertyValues()
 
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast, options)
             Console.WriteLine($"JSON with enum as number:{jsonString}")
 
             ' <Serialize>
-            options = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            options = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             options.Converters.Add(New JsonStringEnumConverter(JsonNamingPolicy.CamelCase))
             jsonString = JsonSerializer.Serialize(weatherForecast, options)
             ' </Serialize>

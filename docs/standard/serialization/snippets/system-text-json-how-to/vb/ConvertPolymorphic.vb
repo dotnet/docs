@@ -10,9 +10,9 @@ Namespace SystemTextJsonSamples
 
             Console.WriteLine("Base class generic type - derived class properties omitted")
             ' <SerializeDefault>
-            Dim serializeOptions As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            Dim serializeOptions As JsonSerializerOptions = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast1, serializeOptions)
             ' </SerializeDefault>
 
@@ -20,18 +20,18 @@ Namespace SystemTextJsonSamples
 
             Console.WriteLine("Object generic type parameter - derived class properties included")
             ' <SerializeObject>
-            serializeOptions = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            serializeOptions = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(Of Object)(weatherForecast1, serializeOptions)
             ' </SerializeObject>
             Console.WriteLine($"JSON output:{jsonString}")
 
             Console.WriteLine("GetType() type parameter - derived class properties included")
             ' <SerializeGetType>
-            serializeOptions = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            serializeOptions = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast1, weatherForecast1.[GetType](), serializeOptions)
             ' </SerializeGetType>
             Console.WriteLine($"JSON output:{jsonString}")

@@ -1,4 +1,4 @@
-Imports System.Collections.Generic
+﻿Imports System.Collections.Generic
 Imports System.Runtime.CompilerServices
 
 Namespace SystemTextJsonSamples
@@ -35,13 +35,11 @@ Namespace SystemTextJsonSamples
 
     Public Module PersonFactories
         Public Function CreatePeople() As List(Of Person)
-            Return New List(Of Person) From { _
-                New Customer With
-{
+            Return New List(Of Person) From {
+                New Customer With {
                     .CreditLimit = 10000,
                     .Name = "John"},
-                New Employee With
-{
+                New Employee With {
                     .OfficeNumber = "555-1234",
                     .Name = "Nancy"}}
         End Function

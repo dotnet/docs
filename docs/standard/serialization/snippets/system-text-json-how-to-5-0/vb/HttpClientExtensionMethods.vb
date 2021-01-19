@@ -18,10 +18,8 @@ Namespace HttpClientExtensionMethods
 
     Public Class Program
         Public Shared Async Function Main() As Task
-            Using client As New HttpClient With
-                {
-                .BaseAddress = New Uri("https://jsonplaceholder.typicode.com")
-                }
+            Using client As New HttpClient With {
+                .BaseAddress = New Uri("https://jsonplaceholder.typicode.com")}
 
                 ' Get the user information.
                 Dim user1 As User = Await client.GetFromJsonAsync(Of User)("users/1")

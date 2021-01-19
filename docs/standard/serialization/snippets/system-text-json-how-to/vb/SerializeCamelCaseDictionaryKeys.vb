@@ -8,10 +8,10 @@ Namespace SystemTextJsonSamples
             weatherForecast.DisplayPropertyValues()
 
             ' <Serialize>
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .DictionaryKeyPolicy = JsonNamingPolicy.CamelCase,
-            .WriteIndented = True}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .DictionaryKeyPolicy = JsonNamingPolicy.CamelCase,
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast, options)
             ' </Serialize>
             Console.WriteLine($"JSON output:{jsonString}")

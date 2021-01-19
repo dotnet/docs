@@ -51,10 +51,10 @@ Namespace GuidReferenceResolverExample
             adrian.Spouse = tyler
             Dim people As ImmutableArray(Of Person) = ImmutableArray.Create(tyler, adrian)
 
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .WriteIndented = True,
-            .ReferenceHandler = New ReferenceHandler(Of GuidReferenceResolver)}
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+                .WriteIndented = True,
+                .ReferenceHandler = New ReferenceHandler(Of GuidReferenceResolver)
+            }
 
             Dim json As String = JsonSerializer.Serialize(people, options)
             Console.WriteLine($"Output JSON {json}")

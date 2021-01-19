@@ -44,9 +44,9 @@ Namespace SystemTextJsonSamples
             ' </Deserialize>
 
             ' <Serialize>
-            Dim serializeOptions As JsonSerializerOptions = New JsonSerializerOptions With
-            {
-            .WriteIndented = True}
+            Dim serializeOptions As JsonSerializerOptions = New JsonSerializerOptions With {
+                .WriteIndented = True
+            }
             jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions)
             ' </Serialize>
             Console.WriteLine($"JSON output:{jsonString}")

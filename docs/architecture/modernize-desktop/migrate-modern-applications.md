@@ -1,7 +1,7 @@
 ---
 title: Migrating Modern Desktop applications
 description: Everything you need to know about the migration process for modern desktop applications.
-ms.date: 12/29/2020
+ms.date: 01/19/2021
 ---
 
 # Migrating Modern Desktop applications
@@ -50,7 +50,7 @@ You can continue to use your existing app.config XML file. However, you could ta
 
 To migrate from an old-style *app.config* to a new configuration file, you should choose between an XML format and a JSON format.
 
-If you choose XML, the conversion is straightforward. Since the content is the same, just rename the *app.config* file to a file with XML extension. Then, change the code that references AppSettings to use the `ConfigurationBuilder` class. This change should be easy.
+If you choose XML, the conversion is straightforward. Since the content is the same, just save the *app.config* file with XML as type. Then, change the code that references AppSettings to use the `ConfigurationBuilder` class. This change should be easy.
 
 If you want to use a JSON format and you don't want to migrate by hand, there's a tool called [dotnet-config2json](https://www.nuget.org/packages/dotnet-config2json/) available on .NET that can convert an *app.config* file to a JSON configuration file.
 

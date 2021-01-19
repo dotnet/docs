@@ -45,7 +45,10 @@ items:
   items:
   - name: Type system
   - name: Program structure
-  - name: Object oriented techniques
+  - name: Introduction to classes
+    href: tutorials/intro-to-csharp/introduction-to-classes.md
+  - name: Object-Oriented C#
+    href: tutorials/intro-to-csharp/object-oriented-programming.md
   - name: Functional techniques
   - name: Error handling
 
@@ -58,10 +61,6 @@ items:
 
 
 # Move to fundamentals
-    - name: Introduction to classes
-      href: tutorials/intro-to-csharp/introduction-to-classes.md
-    - name: Object-Oriented C#
-      href: tutorials/intro-to-csharp/object-oriented-programming.md
 
 # - What's new
 - name: What's new

@@ -11,6 +11,7 @@ Namespace SystemTextJsonSamples
             ' </Serialize>
 
             ' <SerializeWithGenericParameter>
+            ' Visual Basic code example not available.
             ' </SerializeWithGenericParameter>
 
             Console.WriteLine($"JSON output:{jsonString}")

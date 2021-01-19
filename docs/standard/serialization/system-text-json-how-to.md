@@ -1,7 +1,7 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
 description: "Learn how to use the System.Text.Json namespace to serialize to and deserialize from JSON in .NET. Includes sample code."
-ms.date: 01/15/2021
+ms.date: 01/19/2021
 ms.custom: contperf-fy21q2
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
@@ -66,7 +66,7 @@ The following example uses synchronous code to create a JSON file:
 The following example uses asynchronous code to create a JSON file:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/RoundtripToFileAsync.cs" id="Serialize":::
-:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.cs" id="Serialize":::
+:::code language="vb" source="snippets/system-text-json-how-to/vb/RoundtripToFileAsync.vb" id="Serialize":::
 
 The preceding examples use type inference for the type being serialized. An overload of `Serialize()` takes a generic type parameter:
 

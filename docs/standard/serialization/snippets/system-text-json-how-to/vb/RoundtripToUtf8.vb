@@ -17,10 +17,12 @@ Namespace SystemTextJsonSamples
             Console.WriteLine($"JSON output:{Encoding.UTF8.GetString(jsonUtf8Bytes)}")
 
             ' <Deserialize1>
+            ' Visual Basic code example not available.
             ' </Deserialize1>
             'weatherForecast1.DisplayPropertyValues()
 
             ' <Deserialize2>
+            ' Visual Basic code example not available.
             ' </Deserialize2>
             'weatherForecast1.DisplayPropertyValues()
         End Sub

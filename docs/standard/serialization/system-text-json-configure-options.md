@@ -25,7 +25,7 @@ If you use `JsonSerializerOptions` repeatedly with the same options, don't creat
 The following code demonstrates the performance penalty for using new options instances.
 
 :::code language="csharp" source="snippets/system-text-json-configure-options/csharp/ReuseOptionsInstances.cs":::
-:::code language="vb" source="snippets/system-text-json-configure-options//ReuseOptionsInstances.vb":::
+:::code language="vb" source="snippets/system-text-json-configure-options/vb/ReuseOptionsInstances.vb":::
 
 The preceding code serializes a small object 100,000 times using the same options instance. Then it serializes the same object the same number of times and creates a new options instance each time. A typical run time difference is 190 compared to 40,140 milliseconds. The difference is even greater if you increase the number of iterations.
 

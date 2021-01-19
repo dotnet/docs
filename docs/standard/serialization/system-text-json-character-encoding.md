@@ -30,7 +30,7 @@ By default, the serializer escapes all non-ASCII characters. That is, it replace
 To serialize the character set(s) of one or more languages without escaping, specify [Unicode range(s)](xref:System.Text.Unicode.UnicodeRanges) when creating an instance of <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, as shown in the following example:
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
-:::code language=" source="snippets/system-text-json-how-to/vb/SerializeCustomEncoding.vb" id="Usings":::
+:::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeCustomEncoding.vb" id="Usings":::
 
 :::code language="csharp" source="snippets/system-text-json-how-to/csharp/SerializeCustomEncoding.cs" id="LanguageSets":::
 :::code language="vb" source="snippets/system-text-json-how-to/vb/SerializeCustomEncoding.vb" id="LanguageSets":::

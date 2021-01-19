@@ -1,12 +1,12 @@
 ---
-title:  What's new with .NET Core for Desktop?
-description: Learn about .NET Core, differences between .NET Core and .NET Framework, and the new features that were added.
-ms.date: 05/12/2020
+title:  What's new with .NET for Desktop?
+description: Learn about .NET, differences between .NET and .NET Framework, and the new features that were added.
+ms.date: 12/29/2020
 ---
 
-# What's new with .NET Core for Desktop?
+# What's new with .NET for Desktop?
 
-Starting with .NET Core 3.0, .NET Core supports Windows Forms and WPF. So, now you have a choice between .NET Framework and .NET Core for your desktop applications. This chapter will describe what is .NET Core and what are its benefits for desktop applications.
+Starting with .NET Core 3.0, .NET supports Windows Forms and WPF. So, now you have a choice between .NET Framework and .NET for your desktop applications. This chapter will describe what is .NET and what are its benefits for desktop applications.
 
 ## The motivation behind .NET Core
 
@@ -50,11 +50,21 @@ The benefits of .NET Core come from these three characteristics:
 
 Starting with .NET Core 3.0, besides the existing support for web and cloud, there's also support for desktop, IoT, and AI domains. The goal for this framework is impressive: to target every type of .NET development present and future. Microsoft plans to complete this vision with .NET 5 at the end of 2020. The "Core" name was removed to reinforce its uniqueness in the .NET world.
 
+## .NET 5 is .NET Core vNext
+
+.NET 5 is the next step forward with .NET Core. The .NET 5.0 aims to improve .NET in a few key ways:
+
+- Produce a single .NET runtime and framework that can be used everywhere and that has uniform runtime behaviors and developer experiences.
+- Expand the capabilities of .NET by taking the best of .NET Core, .NET Framework, Xamarin and Mono.
+- Build that product out of a single code-base that developers (Microsoft and the community) can work on and expand together and that improves all scenarios.
+
+This new release and direction are a game-changer for .NET. With .NET 5, your code and project files will look and feel the same no matter which type of app you're building. You’ll have access to the same runtime, APIs, and language capabilities with each app. This includes new [performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/) that get committed to the runtime, practically daily. For more details refer [What's new in .NET 5](https://docs.microsoft.com/dotnet/core/dotnet-five).
+
 ![All domains of .NET 5](./media/whats-new-dotnet-core/all-domains-of-dotnet5.png)
 
-## .NET Framework vs. .NET Core
+## .NET Framework vs. .NET 5
 
-So now that you understand the relevance of .NET Core inside the Microsoft strategy for .NET, you might be wondering what happens with .NET Framework. You could be asking questions like: do you have to abandon it? Is it going to disappear? What are my choices to modernize the applications I have on .NET Framework?
+So now that you understand the relevance of .NET, you might be wondering what happens with .NET Framework. You could be asking questions like: do you have to abandon it? Is it going to disappear? What are my choices to modernize the applications I have on .NET Framework?
 
 In 2019 the last version of the **.NET Framework - 4.8** was released. It included three major improvements for desktop applications:
 
@@ -64,15 +74,15 @@ In 2019 the last version of the **.NET Framework - 4.8** was released. It includ
 
 Since .NET Framework is installed on millions of machines, Microsoft will continue to support it but won't add new features.
 
-.NET Core is the open-source, cross-platform, and fast-moving version of .NET. Because of its side-by-side nature, it can take changes without the fear of breaking any application. This means that .NET Core will get new APIs and language features over time that .NET Framework won't. Also, **.NET Core** already has features that were impossible for .NET Framework, such as:
+.NET 5 is the open-source, cross-platform, and fast-moving version of .NET family. Because of its side-by-side nature, it can take changes without the fear of breaking any application. This means that .NET will get new APIs and language features over time that .NET Framework won't. Also, **.NET** already has features that were impossible for .NET Framework, such as:
 
-- **Side-by-side versions of .NET supporting Windows Forms and WPF**: This solves the problem of side effects when updating the machine's framework version. Multiple versions of .NET Core can be installed on the same machine and each application specifies which version of .NET Core it should use. Even more, now you can develop and run Windows Forms and WPF on top of .NET Core.
-- **Embed .NET directly into an application**: You can deploy .NET Core as part of your application package. This enables you to take advantage of the latest version, features, and APIs without having to wait for a specific version to be installed on the machine.
-- **Take advantage of .NET Core features**: .NET Core is the fast-moving, open-source version of .NET. Its side-by-side nature enables fast introduction of new innovative APIs and Base Class Libraries (BCL) improvements without the risk of breaking compatibility. Now Windows Forms and WPF applications can take advantage of the latest .NET Core features, which also includes more fundamental fixes for runtime performance, high-DPI support, and so on.
+- **Side-by-side versions of .NET supporting Windows Forms and WPF**: This solves the problem of side effects when updating the machine's framework version. Multiple versions of .NET can be installed on the same machine and each application specifies which version of .NET it should use. Even more, now you can develop and run Windows Forms and WPF on top of .NET.
+- **Embed .NET directly into an application**: You can deploy .NET as part of your application package. This enables you to take advantage of the latest version, features, and APIs without having to wait for a specific version to be installed on the machine.
+- **Take advantage of .NET features**: .NET Core is the fast-moving, open-source version of .NET. Its side-by-side nature enables fast introduction of new innovative APIs and Base Class Libraries (BCL) improvements without the risk of breaking compatibility. Now Windows Forms and WPF applications can take advantage of the latest .NET features, which also includes more fundamental fixes for runtime performance, high-DPI support, and so on.
 
-An essential part of the roadmap for Microsoft was to ease developers to move applications to .NET Core and in future to .NET 5. But if you have existing .NET Framework applications, you shouldn't feel pressured to move to .NET Core. .NET Framework will be fully supported and will always be a part of Windows. However, if you want to use the newest language features and APIs in the future, you'll need to move your applications to .NET Core.
+An essential part of the roadmap for Microsoft was to ease developers to move applications to .NET Core and in later to .NET 5. But if you have existing .NET Framework applications, you shouldn't feel pressured to move to .NET 5. .NET Framework will be fully supported and will always be a part of Windows. However, if you want to use the newest language features and APIs in the future, you'll need to move your applications to .NET.
 
-For your brand-new desktop applications, we recommend starting directly on .NET Core. It's lightweight and cross platform, runs side by side, has high performance, and fits perfectly on containers and microservices architectures.
+For your brand-new desktop applications, we recommend starting directly on .NET 5. It's lightweight and cross platform, runs side by side, has high performance, and fits perfectly on containers and microservices architectures.
 
 ![You can update your .NET Framework applications using the latest .NET Framework version or port your applications to .NET Core](./media/whats-new-dotnet-core/framework-vs-core.png)
 

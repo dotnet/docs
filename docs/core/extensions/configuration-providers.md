@@ -192,8 +192,8 @@ The following commands test the custom prefix:
 
 ```dotnetcli
 set CustomPrefix__SecretKey="Secret key with CustomPrefix_ environment"
-set CustomPrefix_TransientFaultHandlingOptions__Enabled=true
-set CustomPrefix_TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
+set CustomPrefix__TransientFaultHandlingOptions__Enabled=true
+set CustomPrefix__TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
 
 dotnet run
 ```

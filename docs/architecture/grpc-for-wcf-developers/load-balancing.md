@@ -1,7 +1,7 @@
 ---
 title: Load balancing gRPC - gRPC for WCF developers
 description: Choosing a load balancer to work with gRPC services.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Load balancing gRPC
@@ -12,7 +12,7 @@ Load balancers are classified according to the *layer* they operate on. Layer 4 
 
 ## L4 load balancers
 
-An L4 load balancer accepts a TCP connection request from a client, opens another connection to one of the back-end instances, and copies data between the two connections with no real processing. L4 offers excellent performance and low latency, but very little control or intelligence. As long as the client keeps the connection open, all requests will be directed to the same back-end instance.
+An L4 load balancer accepts a TCP connection request from a client, opens another connection to one of the back-end instances, and copies data between the two connections with no real processing. L4 offers excellent performance and low latency, but with little control or intelligence. As long as the client keeps the connection open, all requests will be directed to the same back-end instance.
 
  [Azure Load Balancer](https://azure.microsoft.com/services/load-balancer/) is an example of an L4 load balancer.
 
@@ -26,7 +26,7 @@ Examples of L7 load balancers:
 - [HAProxy](https://www.haproxy.com/)
 - [Traefik](https://traefik.io/)
 
-As a rule of thumb, L7 load balancers are the best choice for gRPC and other HTTP/2 applications (and for HTTP applications generally, in fact). L4 load balancers will *work* with gRPC applications, but they're mainly useful when low latency and low overhead are important.
+As a rule of thumb, L7 load balancers are the best choice for gRPC and other HTTP/2 applications (and for HTTP applications generally, in fact). L4 load balancers will *work* with gRPC applications, but they're primarily useful when low latency and low overhead are important.
 
 > [!IMPORTANT]
 > At the time of this writing, some L7 load balancers don't support all the parts of the HTTP/2 specification that are required by gRPC services, such as trailing headers.

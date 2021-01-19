@@ -12,12 +12,20 @@
     - name: Breaking changes
       href: fx-core.md
     - name: Unavailable technologies
-      href: ../porting/net-framework-tech-unavailable.md?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+      href: ../porting/net-framework-tech-unavailable.md
     - name: APIs that always throw
       href: unsupported-apis.md
   - name: Breaking changes by version
     expanded: true
     items:
+    - name: .NET 6.0
+      items:
+      - name: Overview
+        href: 6.0.md
+      - name: Windows Forms
+        items:
+        - name: TableLayoutSettings properties throw InvalidEnumArgumentException
+          href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
     - name: .NET 5.0
       items:
       - name: Overview
@@ -551,6 +559,10 @@
         href: visualbasic.md
     - name: Windows Forms
       items:
+      - name: .NET 6.0
+        items:
+        - name: TableLayoutSettings properties throw InvalidEnumArgumentException
+          href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
       - name: .NET 5.0
         items:
         - name: OutputType set to WinExe

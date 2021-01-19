@@ -3,7 +3,7 @@ title: Install .NET on SLES - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on SLES.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 01/06/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on SLES
@@ -35,10 +35,6 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
-
 ## SLES 15 ✔️
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -67,6 +63,10 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-p
 
 [!INCLUDE [linux-zyp-install-50](includes/linux-install-50-zyp.md)]
 
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
 ## Troubleshoot the package manager
 
 This section provides information on common errors you may get while using the package manager to install .NET.
@@ -94,14 +94,7 @@ For .NET apps that use the *System.Drawing.Common* assembly, you'll also need th
   > [!WARNING]
   > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
 
-## Scripted install
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## Manual install
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

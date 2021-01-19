@@ -1,7 +1,7 @@
 ---
 title: Migrate WCF duplex services to gRPC - gRPC for WCF developers
 description: Learn how to migrate various forms of WCF duplex services to gRPC streaming services.
-ms.date: 09/02/2019
+ms.date: 12/15/2020
 ---
 
 # Migrate WCF duplex services to gRPC
@@ -170,7 +170,7 @@ The `WriteUpdateAsync` method has a `try`/`catch` block to handle any errors tha
 
 ### Use StockTickerService from a client application
 
-Follow the same steps in the previous section to create a shareable client class library from the `.proto` file. In the sample, there's a .NET Core 3.0 console application that demonstrates how to use the client.
+Follow the same steps in the previous section to create a shareable client class library from the `.proto` file. In the sample, there's a .NET console application that demonstrates how to use the client.
 
 #### Example Program.cs
 
@@ -381,7 +381,7 @@ private async Task HandleActions(IAsyncStreamReader<ActionMessage> requestStream
 
 ### Use FullStockTickerService from a client application
 
-There's a simple .NET Core 3.0 WPF application that demonstrates the use of this more complex client. You can find the full application on [GitHub](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTicker).
+There's a simple .NET WPF application that demonstrates the use of this more complex client. You can find the full application on [GitHub](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTicker).
 
 The client is used in the `MainWindowViewModel` class, which gets an instance of the `FullStockTicker.FullStockTickerClient` type from dependency injection:
 

@@ -292,7 +292,7 @@ After running this command, an HTML file represents the generated report.
 
 ## See also
 
-- [Visual Studio unit test cover coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
+- [Visual Studio unit test code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)
 - [GitHub - Coverlet repository](https://github.com/coverlet-coverage/coverlet)
 - [GitHub - ReportGenerator repository](https://github.com/danielpalme/ReportGenerator)
 - [ReportGenerator project site](https://danielpalme.github.io/ReportGenerator)

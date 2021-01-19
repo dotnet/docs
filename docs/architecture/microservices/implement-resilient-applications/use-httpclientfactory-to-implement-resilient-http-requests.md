@@ -1,13 +1,13 @@
 ---
 title: Use IHttpClientFactory to implement resilient HTTP requests
 description: Learn how to use IHttpClientFactory, available since .NET Core 2.1, for creating `HttpClient` instances, making it easy for you to use it in your applications. 
-ms.date: 08/31/2020
+ms.date: 01/13/2021
 ---
 # Use IHttpClientFactory to implement resilient HTTP requests
 
 <xref:System.Net.Http.IHttpClientFactory> is a contract implemented by `DefaultHttpClientFactory`, an opinionated factory, available since .NET Core 2.1, for creating <xref:System.Net.Http.HttpClient> instances to be used in your applications.
 
-## Issues with the original HttpClient class available in .NET Core
+## Issues with the original HttpClient class available in .NET
 
 The original and well-known <xref:System.Net.Http.HttpClient> class can be easily used, but in some cases, it isn't being properly used by many developers.
 
@@ -184,7 +184,7 @@ Up to this point, the above code snippet has only shown the example of performin
 
 ## Additional resources
 
-- **Using HttpClientFactory in .NET Core**  
+- **Using HttpClientFactory in .NET**  
   [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
 - **HttpClientFactory source code in the `dotnet/extensions` GitHub repository**  

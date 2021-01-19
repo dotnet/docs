@@ -18,7 +18,7 @@ ms.custom: "updateeachrelease"
   * [Windows Forms](/dotnet/desktop/winforms/)
   * [Universal Windows Platform (UWP)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)
 * [Games](https://dotnet.microsoft.com/apps/games)
-* [Internet of Things (IoT)](/dotnet/iot)
+* [Internet of Things (IoT)](../iot/index.yml)
 * [Machine learning](../machine-learning/index.yml)
 * [Console apps](tutorials/with-visual-studio-code.md)
 * [Windows services](/aspnet/core/host-and-deploy/windows-service)
@@ -138,6 +138,13 @@ The SDK download includes the following components:
 * [Runtime libraries](#runtime-libraries). Provides primitive data types and fundamental utilities.
 * The ASP.NET Core runtime. Provides basic services for internet-connected apps, such as web apps, IoT apps, and mobile backends.
 * The desktop runtime. Provides basic services for Windows desktop apps, including Windows Forms and WPF.
+
+The runtime download includes the following components:
+
+* Optionally, the desktop or ASP.NET Core runtime.
+* The [.NET runtime](#clr). Provides a type system, assembly loading, a garbage collector, native interop, and other basic services.
+* [Runtime libraries](#runtime-libraries). Provides primitive data types and fundamental utilities.
+* The `dotnet` [driver](tools/index.md#driver). A CLI command that runs framework-dependent apps.
 
 For more information, see the following resources:
 

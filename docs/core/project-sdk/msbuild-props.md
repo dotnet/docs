@@ -73,13 +73,67 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 </PropertyGroup>
 ```
 
-## Publish properties and items
+## Publish properties, items, and metadata
 
+- [AppendRuntimeIdentifierToOutputPath](#appendruntimeidentifiertooutputpath)
+- [AppendTargetFrameworkToOutputPath](#appendtargetframeworktooutputpath)
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
+- [CopyToPublishDirectory](#copytopublishdirectory)
+- [LinkBase](#linkbase)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [TrimmerRootAssembly](#trimmerrootassembly)
 - [UseAppHost](#useapphost)
+
+### CopyToPublishDirectory
+
+The `CopyToPublishDirectory` metadata on an MSBuild item controls when the item is copied to the publish directory. Allowable values are `PreserveNewest`, which only copies the item if it has changed, `Always`, which always copies the item, and `Never`, which never copies the item. From a performance standpoint, `PreserveNewest` is preferable because it enables an incremental build.
+
+```xml
+<ItemGroup>
+  <None Update="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+</ItemGroup>
+```
+
+### LinkBase
+
+For an item that's outside of the project directory and its subdirectories, the publish target uses the item's [Link metadata](/visualstudio/msbuild/common-msbuild-item-metadata) to determine where to copy the item to. `Link` also determines how items outside of the project tree are displayed in the Solution Explorer window of Visual Studio.
+
+If `Link` is not specified for an item that's outside of the project cone, it defaults to `%(LinkBase)\%(RecursiveDir)%(Filename)%(Extension)`. `LinkBase` lets you specify a sensible base folder for items outside of the project cone. The folder hierarchy under the base folder is preserved via `RecursiveDir`. If `LinkBase` is not specified, it's omitted from the `Link` path.
+
+```xml
+<ItemGroup>
+  <Content Include="..\Extras\**\*.cs" LinkBase="Shared"/>
+</ItemGroup>
+```
+
+The following image shows how a file that's included via the previous item `Include` glob displays in Solution Explorer.
+
+:::image type="content" source="media/solution-explorer-linkbase.png" alt-text="Solution Explorer showing item with LinkBase metadata.":::
+
+### AppendTargetFrameworkToOutputPath
+
+The `AppendTargetFrameworkToOutputPath` property controls whether the [target framework moniker (TFM)](../../standard/frameworks.md) is appended to the output path (which is defined by [OutputPath](/visualstudio/msbuild/common-msbuild-project-properties#list-of-common-properties-and-parameters)). The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendTargetFrameworkToOutputPath` to `false` prevents the TFM from being appended to the output path. However, without the TFM in the output path, multiple build artifacts may overwrite each other.
+
+For example, for a .NET 5.0 app, the output path changes from `bin\Debug\net5.0` to `bin\Debug` with the following setting:
+
+```xml
+<PropertyGroup>
+  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+</PropertyGroup>
+```
+
+### AppendRuntimeIdentifierToOutputPath
+
+The `AppendRuntimeIdentifierToOutputPath` property controls whether the [runtime identifier (RID)](../rid-catalog.md) is appended to the output path. The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendRuntimeIdentifierToOutputPath` to `false` prevents the RID from being appended to the output path.
+
+For example, for a .NET 5.0 app and an RID of `win10-x64`, the output path changes from `bin\Debug\net5.0\win10-x64` to `bin\Debug\net5.0` with the following setting:
+
+```xml
+<PropertyGroup>
+  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+</PropertyGroup>
+```
 
 ### CopyLocalLockFileAssemblies
 
@@ -175,7 +229,86 @@ The `LangVersion` property lets you specify a specific programming language vers
 
 For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
 
+## Default item inclusion properties
+
+- [DefaultExcludesInProjectFolder](#defaultexcludesinprojectfolder)
+- [DefaultItemExcludes](#defaultitemexcludes)
+- [EnableDefaultCompileItems](#enabledefaultcompileitems)
+- [EnableDefaultEmbeddedResourceItems](#enabledefaultembeddedresourceitems)
+- [EnableDefaultItems](#enabledefaultitems)
+- [EnableDefaultNoneItems](#enabledefaultnoneitems)
+
+For more information, see [Default includes and excludes](overview.md#default-includes-and-excludes).
+
+### DefaultItemExcludes
+
+Use the `DefaultItemExcludes` property to define glob patterns for files and folders that should be excluded from the include, exclude, and remove globs. By default, the *./bin* and *./obj* folders are excluded from the glob patterns.
+
+```xml
+<PropertyGroup>
+  <DefaultItemExcludes>$(DefaultItemExcludes);**/*.myextension</DefaultItemExcludes>
+</PropertyGroup>
+```
+
+### DefaultExcludesInProjectFolder
+
+Use the `DefaultExcludesInProjectFolder` property to define glob patterns for files and folders in the project folder that should be excluded from the include, exclude, and remove globs. By default, folders that start with a period (`.`), such as *.git* and *.vs*, are excluded from the glob patterns.
+
+This property is very similar to the `DefaultItemExcludes` property, except that it only considers files and folders in the project folder. When a glob pattern would unintentionally match items outside the project folder with a relative path, use the `DefaultExcludesInProjectFolder` property instead of the `DefaultItemExcludes` property.
+
+```xml
+<PropertyGroup>
+  <DefaultExcludesInProjectFolder>$(DefaultExcludesInProjectFolder);**/myprefix*/**</DefaultExcludesInProjectFolder>
+</PropertyGroup>
+```
+
+### EnableDefaultItems
+
+The `EnableDefaultItems` property controls whether compile items, embedded resource items, and `None` items are implicitly included in the project. The default value is `true`. Set the `EnableDefaultItems` property to `false` to disable all implicit file inclusion.
+
+```xml
+<PropertyGroup>
+  <EnableDefaultItems>false</EnableDefaultItems>
+</PropertyGroup>
+```
+
+### EnableDefaultCompileItems
+
+The `EnableDefaultCompileItems` property controls whether compile items are implicitly included in the project. The default value is `true`. Set the `EnableDefaultCompileItems` property to `false` to disable implicit inclusion of *.cs and other language-extension files.
+
+```xml
+<PropertyGroup>
+  <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+</PropertyGroup>
+```
+
+### EnableDefaultEmbeddedResourceItems
+
+The `EnableDefaultEmbeddedResourceItems` property controls whether embedded resource items are implicitly included in the project. The default value is `true`. Set the `EnableDefaultEmbeddedResourceItems` property to `false` to disable implicit inclusion of embedded resource files.
+
+```xml
+<PropertyGroup>
+  <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+</PropertyGroup>
+```
+
+### EnableDefaultNoneItems
+
+The `EnableDefaultNoneItems` property controls whether `None` items (files that have no role in the build process) are implicitly included in the project. The default value is `true`. Set the `EnableDefaultNoneItems` property to `false` to disable implicit inclusion of `None` items.
+
+```xml
+<PropertyGroup>
+  <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+</PropertyGroup>
+```
+
 ## Code analysis properties
+
+- [AnalysisLevel](#analysislevel)
+- [AnalysisMode](#analysismode)
+- [CodeAnalysisTreatWarningsAsErrors](#codeanalysistreatwarningsaserrors)
+- [EnableNETAnalyzers](#enablenetanalyzers)
+- [EnforceCodeStyleInBuild](#enforcecodestyleinbuild)
 
 ### AnalysisLevel
 
@@ -367,7 +500,7 @@ The `TieredCompilationQuickJitForLoops` property configures whether the JIT comp
 
 ### AssetTargetFallback
 
-The `AssetTargetFallback` property lets you specify additional compatible framework versions for project references and NuGet packages. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`.
+The `AssetTargetFallback` property lets you specify additional compatible framework versions for project references and NuGet packages. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`. This property replaces the deprecated property `PackageTargetFallback`.
 
 You can set the `AssetTargetFallback` property to one or more [target framework versions](../../standard/frameworks.md#supported-target-frameworks).
 
@@ -393,7 +526,7 @@ Set this property to `true` to disable implicit `FrameworkReference` or [Package
 
 The `PackageReference` item defines a reference to a NuGet package.
 
-The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges). You can also add the following metadata to a project reference: `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets`.
+The `Include` attribute specifies the package ID. The `Version` attribute specifies the version or version range. For information about how to specify a minimum version, maximum version, range, or exact match, see [Version ranges](/nuget/concepts/package-versioning#version-ranges). You can also add [asset attributes](#asset-attributes) to a package reference.
 
 The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
 
@@ -404,6 +537,31 @@ The project file snippet in the following example references the [System.Runtime
 ```
 
 For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
+
+#### Asset attributes
+
+The `IncludeAssets`, `ExcludeAssets`, and `PrivateAssets` metadata can be added to a package reference.
+
+| Attribute | Description |
+| - | - |
+| `IncludeAssets` | Specifies which assets belonging to the package specified by `<PackageReference>` should be consumed. By default, all package assets are included. |
+| `ExcludeAssets`| Specifies which assets belonging to the package specified by `<PackageReference>` should not be consumed. |
+| `PrivateAssets` | Specifies which assets belonging to the package specified by `<PackageReference>` should be consumed but not flow to the next project. The `Analyzers`, `Build`, and `ContentFiles` assets are private by default when this attribute is not present. |
+
+These attributes can contain one or more of the following items, separated by a semicolon `;` if more than
+one is listed:
+
+- `Compile` – the contents of the *lib* folder are available to compile against.
+- `Runtime` – the contents of the *runtime* folder are distributed.
+- `ContentFiles` – the contents of the *contentfiles* folder are used.
+- `Build` – the props/targets in the *build* folder are used.
+- `Native` – the contents from native assets are copied to the *output* folder for runtime.
+- `Analyzers` – the analyzers are used.
+
+Alternatively, the attribute can contain:
+
+- `None` – none of the assets are used.
+- `All` – all assets are used.
 
 ### ProjectReference
 
@@ -443,7 +601,37 @@ Restoring a referenced package installs all of its direct dependencies and all t
 </PropertyGroup>
 ```
 
-## Hosting properties and items
+## Run properties
+
+The following properties are used for launching an app with the [`dotnet run`](../tools/dotnet-run.md) command:
+
+- [RunArguments](#runarguments)
+- [RunWorkingDirectory](#runworkingdirectory)
+
+### RunArguments
+
+The `RunArguments` property defines the arguments that are passed to the app when it is run.
+
+```xml
+<PropertyGroup>
+  <RunArguments>-mode dryrun</RunArguments>
+</PropertyGroup>
+```
+
+> [!TIP]
+> You can specify additional arguments to be passed to the app by using the [`--` option for `dotnet run`](../tools/dotnet-run.md#options).
+
+### RunWorkingDirectory
+
+The `RunWorkingDirectory` property defines the working directory for the application process to be started in. It can be an absolute path or a path that's relative to the project directory. If you don't specify a directory, `OutDir` is used as the working directory.
+
+```xml
+<PropertyGroup>
+  <RunWorkingDirectory>c:\temp</RunWorkingDirectory>
+</PropertyGroup>
+```
+
+## Hosting properties
 
 - [EnableComHosting](#enablecomhosting)
 - [EnableDynamicLoading](#enabledynamicloading)

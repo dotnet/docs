@@ -1,7 +1,7 @@
 ---
 title: Build resilient services ready for the cloud. Embrace transient failures in the cloud
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Build resilient services ready for the cloud. Embrace transient failures in the cloud
-ms.date: 04/30/2018
+ms.date: 12/21/2020
 ---
 # Build resilient services ready for the cloud: Embrace transient failures in the cloud
 
@@ -29,7 +29,7 @@ You can use these techniques both in HTTP resources and in database resources. I
 
 When implementing resilient communications that access the database, depending on the version of .NET you are using, it can be straightforward (for example, [with Entity Framework 6 or later](/ef/ef6/fundamentals/connection-resiliency/retry-logic). It's just a matter of configuring the database connection). Or, you might need to use additional libraries like the [Transient Fault Handling Application Block](/previous-versions/msp-n-p/hh680934(v=pandp.50)) (for earlier versions of .NET), or even implement your own library.
 
-When implementing HTTP retries and circuit breakers, the recommendation for .NET is to use the [Polly](https://github.com/App-vNext/Polly) library, which targets .NET Framework 4.0, .NET Framework 4.5, and .NET Standard 1.1, which includes .NET Core support.
+When implementing HTTP retries and circuit breakers, the recommendation for .NET is to use the [Polly](https://github.com/App-vNext/Polly) library, which targets .NET Standard 1.1 (coverage: .NET Core 1.0, Mono, Xamarin, UWP, WP8.1+) and .NET Standard 2.0+ (coverage: .NET Core 2.0+, .NET Core 3.0, and later Mono, Xamarin and UWP targets). The nuget package also includes direct targets for .NET Framework 4.6.1 and 4.7.2.
 
 To learn how to implement strategies for handling partial failures in the cloud, see the following references.
 

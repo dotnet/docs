@@ -29,6 +29,9 @@ There are two ways to download and install `dotnet-trace`:
   | macOS   | [x64](https://aka.ms/dotnet-trace/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-trace/linux-x64) \| [arm](https://aka.ms/dotnet-trace/linux-arm) \| [arm64](https://aka.ms/dotnet-trace/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-trace/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-trace/linux-musl-arm64) |
 
+> [!NOTE]
+> To use `dotnet-trace` on an x86 app, you need a corresponding x86 version of the tool.
+
 ## Synopsis
 
 ```console
@@ -89,7 +92,47 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--clrevents <clrevents>`**
 
-  List of CLR runtime events to emit.
+  A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect --clrevents gc+gchandle --clreventlevel informational`. The table below shows the list of available keywords:
+
+  | Keyword String Alias | Keyword Hex Value |
+  | ------------ | ------------------- |
+  | `gc` | `0x1` |
+  | `gchandle` | `0x2` |
+  | `fusion` | `0x4` |
+  | `loader` | `0x8` |
+  | `jit` | `0x10` |
+  | `ngen` | `0x20` |
+  | `startenumeration` | `0x40` |
+  | `endenumeration` | `0x80` |
+  | `security` | `0x400` |
+  | `appdomainresourcemanagement` | `0x800` |
+  | `jittracing` | `0x1000` |
+  | `interop` | `0x2000` |
+  | `contention` | `0x4000` |
+  | `exception` | `0x8000` |
+  | `threading` | `0x10000` |
+  | `jittedmethodiltonativemap` | `0x20000` |
+  | `overrideandsuppressngenevents` | `0x40000` |
+  | `type` | `0x80000` |
+  | `gcheapdump` | `0x100000` |
+  | `gcsampledobjectallocationhigh` | `0x200000` |
+  | `gcheapsurvivalandmovement` | `0x400000` |
+  | `gcheapcollect` | `0x800000` |
+  | `gcheapandtypenames` | `0x1000000` |
+  | `gcsampledobjectallocationlow` | `0x2000000` |
+  | `perftrack` | `0x20000000` |
+  | `stack` | `0x40000000` |
+  | `threadtransfer` | `0x80000000` |
+  | `debugger` | `0x100000000` |
+  | `monitoring` | `0x200000000` |
+  | `codesymbols` | `0x400000000` |
+  | `eventsource` | `0x800000000` |
+  | `compilation` | `0x1000000000` |
+  | `compilationdiagnostic` | `0x2000000000` |
+  | `methoddiagnostic` | `0x4000000000` |
+  | `typediagnostic` | `0x8000000000` |
+
+  You can read about the CLR provider more in detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
 
 - **`--format {Chromium|NetTrace|Speedscope}`**
 
@@ -140,6 +183,12 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 > [!NOTE]
 > Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.
+
+> [!NOTE]
+> On Linux and macOS, this command expects the target application and `dotnet-trace` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
+
+> [!NOTE]
+> To collect a trace using `dotnet-trace`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
 
 ## dotnet-trace convert
 

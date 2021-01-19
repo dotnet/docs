@@ -8,59 +8,51 @@
     },
     "areas": [
         {
-            "name": ".",
+            "names": ["."],
             "heading": "Home"
         },
         {
-            "name": "architecture",
+            "names": ["architecture"],
             "heading": "Architecture guides"
         },
         {
-            "name": "azure",
+            "names": ["azure"],
             "heading": "Azure .NET SDK"
         },
         {
-            "name": "core",
-            "heading": ".NET Core"
-        },
-        {
-            "name": "csharp",
+            "names": ["csharp"],
             "heading": "C# language"
         },
         {
-            "name": "desktop-wpf",
+            "names": ["desktop-wpf"],
             "heading": ".NET Core desktop"
         },
         {
-            "name": "framework",
+            "names": ["framework"],
             "heading": ".NET Framework"
         },
         {
-            "name": "fsharp",
+            "names": ["fsharp"],
             "heading": "F# language"
         },
         {
-            "name": "fundamentals",
+            "names": ["core", "fundamentals", "standard"],
             "heading": ".NET fundamentals"
         },
         {
-            "name": "iot",
+            "names": ["iot"],
             "heading": ".NET IoT libraries"
         },
         {
-            "name": "machine-learning",
+            "names": ["machine-learning"],
             "heading": "ML.NET"
         },
         {
-            "name": "spark",
+            "names": ["spark"],
             "heading": ".NET for Apache Spark"
         },
         {
-            "name": "standard",
-            "heading": ".NET"
-        },
-        {
-            "name": "visual-basic",
+            "names": ["visual-basic"],
             "heading": "Visual Basic language"
         }
     ]

@@ -3,7 +3,7 @@ title: Install .NET on Debian - .NET
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/10/2020
+ms.date: 01/06/2021
 ---
 
 # Install the .NET SDK or the .NET Runtime on Debian
@@ -37,10 +37,6 @@ The following versions of .NET are no longer supported. The downloads for these 
 ## Remove preview versions
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
-
-## How to install other versions
-
-[!INCLUDE [hack-pkgname](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## Debian 10 ✔️
 
@@ -85,7 +81,11 @@ sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 
 [!INCLUDE [linux-apt-install-21](includes/linux-install-21-apt.md)]
 
-## APT update SDK or runtime
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## Use APT to update .NET
 
 When a new patch release is available for .NET, you can simply upgrade it through APT with the following commands:
 
@@ -124,10 +124,6 @@ sudo apt-get update; \
 
 [!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]
 
-## Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## Dependencies
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
@@ -151,14 +147,7 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you also need 
   > [!WARNING]
   > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
 
-## Scripted install
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## Manual install
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## Next steps
 
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

@@ -1,4 +1,5 @@
 ﻿Imports System.Text.Json
+Imports System.Text.Json.Serialization
 
 Namespace QuotedNumbers
 
@@ -11,9 +12,16 @@ Namespace QuotedNumbers
     Public NotInheritable Class Program
 
         Public Shared Sub Main()
-            Dim forecast1 As New Forecast
+            Dim forecast1 As Forecast = New Forecast() With {
+                .Date = DateTime.Now,
+                .TemperatureC = 40,
+                .Summary = "Hot"
+            }
 
-            Dim options As New JsonSerializerOptions
+            Dim options As JsonSerializerOptions = New JsonSerializerOptions() With {
+                .NumberHandling = JsonNumberHandling.AllowReadingFromString Or JsonNumberHandling.WriteAsString,
+                .WriteIndented = True
+            }
 
             Dim forecastJson As String = JsonSerializer.Serialize(forecast1, options)
 

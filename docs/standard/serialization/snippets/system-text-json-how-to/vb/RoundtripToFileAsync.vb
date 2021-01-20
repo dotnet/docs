@@ -1,9 +1,10 @@
 ﻿Imports System.IO
 Imports System.Text.Json
-Imports System.Threading.Tasks
 
 Namespace SystemTextJsonSamples
+
     Public Class RoundtripToFileAsync
+
         Public Shared Async Function RunAsync() As Task
             Dim fileName As String = "WeatherForecastAsync.json"
             Dim weatherForecast1 As WeatherForecast = WeatherForecastFactories.CreateWeatherForecast()
@@ -22,5 +23,7 @@ Namespace SystemTextJsonSamples
             ' </Deserialize>
             weatherForecast1.DisplayPropertyValues()
         End Function
+
     End Class
+
 End Namespace

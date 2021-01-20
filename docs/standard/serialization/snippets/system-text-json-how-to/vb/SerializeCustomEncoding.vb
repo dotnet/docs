@@ -2,10 +2,13 @@
 Imports System.Text.Encodings.Web
 Imports System.Text.Json
 Imports System.Text.Unicode
+
 ' </Usings>
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class SerializeCustomEncoding
+
         Public Shared Sub Run()
             Dim jsonString As String
             Dim weatherForecast1 As WeatherForecast = WeatherForecastFactories.CreateWeatherForecastCyrillic()
@@ -54,5 +57,7 @@ Namespace SystemTextJsonSamples
             ' </UnsafeRelaxed>
             Console.WriteLine(jsonString)
         End Sub
+
     End Class
+
 End Namespace

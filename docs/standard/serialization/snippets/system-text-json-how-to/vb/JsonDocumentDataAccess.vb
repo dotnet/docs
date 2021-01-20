@@ -1,8 +1,10 @@
-Imports System.IO
+﻿Imports System.IO
 Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class JsonDocumentDataAccess
+
         Public Shared Sub Run()
             Dim inputFileName As String = "Grades.json"
             Dim jsonString As String = File.ReadAllText(inputFileName)
@@ -10,6 +12,7 @@ Namespace SystemTextJsonSamples
             AverageGrades(jsonString)
             AverageGrades_Alternative(jsonString)
         End Sub
+
         Private Shared Sub AverageGrades(jsonString As String)
             ' <AverageGrades1>
             Dim sum As Double = 0
@@ -32,6 +35,7 @@ Namespace SystemTextJsonSamples
             Console.WriteLine($"Average grade : {average}")
             ' </AverageGrades1>
         End Sub
+
         Private Shared Sub AverageGrades_Alternative(jsonString As String)
             ' <AverageGrades2>
             Dim sum As Double = 0
@@ -56,5 +60,7 @@ Namespace SystemTextJsonSamples
             Console.WriteLine($"Average grade : {average}")
             ' </AverageGrades2>
         End Sub
+
     End Class
+
 End Namespace

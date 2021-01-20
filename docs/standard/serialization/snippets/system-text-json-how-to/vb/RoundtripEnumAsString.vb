@@ -2,7 +2,9 @@
 Imports System.Text.Json.Serialization
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class RoundtripEnumAsString
+
         Public Shared Sub Run()
             Dim jsonString As String
             Dim weatherForecast As WeatherForecastWithEnum = WeatherForecastFactories.CreateWeatherForecastWithEnum()
@@ -30,5 +32,7 @@ Namespace SystemTextJsonSamples
             ' </Deserialize>
             weatherForecast.DisplayPropertyValues()
         End Sub
+
     End Class
+
 End Namespace

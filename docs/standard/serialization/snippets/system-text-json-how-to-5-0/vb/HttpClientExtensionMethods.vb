@@ -1,12 +1,8 @@
-﻿Option Compare Text
-Option Explicit On
-Option Infer On
-Option Strict On
-Imports System.Net.Http
+﻿Imports System.Net.Http
 Imports System.Net.Http.Json
-Imports System.Threading.Tasks
 
 Namespace HttpClientExtensionMethods
+
     Public Class User
         Public Property Id As Integer
         Public Property Name As String
@@ -14,9 +10,8 @@ Namespace HttpClientExtensionMethods
         Public Property Email As String
     End Class
 
-
-
     Public Class Program
+
         Public Shared Async Function Main() As Task
             Using client As New HttpClient With {
                 .BaseAddress = New Uri("https://jsonplaceholder.typicode.com")}
@@ -34,7 +29,9 @@ Namespace HttpClientExtensionMethods
                 $"{(If(response.IsSuccessStatusCode, "Success", "Error"))} - {response.StatusCode}")
             End Using
         End Function
+
     End Class
+
 End Namespace
 
 ' Produces output like the following example but with different names:

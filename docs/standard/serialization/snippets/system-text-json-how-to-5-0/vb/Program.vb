@@ -5,7 +5,7 @@
             Call Main1(args).Wait()
         End Sub
 
-        Private Async Function Main1(args As String()) As Task
+        Private Async Function Main1(_0 As String()) As Task
             Console.WriteLine("======== Preserve references =========")
             PreserveReferences.Program.Main()
             Console.WriteLine()

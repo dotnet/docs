@@ -1,7 +1,8 @@
-﻿Imports System.Text.Json.Serialization
-Imports System.Runtime.CompilerServices
+﻿Imports System.Runtime.CompilerServices
+Imports System.Text.Json.Serialization
 
 Namespace SystemTextJsonSamples
+
     ' <WF>
     Public Class WeatherForecast
         Public Property [Date] As DateTimeOffset
@@ -10,9 +11,9 @@ Namespace SystemTextJsonSamples
     End Class
 
     ' </WF>
-' <WFWithReqPptyConverterAttr>
-' https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-how-to#visual-basic-support
-' </WFWithReqPptyConverterAttr>
+    ' <WFWithReqPptyConverterAttr>
+    ' https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-how-to#visual-basic-support
+    ' </WFWithReqPptyConverterAttr>
 
     ' <WFWithPrevious>
     Public Class WeatherForecastWithPrevious
@@ -34,16 +35,18 @@ Namespace SystemTextJsonSamples
 
     ' </WFWithPreviousAsObject>
 
-' <WFWithLong>
-' https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-how-to#visual-basic-support
-' </WFWithLong>
+    ' <WFWithLong>
+    ' https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-how-to#visual-basic-support
+    ' </WFWithLong>
 
     ' <WFWithDefault>
     Public Class WeatherForecastWithDefault
+
         Public Sub New()
             [Date] = DateTimeOffset.Parse("2001-01-01")
             Summary = "No summary"
         End Sub
+
         Public Property [Date] As DateTimeOffset
         Public Property TemperatureCelsius As Integer
         Public Property Summary As String
@@ -56,23 +59,27 @@ Namespace SystemTextJsonSamples
         Public Property [Date] As DateTimeOffset
         Public Property TemperatureCelsius As Integer
         Public Property Summary As String
+
         <JsonExtensionData>
         Public Property ExtensionData As Dictionary(Of String, Object)
+
     End Class
 
     ' </WFWithExtensionData>
 
-' <WFWithConverterAttribute>
-' https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-how-to#visual-basic-support
-' </WFWithConverterAttribute>
+    ' <WFWithConverterAttribute>
+    ' https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-how-to#visual-basic-support
+    ' </WFWithConverterAttribute>
 
     ' <WFWithPropertyNameAttribute>
     Public Class WeatherForecastWithPropertyNameAttribute
         Public Property [Date] As DateTimeOffset
         Public Property TemperatureCelsius As Integer
         Public Property Summary As String
+
         <JsonPropertyName("Wind")>
         Public Property WindSpeed As Integer
+
     End Class
 
     ' </WFWithPropertyNameAttribute>
@@ -81,8 +88,10 @@ Namespace SystemTextJsonSamples
     Public Class WeatherForecastWithIgnoreAttribute
         Public Property [Date] As DateTimeOffset
         Public Property TemperatureCelsius As Integer
+
         <JsonIgnore>
         Public Property Summary As String
+
     End Class
 
     ' </WFWithIgnoreAttribute>
@@ -110,6 +119,7 @@ Namespace SystemTextJsonSamples
         Public Property TemperatureCelsius As Integer
         Public Property Summary As String
         Private _windSpeedReadOnly As Integer
+
         Public Property WindSpeedReadOnly As Integer
             Get
                 Return _windSpeedReadOnly
@@ -118,6 +128,7 @@ Namespace SystemTextJsonSamples
                 _windSpeedReadOnly = Value
             End Set
         End Property
+
     End Class
 
     ' </WFWithROProperty>
@@ -144,11 +155,11 @@ Namespace SystemTextJsonSamples
         Public Property TemperatureRanges As Dictionary(Of SummaryWordsEnum, Integer)
     End Class
 
-
     Public Enum SummaryWordsEnum
         Cold
         Hot
     End Enum
+
     ' </WFWithEnumDictionary>
 
     ' <WFWithPOCOs>
@@ -161,8 +172,6 @@ Namespace SystemTextJsonSamples
         Public Property TemperatureRanges As Dictionary(Of String, HighLowTemps)
         Public Property SummaryWords As String()
     End Class
-
-
 
     Public Class HighLowTemps
         Public Property High As Integer
@@ -178,16 +187,17 @@ Namespace SystemTextJsonSamples
         Public Property Summary As Summary
     End Class
 
-
     Public Enum Summary
         Cold
         Cool
         Warm
         Hot
     End Enum
+
     ' </WFWithEnum>
 
     Public Module WeatherForecastExtensions
+
         <Extension()>
         Public Sub DisplayPropertyValues(wf As WeatherForecast)
             Utilities.DisplayPropertyValues(wf)
@@ -284,104 +294,117 @@ Namespace SystemTextJsonSamples
             Next
             Console.WriteLine()
         End Sub
+
     End Module
 
     Public Module WeatherForecastFactories
+
         Public Function CreateWeatherForecast() As WeatherForecast
             Dim weatherForecast1 As WeatherForecast = New WeatherForecast With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot"
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithPrevious() As WeatherForecastWithPrevious
             Dim weatherForecast1 As WeatherForecastWithPrevious = New WeatherForecastWithPrevious With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot",
                 .PreviousForecast = CreateWeatherForecastDerived()
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithPreviousAsObject() As WeatherForecastWithPreviousAsObject
             Dim weatherForecast1 As WeatherForecastWithPreviousAsObject = New WeatherForecastWithPreviousAsObject With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot",
                 .PreviousForecast = CreateWeatherForecastDerived()
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithROProperty() As WeatherForecastWithROProperty
             Dim weatherForecast1 As WeatherForecastWithROProperty = New WeatherForecastWithROProperty With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot"
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithEnum() As WeatherForecastWithEnum
             Dim weatherForecast1 As WeatherForecastWithEnum = New WeatherForecastWithEnum With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = Summary.Hot
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithPropertyNameAttribute() As WeatherForecastWithPropertyNameAttribute
             Dim weatherForecast1 As WeatherForecastWithPropertyNameAttribute = New WeatherForecastWithPropertyNameAttribute With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot",
                 .WindSpeed = 35
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithIgnoreAttribute() As WeatherForecastWithIgnoreAttribute
             Dim weatherForecast1 As WeatherForecastWithIgnoreAttribute = New WeatherForecastWithIgnoreAttribute With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot"
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastCyrillic() As WeatherForecast
             Dim weatherForecast1 As WeatherForecast = New WeatherForecast With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "жарко"
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithExtensionData() As WeatherForecastWithExtensionData
             Dim weatherForecast1 As WeatherForecastWithExtensionData = New WeatherForecastWithExtensionData With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot"
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastDerived() As WeatherForecastDerived
             Dim weatherForecast1 As WeatherForecastDerived = New WeatherForecastDerived With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot",
                 .WindSpeed = 35
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithObjectProperties() As WeatherForecastWithObjectProperties
             Dim weatherForecast1 As WeatherForecastWithObjectProperties = New WeatherForecastWithObjectProperties With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot"
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithEnumDictionary() As WeatherForecastWithEnumDictionary
             Dim weatherForecast1 As WeatherForecastWithEnumDictionary = New WeatherForecastWithEnumDictionary With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot",
                 .TemperatureRanges = New Dictionary(Of SummaryWordsEnum, Integer) From {
@@ -391,9 +414,10 @@ Namespace SystemTextJsonSamples
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithDictionary() As WeatherForecastWithDictionary
             Dim weatherForecast1 As WeatherForecastWithDictionary = New WeatherForecastWithDictionary With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot",
                 .TemperatureRanges = New Dictionary(Of String, Integer) From {
@@ -403,15 +427,16 @@ Namespace SystemTextJsonSamples
             }
             Return weatherForecast1
         End Function
+
         Public Function CreateWeatherForecastWithPOCOs() As WeatherForecastWithPOCOs
             Dim weatherForecast1 As WeatherForecastWithPOCOs = New WeatherForecastWithPOCOs With {
-                .[Date] = DateTime.Parse("2019-08-01"),
+                .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot",
                 .SummaryField = "Hot",
                 .DatesAvailable = New List(Of DateTimeOffset) From {
-                    DateTime.Parse("2019-08-01"),
-                    DateTime.Parse("2019-08-02")
+                    Date.Parse("2019-08-01"),
+                    Date.Parse("2019-08-02")
                 },
                 .TemperatureRanges = New Dictionary(Of String, HighLowTemps) From {
                         {"Cold", New HighLowTemps With {
@@ -426,5 +451,6 @@ Namespace SystemTextJsonSamples
             }
             Return weatherForecast1
         End Function
+
     End Module
 End Namespace

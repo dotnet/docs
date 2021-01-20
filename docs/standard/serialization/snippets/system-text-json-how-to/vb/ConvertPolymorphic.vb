@@ -1,7 +1,9 @@
 ﻿Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class ConvertPolymorphic
+
         Public Shared Sub Run()
             Dim jsonString As String
             Dim weatherForecastDerived = WeatherForecastFactories.CreateWeatherForecastDerived()
@@ -36,5 +38,7 @@ Namespace SystemTextJsonSamples
             ' </SerializeGetType>
             Console.WriteLine($"JSON output:{jsonString}")
         End Sub
+
     End Class
+
 End Namespace

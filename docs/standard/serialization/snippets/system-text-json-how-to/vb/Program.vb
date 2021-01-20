@@ -1,14 +1,12 @@
-﻿Imports System.IO
-Imports System.Text
-
-Namespace SystemTextJsonSamples
+﻿Namespace SystemTextJsonSamples
     Module Program
+
         Sub Main(args As String())
             Console.WriteLine("Hello World!")
             Call Main1(args).Wait()
         End Sub
 
-        Private Async Function Main1(args As String()) As Task
+        Private Async Function Main1(_0 As String()) As Task
             Console.WriteLine(vbCrLf & "============================= Roundtrip to string" & vbCrLf)
             RoundtripToString.Run()
 
@@ -75,5 +73,6 @@ Namespace SystemTextJsonSamples
             Console.WriteLine(vbCrLf & "============================= Utf8Writer to Stream" & vbCrLf)
             Utf8WriterToStream.Run()
         End Function
+
     End Module
 End Namespace

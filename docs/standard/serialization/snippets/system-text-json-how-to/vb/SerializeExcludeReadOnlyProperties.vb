@@ -1,7 +1,9 @@
 ﻿Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class SerializeExcludeReadOnlyProperties
+
         Public Shared Sub Run()
             Dim jsonString As String
             Dim weatherForecast As WeatherForecastWithROProperty = WeatherForecastFactories.CreateWeatherForecastWithROProperty()
@@ -17,5 +19,7 @@ Namespace SystemTextJsonSamples
             Console.WriteLine(jsonString)
             Console.WriteLine()
         End Sub
+
     End Class
+
 End Namespace

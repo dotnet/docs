@@ -12,7 +12,6 @@ Namespace NonStringKeyDictionary
                 {55, "fifty five"}
             }
 
-
             Dim options As New JsonSerializerOptions With {
                 .WriteIndented = True
             }

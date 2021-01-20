@@ -2,7 +2,9 @@
 Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class RoundtripToUtf8
+
         Public Shared Sub Run()
             Dim weatherForecast1 As WeatherForecast = WeatherForecastFactories.CreateWeatherForecast()
             weatherForecast1.DisplayPropertyValues()
@@ -27,5 +29,7 @@ Namespace SystemTextJsonSamples
             ' </Deserialize2>
             'weatherForecast1.DisplayPropertyValues()
         End Sub
+
     End Class
+
 End Namespace

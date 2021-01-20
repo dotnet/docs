@@ -2,7 +2,9 @@
 Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class JsonDocumentWriteJson
+
         Public Shared Sub Run()
             Dim inputFileName As String = "Grades.json"
             Dim outputFileName As String = "GradesOutput.json"
@@ -40,5 +42,7 @@ Namespace SystemTextJsonSamples
             ' </Serialize>
             Console.WriteLine($"Output file is {outputFileName}")
         End Sub
+
     End Class
+
 End Namespace

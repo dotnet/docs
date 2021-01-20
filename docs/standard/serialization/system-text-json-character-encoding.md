@@ -40,6 +40,9 @@ This code doesn't escape Cyrillic or Greek characters. If the `Summary` property
 }
 ```
 
+> [!NOTE]
+> Code points in the [Space_Separator [Zs] category](https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B:General_Category=Space_Separator:%5D) other than `U+0020 SPACE` are escaped even if they are included in a range that you specify shouldn't be escaped. For example, `U+3000 IDEOGRAPHIC SPACE` is escaped even if you specify [CJK Symbols and Punctuation Unicode block (U+3000-U+303F)](xref:System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation).
+
 To serialize all language sets without escaping, use <xref:System.Text.Unicode.UnicodeRanges.All?displayProperty=nameWithType>.
 
 ## Serialize specific characters

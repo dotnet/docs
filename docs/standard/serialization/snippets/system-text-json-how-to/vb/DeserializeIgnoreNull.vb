@@ -1,7 +1,9 @@
 ﻿Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class DeserializeIgnoreNull
+
         Public Shared Sub Run()
             Dim jsonString As String = "{
   ""Date"": ""2019-08-01T00:00:00-07:00"",
@@ -22,5 +24,7 @@ Namespace SystemTextJsonSamples
             ' </Deserialize>
             weatherForecast.DisplayPropertyValues()
         End Sub
+
     End Class
+
 End Namespace

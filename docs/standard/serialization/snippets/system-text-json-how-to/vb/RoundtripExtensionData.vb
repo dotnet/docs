@@ -1,7 +1,9 @@
 ﻿Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class RoundtripExtensionData
+
         Public Shared Sub Run()
             Dim jsonString As String = "{
   ""Date"": ""2019-08-01T00:00:00-07:00"",
@@ -51,5 +53,7 @@ Namespace SystemTextJsonSamples
             ' </Serialize>
             Console.WriteLine($"JSON output:{jsonString}")
         End Sub
+
     End Class
+
 End Namespace

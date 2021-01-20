@@ -1,11 +1,10 @@
-﻿
-Namespace SystemTextJsonSamples
+﻿Namespace SystemTextJsonSamples
+
     Public Interface IForecast
         Property [Date] As DateTimeOffset
         Property TemperatureCelsius As Integer
         Property Summary As String
     End Interface
-
 
     Public Class Forecast
         Implements IForecast
@@ -15,10 +14,9 @@ Namespace SystemTextJsonSamples
         Public Property WindSpeed As Integer
     End Class
 
-
-
     Public Class Forecasts
         Public Property Monday As IForecast
         Public Property Tuesday As Object
     End Class
+
 End Namespace

@@ -3,7 +3,9 @@ Imports System.Text
 Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class Utf8WriterToStream
+
         Public Shared Sub Run()
             ' <Serialize>
             Dim options As JsonWriterOptions = New JsonWriterOptions With {
@@ -25,5 +27,7 @@ Namespace SystemTextJsonSamples
 
             Console.WriteLine()
         End Sub
+
     End Class
+
 End Namespace

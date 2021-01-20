@@ -2,7 +2,9 @@
 Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class RoundtripToFile
+
         Public Shared Sub Run()
             Dim jsonString As String
             Dim fileName As String = "WeatherForecast.json"
@@ -21,5 +23,7 @@ Namespace SystemTextJsonSamples
             ' </Deserialize>
             weatherForecast1.DisplayPropertyValues()
         End Sub
+
     End Class
+
 End Namespace

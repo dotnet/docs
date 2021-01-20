@@ -1,7 +1,9 @@
 ﻿Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class SerializeCamelCaseDictionaryKeys
+
         Public Shared Sub Run()
             Dim jsonString As String
             Dim weatherForecast As WeatherForecastWithDictionary = WeatherForecastFactories.CreateWeatherForecastWithDictionary()
@@ -21,5 +23,7 @@ Namespace SystemTextJsonSamples
             ' </Deserialize>
             weatherForecast.DisplayPropertyValues()
         End Sub
+
     End Class
+
 End Namespace

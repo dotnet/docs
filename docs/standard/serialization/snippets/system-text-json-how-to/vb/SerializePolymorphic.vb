@@ -1,7 +1,9 @@
 ﻿Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class SerializePolymorphic
+
         Public Shared Sub Run()
             Dim jsonString As String
             Dim weatherForecastDerived = WeatherForecastFactories.CreateWeatherForecastDerived()
@@ -40,13 +42,13 @@ Namespace SystemTextJsonSamples
             ' <SerializeInterface>
             Dim forecasts1 As New Forecasts With {
                 .Monday = New Forecast With {
-                    .[Date] = DateTime.Parse("2020-01-06"),
+                    .[Date] = Date.Parse("2020-01-06"),
                     .TemperatureCelsius = 10,
                     .Summary = "Cool",
                     .WindSpeed = 8
                 },
                 .Tuesday = New Forecast With {
-                    .[Date] = DateTime.Parse("2020-01-07"),
+                    .[Date] = Date.Parse("2020-01-07"),
                     .TemperatureCelsius = 11,
                     .Summary = "Rainy",
                     .WindSpeed = 10
@@ -76,5 +78,7 @@ Namespace SystemTextJsonSamples
                 options)
             Console.WriteLine($"JSON output without WindSpeed:{jsonString}")
         End Sub
+
     End Class
+
 End Namespace

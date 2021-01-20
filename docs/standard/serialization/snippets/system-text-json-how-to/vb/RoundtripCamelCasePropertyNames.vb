@@ -1,7 +1,9 @@
 ﻿Imports System.Text.Json
 
 Namespace SystemTextJsonSamples
+
     Public NotInheritable Class RoundtripCamelCasePropertyNames
+
         Public Shared Sub Run()
             Dim jsonString As String
             Dim weatherForecast As WeatherForecastWithPropertyNameAttribute = WeatherForecastFactories.CreateWeatherForecastWithPropertyNameAttribute()
@@ -25,5 +27,7 @@ Namespace SystemTextJsonSamples
             ' </Deserialize>
             weatherForecast.DisplayPropertyValues()
         End Sub
+
     End Class
+
 End Namespace

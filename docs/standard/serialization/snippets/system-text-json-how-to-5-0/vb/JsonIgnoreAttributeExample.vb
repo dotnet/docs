@@ -19,9 +19,15 @@ Namespace JsonIgnoreAttributeExample
     Public NotInheritable Class Program
 
         Public Shared Sub Main()
-            Dim forecast1 As New Forecast
+            Dim forecast1 As New Forecast() With {
+                .[Date] = CType(Nothing, Date),
+                .Summary = Nothing,
+                .TemperatureC = CType(Nothing, Integer)
+                }
 
-            Dim options As New JsonSerializerOptions
+            Dim options As New JsonSerializerOptions() With {
+                .DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault
+                }
 
             Dim forecastJson As String = JsonSerializer.Serialize(forecast1, options)
 

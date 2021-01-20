@@ -11,15 +11,15 @@ Namespace OptionsDefaults
     Public NotInheritable Class Program
 
         Public Shared Sub Main()
-            Dim forecast1 As Forecast = New Forecast() With {
-                .Date = DateTime.Now,
+            Dim forecast1 As New Forecast() With {
+                .[Date] = Date.Now,
                 .TemperatureC = 40,
                 .Summary = "Hot"
-            }
+                }
 
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions(JsonSerializerDefaults.Web) With {
+            Dim options As New JsonSerializerOptions(JsonSerializerDefaults.Web) With {
                 .WriteIndented = True
-            }
+                }
 
             Console.WriteLine(
                 $"PropertyNameCaseInsensitive: {options.PropertyNameCaseInsensitive}")

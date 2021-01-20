@@ -13,7 +13,7 @@ Namespace GuidReferenceResolverExample
 
     Public Class GuidReferenceResolver
         Inherits ReferenceResolver
-        Private ReadOnly _people As IDictionary(Of Guid, Person) = New Dictionary(Of Guid, Person)
+        Private ReadOnly _people As New Dictionary(Of Guid, Person)
 
         Public Overrides Function ResolveReference(referenceId As String) As Object
             Dim id As New Guid
@@ -51,7 +51,7 @@ Namespace GuidReferenceResolverExample
             adrian.Spouse = tyler
             Dim people As ImmutableArray(Of Person) = ImmutableArray.Create(tyler, adrian)
 
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+            Dim options As New JsonSerializerOptions With {
                 .WriteIndented = True,
                 .ReferenceHandler = New ReferenceHandler(Of GuidReferenceResolver)
             }

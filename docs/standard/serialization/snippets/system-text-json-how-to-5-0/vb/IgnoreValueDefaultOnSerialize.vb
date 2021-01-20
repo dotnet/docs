@@ -1,4 +1,5 @@
 ﻿Imports System.Text.Json
+Imports System.Text.Json.Serialization
 
 Namespace IgnoreValueDefaultOnSerialize
 
@@ -11,9 +12,15 @@ Namespace IgnoreValueDefaultOnSerialize
     Public NotInheritable Class Program
 
         Public Shared Sub Main()
-            Dim forecast1 As New Forecast
+            Dim forecast1 As New Forecast() With
+            {.[Date] = Date.Now,
+              .Summary = Nothing,
+              .TemperatureC = CType(Nothing, Integer)
+            }
 
-            Dim options As New JsonSerializerOptions
+            Dim options As New JsonSerializerOptions() With {
+                .DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault
+            }
 
             Dim forecastJson As String = JsonSerializer.Serialize(forecast1, options)
 

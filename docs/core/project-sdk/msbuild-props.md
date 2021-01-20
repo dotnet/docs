@@ -80,6 +80,7 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
 - [CopyToPublishDirectory](#copytopublishdirectory)
 - [LinkBase](#linkbase)
+- [PreserveCompilationContext](#preservecompilationcontext)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [TrimmerRootAssembly](#trimmerrootassembly)
@@ -147,6 +148,15 @@ The `CopyLocalLockFileAssemblies` property is useful for plugin projects that ha
 
 > [!TIP]
 > Alternatively, you can use `dotnet publish` to publish the class library. For more information, see [dotnet publish](../tools/dotnet-publish.md).
+
+### PreserveCompilationContext
+
+The `PreserveCompilationContext` property causes the publish operation to copy reference assemblies for the target platform into the *ref* subdirectory of the output directory. This functionality is mostly used internally by ASP.NET, but it's also useful when you want to compile code at run time and need the reference assemblies.
+
+```xml
+<PropertyGroup>
+  <PreserveCompilationContext>true</PreserveCompilationContext>
+</PropertyGroup>
 
 ### RuntimeIdentifier
 

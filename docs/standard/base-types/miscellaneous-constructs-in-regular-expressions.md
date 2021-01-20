@@ -1,6 +1,7 @@
 ---
 title: "Miscellaneous Constructs in Regular Expressions"
 ms.date: "03/30/2017"
+ms.topic: conceptual
 dev_langs: 
   - "csharp"
   - "vb"

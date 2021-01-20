@@ -8,7 +8,7 @@ ms.date: 01/19/2021
 
 A key property of cloud-native applications is that they leverage the capabilities of the cloud to speed up development. This design often means that a full application uses different kinds of technologies. Applications may be shipped in Docker containers, some services may use Azure Functions, while other parts may run directly on virtual machines allocated on large metal servers with hardware GPU acceleration. No two cloud-native applications are the same, so it's been difficult to provide a single mechanism for shipping them.
 
-The Docker containers may run on Kubernetes using a Helm Chart for deployment. The Azure Functions may be allocated using Terraform templates. Finally, the virtual machines may be allocated using Terraform but built out using Ansible. This aspect is a whole mess of technologies and there has been no way to package them all together into a reasonable package. Until now.
+The Docker containers may run on Kubernetes using a Helm Chart for deployment. The Azure Functions may be allocated using Terraform templates. Finally, the virtual machines may be allocated using Terraform but built out using Ansible. This is a large variety of technologies and there has been no way to package them all together into a reasonable package. Until now.
 
 Cloud Native Application Bundles (CNABs) are a joint effort by many community-minded companies such as Microsoft, Docker, and HashiCorp to develop a specification to package distributed applications.
 

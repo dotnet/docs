@@ -28,7 +28,7 @@ Namespace Fields
             Dim json As String = "{""Date"":""2020-09-06T11:31:01.923395-07:00"",""TemperatureC"":-1,""Summary"":""Cold""}"
             Console.WriteLine($"Input JSON: {json}")
 
-            Dim options As JsonSerializerOptions = New JsonSerializerOptions With {
+            Dim options As New JsonSerializerOptions With {
                 .IncludeFields = True
             }
             Dim forecast1 As Forecast = JsonSerializer.Deserialize(Of Forecast)(json, options)

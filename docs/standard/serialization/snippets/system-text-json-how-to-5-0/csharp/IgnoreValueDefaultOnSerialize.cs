@@ -30,7 +30,7 @@ namespace IgnoreValueDefaultOnSerialize
 
             string forecastJson =
                 JsonSerializer.Serialize<Forecast>(forecast, options);
-            
+
             Console.WriteLine(forecastJson);
         }
     }

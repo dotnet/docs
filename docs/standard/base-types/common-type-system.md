@@ -2,6 +2,7 @@
 title: Common Type System
 description: Explore the type system in .NET. Read about types in .NET (value types or reference types), type definition, type members, and type member characteristics.
 ms.date: "03/30/2017"
+ms.topic: conceptual
 dev_langs: 
   - "csharp"
   - "vb"

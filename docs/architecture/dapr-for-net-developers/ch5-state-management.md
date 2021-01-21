@@ -35,11 +35,11 @@ The Dapr sidecar provides the API to store and retrieve key/value pairs. The act
 The state management API supports both HTTP and gRPC. This is the base URL of the HTTP API:
 
 ```http
-http://localhost:<daprPort>/v1.0/state/<state-store-name>/
+http://localhost:<daprPort>/v1.0/state/<stateStoreName>/
 ```
 
 - `<daprPort>`: the HTTP port that Dapr listens on.
-- `<state-store-name>`: the name of the state store component to use.
+- `<stateStoreName>`: the name of the state store component to use.
 
 In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair using the state store component named `statestore`.
 

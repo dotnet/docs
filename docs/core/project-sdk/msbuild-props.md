@@ -159,6 +159,7 @@ This functionality is mostly used internally by ASP.NET MVC and Razor pages.
 <PropertyGroup>
   <PreserveCompilationContext>true</PreserveCompilationContext>
 </PropertyGroup>
+```
 
 ### RuntimeIdentifier
 

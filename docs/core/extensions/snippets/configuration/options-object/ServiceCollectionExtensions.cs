@@ -13,7 +13,7 @@ namespace ExampleLibrary.Extensions.DependencyInjection
                 {
                     // Overwrite default option values
                     // with the user provided options.
-                    // options.SomeValue = userOptions.SomeValue
+                    // options.SomeValue = userOptions.SomeValue;
                 });
 
             // Register lib services here...

@@ -98,7 +98,7 @@ In the preceding code, the `AddMyLibraryService`:
 - Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)?displayProperty=nameWithType> with the type parameter of `LibraryOptions`
 - Chains a call to <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure%2A>, which specifies default option values that can be overridden from the given `userOptions` instance
 
-Consumers in this pattern provide an instance of your the `LibraryOptions` class, defining desired property values inline:
+Consumers in this pattern provide an instance of the `LibraryOptions` class, defining desired property values inline:
 
 :::code language="csharp" source="snippets/configuration/options-object/Program.cs" highlight="22-26":::
 

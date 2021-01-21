@@ -22,6 +22,13 @@ By default, the serializer escapes all non-ASCII characters. That is, it replace
 }
 ```
 
+The following sections show how to prevent specific code point ranges or individual code points from being escaped. However, there are certain code points that are always escaped, even if you follow these instructions.
+For a code point to pass through unescaped, **all** of the following criteria must be met.
+
+* The code point must be included in the specified `TextEncoderSettings` or `UnicodeRange[]`. By default the encoder is initialized with the BasicLatin range.For example: an encoder initialized with only BasicLatin will disallow `'é'`, which is not in the BasicLatin block.
+* The code point must not be in the global block list. This block list is not documented in detail because its members are subject to change. It includes things like private-use characters, control characters, undefined code points, and certain Unicode categories, such as the [Space_Separator category](https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B:General_Category=Space_Separator:%5D) other than `U+0020 SPACE`. For example, `U+3000 IDEOGRAPHIC SPACE` is escaped even if you specify Unicode range [CJK Symbols and Punctuation (U+3000-U+303F)](xref:System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation).
+* The code point must not be in the encoder's own block list. For example, the HTML encoder blocks `'<'` and `'&'`, the JSON encoder blocks `'\'`, the URL encoder blocks `'%'`, and so forth. The ampersand (`'&'`) character will always be escaped by the HTML encoder, even though the ampersand falls under the BasicLatin block and all the escapers are initialized with BasicLatin by default.
+
 ## Serialize language character sets
 
 To serialize the character set(s) of one or more languages without escaping, specify [Unicode range(s)](xref:System.Text.Unicode.UnicodeRanges) when creating an instance of <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, as shown in the following example:
@@ -39,9 +46,6 @@ This code doesn't escape Cyrillic or Greek characters. If the `Summary` property
   "Summary": "жарко"
 }
 ```
-
-> [!NOTE]
-> Code points in the [Space_Separator [Zs] category](https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B:General_Category=Space_Separator:%5D) other than `U+0020 SPACE` are escaped even if they are included in a range that you specify shouldn't be escaped. For example, `U+3000 IDEOGRAPHIC SPACE` is escaped even if you specify [CJK Symbols and Punctuation Unicode block (U+3000-U+303F)](xref:System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation).
 
 To serialize all language sets without escaping, use <xref:System.Text.Unicode.UnicodeRanges.All?displayProperty=nameWithType>.
 

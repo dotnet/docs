@@ -172,7 +172,7 @@ The `PreserveCompilationReferences` property is similar to the [PreserveCompilat
 </PropertyGroup>
 ```
 
-For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk?view=aspnetcore-5.0#properties).
+For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk#properties).
 
 ### RuntimeIdentifier
 

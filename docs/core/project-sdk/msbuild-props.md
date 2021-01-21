@@ -151,7 +151,9 @@ The `CopyLocalLockFileAssemblies` property is useful for plugin projects that ha
 
 ### PreserveCompilationContext
 
-The `PreserveCompilationContext` property causes the publish operation to copy reference assemblies for the target platform into the *ref* subdirectory of the output directory. This functionality is mostly used internally by ASP.NET, but it's also useful when you want to compile code at run time and need the reference assemblies.
+The `PreserveCompilationContext` property allows the application to compile more code at run time using the same settings that were used at build time. The assemblies referenced at build time will be copied into the *ref* subdirectory of the output directory. The names of the reference assemblies are stored in the application's `.deps.json` file along with the options passed to the compiler. This information can be retrieved using the [DependencyContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencymodel.dependencycontext) `CompileLibraries` and `CompilationOptions` properties.
+
+This functionality is mostly used internally by ASP.NET MVC and Razor pages.
 
 ```xml
 <PropertyGroup>

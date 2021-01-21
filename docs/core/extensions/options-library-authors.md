@@ -82,7 +82,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 Consumers of your library might prefer to provide an inlined options instance. In this scenario, you expose an extension method that takes an instance of your options object, `LibraryOptions`.
 
-:::code language="csharp" source="snippets/configuration/options-object/ServiceCollectionExtensions.cs" highlight="9,11-14":::
+:::code language="csharp" source="snippets/configuration/options-object/ServiceCollectionExtensions.cs" highlight="9,11-17":::
 
 In the preceding code, the `AddMyLibraryService`:
 
@@ -94,7 +94,7 @@ In the preceding code, the `AddMyLibraryService`:
 
 After all configuration option values are bound or specified, post configuration functionality is available. Exposing the same [`Action<TOptions>` parameter](#actiontoptions-parameter) detailed earlier, you could choose to call <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure%2A>. Post configure runs after all `.Configure` calls.
 
-:::code language="csharp" source="snippets/configuration/options-action/ServiceCollectionExtensions.cs" highlight="9,11":::
+:::code language="csharp" source="snippets/configuration/options-action/ServiceCollectionExtensions.cs" highlight="10,12":::
 
 In the preceding code, the `AddMyLibraryService`:
 

@@ -111,21 +111,21 @@ items:
       href: programming-guide/main-and-command-args/main-return-values.md
     - name: Command-Line Arguments
       href: programming-guide/main-and-command-args/command-line-arguments.md
-    - name: Object Oriented techniques
+  - name: Object Oriented techniques
+    items:
+    - name: Encapsulation
+      href: programming-guide/classes-and-structs/index.md
+    - name: Inheritance
+      href: programming-guide/classes-and-structs/inheritance.md
+    - name: Polymorphism
+      href: programming-guide/classes-and-structs/polymorphism.md
+    - name: Tutorials
       items:
-      - name: Encapsulation
-        href: programming-guide/classes-and-structs/index.md
-      - name: Inheritance
-        href: programming-guide/classes-and-structs/inheritance.md
-      - name: Polymorphism
-        href: programming-guide/classes-and-structs/polymorphism.md
-      - name: Tutorials
-        items:
-        - name: Introduction to classes
-          href: tutorials/intro-to-csharp/introduction-to-classes.md
-        - name: Object-Oriented C#
-          href: tutorials/intro-to-csharp/object-oriented-programming.md
-  - name: functional techniques
+      - name: Introduction to classes
+        href: tutorials/intro-to-csharp/introduction-to-classes.md
+      - name: Object-Oriented C#
+        href: tutorials/intro-to-csharp/object-oriented-programming.md
+  - name: Functional techniques
   # This section needs more
   # - Conceptual overview
   # - Concepts:
@@ -141,16 +141,514 @@ items:
       href: deconstruct.md
     - name: Cast using is and as operators
       href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
-  - name: error handling
-- name: creating types (class, struct, record, tuple, anonymous)?
-- name: null safety
-- name: build algorithms (include events)
+  - name: Exceptions and errors
+    items:
+    - name: Overview
+      displayName: exceptions
+      href: programming-guide/exceptions/index.md
+    - name: Using Exceptions
+      href: programming-guide/exceptions/using-exceptions.md
+    - name: Exception Handling
+      href: programming-guide/exceptions/exception-handling.md
+    - name: Creating and Throwing Exceptions
+      href: programming-guide/exceptions/creating-and-throwing-exceptions.md
+    - name: Compiler-Generated Exceptions
+      href: programming-guide/exceptions/compiler-generated-exceptions.md
+    - name: How to
+      items:
+      - name: "How to handle an exception using try-catch"
+        href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
+      - name: "How to execute cleanup code using finally"
+        href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
+      - name: "How to catch a non-CLS exception"
+        href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
+- name: Text and strings
   items:
-  - name: OO style
-  - name: Functional style
-- name: formatting text / culture
-- name: data access / LINQ
-- name: Console and file i/o
+  - name: Overview
+    href: programming-guide/strings/index.md
+  - name: "How to: Does a string represents a number"
+    href: programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md
+  - name: Split strings into substrings
+    href: how-to/parse-strings-using-split.md
+  - name: Concatenate strings
+    href: how-to/concatenate-multiple-strings.md
+  - name: Search strings
+    href: how-to/search-strings.md
+  - name: Modify string contents
+    href: how-to/modify-string-contents.md
+  - name: Compare strings
+    href: how-to/compare-strings.md
+  - name: String interpolation format and culture
+    href: tutorials/string-interpolation.md
+- name: Arrays and collections
+  items:
+  - name: Arrays
+    displayName: arrays
+    href: programming-guide/arrays/index.md
+  - name: Collections
+    href: programming-guide/concepts/collections.md
+  - name: Arrays as Objects
+    href: programming-guide/arrays/arrays-as-objects.md
+  - name: Single-Dimensional Arrays
+    href: programming-guide/arrays/single-dimensional-arrays.md
+  - name: Multidimensional Arrays
+    href: programming-guide/arrays/multidimensional-arrays.md
+  - name: Jagged Arrays
+    href: programming-guide/arrays/jagged-arrays.md
+  - name: Using foreach with Arrays
+    href: programming-guide/arrays/using-foreach-with-arrays.md
+  - name: Passing Arrays as Arguments
+    href: programming-guide/arrays/passing-arrays-as-arguments.md
+  - name: Implicitly Typed Arrays
+    href: programming-guide/arrays/implicitly-typed-arrays.md
+- name: Create types 
+  displayName: class, struct, record, tuple, anonymous type
+  items:
+  - name: Namespaces
+    items:
+    - name: Overview
+      displayName: namespaces
+      href: programming-guide/namespaces/index.md
+    - name: Using namespaces
+      href: programming-guide/namespaces/using-namespaces.md
+  - name: Types
+    href: programming-guide/types/index.md
+  - name: Classes and structs
+    items:
+    - name: Classes
+      href: programming-guide/classes-and-structs/classes.md
+    - name: Objects
+      href: programming-guide/classes-and-structs/objects.md
+    - name: Nested types
+      href: programming-guide/classes-and-structs/nested-types.md
+    - name: Partial classes and methods
+      href: programming-guide/classes-and-structs/partial-classes-and-methods.md
+    - name: Anonymous types
+      href: programming-guide/classes-and-structs/anonymous-types.md
+  - name: Interfaces
+    items:
+    - name: Overview
+      displayName: interfaces
+      href: programming-guide/interfaces/index.md
+    - name: Explicit interface implementation
+      href: programming-guide/interfaces/explicit-interface-implementation.md
+  - name: Generics
+    items:
+    - name: Overview
+      displayName: generics
+      href: programming-guide/generics/index.md
+    - name: Generic type parameters
+      href: programming-guide/generics/generic-type-parameters.md
+    - name: Constraints on type parameters
+      href: programming-guide/generics/constraints-on-type-parameters.md
+    - name: Generic classes
+      href: programming-guide/generics/generic-classes.md
+    - name: Generic interfaces
+      href: programming-guide/generics/generic-interfaces.md
+    - name: Generic methods
+      href: programming-guide/generics/generic-methods.md
+    - name: Generic delegates
+      href: programming-guide/generics/generic-delegates.md
+    - name: Generics and arrays
+      href: programming-guide/generics/generics-and-arrays.md
+    - name: Compare C++ templates and C# generics
+      href: programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md
+    - name: Generics in the run time
+      href: programming-guide/generics/generics-in-the-run-time.md
+    - name: Generics and reflection
+      href: programming-guide/generics/generics-and-reflection.md
+    - name: Generics and attributes
+      href: programming-guide/generics/generics-and-attributes.md
+    - name: Covariance and contravariance
+      items:
+      - name: Overview
+        displayName: covariance and contravariance
+        href: programming-guide/concepts/covariance-contravariance/index.md
+      - name: Variance in generic interfaces
+        href: programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md
+        items:
+        - name: Create variant generic interfaces
+          href: programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md
+        - name: Variance in interfaces and collections
+          href: programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md
+      - name: Variance in delegates
+        href: programming-guide/concepts/covariance-contravariance/variance-in-delegates.md
+        items:
+        - name: Use variance in delegates
+          href: programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md
+        - name: Variance in generic delegates
+          href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
+  - name: Members
+    items:
+    - name: Members overview
+      href: programming-guide/classes-and-structs/members.md
+    - name: Methods
+      href: methods.md
+    - name: Properties
+      href: properties.md
+    - name: Indexers
+      href: indexers.md
+    - name: Iterators
+      href: iterators.md
+    - name: Abstract and sealed
+      href: programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md
+    - name: Static classes and members
+      href: programming-guide/classes-and-structs/static-classes-and-static-class-members.md
+    - name: Access modifiers
+      href: programming-guide/classes-and-structs/access-modifiers.md
+    - name: Fields
+      href: programming-guide/classes-and-structs/fields.md
+    - name: Constants
+      href: programming-guide/classes-and-structs/constants.md
+    - name: Versions with override and new
+      href: programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md
+    - name: When to use override and new
+      href: programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md
+    - name: Constructors
+      items:
+      - name: Constructors overview
+        href: programming-guide/classes-and-structs/constructors.md
+      - name: Using Constructors
+        href: programming-guide/classes-and-structs/using-constructors.md
+      - name: Instance Constructors
+        href: programming-guide/classes-and-structs/instance-constructors.md
+      - name: Private Constructors
+        href: programming-guide/classes-and-structs/private-constructors.md
+      - name: Static Constructors
+        href: programming-guide/classes-and-structs/static-constructors.md
+      - name: Object and Collection Initializers
+        href: programming-guide/classes-and-structs/object-and-collection-initializers.md
+    - name: Methods
+      items:
+      - name: Methods overview
+        href: programming-guide/classes-and-structs/methods.md
+      - name: Local functions
+        href: programming-guide/classes-and-structs/local-functions.md
+      - name: Statements
+        href: programming-guide/statements-expressions-operators/statements.md
+      - name: Expression-bodied members
+        href: programming-guide/statements-expressions-operators/expression-bodied-members.md
+      - name: Implicitly Typed Local Variables
+        href: programming-guide/classes-and-structs/implicitly-typed-local-variables.md
+      - name: Ref returns and ref locals
+        href: programming-guide/classes-and-structs/ref-returns.md
+      - name: Extension Methods
+        href: programming-guide/classes-and-structs/extension-methods.md
+      - name: Parameters
+        items:
+        - name: Passing parameters
+          href: programming-guide/classes-and-structs/passing-parameters.md
+        - name: Value-Type Parameters
+          href: programming-guide/classes-and-structs/passing-value-type-parameters.md
+        - name: Reference-Type Parameters
+          href: programming-guide/classes-and-structs/passing-reference-type-parameters.md
+        - name: Named and Optional Arguments
+          href: programming-guide/classes-and-structs/named-and-optional-arguments.md
+    - name: Properties
+      items:
+      - name: Properties overview
+        href: programming-guide/classes-and-structs/properties.md
+      - name: Using Properties
+        href: programming-guide/classes-and-structs/using-properties.md
+      - name: Auto-Implemented Properties
+        href: programming-guide/classes-and-structs/auto-implemented-properties.md
+      - name: Interface properties
+        href: programming-guide/classes-and-structs/interface-properties.md
+      - name: Restricting accessibility
+        href: programming-guide/classes-and-structs/restricting-accessor-accessibility.md
+    - name: Indexers
+      items:
+      - name: Overview
+        displayName: indexers
+        href: programming-guide/indexers/index.md
+      - name: Using indexers
+        href: programming-guide/indexers/using-indexers.md
+      - name: Indexers in interfaces
+        href: programming-guide/indexers/indexers-in-interfaces.md
+      - name: Compare properties and indexers
+        href: programming-guide/indexers/comparison-between-properties-and-indexers.md
+    - name: Finalizers
+      href: programming-guide/classes-and-structs/destructors.md
+    - name: Iterators
+      href: programming-guide/concepts/iterators.md
+- name: Null safety
+  items:
+  - name: Nullable reference types
+    href: nullable-references.md
+  - name: Plan to enable nullable references
+    href: nullable-migration-strategies.md
+- name: Program techniques
+  items:
+  - name: Tutorials
+    items:
+    - name: Overview
+      displayName: tutorials
+      href: tutorials/index.md
+    - name: How to override the ToString method
+      href: programming-guide/classes-and-structs/how-to-override-the-tostring-method.md
+    - name: String interpolation - online
+      href: tutorials/exploration/interpolated-strings.yml
+    - name: String interpolation - local
+      href: tutorials/exploration/interpolated-strings-local.md
+    - name: How to display command-line arguments
+      href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
+    - name: Console application
+      href: tutorials/console-teleprompter.md
+    - name: REST Client
+      href: tutorials/console-webapiclient.md
+    - name: Inheritance in C# and .NET
+      href: tutorials/inheritance.md
+    - name: Work with LINQ
+      href: tutorials/working-with-linq.md
+    - name: Use attributes
+      href: tutorials/attributes.md
+  - name: Delegates and events
+    items:
+    - name: Introduction to Delegates
+      href: delegates-overview.md
+    - name: System.Delegate and delegate
+      href: delegate-class.md
+    - name: Strongly Typed Delegates
+      href: delegates-strongly-typed.md
+    - name: The evolution of delegates
+      href: programming-guide/statements-expressions-operators/anonymous-functions.md
+    - name: Common Patterns for Delegates
+      href: delegates-patterns.md
+    - name: Using Delegates
+      href: programming-guide/delegates/using-delegates.md
+    - name: Named and anonymous delegates
+      href: programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md
+    - name: Introduction to events
+      href: events-overview.md
+    - name: Standard .NET event patterns
+      href: event-pattern.md
+    - name: The Updated .NET Event Pattern
+      href: modern-events.md
+    - name: Distinguishing Delegates and Events
+      href: distinguish-delegates-events.md
+    - name: How to
+      items:
+      - name: "How to combine delegates"
+        href: programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md
+      - name: "How to declare, instantiate, and use a delegate"
+        href: programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md
+      - name: "How to subscribe and unsubscribe events"
+        href: programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md
+      - name: "How to publish events that conform to .NET Guidelines"
+        href: programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md
+      - name: "How to raise base class events in derived classes"
+        href: programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md
+      - name: "How to implement interface events"
+        href: programming-guide/events/how-to-implement-interface-events.md
+      - name: "How to implement custom event accessors"
+        href: programming-guide/events/how-to-implement-custom-event-accessors.md
+  - name: Type members
+    items:
+    - name: "How to declare and use read write properties"
+      href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
+    - name: "How to declare a data class with auto-implemented properties"
+      href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
+    - name: "How to define abstract properties"
+      href: programming-guide/classes-and-structs/how-to-define-abstract-properties.md
+    - name: "How to define constants in C#"
+      href: programming-guide/classes-and-structs/how-to-define-constants.md
+    - name: "How to write a copy constructor"
+      href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
+    - name: "How to initialize objects in an object initializer"
+      href: programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md
+    - name: "How to initialize a dictionary"
+      href: programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md
+    - name: "How to explicitly implement interface members"
+      href: programming-guide/interfaces/how-to-explicitly-implement-interface-members.md
+    - name: "How to explicitly implement multiple interfaces"
+      href: programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md
+    - name: "How to implement and call a custom extension method"
+      href: programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md
+    - name: "How to create a new method for an enumeration"
+      href: programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md
+    - name: "Distinguish passing struct values and class references to a method"
+      href: programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
+  - name: Equality
+    items:
+    - name: Equality comparisons
+      href: programming-guide/statements-expressions-operators/equality-comparisons.md
+    - name: "How to define value equality for a type"
+      href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
+    - name: "How to test for reference equality (identity)"
+      href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
+  - name: Converting between types
+    items:
+    - name: Casting and Type Conversions
+      href: programming-guide/types/casting-and-type-conversions.md
+    - name: Boxing and Unboxing
+      href: programming-guide/types/boxing-and-unboxing.md
+    - name: "How to convert a byte array to an int"
+      href: programming-guide/types/how-to-convert-a-byte-array-to-an-int.md
+    - name: "How to convert a string to a number"
+      href: programming-guide/types/how-to-convert-a-string-to-a-number.md
+    - name: "How to convert hexadecimal strings and numeric types"
+      href: programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md
+- name: Data access / LINQ
+  items:
+  - name: Overview of LINQ
+    href: linq/index.md
+  - name: LINQ basics
+    href: programming-guide/concepts/linq/index.md
+  - name: Getting Started with LINQ in C#
+    items:
+    - name: Introduction to LINQ Queries
+      href: programming-guide/concepts/linq/introduction-to-linq-queries.md
+    - name: Write LINQ queries in C#
+      href: linq/write-linq-queries.md
+    - name: LINQ and Generic Types
+      href: programming-guide/concepts/linq/linq-and-generic-types.md
+    - name: Basic LINQ Query Operations
+      href: programming-guide/concepts/linq/basic-linq-query-operations.md
+    - name: Data Transformations with LINQ
+      href: programming-guide/concepts/linq/data-transformations-with-linq.md
+    - name: Type Relationships in LINQ Query Operations
+      href: programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md
+    - name: Query Syntax and Method Syntax in LINQ
+      href: programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md
+    - name: C# Features That Support LINQ
+      href: programming-guide/concepts/linq/features-that-support-linq.md
+    - name: Query expression basics
+      href: linq/query-expression-basics.md
+  - name: Standard Query Operators
+    items:
+    - name: Overview
+      href: programming-guide/concepts/linq/standard-query-operators-overview.md
+    - name: Query Expression Syntax for Standard Query Operators
+      href: programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md
+    - name: Classification of Standard Query Operators by Manner of Execution
+      href: programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md
+    - name: Sorting Data
+      href: programming-guide/concepts/linq/sorting-data.md
+    - name: Set Operations
+      href: programming-guide/concepts/linq/set-operations.md
+    - name: Filtering Data
+      href: programming-guide/concepts/linq/filtering-data.md
+    - name: Quantifier Operations
+      href: programming-guide/concepts/linq/quantifier-operations.md
+    - name: Projection Operations
+      href: programming-guide/concepts/linq/projection-operations.md
+    - name: Partitioning Data
+      href: programming-guide/concepts/linq/partitioning-data.md
+    - name: Join Operations
+      href: programming-guide/concepts/linq/join-operations.md
+    - name: Grouping Data
+      href: programming-guide/concepts/linq/grouping-data.md
+    - name: Generation Operations
+      href: programming-guide/concepts/linq/generation-operations.md
+    - name: Equality Operations
+      href: programming-guide/concepts/linq/equality-operations.md
+    - name: Element Operations
+      href: programming-guide/concepts/linq/element-operations.md
+    - name: Converting Data Types
+      href: programming-guide/concepts/linq/converting-data-types.md
+    - name: Concatenation Operations
+      href: programming-guide/concepts/linq/concatenation-operations.md
+    - name: Aggregation Operations
+      href: programming-guide/concepts/linq/aggregation-operations.md
+  - name: Sample queries
+    items:
+    - name: Query a collection of objects
+      href: linq/query-a-collection-of-objects.md
+    - name: Return a query from a method
+      href: linq/return-a-query-from-a-method.md
+    - name: Store the results of a query in memory
+      href: linq/store-the-results-of-a-query-in-memory.md
+    - name: Group query results
+      href: linq/group-query-results.md
+    - name: Create a nested group
+      href: linq/create-a-nested-group.md
+    - name: Perform a subquery on a group operation
+      href: linq/perform-a-subquery-on-a-grouping-operation.md
+    - name: Group results by contiguous keys
+      href: linq/group-results-by-contiguous-keys.md
+    - name: Dynamically specify predicate filters
+      href: linq/dynamically-specify-predicate-filters-at-runtime.md
+    - name: Perform inner joins
+      href: linq/perform-inner-joins.md
+    - name: Perform grouped joins
+      href: linq/perform-grouped-joins.md
+    - name: Perform left outer joins
+      href: linq/perform-left-outer-joins.md
+    - name: Order the results of a join clause
+      href: linq/order-the-results-of-a-join-clause.md
+    - name: Join by using composite keys
+      href: linq/join-by-using-composite-keys.md
+    - name: Perform custom join operations
+      href: linq/perform-custom-join-operations.md
+    - name: Handle null values in queries
+      href: linq/handle-null-values-in-query-expressions.md
+    - name: Handle exceptions in queries
+      href: linq/handle-exceptions-in-query-expressions.md
+    - name: "How to use lambda expressions in a query"
+      href: programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md
+    - name: "Walkthrough: Writing Queries in C# (LINQ)"
+      href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
+  - name: LINQ to Objects
+    items:
+    - name: Overview
+      href: programming-guide/concepts/linq/linq-to-objects.md
+    - name: Enabling a data source for LINQ
+      href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
+    - name: LINQ and Strings
+      href: programming-guide/concepts/linq/linq-and-strings.md
+    - name: LINQ and Reflection
+      href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
+    - name: How to articles
+      items:
+      - name: "How to count occurrences of a word in a string (LINQ)"
+        href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
+      - name: "How to query for sentences that contain a specified set of words (LINQ)"
+        href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
+      - name: "How to query for characters in a string (LINQ)"
+        href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
+      - name: "How to combine LINQ queries with regular expressions"
+        href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
+      - name: "How to find the set difference between two lists (LINQ)"
+        href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
+      - name: "How to sort or filter text data by any word or field (LINQ)"
+        href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
+      - name: "How to reorder the fields of a delimited file (LINQ)"
+        href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
+      - name: "How to combine and compare string collections (LINQ)"
+        href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
+      - name: "How to populate object collections from multiple sources (LINQ)"
+        href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
+      - name: "How to query for files with a specified attribute or name"
+        href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
+      - name: "How to group files by extension (LINQ)"
+        href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
+      - name: "How to query for the total number of bytes in a set of folders (LINQ)"
+        href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
+      - name: "How to compare the contents of two folders (LINQ)"
+        href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
+      - name: "How to query for the largest file or files in a directory tree (LINQ)"
+        href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
+      - name: "How to query for duplicate files in a directory tree (LINQ)"
+        href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
+      - name: "How to query the contents of files in a folder (LINQ)"
+        href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
+      - name: "How to split a file into many files by using groups (LINQ)"
+        href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
+      - name: "How to join content from dissimilar files (LINQ)"
+        href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
+      - name: "How to compute column values in a CSV text file (LINQ)"
+        href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
+      - name: "How to use implicitly typed local variables and arrays in a query expression"
+        href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
+      - name: "How to return subsets of element properties in a query"
+        href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
+      - name: "How to query an ArrayList with LINQ"
+        href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
+      - name: "How to add custom methods for LINQ queries"
+        href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
+      - name: "How to query an assembly's metadata with Reflection (LINQ)"
+        href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
+- name: Console and file I/O
   items:
   - name: Overview
     displayName: file system registry
@@ -201,6 +699,15 @@ items:
   items:
   - name: Versioning
     href: versioning.md
+  - name: Attributes
+    items:
+    - name: Overview
+      displayName: attributes
+      href: programming-guide/concepts/attributes/index.md
+    - name: Creating Custom Attributes
+      href: programming-guide/concepts/attributes/creating-custom-attributes.md
+    - name: Access Attributes with  Reflection
+      href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
   - name: Native interoperability
     items:
     - name: .NET Interoperability
@@ -982,525 +1489,3 @@ items:
     href: language-reference/specification/
   - name: C# 7.0 - 9.0 (proposals)
     href: language-reference/proposals/
-
-
-
-
-
-- name: Begin Old Organization
-  items:
-  - name: Tutorials
-    items:
-    - name: Overview
-      displayName: tutorials
-      href: tutorials/index.md
-    - name: How to override the ToString method
-      href: programming-guide/classes-and-structs/how-to-override-the-tostring-method.md
-    - name: String interpolation - online
-      href: tutorials/exploration/interpolated-strings.yml
-    - name: String interpolation - local
-      href: tutorials/exploration/interpolated-strings-local.md
-    - name: How to display command-line arguments
-      href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
-    - name: Console application
-      href: tutorials/console-teleprompter.md
-    - name: REST Client
-      href: tutorials/console-webapiclient.md
-    - name: Inheritance in C# and .NET
-      href: tutorials/inheritance.md
-    - name: Work with LINQ
-      href: tutorials/working-with-linq.md
-    - name: Use attributes
-      href: tutorials/attributes.md
-- name: Program building blocks
-  items:
-  - name: Namespaces
-    items:
-    - name: Overview
-      displayName: namespaces
-      href: programming-guide/namespaces/index.md
-    - name: Using namespaces
-      href: programming-guide/namespaces/using-namespaces.md
-  - name: Types
-    href: programming-guide/types/index.md
-  - name: Classes and structs
-    items:
-    - name: Classes
-      href: programming-guide/classes-and-structs/classes.md
-    - name: Objects
-      href: programming-guide/classes-and-structs/objects.md
-    - name: Nested types
-      href: programming-guide/classes-and-structs/nested-types.md
-    - name: Partial classes and methods
-      href: programming-guide/classes-and-structs/partial-classes-and-methods.md
-    - name: Anonymous types
-      href: programming-guide/classes-and-structs/anonymous-types.md
-  - name: Interfaces
-    items:
-    - name: Overview
-      displayName: interfaces
-      href: programming-guide/interfaces/index.md
-    - name: Explicit interface implementation
-      href: programming-guide/interfaces/explicit-interface-implementation.md
-  - name: Generics
-    items:
-    - name: Overview
-      displayName: generics
-      href: programming-guide/generics/index.md
-    - name: Generic type parameters
-      href: programming-guide/generics/generic-type-parameters.md
-    - name: Constraints on type parameters
-      href: programming-guide/generics/constraints-on-type-parameters.md
-    - name: Generic classes
-      href: programming-guide/generics/generic-classes.md
-    - name: Generic interfaces
-      href: programming-guide/generics/generic-interfaces.md
-    - name: Generic methods
-      href: programming-guide/generics/generic-methods.md
-    - name: Generic delegates
-      href: programming-guide/generics/generic-delegates.md
-    - name: Generics and arrays
-      href: programming-guide/generics/generics-and-arrays.md
-    - name: Compare C++ templates and C# generics
-      href: programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md
-    - name: Generics in the run time
-      href: programming-guide/generics/generics-in-the-run-time.md
-    - name: Generics and reflection
-      href: programming-guide/generics/generics-and-reflection.md
-    - name: Generics and attributes
-      href: programming-guide/generics/generics-and-attributes.md
-    - name: Covariance and contravariance
-      items:
-      - name: Overview
-        displayName: covariance and contravariance
-        href: programming-guide/concepts/covariance-contravariance/index.md
-      - name: Variance in generic interfaces
-        href: programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md
-        items:
-        - name: Create variant generic interfaces
-          href: programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md
-        - name: Variance in interfaces and collections
-          href: programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md
-      - name: Variance in delegates
-        href: programming-guide/concepts/covariance-contravariance/variance-in-delegates.md
-        items:
-        - name: Use variance in delegates
-          href: programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md
-        - name: Variance in generic delegates
-          href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
-  - name: Members
-    items:
-    - name: Members overview
-      href: programming-guide/classes-and-structs/members.md
-    - name: Methods
-      href: methods.md
-    - name: Properties
-      href: properties.md
-    - name: Indexers
-      href: indexers.md
-    - name: Iterators
-      href: iterators.md
-    - name: Abstract and sealed
-      href: programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md
-    - name: Static classes and members
-      href: programming-guide/classes-and-structs/static-classes-and-static-class-members.md
-    - name: Access modifiers
-      href: programming-guide/classes-and-structs/access-modifiers.md
-    - name: Fields
-      href: programming-guide/classes-and-structs/fields.md
-    - name: Constants
-      href: programming-guide/classes-and-structs/constants.md
-    - name: Versions with override and new
-      href: programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md
-    - name: When to use override and new
-      href: programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md
-    - name: Constructors
-      items:
-      - name: Constructors overview
-        href: programming-guide/classes-and-structs/constructors.md
-      - name: Using Constructors
-        href: programming-guide/classes-and-structs/using-constructors.md
-      - name: Instance Constructors
-        href: programming-guide/classes-and-structs/instance-constructors.md
-      - name: Private Constructors
-        href: programming-guide/classes-and-structs/private-constructors.md
-      - name: Static Constructors
-        href: programming-guide/classes-and-structs/static-constructors.md
-      - name: Object and Collection Initializers
-        href: programming-guide/classes-and-structs/object-and-collection-initializers.md
-    - name: Methods
-      items:
-      - name: Methods overview
-        href: programming-guide/classes-and-structs/methods.md
-      - name: Local functions
-        href: programming-guide/classes-and-structs/local-functions.md
-      - name: Statements
-        href: programming-guide/statements-expressions-operators/statements.md
-      - name: Expression-bodied members
-        href: programming-guide/statements-expressions-operators/expression-bodied-members.md
-      - name: Implicitly Typed Local Variables
-        href: programming-guide/classes-and-structs/implicitly-typed-local-variables.md
-      - name: Ref returns and ref locals
-        href: programming-guide/classes-and-structs/ref-returns.md
-      - name: Extension Methods
-        href: programming-guide/classes-and-structs/extension-methods.md
-      - name: Parameters
-        items:
-        - name: Passing parameters
-          href: programming-guide/classes-and-structs/passing-parameters.md
-        - name: Value-Type Parameters
-          href: programming-guide/classes-and-structs/passing-value-type-parameters.md
-        - name: Reference-Type Parameters
-          href: programming-guide/classes-and-structs/passing-reference-type-parameters.md
-        - name: Named and Optional Arguments
-          href: programming-guide/classes-and-structs/named-and-optional-arguments.md
-    - name: Properties
-      items:
-      - name: Properties overview
-        href: programming-guide/classes-and-structs/properties.md
-      - name: Using Properties
-        href: programming-guide/classes-and-structs/using-properties.md
-      - name: Auto-Implemented Properties
-        href: programming-guide/classes-and-structs/auto-implemented-properties.md
-      - name: Interface properties
-        href: programming-guide/classes-and-structs/interface-properties.md
-      - name: Restricting accessibility
-        href: programming-guide/classes-and-structs/restricting-accessor-accessibility.md
-    - name: Indexers
-      items:
-      - name: Overview
-        displayName: indexers
-        href: programming-guide/indexers/index.md
-      - name: Using indexers
-        href: programming-guide/indexers/using-indexers.md
-      - name: Indexers in interfaces
-        href: programming-guide/indexers/indexers-in-interfaces.md
-      - name: Compare properties and indexers
-        href: programming-guide/indexers/comparison-between-properties-and-indexers.md
-    - name: Finalizers
-      href: programming-guide/classes-and-structs/destructors.md
-    - name: Iterators
-      href: programming-guide/concepts/iterators.md
-  - name: Delegates, callbacks and events
-    items:
-    - name: Introduction to Delegates
-      href: delegates-overview.md
-    - name: System.Delegate and delegate
-      href: delegate-class.md
-    - name: Strongly Typed Delegates
-      href: delegates-strongly-typed.md
-    - name: The evolution of delegates
-      href: programming-guide/statements-expressions-operators/anonymous-functions.md
-    - name: Common Patterns for Delegates
-      href: delegates-patterns.md
-    - name: Using Delegates
-      href: programming-guide/delegates/using-delegates.md
-    - name: Named and anonymous delegates
-      href: programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md
-    - name: Introduction to events
-      href: events-overview.md
-    - name: Standard .NET event patterns
-      href: event-pattern.md
-    - name: The Updated .NET Event Pattern
-      href: modern-events.md
-    - name: Distinguishing Delegates and Events
-      href: distinguish-delegates-events.md
-  - name: Attributes
-    items:
-    - name: Overview
-      displayName: attributes
-      href: programming-guide/concepts/attributes/index.md
-    - name: Creating Custom Attributes
-      href: programming-guide/concepts/attributes/creating-custom-attributes.md
-    - name: Access Attributes with  Reflection
-      href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
-  - name: Exceptions and Exception Handling
-    items:
-    - name: Overview
-      displayName: exceptions
-      href: programming-guide/exceptions/index.md
-    - name: Using Exceptions
-      href: programming-guide/exceptions/using-exceptions.md
-    - name: Exception Handling
-      href: programming-guide/exceptions/exception-handling.md
-    - name: Creating and Throwing Exceptions
-      href: programming-guide/exceptions/creating-and-throwing-exceptions.md
-    - name: Compiler-Generated Exceptions
-      href: programming-guide/exceptions/compiler-generated-exceptions.md
-  - name: Strings
-    href: programming-guide/strings/index.md
-  - name: Arrays and collections
-    items:
-    - name: Arrays
-      displayName: arrays
-      href: programming-guide/arrays/index.md
-    - name: Collections
-      href: programming-guide/concepts/collections.md
-    - name: Arrays as Objects
-      href: programming-guide/arrays/arrays-as-objects.md
-    - name: Single-Dimensional Arrays
-      href: programming-guide/arrays/single-dimensional-arrays.md
-    - name: Multidimensional Arrays
-      href: programming-guide/arrays/multidimensional-arrays.md
-    - name: Jagged Arrays
-      href: programming-guide/arrays/jagged-arrays.md
-    - name: Using foreach with Arrays
-      href: programming-guide/arrays/using-foreach-with-arrays.md
-    - name: Passing Arrays as Arguments
-      href: programming-guide/arrays/passing-arrays-as-arguments.md
-    - name: Implicitly Typed Arrays
-      href: programming-guide/arrays/implicitly-typed-arrays.md
-- name: Programming techniques
-  items:
-  - name: strings
-    items:
-    - name: "How to: Does a string represents a number"
-      href: programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md
-    - name: Split strings into substrings
-      href: how-to/parse-strings-using-split.md
-    - name: Concatenate strings
-      href: how-to/concatenate-multiple-strings.md
-    - name: Search strings
-      href: how-to/search-strings.md
-    - name: Modify string contents
-      href: how-to/modify-string-contents.md
-    - name: Compare strings
-      href: how-to/compare-strings.md
-    - name: String interpolation format and culture
-      href: tutorials/string-interpolation.md
-  - name: Errors and exceptions
-    items:
-    - name: "How to handle an exception using try-catch"
-      href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
-    - name: "How to execute cleanup code using finally"
-      href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
-    - name: "How to catch a non-CLS exception"
-      href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
-  - name: Delegates and events
-    items:
-    - name: "How to combine delegates"
-      href: programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md
-    - name: "How to declare, instantiate, and use a delegate"
-      href: programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md
-    - name: "How to subscribe and unsubscribe events"
-      href: programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md
-    - name: "How to publish events that conform to .NET Guidelines"
-      href: programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md
-    - name: "How to raise base class events in derived classes"
-      href: programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md
-    - name: "How to implement interface events"
-      href: programming-guide/events/how-to-implement-interface-events.md
-    - name: "How to implement custom event accessors"
-      href: programming-guide/events/how-to-implement-custom-event-accessors.md
-  - name: Type members
-    items:
-    - name: "How to declare and use read write properties"
-      href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
-    - name: "How to declare a data class with auto-implemented properties"
-      href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
-    - name: "How to define abstract properties"
-      href: programming-guide/classes-and-structs/how-to-define-abstract-properties.md
-    - name: "How to define constants in C#"
-      href: programming-guide/classes-and-structs/how-to-define-constants.md
-    - name: "How to write a copy constructor"
-      href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
-    - name: "How to initialize objects in an object initializer"
-      href: programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md
-    - name: "How to initialize a dictionary"
-      href: programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md
-    - name: "How to explicitly implement interface members"
-      href: programming-guide/interfaces/how-to-explicitly-implement-interface-members.md
-    - name: "How to explicitly implement multiple interfaces"
-      href: programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md
-    - name: "How to implement and call a custom extension method"
-      href: programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md
-    - name: "How to create a new method for an enumeration"
-      href: programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md
-    - name: "Distinguish passing struct values and class references to a method"
-      href: programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
-  - name: Equality
-    items:
-    - name: Equality comparisons
-      href: programming-guide/statements-expressions-operators/equality-comparisons.md
-    - name: "How to define value equality for a type"
-      href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
-    - name: "How to test for reference equality (identity)"
-      href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
-  - name: null safety
-    items:
-    - name: Nullable reference types
-      href: nullable-references.md
-    - name: Plan to enable nullable references
-      href: nullable-migration-strategies.md
-  - name: Converting between types
-    items:
-    - name: Casting and Type Conversions
-      href: programming-guide/types/casting-and-type-conversions.md
-    - name: Boxing and Unboxing
-      href: programming-guide/types/boxing-and-unboxing.md
-    - name: "How to convert a byte array to an int"
-      href: programming-guide/types/how-to-convert-a-byte-array-to-an-int.md
-    - name: "How to convert a string to a number"
-      href: programming-guide/types/how-to-convert-a-string-to-a-number.md
-    - name: "How to convert hexadecimal strings and numeric types"
-      href: programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md
-- name: Language Integrated Query (LINQ)
-  items:
-  - name: Overview of LINQ
-    href: linq/index.md
-  - name: LINQ basics
-    href: programming-guide/concepts/linq/index.md
-  - name: Getting Started with LINQ in C#
-    items:
-    - name: Introduction to LINQ Queries
-      href: programming-guide/concepts/linq/introduction-to-linq-queries.md
-    - name: Write LINQ queries in C#
-      href: linq/write-linq-queries.md
-    - name: LINQ and Generic Types
-      href: programming-guide/concepts/linq/linq-and-generic-types.md
-    - name: Basic LINQ Query Operations
-      href: programming-guide/concepts/linq/basic-linq-query-operations.md
-    - name: Data Transformations with LINQ
-      href: programming-guide/concepts/linq/data-transformations-with-linq.md
-    - name: Type Relationships in LINQ Query Operations
-      href: programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md
-    - name: Query Syntax and Method Syntax in LINQ
-      href: programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md
-    - name: C# Features That Support LINQ
-      href: programming-guide/concepts/linq/features-that-support-linq.md
-    - name: Query expression basics
-      href: linq/query-expression-basics.md
-  - name: Standard Query Operators Overview
-    items:
-    - name: Overview
-      href: programming-guide/concepts/linq/standard-query-operators-overview.md
-    - name: Query Expression Syntax for Standard Query Operators
-      href: programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md
-    - name: Classification of Standard Query Operators by Manner of Execution
-      href: programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md
-    - name: Sorting Data
-      href: programming-guide/concepts/linq/sorting-data.md
-    - name: Set Operations
-      href: programming-guide/concepts/linq/set-operations.md
-    - name: Filtering Data
-      href: programming-guide/concepts/linq/filtering-data.md
-    - name: Quantifier Operations
-      href: programming-guide/concepts/linq/quantifier-operations.md
-    - name: Projection Operations
-      href: programming-guide/concepts/linq/projection-operations.md
-    - name: Partitioning Data
-      href: programming-guide/concepts/linq/partitioning-data.md
-    - name: Join Operations
-      href: programming-guide/concepts/linq/join-operations.md
-    - name: Grouping Data
-      href: programming-guide/concepts/linq/grouping-data.md
-    - name: Generation Operations
-      href: programming-guide/concepts/linq/generation-operations.md
-    - name: Equality Operations
-      href: programming-guide/concepts/linq/equality-operations.md
-    - name: Element Operations
-      href: programming-guide/concepts/linq/element-operations.md
-    - name: Converting Data Types
-      href: programming-guide/concepts/linq/converting-data-types.md
-    - name: Concatenation Operations
-      href: programming-guide/concepts/linq/concatenation-operations.md
-    - name: Aggregation Operations
-      href: programming-guide/concepts/linq/aggregation-operations.md
-  - name: Sample queries
-    items:
-    - name: Query a collection of objects
-      href: linq/query-a-collection-of-objects.md
-    - name: Return a query from a method
-      href: linq/return-a-query-from-a-method.md
-    - name: Store the results of a query in memory
-      href: linq/store-the-results-of-a-query-in-memory.md
-    - name: Group query results
-      href: linq/group-query-results.md
-    - name: Create a nested group
-      href: linq/create-a-nested-group.md
-    - name: Perform a subquery on a group operation
-      href: linq/perform-a-subquery-on-a-grouping-operation.md
-    - name: Group results by contiguous keys
-      href: linq/group-results-by-contiguous-keys.md
-    - name: Dynamically specify predicate filters
-      href: linq/dynamically-specify-predicate-filters-at-runtime.md
-    - name: Perform inner joins
-      href: linq/perform-inner-joins.md
-    - name: Perform grouped joins
-      href: linq/perform-grouped-joins.md
-    - name: Perform left outer joins
-      href: linq/perform-left-outer-joins.md
-    - name: Order the results of a join clause
-      href: linq/order-the-results-of-a-join-clause.md
-    - name: Join by using composite keys
-      href: linq/join-by-using-composite-keys.md
-    - name: Perform custom join operations
-      href: linq/perform-custom-join-operations.md
-    - name: Handle null values in queries
-      href: linq/handle-null-values-in-query-expressions.md
-    - name: Handle exceptions in queries
-      href: linq/handle-exceptions-in-query-expressions.md
-    - name: "How to use lambda expressions in a query"
-      href: programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md
-    - name: "Walkthrough: Writing Queries in C# (LINQ)"
-      href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
-  - name: LINQ to Objects
-    items:
-    - name: Overview
-      href: programming-guide/concepts/linq/linq-to-objects.md
-    - name: Enabling a data source for LINQ
-      href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
-    - name: LINQ and Strings
-      href: programming-guide/concepts/linq/linq-and-strings.md
-    - name: LINQ and Reflection
-      href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
-    - name: How to articles
-      items:
-      - name: "How to count occurrences of a word in a string (LINQ)"
-        href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
-      - name: "How to query for sentences that contain a specified set of words (LINQ)"
-        href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
-      - name: "How to query for characters in a string (LINQ)"
-        href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
-      - name: "How to combine LINQ queries with regular expressions"
-        href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
-      - name: "How to find the set difference between two lists (LINQ)"
-        href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
-      - name: "How to sort or filter text data by any word or field (LINQ)"
-        href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
-      - name: "How to reorder the fields of a delimited file (LINQ)"
-        href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
-      - name: "How to combine and compare string collections (LINQ)"
-        href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
-      - name: "How to populate object collections from multiple sources (LINQ)"
-        href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
-      - name: "How to query for files with a specified attribute or name"
-        href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
-      - name: "How to group files by extension (LINQ)"
-        href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
-      - name: "How to query for the total number of bytes in a set of folders (LINQ)"
-        href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
-      - name: "How to compare the contents of two folders (LINQ)"
-        href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
-      - name: "How to query for the largest file or files in a directory tree (LINQ)"
-        href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
-      - name: "How to query for duplicate files in a directory tree (LINQ)"
-        href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
-      - name: "How to query the contents of files in a folder (LINQ)"
-        href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
-      - name: "How to split a file into many files by using groups (LINQ)"
-        href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
-      - name: "How to join content from dissimilar files (LINQ)"
-        href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
-      - name: "How to compute column values in a CSV text file (LINQ)"
-        href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
-      - name: "How to use implicitly typed local variables and arrays in a query expression"
-        href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
-      - name: "How to return subsets of element properties in a query"
-        href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
-      - name: "How to query an ArrayList with LINQ"
-        href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
-      - name: "How to add custom methods for LINQ queries"
-        href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
-      - name: "How to query an assembly's metadata with Reflection (LINQ)"
-        href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md

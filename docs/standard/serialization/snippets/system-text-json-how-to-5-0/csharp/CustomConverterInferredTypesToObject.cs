@@ -26,12 +26,14 @@ namespace CustomConverterInferredTypesToObject
             JsonSerializerOptions options) =>
             JsonSerializer.Serialize(writer, objectToWrite, objectToWrite.GetType(), options);
     }
+
     public class WeatherForecast
     {
         public object Date { get; set; }
         public object TemperatureCelsius { get; set; }
         public object Summary { get; set; }
     }
+
     public class Program
     {
         public static void Main()

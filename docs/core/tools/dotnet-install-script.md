@@ -157,8 +157,8 @@ The install scripts do not update the registry on Windows. They just download th
 
   **`--os <OPERATING_SYSTEM>`**
 
-  Specifies the operating system for which the tools are being installed (Valid for .Net Core 2.1 and above.). Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`, `rhel.6`. 
-  
+  Specifies the operating system for which the tools are being installed (Valid for .Net Core 2.1 and above.). Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`, `rhel.6`.
+
   Specifying this option should only be necessary when running the script from an uncommon Unix based operating system and the script fails to determine for which of the supported operating systems to install the tools.
 
 - **`-SharedRuntime|--shared-runtime`**

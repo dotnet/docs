@@ -18,15 +18,16 @@ Configuration in a .NET Framework app is accessed using the `System.Configuratio
 Typical ASP.NET MVC configuration access:
 
 ```csharp
-string connString = ConfigurationManager.ConnectionStrings["DefaultConnection"]
-    .ConnectionString;
+string connectionString =
+    ConfigurationManager.ConnectionStrings["DefaultConnection"]
+        .ConnectionString;
 ```
 
 ## ASP.NET Core configuration
 
 In ASP.NET Core apps, configuration is, itself, configurable. However, most apps use a set of defaults provided as part of the standard project templates and the `ConfigureWebHostDefaults` method used in them. The default settings use JSON formatted files, with the ability to override settings in the base *appsettings.json* file with environment-specific files like *appsettings.Development.json*. Additionally, the default configuration system further overrides all file-based settings with any environment variable that exists for the same named setting. This is useful in many scenarios and is especially useful when deploying to a hosting environment, since it eliminates the need to worry about whether deploying configuration files will accidentally overwrite important production configuration settings.
 
-Accessing configuration values can be done in many ways in .NET Core. Because dependency injection is built into .NET Core, configuration values are generally accessed through an interface that is injected into classes that need them. This can involve passing a large interface like `IConfiguration`, but usually it's better to pass just the settings required by the class using the [options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options).
+Accessing configuration values can be done in many ways in .NET Core. Because dependency injection is built into .NET Core, configuration values are generally accessed through an interface that is injected into classes that need them. This can involve passing a interface like <xref:Microsoft.Extensions.Configuration.IConfiguration>, but usually it's better to pass just the settings required by the class using the [options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options).
 
 Figure 2-2 shows how to pass `IConfiguration` into a Razor Page and access configuration settings from it:
 

@@ -109,9 +109,12 @@ In addition to attribute routing, [ASP.NET Web API chooses which action to call]
 ```csharp
 public class ProductsController : ApiController
 {
-    public IEnumerable<Product> GetAll() {} // matched by name and (lack of) parameters
+    // matched by name and (lack of) parameters
+    public IEnumerable<Product> GetAll() { }
+    
+    // matched by GET and string parameter
     [HttpGet]
-    public IEnumerable<Product> FindProductsByName(string name) {} // matched by GET and string parameter
+    public IEnumerable<Product> FindProductsByName(string name) { }
 }
 ```
 
@@ -152,7 +155,9 @@ Attribute routing in ASP.NET Core behaves similarly in ASP.NET MVC and Web API. 
 ```csharp
 [HttpGet("api/products/{id}")]
 public async ActionResult<Product> Details(int id)
-{}
+{
+    // ...
+}
 ```
 
 As with previous versions, you can specify a default route with placeholders, and add this at the controller class level or even on a base class. You use the same `[Route]` attribute for all of these cases. For example, a base API controller class might look like this:
@@ -160,7 +165,9 @@ As with previous versions, you can specify a default route with placeholders, an
 ```csharp
 [Route("api/{controller}/{action}/{id?:int}")]
 public abstract class BaseApiController : ControllerBase, IApiController
-{}
+{
+    // ...
+}
 ```
 
 Using this attribute, classes inheriting from this type would route URLs to actions based on the controller name, action name, and an optional integer `id` parameter.

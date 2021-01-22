@@ -11,7 +11,7 @@ After identifying the sequence in which the app's individual projects must be mi
 
 ![.NET Portability Analyzer report details](./media/Figure3-4.png)
 
-**Figure 3-4. .NET Portability Analyzer report details.**
+**Figure 3-4.** .NET Portability Analyzer report details.
 
 ## Update class library dependencies
 

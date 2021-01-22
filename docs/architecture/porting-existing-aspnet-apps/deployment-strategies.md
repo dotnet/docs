@@ -11,7 +11,7 @@ One consideration as you plan the migration of your large ASP.NET app to ASP.NET
 
 ## Cross-platform options
 
-Because .NET Core supports Linux, you'll find some hosting options available that weren't a consideration previously. Linux-based hosting may be preferable for the following reasons:
+Because .NET Core runs on Linux, you'll find some hosting options available that weren't a consideration previously. Linux-based hosting may be preferable for the following reasons:
 
 * Your organization has infrastructure or expertise.
 * Hosting providers offer attractive features or pricing for Linux-based hosting.

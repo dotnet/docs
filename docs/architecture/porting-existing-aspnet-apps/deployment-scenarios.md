@@ -30,7 +30,8 @@ As a reverse proxy, IIS can route traffic matching certain patterns to entirely 
 
 Using just the URL Rewrite module (perhaps combined with host headers), IIS can easily support multiple web sites, each potentially running different versions of .NET. A large web app might be deployed as a collection of individual sites, each responding to different IP addresses and/or host headers, or as a single web site with one or more sub-applications in it responding to certain URL paths (which doesn't even require URL Rewrite).
 
-**Note:** Subdomains typically refer to the portion of a domain preceding the top two levels. For example, in the domain `api.contoso.com`, `api` is a subdomain of the `contoso.com` domain (which itself is composed of the `contoso` domain name and the `.com` top-level domain or TLD). URL paths refer to portion of the URL that follows the domain name, starting with a `/`. The URL `https://contoso.com/api` has a path of `/api`.
+> [!IMPORTANT]
+> Subdomains typically refer to the portion of a domain preceding the top two levels. For example, in the domain `api.contoso.com`, `api` is a subdomain of the `contoso.com` domain (which itself is composed of the `contoso` domain name and the `.com` top-level domain or TLD). URL paths refer to portion of the URL that follows the domain name, starting with a `/`. The URL `https://contoso.com/api` has a path of `/api`.
 
 There are pros and cons to using the same or different subdomains (and domains) to host a single app. Features like cookies and intra-app communication using mechanisms like [CORS](https://docs.microsoft.com/aspnet/core/security/cors) may require more configuration to work properly in distributed apps. However, apps that use different subdomains can more easily use DNS to route requests to entirely different network destinations, and so can more easily be deployed to many different servers (virtual or otherwise) without the need for IIS to act as a reverse proxy.
 

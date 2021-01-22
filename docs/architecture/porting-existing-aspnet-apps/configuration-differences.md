@@ -35,28 +35,30 @@ Figure 2-2 shows how to pass `IConfiguration` into a Razor Page and access confi
 public class TestModel : PageModel
 {
     // requires using Microsoft.Extensions.Configuration;
-    private readonly IConfiguration Configuration;
+    private readonly IConfiguration _configuration;
 
     public TestModel(IConfiguration configuration)
     {
-        Configuration = configuration;
+        _configuration= configuration;
     }
 
     public ContentResult OnGet()
     {
-        var myKeyValue = Configuration["MyKey"];
+        var myKeyValue = _configuration["MyKey"];
+        
+        // ...
     }
 }
 ```
 
-**Figure 2-2. Accessing configuration values with `IConfiguration`.**
+**Figure 2-2.** Accessing configuration values with `IConfiguration`.
 
 Using the options pattern, settings access is similar but is strongly typed and more specific to the setting(s) needed by the consuming class, as Figure 2-3 demonstrates.
 
 ```csharp
 public class PositionOptions
 {
-    public const string Position = "Position";
+    public const string Position = nameof(Position);
 
     public string Title { get; set; }
     public string Name { get; set; }
@@ -73,13 +75,12 @@ public class Test2Model : PageModel
 
     public ContentResult OnGet()
     {
-        return Content($"Title: {_options.Title} \n" +
-                       $"Name: {_options.Name}");
+        return Content($"Title: {_options.Title}\nName: {_options.Name}");
     }
 }
 ```
 
-**Figure 2-3. Using the options pattern in ASP.NET Core.**
+**Figure 2-3.** Using the options pattern in ASP.NET Core.
 
 For the options pattern to work, the options type must be configured in `ConfigureServices` when the app starts up:
 

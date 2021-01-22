@@ -28,6 +28,9 @@ The .NET SDK telemetry feature is enabled by default. To opt out of the telemetr
 
 A single telemetry entry is also sent by the .NET SDK installer when a successful installation happens. To opt out, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable before you install the .NET SDK.
 
+> [!IMPORTANT]
+> To opt out after you started the installer: close the installer, set the environment variable, and then run the installer again with that value set.
+
 ## Disclosure
 
 The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text may vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.

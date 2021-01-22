@@ -204,7 +204,8 @@
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
         "docs/fsharp/language-reference/**/**.md": "language-reference",
-        "docs/standard/**/*how-to*.md": "how-to"
+        "docs/standard/**/*how-to*.md": "how-to",
+        "docs/standard/base-types/*.md": "how-to"
       },
       "dev_langs": {
         "docs/fsharp/**/**.md": ["fsharp"],

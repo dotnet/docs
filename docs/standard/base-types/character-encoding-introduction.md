@@ -2,6 +2,7 @@
 title: Introduction to character encoding in .NET
 description: Learn about character encoding and decoding in .NET.
 ms.date: 03/09/2020
+ms.topic: conceptual
 no-loc: [Rune, char, string]
 dev_langs:
   - "csharp"

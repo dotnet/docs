@@ -13,7 +13,7 @@ Once you've identified the ASP.NET app to migrate and have its dependent project
 
 ![Project dependencies](./media/Figure3-1.png)
 
-**Figure 3-1. Project dependencies graph.**
+**Figure 3-1.** Project dependencies graph.
 
 Choose a particular front-end app, an ASP.NET MVC 5 / Web API 2 project. Identify its dependencies in the solution, and map out their dependencies until you have a complete list. A diagram like the one shown in Figure 3-1 may be useful when mapping out project dependencies. Visual Studio can produce a [dependency diagram for your solution](https://docs.microsoft.com/visualstudio/modeling/create-layer-diagrams-from-your-code), depending on which edition you're using. [The .NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer) can also produce dependency diagrams.
 
@@ -21,13 +21,13 @@ Figure 3-2 shows the installer for the [.NET Portability Analyzer Visual Studio 
 
 ![Install .NET Portability Analyzer extension](./media/Figure3-2.png)
 
-**Figure 3-2. .NET Portability Analyzer installer.**
+**Figure 3-2.** .NET Portability Analyzer installer.
 
 The extension supports Visual Studio 2017 and later. Once installed, you configure it from the **Analyze** > **Portability Analyzer Settings** menu, as shown in Figure 3-3.
 
 ![Configure the .NET Portability Analyzer extension](./media/Figure3-3.png)
 
-**Figure 3-3. Configure the .NET Portability Analyzer.**
+**Figure 3-3.** Configure the .NET Portability Analyzer.
 
 The analyzer produces a detailed report for each assembly. The report:
 

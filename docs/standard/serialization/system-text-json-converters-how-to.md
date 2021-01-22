@@ -266,11 +266,11 @@ The following example of JSON to deserialize contains values that will be deseri
 }
 ```
 
-:::zone-end
-
 Without the custom converter, deserialization puts a `JsonElement` in each property.
 
 The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
+
+:::zone-end
 
 ::: zone pivot="dotnet-core-3-1"
 

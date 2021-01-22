@@ -236,7 +236,7 @@ For scenarios that require type inference, the following code shows a custom con
 * Strings to `string`
 * Everything else to `JsonElement`
 
-::: zone pivot="dotnet-core-5-0"
+::: zone pivot="dotnet-5-0"
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterInferredTypesToObject.cs":::
 

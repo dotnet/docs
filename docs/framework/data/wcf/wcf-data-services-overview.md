@@ -8,6 +8,14 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
 ---
 # WCF Data Services Overview
 
+> [!IMPORTANT]
+> WCF Data Services has been deprecated and is no longer available for download on the Microsoft Download Centre.
+> WCF Data Services supported earlier versions of the Microsoft OData (V1-V3) protocol only and has not been under active development. OData V1-V3 has been superseded by OData V4, which is an industry standard published by OASIS and ratified by ISO. OData V4 is supported through the OData V4 compliant core libraries available at [Microsoft.OData.Core](https://www.nuget.org/packages/Microsoft.OData.Core/) with support documentation available at [OData.Net](https://odata.github.io/odata.net) and the OData V4 service libraries available at [Microsoft.AspNetCore.OData](https://www.nuget.org/packages/Microsoft.AspNetCore.OData).
+>
+> [Restier](https://github.com/OData/RESTier) is the successor to WCF Data Services. RESTier helps you bootstrap a standardized, queryable HTTP-based REST interface in literally minutes.
+> Like WCF Data Services before it, Restier provides simple and straightforward ways to shape queries and intercept submissions before and after they hit the database. And like Web API + OData, you still have the flexibility to add your own custom queries and actions with techniques you're already familiar with.
+
+## Overview
 WCF Data Services enables creation and consumption of data services for the Web or an intranet by using the Open Data Protocol (OData). OData enables you to expose your data as resources that are addressable by URIs. This enables you to access and change data by using the semantics of representational state transfer (REST), specifically the standard HTTP verbs of GET, PUT, POST, and DELETE. This topic provides an overview of both the patterns and practices defined by OData and also the facilities provided by WCF Data Services to take advantage of OData in .NET Framework-based applications.  
   
 ## Address Data as Resources  

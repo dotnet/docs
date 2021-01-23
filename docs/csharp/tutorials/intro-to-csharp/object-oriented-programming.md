@@ -102,9 +102,11 @@ When you add the preceding code and run the program, you'll see something like t
 
 The build failed. Fix the build errors and run again.
 ```
+
 As you can see the preceding code tries to instantiate a `new LineOfCreditAccount` object with 3 arguments, but the constructor currently only allows for 2. Lets fix this by removing that last argument.
 
 It should now be:
+
 ```
 var lineOfCredit = new LineOfCreditAccount("line of credit", 0);
 ```

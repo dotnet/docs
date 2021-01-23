@@ -172,6 +172,23 @@ The following table represents the support status of Ubuntu and .NET.
 
 For more information, see [Install .NET on Ubuntu](linux-ubuntu.md).
 
+## Arch Linux
+
+Arch Linux uses Pacman as a package manager.
+
+The following table represents the support status of Arch Linux and .NET.
+
+- A ✔️ indicates that the version of Ubuntu or .NET is still supported.
+- A ❌ indicates that the version of Ubuntu or .NET isn't supported on that Ubuntu release.
+- When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| Arch Linux                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+|--------------------------|---------------|---------------|----------------|
+| ✔️ [Arch Linux](linux-arch-linux.md#-)       | ❌ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+
+
+For more information, see [Install .NET on Arch Linux](linux-arch-linux.md).
+
 ## Next steps
 
 - [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-linux).

@@ -48,6 +48,22 @@ The following table is a list of currently supported .NET releases and the versi
 
 For more information, see [Install .NET on Alpine](linux-alpine.md).
 
+## Arch Linux
+
+Arch Linux uses Pacman as a package manager.
+
+The following table represents the support status of Arch Linux and .NET.
+
+- A ✔️ indicates that the version of Arch Linux or .NET is still supported.
+- A ❌ indicates that the version of Arch Linux or .NET isn't supported on that Arch Linux release.
+- When both a version of Arch Linux and a version of .NET have ✔️, that OS and .NET combination is supported.
+
+| Arch Linux                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
+|--------------------------|---------------|---------------|----------------|
+| ✔️ [Arch Linux](linux-arch-linux.md#-)       | ❌ 2.1 (Available on AUR)       | ✔️ 3.1        | ✔️ 5.0 |
+
+For more information, see [Install .NET on Arch Linux](linux-arch-linux.md).
+
 ## CentOS
 
 CentOS 7 uses Yum as a package manager and CentOS 8 uses DNF.

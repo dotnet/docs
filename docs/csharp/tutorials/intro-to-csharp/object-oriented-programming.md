@@ -98,6 +98,20 @@ Verify the results. Now, add a similar set of test code for the `LineOfCreditAcc
 When you add the preceding code and run the program, you'll see something like the following error:
 
 ```console
+'LineOfCreditAccount' does not contain a constructor that takes 3 arguments
+
+The build failed. Fix the build errors and run again.
+```
+As you can see the preceding code tries to instantiate a `new LineOfCreditAccount` object with 3 arguments, but the constructor currently only allows for 2. Lets fix this by removing that last argument.
+
+It should now be:
+```
+var lineOfCredit = new LineOfCreditAccount("line of credit", 0);
+```
+
+However, now when you run the code you will see something like the following error:
+
+```console
 Unhandled exception. System.ArgumentOutOfRangeException: Amount of deposit must be positive (Parameter 'amount')
    at OOProgramming.BankAccount.MakeDeposit(Decimal amount, DateTime date, String note) in BankAccount.cs:line 42
    at OOProgramming.BankAccount..ctor(String name, Decimal initialBalance) in BankAccount.cs:line 31

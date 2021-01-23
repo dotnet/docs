@@ -2,44 +2,44 @@
 title: The Dapr state management building block
 description: A description of the state management building-block, its features, benefits, and how to apply it.
 author: sanderm
-ms.date: 01/06/2021
+ms.date: 01/22/2021
 ---
 
 # The Dapr state management building block
 
-Distributed applications are composed of many different services. For some of the services, keeping track of state is critical. For example, consider the shopping basket service in eShop. If the service wouldn't keep track of state, the customer would loose the content of the shopping basket each time he/she left the website. That's not really good for sales. To solve this, the shopping basket service needs to persist its state in a data store, such as a SQL Database. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) makes it very easy to store state in a variety of external data stores.
+Distributed applications are composed of many different services. For some services, tracking state is critical. Consider a shopping basket service for an eCommerce site. If the service can't track state, the customer could loose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a state store. The [Dapr State Management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies saving state with advanced features. The block supports various data stores.
 
 > [!NOTE]
-> By storing the state in an external data store instead of local memory, the service itself can still be considered to be **stateless**. Stateless services are preferred over **statefull** services because they don't require that all requests from a specific user are handled by the same service instance. This means that stateless services can be very easily scaled horizontally as the number of users grow.
+> By storing the state in an external data store, a service is considered **stateless**. **Statefull** services typically store state in the local memory of a single server.  Stateless services are favored over stateful services. They don't require requests from a specific user to be handled by the same service instance. As a result, stateless services can scale horizontally as the request volume increases.
 
-To try out the state management building block yourself, have a look at the [counter application walkthrough in chapter 3](ch3-getting-started.md).
+To try out the state management building block yourself, have a look at the [counter application sample in chapter 3](ch3-getting-started.md).
 
 ## What it solves
 
-While keeping track of state is an important part of a distributed application, it also comes with additional challenges. For example:
+Tracking state in a distributed application can be challenging. For example:
 
 - The application may require different types of data stores.
-- The application may require different consistency levels for accessing and updating data.
-- Multiple users may be accessing and updating data at the same time, requiring some sort of conflict resolution.
-- Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that may occur while interacting with the data store.
+- Different consistency levels may be required for accessing and updating data.
+- Multiple users may update data at the same time, requiring  conflict resolution.
+- Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that  occur while interacting with the data store.
 
-The Dapr state management building block directly addresses these challenges. It provides a flexible way to integrate with existing data stores without adding or learning any third-party SDKs.
+The Dapr State Management building block directly addresses these challenges. It provides a flexible way to use a supported state store without dependencies or learning curve on third-party S.
 
 > [!IMPORTANT]
-> Dapr state management offers a key/value API. It is not optimized for other types of data such as large models of relational or graph data. For example, eShopOnDapr does not use Dapr state management to store all data in the application. Relational data used in the Catalog service is stored in SQL Server using Entity Framework Core. The Basket API does use Dapr state management to store the basket contents because that scenario is a good fit for a key/value store.
+> Dapr state management offers a [key/value](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. It's not optimized for relational or graph data storage. For example, the accompanying eShopOnDapr reference application uses Dapr state management to store shopping basket content. That scenario is a good fit for a key/value store. At the same time, it also uses SQL Server to store relational catalog data.
 
 ## How it works
 
-The Dapr sidecar provides the API to store and retrieve key/value pairs. The actual persistence of the data is done by a configurable state store component. You can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/), such as Azure Cosmos DB, SQL Server, and Cassandra.
+The application interacts with a Dapr sidecar service to store and retrieve key/value data. Under the hood, the side car API uses a configurable state store component to persist data. Developers can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) that include Azure Cosmos DB, SQL Server, and Cassandra.
 
-The state management API supports both HTTP and gRPC. This is the base URL of the HTTP API:
+The API can be called with either HTTP or gRPC using the following URL:
 
 ```http
 http://localhost:<daprPort>/v1.0/state/<state-store-name>/
 ```
 
-- `<daprPort>`: the HTTP port that Dapr listens on.
-- `<state-store-name>`: the name of the state store component to use.
+- `<daprPort>` specifies the HTTP port on which Dapr listens.
+- `<state-store-name>` specifies the name of the state store component.
 
 In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair using the state store component named `statestore`.
 
@@ -47,17 +47,17 @@ In figure 5-1, a Dapr-enabled shopping basket service stores a key/value pair us
 
 **Figure 5-1**. Storing a key/value pair in a Dapr state store.
 
-1. The service calls the state API on the sidecar. The JSON payload in the request body contains the data to store. Because this is a JSON array, you can store multiple key/value pairs with a single API call.
-1. The sidecar uses the statestore component configuration to determine where to persist the data. The configuration of the state store is defined in a component configuration YAML file.
+1. The service calls the state API from the Dapr sidecar. The body of the request encloses a JSON array and can contain multiple key/value pairs.
+1. The sidecar determines where to persist the data based on the state store component configuration file. The configuration file defines the target state store, Redis cache in this case.
 1. The sidecar persists the data in the Redis cache.
 
-Retrieving the stored data is just another API call. In the example below, *curl* is used to retrieve the data by directly calling the sidecar API:
+Retrieving the stored data is a similar API call. In the example below, a *curl* command retrieves the data by calling the sidecar API:
 
 ```
 curl http://localhost:3500/v1.0/state/statestore/basket1
 ```
 
- Running the curl command returns the stored state in the response body:
+The curl command returns the stored state in the response body:
 
 ```json
 {
@@ -71,17 +71,31 @@ curl http://localhost:3500/v1.0/state/statestore/basket1
 }
 ```
 
-The following sections explain how to use more advanced features of the state management building block, such as setting consistency and concurrency requirements, retrying failed requests, and performing bulk operations.
+The following sections explain how to use the more advanced features of the state management building block, which include setting consistency and concurrency requirements, retrying failed requests, and executing bulk operations.
 
 ### Consistency
 
-The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) states that it's impossible to build a distributed application that satisfies more than two out of the following three properties: **(C)onsistency**, **(A)vailability**, and **(P)artition Tolerance**. All distributed applications need to be able to deal with "P", because they use networking and network disruptions will occur. Therefore, real world distributed applications can either be "AP" or "CP".
+The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) is a set of principles applied to distributed systems that store state. Figure 5-2 shows the three properties of the CAP theorem.
 
-"AP" applications choose availability over consistency. This is supported in Dapr with the **eventual consistency** level, and is the default behavior of the state management building block. Consider an underlying data store, such as Azure CosmosDB, which uses multiple replicas to store data redundantly. With eventual consistency, the state store should asynchronously update the replicas *after* acknowledging the request. Read requests can return data from any of the replicas, including those that haven't received the latest updates yet.
+![The Cap theorem.](media/cap-theorem.png)
 
-"CP" applications choose consistency over availability. This is supported by using the **strong consistency** level. In this case, the state store should synchronously update all required replicas *before* completing the request. Read operations should return the most up-to-date data consistently across replicas.
+**Figure 5-2**. The Cap theorem.
 
-The consistency level for a state operation is set by attaching a consistency hint to the operation. If no consistency hint is set, the default behavior is **eventual**. The following *curl* command shows how to write a `Hello=World` key/value pair to a state store using a strong consistency hint:
+The theorem states that distributed data systems will offer a trade-off between consistency, availability, and partition tolerance. And, that any datastore can only guarantee two of the three properties:
+
+ - *Consistency* (C). Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a "consistent system" for an item that is currently updating, you'll wait for that response until all replicas successfully update. However, you'll receive the most current data.
+
+ - *Availability* (A). Every node returns an immediate response, even if that response isn't the most recent data. If you query an "available system" for an item that is updating, you'll get the best possible answer the service can provide at that moment.
+
+ - *Partition Tolerance* (P). Guarantees the system continues to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
+
+Distributed applications must handle **P** as services make network calls and network disruptions will occur. With that in mind, distributed applications must either be **AP** or **CP**.
+
+**AP** applications choose availability over consistency. Dapr supports this choice with its **eventual consistency** setting. It's the default behavior of the state management building block. Consider an underlying data store, such as Azure CosmosDB, which uses multiple replicas to store data redundantly. With eventual consistency, the state store will asynchronously update its replicas *after* acknowledging the write request. Read requests can return data from any of the replicas, including those replicas that haven't yet received the latest update.
+
+**CP** applications choose consistency over availability. Dapr supports this choice with its **strong consistency** setting. In this case, the state store will synchronously update all required replicas *before* completing the write request. Read operations will return the most up-to-date data consistently across replicas.
+
+The consistency level for a state operation is set by attaching a *consistency hint* to the operation. The following *curl* command writes a `Hello=World` key/value pair to a state store using a strong consistency hint:
 
 ```bash
 curl -X POST http://localhost:3500/v1.0/state/<store_name> \
@@ -98,21 +112,23 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name> \
 ```
 
 > [!IMPORTANT]
-> It is up to the state store component to try to fulfill the consistency hints attached to operations. Not all data stores  support the different consistency levels.
+> It is up to the Dapr state store component to fulfill the consistency hint attached to the operation. Not all data stores support both consistency levels.
+
+If no consistency hint is set, the default behavior is **eventual**.
 
 ### Concurrency
 
-In any application with more than one user, there's a chance of multiple users updating the same data concurrently (at the same time). Dapr support optimistic concurrency control (OCC) to resolve these kind of conflicts. OCC is based on the assumption that in real world scenarios, update conflicts do not happen that often because users typically work on different parts of the data. Therefore, it's better to assume that an update will succeed and retry if it doesn't, instead of using (often unnecessary) locks in the data store which may impact performance because of data contention.
+In a multi-user application there's a chance that multiple users will update the same data concurrently (at the same time). Dapr supports optimistic concurrency control (OCC) to manage conflicts. OCC is based on an assumption that update conflicts are rare because users work on different parts of the data. It's better to assume an update will succeed and retry if it doesn't. Implementing pessimistic locking can impact performance with locking and data contention.
 
-Dapr uses **ETags** to implement OCC. An ETag is a value attached to a specific version of a stored key/value pair. Each time the key/value pair is updated, the ETag is changed as well. To update data in the data store, the client must attach the ETag of the version to update to the request. The state store component should only allow the update if the attached ETag matches with the latest ETag in the data store. If some other client has updated the data in the meantime, the ETags will not match and the request will fail. At this point, the client may refresh the data and retry the update. This strategy is called **first-write-wins**.
+Dapr supports optimistic concurrency control (OCC) using [ETags](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-conditional-operations-using-web-api). An ETag is a value associated with a specific version of a stored key/value pair. Each time a key/value pair updates, the ETag value updates as well. When a client retrieves a key/value pair, the response includes the ETag value. When a client updates or deletes a key/value pair, it must send the ETag value back in the request body. If another client has updated the data in the meantime, the ETags won't match and the request will fail. At this point, the client must retrieve the updated data, make the change, and resubmit the update. This strategy is called **first-write-wins**.
 
-It is also possible to use a **last-write-wins** strategy. In this case, the client doesn't attach an ETag to the write request. The state store component will always allow the update to go through. Last-write-wins is useful for high-throughput write scenarios in which data contention is low or has no negative effects.
+Dapr also supports a **last-write-wins** strategy. With this approach, the client doesn't attach an ETag to the write request. The state store component will always allow the update, even if the underlying value has changed during the session. Last-write-wins is useful for high-throughput write scenarios in which data contention is low or has no negative effects.
 
 ### Transactions
 
-Dapr supports transactions to write multi-item changes to the data store as if it is a single operation. This functionality is only available for data stores that support [ACID](https://en.wikipedia.org/wiki/ACID) transactions, such as Redis, MongoDB, PostgreSQL, SQL Server, and Azure CosmosDB.
+Dapr can write *multi-item changes* to a data store as a single operation implemented as a transaction. This functionality is only available for data stores that support [ACID](https://en.wikipedia.org/wiki/ACID) transactions, such as Redis, MongoDB, PostgreSQL, SQL Server, and Azure CosmosDB.
 
-In the example below, multiple operations are sent to the state store in a single transaction. Either all operations will succeed and the transaction is committed, or one or more operations fail and the transaction is rolled back.
+In the example below, a multi-item operation is sent to the state store in a single transaction. All operations must succeed for the transaction to commit. If one or more of the operations fail and the entire transaction is rolled back.
 
 ```bash
 curl -X POST http://localhost:3500/v1.0/state/<store_name>/transaction \
@@ -132,7 +148,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name>/transaction \
       }'
 ```
 
-For data stores that don't support transactions, you can still update multiple keys in a single request as shown in the example below:
+For data stores that don't support transactions, multiple keys can still be sent as a single request. The following example shows a *bulk* write operation:
 
 ```bash
 curl -X POST http://localhost:3500/v1.0/state/<store_name> \
@@ -143,11 +159,11 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name> \
       ]' 
 ```
 
-With this bulk operation, Dapr will submit each key/value pair update as a separate request to the data store.
+With a bulk operation, Dapr will submit each key/value pair update as a separate request to the data store.
 
 ## Using the .NET SDK
 
-The Dapr .NET SDK provides language specific support for .NET Core developers. You can use the `DaprClient` class introduced in [chapter 3](ch3-getting-started.md) to read and write data. The following example demonstrates how to use the `GetStateAsync<TValue>` method to read data from the state store. The method takes the state store name `statestore` and the key `AMS` as parameters:
+The Dapr .NET SDK provides language specific support for .NET Core developers. You can use the `DaprClient` class introduced in [chapter 3](ch3-getting-started.md) to read and write data. The following example demonstrates how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the state store name, `statestore`, and the key, `AMS`, as parameters:
 
 ```c#
 var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>("statestore", "AMS");
@@ -155,13 +171,13 @@ var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>("statestor
 
 If the state store does not contain any data for key `AMS`, the result will be `default(WeatherForecast)`.
 
-To write data to the data store, use the `SaveStateAsync<TValue>` method:
+To write data to the data store, use the `DaprClient.SaveStateAsync<TValue>` method:
 
 ```c#
 daprClient.SaveStateAsync("statestore", "AMS", weatherForecast);
 ```
 
-The example above uses the **last-write-wins** strategy because no ETag is passed to the state store component. To use OCC with a **first-write-wins** strategy, first retrieve the current ETag using the `GetStateAndETagAsync` method. Then write the updated value and pass along the retrieved ETag using the `TrySaveStateAsync` method.
+The example uses the **last-write-wins** strategy because a ETag value is not passed to the state store component. To use optimistic concurrency control (OCC) with a **first-write-wins** strategy, first retrieve the current ETag using the `DaprClient.GetStateAndETagAsync` method. Then write the updated value and pass along the retrieved ETag using the `DaprClient.TrySaveStateAsync` method.
 
 ```c#
 var (weatherForecast, etag) = await daprClient.GetStateAndETagAsync<WeatherForecast>("statestore", city);
@@ -171,7 +187,7 @@ var (weatherForecast, etag) = await daprClient.GetStateAndETagAsync<WeatherForec
 var result = await daprClient.TrySaveStateAsync("statestore", city, weatherForecast, etag);
 ```
 
-The`TrySaveStateAsync` method fails when the data (and the associated ETag) in the state store has been changed since it was last retrieved. The method returns a boolean value to indicate whether the call succeeded. One way to handle the failure scenario is to simply reload the updated data from the state store and try making the changes again. This should also include checking whether it's still useful to make the changes now that the original data has been changed. If you always want your writes to succeed, no matter what other changes have been made to the data, it's easier to use the **last-write-wins** strategy.
+The `DaprClient.TrySaveStateAsync` method fails when the data (and the associated ETag) in the state store has been changed since it was last retrieved. The method returns a boolean value to indicate whether the call succeeded. One way to handle the failure scenario is to simply reload the updated data from the state store and make the changes again. Make sure it's still useful to make the changes now that the original data has changed. If so, resubmit the update. If you always want your writes to succeed regardless of other changes to the data, it's easier to use the **last-write-wins** strategy.
 
 The SDK provides additional methods to retrieve data in bulk, delete data, and execute transactions. For more information, see the [Dapr .NET SDK repository](https://github.com/dapr/dotnet-sdk).
 

@@ -93,7 +93,7 @@ The override applies the monthly deposit set in the constructor. Add the followi
 
 Verify the results. Now, add a similar set of test code for the `LineOfCreditAccount`:
 
-:::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" ID="TestLineOfCredit":::
+:::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" ID="InitialTestLineOfCredit":::
 
 When you add the preceding code and run the program, you'll see something like the following error:
 

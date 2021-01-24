@@ -27,7 +27,7 @@ Tracking state in a distributed application can be challenging. For example:
 The Dapr State Management building block addresses these challenges. It streamlines tracking state without dependencies or a learning curve on third-party storage SDKs.
 
 > [!IMPORTANT]
-> Dapr state management offers a [key/value](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. The feature doesn't support relational or graph data storage. 
+> Dapr state management offers a [key/value](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. The feature doesn't support relational or graph data storage.
 
 ## How it works
 
@@ -86,11 +86,11 @@ The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) is a set of princip
 
 The theorem states that distributed data systems offer a trade-off between consistency, availability, and partition tolerance. And, that any datastore can only *guarantee two of the three properties*:
 
- - *Consistency* (**C**). Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a "consistent system" for an item that is currently updating, you'll not get a response until all replicas successfully update. However, you'll always receive the most current data.
+- *Consistency* (**C**). Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a "consistent system" for an item that is currently updating, you'll not get a response until all replicas successfully update. However, you'll always receive the most current data.
 
- - *Availability* (**A**). Every node returns an immediate response, even if that response isn't the most recent data. If you query an "available system" for an item that is updating, you'll get the best possible answer the service can provide at that moment.
+- *Availability* (**A**). Every node returns an immediate response, even if that response isn't the most recent data. If you query an "available system" for an item that is updating, you'll get the best possible answer the service can provide at that moment.
 
- - *Partition Tolerance* (**P**). Guarantees the system continues to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
+- *Partition Tolerance* (**P**). Guarantees the system continues to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
 
 Distributed applications must handle the **P** property. As services communicate among each other with network calls, network disruptions (**P**) will occur. With that in mind, distributed applications must either be **AP** or **CP**.
 
@@ -188,7 +188,7 @@ var (weatherForecast, etag) = await daprClient.GetStateAndETagAsync<WeatherForec
 var result = await daprClient.TrySaveStateAsync("statestore", city, weatherForecast, etag);
 ```
 
-The `DaprClient.TrySaveStateAsync` method fails when the data (and associated ETag) has been changed in the state store after the data was retrieved. The method returns a boolean value to indicate whether the call succeeded. A strategy to handle the failure is to simply reload the updated data from the state store, make the change again, and resubmit the update. 
+The `DaprClient.TrySaveStateAsync` method fails when the data (and associated ETag) has been changed in the state store after the data was retrieved. The method returns a boolean value to indicate whether the call succeeded. A strategy to handle the failure is to simply reload the updated data from the state store, make the change again, and resubmit the update.
 
 If you always want a write to succeed regardless of other changes to the data, use the **last-write-wins** strategy.
 
@@ -204,6 +204,7 @@ public void ConfigureServices(IServiceCollection services)
     services.AddControllers().AddDapr();
 }
 ```
+
 Once configured, Dapr can inject a key/value pair directly into a controller action using the ASP.NET Core `FromState` attribute. Referencing the `DaprClient` object is no longer necessary. The next example shows a Web API that returns the weather forecast for a given city:
 
 ```c#
@@ -323,7 +324,6 @@ Using the Redis Console tool, look inside the Redis cache to see how the Redis s
 The output shows the full Redis **key** for the data as `basketservice||basket1`. By default, Dapr uses the `application id` of the Dapr instance (`basketservice`) as a prefix for the key. This naming convention enables multiple Dapr instances to share the same data store without key name collisions. For the developer, it's critical always to specify the same `application id` when running the application with Dapr. If omitted, Dapr will generate a unique application Id. If the `application id` changes, the application can no longer access the state stored with the previous key prefix.
 
 That said, it's possible to configure a *constant value* for the key prefix in the `keyPrefix` metadata field in the state store component file. Consider the following example:
-
 
 ```yaml
 spec:
@@ -446,9 +446,9 @@ The Dapr state management building block offers an API for storing key/value dat
 
 The .NET SDK provides language-specific support for .NET Core and ASP.NET Core. Model binding integration simplifies accessing and updating state from ASP.NET Core controller action methods.
 
-In the eShopOnDapr reference application, the benefits to moving to Dapr state management are clear: 
+In the eShopOnDapr reference application, the benefits to moving to Dapr state management are clear:
 
-1. The new implementation uses fewer lines of code. 
+1. The new implementation uses fewer lines of code.
 1. It abstracts away the complexity of the third party `StackExchange.Redis` API.
 1. Replacing the underlying Redis cache with a different type of data store now only requires changes to the state store configuration file.
 
@@ -459,4 +459,3 @@ In the eShopOnDapr reference application, the benefits to moving to Dapr state m
 >[!div class="step-by-step"]
 >[Previous](index.md)
 >[Next](index.md)
-git git 

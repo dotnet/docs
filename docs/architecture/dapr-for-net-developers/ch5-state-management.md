@@ -2,7 +2,7 @@
 title: The Dapr state management building block
 description: A description of the state management building-block, its features, benefits, and how to apply it.
 author: sanderm
-ms.date: 01/23/2021
+ms.date: 01/24/2021
 ms.reviewer: robvet
 ---
 

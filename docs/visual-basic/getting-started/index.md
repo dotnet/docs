@@ -18,7 +18,7 @@ This section of the documentation helps you get started with Visual Basic applic
 
 ## Additional information
 
-- [What's new for Visual Basic](whats-new.md)
+- [What's new for Visual Basic](../whats-new/index.md)
 Lists new features in each of the versions of Visual Basic .NET.
 
 - [Additional Resources for Visual Basic Programmers](additional-resources.md)

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo4::GetReJITIDs Method
+
 Returns an array of IDs that identify all JIT-recompiled versions of the specified function that are still allocated. This includes JIT-recompiled versions of functions that have been subsequently reverted but not yet freed (for example, when the application domain that contains the reverted function is still in use).  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetReJITIDs (
 ```  
   
 ## Parameters  
+
  `functionId`  
  [in] The `FunctionID` of the function instance for which to enumerate versions.  
   
@@ -43,9 +45,11 @@ HRESULT GetReJITIDs (
  [out] A caller-allocated array that will contain the JIT-recompiled IDs for the specified function.  
   
 ## Remarks  
+
  `GetReJITIDs` enumerates the active JIT-recompiled IDs for a given function instance. It follows the same usage pattern as other `ICorProfilerInfo` functions that accept caller-allocated buffers.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

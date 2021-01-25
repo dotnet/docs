@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 3e1c61b3-888e-4dc3-a02c-a2e023dd7a07
 ---
 # Argument value '\<pathname>' contains characters that are not valid in a path name
+
 A path name contains one or more characters that are not valid.  
   
 ## To correct this error  

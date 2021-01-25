@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataInfo::GetFileMapping Method
+
 Gets the memory region of the mapped file, and the type of mapping.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetFileMapping (
 ```  
   
 ## Parameters  
+
  `ppvData`  
  [out] A pointer to the start of the mapped file.  
   
@@ -48,6 +50,7 @@ HRESULT GetFileMapping (
 |`COR_E_NOTSUPPORTED`|The CLR implementation cannot provide information about the memory region. This can happen for the following reasons:<br /><br /> -   The metadata scope was opened with the `ofWrite` or `ofCopyMemory` flag.<br />-   The metadata scope was opened without the `ofReadOnly` flag.<br />-   The [IMetaDataDispenser::OpenScopeOnMemory](imetadatadispenser-openscopeonmemory-method.md) method was used to open only the metadata portion of the file.<br />-   The file is not a portable executable (PE) file. **Note:**  These conditions depend on the CLR implementation, and are likely to be weakened in future versions of the CLR.|  
   
 ## Remarks  
+
  The memory that `ppvData` points to is valid only as long as the underlying metadata scope is open.  
   
  In order for this method to work, when you map the metadata of an on-disk file into memory by calling the [IMetaDataDispenser::OpenScope](imetadatadispenser-openscope-method.md) method, you must specify the `ofReadOnly` flag and you must not specify the `ofWrite` or `ofCopyMemory` flag.  
@@ -57,6 +60,7 @@ HRESULT GetFileMapping (
  Passing NULL for any of the three parameters is not supported. The method returns `E_INVALIDARG`, and none of the outputs are filled. Ignoring the mapping type or the size of the region can result in abnormal program termination.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

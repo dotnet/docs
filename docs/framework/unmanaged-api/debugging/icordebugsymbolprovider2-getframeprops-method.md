@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f07b73f3-188d-43a9-8f7d-44dce2f1ddb7
 ---
 # ICorDebugSymbolProvider2::GetFrameProps Method
+
 Returns the method starting relative virtual address of a method and the parent frame given a code relative virtual address.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT GetFrameProps(
 ```  
   
 ## Parameters  
+
  `codeRva`  
  [in] A code relative virtual address.  
   
@@ -32,6 +34,7 @@ HRESULT GetFrameProps(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

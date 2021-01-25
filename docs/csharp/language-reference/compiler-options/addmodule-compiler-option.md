@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: ed604546-0dc2-4bd4-9a3e-610a8d973e58
 ---
 # -addmodule (C# Compiler Options)
+
 This option adds a module that was created with the target:module switch to the current compilation.  
   
 ## Syntax  
@@ -20,10 +21,12 @@ This option adds a module that was created with the target:module switch to the 
 ```  
   
 ## Arguments  
+
  `file`, `file2`  
  An output file that contains metadata. The file cannot contain an assembly manifest. To import more than one file, separate file names with either a comma or a semicolon.  
   
 ## Remarks  
+
  All modules added with **-addmodule** must be in the same directory as the output file at run time. That is, you can specify a module in any directory at compile time but the module must be in the application directory at run time. If the module is not in the application directory at run time, you will get a <xref:System.TypeLoadException>.  
   
  `file` cannot contain an assembly. For example, if the output file was created with [-target:module](./target-module-compiler-option.md), its metadata can be imported with **-addmodule**.  
@@ -33,6 +36,7 @@ This option adds a module that was created with the target:module switch to the 
  This compiler option is unavailable in Visual Studio; a project cannot reference a module. In addition, this compiler option cannot be changed programmatically.  
   
 ## Example  
+
  Compile source file `input.cs` and add metadata from `metad1.netmodule` and `metad2.netmodule` to produce `out.exe`:  
   
 ```console  

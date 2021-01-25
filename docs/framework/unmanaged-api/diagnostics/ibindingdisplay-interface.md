@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IBindingDisplay Interface
+
 Provides methods that display current binding information about the running application.  
   
 ## Methods  
@@ -26,6 +27,7 @@ Provides methods that display current binding information about the running appl
 |[InitializeForProcess Method](ibindingdisplay-initializeforprocess-method.md)|Initializes the `IBindingDisplay` object.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** BindingDisplay.h  

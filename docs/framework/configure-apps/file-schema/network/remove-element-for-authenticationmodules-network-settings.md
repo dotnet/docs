@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: abf79949-b05c-465a-b51c-bbeda9a74173
 ---
 # \<remove> Element for authenticationModules (Network Settings)
+
 Removes an authentication module from the application.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Removes an authentication module from the application.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +39,7 @@ Removes an authentication module from the application.
 |**type**|The name of the authentication module to remove.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,14 +49,17 @@ Removes an authentication module from the application.
 |[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
+
  The `remove` element removes authentication modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
   
  The value for the `type` attribute should be a valid class name.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example removes an authentication module.  
   
 ```xml  

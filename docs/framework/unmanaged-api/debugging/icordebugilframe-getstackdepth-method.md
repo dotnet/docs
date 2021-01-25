@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILFrame::GetStackDepth Method
+
 This method has not been implemented.  
   
 ## Syntax  
@@ -28,4 +29,5 @@ HRESULT GetStackDepth (
 ```  
   
 ## Requirements  
+
  **Header:** CorDebug.idl, CorDebug.h

@@ -32,6 +32,7 @@ select InstanceId, CreationTime from [System.Activities.DurableInstancing].[Inst
 ```
 
 ## To find all instances not persisted yet and also not loaded
+
  The following SQL query returns ID and creation time for all instances that are not persisted and also are not loaded.
 
 ```sql

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetCORRequiredVersion Function
+
 Gets the required common language runtime (CLR) version number.  
   
  This function has been deprecated in the .NET Framework 4.  
@@ -31,6 +32,7 @@ HRESULT GetCORRequiredVersion (
 ```  
   
 ## Parameters  
+
  `pbuffer`  
  [out] A buffer containing a string that specifies the version number.  
   
@@ -41,6 +43,7 @@ HRESULT GetCORRequiredVersion (
  [out] The number of bytes returned in the buffer.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

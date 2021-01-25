@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 9460ea1b-6c9f-44b8-8f73-301b30a01de1
 ---
 # -win32manifest (C# Compiler Options)
+
 Use the **-win32manifest** option to specify a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.  
   
 ## Syntax  
@@ -20,10 +21,12 @@ Use the **-win32manifest** option to specify a user-defined Win32 application ma
 ```  
   
 ## Arguments  
+
  `filename`  
  The name and location of the custom manifest file.  
   
 ## Remarks  
+
  By default, the Visual C# compiler embeds an application manifest that specifies a requested execution level of "asInvoker." It creates the manifest in the same folder in which the executable is built, typically the bin\Debug or bin\Release folder when you use Visual Studio. If you want to supply a custom manifest, for example to specify a requested execution level of "highestAvailable" or "requireAdministrator," use this option to specify the name of the file.  
   
 > [!NOTE]
@@ -42,6 +45,7 @@ Use the **-win32manifest** option to specify a user-defined Win32 application ma
  You can provide the application manifest as a custom post-build step or as part of a Win32 resource file by using the [-nowin32manifest (C# Compiler Options)](./nowin32manifest-compiler-option.md) option. Use that same option if you want your application to be subject to file or registry virtualization on Windows Vista. This will prevent the compiler from creating and embedding a default manifest in the portable executable (PE) file.  
   
 ## Example  
+
  The following example shows the default manifest that the Visual C# compiler inserts into a PE.  
   
 > [!NOTE]

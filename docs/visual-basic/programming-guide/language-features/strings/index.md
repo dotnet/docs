@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 7e4c777c-ad69-46e2-8b9e-9be4033b1c96
 ---
 # Strings in Visual Basic
+
 This section describes the basic concepts behind using strings in Visual Basic.  
   
 ## In This Section  
+
  [Introduction to Strings in Visual Basic](introduction-to-strings.md)  
  Lists topics that describe the basic concepts behind using strings in Visual Basic.  
   

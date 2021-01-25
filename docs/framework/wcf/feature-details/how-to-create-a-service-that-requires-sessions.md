@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 8a7613ef-0df9-47c3-b8dc-47f42cb1fd8b
 ---
 # How to: Create a Service That Requires Sessions
+
 Sessions create a shared state between two or more endpoints that enables useful features such as callbacks, multi-hop security, and associations between clients and service instances. For more information about sessions in Windows Communication Foundation (WCF) applications, see [Using Sessions](../using-sessions.md).  
   
 ### To specify that a contract require its binding to support sessions  
@@ -26,6 +27,7 @@ Sessions create a shared state between two or more endpoints that enables useful
      [!code-xml[SCA.Session#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/sca.session/cs/hostapplication.exe.config#2)]
   
 ## Example  
+
  The following example code shows how to specify a contract-level session requirement and use a configuration file to support that requirement with the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=nameWithType> binding.  
   
  [!code-csharp[SCA.Session#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/sca.session/cs/services.cs#1)]

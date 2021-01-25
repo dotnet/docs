@@ -4,12 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: 71f112ba-abb0-46f7-b05f-a5d2eb9d0c5c
 ---
 # Using .NET Framework 3.0 WF Activities in .NET Framework 4 with the Interop Activity
+
 The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] (WF 4.5) activity that wraps a .NET Framework 3.5 (WF 3.5) activity within a [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] workflow. The WF 3 activity can be a single leaf activity or an entire tree of activities. The execution (including cancellation and exception handling) and the persistence of the .NET Framework 3.5 activity occur within the context of the [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] workflow instance that is executing.  
   
 > [!NOTE]
 > The <xref:System.Activities.Statements.Interop> activity does not appear in the workflow designer toolbox unless the workflow's project has its **Target Framework** setting set to **.NET Framework 4.5**.  
   
 ## Criteria for Using a WF 3 Activity with an Interop Activity  
+
  For a WF 3 activity to successfully execute within an <xref:System.Activities.Statements.Interop> activity, the following criteria must be met:  
   
 - The WF 3 activity must derive from <xref:System.Workflow.ComponentModel.Activity?displayProperty=nameWithType>.  
@@ -18,14 +20,16 @@ The <xref:System.Activities.Statements.Interop> activity is a [!INCLUDE[netfx_cu
   
 - The WF 3 activity must have a public parameterless constructor.  
   
-- Due to limitations in the interface types that the <xref:System.Activities.Statements.Interop> activity can support, <xref:System.Workflow.Activities.HandleExternalEventActivity> and <xref:System.Workflow.Activities.CallExternalMethodActivity> cannot be used directly, but derivative activities created using the Workflow Communication Activity tool (WCA.exe) can be used. See [Windows Workflow Foundation Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734408(v=vs.90)) for details.  
+- Due to limitations in the interface types that the <xref:System.Activities.Statements.Interop> activity can support, <xref:System.Workflow.Activities.HandleExternalEventActivity> and <xref:System.Workflow.Activities.CallExternalMethodActivity> cannot be used directly, but derivative activities created using the Workflow Communication Activity tool (WCA.exe) can be used. See [Windows Workflow Foundation Tools](/previous-versions/dotnet/netframework-3.5/ms734408(v=vs.90)) for details.  
   
 ## Configuring a WF 3 Activity Within an Interop Activity  
+
  To configure and pass data into and out of a WF 3 activity, across the interoperation boundary, the WF 3 activity’s properties and metadata properties are exposed by the <xref:System.Activities.Statements.Interop> activity. The WF 3 activity’s metadata properties (such as <xref:System.Workflow.ComponentModel.Activity.Name%2A>) are exposed through the <xref:System.Activities.Statements.Interop.ActivityMetaProperties%2A> collection. This is a collection of name-value pairs used to define the values for the WF 3 activity’s metadata properties. A metadata property is a property backed by dependency property for which the <xref:System.Workflow.ComponentModel.DependencyPropertyOptions.Metadata> flag is set.  
   
  The WF 3 activity’s properties are exposed through the <xref:System.Activities.Statements.Interop.ActivityProperties%2A> collection. This is a set of name-value pairs, where each value is a <xref:System.Activities.Argument> object, used to define the arguments for the WF 3 activity’s properties. Because the direction of a WF 3 activity property cannot be inferred, every property is surfaced as an <xref:System.Activities.InArgument>/<xref:System.Activities.OutArgument> pair. Depending on the activity’s usage of the property, you may want to provide an <xref:System.Activities.InArgument> entry, an <xref:System.Activities.OutArgument> entry, or both. The expected name of the <xref:System.Activities.InArgument> entry in the collection is the name of the property as defined on the WF 3 activity. The expected name of the <xref:System.Activities.OutArgument> entry in the collection is a concatenation of the name of the property and the string "Out".  
   
 ## Limitations of Using a WF 3 Activity Within an Interop Activity  
+
  The WF 3 system-provided activities cannot be directly wrapped in an <xref:System.Activities.Statements.Interop> activity. For some WF 3 activities, such as <xref:System.Workflow.Activities.DelayActivity>, this is because there is an analogous WF 4.5 activity. For others, this is because the functionality of the activity is not supported. Many WF 3 system-provided activities can be used within workflows wrapped by the <xref:System.Activities.Statements.Interop> activity, subject to the following restrictions:  
   
 1. <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.Receive> cannot be used in an <xref:System.Activities.Statements.Interop> activity.  

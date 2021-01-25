@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: f82aaa62-321e-4c8a-b51b-9d1114700170
 ---
 # Annotating Typed DataSets
+
 Annotations enable you to modify the names of the elements in your typed <xref:System.Data.DataSet> without modifying the underlying schema. Modifying the names of the elements in your underlying schema would cause the typed **DataSet** to refer to objects that do not exist in the data source, as well as lose a reference to the objects that do exist in the data source.  
   
  Using annotations, you can customize the names of objects in your typed **DataSet** with more meaningful names, making code more readable and your typed **DataSet** easier for clients to use, while leaving underlying schema intact. For example, the following schema element for the **Customers** table of the **Northwind** database would result in a **DataRow** object name of **CustomersRow** and a <xref:System.Data.DataRowCollection> named **Customers**.  

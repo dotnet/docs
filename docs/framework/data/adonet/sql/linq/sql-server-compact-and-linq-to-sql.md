@@ -4,11 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: 59022359-a5a2-4c42-9a6a-5c0259c3ad17
 ---
 # SQL Server Compact and LINQ to SQL
-SQL Server Compact is the default database installed with Visual Studio. For more information, see [Using SQL Server Compact (Visual Studio)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/aa983321(v=vs.110)).  
+
+SQL Server Compact is the default database installed with Visual Studio. For more information, see [Using SQL Server Compact (Visual Studio)](/previous-versions/visualstudio/visual-studio-2012/aa983321(v=vs.110)).  
   
  This topic outlines the key differences in usage, configuration, feature sets, and scope of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] support.  
   
 ## Characteristics of SQL Server Compact in Relation to LINQ to SQL  
+
  By default, SQL Server Compact is installed for all Visual Studio editions, and is therefore available on the development computer for use with [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. But deployment of an application that uses SQL Server Compact and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] differs from that for a SQL Server application. SQL Server Compact is not a part of the .NET Framework, and therefore must be packaged with the application or downloaded separately from the Microsoft site.  
   
  Note the following characteristics:  
@@ -24,6 +26,7 @@ SQL Server Compact is the default database installed with Visual Studio. For mor
 - The Object Relational Designer does not support SQL Server Compact.  
   
 ## Feature Set  
+
  The SQL Server Compact feature set is much simpler than the feature set of SQL Server in the following ways that can affect [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications :  
   
 - SQL Server Compact does not support stored procedures or views.  

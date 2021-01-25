@@ -12,6 +12,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugCodeInvokeKind Enumeration
+
 Describes how an exported function invokes managed code.  
   
 ## Syntax  
@@ -34,12 +35,14 @@ typedef enum CorDebugCodeInvokeKind
 |`CODE_INVOKE_KIND_TAILCALL`|This method will invoke managed code via a tail-call. Single-stepping and stepping over any call instructions should arrive at managed code.|  
   
 ## Remarks  
+
  This enumeration is used by the [ICorDebugProcess6::GetExportStepInfo](icordebugprocess6-getexportstepinfo-method.md) method to provide information about stepping through managed code.  
   
 > [!NOTE]
 > This enumeration is intended for use in .NET Native debugging scenarios only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

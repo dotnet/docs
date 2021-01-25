@@ -8,7 +8,7 @@ ms.assetid: dbe2d657-b3f3-487e-b645-21fb2d71cd7b
 
 LINQ can be used to query and transform strings and collections of strings. It can be especially useful with semi-structured data in text files. LINQ queries can be combined with traditional string functions and regular expressions. For example, you can use the <xref:System.String.Split%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method to create an array of strings that you can then query or modify by using LINQ. You can use the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method in the `where` clause of a LINQ query. And you can use LINQ to query or modify the <xref:System.Text.RegularExpressions.MatchCollection> results returned by a regular expression.
 
-You can also use the techniques described in this section to transform semi-structured text data to XML. For more information, see [How to generate XML from CSV files](how-to-generate-xml-from-csv-files.md).
+You can also use the techniques described in this section to transform semi-structured text data to XML. For more information, see [How to generate XML from CSV files](../../../../standard/linq/generate-xml-csv-files.md).
 
 The examples in this section fall into two categories:
 
@@ -70,4 +70,4 @@ Many different types of text files consist of a series of lines, often with simi
 ## See also
 
 - [Language-Integrated Query (LINQ) (C#)](index.md)
-- [How to generate XML from CSV files](how-to-generate-xml-from-csv-files.md)
+- [How to generate XML from CSV files](../../../../standard/linq/generate-xml-csv-files.md)

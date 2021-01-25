@@ -1,7 +1,7 @@
 ---
 title: Creating composite UI based on microservices
 description: Microservices architecture is not only for the back end. Get a peek view at using it in the front end.
-ms.date: 09/20/2018
+ms.date: 01/13/2021
 ---
 # Creating composite UI based on microservices
 
@@ -17,7 +17,7 @@ In contrast, a composite UI is precisely generated and composed by the microserv
 
 At client application start-up time, each of the client UI components (TypeScript classes, for example) registers itself with an infrastructure microservice capable of providing ViewModels for a given scenario. If the microservice changes the shape, the UI changes also.
 
-Figure 4-21 shows a version of this composite UI approach. This is simplified because you might have other microservices that are aggregating granular parts that are based on different techniques. It depends on whether you're building a traditional web approach (ASP.NET MVC) or an SPA (Single Page Application).
+Figure 4-21 shows a version of this composite UI approach. This approach is simplified because you might have other microservices that are aggregating granular parts that are based on different techniques. It depends on whether you're building a traditional web approach (ASP.NET MVC) or an SPA (Single Page Application).
 
 ![Diagram of a composite UI made up of many view models.](./media/microservice-based-composite-ui-shape-layout/microservice-generate-composite-ui.png)
 

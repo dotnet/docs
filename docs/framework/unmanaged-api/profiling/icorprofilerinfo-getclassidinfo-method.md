@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetClassIDInfo Method
+
 Gets the parent module and the metadata token for the specified class.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetClassIDInfo(
 ```  
   
 ## Parameters  
+
  `classId`  
  [in] The ID of the class for which to get the information.  
   
@@ -39,11 +41,13 @@ HRESULT GetClassIDInfo(
  [out] A pointer to the metadata token for the class.  
   
 ## Remarks  
+
  The profiler code can call [ICorProfilerInfo::GetModuleMetaData](icorprofilerinfo-getmodulemetadata-method.md) to obtain a metadata interface for a given module. The metadata token that is returned to the location referenced by `pTypeDefToken` can then be used to access the metadata for the class.  
   
  To get more information for generic types, use [ICorProfilerInfo2::GetClassIDInfo2](icorprofilerinfo2-getclassidinfo2-method.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

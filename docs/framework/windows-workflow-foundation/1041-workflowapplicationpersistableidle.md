@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 966adf2f-e21d-44df-a3ec-a8e285e0a316
 ---
 # 1041 - WorkflowApplicationPersistableIdle
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 966adf2f-e21d-44df-a3ec-a8e285e0a316
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates that a workflow application is idle and persistable. The workflow application will be idled or persisted.  
   
 ## Message  
+
  WorkflowApplication Id: '%1' is idle and persistable.  The following action will be taken: %2.  
   
 ## Details  

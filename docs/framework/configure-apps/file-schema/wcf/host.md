@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: be566d55-9d50-4b2e-985d-52a5cc26cbbb
 ---
 # \<host>
+
 Specifies settings for a service host.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,12 +26,15 @@ Specifies settings for a service host.
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

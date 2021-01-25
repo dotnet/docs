@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 7c7def45-b0ab-450f-ad3f-4383dfd9aed7
 ---
 # Bad DLL calling convention
+
 Arguments passed to a dynamic-link library (DLL) must exactly match those expected by the routine. Calling conventions deal with number, type, and order of arguments. Your program may be calling a routine in a DLL that is being passed the wrong type or number of arguments.  
   
 ## To correct this error  

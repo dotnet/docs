@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b226bede-8459-4de9-b2ac-3d39604ce2bc
 ---
 # \<add> of \<baseAddressPrefixFilter>
+
 Represents a configuration element that specifies a pass-through filter, which provides a mechanism to pick the appropriate Internet Information Services (IIS) bindings when hosting a Windows Communication Foundation (WCF) application in IIS.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -23,6 +24,7 @@ Represents a configuration element that specifies a pass-through filter, which p
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -32,6 +34,7 @@ Represents a configuration element that specifies a pass-through filter, which p
 |prefix|A URI that is used to match a part of a base address.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -41,6 +44,7 @@ Represents a configuration element that specifies a pass-through filter, which p
 |[\<baseAddressPrefixFilters>](baseaddressprefixfilters.md)|A collection of configuration elements that specify pass-through filters, which provide a mechanism to pick the appropriate IIS bindings when hosting a Windows Communication Foundation (WCF) application in IIS.|  
   
 ## Remarks  
+
  A prefix filter provides a way for shared hosting providers to specify which URIs are to be used by the service. It enables shared hosts to host multiple applications with different base addresses for the same scheme on the same site.  
   
  IIS Web sites are containers for virtual applications which contain virtual directories. The application in a site can be accessed through one or more IIS binding. IIS bindings provide two pieces of information: binding protocol and binding information. Binding protocol (for example, HTTP) defines the scheme over which communication occurs, and binding information (for example, IP Address, Port, Hostheader) contains data used to access the site.  

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 9a829669-5f76-4c88-80ec-92d0c62c0660
 ---
 # Controlling Resource Consumption and Improving Performance
+
 This topic describes various properties in different areas of the Windows Communication Foundation (WCF) architecture that work to control resource consumption and affect performance metrics.
 
 ## Properties that Constrain Resource Consumption in WCF
+
  Windows Communication Foundation (WCF) applies constraints on certain types of processes for either security or performance purposes. These constraints come in two main forms, either quotas and throttles. *Quotas* are limits that when reached or exceeded trigger an immediate exception at some point in the system. *Throttles* are limits that do not immediately cause an exception to be thrown. Instead, when a throttle limit is reached, processing continues but within the limits set by that throttle value. This limited processing might trigger an exception elsewhere, but this depends upon the application.
 
  In addition to the distinction between quotas and throttles, some constraining properties are located at the serialization level, some at the transport level, and some at the application level. For example, the quota <xref:System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize%2A?displayProperty=nameWithType>, which is implemented by all system-supplied transport binding elements, is set to 65,536 bytes by default to hinder malicious clients from engaging in denial-of-service attacks against a service by causing excessive memory consumption. (Typically, you can increase performance by lowering this value.)
@@ -21,6 +23,7 @@ This topic describes various properties in different areas of the Windows Commun
  Properties that restrict serialization processes are listed in [Security Considerations for Data](./feature-details/security-considerations-for-data.md). Properties that restrict the consumption of resources related to transports are listed in [Transport Quotas](./feature-details/transport-quotas.md). Properties that restrict the consumption of resources at the application layer are the members of the <xref:System.ServiceModel.Dispatcher.ServiceThrottle> class.
 
 ## Detecting Application and Performance Issues Related to Quota Settings
+
  The defaults of the preceding values have been chosen to enable basic application functionality across a wide range of application types while providing basic protection against common security issues. However, different application designs might exceed one or more throttle settings although the application otherwise is secure and would work as designed. In these cases, you must identify which throttle values are being exceeded and at what level, and decide on the appropriate course of action to increase application throughput.
 
  Typically, when writing the application and debugging it, you set the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property to `true` in the configuration file or programmatically. This instructs WCF to return service exception stack traces to the client application for viewing. This feature reports most application-level exceptions in such a way as to display which quota settings might be involved, if that is the problem.
@@ -30,6 +33,7 @@ This topic describes various properties in different areas of the Windows Commun
  Regardless of the capabilities of your development environment, you can use capabilities of WCF tracing and message logging to debug all exceptions and tune the performance of your applications. For more information, see [Using Tracing to Troubleshoot Your Application](./diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).
 
 ## Performance Issues and XmlSerializer
+
  Services and client applications that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at run time, which can result in slow start-up performance.
 
 > [!NOTE]
@@ -39,7 +43,7 @@ This topic describes various properties in different areas of the Windows Commun
 
 ## Performance Issues When Hosting WCF Services Under ASP.NET
 
-When a WCF service is hosted under IIS and ASP.NET, the configuration settings of IIS and ASP.NET can affect the throughput and memory footprint of the WCF service.  For more information about ASP.NET performance, see [Improving ASP.NET Performance](https://docs.microsoft.com/previous-versions/msp-n-p/ff647787(v=pandp.10)). One setting that might have unintended consequences is <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A>, which is a property of the <xref:System.Web.Configuration.ProcessModelSection>. If your application has a fixed or small number of clients, setting <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A> to 2 might provide a throughput boost on a multiprocessor machine that has a CPU utilization close to 100%. This increase in performance comes with a cost: it will also cause an increase in memory usage, which could reduce scalability.
+When a WCF service is hosted under IIS and ASP.NET, the configuration settings of IIS and ASP.NET can affect the throughput and memory footprint of the WCF service.  For more information about ASP.NET performance, see [Improving ASP.NET Performance](/previous-versions/msp-n-p/ff647787(v=pandp.10)). One setting that might have unintended consequences is <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A>, which is a property of the <xref:System.Web.Configuration.ProcessModelSection>. If your application has a fixed or small number of clients, setting <xref:System.Web.Configuration.ProcessModelSection.MinWorkerThreads%2A> to 2 might provide a throughput boost on a multiprocessor machine that has a CPU utilization close to 100%. This increase in performance comes with a cost: it will also cause an increase in memory usage, which could reduce scalability.
 
 ## See also
 

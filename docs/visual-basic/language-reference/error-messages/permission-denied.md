@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 71f46756-f522-4814-aab4-492bf9924245
 ---
 # Permission denied (Visual Basic)
+
 An attempt was made to write to a write-protected disk or to access a locked file.  
   
 ## To correct this error  

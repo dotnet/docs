@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugChain::GetReason Method
+
 Gets the reason for the genesis of this calling chain.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetReason (
 ```  
   
 ## Parameters  
+
  `pReason`  
  [out] A pointer to a value (a bitwise combination) of the CorDebugChainReason enumeration that indicates the reason for the genesis of this calling chain.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

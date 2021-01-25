@@ -5,6 +5,7 @@ ms.assetid: ac3f588e-5f75-4275-b969-2d492ecc3b47
 author: "BrucePerlerMS"
 ---
 # \<tokenReplayDetection>
+
 Enables token replay detection and specifies the expiration time for tokens.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,9 +25,11 @@ Enables token replay detection and specifies the expiration time for tokens.
 ```  
   
 ## Type  
+
  <xref:System.IdentityModel.Configuration.TokenReplayDetectionElement>  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +40,7 @@ Enables token replay detection and specifies the expiration time for tokens.
 |expirationPeriod|A <xref:System.TimeSpan> that specifies the maximum amount of time before an item is considered expired and removed from the cache.  For more information about how to specify <xref:System.TimeSpan> values, see [Timespan Values](../windows-workflow-foundation/index.md).|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -47,6 +51,7 @@ Enables token replay detection and specifies the expiration time for tokens.
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
   
 ## Remarks  
+
  A `<tokenReplayDetection>` element can be specified at the service level under the `<identityConfiguration>` element or on the security token handler collection level under the `<securityTokenHandlerConfiguration>` element. Settings on a token handler collection override those specified on the service.  
   
  The type of the token replay cache is specified by the [\<tokenReplayCache>](tokenreplaycache.md) element.

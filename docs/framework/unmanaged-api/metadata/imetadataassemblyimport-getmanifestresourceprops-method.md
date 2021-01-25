@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyImport::GetManifestResourceProps Method
+
 Gets the set of properties of the manifest resource with the specified metadata signature.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT GetManifestResourceProps (
 ```  
   
 ## Parameters  
+
  `mdmr`  
  [in] An `mdManifestResource` token that represents the resource for which to get the properties.  
   
@@ -56,6 +58,7 @@ HRESULT GetManifestResourceProps (
  [out] A pointer to flags that describe the metadata applied to a resource. The flags value is a combination of one or more [CorManifestResourceFlags](cormanifestresourceflags-enumeration.md) values.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

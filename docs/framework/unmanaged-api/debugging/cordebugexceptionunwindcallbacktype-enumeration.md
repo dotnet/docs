@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugExceptionUnwindCallbackType Enumeration
+
 Indicates the event that is being signaled by the callback during the unwind phase.  
   
 ## Syntax  
@@ -35,6 +36,7 @@ typedef enum CorDebugExceptionUnwindCallbackType {
 |`DEBUG_EXCEPTION_INTERCEPTED`|The exception was intercepted.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

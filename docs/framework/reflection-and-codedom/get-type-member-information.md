@@ -12,6 +12,7 @@ dev_langs:
   - "vb"
 ---
 # How to: Get type and member information by using reflection
+
 The <xref:System.Reflection> namespace contains many methods for obtaining information about types and their members. This article demonstrates one of these methods, <xref:System.Type.GetMembers%2A?displayProperty=nameWithType>. For additional information, see [Reflection overview](reflection.md).
   
 ## Example

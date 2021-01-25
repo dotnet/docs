@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: bfcd792b-ac29-4158-81fc-ea0c13f4ffa2
 ---
 # Out of stack space (Visual Basic)
+
 The stack is a working area of memory that grows and shrinks dynamically with the demands of your executing program. Its limits have been exceeded.  
   
 ## To correct this error  

@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 61c3fa51-c00f-48cb-9b49-c805dedd62d7
 ---
 # Access Modifiers (C# Reference)
+
 Access modifiers are keywords used to specify the declared accessibility of a member or a type. This section introduces the four access modifiers:  
   
 - `public`

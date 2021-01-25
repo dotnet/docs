@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRErrorReportingManager::BeginCustomDump Method
+
 Specifies the configuration of custom heap dumps for error reporting.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT BeginCustomDump (
 ```  
   
 ## Parameters  
+
  `dwFlavor`  
  [in] A [ECustomDumpFlavor](ecustomdumpflavor-enumeration.md) value that indicates the kind of heap dump upon which to build the custom heap dump.  
   
@@ -55,12 +57,14 @@ HRESULT BeginCustomDump (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The `BeginCustomDump` method sets custom heap dump configuration. The [EndCustomDump](iclrerrorreportingmanager-endcustomdump-method.md) method clears the custom heap dump configuration and frees any associated state. It should be called after the custom heap dump is complete.  
   
 > [!IMPORTANT]
 > Failure to call `EndCustomDump` causes memory to leak.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

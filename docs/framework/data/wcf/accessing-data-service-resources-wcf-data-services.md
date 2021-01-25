@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 9665ff5b-3e3a-495d-bf83-d531d5d060ed
 ---
 # Accessing Data Service Resources (WCF Data Services)
+
 WCF Data Services supports the Open Data Protocol (OData) to expose your data as a feed with resources that are addressable by URIs. These resources are represented according to the entity-relationship conventions of the [Entity Data Model](../adonet/entity-data-model.md). In this model, entities represent operational units of data that are data types in an application domain, such as customers, orders, items, and products. Entity data is accessed and changed by using the semantics of representational state transfer (REST), specifically the standard HTTP verbs of GET, PUT, POST, and DELETE.  
   
 ## Addressing Resources  
+
  In OData, you address any data exposed by the data model by using a URI. For example, the following URI returns a feed that is the Customers entity set, which contains entries for all instances of the Customer entity type:  
   
 <https://services.odata.org/Northwind/Northwind.svc/Customers>
@@ -44,6 +46,7 @@ WCF Data Services supports the Open Data Protocol (OData) to expose your data as
  For more information, see [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
   
 ## System Query Options  
+
  OData defines a set of system query options that you can use to perform traditional query operations against resources, such as filtering, sorting, and paging. For example, the following URI returns the set of all the `Order` entities, along with related `Order_Detail` entities, the postal codes of which do not end in `100`:  
   
 `https://services.odata.org/Northwind/Northwind.svc/Orders?$filter=not endswith(ShipPostalCode,'100')&$expand=Order_Details&$orderby=ShipCity`
@@ -63,6 +66,7 @@ WCF Data Services supports the Open Data Protocol (OData) to expose your data as
 |`$inlinecount`|Requests that a count of the number of entities returned in the feed be included with the feed.|  
   
 ## Addressing Relationships  
+
  In addition to addressing entity sets and entity instances, OData also enables you to address the associations that represent relationships between entities. This functionality is required to be able to create or change a relationship between two entity instances, such as the shipper that is related to a given order in the Northwind sample database. OData supports a `$link` operator to specifically address the associations between entities. For example, the following URI is specified in an HTTP PUT request message to change the shipper for the specified order to a new shipper.  
   
 `https://services.odata.org/Northwind/Northwind.svc/Orders(10643)/$links/Shipper`
@@ -70,6 +74,7 @@ WCF Data Services supports the Open Data Protocol (OData) to expose your data as
  For more information, see section `3.2. Addressing Links between Entries` at [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
   
 ## Consuming the Returned Feed  
+
  The URI of an OData resource enables you to address entity data exposed by the service. When you enter a URI into the address field of a Web browser, a OData feed representation of the requested resource is returned. For more information, see the [WCF Data Services Quickstart](quickstart-wcf-data-services.md). Although a Web browser may be useful for testing that a data service resource returns the expected data, production data services that can also create, update, and delete data are generally accessed by application code or scripting languages in a Web page. For more information, see [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md).  
   
 ## See also

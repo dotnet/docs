@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataDispenser Interface
+
 Provides methods to create a new metadata scope, or open an existing one.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides methods to create a new metadata scope, or open an existing one.
 |[OpenScopeOnMemory Method](imetadatadispenser-openscopeonmemory-method.md)|Opens an area of memory that contains existing metadata. That is, this method opens a specified area of memory in which the existing data is treated as metadata.|  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

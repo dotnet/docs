@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::RemotingClientInvocationFinished Method
+
 Notifies the profiler that a remoting call has run to completion on the client.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT RemotingClientInvocationFinished();
 ```  
   
 ## Remarks  
+
  If the remoting call was synchronous, it has also run to completion on the server. If the remoting call was asynchronous, a reply might still be expected when the call is handled. If a reply is expected, it will occur as a call to [ICorProfilerCallback::RemotingClientReceivingReply](icorprofilercallback-remotingclientreceivingreply-method.md) and an additional call to `RemotingClientInvocationFinished` to indicate the required secondary processing of an asynchronous call.  
   
  Each of the following pairs of callbacks will occur on the same thread:  
@@ -43,6 +45,7 @@ HRESULT RemotingClientInvocationFinished();
 - The profiler does not receive accurate notifications for asynchronous remoting events.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

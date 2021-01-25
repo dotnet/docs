@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624
 ---
 # \<Subtypes> Element (.NET Native)
+
 Applies runtime policy to all classes inherited from the containing type.  
   
 ## Syntax  
@@ -22,6 +23,7 @@ Applies runtime policy to all classes inherited from the containing type.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -46,6 +48,7 @@ Applies runtime policy to all classes inherited from the containing type.
 |*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -55,11 +58,13 @@ Applies runtime policy to all classes inherited from the containing type.
 |[\<Type>](type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
   
 ## Remarks  
+
  The `<Subtypes>` element applies policy to all the subtypes of its containing type. You use it when you want to apply different policies to derived types and their base classes.  
   
  The reflection, serialization, and interop attributes are all optional, although at least one should be present.  
   
 ## Example  
+
  The following example defines a class named `BaseClass` and a subclass named `Derived1`.  
   
  [!code-csharp[ProjectN_Reflection#4](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/subtypes.cs#4)]  

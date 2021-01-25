@@ -3,13 +3,13 @@ title: Collection Types
 description: Learn about F# collection types and how they differ from collection types .NET.
 ms.date: 08/14/2020
 ---
-# F# Collection Types
+# F# collection types
 
 By reviewing this topic, you can determine which F# collection type best suits a particular need. These collection types differ from the collection types in .NET, such as those in the `System.Collections.Generic` namespace, in that the F# collection types are designed from a functional programming perspective rather than an object-oriented perspective. More specifically, only the array collection has mutable elements. Therefore, when you modify a collection, you create an instance of the modified collection instead of altering the original collection.
 
 Collection types also differ in the type of data structure in which objects are stored. Data structures such as hash tables, linked lists, and arrays have different performance characteristics and a different set of available operations.
 
-## F# Collection Types
+## Table of collection types
 
 The following table shows F# collection types.
 
@@ -21,9 +21,9 @@ The following table shows F# collection types.
 |[Map](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpmap-2.html)|An immutable dictionary of elements. Elements are accessed by key.|[Map Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-mapmodule.html)|
 |[Set](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpset-1.html)|An immutable set that's based on binary trees, where comparison is the F# structural comparison function, which potentially uses implementations of the `System.IComparable` interface on key values.|[Set Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-setmodule.html)|
 
-### Table of Functions
+### Table of functions
 
-This section compares the functions that are available on F# collection types. The computational complexity of the function is given, where N is the size of the first collection, and M is the size of the second collection, if any. A dash (-) indicates that this function isn't available on the collection. Because sequences are lazily evaluated, a function such as Seq.distinct may be O(1) because it returns immediately, although it still affects the performance of the sequence when enumerated.
+This section compares the functions that are available on F# collection types. The computational complexity of the function is given, where N is the size of the first collection, and M is the size of the second collection, if any. A dash (-) indicates that this function isn't available on the collection. Because sequences are lazily evaluated, a function such as `Seq.distinct` may be O(1) because it returns immediately, although it still affects the performance of the sequence when enumerated.
 
 |Function|Array|List|Sequence|Map|Set|Description|
 |--------|-----|----|--------|---|---|-----------|
@@ -84,11 +84,11 @@ This section compares the functions that are available on F# collection types. T
 |map3|-|O(N)|-|-|-|Builds a collection whose elements are the results of applying the given function to the corresponding elements of the three collections simultaneously.|
 |mapi|O(N)|O(N)|O(N)|-|-|Builds an array whose elements are the results of applying the given function to each element of the array. The integer index that's passed to the function indicates the index of the element that's being transformed.|
 |mapi2|O(N)|O(N)|-|-|-|Builds a collection whose elements are the results of applying the given function to the corresponding elements of the two collections pairwise, also passing the index of the elements. The two input arrays must have the same length.|
-|max|O(N)|O(N)|O(N)|-|-|Returns the greatest element in the collection, compared by using the [max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) operator.|
-|maxBy|O(N)|O(N)|O(N)|-|-|Returns the greatest element in the collection, compared by using [max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) on the function result.|
+|max|O(N)|O(N)|O(N)|-|-|Returns the greatest element in the collection, compared by using the [max](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#max) operator.|
+|maxBy|O(N)|O(N)|O(N)|-|-|Returns the greatest element in the collection, compared by using [max](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#max) on the function result.|
 |maxElement|-|-|-|-|O(log(N))|Returns the greatest element in the set according to the ordering that's used for the set.|
-|min|O(N)|O(N)|O(N)|-|-|Returns the least element in the collection, compared by using the [min](https://msdn.microsoft.com/library/adea4fd7-bfad-4834-989c-7878aca81fed) operator.|
-|minBy|O(N)|O(N)|O(N)|-|-|Returns the least element in the collection, compared by using the [min](https://msdn.microsoft.com/library/adea4fd7-bfad-4834-989c-7878aca81fed) operator on the function result.|
+|min|O(N)|O(N)|O(N)|-|-|Returns the least element in the collection, compared by using the [min](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#min) operator.|
+|minBy|O(N)|O(N)|O(N)|-|-|Returns the least element in the collection, compared by using the [min](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#min) operator on the function result.|
 |minElement|-|-|-|-|O(log(N))|Returns the lowest element in the set according to the ordering that's used for the set.|
 |ofArray|-|O(N)|O(1)|O(N)|O(N)|Creates a collection that contains the same elements as the given array.|
 |ofList|O(N)|-|O(1)|O(N)|O(N)|Creates a collection that contains the same elements as the given list.|
@@ -109,10 +109,10 @@ This section compares the functions that are available on F# collection types. T
 |set|O(1)|-|-|-|-|Sets an element of an array to the specified value.|
 |skip|-|-|O(N)|-|-|Returns a sequence that skips N elements of the underlying sequence and then yields the remaining elements of the sequence.|
 |skipWhile|-|-|O(N)|-|-|Returns a sequence that, when iterated, skips elements of the underlying sequence while the given predicate returns `true` and then yields the remaining elements of the sequence.|
-|sort|O(N\*log(N)) average<br /><br />O(N^2) worst case|O(N\*log(N))|O(N\*log(N))|-|-|Sorts the collection by element value. Elements are compared using [compare](https://msdn.microsoft.com/library/295e1320-0955-4c3d-ac31-288fa80a658c).|
-|sortBy|O(N\*log(N)) average<br /><br />O(N^2) worst case|O(N\*log(N))|O(N\*log(N))|-|-|Sorts the given list by using keys that the given projection provides. Keys are compared using [compare](https://msdn.microsoft.com/library/295e1320-0955-4c3d-ac31-288fa80a658c).|
-|sortInPlace|O(N\*log(N)) average<br /><br />O(N^2) worst case|-|-|-|-|Sorts the elements of an array by mutating it in place and using the given comparison function. Elements are compared by using [compare](https://msdn.microsoft.com/library/295e1320-0955-4c3d-ac31-288fa80a658c).|
-|sortInPlaceBy|O(N\*log(N)) average<br /><br />O(N^2) worst case|-|-|-|-|Sorts the elements of an array by mutating it in place and using the given projection for the keys. Elements are compared by using [compare](https://msdn.microsoft.com/library/295e1320-0955-4c3d-ac31-288fa80a658c).|
+|sort|O(N\*log(N)) average<br /><br />O(N^2) worst case|O(N\*log(N))|O(N\*log(N))|-|-|Sorts the collection by element value. Elements are compared using [compare](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#compare).|
+|sortBy|O(N\*log(N)) average<br /><br />O(N^2) worst case|O(N\*log(N))|O(N\*log(N))|-|-|Sorts the given list by using keys that the given projection provides. Keys are compared using [compare](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#compare).|
+|sortInPlace|O(N\*log(N)) average<br /><br />O(N^2) worst case|-|-|-|-|Sorts the elements of an array by mutating it in place and using the given comparison function. Elements are compared by using [compare](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#compare).|
+|sortInPlaceBy|O(N\*log(N)) average<br /><br />O(N^2) worst case|-|-|-|-|Sorts the elements of an array by mutating it in place and using the given projection for the keys. Elements are compared by using [compare](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#compare).|
 |sortInPlaceWith|O(N\*log(N)) average<br /><br />O(N^2) worst case|-|-|-|-|Sorts the elements of an array by mutating it in place and using the given comparison function as the order.|
 |sortWith|O(N\*log(N)) average<br /><br />O(N^2) worst case|O(N\*log(N))|-|-|-|Sorts the elements of a collection, using the given comparison function as the order and returning a new collection.|
 |sub|O(N)|-|-|-|-|Builds an array that contains the given subrange that's specified by starting index and length.|

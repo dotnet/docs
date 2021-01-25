@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IDENTITY_ATTRIBUTE Structure
+
 Contains metadata attribute information about an [IDefinitionIdentity](idefinitionidentity-interface.md) instance.  
   
 ## Syntax  
@@ -37,11 +38,13 @@ typedef struct _IDENTITY_ATTRIBUTE {
 |`pszValue`|A pointer to a null-terminated character string that contains the value of the attribute.|  
   
 ## Remarks  
+
  The `IDENTITY_ATTRIBUTE` structure contains three pointers to null-terminated character strings. These three strings describe one attribute.  
   
  An instance of an `IDENTITY_ATTRIBUTE` structure is associated with an instance of an [IDENTITY_ATTRIBUTE_BLOB](identity-attribute-blob-structure.md) structure. The `IDENTITY_ATTRIBUTE` structure contains the actual strings, and the corresponding `IDENTITY_ATTRIBUTE_BLOB` structure lists the offsets to the three strings listed in the `IDENTITY_ATTRIBUTE` structure.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  

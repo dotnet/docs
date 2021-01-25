@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: e986ab45-e3ce-430e-8704-5882e5da1104
 ---
 # Format not valid in resource file
+
 A resource file in your project does not follow the standard format for a Windows resource file or there is a mismatch between the resource file and the Visual Basic project.  
   
 ## To correct this error  

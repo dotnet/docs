@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: c2b84dfe-7fec-489a-92de-45215cec4518
 ---
 # How to: Use Stored Procedures Mapped for Multiple Result Shapes
+
 When a stored procedure can return multiple result shapes, the return type cannot be strongly typed to a single projection shape. Although [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] can generate all possible projection types, it cannot know the order in which they will be returned.  
   
  Contrast this scenario with stored procedures that produce multiple result shapes sequentially. For more information, see [How to: Use Stored Procedures Mapped for Sequential Result Shapes](how-to-use-stored-procedures-mapped-for-sequential-result-shapes.md).  
@@ -14,6 +15,7 @@ When a stored procedure can return multiple result shapes, the return type canno
  The <xref:System.Data.Linq.Mapping.ResultTypeAttribute> attribute is applied to stored procedures that return multiple result types to specify the set of types the procedure can return.  
   
 ## Example  
+
  In the following SQL code example, the result shape depends on the input (`shape =1` or `shape = 2`). You do not know which projection will be returned first.  
   
 ``` sql
@@ -29,6 +31,7 @@ else if(@shape = 2)
  [!code-vb[DLinqSprox#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/northwind-sprox.vb#4)]  
   
 ## Example  
+
  You would use code similar to the following to execute this stored procedure.  
   
 > [!NOTE]

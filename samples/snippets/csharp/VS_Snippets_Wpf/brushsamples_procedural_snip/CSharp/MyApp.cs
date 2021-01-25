@@ -10,7 +10,7 @@ namespace Microsoft.Samples.BrushExamples
 {
 
     // Displays the sample.
-    public class MyApp : Application
+    public partial class MyApp : Application
     {
 
         public MyApp()

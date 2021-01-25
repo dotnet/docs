@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugBreakpointEnum::Next Method
+
 Gets the specified number of ICorDebugBreakpoint instances from the enumeration, starting at the current position.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT Next (
 ```  
   
 ## Parameters  
+
  `celt`  
  [in] The number of `ICorDebugBreakpoint` instances to be retrieved.  
   
@@ -41,6 +43,7 @@ HRESULT Next (
  [out] A pointer to the number of `ICorDebugBreakpoint` instances actually returned. This value may be null if `celt` is one.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

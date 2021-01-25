@@ -15,8 +15,8 @@ Many organizations still rely on local authentication services like Active Direc
 
 ## References
 
-- [Authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
-- [Access tokens and claims](https://docs.microsoft.com/azure/active-directory/develop/access-tokens)
+- [Authentication basics](/azure/active-directory/develop/authentication-scenarios)
+- [Access tokens and claims](/azure/active-directory/develop/access-tokens)
 - [It may be time to ditch your on premises authentication services](https://oxfordcomputergroup.com/resources/o365-security-native-cloud-authentication/)
 
 >[!div class="step-by-step"]

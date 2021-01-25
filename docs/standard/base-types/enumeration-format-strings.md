@@ -2,14 +2,13 @@
 title: "Enumeration format strings"
 description: Create enumeration format strings using the Enum.ToString method in .NET. Format numeric, hexadecimal, or string values of enumeration members.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "format specifiers, enumeration format strings"
   - "enumeration format strings"
-  - "formatting [.NET Framework], enumeration"
+  - "formatting [.NET], enumeration"
 ms.assetid: dd1ff672-1052-42cf-8666-4924fb6cd1a1
 ---
 # Enumeration format strings

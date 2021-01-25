@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: b746872e-57b1-4514-b337-53398a0e0deb
 ---
 # LINQ Message Query Correlation
+
 This sample demonstrates how to do content-based correlation using a custom <xref:System.ServiceModel.Dispatcher.MessageQuery> implementation as opposed to the system-provided <xref:System.ServiceModel.XPathMessageQuery>.  
   
 ## Demonstrates  
+
  Custom <xref:System.ServiceModel.Dispatcher.MessageQuery>, Content-Based Correlation.  
   
 ## Discussion  
+
  This sample shows how to extend from the <xref:System.ServiceModel.Dispatcher.MessageQuery> base class for the purposes of correlation. The custom implementation, `LinqMessageQuery`, allows users to provide an XName to find within the message using XLinq. The data retrieved by the query is used to form the correlation key to dispatch messages to the appropriate workflow instance.  
   
 #### To set up, build, and run the sample  

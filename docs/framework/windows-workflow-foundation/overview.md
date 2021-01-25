@@ -5,9 +5,11 @@ ms.date: "03/30/2017"
 ms.assetid: fc44adbe-1412-49ae-81af-0298be44aae6
 ---
 # Windows Workflow Overview
+
 A workflow is a set of elemental units called *activities* that are stored as a model that describes a real-world process. Workflows provide a way of describing the order of execution and dependent relationships between pieces of short- or long-running work. This work passes through the model from start to finish, and activities might be executed by people or by system functions.  
   
 ## Workflow Run-time Engine  
+
  Every running workflow instance is created and maintained by an in-process run-time engine that the host process interacts with through one of the following:  
   
 - A <xref:System.Activities.WorkflowInvoker>, which invokes the workflow like a method.  
@@ -24,6 +26,7 @@ A workflow is a set of elemental units called *activities* that are stored as a 
 Workflow components in the host process  
   
 ## Interaction between Workflow Components  
+
  The following diagram demonstrates how workflow components interact with one another.  
   
  ![Diagram that shows how workflow components interact.](./media/overview/workflow-component-interatction.gif)  
@@ -38,4 +41,4 @@ Workflow components in the host process
   
 ## See also
 
-- [BizTalk Server 2006 or WF? Choosing the Right Workflow Tool for Your Project](https://docs.microsoft.com/previous-versions/dotnet/articles/cc303238(v=msdn.10))
+- [BizTalk Server 2006 or WF? Choosing the Right Workflow Tool for Your Project](/previous-versions/dotnet/articles/cc303238(v=msdn.10))

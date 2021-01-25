@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 9253e7c8-579c-49a2-8f26-392b20ea99eb
 ---
 # How to: Determine the String Associated with an Enumeration Value (Visual Basic)
+
 The <xref:System.Enum.GetValues%2A> and <xref:System.Enum.GetNames%2A> methods allow you to determine the strings and values associated with enumeration members.  
   
 ### To determine the string associated with an enumeration  

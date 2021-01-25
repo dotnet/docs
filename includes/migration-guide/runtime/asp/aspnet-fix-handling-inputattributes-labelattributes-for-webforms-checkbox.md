@@ -12,8 +12,16 @@ For the correct behavior for restoring attributes on postback, set the <code>tar
 |:--------|:------------|
 | Scope   |Unknown|
 |Version|4.8|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Web.UI.WebControls.CheckBox?displayProperty=nameWithType></li></ul>|
+- <xref:System.Web.UI.WebControls.CheckBox?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Web.UI.WebControls.CheckBox`
+
+-->

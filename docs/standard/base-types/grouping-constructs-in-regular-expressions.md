@@ -2,7 +2,6 @@
 title: "Grouping Constructs in Regular Expressions"
 description: Learn to use grouping constructs in .NET. Grouping constructs delineate subexpressions of a regular expression and capture substrings of an input string.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
@@ -10,12 +9,13 @@ helpviewer_keywords:
   - "lookbehinds"
   - "regular expressions, grouping constructs"
   - "lookaheads"
-  - ".NET Framework regular expressions, grouping constructs"
+  - ".NET regular expressions, grouping constructs"
   - "constructs, grouping"
   - "grouping constructs"
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
 ---
 # Grouping Constructs in Regular Expressions
+
 Grouping constructs delineate the subexpressions of a regular expression and capture the substrings of an input string. You can use grouping constructs to do the following:  
   
 - Match a subexpression that is repeated in the input string.  
@@ -44,7 +44,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  For information on groups and the regular expression object model, see [Grouping constructs and regular expression objects](#Objects).  
   
 <a name="matched_subexpression"></a>
+
 ## Matched Subexpressions  
+
  The following grouping construct captures a matched subexpression:  
   
  `(` *subexpression* `)`  
@@ -83,7 +85,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`\W`|Match a non-word character, including white space and punctuation. This prevents the regular expression pattern from matching a word that starts with the word from the first captured group.|  
   
 <a name="named_matched_subexpression"></a>
+
 ## Named Matched Subexpressions  
+
  The following grouping construct captures a matched subexpression and lets you access it by name or by number:  
   
 `(?<name>subexpression)`  
@@ -157,7 +161,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`(?<digit>\d+)?`|Match zero or one occurrence of one or more decimal digit characters. Assign the match to the `digit` named group.|  
   
 <a name="balancing_group_definition"></a>
+
 ## Balancing Group Definitions  
+
  A balancing group definition deletes the definition of a previously defined group and stores, in the current group, the interval between the previously defined group and the current group. This grouping construct has the following format:  
   
 `(?<name1-name2>subexpression)`  
@@ -230,7 +236,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |24|`$`|Matches the end of the input string.|  
   
 <a name="noncapturing_group"></a>
+
 ## Noncapturing Groups  
+
  The following grouping construct does not capture the substring that is matched by a subexpression:  
   
 `(?:subexpression)`
@@ -256,7 +264,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`\.`|Match a period.|  
   
 <a name="group_options"></a>
+
 ## Group Options  
+
  The following grouping construct applies or disables the specified options within a subexpression:  
   
  `(?imnsx-imnsx:` *subexpression* `)`  
@@ -280,7 +290,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  [!code-vb[Conceptual.Regex.Language.Options#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#8)]  
   
 <a name="zerowidth_positive_lookahead_assertion"></a>
+
 ## Zero-Width Positive Lookahead Assertions  
+
  The following grouping construct defines a zero-width positive lookahead assertion:  
   
  `(?=` *subexpression* `)`  
@@ -303,7 +315,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`(?=\sis\b)`|Determine whether the word characters are followed by a white-space character and the string "is", which ends on a word boundary. If so, the match is successful.|  
   
 <a name="zerowidth_negative_lookahead_assertion"></a>
+
 ## Zero-Width Negative Lookahead Assertions  
+
  The following grouping construct defines a zero-width negative lookahead assertion:  
   
  `(?!` *subexpression* `)`  
@@ -341,7 +355,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`\p{P})`|If the next character is not a punctuation symbol (such as a period or a comma), the match succeeds.|  
   
 <a name="zerowidth_positive_lookbehind_assertion"></a>
+
 ## Zero-Width Positive Lookbehind Assertions  
+
  The following grouping construct defines a zero-width positive lookbehind assertion:  
   
  `(?<=` *subexpression* `)`  
@@ -366,7 +382,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  Zero-width positive lookbehind assertions are also used to limit backtracking when the last character or characters in a captured group must be a subset of the characters that match that group's regular expression pattern. For example, if a group captures all consecutive word characters, you can use a zero-width positive lookbehind assertion to require that the last character be alphabetical.  
   
 <a name="zerowidth_negative_lookbehind_assertion"></a>
+
 ## Zero-Width Negative Lookbehind Assertions  
+
  The following grouping construct defines a zero-width negative lookbehind assertion:  
   
  `(?<!` *subexpression* `)`  
@@ -391,7 +409,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |<code>(?<!(Saturday&#124;Sunday) )</code>|If the match is preceded by something other than the strings "Saturday" or "Sunday" followed by a space, the match is successful.|  
   
 <a name="atomic_groups"></a>
+
 ## Atomic groups  
+
  The following grouping construct represents an atomic group (known in some other regular expression engines as a nonbacktracking subexpression, an atomic subexpression, or a once-only subexpression):
   
  `(?>` *subexpression* `)`  
@@ -420,7 +440,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`(?>(\w)\1+)`|Match one or more occurrences of a duplicated word character, but do not backtrack to match the last character on a word boundary.|  
   
 <a name="Objects"></a>
+
 ## Grouping Constructs and Regular Expression Objects  
+
  Substrings that are matched by a regular expression capturing group are represented by <xref:System.Text.RegularExpressions.Group?displayProperty=nameWithType> objects, which can be retrieved from the <xref:System.Text.RegularExpressions.GroupCollection?displayProperty=nameWithType> object that is returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The <xref:System.Text.RegularExpressions.GroupCollection> object is populated as follows:  
   
 - The first <xref:System.Text.RegularExpressions.Group> object in the collection (the object at index zero) represents the entire match.  

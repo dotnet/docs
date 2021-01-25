@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
 ---
 # -platform (Visual Basic)
+
 Specifies which platform version of common language runtime (CLR) can run the output file.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
 |`anycpu32bitpreferred`|Compiles your assembly to run on any platform. The application will run as a 32-bit application on both 32-bit and 64-bit versions of Windows. This flag is valid only for executables (.EXE) and requires .NET Framework 4.5.|  
   
 ## Remarks  
+
  Use the `-platform` option to specify the type of processor targeted by the output file.  
   
  In general, .NET Framework assemblies written in Visual Basic will run the same regardless of the platform. However, there are some cases that behave differently on different platforms. These common cases are:  
@@ -69,6 +71,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
      For more information, see [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
 ## Example  
+
  The following example illustrates how to use the `-platform` compiler option.  
   
 ```console

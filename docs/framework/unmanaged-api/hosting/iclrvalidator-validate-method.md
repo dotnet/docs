@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRValidator::Validate Method
+
 Validates the portable executable (PE) or Microsoft intermediate language (MSIL) in the specified file.  
   
 ## Syntax  
@@ -35,6 +36,7 @@ HRESULT Validate (
 ```  
   
 ## Parameters  
+
  `veh`  
  [in] A pointer to an `IVEHandler` instance that handles validation errors.  
   
@@ -71,6 +73,7 @@ HRESULT Validate (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  

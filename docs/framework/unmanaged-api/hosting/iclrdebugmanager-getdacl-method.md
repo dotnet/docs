@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRDebugManager::GetDacl Method
+
 This method is not implemented.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetDacl (
 ```  
   
 ## Parameters  
+
  `ppacl`  
  [out] An interface pointer to the Access Control List (ACL).  
   
@@ -38,6 +40,7 @@ HRESULT GetDacl (
 |E_NOTIMPL|The method is not implemented.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

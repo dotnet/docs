@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d438e6f2-d0f3-43aa-b259-b51b5bda2e64
 ---
 # Addressing
+
 The Addressing sample demonstrates various aspects and features of endpoint addresses. The sample is based on the [Getting Started](getting-started-sample.md). In this sample the service is self-hosted. Both the service and the client are console applications. The service defines multiple endpoints using a combination of relative and absolute endpoint addresses.  
   
 > [!NOTE]

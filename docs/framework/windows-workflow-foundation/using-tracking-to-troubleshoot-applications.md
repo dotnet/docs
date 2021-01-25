@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 8851adde-c3c2-4391-9523-d8eb831490af
 ---
 # Using Tracking to Troubleshoot Applications
+
 Windows Workflow Foundation (WF) enables you to track workflow-related information to give details into the execution of a Windows Workflow Foundation application or service. Windows Workflow Foundation hosts are able to capture workflow events during the execution of a workflow instance. If your workflow generates faults or exceptions, you can use the Windows Workflow Foundation tracking details to troubleshooting its processing.  
   
 ## Troubleshooting a WF using WF Tracking  
+
  To detect faults within the processing of a Windows Workflow Foundation activity, you can enable tracking with a tracking profile that queries for an <xref:System.Activities.Tracking.ActivityStateRecord> with the state of Faulted. The corresponding query is specified in the following code.  
   
 ```xml  
@@ -47,5 +49,5 @@ Windows Workflow Foundation (WF) enables you to track workflow-related informati
   
 ## See also
 
-- [Windows Server App Fabric Monitoring](https://docs.microsoft.com/previous-versions/appfabric/ee677251(v=azure.10))
-- [Monitoring Applications with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677276(v=azure.10))
+- [Windows Server App Fabric Monitoring](/previous-versions/appfabric/ee677251(v=azure.10))
+- [Monitoring Applications with App Fabric](/previous-versions/appfabric/ee677276(v=azure.10))

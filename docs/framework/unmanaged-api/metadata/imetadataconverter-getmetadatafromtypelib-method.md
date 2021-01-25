@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataConverter::GetMetaDataFromTypeLib Method
+
 Gets an interface pointer to an [IMetaDataImport](imetadataimport-interface.md) instance that represents the metadata signature of the type library represented by the specified `ITypeLib` instance.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetMetaDataFromTypeLib (
 ```  
   
 ## Parameters  
+
  `pITL`  
  [in] Pointer to an `ITypeLib` object that represents the type library.  
   
@@ -36,6 +38,7 @@ HRESULT GetMetaDataFromTypeLib (
  [out] Pointer to a location that receives the address of the `IMetaDataImport` instance that represents the metadata signature.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

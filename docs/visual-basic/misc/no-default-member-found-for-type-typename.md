@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 1869ecb8-7c6a-422f-86ac-5da96c6adc66
 ---
 # No default member found for type '\<typename>'
+
 A late-bound index `Get` or `Set` call has been attempted.  
   
 ## To correct this error  

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace operators
 {
@@ -9,6 +10,8 @@ namespace operators
             ConditionalRefExpressions();
             ConditionalValueExpressions();
             ComparisonWithIf();
+            TargetTyped();
+            NotTargetTyped();
         }
 
         private static void ConditionalRefExpressions()
@@ -43,6 +46,28 @@ namespace operators
             // 0.998334166468282
             // 1
             // </SnippetConditionalValue>
+        }
+
+        private static void TargetTyped()
+        {
+            // <SnippetTargetTyped>
+            var rand = new Random();
+            var condition = rand.NextDouble() > 0.5;
+
+            int? x = condition ? 12 : null;
+
+            IEnumerable<int> xs = x is null ? new List<int>() { 0, 1 } : new int[] { 2, 3 };
+            // </SnippetTargetTyped>
+        }
+
+        private static void NotTargetTyped()
+        {
+            // <SnippetNotTargetTyped>
+            var rand = new Random();
+            var condition = rand.NextDouble() > 0.5;
+
+            var x = condition ? 12 : (int?)null;
+            // </SnippetNotTargetTyped>
         }
 
         private static void ComparisonWithIf()

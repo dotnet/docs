@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9053724d-a1fb-4f0f-b9dc-7f6dd893e8ff
 ---
 # SQL Server Security
+
 SQL Server has many features that support creating secure database applications.  
   
  Common security considerations, such as data theft or vandalism, apply regardless of the version of SQL Server you are using. Data integrity should also be considered as a security issue. If data is not protected, it is possible that it could become worthless if ad hoc data manipulation is permitted and the data is inadvertently or maliciously modified with incorrect values or deleted entirely. In addition, there are often legal requirements that must be adhered to, such as the correct storage of confidential information. Storing some kinds of personal data is proscribed entirely, depending on the laws that apply in a particular jurisdiction.  
@@ -17,6 +18,7 @@ SQL Server has many features that support creating secure database applications.
  The topics in this section briefly describe the security features in SQL Server that are relevant for developers, with links to relevant topics in SQL Server Books Online and other resources that provide more detailed coverage.  
   
 ## In This Section  
+
  [Overview of SQL Server Security](overview-of-sql-server-security.md)  
  Describes the architecture and security features of SQL Server.  
   
@@ -27,6 +29,7 @@ SQL Server has many features that support creating secure database applications.
  Describes security considerations for SQL Server Express.  
   
 ## Related Sections  
+
 [Security Center for SQL Server Database Engine and Azure SQL Database](/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database)  
 Describes security considerations for SQL Server and Azure SQL Database.
 

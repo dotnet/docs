@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: d6aa8474-7bde-48f7-949d-20dc38a1625b
 ---
 # Adding Data to a DataTable
+
 After you create a <xref:System.Data.DataTable> and define its structure using columns and constraints, you can add new rows of data to the table. To add a new row, declare a new variable as type <xref:System.Data.DataRow>. A new **DataRow** object is returned when you call the <xref:System.Data.DataTable.NewRow%2A> method. The **DataTable** then creates the **DataRow** object based on the structure of the table, as defined by the <xref:System.Data.DataColumnCollection>.  
   
  The following example demonstrates how to create a new row by calling the **NewRow** method.  

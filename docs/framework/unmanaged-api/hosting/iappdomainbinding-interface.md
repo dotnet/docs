@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IAppDomainBinding Interface
+
 Provides a method that is called by the common language runtime (CLR) to notify the host application that an application domain has been created.  
   
 ## Methods  
@@ -25,6 +26,7 @@ Provides a method that is called by the common language runtime (CLR) to notify 
 |[OnAppDomain Method](iappdomainbinding-onappdomain-method.md)|Called by the common language runtime (CLR) to notify the host that an application domain has been created.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

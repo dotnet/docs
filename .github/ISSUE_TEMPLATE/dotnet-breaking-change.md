@@ -1,6 +1,6 @@
 ---
-name: ".NET Core breaking change"
-about: Report a change in .NET Core that breaks something that worked in a previous
+name: ".NET breaking change"
+about: Report a change in .NET that breaks something that worked in a previous
   version (intended mostly for product-team use)
 title: ''
 labels: ''

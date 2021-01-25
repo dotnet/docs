@@ -3,7 +3,7 @@ title: Batch processing with .NET for Apache Spark tutorial
 description: Learn how to do batch processing using .NET for Apache Spark.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
 ---
 
@@ -20,8 +20,6 @@ In this tutorial, you learn how to:
 > * Create and run a .NET for Apache Spark application
 > * Read data into a DataFrame and prepare it for analysis
 > * Process the data using Spark SQL
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 
@@ -155,7 +153,7 @@ The goal of this app is to gain some insights about the GitHub projects data. Ad
 1. Run your app with `spark-submit`. Be sure to update the following command with the actual paths to your Microsoft Spark jar file.
 
    ```console
-   spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /<path>/to/microsoft-spark-<version>.jar dotnet /<path>/to/netcoreapp<version>/GitHubProjects.dll
+   spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /<path>/to/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar dotnet /<path>/to/netcoreapp<version>/mySparkBatchApp.dll
    ```
 
 ## Get the code

@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: f5cfa6ba-cc25-4017-82cd-ba7391859113
 ---
 # How to: Add References to Type Libraries
+
 Visual Studio generates an interop assembly containing metadata when you add a reference to a type library. If a primary interop assembly is available, Visual Studio uses the existing assembly before generating a new interop assembly.  
   
 ### To add a reference to a type library in Visual Studio  

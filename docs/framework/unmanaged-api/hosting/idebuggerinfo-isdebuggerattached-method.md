@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IDebuggerInfo::IsDebuggerAttached Method
+
 Gets a value that indicates whether a managed debugger is attached to this process.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT IsDebuggerAttached (
 ```  
   
 ## Parameters  
+
  `pbAttached`  
  [out] A pointer to a value that is `true` if a managed debugger is attached to the process; otherwise, `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

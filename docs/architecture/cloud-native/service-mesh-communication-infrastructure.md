@@ -13,7 +13,7 @@ We explored different approaches for implementing synchronous HTTP communication
 
 A more modern approach to microservice communication centers around a new and rapidly evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service-to-service communication, resiliency, and many cross-cutting concerns. It moves the responsibility for these concerns out of the microservices and into service mesh layer. Communication is abstracted away from your microservices.
 
-A key component of a service mesh is a proxy. In a cloud-native application, an instance of a proxy is typically colocated with each microservice. While they execute in separate processes, the two are closely linked and share the same lifecycle. This pattern, known as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), and is shown in Figure 4-24.
+A key component of a service mesh is a proxy. In a cloud-native application, an instance of a proxy is typically colocated with each microservice. While they execute in separate processes, the two are closely linked and share the same lifecycle. This pattern, known as the [Sidecar pattern](/azure/architecture/patterns/sidecar), and is shown in Figure 4-24.
 
 ![Service mesh with a side car](./media/service-mesh-with-side-car.png)
 
@@ -35,12 +35,12 @@ In this chapter, we discussed cloud-native communication patterns. We started by
 
 Special emphasis was on managed Azure services that can help implement communication in cloud-native systems:
 
-- [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview)
+- [Azure Application Gateway](/azure/application-gateway/overview)
 - [Azure API Management](https://azure.microsoft.com/services/api-management/)
 - [Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/)
-- [Azure Storage Queues](https://docs.microsoft.com/azure/storage/queues/storage-queues-introduction)
-- [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)
-- [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview)
+- [Azure Storage Queues](/azure/storage/queues/storage-queues-introduction)
+- [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview)
+- [Azure Event Grid](/azure/event-grid/overview)
 - [Azure Event Hub](https://azure.microsoft.com/services/event-hubs/)
 
 We next move to distributed data in cloud-native systems and the benefits and challenges that it presents.
@@ -49,7 +49,7 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 
-- [Designing Interservice Communication for Microservices](https://docs.microsoft.com/azure/architecture/microservices/design/interservice-communication)
+- [Designing Interservice Communication for Microservices](/azure/architecture/microservices/design/interservice-communication)
 
 - [Azure SignalR Service, a fully managed service to add real-time functionality](https://azure.microsoft.com/blog/azure-signalr-service-a-fully-managed-service-to-add-real-time-functionality/)
 
@@ -59,9 +59,9 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [gRPC Documentation](https://grpc.io/docs/guides/)
 
-- [gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/)
+- [gRPC for WCF Developers](../grpc-for-wcf-developers/index.md)
 
-- [Comparing gRPC Services with HTTP APIs](https://docs.microsoft.com/aspnet/core/grpc/comparison?view=aspnetcore-3.0)
+- [Comparing gRPC Services with HTTP APIs](/aspnet/core/grpc/comparison?view=aspnetcore-3.0)
 
 - [Building gRPC Services with .NET video](https://channel9.msdn.com/Shows/The-Cloud-Native-Show/Building-Microservices-with-gRPC-and-NET)
 

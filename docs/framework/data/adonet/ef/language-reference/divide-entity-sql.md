@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ef48c368-f3ed-4275-8ada-4e9649781262
 ---
 # / (Divide) (Entity SQL)
+
 Divides one number by another.  
   
 ## Syntax  
@@ -13,6 +14,7 @@ dividend / divisor
 ```  
   
 ## Arguments  
+
  `dividend`  
  The numeric expression to divide. `dividend` is any valid expression of any one of the numeric data types.  
   
@@ -20,9 +22,11 @@ dividend / divisor
  The numeric expression to divide the dividend by. `divisor` is any valid expression of any one of the numeric data types.  
   
 ## Result Types  
+
  The data type that results from the implicit type promotion of the two arguments. For more information about implicit type promotion, see [Type System](type-system-entity-sql.md).  
   
 ## Example  
+
  The following Entity SQL query uses the / arithmetic operator to divide one number by another. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
 1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  

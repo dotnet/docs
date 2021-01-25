@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: bf79ba95-a62c-48a5-916f-0ac7a52c13ec
 ---
 # Auto (Visual Basic)
+
 Specifies that Visual Basic should marshal strings according to .NET Framework rules based on the external name of the external procedure being declared.  
   
  When you call a procedure defined outside your project, the Visual Basic compiler does not have access to the information it must have to call the procedure correctly. This information includes where the procedure is located, how it is identified, its calling sequence and return type, and the string character set it uses. The [Declare Statement](../statements/declare-statement.md) creates a reference to an external procedure and supplies this necessary information.  
@@ -20,11 +21,13 @@ Specifies that Visual Basic should marshal strings according to .NET Framework r
  If no character set modifier is specified, `Ansi` is the default.  
   
 ## Remarks  
+
  The `Auto` modifier can be used in this context:  
   
  [Declare Statement](../statements/declare-statement.md)  
   
 ## Smart Device Developer Notes  
+
  This keyword is not supported.  
   
 ## See also

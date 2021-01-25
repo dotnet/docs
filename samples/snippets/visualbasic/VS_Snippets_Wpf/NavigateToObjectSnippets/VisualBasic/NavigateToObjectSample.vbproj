@@ -14,7 +14,6 @@
     <StartProgram>$(WINDIR)\System32\PresentationHost.exe</StartProgram>
     <ApplicationExtension>.xbap</ApplicationExtension>
     <StartArguments>-debug "$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName)$(ApplicationExtension)"</StartArguments>
-    <SignManifests>True</SignManifests>
     <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
     <HostInBrowser>true</HostInBrowser>
     <InstallFrom>Web</InstallFrom>
@@ -23,8 +22,6 @@
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>Publish\</PublishUrl>
-    <ManifestKeyFile>NavigateToObjectSample_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>53EA4B7F386858BA47E29CE8A08162E7DD4A608C</ManifestCertificateThumbprint>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -93,7 +90,6 @@
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Person.vb" />
-    <None Include="NavigateToObjectSample_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <AppDesigner Include="My Project\" />
   </ItemGroup>

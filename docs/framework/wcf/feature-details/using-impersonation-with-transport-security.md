@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 426df8cb-6337-4262-b2c0-b96c2edf21a9
 ---
 # Using Impersonation with Transport Security
+
 *Impersonation* is the ability of a server application to take on the identity of the client. It is common for services to use impersonation when validating access to resources. The server application runs using a service account, but when the server accepts a client connection, it impersonates the client so that access checks are performed using the client's credentials. Transport security is a mechanism both for passing credentials and securing communication using those credentials. This topic describes using transport security in Windows Communication Foundation (WCF) with the impersonation feature. For more information about impersonation using message security, see [Delegation and Impersonation](delegation-and-impersonation-with-wcf.md).  
   
 ## Five Impersonation Levels  
+
  Transport security makes use of five levels of impersonation, as described in the following table.  
   
 |Impersonation level|Description|  
@@ -22,9 +24,11 @@ ms.assetid: 426df8cb-6337-4262-b2c0-b96c2edf21a9
  Using impersonation at the `Impersonate` or `Delegate` levels requires the server application to have the `SeImpersonatePrivilege` privilege. An application has this privilege by default if it is running on an account in the Administrators group or on an account with a Service SID (Network Service, Local Service, or Local System). Impersonation does not require mutual authentication of the client and server. Some authentication schemes that support impersonation, such as NTLM, cannot be used with mutual authentication.  
   
 ## Transport-Specific Issues with Impersonation  
+
  The choice of a transport in WCF affects the possible choices for impersonation. This section describes issues affecting the standard HTTP and named pipe transports in WCF. Custom transports have their own restrictions on support for impersonation.  
   
 ### Named Pipe Transport  
+
  The following items are used with the named pipe transport:  
   
 - The named pipe transport is intended for use only on the local machine. The named pipe transport in WCF explicitly disallows cross-machine connections.  
@@ -34,6 +38,7 @@ ms.assetid: 426df8cb-6337-4262-b2c0-b96c2edf21a9
  For more information about named pipes, see [Choosing a Transport](choosing-a-transport.md).  
   
 ### HTTP Transport  
+
  The bindings that use the HTTP transport (<xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.BasicHttpBinding>) support several authentication schemes, as explained in [Understanding HTTP Authentication](understanding-http-authentication.md). The impersonation level supported depends on the authentication scheme. The following items are used with the HTTP transport:  
   
 - The `Anonymous` authentication scheme ignores impersonation.  

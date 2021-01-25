@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 4472fd57-4217-4463-9d3c-dc4a8fe88f1b
 ---
 # No mouse is present
+
 One of the properties of the `My.Computer.Mouse` object was called, but the computer has no mouse or mouse port installed.  
   
 ## To correct this error  

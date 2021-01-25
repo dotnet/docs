@@ -14,6 +14,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILCode2::GetLocalVarSigToken Method
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  Gets the metadata token for the local variable signature for the function that is represented by this instance.  
@@ -27,12 +28,14 @@ HRESULT GetLocalVarSigToken(
 ```  
   
 ## Parameters  
+
  `pmdSig`  
  [out] A pointer to the `mdSignature` token for the local variable signature for this function, or `mdSignatureNil` if there is no signature (that is, if the function doesn't have any local variables).  
   
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

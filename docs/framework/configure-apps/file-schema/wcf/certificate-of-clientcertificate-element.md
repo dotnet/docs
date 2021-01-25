@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 00297efb-a7f2-4e03-bc2b-943d545610fc
 ---
 # \<certificate> of \<clientCertificate> Element
+
 Specifies an X.509 certificate used to sign and encrypt messages.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -37,6 +39,7 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 |`X509FindType`|Defines the type of X.509 search to be executed. Valid values include the following:<br /><br /> -   FindByThumbPrint<br />-   FindBySubjectName<br />-   FindBySubjectDistinguishedName<br />-   FindByIssuerName<br />-   FindByIssuerDistinguishedName<br />-   FindBySerialNumber<br />-   FindByTimeValid<br />-   FindByTimeNotYetValid<br />-   FindByTemplateName<br />-   FindByApplicationPolicy<br />-   FindByCertificatePolicy<br />-   FindByExtension<br />-   FindByKeyUsage<br />-   FindBySubjectKeyIdentifier<br /><br /> The type contained in the `findValue` attribute must satisfy the requirements of the specified X509FindType.<br /><br /> The default value is FindBySubjectDistinguishedName.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,9 +49,11 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 |[\<clientCertificate>](clientcertificate-of-servicecredentials.md)||  
   
 ## Remarks  
+
  The `<certificate>` element is used when the service must have the client's certificate in advance to communicate securely with the client. This occurs when using the duplex communication pattern. In the more typical request/response pattern, the client includes its certificate in the request, which the service uses to encrypt and sign its response back to the client. In the duplex communication pattern, however, the service does not have a request from the client and therefore it needs the client's certificate in advance to secure the message to the client. Therefore you must obtain the client's certificate in an out-of-band negotiation, and specify the certificate using this element. For more information about duplex services, see [How to: Create a Duplex Contract](../../../wcf/feature-details/how-to-create-a-duplex-contract.md).  
   
 ## Example  
+
  The following code specifies how to find an appropriate X.509 certificate and a custom validation type in the `<authentication>` element.  
   
 ```xml  

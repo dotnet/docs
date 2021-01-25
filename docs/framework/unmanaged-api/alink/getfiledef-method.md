@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetFileDef Method
+
 Retrieves the actual FileDef token used in metadata (as opposed to the token assigned by ALink).  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetFileDef(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  ID of the assembly.  
   
@@ -39,9 +41,11 @@ HRESULT GetFileDef(
  Receives the FileDef token.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h  
   
 ## See also

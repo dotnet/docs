@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3ad00103-358b-4af3-a3a8-1b9ea0e995d3
 ---
 # Continue Statement (Visual Basic)
+
 Transfers control immediately to the next iteration of a loop.  
   
 ## Syntax  
@@ -18,6 +19,7 @@ Continue { Do | For | While }
 ```  
   
 ## Remarks  
+
  You can transfer from inside a `Do`, `For`, or `While` loop to the next iteration of that loop. Control passes immediately to the loop condition test, which is equivalent to transferring to the `For` or `While` statement, or to the `Do` or `Loop` statement that contains the `Until` or `While` clause.  
   
  You can use `Continue` at any location in the loop that allows transfers. The rules allowing transfer of control are the same as with the [GoTo Statement](goto-statement.md).  
@@ -29,6 +31,7 @@ Continue { Do | For | While }
  If you have nested loops of different types, for example a `Do` loop within a `For` loop, you can skip to the next iteration of either loop by using either `Continue Do` or `Continue For`.  
   
 ## Example  
+
  The following code example uses the `Continue While` statement to skip to the next column of an array if a divisor is zero. The `Continue While` is inside a `For` loop. It transfers to the `While col < lastcol` statement, which is the next iteration of the innermost `While` loop that contains the `For` loop.  
   
  [!code-vb[VbVbalrStatements#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#14)]  

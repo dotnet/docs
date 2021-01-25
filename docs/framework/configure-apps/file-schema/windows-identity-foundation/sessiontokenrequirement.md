@@ -5,6 +5,7 @@ ms.assetid: 496a1735-cbb7-49d5-a6aa-dd5550462073
 author: "BrucePerlerMS"
 ---
 # \<sessionTokenRequirement>
+
 Provides configuration for the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> class or derived classes.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,6 +31,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SessionSecurity
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -39,6 +41,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SessionSecurity
 |lifetime|Specifies the lifetime of session tokens.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  

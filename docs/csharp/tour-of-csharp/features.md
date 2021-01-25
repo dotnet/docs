@@ -34,7 +34,7 @@ The `new` operator permits the initial values of the array elements to be specif
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeArray":::
 
-The length of the array is inferred from the number of expressions between `{` and `}`. Local variable and field declarations can be shortened further such that the array type doesn't have to be restated.
+The length of the array is inferred from the number of expressions between `{` and `}`. Array initialization can be shortened further such that the array type doesn't have to be restated.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeShortened":::
 
@@ -80,7 +80,7 @@ A delegate doesn't know or care about the class of the method it references. All
 
 ## async / await
 
-C# supports asynchronous programs with two keywords: `async` and `await`. You add the `async` modifier to a method declaration to declare the method is asynchronous. The `await` operator tells the compiler to asynchronously await for a result to finish. Control is returned to the caller, and the method returns a structure that manages the state of the asynchronous work. The structure is typically a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>, but can be any type that supports the awaiter pattern. These features enable you to write code that reads as its synchronous counterpart, but executes asynchronously. For example, the following code downloads the home page for [Microsoft docs](https://docs.microsoft.com):
+C# supports asynchronous programs with two keywords: `async` and `await`. You add the `async` modifier to a method declaration to declare the method is asynchronous. The `await` operator tells the compiler to asynchronously await for a result to finish. Control is returned to the caller, and the method returns a structure that manages the state of the asynchronous work. The structure is typically a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>, but can be any type that supports the awaiter pattern. These features enable you to write code that reads as its synchronous counterpart, but executes asynchronously. For example, the following code downloads the home page for [Microsoft docs](/):
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="AsyncExample":::
 

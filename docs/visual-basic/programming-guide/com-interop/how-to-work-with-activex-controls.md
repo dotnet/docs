@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: ec675027-866f-4c05-aaf2-92fca5200f9a
 ---
 # How to: Work with ActiveX Controls (Visual Basic)
+
 ActiveX controls are COM components or objects you can insert into a Web page or other application to reuse packaged functionality someone else has programmed. You can use ActiveX controls developed for Visual Basic 6.0 and earlier versions to add features to the **Toolbox** of Visual Studio.  
   
 ### To add ActiveX controls to the toolbox  
@@ -27,7 +28,7 @@ ActiveX controls are COM components or objects you can insert into a Web page or
 ## See also
 
 - [COM Interop](index.md)
-- [How to: Add ActiveX Controls to Windows Forms](../../../framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)
+- [How to: Add ActiveX Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-activex-controls-to-windows-forms)
 - [Aximp.exe (Windows Forms ActiveX Control Importer)](../../../framework/tools/aximp-exe-windows-forms-activex-control-importer.md)
-- [Considerations When Hosting an ActiveX Control on a Windows Form](../../../framework/winforms/controls/considerations-when-hosting-an-activex-control-on-a-windows-form.md)
+- [Considerations When Hosting an ActiveX Control on a Windows Form](/dotnet/desktop/winforms/controls/considerations-when-hosting-an-activex-control-on-a-windows-form)
 - [Troubleshooting Interoperability](troubleshooting-interoperability.md)

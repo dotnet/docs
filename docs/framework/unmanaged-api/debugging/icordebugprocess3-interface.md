@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess3 Interface
+
 Controls custom debugger notifications.  
   
 ## Methods  
@@ -25,12 +26,14 @@ Controls custom debugger notifications.
 |[SetEnableCustomNotification Method](icordebugprocess3-setenablecustomnotification-method.md)|Enables and disables custom debugger notifications of the specified type.|  
   
 ## Remarks  
+
  This interface logically extends the ICorDebugProcess and ICorDebugProcess2 interfaces.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

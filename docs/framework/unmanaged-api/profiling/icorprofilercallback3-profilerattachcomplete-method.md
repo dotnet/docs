@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback3::ProfilerAttachComplete Method
+
 Called by the common language runtime (CLR) to indicate that the profiler can now call the [ICorProfilerInfo3::EnumJITedFunctions](icorprofilerinfo3-enumjitedfunctions-method.md) and [ICorProfilerInfo3::EnumModules](icorprofilerinfo3-enummodules-method.md) catch-up methods.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ HRESULT ProfilerAttachComplete ();
 ```  
   
 ## Remarks  
+
  The `ProfilerAttachComplete` callback is issued after the [ICorProfilerCallback3::InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) method is called. It indicates the following:  
   
 - The callbacks that were requested by the profiler in `InitializeForAttach` have been activated.  
@@ -35,6 +37,7 @@ HRESULT ProfilerAttachComplete ();
  The CLR ignores the return value from this callback.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

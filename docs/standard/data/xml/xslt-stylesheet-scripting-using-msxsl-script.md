@@ -1,13 +1,13 @@
 ---
 title: "XSLT Stylesheet Scripting Using <msxsl:script>"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
 ---
 # XSLT Stylesheet Scripting Using \<msxsl:script>
+
 The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using the `script` element.  
   
 > [!NOTE]
@@ -37,7 +37,7 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
   
  To get the evidence from your assembly, use `this.GetType().Assembly.Evidence`. To get the evidence from a Uniform Resource Identifier (URI), use `Evidence e = XmlSecureResolver.CreateEvidenceForUrl(stylesheetURI)`.  
   
- If you use <xref:System.Xml.Xsl.XslTransform.Load%2A> methods that take an <xref:System.Xml.XmlResolver> but no `Evidence`, the security zone for the assembly defaults to Full Trust. For more information, see <xref:System.Security.SecurityZone> and [Named Permission Sets](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
+ If you use <xref:System.Xml.Xsl.XslTransform.Load%2A> methods that take an <xref:System.Xml.XmlResolver> but no `Evidence`, the security zone for the assembly defaults to Full Trust. For more information, see <xref:System.Security.SecurityZone> and [Named Permission Sets](/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
   
  Functions can be declared within the `msxsl:script` element. The following table shows the namespaces that are supported by default. You can use classes outside the listed namespaces. However, these classes must be fully qualified.  
   
@@ -93,6 +93,7 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
  This throws an exception because the ampersands are not escaped. The document is loaded as XML, and no special treatment is applied to the text between the `msxsl:script` element tags.  
   
 ## Example  
+
  The following example uses an embedded script to calculate the circumference of a circle given its radius.  
   
 ```vb  
@@ -160,6 +161,7 @@ public class Sample
 ```  
   
 ## Input  
+
  number.xml  
   
 ```xml  

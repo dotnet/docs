@@ -1,6 +1,6 @@
 ---
 title: Connection strings
-ms.date: 12/13/2019
+ms.date: 12/08/2020
 description: The supported keywords and values of connection strings.
 ---
 # Connection strings
@@ -55,9 +55,15 @@ The encryption key. When specified, `PRAGMA key` is sent immediately after openi
 > [!WARNING]
 > Password has no effect when encryption isn't supported by the native SQLite library.
 
+> [!NOTE]
+> The Password keyword was added in version 3.0.
+
 ### Foreign Keys
 
 A value indicating whether to enable foreign key constraints.
+
+> [!NOTE]
+> The Foreign Keys keyword was added in version 3.0.
 
 | Value   | Description
 | ------- | --- |
@@ -71,6 +77,9 @@ SQLite library.
 ### Recursive triggers
 
 A value that indicates whether to enable recursive triggers.
+
+> [!NOTE]
+> The Recursive Triggers keyword was added in version 3.0.
 
 | Value | Description                                                                 |
 | ----- | --------------------------------------------------------------------------- |
@@ -89,7 +98,7 @@ You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a stro
 
 A basic connection string with a shared cache for improved concurrency.
 
-```ConnectionString
+```connectionstring
 Data Source=Application.db;Cache=Shared
 ```
 
@@ -97,7 +106,7 @@ Data Source=Application.db;Cache=Shared
 
 An encrypted database.
 
-```ConnectionString
+```connectionstring
 Data Source=Encrypted.db;Password=MyEncryptionKey
 ```
 
@@ -105,7 +114,7 @@ Data Source=Encrypted.db;Password=MyEncryptionKey
 
 A read-only database that cannot be modified by the app.
 
-```ConnectionString
+```connectionstring
 Data Source=Reference.db;Mode=ReadOnly
 ```
 
@@ -113,7 +122,7 @@ Data Source=Reference.db;Mode=ReadOnly
 
 A private, in-memory database.
 
-```ConnectionString
+```connectionstring
 Data Source=:memory:
 ```
 
@@ -121,7 +130,7 @@ Data Source=:memory:
 
 A sharable, in-memory database identified by the name *Sharable*.
 
-```ConnectionString
+```connectionstring
 Data Source=Sharable;Mode=Memory;Cache=Shared
 ```
 

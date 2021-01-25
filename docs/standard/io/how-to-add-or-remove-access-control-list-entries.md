@@ -1,7 +1,6 @@
 ---
 title: "How to: Add or remove Access Control List entries (.NET Framework only)"
 ms.date: "01/14/2019"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 53758b39-bd9b-4640-bb04-cad5ed8d0abf
 ---
 # How to: Add or remove Access Control List entries (.NET Framework only)
+
 To add or remove Access Control List (ACL) entries to or from a file or directory, get the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> object from the file or directory. Modify the object, and then apply it back to the file or directory.  
   
 ## Add or remove an ACL entry from a file  
@@ -34,6 +34,7 @@ To add or remove Access Control List (ACL) entries to or from a file or director
 3. To apply the changes, pass the <xref:System.Security.AccessControl.DirectorySecurity> object to the <xref:System.IO.Directory.SetAccessControl%2A?displayProperty=nameWithType> method.  
   
 ## Example  
+
  You must use a valid user or group account to run this example. The example uses a <xref:System.IO.File> object. Use the same procedure for the <xref:System.IO.FileInfo>, <xref:System.IO.Directory>, and <xref:System.IO.DirectoryInfo> classes.
 
  [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](../../../samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]

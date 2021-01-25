@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRReferenceAssemblyEnum Interface
+
 Provides methods that allow the host to manipulate the set of assemblies referenced by a file or stream using assembly identity data that is internal to the common language runtime (CLR), without needing to create or understand those identities.  
   
 ## Methods  
@@ -25,6 +26,7 @@ Provides methods that allow the host to manipulate the set of assemblies referen
 |[Get Method](iclrreferenceassemblyenum-get-method.md)|Gets the assembly identity at the supplied index.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

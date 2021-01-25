@@ -14,9 +14,11 @@ helpviewer_keywords:
 ms.assetid: ccd68284-f3a8-47b8-bc3f-92e5fe3a1640
 ---
 # Runtime Profiling
+
 Profiling is a method of gathering performance data in any development or deployment scenario. This section is for developers and system administrators who want to gather information about application performance.  
   
 ## Tracking Performance Using the Performance Monitor (Perfmon.exe)  
+
  The Performance Monitor is the easiest tool to use to profile your .NET Framework application. The Performance Monitor graphically represents data found in the .NET Framework performance counters that are installed with the common language runtime and the Windows SDK. These counters can be used to monitor everything from memory management to just-in-time (JIT) compiler performance. They tell you about the resources your application uses, which is an indirect measure of your application's performance. Use these counters to understand how your application works internally.  
   
 #### To run Perfmon.exe on Windows Vista and later versions  
@@ -50,6 +52,7 @@ Profiling is a method of gathering performance data in any development or deploy
 > On systems on which the .NET Framework 4 is installed, the Performance Monitor may not display data for performance counters in some categories, such as **.NET CLR Data** and **.NET CLR Networking**, for applications that were developed using the .NET Framework 1.1. If this is the case, you can configure Performance Monitor to display this data by adding the [\<forcePerformanceCounterUniqueSharedMemoryReads>](../configure-apps/file-schema/runtime/forceperformancecounteruniquesharedmemoryreads-element.md) element to the application's configuration file.  
   
 ## Reading and Creating Performance Counters Programmatically  
+
  The .NET Framework provides classes you can use to programmatically access the same performance information that is available in the Performance console. You can also use these classes to create custom performance counters. The following table describes some of the performance monitoring classes that are provided in the .NET Framework.  
   
 |Class|Description|  

@@ -1,9 +1,9 @@
 .NET Core Hosting Sample
 ========================
 
-This sample demonstrates a simple .NET Core host using the hosting APIs from [CoreClrHost.h](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h). The sample host loads and starts the .NET Core CLR (including starting the default AppDomain), loads managed code, calls into a managed method, and provides a function pointer for the managed code to call back into the host.
+This sample demonstrates a simple .NET Core host using the hosting APIs from [`coreclrhost.h`](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h). The sample host loads and starts the .NET runtime, loads managed code, calls into a managed method, and provides a function pointer for the managed code to call back into the host.
 
-This sample is part of the [.NET Core hosting tutorial](https://docs.microsoft.com/dotnet/core/tutorials/netcore-hosting). See that topic for a more detailed explanation of this sample. There are also alternative hosting APIs (the `ICLRRuntimeHost4` interface in [mscoree.h](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h)) that are demonstrated in the [HostWithMscoree folder](../HostWithMsCoree) of this repository.
+This sample is part of the [.NET Core hosting tutorial](https://docs.microsoft.com/dotnet/core/tutorials/netcore-hosting). See that topic for a more detailed explanation of this sample.
 
 About .NET Core Hosts
 ---------------------

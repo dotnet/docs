@@ -1,7 +1,7 @@
 ---
 title: Deploy existing .NET apps as Windows containers
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Deploy existing .NET apps as Windows containers
-ms.date: 04/29/2018
+ms.date: 12/21/2020
 ---
 # Deploy existing .NET apps as Windows containers
 
@@ -23,7 +23,7 @@ As containers daily become more common, they are becoming an industry-wide "unit
 
 Building applications by using containers-which also might be defined as lightweight building blocks-offers a significant increase in agility for building, shipping, and running any application, across any infrastructure.
 
-With containers, you can take any app from development to production with little or no code change, thanks to Docker integration across Microsoft developer tools, operating systems, and cloud.
+With containers, you can take any app from development to production with little or no code change, thanks to Docker integration across Microsoft developer tools, operating systems, and the cloud.
 
 When you deploy to plain VMs, you probably already have a method in place for deploying ASP.NET apps to your VMs. It's likely, though, that your method involves multiple manual steps or complex automated processes by using a deployment tool like Puppet, or a similar tool. You might need to perform tasks like modifying configuration items, copying application content between servers, and running interactive setup programs based on .msi setups, followed by testing. All those steps in the deployment add time and risk to deployments. You will get failures whenever a dependency is not present in the target environment.
 
@@ -59,11 +59,11 @@ In the near future, mixed environments that have both Linux and Windows containe
 
 The benefits of using Windows Containers are fundamentally the same benefits you get from containers in general. Using Windows Containers is about greatly improving agility, portability, and control.
 
-Existing .NET applications refer to those applications that were created using the .NET Framework. For example, they might be traditional ASP.NET web applications-they don't use .NET Core, which is newer and runs cross-platform on Linux, Windows, and MacOS.
+Existing .NET applications refer to those applications that were created using the .NET Framework. For example, they might be traditional ASP.NET web applications-they don't use .NET Core or .NET 5.0, which is newer and runs cross-platform on Linux, Windows, and MacOS.
 
 The main dependency in the .NET Framework is Windows. It also has secondary dependencies, like IIS, and System.Web in traditional ASP.NET.
 
-A .NET Framework application must run on Windows, period. If you want to containerize existing .NET Framework applications and you can't or don't want to invest in a migration to .NET Core ("If it works properly, don't migrate it"), the only choice you have for containers is to use Windows Containers.
+A .NET Framework application must run on Windows, period. If you want to containerize existing .NET Framework applications and you can't or don't want to invest in a migration to .NET Core or later("If it works properly, don't migrate it"), the only choice you have for containers is to use Windows Containers.
 
 So, one of the main benefits of Windows Containers is that they offer you a way to modernize your existing .NET Framework applications that are running on Windows-through containerization. Ultimately, Windows Containers gets you the benefits that you are looking for by using containers-agility, portability, and better control.
 
@@ -71,7 +71,7 @@ So, one of the main benefits of Windows Containers is that they offer you a way 
 
 Given the diversity of operating systems that are supported by Docker, as well as the differences between .NET Framework and .NET Core, you should target a specific OS and specific versions based on the framework you are using.
 
-For Windows, you can use Windows Server Core or Windows Nano Server. These Windows versions provide different characteristics (like IIS versus a self-hosted web server like Kestrel) that might be needed by .NET Framework or .NET Core applications.
+For Windows, you can use Windows Server Core or Windows Nano Server. These Windows versions provide different characteristics (like IIS versus a self-hosted web server like Kestrel) that might be needed by .NET Framework or .NET applications.
 
 For Linux, multiple distros are available and supported in official .NET Docker images (like Debian).
 
@@ -87,19 +87,19 @@ When you add the image name to your Dockerfile file, you can select the operatin
 
 > | **Tag** | **System and version** |
 > |---|---|
-> | **microsoft/dotnet-framework:4.x-windowsservercore** | .NET Framework 4.x on Windows Server Core |
-> | **microsoft/aspnet:4.x-windowsservercore** | .NET Framework 4.x with additional ASP.NET customization, on Windows Server Core |
+> | **mcr.microsoft.com/dotnet/framework/runtime:4.x-windowsservercore-20H2** | .NET Framework 4.x on Windows Server Core |
+> | **mcr.microsoft.com/dotnet/framework/aspnet:4.x-windowsservercore-20H2** | .NET Framework 4.x with additional ASP.NET customization, on Windows Server Core |
 
-For .NET Core (cross-platform for Linux and Windows), the tags would look like the following:
+For .NET (cross-platform for Linux and Windows), the tags would look like the following:
 
 > | **Tag** | **System and version**
 > |---|---|
-> | **microsoft/dotnet:2.0.0-runtime** | .NET Core 2.0 runtime-only on Linux |
-> | **microsoft/dotnet:2.0.0-runtime-nanoserver** | .NET Core 2.0 runtime-only on Windows Nano Server |
+> | **mcr.microsoft.com/dotnet/runtime:5.0** | .NET runtime-only on Linux |
+> | **mcr.microsoft.com/dotnet/runtime:5.0-nanoserver-20H2** | .NET runtime-only on Windows Nano Server |
 
 ### Multi-arch images
 
-Beginning in mid-2017, you can also use a new feature in Docker called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Core Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **microsoft/dotnet:2.0.0-runtime**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
+Beginning in mid-2017, you can also use a new feature in Docker called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **mcr.microsoft.com/dotnet/runtime:5.0**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
 
 For .NET Framework images, because the traditional .NET Framework supports only Windows, you cannot use the multi-arch feature.
 

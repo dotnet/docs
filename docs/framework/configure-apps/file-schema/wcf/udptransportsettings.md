@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 842d92e9-6199-4ec5-b2d1-58533054e1f0
 ---
 # \<udpTransportSettings>
+
 This configuration element exposes UDP transport settings for [\<udpDiscoveryEndpoint>](udpdiscoveryendpoint.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -35,6 +36,7 @@ This configuration element exposes UDP transport settings for [\<udpDiscoveryEnd
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -52,6 +54,7 @@ This configuration element exposes UDP transport settings for [\<udpDiscoveryEnd
 |timeToLive|An integer that specifies the number of network segment hops that a multicast packet can traverse.  This attribute exposes the functionality associated with the `IP_MULTICAST_TTL` and `IP_TTL` socket options.<br /><br /> The default value is 1.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: d4b0e253-092a-4e6e-9fe2-01f562140a29
 ---
 # How to: Define an Operator (Visual Basic)
+
 If you have defined a class or structure, you can define the behavior of a standard operator (such as `*`, `<>`, or `And`) when one or both of the operands is of the type of your class or structure.  
   
  Define the standard operator as an operator procedure within the class or structure. All operator procedures must be `Public` `Shared`.  
@@ -22,6 +23,7 @@ If you have defined a class or structure, you can define the behavior of a stand
  Defining an operator on a class or structure is also called *overloading* the operator.  
   
 ## Example  
+
  The following example defines the `+` operator for a structure called `height`. The structure uses heights measured in feet and inches. One *inch* is 2.54 centimeters, and one *foot* is 12 inches. To ensure normalized values (inches < 12.0), the constructor performs *modulo* 12 arithmetic. The `+` operator uses the constructor to generate normalized values.  
   
  [!code-vb[VbVbcnProcedures#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#25)]  

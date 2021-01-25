@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: c98bda3e-6779-419e-8e6d-9aa94053026d
 ---
 # Integrating with COM Applications
+
 Windows Communication Foundation (WCF) services can be integrated directly into your existing code by using the WCF service moniker. The service moniker can be used from a wide range of COM-based development environments, such as Office VBA, Visual Basic 6.0, or Visual C++ 6.0.  
   
 ## In This Section  
+
  [Integrating with COM Applications Overview](integrating-with-com-applications-overview.md)  
  Gives an overview of the major parts of the integration process.  
   
@@ -33,6 +35,7 @@ Windows Communication Foundation (WCF) services can be integrated directly into 
  The WCF service moniker supports the `IChannelCredentials` interface that allows a range of alternate methods for specifying channel credentials.  
   
 ## Reference  
+
  <xref:System.ServiceModel>  
   
 ## See also

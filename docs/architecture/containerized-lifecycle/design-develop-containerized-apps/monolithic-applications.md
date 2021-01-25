@@ -1,7 +1,7 @@
 ---
 title: Monolithic applications
 description: Understand the core concepts for containerizing monolithic applications.
-ms.date: 08/06/2020
+ms.date: 01/06/2021
 ---
 # Monolithic applications
 
@@ -31,7 +31,7 @@ From an infrastructure perspective, each server can run many applications within
 
 Finally, from an availability perspective, monolithic applications must be deployed as a whole; that means that in case you must *stop and start*, all functionality and all users will be affected during the deployment window. In certain situations, the use of Azure and containers can minimize these situations and reduce the probability of downtime of your application, as you can see in Figure 4-3.
 
-You can deploy monolithic applications in Azure by using dedicated VMs for each instance. Using [Azure VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), you can scale the VMs easily.
+You can deploy monolithic applications in Azure by using dedicated VMs for each instance. Using [Azure VM Scale Sets](/azure/virtual-machine-scale-sets/), you can scale the VMs easily.
 
 You can also use [Azure App Services](https://azure.microsoft.com/services/app-service/) to run monolithic applications and easily scale instances without having to manage the VMs. Azure App Services can run single instances of Docker containers, as well, simplifying the deployment.
 
@@ -63,7 +63,7 @@ Either because you want to get a quick validation of a container deployed to Azu
 
 Using Azure App Service is intuitive and you can get up and running quickly because it provides great Git integration to take your code, build it in Microsoft Visual Studio, and directly deploy it to Azure. But, traditionally (with no Docker), if you needed other capabilities, frameworks, or dependencies that aren't supported in App Services, you needed to wait for it until the Azure team updates those dependencies in App Service or switched to other services like Service Fabric, Cloud Services, or even plain VMs, for which you have further control and can install a required component or framework for your application.
 
-Now, as shown in Figure 4-4, when using Visual Studio 2017, container support in Azure App Service gives you the ability to include whatever you want in your app environment. If you added a dependency to your app, because you're running it in a container, you get the capability of including those dependencies in your Dockerfile or Docker image.
+Now, as shown in Figure 4-4, when using Visual Studio 2019, container support in Azure App Service gives you the ability to include whatever you want in your app environment. If you added a dependency to your app, because you're running it in a container, you get the capability of including those dependencies in your Dockerfile or Docker image.
 
 ![Screenshot of Create App Service dialog showing a Container Registry.](./media/monolithic-applications/publish-azure-app-service-container.png)
 

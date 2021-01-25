@@ -8,9 +8,10 @@ dev_langs:
 ms.assetid: 49c083b7-a5ed-41cf-aabc-5aaba96f00e6
 ---
 # Loading a DataSet from XML
+
 The contents of an ADO.NET <xref:System.Data.DataSet> can be created from an XML stream or document. In addition, with the .NET Framework you have great flexibility over what information is loaded from XML, and how the schema or relational structure of the <xref:System.Data.DataSet> is created.  
   
- To fill a <xref:System.Data.DataSet> with data from XML, use the **ReadXml** method of the <xref:System.Data.DataSet> object. The **ReadXml** method reads from a file, a stream, or an **XmlReader**, and takes as arguments the source of the XML plus an optional **XmlReadMode** argument. For more information about the **XmlReader**, see [Reading XML Data with XmlTextReader](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tfz3cz6w(v=vs.100)). The **ReadXml** method reads the contents of the XML stream or document and loads the <xref:System.Data.DataSet> with data. It will also create the relational schema of the <xref:System.Data.DataSet> depending on the **XmlReadMode** specified and whether or not a relational schema already exists.  
+ To fill a <xref:System.Data.DataSet> with data from XML, use the **ReadXml** method of the <xref:System.Data.DataSet> object. The **ReadXml** method reads from a file, a stream, or an **XmlReader**, and takes as arguments the source of the XML plus an optional **XmlReadMode** argument. For more information about the **XmlReader**, see [Reading XML Data with XmlTextReader](/previous-versions/dotnet/netframework-4.0/tfz3cz6w(v=vs.100)). The **ReadXml** method reads the contents of the XML stream or document and loads the <xref:System.Data.DataSet> with data. It will also create the relational schema of the <xref:System.Data.DataSet> depending on the **XmlReadMode** specified and whether or not a relational schema already exists.  
   
  The following table describes the options for the **XmlReadMode** argument.  
   
@@ -27,6 +28,7 @@ The contents of an ADO.NET <xref:System.Data.DataSet> can be created from an XML
 > If you pass an **XmlReader** to **ReadXml** that is positioned part of the way into an XML document, **ReadXml** will read to the next element node and will treat that as the root element, reading until the end of the element node only. This does not apply if you specify **XmlReadMode.Fragment**.  
   
 ## DTD Entities  
+
  If your XML contains entities defined in a document type definition (DTD) schema, an exception will be thrown if you attempt to load a <xref:System.Data.DataSet> by passing a file name, stream, or non-validating **XmlReader** to **ReadXml**. Instead, you must create an **XmlValidatingReader**, with **EntityHandling** set to **EntityHandling.ExpandEntities**, and pass your **XmlValidatingReader** to **ReadXml**. The **XmlValidatingReader** will expand the entities prior to being read by the <xref:System.Data.DataSet>.  
   
  The following code examples show how to load a <xref:System.Data.DataSet> from an XML stream. The first example shows a file name being passed to the **ReadXml** method. The second example shows a string that contains XML being loaded using a <xref:System.IO.StringReader>.  
@@ -108,6 +110,7 @@ foreach (DataTable dataTable in dataSet.Tables)
 ```  
   
 ## Merging Data from XML  
+
  If the <xref:System.Data.DataSet> already contains data, the new data from the XML is added to the data already present in the <xref:System.Data.DataSet>. **ReadXml** does not merge from the XML into the <xref:System.Data.DataSet> any row information with matching primary keys. To overwrite existing row information with new information from XML, use **ReadXml** to create a new <xref:System.Data.DataSet>, and then <xref:System.Data.DataSet.Merge%2A> the new <xref:System.Data.DataSet> into the existing <xref:System.Data.DataSet>. Note that loading a DiffGram using **ReadXML** with an **XmlReadMode** of **DiffGram** will merge rows that have the same unique identifier.  
   
 ## See also

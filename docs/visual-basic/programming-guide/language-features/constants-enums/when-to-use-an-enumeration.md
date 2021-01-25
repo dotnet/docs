@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: e6e47b5b-3ed9-452d-a481-9c3fed88519a
 ---
 # When to Use an Enumeration (Visual Basic)
+
 Enumerations offer an easy way to work with sets of related constants. An enumeration, or `Enum`, is a symbolic name for a set of values. Enumerations are treated as data types, and you can use them to create sets of constants for use with variables and properties.  
   
 ## When to Use an Enumeration  
+
  Whenever a procedure accepts a limited set of variables, consider using an enumeration. Enumerations make for clearer and more readable code, particularly when meaningful names are used.  
   
  The benefits of using enumerations include:  
@@ -22,11 +24,13 @@ Enumerations offer an easy way to work with sets of related constants. An enumer
 - Ensures forward compatibility. With enumerations, your code is less likely to fail if in the future someone changes the values corresponding to the member names.  
   
 ## Naming Enumerations  
+
  Use a naming convention for enumeration members. When Visual Basic encounters an enumeration member name, an exception may be thrown if other referenced type libraries contain the same name. Use a unique prefix that identifies the values from your application or component.  
   
  When referring to a member of an enumeration, you must qualify the member name with the enumeration name or else use the `Imports` statement. For more information, see [Enumerations and Name Qualification](enumerations-and-name-qualification.md).  
   
 ## Predefined Enumerations  
+
  Visual Basic provides a number of predefined enumerations, such as `FirstDayOfWeek` and `MsgBoxResult`, to facilitate your code. For a list of these see [Constants and Enumerations](../../../language-reference/constants-and-enumerations.md).  
   
 ## See also

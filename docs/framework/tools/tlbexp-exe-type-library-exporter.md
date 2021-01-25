@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
 ---
 # Tlbexp.exe (Type Library Exporter)
+
 The Type Library Exporter generates a type library that describes the types defined in a common language runtime assembly.  
   
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
@@ -50,6 +51,7 @@ tlbexp assemblyName [options]
 > The command-line options for Tlbexp.exe are case-insensitive and can be supplied in any order. You only need to specify enough of the option to uniquely identify it. For example, **/n** is equivalent to **/nologo**, and **/o:** *outfile.tlb* is equivalent to **/out:** *outfile.tlb*.  
   
 ## Remarks  
+
  Tlbexp.exe generates a type library that contains definitions of the types defined in the assembly. Applications such as Visual Basic 6.0 can use the generated type library to bind to the .NET types defined in the assembly.  
   
 > [!IMPORTANT]
@@ -83,13 +85,14 @@ HRESULT StructDispSafe([out, retval] SAFEARRAY(IDispatch*)* pRetVal);
   
  Note that Tlbexp.exe ignores the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType> field.  
   
- Because type libraries cannot accommodate all the information found in assemblies, Tlbexp.exe might discard some data during the export process. For an explanation of the transformation process and identification of the source of each piece of information emitted to a type library, see the [Assembly to Type Library Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100)).  
+ Because type libraries cannot accommodate all the information found in assemblies, Tlbexp.exe might discard some data during the export process. For an explanation of the transformation process and identification of the source of each piece of information emitted to a type library, see the [Assembly to Type Library Conversion Summary](/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100)).  
   
  Note that the Type Library Exporter exports methods that have <xref:System.TypedReference> parameters as `VARIANT`, even though the <xref:System.TypedReference> object has no meaning in unmanaged code. When you export methods that have <xref:System.TypedReference> parameters, the Type Library Exporter will not generate a warning or error and unmanaged code that uses the resulting type library will not run properly.  
   
  The Type Library Exporter is supported on Microsoft Windows 2000 and later.  
   
 ## Examples  
+
  The following command generates a type library with the same name as the assembly found in `myTest.dll`.  
   
 ```console  
@@ -127,6 +130,6 @@ tlbexp Sample.dll
 - <xref:System.Runtime.InteropServices.TypeLibExporterFlags>
 - [Tools](index.md)
 - [Regasm.exe (Assembly Registration Tool)](regasm-exe-assembly-registration-tool.md)
-- [Assembly to Type Library Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100))
+- [Assembly to Type Library Conversion Summary](/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100))
 - [Tlbimp.exe (Type Library Importer)](tlbimp-exe-type-library-importer.md)
 - [Command Prompts](developer-command-prompt-for-vs.md)

@@ -17,9 +17,11 @@ helpviewer_keywords:
 ms.assetid: 5c4da7c9-9562-4653-a947-1972e992f9f9
 ---
 # NotInheritable (Visual Basic)
+
 Specifies that a class cannot be used as a base class.  
   
 ## Remarks  
+
  **Alternate Terms**. A class that cannot be inherited is sometimes called a *sealed* class.  
   
  The `NotInheritable` modifier can be used in this context:  

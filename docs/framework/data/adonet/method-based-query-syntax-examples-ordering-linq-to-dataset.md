@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 8f9ce4fd-e84f-48c0-bb64-89e217236d3e
 ---
 # Method-Based Query Syntax Examples: Ordering (LINQ to DataSet)
+
 The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.OrderBy%2A>,  <xref:System.Linq.Enumerable.Reverse%2A>, and <xref:System.Linq.Enumerable.ThenBy%2A> methods to query a <xref:System.Data.DataSet> and order the results using the method query syntax.  
   
  The `FillDataSet` method used in these examples is specified in [Loading Data Into a DataSet](loading-data-into-a-dataset.md).  
@@ -23,6 +24,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## OrderBy  
   
 ### Example  
+
  This example uses the <xref:System.Linq.Enumerable.OrderBy%2A> method with a custom comparer to do a case-insensitive sort of last names.  
   
  [!code-csharp[DP LINQ to DataSet Examples#OrderByComparer_MQ](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#orderbycomparer_mq)]
@@ -31,6 +33,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Reverse  
   
 ### Example  
+
  This example uses the <xref:System.Linq.Enumerable.Reverse%2A> method to create a list of orders where `OrderDate` is earlier than Feb 20, 2002.  
   
  [!code-csharp[DP LINQ to DataSet Examples#Reverse](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#reverse)]
@@ -39,6 +42,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## ThenBy  
   
 ### Example  
+
  This example uses <xref:System.Linq.Enumerable.OrderBy%2A> and <xref:System.Linq.Enumerable.ThenBy%2A> methods with a custom comparer to first sort by list price, and then perform a case-insensitive descending sort of the product names.  
   
  [!code-csharp[DP LINQ to DataSet Examples#ThenByDescendingComparer_MQ](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#thenbydescendingcomparer_mq)]

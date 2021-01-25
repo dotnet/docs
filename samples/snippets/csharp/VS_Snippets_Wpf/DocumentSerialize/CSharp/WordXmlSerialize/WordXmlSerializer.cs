@@ -202,7 +202,7 @@ namespace SdkSample
         /// <summary>
         /// WordXML element name to indicate the font used by Word to
         /// display text. This saves consumers from having to select
-        /// one of of ascii, fareast, h-ansi or cs.
+        /// one of ascii, fareast, h-ansi or cs.
         /// </summary>
         internal const string WordAuxiliaryFontTag = "wx:font";
 

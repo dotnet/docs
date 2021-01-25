@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: aab624cb-30c6-4ac4-9dea-5ea03b5a4917
 ---
 # System.ServiceModel.Security.SecuritySessionClosedResponseReceived
+
 System.ServiceModel.Security.SecuritySessionClosedResponseReceived  
   
 ## Description  
+
  The client security session received a closed response from the server.  
   
 ## See also

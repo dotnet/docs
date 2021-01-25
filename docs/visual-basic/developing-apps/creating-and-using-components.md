@@ -7,9 +7,9 @@ ms.assetid: ee6a4156-73f7-4e9b-8e01-c74c4798b65c
 ---
 # Creating and Using Components in Visual Basic
 
-A *component* is a class that implements the <xref:System.ComponentModel.IComponent?displayProperty=nameWithType> interface or that derives directly or indirectly from a class that implements <xref:System.ComponentModel.IComponent>. A .NET Framework component is an object that is reusable, can interact with other objects, and provides control over external resources and design-time support.  
+A *component* is a class that implements the <xref:System.ComponentModel.IComponent?displayProperty=nameWithType> interface or that derives directly or indirectly from a class that implements <xref:System.ComponentModel.IComponent>. A .NET component is an object that is reusable, can interact with other objects, and provides control over external resources and design-time support.  
   
- An important feature of components is that they are designable, which means that a class that is a component can be used in the Visual Studio Integrated Development Environment. A component can be added to the Toolbox, dragged and dropped onto a form, and manipulated on a design surface. Notice that base design-time support for components is built into the .NET Framework; a component developer does not have to do any additional work to take advantage of the base design-time functionality.  
+ An important feature of components is that they are designable, which means that a class that is a component can be used in the Visual Studio Integrated Development Environment. A component can be added to the Toolbox, dragged and dropped onto a form, and manipulated on a design surface. Base design-time support for components is built into .NET. A component developer does not have to do any additional work to take advantage of the base design-time functionality.  
   
  A *control* is similar to a component, as both are designable. However, a control provides a user interface, while a component does not. A control must derive from one of the base control classes: <xref:System.Windows.Forms.Control> or <xref:System.Web.UI.Control>.  
   
@@ -57,9 +57,9 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
   
 ## Related Sections  
 
- [Troubleshooting Control and Component Authoring](../../framework/winforms/controls/troubleshooting-control-and-component-authoring.md)  
+ [Troubleshooting Control and Component Authoring](/dotnet/desktop/winforms/controls/troubleshooting-control-and-component-authoring)  
  Explains how to fix common problems.  
   
 ## See also
 
-- [How to: Access Design-Time Support in Windows Forms](../../framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)
+- [How to: Access Design-Time Support in Windows Forms](/dotnet/desktop/winforms/controls/developing-windows-forms-controls-at-design-time)

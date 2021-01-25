@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
 ---
 # Workflow Service Host Internals
+
 <xref:System.ServiceModel.WorkflowServiceHost> provides a host for workflow services. It is responsible for listening for incoming messages and routing them to the appropriate workflow service instance, it controls unloading and persisting of idle workflows, and more. This topic describes how WorkflowServiceHost processes incoming messages.  
   
 ## WorkflowServiceHost Overview  
@@ -17,6 +18,7 @@ The <xref:System.ServiceModel.WorkflowServiceHost> class is used to host workflo
  <xref:System.ServiceModel.WorkflowServiceHost> also exposes application endpoints that listen for incoming application messages. When an incoming message arrives it is sent to the appropriate workflow service instance (if it is currently loaded). If needed a new workflow instance is created. Or if an existing instance has been persisted it is loaded from the persistence store.  
   
 ## WorkflowServiceHost Details  
+
  The following diagram shows how <xref:System.ServiceModel.WorkflowServiceHost> handles messages in a bit more detail:  
   
  ![Diagram that shows the Workflow Service Host message flow.](./media/workflow-service-host-internals/workflow-service-host-message-flow.gif)  

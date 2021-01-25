@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 831cd386-b9b5-47a9-9690-aff6292ff348
 ---
 # 1101 - WorkflowActivityStart
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 831cd386-b9b5-47a9-9690-aff6292ff348
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a workflow activity has started.  
   
 ## Message  
+
  WorkflowInstance Id: '%1' E2E Activity  
   
 ## Details  

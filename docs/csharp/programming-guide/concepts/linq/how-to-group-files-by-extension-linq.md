@@ -5,9 +5,11 @@ ms.date: 07/20/2015
 ms.assetid: 21a98320-a5a1-4981-82d8-6a637e7d9018
 ---
 # How to group files by extension (LINQ) (C#)
+
 This example shows how LINQ can be used to perform advanced grouping and sorting operations on lists of files or folders. It also shows how to page output in the console window by using the <xref:System.Linq.Enumerable.Skip%2A> and <xref:System.Linq.Enumerable.Take%2A> methods.  
   
 ## Example  
+
  The following query shows how to group the contents of a specified directory tree by the file name extension.  
   
 ```csharp  
@@ -100,6 +102,7 @@ class GroupByExtension
  The output from this program can be long, depending on the details of the local file system and what the `startFolder` is set to. To enable viewing of all results, this example shows how to page through results. The same techniques can be applied to Windows and Web applications. Notice that because the code pages the items in a group, a nested `foreach` loop is required. There is also some additional logic to compute the current position in the list, and to enable the user to stop paging and exit the program. In this particular case, the paging query is run against the cached results from the original query. In other contexts, such as LINQ to SQL, such caching is not required.  
   
 ## Compiling the Code  
+
  Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
 ## See also

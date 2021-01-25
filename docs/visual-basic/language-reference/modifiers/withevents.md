@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
 ---
 # WithEvents (Visual Basic)
+
 Specifies that one or more declared member variables refer to an instance of a class that can raise events.
 
 ## Remarks

@@ -105,7 +105,7 @@ let squares =
     }
 
 for sq in squares do
-    printfn "%d" sq
+    printfn $"%d{sq}"
 ```
 
 In most cases, it can be omitted by callers. The most common way to omit `yield` is with the `->` operator:
@@ -117,7 +117,7 @@ let squares =
     }
 
 for sq in squares do
-    printfn "%d" sq
+    printfn $"%d{sq}"
 ```
 
 For more complex expressions that might yield many different values, and perhaps conditionally, simply omitting the keyword can do:
@@ -161,7 +161,7 @@ let squaresAndCubes =
         yield! cubes
     }
 
-printfn "%A" squaresAndCubes // Prints - 1; 4; 9; 1; 8; 27
+printfn $"{squaresAndCubes}"  // Prints - 1; 4; 9; 1; 8; 27
 ```
 
 When evaluated, the computation expression called by `yield!` will have its items yielded back one-by-one, flattening the result.
@@ -175,7 +175,7 @@ Unlike `yield`, `yield!` must be explicitly specified. Its behavior isn't implic
 The `return` keyword wraps a value in the type corresponding to the computation expression. Aside from computation expressions using `yield`, it is used to "complete" a computation expression:
 
 ```fsharp
-let req = // 'req' is of type is 'Async<data>'
+let req = // 'req' is of type 'Async<data>'
     async {
         let! data = fetch url
         return data
@@ -192,7 +192,7 @@ let result = Async.RunSynchronously req
 The `return!` keyword realizes the value of a computation expression and wraps that result in the type corresponding to the computation expression:
 
 ```fsharp
-let req = // 'req' is of type is 'Async<data>'
+let req = // 'req' is of type 'Async<data>'
     async {
         return! fetch url
     }
@@ -384,7 +384,7 @@ let eventually = new EventuallyBuilder()
 
 let comp = eventually {
     for x in 1..2 do
-        printfn " x = %d" x
+        printfn $" x = %d{x}"
     return 3 + 4 }
 
 // Try the remaining lines in F# interactive to see how this

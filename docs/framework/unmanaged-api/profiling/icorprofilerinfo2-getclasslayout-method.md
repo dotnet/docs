@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::GetClassLayout Method
+
 Gets information about the layout, in memory, of the fields defined by the specified class. That is, this method gets the offsets of the class's fields.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetClassLayout(
 ```  
   
 ## Parameters  
+
  `classID`  
  [in] The ID of the class for which the layout will be retrieved.  
   
@@ -47,6 +49,7 @@ HRESULT GetClassLayout(
  [out] A pointer to a location that contains the size, in bytes, of the class.  
   
 ## Remarks  
+
  The `GetClassLayout` method returns only the fields defined by the class itself. If the class's parent class has defined fields as well, the profiler must call `GetClassLayout` on the parent class to obtain those fields.  
   
  If you use `GetClassLayout` with string classes, the method will fail with error code E_INVALIDARG. Use [ICorProfilerInfo2::GetStringLayout](icorprofilerinfo2-getstringlayout-method.md) to get information about the layout of a string. `GetClassLayout` will also fail when called with an array class.  
@@ -56,6 +59,7 @@ HRESULT GetClassLayout(
  Alternatively, you can first call `GetClassLayout` with a zero-length `rFieldOffset` buffer to obtain the correct buffer size. You can then set the buffer size to the value returned in `pcFieldOffset` and call `GetClassLayout` again.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

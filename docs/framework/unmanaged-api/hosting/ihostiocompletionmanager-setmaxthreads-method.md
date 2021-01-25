@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostIoCompletionManager::SetMaxThreads Method
+
 Sets the maximum number of threads that the host allots to service I/O requests.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetMaxThreads (
 ```  
   
 ## Parameters  
+
  `dwMaxIoCompletionThreads`  
  [in] The maximum number of threads to allot for I/O requests.  
   
@@ -44,9 +46,11 @@ HRESULT SetMaxThreads (
 |E_NOTIMPL|The host does not provide an implementation of `SetMaxThreads`.|  
   
 ## Remarks  
+
  `SetMaxThreads` provides the CLR with an opportunity to set the maximum number of threads that are available to service requests on I/O ports. A host might need exclusive control over the size of the thread pool, for reasons such as implementation, performance, or scalability. For this reason, the host is not required to implement `SetMaxThreads`. In this case, a host should return E_NOTIMPL from this method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

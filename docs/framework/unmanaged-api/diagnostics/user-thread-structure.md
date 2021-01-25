@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # USER_THREAD Structure
+
 Provides information to a debugger about a thread. For more information, see the [INotifySource2::SetNotifyFilter](inotifysource2-setnotifyfilter-method.md) method.  
   
 ## Syntax  
@@ -38,6 +39,7 @@ typedef struct tagUSER_THREAD
 |`dwTid`|Thread ID.|  
   
 ## Requirements  
+
  **Header:** ProtocolNotify2.idl  
   
 ## See also

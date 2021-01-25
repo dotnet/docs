@@ -2,6 +2,8 @@
 description: "using directive - C# Reference"
 title: "using directive - C# Reference"
 ms.date: 07/20/2015
+f1_keywords: 
+  - "using_CSharpKeyword"
 helpviewer_keywords:
   - "using directive [C#]"
 ms.assetid: b42b8e61-5e7e-439c-bb71-370094b44ae8

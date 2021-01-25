@@ -9,3 +9,15 @@ Fixed a problem where a virtualizing<xref:System.Windows.Controls.ItemsControl> 
 | Scope   |Major|
 |Version|4.8|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

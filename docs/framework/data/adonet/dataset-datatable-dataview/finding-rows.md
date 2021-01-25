@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 5da300e2-74c0-4d13-9202-fc20ed8212d8
 ---
 # Finding Rows
+
 You can search for rows according to their sort key values by using the <xref:System.Data.DataView.Find%2A> and <xref:System.Data.DataView.FindRows%2A> methods of the <xref:System.Data.DataView>. The case sensitivity of search values in the **Find** and **FindRows** methods is determined by the **CaseSensitive** property of the underlying <xref:System.Data.DataTable>. Search values must match existing sort key values in their entirety in order to return a result.  
   
  The **Find** method returns an integer with the index of the <xref:System.Data.DataRowView> that matches the search criteria. If more than one row matches the search criteria, only the index of the first matching **DataRowView** is returned. If no matches are found, **Find** returns -1.  

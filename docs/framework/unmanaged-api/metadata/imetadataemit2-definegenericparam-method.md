@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit2::DefineGenericParam Method
+
 Creates a definition for a generic type parameter, and gets a token to that generic type parameter.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT DefineGenericParam (
 ```  
   
 ## Parameters  
+
  `tk`  
  [in] An `mdTypeDef` or `mdMethodDef` token that represents the method or constructor for which to define a generic parameter.  
   
@@ -56,6 +58,7 @@ HRESULT DefineGenericParam (
  [out] A token that represents the generic parameter.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetFieldProps Method
+
 Sets or updates the default value for the field referenced by the specified field token.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT SetFieldProps (
 ```  
   
 ## Parameters  
+
  `fd`  
  [in] The token for the target field.  
   
@@ -48,6 +50,7 @@ HRESULT SetFieldProps (
  [in] The size, in Unicode characters, of `pValue`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -23,6 +23,7 @@ helpviewer_keywords:
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
 ---
 # Select...Case Statement (Visual Basic)
+
 Runs one of several groups of statements, depending on the value of an expression.  
   
 ## Syntax  
@@ -47,6 +48,7 @@ End Select
 |`End Select`|Terminates the definition of the `Select`...`Case` construction.|  
   
 ## Remarks  
+
  If `testexpression` matches any `Case` `expressionlist` clause, the statements following that `Case` statement run up to the next `Case`, `Case Else`, or `End Select` statement. Control then passes to the statement following `End Select`. If `testexpression` matches an `expressionlist` clause in more than one `Case` clause, only the statements following the first match run.  
   
  The `Case Else` statement is used to introduce the `elsestatements` to run if no match is found between the `testexpression` and an `expressionlist` clause in any of the other `Case` statements. Although not required, it is a good idea to have a `Case Else` statement in your `Select Case` construction to handle unforeseen `testexpression` values. If no `Case` `expressionlist` clause matches `testexpression` and there is no `Case Else` statement, control passes to the statement following `End Select`.  
@@ -72,6 +74,7 @@ End Select
  `Select Case` constructions can be nested. Each nested `Select Case` construction must have a matching `End Select` statement and must be completely contained within a single `Case` or `Case Else` statement block of the outer `Select Case` construction within which it is nested.  
   
 ## Example  
+
  The following example uses a `Select Case` construction to write a line corresponding to the value of the variable `number`. The second `Case` statement contains the value that matches the current value of `number`, so the statement that writes "Between 6 and 8, inclusive" runs.  
   
  [!code-vb[VbVbalrStatements#54](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#54)]  

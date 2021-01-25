@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: b0efcc88-e8aa-4df4-a00b-8bdef70b7673
 ---
 # -lib (C# Compiler Options)
+
 The **-lib** option specifies the location of assemblies referenced by means of the [-reference (C# Compiler Options)](./reference-compiler-option.md) option.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ The **-lib** option specifies the location of assemblies referenced by means of 
 ```  
   
 ## Arguments  
+
  `dir1`  
  A directory for the compiler to look in if a referenced assembly is not found in the current working directory (the directory from which you are invoking the compiler) or in the common language runtime's system directory.  
   
@@ -27,6 +29,7 @@ The **-lib** option specifies the location of assemblies referenced by means of 
  One or more additional directories to search in for assembly references. Separate additional directory names with a comma, and without white space between them.  
   
 ## Remarks  
+
  The compiler searches for assembly references that are not fully qualified in the following order:  
   
 1. Current working directory. This is the directory from which the compiler is invoked.  
@@ -56,6 +59,7 @@ The **-lib** option specifies the location of assemblies referenced by means of 
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.ReferencePath%2A>.  
   
 ## Example  
+
  Compile t2.cs to create an .exe file. The compiler will look in the working directory and in the root directory of the C drive for assembly references.  
   
 ```console  

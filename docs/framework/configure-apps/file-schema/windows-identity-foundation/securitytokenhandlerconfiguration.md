@@ -5,6 +5,7 @@ ms.assetid: 28724cc6-020c-4a06-9a1f-d7594f315019
 author: "BrucePerlerMS"
 ---
 # \<securityTokenHandlerConfiguration>
+
 Provides configuration for the collection of token handlers.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Provides configuration for the collection of token handlers.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -56,6 +58,7 @@ Provides configuration for the collection of token handlers.
 |[\<securityTokenHandlers>](securitytokenhandlers.md)|Specifies a collection of security token handlers that are registered with the endpoint.|  
   
 ## Remarks  
+
  This section provides property values for a <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration> object. Settings configured in this section override those configured on the service. Some of these settings can, in turn, be overridden by settings that are specified when a handler is added to the security token handler collection.  
   
 ## Example  

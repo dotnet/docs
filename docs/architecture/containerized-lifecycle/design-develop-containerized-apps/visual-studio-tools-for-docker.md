@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools for Docker on Windows
 description: Get to know the Docker tools available in Visual Studio 2017 version 15.7 and later.
-ms.date: 08/06/2020
+ms.date: 01/06/2021
 ms.custom: vs-dotnet
 ---
 
@@ -79,9 +79,9 @@ The following table might help you decide how to set these options.
 > [!TIP]
 > For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 >
-> Debug apps in a local Docker container: <https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh>
+> Debug apps in a local Docker container: <https://docs.microsoft.com/visualstudio/containers/edit-and-refresh>
 >
-> Deploy an ASP.NET container to a container registry using Visual Studio: <https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker>
+> Deploy an ASP.NET container to a container registry using Visual Studio: <https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker>
 
 > [!div class="step-by-step"]
 > [Previous](docker-apps-inner-loop-workflow.md)

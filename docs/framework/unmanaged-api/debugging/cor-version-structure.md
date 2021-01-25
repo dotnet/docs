@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_VERSION Structure
+
 Stores the standard four-part version number of the common language runtime.  
   
 ## Syntax  
@@ -39,9 +40,11 @@ typedef struct _COR_VERSION {
 |`dwSubBuild`|The sub-build number.|  
   
 ## Remarks  
+
  If the version number is 1.0.3705.288, 1 is the major version number, 0 is the minor version number, 3705 is the build number, and 288 is the sub-build number.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  

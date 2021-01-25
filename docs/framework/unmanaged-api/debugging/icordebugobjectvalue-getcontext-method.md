@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugObjectValue::GetContext Method
+
 `GetContext` is not implemented in this version of the .NET Framework.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetContext (
 ```  
   
 ## Requirements  
+
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 4a993492-1088-4d10-871b-0c09916af05f
 ---
 # Diagnosing Transactional Applications
+
 This topic describes how to use the Windows Communication Foundation (WCF) management and diagnostics feature to troubleshoot a transactional application.  
   
 ## Performance Counters  
+
  WCF provides a standard set of performance counters for you to measure your transactional application's performance. For more information, see [Performance Counters](../diagnostics/performance-counters/index.md).  
   
  Performance counters are scoped to three different levels: service, endpoint, and operation, as described in the following tables.  
@@ -39,6 +41,7 @@ This topic describes how to use the Windows Communication Foundation (WCF) manag
 |Transactions Flowed Per Second|The number of transactions that flowed to operations at this endpoint within each second. This counter is incremented any time a transaction is present in the message that is sent to the endpoint.|  
   
 ## Windows Management Instrumentation  
+
  WCF exposes inspection data of a service at run time through a WCF Windows Management Instrumentation (WMI) provider. For more information about accessing WMI data, see [Using Windows Management Instrumentation for Diagnostics](../diagnostics/wmi/index.md).  
   
  A number of read-only WMI properties indicate the applied transaction settings for a service. The following tables list all of these settings.  
@@ -79,6 +82,7 @@ This topic describes how to use the Windows Communication Foundation (WCF) manag
 |TransactionFlowOption|A string that contains a valid value of the <xref:System.ServiceModel.TransactionFlowOption> enumeration.|Specifies the extent to which transaction flow is required.|  
   
 ## Tracing  
+
  Traces enable you to monitor and analyze faults in your transactional applications. You can enable tracing using the following ways:  
   
 - Standard WCF tracing  

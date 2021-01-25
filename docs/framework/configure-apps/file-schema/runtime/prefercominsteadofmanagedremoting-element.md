@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: a279a42a-c415-4e79-88cf-64244ebda613
 ---
 # \<PreferComInsteadOfManagedRemoting> Element
+
 Specifies whether the runtime will use COM interop instead of remoting for all calls across application domain boundaries.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
 |`true`|The runtime will use COM interop across application domain boundaries.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,6 +49,7 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  When you set the `enabled` attribute to `true`, the runtime behaves as follows:  
   
 - The runtime does not call [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) for an [IManagedObject](../../../unmanaged-api/hosting/imanagedobject-interface.md) interface when an [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface enters the domain through a COM interface. Instead, it constructs a [Runtime Callable Wrapper](../../../../standard/native-interop/runtime-callable-wrapper.md) (RCW) around the object.  
@@ -55,6 +59,7 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
  These two behaviors ensure that all calls over COM interfaces between managed objects across application domain boundaries use COM and COM interop instead of remoting.  
   
 ## Example  
+
  The following example shows how to specify that the runtime should use COM interop across isolation boundaries:  
   
 ```xml  

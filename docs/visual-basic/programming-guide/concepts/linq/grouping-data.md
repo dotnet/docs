@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 8f3a0871-6958-4aef-8f6f-493e189fd57d
 ---
 # Grouping Data (Visual Basic)
+
 Grouping refers to the operation of putting data into groups so that the elements in each group share a common attribute.  
   
  The following illustration shows the results of grouping a sequence of characters. The key for each group is the character.  
@@ -20,6 +21,7 @@ Grouping refers to the operation of putting data into groups so that the element
 |ToLookup|Inserts elements into a <xref:System.Linq.Lookup%602> (a one-to-many dictionary) based on a key selector function.|Not applicable.|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|  
   
 ## Query Expression Syntax Example  
+
  The following code example uses the `Group By` clause to group integers in a list according to whether they are even or odd.  
   
 ```vb  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRGCManager::SetGCStartupLimits Method
+
 Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0.  
   
 > [!IMPORTANT]
@@ -32,6 +33,7 @@ HRESULT SetGCStartupLimits (
 ```  
   
 ## Parameters  
+
  `SegmentSize`  
  [in] The specified size of a garbage collection segment.  
   
@@ -54,9 +56,11 @@ HRESULT SetGCStartupLimits (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The values that `SetGCStartupLimits` sets can be specified only once. Later calls to `SetGCStartupLimits` are ignored.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

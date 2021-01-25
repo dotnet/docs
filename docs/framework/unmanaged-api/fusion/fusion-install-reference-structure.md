@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # FUSION_INSTALL_REFERENCE Structure
+
 Represents a reference that an application makes to an assembly that the application has installed in the global assembly cache.  
   
 ## Syntax  
@@ -41,6 +42,7 @@ typedef struct _FUSION_INSTALL_REFERENCE_ {
 |`szNonCanonicalData`|A string that is understood only by the entity that adds the reference. The global assembly cache stores this string, but does not use it.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

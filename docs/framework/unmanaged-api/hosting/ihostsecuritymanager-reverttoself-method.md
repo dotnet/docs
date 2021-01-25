@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSecurityManager::RevertToSelf Method
+
 Terminates impersonation of the current user identity and returns the original thread token.  
   
 ## Syntax  
@@ -37,9 +38,11 @@ HRESULT RevertToSelf ();
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  `RevertToSelf` is called to return to the original thread token, after an earlier call to the [ImpersonateLoggedOnUser](ihostsecuritymanager-impersonateloggedonuser-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

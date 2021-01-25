@@ -10,11 +10,13 @@ helpviewer_keywords:
 ms.assetid: f0db283e-f283-4464-b521-b90858cc1b44
 ---
 # Main Procedure in Visual Basic
+
 Every Visual Basic application must contain a procedure called `Main`. This procedure serves as the starting point and overall control for your application. The .NET Framework calls your `Main` procedure when it has loaded your application and is ready to pass control to it. Unless you are creating a Windows Forms application, you must write the `Main` procedure for applications that run on their own.
 
  `Main` contains the code that runs first. In `Main`, you can determine which form is to be loaded first when the program starts, find out if a copy of your application is already running on the system, establish a set of variables for your application, or open a database that the application requires.
 
 ## Requirements for the Main Procedure
+
  A file that runs on its own (usually with extension .exe) must contain a `Main` procedure. A library (for example with extension .dll) does not run on its own and does not require a `Main` procedure. The requirements for the different types of projects you can create are as follows:
 
 - Console applications run on their own, and you must supply at least one `Main` procedure.
@@ -24,6 +26,7 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
 - Class libraries do not require a `Main` procedure. These include Windows Control Libraries and Web Control Libraries. Web applications are deployed as class libraries.
 
 ## Declaring the Main Procedure
+
  There are four ways to declare the `Main` procedure. It can take arguments or not, and it can return a value or not.
 
 > [!NOTE]

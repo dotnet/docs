@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # IDENTITY_ATTRIBUTE_BLOB Structure
+
 Contains information about a single attribute in an assembly, and consists of three `DWORD`s. Each `DWORD` is an offset into a character buffer produced by the `CurrentIntoBuffer` method of the [IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md) interface  
   
 ## Syntax  
@@ -39,6 +40,7 @@ typedef struct _IDENTITY_ATTRIBUTE_BLOB {
 |`ofsValue`|The third offset into the character buffer. This location marks the start of the attribute's value.|  
   
 ## Sample  
+
  The following example illustrates several basic steps, which eventually result in a populated `IDENTITY_ATTRIBUTE_BLOB` structure:  
   
 1. Obtain an [IReferenceIdentity](ireferenceidentity-interface.md) for the assembly.  
@@ -214,9 +216,11 @@ Exit:
 ```  
   
 ### To run the sample  
+
  C:\\> EnumAssemblyAttributes.exe C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll  
   
 ### Sample output  
+
  Culture = neutral  
   
  name = System  
@@ -228,6 +232,7 @@ Exit:
  Version = 2.0.0.0  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  

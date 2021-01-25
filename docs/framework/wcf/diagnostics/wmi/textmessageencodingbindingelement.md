@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 885e2d7a-3436-4093-bc5f-0a404c62acdc
 ---
 # TextMessageEncodingBindingElement
+
 TextMessageEncodingBindingElement  
   
 ## Syntax  
@@ -19,12 +20,15 @@ class TextMessageEncodingBindingElement : MessageEncodingBindingElement
 ```  
   
 ## Methods  
+
  The TextMessageEncodingBindingElement class does not define any methods.  
   
 ## Properties  
+
  The TextMessageEncodingBindingElement class has the following properties:  
   
 ### Encoding  
+
  Data type: string  
   
  Access type: Read-only  
@@ -32,6 +36,7 @@ class TextMessageEncodingBindingElement : MessageEncodingBindingElement
  The character set encoding to be used for emitting messages on the binding.  
   
 ### MaxReadPoolSize  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -39,6 +44,7 @@ class TextMessageEncodingBindingElement : MessageEncodingBindingElement
  An integer that defines how many messages can be read simultaneously without allocating new readers.  
   
 ### MaxWritePoolSize  
+
  Data type: sint32  
   
  Access type: Read-only  
@@ -46,6 +52,7 @@ class TextMessageEncodingBindingElement : MessageEncodingBindingElement
  An integer that defines how many messages can be sent simultaneously without allocating new writers.  
   
 ### ReaderQuotas  
+
  Data type: XmlDictionaryReaderQuotas  
   
  Access type: Read-only  

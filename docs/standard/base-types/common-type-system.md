@@ -2,18 +2,18 @@
 title: Common Type System
 description: Explore the type system in .NET. Read about types in .NET (value types or reference types), type definition, type members, and type member characteristics.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
+ms.topic: conceptual
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "type system"
   - "common type system"
-  - "assemblies [.NET Framework], types"
+  - "assemblies [.NET], types"
   - "reference types"
   - "value types"
   - "cross-language interoperability"
-  - "namespaces [.NET Framework], types"
+  - "namespaces [.NET], types"
   - "types, about types"
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
 ---
@@ -165,11 +165,13 @@ The common type system defines how types are declared, used, and managed in the 
 - Definitions for each of the type's members.  
   
 ### Attributes  
+
  Attributes provide additional user-defined metadata. Most commonly, they are used to store additional information about a type in its assembly, or to modify the behavior of a type member in either the design-time or run-time environment.  
   
  Attributes are themselves classes that inherit from <xref:System.Attribute?displayProperty=nameWithType>. Languages that support the use of attributes each have their own syntax for applying attributes to a language element. Attributes can be applied to almost any language element; the specific elements to which an attribute can be applied are defined by the <xref:System.AttributeUsageAttribute> that is applied to that attribute class.  
   
 ### Type accessibility  
+
  All types have a modifier that governs their accessibility from other types. The following table describes the type accessibilities supported by the runtime.  
   
 |Accessibility|Description|  
@@ -192,6 +194,7 @@ The common type system defines how types are declared, used, and managed in the 
 - If the declared accessibility of `M` is `private`, the accessibility domain of `M` is the program text of `T`.  
   
 ### Type Names  
+
  The common type system imposes only two restrictions on names:  
   
 - All names are encoded as strings of Unicode (16-bit) characters.  
@@ -203,6 +206,7 @@ The common type system defines how types are declared, used, and managed in the 
  Although a type might reference types from other modules and assemblies, a type must be fully defined within one .NET module. (Depending on compiler support, however, it can be divided into multiple source code files.) Type names need be unique only within a namespace. To fully identify a type, the type name must be qualified by the namespace that contains the implementation of the type.  
   
 ### Base types and interfaces  
+
  A type can inherit values and behaviors from another type. The common type system does not allow types to inherit from more than one base type.  
   
  A type can implement any number of interfaces. To implement an interface, a type must implement all the virtual members of that interface. A virtual method can be implemented by a derived type and can be invoked either statically or dynamically.  
@@ -286,12 +290,14 @@ The common type system defines how types are declared, used, and managed in the 
 |virtual|Methods, properties, and events|The method can be implemented by a derived type and can be invoked either statically or dynamically. If dynamic invocation is used, the type of the instance that makes the call at run time (rather than the type known at compile time) determines which implementation of the method is called. To invoke a virtual method statically, the variable might have to be cast to a type that uses the desired version of the method.|  
   
 ### Overloading  
+
  Each type member has a unique signature. Method signatures consist of the method name and a parameter list (the order and types of the method's arguments). Multiple methods with the same name can be defined within a type as long as their signatures differ. When two or more methods with the same name are defined, the method is said to be overloaded. For example, in <xref:System.Char?displayProperty=nameWithType>, the <xref:System.Char.IsDigit%2A> method is overloaded. One method takes a <xref:System.Char>. The other method takes a <xref:System.String> and an <xref:System.Int32>.  
   
 > [!NOTE]
 > The return type is not considered part of a method's signature. That is, methods cannot be overloaded if they differ only by return type.  
   
 ### Inherit, override, and hide members  
+
  A derived type inherits all members of its base type; that is, these members are defined on, and available to, the derived type. The behavior or qualities of inherited members can be modified in two ways:  
   
 - A derived type can hide an inherited member by defining a new member with the same signature. This might be done to make a previously public member private or to define new behavior for an inherited method that is marked as `final`.  
@@ -300,6 +306,6 @@ The common type system defines how types are declared, used, and managed in the 
   
 ## See also
 
-- [.NET API Browser](/dotnet/api)
+- [.NET API Browser](../../../api/index.md)
 - [Common Language Runtime](../clr.md)
 - [Type Conversion in .NET](type-conversion.md)

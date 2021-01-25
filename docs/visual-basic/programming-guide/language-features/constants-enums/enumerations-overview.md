@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: b42a38ee-5e77-4f99-a037-e3a127ead89c
 ---
 # Enumerations Overview (Visual Basic)
+
 Enumerations provide a convenient way to work with sets of related constants and to associate constant values with names. For example, you can declare an enumeration for a set of integer constants associated with the days of the week, and then use the names of the days rather than their integer values in your code.  
   
 ## Tasks involving Enumerations  
+
  The following table lists common tasks involving enumerations.  
   
 |To do this|See|  

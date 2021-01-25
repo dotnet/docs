@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo4 Interface
+
 Provides methods that code profilers use to communicate with the common language runtime (CLR) to control event monitoring and request information. . The `ICorProfilerInfo4` interface is an extension of the other `ICorProfilerInfo` interfaces. It provides new methods to support just-in-time (JIT) recompilation, added in the .NET Framework 4.5.  
   
 ## Methods  
@@ -34,9 +35,11 @@ Provides methods that code profilers use to communicate with the common language
 |[RequestRevert Method](icorprofilerinfo4-requestrevert-method.md)|Reverts all instances of the specified functions to their original versions.|  
   
 ## Remarks  
+
  The CLR implements the methods of the `ICorProfilerInfo4` interface by using the free-threaded model. Each method returns an HRESULT to indicate success or failure. For a list of possible return codes, see the CorError.h file.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

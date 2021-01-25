@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f9ba60d8-b54d-417e-bb3e-fde4b41ca44c
 ---
 # ICorDebugExceptionDebugEvent Interface
+
 Extends the [ICorDebugDebugEvent](icordebugdebugevent-interface.md) interface to support exception events.  
   
 ## Methods  
@@ -15,6 +16,7 @@ Extends the [ICorDebugDebugEvent](icordebugdebugevent-interface.md) interface to
 |[GetStackPointer Method](icordebugexceptiondebugevent-getstackpointer-method.md)|Gets the stack pointer for this exception debug event.|  
   
 ## Remarks  
+
  The `ICorDebugExceptionDebugEvent` interface is implemented by the following event types:  
   
 - [MANAGED_EXCEPTION_FIRST_CHANCE](cordebugrecordformat-enumeration.md)  
@@ -29,6 +31,7 @@ Extends the [ICorDebugDebugEvent](icordebugdebugevent-interface.md) interface to
 > The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

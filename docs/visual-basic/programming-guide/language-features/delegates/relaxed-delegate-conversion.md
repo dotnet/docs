@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
 ---
 # Relaxed Delegate Conversion (Visual Basic)
+
 Relaxed delegate conversion enables you to assign subs and functions to delegates or handlers even when their signatures are not identical. Therefore, binding to delegates becomes consistent with the binding already allowed for method invocations.  
   
 ## Parameters and Return Type  
+
  In place of exact signature match, relaxed conversion requires that the following conditions be met when `Option Strict` is set to `On`:  
   
 - A widening conversion must exist from the data type of each delegate parameter to the data type of the corresponding parameter of the assigned function or `Sub`. In the following example, the delegate `Del1` has one parameter, an `Integer`. Parameter `m` in the assigned lambda expressions must have a data type for which there is a widening conversion from `Integer`, such as `Long` or `Double`.  
@@ -32,6 +34,7 @@ Relaxed delegate conversion enables you to assign subs and functions to delegate
  [!code-vb[VbVbalrRelaxedDelegates#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module2.vb#4)]  
   
 ## Omitting Parameter Specifications  
+
  Relaxed delegates also allow you to completely omit parameter specifications in the assigned method:  
   
  [!code-vb[VbVbalrRelaxedDelegates#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#5)]  
@@ -55,6 +58,7 @@ End Sub
 ```  
   
 ## AddressOf Examples  
+
  Lambda expressions are used in the previous examples to make the type relationships easy to see. However, the same relaxations are permitted for delegate assignments that use `AddressOf`, `Handles`, or `AddHandler`.  
   
  In the following example, functions `f1`, `f2`, `f3`, and `f4` can all be assigned to `Del1`.  
@@ -70,6 +74,7 @@ End Sub
  [!code-vb[VbVbalrRelaxedDelegates#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module2.vb#14)]  
   
 ## Dropping Function Returns  
+
  Relaxed delegate conversion enables you to assign a function to a `Sub` delegate, effectively ignoring the return value of the function. However, you cannot assign a `Sub` to a function delegate. In the following example, the address of function `doubler` is assigned to `Sub` delegate `Del3`.  
   
  [!code-vb[VbVbalrRelaxedDelegates#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#10)]  

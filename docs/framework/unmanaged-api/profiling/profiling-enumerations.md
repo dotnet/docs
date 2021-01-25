@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 8d5f9570-9853-4ce8-8101-df235d5b258e
 ---
 # Profiling Enumerations
+
 This section describes the unmanaged enumerations that the profiling API uses.  
   
 ## In This Section  
+
  [COR_PRF_CLAUSE_TYPE Enumeration](cor-prf-clause-type-enumeration.md)  
  Indicates the type of exception clause that the code has just entered or left.  
   
@@ -63,6 +65,7 @@ This section describes the unmanaged enumerations that the profiling API uses.
  Indicates the reason for a transition from managed to unmanaged code, or vice versa.  
   
 ## Related Sections  
+
  [Profiling Overview](profiling-overview.md)  
   
  [Profiling Interfaces](profiling-interfaces.md)  

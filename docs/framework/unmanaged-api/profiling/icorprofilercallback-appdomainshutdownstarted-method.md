@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::AppDomainShutdownStarted Method
+
 Notifies the profiler that an application domain is being unloaded from a process.  
   
 ## Syntax  
@@ -33,9 +34,11 @@ HRESULT AppDomainShutdownStarted(
   \[in] Identifies the domain in which the application's assemblies are stored.
 
 ## Remarks  
+
  The value of `appDomainId` is not valid for any information request after the `AppDomainShutdownStarted` method returns — this is the profiler's last chance to get information about this application domain.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

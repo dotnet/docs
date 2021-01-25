@@ -1,6 +1,6 @@
 ---
 title: global.json overview
-description: Learn how to use the global.json file to set the .NET Core SDK version when running .NET Core CLI commands.
+description: Learn how to use the global.json file to set the .NET SDK version when running .NET CLI commands.
 ms.topic: how-to
 ms.date: 05/01/2020
 ms.custom: "updateeachrelease"
@@ -9,13 +9,13 @@ ms.custom: "updateeachrelease"
 
 **This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 
-The *global.json* file allows you to define which .NET Core SDK version is used when you run .NET Core CLI commands. Selecting the .NET Core SDK is independent from specifying the runtime your project targets. The .NET Core SDK version indicates which versions of the .NET Core CLI is used.
+The *global.json* file allows you to define which .NET SDK version is used when you run .NET CLI commands. Selecting the .NET SDK is independent from specifying the runtime your project targets. The .NET SDK version indicates which versions of the .NET CLI is used.
 
 In general, you want to use the latest version of the SDK tools, so no *global.json* file is needed. In some advanced scenarios, you might want to control the version of the SDK tools, and this article explains how to do this.
 
 For more information about specifying the runtime instead, see [Target frameworks](../../standard/frameworks.md).
 
-.NET Core SDK looks for a *global.json* file in the current working directory (which isn't necessarily the same as the project directory) or one of its parent directories.
+The .NET SDK looks for a *global.json* file in the current working directory (which isn't necessarily the same as the project directory) or one of its parent directories.
 
 ## global.json schema
 
@@ -23,7 +23,7 @@ For more information about specifying the runtime instead, see [Target framework
 
 Type: `object`
 
-Specifies information about the .NET Core SDK to select.
+Specifies information about the .NET SDK to select.
 
 #### version
 
@@ -31,7 +31,7 @@ Specifies information about the .NET Core SDK to select.
 
 - Available since: .NET Core 1.0 SDK.
 
-The version of the .NET Core SDK to use.
+The version of the .NET SDK to use.
 
 This field:
 
@@ -58,6 +58,7 @@ If you don't set this value explicitly, the default value depends on whether you
 - Available since: .NET Core 3.0 SDK.
 
 The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a higher version. A [version](#version) must be specified with a `rollForward` value, unless you're setting it to `latestMajor`.
+The default roll forward behavior is determined by the [matching rules](#matching-rules).
 
 To understand the available policies and their behavior, consider the following definitions for an SDK version in the format `x.y.znn`:
 
@@ -75,9 +76,9 @@ The following table shows the possible values for the `rollForward` key:
 | `minor`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, fails. |
 | `major`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher major, minor, and feature band and uses the latest patch level for that feature band. <br> If not found, fails. |
 | `latestPatch` | Uses the latest installed patch level that matches the requested major, minor, and feature band with a patch level and that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestMajor` | Uses the highest installed .NET Core SDK with a major that is greater or equal than the specified value. <br> If not found, fail. |
+| `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band and patch level that is greater or equal than the specified value. <br> If not found, fails. |
+| `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor, feature band, and patch level that is greater or equal than the specified value. <br> If not found, fails. |
+| `latestMajor` | Uses the highest installed .NET SDK with a version that is greater or equal than the specified value. <br> If not found, fail. |
 | `disable`     | Doesn't roll forward. Exact match required. |
 
 ### msbuild-sdks
@@ -142,11 +143,11 @@ The following example shows how to use the highest patch version installed of a 
 }
 ```
 
-## global.json and the .NET Core CLI
+## global.json and the .NET CLI
 
-It's helpful to know which SDK versions are installed on your machine to set one in the *global.json* file. For more information on how to do that, see [How to check that .NET Core is already installed](../install/how-to-detect-installed-versions.md#check-sdk-versions).
+It's helpful to know which SDK versions are installed on your machine to set one in the *global.json* file. For more information on how to do that, see [How to check that .NET is already installed](../install/how-to-detect-installed-versions.md#check-sdk-versions).
 
-To install additional .NET Core SDK versions on your machine, visit the [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core) page.
+To install additional .NET SDK versions on your machine, visit the [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core) page.
 
 You can create a new the *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
 
@@ -157,7 +158,7 @@ dotnet new globaljson --sdk-version 3.0.100
 ## Matching rules
 
 > [!NOTE]
-> The matching rules are governed by the `dotnet.exe` entry point, which is common across all installed .NET Core installed runtimes. The matching rules for the latest installed version of the .NET Core Runtime are used when you have multiple runtimes installed side-by-side.
+> The matching rules are governed by the `dotnet.exe` entry point, which is common across all installed .NET installed runtimes. The matching rules for the latest installed version of the .NET Runtime are used when you have multiple runtimes installed side-by-side or if or you're using a *global.json* file.
 
 ## [.NET Core 3.x](#tab/netcore3x)
 
@@ -169,7 +170,7 @@ Starting with .NET Core 3.0, the following rules apply when determining which ve
 - If a *global.json* file is found that doesn't specify an SDK version but it specifies an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether the latest SDK version can be release or prerelease depends on the value of `allowPrerelease`. `true` indicates prerelease versions are considered; `false` indicates that only release versions are considered.
 - If a *global.json* file is found and it specifies an SDK version:
 
-  - If no `rollFoward` value is set, it uses `latestPatch` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
+  - If no `rollForward` value is set, it uses `latestPatch` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
   - Whether prerelease versions are considered and what's the default behavior when `allowPrerelease` isn't set is described in the [allowPrerelease](#allowprerelease) section.
 
 ## [.NET Core 2.x](#tab/netcore2x)

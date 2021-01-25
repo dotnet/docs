@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::SetFunctionReJIT Method
+
 Not implemented. Do not use.  
   
 ## Syntax  
@@ -27,6 +28,7 @@ HRESULT SetFunctionReJIT(
 ```  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: 8ed61a7f-4254-439c-bdd8-b474971533f7
 ---
 # \<bookmarkResumptionQueries>
+
 Represents a collection of queries that are used to track resumption of a bookmark within a workflow instance. The query is necessary for a tracking participant to subscribe to bookmark resumption records.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  
@@ -31,9 +32,11 @@ Represents a collection of queries that are used to track resumption of a bookma
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

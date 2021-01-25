@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataTables::GetRow Method
+
 Gets the row at the specified row index, in the table at the specified table index.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetRow (
 ```  
   
 ## Parameters  
+
  `ixTbl`  
  [in] The index of the table from which the row will be retrieved.  
   
@@ -44,6 +46,7 @@ HRESULT GetRow (
   We do not recommend the use of this method, because it does not return consistent results. For information about the GUID table, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](../../../standard/components.md#applicable-standards) and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://www.ecma-international.org/publications/standards/Ecma-335.htm).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

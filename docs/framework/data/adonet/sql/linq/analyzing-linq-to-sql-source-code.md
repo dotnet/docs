@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: cba3eef8-e108-4478-b588-ad59580e133e
 ---
 # Analyzing LINQ to SQL Source Code
+
 By using the following steps, you can produce [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] source code from the Northwind sample database. You can compare elements of the object model with elements of the database to better see how different items are mapped.  
   
 > [!NOTE]

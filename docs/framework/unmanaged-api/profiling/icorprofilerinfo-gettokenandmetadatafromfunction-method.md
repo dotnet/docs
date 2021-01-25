@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetTokenAndMetadataFromFunction Method
+
 Gets the metadata token and a metadata interface instance that can be used against the token for the specified function.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetTokenAndMetaDataFromFunction(
 ```  
   
 ## Parameters  
+
  `functionId`  
  [in] The ID of the function for which to get the metadata token and metadata interface.  
   
@@ -43,6 +45,7 @@ HRESULT GetTokenAndMetaDataFromFunction(
  [out] A pointer to the metadata token for the specified function.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 348b49e5-589d-4eb2-a597-d6ff60ab52d1
 ---
 # \<Method> Element (.NET Native)
+
 Applies runtime reflection policy to a constructor or method.  
   
 ## Syntax  
@@ -16,6 +17,7 @@ Applies runtime reflection policy to a constructor or method.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -62,6 +64,7 @@ Applies runtime reflection policy to a constructor or method.
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type and all its members.|  
   
 ## Remarks  
+
  A `<Method>` element of a generic method applies its policy to all instantiations that do not have their own policy.  
   
  You can use the `Signature` attribute to specify policy for a particular method overload. Otherwise, if the `Signature` attribute is absent, the runtime directive applies to all overloads of the method.  
@@ -69,6 +72,7 @@ Applies runtime reflection policy to a constructor or method.
  You cannot define the runtime reflection policy for a constructor by using the `<Method>` element. Instead, use the `Activate` attribute of the  [\<Assembly>](assembly-element-net-native.md), [\<Namespace>](namespace-element-net-native.md), [\<Type>](type-element-net-native.md), or [\<TypeInstantiation>](typeinstantiation-element-net-native.md) element.  
   
 ## Example  
+
  The `Stringify` method in the following example is a general-purpose formatting method that uses reflection to convert an object to its string representation. In addition to calling the object's default `ToString` method, the method can produce a formatted result string by passing an object's `ToString` method a format string, an <xref:System.IFormatProvider> implementation, or both. It can also call one of the <xref:System.Convert.ToString%2A?displayProperty=nameWithType> overloads that converts a number to its binary, hexadecimal, or octal representation.  
   
  [!code-csharp[ProjectN_Reflection#7](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/method1.cs#7)]  

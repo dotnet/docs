@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9ffd8db6-84a8-4b38-a9fe-2cb1a87a1c97
 ---
 # \<message> of \<ws2007HttpBinding>
+
 Defines settings for message-level security of the [\<ws2007HttpBinding>](ws2007httpbinding.md) element.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,9 +32,11 @@ Defines settings for message-level security of the [\<ws2007HttpBinding>](ws2007
 ```  
   
 ## Type  
+
  <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -77,6 +80,7 @@ Defines settings for message-level security of the [\<ws2007HttpBinding>](ws2007
 |`Windows`|Allows the SOAP exchanges to be under the authenticated context of a `Windows` credential. If the `negotiateServiceCredential` attribute is set to `true`, this either performs an SSPI negotiation or Kerberos (an interoperable standard).|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  

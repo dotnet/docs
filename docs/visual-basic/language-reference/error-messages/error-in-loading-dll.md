@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 4226cd1f-028c-477d-88a5-cb57f7e0cdc8
 ---
 # Error in loading DLL (Visual Basic)
+
 A dynamic-link library (DLL) is a library specified in the `Lib` clause of a `Declare` statement. Possible causes for this error include:  
   
 - The file is not DLL executable.  

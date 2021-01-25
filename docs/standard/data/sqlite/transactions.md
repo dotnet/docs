@@ -1,6 +1,6 @@
 ---
 title: Transactions
-ms.date: 12/13/2019
+ms.date: 09/08/2020
 description: Learn how to use transactions.
 ---
 # Transactions
@@ -30,3 +30,12 @@ Microsoft.Data.Sqlite treats the IsolationLevel passed to <xref:Microsoft.Data.S
 The following code simulates a dirty read. Note, the connection string must include `Cache=Shared`.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/DirtyReadSample/Program.cs?name=snippet_DirtyRead)]
+
+## Deferred transactions
+
+Starting with Microsoft.Data.Sqlite version 5.0, transactions can be deferred. This defers the creation of the actual transaction in the database until the first command is executed. It also causes the transaction to gradually upgrade from a read transaction to a write transaction as needed by its commands. This can be useful for enabling concurrent access to the database during the transaction.
+
+[!code-csharp[](../../../../samples/snippets/standard/data/sqlite/DeferredTransactionSample/Program.cs?name=snippet_DeferredTransaction)]
+
+> [!WARNING]
+> Commands inside a deferred transaction can fail if they cause the transaction to be upgraded from a read transaction to a write transaction while the database is locked. When this happens, the application will need to retry the entire transaction.

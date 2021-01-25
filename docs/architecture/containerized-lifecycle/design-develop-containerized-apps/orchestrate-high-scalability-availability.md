@@ -33,8 +33,8 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 |:---:|:---|
 | **Kubernetes** <br/> ![An image of the Kubernetes logo.](./media/orchestrate-high-scalability-availability/kubernetes-container-orchestration-system-logo.png) | [*Kubernetes*](https://kubernetes.io/) is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. It lets you automate deployment, scaling, and operations of application containers across clusters of hosts. <br/> <br/> *Kubernetes* provides a container-centric infrastructure that groups application containers into logical units for easy management and discovery. <br/> <br/> *Kubernetes* is mature in Linux, less mature in Windows. |
 | **Azure Kubernetes Service (AKS)** <br/> ![An image of the Azure Kubernetes Service logo.](./media/orchestrate-high-scalability-availability/azure-kubernetes-service-logo.png) | [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/) is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster's management, deployment, and operations. |
-| **Azure Service Fabric** <br/> ![An image of the Azure Service Fabric logo.](./media/orchestrate-high-scalability-availability/azure-service-fabric-logo.png) | [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) is a Microsoft microservices platform for building applications. It's an [orchestrator](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) of services and creates clusters of machines. Service Fabric can deploy services as containers or as plain processes. It can even mix services in processes with services in containers within the same application and cluster. <br/> <br/> *Service Fabric* clusters can be deployed in Azure, on-premises or in any cloud. However, deployment in Azure is simplified with a managed approach. <br/> <br/> *Service Fabric* provides additional and optional prescriptive [Service Fabric programming models](https://azure.microsoft.com/documentation/articles/service-fabric-choose-framework/) like [stateful services](https://azure.microsoft.com/documentation/articles/service-fabric-reliable-services-introduction/) and [Reliable Actors](https://azure.microsoft.com/documentation/articles/service-fabric-reliable-actors-introduction/). <br/> <br/> *Service Fabric* is mature in Windows (years evolving in Windows), less mature in Linux. <br/> <br/> Both Linux and Windows containers are supported in Service Fabric since 2017. |
-| **Azure Service Fabric Mesh** <br/> ![An image of the Azure Service Fabric Mesh logo.](./media/orchestrate-high-scalability-availability/azure-service-fabric-mesh-logo.png) | [*Azure Service Fabric Mesh*](https://docs.microsoft.com/azure/service-fabric-mesh/service-fabric-mesh-overview) offers the same reliability, mission-critical performance and scale as Service Fabric, but also offers a fully managed and serverless platform. You don't need to manage a cluster, VMs, storage or networking configuration. You just focus on your application's development. <br/> <br/> *Service Fabric Mesh* supports both Windows and Linux containers, allowing you to develop with any programming language and framework of your choice.
+| **Azure Service Fabric** <br/> ![An image of the Azure Service Fabric logo.](./media/orchestrate-high-scalability-availability/azure-service-fabric-logo.png) | [Service Fabric](/azure/service-fabric/service-fabric-overview) is a Microsoft microservices platform for building applications. It's an [orchestrator](/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) of services and creates clusters of machines. Service Fabric can deploy services as containers or as plain processes. It can even mix services in processes with services in containers within the same application and cluster. <br/> <br/> *Service Fabric* clusters can be deployed in Azure, on-premises or in any cloud. However, deployment in Azure is simplified with a managed approach. <br/> <br/> *Service Fabric* provides additional and optional prescriptive [Service Fabric programming models](/azure/service-fabric/service-fabric-choose-framework) like [stateful services](/azure/service-fabric/service-fabric-reliable-services-introduction) and [Reliable Actors](/azure/service-fabric/service-fabric-reliable-actors-introduction). <br/> <br/> *Service Fabric* is mature in Windows (years evolving in Windows), less mature in Linux. <br/> <br/> Both Linux and Windows containers are supported in Service Fabric since 2017. |
+| **Azure Service Fabric Mesh** <br/> ![An image of the Azure Service Fabric Mesh logo.](./media/orchestrate-high-scalability-availability/azure-service-fabric-mesh-logo.png) | [*Azure Service Fabric Mesh*](/azure/service-fabric-mesh/service-fabric-mesh-overview) offers the same reliability, mission-critical performance and scale as Service Fabric, but also offers a fully managed and serverless platform. You don't need to manage a cluster, VMs, storage or networking configuration. You just focus on your application's development. <br/> <br/> *Service Fabric Mesh* supports both Windows and Linux containers, allowing you to develop with any programming language and framework of your choice.
 
 ## Using container-based orchestrators in Azure
 
@@ -64,7 +64,7 @@ In the development environment that [Docker announced in July 2018](https://blog
 
 ## Get started with Azure Kubernetes Service (AKS)
 
-To begin using AKS, you deploy an AKS cluster from the Azure portal or by using the CLI. For more information on deploying a Kubernetes cluster to Azure, see [Deploy an Azure Kubernetes Service (AKS) cluster](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
+To begin using AKS, you deploy an AKS cluster from the Azure portal or by using the CLI. For more information on deploying a Kubernetes cluster to Azure, see [Deploy an Azure Kubernetes Service (AKS) cluster](/azure/aks/kubernetes-walkthrough-portal).
 
 There are no fees for any of the software installed by default as part of AKS. All default options are implemented with open-source software. AKS is available for multiple virtual machines in Azure. You're charged only for the compute instances you choose, as well as the other underlying infrastructure resources consumed, such as storage and networking. There are no incremental charges for AKS itself.
 
@@ -76,7 +76,7 @@ When deploying an application to a Kubernetes cluster, you can use the original 
 
 Helm Charts helps you define, version, install, share, upgrade, or rollback even the most complex Kubernetes application.
 
-Going further, Helm usage is also recommended because additional Kubernetes environments in Azure, such as [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces) are also based on Helm charts.
+Going further, Helm usage is also recommended because additional Kubernetes environments in Azure, such as [Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces) are also based on Helm charts.
 
 Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) in collaboration with Microsoft, Google, Bitnami, and the Helm contributor community.
 
@@ -84,7 +84,7 @@ For further implementation information on Helm charts and Kubernetes, see the se
 
 ## Use Azure Dev Spaces for you Kubernetes application lifecycle
 
-[Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces) provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). You can develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
+[Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces) provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). You can develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
 
 As mentioned, Azure Dev Spaces uses Helm charts when deploying container-based applications.
 
@@ -102,7 +102,7 @@ Azure Dev Spaces provides the concept of a space, which allows you to work in is
 
 For a concrete example, see the [eShopOnContainers wiki page on Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Azure-Dev-Spaces).
 
-For further information, see [Team Development with Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/team-development-netcore).
+For further information, see [Team Development with Azure Dev Spaces](/azure/dev-spaces/team-development-netcore).
 
 ## Additional resources
 
@@ -125,7 +125,7 @@ Service Fabric provides two broad areas to help you build applications that use 
 
 - A platform that provides system services to deploy, scale, upgrade, detect, and restart failed services, discover service location, manage state, and monitor health. These system services in effect enable many of the characteristics of microservices described previously.
 
-- Programming APIs, or frameworks, to help you build applications as microservices: [reliable actors and reliable services](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework). You can choose any code to build your microservice, but these APIs make the job more straightforward, and they integrate with the platform at a deeper level. This way you can get health and diagnostics information, or you can take advantage of reliable state management.
+- Programming APIs, or frameworks, to help you build applications as microservices: [reliable actors and reliable services](/azure/service-fabric/service-fabric-choose-framework). You can choose any code to build your microservice, but these APIs make the job more straightforward, and they integrate with the platform at a deeper level. This way you can get health and diagnostics information, or you can take advantage of reliable state management.
 
 Service Fabric is agnostic with respect to how you build your service, and you can use any technology. However, it provides built-in programming APIs that make it easier to build microservices.
 
@@ -137,11 +137,11 @@ As shown in Figure 4-10, you can create and run microservices in Service Fabric 
 
 In the first image, you see microservices as processes, where each node runs one process for each microservice. In the second image, you see microservices as containers, where each node runs Docker with several containers, one container per microservice. Service Fabric clusters based on Linux and Windows hosts can run Docker Linux containers and Windows Containers, respectively.
 
-For up-to-date information about containers support in Azure Service Fabric, see [Service Fabric and containers](https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview).
+For up-to-date information about containers support in Azure Service Fabric, see [Service Fabric and containers](/azure/service-fabric/service-fabric-containers-overview).
 
-Service Fabric is a good example of a platform where you can define a different logical architecture (business microservices or Bounded Contexts) than the physical implementation. For example, if you implement [Stateful Reliable Services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) in [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview), which are introduced in the next section, "[Stateless versus stateful microservices](#stateless-versus-stateful-microservices)," you have a business microservice concept with multiple physical services.
+Service Fabric is a good example of a platform where you can define a different logical architecture (business microservices or Bounded Contexts) than the physical implementation. For example, if you implement [Stateful Reliable Services](/azure/service-fabric/service-fabric-reliable-services-introduction) in [Azure Service Fabric](/azure/service-fabric/service-fabric-overview), which are introduced in the next section, "[Stateless versus stateful microservices](#stateless-versus-stateful-microservices)," you have a business microservice concept with multiple physical services.
 
-As shown in Figure 4-10, and thinking from a logical/business microservice perspective, when implementing a Service Fabric Stateful Reliable Service, you usually will need to implement two tiers of services. The first is the back-end stateful reliable service, which handles multiple partitions (each partition is a stateful service). The second is the front-end service, or Gateway service, in charge of routing and data aggregation across multiple partitions or stateful service instances. That Gateway service also handles client-side communication with retry loops accessing the back-end service. It's called a Gateway service if you implement your custom service, or alternatively you can also use the out-of-the-box Service Fabric [reverse proxy](https://docs.microsoft.com/azure/service-fabric/service-fabric-reverseproxy).
+As shown in Figure 4-10, and thinking from a logical/business microservice perspective, when implementing a Service Fabric Stateful Reliable Service, you usually will need to implement two tiers of services. The first is the back-end stateful reliable service, which handles multiple partitions (each partition is a stateful service). The second is the front-end service, or Gateway service, in charge of routing and data aggregation across multiple partitions or stateful service instances. That Gateway service also handles client-side communication with retry loops accessing the back-end service. It's called a Gateway service if you implement your custom service, or alternatively you can also use the out-of-the-box Service Fabric [reverse proxy](/azure/service-fabric/service-fabric-reverseproxy).
 
 ![Diagram showing several stateful services in containers.](./media/orchestrate-high-scalability-availability/service-fabric-stateful-business-microservice.png)
 
@@ -149,7 +149,7 @@ As shown in Figure 4-10, and thinking from a logical/business microservice persp
 
 In any case, when you use Service Fabric Stateful Reliable Services, you also have a logical or business microservice (Bounded Context) that's composed of multiple physical services. Each of them, the Gateway service, and Partition service could be implemented as ASP.NET Web API services, as shown in Figure 4-11. Service Fabric has prescription to support several stateful reliable services in containers.
 
-In Service Fabric, you can group and deploy groups of services as a [Service Fabric Application](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-model), which is the unit of packaging and deployment for the orchestrator or cluster. Therefore, the Service Fabric Application could be mapped to this autonomous business and logical microservice boundary or Bounded Context, as well, so you could deploy these services autonomously.
+In Service Fabric, you can group and deploy groups of services as a [Service Fabric Application](/azure/service-fabric/service-fabric-application-model), which is the unit of packaging and deployment for the orchestrator or cluster. Therefore, the Service Fabric Application could be mapped to this autonomous business and logical microservice boundary or Bounded Context, as well, so you could deploy these services autonomously.
 
 ### Service Fabric and containers
 
@@ -167,7 +167,7 @@ Note that you can mix services in processes, and services in containers, in the 
 
 **Figure 4-13**. Business microservice mapped to a Service Fabric application with containers and stateful services
 
-For more information about container support in Azure Service Fabric, see [Service Fabric and containers](https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview).
+For more information about container support in Azure Service Fabric, see [Service Fabric and containers](/azure/service-fabric/service-fabric-containers-overview).
 
 ## Stateless versus stateful microservices
 
@@ -181,11 +181,11 @@ But the services themselves can also be stateful in Service Fabric, which means 
 
 In stateless services, the state (persistence, database) is kept out of the microservice. In stateful services, state is kept inside the microservice. A stateless approach is perfectly valid and is easier to implement than stateful microservices, since the approach is similar to traditional and well-known patterns. But stateless microservices impose latency between the process and data sources. They also involve more moving pieces when you're trying to improve performance with additional cache and queues. The result is that you can end up with complex architectures that have too many tiers.
 
-In contrast, [stateful microservices](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can excel in advanced scenarios, because there's no latency between the domain logic and data. Heavy data processing, gaming back ends, databases as a service, and other low-latency scenarios all benefit from stateful services, which enable local state for faster access.
+In contrast, [stateful microservices](/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can excel in advanced scenarios, because there's no latency between the domain logic and data. Heavy data processing, gaming back ends, databases as a service, and other low-latency scenarios all benefit from stateful services, which enable local state for faster access.
 
 Stateless and stateful services are complementary. For instance, as you can see in the right diagram in Figure 4-14, a stateful service can be split into multiple partitions. To access those partitions, you might need a stateless service acting as a gateway service that knows how to address each partition based on partition keys.
 
-Stateful services do have drawbacks. They impose a high complexity level to be scaled out. Functionality that would usually be implemented by external database systems must be addressed for tasks such as data replication across stateful microservices and data partitioning. However, this is one of the areas where an orchestrator like [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-platform-architecture) with its [stateful reliable services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can help the most—by simplifying the development and lifecycle of stateful microservices using the [Reliable Services API](https://docs.microsoft.com/azure/service-fabric/service-fabric-work-with-reliable-collections) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
+Stateful services do have drawbacks. They impose a high complexity level to be scaled out. Functionality that would usually be implemented by external database systems must be addressed for tasks such as data replication across stateful microservices and data partitioning. However, this is one of the areas where an orchestrator like [Azure Service Fabric](/azure/service-fabric/service-fabric-reliable-services-platform-architecture) with its [stateful reliable services](/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can help the most—by simplifying the development and lifecycle of stateful microservices using the [Reliable Services API](/azure/service-fabric/service-fabric-work-with-reliable-collections) and [Reliable Actors](/azure/service-fabric/service-fabric-reliable-actors-introduction).
 
 Other microservice frameworks that allow stateful services, support the Actor pattern, and improve fault tolerance and latency between business logic and data are Microsoft [Orleans](https://github.com/dotnet/orleans), from Microsoft Research, and [Akka.NET](https://getakka.net/). Both frameworks are currently improving their support for Docker.
 
@@ -203,7 +203,7 @@ As shown in figure 4-15, applications hosted on Service Fabric Mesh run and scal
 
 Under the covers, Service Fabric Mesh consists of clusters of thousands of machines. All cluster operations are hidden from the developer. You simply need to upload your containers and specify resources you need, availability requirements, and resource limits. Service Fabric Mesh automatically allocates the infrastructure requested by your application deployment and also handles infrastructure failures, making sure your applications are highly available. You only need to care about the health and responsiveness of your application, not the infrastructure.
 
-For further information, see the [Service Fabric Mesh documentation](https://docs.microsoft.com/azure/service-fabric-mesh/).
+For further information, see the [Service Fabric Mesh documentation](/azure/service-fabric-mesh/).
 
 ## Choosing orchestrators in Azure
 

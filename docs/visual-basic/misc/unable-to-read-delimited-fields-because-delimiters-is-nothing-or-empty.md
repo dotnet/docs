@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 94f64c48-8e17-449d-b92a-0426efec879c
 ---
 # Unable to read delimited fields because Delimiters is Nothing or empty
+
 The `TextFieldParser` is unable to read from the file because the `Delimiters` property is set to `Nothing` or is empty.  
   
 ## To correct this error  

@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: df6e7c50-5f3e-4381-98ed-ba5c3e9fe228
 ---
 # Reference (Visual Basic)
+
 This section provides links to reference information about various aspects of Visual Basic programming.  
   
 ## In This Section  
+
  [Visual Basic Language Reference](../language-reference/index.md)  
  Provides reference information for various aspects of the Visual Basic language.  
   
@@ -23,6 +25,7 @@ This section provides links to reference information about various aspects of Vi
  Provides links to the complete Visual Basic language specification, which contains detailed information on all aspects of the language.  
   
 ## Related Sections  
+
  [General User Interface Elements (Visual Studio)](/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
  Contains topics for dialog boxes and windows used in Visual Studio.  
   

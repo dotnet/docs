@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: d1fb027c-872b-4ccc-afc8-2380e3f65d4a
 ---
 # Operators Listed by Functionality (Visual Basic)
+
 See one of the categories listed below, or open this portion of the Help table of contents to see an alphabetical list of Visual Basic operators.  
   
 ## Categories of Operators  

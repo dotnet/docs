@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: a4c8f52c-5b30-45c4-a545-63244aba82be
 ---
 # Service Identity and Authentication
+
 A service's *endpoint identity* is a value generated from the service Web Services Description Language (WSDL). This value, propagated to any client, is used to authenticate the service. After the client initiates a communication to an endpoint and the service authenticates itself to the client, the client compares the endpoint identity value with the actual value the endpoint authentication process returned. If they match, the client is assured it has contacted the expected service endpoint. This functions as a protection against *phishing* by preventing a client from being redirected to an endpoint hosted by a malicious service.  
   
  For a sample application that demonstrates identity setting, see [Service Identity Sample](../samples/service-identity-sample.md). For more information about endpoints and endpoint addresses, see [Addresses](endpoint-addresses.md).  
@@ -33,6 +34,7 @@ A service's *endpoint identity* is a value generated from the service Web Servic
 > The metadata contains the expected identity of the service, so it is recommended that you expose the service metadata through secure means, for example, by creating an HTTPS endpoint for the service. For more information, see [How to: Secure Metadata Endpoints](how-to-secure-metadata-endpoints.md).  
   
 ## Identity Types  
+
  A service can provide six types of identities. Each identity type corresponds to an element that can be contained inside the `<identity>` element in configuration. The type used depends on the scenario and the service's security requirements. The following table describes each identity type.  
   
 |Identity type|Description|Typical scenario|  
@@ -45,28 +47,34 @@ A service's *endpoint identity* is a value generated from the service Web Servic
 |Service principal name (SPN). The default when the `ClientCredentialType` is set to Windows and the service process is running under one of the system accounts—LocalService, LocalSystem, or NetworkService.|This element specifies the SPN associated with the service's account. See the Kerberos Protocol and Identity section of [Overriding the Identity of a Service for Authentication](../extending/overriding-the-identity-of-a-service-for-authentication.md).|This ensures that the SPN and the specific Windows account associated with the SPN identify the service.<br /><br /> You can use the Setspn.exe tool to associate a machine account for the service's user account.<br /><br /> This setting takes advantage of Windows Kerberos security if the service is running under one of the system accounts or under a domain account that has an associated SPN name with it and the computer is a member of a domain within an Active Directory environment.|  
   
 ## Specifying Identity at the Service  
+
  Typically, you do not have to set the identity on a service because the selection of a client credential type dictates the type of identity exposed in the service metadata. For more information about how to override or specify service identity, see [Overriding the Identity of a Service for Authentication](../extending/overriding-the-identity-of-a-service-for-authentication.md).  
   
 ## Using the \<identity> Element in Configuration  
+
  If you change the client credential type in the binding previously shown to `Certificate,` then the generated WSDL contains a Base64 serialized X.509 certificate for the identity value as shown in the following code. This is the default for all client credential types other than Windows.  
 
  You can change the value of the default service identity or change the type of the identity by using the `<identity>` element in configuration or by setting the identity in code. The following configuration code sets a domain name system (DNS) identity with the value `contoso.com`.  
 
 ## Setting Identity Programmatically  
+
  Your service does not have to explicitly specify an identity, because WCF automatically determines it. However, WCF allows you to specify an identity on an endpoint, if required. The following code adds a new service endpoint with a specific DNS identity.  
   
  [!code-csharp[C_Identity#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_identity/cs/source.cs#5)]
  [!code-vb[C_Identity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_identity/vb/source.vb#5)]  
   
 ## Specifying Identity at the Client  
+
  At design time, a client developer typically uses the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to generate client configuration. The generated configuration file (intended for use by the client) contains the server's identity. For example, the following code is generated from a service that specifies a DNS identity, as shown in the preceding example. Note that the client's endpoint identity value matches that of the service. In this case, when the client receives the Windows (Kerberos) credentials for the service, it expects the value to be `contoso.com`.  
 
  If, instead of Windows, the service specifies a certificate as the client credential type, then the certificate's DNS property is expected to be the value `contoso.com`. (Or if the DNS property is `null`, the certificate's subject name must be `contoso.com`.)  
   
 #### Using a Specific Value for Identity  
+
  The following client configuration file shows how the service's identity is expected to be a specific value. In the following example, the client can communicate with two endpoints. The first is identified with a certificate thumbprint and the second with a certificate RSA key. That is, a certificate that contains only a public key/private key pair, but is not issued by a trusted authority.  
 
 ## Identity Checking at Run Time  
+
  At design time, a client developer determines the server's identity through its metadata. At runtime, the identity check is performed before calling any endpoints on the service.  
   
  The identity value is tied to the type of authentication specified by metadata; in other words, the type of credentials used for the service.  
@@ -92,6 +100,7 @@ A service's *endpoint identity* is a value generated from the service Web Servic
  Specifying the identity programmatically (using the <xref:System.ServiceModel.EndpointAddress.Identity%2A> property) is optional. If no identity is specified, and the client credential type is Windows, the default is SPN with the value set to the hostname part of the service endpoint address prefixed with the "host/" literal. If no identity is specified, and the client credential type is a certificate, the default is `Certificate`. This applies to both message- and transport-level security.  
   
 ## Identity and Custom Bindings  
+
  Because the identity of a service depends on the binding type used, ensure that an appropriate identity is exposed when creating a custom binding. For example, in the following code example, the identity exposed is not compatible with the security type, because the identity for the secure conversation bootstrap binding does not match the identity for the binding on the endpoint. The secure conversation binding sets the DNS identity, while the <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement> sets the UPN or SPN identity.  
   
  [!code-csharp[C_Identity#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_identity/cs/source.cs#8)]

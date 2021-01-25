@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEval2::NewParameterizedObject Method
+
 Instantiates a new parameterized type object and calls the object's constructor method.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT NewParameterizedObject (
 ```  
   
 ## Parameters  
+
  `pConstructor`  
  [in] A pointer to an ICorDebugFunction object that represents the constructor of the object to be instantiated.  
   
@@ -48,9 +50,11 @@ HRESULT NewParameterizedObject (
  [in] An array of pointers, each of which points to an ICorDebugValue object that represents an argument value that is passed to the constructor.  
   
 ## Remarks  
+
  The object's constructor may take <xref:System.Type> parameters.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

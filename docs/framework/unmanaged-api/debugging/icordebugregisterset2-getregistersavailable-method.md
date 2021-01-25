@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugRegisterSet2::GetRegistersAvailable Method
+
 Gets an array of bytes that provides a bitmap of the available registers.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetRegistersAvailable (
 ```  
   
 ## Parameters  
+
  `numChunks`  
  [in] The size of the `availableRegChunks` array.  
   
@@ -36,6 +38,7 @@ HRESULT GetRegistersAvailable (
  [out] An array of bytes, each bit of which corresponds to a register. If a register is available, the register's corresponding bit is set.  
   
 ## Remarks  
+
  The values of the CorDebugRegister enumeration specify the registers of different microprocessors. The upper five bits of each value are the index into the `availableRegChunks` array of bytes. The lower three bits of each value identify the bit position within the indexed byte. Given a `CorDebugRegister` value that specifies a particular register, the register's position in the mask is determined as follows:  
   
 1. Extract the index needed to access the correct byte in the `availableRegChunks` array:  
@@ -47,6 +50,7 @@ HRESULT GetRegistersAvailable (
      `CorDebugRegister` value & 7  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

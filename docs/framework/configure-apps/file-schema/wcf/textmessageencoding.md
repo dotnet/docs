@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e6d834d0-356e-45eb-b530-bbefbb9ec3f0
 ---
 # \<textMessageEncoding>
+
 Specifies the character encoding and message versioning used for text-based XML messages.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -23,6 +24,7 @@ Specifies the character encoding and message versioning used for text-based XML 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,7 +40,7 @@ Specifies the character encoding and message versioning used for text-based XML 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
   
 ### Parent Elements  
   
@@ -47,6 +49,7 @@ Specifies the character encoding and message versioning used for text-based XML 
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. Windows Communication Foundation (WCF) includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
   
  The text encoding represented by the `textMessageEncoding` element is the most interoperable, but the least efficient encoder for XML messages.  The text encoder creates text-based messages on the wire. Messages produced by this encoder are suitable for WS-* based interop. Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is the least efficient method for encoding XML messages.  

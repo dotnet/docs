@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: ef245191-fdab-4468-a0da-7c6f25d2110f
 ---
 # Client: Channel Factories and Channels
+
 This topic discusses the creation of channel factories and channels.  
   
 ## Channel Factories and Channels  
+
  Channel factories are responsible for creating channels. Channels created by channel factories are used for sending messages. These channels are responsible for getting the message from the layer above, performing whatever processing is necessary, then sending the message to the layer below. The following graphic illustrates this process.  
   
  ![Client Factories and Channels](./media/wcfc-wcfchannelsigure2highlevelfactgoriesc.gif "wcfc_WCFChannelsigure2HIghLevelFactgoriesc")  
@@ -27,9 +29,11 @@ A channel factory creates channels.
  The following discussion is based upon the [Transport: UDP](../samples/transport-udp.md) sample.  
   
 ### Creating a Channel Factory  
+
  The `UdpChannelFactory` derives from <xref:System.ServiceModel.Channels.ChannelFactoryBase>. The sample overrides <xref:System.ServiceModel.Channels.ChannelFactoryBase.GetProperty%2A> to provide access to the message version of the message encoder. The sample also overrides <xref:System.ServiceModel.Channels.ChannelFactoryBase.OnClose%2A> to tear down our instance of <xref:System.ServiceModel.Channels.BufferManager> when the state machine transitions.  
   
 #### The UDP Output Channel  
+
  The `UdpOutputChannel` implements <xref:System.ServiceModel.Channels.IOutputChannel>. The constructor validates the arguments and constructs a destination <xref:System.Net.EndPoint> object based on the <xref:System.ServiceModel.EndpointAddress> that is passed in.  
   
  The override of <xref:System.ServiceModel.Channels.CommunicationObject.OnOpen%2A> creates a socket that is used to send messages to this <xref:System.Net.EndPoint>.  

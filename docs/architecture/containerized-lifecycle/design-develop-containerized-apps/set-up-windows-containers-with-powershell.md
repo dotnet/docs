@@ -9,8 +9,8 @@ With [Windows Containers](/virtualization/windowscontainers/about/index), you ca
 
 To use Windows Containers, you just need to write Windows PowerShell commands in the DockerFile, as demonstrated in the following example:
 
-```Dockerfile
-FROM microsoft/windowsservercore
+```dockerfile
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
 LABEL Description="IIS" Vendor="Microsoft" Version="10"
 RUN powershell -Command Add-WindowsFeature Web-Server
 CMD [ "ping", "localhost", "-t" ]
@@ -18,9 +18,9 @@ CMD [ "ping", "localhost", "-t" ]
 
 In this case, we're using Windows PowerShell to install a Windows Server Core base image as well as IIS.
 
-In a similar way, you also could use Windows PowerShell commands to set up additional components like the traditional ASP.NET 4.x and .NET 4.6 or any other Windows software, as shown here:
+In a similar way, you also could use Windows PowerShell commands to set up additional components like the traditional ASP.NET 4.x and .NET Framework 4.6 or any other Windows software, as shown here:
 
-```Dockerfile
+```dockerfile
 RUN powershell add-windowsfeature web-asp-net45
 ```
 

@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: b5d694da-68cb-4b74-a5fb-75108a68ec3b
 ---
 # Enumeration Types in Data Contracts
+
 Enumerations can be expressed in the data contract model. This topic walks through several examples that explain the programming model.  
   
 ## Enumeration Basics  
+
  One way to use enumeration types in the data contract model is to apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the type. You must then apply the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute to each member that must be included in the data contract.  
   
  The following example shows two classes. The first uses the enumeration and the second defines the enumeration.  
@@ -25,6 +27,7 @@ Enumerations can be expressed in the data contract model. This topic walks throu
  You can use the <xref:System.Runtime.Serialization.DataContractAttribute> properties (<xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>) as usual for enumeration data contracts.  
   
 ### Enumeration Member Values  
+
  Generally the data contract includes enumeration member names, not numerical values. However, when using the data contract model, if the receiving side is a WCF client, the exported schema preserves the numerical values. Note that this is not the case when using the [Using the XmlSerializer Class](using-the-xmlserializer-class.md).  
   
  In the preceding example, if `condition` is set to `Used` and the data is serialized to XML, the resulting XML is `<condition>Used</condition>` and not `<condition>1</condition>`. Therefore, the following data contract is equivalent to the data contract of `CarConditionEnum`.  
@@ -43,6 +46,7 @@ Enumerations can be expressed in the data contract model. This topic walks throu
 - Enumeration data members with the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property set to `false` (in which case, the enumeration with the value zero is omitted from the serialized data).  
   
 ### Customizing Enumeration Member Values  
+
  You can customize the enumeration member value that forms a part of the data contract by using the <xref:System.Runtime.Serialization.EnumMemberAttribute.Value%2A> property of the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute.  
   
  For example, the following data contract is also equivalent to the data contract of the `CarConditionEnum`.  
@@ -53,6 +57,7 @@ Enumerations can be expressed in the data contract model. This topic walks throu
  When serialized, the value of `PreviouslyOwned` has the XML representation `<condition>Used</condition>`.  
   
 ## Simple Enumerations  
+
  You can also serialize enumeration types to which the <xref:System.Runtime.Serialization.DataContractAttribute> attribute has not been applied. Such enumeration types are treated exactly as previously described, except that every member (that does not have the <xref:System.NonSerializedAttribute> attribute applied) is treated as if the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute has been applied. For example, the following enumeration implicitly has a data contract equivalent to the preceding `CarConditionEnum` example.  
   
  [!code-csharp[c_DataContractEnumerations#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontractenumerations/cs/source.cs#6)]
@@ -61,6 +66,7 @@ Enumerations can be expressed in the data contract model. This topic walks throu
  You can use simple enumerations when you do not need to customize the enumeration's data contract name and namespace and the enumeration member values.  
   
 #### Notes on Simple Enumerations  
+
  Applying the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute to simple enumerations has no effect.  
   
  It makes no difference whether or not the <xref:System.SerializableAttribute> attribute is applied to the enumeration.  
@@ -68,6 +74,7 @@ Enumerations can be expressed in the data contract model. This topic walks throu
  The fact that the <xref:System.Runtime.Serialization.DataContractSerializer> class honors the <xref:System.NonSerializedAttribute> attribute applied to enumeration members is different from the behavior of the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>. Both of those serializers ignore the <xref:System.NonSerializedAttribute> attribute.  
   
 ## Flag Enumerations  
+
  You can apply the <xref:System.FlagsAttribute> attribute to enumerations. In that case, a list of zero or more enumeration values can be sent or received simultaneously.  
   
  To do so, apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the flag enumeration and then mark all the members that are powers of two with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute. Note that to use a flag enumeration, the progression must be an uninterrupted sequence of powers of 2 (for example, 1, 2, 4, 8, 16, 32, 64).  
@@ -81,6 +88,7 @@ Enumerations can be expressed in the data contract model. This topic walks throu
 3. If the preceding two steps fail, and the numeric value is nonzero, throw a <xref:System.Runtime.Serialization.SerializationException>. If the numeric value is zero, send the empty list.  
   
 ### Example  
+
  The following enumeration example can be used in a flag operation.  
   
  [!code-csharp[c_DataContractEnumerations#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontractenumerations/cs/source.cs#4)]

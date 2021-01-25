@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 51adbda3-bd8b-4892-a8ea-d343186472d2
 ---
 # Tracking Records
+
 The workflow runtime is instrumented to emit tracking records to follow the execution of a workflow instance.  
   
 ## Tracking Records  
+
  The following table details the tracking records that the workflow runtime emits.  
   
 |Tracking record|Description|  
@@ -56,5 +58,5 @@ The workflow runtime is instrumented to emit tracking records to follow the exec
   
 ## See also
 
-- [Windows Server App Fabric Monitoring](https://docs.microsoft.com/previous-versions/appfabric/ee677251(v=azure.10))
-- [Monitoring Applications with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677276(v=azure.10))
+- [Windows Server App Fabric Monitoring](/previous-versions/appfabric/ee677251(v=azure.10))
+- [Monitoring Applications with App Fabric](/previous-versions/appfabric/ee677276(v=azure.10))

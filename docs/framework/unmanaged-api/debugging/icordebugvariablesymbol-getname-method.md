@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c922b7d4-44e5-45e4-aef3-cc9c35a0be80
 ---
 # ICorDebugVariableSymbol::GetName Method
+
 Gets the name of a variable.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT GetName(
 ```  
   
 ## Parameters  
+
  `cchName`  
  [in] The number of characters in the `szName` buffer.  
   
@@ -32,6 +34,7 @@ HRESULT GetName(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -10,10 +10,8 @@ namespace SystemTextJsonSamples
     public class JsonConverterFactoryForStackOfT : JsonConverterFactory
     {
         public override bool CanConvert(Type typeToConvert)
-        {
-            return typeToConvert.IsGenericType &&
-                typeToConvert.GetGenericTypeDefinition() == typeof(Stack<>);
-        }
+            => typeToConvert.IsGenericType
+            && typeToConvert.GetGenericTypeDefinition() == typeof(Stack<>);
 
         public override JsonConverter CreateConverter(
             Type typeToConvert, JsonSerializerOptions options)
@@ -40,10 +38,11 @@ namespace SystemTextJsonSamples
         public override Stack<T> Read(
             ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
-            if (reader.TokenType != JsonTokenType.StartArray || !reader.Read())
+            if (reader.TokenType != JsonTokenType.StartArray)
             {
                 throw new JsonException();
             }
+            reader.Read();
 
             var elements = new Stack<T>();
 
@@ -51,10 +50,7 @@ namespace SystemTextJsonSamples
             {
                 elements.Push(JsonSerializer.Deserialize<T>(ref reader, options));
 
-                if (!reader.Read())
-                {
-                    throw new JsonException();
-                }
+                reader.Read();
             }
 
             return elements;

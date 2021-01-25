@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0d3cff1a-97e6-4b6c-be18-108c6881bfc0
 ---
 # 1126 - InvokedMethodThrewException
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 0d3cff1a-97e6-4b6c-be18-108c6881bfc0
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates an exception was thrown by the method called by the InvokeMethod activity.  
   
 ## Message  
+
  An exception was thrown in the method called by the activity '%1'. %2  
   
 ## Details  

@@ -1,7 +1,7 @@
 ---
 description: "new operator - C# reference"
 title: "new operator - C# reference"
-ms.date: 06/25/2019
+ms.date: 10/02/2020
 f1_keywords:
  - new_CSharpKeyword
 helpviewer_keywords: 
@@ -23,6 +23,14 @@ To create a new instance of a type, you typically invoke one of the [constructor
 You can use an [object or collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) with the `new` operator to instantiate and initialize an object in one statement, as the following example shows:
 
 [!code-csharp-interactive[constructor with initializer](snippets/shared/NewOperator.cs#ConstructorWithInitializer)]
+
+Beginning with C# 9.0, constructor invocation expressions are target-typed. That is, if a target type of an expression is known, you can omit a type name, as the following example shows:
+
+:::code language="csharp" source="snippets/shared/NewOperator.cs" id="SnippetTargetTyped":::
+
+As the preceding example shows, you always use parentheses in a target-typed `new` expression.
+
+If a target type of a `new` expression is unknown (for example, when you use the [`var`](../keywords/var.md) keyword), you must specify a type name.
 
 ## Array creation
 
@@ -55,6 +63,8 @@ A user-defined type cannot overload the `new` operator.
 ## C# language specification
 
 For more information, see [The new operator](~/_csharplang/spec/expressions.md#the-new-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+
+For more information about a target-typed `new` expression, see the [feature proposal note](~/_csharplang/proposals/csharp-9.0/target-typed-new.md).
 
 ## See also
 

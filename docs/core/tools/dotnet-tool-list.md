@@ -1,6 +1,6 @@
 ---
 title: dotnet tool list command
-description: The dotnet tool list command lists the .NET Core tools that are installed on your machine.
+description: The dotnet tool list command lists the .NET tools that are installed on your machine.
 ms.date: 02/14/2020
 ---
 # dotnet tool list
@@ -9,7 +9,7 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet tool list` - Lists all [.NET Core tools](global-tools.md) of the specified type currently installed on your machine.
+`dotnet tool list` - Lists all [.NET tools](global-tools.md) of the specified type currently installed on your machine.
 
 ## Synopsis
 
@@ -27,7 +27,7 @@ dotnet tool list -h|--help
 
 ## Description
 
-The `dotnet tool list` command provides a way for you to list all .NET Core global, tool-path, or local tools installed on your machine. The command lists the package name, version installed, and the tool command.  To use the command, you specify one of the following:
+The `dotnet tool list` command provides a way for you to list all .NET global, tool-path, or local tools installed on your machine. The command lists the package name, version installed, and the tool command.  To use the command, you specify one of the following:
 
 * To list global tools installed in the default location, use the `--global` option
 * To list global tools installed in a custom location, use the `--tool-path` option.
@@ -73,6 +73,6 @@ The `dotnet tool list` command provides a way for you to list all .NET Core glob
 
 ## See also
 
-- [.NET Core tools](global-tools.md)
-- [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
-- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)
+- [.NET tools](global-tools.md)
+- [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)

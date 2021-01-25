@@ -57,11 +57,13 @@ The following XML namespaces and associated prefixes are used throughout this to
 ## SOAP 1.1 and SOAP 1.2
 
 ### Envelope and Processing Model
+
 WCF implements SOAP 1.1 envelope processing following Basic Profile 1.1 (BP11) and Basic Profile 1.0 (SSBP10). SOAP 1.2 Envelope processing is implemented following SOAP12-Part1.
 
 This section explains certain implementation choices taken by WCF with regard to BP11 and SOAP12-Part1.
 
 #### Mandatory Header Processing
+
 WCF follows rules for processing headers marked `mustUnderstand` described in the SOAP 1.1 and SOAP 1.2 specifications, with the following variations.
 
 A message that enters the WCF channel stack is processed by individual channels configured by associated binding elements, for example, Text Message Encoding, Security, Reliable Messaging, and Transactions. Each channel recognizes headers from the associated namespace and marks them as understood. Once a message enters the dispatcher, the operation formatter reads headers expected by the corresponding message/operation contract and marks them understood. Then the dispatcher verifies whether any remaining headers are not understood but marked as `mustUnderstand` and throws an exception. Messages that contain `mustUnderstand` headers that are targeted at the recipient are not processed by recipient application code.
@@ -75,6 +77,7 @@ Such layered processing allows for separation between infrastructure layers and 
 - B1112: WCF emits `mustUnderstand` values 0 and 1 for both SOAP 1.1 and SOAP 1.2 versions of the SOAP envelope. WCF accepts the entire value space of `xs:boolean` for the `mustUnderstand` header (0, 1, `false`, `true`)
 
 #### SOAP Faults
+
 The following is a list of WCF-specific SOAP fault implementations.
 
 - B2121: WCF returns the following SOAP 1.1 Fault Codes: `s11:mustUnderstand`, `s11:Client`, and `s11:Server`.
@@ -84,6 +87,7 @@ The following is a list of WCF-specific SOAP fault implementations.
 ### HTTP Binding
 
 #### SOAP 1.1 HTTP Binding
+
 WCF implements SOAP1.1 HTTP binding following the Basic Profile 1.1 specification section 3.4 with the following clarifications:
 
 - B2211: WCF service does not implement redirection of HTTP POST requests.
@@ -91,6 +95,7 @@ WCF implements SOAP1.1 HTTP binding following the Basic Profile 1.1 specificatio
 - B2212: WCF clients support HTTP Cookies in accordance with 3.4.8.
 
 #### SOAP 1.2 HTTP Binding
+
 WCF implements SOAP 1.2 HTTP binding as described in the SOAP 1.2-part 2 (SOAP12Part2) specification with the following clarifications.
 
 SOAP 1.2 introduced an optional action parameter for the `application/soap+xml` media type. This parameter is useful to optimize message dispatch without requiring that the body of the SOAP message be parsed when WS-Addressing is not used.
@@ -102,6 +107,7 @@ SOAP 1.2 introduced an optional action parameter for the `application/soap+xml` 
 When WS-Addressing is disabled and an incoming request does not contain an action parameter, message `Action` is considered not specified.
 
 ## WS-Addressing
+
 WCF implements 3 versions of WS-Addressing:
 
 - WS-Addressing 2004/08
@@ -111,9 +117,11 @@ WCF implements 3 versions of WS-Addressing:
 - WS-Addressing 1.0 - Metadata
 
 ### Endpoint References
+
 All versions of WS-Addressing that WCF implements use endpoint references to describe endpoints.
 
 #### Endpoint References and WS-Addressing Versions
+
 WCF implements a number of the infrastructure protocols that use WS-Addressing and in particular the `EndpointReference` element and `W3C.WsAddressing.EndpointReferenceType` class (for example, WS-ReliableMessaging, WS-SecureConversation, and WS-Trust). WCF supports the use of either version of WS-Addressing with other infrastructure protocols. WCF endpoints support one version of WS-Addressing per endpoint.
 
 For R3111, the namespace for the `EndpointReference` element or type used in messages exchanged with a WCF endpoint must match the version of WS-Addressing implemented by this endpoint.
@@ -121,6 +129,7 @@ For R3111, the namespace for the `EndpointReference` element or type used in mes
 For example, if a WCF endpoint implements WS-ReliableMessaging, the `AcksTo` header returned by such an endpoint inside `CreateSequenceResponse` uses the WS-Addressing version that the `EncodingBinding` element specifies for this endpoint.
 
 #### Endpoint References and Metadata
+
 A number of scenarios require communicating metadata or a reference to metadata for a given endpoint.
 
 B3121: WCF employs mechanisms described in the WS-MetadataExchange (MEX) specification Section 6 to include metadata for endpoint references by value or by reference.
@@ -151,6 +160,7 @@ Consider a scenario where a WCF service requires authentication using a Security
 ### Message Addressing Headers
 
 #### Message Headers
+
 For both WS-Addressing versions, WCF uses the following message headers as prescribed by the specifications `wsa:To`, `wsa:ReplyTo`, `wsa:Action`, `wsa:MessageID`,and `wsa:RelatesTo`.
 
 B3211: For all WS-Addressing versions, WCF honors, but does not produce out of the box, WS-Addressing message headers `wsa:FaultTo` and `wsa:From`.
@@ -164,11 +174,13 @@ WCF implements processing of endpoint reference parameters and reference propert
 B3221: When configured to use WS-Addressing 2004/08, WCF endpoints do not differentiate between processing Reference Properties and Reference Parameters.
 
 ### Message Exchange Patterns
+
 The sequence of messages involved in the Web service operation invocation is referred to as the *message exchange pattern*. WCF supports one-way, request-reply, and duplex message exchange patterns. This section clarifies WS-Addressing requirements on message processing depending on the message exchange pattern being used.
 
 Throughout this section, the requester sends the first message and the responder receives the first message.
 
 #### One-Way Message
+
 When a WCF endpoint is configured to support messages with a given `Action` to follow a one-way pattern, the WCF endpoint follows the following behaviors and requirements. Unless otherwise specified, behaviors and rules apply for both versions of WS-Addressing supported in WCF:
 
 - R3311: The requester must include `wsa:To`, `wsa:Action`, and headers for all reference parameters specified by the endpoint reference. When WS-Addressing 2004/08 is used and [reference properties] are specified by the endpoint reference, the corresponding headers must be added to the message too.
@@ -182,6 +194,7 @@ When a WCF endpoint is configured to support messages with a given `Action` to f
 - B3314: The WCF responder does not send a fault message in response to a one-way message.
 
 #### Request-Reply
+
 When a WCF endpoint is configured for a message with a given `Action` to follow the request-reply pattern, the WCF endpoint follows the behaviors and requirements below. Unless specified otherwise, behaviors and rules apply for both versions of WS-Addressing supported in WCF:
 
 - R3321: The requester must include in the request `wsa:To`, `wsa:Action`, `wsa:MessageID`, and headers for all reference parameters or reference properties (or both) specified by the endpoint reference.
@@ -193,6 +206,7 @@ When a WCF endpoint is configured for a message with a given `Action` to follow 
 - R3324: The requester must include `wsa:To`, `wsa:Action`, and `wsa:RelatesTo` headers in the reply message, as well as headers for all reference parameters or reference properties (or both) specified by the `ReplyTo` endpoint reference in the request.
 
 ### Web Services Addressing Faults
+
 R3411: WCF produces the following faults defined by WS-Addressing 2004/08.
 
 | Code | Cause |
@@ -215,6 +229,7 @@ Code in the preceding tables maps to `FaultCode` in SOAP 1.1 and `SubCode` (with
 ### WSDL 1.1 Binding and WS-Policy Assertions
 
 #### Indicating Use of WS-Addressing
+
 WCF uses policy assertions to indicate endpoint support for a particular WS-Addressing version.
 
 The following policy assertion has Endpoint Policy Subject [WS-PA] and indicates messages sent and received from the endpoint must use WS-Addressing 2004/08.
@@ -294,6 +309,7 @@ The previous statement leads to the following requirements on the `wsa:ReplyTo` 
 The WS-addressing WSDL specification attempts to describe similar protocol bindings by introducing an element `<wsaw:Anonymous/>` with three textual values (required, optional, and prohibited) to indicate requirements on the `wsa:ReplyTo` header (section 3.2). Unfortunately, such element definition is not particularly usable as an assertion in the context of WS-Policy, because it requires domain-specific extensions to support the intersection of alternatives using such an element as an assertion. Such element definition also indicates the value of the `ReplyTo` header as opposed to the endpoint behavior on the wire, which makes it specific to HTTP transport.
 
 #### Action Definition
+
 WS-Addressing 2004/08 defines a `wsa:Action` attribute for the `wsdl:portType/wsdl:operation/[wsdl:input | wsdl:output | wsdl:fault]` elements. WS-Addressing 1.0 WSDL Binding (WS-ADDR10-WSDL) defines a similar attribute, `wsaw10:Action`.
 
 The only difference between the two is the default Action pattern semantics described in section 3.3.2 of WS-ADDR and section 4.4.4 of WS-ADDR10-WSDL, respectively.
@@ -305,6 +321,7 @@ To resolve this controversy, WCF supports a single version of the `Action` attri
 B3521: WCF uses the `wsaw10:Action` attribute on `wsdl:portType/wsdl:operation/[wsdl:input | wsdl:output | wsdl:fault]` elements as defined in WS-ADDR10-WSDL to determine the `Action` URI for the corresponding messages irrespective of the WS-Addressing version used by the endpoint.
 
 #### Use Endpoint Reference Inside WSDL Port
+
 WS-ADDR10-WSDL section 4.1 extends the `wsdl:port` element to include the `<wsa10:EndpointReference…/>` child element to describe the endpoint in WS-Addressing terms. WCF expands this utility on WS-Addressing 2004/08, allowing `<wsa:EndpointReference…/>` to appear as a child element of `wsdl:port`.
 
 - R3531: If an endpoint has an attached policy alternative with a `<wsaw10:UsingAddressing/>` policy assertion, the corresponding `wsdl:port` element can contain a child element `<wsa10:EndpointReference …/>`.
@@ -316,6 +333,7 @@ WS-ADDR10-WSDL section 4.1 extends the `wsdl:port` element to include the `<wsa1
 - R3534: If a `wsdl:port` contains a child element `<wsa:EndpointReference …/>`, the `wsa:EndpointReference/wsa:Address` child element value must match the value of the `@address` attribute of the sibling `wsdl:port`/`wsdl:location` element.
 
 ### Composition with WS-Security
+
 According to security consideration sections in WS-ADDR and WS-ADDR10, all addressing message headers are recommended to be signed together with the message body to bind them together.
 
 When WS-Security is used for message integrity protection, WS-Addressing message headers as well as headers resulted from reference parameters or properties (or both) must be signed together with the body of the message.
@@ -323,6 +341,7 @@ When WS-Security is used for message integrity protection, WS-Addressing message
 ### Examples
 
 #### One-Way Message
+
 In this scenario, the sender sends a one-way message to the receiver. SOAP 1.2, HTTP 1.1, and W3C WS-Addressing 1.0 are used.
 
 The Request Message Structure: The message headers include `wsa10:To` and `wsa10:Action` elements. The message body includes a specific `<app:Ping>` element from the application namespace.
@@ -370,6 +389,7 @@ Content-Length: 0
 ```
 
 ## SOAP Message Transmission Optimization Mechanism
+
 This section describes the WCF implementation details for the HTTP SOAP MTOM. MTOM technology is SOAP message encoding mechanism of the same class as traditional text/XML encoding or WCF Binary encoding. MTOM includes the following:
 
 - An XML encoding and packaging mechanism described by [XOP] that optimizes XML information items containing base64-encoded binary data into separate binary parts.
@@ -387,6 +407,7 @@ The MTOM format leverages a large set of specifications covering MTOM itself, XO
 ### MTOM Message Encoding
 
 #### Generating MTOM messages
+
 The [XOP] section 3.1 describes the process of encoding XML with element information items that contain base64 values into an abstractly defined XOP package.
 
 The following sequence of steps describes the MTOM-specific encoding process:
@@ -423,6 +444,7 @@ The following sequence of steps describes the MTOM-specific encoding process:
 7. Write the MIME package.
 
 #### Processing MTOM messages
+
 Processing of an MTOM message is the exact reverse of the process described in the preceding "Generating MTOM messages" section:
 
 1. Ensure the root MIME part has the Content-Type `application/xop+xml`.
@@ -438,6 +460,7 @@ Processing of an MTOM message is the exact reverse of the process described in t
     3. Replace the `xop:Include` element information item that appears in the `children` property of each item with the character information items that represent the canonical base64 encoding (see XSD-2, 3.2.16 base64Binary) of the entity body of the MIME part identified in step 3b (effectively replace the `xop:Include` element information item with the data reconstructed from the package part).
 
 #### HTTP Content-Type Header
+
 The following is a list of WCF clarifications for the format of the HTTP Content-Type header of a SOAP 1.x MTOM-encoded message derived from requirements stated in the MTOM specification itself and are derived from MTOM and RFC 2387.
 
 - R4131: An HTTP Content-Type header must have the value of multipart/related (case-insensitive) and its parameters. Parameter names are case-insensitive. Parameter order is not significant.
@@ -484,6 +507,7 @@ While the requirement to use double quotation marks is not explicit in RFC 2387,
     ```
 
 #### Infoset MIME Part
+
 The SOAP 1.x Envelope is encapsulated as a root part of the XOP MIME package and is often called the `infoset` part.
 
 - R4141: The SOAP 1.x Envelope must be encapsulated as a root part of the XOP MIME package, called the `infoset` part and referenced from the HTTP Content-Type.
@@ -548,6 +572,7 @@ MIME (RFC 2045) provides the Content-Transfer-Encoding header to communicate enc
 - R41410: The `type` and `charset` parameters must be present on the Content-Type header of the SOAP 1.x Infoset part.
 
 #### WCF Endpoint Support for MTOM
+
 The purpose of MTOM is to encode a SOAP message to optimize base64-encoded data. The following is a list of constraints:
 
 - R4151: Any element information item that contains base64-encoded data may be optimized.
@@ -557,6 +582,7 @@ The purpose of MTOM is to encode a SOAP message to optimize base64-encoded data.
 A WCF endpoint configured to use MTOM will always send MTOM-encoded messages. Even if no parts meet the required criteria, the message is still MTOM-encoded (serialized as a MIME package with a single MIME part containing the SOAP envelope).
 
 ### WS-Policy Assertion for MTOM
+
 WCF uses the following policy assertion to indicate MTOM usage by endpoint:
 
 ```xml
@@ -568,6 +594,7 @@ WCF uses the following policy assertion to indicate MTOM usage by endpoint:
 - B4212: When configured to use MTOM optimization, an WCF endpoint adds an MTOM Policy assertion to the policy attached to the corresponding `wsdl:binding`.
 
 ### Composition with WS-Security
+
 MTOM is an encoding mechanism that is similar to `text/xml` and WCF Binary XML. MTOM offers natural composition with WS-Security and other WS-* protocols: a message secured using WS-Security can be optimized using MTOM.
 
 ### Examples
@@ -606,6 +633,7 @@ Content-Type: application/octet-stream
 ```
 
 #### WCF Secure SOAP 1.2 Message Encoded Using MTOM
+
 In this example, a message is encoded using MTOM and SOAP 1.2 that is protected using WS-Security. The binary parts identified for encoding are the contents of the `BinarySecurityToken`, `CipherValue` of the `EncryptedData` corresponding to the encrypted signature and encrypted body. Note that the `CipherValue` of the `EncryptedKey` was not identified for optimization by WCF, because its length is less then 1024 bytes.
 
 ```http

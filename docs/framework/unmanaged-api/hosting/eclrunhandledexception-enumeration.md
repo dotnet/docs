@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # EClrUnhandledException Enumeration
+
 Describes the available options for managing exceptions that are unhandled in user code.  
   
 ## Syntax  
@@ -35,9 +36,11 @@ typedef enum {
 |`eHostDeterminedPolicy`|Specifies that the common language runtime (CLR) ignores unhandled exceptions and lets the host determine any further action.|  
   
 ## Remarks  
+
  To specify that the CLR behave like earlier versions, use the `eHostDeterminedPolicy` member.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

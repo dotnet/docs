@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9c8d6c90-dfa5-4ae0-a589-96679a8fb3ba
 ---
 # 205 - OperationInvoked
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 9c8d6c90-dfa5-4ae0-a589-96679a8fb3ba
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted just before the Service Model's default `OperationInvoker` begins a call to a method.  
   
 ## Message  
+
  An OperationInvoker invoked the '%1' method. Caller information: '%2'.  
   
 ## Details  

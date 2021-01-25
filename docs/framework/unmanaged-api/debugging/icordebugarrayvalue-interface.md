@@ -33,12 +33,14 @@ A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-d
 |[HasBaseIndicies Method](icordebugarrayvalue-hasbaseindicies-method.md)|Determines whether the array has base indexes.|  
   
 ## Remarks  
+
  `ICorDebugArrayValue` supports both single-dimensional and multi-dimensional arrays.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

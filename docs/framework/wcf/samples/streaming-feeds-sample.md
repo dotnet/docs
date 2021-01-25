@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1f1228c0-daaa-45f0-b93e-c4a158113744
 ---
 # Streaming Feeds Sample
+
 This sample demonstrates how to manage syndication feeds that contain large numbers of items. On the server, the sample demonstrates how to delay the creation of individual <xref:System.ServiceModel.Syndication.SyndicationItem> objects within the feed until immediately before the item is written to the network stream.  
   
  On the client, the sample shows how a custom syndication feed formatter can be used to read individual items from the network stream so that the feed being read is never fully buffered into memory.  
@@ -13,6 +14,7 @@ This sample demonstrates how to manage syndication feeds that contain large numb
  The demonstration makes use of Visual C# iterators (using the `yield return` keyword construct). For more information about iterators, see the "Using Iterators" topic on MSDN.  
   
 ## Service  
+
  The service implements a basic <xref:System.ServiceModel.Web.WebGetAttribute> contract that consists of one operation, as shown in the following code.  
   
 ```csharp  
@@ -62,6 +64,7 @@ public Atom10FeedFormatter StreamedFeed()
  As a result, the item stream is never fully buffered into memory. You can observe this behavior by setting a breakpoint on the `yield return` statement inside of the `ItemGenerator.GenerateItems()` method and noting that this breakpoint is encountered for the first time after the service has returned the result of the `StreamedFeed()` method.  
   
 ## Client  
+
  The client in this sample uses a custom <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> implementation that delays the materialization of individual items in the feed instead of buffering them into memory. The custom `StreamedAtom10FeedFormatter` instance is used as follows.  
   
 ```csharp  

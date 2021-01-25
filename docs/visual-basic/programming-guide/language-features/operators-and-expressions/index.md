@@ -12,11 +12,13 @@ helpviewer_keywords:
 ms.assetid: b86f3131-94ee-448f-96cd-79611e028b26
 ---
 # Operators and Expressions in Visual Basic
+
 An *operator* is a code element that performs an operation on one or more code elements that hold values. Value elements include variables, constants, literals, properties, returns from `Function` and `Operator` procedures, and expressions.  
   
  An *expression* is a series of value elements combined with operators, which yields a new value. The operators act on the value elements by performing calculations, comparisons, or other operations.  
   
 ## Types of Operators  
+
  Visual Basic provides the following types of operators:  
   
 - [Arithmetic Operators](arithmetic-operators.md) perform familiar calculations on numeric values, including shifting their bit patterns.  
@@ -30,6 +32,7 @@ An *operator* is a code element that performs an operation on one or more code e
  The value elements that are combined with an operator are called *operands* of that operator. Operators combined with value elements form expressions, except for the assignment operator, which forms a *statement*. For more information, see [Statements](../statements.md).  
   
 ## Evaluation of Expressions  
+
  The end result of an expression represents a value, which is typically of a familiar data type such as `Boolean`, `String`, or a numeric type.  
   
  The following are examples of expressions.  

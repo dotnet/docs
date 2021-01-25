@@ -17,7 +17,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
  To configure a port, the tool you use depends on the operating system that is running on your machine.  
   
- If you are running Windows Server 2003, use the HttpCfg.exe tool. On Windows Server 2003, this tool is installed. For more information, see [Httpcfg Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). The [Windows Support Tools documentation](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) explains the syntax for the Httpcfg.exe tool.  
+ If you are running Windows Server 2003, use the HttpCfg.exe tool. On Windows Server 2003, this tool is installed. For more information, see [Httpcfg Overview](/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). The [Windows Support Tools documentation](/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) explains the syntax for the Httpcfg.exe tool.  
   
  If you are running Windows Vista, use the Netsh.exe tool that is already installed.
   

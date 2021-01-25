@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
 ---
 # \<socket> Element (Network Settings)
+
 Specifies whether socket operations use completion ports.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Specifies whether socket operations use completion ports.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -39,6 +41,7 @@ Specifies whether socket operations use completion ports.
 |`ipProtectionLevel`|Specifies the default <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType> to use for a socket. The default value depends on the version of Windows.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -48,6 +51,7 @@ Specifies whether socket operations use completion ports.
 |[settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
+
  The `alwaysUseCompletionPortsForAccept` and `alwaysUseCompletionPortsForConnect` attributes are used to specify the default behavior regarding the use of completion ports by the classes in the <xref:System.Net.Sockets?displayProperty=nameWithType>.namespace. Completion ports are recommended for high performance server applications.  
   
  The default value for the `alwaysUseCompletionPortsForAccept` and `alwaysUseCompletionPortsForConnect` attributes is **false**.  
@@ -78,9 +82,11 @@ Specifies whether socket operations use completion ports.
  The <xref:System.Net.Configuration.SocketElement.IPProtectionLevel%2A> property can be used to get the current value of the `ipProtectionLevel` attribute from applicable configuration files.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example shows how to specify that completion ports should be used and that the default <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType> should be unrestricted.  
   
 ```xml  

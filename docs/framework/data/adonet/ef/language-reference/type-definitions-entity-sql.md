@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 306b204a-ade5-47ef-95b5-c785d2da4a7e
 ---
 # Type Definitions (Entity SQL)
+
 A type definition is used in the declaration statement of an [!INCLUDE[esql](../../../../../../includes/esql-md.md)] Inline function.  
   
 ## Remarks  
+
  The declaration statement for an inline function consists of the [FUNCTION](function-entity-sql.md) keyword followed by the identifier representing the function name (for example, "MyAvg") followed by a parameter definition list in parenthesis (for example, "dues Collection(Decimal)").  
   
  The parameter definition list consists of zero or more parameter definitions. Each parameter definition consists of an identifier (the name of the parameter to the function, for example, "dues") followed by a type definition (for example, "Collection(Decimal)").  
@@ -40,6 +42,7 @@ A type definition is used in the declaration statement of an [!INCLUDE[esql](../
  Supported entity types refer to only entity types in the current namespace. They do not include primitive types.  
   
 ## Examples  
+
  The following is an example of a simple type definition.  
   
 ```sql  

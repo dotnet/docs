@@ -2,7 +2,7 @@
 title: "Version compatibility in .NET Framework"
 description: Learn about compatibility between versions of .NET Framework, including backward compatibility and side-by-side execution.
 ms.date: "04/02/2019"
-helpviewer_keywords: 
+helpviewer_keywords:
   - ".NET Framework, version compatibility"
   - ".NET Framework, compatibility with earlier versions"
   - ".NET Framework versions, compatibility"
@@ -47,15 +47,15 @@ If your app or component doesn't work as expected on the .NET Framework 4.5 (inc
 
 - If you have a .NET Framework 3.5 app, also see [.NET Framework 4 Migration Issues](net-framework-4-migration-issues.md).
 
-- If you have a .NET Framework 2.0 app, also see [Changes in .NET Framework 3.5 SP1](https://docs.microsoft.com/previous-versions/dotnet/articles/dd310284(v=msdn.10)).
+- If you have a .NET Framework 2.0 app, also see [Changes in .NET Framework 3.5 SP1](/previous-versions/dotnet/articles/dd310284(v=msdn.10)).
 
-- If you have a .NET Framework 1.1 app, also see [Changes in .NET Framework 2.0](https://docs.microsoft.com/previous-versions/aa570326(v=msdn.10)).
+- If you have a .NET Framework 1.1 app, also see [Changes in .NET Framework 2.0](/previous-versions/aa570326(v=msdn.10)).
 
 - If you're recompiling existing source code to run on the .NET Framework 4.5 or its point releases, or if you're developing a new version of an app or component that targets the .NET Framework 4.5 or its point releases from an existing source code base, check [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md) for obsolete types and members, and apply the workaround described. (Previously compiled code will continue to run against types and members that have been marked as obsolete.)
 
 - If you determine that a change in the .NET Framework 4.5 has broken your app, check the [Runtime Settings Schema](../configure-apps/file-schema/runtime/index.md), and particularly the [\<AppContextSwitchOverrides> Element](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md), to determine whether you can use a runtime setting in your app's configuration file to restore the previous behavior.
 
-- If you come across an issue that isn't documented, open a problem on the [Developer Community site for .NET](https://developercommunity.visualstudio.com/spaces/61/index.html) or open an issue in the [Microsoft/dotnet GitHub repo](https://github.com/microsoft/dotnet/issues).
+- If you come across an issue that isn't documented, open a problem on the [Developer Community site for .NET](https://aka.ms/feedback/report?space=61) or open an issue in the [Microsoft/dotnet GitHub repo](https://github.com/microsoft/dotnet/issues).
 
 ## Side-by-side execution
 

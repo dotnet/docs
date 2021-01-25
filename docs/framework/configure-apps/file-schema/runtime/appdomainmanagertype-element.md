@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
 ---
 # \<appDomainManagerType> Element
+
 Specifies the type that serves as the application domain manager for the default application domain.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,6 +22,7 @@ Specifies the type that serves as the application domain manager for the default
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -30,6 +32,7 @@ Specifies the type that serves as the application domain manager for the default
 |`value`|Required attribute. Specifies the name of the type, including the namespace, that serves as the application domain manager for the default application domain in the process.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -40,6 +43,7 @@ Specifies the type that serves as the application domain manager for the default
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  To specify the type of the application domain manager, you must specify both this element and the [\<appDomainManagerAssembly>](appdomainmanagerassembly-element.md) element. If either of these elements is not specified, the other is ignored.  
   
  When the default application domain is loaded, <xref:System.TypeLoadException> is thrown if the specified type does not exist in the assembly that is specified by the [\<appDomainManagerAssembly>](appdomainmanagerassembly-element.md) element; and the process fails to start.  
@@ -53,6 +57,7 @@ Specifies the type that serves as the application domain manager for the default
  This configuration element is available only in the .NET Framework 4 and later.  
   
 ## Example  
+
  The following example shows how to specify that the application domain manager for the default application domain of a process is the `MyMgr` type in the `AdMgrExample` assembly.  
   
 ```xml  

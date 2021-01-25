@@ -53,7 +53,8 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"Got property value: {reader.GetString()}");
         }
 
-        private static void GetMoreBytesFromStream(MemoryStream stream, ref byte[] buffer, ref Utf8JsonReader reader)
+        private static void GetMoreBytesFromStream(
+            MemoryStream stream, ref byte[] buffer, ref Utf8JsonReader reader)
         {
             int bytesRead;
             if (reader.BytesConsumed < buffer.Length)

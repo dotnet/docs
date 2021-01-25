@@ -13,3 +13,15 @@ See [Mitigation: Deserialization of Objects Across App Domains](~/docs/framework
 | Scope   |Edge|
 |Version|4.5.1|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

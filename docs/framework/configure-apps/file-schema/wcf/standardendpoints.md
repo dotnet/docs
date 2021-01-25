@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d62153d7-a6e6-462a-a784-cca61e9c2ba1
 ---
 # \<standardEndpoints>
+
 This configuration section allows you to define a collection of standard endpoints, which are reusable preconfigured endpoints. A standard endpoint will have one or more of the address, binding and contract attributes set to a fixed value. For example, in the discovery endpoint the contract is fixed. You can also use standard endpoints to extend service endpoint with new properties similar to defining custom bindings.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,9 +21,11 @@ This configuration section allows you to define a collection of standard endpoin
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

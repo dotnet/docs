@@ -12,12 +12,14 @@ Each version of .NET Framework contains the common language runtime (CLR), the b
 
 Each new version of .NET Framework adds new features but retains features from previous versions.
 
+[!INCLUDE [net-framework-future](../../../includes/net-framework-future.md)]
+
 The CLR is identified by its own version number. The .NET Framework version number is incremented at each release, but the CLR version is not always incremented. For example, .NET Framework 4, 4.5, and later releases include CLR 4, but .NET Framework 2.0, 3.0, and 3.5 include CLR 2.0. (There was no version 3 of the CLR.)
 
 > [!TIP]
 >
 > - For a complete list of supported operating systems, see [System requirements](../get-started/system-requirements.md).
-> - For downloads, see [Install the .NET Framework for developers](../install/guide-for-developers.md).
+> - For downloads, see [Install .NET Framework for developers](../install/guide-for-developers.md).
 > - For information about determining which versions of .NET Framework are installed on a computer, see [How to determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md).
 
 ## Version information
@@ -169,7 +171,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 4
 
-[New features](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
+[New features](/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
 
 |||
 |-|-|
@@ -181,7 +183,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 3.5
 
-[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\)):
+[New features](/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\)):
 
 - LINQ
 - Expression trees
@@ -202,7 +204,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 3.0
 
-[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb822048(v=vs.90)):
+[New features](/previous-versions/visualstudio/visual-studio-2008/bb822048(v=vs.90)):
 
 - Windows Presentation Foundation
 - Windows Communication Foundation
@@ -218,7 +220,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 2.0
 
-[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/t357fb32%28v%3dvs.90%29):
+[New features](/previous-versions/visualstudio/visual-studio-2008/t357fb32(v=vs.90)):
 
 - Generics
 - Debugger edit and continue
@@ -237,7 +239,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 1.1
 
-[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/h88tthh0%28v%3dvs.90%29):
+[New features](/previous-versions/visualstudio/visual-studio-2008/h88tthh0(v=vs.90)):
 
 - ASP.NET mobile controls
 - Side-by-side execution

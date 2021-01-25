@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 2557da60-c6dc-4e99-8128-fceb6f8a0736
 ---
 # Errors Summary (Visual Basic)
+
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  

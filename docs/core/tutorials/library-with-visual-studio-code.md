@@ -1,18 +1,20 @@
 ---
-title: Create a .NET Standard class library using Visual Studio Code
-description: Learn how to create a .NET Standard class library using Visual Studio Code.
-ms.date: 06/08/2020
+title: Create a .NET class library using Visual Studio Code
+description: Learn how to create a .NET class library using Visual Studio Code.
+ms.date: 11/18/2020
 ---
-# Tutorial: Create a .NET Standard library using Visual Studio Code
+# Tutorial: Create a .NET class library using Visual Studio Code
 
-In this tutorial, you create a simple utility library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
+In this tutorial, you create a simple utility library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.0 allows your library to be called by any .NET implementation that supports that version of .NET Standard. When you finish your class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 5, it can be called by any application that targets .NET 5. This tutorial shows how to target .NET 5.
+
+When you create a class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 
 ## Prerequisites
 
 1. [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-2. The [.NET Core 3.1 SDK or later](https://dotnet.microsoft.com/download)
+2. The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download)
 
 ## Create a solution
 
@@ -42,13 +44,15 @@ Start by creating a blank solution to put the class library project in. A soluti
 
 ## Create a class library project
 
-Add a new .NET Standard class library project named "StringLibrary" to the solution.
+Add a new .NET class library project named "StringLibrary" to the solution.
 
 1. In the terminal, run the following command to create the library project:
 
    ```dotnetcli
    dotnet new classlib -o StringLibrary
    ```
+
+   The `-o` or `--output` command specifies the location to place the generated output.
 
    The terminal output looks like the following example:
 
@@ -57,7 +61,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    Processing post-creation actions...
    Running 'dotnet restore' on StringLibrary\StringLibrary.csproj...
      Determining projects to restore...
-     Restore completed in 328.13 ms for C:\Projects\ClassLibraryProjects\StringLibrary\StringLibrary.csproj.
+     Restored C:\Projects\ClassLibraryProjects\StringLibrary\StringLibrary.csproj (in 328 ms).
    Restore succeeded.
    ```
 
@@ -73,15 +77,15 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
-1. Check to make sure that the library targets the correct version of .NET Standard. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
+1. Check to make sure that the library targets .NET 5. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
-   The `TargetFramework` element shows that the project targets .NET Standard 2.0.
+   The `TargetFramework` element shows that the project targets .NET 5.0.
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
 
      <PropertyGroup>
-       <TargetFramework>netstandard2.0</TargetFramework>
+       <TargetFramework>net5.0</TargetFramework>
      </PropertyGroup>
 
    </Project>
@@ -104,12 +108,11 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    The terminal output looks like the following example:
 
    ```output
-   Microsoft (R) Build Engine version 16.6.0 for .NET Core
+   Microsoft (R) Build Engine version 16.7.0+b89cb5fde for .NET
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
-     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.dll
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net5.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
        0 Error(s)
@@ -133,7 +136,7 @@ Add a console application that uses the class library. The app will prompt the u
    Processing post-creation actions...
    Running 'dotnet restore' on ShowCase\ShowCase.csproj...  
      Determining projects to restore...
-     Restore completed in 210.78 ms for C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj.
+     Restored C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj (in 210 ms).
    Restore succeeded.
    ```
 
@@ -194,14 +197,14 @@ Initially, the new console app project doesn't have access to the class library.
    Input: A string that starts with an uppercase letter
    Begins with uppercase? : Yes
 
-   A string that starts with a lowercase letter
-   Input: A string that starts with a lowercase letter
-   Begins with uppercase? : Yes
+   a string that starts with a lowercase letter
+   Input: a string that starts with a lowercase letter
+   Begins with uppercase? : No
    ```
 
 ## Additional resources
 
-* [Develop libraries with the .NET Core CLI](libraries.md)
+* [Develop libraries with the .NET CLI](libraries.md)
 * [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
 
 ## Next steps
@@ -209,4 +212,4 @@ Initially, the new console app project doesn't have access to the class library.
 In this tutorial, you created a solution, added a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
 
 > [!div class="nextstepaction"]
-> [Test a .NET Standard library with .NET Core using Visual Studio Code](testing-library-with-visual-studio-code.md)
+> [Test a .NET class library with .NET using Visual Studio Code](testing-library-with-visual-studio-code.md)

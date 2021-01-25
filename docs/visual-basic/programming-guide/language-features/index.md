@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
 ---
 # Visual Basic Language Features
+
 The following topics introduce and discuss the essential components of Visual Basic, an object-oriented programming language. After creating the user interface for your application using forms and controls, you need to write the code that defines the application's behavior. As with any modern programming language, Visual Basic supports a number of common programming constructs and language elements.  
   
  If you have programmed in other languages, much of the material covered in this section might seem familiar. While most of the constructs are similar to those in other languages, the event-driven nature of Visual Basic introduces some subtle differences.  
@@ -14,6 +15,7 @@ The following topics introduce and discuss the essential components of Visual Ba
  If you are new to programming, the material in this section serves as an introduction to the basic building blocks for writing code. Once you understand the basics, you can create powerful applications using Visual Basic.  
   
 ## In This Section  
+
  [Arrays](arrays/index.md)  
  Discusses making your code more compact and powerful by declaring and using arrays, which hold multiple related values.  
   

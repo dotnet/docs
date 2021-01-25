@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: b2ef703c-3e01-4213-9d2e-c14c7dba94d2
 ---
 # \<workflowIdle>
+
 A service behavior that controls when idle workflow instances are unloaded and persisted.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ A service behavior that controls when idle workflow instances are unloaded and p
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,6 +40,7 @@ A service behavior that controls when idle workflow instances are unloaded and p
 |timeToUnload|A Timespan value that specifies the duration between the time the workflow becomes idle and is unloaded. The default value is 1 minute.<br /><br /> Unloading a workflow implies that it is also persisted. If this attribute is set to zero the workflow instance is persisted and unloaded immediately after the workflow becomes idle. Setting this attribute to TimeSpan.MaxValue effectively disables the unload operation. Idle workflow instances are never unloaded.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

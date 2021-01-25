@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugHeapValue3 Interface
+
 Exposes the monitor lock properties of objects. This interface extends the ICorDebugHeapValue and ICorDebugHeapValue2 interfaces.  
   
 ## Methods  
@@ -31,6 +32,7 @@ Exposes the monitor lock properties of objects. This interface extends the ICorD
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

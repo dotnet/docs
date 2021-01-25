@@ -2,7 +2,7 @@
 title: Character Escapes in .NET Regular Expressions
 description: Learn about special characters and escaped characters in .NET regular expressions.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
+ms.topic: conceptual
 dev_langs: 
   - "csharp"
   - "vb"
@@ -12,11 +12,12 @@ helpviewer_keywords:
   - "characters, escapes"
   - "regular expressions, character escapes"
   - "escape characters"
-  - ".NET Framework regular expressions, character escapes"
+  - ".NET regular expressions, character escapes"
   - "constructs, character escapes"
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
 ---
 # Character Escapes in Regular Expressions
+
 The backslash (\\) in a regular expression indicates one of the following:  
   
 - The character that follows it is a special character, as shown in the table in the following section. For example, `\b` is an anchor that indicates that a regular expression match should begin on a word boundary, `\t` represents a tab, and `\x020` represents a space.  
@@ -27,6 +28,7 @@ The backslash (\\) in a regular expression indicates one of the following:
 > Character escapes are recognized in regular expression patterns but not in replacement patterns.  
   
 ## Character Escapes in .NET  
+
  The following table lists the character escapes supported by regular expressions in .NET.  
   
 |Character or sequence|Description|  
@@ -47,12 +49,13 @@ The backslash (\\) in a regular expression indicates one of the following:
 |`\`|When followed by a character that is not recognized as an escaped character, matches that character. For example, `\*` matches an asterisk (*) and is the same as `\x2A`.|  
   
 ## An Example  
+
  The following example illustrates the use of character escapes in a regular expression. It parses a string that contains the names of the world's largest cities and their populations in 2009. Each city name is separated from its population by a tab (`\t`) or a vertical bar (&#124; or `\u007c`). Individual cities and their populations are separated from each other by a carriage return and line feed.  
   
  [!code-csharp[RegularExpressions.Language.Escapes#1](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.escapes/cs/escape1.cs#1)]
  [!code-vb[RegularExpressions.Language.Escapes#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.escapes/vb/escape1.vb#1)]  
   
- The regular expression `\G(.+)[\t|\u007c](.+)\r?\n` is interpreted as shown in the following table.  
+ The regular expression `\G(.+)[\t\u007c](.+)\r?\n` is interpreted as shown in the following table.  
   
 |Pattern|Description|  
 |-------------|-----------------|  

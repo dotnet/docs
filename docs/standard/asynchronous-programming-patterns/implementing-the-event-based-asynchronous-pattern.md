@@ -2,7 +2,6 @@
 title: "Implementing the Event-based Asynchronous Pattern"
 description: Learn how to implement the Event-based Asynchronous Pattern (EAP) in .NET. EAP is a standard way to package a class that has asynchronous features.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,11 +9,11 @@ helpviewer_keywords:
   - "Event-based Asynchronous Pattern"
   - "ProgressChangedEventArgs class"
   - "BackgroundWorker component"
-  - "events [.NET Framework], asynchronous"
+  - "events [.NET], asynchronous"
   - "Asynchronous Pattern"
   - "AsyncOperationManager class"
-  - "threading [.NET Framework], asynchronous features"
-  - "components [.NET Framework], asynchronous"
+  - "threading [.NET], asynchronous features"
+  - "components [.NET], asynchronous"
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 43402d19-8d30-426d-8785-1a4478233bfa
@@ -27,7 +26,7 @@ The Event-based Asynchronous Pattern provides a standardized way to package a cl
 
 For an example that implements the Event-based Asynchronous Pattern, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](component-that-supports-the-event-based-asynchronous-pattern.md).
 
-For simple asynchronous operations, you may find the <xref:System.ComponentModel.BackgroundWorker> component suitable. For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md).
+For simple asynchronous operations, you may find the <xref:System.ComponentModel.BackgroundWorker> component suitable. For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background).
 
 The following list describes the features of the Event-based Asynchronous Pattern discussed in this topic.
 
@@ -207,7 +206,7 @@ Invoke that event handler on the appropriate thread as described in [Best Practi
 
 ## Handling Out and Ref Parameters in Methods
 
-Although the use of `out` and `ref` is, in general, discouraged in the .NET Framework, here are the rules to follow when they are present:
+Although the use of `out` and `ref` is, in general, discouraged in .NET, here are the rules to follow when they are present:
 
 Given a synchronous method *MethodName*:
 
@@ -257,8 +256,8 @@ public class MethodNameCompletedEventArgs : System.ComponentModel.AsyncCompleted
 - <xref:System.ComponentModel.ProgressChangedEventArgs>
 - <xref:System.ComponentModel.AsyncCompletedEventArgs>
 - [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](component-that-supports-the-event-based-asynchronous-pattern.md)
-- [How to: Run an Operation in the Background](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
-- [How to: Implement a Form That Uses a Background Operation](../../framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+- [How to: Run an Operation in the Background](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background)
+- [How to: Implement a Form That Uses a Background Operation](/dotnet/desktop/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation)
 - [Deciding When to Implement the Event-based Asynchronous Pattern](deciding-when-to-implement-the-event-based-asynchronous-pattern.md)
 - [Best Practices for Implementing the Event-based Asynchronous Pattern](best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
 - [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md)

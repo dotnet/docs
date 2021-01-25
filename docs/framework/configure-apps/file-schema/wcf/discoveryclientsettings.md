@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 02e1b823-a8bb-4074-90d5-8599f71e8f9d
 ---
 # \<discoveryClientSettings>
+
 Contains the settings needed by an application to participate in the service discovery process as a client.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -41,6 +42,7 @@ Contains the settings needed by an application to participate in the service dis
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

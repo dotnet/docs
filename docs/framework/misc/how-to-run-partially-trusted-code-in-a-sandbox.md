@@ -172,6 +172,7 @@ AppDomain.CreateDomain( string friendlyName,
      The full-trust assert is used to obtain extended information from the <xref:System.Security.SecurityException>. Without the <xref:System.Security.PermissionSet.Assert%2A>, the <xref:System.Security.SecurityException.ToString%2A> method of <xref:System.Security.SecurityException> will discover that there is partially trusted code on the stack and will restrict the information returned. This could cause security issues if the partial-trust code could read that information, but the risk is mitigated by not granting <xref:System.Security.Permissions.UIPermission>. The full-trust assert should be used sparingly and only when you are sure that you are not allowing partial-trust code to elevate to full trust. As a rule, do not call code you do not trust in the same function and after you called an assert for full trust. It is good practice to always revert the assert when you have finished using it.  
   
 ## Example  
+
  The following example implements the procedure in the previous section. In the example, a project named `Sandboxer` in a Visual Studio solution also contains a project named `UntrustedCode`, which implements the class `UntrustedClass`. This scenario assumes that you have downloaded a library assembly containing a method that is expected to return `true` or `false` to indicate whether the number you provided is a Fibonacci number. Instead, the method attempts to read a file from your computer. The following example shows the untrusted code.  
   
 ```csharp

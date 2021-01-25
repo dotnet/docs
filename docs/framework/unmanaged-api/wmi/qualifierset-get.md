@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # QualifierSet_Get function
+
 Gets the specified named qualifier.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -68,6 +69,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 This function wraps a call to the [IWbemQualifierSet::Get](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-get) method.
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 42c7ef24-710a-4af9-8493-cd41c399ecb0
 ---
 # Entity Data Model: Inheritance
+
 The Entity Data Model (EDM) supports inheritance for [entity types](entity-type.md). Inheritance in the EDM is similar to inheritance for classes in object-oriented programming languages. Like with classes in object-oriented languages, in a conceptual model you can define an entity type (a *derived type*) that inherits from another entity type (the *base type*). However, unlike classes in object-oriented programming, in a conceptual model the derived type always inherits all the [properties](property.md) and [navigation properties](navigation-property.md) of the base type. You cannot override inherited properties in a derived type.  
   
  In a conceptual model you can build inheritance hierarchies in which a derived type inherits from another derived type. The type at the top of the hierarchy (the one type in the hierarchy that is not a derived type) is called the *root type*. In an inheritance hierarchy, the [entity key](entity-key.md) must be defined on the root type.  

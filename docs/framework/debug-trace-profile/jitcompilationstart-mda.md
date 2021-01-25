@@ -14,18 +14,23 @@ ms.assetid: 5ffd2857-d0ba-4342-9824-9ffe04ec135d
 The `jitCompilationStart` managed debugging assistant (MDA) is activated to report when the just-in-time (JIT) compiler starts to compile a function.  
   
 ## Symptoms  
+
  The working set size increases for a program that's already in native image format, because mscorjit.dll is loaded into the process.  
   
 ## Cause  
+
 Not all the assemblies the program depends on have been generated into native format, or an assembly is not registered correctly.  
 
 ## Resolution  
+
  Enabling this MDA allows you to identify which function is being JIT-compiled. Make sure that the assembly that contains the function is generated to native format and properly registered.
   
 ## Effect on the runtime  
+
  This MDA logs a message just before a method is JIT-compiled, so enabling this MDA has significant impact on performance. If a method is inline, this MDA will not generate a separate message.  
   
 ## Output  
+
  The following code sample shows sample output. In this case, the output shows that, in assembly Test, the method "m" on class "ns2.CO" was JIT-compiled.  
   
 ```output
@@ -33,6 +38,7 @@ method name="Test!ns2.C0::m"
 ```  
   
 ## Configuration  
+
  The following configuration file shows a variety of filters that can be employed to filter out which methods are reported when they are first JIT-compiled. You can specify that all methods be reported by setting the value of the name attribute to \*.  
   
 ```xml  
@@ -54,6 +60,7 @@ method name="Test!ns2.C0::m"
 ```  
   
 ## Example  
+
  The following code sample is intended to be used with the preceding configuration file.  
   
 ```csharp

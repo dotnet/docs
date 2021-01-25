@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRSyncManager Interface
+
 Defines methods that allow the host to get information about requested tasks and to detect deadlocks in its synchronization implementation.  
   
 ## Methods  
@@ -28,6 +29,7 @@ Defines methods that allow the host to get information about requested tasks and
 |[GetRWLockOwnerNext Method](iclrsyncmanager-getrwlockownernext-method.md)|Gets the next task that is waiting on the current reader-writer lock.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
@@ -40,5 +42,5 @@ Defines methods that allow the host to get information about requested tasks and
 
 - <xref:System.Threading.Thread>
 - [IHostSyncManager Interface](ihostsyncmanager-interface.md)
-- [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
+- [Managed and Unmanaged Threading](/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
 - [Hosting Interfaces](hosting-interfaces.md)

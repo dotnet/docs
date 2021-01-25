@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
 ---
 # \<net.pipe>
+
 Specifies configuration settings for the Named Pipe Activation Service, which manages the lifetime of the named pipe connection, and handles activation requests that arrive over named pipes.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -36,9 +37,11 @@ Specifies configuration settings for the Named Pipe Activation Service, which ma
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

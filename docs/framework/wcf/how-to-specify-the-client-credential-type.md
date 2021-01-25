@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 10f51bee-5f92-4c1a-9126-fa5418535d8f
 ---
 # How to: Specify the Client Credential Type
+
 After setting a security mode (either transport or message), you have the option of setting the client credential type. This property specifies what type of credential the client must provide to the service for authentication. For more information about setting the security mode (a necessary step before setting the client credential type), see [How to: Set the Security Mode](how-to-set-the-security-mode.md).  
   
 ### To set the client credential type in code  

@@ -5,9 +5,11 @@ ms.date: "03/30/2017"
 ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
 ---
 # Creating an Activity at Runtime with DynamicActivity
+
 <xref:System.Activities.DynamicActivity> is a concrete, sealed class with a public constructor. <xref:System.Activities.DynamicActivity> can be used to assemble activity functionality at runtime using an activity DOM.  
   
 ## DynamicActivity Features  
+
  <xref:System.Activities.DynamicActivity> has access to execution properties, arguments and variables, but no access to run-time services such as scheduling child activities or tracking.  
   
  Top-level properties can be set using workflow <xref:System.Activities.Argument> objects. In imperative code, these arguments are created using CLR properties on a new type. In XAML, they are declared using `x:Class` and `x:Member` tags.  

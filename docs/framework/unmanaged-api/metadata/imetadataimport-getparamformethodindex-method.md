@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetParamForMethodIndex Method
+
 Gets the token that represents a specified parameter of the method represented by the specified MethodDef token.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetParamForMethodIndex (
 ```  
   
 ## Parameters  
+
  `md`  
  [in] A token that represents the method to return the parameter token for.  
   
@@ -40,6 +42,7 @@ HRESULT GetParamForMethodIndex (
  [out] A pointer to a ParamDef token that represents the requested parameter.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -1,6 +1,6 @@
 ---
 title: Encryption
-ms.date: 12/13/2019
+ms.date: 09/08/2020
 description: Learn how to encrypt your database file.
 ---
 # Encryption
@@ -31,13 +31,16 @@ For more information about using a different native library for encryption, see 
 
 ## Specify the key
 
-To enable encryption, specify the key using the `Password` connection string keyword. Use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> to add or update the value from user input and avoid connection string injection attacks.
+To enable encryption on a new database, specify the key using the `Password` connection string keyword. Use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> to add or update the value from user input and avoid connection string injection attacks.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
 
+> [!TIP]
+> The method for encrypting and decrypting existing databases varies depending on which solution you're using. For example, you need to use the `sqlcipher_export()` function on SQLCipher. Check your solution's documentation for details.
+
 ## Rekeying the database
 
-If you want to change the encryption key of a database, issue a `PRAGMA rekey` statement. To decrypt the database, specify `NULL`.
+If you want to change the key of an encrypted database, issue a `PRAGMA rekey` statement.
 
 Unfortunately, SQLite doesn't support parameters in `PRAGMA` statements. Instead, use the `quote()` function to prevent SQL injection.
 

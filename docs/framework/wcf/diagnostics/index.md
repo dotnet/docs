@@ -11,12 +11,14 @@ helpviewer_keywords:
 ms.assetid: 34c81c08-0e0f-4fbc-9ae8-91948640ee43
 ---
 # Administration and Diagnostics
+
 Windows Communication Foundation (WCF) provides a rich set of functionalities that can help you monitor the different stages of an application’s life. For example, you can use configuration to set up services and clients at deployment. WCF includes a large set of performance counters to help you gauge your application's performance. WCF also exposes inspection data of a service at runtime through a WCF Windows Management Instrumentation (WMI) provider. When the application experiences a failure or starts acting improperly, you can use the Event Log to see if anything significant has occurred. You can also use Message Logging and Tracing to see what events are happening end-to-end in your application. These features assist both developers and IT professionals to troubleshoot an WCF application when it is not behaving correctly.  
   
 > [!NOTE]
 > If you are receiving faults with no specific detail information, you should enable the `includeExceptionDetailInFaults` attribute of the [\<serviceDebug>](../../configure-apps/file-schema/wcf/servicedebug.md) configuration element. This instructs WCF to send exception detail to clients, which enables you to detect many common problems without requiring more advanced diagnosis. For more information, see [Sending and Receiving Faults](../sending-and-receiving-faults.md).  
   
 ## Diagnostics Features Provided by WCF  
+
  WCF provides the following diagnostics functionalities:  
   
 - End-To-End tracing provides instrumentation data for troubleshooting an application without using a debugger. WCF outputs traces for process milestones, as well as error messages. This can include opening a channel factory or sending and receiving messages by a service host. Tracing can be enabled for a running application to monitor its progress. For more information, see the [Tracing](./tracing/index.md) topic. To understand how you can use tracing to debug your application, see the [Using Tracing to Troubleshoot Your Application](./tracing/using-tracing-to-troubleshoot-your-application.md) topic.  

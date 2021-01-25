@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c1a5013a-9dd4-4a27-b114-795b8b323177
 ---
 # \<peerTransport>
+
 Defines a peer transport for a custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Defines a peer transport for a custom binding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -50,6 +52,7 @@ Defines a peer transport for a custom binding.
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  This transport cannot be used with contracts that have request/reply operations.  
   
 ## See also

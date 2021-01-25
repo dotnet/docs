@@ -16,9 +16,11 @@ helpviewer_keywords:
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
 ---
 # Operator Precedence in Visual Basic
+
 When several operations occur in an expression, each part is evaluated and resolved in a predetermined order called *operator precedence*.
 
 ## Precedence Rules
+
  When expressions contain operators from more than one category, they are evaluated according to the following rules:
 
 - The arithmetic and concatenation operators have the order of precedence described in the following section, and all have greater precedence than the comparison, logical, and bitwise operators.
@@ -30,12 +32,15 @@ When several operations occur in an expression, each part is evaluated and resol
 - Operators with equal precedence are evaluated left to right in the order in which they appear in the expression.
 
 ## Precedence Order
+
  Operators are evaluated in the following order of precedence:
 
 ### Await Operator
+
  Await
 
 ### Arithmetic and Concatenation Operators
+
  Exponentiation (`^`)
 
  Unary identity and negation (`+`, `–`)
@@ -53,9 +58,11 @@ When several operations occur in an expression, each part is evaluated and resol
  Arithmetic bit shift (`<<`, `>>`)
 
 ### Comparison Operators
+
  All comparison operators (`=`, `<>`, `<`, `<=`, `>`, `>=`, `Is`, `IsNot`, `Like`, `TypeOf`...`Is`)
 
 ### Logical and Bitwise Operators
+
  Negation (`Not`)
 
  Conjunction (`And`, `AndAlso`)
@@ -65,6 +72,7 @@ When several operations occur in an expression, each part is evaluated and resol
  Exclusive disjunction (`Xor`)
 
 ### Comments
+
  The `=` operator is only the equality comparison operator, not the assignment operator.
 
  The string concatenation operator (`&`) is not an arithmetic operator, but in precedence it is grouped with the arithmetic operators.
@@ -72,6 +80,7 @@ When several operations occur in an expression, each part is evaluated and resol
  The `Is` and `IsNot` operators are object reference comparison operators. They do not compare the values of two objects; they check only to determine whether two object variables refer to the same object instance.
 
 ## Associativity
+
  When operators of equal precedence appear together in an expression, for example multiplication and division, the compiler evaluates each operation as it encounters it from left to right. The following example illustrates this.
 
 ```vb
@@ -85,6 +94,7 @@ Dim n3 As Integer = 96 / (8 / 4)
  Because of this behavior, operators are said to be *left associative* in Visual Basic.
 
 ## Overriding Precedence and Associativity
+
  You can use parentheses to force some parts of an expression to be evaluated before others. This can override both the order of precedence and the left associativity. Visual Basic always performs operations that are enclosed in parentheses before those outside. However, within parentheses, it maintains ordinary precedence and associativity, unless you use parentheses within the parentheses. The following example illustrates this.
 
 ```vb

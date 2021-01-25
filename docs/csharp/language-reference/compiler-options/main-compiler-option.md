@@ -21,6 +21,7 @@ This option specifies the class that contains the entry point to the program, if
 ```
 
 ## Arguments
+
  `class`  
  The type that contains the **Main** method.  
  The provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`.

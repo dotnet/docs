@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
 ---
 # \<compositeDuplex>
+
 Defines the binding element that is used when the client must expose an endpoint for the service to send messages back to the client.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ Defines the binding element that is used when the client must expose an endpoint
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -29,6 +31,7 @@ Defines the binding element that is used when the client must expose an endpoint
 |clientBaseAddress|A URI that sets the address of the back channel in duplex mode. The service uses this address to make contact and establish a connection with the client.<br /><br /> If this attribute is not set, a default address "`full qualified name+default port\TemporaryIndigoAddress\guid`" is generated. The default is `null`.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -38,6 +41,7 @@ Defines the binding element that is used when the client must expose an endpoint
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  This configuration element is used with transports that do not allow duplex communications natively, for example, HTTP. TCP, by contrast, allows duplex communications natively, and does not require the use of this binding element for the service to send messages back to a client.  
   
  The client must expose an address for the service to make contact and establish a connection. This client address is provided by the `clientBaseAddress` attribute. Note that Windows Communication Foundation (WCF) auto-generates a ClientBaseAddress if one is not explicitly set by the user.  

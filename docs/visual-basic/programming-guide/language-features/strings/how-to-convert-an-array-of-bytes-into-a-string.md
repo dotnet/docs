@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: d0dc8317-9ab3-4324-99f7-3f5788c0e72a
 ---
 # How to: Convert an Array of Bytes into a String in Visual Basic
+
 This topic shows how to convert the bytes from a byte array into a string.  
   
 ## Example  
+
  This example uses the <xref:System.Text.Encoding.GetString%2A> method of the <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> encoding class to convert all the bytes from a byte array into a string.  
   
  [!code-vb[VbVbalrStrings#72](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#72)]  

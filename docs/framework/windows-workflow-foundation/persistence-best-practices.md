@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 6974c5a4-1af8-4732-ab53-7d694608a3a0
 ---
 # Persistence Best Practices
+
 This document covers best practices for workflow design and configuration related to workflow persistence.  
   
 ## Design and Implementation of Durable Workflows  
+
  In general, workflows perform work in short periods that are interleaved with times during which the workflow is idle because it is waiting for an event. This event can be such things as a message or an expiring timer. To be able to unload the workflow instance when it becomes idle, the service host must persist the workflow instance. This is possible only if the workflow instance is not in a no-persist zone (for example, waiting for a transaction to complete, or waiting for an asynchronous callback). To allow an idle workflow instance to unload, the workflow author should use transaction scopes and asynchronous activities for short-lived actions only. In particular, the author should keep delay activities within these no-persist zones as short as possible.  
   
  A workflow can only be persisted if all of the data types used by the workflow are serializable. In addition, custom types used in persisted workflows must be serializable with <xref:System.Runtime.Serialization.NetDataContractSerializer> in order to be persisted by <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>.  
@@ -15,9 +17,10 @@ This document covers best practices for workflow design and configuration relate
   
  If your workflow is busy for a long time, we recommend that you persist the workflow instance regularly throughout its busy period. You can do this by adding <xref:System.Activities.Statements.Persist> activities throughout the sequence of activities that keep the workflow instance busy. In this manner, application domain recycling, host failures, or computer failures do not cause the system to be rolled back to the start of the busy period. Be aware that adding <xref:System.Activities.Statements.Persist> activities to your workflow could lead to a degradation of performance.  
   
- Windows Server App Fabric greatly simplifies the configuration and use of persistence. For more information, see [Windows Server App Fabric Persistence](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10))  
+ Windows Server App Fabric greatly simplifies the configuration and use of persistence. For more information, see [Windows Server App Fabric Persistence](/previous-versions/appfabric/ee677272(v=azure.10))  
   
 ## Configuration of Scalability Parameters  
+
  Scalability and performance requirements determine the settings of the following parameters:  
   
 - <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A>  
@@ -29,6 +32,7 @@ This document covers best practices for workflow design and configuration relate
  These parameters should be set as follows, according to the current scenario.  
   
 ### Scenario: A Small Number of Workflow Instances That Require Optimal Response Time  
+
  In this scenario, all workflow instances should remain loaded when they become idle. Set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> to a large value. The use of this setting prevents a workflow instance from moving between computers. Use this setting only if one or more of the following are true:  
   
 - A workflow instance receives a single message throughout its lifetime.  
@@ -40,14 +44,17 @@ This document covers best practices for workflow design and configuration relate
  Use <xref:System.Activities.Statements.Persist> activities or set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A> to 0 to enable recovery of your workflow instance after service host or computer failures.  
   
 ### Scenario: Workflow Instances Are Idle for Long Periods of Time  
+
  In this scenario, set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> to 0 to release resources as soon as possible.  
   
 ### Scenario: Workflow Instances Receive Multiple Messages in a Short Period of Time  
+
  In this scenario, set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> to 60 seconds if these messages are received by the same computer. This prevents a rapid sequence of unloading and loading of a workflow instance. This also does not keep the instance in memory for too long.  
   
  Set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> to 0, and set <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceLockedExceptionAction%2A> to BasicRetry or AggressiveRetry if these messages may be received by different computers. This allows the workflow instance to be loaded by another computer.  
   
 ### Scenario: Workflow Uses Delay Activities with Short Durations  
+
  In this scenario, the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> regularly polls the persistence database for instances that should be loaded because of an expired <xref:System.Activities.Statements.Delay> activity. If the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> finds a timer that will expire in the next polling interval, the SQL Workflow Instance Store shortens the polling interval. The next poll will then occur right after the timer has expired. This way, the SQL Workflow Instance Store achieves a high accuracy of timers that run longer than the polling interval, which is set by <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.RunnableInstancesDetectionPeriod%2A>. To enable timely processing of shorter delays, the workflow instance must remain in memory for at least one polling interval.  
   
  Set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A> to 0 to write the expiration time to the persistence database.  
@@ -57,6 +64,7 @@ This document covers best practices for workflow design and configuration relate
  We do not recommend reducing the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.RunnableInstancesDetectionPeriod%2A> because this leads to an increased load on the persistence database. Each service host that uses the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> polls the database one time per detection period. Setting <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.RunnableInstancesDetectionPeriod%2A> to too small a time interval may cause your system's performance to decrease if the number of service hosts is large.  
   
 ## Configuring the SQL Workflow Instance Store  
+
  The SQL Workflow Instance Store has the following configuration parameters:  
   
  <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceEncodingOption%2A>  

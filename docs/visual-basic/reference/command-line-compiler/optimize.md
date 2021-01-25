@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: fcba4a97-3622-4b87-a891-0f77deab4998
 ---
 # -optimize
+
 Enables or disables compiler optimizations.  
   
 ## Syntax  
@@ -24,6 +25,7 @@ Enables or disables compiler optimizations.
 |`+` &#124; `-`|Optional. The `-optimize-` option disables compiler optimizations. The `-optimize+` option enables optimizations. By default, optimizations are disabled.|  
   
 ## Remarks  
+
  Compiler optimizations make your output file smaller, faster, and more efficient. However, because optimizations result in code rearrangement in the output file, `-optimize+` can make debugging difficult.  
   
  All modules generated with `-target:module` for an assembly must use the same `-optimize` settings as the assembly. For more information, see [-target (Visual Basic)](target.md).  
@@ -35,6 +37,7 @@ Enables or disables compiler optimizations.
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.<br />     <br />2.  Click the **Compile** tab.<br />3.  Click the **Advanced** button.<br />4.  Modify the **Enable optimizations** check box.|  
   
 ## Example  
+
  The following code compiles `T2.vb` and enables compiler optimizations.  
   
 ```console

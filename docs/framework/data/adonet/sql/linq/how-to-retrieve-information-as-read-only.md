@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: fb09e298-0b53-47e5-97fb-ab318bcd4fad
 ---
 # How to: Retrieve Information As Read-Only
+
 When you do not intend to change the data, you can increase the performance of queries by seeking read-only results.  
   
  You implement read-only processing by setting <xref:System.Data.Linq.DataContext.ObjectTrackingEnabled%2A> to `false`.  
@@ -15,6 +16,7 @@ When you do not intend to change the data, you can increase the performance of q
 > When <xref:System.Data.Linq.DataContext.ObjectTrackingEnabled%2A> is set to `false`, <xref:System.Data.Linq.DataContext.DeferredLoadingEnabled%2A> is implicitly set to `false`.  
   
 ## Example  
+
  The following code retrieves a read-only collection of employee hire dates.  
   
  [!code-csharp[DLinqQuerying#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQuerying/cs/Program.cs#2)]

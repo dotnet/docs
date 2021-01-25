@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 8f3d9d30-d899-49aa-b7ce-a8d0d32c4ff0
 ---
 # Variable and Argument Tracking
+
 When tracking the execution of a workflow, it is often useful to extract data. This provides additional context when accessing a tracking record post execution. In [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)], you can extract any visible variable or argument within the scope of any activity in a workflow using tracking. Tracking profiles make it easy to extract data.  
   
 ## Variables and Arguments  
+
  Variables and arguments are extracted when an activity emits an ActivityStateRecord.  A variable is available for extraction only if it is within the scope of the activity. A variable to be extracted within an activity is specified in the following manner:  
   
 - If a variable is specified by the variable name, then tracking looks for the variable within the current activity being tracked and in parent activities. The variable is searched in current activity scope and in parent scope.  
@@ -32,6 +34,7 @@ When tracking the execution of a workflow, it is often useful to extract data. T
 ```  
   
 ## Protecting Information Stored Within Variables and Arguments  
+
  A tracked variable or argument is by default made visible by the WF runtime. A workflow developer can protect it from being accessed by taking the following steps:  
   
 1. Encrypt the value of a variable.  
@@ -42,5 +45,5 @@ When tracking the execution of a workflow, it is often useful to extract data. T
   
 ## See also
 
-- [Windows Server App Fabric Monitoring](https://docs.microsoft.com/previous-versions/appfabric/ee677251(v=azure.10))
-- [Monitoring Applications with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677276(v=azure.10))
+- [Windows Server App Fabric Monitoring](/previous-versions/appfabric/ee677251(v=azure.10))
+- [Monitoring Applications with App Fabric](/previous-versions/appfabric/ee677276(v=azure.10))

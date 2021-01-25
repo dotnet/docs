@@ -24,6 +24,7 @@ child node, repeat the process used at the root node: determine the
 type, and if the type has children, visit each of the children.
 
 ## Examining an Expression with No Children
+
 Let's start by visiting each node in a simple expression tree.
 Here's the code that creates a constant expression and then
 examines its properties:
@@ -580,7 +581,7 @@ capabilities.
 
 Even the last example recognizes a subset of the possible node types.
 You can still feed it many expressions that will cause it to fail.
-A full implementation is included in the .NET Standard
+A full implementation is included in .NET Standard
 under the name <xref:System.Linq.Expressions.ExpressionVisitor>
 and can handle all the possible node types.
 

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
 ---
 # \<net.tcp>
+
 Specifies configuration settings for the NET.TCP Port Sharing Service, which allows multiple processes to share the same TCP port.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -38,9 +39,11 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -66,6 +69,7 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 |[\<system.serviceModel.activation>](system-servicemodel-activation.md)|Contains configuration settings for the listener process SMSvcHost.exe.|  
   
 ## Remarks  
+
  For more information on port sharing, see [Net.TCP Port Sharing](../../../wcf/feature-details/net-tcp-port-sharing.md). To understand how to configure the port sharing service, see [Configuring the Net.TCP Port Sharing Service](../../../wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md).  
   
 ## See also

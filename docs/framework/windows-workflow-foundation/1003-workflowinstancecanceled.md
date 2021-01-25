@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 64754dc2-c160-4bf3-869a-13d56694e2dc
 ---
 # 1003 - WorkflowInstanceCanceled
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 64754dc2-c160-4bf3-869a-13d56694e2dc
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a workflow instance has completed in the Canceled state.  
   
 ## Message  
+
  WorkflowInstance Id: '%1' has completed in the Canceled state.  
   
 ## Details  

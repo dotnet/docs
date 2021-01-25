@@ -4,14 +4,17 @@ ms.date: "03/30/2017"
 ms.assetid: edd56afb-af1b-4e7d-b210-cb8998143426
 ---
 # Null Literals and Type Inference (Entity SQL)
+
 Null literals are compatible with any type in the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] type system. However, for the type of a null literal to be inferred correctly, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] imposes certain constraints on where a null literal can be used.  
   
 ## Typed Nulls  
+
  Typed nulls can be used anywhere. Type inference is not required for typed nulls because the type is known. For example, you can construct a null of type Int16 with the following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] construct:  
   
  `(cast(null as Int16))`  
   
 ## Free-Floating Null Literals  
+
  Free-floating null literals can be used in the following contexts:  
   
 - As an argument to a CAST or TREAT expression. This is the recommended way to produce a typed null expression.  

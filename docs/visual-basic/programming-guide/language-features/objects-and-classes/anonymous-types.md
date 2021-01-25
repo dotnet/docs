@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 7b87532c-4b3e-4398-8503-6ea9d67574a4
 ---
 # Anonymous Types (Visual Basic)
+
 Visual Basic supports anonymous types, which enable you to create objects without writing a class definition for the data type. Instead, the compiler generates a class for you. The class has no usable name, inherits directly from <xref:System.Object>, and contains the properties you specify in declaring the object. Because the name of the data type is not specified, it is referred to as an *anonymous type*.  
   
  The following example declares and creates variable `product` as an instance of an anonymous type that has two properties, `Name` and `Price`.  
@@ -32,6 +33,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
 > The name of the anonymous type is compiler generated and may vary from compilation to compilation. Your code should not use or rely on the name of an anonymous type because the name might change when a project is recompiled.  
   
 ## Declaring an Anonymous Type  
+
  The declaration of an instance of an anonymous type uses an initializer list to specify the properties of the type. You can specify only properties when you declare an anonymous type, not other class elements such as methods or events. In the following example, `product1` is an instance of an anonymous type that has two properties: `Name` and `Price`.  
   
  [!code-vb[VbVbalrAnonymousTypes#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#4)]  
@@ -45,6 +47,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
  For more information about other ways to specify anonymous type properties, see [How to: Infer Property Names and Types in Anonymous Type Declarations](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md).  
   
 ## Key Properties  
+
  Key properties differ from non-key properties in several fundamental ways:  
   
 - Only the values of key properties are compared in order to determine whether two instances are equal.  
@@ -54,6 +57,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
 - Only key property values are included in the compiler-generated hash code algorithm for an anonymous type.  
   
 ### Equality  
+
  Instances of anonymous types can be equal only if they are instances of the same anonymous type. The compiler treats two instances as instances of the same type if they meet the following conditions:  
   
 - They are declared in the same assembly.  
@@ -73,11 +77,13 @@ Visual Basic supports anonymous types, which enable you to create objects withou
  [!code-vb[VbVbalrAnonymousTypes#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#7)]  
   
 ### Read-Only Values  
+
  The values of key properties cannot be changed. For example, in `prod8` in the previous example, the `Name` and `Price` fields are `read-only`, but `OnHand` can be changed.  
   
  [!code-vb[VbVbalrAnonymousTypes#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#8)]  
   
 ## Anonymous Types from Query Expressions  
+
  Query expressions do not always require the creation of anonymous types. When possible, they use an existing type to hold the column data. This occurs when the query returns either whole records from the data source, or only one field from each record. In the following code examples, `customers` is a collection of objects of a `Customer` class. The class has many properties, and you can include one or more of them in the query result, in any order. In the first two examples, no anonymous types are required because the queries select elements of named types:  
   
 - `custs1` contains a collection of strings, because `cust.Name` is a string.  
@@ -101,6 +107,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
  For more information, see [Introduction to LINQ in Visual Basic](../linq/introduction-to-linq.md).  
   
 ## Deciding Whether to Use Anonymous Types  
+
  Before you create an object as an instance of an anonymous class, consider whether that is the best option. For example, if you want to create a temporary object to contain related data, and you have no need for other fields and methods that a complete class might contain, an anonymous type is a good solution. Anonymous types are also convenient if you want a different selection of properties for each declaration, or if you want to change the order of the properties. However, if your project includes several objects that have the same properties, in a fixed order, you can declare them more easily by using a named type with a class constructor. For example, with an appropriate constructor, it is easier to declare several instances of a `Product` class than it is to declare several instances of an anonymous type.  
   
  [!code-vb[VbVbalrAnonymousTypes#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#9)]  
@@ -112,6 +119,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
  More importantly, there are limitations on the use of anonymous types that do not apply to instances of named types. `firstProd2`, `secondProd2`, and `thirdProd2` are instances of the same anonymous type. However, the name for the shared anonymous type is not available and cannot appear where a type name is expected in your code. For example, an anonymous type cannot be used to define a method signature, to declare another variable or field, or in any type declaration. As a result, anonymous types are not appropriate when you have to share information across methods.  
   
 ## An Anonymous Type Definition  
+
  In response to the declaration of an instance of an anonymous type, the compiler creates a new class definition that contains the specified properties.  
   
  If the anonymous type contains at least one key property, the definition overrides three members inherited from <xref:System.Object>: <xref:System.Object.Equals%2A>, <xref:System.Object.GetHashCode%2A>, and <xref:System.Object.ToString%2A>. The code produced for testing equality and determining the hash code value considers only the key properties. If the anonymous type contains no key properties, only <xref:System.Object.ToString%2A> is overridden. Explicitly named properties of an anonymous type cannot conflict with these generated methods. That is, you cannot use `.Equals`, `.GetHashCode`, or `.ToString` to name a property.  

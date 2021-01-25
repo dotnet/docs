@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: f588597a-49de-4206-8463-4ef377e112ff
 ---
 # ASP.NET Applications Using Wait Handles
+
 The callback and polling models for handling asynchronous operations are useful when your application is processing only one asynchronous operation at a time. The Wait models provide a more flexible way of processing multiple asynchronous operations. There are two Wait models, named for the <xref:System.Threading.WaitHandle> methods used to implement them: the Wait (Any) model and the Wait (All) model.  
   
  To use either Wait model, you need to use the <xref:System.IAsyncResult.AsyncWaitHandle%2A> property of the <xref:System.IAsyncResult> object returned by the <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery%2A>, <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A>, or <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> methods. The <xref:System.Threading.WaitHandle.WaitAny%2A> and <xref:System.Threading.WaitHandle.WaitAll%2A> methods both require you to send the <xref:System.Threading.WaitHandle> objects as an argument, grouped together in an array.  
@@ -16,6 +17,7 @@ The callback and polling models for handling asynchronous operations are useful 
  The Wait models' benefit is most striking when you need to run multiple operations of some length on different servers, or when your server is powerful enough to process all the queries at the same time. In the examples presented here, three queries emulate long processes by adding WAITFOR commands of varying lengths to inconsequential SELECT queries.  
   
 ## Example: Wait (Any) Model  
+
  The following example illustrates the Wait (Any) model. Once three asynchronous processes are started, the <xref:System.Threading.WaitHandle.WaitAny%2A> method is called to wait for the completion of any one of them. As each process completes, the <xref:System.Data.SqlClient.SqlCommand.EndExecuteReader%2A> method is called and the resulting <xref:System.Data.SqlClient.SqlDataReader> object is read. At this point, a real-world application would likely use the <xref:System.Data.SqlClient.SqlDataReader> to populate a portion of the page. In this simple example, the time the process completed is added to a text box corresponding to the process. Taken together, the times in the text boxes illustrate the point: Code is executed each time a process completes.  
   
  To set up this example, create a new ASP.NET Web Site project. Place a <xref:System.Web.UI.WebControls.Button> control and four <xref:System.Web.UI.WebControls.TextBox> controls on the page (accepting the default name for each control).  
@@ -307,6 +309,7 @@ void Button1_Click(object sender, System.EventArgs e)
 ```  
   
 ## Example: Wait (All) Model  
+
  The following example illustrates the Wait (All) model. Once three asynchronous processes are started, the <xref:System.Threading.WaitHandle.WaitAll%2A> method is called to wait for the processes to complete or time out.  
   
  Like the example of the Wait (Any) model, the time the process completed is added to a text box corresponding to the process. Again, the times in the text boxes illustrate the point: Code following the <xref:System.Threading.WaitHandle.WaitAny%2A> method is executed only after all processes are complete.  

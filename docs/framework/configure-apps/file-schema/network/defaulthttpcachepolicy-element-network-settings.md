@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
 ---
 # \<defaultHttpCachePolicy> Element (Network Settings)
+
 Describes whether HTTP caching is active and describes the default caching policy.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -29,6 +30,7 @@ Describes whether HTTP caching is active and describes the default caching polic
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -41,6 +43,7 @@ Describes whether HTTP caching is active and describes the default caching polic
 |`policyLevel`|Specifies whether the caching policy is automatic, or whether the cache is bypassed. The default value is `BypassCache`.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -50,14 +53,17 @@ Describes whether HTTP caching is active and describes the default caching polic
 |[requestCaching](requestcaching-element-network-settings.md)|Controls the caching mechanism for network requests.|  
   
 ## Remarks  
+
  The value for the `policyLevel` attribute is either `BypassCache` or `Default`.  
   
  Values for the `maximumAge`, `maximumStale`, and `minimumFresh` elements are either an explicit time interval with a format of *d*.*hh*:*mm*:*ss* (days, hours, minutes, and seconds), or the constants `minValue` or `maxValue`, as appropriate.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example shows how to specify a minimum fresh time of six hours, a maximum age time of two days, and a maximum stale time of four hours.  
   
 ```xml  

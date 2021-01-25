@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 24a2d3e5-4af7-4f9a-ab7a-fe6684c9e4fe
 ---
 # Map Relations Specified for Nested Elements
+
 A schema can include an **msdata:Relationship** annotation to explicitly specify the mapping between any two elements in the schema. The two elements specified in **msdata:Relationship** can be nested in the schema, but do not have to be. The mapping process uses **msdata:Relationship** in the schema to generate the primary key/foreign key relationship between the two columns.  
   
  The following example shows an XML Schema in which the **OrderDetail** element is a child element of **Order**. The **msdata:Relationship** identifies this parent-child relationship and specifies that the **OrderNumber** column of the resulting **Order** table is related to the **OrderNo** column of the resulting **OrderDetail** table.  

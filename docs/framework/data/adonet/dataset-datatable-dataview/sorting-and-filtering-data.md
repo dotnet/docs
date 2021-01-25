@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: fdd9c753-39df-48cd-9822-2781afe76200
 ---
 # Sorting and Filtering Data
+
 The <xref:System.Data.DataView> provides several ways of sorting and filtering data in a <xref:System.Data.DataTable>:  
   
 - You can use the <xref:System.Data.DataView.Sort%2A> property to specify single or multiple column sort orders and include ASC (ascending) and DESC (descending) parameters.  

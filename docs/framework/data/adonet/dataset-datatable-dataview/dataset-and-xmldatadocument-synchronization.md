@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 0ce3793d-54b2-47e4-8cf7-b0591cc4dd21
 ---
 # DataSet and XmlDataDocument Synchronization
+
 The ADO.NET <xref:System.Data.DataSet> provides you with a relational representation of data. For hierarchical data access, you can use the XML classes available in the .NET Framework. Historically, these two representations of data have been used separately. However, the .NET Framework enables real-time, synchronous access to both the relational and hierarchical representations of data through the **DataSet** object and the <xref:System.Xml.XmlDataDocument> object, respectively.  
   
  When a **DataSet** is synchronized with an **XmlDataDocument**, both objects are working with a single set of data. This means that if a change is made to the **DataSet**, the change will be reflected in the **XmlDataDocument**, and vice versa. The relationship between the **DataSet** and the **XmlDataDocument** creates great flexibility by allowing a single application, using a single set of data, to access the entire suite of services built around the **DataSet** (such as Web Forms and Windows Forms controls, and Visual Studio .NET designers), as well as the suite of XML services including Extensible Stylesheet Language (XSL), XSL Transformations (XSLT), and XML Path Language (XPath). You do not have to choose which set of services to target with the application; both are available.  
@@ -84,6 +85,7 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
  When synchronizing a **DataSet** with an **XmlDataDocument**, results may differ depending on whether or not your <xref:System.Data.DataRelation> objects are nested. For more information, see [Nesting DataRelations](nesting-datarelations.md).  
   
 ## In This Section  
+
  [Synchronizing a DataSet with an XmlDataDocument](synchronizing-a-dataset-with-an-xmldatadocument.md)  
  Demonstrates synchronizing a strongly typed **DataSet**, with minimal schema, with an **XmlDataDocument**.  
   
@@ -94,6 +96,7 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
  Demonstrates applying an XSLT transform to the contents of a **DataSet**.  
   
 ## Related Sections  
+
  [Using XML in a DataSet](using-xml-in-a-dataset.md)  
  Describes how the **DataSet** interacts with XML as a data source, including loading and persisting the contents of a **DataSet** as XML data.  
   

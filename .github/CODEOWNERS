@@ -41,7 +41,7 @@
 /docs/fsharp/ @cartermp
 
 # The Visual Basic Guide:
-/docs/visual-basic/ @KathleenDollard
+/docs/visual-basic/ @KathleenDollard @BillWagner
 
 # The ML.NET Guide:
 /docs/machine-learning/ @luisquintanilla
@@ -50,13 +50,13 @@
 /docs/spark/ @luisquintanilla
 
 # The .NET Architecture Guide:
-/docs/architecture/ @nishanil
-
-# The Desktop WPF Guide:
-/docs/desktop-wpf/ @adegeo
+/docs/architecture/ @nishanil @IEvangelist
 
 # Azure Guide
 /docs/azure/ @CamSoper
+
+# IoT Guide
+/docs/iot/ @CamSoper
 
 # Includes files
 /includes/ @dotnet/docs
@@ -64,7 +64,7 @@
 ############### .NET 5 ################
 
 # Code analysis
-/docs/fundamentals/productivity/ @gewarren
+/docs/fundamentals/code-analysis/ @gewarren
 
 ############### .NET Core ########################
 # What's New
@@ -72,7 +72,7 @@
 # Deployment
 /docs/core/deploying/ @adegeo
 # Diagnostics
-/docs/core/diagnostics/ @sdmaclea @dotnet/docs
+/docs/core/diagnostics/ @sywhang @sdmaclea @dotnet/docs
 # Docker
 /docs/core/docker/ @IEvangelist
 # Install
@@ -178,11 +178,11 @@
 
 ################## E-books ##################
 # Blazor:
-/docs/architecture/blazor-for-web-forms-developers/ @danroth27
+/docs/architecture/blazor-for-web-forms-developers/ @danroth27 @IEvangelist
 # gRPC:
-/docs/architecture/grpc-for-wcf-developers/ @shirhatti
+/docs/architecture/grpc-for-wcf-developers/ @shirhatti @IEvangelist
 # Desktop:
-/docs/architecture/modernize-desktop/ @OliaG
+/docs/architecture/modernize-desktop/ @OliaG @IEvangelist
 
 ################# Samples folder ##############
 

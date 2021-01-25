@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameSignatureVerification Function
+
 Gets a value indicating whether the assembly manifest at the supplied path contains a strong name signature, which is verified according to the specified flags.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameSignatureVerification](../hosting/iclrstrongname-strongnamesignatureverification-method.md) method instead.  
@@ -31,6 +32,7 @@ BOOLEAN StrongNameSignatureVerification (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] The path to the portable executable (.dll or .exe) file for the assembly to verify.  
   
@@ -55,9 +57,11 @@ BOOLEAN StrongNameSignatureVerification (
 - `SN_OUTFLAG_WAS_VERIFIED` (0x00000001) - This value is set to `false` to specify that the verification succeeded due to registry settings.  
   
 ## Return Value  
+
  `true` if the verification was successful; otherwise, `false`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

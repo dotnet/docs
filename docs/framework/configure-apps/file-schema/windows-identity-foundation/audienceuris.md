@@ -5,6 +5,7 @@ ms.assetid: 7a3d8515-d756-4afe-a22d-07cbe2217ee3
 author: "BrucePerlerMS"
 ---
 # \<audienceUris>
+
 Specifies the set of URIs that are acceptable identifiers of the relying party (RP). Tokens will not be accepted unless they are scoped for one of the allowed audience URIs.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -33,6 +34,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -56,6 +58,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Provides configuration for a collection of security token handlers.|  
   
 ## Remarks  
+
  By default, the collection is empty; use `<add>`, `<clear>`, and `<remove>` elements to modify the collection. <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> and <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> objects use the values in the audience URI collection to configure any allowed audience URI restrictions in <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> objects.  
   
  The `<audienceUris>` element is represented by the <xref:System.IdentityModel.Configuration.AudienceUriElementCollection> class. An individual URI added to the collection is represented by the <xref:System.IdentityModel.Configuration.AudienceUriElement> class.  
@@ -64,6 +67,7 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
 > The use of the `<audienceUris>` element as a child element of the [\<identityConfiguration>](identityconfiguration.md) element has been deprecated, but is still supported for backward compatibility. Settings on the `<securityTokenHandlerConfiguration>` element override those on the `<identityConfiguration>` element.  
   
 ## Example  
+
  The following XML shows how to configure the acceptable audience URIs for an application. This example configures a single URI. Tokens scoped for this URI will be accepted, all others will be rejected.  
   
 ```xml  

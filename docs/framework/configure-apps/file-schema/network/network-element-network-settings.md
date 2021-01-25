@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
 ---
 # \<network> Element (Network Settings)
+
 Configures the network options for an external Simple Mail Transport Protocol (SMTP) server.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -35,6 +36,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -51,6 +53,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 |`userName`|Specifies the user name to use for authentication to the SMTP mail server. This attribute has no default value.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -60,6 +63,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 |[\<smtp> Element (Network Settings)](smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
   
 ## Remarks  
+
  Some SMTP servers require that you authenticate yourself to the server before use. If you want to authenticate yourself using the default network credentials on your host, set the `defaultCredentials` attribute to `true`. The <xref:System.Net.Configuration.SmtpNetworkElement.DefaultCredentials%2A?displayProperty=nameWithType> property can be used to get the current value of the `defaultCredentials` attribute from applicable configuration files.  
   
  You can also use basic authentication (a user name and password) to authenticate yourself to the SMTP server. To use this option, you must specify a valid user name and password for the specified SMTP server.  
@@ -84,6 +88,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
  The <xref:System.Net.Configuration.SmtpNetworkElement.EnableSsl%2A?displayProperty=nameWithType> property can be used to get the current value of the `enableSsl` attribute from applicable configuration files.  
   
 ## Example  
+
  The following example specifies the appropriate SMTP parameters to send email using the default network credentials.  
   
 ```xml  

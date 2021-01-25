@@ -7,10 +7,8 @@ items:
   items:
   - name: Overview
     href: get-started/index.md
-  - name: .NET Framework and out-of-band releases
+  - name: Out-of-band releases
     href: get-started/the-net-framework-and-out-of-band-releases.md
-  - name: .NET Core and open source
-    href: get-started/net-core-and-open-source.md
   - name: System requirements
     href: get-started/system-requirements.md
 - name: Installation guide
@@ -51,10 +49,10 @@ items:
     href: migration-guide/index.md
   - name: Compatibility
     items:
-    - name: Application compatibility 
+    - name: Application compatibility
       items:
       - name: Overview
-        displayName: App compatibility 
+        displayName: App compatibility
         href: migration-guide/application-compatibility.md
       - name: Runtime changes
         items:
@@ -333,7 +331,7 @@ items:
   - name: Migrate from .NET Framework 1.1
     href: migration-guide/migrating-from-the-net-framework-1-1.md
   - name: .NET Framework 4 migration issues
-    href: migration-guide/net-framework-4-migration-issues.md  
+    href: migration-guide/net-framework-4-migration-issues.md
 - name: Development guide
   href: development-guide.md
   items:
@@ -350,9 +348,9 @@ items:
     - name: Overview
       href: develop-client-apps.md
     - name: Windows Presentation Foundation
-      href: wpf/
+      href: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
     - name: Windows Forms
-      href: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
+      href: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
   - name: Service-oriented apps with WCF
     href: wcf/
   - name: Windows Workflow Foundation
@@ -383,8 +381,6 @@ items:
     href: interop/
   - name: Unmanaged API reference
     href: unmanaged-api/
-  - name: XAML Services
-    href: ../desktop-wpf/xaml-services/
 - name: Tools
   items:
   - name: Overview
@@ -600,6 +596,16 @@ items:
     items:
     - name: ControlBuilderInterceptor class
       href: additional-apis/controlbuilderinterceptor-class.md
+  - name: System.Windows.Controls
+    items:
+    - name: GridViewHeaderRowPresenter class
+      items:
+      - name: FindHeaderByColumn method
+        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.findheaderbycolumn.md
+      - name: MakeParentItemsControlGotFocus method
+        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.makeparentitemscontrolgotfocus.md
+      - name: PrepareHeaderDrag method
+        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.prepareheaderdrag.md
   - name: System.Windows.Diagnostics
     items:
     - name: VisualDiagnostics class
@@ -618,7 +624,7 @@ items:
       items:
       - name: raise__WritingCancelled method
         href: additional-apis/xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
-      - name: raise__WritingCompleted method 
+      - name: raise__WritingCompleted method
         href: additional-apis/xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
       - name: raise__WritingPrintTicketRequired method
         href: additional-apis/xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
@@ -670,20 +676,20 @@ items:
       href: additional-apis/stdole.stdfont.md
     - name: StdPicture interface
       href: additional-apis/stdole.stdpicture.md
-- name: What's new and obsolete	
-  items:	
+- name: What's new and obsolete
+  items:
   - name: What's new
-    href: whats-new/index.md	
-  - name: What's new in accessibility	
-    href: whats-new/whats-new-in-accessibility.md	
-  - name: What's obsolete in API ref	
-    href: whats-new/whats-obsolete.md	
-    items:	
-    - name: Obsolete types	
-      href: whats-new/obsolete-types.md	
-    - name: Obsolete members	
+    href: whats-new/index.md
+  - name: What's new in accessibility
+    href: whats-new/whats-new-in-accessibility.md
+  - name: What's obsolete in API ref
+    href: whats-new/whats-obsolete.md
+    items:
+    - name: Obsolete types
+      href: whats-new/obsolete-types.md
+    - name: Obsolete members
       href: whats-new/obsolete-members.md
-- name: Code Access security
+- name: Code access security
   items:
   - name: Overview
     href: misc/code-access-security.md
@@ -719,24 +725,20 @@ items:
     href: misc/using-libraries-from-partially-trusted-code.md
   - name: Using the Assert Method
     href: misc/using-the-assert-method.md
-- name: Create console apps
-  href: ../standard/building-console-apps.md
-- name: Consume events in a Web Forms app
-  href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
-- name: .NET Framework code analyzer
-  href: ../standard/analyzers/framework-analyzer.md
+- name: Code analysis
+  href: code-analyzers.md
 - name: Develop for multiple platforms
   items:
   - name: Overview
-    href: ../standard/cross-platform/index.md
+    href: cross-platform/index.md
     displayName: cross platform
   - name: Portable Class Library
-    href: ../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md
+    href: cross-platform/portable-class-library.md
   - name: Use Portable Class Library with MVVM
-    href: ../standard/cross-platform/using-portable-class-library-with-model-view-view-model.md
+    href: cross-platform/using-portable-class-library-with-model-view-view-model.md
   - name: App resources for libraries that target multiple platforms
-    href: ../standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
+    href: cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
   - name: .NET Framework support for Microsoft Store apps and Windows Runtime
-    href: ../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md
+    href: cross-platform/support-for-windows-store-apps-and-windows-runtime.md
   - name: Pass a URI to the Windows Runtime
-    href: ../standard/cross-platform/passing-a-uri-to-the-windows-runtime.md
+    href: cross-platform/passing-a-uri-to-the-windows-runtime.md

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 81e2efac-39aa-4ed2-85a9-97eb8793b844
 ---
 # 219 - ServiceException
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 81e2efac-39aa-4ed2-85a9-97eb8793b844
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when a WCF service encounters an unhandled exception. This includes unhandled exceptions during activation, during message processing, and in user code.  
   
 ## Message  
+
  There was an unhandled exception of type '%2' during message processing. Full Exception ToString: %1.  
   
 ## Details  

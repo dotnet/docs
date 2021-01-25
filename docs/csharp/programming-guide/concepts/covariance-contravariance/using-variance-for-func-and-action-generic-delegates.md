@@ -5,11 +5,13 @@ ms.date: 07/20/2015
 ms.assetid: 1826774f-2b7a-470f-b110-17cfdd6abdae
 ---
 # Using Variance for Func and Action Generic Delegates (C#)
+
 These examples demonstrate how to use covariance and contravariance in the `Func` and `Action` generic delegates to enable reuse of methods and provide more flexibility in your code.  
   
  For more information about covariance and contravariance, see [Variance in Delegates (C#)](./variance-in-delegates.md).  
   
 ## Using Delegates with Covariant Type Parameters  
+
  The following example illustrates the benefits of covariance support in the generic `Func` delegates. The `FindByTitle` method takes a parameter of the `String` type and returns an object of the `Employee` type. However, you can assign this method to the `Func<String, Person>` delegate because `Employee` inherits `Person`.  
   
 ```csharp  
@@ -44,6 +46,7 @@ class Program
 ```  
   
 ## Using Delegates with Contravariant Type Parameters  
+
  The following example illustrates the benefits of contravariance support in the generic `Action` delegates. The `AddToContacts` method takes a parameter of the `Person` type. However, you can assign this method to the `Action<Employee>` delegate because `Employee` inherits `Person`.  
   
 ```csharp  

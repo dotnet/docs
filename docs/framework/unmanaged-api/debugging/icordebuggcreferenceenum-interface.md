@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugGCReferenceEnum Interface
+
 Provides an enumerator for objects that will be garbage-collected.  
   
 ## Methods  
@@ -25,6 +26,7 @@ Provides an enumerator for objects that will be garbage-collected.
 |[Next Method](icordebuggcreferenceenum-next-method.md)|Gets the specified number of [COR_GC_REFERENCE](cor-gc-reference-structure.md) instances that contain information about objects that will be garbage-collected.|  
   
 ## Remarks  
+
  The `ICorDebugGCReferenceEnum` interface implements the "ICorDebugEnum" interface.  
   
  An `ICorDebugGCReferenceEnum` instance is populated with [COR_GC_REFERENCE](cor-gc-reference-structure.md) instances by calling the [ICorDebugProcess5::EnumerateGCReferences](icordebugprocess5-enumerategcreferences-method.md) method. [COR_GC_REFERENCE](cor-gc-reference-structure.md) objects can be enumerated by calling the [ICorDebugGCReference::Next](icordebuggcreferenceenum-next-method.md) method.  
@@ -38,6 +40,7 @@ Provides an enumerator for objects that will be garbage-collected.
 - Objects from the finalizer queue. The finalizer queue roots objects until the finalizer has run.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

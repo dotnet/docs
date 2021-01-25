@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 58b7c0b9-f6ad-4b49-b92d-0e421cfd0ec6
 ---
 # ICorDebugSymbolProvider::GetMethodParameterSymbols Method
+
 Gets a method's parameter symbols given the relative virtual address (RVA) of that method.  
   
 ## Syntax  
@@ -18,6 +19,7 @@ HRESULT GetMethodParameterSymbols(
 ```  
   
 ## Parameters  
+
  `nativeRVA`  
  [in] The native relative virtual address of the method.  
   
@@ -36,6 +38,7 @@ HRESULT GetMethodParameterSymbols(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

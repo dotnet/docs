@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
 ---
 # \<serviceSecurityAudit>
+
 Specifies settings that enable auditing of security events during service operations.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -23,6 +24,7 @@ Specifies settings that enable auditing of security events during service operat
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ Specifies settings that enable auditing of security events during service operat
 |messageAuthenticationAuditLevel|Specifies the type of message authentication audit events logged. Valid values include the following:<br /><br /> -   None: No audit events are generated.<br />-   Success: Only successful security (full validation including message signature validation, cipher, and token validation) events are logged.<br />-   Failure: Only failure events are logged.<br />-   SuccessOrFailure: Both success and failure events are logged.<br /><br /> The default value is None. For more information, see <xref:System.ServiceModel.AuditLevel>.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -44,6 +47,7 @@ Specifies settings that enable auditing of security events during service operat
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
+
  This configuration element is used to audit Windows Communication Foundation (WCF) authentication events. When auditing is enabled, either successful or failed authentication attempts (or both) can be audited. The events are written to one of three event logs: application, security, or the default log for the operating system version. The event logs can all be viewed using the Windows Event viewer.  
   
  For a detailed example of using this configuration element, see [Service Auditing Behavior](../../../wcf/samples/service-auditing-behavior.md).  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugValue2 Interface
+
 Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" objects.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" ob
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

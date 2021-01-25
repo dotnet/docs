@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
 ---
 # Friend (Visual Basic)
+
 Specifies that one or more declared programming elements are accessible only from within the assembly that contains their declaration.  
   
 ## Remarks  
+
  In many cases, you want programming elements such as classes and structures to be used by the entire assembly, not only by the component that declares them. However, you might not want them to be accessible by code outside the assembly (for example, if the application is proprietary). If you want to limit access to an element in this way, you can declare it by using the `Friend` modifier.  
   
  Code in other classes, structures, and modules that are compiled to the same assembly can access all the `Friend` elements in that assembly.  
@@ -32,11 +34,13 @@ Specifies that one or more declared programming elements are accessible only fro
 > You can specify that another assembly is a friend assembly, which allows it to access all types and members that are marked as `Friend`. For more information, see [Friend Assemblies](../../../standard/assembly/friend.md).
 
 ## Example  
+
  The following class uses the `Friend` modifier to allow other programming elements within the same assembly to access certain members.  
   
  [!code-vb[VbVbalrAccessModifiers#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalraccessmodifiers/vb/class1.vb#1)]  
   
 ## Usage  
+
  You can use the `Friend` modifier in these contexts:  
   
  [Class Statement](../statements/class-statement.md)  

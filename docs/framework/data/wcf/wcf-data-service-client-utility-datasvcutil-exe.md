@@ -13,9 +13,9 @@ DataSvcUtil.exe is a command-line tool provided by WCF Data Services that consum
 
 - The root URI of a data service. The utility requests the service metadata document, which describes the data model exposed by the data service. For more information, see [AtomPub (RFC5023)](https://tools.ietf.org/html/rfc5023#section-8).
 
-- A data model file (.csdl) defined by using the conceptual schema definition language (CSDL), as defined in the [\[MC-CSDL\]: Conceptual Schema Definition File Format](https://docs.microsoft.com/openspecs/windows_protocols/mc-csdl/c03ad8c3-e8b7-4306-af96-a9e52bb3df12) specification.
+- A data model file (.csdl) defined by using the conceptual schema definition language (CSDL), as defined in the [\[MC-CSDL\]: Conceptual Schema Definition File Format](/openspecs/windows_protocols/mc-csdl/c03ad8c3-e8b7-4306-af96-a9e52bb3df12) specification.
 
-- An .edmx file created by using the Entity Data Model tools that are provided with the Entity Framework. For more information, see the [\[MC-EDMX\]: Entity Data Model for Data Services Packaging Format](https://docs.microsoft.com/openspecs/windows_protocols/mc-edmx/5dff5e25-56a1-408b-9d44-bff6634c7d16) specification.
+- An .edmx file created by using the Entity Data Model tools that are provided with the Entity Framework. For more information, see the [\[MC-EDMX\]: Entity Data Model for Data Services Packaging Format](/openspecs/windows_protocols/mc-edmx/5dff5e25-56a1-408b-9d44-bff6634c7d16) specification.
 
 For more information, see [How to: Manually Generate Client Data Service Classes](how-to-manually-generate-client-data-service-classes-wcf-data-services.md).
 

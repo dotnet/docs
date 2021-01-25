@@ -7,11 +7,13 @@ dev_langs:
 ms.assetid: 725718f5-da29-4841-9f53-aafef64ba977
 ---
 # How to: Return Rowsets
+
 This example returns a rowset from the database, and includes an input parameter to filter the result.  
   
  When you execute a stored procedure that returns a rowset, you use a *result* class that stores the returns from the stored procedure. For more information, see [Analyzing LINQ to SQL Source Code](analyzing-linq-to-sql-source-code.md).  
   
 ## Example  
+
  The following example represents a stored procedure that returns rows of customers and uses an input parameter to return only those rows that list "London" as the customer city. The example assumes an enumerable `CustomersByCityResult` class.  
   
 ```sql  

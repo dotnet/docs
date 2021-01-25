@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: f9631804-fd36-4443-b36c-30db827e6176
 ---
 # Resume without error
+
 A `Resume` statement appeared outside error-handling code, or the code jumped into an error handler even though there was no error.  
   
 ## To correct this error  

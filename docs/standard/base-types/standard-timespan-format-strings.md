@@ -2,7 +2,7 @@
 title: "Standard TimeSpan format strings"
 description: Review standard TimeSpan format strings, which use a single format specifier to define the text representation of a TimeSpan value in .NET.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
+ms.topic: reference
 dev_langs: 
   - "csharp"
   - "vb"
@@ -12,11 +12,11 @@ helpviewer_keywords:
   - "standard time interval format strings"
   - "standard format strings, time intervals"
   - "format specifiers, time intervals"
-  - "time intervals [.NET Framework], formatting"
-  - "time [.NET Framework], formatting"
-  - "formatting [.NET Framework], time"
+  - "time intervals [.NET], formatting"
+  - "time [.NET], formatting"
+  - "formatting [.NET], time"
   - "standard TimeSpan format strings"
-  - "formatting [.NET Framework], time intervals"
+  - "formatting [.NET], time intervals"
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
 ---
 # Standard TimeSpan format strings
@@ -42,6 +42,7 @@ The following table lists the standard time interval format specifiers.
 |"G"|General long format|This specifier always outputs days and seven fractional digits. It is culture-sensitive and takes the form `[-]d':'hh':'mm':'ss.fffffff`.<br /><br /> More information: [The General Long ("G") Format Specifier](#the-general-long-g-format-specifier).|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
 
 ## The Constant ("c") Format Specifier  
+
  The "c" format specifier returns the string representation of a <xref:System.TimeSpan> value in the following form:  
   
  [-][*d*.]*hh*:*mm*:*ss*[.*fffffff*]  
@@ -57,7 +58,7 @@ The following table lists the standard time interval format specifiers.
 |*ss*|The number of seconds, which ranges from "0" to "59".|  
 |*fffffff*|The optional fractional portion of a second.  Its value can range from "0000001" (one tick, or one ten-millionth of a second)  to "9999999" (9,999,999 ten-millionths of a second, or one second less one tick).|  
   
- Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that is common to all previous versions of the .NET Framework before the .NET Framework 4. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
+ Unlike the "g" and "G" format specifiers, the "c" format specifier is not culture-sensitive. It produces the string representation of a <xref:System.TimeSpan> value that is invariant and that's common to versions prior to .NET Framework 4. "c" is the default <xref:System.TimeSpan> format string; the <xref:System.TimeSpan.ToString?displayProperty=nameWithType> method formats a time interval value by using the "c" format string.  
   
 > [!NOTE]
 > <xref:System.TimeSpan> also supports the "t" and "T" standard format strings, which are identical in behavior to the "c" standard format string.  
@@ -68,6 +69,7 @@ The following table lists the standard time interval format specifiers.
  [!code-vb[Conceptual.TimeSpan.Standard#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardc1.vb#1)]  
 
 ## The General Short ("g") Format Specifier  
+
  The "g" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a compact form by including only the elements that are necessary. It has the following form:  
   
  [-][*d*:]*h*:*mm*:*ss*[.*FFFFFFF*]  
@@ -92,6 +94,7 @@ The following table lists the standard time interval format specifiers.
  [!code-vb[Conceptual.TimeSpan.Standard#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardshort1.vb#4)]  
 
 ## The General Long ("G") Format Specifier  
+
  The "G" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a long form that always includes both days and fractional seconds. The string that results from the "G" standard format specifier has the following form:  
   
  [-]*d*:*hh*:*mm*:*ss*.*fffffff*  

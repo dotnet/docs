@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataFilter Interface
+
 Provides methods for marking and filtering metadata tokens to avoid repeating actions that have already been taken.  
   
 ## Methods  
@@ -27,6 +28,7 @@ Provides methods for marking and filtering metadata tokens to avoid repeating ac
 |[UnmarkAll Method](imetadatafilter-unmarkall-method.md)|Removes the processing marks from all the tokens in the current metadata scope.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

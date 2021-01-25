@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 87b2df69-e1f7-4657-9caf-b3f48d693428
 ---
 # Differences Between Modifiable and Nonmodifiable Arguments (Visual Basic)
+
 When you call a procedure, you typically pass one or more arguments to it. Each argument corresponds to an underlying programming element. Both the underlying elements and the arguments themselves can be either modifiable or nonmodifiable.  
   
 ## Modifiable and Nonmodifiable Elements  
+
  A programming element can be either a *modifiable element*, which can have its value changed, or a *nonmodifiable element*, which has a fixed value once it has been created.  
   
  The following table lists modifiable and nonmodifiable programming elements.  
@@ -25,6 +27,7 @@ When you call a procedure, you typically pass one or more arguments to it. Each 
 |Array elements|Expressions (even if their elements are modifiable)|  
   
 ## Modifiable and Nonmodifiable Arguments  
+
  A *modifiable argument* is one with a modifiable underlying element. The calling code can store a new value at any time, and if you pass the argument [ByRef](../../../language-reference/modifiers/byref.md), the code in the procedure can also modify the underlying element in the calling code.  
   
  A *nonmodifiable argument* either has a nonmodifiable underlying element or is passed [ByVal](../../../language-reference/modifiers/byval.md). The procedure cannot modify the underlying element in the calling code, even if it is a modifiable element. If it is a nonmodifiable element, the calling code itself cannot modify it.  

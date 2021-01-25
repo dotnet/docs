@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: f0bf70be-42ef-4c46-8709-1694b5f99018
 ---
 # Debugging (Unmanaged API Reference)
+
 The debugging API enables a debugger to debug code that runs in the common language runtime (CLR) environment. The code to be debugged can be any type of code that the CLR supports.  
   
 ## In This Section  
+
  [Debugging Coclasses](debugging-coclasses.md)  
  Describes the unmanaged coclasses that the debugging API uses.  
   

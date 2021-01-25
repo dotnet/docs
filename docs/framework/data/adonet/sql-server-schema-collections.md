@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c6403cc3-d78b-4f85-bab1-ada7a3446ec5
 ---
 # SQL Server Schema Collections
+
 The Microsoft .NET Framework Data Provider for SQL Server supports additional schema collections in addition to the common schema collections. The schema collections vary slightly by the version of SQL Server you are using. To determine the list of supported schema collections, call the **GetSchema** method with no arguments, or with the schema collection name "MetaDataCollections". This will return a <xref:System.Data.DataTable> with a list of the supported schema collections, the number of restrictions that they each support, and the number of identifier parts that they use.  
   
 ## Databases  
@@ -41,6 +42,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |index_name|String|Index Name.|  
   
 ### Indexes (SQL Server 2008)  
+
  Beginning with the .NET Framework version 3.5 SP1 and SQL Server 2008, the following columns have been added to the Indexes schema collection to support new spatial types, filestream and sparse columns. These columns are not supported in earlier versions of the .NET Framework and SQL Server.  
   
 |ColumnName|DataType|Description|  
@@ -137,6 +139,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |COLLATION_CATALOG|String|Returns master, indicating the database in which the collation is defined, if the column is character data or text data type. Otherwise, this column is NULL.|  
   
 ### Columns (SQL Server 2008)  
+
  Beginning with the .NET Framework version 3.5 SP1 and SQL Server 2008, the following columns have been added to the Columns schema collection to support new spatial types, filestream and sparse columns. These columns are not supported in earlier versions of the .NET Framework and SQL Server.  
   
 |ColumnName|DataType|Description|  
@@ -146,6 +149,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |IS_COLUMN_SET|String|YES if the column is a column set column.<br /><br /> NO if the column is not a column set column.|  
   
 ### AllColumns (SQL Server 2008)  
+
  Beginning with the .NET Framework version 3.5 SP1 and SQL Server 2008, the AllColumns schema collection has been added to support sparse columns. AllColumns is not supported in earlier versions of the .NET Framework and SQL Server.  
   
  AllColumns has the same restrictions and resulting DataTable schema as the Columns schema collection. The only difference is that AllColumns includes column set columns that are not included in the Columns schema collection. The following table describes these columns.  
@@ -175,6 +179,7 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |IS_COLUMN_SET|String|YES if the column is a column set column.<br /><br /> NO if the column is not a column set column.|  
   
 ### ColumnSetColumns (SQL Server 2008)  
+
  Beginning with the .NET Framework version 3.5 SP1 and SQL Server 2008, the ColumnSetColumns schema collection has been added to support sparse columns. ColumnSetColumns is not supported in earlier versions of the .NET Framework and SQL Server. The ColumnSetColumns schema collection returns the schema for all of the columns in a column set. The following table describes these columns.  
   
 |ColumnName|DataType|Description|  

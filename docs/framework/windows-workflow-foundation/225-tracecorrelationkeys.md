@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d9083aaf-3816-4c1c-bae0-2d7f49628345
 ---
 # 225 - TraceCorrelationKeys
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: d9083aaf-3816-4c1c-bae0-2d7f49628345
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when content-based correlation is used for a workflow service. It contains the correlation keys that are applied to correlate a message to an instance.  
   
 ## Message  
+
  Calculated correlation key '%1' using values '%2' in parent scope '%3'.  
   
 ## Details  

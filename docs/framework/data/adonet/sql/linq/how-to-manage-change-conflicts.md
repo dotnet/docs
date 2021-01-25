@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: cd292c51-a3d1-4c6f-8d8e-04323c36054e
 ---
 # How to: Manage Change Conflicts
+
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] provides a collection of APIs to help you discover, evaluate, and resolve concurrency conflicts.  
   
 ## In This Section  
+
  [How to: Detect and Resolve Conflicting Submissions](how-to-detect-and-resolve-conflicting-submissions.md)  
  Describes how to detect and resolve concurrency conflicts.  
   
@@ -32,5 +34,6 @@ ms.assetid: cd292c51-a3d1-4c6f-8d8e-04323c36054e
  Describes how to resolve a conflict by merging database and current values.  
   
 ## Related Sections  
+
  [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md)  
  Explains the terms that apply to optimistic concurrency in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].

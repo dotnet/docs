@@ -31,7 +31,7 @@ Generates a file that has an assembly manifest from modules or resource files.
 Converts type definitions in a COM type library for an ActiveX control into a Windows Forms control.
 
 - [Caspol.exe (Code Access Security Policy Tool)](caspol-exe-code-access-security-policy-tool.md)  
-Enables you to view and configure security policy for the machine policy level, the user policy level, and the enterprise policy level. In the .NET Framework 4 and later, this tool does not affect code access security (CAS) policy unless the [\<legacyCasPolicy> element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. For more information, see [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
+Enables you to view and configure security policy for the machine policy level, the user policy level, and the enterprise policy level. In the .NET Framework 4 and later, this tool does not affect code access security (CAS) policy unless the [\<legacyCasPolicy> element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. For more information, see [Security Changes](/previous-versions/dotnet/framework/security/security-changes).
 
 - [Cert2spc.exe (Software Publisher Certificate Test Tool)](cert2spc-exe-software-publisher-certificate-test-tool.md)  
 Creates a Software Publisher's Certificate (SPC) from one or more X.509 certificates. This tool is for testing purposes only.
@@ -128,7 +128,7 @@ Helps you localize user interface (UI) resources (*.resx* or *.resources* files)
 
 ## Related sections
 
-- [WPF Tools](https://docs.microsoft.com/previous-versions/ms742404(v=vs.110))  
+- [WPF Tools](/previous-versions/ms742404(v=vs.110))  
 Includes tools such as the isXPS Conformance tool (isXPS.exe) and performance profiling tools.
 
 - [Windows Communication Foundation Tools](../wcf/tools.md)  

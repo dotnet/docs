@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 2e4e8e02-23f7-49b9-a1c8-2b0402b6b525
 ---
 # Keywords as Element Names in Code (Visual Basic)
+
 Any program element — such as a variable, class, or member — can have the same name as a restricted keyword. For example, you can create a variable named `Loop`. However, to refer to your version of it — which has the same name as the restricted `Loop` keyword — you must either precede it with a full qualification string or enclose it in square brackets (`[ ]`), as the following example shows.  
   
  [!code-vb[VbVbcnConventions#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#8)]  

@@ -24,15 +24,15 @@ This article describes the formal specification of .NET APIs that are intended t
 [Developing Libraries with Cross Platform Tools](../tutorials/libraries.md)\
 This article explains how to write libraries using the .NET Core CLI.
 
-[Additions to the *csproj* format for .NET Core](../tools/csproj.md)\
-This article outlines the changes that were added to the project file as part of the move to *csproj* and MSBuild.
+[.NET project SDKs](../project-sdk/overview.md)\
+This article describes the SDK-style project file format.
 
 [Porting to .NET Core - Analyzing your Third-Party Party Dependencies](third-party-deps.md)\
 This article discusses the portability of third-party dependencies and what to do when a NuGet package dependency doesn't run on .NET Core.
 
 ## Retarget to .NET Framework 4.7.2
 
-If your code isn't targeting .NET Framework 4.7.2, we recommended that you retarget to .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where the .NET Standard doesn't support existing APIs.
+If your code isn't targeting .NET Framework 4.7.2, we recommended that you retarget to .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
 
 For each of the projects you wish to port, do the following in Visual Studio:
 
@@ -101,8 +101,8 @@ It's likely that you'll mix the above approaches on a per-project basis. You sho
 
 The best way to make sure everything works when you've ported your code is to test your code as you port it to .NET Core. To do this, you'll need to use a testing framework that builds and runs tests for .NET Core. Currently, you have three options:
 
-- [xUnit](https://xunit.github.io/)
-  - [Getting Started](https://xunit.github.io/docs/getting-started-dotnet-core.html)
+- [xUnit](https://xunit.net/)
+  - [Getting Started](https://xunit.net/docs/getting-started/netcore/cmdline)
   - [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
 - [NUnit](https://nunit.org/)
   - [Getting Started](https://github.com/nunit/docs/wiki/Installation)
@@ -114,7 +114,7 @@ The best way to make sure everything works when you've ported your code is to te
 Ultimately, the porting effort depends heavily on how your .NET Framework code is structured. A good way to port your code is to begin with the *base* of your library, which is the foundational components of your code. This might be data models or some other foundational classes and methods that everything else uses directly or indirectly.
 
 1. Port the test project that tests the layer of your library that you're currently porting.
-1. Copy over the base of your library into a new .NET Core project and select the version of the .NET Standard you wish to support.
+1. Copy over the base of your library into a new .NET Core project and select the version of .NET Standard you wish to support.
 1. Make any changes needed to get the code to compile. Much of this may require adding NuGet package dependencies to your *csproj* file.
 1. Run the tests and make any needed adjustments.
 1. Pick the next layer of code to port over and repeat the prior steps.

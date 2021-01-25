@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 96c13903-ccb6-4a0e-ab6a-8ca955ca314d
 ---
 # Retrieving Objects from the Identity Cache
+
 This topic describes the types of LINQ to SQL queries that return an object from the identity cache that is managed by the <xref:System.Data.Linq.DataContext>.  
   
  In LINQ to SQL, one of the ways in which the <xref:System.Data.Linq.DataContext> manages objects is by logging object identities in an identity cache as queries are executed. In some cases, LINQ to SQL will attempt to retrieve an object from the identity cache before executing a query in the database.  
@@ -53,6 +54,7 @@ This topic describes the types of LINQ to SQL queries that return an object from
 - `c => c.PK1 == constant_value1 && c=> c.PK2 == constant_value2`  
   
 ## Example  
+
  The following code provides examples of the types of LINQ to SQL queries that retrieve an object from the identity cache.  
   
  [!code-csharp[L2S_QueryCache#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/l2s_querycache/cs/program.cs#1)]

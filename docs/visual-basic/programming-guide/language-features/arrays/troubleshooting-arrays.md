@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: f4e971c7-c0a4-4ed7-a77a-8d71039f266f
 ---
 # Troubleshooting Arrays (Visual Basic)
+
 This page lists some common problems that can occur when working with arrays.  
   
 ## Compilation Errors Declaring and Initializing an Array  
+
  Compilation errors can arise from misunderstanding of the rules for declaring, creating, and initializing arrays. The most common causes of errors are the following:  
   
 - Supplying a [New Operator](../../../language-reference/operators/new-operator.md) clause after specifying dimension lengths in the array variable declaration. The following code lines show invalid declarations of this type.  
@@ -43,12 +45,15 @@ This page lists some common problems that can occur when working with arrays.
      `Dim INVALIDtwoDimShortArray(,) As Short = New Short(1, 1)`  
   
 ## Accessing an Array Out of Bounds  
+
  The process of initializing an array assigns an upper bound and a lower bound to each dimension. Every access to an element of the array must specify a valid index, or subscript, for every dimension. If any index is below its lower bound or above its upper bound, an <xref:System.IndexOutOfRangeException> exception results. The compiler cannot detect such an error, so an error occurs at run time.  
   
 ### Determining Bounds  
+
  If another component passes an array to your code, for example as a procedure argument, you do not know the size of that array or the lengths of its dimensions. You should always determine the upper bound for every dimension of an array before you attempt to access any elements. If the array has been created by some means other than a Visual Basic `New` clause, the lower bound might be something other than 0, and it is safest to determine that lower bound as well.  
   
 ### Specifying the Dimension  
+
  When determining the bounds of a multidimensional array, take care how you specify the dimension. The `dimension` parameters of the <xref:System.Array.GetLowerBound%2A> and <xref:System.Array.GetUpperBound%2A> methods are 0-based, while the `Rank` parameters of the Visual Basic <xref:Microsoft.VisualBasic.Information.LBound%2A> and <xref:Microsoft.VisualBasic.Information.UBound%2A> functions are 1-based.  
   
 ## See also

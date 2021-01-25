@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: e0b12b34-8004-443a-a46d-83a5c00f2601
 ---
 # How to: Control Service Instancing
+
 Setting the instance mode of a service enables you to specify when a <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> (and its associated user-defined service object) is created. See the <xref:System.ServiceModel.InstanceContextMode> enumeration for the possible modes. For more information about behaviors, see [Configuring and Extending the Runtime with Behaviors](../extending/configuring-and-extending-the-runtime-with-behaviors.md). For working examples, see [Behaviors](../samples/behaviors.md).  
   
 ### To control the service instance lifetime using code  
@@ -19,6 +20,7 @@ Setting the instance mode of a service enables you to specify when a <xref:Syste
      [!code-vb[C_ControlServiceInstancing#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_controlserviceinstancing/vb/source.vb#1)]  
   
 ## Example  
+
  The following code example sets the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property of the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to <xref:System.ServiceModel.InstanceContextMode.PerCall>.  
   
  [!code-csharp[c_ControlServiceInstancing#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_controlserviceinstancing/cs/source.cs#2)]

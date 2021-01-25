@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTaskManager::SetCLRTaskManager Method
+
 Provides the host with an interface pointer to an [ICLRTaskManager](iclrtaskmanager-interface.md) instance implemented by the common language runtime (CLR).  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetCLRTaskManager (
 ```  
   
 ## Parameters  
+
  `pManager`  
  [in] A pointer to an `ICLRTaskManager` instance implemented by the common language runtime.  
   
@@ -43,9 +45,11 @@ HRESULT SetCLRTaskManager (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The runtime calls `SetCLRTaskManager` to provide the host with an interface pointer to an `ICLRTaskManager` instance.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

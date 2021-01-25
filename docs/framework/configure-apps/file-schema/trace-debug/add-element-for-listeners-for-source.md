@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 4ce36ac1-81ef-48e8-b8b2-b5a5b0e2adcb
 ---
 # \<add> Element for \<listeners> for \<source>
+
 Adds a listener to the `Listeners` collection for a trace source.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Adds a listener to the `Listeners` collection for a trace source.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -57,6 +59,7 @@ Adds a listener to the `Listeners` collection for a trace source.
 |`listeners`|Specifies listeners that collect, store, and route messages.|  
   
 ## Remarks  
+
  The listener classes shipped with the .NET Framework derive from the <xref:System.Diagnostics.TraceListener> class.  
   
  If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> property of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and you can remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify a unique name for each trace listener, which allows you to identify and manage individual trace listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=nameWithType> collection.  
@@ -81,9 +84,11 @@ Adds a listener to the `Listeners` collection for a trace source.
 |<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
   
 ## Configuration File  
+
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.  
   
 ## Example  
+
  The following example shows how to use `<add>` elements to add the listeners `console` and `textListener` to the `Listeners` collection for the trace source `TraceSourceApp`. The `textListener` listener writes trace output to the file myListener.log.  
   
 ```xml  

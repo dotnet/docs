@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback2::DestroyConnection Method
+
 Notifies the debugger that the specified connection has been terminated.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT DestroyConnection (
 ```  
   
 ## Parameters  
+
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process containing the connection that was destroyed.  
   
@@ -36,9 +38,11 @@ HRESULT DestroyConnection (
  [in] The ID of the connection that was destroyed.  
   
 ## Remarks  
+
  A `DestroyConnection` callback will be fired when a host calls [ICLRDebugManager::EndConnection](../hosting/iclrdebugmanager-endconnection-method.md) in the [Hosting API](../hosting/index.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

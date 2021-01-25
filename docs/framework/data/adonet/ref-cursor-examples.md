@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c257da03-c6c9-4cf8-b591-b7740a962c40
 ---
 # REF CURSOR Examples
+
 The REF CURSOR examples are comprised of the following three Microsoft Visual Basic examples that demonstrate using REF CURSORs.  
   
 |Sample|Description|  
@@ -15,9 +16,11 @@ The REF CURSOR examples are comprised of the following three Microsoft Visual Ba
  To use these examples, you may need to create the Oracle tables, and you must create a PL/SQL package and package body.  
   
 ## Creating the Oracle Tables  
+
  These examples use tables that are defined in the Oracle Scott/Tiger schema. The Oracle Scott/Tiger schema is included with most Oracle installations. If this schema does not exist, you can use the SQL commands file in {OracleHome}\rdbms\admin\scott.sql to create the tables and indexes used by these examples.  
   
 ## Creating the Oracle Package and Package Body  
+
  These examples require the following PL/SQL package and package body on your server. Create the following Oracle package on the Oracle server.  
   
 ```sql

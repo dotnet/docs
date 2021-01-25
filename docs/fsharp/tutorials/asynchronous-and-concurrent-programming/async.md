@@ -51,7 +51,7 @@ let printTotalFileBytes path =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
-        printfn "File %s has %d bytes" fileName bytes.Length
+        printfn $"File {fileName} has %d{bytes.Length} bytes"
     }
 
 [<EntryPoint>]
@@ -81,13 +81,13 @@ let printTotalFileBytes path =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
-        printfn "File %s has %d bytes" fileName bytes.Length
+        printfn $"File {fileName} has %d{bytes.Length} bytes"
     }
 
 [<EntryPoint>]
 let main argv =
     argv
-    |> Array.map printTotalFileBytes
+    |> Seq.map printTotalFileBytes
     |> Async.Parallel
     |> Async.Ignore
     |> Async.RunSynchronously
@@ -95,14 +95,14 @@ let main argv =
     0
 ```
 
-As you can see, the `main` function has quite a few more calls made. Conceptually, it does the following:
+As you can see, the `main` function has quite a few more elements. Conceptually, it does the following:
 
-1. Transform the command-line arguments into `Async<unit>` computations with `Array.map`.
+1. Transform the command-line arguments into a sequence of `Async<unit>` computations with `Seq.map`.
 2. Create an `Async<'T[]>` that schedules and runs the `printTotalFileBytes` computations in parallel when it runs.
-3. Create an `Async<unit>` that will run the parallel computation and ignore its result.
-4. Explicitly run the last computation with `Async.RunSynchronously` and block until it completes.
+3. Create an `Async<unit>` that will run the parallel computation and ignore its result (which is a `unit[]`).
+4. Explicitly run the overall composed computation with `Async.RunSynchronously`, blocking until it completes.
 
-When this program runs, `printTotalFileBytes` runs in parallel for each command-line argument. Because asynchronous computations execute independently of program flow, there is no order in which they print their information and finish executing. The computations will be scheduled in parallel, but their order of execution is not guaranteed.
+When this program runs, `printTotalFileBytes` runs in parallel for each command-line argument. Because asynchronous computations execute independently of program flow, there is no defined order in which they print their information and finish executing. The computations will be scheduled in parallel, but their order of execution is not guaranteed.
 
 ## Sequence asynchronous computations
 
@@ -113,24 +113,24 @@ let printTotalFileBytes path =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
-        printfn "File %s has %d bytes" fileName bytes.Length
+        printfn $"File {fileName} has %d{bytes.Length} bytes"
     }
 
 [<EntryPoint>]
 let main argv =
     argv
-    |> Array.map printTotalFileBytes
+    |> Seq.map printTotalFileBytes
     |> Async.Sequential
     |> Async.Ignore
     |> Async.RunSynchronously
     |> ignore
 ```
 
-This will schedule `printTotalFileBytes` to execute in the order of the elements of `argv` rather than scheduling them in parallel. Because the next item will not be scheduled until after the last computation has finished executing, the computations are sequenced such that there is no overlap in their execution.
+This will schedule `printTotalFileBytes` to execute in the order of the elements of `argv` rather than scheduling them in parallel. Because each successive operation will not be scheduled until after the preceding computation has finished executing, the computations are sequenced such that there is no overlap in their execution.
 
 ## Important Async module functions
 
-When you write async code in F#, you'll usually interact with a framework that handles scheduling of computations for you. However, this is not always the case, so it is good to learn the various starting functions to schedule asynchronous work.
+When you write async code in F#, you'll usually interact with a framework that handles scheduling of computations for you. However, this is not always the case, so it is good to understand the various functions that can be used to schedule asynchronous work.
 
 Because F# asynchronous computations are a _specification_ of work rather than a representation of work that is already executing, they must be explicitly started with a starting function. There are many [Async starting methods](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#section0) that are helpful in different contexts. The following section describes some of the more common starting functions.
 
@@ -184,7 +184,7 @@ computation: Async<'T> * taskCreationOptions: ?TaskCreationOptions * cancellatio
 
 When to use:
 
-- When you need to call into a .NET API that expects a <xref:System.Threading.Tasks.Task%601> to represent the result of an asynchronous computation.
+- When you need to call into a .NET API that yields a <xref:System.Threading.Tasks.Task%601> to represent the result of an asynchronous computation.
 
 What to watch out for:
 
@@ -192,12 +192,12 @@ What to watch out for:
 
 ### Async.Parallel
 
-Schedules a sequence of asynchronous computations to be executed in parallel. The degree of parallelism can be optionally tuned/throttled by specifying the `maxDegreesOfParallelism` parameter.
+Schedules a sequence of asynchronous computations to be executed in parallel, yielding an array of results in the order they were supplied. The degree of parallelism can be optionally tuned/throttled by specifying the `maxDegreeOfParallelism` parameter.
 
 Signature:
 
 ```fsharp
-computations: seq<Async<'T>> * ?maxDegreesOfParallelism: int -> Async<'T[]>
+computations: seq<Async<'T>> * ?maxDegreeOfParallelism: int -> Async<'T[]>
 ```
 
 When to use it:
@@ -245,7 +245,7 @@ When to use:
 
 What to watch out for:
 
-- Exceptions are wrapped in <xref:System.AggregateException> following the convention of the Task Parallel Library, and this behavior is different from how F# async generally surfaces exceptions.
+- Exceptions are wrapped in <xref:System.AggregateException> following the convention of the Task Parallel Library; this behavior is different from how F# async generally surfaces exceptions.
 
 ### Async.Catch
 
@@ -267,7 +267,7 @@ What to watch out for:
 
 ### Async.Ignore
 
-Creates an asynchronous computation that runs the given computation and ignores its result.
+Creates an asynchronous computation that runs the given computation but drops its result.
 
 Signature:
 
@@ -277,7 +277,7 @@ computation: Async<'T> -> Async<unit>
 
 When to use:
 
-- When you have an asynchronous computation whose result is not needed. This is analogous to the `ignore` code for non-asynchronous code.
+- When you have an asynchronous computation whose result is not needed. This is analogous to the `ignore` function for non-asynchronous code.
 
 What to watch out for:
 
@@ -285,7 +285,7 @@ What to watch out for:
 
 ### Async.RunSynchronously
 
-Runs an asynchronous computation and awaits its result on the calling thread. This call is blocking.
+Runs an asynchronous computation and awaits its result on the calling thread. Propagates an exception should the computation yield one. This call is blocking.
 
 Signature:
 
@@ -304,7 +304,7 @@ What to watch out for:
 
 ### Async.Start
 
-Starts an asynchronous computation in the thread pool that returns `unit`. Doesn't wait for its result. Nested computations started with `Async.Start` are started independently of the parent computation that called them. Their lifetime is not tied to any parent computation. If the parent computation is canceled, no child computations are canceled.
+Starts an asynchronous computation that returns `unit` in the thread pool. Doesn't wait for its completion and/or observe an exception outcome. Nested computations started with `Async.Start` are started independently of the parent computation that called them; their lifetime is not tied to any parent computation. If the parent computation is canceled, no child computations are canceled.
 
 Signature:
 
@@ -317,7 +317,7 @@ Use only when:
 - You have an asynchronous computation that doesn't yield a result and/or require processing of one.
 - You don't need to know when an asynchronous computation completes.
 - You don't care which thread an asynchronous computation runs on.
-- You don't have any need to be aware of or report exceptions resulting from the task.
+- You don't have any need to be aware of or report exceptions resulting from the execution.
 
 What to watch out for:
 

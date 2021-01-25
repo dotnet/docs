@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 21c45bcf-539c-488a-9cae-221558c37146
 ---
 # Cannot convert start value of type '\<type1>', limit value of '\<type2>' and step value of '\<type3>' to a common type
+
 The specified `For...Next` control values have different types, and therefore are not valid because they cannot be converted to a common type.  
   
 ## To correct this error  

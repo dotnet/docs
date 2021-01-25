@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 40e1009d-ef15-450b-9848-62eabe5e5738
 ---
 # What Is Windows Communication Foundation
+
 Windows Communication Foundation (WCF) is a framework for building service-oriented applications. Using WCF, you can send data as asynchronous messages from one service endpoint to another. A service endpoint can be part of a continuously available service hosted by IIS, or it can be a service hosted in an application. An endpoint can be a client of a service that requests data from a service endpoint. The messages can be as simple as a single character or word sent as XML, or as complex as a stream of binary data. A few sample scenarios include:
 
 - A secure service to process business transactions.
@@ -98,4 +99,4 @@ The hosting features of Windows Server AppFabric application server are specific
 - [Getting Started Tutorial](getting-started-tutorial.md)
 - [Guide to the Documentation](guide-to-the-documentation.md)
 - [Basic WCF Programming](basic-wcf-programming.md)
-- [Windows Communication Foundation Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751514%28v=vs.90%29)
+- [Windows Communication Foundation Samples](/previous-versions/dotnet/netframework-3.5/ms751514(v=vs.90))

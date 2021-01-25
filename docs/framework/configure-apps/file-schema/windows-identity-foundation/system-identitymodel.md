@@ -5,6 +5,7 @@ ms.assetid: 210ce7e9-d07b-400c-800f-5f525dcf95e8
 author: "BrucePerlerMS"
 ---
 # \<system.identityModel>
+
 Provides configuration for enabling Windows Identity Foundation (WIF) options in applications.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,9 +19,11 @@ Provides configuration for enabling Windows Identity Foundation (WIF) options in
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None  
   
 ### Child Elements  
@@ -36,9 +39,11 @@ Provides configuration for enabling Windows Identity Foundation (WIF) options in
 |`<configuration>`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
   
 ## Remarks  
+
  Add a `<system.identityModel>` section to the configuration file to configure a service or application to use Windows Identity Foundation (WIF). The `<system.identityModel>` element is represented by the <xref:System.IdentityModel.Configuration.SystemIdentityModelSection> class.  
   
 ## Example  
+
  The following example shows how to add a `<system.identityModel>` section to a configuration file. You must first add the configuration section and namespace declaration under the `<configSections>` element. Then you can add the `<system.IdentityModel>` element to your configuration file to specify one or more identity configurations.  
   
 ```xml  

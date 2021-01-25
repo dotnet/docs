@@ -30,7 +30,7 @@ Recursive functions - functions that call themselves - are identified explicitly
 The following example shows a recursive function that computes the *n*<sup>th</sup> Fibonacci number using the mathematical definition.
 
 ```fsharp
-let fib n =
+let rec fib n =
     match n with
     | 0 | 1 -> 1
     | n -> fib (n-1) + fib (n-2)

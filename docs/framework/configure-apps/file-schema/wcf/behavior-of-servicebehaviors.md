@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 78fc0a08-55de-416a-ac12-a5e6ffc9a987
 ---
 # \<behavior> of \<serviceBehaviors>
+
 The `behavior` element contains a collection of settings for the behavior of a service. Each behavior is indexed by its `name`. Services can link to each behavior through this name using the `behaviorConfiguration` attribute of the [\<endpoint>](endpoint-element.md) element. This allows endpoints to share common behavior configurations without redefining the settings. Starting with .NET Framework 4, bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 > [!NOTE]
@@ -28,6 +29,7 @@ The `behavior` element contains a collection of settings for the behavior of a s
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

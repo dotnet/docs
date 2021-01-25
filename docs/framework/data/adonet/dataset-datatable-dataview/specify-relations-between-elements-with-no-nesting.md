@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e31325da-7691-4d33-acf4-99fccca67006
 ---
 # Specify Relations Between Elements with No Nesting
+
 When elements are not nested, no implicit relations are created. You can, however, explicitly specify relations between elements that are not nested by using the **msdata:Relationship** annotation.  
   
  The following example shows an XML Schema in which the **msdata:Relationship** annotation is specified between the **Order** and **OrderDetail** elements, which are not nested. The **msdata:Relationship** annotation is specified as the child element of the **Schema** element.  

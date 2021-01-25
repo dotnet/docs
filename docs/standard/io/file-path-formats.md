@@ -2,7 +2,6 @@
 title: "File path formats on Windows systems"
 description: In this article, learn about file path formats on Windows systems, such as traditional DOS paths, DOS device paths, and universal naming convention (UNC) paths.
 ms.date: "06/06/2019"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
@@ -37,7 +36,7 @@ If all three components are present, the path is absolute. If no volume or drive
 > [!IMPORTANT]
 > Note the difference between the last two paths. Both specify the optional volume specifier (`C:` in both cases), but the first begins with the root of the specified volume, whereas the second does not. As result, the first is an absolute path from the root directory of drive `C:`, whereas the second is a relative path from the current directory of drive `C:`. Use of the second form when the first is intended is a common source of bugs that involve Windows file paths.
 
-You can determine whether a file path is fully qualified (that is, it the path is independent of the current directory and does not change when the current directory changes) by calling the <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWthType> method. Note that such a path can include relative directory segments (`.` and `..`) and still be fully qualified if the resolved path always points to the same location.
+You can determine whether a file path is fully qualified (that is, it the path is independent of the current directory and does not change when the current directory changes) by calling the <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWithType> method. Note that such a path can include relative directory segments (`.` and `..`) and still be fully qualified if the resolved path always points to the same location.
 
 The following example illustrates the difference between absolute and relative paths. It assumes that the directory `D:\FY2018\` exists, and that you haven't set any current directory for `D:\` from the command prompt before running the example.
 
@@ -84,7 +83,7 @@ The DOS device path consists of the following components:
 - The device path specifier (`\\.\` or `\\?\`), which identifies the path as a DOS device path.
 
    > [!NOTE]
-   > The `\\?\` is supported in all versions of .NET Core and in the .NET Framework starting with version 4.6.2.
+   > The `\\?\` is supported in all versions of .NET Core and .NET 5+ and in .NET Framework starting with version 4.6.2.
 
 - A symbolic link to the "real" device object (C: in the case of a drive name, or Volume{b75e2c83-0000-0000-0000-602f00000000} in the case of a volume GUID).
 
@@ -188,10 +187,10 @@ Why would you want to skip normalization? There are three major reasons:
 
 1. To improve performance by skipping normalization if you've already normalized.
 
-1. On the .NET Framework only, to skip the `MAX_PATH` check for path length to allow for paths that are greater than 259 characters. Most APIs allow this, with some exceptions.
+1. On .NET Framework only, to skip the `MAX_PATH` check for path length to allow for paths that are greater than 259 characters. Most APIs allow this, with some exceptions.
 
 > [!NOTE]
-> .NET Core handles long paths implicitly and does not perform a `MAX_PATH` check. The `MAX_PATH` check applies only to the .NET Framework.
+> .NET Core and .NET 5+ handles long paths implicitly and does not perform a `MAX_PATH` check. The `MAX_PATH` check applies only to .NET Framework.
 
 Skipping normalization and max path checks is the only difference between the two device path syntaxes; they are otherwise identical. Be careful with skipping normalization, since you can easily create paths that are difficult for "normal" applications to deal with.
 

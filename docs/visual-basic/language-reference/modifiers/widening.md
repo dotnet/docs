@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 646ae263-94d3-40a2-b0cc-64f619292f56
 ---
 # Widening (Visual Basic)
+
 Indicates that a conversion operator (`CType`) converts a class or structure to a type that can hold all possible values of the original class or structure.  
   
 ## Converting with the Widening Keyword  
+
  The conversion procedure must specify `Public Shared` in addition to `Widening`.  
   
  Widening conversions always succeed at run time and never incur data loss. Examples are `Single` to `Double`, `Char` to `String`, and a derived type to its base type. This last conversion is widening because the derived type contains all the members of the base type and thus is an instance of the base type.  

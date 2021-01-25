@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::ForceGC Method
+
 Forces garbage collection to occur within the common language runtime (CLR).  
   
 ## Syntax  
@@ -26,9 +27,11 @@ HRESULT ForceGC();
 ```  
   
 ## Remarks  
+
  The `ForceGC` method must be called only from a thread that has never run managed code and does not have any profiler callbacks on its stack. The most convenient implementation is to create a separate thread within the profiler that calls `ForceGC` when signaled.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

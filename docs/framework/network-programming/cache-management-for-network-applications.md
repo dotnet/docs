@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: fc258a40-f370-434f-ae09-4a8cb11ddaeb
 ---
 # Cache Management for Network Applications
+
 This topic and its related subtopics describe caching for resources obtained using the <xref:System.Net.WebClient>, <xref:System.Net.WebRequest>, <xref:System.Net.HttpWebRequest>, and <xref:System.Net.FtpWebRequest> classes.  
   
  A cache provides temporary storage of resources that have been requested by an application. If an application requests the same resource more than once, the resource can be returned from the cache, avoiding the overhead of re-requesting it from the server. Caching can improve application performance by reducing the time required to get a requested resource. Caching can also decrease network traffic by reducing the number of trips to the server. While caching improves performance, it increases the risk that the resource returned to the application is stale, meaning that it is not identical to the resource that would have been sent by the server if caching were not in use.  
@@ -17,6 +18,7 @@ This topic and its related subtopics describe caching for resources obtained usi
  Due to security concerns, caching is **not** recommended for middle tier scenarios.  
   
 ## In This Section  
+
  [Cache Policy](cache-policy.md)  
  Explains what a cache policy is and how to define one.  
   
@@ -30,5 +32,6 @@ This topic and its related subtopics describe caching for resources obtained usi
  Describes how to programmatically create cache policies and requests that use caching.  
   
 ## Reference  
+
  <xref:System.Net.Cache>  
  Defines the types and enumerations used to define cache policies for resources obtained using the <xref:System.Net.WebRequest>, <xref:System.Net.HttpWebRequest>, and <xref:System.Net.FtpWebRequest> classes.

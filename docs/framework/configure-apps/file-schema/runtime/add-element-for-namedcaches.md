@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: ce2a63a8-c829-4742-a6ea-72ee5d89f169
 ---
 # \<add> Element for \<namedCaches>
+
 Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,9 +26,11 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
 ```  
   
 ## Type  
+
  `None`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -40,6 +43,7 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
 |`PollingInterval`|A value that indicates the time interval after which the cache implementation compares the current memory load against the absolute and percentage-based memory limits that are set for the cache instance. This value is entered in "HH:MM:SS" format.|  
   
 ### Child Elements  
+
  `None`  
   
 ### Parent Elements  
@@ -49,9 +53,11 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
 |[\<namedCaches>](namedcaches-element-cache-settings.md)|Contains a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances.|  
   
 ## Remarks  
+
  The `add` element adds an entry to the `namedCaches` collection for a memory cache. You can use the [clear](clear-element-for-namedcaches.md) element before you use the `add` element to be certain that there are no other named caches in the collection. This element can be used in the machine.config file and in the Web.config file.  
   
 ## Example  
+
  The following example shows how to define settings for the default `namedCache` entry to the `namedCaches` collection for a memory cache.  
   
 ```xml  

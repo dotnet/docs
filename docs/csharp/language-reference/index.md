@@ -1,7 +1,8 @@
 ---
 description: "C# reference"
 title: "C# reference"
-ms.date: 02/14/2017
+ms.date: 01/13/2021
+ms.custom: "updateeachrelease"
 f1_keywords: 
   - _CSharpKeyword
 helpviewer_keywords: 
@@ -55,7 +56,10 @@ The features that have been implemented in C# versions after 6.0 are represented
   
  [C# 8.0 Specification Proposals](../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md)  
  C# 8.0 is available with .NET Core 3.0. The features include nullable reference types, recursive pattern matching, default interface methods, async streams, ranges and indexes, pattern based using and using declarations, null coalescing assignment, and readonly instance members.
-  
+
+ [C# 9.0 Specification Proposals](../../../_csharplang/proposals/csharp-9.0/records.md)  
+ C# 9.0 is available with .NET 5.0. The features include records, top-level statements, pattern matching enhancements, init only setters, target-typed new expressions, module initializers, extending partial methods, static anonymous functions, target-typed conditional expressions, covariant return types, extension GetEnumerator in foreach loops, lambda discard parameters, attributes on local functions, native sized integers, function pointers, suppress emitting localsinit flag, and unconstrained type parameter annotations.
+
 ## Related sections  
 
  [Using the Visual Studio Development Environment for C#](/visualstudio/get-started/csharp)  

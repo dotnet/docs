@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: c6241773-a7ed-41c9-9a8b-9722a0c606a9
 ---
 # \<remarks> (Visual Basic)
+
 Specifies a remarks section for the member.  
   
 ## Syntax  
@@ -16,10 +17,12 @@ Specifies a remarks section for the member.
 ```  
   
 ## Parameters  
+
  `description`  
  A description of the member.  
   
 ## Remarks  
+
  Use the `<remarks>` tag to add information about a type, supplementing the information specified with [\<summary>](summary.md).  
   
  This information appears in the Object Browser. For information about the Object Browser, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
@@ -27,6 +30,7 @@ Specifies a remarks section for the member.
  Compile with [-doc](../../reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
+
  This example uses the `<remarks>` tag to explain what the `UpdateRecord` method does.  
   
  [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  

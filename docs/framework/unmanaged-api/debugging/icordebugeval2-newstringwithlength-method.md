@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEval2::NewStringWithLength Method
+
 Creates a string of the specified length, with the specified contents.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT NewStringWithLength (
 ```  
   
 ## Parameters  
+
  `string`  
  [in] A pointer to the string value.  
   
@@ -36,11 +38,13 @@ HRESULT NewStringWithLength (
  [in] Length of the string.  
   
 ## Remarks  
+
  If the string's trailing null character is expected to be in the managed string, the caller of the `NewStringWithLength` method must ensure that the string length includes the trailing null character.  
   
  The string is always created in the application domain in which the thread is currently executing.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: bf0af444-890d-43e2-aeca-98589dd74ddf
 ---
 # Convert a Sequence to an Array
+
 Use <xref:System.Linq.Enumerable.ToArray%2A> to create an array from a sequence.  
   
 ## Example  
+
  The following example uses <xref:System.Linq.Enumerable.ToArray%2A> to immediately evaluate a query into an array and to get the third element.  
   
  [!code-csharp[DLinqQueryExamples#44](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#44)]

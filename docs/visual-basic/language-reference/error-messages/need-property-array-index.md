@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 69ec6d59-ffc4-48ac-8a28-fe6853389843
 ---
 # Need property array index
+
 This property value consists of an array rather than a single value. You did not specify the index for the property array you tried to access.  
   
 ## To correct this error  

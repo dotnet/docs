@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
 ---
 # Mapping Algorithm Names to Cryptography Classes
+
 There are four ways a developer can create a cryptography object using the Windows SDK:  
   
 - Create an object by using the **new** operator.  
@@ -27,6 +28,7 @@ There are four ways a developer can create a cryptography object using the Windo
  If it does not matter which hash algorithm is used, the developer can call the <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> method, which returns an object that implements a hashing transformation.  
   
 ## Mapping Algorithm Names in Configuration Files  
+
  By default, the runtime returns a <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> object for all four scenarios. However, a machine administrator can change the type of object that the methods in the last two scenarios return. To do this, you must map a friendly algorithm name to the class you want to use in the machine configuration file (Machine.config).  
   
  The following example shows how to configure the runtime so that **System.Security.Cryptography.SHA1.Create**, **System.Security.CryptoConfig.CreateFromName("SHA1")**, and **System.Security.Cryptography.HashAlgorithm.Create** return a `MySHA1HashClass` object.  

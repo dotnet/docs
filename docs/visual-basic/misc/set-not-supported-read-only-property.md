@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 0b97b683-6626-42ec-af0b-aaa3c973a76b
 ---
 # Set not supported (read-only property)
+
 You tried to set or change a property that is read only.  
   
 ## To correct this error  

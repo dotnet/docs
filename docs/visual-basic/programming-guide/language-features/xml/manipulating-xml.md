@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: da32cffb-198d-41b1-9af3-260fe32e3b7d
 ---
 # Manipulating XML in Visual Basic
+
 You can use *XML literals* to load XML from an external source such as a string, file, or stream. You can then use [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to manipulate the XML and use Language-Integrated Query (LINQ) to query the XML.  
   
 ## In This Section  
+
  [How to: Load XML from a File, String, or Stream](how-to-load-xml-from-a-file-string-or-stream.md)  
  Demonstrates how to load XML into an <xref:System.Xml.Linq.XDocument> or <xref:System.Xml.Linq.XElement> object from a text file, string, or stream.  
   
@@ -21,6 +23,7 @@ You can use *XML literals* to load XML from an external source such as a string,
  Demonstrates how to modify the elements, attributes, and values in an XML literal.  
   
 ## Related Sections  
+
  [XML Axis Properties](../../../language-reference/xml-axis/index.md)  
  Provides links to sections that describe the various XML access properties.  
   

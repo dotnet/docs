@@ -13,7 +13,6 @@
     <TargetZone>Internet</TargetZone>
     <BootstrapperEnabled>false</BootstrapperEnabled>
     <GenerateManifests>true</GenerateManifests>
-    <SignManifests>True</SignManifests>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MyType>Custom</MyType>
     <ProjectGuid>{ED6CE6DE-A812-4CA3-B824-F9A3A3625D7A}</ProjectGuid>
@@ -131,7 +130,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <AppDesigner Include="My Project\" />
-    <None Include="WpfBrowserApplication1VB_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="HTMLPage1.htm">
@@ -147,8 +145,6 @@
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
-    <ManifestKeyFile>WpfBrowserApplication1VB_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>90728885499C8D3E1E008C61F5E7170C50BE8162</ManifestCertificateThumbprint>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -4,11 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: 165bc2bc-60a1-40e0-9b89-7c68ef979079
 ---
 # XML Schema Constraints and Relationships
+
 In an XML Schema definition language (XSD) schema, you can specify constraints (unique, key, and keyref constraints) and relationships (using the **msdata:Relationship** annotation). This topic explains how the constraints and relationships specified in an XML Schema are interpreted to generate the <xref:System.Data.DataSet>.  
   
  In general, in an XML Schema, you specify the **msdata:Relationship** annotation if you want to generate only relationships in the **DataSet**. For more information, see [Generating DataSet Relations from XML Schema (XSD)](generating-dataset-relations-from-xml-schema-xsd.md). You specify constraints (unique, key, and keyref) if you want to generate constraints in the **DataSet**. Note that the key and keyref constraints are also used to generate relationships, as explained later in this topic.  
   
 ## Generating a Relationship from key and keyref Constraints  
+
  Instead of specifying the **msdata:Relationship** annotation, you can specify key and keyref constraints, which are used during the XML Schema mapping process to generate not only the constraints but also the relationship in the **DataSet**. However, if you specify `msdata:ConstraintOnly="true"` in the **keyref** element, the **DataSet** will include only the constraints and will not include the relationship.  
   
  The following example shows an XML Schema that includes **Order** and **OrderDetail** elements, which are not nested. The schema also specifies key and keyref constraints.  

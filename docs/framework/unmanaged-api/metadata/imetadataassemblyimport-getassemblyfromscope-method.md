@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyImport::GetAssemblyFromScope Method
+
 Gets a pointer to the assembly in the current scope.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetAssemblyFromScope (
 ```  
   
 ## Parameters  
+
  `ptkAssembly`  
  [out] A pointer to the retrieved `mdAssembly` token that identifies the assembly.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

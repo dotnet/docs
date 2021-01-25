@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 90f308b9-82dc-414a-bce1-77e0155e56bd
 ---
 # Registration-Free COM Interop
+
 Registration-free COM interop activates a component without using the Windows registry to store assembly information. Instead of registering a component on a computer during deployment, you create Win32-style manifest files at design time that contain information about binding and activation. These manifest files, rather than registry keys, direct the activation of an object.  
   
  Using registration-free activation for your assemblies instead of registering them during deployment offers two advantages:  

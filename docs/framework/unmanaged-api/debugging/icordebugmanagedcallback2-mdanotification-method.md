@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback2::MDANotification Method
+
 Provides notification that code execution has encountered a managed debugging assistant (MDA) in the application that is being debugged.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT MDANotification(
 ```  
   
 ## Parameters  
+
  `pController`  
  [in] A pointer to an ICorDebugController interface that exposes the process or application domain in which the MDA occurred.  
   
@@ -46,6 +48,7 @@ HRESULT MDANotification(
  [in] A pointer to an [ICorDebugMDA](icordebugmda-interface.md) interface that exposes the MDA information.  
   
 ## Remarks  
+
  An MDA is a heuristic warning and does not require any explicit debugger action except for calling [ICorDebugController::Continue](icordebugcontroller-continue-method.md) to resume execution of the application that is being debugged.  
   
  The common language runtime (CLR) can determine which MDAs are fired and which data is in any given MDA at any point. Therefore, debuggers should not build any functionality requiring specific MDA patterns.  
@@ -55,6 +58,7 @@ HRESULT MDANotification(
  A debugger should release the reference to an `ICorDebugMDA` instance immediately after returning from the `MDANotification` callback, to allow the CLR to recycle the memory consumed by an MDA. Releasing the instance may improve performance if many MDAs are firing.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

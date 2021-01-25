@@ -13,3 +13,15 @@ If there is a need for databinding, manually invoke databind in an event that is
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

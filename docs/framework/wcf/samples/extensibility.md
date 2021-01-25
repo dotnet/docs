@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: cd7ddffc-a261-44aa-bd50-33c1c74f0df0
 ---
 # Extensibility
+
 This section contains samples that deal with custom extensibility and other features of Windows Communication Foundation (WCF).  
   
 ## In This Section  
+
  [Channels Extensibility](channels-extensibility.md)  
  Demonstrates custom channels.  
   

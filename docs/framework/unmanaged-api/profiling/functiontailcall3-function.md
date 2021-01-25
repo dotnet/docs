@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # FunctionTailcall3 Function
+
 Notifies the profiler that the currently executing function is about to perform a tail call to another function.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
   \[in] The identifier of the currently executing function that is about to make a tail call.
 
 ## Remarks  
+
  The `FunctionTailcall3` callback function notifies the profiler as functions are being called. Use the [ICorProfilerInfo3::SetEnterLeaveFunctionHooks3 method](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) to register your implementation of this function.  
   
  The `FunctionTailcall3` function is a callback; you must implement it. The implementation must use the `__declspec(naked)` storage-class attribute.  
@@ -46,6 +48,7 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
  The `FunctionTailcall3` function must not call into managed code or cause a managed memory allocation in any way.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl  

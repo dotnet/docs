@@ -1,11 +1,11 @@
 ---
-title: Durable Azure functions - Serverless apps
-description: Durable Azure functions extend the Azure Functions runtime to enable stateful workflows in code.
+title: Durable Azure Functions - Serverless apps
+description: Durable Azure Functions extend the Azure Functions runtime to enable stateful workflows in code.
 author: cecilphillip
 ms.author: cephilli
 ms.date: 06/26/2018
 ---
-# Durable Azure functions
+# Durable Azure Functions
 
 When creating serverless applications with Azure Functions, your operations will typically be designed to run in a stateless manner. The reason for this design choice is because as the platform scales, it becomes difficult to know what servers the code is running on. It also becomes difficult to know how many instances are active at any given point. However, there are classes of applications that require the current state of a process to be known. Consider the process of submitting an order to an online store. The checkout operation might be a workflow that is composed of multiple operations that need to know the state of the process. Such information may include the product inventory, if the customer has any credits on their account, and also the results of processing the credit card. These operations could easily be their own internal workflows or even services from third-party systems.
 
@@ -90,9 +90,9 @@ public static bool CheckAndReserveInventory([ActivityTrigger] DurableActivityCon
 
 ## Recommended resources
 
-- [Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview)
-- [Bindings for Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings)
-- [Manage instances in Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-instance-management)
+- [Durable Functions](/azure/azure-functions/durable-functions-overview)
+- [Bindings for Durable Functions](/azure/azure-functions/durable-functions-bindings)
+- [Manage instances in Durable Functions](/azure/azure-functions/durable-functions-instance-management)
 
 >[!div class="step-by-step"]
 >[Previous](event-grid.md)

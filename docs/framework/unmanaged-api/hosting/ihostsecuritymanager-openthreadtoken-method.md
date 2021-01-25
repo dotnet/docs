@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSecurityManager::OpenThreadToken Method
+
 Opens the discretionary access token associated with the currently executing thread.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT OpenThreadToken (
 ```  
   
 ## Parameters  
+
  `dwDesiredAccess`  
  [in] A mask of access values that specify the requested types of access to the thread token. These values are defined in the Win32 `OpenThreadToken` function. The requested access types are reconciled against the token's discretionary access control list (DACL) to determine which types of access to grant or deny.  
   
@@ -51,11 +53,13 @@ HRESULT OpenThreadToken (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  `IHostSecurityManager::OpenThreadToken` behaves similarly to the corresponding Win32 function of the same name, except that the Win32 function allows the caller to pass in a handle to an arbitrary thread, while `IHostSecurityManager::OpenThreadToken` opens only the token associated with the calling thread.  
   
  The `HANDLE` type is not COM-compliant, that is, its size is specific to the operating system, and it requires custom marshaling. Thus, this token is for use only within the process, between the CLR and the host.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

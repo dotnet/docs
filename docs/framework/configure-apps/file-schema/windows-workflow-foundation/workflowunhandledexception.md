@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: 57adeab5-f06a-44b2-916b-0e177cf0f4a6
 ---
 # \<workflowUnhandledException>
+
 A service behavior that enables you to specify the action to take when an unhandled exception occurs within a workflow service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ A service behavior that enables you to specify the action to take when an unhand
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ A service behavior that enables you to specify the action to take when an unhand
 |action|A string that specifies the action to take when an unhandled exception occurs. This attribute is of type <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction>|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

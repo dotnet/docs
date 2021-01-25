@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
 ---
 # What You Can Do With LINQ to SQL
+
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports all the key capabilities you would expect as a SQL developer. You can query for information, and insert, update, and delete information from tables.  
   
 ## Selecting  
+
  Selecting (*projection*) is achieved by just writing a LINQ query in your own programming language, and then executing that query to retrieve the results. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] itself translates all the necessary operations into the necessary SQL operations that you are familiar with. For more information, see [LINQ to SQL](index.md).  
   
  In the following example, the company names of customers from London are retrieved and displayed in the console window.  
@@ -18,6 +20,7 @@ ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
  [!code-vb[DLinqGettingStarted#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqGettingStarted/vb/Module1.vb#1)]  
   
 ## Inserting  
+
  To execute a SQL `Insert`, just add objects to the object model you have created, and call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> on the <xref:System.Data.Linq.DataContext>.  
   
  In the following example, a new customer and information about the customer is added to the `Customers` table by using <xref:System.Data.Linq.Table%601.InsertOnSubmit%2A>.  
@@ -26,6 +29,7 @@ ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
  [!code-vb[DLinqGettingStarted#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqGettingStarted/vb/Module1.vb#2)]  
   
 ## Updating  
+
  To `Update` a database entry, first retrieve the item and edit it directly in the object model. After you have modified the object, call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> on the <xref:System.Data.Linq.DataContext> to update the database.  
   
  In the following example, all customers who are from London are retrieved. Then the name of the city is changed from "London" to "London - Metro". Finally, <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called to send the changes to the database.  
@@ -34,6 +38,7 @@ ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
  [!code-vb[DLinqGettingStarted#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqGettingStarted/vb/Module1.vb#3)]  
   
 ## Deleting  
+
  To `Delete` an item, remove the item from the collection to which it belongs, and then call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> on the <xref:System.Data.Linq.DataContext> to commit the change.  
   
 > [!NOTE]

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CLRRuntimeHost Coclass
+
 Provides interfaces for managing code execution by the runtime.  
   
 ## Syntax  
@@ -35,6 +36,7 @@ coclass CLRRuntimeHost {
 |[ICLRValidator Interface](iclrvalidator-interface.md)|Provides methods for validation of portable executable images and for detailed reporting of validation errors.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  

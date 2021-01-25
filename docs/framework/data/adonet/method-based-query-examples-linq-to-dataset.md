@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: d340775c-7f39-4087-a290-5cbec6cfa68e
 ---
 # Method-Based Query Examples (LINQ to DataSet)
+
 This section provides LINQ to DataSet programming examples in method-based query syntax that use the standard query operators. The <xref:System.Data.DataSet> used in these examples is populated by using the `FillDataSet` method, which is specified in [Loading Data Into a DataSet](loading-data-into-a-dataset.md). For more information, see [Standard Query Operators Overview (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) or [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
 ## In This Section  
+
  [Projection](method-based-query-syntax-examples-projection.md)  
  The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.Select%2A> and <xref:System.Linq.Enumerable.SelectMany%2A> methods to query a <xref:System.Data.DataSet>.  
   

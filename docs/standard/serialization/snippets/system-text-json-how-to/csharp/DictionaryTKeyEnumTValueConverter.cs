@@ -45,8 +45,8 @@ namespace SystemTextJsonSamples
             JsonConverter<Dictionary<TKey, TValue>> where TKey : struct, Enum
         {
             private readonly JsonConverter<TValue> _valueConverter;
-            private Type _keyType;
-            private Type _valueType;
+            private readonly Type _keyType;
+            private readonly Type _valueType;
 
             public DictionaryEnumConverterInner(JsonSerializerOptions options)
             {
@@ -69,7 +69,7 @@ namespace SystemTextJsonSamples
                     throw new JsonException();
                 }
 
-                Dictionary<TKey, TValue> dictionary = new Dictionary<TKey, TValue>();
+                var dictionary = new Dictionary<TKey, TValue>();
 
                 while (reader.Read())
                 {
@@ -95,19 +95,19 @@ namespace SystemTextJsonSamples
                     }
 
                     // Get the value.
-                    TValue v;
+                    TValue value;
                     if (_valueConverter != null)
                     {
                         reader.Read();
-                        v = _valueConverter.Read(ref reader, _valueType, options);
+                        value = _valueConverter.Read(ref reader, _valueType, options);
                     }
                     else
                     {
-                        v = JsonSerializer.Deserialize<TValue>(ref reader, options);
+                        value = JsonSerializer.Deserialize<TValue>(ref reader, options);
                     }
 
                     // Add to dictionary.
-                    dictionary.Add(key, v);
+                    dictionary.Add(key, value);
                 }
 
                 throw new JsonException();
@@ -120,17 +120,19 @@ namespace SystemTextJsonSamples
             {
                 writer.WriteStartObject();
 
-                foreach (KeyValuePair<TKey, TValue> kvp in dictionary)
+                foreach ((TKey key, TValue value) in dictionary)
                 {
-                    writer.WritePropertyName(kvp.Key.ToString());
+                    var propertyName = key.ToString();
+                    writer.WritePropertyName
+                        (options.PropertyNamingPolicy?.ConvertName(propertyName) ?? propertyName);
 
                     if (_valueConverter != null)
                     {
-                        _valueConverter.Write(writer, kvp.Value, options);
+                        _valueConverter.Write(writer, value, options);
                     }
                     else
                     {
-                        JsonSerializer.Serialize(writer, kvp.Value, options);
+                        JsonSerializer.Serialize(writer, value, options);
                     }
                 }
 

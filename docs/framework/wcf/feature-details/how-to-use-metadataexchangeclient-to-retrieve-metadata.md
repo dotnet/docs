@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0754e9dc-13c5-45c2-81b5-f3da466e5a87
 ---
 # How to: Use MetadataExchangeClient to Retrieve Metadata
+
 Use the <xref:System.ServiceModel.Description.MetadataExchangeClient> class to download metadata using the WS-MetadataExchange (MEX) protocol. The retrieved metadata files are returned as a <xref:System.ServiceModel.Description.MetadataSet> object. The returned <xref:System.ServiceModel.Description.MetadataSet> object contains a collection of <xref:System.ServiceModel.Description.MetadataSection> objects, each of which contains a specific metadata dialect and an identifier. You can write the returned metadata to files or, if the returned metadata contains Web Services Description Language (WSDL) documents, you can import the metadata using the <xref:System.ServiceModel.Description.WsdlImporter>.  
   
  The <xref:System.ServiceModel.Description.MetadataExchangeClient> constructors that take an address use the binding on the <xref:System.ServiceModel.Description.MetadataExchangeBindings> static class that matches the Uniform Resource Identifier (URI) scheme of the address. You can alternatively use the <xref:System.ServiceModel.Description.MetadataExchangeClient> constructor that allows you to explicitly specify the binding to use. The specified binding is used to resolve all metadata references.  
@@ -22,11 +23,13 @@ Use the <xref:System.ServiceModel.Description.MetadataExchangeClient> class to d
 3. Obtain the <xref:System.ServiceModel.Description.MetadataSet> object that contains the retrieved metadata by calling one of the <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> methods. Note that you can only use the <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> overload that takes no arguments if you explicitly specified an address when constructing the <xref:System.ServiceModel.Description.MetadataExchangeClient>.  
   
 ## Example  
+
  The following code example shows how to use <xref:System.ServiceModel.Description.MetadataExchangeClient> to download and enumerate metadata files.  
 
  [!code-csharp[MetadataResolver#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/metadataresolver/cs/client.cs#3)]  
 
 ## Compiling the Code  
+
  To compile this code example, you must reference the System.ServiceModel.dll assembly and import the <xref:System.ServiceModel.Description> namespace.  
   
 ## See also

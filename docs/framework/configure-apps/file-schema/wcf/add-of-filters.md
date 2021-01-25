@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e3bf437c-dd99-49f3-9792-9a8721e6eaad
 ---
 # \<add> of \<filters>
+
 A XPath filter that specifies the kind of message to be logged.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,6 +23,7 @@ A XPath filter that specifies the kind of message to be logged.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -31,6 +33,7 @@ A XPath filter that specifies the kind of message to be logged.
 |filter|A string that specifies a query on an XML document defined by an XPath 1.0 expression. For more information, see <xref:System.ServiceModel.Dispatcher.XPathMessageFilter>.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -40,6 +43,7 @@ A XPath filter that specifies the kind of message to be logged.
 |[\<filters>](filters.md)|Contains a collection of XPath filters used to control what kind of message is logged.|  
   
 ## Remarks  
+
  Filters are applied only at the transport layer, specified by `logMessagesAtTransportLevel` is `true`. Service level and malformed message logging are not affected by filters.  
   
  To add a filter to the collection, use the `add` keyword. When one or more filters are defined, only messages that match at least one of the filters are logged. If no filter is defined, all messages pass through.  
@@ -49,6 +53,7 @@ A XPath filter that specifies the kind of message to be logged.
  The following is an example of how to configure a filter that records only messages that have a SOAP Header section.  
   
 ## Example  
+
  The following is an example of how to configure a filter that records only messages that have a SOAP Header section.  
   
 ```xml  

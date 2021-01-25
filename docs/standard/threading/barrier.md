@@ -1,7 +1,6 @@
 ---
 title: "Barrier"
 ms.date: "09/14/2018"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 560e3879-b0b3-4549-ad02-0a53aff2f83c
 ---
 # How to query for files with a specified attribute or name (C#)
+
 This example shows how to find all files that have a specified file name extension (for example ".txt") in a specified directory tree. It also shows how to return either the newest or oldest file in the tree based on the creation time.  
   
 ## Example  
@@ -59,6 +60,7 @@ class FindFileByExtension
 ```  
   
 ## Compiling the Code  
+
   Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
   
 ## See also

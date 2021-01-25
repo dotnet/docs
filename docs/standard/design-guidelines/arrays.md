@@ -1,7 +1,6 @@
 ---
 title: "Arrays"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "class library design guidelines [.NET Framework], arrays"
   - "arrays [.NET Framework], usage guidelines"
@@ -9,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
 ---
 # Arrays
+
 ✔️ DO prefer using collections over arrays in public APIs. The [Collections](guidelines-for-collections.md) section provides details about how to choose between collections and arrays.
 
  ❌ DO NOT use read-only array fields. The field itself is read-only and can't be changed, but elements in the array can be changed.

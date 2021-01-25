@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
 ---
 # + Operator (Visual Basic)
+
 Adds two numbers or returns the positive value of a numeric expression. Can also be used to concatenate two string expressions.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ or
 |`expression2`|Required unless the `+` operator is calculating a negative value. Any numeric or string expression.|  
   
 ## Result  
+
  If `expression1` and `expression2` are both numeric, the result is their arithmetic sum.  
   
  If `expression2` is absent, the `+` operator is the *unary* identity operator for the unchanged value of an expression. In this sense, the operation consists of retaining the sign of `expression1`, so the result is negative if `expression1` is negative.  
@@ -43,9 +45,11 @@ or
  If `expression1` and `expression2` are of mixed types, the action taken depends on their types, their contents, and the setting of the [Option Strict Statement](../statements/option-strict-statement.md). For more information, see the tables in "Remarks."  
   
 ## Supported Types  
+
  All numeric types, including the unsigned and floating-point types and `Decimal`, and `String`.  
   
 ## Remarks  
+
  In general, `+` performs arithmetic addition when possible, and concatenates only when both expressions are strings.  
   
  If neither expression is an `Object`, Visual Basic takes the following actions.  
@@ -81,9 +85,11 @@ or
 > When you use the `+` operator, you might not be able to determine whether addition or string concatenation will occur. Use the `&` operator for concatenation to eliminate ambiguity and to provide self-documenting code.  
   
 ## Overloading  
+
  The `+` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
+
  The following example uses the `+` operator to add numbers. If the operands are both numeric, Visual Basic computes the arithmetic result. The arithmetic result represents the sum of the two operands.  
   
  [!code-vb[VbVbalrOperators#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#6)]  

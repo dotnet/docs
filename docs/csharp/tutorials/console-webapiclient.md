@@ -1,13 +1,13 @@
 ---
 title: Create a REST client using .NET Core
-description: This tutorial teaches you a number of features in .NET Core and the C# language.
+description: This tutorial teaches you about some features in .NET Core and the C# language.
 ms.date: 01/09/2020
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 ---
 
 # REST client
 
-This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
+This tutorial teaches you a number of features in .NET Core and the C# language. You'll learn:
 
 * The basics of the .NET Core CLI.
 * An overview of C# Language features.
@@ -16,22 +16,22 @@ This tutorial teaches you a number of features in .NET Core and the C# language.
 * Processing JSON information
 * Managing configuration with Attributes.
 
-You’ll build an application that issues HTTP Requests to a REST
+You'll build an application that issues HTTP Requests to a REST
 service on GitHub. You'll read information in JSON format, and convert
 that JSON packet into C# objects. Finally, you'll see how to work with
 C# objects.
 
-There are many features in this tutorial. Let’s build them one by one.
+There are many features in this tutorial. Let's build them one by one.
 
-If you prefer to follow along with the [final sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) for this topic, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+If you prefer to follow along with the [final sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) for this article, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET core. You can find the
+You'll need to set up your machine to run .NET core. You can find the
 installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
 page. You can run this
-application on Windows, Linux, macOS or in a Docker container.
-You’ll need to install your favorite code editor. The descriptions below
+application on Windows, Linux, or macOS, or in a Docker container.
+You'll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/), which is an open
 source, cross platform editor. However, you can use whatever tools you are
 comfortable with.
@@ -48,7 +48,7 @@ dotnet new console --name WebAPIClient
 
 This creates the starter files for a basic "Hello World" application. The project name is "WebAPIClient". As this is a new project, none of the dependencies are in place. The first run will download the .NET Core framework, install a development certificate, and run the NuGet package manager to restore missing dependencies.
 
-Before you start making modifications, type
+Before you start making modifications, `cd` into the "WebAPIClient" directory and type
 `dotnet run` ([see note](#dotnet-restore-note)) at the command prompt to
 run your application. `dotnet run` automatically performs `dotnet restore`
 if your environment is missing dependencies. It also performs `dotnet build` if your application needs to be rebuilt.
@@ -161,7 +161,7 @@ using System.Net.Http.Headers;
 ```
 
 This first version makes a web request to read the list of all repositories under the dotnet
-foundation organization. (The gitHub ID for the .NET Foundation is 'dotnet'). The first few lines set up
+foundation organization. (The GitHub ID for the .NET Foundation is `dotnet`.) The first few lines set up
 the <xref:System.Net.Http.HttpClient> for this request. First, it is configured to accept the GitHub JSON responses.
 This format is simply JSON. The next line adds a User Agent header to all requests from this
 object. These two headers are checked by the GitHub server code, and are necessary to retrieve
@@ -244,7 +244,7 @@ foreach (var repo in repositories)
     Console.WriteLine(repo.name);
 ```
 
-Compile and run the application. It will print out the names of the repositories that are part of the
+Compile and run the application. It will print the names of the repositories that are part of the
 .NET Foundation.
 
 ## Controlling Serialization

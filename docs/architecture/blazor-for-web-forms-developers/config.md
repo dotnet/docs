@@ -4,7 +4,7 @@ description: Learn how to configure Blazor apps without using ConfigurationManag
 author: csharpfritz
 ms.author: jefritz
 no-loc: [Blazor]
-ms.date: 04/01/2020
+ms.date: 11/20/2020
 ---
 # App configuration
 
@@ -21,9 +21,9 @@ With ASP.NET Core and server-side Blazor, the *web.config* file MAY be present i
 
 ASP.NET Core recognizes there are many configuration sources you may want to use for your app. The framework attempts to offer you the best of these features by default. Configuration is read and aggregated from these various sources by ASP.NET Core. Later loaded values for the same configuration key take precedence over earlier values.
 
-ASP.NET Core was designed to be cloud-aware and to make configuration of apps easier for both operators and developers. ASP.NET Core is environment-aware and knows if it's running in your `Production` or `Development` environment. The environment indicator is set in the `ASPNETCORE_ENVIRONMENT` system environment variable. If no value is configured, the app defaults to running in the `Production` environment.
+ASP.NET Core was designed to be cloud-aware and to make the configuration of apps easier for both operators and developers. ASP.NET Core is environment-aware and knows if it's running in your `Production` or `Development` environment. The environment indicator is set in the `ASPNETCORE_ENVIRONMENT` system environment variable. If no value is configured, the app defaults to running in the `Production` environment.
 
-Your app can trigger and add configuration from several sources based on the environment's name. By default, configuration is loaded from the following resources in the order listed:
+Your app can trigger and add configuration from several sources based on the environment's name. By default, the configuration is loaded from the following resources in the order listed:
 
 1. *appsettings.json* file, if present
 1. *appsettings.{ENVIRONMENT_NAME}.json* file, if present
@@ -57,7 +57,7 @@ User secrets are:
 * Configuration values that are stored in a JSON file on the developer's workstation, outside of the app development folder.
 * Only loaded when running in the `Development` environment.
 * Associated with a specific app.
-* Managed with the .NET Core CLI's `user-secrets` command.
+* Managed with the .NET CLI's `user-secrets` command.
 
 Configure your app for secrets storage by executing the `user-secrets` command:
 

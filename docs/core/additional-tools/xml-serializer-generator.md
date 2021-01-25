@@ -125,5 +125,5 @@ Congratulations! You have just:
 ## Related resources
 
 - [Introducing XML Serialization](../../standard/serialization/introducing-xml-serialization.md)
-- [How to serialize using XmlSerializer (C#)](../../csharp/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)
-- [How to: Serialize Using XmlSerializer (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)
+- [How to serialize using XmlSerializer (C#)](../../standard/linq/serialize-xmlserializer.md)
+- [How to: Serialize Using XmlSerializer (Visual Basic)](../../standard/linq/serialize-xmlserializer.md)

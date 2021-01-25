@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugChain::GetContext Method
+
 This method is not implemented in the current version of the .NET Framework.  
   
 ## Syntax  

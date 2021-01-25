@@ -12,6 +12,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugILFrame4 Interface
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  Provides methods that allow you to access the local variables and code in a stack frame of intermediate language (IL) code. A parameter specifies whether the debugger has access to variables and code added in profiler ReJIT instrumentation.  
@@ -25,9 +26,11 @@ topic_type:
 |[GetLocalVariableEx Method](icordebugilframe4-getlocalvariableex-method.md)|Returns the value of a local variable in the IL frame.|  
   
 ## Remarks  
+
  These methods offer functionality in addition to that provided by the [EnumerateLocalVariables](icordebugilframe-enumeratelocalvariables-method.md), [GetCode](icordebugframe-getcode-method.md), and [GetLocalVariable](icordebugilframe-getlocalvariable-method.md) methods. Each method includes a `flags` parameter that specifies whether additional local variables or code defined by a profiler's ReJIT request are visible.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

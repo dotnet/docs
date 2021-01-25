@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 0513af9f-a0c2-457b-9a50-5b6bfee48513
 ---
 # Developing Channels
+
 To develop a protocol or transport channel that can be used with the Windows Communication Foundation (WCF) application layer requires several steps. This topic describes those steps and points you to specific topics for more information. To understand the channel model and the various types that are mentioned in this topic, see [Channel Model Overview](channel-model-overview.md). For a complete transport channel sample, see [Transport: UDP](../samples/transport-udp.md).  
   
 ## The Channel Development Task List  
+
  The steps to create a user-defined channel are as follows. All channels must:  
   
 1. Decide which of the channel Message Exchange Patterns (<xref:System.ServiceModel.Channels.IOutputChannel>, <xref:System.ServiceModel.Channels.IInputChannel>, <xref:System.ServiceModel.Channels.IDuplexChannel>, <xref:System.ServiceModel.Channels.IRequestChannel>, or <xref:System.ServiceModel.Channels.IReplyChannel>) your <xref:System.ServiceModel.Channels.IChannelFactory> and <xref:System.ServiceModel.Channels.IChannelListener> will support, as well as whether it will support the sessionful variations of these interfaces. For details, see [Choosing a Message Exchange Pattern](choosing-a-message-exchange-pattern.md).  

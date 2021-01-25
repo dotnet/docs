@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
 ---
 # Measuring Startup Improvement with .NET Native
+
 .NET Native significantly improves the launch time of apps. This improvement is particularly noticeable on portable, low-powered devices and with complex apps. This topic helps you get started with the basic instrumentation needed to measure this startup improvement.  
   
  To facilitate performance investigations, the .NET Framework and Windows use an event framework called Event Tracing for Windows (ETW) that allows your app to notify tooling when events happen. You can then use a tool called PerfView to easily view and analyze of ETW events. This topic explains how to:  
@@ -15,6 +16,7 @@ ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
 - Use PerfView to display those events.  
   
 ## Using EventSource to emit events  
+
  <xref:System.Diagnostics.Tracing.EventSource> provides a base class from which to create a custom event provider. Generally, you create a subclass of <xref:System.Diagnostics.Tracing.EventSource> and wrap the `Write*` methods with your own event methods. A singleton pattern is generally used for each <xref:System.Diagnostics.Tracing.EventSource>.  
   
  For example, the class in the following example can be used to measure two performance characteristics:  
@@ -46,10 +48,11 @@ ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
  When the app is instrumented, you’re ready to gather events.  
   
 ## Gathering events with PerfView  
+
  PerfView uses ETW events to help you do all sorts of performance investigations on your app. It also includes a configuration GUI that lets you turn logging for different types of events on or off. PerfView is a free tool and can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=28567). For more information, watch the [PerfView tutorial videos](https://channel9.msdn.com/Series/PerfView-Tutorial).  
   
 > [!NOTE]
-> PerfView cannot be used to collect events on ARM systems. To collect events on ARM systems, use Windows Performance Recorder (WPR). For more information, see [Vance Morrison's blog post](https://docs.microsoft.com/archive/blogs/vancem/collecting-etwperfview-data-on-an-windows-rt-winrt-arm-surface-device).  
+> PerfView cannot be used to collect events on ARM systems. To collect events on ARM systems, use Windows Performance Recorder (WPR). For more information, see [Vance Morrison's blog post](/archive/blogs/vancem/collecting-etwperfview-data-on-an-windows-rt-winrt-arm-surface-device).  
   
  You can also invoke PerfView from the command line. To log only the events from your provider, open the Command Prompt window and enter the command:  
   
@@ -79,6 +82,7 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
  When you’ve run your app so that PerfView can collect emitted events, choose the **Stop Collection** button. Generally, you should stop collection before closing your app so you don’t get extraneous events. However, if you’re measuring shutdown or suspension performance, you’ll want to continue collection.  
   
 ## Displaying the events  
+
  To view the events that have already been collected, use PerfView to open the .etl or .etl.zip file you created and choose **Events**. ETW will have collected information about a large number of events, including events from other processes. To focus your investigation, complete the following text boxes in the events view:  
   
 - In the **Process Filter** box, specify your app name (without ".exe").  
@@ -87,7 +91,7 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
   
  Select all the events listed in the left pane (Ctrl-A) and choose the **Enter** key. Now, you should be able to see the timestamps from each event. These timestamps are relative to the start of the trace, so you have to subtract the time of each event from the start time of the process to identify the elapsed time since startup. If you use Ctrl+Click to select two timestamps, you'll see the difference between them displayed in the status bar at the bottom of the page. This makes it easy to see the elapsed time between any two events in the display (including process start). You can open the shortcut menu for the view and select from a number of useful options, like exporting to CSV files or opening Microsoft Excel to save or process the data.  
   
- By repeating the procedure for both your original app and the version you built by using the .NET Native tool chain, you can compare the difference in performance.   .NET Native apps generally start faster than non-.NET Native apps. If you’re interested in digging deeper, PerfView can also identify the parts of your code that are taking the most time. For more information, watch the [PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial) or read [Vance Morrison’s blog entry](https://docs.microsoft.com/archive/blogs/vancem/publication-of-the-perfview-performance-analysis-tool).  
+ By repeating the procedure for both your original app and the version you built by using the .NET Native tool chain, you can compare the difference in performance.   .NET Native apps generally start faster than non-.NET Native apps. If you’re interested in digging deeper, PerfView can also identify the parts of your code that are taking the most time. For more information, watch the [PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial) or read [Vance Morrison’s blog entry](/archive/blogs/vancem/publication-of-the-perfview-performance-analysis-tool).  
   
 ## See also
 

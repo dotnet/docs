@@ -14,7 +14,7 @@ The affected APIs are marked with the `public` access modifier and exist in `*.I
 
 #### New behavior
 
-The affected APIs are marked with the [internal](/dotnet/csharp/language-reference/keywords/internal) access modifier and can no longer be used by code outside that assembly.
+The affected APIs are marked with the [internal](../../../../docs/csharp/language-reference/keywords/internal.md) access modifier and can no longer be used by code outside that assembly.
 
 #### Reason for change
 

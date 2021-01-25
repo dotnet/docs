@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: f487bf4f-c943-4fca-851b-e540c83d9027
 ---
 # extern alias (C# Reference)
+
 You might have to reference two versions of assemblies that have the same fully-qualified type names. For example, you might have to use two or more versions of an assembly in the same application. By using an external assembly alias, the namespaces from each assembly can be wrapped inside root-level namespaces named by the alias, which enables them to be used in the same file.  
   
 > [!NOTE]
@@ -55,6 +56,7 @@ using Class1V2 = GridV2::Namespace.Class1;
 ```
 
 ## C# Language Specification  
+
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also

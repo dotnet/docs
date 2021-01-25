@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyEmit::DefineExportedType Method
+
 Creates an `ExportedType` structure containing metadata for the specified exported type, and returns the associated metadata token.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT DefineExportedType (
 ```  
   
 ## Parameters  
+
  `szName`  
  [in] The name of type to be exported. For version 1.1 of the common language runtime, the name of the exported type must exactly match the name given in the `TypeDef` for the type.  
   
@@ -56,9 +58,11 @@ HRESULT DefineExportedType (
  [out] A pointer to the returned metadata token that indicates the exported type.  
   
 ## Remarks  
+
  An `ExportedType` metadata structure must be defined for each type that is exposed by this assembly and that is implemented in a module other than the one containing the manifest.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

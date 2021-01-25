@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
 ---
 # \<probing> Element
+
 Specifies application base subdirectories for the common language runtime to search when loading assemblies.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies application base subdirectories for the common language runtime to sea
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -46,6 +48,7 @@ None.
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Example  
+
  The following example shows how to specify application base subdirectories the runtime should search for assemblies.  
   
 ```xml  

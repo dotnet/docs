@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4609418d-71fa-44bc-9618-4d529d25cabb
 ---
 # ICorDebugVariableSymbol::SetValue Method
+
 Assigns the value of a byte array to a variable.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ HRESULT SetValue(
 ```  
   
 ## Parameters  
+
  `offset`  
  [in] The starting offset in the variable at which to set the value. This parameter is used when writing to member fields in an object.  
   
@@ -44,6 +46,7 @@ HRESULT SetValue(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: f559b2bd-ed83-4988-97a1-e88f06646609
 ---
 # WCF Performance Counters
+
 Windows Communication Foundation (WCF) includes a large set of performance counters to help you gauge your application's performance.  
   
 ## Enabling Performance Counters  
+
  You can enable performance counters for a WCF service through the app.config configuration file of the WCF service as follows:  
   
 ```xml  
@@ -45,12 +47,14 @@ config.Save();
 ```  
   
 ## Viewing Performance Data  
+
  To view data captured by the performance counters, you can use the Performance Monitor (Perfmon.exe) that comes with Windows. You can launch this tool by going to **Start**, and click **Run** and type `perfmon.exe` in the dialog box.  
   
 > [!NOTE]
 > Performance counter instances may be released before the last messages have been processed by the endpoint dispatcher. This can result in performance data not being captured for a few messages.  
   
 ## Increasing Memory Size for Performance Counters  
+
  WCF uses separate shared memory for its performance counter categories.  
   
  By default, separate shared memory is set to a quarter the size of global performance counter memory. The default global performance counter memory is 524,288 bytes. Therefore, the three WCF performance counter categories have a default size of approximately 128KB each. Depending upon the runtime characteristics of the WCF applications on a machine, performance counter memory may be exhausted. When this happens, WCF writes an error to the application event log. The content of the error states that a performance counter was not loaded, and the entry contains the exception "System.InvalidOperationException: Custom counters file view is out of memory." If tracing is enabled at the error level, this failure is also traced. If performance counter memory is exhausted, continuing to run your WCF applications with performance counters enabled could result in performance degradation. If you are an administrator of the machine, you should configure it to allocate enough memory to support the maximum number of performance counters that can exist at any time.  
@@ -66,6 +70,7 @@ config.Save();
  When a large number of objects (for example, ServiceHost) are disposed of but waiting to be garbage-collected, the `PrivateBytes` performance counter will register an unusually high number. To resolve this problem, you can either add your own application-specific counters, or use the `performanceCounters` attribute to enable only service-level counters.  
   
 ## Types of Performance Counters  
+
  Performance counters are scoped to three different levels: Service, Endpoint and Operation.  
   
  You can use WMI to retrieve the name of a performance counter instance. For example,  
@@ -79,6 +84,7 @@ config.Save();
  For more information on WMI, see [Using Windows Management Instrumentation for Diagnostics](../wmi/index.md).  
   
 ### Service performance counters  
+
  Service performance counters measure the service behavior as a whole and can be used to diagnose the performance of the whole service. They can be found under the `ServiceModelService 4.0.0.0` performance object when viewing with Performance Monitor. The instances are named using the following pattern:  
   
 `ServiceName@ServiceBaseAddress`
@@ -88,6 +94,7 @@ config.Save();
  Performance counters for service instance creation are incremented when a new InstanceContext is created. Note that a new InstanceContext is created even when you receive a non-activating message (with an existing service), or when you connect to an instance from one session, end the session, and then reconnect from another session.  
   
 ### Endpoint performance counters  
+
  Endpoint performance counters enable you to look at data reflecting how an endpoint is accepting messages. They can be found under the `ServiceModelEndpoint 4.0.0.0` performance object when viewing using the Performance Monitor. The instances are named using the following pattern:  
   
 `(ServiceName).(ContractName)@(endpoint listener address)`
@@ -100,6 +107,7 @@ config.Save();
 > If two endpoints have identical contract names and addresses, they are mapped to the same counter instance.  
   
 ### Operation performance counters  
+
  Operation performance counters are found under the `ServiceModelOperation 4.0.0.0` performance object when viewing with the Performance Monitor. Each operation has an individual instance. That is, if a given contract has 10 operations, 10 operation counter instances are associated with that contract. The object instances are named using the following pattern:  
   
 `(ServiceName).(ContractName).(OperationName)@(first endpoint listener address)`
@@ -121,7 +129,7 @@ Several files are installed in the SDK install folder so that you can access the
 - *\_SMSvcHostPerfCounters.vrg*
 - *\_TransactionBridgePerfCounters.vrg*
   
-For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/5f9bkxzf(v=vs.90)).
+For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](/previous-versions/visualstudio/visual-studio-2008/5f9bkxzf(v=vs.90)).
   
 ## See also
 

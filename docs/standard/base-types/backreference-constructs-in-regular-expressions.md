@@ -2,14 +2,13 @@
 title: Backreference Constructs in .NET Regular Expressions
 description: Learn how to identify repeated text elements by using backreference constructs in a regular expression.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
   - "backreferences"
   - "constructs, backreference"
-  - ".NET Framework regular expressions, backreference constructs"
+  - ".NET regular expressions, backreference constructs"
   - "regular expressions, backreference constructs"
 ms.assetid: 567a4b8d-0e79-49dc-8df9-f4b1aa376a2a
 ---

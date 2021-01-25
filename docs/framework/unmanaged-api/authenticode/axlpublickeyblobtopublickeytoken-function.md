@@ -10,6 +10,7 @@ api_type:
 ms.assetid: 2d92a746-d68c-4f53-a16e-727f071a2d80
 ---
 # \_AxlPublicKeyBlobToPublicKeyToken Function
+
 Computes the strong name public key token from a CSP PUBLICKEYBLOB format.  
   
 ## Syntax  
@@ -22,6 +23,7 @@ HRESULT _AxlPublicKeyBlobToPublicKeyToken (
 ```  
   
 ## Parameters  
+
  `pCspPublicKeyBlob`  
  [in] The CSP public key blob.  
   
@@ -29,6 +31,7 @@ HRESULT _AxlPublicKeyBlobToPublicKeyToken (
  [out] A pointer to WCHAR * to receive the hex-encoded public key hash.  
   
 ## Return Value  
+
  `S_OK` if the function succeeds; otherwise `S_FALSE`.  
   
 ## See also

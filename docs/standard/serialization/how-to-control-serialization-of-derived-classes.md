@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: caa92596-9e15-4d91-acbe-56911ef47a84
 ---
 # How to: Control Serialization of Derived Classes
+
 Using the **XmlElementAttribute** attribute to change the name of an XML element is not the only way to customize object serialization. You can also customize the XML stream by deriving from an existing class and instructing the <xref:System.Xml.Serialization.XmlSerializer> instance how to serialize the new class.  
   
  For example, given a `Book` class, you can derive from it and create an `ExpandedBook` class that has a few more properties. However, you must instruct the **XmlSerializer** to accept the derived type when serializing or deserializing. This can be done by creating a <xref:System.Xml.Serialization.XmlElementAttribute> instance and setting its **Type** property to the derived class type. Add the **XmlElementAttribute** to a <xref:System.Xml.Serialization.XmlAttributes> instance. Then add the **XmlAttributes** to a <xref:System.Xml.Serialization.XmlAttributeOverrides> instance, specifying the type being overridden and the name of the member that accepts the derived class. This is shown in the following example.  

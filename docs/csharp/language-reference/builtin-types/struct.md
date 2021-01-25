@@ -1,7 +1,7 @@
 ---
-description: Learn about the struct type in C#
 title: "Structure types - C# reference"
-ms.date: 04/21/2020
+description: Learn about the struct type in C#
+ms.date: 10/23/2020
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -14,7 +14,7 @@ ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
 
 A *structure type* (or *struct type*) is a [value type](value-types.md) that can encapsulate data and related functionality. You use the `struct` keyword to define a structure type:
 
-[!code-csharp[struct example](snippets/StructType.cs#StructExample)]
+[!code-csharp[struct example](snippets/shared/StructType.cs#StructExample)]
 
 Structure types have *value semantics*. That is, a variable of a structure type contains an instance of the type. By default, variable values are copied on assignment, passing an argument to a method, and returning a method result. In the case of a structure-type variable, an instance of the type is copied. For more information, see [Value types](value-types.md).
 
@@ -24,19 +24,19 @@ Because structure types have value semantics, we recommend you to define *immuta
 
 ## `readonly` struct
 
-Beginning with C# 7.2, you use the `readonly` modifier to declare that a structure type is immutable:
-
-[!code-csharp[readonly struct](snippets/StructType.cs#ReadonlyStruct)]
-
-All data members of a `readonly` struct must be read-only as follows:
+Beginning with C# 7.2, you use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
 
 - Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
-- Any property, including auto-implemented ones, must be read-only
+- Any property, including auto-implemented ones, must be read-only. In C# 9.0 and later, a property may have an [`init` accessor](../../whats-new/csharp-9.md#init-only-setters).
 
 That guarantees that no member of a `readonly` struct modifies the state of the struct. In C# 8.0 and later, that means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 
 > [!NOTE]
 > In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you can't replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
+
+The following code defines a `readonly` struct with init-only property setters, available in C# 9.0 and later:
+
+[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
 
 ## `readonly` instance members
 
@@ -48,20 +48,24 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 
 - methods:
 
-  [!code-csharp[readonly method](snippets/StructType.cs#ReadonlyMethod)]
+  [!code-csharp[readonly method](snippets/shared/StructType.cs#ReadonlyMethod)]
 
   You can also apply the `readonly` modifier to methods that override methods declared in <xref:System.Object?displayProperty=nameWithType>:
 
-  [!code-csharp[readonly override](snippets/StructType.cs#ReadonlyOverride)]
+  [!code-csharp[readonly override](snippets/shared/StructType.cs#ReadonlyOverride)]
 
 - properties and indexers:
 
-  [!code-csharp[readonly property get](snippets/StructType.cs#ReadonlyProperty)]
+  [!code-csharp[readonly property get](snippets/shared/StructType.cs#ReadonlyProperty)]
 
   If you need to apply the `readonly` modifier to both accessors of a property or indexer, apply it in the declaration of the property or indexer.
 
   > [!NOTE]
   > The compiler declares a `get` accessor of an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of presence of the `readonly` modifier in a property declaration.
+
+  In C# 9.0 and later, you may apply the `readonly` modifier to a property or indexer with an `init` accessor:
+
+  :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
 You can't apply the `readonly` modifier to static members of a structure type.
 
@@ -89,7 +93,7 @@ Typically, you instantiate a structure type by calling an appropriate constructo
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 
-[!code-csharp[without new](snippets/StructType.cs#WithoutNew)]
+[!code-csharp[without new](snippets/shared/StructType.cs#WithoutNew)]
 
 In the case of the [built-in value types](value-types.md#built-in-value-types), use the corresponding literals to specify a value of the type.
 
@@ -112,13 +116,17 @@ Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a st
 
 Typically, you define a `ref` struct type when you need a type that also includes data members of `ref` struct types:
 
-[!code-csharp[ref struct](snippets/StructType.cs#RefStruct)]
+[!code-csharp[ref struct](snippets/shared/StructType.cs#RefStruct)]
 
 To declare a `ref` struct as [`readonly`](#readonly-struct), combine the `readonly` and `ref` modifiers in the type declaration (the `readonly` modifier must come before the `ref` modifier):
 
-[!code-csharp[readonly ref struct](snippets/StructType.cs#ReadonlyRef)]
+[!code-csharp[readonly ref struct](snippets/shared/StructType.cs#ReadonlyRef)]
 
 In .NET, examples of a `ref` struct are <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+
+## struct constraint
+
+You also use the `struct` keyword in the [`struct` constraint](../../programming-guide/generics/constraints-on-type-parameters.md) to specify that a type parameter is a non-nullable value type. Both structure and [enumeration](enum.md) types satisfy the `struct` constraint.
 
 ## Conversions
 

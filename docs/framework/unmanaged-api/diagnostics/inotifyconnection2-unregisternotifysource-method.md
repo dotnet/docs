@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # INotifyConnection2::UnregisterNotifySource Method
+
 Removes a specified notification source object from the connection.  
   
 ## Syntax  
@@ -29,13 +30,16 @@ HRESULT UnregisterNotifySource
 ```  
   
 ## Parameters  
+
  `in_pNotifySource`  
  [in] Notification object to be unregistered.  
   
 ## Return Value  
+
  S_OK if the method succeeds.  
   
 ## Requirements  
+
  **Header:** ProtocolNotify2.idl  
   
 ## See also

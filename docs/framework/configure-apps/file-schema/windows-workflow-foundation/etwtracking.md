@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: cb45c82e-6ea1-4c4d-924c-118a25ae1f35
 ---
 # \<etwTracking>
+
 A service behavior that allows a service to utilize ETW tracking using an <xref:System.Activities.Tracking.EtwTrackingParticipant>.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
 |profileName|A string that specifies the name of the tracking profile associated with this behavior.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -45,11 +48,13 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
 |[\<behavior> of \<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
 ## Remarks  
+
  When added to the service’s behavior configuration, this configuration element configures a tracking participant on a workflow service.  
   
  Tracking participants are used to get the tracking data emitted from the workflow and store it into different mediums. Likewise, any post processing on the tracking Records can also be done within the tracking participant.  
   
 ## Example  
+
  The following configuration example shows the standard ETW tracking participant being configured in the Web.config file.  
   
  The Provider Id that the ETW Tracking Participant uses for writing the Tracking Records to ETW is defined in the **\<diagnostics>** section. The tracking participant has a profile associated with it to specify the tracking records it has subscribed to. This is defined by the **profileName** attribute of the **\<add>** element. Once these are defined, the Tracking Participant is added to the **\<etwTracking>** service behavior. This will add the selected Tracking Participants to the Workflow instance’s extensions, so that they begin to receive the Tracking Records.  

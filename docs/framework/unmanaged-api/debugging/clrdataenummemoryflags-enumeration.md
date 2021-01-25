@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CLRDataEnumMemoryFlags Enumeration
+
 Indicates which memory regions a call to the [ICLRDataEnumMemoryRegions::EnumMemoryRegions](iclrdataenummemoryregions-enummemoryregions-method.md) method should include.  
   
 ## Syntax  
@@ -36,6 +37,7 @@ typedef enum CLRDataEnumMemoryFlags {
 |`CLRDATA_ENUM_MEM_HEAP`|A full heap dump.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  

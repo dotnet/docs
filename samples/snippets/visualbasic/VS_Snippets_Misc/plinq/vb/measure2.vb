@@ -1,5 +1,5 @@
 ﻿' <Snippet19>
-Module Example
+Module ExampleMeasure
     Sub Main()
         Dim source = Enumerable.Range(0, 3000000)
         ' Define parallel and non-parallel queries.
@@ -11,7 +11,7 @@ Module Example
 
         ' The query does not run until it is enumerated.
         ' Therefore, start the timer here.
-        Dim sw = System.Diagnostics.Stopwatch.StartNew()
+        Dim sw = Stopwatch.StartNew()
 
         ' For pure query cost, enumerate and do nothing else.
         For Each n As Double In queryToMeasure
@@ -19,7 +19,7 @@ Module Example
 
         sw.Stop()
         Dim elapsed As Long = sw.ElapsedMilliseconds  ' or sw.ElapsedTicks
-        Console.WriteLine("Total query time: {0} ms.", elapsed)
+        Console.WriteLine($"Total query time: {elapsed} ms.")
 
         Console.WriteLine("Press any key to exit.")
         Console.ReadKey()

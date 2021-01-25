@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: f72e9e21-f475-43f2-9464-29c8ad27b6c2
 ---
 # Type mismatch (Visual Basic)
+
 You attempted to convert a value to another type in a way that is not valid.  
   
 ## To correct this error  

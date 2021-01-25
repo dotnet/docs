@@ -11,7 +11,7 @@ A connection string contains initialization information that is passed as a para
 
 The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string. For more information, see [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md).
 
-The [Entity Data Model tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) generate a connection string that is stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property. For more information, see [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
+The [Entity Data Model tools](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) generate a connection string that is stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property. For more information, see [Managing Connections and Transactions](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
 
 ## Connection String Syntax
 
@@ -107,5 +107,5 @@ The resolution of the `DataDirectory` substitution string and the ~ operator is 
 
 - [Working with Data Providers](working-with-data-providers.md)
 - [Deployment Considerations](deployment-considerations.md)
-- [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
+- [Managing Connections and Transactions](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [Connection Strings](../connection-strings.md)

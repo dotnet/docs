@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 ---
 # \<add> Element for authenticationModules (Network Settings)
+
 Adds an authentication module to the application.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -29,6 +30,7 @@ Adds an authentication module to the application.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,6 +40,7 @@ Adds an authentication module to the application.
 |`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -47,14 +50,17 @@ Adds an authentication module to the application.
 |[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
+
  The `add` element adds an authentication module to the end of the list of registered authentication modules. Authentication modules are called in the order in which they were added to the list.  
   
  The value for the `type` attribute should be a valid type name and corresponding assembly name, separated by a comma.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example enables the default authentication modules. You should replace the values for Version and PublicKeyToken with the correct values for the specified module.  
   
 ```xml  

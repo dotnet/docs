@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_PRF_MONITOR Enumeration
+
 Contains values that are used to specify behavior, capabilities, or events to which the profiler wishes to subscribe.  
   
 ## Syntax  
@@ -92,6 +93,7 @@ typedef enum {
 ```  
   
 ## Members  
+
  The following sections list `COR_PRF_MONITOR` enumeration members by category. The categories are:  
   
 - [No flags set](#None)  
@@ -105,6 +107,7 @@ typedef enum {
 - [Composite flags](#Composite)  
   
 <a name="None"></a>
+
 ### No flags set  
   
 |Member|Description|  
@@ -112,6 +115,7 @@ typedef enum {
 |`COR_PRF_MONITOR_NONE`|No flags are set.|  
   
 <a name="Callback"></a>
+
 ### Callback flags  
   
 |Member|Description|  
@@ -138,6 +142,7 @@ typedef enum {
 |`COR_PRF_MONITOR_THREADS`|Controls the [ThreadCreated](icorprofilercallback-threadcreated-method.md),  [ThreadDestroyed](icorprofilercallback-threaddestroyed-method.md),  [ThreadAssignedToOSThread](icorprofilercallback-threadassignedtoosthread-method.md), and [ThreadNameChanged](icorprofilercallback2-threadnamechanged-method.md) callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) and [ICorProfilerCallback2](icorprofilercallback2-interface.md) interfaces.|  
   
 <a name="Feature"></a>
+
 ### Feature-enabling flags  
   
 |Member|Description|  
@@ -152,6 +157,7 @@ typedef enum {
 |`COR_PRF_ENABLE_STACK_SNAPSHOT`|Enables calls to the [DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) method.|  
   
 <a name="Config"></a>
+
 ### Configuration flags  
   
 |Member|Description|  
@@ -163,6 +169,7 @@ typedef enum {
 |`COR_PRF_USE_PROFILE_IMAGES`|Causes the native image search to look for profiler-enhanced images. If no profiler-enhanced image is found for a given assembly, the common language runtime falls back to JIT for that assembly. If this flag and the `COR_PRF_DISABLE_ALL_NGEN_IMAGES` flag are both specified, `COR_PRF_DISABLE_ALL_NGEN_IMAGES` is used.|  
   
 <a name="Composite"></a>
+
 ### Composite flags  
   
 |Member|Description|  
@@ -174,9 +181,11 @@ typedef enum {
 |`COR_PRF_REQUIRE_PROFILE_IMAGE`|Represents all `COR_PRF_MONITOR` flags that require profile-enhanced images.|  
   
 ## Remarks  
+
  A `COR_PRF_MONITOR` value is used with the [ICorProfilerInfo::GetEventMask](icorprofilerinfo-geteventmask-method.md) and [ICorProfilerInfo::SetEventMask](icorprofilerinfo-seteventmask-method.md) methods to define the event notifications that the common language runtime makes to the profiler.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

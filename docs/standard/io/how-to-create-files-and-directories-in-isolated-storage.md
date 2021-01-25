@@ -1,13 +1,12 @@
 ---
 title: "How to: Create Files and Directories in Isolated Storage"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "directories [.NET Framework], isolated storage"
-  - "files [.NET Framework], isolated storage"
+  - "directories [.NET], isolated storage"
+  - "files [.NET], isolated storage"
   - "isolated storage, creating files and directories"
   - "data stores, creating files and directories"
   - "data storage using isolated storage, creating files and directories"
@@ -28,6 +27,7 @@ After you've obtained an isolated store, you can create directories and files fo
  Isolated storage file creation will throw an <xref:System.IO.IsolatedStorage.IsolatedStorageException> if the path contains a directory that does not exist.
   
 ## Example  
+
  The following code example illustrates how to create files and directories in an isolated store.  
   
  [!code-csharp[Conceptual.IsolatedStorage#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source.cs#1)]

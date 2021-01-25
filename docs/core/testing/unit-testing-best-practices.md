@@ -62,7 +62,7 @@ The term *mock* is unfortunately often misused when talking about testing. The f
 
 *Mock* - A mock object is a fake object in the system that decides whether or not a unit test has passed or failed. A mock starts out as a Fake until it's asserted against.
 
-*Stub* - A stub is a controllable replacement for an existing dependency (or collaborator) in the system. By using a stub, you can test your code without dealing with the dependency directly. By default, a fake starts out as a stub.
+*Stub* - A stub is a controllable replacement for an existing dependency (or collaborator) in the system. By using a stub, you can test your code without dealing with the dependency directly. By default, a stub starts out as a fake.
 
 Consider the following code snippet:
 
@@ -109,6 +109,8 @@ In this case, you are checking a property on the Fake (asserting against it), so
 The main thing to remember about mocks versus stubs is that mocks are just like stubs, but you assert against the mock object, whereas you do not assert against a stub.
 
 ## Best practices
+
+Try not to introduce dependencies on infrastructure when writing unit tests. These make the tests slow and brittle and should be reserved for integration tests. You can avoid these dependencies in your application by following the [Explicit Dependencies Principle](https://deviq.com/explicit-dependencies-principle) and using [Dependency Injection](../extensions/dependency-injection.md). You can also keep your unit tests in a separate project from your integration tests. This ensures your unit test project doesn't have references to or dependencies on infrastructure packages.
 
 ### Naming your tests
 
@@ -220,7 +222,7 @@ When you introduce logic into your test suite, the chance of introducing a bug i
 
 ### Prefer helper methods to setup and teardown
 
-If you require a similar object or state for your tests, prefer a helper method than leveraging Setup and Teardown attributes if they exist.
+If you require a similar object or state for your tests, prefer a helper method than leveraging `Setup` and `Teardown` attributes if they exist.
 
 #### Why?
 

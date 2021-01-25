@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugBlockingObjectEnum::Next Method
+
 Gets the specified number of [CorDebugBlockingObject](cordebugblockingobject-structure.md) objects from the enumeration, starting at the current position.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT Next([in] ULONG  celt,
 ```  
   
 ## Parameters  
+
  `celt`  
  [in] The number of objects to retrieve.  
   
@@ -39,6 +41,7 @@ HRESULT Next([in] ULONG  celt,
  [out] A pointer to the number of objects that were retrieved.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs.  
   
 |HRESULT|Description|  
@@ -47,6 +50,7 @@ HRESULT Next([in] ULONG  celt,
 |S_FALSE|`pceltFetched` does not equal `celt`.|  
   
 ## Remarks  
+
  This method functions like a typical COM enumerator.  
   
  The input array values must be at least of size `celt`. The array will be filled with either the next `celt` values in the enumeration or with all remaining values if fewer than `celt` remain. When this method returns, `pceltFetched` will be filled with the number of values that were retrieved. If `values` contains invalid pointers or points to a buffer that is smaller than `celt`, or if `pceltFetched` is an invalid pointer, the result is undefined.  
@@ -55,6 +59,7 @@ HRESULT Next([in] ULONG  celt,
 > Although the [CorDebugBlockingObject](cordebugblockingobject-structure.md) structure does not need to be released, the "ICorDebugValue" interface inside of it does need to be released.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

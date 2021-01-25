@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
 ---
 # \<relativeBindForResources> Element
+
 Optimizes the probe for satellite assemblies.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,6 +22,7 @@ Optimizes the probe for satellite assemblies.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +39,7 @@ Optimizes the probe for satellite assemblies.
 |`true`|The runtime optimizes the probe for satellite assemblies.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -47,6 +50,7 @@ Optimizes the probe for satellite assemblies.
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
+
  In general, Resource Manager probes for resources, as documented in the [Packaging and Deploying Resources](../../../resources/packaging-and-deploying-resources-in-desktop-apps.md) topic. This means that when Resource Manager probes for a particular localized version of a resource, it may look in the global assembly cache, look in a culture-specific folder in the application's code base, query Windows Installer for satellite assemblies, and raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event. The `<relativeBindForResources>` element optimizes the way in which Resource Manager probes for satellite assemblies. It can improve performance when probing for resources under the following conditions:  
   
 - When the satellite assembly is deployed in the same location as the code assembly. In other words, if the code assembly is installed in the global assembly cache, the satellite assemblies must also be installed there. If the code assembly is installed in the application's code base, the satellite assemblies must also be installed in a culture-specific folder in the code base.  

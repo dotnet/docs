@@ -1,6 +1,6 @@
 ---
 title: Extensions
-ms.date: 12/13/2019
+ms.date: 12/08/2020
 description: Learn how to load SQLite extensions.
 ---
 # Extensions
@@ -12,6 +12,9 @@ SQLite supports loading extensions at run time. Extensions include things like a
 To load an extension, call the <xref:Microsoft.Data.Sqlite.SqliteConnection.LoadExtension%2A> method. Microsoft.Data.Sqlite will ensure that the extension remains loaded even if the connection is closed and reopened.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/ExtensionsSample/Program.cs?name=snippet_LoadExtension)]
+
+> [!NOTE]
+> The LoadExtension method was added in version 3.0.
 
 ## See also
 

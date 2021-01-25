@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorSymAddrKind Enumeration
+
 Indicates the type of memory address.  
   
 ## Syntax  
@@ -52,6 +53,7 @@ typedef enum CorSymAddrKind
 |`ADDR_NATIVE_ISECTOFFSET`|Indicates that the first address is the section and the second address is an offset.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

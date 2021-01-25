@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 7b6803f6-d6f9-4cc2-9f1b-6f4c920475d5
 ---
 # How to: Create a Service with a Contract Interface
+
 The preferred way to create a Windows Communication Foundation (WCF) contract is by using an interface. This contract specifies the collection and structure of messages required to access the operations the service offers. This interface defines the input and output types by applying the <xref:System.ServiceModel.ServiceContractAttribute> class to the interface and the <xref:System.ServiceModel.OperationContractAttribute> class to the methods that you want to expose.  
   
  For more information about service contracts, see [Designing Service Contracts](../designing-service-contracts.md).  
@@ -22,6 +23,7 @@ The preferred way to create a Windows Communication Foundation (WCF) contract is
 4. Apply the <xref:System.ServiceModel.OperationContractAttribute> class to each method that must be exposed as part of the public WCF contract.  
   
 ## Example  
+
  The following code example shows an interface that defines a service contract.  
   
  [!code-csharp[c_HowTo_CreateContractWithInterface#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createcontractwithinterface/cs/source.cs#1)]

@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 2fdbadb9-8ef1-404a-a2ed-ce5f5e55cfcb
 ---
 # No accessible overloaded '\<methodname>' can be called with these arguments without a narrowing conversion
+
 An overloaded method was called, but no method was matched with the list of provided arguments without a narrowing conversion.  
   
 ## To correct this error  

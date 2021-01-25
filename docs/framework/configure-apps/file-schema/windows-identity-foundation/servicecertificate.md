@@ -5,6 +5,7 @@ ms.assetid: 42c7f291-2ec3-43c5-8872-35897ff3c660
 author: "BrucePerlerMS"
 ---
 # \<serviceCertificate>
+
 Configures the X.509 certificate that is used to encrypt and decrypt tokens.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,9 +25,11 @@ Configures the X.509 certificate that is used to encrypt and decrypt tokens.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None  
   
 ### Child Elements  
@@ -42,6 +45,7 @@ Configures the X.509 certificate that is used to encrypt and decrypt tokens.
 |[\<federationConfiguration>](federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
   
 ## Example  
+
  The following XML shows the use of the \<serviceCertificate> element. The XML is taken from the `CustomToken` sample.  
   
 ```xml  

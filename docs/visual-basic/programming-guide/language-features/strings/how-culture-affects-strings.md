@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
 ---
 # How Culture Affects Strings in Visual Basic
+
 This Help page discusses how Visual Basic uses culture information to perform string conversions and comparisons.  
   
 ## When to Use Culture-Specific Strings  
+
  Typically, you should use culture-specific strings for all data presented to and read from users, and use culture-invariant strings for your application's internal data.  
   
  For example, if your application asks users to enter a date as a string, it should expect users to format the strings according to their culture, and the application should convert the string appropriately. If your application then presents that date in its user interface, it should present it in the user's culture.  
@@ -17,6 +19,7 @@ This Help page discusses how Visual Basic uses culture information to perform st
  However, if the application uploads the date to a central server, it should format the string according to one specific culture, to prevent confusion between potentially different date formats.  
   
 ## Culture-Sensitive Functions  
+
  All of the Visual Basic string-conversion functions (except for the `Str` and `Val` functions) use the application's culture information to make sure that the conversions and comparisons are appropriate for the culture of the application's user.  
   
  The key to successfully using string-conversion functions in applications that run on computers with different culture settings is to understand which functions use a specific culture setting, and which use the current culture setting. Notice that the application's culture settings are, by default, inherited from the culture settings of the operating system. For more information, see <xref:Microsoft.VisualBasic.Strings.Asc%2A>, <xref:Microsoft.VisualBasic.Strings.AscW%2A>, <xref:Microsoft.VisualBasic.Strings.Chr%2A>, <xref:Microsoft.VisualBasic.Strings.ChrW%2A>, <xref:Microsoft.VisualBasic.Strings.Format%2A>, <xref:Microsoft.VisualBasic.Conversion.Hex%2A>, <xref:Microsoft.VisualBasic.Conversion.Oct%2A>, and [Type Conversion Functions](../../../language-reference/functions/type-conversion-functions.md).  
@@ -30,6 +33,7 @@ This Help page discusses how Visual Basic uses culture information to perform st
  For more information, see <xref:Microsoft.VisualBasic.Conversion.Str%2A> and <xref:Microsoft.VisualBasic.Conversion.Val%2A>.  
   
 ## Using a Specific Culture  
+
  Imagine that you are developing an application that sends a date (formatted as a string) to a Web service. In this case, your application must use a specific culture for the string conversion. To illustrate why, consider the result of using the date's <xref:System.DateTime.ToString> method: If your application uses that method to format the date July 4, 2005, it returns "7/4/2005 12:00:00 AM" when run with the United States English (en-US) culture, but it returns "04.07.2005 00:00:00" when run with the German (de-DE) culture.  
   
  When you need to perform a string conversion in a specific culture format, you should use the `CultureInfo` class that is built into the .NET Framework. You can create a new `CultureInfo` object for a specific culture by passing the culture's name to the <xref:System.Globalization.CultureInfo.%23ctor%2A> constructor. The supported culture names are listed in the <xref:System.Globalization.CultureInfo> class Help page.  
@@ -44,6 +48,7 @@ This Help page discusses how Visual Basic uses culture information to perform st
 > Date literals are always interpreted according to the English culture.  
   
 ## Comparing Strings  
+
  There are two important situations where string comparisons are needed:  
   
 - **Sorting data for display to the user.** Use operations based on the current culture so the strings sort appropriately.  
@@ -70,6 +75,7 @@ This Help page discusses how Visual Basic uses culture information to perform st
 |`InvariantCulture` or `InvariantCultureIgnoreCase`|Comparison based on the strings' interpretation in the invariant culture.<br /><br /> This is different than the `Ordinal` and `OrdinalIgnoreCase`, because the invariant culture treats characters outside its accepted range as equivalent invariant characters.|Use these values only when comparing persisting data or displaying linguistically-relevant data that requires a fixed sort order.|  
   
 ### Security Considerations  
+
  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=nameWithType> method, and pass `Ordinal` or `OrdinalIgnoreCase` for the `comparisonType` argument.  
   
 ## See also

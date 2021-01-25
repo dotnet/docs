@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 01baba8d-d784-4255-9ea2-7afff1482bf0
 ---
 # \<mexTcpBinding>
+
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over TCP.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,6 +40,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 |`sendTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for a send operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

@@ -6,75 +6,9 @@ namespace CsCsrefProgrammingObjects
 {
     namespace WrapCoords
     {
-        //<Snippet4>
-        class Coords
-        {
-            public int x, y;
 
-            // Default constructor.
-            public Coords()
-            {
-                x = 0;
-                y = 0;
-            }
-
-            //<Snippet76>
-            // A constructor with two arguments.
-            public Coords(int x, int y)
-            {
-                this.x = x;
-                this.y = y;
-            }
-            //</Snippet76>
-
-            // Override the ToString method.
-            public override string ToString()
-            {
-                return $"({x},{y})";
-            }
-        }
-
-        class MainClass
-        {
-            static void Main()
-            {
-                //<Snippet77>
-                var p1 = new Coords();
-                var p2 = new Coords(5, 3);
-                //</Snippet77>
-
-                // Display the results using the overriden ToString method.
-                Console.WriteLine($"Coords #1 at {p1}");
-                Console.WriteLine($"Coords #2 at {p2}");
-                Console.ReadKey();
-            }
-        }
-        /* Output:
-         Coords #1 at (0,0)
-         Coords #2 at (5,3)
-        */
-        //</Snippet4>
     }
 
-    //-----------------------------------------------------------------------------
-    namespace WrapCoordsDefaultConstructorOnly
-    {
-        //<Snippet5>
-        class Coords
-        {
-            public int x, y;
-
-            // constructor
-            public Coords()
-            {
-                x = 0;
-                y = 0;
-            }
-        }
-        //</Snippet5>
-    }
-
-    //-----------------------------------------------------------------------------
     namespace WrapConstructorCalls
     {
         public class X
@@ -164,94 +98,11 @@ namespace CsCsrefProgrammingObjects
     //-----------------------------------------------------------------------------
     namespace WrapPerson
     {
-        //<Snippet8>
-        public class Person
-        {
-            public int age;
-            public string name;
-        }
 
-        class TestPerson
-        {
-            static void Main()
-            {
-                var person = new Person();
-
-                Console.WriteLine($"Name: {person.name}, Age: {person.age}");
-                // Keep the console window open in debug mode.
-                Console.WriteLine("Press any key to exit.");
-                Console.ReadKey();
-            }
-        }
-        // Output:  Name: , Age: 0
-        //</Snippet8>
     }
 
     //-----------------------------------------------------------------------------
-    //<Snippet9>
-    abstract class Shape
-    {
-        public const double pi = Math.PI;
-        protected double x, y;
 
-        public Shape(double x, double y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-
-        public abstract double Area();
-    }
-
-    class Circle : Shape
-    {
-        public Circle(double radius)
-            : base(radius, 0)
-        {
-        }
-        public override double Area()
-        {
-            return pi * x * x;
-        }
-    }
-
-    class Cylinder : Circle
-    {
-        public Cylinder(double radius, double height)
-            : base(radius)
-        {
-            y = height;
-        }
-
-        public override double Area()
-        {
-            return (2 * base.Area()) + (2 * pi * x * y);
-        }
-    }
-
-    class TestShapes
-    {
-        static void Main()
-        {
-            double radius = 2.5;
-            double height = 3.0;
-
-            Circle ring = new Circle(radius);
-            Cylinder tube = new Cylinder(radius, height);
-
-            Console.WriteLine("Area of the circle = {0:F2}", ring.Area());
-            Console.WriteLine("Area of the cylinder = {0:F2}", tube.Area());
-
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
-        }
-    }
-    /* Output:
-        Area of the circle = 19.63
-        Area of the cylinder = 86.39
-    */
-    //</Snippet9>
 
     namespace WrapShapeAndCircle
     {
@@ -266,15 +117,7 @@ namespace CsCsrefProgrammingObjects
             }
         }
 
-        //<Snippet78>
-        class Circle : Shape
-        {
-            public Circle(double radius)
-                : base(radius, 0)
-            {
-            }
-        }
-        //</Snippet78>
+
     }
 
     //-----------------------------------------------------------------------------

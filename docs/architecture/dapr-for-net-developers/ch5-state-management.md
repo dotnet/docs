@@ -2,13 +2,13 @@
 title: The Dapr state management building block
 description: A description of the state management building-block, its features, benefits, and how to apply it.
 author: sanderm
-ms.date: 01/24/2021
+ms.date: 01/25/2021
 ms.reviewer: robvet
 ---
 
 # The Dapr state management building block
 
-Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an eCommerce site. If the service can't track state, the customer could loose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr State Management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
+Distributed applications are composed of independent services. While each service should be stateless, some services must track state to complete business operations. Consider a shopping basket service for an eCommerce site. If the service can't track state, the customer could loose the shopping basket content by leaving the website, resulting in a lost sale and an unhappy customer experience. For these scenarios, state needs to be persisted to a distributed state store. The [Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/) simplifies state tracking and offers advanced features across various data stores.
 
 > [!NOTE]
 > By storing the state in an **external** data store, a service is considered **stateless**. **Statefull** services typically store state locally on a single server either in memory or on disk. Stateless services are favored over stateful services. They don't require requests from a specific user to be handled by the same service instance. As a result, stateless services can scale horizontally as the request volume increases.
@@ -24,14 +24,14 @@ Tracking state in a distributed application can be challenging. For example:
 - Multiple users may update data at the same time, requiring  conflict resolution.
 - Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that  occur while interacting with the data store.
 
-The Dapr State Management building block addresses these challenges. It streamlines tracking state without dependencies or a learning curve on third-party storage SDKs.
+The Dapr state sanagement building block addresses these challenges. It streamlines tracking state without dependencies or a learning curve on third-party storage SDKs.
 
 > [!IMPORTANT]
 > Dapr state management offers a [key/value](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. The feature doesn't support relational or graph data storage.
 
 ## How it works
 
-The application interacts with a Dapr sidecar service to store and retrieve key/value data. Under the hood, the side car API consumes a configurable state store component to persist data. Developers can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) that include Azure Cosmos DB, SQL Server, and Cassandra.
+The application interacts with a Dapr sidecar to store and retrieve key/value data. Under the hood, the sidecar API consumes a configurable state store component to persist data. Developers can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) that include Azure Cosmos DB, SQL Server, and Cassandra.
 
 The API can be called with either HTTP or gRPC using the following URL:
 
@@ -51,8 +51,8 @@ Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value p
 Note the steps in the previous figure:
 
 1. The basket service calls the state management API from the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.
-1. The Dapr sidecar determines the state store based on the component configuration file. In this case, it's a Redis cache state store.
-1. The sidecar persists the data to the Redis cache.
+2. The Dapr sidecar determines the state store based on the component configuration file. In this case, it's a Redis cache state store.
+3. The sidecar persists the data to the Redis cache.
 
 Retrieving the stored data is a similar API call. In the example below, a *curl* command retrieves the data by calling the Dapr sidecar API:
 
@@ -80,9 +80,9 @@ The following sections explain how to use the more advanced features of the stat
 
 The [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) is a set of principles that apply to distributed systems that store state. Figure 5-2 shows the three properties of the CAP theorem.
 
-![The Cap theorem.](media/cap-theorem.png)
+![The CAP theorem.](media/state-management/cap-theorem.png)
 
-**Figure 5-2**. The Cap theorem.
+**Figure 5-2**. The CAP theorem.
 
 The theorem states that distributed data systems offer a trade-off between consistency, availability, and partition tolerance. And, that any datastore can only *guarantee two of the three properties*:
 
@@ -127,7 +127,7 @@ Dapr also supports a **last-write-wins** strategy. With this approach, the clien
 
 ### Transactions
 
-Dapr can write *multi-item changes* to a data store as a single operation implemented as a transaction. This functionality is only available for data stores that support [ACID](https://en.wikipedia.org/wiki/ACID) transactions. AT the time of this writing, these stores include Redis, MongoDB, PostgreSQL, SQL Server, and Azure CosmosDB.
+Dapr can write *multi-item changes* to a data store as a single operation implemented as a transaction. This functionality is only available for data stores that support [ACID](https://en.wikipedia.org/wiki/ACID) transactions. At the time of this writing, these stores include Redis, MongoDB, PostgreSQL, SQL Server, and Azure CosmosDB.
 
 In the example below, a multi-item operation is sent to the state store in a single transaction. All operations must succeed for the transaction to commit. If one or more of the operations fail, the entire transaction rolls back.
 
@@ -288,7 +288,7 @@ spec:
 
 The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](ch10-secrets.md).
 
-The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by an Actor object. For more information on actors, see [chapter 11](ch11-actors.md).
+The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the Actor building block. For more information on actors, see [chapter 11](ch11-actors.md).
 
 ### Key prefix strategies
 

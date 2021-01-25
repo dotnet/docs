@@ -179,7 +179,7 @@ Figure 2-5 shows an application and Dapr hosted in two separate memory processes
 
 By default, Dapr will install Docker containers for Redis and Zipkin to ensure building blocks such as state management and observability work out of the box. If you don't want to install Docker on your local machine, you can even [run Dapr in self-hosted mode without any Docker containers](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). However, you must install default components such as Redis for state management and pub/sub manually.
 
-For production scenarios, we recommend [hosting Dapr on Kubernetes](https://docs.dapr.io/getting-started/install-dapr/#install-dapr-on-a-kubernetes-cluster). You can install Dapr on any Kubernetes cluster, such as Minikube, Azure Kubernetes Service, Google Cloud Kubernetes Engine, and Amazon Elastic Kubernetes Service. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
+Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
 
 ![Sidecar architecture](./media/kubernetes-hosted-dapr-sidecar.png)
 

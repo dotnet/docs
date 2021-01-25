@@ -19,4 +19,4 @@ az webapp list-runtimes –linux
 
 ## App Service plan tiers
 
-https://azure.microsoft.com/en-us/pricing/details/app-service/windows/
+[https://azure.microsoft.com/en-us/pricing/details/app-service/windows/](App Service Pricing)

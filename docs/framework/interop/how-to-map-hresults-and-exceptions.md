@@ -49,26 +49,21 @@ CMyClass::MethodThatThrows
 }  
 ```  
   
- The following table provides the complete mapping from each HRESULT to its comparable exception class in the .NET Framework.  
+ The following table provides the common mappings from HRESULT to its comparable exception class in the .NET.  HRESULT values without explicit mappings are mapped to **COMException**.  The complete up-to-date mapping can be found in [dotnet/runtime repo](https://github.com/dotnet/runtime/blob/master/src/coreclr/vm/rexcep.h). 
   
 |HRESULT|.NET exception|  
 |-------------|--------------------|  
-|**MSEE_E_APPDOMAINUNLOADED**|**AppDomainUnloadedException**|  
 |**COR_E_APPLICATION**|**ApplicationException**|  
 |**COR_E_ARGUMENT or E_INVALIDARG**|**ArgumentException**|  
 |**COR_E_ARGUMENTOUTOFRANGE**|**ArgumentOutOfRangeException**|  
 |**COR_E_ARITHMETIC or ERROR_ARITHMETIC_OVERFLOW**|**ArithmeticException**|  
 |**COR_E_ARRAYTYPEMISMATCH**|**ArrayTypeMismatchException**|  
 |**COR_E_BADIMAGEFORMAT or ERROR_BAD_FORMAT**|**BadImageFormatException**|  
-|**COR_E_COMEMULATE_ERROR**|**COMEmulateException**|  
-|**COR_E_CONTEXTMARSHAL**|**ContextMarshalException**|  
-|**COR_E_CORE**|**CoreException**|  
-|**NTE_FAIL**|**CryptographicException**|  
 |**COR_E_DIRECTORYNOTFOUND or ERROR_PATH_NOT_FOUND**|**DirectoryNotFoundException**|  
 |**COR_E_DIVIDEBYZERO**|**DivideByZeroException**|  
 |**COR_E_DUPLICATEWAITOBJECT**|**DuplicateWaitObjectException**|  
 |**COR_E_ENDOFSTREAM**|**EndOfStreamException**|  
-|**COR_E_TYPELOAD**|**EntryPointNotFoundException**|  
+|**COR_E_ENTRYPOINTNOTFOUND**|**EntryPointNotFoundException**|  
 |**COR_E_EXCEPTION**|**Exception**|  
 |**COR_E_EXECUTIONENGINE**|**ExecutionEngineException**|  
 |**COR_E_FIELDACCESS**|**FieldAccessException**|  
@@ -76,9 +71,7 @@ CMyClass::MethodThatThrows
 |**COR_E_FORMAT**|**FormatException**|  
 |**COR_E_INDEXOUTOFRANGE**|**IndexOutOfRangeException**|  
 |**COR_E_INVALIDCAST or E_NOINTERFACE**|**InvalidCastException**|  
-|**COR_E_INVALIDCOMOBJECT**|**InvalidComObjectException**|  
 |**COR_E_INVALIDFILTERCRITERIA**|**InvalidFilterCriteriaException**|  
-|**COR_E_INVALIDOLEVARIANTTYPE**|**InvalidOleVariantTypeException**|  
 |**COR_E_INVALIDOPERATION**|**InvalidOperationException**|  
 |**COR_E_IO**|**IOException**|  
 |**COR_E_MEMBERACCESS**|**AccessException**|  
@@ -87,7 +80,6 @@ CMyClass::MethodThatThrows
 |**COR_E_MISSINGMANIFESTRESOURCE**|**MissingManifestResourceException**|  
 |**COR_E_MISSINGMEMBER**|**MissingMemberException**|  
 |**COR_E_MISSINGMETHOD**|**MissingMethodException**|  
-|**COR_E_MULTICASTNOTSUPPORTED**|**MulticastNotSupportedException**|  
 |**COR_E_NOTFINITENUMBER**|**NotFiniteNumberException**|  
 |**E_NOTIMPL**|**NotImplementedException**|  
 |**COR_E_NOTSUPPORTED**|**NotSupportedException**|  
@@ -97,8 +89,6 @@ CMyClass::MethodThatThrows
 |**COR_E_PATHTOOLONG or ERROR_FILENAME_EXCED_RANGE**|**PathTooLongException**|  
 |**COR_E_RANK**|**RankException**|  
 |**COR_E_REFLECTIONTYPELOAD**|**ReflectionTypeLoadException**|  
-|**COR_E_REMOTING**|**RemotingException**|  
-|**COR_E_SAFEARRAYTYPEMISMATCH**|**SafeArrayTypeMismatchException**|  
 |**COR_E_SECURITY**|**SecurityException**|  
 |**COR_E_SERIALIZATION**|**SerializationException**|  
 |**COR_E_STACKOVERFLOW orERROR_STACK_OVERFLOW**|**StackOverflowException**|  
@@ -107,16 +97,11 @@ CMyClass::MethodThatThrows
 |**COR_E_TARGET**|**TargetException**|  
 |**COR_E_TARGETINVOCATION**|**TargetInvocationException**|  
 |**COR_E_TARGETPARAMCOUNT**|**TargetParameterCountException**|  
-|**COR_E_THREADABORTED**|**ThreadAbortException**|  
 |**COR_E_THREADINTERRUPTED**|**ThreadInterruptedException**|  
 |**COR_E_THREADSTATE**|**ThreadStateException**|  
-|**COR_E_THREADSTOP**|**ThreadStopException**|  
 |**COR_E_TYPELOAD**|**TypeLoadException**|  
 |**COR_E_TYPEINITIALIZATION**|**TypeInitializationException**|  
 |**COR_E_VERIFICATION**|**VerificationException**|  
-|**COR_E_WEAKREFERENCE**|**WeakReferenceException**|  
-|**COR_E_VTABLECALLSNOTSUPPORTED**|**VTableCallsNotSupportedException**|  
-|**All other HRESULTs**|**COMException**|  
   
  To retrieve extended error information, the managed client must examine the fields of the exception object that was generated. For the exception object to provide useful information about an error, the COM object must implement the **IErrorInfo** interface. The runtime uses the information provided by **IErrorInfo** to initialize the exception object.  
   

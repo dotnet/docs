@@ -12,7 +12,7 @@ public class Example
    {
       Console.WriteLine("About to launch a task...");
       _ = Task.Run(() => { var iterations = 0;
-                           for (int ctr = 0; ctr < int.MaxValue; ctr++)
+                           for (long ctr = 0; ctr < long.MaxValue; ctr++)
                               iterations++;
                            Console.WriteLine("Completed looping operation...");
                            throw new InvalidOperationException();

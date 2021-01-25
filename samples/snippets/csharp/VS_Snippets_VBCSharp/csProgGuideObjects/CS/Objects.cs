@@ -1313,45 +1313,7 @@ class TestPerson
     }
     //</Snippet63>
 
-    //<Snippet64>
-    class Calendar1
-    {
-        public const int Months = 12;
-    }
-    //</Snippet64>
 
-    //<Snippet65>
-    class Calendar2
-    {
-        public const int Months = 12, Weeks = 52, Days = 365;
-    }
-    //</Snippet65>
-
-    //<Snippet66>
-    class Calendar3
-    {
-        public const int Months = 12;
-        public const int Weeks = 52;
-        public const int Days = 365;
-
-        public const double DaysPerWeek = (double) Days / (double) Weeks;
-        public const double DaysPerMonth = (double) Days / (double) Months;
-    }
-    //</Snippet66>
-
-    class Calendar
-    {
-        public const int Months = 12;
-
-        static void test()
-        {
-            //<Snippet67>
-            int birthstones = Calendar.Months;
-            //</Snippet67>
-
-            Console.WriteLine(birthstones.ToString());
-        }
-    }
 
     //-----------------------------------------------------------------------------
     //<Snippet85>

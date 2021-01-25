@@ -36,11 +36,11 @@ The application interacts with a Dapr sidecar service to store and retrieve key/
 The API can be called with either HTTP or gRPC using the following URL:
 
 ```http
-http://localhost:<daprPort>/v1.0/state/<state-store-name>/
+http://localhost:<daprPort>/v1.0/state/<stateStoreName>/
 ```
 
-- `<daprPort>` specifies the HTTP port on which Dapr listens.
-- `<state-store-name>` specifies the name of the state store component.
+- `<daprPort>`: the HTTP port that Dapr listens on.
+- `<stateStoreName>`: the name of the state store component to use.
 
 Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr state store component named `statestore`.
 

@@ -1,7 +1,7 @@
 ---
 title: "Supported collection types in System.Text.Json"
 description: "Learn which collection types are supported for serialization by the APIs in the System.Text.Json namespace."
-ms.date: 01/06/2021
+ms.date: 01/25/2021
 no-loc: [System.Text.Json]
 ms.topic: reference
 zone_pivot_groups: dotnet-version
@@ -225,7 +225,7 @@ The following sections are organized by namespace and show which types are suppo
 
 Any collection type that isn't in one of the preceding namespaces is considered a custom collection. Such types include user-defined types and types defined by ASP.NET Core. For example, <xref:Microsoft.Extensions.Primitives?displayProperty=fullName> is in this group.
 
-All custom collections (everything that derives from `IEnumerable`) are supported for serialization, as long as their element types are supported.
+All custom collections (everything that derives from `IEnumerable`) are supported for serialization, as long as their element types are supported. Only the items of the collection are serialized, not the properties or fields of the collection type.
 
 ### Custom collections with deserialization support
 

@@ -21,6 +21,70 @@
         href: azure-tools.md
       - name: Development setup checklist
         href: dotnet-dev-env-checklist.md
+- name: .NET on Azure web development guide
+  items:
+    - name: Hosting options overview for .NET applications
+      href: ./web-development/hosting-options.md
+    - name: Choosing an application service plan
+      href: ./web-development/choosing-app-service-plan.md
+    - name: Deploy an ASP.NET Core or ASP.NET application to Azure
+      items: 
+      - name: Solution overview
+        href: ./web-development/asp-net-app/asp-net-solution-overview.md
+      - name: Create Azure resources
+        href: ./web-development/asp-net-app/asp-net-create-resources.md
+      - name: Configure database access
+        href: ./web-development/asp-net-app/asp-net-configure-db-access.md
+      - name: Deploy the application
+        href: ./web-development/asp-net-app/asp-net-deploy-application.md
+    - name: Deploy a full-stack .NET application to Azure
+      items: 
+      - name: Full stack solution overview
+        href: ./web-development/fullstack-dotnet-app/fullstack-dotnet-solution-overview.md
+      - name: Create Azure resources
+        href: ./web-development/fullstack-dotnet-app/fullstack-dotnet-create-resources.md
+      - name: Configure database access
+        href: ./web-development/fullstack-dotnet-app/fullstack-dotnet-db-access.md
+      - name: Deploy the application
+        href: ./web-development/fullstack-dotnet-app/fullstack-dotnet-deploy-application.md
+      - name: Configure CORS
+        href: ./web-development/fullstack-dotnet-app/fullstack-dotnet-configure-cors.md
+    - name: Deploy a Blazor WASM application to Azure
+      items: 
+      - name: Solution overview
+        href: ./web-development/blazor-app/blazor-solution-overview.md
+      - name: Create Azure resources
+        href: ./web-development/blazor-app/blazor-create-resources.md
+      - name: Deploy the application
+        href: ./web-development/blazor-app/blazor-deploy-application.md        
+    - name: Troubleshoot web applications on Azure
+      items: 
+      - name: Streaming logs
+        href: ./web-development/troubleshoot/stream-logs.md
+      - name: Remote debugging
+        href: ./web-development/troubleshoot/remote-debugging.md
+    - name: Monitoring web applications
+      items: 
+      - name: Monitoring overview
+        href: ./web-development/monitoring/monitoring-overview.md
+      - name: Monitor application availability
+        items: 
+          - name: Basic URL Monitoring
+            href: ./web-development/monitoring/availability/basic-url-monitoring.md
+          - name: Custom Availability Monitoring
+            href: ./web-development/monitoring/availability/custom-availability-monitoring.md
+      - name: Monitor application performance with Application Insights
+        items: 
+          - name: App Insights for .NET applications overview
+            href: ./web-development/monitoring/app-insights/app-insights-overview.md
+          - name: Configuring codeless monitoring
+            href: ./web-development/monitoring/app-insights/app-insights-codeless-monitoring.md
+          - name: Configuring code-based monitoring
+            href: ./web-development/monitoring/app-insights/configure-code-based-monitoring.md
+    - name: User authentication
+      items: 
+      - name: Authenticating Users with Azure AD
+        href: ./web-development/monitoring/monitoring-overview.md
 - name: Migrate to Azure
   items:
     - name: Choose the right Azure hosting option

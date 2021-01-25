@@ -54,7 +54,7 @@ CMyClass::MethodThatThrows
 |HRESULT|.NET exception|
 |-------------|--------------------|
 |`COR_E_APPLICATION`|`ApplicationException`|
-|`COR_E_ARGUMENT or E_INVALIDARG`|`ArgumentException`|
+|`COR_E_ARGUMENT` or `E_INVALIDARG`|`ArgumentException`|
 |`COR_E_ARGUMENTOUTOFRANGE`|`ArgumentOutOfRangeException`|
 |`COR_E_ARITHMETIC or ERROR_ARITHMETIC_OVERFLOW`|`ArithmeticException`|
 |`COR_E_ARRAYTYPEMISMATCH`|`ArrayTypeMismatchException`|

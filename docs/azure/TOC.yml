@@ -23,11 +23,11 @@
         href: dotnet-dev-env-checklist.md
 - name: .NET on Azure web development guide
   items:
-    - name: Hosting options overview for .NET applications
+    - name: Hosting options overview
       href: ./web-development/hosting-options.md
-    - name: Choosing an application service plan
+    - name: Choosing an app service plan
       href: ./web-development/choosing-app-service-plan.md
-    - name: Deploy an ASP.NET Core or ASP.NET application to Azure
+    - name: Deploy ASP.NET Core or ASP.NET applications
       items: 
       - name: Solution overview
         href: ./web-development/asp-net-app/asp-net-solution-overview.md
@@ -37,7 +37,7 @@
         href: ./web-development/asp-net-app/asp-net-configure-db-access.md
       - name: Deploy the application
         href: ./web-development/asp-net-app/asp-net-deploy-application.md
-    - name: Deploy a full-stack .NET application to Azure
+    - name: Deploy a full-stack .NET application
       items: 
       - name: Full stack solution overview
         href: ./web-development/fullstack-dotnet-app/fullstack-dotnet-solution-overview.md
@@ -49,7 +49,7 @@
         href: ./web-development/fullstack-dotnet-app/fullstack-dotnet-deploy-application.md
       - name: Configure CORS
         href: ./web-development/fullstack-dotnet-app/fullstack-dotnet-configure-cors.md
-    - name: Deploy a Blazor WASM application to Azure
+    - name: Deploy a Blazor WASM application
       items: 
       - name: Solution overview
         href: ./web-development/blazor-app/blazor-solution-overview.md

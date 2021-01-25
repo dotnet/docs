@@ -13,7 +13,7 @@ Distributed applications are composed of independent services. While each servic
 > [!NOTE]
 > By storing the state in an **external** data store, a service is considered **stateless**. **Statefull** services typically store state locally on a single server either in memory or on disk. Stateless services are favored over stateful services. They don't require requests from a specific user to be handled by the same service instance. As a result, stateless services can scale horizontally as the request volume increases.
 
-To try out the state management building block, have a look at the [counter application sample in chapter 3](ch3-getting-started.md).
+To try out the state management building block, have a look at the [counter application sample in chapter 3](getting-started.md).
 
 ## What it solves
 
@@ -164,7 +164,7 @@ For bulk operations, Dapr will submit each key/value pair update as a separate r
 
 ## Using the .NET SDK
 
-The Dapr .NET SDK provides language-specific support for .NET Core platform. Developers can use the `DaprClient` class introduced in [chapter 3](ch3-getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
+The Dapr .NET SDK provides language-specific support for .NET Core platform. Developers can use the `DaprClient` class introduced in [chapter 3](getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
 
 ```c#
 var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>("statestore", "AMS");
@@ -286,9 +286,9 @@ spec:
  > [!NOTE]
  > Many state stores can be registered to a single application each with a different name.
 
-The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](ch10-secrets.md).
+The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets.md).
 
-The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the Actor building block. For more information on actors, see [chapter 11](ch11-actors.md).
+The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the Actor building block. For more information on actors, see [chapter 11](actors.md).
 
 ### Key prefix strategies
 

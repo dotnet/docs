@@ -10,4 +10,8 @@ f1_keywords:
 
 **This article applies to:** ✔️ .NET Core 2.1.100 SDK and later versions
 
-You might encounter warning NETSDK1004 if you run the `dotnet build` command from a directory path that contains a `%` character. The name of the assets file is *project.assets.json*.
+This error occurs when the assets file *project.assets.json* is not found during build. The full error message is similar to:
+
+**NETSDK1004: Assets file 'C:\IncorrectPath\project.assets.json' not found. Run a NuGet package restore to generate this file.**
+
+One reason you might encounter warning NETSDK1004 is if you run the `dotnet build` command from a directory path that contains a `%` character.

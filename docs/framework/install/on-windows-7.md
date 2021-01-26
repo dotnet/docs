@@ -29,8 +29,6 @@ The _certmgr.exe_ tool can automate installing a certificate and is obtained fro
 certmgr.exe /add MicRooCerAut2011_2011_03_22.crt /s /r localMachine root
 ```
 
-Be sure to review the dependencies required for [Windows 7 below](#additional-deps).
-
 ## .NET Framework 3.5
 
 The [.NET Framework 3.5](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) is included with Windows 7.

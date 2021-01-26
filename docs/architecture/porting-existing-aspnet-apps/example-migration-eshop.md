@@ -160,12 +160,16 @@ For the *eShop* sample, the first folder I choose to migrate is the *Models* fol
 
 Next, the *ViewModel* folder, with its one class, is copied over. It's an easy one, and builds immediately.
 
-Next, the *Services* folder is copied over. This folder's classes depend on Entity Framework classes from the *Models* folder, which is why it needed to be copied after that folder. Fortunately, it too builds without errors.
+The *Services* folder is copied over. This folder's classes depend on Entity Framework classes from the *Models* folder, which is why it needed to be copied after that folder. Fortunately, it too builds without errors.
 
-That leaves the *Controllers* folder and its two `Controller` classes. After copying the folder to the new project and building, there are seven build errors. Four of them are related to `ViewBag` access and say `Missing compiler required member 'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create'`, which is solved by adding a NuGet package reference to C#:
+That leaves the *Controllers* folder and its two `Controller` classes. After copying the folder to the new project and building, there are seven build errors. Four of them are related to `ViewBag` access and report an error of:
+
+> `Missing compiler required member 'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create'`
+ 
+To resolve this error add a NuGet package reference to C#:
 
 ```xml
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
 ```
 
 The remaining three errors specify types that are defined in an assembly that isn't referenced. Specifically these types:
@@ -353,7 +357,7 @@ public static void RegisterGlobalFilters(GlobalFilterCollection filters)
 }
 ```
 
-The only attribute added to the app is the ASP.NET MVC filter, `HandleErrorAttribute`. This filter ensures that when an exception occurs as part of a request, a default action and view are displayed, rather than the exception details. In ASP.NET Core, this same functionality is performed by the `UseExceptionHandler` middleware. The detailed error messages aren't enabled by default, either. They must be configured using the `UseDeveloperExceptionPage` middleware. To configure this behavior to match the original app, the following code must be added to the start of the `Configure` method in *Startup.cs*:
+The only attribute added to the app is the ASP.NET MVC filter, `HandleErrorAttribute`. This filter ensures that when an exception occurs as part of a request, a default action and view are displayed, rather than the exception details. In ASP.NET Core, this same functionality is performed by the `UseExceptionHandler` middleware. The detailed error messages aren't enabled by default. They must be configured using the `UseDeveloperExceptionPage` middleware. To configure this behavior to match the original app, the following code must be added to the start of the `Configure` method in *Startup.cs*:
 
 ```csharp
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -399,7 +403,8 @@ app.UseMvc(routes =>
 });
 ```
 
-**NOTE:** With ASP.NET Core 3.0 and later, this is changed to use endpoints. For the initial port to ASP.NET Core 2.2, this is the proper syntax for mapping conventional routes.
+> [!NOTE]
+> With ASP.NET Core 3.0 and later, this is changed to use endpoints. For the initial port to ASP.NET Core 2.2, this is the proper syntax for mapping conventional routes.
 
 With these changes in place, the `Configure` method is almost done. The original template's `app.Run` method that prints *Hello World!* should be deleted. At this point, the method is as shown here:
 
@@ -489,7 +494,7 @@ For now, the setting for `useMockData` is set to `true`. This setting will be re
 
 ![Figure 4-12](media/Figure4-12.png)
 
-**Figure 4-12. Ported *eShop* app running locally with mock data.**
+**Figure 4-12.** Ported *eShop* app running locally with mock data.
 
 #### Migrate app settings
 
@@ -509,7 +514,7 @@ The original app referenced its settings using `ConfigurationManager.AppSettings
 - `UseMockData`
 - `UseCustomizationData`
 
-If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [Options pattern](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.2&preserve-view=true). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
+If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the [options pattern](https://docs.microsoft.com/dotnet/core/extensions/options). However, as noted in the referenced doc, this pattern shouldn't be used in `ConfigureServices`. Instead the ported app will reference the `UseMockData` configuration value directly.
 
 First, modify the ported app's `appsettings.json` file and add the two settings in the root:
 
@@ -554,7 +559,7 @@ ASP.NET Core apps running on .NET Framework can continue to leverage Entity Fram
 
 As it happens, configuring EF 6 in the eShop sample migration doesn't require any special work, since this work was performed in the Autofac `ApplicationModule`. The only problem is that currently the `CatalogDBContext` class tries to read its connection string from *web.config*. To address this, the connection details need to be added to *appsettings.json*. Then the connection string must be passed into `CatalogDBContext` when it's created.
 
-First, *appsettings.json* is updated to include the connection string. The full file is listed here:
+Update the *appsettings.json* to include the connection string. The full file is listed here:
 
 ```json
 {
@@ -572,7 +577,7 @@ First, *appsettings.json* is updated to include the connection string. The full 
 }
 ```
 
-Next, the connection string must be passed into the constructor when the `DbContext` is created. Since the instances are created by Autofac, the change needs to be made in `ApplicationModule`. Modify the module to take in a `connectionString` in its constructor and assign it to a field. Then modify the registration for `CatalogDBContext` to add connection string as a parameter:
+The connection string must be passed into the constructor when the `DbContext` is created. Since the instances are created by Autofac, the change needs to be made in `ApplicationModule`. Modify the module to take in a `connectionString` in its constructor and assign it to a field. Then modify the registration for `CatalogDBContext` to add connection string as a parameter:
 
 ```csharp
 builder.RegisterType<CatalogDBContext>()
@@ -648,7 +653,7 @@ namespace eShopPorted.Models.Config
     {
         public void Configure(EntityTypeBuilder<CatalogType> builder)
         {
-            builder.ToTable("CatalogType");
+            builder.ToTable(nameof(CatalogType));
 
             builder.HasKey(ci => ci.Id);
 

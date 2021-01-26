@@ -121,26 +121,6 @@ namespace CsCsrefProgrammingObjects
     }
 
     //-----------------------------------------------------------------------------
-    //This snippet used by more than one topic
-    //<Snippet11>
-    class NLog
-    {
-        // Private Constructor:
-        private NLog() { }
-
-        public static double e = Math.E;  //2.71828...
-    }
-    //</Snippet11>
-
-    //-----------------------------------------------------------------------------
-
-
-    //-----------------------------------------------------------------------------
-
-
-
-
-    //-----------------------------------------------------------------------------
     //<Snippet27>
     class CompanyInfo
     {
@@ -238,114 +218,18 @@ namespace CsCsrefProgrammingObjects
         }
     }
 
-    //-----------------------------------------------------------------------------
-    //<Snippet53>
-    public class Taxi
-    {
-        public bool IsInitialized;
-        public Taxi()
-        {
-            IsInitialized = true;
-        }
-    }
-
-    class TestTaxi
-    {
-        static void Main()
-        {
-            Taxi t = new Taxi();
-            Console.WriteLine(t.IsInitialized);
-        }
-    }
-    //</Snippet53>
-
-    //-----------------------------------------------------------------------------
     namespace WrapEmployee
     {
-        //<Snippet54>
-        public class Employee
-        {
-            public int Salary;
 
-            //<Snippet60>
-            public Employee(int annualSalary)
-            {
-                Salary = annualSalary;
-            }
-            //</Snippet60>
 
-            public Employee(int weeklySalary, int numberOfWeeks)
-            {
-                Salary = weeklySalary * numberOfWeeks;
-            }
-        }
-        //</Snippet54>
 
-        class TestEmployee
-        {
-            static void test()
-            {
-                //<Snippet55>
-                Employee e1 = new Employee(30000);
-                Employee e2 = new Employee(500, 52);
-                //</Snippet55>
-            }
-        }
-
-        //<Snippet56>
-        public class Manager : Employee
-        {
-            public Manager(int annualSalary)
-                : base(annualSalary)
-            {
-                //Add further instructions here.
-            }
-        }
-        //</Snippet56>
 
         class WrapEmployeeAndManager
         {
-            public class Employee
-            {
-                public Employee() { }
-                public Employee(int annualSalary) { }
 
-                //<Snippet59>
-                public Employee(int weeklySalary, int numberOfWeeks)
-                    : this(weeklySalary * numberOfWeeks)
-                {
-                }
-                //</Snippet59>
-            }
-
-            public class Manager : Employee
-            {
-                //<Snippet58>
-                public Manager(int initialData)
-                {
-                    //Add further instructions here.
-                }
-                //</Snippet58>
-            }
         }
 
-        class WrapEmployeeAndManagerAgain
-        {
-            public class Employee
-            {
-            }
 
-            public class Manager : Employee
-            {
-                //<Snippet57>
-                public Manager(int initialData)
-                    : base()
-                {
-                    //Add further instructions here.
-                }
-                //</Snippet57>
-            }
-        }
     }
 
     //<snippet88>

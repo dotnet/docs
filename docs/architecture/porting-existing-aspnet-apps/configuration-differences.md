@@ -32,9 +32,10 @@ Accessing configuration values can be done in many ways in .NET Core. Because de
 Figure 2-2 shows how to pass `IConfiguration` into a Razor Page and access configuration settings from it:
 
 ```csharp
+using Microsoft.Extensions.Configuration;
+
 public class TestModel : PageModel
 {
-    // requires using Microsoft.Extensions.Configuration;
     private readonly IConfiguration _configuration;
 
     public TestModel(IConfiguration configuration)

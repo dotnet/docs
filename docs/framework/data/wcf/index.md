@@ -10,12 +10,7 @@ ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
 
 # WCF Data Services 4.5
 
-> [!IMPORTANT]
-> WCF Data Services has been deprecated and is no longer available for download on the Microsoft Download Centre.
-> WCF Data Services supported earlier versions of the Microsoft OData (V1-V3) protocol only and has not been under active development. OData V1-V3 has been superseded by OData V4, which is an industry standard published by OASIS and ratified by ISO. OData V4 is supported through the OData V4 compliant core libraries available at [Microsoft.OData.Core](https://www.nuget.org/packages/Microsoft.OData.Core/). Support documentation is available at [OData.Net](https://odata.github.io/odata.net), and the OData V4 service libraries are available at [Microsoft.AspNetCore.OData](https://www.nuget.org/packages/Microsoft.AspNetCore.OData).
->
-> [RESTier](https://github.com/OData/RESTier) is the successor to WCF Data Services. RESTier helps you bootstrap a standardized, queryable, HTTP-based REST interface in minutes.
-> Like WCF Data Services before it, Restier provides simple and straightforward ways to shape queries and intercept submissions before and after they hit the database. And like Web API + OData, you still have the flexibility to add your own custom queries and actions with techniques you're already familiar with.
+[!INCLUDE [wcf-deprecated](../../../../includes/wcf-deprecated.md)]
 
 ## Overview
 

@@ -30,7 +30,7 @@ When serializing C# objects to JavaScript Object Notation (JSON), by default, al
 * [All null-value properties](#ignore-all-null-value-properties)
 ::: zone-end
 
-This article also includes a section about how to [ignore null when deserializing](#ignore-null-when-deserializing)
+This article also includes a section about how to [ignore null when deserializing](#ignore-null-when-deserializing).
 
 ## Ignore individual properties
 

@@ -158,10 +158,3 @@ The project or solution file to build. If a project or solution file isn't speci
   ```dotnetcli
   dotnet build -p:Version=1.2.3.4
   ```
-
-> [!NOTE]
-> The `dotnet build` command may fail with the following error if you run it from a directory path that contains a `%` character:
->
-> **NETSDK1004: Assets file 'C:\IncorrectPath\project.assets.json' not found. Run a NuGet package restore to generate this file.**
->
-> For more information, see [NETSDK1004: Assets file not found](sdk-errors/netsdk1004.md).

@@ -686,7 +686,7 @@ builder.HasData(
 );
 ```
 
-The initial app includes a `PreconfiguredData` class, though, which includes data for `CatalogBrand` and `CatalogType`, so using this method the `HasData` call reduces to:
+The initial app includes a `PreconfiguredData` class, which includes data for `CatalogBrand` and `CatalogType`, so using this method the `HasData` call reduces to:
 
 ```csharp
 builder.HasData(
@@ -742,6 +742,7 @@ public class ApplicationModule : Module
     {
         _useMockData = useMockData;
     }
+    
     protected override void Load(ContainerBuilder builder)
     {
         if (_useMockData)
@@ -807,13 +808,10 @@ public void ConfigureServices(IServiceCollection services)
     services.AddCors(options =>
     {
         options.AddPolicy(MyAllowSpecificOrigins,
-        builder =>
-        {
-            builder.WithOrigins("http://example.com",
-                                "http://www.contoso.com")
-                                .AllowAnyHeader()
-                                .AllowAnyMethod();
-        });
+            builder =>
+                builder.WithOrigins("http://example.com", "http://www.contoso.com")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod());
     });
 
     services.AddMvc(options =>
@@ -823,7 +821,8 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-**Note:** To finish configuring CORS, you must also call `app.UseCors()` in `Configure`.
+> [!Note]
+> To finish configuring CORS, you must also call `app.UseCors()` in `Configure`.
 
 Other advanced scenarios, like adding [custom model binders](https://docs.microsoft.com/aspnet/core/mvc/advanced/custom-model-binding?view=aspnetcore-2.2&preserve-view=true), formatters, and more are covered in the detailed ASP.NET Core docs. Generally these can be applied on an individual controller or action basis, or globally using the same options approach shown in the previous code listing.
 
@@ -832,8 +831,8 @@ Other advanced scenarios, like adding [custom model binders](https://docs.micros
 Dependencies that use .NET Framework features that had a dependency on the legacy configuration model, such as the WCF client type and tracing code, must be modified when ported. Rather than having these types pull in their configuration information directly, they should be configured in code. For example, a connection to a WCF service that was configured in an ASP.NET app's *web.config* to use `basicHttpBinding` could instead be configured programmatically with the following code:
 
 ```csharp
-BasicHttpBinding binding = new BasicHttpBinding();
-binding.MaxReceivedMessageSize = 2000000;
+var binding = new BasicHttpBinding();
+binding.MaxReceivedMessageSize = 2_000_000;
 
 var endpointAddress = new EndpointAddress("http://localhost:9200/ExampleService");
 

@@ -163,3 +163,5 @@ The project or solution file to build. If a project or solution file isn't speci
 > The `dotnet build` command may fail with the following error if you run it from a directory path that contains a `%` character:
 >
 > **NETSDK1004: Assets file 'C:\IncorrectPath\project.assets.json' not found.**
+>
+> For more information, see [NETSDK1004: Assets file not found](sdk-errors/netsdk1004.md).

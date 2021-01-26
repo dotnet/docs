@@ -9,12 +9,73 @@ ms.author: daberry
 
 # Create Azure resources for hosting an ASP.NET Core or ASP.NET application on Azure
 
+In this article, you will create the Azure resources needed to host your ASP.NET Core or ASP.NET application in Azure.
+
+This tutorial shows commands with arguments to create all Azure resources in the East US region.  If you prefer, you can create these resources in a different Azure region closer to you.  To find the available Azure regions, use the command `az account list-locations --output table`.
+
 ## Create a resource group
+
+A resource group is a logical container which is used to group together all of the Azure resources needed for your application.  
+
+```azurecli
+# Create a resource group
+az group create --name <resource-group-name> --location "East US"
+```
 
 ## Create the App Service for the application
 
+```azurecli
+# Create App Service Plan
+az appservice plan create --name <app-service-plan-name> --resource-group <resource-group-name> --sku FREE
+```
+
+```azurecli
+# Create a web app
+az webapp create --resource-group <resource-group-name> --plan <app-service-plan> --name <app-name>
+```
+
 ## Create an Azure SQL database for the data
 
+When hosting a SQL Server database in Azure, you must first create the database server by using the `az sql server create` command
+
+```azurecli
+# Create database server
+az sql server create --name <server-name> --resource-group <resource-group-name> --admin-user <db-username> --admin-password <db-password>
+```
+
+Once the server is created, you need to grant network access to allow your application and your development workstation access to the database.  This is done by using the `az sql server firewall-rule create` command.
+
+You can [use Bing to find your current IP address](https://www.bing.com/search?&q=my+ip+address)
+
+Finally, create the database for your application's data using the `az sql db create` command.  The service-objective paramater in this command specifies the size of the database to create.  To list the available database sizes, use the command `az sql db list-editions -a -o table -l <location>`.
+
+```azurecli
+az sql db create --resource-group <resource-group-name> --server <database-server-name> --name <app-database-name> --service-objective Free
+```
+
 ## Complete Script
+
+```azurecli
+# Create a resource group
+az group create --name myResourceGroup --location "East US"
+
+
+# Create App Service Plan
+az appservice plan create --name <app-service-plan-name> --resource-group <resource-group-name> --sku FREE
+
+# Create a web app
+az webapp create --resource-group <resource-group-name> --plan <app-service-plan> --name <app-name>
+
+
+# Create database server
+az sql server create --name <database-server-name> --resource-group <resource-group-name> --admin-user <db-username> --admin-password <db-password>
+
+# Configure database server firewall
+az sql server firewall-rule create --name AllowLocalClient --server <database-server-name> --resource-group <resource-group-name> --start-ip-address=<your-ip-address> --end-ip-address=<your-ip-address>
+
+# Create database
+az sql db create --resource-group <resource-group-name> --server <database-server-name> --name <app-database-name> --service-objective S0
+
+```
 
 ## Next Steps

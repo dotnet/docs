@@ -47,7 +47,7 @@ YouTube has a huge amount of .NET and .NET Core video content, which may include
 
 ## Twitter, Gitter, Slack, and other community channels
 
-You'll find many other ways to connect with .NET developers on the [.NET Community page](https://dotnet.microsoft.com/platform/community). Additionally, many product teams and team members are on Twitter as well as in various other communities. You can follow and communicate with [the author of this book on Twitter](https://twitter.com/ardalis) as well.
+You'll find many other ways to connect with .NET developers on the [.NET Community page](https://dotnet.microsoft.com/platform/community). You can also join the [DotNetEvolution Discord server](https://aka.ms/dotnet-discord). Additionally, many product teams and team members are on Twitter as well as in various other communities. You can follow and communicate with [the author of this book on Twitter](https://twitter.com/ardalis) as well.
 
 ## References
 

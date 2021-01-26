@@ -23,7 +23,7 @@ Apps built with .NET Core are running on [one of the fastest tech stacks availab
 
 ### Cloud-native
 
-For the above reasons and others, .NET Core apps are well-suited to running in cloud hosting environments. Lightweight and fast, .NET Core apps can be deployed to Azure Web Apps or containers and scaled horizontally as needed to meet immediate system demand.
+For the above reasons and others, .NET Core apps are well-suited to running in cloud hosting environments. Lightweight and fast, .NET Core apps can be deployed to Azure App Services or containers and scaled horizontally as needed to meet immediate system demand.
 
 ### Maintainable
 

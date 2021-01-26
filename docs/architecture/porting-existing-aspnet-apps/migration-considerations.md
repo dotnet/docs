@@ -51,6 +51,8 @@ Application domains (AppDomains) isolate apps from one another. AppDomains requi
 
 Server-side WCF isn't supported in .NET Core. .NET Core supports WCF clients but not WCF hosts. Apps that require this functionality will need to upgrade to a different communication technology (such as gRPC or REST) as part of a migration.
 
+There is a [WCF client port available from the .NET Foundation](https://docs.microsoft.com/dotnet/core/dotnet-five#windows-communication-foundation). It is entirely open source, cross platform, and supported by Microsoft. There is also a community-supported [CoreWCF project](https://github.com/CoreWCF/CoreWCF) that is *not* officially supported by Microsoft.
+
 ### Remoting
 
 .NET Remoting was identified as a problematic architecture. It's used for cross-AppDomain communication, which is no longer supported. Also, Remoting requires runtime support, which is expensive to maintain. For these reasons, .NET Remoting isn't supported on .NET Core, and the product team doesn't plan on adding support for it in the future. There are several alternative messaging strategies and implementations you can use to replace remoting in your .NET Core apps.

@@ -133,7 +133,7 @@ By default, if a property in JSON is null, the corresponding property in the tar
 
 For example, suppose the following code represents your target object:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithDefault)]
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=WFWithDefault)]
 
 And suppose the following JSON is deserialized:
 
@@ -149,7 +149,7 @@ After deserialization, the `Summary` property of the `WeatherForecastWithDefault
 
 To change this behavior, set <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=nameWithType> to `true`, as shown in the following example:
 
-[!code-csharp[](snippets/system-text-json-how-to/csharp/DeserializeIgnoreNull.cs?name=SnippetDeserialize)]
+[!code-csharp[](snippets/system-text-json-how-to/csharp/DeserializeIgnoreNull.cs?name=Deserialize)]
 
 With this option, the `Summary` property of the `WeatherForecastWithDefault` object is the default value "No summary" after deserialization.
 

@@ -1,7 +1,7 @@
 ---
 title: Versioning and .NET libraries
 description: Best practice recommendations for versioning .NET libraries.
-ms.date: 12/10/2018
+ms.date: 01/26/2021
 ---
 # Versioning
 
@@ -82,7 +82,7 @@ The assembly file version is used to display a file version in Windows and has n
 The assembly informational version is used to record additional version information and has no effect on runtime behavior. Setting this version is optional. If you're using Source Link, this version will be set on build with the NuGet package version plus a source control version. For example, `1.0.0-beta1+204ff0a` includes the commit hash of the source code the assembly was built from. For more information, see [Source Link](./sourcelink.md).
 
 ```xml
-<AssemblyInformationalVersion>The quick brown fox jumped over the lazy dog.</AssemblyInformationalVersion>
+<InformationalVersion>The quick brown fox jumped over the lazy dog.</InformationalVersion>
 ```
 
 > [!NOTE]

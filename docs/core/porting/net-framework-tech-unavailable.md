@@ -3,14 +3,13 @@ title: .NET Framework technologies unavailable on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn about .NET Framework technologies that are unavailable on .NET Core and .NET 5.0 and later versions.
 author: cartermp
-ms.date: 10/13/2020
+ms.date: 01/26/2021
 ---
 # .NET Framework technologies unavailable on .NET Core and .NET 5+
 
-Several technologies available to .NET Framework libraries aren't available for use with .NET Core and .NET 5.0 and later versions, such as app domains, remoting, code access security (CAS), security transparency, and <xref:System.EnterpriseServices?displayProperty=fullName>. If your libraries rely on one or more of these technologies, consider the alternative approaches outlined here. For more information on API compatibility, see [Breaking changes in .NET](../compatibility/breaking-changes.md).
+Several technologies available to .NET Framework libraries aren't available for use with .NET Core and .NET 5.0 and later versions, such as app domains, remoting, and code access security (CAS). If your libraries rely on one or more of the technologies listed on this page, consider the alternative approaches that are mentioned.
 
-> [!TIP]
-> Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. Search the .NET GitHub repositories to see if a particular issue you encounter is by design. If you don't find such an indicator, file an issue in the [dotnet/runtime repository](https://github.com/dotnet/runtime/issues) to ask for specific APIs and technologies.
+For more information on API compatibility, see [Breaking changes in .NET](../compatibility/breaking-changes.md).
 
 ## Application domains
 
@@ -41,6 +40,10 @@ Use security boundaries provided by the operating system, such as virtualization
 ## System.EnterpriseServices
 
 <xref:System.EnterpriseServices?displayProperty=fullName> (COM+) is not supported by .NET Core and .NET 5+.
+
+## Workflow Foundation and WCF
+
+Windows Workflow Foundation (WF) and Windows Communication Foundation (WCF) are not supported in .NET 5+ (including .NET Core). For alternatives, see [CoreWF](https://github.com/UiPath/corewf) and [CoreWCF](https://github.com/CoreWCF/CoreWCF).
 
 ## See also
 

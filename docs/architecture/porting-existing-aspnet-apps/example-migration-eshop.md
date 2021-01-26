@@ -15,7 +15,7 @@ The initial version of the project is shown in Figure 4-1. It's a fairly standar
 
 ![Figure 4-1](media/Figure4-1.png)
 
-**Figure 4-1. The *eShopModernizing* MVC sample project structure.**
+**Figure 4-1.** The *eShopModernizing* MVC sample project structure.
 
 ## Run *ApiPort* to identify problematic APIs
 
@@ -25,13 +25,13 @@ After [installing and configuring the *ApiPort* tool](https://docs.microsoft.com
 
 ![Figure 4-2](media/Figure4-2.png)
 
-**Figure 4-2. Analyze assembly portability in Visual Studio.**
+**Figure 4-2.** Analyze assembly portability in Visual Studio.
 
 Choose the web project's assembly from the project's *bin* folder, as shown in Figure 4-3.
 
 ![Figure 4-3](media/Figure4-3.png)
 
-**Figure 4-3. Choose the project's web assembly.**
+**Figure 4-3.** Choose the project's web assembly.
 
 If your solution includes several projects, you can choose all of them. The *eShop* sample includes just a single MVC project.
 
@@ -39,13 +39,13 @@ Once the report is generated, open the file and review the results. The summary 
 
 ![Figure 4-4](media/Figure4-4.png)
 
-**Figure 4-4. ApiPort summary.**
+**Figure 4-4.** ApiPort summary.
 
 For this app, about 80 percent of the .NET Framework calls are compatible. 20 percent of the calls need to be addressed during the porting process. Viewing the details reveals that all of the incompatible calls are part of `System.Web`, which is an expected incompatibility. The dependencies on `System.Web` calls will be addressed when the app's controllers and related classes are migrated in a later step. Figure 4-5 lists some of the specific types found by the tool:
 
 ![Figure 4-5](media/Figure4-5.png)
 
-**Figure 4-5. *ApiPort* incompatible type details.**
+**Figure 4-5.** *ApiPort* incompatible type details.
 
 Most of the incompatible types refer to `Controller` and various related attributes that have equivalents in ASP.NET Core.
 
@@ -57,7 +57,7 @@ The original project's *eShopLegacyMVC.csproj* file is 418 lines long. A sample 
 
 ![Figure 4-6](media/Figure4-6.png)
 
-**Figure 4-6. The *eShopLegacyMVC.csproj* file structure.**
+**Figure 4-6.** The *eShopLegacyMVC.csproj* file structure.
 
 A common way to create a new project file for an existing ASP.NET project is to create a new ASP.NET Core app using `dotnet new` or **File** > **New** > **Project** in Visual Studio. Then files can be copied from the old project to the new one to complete the migration.
 
@@ -65,7 +65,7 @@ In addition to the C# project file, NuGet dependencies are stored in a separate 
 
 ![Figure 4-7](media/Figure4-7.png)
 
-**Figure 4-7. The *packages.config* file.**
+**Figure 4-7.** The *packages.config* file.
 
 After upgrading to the new *.csproj* file format, you can migrate *packages.config* in class library projects using Visual Studio. This functionality doesn't work with ASP.NET projects, however. [Learn more about migrating *packages.config* to `<PackageReference>` in Visual Studio](https://docs.microsoft.com/nuget/consume-packages/migrate-packages-config-to-package-reference). If you have a large number of projects to migrate, [this community tool may help](https://github.com/MarkKharitonov/NuGetPCToPRMigrator).
 
@@ -75,13 +75,13 @@ Add a new ASP.NET Core project to the existing app's solution to make moving fil
 
 ![Figure 4-8](media/Figure4-8.png)
 
-**Figure 4-8. Add new ASP.NET Core web application.**
+**Figure 4-8.** Add new ASP.NET Core web application.
 
 The next dialog will ask you to choose which template to use. Select the **Empty** template. Be sure to also change the dropdown from **.NET Core** to **.NET Framework**. Select **ASP.NET Core 2.2**, as shown in Figure 4-9.
 
 ![Figure 4-9](media/Figure4-9.png)
 
-**Figure 4-9. Choose an Empty project template targeting .NET Framework with ASP.NET Core 2.2.**
+**Figure 4-9.** Choose an Empty project template targeting .NET Framework with ASP.NET Core 2.2.
 
 ### Migrating NuGet Packages
 
@@ -108,7 +108,7 @@ The static client files installed by NuGet for these packages will be copied ove
 
 ![Figure 4-10](media/Figure4-10.png)
 
-**Figure 4-10. Package references in the *eShopPorted.csproj* file.**
+**Figure 4-10.** Package references in the *eShopPorted.csproj* file.
 
 The package references can be further compacted by making the `<Version>1.0.0.0</Version>` element a `Version=1.0.0.0` attribute on `<PackageReference>`.
 
@@ -139,15 +139,18 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     }
 
     app.UseStaticFiles();
+    
+    // ...
+}
 ```
 
 Copy the *Content* folder from the ASP.NET MVC app to the new project's *wwwroot* folder.
 
-Run the app and navigate to its */Content/base.css* folder to verify that the static file is served correctly from its expected path. Continue copying the rest of the folders containing static files to the new project. You'll also want to copy the *favicon.ico* file from the project's root to the *wwwroot* folder. Figure 11 shows the results after these files and their folders have all been copied.
+Run the app and navigate to its */Content/base.css* folder to verify that the static file is served correctly from its expected path. Continue copying the rest of the folders containing static files to the new project. You'll also want to copy the *favicon.ico* file from the project's root to the *wwwroot* folder. Figure 4-11 shows the results after these files and their folders have all been copied.
 
 ![Figure 4-11](media/Figure4-11.png)
 
-**Figure 4-11. Static folders copied over to *wwwroot* folder.**
+**Figure 4-11.** Static folders copied over to *wwwroot* folder.
 
 ### Migrate C# files
 

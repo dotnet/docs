@@ -15,6 +15,8 @@ In ASP.NET MVC, content negotiation isn't supported. ASP.NET Web API 2 does supp
 
 When migrating ASP.NET Web API controllers to ASP.NET Core, a few components will need to be changed if they exist. These include references to the `ApiController` base class, the `System.Web.Http` namespace, and the `IHttpActionResult` interface. Refer to the [documentation for recommendations on how to migrate these specific differences](https://docs.microsoft.com/aspnet/core/migration/webapi), and note that the preferred return type for API actions in ASP.NET Core is `ActionResult<T>`.
 
+ASP.NET Core includes two new attributes, [ConsumesAttribute](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.consumesattribute) and [ProducesAttribute](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.producesattribute). These are used to specify the type an action consumes or produces, which can be helpful for routing and documenting the API using tools like [Swagger/OpenAPI](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger).
+
 ## References
 
 - [Format response data in ASP.NET Core Web API](https://docs.microsoft.com/aspnet/core/web-api/advanced/formatting)

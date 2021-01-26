@@ -1,7 +1,7 @@
 ---
 title: How to ignore properties with System.Text.Json
 description: "Learn how to ignore properties when serializing with System.Text.Json in .NET."
-ms.date: 11/30/2020
+ms.date: 01/26/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -126,6 +126,34 @@ The <xref:System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault>
 ::: zone pivot="dotnet-core-3-1"
 There is no built-in way to prevent serialization of properties with value type defaults in `System.Text.Json` in .NET Core 3.1.
 ::: zone-end
+
+## Ignore null when deserializing
+
+By default, if a property in JSON is null, the corresponding property in the target object is set to null. In some scenarios, the target property might have a default value, and you don't want a null value to override the default.
+
+For example, suppose the following code represents your target object:
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithDefault)]
+
+And suppose the following JSON is deserialized:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureCelsius": 25,
+  "Summary": null
+}
+```
+
+After deserialization, the `Summary` property of the `WeatherForecastWithDefault` object is null.
+
+To change this behavior, set <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=nameWithType> to `true`, as shown in the following example:
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/DeserializeIgnoreNull.cs?name=SnippetDeserialize)]
+
+With this option, the `Summary` property of the `WeatherForecastWithDefault` object is the default value "No summary" after deserialization.
+
+Null values in the JSON are ignored only if they are valid. Null values for non-nullable value types cause exceptions.
 
 ## See also
 

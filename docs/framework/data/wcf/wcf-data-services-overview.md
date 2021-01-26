@@ -8,7 +8,7 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
 ---
 # WCF Data Services Overview
 
-[!INCLUDE [wcf-deprecated](../../../../includes/wcf-deprecated.md)]
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 ## Overview
 

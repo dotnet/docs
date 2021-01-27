@@ -200,6 +200,11 @@
         }
       }
     },
+    "reopened": {
+      "processor-default": {
+        "labels-remove": [ "won't fix" ]
+      }
+    },
     "closed": {
       "processor-default": {
         "labels-remove": [ "in-progress", ":watch: Not Triaged" ]

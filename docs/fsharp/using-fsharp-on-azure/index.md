@@ -37,10 +37,10 @@ Other resources for using Azure Functions and F#:
 
 Azure Storage is a base layer of storage services for modern applications that rely on durability, availability, and scalability to meet the needs of customers. F# programs can interact directly with Azure storage services, using the techniques described in the following articles.
 
-* [Get started with Azure Blob storage using F#](blob-storage.md)
-* [Get started with Azure File storage using F#](file-storage.md)
-* [Get started with Azure Queue storage using F#](queue-storage.md)
-* [Get started with Azure Table storage using F#](table-storage.md)
+* [Get started with Azure Blob Storage using F#](blob-storage.md)
+* [Get started with Azure File Storage using F#](file-storage.md)
+* [Get started with Azure Queue Storage using F#](queue-storage.md)
+* [Get started with Azure Table Storage using F#](table-storage.md)
 
 Azure Storage can also be used in conjunction with Azure Functions through declarative configuration rather than explicit API calls. See [Azure Functions triggers and bindings for Azure Storage](/azure/azure-functions/functions-bindings-storage) which includes F# examples.
 

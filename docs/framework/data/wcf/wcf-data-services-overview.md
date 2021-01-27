@@ -8,6 +8,10 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
 ---
 # WCF Data Services Overview
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+## Overview
+
 WCF Data Services enables creation and consumption of data services for the Web or an intranet by using the Open Data Protocol (OData). OData enables you to expose your data as resources that are addressable by URIs. This enables you to access and change data by using the semantics of representational state transfer (REST), specifically the standard HTTP verbs of GET, PUT, POST, and DELETE. This topic provides an overview of both the patterns and practices defined by OData and also the facilities provided by WCF Data Services to take advantage of OData in .NET Framework-based applications.  
   
 ## Address Data as Resources  

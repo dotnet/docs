@@ -31,11 +31,6 @@ When you add the image name to your Dockerfile file, you can select the operatin
 | mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim | .NET 5 runtime-only on Linux Debian distro |
 | mcr.microsoft.com/dotnet/aspnet:5.0-nanoserver-1809 | .NET 5 runtime-only on Windows Nano Server (Windows Server version 1809) |
 
-## Additional resources
-
-- **BitmapDecoder fails due to missing WindowsCodecsExt.dll (GitHub issue)**  
-  <https://github.com/microsoft/dotnet-framework-docker/issues/299>
-
 > [!div class="step-by-step"]
 > [Previous](container-framework-choice-factors.md)
 > [Next](official-net-docker-images.md)

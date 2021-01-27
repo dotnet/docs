@@ -35,9 +35,9 @@ Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the
 |Key name|HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\\.NETFramework\Performance|  
 |Value name|ProcessNameFormat|  
 |Value type|REG_DWORD|  
-|Value|1 (0x00000001)|  
+|Value|2 (0x00000002)|
   
- A value of 0 for `ProcessNameFormat` indicates that the default behavior is enabled; that is, Perfmon.exe displays performance counters on a per-application basis. When you set this value to 1, Perfmon.exe disambiguates multiple versions of an application and provides performance counters on a per-runtime basis. Any other value for the `ProcessNameFormat` registry key setting is unsupported and reserved for future use.  
+ A value of 0 for `ProcessNameFormat` indicates that the default behavior is enabled; that is, Perfmon.exe displays performance counters on a per-application basis. When you set this value to 2, Perfmon.exe disambiguates multiple versions of an application and provides performance counters on a per-runtime basis. Any other value for the `ProcessNameFormat` registry key setting is unsupported and reserved for future use.
   
  After you update the `ProcessNameFormat` registry key setting, you must restart Perfmon.exe or any other consumers of performance counters so that the new instance naming feature works correctly.  
   

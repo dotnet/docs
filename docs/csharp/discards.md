@@ -29,7 +29,7 @@ When `_` is a valid discard, attempting to retrieve its value or use it in an as
 
 Discards are particularly useful in working with tuples when your application code uses some tuple elements but ignores others. For example, the following `QueryCityDataForYears` method returns a 6-tuple with the name of a city, its area, a year, the city's population for that year, a second year, and the city's population for that second year. The example shows the change in population between those two years. Of the data available from the tuple, we're unconcerned with the city area, and we know the city name and the two dates at design-time. As a result, we're only interested in the two population values stored in the tuple, and can handle its remaining values as discards.  
 
-:::code language="csharp" source="snippets/discards/discard-tuples.cs" id="DiscardTupleMember" :::
+:::code language="csharp" source="snippets/discards/discard-tuple.cs" id="DiscardTupleMember" :::
 
 For more information on deconstructing tuples with discards, see [Deconstructing tuples and other types](deconstruct.md#deconstructing-tuple-elements-with-discards).
 

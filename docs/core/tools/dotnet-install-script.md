@@ -151,9 +151,15 @@ The install scripts do not update the registry on Windows. They just download th
   - `aspnetcore` - the `Microsoft.AspNetCore.App` shared runtime.
   - `windowsdesktop` - the `Microsoft.WindowsDesktop.App` shared runtime.
 
-- **`--runtime-id <RID>`**
+- **`--runtime-id <RID>` [Deprecated]**
 
-  Specifies the [runtime identifier](../rid-catalog.md) for which the tools are being installed. Use `linux-x64` for portable Linux. (Only valid for Linux/macOS.)
+  Specifies the [runtime identifier](../rid-catalog.md) for which the tools are being installed. Use `linux-x64` for portable Linux. (Only valid for Linux/macOS and for versions earlier than .NET Core 2.1.)
+
+  **`--os <OPERATING_SYSTEM>`**
+
+  Specifies the operating system for which the tools are being installed. Possible values are: `osx`, `linux`, `linux-musl`, `freebsd`, `rhel.6`. (Valid for .NET Core 2.1 and later.)
+
+  The parameter is optional and should only be used when it's required to override the operating system that is detected by the script.
 
 - **`-SharedRuntime|--shared-runtime`**
 

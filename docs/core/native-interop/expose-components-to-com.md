@@ -88,7 +88,7 @@ There is a fully functional [COM server sample](https://github.com/dotnet/sample
 
 Unlike in .NET Framework, there is no support in .NET Core for generating a COM Type Library (TLB) from a .NET Core assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces.
 
-In .NET Framework, an "Any CPU" assembly can be consumed by both 32-bit and 64-bit clients. In .NET Core, .NET 5, and later versions, "Any CPU" assemblies are accompanied by 64-bit *.comhost.dll*, so they can only be consumed by 64-bit clients.
+In .NET Framework, an "Any CPU" assembly can be consumed by both 32-bit and 64-bit clients. By default, in .NET Core, .NET 5, and later versions, "Any CPU" assemblies are accompanied by 64-bit *\*.comhost.dll*, so they can only be consumed by 64-bit clients. That is the default because that is what the SDK represents. This behavior is identical to how a "self-contained" feature is published: by default it uses what the SDK provides. The `NETCoreSdkRuntimeIdentifier` MSBuild property is key here. That property determines the bitness of *\*.comhost.dll*. The managed part is actually bitness agnostic as expected, but the accompanying native asset defaults to the SDK.
 
 [Self-contained deployments](../deploying/index.md#publish-self-contained) of COM components are not supported. Only [framework-dependent deployments](../deploying/index.md#publish-framework-dependent) of COM components are supported.
 

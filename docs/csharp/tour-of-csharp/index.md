@@ -1,6 +1,6 @@
 ---
 title: A Tour of C# - C# Guide
-description: New to C#? Learn the basics of the language.
+description: New to C#? Learn the basics of the language. Start with this overview.
 ms.date: 01/28/2021
 ---
 

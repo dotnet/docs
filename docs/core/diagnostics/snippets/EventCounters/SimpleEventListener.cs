@@ -4,32 +4,8 @@ using System.Diagnostics.Tracing;
 
 public class SimpleEventListener : EventListener
 {
-    private int _intervalSec;
-    private bool _fullyInitialized = false;
-    private bool _receivedCallback = false;
-
-    private EventSource _systemRuntime;
-
-    // used to lock the fields _intervalSec, _fullyInitialized, and _receivedCallback
-    private object _lock = new object();
-
-    public SimpleEventListener(int intervalSec)
+    public SimpleEventListener()
     {
-        lock (_lock)
-        {
-            _intervalSec = intervalSec <= 0
-                ? throw new ArgumentException("Interval must be at least 1 second.", nameof(intervalSec))
-                : intervalSec;
-
-            if (_receivedCallback)
-            {
-                EnableEvents(_systemRuntime, EventLevel.Verbose, EventKeywords.All, new Dictionary<string, string>()
-                {
-                    ["EventCounterIntervalSec"] = _intervalSec.ToString()
-                });
-            }
-            _fullyInitialized = true;
-        }
     }
 
     protected override void OnEventSourceCreated(EventSource source)
@@ -39,18 +15,10 @@ public class SimpleEventListener : EventListener
             return;
         }
 
-        lock (_lock)
+        EnableEvents(source, EventLevel.Verbose, EventKeywords.All, new Dictionary<string, string>()
         {
-            if (_fullyInitialized)
-            {
-                EnableEvents(source, EventLevel.Verbose, EventKeywords.All, new Dictionary<string, string>()
-                {
-                    ["EventCounterIntervalSec"] = _intervalSec.ToString()
-                });
-            }
-            _systemRuntime = source;
-            _receivedCallback = true;
-        }
+            ["EventCounterIntervalSec"] = "1"
+        });
     }
 
     protected override void OnEventWritten(EventWrittenEventArgs eventData)

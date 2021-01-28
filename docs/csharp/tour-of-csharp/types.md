@@ -28,7 +28,7 @@ Instances of classes are created using the `new` operator, which allocates memor
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="CreatePoints":::
 
-The memory occupied by an object is automatically reclaimed when the object is no longer reachable. It's neither necessary nor possible to explicitly deallocate objects in C#.
+The memory occupied by an object is automatically reclaimed when the object is no longer reachable. It's not necessary or possible to explicitly deallocate objects in C#.
 
 ### Type parameters
 

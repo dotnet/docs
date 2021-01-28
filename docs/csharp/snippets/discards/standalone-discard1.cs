@@ -9,6 +9,15 @@ public class AsyncExample
         await ExecuteAsyncMethods();
     }
 
+    // <ArgNullCheck>
+    public static void Method(string arg)
+    {
+        _ = arg ?? throw new ArgumentNullException(paramName: nameof(arg), message: "arg can't be null");
+
+        // Do work with arg.
+    }
+    // </ArgNullCheck>
+
     // <SnippetDiscardTask>
     private static async Task ExecuteAsyncMethods()
     {

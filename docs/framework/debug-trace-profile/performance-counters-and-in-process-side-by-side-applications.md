@@ -48,7 +48,6 @@ Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the
   
  When you make this registry change, and if .NET Framework 4 or later is installed, Perfmon.exe displays the names of applications as *application*_`p`*processID*, where *application* is the name of the application, and *processID* is the application's process identifier. For example, if an application named myapp.exe loads two instances of the common language runtime, Perfmon.exe may identify one instance as myapp_1416 and the second as myapp_3160.
   
-  
 > [!NOTE]
 > The process identifier eliminates the ambiguity of resolving two applications with the same name that use earlier versions of the runtime. A runtime identifier is not required for previous versions, because previous versions of the common language runtime do not support side-by-side scenarios.  
   

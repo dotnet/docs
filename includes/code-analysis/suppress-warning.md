@@ -3,6 +3,7 @@
 To suppress a rule violation, set the severity option for the specific rule ID to `none` in an EditorConfig file. For example:
 
 ```ini
+[*.{cs,vb}]
 dotnet_diagnostic.CA1822.severity = none
 ```
 

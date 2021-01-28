@@ -23,7 +23,7 @@ In your `.editorconfig` file, you can define **naming rules** for how .NET progr
 
 A naming rule has three components:
 
-* The *symbol group*&mdash;the group of symbols the rule applies to.
+* The **symbol group**&mdash;the group of symbols the rule applies to.
 * The **naming style** to associate with the rule.
 * The severity for enforcing the convention.
 

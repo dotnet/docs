@@ -9,6 +9,8 @@ ms.assetid: 314077c1-ac10-47e1-bed4-940b5462359d
 ---
 # Generating the Data Service Client Library (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 A data service that implements the Open Data Protocol (OData) can return a service metadata document that describes the data model exposed by the OData feed. For more information, see the Service Metadata Document section in the [OData: Overview](https://www.odata.org/documentation/odata-version-2-0/overview/) article. You can use the **Add Service Reference** dialog in Visual Studio to add a reference to an OData-based service. When you use this tool to add a reference to the metadata returned by an OData feed in a client project, it performs the following actions:  
   
 - Requests the service metadata document from the data service and interprets the returned metadata.  

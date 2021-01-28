@@ -12,6 +12,8 @@ ms.assetid: cc4ec9e9-348f-42a6-a78e-1cd40e370656
 ---
 # LINQ Considerations (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 This topic provides information about the way in which LINQ queries are composed and executed when you are using the WCF Data Services client and limitations of using LINQ to query a data service that implements the Open Data Protocol (OData). For more information about composing and executing queries against an OData-based data service, see [Querying the Data Service](querying-the-data-service-wcf-data-services.md).  
   
 ## Composing LINQ Queries  

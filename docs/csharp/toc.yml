@@ -1,21 +1,16 @@
 items:
 - name: C# documentation
   href: index.yml
-- name: Get started
+- name: Tour of C#
   items:
-  - name: Introduction to the C# language and .NET
-    displayName: get started
-    href: getting-started/index.md
-  - name: Tour of C#
-    items:
-    - name: Introduction
-      href: tour-of-csharp/index.md
-    - name: Types
-      href: tour-of-csharp/types.md
-    - name: Program building blocks
-      href: tour-of-csharp/program-building-blocks.md
-    - name: Major language areas
-      href: tour-of-csharp/features.md
+  - name: Introduction
+    href: tour-of-csharp/index.md
+  - name: Types
+    href: tour-of-csharp/types.md
+  - name: Program building blocks
+    href: tour-of-csharp/program-building-blocks.md
+  - name: Major language areas
+    href: tour-of-csharp/features.md
 - name: Tutorials
   items:
   - name: Overview

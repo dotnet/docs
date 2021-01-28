@@ -748,7 +748,7 @@ We're sorry, but we don't have any specific information about this error. You ca
 Provides a QA website for questions about and issues with Visual C#.  
 
  Also see:  
- [Additional Resources for Visual C# Programmers](../getting-started/index.md)  
+ [Additional Resources for Visual C# Programmers](../tour-of-csharp/index.md)  
   
 ## See also
 

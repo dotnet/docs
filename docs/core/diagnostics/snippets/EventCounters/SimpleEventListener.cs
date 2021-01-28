@@ -4,14 +4,33 @@ using System.Diagnostics.Tracing;
 
 public class SimpleEventListener : EventListener
 {
-    private int _intervalSec = 1;
+    private int _intervalSec;
+    private bool _fullyInitialized = false;
+    private bool _receivedCallback = false;
 
-    public int EventCount { get; private set; }
+    private EventSource _systemRuntime;
 
-    public SimpleEventListener(int intervalSec = 1) =>
-        _intervalSec = intervalSec <= 0
-            ? throw new ArgumentException("Interval must be at least 1 second.", nameof(intervalSec))
-            : intervalSec;
+    // used to lock the fields _intervalSec and _isEnabled
+    private object _lock = new object();
+
+    public SimpleEventListener(int intervalSec)
+    {
+        lock (_lock)
+        {
+            _intervalSec = intervalSec <= 0
+                ? throw new ArgumentException("Interval must be at least 1 second.", nameof(intervalSec))
+                : intervalSec;
+
+            if (_receivedCallback)
+            {
+                EnableEvents(_systemRuntime, EventLevel.Verbose, EventKeywords.All, new Dictionary<string, string>()
+                {
+                    ["EventCounterIntervalSec"] = _intervalSec.ToString()
+                });
+            }
+            _fullyInitialized = true;
+        }
+    }
 
     protected override void OnEventSourceCreated(EventSource source)
     {
@@ -20,10 +39,18 @@ public class SimpleEventListener : EventListener
             return;
         }
 
-        EnableEvents(source, EventLevel.Verbose, EventKeywords.All, new Dictionary<string, string>()
+        lock (_lock)
         {
-            ["EventCounterIntervalSec"] = _intervalSec.ToString()
-        });
+            if (_fullyInitialized)
+            {
+                EnableEvents(source, EventLevel.Verbose, EventKeywords.All, new Dictionary<string, string>()
+                {
+                    ["EventCounterIntervalSec"] = _intervalSec.ToString()
+                });
+            }
+            _systemRuntime = source;
+            _receivedCallback = true;
+        }
     }
 
     protected override void OnEventWritten(EventWrittenEventArgs eventData)

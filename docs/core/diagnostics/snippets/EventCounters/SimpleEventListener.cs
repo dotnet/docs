@@ -10,7 +10,7 @@ public class SimpleEventListener : EventListener
 
     private EventSource _systemRuntime;
 
-    // used to lock the fields _intervalSec and _isEnabled
+    // used to lock the fields _intervalSec, _fullyInitialized, and _receivedCallback
     private object _lock = new object();
 
     public SimpleEventListener(int intervalSec)

@@ -12035,8 +12035,12 @@
         },
         {
             "source_path": "docs/visual-basic/language-reference/directives/directives.md",
-            "redirect_url": "/dotnet/visual-basic/language-reference/directives/index",
+            "redirect_url": "/dotnet/visual-basic/language-reference/directives/disable-enable",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/directives/index.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/directives/disable-enable"
         },
         {
             "source_path": "docs/visual-basic/language-reference/error-messages/a-reference-was-created-to-embedded-interop-assembly-assembly1.md",
@@ -13129,6 +13133,6 @@
         {
             "source_path": "docs/azure/tools.md",
             "redirect_url": "/dotnet/azure/dotnet-dev-env-checklist"
-        }        
+        }
     ]
 }

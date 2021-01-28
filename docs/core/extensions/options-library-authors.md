@@ -3,12 +3,12 @@ title: Options pattern guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose the options pattern as a library author in .NET.
 ms.author: dapine
-ms.date: 01/27/2021
+ms.date: 01/28/2021
 ---
 
 # Options pattern guidance for .NET library authors
 
-With the help of dependency injection, registering your services and their corresponding configurations can make use of the *options pattern*. The options pattern enables consumers of your library (and your services) to require instances of <xref:Microsoft.Extensions.Options.IOptions%601> where `TOptions` is your options class. There are many [configuration providers](configuration-providers.md) for consumers of your library to use. With these providers, consumers can configure your library in many ways. The options pattern benefits you, the author, and consumers.
+With the help of dependency injection, registering your services and their corresponding configurations can make use of the *options pattern*. The options pattern enables consumers of your library (and your services) to require instances of [options interfaces](options.md#options-interfaces) where `TOptions` is your options class. Consuming configuration options through strongly-typed objects helps to ensure consistent value representation, and removes the burden of manually parsing string values. There are many [configuration providers](configuration-providers.md) for consumers of your library to use. With these providers, consumers can configure your library in many ways.
 
 As a .NET library author, you'll learn general guidance on how to correctly expose the options pattern to consumers of your library. There are various ways to achieve the same thing, and several considerations to make.
 

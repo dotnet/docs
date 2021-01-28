@@ -4,7 +4,7 @@ using System.Diagnostics.Tracing;
 
 public class SimpleEventListener : EventListener
 {
-    private readonly int _intervalSec;
+    private int _intervalSec = 1;
 
     public int EventCount { get; private set; }
 

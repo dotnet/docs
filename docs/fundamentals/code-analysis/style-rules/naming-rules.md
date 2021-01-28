@@ -43,7 +43,7 @@ The order of the properties is not important.
 
 **\<kind>** specifies which kind of element is being defined&mdash;naming rule, symbol group, or naming style&mdash;and must be one of the following:
 
-| To set a property for | Use the prefix | Example |
+| To set a property for | Use the \<kind> value | Example |
 | --- | --- | -- |
 | Naming rule | `dotnet_naming_rule` | `dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion` |
 | Symbol group | `dotnet_naming_symbols` | `dotnet_naming_symbols.interface.applicable_kinds = interface` |

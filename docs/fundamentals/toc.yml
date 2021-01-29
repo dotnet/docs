@@ -198,7 +198,7 @@ items:
         href: ../core/tools/sdk-errors/netsdk1079.md
       - name: NETSDK1145
         href: ../core/tools/sdk-errors/netsdk1145.md
-  - name: .NET Core CLI
+  - name: .NET CLI
     items:
     - name: Overview
       displayName: '.net cli,command-line interface,cli,tool'
@@ -440,7 +440,7 @@ items:
         href: ../fundamentals/diagnostics/runtime-type-events.md
     - name: Collect diagnostics in containers
       href: ../core/diagnostics/diagnostics-in-containers.md
-    - name: .NET Core CLI global tools
+    - name: .NET CLI global tools
       items:
       - name: dotnet-counters
         href: ../core/diagnostics/dotnet-counters.md
@@ -454,7 +454,7 @@ items:
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
         href: ../core/diagnostics/dotnet-sos.md
-    - name: .NET Core diagnostics tutorials
+    - name: .NET diagnostics tutorials
       items:
       - name: Collect performance trace in Linux with PerfCollect
         href: ../core/diagnostics/trace-perfcollect-lttng.md
@@ -1297,15 +1297,15 @@ items:
         href: ../core/dependency-loading/loading-unmanaged.md
     - name: Tutorials
       items:
-      - name: Create a .NET Core application with plugins
+      - name: Create a .NET application with plugins
         href: ../core/tutorials/creating-app-with-plugin-support.md
-      - name: How to use and debug assembly unloadability in .NET Core
+      - name: How to use and debug assembly unloadability in .NET
         href: ../core/../standard/assembly/unloadability.md
   - name: Versioning
     items:
     - name: Overview
       href: ../core/versions/index.md
-    - name: .NET Core version selection
+    - name: .NET version selection
       href: ../core/versions/selection.md
   - name: Run-time configuration
     items:
@@ -1355,7 +1355,7 @@ items:
     items:
     - name: Introduction to .NET and Docker
       href: ../core/docker/introduction.md
-    - name: Containerize a .NET Core app
+    - name: Containerize a .NET app
       href: ../core/docker/build-container.md
     - name: Container tools in Visual Studio
       href: /visualstudio/containers/overview
@@ -2055,7 +2055,7 @@ items:
     href: ../core/testing/unit-testing-code-coverage.md
   - name: Unit test published output
     href: ../core/testing/unit-testing-published-output.md
-  - name: Live unit test .NET Core projects with Visual Studio
+  - name: Live unit test .NET projects with Visual Studio
     href: /visualstudio/test/live-unit-testing-start
 - name: Security
   href: ../standard/security/
@@ -2134,9 +2134,9 @@ items:
       href: ../standard/native-interop/best-practices.md
     - name: Charsets and marshaling
       href: ../standard/native-interop/charset.md
-    - name: Expose .NET Core components to COM
+    - name: Expose .NET components to COM
       href: ../core/native-interop/expose-components-to-com.md
-    - name: Host .NET Core from native code
+    - name: Host .NET from native code
       href: ../core/tutorials/netcore-hosting.md
     - name: COM interop
       items:
@@ -2158,7 +2158,7 @@ items:
       href: ../standard/native-interop/apply-interop-attributes.md
     - name: Exceptions
       href: ../standard/native-interop/exceptions-interoperability.md
-  - name: .NET Core distribution packaging
+  - name: .NET distribution packaging
     href: ../core/distribution-packaging.md
   - name: Globalization and localization
     href: ../standard/globalization-localization/
@@ -2296,7 +2296,7 @@ items:
       href: ../core/porting/third-party-deps.md
     - name: Port libraries
       href: ../core/porting/libraries.md
-    - name: Organize projects for .NET Core
+    - name: Organize projects for .NET
       href: ../core/porting/project-structure.md
     - name: Unavailable technologies
       href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json

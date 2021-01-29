@@ -30,9 +30,9 @@ You can download the .NET Uninstall Tool from [the tool's releases page](https:/
 
 The following steps show the recommended approach for running the uninstall tool:
 
-- [Step 1 - Display installed .NET SDKs and runtimes](#step-1---display-installed-net-core-sdks-and-runtimes)
+- [Step 1 - Display installed .NET SDKs and runtimes](#step-1---display-installed-net-sdks-and-runtimes)
 - [Step 2 - Do a dry run](#step-2---do-a-dry-run)
-- [Step 3 - Uninstall .NET SDKs and Runtimes](#step-3---uninstall-net-core-sdks-and-runtimes)
+- [Step 3 - Uninstall .NET SDKs and Runtimes](#step-3---uninstall-net-sdks-and-runtimes)
 - [Step 4 - Delete the NuGet fallback folder (optional)](#step-4---delete-the-nuget-fallback-folder-optional)
 
 ### Step 1 - Display installed .NET SDKs and runtimes

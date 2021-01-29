@@ -1,5 +1,6 @@
 ---
 title: "Sorry, we don't have specifics on this C# error"
+description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
 ms.date: 08/04/2020
 f1_keywords:
   - "CS0181"
@@ -747,11 +748,9 @@ We're sorry, but we don't have any specific information about this error. You ca
  [Stack Overflow](https://stackoverflow.com/questions/tagged/c%23)  
 Provides a QA website for questions about and issues with Visual C#.  
 
- Also see:  
- [Additional Resources for Visual C# Programmers](../getting-started/index.md)  
-  
 ## See also
 
 - [C# Programming Guide](../programming-guide/index.md)
 - [C# Reference](../language-reference/index.md)
 - [Talk to Us](/visualstudio/ide/feedback-options)
+- [Additional Resources for Visual C# Programmers](../tour-of-csharp/index.md)

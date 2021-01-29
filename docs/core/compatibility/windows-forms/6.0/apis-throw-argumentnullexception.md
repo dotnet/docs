@@ -23,7 +23,7 @@ Throwing <xref:System.ArgumentNullException> conforms to .NET Runtime behavior. 
 
 ## Recommended action
 
-- Review and, if necessary, update your code to prevent passing null input arguments to the affected APIs.
+- Review and, if necessary, update your code to prevent passing `null` input arguments to the affected APIs.
 - If your code handles <xref:System.NullReferenceException>, replace or add an additional handler for <xref:System.ArgumentNullException>.
 
 ## Affected APIs

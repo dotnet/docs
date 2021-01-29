@@ -14,7 +14,7 @@ helpviewer_keywords:
 This article covers the various ways you can suppress warnings from code analysis when you build your .NET app.
 
 > [!TIP]
-> If you're using Visual Studio as your development environment, the *lightbulb* menu provides options that generate the code to suppress a warning for you. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers?#suppress-violations).
+> If you're using Visual Studio as your development environment, the *lightbulb* menu provides options that generate the code to suppress warnings for you. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers?#suppress-violations).
 
 ## Disable the rule
 
@@ -55,6 +55,8 @@ Use a [#pragma warning (C#)](../../csharp/language-reference/preprocessor-direct
 
 You can use a <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> to suppress a warning either in the source file or in a global suppressions file for the project (*GlobalSuppressions.cs* or *GlobalSuppressions.vb*). This attribute provides a way to suppress a warning in only certain parts of your project or file.
 
+The two required, positional parameters for the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribute are the *category* of the rule and the *rule ID*. The following code snippet passes `"Usage"` and `"CA2200:Rethrow to preserve stack details"` for these parameters.
+
 ```csharp
 [System.Diagnostics.CodeAnalysis.SuppressMessage("Usage", "CA2200:Rethrow to preserve stack details", Justification = "Not production code.")]
 private static void IngorableCharacters()
@@ -73,7 +75,7 @@ private static void IngorableCharacters()
 If you add the attribute to the global suppressions file, you [scope](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) the suppression to the desired level, for example `"member"`. You specify the API where the warning should be suppressed using the <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Target> property.
 
 ```csharp
-[assembly: SuppressMessage("Usage", "CA2200:Rethrow to preserve stack details", Justification = "<Pending>", Scope = "member", Target = "~M:ConsoleApp8Core.Program.IngorableCharacters")]
+[assembly: SuppressMessage("Usage", "CA2200:Rethrow to preserve stack details", Justification = "Not production code.", Scope = "member", Target = "~M:MyApp.Program.IngorableCharacters")]
 ```
 
 To suppress warnings for compiler-generated code that doesn't map to explicitly provided user source, you must put the suppression attribute in a global suppressions file. For example, the following code suppresses a violation against a compiler-emitted constructor:

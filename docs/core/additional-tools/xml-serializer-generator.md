@@ -1,7 +1,7 @@
 ---
 title: "Microsoft XML Serializer Generator"
 description: An overview of the Microsoft XML Serializer Generator. Use the XML Serializer Generator to generate an XML serialization assembly for the types contained in your project.
-author: mlacouture
+author: honggit
 ms.date: 01/19/2017
 ms.topic: tutorial
 ms.custom: "mvc"

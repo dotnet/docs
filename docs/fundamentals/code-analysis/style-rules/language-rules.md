@@ -25,10 +25,21 @@ Code style language rules affect how various constructs of .NET programming lang
 
 Options for language rules can be specified in an EditorConfig file with the following format:
 
+`option_name = value` (Visual Studio 2019 version 16.9 Preview 2 and later)
+
+or
+
 `option_name = value:severity`
 
-- **Value**: For each language rule, you specify a value that defines if or when to prefer the style. Many rules accept a value of `true` (prefer this style) or `false` (do not prefer this style). Other rules accept values such as `when_on_single_line` or `never`.
-- **Severity**: The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. Severity specification as part of the above option syntax is only respected inside development IDEs, such as Visual Studio. This setting is not understood by the C# or VB compilers, hence not respected during build. Instead, to enforce code style rules on build, you should set the severity by using the rule ID-based severity configuration syntax for analyzers. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = silent`. For more information, see this [GitHub issue](https://github.com/dotnet/roslyn/issues/44201).
+- **Value**
+
+  For each language rule, you specify a value that defines if or when to prefer the style. Many rules accept a value of `true` (prefer this style) or `false` (do not prefer this style). Other rules accept values such as `when_on_single_line` or `never`.
+
+- **Severity** (optional in Visual Studio 2019 version 16.9 Preview 2 and later versions)
+
+  The second part of the rule specifies the [severity level](../configuration-options.md#severity-level) for the rule. When specified in this way, the severity setting is only respected inside development IDEs, such as Visual Studio. It is *not* respected during build.
+
+  To enforce code style rules at build time, set the severity by using the rule ID-based severity configuration syntax for analyzers instead. The syntax takes the form `dotnet_diagnostic.<rule ID>.severity = <severity>`, for example, `dotnet_diagnostic.IDE0040.severity = silent`. For more information, see [severity level](../configuration-options.md#severity-level).
 
 > [!TIP]
 >

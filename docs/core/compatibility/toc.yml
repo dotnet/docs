@@ -24,6 +24,8 @@
         href: 6.0.md
       - name: Windows Forms
         items:
+        - name: APIs throw ArgumentNullException
+          href: windows-forms/6.0/apis-throw-argumentnullexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
@@ -562,6 +564,8 @@
       items:
       - name: .NET 6.0
         items:
+        - name: APIs throw ArgumentNullException
+          href: windows-forms/6.0/apis-throw-argumentnullexception.md
         - name: NotifyIcon.Text maximum text length increased
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException

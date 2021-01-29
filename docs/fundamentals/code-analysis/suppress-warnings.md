@@ -14,7 +14,7 @@ helpviewer_keywords:
 This article covers the various ways you can suppress warnings from code analysis when you build your .NET app.
 
 > [!TIP]
-> If you're using Visual Studio as your development environment, the *lightbulb* menu provides options that generate the code to suppress warnings for you. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers?#suppress-violations).
+> If you're using Visual Studio as your development environment, the *light bulb* menu provides options that generate the code to suppress warnings for you. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers?#suppress-violations).
 
 ## Disable the rule
 

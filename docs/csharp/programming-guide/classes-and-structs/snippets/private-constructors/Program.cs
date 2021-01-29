@@ -43,4 +43,4 @@ class TestCounter
     }
 }
 // Output: New count: 101
-//</Snippet12>
+//</Snippet2>

@@ -11,6 +11,8 @@ ms.assetid: 902a2dc1-d0e9-4b00-90a8-becc4cb1f6a7
 ---
 # How to: Execute Asynchronous Data Service Queries (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 By using the WCF Data Services client library, you can asynchronously perform client-server operations, such as executing queries and saving changes. For more information, see [Asynchronous Operations](asynchronous-operations-wcf-data-services.md).  
   
 > [!NOTE]

@@ -7,6 +7,8 @@ ms.assetid: ef5ba300-6d7c-455e-a7bd-d0cc6d211ad4
 ---
 # Reflection Provider (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 In addition to exposing data from a data model through the Entity Framework, WCF Data Services can expose data that is not strictly defined in an entity-based model. The reflection provider exposes data in classes that return types that implement the <xref:System.Linq.IQueryable%601> interface. WCF Data Services uses reflection to infer a data model for these classes and can translate address-based queries against resources into language integrated query (LINQ)-based queries against the exposed <xref:System.Linq.IQueryable%601> types.
 
 > [!NOTE]

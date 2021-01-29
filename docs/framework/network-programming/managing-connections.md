@@ -24,7 +24,7 @@ ms.assetid: 9b3d3de7-189f-4f7d-81ae-9c29c441aaaa
 Applications that use HTTP to connect to data resources can use the .NET Framework's <xref:System.Net.ServicePoint> and <xref:System.Net.ServicePointManager> classes to manage connections to the Internet and to help them achieve optimum scale and performance.  
 
 > [!NOTE]
-> `ServicePoint` and `ServicePointManager` are considered legacy and are only stubbed out in .NET Core, .NET 5, and later versions. Very little is used by any of the networking stack. They are referenced from `HttpWebRequest` (also legacy) in only a few places, in an attempt to respect some globally-set settings. `ServicePoint` doesn't track anything about current connections used by `HttpClient` (or `HttpWebRequest`, which layers on top of it) and is hardcoded to return 0 for <xref:System.Net.ServicePoint.CurrentConnections%2A>.
+> `ServicePoint` and `ServicePointManager` are considered legacy and and exist only as stubs in .NET Core, .NET 5, and later versions. Very little is used by any of the networking stack. They are referenced from `HttpWebRequest` (also legacy) in only a few places, in an attempt to respect some global settings. `ServicePoint` doesn't track anything about current connections used by `HttpClient` (or `HttpWebRequest`, which layers on top of it) and is hardcoded to return 0 for <xref:System.Net.ServicePoint.CurrentConnections%2A>.
   
  The **ServicePoint** class provides an application with an endpoint to which the application can connect to access Internet resources. Each **ServicePoint** contains information that helps optimize connections with an Internet server by sharing optimization information between connections to improve performance.  
   

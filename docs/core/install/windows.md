@@ -32,26 +32,24 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 | Operating System            | .NET Core 2.1 | .NET Core 3.1 | .NET 5 |
 |-----------------------------|---------------|---------------|--------|
-| Windows 10, Version 20H2    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 2004    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 1909    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 1903    | ✔️           | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 20H2    | ✔️           | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 2004    | ✔️           | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 1909    | ✔️           | ✔️            | ✔️    |
+| Windows 10 / Windows Server, Version 1903    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1809    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1803    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1709    | ✔️           | ✔️            | ✔️    |
 | Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
 | Windows 8.1                 | ✔️           | ✔️            | ✔️    |
 | Windows 7 SP1 [ESU][esu]    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
-| Windows 10, Version 1607    | ✔️           | ✔️            | ✔️    |
-| Windows Server 2012 R2      | ✔️           | ✔️            | ✔️    |
+| Windows Server 2019<br>Windows Server 2016<br>Windows Server 2012 R2<br>      | ✔️           | ✔️            | ✔️    |
 | Windows Server Core 2012 R2 | ✔️           | ✔️            | ✔️    |
 | Nano Server, Version 1809+  | ✔️           | ✔️            | ✔️    |
 | Nano Server, Version 1803   | ✔️           | ✔️            | ❌    |
 
 ## Unsupported releases
 
-The following versions of .NET are ❌ no longer supported. The downloads for these versions still remain published:
+The following versions of .NET are ❌ no longer supported:
 
 - 3.0
 - 2.2

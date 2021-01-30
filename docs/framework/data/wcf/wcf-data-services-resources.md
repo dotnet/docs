@@ -7,6 +7,8 @@ ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
 ---
 # WCF Data Services Resources
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 WCF Data Services introductory topics can be found in the following locations. Many of these topics also contain links to related topics that contain more detailed information.  
   
  [Overview](wcf-data-services-overview.md)  

@@ -35,6 +35,10 @@ namespace SystemTextJsonHowTo
             CustomConverterHandleNull.Program.Main();
             Console.WriteLine();
 
+            Console.WriteLine("======== Custom converter inferred types to object =========");
+            CustomConverterInferredTypesToObject.Program.Main();
+            Console.WriteLine();
+
             Console.WriteLine("======== Ignore value type default on serialize =========");
             IgnoreValueDefaultOnSerialize.Program.Main();
             Console.WriteLine();

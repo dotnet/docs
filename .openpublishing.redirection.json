@@ -787,7 +787,7 @@
         },
         {
             "source_path": "docs/csharp/getting-started/additional-resources.md",
-            "redirect_url": "/dotnet/csharp/getting-started/index"
+            "redirect_url": "/dotnet/csharp/tour-of-csharp"
         },
         {
             "source_path": "docs/csharp/getting-started/breaking-changes-in-visual-studio-2013.md",
@@ -811,7 +811,11 @@
         },
         {
             "source_path": "docs/csharp/getting-started/getting-started-with-csharp.md",
-            "redirect_url": "/dotnet/csharp/getting-started"
+            "redirect_url": "/dotnet/csharp/tour-of-csharp"
+        },
+        {
+            "source_path": "docs/csharp/getting-started/index.md",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp",
         },
         {
             "source_path": "docs/csharp/getting-started/library-with-visual-studio-2017.md",
@@ -12035,8 +12039,12 @@
         },
         {
             "source_path": "docs/visual-basic/language-reference/directives/directives.md",
-            "redirect_url": "/dotnet/visual-basic/language-reference/directives/index",
+            "redirect_url": "/dotnet/visual-basic/language-reference/directives/disable-enable",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/directives/index.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/directives/disable-enable"
         },
         {
             "source_path": "docs/visual-basic/language-reference/error-messages/a-reference-was-created-to-embedded-interop-assembly-assembly1.md",
@@ -13129,6 +13137,6 @@
         {
             "source_path": "docs/azure/tools.md",
             "redirect_url": "/dotnet/azure/dotnet-dev-env-checklist"
-        }        
+        }
     ]
 }

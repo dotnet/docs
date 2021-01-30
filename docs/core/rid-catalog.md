@@ -1,15 +1,15 @@
 ---
-title: .NET Core Runtime Identifier (RID) catalog
-description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET Core.
-ms.date: 12/15/2020
+title: .NET Runtime Identifier (RID) catalog
+description: Learn about the Runtime Identifier (RID) and how RIDs are used in .NET.
+ms.date: 01/28/2021
 ---
-# .NET Core RID Catalog
+# .NET RID Catalog
 
 RID is short for *Runtime Identifier*. RID values are used to identify target platforms where the application runs.
 They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.12-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
-A single RID can be set in the `<RuntimeIdentifier>` element of your project file. Multiple RIDs can be defined as a semicolon-delimited list in the project file's `<RuntimeIdentifiers>` element. They're also used via the `--runtime` option with the following [.NET Core CLI commands](./tools/index.md):
+A single RID can be set in the `<RuntimeIdentifier>` element of your project file. Multiple RIDs can be defined as a semicolon-delimited list in the project file's `<RuntimeIdentifiers>` element. They're also used via the `--runtime` option with the following [.NET CLI commands](./tools/index.md):
 
 - [dotnet build](./tools/dotnet-build.md)
 - [dotnet clean](./tools/dotnet-clean.md)
@@ -76,7 +76,7 @@ There are some considerations about RIDs that you have to keep in mind when work
 To be able to use RIDs, you have to know which RIDs exist. New values are added regularly to the platform.
 For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) file in the `dotnet/runtime` repository.
 
-.NET Core 2.0 SDK introduces the concept of portable RIDs. They are new values added to the RID graph that aren't tied to a specific version or OS distribution and are the preferred choice when using .NET Core 2.0 and higher. They're particularly useful when dealing with multiple Linux distros since most distribution RIDs are mapped to the portable RIDs.
+Portable RIDs are values added to the RID graph that aren't tied to a specific version or OS distribution. They are the preferred choice, especially when dealing with multiple Linux distros since most distribution RIDs are mapped to the portable RIDs.
 
 The following list shows a small subset of the most common RIDs used for each OS.
 
@@ -84,7 +84,7 @@ The following list shows a small subset of the most common RIDs used for each OS
 
 Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/runtime/blob/master/src/libraries/Microsoft.NETCore.Platforms/pkg/runtime.json) file in the `dotnet/runtime` repository.
 
-- Portable (.NET Core 2.0 or later versions)
+- Portable
   - `win-x64`
   - `win-x86`
   - `win-arm`
@@ -102,7 +102,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `win10-arm`
   - `win10-arm64`
 
-For more information, see [.NET Core dependencies and requirements](./install/windows.md#dependencies).
+For more information, see [.NET dependencies and requirements](./install/windows.md#dependencies).
 
 ## Linux RIDs
 
@@ -121,7 +121,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `tizen.4.0.0`
   - `tizen.5.0.0`
 
-For more information, see [.NET Core dependencies and requirements](./install/linux.md).
+For more information, see [.NET dependencies and requirements](./install/linux.md).
 
 ## macOS RIDs
 
@@ -145,7 +145,7 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
   - `osx.11.0-x64`
   - `osx.11.0-arm64`
 
-For more information, see [.NET Core dependencies and requirements](./install/macos.md#dependencies).
+For more information, see [.NET dependencies and requirements](./install/macos.md#dependencies).
 
 ## See also
 

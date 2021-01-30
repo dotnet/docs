@@ -5,6 +5,8 @@ ms.assetid: 712d689b-fada-4cbb-bcdb-d65a3ef83b4c
 ---
 # WCF Data Services Protocol Implementation Details
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 ## OData Protocol Implementation Details  
 
 The Open Data Protocol (OData) requires that a data service that implements the protocol provide a certain minimum set of functionalities. These functionalities are described in the protocol documents in terms of "should" and "must". Other optional functionality is described in terms of "may". This article describes these optional functionalities that are not currently implemented by WCF Data Services.

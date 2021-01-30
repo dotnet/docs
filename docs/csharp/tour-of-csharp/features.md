@@ -1,6 +1,6 @@
 ---
 title: A Tour of C# - Major language areas
-description: New to C#? Learn the basics of the language.
+description: New to C#? Learn the basics of the language. This article contains a survey of major language features.
 ms.date: 08/06/2020
 ---
 # Major language areas
@@ -15,11 +15,11 @@ An [***array***](../programming-guide/arrays/index.md) is a data structure that 
 
 Array types are reference types, and the declaration of an array variable simply sets aside space for a reference to an array instance. Actual array instances are created dynamically at runtime using the `new` operator. The `new` operation specifies the ***length*** of the new array instance, which is then fixed for the lifetime of the instance. The indices of the elements of an array range from `0` to `Length - 1`. The `new` operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types and `null` for all reference types.
 
-The following example creates an array of `int` elements, initializes the array, and prints out the contents of the array.
+The following example creates an array of `int` elements, initializes the array, and prints the contents of the array.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="ArraysSample":::
 
-This example creates and operates on a ***single-dimensional array***. C# also supports ***multi-dimensional arrays***. The number of dimensions of an array type, also known as the ***rank*** of the array type, is one plus the number of commas written between the square brackets of the array type. The following example allocates a single-dimensional, a two-dimensional, and a three-dimensional array, respectively.
+This example creates and operates on a ***single-dimensional array***. C# also supports ***multi-dimensional arrays***. The number of dimensions of an array type, also known as the ***rank*** of the array type, is one plus the number of commas between the square brackets of the array type. The following example allocates a single-dimensional, a two-dimensional, and a three-dimensional array, respectively.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="DeclareArrays":::
 
@@ -104,7 +104,7 @@ All attribute classes derive from the <xref:System.Attribute> base class provide
 
 This example attaches a `HelpAttribute` to the `Widget` class. It adds another `HelpAttribute` to the `Display` method in the class. The public constructors of an attribute class control the information that must be provided when the attribute is attached to a program entity. Additional information can be provided by referencing public read-write properties of the attribute class (such as the reference to the `Topic` property previously).
 
-The metadata defined by attributes can be read and manipulated at runtime using reflection. When a particular attribute is requested using this technique, the constructor for the attribute class is invoked with the information provided in the program source, and the resulting attribute instance is returned. If additional information was provided through properties, those properties are set to the given values before the attribute instance is returned.
+The metadata defined by attributes can be read and manipulated at runtime using reflection. When a particular attribute is requested using this technique, the constructor for the attribute class is invoked with the information provided in the program source. The resulting attribute instance is returned. If additional information was provided through properties, those properties are set to the given values before the attribute instance is returned.
 
 The following code sample demonstrates how to get the `HelpAttribute` instances associated to the `Widget` class and its `Display` method.
 

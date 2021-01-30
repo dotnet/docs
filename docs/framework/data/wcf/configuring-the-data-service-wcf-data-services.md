@@ -10,6 +10,8 @@ ms.assetid: 59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c
 ---
 # Configuring the Data Service (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 With WCF Data Services, you can create data services that expose Open Data Protocol (OData) feeds. Data in these feeds can come from a variety of data sources. WCF Data Services uses data providers to expose this data as an OData feed. These providers include an Entity Framework provider, a reflection provider, and a set of custom data service provider interfaces. The provider implementation defines the data model for the service. For more information, see [Data Services Providers](data-services-providers-wcf-data-services.md).  
   
  In WCF Data Services, a data service is a class that inherits from the <xref:System.Data.Services.DataService%601> class, where the type of the data service is the entity container of the data model. This entity container has one or more properties that return an <xref:System.Linq.IQueryable%601>, which are used to access entity sets in the data model.  

@@ -1,18 +1,32 @@
 ---
 title: A Tour of C# - C# Guide
-description: New to C#? Learn the basics of the language.
-ms.date: 08/06/2020
+description: New to C#? Learn the basics of the language. Start with this overview.
+ms.date: 01/28/2021
 ---
 
 # A tour of the C# language
 
-C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. If you want to explore the language through interactive examples, try the [introduction to C#](../tutorials/intro-to-csharp/index.md) tutorials.
+C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in the .NET ecosystem. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. If you want to explore the language through interactive examples, try the [introduction to C#](../tutorials/intro-to-csharp/index.md) tutorials.
 
 C# is an object-oriented, ***component-oriented*** programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices.
 
-Several C# features aid in the construction of robust and durable applications. [***Garbage collection***](../../standard/garbage-collection/index.md) automatically reclaims memory occupied by unreachable unused objects. [***Exception handling***](../programming-guide/exceptions/index.md) provides a structured and extensible approach to error detection and recovery. [***Lambda expressions***](../language-reference/operators/lambda-expressions.md) support functional programming techniques. [***Query syntax***](../linq/index.md) creates a common pattern for working with data from any source. Language support for [***asynchronous operations***](../programming-guide/concepts/async/index.md) provides syntax for building distributed systems. [***Pattern matching***](..//pattern-matching.md) provides syntax to easily separate data from algorithms in modern distributed systems. C# has a [***unified type system***](../programming-guide/types/index.md). All C# types, including primitive types such as `int` and `double`, inherit from a single root `object` type. All types share a set of common operations. Values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined reference types and value types. C# allows dynamic allocation of objects and in-line storage of lightweight structures.
+Several C# features help create robust and durable applications. [***Garbage collection***](../../standard/garbage-collection/index.md) automatically reclaims memory occupied by unreachable unused objects. [***Nullable types***](../nullable-references.md) guard against variables that don't refer to allocated objects. [***Exception handling***](../programming-guide/exceptions/index.md) provides a structured and extensible approach to error detection and recovery. [***Lambda expressions***](../language-reference/operators/lambda-expressions.md) support functional programming techniques. [***Language Integrated Query (LINQ)***](../linq/index.md) syntax creates a common pattern for working with data from any source. Language support for [***asynchronous operations***](../programming-guide/concepts/async/index.md) provides syntax for building distributed systems. C# has a [***unified type system***](../programming-guide/types/index.md). All C# types, including primitive types such as `int` and `double`, inherit from a single root `object` type. All types share a set of common operations. Values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined [reference types](../language-reference/builtin-types/reference-types.md) and [value types](../language-reference/builtin-types/value-types.md). C# allows dynamic allocation of objects and in-line storage of lightweight structures. C# supports generic methods and types, which provide increased type safety and performance. C# provides iterators, which enable implementers of collection classes to define custom behaviors for client code.
 
 C# emphasizes ***versioning*** to ensure programs and libraries can evolve over time in a compatible manner. Aspects of C#'s design that were directly influenced by versioning considerations include the separate `virtual` and `override` modifiers, the rules for method overload resolution, and support for explicit interface member declarations.
+
+## .NET architecture
+
+C# programs run on .NET, a virtual execution system called the common language runtime (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard. The CLI is the basis for creating execution and development environments in which languages and libraries work together seamlessly.
+
+Source code written in C# is compiled into an [intermediate language (IL)](../../standard/managed-code.md) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored in an assembly, typically with an extension of *.dll*. An assembly contains a manifest that provides information about the assembly's types, version, and culture.
+
+When the C# program is executed, the assembly is loaded into the CLR. The CLR performs Just-In-Time (JIT) compilation to convert the IL code to native machine instructions. The CLR provides other services related to automatic garbage collection, exception handling, and resource management. Code that's executed by the CLR is sometimes referred to as "managed code," in contrast to "unmanaged code," which is compiled into native machine language that targets a specific platform.
+
+Language interoperability is a key feature of .NET. IL code produced by the C# compiler conforms to the Common Type Specification (CTS). IL code generated from C# can interact with code that was generated from the .NET versions of F#, Visual Basic, C++, or any of more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages, and the types can reference each other as if they were written in the same language.
+
+In addition to the run time services, .NET also includes extensive libraries. These libraries support many different workloads. They're organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to web application frameworks to Windows Forms controls. The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.
+
+For more information about .NET, see [Overview of .NET](../../core/introduction.md).
 
 ## Hello world
 
@@ -28,11 +42,11 @@ The output of the program is produced by the `WriteLine` method of the `Console`
 
 ## Types and variables
 
-There are two kinds of types in C#: *value types* and *reference types*. Variables of value types directly contain their data whereas variables of reference types store references to their data, the latter being known as objects. With reference types, it's possible for two variables to reference the same object and possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it isn't possible for operations on one to affect the other (except for `ref` and `out` parameter variables).
+There are two kinds of types in C#: *value types* and *reference types*. Variables of value types directly contain their data. Variables of reference types store references to their data, the latter being known as objects. With reference types, it's possible for two variables to reference the same object and possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it isn't possible for operations on one to affect the other (except for `ref` and `out` parameter variables).
 
-An ***identifier*** is a variable name. An identifier is a sequence of unicode characters without any whitespace. An identifier may be a C# reserved word, if it is prefixed by `@`. That can be useful when interacting with other languages.
+An ***identifier*** is a variable name. An identifier is a sequence of unicode characters without any whitespace. An identifier may be a C# reserved word, if it's prefixed by `@`. Using a reserved word as an identifier can be useful when interacting with other languages.
 
-C#'s value types are further divided into *simple types*, *enum types*, *struct types*, *nullable value types* and *tuple value types*. C#'s reference types are further divided into *class types*, *interface types*, *array types*, and *delegate types*.
+C#'s value types are further divided into *simple types*, *enum types*, *struct types*, *nullable value types*, and *tuple value types*. C#'s reference types are further divided into *class types*, *interface types*, *array types*, and *delegate types*.
 
 The following outline provides an overview of C#'s type system.
 
@@ -60,11 +74,11 @@ The following outline provides an overview of C#'s type system.
   - [Interface types](../language-reference/keywords/interface.md)
     - User-defined types of the form `interface I {...}`
   - [Array types](../programming-guide/arrays/index.md)
-    - Single-dimensional, multi-dimensional and jagged. For example: `int[]`, `int[,]`, and `int[][]`
+    - Single-dimensional, multi-dimensional, and jagged. For example: `int[]`, `int[,]`, and `int[][]`
   - [Delegate types](../language-reference/builtin-types/reference-types.md#the-delegate-type)
     - User-defined types of the form `delegate int D(...)`
 
-C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Six of C#'s categories of types are user-definable: class types, struct types, interface types, enum types, delegate types and tuple value types.
+C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Six of C#'s categories of types are user-definable: class types, struct types, interface types, enum types, delegate types, and tuple value types.
 
 - A `class` type defines a data structure that contains data members (fields) and function members (methods, properties, and others). Class types support single inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.
 - A `struct` type is similar to a class type in that it represents a structure with data members and function members. However, unlike classes, structs are value types and don't typically require heap allocation. Struct types don't support user-specified inheritance, and all struct types implicitly inherit from type `object`.

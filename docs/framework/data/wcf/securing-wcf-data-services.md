@@ -11,6 +11,8 @@ ms.assetid: 99fc2baa-a040-4549-bc4d-f683d60298af
 ---
 # Securing WCF Data Services
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 This article describes security considerations that are specific to developing, deploying, and running WCF Data Services and applications that access services that support the Open Data Protocol (OData). You should also follow recommendations for creating secure .NET Framework applications.  
   
 When planning how to secure a WCF Data Services-based OData service, you must address both authentication, the process of discovering and verifying the identity of a principal, and authorization, the process of determining whether an authenticated principal is allowed to access the requested resources. Also consider whether to encrypt the message by using SSL.  

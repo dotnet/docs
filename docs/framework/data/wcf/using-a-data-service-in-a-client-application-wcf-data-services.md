@@ -8,6 +8,8 @@ ms.assetid: 90872d0c-e989-4490-b3e9-54afb10d33d4
 ---
 # Using a Data Service in a Client Application (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 You can access a service that exposes an Open Data Protocol (OData) feed by supplying a URI to a Web browser. The URI provides the address of a resource, and request messages are sent to these addresses to access or change the underlying data that the resource represents. The browser issues an HTTP GET command and returns the requested resource as an OData feed. For more information, see [Accessing the Service from a Web Browser](accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).  
   
  Although a Web browser may be useful for testing that an OData service returns the expected data, production OData services that enable you to also create, update, and delete data are generally accessed by application code or scripting languages in a Web page. This topic provides an overview of how to access OData feeds from a client application.  

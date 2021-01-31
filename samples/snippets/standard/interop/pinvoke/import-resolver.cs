@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace PInvokeSamples
 {
-    static class Program
+    public static class Program
     {
         [DllImport("nativedep")]
         private static extern int ExportedFunction();

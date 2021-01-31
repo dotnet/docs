@@ -5,7 +5,7 @@ author: saul
 ms.date: 01/31/2021
 ---
 
-# Cross platform P/Invoke
+# Writing cross platform P/Invoke code
 
 ## Library name variations
 

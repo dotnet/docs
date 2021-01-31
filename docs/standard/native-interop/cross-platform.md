@@ -1,14 +1,15 @@
 ---
 title: Cross Platform P/Invoke
-description: Learn how to call native functions via P/Invoke in .NET.
-ms.date: 02/01/2021
+description: Learn which paths the runtime will search when loading native libraries via P/Invoke. Also learn how to use SetDllImportResolver.
+author: saul
+ms.date: 01/31/2021
 ---
 
 # Cross platform P/Invoke
 
 ## Library name variations
 
-To facilitate simpler cross platform P/Invoke code, the runtime automatically adds the canonical shared library file extension (`.dll`, `.so` or `.dylib`) to DLL import library names. On Linux and macOS, the runtime will also try prepending `lib`.
+To facilitate simpler cross platform P/Invoke code, the runtime automatically adds the canonical shared library file extension (`.dll`, `.so` or `.dylib`) to library names of [DllImports](xref:System.Runtime.InteropServices.DllImportAttribute). On Linux and macOS, the runtime will also try prepending `lib`.
 
 > [!NOTE]
 > Absolute paths in library names (e.g. `/usr/lib/libc`) are treated as-is and no variations will be searched.
@@ -50,7 +51,7 @@ In this case, the library name variations are tried in the following order:
 
 ## Custom import resolver
 
-In more complex scenarios, <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType> can be used to resolve DLL imports at runtime. In the following example, `nativedep` is resolved to `nativedep_avx2` if the CPU supports it.
+In more complex scenarios, you can use <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver%2A> to resolve DLL imports at runtime. In the following example, `nativedep` is resolved to `nativedep_avx2` if the CPU supports it.
 
 > [!TIP]
 > This functionality is only available in .NET 5 and .NET Core 3.1 or later.

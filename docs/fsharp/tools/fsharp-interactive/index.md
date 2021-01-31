@@ -162,7 +162,7 @@ You can specify as many assembly references as you like in a script.
 
 ## Loading other scripts
 
-When scripting, it can often be helpful to use different scripts for different tasks. Sometimes you may want to reuse code from on script in another. Rather than copy-pasting its contents into your file, you can simple load and evaluate it with `#load`.
+When scripting, it can often be helpful to use different scripts for different tasks. Sometimes you may want to reuse code from one script in another. Rather than copy-pasting its contents into your file, you can simply load and evaluate it with `#load`.
 
 Consider the following `Script1.fsx`:
 

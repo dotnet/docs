@@ -9,7 +9,7 @@ ms.date: 01/31/2021
 
 ## Library name variations
 
-To facilitate simpler cross platform P/Invoke code, the runtime automatically adds the canonical shared library file extension (`.dll`, `.so` or `.dylib`) to library names of [DllImports](xref:System.Runtime.InteropServices.DllImportAttribute). On Linux and macOS, the runtime will also try prepending `lib`.
+To facilitate simpler cross platform P/Invoke code, the runtime automatically adds the canonical shared library file extension (`.dll`, `.so` or `.dylib`) to native library names. On Linux and macOS, the runtime will also try prepending `lib`.
 
 > [!NOTE]
 > Absolute paths in library names (e.g. `/usr/lib/libc`) are treated as-is and no variations will be searched.

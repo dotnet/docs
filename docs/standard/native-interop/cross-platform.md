@@ -57,3 +57,7 @@ In more complex scenarios, you can use <xref:System.Runtime.InteropServices.Nati
 > This functionality is only available in .NET 5 and .NET Core 3.1 or later.
 
 [!code-csharp[import resolver](~/samples/snippets/standard/interop/pinvoke/import-resolver.cs)]
+
+## See also
+
+- [Platform Invoke (P/Invoke)](pinvoke.md)

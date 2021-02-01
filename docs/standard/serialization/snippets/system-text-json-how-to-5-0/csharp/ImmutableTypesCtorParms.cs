@@ -42,8 +42,8 @@ namespace ImmutableTypesCtorParms
 
 // Produces output like the following example:
 //
-//Input JSON: { "date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
+//Input JSON: { "date":"2020-09-06T11:31:01.923395-07:00","celsius":-1,"summary":"Cold"}
 //forecast.Date: 9 / 6 / 2020 11:31:01 AM
 //forecast.TemperatureC: -1
 //forecast.Summary: Cold
-//Output JSON: { "date":"2020-09-06T11:31:01.923395-07:00","temperatureC":-1,"summary":"Cold"}
+//Output JSON: { "date":"2020-09-06T11:31:01.923395-07:00","celsius":-1,"summary":"Cold"}

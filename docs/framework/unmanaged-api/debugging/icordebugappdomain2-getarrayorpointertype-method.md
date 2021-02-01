@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugAppDomain2::GetArrayOrPointerType Method
+
 Gets an array of the specified type, or a pointer or reference to the specified type.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetArrayOrPointerType (
 ```  
   
 ## Parameters  
+
  `elementType`  
  [in] A value of the CorElementType enumeration that specifies the underlying native type (an array, pointer, or reference) to be created.  
   
@@ -44,6 +46,7 @@ HRESULT GetArrayOrPointerType (
  [out] A pointer to the address of an `ICorDebugType` object that represents the constructed array, pointer type, or reference type.  
   
 ## Remarks  
+
  The value of *elementType* must be one of the following:  
   
 - ELEMENT_TYPE_PTR  
@@ -55,6 +58,7 @@ HRESULT GetArrayOrPointerType (
  If the value of *elementType* is ELEMENT_TYPE_PTR or ELEMENT_TYPE_BYREF, *nRank* must be zero.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

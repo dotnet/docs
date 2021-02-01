@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: a2425679-484a-4e6c-9c98-7da7304f1516
 ---
 # Security Capabilities with Custom Bindings
+
 You can perform most common security tasks by using one of the system-provided bindings. If you need more control, however, you can create a custom binding with a <xref:System.ServiceModel.Channels.SecurityBindingElement>, as explained in these topics. For more information about custom bindings, see [Custom Bindings](../extending/custom-bindings.md).  
   
 ## In This Section  
+
  [SecurityBindingElement Authentication Modes](securitybindingelement-authentication-modes.md)  
  Describes the authentication modes that are possible with a custom binding.  
   
@@ -35,11 +37,13 @@ You can perform most common security tasks by using one of the system-provided b
  Describes how disabling encryption of digital signatures can have a performance benefit.  
   
 ## Reference  
+
  <xref:System.ServiceModel.Channels.SecurityBindingElement>  
   
  [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md)  
   
 ## Related Sections  
+
  [Understanding Protection Level](../understanding-protection-level.md)  
   
  [Securing Services and Clients](securing-services-and-clients.md)  

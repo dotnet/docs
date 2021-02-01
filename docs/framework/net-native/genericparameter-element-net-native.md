@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
 ---
 # \<GenericParameter> Element (.NET Native)
+
 Applies policy to the parameter type of a generic type or method.  
   
 ## Syntax  
@@ -23,6 +24,7 @@ Applies policy to the parameter type of a generic type or method.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -54,6 +56,7 @@ Applies policy to the parameter type of a generic type or method.
 |*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -64,6 +67,7 @@ Applies policy to the parameter type of a generic type or method.
 |[\<Type>](type-element-net-native.md)|Applies runtime reflection policy to a particular type, such as a class or structure.|  
   
 ## Remarks  
+
  The `<GenericParameter>` element is a child of either the [\<Method>](method-element-net-native.md) or [\<Type>](type-element-net-native.md) element and is used to apply policy to a particular generic type parameter, which is specified by its name in the generic type or method signature.  
   
  The `<GenericParameter>` element is most useful when used with serializers. The following example uses the `<GenericParameter>` element to apply policy to the type `T` in calls to the NewtonSoft JSON serializer's [JsonConvert.DeserializeObject\<T>(String)](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonConvert_DeserializeObject__1.htm) method overloads.  

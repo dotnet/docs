@@ -17,7 +17,6 @@
     <HostInBrowser>true</HostInBrowser>
     <TargetZone>Internet</TargetZone>
     <GenerateManifests>true</GenerateManifests>
-    <SignManifests>True</SignManifests>
     <PublishUrl>publish\</PublishUrl>
     <Install>false</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -124,7 +123,6 @@
     </None>
     <None Include="Properties\app.manifest" />
     <AppDesigner Include="Properties\" />
-    <None Include="WpfBrowserApplication1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="HTMLPage1.htm">
@@ -146,11 +144,9 @@
   </ItemGroup>
   <PropertyGroup>
     <StartArguments />
-    <ManifestKeyFile>WpfBrowserApplication1_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>4581FF7CF75A6EC3DC1599A8B482C3F2899BAFE0</ManifestCertificateThumbprint>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

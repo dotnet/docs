@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0576aa4a-544c-45c1-8319-1b214824e83e
 ---
 # 57397 - UnhandledException
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 0576aa4a-544c-45c1-8319-1b214824e83e
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted on an unhandled exception.  
   
 ## Message  
+
  Unhandled exception.  
   
 ## Details

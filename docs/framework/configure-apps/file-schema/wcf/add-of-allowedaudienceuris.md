@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4e7b7637-e0ea-4a91-988f-6b6ef28d9fc3
 ---
 # \<add> of \<allowedAudienceUris>
+
 Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token can be targeted for in order to be considered valid by a <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> instance.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityTo
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -34,6 +36,7 @@ Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityTo
 |allowedAudienceUri|A string that contains a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token can be targeted for in order to be considered valid by a <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> instance.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -43,6 +46,7 @@ Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityTo
 |[\<allowedAudienceUris>](allowedaudienceuris.md)|Represents a collection of target URIs for which the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token can be targeted for in order to be considered valid by a <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> instance.|  
   
 ## Remarks  
+
  You should use this collection in a federated application that utilizes a security token service (STS) that issues <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens. When the STS issues the security token, it can specify the URI of the Web services for which the security token is intended by adding a <xref:System.IdentityModel.Tokens.SamlAudienceRestrictionCondition> to the security token. That allows the <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> for the recipient Web service to verify that the issued security token is intended for this Web service by specifying that this check should happen by doing the following:  
   
 - Set the `audienceUriMode` attribute of `<issuedTokenAuthentication>` to <xref:System.IdentityModel.Selectors.AudienceUriMode.Always> or <xref:System.IdentityModel.Selectors.AudienceUriMode.BearerKeyOnly>.  

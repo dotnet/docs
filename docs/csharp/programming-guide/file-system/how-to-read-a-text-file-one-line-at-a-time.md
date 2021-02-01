@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: d62e22c5-a13c-48db-af9b-f10c801b0cb1
 ---
 # How to read a text file one line at a time (C# Programming Guide)
+
 This example reads the contents of a text file, one line at a time, into a string using the `ReadLine` method of the `StreamReader` class. Each text line is stored into the string `line` and displayed on the screen.  
   
 ## Example  
@@ -33,16 +34,19 @@ System.Console.ReadLine();
 ```  
   
 ## Compiling the Code  
+
  Copy the code and paste it into the `Main` method of a console application.  
   
  Replace `"c:\test.txt"` with the actual file name.  
   
 ## Robust Programming  
+
  The following conditions may cause an exception:  
   
 - The file may not exist.  
   
 ## .NET Security  
+
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `myFile.cs` may not be a C# source file.  
   
 ## See also

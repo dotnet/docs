@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
 ---
 # Function Expression (Visual Basic)
+
 Declares the parameters and code that define a function lambda expression.  
   
 ## Syntax  
@@ -29,9 +30,11 @@ End Function
 |`statements`|Required. A list of statements that returns a value by using the `Return` statement. (See [Return Statement](../statements/return-statement.md).) The type of the value returned is the return type of the function.|  
   
 ## Remarks  
+
  A *lambda expression* is a function without a name that calculates and returns a value. You can use a lambda expression anywhere you can use a delegate type, except as an argument to `RemoveHandler`. For more information about delegates, and the use of lambda expressions with delegates, see [Delegate Statement](../statements/delegate-statement.md) and [Relaxed Delegate Conversion](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md).  
   
 ## Lambda Expression Syntax  
+
  The syntax of a lambda expression resembles that of a standard function. The differences are as follows:  
   
 - A lambda expression does not have a name.  
@@ -49,6 +52,7 @@ End Function
 - Generic parameters are not permitted.  
   
 ## Example  
+
  The following examples show two ways to create simple lambda expressions. The first uses a `Dim` to provide a name for the function. To call the function, you send in a value for the parameter.  
   
  [!code-vb[VbVbalrLambdas#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#1)]  
@@ -56,16 +60,19 @@ End Function
  [!code-vb[VbVbalrLambdas#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#2)]  
   
 ## Example  
+
  Alternatively, you can declare and run the function at the same time.  
   
  [!code-vb[VbVbalrLambdas#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#3)]  
   
 ## Example  
+
  Following is an example of a lambda expression that increments its argument and returns the value. The example shows both the single-line and multiline lambda expression syntax for a function. For more examples, see [Lambda Expressions](../../programming-guide/language-features/procedures/lambda-expressions.md).  
   
  [!code-vb[VbVbalrLambdas#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#14)]  
   
 ## Example  
+
  Lambda expressions underlie many of the query operators in Language-Integrated Query (LINQ), and can be used explicitly in method-based queries. The following example shows a typical LINQ query, followed by the translation of the query into method format.  
   
 ```vb  

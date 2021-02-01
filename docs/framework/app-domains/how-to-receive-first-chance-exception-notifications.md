@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
 ---
 # How to: Receive First-Chance Exception Notifications
+
 The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDomain> class lets you receive a notification that an exception has been thrown, before the common language runtime has begun searching for exception handlers.
 
  The event is raised at the application domain level. A thread of execution can pass through multiple application domains, so an exception that is unhandled in one application domain could be handled in another application domain. The notification occurs in each application domain that has added a handler for the event, until an application domain handles the exception.
@@ -20,6 +21,7 @@ The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDo
  For a more complex example that spans several application domains, see the example for the <xref:System.AppDomain.FirstChanceException> event.
 
 ## Receiving First-Chance Exception Notifications in the Default Application Domain
+
  In the following procedure, the entry point for the application, the `Main()` method, runs in the default application domain.
 
 #### To demonstrate first-chance exception notifications in the default application domain
@@ -45,6 +47,7 @@ The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDo
      [!code-vb[System.AppDomain.FirstChanceException_howto_simple#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto_simple/vb/example.vb#5)]
 
 ## Receiving First-Chance Exception Notifications in Another Application Domain
+
  If your program contains more than one application domain, you can choose which application domains receive notifications.
 
 #### To receive first-chance exception notifications in an application domain that you create
@@ -79,6 +82,7 @@ The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDo
      [!code-vb[System.AppDomain.FirstChanceException_howto#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto/vb/example.vb#5)]
 
 ## Example
+
  The following example creates an application domain named `AD1` and adds an event handler to the application domain's <xref:System.AppDomain.FirstChanceException> event. The example creates an instance of the `Worker` class in the application domain, and calls a method named `Thrower` that throws an <xref:System.ArgumentException>. Depending on the value of its argument, the method either catches the exception or fails to handle it.
 
  Each time the `Thrower` method throws an exception in `AD1`, the <xref:System.AppDomain.FirstChanceException> event is raised in `AD1`, and the event handler displays a message. The runtime then looks for an exception handler. In the first case, the exception handler is found in `AD1`. In the second case, the exception is unhandled in `AD1`, and instead is caught in the default application domain.

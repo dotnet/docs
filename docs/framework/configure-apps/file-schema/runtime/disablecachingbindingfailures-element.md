@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: bf598873-83b7-48de-8955-00b0504fbad0
 ---
 # \<disableCachingBindingFailures> Element
+
 Specifies whether to disable the caching of binding failures that occur because the assembly was not found by probing.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies whether to disable the caching of binding failures that occur because 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -41,6 +43,7 @@ Specifies whether to disable the caching of binding failures that occur because 
 |1|Disable the caching of binding failures that occur because the assembly was not found by probing. This setting reverts to the binding behavior of the .NET Framework version 1.1.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -51,6 +54,7 @@ Specifies whether to disable the caching of binding failures that occur because 
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  Starting with the .NET Framework version 2.0, the default behavior for loading assemblies is to cache all binding and loading failures. That is, if an attempt to load an assembly fails, subsequent requests to load the same assembly fail immediately, without any attempt to locate the assembly. This element disables that default behavior for binding failures that occur because the assembly could not be found in the probing path. These failures throw <xref:System.IO.FileNotFoundException>.  
   
  Some binding and loading failures are not affected by this element, and are always cached. These failures occur because the assembly was found but could not be loaded. They throw <xref:System.BadImageFormatException> or <xref:System.IO.FileLoadException>. The following list includes some examples of such failures.  
@@ -62,6 +66,7 @@ Specifies whether to disable the caching of binding failures that occur because 
 - If one or more versions of the assembly that you are attempting to load is in the probing path, but the specific version you are requesting is not among them, subsequent attempts to load that version will fail even if the correct version is moved into the probing path.  
   
 ## Example  
+
  The following example shows how to disable the caching of assembly binding failures that occur because the assembly was not found by probing.  
   
 ```xml  

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 25c502de-e7d9-4838-bc7e-3ac4fa64dfad
 ---
 # System.ServiceModel.PortSharing.WasCloseAllListenerChannelInstances
+
 System.ServiceModel.PortSharing.WasCloseAllListenerChannelInstances  
   
 ## Description  
+
  Close all listener channel instances using Windows Process Activation Service (WAS).  
   
 ## See also

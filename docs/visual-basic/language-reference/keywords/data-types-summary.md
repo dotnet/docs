@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 4ea2ef2a-3d4d-42d9-9f8f-173a37c96e53
 ---
 # Data Types Summary (Visual Basic)
+
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  

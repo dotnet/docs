@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b864ebc9-ed8e-4059-85fd-36d9198f5521
 ---
 # SQL Server Data Operations in ADO.NET
+
 This section describes SQL Server features and functionality that are specific to the .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient>).  
   
 ## In This Section  
+
  [Bulk Copy Operations in SQL Server](bulk-copy-operations-in-sql-server.md)  
  Describes the bulk copy functionality for the .NET Data Provider for SQL Server.  
   

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRDebugManager::BeginConnection Method
+
 Establishes a new connection between the host and the debugger to associate a list of tasks with an identifier and a friendly name.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT BeginConnection (
 ```  
   
 ## Parameters  
+
  `dwConnectionId`  
  [in] An identifier to associate with the list of common language runtime (CLR) tasks.  
   
@@ -49,12 +51,14 @@ HRESULT BeginConnection (
 |E_OUTOFMEMORY|Not enough memory could be allocated to hold the list of tasks associated with this connection.|  
   
 ## Remarks  
+
  [ICLRDebugManager](iclrdebugmanager-interface.md) provides three methods, `BeginConnection`, [SetConnectionTasks](iclrdebugmanager-setconnectiontasks-method.md), and [EndConnection](iclrdebugmanager-endconnection-method.md), for associating task lists with identifiers and friendly names.  
   
 > [!IMPORTANT]
 > These three methods must be called in a specific order for each set of tasks. `BeginConnection` is called first to establish a new connection. `SetConnectionTasks` is called next to provide the set of tasks to be associated with that connection. `EndConnection` is called last to remove the association between the task list and the identifier and friendly name.However, calls for different connections can be nested.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

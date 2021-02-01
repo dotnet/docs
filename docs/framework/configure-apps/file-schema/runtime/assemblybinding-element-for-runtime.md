@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
 ---
 # \<assemblyBinding> Element for \<runtime>
+
 Contains information about assembly version redirection and the locations of assemblies.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Contains information about assembly version redirection and the locations of ass
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -51,6 +53,7 @@ Contains information about assembly version redirection and the locations of ass
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Example  
+
  The following example shows how to redirect one assembly version to another and provide a codebase.  
   
 ```xml  

@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 5e40d306-b3c1-4429-80c4-fbb1d956856c
 ---
 # Extending Bindings
+
 Bindings specify the transport, encoding, and protocol required to connect to an endpoint. Binding extensions and custom bindings implement custom communication functionality required to support application features.  
   
 ## In This Section  
@@ -19,6 +20,7 @@ Bindings specify the transport, encoding, and protocol required to connect to an
 ## Reference  
   
 ## Related Sections  
+
  [Creating a BindingElement](creating-a-bindingelement.md)  
   
  [Configuration and Metadata Support](configuration-and-metadata-support.md)

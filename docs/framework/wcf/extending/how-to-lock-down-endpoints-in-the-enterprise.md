@@ -62,5 +62,5 @@ You may also want to encrypt the configuration file elements. For more informati
 
 ## See also
 
-- [Encrypting configuration file elements using DPAPI](https://docs.microsoft.com/previous-versions/msp-n-p/ff647398(v=pandp.10))
-- [Encrypting configuration file elements using RSA](https://docs.microsoft.com/previous-versions/msp-n-p/ff650304(v=pandp.10))
+- [Encrypting configuration file elements using DPAPI](/previous-versions/msp-n-p/ff647398(v=pandp.10))
+- [Encrypting configuration file elements using RSA](/previous-versions/msp-n-p/ff650304(v=pandp.10))

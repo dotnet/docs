@@ -1,4 +1,5 @@
 ---
+description: "value contextual keyword - C# Reference"
 title: "value contextual keyword - C# Reference"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -13,7 +14,7 @@ The contextual keyword `value` is used in the `set` accessor in [property](../..
 
 [!code-csharp[csrefKeywordsModifiers#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#26)]
 
-For more information, see the [Properties](../../programming-guide/classes-and-structs/properties.md) and [Indexeres](../../programming-guide/indexers/index.md) articles.
+For more information, see the [Properties](../../programming-guide/classes-and-structs/properties.md) and [Indexers](../../programming-guide/indexers/index.md) articles.
 
 ## C# language specification
 

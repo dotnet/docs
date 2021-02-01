@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9c780793-4785-46f7-add9-ac1ebeadb614
 ---
 # ServiceCredentials
+
 ServiceCredentials  
   
 ## Syntax  
@@ -22,12 +23,15 @@ class ServiceCredentials : Behavior
 ```  
   
 ## Methods  
+
  The ServiceCredentials class does not define any methods.  
   
 ## Properties  
+
  The ServiceCredentials class has the following properties:  
   
 ### ClientCertificate  
+
  Data type: string  
   
  Access type: Read-only  
@@ -35,6 +39,7 @@ class ServiceCredentials : Behavior
  The client certificate authentication and provisioning settings for this service.  
   
 ### IssuedTokenAuthentication  
+
  Data type: string  
   
  Access type: Read-only  
@@ -42,6 +47,7 @@ class ServiceCredentials : Behavior
  The current issued token authentication settings for this service.  
   
 ### Peer  
+
  Data type: string  
   
  Access type: Read-only  
@@ -49,6 +55,7 @@ class ServiceCredentials : Behavior
  The current credential authentication and provisioning settings to be used by peer transport endpoints.  
   
 ### SecureConversationAuthentication  
+
  Data type: string  
   
  Access type: Read-only  
@@ -56,6 +63,7 @@ class ServiceCredentials : Behavior
  Specifies the current secure conversation settings.  
   
 ### ServiceCertificate  
+
  Data type: string  
   
  Access type: Read-only  
@@ -63,6 +71,7 @@ class ServiceCredentials : Behavior
  The certificate associated with this service.  
   
 ### UserNameAuthentication  
+
  Data type: string  
   
  Access type: Read-only  
@@ -70,6 +79,7 @@ class ServiceCredentials : Behavior
  The username/password settings for this service.  
   
 ### WindowsAuthentication  
+
  Data type: string  
   
  Access type: Read-only  

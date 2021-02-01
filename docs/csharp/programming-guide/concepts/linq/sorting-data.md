@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: d93fa055-2f19-46d2-9898-e2aed628f1c9
 ---
 # Sorting Data (C#)
+
 A sorting operation orders the elements of a sequence based on one or more attributes. The first sort criterion performs a primary sort on the elements. By specifying a second sort criterion, you can sort the elements within each primary sort group.  
   
  The following illustration shows the results of an alphabetical sort operation on a sequence of characters:
@@ -28,6 +29,7 @@ A sorting operation orders the elements of a sequence based on one or more attri
 ### Primary Sort Examples  
   
 #### Primary Ascending Sort  
+
  The following example demonstrates how to use the `orderby` clause in a LINQ query to sort the strings in an array by string length, in ascending order.  
   
 ```csharp  
@@ -51,6 +53,7 @@ foreach (string str in query)
 ```  
   
 #### Primary Descending Sort  
+
  The next example demonstrates how to use the `orderby descending` clause in a LINQ query to sort the strings by their first letter, in descending order.  
   
 ```csharp  
@@ -76,6 +79,7 @@ foreach (string str in query)
 ### Secondary Sort Examples  
   
 #### Secondary Ascending Sort  
+
  The following example demonstrates how to use the `orderby` clause in a LINQ query to perform a primary and secondary sort of the strings in an array. The strings are sorted primarily by length and secondarily by the first letter of the string, both in ascending order.  
   
 ```csharp  
@@ -99,6 +103,7 @@ foreach (string str in query)
 ```  
   
 #### Secondary Descending Sort  
+
  The next example demonstrates how to use the `orderby descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The strings are sorted primarily by length and secondarily by the first letter of the string.  
   
 ```csharp  

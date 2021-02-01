@@ -6,6 +6,7 @@ dev_langs:
 ms.assetid: e22e5812-89c6-41f0-9302-bb899a46dbff
 ---
 # The Load Method
+
 You can use the <xref:System.Data.DataTable.Load%2A> method to load a <xref:System.Data.DataTable> with rows from a data source. This is an overloaded method which, in its simplest form, accepts a single parameter, a **DataReader**. In this form, it simply loads the **DataTable** with rows. Optionally, you can specify the **LoadOption** parameter to control how data is added to the **DataTable**.  
   
  The **LoadOption** parameter is particularly useful in cases where the **DataTable** already contains rows of data, because it describes how incoming data from the data source will be combined with the data already in the table. For example, **PreserveCurrentValues** (the default) specifies that in cases where a row is marked as **Added** in the **DataTable**, the **Original** value or each column is set to the contents of the matching row from the data source. The **Current** value will retain the values assigned when the row was added, and the **RowState** of the row will be set to **Changed**.  

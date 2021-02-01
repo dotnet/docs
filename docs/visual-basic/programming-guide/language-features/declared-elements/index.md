@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 0d1d1bb5-ac0b-485f-8922-cdcec5574c79
 ---
 # Declared Elements in Visual Basic
+
 A *declared element* is a programming element that is defined in a declaration statement. Declared elements include variables, constants, enumerations, classes, structures, modules, interfaces, procedures, procedure parameters, function returns, external procedure references, operators, properties, events, and delegates.  
   
  Declaration statements include the following:  
@@ -37,6 +38,7 @@ A *declared element* is a programming element that is defined in a declaration s
 - [Delegate Statement](../../../language-reference/statements/delegate-statement.md)  
   
 ## In This Section  
+
  [Declared Element Names](declared-element-names.md)  
  Describes how to name elements and use alphabetic case.  
   
@@ -47,6 +49,7 @@ A *declared element* is a programming element that is defined in a declaration s
  Describes how the compiler matches a reference to a declaration and how to qualify a name.  
   
 ## Related Sections  
+
  [Program Structure and Code Conventions](../../program-structure/program-structure-and-code-conventions.md)  
  Presents guidelines for making your code easier to read, understand, and maintain.  
   

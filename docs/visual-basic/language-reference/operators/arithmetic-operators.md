@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 330178e0-a375-4742-b662-b3080c89fa54
 ---
 # Arithmetic Operators (Visual Basic)
+
 The following are the arithmetic operators defined in Visual Basic.  
   
  [^ Operator](exponentiation-operator.md)  

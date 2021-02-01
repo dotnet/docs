@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # FormatFromRawValue function
+
 Converts one raw performance data value to the specified format, or two raw performance data values if the format conversion is time-based.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -78,7 +79,7 @@ The following values are returned by this function:
 
 ## Remarks
 
-This function wraps a call to the [FormatFromRawValue](https://docs.microsoft.com/previous-versions/ms231047(v=vs.85)) function.
+This function wraps a call to the [FormatFromRawValue](/previous-versions/ms231047(v=vs.85)) function.
 
 ## Requirements
 

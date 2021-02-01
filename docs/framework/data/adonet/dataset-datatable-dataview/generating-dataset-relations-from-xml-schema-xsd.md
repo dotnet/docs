@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1c9a1413-c0d2-4447-88ba-9a2b0cbc0aa8
 ---
 # Generating DataSet Relations from XML Schema (XSD)
+
 In a <xref:System.Data.DataSet>, you form an association between two or more columns by creating a parent-child relation. There are three ways to represent a **DataSet** relation within an XML Schema definition language (XSD) schema:  
   
 - Specify nested complex types.  
@@ -13,6 +14,7 @@ In a <xref:System.Data.DataSet>, you form an association between two or more col
 - Specify an **xs:keyref** without the **msdata:ConstraintOnly** annotation.  
   
 ## Nested Complex Types  
+
  Nested complex type definitions in a schema indicate the parent-child relationships of the elements. The following XML Schema fragment shows that **OrderDetail** is a child element of the **Order** element.  
   
 ```xml  
@@ -30,6 +32,7 @@ In a <xref:System.Data.DataSet>, you form an association between two or more col
  The XML Schema mapping process creates tables in the **DataSet** that correspond to the nested complex types in the schema. It also creates additional columns that are used as parent**-**child columns for the generated tables. Note that these parent**-**child columns specify relationships, which is not the same as specifying primary key/foreign key constraints.  
   
 ## msdata:Relationship Annotation  
+
  The **msdata:Relationship** annotation allows you to explicitly specify parent-child relationships between elements in the schema that are not nested. The following example shows the structure of the **Relationship** element.  
   
 ```xml  
@@ -75,6 +78,7 @@ msdata:childkey="" />
  The mapping process uses the **Relationship** element to create a parent-child relationship between the **OrderNumber** column in the **Order** table and the **OrderNo** column in the **OrderDetail** table in the **DataSet**. The mapping process only specifies the relationship; it does not automatically specify any constraints on the values in these columns, as do the primary key/foreign key constraints in relational databases.  
   
 ### In This Section  
+
  [Map Implicit Relations Between Nested Schema Elements](map-implicit-relations-between-nested-schema-elements.md)  
  Describes the constraints and relations that are implicitly created in a **DataSet** when nested elements are encountered in XML Schema.  
   
@@ -85,6 +89,7 @@ msdata:childkey="" />
  Describes how to create relations in a **DataSet** between XML Schema elements that are not nested.  
   
 ### Related Sections  
+
  [Deriving DataSet Relational Structure from XML Schema (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)  
  Describes the relational structure, or schema, of a **DataSet** that is created from XML Schema definition language (XSD) schema.  
   

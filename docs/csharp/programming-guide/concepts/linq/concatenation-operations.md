@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 890ee104-c590-457e-8a7f-b2b5da0fb417
 ---
 # Concatenation Operations (C#)
+
 Concatenation refers to the operation of appending one sequence to another.  
   
  The following illustration depicts a concatenation operation on two sequences of characters.  

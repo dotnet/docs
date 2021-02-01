@@ -38,6 +38,7 @@ The following sections describe attributes, child elements, and parent elements.
 |0|Do not disable spin-waiting when a critical section cannot be acquired. This is the default value.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

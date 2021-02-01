@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 55e86462-5e99-4d33-8018-6d097ca491b2
 ---
 # Structures (Visual Basic)
+
 A *structure* is a generalization of the user-defined type (UDT) supported by previous versions of Visual Basic. In addition to fields, structures can expose properties, methods, and events. A structure can implement one or more interfaces, and you can declare individual access levels for each field.  
   
  You can combine data items of different types to create a structure. A structure associates one or more *elements* with each other and with the structure itself. When you declare a structure, it becomes a *composite data type*, and you can declare variables of that type.  
@@ -18,6 +19,7 @@ A *structure* is a generalization of the user-defined type (UDT) supported by pr
  Structures are useful when you want a single variable to hold several related pieces of information. For example, you might want to keep an employee's name, telephone extension, and salary together. You could use several variables for this information, or you could define a structure and use it for a single employee variable. The advantage of the structure becomes apparent when you have many employees and therefore many instances of the variable.  
   
 ## In This Section  
+
  [How to: Declare a Structure](how-to-declare-a-structure.md)  
  Shows how to declare a structure and its elements.  
   
@@ -31,6 +33,7 @@ A *structure* is a generalization of the user-defined type (UDT) supported by pr
  Describes the similarities and differences between structures and classes.  
   
 ## Related Sections  
+
  [Data Types](index.md)  
  Introduces the Visual Basic data types and describes how to use them.  
   

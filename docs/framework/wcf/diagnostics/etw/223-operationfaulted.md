@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2f7d89d7-3a6a-40fe-9610-5424eb6bbf61
 ---
 # 223 - OperationFaulted
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 2f7d89d7-3a6a-40fe-9610-5424eb6bbf61
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when the Service Model's default `OperationInvoker` has encountered an exception deriving from `FaultException` while invoking its method.  
   
 ## Message  
+
  The '%1' method threw a FaultException when invoked by the OperationInvoker. The method call duration was '%2' ms.  
   
 ## Details  

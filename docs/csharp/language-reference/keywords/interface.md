@@ -1,4 +1,5 @@
 ---
+description: ":::no-loc text=interface::: (C# Reference)"
 title: "interface - C# Reference"
 ms.date: 01/17/2020
 f1_keywords: 

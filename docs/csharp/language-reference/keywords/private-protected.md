@@ -1,4 +1,5 @@
 ---
+description: "private protected - C# Reference"
 title: "private protected - C# Reference"
 ms.date: 11/15/2017
 f1_keywords:
@@ -76,4 +77,4 @@ Struct members cannot be `private protected` because the struct cannot be inheri
 - [public](public.md)
 - [private](private.md)
 - [internal](internal.md)
-- [Security concerns for internal virtual keywords](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/heyd8kky(v=vs.100))
+- [Security concerns for internal virtual keywords](/previous-versions/dotnet/netframework-4.0/heyd8kky(v=vs.100))

@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 69cb0b04-ac87-49d0-bcfe-810c0d60daff
 ---
 # Iterator (Visual Basic)
+
 Specifies that a function or `Get` accessor is an iterator.  
   
 ## Remarks  
+
  An *iterator* performs a custom iteration over a collection. An iterator uses the [Yield](../statements/yield-statement.md) statement to return each element in the collection one at a time. When a `Yield` statement is reached, the current location in code is retained. Execution is restarted from that location the next time that the iterator function is called.  
   
  An iterator can be implemented as a function or as a `Get` accessor of a property definition. The `Iterator` modifier appears in the declaration of the iterator function or `Get` accessor.  
@@ -26,6 +28,7 @@ Specifies that a function or `Get` accessor is an iterator.
  An iterator can be an anonymous function. For more information, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
 ## Usage  
+
  The `Iterator` modifier can be used in these contexts:  
   
 - [Function Statement](../statements/function-statement.md)  
@@ -33,11 +36,13 @@ Specifies that a function or `Get` accessor is an iterator.
 - [Property Statement](../statements/property-statement.md)  
   
 ## Example  
+
  The following example demonstrates an iterator function. The iterator function has a `Yield` statement that is inside a [For…Next](../statements/for-next-statement.md) loop. Each iteration of the [For Each](../statements/for-each-next-statement.md) statement body in `Main` creates a call to the `Power` iterator function. Each call to the iterator function proceeds to the next execution of the `Yield` statement, which occurs during the next iteration of the `For…Next` loop.  
   
  [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## Example  
+
  The following example demonstrates a `Get` accessor that is an iterator. The `Iterator` modifier is in the property declaration.  
   
  [!code-vb[VbVbalrStatements#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  

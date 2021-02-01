@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetEventProps Method
+
 Sets or updates the specified feature of an event defined by a prior call to [IMetaDataEmit::DefineEvent](imetadataemit-defineevent-method.md).  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT SetEventProps (
 ```  
   
 ## Parameters  
+
  `ev`  
  [in] The event token.  
   
@@ -56,6 +58,7 @@ HRESULT SetEventProps (
  [in] An array of tokens for other methods associated with the event. The last element of the array must be `mdMethodDefNil`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

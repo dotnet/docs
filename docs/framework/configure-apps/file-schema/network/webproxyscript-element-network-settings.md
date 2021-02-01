@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: a13c26db-6218-4af3-9696-38f24b23bfac
 ---
 # \<webProxyScript> Element (Network Settings)
+
 Configures the characteristics of the script used to discover Web proxies.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Configures the characteristics of the script used to discover Web proxies.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ Configures the characteristics of the script used to discover Web proxies.
 |`downloadTimeout`|Specifies the maximum time to download the script in hours, minutes, and seconds. The default value is one minute.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,6 +49,7 @@ Configures the characteristics of the script used to discover Web proxies.
 ## Remarks  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## See also

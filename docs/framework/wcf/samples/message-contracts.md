@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: e3df7c11-c653-4796-be47-26b09c35b691
 ---
 # Message Contracts
+
 This section contains samples that demonstrate message contracts in Windows Communication Foundation (WCF).  
   
 ## In This Section  
+
  [Default Message Contract](default-message-contract.md)  
  Demonstrates a service where a custom user-defined message is passed to and from service operations.  
   

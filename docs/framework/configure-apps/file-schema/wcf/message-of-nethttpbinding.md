@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9def5a35-475d-40d6-b716-ccdbd93863c7
 ---
 # \<message> of \<netHttpBinding>
+
 Defines the settings for message-level security of the [\<netHttpBinding>](nethttpbinding.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,6 +23,7 @@ Defines the settings for message-level security of the [\<netHttpBinding>](netht
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -39,6 +41,7 @@ Defines the settings for message-level security of the [\<netHttpBinding>](netht
 |Certificate|Requires that the client be authenticated to the server using a certificate. The client credential in this case needs to be specified using <`clientCredentials`> and the <`clientCertificate`>. In addition, when using message security mode, the client needs to be provisioned with the service certificate. The service credential in this case needs to be specified using <xref:System.ServiceModel.Description.ClientCredentials> class or `ClientCredentials` behavior element and specifying the service certificate using the \<serviceCertificate> element of serviceCredentials.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -48,6 +51,7 @@ Defines the settings for message-level security of the [\<netHttpBinding>](netht
 |<`security`> element of <`netHttpBinding`>|Defines the security capabilities for the <`netHttpBinding`> Element.|  
   
 ## Example  
+
  This sample demonstrates how to implement an application that uses the basicHttpBinding and message security. In the following configuration example for a service, the endpoint definition specifies the basicHttpBinding and references a binding configuration named `Binding1`. The certificate that the service uses to authenticate itself to the client is set in the `behaviors` section of the configuration file under the `serviceCredentials` element. The validation mode that applies to the certificate that the client uses to authenticate itself to the service is also set in the `behaviors` section under the `clientCertificate` element.  
   
  The same binding and security details are specified in the client configuration file.  

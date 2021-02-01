@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 43e61c4b-c435-45ec-9ef6-c68403aa4200
 ---
 # ICLRDomainManager::SetPropertiesForDefaultAppDomain Method
+
 Sets properties that will be used to initialize the default application domain.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetPropertiesForDefaultAppDomain(
 ```  
   
 ## Parameters  
+
  `nProperties`  
  [in] The number of entries in `pwszPropertyNames` and `pwszPropertyValues`.  
   
@@ -38,6 +40,7 @@ HRESULT SetPropertiesForDefaultAppDomain(
  [in] An array of property values, or null if there are no properties.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -46,9 +49,11 @@ HRESULT SetPropertiesForDefaultAppDomain(
 |HRESULT_FROM_WIN32(ERROR_UNKNOWN_PROPERTY)|`pwszPropertyNames` includes a property name that is not recognized by this method.|  
   
 ## Remarks  
+
  The property value for "PARTIAL_TRUST_VISIBLE_ASSEMBLIES" is a list of assemblies that have the conditional <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute with the <xref:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault?displayProperty=nameWithType> flag, which are to be made visible to partially trusted callers in the default application domain.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

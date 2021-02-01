@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
 ---
 # -filealign
+
 Specifies where to align the sections of the output file.  
   
 ## Syntax  
@@ -20,10 +21,12 @@ Specifies where to align the sections of the output file.
 ```  
   
 ## Arguments  
+
  `number`  
  Required. A value that specifies the alignment of sections in the output file. Valid values are 512, 1024, 2048, 4096, and 8192. These values are in bytes.  
   
 ## Remarks  
+
  You can use the `-filealign` option to specify the alignment of sections in your output file. Sections are blocks of contiguous memory in a Portable Executable (PE) file that contains either code or data. The `-filealign` option lets you compile your application with a nonstandard alignment; most developers do not need to use this option.  
   
  Each section is aligned on a boundary that is a multiple of the `-filealign` value. There is no fixed default. If `-filealign` is not specified, the compiler picks a default at compile time.  

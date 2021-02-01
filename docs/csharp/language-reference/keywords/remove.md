@@ -1,4 +1,5 @@
 ---
+description: "remove contextual keyword - C# Reference"
 title: "remove contextual keyword - C# Reference"
 ms.date: 07/20/2015
 f1_keywords: 

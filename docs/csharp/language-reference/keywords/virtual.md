@@ -1,4 +1,5 @@
 ---
+description: "virtual - C# Reference"
 title: "virtual - C# Reference"
 ms.date: 07/20/2015
 f1_keywords: 

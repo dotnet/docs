@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineNestedType Method
+
 Creates the metadata signature of a type definition, returns an `mdTypeDef` token for that type, and specifies that the defined type is a member of the type referenced by the `tdEncloser` parameter.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT DefineNestedType (
 ```  
   
 ## Parameters  
+
  `szTypeDef`  
  [in] The name of the type in Unicode.  
   
@@ -52,6 +54,7 @@ HRESULT DefineNestedType (
  [out] The `mdTypeDef` token assigned.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

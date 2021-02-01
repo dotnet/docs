@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9d710389-d9d8-4454-9bf2-da4ccda31cec
 ---
 # \<message> element of \<wsFederationHttpBinding>
+
 Defines the settings for the message-level security for the [\<wsFederationHttpBinding>](wsfederationhttpbinding.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -75,6 +76,7 @@ Defines the settings for the message-level security for the [\<wsFederationHttpB
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

@@ -1,16 +1,15 @@
 ---
 title: "Performing arithmetic operations with dates and times"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "times [.NET Framework], arithmetic operations"
-  - "dates [.NET Framework], arithmetic operations"
-  - "time zones [.NET Framework], arithmetic operations"
-  - "arithmetic operations [.NET Framework], dates and times"
-  - "dates [.NET Framework], comparing"
+  - "times [.NET], arithmetic operations"
+  - "dates [.NET], arithmetic operations"
+  - "time zones [.NET], arithmetic operations"
+  - "arithmetic operations [.NET], dates and times"
+  - "dates [.NET], comparing"
   - "DateTime structure, arithmetic operations"
   - "DateTimeOffset structure, arithmetic operations"
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0

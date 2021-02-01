@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: f2d34e43-fa8b-46d2-91cf-d2960e13e16b
 ---
 # How to: Create a Custom Client Identity Verifier
+
 The *identity* feature of Windows Communication Foundation (WCF) enables a client to specify in advance the expected identity of the service. Whenever a server authenticates itself to the client, the identity is checked against the expected identity. (For an explanation of identity and how it works, see [Service Identity and Authentication](../feature-details/service-identity-and-authentication.md).)  
   
  If needed, the verification can be customized using a custom identity verifier. For example, you can perform additional service identity verification checks. In this example, the custom identity verifier checks additional claims in the X.509 certificate returned from the server. For a sample application, see [Service Identity Sample](../samples/service-identity-sample.md).  
@@ -64,12 +65,14 @@ The *identity* feature of Windows Communication Foundation (WCF) enables a clien
      [!code-vb[c_HowToSetCustomClientIdentity#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#4)]  
   
 ## Example  
+
  The following example shows a complete implementation of the <xref:System.ServiceModel.Security.IdentityVerifier> class.  
   
  [!code-csharp[c_HowToSetCustomClientIdentity#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs/source.cs#5)]
  [!code-vb[c_HowToSetCustomClientIdentity#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#5)]  
   
 ## Example  
+
  The following example shows a complete implementation of the <xref:System.ServiceModel.EndpointIdentity> class.  
   
  [!code-csharp[c_HowToSetCustomClientIdentity#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs/source.cs#6)]

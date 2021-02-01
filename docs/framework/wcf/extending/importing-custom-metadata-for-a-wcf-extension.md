@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 78beb28f-408a-4c75-9c3c-caefe9595b1a
 ---
 # Importing Custom Metadata for a WCF Extension
+
 In Windows Communication Foundation (WCF), metadata import is the process of generating an abstract representation of a service or its component parts from its metadata. For example, WCF can import <xref:System.ServiceModel.Description.ServiceEndpoint> instances, <xref:System.ServiceModel.Channels.Binding> instances or <xref:System.ServiceModel.Description.ContractDescription> instances from a WSDL document for a service. To import service metadata in WCF, use an implementation of the <xref:System.ServiceModel.Description.MetadataImporter?displayProperty=nameWithType> abstract class. Types that derive from the <xref:System.ServiceModel.Description.MetadataImporter> class implement support for importing metadata formats that take advantage of the WS-Policy import logic in WCF.  
   
  Custom metadata consists of XML elements that the system-provided metadata importers cannot import. Typically, this includes custom WSDL extensions and custom policy assertions.  
@@ -11,6 +12,7 @@ In Windows Communication Foundation (WCF), metadata import is the process of gen
  This section describes how to import custom WSDL extensions and policy assertions. It does not focus on the importing process itself. For more information about how to use the types that export and import metadata regardless of whether the metadata is custom or system-supported, see [Exporting and Importing Metadata](../feature-details/exporting-and-importing-metadata.md).  
   
 ## Overview  
+
  The <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> type is the implementation of the <xref:System.ServiceModel.Description.MetadataImporter> abstract class included with WCF. The <xref:System.ServiceModel.Description.WsdlImporter> type imports WSDL metadata with attached policies that are bundled in a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType> object. Policy assertions and WSDL extensions that the default importers do not recognize are passed to any registered custom policy and WSDL importers for importing. Typically, importers are implemented to support user-defined binding elements or to modify the imported contract.  
   
  This section describes:  
@@ -22,6 +24,7 @@ In Windows Communication Foundation (WCF), metadata import is the process of gen
  For more information about exporting custom WSDL and policy assertions, see [Exporting Custom Metadata for a WCF Extension](exporting-custom-metadata-for-a-wcf-extension.md).  
   
 ## Importing Custom WSDL Extensions  
+
  To add support for importing WSDL extensions, implement the <xref:System.ServiceModel.Description.IWsdlImportExtension> interface and then add your implementation to the <xref:System.ServiceModel.Description.WsdlImporter.WsdlImportExtensions%2A> property. The <xref:System.ServiceModel.Description.WsdlImporter> can also load implementations of the <xref:System.ServiceModel.Description.IWsdlImportExtension> interface registered in your application configuration file. Note that a number of WSDL importers are registered by default and the order of the registered WSDL importers is significant.  
   
  When the custom WSDL importer is loaded and used by the <xref:System.ServiceModel.Description.WsdlImporter>, first the <xref:System.ServiceModel.Description.IWsdlImportExtension.BeforeImport%2A> method is called to enable the modification of metadata prior to the import process. Next, the contracts are imported after which the <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%2A> method is called to enable the modification of the contracts imported from the metadata. Finally, the <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%2A> method is called to enable the modification of the imported endpoints.  
@@ -29,6 +32,7 @@ In Windows Communication Foundation (WCF), metadata import is the process of gen
  For more information, see [How to: Import Custom WSDL](how-to-import-custom-wsdl.md).  
   
 ### Importing Custom Policy Assertions  
+
  The <xref:System.ServiceModel.Description.WsdlImporter> type and the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) automatically handle processing a variety of policy assertion types in policy expressions attached to WSDL documents. These tools collect, normalize, and merge policy expressions attached to WSDL bindings and WSDL ports.  
   
  To add support for importing custom policy assertions, implement the <xref:System.ServiceModel.Description.IPolicyImportExtension> interface and then add your implementation to the <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A> property. The <xref:System.ServiceModel.Description.MetadataImporter> can also load implementations of the <xref:System.ServiceModel.Description.IPolicyImportExtension> interface registered in your application configuration file. Note that a number of policy importers are registered by default and the order of the registered policy importers is significant.  

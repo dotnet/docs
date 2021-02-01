@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 756bfc1e-7c28-4d4d-b114-ac9288c73882
 ---
 # How to use indexed properties in COM interop programming (C# Programming Guide)
+
 *Indexed properties* improve the way in which COM properties that have parameters are consumed in C# programming. Indexed properties work together with other features in Visual C#, such as [named and optional arguments](../classes-and-structs/named-and-optional-arguments.md), a new type ([dynamic](../../language-reference/builtin-types/reference-types.md)), and [embedded type information](../../../standard/assembly/embed-types-visual-studio.md), to enhance Microsoft Office programming.  
   
  In earlier versions of C#, methods are accessible as properties only if the `get` method has no parameters and the `set` method has one and only one value parameter. However, not all COM properties meet those restrictions. For example, the Excel <xref:Microsoft.Office.Interop.Excel.Range.Range%2A> property has a `get` accessor that requires a parameter for the name of the range. In the past, because you could not access the `Range` property directly, you had to use the `get_Range` method instead, as shown in the following example.  
@@ -33,6 +34,7 @@ ms.assetid: 756bfc1e-7c28-4d4d-b114-ac9288c73882
  You cannot create indexed properties of your own. The feature only supports consumption of existing indexed properties.  
   
 ## Example  
+
  The following code shows a complete example. For more information about how to set up a project that accesses the Office API, see [How to access Office interop objects by using C# features](./how-to-access-office-onterop-objects.md).
   
  [!code-csharp[csProgGuideIndexedProperties#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideindexedproperties/cs/program.cs#5)]  

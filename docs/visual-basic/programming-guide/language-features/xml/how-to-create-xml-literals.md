@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 573a6db5-b14d-4e42-b356-8cc7e2d77745
 ---
 # How to: Create XML Literals (Visual Basic)
+
 You can create an XML document, fragment, or element directly in code by using an XML literal. The examples in this topic demonstrate how to create an XML element that has three child elements, and how to create an XML document.  
   
  You can also use the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] APIs to create [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objects. For more information, see <xref:System.Xml.Linq.XElement>.  

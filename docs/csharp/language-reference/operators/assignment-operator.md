@@ -1,4 +1,5 @@
 ---
+description: "Assignment operators - C# reference"
 title: "Assignment operators - C# reference"
 ms.date: 09/10/2019
 f1_keywords: 

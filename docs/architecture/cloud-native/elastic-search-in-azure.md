@@ -33,23 +33,23 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 
 ### References
 
-- [Command and Query Responsibility Segregation (CQRS) pattern](https://docs.microsoft.com/azure/architecture/patterns/cqrs)
+- [Command and Query Responsibility Segregation (CQRS) pattern](/azure/architecture/patterns/cqrs)
 
-- [Event Sourcing pattern](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing)
+- [Event Sourcing pattern](/azure/architecture/patterns/event-sourcing)
 
 - [Why isn't RDBMS Partition Tolerant in CAP Theorem and why is it Available?](https://stackoverflow.com/questions/36404765/why-isnt-rdbms-partition-tolerant-in-cap-theorem-and-why-is-it-available)
 
-- [Materialized View](https://docs.microsoft.com/azure/architecture/patterns/materialized-view)
+- [Materialized View](/azure/architecture/patterns/materialized-view)
 
 - [All you really need to know about open source databases](https://www.ibm.com/blogs/systems/all-you-really-need-to-know-about-open-source-databases/)
 
-- [Compensating Transaction pattern](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction)
+- [Compensating Transaction pattern](/azure/architecture/patterns/compensating-transaction)
 
 - [Saga Pattern](https://microservices.io/patterns/data/saga.html)
 
 - [Saga Patterns | How to implement business transactions using microservices](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/)
 
-- [Compensating Transaction pattern](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction)
+- [Compensating Transaction pattern](/azure/architecture/patterns/compensating-transaction)
 
 - [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/)
 
@@ -69,7 +69,7 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 
 - [Vitess](https://vitess.io/)
 
-- [Elasticsearch: The Definitive Guide](http://shop.oreilly.com/product/0636920028505.do)
+- [Elasticsearch: The Definitive Guide](https://shop.oreilly.com/product/0636920028505.do)
   
 - [Introduction to Apache Lucene](https://www.baeldung.com/lucene)
 

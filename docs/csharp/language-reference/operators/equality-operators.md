@@ -1,7 +1,7 @@
 ---
 title: "Equality operators - C# reference"
 description: "Learn about C# equality comparison operators and C# type equality."
-ms.date: 06/26/2019
+ms.date: 10/30/2020
 author: pkulikov
 f1_keywords: 
   - "==_CSharpKeyword"
@@ -41,11 +41,19 @@ Beginning with C# 7.3, the `==` and `!=` operators are supported by C# [tuples](
 
 ### Reference types equality
 
-By default, two reference-type operands are equal if they refer to the same object:
+By default, two non-record reference-type operands are equal if they refer to the same object:
 
 [!code-csharp[reference type equality](snippets/shared/EqualityOperators.cs#ReferenceTypesEquality)]
 
 As the example shows, user-defined reference types support the `==` operator by default. However, a reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
+
+### Record types equality
+
+Available in C# 9.0 and later, [record types](../../whats-new/csharp-9.md#record-types) support the `==` and `!=` operators that by default provide value equality semantics. That is, two record operands are equal when both of them are `null` or corresponding values of all fields and auto-implemented properties are equal.
+
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="RecordTypesEquality":::
+
+As the preceding example shows, in case of non-record reference-type members their reference values are compared, not the referenced instances.
 
 ### String equality
 
@@ -79,9 +87,17 @@ The following example demonstrates the usage of the `!=` operator:
 
 A user-defined type can [overload](operator-overloading.md) the `==` and `!=` operators. If a type overloads one of the two operators, it must also overload the other one.
 
+A record type cannot explicitly overload the `==` and `!=` operators. If you need to change the behavior of the `==` and `!=` operators for record type `T`, implement the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method with the following signature:
+
+```csharp
+public virtual bool Equals(T? other);
+```
+
 ## C# language specification
 
 For more information, see the [Relational and type-testing operators](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+
+For more information about equality of record types, see the [Equality members](~/_csharplang/proposals/csharp-9.0/records.md#equality-members) section of the [records feature proposal note](~/_csharplang/proposals/csharp-9.0/records.md).
 
 ## See also
 

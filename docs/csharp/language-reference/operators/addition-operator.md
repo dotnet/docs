@@ -1,4 +1,5 @@
 ---
+description: "+ and += operators - C# reference"
 title: "+ and += operators - C# reference"
 ms.date: 04/23/2020
 f1_keywords: 

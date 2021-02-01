@@ -1,4 +1,5 @@
 ---
+description: "throw - C# Reference"
 title: "throw - C# Reference"
 ms.date: 03/02/2015
 f1_keywords: 

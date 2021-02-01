@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
 ---
 # \<clear> Element for authenticationModules (Network Settings)
+
 Clears all authentication modules from the application.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -26,12 +27,15 @@ Clears all authentication modules from the application.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -41,12 +45,15 @@ Clears all authentication modules from the application.
 |[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
+
  The `clear` element removes all authentication modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example removes all configured authentication modules.  
   
 ```xml  

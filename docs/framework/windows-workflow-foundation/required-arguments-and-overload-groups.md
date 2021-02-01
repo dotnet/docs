@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 4ca3ed06-b9af-4b85-8b70-88c2186aefa3
 ---
 # Required Arguments and Overload Groups
+
 Activities can be configured so that certain arguments are required to be bound for the activity to be valid for execution. The `RequiredArgument` attribute is used to indicate that certain arguments on an activity are required and the `OverloadGroup` attribute is used to group categories of required arguments together. By using the attributes, activity authors can provide simple or complex activity validation configurations.  
   
 ## Using Required Arguments  
+
  To use the `RequiredArgument` attribute in an activity, indicate the desired arguments using <xref:System.Activities.RequiredArgumentAttribute>. In this example, an `Add` activity is defined that has two required arguments.  
   
 ```csharp  

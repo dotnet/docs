@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorNotificationForTokenMovement Enumeration
+
 Specifies the notifications that will be sent to the metadata API client when a token remap occurs.  
   
 ## Syntax  
@@ -82,9 +83,11 @@ typedef enum CorNotificationForTokenMovement {
 |`MDNotifyResource`|Notify when an `mdManifestResource` token moves.|  
   
 ## Remarks  
+
  A token may be re-mapped (that is, moved) during a metadata merge.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

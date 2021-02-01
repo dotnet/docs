@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 68862534-3b2e-4270-b097-8121b12a2c97
 ---
 # Activity Tracing in Message Security
+
 This topic describes activity tracing for security processing, which happens in the following three phases.  
   
 - Negotiation/SCT exchange. This can happen at the transport later (through binary data exchange) or message layer (through SOAP message exchanges).  
@@ -13,6 +14,7 @@ This topic describes activity tracing for security processing, which happens in 
 - Authorization and verification. This can happen locally or when communicating between endpoints.  
   
 ## Negotiation/SCT exchange  
+
  In the negotiation/SCT exchange phase, two activity types are created on the client: "Set up Secure Session" and "Close Secure Session." "Set up Secure Session" encompasses traces for the RST/RSTR/SCT message exchanges, while "Close Secure Session" includes traces for the Cancel message.  
   
  On the server, each request/reply for the RST/RSTR/SCT appears in its own activity. If `propagateActivity`=`true` on both the server and client, activities on the server have the same ID, and appear together in the "Setup Secure Session" when viewed through Service Trace Viewer.  
@@ -30,6 +32,7 @@ This topic describes activity tracing for security processing, which happens in 
 > In mixed security mode, negotiation authentication happens in binary exchanges, but SCT happens in message exchange. In pure transport mode, negotiation happens only in transport with no additional activities.  
   
 ## Message Encryption and Decryption  
+
  The following table lists the activities and traces for message encryption/decryption, as well as signature authentication.  
   
 ||Secure Transport<br /><br /> (HTTPS, SSL) and Secure Message Layer<br /><br /> (WSHTTP)|  
@@ -42,6 +45,7 @@ This topic describes activity tracing for security processing, which happens in 
 > In pure transport mode, message encryption/decryption happens only in transport with no additional activities.  
   
 ## Authorization and Verification  
+
  The following table lists the activities and traces for authorization.  
   
 ||Time when authorization happens|Activities|Traces|  

@@ -4,11 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: ae006fa9-997e-45bb-8a04-a7f62026171e
 ---
 # Nullable Structured Types (Entity SQL)
+
 A `null` instance of a structured type is an instance that does not exist. This is different from an existing instance in which all properties have `null` values.  
   
  This topic describes the nullable structured types, including which types are nullable and which code patterns produce `null` instances of structured nullable types.  
   
 ## Kinds of Nullable Structured Types  
+
  There are three kinds of nullable structure types:  
   
 - Row types.  
@@ -18,6 +20,7 @@ A `null` instance of a structured type is an instance that does not exist. This 
 - Entity types.  
   
 ## Code Patterns that Produce Null Instances of Structured Types  
+
  The following scenarios produce `null` instances:  
   
 - Shaping `null` as a structured type:  

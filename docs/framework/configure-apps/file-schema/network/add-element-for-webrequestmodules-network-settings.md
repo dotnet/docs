@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
 ---
 # \<add> Element for webRequestModules (Network Settings)
+
 Adds a custom Web request module to the application.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -29,6 +30,7 @@ Adds a custom Web request module to the application.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -39,6 +41,7 @@ Adds a custom Web request module to the application.
 |`type`|The fully qualified type name (indicated by the <xref:System.Type.FullName%2A> property) and the assembly name (indicated by the <xref:System.Reflection.Assembly.FullName%2A> property), separated by a comma, that implements this Web request module.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -48,6 +51,7 @@ Adds a custom Web request module to the application.
 |[webRequestModules](webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
   
 ## Remarks  
+
  The `prefix` attribute defines the URI prefix that uses the specified Web request module. Web request modules are typically registered to handle a specific protocol, such as HTTP or FTP, but can be registered to handle a request to a specific server or path on a server.  
   
  The Web request module is created when a URI matching prefix is passed to the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method.  
@@ -57,9 +61,11 @@ Adds a custom Web request module to the application.
  The value for the `type` attribute should be a valid type name and corresponding assembly name, separated by a comma.
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example registers a custom Web request module for HTTP. You should replace the values for Version and PublicKeyToken with the correct values for the specified module.  
   
 ```xml  

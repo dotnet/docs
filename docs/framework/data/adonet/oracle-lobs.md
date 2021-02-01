@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 272e8e1e-a31f-475a-8c2a-ae8e1286bdab
 ---
 # Oracle LOBs
+
 The .NET Framework Data Provider for Oracle includes the <xref:System.Data.OracleClient.OracleLob> class, which is used to work with Oracle **LOB** data types.  
   
  An **OracleLob** may be one of these <xref:System.Data.OracleClient.OracleType> data types:  
@@ -17,6 +18,7 @@ The .NET Framework Data Provider for Oracle includes the <xref:System.Data.Oracl
  An **OracleLob** differs from an <xref:System.Data.OracleClient.OracleBFile> in that the data is stored on the server instead of in a physical file in the operating system. It can also be a read-write object, unlike an **OracleBFile**, which is always read-only.  
   
 ## Creating, Retrieving, and Writing to a LOB  
+
  The following C# example demonstrates how you can create LOBs in an Oracle table, and then retrieve and write to them in the form of **OracleLob** objects. The example demonstrates using the <xref:System.Data.OracleClient.OracleDataReader> object and the **OracleLob** **Read** and **Write** methods. The example uses Oracle **BLOB**, **CLOB**, and **NCLOB** data types.  
   
 ```csharp  
@@ -210,6 +212,7 @@ public class LobExample
 ```  
   
 ## Creating a Temporary LOB  
+
  The following C# example demonstrates how to create a temporary LOB.  
   
 ```csharp  

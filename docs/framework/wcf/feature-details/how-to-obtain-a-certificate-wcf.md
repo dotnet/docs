@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: d53762fd-15ea-42dc-b0ea-6a6597aa23f7
 ---
 # How to: Obtain a Certificate (WCF)
+
 To use any of the Windows Communication Foundation (WCF) features of that use X.509 certificates, you just first obtain certificates.  
   
 ### To obtain an X.509 certificate  
@@ -14,7 +15,7 @@ To use any of the Windows Communication Foundation (WCF) features of that use X.
   
     - Purchase a certificate from a certification authority, such as VeriSign, Inc.  
   
-    - Set up your own certificate service and have a certification authority sign the certificates. Windows Server 2003, Windows 2000 Server, Windows 2000 Server Datacenter, and Windows 2000 Datacenter Server all include certificate services that support public key infrastructure (PKI). In Windows Server 2008, use the [Active Directory Certificate Services](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731564(v=ws.10)) role to manage a certification authority.  
+    - Set up your own certificate service and have a certification authority sign the certificates. Windows Server 2003, Windows 2000 Server, Windows 2000 Server Datacenter, and Windows 2000 Datacenter Server all include certificate services that support public key infrastructure (PKI). In Windows Server 2008, use the [Active Directory Certificate Services](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731564(v=ws.10)) role to manage a certification authority.  
   
     - Set up your own certificate service and do not have the certificates signed.  
   

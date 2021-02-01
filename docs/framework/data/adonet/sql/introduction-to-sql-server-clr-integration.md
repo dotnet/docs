@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 551d2290-ed80-49be-b377-44b32444da1c
 ---
 # Introduction to SQL Server CLR Integration
+
 The common language runtime (CLR) is the heart of the Microsoft .NET Framework and provides the execution environment for all .NET Framework code. Code that runs within the CLR is referred to as managed code. The CLR provides various functions and services required for program execution, including just-in-time (JIT) compilation, allocating and managing memory, enforcing type safety, exception handling, thread management, and security.  
   
  With the CLR hosted in Microsoft SQL Server (called CLR integration), you can author stored procedures, triggers, user-defined functions, user-defined types, and user-defined aggregates in managed code. Because managed code compiles to native code prior to execution, you can achieve significant performance increases in some scenarios.  
@@ -18,6 +19,7 @@ The common language runtime (CLR) is the heart of the Microsoft .NET Framework a
 - [Common Language Runtime (CLR) Integration Overview](/sql/relational-databases/clr-integration/common-language-runtime-integration-overview)  
   
 ## Enabling CLR Integration  
+
  The common language runtime (CLR) integration feature is off by default in Microsoft SQL Server, and must be enabled in order to use objects that are implemented using CLR integration. To enable CLR integration using Transact-SQL, use the `clr enabled` option of the `sp_configure` stored procedure as shown:  
   
 ```sql  
@@ -36,6 +38,7 @@ GO
 - [Enabling CLR Integration](/sql/relational-databases/clr-integration/clr-integration-enabling)  
   
 ## Deploying a CLR Assembly  
+
  Once the CLR methods have been tested and verified on the test server, they can be distributed to production servers using a deployment script. The deployment script can be generated manually, or by using SQL Server Management Studio. For more detailed information, see the version of SQL Server documentation for the version of SQL Server you are using.  
   
  **SQL Server documentation**  
@@ -43,6 +46,7 @@ GO
 1. [Deploying CLR Database Objects](/sql/relational-databases/clr-integration/deploying-clr-database-objects)  
   
 ## CLR Integration Security  
+
  The security model of the Microsoft SQL Server integration with the Microsoft .NET Framework common language runtime (CLR) manages and secures access between different types of CLR and non-CLR objects running within SQL Server. These objects may be called by a Transact-SQL statement or another CLR object running in the server.  
   
  For more detailed information, see the version of SQL Server Books Online for the version of SQL Server you are using.  
@@ -52,6 +56,7 @@ GO
 - [CLR Integration Security](/sql/relational-databases/clr-integration/security/clr-integration-security)  
   
 ## Debugging a CLR Assembly  
+
  Microsoft SQL Server provides support for debugging Transact-SQL and common language runtime (CLR) objects in the database. Debugging works across languages: users can step seamlessly into CLR objects from Transact-SQL, and vice versa.  
   
  For more detailed information, see the version of SQL Server Books Online for the version of SQL Server you are using.  

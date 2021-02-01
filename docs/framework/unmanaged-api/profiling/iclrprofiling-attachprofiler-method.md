@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRProfiling::AttachProfiler Method
+
 Attaches the specified profiler to the specified process.  
   
 ## Syntax  
@@ -58,6 +59,7 @@ HRESULT AttachProfiler(
   \[in] The size, in bytes, of the data that `pvClientData` points to.
 
 ## Return Value  
+
  This method returns the following HRESULTs.  
   
 |HRESULT|Description|  
@@ -78,9 +80,11 @@ HRESULT AttachProfiler(
 ## Remarks  
   
 ## Memory Management  
+
  In keeping with COM conventions, the caller of `AttachProfiler` (for example, the trigger code authored by the profiler developer) is responsible for allocating and de-allocating the memory for the data that the `pvClientData` parameter points to. When the CLR executes the `AttachProfiler` call, it makes a copy of the memory that `pvClientData` points to and transmits it to the target process. When the CLR inside the target process receives its own copy of the `pvClientData` block, it passes the block to the profiler through the `InitializeForAttach` method, and then deallocates its copy of the `pvClientData` block from the target process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

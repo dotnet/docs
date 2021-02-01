@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 84382f2c-f6b1-4c32-82fa-aebc8f6064db
 ---
 # Token Authenticator
+
 This sample demonstrates how to implement a custom token authenticator. A token authenticator in Windows Communication Foundation (WCF) is used for validating the token used with the message, verifying that it is self-consistent, and authenticating the identity associated with the token.
 
  Custom token authenticators are useful in a variety of cases, such as:
@@ -113,6 +114,7 @@ static void Main()
 ```
 
 ## Custom Token Authenticator
+
  Use the following steps to create a custom token authenticator:
 
 1. Write a custom token authenticator.
@@ -287,6 +289,7 @@ static void DisplayIdentityInformation()
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.
 
 ## Setup Batch File
+
  The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run a self-hosted application that requires server certificate based security. This batch file must be modified to work across computers or to work in a non-hosted case.
 
  The following provides a brief overview of the different sections of the batch files so that they can be modified to run in appropriate configuration.
@@ -333,7 +336,7 @@ static void DisplayIdentityInformation()
   
 3. Launch client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computers  
   
@@ -355,8 +358,8 @@ static void DisplayIdentityInformation()
   
 9. On the client computer, launch Client.exe from a command prompt.  
   
-10. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+10. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To clean up after the sample  
   
-1. Run Cleanup.bat in the samples folder once you have finished running the sample.  
+1. Run Cleanup.bat in the samples folder once you have finished running the sample.

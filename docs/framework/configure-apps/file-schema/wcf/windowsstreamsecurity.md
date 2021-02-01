@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 926bea29-90c7-4a26-9cf0-fb4aa44f6f70
 ---
 # \<windowsStreamSecurity>
+
 Specify Windows stream security settings of the custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ Specify Windows stream security settings of the custom binding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -29,6 +31,7 @@ Specify Windows stream security settings of the custom binding.
 |protectionLevel|Defines message-level security. Signing messages mitigates the risk of a third party tampering with the message while it is being transferred. Encryption provides data-level privacy during transport. Valid values include the following:<br /><br /> -   None: No protection.<br />-   Sign: Messages are signed.<br />-   EncryptAndSign: Messages are signed and encrypted.<br /><br /> The default is EncryptAndSign.<br /><br /> This attribute is of type <xref:System.Net.Security.ProtectionLevel>.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -38,6 +41,7 @@ Specify Windows stream security settings of the custom binding.
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  Transports that use a stream-oriented protocol such as TCP and named pipes support stream-based transport upgrades. Specifically, WCF provides security upgrades. The configuration of this transport security is encapsulated by this configuration element  as well as by [\<sslStreamSecurity>](sslstreamsecurity.md), which can be configured and added to a custom binding  
   
 ## See also

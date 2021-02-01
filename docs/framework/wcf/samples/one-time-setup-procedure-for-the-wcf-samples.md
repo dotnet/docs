@@ -20,7 +20,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 3. Ensure you have Visual Studio 2012 or later installed, or your operating system is Windows Server 2008 SP2 or later.
 
-4. Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752252(v=vs.90)).
+4. Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](/previous-versions/dotnet/netframework-3.5/ms752252(v=vs.90)).
 
     > [!WARNING]
     > If IIS is reinstalled, the following commands will need to be run again.

@@ -16,19 +16,23 @@ helpviewer_keywords:
 ms.assetid: 7240c3f3-7df8-4b03-bbf1-17cdce142d45
 ---
 # reentrancy MDA
+
 The `reentrancy` managed debugging assistant (MDA) is activated when an attempt is made to transition from native to managed code in cases where a prior switch from managed to native code was not performed through an orderly transition.  
   
 ## Symptoms  
+
  The object heap is corrupted or other serious errors are occurring when transitioning from native to managed code.  
   
  Threads that switch between native and managed code in either direction must perform an orderly transition. However, certain low-level extensibility points in the operating system, such as the vectored exception handler, allow switches from managed to native code without performing an orderly transition.  These switches are under operating system control, rather than under common language runtime (CLR) control.  Any native code that executes inside these extensibility points must avoid calling back into managed code.  
   
 ## Cause  
+
  A low-level operating system extensibility point, such as the vectored exception handler, has activated while executing managed code.  The application code that is invoked through that extensibility point is attempting to call back into managed code.  
   
  This problem is always caused by application code.  
   
 ## Resolution  
+
  Examine the stack trace for the thread that has activated this MDA.  The thread is attempting to illegally call into managed code.  The stack trace should reveal the application code using this extensibility point, the operating system code that provides this extensibility point, and the managed code that was interrupted by the extensibility point.  
   
  For example, you will see the MDA activated in an attempt to call managed code from inside a vectored exception handler.  On the stack you will see the operating system exception handling code and some managed code triggering an exception such as a <xref:System.DivideByZeroException> or an <xref:System.AccessViolationException>.  
@@ -36,9 +40,11 @@ The `reentrancy` managed debugging assistant (MDA) is activated when an attempt 
  In this example, the correct resolution is to implement the vectored exception handler completely in unmanaged code.  
   
 ## Effect on the Runtime  
+
  This MDA has no effect on the CLR.  
   
 ## Output  
+
  The MDA reports that illegal reentrancy is being attempted.  Examine the thread's stack to determine why this is happening and how to correct the problem. The following is sample output.  
   
 ```output
@@ -60,6 +66,7 @@ ConsoleApplication1\bin\Debug\ConsoleApplication1.vshost.exe'.
 ```  
   
 ## Example  
+
  The following code example causes an <xref:System.AccessViolationException> to be thrown.  On versions of Windows that support vectored exception handling, this will cause the managed vectored exception handler to be called.  If the `reentrancy` MDA is enabled, the MDA will activate during the attempted call to `MyHandler` from the operating system's vectored exception handling support code.  
   
 ```csharp

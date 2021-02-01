@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
 ---
 # \<filter> Element for \<add> for \<listeners> for \<source>
+
 Adds a filter to a listener in the `Listeners` collection for a trace source.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -30,6 +31,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -40,6 +42,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 |`initializeData`|Optional attribute.<br /><br /> The string passed to the constructor for the specified filter class.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -54,11 +57,13 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 |`add`|Adds a listener to the `Listeners` collection for a trace source.|  
   
 ## Remarks  
+
  The `<filter>` element must be contained in an `<add>` element for a trace source listener that specifies the type of the listener, not just the name of a listener defined in a [\<sharedListeners>](sharedlisteners-element.md). If the listener is defined in a [\<sharedListeners>](sharedlisteners-element.md), the filter for that listener must be defined in that element.  
   
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.  
   
 ## Example  
+
  The following example shows how to use the `<filter>` element to add a filter to the listener `console` in the `Listeners` collection for the trace source `myTraceSource`, specifying the filter event level as `Error`.  
   
 ```xml  

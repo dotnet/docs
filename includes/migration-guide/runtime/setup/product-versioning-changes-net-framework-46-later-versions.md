@@ -13,3 +13,15 @@ In general, applications should depend on the recommended techniques for detecti
 | Scope   |Minor|
 |Version|4.6|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

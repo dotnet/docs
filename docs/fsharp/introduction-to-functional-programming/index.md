@@ -49,7 +49,7 @@ So, why is the signature important? In typed functional programming, the impleme
 
 ### Expressions
 
-Expressions are constructs that evaluate to a value. In contrast to statements, which perform an action, expressions can be thought of performing an action that gives back a value. Expressions are almost always used in favor of statements in functional programming.
+Expressions are constructs that evaluate to a value. In contrast to statements, which perform an action, expressions can be thought of performing an action that gives back a value. Expressions are almost always used in functional programming instead of statements.
 
 Consider the previous function, `addOne`. The body of `addOne` is an expression:
 
@@ -94,7 +94,7 @@ There is a special type, `unit`, that is used when there is nothing to return. F
 
 ```fsharp
 let printString (str: string) =
-    printfn "String is: %s" str
+    printfn $"String is: {str}"
 ```
 
 The signature looks like this:
@@ -152,7 +152,7 @@ Here is another example of a non-pure function, because it performs a side effec
 
 ```fsharp
 let addOneToValue x =
-    printfn "x is %d" x
+    printfn $"x is %d{x}"
     x + 1
 ```
 

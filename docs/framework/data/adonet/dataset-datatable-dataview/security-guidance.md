@@ -1,7 +1,7 @@
 ---
 title: DataSet and DataTable security guidance
 ms.date: 07/14/2020
-dev_langs: 
+dev_langs:
   - "csharp"
 ---
 # DataSet and DataTable security guidance
@@ -12,9 +12,9 @@ This article applies to:
 * .NET Core and later
 * .NET 5.0 and later
 
-The [DataSet](/dotnet/api/system.data.dataset) and [DataTable](/dotnet/api/system.data.datatable) types are legacy .NET components that allow representing data sets as managed objects. These components were introduced in .NET 1.0 as part of the original [ADO.NET infrastructure](/dotnet/framework/data/adonet/dataset-datatable-dataview/). Their goal was to provide a managed view over a relational data set, abstracting away whether the underlying source of the data was XML, SQL, or another technology.
+The [DataSet](/dotnet/api/system.data.dataset) and [DataTable](/dotnet/api/system.data.datatable) types are legacy .NET components that allow representing data sets as managed objects. These components were introduced in .NET Framework 1.0 as part of the original [ADO.NET infrastructure](./index.md). Their goal was to provide a managed view over a relational data set, abstracting away whether the underlying source of the data was XML, SQL, or another technology.
 
-For more information on ADO.NET, including more modern data view paradigms, see [the ADO.NET documentation](/dotnet/framework/data/adonet/).
+For more information on ADO.NET, including more modern data view paradigms, see [the ADO.NET documentation](../index.md).
 
 ## Default restrictions when deserializing a DataSet or DataTable from XML
 
@@ -28,19 +28,22 @@ On all supported versions of .NET Framework, .NET Core, and .NET, `DataSet` and 
 
 If the incoming XML data contains an object whose type is not in this list:
 
-* An exception is thrown with the following message and stack trace.  
-Error Message:  
-System.InvalidOperationException : Type '\<Type Name\>, Version=\<n.n.n.n\>, Culture=\<culture\>, PublicKeyToken=\<token value\>' is not allowed here. See [https://go.microsoft.com/fwlink/?linkid=2132227](https://go.microsoft.com/fwlink/?linkid=2132227) for more details.  
-Stack Trace:  
-at System.Data.TypeLimiter.EnsureTypeIsAllowed(Type type, TypeLimiter capturedLimiter)  
-at System.Data.DataColumn.UpdateColumnType(Type type, StorageType typeCode)  
-at System.Data.DataColumn.set_DataType(Type value)  
+* An exception is thrown with the following message and stack trace.
+Error Message:
+System.InvalidOperationException : Type '\<Type Name\>, Version=\<n.n.n.n\>, Culture=\<culture\>, PublicKeyToken=\<token value\>' is not allowed here. See [https://go.microsoft.com/fwlink/?linkid=2132227](https://go.microsoft.com/fwlink/?linkid=2132227) for more details.
+Stack Trace:
+at System.Data.TypeLimiter.EnsureTypeIsAllowed(Type type, TypeLimiter capturedLimiter)
+at System.Data.DataColumn.UpdateColumnType(Type type, StorageType typeCode)
+at System.Data.DataColumn.set_DataType(Type value)
 
 * The deserialization operation fails.
 
 When loading XML into an existing `DataSet` or `DataTable` instance, the existing column definitions are also taken into account. If the table already contains a column definition of a custom type, that type is temporarily added to the allow list for the duration of the XML deserialization operation.
 
-```cs
+> [!NOTE]
+> Once you add columns to a `DataTable`, `ReadXml` will not read the schema from the XML, and if the schema does not match it will also not read in the records, so you will need to add all the columns yourself to use this method.
+
+```csharp
 XmlReader xmlReader = GetXmlReader();
 
 // Assume the XML blob contains data for type MyCustomClass.
@@ -96,7 +99,7 @@ The following sample shows extending the allowed types list by adding the custom
 
 To retrieve the assembly qualified name of a type, use the [Type.AssemblyQualifiedName](/dotnet/api/system.type.assemblyqualifiedname) property, as demonstrated in the following code.
 
-```cs
+```csharp
 string assemblyQualifiedName = typeof(Fabrikam.CustomType).AssemblyQualifiedName;
 ```
 
@@ -127,7 +130,7 @@ If your app targets .NET Framework 2.0 or 3.5, you can still use the above _App.
 
 The list of allowed types can also be extended programmatically by using [AppDomain.SetData](/dotnet/api/system.appdomain.setdata) with the well-known key _System.Data.DataSetDefaultAllowedTypes_, as shown in the following code.
 
-```cs
+```csharp
 Type[] extraAllowedTypes = new Type[]
 {
     typeof(Fabrikam.CustomType),
@@ -251,11 +254,11 @@ In .NET Core, .NET 5, and ASP.NET Core, this setting is controlled by _runtimeco
 }
 ```
 
-For more information, see [".NET Core run-time configuration settings"](/dotnet/core/run-time-config/).
+For more information, see [".NET Core run-time configuration settings"](../../../../core/run-time-config/index.md).
 
 `AllowArbitraryDataSetTypeInstantiation` can also be set programmatically via [AppContext.SetSwitch](/dotnet/api/system.appcontext.setswitch) instead of using a configuration file, as shown in the following code:
 
-```cs
+```csharp
 // Warning: setting the following switch can introduce a security problem.
 AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation", true);
 ```
@@ -299,13 +302,13 @@ This document discusses safety considerations for the preceding scenarios.
 
 A `DataSet` instance can be populated from a `DataAdapter` by using [the `DataAdapter.Fill` method](/dotnet/api/system.data.common.dataadapter.fill), as shown in the following example.
 
-```cs
-// Assumes that connection is a valid SqlConnection object.  
+```csharp
+// Assumes that connection is a valid SqlConnection object.
 string queryString =
-  "SELECT CustomerID, CompanyName FROM dbo.Customers";  
-SqlDataAdapter adapter = new SqlDataAdapter(queryString, connection);  
-  
-DataSet customers = new DataSet();  
+  "SELECT CustomerID, CompanyName FROM dbo.Customers";
+SqlDataAdapter adapter = new SqlDataAdapter(queryString, connection);
+
+DataSet customers = new DataSet();
 adapter.Fill(customers, "Customers");
 ```
 
@@ -346,7 +349,7 @@ It is the consumer's sole responsibility to determine whether to utilize these A
 
 It is possible to accept a `DataSet` or a `DataTable` instance in an ASP.NET (SOAP) web service, as demonstrated in the following code:
 
-```cs
+```csharp
 using System.Data;
 using System.Web.Services;
 
@@ -363,7 +366,7 @@ public class MyService : WebService
 
 A variation on this is not to accept `DataSet` or `DataTable` directly as a parameter, but instead to accept it as part of the overall SOAP serialized object graph, as shown in the following code:
 
-```cs
+```csharp
 using System.Data;
 using System.Web.Services;
 
@@ -387,7 +390,7 @@ public class MyClass
 
 Or, using WCF instead of ASP.NET web services:
 
-```cs
+```csharp
 using System.Data;
 using System.ServiceModel;
 
@@ -414,7 +417,7 @@ In all of these cases, the threat model and security guarantees are the same as 
 
 Developers can use `XmlSerializer` to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
 
-```cs
+```csharp
 using System.Data;
 using System.IO;
 using System.Xml.Serialization;
@@ -443,16 +446,16 @@ In these cases, the threat model and security guarantees are the same as the [Da
 
 The popular third-party Newtonsoft library [JSON.NET](https://www.newtonsoft.com/json) can be used to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
 
-```cs
+```csharp
 using System.Data;
 using Newtonsoft.Json;
 
 public DataSet PerformDeserialization1(string json) {
-    return JsonConvert.DeserializeObect<DataSet>(data);
+    return JsonConvert.DeserializeObject<DataSet>(data);
 }
 
 public MyClass PerformDeserialization2(string json) {
-    return JsonConvert.DeserializeObect<MyClass>(data);
+    return JsonConvert.DeserializeObject<MyClass>(data);
 }
 
 public class MyClass
@@ -488,27 +491,27 @@ Consider replacing the object model to use [Entity Framework](/ef). Entity Frame
 * Brings [a diverse ecosystem](/ef/core/providers/) of database providers to make it easy to project database queries via your Entity Framework object models.
 * Offers built-in protections when deserializing data from untrusted sources.
 
-For apps that use `.aspx` SOAP endpoints, consider changing those endpoints to use [WCF](/dotnet/framework/wcf/). WCF is a more fully featured replacement for `.asmx` web services. WCF endpoints [can be exposed via SOAP](../../../wcf/feature-details/how-to-expose-a-contract-to-soap-and-web-clients.md) for compatibility with existing callers.
+For apps that use `.aspx` SOAP endpoints, consider changing those endpoints to use [WCF](../../../wcf/index.md). WCF is a more fully featured replacement for `.asmx` web services. WCF endpoints [can be exposed via SOAP](../../../wcf/feature-details/how-to-expose-a-contract-to-soap-and-web-clients.md) for compatibility with existing callers.
 
 ## Code analyzers
 
 Code analyzer security rules, which run when your source code is compiled, can help to find vulnerabilities related to this security issue in C# and Visual Basic code. Microsoft.CodeAnalysis.FxCopAnalyzers is a NuGet package of code analyzers that's distributed on [nuget.org](https://www.nuget.org/).
 
-For an overview of code analyzers, see [Overview of source code analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview).
+For an overview of code analyzers, see [Overview of source code analyzers](/visualstudio/code-quality/roslyn-analyzers-overview).
 
 Enable the following Microsoft.CodeAnalysis.FxCopAnalyzers rules:
 
-- [CA2350](https://docs.microsoft.com/visualstudio/code-quality/ca2350): Do not use DataTable.ReadXml() with untrusted data
-- [CA2351](https://docs.microsoft.com/visualstudio/code-quality/ca2351): Do not use DataSet.ReadXml() with untrusted data
-- [CA2352](https://docs.microsoft.com/visualstudio/code-quality/ca2352): Unsafe DataSet or DataTable in serializable type can be vulnerable to remote code execution attacks
-- [CA2353](https://docs.microsoft.com/visualstudio/code-quality/ca2353): Unsafe DataSet or DataTable in serializable type
-- [CA2354](https://docs.microsoft.com/visualstudio/code-quality/ca2354): Unsafe DataSet or DataTable in deserialized object graph can be vulnerable to remote code execution attacks
-- [CA2355](https://docs.microsoft.com/visualstudio/code-quality/ca2355): Unsafe DataSet or DataTable type found in deserializable object graph
-- [CA2356](https://docs.microsoft.com/visualstudio/code-quality/ca2356): Unsafe DataSet or DataTable type in web deserializable object graph
-- [CA2361](https://docs.microsoft.com/visualstudio/code-quality/ca2361): Ensure autogenerated class containing DataSet.ReadXml() is not used with untrusted data
-- [CA2362](https://docs.microsoft.com/visualstudio/code-quality/ca2362): Unsafe DataSet or DataTable in autogenerated serializable type can be vulnerable to remote code execution attacks
+- [CA2350](/visualstudio/code-quality/ca2350): Do not use DataTable.ReadXml() with untrusted data
+- [CA2351](/visualstudio/code-quality/ca2351): Do not use DataSet.ReadXml() with untrusted data
+- [CA2352](/visualstudio/code-quality/ca2352): Unsafe DataSet or DataTable in serializable type can be vulnerable to remote code execution attacks
+- [CA2353](/visualstudio/code-quality/ca2353): Unsafe DataSet or DataTable in serializable type
+- [CA2354](/visualstudio/code-quality/ca2354): Unsafe DataSet or DataTable in deserialized object graph can be vulnerable to remote code execution attacks
+- [CA2355](/visualstudio/code-quality/ca2355): Unsafe DataSet or DataTable type found in deserializable object graph
+- [CA2356](/visualstudio/code-quality/ca2356): Unsafe DataSet or DataTable type in web deserializable object graph
+- [CA2361](/visualstudio/code-quality/ca2361): Ensure autogenerated class containing DataSet.ReadXml() is not used with untrusted data
+- [CA2362](/visualstudio/code-quality/ca2362): Unsafe DataSet or DataTable in autogenerated serializable type can be vulnerable to remote code execution attacks
 
-For more information about configuring rules, see [Use code analyzers](https://docs.microsoft.com/visualstudio/code-quality/use-roslyn-analyzers).
+For more information about configuring rules, see [Use code analyzers](/visualstudio/code-quality/use-roslyn-analyzers).
 
 The new security rules are available in the following NuGet packages:
 

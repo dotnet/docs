@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # LPTHREAD_START_ROUTINE Function Pointer
+
 Points to a function that notifies the host that a thread has started to execute.  
   
  This function pointer has been deprecated in the .NET Framework 4.  
@@ -29,13 +30,16 @@ typedef DWORD (__stdcall *LPTHREAD_START_ROUTINE) (
 ```  
   
 ## Parameters  
+
  `lpThreadParameter`  
  [in] A pointer to the code that has started executing.  
   
 ## Remarks  
+
  The function to which `LPTHREAD_START_ROUTINE` points is a callback function and must be implemented by the writer of the hosting application.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

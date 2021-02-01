@@ -1,4 +1,5 @@
 ---
+description: "-nologo (C# Compiler Options)"
 title: "-nologo (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -11,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 426afb36-a8fb-469d-9c45-a35d9512557c
 ---
 # -nologo (C# Compiler Options)
+
 The **-nologo** option suppresses display of the sign-on banner when the compiler starts up and display of informational messages during compiling.  
   
 ## Syntax  
@@ -20,6 +22,7 @@ The **-nologo** option suppresses display of the sign-on banner when the compile
 ```  
   
 ## Remarks  
+
  This option is not available from within the development environment; it is only available when compiling from the command line.  
   
  This compiler option is unavailable in Visual Studio and cannot be changed programmatically.  

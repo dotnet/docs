@@ -43,5 +43,5 @@ The `dotnet tool run` command searches tool manifest files that are in scope for
 
 ## See also
 
-- [.NET Core tools](global-tools.md)
-- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)
+- [.NET tools](global-tools.md)
+- [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)

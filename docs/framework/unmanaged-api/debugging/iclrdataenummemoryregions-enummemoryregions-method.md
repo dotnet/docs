@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRDataEnumMemoryRegions::EnumMemoryRegions Method
+
 Enumerates specified areas of memory.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT EnumMemoryRegions (
 ```  
   
 ## Parameters  
+
  `callback`  
  [in] A pointer to an [ICLRDataEnumMemoryRegionsCallback](iclrdataenummemoryregionscallback-interface.md) instance that is called by this method for each memory region being enumerated to notify the debugger of the result.  
   
@@ -42,9 +44,11 @@ HRESULT EnumMemoryRegions (
  [in] A value of the [CLRDataEnumMemoryFlags](clrdataenummemoryflags-enumeration.md) enumeration that specifies the regions of memory to be enumerated.  
   
 ## Remarks  
+
  This method uses the specified [ICLRDataEnumMemoryRegionsCallback](iclrdataenummemoryregionscallback-interface.md) instance to notify the caller of results.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  

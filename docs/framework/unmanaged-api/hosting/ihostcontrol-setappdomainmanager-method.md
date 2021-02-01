@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostControl::SetAppDomainManager Method
+
 Notifies the host that an application domain has been created.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SetAppDomainManager (
 ```  
   
 ## Parameters  
+
  `dwAppDomainID`  
  [in] The numeric identifier of the selected <xref:System.AppDomain>.  
   
@@ -47,11 +49,13 @@ HRESULT SetAppDomainManager (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The <xref:System.AppDomainManager> provides the host with a mechanism to bootstrap into managed code and to control the creation and settings of each <xref:System.AppDomain>. The <xref:System.AppDomainManager> is loaded into each <xref:System.AppDomain> when that <xref:System.AppDomain> is created. If it chooses, the CLR notifies the host that the application domain has been created by setting the value of the `pUnkAppDomainManager` parameter.  
   
  In its implementation of the `SetAppDomainManager` method, the host can set the assembly name and type for the application domain manager.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

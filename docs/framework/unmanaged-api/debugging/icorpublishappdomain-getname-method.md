@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishAppDomain::GetName Method
+
 Gets the name of the application domain that is represented by this [ICorPublishAppDomain](icorpublishappdomain-interface.md).  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetName (
 ```  
   
 ## Parameters  
+
  `cchName`  
  [in] The size of the `szName` array.  
   
@@ -41,11 +43,13 @@ HRESULT GetName (
  [out] An array in which to store the name.  
   
 ## Remarks  
+
  If `szName` is non-null, the `GetName` method copies up to `cchName` characters (including the null terminator) into `szName`. If a non-null is returned in `pcchName`, the actual number of characters in the name (including the null terminator) is stored in the `szName` array.  
   
  The `GetName` method returns an S_OK HRESULT regardless of how many characters were copied.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  

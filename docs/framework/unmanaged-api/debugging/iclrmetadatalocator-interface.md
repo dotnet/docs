@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRMetadataLocator Interface
+
 Used by the data access services layer to locate metadata of assemblies in a target process.  
   
 ## Methods  
@@ -25,9 +26,11 @@ Used by the data access services layer to locate metadata of assemblies in a tar
 |[GetMetadata Method](iclrmetadatalocator-getmetadata-method.md)|Retrieves the metadata of an image from the target process.|  
   
 ## Remarks  
+
  The API client (that is, the debugger) must implement this interface as appropriate for the particular target process. For example, the implementation for a live process would be different from that of a memory dump.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  

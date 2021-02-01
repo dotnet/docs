@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 71809e3b-8147-4314-9c4c-e4a5bc9a5530
 ---
 # Array dimensions do not match those specified in the 'VBFixedArray' attribute
+
 Your array's dimensions do not match the dimensions you have specified in the `VBFixedArray` attribute.  
   
 ## To correct this error  

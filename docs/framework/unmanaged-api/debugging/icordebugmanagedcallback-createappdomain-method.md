@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback::CreateAppDomain Method
+
 Notifies the debugger that an application domain has been created.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT CreateAppDomain (
 ```  
   
 ## Parameters  
+
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process in which the application domain was created.  
   
@@ -36,6 +38,7 @@ HRESULT CreateAppDomain (
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain that has been created.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

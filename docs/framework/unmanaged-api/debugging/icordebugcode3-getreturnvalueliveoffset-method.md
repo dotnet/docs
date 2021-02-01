@@ -19,6 +19,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugCode3::GetReturnValueLiveOffset Method
+
 For a specified IL offset, gets the native offsets where a breakpoint should be placed so that the debugger can obtain the return value from a function.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT GetReturnValueLiveOffset(
 ```  
   
 ## Parameters  
+
  `ILoffset`  
  The IL offset. It must be a function call site or the function call will fail.  
   
@@ -46,6 +48,7 @@ HRESULT GetReturnValueLiveOffset(
  An array of native offsets. Typically, `pOffsets` contains a single offset, although a single IL instruction can map to multiple map to multiple `CALL` assembly instructions.  
   
 ## Remarks  
+
  This method is used along with the [ICorDebugILFrame3::GetReturnValueForILOffset](icordebugilframe3-getreturnvalueforiloffset-method.md) method to get the return value of a method that returns a reference type. Passing an IL offset to a function call site to this method returns one or more native offsets. The debugger can then set breakpoints on these native offsets in the function. When the debugger hits one of the breakpoints, you can then pass the same IL offset that you passed to this method to the [ICorDebugILFrame3::GetReturnValueForILOffset](icordebugilframe3-getreturnvalueforiloffset-method.md) method to get the return value. The debugger should then clear all the breakpoints that it set.  
   
 > [!WARNING]
@@ -62,6 +65,7 @@ HRESULT GetReturnValueLiveOffset(
  The `ICorDebugCode3::GetReturnValueLiveOffset` method is available only on x86-based and AMD64 systems.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

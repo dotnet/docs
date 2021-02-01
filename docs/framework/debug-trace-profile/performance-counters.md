@@ -10,9 +10,10 @@ ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 ---
 # Performance counters in the .NET Framework
 
-This topic provides a list of performance counters you can find in the [Windows Performance Monitor](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249%28v=ws.11%29).  
+This topic provides a list of performance counters you can find in the [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
 
 ## Exception performance counters  
+
  The Performance console .NET CLR Exceptions category includes counters that provide information about the exceptions thrown by an application. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -24,6 +25,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Throw to Catch Depth / Sec**|Displays the number of stack frames traversed, from the frame that threw the exception to the frame that handled the exception, per second. This counter resets to zero when an exception handler is entered, so nested exceptions show the handler-to-handler stack depth.<br /><br /> This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|  
 
 ## Interop performance counters  
+
  The Performance console .NET CLR Interop category includes counters that provide information about an application's interaction with COM components, COM+ services, and external type libraries. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -35,6 +37,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**# of TLB imports / sec**|Reserved for future use.|  
 
 ## JIT performance counters  
+
  The Performance console .NET CLR JIT category includes counters that provide information about code that has been JIT-compiled. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -47,6 +50,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Total # of IL Bytes Jitted**|Displays the total MSIL bytes JIT-compiled since the application started. This counter is equivalent to the **# of IL Bytes Jitted** counter.|  
 
 ## Loading performance counters  
+
  The Performance console .NET CLR Loading category includes counters that provide information about assemblies, classes, and application domains that are loaded. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -69,6 +73,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Total Classes Loaded**|Displays the cumulative number of classes loaded in all assemblies since the application started.|  
 
 ## Lock and thread performance counters  
+
  The Performance console .NET CLR LocksAndThreads category includes counters that provide information about managed locks and threads that an application uses. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -85,6 +90,7 @@ This topic provides a list of performance counters you can find in the [Windows 
 |**Total # of Contentions**|Displays the total number of times that threads in the runtime have attempted to acquire a managed lock unsuccessfully.|  
 
 ## Memory performance counters  
+
  The Performance console .NET CLR Memory category includes counters that provide information about the garbage collector. The following table describes these performance counters.  
   
 |Performance counter|Description|  
@@ -124,8 +130,8 @@ The Performance console .NET CLR Networking category includes counters that prov
 |**Connections Established**|The cumulative total number of <xref:System.Net.Sockets.Socket> objects for stream sockets that were ever connected within the <xref:System.AppDomain> since the process started.|  
 |**Datagrams Received**|The cumulative total number of datagram packets received by all <xref:System.Net.Sockets.Socket> objects within the <xref:System.AppDomain> since the process started.|  
 |**Datagrams Sent**|The cumulative total number of datagram packets sent by all <xref:System.Net.Sockets.Socket> objects within the <xref:System.AppDomain> since the process started.|  
-|**HttpWebRequest Average Lifetime**|The average time to completion for all <xref:System.Net.HttpWebRequest> objects that ended in the last interval within the <xref:System.AppDomain> since the process started.|  
-|**HttpWebRequest Average Queue Time**|The average time-on-queue for all <xref:System.Net.HttpWebRequest> objects that left the queue in the last interval within the <xref:System.AppDomain> since the process started.|  
+|**HttpWebRequests Average Lifetime**|The average time to completion for all <xref:System.Net.HttpWebRequest> objects that ended in the last interval within the <xref:System.AppDomain> since the process started.|  
+|**HttpWebRequests Average Queue Time**|The average time-on-queue for all <xref:System.Net.HttpWebRequest> objects that left the queue in the last interval within the <xref:System.AppDomain> since the process started.|  
 |**HttpWebRequests Created/sec**|The number of <xref:System.Net.HttpWebRequest> objects created per second within the <xref:System.AppDomain>.|  
 |**HttpWebRequests Queued/sec**|The number of <xref:System.Net.HttpWebRequest> objects that were added to the queue per second within the <xref:System.AppDomain>.|  
 |**HttpWebRequests Aborted/sec**|The number of <xref:System.Net.HttpWebRequest> objects where the application called the <xref:System.Net.HttpWebRequest.Abort%2A> method per second within the <xref:System.AppDomain>.|  
@@ -163,11 +169,11 @@ The networking performance counters for events include the following:
   
  There are two duration counters that measure how long it took for <xref:System.Net.HttpWebRequest> objects to pass through either their entire life cycle or just part of it:  
   
-- **HttpWebRequest Average Lifetime**  
+- **HttpWebRequests Average Lifetime**  
   
-- **HttpWebRequest Average Queue Time**  
+- **HttpWebRequests Average Queue Time**  
   
- For the **HttpWebRequest Average Lifetime** counter, the lifetime of most <xref:System.Net.HttpWebRequest> objects always starts with the time that the object is created up until the time that the response stream is closed by the application. There are two uncommon cases:  
+ For the **HttpWebRequests Average Lifetime** counter, the lifetime of most <xref:System.Net.HttpWebRequest> objects always starts with the time that the object is created up until the time that the response stream is closed by the application. There are two uncommon cases:  
   
 - If the application never calls the <xref:System.Net.HttpWebRequest.GetResponse%2A> or <xref:System.Net.HttpWebRequest.BeginGetResponse%2A> methods, then the lifetime of the <xref:System.Net.HttpWebRequest> object is ignored.  
   
@@ -212,6 +218,7 @@ for (int i = 0; i < Array.Length; i++)
  For more information on accessing and managing performance counters in an application, see [Performance Counters](performance-counters.md).  
 
 ## Security performance counters  
+
  The Performance console .NET CLR Security category includes counters that provide information about the security checks that the common language runtime performs for an application. The following table describes these performance counters.  
   
 |Performance counter|Description|  

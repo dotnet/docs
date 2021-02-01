@@ -13,3 +13,15 @@ Previously when overflows occurred, the result would be silently truncated. Now 
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

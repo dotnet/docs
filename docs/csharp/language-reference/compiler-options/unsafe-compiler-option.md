@@ -1,4 +1,5 @@
 ---
+description: "-unsafe (C# Compiler Options)"
 title: "-unsafe (C# Compiler Options)"
 ms.date: 04/25/2018
 f1_keywords: 

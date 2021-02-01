@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # EClrOperation Enumeration
+
 Describes the set of operations for which a host can apply policy actions.  
   
 ## Syntax  
@@ -45,6 +46,7 @@ typedef enum {
 |`OPR_ThreadRudeAbortInNonCriticalRegion`|The host can specify policy actions to be take when a rude thread abort occurs in a non-critical region of code.|  
   
 ## Remarks  
+
  The common language runtime (CLR) reliability infrastructure distinguishes between aborts and resource allocation failures that occur in critical regions of code and those that occur in non-critical regions of code. This distinction is designed to allow hosts to set different policies depending on where a failure occurs in the code.  
   
  A *critical region of code* is any space where the CLR cannot guarantee that aborting a task or failing to complete a request for resources will affect only the current task. For example, if a task is holding a lock and receives an HRESULT that indicates failure upon making a memory allocation request, it is insufficient simply to abort that task to ensure the stability of the <xref:System.AppDomain>, because the <xref:System.AppDomain> might contain other tasks waiting for the same lock. To abandon the current task might cause those other tasks to stop responding. In such a case, the host needs the ability to unload the entire <xref:System.AppDomain> rather than risk potential instability.  
@@ -54,6 +56,7 @@ typedef enum {
  The CLR also distinguishes between graceful and non-graceful (rude) aborts. In general, a normal or graceful abort makes every effort to run exception-handling routines and finalizers before aborting a task, while a rude abort makes no such guarantees.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

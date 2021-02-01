@@ -2,13 +2,12 @@
 title: "Timers"
 description: Learn what .NET timers to use in a multithreaded environment.
 ms.date: "07/03/2018"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
   - "cpp"
 helpviewer_keywords: 
-  - "threading [.NET Framework], timers"
+  - "threading [.NET], timers"
   - "timers, about timers"
 ms.assetid: 7091500d-be18-499b-a942-95366ce185e5
 author: "pkulikov"

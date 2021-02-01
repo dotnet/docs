@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 3012fa13-f650-45fb-aaea-c5cca8c7d372
 ---
 # Viewing Message Logs
+
 This topic describes how you can view message logs.  
   
 ## Viewing Message Logs in the Service Trace Viewer  
+
  A message will be transformed as it is processed by WCF. Therefore, a message being logged reflects only the message's content at the point it was logged, not the content on the wire.  
   
  Since the output of message logging has no relationship to the transfer format of the message, message logging always outputs the decoded message. If you have configured message logging properly, any logged message should be in plain text. For example, the format (plain text) of the logged messages is not affected by the usage of a binary message encoder.  
@@ -19,6 +21,7 @@ This topic describes how you can view message logs.
 > If a message has no header, no `<header/>` tag is logged.  
   
 ## Viewing Messages Logged by a Client, a Relay, and a Service  
+
  Your environment may contain a client, which sends a message to a relay, that subsequently forwards the message to the service. When message logging is enabled on all three locations, and all three message logs are viewed in [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) simultaneously, the message log exchanges will be incorrectly rendered. This is because the `CorrelationId` and `ActivityId` in the Message header are not unique for every send-receive pair.  
   
  You can use either one of the following methods to resolve this problem.  
@@ -42,6 +45,7 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
 ```  
   
 ## Exceptional Cases for Inaccurate Message Logging Content  
+
  Under the following conditions, messages being logged might not be the exact representation of the octet stream present on the wire.  
   
 - For BasicHttpBinding, envelope headers are logged for the incoming messages in the /addressing/none namespace.  

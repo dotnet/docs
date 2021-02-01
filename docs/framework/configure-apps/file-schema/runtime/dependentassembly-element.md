@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 14e95627-dd79-4b82-ac85-e682aa3a31d8
 ---
 # \<dependentAssembly> Element
+
 Encapsulates binding policy and assembly location for each assembly. Use one `dependentAssembly` element for each assembly.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,9 +27,11 @@ Encapsulates binding policy and assembly location for each assembly. Use one `de
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -49,6 +52,7 @@ Encapsulates binding policy and assembly location for each assembly. Use one `de
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Example  
+
  The following example shows how to encapsulate assembly information for two assemblies.  
   
 ```xml  

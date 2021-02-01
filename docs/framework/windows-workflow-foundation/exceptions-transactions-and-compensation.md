@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 694db4f9-7387-4b13-8f9f-b923b18c7490
 ---
 # Exceptions, Transactions, and Compensation
+
 [!INCLUDE[wf1](../../../includes/wf1-md.md)] provides several different mechanisms for handling run-time error conditions in workflows. Workflows can use a combination of exception handlers, transactions, cancellation, and compensation to handle and recover gracefully from error conditions.  
   
 ## In This Section  
+
  [Exceptions](exceptions.md)  
  Demonstrates how to use the <xref:System.Activities.Statements.TryCatch> activity to handle exceptions in a workflow.  
   

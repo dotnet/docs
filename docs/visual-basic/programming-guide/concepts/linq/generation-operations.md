@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 22b8e380-8eb0-4c93-b4ff-7ac21caf27d5
 ---
 # Generation Operations (Visual Basic)
+
 Generation refers to creating a new sequence of values.  
   
  The standard query operator methods that perform generation are listed in the following section.  

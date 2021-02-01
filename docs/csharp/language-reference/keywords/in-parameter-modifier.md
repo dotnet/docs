@@ -1,4 +1,5 @@
 ---
+description: "in parameter modifier - C# Reference"
 title: "in parameter modifier - C# Reference"
 ms.date: 03/19/2020
 helpviewer_keywords: 
@@ -115,6 +116,7 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 - The first argument of an extension method where that argument is a generic type (even when that type is constrained to be a struct.)
 
 ## C# Language Specification  
+
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also

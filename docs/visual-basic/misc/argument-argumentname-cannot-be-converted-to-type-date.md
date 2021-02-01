@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 928b8d75-f523-40c3-819a-03a1eb596ccc
 ---
 # Argument '\<argumentname>' cannot be converted to type 'Date'
+
 A conversion attempted to change a variable to type `Date`, but the value is not recognized as a valid date.  
   
 ## To correct this error  

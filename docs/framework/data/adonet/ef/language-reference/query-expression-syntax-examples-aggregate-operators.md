@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: d729120c-4c1b-4f34-bbe9-33694fca2dde
 ---
 # Query Expression Syntax Examples: Aggregate Operators
+
 The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.Average%2A>, <xref:System.Linq.Enumerable.Count%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Min%2A>, and <xref:System.Linq.Enumerable.Sum%2A> methods to query the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) using query expression syntax. The AdventureWorks Sales Model used in these examples is built from the Contact, Address, Product, SalesOrderHeader, and SalesOrderDetail tables in the AdventureWorks sample database.  
   
  The examples in this topic use the following `using`/`Imports` statements:  
@@ -17,18 +18,21 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Average  
   
 ### Example  
+
  The following example uses the <xref:System.Linq.Enumerable.Average%2A> method to find the average list price of the products of each style.  
   
  [!code-csharp[DP L2E Examples#Average2_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#average2_mq)]
  [!code-vb[DP L2E Examples#Average2_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#average2_mq)]  
   
 ### Example  
+
  The following example uses <xref:System.Linq.Enumerable.Average%2A> to get the average total due for each contact ID.  
   
  [!code-csharp[DP L2E Examples#AverageGrouped_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#averagegrouped_mq)]
  [!code-vb[DP L2E Examples#AverageGrouped_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#averagegrouped_mq)]  
   
 ### Example  
+
  The following example uses <xref:System.Linq.Enumerable.Average%2A> to get the orders with the average total due for each contact.  
   
  [!code-csharp[DP L2E Examples#AverageElements_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#averageelements_mq)]
@@ -37,12 +41,14 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Count  
   
 ### Example  
+
  The following example uses <xref:System.Linq.Enumerable.Count%2A> to return a list of contact IDs and how many orders each has.  
   
  [!code-csharp[DP L2E Examples#CountNested](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#countnested)]
  [!code-vb[DP L2E Examples#CountNested](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#countnested)]  
   
 ### Example  
+
  The following example groups products by color and uses <xref:System.Linq.Enumerable.Count%2A> to return the number of products in each color group.  
   
  [!code-csharp[DP L2E Examples#CountGrouped](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#countgrouped)]
@@ -51,12 +57,14 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Max  
   
 ### Example  
+
  The following example uses the <xref:System.Linq.Enumerable.Max%2A> method to get the largest total due for each contact ID.  
   
  [!code-csharp[DP L2E Examples#MaxGrouped_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#maxgrouped_mq)]
  [!code-vb[DP L2E Examples#MaxGrouped_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#maxgrouped_mq)]  
   
 ### Example  
+
  The following example uses the <xref:System.Linq.Enumerable.Max%2A> method to get the orders with the largest total due for each contact ID.  
   
  [!code-csharp[DP L2E Examples#MaxElements_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#maxelements_mq)]
@@ -65,12 +73,14 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Min  
   
 ### Example  
+
  The following example uses the <xref:System.Linq.Enumerable.Min%2A> method to get the smallest total due for each contact ID.  
   
  [!code-csharp[DP L2E Examples#MinGrouped_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#mingrouped_mq)]
  [!code-vb[DP L2E Examples#MinGrouped_MQ](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#mingrouped_mq)]  
   
 ### Example  
+
  The following example uses the <xref:System.Linq.Enumerable.Min%2A> method to get the orders with the smallest total due for each contact.  
   
  [!code-csharp[DP L2E Examples#MinElements_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#minelements_mq)]
@@ -79,6 +89,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Sum  
   
 ### Example  
+
  The following example uses the <xref:System.Linq.Enumerable.Sum%2A> method to get the total due for each contact ID.  
   
  [!code-csharp[DP L2E Examples#SumGrouped_MQ](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS/Program.cs#sumgrouped_mq)]

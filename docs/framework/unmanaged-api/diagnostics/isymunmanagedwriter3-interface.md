@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter3 Interface
+
 Represents a symbol writer, and provides methods to define documents, sequence points, lexical scopes, and variables. This interface extends the [ISymUnmanagedWriter](isymunmanagedwriter-interface.md) interface.  
   
 ## Methods  
@@ -26,6 +27,7 @@ Represents a symbol writer, and provides methods to define documents, sequence p
 |[OpenMethod2 Method](isymunmanagedwriter3-openmethod2-method.md)|Opens a method and provides its real section offset in the image.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

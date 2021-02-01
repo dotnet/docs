@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
 ---
 # Default NetTcpBinding
+
 This sample demonstrates the use of the <xref:System.ServiceModel.NetTcpBinding> binding. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service. In this sample, the service is self-hosted. Both the client and service are console applications.  
   
 > [!NOTE]

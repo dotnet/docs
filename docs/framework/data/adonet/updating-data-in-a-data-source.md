@@ -7,11 +7,13 @@ dev_langs:
 ms.assetid: 55c545e5-dcd5-4323-a5b9-3825c2157462
 ---
 # Updating Data in a Data Source
+
 SQL statements that modify data (such as INSERT, UPDATE, or DELETE) do not return rows. Similarly, many stored procedures perform an action but do not return rows. To execute commands that do not return rows, create a **Command** object with the appropriate SQL command and a **Connection**, including any required **Parameters**. Execute the command with the **ExecuteNonQuery** method of the **Command** object.  
   
  The **ExecuteNonQuery** method returns an integer that represents the number of rows affected by the statement or stored procedure that was executed. If multiple statements are executed, the value returned is the sum of the records affected by all of the statements executed.  
   
 ## Example  
+
  The following code example executes an INSERT statement to insert a record into a database using **ExecuteNonQuery**.  
   
 ```vb  

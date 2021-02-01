@@ -19,13 +19,13 @@ Use this checklist to be sure that network isolation is configured for your Wind
   
 4. Deploy and run your app to test it using the network isolation tools provided for troubleshooting.  
   
-For more detailed information on how to configure network capabilities and isolation tools used for troubleshooting network isolation, see [How to configure network isolation capabilities](https://docs.microsoft.com/previous-versions/windows/apps/hh770532(v=win.10)) in the Windows 8.x Store developer documentation.
+For more detailed information on how to configure network capabilities and isolation tools used for troubleshooting network isolation, see [How to configure network isolation capabilities](/previous-versions/windows/apps/hh770532(v=win.10)) in the Windows 8.x Store developer documentation.
   
 ## See also
 
-- [Connecting to a web service](https://docs.microsoft.com/previous-versions/windows/apps/hh761504(v=win.10))
-- [Guidelines and checklist for network isolation](https://docs.microsoft.com/previous-versions/windows/apps/hh770532(v=win.10))
-- [Quickstart: Connecting using HttpClient](https://docs.microsoft.com/previous-versions/windows/apps/hh781239(v=win.10))
-- [How to use HttpClient handlers](https://docs.microsoft.com/previous-versions/windows/apps/hh781241(v=win.10))
-- [How to secure HttpClient connections](https://docs.microsoft.com/previous-versions/windows/apps/hh781240(v=win.10))
+- [Connecting to a web service](/previous-versions/windows/apps/hh761504(v=win.10))
+- [Guidelines and checklist for network isolation](/previous-versions/windows/apps/hh770532(v=win.10))
+- [Quickstart: Connecting using HttpClient](/previous-versions/windows/apps/hh781239(v=win.10))
+- [How to use HttpClient handlers](/previous-versions/windows/apps/hh781241(v=win.10))
+- [How to secure HttpClient connections](/previous-versions/windows/apps/hh781240(v=win.10))
 - [HttpClient Sample](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664)

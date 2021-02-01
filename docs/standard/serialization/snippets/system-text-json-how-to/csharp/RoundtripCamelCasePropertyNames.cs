@@ -8,26 +8,29 @@ namespace SystemTextJsonSamples
         public static void Run()
         {
             string jsonString;
-            WeatherForecastWithPropertyNameAttribute weatherForecast = WeatherForecastFactories.CreateWeatherForecastWithPropertyNameAttribute();
+            WeatherForecastWithPropertyNameAttribute weatherForecast =
+                WeatherForecastFactories.CreateWeatherForecastWithPropertyNameAttribute();
             weatherForecast.DisplayPropertyValues();
 
-            // <SnippetSerialize>
+            // <Serialize>
             var serializeOptions = new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);
-            // </SnippetSerialize>
+            // </Serialize>
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
-            // <SnippetDeserialize>
+            // <Deserialize>
             var deserializeOptions = new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithPropertyNameAttribute>(jsonString, deserializeOptions);
-            // </SnippetDeserialize>
+            weatherForecast =
+                JsonSerializer.Deserialize<WeatherForecastWithPropertyNameAttribute>(
+                    jsonString, deserializeOptions);
+            // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }
     }

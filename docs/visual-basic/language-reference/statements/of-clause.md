@@ -19,9 +19,11 @@ helpviewer_keywords:
 ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
 ---
 # Of Clause (Visual Basic)
+
 Introduces an `Of` clause, which identifies a *type parameter* on a *generic* class, structure, interface, delegate, or procedure. For information on generic types, see [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md).  
   
 ## Using the Of Keyword  
+
  The following code example uses the `Of` keyword to define the outline of a class that takes two type parameters. It *constrains* the `keyType` parameter by the <xref:System.IComparable> interface, which means the consuming code must supply a type argument that implements <xref:System.IComparable>. This is necessary so that the `add` procedure can call the <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> method. For more information on constraints, see [Type List](type-list.md).  
   
 ```vb  

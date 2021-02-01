@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 00a787af-1876-473c-a48d-f52b51e28a3f
 ---
 # Using Performance Counters
+
 This sample demonstrates how to access Windows Communication Foundation (WCF) performance counters and how to create user-defined performance counters. This sample is based on the [Getting Started](getting-started-sample.md).  
   
 > [!NOTE]
@@ -72,4 +73,4 @@ This sample demonstrates how to access Windows Communication Foundation (WCF) pe
   
 ## See also
 
-- [AppFabric Monitoring Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [AppFabric Monitoring Samples](/previous-versions/appfabric/ff383407(v=azure.10))

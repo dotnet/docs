@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 651c73e4-dca8-402b-9c6b-e3902b3a3f4b
 ---
 # Objects (Visual Basic)
+
 This topic provides links to other topics that document the Visual Basic run-time objects and contain tables of their member procedures, properties, and events.  
   
 ## Visual Basic Run-time Objects  

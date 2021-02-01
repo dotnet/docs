@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: f3a93fa7-1717-467d-aaff-393e5c9828b4
 ---
 # How to: Add Trace Statements to Application Code
+
 The methods used most often for tracing are the methods for writing output to listeners: **Write**, **WriteIf**, **WriteLine**, **WriteLineIf**, **Assert**, and **Fail**. These methods can be divided into two categories: **Write**, **WriteLine**, and **Fail** all emit output unconditionally, whereas **WriteIf**, **WriteLineIf**, and **Assert** test a Boolean condition, and write or do not write based on the value of the condition. **WriteIf** and **WriteLineIf** emit output if the condition is `true`, and **Assert** emits output if the condition is `false`.  
   
  When designing your tracing and debugging strategy, you should think about how you want the output to look. Multiple **Write** statements filled with unrelated information will create a log that is difficult to read. On the other hand, using **WriteLine** to put related statements on separate lines may make it difficult to distinguish what information belongs together. In general, use multiple **Write** statements when you want to combine information from multiple sources to create a single informative message, and use the **WriteLine** statement when you want to create a single, complete message.  

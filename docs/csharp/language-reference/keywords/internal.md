@@ -1,4 +1,5 @@
 ---
+description: "internal - C# Reference"
 title: "internal - C# Reference"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -9,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461
 ---
 # internal (C# Reference)
+
 The `internal` keyword is an [access modifier](./access-modifiers.md) for types and type members.
   
  > This page covers `internal` access. The `internal` keyword is also part of the [`protected internal`](./protected-internal.md) access modifier.
@@ -32,6 +34,7 @@ public class BaseClass
  It is an error to reference a type or a member with internal access outside the assembly within which it was defined.  
   
 ## Example  
+
  This example contains two files, `Assembly1.cs` and `Assembly1_a.cs`. The first file contains an internal base class, `BaseClass`. In the second file, an attempt to instantiate `BaseClass` will produce an error.  
   
 ```csharp  
@@ -56,6 +59,7 @@ class TestAccess
 ```  
   
 ## Example  
+
  In this example, use the same files you used in example 1, and change the accessibility level of `BaseClass` to `public`. Also change the accessibility level of the member `intM` to `internal`. In this case, you can instantiate the class, but you cannot access the internal member.  
   
 ```csharp  

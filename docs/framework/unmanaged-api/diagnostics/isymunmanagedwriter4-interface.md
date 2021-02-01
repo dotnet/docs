@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4af5e8c0-987d-405e-b934-8b9e70fcae6e
 ---
 # ISymUnmanagedWriter4 Interface
+
 ISymUnmanagedWriter4 interface.  
   
 ## Syntax  
@@ -13,6 +14,7 @@ ISymUnmanagedWriter4 interface.
 ```  
   
 ## Methods  
+
  This interface contains the following methods:  
   
 |Method|Description|  
@@ -20,6 +22,7 @@ ISymUnmanagedWriter4 interface.
 |[GetDebugInfoWithPadding Method](isymunmanagedwriter4-getdebuginfowithpadding-method.md)|Functions the same as [GetDebugInfo Method](isymunmanagedwriter-getdebuginfo-method.md) except that the path string is padded with zeros following the terminating null character to make the string data a fixed size of `MAX_PATH`. Padding is only given if the path string length itself is less than `MAX_PATH`.<br /><br /> This makes it easier to write tools that difference PE files.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

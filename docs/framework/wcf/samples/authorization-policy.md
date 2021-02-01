@@ -454,7 +454,7 @@ The following provides a brief overview of the different sections of the batch f
 
 1. Launch Client.exe from *\client\bin*. Client activity is displayed on the client console application.
 
-If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
 
 ### To run the sample across computers
 
@@ -494,7 +494,7 @@ If the client and service are not able to communicate, see [Troubleshooting Tips
 
 14. On the client computer, launch Client.exe from a command prompt window.
 
-    If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+    If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
 
 ### Clean up after the sample
 

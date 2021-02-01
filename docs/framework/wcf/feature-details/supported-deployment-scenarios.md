@@ -29,7 +29,7 @@ In addition to SOAP messaging using one of the supported SOAP bindings, WCF supp
 
 Workflow Services require Full Trust permissions and cannot be used in partially trusted applications.
 
-For more information, see [How to: Use Medium Trust in ASP.NET 2.0](https://docs.microsoft.com/previous-versions/msp-n-p/ff648344(v=pandp.10)).
+For more information, see [How to: Use Medium Trust in ASP.NET 2.0](/previous-versions/msp-n-p/ff648344(v=pandp.10)).
 
 ## Partial trust on the client
 
@@ -40,6 +40,6 @@ WCF can be used to communicate with remote servers from within partially trusted
 ## See also
 
 - [Code Access Security](../../misc/code-access-security.md)
-- [Windows Presentation Foundation Browser-Hosted Applications Overview](../../wpf/app-development/wpf-xaml-browser-applications-overview.md)
+- [Windows Presentation Foundation Browser-Hosted Applications Overview](/dotnet/desktop/wpf/app-development/wpf-xaml-browser-applications-overview)
 - [Partial Trust](partial-trust.md)
-- [ASP.NET Trust Levels and Policy Files](https://docs.microsoft.com/previous-versions/wyts434y(v=vs.140))
+- [ASP.NET Trust Levels and Policy Files](/previous-versions/wyts434y(v=vs.140))

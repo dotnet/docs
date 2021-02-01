@@ -43,7 +43,7 @@ A field declared with the static modifier defines a static field. A static field
 
 A field declared without the static modifier defines an instance field. Every instance of a class contains a separate copy of all the instance fields of that class.
 
-In the following example, each instance of the `Color` class has a separate copy of the `r`, `g`, and `b` instance fields, but there's only one copy of the `Black`, `White`, `Red`, `Green`, and `Blue` static fields:
+In the following example, each instance of the `Color` class has a separate copy of the `R`, `G`, and `B` instance fields, but there's only one copy of the `Black`, `White`, `Red`, `Green`, and `Blue` static fields:
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ColorClassDefinition":::
 
@@ -62,7 +62,7 @@ The *signature* of a method must be unique in the class in which the method is d
 When a method body is a single expression, the method can be defined using a compact expression format, as shown in the following example:
 
 ```csharp
-public override ToString() => "This is an object";
+public override string ToString() => "This is an object";
 ```
 
 ### Parameters
@@ -131,7 +131,7 @@ When an instance method declaration includes a `virtual` modifier, the method is
 
 When a virtual method is invoked, the *run-time type* of the instance for which that invocation takes place determines the actual method implementation to invoke. In a nonvirtual method invocation, the *compile-time type* of the instance is the determining factor.
 
-A virtual method can be *overridden* in a derived class. When an instance method declaration includes an override modifier, the method overrides an inherited virtual method with the same signature. Aa virtual method declaration introduces a new method. An override method declaration specializes an existing inherited virtual method by providing a new implementation of that method.
+A virtual method can be *overridden* in a derived class. When an instance method declaration includes an override modifier, the method overrides an inherited virtual method with the same signature. A virtual method declaration introduces a new method. An override method declaration specializes an existing inherited virtual method by providing a new implementation of that method.
 
 An *abstract method* is a virtual method with no implementation. An abstract method is declared with the `abstract` modifier and is permitted only in an abstract class. An abstract method must be overridden in every non-abstract derived class.
 
@@ -183,11 +183,9 @@ Unlike other members, instance constructors aren't inherited. A class has no ins
 
 *Properties* are a natural extension of fields. Both are named members with associated types, and the syntax for accessing fields and properties is the same. However, unlike fields, properties don't denote storage locations. Instead, properties have *accessors* that specify the statements executed when their values are read or written.
 
-A property is declared like a field, except that the declaration ends with a get accessor or a set accessor written between the delimiters `{` and `}` instead of ending in a semicolon. A property that has both a get accessor and a set accessor is a *read-write property*, a property that has only a get accessor is a *read-only property*, and a property that has only a set accessor is a *write-only property*.
+A property is declared like a field, except that the declaration ends with a get accessor or a set accessor written between the delimiters `{` and `}` instead of ending in a semicolon. A property that has both a get accessor and a set accessor is a *read-write property*. A property that has only a get accessor is a *read-only property*. A property that has only a set accessor is a *write-only property*.
 
 A get accessor corresponds to a parameterless method with a return value of the property type. A set accessor corresponds to a method with a single parameter named value and no return type. The get accessor computes the value of the property. The set accessor provides a new value for the property. When the property is the target of an assignment, or the operand of `++` or `--`, the set accessor is invoked. In other cases where the property is referenced, the get accessor is invoked.
-
- When a property is referenced as the target of an assignment or as the operand of ++ or --, the set accessor is invoked with an argument that provides the new value.
 
 The `MyList<T>` class declares two properties, `Count` and `Capacity`, which are read-only and read-write, respectively. The following code is an example of use of these properties:
 

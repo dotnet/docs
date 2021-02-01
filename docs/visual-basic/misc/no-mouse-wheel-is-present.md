@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: e924ffba-4af1-4247-9a6f-d19a03738f62
 ---
 # No mouse wheel is present
+
 The `My.Computer.Mouse.WheelScrollLines` property was called, but the mouse has no scroll wheel.  
   
 ## To correct this error  

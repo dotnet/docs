@@ -2,12 +2,11 @@
 title: "How to: Compress and extract files"
 description: Compress & extract files using System.IO.Compression. See examples using ZipFile, ZipArchive, ZipArchiveEntry, DeflateStream, & GZipStream.
 ms.date: "01/14/2019"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "I/O [.NET Framework], compression"
+  - "I/O [.NET], compression"
   - "compression"
   - "compress files"
 ms.assetid: e9876165-3c60-4c84-a272-513e47acf579

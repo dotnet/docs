@@ -31,6 +31,7 @@ _dependentPackages/
 
 # Visual Studio 2019
 .vs
+UpgradeLog*.htm
 
 # Windows thumbnail cache files
 Thumbs.db
@@ -44,3 +45,6 @@ ehthumbs_vista.db
 [Oo]bj/
 *.sln
 *.user
+
+# Ionide folder, used in F# for VSCode
+.ionide/

@@ -13,3 +13,15 @@ In order for the application to benefit from these changes, it must run on the .
 | Scope   |Major|
 |Version|4.8|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

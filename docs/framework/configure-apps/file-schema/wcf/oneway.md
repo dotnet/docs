@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 00e67e0e-77c0-4695-9138-c0997b0e5f3c
 ---
 # \<oneWay>
+
 Enables packet routing and the use of one-way methods for a custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ Enables packet routing and the use of one-way methods for a custom binding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -46,6 +48,7 @@ Enables packet routing and the use of one-way methods for a custom binding.
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  To enable packet routing, a one-way conversion layer is required, which this element provides. A user can create a custom binding that layers this binding over a session-aware or request-reply transport to make it packet routable. This element is also useful when you want to expose one-way methods in a more native fashion. More transformations can be applied over this layer, such as Composite Duplex and Reliable Messaging.  
   
 ## See also

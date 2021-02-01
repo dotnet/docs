@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page # Required
   author: cartermp
   ms.author: phcart
-  ms.date: 11/25/2019
+  ms.date: 08/29/2020
 
 landingContent:
   - title: "Learn to program in F#"
@@ -28,7 +28,10 @@ landingContent:
         links:
           - text: Download the .NET Core SDK
             url: https://dotnet.microsoft.com/download
-
+      - linkListType: get-started
+        links:
+          - text: F# on Q&A
+            url: /answers/topics/dotnet-fsharp.html
   - title: "F# fundamentals"
     linkLists:
       - linkListType: overview
@@ -56,6 +59,8 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: "What's new in F# 5.0"
+            url: whats-new/fsharp-50.md
           - text: "What's new in F# 4.7"
             url: whats-new/fsharp-47.md
           - text: "What's new in F# 4.6"
@@ -77,3 +82,16 @@ landingContent:
             url: language-reference/functions/index.md
           - text: "F# types"
             url: language-reference/fsharp-types.md
+  - title: "F# Tools"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "F# Interactive"
+            url: tools/fsharp-interactive/index.md
+
+  - title: "F# Core Library reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "FSharp.Core API reference"
+            url: https://fsharp.github.io/fsharp-core-docs/

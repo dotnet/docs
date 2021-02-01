@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: d0fd0d26-fe86-443b-b208-4d57d39fa4aa
 ---
 # Interoperability with Enterprise Services and COM+ Transactions
+
 The <xref:System.Transactions> namespace supports interoperability between transaction objects created using this namespace and transactions created through COM+.  
   
  You can use the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration when you create a new <xref:System.Transactions.TransactionScope> instance to specify the level of interoperability with COM+.  
@@ -12,6 +13,7 @@ The <xref:System.Transactions> namespace supports interoperability between trans
  By default, when your application code checks the static <xref:System.Transactions.Transaction.Current%2A> property, <xref:System.Transactions> attempts to look for a transaction that is otherwise current, or a <xref:System.Transactions.TransactionScope> object that dictates that <xref:System.Transactions.Transaction.Current%2A> is **null**. If it cannot find either one of these, <xref:System.Transactions> queries the COM+ context for a transaction. Note that even though <xref:System.Transactions> may find a transaction from the COM+ context, it still favors transactions that are native to <xref:System.Transactions>.  
   
 ## Interoperability levels  
+
  The <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration defines the following levels of interoperability—<xref:System.Transactions.EnterpriseServicesInteropOption.None>, <xref:System.Transactions.EnterpriseServicesInteropOption.Full> and <xref:System.Transactions.EnterpriseServicesInteropOption.Automatic>.  
   
  The <xref:System.Transactions.TransactionScope> class provides constructors that accept <xref:System.Transactions.EnterpriseServicesInteropOption> as a parameter.  

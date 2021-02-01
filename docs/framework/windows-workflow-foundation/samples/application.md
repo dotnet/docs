@@ -5,9 +5,11 @@ ms.date: "03/30/2017"
 ms.assetid: 22d27e12-ab04-432b-9695-9f74e098cff3
 ---
 # Application
+
 This section contains samples related to workflow applications in Windows Workflow Foundation (WF).  
   
 ## In This Section  
+
  [Document Approval Process](document-approval-process.md)  
  Demonstrates using a workflow in a line-of-business application.  
   

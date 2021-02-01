@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5076644b-1f33-4f26-9488-87de9fcda04c
 ---
 # \<protocolMapping>
+
 Represents a configuration section for defining a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings. When creating default endpoints at runtime, Windows Communication Foundation (WCF) looks at the configured mappings and decides on which binding to use for a particular based address.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,9 +22,11 @@ Represents a configuration section for defining a set of default protocol mappin
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -39,6 +42,7 @@ Represents a configuration section for defining a set of default protocol mappin
 |[\<system.serviceModel>](system-servicemodel.md)|The root element of all WCF configuration elements.|  
   
 ## Example  
+
  The following configuration example shows the default protocol mapping in the machine.config file. You can override this default mapping at the machine level by modifying the machine.config file. Or if you would only like to override it within the scope of an application, you can override this section within your application configuration file and change the mapping for individual protocol schemes.  
   
 ```xml  

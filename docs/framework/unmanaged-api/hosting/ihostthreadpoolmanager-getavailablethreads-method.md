@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostThreadPoolManager::GetAvailableThreads Method
+
 Gets the number of threads in the thread pool that are not currently processing work items.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetAvailableThreads (
 ```  
   
 ## Parameters  
+
  `pdwAvailableWorkerThreads`  
  [out] Pointer to the number of threads in the thread pool that are not currently processing work items.  
   
@@ -44,9 +46,11 @@ HRESULT GetAvailableThreads (
 |E_NOTIMPL|The host does not provide an implementation of `GetAvailableThreads`.|  
   
 ## Remarks  
+
  If the host does not provide an implementation of `GetAvailableThreads`, it should return an HRESULT value of E_NOTIMPL.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

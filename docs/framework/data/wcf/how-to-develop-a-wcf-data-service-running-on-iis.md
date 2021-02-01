@@ -12,6 +12,8 @@ ms.assetid: f6f768c5-4989-49e3-a36f-896ab4ded86e
 ---
 # How to: Develop a WCF data service running on IIS
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 This article shows how to use WCF Data Services to create a data service that's based on the Northwind sample database that's hosted by an ASP.NET Web app running on Internet Information Services (IIS). For an example of how to create the same Northwind data service as an ASP.NET Web app that runs on the ASP.NET Development Server, see the [WCF Data Services quickstart](quickstart-wcf-data-services.md).
 
 > [!NOTE]
@@ -126,7 +128,7 @@ After you create the service, you must explicitly provide access to data service
 
 5. Connect the data model to the database by doing one of the following steps, and then click **Next**:
 
-    - If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)). This SQL Server instance must have the Northwind sample database attached.
+    - If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)). This SQL Server instance must have the Northwind sample database attached.
 
          \- or -
 

@@ -1,4 +1,5 @@
 ---
+description: "true and false operators - C# reference"
 title: "true and false operators - C# reference"
 ms.date: 12/10/2018
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "=> operator - C# reference"
 title: "=> operator - C# reference"
 ms.date: 01/22/2019
 f1_keywords: 

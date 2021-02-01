@@ -101,7 +101,7 @@ You unsubscribe using the `-=` operator:
 fileLister.Progress -= onProgress;
 ```
 
-It's important to note that I declared a local variable for the expression that
+It's important that you declare a local variable for the expression that
 represents the event handler. That ensures the unsubscribe removes the handler.
 If, instead, you used the body of the lambda expression, you are attempting
 to remove a handler that has never been attached, which does nothing.

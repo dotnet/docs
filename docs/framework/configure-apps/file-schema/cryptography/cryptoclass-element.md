@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 03db52ef-010e-44ea-b6fd-b9c900ecad50
 ---
 # \<cryptoClass> Element
+
 Contains a cryptography class that has a mapping to a friendly name in the [\<nameEntry>](nameentry-element.md) element.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
 |`customClassName`|Required attribute.<br /><br /> Contains the information for the cryptography class. Use this attribute to provide a short name for your class. You must specify a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -48,6 +51,7 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
 |`mscorlib`|Contains the [\<cryptographySettings>](cryptographysettings-element.md) element.|  
   
 ## Example  
+
  The following example shows how use the **\<cryptoClass>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
 ```xml  

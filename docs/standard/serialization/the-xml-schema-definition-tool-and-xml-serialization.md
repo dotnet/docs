@@ -28,4 +28,4 @@ For more information about using the tool, see [XML Schema Definition Tool (Xsd.
 - [How to: Serialize an Object](how-to-serialize-an-object.md)
 - [How to: Deserialize an Object](how-to-deserialize-an-object.md)
 - [How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents](xml-schema-def-tool-gen.md)
-- [XML Schema Binding Support](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sh1e66zd(v=vs.100))
+- [XML Schema Binding Support](/previous-versions/dotnet/netframework-4.0/sh1e66zd(v=vs.100))

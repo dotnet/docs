@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # CreateVersionStringFromModule Function
+
 Creates a version string from a common language runtime (CLR) path in a target process.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT CreateVersionStringFromModule (
 ```  
   
 ## Parameters  
+
  `pidDebuggee`  
  [in] Identifier of the process in which the target CLR is loaded.  
   
@@ -50,6 +52,7 @@ HRESULT CreateVersionStringFromModule (
  [out] Length of the version string returned by `pBuffer`.  
   
 ## Return Value  
+
  S_OK  
  The version string for the target CLR was successfully returned in `pBuffer`.  
   
@@ -66,11 +69,13 @@ HRESULT CreateVersionStringFromModule (
  `pidDebuggee` does not refer to a valid process, or other failure.  
   
 ## Remarks  
+
  This function accepts a CLR process that is identified by `pidDebuggee` and a string path that is specified by `szModuleName`. The version string is returned in the buffer that `pBuffer` points to. This string is opaque to the function user; that is, there is no intrinsic meaning in the version string itself. It is used solely in the context of this function and the [CreateDebuggingInterfaceFromVersion function](createdebugginginterfacefromversion-function-for-silverlight.md).  
   
  This function should be called twice. When you call it the first time, pass null for both `pBuffer` and `cchBuffer`. When you do this, the size of the buffer necessary for `pBuffer` will be returned in `pdwLength`. You can then call the function a second time, and pass the buffer in `pBuffer` and its size in `cchBuffer`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  

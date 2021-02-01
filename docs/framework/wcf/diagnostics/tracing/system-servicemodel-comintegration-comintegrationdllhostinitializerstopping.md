@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: adb9c902-f932-4d88-8eb1-06fd93f7afb2
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStopping
+
 System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerStopping  
   
 ## Description  
+
  ComPlus: Stopping the DllHost initializer.  
   
 ## See also

@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
 ---
 # Yield Statement (Visual Basic)
+
 Sends the next element of a collection to a `For Each...Next` statement.  
   
 ## Syntax  
@@ -25,6 +26,7 @@ Yield expression
 |`expression`|Required. An expression that is implicitly convertible to the type of the iterator function or `Get` accessor that contains the `Yield` statement.|  
   
 ## Remarks  
+
  The `Yield` statement returns one element of a collection at a time. The `Yield` statement is included in an iterator function or `Get` accessor, which perform custom iterations over a collection.  
   
  You consume an iterator function by using a [For Each...Next Statement](for-each-next-statement.md) or a LINQ query. Each iteration of the `For Each` loop calls the iterator function. When a `Yield` statement is reached in the iterator function, `expression` is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator function is called.  
@@ -38,6 +40,7 @@ Yield expression
  For more information about iterator functions and `Get` accessors, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
 ## Iterator Functions and Get Accessors  
+
  The declaration of an iterator function or `Get` accessor must meet the following requirements:  
   
 - It must include an [Iterator](../modifiers/iterator.md) modifier.  
@@ -51,6 +54,7 @@ Yield expression
  An iterator function can be an anonymous function. For more information, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
 ## Exception Handling  
+
  A `Yield` statement can be inside a `Try` block of a [Try...Catch...Finally Statement](try-catch-finally-statement.md). A `Try` block that has a `Yield` statement can have `Catch` blocks, and can have a `Finally` block.  
   
  A `Yield` statement cannot be inside a `Catch` block or a `Finally` block.  
@@ -58,6 +62,7 @@ Yield expression
  If the `For Each` body (outside of the iterator function) throws an exception, a `Catch` block in the iterator function is not executed, but a `Finally` block in the iterator function is executed. A `Catch` block inside an iterator function catches only exceptions that occur inside the iterator function.  
   
 ## Technical Implementation  
+
  The following code returns an `IEnumerable (Of String)` from an iterator function and then iterates through the elements of the `IEnumerable (Of String)`.  
   
 ```vb  
@@ -74,6 +79,7 @@ Next
  On each subsequent iteration of the `For Each` loop, the execution of the iterator body continues from where it left off, again stopping when it reaches a `Yield` statement. The `For Each` loop completes when the end of the iterator function or a `Return` or `Exit Function` statement is reached.  
   
 ## Example  
+
  The following example has a `Yield` statement that is inside a [For…Next](for-next-statement.md) loop. Each iteration of the [For Each](for-each-next-statement.md) statement body in `Main` creates a call to the `Power` iterator function. Each call to the iterator function proceeds to the next execution of the `Yield` statement, which occurs during the next iteration of the `For…Next` loop.  
   
  The return type of the iterator method is <xref:System.Collections.Generic.IEnumerable%601>, an iterator interface type. When the iterator method is called, it returns an enumerable object that contains the powers of a number.  
@@ -81,6 +87,7 @@ Next
  [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## Example  
+
  The following example demonstrates a `Get` accessor that is an iterator. The property declaration includes an `Iterator` modifier.  
   
  [!code-vb[VbVbalrStatements#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  

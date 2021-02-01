@@ -15,9 +15,9 @@ helpviewer_keywords:
   - "ServiceProcessInstaller class, service application code model"
   - "Windows Service applications, states"
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
-author: "ghogen"
 ---
 # Service Application Programming Architecture
+
 Windows Service applications are based on a class that inherits from the <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType> class. You override methods from this class and define functionality for them to determine how your service behaves.  
   
  The main classes involved in service creation are:  
@@ -29,6 +29,7 @@ Windows Service applications are based on a class that inherits from the <xref:S
  In addition, a class named <xref:System.ServiceProcess.ServiceController> can be used to manipulate the service itself. This class is not involved in the creation of a service, but can be used to start and stop the service, pass commands to it, and return a series of enumerations.  
   
 ## Defining Your Service's Behavior  
+
  In your service class, you override base class functions that determine what happens when the state of your service is changed in the Services Control Manager. The <xref:System.ServiceProcess.ServiceBase> class exposes the following methods, which you can override to add custom behavior.  
   
 |Method|Override to|  

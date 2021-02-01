@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 64889319-a057-471b-85d8-69fcd4af6230
 ---
 # Bit Shift Operators (Visual Basic)
+
 The following are the bit shift operators defined in Visual Basic.  
   
  [<\< Operator](left-shift-operator.md)  

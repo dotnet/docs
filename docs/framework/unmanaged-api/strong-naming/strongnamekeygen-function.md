@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameKeyGen Function
+
 Creates a new public/private key pair for strong name use.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyGen](../hosting/iclrstrongname-strongnamekeygen-method.md) method instead.  
@@ -32,6 +33,7 @@ BOOLEAN StrongNameKeyGen (
 ```  
   
 ## Parameters  
+
  `wszKeyContainer`  
  [in] The requested key container name. `wszKeyContainer` must be a non-empty string, or null to generate a temporary name.  
   
@@ -49,14 +51,17 @@ BOOLEAN StrongNameKeyGen (
  [out] The size, in bytes, of `ppbKeyBlob`.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
+
  The `StrongNameKeyGen` function creates a 1024-bit key. After the key is retrieved, you should call the [StrongNameFreeBuffer](strongnamefreebuffer-function.md) function to release the allocated memory.  
   
  If the `StrongNameKeyGen` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

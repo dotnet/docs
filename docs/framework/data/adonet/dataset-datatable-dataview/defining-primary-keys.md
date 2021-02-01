@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 2ea85959-e763-4669-8bd9-46a9dab894bd
 ---
 # Defining Primary Keys
+
 A database table commonly has a column or group of columns that uniquely identifies each row in the table. This identifying column or group of columns is called the primary key.  
   
  When you identify a single <xref:System.Data.DataColumn> as the <xref:System.Data.DataTable.PrimaryKey%2A> for a <xref:System.Data.DataTable>, the table automatically sets the <xref:System.Data.DataColumn.AllowDBNull%2A> property of the column to **false** and the <xref:System.Data.DataColumn.Unique%2A> property to **true**. For multiple-column primary keys, only the **AllowDBNull** property is automatically set to **false**.  

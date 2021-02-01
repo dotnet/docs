@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 53a59fb6-dede-47ec-9384-b3c2e8f0c1fa
 ---
 # \<extensions> section
+
 This configuration section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,9 +29,11 @@ This configuration section contains a collection of extensions, which enable the
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

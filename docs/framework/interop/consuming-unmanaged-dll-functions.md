@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: eca7606e-ebfb-4f47-b8d9-289903fdc045
 ---
 # Consuming Unmanaged DLL Functions
+
 Platform invoke is a service that enables managed code to call unmanaged functions implemented in dynamic link libraries (DLLs), such as those in the Windows API. It locates and invokes an exported function and marshals its arguments (integers, strings, arrays, structures, and so on) across the interoperation boundary as needed.  
   
  This section introduces tasks associated with consuming unmanaged DLL functions and provides more information about platform invoke. In addition to the following tasks, there are general considerations and a link providing additional information and examples.  
@@ -45,6 +46,7 @@ Platform invoke is a service that enables managed code to call unmanaged functio
  For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
   
 ## A closer look at platform invoke  
+
  Platform invoke relies on metadata to locate exported functions and marshal their arguments at run time. The following illustration shows this process.  
   
  ![Diagram that shows a platform invoke call.](./media/consuming-unmanaged-dll-functions/platform-invoke-call.gif)  

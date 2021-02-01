@@ -17,6 +17,7 @@ topic_type:
 ---
 
 # CreateClassEnumWmi function
+
 Returns an enumerator for all classes that satisfy the specified selection criteria.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]

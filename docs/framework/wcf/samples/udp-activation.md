@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7
 ---
 # UDP Activation
+
 This sample is based on the [Transport: UDP](transport-udp.md) sample. It extends the [Transport: UDP](transport-udp.md) sample to support process activation using the Windows Process Activation Service (WAS).  
   
  The sample consists of three major pieces:  
@@ -15,6 +16,7 @@ This sample is based on the [Transport: UDP](transport-udp.md) sample. It extend
 - A service (hosted in a worker process activated by WAS) that receives messages over the UDP custom transport.  
   
 ## UDP Protocol Activator  
+
  The UDP Protocol Activator is a bridge between the WCF client and the WCF service. It provides data communication through the UDP protocol at the transport layer. It has two major functions:  
   
 - WAS Listener Adapter (LA), which collaborates with WAS to activate processes in response to incoming messages.  
@@ -24,6 +26,7 @@ This sample is based on the [Transport: UDP](transport-udp.md) sample. It extend
  The activator must be running as a standalone program on the server machine. Normally, WAS listener adapters (such as the NetTcpActivator and the NetPipeActivator) are implemented in long-running Windows services. However, for simplicity and clarity, this sample implements the protocol activator as a standalone application.  
   
 ### WAS Listener Adapter  
+
  The WAS Listener Adapter for UDP is implemented in the `UdpListenerAdapter` class. It is the module that interacts with WAS to perform application activation for the UDP protocol. This is achieved by calling the following Webhost APIs:  
   
 - `WebhostRegisterProtocol`  
@@ -47,15 +50,19 @@ This sample is based on the [Transport: UDP](transport-udp.md) sample. It extend
 ```  
   
 ### Protocol Listener  
+
  The UDP protocol listener is a module inside the protocol activator that listens at a UDP endpoint on behalf of the virtual application. It is implemented in the class `UdpSocketListener`. The endpoint is represented as `IPEndpoint` for which the port number is extracted from the binding of the protocol for the site.  
   
 ### Control Service  
+
  In this sample, we use WCF to communicate between the activator and the WAS worker process. The service that resides in the activator is called the Control Service.  
   
 ## Protocol Handlers  
+
  After the listener adapter calls `WebhostOpenListenerChannelInstance`, the WAS process manager starts the worker process if it is not started. The application manager inside the worker process then loads the UDP Process Protocol Handler (PPH) with the request for that `ListenerChannelId`. The PPH in turns calls `IAdphManager`.`StartAppDomainProtocolListenerChannel` to start the UDP AppDomain Protocol Handler (ADPH).  
   
 ## HostedUDPTransportConfiguration  
+
  The information is registered in the Web.config as follows:  
   
 ```xml  
@@ -65,6 +72,7 @@ This sample is based on the [Transport: UDP](transport-udp.md) sample. It extend
 ```  
   
 ## Special Setup for This Sample  
+
  This sample can be only built and run on Windows Vista, Windows Server 2008, or Windows 7. To run the sample, you must first get all of the components set up correctly. Use the following steps to install the sample.  
   
 #### To set up this sample  
@@ -95,6 +103,7 @@ This sample is based on the [Transport: UDP](transport-udp.md) sample. It extend
     > When you are finished with this sample, you must run Cleanup.bat to remove the net.udp binding from the "Default Web Site".  
   
 ## Sample Usage  
+
  After compilation, there are four different binaries generated:  
   
 - Client.exe: The client code. The App.config is compiled into the client configuration file Client.exe.config.  

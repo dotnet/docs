@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 037f3991-7bbc-424b-b52e-8b03585d3e34
 ---
 # DiffGrams
+
 A DiffGram is an XML format that identifies current and original versions of data elements. The <xref:System.Data.DataSet> uses the DiffGram format to load and persist its contents, and to serialize its contents for transport across a network connection. When a <xref:System.Data.DataSet> is written as a DiffGram, it populates the DiffGram with all the necessary information to accurately recreate the contents, though not the schema, of the <xref:System.Data.DataSet>, including column values from both the **Original** and **Current** row versions, row error information, and row order.  
   
  When sending and retrieving a <xref:System.Data.DataSet> from an XML Web service, the DiffGram format is implicitly used. Additionally, when loading the contents of a <xref:System.Data.DataSet> from XML using the **ReadXml** method, or when writing the contents of a <xref:System.Data.DataSet> in XML using the **WriteXml** method, you can specify that the contents be read or written as a DiffGram. For more information, see [Loading a DataSet from XML](loading-a-dataset-from-xml.md) and [Writing DataSet Contents as XML Data](writing-dataset-contents-as-xml-data.md).  
@@ -39,6 +40,7 @@ A DiffGram is an XML format that identifies current and original versions of dat
 > If you set the <xref:System.Data.XmlWriteMode> to Diffgram, the content of the target <xref:System.Data.DataSet> and the original <xref:System.Data.DataSet> may differ.  
   
 ## DiffGram Format  
+
  The DiffGram format is divided into three sections: the current data, the original (or "before") data, and an errors section, as shown in the following example.  
   
 ```xml  
@@ -71,6 +73,7 @@ A DiffGram is an XML format that identifies current and original versions of dat
  This block of the DiffGram format contains error information for a particular row in the ***DataInstance*** block. Elements in this block are matched to elements in the ***DataInstance*** block using the **diffgr:id** annotation.  
   
 ## DiffGram Annotations  
+
  DiffGrams use several annotations to relate elements from the different DiffGram blocks that represent different row versions or error information in the <xref:System.Data.DataSet>.  
   
  The following table describes the DiffGram annotations that are defined in the DiffGram namespace **urn:schemas-microsoft-com:xml-diffgram-v1**.  
@@ -91,6 +94,7 @@ A DiffGram is an XML format that identifies current and original versions of dat
 |**Hidden**|Identifies a column as having a **ColumnMapping** property set to **MappingType.Hidden**. The attribute is written in the format **msdata:hidden** *[ColumnName]*="*value*". For example: `<Customers diffgr:id="Customers1" msdata:hiddenContactTitle="Owner">`.<br /><br /> Note that hidden columns are only written as a DiffGram attribute if they contain data. Otherwise, they are ignored.|  
   
 ## Sample DiffGram  
+
  An example of the DiffGram format is shown below. This example shows the result of an update to a row in a table before the changes have been committed. The row with a CustomerID of "ALFKI" has been modified, but not updated. As a result, there is a **Current** row with a **diffgr:id** of "Customers1" in the **\<** ***DataInstance*** **>** block, and an **Original** row with a **diffgr:id** of "Customers1" in the **\<diffgr:before>** block. The row with a CustomerID of "ANATR" includes a **RowError**, so it is annotated with `diffgr:hasErrors="true"` and there is a related element in the **\<diffgr:errors>** block.  
   
 ```xml  

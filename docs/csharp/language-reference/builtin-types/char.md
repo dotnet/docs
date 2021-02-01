@@ -1,4 +1,5 @@
 ---
+description: Learn about the built-in character type in C#
 title: "char type - C# reference"
 ms.date: 05/11/2020
 f1_keywords:
@@ -30,7 +31,7 @@ You can specify a `char` value with:
 - a Unicode escape sequence, which is `\u` followed by the four-symbol hexadecimal representation of a character code.
 - a hexadecimal escape sequence, which is `\x` followed by the hexadecimal representation of a character code.
 
-[!code-csharp-interactive[char literals](snippets/CharType.cs#Literals)]
+[!code-csharp-interactive[char literals](snippets/shared/CharType.cs#Literals)]
 
 As the preceding example shows, you can also cast the value of a character code into the corresponding `char` value.
 

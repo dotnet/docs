@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
@@ -13,20 +11,31 @@ namespace SystemTextJsonSamples
             var wf = WeatherForecastFactories.CreateWeatherForecast();
             wf.DisplayPropertyValues();
 
-            // <SnippetSerialize>
-            var serializeOptions = new JsonSerializerOptions();
-            serializeOptions.Converters.Add(new WeatherForecastCallbacksConverter());
-            serializeOptions.WriteIndented = true;
+            // <Serialize>
+            var serializeOptions = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Converters =
+                {
+                    new WeatherForecastCallbacksConverter()
+                }
+            };
+            
             jsonString = JsonSerializer.Serialize(wf, serializeOptions);
-            // </SnippetSerialize>
+            // </Serialize>
 
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
-            // <SnippetDeserialize>
-            var deserializeOptions = new JsonSerializerOptions();
-            deserializeOptions.Converters.Add(new WeatherForecastCallbacksConverter());
+            // <Deserialize>
+            var deserializeOptions = new JsonSerializerOptions
+            {
+                Converters =
+                {
+                    new WeatherForecastCallbacksConverter()
+                }
+            };
             wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, deserializeOptions);
-            // <SnippetDeserialize>
+            // <Deserialize>
 
             wf.DisplayPropertyValues();
         }

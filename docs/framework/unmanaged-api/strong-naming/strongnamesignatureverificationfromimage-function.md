@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameSignatureVerificationFromImage Function
+
 Verifies that an assembly that has already been mapped to memory is valid for the associated public key.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameVerificationFromImage](../hosting/iclrstrongname-strongnamesignatureverificationfromimage-method.md) method instead.  
@@ -32,6 +33,7 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
 ```  
   
 ## Parameters  
+
  `pbBase`  
  [in] The relative virtual address of the mapped assembly manifest.  
   
@@ -59,12 +61,15 @@ BOOLEAN StrongNameSignatureVerificationFromImage (
 - `SN_OUTFLAG_WAS_VERIFIED` (0x00000001) - This value is set to `false` to specify that the verification succeeded due to registry settings.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
+
  If the `StrongNameSignatureVerificationFromImage` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

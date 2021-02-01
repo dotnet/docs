@@ -1,16 +1,16 @@
 ---
-title: "What's New in Windows Workflow Foundation in .NET 4.5"
+title: "What's New in Windows Workflow Foundation in .NET Framework 4.5"
 description: Windows Workflow Foundation in .NET Framework 4.5 introduces many new features, such as new activities, designer capabilities, and workflow development models.
 ms.date: "03/30/2017"
 ms.assetid: 195c43a8-e0a8-43d9-aead-d65a9e6751ec
 ---
 
-# What's New in Windows Workflow Foundation in .NET 4.5
+# What's New in Windows Workflow Foundation in .NET Framework 4.5
 
-Windows Workflow Foundation (WF) in .NET Framework 4.5 introduces many new features, such as new activities, designer capabilities, and workflow development models. Many, but not all, of the new workflow features introduced in .NET Framework 4.5 are supported in the re-hosted workflow designer. For more information about the new features that are supported, see [Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer](wf-features-in-the-rehosted-workflow-designer.md). For more information about migrating .NET 3.0 and .NET 3.5 workflow applications to use the latest version, see [Migration Guidance](migration-guidance.md). This topic provides an overview of the new workflow features introduced in .NET Framework 4.5.
+Windows Workflow Foundation (WF) in .NET Framework 4.5 introduces many new features, such as new activities, designer capabilities, and workflow development models. Many, but not all, of the new workflow features introduced in .NET Framework 4.5 are supported in the re-hosted workflow designer. For more information about the new features that are supported, see [Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer](wf-features-in-the-rehosted-workflow-designer.md). For more information about migrating .NET Framework 3.0 and .NET Framework 3.5 workflow applications to use the latest version, see [Migration Guidance](migration-guidance.md). This article provides an overview of the new workflow features introduced in .NET Framework 4.5.
 
 > [!WARNING]
-> The new Windows Workflow Foundation features introduced in .NET Framework 4.5 are not available for projects that target previous versions of the framework. If a project that targets .NET Framework 4.5 is re-targeted to a previous version of the framework, several issues can occur.
+> The new Windows Workflow Foundation features introduced in .NET Framework 4.5 are not available for projects that target previous versions of the framework. If a project that targets .NET Framework 4.5 is retargeted to a previous version of the framework, several issues can occur.
 >
 > - C# expressions will be replaced in the designer with the message **Value was set in XAML**.
 > - Many build errors will occur, including the following error.
@@ -76,7 +76,7 @@ Workflows in .NET Framework 4 required a fully trusted application domain. In .N
 
 7. Expressions cannot be compiled using <xref:System.Activities.XamlIntegration.TextExpressionCompiler> or the Visual Basic hosted compiler in partial trust, but previously compiled expressions can be run.
 
-8. A single assembly that uses [Level 2 Transparency](https://aka.ms/Level2Transparency) cannot be used in .NET Framework 4, [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in full trust, and [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in partial trust.
+8. A single assembly that uses [Level 2 Transparency](../misc/security-transparent-code-level-2.md) cannot be used in .NET Framework 4, [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in full trust, and [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in partial trust.
 
 ## <a name="BKMK_NewDesignerCapabilites"></a> New Designer Capabilities
 
@@ -216,7 +216,7 @@ In addition to flowchart and sequential workflow development models, this releas
 
 ### <a name="BKMK_StateMachine"></a> State machine workflows
 
-State machine workflows were introduced as part of the .NET Framework 4, version 4.0.1 in the [Microsoft .NET Framework 4 Platform Update 1](https://docs.microsoft.com/archive/blogs/endpoint/microsoft-net-framework-4-platform-update-1). This update included several new classes and activities which allowed developers to create state machine workflows. These classes and activities have been updated for .NET Framework 4.5. Updates include:
+State machine workflows were introduced as part of the .NET Framework 4, version 4.0.1 in the [Microsoft .NET Framework 4 Platform Update 1](/archive/blogs/endpoint/microsoft-net-framework-4-platform-update-1). This update included several new classes and activities which allowed developers to create state machine workflows. These classes and activities have been updated for .NET Framework 4.5. Updates include:
 
 1. The ability to set breakpoints on states
 

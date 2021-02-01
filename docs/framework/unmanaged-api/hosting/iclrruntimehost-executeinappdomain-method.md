@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeHost::ExecuteInAppDomain Method
+
 Specifies the <xref:System.AppDomain> in which to execute the specified managed code.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT ExecuteInAppDomain(
 ```  
   
 ## Parameters  
+
  `AppDomainId`  
  [in] The numeric ID of the <xref:System.AppDomain> in which to execute the specified method.  
   
@@ -51,9 +53,11 @@ HRESULT ExecuteInAppDomain(
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  `ExecuteInAppDomain` allows the host to exercise control over which managed <xref:System.AppDomain> the specified managed method should be executed in. You can get the value of an application domain's identifier, which corresponds to the value of the <xref:System.AppDomain.Id%2A> property, by calling [GetCurrentAppDomainId Method](iclrruntimehost-getcurrentappdomainid-method.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

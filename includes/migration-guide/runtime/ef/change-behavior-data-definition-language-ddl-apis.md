@@ -13,3 +13,15 @@ These changes make it easier to build tools and applications that use the DDL AP
 | Scope   |Minor|
 |Version|4.5|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

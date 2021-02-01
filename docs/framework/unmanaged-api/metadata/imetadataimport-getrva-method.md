@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetRVA Method
+
 Gets the relative virtual address (RVA) and the implementation flags of the method or field represented by the specified token.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetRVA (
 ```  
   
 ## Parameters  
+
  `tk`  
  [in] A MethodDef or FieldDef metadata token that represents the code object to return the RVA for. If the token is a FieldDef, the field must be a global variable.  
   
@@ -40,6 +42,7 @@ HRESULT GetRVA (
  [out] A pointer to the implementation flags for the method. This value is a bitmask from the [CorMethodImpl](cormethodimpl-enumeration.md) enumeration. The value of `pdwImplFlags` is valid only if `tk` is a MethodDef token.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

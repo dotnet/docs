@@ -1,4 +1,5 @@
 ---
+description: "C# Compiler Options Listed by Category"
 title: "C# Compiler Options Listed by Category"
 ms.date: 06/04/2020
 helpviewer_keywords: 
@@ -35,7 +36,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-target](target-compiler-option.md)|Specifies the format of the output file using one of the following options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md), or [-target:winmdobj](target-winmdobj-compiler-option.md).|
 |-modulename:\<string>|Specify the name of the source module|
 
-## .NET Framework Assemblies
+## .NET Assemblies
 
 |Option|Purpose|
 |------------|-------------|
@@ -79,7 +80,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |------------|-------------|
 |[-link](link-compiler-option.md)|Makes COM type information in specified assemblies available to the project.|
 |[-linkresource](linkresource-compiler-option.md)|Creates a link to a managed resource.|
-|[-resource](resource-compiler-option.md)|Embeds a .NET Framework resource into the output file.|
+|[-resource](resource-compiler-option.md)|Embeds a .NET resource into the output file.|
 |[-win32icon](win32icon-compiler-option.md)|Specifies an .ico file to insert into the output file.|
 |[-win32res](win32res-compiler-option.md)|Specifies a Win32 resource to insert into the output file.|
 

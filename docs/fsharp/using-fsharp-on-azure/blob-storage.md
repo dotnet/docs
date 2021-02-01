@@ -1,12 +1,13 @@
 ---
-title: Get started with Azure Blob storage using F#
-description: Store unstructured data in the cloud with Azure Blob storage.
+title: Get started with Azure Blob Storage using F#
+description: Store unstructured data in the cloud with Azure Blob Storage.
 author: sylvanc
 ms.date: 09/20/2016
+ms.custom: "devx-track-fsharp"
 ---
-# Get started with Azure Blob storage using F\#
+# Get started with Azure Blob Storage using F\#
 
-Azure Blob storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
+Azure Blob Storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
 
 This article shows you how to perform common tasks using Blob storage. The samples are written using F# using the Azure Storage Client Library for .NET. The tasks covered include how to upload, list, download, and delete blobs.
 
@@ -36,7 +37,7 @@ For the tutorial, you enter your connection string in your script, like this:
 
 [!code-fsharp[BlobStorage](~/samples/snippets/fsharp/azure/blob-storage.fsx#L11-L11)]
 
-However, this is **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
+However, this is **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure portal if you believe it may have been compromised.
 
 For real applications, the best way to maintain your storage connection string is in a configuration file. To fetch the connection string from a configuration file, you can do this:
 
@@ -92,7 +93,7 @@ To list the blobs in a container, first get a container reference. You can then 
 
 [!code-fsharp[BlobStorage](~/samples/snippets/fsharp/azure/blob-storage.fsx#L67-L80)]
 
-You can also name blobs with path information in their names. This creates a virtual directory structure that you can organize and traverse as you would a traditional file system. Note that the directory structure is virtual only - the only resources available in Blob storage are containers and blobs. However, the storage client library offers a `CloudBlobDirectory` object to refer to a virtual directory and simplify the process of working with blobs that are organized in this way.
+You can also name blobs with path information in their names. This creates a virtual directory structure that you can organize and traverse as you would a traditional file system. The directory structure is virtual only - the only resources available in Blob storage are containers and blobs. However, the storage client library offers a `CloudBlobDirectory` object to refer to a virtual directory and simplify the process of working with blobs that are organized in this way.
 
 For example, consider the following set of block blobs in a container named `photos`:
 
@@ -168,7 +169,7 @@ Now, call the routine. You use `Async.RunSynchronously` to force the execution o
 
 ## Writing to an append blob
 
-An append blob is optimized for append operations, such as logging. Like a block blob, an append blob is comprised of blocks, but when you add a new block to an append blob, it is always appended to the end of the blob. You cannot update or delete an existing block in an append blob. The block IDs for an append blob are not exposed as they are for a block blob.
+An append blob is optimized for append operations, such as logging. Like a block blob, an append blob is composed of blocks, but when you add a new block to an append blob, it is always appended to the end of the blob. You cannot update or delete an existing block in an append blob. The block IDs for an append blob are not exposed as they are for a block blob.
 
 Each block in an append blob can be a different size, up to a maximum of 4 MB, and an append blob can include a maximum of 50,000 blocks. The maximum size of an append blob is therefore slightly more than 195 GB (4 MB X 50,000 blocks).
 
@@ -176,7 +177,7 @@ The following example creates a new append blob and appends some data to it, sim
 
 [!code-fsharp[BlobStorage](~/samples/snippets/fsharp/azure/blob-storage.fsx#L174-L203)]
 
-See [Understanding Block Blobs, Page Blobs, and Append Blobs](https://msdn.microsoft.com/library/azure/ee691964.aspx) for more information about the differences between the three types of blobs.
+See [Understanding Block Blobs, Page Blobs, and Append Blobs](/rest/api/storageservices/Understanding-Block-Blobs--Append-Blobs--and-Page-Blobs) for more information about the differences between the three types of blobs.
 
 ## Concurrent access
 
@@ -184,7 +185,7 @@ To support concurrent access to a blob from multiple clients or multiple process
 
 - **Etag** - provides a way to detect that the blob or container has been modified by another process
 
-- **Lease** - provides a way to obtain exclusive, renewable, write or delete access to a blob for a period of time
+- **Lease** - provides a way to obtain exclusive, renewable, write, or delete access to a blob for a period of time
 
 For more information, see [Managing Concurrency in Microsoft Azure Storage](https://azure.microsoft.com/blog/managing-concurrency-in-microsoft-azure-storage-2/).
 
@@ -202,7 +203,7 @@ A container name must be a valid DNS name, conforming to the following naming ru
 1. All letters in a container name must be lowercase.
 1. Container names must be from 3 through 63 characters long.
 
-Note that the name of a container must always be lowercase. If you include an upper-case letter in a container name, or otherwise violate the container naming rules, you may receive a 400 error (Bad Request).
+The name of a container must always be lowercase. If you include an upper-case letter in a container name, or otherwise violate the container naming rules, you may receive a 400 error (Bad Request).
 
 ## Managing security for blobs
 
@@ -223,7 +224,7 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 ### Tools
 
 - [F# AzureStorageTypeProvider](https://fsprojects.github.io/AzureStorageTypeProvider/)\
-An F# Type Provider which can be used to explore Blob, Table and Queue Azure Storage assets and easily apply CRUD operations on them.
+An F# Type Provider that can be used to explore Blob, Table, and Queue Azure Storage assets and easily apply CRUD operations on them.
 
 - [FSharp.Azure.Storage](https://github.com/fsprojects/FSharp.Azure.Storage)\
 An F# API for using Microsoft Azure Table Storage service
@@ -238,8 +239,8 @@ A free, standalone app from Microsoft that enables you to work visually with Azu
 
 ### Related guides
 
-- [Azure Blob Storage Samples for .NET](https://docs.microsoft.com/samples/azure-samples/storage-blob-dotnet-getting-started/storage-blob-dotnet-getting-started/)
+- [Azure Blob Storage Samples for .NET](/samples/azure-samples/storage-blob-dotnet-getting-started/storage-blob-dotnet-getting-started/)
 - [Get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
-- [Azure Storage Team Blog](https://docs.microsoft.com/archive/blogs/windowsazurestorage/)
+- [Azure Storage Team Blog](/archive/blogs/windowsazurestorage/)
 - [Quickstart: Use .NET to create a blob in object storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet)

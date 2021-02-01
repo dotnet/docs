@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
 ---
 # How to: Call a Procedure That Returns a Value (Visual Basic)
+
 A `Function` procedure returns a value to the calling code. You call it by including its name and arguments either on the right side of an assignment statement or in an expression.  
   
 ### To call a Function procedure within an expression  
@@ -34,6 +35,7 @@ A `Function` procedure returns a value to the calling code. You call it by inclu
 4. The value returned from the procedure is stored in the variable or property on the left side of the assignment statement.  
   
 ## Example  
+
  The following example calls the Visual Basic <xref:Microsoft.VisualBasic.Interaction.Environ%2A> to retrieve the value of an operating system environment variable. The first line calls `Environ` within an expression, and the second line calls it in an assignment statement. `Environ` takes the variable name as its sole argument. It returns the variable's value to the calling code.  
   
  [!code-vb[VbVbcnProcedures#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#7)]  

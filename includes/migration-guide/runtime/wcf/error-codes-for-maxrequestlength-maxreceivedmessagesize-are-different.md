@@ -13,3 +13,15 @@ This change facilitates debugging in cases where the message length exceeds the 
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

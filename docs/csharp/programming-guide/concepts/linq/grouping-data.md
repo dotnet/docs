@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: e414e9e4-343a-4e6e-858f-4a30c5e64492
 ---
 # Grouping Data (C#)
+
 Grouping refers to the operation of putting data into groups so that the elements in each group share a common attribute.  
   
  The following illustration shows the results of grouping a sequence of characters. The key for each group is the character.  
@@ -21,6 +22,7 @@ Grouping refers to the operation of putting data into groups so that the element
 |ToLookup|Inserts elements into a <xref:System.Linq.Lookup%602> (a one-to-many dictionary) based on a key selector function.|Not applicable.|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|  
   
 ## Query Expression Syntax Example  
+
  The following code example uses the `group by` clause to group integers in a list according to whether they are even or odd.  
   
 ```csharp  

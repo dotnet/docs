@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugController::Stop Method
+
 Performs a cooperative stop on all threads that are running managed code in the process.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT Stop (
 ```  
   
 ## Parameters  
+
  `dwTimeoutIgnored`  
  Not used.  
   
 ## Remarks  
+
  `Stop` performs a cooperative stop on all threads running managed code in the process. During a managed-only debugging session, unmanaged threads may continue to run (but will be blocked when trying to call managed code). During an interop debugging session, unmanaged threads will also be stopped. The `dwTimeoutIgnored` value is currently ignored and treated as INFINITE (-1). If the cooperative stop fails due to a deadlock, all threads are suspended and E_TIMEOUT is returned.  
   
 > [!NOTE]
@@ -40,6 +43,7 @@ HRESULT Stop (
  The debugger maintains a stop counter. When the counter goes to zero, the controller is resumed. Each call to `Stop` or each dispatched callback increments the counter. Each call to `ICorDebugController::Continue` decrements the counter.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

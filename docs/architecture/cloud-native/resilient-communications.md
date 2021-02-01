@@ -25,7 +25,7 @@ You can address these concerns with different libraries and frameworks, but the 
 
 ## Service mesh
 
-A better approach is an evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and the other challenges mentioned above. It decouples these concerns by moving them into a service proxy. The proxy is deployed into a separate process (called a [sidecar](https://docs.microsoft.com/azure/architecture/patterns/sidecar)) to provide isolation from business code. However, the sidecar is linked to the service - it's created with it and shares its lifecycle. Figure 6-7 shows this scenario.
+A better approach is an evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and the other challenges mentioned above. It decouples these concerns by moving them into a service proxy. The proxy is deployed into a separate process (called a [sidecar](/azure/architecture/patterns/sidecar)) to provide isolation from business code. However, the sidecar is linked to the service - it's created with it and shares its lifecycle. Figure 6-7 shows this scenario.
 
 ![Service mesh with a side car](./media/service-mesh-with-side-car.png)
 
@@ -69,28 +69,28 @@ As previously discussed, Envoy is deployed as a sidecar to each microservice in 
 
 The Azure cloud embraces Istio and provides direct support for it within Azure Kubernetes Services. The following links can help you get started:
 
-- [Installing Istio in AKS](https://docs.microsoft.com/azure/aks/istio-install)
-- [Using AKS and Istio](https://docs.microsoft.com/azure/aks/istio-scenario-routing)
+- [Installing Istio in AKS](/azure/aks/istio-install)
+- [Using AKS and Istio](/azure/aks/istio-scenario-routing)
 
 ### References
 
 - [Polly](http://www.thepollyproject.org/)
 
-- [Retry pattern](https://docs.microsoft.com/azure/architecture/patterns/retry)
+- [Retry pattern](/azure/architecture/patterns/retry)
 
-- [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
+- [Circuit Breaker pattern](/azure/architecture/patterns/circuit-breaker)
 
 - [Resilience in Azure whitepaper](https://azure.microsoft.com/mediahandler/files/resourcefiles/resilience-in-azure-whitepaper/Resilience%20in%20Azure.pdf)
 
 - [network latency](https://www.techopedia.com/definition/8553/network-latency)
 
-- [Redundancy](https://docs.microsoft.com/azure/architecture/guide/design-principles/redundancy)
+- [Redundancy](/azure/architecture/guide/design-principles/redundancy)
 
-- [geo-replication](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication)
+- [geo-replication](/azure/sql-database/sql-database-active-geo-replication)
 
-- [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
+- [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview)
 
-- [Autoscaling guidance](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling)
+- [Autoscaling guidance](/azure/architecture/best-practices/auto-scaling)
 
 - [Istio](https://istio.io/docs/concepts/what-is-istio/)
 

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4f8a7c4f-e735-4987-979a-b74fcdae2652
 ---
 # \<serviceHostingEnvironment>
+
 This element defines the type the service hosting environment instantiates for a particular transport. If this element is empty, the default type is used. This element can only be used at the application or machine level configuration files.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,6 +32,7 @@ This element defines the type the service hosting environment instantiates for a
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -56,6 +58,7 @@ This element defines the type the service hosting environment instantiates for a
 |serviceModel|The root element of all Windows Communication Foundation (WCF) configuration elements.|  
   
 ## Remarks  
+
  By default, WCF services run side-by-side with ASP.NET in hosted Application Domains (AppDomain). Even though WCF and ASP.NET can coexist in the same AppDomain, WCF requests are not processed by the ASP.NET HTTP Pipeline by default. As a result, several elements of the ASP.NET application platform are not available to WCF services. These include  
   
 - ASP.NET File/URL Authorization  
@@ -79,6 +82,7 @@ This element defines the type the service hosting environment instantiates for a
 - WCF requests are processed by the ASP.NET pipeline. HttpModules that have been configured to act on incoming requests can also process WCF requests. These can include ASP.NET platform components (e.g., <xref:System.Web.SessionState.SessionStateModule>), as well as custom third party modules.  
   
 ## Example  
+
  The following code sample shows how to enable ASP Compatibility Mode.  
   
 ## Code  

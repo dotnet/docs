@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: eedf2fbd-f407-4f62-bb1a-c00eb001b1dd
 ---
 # Method-Based Query Syntax Examples: Element Operators (LINQ to DataSet)
+
 The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.First%2A> and <xref:System.Linq.Enumerable.ElementAt%2A> methods to get <xref:System.Data.DataRow> elements from a <xref:System.Data.DataSet> using the query expression syntax.  
   
  The `FillDataSet` method used in these examples is specified in [Loading Data Into a DataSet](loading-data-into-a-dataset.md).  
@@ -23,6 +24,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## ElementAt  
   
 ### Example  
+
  This example uses the <xref:System.Linq.Enumerable.ElementAt%2A> method to retrieve the fifth address where `PostalCode` == "M4B 1V7".  
   
 [!code-csharp[DP LINQ to DataSet Examples#ElementAt](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#elementat)]
@@ -31,6 +33,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## First  
   
 ### Example  
+
  This example uses the <xref:System.Linq.Enumerable.First%2A> method to return the first contact whose first name is 'Brooke'.  
   
 [!code-csharp[DP LINQ to DataSet Examples#FirstSimple](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#firstsimple)]

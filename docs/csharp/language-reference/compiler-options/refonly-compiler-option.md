@@ -1,4 +1,5 @@
 ---
+description: "-refonly (C# Compiler Options)"
 title: "-refonly (C# Compiler Options)"
 ms.date: 07/08/2017
 f1_keywords: 

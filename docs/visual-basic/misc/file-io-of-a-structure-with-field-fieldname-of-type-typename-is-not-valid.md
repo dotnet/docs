@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 028e936f-6210-4290-adb2-46298e13e160
 ---
 # File I/O of a structure with field '\<fieldname>' of type '\<typename>' is not valid
+
 The structure you are attempting to write to a file contains an unsupported type.  
   
 ## To correct this error  

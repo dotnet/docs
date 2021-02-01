@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: b36ce28a-2fe4-4236-b782-e5f7c054deae
 ---
 # Comparison Semantics (Entity SQL)
+
 Performing any of the following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] operators involves comparison of type instances:  
   
 ## Explicit comparison  
+
  Equality operations:  
   
 - =  
@@ -30,6 +32,7 @@ Performing any of the following [!INCLUDE[esql](../../../../../../includes/esql-
 - IS NOT NULL  
   
 ## Explicit distinction  
+
  Equality distinction:  
   
 - DISTINCT  
@@ -41,6 +44,7 @@ Performing any of the following [!INCLUDE[esql](../../../../../../includes/esql-
 - ORDER BY  
   
 ## Implicit distinction  
+
  Set operations and predicates (equality):  
   
 - UNION  
@@ -58,6 +62,7 @@ Performing any of the following [!INCLUDE[esql](../../../../../../includes/esql-
 - IN  
   
 ## Supported Combinations  
+
  The following table shows all the supported combinations of comparison operators for each kind of type:  
   
 |**Type**|**=**<br /><br /> **!=**|**GROUP BY**<br /><br /> **DISTINCT**|**UNION**<br /><br /> **INTERSECT**<br /><br /> **EXCEPT**<br /><br /> **SET**<br /><br /> **OVERLAPS**|**IN**|**<   <=**<br /><br /> **>   >=**|**ORDER BY**|**IS NULL**<br /><br /> **IS NOT NULL**|  

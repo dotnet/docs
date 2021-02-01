@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 683413c5-0312-4e60-8619-9a97bdc6e62a
 ---
 # Data Types and Functions
+
 The topics listed in the following table describe LINQ to SQL support for members, constructs, and casts of the common language runtime (CLR). Supported members and constructs are available to use in your LINQ to SQL queries.  
   
  An unsupported item in the table means that LINQ to SQL cannot translate the CLR member, construct, or cast for execution on the SQL Server. You may still be able to use them in your code, but they must be evaluated before the query is translated to Transact-SQL or after the results have been retrieved from the database.  

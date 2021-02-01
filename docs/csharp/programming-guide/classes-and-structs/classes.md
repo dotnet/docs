@@ -10,6 +10,7 @@ ms.assetid: e8848524-7273-429f-8aba-c658d5eff5ad
 # Classes (C# Programming Guide)
 
 ## Reference types  
+
 A type that is defined as a [class](../../language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [new](../../language-reference/operators/new-operator.md) operator, or assign it an object of a compatible type that may have been created elsewhere, as shown in the following example:
 
 ```csharp
@@ -52,7 +53,7 @@ Although they are sometimes used interchangeably, a class and an object are diff
  Customer object2;
 ```
 
- We don't recommend creating object references such as this one that don't refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it to an existing object, such as this:  
+ We don't recommend creating object references such as this one that don't refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it an existing object, such as this:  
 
  ```csharp
  Customer object3 = new Customer();
@@ -63,7 +64,7 @@ Although they are sometimes used interchangeably, a class and an object are diff
   
 ## Class inheritance  
 
-Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other interface or class that is not defined as [sealed](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override class virtual methods.
+Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other class that is not defined as [sealed](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override class virtual methods. Furthermore, you can implement one or more interfaces.
 
 Inheritance is accomplished by using a *derivation*, which means a class is declared by using a *base class* from which it inherits data and behavior. A base class is specified by appending a colon and the name of the base class following the derived class name, like this:  
 
@@ -77,7 +78,7 @@ Inheritance is accomplished by using a *derivation*, which means a class is decl
 
 When a class declares a base class, it inherits all the members of the base class except the constructors. For more information, see [Inheritance](inheritance.md).
   
-Unlike C++, a class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement more than one interface. For more information, see [Interfaces](../interfaces/index.md).  
+Unlike C++, a class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement one or more interfaces. For more information, see [Interfaces](../interfaces/index.md).  
   
 A class can be declared [abstract](../../language-reference/keywords/abstract.md). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes cannot be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](../../language-reference/keywords/sealed.md) class does not allow other classes to derive from it. For more information, see [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md).  
   
@@ -96,7 +97,7 @@ The following example defines a public class that contains an [auto-implemented 
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Object-Oriented Programming](../concepts/object-oriented-programming.md)
+- [Object-Oriented Programming](../../tutorials/intro-to-csharp/object-oriented-programming.md)
 - [Polymorphism](polymorphism.md)
 - [Identifier names](../inside-a-program/identifier-names.md)
 - [Members](members.md)

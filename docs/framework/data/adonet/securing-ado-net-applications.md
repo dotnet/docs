@@ -42,10 +42,10 @@ Writing secure code does not guard against self-inflicted security holes when wo
  [Security](../../../standard/security/index.md)  
  Contains links to articles describing all aspects of security in .NET.  
   
- [Security Tools](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  
+ [Security Tools](/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  
  .NET Framework tools for securing and administering security policy.  
   
- [Resources for Creating Secure Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165101(v=vs.100))  
+ [Resources for Creating Secure Applications](/previous-versions/visualstudio/visual-studio-2010/ms165101(v=vs.100))  
  Provides links to articles for creating secure applications.  
   
  [Security Bibliography](/visualstudio/ide/securing-applications)  

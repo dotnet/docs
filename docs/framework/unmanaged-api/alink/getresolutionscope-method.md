@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetResolutionScope Method
+
 Retrieves the scope of a given type.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetResolutionScope(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  ID of the assembly.  
   
@@ -43,9 +45,11 @@ HRESULT GetResolutionScope(
  Receives the assembly or module reference.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h.  
   
 ## See also

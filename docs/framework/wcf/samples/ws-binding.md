@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 629945b2-d771-46d7-a87b-5df3b2e460da
 ---
 # WS Binding
+
 This section contains samples that demonstrate Windows Service binding in Windows Communication Foundation (WCF).  
   
 ## In This Section  
+
  [WS Transaction Flow](ws-transaction-flow.md)  
  Demonstrates the use of a client-coordinated transaction and the client and server options for transaction flow using either the WS-Atomic Transaction or OleTransactions protocol.  
   

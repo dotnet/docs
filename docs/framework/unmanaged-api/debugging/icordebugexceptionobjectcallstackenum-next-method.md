@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugExceptionObjectCallStackEnum::Next Method
+
 Gets the specified number of [CorDebugExceptionObjectStackFrame](cordebugexceptionobjectstackframe-structure.md) instances that contain information from an exception object's call stack.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT Next(
 ```  
   
 ## Parameters  
+
  `celt`  
  [in] The number of [CorDebugExceptionObjectStackFrame](cordebugexceptionobjectstackframe-structure.md) instances to be retrieved.  
   
@@ -42,6 +44,7 @@ HRESULT Next(
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

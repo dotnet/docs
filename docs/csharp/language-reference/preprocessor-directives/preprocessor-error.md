@@ -1,4 +1,5 @@
 ---
+description: "#error - C# Reference"
 title: "#error - C# Reference"
 ms.date: 08/24/2020
 f1_keywords:

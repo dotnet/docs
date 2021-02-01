@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStringValue::GetString Method
+
 Gets the string referenced by this ICorDebugStringValue.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetString (
 ```  
   
 ## Parameters  
+
  `cchString`  
  [in] The size of the `szString` array.  
   
@@ -41,6 +43,7 @@ HRESULT GetString (
  [out] An array that stores the retrieved string.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

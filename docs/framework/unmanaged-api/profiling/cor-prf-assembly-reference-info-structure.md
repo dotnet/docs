@@ -6,6 +6,7 @@ dev_langs:
 ms.assetid: c8c1d916-8d1a-4f82-8128-9fd3732383fc
 ---
 # COR_PRF_ASSEMBLY_REFERENCE_INFO Structure
+
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
  Provides the common language runtime with information about an assembly reference that it should consider when performing an assembly reference closure walk.  
@@ -37,11 +38,13 @@ typedef struct _COR_PRF_ASSEMBLY_REFERENCE_INFO {
 |`dwAssemblyRefFlags`|The assembly's flags.|  
   
 ## Remarks  
+
  The `COR_PRF_EX_CLAUSE_INFO` structure is populated by the profiler when it declares additional assembly references that the common language runtime should consider when performing an assembly reference closure walk.  
   
  If the profiler registers for the [ICorProfilerCallback6::GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md) callback method, the runtime passes the path and name of the assembly to be loaded, along with a pointer to an [ICorProfilerAssemblyReferenceProvider](icorprofilerassemblyreferenceprovider-interface.md) interface object to that method. The profiler can then call the [ICorProfilerAssemblyReferenceProvider::AddAssemblyReference](icorprofilerassemblyreferenceprovider-addassemblyreference-method.md) method with a `COR_PRF_ASSEMBLY_REFERENCE_INFO` object for each target assembly it plans to reference from the assembly specified in the [ICorProfilerCallback6::GetAssemblyReferences](icorprofilercallback6-getassemblyreferences-method.md) callback.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

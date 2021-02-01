@@ -1,4 +1,5 @@
 ---
+description: "-subsystemversion (C# Compiler Options)"
 title: "-subsystemversion (C# Compiler Options)"
 ms.date: 07/20/2015
 ms.assetid: a99fce81-9d92-4813-9874-bee777041445

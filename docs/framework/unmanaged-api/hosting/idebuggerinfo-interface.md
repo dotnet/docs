@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IDebuggerInfo Interface
+
 Provides methods for obtaining information about the state of the debugging services.  
   
 ## Methods  
@@ -25,6 +26,7 @@ Provides methods for obtaining information about the state of the debugging serv
 |[IsDebuggerAttached Method](idebuggerinfo-isdebuggerattached-method.md)|Gets a value that indicates whether a managed debugger is attached to this process.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

@@ -18,10 +18,11 @@ helpviewer_keywords:
 ms.assetid: d2bf6123-7b0c-4e60-87ad-a39a1c3eb2e0
 ---
 # Caspol.exe (Code Access Security Policy Tool)
+
 The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and administrators to modify security policy for the machine policy level, the user policy level, and the enterprise policy level.  
   
 > [!IMPORTANT]
-> Starting with the .NET Framework 4, Caspol.exe does not affect CAS policy unless the [\<legacyCasPolicy> element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. Any settings shown or modified by CasPol.exe will only affect applications that opt into using CAS policy. For more information, see [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).  
+> Starting with the .NET Framework 4, Caspol.exe does not affect CAS policy unless the [\<legacyCasPolicy> element](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) is set to `true`. Any settings shown or modified by CasPol.exe will only affect applications that opt into using CAS policy. For more information, see [Security Changes](/previous-versions/dotnet/framework/security/security-changes).  
   
 > [!NOTE]
 > 64-bit computers include both 64-bit and 32-bit versions of security policy. To ensure that your policy changes apply to both 32-bit and 64-bit applications, run both the 32-bit and 64-bit versions of Caspol.exe.  
@@ -49,7 +50,7 @@ caspol [options]
 |**-customall**  *path*<br /><br /> or<br /><br /> **-ca**  *path*|Indicates that all options following this one apply to the machine, enterprise, and the specified custom user policies. You must specify the location of the custom user's security configuration file with the *path* argument.|  
 |**-cu**[**stomuser**] *path*|Allows the administration of a custom user policy that does not belong to the user on whose behalf Caspol.exe is currently running. You must specify the location of the custom user's security configuration file with the *path* argument.|  
 |**-enterprise**<br /><br /> or<br /><br /> **-en**|Indicates that all options following this one apply to the enterprise level policy. Users who are not enterprise administrators do not have sufficient rights to modify the enterprise policy, although they can view it. In nonenterprise scenarios, this policy, by default, does not interfere with machine and user policy.|  
-|**-e**[**xecution**] {**on** &#124; **off**}|Turns on or off the mechanism that checks for the permission to run before code starts to execute. **Note:**  This switch is removed in the .NET Framework 4 and later versions. For more information, see [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).|  
+|**-e**[**xecution**] {**on** &#124; **off**}|Turns on or off the mechanism that checks for the permission to run before code starts to execute. **Note:**  This switch is removed in the .NET Framework 4 and later versions. For more information, see [Security Changes](/previous-versions/dotnet/framework/security/security-changes).|  
 |**-f**[**orce**]|Suppresses the tool's self-destruct test and changes the policy as specified by the user. Normally, Caspol.exe checks whether any policy changes would prevent Caspol.exe itself from running properly; if so, Caspol.exe does not save the policy change and prints an error message. To force Caspol.exe to change policy even if this prevents Caspol.exe itself from running, use the **–force** option.|  
 |**-h**[**elp**]|Displays command syntax and options for Caspol.exe.|  
 |**-l**[**ist**]|Lists the code group hierarchy and the permission sets for the specified machine, user, enterprise, or all policy levels. Caspol.exe displays the code group's label first, followed by the name, if it is not null.|  
@@ -68,7 +69,7 @@ caspol [options]
 |**-resetlockdown**<br /><br /> or<br /><br /> **-rsld**|Returns policy to a more restrictive version of the default state and persists it to disk; creates a backup of the previous machine policy and persists it to a file called `security.config.bac`.  The locked down policy is similar to the default policy, except that the policy grants no permission to code from the `Local Intranet`, `Trusted Sites`, and `Internet` zones and the corresponding code groups have no child code groups.|  
 |**-resolvegroup** *assembly_file*<br /><br /> or<br /><br /> **-rsg**  *assembly_file*|Shows the code groups that a specific assembly (*assembly_file*) belongs to. By default, this option displays the machine, user, and enterprise policy levels to which the assembly belongs. To view only one policy level, use this option with either the **-machine**, **-user**, or **-enterprise** option.|  
 |**-resolveperm** *assembly_file*<br /><br /> or<br /><br /> **-rsp** *assembly_file*|Displays all permissions that the specified (or default) level of security policy would grant the assembly if the assembly were allowed to run. The *assembly_file* argument specifies the assembly. If you specify the **-all** option, Caspol.exe calculates the permissions for the assembly based on user, machine, and enterprise policy; otherwise, default behavior rules apply.|  
-|**-s**[**ecurity**] {**on** &#124; **off**}|Turns code access security on or off. Specifying the **-s off** option does not disable role-based security. **Note:**  This switch is removed in the .NET Framework 4 and later versions. For more information, see [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes). **Caution:**  When code access security is disabled, all code access demands succeed. Disabling code access security makes the system vulnerable to attacks by malicious code such as viruses and worms. Turning off security gains some extra performance but should only be done when other security measures have been taken to help make sure overall system security is not breached. Examples of other security precautions include disconnecting from public networks, physically securing computers, and so on.|  
+|**-s**[**ecurity**] {**on** &#124; **off**}|Turns code access security on or off. Specifying the **-s off** option does not disable role-based security. **Note:**  This switch is removed in the .NET Framework 4 and later versions. For more information, see [Security Changes](/previous-versions/dotnet/framework/security/security-changes). **Caution:**  When code access security is disabled, all code access demands succeed. Disabling code access security makes the system vulnerable to attacks by malicious code such as viruses and worms. Turning off security gains some extra performance but should only be done when other security measures have been taken to help make sure overall system security is not breached. Examples of other security precautions include disconnecting from public networks, physically securing computers, and so on.|  
 |**-u**[**ser**]|Indicates that all options following this one apply to the user level policy for the user on whose behalf Caspol.exe is running. For nonadministrative users, **-user** is the default.|  
 |**-?**|Displays command syntax and options for Caspol.exe.|  
   
@@ -96,16 +97,19 @@ caspol [options]
 |**-name** "*name*"|If used with the **–addgroup** option, specifies the scripting name for a code group to add. If used with the **-chggroup** option, specifies the scripting name for a code group to edit. The *name* argument must be enclosed in double quotes. The *name* argument cannot begin with a number, and can only contain A-Z, 0-9, and the underscore character. Code groups can be referred to by this *name* instead of by their numeric label. The *name* is also highly useful for scripting purposes.|  
   
 ## Remarks  
+
  Security policy is expressed using three policy levels: machine policy, user policy, and enterprise policy. The set of permissions that an assembly receives is determined by the intersection of the permission sets allowed by these three policy levels. Each policy level is represented by a hierarchical structure of code groups. Every code group has a membership condition that determines which code is a member of that group. A named permission set is also associated with each code group. This permission set specifies the permissions the runtime allows code that satisfies the membership condition to have. A code group hierarchy, along with its associated named permission sets, defines and maintains each level of security policy. You can use the **–user**, **-customuser**, **–machine** and **-enterprise** options to set the level of security policy.  
   
- For more information about security policy and how the runtime determines which permissions to grant to code, see [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100)).  
+ For more information about security policy and how the runtime determines which permissions to grant to code, see [Security Policy Management](/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100)).  
   
 ## Referencing Code Groups and Permission Sets  
+
  To facilitate references to code groups in a hierarchy, the **-list** option displays an indented list of code groups along with their numerical labels (1, 1.1, 1.1.1, and so on). The other command-line operations that target code groups also use the numerical labels to refer to specific code groups.  
   
  Named permission sets are referenced by their names. The **–list** option displays the list of code groups followed by a list of named permission sets available in that policy.  
   
 ## Caspol.exe Behavior  
+
  All options except **-s**[**ecurity**] {**on** &#124; **off**} use the version of the .NET Framework that Caspol.exe was installed with. If you run the Caspol.exe that was installed with version *X* of the runtime, the changes apply only to that version. Other side-by-side installations of the runtime, if any, are not affected. If you run Caspol.exe from the command line without being in a directory for a specific runtime version, the tool is executed from the first runtime version directory in the path (usually the most recent runtime version installed).  
   
  The **-s**[**ecurity**] {**on** &#124; **off**} option is a computer-wide operation. Turning off code access security terminates security checks for all managed code and for all users on the computer. If side-by-side versions of the .NET Framework are installed, this command turns off security for every version installed on the computer. Although the **-list** option shows that security is turned off, nothing else clearly indicates for other users that security has been turned off.  
@@ -115,12 +119,15 @@ caspol [options]
  Caspol.exe must be granted the equivalent of the **Everything** permission set to function. The tool has a protective mechanism that prevents policy from being modified in ways that would prevent Caspol.exe from being granted the permissions it needs to run. If you try to make such changes, Caspol.exe notifies you that the requested policy change will break the tool, and the policy change is rejected. You can turn this protective mechanism off for a given command by using the **–force** option.  
   
 <a name="cpgrfcodeaccesssecuritypolicyutilitycaspolexeanchor1"></a>
+
 ## Manually Editing the Security Configuration Files  
+
  Three security configuration files correspond to the three policy levels supported by Caspol.exe: one for the machine policy, one for a given user's policy, and one for the enterprise policy. These files are created on disk only when machine, user, or enterprise policy is changed using Caspol.exe. You can use the **–reset** option in Caspol.exe to save the default security policy to disk, if needed.  
   
  In most cases, manually editing the security configuration files is not recommended. But there might be scenarios in which modifying these files becomes necessary, such as when an administrator wants to edit the security configuration for a particular user.  
   
 ## Examples  
+
  **-addfulltrust**  
   
  Assume that a permission set containing a custom permission has been added to machine policy. This custom permission is implemented in `MyPerm.exe`, and `MyPerm.exe` references classes in `MyOther.exe`. Both assemblies must be added to the full trust assembly list. The following command adds the `MyPerm.exe` assembly to the full trust list for the machine policy.  

@@ -21,7 +21,7 @@ Operating in this environment, a service must be sensitive to many different cha
 
 - Unexpected network latency - the time for a service request to travel to the receiver and back.
 
-- [Transient faults](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults) - short-lived network connectivity errors.
+- [Transient faults](/azure/architecture/best-practices/transient-faults) - short-lived network connectivity errors.
 
 - Blockage by a long-running synchronous operation.
 

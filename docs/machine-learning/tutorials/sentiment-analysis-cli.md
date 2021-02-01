@@ -195,7 +195,7 @@ For the second object, the `PredictionEngine` object, it is not so easy because 
 
 However, things got a lot easier for you than what's explained in that blog post. We worked on a simpler approach for you and have created a nice **'.NET Core Integration Package'** that you can  easily use in your ASP.NET Core apps and services by registering it in the application DI services (Dependency Injection services) and then directly use it from your code. Check the following tutorial and example for doing that:
 
-- [Tutorial: Running ML.NET models on scalable ASP.NET Core web apps and WebAPIs](https://aka.ms/mlnet-tutorial-netcoreintegrationpkg)
+- [Tutorial: Running ML.NET models on scalable ASP.NET Core web apps and WebAPIs](../how-to-guides/serve-model-web-api-ml-net.md)
 - [Sample: Scalable ML.NET model on ASP.NET Core WebAPI](https://aka.ms/mlnet-sample-netcoreintegrationpkg)
 
 ## Explore the generated C# code that was used to train the "best quality" model
@@ -222,7 +222,7 @@ In this tutorial, you learned how to:
 ## See also
 
 - [Automate model training with the ML.NET CLI](../automate-training-with-cli.md)
-- [Tutorial: Running ML.NET models on scalable ASP.NET Core web apps and WebAPIs](https://aka.ms/mlnet-tutorial-netcoreintegrationpkg)
+- [Tutorial: Running ML.NET models on scalable ASP.NET Core web apps and WebAPIs](../how-to-guides/serve-model-web-api-ml-net.md)
 - [Sample: Scalable ML.NET model on ASP.NET Core WebAPI](https://aka.ms/mlnet-sample-netcoreintegrationpkg)
 - [ML.NET CLI auto-train command reference guide](../reference/ml-net-cli-reference.md)
 - [Telemetry in ML.NET CLI](../resources/ml-net-cli-telemetry.md)

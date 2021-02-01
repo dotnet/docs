@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback4::ReJITError Method
+
 Notifies the profiler that the just-in-time (JIT) compiler encountered an error in the recompilation process.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT ReJITError(
 ```  
   
 ## Parameters  
+
  `moduleID`  
  [in] The `ModuleID` in which the failed recompilation attempt was made.  
   
@@ -43,6 +45,7 @@ HRESULT ReJITError(
  [in] An HRESULT that indicates the nature of the failure. See the Status HRESULTS section for a list of values.  
   
 ## Return Value  
+
  Return values from this callback are ignored.  
   
 ## Status HRESULTS  
@@ -57,6 +60,7 @@ HRESULT ReJITError(
 |Other|The operating system returned a failure outside the control of the CLR. For example, if a system call to change the access protection of a page of memory fails, the operating system error is displayed.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # Init Method
+
 Prepares objects implementing the [IALink Interface](ialink-interface.md) for use.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT Init(
 ```  
   
 ## Parameters  
+
  `pDispenser`  
  [IMetaDataDispenserEx Interface](../metadata/imetadatadispenserex-interface.md) pointer to the metadata dispenser.  
   
@@ -35,9 +37,11 @@ HRESULT Init(
  [IMetaDataError Interface](../metadata/imetadataerror-interface.md) pointer to an optional error handling interface.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h  
   
 ## See also

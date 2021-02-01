@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTaskManager::GetCurrentTask Method
+
 Gets an interface pointer to the task that is currently executing on the operating system thread from which this call is made.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetCurrentTask (
 ```  
   
 ## Parameters  
+
  `pTask`  
  [out] A pointer to the address of an [IHostTask](ihosttask-interface.md) instance that represents the currently executing task, or null, if no task is currently executing.  
   
@@ -44,9 +46,11 @@ HRESULT GetCurrentTask (
 |HOST_E_INVALIDOPERATION|`GetCurrentTask` was called on an operating system thread outside the control of the host.|  
   
 ## Remarks  
+
  The host can also set the `pTask` parameter to null to prevent a task that it did not initiate from entering the CLR.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

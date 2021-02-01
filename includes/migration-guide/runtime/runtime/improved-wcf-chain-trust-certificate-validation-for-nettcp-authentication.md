@@ -6,10 +6,22 @@
 
 #### Suggestion
 
-<ul><li>Validate if your server and client certification has the required EKU OID. If not, update your certification.</li><li>Validate if your root certificate is invalid. If so, update the root certificate.</li><li>How to opt out of the change: If you can't update the certificate, you can work around the breaking change temporarily with the following configration setting,  However, opting out of the change will leave your system vulnerable to the security issue.</li></ul><pre><code class="lang-xml">&lt;appSettings&gt;&#13;&#10;&lt;add key=&quot;wcf:useLegacyCertificateUsagePolicy&quot; value=&quot;true&quot; /&gt;&#13;&#10;&lt;/appSettings&gt;&#13;&#10;</code></pre>
+<ul><li>Validate if your server and client certification has the required EKU OID. If not, update your certification.</li><li>Validate if your root certificate is invalid. If so, update the root certificate.</li><li>How to opt out of the change: If you can't update the certificate, you can work around the breaking change temporarily with the following configuration setting,  However, opting out of the change will leave your system vulnerable to the security issue.</li></ul><pre><code class="lang-xml">&lt;appSettings&gt;&#13;&#10;&lt;add key=&quot;wcf:useLegacyCertificateUsagePolicy&quot; value=&quot;true&quot; /&gt;&#13;&#10;&lt;/appSettings&gt;&#13;&#10;</code></pre>
 
 | Name    | Value       |
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.7.2|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

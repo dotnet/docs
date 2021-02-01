@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: 6f5ff56a-a57e-49d7-8ae9-bbed697e42e3
 ---
 # Date and Time Data
+
 SQL Server 2008 introduces new data types for handling date and time information. The new data types include separate types for date and time, and expanded data types with greater range, precision, and time-zone awareness. Starting with the .NET Framework version 3.5 Service Pack (SP) 1, the .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient>) provides full support for all the new features of the SQL Server 2008 Database Engine. You must install the .NET Framework 3.5 SP1 (or later) to use these new features with SqlClient.  
   
  Versions of SQL Server earlier than SQL Server 2008 only had two data types for working with date and time values: `datetime` and `smalldatetime`. Both of these data types contain both the date value and a time value, which makes it difficult to work with only date or only time values. Also, these data types only support dates that occur after the introduction of the Gregorian calendar in England in 1753. Another limitation is that these older data types are not time-zone aware, which makes it difficult to work with data that originates from multiple time zones.  
@@ -16,9 +17,10 @@ SQL Server 2008 introduces new data types for handling date and time information
   
  **SQL Server documentation**  
   
-1. [Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))  
+1. [Using Date and Time Data](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))  
   
 ## Date/Time Data Types Introduced in SQL Server 2008  
+
  The following table describes the new date and time data types.  
   
 |SQL Server data type|Description|  
@@ -32,6 +34,7 @@ SQL Server 2008 introduces new data types for handling date and time information
 > For more information about using the `Type System Version` keyword, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
   
 ## Date Format and Date Order  
+
  How SQL Server parses date and time values depends not only on the type system version and server version, but also on the server's default language and format settings. A date string that works for the date formats of one language might be unrecognizable if the query is executed by a connection that uses a different language and date format setting.  
   
  The Transact-SQL SET LANGUAGE statement implicitly sets the DATEFORMAT that determines the order of the date parts. You can use the SET DATEFORMAT Transact-SQL statement on a connection to disambiguate date values by ordering the date parts in MDY, DMY, YMD, YDM, MYD, or DYM order.  
@@ -41,9 +44,10 @@ SQL Server 2008 introduces new data types for handling date and time information
 > [!NOTE]
 > The YDM date format is not supported when converting from a string format to `date`, `time`, `datetime2`, or `datetimeoffset`.  
   
- For more information about how SQL Server interprets date and time data, see [Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100)).  
+ For more information about how SQL Server interprets date and time data, see [Using Date and Time Data](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100)).  
   
 ## Date/Time Data Types and Parameters  
+
  The following enumerations have been added to <xref:System.Data.SqlDbType> to support the new date and time data types.  
   
 - `SqlDbType.Date`  
@@ -79,6 +83,7 @@ You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by 
 |smalldatetime|System.DateTime|DateTime|DateTime|  
   
 ### SqlParameter Properties  
+
  The following table describes `SqlParameter` properties that are relevant to date and time data types.  
   
 |Property|Description|  
@@ -94,11 +99,13 @@ You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by 
 > Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.  
   
 ### Creating Parameters  
+
  You can create a <xref:System.Data.SqlClient.SqlParameter> object by using its constructor, or by adding it to a <xref:System.Data.SqlClient.SqlCommand><xref:System.Data.SqlClient.SqlCommand.Parameters%2A> collection by calling the `Add` method of the <xref:System.Data.SqlClient.SqlParameterCollection>. The `Add` method will take as input either constructor arguments or an existing parameter object.  
   
  The next sections in this topic provide examples of how to specify date and time parameters. For additional examples of working with parameters, see [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md) and [DataAdapter Parameters](../dataadapter-parameters.md).  
   
 ### Date Example  
+
  The following code fragment demonstrates how to specify a `date` parameter.  
   
 ```csharp  
@@ -116,6 +123,7 @@ parameter.Value = "2007/12/1"
 ```  
   
 ### Time Example  
+
  The following code fragment demonstrates how to specify a `time` parameter.  
   
 ```csharp  
@@ -133,6 +141,7 @@ parameter.Value = DateTime.Parse("23:59:59").TimeOfDay;
 ```  
   
 ### Datetime2 Example  
+
  The following code fragment demonstrates how to specify a `datetime2` parameter with both the date and time parts.  
   
 ```csharp  
@@ -150,6 +159,7 @@ parameter.Value = DateTime.Parse("1666-09-02 1:00:00");
 ```  
   
 ### DateTimeOffSet Example  
+
  The following code fragment demonstrates how to specify a `DateTimeOffSet` parameter with a date, a time, and a time zone offset of 0.  
   
 ```csharp  
@@ -167,6 +177,7 @@ parameter.Value = DateTimeOffset.Parse("1666-09-02 1:00:00+0");
 ```  
   
 ### AddWithValue  
+
  You can also supply parameters by using the `AddWithValue` method of a <xref:System.Data.SqlClient.SqlCommand>, as shown in the following code fragment. However, the `AddWithValue` method does not allow you to specify the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> or <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> for the parameter.  
   
 ```csharp  
@@ -190,6 +201,7 @@ command.Parameters.AddWithValue( _
 |DateTimeOffset|SqlDbType.DateTimeOffset|  
   
 ## Retrieving Date and Time Data  
+
  The following table describes methods that are used to retrieve SQL Server 2008 date and time values.  
   
 |SqlClient method|Description|  
@@ -212,6 +224,7 @@ command.Parameters.AddWithValue( _
 > The new date and time `SqlDbTypes` are not supported for code that is executing in-process in SQL Server. An exception will be raised if one of these types is passed to the server.  
   
 ## Specifying Date and Time Values as Literals  
+
  You can specify date and time data types by using a variety of different literal string formats, which SQL Server then evaluates at run time, converting them to internal date/time structures. SQL Server recognizes date and time data that is enclosed in single quotation marks ('). The following examples demonstrate some formats:  
   
 - Alphabetic date formats, such as `'October 15, 2006'`.  
@@ -226,12 +239,13 @@ command.Parameters.AddWithValue( _
  Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.  
   
 ## Resources in SQL Server Books Online  
+
  For more information about working with date and time values in SQL Server, see the following resources in SQL Server Books Online.  
   
 |Topic|Description|  
 |-----------|-----------------|  
 |[Date and Time Data Types and Functions (Transact-SQL)](/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql)|Provides an overview of all Transact-SQL date and time data types and functions.|  
-|[Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Provides information about the date and time data types and functions, and examples of using them.|  
+|[Using Date and Time Data](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Provides information about the date and time data types and functions, and examples of using them.|  
 |[Data Types (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql)|Describes system data types in SQL Server.|  
   
 ## See also

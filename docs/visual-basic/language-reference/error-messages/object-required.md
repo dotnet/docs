@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: afdc660b-81a5-4c92-ac7e-9c3a3105fc16
 ---
 # Object required (Visual Basic)
+
 References to properties and methods often require an explicit object qualifier. This is such a case.  
   
 ## To correct this error  

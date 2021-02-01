@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2bd8b4a1-b210-4c07-8156-f19392318c08
 ---
 # 114 - WorkflowInstanceRecordWithId
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 2bd8b4a1-b210-4c07-8156-f19392318c08
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a workflow instance emits WorkflowInstanceRecord for workflow states : Started, Resumed, Persisted, Idle, Deleted, Completed, Canceled, Unloaded, Unsuspended.  
   
 ## Message  
+
  TrackRecord= WorkflowInstanceRecord, InstanceID = %1, RecordNumber = %2, EventTime = %3, ActivityDefinitionId = %4, State = %5, Annotations = %6, ProfileName = %7, WorkflowDefinitionIdentity = %8  
   
 ## Details  

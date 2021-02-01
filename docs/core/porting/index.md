@@ -13,7 +13,7 @@ You might have code that currently runs on the .NET Framework that you're intere
 
 ## Overview of the porting process
 
-Porting to .NET Core (or .NET Standard) from .NET Framework for many projects is relatively straight forward. There are a number of changes that are required, but many of them follow the patterns outlined below. Projects where the app-model is available in .NET Core (such as libraries, console apps, and desktop applications) usually require little changes. Projects that require a new app model, such as moving to ASP.NET Core from ASP.NET, require a bit more work, but many patterns have analogs that can be used during the conversion. This document should help with identifying the main strategies that have been employed by users to successfully convert their code bases to target .NET Standard or .NET Core and will address the conversion at two levels: solution-wide and project specific. See the links at the bottom for directions on app-model specific conversions.
+Porting to .NET Core (or .NET Standard) from .NET Framework for many projects is relatively straightforward. There are a number of changes that are required, but many of them follow the patterns outlined below. Projects where the app-model is available in .NET Core (such as libraries, console apps, and desktop applications) usually require little changes. Projects that require a new app model, such as moving to ASP.NET Core from ASP.NET, require a bit more work, but many patterns have analogs that can be used during the conversion. This document should help with identifying the main strategies that have been employed by users to successfully convert their code bases to target .NET Standard or .NET Core and will address the conversion at two levels: solution-wide and project specific. See the links at the bottom for directions on app-model specific conversions.
 
 We recommend you use the following process when porting your project to .NET Core. Each of these steps introduces potential places for behavior changes, so ensure that you adequately test your library or application before continuing on to later steps. The first steps are to get your project ready for a switch to .NET Standard or .NET Core. If you have unit tests, it's best to convert them first so that you can continue testing changes in the product you're working on. Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to port your test projects so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all work on .NET Core.
 
@@ -47,7 +47,7 @@ We recommend you use the following process when porting your project to .NET Cor
 
 1. Convert your project file to the new SDK-style files structure. You can create new projects for .NET Core and copy over source files, or attempt to convert your existing project file with a tool.
 
-   .NET Core uses a simplified (and different) [project file format](../tools/csproj.md) than .NET Framework. You'll need to convert your project files into this format to continue. This project style allows you to also target .NET Framework, which at this point you'll still want to target.
+   .NET Core uses a simplified (and different) [project file format](../project-sdk/overview.md) than .NET Framework. You'll need to convert your project files into this format to continue. This project style allows you to also target .NET Framework, which at this point you'll still want to target.
 
    You can attempt to port smaller solutions or individual projects in one operation to the .NET Core project file format with the [dotnet try-convert](https://github.com/dotnet/try-convert) tool. `dotnet try-convert` is not guaranteed to work for all your projects, and it may cause subtle changes in behavior that you depended on. Use it as a _starting point_ that automates the basic things that can be automated. It isn't a guaranteed solution to migrating a project, as there are many differences in the targets used by the SDK style projects compared to the old-style project files.
 
@@ -59,7 +59,7 @@ We recommend you use the following process when porting your project to .NET Cor
 
 1. Use the [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) to analyze your assemblies and see if they're portable to .NET Core.
 
-   The .NET Portability Analyzer tool analyzes your compiled assemblies and generates a report. This report shows a high-level portability summary and a breakdown of each API you're using that isn't available on NET Core. While using the tool, only submit the individual project you are converting to focus on the API changes that are potentially needed. Many of the APIs have equivalent availability in .NET Core, which you'll want to switch to.
+   The .NET Portability Analyzer tool analyzes your compiled assemblies and generates a report. This report shows a high-level portability summary and a breakdown of each API you're using that isn't available on .NET Core. While using the tool, only submit the individual project you are converting to focus on the API changes that are potentially needed. Many of the APIs have equivalent availability in .NET Core, which you'll want to switch to.
 
    While reading the reports generated by the analyzer, the important information is the actual APIs that are being used and not necessarily the percentage of support for the target platform. Many APIs have equivalent options in .NET Standard/Core, and so understanding the scenarios your library or application needs the API for will help determine the implication for portability.
 
@@ -107,5 +107,10 @@ We recommend you use the following process when porting your project to .NET Cor
 
 > [!div class="nextstepaction"]
 > [Analyze dependencies](third-party-deps.md)
-> [Package NuGet Package](../deploying/creating-nuget-packages.md)
-> [ASP.NET to ASP.NET Core Migration](/aspnet/core/migration/proper-to-2x)
+> [Package a NuGet package](../deploying/creating-nuget-packages.md)
+
+## See also
+
+- [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
+- [Migrate WPF apps to .NET Core](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
+- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)

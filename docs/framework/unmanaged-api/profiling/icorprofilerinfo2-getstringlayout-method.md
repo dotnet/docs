@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::GetStringLayout Method
+
 Gets information about the layout of a string object. This method is deprecated in the .NET Framework 4, and is superseded by the [ICorProfilerInfo3::GetStringLayout2](icorprofilerinfo3-getstringlayout2-method.md) method.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetStringLayout(
 ```  
   
 ## Parameters  
+
  `pBufferLengthOffset`  
  [out] A pointer to the offset of the location, relative to the `ObjectID` pointer, that stores the length of the string. The length is stored as a `DWORD`.  
   
@@ -42,6 +44,7 @@ HRESULT GetStringLayout(
  [out] A pointer to the offset of the buffer, relative to the `ObjectID` pointer, that stores the string of wide characters.  
   
 ## Remarks  
+
  The `GetStringLayout` method gets the offsets, relative to the `ObjectID` pointer, of the locations in which the following are stored:  
   
 - The length of the string's buffer.  
@@ -53,6 +56,7 @@ HRESULT GetStringLayout(
  Strings may be null-terminated.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

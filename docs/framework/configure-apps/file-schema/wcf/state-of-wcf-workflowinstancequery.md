@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 40f21055-766c-4be9-86c4-d1d899007098
 ---
 # \<state> of WCF, \<workflowInstanceQuery>
+
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  

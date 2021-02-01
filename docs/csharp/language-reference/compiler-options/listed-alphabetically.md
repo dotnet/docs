@@ -1,4 +1,5 @@
 ---
+description: "C# Compiler Options Listed Alphabetically"
 title: "C# Compiler Options Listed Alphabetically"
 ms.date: 06/04/2020
 helpviewer_keywords:

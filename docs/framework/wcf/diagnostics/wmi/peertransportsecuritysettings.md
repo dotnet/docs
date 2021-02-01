@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1df08cbb-68c5-4d36-9f88-a776a8117de8
 ---
 # PeerTransportSecuritySettings
+
 PeerTransportSecuritySettings  
   
 ## Syntax  
@@ -16,12 +17,15 @@ class PeerTransportSecuritySettings
 ```  
   
 ## Methods  
+
  The PeerTransportSecuritySettings class does not define any methods.  
   
 ## Properties  
+
  The PeerTransportSecuritySettings class has the following property:  
   
 ### CredentialType  
+
  Data type: string  
   
  Access type: Read-only  

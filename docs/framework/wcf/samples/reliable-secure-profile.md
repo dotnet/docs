@@ -17,6 +17,7 @@ This sample demonstrates how to compose WCF and [Reliable Secure Profile (RSP)](
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Channels\ReliableSecureProfile`  
   
 ## Discussion  
+
  This sample demonstrates a reliable asynchronous two-way message exchange scenario. The service has a duplex contract and the client implements the duplex callback contract. The client initiates a request to a service, for which a response is expected on a separate connection. The request message is sent reliably. The client does not want to open a listening endpoint at its end. Thus, it polls the service with ‘Make Connection’ requests for the service to send back the response on the back channel of this ‘Make Connection’ request. This sample demonstrates how to have secure reliable duplex communication over HTTP without the client exposing a listening endpoint (and creating a firewall exception).  
   
 ## To set up, build, and run the sample  

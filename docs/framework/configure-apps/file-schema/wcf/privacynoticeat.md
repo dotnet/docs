@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4cc96942-4eb9-4241-b2fd-45aa239915e8
 ---
 # \<privacyNoticeAt>
+
 Represents a configuration element that specifies a privacy notice used in `wsFederationHttp` binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,9 +22,11 @@ Represents a configuration element that specifies a privacy notice used in `wsFe
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -34,6 +37,7 @@ Represents a configuration element that specifies a privacy notice used in `wsFe
 |`version`|An integer that specifies the version of this privacy notice.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

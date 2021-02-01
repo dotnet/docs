@@ -225,4 +225,4 @@ With each iteration of the loop, you're taking the last two integers in the list
 
 Congratulations, you've completed the list tutorial. You can continue with the [Introduction to classes](introduction-to-classes.md) tutorial in your own development environment.
 
-You can learn more about working with the `List` type in the [.NET guide](../../../standard/index.yml) article on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.
+You can learn more about working with the `List` type in the .NET fundamentals article on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.

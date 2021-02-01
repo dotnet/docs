@@ -84,7 +84,7 @@ type MyClass2(dataIn) as self =
 
 Unlike in other .NET languages, you can name the self identifier however you want; you are not restricted to names such as `self`, `Me`, or `this`.
 
-The self identifier that is declared with the `as` keyword is not initialized until after the `let` bindings are executed. Therefore, it cannot be used in the `let` bindings. You can use the self identifier in the `do` bindings section.
+The self identifier that is declared with the `as` keyword is not initialized until after the base constructor. Therefore, when used before or inside the base constructor, `System.InvalidOperationException: The initialization of an object or value resulted in an object or value being accessed recursively before it was fully initialized.` will be raised during runtime. You can use the self identifier freely after the base constructor, such as in `let` bindings or `do` bindings.
 
 ## Generic Type Parameters
 

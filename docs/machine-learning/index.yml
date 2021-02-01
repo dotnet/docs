@@ -35,6 +35,10 @@ landingContent:
             url: resources/tasks.md
           - text: How to choose an algorithm
             url: how-to-choose-an-ml-net-algorithm.md
+      - linkListType: get-started
+        links:
+          - text: ML.NET on Q&A
+            url: /answers/topics/dotnet-mlnet.html
 
   # Get started
   - title: Get started in 10 minutes
@@ -99,6 +103,6 @@ landingContent:
       - linkListType: reference
         links:
           - text: ML.NET API reference  
-            url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet 
+            url: ../../api/index.md?view=ml-dotnet
           - text: ML.NET samples
             url: https://github.com/dotnet/machinelearning-samples

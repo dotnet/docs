@@ -7,11 +7,13 @@ dev_langs:
 ms.assetid: c2ce8461-3c15-4c41-8c81-1cb78f5b59a6
 ---
 # XML and ADO.NET Types in Data Contracts
+
 The Windows Communication Foundation (WCF) data contract model supports certain types that represent XML directly. When these types are serialized to XML, the serializer writes out the XML contents of these types without any further processing. Supported types are <xref:System.Xml.XmlElement>, arrays of <xref:System.Xml.XmlNode> (but not the `XmlNode` type itself), as well as types that implement <xref:System.Xml.Serialization.IXmlSerializable>. The <xref:System.Data.DataSet> and <xref:System.Data.DataTable> type, as well as typed datasets, are commonly used in database programming. These types implement the `IXmlSerializable` interface and are therefore serializable in the data contract model. Some special considerations for these types are listed at the end of this topic.  
   
 ## XML Types  
   
 ### Xml Element  
+
  The `XmlElement` type is serialized using its XML contents. For example, using the following type.  
   
  [!code-csharp[DataContractAttribute#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/datacontractattribute/cs/overview.cs#4)]
@@ -44,6 +46,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
  Do not attempt to use either of the serializers with types derived from `XmlElement`, whether they are assigned polymorphically or not.  
   
 ### Array of XmlNode  
+
  Using arrays of <xref:System.Xml.XmlNode> is very similar to using `XmlElement`. Using arrays of `XmlNode` gives you more flexibility than using `XmlElement`. You can write multiple elements inside the data member wrapping element. You can also inject content other than elements inside of the data member wrapping element, such as XML comments. Finally, you can put attributes into the wrapping data member element. All this can be achieved by populating the array of `XmlNode` with specific derived classes of `XmlNode` such as <xref:System.Xml.XmlAttribute>, `XmlElement` or <xref:System.Xml.XmlComment>. For example, using the following type.  
   
  [!code-csharp[DataContractAttribute#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/datacontractattribute/cs/overview.cs#5)]
@@ -84,6 +87,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
  When used with the `DataContractSerializer`, arrays of `XmlNode` can be assigned polymorphically, but only to a data member of type `Object`. Even though it implements `IEnumerable`, an array of `XmlNode` cannot be used as a collection type and be assigned to an `IEnumerable` data member. As with all polymorphic assignments, the `DataContractSerializer` emits the data contract name in the resulting XML – in this case, it is "ArrayOfXmlNode" in the "http://schemas.datacontract.org/2004/07/System.Xml" namespace. When used with the `NetDataContractSerializer`, any valid assignment of an `XmlNode` array is supported.  
   
 ### Schema Considerations  
+
  For details about the schema mapping of XML types, see [Data Contract Schema Reference](data-contract-schema-reference.md). This section provides a summary of the important points.  
   
  A data member of type `XmlElement` is mapped to an element defined using the following anonymous type.  
@@ -108,6 +112,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
 ```  
   
 ## Types Implementing the IXmlSerializable Interface  
+
  Types that implement the `IXmlSerializable` interface are fully supported by the `DataContractSerializer`. The <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute should always be applied to these types to control their schema.  
   
  There are three varieties of types that implement `IXmlSerializable`: types that represent arbitrary content, types that represent a single element, and legacy <xref:System.Data.DataSet> types.  
@@ -119,6 +124,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
 - Legacy <xref:System.Data.DataSet> types are `IXmlSerializable` types that are not marked with the `XmlSchemaProviderAttribute` attribute. Instead, they rely on the <xref:System.Xml.Serialization.IXmlSerializable.GetSchema%2A> method for schema generation. This pattern is used for the `DataSet` type and its typed dataset derives a class in earlier versions of the .NET Framework, but is now obsolete and is supported only for legacy reasons. Do not rely on this pattern and always apply the `XmlSchemaProviderAttribute` to your `IXmlSerializable` types.  
   
 ### IXmlSerializable Content Types  
+
  When serializing a data member of a type that implements `IXmlSerializable` and is a content type as defined previously, the serializer writes the wrapper element for the data member and pass control to the <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A> method. The <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A> implementation can write any XML, including adding attributes to the wrapper element. After `WriteXml` is done, the serializer closes the element.  
   
  When deserializing a data member of a type that implements `IXmlSerializable` and is a content type as defined previously, the deserializer positions the XML reader on the wrapper element for the data member and pass control to the <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> method. The method must read the entire element, including the start and end tags. Make sure your `ReadXml` code handles the case where the element is empty. Additionally, your `ReadXml` implementation should not rely on the wrapper element being named a particular way. The name is chosen by the serializer can vary.  
@@ -126,9 +132,11 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
  It is permitted to assign `IXmlSerializable` content types polymorphically, for example, to data members of type <xref:System.Object>. It is also permitted for the type instances to be null. Finally, it is possible to use `IXmlSerializable` types with object graph preservation enabled and with the <xref:System.Runtime.Serialization.NetDataContractSerializer>. All these features require the WCF serializer to attach certain attributes into the wrapper element ("nil" and "type" in the XML Schema Instance namespace and "Id", "Ref", "Type" and "Assembly" in a WCF-specific namespace).  
   
 #### Attributes to Ignore when Implementing ReadXml  
+
  Before passing control to your `ReadXml` code, the deserializer examines the XML element, detects these special XML attributes, and acts on them. For example, if "nil" is `true`, a null value is deserialized and `ReadXml` is not called. If polymorphism is detected, the contents of the element are deserialized as if it was a different type. The polymorphically assigned type’s implementation of `ReadXml` is called. In any case, a `ReadXml` implementation should ignore these special attributes because they are handled by the deserializer.  
   
 ### Schema Considerations for IXmlSerializable Content Types  
+
  When exporting schema an `IXmlSerializable` content type, the schema provider method is called. An <xref:System.Xml.Schema.XmlSchemaSet> is passed to the schema provider method. The method can add any valid schema to the schema set. The schema set contains the schema that is already known at the time when schema export occurs. When the schema provider method must add an item to the schema set, it must determine if an <xref:System.Xml.Schema.XmlSchema> with the appropriate namespace already exists in the set. If it does, the schema provider method must add the new item to the existing `XmlSchema`. Otherwise, it must create a new `XmlSchema` instance. This is important if arrays of `IXmlSerializable` types are being used. For example, if you have an `IXmlSerializable` type that gets exported as type "A" in namespace "B", it is possible that by the time the schema provider method is called the schema set already contains the schema for "B" to hold the "ArrayOfA" type.  
   
  In addition to adding types to the <xref:System.Xml.Schema.XmlSchemaSet>, the schema provider method for content types must return a non-null value. It can return an <xref:System.Xml.XmlQualifiedName> that specifies the name of the schema type to use for the given `IXmlSerializable` type. This qualified name also serves as the data contract name and namespace for the type. It is permitted to return a type that does not exist in the schema set immediately when the schema provider method returns. However, it is expected that by the time all related types are exported (the <xref:System.Runtime.Serialization.XsdDataContractExporter.Export%2A> method is called for all relevant types on the <xref:System.Runtime.Serialization.XsdDataContractExporter> and the <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas%2A> property is accessed), the type exists in the schema set. Accessing the `Schemas` property before all relevant `Export` calls have been made can result in an <xref:System.Xml.Schema.XmlSchemaException>. For more information about the export process, see [Exporting Schemas from Classes](exporting-schemas-from-classes.md).  
@@ -140,6 +148,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
  The same global element declaration rules apply to legacy dataset types. Note that the `XmlRootAttribute` cannot override global element declarations added through custom code, either added to the `XmlSchemaSet` using the schema provider method or through `GetSchema` for legacy dataset types.  
   
 ### IXmlSerializable Element Types  
+
  `IXmlSerializable` element types have either the `IsAny` property set to `true` or have their schema provider method return `null`.  
   
  Serializing and deserializing an element type is very similar to serializing and deserializing a content type. However, there are some important differences:  
@@ -157,6 +166,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
  The schema exported for element types is the same as for the `XmlElement` type as described in an earlier section, except that the schema provider method can add any additional schema to the <xref:System.Xml.Schema.XmlSchemaSet> as with content types. Using the `XmlRootAttribute` attribute with element types is not allowed, and global element declarations are never emitted for these types.  
   
 ### Differences from the XmlSerializer  
+
  The `IXmlSerializable` interface and the `XmlSchemaProviderAttribute` and `XmlRootAttribute` attributes are also understood by the <xref:System.Xml.Serialization.XmlSerializer> . However, there are some differences in how these are treated in the data contract model. The important differences are summarized in the following:  
   
 - The schema provider method must be public to be usable in the `XmlSerializer`, but does not have to be public to be usable in the data contract model.  
@@ -168,6 +178,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
  Be aware of these differences when creating types that are used with both serialization technologies.  
   
 ### Importing IXmlSerializable Schema  
+
  When importing a schema generated from `IXmlSerializable` types, there are a few possibilities:  
   
 - The generated schema may be a valid data contract schema as described in [Data Contract Schema Reference](data-contract-schema-reference.md). In this case, schema can be imported as usual and regular data contract types are generated.  
@@ -177,6 +188,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
 - You may want to reuse your existing `IXmlSerializable` types in the proxy instead of generating new ones. In this case, the referenced types feature described in the Importing Schema to Generate Types topic can be used to indicate the type to reuse. This corresponds to using the `/reference` switch on svcutil.exe, which specifies the assembly that contains the types to reuse.  
   
 ## Representing Arbitrary XML in Data Contracts  
+
  The `XmlElement`, Array of `XmlNode` and `IXmlSerializable` types allow you to inject arbitrary XML into the data contract model. The `DataContractSerializer` and `NetDataContractSerializer` pass this XML content on to the XML writer in use, without interfering in the process. However, the XML writers may enforce certain restrictions on the XML that they write. Specifically, here are some important examples:  
   
 - The XML writers do not typically allow an XML document declaration (for example, \<?xml version=’1.0’ ?>) in the middle of writing another document. You cannot take a full XML document and serialize it as an `Array` of `XmlNode` data member. To do this, you have to either strip out the document declaration or use your own encoding scheme to represent it.  
@@ -188,6 +200,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
 - When implementing `WriteXml`, avoid using the <xref:System.Xml.XmlWriter.WriteEntityRef%2A> and <xref:System.Xml.XmlWriter.WriteNmToken%2A> methods that are unsupported on the XML writers supplied with WCF.  
   
 ## Using DataSet, Typed DataSet and DataTable  
+
  Using these types is fully supported in the data contract model. When using these types, consider the following points:  
   
 - The schema for these types (especially <xref:System.Data.DataSet> and its typed derived classes) may not be interoperable with some non-WCF platforms, or may result in poor usability when used with these platforms. Additionally, using the `DataSet` type may have performance implications. Finally, it may make it more difficult for you to version your application in the future. Consider using explicitly defined data contract types instead of `DataSet` types in your contracts.  

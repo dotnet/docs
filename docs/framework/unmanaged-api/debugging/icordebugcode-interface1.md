@@ -34,12 +34,14 @@ Represents a segment of either Microsoft intermediate language (MSIL) code or na
 |[IsIL Method](icordebugcode-isil-method.md)|Gets a value that indicates whether this `ICorDebugCode` is compiled in MSIL.|  
   
 ## Remarks  
+
  `ICorDebugCode` can represent either MSIL or native code. An "ICorDebugFunction" object that represents MSIL code can have either zero or one `ICorDebugCode` objects associated with it. An "ICorDebugFunction" object that represents native code can have any number of `ICorDebugCode` objects associated with it.  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

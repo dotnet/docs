@@ -987,7 +987,7 @@ BOOL CPropertySection::WriteToStream( IStream* pIStream )
 		return FALSE;
 	}
 
-	// Now seek to end of of the now written section
+	// Now seek to end of the now written section
 	LISet32(li, ulSeek.LowPart);
 	pIStream->Seek(li, STREAM_SEEK_SET, NULL);
 

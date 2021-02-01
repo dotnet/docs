@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 1c421b3a-5954-448c-bcac-a27798d1858f
 ---
 # Generation Operations (C#)
+
 Generation refers to creating a new sequence of values.  
   
  The standard query operator methods that perform generation are listed in the following section.  

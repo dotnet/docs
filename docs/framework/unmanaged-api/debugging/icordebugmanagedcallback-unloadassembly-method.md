@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback::UnloadAssembly Method
+
 Notifies the debugger that a common language runtime assembly has been unloaded.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT UnloadAssembly (
 ```  
   
 ## Parameters  
+
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain that contained the assembly.  
   
@@ -36,9 +38,11 @@ HRESULT UnloadAssembly (
  [in] A pointer to an ICorDebugAssembly object that represents the assembly.  
   
 ## Remarks  
+
  The assembly should not be used after this callback.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

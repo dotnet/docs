@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostMalloc Interface
+
 Provides methods that allow the common language runtime (CLR) to request fine-grained allocations from the heap through the host.  
   
 ## Methods  
@@ -27,9 +28,11 @@ Provides methods that allow the common language runtime (CLR) to request fine-gr
 |[Free Method](ihostmalloc-free-method.md)|Frees memory that was allocated by using the `Alloc` method.|  
   
 ## Remarks  
+
  The CLR gets an interface pointer to an `IHostMalloc` instance by calling the [IHostMemoryManager::CreateMalloc](ihostmemorymanager-createmalloc-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

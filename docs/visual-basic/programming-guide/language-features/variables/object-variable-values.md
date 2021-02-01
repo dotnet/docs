@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f
 ---
 # Object Variable Values (Visual Basic)
+
 A variable of the [Object Data Type](../../../language-reference/data-types/object-data-type.md) can refer to data of any type. The value you store in an `Object` variable is kept elsewhere in memory, while the variable itself holds a pointer to the data.  
   
 ## Object Classifier Functions  
+
  Visual Basic supplies functions that return information about what an `Object` variable refers to, as shown in the following table.  
   
 |Function|Returns True if the Object variable refers to|  
@@ -27,6 +29,7 @@ A variable of the [Object Data Type](../../../language-reference/data-types/obje
  You can use these functions to avoid submitting an invalid value to an operation or a procedure.  
   
 ## TypeOf Operator  
+
  You can also use the [TypeOf Operator](../../../language-reference/operators/typeof-operator.md) to determine whether an object variable currently refers to a specific data type. The `TypeOf`...`Is` expression evaluates to `True` if the run-time type of the operand is derived from or implements the specified type.  
   
  The following example uses `TypeOf` on object variables referring to value and reference types.  
@@ -58,6 +61,7 @@ If TypeOf frm Is Object Then Debug.WriteLine("frm is Object")
  The object variable `num` refers to data of type `Integer`, and `frm` refers to an object of class <xref:System.Windows.Forms.Form>.  
   
 ## Object Arrays  
+
  You can declare and use an array of `Object` variables. This is useful when you need to handle a variety of data types and object classes. All the elements in an array must have the same declared data type. Declaring this data type as `Object` allows you to store objects and class instances alongside other data types in the array.  
   
 ## See also

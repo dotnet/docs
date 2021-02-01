@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: e60f542f-6271-495b-a9e4-48553481c2a3
 ---
 # Performing Catalog Operations
+
 To execute a command to modify a database or catalog, such as the CREATE TABLE or CREATE PROCEDURE statement, create a **Command** object using the appropriate SQL statements and a **Connection** object. Execute the command with the **ExecuteNonQuery** method of the **Command** object.  
   
  The following code example creates a stored procedure in a Microsoft SQL Server database.  

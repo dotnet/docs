@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugCreateProcessFlags Enumeration
+
 Provides additional debugging options that can be used in a call to the [ICorDebug::CreateProcess](icordebug-createprocess-method.md) method.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ typedef enum CorDebugCreateProcessFlags {
 |`DEBUG_NO_SPECIAL_OPTIONS`|No special options are set.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

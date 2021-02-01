@@ -28,6 +28,7 @@ helpviewer_keywords:
 ms.assetid: a914adf8-e68f-4819-a6b1-200d1cf1c21c
 ---
 # How to: Define a Class That Can Provide Identical Functionality on Different Data Types (Visual Basic)
+
 You can define a class from which you can create objects that provide identical functionality on different data types. To do this, you specify one or more *type parameters* in the definition. The class can then serve as a template for objects that use various data types. A class defined in this way is called a *generic class*.  
   
  The advantage of defining a generic class is that you define it just once, and your code can use it to create many objects that use a wide variety of data types. This results in better performance than defining the class with the `Object` type.  

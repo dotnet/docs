@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 2aa18c85-a4fd-4bb9-986a-a8249e4f8e0e
 ---
 # Guide to the Documentation
+
 Provided here is guidance about the Windows Communication Foundation (WCF) documentation. The linked documents are recommended starting points grouped according to specific interests and levels of expertise.  
   
 ## New to Windows Communication Foundation Programming  
@@ -32,6 +33,7 @@ Provided here is guidance about the Windows Communication Foundation (WCF) docum
 - Configuration using XML files is a primary way of programming WCF services and clients. For reference documentation for the XML elements used in configuration files, see [WCF Configuration Schema](../configure-apps/file-schema/wcf/index.md).  
   
 ## Troubleshooting  
+
  For information about troubleshooting common WCF problems, see [WCF Troubleshooting Quickstart](wcf-troubleshooting-quickstart.md).  
   
 ## Using Windows Communication Foundation with Other Technologies  
@@ -51,6 +53,7 @@ Provided here is guidance about the Windows Communication Foundation (WCF) docum
 - To use WCF to consume a Web Services Extensions (WSE) 3.0 service, see [How to: Access a WSE 3.0 Service](./feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md).  
   
 ## WS-* Protocols Supported in Windows Communication Foundation  
+
  To see a list of protocols supported in the system-provided bindings, see [Web Services Protocols Supported by System-Provided Interoperability Bindings](./feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md). To see the list of system-provided bindings, see [System-Provided Bindings](system-provided-bindings.md).  
   
 ## See also

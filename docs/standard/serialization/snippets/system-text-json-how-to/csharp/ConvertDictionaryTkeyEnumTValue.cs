@@ -11,19 +11,24 @@ namespace SystemTextJsonSamples
 
             var weatherForecast = WeatherForecastFactories.CreateWeatherForecastWithEnumDictionary();
 
-            // <SnippetRegister>
-            var serializeOptions = new JsonSerializerOptions();
-            serializeOptions.Converters.Add(new DictionaryTKeyEnumTValueConverter());
-            // </SnippetRegister>
-            serializeOptions.WriteIndented = true;
+            // <Register>
+            var serializeOptions = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Converters =
+                {
+                    new DictionaryTKeyEnumTValueConverter()
+                }
+            };
+            // </Register>
             jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
-            // <SnippetDeserialize>
+            // <Deserialize>
             var deserializeOptions = new JsonSerializerOptions();
             deserializeOptions.Converters.Add(new DictionaryTKeyEnumTValueConverter());
             weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithEnumDictionary>(jsonString, deserializeOptions);
-            // </SnippetDeserialize>
+            // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }
     }

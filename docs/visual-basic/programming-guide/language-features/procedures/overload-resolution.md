@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
 ---
 # Overload Resolution (Visual Basic)
+
 When the Visual Basic compiler encounters a call to a procedure that is defined in several overloaded versions, the compiler must decide which of the overloads to call. It does this by performing the following steps:  
   
 1. **Accessibility.** It eliminates any overload with an access level that prevents the calling code from calling it.  
@@ -43,6 +44,7 @@ When the Visual Basic compiler encounters a call to a procedure that is defined 
  In the second call, the compiler cannot eliminate any of the overloads on the basis of narrowing. It eliminates the third overload for the same reason as in the first call, because it can call the second overload with less widening of the argument types. However, the compiler cannot resolve between the first and second overloads. Each has one defined parameter type that widens to the corresponding type in the other (`Byte` to `Short`, but `Single` to `Double`). The compiler therefore generates an overload resolution error.  
   
 ## Overloaded Optional and ParamArray Arguments  
+
  If two overloads of a procedure have identical signatures except that the last parameter is declared [Optional](../../../language-reference/modifiers/optional.md) in one and [ParamArray](../../../language-reference/modifiers/paramarray.md) in the other, the compiler resolves a call to that procedure as follows:  
   
 |If the call supplies the last argument as|The compiler resolves the call to the overload declaring the last argument as|  

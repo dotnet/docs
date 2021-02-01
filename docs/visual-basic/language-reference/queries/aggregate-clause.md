@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
 ---
 # Aggregate Clause (Visual Basic)
+
 Applies one or more aggregate functions to a collection.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ Aggregate element [As type] In collection _
 |`expressionList`|Required. One or more comma-delimited expressions that identify an aggregate function to apply to the collection. You can apply an alias to an aggregate function to specify a member name for the query result. If no alias is supplied, the name of the aggregate function is used. For examples, see the section about aggregate functions later in this topic.|  
   
 ## Remarks  
+
  The `Aggregate` clause can be used to include aggregate functions in your queries. Aggregate functions perform checks and computations over a set of values and return a single value. You can access the computed value by using a member of the query result type. The standard aggregate functions that you can use are the `All`, `Any`, `Average`, `Count`, `LongCount`, `Max`, `Min`, and `Sum` functions. These functions are familiar to developers who are familiar with aggregates in SQL. They are described in the following section of this topic.  
   
  The result of an aggregate function is included in the query result as a field of the query result type. You can supply an alias for the aggregate function result to specify the name of the member of the query result type that will hold the aggregate value. If no alias is supplied, the name of the aggregate function is used.  

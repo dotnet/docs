@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f2ed3774-78b9-4a15-b79b-655f1ad68b86
 ---
 # \<mexHttpsBinding>
+
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over HTTPS.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,6 +40,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 |`sendTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time provided for a send operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -47,6 +50,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  This binding is essentially a `WSHttpBinding` binding that supports transport-level security using certificates. For more information about configuring and using such a metadata endpoint, see [How to: Configure a Custom WS-Metadata Exchange Binding](../../../wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md), [How to: Retrieve Metadata Over a non-MEX Binding](../../../wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md), and the sample [Custom Secure Metadata Endpoint](../../../wcf/samples/custom-secure-metadata-endpoint.md).  
   
 ## See also

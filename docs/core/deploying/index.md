@@ -61,7 +61,7 @@ Publishing an app as framework-dependent produces a [cross-platform binary](#pro
 
 The cross-platform binary of your app can be run with the `dotnet <filename.dll>` command, and can be run on any platform. If the app uses a NuGet package that has platform-specific implementations, all platforms' dependencies are copied to the publish folder along with the app.
 
-You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder.
+You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder. If you don't need a platfrom-specific executable, you can specify `<UseAppHost>False</UseAppHost>` in the project file. For more information, see [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md#useapphost).
 
 ### Advantages
 
@@ -143,6 +143,34 @@ Publish an app self-contained. A Windows 64-bit executable is created.
 
 ```dotnet
 dotnet publish -r win-x64
+```
+
+## Publish with ReadyToRun images
+
+Publishing with ReadyToRun images will improve the startup time of your application at the cost of increasing the size of your application. In order to publish with ReadyToRun see [ReadyToRun](ready-to-run.md) for more details.
+
+### Advantages
+
+- **Improved startup time**\
+The application will spend less time running the JIT.
+
+### Disadvantages
+
+- **Larger size**\
+The application will be larger on disk.
+
+### Examples
+
+Publish an app self-contained and ReadyToRun. A macOS 64-bit executable is created.
+
+```dotnet
+dotnet publish -c Release -r osx-x64 -p:PublishReadyToRun=true
+```
+
+Publish an app self-contained and ReadyToRun. A Windows 64-bit executable is created.
+
+```dotnet
+dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true
 ```
 
 ## See also

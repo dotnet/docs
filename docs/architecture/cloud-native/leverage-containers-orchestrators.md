@@ -20,7 +20,7 @@ Although they have the benefit of simplicity, monolithic architectures face a nu
 
 ### Deployment
 
-Monolithic applications require a full deployment of the entire application, even if only a small change has been made. Full deployments can be expensive and error prone. Additionally, they require a restart of the application, which temporarily impacts unavailability.
+Additionally, they require a restart of the application, which may temporarily impact availability if zero-downtime techniques are not applied while deploying.
 
 ### Scaling
 
@@ -178,13 +178,13 @@ Visual Studio supports Docker development for web-based applications. When you c
 
 When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example Dockerfile is shown in Figure 3-6.git
 
-```docker
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+```dockerfile
+FROM mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["eShopWeb/eShopWeb.csproj", "eShopWeb/"]
 RUN dotnet restore "eShopWeb/eShopWeb.csproj"
@@ -209,9 +209,9 @@ The default behavior when the app runs is configured to use Docker as well. Figu
 
 **Figure 3-7**. Visual Studio Docker Run Options
 
-In addition to local development, [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-7, you can also run the application in Azure Dev Spaces.
+In addition to local development, [Azure Dev Spaces](/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-7, you can also run the application in Azure Dev Spaces.
 
-Also, at any time you can add Docker support to an existing ASP.NET Core application. From the Visual Studio Solution Explorer, right click on the project and **Add** > **Docker Support**, as shown in Figure 3-8.
+Also, at any time you can add Docker support to an existing ASP.NET Core application. From the Visual Studio Solution Explorer, right-click on the project and select **Add** > **Docker Support**, as shown in Figure 3-8.
 
 ![Visual Studio Add Docker Support](./media/visual-studio-add-docker-support.png)
 

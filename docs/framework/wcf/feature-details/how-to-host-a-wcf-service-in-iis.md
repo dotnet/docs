@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: b044b1c9-c1e5-4c9f-84d8-0f02f4537f8b
 ---
 # How to: Host a WCF Service in IIS
+
 This topic outlines the basic steps required to create a Windows Communication Foundation (WCF) service that is hosted in Internet Information Services (IIS). This topic assumes you are familiar with IIS and understand how to use the IIS management tool to create and manage IIS applications. For more information about IIS see [Internet Information Services](https://www.iis.net/). A WCF service that runs in the IIS environment takes full advantage of IIS features, such as process recycling, idle shutdown, process health monitoring, and message-based activation. This hosting option requires that IIS be properly configured, but it does not require that any hosting code be written as part of the application. You can use IIS hosting only with an HTTP transport.  
   
  For more information about how WCF and ASP.NET interact, see [WCF Services and ASP.NET](wcf-services-and-aspnet.md). For more information about configuring security, see [Security](security.md).  
@@ -16,7 +17,7 @@ This topic outlines the basic steps required to create a Windows Communication F
   
 ### To create a service hosted by IIS  
   
-1. Confirm that IIS is installed and running on your computer. For more information about installing and configuring IIS see [Installing and Configuring IIS 7.0](https://docs.microsoft.com/iis/install/installing-iis-7/installing-necessary-iis-components-on-windows-vista)  
+1. Confirm that IIS is installed and running on your computer. For more information about installing and configuring IIS see [Installing and Configuring IIS 7.0](/iis/install/installing-iis-7/installing-necessary-iis-components-on-windows-vista)  
   
 2. Create a new folder for your application files called "IISHostedCalcService", ensure that ASP.NET has access to the contents of the folder, and use the IIS management tool to create a new IIS application that is physically located in this application directory. When creating an alias for the application directory use "IISHostedCalc".  
   
@@ -64,6 +65,7 @@ This topic outlines the basic steps required to create a Windows Communication F
 11. To make sure the service is hosted correctly, open an instance of Internet Explorer and browse to the service's URL: `http://localhost/IISHostedCalc/Service.svc`  
   
 ## Example  
+
  The following is a complete listing of the code for the IIS hosted calculator service.  
   
  [!code-csharp[C_HowTo_HostInIIS#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/cs/source.cs#1)]
@@ -76,4 +78,4 @@ This topic outlines the basic steps required to create a Windows Communication F
 - [Hosting Services](../hosting-services.md)
 - [WCF Services and ASP.NET](wcf-services-and-aspnet.md)
 - [Security](security.md)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

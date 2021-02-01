@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: df98a4db-b00d-4c8b-bd74-0d285f27e1df
 ---
 # UNION (Entity SQL)
+
 Combines the results of two or more queries into a single collection.  
   
 ## Syntax  
@@ -15,6 +16,7 @@ expression
 ```  
   
 ## Arguments  
+
  `expression`  
  Any valid query expression that returns a collection to combine with the collection All expressions must be of the same type or of a common base or derived type as `expression`.  
   
@@ -25,12 +27,15 @@ expression
  Specifies that multiple collections are to be combined and returned as a single collection, including duplicates. If not specified, duplicates are removed from the result collection.  
   
 ## Return Value  
+
  A collection of the same type or of a common base or derived type as `expression`.  
   
 ## Remarks  
+
  UNION is one of the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators. All [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators are evaluated from left to right. For precedence information for the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators, see [EXCEPT](except-entity-sql.md).  
   
 ## Example  
+
  The following Entity SQL query uses the UNION ALL operator to combine the results of two queries into a single collection. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
 1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  

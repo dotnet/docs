@@ -50,4 +50,4 @@ The **DebuggableAttribute** applies to a whole assembly at a time, not to indivi
 
 - [Debugging, Tracing, and Profiling](index.md)
 - [Enabling JIT-Attach Debugging](enabling-jit-attach-debugging.md)
-- [Enabling Profiling](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/s5ec0es1(v=vs.100))
+- [Enabling Profiling](/previous-versions/dotnet/netframework-4.0/s5ec0es1(v=vs.100))

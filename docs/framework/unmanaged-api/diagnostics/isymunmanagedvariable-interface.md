@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedVariable Interface
+
 Represents a variable, such as a parameter, a local variable, or a field.  
   
 ## Methods  
@@ -33,6 +34,7 @@ Represents a variable, such as a parameter, a local variable, or a field.
 |[GetStartOffset Method](isymunmanagedvariable-getstartoffset-method.md)|Gets the start offset of this variable within its parent.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

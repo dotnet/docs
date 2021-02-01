@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
 ---
 # Class Statement (Visual Basic)
+
 Declares the name of a class and introduces the definition of the variables, properties, events, and procedures that the class comprises.  
   
 ## Syntax  
@@ -49,6 +50,7 @@ End Class
 |`End Class`|Required. Terminates the `Class` definition.|  
   
 ## Remarks  
+
  A `Class` statement defines a new data type. A *class* is a fundamental building block of object-oriented programming (OOP). For more information, see [Objects and Classes](../../programming-guide/language-features/objects-and-classes/index.md).  
   
  You can use `Class` only at namespace or module level. This means the *declaration context* for a class must be a source file, namespace, class, structure, module, or interface, and cannot be a procedure or block. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).  
@@ -88,6 +90,7 @@ End Class
      If code inside a nested class makes an unqualified reference to a programming element, Visual Basic searches for the element first in the nested class, then in its containing class, and so on out to the outermost containing element.  
   
 ## Classes and Modules  
+
  These elements have many similarities, but there are some important differences as well.  
   
 - **Terminology.** Previous versions of Visual Basic recognize two types of modules: *class modules* (.cls files) and *standard modules* (.bas files). The current version calls these *classes* and *modules*, respectively.  
@@ -97,6 +100,7 @@ End Class
 - **Object Orientation.** Classes are object-oriented, but modules are not. You can create one or more instances of a class. For more information, see [Objects and Classes](../../programming-guide/language-features/objects-and-classes/index.md).  
   
 ## Example  
+
  The following example uses a `Class` statement to define a class and several members.  
   
  [!code-vb[VbVbalrStatements#62](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#62)]  

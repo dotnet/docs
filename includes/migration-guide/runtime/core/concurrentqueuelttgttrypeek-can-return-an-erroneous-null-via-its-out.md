@@ -12,8 +12,16 @@ This issue is fixed in the .NET Framework 4.5.1. Upgrading to that Framework wil
 |:--------|:------------|
 | Scope   |Major|
 |Version|4.5|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Collections.Concurrent.ConcurrentQueue%601.TryPeek(%600@)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Collections.Concurrent.ConcurrentQueue%601.TryPeek(%600@)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- ``M:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek(`0@)``
+
+-->

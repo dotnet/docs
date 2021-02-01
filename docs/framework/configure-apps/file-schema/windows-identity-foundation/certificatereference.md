@@ -5,6 +5,7 @@ ms.assetid: 2ac8bc14-e9f1-48fb-b662-f5991558fbe4
 author: "BrucePerlerMS"
 ---
 # \<certificateReference>
+
 Specifies settings that are used to find and validate an X.509 certificate in a certificate store.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ Specifies settings that are used to find and validate an X.509 certificate in a 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -45,6 +47,7 @@ Specifies settings that are used to find and validate an X.509 certificate in a 
 |isChainIncluded|Specifies whether validation should be performed by using the certificate chain. The default is "true"; validation is performed by using the certificate chain. Optional.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -54,4 +57,5 @@ Specifies settings that are used to find and validate an X.509 certificate in a 
 |[\<serviceCertificate>](servicecertificate.md)|Configures the certificate that is used to encrypt and decrypt tokens.|  
   
 ## Remarks  
+
  The `<certificateReference>` element specifies settings that are used to find and validate an X.509 certificate in a certificate store. When it is specified as the child element of the `<serviceCertificate>` element, it specifies the location and verification settings of the X.509 certificate that is used to encrypt and decrypt tokens. The `<certificateReference>` element is represented by the <xref:System.ServiceModel.Configuration.CertificateReferenceElement> class.

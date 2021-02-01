@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 8ee19f95-a9ef-4033-963b-d224dca207c4
 ---
 # How to: Create a Procedure that Returns a Value (Visual Basic)
+
 You use a `Function` procedure to return a value to the calling code.  
   
 ### To create a procedure that returns a value  

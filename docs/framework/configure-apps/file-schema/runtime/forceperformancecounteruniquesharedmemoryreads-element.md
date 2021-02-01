@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 91149858-4810-4f65-9b48-468488172c9b
 ---
 # \<forcePerformanceCounterUniqueSharedMemoryReads> Element
+
 Specifies whether PerfCounter.dll uses the CategoryOptions registry setting in a .NET Framework version 1.1 application to determine whether to load performance counter data from category-specific shared memory or global memory.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,6 +22,7 @@ enabled="true|false"/>
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +39,7 @@ enabled="true|false"/>
 |`true`|PerfCounter.dll does use the CategoryOptions registry setting.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -47,6 +50,7 @@ enabled="true|false"/>
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  In versions of the .NET Framework before the .NET Framework 4, the version of PerfCounter.dll that was loaded corresponded to the runtime that was loaded in the process. If a computer had both the .NET Framework version 1.1 and the .NET Framework 2.0 installed, a .NET Framework 1.1 application would load the .NET Framework 1.1 version of PerfCounter.dll. Starting with the .NET Framework 4, the newest installed version of PerfCounter.dll is loaded. This means that a .NET Framework 1.1 application will load the .NET Framework 4 version of PerfCounter.dll if the .NET Framework 4 is installed on the computer.  
   
  Starting with the .NET Framework 4, when consuming performance counters, PerfCounter.dll checks the CategoryOptions registry entry for each provider to determine whether it should read from category-specific shared memory or global shared memory. The .NET Framework 1.1 PerfCounter.dll does not read that registry entry, because it is not aware of category-specific shared memory; it always reads from global shared memory.  
@@ -61,6 +65,7 @@ enabled="true|false"/>
  The settings 0 and 1 can lead to memory leaks and the filling up of performance counter memory.  
   
 ## Example  
+
  The following example shows how to specify that PerfCounter.dll should reference the CategoryOptions registry entry to determine whether it should use category-specific shared memory.  
   
 ```xml  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # EmbedResource Method
+
 Declares an embedded resource. This method does not actually embed the resource.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT EmbedResource(
 ```  
   
 ## Parameters  
+
  `AssemblyID`  
  ID of the assembly.  
   
@@ -48,9 +50,11 @@ HRESULT EmbedResource(
  Accessibility flags such as `mrPublic` and `mrPrivate`. These flags may be passed to [DefineExportedType Method](../metadata/imetadataassemblyemit-defineexportedtype-method.md).  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h.  
   
 ## See also

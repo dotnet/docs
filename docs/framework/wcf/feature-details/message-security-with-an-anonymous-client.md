@@ -139,4 +139,4 @@ The following code configures the client.
 - [Distributed Application Security](distributed-application-security.md)
 - [Message Security Anonymous](../samples/message-security-anonymous.md)
 - [Service Identity and Authentication](service-identity-and-authentication.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

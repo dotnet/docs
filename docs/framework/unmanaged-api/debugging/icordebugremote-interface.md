@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugRemote Interface
+
 Provides the ability to launch or attach a managed debugger to a remote target process.  
   
 ## Syntax  
@@ -58,9 +59,11 @@ interface ICorDebugRemote : IUnknown
 |[ICorDebugRemote::DebugActiveProcessEx Method](icordebugremote-debugactiveprocessex-method.md)|Launches a process on a remote machine under the debugger.|  
   
 ## Remarks  
+
  Currently, this functionality is supported only for debugging a Silverlight-based application target that is running on a remote Macintosh machine.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

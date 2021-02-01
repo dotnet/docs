@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 90abece1-392e-4ade-94a1-30c75b0f7074
 ---
 # ICorDebugVariableSymbol::GetValue Method
+
 Gets the value of a variable as a byte array.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ HRESULT GetValue(
 ```  
   
 ## Parameters  
+
  `offset`  
  [in] The starting offset in the variable from which to read the value. This parameter is used when reading member fields in an object.  
   
@@ -44,6 +46,7 @@ HRESULT GetValue(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

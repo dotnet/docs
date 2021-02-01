@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: f584056e-5eb7-401f-b43d-d08252e66d1c
 ---
 # Argument 'Access' is not valid. Valid values for Append mode are 'OpenAccess.Write' and 'OpenAccess.Default'
+
 An access value is not valid in Append mode.  
   
 ## To correct this error  

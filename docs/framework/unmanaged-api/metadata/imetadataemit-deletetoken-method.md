@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DeleteToken Method
+
 Deletes the specified token from the current metadata scope.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT DeleteToken (
 ```  
   
 ## Parameters  
+
  `tkObj`  
  [in] The token to be deleted.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

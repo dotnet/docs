@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -14,20 +13,17 @@ namespace SystemTextJsonSamples
             WeatherForecast weatherForecast = WeatherForecastFactories.CreateWeatherForecast();
             weatherForecast.DisplayPropertyValues();
 
-            // <SnippetSerialize>
-            using (FileStream fs = File.Create(fileName))
-            {
-                await JsonSerializer.SerializeAsync(fs, weatherForecast);
-            }
-            // </SnippetSerialize>
+            // <Serialize>
+            using FileStream createStream = File.Create(fileName);
+            await JsonSerializer.SerializeAsync(createStream, weatherForecast);
+            // </Serialize>
             Console.WriteLine($"The result is in {fileName}\n");
+            await createStream.DisposeAsync();
 
-            // <SnippetDeserialize>
-            using (FileStream fs = File.OpenRead(fileName))
-            {
-                weatherForecast = await JsonSerializer.DeserializeAsync<WeatherForecast>(fs);
-            }
-            // </SnippetDeserialize>
+            // <Deserialize>
+            using FileStream openStream = File.OpenRead(fileName);
+            weatherForecast = await JsonSerializer.DeserializeAsync<WeatherForecast>(openStream);
+            // </Deserialize>
             weatherForecast.DisplayPropertyValues();
         }
     }

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 18737989-0502-4367-b5f6-617ebfb77c96
 ---
 # Workflow Tracing
+
 Workflow tracing offers a way to capture diagnostic information using .NET Framework trace listeners. Tracing can be enabled if a problem is detected with the application and then disabled again once the problem is resolved. There are two ways you could enable debug tracing for workflows. You can configure it using the Event Trace viewer or you can use <xref:System.Diagnostics> to send trace events to a file.  
   
 ## Enabling Debug Tracing in ETW  
+
  To enable tracing using ETW, enable the Debug channel in Event Viewer:  
   
 1. Navigate to analytic and debug logs node in Event Viewer.  
@@ -35,6 +37,7 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 > If you are using the .NET Framework 4 Client Profile, you must first register the ETW manifest by running the following command from the .NET Framework 4 directory: `ServiceModelReg.exe –i –c:etw`  
   
 ## Enabling Debug Tracing using System.Diagnostics  
+
  These listeners can be configured in the App.config file of the workflow application, or the Web.config for a workflow service. In this example, a <xref:System.Diagnostics.TextWriterTraceListener> is configured to save tracing information to the MyTraceLog.txt file in the current directory.  
   
 ```xml  
@@ -65,5 +68,5 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
   
 ## See also
 
-- [Windows Server App Fabric Monitoring](https://docs.microsoft.com/previous-versions/appfabric/ee677251(v=azure.10))
-- [Monitoring Applications with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677276(v=azure.10))
+- [Windows Server App Fabric Monitoring](/previous-versions/appfabric/ee677251(v=azure.10))
+- [Monitoring Applications with App Fabric](/previous-versions/appfabric/ee677276(v=azure.10))

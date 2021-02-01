@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 634c1cee-5e01-48d0-88d7-2dd55e4a9e52
 ---
 # XML Comment Literal (Visual Basic)
+
 A literal representing an <xref:System.Xml.Linq.XComment> object.  
   
 ## Syntax  
@@ -28,9 +29,11 @@ A literal representing an <xref:System.Xml.Linq.XComment> object.
 |`-->`|Required. Denotes the end of the XML comment.|  
   
 ## Return Value  
+
  An <xref:System.Xml.Linq.XComment> object.  
   
 ## Remarks  
+
  XML comment literals do not contain document content; they contain information about the document. The XML comment section ends with the sequence "-->". This implies the following points:  
   
 - You cannot use an embedded expression in an XML comment literal because the embedded expression delimiters are valid XML comment content.  
@@ -45,6 +48,7 @@ A literal representing an <xref:System.Xml.Linq.XComment> object.
  The Visual Basic compiler converts the XML comment literal to a call to the <xref:System.Xml.Linq.XComment.%23ctor%2A> constructor.  
   
 ## Example  
+
  The following example creates an XML comment that contains the text "This is a comment".  
   
  [!code-vb[VbXMLSamples#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples4.vb#9)]  

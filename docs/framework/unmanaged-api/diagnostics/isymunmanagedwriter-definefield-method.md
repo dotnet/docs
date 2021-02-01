@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter::DefineField Method
+
 Defines a single variable that is not within a method. This method is used for certain fields in classes, bit fields, and so on.  
   
 ## Syntax  
@@ -35,6 +36,7 @@ HRESULT DefineField(
 ```  
   
 ## Parameters  
+
  `parent`  
  [in] The metadata type or method token.  
   
@@ -63,9 +65,11 @@ HRESULT DefineField(
  [in] The third address for the field specification.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

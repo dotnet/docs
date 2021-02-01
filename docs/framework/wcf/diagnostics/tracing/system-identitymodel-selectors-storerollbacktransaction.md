@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 09240dce-9e62-4f00-9f37-9dbe90a09af2
 ---
 # System.IdentityModel.Selectors.StoreRollbackTransaction
+
 System.IdentityModel.Selectors.StoreRollbackTransaction  
   
 ## Description  
+
  Rolling back the transaction, see the previous error.  
   
 ## See also

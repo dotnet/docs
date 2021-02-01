@@ -17,7 +17,7 @@ This Library includes out-of-the-box a Fault Contract Exception Handler. This ex
 
 Application blocks aim to incorporate commonly used best practices and provide a common approach for exception handling throughout your application. On the other hand, custom error handlers and fault contracts developed on one’s own can also be very useful. For instance, custom error handlers provide an excellent opportunity to automatically promote all exceptions to FaultExceptions and also to add logging capabilities to your application.
 
-For more information, please see [Microsoft Enterprise Library](https://docs.microsoft.com/previous-versions/msp-n-p/ff632023(v=pandp.10)).
+For more information, please see [Microsoft Enterprise Library](/previous-versions/msp-n-p/ff632023(v=pandp.10)).
 
 ## Dealing with expected exceptions
 

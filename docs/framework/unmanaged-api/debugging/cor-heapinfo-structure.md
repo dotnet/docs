@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_HEAPINFO Structure
+
 Provides general information about the garbage collection heap, including whether it is enumerable.  
   
 ## Syntax  
@@ -41,11 +42,13 @@ typedef struct _COR_HEAPINFO {
 |`gcType`|A member of the [CorDebugGCType](cordebuggctype-enumeration.md) enumeration that indicates whether the garbage collector is running on a workstation or a server.|  
   
 ## Remarks  
+
  An instance of the `COR_HEAPINFO` structure is returned by calling the [ICorDebugProcess5::GetGCHeapInformation](icordebugprocess5-getgcheapinformation-method.md) method.  
   
  Before enumerating objects on the garbage collection heap, you must always check the `areGCStructuresValid` field to ensure that the heap is in an enumerable state. For more information, see the [ICorDebugProcess5::GetGCHeapInformation](icordebugprocess5-getgcheapinformation-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

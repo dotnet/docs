@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
 ---
 # How to: Calculate Numeric Values (Visual Basic)
+
 You can calculate numeric values through the use of numeric expressions. A *numeric expression* is an expression that contains literals, constants, and variables representing numeric values, and operators that act on those values.  
   
 ## Calculating Numeric Values  
@@ -44,6 +45,7 @@ You can calculate numeric values through the use of numeric expressions. A *nume
      For more information, see [Statements](../../../language-reference/statements/index.md).  
   
 ## Multiple Operators  
+
  If the numeric expression contains more than one operator, the order in which they are evaluated is determined by the rules of operator precedence. To override the rules of operator precedence, you enclose expressions in parentheses, as in the above example; the enclosed expressions are evaluated first.  
   
 #### To override normal operator precedence  

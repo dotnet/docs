@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugHeapSegmentEnum::Next Method
+
 Gets the specified number of [COR_SEGMENT](cor-segment-structure.md) instances that contain information about memory regions of the managed heap.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT Next(
 ```  
   
 ## Parameters  
+
  celt  
  [in] The number of segments to be retrieved.  
   
@@ -41,6 +43,7 @@ HRESULT Next(
 ## Remarks  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

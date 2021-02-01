@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 07a4584d-9fd8-4a1d-b7d9-ccf2efa5c84e
 ---
 # How to: Sort Query Results by Using LINQ (Visual Basic)
+
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
   
  The following example shows how to create a new application that performs queries against a SQL Server database and sorts the results by multiple fields by using the `Order By` clause. The sort order for each field can be ascending order or descending order. For more information, see [Order By Clause](../../../language-reference/queries/order-by-clause.md).  

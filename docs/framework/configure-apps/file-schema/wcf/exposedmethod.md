@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 61c938cd-4ee9-4b06-ab28-922ef491ab11
 ---
 # \<exposedMethod>
+
 Represents a COM+ method that is exposed when the interface on a COM+ component is exposed as a Web service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
 |name|A string that contains the COM+ method that is exposed when the interface on a COM+ component is exposed as a Web service.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -44,6 +47,7 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
 |[\<exposedMethods>](exposedmethods.md)|A collection of [\<exposedMethod>](exposedmethod.md) elements.|  
   
 ## Remarks  
+
  The COM+ integration configuration tool (ComSvcConfig.exe) can be used to add specific methods from a COM interface to appear on the generated service contract.  
   
  For example, you can use the following command to add the three named methods from the `IFinances` COM interface on the `ItemOrders`.Financial component, to the generated service contract.  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataTables Interface
+
 Provides methods for the storage and retrieval of metadata information in tables.  
   
 ## Methods  
@@ -43,6 +44,7 @@ Provides methods for the storage and retrieval of metadata information in tables
 |[GetUserStringHeapSize Method](imetadatatables-getuserstringheapsize-method.md)|Gets the size, in bytes, of the user string heap.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
 ---
 # \<comContract>
+
 Specifies a COM+ integration service contract.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -39,6 +40,7 @@ Specifies a COM+ integration service contract.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -65,6 +67,7 @@ Specifies a COM+ integration service contract.
 |comContracts|Contains a collection of `comContract` elements.|  
   
 ## Remarks  
+
  COM+ integration service contracts are currently restricted to the `http://tempuri.org` namespace, and contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section, as well as the `comContract` element in the configuration file. For example, you can use the following configuration to specify the namespace, contract name, and user defined types to be included, as well as other settings for a service contract.  
   
 ```xml  

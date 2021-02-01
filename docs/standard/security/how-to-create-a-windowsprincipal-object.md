@@ -1,7 +1,6 @@
 ---
 title: "How to: Create a WindowsPrincipal Object"
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
@@ -78,4 +77,4 @@ If code must repeatedly perform role-based validation, the first of the followin
 ## See also
 
 - [Principal and Identity Objects](principal-and-identity-objects.md)
-- [ASP.NET Core Security](https://docs.microsoft.com/aspnet/core/security/)
+- [ASP.NET Core Security](/aspnet/core/security/)

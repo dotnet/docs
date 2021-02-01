@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 54203dfa-c24b-463f-9942-d5153e89e762
 ---
 # How to: Define a Conversion Operator (Visual Basic)
+
 If you have defined a class or structure, you can define a type conversion operator between the type of your class or structure and another data type (such as `Integer`, `Double`, or `String`).  
   
  Define the type conversion as a [CType Function](../../../language-reference/functions/ctype-function.md) procedure within the class or structure. All conversion procedures must be `Public Shared`, and each one must specify either [Widening](../../../language-reference/modifiers/widening.md) or [Narrowing](../../../language-reference/modifiers/narrowing.md).  
@@ -18,6 +19,7 @@ If you have defined a class or structure, you can define a type conversion opera
  Defining an operator on a class or structure is also called *overloading* the operator.  
   
 ## Example  
+
  The following example defines conversion operators between a structure called `digit` and a `Byte`.  
   
  [!code-vb[VbVbcnProcedures#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#27)]  

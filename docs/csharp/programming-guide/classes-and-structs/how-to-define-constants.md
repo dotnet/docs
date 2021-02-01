@@ -5,9 +5,12 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, constants"
   - "constants [C#]"
+ms.topic: how-to
+ms.custom: contperf-fy21q2
 ms.assetid: 43f511be-346c-4b8a-995e-aded94542ece
 ---
 # How to define constants in C\#
+
 Constants are fields whose values are set at compile time and can never be changed. Use constants to provide meaningful names instead of numeric literals ("magic numbers") for special values.  
   
 > [!NOTE]
@@ -18,7 +21,8 @@ Constants are fields whose values are set at compile time and can never be chang
  To define non-integral constants, one approach is to group them in a single static class named `Constants`. This will require that all references to the constants be prefaced with the class name, as shown in the following example.  
   
 ## Example  
- [!code-csharp[csProgGuideObjects#89](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#89)]  
+
+ [!code-csharp[constants](snippets/how-to-define-constants/Program.cs)]  
   
  The use of the class name qualifier helps ensure that you and others who use the constant understand that it is constant and cannot be modified.  
   

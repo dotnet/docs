@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 7ab28021-4d15-4d9c-bf2e-6ccc0daa7d1a
 ---
 # How to: Represent Columns as Class Members
+
 Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute to associate a field or property with a database column.  
   
 ### To map a field or property to a database column  
@@ -14,6 +15,7 @@ Use the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xre
 - Add the <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute to the property or field declaration.  
   
 ## Example  
+
  The following code maps the `CustomerID` field in the `Customer` class to the `CustomerID` column in the `Customers` database table.  
   
  [!code-csharp[DLinqCustomize#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#2)]

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d7116240-845c-4b6f-b203-262de6b597ef
 ---
 # \<transport> of \<peerTransport>
+
 Specifies the transport type for secured messages sent by peers configured with this binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ Specifies the transport type for secured messages sent by peers configured with 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -40,6 +42,7 @@ Specifies the transport type for secured messages sent by peers configured with 
 |Password|Authentication of the peer channel transport requires a correct password.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -49,6 +52,7 @@ Specifies the transport type for secured messages sent by peers configured with 
 |[\<security>](security-of-peertransport.md)|Defines the security settings for a peer transport.|  
   
 ## Remarks  
+
  This element is set only if the mode attribute of [\<security>](security-of-peertransport.md) is set to `Transport` or `TransportWithMessageCredential`.  
   
 ## See also

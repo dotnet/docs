@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 297878d0-685b-4c01-b2e0-9d731b7322bc
 ---
 # Querying Across Relationships
+
 References to other objects or collections of other objects in your class definitions directly correspond to foreign-key relationships in the database. You can use these relationships when you query by using dot notation to access the relationship properties and navigate from one object to another. These access operations translate to more complex joins or correlated subqueries in the equivalent SQL.  
   
  For example, the following query navigates from orders to customers as a way to restrict the results to only those orders for customers located in London.  

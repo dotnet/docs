@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: d8e6a11b-f549-43b5-8337-0594340e1325
 ---
 # SimplifiedChinese and VbStrConv.TraditionalChinese cannot be combined
+
 Your application is attempting to combine the `VbStrConv` enumeration members `SimplifiedChinese` and `TraditionalChinese`, which are mutually exclusive.  
   
 ## To correct this error  

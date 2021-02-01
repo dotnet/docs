@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetPropertyProps Method
+
 Sets the features stored in metadata for a property defined by a prior call to [DefineProperty Method](imetadataemit-defineproperty-method.md).  
   
 ## Syntax  
@@ -35,6 +36,7 @@ HRESULT SetPropertyProps (
 ```  
   
 ## Parameters  
+
  `pr`  
  [in] The token for the property to be changed  
   
@@ -60,6 +62,7 @@ HRESULT SetPropertyProps (
  [in] An array of other methods associated with the property. Terminate this array with an `mdTokenNil` token.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

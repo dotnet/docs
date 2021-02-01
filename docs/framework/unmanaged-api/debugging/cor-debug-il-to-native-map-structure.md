@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_DEBUG_IL_TO_NATIVE_MAP Structure
+
 Contains the offsets that are used to map Microsoft intermediate language (MSIL) code to native code.  
   
 ## Syntax  
@@ -37,6 +38,7 @@ typedef struct COR_DEBUG_IL_TO_NATIVE_MAP {
 |`nativeEndOffset`|The offset of the end of the native code.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorDebug.idl  

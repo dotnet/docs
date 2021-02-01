@@ -18,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: 6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed
 ---
 # Using Secure Sockets Layer
+
 The <xref:System.Net> classes use the Secure Sockets Layer (SSL) to encrypt the connection for several network protocols.  
   
  For http connections, the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes use SSL to communicate with web hosts that support SSL. The decision to use SSL is made by the <xref:System.Net.WebRequest> class, based on the URI it is given. If the URI begins with "https:", SSL is used; if the URI begins with "http:", an unencrypted connection is used.  
@@ -53,6 +54,7 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 ```  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the **System.Net** namespace.  

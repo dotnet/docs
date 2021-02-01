@@ -14,7 +14,7 @@ The Windows Forms Framework is continuing to improve how it works with accessibi
 In order for the application to benefit from these changes, it must run on the .NET Framework 4.8. The application can opt in into these changes in either of the following ways:
 
 - It is recompiled to target the .NET Framework 4.8. These accessibility changes are enabled by default on Windows Forms applications that target the .NET Framework 4.8.
-- It targets the .NET Framework 4.7.2 or earlier version and opts out of the legacy accessibility behaviors by adding the following [AppContext switch](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element) to the `<runtime>` section of the app config file and setting it to `false`, as the following example shows.
+- It targets the .NET Framework 4.7.2 or earlier version and opts out of the legacy accessibility behaviors by adding the following [AppContext switch](../../../../docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) to the `<runtime>` section of the app config file and setting it to `false`, as the following example shows.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -65,7 +65,7 @@ Note that enabling this feature requires opting in to the aforementioned accessi
 **Improved ProgressBar Accessibility support**
 
 - Enabled UI Automation support for the <xref:System.Windows.Forms.ProgressBar> control with the ability to use UI Automation notifications and other UI Automation features. Developers are now able to use UI Automation notifications which Narrator can announce to indicate progress.
-For an overview of UI automation events overview, including UI automation notification events, see the [UI Automation Events Overview](https://docs.microsoft.com/windows/desktop/WinAuto/uiauto-eventsoverview).
+For an overview of UI automation events overview, including UI automation notification events, see the [UI Automation Events Overview](/windows/desktop/WinAuto/uiauto-eventsoverview).
 
 **Improved PropertyGrid Accessibility support**
 
@@ -82,7 +82,7 @@ For an overview of UI automation events overview, including UI automation notifi
 **Improved Visual cues**
 
 - An empty <xref:System.Windows.Forms.CheckedListBox> control now displays a focus indicator when it receives focus.
-Note: UI automation support is enabled for controls in runtime but is not used in design time. For an overview of UI automation, see the [UI Automation Overview](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-overview).
+Note: UI automation support is enabled for controls in runtime but is not used in design time. For an overview of UI automation, see the [UI Automation Overview](../../../../docs/framework/ui-automation/ui-automation-overview.md).
 
 **Invoking controls' ToolTips with a keyboard**
 

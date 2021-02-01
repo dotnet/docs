@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
 ---
 # \<messageSenderAuthentication> element
+
 Specifies authentication options for peer-to-peer message senders.  
   
  For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md).  
@@ -27,6 +28,7 @@ Specifies authentication options for peer-to-peer message senders.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -63,6 +65,7 @@ Specifies authentication options for peer-to-peer message senders.
 |Enumeration|One of the following values: `LocalMachine` or `CurrentUser`. The default is `CurrentUser`. If the client application is running under a system account then the certificate is typically under `LocalMachine`. If the client application is running under a user account then the certificate is typically in `CurrentUser`. The default is `CurrentUser`.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -72,9 +75,11 @@ Specifies authentication options for peer-to-peer message senders.
 |[\<peer>](peer-of-clientcredentials-element.md)|Specifies a credential used for authenticating the client to a peer service.|  
   
 ## Remarks  
+
  This element must be configured if message authentication is chosen. For output channels, each message is signed using the certificate provided by [\<certificate>](certificate-element.md). All messages, before delivered to the application, are checked against the message credential using the validator specified by the `customCertificateValidatorType` attribute of this element. The validator can either accept or reject the credential.  
   
 ## Example  
+
  The following code sets the message sender validation mode to `PeerOrChainTrust`.  
   
 ```xml  
@@ -103,6 +108,6 @@ Specifies authentication options for peer-to-peer message senders.
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
-- [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Peer Channel Message Authentication](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Peer Channel Custom Authentication](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Securing Peer Channel Applications](../../../wcf/feature-details/securing-peer-channel-applications.md)

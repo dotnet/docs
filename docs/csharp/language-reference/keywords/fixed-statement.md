@@ -1,4 +1,5 @@
 ---
+description: "fixed Statement - C# Reference"
 title: "fixed Statement - C# Reference"
 ms.date: 05/10/2018
 f1_keywords: 

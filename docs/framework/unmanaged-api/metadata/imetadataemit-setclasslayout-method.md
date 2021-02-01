@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetClassLayout Method
+
 Completes the layout of fields for a class that has been defined by a prior call to [DefineTypeDef Method](imetadataemit-definetypedef-method.md).  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT SetClassLayout (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] An `mdTypeDef` token that specifies the class to be laid out.  
   
@@ -44,6 +46,7 @@ HRESULT SetClassLayout (
  [in] The size, in bytes, of the class.  
   
 ## Remarks  
+
  The class is initially defined by calling the [IMetaDataEmit::DefineTypeDef](imetadataemit-definetypedef-method.md) method, and specifying one of three layouts for the fields of the class: automatic, sequential, or explicit. Normally, you would use automatic layout and let the runtime choose the best way to lay out the fields.  
   
  However, you might want the fields laid out according to the arrangement that unmanaged code uses. In this case, choose either sequential or explicit layout and call `SetClassLayout` to complete the layout of the fields:  
@@ -53,6 +56,7 @@ HRESULT SetClassLayout (
 - Explicit layout: Either specify the offset of each field or specify the class size and the packing size.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

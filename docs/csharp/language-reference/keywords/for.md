@@ -1,4 +1,5 @@
 ---
+description: "for statement - C# reference"
 title: for statement - C# reference
 ms.date: 06/13/2018
 f1_keywords:

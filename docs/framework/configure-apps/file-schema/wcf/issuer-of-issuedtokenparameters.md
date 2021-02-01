@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d6a95f32-d58c-40fc-8658-dd92564d3c90
 ---
 # \<issuer> of \<issuedTokenParameters>
+
 Specifies the Security Token Service (STS) that issues security tokens.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,6 +23,7 @@ Specifies the Security Token Service (STS) that issues security tokens.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  

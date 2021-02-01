@@ -8,11 +8,13 @@ helpviewer_keywords:
 ms.assetid: 703b8381-43db-4a4d-9faa-cca39302d922
 ---
 # CLR Hosting Interfaces
+
 This section describes the interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) into their applications. The information pertains to the .NET Framework version 2.0 and later versions. These interfaces enable the host to control many more aspects of the runtime than was possible in versions 1.0 and 1.1, and provide much tighter integration between the CLR and the host's execution model.  
   
  In the .NET Framework version 1.0 and 1.1, the hosting model enabled an unmanaged host to load the CLR into a process, to configure certain settings, and to receive event notifications. However, in general, the host and the CLR ran independently in that process. In the .NET Framework version 2.0 and later versions, new layers of abstraction let the host provide many of the resources currently provided by the types in the Win32 assembly, and extend the set of capabilities that the host can configure.  
   
 ## In This Section  
+
  [IActionOnCLREvent Interface](iactiononclrevent-interface.md)  
  Provides a method that performs a callback for a registered event.  
   
@@ -179,6 +181,7 @@ This section describes the interfaces that unmanaged hosts can use to integrate 
  Provides methods for validating portable executable (PE) images and reporting validation errors.  
   
 ## Related Sections  
+
  [Deprecated CLR Hosting Interfaces and Coclasses](deprecated-clr-hosting-interfaces-and-coclasses.md)  
  Contains topics that describe the hosting interfaces provided in the .NET Framework version 1.0 and 1.1.  
   

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataAssemblyEmit::DefineAssemblyRef Method
+
 Creates an `AssemblyRef` structure containing metadata for the assembly that this assembly references, and returns the associated metadata token.  
   
 ## Syntax  
@@ -35,6 +36,7 @@ HRESULT DefineAssemblyRef (
 ```  
   
 ## Parameters  
+
  `pbPublicKeyOrToken`  
  [in] The public key of the publisher of the referenced assembly. The helper function [StrongNameTokenFromAssembly](../strong-naming/strongnametokenfromassembly-function.md) can be used to get the hash of the public key to pass as this parameter.  
   
@@ -60,11 +62,13 @@ HRESULT DefineAssemblyRef (
  [out] A pointer to the returned `AssemblyRef` metadata token.  
   
 ## Remarks  
+
  One `AssemblyRef` metadata structure must be defined for each assembly that this assembly references.  
   
  At run time, the details of a referenced assembly are passed to the assembly resolver with an indication that they represent the "as built" information. The assembly resolver then applies policy.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

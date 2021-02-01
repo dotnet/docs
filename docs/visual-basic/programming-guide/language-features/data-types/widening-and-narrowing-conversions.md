@@ -21,6 +21,7 @@ helpviewer_keywords:
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
 ---
 # Widening and Narrowing Conversions (Visual Basic)
+
 An important consideration with a type conversion is whether the result of the conversion is within the range of the destination data type.  
   
  A *widening conversion* changes a value to a data type that can allow for any possible value of the original data.  Widening conversions preserve the source value but can change its representation. This occurs if you convert from an integral type to `Decimal`, or from `Char` to `String`.  
@@ -28,6 +29,7 @@ An important consideration with a type conversion is whether the result of the c
  A *narrowing conversion* changes a value to a data type that might not be able to hold some of the possible values. For example, a fractional value is rounded when it is converted to an integral type, and a numeric type being converted to `Boolean` is reduced to either `True` or `False`.  
   
 ## Widening Conversions  
+
  The following table shows the standard widening conversions.  
   
 |Data type|Widens to data types <sup>1</sup>|  
@@ -60,6 +62,7 @@ An important consideration with a type conversion is whether the result of the c
  Widening conversions always succeed at run time and never incur data loss. You can always perform them implicitly, whether the [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md) sets the type checking switch to `On` or to `Off`.  
   
 ## Narrowing Conversions  
+
  The standard narrowing conversions include the following:  
   
 - The reverse directions of the widening conversions in the preceding table (except that every type widens to itself)  
@@ -78,9 +81,11 @@ An important consideration with a type conversion is whether the result of the c
 > The narrowing-conversion error is suppressed for conversions from the elements in a `For Each…Next` collection to the loop control variable. For more information and examples, see the "Narrowing Conversions" section in [For Each...Next Statement](../../../language-reference/statements/for-each-next-statement.md).  
   
 ### When to Use Narrowing Conversions  
+
  You use a narrowing conversion when you know the source value can be converted to the destination data type without error or data loss. For example, if you have a `String` that you know contains either "True" or "False," you can use the `CBool` keyword to convert it to `Boolean`.  
   
 ## Exceptions During Conversion  
+
  Because widening conversions always succeed, they do not throw exceptions. Narrowing conversions, when they fail, most commonly throw the following exceptions:  
   
 - <xref:System.InvalidCastException> — if no conversion is defined between the two types  
@@ -90,6 +95,7 @@ An important consideration with a type conversion is whether the result of the c
  If a class or structure defines a [CType Function](../../../language-reference/functions/ctype-function.md) to serve as a conversion operator to or from that class or structure, that `CType` can throw any exception it deems appropriate. In addition, that `CType` might call Visual Basic functions or .NET Framework methods, which in turn could throw a variety of exceptions.  
   
 ## Changes During Reference Type Conversions  
+
  A conversion from a *reference type* copies only the pointer to the value. The value itself is neither copied nor changed in any way. The only thing that can change is the data type of the variable holding the pointer. In the following example, the data type is converted from the derived class to its base class, but the object that both variables now point to is unchanged.  
   
 ```vb  

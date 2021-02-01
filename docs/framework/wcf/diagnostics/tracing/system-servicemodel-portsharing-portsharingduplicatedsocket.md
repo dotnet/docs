@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 7fd7a35d-3ade-44c2-b40e-2236c3ff18c5
 ---
 # System.ServiceModel.PortSharing.PortSharingDuplicatedSocket
+
 System.ServiceModel.PortSharing.PortSharingDuplicatedSocket  
   
 ## Description  
+
  A socket was successfully duplicated.  
   
 ## See also

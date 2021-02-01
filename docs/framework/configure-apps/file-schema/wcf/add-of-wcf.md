@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c196f6d7-77f6-4266-973c-305b2b4dd8a2
 ---
 # \<add> of WCF
+
 Configure a tracking participant that listens to the tracking records being emitted from the runtime directly and process them in whatever way it was configured. This includes writing to a specific output (e.g., file, Console, ETW), processing/aggregating the records, or any other combination that might be required.  
   
  For more information in workflow tracking and tracking participants, see [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Tracking Participants](../../../windows-workflow-foundation/tracking-participants.md).  
@@ -27,6 +28,7 @@ Configure a tracking participant that listens to the tracking records being emit
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,6 +40,7 @@ Configure a tracking participant that listens to the tracking records being emit
 |type|A string that specifies the type of a tracking participant.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -47,6 +50,7 @@ Configure a tracking participant that listens to the tracking records being emit
 |[\<participants>](../windows-workflow-foundation/participants.md)|A list of tracking participants|  
   
 ## Remarks  
+
  Tracking participants are used to get the tracking data emitted from the workflow and store it into different mediums. Likewise, any post processing on the tracking Records can also be done within the tracking participant.  
   
  Multiple tracking participants can consume the tracking events simultaneously. Each tracking participant can be associated with a different tracking profile.  
@@ -54,6 +58,7 @@ Configure a tracking participant that listens to the tracking records being emit
  A standard tracking participant is provided which writes the tracking records to an ETW session. The participant is configured on a workflow service by adding a tracking-specific behavior in a configuration file. Enabling an ETW tracking participant allows tracking records to be viewed in the event viewer. If that does not meet your requirements, you can also write a custom tracking participant.  
   
 ## Example  
+
  The following configuration example shows the standard ETW tracking participant being configured in the Web.config file.  
   
  The Provider Id that the ETW Tracking Participant uses for writing the Tracking Records to ETW is defined in the `<diagnostics>` section. The tracking participant has a profile associated with it to specify the tracking records it has subscribed to. This is defined by the `profileName` attribute of the `<add>` element. Once these are defined, the Tracking Participant is added to the `<etwTracking>` service behavior. This will add the selected Tracking Participants to the Workflow instance’s extensions, so that they begin to receive the Tracking Records.  

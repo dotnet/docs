@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: 429c9d09-92ac-46ec-829a-fbff0a9575a2
 ---
 # Provider Statistics for SQL Server
+
 Starting with the .NET Framework version 2.0, the .NET Framework Data Provider for SQL Server supports run-time statistics. You must enable statistics by setting the <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled%2A> property of the <xref:System.Data.SqlClient.SqlConnection> object to `True` after you have a valid connection object created. After statistics are enabled, you can review them as a "snapshot in time" by retrieving an <xref:System.Collections.IDictionary> reference via the <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> method of the <xref:System.Data.SqlClient.SqlConnection> object. You enumerate through the list as a set of name/value pair dictionary entries. These name/value pairs are unordered. At any time, you can call the <xref:System.Data.SqlClient.SqlConnection.ResetStatistics%2A> method of the <xref:System.Data.SqlClient.SqlConnection> object to reset the counters. If statistic gathering has not been enabled, an exception is not generated. In addition, if <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> is called without <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled%2A> having been called first, the values retrieved are the initial values for each entry. If you enable statistics, run your application for a while, and then disable statistics, the values retrieved will reflect the values collected up to the point where statistics were disabled. All statistical values gathered are on a per-connection basis.  
   
 ## Statistical Values Available  
+
  Currently there are 18 different items available from the Microsoft SQL Server provider. The number of items available can be accessed via the **Count** property of the <xref:System.Collections.IDictionary> interface reference returned by <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A>. All of the counters for provider statistics use the common language runtime <xref:System.Int64> type (**long** in C# and Visual Basic), which is 64 bits wide. The maximum value of the **int64** data type, as defined by the **int64.MaxValue** field, is ((2^63)-1)). When the values for the counters reach this maximum value, they should no longer be considered accurate. This means that **int64.MaxValue**-1((2^63)-2) is effectively the greatest valid value for any statistic.  
   
 > [!NOTE]
@@ -39,6 +41,7 @@ Starting with the .NET Framework version 2.0, the .NET Framework Data Provider f
 |`UnpreparedExecs`|Returns the number of unprepared statements executed through the connection once the application has started using the provider and has enabled statistics.|  
   
 ### Retrieving a Value  
+
  The following console application shows how to enable statistics on a connection, retrieve four individual statistic values, and write them out to the console window.  
   
 > [!NOTE]
@@ -195,6 +198,7 @@ namespace CS_Stats_Console_GetValue
 ```  
   
 ### Retrieving All Values  
+
  The following console application shows how to enable statistics on a connection, retrieve all available statistic values using the enumerator, and write them to the console window.  
   
 > [!NOTE]

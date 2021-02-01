@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f4199998-27f3-4dd9-aee4-0a4addfa9f24
 ---
 # Hosting in a Windows Service Application
+
 Windows services (formerly known as Windows NT services) provide a process model particularly suited to applications that must live in a long-running executable and do not display any form of user interface. The process lifetime of a Windows service application is managed by the service control manager (SCM), which allows you to start, stop, and pause Windows service applications. You can configure a Windows service process to start automatically when the computer starts, making it a suitable hosting environment for "always on" applications. For more information about Windows service applications, see [Windows Service Applications](https://go.microsoft.com/fwlink/?LinkId=89450).  
   
  Applications that host long-running Windows Communication Foundation (WCF) services share many characteristics with Windows services. In particular, WCF services are long-running server executables that do not interact directly with the user and therefore do not implement any form of user interface. As such, hosting WCF services inside of a Windows service application is one option for building robust, long-running, WCF applications.  
@@ -37,4 +38,4 @@ Windows services (formerly known as Windows NT services) provide a process model
 - [How to: Host a WCF Service in a Managed Windows Service](how-to-host-a-wcf-service-in-a-managed-windows-service.md)
 - [Windows Service Host](../samples/windows-service-host.md)
 - [Service Application Programming Architecture](https://go.microsoft.com/fwlink/?LinkId=94876)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

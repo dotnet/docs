@@ -1,20 +1,16 @@
 ---
 title: Windows Forms breaking changes
-description: Lists the breaking changes in Windows Forms for .NET Core.
-ms.date: 01/08/2020
+description: Lists the breaking changes in Windows Forms for .NET Core 3.0 and 3.1.
+ms.date: 09/08/2020
 ---
-# Breaking changes in Windows Forms
+# Breaking changes in Windows Forms for .NET Core 3.0 and 3.1
 
-Windows Forms support was added to .NET Core in version 3.0. This article lists breaking changes for Windows Forms by the .NET Core version in which they were introduced. If you're upgrading a Windows Forms app from .NET Framework or from a previous version of .NET Core (3.0 or later), this article is applicable to you.
+Windows Forms support was added to .NET Core in version 3.0. This article lists breaking changes for Windows Forms by the .NET version in which they were introduced. If you're upgrading a Windows Forms app from .NET Framework or from a previous version of .NET Core (3.0 or later), this article applies to you.
 
 The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
-| [Removed status bar controls](#removed-status-bar-controls) | 5.0 |
-| [WinForms methods now throw ArgumentException](#winforms-methods-now-throw-argumentexception) | 5.0 |
-| [WinForms methods now throw ArgumentNullException](#winforms-methods-now-throw-argumentnullexception) | 5.0 |
-| [WinForms properties now throw ArgumentOutOfRangeException](#winforms-properties-now-throw-argumentoutofrangeexception) | 5.0 |
 | [Removed controls](#removed-controls) | 3.1 |
 | [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown) | 3.1 |
 | [Control.DefaultFont changed to Segoe UI 9 pt](#default-control-font-changed-to-segoe-ui-9-pt) | 3.0 |
@@ -28,24 +24,6 @@ The following breaking changes are documented on this page:
 | [EnableVisualStyleValidation compatibility switch not supported](#enablevisualstylevalidation-compatibility-switch-not-supported) | 3.0 |
 | [UseLegacyContextMenuStripSourceControlValue compatibility switch not supported](#uselegacycontextmenustripsourcecontrolvalue-compatibility-switch-not-supported) | 3.0 |
 | [UseLegacyImages compatibility switch not supported](#uselegacyimages-compatibility-switch-not-supported) | 3.0 |
-
-## .NET 5.0
-
-[!INCLUDE [winforms-deprecated-controls](../../../includes/core-changes/windowsforms/5.0/winforms-deprecated-controls.md)]
-
-***
-
-[!INCLUDE [invalid-args-cause-argumentexception](../../../includes/core-changes/windowsforms/5.0/invalid-args-cause-argumentexception.md)]
-
-***
-
-[!INCLUDE [null-args-cause-argumentnullexception](../../../includes/core-changes/windowsforms/5.0/null-args-cause-argumentnullexception.md)]
-
-***
-
-[!INCLUDE [invalid-args-cause-argumentoutofrangeexception](../../../includes/core-changes/windowsforms/5.0/invalid-args-cause-argumentoutofrangeexception.md)]
-
-***
 
 ## .NET Core 3.1
 
@@ -105,4 +83,4 @@ The following breaking changes are documented on this page:
 
 ## See also
 
-- [Port a Windows Forms app to .NET Core](../porting/winforms.md)
+- [Port a Windows Forms app to .NET Core](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)

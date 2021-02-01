@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 168473b1-b1e5-4e9f-8a2a-35bbdb2ef531
 ---
 # 105 - FaultPropagationRecord
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 168473b1-b1e5-4e9f-8a2a-35bbdb2ef531
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when a activity with the workflow instance emits FaultPropagationRecord.  
   
 ## Message  
+
  TrackRecord = FaultPropagationRecord, InstanceID=%1, RecordNumber=%2, EventTime=%3, FaultSourceActivityName=%4, FaultSourceActivityId=%5, FaultSourceActivityInstanceId=%6, FaultSourceActivityTypeName=%7, FaultHandlerActivityName=%8,  FaultHandlerActivityId = %9, FaultHandlerActivityInstanceId =%10, FaultHandlerActivityTypeName=%11, Fault=%12, IsFaultSource=%13, Annotations=%14, ProfileName = %15  
   
 ## Details  

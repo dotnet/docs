@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: e1cbc46a-1db0-412d-8109-31342ec9d327
 ---
 # File '\<filename>' cannot be deleted because it is open
+
 A deletion is being attempted on an open file.  
   
 ## To correct this error  

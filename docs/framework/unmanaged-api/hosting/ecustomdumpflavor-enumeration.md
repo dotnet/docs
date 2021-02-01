@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ECustomDumpFlavor Enumeration
+
 Contains values that indicate which items to include in a custom subset of a heap dump when reporting errors.  
   
 ## Syntax  
@@ -35,9 +36,11 @@ typedef enum {
 |`DUMP_FLAVOR_NonHeapCLRState`|Specifies that the custom heap dump should gather all run-time state data that was not dynamically allocated.|  
   
 ## Remarks  
+
  A parameter of type `ECustomDumpFlavor` is passed to the [ICLRErrorReportingManager::BeginCustomDump](iclrerrorreportingmanager-begincustomdump-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

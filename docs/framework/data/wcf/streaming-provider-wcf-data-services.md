@@ -13,6 +13,8 @@ ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
 ---
 # Streaming Provider (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 A data service can expose large object binary data. This binary data might represent video and audio streams, images, document files, or other types of binary media. When an entity in the data model includes one or more binary properties, the data service returns this binary data encoded as base-64 inside the entry in the response feed. Because loading and serializing large binary data in this manner can affect performance, the Open Data Protocol (OData) defines a mechanism for retrieving binary data independent of the entity to which it belongs. This is accomplished by separating the binary data from the entity into one or more data streams.
 
 - Media resource - binary data that belongs to an entity, such as a video, audio, image, or other type of media resource stream.
@@ -33,7 +35,7 @@ Configuring a data service to support the streaming of binary data requires the 
 
 5. Enable access to binary resources on the server or in a data source.
 
-The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://docs.microsoft.com/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1). The source code for the Streaming Photo Data Service sample is available on [GitHub](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/Streaming%20Photo%20OData%20Service%20Sample).
+The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1). The source code for the Streaming Photo Data Service sample is available on [GitHub](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/Streaming%20Photo%20OData%20Service%20Sample).
 
 ## Defining a Media Link Entry in the Data Model
 
@@ -47,7 +49,7 @@ To indicate that an entity is a media link entry, add the `HasStream` attribute 
 
 You must also add the namespace `xmlns:m=http://schemas.microsoft.com/ado/2007/08/dataservices/metadata` either to the entity or to the root of the .edmx or .csdl file that defines the data model.
 
-For an example of a data service that uses the Entity Framework provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://docs.microsoft.com/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1).
+For an example of a data service that uses the Entity Framework provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1).
 
 **Reflection Provider**
 
@@ -89,7 +91,7 @@ When you create a data service in an ASP.NET Web application, Windows Communicat
 
 For more information, see [Streaming Message Transfer](../../wcf/feature-details/streaming-message-transfer.md) and [Transport Quotas](../../wcf/feature-details/transport-quotas.md).
 
-By default, Internet Information Services (IIS) also limits the size of requests to 4 MB. To enable your data service to receive streams larger than 4 MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) in the `<system.web />` configuration section, as shown in the following example:
+By default, Internet Information Services (IIS) also limits the size of requests to 4 MB. To enable your data service to receive streams larger than 4 MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) in the `<system.web />` configuration section, as shown in the following example:
 
 ## Using Data Streams in a Client Application
 
@@ -119,7 +121,7 @@ The following are things to consider when you implement a streaming provider and
 
 - When you implement the <xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>, <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A>, or <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> methods, you must use the eTag and Content-Type values that are supplied as method parameters. Do not set eTag or Content-Type headers in your <xref:System.Data.Services.Providers.IDataServiceStreamProvider> provider implementation.
 
-- By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the ASP.NET Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on ASP.NET Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](https://docs.microsoft.com/previous-versions/aspnet/58wxa9w5(v=vs.120)).
+- By default, the client sends large binary streams by using a chunked HTTP Transfer-Encoding. Because the ASP.NET Development Server does not support this kind of encoding, you cannot use this Web server to host a streaming data service that must accept large binary streams. For more information on ASP.NET Development Server, see [Web Servers in Visual Studio for ASP.NET Web Projects](/previous-versions/aspnet/58wxa9w5(v=vs.120)).
 
 <a name="versioning"></a>
 

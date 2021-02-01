@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 95832e70-4ecc-47aa-90c1-f35c4d468151
 ---
 # Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value
+
 The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not write to the log file because:  
   
 - The amount of free disk space (in bytes) is less than the value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace%2A> property  

@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: bc464889-3070-4a2f-91d2-e788a0f686a7
 ---
 # How to: Create a Basic Data Contract for a Class or Structure
+
 This topic shows the basic steps to create a data contract using a class or structure. For more information about data contracts and how they are used, see [Using Data Contracts](using-data-contracts.md).  
   
  For a tutorial that walks through the steps of creating a basic Windows Communication Foundation (WCF) service and client, see the [Getting Started Tutorial](../getting-started-tutorial.md). For a working sample application that consists of a basic service and client, see [Basic Data Contract](../samples/basic-data-contract.md).  
@@ -26,6 +27,7 @@ This topic shows the basic steps to create a data contract using a class or stru
     > You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to private fields, causing the data to be exposed to others. Be sure that the member does not contain sensitive data.  
   
 ## Example  
+
  The following example shows how to create a data contract for the `Person` type by applying the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes to the class and its members.  
   
  [!code-csharp[DataContractAttribute#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/datacontractattribute/cs/overview.cs#2)]

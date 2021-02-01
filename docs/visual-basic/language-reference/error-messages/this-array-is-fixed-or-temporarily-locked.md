@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: de6713a6-51d7-4edb-8515-d5fb544e2091
 ---
 # This array is fixed or temporarily locked (Visual Basic)
+
 This error has the following possible causes:  
   
 - Using `ReDim` to change the number of elements of a fixed-size array.  

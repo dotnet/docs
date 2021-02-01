@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4995f0d5-c182-4d97-981f-6951da6df1fb
 ---
 # 221 - MessageReceivedFromTransport
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 4995f0d5-c182-4d97-981f-6951da6df1fb
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when the Service Model receives a message from the transport.  
   
 ## Message  
+
  The Dispatcher received a message from the transport. Correlation ID == '%1'.  
   
 ## Details  

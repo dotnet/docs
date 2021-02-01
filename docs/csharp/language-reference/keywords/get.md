@@ -1,4 +1,5 @@
 ---
+description: "get - C# Reference"
 title: "get - C# Reference"
 ms.date: 03/10/2017
 f1_keywords: 

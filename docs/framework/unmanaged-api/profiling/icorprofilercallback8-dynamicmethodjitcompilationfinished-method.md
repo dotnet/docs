@@ -10,6 +10,7 @@ api_type:
   - "COM"
 ---
 # ICorProfilerCallback8::DynamicMethodJITCompilationFinished Method
+
 [Supported in the .NET Framework 4.7 and later versions]  
   
 Notifies the profiler whenever JIT compilation of a dynamic method has completed.  
@@ -25,6 +26,7 @@ HRESULT DynamicMethodJITCompilationFinished(
 ```  
   
 ## Parameters  
+
 [in] `functionId`  
 The identifier of the in-memory function for which JIT compilation is started.
 
@@ -42,6 +44,7 @@ This callback is triggered whenever JIT compilation of a dynamic method has fini
 > `functionId` values cannot be used to resolve to their metadata tokens, because dynamic methods have no metadata.
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

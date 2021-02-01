@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 019657bd-1f9b-4315-ad74-eaa4e7551ff6
 ---
 # Unwrapped Messages
+
 This sample demonstrates unwrapped messages. By default, the message body is formatted such that the parameters to a service operation are wrapped. The following sample shows an `Add` request message to the `ICalculator` service in wrapped mode.  
   
 ```xml  

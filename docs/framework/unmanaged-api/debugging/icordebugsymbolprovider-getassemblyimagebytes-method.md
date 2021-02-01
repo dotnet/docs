@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3db215aa-e180-4f70-8d23-6d5a0ffbc8e5
 ---
 # ICorDebugSymbolProvider::GetAssemblyImageBytes Method
+
 Reads data from a merged assembly given a relative virtual address (RVA) in the merged assembly.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT GetAssemblyImageBytes(
 ```  
   
 ## Parameters  
+
  `rva`  
  [in] A relative virtual address (RVA) in a merged assembly.  
   
@@ -32,6 +34,7 @@ HRESULT GetAssemblyImageBytes(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

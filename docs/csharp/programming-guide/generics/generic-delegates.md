@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: bdea509c-44c1-4309-aaa9-15c7aee009df
 ---
 # Generic Delegates (C# Programming Guide)
+
 A [delegate](../../language-reference/builtin-types/reference-types.md) can define its own type parameters. Code that references the generic delegate can specify the type argument to create a closed constructed type, just like when instantiating a generic class or calling a generic method, as shown in the following example:  
   
  [!code-csharp[csProgGuideGenerics#36](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#36)]  

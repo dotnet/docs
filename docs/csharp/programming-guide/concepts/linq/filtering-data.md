@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: fbaece0d-0f23-47f7-89c5-f3ea8db692b6
 ---
 # Filtering Data (C#)
+
 Filtering refers to the operation of restricting the result set to contain only those elements that satisfy a specified condition. It is also known as selection.  
   
  The following illustration shows the results of filtering a sequence of characters. The predicate for the filtering operation specifies that the character must be 'A'.  
@@ -21,6 +22,7 @@ Filtering refers to the operation of restricting the result set to contain only 
 |Where|Selects values that are based on a predicate function.|`where`|<xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Where%2A?displayProperty=nameWithType>|  
   
 ## Query Expression Syntax Example  
+
  The following example uses the `where` clause to filter from an array those strings that have a specific length.  
   
 ```csharp  

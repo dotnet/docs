@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedWriter::SetSymAttribute Method
+
 Defines a custom attribute based upon its name. These attributes are held in the symbol store, unlike metadata custom attributes.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetSymAttribute(
 ```  
   
 ## Parameters  
+
  `parent`  
  [in] The metadata token for which the attribute is being defined.  
   
@@ -43,9 +45,11 @@ HRESULT SetSymAttribute(
  [in] The attribute value.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

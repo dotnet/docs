@@ -1,7 +1,6 @@
 ---
 title: "Role-Based Security"
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "role-based security, about role-based security"
   - "user authentication, principals"

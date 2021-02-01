@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: db8a83da-95c1-4a21-a9d2-48caeb6398ea
 ---
 # Running the Windows Communication Foundation Samples
+
 The Windows Communication Foundation (WCF) samples can be run in a single-machine or cross-machine configuration. As supplied, the samples are ready for running on a single machine. In a cross-machine configuration, it is necessary to modify a sample's configuration file settings. The following procedures explain how to run a sample in same-machine and cross-machine configurations. Note that there are variations in the steps for services hosted in Internet Information Services (IIS) and the self-hosted samples. Most samples are hosted in IIS; see the sample readme information to determine how it is hosted.  
   
  On Windows Vista, samples that are not hosted in IIS require elevated privileges to register a listener with Http.sys. Use Httpcfg.exe to register the service's listening addresses with the account the service is running under, or launch the service from a command prompt running with administrator privileges.  
@@ -13,13 +14,13 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 ### To run the sample on the same machine  
   
-1. If the service is hosted by IIS, ensure that you can access the service using a browser by entering the following address: `http://localhost/servicemodelsamples/service.svc`. A confirmation page should be displayed in response. If the confirmation page is not displayed, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+1. If the service is hosted by IIS, ensure that you can access the service using a browser by entering the following address: `http://localhost/servicemodelsamples/service.svc`. A confirmation page should be displayed in response. If the confirmation page is not displayed, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 2. If the service is self-hosted, run Service.exe from \service\bin, from under the language-specific folder. Service activity is displayed on the service console window.  
   
 3. Run Client.exe from \client\bin\\, from under the language-specific folder. Client activity is displayed on the client console window.  
   
-4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across machines  
   
@@ -76,4 +77,4 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
 ## See also
 
 - [Building the Windows Communication Foundation Samples](building-the-samples.md)
-- [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))
+- [Troubleshooting Tips for WCF Samples](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

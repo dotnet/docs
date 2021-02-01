@@ -153,7 +153,7 @@ landingContent:
             url: /learn/modules/develop-app-that-queries-azure-sql/
           - text: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
             url: /learn/modules/build-cosmos-db-app-with-vscode/
-          - text: Store application data with Azure Blob storage
+          - text: Store application data with Azure Blob Storage
             url: /learn/modules/store-app-data-with-azure-blob-storage/
           - text: Persist and retrieve relational data with Entity Framework Core
             url: /learn/modules/persist-data-ef-core/
@@ -226,10 +226,10 @@ landingContent:
       - linkListType: architecture
         links:
           - text: ".NET Microservices: Architecture for containerized .NET apps"
-            url: /dotnet/architecture/microservices/
+            url: ../architecture/microservices/index.md
           - text: Architect modern web applications with ASP.NET Core and Azure
-            url: /dotnet/architecture/modern-web-apps-azure/
+            url: ../architecture/modern-web-apps-azure/index.md
           - text: Containerized Docker application lifecycle with Microsoft platform and tools
-            url: /dotnet/architecture/containerized-lifecycle/
+            url: ../architecture/containerized-lifecycle/index.md
           - text: Modernize existing .NET applications with Azure cloud and Windows containers
             url: /dotnet/architecture/modernize-with-azure-containers/

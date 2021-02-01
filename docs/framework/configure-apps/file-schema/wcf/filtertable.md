@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e9f05441-3ad1-49b9-a267-71724aa094b4
 ---
 # \<filterTable>
+
 Represents a routing table that contains a list of filters to evaluate messages against and the client endpoint to route messages to if the filter evaluates to true.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,6 +31,7 @@ Represents a routing table that contains a list of filters to evaluate messages 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

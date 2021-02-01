@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 6b0cbb88-6593-43b8-8a40-a61563bc0ce9
 ---
 # Input and Output Summary (Visual Basic)
+
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  

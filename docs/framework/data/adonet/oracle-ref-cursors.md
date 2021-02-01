@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c6b25b8b-0bdd-41b2-9c7c-661f070c2247
 ---
 # Oracle REF CURSORs
+
 The .NET Framework Data Provider for Oracle supports the Oracle **REF CURSOR** data type. When using the data provider to work with Oracle REF CURSORs, you should consider the following behaviors.  
   
 > [!NOTE]
@@ -24,6 +25,7 @@ The .NET Framework Data Provider for Oracle supports the Oracle **REF CURSOR** d
 - The PL/SQL **TABLE** data type is not supported. However, REF CURSORs are more efficient. If you must use a **TABLE** data type, use the OLE DB .NET Data Provider with MSDAORA.  
   
 ## In This Section  
+
  [REF CURSOR Examples](ref-cursor-examples.md)  
  Contains three examples that demonstrate using REF CURSORs.  
   

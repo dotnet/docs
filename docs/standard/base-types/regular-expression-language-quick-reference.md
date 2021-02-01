@@ -2,7 +2,7 @@
 title: "Regular Expression Language - Quick Reference"
 description: In this quick reference, learn to use regular expression patterns to match input text. A pattern has one or more character literals, operators, or constructs.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
+ms.topic: reference
 f1_keywords:
   - "VS.RegularExpressionBuilder"
 helpviewer_keywords:
@@ -11,9 +11,9 @@ helpviewer_keywords:
   - "searching with regular expressions, language elements"
   - "pattern-matching with regular expressions, language elements"
   - "regular expressions, language elements"
-  - "regular expressions [.NET Framework]"
+  - "regular expressions [.NET]"
   - "cheat sheet"
-  - ".NET Framework regular expressions, language elements"
+  - ".NET regular expressions, language elements"
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
 ---
 # Regular Expression Language - Quick Reference

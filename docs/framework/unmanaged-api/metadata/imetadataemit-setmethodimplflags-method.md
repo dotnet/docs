@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetMethodImplFlags Method
+
 Sets or updates the metadata signature of the inherited method implementation that is referenced by the specified token.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SetMethodImplFlags (
 ```  
   
 ## Parameters  
+
  `md`  
  [in] The token for the method to be changed.  
   
@@ -36,6 +38,7 @@ HRESULT SetMethodImplFlags (
  [in] A combination of the values of the [CorMethodImpl](cormethodimpl-enumeration.md) enumeration that specifies the method implementation features.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

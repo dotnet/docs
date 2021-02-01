@@ -1,4 +1,5 @@
 ---
+description: "join clause - C# Reference"
 title: "join clause - C# Reference"
 ms.date: 07/20/2015
 f1_keywords: 

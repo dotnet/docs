@@ -80,7 +80,7 @@ follows:
 
 [!code-csharp[Validating property setters](../../samples/snippets/csharp/properties/Person.cs#6)]
 
-The preceding example can be simplified by using a`throw` expression as part
+The preceding example can be simplified by using a `throw` expression as part
 of the property setter validation:
 
 [!code-csharp[Validating property setters](../../samples/snippets/csharp/properties/Person.cs#7)]
@@ -188,7 +188,7 @@ expose data members of an object.
 Beginning with C# 7.3, field attributes can be attached to the compiler
 generated backing field in auto-implemented properties. For example, consider
 a revision to the `Person` class that adds a unique integer `Id` property.
-You write the`Id` property using an auto-implemented property, but your design does
+You write the `Id` property using an auto-implemented property, but your design does
 not call for persisting the `Id` property. The <xref:System.NonSerializedAttribute>
 can only be attached to fields, not properties. You can attach the
 <xref:System.NonSerializedAttribute> to the backing field for the `Id` property

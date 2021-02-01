@@ -1,4 +1,5 @@
 ---
+description: "-langversion (C# Compiler Options)"
 title: "-langversion (C# Compiler Options)"
 ms.date: 05/20/2020
 f1_keywords:

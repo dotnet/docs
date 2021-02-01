@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 52f4825b-91a2-4f23-94f4-cfd76a7980cf
 ---
 # Management
+
 This section contains samples that demonstrate Windows Communication Foundation (WCF) management.  
   
 ## In This Section  
+
  [WCF Services and Event Tracing for Windows](wcf-services-and-event-tracing-for-windows.md)  
  Demonstrates how to use the analytic tracing in WCF to emit events in Event Tracing for Windows (ETW).  
   

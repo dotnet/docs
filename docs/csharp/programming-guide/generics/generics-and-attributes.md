@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: da9fc326-4648-454a-8e13-3911a2edefd7
 ---
 # Generics and Attributes (C# Programming Guide)
+
 Attributes can be applied to generic types in the same way as non-generic types. For more information on applying attributes, see [Attributes](../concepts/attributes/index.md).  
   
  Custom attributes are only permitted to reference open generic types, which are generic types for which no type arguments are supplied, and closed constructed generic types, which supply arguments for all type parameters.  

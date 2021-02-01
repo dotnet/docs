@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 76057508-e12d-4779-a707-06a4c2568acf
 ---
 # Creating a DataView Object (LINQ to DataSet)
+
 There are two ways to create a <xref:System.Data.DataView> in the LINQ to DataSet context. You can create a <xref:System.Data.DataView> from a LINQ to DataSet query over a <xref:System.Data.DataTable>, or you can create it from a typed or un-typed <xref:System.Data.DataTable>. In both cases, you create the <xref:System.Data.DataView> by using one of the <xref:System.Data.DataTableExtensions.AsDataView%2A> extension methods; <xref:System.Data.DataView> is not directly constructible in the LINQ to DataSet context.  
   
  After the <xref:System.Data.DataView> has been created, you can bind it to a UI control in a Windows forms application or an ASP.NET application, or change the filtering and sorting settings.  
@@ -16,6 +17,7 @@ There are two ways to create a <xref:System.Data.DataView> in the LINQ to DataSe
  For more information about filtering and sorting with <xref:System.Data.DataView>, see [Filtering with DataView](filtering-with-dataview-linq-to-dataset.md) and [Sorting with DataView](sorting-with-dataview-linq-to-dataset.md).  
   
 ## Creating DataView from a LINQ to DataSet Query  
+
  A <xref:System.Data.DataView> object can be created from the results of a LINQ to DataSet query, where the results are a projection of <xref:System.Data.DataRow> objects. The newly created <xref:System.Data.DataView> inherits the filtering and sorting information from the query it is created from.  
   
 > [!NOTE]
@@ -50,6 +52,7 @@ There are two ways to create a <xref:System.Data.DataView> in the LINQ to DataSe
  [!code-vb[DP DataView Samples#CreateLDVFromQueryStringSort](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP DataView Samples/VB/Form1.vb#createldvfromquerystringsort)]  
   
 ## Creating a DataView from a DataTable  
+
  In addition to being created from a LINQ to DataSet query, a <xref:System.Data.DataView> object can be created from a <xref:System.Data.DataTable> by using the <xref:System.Data.DataTableExtensions.AsDataView%2A> method.  
   
  The following example creates a <xref:System.Data.DataView> from the SalesOrderDetail table and sets it as the data source of a <xref:System.Windows.Forms.BindingSource> object. This object acts as a proxy for a <xref:System.Windows.Forms.DataGridView> control.  

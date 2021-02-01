@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # INotifySource2::SetNotifyFilter Method
+
 Assigns a notification filter for use with this source.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetNotifyFilter
 ```  
   
 ## Parameters  
+
  `in_NotifyFilter`  
  [in] A bitwise combination of the [NOTIFY_FILTER](notify-filter-enumeration.md) enumeration values that identify callbacks for the debugger API.  
   
@@ -37,9 +39,11 @@ HRESULT SetNotifyFilter
  [in] A pointer to a [USER_THREAD](user-thread-structure.md) structure that identifies threads for the debugger API.  
   
 ## Return Value  
+
  S_OK if the method succeeds.  
   
 ## Requirements  
+
  **Header:** ProtocolNotify2.idl  
   
 ## See also

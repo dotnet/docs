@@ -82,15 +82,21 @@ GUIDs are usable directly in signatures. Many Windows APIs take `GUID&` type ali
 
 ## Blittable types
 
-Blittable types are types that have the same bit-level representation in managed and native code. As such they do not need to be converted to another format to be marshaled to and from native code, and as this improves performance they should be preferred.
+Blittable types are types that have the same bit-level representation in managed and native code. As such they do not need to be converted to another format to be marshaled to and from native code, and as this improves performance they should be preferred. Some types are not blittable but are known to contain blittable contents. These types have similar optimizations as blittable types when they are not contained in another type, but are not considered blittable when in fields of structs or for the purposes of [`UnmanagedCallersOnlyAttribute`](xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute).
 
 **Blittable types:**
 
 - `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `single`, `double`
-- non-nested one-dimensional arrays of blittable types (for example, `int[]`)
-- structs and classes with fixed layout that only have blittable value types for instance fields
+- structs with fixed layout that only have blittable value types for instance fields
   - fixed layout requires `[StructLayout(LayoutKind.Sequential)]` or `[StructLayout(LayoutKind.Explicit)]`
-  - structs are `LayoutKind.Sequential` by default, classes are `LayoutKind.Auto`
+  - structs are `LayoutKind.Sequential` by default
+
+**Types with blittable contents:**
+
+- non-nested one-dimensional arrays of blittable types (for example, `int[]`)
+- classes with fixed layout that only have blittable value types for instance fields
+  - fixed layout requires `[StructLayout(LayoutKind.Sequential)]` or `[StructLayout(LayoutKind.Explicit)]`
+  - classes are `LayoutKind.Auto` by default
 
 **NOT blittable:**
 
@@ -98,9 +104,13 @@ Blittable types are types that have the same bit-level representation in managed
 
 **SOMETIMES blittable:**
 
-- `char`, `string`
+- `char`
 
-When blittable types are passed by reference, they're simply pinned by the marshaller instead of being copied to an intermediate buffer. (Classes are inherently passed by reference, structs are passed by reference when used with `ref` or `out`.)
+**Types with SOMETIMES blittable contents:**
+
+- `string`
+
+When blittable types are passed by reference with `in`, `ref`, or `out`, or when types with blittable contents are passed by value, they're simply pinned by the marshaller instead of being copied to an intermediate buffer.
 
 `char` is blittable in a one-dimensional array **or** if it's part of a type that contains it's explicitly marked with `[StructLayout]` with `CharSet = CharSet.Unicode`.
 
@@ -112,9 +122,9 @@ public struct UnicodeCharStruct
 }
 ```
 
-`string` is blittable if it isn't contained in another type and it's being passed as an argument that is marked with `[MarshalAs(UnmanagedType.LPWStr)]` or the `[DllImport]` has `CharSet = CharSet.Unicode` set.
+`string` contains blittable contents if it isn't contained in another type and it's being passed as an argument that is marked with `[MarshalAs(UnmanagedType.LPWStr)]` or the `[DllImport]` has `CharSet = CharSet.Unicode` set.
 
-You can see if a type is blittable by attempting to create a pinned `GCHandle`. If the type isn't a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
+You can see if a type is blittable or contains blittable contents by attempting to create a pinned `GCHandle`. If the type isn't a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
 
 ✔️ DO make your structures blittable when possible.
 

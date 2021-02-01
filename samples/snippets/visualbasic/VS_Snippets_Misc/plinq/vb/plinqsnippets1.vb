@@ -1,8 +1,4 @@
-﻿Imports System.Collections
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Threading
-Imports System.Threading.Tasks
+﻿Imports System.Threading
 
 Module PLinqSnippetsVB
 
@@ -559,14 +555,14 @@ Module PLinqSnippetsVB
 
         Shared Function GetCustomersAsStrings() As IEnumerable(Of String)
 
-            Return System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Return IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("CUSTOMERS") = False).
                 Skip(1).
                 TakeWhile(Function(line) line.StartsWith("END CUSTOMERS") = False)
         End Function
         Shared Function GetCustomers() As IEnumerable(Of Customer)
 
-            Dim customers = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim customers = IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("CUSTOMERS") = False).
                 Skip(1).
                 TakeWhile(Function(line) line.StartsWith("END CUSTOMERS") = False)
@@ -583,7 +579,7 @@ Module PLinqSnippetsVB
 
         Shared Function GetOrders() As IEnumerable(Of Order)
 
-            Dim orders = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim orders = IO.File.ReadAllLines("..\..\plinqdata.csv").
                             SkipWhile(Function(line) line.StartsWith("ORDERS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END ORDERS") = False)
@@ -600,7 +596,7 @@ Module PLinqSnippetsVB
 
         Shared Function GetOrdersForCustomer(ByVal id As String) As Order()
 
-            Dim orders = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim orders = IO.File.ReadAllLines("..\..\plinqdata.csv").
                             SkipWhile(Function(line) line.StartsWith("ORDERS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END ORDERS") = False)
@@ -620,7 +616,7 @@ Module PLinqSnippetsVB
         End Function
         Shared Function GetProducts() As IEnumerable(Of Product)
 
-            Dim products = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim products = IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("PRODUCTS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END PRODUCTS") = False)
@@ -634,7 +630,7 @@ Module PLinqSnippetsVB
         End Function
 
         Shared Function GetOrderDetailsForOrder(ByVal orderID As Integer) As OrderDetail()
-            Dim orderDetails = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim orderDetails = IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("ORDER DETAILS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END ORDER DETAILS") = False)
@@ -654,7 +650,7 @@ Module PLinqSnippetsVB
         End Function
 
         Shared Function GetOrderDetails() As IEnumerable(Of OrderDetail)
-            Dim orderDetails = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim orderDetails = IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("ORDER DETAILS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END ORDER DETAILS") = False)
@@ -760,8 +756,8 @@ Module PLinqSnippetsVB
         '<snippet22>
         Private Shared Sub ForceParallel()
             Dim customers = GetCustomers()
-            Dim parallelQuery = (From cust In customers.AsParallel().WithExecutionMode(ParallelExecutionMode.ForceParallelism) _
-                                 Where cust.City = "Berlin" _
+            Dim parallelQuery = (From cust In customers.AsParallel().WithExecutionMode(ParallelExecutionMode.ForceParallelism)
+                                 Where cust.City = "Berlin"
                                  Select cust.CustomerName).ToList()
         End Sub
         '</snippet22>
@@ -772,7 +768,7 @@ Module PLinqSnippetsVB
 
             Dim orders = GetOrders()
             Dim query = From ord In orders.AsParallel()
-                        Order By ord.CustomerID
+                        Order By ord.OrderID
                         Select New With
                         {
                             ord.OrderID,
@@ -806,9 +802,9 @@ Module PLinqSnippetsVB
             customers(20) = "###"
 
             'throws indexoutofrange
-            Dim query = From cust In customers.AsParallel() _
-                        Let fields = cust.Split(","c) _
-                        Where fields(3).StartsWith("C") _
+            Dim query = From cust In customers.AsParallel()
+                        Let fields = cust.Split(","c)
+                        Where fields(3).StartsWith("C")
                         Select fields
             Try
                 ' We use ForAll although it doesn't really improve performance
@@ -863,7 +859,7 @@ Module PLinqSnippetsVB
             Try
                 ' We use ForAll although it doesn't really improve performance
                 ' since all output must be serialized through the Console.
-                query.ForAll(Sub(e) Console.WriteLine(e.city))
+                query.ForAll(Sub(e) Console.WriteLine(e.City))
 
 
                 ' IndexOutOfRangeException will not bubble up      
@@ -1070,14 +1066,14 @@ Module PLinqSnippetsVB
 
         Shared Function GetCustomersAsStrings() As IEnumerable(Of String)
 
-            Return System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Return IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("CUSTOMERS") = False).
                 Skip(1).
                 TakeWhile(Function(line) line.StartsWith("END CUSTOMERS") = False)
         End Function
         Shared Function GetCustomers() As IEnumerable(Of Customer)
 
-            Dim customers = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim customers = IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("CUSTOMERS") = False).
                 Skip(1).
                 TakeWhile(Function(line) line.StartsWith("END CUSTOMERS") = False)
@@ -1094,7 +1090,7 @@ Module PLinqSnippetsVB
 
         Shared Function GetOrders() As IEnumerable(Of Order)
 
-            Dim orders = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim orders = IO.File.ReadAllLines("..\..\plinqdata.csv").
                             SkipWhile(Function(line) line.StartsWith("ORDERS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END ORDERS") = False)
@@ -1111,7 +1107,7 @@ Module PLinqSnippetsVB
 
         Shared Function GetOrdersForCustomer(ByVal id As String) As Order()
 
-            Dim orders = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim orders = IO.File.ReadAllLines("..\..\plinqdata.csv").
                             SkipWhile(Function(line) line.StartsWith("ORDERS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END ORDERS") = False)
@@ -1131,7 +1127,7 @@ Module PLinqSnippetsVB
         End Function
         Shared Function GetProducts() As IEnumerable(Of Product)
 
-            Dim products = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim products = IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("PRODUCTS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END PRODUCTS") = False)
@@ -1145,7 +1141,7 @@ Module PLinqSnippetsVB
         End Function
 
         Shared Function GetOrderDetailsForOrder(ByVal orderID As Integer) As OrderDetail()
-            Dim orderDetails = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim orderDetails = IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("ORDER DETAILS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END ORDER DETAILS") = False)
@@ -1165,7 +1161,7 @@ Module PLinqSnippetsVB
         End Function
 
         Shared Function GetOrderDetails() As IEnumerable(Of OrderDetail)
-            Dim orderDetails = System.IO.File.ReadAllLines("..\..\plinqdata.csv").
+            Dim orderDetails = IO.File.ReadAllLines("..\..\plinqdata.csv").
                 SkipWhile(Function(line) line.StartsWith("ORDER DETAILS") = False).
                             Skip(1).
                             TakeWhile(Function(line) line.StartsWith("END ORDER DETAILS") = False)

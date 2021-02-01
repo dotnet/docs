@@ -13,3 +13,15 @@ EnableViewStateMac must be assumed to be true, and any resulting MAC errors must
 | Scope   |Major|
 |Version|4.5.2|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

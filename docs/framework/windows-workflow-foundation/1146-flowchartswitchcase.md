@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 274e9209-1720-4512-a615-e742f00895f4
 ---
 # 1146 - FlowchartSwitchCase
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 274e9209-1720-4512-a615-e742f00895f4
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates which case has been selected in a Flowchart switch.  
   
 ## Message  
+
  Flowchart '%1'/FlowSwitch - Case '%2' was selected.  
   
 ## Details  

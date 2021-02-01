@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StrongNameTokenFromAssembly Function
+
 Creates a strong name token from the specified assembly file.  
   
  This function has been deprecated. Use the [ICLRStrongName::StrongNameTokenFromAssembly](../hosting/iclrstrongname-strongnametokenfromassembly-method.md) method instead.  
@@ -31,6 +32,7 @@ BOOLEAN StrongNameTokenFromAssembly (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] The path to the portable executable (PE) file for the assembly.  
   
@@ -41,9 +43,11 @@ BOOLEAN StrongNameTokenFromAssembly (
  [out] The size, in bytes, of the strong name token.  
   
 ## Return Value  
+
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
+
  A strong name token is the shortened form of a public key. The token is a 64-bit hash that is created from the public key used to sign the assembly. The token is a part of the strong name for the assembly, and can be read from the assembly metadata.  
   
  After the token is created, you should call the [StrongNameFreeBuffer](strongnamefreebuffer-function.md) function to release the allocated memory.  
@@ -51,6 +55,7 @@ BOOLEAN StrongNameTokenFromAssembly (
  If the `StrongNameTokenFromAssembly` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

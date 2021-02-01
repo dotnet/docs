@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IAppDomainBinding::OnAppDomain Method
+
 Called by the common language runtime (CLR) to notify the host that an application domain has been created.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT OnAppDomain (
 ```  
   
 ## Parameters  
+
  `pAppdomain`  
  [in] A pointer to an [IUnknown](/cpp/atl/iunknown) interface object that represents the new application domain.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

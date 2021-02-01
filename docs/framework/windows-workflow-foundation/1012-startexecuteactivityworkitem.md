@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 29e9b1c6-c5d7-4b58-b59d-a06a923d3c80
 ---
 # 1012 - StartExecuteActivityWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 29e9b1c6-c5d7-4b58-b59d-a06a923d3c80
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates an ExecuteActivityWorkItem is starting execution.  
   
 ## Message  
+
  Starting execution of an ExecuteActivityWorkItem for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  
   
 ## Details  

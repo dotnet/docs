@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: ec7637a9-01d5-4a95-8bb0-478311cd263b
 ---
 # Comparison Expressions
+
 A comparison expression checks whether a constant value, property value, or method result is equal, not equal, greater than, or less than another value. If a particular comparison is not valid for LINQ to Entities, an exception will be thrown. All comparisons, both implicit and explicit, require that all components are comparable in the data source. Comparison expressions are frequently used in `Where` clauses for restricting the query results.  
   
  The following example in query expression syntax shows a query that returns results where the sales order number is equal to "SO43663":  

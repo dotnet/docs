@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStackWalk::SetContext Method
+
 Sets the [ICorDebugStackWalk](icordebugstackwalk-interface.md) object’s current context to a valid context for the thread.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
 ```  
   
 ## Parameters  
+
  `flag`  
  [in] A [CorDebugSetContextFlag](cordebugsetcontextflag-enumeration.md) flag that indicates whether the context is from the active frame on the stack, or a context obtained by unwinding the stack.  
   
@@ -38,6 +40,7 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
  [in] The `CONTEXT` buffer.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -50,6 +53,7 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
 ## Exceptions  
   
 ## Remarks  
+
  This method does not alter the current context of the thread.  
   
  Setting the current context to an invalid context may cause unpredictable results from the stack walker.  
@@ -57,6 +61,7 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
  You can retrieve an exact bitwise copy of this context by immediately calling the [ICorDebugStackWalk::GetContext](icordebugstackwalk-getcontext-method.md) method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

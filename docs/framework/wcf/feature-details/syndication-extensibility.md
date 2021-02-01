@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4d941175-74a2-4b15-81b3-086e8a95d25f
 ---
 # Syndication Extensibility
+
 The Syndication API is designed to provide a format-neutral programming model that allows syndicated content to be written to the wire in a variety of formats. The abstract data model consists of the following classes:  
   
 - <xref:System.ServiceModel.Syndication.SyndicationCategory>  
@@ -21,9 +22,11 @@ The Syndication API is designed to provide a format-neutral programming model th
  A key feature of syndication protocols is extensibility. Both Atom 1.0 and RSS 2.0, add attributes and elements to syndication feeds that are not defined in the specifications. The Windows Communication Foundation (WCF) syndication programming model provides the following ways of working with custom attributes and extensions, loosely-typed access and deriving a new class.  
   
 ## Loosely Typed Access  
+
  Adding extensions by deriving a new class requires writing additional code. Another option is accessing extensions in a loosely-typed way. All of the types defined in the syndication abstract data model contain properties named `AttributeExtensions` and `ElementExtensions` (with one exception, <xref:System.ServiceModel.Syndication.SyndicationContent> has an `AttributeExtensions` property but no `ElementExtensions` property). These properties are collections of extensions not processed by the `TryParseAttribute` and `TryParseElement` methods respectively. You can access these unprocessed extensions by calling <xref:System.ServiceModel.Syndication.SyndicationElementExtensionCollection.ReadElementExtensions%2A?displayProperty=nameWithType> on the `ElementExtensions` property of <xref:System.ServiceModel.Syndication.SyndicationFeed>, <xref:System.ServiceModel.Syndication.SyndicationItem>, <xref:System.ServiceModel.Syndication.SyndicationLink>, <xref:System.ServiceModel.Syndication.SyndicationPerson>, and <xref:System.ServiceModel.Syndication.SyndicationCategory>. This set of methods finds all extensions with the specified name and namespace, deserializes them individually into instances of `TExtension` and returns them as a collection of `TExtension` objects.  
   
 ## Deriving a New Class  
+
  You can derive a new class from any of the existing abstract data model classes. Do this when implementing an application in which most of the feeds you are working with have a particular extension. In this topic, most of the feeds that the program works with contain a `MyExtension` extension. To provide an improved programming experience, do the following steps:  
   
 - Create a class to hold the extension data. In this case, create a class called MyExtension.  

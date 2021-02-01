@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 87a4b0da-ed64-43b1-ac43-968576c444ce
 ---
 # Names of Classes, Structs, and Interfaces
+
 The naming guidelines that follow apply to general type naming.
 
  ✔️ DO name classes and structs with nouns or noun phrases, using PascalCasing.
@@ -38,6 +39,7 @@ The naming guidelines that follow apply to general type naming.
  ✔️ DO ensure that the names differ only by the "I" prefix on the interface name when you are defining a class–interface pair where the class is a standard implementation of the interface.
 
 ## Names of Generic Type Parameters
+
  Generics were added to .NET Framework 2.0. The feature introduced a new kind of identifier called *type parameter*.
 
  ✔️ DO name generic type parameters with descriptive names unless a single-letter name is completely self-explanatory and a descriptive name would not add value.
@@ -63,6 +65,7 @@ public interface ISessionChannel<TSession> where TSession : ISession {
  For example, a parameter constrained to `ISession` might be called `TSession`.
 
 ## Names of Common Types
+
  ✔️ DO follow the guidelines described in the following table when naming types derived from or implementing certain .NET Framework types.
 
 |Base Type|Derived/Implementing Type Guideline|
@@ -78,6 +81,7 @@ public interface ISessionChannel<TSession> where TSession : ISession {
 |`CodeAccessPermission IPermission`|✔️ DO add the suffix "Permission."|
 
 ## Naming Enumerations
+
  Names of enumeration types (also called enums) in general should follow the standard type-naming rules (PascalCasing, etc.). However, there are additional guidelines that apply specifically to enums.
 
  ✔️ DO use a singular type name for an enumeration unless its values are bit fields.

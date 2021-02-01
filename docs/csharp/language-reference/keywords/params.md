@@ -1,4 +1,5 @@
 ---
+description: "params keyword for parameter arrays - C# reference"
 title: "params keyword for parameter arrays - C# reference"
 ms.date: 07/20/2015
 f1_keywords: 

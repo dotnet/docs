@@ -95,7 +95,7 @@ Many cloud-native applications leverage server-side APIs and rich client single 
 ## References
 
 - [IdentityServer documentation](https://docs.identityserver.io/en/latest/)
-- [Application types](https://docs.microsoft.com/azure/active-directory/develop/app-types)
+- [Application types](/azure/active-directory/develop/app-types)
 - [JavaScript OIDC client](https://docs.identityserver.io/en/latest/quickstarts/4_javascript_client.html)
 
 >[!div class="step-by-step"]

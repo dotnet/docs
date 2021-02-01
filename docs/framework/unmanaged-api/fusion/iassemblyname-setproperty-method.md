@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IAssemblyName::SetProperty Method
+
 Sets the value of the property referenced by the specified property identifier.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetProperty (
 ```  
   
 ## Parameters  
+
  `PropertyId`  
  [in] The unique identifier of the property whose value will be set.  
   
@@ -40,6 +42,7 @@ HRESULT SetProperty (
  [in] The size, in bytes, of `pvProperty`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

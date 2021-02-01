@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5bf75f3c-8f33-450d-967f-6ee862c14c67
 ---
 # Properties of SQL Workflow Instance Store
+
 The topics in this section provide details about properties of the SQL Workflow Instance Store.  
   
 ## In This Section  
@@ -22,5 +23,5 @@ The topics in this section provide details about properties of the SQL Workflow 
   
 ## See also
 
-- [Windows Server App Fabric Instance Store](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))
-- [App Fabric SQL Server Persistence Database](https://docs.microsoft.com/previous-versions/appfabric/ee790819(v=azure.10))
+- [Windows Server App Fabric Instance Store](/previous-versions/appfabric/ff383417(v=azure.10))
+- [App Fabric SQL Server Persistence Database](/previous-versions/appfabric/ee790819(v=azure.10))

@@ -1,4 +1,5 @@
 ---
+description: "#define - C# Reference"
 title: "#define - C# Reference"
 ms.date: 06/30/2018
 f1_keywords: 
@@ -8,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 23638b8f-779c-450e-b600-d55682de7d01
 ---
 # #define (C# Reference)
+
 You use `#define` to define a symbol. When you use the symbol as the expression that's passed to the [#if](./preprocessor-if.md) directive, the expression will evaluate to `true`, as the following example shows:  
 
  ```csharp

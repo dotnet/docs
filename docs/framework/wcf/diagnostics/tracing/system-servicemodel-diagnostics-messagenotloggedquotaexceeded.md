@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 8b4fa4c5-83b7-41c3-9d5e-baa1fc2c98ae
 ---
 # System.ServiceModel.Diagnostics.MessageNotLoggedQuotaExceeded
+
 System.ServiceModel.Diagnostics.MessageNotLoggedQuotaExceeded  
   
 ## Description  
+
  Message not logged because its size exceeds the configured quota.  
   
 ## See also

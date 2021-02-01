@@ -1,4 +1,5 @@
 ---
+description: "protected keyword - C# Reference"
 title: "protected keyword - C# Reference"
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,7 +13,8 @@ ms.assetid: 05ce3794-6675-4025-bddb-eaaa0ec22892
 
 The `protected` keyword is a member access modifier.
 
- > This page covers `protected` access. The `protected` keyword is also part of the [`protected internal`](protected-internal.md) and [`private protected`](private-protected.md) access modifiers.
+> [!NOTE]
+> This page covers `protected` access. The `protected` keyword is also part of the [`protected internal`](protected-internal.md) and [`private protected`](private-protected.md) access modifiers.
 
 A protected member is accessible within its class and by derived class instances.
 
@@ -55,4 +57,4 @@ For more information, see [Declared accessibility](~/_csharplang/spec/basic-conc
 - [public](public.md)
 - [private](private.md)
 - [internal](internal.md)
-- [Security concerns for internal virtual keywords](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/heyd8kky(v=vs.100))
+- [Security concerns for internal virtual keywords](/previous-versions/dotnet/netframework-4.0/heyd8kky(v=vs.100))

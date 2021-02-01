@@ -4,9 +4,11 @@ ms.date: 07/20/2015
 ms.assetid: a99371f7-097c-49a0-b62b-0e31c34aad0e
 ---
 # Language-Integrated Query (LINQ) (Visual Basic)
+
 LINQ is a set of features that extends powerful query capabilities to the language syntax of Visual Basic. LINQ introduces standard, easily-learned patterns for querying and updating data, and the technology can be extended to support potentially any kind of data store.  The .NET Framework includes LINQ provider assemblies that enable the use of LINQ with .NET Framework collections, SQL Server databases, ADO.NET Datasets, and XML documents.  
   
 ## In This Section  
+
  [Introduction to LINQ (Visual Basic)](introduction-to-linq.md)  
  Provides a general introduction to the kinds of applications that you can write and the kinds of problems that you can solve with LINQ queries.  
   
@@ -22,7 +24,7 @@ LINQ is a set of features that extends powerful query capabilities to the langua
  [LINQ to Objects (Visual Basic)](linq-to-objects.md)  
  Includes links to topics that explain how to use LINQ to Objects to access in-memory data structures,  
   
- [LINQ to XML (Visual Basic)](linq-to-xml.md)  
+ [LINQ to XML (Visual Basic)](../../../../standard/linq/linq-xml-overview.md)  
  Includes links to topics that explain how to use LINQ to XML, which provides the in-memory document modification capabilities of the Document Object Model (DOM), and supports LINQ query expressions.  
   
  [LINQ to ADO.NET (Portal Page)](linq-to-adonet-portal-page.md)  

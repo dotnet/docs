@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a927e0ac-f110-426d-bbec-9377a29c8f17
 ---
 # ICorDebugProcess6::GetExportStepInfo Method
+
 Provides information on runtime exported functions to help step through managed code.  
   
 ## Syntax  
@@ -16,6 +17,7 @@ HRESULT GetExportStepInfo(
 ```  
   
 ## Parameters  
+
  pszExportName  
  [in] The name of a runtime export function as written in the PE export table.  
   
@@ -26,6 +28,7 @@ HRESULT GetExportStepInfo(
  [out] A pointer to a member of the [CorDebugCodeInvokePurpose](cordebugcodeinvokepurpose-enumeration.md) enumeration that describes why the exported function will call managed code.  
   
 ## Return Value  
+
  The method can return the values listed in the following table.  
   
 |Return value|Description|  
@@ -40,6 +43,7 @@ HRESULT GetExportStepInfo(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

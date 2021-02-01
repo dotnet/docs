@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 41f1ac35-f559-473a-b2c3-8cc83a6a3831
 ---
 # \<filterTables>
+
 Represents a configuration section for defining routing tables that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -29,9 +30,11 @@ Represents a configuration section for defining routing tables that contain mapp
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

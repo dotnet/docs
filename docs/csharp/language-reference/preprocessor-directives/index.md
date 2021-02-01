@@ -1,4 +1,5 @@
 ---
+description: "C# preprocessor directives"
 title: "C# preprocessor directives"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -9,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
 ---
 # C# preprocessor directives
+
 This section contains information about the following C# preprocessor directives:
 
 - [#if](./preprocessor-if.md)
@@ -20,6 +22,7 @@ This section contains information about the following C# preprocessor directives
 - [#warning](./preprocessor-warning.md)
 - [#error](./preprocessor-error.md)
 - [#line](./preprocessor-line.md)
+- [#nullable](./preprocessor-nullable.md)
 - [#region](./preprocessor-region.md)
 - [#endregion](./preprocessor-endregion.md)
 - [#pragma](./preprocessor-pragma.md)

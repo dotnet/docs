@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostMemoryManager::VirtualProtect Method
+
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualProtect` changes the protection on a region of committed pages in the virtual address space of the calling process.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT VirtualProtect (
 ```  
   
 ## Parameters  
+
  `lpAddress`  
  [in] A pointer to the base address of the virtual memory whose protection attributes are to be changed.  
   
@@ -55,9 +57,11 @@ HRESULT VirtualProtect (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  This implementation of `VirtualProtect` returns an HRESULT value, while the Win32 implementation returns a non-zero value to indicate success, and a zero value to indicate failure. For more information, see the Windows Platform documentation.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

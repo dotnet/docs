@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 944fa5ca-2c34-4268-8897-e005a61b470d
 ---
 # Security Concepts
+
 This section briefly explains the concepts associated with Windows Communication Foundation (WCF) security.  
   
 ## In This Section  
+
  [Security Concepts Used in WCF](security-concepts-used-in-wcf.md)  
  A high-level overview of concepts used in security implementations.  
   
@@ -17,6 +19,7 @@ This section briefly explains the concepts associated with Windows Communication
  A glossary of terms used when discussing WCF security.  
   
 ## Reference  
+
  <xref:System.ServiceModel>  
   
  <xref:System.ServiceModel.Channels>  
@@ -28,10 +31,11 @@ This section briefly explains the concepts associated with Windows Communication
  <xref:System.Security>  
   
 ## Related Sections  
+
  [Extending Security](../extending/extending-security.md)  
   
 ## See also
 
 - [Security](security.md)
 - [Security Overview](security-overview.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

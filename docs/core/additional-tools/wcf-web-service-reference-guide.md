@@ -79,7 +79,7 @@ When these processes complete, you can create an instance of the generated WCF c
 
 ## Feedback & questions
 
-If you have any questions or feedback, report it at [Developer Community](https://developercommunity.visualstudio.com/) using the [Report a problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio) tool.
+If you have any product feedback, report it at [Developer Community](https://aka.ms/feedback/report?space=61) using the [Report a problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio) tool.
 
 ## Release notes
 

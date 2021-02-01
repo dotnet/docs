@@ -1,4 +1,5 @@
 ---
+description: "Restrictions on using accessibility levels - C# Reference"
 title: "Restrictions on using accessibility levels - C# Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 

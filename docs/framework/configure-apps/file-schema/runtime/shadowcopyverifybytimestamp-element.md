@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 2f1648e5-997b-435e-a4f9-d236c574c66c
 ---
 # \<shadowCopyVerifyByTimestamp> Element
+
 Specifies whether shadow copying uses the default startup behavior introduced in the .NET Framework 4, or reverts to the startup behavior of earlier versions of the .NET Framework.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ Specifies whether shadow copying uses the default startup behavior introduced in
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Specifies whether shadow copying uses the default startup behavior introduced in
 |false|Reverts to the startup behavior of previous versions of the .NET Framework, which was to copy all files at startup.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,9 +49,11 @@ Specifies whether shadow copying uses the default startup behavior introduced in
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  Starting with the .NET Framework 4, assemblies are shadow copied only if their time stamps indicate that they have changed since they were last copied to the shadow copy directory. This improves startup times for many applications that use shadow copying, as described in [Shadow Copying Assemblies](../../../app-domains/shadow-copy-assemblies.md). Applications that have a high percentage and frequency of assembly updates might not benefit from this change in behavior. In that case, you can use this element to restore the behavior of previous versions of the .NET Framework.  
   
 ## Example  
+
  The following example shows how to disable the default startup behavior of shadow copying in the .NET Framework 4, and revert to the startup behavior of previous versions of the .NET Framework.  
   
 ```xml  

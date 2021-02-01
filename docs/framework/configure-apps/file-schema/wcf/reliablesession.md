@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 129b4a59-37f0-4030-b664-03795d257d29
 ---
 # \<reliableSession>
+
 Defines setting for WS-Reliable Messaging. When this element is added to a custom binding, the resulting channel can support exactly-once delivery assurances.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -43,6 +45,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 |reliableMessagingVersion|A valid value from <xref:System.ServiceModel.ReliableMessagingVersion> that specifies the WS-ReliableMessaging version to be used.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -52,6 +55,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  Reliable sessions provide features for reliable messaging and sessions. Reliable messaging retries communication on failure and allows delivery assurances such as in-order arrival of messages to be specified. Sessions maintain state for clients between calls. This element also optionally provides ordered message delivery. This implemented session can cross SOAP and transport intermediaries.  
   
  Each binding element represents a processing step when sending or receiving messages. At runtime, binding elements create the channel factories and listeners that are necessary to build outgoing and incoming channel stacks required to send and receive messages. The `reliableSession` provides an optional layer in the stack that can establish a reliable session between endpoints and configure the behavior of this session.  
@@ -59,6 +63,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
  For more information, see [Reliable Sessions](../../../wcf/feature-details/reliable-sessions.md).  
   
 ## Example  
+
  The following example demonstrates how to configure a custom binding with various transport and message encoding elements, especially enabling reliable sessions, which maintains client state and specifies in-order delivery assurances. This feature is configured in the application configuration files for the client and service. The example show the service configuration.  
   
 ```xml  

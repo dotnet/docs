@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
 ---
 # Thread Pool ETW Events
+
 These events collect information about worker and I/O threads.  
   
  There are two groups of thread pool events:  
@@ -17,9 +18,11 @@ These events collect information about worker and I/O threads.
 - [I/O thread pool events](#io-thread-events), which provide information about I/O threads that are created, retired, unretired, or terminated in the thread pool.  
 
 ## Worker Thread Pool Events
+
  These events relate to the runtime's worker thread pool and provide notifications for thread events (for example, when a thread is created or stopped). The worker thread pool uses an adaptive algorithm for concurrency control, where the number of threads is calculated based on the measured throughput. Worker thread pool events can be used to understand how an application is using the thread pool, and the effect that certain workloads may have on concurrency control.  
   
 ### ThreadPoolWorkerThreadStart and ThreadPoolWorkerThreadStop  
+
  The following table shows the keyword and level for these events. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
@@ -44,9 +47,11 @@ These events collect information about worker and I/O threads.
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
 ### ThreadPoolWorkerThreadAdjustment  
+
  These thread pool events provide information for understanding and debugging the behavior of the thread injection (concurrency control) algorithm. The information is used internally by the worker thread pool.  
   
 #### ThreadPoolWorkerThreadAdjustmentSample  
+
  The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  
@@ -67,6 +72,7 @@ These events collect information about worker and I/O threads.
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
 #### ThreadPoolWorkerThreadAdjustmentAdjustment  
+
  The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  
@@ -89,6 +95,7 @@ These events collect information about worker and I/O threads.
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
 #### ThreadPoolWorkerThreadAdjustmentStats  
+
  The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  
@@ -118,9 +125,11 @@ These events collect information about worker and I/O threads.
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
 
 ## I/O Thread Events  
+
  These thread pool events occur for threads in the I/O thread pool (completion ports), which is asynchronous.  
   
 ### IOThreadCreate_V1  
+
  The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  
@@ -142,6 +151,7 @@ These events collect information about worker and I/O threads.
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
 ### IOThreadRetire_V1  
+
  The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  
@@ -163,6 +173,7 @@ These events collect information about worker and I/O threads.
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
 ### IOThreadUnretire_V1  
+
  The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  
@@ -184,6 +195,7 @@ These events collect information about worker and I/O threads.
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
 ### IOThreadTerminate  
+
  The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  

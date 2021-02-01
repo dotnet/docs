@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 50127ced-2ac8-4d7a-9cd1-5c98c655ff03
 ---
 # Common Schema Collections
+
 The common schema collections are the schema collections that are implemented by each of the .NET Framework managed providers. You can query a .NET Framework managed provider to determine the list of supported schema collections by calling the **GetSchema** method with no arguments, or with the schema collection name "MetaDataCollections". This will return a <xref:System.Data.DataTable> with a list of the supported schema collections, the number of restrictions that they each support, and the number of identifier parts that they use. These collections describe all of the required columns. Providers are free to add additional columns if they wish. For example, `SqlClient` and `OracleClient` add ParameterName to the restrictions collection.  
   
  If a provider is unable to determine the value of a required column, it will return null.  
@@ -11,6 +12,7 @@ The common schema collections are the schema collections that are implemented by
  For more information about using the **GetSchema** methods, see [GetSchema and Schema Collections](getschema-and-schema-collections.md).  
   
 ## MetaDataCollections  
+
  This schema collection exposes information about all of the schema collections supported by the .NET Framework managed provider that is currently used to connect to the database.  
   
 |ColumnName|DataType|Description|  
@@ -20,6 +22,7 @@ The common schema collections are the schema collections that are implemented by
 |NumberOfIdentifierParts|int|The number of parts in the composite identifier/database object name. For example, in SQL Server, this would be 3 for tables and 4 for columns. In Oracle, it would be 2 for tables and 3 for columns.|  
   
 ## DataSourceInformation  
+
  This schema collection exposes information about data source that the .NET Framework managed provider is currently connect to.  
   
 |ColumnName|DataType|Description|  
@@ -43,6 +46,7 @@ The common schema collections are the schema collections that are implemented by
 |SupportedJoinOperators|<xref:System.Data.Common.SupportedJoinOperators>|Specifies what types of SQL join statements are supported by the data source.|  
   
 ## DataTypes  
+
  This schema collection exposes information about the data types that are supported by the database that the .NET Framework managed provider is currently connected to.  
   
 |ColumnName|DataType|Description|  
@@ -72,6 +76,7 @@ The common schema collections are the schema collections that are implemented by
 |NativeDataType|String|NativeDataType is an OLE DB specific column for exposing the OLE DB type of the data type .|  
   
 ## Restrictions  
+
  This schema collection exposed information about the restrictions that are supported by the .NET Framework managed provider that is currently used to connect to the database.  
   
 |ColumnName|DataType|Description|  
@@ -82,6 +87,7 @@ The common schema collections are the schema collections that are implemented by
 |RestrictionNumber|int|The actual location in the collections restrictions that this particular restriction falls in.|  
   
 ## ReservedWords  
+
  This schema collection exposes information about the words that are reserved by the database that the .NET Framework managed provider that is currently connected to.  
   
 |ColumnName|DataType|Description|  

@@ -37,10 +37,10 @@
       href: tutorials/type-providers/type-provider-security.md
     - name: Troubleshooting Type Providers
       href: tutorials/type-providers/troubleshooting-type-providers.md
-  - name: F# Interactive
-    href: tutorials/fsharp-interactive/index.md
 - name: What's new in F#
   items:
+  - name: F# 5.0
+    href: whats-new/fsharp-50.md
   - name: F# 4.7
     href: whats-new/fsharp-47.md
   - name: F# 4.6
@@ -97,6 +97,8 @@
     href: language-reference/unit-type.md
   - name: Strings
     href: language-reference/strings.md
+  - name: Interpolated strings
+    href: language-reference/interpolated-strings.md
   - name: Tuples
     href: language-reference/tuples.md
   - name: F# Collection Types
@@ -140,6 +142,8 @@
     href: language-reference/classes.md
   - name: Structures
     href: language-reference/structures.md
+  - name: Nullable value types
+    href: language-reference/nullable-value-types.md
   - name: Inheritance
     href: language-reference/inheritance.md
   - name: Interfaces
@@ -246,6 +250,8 @@
     href: language-reference/byrefs.md
   - name: Reference Cells
     href: language-reference/reference-cells.md
+  - name: nameof
+    href: language-reference/nameof.md
   - name: Compiler Directives
     href: language-reference/compiler-directives.md
   - name: Compiler Options
@@ -260,6 +266,10 @@
     href: language-reference/verbose-syntax.md
   - name: Compiler errors and warnings
     href: language-reference/compiler-messages/index.md
+- name: F# Tools
+  items:
+    - name: F# Interactive
+      href: tools/fsharp-interactive/index.md
 - name: F# style guide
   href: style-guide/index.md
   items:
@@ -272,13 +282,13 @@
 - name: Use F# on Azure
   href: using-fsharp-on-azure/index.md
   items:
-  - name: Get started with Azure Blob storage using F#
+  - name: Get started with Azure Blob Storage using F#
     href: using-fsharp-on-azure/blob-storage.md
-  - name: Get started with Azure File storage using F#
+  - name: Get started with Azure File Storage using F#
     href: using-fsharp-on-azure/file-storage.md
-  - name: Get started with Azure Queue storage using F#
+  - name: Get started with Azure Queue Storage using F#
     href: using-fsharp-on-azure/queue-storage.md
-  - name: Get started with Azure Table storage using F#
+  - name: Get started with Azure Table Storage using F#
     href: using-fsharp-on-azure/table-storage.md
   - name: Package Management for F# Azure Dependencies
     href: using-fsharp-on-azure/package-management.md

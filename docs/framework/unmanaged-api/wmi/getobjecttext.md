@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # GetObjectText function
+
 Returns a textual rendering of the object in the Managed Object Format (MOF) syntax.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -70,6 +71,7 @@ The following algorithm is used to reconstruct the text of the parameters of a m
 `pstrObjectText` must be a pointer to a `null` when the function is called; it must not point to a string that is valid before the method call, because the pointer will not be deallocated.
 
 ## Requirements  
+
 **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  

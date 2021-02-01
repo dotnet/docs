@@ -17,7 +17,7 @@ Module Example
                     Console.WriteLine(ex.Message)
                     ' Rethrow any other exception.
                 Else
-                    Throw
+                    Throw ex
                 End If
             Next
         End Try

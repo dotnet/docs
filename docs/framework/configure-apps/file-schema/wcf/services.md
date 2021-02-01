@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 80d76ba9-2058-48ad-9b91-5e4be7e5c113
 ---
 # \<services>
+
 Services are defined in the `services` section of the configuration file. Each service has its own `service` configuration section.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,9 +23,11 @@ Services are defined in the `services` section of the configuration file. Each s
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None  
   
 ### Child Elements  

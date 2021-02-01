@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostSecurityManager Interface
+
 Provides methods that allow access to and control over the security context of the currently executing thread.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Provides methods that allow access to and control over the security context of t
 |[SetThreadToken Method](ihostsecuritymanager-setthreadtoken-method.md)|Sets a handle for the currently executing thread.|  
   
 ## Remarks  
+
  A host can control all code access to thread tokens by both the common language runtime (CLR) and user code. It can also ensure that complete security context information is passed across asynchronous operations or code points with restricted code access. `IHostSecurityContext` encapsulates this security context information, which is opaque to the CLR.  
   
  The CLR handles managed thread context internally. It queries the process-specific `IHostSecurityManager` in the following situations:  
@@ -43,6 +45,7 @@ Provides methods that allow access to and control over the security context of t
 - In servicing of I/O completion ports.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

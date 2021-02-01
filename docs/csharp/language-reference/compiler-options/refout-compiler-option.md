@@ -1,4 +1,5 @@
 ---
+description: "-refout (C# Compiler Options)"
 title: "-refout (C# Compiler Options)"
 ms.date: 08/08/2017
 f1_keywords: 

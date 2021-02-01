@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c0b61572-ecee-41eb-9d7f-74132ec8a26c
 ---
 # ORDER BY (Entity SQL)
+
 Specifies the sort order used on objects returned in a SELECT statement.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ Specifies the sort order used on objects returned in a SELECT statement.
 ```  
   
 ## Arguments  
+
  `order_by_expression`  
  Any valid query expression specifying a property on which to sort. Multiple sort expressions can be specified. The sequence of the sort expressions in the ORDER BY clause defines the organization of the sorted result set.  
   
@@ -39,6 +41,7 @@ Specifies the sort order used on objects returned in a SELECT statement.
  Skips the first `n` items.  
   
 ## Remarks  
+
  The ORDER BY clause is logically applied to the result of the SELECT clause. The ORDER BY clause can reference items in the select list by using their aliases. The ORDER BY clause can also reference other variables that are currently in-scope. However, if the SELECT clause has been specified with a DISTINCT modifier, the ORDER BY clause can only reference aliases from the SELECT clause.  
   
  `SELECT c AS c1 FROM cs AS c ORDER BY c1.e1, c.e2`  
@@ -73,6 +76,7 @@ ORDER BY ...
 ```  
   
 ## Restricted keywords  
+
  The following keywords must be enclosed in quotation marks when used in an `ORDER BY` clause:  
   
 - CROSS  
@@ -94,6 +98,7 @@ ORDER BY ...
 - VALUE  
   
 ## Ordering Nested Queries  
+
  In the Entity Framework, a nested expression can be placed anywhere in the query; the order of a nested query is not preserved.  
 
 The following query will order the results by the last name:  
@@ -114,6 +119,7 @@ SELECT C2.FirstName, C2.LastName
 ```  
   
 ## Example  
+
  The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the ORDER BY operator to specify the sort order used on objects returned in a SELECT statement. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
 1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  

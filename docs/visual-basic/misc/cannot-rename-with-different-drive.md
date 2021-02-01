@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: eddb087d-b2e9-4bc7-a567-0bb6c45e0d42
 ---
 # Cannot rename with different drive
+
 The `Rename` statement cannot specify a drive letter in the file path.  
   
 ## To correct this error  

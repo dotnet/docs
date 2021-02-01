@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorRuntimeHost::Stop Method
+
 Stops the execution of code in the runtime for the current process.  
   
 ## Syntax  
@@ -35,12 +36,14 @@ HRESULT Stop ();
 |HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
   
 ## Remarks  
+
  It is typically unnecessary to call the `Stop` method, because the code stops executing when the process exits.  
   
 > [!NOTE]
 > After a call to `Stop`, the CLR cannot be reinitialized into the same process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

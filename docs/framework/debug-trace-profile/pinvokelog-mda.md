@@ -12,15 +12,19 @@ helpviewer_keywords:
 ms.assetid: b830444a-5003-49fe-b89b-b8bee22f7b1a
 ---
 # pInvokeLog MDA
+
 The `pInvokeLog` managed debugging assistant (MDA) is activated for each unique platform invoke signature used during execution.  
   
 ## Effect on the Runtime  
+
  This MDA has no effect on the CLR.  
   
 ## Output  
+
  A message indicating the platform invoke signature used during execution.  
   
 ## Configuration  
+
  Each match element filters the .dll files to which platform invoke calls are made.  
   
 ```xml  

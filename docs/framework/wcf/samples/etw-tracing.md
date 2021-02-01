@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: ac99a063-e2d2-40cc-b659-d23c2f783f92
 ---
 # ETW Tracing
+
 This sample demonstrates how to implement End-to-End (E2E) tracing using Event Tracing for Windows (ETW) and the `ETWTraceListener` that is provided with this sample. The sample is based on the [Getting Started](getting-started-sample.md) and includes ETW tracing.  
   
 > [!NOTE]
@@ -103,4 +104,4 @@ logman stop Wcf
   
 ## See also
 
-- [AppFabric Monitoring Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [AppFabric Monitoring Samples](/previous-versions/appfabric/ff383407(v=azure.10))

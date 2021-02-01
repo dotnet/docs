@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
 ---
 # \<clear> Element for connectionManagement (Network Settings)
+
 Clears the connection management list.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -26,12 +27,15 @@ Clears the connection management list.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -41,12 +45,15 @@ Clears the connection management list.
 |[connectionManagement](connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to a network host.|  
   
 ## Remarks  
+
  The `clear` element clears all entries from the connection management list.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example clears the connection management list and then adds new connection management entries for the server `www.contoso.com` and all other network hosts.  
   
 ```xml  

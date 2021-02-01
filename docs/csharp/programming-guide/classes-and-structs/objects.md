@@ -18,7 +18,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
 
  Because classes are reference types, a variable of a class object holds a reference to the address of the object on the managed heap. If a second object of the same type is assigned to the first object, then both variables refer to the object at that address. This point is discussed in more detail later in this topic.  
   
- Instances of classes are created by using the [new operator](../../language-reference/operators/new-operator.md). In the following example, `Person` is the type and `person1` and `person 2` are instances, or objects, of that type.  
+ Instances of classes are created by using the [new operator](../../language-reference/operators/new-operator.md). In the following example, `Person` is the type and `person1` and `person2` are instances, or objects, of that type.  
   
  [!code-csharp[csProgGuideStatements#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#30)]  
   

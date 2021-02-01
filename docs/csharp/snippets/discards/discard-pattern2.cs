@@ -15,24 +15,15 @@ public class DiscardPatternMatching
         foreach (var obj in objects)
             ProvidesFormatInfo(obj);
 
-        static void ProvidesFormatInfo(object obj)
-        {
-            switch (obj)
+        static void ProvidesFormatInfo(object obj) =>
+            Console.WriteLine(obj switch
             {
-                case IFormatProvider fmt:
-                    Console.WriteLine($"{fmt} object");
-                    break;
-                case null:
-                    Console.Write("A null object reference: ");
-                    Console.WriteLine("Its use could result in a NullReferenceException");
-                    break;
-                case object _:
-                    Console.WriteLine("Some object type without format information");
-                    break;
-            }
-        }
+                IFormatProvider fmt => $"{fmt.GetType()} object",
+                null => "A null object reference: Its use could result in a NullReferenceException",
+                _ => "Some object type without format information"
+            });
         // The example displays the following output:
-        //    en-US object
+        //    System.Globalization.CultureInfo object
         //    System.Globalization.DateTimeFormatInfo object
         //    System.Globalization.NumberFormatInfo object
         //    Some object type without format information

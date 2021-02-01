@@ -61,6 +61,8 @@ Editors:
 
 > **Maira Wenzel**, Program Manager, .NET team, Microsoft
 
+> **David Pine**, Senior Content Developer, .NET docs, Microsoft
+
 ## Version
 
 This guide has been written to cover **.NET 5** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 5 release.

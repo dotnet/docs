@@ -85,7 +85,7 @@ F# scripting is natively supported in [Visual Studio](../../get-started/get-star
 ## Referencing packages in F# Interactive
 
 > [!NOTE]
-> Package management system is extensible, read more [about other extensions](https://github.com/dotnet/fsharp/tree/main/src/fsharp/Microsoft.DotNet.DependencyManager).
+> Package management system is extensible, read more [about other extensions](https://fsharp.github.io/FSharp.Compiler.Service/reference/Microsoft.DotNet.DependencyManager.html).
 
 F# Interactive supports referencing NuGet packages with the `#r "nuget:"` syntax and an optional version:
 

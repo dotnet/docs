@@ -56,7 +56,7 @@ In more complex scenarios, you can use <xref:System.Runtime.InteropServices.Nati
 > [!TIP]
 > This functionality is only available in .NET 5 and .NET Core 3.1 or later.
 
-[!code-csharp[import resolver](~/samples/snippets/standard/interop/pinvoke/import-resolver.cs)]
+[!code-csharp[import resolver](~/samples/snippets/standard/interop/pinvoke/import-resolver/Program.cs)]
 
 ## See also
 

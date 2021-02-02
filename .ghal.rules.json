@@ -92,7 +92,7 @@
                 "labels-add": [ "dotnet-architecture/prod", "serverless/tech" ]
               },
               
-              "(?i).*docs\/azure\/**\/*.*": {
+              "(?i).*docs\/azure.*": {
                 "labels-add": "dotnet-azure/prod"
               },
               
@@ -110,7 +110,7 @@
                 "labels-add": [ "dotnet/prod", "dotnet-install/tech" ]
               },
               
-              "(?i).*docs\/csharp\/**\/*.*": {
+              "(?i).*docs\/csharp.*": {
                 "labels-add": "dotnet-csharp/prod"
               },
               "(?i).*docs\/csharp\/misc.*": {
@@ -284,7 +284,7 @@
                 "labels-add": [ "dotnet-fundamentals/prod", "dotnet-analyzers/tech" ]
               },
               
-              "(?i).*docs\/machine-learning\/**\/*.*": {
+              "(?i).*docs\/machine-learning.*": {
                 "labels-add": "dotnet-ml/prod"
               },
               

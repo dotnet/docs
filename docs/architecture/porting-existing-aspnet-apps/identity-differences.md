@@ -5,9 +5,9 @@ author: ardalis
 ms.date: 11/13/2020
 ---
 
-# Comparing ASP.NET Identity and ASP.NET Core Identity
+# Compare ASP.NET Identity and ASP.NET Core Identity
 
-In ASP.NET MVC, identity features are typically configured in `IdentityConfig.cs` in the `App_Start` folder. Review how this is configured in the existing app, and compare it to the [configuration required for ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity-configuration) in `Startup.cs`.
+In ASP.NET MVC, identity features are typically configured in *IdentityConfig.cs* in the *App_Start* folder. Review how this is configured in the existing app, and compare it to the [configuration required for ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity-configuration) in *Startup.cs*.
 
 ASP.NET Identity is an API that supports user interface login functionality and manages users, passwords, profile data, roles, claims, tokens, email confirmations, and more. It supports external login providers like Facebook, Google, Microsoft, and Twitter.
 
@@ -29,7 +29,6 @@ The following resources offer some guidance for migrating from OWIN / Katana:
 - [Migrate Authentication and Identity to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/identity)
 - [Introduction to Identity on ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
 - [Configure ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity-configuration)
-- [How to migrate Identity users from MVC5 to ASP.NET Core (to be determined)](https://github.com/dotnet/AspNetCore.Docs/issues/9770)
 - [Scaffold Identity in ASP.NET Core projects](https://docs.microsoft.com/aspnet/core/security/authentication/scaffold-identity)
 
 >[!div class="step-by-step"]

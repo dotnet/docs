@@ -23,7 +23,7 @@ Redmond, Washington 98052-6399
 
 Copyright &copy; 2020 by Microsoft Corporation
 
-All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
+All rights reserved. No part of this book's contents may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
 This book is provided "as-is" and expresses the author's views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice.
 
@@ -44,33 +44,37 @@ Authors:
 Participants and Reviewers:
 
 > **Nish Anil**, Senior Program Manager, .NET team, Microsoft
+
 > **Mike Rousos**, Principal Software Engineer, .NET team, Microsoft
->
+
+> **Scott Addie**, Senior Content Developer, .NET team, Microsoft
+
+> **David Pine**, Senior Content Developer, .NET team, Microsoft
 
 ## Version
 
-This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release. Updating from .NET Core 3.1 to .NET 5 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET to .NET Core. Migrating from .NET 4.x to .NET 5 will be similar to migrating to .NET Core 3.1; see [choosing the right .NET Core version](choose-net-core-version.md) for more details.
+This guide covers **.NET Core 3.1** and updates related to the same technology "wave" (that is, Azure and other third-party technologies) coinciding in time with the .NET Core 3.1 release. Updating from .NET Core 3.1 to .NET 5.0 (the next version) is relatively straightforward and certainly will require substantially less effort than porting from .NET Framework to .NET Core. Migrating from .NET Framework 4.x to .NET 5.0 will be similar to migrating to .NET Core 3.1. For more information, see [choosing the right .NET Core version](choose-net-core-version.md).
 
 ## Who should use this guide
 
-The audience for this guide is mainly developers, development leads, and architects who are interested in learning how to move their existing applications written for ASP.NET MVC and Web API (.NET 4.x) to .NET Core. ASP.NET Web Forms developers may also benefit from this guide, but should be sure to read [Blazor for ASP.NET Web Forms Developers](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/) e-book as well.
+This guide's audience is developers, development leads, and architects who are interested in migrating their existing apps written for ASP.NET MVC and Web API (.NET Framework 4.x) to .NET Core. ASP.NET Web Forms developers will benefit from this guide but should also read the [Blazor for ASP.NET Web Forms Developers](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/) e-book.
 
-A secondary audience is technical decision-makers who are making plans for when to move their applications to .NET Core.
+A secondary audience is technical decision-makers planning when to move their apps to .NET Core.
 
-Note that the target audience for this book is .NET developers with large, existing apps that run on ASP.NET MVC and Web API. Apps built on ASP.NET Web Forms are outside of the focus of this book, though much of the information comparing .NET and .NET Core may still be relevant.
+The target audience for this book is .NET developers with large, existing apps that run on ASP.NET MVC and Web API. Apps built on ASP.NET Web Forms are outside of the focus of this book, though much of the information comparing .NET Framework and .NET Core may still be relevant.
 
 ## How you can use this guide
 
-You can read this book straight through, as we expect many readers to do. This will provide you first with considerations for whether you should port your app at all, followed by architectural differences between .NET and .NET Core. From there you'll learn strategies for migrating a large solution over time, and how to port a real application. Next, the book includes deployment scenarios that may help you address the need to run different apps while appearing as a single app to users. The book concludes with two case studies describing real applications that have made the move from ASP.NET MVC to ASP.NET Core.
+You can read this book straight through, as we expect many readers to do. This book will provide you first with considerations for whether you should port your app at all. That content is followed by architectural differences between .NET Framework and .NET Core. From there, you'll learn strategies for migrating a large solution over time and how to port a real app. Next, the book includes deployment scenarios that address the need to run different apps while appearing as a single app to users. The book concludes with two case studies describing real apps that have migrated from ASP.NET MVC to ASP.NET Core.
 
-Whether or not you choose to start from the first chapter, you can also refer (back) to any of these chapters to learn about specific topics:
+Whether or not you choose to start from the first chapter, you can reference any of these chapters to learn about specific concepts:
 
 - [Architectural differences](architectural-differences.md)
 - [Migrate large solutions](migrate-large-solutions.md)
 - [Sample migration](example-migration-eshop.md)
 - [Deployment scenarios](deployment-scenarios.md)
 
-This guide is available both in PDF (TODO: add link) form and online. Feel free to forward this document or links to its online version to your team to ensure a common understanding of these topics.
+This guide is available both in PDF (TODO: add link) form and online. Feel free to forward this document or links to its online version to your team to ensure a common understanding of these concepts.
 
 ## Send your feedback
 

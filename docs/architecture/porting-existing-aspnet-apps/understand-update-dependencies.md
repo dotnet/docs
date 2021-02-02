@@ -7,11 +7,11 @@ ms.date: 11/13/2020
 
 # Understand and update dependencies
 
-After identifying the sequence in which the app's individual projects must be migrated, the next step is to understand each project's dependencies and update them if necessary. For platform dependencies, the best way to start is to run the [.NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer) on the assembly in question, and then look at the detailed results that are generated. You configure to tool to specify one or more target platforms, such as .NET 3.1 or .NET Standard 2.0, and results are provided with details for each platform targeted. Figure 3-4 shows an example of the output from the tool.
+After identifying the sequence in which the app's individual projects must be migrated, the next step is to understand each project's dependencies and update them if necessary. For platform dependencies, the best way to start is to run the [.NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer) on the assembly in question, and then look at the detailed results that are generated. You configure the tool to specify one or more target platforms, such as .NET Core 3.1 or .NET Standard 2.0. Results are provided with details for each platform targeted. Figure 3-4 shows an example of the tool's output.
 
 ![.NET Portability Analyzer report details](./media/Figure3-4.png)
 
-**Figure 3-4. .NET Portability Analyzer report details.**
+**Figure 3-4.** .NET Portability Analyzer report details.
 
 ## Update class library dependencies
 
@@ -29,7 +29,7 @@ Once you've successfully installed the tool, you can run `try-convert` in the fo
 
 ## Update NuGet package dependencies
 
-Analyze your use of third party NuGet packages and determine if any of them do not yet support .NET Standard (or do support it but only with a new version). It can be helpful to [update NuGet packages to use `<PackageReference>` syntax using Visual Studios converter tool](https://docs.microsoft.com/nuget/consume-packages/migrate-packages-config-to-package-reference), so that top-level dependencies are visible. Next, check whether the current or later versions of these packages support .NET Core or .NET Standard. This information can be found on [nuget.org] or within Visual Studio for each package.
+Analyze your use of third-party NuGet packages and determine if any of them don't yet support .NET Standard (or do support it but only with a new version). It can be helpful to [update NuGet packages to use `<PackageReference>` syntax using Visual Studio's converter tool](https://docs.microsoft.com/nuget/consume-packages/migrate-packages-config-to-package-reference), so that top-level dependencies are visible. Next, check whether the current or later versions of these packages support .NET Core or .NET Standard. This information can be found on [nuget.org] or within Visual Studio for each package.
 
 If support exists using the version of the package the app currently uses, great! If not, see if a more recent version of the package has the support and research what would be involved in upgrading. There may be breaking changes in the package, especially if the major version of the package changes between your currently used version and the one to which you're upgrading.
 
@@ -41,7 +41,7 @@ The `System.Web` namespace and types don't exist in .NET Core. When you're analy
 
 In general, it's a good practice to minimize how much of an app's business logic lives in its user interface layer. It's also best to keep controllers and views small. Apps that have followed this guidance will be easier to port than those that have a significant amount of their logic in the ASP.NET web project. If you have an app you're considering porting, but haven't begun the process yet, keep this in mind as you maintain it. Any effort you put toward minimizing how much code is in the ASP.NET MVC or Web API project will likely result in less work when the time comes to port the app.
 
-The next chapter digs into details of how to migrate from ASP.NET MVC and Web API projects to ASP.NET Core projects. The previous chapter called out the biggest differences between the apps. Once the basic project structure is in place, migrating individual controllers and views is usually pretty straightforward, especially if they're mainly focused on web responsibilities.
+The next chapter digs into details of how to migrate from ASP.NET MVC and Web API projects to ASP.NET Core projects. The previous chapter called out the biggest differences between the apps. Once the basic project structure is in place, migrating individual controllers and views is usually straightforward, especially if they're mainly focused on web responsibilities.
 
 ## References
 

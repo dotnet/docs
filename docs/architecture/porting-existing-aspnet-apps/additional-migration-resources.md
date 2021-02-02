@@ -11,7 +11,7 @@ As you're planning and executing your migration from ASP.NET MVC and/or Web API 
 
 ## Official documentation
 
-The official documentation website, [docs.microsoft.com](https://docs.microsoft.com/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to docs articles, but for any problem you're facing it's often worth at least doing a quick search of the docs to see if there is already information there covering the issue and offering a solution or workaround.
+The official documentation website, [docs.microsoft.com](https://docs.microsoft.com/), has the most up-to-date information available about versions, frameworks, breaking changes, and support options. You'll find many links in this book to docs articles, but for any problem you're facing it's often worth at least doing a quick search of the docs to see if there is already information covering the issue and offering a solution or workaround.
 
 ## GitHub
 
@@ -47,7 +47,7 @@ YouTube has a huge amount of .NET and .NET Core video content, which may include
 
 ## Twitter, Gitter, Slack, and other community channels
 
-You'll find many other ways to connect with .NET developers on the [.NET Community page](https://dotnet.microsoft.com/platform/community). Additionally, many product teams and team members are on Twitter as well as in various other communities. You can follow and communicate with [the author of this book on Twitter](https://twitter.com/ardalis) as well.
+You'll find many other ways to connect with .NET developers on the [.NET Community page](https://dotnet.microsoft.com/platform/community). You can also join the [DotNetEvolution Discord server](https://aka.ms/dotnet-discord). Additionally, many product teams and team members are on Twitter as well as in various other communities. You can follow and communicate with [the author of this book on Twitter](https://twitter.com/ardalis) as well.
 
 ## References
 

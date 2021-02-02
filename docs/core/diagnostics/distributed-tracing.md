@@ -226,5 +226,3 @@ public class Program
 
 The sample need to reference the package [
 OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.0.0-rc2).
-
-

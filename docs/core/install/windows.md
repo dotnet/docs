@@ -61,14 +61,14 @@ The runtime is used to run apps created with .NET. When an app author publishes 
 
 There are three different runtimes you can install on Windows:
 
-*ASP.NET Core runtime*\
-Runs ASP.NET Core apps. Includes the .NET runtime.
+- *ASP.NET Core runtime*\
+  Runs ASP.NET Core apps. Includes the .NET runtime.
 
-*Desktop runtime*\
-Runs .NET WPF and Windows Forms desktop apps for Windows. Includes the .NET runtime.
+- *Desktop runtime*\
+  Runs .NET WPF and Windows Forms desktop apps for Windows. Includes the .NET runtime.
 
-*.NET runtime*\
-This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both *ASP.NET Core runtime* and *Desktop runtime* for the best compatibility with .NET apps.
+- *.NET runtime*\
+  This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both *ASP.NET Core runtime* and *Desktop runtime* for the best compatibility with .NET apps.
 
 > [!div class="button"]
 > [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet-core)

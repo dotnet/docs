@@ -50,11 +50,11 @@ The runtime is used to run apps created with .NET. When an app author publishes 
 
 There are two different runtimes you can install on macOS:
 
-*ASP.NET Core runtime*\
-Runs ASP.NET Core apps. Includes the .NET runtime.
+- *ASP.NET Core runtime*\
+  Runs ASP.NET Core apps. Includes the .NET runtime.
 
-*.NET runtime*\
-This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install *ASP.NET Core runtime* for the best compatibility with .NET apps.
+- *.NET runtime*\
+  This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install *ASP.NET Core runtime* for the best compatibility with .NET apps.
 
 > [!div class="button"]
 > [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet-core)
@@ -124,11 +124,10 @@ To extract the runtime and make the .NET CLI commands available at the terminal,
 
 ```bash
 DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz
-DOTNET_ROOT=$HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
 
-mkdir -p $DOTNET_ROOT && tar zxf $DOTNET_FILE -C $DOTNET_ROOT
+mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 
-export DOTNET_ROOT=$DOTNET_ROOT
 export PATH=$PATH:$DOTNET_ROOT
 ```
 

@@ -118,11 +118,10 @@ To extract the runtime and make the .NET CLI commands available at the terminal,
 
 ```bash
 DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz
-DOTNET_ROOT=$HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
 
-mkdir -p $DOTNET_ROOT && tar zxf $DOTNET_FILE -C $DOTNET_ROOT
+mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 
-export DOTNET_ROOT=$DOTNET_ROOT
 export PATH=$PATH:$DOTNET_ROOT
 ```
 

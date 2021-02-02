@@ -49,17 +49,26 @@ The following ASP.NET Core controller provides an example of handling an event t
 [ApiController]
 public class SomeController : ControllerBase
 {
+    public class TwitterTweet
+    {
+        [JsonPropertyName("id_str")]
+        public string ID {get; set; }
+
+        [JsonPropertyName("text")]
+        public string Text {get; set; }
+    }
+
     [HttpPost("/tweet")]
-    public ActionResult Post(JsonElement data)
+    public ActionResult Post(TwitterTweet tweet)
     {
         // Handle tweet
+        Console.WriteLine("Tweet received: {0}: {1}", tweet.ID, tweet.Text);
+
         // ...
 
         // Acknowledge message
         return Ok();
     }
-  
-    // ...  
 }
 ```
 
@@ -93,14 +102,14 @@ curl -X POST http://localhost:3500/v1.0/bindings/sms \
 
 Note that the HTTP port is the same as used by the Dapr sidecar (in this case, the default Dapr HTTP port `3500`).
 
-The structure of the payload (that is, message sent) will vary per binding. In the example above, the payload contains a `data` element with a message. Bindings to other types of external resources can be different, especially for the metadata that is sent. Each payload must also contain an `operation` field, that defines the operation the binding will execute. The above example specifies a  `create` operation that creates the SMS message. Common operations include:
+The structure of the payload (that is, message sent) will vary per binding. In the example above, the payload contains a `data` element with a message. Bindings to other types of external resources can be different, especially for the metadata that is sent. Each payload must also contain an `operation` field, that defines the operation the binding will execute. The above example specifies a `create` operation that creates the SMS message. Common operations include:
 
 - create
 - get
 - delete
 - list
 
-The documentation for each binding describes the available operations and how to invoke them.
+It's up to the author of the binding which operations the binding supports. The documentation for each binding describes the available operations and how to invoke them.
 
 ## Using the .NET SDK
 
@@ -110,7 +119,10 @@ The Dapr .NET SDK provides language specific support for .NET Core developers. I
 private async Task SendSMSAsync([FromServices] DaprClient daprClient)
 {
     var message = "Welcome to this awesome service";
-    Dictionary<string, string> metadata = new() { ["toNumber"] = "555-3277" };
+    var metadata = new Dictionary<string, string> 
+    { 
+      { "toNumber", "555-3277" } 
+    };
     await daprClient.InvokeBindingAsync("sms", "create", message, metadata);
 }
 ```
@@ -204,12 +216,12 @@ The binding configuration specifies a binding component that can be invoked usin
 public Task Handle(OrderStartedDomainEvent notification, CancellationToken cancellationToken)
 {
     var string message = CreateEmailBody(notification);
-    var metadata = new Dictionary<string,string> { 
-      { emailFrom = "eShopOn@dapr.io" },
-      { emailTo = notification.UserName },
-      { subject = $"Your eShopOnDapr order #{notification.Order.Id}" }
+    var metadata = new Dictionary<string, string>
+    { 
+        {"emailFrom", "eShopOn@dapr.io"},
+        {"emailTo", notification.UserName},
+        {"subject", $"Your eShopOnDapr order #{notification.Order.Id}"}
     };
-
     return _daprClient.InvokeBindingAsync("sendmail", "create", message, metadata, cancellationToken);
 }
 ```

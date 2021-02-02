@@ -4,12 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: 5540e185-ce8e-4db3-83b0-2b9f5bf71829
 ---
 # Activity List
+
 This topic lists all the activities defined by Windows Communication Foundation (WCF).  
   
 > [!NOTE]
 > You can also define activities programmatically to group user traces. For more information, see [Emitting User-Code Traces](emitting-user-code-traces.md).  
   
 ## ServiceModel Activities  
+
  The following table lists all activities for major usage scenarios.  
   
 |Label|Activity Name|Activity Type|Description|  
@@ -28,6 +30,7 @@ This topic lists all the activities defined by Windows Communication Foundation 
 |T|Execute ‘[IContract.Operation]’.|ExecuteUserCode|Execute user code after dispatch on the service side. This activity provides a boundary to delineate ServiceHost code from user-provided code.|  
   
 ## Security Activities  
+
  The following table lists all activities related to Security.  
   
 |Activity Name|Activity Type|Description|  
@@ -43,6 +46,7 @@ This topic lists all the activities defined by Windows Communication Foundation 
 |Execute COM+ \<operation>|TransferToCOMPlus|1 activity instance for each COM+ call from WCF code|  
   
 ## WMI Activities  
+
  The following table lists all activities related to WMI.  
   
 |Activity Name|Activity Type|Description|  

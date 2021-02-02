@@ -21,7 +21,7 @@ The garbage collector cannot collect an object in use by an application while th
   
  When the user switches away to another part of the application, you can use the <xref:System.WeakReference> class to create a weak reference to the tree and destroy all strong references. When the user switches back to the tree, the application attempts to obtain a strong reference to the tree and, if successful, avoids reconstructing the tree.  
   
- To establish a weak reference with an object, you create a <xref:System.WeakReference> using the instance of the object to be tracked. You then set the <xref:System.WeakReference.Target%2A> property to that object and set the original reference to the object to `null`. For a code example, see <xref:System.WeakReference> in the class library.  
+ To establish a weak reference with an object, you create a <xref:System.WeakReference> using the instance of the object to be tracked. For a code example, see <xref:System.WeakReference> in the class library.  
   
 ## Short and Long Weak References  
 

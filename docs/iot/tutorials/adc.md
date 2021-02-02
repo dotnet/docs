@@ -59,7 +59,7 @@ Refer to the following pinout diagrams as needed:
 
 Complete the following steps in your preferred development environment:
 
-1. Create a new .NET Console App using either the [.NET CLI](/dotnet/core/tools/dotnet-new) or [Visual Studio](/dotnet/core/tutorials/with-visual-studio). Name it *AdcTutorial*.
+1. Create a new .NET Console App using either the [.NET CLI](../../core/tools/dotnet-new.md) or [Visual Studio](../../core/tutorials/with-visual-studio.md). Name it *AdcTutorial*.
 
     ```dotnetcli
     dotnet new console -o AdcTutorial
@@ -73,7 +73,7 @@ Complete the following steps in your preferred development environment:
     In the preceding code:
 
     - `hardwareSpiSettings` is set to a new instance of `SpiConnectionSettings`. The constructor sets the `busId` parameter to 0 and the `chipSelectLine` parameter to 0.
-    - A [using declaration](/dotnet/csharp/whats-new/csharp-8#using-declarations) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
+    - A [using declaration](../../csharp/whats-new/csharp-8.md#using-declarations) creates an instance of `SpiDevice` by calling `SpiDevice.Create` and passing in `hardwareSpiSettings`. This `SpiDevice` represents the SPI bus. The `using` declaration ensures the object is disposed and hardware resources are released properly.
     - Another `using` declaration creates an instance of `Mcp3008` and passes the `SpiDevice` into the constructor.
     - A `while` loop runs indefinitely. Each iteration:
         1. Reads the value of CH0 on the ADC by calling `mcp.Read(0)`.
@@ -98,7 +98,7 @@ Congratulations! You've used SPI to read values from an analog-to-digital conver
 
 ## Get the source code
 
-The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial). <span class="docon docon-navigate-external x-hidden-focus"></span>
+The source for this tutorial is [available on GitHub](https://github.com/MicrosoftDocs/dotnet-iot-assets/tree/master/tutorials/AdcTutorial) <span class="docon docon-navigate-external x-hidden-focus"></span>.
 
 ## Next steps
 

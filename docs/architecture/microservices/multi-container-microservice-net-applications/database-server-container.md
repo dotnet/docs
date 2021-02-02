@@ -1,7 +1,7 @@
 ---
 title: Use a database server running as a container
 description: Understand the importance of using a database server running as a container only for development. Never for production.
-ms.date: 01/30/2020
+ms.date: 01/13/2021
 ---
 # Use a database server running as a container
 
@@ -264,7 +264,7 @@ In eShopOnContainers, the `basket-api` microservice uses a Redis cache running a
       - "6379"
 ```
 
-This code in the docker-compose.yml defines a container named `basketdata` based on the redis image and publishing the port 6379 internally. This means that it will only be accessible from other containers running within the Docker host.
+This code in the docker-compose.yml defines a container named `basketdata` based on the redis image and publishing the port 6379 internally. This configuration means that it will only be accessible from other containers running within the Docker host.
 
 Finally, in the *docker-compose.override.yml* file, the `basket-api` microservice for the eShopOnContainers sample defines the connection string to use for that Redis container:
 

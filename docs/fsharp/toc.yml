@@ -142,6 +142,8 @@
     href: language-reference/classes.md
   - name: Structures
     href: language-reference/structures.md
+  - name: Nullable value types
+    href: language-reference/nullable-value-types.md
   - name: Inheritance
     href: language-reference/inheritance.md
   - name: Interfaces
@@ -280,13 +282,13 @@
 - name: Use F# on Azure
   href: using-fsharp-on-azure/index.md
   items:
-  - name: Get started with Azure Blob storage using F#
+  - name: Get started with Azure Blob Storage using F#
     href: using-fsharp-on-azure/blob-storage.md
-  - name: Get started with Azure File storage using F#
+  - name: Get started with Azure File Storage using F#
     href: using-fsharp-on-azure/file-storage.md
-  - name: Get started with Azure Queue storage using F#
+  - name: Get started with Azure Queue Storage using F#
     href: using-fsharp-on-azure/queue-storage.md
-  - name: Get started with Azure Table storage using F#
+  - name: Get started with Azure Table Storage using F#
     href: using-fsharp-on-azure/table-storage.md
   - name: Package Management for F# Azure Dependencies
     href: using-fsharp-on-azure/package-management.md

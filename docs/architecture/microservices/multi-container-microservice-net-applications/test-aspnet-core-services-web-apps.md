@@ -1,7 +1,7 @@
 ---
 title: Testing ASP.NET Core services and web apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Explore an architecture for testing ASP.NET Core services and web apps in containers.
-ms.date: 08/07/2020
+ms.date: 01/13/2021
 ---
 
 # Testing ASP.NET Core services and web apps
@@ -10,13 +10,13 @@ Controllers are a central part of any ASP.NET Core API service and ASP.NET MVC W
 
 You need to test how the controller behaves based on valid or invalid inputs, and test controller responses based on the result of the business operation it performs. However, you should have these types of tests for your microservices:
 
-- Unit tests. These ensure that individual components of the application work as expected. Assertions test the component API.
+- Unit tests. These tests ensure that individual components of the application work as expected. Assertions test the component API.
 
-- Integration tests. These ensure that component interactions work as expected against external artifacts like databases. Assertions can test component API, UI, or the side effects of actions like database I/O, logging, etc.
+- Integration tests. These tests ensure that component interactions work as expected against external artifacts like databases. Assertions can test component API, UI, or the side effects of actions like database I/O, logging, etc.
 
-- Functional tests for each microservice. These ensure that the application works as expected from the user's perspective.
+- Functional tests for each microservice. These tests ensure that the application works as expected from the user's perspective.
 
-- Service tests. These ensure that end-to-end service use cases, including testing multiple services at the same time, are tested. For this type of testing, you need to prepare the environment first. In this case, it means starting the services (for example, by using docker-compose up).
+- Service tests. These tests ensure that end-to-end service use cases, including testing multiple services at the same time, are tested. For this type of testing, you need to prepare the environment first. In this case, it means starting the services (for example, by using docker-compose up).
 
 ### Implementing unit tests for ASP.NET Core Web APIs
 
@@ -26,7 +26,7 @@ As you unit test your controller actions, make sure you focus only on their beha
 
 Unit tests are implemented based on test frameworks like xUnit.net, MSTest, Moq, or NUnit. For the eShopOnContainers sample application, we are using xUnit.
 
-When you write a unit test for a Web API controller, you instantiate the controller class directly using the new keyword in C\#, so that the test will run as fast as possible. The following example shows how to do this when using [xUnit](https://xunit.github.io/) as the Test framework.
+When you write a unit test for a Web API controller, you instantiate the controller class directly using the new keyword in C\#, so that the test will run as fast as possible. The following example shows how to do this when using [xUnit](https://xunit.net/) as the Test framework.
 
 ```csharp
 [Fact]
@@ -65,7 +65,7 @@ Because integration tests exercise larger segments of code than unit tests, and 
 
 ASP.NET Core includes a built-in test web host that can be used to handle HTTP requests without network overhead, meaning that you can run those tests faster than when using a real web host. The test web host (TestServer) is available in a NuGet component as Microsoft.AspNetCore.TestHost. It can be added to integration test projects and used to host ASP.NET Core applications.
 
-As you can see in the following code, when you create integration tests for ASP.NET Core controllers, you instantiate the controllers through the test host. This is comparable to an HTTP request, but it runs faster.
+As you can see in the following code, when you create integration tests for ASP.NET Core controllers, you instantiate the controllers through the test host. This functionality is comparable to an HTTP request, but it runs faster.
 
 ```csharp
 public class PrimeWebDefaultRequestShould
@@ -102,11 +102,11 @@ public class PrimeWebDefaultRequestShould
 - **Steve Smith. Integration testing** (ASP.NET Core) \
     [https://docs.microsoft.com/aspnet/core/test/integration-tests](/aspnet/core/test/integration-tests)
 
-- **Unit testing in .NET Core using dotnet test** \
+- **Unit testing in .NET using dotnet test** \
     [https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-dotnet-test](../../../core/testing/unit-testing-with-dotnet-test.md)
 
 - **xUnit.net**. Official site. \
-    <https://xunit.github.io/>
+    <https://xunit.net/>
 
 - **Unit Test Basics.** \
     [https://docs.microsoft.com/visualstudio/test/unit-test-basics](/visualstudio/test/unit-test-basics)
@@ -141,7 +141,7 @@ While unit and integration tests are organized in a test folder within the micro
 
 **Figure 6-25**. Test folder structure in eShopOnContainers
 
-Microservice and Application functional/integration tests are run from Visual Studio, using the regular tests runner, but first you need to start the required infrastructure services, by means of a set of docker-compose files contained in the solution test folder:
+Microservice and Application functional/integration tests are run from Visual Studio, using the regular tests runner, but first you need to start the required infrastructure services, with a set of docker-compose files contained in the solution test folder:
 
 **docker-compose-test.yml**
 
@@ -189,7 +189,7 @@ So, to run the functional/integration tests you must first run this command, fro
 docker-compose -f docker-compose-test.yml -f docker-compose-test.override.yml up
 ```
 
-As you can see, these docker-compose files only start the Redis, RabbitMQ, SQL Server and MongoDB microservices.
+As you can see, these docker-compose files only start the Redis, RabbitMQ, SQL Server, and MongoDB microservices.
 
 ### Additional resources
 

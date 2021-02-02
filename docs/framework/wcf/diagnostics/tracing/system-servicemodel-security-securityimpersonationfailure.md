@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: e0e61834-72ac-4a58-af32-94e3206a9369
 ---
 # System.ServiceModel.Security.SecurityImpersonationFailure
+
 System.ServiceModel.Security.SecurityImpersonationFailure  
   
 ## Description  
+
  The security impersonation failed at the server.  
   
 ## See also

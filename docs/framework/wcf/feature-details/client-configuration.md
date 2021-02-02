@@ -5,11 +5,13 @@ ms.date: "03/30/2017"
 ms.assetid: 5da5bd3b-65d9-43b7-91b9-cc9e989b1350
 ---
 # Client Configuration
+
 You can use the Windows Communication Foundation (WCF) client configuration to specify the address, binding, behavior, and contract, the "ABC" properties of the client endpoint, which clients use to connect to service endpoints. The [\<client>](../../configure-apps/file-schema/wcf/client.md) element has an [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-of-client.md) element whose attributes are used to configure the endpoint ABCs. These attributes are discussed in the [Configuring Endpoints](#configuring-endpoints) section.  
   
  The [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-of-client.md) element also contains a [\<metadata>](../../configure-apps/file-schema/wcf/metadata.md) element that is used to specify settings for importing and exporting metadata, a [\<headers>](../../configure-apps/file-schema/wcf/headers.md) element that contains a collection of custom address headers, and an [\<identity>](../../configure-apps/file-schema/wcf/identity.md) element that enables the authentication of an endpoint by other endpoints exchanging messages with it. The [\<headers>](../../configure-apps/file-schema/wcf/headers.md) and [\<identity>](../../configure-apps/file-schema/wcf/identity.md) elements are part of the <xref:System.ServiceModel.EndpointAddress> and are discussed in the [Addresses](endpoint-addresses.md) article. Links to topics that explain the use of metadata extensions are provided in the [Configuring Metadata](#configuring-metadata) section.  
   
 ## Configuring Endpoints  
+
  The client configuration is designed to allow the client to specify one or more endpoints, each with its own name, address, and contract, with each referencing the [\<bindings>](../../configure-apps/file-schema/wcf/bindings.md) and [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md) elements in the client configuration to be used to configure that endpoint. The client configuration file should be named "App.config" because this is the name that the WCF runtime expects. The following example shows a client configuration file.  
   
 ```xml  
@@ -86,6 +88,7 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
  The `contract` attribute specifies which contract the endpoint is exposing. This value maps to the <xref:System.ServiceModel.ServiceContractAttribute.ConfigurationName%2A> of the <xref:System.ServiceModel.ServiceContractAttribute>. The default value is the full type name of the class that implements the service.  
   
 ### Configuring Metadata  
+
  The [\<metadata>](../../configure-apps/file-schema/wcf/metadata.md) element is used to specify settings used to register metadata import extensions. For more information about extending the metadata system, see [Extending the Metadata System](../extending/extending-the-metadata-system.md).  
   
 ## See also

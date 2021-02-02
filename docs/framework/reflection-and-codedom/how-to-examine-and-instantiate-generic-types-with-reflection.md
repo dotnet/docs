@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: f93b03b0-1778-43fc-bc6d-35983d210e74
 ---
 # How to: Examine and Instantiate Generic Types with Reflection
+
 Information about generic types is obtained in the same way as information about other types: by examining a <xref:System.Type> object that represents the generic type. The principle difference is that a generic type has a list of <xref:System.Type> objects representing its generic type parameters. The first procedure in this section examines generic types.  
   
  You can create a <xref:System.Type> object that represents a constructed type by binding type arguments to the type parameters of a generic type definition. The second procedure demonstrates this.  
@@ -67,6 +68,7 @@ Information about generic types is obtained in the same way as information about
      [!code-vb[HowToGeneric#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#9)]  
   
 ## Constructing an Instance of a Generic Type  
+
  A generic type is like a template. You cannot create instances of it unless you specify real types for its generic type parameters. To do this at run time, using reflection, requires the <xref:System.Type.MakeGenericType%2A> method.  
   
 #### To construct an instance of a generic type  
@@ -96,6 +98,7 @@ Information about generic types is obtained in the same way as information about
      [!code-vb[HowToGeneric#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#13)]  
   
 ## Example  
+
  The following code example defines a `DisplayGenericType` method to examine the generic type definitions and constructed types used in the code and display their information. The `DisplayGenericType` method shows how to use the <xref:System.Type.IsGenericType%2A>, <xref:System.Type.IsGenericParameter%2A>, and <xref:System.Type.GenericParameterPosition%2A> properties and the <xref:System.Type.GetGenericArguments%2A> method.  
   
  The example also defines a `DisplayGenericParameter` method to examine a generic type parameter and display its constraints.  

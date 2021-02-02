@@ -69,7 +69,7 @@ These methods are marked obsolete as part of an effort to wind down usage of <xr
   </PropertyGroup>
   ```
 
-For more information about recommended actions, see [Resolving BinaryFormatter obsoletion and disablement errors](https://aka.ms/binaryformatter).
+For more information about recommended actions, see [Resolving BinaryFormatter obsoletion and disablement errors](../../../../standard/serialization/binaryformatter-security-guide.md).
 
 ## Affected APIs
 

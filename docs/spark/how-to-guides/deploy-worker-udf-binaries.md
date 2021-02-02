@@ -25,6 +25,7 @@ When deploying workers and writing UDFs, there are a few commonly used environme
 | DOTNET_WORKER_DEBUG          | If you want to <a href="https://github.com/dotnet/spark/blob/master/docs/developer-guide.md#debugging-user-defined-function-udf">debug a UDF</a>, then set this environment variable to <code>1</code> before running <code>spark-submit</code>.
 
 ### Parameter options
+
 Once the Spark application is [bundled](https://spark.apache.org/docs/latest/submitting-applications.html#bundling-your-applications-dependencies), you can launch it using `spark-submit`. The following table shows some of the commonly used options:
 
 | Parameter Name        | Description
@@ -42,17 +43,21 @@ Once the Spark application is [bundled](https://spark.apache.org/docs/latest/sub
 > Specify all the `--options` before `application-jar` when launching applications with `spark-submit`, otherwise they will be ignored. For more information, see [`spark-submit` options](https://spark.apache.org/docs/latest/submitting-applications.html) and [running spark on YARN details](https://spark.apache.org/docs/latest/running-on-yarn.html).
 
 ## Frequently asked questions
+
 ### When I run a spark app with UDFs, I get a `FileNotFoundException' error. What should I do?
+
 > **Error:** [Error] [TaskRunner] [0] ProcessStream() failed with exception: System.IO.FileNotFoundException: Assembly 'mySparkApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' file not found: 'mySparkApp.dll'
 
 **Answer:** Check that the `DOTNET_ASSEMBLY_SEARCH_PATHS` environment variable is set correctly. It should be the path that contains your `mySparkApp.dll`.
 
 ### After I upgraded my .NET for Apache Spark version and reset the `DOTNET_WORKER_DIR` environment variable, why do I still get the following `IOException` error?
+
 > **Error:** Lost task 0.0 in stage 11.0 (TID 24, localhost, executor driver): java.io.IOException: Cannot run program "Microsoft.Spark.Worker.exe": CreateProcess error=2, The system cannot find the file specified.
 
 **Answer:** Try restarting your PowerShell window (or other command windows) first so that it can take the latest environment variable values. Then start your program.
 
 ### After submitting my Spark application, I get the error `System.TypeLoadException: Could not load type 'System.Runtime.Remoting.Contexts.Context'`.
+
 > **Error:** [Error] [TaskRunner] [0] ProcessStream() failed with exception: System.TypeLoadException: Could not load type 'System.Runtime.Remoting.Contexts.Context' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=...'.
 
 **Answer:** Check the `Microsoft.Spark.Worker` version you are using. There are two versions: **.NET Framework 4.6.1** and **.NET Core 3.1.x**. In this case, `Microsoft.Spark.Worker.net461.win-x64-<version>` (which you can [download](https://github.com/dotnet/spark/releases)) should be used since `System.Runtime.Remoting.Contexts.Context` is only for .NET Framework.

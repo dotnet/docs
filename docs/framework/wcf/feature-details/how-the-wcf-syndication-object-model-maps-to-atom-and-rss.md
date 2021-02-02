@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 0365eb37-98cc-4b13-80fb-f1e78847a748
 ---
 # How the WCF Syndication Object Model Maps to Atom and RSS
+
 When developing a Windows Communication Foundation (WCF) syndication service, you create feeds and items using the following classes:  
   
 - <xref:System.ServiceModel.Syndication.SyndicationFeed>  
@@ -42,6 +43,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
  [!code-vb[SyndicationMapping#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/syndicationmapping/vb/snippets.vb#11)]  
   
 ## SyndicationFeed  
+
  The following code example shows how to serialize the <xref:System.ServiceModel.Syndication.SyndicationFeed> class to Atom 1.0 and RSS 2.0.  
   
  [!code-csharp[SyndicationMapping#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#0)]
@@ -139,6 +141,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
 ```  
   
 ## SyndicationItem  
+
  The following code example shows how to serialize the <xref:System.ServiceModel.Syndication.SyndicationItem> class to Atom 1.0 and RSS 2.0.  
   
  [!code-csharp[SyndicationMapping#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#1)]
@@ -225,6 +228,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
 ```  
   
 ## SyndicationPerson  
+
  The following code example shows how to serialize the <xref:System.ServiceModel.Syndication.SyndicationPerson> class to Atom 1.0 and RSS 2.0.  
   
  [!code-csharp[SyndicationMapping#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#2)]
@@ -282,6 +286,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
 ```  
   
 ## SyndicationLink  
+
  The following code example shows how to serialize the <xref:System.ServiceModel.Syndication.SyndicationLink> class to Atom 1.0 and RSS 2.0.  
   
  [!code-csharp[SyndicationMapping#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#3)]
@@ -296,6 +301,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
  `<a10:link rel="alternate" type="text/html" title="My Link Title" length="2048" href="http://contoso/MyLink" />`  
   
 ## SyndicationCategory  
+
  The following code example shows how to serialize the <xref:System.ServiceModel.Syndication.SyndicationCategory> class to Atom 1.0 and RSS 2.0.  
   
  [!code-csharp[SyndicationMapping#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#4)]
@@ -310,6 +316,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
  `<category domain="categoryScheme">categoryName</category>`  
   
 ## TextSyndicationContent  
+
  The following code example shows how to serialize the <xref:System.ServiceModel.Syndication.TextSyndicationContent> class to Atom 1.0 and RSS 2.0 when <xref:System.ServiceModel.Syndication.TextSyndicationContent> is created with HTML content.  
   
  [!code-csharp[SyndicationMapping#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#5)]
@@ -354,6 +361,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
  `<description><html> some xhtml </html></description>`  
   
 ## UrlSyndicationContent  
+
  The following code example shows how to serialize the <xref:System.ServiceModel.Syndication.UrlSyndicationContent> class to Atom 1.0 and RSS 2.0.  
   
  [!code-csharp[SyndicationMapping#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#8)]
@@ -370,6 +378,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
  `<content type="audio" src="http://Contoso/someurl/" xmlns="http://www.w3.org/2005/Atom" />`  
   
 ## XmlSyndicationContent  
+
  The following code example shows how to serialize the <xref:System.ServiceModel.Syndication.XmlSyndicationContent> class to Atom 1.0 and RSS 2.0.  
   
  [!code-csharp[SyndicationMapping#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#9)]

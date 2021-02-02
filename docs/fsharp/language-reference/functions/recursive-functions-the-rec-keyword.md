@@ -32,7 +32,7 @@ The following example shows a recursive function that computes the *n*<sup>th</s
 ```fsharp
 let rec fib n =
     match n with
-    | 0 | 1 -> 1
+    | 0 | 1 -> n
     | n -> fib (n-1) + fib (n-2)
 ```
 
@@ -45,7 +45,7 @@ Methods are implicitly recursive within the type they are defined in, meaning th
 type MyClass() =
     member this.Fib(n) =
         match n with
-        | 0 | 1 -> 1
+        | 0 | 1 -> n
         | n -> this.Fib(n-1) + this.Fib(n-2)
 ```
 

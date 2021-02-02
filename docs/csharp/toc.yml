@@ -1,20 +1,16 @@
+items:
 - name: C# documentation
   href: index.yml
-- name: Get started
+- name: Tour of C#
   items:
-  - name: Introduction to the C# language and .NET
-    displayName: get started
-    href: getting-started/index.md
-  - name: Tour of C#
-    items:
-    - name: Introduction
-      href: tour-of-csharp/index.md
-    - name: Types
-      href: tour-of-csharp/types.md
-    - name: Program building blocks
-      href: tour-of-csharp/program-building-blocks.md
-    - name: Major language areas
-      href: tour-of-csharp/features.md
+  - name: Introduction
+    href: tour-of-csharp/index.md
+  - name: Types
+    href: tour-of-csharp/types.md
+  - name: Program building blocks
+    href: tour-of-csharp/program-building-blocks.md
+  - name: Major language areas
+    href: tour-of-csharp/features.md
 - name: Tutorials
   items:
   - name: Overview
@@ -52,8 +48,6 @@
     href: tutorials/exploration/top-level-statements.md
   - name: Explore patterns in objects
     href: tutorials/exploration/patterns-objects.md
-  - name: Explore C# 6
-    href: tutorials/exploration/csharp-6.yml
   - name: Explore string interpolation - interactive
     href: tutorials/exploration/interpolated-strings.yml
   - name: Explore string interpolation - in your environment
@@ -93,8 +87,6 @@
     href: whats-new/csharp-8.md
   - name: C# 7.0-7.3
     href: whats-new/csharp-7.md
-  - name: C# 6
-    href: whats-new/csharp-6.md
   - name: Breaking changes in the compiler
     href: whats-new/breaking-changes.md
   - name: C# Version History
@@ -711,8 +703,6 @@
     - name: Overview
       displayName: arrays
       href: programming-guide/arrays/index.md
-    - name: Arrays as Objects
-      href: programming-guide/arrays/arrays-as-objects.md
     - name: Single-Dimensional Arrays
       href: programming-guide/arrays/single-dimensional-arrays.md
     - name: Multidimensional Arrays
@@ -1256,7 +1246,7 @@
       displayName: conditional, ternary, ref
     - name: "! (null-forgiving) operator"
       href: language-reference/operators/null-forgiving.md
-      displayName: nullable reference, null-forgiveness
+      displayName: nullable reference, null-forgiveness, null suppression
     - name: "?? and ??= operators"
       href: language-reference/operators/null-coalescing-operator.md
       displayName: null-coalescing, assignment

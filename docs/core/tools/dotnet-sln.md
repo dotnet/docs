@@ -1,7 +1,7 @@
 ---
 title: dotnet sln command
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
-ms.date: 02/14/2020
+ms.date: 12/07/2020
 ---
 # dotnet sln
 
@@ -98,7 +98,7 @@ dotnet sln add [-h|--help]
 
 - **`-s|--solution-folder <PATH>`**
 
-  The destination solution folder path to add the projects to. Available since .NET Core 3.0 SDK.
+  The destination [solution folder](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder) path to add the projects to. Available since .NET Core 3.0 SDK.
 
 ### `remove`
 
@@ -188,3 +188,19 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
   ```dotnetcli
   dotnet sln todo.sln remove (ls -r **/*.csproj)
   ```
+
+- Create a solution, a console app, and two class libraries. Add the projects to the solution, and use the `--solution-folder` option of `dotnet sln` to organize the class libraries into a solution folder.
+
+  ```dotnetcli
+  dotnet new sln -n mysolution
+  dotnet new console -o myapp
+  dotnet new classlib -o mylib1
+  dotnet new classlib -o mylib2
+  dotnet sln mysolution.sln add myapp\myapp.csproj
+  dotnet sln mysolution.sln add mylib1\mylib1.csproj --solution-folder mylibs
+  dotnet sln mysolution.sln add mylib2\mylib2.csproj --solution-folder mylibs
+  ```
+
+  The following screenshot shows the result in Visual Studio 2019 **Solution Explorer**:
+
+  :::image type="content" source="media/dotnet-sln/dotnet-sln-solution-folder.png" alt-text="Solution Explorer showing class library projects grouped into a solution folder.":::

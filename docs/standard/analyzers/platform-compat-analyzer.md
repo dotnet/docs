@@ -21,7 +21,7 @@ The new APIs include:
 
 ## Prerequisites
 
-The platform compatibility analyzer is one of the Roslyn code quality analyzers. Starting in .NET 5.0, these analyzers are [included with the .NET SDK](../../fundamentals/code-analysis/overview.md). The platform compatibility analyzer is enabled by default only for projects that target `net5.0` or a later version. However, you can [enable it](../../fundamentals/code-analysis/quality-rules/ca1416.md#configurability) for projects that target other frameworks.
+The platform compatibility analyzer is one of the Roslyn code quality analyzers. Starting in .NET 5.0, these analyzers are [included with the .NET SDK](../../fundamentals/code-analysis/overview.md). The platform compatibility analyzer is enabled by default only for projects that target `net5.0` or a later version. However, you can [enable it](../../fundamentals/code-analysis/quality-rules/ca1416.md#configure-code-to-analyze) for projects that target other frameworks.
 
 ## How the analyzer determines platform dependency
 
@@ -30,7 +30,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
   - The attribute can be applied multiple times to indicate **multiple platform support** (`[SupportedOSPlatform("windows"), SupportedOSPlatform("Android6.0")]`).
   - The analyzer will produce a **warning** if platform-specific APIs are referenced without a proper **platform context**:
     - **Warns** if the project doesn't target the supported platform (for example, a Windows-specific API call and the project targets `<TargetFramework>net5.0-ios14.0</TargetFramework>`).
-    - **Warns** if the project is multi-targeted (`<TargetFramework>net5.0</TargetFramework>`).
+    - **Warns** if the project is multi-targeted (for example, `<TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>`).
     - **Doesn't warn** if the platform-specific API is referenced within a project that targets any of the **specified platforms** (for example, for a Windows-specific API call and the project targets `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Doesn't warn** if the platform-specific API call is guarded by corresponding platform-check methods (for example, `if(OperatingSystem.IsWindows())`).
     - **Doesn't warn** if the platform-specific API is referenced from the same platform-specific context (**call site also attributed** with `[SupportedOSPlatform("platform")`).

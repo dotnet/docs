@@ -10,7 +10,7 @@ ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
 
 If you have any I/O-bound needs (such as requesting data from a network, accessing a database, or reading and writing to a file system), you'll want to utilize asynchronous programming. You could also have CPU-bound code, such as performing an expensive calculation, which is also a good scenario for writing async code.
 
-C# has a language-level asynchronous programming model, which allows for easily writing asynchronous code, without having to juggle callbacks or conform to a library that supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
+C# has a language-level asynchronous programming model, which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library that supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
 ## Overview of the asynchronous model
 
@@ -23,7 +23,7 @@ The `await` keyword is where the magic happens. It yields control to the caller 
 
 ### I/O-bound example: Download data from a web service
 
-You may need to download some data from a web service when a button is pressed, but don't want to block the UI thread. It can be accomplished like this:
+You may need to download some data from a web service when a button is pressed but don't want to block the UI thread. It can be accomplished like this:
 
 ```csharp
 private readonly HttpClient _httpClient = new HttpClient();
@@ -65,7 +65,7 @@ calculateButton.Clicked += async (o, e) =>
 };
 ```
 
-This code cleanly expresses the intent of the button's click event, it doesn't require managing a background thread manually, and it does so in a non-blocking way.
+This code clearly expresses the intent of the button's click event, it doesn't require managing a background thread manually, and it does so in a non-blocking way.
 
 ### What happens under the covers
 
@@ -85,7 +85,7 @@ For the theoretically-inclined, this is an implementation of the [Promise Model 
 
 ## Recognize CPU-bound and I/O-bound work
 
-The first two examples of this guide showed how you can use `async` and `await` for I/O-bound and CPU-bound work. It's key that you can identify when a job you need to do is I/O-bound or CPU-bound, because it can greatly affect the performance of your code and could potentially lead to misusing certain constructs.
+The first two examples of this guide showed how you could use `async` and `await` for I/O-bound and CPU-bound work. It's key that you can identify when a job you need to do is I/O-bound or CPU-bound because it can greatly affect the performance of your code and could potentially lead to misusing certain constructs.
 
 Here are two questions you should ask before you write any code:
 
@@ -205,7 +205,7 @@ Although it's less code, use caution when mixing LINQ with asynchronous code. Be
 
 ## Important info and advice
 
-With async programming there are some details to keep in mind which can prevent unexpected behavior.
+With async programming, there are some details to keep in mind which can prevent unexpected behavior.
 
 * `async` **methods need to have an** `await` **keyword in their body or they will never yield!**
 
@@ -225,11 +225,11 @@ This is the convention used in .NET to more easily differentiate synchronous and
 
 * **Tread carefully when using async lambdas in LINQ expressions**
 
-Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to. The introduction of blocking tasks into this can easily result in a deadlock if not written correctly. Additionally, the nesting of asynchronous code like this can also make it more difficult to reason about the execution of the code. Async and LINQ are powerful, but should be used together as carefully and clearly as possible.
+Lambda expressions in LINQ use deferred execution, meaning code could end up executing at a time when you're not expecting it to. The introduction of blocking tasks into this can easily result in a deadlock if not written correctly. Additionally, the nesting of asynchronous code like this can also make it more difficult to reason about the execution of the code. Async and LINQ are powerful but should be used together as carefully and clearly as possible.
 
 * **Write code that awaits Tasks in a non-blocking manner**
 
-Blocking the current thread as a means to wait for a `Task` to complete can result in deadlocks and blocked context threads, and can require more complex error-handling. The following table provides guidance on how to deal with waiting for tasks in a non-blocking way:
+Blocking the current thread as a means to wait for a `Task` to complete can result in deadlocks and blocked context threads and can require more complex error-handling. The following table provides guidance on how to deal with waiting for tasks in a non-blocking way:
 
 | Use this...          | Instead of this...           | When wishing to do this...                 |
 |----------------------|------------------------------|--------------------------------------------|

@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
 ---
 # Workflow Security
+
 Windows Workflow Foundation (WF) is integrated with several different technologies, such as Microsoft SQL Server and Windows Communication Foundation (WCF). Interacting with these technologies may introduce security issues into your workflow if done improperly.
 
 ## Persistence Security Concerns
@@ -39,6 +40,7 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
 - The ServiceSecurityContext for the incoming message is also available from within workflow by accessing OperationContext.
 
 ## WF Security Pack CTP
+
  The Microsoft WF Security Pack community technology preview (CTP) 1 is a set of activities and their implementation based on [Windows Workflow Foundation](index.md) in [.NET Framework 4](/previous-versions/dotnet/netframework-4.0/w0x726c2(v=vs.100)) (WF 4) and [Windows Identity Foundation (WIF)](/previous-versions/dotnet/framework/security/index). The Microsoft WF Security Pack CTP 1 contains both activities and their designers which illustrate how to easily enable various security-related scenarios using workflow, including:
 
 1. Impersonating a client identity in the workflow

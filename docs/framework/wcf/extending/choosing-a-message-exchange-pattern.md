@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 0f502ca1-6a8e-4607-ba15-59198c0e6146
 ---
 # Choosing a Message Exchange Pattern
+
 The first step in writing a custom transport is to decide which *message exchange patterns* (or MEPs) are required for the channel you are developing. This topic describes the options available and discusses the various requirements. This is the first task in the channel development task list described in [Developing Channels](developing-channels.md).  
   
 ## Six Message Exchange Patterns  
+
  There are three MEPs to choose from:  
   
 - Datagram (<xref:System.ServiceModel.Channels.IInputChannel> and <xref:System.ServiceModel.Channels.IOutputChannel>)  
@@ -42,6 +44,7 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
 > For the UDP transport, the only MEP that is supported is datagram, because UDP is inherently a fire and forget protocol.  
   
 ## Sessions and Sessionful Channels  
+
  In the networking world, there are connection-oriented protocols (for example, TCP) and connection-less protocols (for example, UDP). WCF uses the term session to mean a connection-like logical abstraction. Sessionful WCF protocols are similar to connection-oriented network protocols and sessionless WCF protocols are similar to connection-less network protocols.  
   
  In the channel object model, each logical session manifests as an instance of a sessionful channel. Therefore every new session created by the client, and accepted on the service, corresponds to a new sessionful channel on each side. The following diagram shows, on the top, the structure of sessionless channels, and on the bottom, the structure of sessionful channels.  
@@ -55,6 +58,7 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
  Without sessions, there is no correlation between channels and sessions. Therefore a channel listener creates only one channel through which all received messages are delivered to the application. There is also no message ordering because there is no session within which to maintain message order. The top portion of the preceding graphic illustrates a sessionless message exchange.  
   
 ## Starting and Terminating Sessions  
+
  Sessions are started on the client by simply creating a new sessionful channel. They are started on the service when the service receives a message that was sent in a new session. Likewise, sessions are terminated by closing or aborting a sessionful channel.  
   
  The exception to this is <xref:System.ServiceModel.Channels.IDuplexSessionChannel> which is used for both sending and receiving messages in a duplex, sessionful communication pattern. It is possible that one side will want to stop sending messages but continue to receive messages therefore when using <xref:System.ServiceModel.Channels.IDuplexSessionChannel> there is a mechanism that lets you close the output session indicating you will not send any more messages but keep the input session opened allowing you to continue to receive messages.  
@@ -64,6 +68,7 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
  However sessionful input channels should not be closed unless <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=nameWithType> on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel> returns null, indicating that the session is already closed. If <xref:System.ServiceModel.Channels.IInputChannel.Receive%2A?displayProperty=nameWithType> on the <xref:System.ServiceModel.Channels.IDuplexSessionChannel> has not returned null, closing a sessionful input channel may throw an exception because it may receive unexpected messages while closing. If a receiver wishes to terminate a session before the sender does, it should call <xref:System.ServiceModel.ICommunicationObject.Abort%2A> on the input channel, which abruptly terminates the session.  
   
 ## Writing Sessionful Channels  
+
  As a sessionful channel author, there are a few things your channel must do to provide sessions. On the send side, your channel needs to:  
   
 - For each new channel, create a new session and associate it with a new session id which is a unique string. Or obtain a new session from the sessionful channel below you in the stack.  

@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: d2b9d226-15b7-41fc-8c9a-cb651ac20ecd
 ---
 # Hosting in Windows Process Activation Service
+
 The Windows Process Activation Service (WAS) manages the activation and lifetime of the worker processes that contain applications that host Windows Communication Foundation (WCF) services. The WAS process model generalizes the IIS 6.0 process model for the HTTP server by removing the dependency on HTTP. This allows WCF services to use both HTTP and non-HTTP protocols, such as Net.TCP, in a hosting environment that supports message-based activation and offers the ability to host a large number of applications on a given machine.  
   
  For more information about building a WCF service that runs in the WAS hosting environment, see [How to: Host a WCF Service in WAS](how-to-host-a-wcf-service-in-was.md).  
@@ -23,6 +24,7 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
 [Windows Server AppFabric](/previous-versions/appfabric/ff384253(v=azure.10)) works with IIS 7.0 and Windows Process Activation Service (WAS) to provide a rich application hosting environment for NET4 WCF and WF services. These benefits include process life-cycle management, process recycling, shared hosting, rapid failure protection, process orphaning, on-demand activation, and health monitoring. For detailed information, see [AppFabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10)) and [AppFabric Hosting Concepts](/previous-versions/appfabric/ee677371(v=azure.10)).  
   
 ## Elements of the WAS Addressing Model  
+
  Applications have Uniform Resource Identifier (URI) addresses, which are the code units whose lifetime and execution environment are managed by the server. A single WAS server instance can be home to many different applications. Servers organize applications into groups called *sites*. Within a site, applications are arranged in a hierarchical manner that reflects the structure of the URIs that serve as their external addresses.  
   
  Application addresses have two parts: a base URI prefix and an application-specific, relative address (path), which provide the external address for an application when joined together. The base URI prefix is constructed from the site binding and is used for all the applications under the site. Application addresses are then constructed by taking application-specific path fragments (such as, "/applicationOne") and appending them to the base URI prefix (for example, "net.tcp://localhost") to arrive at the full application URI.  
@@ -41,6 +43,7 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
 - `net.tcp://contoso.com/Billing/GetOrders.svc/SecureEndpoint`
   
 ## The WAS Runtime  
+
  Applications are organized into sites for the purposes of addressing and management. At run time, applications are also grouped together into application pools. An application pool can house many different applications from many different sites. All of the applications inside an application pool share a common set of run-time characteristics. For example, they all run under the same version of the common language runtime (CLR) and they all share a common process identity. Each application pool corresponds to an instance of a worker process (w3wp.exe). Each managed application running inside of a shared application pool is isolated from other applications by means of a CLR AppDomain.  
   
 ## See also

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fb0899e1-84cc-4d90-b45b-dc5a50063943
 ---
 # Message Flow Overview
+
 In a distributed system containing interconnected services, it is necessary to determine causal relationships between the services. It is important to understand the various components that were part of a request flow to support critical scenarios such as health monitoring, troubleshooting, and root cause analysis. To enable the correlation of traces between various services, in the .NET Framework 4 we added support through the following features:
 
 - Analytic tracing: A high performance and low verbosity tracing feature using Event Tracing for Windows (ETW).

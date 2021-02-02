@@ -157,14 +157,14 @@ namespace Example
         private readonly ILogger _logger;
 
         public DefaultService(ILoggerFactory loggerFactory) =>
-            _logger = logger.CreateLogger("CustomCategory");
+            _logger = loggerFactory.CreateLogger("CustomCategory");
 
         // ...
     }
 }
 ```
 
-Calling `CreateLogger` with a fixed name can be useful when used in multiple methods so the events can be organized by category.
+Calling `CreateLogger` with a fixed name can be useful when used in multiple classes/types so the events can be organized by category.
 
 `ILogger<T>` is equivalent to calling `CreateLogger` with the fully qualified type name of `T`.
 

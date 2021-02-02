@@ -12,13 +12,13 @@ namespace SystemTextJsonSamples
                 weatherForecast,
                 new JsonSerializerOptions { WriteIndented = true });
 
-            // <SnippetDeserialize>
+            // <Deserialize>
             var options = new JsonReaderOptions
             {
                 AllowTrailingCommas = true,
                 CommentHandling = JsonCommentHandling.Skip
             };
-            Utf8JsonReader reader = new Utf8JsonReader(jsonUtf8Bytes, options);
+            var reader = new Utf8JsonReader(jsonUtf8Bytes, options);
 
             while (reader.Read())
             {
@@ -47,7 +47,7 @@ namespace SystemTextJsonSamples
                 }
                 Console.WriteLine();
             }
-            // </SnippetDeserialize>
+            // </Deserialize>
         }
     }
 }

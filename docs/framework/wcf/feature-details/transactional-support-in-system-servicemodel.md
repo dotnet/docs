@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: e7e54ed3-d1e5-4aa7-a653-1300c6b304eb
 ---
 # Transactional Support in System.ServiceModel
+
 The topics in this section describe the transactional functionalities Windows Communication Foundation (WCF) provides.  
   
 ## In This Section  
+
  [ServiceModel Transaction Attributes](servicemodel-transaction-attributes.md)  
  Describes the two standard <xref:System.ServiceModel> attributes that enable you to configure the behavior of transactions for a WCF service.  
   

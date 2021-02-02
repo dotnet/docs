@@ -10,6 +10,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 ## Impersonation scenarios
 
 ### Impersonated identity might not flow when clients make asynchronous calls
+
  When a WCF client makes asynchronous calls to a WCF service using Windows authentication under impersonation, authentication might occur with the identity of the client process instead of the impersonated identity.
 
 ### Windows XP and secure context token cookie enabled

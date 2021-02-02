@@ -13,7 +13,6 @@
     <StartProgram>$(WINDIR)\System32\PresentationHost.exe</StartProgram>
     <ApplicationExtension>.xbap</ApplicationExtension>
     <StartArguments>-debug "$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName)$(ApplicationExtension)"</StartArguments>
-    <SignManifests>True</SignManifests>
     <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
     <HostInBrowser>true</HostInBrowser>
     <InstallFrom>Web</InstallFrom>
@@ -22,8 +21,6 @@
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <PublishUrl>Publish\</PublishUrl>
-    <ManifestKeyFile>CustomTypePageFunctionSnippets_VB_TemporaryKey.pfx</ManifestKeyFile>
-    <ManifestCertificateThumbprint>4A7F07F7947C7D122DF79738CFF57BEC973F90CB</ManifestCertificateThumbprint>
     <ProjectGuid>{17EE0F37-D56C-4810-BDE0-A54D32135F22}</ProjectGuid>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -118,7 +115,6 @@
     <Compile Include="My Project\AssemblyInfo.vb">
       <SubType>Code</SubType>
     </Compile>
-    <None Include="CustomTypePageFunctionSnippets_VB_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <AppDesigner Include="My Project\" />
   </ItemGroup>

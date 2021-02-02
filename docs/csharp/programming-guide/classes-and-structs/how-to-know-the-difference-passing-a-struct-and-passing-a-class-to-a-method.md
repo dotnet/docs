@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "passing parameters [C#], structs vs. classes"
   - "methods [C#], passing classes vs. structs"
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.assetid: 9c1313a6-32a8-4ea7-a59f-450f66af628b
 ---
 # How to know the difference between passing a struct and passing a class reference to a method (C# Programming Guide)
@@ -22,7 +22,7 @@ The following example demonstrates how passing a [struct](../../language-referen
   
 ## Example  
 
- [!code-csharp[csProgGuideObjects#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#32)]  
+ [!code-csharp[PassingStructVsClass](snippets/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method/Program.cs)]  
   
 ## See also
 

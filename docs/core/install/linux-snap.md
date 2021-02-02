@@ -1,0 +1,117 @@
+---
+title: Install .NET on Linux with Snap - .NET
+description: Demonstrates how to install either the .NET SDK or the .NET Runtime on Linux with Snap.
+author: adegeo
+ms.author: adegeo
+ms.date: 01/06/2021
+---
+
+# Install the .NET SDK or the .NET Runtime with Snap
+
+Use a Snap package to install the .NET SDK or .NET Runtime. Snaps are a great alternative to the package manager built into your Linux distribution. This article describes how to install .NET through [Snap](https://snapcraft.io/dotnet-sdk).
+
+A snap is a bundle of an app and its dependencies that works without modification across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Getting started with Snap](https://snapcraft.io/docs/getting-started).
+
+> [!CAUTION]
+> Snap packages aren't supported in WSL2 on Windows 10. As an alternative, use the [`dotnet-install` script](linux-scripted-manual.md#scripted-install) or the package manager for the particular WSL2 distribution. It's not recommended but you can try to enable snap with an [unsupported workaround from the snapcraft forums](https://forum.snapcraft.io/t/running-snaps-on-wsl2-insiders-only-for-now/13033).
+
+## .NET releases
+
+Only ✔️ supported versions of .NET SDK are available through Snap. All versions of the .NET Runtime are available through snap starting with version 2.1. The following table lists the .NET (and .NET Core) releases:
+
+| ✔️ Supported | ❌ Unsupported |
+|-------------|---------------|
+| 5.0         | 3.0           |
+| 3.1 (LTS)   | 2.2           |
+| 2.1 (LTS)   | 2.0           |
+|             | 1.1           |
+|             | 1.0           |
+
+For more information about the life cycle of .NET releases, see [.NET Core and .NET 5 Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
+## SDK or Runtime
+
+[!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
+
+## Install the SDK
+
+Snap packages for the .NET SDK are all published under the same identifier: `dotnet-sdk`. A specific version of the SDK can be installed by specifying the channel. The SDK includes the corresponding runtime. The following table lists the channels:
+
+| .NET version | Snap package or channel  |
+|--------------|--------------------------|
+| 5.0          | `5.0` or `latest/stable` |
+| 3.1 (LTS)    | `3.1` or `lts/stable`    |
+| 2.1 (LTS)    | `2.1`                    |
+
+Use the `snap install` command to install a .NET SDK snap package. Use the `--channel` parameter to indicate which version to install. If this parameter is omitted, `latest/stable` is used. In this example, `5.0` is specified:
+
+```bash
+sudo snap install dotnet-sdk --classic --channel=5.0
+```
+
+Next, register the `dotnet` command for the system with the `snap alias` command:
+
+```bash
+sudo snap alias dotnet-sdk.dotnet dotnet
+```
+
+This command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-sdk.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke this specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be used.
+
+## Install the runtime
+
+Snap packages for the .NET Runtime are each published under their own package identifier. The following table lists the package identifiers:
+
+| .NET version      | Snap package        |
+|-------------------|---------------------|
+| 5.0               | `dotnet-runtime-50` |
+| 3.1 (LTS)         | `dotnet-runtime-31` |
+| 3.0               | `dotnet-runtime-30` |
+| 2.2               | `dotnet-runtime-22` |
+| 2.1 (LTS)         | `dotnet-runtime-21` |
+
+Use the `snap install` command to install a .NET Runtime snap package. In this example, .NET 5.0 is installed:
+
+```bash
+sudo snap install dotnet-runtime-50 --classic
+```
+
+Next, register the `dotnet` command for the system with the `snap alias` command:
+
+```bash
+sudo snap alias dotnet-runtime-50.dotnet dotnet
+```
+
+The command is formatted as: `sudo snap alias {package}.{command} {alias}`. You can choose any `{alias}` name you would like. For example, you could name the command after the specific version installed by snap: `sudo snap alias dotnet-runtime-50.dotnet dotnet50`. When you use the command `dotnet50`, you'll invoke a specific version of .NET. But choosing a different alias is incompatible with most tutorials and examples as they expect a `dotnet` command to be available.
+
+## TLS/SSL Certificate errors
+
+When .NET is installed through Snap, it's possible that on some distros the .NET TLS/SSL certificates may not be found and you may receive an error during `restore`:
+
+```bash
+Processing post-creation actions...
+Running 'dotnet restore' on /home/myhome/test/test.csproj...
+  Restoring packages for /home/myhome/test/test.csproj...
+/snap/dotnet-sdk/27/sdk/2.2.103/NuGet.targets(114,5): error : Unable to load the service index for source https://api.nuget.org/v3/index.json. [/home/myhome/test/test.csproj]
+/snap/dotnet-sdk/27/sdk/2.2.103/NuGet.targets(114,5): error :   The SSL connection could not be established, see inner exception. [/home/myhome/test/test.csproj]
+/snap/dotnet-sdk/27/sdk/2.2.103/NuGet.targets(114,5): error :   The remote certificate is invalid according to the validation procedure. [/home/myhome/test/test.csproj]
+```
+
+To resolve this problem, set a few environment variables:
+
+```bash
+export SSL_CERT_FILE=[path-to-certificate-file]
+export SSL_CERT_DIR=/dev/null
+```
+
+The certificate location will vary by distro. Here are the locations for the distros where the issue has been experienced.
+
+| Distribution | Location                                            |
+|--------------|-----------------------------------------------------|
+| **Fedora**   | `/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem` |
+| **OpenSUSE** | `/etc/ssl/ca-bundle.pem`                            |
+| **Solus**    | `/etc/ssl/certs/ca-certificates.crt`                |
+
+## Next steps
+
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
+- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

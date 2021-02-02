@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 034679af-0002-402e-98a8-ef73dcd71bb6
 ---
 # Transaction Protocols version 1.0
+
 Windows Communication Foundation (WCF) version 1 implements version 1.0 of the WS-Atomic Transaction and WS-Coordination protocols. For more information about version 1.1, see [Transaction Protocols](transaction-protocols.md).  
   
 |Specification/Document|Link|  
@@ -62,14 +63,17 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
 |xsd|`http://www.w3.org/2001/XMLSchema`|  
   
 ## Transaction Manager Bindings  
+
  R1001: Transaction Managers must use SOAP 1.1 and WS-Addressing 2004/08 for WS-Atomic Transaction and WS-Coordination message exchanges.  
   
  Application messages are not constrained to these bindings and are described later.  
   
 ### Transaction Manager HTTPS Binding  
+
  The transaction manager HTTPS binding relies solely on transport security to achieve security and establish trust between each sender-receiver pair in the transaction tree.  
   
 #### HTTPS Transport Configuration  
+
  X.509 certificates are used to establish Transaction Manager Identity. Client/server authentication is required, and client/server authorization is left as an implementation detail:  
   
 - R1111: X.509 certificates presented over the wire must have a subject name that matches the fully qualified domain name (FQDN) of the originating machine.  
@@ -77,20 +81,25 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
 - B1112: DNS must be functional between each sender-receiver pair in the system for X.509 subject name checks to succeed.  
   
 #### Activation and Registration Binding Configuration  
+
  WCF requires request/reply duplex binding with correlation over HTTPS. (For more information about correlation and descriptions of the request/reply message exchange patterns, see WS-Atomic Transaction, Section 8.)  
   
 #### 2PC Protocol Binding Configuration  
+
  WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
   
  B2131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
   
 ### Transaction Manager Mixed Security Binding  
+
  This is an alternate (mixed mode) binding that uses transport security combined with the  WS-Coordination Issued Token model for identity establishment purposes.  Activation and Registration are the only elements that differ between the two bindings.  
   
 #### HTTPS Transport Configuration  
+
  X.509 certificates are used to establish Transaction Manager Identity. Client/Server authentication is required, and client/server authorization is left as an implementation detail.  
   
 #### Activation Message Binding Configuration  
+
  Activation Messages usually do not participate in interoperability because they typically occur between an application and its local Transaction Manager.  
   
  B1221: WCF uses duplex HTTPS binding (described in [Messaging Protocols](messaging-protocols.md)) for Activation messages. Request and Reply messages are correlated using WS-Addressing 2004/08.  
@@ -104,6 +113,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
  A new `t:IssuedTokens` header should be generated for attaching to the outgoing `wscoor:CreateCoordinationContextResponse` message.  
   
 #### Registration Message Binding Configuration  
+
  B1231: WCF uses duplex HTTPS binding (described in [Messaging Protocols](messaging-protocols.md)). Request and Reply messages are correlated using WS-Addressing 2004/08.  
   
  WS-AtomicTransaction, Section 8, describes further details about correlation and descriptions of the message exchange patterns.  
@@ -113,11 +123,13 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
  The `wsse:Timestamp` element must be signed using the `SecurityContextToken STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
   
 #### 2PC Protocol Binding Configuration  
+
  WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  
   
  B2131: Implementations must support `wsa:ReferenceParameters` as described in WS-Addressing to achieve correlation of WCF’s 2PC messages.  
   
 ## Application Message Exchange  
+
  Applications are free to use any particular binding for application-to-application messages, as long as the binding meets the following security requirements:  
   
 - R2001: Application-to-application messages must flow the `t:IssuedTokens` header along with the `CoordinationContext` in the header of the message.  
@@ -131,6 +143,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
 ## Message Examples  
   
 ### CreateCoordinationContext Request/Response Messages  
+
  The following messages follow a request/response pattern.  
   
 #### CreateCoordinationContext  
@@ -242,6 +255,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
 ```  
   
 ### Registration Messages  
+
  The following messages are registration messages.  
   
 #### Register  
@@ -342,6 +356,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
 ```  
   
 ### Two Phase Commit Protocol Messages  
+
  The following message relates to the two-phase commit (2PC) protocol.  
   
 #### Commit  
@@ -368,6 +383,7 @@ Windows Communication Foundation (WCF) version 1 implements version 1.0 of the W
 ```  
   
 ### Application Messages  
+
  The following messages are application messages.  
   
 #### Application message-Request  

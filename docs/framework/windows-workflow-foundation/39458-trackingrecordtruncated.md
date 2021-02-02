@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5352f0eb-d571-454a-bab5-e2162888b218
 ---
 # 39458 - TrackingRecordTruncated
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 5352f0eb-d571-454a-bab5-e2162888b218
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a tracking record has been truncated. Variables/annotations/user data have been removed.  
   
 ## Message  
+
  Truncated tracking record %1 written to ETW session with provider %2. Variables/annotations/user data have been removed  
   
 ## Details  

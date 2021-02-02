@@ -1,6 +1,7 @@
 ---
 title: "Thread Safety in Regular Expressions"
 ms.date: "03/30/2017"
+ms.topic: conceptual
 helpviewer_keywords: 
   - ".NET regular expressions, threads"
   - "regular expressions, threads"

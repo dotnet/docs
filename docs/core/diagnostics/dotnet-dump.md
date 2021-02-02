@@ -32,6 +32,9 @@ There are two ways to download and install `dotnet-dump`:
   | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [arm](https://aka.ms/dotnet-dump/linux-arm) \| [arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
 
+> [!NOTE]
+> To use `dotnet-dump` on an x86 app, you need a corresponding x86 version of the tool.
+
 ## Synopsis
 
 ```console
@@ -108,6 +111,12 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 
   Enables dump collection diagnostic logging.
 
+> [!NOTE]
+> On Linux and macOS, this command expects the target application and `dotnet-dump` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
+
+> [!NOTE]
+> To collect a dump using `dotnet-dump`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
+
 ## dotnet-dump analyze
 
 Starts an interactive shell to explore a dump. The shell accepts various [SOS commands](#analyze-sos-commands).
@@ -140,34 +149,37 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `clrstack <arguments>`              | Provides a stack trace of managed code only.                                                  |
 | `clrthreads <arguments>`            | Lists the managed threads running.                                                            |
 | `dumpasync <arguments>`             | Displays information about async state machines on the garbage-collected heap.                |
-| `dumpassembly <arguments>`          | Displays details about an assembly.                                                           |
-| `dumpclass <arguments>`             | Displays information about a EE class structure at the specified address.                     |
-| `dumpdelegate <arguments>`          | Displays information about a delegate.                                                        |
-| `dumpdomain <arguments>`            | Displays information all the AppDomains and all assemblies within the domains.                |
+| `dumpassembly <arguments>`          | Displays details about the assembly at the specified address.                                 |
+| `dumpclass <arguments>`             | Displays information about the `EEClass` structure at the specified address.                  |
+| `dumpdelegate <arguments>`          | Displays information about the delegate at the specified address.                             |
+| `dumpdomain <arguments>`            | Displays information all the AppDomains and all assemblies within the specified domain.       |
 | `dumpheap <arguments>`              | Displays info about the garbage-collected heap and collection statistics about objects.       |
 | `dumpil <arguments>`                | Displays the Microsoft intermediate language (MSIL) that is associated with a managed method. |
 | `dumplog <arguments>`               | Writes the contents of an in-memory stress log to the specified file.                         |
-| `dumpmd <arguments>`                | Displays information about a MethodDesc structure at the specified address.                   |
-| `dumpmodule <arguments>`            | Displays information about a EE module structure at the specified address.                    |
-| `dumpmt <arguments>`                | Displays information about a method table at the specified address.                           |
-| `dumpobj <arguments>`               | Displays info about an object at the specified address.                                       |
+| `dumpmd <arguments>`                | Displays information about the `MethodDesc` structure at the specified address.               |
+| `dumpmodule <arguments>`            | Displays information about the module at the specified address.                               |
+| `dumpmt <arguments>`                | Displays information about the `MethodTable` at the specified address.                        |
+| `dumpobj <arguments>`               | Displays info about the object at the specified address.                                      |
 | `dso|dumpstackobjects <arguments>`  | Displays all managed objects found within the bounds of the current stack.                    |
 | `eeheap <arguments>`                | Displays info about process memory consumed by internal runtime data structures.              |
 | `finalizequeue <arguments>`         | Displays all objects registered for finalization.                                             |
-| `gcroot <arguments>`                | Displays info about references (or roots) to an object at the specified address.              |
+| `gcroot <arguments>`                | Displays info about references (or roots) to the object at the specified address.             |
 | `gcwhere <arguments>`               | Displays the location in the GC heap of the argument passed in.                               |
-| `ip2md <arguments>`                 | Displays the MethodDesc structure at the specified address in JIT code.                       |
+| `ip2md <arguments>`                 | Displays the `MethodDesc` structure at the specified address in JIT code.                     |
 | `histclear <arguments>`             | Releases any resources used by the family of `hist*` commands.                                |
 | `histinit <arguments>`              | Initializes the SOS structures from the stress log saved in the debuggee.                     |
 | `histobj <arguments>`               | Displays the garbage collection stress log relocations related to `<arguments>`.              |
-| `histobjfind <arguments>`           | Displays all the log entries that reference an object at the specified address.               |
+| `histobjfind <arguments>`           | Displays all the log entries that reference the object at the specified address.              |
 | `histroot <arguments>`              | Displays information related to both promotions and relocations of the specified root.        |
 | `lm|modules`                        | Displays the native modules in the process.                                                   |
-| `name2ee <arguments>`               | Displays the MethodTable structure and EEClass structure for the `<argument>`.                |
-| `pe|printexception <arguments>`     | Displays any object derived from the Exception class at the address `<argument>`.             |
+| `name2ee <arguments>`               | Displays the `MethodTable` and `EEClass` structures for the `<argument>`.                     |
+| `pe|printexception <arguments>`     | Displays any object derived from the <xref:System.Exception> class for the `<argument>`.      |
 | `setsymbolserver <arguments>`       | Enables the symbol server support                                                             |
 | `syncblk <arguments>`               | Displays the SyncBlock holder info.                                                           |
 | `threads|setthread <threadid>`      | Sets or displays the current thread ID for the SOS commands.                                  |
+
+> [!NOTE]
+> Additional details can be found in [SOS Debugging Extension for .NET](sos-debugging-extension.md).
 
 ## Using `dotnet-dump`
 

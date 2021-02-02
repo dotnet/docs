@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: e8668b37-c79f-4714-9de5-afcb88b9ff02
 ---
 # Creating a custom header that is signed and-or encrypted
+
 When calling a non-WCF service using a WCF client it is sometimes necessary to use custom SOAP headers. There is a canonicalization bug in WCF that prevents custom headers that are signed and encrypted from working with a non-WCF service. The problem is caused by the incorrect canonicalization of default XML namespaces. This is only problematic when calling non-WCF services with custom headers that are signed and/or encrypted.  When the service receives the message containing the signed and/or encrypted custom header it is unable to verify the signature. This workaround avoids the canonicalization bug, allows interoperability with non-WCF services, but does not prevent interoperability with WCF services.  
   
 ## Defining the custom header  
+
  Custom headers are defined by defining a message contract and marking the members you want to be sent as headers with a <xref:System.ServiceModel.MessageHeaderAttribute> attribute. To work around the canonicalization bug you must ensure that the XML serializer declares the namespace for the custom header with a prefix instead of a default namespace declaration. The following code shows how to define the data type that will be used as a message header with the correct namespace declaration.  
   
 ```csharp

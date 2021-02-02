@@ -2,7 +2,7 @@
 title: Distributed data
 description: Contrast data storage in monolithic and cloud-native applications.
 author: robvet
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Distributed data
@@ -56,7 +56,7 @@ While microservices are independent and focus on specific functional capabilitie
 
 **Figure 5-3**. Querying across microservices
 
-In the preceding figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains basket and line item data, it doesn't maintain product or pricing data. Instead, those data items are owned by the catalog and pricing microservices. This presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database?
+In the preceding figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains basket and line item data, it doesn't maintain product or pricing data. Instead, those data items are owned by the catalog and pricing microservices. This aspect presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database?
 
 One option discussed in Chapter 4 is a [direct HTTP call](service-to-service-communication.md#queries) from the shopping basket to the catalog and pricing microservices. However, in chapter 4, we said synchronous HTTP calls *couple* microservices together, reducing their autonomy and diminishing their architectural benefits.
 

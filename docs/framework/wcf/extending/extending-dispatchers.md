@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: d0ad15ac-fa12-4f27-80e8-7ac2271e5985
 ---
 # Extending Dispatchers
+
 Dispatchers are responsible for pulling incoming messages out of the underlying channels, translating them into method invocations in application code, and sending the results back to the caller. Dispatcher extensions allow you to modify this processing.  You can implement message or parameter inspectors that inspect or modify the contents of messages or parameters.  You can change the way messages are routed to operations or provide some other functionality.
 
 This topic describes how to use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> and <xref:System.ServiceModel.Dispatcher.DispatchOperation> classes in a Windows Communication Foundation (WCF) service application to modify the default execution behavior of a dispatcher or to intercept or modify messages, parameters, or return values prior to or subsequent to sending or retrieving them from the channel layer. For more information about the equivalent client runtime message processing, see [Extending Clients](extending-clients.md). To understand the role that <xref:System.ServiceModel.IExtensibleObject%601> types play in accessing shared state between various runtime customization objects, see [Extensible Objects](extensible-objects.md).

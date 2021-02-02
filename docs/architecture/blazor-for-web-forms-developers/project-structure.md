@@ -4,7 +4,7 @@ description: Learn how the project structures of ASP.NET Web Forms and Blazor pr
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 09/11/2019
+ms.date: 11/20/2020
 ---
 # Project structure for Blazor apps
 
@@ -14,13 +14,13 @@ To create your first Blazor app, follow the instructions in the [Blazor getting 
 
 ## Project file
 
-Blazor Server apps are .NET Core projects. The project file for the Blazor Server app is about as simple as it can get:
+Blazor Server apps are .NET projects. The project file for the Blazor Server app is about as simple as it can get:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
@@ -29,32 +29,26 @@ Blazor Server apps are .NET Core projects. The project file for the Blazor Serve
 The project file for a Blazor WebAssembly app looks slightly more involved (exact version numbers may vary):
 
 ```xml
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RazorLangVersion>3.0</RazorLangVersion>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="3.1.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.DevServer" Version="3.1.0" PrivateAssets="all" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Shared\BlazorWebAssemblyApp1.Shared.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.0" PrivateAssets="all" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
 ```
 
-Blazor WebAssembly projects target .NET Standard instead of .NET Core because they run in the browser on a WebAssembly-based .NET runtime. You can't install .NET into a web browser like you can on a server or developer machine. Consequently, the project references the Blazor framework using individual package references.
+Blazor WebAssembly project targets `Microsoft.NET.Sdk.BlazorWebAssembly` instead of `Microsoft.NET.Sdk.Web` sdk because they run in the browser on a WebAssembly-based .NET runtime. You can't install .NET into a web browser like you can on a server or developer machine. Consequently, the project references the Blazor framework using individual package references.
 
-By comparison, a default ASP.NET Web Forms project includes almost 300 lines of XML in its *.csproj* file, most of which is explicitly listing the various code and content files in the project. Many of the simplifications in the .NET Core- and .NET Standard-based projects come from the default targets and properties imported by referencing the `Microsoft.NET.Sdk.Web` SDK, often referred to as simply the Web SDK. The Web SDK includes wildcards and other conveniences that simplify inclusion of code and content files in the project. You don't need to list the files explicitly. When targeting .NET Core, the Web SDK also adds framework references to both the .NET Core and ASP.NET Core shared frameworks. The frameworks are visible from the **Dependencies** > **Frameworks** node in the **Solution Explorer** window. The shared frameworks are collections of assemblies that were installed on the machine when installing .NET Core.
+By comparison, a default ASP.NET Web Forms project includes almost 300 lines of XML in its *.csproj* file, most of which is explicitly listing the various code and content files in the project. With the release of `.NET 5` both `Blazor Server` and `Blazor WebAssembly` app can easily share one unified runtime.
 
-Although they're supported, individual assembly references are less common in .NET Core projects. Most project dependencies are handled as NuGet package references. You only need to reference top-level package dependencies in .NET Core projects. Transitive dependencies are included automatically. Instead of using the *packages.config* file commonly found in ASP.NET Web Forms projects to reference packages, package references are added to the project file using the `<PackageReference>` element.
+Although they're supported, individual assembly references are less common in .NET projects. Most project dependencies are handled as NuGet package references. You only need to reference top-level package dependencies in .NET projects. Transitive dependencies are included automatically. Instead of using the *packages.config* file commonly found in ASP.NET Web Forms projects to reference packages, package references are added to the project file using the `<PackageReference>` element.
 
 ```xml
 <ItemGroup>
@@ -146,7 +140,7 @@ We'll look in greater detail at routing in Blazor in the [Pages, routing, and la
 
 ## Layout
 
-In ASP.NET Web Forms apps, common page layout is handled using master pages (*Site.Master*). In Blazor apps, page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page, routing, and layouts](./pages-routing-layouts.md) section.
+In ASP.NET Web Forms apps, a common page layout is handled using master pages (*Site.Master*). In Blazor apps, the page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components will be discussed in more detail in [Page, routing, and layouts](./pages-routing-layouts.md) section.
 
 ## Bootstrap Blazor
 
@@ -190,39 +184,49 @@ The script reference to *_framework/blazor.server.js* establishes the real-time 
 </html>
 ```
 
-In the Blazor WebAssembly app, the host page is a simple static HTML file under *wwwroot/index.html*. The `<app>` element is used to indicate where the root component should be rendered.
+In the Blazor WebAssembly app, the host page is a simple static HTML file under *wwwroot/index.html*. The `<div>` element with id named `app` is used to indicate where the root component should be rendered.
 
 ```html
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>BlazorApp2</title>
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="blazor-web.styles.css" rel="stylesheet" />
 </head>
-<body>
-    <app>Loading...</app>
 
+<body>
+    <div id="app">Loading...</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
+
 </html>
+
 ```
 
-The specific component to render is configured in the app's `Startup.Configure` method with a corresponding CSS selector indicating where the component should be rendered.
+The root component to render is specified in the app's `Program.Main` method with the flexibility to register services through dependency injection. For more information, see [ASP.NET Core Blazor dependency injection](/aspnet/core/blazor/fundamentals/dependency-injection?pivots=webassembly).
 
 ```csharp
-public class Startup
+public class Program
 {
-    public void ConfigureServices(IServiceCollection services)
+    public static async Task Main(string[] args)
     {
-    }
+        var builder = WebAssemblyHostBuilder.CreateDefault(args);
+        builder.RootComponents.Add<App>("#app");
 
-    public void Configure(IComponentsApplicationBuilder app)
-    {
-        app.AddComponent<App>("app");
+        ....
+        ....
     }
 }
 ```
@@ -240,7 +244,7 @@ To run the Blazor WebAssembly app, choose one of the following approaches:
 - Run the client project directly using the development server.
 - Run the server project when hosting the app with ASP.NET Core.
 
-Blazor WebAssembly apps don't support debugging using Visual Studio. To run the app, use `Ctrl+F5` instead of `F5`. You can instead debug Blazor WebAssembly apps directly in the browser. See [Debug ASP.NET Core Blazor](/aspnet/core/blazor/debug) for details.
+Blazor WebAssembly apps can be debugged in both browser and Visual Studio.See [Debug ASP.NET Core Blazor WebAssembly](/aspnet/core/blazor/debug) for details.
 
 >[!div class="step-by-step"]
 >[Previous](hosting-models.md)

@@ -1,172 +1,29 @@
 {
   "version": 3,
-  "configRevision": 2,
+  "configRevision": 3,
 
   "issue": {
+    "labeled": {
+      "processor-conditional": {
+        "type": "query",
+        "value": "length(Issue.labels[?contains(name, '/prod') || contains(name, '/tech')]) != `0`",
+        "processors": {
+          "processor-conditional": {
+            "type": "query",
+            "value": "length(Issue.labels[?name == 'doc-enhancement' || name == 'product-question' || name == 'in-progress' || name == 'test-issue' || name == 'kudos' || name == 'loc' || name == 'doc-bug' || name == 'product-feedback' || name == 'code-of-conduct' || name == 'support-request' || name == 'duplicate' || name == 'resolved-by-customer' || name == 'docs-experience' || name == 'doc-provided' || name == 'doc-idea' || name == 'needs-more-info']) != `0`",
+            "actions": {
+              "labels-remove": ":watch: Not Triaged"
+            },
+            "actions-failed": {
+              "labels-add": ":watch: Not Triaged"
+            }
+          }
+        }
+      }
+    },
     "opened": {
       "processor-default": {
         "labels-add": [ ":watch: Not Triaged" ]
-      },
-      "processor-meta-docs": {
-        "product": {
-          "(?i)dotnet-csharp$": {
-            "labels-add": ":books: Area - C# Guide"
-          },
-          "(?i)dotnet-visualbasic$": {
-            "labels-add": ":books: Area - Visual Basic Guide"
-          },
-          "(?i)dotnet-core$": {
-            "labels-add": ":books: Area - .NET Core Guide"
-          },
-          "(?i)dotnet-desktop$": {
-            "labels-add": ":books: Area - Desktop Guide"
-          },
-          "(?i)dotnet-framework$": {
-            "labels-add": ":books: Area - .NET Framework Guide"
-          },
-          "(?i)dotnet-fsharp$": {
-            "labels-add": ":books: Area - F# Guide"
-          },
-          "(?i)dotnet-ml$": {
-            "labels-add": ":books: Area - ML.NET Guide"
-          },
-          "(?i)dotnet-spark": {
-            "labels-add": ":books: Area - .NET for Apache Spark Guide"
-          },
-          "(?i)dotnet$": {
-            "labels-add": ":books: Area - .NET Guide"
-          },
-          "(?i)dotnet-ml-api$": {
-            "labels-add": ":books: Area - API Reference"
-          },
-          "(?i)dotnet-roslyn-api$": {
-            "labels-add": ":books: Area - Roslyn API Reference"
-          },
-          "(?i)dotnet-whats-new$": {
-            "labels-add": ":star2: What's New"
-          },
-          "(?i)dotnet-architecture$": {
-            "labels-add": ":books: Area - .NET Architecture Guide"
-          },
-          "(?i)azure-dotnet$": {
-            "labels-add": ":books: Area - Azure .NET SDK"
-          }
-        },
-        "technology": {
-          "(?i)csharp-advanced-concepts$": {
-            "labels-add": ":card_file_box: Technology - C# Advanced concepts"
-          },
-          "(?i)csharp-async$": {
-            "labels-add": ":card_file_box: Technology - Async Task"
-          },
-          "(?i)csharp-diagnostics$": {
-            "labels-add": ":card_file_box: Technology - C# / VB diagnostics"
-          },
-          "(?i)csharp-fundamentals$": {
-            "labels-add": ":card_file_box: Technology - C# Fundamentals"
-          },
-          "(?i)csharp-get-started$": {
-            "labels-add": ":card_file_box: Technology - C# Get Started"
-          },
-          "(?i)csharp-language-reference$": {
-            "labels-add": ":card_file_box: Technology - C# Language Reference"
-          },
-          "(?i)csharp-linq$": {
-            "labels-add": ":card_file_box: Technology - LINQ"
-          },
-          "(?i)csharp-null-safety$": {
-            "labels-add": ":card_file_box: Technology - C# Null safety"
-          },
-          "(?i)csharp-roslyn$": {
-            "labels-add": ":card_file_box: Technology - Roslyn APIs"
-          },
-          "(?i)csharp-whats-new$": {
-            "labels-add": ":card_file_box: Technology - C# What's New"
-          },
-          "(?i)dotnet-wpf$": {
-            "labels-add": ":card_file_box: Technology - WPF"
-          }
-        },
-        "contentsource": {
-          "(?i).*master\/docs\/architecture\/blazor-for-web-forms-developers.*": {
-            "labels-add": ":book: guide - Blazor"
-          },
-          "(?i).*master\/docs\/architecture\/cloud-native.*": {
-            "labels-add": ":book: guide - Cloud Native"
-          },
-          "(?i).*master\/docs\/architecture\/containerized-lifecycle.*": {
-            "labels-add": ":book: guide - Docker lifecycle"
-          },
-          "(?i).*master\/docs\/architecture\/grpc-for-wcf-developers.*": {
-            "labels-add": ":book: guide - gRPC"
-          },
-          "(?i).*master\/docs\/architecture\/microservices.*": {
-            "labels-add": ":book: guide - .NET Microservices"
-          },
-          "(?i).*master\/docs\/architecture\/modern-web-apps-azure.*": {
-            "labels-add": ":book: guide - ASP.NET Core web apps"
-          },
-          "(?i).*master\/docs\/architecture\/modernize-desktop.*": {
-            "labels-add": ":book: guide - Modernizing Desktop apps"
-          },
-          "(?i).*master\/docs\/architecture\/modernize-with-azure-containers.*": {
-            "labels-add": ":book: guide - Modernizing w/ Windows containers"
-          },
-          "(?i).*master\/docs\/architecture\/serverless.*": {
-            "labels-add": ":book: guide - Serverless apps"
-          },
-          "(?i).*master\/docs\/core\/tools.*": {
-            "labels-add": ":card_file_box: Technology - CLI"
-          },
-          "(?i).*master\/docs\/core\/docker.*": {
-            "labels-add": ":card_file_box: Technology - Docker"
-          },
-          "(?i).*master\/docs\/framework\/configure-apps\/file-schema\/network.*": {
-            "labels-add": ":card_file_box: Technology - NCL"
-          },
-          "(?i).*master\/docs\/framework\/configure-apps\/file-schema\/wcf.*": {
-            "labels-add": ":card_file_box: Technology - WCF"
-          },
-          "(?i).*master\/docs\/framework\/data\/adonet.*": {
-            "labels-add": ":card_file_box: Technology - Data Access"
-          },
-          "(?i).*master\/docs\/framework\/data\/wcf.*": {
-            "labels-add": ":card_file_box: Technology - WCF"
-          },
-          "(?i).*master\/docs\/framework\/docker.*": {
-            "labels-add": ":card_file_box: Technology - Docker"
-          },
-          "(?i).*master\/docs\/framework\/install.*": {
-            "labels-add": ":card_file_box: Technology - Installers"
-          },
-          "(?i).*master\/docs\/framework\/migration-guide.*": {
-            "labels-add": ":card_file_box: Technology - AppCompat"
-          },
-          "(?i).*master\/docs\/framework\/network-programming.*": {
-            "labels-add": ":card_file_box: Technology - NCL"
-          },
-          "(?i).*master\/docs\/framework\/windows-workflow-foundation.*": {
-            "labels-add": ":card_file_box: Technology - WF"
-          },
-          "(?i).*master\/docs\/framework\/wpf.*": {
-            "labels-add": ":card_file_box: Technology - WPF"
-          },
-          "(?i).*master\/docs\/framework\/wcf.*": {
-            "labels-add": ":card_file_box: Technology - WCF"
-          },
-          "(?i).*master\/docs\/framework\/winforms.*": {
-            "labels-add": ":card_file_box: Technology - WinForms"
-          },
-          "(?i).*master\/docs\/standard\/security.*": {
-            "labels-add": ":card_file_box: Technology - Security"
-          },
-          "(?i).*master\/docs\/standard\/design-guidelines\/.*": {
-            "labels-add": ":book: guide - Framework Design Guidelines"
-          },
-          "(?i).*docs\/whats-new\/.*": {
-            "labels-add": ":star2: What's New"
-          }
-        }
       },
       "processor-meta-custom": {
         "issuetype": {
@@ -174,6 +31,11 @@
             "labels-add": [ "breaking-change", "doc-idea" ]
           }
         }
+      }
+    },
+    "reopened": {
+      "processor-default": {
+        "labels-remove": [ "won't fix" ]
       }
     },
     "closed": {
@@ -193,228 +55,267 @@
         "processors": {
           "processor-files": {
             "changedfile": {
+
+              "(?i).*_csharplang.*": {
+                "labels-add": [ "dotnet-csharp/prod", "csharp-spec/tech" ]
+              },
+              
+              "(?i).*_vblang\/spec.*": {
+                "labels-add": [ "dotnet-visualbasic/prod", "vb-spec/tech" ]
+              },
+              
               "(?i).*docs\/architecture.*": {
-                "labels-add": ":books: Area - .NET Architecture Guide"
+                "labels-add": "dotnet-architecture/prod"
               },
               "(?i).*docs\/architecture\/blazor-for-web-forms-developers.*": {
-                "labels-add": ":book: guide - Blazor"
+                "labels-add": [ "dotnet-architecture/prod", "blazor/tech" ]
               },
               "(?i).*docs\/architecture\/cloud-native.*": {
-                "labels-add": ":book: guide - Cloud Native"
+                "labels-add": [ "dotnet-architecture/prod", "cloud-native/tech" ]
               },
               "(?i).*docs\/architecture\/containerized-lifecycle.*": {
-                "labels-add": ":book: guide - Docker lifecycle"
+                "labels-add": [ "dotnet-architecture/prod", "containerized-lifecycle/tech" ]
               },
               "(?i).*docs\/architecture\/grpc-for-wcf-developers.*": {
-                "labels-add": ":book: guide - gRPC"
+                "labels-add": [ "dotnet-architecture/prod", "grpc/tech" ]
               },
               "(?i).*docs\/architecture\/microservices.*": {
-                "labels-add": ":book: guide - .NET Microservices"
-              },
-              "(?i).*docs\/architecture\/modern-web-apps-azure.*": {
-                "labels-add": ":book: guide - ASP.NET Core web apps"
-              },
-              "(?i).*master\/docs\/architecture\/modernize-desktop.*": {
-                "labels-add": ":book: guide - Modernizing Desktop apps"
+                "labels-add": [ "dotnet-architecture/prod", "microservices/tech" ]
               },
               "(?i).*docs\/architecture\/modernize-with-azure-containers.*": {
-                "labels-add": ":book: guide - Modernizing w/ Windows containers"
+                "labels-add": [ "dotnet-architecture/prod", "modernize-with-azure-containers/tech" ]
+              },
+              "(?i).*docs\/architecture\/modern-web-apps-azure.*": {
+                "labels-add": [ "dotnet-architecture/prod", "modern-web-apps-azure/tech" ]
               },
               "(?i).*docs\/architecture\/serverless.*": {
-                "labels-add": ":book: guide - Serverless apps"
+                "labels-add": [ "dotnet-architecture/prod", "serverless/tech" ]
               },
+              
+              "(?i).*docs\/azure.*": {
+                "labels-add": "dotnet-azure/prod"
+              },
+              
               "(?i).*docs\/core.*": {
-                "labels-add": ":books: Area - .NET Core Guide"
+                "labels-add": "dotnet-fundamentals/prod"
               },
               "(?i).*docs\/core\/tools.*": {
-                "labels-add": ":card_file_box: Technology - CLI"
+                "labels-add": [ "dotnet-fundamentals/prod", "dotnet-cli/tech" ]
               },
               "(?i).*docs\/core\/docker.*": {
-                "labels-add": ":card_file_box: Technology - Docker"
+                "labels-add": [ "dotnet-fundamentals/prod", "dotnet-docker/tech" ]
               },
+              
+              "(?i).*docs\/core\/install.*": {
+                "labels-add": [ "dotnet/prod", "dotnet-install/tech" ]
+              },
+              
               "(?i).*docs\/csharp.*": {
-                "labels-add": ":books: Area - C# Guide"
+                "labels-add": "dotnet-csharp/prod"
               },
               "(?i).*docs\/csharp\/misc.*": {
-                "labels-add": ":card_file_box: Technology - C# / VB diagnostics"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-diagnostics/tech" ]
               },
               "(?i).*docs\/csharp\/whats-new.*": {
-                "labels-add": ":card_file_box: Technology - C# What's New"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-whats-new/tech" ]
               },
               "(?i).*docs\/csharp\/how-to.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/linq.*": {
-                "labels-add": ":card_file_box: Technology - LINQ"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-linq/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/main-and-command-args.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/indexers.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/generics.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/strings.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/types.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/statements-expressions-operators.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/interop.*": {
-                "labels-add": ":card_file_box: Technology - C# Advanced concepts"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-advanced-concepts/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/unsafe-code-pointers.*": {
-                "labels-add": ":card_file_box: Technology - C# Advanced concepts"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-advanced-concepts/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/exceptions.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/namespaces.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/nullable-types.*": {
-                "labels-add": ":card_file_box: Technology - C# Null safety"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-null-safety/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/arrays.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/concepts\/covariance-contravariance.*": {
-                "labels-add": ":card_file_box: Technology - C# Advanced concepts"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-advanced-concepts/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/concepts\/serialization.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/concepts\/expression-trees.*": {
-                "labels-add": ":card_file_box: Technology - C# Advanced concepts"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-advanced-concepts/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/concepts\/async.*": {
-                "labels-add": ":card_file_box: Technology - Async Task"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-async/tech" ]
               },
-              "(?i).*docs\/csharp\/programming-guide\/concepts\/linq.*":  {
-                "labels-add": ":card_file_box: Technology - LINQ"
+              "(?i).*docs\/csharp\/programming-guide\/concepts\/linq.*": {
+                "labels-add": [ "dotnet-csharp/prod", "csharp-linq/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/concepts\/attributes.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/xmldoc.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/classes-and-structs.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/delegates.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/file-system.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/events.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/inside-a-program.*": {
-                "labels-add": ":card_file_box: Technology - C# Get Started"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-get-started/tech" ]
               },
               "(?i).*docs\/csharp\/programming-guide\/interfaces.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
               "(?i).*docs\/csharp\/getting-started.*": {
-                "labels-add": ":card_file_box: Technology - C# Get Started"
-              },
-              "(?i).*docs\/csharp\/tutorials\/exploration.*": {
-                "labels-add": ":card_file_box: Technology - C# Get Started"
-              },
-              "(?i).*docs\/csharp\/tutorial\/intro-to-csharp.*": {
-                "labels-add": ":card_file_box: Technology - C# Get Started"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-get-started/tech" ]
               },
               "(?i).*docs\/csharp\/tutorials.*": {
-                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-fundamentals/tech" ]
               },
-              "(?i).*docs\/csharp\/language-reference\/compiler-messages.*": {
-                "labels-add": ":card_file_box: Technology - C# / VB diagnostics"
+              "(?i).*docs\/csharp\/tutorials\/exploration.*": {
+                "labels-add": [ "dotnet-csharp/prod", "csharp-get-started/tech" ]
+              },
+              "(?i).*docs\/csharp\/tutorials\/intro-to-csharp.*": {
+                "labels-add": [ "dotnet-csharp/prod", "csharp-get-started/tech" ]
               },
               "(?i).*docs\/csharp\/language-reference.*": {
-                "labels-add": ":card_file_box: Technology - C# Language Reference"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-language-reference/tech" ]
+              },
+              "(?i).*docs\/csharp\/language-reference\/compiler-messages.*": {
+                "labels-add": [ "dotnet-csharp/prod", "csharp-diagnostics/tech" ]
               },
               "(?i).*docs\/csharp\/roslyn-sdk.*": {
-                "labels-add": ":card_file_box: Technology - Roslyn APIs"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-roslyn/tech" ]
               },
               "(?i).*docs\/csharp\/tour-of-csharp.*": {
-                "labels-add": ":card_file_box: Technology - C# Get Started"
+                "labels-add": [ "dotnet-csharp/prod", "csharp-get-started/tech" ]
               },
+              
               "(?i).*docs\/framework.*": {
-                "labels-add": ":books: Area - .NET Framework Guide"
+                "labels-add": "dotnet-framework/prod"
               },
               "(?i).*docs\/framework\/configure-apps\/file-schema\/network.*": {
-                "labels-add": ":card_file_box: Technology - NCL"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-networking/tech" ]
               },
               "(?i).*docs\/framework\/configure-apps\/file-schema\/wcf.*": {
-                "labels-add": ":card_file_box: Technology - WCF"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-wcf/tech" ]
               },
               "(?i).*docs\/framework\/data\/adonet.*": {
-                "labels-add": ":card_file_box: Technology - Data Access"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-data/tech" ]
               },
               "(?i).*docs\/framework\/data\/wcf.*": {
-                "labels-add": ":card_file_box: Technology - WCF"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-wcf/tech" ]
               },
               "(?i).*docs\/framework\/docker.*": {
-                "labels-add": ":card_file_box: Technology - Docker"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-docker/tech" ]
               },
               "(?i).*docs\/framework\/install.*": {
-                "labels-add": ":card_file_box: Technology - Installers"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-install/tech" ]
               },
               "(?i).*docs\/framework\/migration-guide.*": {
-                "labels-add": ":card_file_box: Technology - AppCompat"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-appcompat/tech" ]
               },
               "(?i).*docs\/framework\/network-programming.*": {
-                "labels-add": ":card_file_box: Technology - NCL"
-              },
-              "(?i).*docs\/framework\/windows-workflow-foundation.*": {
-                "labels-add": ":card_file_box: Technology - WF"
-              },
-              "(?i).*docs\/framework\/wpf.*": {
-                "labels-add": ":card_file_box: Technology - WPF"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-networking/tech" ]
               },
               "(?i).*docs\/framework\/wcf.*": {
-                "labels-add": ":card_file_box: Technology - WCF"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-wcf/tech" ]
+              },
+              "(?i).*docs\/framework\/windows-workflow-foundation.*": {
+                "labels-add": [ "dotnet-framework/prod", "dotnet-wf/tech" ]
               },
               "(?i).*docs\/framework\/winforms.*": {
-                "labels-add": ":card_file_box: Technology - WinForms"
+                "labels-add": [ "dotnet-framework/prod", "dotnet-winforms/tech" ]
               },
+              "(?i).*docs\/framework\/wpf.*": {
+                "labels-add": [ "dotnet-framework/prod", "dotnet-wpf/tech" ]
+              },
+              "(?i).*docs\/framework\/xaml-services.*": {
+                "labels-add": [ "dotnet-framework/prod", "dotnet-wpf/tech" ]
+              },
+              
               "(?i).*docs\/fsharp.*": {
-                "labels-add": ":books: Area - F# Guide"
+                "labels-add": "dotnet-fsharp/prod"
               },
-              "(?i).*docs\/machine-learning.*": {
-                "labels-add": ":books: Area - ML.NET Guide"
+              
+              "(?i).*docs\/fundamentals.*": {
+                "labels-add": "dotnet-fundamentals/prod"
               },
-              "(?i).*docs\/spark.*": {
-                "labels-add": ":books: Area - .NET for Apache Spark Guide"
-              },
+              
               "(?i).*docs\/standard.*": {
-                "labels-add": ":books: Area - .NET Guide"
+                "labels-add": "dotnet-fundamentals/prod"
               },
+              
+              "(?i).*docs\/standard\/analyzers.*": {
+                "labels-add": [ "dotnet-fundamentals/prod", "dotnet-analyzers/tech" ]
+              },
+              
+              "(?i).*docs\/machine-learning.*": {
+                "labels-add": "dotnet-ml/prod"
+              },
+              
+              "(?i).*docs\/spark.*": {
+                "labels-add": "dotnet-spark/prod"
+              },
+              
+              "(?i).*docs\/standard\/data.*": {
+                "labels-add": "dotnet-data/prod"
+              },
+              
+              "(?i).*docs\/standard\/design-guidelines.*": {
+                "labels-add": [ "dotnet/prod", "dotnet-standard/tech" ]
+              },
+              
               "(?i).*docs\/standard\/security.*": {
-                "labels-add": ":card_file_box: Technology - Security"
+                "labels-add": [ "dotnet/prod", "dotnet-security/tech" ]
               },
-              "(?i).*docs\/standard\/design-guidelines\/.*": {
-                "labels-add": ":book: guide - Framework Design Guidelines"
-              },
+              
               "(?i).*docs\/visual-basic.*": {
-                "labels-add": ":books: Area - Visual Basic Guide"
+                "labels-add": "dotnet-visualbasic/prod"
               },
-              "(?i).*docs\/whats-new\/.*": {
-                "labels-add": ":star2: What's New"
+              
+              "(?i).*docs\/visual-basic\/language-reference\/error-messages.*": {
+                "labels-add": [ "dotnet-visualbasic/prod", "vb-diagnostics/tech" ]
               },
-              "(?i).*docs\/azure\/.*": {
-                "labels-add": ":books: Area - Azure .NET SDK"
-              },
-              "(?i).*docs\/iot\/.*": {
-                "labels-add": ":books: Area - .NET IoT Libraries"
+              
+              "(?i).*docs\/visual-basic\/misc.*": {
+                "labels-add": [ "dotnet-visualbasic/prod", "vb-diagnostics/tech" ]
               }
+              
             }
           }
         }

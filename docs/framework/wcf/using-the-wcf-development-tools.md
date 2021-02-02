@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 054adb87-c244-4d5a-83d1-0b2b44bd454b
 ---
 # Using the WCF Development Tools
+
 This section describes the Visual Studio development tools that can assist you in developing your WCFservice.  
   
  You can use the Visual Studio templates as a foundation to quickly build your own service, then use WCF Service Auto Host and WCF Test Client to debug and test your service. These tools together provide a fast and seamless debug and testing cycle, and preclude the need to commit to a hosting model at an early stage.  
@@ -12,6 +13,7 @@ This section describes the Visual Studio development tools that can assist you i
  > Starting with Visual Studio 2017, the WCF development tools are not installed by default. In order to use these features, you must ensure the Windows Communication Foundation component is selected in the Visual Studio installer.
   
 ## The WCF Developer Tools  
+
  [WCF Visual Studio Templates](wcf-vs-templates.md)  
   
  You can use the predefined Visual Studio project and item templates in Visual Studio to quickly build WCF services and surrounding applications.  
@@ -29,6 +31,7 @@ This section describes the Visual Studio development tools that can assist you i
  XML data stored in the clipboard can be pasted into a code page. The classes defined in the data will be converted to code types.  
   
 ## Using the Tools without Administrator privilege  
+
  To enable users without administrator privilege to develop WCF services, an ACL (Access Control List) is created for the namespace "http://+:8731/Design_Time_Addresses" during the installation of Visual Studio. The ACL is set to (UI), which includes all interactive users logged on to the machine. Administrators can add or remove users from this ACL, or open additional ports.This ACL enables WCF or WF templates to send and receive data in their default configuration. It also enables users to use the WCF Service Auto Host (wcfSvcHost.exe) without granting them administrator privileges.  
   
  You can modify access using the Netsh.exe tool in Windows Vista under the elevated administrator account. The following is an example of using Netsh.exe.  

@@ -93,6 +93,9 @@ conceptualContent:
         - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
           itemType: video
           text: What is .NET?
+        - url: /answers/products/dotnet
+          itemType: get-started
+          text: .NET on Q&A
         - url: ./core/introduction.md
           itemType: overview
           text: Overview of .NET
@@ -260,11 +263,11 @@ additionalContent:
       # Card
       - title: Internet of things (IoT)
         links:
-          - url: /dotnet/iot/
+          - url: ./iot/index.yml
             text: .NET IoT Libraries
-          - url: /dotnet/iot/quickstarts/sensehat
+          - url: ./iot/quickstarts/sensehat.md
             text: Get started in 5 minutes
-          - url: /dotnet/iot/tutorials/blink-led
+          - url: ./iot/tutorials/blink-led.md
             text: Blink an LED
           - url: https://aka.ms/IoTNet101
             text: .NET IoT 101 video series

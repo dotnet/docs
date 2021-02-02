@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "strings [C#], converting hexadecimal strings"
   - "hexadecimal strings [C#]"
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.assetid: 7115c49f-7d1d-40c3-8bd9-aae0cc1d46b6
 ---
 # How to convert between hexadecimal strings and numeric types (C# Programming Guide)
@@ -54,6 +54,12 @@ These examples show you how to perform the following tasks:
  The following example shows how to convert a [byte](../../language-reference/builtin-types/integral-numeric-types.md) array to a hexadecimal string by using the <xref:System.BitConverter?displayProperty=nameWithType> class.  
   
  [!code-csharp[csProgGuideTypes#38](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#38)]  
+  
+## Example  
+
+ The following example shows how to convert a [byte](../../language-reference/builtin-types/integral-numeric-types.md) array to a hexadecimal string by calling the <xref:System.Convert.ToHexString%2A?displayProperty=nameWithType> method introduced in .NET 5.0.
+  
+ [!code-csharp[csProgGuideTypes#47](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#47)]  
   
 ## See also
 

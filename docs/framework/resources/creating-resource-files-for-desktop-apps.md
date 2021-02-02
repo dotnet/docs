@@ -27,6 +27,7 @@ You can include resources, such as strings, images, or object data, in resources
 - Use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) to create a resource file and include it in your project. Visual Studio provides a resource editor that lets you add, delete, and modify resources. At compile time, the resource file is automatically converted to a binary .resources file and embedded in an application assembly or satellite assembly. For more information, see the [Resource Files in Visual Studio](creating-resource-files-for-desktop-apps.md#VSResFiles) section.
 
 <a name="TextFiles"></a>
+
 ## Resources in text files
 
 You can use text (.txt or .restext) files to store string resources only. For non-string resources, use .resx files or create them programmatically. Text files that contain string resources have the following format:
@@ -129,7 +130,9 @@ csc greeting.cs -resource:GreetingResources.resources
 ```
 
 <a name="ResxFiles"></a>
+
 ## Resources in .resx files
+
  Unlike text files, which can only store string resources, XML resource (.resx) files can store strings, binary data such as images, icons, and audio clips, and programmatic objects. A .resx file contains a standard header, which describes the format of the resource entries and specifies the versioning information for the XML that is used to parse the data. The resource file data follows the XML header. Each data item consists of a name/value pair that is contained in a `data` tag. Its `name` attribute defines the resource name, and the nested `value` tag contains the resource value. For string data, the `value` tag contains the string.
 
  For example, the following `data` tag defines a string resource named `prompt` whose value is "Enter your name:".
@@ -168,6 +171,7 @@ csc greeting.cs -resource:GreetingResources.resources
 > Because .resx files must consist of well-formed XML in a predefined format, we do not recommend working with .resx files manually, particularly when the .resx files contain resources other than strings. Instead, [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) provides a transparent interface for creating and manipulating .resx files. For more information, see the [Resource Files in Visual Studio](creating-resource-files-for-desktop-apps.md#VSResFiles) section. You can also create and manipulate .resx files programmatically. For more information, see [Working with .resx Files Programmatically](working-with-resx-files-programmatically.md).
 
 <a name="ResourcesFiles"></a>
+
 ## Resources in .resources files
 
 You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithType> class to programmatically create a binary resource (.resources) file directly from code. You can also use [Resource File Generator (Resgen.exe)](../tools/resgen-exe-resource-file-generator.md) to create a .resources file from a text file or a .resx file. The .resources file can contain binary data (byte arrays) and object data in addition to string data. Programmatically creating a .resources file requires the following steps:
@@ -189,6 +193,7 @@ You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithTy
  After you create the .resources file, you can embed it in a run-time executable or library by including the language compiler's `/resource` switch, or embed it in a satellite assembly by using [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md).
 
 <a name="VSResFiles"></a>
+
 ## Resource files in Visual Studio
 
 When you add a resource file to your [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) project, Visual Studio creates a .resx file in the project directory. Visual Studio provides resource editors that enable you to add strings, images, and binary objects. Because the editors are designed to handle static data only, they cannot be used to store programmatic objects; you must write object data to either a .resx file or to a .resources file programmatically. For more information, see [Working with .resx Files Programmatically](working-with-resx-files-programmatically.md) and the [Resources in .resources Files](creating-resource-files-for-desktop-apps.md#ResourcesFiles) section.

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 676691b5-705e-4422-8dca-c6f517964116
 ---
 # WmiGetObjectFailed
+
 Id: 120  
   
  Severity: Error  
@@ -11,6 +12,7 @@ Id: 120
  Category: ServiceModel  
   
 ## Description  
+
  This event indicates that the WMI GetObject request was not processed. The event lists the WMI Object, exception, process name and process ID.  
   
 ## See also

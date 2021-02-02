@@ -205,6 +205,7 @@ Initially, the new console app project doesn't have access to the class library.
 ## Additional resources
 
 * [Develop libraries with the .NET CLI](libraries.md)
+* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
 
 ## Next steps
 

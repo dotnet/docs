@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 5162f5c4-8781-4cc4-9425-bb7620eaeaf4
 ---
 # How to: Restrict Access with the PrincipalPermissionAttribute Class
+
 Controlling the access to resources on a Windows-domain computer is a basic security task. For example, only certain users should be able to view sensitive data, such as payroll information. This topic explains how to restrict access to a method by demanding that the user belong to a predefined group. For a working sample, see [Authorizing Access to Service Operations](./samples/authorizing-access-to-service-operations.md).  
   
  The task consists of two separate procedures. The first creates the group and populates it with users. The second applies the <xref:System.Security.Permissions.PrincipalPermissionAttribute> class to specify the group.  
@@ -44,6 +45,7 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
     > If you apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to a contract a <xref:System.Security.SecurityException> will be thrown. You can only apply the attribute at the method level.  
   
 ## Using a Certificate to Control Access to a Method  
+
  You can also use the `PrincipalPermissionAttribute` class to control access to a method if the client credential type is a certificate. To do this, you must have the certificate's subject and thumbprint.  
   
  To examine a certificate for its properties, see [How to: View Certificates with the MMC Snap-in](./feature-details/how-to-view-certificates-with-the-mmc-snap-in.md). To find the thumbprint value, see [How to: Retrieve the Thumbprint of a Certificate](./feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md).  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: eb015842-cc5a-47be-bce5-6af39e567723
 ---
 # 1150 - CompensationState
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: eb015842-cc5a-47be-bce5-6af39e567723
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a change of state in a CompensableActivity.  
   
 ## Message  
+
  CompensableActivity '%1' is in the '%2' state.  
   
 ## Details  

@@ -19,7 +19,7 @@ In some cases though, there are additional installation requirements, particular
 
 ## Microsoft.ML.TimeSeries, Microsoft.ML.AutoML
 
-Both of these packages have a dependency on `Microsoft.ML.MKL.Redist`, which has a dependency on `libiomp`.
+Both of these packages have a dependency on `Microsoft.ML.MKL.Redist`, which has a dependency on `libomp`.
 
 ### Windows
 

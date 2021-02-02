@@ -12,14 +12,26 @@
     - name: Breaking changes
       href: fx-core.md
     - name: Unavailable technologies
-      href: ../porting/net-framework-tech-unavailable.md?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+      href: ../porting/net-framework-tech-unavailable.md
     - name: APIs that always throw
       href: unsupported-apis.md
   - name: Breaking changes by version
     expanded: true
     items:
+    - name: .NET 6.0
+      items:
+      - name: Overview
+        href: 6.0.md
+      - name: Windows Forms
+        items:
+        - name: NotifyIcon.Text maximum text length increased
+          href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
+        - name: TableLayoutSettings properties throw InvalidEnumArgumentException
+          href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
     - name: .NET 5.0
       items:
+      - name: Overview
+        href: 5.0.md
       - name: ASP.NET Core
         items:
         - name: ASP.NET Core apps deserialize quoted numbers
@@ -32,6 +44,8 @@
           href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
         - name: Microsoft-prefixed Azure integration packages removed
           href: aspnet-core/5.0/azure-integration-packages-removed.md
+        - name: "Blazor: Route precedence logic changed in Blazor apps"
+          href: aspnet-core/5.0/blazor-routing-logic-changed.md
         - name: "Blazor: Updated browser support"
           href: aspnet-core/5.0/blazor-browser-support-updated.md
         - name: "Blazor: Insignificant whitespace trimmed by compiler"
@@ -180,14 +194,8 @@
           href: cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md
         - name: Default FeedbackSize value changed
           href: cryptography/5.0/tripledes-default-feedback-size-change.md
-      - name: Interop
-        items:
-        - name: Support for WinRT is removed
-          href: interop/5.0/built-in-support-for-winrt-removed.md
-        - name: Casting RCW to InterfaceIsIInspectable throws exception
-          href: interop/5.0/casting-rcw-to-inspectable-interface-throws-exception.md
-        - name: No A/W suffix probing on non-Windows platforms
-          href: interop/5.0/function-suffix-pinvoke.md
+      - name: Entity Framework Core
+        href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Globalization
         items:
         - name: Use ICU libraries on Windows
@@ -196,6 +204,16 @@
           href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
         - name: Unicode category changed for Latin-1 characters
           href: globalization/5.0/unicode-categories-for-latin1-chars.md
+        - name: ListSeparator values changed
+          href: globalization/5.0/listseparator-value-change.md
+      - name: Interop
+        items:
+        - name: Support for WinRT is removed
+          href: interop/5.0/built-in-support-for-winrt-removed.md
+        - name: Casting RCW to InterfaceIsIInspectable throws exception
+          href: interop/5.0/casting-rcw-to-inspectable-interface-throws-exception.md
+        - name: No A/W suffix probing on non-Windows platforms
+          href: interop/5.0/function-suffix-pinvoke.md
       - name: MSBuild
         items:
         - name: Directory.Packages.props files imported by default
@@ -242,6 +260,8 @@
           href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
       - name: Windows Forms
         items:
+        - name: Native code can't access Windows Forms objects
+          href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
           href: windows-forms/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts
@@ -267,11 +287,11 @@
         - name: WPF apps use Microsoft.NET.Sdk
           href: windows-forms/5.0/sdk-and-target-framework-change.md
     - name: .NET Core 3.1
-      href: 3.0-3.1.md
+      href: 3.1.md
     - name: .NET Core 3.0
-      href: 2.2-3.0.md
+      href: 3.0.md
     - name: .NET Core 2.1
-      href: 2.0-2.1.md
+      href: 2.1.md
   - name: Breaking changes by area
     items:
     - name: ASP.NET Core
@@ -288,6 +308,8 @@
           href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
         - name: Microsoft-prefixed Azure integration packages removed
           href: aspnet-core/5.0/azure-integration-packages-removed.md
+        - name: "Blazor: Route precedence logic changed in Blazor apps"
+          href: aspnet-core/5.0/blazor-routing-logic-changed.md
         - name: "Blazor: Updated browser support"
           href: aspnet-core/5.0/blazor-browser-support-updated.md
         - name: "Blazor: Insignificant whitespace trimmed by compiler"
@@ -449,7 +471,11 @@
       - name: .NET Core 2.1-3.0
         href: cryptography.md
     - name: Entity Framework Core
-      href: /ef/core/what-is-new/ef-core-3.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+      items:
+      - name: EF Core 5.0
+        href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: EF Core 3.1
+        href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Globalization
       items:
       - name: .NET 5.0
@@ -460,6 +486,8 @@
           href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
         - name: Unicode category changed for Latin-1 characters
           href: globalization/5.0/unicode-categories-for-latin1-chars.md
+        - name: ListSeparator values changed
+          href: globalization/5.0/listseparator-value-change.md
       - name: .NET 3.0
         href: globalization.md
     - name: Interop
@@ -472,8 +500,6 @@
           href: interop/5.0/casting-rcw-to-inspectable-interface-throws-exception.md
         - name: No A/W suffix probing on non-Windows platforms
           href: interop/5.0/function-suffix-pinvoke.md
-      - name: .NET Core 2.1-3.0
-        href: interop.md
     - name: MSBuild
       items:
       - name: .NET 5.0
@@ -486,7 +512,6 @@
           href: msbuild/5.0/publishdepsfilepath-behavior-change.md
         - name: TargetFramework change from netcoreapp to net
           href: msbuild/5.0/targetframework-name-change.md
-      - name: (This file will eventually go away)
       - name: .NET 3.0
         href: msbuild.md
     - name: Networking
@@ -537,8 +562,16 @@
         href: visualbasic.md
     - name: Windows Forms
       items:
+      - name: .NET 6.0
+        items:
+        - name: NotifyIcon.Text maximum text length increased
+          href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
+        - name: TableLayoutSettings properties throw InvalidEnumArgumentException
+          href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
       - name: .NET 5.0
         items:
+        - name: Native code can't access Windows Forms objects
+          href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
           href: windows-forms/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts
@@ -573,26 +606,26 @@
       displayName: syslib, obsolete, obsoletion
       href: syslib-obsoletions.md
     - name: SYSLIB0001
-      href: syslib0001.md
+      href: syslib-warnings/syslib0001.md
     - name: SYSLIB0002
-      href: syslib0002.md
+      href: syslib-warnings/syslib0002.md
     - name: SYSLIB0003
-      href: syslib0003.md
+      href: syslib-warnings/syslib0003.md
     - name: SYSLIB0004
-      href: syslib0004.md
+      href: syslib-warnings/syslib0004.md
     - name: SYSLIB0005
-      href: syslib0005.md
+      href: syslib-warnings/syslib0005.md
     - name: SYSLIB0006
-      href: syslib0006.md
+      href: syslib-warnings/syslib0006.md
     - name: SYSLIB0007
-      href: syslib0007.md
+      href: syslib-warnings/syslib0007.md
     - name: SYSLIB0008
-      href: syslib0008.md
+      href: syslib-warnings/syslib0008.md
     - name: SYSLIB0009
-      href: syslib0009.md
+      href: syslib-warnings/syslib0009.md
     - name: SYSLIB0010
-      href: syslib0010.md
+      href: syslib-warnings/syslib0010.md
     - name: SYSLIB0011
-      href: syslib0011.md
+      href: syslib-warnings/syslib0011.md
     - name: SYSLIB0012
-      href: syslib0012.md
+      href: syslib-warnings/syslib0012.md

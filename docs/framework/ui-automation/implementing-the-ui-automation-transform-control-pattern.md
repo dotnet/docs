@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
 ---
 # Implementing the UI Automation Transform Control Pattern
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -17,7 +18,9 @@ ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
  The <xref:System.Windows.Automation.TransformPattern> control pattern is used to support controls that can be moved, resized, or rotated within a two-dimensional space. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## Implementation Guidelines and Conventions  
+
  When implementing the Transform control pattern, note the following guidelines and conventions:  
   
 - Support for this control pattern is not limited to objects on the desktop. This control pattern must also be supported by the children of a container object if the children can be moved, resized, or rotated freely within the boundaries of the container.  
@@ -29,7 +32,9 @@ ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
 - All parameters and property values are absolute and independent of locale.  
   
 <a name="Required_Members_for_the_IValueProvider_Interface"></a>
+
 ## Required Members for ITransformProvider  
+
  The following properties and methods are required for implementing <xref:System.Windows.Automation.Provider.ITransformProvider>.  
   
 |Required members|Member type|Notes|  
@@ -44,7 +49,9 @@ ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
  This control pattern has no associated events.  
   
 <a name="Exceptions"></a>
+
 ## Exceptions  
+
  Providers must throw the following exceptions.  
   
 |Exception Type|Condition|  

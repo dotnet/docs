@@ -114,7 +114,33 @@ dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 
 You write one failing test, make it pass, then repeat the process. In the *PrimeService.Tests* directory, rename the *UnitTest1.cs* file to *PrimeService_IsPrimeShould.cs* and replace its entire contents with the following code:
 
-[!code-csharp[Sample_FirstTest](~/samples/snippets/core/testing/unit-testing-using-nunit/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_FirstTest)]
+```csharp
+using NUnit.Framework;
+using Prime.Services;
+
+namespace Prime.UnitTests.Services
+{
+    [TestFixture]
+    public class PrimeService_IsPrimeShould
+    {
+        private PrimeService _primeService;
+
+        [SetUp]
+        public void SetUp()
+        {
+            _primeService = new PrimeService();
+        }
+
+        [Test]
+        public void IsPrime_InputIs1_ReturnFalse()
+        {
+            var result = _primeService.IsPrime(1);
+
+            Assert.IsFalse(result, "1 should not be prime");
+        }
+    }
+}
+```
 
 The `[TestFixture]` attribute denotes a class that contains unit tests. The `[Test]` attribute indicates a method is a test method.
 

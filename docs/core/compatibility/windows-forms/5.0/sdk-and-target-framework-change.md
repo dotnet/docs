@@ -41,7 +41,7 @@ In .NET 5.0 and later versions:
 
 ## Version introduced
 
-.NET 5.0
+.NET SDK 5.0.100
 
 ## Recommended action
 

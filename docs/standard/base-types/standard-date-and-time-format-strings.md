@@ -1,7 +1,7 @@
 ---
 title: "Standard date and time format strings"
 description: Learn how to use a standard date and time format string to define the text representation of a date and time value in .NET.
-ms.date: 11/05/2020
+ms.date: 01/25/2021
 dev_langs:
   - "csharp"
   - "vb"
@@ -13,7 +13,8 @@ helpviewer_keywords:
   - "custom date and time format strings"
   - "formatting [.NET], time"
   - "date and time strings"
-ms.custom: contperfq2
+ms.topic: reference
+ms.custom: contperf-fy21q2
 ---
 # Standard date and time format strings
 
@@ -79,7 +80,7 @@ In some cases, the standard format string serves as a convenient abbreviation fo
 
 |Standard format string|Defined by DateTimeFormatInfo.InvariantInfo property|Custom format string|
 |----------------------------|----------------------------------------------------------|--------------------------|
-|"O" or "o"|None|yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffzz|
+|"O" or "o"|None|yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'fffffffK|
 |"R" or "r"|<xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A>|ddd, dd MMM yyyy HH':'mm':'ss 'GMT'|
 |"s"|<xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A>|yyyy'-'MM'-'dd'T'HH':'mm':'ss|
 |"u"|<xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A>|yyyy'-'MM'-'dd HH':'mm':'ss'Z'|

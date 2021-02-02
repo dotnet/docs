@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
@@ -13,22 +11,29 @@ namespace SystemTextJsonSamples
             var wf = WeatherForecastFactories.CreateWeatherForecast();
             wf.DisplayPropertyValues();
 
-            var serializeOptions = new JsonSerializerOptions();
-            serializeOptions.Converters.Add(new WeatherForecastRuntimeIgnoreConverter());
-            serializeOptions.WriteIndented = true;
+            var serializeOptions = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Converters =
+                {
+                    new WeatherForecastRuntimeIgnoreConverter()
+                }
+            };
             jsonString = JsonSerializer.Serialize(wf, serializeOptions);
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
             wf.Summary = "N/A";
             wf.DisplayPropertyValues();
-            serializeOptions = new JsonSerializerOptions();
-            serializeOptions.Converters.Add(new WeatherForecastRuntimeIgnoreConverter());
-            serializeOptions.WriteIndented = true;
             jsonString = JsonSerializer.Serialize(wf, serializeOptions);
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
-            var deserializeOptions = new JsonSerializerOptions();
-            deserializeOptions.Converters.Add(new WeatherForecastRuntimeIgnoreConverter());
+            var deserializeOptions = new JsonSerializerOptions
+            {
+                Converters =
+                {
+                    new WeatherForecastRuntimeIgnoreConverter()
+                }
+            };
             wf = JsonSerializer.Deserialize<WeatherForecast>(jsonString, deserializeOptions);
             wf.DisplayPropertyValues();
         }

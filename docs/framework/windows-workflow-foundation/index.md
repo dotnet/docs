@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 9a23ea6b-d600-483e-89cd-8889cfec5f66
 ---
 # Windows Workflow Foundation
+
 This section describes the programming model, samples, and tools of the Windows Workflow Foundation (WF).
 
 ## In This Section
+
  [Guide to the Windows Workflow Documentation](guide-to-the-documentation.md)
  A set of suggested topics to read, depending upon your familiarity (novice to well-acquainted), and requirements.
 

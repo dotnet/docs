@@ -1,7 +1,8 @@
 ---
 title: Behavior changes when comparing strings on .NET 5+
 description: Learn about string-comparison behavior changes in .NET 5 and later versions on Windows.
-ms.date: 11/04/2020
+ms.topic: conceptual
+ms.date: 12/07/2020
 ---
 # Behavior changes when comparing strings on .NET 5+
 
@@ -37,16 +38,29 @@ This section provides two options for dealing with unexpected behavior changes i
 
 ### Enable code analyzers
 
-[Code analyzers](../../fundamentals/code-analysis/overview.md) can detect possibly buggy call sites. To help guard against any surprising behaviors, we recommend installing [the __Microsoft.CodeAnalysis.FxCopAnalyzers__ NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) into your project. This package includes the code analysis rules [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md), which help flag code that might inadvertently be using a linguistic comparer when an ordinal comparer was likely intended.
+[Code analyzers](../../fundamentals/code-analysis/overview.md) can detect possibly buggy call sites. To help guard against any surprising behaviors, we recommend enabling .NET compiler platform (Roslyn) analyzers in your project. The analyzers help flag code that might inadvertently be using a linguistic comparer when an ordinal comparer was likely intended. The following rules should help flag these issues:
 
-For example:
+- [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md)
+- [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md)
+- [CA1310: Specify StringComparison for correctness](../../fundamentals/code-analysis/quality-rules/ca1310.md)
+
+These specific rules aren't enabled by default. To enable them and show any violations as build errors, set the following properties in your project file:
+
+```xml
+<PropertyGroup>
+  <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+  <WarningsAsErrors>$(WarningsAsErrors);CA1307;CA1309;CA1310</WarningsAsErrors>
+</PropertyGroup>
+```
+
+The following snippet shows examples of code that produces the relevant code analyzer warnings or errors.
 
 ```cs
 //
 // Potentially incorrect code - answer might vary based on locale.
 //
 string s = GetString();
-// Produces analyzer warning CA1307.
+// Produces analyzer warning CA1310 for string; CA1307 matches on char ','
 int idx = s.IndexOf(",");
 Console.WriteLine(idx);
 
@@ -83,17 +97,12 @@ List<string> list = GetListOfStrings();
 list.Sort(StringComparer.Ordinal);
 ```
 
-For more information about these code analyzer rules, including when it might be appropriate to suppress these rules in your own code base, see the following articles:
-
-* [CA1307: Specify StringComparison for clarity](../../fundamentals/code-analysis/quality-rules/ca1307.md)
-* [CA1309: Use ordinal StringComparison](../../fundamentals/code-analysis/quality-rules/ca1309.md)
-
 ### Revert back to NLS behaviors
 
 To revert .NET 5 applications back to older NLS behaviors when running on Windows, follow the steps in [.NET Globalization and ICU](../globalization-localization/globalization-icu.md). This application-wide compatibility switch must be set at the application level. Individual libraries cannot opt-in or opt-out of this behavior.
 
 > [!TIP]
-> We strongly recommend you enable the [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md) and [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md) code analysis rules to help improve code hygiene and discover any existing latent bugs. For more information, see [Enable code analyzers](#enable-code-analyzers).
+> We strongly recommend you enable the [CA1307](../../fundamentals/code-analysis/quality-rules/ca1307.md), [CA1309](../../fundamentals/code-analysis/quality-rules/ca1309.md), and [CA1310](../../fundamentals/code-analysis/quality-rules/ca1310.md) code analysis rules to help improve code hygiene and discover any existing latent bugs. For more information, see [Enable code analyzers](#enable-code-analyzers).
 
 ## Affected APIs
 
@@ -190,7 +199,7 @@ Consider again the string `"résumé"` and its four different representations. T
 
 A collation element corresponds loosely to what readers would think of as a single character or cluster of characters. It's conceptually similar to a [grapheme cluster](character-encoding-introduction.md#grapheme-clusters) but encompasses a somewhat larger umbrella.
 
-Under a linguistic comparer, exact matches aren't necessary. Collation elements are instead compared based on their semantic meaning. For example, a linguistic comparer tsreat the substrings `"\u00E9"` and `"e\u0301"` as equal since they both semantically mean "a lowercase e with an acute accent modifier." This allows the `IndexOf` method to match the substring `"e\u0301"` within a larger string that contains the semantically equivalent substring `"\u00E9"`, as shown in the following code sample.
+Under a linguistic comparer, exact matches aren't necessary. Collation elements are instead compared based on their semantic meaning. For example, a linguistic comparer treats the substrings `"\u00E9"` and `"e\u0301"` as equal since they both semantically mean "a lowercase e with an acute accent modifier." This allows the `IndexOf` method to match the substring `"e\u0301"` within a larger string that contains the semantically equivalent substring `"\u00E9"`, as shown in the following code sample.
 
 ```cs
 Console.WriteLine("r\u00E9sum\u00E9".IndexOf("e")); // prints '-1' (not found)

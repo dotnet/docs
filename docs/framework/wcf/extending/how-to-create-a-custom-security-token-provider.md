@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: db8cb478-aa43-478b-bf97-c6489ad7c7fd
 ---
 # How to: Create a Custom Security Token Provider
+
 This topic shows how to create new token types with a custom security token provider and how to integrate the provider with a custom security token manager.  
   
 > [!NOTE]
@@ -41,6 +42,7 @@ This topic shows how to create new token types with a custom security token prov
  [!code-vb[c_CustomTokenProvider#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenprovider/vb/source.vb#2)]  
   
 ## Example  
+
  The following shows a complete <xref:System.IdentityModel.Selectors.SecurityTokenProvider> implementation along with a corresponding <xref:System.IdentityModel.Selectors.SecurityTokenManager> implementation.  
   
  [!code-csharp[c_CustomTokenProvider#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenprovider/cs/source.cs#0)]

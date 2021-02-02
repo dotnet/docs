@@ -1,7 +1,7 @@
 ---
 title: Defining your multi-container application with docker-compose.yml
 description: How to specify  microservices composition for a multicontainer application with docker-compose.yml.
-ms.date: 01/30/2020
+ms.date: 01/13/2021
 ---
 
 # Defining your multi-container application with docker-compose.yml
@@ -12,7 +12,7 @@ For example, you can explicitly describe how you want to deploy your multi-conta
 
 Basically, you define each of the containers you want to deploy plus certain characteristics for each container deployment. Once you have a multi-container deployment description file, you can deploy the whole solution in a single action orchestrated by the [docker-compose up](https://docs.docker.com/compose/overview/) CLI command, or you can deploy it transparently from Visual Studio. Otherwise, you would need to use the Docker CLI to deploy container-by-container in multiple steps by using the `docker run` command from the command line. Therefore, each service defined in docker-compose.yml must specify exactly one image or build. Other keys are optional, and are analogous to their `docker run` command-line counterparts.
 
-The following YAML code is the definition of a possible global but single docker-compose.yml file for the eShopOnContainers sample. This is not the actual docker-compose file from eShopOnContainers. Instead, it is a simplified and consolidated version in a single file, which is not the best way to work with docker-compose files, as will be explained later.
+The following YAML code is the definition of a possible global but single docker-compose.yml file for the eShopOnContainers sample. This code is not the actual docker-compose file from eShopOnContainers. Instead, it is a simplified and consolidated version in a single file, which is not the best way to work with docker-compose files, as will be explained later.
 
 ```yml
 version: '3.4'
@@ -34,7 +34,7 @@ services:
   catalog-api:
     image: eshop/catalog-api
     environment:
-      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=your@password
+      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
     expose:
       - "80"
     ports:
@@ -48,7 +48,7 @@ services:
   ordering-api:
     image: eshop/ordering-api
     environment:
-      - ConnectionString=Server=sqldata;Database=Services.OrderingDb;User Id=sa;Password=your@password
+      - ConnectionString=Server=sqldata;Database=Services.OrderingDb;User Id=sa;Password=[PLACEHOLDER]
     ports:
       - "5102:80"
     #extra hosts can be used for standalone SQL Server or services at the dev PC
@@ -68,7 +68,7 @@ services:
 
   sqldata:
     environment:
-      - SA_PASSWORD=your@password
+      - SA_PASSWORD=[PLACEHOLDER]
       - ACCEPT_EULA=Y
     ports:
       - "5434:1433"
@@ -96,7 +96,7 @@ Focusing on a single container, the catalog-api container-microservice has a str
   catalog-api:
     image: eshop/catalog-api
     environment:
-      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=your@password
+      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
     expose:
       - "80"
     ports:
@@ -122,7 +122,7 @@ Because the connection string is defined by an environment variable, you could s
 
 - It forwards the exposed port 80 on the container to port 5101 on the Docker host machine (the Linux VM).
 
-- It links the web service to the **sqldata** service (the SQL Server instance for Linux database running in a container). When you specify this dependency, the catalog-api container will not start until the sqldata container has already started; this is important because catalog-api needs to have the SQL Server database up and running first. However, this kind of container dependency is not enough in many cases, because Docker checks only at the container level. Sometimes the service (in this case SQL Server) might still not be ready, so it is advisable to implement retry logic with exponential backoff in your client microservices. That way, if a dependency container is not ready for a short time, the application will still be resilient.
+- It links the web service to the **sqldata** service (the SQL Server instance for Linux database running in a container). When you specify this dependency, the catalog-api container will not start until the sqldata container has already started; this aspect is important because catalog-api needs to have the SQL Server database up and running first. However, this kind of container dependency is not enough in many cases, because Docker checks only at the container level. Sometimes the service (in this case SQL Server) might still not be ready, so it is advisable to implement retry logic with exponential backoff in your client microservices. That way, if a dependency container is not ready for a short time, the application will still be resilient.
 
 - It is configured to allow access to external servers: the extra\_hosts setting allows you to access external servers or machines outside of the Docker host (that is, outside the default Linux VM, which is a development Docker host), such as a local SQL Server instance on your development PC.
 
@@ -164,7 +164,7 @@ In any case, docker-compose is a convenient tool and metadata format for develop
 
 ### Using multiple docker-compose files to handle several environments
 
-When targeting different environments, you should use multiple compose files. This lets you create multiple configuration variants depending on the environment.
+When targeting different environments, you should use multiple compose files. This approach lets you create multiple configuration variants depending on the environment.
 
 #### Overriding the base docker-compose file
 
@@ -303,7 +303,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
-      - ConnectionString=${ESHOP_AZURE_CATALOG_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=Pass@word}
+      - ConnectionString=${ESHOP_AZURE_CATALOG_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=[PLACEHOLDER]}
       - PicBaseUrl=${ESHOP_AZURE_STORAGE_CATALOG_URL:-http://localhost:5202/api/v1/catalog/items/[0]/pic/}
       - EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
       - EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
@@ -322,7 +322,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://0.0.0.0:80
-      - ConnectionString=${ESHOP_AZURE_MARKETING_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.MarketingDb;User Id=sa;Password=Pass@word}
+      - ConnectionString=${ESHOP_AZURE_MARKETING_DB:-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.MarketingDb;User Id=sa;Password=[PLACEHOLDER]}
       - MongoConnectionString=${ESHOP_AZURE_COSMOSDB:-mongodb://nosqldata}
       - MongoDatabase=MarketingDb
       - EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
@@ -364,7 +364,7 @@ services:
       - "5100:80"
   sqldata:
     environment:
-      - SA_PASSWORD=Pass@word
+      - SA_PASSWORD=[PLACEHOLDER]
       - ACCEPT_EULA=Y
     ports:
       - "5433:1433"
@@ -429,10 +429,10 @@ The values set in the run-time environment always override the values defined in
 
 ### Building optimized ASP.NET Core Docker images
 
-If you are exploring Docker and .NET Core on sources on the Internet, you will find Dockerfiles that demonstrate the simplicity of building a Docker image by copying your source into a container. These examples suggest that by using a simple configuration, you can have a Docker image with the environment packaged with your application. The following example shows a simple Dockerfile in this vein.
+If you are exploring Docker and .NET on sources on the Internet, you will find Dockerfiles that demonstrate the simplicity of building a Docker image by copying your source into a container. These examples suggest that by using a simple configuration, you can have a Docker image with the environment packaged with your application. The following example shows a simple Dockerfile in this vein.
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:3.1
+FROM mcr.microsoft.com/dotnet/sdk:5.0
 WORKDIR /app
 ENV ASPNETCORE_URLS http://+:80
 EXPOSE 80
@@ -443,9 +443,9 @@ ENTRYPOINT ["dotnet", "run"]
 
 A Dockerfile like this will work. However, you can substantially optimize your images, especially your production images.
 
-In the container and microservices model, you are constantly starting containers. The typical way of using containers does not restart a sleeping container, because the container is disposable. Orchestrators (like Kubernetes and Azure Service Fabric) simply create new instances of images. What this means is that you would need to optimize by precompiling the application when it is built so the instantiation process will be faster. When the container is started, it should be ready to run. Don't restore and compile at run time using the `dotnet restore` and `dotnet build` CLI commands as you may see in blog posts about .NET Core and Docker.
+In the container and microservices model, you are constantly starting containers. The typical way of using containers does not restart a sleeping container, because the container is disposable. Orchestrators (like Kubernetes and Azure Service Fabric) create new instances of images. What this means is that you would need to optimize by precompiling the application when it is built so the instantiation process will be faster. When the container is started, it should be ready to run. Don't restore and compile at run time using the `dotnet restore` and `dotnet build` CLI commands as you may see in blog posts about .NET and Docker.
 
-The .NET team has been doing important work to make .NET Core and ASP.NET Core a container-optimized framework. Not only is .NET Core a lightweight framework with a small memory footprint; the team has focused on optimized Docker images for three main scenarios and published them in the Docker Hub registry at *dotnet/core*, beginning with version 2.1:
+The .NET team has been doing important work to make .NET and ASP.NET Core a container-optimized framework. Not only is .NET a lightweight framework with a small memory footprint; the team has focused on optimized Docker images for three main scenarios and published them in the Docker Hub registry at *dotnet/*, beginning with version 2.1:
 
 1. **Development**: The priority is the ability to quickly iterate and debug changes, and where size is secondary.
 
@@ -453,7 +453,7 @@ The .NET team has been doing important work to make .NET Core and ASP.NET Core a
 
 3. **Production**: The focus is fast deploying and starting of containers, so these images are limited to the binaries and content needed to run the application.
 
-The .NET team provides four basic variants in [dotnet/core](https://hub.docker.com/_/microsoft-dotnet/) (at Docker Hub):
+The .NET team provides four basic variants in [dotnet/](https://hub.docker.com/_/microsoft-dotnet/) (at Docker Hub):
 
 1. **sdk**: for development and build scenarios
 1. **aspnet**: for ASP.NET production scenarios
@@ -464,10 +464,10 @@ For faster startup, runtime images also automatically set aspnetcore\_urls to po
 
 #### Additional resources
 
-- **Building Optimized Docker Images with ASP.NET Core**  
+- **Building Optimized Docker Images with ASP.NET Core**
   <https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core>
 
-- **Building Docker Images for .NET Core Applications**  
+- **Building Docker Images for .NET Applications**
   [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 > [!div class="step-by-step"]

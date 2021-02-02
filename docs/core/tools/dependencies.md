@@ -1,11 +1,11 @@
 ---
-title: Manage dependencies in .NET Core
-description: Explains how to manage project dependencies for a .NET Core application.
+title: Manage dependencies in .NET
+description: Explains how to manage project dependencies for a .NET application.
 no-loc: [dotnet add package, dotnet remove package, dotnet list package]
 ms.topic: how-to
-ms.date: 02/25/2020
+ms.date: 01/28/2021
 ---
-# Manage dependencies in .NET Core applications
+# Manage dependencies in .NET applications
 
 This article explains how to add and remove dependencies by editing the project file or by using the CLI.
 
@@ -28,7 +28,7 @@ Use conditions to add a dependency that's available only in a specific target, a
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
 ```
 
-The dependency in the preceding example will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that's being set in the project. For most common .NET Core applications, you don't need to do this.
+The dependency in the preceding example will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that's being set in the project. For most common .NET applications, you don't need to do this.
 
 ## Add a dependency by editing the project file
 

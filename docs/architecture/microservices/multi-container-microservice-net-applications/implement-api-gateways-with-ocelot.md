@@ -34,7 +34,7 @@ For instance, fine granularity in the API Gateway tier can be especially useful 
 
 We delve into more details in the previous section [Creating composite UI based on microservices](../architect-microservice-container-applications/microservice-based-composite-ui-shape-layout.md).
 
-As key takeaway, for many medium- and large-size applications, using a custom-built API Gateway product is usually a good approach, but not as a single monolithic aggregator or unique central custom API Gateway unless that API Gateway allows multiple independent configuration areas for the several development teams creating autonomous microservices.
+As a key takeaway, for many medium- and large-size applications, using a custom-built API Gateway product is usually a good approach, but not as a single monolithic aggregator or unique central custom API Gateway unless that API Gateway allows multiple independent configuration areas for the several development teams creating autonomous microservices.
 
 ### Sample microservices/containers to reroute through the API Gateways
 
@@ -92,7 +92,7 @@ The port 80 shown in the code is internal within the Docker host, so it can't be
 
 Client apps can access only the external ports (if any) published when deploying with `docker-compose`.
 
-Those external ports shouldn't be published when deploying to a production environment. This is precisely why you want to use the API Gateway, to avoid the direct communication between the client apps and the microservices.
+Those external ports shouldn't be published when deploying to a production environment. For this specific reason, why you want to use the API Gateway, to avoid the direct communication between the client apps and the microservices.
 
 However, when developing, you want to access the microservice/container directly and run it through Swagger. That's why in eShopOnContainers, the external ports are still specified even when they won't be used by the API Gateway or the client apps.
 
@@ -150,7 +150,7 @@ In eShopOnContainers, its API Gateway implementation is a simple ASP.NET Core We
 
 **Figure 6-32**. The OcelotApiGw base project in eShopOnContainers
 
-This ASP.NET Core WebHost project is basically built with two simple files:  `Program.cs` and `Startup.cs`.
+This ASP.NET Core WebHost project is built with two simple files:  `Program.cs` and `Startup.cs`.
 
 The Program.cs just needs to create and configure the typical ASP.NET Core BuildWebHost.
 
@@ -262,7 +262,7 @@ The port is the internal port used by the service. When using containers, the po
 
 The `Host` is a service name that depends on the service name resolution you are using. When using docker-compose, the services names are provided by the Docker Host, which is using the service names provided in the docker-compose files. If using an orchestrator like Kubernetes or Service Fabric, that name should be resolved by the DNS or name resolution provided by each orchestrator.
 
-DownstreamHostAndPorts is an array that contains the host and port of any downstream services that you wish to forward requests to. Usually this will just contain one entry but sometimes you might want to load balance requests to your downstream services and Ocelot lets you add more than one entry and then select a load balancer. But if using Azure and any orchestrator it is probably a better idea to load balance with the cloud and orchestrator infrastructure.
+DownstreamHostAndPorts is an array that contains the host and port of any downstream services that you wish to forward requests to. Usually this configuration will just contain one entry but sometimes you might want to load balance requests to your downstream services and Ocelot lets you add more than one entry and then select a load balancer. But if using Azure and any orchestrator it is probably a better idea to load balance with the cloud and orchestrator infrastructure.
 
 The UpstreamPathTemplate is the URL that Ocelot will use to identify which DownstreamPathTemplate to use for a given request from the client. Finally, the UpstreamHttpMethod is used so Ocelot can distinguish between different requests (GET, POST, PUT) to the same URL.
 
@@ -388,7 +388,7 @@ Zooming in further, on the "Shopping" business area in the following image, you 
 
 **Figure 6-38**. Zoom in vision of the Aggregator services
 
-You can notice how when the diagram shows the possible requests coming from the API Gateways it can get complex. Although you can see how the arrows in blue would be simplified, from a client apps perspective, when using the aggregator pattern by reducing chattiness and latency in the communication, ultimately significantly improving the user experience for the remote apps (mobile and SPA apps), especially.
+You can notice how when the diagram shows the possible requests coming from the API Gateways it can get complex. On the other hand, when you use the aggregator pattern, you can see how the arrows in blue would simplify the communication from a client app perspective. This pattern not only helps to reduce the chattiness and latency in the communication, it also improves the user experience significantly for the remote apps (mobile and SPA apps).
 
 In the case of the "Marketing" business area and microservices, it is a simple use case so there was no need to use aggregators, but it could also be possible, if needed.
 
@@ -522,7 +522,7 @@ In Kubernetes, if you don't use any ingress approach, then your services and pod
 
 But if you use an ingress approach, you'll have a middle tier between the Internet and your services (including your API Gateways), acting as a reverse proxy.
 
-As a definition, an Ingress is a collection of rules that allow inbound connections to reach the cluster services. An ingress is usually configured to provide services externally reachable URLs, load balance traffic, SSL termination and more. Users request ingress by POSTing the Ingress resource to the API server.
+As a definition, an Ingress is a collection of rules that allow inbound connections to reach the cluster services. An ingress is configured to provide services externally reachable URLs, load balance traffic, SSL termination and more. Users request ingress by POSTing the Ingress resource to the API server.
 
 In eShopOnContainers, when developing locally and using just your development machine as the Docker host, you are not using any ingress but only the multiple API Gateways.
 
@@ -538,7 +538,7 @@ Having an ingress Nginx tier in Kubernetes in front of the web applications plus
 
 **Figure 6-41**. The ingress tier in eShopOnContainers when deployed into Kubernetes
 
-A Kubernetes Ingress acts as a reverse proxy for all traffic to the app, including the web applications, that are usually out of the Api gateway scope. When you deploy eShopOnContainers into Kubernetes, it exposes just a few services or endpoints via _ingress_, basically the following list of postfixes on the URLs:
+A Kubernetes Ingress acts as a reverse proxy for all traffic to the app, including the web applications, that are out of the Api gateway scope. When you deploy eShopOnContainers into Kubernetes, it exposes just a few services or endpoints via _ingress_, basically the following list of postfixes on the URLs:
 
 - `/` for the client SPA web application
 - `/webmvc` for the client MVC web application

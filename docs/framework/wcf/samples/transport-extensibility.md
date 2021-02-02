@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 3c9108be-f60f-4035-9f57-1da58c325420
 ---
 # Transport Extensibility
+
 This section contains samples that demonstrate custom transports in Windows Communication Foundation (WCF).  
   
 ## In This Section  
+
  [UDP Activation](udp-activation.md)  
  Demonstrates how to extend the [Transport: UDP](transport-udp.md) sample to support process activation using the Windows Process Activation Service (WAS).  
   

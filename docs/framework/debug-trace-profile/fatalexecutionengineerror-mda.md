@@ -15,15 +15,19 @@ helpviewer_keywords:
 ms.assetid: 8b559e44-2393-4e4e-8160-7558d37a4a89
 ---
 # fatalExecutionEngineError MDA
+
 The `fatalExecutionEngineError` managed debugging assistant (MDA) is activated when a fatal error in the common language runtime (CLR) has been detected. The process will be terminated.  
   
 ## Symptoms  
+
  Unexpected process termination. Other symptoms cannot be determined because a CLR failure can occur for a variety of reasons.  
   
 ## Cause  
+
  The CLR has been fatally corrupted. This is most often caused by data corruption, which can be caused by a number of problems, such as calls to malformed platform invoke functions and passing invalid data to the CLR.  
   
 ## Resolution  
+
  Enabling additional MDAs might help identify the problem. The following MDAs can be particularly helpful in diagnosing the issue:  
   
 - [invalidOverlappedToPinvoke](invalidoverlappedtopinvoke-mda.md)  
@@ -51,9 +55,11 @@ The `fatalExecutionEngineError` managed debugging assistant (MDA) is activated w
 - [invalidGCHandleCookie](invalidgchandlecookie-mda.md)  
   
 ## Effect on the Runtime  
+
  This MDA has no effect on the runtime's behavior.  
   
 ## Output  
+
  The address of the CLR function that caused the fatal error, the ID of the thread where the error occurred, and the error code.  
   
 ## Configuration  

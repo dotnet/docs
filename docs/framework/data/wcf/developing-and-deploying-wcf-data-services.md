@@ -10,6 +10,8 @@ ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
 ---
 # Develop and Deploy WCF Data Services
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 This article provides information about developing and deploying WCF Data Services. For more basic information about WCF Data Services, see [Getting Started](getting-started-with-wcf-data-services.md) and [Overview](wcf-data-services-overview.md).
 
 ## Develop WCF Data Services

@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "C# language, constants"
   - "constants [C#]"
 ms.topic: how-to
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ms.assetid: 43f511be-346c-4b8a-995e-aded94542ece
 ---
 # How to define constants in C\#
@@ -22,7 +22,7 @@ Constants are fields whose values are set at compile time and can never be chang
   
 ## Example  
 
- [!code-csharp[csProgGuideObjects#89](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#89)]  
+ [!code-csharp[constants](snippets/how-to-define-constants/Program.cs)]  
   
  The use of the class name qualifier helps ensure that you and others who use the constant understand that it is constant and cannot be modified.  
   

@@ -29,6 +29,9 @@ There are two ways to download and install `dotnet-counters`:
   | macOS   | [x64](https://aka.ms/dotnet-counters/osx-x64) |
   | Linux   | [x64](https://aka.ms/dotnet-counters/linux-x64) \| [arm](https://aka.ms/dotnet-counters/linux-arm) \| [arm64](https://aka.ms/dotnet-counters/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-counters/linux-musl-x64) \| [musl-arm64](https://aka.ms/dotnet-counters/linux-musl-arm64) |
 
+> [!NOTE]
+> To use `dotnet-counters` on an x86 app, you need a corresponding x86 version of the tool.
+
 ## Synopsis
 
 ```console
@@ -65,7 +68,7 @@ Periodically collect selected counter values and export them into a specified fi
 ### Synopsis
 
 ```console
-dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
+dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
 ```
 
 ### Options
@@ -77,6 +80,10 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 - **`-n|--name <name>`**
 
   The name of the process to be collect counter data from.
+
+- **`--diagnostic-port`**
+
+  The name of the diagnostic port to create. See [using diagnostic port](#using-diagnostic-port) for how to use this option to start monitoring counters from app startup.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -100,6 +107,15 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 
   > [!NOTE]
   > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
+  > [!NOTE]
+  > Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
+
+> [!NOTE]
+> On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
+
+> [!NOTE]
+> To collect metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
 
 ### Examples
 
@@ -140,9 +156,9 @@ System.Runtime
     cpu-usage                                    Amount of time the process has utilized the CPU (ms)
     working-set                                  Amount of working set used by the process (MB)
     gc-heap-size                                 Total heap size reported by the GC (MB)
-    gen-0-gc-count                               Number of Gen 0 GCs / min
-    gen-1-gc-count                               Number of Gen 1 GCs / min
-    gen-2-gc-count                               Number of Gen 2 GCs / min
+    gen-0-gc-count                               Number of Gen 0 GCs per interval
+    gen-1-gc-count                               Number of Gen 1 GCs per interval
+    gen-2-gc-count                               Number of Gen 2 GCs per interval
     time-in-gc                                   % time in GC since the last GC
     gen-0-size                                   Gen 0 Heap Size
     gen-1-size                                   Gen 1 Heap Size
@@ -150,7 +166,7 @@ System.Runtime
     loh-size                                     LOH Heap Size
     alloc-rate                                   Allocation Rate
     assembly-count                               Number of Assemblies Loaded
-    exception-count                              Number of Exceptions / sec
+    exception-count                              Number of Exceptions per interval
     threadpool-thread-count                      Number of ThreadPool Threads
     monitor-lock-contention-count                Monitor Lock Contention Count
     threadpool-queue-length                      ThreadPool Work Items Queue Length
@@ -174,7 +190,7 @@ Displays periodically refreshing values of selected counters.
 ### Synopsis
 
 ```console
-dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-interval] [--counters] [-- <command>]
+dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters] [-- <command>]
 ```
 
 ### Options
@@ -186,6 +202,10 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 - **`-n|--name <name>`**
 
   The name of the process to be monitored.
+
+- **`--diagnostic-port`**
+
+  The name of the diagnostic port to create. See [using diagnostic port](#using-diagnostic-port) for how to use this option to start monitoring counters from app startup.
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -201,6 +221,15 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
 
   > [!NOTE]
   > Using this option monitors the first .NET 5.0 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+
+  > [!NOTE]
+  > Launching a .NET executable via dotnet-counters will make its input/output to be redirected and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
+
+> [!NOTE]
+> On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable.
+
+> [!NOTE]
+> To monitor metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root.
 
 ### Examples
 
@@ -259,6 +288,96 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--refresh-int
       request                                      100
   ```
 
+- View all well-known counters that are available in `dotnet-counters`:
+
+  ```console
+  > dotnet-counters list
+
+  Showing well-known counters for .NET (Core) version 3.1 only. Specific processes may support additional counters.
+  System.Runtime
+      cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
+      working-set                        Amount of working set used by the process (MB)
+      gc-heap-size                       Total heap size reported by the GC (MB)
+      gen-0-gc-count                     Number of Gen 0 GCs between update intervals
+      gen-1-gc-count                     Number of Gen 1 GCs between update intervals
+      gen-2-gc-count                     Number of Gen 2 GCs between update intervals
+      time-in-gc                         % time in GC since the last GC
+      gen-0-size                         Gen 0 Heap Size
+      gen-1-size                         Gen 1 Heap Size
+      gen-2-size                         Gen 2 Heap Size
+      loh-size                           LOH Size
+      alloc-rate                         Number of bytes allocated in the managed heap between update intervals
+      assembly-count                     Number of Assemblies Loaded
+      exception-count                    Number of Exceptions / sec
+      threadpool-thread-count            Number of ThreadPool Threads
+      monitor-lock-contention-count      Number of times there were contention when trying to take the monitor lock between update intervals
+      threadpool-queue-length            ThreadPool Work Items Queue Length
+      threadpool-completed-items-count   ThreadPool Completed Work Items Count
+      active-timer-count                 Number of timers that are currently active
+
+  Microsoft.AspNetCore.Hosting
+      requests-per-second                Number of requests between update intervals
+      total-requests                     Total number of requests
+      current-requests                   Current number of requests
+      failed-requests                    Failed number of requests
+  ```
+
+- View all well-known counters that are available in `dotnet-counters` for .NET 5 apps:
+
+  ```console
+  > dotnet-counters list --runtime-version 5.0
+
+  Showing well-known counters for .NET (Core) version 5.0 only. Specific processes may support additional counters.
+  System.Runtime
+      cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
+      working-set                        Amount of working set used by the process (MB)
+      gc-heap-size                       Total heap size reported by the GC (MB)
+      gen-0-gc-count                     Number of Gen 0 GCs between update intervals
+      gen-1-gc-count                     Number of Gen 1 GCs between update intervals
+      gen-2-gc-count                     Number of Gen 2 GCs between update intervals
+      time-in-gc                         % time in GC since the last GC
+      gen-0-size                         Gen 0 Heap Size
+      gen-1-size                         Gen 1 Heap Size
+      gen-2-size                         Gen 2 Heap Size
+      loh-size                           LOH Size
+      poh-size                           POH (Pinned Object Heap) Size
+      alloc-rate                         Number of bytes allocated in the managed heap between update intervals
+      gc-fragmentation                   GC Heap Fragmentation
+      assembly-count                     Number of Assemblies Loaded
+      exception-count                    Number of Exceptions / sec
+      threadpool-thread-count            Number of ThreadPool Threads
+      monitor-lock-contention-count      Number of times there were contention when trying to take the monitor lock between update intervals
+      threadpool-queue-length            ThreadPool Work Items Queue Length
+      threadpool-completed-items-count   ThreadPool Completed Work Items Count
+      active-timer-count                 Number of timers that are currently active
+      il-bytes-jitted                    Total IL bytes jitted
+      methods-jitted-count               Number of methods jitted
+
+  Microsoft.AspNetCore.Hosting
+      requests-per-second   Number of requests between update intervals
+      total-requests        Total number of requests
+      current-requests      Current number of requests
+      failed-requests       Failed number of requests
+
+  Microsoft-AspNetCore-Server-Kestrel
+      connections-per-second      Number of connections between update intervals
+      total-connections           Total Connections
+      tls-handshakes-per-second   Number of TLS Handshakes made between update intervals
+      total-tls-handshakes        Total number of TLS handshakes made
+      current-tls-handshakes      Number of currently active TLS handshakes
+      failed-tls-handshakes       Total number of failed TLS handshakes
+      current-connections         Number of current connections
+      connection-queue-length     Length of Kestrel Connection Queue
+      request-queue-length        Length total HTTP request queue
+
+  System.Net.Http
+      requests-started        Total Requests Started
+      requests-started-rate   Number of Requests Started between update intervals
+      requests-aborted        Total Requests Aborted
+      requests-aborted-rate   Number of Requests Aborted between update intervals
+      current-requests        Current Requests
+  ```
+
 - Launch `my-aspnet-server.exe` and monitor the # of assemblies loaded from its startup (.NET 5.0 or later only):
 
   > [!IMPORTANT]
@@ -307,6 +426,48 @@ dotnet-counters ps [-h|--help]
 ```console
 > dotnet-counters ps
   
-  15683 WebApi     /home/suwhang/repos/WebApi/WebApi
+  15683 WebApi     /home/user/repos/WebApi/WebApi
   16324 dotnet     /usr/local/share/dotnet/dotnet
 ```
+
+## Using diagnostic port
+
+  > [!IMPORTANT]
+  > This works for apps running .NET 5.0 or later only.
+
+Diagnostic port is a new runtime feature that was added in .NET 5 that allows you to start monitoring or collecting counters from app startup. To do this using `dotnet-counters`, you can either use `dotnet-counters <collect|monitor> -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
+
+Using `dotnet-counters <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly monitor it from its startup.
+
+However, when you want to gain a finer control over the lifetime of the app being monitored (for example, monitor the app for the first 10 minutes only and continue executing) or if you need to interact with the app using the CLI, using `--diagnostic-port` option allows you to control both the target app being monitored and `dotnet-counters`.
+
+1. The command below makes dotnet-counters create a diagnostics socket named `myport.sock` and wait for a connection.
+
+    > ```dotnet-cli
+    > dotnet-counters collect --diagnostic-port myport.sock
+    > ```
+
+    Output:
+
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=/home/user/myport.sock
+    > ```
+
+2. In a separate console, launch the target application with the environment variable `DOTNET_DiagnosticPorts` set to the value in the `dotnet-counters` output.
+
+    > ```bash
+    > export DOTNET_DiagnosticPorts=/home/user/myport.sock
+    > ./my-dotnet-app arg1 arg2
+    > ```
+
+    This should then enable `dotnet-counters` to start collecting counters on `my-dotnet-app`:
+
+    > ```bash
+    > Waiting for connection on myport.sock
+    > Start an application with the following environment variable: DOTNET_DiagnosticPorts=myport.sock
+    > Starting a counter session. Press Q to quit.
+    > ```
+
+    > [!IMPORTANT]
+    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at runtime. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.

@@ -1,19 +1,19 @@
 ---
-title: .NET Core distribution packaging
-description: Learn how to package, name, and version .NET Core for distribution.
+title: .NET distribution packaging
+description: Learn how to package, name, and version .NET for distribution.
 author: tmds
 ms.date: 10/09/2019
 ---
-# .NET Core distribution packaging
+# .NET distribution packaging
 
-As .NET Core becomes available on more and more platforms, it's useful to learn how to package, name, and version it. This way, package maintainers can help ensure a consistent experience no matter where users choose to run .NET. This article is useful for users that are:
+As .NET 5 (and .NET Core) and later versions become available on more and more platforms, it's useful to learn how to package, name, and version apps and libraries that use it. This way, package maintainers can help ensure a consistent experience no matter where users choose to run .NET. This article is useful for users that are:
 
-- Attempting to build .NET Core from source.
-- Wanting to make changes to the .NET Core CLI that could impact the resulting layout or packages produced.
+- Attempting to build .NET from source.
+- Wanting to make changes to the .NET CLI that could impact the resulting layout or packages produced.
 
 ## Disk layout
 
-When installed, .NET Core consists of several components that are laid out as follows in the filesystem:
+When installed, .NET consists of several components that are laid out as follows in the file system:
 
 ```
 {dotnet_root}                                     (*)
@@ -61,27 +61,27 @@ When installed, .NET Core consists of several components that are laid out as fo
 
 While there's a single host, most of the other components are in versioned directories (2,3,5,6). This means multiple versions can be present on the system since they're installed side by side.
 
-- (2) **host/fxr/\<fxr version>** contains the framework resolution logic used by the host. The host uses the latest hostfxr that is installed. The hostfxr is responsible for selecting the appropriate runtime when executing a .NET Core application. For example, an application built for .NET Core 2.0.0 uses the 2.0.5 runtime when it's available. Similarly, hostfxr selects the appropriate SDK during development.
+- (2) **host/fxr/\<fxr version>** contains the framework resolution logic used by the host. The host uses the latest hostfxr that is installed. The hostfxr is responsible for selecting the appropriate runtime when executing a .NET application. For example, an application built for .NET Core 2.0.0 uses the 2.0.5 runtime when it's available. Similarly, hostfxr selects the appropriate SDK during development.
 
-- (3) **sdk/\<sdk version>** The SDK (also known as "the tooling") is a set of managed tools that are used to write and build .NET Core libraries and applications. The SDK includes the .NET Core CLI, the managed languages compilers, MSBuild, and associated build tasks and targets, NuGet, new project templates, and so on.
+- (3) **sdk/\<sdk version>** The SDK (also known as "the tooling") is a set of managed tools that are used to write and build .NET libraries and applications. The SDK includes the .NET CLI, the managed languages compilers, MSBuild, and associated build tasks and targets, NuGet, new project templates, and so on.
 
 - (4) **sdk/NuGetFallbackFolder** contains a cache of NuGet packages used by an SDK during the restore operation, such as when running `dotnet restore` or `dotnet build`. This folder is only used prior to .NET Core 3.0. It can't be built from source, because it contains prebuilt binary assets from `nuget.org`.
 
 The **shared** folder contains frameworks. A shared framework provides a set of libraries at a central location so they can be used by different applications.
 
-- (5) **shared/Microsoft.NETCore.App/\<runtime version>** This framework contains the .NET Core runtime and supporting managed libraries.
+- (5) **shared/Microsoft.NETCore.App/\<runtime version>** This framework contains the .NET runtime and supporting managed libraries.
 
-- (6) **shared/Microsoft.AspNetCore.{App,All}/\<aspnetcore version>** contains the ASP.NET Core libraries. The libraries under `Microsoft.AspNetCore.App` are developed and supported as part of the .NET Core project. The libraries under `Microsoft.AspNetCore.All` are a superset that also contains third-party libraries.
+- (6) **shared/Microsoft.AspNetCore.{App,All}/\<aspnetcore version>** contains the ASP.NET Core libraries. The libraries under `Microsoft.AspNetCore.App` are developed and supported as part of the .NET project. The libraries under `Microsoft.AspNetCore.All` are a superset that also contains third-party libraries.
 
 - (7) **shared/Microsoft.Desktop.App/\<desktop app version>** contains the Windows desktop libraries. This isn't included on non-Windows platforms.
 
-- (8) **LICENSE.txt,ThirdPartyNotices.txt** are the .NET Core license and licenses of third-party libraries used in .NET Core, respectively.
+- (8) **LICENSE.txt,ThirdPartyNotices.txt** are the .NET license and licenses of third-party libraries used in .NET, respectively.
 
 - (9,10) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). These files are installed at well-known locations for system integration.
 
-- (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of an `x.y` version of .NET Core and ASP.NET Core respectively. These packs are used when compiling for those target versions.
+- (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of an `x.y` version of .NET and ASP.NET Core respectively. These packs are used when compiling for those target versions.
 
-- (13) **Microsoft.NETCore.App.Host.\<rid>** contains a native binary for platform `rid`. This binary is a template when compiling a .NET Core application into a native binary for that platform.
+- (13) **Microsoft.NETCore.App.Host.\<rid>** contains a native binary for platform `rid`. This binary is a template when compiling a .NET application into a native binary for that platform.
 
 - (14) **Microsoft.WindowsDesktop.App.Ref** describes the API of `x.y` version of Windows Desktop applications. These files are used when compiling for that target. This isn't provided on non-Windows platforms.
 
@@ -95,9 +95,9 @@ The folders marked with `(*)` are used by multiple packages. Some package format
 
 ## Recommended packages
 
-.NET Core versioning is based on the runtime component `[major].[minor]` version numbers.
+.NET versioning is based on the runtime component `[major].[minor]` version numbers.
 The SDK version uses the same `[major].[minor]` and has an independent `[patch]` that combines feature and patch semantics for the SDK.
-For example: SDK version 2.2.302 is the second patch release of the third feature release of the SDK that supports the 2.2 runtime. For more information about how versioning works, see [.NET Core versioning overview](./versions/index.md).
+For example: SDK version 2.2.302 is the second patch release of the third feature release of the SDK that supports the 2.2 runtime. For more information about how versioning works, see [.NET versioning overview](./versions/index.md).
 
 Some of the packages include part of the version number in their name. This allows you to install a specific version.
 The rest of the version isn't included in the version name. This allows the OS package manager to update the packages (for example, automatically installing security fixes). Supported package managers are Linux specific.
@@ -160,7 +160,7 @@ The following lists the recommended packages:
 
 The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro-specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 
-When package content is under a versioned folder, the package name `[major].[minor]` match the versioned folder name. For all packages, except the `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, this also matches with the .NET Core version.
+When package content is under a versioned folder, the package name `[major].[minor]` match the versioned folder name. For all packages, except the `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, this also matches with the .NET version.
 
 Dependencies between packages should use an _equal or greater than_ version requirement. For example, `dotnet-sdk-2.2:2.2.401` requires `aspnetcore-runtime-2.2 >= 2.2.6`. This makes it possible for the user to upgrade their installation via a root package (for example, `dnf update dotnet-sdk-2.2`).
 
@@ -174,4 +174,4 @@ Multiple `dotnet-sdk` packages may provide the same files for the `NuGetFallback
 
 ## Building packages
 
-The [dotnet/source-build](https://github.com/dotnet/source-build) repository provides instructions on how to build a source tarball of the .NET Core SDK and all its components. The output of the source-build repository matches the layout described in the first section of this article.
+The [dotnet/source-build](https://github.com/dotnet/source-build) repository provides instructions on how to build a source tarball of the .NET SDK and all its components. The output of the source-build repository matches the layout described in the first section of this article.

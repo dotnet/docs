@@ -12,6 +12,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
 - Non-reflection-based serializers found in the .NET Framework class library. These may require modifications to your runtime directives file, and are discussed in the [Microsoft serializers](#Microsoft) section.  
   
 <a name="ThirdParty"></a>
+
 ## Third-party serializers
 
  Third-part serializers, including Newtonsoft.JSON, typically are reflection-based. Given a binary large object (BLOB) of serialized data, the fields in the data are assigned to a concrete type by looking up the fields of the target type by name. At a minimum, using these libraries causes [MissingMetadataException](missingmetadataexception-class-net-native.md) exceptions for each <xref:System.Type> object that you try to serialize or deserialize in a `List<Type>` collection.  
@@ -25,6 +26,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
  For information about the syntax used in the example, see [\<Namespace> Element](namespace-element-net-native.md).  
   
 <a name="Microsoft"></a>
+
 ## Microsoft serializers
 
  Although the <xref:System.Runtime.Serialization.DataContractSerializer>, <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>, and <xref:System.Xml.Serialization.XmlSerializer> classes do not rely on reflection, they do require code to be generated based on the object to be serialized or deserialized. The overloaded constructors for each serializer include a <xref:System.Type> parameter that specifies the type to be serialized or deserialized. How you specify that type in your code defines the action you must take, as discussed in the next two sections.  

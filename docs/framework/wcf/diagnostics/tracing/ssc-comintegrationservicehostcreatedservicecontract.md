@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 5b670c80-a119-4114-8b1d-2b2034e5cb19
 ---
 # System.ServiceModel.ComIntegration.ComIntegrationServiceHostCreatedServiceContract
+
 System.ServiceModel.ComIntegration.ComIntegrationServiceHostCreatedServiceContract  
   
 ## Description  
+
  ComPlus: Created service contract.  
   
 ## See also

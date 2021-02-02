@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 09/30/2020
+ms.date: 01/21/2021
 ---
 
 # Options pattern in .NET
@@ -17,25 +17,28 @@ Options also provide a mechanism to validate configuration data. For more inform
 
 ## Bind hierarchical configuration
 
-The preferred way to read related configuration values is using the options pattern. For example, to read the following configuration values:
+The preferred way to read related configuration values is using the options pattern. The options pattern is possible through the <xref:Microsoft.Extensions.Options.IOptions%601> interface, where the generic type parameter `TOptions` is constrained to `class`. The `IOptions<TOptions>` can later be provided through dependency injection. For more information, see [Dependency injection in .NET](dependency-injection.md).
+
+For example, to read the following configuration values:
 
 :::code language="json" source="snippets/configuration/console-json/appsettings.json" range="3-6":::
 
 Create the following `TransientFaultHandlingOptions` class:
 
-:::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs" range="5-6":::
+:::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs" range="5-9":::
 
-An options class:
+<span id="options-class"></span>
+When using the options pattern, an options class:
 
-* Must be non-abstract with a public parameterless constructor
-* Contain public read-write properties to bind (fields are ***not*** bound)
+- Must be non-abstract with a public parameterless constructor
+- Contain public read-write properties to bind (fields are ***not*** bound)
 
 The following code:
 
 * Calls [ConfigurationBinder.Bind](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A) to bind the `TransientFaultHandlingOptions` class to the `"TransientFaultHandlingOptions"` section.
 * Displays the configuration data.
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="25-32":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="31-38":::
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 
@@ -46,13 +49,16 @@ IConfigurationRoot configurationRoot = configuration.Build();
 
 var options =
     configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
-        .Get<TransientFaultHandlingOptions>();
+                     .Get<TransientFaultHandlingOptions>();
 
 Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
 Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
 ```
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
+
+> [!IMPORTANT]
+> The <xref:Microsoft.Extensions.Configuration.ConfigurationBinder> class exposes several APIs, such as `.Bind(object instance)` and `.Get<T>()` that are ***not*** constrained to `class`. When using any of the [Options interfaces](#options-interfaces), you must adhere to aforementioned [options class constraints](#options-class).
 
 An alternative approach when using the options pattern is to bind the `"TransientFaultHandlingOptions"` section and add it to the [dependency injection service container](dependency-injection.md). In the following code, `TransientFaultHandlingOptions` is added to the service container with <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> and bound to configuration:
 
@@ -102,7 +108,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 
 ## Use IOptionsSnapshot to read updated data
 
-when you use <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>, options are computed once per request when accessed and are cached for the lifetime of the request. Changes to the configuration are read after the app starts when using configuration providers that support reading updated configuration values.
+When you use <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>, options are computed once per request when accessed and are cached for the lifetime of the request. Changes to the configuration are read after the app starts when using configuration providers that support reading updated configuration values.
 
 The difference between `IOptionsMonitor` and `IOptionsSnapshot` is that:
 
@@ -338,3 +344,4 @@ services.PostConfigureAll<CustomOptions>(customOptions =>
 ## See also
 
 - [Configuration in .NET](configuration.md)
+- [Options pattern guidance for .NET library authors](options-library-authors.md)

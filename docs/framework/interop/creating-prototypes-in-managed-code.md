@@ -21,6 +21,7 @@ ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
 ---
 
 # Creating Prototypes in Managed Code
+
 This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
   
  Before you can access an unmanaged DLL function from managed code, you need to know the name of the function and the name of the DLL that exports it. With this information, you can begin to write the managed definition for an unmanaged function that is implemented in a DLL. Furthermore, you can adjust the way that platform invoke creates the function and marshals data to and from the function.  
@@ -29,6 +30,7 @@ This topic describes how to access unmanaged functions and introduces several at
 > Windows API functions that allocate a string enable you to free the string by using a method such as `LocalFree`. Platform invoke handles such parameters differently. For platform invoke calls, make the parameter an `IntPtr` type instead of a `String` type. Use methods that are provided by the <xref:System.Runtime.InteropServices.Marshal?displayProperty=nameWithType> class to convert the type to a string manually and free it manually.  
   
 ## Declaration Basics  
+
  Managed definitions to unmanaged functions are language-dependent, as you can see in the following examples. For more complete code examples, see [Platform Invoke Examples](platform-invoke-examples.md).  
   
 ```vb
@@ -79,6 +81,7 @@ extern "C" int MessageBox(
 ```
   
 ## Adjusting the Definition  
+
  Whether you set them explicitly or not, attribute fields are at work defining the behavior of managed code. Platform invoke operates according to the default values set on various fields that exist as metadata in an assembly. You can alter this default behavior by adjusting the values of one or more fields. In many cases, you use the <xref:System.Runtime.InteropServices.DllImportAttribute> to set a value.  
   
  The following table lists the complete set of attribute fields that pertain to platform invoke. For each field, the table includes the default value and a link to information on how to use these fields to define unmanaged DLL functions.  
@@ -97,9 +100,11 @@ extern "C" int MessageBox(
  For detailed reference information, see <xref:System.Runtime.InteropServices.DllImportAttribute>.  
   
 ## Platform invoke security considerations  
+
  The `Assert`, `Deny`, and `PermitOnly` members of the <xref:System.Security.Permissions.SecurityAction> enumeration are referred to as *stack walk modifiers*. These members are ignored if they are used as declarative attributes on platform invoke declarations and COM Interface Definition Language (IDL) statements.  
   
 ### Platform Invoke Examples  
+
  The platform invoke samples in this section illustrate the use of the `RegistryPermission` attribute with the stack walk modifiers.  
   
  In the following example, the <xref:System.Security.Permissions.SecurityAction>`Assert`, `Deny`, and `PermitOnly` modifiers are ignored.  
@@ -179,6 +184,7 @@ class PInvokeScenario
 ```  
   
 #### COM Interop Examples  
+
  The COM interop samples in this section illustrate the use of the `RegistryPermission` attribute with the stack walk modifiers.  
   
  The following COM interop interface declarations ignore the `Assert`, `Deny`, and `PermitOnly` modifiers, similarly to the platform invoke examples in the previous section.  

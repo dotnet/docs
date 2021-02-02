@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 9e0eb40a-69ef-4821-bdc3-45a9b71a58c3
 ---
 # AJAX
+
 This section includes samples that demonstrate Asynchronous JavaScript and XML functionality.  
   
 ## In This Section  
+
  [JSONP](jsonp.md)  
  Demonstrates how to support JSON with Padding (JSONP) in WCF REST services.  
   

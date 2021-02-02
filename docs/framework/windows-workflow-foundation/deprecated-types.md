@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 4aebe928-a964-4c1c-abf7-0dbbd3604b13
 ---
 # Deprecated types in Windows Workflow Foundation
+
 In .NET 4 the Workflow Team released an all new Workflow engine in the <xref:System.Activities> namespace. With the release of .NET Framework 4.5 Beta we are marking most of the types in the "WF 3" <xref:System.Workflow.Activities>, <xref:System.Workflow.ComponentModel>, and  <xref:System.Workflow.Runtime> namespaces as obsolete.
 
 ## Obsolete namespaces and tools
+
  The following assemblies have one or more public types that will be deprecated:
 
 - System.Workflow.Activities.dll

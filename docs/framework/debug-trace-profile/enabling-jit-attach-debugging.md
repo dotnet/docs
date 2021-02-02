@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: f91fc5f7-de5a-4f23-b6ac-f450e63c662e
 ---
 # Enabling JIT-Attach Debugging
+
 JIT-attach debugging is the phrase used to describe attaching a debugger to a process when you encounter errors, or it can be triggered by specific methods or functions.  
   
  JIT-attach debugging is used under the following fault conditions:  

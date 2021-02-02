@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
 ---
 # Implementing the UI Automation RangeValue Control Pattern
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -17,7 +18,9 @@ ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
  The <xref:System.Windows.Automation.RangeValuePattern> control pattern is used to support controls that can be set to a value within a range. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## Implementation Guidelines and Conventions  
+
  When implementing the Range Value control pattern, note the following guidelines and conventions:  
   
 - Controls allow recalibration of their supported properties based upon locale or user preference. An example of this is a thermometer control that can be set to display the temperature in Fahrenheit or Celsius.  
@@ -28,6 +31,7 @@ ms.assetid: 225feaa4-918e-418b-938e-7389338d0a69
 Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum Property Values Are Normalized to 0 and 100, Respectively  
   
 <a name="Required_Members_for_the_IRangeValueProvider"></a>
+
 ## Required Members for IRangeValueProvider  
   
 |Required member|Member type|Notes|  
@@ -43,7 +47,9 @@ Example of a Progress Bar Where Value Is of Type Integer and Minimum and Maximum
  This control pattern has no associated events.  
   
 <a name="Exceptions"></a>
+
 ## Exceptions  
+
  Providers must throw the following exceptions.  
   
 |Exception type|Condition|  

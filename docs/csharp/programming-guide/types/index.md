@@ -69,8 +69,6 @@ It's important to understand two fundamental points about the type system in .NE
 
 The following illustration shows the relationship between value types and reference types in the CTS.
 
-The following image shows value types and reference types in the CTS:
-
 ![Screenshot that shows CTS value types and reference types.](./media/index/value-reference-types-common-type-system.png)
 
 > [!NOTE]

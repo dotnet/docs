@@ -12,6 +12,7 @@ Once you have designed and implemented your service contract, you are ready to c
  Configuration as used here includes all the ways, imperatively in code or by using a configuration file, in which you can define and customize the various aspects of a service, such as specifying its endpoint addresses, the transports used, and its security schemes. In practice, writing configuration is a major part of programming WCF applications.  
   
 ## In This Section  
+
  [Simplified Configuration](simplified-configuration.md)  
  Starting with .NET Framework 4, WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with default endpoints, bindings, and behaviors.  
   
@@ -31,6 +32,7 @@ Once you have designed and implemented your service contract, you are ready to c
  The requirements for deploying a service that is interoperable with services and clients on any other platform or operating system are outlined in the WS-I Basic Profile 1.1 specification.  
   
 ## Reference  
+
  <xref:System.ServiceModel>  
   
  <xref:System.ServiceModel.Channels>  
@@ -38,6 +40,7 @@ Once you have designed and implemented your service contract, you are ready to c
  <xref:System.ServiceModel.Description>  
   
 ## Related Sections  
+
  [Basic Programming Lifecycle](basic-programming-lifecycle.md)  
   
  [Designing and Implementing Services](designing-and-implementing-services.md)  

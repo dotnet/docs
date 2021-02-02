@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 75a4a1ab-e5a3-4f4e-88e4-d19806e671d7
 ---
 # 1019 - CompleteCancelActivityWorkItem
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 75a4a1ab-e5a3-4f4e-88e4-d19806e671d7
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a CancelActivityWorkItem has completed.  
   
 ## Message  
+
  A CancelActivityWorkItem has completed for Activity '%1', DisplayName: '%2', InstanceId: '%3'.  
   
 ## Details  

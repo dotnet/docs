@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 8d455610-67a0-4fa8-a62f-7747064a9256
 ---
 # Network Programming in the .NET Framework
+
 The Microsoft .NET Framework provides a layered, extensible, and managed implementation of Internet services that can be quickly and easily integrated into your applications. Your network applications can build on pluggable protocols to automatically take advantage of new Internet protocols, or they can use a managed implementation of the Windows socket interface to work with the network on the socket level.  
   
 ## In This Section  
@@ -81,6 +82,7 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
  Links to downloadable network programming samples that use classes in the <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.PeerToPeer>, <xref:System.Net.Security>, <xref:System.Net.Sockets> namespaces.  
   
 ## Reference  
+
  <xref:System.Net?displayProperty=nameWithType>  
  Provides a simple programming interface for many of the protocols used on networks today. The <xref:System.Net.WebRequest?displayProperty=nameWithType> and <xref:System.Net.WebResponse?displayProperty=nameWithType> classes in this namespace are the basis for pluggable protocols.  
   

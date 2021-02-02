@@ -37,6 +37,11 @@ items:
         href: ../core/install/linux-rhel.md
       - name: SLES
         href: ../core/install/linux-sles.md
+      - name: Install with Snap
+        href: ../core/install/linux-snap.md
+      - name: Install script & binaries
+        href: ../core/install/linux-scripted-manual.md
+
     - name: Remove outdated runtimes and SDKs
       href: ../core/install/remove-runtime-sdk-versions.md
     - name: Manage .NET templates
@@ -131,21 +136,37 @@ items:
         displayName: tutorials, visual studio for mac, vs for mac
     - name: More tutorials
       href: ../core/tutorials/index.md
-- name: What's new
+- name: What's new in .NET
   items:
-  - name: What's new in .NET 5.0
-    href: ../core/dotnet-five.md
-  - name: What's new in .NET Core 3.1
-    href: ../core/whats-new/dotnet-core-3-1.md
-  - name: What's new in .NET Core 3.0
-    href: ../core/whats-new/dotnet-core-3-0.md
-  - name: What's new in .NET Core 2.2
+  - name: .NET 5.0
+    items:
+    - name: What's new
+      href: ../core/dotnet-five.md
+    - name: Breaking changes
+      href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 3.1
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-core-3-1.md
+    - name: Breaking changes
+      href: ../core/compatibility/3.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 3.0
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-core-3-0.md
+    - name: Breaking changes
+      href: ../core/compatibility/3.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 2.2
     href: ../core/whats-new/dotnet-core-2-2.md
-  - name: What's new in .NET Core 2.1
-    href: ../core/whats-new/dotnet-core-2-1.md
-  - name: What's new in .NET Core 2.0
+  - name: .NET Core 2.1
+    items:
+    - name: What's new
+      href: ../core/whats-new/dotnet-core-2-1.md
+    - name: Breaking changes
+      href: ../core/compatibility/2.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: .NET Core 2.0
     href: ../core/whats-new/dotnet-core-2-0.md
-  - name: What's new in .NET Standard
+  - name: .NET Standard
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Tools and diagnostics
   items:
@@ -159,6 +180,8 @@ items:
       href: ../core/sdk.md
     - name: Error messages
       items:
+      - name: NETSDK1004
+        href: ../core/tools/sdk-errors/netsdk1004.md
       - name: NETSDK1005 and NETSDK1047
         href: ../core/tools/sdk-errors/netsdk1005.md
       - name: NETSDK1013
@@ -175,7 +198,7 @@ items:
         href: ../core/tools/sdk-errors/netsdk1079.md
       - name: NETSDK1145
         href: ../core/tools/sdk-errors/netsdk1145.md
-  - name: .NET Core CLI
+  - name: .NET CLI
     items:
     - name: Overview
       displayName: '.net cli,command-line interface,cli,tool'
@@ -317,13 +340,11 @@ items:
         - name: Microsoft.NET.Sdk
           href: ../core/project-sdk/msbuild-props.md
         - name: Microsoft.NET.Sdk.Web
-          href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
         - name: Microsoft.NET.Sdk.Razor
-          href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Target frameworks
       href: ../standard/frameworks.md
-    - name: Additions to the csproj format
-      href: ../core/tools/csproj.md
     - name: Dependency management
       href: ../core/tools/dependencies.md
   - name: Global and local tools
@@ -351,6 +372,10 @@ items:
       href: ../core/additional-tools/index.md
     - name: .NET uninstall tool
       href: ../core/additional-tools/uninstall-tool.md
+    - name: .NET install tool for extension authors
+      href: ../core/additional-tools/vscode-dotnet-runtime.md
+    - name: Generate self-signed certificates
+      href: ../core/additional-tools/self-signed-certificates-guide.md
     - name: WCF web service reference provider
       href: ../core/additional-tools/wcf-web-service-reference-guide.md
     - name: WCF service utility
@@ -368,37 +393,54 @@ items:
       href: ../core/diagnostics/index.md
     - name: Managed debuggers
       href: ../core/diagnostics/managed-debuggers.md
-    - name: Debug Linux dumps
-      href: ../core/diagnostics/debug-linux-dumps.md
+    - name: Dumps
+      items:
+      - name: Overview
+        displayName: dumps
+        href: ../core/diagnostics/dumps.md
+      - name: Linux dumps
+        href: ../core/diagnostics/debug-linux-dumps.md
+      - name: SOS debugger extension
+        href: ../core/diagnostics/sos-debugging-extension.md
     - name: EventCounters
-      href: ../core/diagnostics/event-counters.md
+      items:
+      - name: Overview
+        displayName: EventCounters
+        href: ../core/diagnostics/event-counters.md
+      - name: Well-known Counters in .NET
+        href: ../core/diagnostics/available-counters.md
     - name: EventPipe
       href: ../core/diagnostics/eventpipe.md
     - name: Logging and tracing
-      href: ../core/diagnostics/logging-tracing.md
-    - name: Runtime Events
+      items:
+      - name: Overview
+        displayName: "logging and tracing"
+        href: ../core/diagnostics/logging-tracing.md
+      - name: Well-known event providers
+        href: ../core/diagnostics/well-known-event-providers.md
+    - name: Runtime events
       items:
       - name: Overview
         href: ../fundamentals/diagnostics/runtime-events.md
-      - name: Contention Events
+      - name: Contention events
         href: ../fundamentals/diagnostics/runtime-contention-events.md
-      - name: Exception Events
+      - name: Exception events
         href: ../fundamentals/diagnostics/runtime-exception-events.md
-      - name: Garbage Collection Events
+      - name: Garbage collection events
         href: ../fundamentals/diagnostics/runtime-garbage-collection-events.md
-      - name: Interop Events
+      - name: Interop events
         href: ../fundamentals/diagnostics/runtime-interop-events.md
-      - name: Loader and Binder Events
+      - name: Loader and binder events
         href: ../fundamentals/diagnostics/runtime-loader-binder-events.md
-      - name: Method Events
+      - name: Method events
         href: ../fundamentals/diagnostics/runtime-method-events.md
-      - name: ThreadPool Events
+      - name: ThreadPool events
         href: ../fundamentals/diagnostics/runtime-thread-events.md
-      - name: Type System Events
+      - name: Type-system events
         href: ../fundamentals/diagnostics/runtime-type-events.md
     - name: Collect diagnostics in containers
       href: ../core/diagnostics/diagnostics-in-containers.md
-    - name: .NET Core CLI global tools
+    - name: .NET CLI global tools
       items:
       - name: dotnet-counters
         href: ../core/diagnostics/dotnet-counters.md
@@ -412,7 +454,7 @@ items:
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
         href: ../core/diagnostics/dotnet-sos.md
-    - name: .NET Core diagnostics tutorials
+    - name: .NET diagnostics tutorials
       items:
       - name: Collect performance trace in Linux with PerfCollect
         href: ../core/diagnostics/trace-perfcollect-lttng.md
@@ -424,6 +466,8 @@ items:
         href: ../core/diagnostics/debug-highcpu.md
       - name: Debug deadlock
         href: ../core/diagnostics/debug-deadlock.md
+      - name: Debug a StackOverflow
+        href: ../core/diagnostics/debug-stackoverflow.md
   - name: Code analysis
     items:
     - name: Overview
@@ -435,6 +479,8 @@ items:
         href: code-analysis/configuration-options.md
       - name: Configuration files
         href: code-analysis/configuration-files.md
+      - name: How to suppress warnings
+        href: code-analysis/suppress-warnings.md
       - name: Code quality rules
         items:
         - name: Rule options
@@ -757,8 +803,6 @@ items:
             href: code-analysis/quality-rules/ca2119.md
           - name: CA2153
             href: code-analysis/quality-rules/ca2153.md
-          - name: CA2153
-            href: code-analysis/quality-rules/ca2153.md
           - name: CA2300
             href: code-analysis/quality-rules/ca2300.md
           - name: CA2301
@@ -787,6 +831,8 @@ items:
             href: code-analysis/quality-rules/ca2328.md
           - name: CA2329
             href: code-analysis/quality-rules/ca2329.md
+          - name: CA2330
+            href: code-analysis/quality-rules/ca2330.md
           - name: CA2350
             href: code-analysis/quality-rules/ca2350.md
           - name: CA2351
@@ -805,8 +851,6 @@ items:
             href: code-analysis/quality-rules/ca2361.md
           - name: CA2362
             href: code-analysis/quality-rules/ca2362.md
-          - name: CA2330
-            href: code-analysis/quality-rules/ca2330.md
           - name: CA3001
             href: code-analysis/quality-rules/ca3001.md
           - name: CA3002
@@ -1253,17 +1297,19 @@ items:
         href: ../core/dependency-loading/loading-resources.md
       - name: Load unmanaged libraries
         href: ../core/dependency-loading/loading-unmanaged.md
+      - name: Collect detailed assembly loading information
+        href: ../core/dependency-loading/collect-details.md
     - name: Tutorials
       items:
-      - name: Create a .NET Core application with plugins
+      - name: Create a .NET application with plugins
         href: ../core/tutorials/creating-app-with-plugin-support.md
-      - name: How to use and debug assembly unloadability in .NET Core
+      - name: How to use and debug assembly unloadability in .NET
         href: ../core/../standard/assembly/unloadability.md
   - name: Versioning
     items:
     - name: Overview
       href: ../core/versions/index.md
-    - name: .NET Core version selection
+    - name: .NET version selection
       href: ../core/versions/selection.md
   - name: Run-time configuration
     items:
@@ -1313,7 +1359,7 @@ items:
     items:
     - name: Introduction to .NET and Docker
       href: ../core/docker/introduction.md
-    - name: Containerize a .NET Core app
+    - name: Containerize a .NET app
       href: ../core/docker/build-container.md
     - name: Container tools in Visual Studio
       href: /visualstudio/containers/overview
@@ -1585,10 +1631,38 @@ items:
         displayName: json serialization
       - name: How to serialize and deserialize JSON
         href: ../standard/serialization/system-text-json-how-to.md
-      - name: How to write custom converters
-        href: ../standard/serialization/system-text-json-converters-how-to.md
+      - name: Control serialization behavior
+        items:
+        - name: Instantiate JsonSerializerOptions
+          href: ../standard/serialization/system-text-json-configure-options.md
+        - name: Enable case-insensitive matching
+          href: ../standard/serialization/system-text-json-character-casing.md
+        - name: Customize property names and values
+          href: ../standard/serialization/system-text-json-customize-properties.md
+        - name: Ignore properties
+          href: ../standard/serialization/system-text-json-ignore-properties.md
+        - name: Allow invalid JSON
+          href: ../standard/serialization/system-text-json-invalid-json.md
+        - name: Handle overflow JSON
+          href: ../standard/serialization/system-text-json-handle-overflow.md
+        - name: Preserve references
+          href: ../standard/serialization/system-text-json-preserve-references.md
+        - name: Immutable types and non-public accessors
+          href: ../standard/serialization/system-text-json-immutability.md
+        - name: Polymorphic serialization
+          href: ../standard/serialization/system-text-json-polymorphism.md
       - name: How to migrate from Newtonsoft.Json
         href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+      - name: Supported collection types
+        href: ../standard/serialization/system-text-json-supported-collection-types.md
+      - name: Advanced
+        items:
+        - name: Customize character encoding
+          href: ../standard/serialization/system-text-json-character-encoding.md
+        - name: Custom serializers and deserializers
+          href: ../standard/serialization/write-custom-serializer-deserializer.md
+        - name: Custom converters
+          href: ../standard/serialization/system-text-json-converters-how-to.md
     - name: Binary serialization
       items:
       - name: Overview
@@ -1596,6 +1670,8 @@ items:
         displayName: binary serialization
       - name: BinaryFormatter security guide
         href: ../standard/serialization/binaryformatter-security-guide.md
+      - name: BinaryFormatter event source
+        href: ../standard/serialization/binaryformatter-event-source.md
       - name: Serialization concepts
         href: ../standard/serialization/serialization-concepts.md
       - name: Basic serialization
@@ -1765,6 +1841,8 @@ items:
       displayName: custom configuration,custom config,custom configuration provider,custom config provider
     - name: Options pattern
       href: ../core/extensions/options.md
+    - name: Options pattern guidance for library authors
+      href: ../core/extensions/options-library-authors.md
   - name: Logging
     items:
     - name: Overview
@@ -1983,7 +2061,7 @@ items:
     href: ../core/testing/unit-testing-code-coverage.md
   - name: Unit test published output
     href: ../core/testing/unit-testing-published-output.md
-  - name: Live unit test .NET Core projects with Visual Studio
+  - name: Live unit test .NET projects with Visual Studio
     href: /visualstudio/test/live-unit-testing-start
 - name: Security
   href: ../standard/security/
@@ -2058,13 +2136,15 @@ items:
       href: ../standard/native-interop/customize-struct-marshaling.md
     - name: Customize parameter marshaling
       href: ../standard/native-interop/customize-parameter-marshaling.md
+    - name: Cross platform P/Invoke
+      href: ../standard/native-interop/cross-platform.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
     - name: Charsets and marshaling
       href: ../standard/native-interop/charset.md
-    - name: Expose .NET Core components to COM
+    - name: Expose .NET components to COM
       href: ../core/native-interop/expose-components-to-com.md
-    - name: Host .NET Core from native code
+    - name: Host .NET from native code
       href: ../core/tutorials/netcore-hosting.md
     - name: COM interop
       items:
@@ -2086,7 +2166,7 @@ items:
       href: ../standard/native-interop/apply-interop-attributes.md
     - name: Exceptions
       href: ../standard/native-interop/exceptions-interoperability.md
-  - name: .NET Core distribution packaging
+  - name: .NET distribution packaging
     href: ../core/distribution-packaging.md
   - name: Globalization and localization
     href: ../standard/globalization-localization/
@@ -2210,6 +2290,8 @@ items:
       href: ../core/migration/index.md
     - name: Map between project.json and csproj
       href: ../core/tools/project-json-to-csproj.md
+    - name: Map AssemblyInfo attributes to properties
+      href: ../core/migration/assembly-info.md
     - name: Changes in CLI overview
       href: ../core/tools/cli-msbuild-architecture.md
     - name: Migrate from DNX
@@ -2222,16 +2304,16 @@ items:
       href: ../core/porting/third-party-deps.md
     - name: Port libraries
       href: ../core/porting/libraries.md
-    - name: Organize projects for .NET Core
+    - name: Organize projects for .NET
       href: ../core/porting/project-structure.md
     - name: Unavailable technologies
-      href: ../core/porting/net-framework-tech-unavailable.md
+      href: ../core/porting/net-framework-tech-unavailable.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Tools
       href: ../core/porting/tools.md
     - name: Use the Windows Compatibility Pack
       href: ../core/porting/windows-compat-pack.md
     - name: Port Windows Forms projects
-      href: ../core/porting/winforms.md
+      href: /dotnet/desktop/winforms/migration/?view=netdesktop-5.0
     - name: Port WPF projects
       href: /dotnet/desktop/wpf/migration/convert-project-from-net-framework
     - name: Port C++/CLI projects

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 9e34b694-aa56-45b3-8dd1-2616705b4fc5
 ---
 # Service Contracts
+
 This section contains samples that demonstrate service contracts in Windows Communication Foundation (WCF).  
   
 ## In This Section  
+
  [Duplex](duplex.md)  
  Demonstrates how to define and implement a duplex contract.  
   

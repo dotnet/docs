@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 5c540161-6e40-42e9-be92-6175aee2c46a
 ---
 # Guidelines for Creating Components for Side-by-Side Execution
+
 Follow these general guidelines to create managed applications or components designed for side-by-side execution:  
   
 - Bind type identity to a particular version of a file.  
@@ -23,6 +24,7 @@ Follow these general guidelines to create managed applications or components des
      An application or component that runs in isolation must manage resources to avoid conflicts when two instances of the application or component are running simultaneously. The application or component must also use a version-specific file structure.  
   
 ## Application and Component Isolation  
+
  One key to successfully designing an application or component for side-by-side execution is isolation. The application or component must manage all resources, particularly file I/O, in an isolated manner. Follow these guidelines to make sure your application or component runs in isolation:  
   
 - Write to the registry in a version-specific way. Store values in hives or keys that indicate the version, and do not share information or state across versions of a component. This prevents two applications or components running at the same time from overwriting information.  
@@ -34,6 +36,7 @@ Follow these general guidelines to create managed applications or components des
 - Create user accounts and groups in a version-specific manner. User accounts and groups created by an application should be identified by version. Do not share user accounts and groups between versions of an application.  
   
 ## Installing and Uninstalling Versions  
+
  When designing an application for side-by-side execution, follow these guidelines concerning installing and uninstalling versions:  
   
 - Do not delete information from the registry that may be needed by other applications running under a different version of the .NET Framework.  
@@ -49,6 +52,7 @@ Follow these general guidelines to create managed applications or components des
 - Do not add anything to the registry that contains an unversioned path.  
   
 ## File Version Number and Assembly Version Number  
+
  File version is a Win32 version resource that is not used by the runtime. In general, you update the file version even for an in-place update. Two identical files can have different file version information, and two different files can have the same file version information.  
   
  The assembly version is used by the runtime for assembly binding. Two identical assemblies with different version numbers are treated as two different assemblies by the runtime.  

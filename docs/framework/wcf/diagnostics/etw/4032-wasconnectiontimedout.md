@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 91acad10-f3cc-4075-804f-22c49131b7bf
 ---
 # 4032 - WasConnectionTimedout
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 91acad10-f3cc-4075-804f-22c49131b7bf
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted when WAS connection timed out.  
   
 ## Message  
+
  WAS connection timed out.  
   
 ## Details

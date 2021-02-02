@@ -5,7 +5,7 @@ ms.date: 08/07/2020
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: "vs-dotnet,contperfq1"
+ms.custom: "vs-dotnet,contperf-fy21q1"
 ---
 # Tutorial: Create a .NET class library using Visual Studio
 
@@ -120,6 +120,7 @@ Initially, the new console app project doesn't have access to the class library.
 ## Additional resources
 
 * [Develop libraries with the .NET CLI](libraries.md)
+* [.NET Standard versions and the platforms they support](../../standard/net-standard.md).
 
 ## Next steps
 

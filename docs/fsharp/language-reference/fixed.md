@@ -41,7 +41,7 @@ let squareWithPointer (p: nativeptr<int>) =
     NativePtr.set p 0 value
 
 let pnt = { X = 1; Y = 2 }
-printfn "pnt before - X: %d Y: %d" pnt.X pnt.Y // prints 1 and 2
+printfn $"pnt before - X: %d{pnt.X} Y: %d{pnt.Y}" // prints 1 and 2
 
 // Note that the use of 'fixed' is inside a function.
 // You cannot fix a pointer at a script-level or module-level scope.
@@ -50,7 +50,7 @@ let doPointerWork() =
 
     // Square the Y value
     squareWithPointer ptr
-    printfn "pnt after - X: %d Y: %d" pnt.X pnt.Y // prints 1 and 4
+    printfn $"pnt after - X: %d{pnt.X} Y: %d{pnt.Y}" // prints 1 and 4
 
 doPointerWork()
 ```

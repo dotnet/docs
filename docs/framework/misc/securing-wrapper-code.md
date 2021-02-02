@@ -18,9 +18,11 @@ ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
  Never enable something through the wrapper that the caller could not do itself. This is a special danger when doing something that involves a limited security check, as opposed to a full stack walk demand. When single-level checks are involved, interposing the wrapper code between the real caller and the API element in question can easily cause the security check to succeed when it should not, thereby weakening security.  
   
 ## Delegates  
+
  Delegate security differs between versions of the .NET Framework.  This section describes the different delegate behaviors and associated security considerations.  
   
 ### In version 1.0 and 1.1 of the .NET Framework  
+
  Version 1.0 and 1.1 of the .NET Framework perform the following security actions against a delegate creator and a delegate caller.  
   
 - When a delegate is created, security link demands on the delegate target method are performed against the grant set of the delegate creator.  Failure to satisfy the security action results in a <xref:System.Security.SecurityException>.  
@@ -30,6 +32,7 @@ ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
  Whenever your code takes a <xref:System.Delegate> from less-trusted code that might call it, make sure that you are not enabling the less-trusted code to escalate its permissions. If you take a delegate and use it later, the code that created the delegate is not on the call stack and its permissions will not be tested if code in or under the delegate attempts a protected operation. If your code and the caller code have higher privileges than the creator, the creator can orchestrate the call path without being part of the call stack.  
   
 ### In version 2.0 and later versions of the .NET Framework  
+
  Unlike previous versions, version 2.0 and later versions of the .NET Framework performs security action against the delegate creator when the delegate is created and called.  
   
 - When a delegate is created, security link demands on the delegate target method are performed against the grant set of the delegate creator.  Failure to satisfy the security action results in a <xref:System.Security.SecurityException>.  
@@ -39,6 +42,7 @@ ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
 - When the delegate is invoked, the delegate creator's captured grant set is first evaluated against any demands in the current context if the delegate creator and caller belong to different assemblies.  Next, any existing security demands on the delegate caller are performed.  
   
 ## Link demands and wrappers  
+
  A special protection case with link demands has been strengthened in the security infrastructure, but it is still a source of possible weakness in your code.  
   
  If fully trusted code calls a property, event, or method protected by a [LinkDemand](link-demands.md), the call succeeds if the **LinkDemand** permission check for the caller is satisfied. Additionally, if the fully trusted code exposes a class that takes the name of a property and calls its **get** accessor using reflection, that call to the **get** accessor succeeds even though the user code does not have the right to access this property. This is because the **LinkDemand** checks only the immediate caller, which is the fully trusted code. In essence, the fully trusted code is making a privileged call on behalf of user code without making sure that the user code has the right to make that call.  
@@ -46,6 +50,7 @@ ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
  To help prevent such security holes, the common language runtime extends the check into a full stack-walking demand on any indirect call to a method, constructor, property, or event protected by a **LinkDemand**. This protection incurs some performance costs and changes the semantics of the security check; the full stack-walk demand might fail where the faster, one-level check would have passed.  
   
 ## Assembly loading wrappers  
+
  Several methods used to load managed code, including <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>, load assemblies with the evidence of the caller. If you wrap any of these methods, the security system could use your code's permission grant, instead of the permissions of the caller to your wrapper, to load the assemblies. Don't allow less-trusted code to load code that is granted higher permissions than those of the caller to your wrapper.  
   
  Any code that has full trust or significantly higher trust than a potential caller (including an Internet-permissions-level caller) could weaken security in this way. If your code has a public method that takes a byte array and passes it to **Assembly.Load**, thereby creating an assembly on the caller's behalf, it might break security.  
@@ -61,6 +66,7 @@ ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
 - <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
   
 ## Demand vs. LinkDemand  
+
  Declarative security offers two kinds of security checks that are similar but perform different checks. It's good to understand both forms, because the wrong choice can result in weak security or performance loss.  
   
  Declarative security offers the following security checks:  
@@ -81,6 +87,7 @@ ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
 - Ensuring that your code's callers cannot trick your code into calling the protected code on their behalf. In other words, callers cannot force the authorized code to pass specific parameters to the protected code, or to get results back from it.  
   
 ### Interfaces and Link Demands  
+
  If a virtual method, property, or event with **LinkDemand** overrides a base class method, the base class method must also have the same **LinkDemand** for the overridden method in order to be effective. It is possible for malicious code to cast back to the base type and call the base class method. Also note that link demands can be added implicitly to assemblies that do not have the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> assembly-level attribute.  
   
  It is a good practice to protect method implementations with link demands when interface methods also have link demands. Note the following about using link demands with interfaces:  

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 2fa710f1-47f4-4598-b063-3ab3bd22ebba
 ---
 # Request-Reply Services
+
 Request-reply services are the default type of operation contract in Windows Communication Foundation (WCF). Clients make calls to service operations and wait for a response from the service. You can perform calls to a service operation either synchronously, where the client blocks until it receives a response from the service or the call times, or asynchronously, where the client makes a call to the service operation, continues working, and receives the response from the service on another thread.  
   
  To create a request-reply service contract, define your service contract, and apply the <xref:System.ServiceModel.OperationContractAttribute> class to each operation, as shown in the following sample code.  

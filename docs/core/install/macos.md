@@ -30,6 +30,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Operating System          | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |---------------------------|---------------|---------------|----------------|
+| macOS 11.0 "Big Sur"        | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
 | macOS 10.15 "Catalina"    | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
 | macOS 10.14 "Mojave"      | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
 | macOS 10.13 "High Sierra" | ✔️ 2.1 ([Release notes][release-notes-21]) | ✔️ 3.1 ([Release notes][release-notes-31]) | ✔️ 5.0 ([Release notes][release-notes-50]) |
@@ -47,13 +48,13 @@ The following versions of .NET are ❌ no longer supported. The downloads for th
 
 The runtime is used to run apps created with .NET. When an app author publishes an app, they can include the runtime with their app. If they don't include the runtime, it's up to the user to install the runtime.
 
-There are three different runtimes you can install on macOS:
+There are two different runtimes you can install on macOS:
 
-*ASP.NET Core runtime*\
-Runs ASP.NET Core apps. Includes the .NET runtime.
+- *ASP.NET Core runtime*\
+  Runs ASP.NET Core apps. Includes the .NET runtime.
 
-*.NET runtime*\
-This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install *ASP.NET Core runtime* for the best compatibility with .NET apps.
+- *.NET runtime*\
+  This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install *ASP.NET Core runtime* for the best compatibility with .NET apps.
 
 > [!div class="button"]
 > [Download .NET Runtime](https://dotnet.microsoft.com/download/dotnet-core)
@@ -119,20 +120,15 @@ Next, extract the downloaded file and use the `export` command to set variables 
 
 To extract the runtime and make the .NET CLI commands available at the terminal, first download a .NET binary release. Then, open a terminal and run the following commands from the directory where the file was saved. The archive file name may be different depending on what you downloaded.
 
-**Use the following command to extract the runtime**:
+**Use the following commands to extract the runtime or SDK that you downloaded.** Remember to change the `DOTNET_FILE` value to your file name:
 
 ```bash
-mkdir -p "$HOME/dotnet" && tar zxf aspnetcore-runtime-5.0.0-osx-x64.tar.gz -C "$HOME/dotnet"
+DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz
 export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
-```
 
-**Use the following command to extract the SDK**:
+mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
 
-```bash
-mkdir -p "$HOME/dotnet" && tar zxf dotnet-sdk-5.0.100-osx-x64.tar.gz -C "$HOME/dotnet"
-export DOTNET_ROOT=$HOME/dotnet
-export PATH=$PATH:$HOME/dotnet
+export PATH=$PATH:$DOTNET_ROOT
 ```
 
 > [!TIP]

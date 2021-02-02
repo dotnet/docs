@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fc9850a5-0dc3-4b84-a09a-744301c7c18e
 ---
 # 441- StopSignpostEvent1
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: fc9850a5-0dc3-4b84-a09a-744301c7c18e
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  In activity tracing, indicates a message has completed crossing an activity boundary in send or receive.  
   
 ## Message  
+
  Activity boundary.  
   
 ## Details  

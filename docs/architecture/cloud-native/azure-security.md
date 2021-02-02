@@ -1,14 +1,14 @@
 ---
 title: Azure security for cloud-native apps
 description: Architecting Cloud Native .NET Apps for Azure | Azure Security for Cloud Native Apps
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Azure security for cloud-native apps
 
 Cloud-native applications can be both easier and more difficult to secure than traditional applications. On the downside, you need to secure more smaller applications and dedicate more energy to build out the security infrastructure. The heterogeneous nature of programming languages and styles in most service deployments also means you need to pay more attention to security bulletins from many different providers.
 
-On the flip side, smaller services, each with their own data store, limit the scope of an attack. If an attacker compromises one system, it's probably more difficult for the attacker to make the jump to another system than it is in a monolithic application. Process boundaries are strong boundaries. Also, if a database backup leaks, then the damage is more limited, as that database contains only a subset of data and is unlikely to contain personal data.
+On the flip side, smaller services, each with their own data store, limit the scope of an attack. If an attacker compromises one system, it's probably more difficult for the attacker to make the jump to another system than it is in a monolithic application. Process boundaries are strong boundaries. Also, if a database backup gets exposed, then the damage is more limited, as that database contains only a subset of data and is unlikely to contain personal data.
 
 ## Threat modeling
 
@@ -21,7 +21,7 @@ No matter if the advantages outweigh the disadvantages of cloud-native applicati
 
 All these questions are part of a process called [threat modeling](/azure/security/azure-security-threat-modeling-tool). This process tries to answer the question of what threats there are to the system, how likely the threats are, and the potential damage from them.
 
-Once the list of threats has been established, you need to decide whether they're worth mitigating. Sometimes a threat is so unlikely and expensive to plan for that it isn't worth spending energy on it. For instance, some state level actor could inject changes into the design of a process that is used by millions of devices. Now, instead of running a certain piece of code in [Ring 3](https://en.wikipedia.org/wiki/Protection_ring), that code is run in Ring 0. This allows an exploit that can bypass the hypervisor and run the attack code on the bare metal machines, allowing attacks on all the virtual machines that are running on that hardware.
+Once the list of threats has been established, you need to decide whether they're worth mitigating. Sometimes a threat is so unlikely and expensive to plan for that it isn't worth spending energy on it. For instance, some state level actor could inject changes into the design of a process that is used by millions of devices. Now, instead of running a certain piece of code in [Ring 3](https://en.wikipedia.org/wiki/Protection_ring), that code is run in Ring 0. This process allows an exploit that can bypass the hypervisor and run the attack code on the bare metal machines, allowing attacks on all the virtual machines that are running on that hardware.
 
 The altered processors are difficult to detect without a microscope and advanced knowledge of the on silicon design of that processor. This scenario is unlikely to happen and expensive to mitigate, so probably no threat model would recommend building exploit protection for it.
 
@@ -33,7 +33,7 @@ One of the founding ideas in computer security is the Principle of Least Privile
 
 As an example, think of the tellers at a bank: accessing the safe is an uncommon activity. So, the average teller can't open the safe themselves. To gain access, they need to escalate their request through a bank manager, who performs additional security checks.
 
-In a computer system, a fantastic example is the rights of a user connecting to a database. In many cases, there's a single user account used to both build the database structure and run the application. Except in extreme cases, the account running the application doesn't need the ability to update schema information. There should be several accounts that provide different levels of privilege. The application should only use the permission level that grants read and write access to the data in the tables. This kind of protection would eliminate attacks that aimed to drop database tables or introduce malicious triggers.
+In a computer system, a fantastic example is the rights of a user connecting to a database. In many cases, there's a single user account used to both build the database structure and run the application. Except in extreme cases, the account running the application doesn't need the ability to update schema information. There should be several accounts that provide different levels of privilege. The application should only use the permission level that grants read and writes access to the data in the tables. This kind of protection would eliminate attacks that aimed to drop database tables or introduce malicious triggers.
 
 Almost every part of building a cloud-native application can benefit from remembering the principle of least privilege. You can find it at play when setting up firewalls, network security groups, roles, and scopes in Role-based access control (RBAC).
 
@@ -53,9 +53,9 @@ Should an attacker attempt to penetrate an application, there should be some war
 
 One place where security is often overlooked is around the build process. Not only should the build run security checks, such as scanning for insecure code or checked-in credentials, but the build itself should be secure. If the build server is compromised, then it provides a fantastic vector for introducing arbitrary code into the product.
 
-Imagine that an attacker is looking to steal the passwords of people signing into a web application. They could introduce a build step that modifies the checked-out code to mirror any login request to another server. The next time code goes through the build, it's silently updated. The source code vulnerability scanning won't catch this as it runs before the build. Equally, nobody will catch it in a code review because the build steps live on the build server. The exploited code will go to production where it can harvest passwords. Probably there's no audit log of the build process changes, or at least nobody monitoring the audit.
+Imagine that an attacker is looking to steal the passwords of people signing into a web application. They could introduce a build step that modifies the checked-out code to mirror any login request to another server. The next time code goes through the build, it's silently updated. The source code vulnerability scanning won't catch this vulnerability as it runs before the build. Equally, nobody will catch it in a code review because the build steps live on the build server. The exploited code will go to production where it can harvest passwords. Probably there's no audit log of the build process changes, or at least nobody monitoring the audit.
 
-This is a perfect example of a seemingly low value target that can be used to break into the system. Once an attacker breaches the perimeter of the system, they can start working on finding ways to elevate their permissions to the point that they can cause real harm anywhere they like.
+This scenario is a perfect example of a seemingly low-value target that can be used to break into the system. Once an attacker breaches the perimeter of the system, they can start working on finding ways to elevate their permissions to the point that they can cause real harm anywhere they like.
 
 ## Building secure code
 
@@ -67,7 +67,7 @@ The build process is a good place to put scanning tools to detect problems in so
 
 ## Built-in security
 
-Azure is designed to balance usability and security for the majority of users. Different users are going to have different security requirements, so they need to fine-tune their approach to cloud security. Microsoft publishes a great deal of security information in the [Trust Center](https://azure.microsoft.com/support/trust-center/). This resource should be the first stop for those professionals interested in understanding how the built-in attack mitigation technologies work.
+Azure is designed to balance usability and security for most users. Different users are going to have different security requirements, so they need to fine-tune their approach to cloud security. Microsoft publishes a great deal of security information in the [Trust Center](https://azure.microsoft.com/support/trust-center/). This resource should be the first stop for those professionals interested in understanding how the built-in attack mitigation technologies work.
 
 Within the Azure portal, the [Azure Advisor](https://azure.microsoft.com/services/advisor/) is a system that is constantly scanning an environment and making recommendations. Some of these recommendations are designed to save users money, but others are designed to identify potentially insecure configurations, such as having a storage container open to the world and not protected by a Virtual Network.
 
@@ -77,7 +77,7 @@ In an on-premises deployment environment, a great deal of energy is dedicated to
 
 Out of the box, most PaaS Azure resources have only the most basic and permissive networking setup. For instance, anybody on the Internet can access an app service. New SQL Server instances typically come restricted, so that external parties can't access them, but the IP address ranges used by Azure itself are permitted through. So, while the SQL server is protected from external threats, an attacker only needs to set up an Azure bridgehead from where they can launch attacks against all SQL instances on Azure.
 
-Fortunately, most Azure resources can be placed into an Azure Virtual Network that allows finer grained access control. Similar to the way that on-premises networks establish private networks that are protected from the wider world, virtual networks are islands of private IP addresses that are located within the Azure network.
+Fortunately, most Azure resources can be placed into an Azure Virtual Network that allows fine-grained access control. Similar to the way that on-premises networks establish private networks that are protected from the wider world, virtual networks are islands of private IP addresses that are located within the Azure network.
 
 ![Figure 9-1 A virtual network in Azure](./media/virtual-network.png)
 
@@ -85,15 +85,15 @@ Fortunately, most Azure resources can be placed into an Azure Virtual Network th
 
 In the same way that on-premises networks have a firewall governing access to the network, you can establish a similar firewall at the boundary of the virtual network. By default, all the resources on a virtual network can still talk to the Internet. It's only incoming connections that require some form of explicit firewall exception.
 
-With the network established, internal resources like storage accounts can be set up to only allow for access by resources that are also on the Virtual Network. This firewall provides an extra level of security, should the keys for that storage account be leaked, attackers wouldn't be able to connect to it to exploit the leaked keys. This is another example of the principle of least privilege.
+With the network established, internal resources like storage accounts can be set up to only allow for access by resources that are also on the Virtual Network. This firewall provides an extra level of security, should the keys for that storage account be leaked, attackers wouldn't be able to connect to it to exploit the leaked keys. This scenario is another example of the principle of least privilege.
 
 The nodes in an Azure Kubernetes cluster can participate in a virtual network just like other resources that are more native to Azure. This functionality is called [Azure Container Networking Interface](https://github.com/Azure/azure-container-networking/blob/master/docs/cni.md). In effect, it allocates a subnet within the virtual network on which virtual machines and container images are allocated.
 
 Continuing down the path of illustrating the principle of least privilege, not every resource within a Virtual Network needs to talk to every other resource. For instance, in an application that provides a web API over a storage account and a SQL database, it's unlikely that the database and the storage account need to talk to one another. Any data sharing between them would go through the web application. So, a [network security group (NSG)](/azure/virtual-network/security-overview) could be used to deny traffic between the two services.
 
-A policy of denying communication between resources can be annoying to implement, especially coming from a background of using Azure without traffic restrictions. On some other clouds, the concept of network security groups is much more prevalent. For instance, the default policy on AWS is that resources can't communicate among themselves until enabled by rules in an NSG. While slower to develop this, more restrictive environment provides a more secure default. Making use of proper DevOps practices, especially using [Azure Resource Manager or Terraform](infrastructure-as-code.md) to manage permissions can make controlling the rules easier.
+A policy of denying communication between resources can be annoying to implement, especially coming from a background of using Azure without traffic restrictions. On some other clouds, the concept of network security groups is much more prevalent. For instance, the default policy on AWS is that resources can't communicate among themselves until enabled by rules in an NSG. While slower to develop this, a more restrictive environment provides a more secure default. Making use of proper DevOps practices, especially using [Azure Resource Manager or Terraform](infrastructure-as-code.md) to manage permissions can make controlling the rules easier.
 
-Virtual Networks can also be useful when setting up communication between on-premises and cloud resources. A virtual private network can be used to seamlessly attach the two networks together. This allows running a virtual network without any sort of gateway for scenarios where all the users are on-site. There are a number of technologies that can be used to establish this network. The simplest is to use a [site-to-site VPN](/azure/vpn-gateway/vpn-gateway-about-vpngateways?toc=%252fazure%252fvirtual-network%252ftoc.json#s2smulti) that can be established between many routers and Azure. Traffic is encrypted and tunneled over the Internet at the same cost per byte as any other traffic. For scenarios where more bandwidth or more security is desirable, Azure offers a service called [Express Route](/azure/vpn-gateway/vpn-gateway-about-vpngateways?toc=%252fazure%252fvirtual-network%252ftoc.json#ExpressRoute) that uses a private circuit between an on-premises network and Azure. It's more costly and difficult to establish but also more secure.
+Virtual Networks can also be useful when setting up communication between on-premises and cloud resources. A virtual private network can be used to seamlessly attach the two networks together. This approach allows running a virtual network without any sort of gateway for scenarios where all the users are on-site. There are a number of technologies that can be used to establish this network. The simplest is to use a [site-to-site VPN](/azure/vpn-gateway/vpn-gateway-about-vpngateways?toc=%252fazure%252fvirtual-network%252ftoc.json#s2smulti) that can be established between many routers and Azure. Traffic is encrypted and tunneled over the Internet at the same cost per byte as any other traffic. For scenarios where more bandwidth or more security is desirable, Azure offers a service called [Express Route](/azure/vpn-gateway/vpn-gateway-about-vpngateways?toc=%252fazure%252fvirtual-network%252ftoc.json#ExpressRoute) that uses a private circuit between an on-premises network and Azure. It's more costly and difficult to establish but also more secure.
 
 ## Role-based access control for restricting access to Azure resources
 
@@ -112,11 +112,11 @@ The first component in RBAC is a security principal. A security principal can be
 - Service principal - A security identity under which services or applications run.
 - Managed identity - An Azure Active Directory identity managed by Azure. Managed identities are typically used when developing cloud applications that manage the credentials for authenticating to Azure services.
 
-The security principal can be applied to most any resource. This means that it's possible to assign a security principal to a container running within Azure Kubernetes, allowing it to access secrets stored in Key Vault. An Azure Function could take on a permission allowing it to talk to an Active Directory instance to validate a JWT for a calling user. Once services are enabled with a service principal, their permissions can be managed granularly using roles and scopes.
+The security principal can be applied to most any resource. This aspect means that it's possible to assign a security principal to a container running within Azure Kubernetes, allowing it to access secrets stored in Key Vault. An Azure Function could take on a permission allowing it to talk to an Active Directory instance to validate a JWT for a calling user. Once services are enabled with a service principal, their permissions can be managed granularly using roles and scopes.
 
 ## Roles
 
-A security principal can take on many roles or, using a more sartorial analogy, wear many hats. Each role defines a series of permissions such as "Read messages from Azure Service Bus endpoint". The effective permission set of a security principal is the combination of all the permissions assigned to all the roles that security principal has. Azure has a large number of built-in roles and users can define their own roles.
+A security principal can take on many roles or, using a more sartorial analogy, wear many hats. Each role defines a series of permissions such as "Read messages from Azure Service Bus endpoint". The effective permission set of a security principal is the combination of all the permissions assigned to all the roles that a security principal has. Azure has a large number of built-in roles and users can define their own roles.
 
 ![Figure 9-3 RBAC role definitions](./media/rbac-role-definition.png)
 
@@ -132,7 +132,7 @@ Roles can be applied to a restricted set of resources within Azure. For instance
 
 The scope can be as narrow as a single resource or it can be applied to an entire resource group, subscription, or even management group.
 
-When testing if a security principal has a certain permission, the combination of role and scope are taken into account. This combination provides a powerful authorization mechanism.
+When testing if a security principal has certain permission, the combination of role and scope are taken into account. This combination provides a powerful authorization mechanism.
 
 ## Deny
 
@@ -142,7 +142,7 @@ Deny rules take precedence over allow rules. Now representing the same "allow al
 
 ## Checking access
 
-As you can imagine, having a large number of roles and scopes can make figuring out the effective permission of a service principal quite difficult. Piling deny rules on top of that, only serves to increase the complexity. Fortunately, there's a [permissions calculator](/azure/role-based-access-control/check-access) that can show the effective permissions for any service principal. It's typically found under the IAM tab in the portal, as shown in Figure 10-3.
+As you can imagine, having a large number of roles and scopes can make figuring out the effective permission of a service principal quite difficult. Piling deny rules on top of that, only serves to increase the complexity. Fortunately, there's a [permissions calculator](/azure/role-based-access-control/check-access) that can show the effective permissions for any service principal. It's typically found under the IAM tab in the portal, as shown in Figure 9-3.
 
 ![Figure 9-4 Permission calculator for an app service](./media/check-rbac.png)
 
@@ -220,11 +220,11 @@ While this level of encryption isn't going to be sufficient for all time, it sho
 
 ### At rest
 
-In any application, there are a number of places where data rests on disk. The application code itself is loaded from some storage mechanism. Most applications also use some kind of database such as SQL Server, Cosmos DB, or even the amazingly price-efficient Table Storage. These databases all use heavily encrypted storage to ensure that nobody other than the applications with proper permissions can read your data. Even the system operators can't read data that has been encrypted. So customers can remain confident their secret information remains secret.
+In any application, there are a number of places where data rests on the disk. The application code itself is loaded from some storage mechanism. Most applications also use some kind of a database such as SQL Server, Cosmos DB, or even the amazingly price-efficient Table Storage. These databases all use heavily encrypted storage to ensure that nobody other than the applications with proper permissions can read your data. Even the system operators can't read data that has been encrypted. So customers can remain confident their secret information remains secret.
 
 ### Storage
 
-The underpinning of much of Azure is the Azure Storage engine. Virtual machine disks are mounted on top of Azure Storage. Azure Kubernetes Services run on virtual machines that, themselves, are hosted on Azure Storage. Even serverless technologies, such as Azure Functions Apps and Azure Container Instances, run out of disk that is part of Azure Storage.
+The underpinning of much of Azure is the Azure Storage engine. Virtual machine disks are mounted on top of Azure Storage. Azure Kubernetes Service runs on virtual machines that, themselves, are hosted on Azure Storage. Even serverless technologies, such as Azure Functions Apps and Azure Container Instances, run out of disk that is part of Azure Storage.
 
 If Azure Storage is well encrypted, then it provides for a foundation for most everything else to also be encrypted. Azure Storage [is encrypted](/azure/storage/common/storage-service-encryption) with [FIPS 140-2](https://en.wikipedia.org/wiki/FIPS_140) compliant [256-bit AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard). This is a well-regarded encryption technology having been the subject of extensive academic scrutiny over the last 20 or so years. At present, there's no known practical attack that would allow someone without knowledge of the key to read data encrypted by AES.
 

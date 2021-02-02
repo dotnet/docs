@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 431ccb35-b593-4157-8e4d-f20e579630fd
 ---
 # System.ServiceModel.CommunicationObjectOpened
+
 System.ServiceModel.CommunicationObjectOpened  
   
 ## Description  
+
  A communication object was opened.  
   
 ## See also

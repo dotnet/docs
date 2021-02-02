@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ff664f33-ad02-422c-9041-bab6d993f9cc
 ---
 # Dead Letter Queues
+
 This sample demonstrates how to handle and process messages that have failed delivery. It is based on the [Transacted MSMQ Binding](transacted-msmq-binding.md) sample. This sample uses the `netMsmqBinding` binding. The service is a self-hosted console application to enable you to observe the service receiving queued messages.
 
 > [!NOTE]
@@ -344,6 +345,7 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
     > Setting `security mode` to `None` is equivalent to setting `MsmqAuthenticationMode`, `MsmqProtectionLevel` and `Message` security to `None`.
 
 ## Comments
+
  By default with the `netMsmqBinding` binding transport, security is enabled. Two properties, `MsmqAuthenticationMode` and `MsmqProtectionLevel`, together determine the type of transport security. By default the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain. If you run this sample on a computer that is not part of a domain, you receive the following error: "User's internal message queuing certificate does not exist".
 
 > [!IMPORTANT]

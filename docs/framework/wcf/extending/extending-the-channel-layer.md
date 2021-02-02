@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 4238db74-2fb6-4dc8-a326-f58527230810
 ---
 # Extending the Channel Layer
+
 The channel layer is responsible for the exchange of messages between clients and services. Channel extensions can implement new protocol functionality, such as security, or transport functionality, such as implementing a new network transport to carry SOAP messages.  
   
 ## In This Section  
+
  [Channel Model Overview](channel-model-overview.md)  
  Provides a high-level overview of what channels are, the features that they provide and how they work both in a service and a client application.  
   

@@ -9,14 +9,14 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet tool restore` - Installs on your machine the .NET local tools that are in scope for the current directory.
+`dotnet tool restore` - Installs the .NET local tools that are in scope for the current directory.
 
 ## Synopsis
 
 ```dotnetcli
 dotnet tool restore
     [--configfile <FILE>] [--add-source <SOURCE>]
-    [tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
+    [--tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
     [--ignore-failed-sources] [--no-cache] [--interactive]
     [-v|--verbosity <LEVEL>]
 

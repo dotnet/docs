@@ -3,7 +3,7 @@ title: Single file application
 description: Learn what single file application is and why you should consider using this application deployment model.
 author: lakshanf
 ms.author: lakshanf
-ms.date: 08/28/2020
+ms.date: 12/17/2020
 ---
 # Single file deployment and executable
 
@@ -51,6 +51,8 @@ To fix these errors, _mscordbi_ needs to be copied next to the executable. _msco
 
 Single-file doesn't bundle native libraries by default. On Linux, we prelink the runtime into the bundle and only application native libraries are deployed to the same directory as the single-file app. On Windows, we prelink only the hosting code and both the runtime and application native libraries are deployed to the same directory as the single-file app. This is to ensure a good debugging experience, which requires native files to be excluded from the single file. There is an option to set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native libraries in the single file bundle, but these files will be extracted to a temporary directory in the client machine when the single file application is run.
 
+Specifying `IncludeAllContentForSelfExtract` will extract all files before running the executable. This preserves the original .NET Core single-file deployment behavior.
+
 Single-file application will have all related PDB files alongside it and will not be bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded` as described [below](#include-pdb-files-inside-the-bundle) in detail.
 
 Managed C++ components aren't well suited for single-file deployment and we recommend that you write applications in C# or another non-managed C++ language to be single-file compatible.
@@ -90,6 +92,39 @@ For example, add the following property to the project file of an assembly to em
 </PropertyGroup>
 ```
 
+## Publish a single file app - sample project file
+
+Here's a sample project file that specifies single-file publishing:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishTrimmed>true</PublishTrimmed>
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+</Project>
+```
+
+These properties have the following functions:
+
+* `PublishSingleFile` - Enables single-file publishing.
+* `SelfContained` - Determines whether the app will be self-contained or framework-dependent.
+* `RuntimeIdentifier` - Specifies the [OS and CPU type](../rid-catalog.md) you are targeting.
+* `PublishTrimmed` - Enables use of [assembly trimming](trim-self-contained.md), which is only supported for self-contained apps.
+* `PublishReadyToRun` - Enables [ahead-of-time (AOT) compilation](ready-to-run.md).
+
+**Notes:**
+
+* Apps are OS and architecture-specific. You need to publish for each configuration, such as Linux x64, Linux ARM64, Windows x64, and so forth.
+* Configuration files, such as *\*.runtimeconfig.json*, are included in the single file. If an additional configuration file is needed, you can place it beside the single file.
+
 ## Publish a single file app - CLI
 
 Publish a single file application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
@@ -127,8 +162,8 @@ Visual Studio creates reusable publishing profiles that control how your applica
 
 01. In the **Profile settings** dialog, set the following options:
 
-    - Set **Deployment mode** to **Self-contained**.
-    - Set **Target runtime** to the platform you want to publish to.
+    - Set **Deployment mode** to **Self-contained** or **Framework-dependent**.
+    - Set **Target runtime** to the platform you want to publish to. (Must be something other than **Portable**.)
     - Select **Produce single file**.
 
     Choose **Save** to save the settings and return to the **Publish** dialog.

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 36b5302a-93cc-478a-9bb2-8a1601fba1df
 ---
 # System.ServiceModel.MessageProcessingPaused
+
 System.ServiceModel.MessageProcessingPaused  
   
 ## Description  
+
  The threads were switched while processing a message.  
   
  Message processing can be paused by the following reasons:  

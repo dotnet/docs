@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ed4ca86e-e3d8-4acb-87aa-1921fbc353be
 ---
 # Architecture of Syndication
+
 The Syndication API is designed to provide a format-neutral programming model that allows syndicated content to be written on to the wire in a variety of formats. The abstract data model consists of the following classes:  
   
 - <xref:System.ServiceModel.Syndication.SyndicationCategory>  
@@ -30,6 +31,7 @@ The Syndication API is designed to provide a format-neutral programming model th
 > The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing the WCF implementation ignores the fractional seconds.  
   
 ## Object Model  
+
  The object model for syndication consists of the groups of classes in the following tables.  
   
  Formatting Classes:  

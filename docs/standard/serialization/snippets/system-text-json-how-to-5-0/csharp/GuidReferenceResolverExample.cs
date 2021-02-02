@@ -19,7 +19,7 @@ namespace GuidReferenceResolverExample
 
         public override object ResolveReference(string referenceId)
         {
-            Guid id = new Guid(referenceId);
+            Guid id = new(referenceId);
 
             _people.TryGetValue(id, out Person p);
 
@@ -28,19 +28,19 @@ namespace GuidReferenceResolverExample
 
         public override string GetReference(object value, out bool alreadyExists)
         {
-            Person p = (Person)value;
+            Person person = (Person)value;
 
-            if (!(alreadyExists = _people.ContainsKey(p.Id)))
+            if (!(alreadyExists = _people.ContainsKey(person.Id)))
             {
-                _people[p.Id] = p;
+                _people[person.Id] = person;
             }
 
-            return p.Id.ToString();
+            return person.Id.ToString();
         }
 
         public override void AddReference(string reference, object value)
         {
-            Guid id = new Guid(reference);
+            Guid id = new(reference);
             Person person = (Person)value;
             person.Id = id;
             _people[id] = person;
@@ -69,8 +69,8 @@ namespace GuidReferenceResolverExample
             List<Person> peopleDeserialized =
                 JsonSerializer.Deserialize<List<Person>>(json, options);
 
-            Person tylerDeserialized = people[0];
-            Person adrianDeserialized = people[1];
+            Person tylerDeserialized = peopleDeserialized[0];
+            Person adrianDeserialized = peopleDeserialized[1];
 
             Console.WriteLine($"Adrian is Tyler's spouse: {tylerDeserialized.Equals(adrianDeserialized.Spouse)}");
             Console.WriteLine($"Tyler is Adrian's spouse: {adrianDeserialized.Equals(tylerDeserialized.Spouse)}");

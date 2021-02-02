@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 37bcd668-9c5c-4e7c-81da-a1f1b3a16514
 ---
 # Workflow Hosting Options
+
 Most of the Windows Workflow Foundation (WF) samples use workflows that are hosted in a console application, but this isn't a realistic scenario for real-world workflows. Workflows in actual business applications will be hosted in persistent processes- either a Windows service authored by the developer, or a server application such as IIS 7.0 or AppFabric. The differences between these approaches are as follows.
 
 ## Hosting workflows in IIS with Windows AppFabric

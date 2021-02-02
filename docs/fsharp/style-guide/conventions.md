@@ -1,7 +1,7 @@
 ---
 title: F# coding conventions
 description: Learn general guidelines and idioms when writing F# code.
-ms.date: 01/15/2020
+ms.date: 01/5/2021
 ---
 # F# coding conventions
 
@@ -129,7 +129,7 @@ There are many times when initializing a value can have side effects, such as in
 ```fsharp
 // This is bad!
 module MyApi =
-    let dep1 = File.ReadAllText "/Users/{your name}/connectionstring.txt"
+    let dep1 = File.ReadAllText "/Users/<name>/connectionstring.txt"
     let dep2 = Environment.GetEnvironmentVariable "DEP_2"
 
     let private r = Random()
@@ -184,9 +184,9 @@ In this case, there are three known ways that withdrawing money from a bank acco
 let handleWithdrawal amount =
     let w = withdrawMoney amount
     match w with
-    | Success am -> printfn "Successfully withdrew %f" am
-    | InsufficientFunds balance -> printfn "Failed: balance is %f" balance
-    | CardExpired expiredDate -> printfn "Failed: card expired on %O" expiredDate
+    | Success am -> printfn $"Successfully withdrew %f{am}"
+    | InsufficientFunds balance -> printfn $"Failed: balance is %f{balance}"
+    | CardExpired expiredDate -> printfn $"Failed: card expired on {expiredDate}"
     | UndisclosedFailure -> printfn "Failed: unknown"
 ```
 
@@ -232,7 +232,7 @@ Reconciling functionality to perform in the face of an exception with pattern ma
 
 ### Do not use monadic error handling to replace exceptions
 
-Exceptions are seen as somewhat taboo in functional programming. Indeed, exceptions violate purity, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run, and that runtime errors can occur. In general, write code on the assumption that most things are neither pure nor total, to minimize unpleasant surprises.
+Exceptions are often seen as taboo in functional programming. Indeed, exceptions violate purity, so it's safe to consider them not-quite functional. However, this ignores the reality of where code must run, and that runtime errors can occur. In general, write code on the assumption that most things are neither pure nor total, to minimize unpleasant surprises.
 
 It is important to consider the following core strengths/aspects of Exceptions with respect to their relevance and appropriateness in the .NET runtime and cross-language ecosystem as a whole:
 
@@ -311,7 +311,7 @@ Curried functions do not label their arguments. This has tooling implications. C
 
 ```fsharp
 let func name age =
-    printfn "My name is %s and I am %d years old!" name age
+    printfn $"My name is {name} and I am %d{age} years old!"
 
 let funcWithApplication =
     printfn "My name is %s and I am %d years old!"
@@ -325,7 +325,7 @@ val func : name:string -> age:int -> unit
 val funcWithApplication : (string -> int -> unit)
 ```
 
-At the call site, tooltips in tooling such as Visual Studio will not give you meaningful information as to what the `string` and `int` input types actually represent.
+At the call site, tooltips in tooling such as Visual Studio will give you the type signature, but since there are no names defined, it won't display names. Names are critical to good API design because they help callers better understanding the meaning behind the API. Using point-free code in the public API can make it harder for callers to understand.
 
 If you encounter point-free code like `funcWithApplication` that is publicly consumable, it is recommended to do a full η-expansion so that tooling can pick up on meaningful names for arguments.
 

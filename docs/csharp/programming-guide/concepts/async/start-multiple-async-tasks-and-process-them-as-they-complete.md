@@ -123,13 +123,13 @@ The `while` loop performs the following steps for each task in the collection:
 1. Awaits a call to `WhenAny` to identify the first task in the collection that has finished its download.
 
     ```csharp
-    Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
+    Task<int> finishedTask = await Task.WhenAny(downloadTasks);
     ```
 
 1. Removes that task from the collection.
 
     ```csharp
-    downloadTasks.Remove(firstFinishedTask);
+    downloadTasks.Remove(finishedTask);
     ```
 
 1. Awaits `finishedTask`, which is returned by a call to `ProcessUrlAsync`. The `finishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property, which would throw the `AggregateException`.

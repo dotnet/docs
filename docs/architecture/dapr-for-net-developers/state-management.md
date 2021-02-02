@@ -33,14 +33,14 @@ The Dapr state sanagement building block addresses these challenges. It streamli
 
 The application interacts with a Dapr sidecar to store and retrieve key/value data. Under the hood, the sidecar API consumes a configurable state store component to persist data. Developers can choose from a growing collection of [supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) that include Azure Cosmos DB, SQL Server, and Cassandra.
 
-The API can be called with either HTTP or gRPC using the following URL:
+The API can be called with either HTTP or gRPC. Use the following URL to call the HTTP API:
 
 ```http
-http://localhost:<daprPort>/v1.0/state/<stateStoreName>/
+http://localhost:<dapr-port>/v1.0/state/<state-store-name>/
 ```
 
-- `<daprPort>`: the HTTP port that Dapr listens on.
-- `<stateStoreName>`: the name of the state store component to use.
+- `<dapr-port>`: the HTTP port that Dapr listens on.
+- `<state-store-name>`: the name of the state store component to use.
 
 Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr state store component named `statestore`.
 
@@ -56,7 +56,7 @@ Note the steps in the previous figure:
 
 Retrieving the stored data is a similar API call. In the example below, a *curl* command retrieves the data by calling the Dapr sidecar API:
 
-```
+```console
 curl http://localhost:3500/v1.0/state/statestore/basket1
 ```
 
@@ -100,7 +100,7 @@ Distributed applications must handle the **P** property. As services communicate
 
 The consistency level for a state operation is specified by attaching a *consistency hint* to the operation. The following *curl* command writes a `Hello=World` key/value pair to a state store using a strong consistency hint:
 
-```bash
+```console
 curl -X POST http://localhost:3500/v1.0/state/<store_name> \
   -H "Content-Type: application/json" \
   -d '[
@@ -131,7 +131,7 @@ Dapr can write *multi-item changes* to a data store as a single operation implem
 
 In the example below, a multi-item operation is sent to the state store in a single transaction. All operations must succeed for the transaction to commit. If one or more of the operations fail, the entire transaction rolls back.
 
-```bash
+```console
 curl -X POST http://localhost:3500/v1.0/state/<store_name>/transaction \
   -H "Content-Type: application/json" \
   -d '{
@@ -151,7 +151,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name>/transaction \
 
 For data stores that don't support transactions, multiple keys can still be sent as a single request. The following example shows a **bulk** write operation:
 
-```bash
+```console
 curl -X POST http://localhost:3500/v1.0/state/<store_name> \
   -H "Content-Type: application/json" \
   -d '[
@@ -166,7 +166,7 @@ For bulk operations, Dapr will submit each key/value pair update as a separate r
 
 The Dapr .NET SDK provides language-specific support for .NET Core platform. Developers can use the `DaprClient` class introduced in [chapter 3](getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
 
-```c#
+```csharp
 var weatherForecast = await daprClient.GetStateAsync<WeatherForecast>("statestore", "AMS");
 ```
 
@@ -174,13 +174,13 @@ If the state store contains no data for key `AMS`, the result will be `default(W
 
 To write data to the data store, use the `DaprClient.SaveStateAsync<TValue>` method:
 
-```c#
+```csharp
 daprClient.SaveStateAsync("statestore", "AMS", weatherForecast);
 ```
 
 The example uses the **last-write-wins** strategy as an ETag value isn't passed to the state store component. To use optimistic concurrency control (OCC) with a **first-write-wins** strategy, first retrieve the current ETag using the `DaprClient.GetStateAndETagAsync` method. Then write the updated value and pass along the retrieved ETag using the `DaprClient.TrySaveStateAsync` method.
 
-```c#
+```csharp
 var (weatherForecast, etag) = await daprClient.GetStateAndETagAsync<WeatherForecast>("statestore", city);
 
 // ... make some changes to the retrieved weather forecast
@@ -198,7 +198,7 @@ The SDK provides other methods to retrieve data in bulk, delete data, and execut
 
 Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding?view=aspnetcore-5.0) capabilities. Configuration is simple. Add the `IMVCBuilder.AddDapr` by appending the `.AddDapr` extension method in your `Startup.cs` class as shown in the next example:
 
-```c#
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllers().AddDapr();
@@ -207,7 +207,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Once configured, Dapr can inject a key/value pair directly into a controller action using the ASP.NET Core `FromState` attribute. Referencing the `DaprClient` object is no longer necessary. The next example shows a Web API that returns the weather forecast for a given city:
 
-```c#
+```csharp
 [HttpGet("{city}")]
 public ActionResult<WeatherForecast> Get([FromState("statestore", "city")] StateEntry<WeatherForecast> forecast)
 {
@@ -224,7 +224,7 @@ In the example, the controller loads the weather forecast using the `FromState` 
 
 The `StateEntry` class contains properties for all the information that is retrieved for a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. The ETag is useful for implementing optimistic concurrency control (OCC) strategy. The class also provides methods to delete or update retrieved key/value data without requiring a `DaprClient` instance. In the next example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC.
 
-```c#
+```csharp
 [HttpPut("{city}")]
 public async Task Put(WeatherForecast updatedForecast, [FromState("statestore", "city")] StateEntry<WeatherForecast> currentForecast)
 {
@@ -274,6 +274,7 @@ metadata:
   name: statestore
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -294,7 +295,7 @@ The other metadata field, `actorStateStore`, indicates whether the state store c
 
 State store components enable different strategies to store key/value pairs in the underlying store. Recall the earlier example of a shopping basket service storing items a customer wishes to purchase:
 
-```bash
+```console
 curl -X POST http://localhost:3500/v1.0/state/statestore \
   -H "Content-Type: application/json" \
   -d '[{
@@ -340,7 +341,7 @@ This book includes a reference application entitled `eShopOnDapr`. It's modeled 
 
 The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) architecture used an `IBasketRepository` interface to read and write data for the Basket service. The `RedisBasketRepository` class provided the implementation using Redis as the underlying data store:
 
-```c#
+```csharp
 public class RedisBasketRepository : IBasketRepository
 {
     private readonly ConnectionMultiplexer _redis;
@@ -372,7 +373,7 @@ This code uses the third party `StackExchange.Redis` NuGet package. The followin
 
 1. Inject a `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the `Startup.cs` file:
 
-   ```c#
+   ```csharp
    services.AddSingleton<ConnectionMultiplexer>(sp =>
    {
        var settings = sp.GetRequiredService<IOptions<BasketSettings>>().Value;
@@ -392,7 +393,7 @@ This code uses the third party `StackExchange.Redis` NuGet package. The followin
 
 In the updated [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr) reference application, a new `DaprBasketRepository` class replaces the `RedisBasketRepository` class:
 
-```c#
+```csharp
 public class DaprBasketRepository : IBasketRepository
 {
     private const string StoreName = "eshop-basket-statestore";
@@ -428,6 +429,7 @@ metadata:
   namespace: default
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: redis:6379

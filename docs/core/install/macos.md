@@ -48,7 +48,7 @@ The following versions of .NET are ❌ no longer supported. The downloads for th
 
 The runtime is used to run apps created with .NET. When an app author publishes an app, they can include the runtime with their app. If they don't include the runtime, it's up to the user to install the runtime.
 
-There are three different runtimes you can install on macOS:
+There are two different runtimes you can install on macOS:
 
 *ASP.NET Core runtime*\
 Runs ASP.NET Core apps. Includes the .NET runtime.

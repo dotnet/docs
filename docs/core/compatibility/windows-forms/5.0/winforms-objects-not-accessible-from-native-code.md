@@ -13,8 +13,8 @@ In previous .NET versions, some Windows Forms types were decorated as visible to
 
 ## Reason for change
 
-- Removal of `ComVisible(true)` from enumerations that were used for TLB generation and lookup: Since there is no WinForms TLB provided by .NET Core, there is no value in keeping this attribute.
-- Removal of `ComVisible(true)` from `AccessibleObject` classes: They are not CoCreateable (no parameterless constructor) and exposing an already existing instance to COM does not require that attribute.
+- Removal of `ComVisible(true)` from enumerations that were used for type library (TLB file) generation and lookup: Since there is no WinForms TLB provided by .NET Core, there's no value in keeping this attribute.
+- Removal of `ComVisible(true)` from `AccessibleObject` classes: The classes are not CoCreateable (they have no parameterless constructor), and exposing an already existing instance to COM does not require that attribute.
 - Removal of `ComVisible(true)` from `Control` and `Component` classes: This was used to allow hosting of WinForms controls via OLE/ActiveX, for example in VB6 or MFC. However, this requires a TLB for WinForms, which is no longer provided, as well as registry-based activation, which also would not work out of the box. Generally, there was no maintenance of COM-based hosting of WinForms controls, so support was removed instead of leaving it in an unsupported state.
 - Removal of `ClassInterface` attributes from controls: If hosting via OLE/ActiveX is not supported, these attributes aren't needed anymore. They are kept in other places where objects are still exposed to COM and the attribute may be relevant.
 - Removal of `ComVisible(true)` from `EventArgs`: They were most likely used with OLE/ActiveX hosting, which is no longer supported. They are not CoCreateable either, so the attribute has no purpose. Also, exposing existing instances without providing a TLB makes no sense.

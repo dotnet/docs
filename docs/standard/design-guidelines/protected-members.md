@@ -1,7 +1,6 @@
 ---
 title: "Protected Members"
 ms.date: "10/22/2008"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "members [.NET Framework], protected"
   - "protected members"
@@ -12,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: aa0b58ee-3956-494d-ab48-471ae5db8740
 ---
 # Protected Members
+
 Protected members by themselves do not provide any extensibility, but they can make extensibility through subclassing more powerful. They can be used to expose advanced customization options without unnecessarily complicating the main public interface.
 
  Framework designers need to be careful with protected members because the name "protected" can give a false sense of security. Anyone is able to subclass an unsealed class and access protected members, and so all the same defensive coding practices used for public members apply to protected members.

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: e98d76ba-1acf-42cd-b137-0f8214661112
 ---
 # Queuing in WCF
+
 This section describes how to use queued communication in Windows Communication Foundation (WCF).  
   
 ## Queues as a WCF transport binding  
+
  In WCF, the contracts specify what is being exchanged. Contracts are business-dependent or application-specific message exchanges. The mechanism used to exchange messages (or the "how") is specified in the bindings. Bindings in WCF encapsulate details of the message exchange. They expose configuration knobs for the user to control various aspects of the transport or the protocol that the bindings represent. Queuing in WCF is treated like any other transport binding, which is a big advantage for many queuing applications. Today, many queuing applications are written differently from other remote procedure call (RPC)-style distributed applications, making it harder to follow and maintain. With WCF, the style of writing a distributed application is much the same, making it easier to follow and maintain. Moreover, by factoring out the mechanism of exchange separately from the business logic, it is easier to configure the transport or make changes to it without affecting application specific code. The following figure illustrates the structure of a WCF service and client using MSMQ as a transport.  
   
  ![Queued Application Diagram](media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
@@ -24,6 +26,7 @@ This section describes how to use queued communication in Windows Communication 
  The following sections describe the specific queued bindings shipped with WCF, which are based on MSMQ.  
   
 ### MSMQ  
+
  The queued transport in WCF uses MSMQ for its queued communication.  
   
  MSMQ ships as an optional component with Windows and runs as an NT service. It captures messages for transmission in a transmission queue and for delivery in a target queue. The MSMQ queue managers implement a reliable message-transfer protocol so that messages are not lost in transmission. The protocol can be either native or SOAP-based, such as the SOAP Reliable Message Protocol (SRMP).  
@@ -35,11 +38,13 @@ This section describes how to use queued communication in Windows Communication 
  For more information about MSMQ, see [Installing Message Queuing (MSMQ)](../samples/installing-message-queuing-msmq.md).  
   
 ### NetMsmqBinding  
+
  The [\<netMsmqBinding>](../../configure-apps/file-schema/wcf/netmsmqbinding.md) is the queued binding WCF provides for two WCF endpoints to communicate using MSMQ. The binding, therefore, exposes properties that are specific to MSMQ. However, not all MSMQ features and properties are exposed in the `NetMsmqBinding`. The compact `NetMsmqBinding` is designed with an optimal set of features that most customers should find sufficient.  
   
  The `NetMsmqBinding` manifests the core queuing concepts discussed thus far in the form of properties on the bindings. These properties, in turn, communicate to MSMQ how to transfer and deliver the messages. A discussion of the property categories is in the following sections. For more information, see the conceptual topics that describe specific properties more completely.  
   
 #### ExactlyOnce and Durable Properties  
+
  The `ExactlyOnce` and `Durable` properties affect how messages are transferred between queues:  
   
 - `ExactlyOnce`: When set to `true` (the default), the queued channel ensures that the message, if delivered, is not duplicated. It also ensures that the message is not lost. If the message cannot be delivered, or the message Time-To Live expires before the message can be delivered, the failed message along with the delivery failure reason is recorded in a dead-letter queue. When set to `false`, the queued channel makes an effort to transfer the message. In this case, you can optionally choose a dead-letter queue.  
@@ -52,6 +57,7 @@ This section describes how to use queued communication in Windows Communication 
 > Ensure that the correct queue (transactional or non-transactional) is created based on settings in the bindings. If `ExactlyOnce` is `true`, use a transactional queue; otherwise, use a non-transactional queue.  
   
 #### Dead-Letter Queue Properties  
+
  The dead-letter queue is used to store messages that fail delivery. The user can write compensating logic that reads messages out of the dead-letter queue.  
   
  Many queuing systems provide for a system-wide dead-letter queue. MSMQ provides a system-wide non-transactional dead-letter queue for messages that fail delivery to non-transactional queues and a system-wide transactional dead-letter queue for messages that fail delivery to transactional queues.  
@@ -65,9 +71,11 @@ This section describes how to use queued communication in Windows Communication 
 - `CustomDeadLetterQueue`: This property is the Uniform Resource Identifier (URI) address of the application-specific dead-letter queue. This is required if `DeadLetterQueue`.`Custom` is chosen.  
   
 #### Poison Message Handling properties  
+
  When the service reads messages from the target queue under a transaction, the service may fail to process the message for various reasons. The message is then put back into the queue to be read again. To deal with messages that fail repeatedly, a set of poison-message handling properties can be configured in the binding. There are four properties: `ReceiveRetryCount`, `MaxRetryCycles`, `RetryCycleDelay`, and `ReceiveErrorHandling`. For more information about these properties, see [Poison Message Handling](poison-message-handling.md).  
   
 #### Security Properties  
+
  MSMQ exposes its own security model, such as access control lists (ACLs) on a queue or sending authenticated messages. The `NetMsmqBinding` exposes these security properties as part of its transport security settings. There are two properties in the binding for transport security: `MsmqAuthenticationMode` and `MsmqProtectionLevel`. Settings in these properties depend on how MSMQ is configured. For more information, see [Securing Messages Using Transport Security](securing-messages-using-transport-security.md).  
   
  In addition to transport security, the actual SOAP message itself can be secured using message security. For more information, see [Securing Messages Using Message Security](securing-messages-using-message-security.md).  
@@ -75,6 +83,7 @@ This section describes how to use queued communication in Windows Communication 
  `MsmqTransportSecurity` also exposes two properties, `MsmqEncryptionAlgorithm` and `MsmqHashAlgorithm`. These are enumerations of different algorithms to choose for queue-to-queue transfer encryption of messages and hashing of the signatures.  
   
 #### Other Properties  
+
  In addition to the preceding properties, other MSMQ-specific properties exposed in the binding include:  
   
 - `UseSourceJournal`: A property to indicate that source journaling is turned on. Source journaling is an MSMQ feature that keeps track of messages that have been successfully transmitted from the transmission queue.  
@@ -86,6 +95,7 @@ This section describes how to use queued communication in Windows Communication 
 - `UseActiveDirectory`: A Boolean value to indicate whether the Active Directory must be used for queue address resolution. By default, this is off. For more information, see [Service Endpoints and Queue Addressing](service-endpoints-and-queue-addressing.md).  
   
 ### MsmqIntegrationBinding  
+
  The `MsmqIntegrationBinding` is used when you want a WCF endpoint to communicate with an existing MSMQ application written in C, C++, COM, or System.Messaging APIs.  
   
  The binding properties are the same as for `NetMsmqBinding`. However, the following differences apply:  
@@ -97,6 +107,7 @@ This section describes how to use queued communication in Windows Communication 
 - To help with serialization and deserialization of the message body, serializers such as XML and ActiveX are provided.  
   
 ### Sample Code  
+
  For step by step instructions on how to write WCF services that use MSMQ see the following topics:  
   
 - [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  

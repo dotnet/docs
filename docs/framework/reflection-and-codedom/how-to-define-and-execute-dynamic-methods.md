@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 07d08a99-62c5-4254-bce2-2a75e55a18ab
 ---
 # How to: Define and Execute Dynamic Methods
+
 The following procedures show how to define and execute a simple dynamic method and a dynamic method bound to an instance of a class. For more information on dynamic methods, see the <xref:System.Reflection.Emit.DynamicMethod> class and [Reflection Emit Dynamic Method Scenarios](/previous-versions/dotnet/netframework-4.0/sfk2s47t(v=vs.100)).  
   
 ### To define and execute a dynamic method  
@@ -95,6 +96,7 @@ The following procedures show how to define and execute a simple dynamic method 
      [!code-vb[DynamicMethodHowTo#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/DynamicMethodHowTo/vb/source.vb#16)]  
   
 ## Example  
+
  The following code example demonstrates a simple dynamic method and a dynamic method bound to an instance of a class.  
   
  The simple dynamic method takes one argument, a 32-bit integer, and returns the 64-bit square of that integer. A generic delegate is used to invoke the method.  

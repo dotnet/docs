@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 7485154a-6e85-4a67-a9d4-9008e741d4df
 ---
 # Creating Multicasting Applications using the UDP Transport
+
 Multicasting applications send small messages to a large number of recipients at the same time without the need to establish point to point connections. The emphasis of such applications is speed over reliability. In other words, it is more important to send timely data than to ensure any specific message is actually received. WCF now supports writing multicasting applications using the <xref:System.ServiceModel.UdpBinding>. This transport is useful in scenarios where a service needs to send out small messages to a number of clients simultaneously. A stock ticker application is an example of such a service.  
   
 ## Implementing a Multicast Application  
+
  To implement a multicast application, define a service contract and for each software component that needs to respond to the multicast messages, implement the service contract. For example, a stock ticker application might define a service contract:  
   
 ```csharp
@@ -85,9 +87,11 @@ while (true)
  This code generates stock information and then uses the service contract IStockTicker to send multicast messages to call services listening on the correct UDP address.  
   
 ### UDP and Reliable Messaging  
+
   The UDP binding does not support reliable messaging because of the lightweight nature of the UDP protocol. If you need to confirm that messages are received by a remote endpoint, use a transport that supports reliable messaging like  HTTP or TCP. For more information about reliable messaging, see <https://go.microsoft.com/fwlink/?LinkId=231830>.  
   
 ### Two-way Multicast Messaging  
+
  While multicast messages are generally one-way, the UdpBinding does support request/reply message exchange. Messages sent using the UDP transport contain both a From and To address. Care must be taken when using the From address as it could be maliciously changed en-route.  The address can be checked using the following code:  
   
 ```csharp
@@ -107,6 +111,7 @@ else
  This code checks the first byte of the From address to see if it contains 0xE0 which signifies that the address is a multi-cast address.  
   
 ### Security Considerations  
+
  When listening for multicast messages an ICMP packet is sent to the router notifying it you are listening on the multicast address. Anyone on the local subnet who has permissions could listen for these types of packets and determine which multicast address and port you are listening on.  
   
  Do not use the IP address of the sender for any security purposes. This information can be spoofed and can cause an application to send responses to the wrong machine. One way to mitigate this threat is to enable message level security. At the network level IPSec  (Internet Protocol Security) and/or NAP (Network Access Protection) could also be used.

@@ -52,6 +52,7 @@ End Class
 ```
   
 ## Renaming a Function in C# and C++  
+
  You can use the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field to specify a DLL function by name or ordinal. If the name of the function in your method definition is the same as the entry point in the DLL, you do not have to explicitly identify the function with the **EntryPoint** field. Otherwise, use one of the following attribute forms to indicate a name or ordinal:  
   
 ```csharp
@@ -70,7 +71,7 @@ using System.Runtime.InteropServices;
 internal static class NativeMethods
 {
     [DllImport("user32.dll", EntryPoint = "MessageBoxA")]
-    internal static extern int MessageBox(
+    internal static extern int MsgBox(
         IntPtr hWnd, string lpText, string lpCaption, uint uType);
 }
 ```

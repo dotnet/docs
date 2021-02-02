@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 52961ffc-d1c7-4f83-832c-786444b951ba
 ---
 # How to: Migrate Managed-Code DCOM to WCF
+
 Windows Communication Foundation (WCF) is the recommended and secure choice over Distributed Component Object Model (DCOM) for managed code calls between servers and clients in a distributed environment. This article shows how you to migrate code from DCOM to WCF for the following scenarios.  
   
 - The remote service returns an object by-value to the client  
@@ -18,6 +19,7 @@ Windows Communication Foundation (WCF) is the recommended and secure choice over
  For more details about creating WCF services and clients for those services, see [Basic WCF Programming](../wcf/basic-wcf-programming.md), [Designing and Implementing Services](../wcf/designing-and-implementing-services.md), and [Building Clients](../wcf/building-clients.md).  
   
 ## DCOM example code  
+
  For these scenarios, the DCOM interfaces that are illustrated using WCF have the following structure:  
   
 ```csharp  
@@ -42,6 +44,7 @@ public class Customer
 ```  
   
 ## The service returns an object by-value  
+
  For this scenario, you make a call to a service and it method returns an object, which is passed by-value from the server to the client. This scenario represents the following COM call:  
   
 ```csharp  
@@ -54,6 +57,7 @@ public interface IRemoteService
  In this scenario, the client receives a deserialized copy of an object from the remote service. The client can interact with this local copy without calling back to the service.  In other words, the client is guaranteed the service will not be involved in any way when methods on the local copy are called. WCF always returns objects from the service by value, so the following steps describe creating a regular WCF service.  
   
 ### Step 1: Define the WCF service interface  
+
  Define a public interface for the WCF service and mark it with the [<xref:System.ServiceModel.ServiceContractAttribute>] attribute.  Mark the methods you want to expose to clients with the [<xref:System.ServiceModel.OperationContractAttribute>] attribute. The following example shows using these attributes to identify the server-side interface and interface methods a client can call. The method used for this scenario is shown in bold.  
   
 ```csharp  
@@ -73,6 +77,7 @@ public interface ICustomerManager
 ```  
   
 ### Step 2: Define the data contract  
+
  Next you should create a data contract for the service, which will describe how the data will be exchanged between the service and its clients.  Classes described in the data contract should be marked with the [<xref:System.Runtime.Serialization.DataContractAttribute>] attribute. The individual properties or fields you want visible to both client and server should be marked with the [<xref:System.Runtime.Serialization.DataMemberAttribute>] attribute. If you want types derived from a class in the data contract to be allowed, you must identify them with the [<xref:System.Runtime.Serialization.KnownTypeAttribute>] attribute. WCF will only serialize or deserialize types in the service interface and types identified as known types. If you attempt to use a type that is not a known type, an exception will occur.  
   
  For more information about data contracts, see [Data Contracts](../wcf/samples/data-contracts.md).  
@@ -115,6 +120,7 @@ public class Address
 ```  
   
 ### Step 3: Implement the WCF service  
+
  Next, you should implement the WCF service class that implements the interface you defined in the previous step.  
   
 ```csharp  
@@ -132,6 +138,7 @@ public class CustomerService: ICustomerManager
 ```  
   
 ### Step 4: Configure the service and the client  
+
  To run a WCF service, you need to declare an endpoint that exposes that service interface at a specific URL using a specific WCF binding. A binding specifies the transport, encoding and protocol details for the clients and server to communicate. You typically add bindings to the service project’s configuration file (web.config). The following shows a binding entry for the example service:  
   
 ```xml  
@@ -164,6 +171,7 @@ public class CustomerService: ICustomerManager
 ```  
   
 ### Step 5: Run the service  
+
  Finally, you can self-host it in a console application by adding the following lines to the service app, and starting the app. For more information about other ways to host a WCF service application, [Hosting Services](../wcf/hosting-services.md).  
   
 ```csharp  
@@ -172,6 +180,7 @@ customerServiceHost.Open();
 ```  
   
 ### Step 6: Call the service from the client  
+
  To call the service from the client, you need to create a channel factory for the service, and request a channel, which will enable you to directly call the `GetCustomer` method directly from the client. The channel implements the service’s interface and handles the underlying request/reply logic for you.  The return value from that method call is the deserialized copy of the service response.  
   
 ```csharp  
@@ -182,6 +191,7 @@ Customer customer = service.GetCustomer("Mary", "Smith");
 ```  
   
 ## The client sends a by-value object to the server  
+
  In this scenario, the client sends an object to the server, by-value. This means that the server will receive a deserialized copy of the object.  The server can call methods on that copy and be guaranteed there is no callback into client code. As mentioned previously, normal WCF exchanges of data are by-value.  This guarantees that calling methods on one of these objects executes locally only – it will not invoke code on the client.  
   
  This scenario represents the following COM method call:  
@@ -207,6 +217,7 @@ public interface ICustomerManager
 ```  
   
 ### Add code to the client that sends a by-value object  
+
  The following code shows how the client creates a new by-value customer object, creates a channel to communicate with the `ICustomerManager` service, and sends the customer object to it.  
   
  The customer object will be serialized, and sent to the service, where it is deserialized by the service into a new copy of that object.  Any methods the service calls on this object will execute only locally on the server. It’s important to note that this code illustrates sending a derived type (`PremiumCustomer`).  The service contract expects a `Customer` object, but the service data contract uses the [<xref:System.Runtime.Serialization.KnownTypeAttribute>] attribute to indicate that `PremiumCustomer` is also allowed.  WCF will fail attempts to serialize or deserialize any other type via this service interface.  
@@ -227,6 +238,7 @@ customerManager.StoreCustomer(customer);
 ```  
   
 ## The service returns an object by reference  
+
  For this scenario, the client app makes a call to the remote service and the method returns an object, which is passed by reference from the service to the client.  
   
  As mentioned previously, WCF services always return object by value.  However, you can achieve a similar result by using the <xref:System.ServiceModel.EndpointAddress10> class.  The <xref:System.ServiceModel.EndpointAddress10> is a serializable by-value object that can be used by the client to obtain a sessionful by-reference object on the server.  
@@ -245,6 +257,7 @@ public interface IRemoteService
 ```  
   
 ### Step 1: Define the Sessionful WCF service interface and implementation  
+
  First, define a WCF service interface that contains the sessionful object.  
   
  In this code, the sessionful object is marked with the `ServiceContract` attribute, which identifies it as a regular WCF service interface.  In addition, the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property is set to indicate it will be a sessionful service.  
@@ -285,6 +298,7 @@ public interface ISessionBoundObject
 ```  
   
 ### Step 2: Define the WCF factory service for the sessionful object  
+
  The service that creates the sessionful object must be defined and implemented. The following code shows how to do this. This code creates another WCF service that returns an <xref:System.ServiceModel.EndpointAddress10> object.  This is a serializable form of an endpoint the can use to create the session-full object.  
   
 ```csharp  
@@ -317,6 +331,7 @@ public class SessionBoundFactory : ISessionBoundFactory
 ```  
   
 ### Step 3: Configure and start the WCF services  
+
  To host these services, you will need to make the following additions to the server’s configuration file (web.config).  
   
 1. Add a `<client>` section that describes the endpoint for the sessionful object.  In this scenario, the server also acts as a client and must be configured to enable this.  
@@ -363,6 +378,7 @@ sessionBoundServiceHost.Open();
 ```  
   
 ### Step 4: Configure the client and call the service  
+
  Configure the client to communicate with the WCF services by making the following entries in the project’s application configuration file (app.config).  
   
 ```xml  

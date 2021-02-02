@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "Workflow, wcf"
 ---
 # wfc.exe (Workflow Command-line Compiler Tool)
+
 > [!NOTE]
 > This material discusses types and namespaces that are obsolete.
 
@@ -89,6 +90,7 @@ This section shows the options for the wfc.exe workflow command-line compiler.
 ```
 
 ## Remarks
+
 > [!NOTE]
 > This material discusses types and namespaces that are obsolete.
 

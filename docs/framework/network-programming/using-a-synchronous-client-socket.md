@@ -20,6 +20,7 @@ helpviewer_keywords:
 ms.assetid: 945d00c6-7202-466c-9df9-140b84156d43
 ---
 # Using a Synchronous Client Socket
+
 A synchronous client socket suspends the application program while the network operation completes. Synchronous sockets are not suitable for applications that make heavy use of the network for their operation, but they can enable simple access to network services for other applications.  
   
  To send data, pass a byte array to one of the <xref:System.Net.Sockets.Socket> class's send-data methods (<xref:System.Net.Sockets.Socket.Send%2A> and <xref:System.Net.Sockets.Socket.SendTo%2A>). The following example encodes a string into a byte array buffer using the <xref:System.Text.Encoding.ASCII%2A?displayProperty=nameWithType> property and then transmits the buffer to the network device using the **Send** method. The **Send** method returns the number of bytes sent to the network device.  

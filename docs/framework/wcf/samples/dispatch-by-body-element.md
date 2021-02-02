@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f64a3c04-62b4-47b2-91d9-747a3af1659f
 ---
 # Dispatch by Body Element
+
 This sample demonstrates how to implement an alternate algorithm for assigning incoming messages to operations.  
   
  By default, the service model dispatcher selects the appropriate handling method for an incoming message based on the message's WS-Addressing "Action" header or the equivalent information in the HTTP SOAP request.  
@@ -64,6 +65,7 @@ private Message CreateMessageCopy(Message message,
 ```  
   
 ## Adding an Operation Selector to a Service  
+
  Service dispatch operation selectors are extensions to the Windows Communication Foundation (WCF) dispatcher. For selecting methods on the callback channel of duplex contracts, there are also client operation selectors, which work very much like the dispatch operation selectors described here, but which are not explicitly covered in this sample.  
   
  Like most service model extensions, dispatch operation selectors are added to the dispatcher using behaviors. A *behavior* is a configuration object, which either adds one or more extensions to the dispatch runtime (or to the client runtime) or otherwise changes its settings.  
@@ -112,6 +114,7 @@ public void ApplyDispatchBehavior(ContractDescription contractDescription, Servi
 ```  
   
 ## Implementing the Service  
+
  The behavior implemented in this sample directly affects how messages from the wire are interpreted and dispatched, which is a function of the service contract. Consequently, the behavior should be declared on the service contract level in any service implementation that chooses to use it.  
   
  The sample project service applies the `DispatchByBodyElementBehaviorAttribute` contract behavior to the `IDispatchedByBody` service contract and labels each of the two operations `OperationForBodyA()` and `OperationForBodyB()` with a `DispatchBodyElementAttribute` operation behavior. When a service host for a service that implements this contract is opened, this metadata is picked up by the dispatcher builder as previously described.  
@@ -137,6 +140,7 @@ public interface IDispatchedByBody
  The sample service implementation is straightforward. Every method wraps the received message into a reply message and echoes it back to the client.  
   
 ## Running and Building the Sample  
+
  When you run the sample, the body content of the operation responses are displayed in the client console window similar to the following (formatted) output.  
   
  The client sends three messages to the service whose body content element is named `bodyA`, `bodyB`, and `bodyX`, respectively. As can be deferred from the previous description and the service contract shown, the incoming message with the `bodyA` element is dispatched to the `OperationForBodyA()` method. Because there is no explicit dispatch target for the message with the `bodyX` body element, the message is dispatched to the `DefaultOperation()`. Each of the service operations wraps the received message body into an element specific to the method and returns it, which is done to correlate input and output messages clearly for this sample:  

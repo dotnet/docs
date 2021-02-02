@@ -71,7 +71,7 @@ You can then deconstruct an instance of the `Person` class named `p` with an ass
 The following example overloads the `Deconstruct` method to return various combinations of properties of a `Person` object. Individual overloads return:
 
 - A first and last name.
-- A first, last, and middle name.
+- A first, middle, and last name.
 - A first name, a last name, a city name, and a state name.
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]

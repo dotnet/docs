@@ -1,7 +1,6 @@
 ---
 title: "Create Console Applications in .NET"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - ".NET, creating console applications"
   - "application development [.NET], console"

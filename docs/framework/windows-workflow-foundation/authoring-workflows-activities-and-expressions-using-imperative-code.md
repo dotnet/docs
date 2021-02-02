@@ -5,9 +5,11 @@ ms.date: "03/30/2017"
 ms.assetid: cefc9cfc-2882-4eb9-8c94-7a6da957f2b2
 ---
 # Authoring Workflows, Activities, and Expressions Using Imperative Code
+
 A workflow definition is a tree of configured activity objects. This tree of activities can be defined many ways, including by hand-editing XAML or by using the Workflow Designer to produce XAML. Use of XAML, however, is not a requirement. Workflow definitions can also be created programmatically. This topic provides an overview of creating workflow definitions, activities, and expressions by using code. For examples of working with XAML workflows using code, see [Serializing Workflows and Activities to and from XAML](serializing-workflows-and-activities-to-and-from-xaml.md).  
   
 ## Creating Workflow Definitions  
+
  A workflow definition can be created by instantiating an instance of an activity type and configuring the activity object’s properties. For activities that do not contain child activities, this can be accomplished using a few lines of code.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#47](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#47)]  
@@ -20,6 +22,7 @@ A workflow definition is a tree of configured activity objects. This tree of act
  [!code-csharp[CFX_WorkflowApplicationExample#48](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#48)]  
   
 ### Using Object Initializers  
+
  The examples in this topic use object initialization syntax. Object initialization syntax can be a useful way to create workflow definitions in code because it provides a hierarchical view of the activities in the workflow and shows the relationship between the activities. There is no requirement to use object initialization syntax when you programmatically create workflows. The following example is functionally equivalent to the previous example.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#49](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#49)]  
@@ -27,6 +30,7 @@ A workflow definition is a tree of configured activity objects. This tree of act
  For more information about object initializers, see [How to: Initialize Objects without Calling a Constructor (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md) and [How to: Declare an Object by Using an Object Initializer](../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md).  
   
 ### Working with Variables, Literal Values, and Expressions  
+
  When creating a workflow definition using code, be aware of what code executes as part of the creation of the workflow definition and what code executes as part of the execution of an instance of that workflow. For example, the following workflow is intended to generate a random number and write it to the console.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#50](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#50)]  
@@ -69,6 +73,7 @@ new Assign<int>
  At run time, Visual Basic expressions are compiled into LINQ expressions. Both of the previous examples are serializable to XAML, but if the serialized XAML is intended to be viewed and edited in the workflow designer, use <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> for your expressions. Serialized workflows that use `ExpressionServices.Convert` can be opened in the designer, but the value of the expression will be blank. For more information about serializing workflows to XAML, see [Serializing Workflows and Activities to and from XAML](serializing-workflows-and-activities-to-and-from-xaml.md).  
   
 #### Literal Expressions and Reference Types  
+
  Literal expressions are represented in workflows by the <xref:System.Activities.Expressions.Literal%601> activity. The following <xref:System.Activities.Statements.WriteLine> activities are functionally equivalent.  
   
 ```csharp  
@@ -105,6 +110,7 @@ new Assign
  For more information about expressions, see [Expressions](expressions.md).  
   
 #### Invoking Methods on Objects using Expressions and the InvokeMethod Activity  
+
  The <xref:System.Activities.Expressions.InvokeMethod%601> activity can be used to invoke static and instance methods of classes in the .NET Framework. In a previous example in this topic, a random number was generated using the <xref:System.Random> class.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#51](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#51)]  
@@ -128,6 +134,7 @@ new InvokeMethod<int>
  Since <xref:System.Random.Next%2A> is not a static method, an instance of the <xref:System.Random> class is supplied for the <xref:System.Activities.Expressions.InvokeMethod%601.TargetObject%2A> property. In this example a new instance is created using a Visual Basic expression, but it could also have been created previously and stored in a workflow variable. In this example, it would be simpler to use the <xref:System.Activities.Statements.Assign%601> activity instead of the <xref:System.Activities.Expressions.InvokeMethod%601> activity. If the method call ultimately invoked by either the <xref:System.Activities.Statements.Assign%601> or <xref:System.Activities.Expressions.InvokeMethod%601> activities is long running, <xref:System.Activities.Expressions.InvokeMethod%601> has an advantage since it has a <xref:System.Activities.Expressions.InvokeMethod%601.RunAsynchronously%2A> property. When this property is set to `true`, the invoked method will run asynchronously with regard to the workflow. If other activities are in parallel, they will not be blocked while the method is asynchronously executing. Also, if the method to be invoked has no return value, then <xref:System.Activities.Expressions.InvokeMethod%601> is the appropriate way to invoke the method.  
   
 ## Arguments and Dynamic Activities  
+
  A workflow definition is created in code by assembling activities into an activity tree and configuring any properties and arguments. Existing arguments can be bound, but new arguments cannot be added to activities. This includes workflow arguments passed to the root activity. In imperative code, workflow arguments are specified as properties on a new CLR type, and in XAML they are declared by using `x:Class` and `x:Member`. Because there is no new CLR type created when a workflow definition is created as a tree of in-memory objects, arguments cannot be added. However, arguments can be added to a <xref:System.Activities.DynamicActivity>. In this example, a <xref:System.Activities.DynamicActivity%601> is created that takes two integer arguments, adds them together, and returns the result. A <xref:System.Activities.DynamicActivityProperty> is created for each argument, and the result of the operation is assigned to the <xref:System.Activities.Activity%601.Result%2A> argument of the <xref:System.Activities.DynamicActivity%601>.  
   
  [!code-csharp[CFX_WorkflowApplicationExample#55](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#55)]  
@@ -135,6 +142,7 @@ new InvokeMethod<int>
  For more information about dynamic activities, see [Creating an Activity at Runtime](creating-an-activity-at-runtime-with-dynamicactivity.md).  
   
 ## Compiled Activities  
+
  Dynamic activities are one way to define an activity that contains arguments using code, but activities can also be created in code and compiled into types. Simple activities can be created that derive from <xref:System.Activities.CodeActivity>, and asynchronous activities that derive from <xref:System.Activities.AsyncCodeActivity>. These activities can have arguments, return values, and define their logic using imperative code. For examples of creating these types of activities, see [CodeActivity Base Class](workflow-activity-authoring-using-the-codeactivity-class.md) and [Creating Asynchronous Activities](creating-asynchronous-activities-in-wf.md).  
   
  Activities that derive from <xref:System.Activities.NativeActivity> can define their logic using imperative code and they can also contain child activities that define the logic. They also have full access to the features of the runtime such as creating bookmarks. For examples of creating a <xref:System.Activities.NativeActivity>-based activity, see [NativeActivity Base Class](nativeactivity-base-class.md), [How to: Create an Activity](how-to-create-an-activity.md), and the [Custom Composite using Native Activity](./samples/custom-composite-using-native-activity.md) sample.  

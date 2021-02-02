@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IGCHost2 Interface
+
 Provides methods for obtaining information about the garbage collection system and for controlling some aspects of garbage collection.  
   
 > [!NOTE]
@@ -28,6 +29,7 @@ Provides methods for obtaining information about the garbage collection system a
 |[SetGCStartupLimitsEx Method](igchost2-setgcstartuplimitsex-method.md)|Sets the segment size and the maximum size for generation 0. Enables generation 0 and segment sizes larger than `DWORD`.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorSetENC Enumeration
+
 Contains values used to influence behavior during the generation of metadata.  
   
 ## Syntax  
@@ -50,6 +51,7 @@ typedef enum CorSetENC {
 |`MDUpdateMask`|Includes `MDUpdateENC`, `MDUpdateFull` and `MDUpdateIncremental`.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

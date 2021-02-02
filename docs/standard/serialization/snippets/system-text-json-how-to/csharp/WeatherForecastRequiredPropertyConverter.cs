@@ -15,11 +15,9 @@ namespace SystemTextJsonSamples
             WeatherForecast forecast = JsonSerializer.Deserialize<WeatherForecast>(ref reader);
 
             // Check for required fields set by values in JSON
-            if (forecast.Date == default)
-            {
-                throw new JsonException("Required property not received in the JSON");
-            }
-            return forecast;
+            return forecast.Date == default
+                ? throw new JsonException("Required property not received in the JSON")
+                : forecast;
         }
 
         public override void Write(

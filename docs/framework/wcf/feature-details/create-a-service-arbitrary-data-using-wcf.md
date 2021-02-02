@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e566c15a-b600-4e4a-be3a-4af43e767dae
 ---
 # How to: Create a Service That Accepts Arbitrary Data using the WCF REST Programming Model
+
 Sometimes developers must have full control of how data is returned from a service operation. This is the case when a service operation must return data in a format not supported byWCF. This topic discusses using the WCF REST Programming Model to create a service that receives arbitrary data.  
   
 ### To implement the service contract  
@@ -118,6 +119,7 @@ Sometimes developers must have full control of how data is returned from a servi
     ```  
   
 ## Example  
+
  The following is a complete listing of the code for this example.  
   
 ```csharp  

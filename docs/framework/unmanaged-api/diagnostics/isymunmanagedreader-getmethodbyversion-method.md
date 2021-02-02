@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedReader::GetMethodByVersion Method
+
 Gets a symbol reader method, given a method token and an edit-and-copy version number. Version numbers start at 1 and are incremented each time the method is changed as a result of an edit-and-copy operation.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT GetMethodByVersion (
 ```  
   
 ## Parameters  
+
  `token`  
  [in] The method token.  
   
@@ -39,9 +41,11 @@ HRESULT GetMethodByVersion (
  [out] A pointer to the returned interface.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

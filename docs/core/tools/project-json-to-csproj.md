@@ -247,6 +247,9 @@ The `<RuntimeFrameworkVersion>` value in the migrated project is determined by t
 </ItemGroup>
 ```
 
+> [!NOTE]
+> The `PackageTargetFallback` property is deprecated. Use [AssetTargetFallback](../project-sdk/msbuild-props.md#assettargetfallback) instead.
+
 ### dependency type
 
 #### type: project
@@ -352,8 +355,9 @@ For more information, see [Self-contained deployments (SCD)](../deploying/index.
 ```
 
 > [!NOTE]
-> `imports` on tools are not supported in csproj. Tools that need imports will not work with
-the new `Microsoft.NET.Sdk`.
+>
+> - `imports` on tools are not supported in csproj. Tools that need imports will not work with `Microsoft.NET.Sdk`.
+> - `DotNetCliToolReference` is deprecated in favor of [local tools](global-tools.md#install-a-local-tool).
 
 ## buildOptions
 
@@ -607,7 +611,7 @@ In MSBuild, this is done using [items](/visualstudio/msbuild/common-msbuild-proj
   <EmbeddedResource Include="..\Shared\*.resx" />
   <Content Include="Views\**\*" PackagePath="%(Identity)" />
   <None Include="some/path/in/project.txt" Pack="true" PackagePath="in/package.txt" />
-  
+
   <None Include="notes.txt" CopyToOutputDirectory="Always" />
   <!-- CopyToOutputDirectory = { Always, PreserveNewest, Never } -->
 
@@ -618,7 +622,7 @@ In MSBuild, this is done using [items](/visualstudio/msbuild/common-msbuild-proj
 ```
 
 > [!NOTE]
-> Many of the default [globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are added automatically by the .NET Core SDK. For more information, see [Default compilation includes](../project-sdk/overview.md#default-compilation-includes).
+> Many of the default [globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are added automatically by the .NET Core SDK. For more information, see [Default compilation includes](../project-sdk/overview.md#default-includes-and-excludes).
 
 All MSBuild `ItemGroup` elements support `Include`, `Exclude`, and `Remove`.
 
@@ -672,3 +676,4 @@ For more information, see [Including content in a package](/nuget/schema/msbuild
 ## See also
 
 - [High-level overview of changes in CLI](cli-msbuild-architecture.md)
+- [MSBuild reference for .NET SDK projects](../project-sdk/msbuild-props.md)

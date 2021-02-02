@@ -9,7 +9,8 @@ ms.date: 09/17/2020
 
 You've probably heard the motto of "One .NET": a single, unified platform for building any type of application. The .NET 5.0 SDK includes ASP.NET Core, Entity Framework Core, WinForms, WPF, Xamarin, and ML.NET, and will add support for more platforms over time. .NET 5.0 strives to provide an experience where you don't have to reason about the different flavors of .NET, but doesn't attempt to fully abstract away the underlying operating system (OS). You'll continue to be able to call platform-specific APIs, for example, P/Invokes, WinRT, or the Xamarin bindings for iOS and Android.
 
-But using platform-specific APIs on a component means the code no longer works across all platforms. We needed a way to detect this at design time so developers get diagnostics when they inadvertently use platform-specific APIs. To achieve this goal, .NET 5.0 introduces the [platform compatibility analyzer](/visualstudio/code-quality/ca1416) and complementary APIs to help developers identify and use platform-specific APIs where appropriate.
+But using platform-specific APIs on a component means the code no longer works across all platforms. We needed a way to detect this at design time so developers get diagnostics when they inadvertently use platform-specific APIs. To achieve this goal, .NET 5.0 introduces the [platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md) and complementary APIs to help developers identify and use platform-specific APIs where appropriate.
+
 The new APIs include:
 
 - <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> to annotate APIs as being platform-specific and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> to annotate APIs as being unsupported on a particular OS. These attributes can optionally include the version number, and have already been applied to some platform-specific APIs in the core .NET libraries.
@@ -20,7 +21,7 @@ The new APIs include:
 
 ## Prerequisites
 
-The platform compatibility analyzer is one of the Roslyn code quality analyzers. Starting in .NET 5.0, these analyzers are [included with the .NET SDK](../../fundamentals/code-analysis/overview.md). The platform compatibility analyzer is enabled by default only for projects that target `net5.0` or a later version. However, you can [enable](/visualstudio/code-quality/ca1416.md#configurability) it for projects that target other frameworks.
+The platform compatibility analyzer is one of the Roslyn code quality analyzers. Starting in .NET 5.0, these analyzers are [included with the .NET SDK](../../fundamentals/code-analysis/overview.md). The platform compatibility analyzer is enabled by default only for projects that target `net5.0` or a later version. However, you can [enable it](../../fundamentals/code-analysis/quality-rules/ca1416.md#configure-code-to-analyze) for projects that target other frameworks.
 
 ## How the analyzer determines platform dependency
 
@@ -29,7 +30,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
   - The attribute can be applied multiple times to indicate **multiple platform support** (`[SupportedOSPlatform("windows"), SupportedOSPlatform("Android6.0")]`).
   - The analyzer will produce a **warning** if platform-specific APIs are referenced without a proper **platform context**:
     - **Warns** if the project doesn't target the supported platform (for example, a Windows-specific API call and the project targets `<TargetFramework>net5.0-ios14.0</TargetFramework>`).
-    - **Warns** if the project is multi-targeted (`<TargetFramework>net5.0</TargetFramework>`).
+    - **Warns** if the project is multi-targeted (for example, `<TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>`).
     - **Doesn't warn** if the platform-specific API is referenced within a project that targets any of the **specified platforms** (for example, for a Windows-specific API call and the project targets `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Doesn't warn** if the platform-specific API call is guarded by corresponding platform-check methods (for example, `if(OperatingSystem.IsWindows())`).
     - **Doesn't warn** if the platform-specific API is referenced from the same platform-specific context (**call site also attributed** with `[SupportedOSPlatform("platform")`).

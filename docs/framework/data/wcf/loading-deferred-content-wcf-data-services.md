@@ -12,6 +12,8 @@ ms.assetid: 32f9b588-c832-44c4-a7e0-fcce635df59a
 ---
 # Loading Deferred Content (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 By default, WCF Data Services limits the amount of data that a query returns. However, you can explicitly load additional data, including related entities, paged response data, and binary data streams, from the data service when it is needed. This topic describes how to load such deferred content into your application.  
   
 ## Related Entities  

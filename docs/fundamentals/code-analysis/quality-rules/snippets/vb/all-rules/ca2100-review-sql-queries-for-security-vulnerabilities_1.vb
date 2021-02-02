@@ -51,14 +51,14 @@ Namespace ca2100
         Shared Sub Main2100(args As String())
 
             Dim queries As New SqlQueries()
-            queries.UnsafeQuery(args(0), "' OR 1=1 --", "anything")
-            ' Resultant query (which is always true): 
+            queries.UnsafeQuery(args(0), "' OR 1=1 --", "[PLACEHOLDER]")
+            ' Resultant query (which is always true):
             ' SELECT AccountNumber FROM Users WHERE Username='' OR 1=1
 
-            queries.SaferQuery(args(0), "' OR 1 = 1 --", "anything")
+            queries.SaferQuery(args(0), "' OR 1=1 --", "[PLACEHOLDER]")
             ' Resultant query (notice the additional single quote character):
-            ' SELECT AccountNumber FROM Users WHERE Username=''' OR 1=1 --' 
-            '                                   AND Password='anything'
+            ' SELECT AccountNumber FROM Users WHERE Username=''' OR 1=1 --'
+            '                                   AND Password='[PLACEHOLDER]'
         End Sub
 
     End Class

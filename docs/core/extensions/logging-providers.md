@@ -3,7 +3,7 @@ title: Logging providers in .NET
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/25/2020
+ms.date: 12/04/2020
 ---
 
 # Logging providers in .NET
@@ -19,7 +19,7 @@ The default .NET Worker app templates:
   - [EventSource](#event-source)
   - [EventLog](#windows-eventlog): Windows only
 
-:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="12":::
+:::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="18":::
 
 The preceding code shows the `Program` class created with the .NET Worker app templates. The next several sections provide samples based on the .NET Worker app templates, which use the Generic Host.
 
@@ -122,8 +122,14 @@ The following code changes the `SourceName` from the default value of `".NET Run
 ```csharp
 public class Program
 {
-    public static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
+    static async Task Main(string[] args)
+    {
+        using IHost host = CreateHostBuilder(args).Build();
+
+        // Application code should start here.
+
+        await host.RunAsync();
+    }
 
     static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
@@ -144,8 +150,14 @@ To configure provider settings, use <xref:Microsoft.Extensions.Logging.AzureAppS
 ```csharp
 class Program
 {
-    static Task Main(string[] args) =>
-        CreateHostBuilder(args).Build().RunAsync();
+    static async Task Main(string[] args)
+    {
+        using IHost host = CreateHostBuilder(args).Build();
+
+        // Application code should start here.
+
+        await host.RunAsync();
+    }
 
     static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)

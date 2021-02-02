@@ -5,12 +5,15 @@ ms.date: "03/30/2017"
 ms.assetid: 0e930e80-5060-45d2-8a7a-95c0690105d4
 ---
 # Fundamental Windows Workflow Concepts
+
 Workflow development in the [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] uses concepts that may be new to some developers. This topic describes some of the concepts and how they are implemented.  
   
 ## Workflows and Activities  
+
  A workflow is a structured collection of actions that models a process. Each action in the workflow is modeled as an activity. A host interacts with a workflow by using <xref:System.Activities.WorkflowInvoker> for invoking a workflow as if it were a method,  <xref:System.Activities.WorkflowApplication> for explicit control over the execution of a single workflow instance, and <xref:System.ServiceModel.WorkflowServiceHost> for message-based interactions in multi-instance scenarios. Because steps of the workflow are defined as a hierarchy of activities, the topmost activity in the hierarchy can be said to define the workflow itself. This hierarchy model takes the place of the explicit `SequentialWorkflow` and `StateMachineWorkflow` classes from previous versions. Activities themselves are developed as collections of other activities (using the <xref:System.Activities.Activity> class as a base, usually defined by using XAML) or are custom created by using the <xref:System.Activities.CodeActivity> class, which can use the runtime for data access, or by using the <xref:System.Activities.NativeActivity> class, which exposes the breadth of the workflow runtime to the activity author. Activities developed by using <xref:System.Activities.CodeActivity> and <xref:System.Activities.NativeActivity> are created by using CLR-compliant languages such as C#.  
   
 ## Activity Data Model  
+
  Activities store and share data by using the types shown in the following table.  
   
 |||  
@@ -20,6 +23,7 @@ Workflow development in the [!INCLUDE[netfx_current_long](../../../includes/netf
 |Expression|An activity with an elevated return value used in argument bindings.|  
   
 ## Workflow Runtime  
+
  The workflow runtime is the environment in which workflows execute. <xref:System.Activities.WorkflowInvoker> is the simplest way to execute a workflow. The host uses <xref:System.Activities.WorkflowInvoker> for the following:  
   
 - To synchronously invoke a workflow.  
@@ -47,9 +51,11 @@ Workflow development in the [!INCLUDE[netfx_current_long](../../../includes/netf
  Activities gain access to the workflow runtime environment by using the appropriate <xref:System.Activities.ActivityContext> derived class, such as <xref:System.Activities.NativeActivityContext> or <xref:System.Activities.CodeActivityContext>. They use this for resolving arguments and variables, for scheduling child activities, and for many other purposes.  
   
 ## Services  
+
  Workflows provide a natural way to implement and access loosely-coupled services, using messaging activities. Messaging activities are built on WCF and are the primary mechanism used to get data into and out of a workflow. You can compose messaging activities together to model any kind of message exchange pattern you wish. For more information, see [Messaging Activities](../wcf/feature-details/messaging-activities.md). Workflow services are hosted using the <xref:System.ServiceModel.Activities.WorkflowServiceHost> class. For more information, see [Hosting Workflow Services Overview](../wcf/feature-details/hosting-workflow-services-overview.md). For more information about workflow services see [Workflow Services](../wcf/feature-details/workflow-services.md)  
   
 ## Persistence, Unloading, and Long-Running Workflows  
+
  Windows Workflow simplifies the authoring of long-running reactive programs by providing:  
   
 - Activities that access external input.  

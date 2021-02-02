@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Install and use .NET Core local tools"
+title: "Tutorial: Install and use .NET local tools"
 description: Learn how to install and use a .NET tool as a local tool.
 ms.topic: tutorial
-ms.date: 02/12/2020
+ms.date: 12/11/2020
 ---
 
-# Tutorial: Install and use a .NET Core local tool using the .NET Core CLI
+# Tutorial: Install and use a .NET local tool using the .NET CLI
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
@@ -167,7 +167,7 @@ You typically install a local tool in the root directory of the repository. Afte
 
 ## Update a local tool
 
-The installed version of local tool `dotnetsay` is 2.1.3.  The latest version is 2.1.4. Use the [dotnet tool update](dotnet-tool-update.md) command to update the tool to the latest version.
+The installed version of local tool `dotnetsay` is 2.1.3.  Use the [dotnet tool update](dotnet-tool-update.md) command to update the tool to the latest version.
 
 ```dotnetcli
 dotnet tool update dotnetsay
@@ -176,7 +176,7 @@ dotnet tool update dotnetsay
 The output indicates the new version number:
 
 ```console
-Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.4'
+Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.7'
 (manifest file /home/name/repository/.config/dotnet-tools.json).
 ```
 
@@ -196,8 +196,8 @@ dotnet tool uninstall dotnetsay
 
 ## Troubleshoot
 
-If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).
+If you get an error message while following the tutorial, see [Troubleshoot .NET tool usage issues](troubleshoot-usage-issues.md).
 
 ## See also
 
-For more information, see [.NET Core tools](global-tools.md)
+For more information, see [.NET tools](global-tools.md)

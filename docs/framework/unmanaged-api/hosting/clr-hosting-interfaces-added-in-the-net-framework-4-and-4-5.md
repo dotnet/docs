@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: f6af6116-f5b0-4bda-a276-fffdba70893d
 ---
 # CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5
+
 This section describes interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) in the .NET Framework 4, .NET Framework 4.5, and later versions into their applications. These interfaces provide methods for a host to configure and load the runtime into a process.  
   
  Starting with the .NET Framework 4, all hosting interfaces have the following characteristics:  
@@ -19,6 +20,7 @@ This section describes interfaces that unmanaged hosts can use to integrate the 
 - There are no apartment models, aggregation, or registry activation that use the [CoCreateInstance function](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## In This Section  
+
  [ICLRAppDomainResourceMonitor Interface](iclrappdomainresourcemonitor-interface.md)  
  Provides methods that inspect an application domain's memory and CPU usage.  
   
@@ -47,6 +49,7 @@ This section describes interfaces that unmanaged hosts can use to integrate the 
  Provides all the functionality of the [ICLRTask Interface](iclrtask-interface.md); in addition, provides methods that allow thread aborts to be delayed on the current thread.  
   
 ## Related Sections  
+
  [Deprecated CLR Hosting Interfaces and Coclasses](deprecated-clr-hosting-interfaces-and-coclasses.md)  
  Describes the hosting interfaces provided with the .NET Framework versions 1.0 and 1.1.  
   

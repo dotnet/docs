@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
 ---
 # UI Automation Support for the StatusBar Control Type
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -19,7 +20,9 @@ ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the StatusBar control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all status bar controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
 <a name="Required_UI_Automation_Tree_Structure"></a>
+
 ## Required UI Automation Tree Structure  
+
  The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to status bar controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
 |Control View|Content View|  
@@ -27,7 +30,9 @@ ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
 |StatusBar<br /><br /> -   Edit (0 or more)<br />-   Progress Bar (0 or many)<br />-   Image (0 or many)<br />-   Button (0 or many)|StatusBar<br /><br /> -   Edit (0 or more)<br />-   ProgressBar (0 or many)<br />-   Image (0 or many)<br />-   Button (0 or many)|  
   
 <a name="Required_UI_Automation_Properties"></a>
+
 ## Required UI Automation Properties  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to progress bar controls. For more information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Property|Value|Notes|  
@@ -48,7 +53,9 @@ ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AcceleratorKeyProperty>|`Null`|Status bars do not have accelerator keys.|  
   
 <a name="Required_UI_Automation_Control_Patterns"></a>
+
 ## Required UI Automation Control Patterns  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by status bar controls. For more information about control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
 |Control Pattern|Support|Notes|  
@@ -56,7 +63,9 @@ ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
 |<xref:System.Windows.Automation.Provider.IGridProvider>|Optional|Status bar controls should support the Grid control pattern so that individual pieces can be monitored and easily referenced for information.|  
   
 <a name="Required_UI_Automation_Events"></a>
+
 ## Required UI Automation Events  
+
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all status bar controls. For more information about events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Event|Support|Notes|  

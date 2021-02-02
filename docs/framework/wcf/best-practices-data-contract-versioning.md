@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
 ---
 # Best Practices: Data Contract Versioning
+
 This topic lists the best practices for creating data contracts that can evolve easily over time. For more information about data contracts, see the topics in [Using Data Contracts](./feature-details/using-data-contracts.md).  
   
 ## Note on Schema Validation  
+
  In discussing data contract versioning, it is important to note that the data contract schema exported by Windows Communication Foundation (WCF) does not have any versioning support, other than the fact that elements are marked as optional by default.  
   
  This means that even the most common versioning scenario, such as adding a new data member, cannot be implemented in a way that is seamless with regard to a given schema. The newer versions of a data contract (with a new data member, for example) do not validate using the old schema.  
@@ -21,6 +23,7 @@ This topic lists the best practices for creating data contracts that can evolve 
  Thus, there are two sets of data contract versioning guidelines: one set for scenarios where strict schema validity is important, and another set for scenarios when it is not.  
   
 ## Versioning When Schema Validation Is Required  
+
  If strict schema validity is required in all directions (new-to-old and old-to-new), data contracts should be considered immutable. If versioning is required, a new data contract should be created, with a different name or namespace, and the service contract using the data type should be versioned accordingly.  
   
  For example, a purchase order processing service contract named `PoProcessing` with a `PostPurchaseOrder` operation takes a parameter that conforms to a `PurchaseOrder` data contract. If the `PurchaseOrder` contract has to change, you must create a new data contract, that is, `PurchaseOrder2`, which includes the changes. You must then handle the versioning at the service contract level. For example, by creating a `PostPurchaseOrder2` operation that takes the `PurchaseOrder2` parameter, or by creating a `PoProcessing2` service contract where the `PostPurchaseOrder` operation takes a `PurchaseOrder2` data contract.  
@@ -40,6 +43,7 @@ This topic lists the best practices for creating data contracts that can evolve 
  For more information about round-tripping, see [Forward-Compatible Data Contracts](./feature-details/forward-compatible-data-contracts.md).  
   
 ## Versioning When Schema Validation Is Not Required  
+
  Strict schema compliance is rarely required. Many platforms tolerate extra elements not described by a schema. As long as this is tolerated, the full set of features described in [Data Contract Versioning](./feature-details/data-contract-versioning.md) and [Forward-Compatible Data Contracts](./feature-details/forward-compatible-data-contracts.md) can be used. The following guidelines are recommended.  
   
  Some of the guidelines must be followed exactly in order to send new versions of a type where an older one is expected or send an old one where the new one is expected. Other guidelines are not strictly required, but are listed here because they may be affected by the future of schema versioning.  

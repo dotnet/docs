@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo3::SetEnterLeaveFunctionHooks3 Method
+
 Specifies the profiler-implemented functions that will be called on the [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md), and [FunctionTailcall3](functiontailcall3-function.md) functions.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SetEnterLeaveFunctionHooks3(
 ```  
   
 ## Parameters  
+
  `pFuncEnter3`  
  [in] A pointer to the implementation to be used as the `FunctionEnter3` callback.  
   
@@ -39,6 +41,7 @@ HRESULT SetEnterLeaveFunctionHooks3(
  [in] A pointer to the implementation to be used as the `FunctionTailcall3` callback.  
   
 ## Remarks  
+
  [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md), and [FunctionTailcall3](functiontailcall3-function.md) hooks do not provide stack frame and argument inspection. To access that information, the `COR_PRF_ENABLE_FUNCTION_ARGS`, `COR_PRF_ENABLE_FUNCTION_RETVAL`, and/or  `COR_PRF_ENABLE_FRAME_INFO` flags have to be set. The profiler can use the [ICorProfilerInfo::SetEventMask](icorprofilerinfo-seteventmask-method.md) method to set the event flags, and then use the [ICorProfilerInfo3::SetEnterLeaveFunctionHooks3WithInfo](icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md) method to register your implementation of this function.  
   
  Only one set of callbacks may be active at a time, and the newest version takes precedence. Therefore, if a profiler calls both the [SetEnterLeaveFunctionHooks2 Method](icorprofilerinfo2-setenterleavefunctionhooks2-method.md) and the `SetEnterLeaveFunctionHooks3` method, `SetEnterLeaveFunctionHooks3` is used.  
@@ -46,6 +49,7 @@ HRESULT SetEnterLeaveFunctionHooks3(
  The `SetEnterLeaveFunctionHooks3` method may be called only from the profiler's [ICorProfilerCallback::Initialize](icorprofilercallback-initialize-method.md) callback.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

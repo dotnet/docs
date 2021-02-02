@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
 ---
 # WCF Web HTTP Service Help Page
+
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] provides an automatic help page for WCF WEB HTTP services. This help page lists a description of each operation, request and response formats, and schemas. This functionality is turned off by default. When a user browses to a WCF WEB HTTP service and appends "/Help" on to the end of the URL, for example `http://localhost:8000/Customers/Help`, a help page like the following is displayed.  
   
  ![A browser with the WCF REST Help page open.](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page.gif)  
@@ -13,6 +14,7 @@ ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
  ![A browser with the WCF REST Help page details for the GetCustomers method open.](./media/wcf-web-http-service-help-page/windows-communication-foundation-rest-help-page-detail.gif)  
   
 ## Using the WCF Web HTTP Help Page  
+
  The WCF WEB HTTP Help page displays a short description for each operation provided that you specify one using the <xref:System.ComponentModel.DescriptionAttribute>. This attribute takes a string that contains a short description of the operation it is applied to. For example, the following code shows how to use the <xref:System.ComponentModel.DescriptionAttribute> to provide a short description.  
   
 ```csharp
@@ -53,6 +55,7 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
  The help page is XHTML based with mark-up that identifies the different parts of the page. This enables clients to programmatically access the page using <xref:System.Xml.Linq.XElement> or other XLinq APIs.  
   
 ## Schemas Used in the WCF Web HTTP Service Help Page  
+
  The following schemas are used in the WCF Web HTTP service help page.  
   
 ```xml  

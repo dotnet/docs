@@ -1,14 +1,14 @@
 ---
-title: Install .NET Core on CentOS - .NET Core
-description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on CentOS.
+title: Install .NET on CentOS - .NET
+description: Demonstrates the various ways to install .NET SDK and .NET Runtime on CentOS.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/04/2020
+ms.date: 01/06/2021
 ---
 
-# Install .NET Core SDK or .NET Core Runtime on CentOS
+# Install the .NET SDK or the .NET Runtime on CentOS
 
-.NET Core is supported on CentOS. This article describes how to install .NET Core on CentOS.
+.NET is supported on CentOS. This article describes how to install .NET on CentOS.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -16,18 +16,18 @@ ms.date: 06/04/2020
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET Core releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
+The following table is a list of currently supported .NET releases on both CentOS 7 and CentOS 8. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of CentOS is no longer supported.
 
-- A ✔️ indicates that the version of CentOS or .NET Core is still supported.
-- A ❌ indicates that the version of CentOS or .NET Core isn't supported on that CentOS release.
-- When both a version of CentOS and a version of .NET Core have ✔️, that OS and .NET combination are supported.
+- A ✔️ indicates that the version of CentOS or .NET is still supported.
+- A ❌ indicates that the version of CentOS or .NET isn't supported on that CentOS release.
+- When both a version of CentOS and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
+| CentOS                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [8](#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ✔️ [7](#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [8](#centos-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [7](#centos-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
-The following versions of .NET Core are no longer supported. The downloads for these still remain published:
+The following versions of .NET are no longer supported. The downloads for these still remain published:
 
 - 3.0
 - 2.2
@@ -35,15 +35,15 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
 
-## How to install other versions
+## Remove preview versions
 
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+[!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
 ## CentOS 8 ✔️
 
-.NET Core 3.1 is available in the default package repositories for CentOS 8.
+.NET 5.0 is available in the default package repositories for CentOS 8.
 
-[!INCLUDE [linux-dnf-install-31](includes/linux-install-31-dnf.md)]
+[!INCLUDE [linux-dnf-install-50](includes/linux-install-50-dnf.md)]
 
 ## CentOS 7 ✔️
 
@@ -53,11 +53,15 @@ The following versions of .NET Core are no longer supported. The downloads for t
 sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
 ```
 
-[!INCLUDE [linux-yum-install-31](includes/linux-install-31-yum.md)]
+[!INCLUDE [linux-yum-install-50](includes/linux-install-50-yum.md)]
+
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
 
 ## Troubleshoot the package manager
 
-This section provides information on common errors you may get while using the package manager to install .NET Core.
+This section provides information on common errors you may get while using the package manager to install .NET.
 
 ### Unable to find package
 
@@ -67,22 +71,11 @@ This section provides information on common errors you may get while using the p
 
 [!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]
 
-## Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## Dependencies
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
-## Scripted install
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## Manual install
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## Next steps
 
-- [Tutorial: Create a console application with .NET Core SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
+- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

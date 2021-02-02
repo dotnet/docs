@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugDataTarget::GetPlatform Method
+
 Provides information about the platform, including processor architecture and operating system, on which the target process is running.  
   
 ## Syntax  
@@ -26,10 +27,12 @@ HRESULT GetPlatform([out] CorDebugPlatform * pTargetPlatform);
 ```  
   
 ## Parameters  
+
  `pTargetPlatform`  
  [out] A pointer to a [CorDebugPlatformEnum](cordebugplatform-enumeration.md) enumeration that describes the target platform.  
   
 ## Remarks  
+
  The `CorDebugPlatformEnum` enumeration return value is used by the [ICorDebug](icordebug-interface.md) interface to determine details of the target process such as its pointer size, address space layout, register set, instruction format, context layout, and calling conventions.  
   
  The `pTargetPlatform` value may refer to a platform that is being emulated for the target instead of specifying the actual hardware in use. For example, a process that is running in the Windows on Windows (WOW) environment on a 64-bit edition of the Windows operating system should use the `CORDB_PLATFORM_WINDOWS_X86` value of the [CorDebugPlatformEnum](cordebugplatform-enumeration.md) enumeration.  
@@ -41,6 +44,7 @@ HRESULT GetPlatform([out] CorDebugPlatform * pTargetPlatform);
 - The actual hardware on the target platform is unusable.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

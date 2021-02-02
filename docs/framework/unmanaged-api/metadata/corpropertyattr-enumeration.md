@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorPropertyAttr Enumeration
+
 Contains values that describe the metadata of a property.  
   
 ## Syntax  
@@ -43,6 +44,7 @@ typedef enum CorPropertyAttr {
 |`prUnused`|Unused.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  

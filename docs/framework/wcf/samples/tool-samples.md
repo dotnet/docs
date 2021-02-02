@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: ccf90c64-31de-4a18-9208-28887735ce80
 ---
 # Tool Samples
+
 This section contains Windows Communication Foundation (WCF) tools.  
   
 ## In This Section  
+
  [ConfigurationCodeGenerator](configurationcodegenerator.md)  
  Describes how to use the ConfigurationCodeGenerator.exe tool to expose your custom channel implementations to the configuration system.  
   

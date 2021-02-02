@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7ddcd497-3e04-427e-bc04-3610ad98b01e
 ---
 # Installing Message Queuing (MSMQ)
+
 The following procedures show how to install Message Queuing 4.0 and Message Queuing 3.0.  
   
 > [!NOTE]

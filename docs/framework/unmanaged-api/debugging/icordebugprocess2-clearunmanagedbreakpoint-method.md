@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess2::ClearUnmanagedBreakpoint Method
+
 Removes a previously set breakpoint at the given address.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT ClearUnmanagedBreakpoint (
 ```  
   
 ## Parameters  
+
  `address`  
  [in] A `CORDB_ADDRESS` value that specifies the address at which the breakpoint was set.  
   
 ## Remarks  
+
  The specified breakpoint would have been previously set by an earlier call to [ICorDebugProcess2::SetUnmanagedBreakpoint](icordebugprocess2-setunmanagedbreakpoint-method.md).  
   
  The `ClearUnmanagedBreakpoint` method can be called while the process being debugged is running.  
@@ -39,6 +42,7 @@ HRESULT ClearUnmanagedBreakpoint (
  The `ClearUnmanagedBreakpoint` method returns a failure code if the debugger is attached in managed-only mode or if no breakpoint exists at the specified address.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # CloneEnumWbemClassObject function
+
 Makes a logical copy of an enumerator, retaining its current position in an enumeration.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -82,6 +83,7 @@ If the function call fails, you can obtain additional error information by calli
 For an example, see the [IEnumWbemClassObject::Clone](/windows/desktop/api/wbemcli/nf-wbemcli-ienumwbemclassobject-clone) method.
 
 ## Requirements
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** WMINet_Utils.idl

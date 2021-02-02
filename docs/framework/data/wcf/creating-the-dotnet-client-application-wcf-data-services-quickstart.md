@@ -8,6 +8,8 @@ ms.assetid: 41ade767-eeab-437d-9121-9797e8fb8045
 ---
 # Creating the .NET Framework Client Application (WCF Data Services Quickstart)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 This is the final task of the WCF Data Services quickstart. In this task, you will add a console application to the solution, add a reference to the Open Data Protocol (OData) feed into this new client application, and access the OData feed from the client application by using the generated client data service classes and client libraries.
 
 > [!NOTE]

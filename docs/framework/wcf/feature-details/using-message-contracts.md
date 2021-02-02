@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 1e19c64a-ae84-4c2f-9155-91c54a77c249
 ---
 # Using Message Contracts
+
 Typically when building Windows Communication Foundation (WCF) applications, developers pay close attention to the data structures and serialization issues and do not need to concern themselves with the structure of the messages in which the data is carried. For these applications, creating data contracts for the parameters or return values is straightforward. (For more information, see [Specifying Data Transfer in Service Contracts](specifying-data-transfer-in-service-contracts.md).)  
   
  However, sometimes complete control over the structure of a SOAP message is just as important as control over its contents. This is especially true when interoperability is important or to specifically control security issues at the level of the message or message part. In these cases, you can create a *message contract* that enables you to specify the structure of the precise SOAP message required.  
@@ -17,6 +18,7 @@ Typically when building Windows Communication Foundation (WCF) applications, dev
  This topic discusses how to use the various message contract attributes to create a specific message contract for your operation.  
   
 ## Using Message Contracts in Operations  
+
  WCF supports operations modeled on either the *remote procedure call (RPC) style* or the *messaging style*. In an RPC-style operation, you can use any serializable type, and you have access to the features that are available to local calls, such as multiple parameters and `ref` and `out` parameters. In this style, the form of serialization chosen controls the structure of the data in the underlying messages, and the WCF runtime creates the messages to support the operation. This enables developers who are not familiar with SOAP and SOAP messages to quickly and easily create and use service applications.  
   
  The following code example shows a service operation modeled on the RPC style.  
@@ -59,6 +61,7 @@ void Reconcile(BankingTransaction bt1, BankingTransaction bt2);
  If a type has both a message contract and a data contract, only its message contract is considered when the type is used in an operation.  
   
 ## Defining Message Contracts  
+
  To define a message contract for a type (that is, to define the mapping between the type and a SOAP envelope), apply the <xref:System.ServiceModel.MessageContractAttribute> to the type. Then apply the <xref:System.ServiceModel.MessageHeaderAttribute> to those members of the type you want to make into SOAP headers, and apply the <xref:System.ServiceModel.MessageBodyMemberAttribute> to those members you want to make into parts of the SOAP body of the message.  
   
  The following code provides an example of using a message contract.  
@@ -103,6 +106,7 @@ public class BankingTransaction
 > <xref:System.Runtime.Serialization.KnownTypeAttribute> attributes are ignored in message contracts. If a <xref:System.Runtime.Serialization.KnownTypeAttribute> is required, place it on the operation that is using the message contract in question.  
   
 ## Controlling Header and Body Part Names and Namespaces  
+
  In the SOAP representation of a message contract, each header and body part maps to an XML element that has a name and a namespace.  
   
  By default, the namespace is the same as the namespace of the service contract that the message is participating in, and the name is determined by the member name to which the <xref:System.ServiceModel.MessageHeaderAttribute> or the <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes are applied.  
@@ -138,6 +142,7 @@ public class BankingTransaction
 ```  
   
 ## Controlling Whether the SOAP Body Parts Are Wrapped  
+
  By default, the SOAP body parts are serialized inside a wrapped element. For example, the following code shows the `HelloGreetingMessage` wrapper element generated from the name of the <xref:System.ServiceModel.MessageContractAttribute> type in the message contract for the `HelloGreetingMessage` message.  
   
 [!code-csharp[MessageHeaderAttribute#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/messageheaderattribute/cs/services.cs#3)]
@@ -149,6 +154,7 @@ public class BankingTransaction
 > Having more than one message body part in messages that are not wrapped is not compliant with WS-I Basic Profile 1.1 and is not recommended when designing new message contracts. However, it may be necessary to have more than one unwrapped message body part in certain specific interoperability scenarios. If you are going to transmit more than one piece of data in a message body, it is recommended to use the default (wrapped) mode. Having more than one message header in unwrapped messages is completely acceptable.  
   
 ## Using Custom Types Inside Message Contracts  
+
  Each individual message header and message body part is serialized (turned into XML) using the chosen serialization engine for the service contract where the message is used. The default serialization engine, the `XmlFormatter`, can handle any type that has a data contract, either explicitly (by having the <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType>) or implicitly (by being a primitive type, having the <xref:System.SerializableAttribute?displayProperty=nameWithType>, and so on). For more information, see [Using Data Contracts](using-data-contracts.md).  
   
  In the preceding example, the `Operation` and `BankingTransactionData` types must have a data contract, and `transactionDate` is serializable because <xref:System.DateTime> is a primitive (and so has an implicit data contract).  
@@ -156,6 +162,7 @@ public class BankingTransaction
  However, it is possible to switch to a different serialization engine, the `XmlSerializer`. If you make such a switch, you should ensure that all of the types used for message headers and body parts are serializable using the `XmlSerializer`.  
   
 ## Using Arrays Inside Message Contracts  
+
  You can use arrays of repeating elements in message contracts in two ways.  
   
  The first is to use a <xref:System.ServiceModel.MessageHeaderAttribute> or a <xref:System.ServiceModel.MessageBodyMemberAttribute> directly on the array. In this case, the entire array is serialized as one element (that is, one header or one body part) with multiple child elements. Consider the class in the following example.  
@@ -201,11 +208,13 @@ public class BankingDepositLog
  You can apply the <xref:System.ServiceModel.MessageHeaderArrayAttribute> only to arrays, not collections.  
   
 ## Using Byte Arrays in Message Contracts  
+
  Byte arrays, when used with the non-array attributes (<xref:System.ServiceModel.MessageBodyMemberAttribute> and <xref:System.ServiceModel.MessageHeaderAttribute>), are not treated as arrays but as a special primitive type represented as Base64-encoded data in the resulting XML.  
   
  When you use byte arrays with the array attribute <xref:System.ServiceModel.MessageHeaderArrayAttribute>, the results depend on the serializer in use. With the default serializer, the array is represented as an individual entry for each byte. However, when the `XmlSerializer` is selected, (using the <xref:System.ServiceModel.XmlSerializerFormatAttribute> on the service contract), byte arrays are treated as Base64 data regardless of whether the array or non-array attributes are used.  
   
 ## Signing and Encrypting Parts of the Message  
+
  A message contract can indicate whether the headers and/or body of the message should be digitally signed and encrypted.  
   
  This is done by setting the <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=nameWithType> property on the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes. The property is an enumeration of the <xref:System.Net.Security.ProtectionLevel?displayProperty=nameWithType> type and can be set to <xref:System.Net.Security.ProtectionLevel.None> (no encryption or signature), <xref:System.Net.Security.ProtectionLevel.Sign> (digital signature only), or <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> (both encryption and a digital signature). The default is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
@@ -234,9 +243,11 @@ public class PatientRecord
  In this example, the `recordID` header is not protected, `patientName` is `signed`, and `SSN` is encrypted and signed. At least one body part, `medicalHistory`, has <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> applied, and thus the entire message body is encrypted and signed, even though the comments and diagnosis body parts specify lower protection levels.  
   
 ## SOAP Action  
+
  SOAP and related Web services standards define a property called `Action` that can be present for every SOAP message sent. The operation's <xref:System.ServiceModel.OperationContractAttribute.Action%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A?displayProperty=nameWithType> properties control the value of this property.  
   
 ## SOAP Header Attributes  
+
  The SOAP standard defines the following attributes that may exist on a header:  
   
 - `Actor/Role` (`Actor` in SOAP 1.1, `Role` in SOAP 1.2)  
@@ -298,6 +309,7 @@ bt.documentApprover.MustUnderstand = false; // override the static default of 't
  When a message is received and then sent back, the SOAP attribute settings only go round-trip for headers of the <xref:System.ServiceModel.MessageHeader%601> type.  
   
 ## Order of SOAP Body Parts  
+
  In some circumstances, you may need to control the order of the body parts. The order of the body elements is alphabetical by default, but can be controlled by the <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A?displayProperty=nameWithType> property. This property has the same semantics as the <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A?displayProperty=nameWithType> property, except for the behavior in inheritance scenarios (in message contracts, base type body members are not sorted before the derived type body members). For more information, see [Data Member Order](data-member-order.md).  
   
  In the following example, `amount` would normally come first because it is first alphabetically. However, the <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A> property puts it into the third position.  
@@ -314,6 +326,7 @@ public class BankingTransaction
 ```  
   
 ## Message Contract Versioning  
+
  Occasionally, you may need to change message contracts. For example, a new version of your application may add an extra header to a message. Then, when sending from the new version to the old, the system must deal with an extra header, as well as a missing header when going in the other direction.  
   
  The following rules apply for versioning headers:  
@@ -325,6 +338,7 @@ public class BankingTransaction
  Message bodies have similar versioning rules—both missing and additional message body parts are ignored.  
   
 ## Inheritance Considerations  
+
  A message contract type can inherit from another type, as long as the base type also has a message contract.  
   
  When creating or accessing a message using a message contract type that inherits from other message contract types, the following rules apply:  
@@ -354,6 +368,7 @@ public class PatientRecord : PersonRecord
  The `PatientRecord` class describes a message with one header called `ID`. The header corresponds to the `personID` and not the `patientID` member, because the base-most member is chosen. Thus, the `patientID` field is useless in this case. The body of the message contains the `diagnosis` element followed by the `patientName` element, because that is the alphabetical order. Notice that the example shows a pattern that is strongly discouraged: both the base and the derived message contracts have message body parts.  
   
 ## WSDL Considerations  
+
  When generating a Web Services Description Language (WSDL) contract from a service that uses message contracts, it is important to remember that not all message contract features are reflected in the resulting WSDL. Consider the following points:  
   
 - WSDL cannot express the concept of an array of headers. When creating messages with an array of headers using the <xref:System.ServiceModel.MessageHeaderArrayAttribute>, the resulting WSDL reflects only one header instead of the array.  
@@ -365,6 +380,7 @@ public class PatientRecord : PersonRecord
 - When using the same message contract in multiple operations, multiple message types are generated in the WSDL document. The names are made unique by adding the numbers "2", "3", and so on, for subsequent uses. When importing back the WSDL, multiple message contract types are created and are identical except for their names.  
   
 ## SOAP Encoding Considerations  
+
  WCF allows you to use the legacy SOAP encoding style of XML, however, its use is not recommended. When using this style (by setting the `Use` property to `Encoded` on the <xref:System.ServiceModel.XmlSerializerFormatAttribute?displayProperty=nameWithType> applied to the service contract), the following additional considerations apply:  
   
 - The message headers are not supported; this means that the attribute <xref:System.ServiceModel.MessageHeaderAttribute> and the array attribute <xref:System.ServiceModel.MessageHeaderArrayAttribute> are incompatible with SOAP encoding.  
@@ -405,6 +421,7 @@ public class PatientRecord : PersonRecord
  After serializing the message using SOAP encoding, `changedFrom` and `changedTo` do not contain their own copies of `p`, but instead point to the copy inside the `changedBy` element.  
   
 ## Performance Considerations  
+
  Every message header and message body part is serialized independently of the others. Therefore, the same namespaces can be declared again for each header and body part. To improve performance, especially in terms of the size of the message on the wire, consolidate multiple headers and body parts into a single header or body part. For example, instead of the following code:  
   
 ```csharp  
@@ -438,6 +455,7 @@ public class OperationDetails
 ```  
   
 ### Event-based Asynchronous and Message Contracts  
+
  The design guidelines for the event-based asynchronous model state that if more than one value is returned, one value is returned as the `Result` property and the others are returned as properties on the <xref:System.EventArgs> object. One result of this is that if a client imports metadata using the event-based asynchronous command options and the operation returns more than one value, the default <xref:System.EventArgs> object returns one value as the `Result` property and the remainder are properties of the <xref:System.EventArgs> object.  
   
  If you want to receive the message object as the `Result` property and have the returned values as properties on that object, use the `/messageContract` command option. This generates a signature that returns the response message as the `Result` property on the <xref:System.EventArgs> object. All internal return values are then properties of the response message object.  

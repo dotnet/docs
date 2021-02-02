@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 500a75b6-998a-47d5-8e3b-24e3aba2a434
 ---
 # How to: Create a Duplex Contract
+
 This topic shows the basic steps to create methods that use a duplex (two-way) contract. A duplex contract allows clients and servers to communicate with each other independently so that either can initiate calls to the other. The duplex contract is one of three message patterns available to Windows Communication Foundation (WCF) services. The other two message patterns are one-way and request-reply. A duplex contract consists of two one-way contracts between the client and the server and does not require that the method calls be correlated. Use this kind of contract when your service must query the client for more information or explicitly raise events on the client. For more information about creating a client application for a duplex contract, see [How to: Access Services with a Duplex Contract](how-to-access-services-with-a-duplex-contract.md). For a working sample, see the [Duplex](../samples/duplex.md) sample.  
   
 ### To create a duplex contract  
@@ -51,6 +52,7 @@ This topic shows the basic steps to create methods that use a duplex (two-way) c
 3. Call the methods defined by the callback interface.  
   
 ## Example  
+
  The following code example demonstrates duplex communication. The service’s contract contains service operations for moving forward and backward. The client’s contract contains a service operation for reporting its position.  
   
  [!code-csharp[S_WS_DualHttp#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ws_dualhttp/cs/service.cs#5)]

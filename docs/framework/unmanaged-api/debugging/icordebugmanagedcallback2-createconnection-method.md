@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback2::CreateConnection Method
+
 Notifies the debugger that a new connection has been created.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT CreateConnection (
 ```  
   
 ## Parameters  
+
  `pProcess`  
  [in] A pointer to an "ICorDebugProcess" object that represents the process in which the connection was created  
   
@@ -40,6 +42,7 @@ HRESULT CreateConnection (
  [in] A pointer to the name of the new connection.  
   
 ## Remarks  
+
  A `CreateConnection` callback will be fired in either of the following cases:  
   
 - When a debugger attaches to a process that contains connections. In this case, the runtime will generate and dispatch a `CreateConnection` event and a [ICorDebugManagedCallback2::ChangeConnection](icordebugmanagedcallback2-changeconnection-method.md) event for each connection in the process.  
@@ -47,6 +50,7 @@ HRESULT CreateConnection (
 - When a host calls [ICLRDebugManager::BeginConnection](../hosting/iclrdebugmanager-beginconnection-method.md) in the [Hosting API](../hosting/index.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

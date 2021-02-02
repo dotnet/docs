@@ -5,6 +5,8 @@ ms.assetid: 15b19d09-7de7-4638-9556-6ef396cc45ec
 ---
 # Managing the Data Service Context (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 The <xref:System.Data.Services.Client.DataServiceContext> class encapsulates operations that are supported against a specified data service. Although OData services are stateless, the context is not. Therefore, you can use the <xref:System.Data.Services.Client.DataServiceContext> class to maintain state on the client between interactions with the data service in order to support features such as change management. This class also manages identities and tracks changes.  
   
 ## Merge Options and Identity Resolution  

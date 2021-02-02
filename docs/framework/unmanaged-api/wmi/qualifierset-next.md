@@ -16,6 +16,7 @@ topic_type:
   - "Reference"
 ---
 # QualifierSet_Next function
+
 Retrieves the next qualifier in an enumeration that started with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -74,6 +75,7 @@ You call the `QualifierSet_Next` function repeatedly to enumerate all the qualif
 The order of the qualifiers returned during the enumeration is undefined.
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  

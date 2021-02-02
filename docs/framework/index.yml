@@ -28,6 +28,10 @@ landingContent:
             url: get-started/overview.md
           - text: System requirements
             url: get-started/system-requirements.md
+      - linkListType: get-started
+        links:
+          - text: .NET Framework on Q&A
+            url: /answers/topics/dotnet-runtime-framework.html
       - linkListType: concept
         links:
           - text: Older versions of .NET Framework
@@ -39,7 +43,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: .NET Framework APIs
-            url: /dotnet/api/?view=netframework-4.8
+            url: ../../api/index.md?view=netframework-4.8
 
   # Card
   - title: Install .NET Framework

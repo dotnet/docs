@@ -20,15 +20,17 @@ helpviewer_keywords:
 ms.assetid: 12ed422d-5280-49b8-9b71-a2ed129c0384
 ---
 # Custom serialization
+
 Custom serialization is the process of controlling the serialization and deserialization of a type. By controlling serialization, it's possible to ensure serialization compatibility, which is the ability to serialize and deserialize between versions of a type without breaking the core functionality of the type. For example, in the first version of a type, there may be only two fields. In the next version of a type, several more fields are added. Yet the second version of an application must be able to serialize and deserialize both types. The following sections describe how to control serialization.
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
 > [!IMPORTANT]
-> In versions previous to .NET Framework 4.0, serialization of custom user data in a partially trusted assembly was accomplished using the GetObjectData. Starting with version 4.0, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute which prevents execution in partially trusted assemblies. To work around this condition, implement the <xref:System.Runtime.Serialization.ISafeSerializationData> interface.  
+> In versions previous to .NET Framework 4.0, serialization of custom user data in a partially trusted assembly was accomplished using `GetObjectData`. Starting with version 4.0, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute, which prevents execution in partially trusted assemblies. To work around this condition, implement the <xref:System.Runtime.Serialization.ISafeSerializationData> interface.  
   
-## Running custom methods during and after serialization  
- The best practice and easiest way (introduced in version 2.0 of the .NET Framework) is to apply the following attributes to methods that are used to correct data during and after serialization:  
+## Running custom methods during and after serialization
+
+The recommended way to run custom methods during and after serialization is to apply the following attributes to methods that are used to correct data during and after serialization:  
   
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute>  
   
@@ -43,6 +45,7 @@ Custom serialization is the process of controlling the serialization and deseria
  In addition, when adding a new field to an existing serializable type, apply the <xref:System.Runtime.Serialization.OptionalFieldAttribute> attribute to the field. The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> ignores the absence of the field when a stream that is missing the new field is processed.  
   
 ## Implementing the ISerializable interface  
+
  The other way to control serialization is achieved by implementing the <xref:System.Runtime.Serialization.ISerializable> interface on an object. Note, however, that the method in the previous section supersedes this method to control serialization.  
   
  In addition, you should not use default serialization on a class that is marked with the [Serializable](xref:System.SerializableAttribute) attribute and has declarative or imperative security at the class level or on its constructors. Instead, these classes should always implement the <xref:System.Runtime.Serialization.ISerializable> interface.  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeHost::GetCurrentAppDomainId Method
+
 Gets the numeric identifier of the <xref:System.AppDomain> that is currently executing.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetCurrentAppDomainId(
 ```  
   
 ## Parameters  
+
  `pdwAppDomainId`  
  [out] The numeric identifier of the <xref:System.AppDomain> that is currently executing.  
   
@@ -43,9 +45,11 @@ HRESULT GetCurrentAppDomainId(
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The `pdwAppDomainId` parameter is set to the value of the <xref:System.AppDomain.Id%2A> property of the <xref:System.AppDomain> in which the current thread is executing.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

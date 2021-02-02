@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 149ab165-0ef3-490a-83a9-4322a07bd98a
 ---
 # How to: Configure Credentials on a Federation Service
+
 In Windows Communication Foundation (WCF), creating a federated service consists of the following main procedures:  
   
 1. Configuring a <xref:System.ServiceModel.WSFederationHttpBinding> or similar custom binding. For more information about creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md).  
@@ -50,6 +51,7 @@ In Windows Communication Foundation (WCF), creating a federated service consists
 5. If necessary, set the `samlSerializer` attribute of the <`issuedTokenAuthentication`> element to the type name of the custom <xref:System.IdentityModel.Tokens.SamlSerializer> class.  
   
 ## Example  
+
  The following example sets the properties of an <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> in code.  
   
  [!code-csharp[C_FederatedService#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_federatedservice/cs/source.cs#2)]

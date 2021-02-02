@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: e2cf98b7-40c1-4f74-86c7-8a76dd9da677
 ---
 # Fusion Interfaces
+
 This section describes the unmanaged interfaces that the fusion API uses to access the properties of an application's resources and to locate the correct versions of those resources for the application.  
   
 ## In This Section  
+
  [IAppIdAuthority Interface](iappidauthority-interface.md)  
  Provides methods that generate and compare keys for application identities and references.  
   
@@ -57,11 +59,13 @@ This section describes the unmanaged interfaces that the fusion API uses to acce
  Represents a reference to the unique signature of a code object.  
   
 ## Reference  
+
  <xref:System.Reflection>  
   
  <xref:System.Reflection.Emit>  
   
 ## Related Sections  
+
  [Fusion Global Static Functions](fusion-global-static-functions.md)  
   
  [Fusion Enumerations](fusion-enumerations.md)  

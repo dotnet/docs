@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRPolicyManager::SetTimeoutAndAction Method
+
 Sets a timeout value for the specified operation, and specifies the policy action the common language runtime (CLR) should take when the operation occurs.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetTimeoutAndAction (
 ```  
   
 ## Parameters  
+
  `operation`  
  [in] One of the [EClrOperation](eclroperation-enumeration.md) values, indicating the operation for which to set the timeout and policy `action`. The following values are supported:  
   
@@ -60,12 +62,14 @@ HRESULT SetTimeoutAndAction (
 |E_INVALIDARG|A timeout cannot be set for the specified `operation`, or an invalid value was supplied for `action`.|  
   
 ## Remarks  
+
  `SetTimeoutAndAction` encapsulates the capabilities of the [ICLRPolicyManager::SetTimeout](iclrpolicymanager-settimeout-method.md) and [ICLRPolicyManager::SetActionOnTimeout](iclrpolicymanager-setactionontimeout-method.md) methods, and can be called in place of sequential calls to these two methods.  
   
 > [!IMPORTANT]
 > Not all policy action values can be specified as the timeout behavior for CLR operations. See the Remarks sections of the topics for these two methods for valid values.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

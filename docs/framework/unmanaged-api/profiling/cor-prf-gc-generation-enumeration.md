@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # COR_PRF_GC_GENERATION Enumeration
+
 Identifies a garbage-collection generation.  
   
 ## Syntax  
@@ -41,6 +42,7 @@ typedef enum {
 |`COR_PRF_GC_PINNED_OBJECT_HEAP`|The object is stored in the pinned-object heap.|  
   
 ## Remarks  
+
  The garbage collector improves memory management performance by dividing objects into generations based on age. The garbage collector currently uses three generations, numbered 0, 1, and 2, and two special heap segments, one for large objects and one for pinned objects.
   
  Objects whose size is larger than a threshold value are stored in the large-object heap. Pinned objects can be allocated to the pinned-object heap to avoid the performance cost of allocating them on the normal heaps. Other allocated objects start out belonging to generation 0. All objects that exist after garbage collection occurs in generation 0 are promoted to generation 1. Objects that exist after garbage collection occurs in generation 1 move into generation 2.  
@@ -50,6 +52,7 @@ typedef enum {
  The `COR_PRF_GC_GENERATION` enumeration is used by the [COR_PRF_GC_GENERATION_RANGE](cor-prf-gc-generation-range-structure.md) structure.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

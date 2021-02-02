@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f2c7255f-c376-460e-aa20-14071f1666e5
 ---
 # How To: Use Filters
+
 This topic outlines the basic steps required to create a routing configuration that uses multiple filters. In this example, messages are routed to two implementations of a calculator service, regularCalc and roundingCalc. Both implementations support the same operations; however one service rounds all calculations to the nearest integer value before returning. A client application must be able to indicate whether to  use the rounding version of the service; if no service preference is expressed then the message is load balanced between the two services. The operations exposed by both services are:  
   
 - Add  
@@ -220,6 +221,7 @@ This topic outlines the basic steps required to create a routing configuration t
     ```  
   
 ## Example  
+
  The following is a complete listing of the configuration file.  
   
 ```xml  

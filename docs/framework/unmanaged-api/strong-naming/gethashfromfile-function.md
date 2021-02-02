@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # GetHashFromFile Function
+
 Generates a hash over the contents of the specified file.  
   
  This function has been deprecated. Use the [ICLRStrongName::GetHashFromFile](../hosting/iclrstrongname-gethashfromfile-method.md) method instead.  
@@ -33,6 +34,7 @@ HRESULT GetHashFromFile (
 ```  
   
 ## Parameters  
+
  `szFilePath`  
  [in] The name of the file to hash.  
   
@@ -49,9 +51,11 @@ HRESULT GetHashFromFile (
  [out] The size, in bytes, of the returned `pbHash`.  
   
 ## Remarks  
+
  This function is the same as [GetHashFromFileW](gethashfromfilew-function.md), except that the file name specification is ANSI instead of Unicode.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

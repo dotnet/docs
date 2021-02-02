@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRPolicyManager::SetTimeout Method
+
 Sets a timeout value for the specified operation.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT SetTimeout (
 ```  
   
 ## Parameters  
+
  `operation`  
  [in] One of the [EClrOperation](eclroperation-enumeration.md) values, indicating the common language runtime (CLR) operation for which to set a timeout. The following values are supported:  
   
@@ -56,6 +58,7 @@ HRESULT SetTimeout (
 |E_INVALIDARG|A timeout cannot be set for the specified `operation`, or an invalid value was supplied for `operation`.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

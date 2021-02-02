@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: ee51ed4e-821c-4010-8d64-eabde522169f
 ---
 # System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken
+
 System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken  
   
 ## Description  
+
  The IssuanceTokenProvider used the cached service token.  
   
 ## See also

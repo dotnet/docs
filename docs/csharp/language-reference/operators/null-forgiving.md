@@ -1,21 +1,18 @@
 ---
 description: "! (null-forgiving) operator - C# reference"
 title: "! (null-forgiving) operator - C# reference"
-ms.date: 10/11/2019
+ms.date: 11/13/2020
 f1_keywords: 
   - "nullForgiving_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "null-forgiving operator [C#]"
   - "! operator [C#]"
 ---
 # ! (null-forgiving) operator (C# reference)
 
-Available in C# 8.0 and later, the unary postfix `!` operator is the null-forgiving operator. In an enabled [nullable annotation context](../../nullable-references.md#nullable-annotation-context), you use the null-forgiving operator to declare that expression `x` of a reference type isn't `null`: `x!`. The unary prefix `!` operator is the [logical negation operator](boolean-logical-operators.md#logical-negation-operator-).
+Available in C# 8.0 and later, the unary postfix `!` operator is the null-forgiving, or null-suppression, operator. In an enabled [nullable annotation context](../../nullable-references.md#nullable-annotation-context), you use the null-forgiving operator to declare that expression `x` of a reference type isn't `null`: `x!`. The unary prefix `!` operator is the [logical negation operator](boolean-logical-operators.md#logical-negation-operator-).
 
 The null-forgiving operator has no effect at run time. It only affects the compiler's static flow analysis by changing the null state of the expression. At run time, expression `x!` evaluates to the result of the underlying expression `x`.
-
-> [!NOTE]
-> In C# 8, the null-forgiving operator terminates the list of preceding [null-conditional](member-access-operators.md#null-conditional-operators--and-) operations. For example, the expression `x?.y!.z` is parsed as `(x?.y)!.z`. Due to this interpretation, `z` is evaluated even if `x` is `null`, which may result in a <xref:System.NullReferenceException>.
 
 For more information about the nullable reference types feature, see [Nullable reference types](../builtin-types/nullable-reference-types.md).
 
@@ -45,7 +42,7 @@ In the preceding example, you don't need to use the null-forgiving operator beca
 
 ## C# language specification
 
-For more information, see [The null-forgiving operator](~/_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md#the-null-forgiving-operator) section of the [draft of the nullable reference types specification](~/_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md).
+For more information, see [The null-forgiving operator](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md#the-null-forgiving-operator) section of the [draft of the nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md).
 
 ## See also
 

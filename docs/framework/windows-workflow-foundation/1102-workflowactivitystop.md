@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 285e5cb8-e90d-4914-ac06-e9b176ffefa2
 ---
 # 1102 - WorkflowActivityStop
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 285e5cb8-e90d-4914-ac06-e9b176ffefa2
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a workflow activity has stopped.  
   
 ## Message  
+
  WorkflowInstance Id: '%1' E2E Activity  
   
 ## Details  

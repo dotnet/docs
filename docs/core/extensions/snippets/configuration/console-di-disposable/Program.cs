@@ -9,7 +9,7 @@ namespace ConsoleDisposable.Example
     {
         static Task Main(string[] args)
         {
-            IHost host = CreateHostBuilder(args).Build();
+            using IHost host = CreateHostBuilder(args).Build();
 
             ExemplifyDisposableScoping(host.Services, "Scope 1");
             Console.WriteLine();

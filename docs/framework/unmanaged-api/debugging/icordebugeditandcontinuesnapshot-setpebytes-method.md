@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugEditAndContinueSnapshot::SetPEBytes Method
+
 `SetPEBytes` is obsolete. Do not call this method.  
   
 ## See also

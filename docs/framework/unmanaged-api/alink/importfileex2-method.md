@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ImportFileEx2 Method
+
 Imports assemblies and unbound modules. This method is like [ImportFile Method](importfile-method.md), but works even if the file being imported does not exist on disk.  
   
 ## Syntax  
@@ -34,6 +35,7 @@ HRESULT ImportFileEx2(
 ```  
   
 ## Parameters  
+
  `pszFilename`  
  Name of file to be imported.  
   
@@ -59,9 +61,11 @@ HRESULT ImportFileEx2(
  Receives the number of files and/or scopes imported.  
   
 ## Return Value  
+
  Returns S_OK if the method succeeds.  
   
 ## Requirements  
+
  Requires alink.h.  
   
 ## See also

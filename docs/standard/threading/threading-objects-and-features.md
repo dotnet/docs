@@ -1,9 +1,8 @@
 ---
 title: "Threading objects and features"
 ms.date: "10/01/2018"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
-  - "threading [.NET Framework], features"
+  - "threading [.NET], features"
   - "managed threading"
 ms.assetid: 239b2e8d-581b-4ca3-992b-0e8525b9321c
 ---

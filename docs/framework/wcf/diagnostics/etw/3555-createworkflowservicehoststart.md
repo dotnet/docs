@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 14038438-774f-4651-b83e-c149da688a1b
 ---
 # 3555 - CreateWorkflowServiceHostStart
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 14038438-774f-4651-b83e-c149da688a1b
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted on CreateWorkflowServiceHost start.  
   
 ## Message  
+
  CreateWorkflowServiceHost start  
   
 ## Details

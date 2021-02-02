@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2bef319b-fe9c-4d49-ac6c-dfb23eb35099
 ---
 # Multiple Contracts
+
 The Multiple Contracts sample demonstrates how to implement more than one contract on a service and how to configure endpoints for communicating with each of the implemented contracts. This sample is based on the [Getting Started](getting-started-sample.md). The service has been modified to define two contracts, the `ICalculator` contract and the `ICalculatorSession` contract.  
   
 > [!NOTE]

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRRuntimeInfo::GetVersionString Method
+
 Gets common language runtime (CLR) version information associated with a given [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface.  
   
  This method supersedes the following functions:  
@@ -34,6 +35,7 @@ HRESULT GetVersionString(
 ```  
   
 ## Parameters  
+
  `pwzBuffer`  
  [out] The .NET Framework compilation version in the format "v*A*.*B*[.*X*]". *A*, *B*, and *X* are decimal numbers that correspond to the major version, the minor version, and the build number. *X* is optional. If *X* is not present, there is no trailing period.  
   
@@ -46,6 +48,7 @@ HRESULT GetVersionString(
  [in, out] Specifies the size of `pwzBuffer` to avoid buffer overruns. If `pwzBuffer` is `null`, `pchBuffer` returns the required size of `pwzBuffer` to allow preallocation.  
   
 ## Return Value  
+
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
   
 |HRESULT|Description|  
@@ -54,6 +57,7 @@ HRESULT GetVersionString(
 |E_POINTER|`pwzBuffer` or `pchBuffer` is null.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

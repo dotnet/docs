@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostTaskManager::ReverseLeaveRuntime Method
+
 Notifies the host that control is leaving the common language runtime (CLR) and entering an unmanaged function that was, in turn, called from managed code.  
   
 ## Syntax  
@@ -38,9 +39,11 @@ HRESULT ReverseLeaveRuntime ();
 |E_OUTOFMEMORY|Not enough memory is available to complete the requested resource allocation.|  
   
 ## Remarks  
+
  The CLR calls `ReverseLeaveRuntime` to inform the host that the currently executing task is returning control to an unmanaged function that was, in turn, called from managed code through platform invoke. Each call to `ReverseLeaveRuntime` matches a corresponding call to [ReverseEnterRuntime](ihosttaskmanager-reverseenterruntime-method.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

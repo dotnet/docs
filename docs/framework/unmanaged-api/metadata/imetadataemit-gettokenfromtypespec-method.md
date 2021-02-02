@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::GetTokenFromTypeSpec Method
+
 Gets a metadata token for the type with the specified metadata signature.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetTokenFromTypeSpec (
 ```  
   
 ## Parameters  
+
  `pvSig`  
  [in] The signature being defined.  
   
@@ -40,6 +42,7 @@ HRESULT GetTokenFromTypeSpec (
  [out] The `mdTypeSpec` token assigned.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

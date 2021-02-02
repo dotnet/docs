@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::FindMemberRef Method
+
 Gets a pointer to the MemberRef token for the member reference that is enclosed by the specified <xref:System.Type> and that has the specified name and metadata signature.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT FindMemberRef (
 ```  
   
 ## Parameters  
+
  `td`  
  [in] The TypeRef token for the class or interface that encloses the member reference to search for. If this value is `mdTokenNil`, the lookup is done for a global variable or a global-function reference.  
   
@@ -48,6 +50,7 @@ HRESULT FindMemberRef (
  [out] A pointer to the matching MemberRef token.  
   
 ## Remarks  
+
  You specify the member using its enclosing class or interface (`td`), its name (`szName`), and optionally its signature (`pvSigBlob`).  
   
  The signature passed to `FindMemberRef` must have been generated in the current scope, because signatures are bound to a particular scope. A signature can embed a token that identifies the enclosing class or value type. The token is an index into the local TypeDef table. You cannot build a run-time signature outside the context of the current scope and use that signature as input to `FindMemberRef`.  
@@ -55,6 +58,7 @@ HRESULT FindMemberRef (
  `FindMemberRef` finds only member references that were defined directly in the class or interface; it does not find inherited member references.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

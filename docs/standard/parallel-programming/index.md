@@ -2,7 +2,6 @@
 title: "Parallel Programming in .NET"
 description: Learn about parallel programming in .NET. Use a .NET runtime, class library types, and diagnostic tools to simplify .NET development.
 ms.date: 09/12/2018
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "parallel programming"
 ms.assetid: 4d83c690-ad2d-489e-a2e0-b85b898a672d

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo2::GetClassIDInfo2 Method
+
 Gets the parent module and metadata token for the open generic definition of the specified class, the `ClassID` of its parent class, and the `ClassID` for each type argument, if present, of the class.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT GetClassIDInfo2(
 ```  
   
 ## Parameters  
+
  `classId`  
  [in] The ID of the class for which information will be retrieved.  
   
@@ -55,6 +57,7 @@ HRESULT GetClassIDInfo2(
  [out] An array of `ClassID` values, each of which represents the ID of a type argument of the class. When the method returns, `typeArgs` will contain some or all the available `ClassID` values.  
   
 ## Remarks  
+
  The `GetClassIDInfo2` method is similar to the [ICorProfilerInfo::GetClassIDInfo](icorprofilerinfo-getclassidinfo-method.md) method, but `GetClassIDInfo2` obtains additional information about a generic type.  
   
  The profiler code can call [ICorProfilerInfo::GetModuleMetaData](icorprofilerinfo-getmodulemetadata-method.md) to obtain a [metadata](../metadata/index.md) interface for a given module. The metadata token that is returned to the location referenced by `pTypeDefToken` can then be used to access the metadata for the class.  
@@ -64,6 +67,7 @@ HRESULT GetClassIDInfo2(
  Alternatively, you can first call `GetClassIDInfo2` with a zero-length `typeArgs` buffer to obtain the correct buffer size. You can then set the `typeArgs` buffer size to the value returned in `pcNumTypeArgs` and call `GetClassIDInfo2` again.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

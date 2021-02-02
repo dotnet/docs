@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataDispenserEx::GetCORSystemDirectory Method
+
 Gets the directory that holds the current common language runtime (CLR). This method is supported only for use by out-of-process debuggers. If called from another component, it will return E_NOTIMPL.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT GetCORSystemDirectory (
 ```  
   
 ## Parameters  
+
  `szBuffer`  
  [out] The buffer to receive the directory name.  
   
@@ -40,6 +42,7 @@ HRESULT GetCORSystemDirectory (
  [out] The number of bytes actually returned in `szBuffer`.  
   
 ## Requirements  
+
  **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

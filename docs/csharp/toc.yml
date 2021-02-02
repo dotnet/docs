@@ -1,20 +1,16 @@
+items:
 - name: C# documentation
   href: index.yml
-- name: Get started
+- name: Tour of C#
   items:
-  - name: Introduction to the C# language and .NET
-    displayName: get started
-    href: getting-started/index.md
-  - name: Tour of C#
-    items:
-    - name: Introduction
-      href: tour-of-csharp/index.md
-    - name: Types
-      href: tour-of-csharp/types.md
-    - name: Program building blocks
-      href: tour-of-csharp/program-building-blocks.md
-    - name: Major language areas
-      href: tour-of-csharp/features.md
+  - name: Introduction
+    href: tour-of-csharp/index.md
+  - name: Types
+    href: tour-of-csharp/types.md
+  - name: Program building blocks
+    href: tour-of-csharp/program-building-blocks.md
+  - name: Major language areas
+    href: tour-of-csharp/features.md
 - name: Tutorials
   items:
   - name: Overview
@@ -46,8 +42,12 @@
         href: tutorials/intro-to-csharp/introduction-to-classes.md
       - name: Object-Oriented programming
         href: tutorials/intro-to-csharp/object-oriented-programming.md
-  - name: Explore C# 6
-    href: tutorials/exploration/csharp-6.yml
+  - name: Explore record types
+    href: tutorials/exploration/records.md
+  - name: Explore top level statements
+    href: tutorials/exploration/top-level-statements.md
+  - name: Explore patterns in objects
+    href: tutorials/exploration/patterns-objects.md
   - name: Explore string interpolation - interactive
     href: tutorials/exploration/interpolated-strings.yml
   - name: Explore string interpolation - in your environment
@@ -87,8 +87,6 @@
     href: whats-new/csharp-8.md
   - name: C# 7.0-7.3
     href: whats-new/csharp-7.md
-  - name: C# 6
-    href: whats-new/csharp-6.md
   - name: Breaking changes in the compiler
     href: whats-new/breaking-changes.md
   - name: C# Version History
@@ -222,7 +220,7 @@
   - name: Article index
     displayName: how to's
     href: how-to/index.md
-  - name: Parse strings using `String.Split`
+  - name: Split strings into substrings
     href: how-to/parse-strings-using-split.md
   - name: Concatenate strings
     href: how-to/concatenate-multiple-strings.md
@@ -232,7 +230,7 @@
     href: how-to/modify-string-contents.md
   - name: Compare strings
     href: how-to/compare-strings.md
-  - name: Safely cast using pattern matching, is and as operators
+  - name: Safely cast using pattern matching and is/as operators
     href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
   items:
@@ -705,8 +703,6 @@
     - name: Overview
       displayName: arrays
       href: programming-guide/arrays/index.md
-    - name: Arrays as Objects
-      href: programming-guide/arrays/arrays-as-objects.md
     - name: Single-Dimensional Arrays
       href: programming-guide/arrays/single-dimensional-arrays.md
     - name: Multidimensional Arrays
@@ -831,7 +827,7 @@
       - name: <include>
         href: programming-guide/xmldoc/include.md
       - name: <inheritdoc>
-        href: programming-guide/xmldoc/inheritdoc.md  
+        href: programming-guide/xmldoc/inheritdoc.md
       - name: <list>
         href: programming-guide/xmldoc/list.md
       - name: <para>
@@ -1250,7 +1246,7 @@
       displayName: conditional, ternary, ref
     - name: "! (null-forgiving) operator"
       href: language-reference/operators/null-forgiving.md
-      displayName: nullable reference, null-forgiveness
+      displayName: nullable reference, null-forgiveness, null suppression
     - name: "?? and ??= operators"
       href: language-reference/operators/null-coalescing-operator.md
       displayName: null-coalescing, assignment
@@ -1285,6 +1281,9 @@
       displayName: "switch, pattern matching, patterns"
     - name: true and false operators
       href: language-reference/operators/true-false-operators.md
+    - name: with expression
+      href: language-reference/operators/with-expression.md
+      displayName: "records, copy"
     - name: Operator overloading
       href: language-reference/operators/operator-overloading.md
   - name: Special characters
@@ -1333,6 +1332,8 @@
       href: language-reference/preprocessor-directives/preprocessor-error.md
     - name: "#line"
       href: language-reference/preprocessor-directives/preprocessor-line.md
+    - name: "#nullable"
+      href: language-reference/preprocessor-directives/preprocessor-nullable.md
     - name: "#region"
       href: language-reference/preprocessor-directives/preprocessor-region.md
     - name: "#endregion"

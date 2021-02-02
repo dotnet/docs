@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 395cc7ca-f35f-4295-be97-39a077f99c97
 ---
 # 404 - ResumeSignpostEvent
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 395cc7ca-f35f-4295-be97-39a077f99c97
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event marks the resumption of an end-to-end activity. It contains the name of the activity.  
   
 ## Message  
+
  Activity boundary.  
   
 ## Details  

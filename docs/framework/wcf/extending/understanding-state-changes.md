@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: a79ed2aa-e49a-47a8-845a-c9f436ec9987
 ---
 # Understanding State Changes
+
 This topic discusses the states and transitions that channels have, the types used to structure channel states, and how to implement them.  
   
 ## State Machines and Channels  
+
  Objects that deal with communication, for example sockets, usually present a state machine whose state transitions relate to allocating network resources, making or accepting connections, closing connections and terminating communication. The channel state machine provides a uniform model of the states of a communication object that abstracts the underlying implementation of that object. The <xref:System.ServiceModel.ICommunicationObject> interface provides a set of states, state transition methods and state transition events. All channels, channel factories and channel listeners implement the channel state machine.  
   
  The events Closed, Closing, Faulted, Opened and Opening signal an external observer after a state transition occurs.  
@@ -16,6 +18,7 @@ This topic discusses the states and transitions that channels have, the types us
  The state property returns the current state as defined by <xref:System.ServiceModel.CommunicationState>:  
   
 ## ICommunicationObject, CommunicationObject, and States and State Transition  
+
  An <xref:System.ServiceModel.ICommunicationObject> starts out in the Created state where its various properties can be configured. Once in the Opened state, the object is usable for sending and receiving messages but its properties are considered immutable. Once in the Closing state, the object can no longer process new send or receive requests, but existing requests have a chance to complete until the Close timeout is reached.  If an unrecoverable error occurs, the object transitions to the Faulted state where it can be inspected for information about the error and ultimately closed. When in the Closed state the object has essentially reached the end of the state machine. Once an object transitions from one state to the next, it does not go back to a previous state.  
   
  The following diagram shows the <xref:System.ServiceModel.ICommunicationObject> states and state transitions. State transitions can be caused by calling one of the three methods: Abort, Open, or Close. They could also be caused by calling other implementation-specific methods. Transitioning to the Faulted state could happen as a result of errors while opening or after having opened the communication object.  
@@ -31,6 +34,7 @@ Figure 1. The ICommunicationObject State Machine.
 Figure 2. The CommunicationObject implementation of the ICommunicationObject state machine including calls to events and protected methods.  
   
 ### ICommunicationObject Events  
+
  <xref:System.ServiceModel.Channels.CommunicationObject> exposes the five events defined by <xref:System.ServiceModel.ICommunicationObject>. These events are designed for code using the communication object to be notified of state transitions. As shown in Figure 2 above, each event is fired once after the object’s state transitions to the state named by the event. All five events are of the `EventHandler` type which is defined as:  
   
  `public delegate void EventHandler(object sender, EventArgs e);`  
@@ -38,6 +42,7 @@ Figure 2. The CommunicationObject implementation of the ICommunicationObject sta
  In the <xref:System.ServiceModel.Channels.CommunicationObject> implementation, the sender is either the <xref:System.ServiceModel.Channels.CommunicationObject> itself or whatever was passed in as the sender to the <xref:System.ServiceModel.Channels.CommunicationObject> constructor (if that constructor overload was used). The EventArgs parameter, `e`, is always `EventArgs.Empty`.  
   
 ### Derived Object Callbacks  
+
  In addition to the five events, <xref:System.ServiceModel.Channels.CommunicationObject> declares eight protected virtual methods designed to allow a derived object to be called back before and after state transitions occur.  
   
  The <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=nameWithType> methods have three such callbacks associated with each of them. For example, corresponding to <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A?displayProperty=nameWithType> there is <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A?displayProperty=nameWithType>, <xref:System.ServiceModel.Channels.CommunicationObject.OnOpen%2A?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.CommunicationObject.OnOpened%2A?displayProperty=nameWithType>. Associated with <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=nameWithType> are the <xref:System.ServiceModel.Channels.CommunicationObject.OnClose%2A?displayProperty=nameWithType>, <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=nameWithType>, and <xref:System.ServiceModel.Channels.CommunicationObject.OnClosed%2A?displayProperty=nameWithType> methods.  
@@ -49,6 +54,7 @@ Figure 2. The CommunicationObject implementation of the ICommunicationObject sta
  <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A?displayProperty=nameWithType>, <xref:System.ServiceModel.Channels.CommunicationObject.OnClosing%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.OnFaulted%2A?displayProperty=nameWithType> fire the corresponding <xref:System.ServiceModel.Channels.CommunicationObject.Opening?displayProperty=nameWithType>, <xref:System.ServiceModel.Channels.CommunicationObject.Closing?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.Faulted?displayProperty=nameWithType> events. <xref:System.ServiceModel.Channels.CommunicationObject.OnOpened%2A?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.OnClosed%2A?displayProperty=nameWithType> set the object state to Opened and Closed respectively then fire the corresponding <xref:System.ServiceModel.Channels.CommunicationObject.Opened?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.CommunicationObject.Closed?displayProperty=nameWithType> events.  
   
 ### State Transition Methods  
+
  <xref:System.ServiceModel.Channels.CommunicationObject> provides implementations of Abort, Close and Open. It also provides a Fault method which causes a state transition to the Faulted state. Figure 2 shows the <xref:System.ServiceModel.ICommunicationObject> state machine with each transition labeled by the method that causes it (unlabeled transitions happen inside the implementation of the method that caused the last labeled transition).  
   
 > [!NOTE]
@@ -119,6 +125,7 @@ Override the OnAbort method to implement custom terminate logic such as terminat
  The Fault() method does nothing if the current state is Faulted or Closed. Otherwise it sets the state to Faulted and call OnFaulted(), which raises the Faulted event. If OnFaulted throws an exception it is re-thrown.  
   
 ### ThrowIfXxx Methods  
+
  CommunicationObject has three protected methods that can be used to throw exceptions if the object is in a specific state.  
   
  <xref:System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposed%2A> throws an exception if the state is Closing, Closed or Faulted.  
@@ -141,6 +148,7 @@ Override the OnAbort method to implement custom terminate logic such as terminat
 |Faulted|N/A|<xref:System.ServiceModel.CommunicationObjectFaultedException?displayProperty=nameWithType>|  
   
 ### Timeouts  
+
  Several of the methods we discussed take timeout parameters. These are Close, Open (certain overloads and asynchronous versions), OnClose and OnOpen. These methods are designed to allow for lengthy operations (for example, blocking on input/output while gracefully closing down a connection) so the timeout parameter indicates how long such operations can take before being interrupted. Implementations of any of these methods should use the supplied timeout value to ensure it returns to the caller within that timeout. Implementations of other methods that do not take a timeout are not designed for lengthy operations and should not block on input/output.  
   
  The exception are the Open() and Close() overloads that do not take a timeout. These use a default timeout value supplied by the derived class. <xref:System.ServiceModel.Channels.CommunicationObject> exposes two protected abstract properties named <xref:System.ServiceModel.Channels.CommunicationObject.DefaultCloseTimeout%2A> and <xref:System.ServiceModel.Channels.CommunicationObject.DefaultOpenTimeout%2A> defined as:  
@@ -160,4 +168,5 @@ Override the OnAbort method to implement custom terminate logic such as terminat
  `}`  
   
 #### IDefaultCommunicationTimeouts  
+
  This interface has four read-only properties for providing default timeout values for open, send, receive, and close. Each implementation is responsible for obtaining the default values in whatever manner appropriate. As a convenience, <xref:System.ServiceModel.Channels.ChannelFactoryBase> and <xref:System.ServiceModel.Channels.ChannelListenerBase> default these values to 1 minute each.

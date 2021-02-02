@@ -20,6 +20,7 @@ helpviewer_keywords:
 ms.assetid: 02b05fba-7235-45ce-94e5-060436ee0875
 ---
 # Using Streams on the Network
+
 Network resources are represented in the .NET Framework as streams. By treating streams generically, the .NET Framework offers the following capabilities:  
   
 - A common way to send and receive Web data. Whatever the actual contents of the file — HTML, XML, or anything else — your application will use <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> and <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> to send and receive data.  

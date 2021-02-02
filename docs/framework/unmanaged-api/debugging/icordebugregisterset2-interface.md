@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugRegisterSet2 Interface
+
 Extends the capabilities of the [ICorDebugRegisterSet](icordebugregisterset-interface.md) interface for hardware platforms that have more than 64 registers.  
   
 ## Methods  
@@ -32,6 +33,7 @@ Extends the capabilities of the [ICorDebugRegisterSet](icordebugregisterset-inte
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

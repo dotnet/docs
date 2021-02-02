@@ -48,6 +48,7 @@ In this table, 4.5.x refers to the .NET Framework 4.5 and its point releases, 4.
 |This setup program requires x64 or x86 computer. It cannot be installed on IA64 computers.|See [System Requirements](../get-started/system-requirements.md).|  
 
 <a name="compat"></a>
+
 ### Program compatibility issues
 
 The installation of the .NET Framework 4.5 or its point releases fails with a 1603 error code or blocks when it's running in Windows Program Compatibility mode. The **Program Compatibility Assistant** indicates that the .NET Framework might not have been installed correctly and prompts you to reinstall it by using the recommended setting (Program Compatibility mode). Program Compatibility mode could also have been set by the Program Compatibility Assistant on earlier failed or canceled attempts to run the .NET Framework Setup.

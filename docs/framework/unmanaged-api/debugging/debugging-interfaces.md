@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
 ---
 # Debugging Interfaces
+
 This section describes the unmanaged interfaces that handle the debugging of a program that is executing in the common language runtime (CLR).  
   
 ## In This Section  
+
  [ICLRDataEnumMemoryRegions Interface](iclrdataenummemoryregions-interface.md)\
  Provides a method to enumerate regions of memory that are specified by callers.  
   
@@ -444,6 +446,7 @@ This section describes the unmanaged interfaces that handle the debugging of a p
  Provides methods for querying information about a process.
   
 ## Related Sections  
+
  [Debugging Coclasses](debugging-coclasses.md)\
  [Debugging Global Static Functions](debugging-global-static-functions.md)\
  [Debugging Enumerations](debugging-enumerations.md)\

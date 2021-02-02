@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 7b05c766-f181-425d-9a3d-2a5e150c85f7
 ---
 # Workflow Services
+
 [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] allows you to fully describe a workflow-based service declaratively in XAML. You can define a workflow that implements your service and describe endpoints the service exposes, all entirely in XAML. The topics in this section describe, in detail, the programming model that supports writing services declaratively.  
   
 ## In This Section  
+
  [Workflow Services Overview](workflow-services-overview.md)  
  Describes the components involved in creating and hosting a workflow service.  
   

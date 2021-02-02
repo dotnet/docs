@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
 ---
 # .NET Framework deployment guide for developers
+
 This topic provides information for developers who want to install any version of the .NET Framework from .NET Framework 4.5 to [!INCLUDE[net_current](../../../includes/net-current-version.md)] with their apps.
 
 You can download the redistributable packages and language packs for .NET Framework from the download pages:
@@ -309,19 +310,19 @@ The following table lists the most common return codes for the .NET Framework re
 
 See the following content:
 
-- [Background Intelligent Transfer Service (BITS) error codes](https://go.microsoft.com/fwlink/?LinkId=180946)
+- [Background Intelligent Transfer Service (BITS) error codes](/windows/win32/bits/bits-return-values)
 
-- [URL moniker error codes](https://go.microsoft.com/fwlink/?LinkId=180947)
+- [URL moniker error codes](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775145(v=vs.85))
 
-- [WinHttp error codes](https://go.microsoft.com/fwlink/?LinkId=180948)
+- [WinHttp error codes](/windows/win32/winhttp/error-messages)
 
 #### Other error codes
 
 See the following content:
 
-- [Windows Installer error codes](https://go.microsoft.com/fwlink/?LinkId=180949)
+- [Windows Installer error codes](/previous-versions/aa368542(v=vs.85))
 
-- [Windows Update Agent result codes](https://go.microsoft.com/fwlink/?LinkId=180951)
+- [Windows Update Agent result codes](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720442(v=ws.10))
 
 ## Uninstalling the .NET Framework
 

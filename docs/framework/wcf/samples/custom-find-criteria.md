@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b2723929-8829-424d-8015-a37ba2ab4f68
 ---
 # Custom Find Criteria
+
 This sample demonstrates how to create a custom scope match using logic and how to implement a custom discovery service. Clients use custom scope matching functionality to refine and further build on top of the system-provided find functionality of WCF Discovery. The scenario this sample covers is as follows:  
   
 1. A client is looking for a calculator service.  
@@ -19,6 +20,7 @@ This sample demonstrates how to create a custom scope match using logic and how 
 - Implementing a custom scope match by algorithm.  
   
 ## Discussion  
+
  The client is looking for "OR" type matching criteria. A service responds back if the scopes on its endpoints match any of the scopes provided by the client. In this case, the client is looking for a calculator service that has any of the scopes in the following list:  
   
 1. `net.tcp://Microsoft.Samples.Discovery/RedmondLocation`  

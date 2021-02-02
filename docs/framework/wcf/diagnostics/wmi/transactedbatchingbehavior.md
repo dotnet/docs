@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2d03e6ae-f06c-4ada-b279-e01838b2ecdc
 ---
 # TransactedBatchingBehavior
+
 TransactedBatchingBehavior  
   
 ## Syntax  
@@ -16,12 +17,15 @@ class TransactedBatchingBehavior : Behavior
 ```  
   
 ## Methods  
+
  The TransactedBatchingBehavior class does not define any methods.  
   
 ## Properties  
+
  The TransactedBatchingBehavior class has the following property:  
   
 ### MaxBatchSize  
+
  Data type: sint32  
   
  Access type: Read-only  

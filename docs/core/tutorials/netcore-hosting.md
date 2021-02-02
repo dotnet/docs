@@ -24,7 +24,7 @@ You will also want a simple .NET Core application to test the host with, so you 
 There are two different APIs that can be used to host .NET Core. This article (and its associated [samples](https://github.com/dotnet/samples/tree/master/core/hosting)) covers these 2 options.
 
 * The preferred method of hosting the .NET Core runtime in .NET Core 3.0 and above is with the `nethost` and `hostfxr` libraries' APIs. These entry points handle the complexity of finding and setting up the runtime for initialization and allow both launching a managed application and calling into a static managed method.
-* The preferred method of hosting the .NET Core runtime prior to .NET Core 3.0 is with the [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/master/src/coreclr/src/hosts/inc/coreclrhost.h) API. This API exposes functions for easily starting and stopping the runtime and invoking managed code (either by launching a managed exe or by calling static managed methods).
+* The preferred method of hosting the .NET Core runtime prior to .NET Core 3.0 is with the [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/master/src/coreclr/hosts/inc/coreclrhost.h) API. This API exposes functions for easily starting and stopping the runtime and invoking managed code (either by launching a managed exe or by calling static managed methods).
 
 ## Sample Hosts
 
@@ -78,7 +78,7 @@ The native host can now call the managed method and pass it the desired paramete
 
 The following steps detail how to use the `coreclrhost.h` API to start the .NET Core runtime in a native application and call into a managed static method. The code snippets in this document use some Windows-specific APIs, but the [full sample host](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithCoreClrHost) shows both Windows and Linux code paths.
 
-The [Unix CoreRun host](https://github.com/dotnet/runtime/tree/master/src/coreclr/src/hosts/unixcorerun) shows a more complex, real-world example of hosting using `coreclrhost.h`.
+The [Unix CoreRun host](https://github.com/dotnet/runtime/tree/master/src/coreclr/hosts/unixcorerun) shows a more complex, real-world example of hosting using `coreclrhost.h`.
 
 ### Step 1 - Find and load CoreCLR
 
@@ -162,6 +162,7 @@ Finally, when the host is done running managed code, the .NET Core runtime is sh
 CoreCLR does not support reinitialization or unloading. Do not call `coreclr_initialize` again or unload the CoreCLR library.
 
 ## Conclusion
+
 Once your host is built, it can be tested by running it from the command line and passing any arguments the host expects. When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by `dotnet build`. Executables (.exe files) produced by `dotnet publish` for self-contained applications are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user code is compiled into a dll of the same name.
 
 If things don't work initially, double-check that *coreclr.dll* is available in the location expected by the host, that all necessary Framework libraries are in the TPA list, and that CoreCLR's bitness (32-bit or 64-bit) matches how the host was built.

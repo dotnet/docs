@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ExceptionCatcherLeave Method
+
 Notifies the profiler that control is being passed out of the appropriate `catch` block.  
   
 ## Syntax  
@@ -26,11 +27,13 @@ HRESULT ExceptionCatcherLeave();
 ```  
   
 ## Remarks  
+
  The profiler should not block in its implementation of this method because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled. If the profiler blocks here and garbage collection is attempted, the runtime will block until this callback returns.  
   
  The profiler's implementation of this method should not call into managed code or in any way cause a managed-memory allocation.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

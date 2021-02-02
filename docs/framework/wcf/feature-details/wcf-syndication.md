@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: ebf80384-0fc9-4919-a1e8-23ca2a13e300
 ---
 # WCF Syndication
+
 Windows Communication Foundation (WCF) provides support to easily work with syndication feeds in Atom, RSS or other custom formats, which allows you to read and create them as well as expose them on a service endpoint. The topics in this section describe this programming model for syndication in detail.  
   
 ## In This Section  
+
  [WCF Syndication Overview](wcf-syndication-overview.md)  
  Provides an overview of syndication support provided by WCF.  
   

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: daba19f6-f4b3-4dd6-9ba2-93c9666ba71e
 ---
 # 3368 - SslOnInitiateUpgrade
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: daba19f6-f4b3-4dd6-9ba2-93c9666ba71e
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted with the SslOnAcceptUpgrade start.  
   
 ## Message  
+
  SslOnAcceptUpgradeStart  
   
 ## Details

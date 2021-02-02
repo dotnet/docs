@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d5fcacbb-c884-4b37-a5d6-02b1b8eec7b4
 ---
 # Hiring Process
+
 This sample demonstrates how to implement a business process using messaging activities and two workflows hosted as workflow services. These workflows are part of the IT infrastructure of a fictional company called Contoso, Inc.  
   
  The `HiringRequest` workflow process (implemented as a <xref:System.Activities.Statements.Flowchart>) asks for authorization from several managers in the organization. To achieve this goal, the workflow uses other existing services in the organization (in our case, an inbox service and an organizational data service implemented as plain Windows Communication Foundation (WCF) services).  
@@ -52,6 +53,7 @@ This sample demonstrates how to implement a business process using messaging act
 > `<InstallDrive>:\WF_WCF_Samples\WF\Application\HiringProcess`  
   
 ## Description of the Process  
+
  Contoso, Inc. wants to have close control of the headcount in each of its departments. Therefore, anytime any employee wants to start a new hiring process, they need to go through a hiring request process approval before the recruiting can actually happen. This process is called hiring process request (defined in the HiringRequestService project) and consists of the following steps:  
   
 1. An employee (the requester) starts the hiring process request.  
@@ -87,6 +89,7 @@ This sample demonstrates how to implement a business process using messaging act
 3. Applicants can submit resumes until the time-out expires or someone from Contoso HR department explicitly decides to remove the posting by stopping the process.  
   
 ## Projects in the sample  
+
  The following table shows the projects in the sample solution.  
   
 |Project|Description|  
@@ -100,6 +103,7 @@ This sample demonstrates how to implement a business process using messaging act
 |CareersWebSite|An external Web site that exposes the open positions in Contoso. Any potential candidate can navigate to this site and submit a resume.|  
   
 ## Feature summary  
+
  The following table describes how each feature is used in this sample.  
   
 |Feature|Description|Project|  
@@ -123,6 +127,7 @@ This sample demonstrates how to implement a business process using messaging act
 |Using [!INCLUDE[wf1](../../../../includes/wf1-md.md)] in ASP.NET applications.|Workflows are accessed from two ASP.NET applications.|InternalClient / CareersWebSite|  
   
 ## Data Storage  
+
  Data is stored in a SQL Server database called `ContosoHR` (the script for creating this database is located in the `DbSetup` folder). Workflow instances are stored in a SQL Server database called `InstanceStore` (the scripts for creating the instance store are part of the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] distribution).  
   
  Both databases are created by running Setup.cmd script from a  Developer Command Prompt for Visual Studio.  

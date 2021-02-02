@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList Method
+
 Gets a value that indicates whether the supplied name matches the name of an assembly in the list.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT IsStringAssemblyReferenceInList (
 ```  
   
 ## Parameters  
+
  `pwzAssemblyName`  
  [in] The name of the assembly for which to search.  
   
@@ -40,6 +42,7 @@ HRESULT IsStringAssemblyReferenceInList (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the common language runtime is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

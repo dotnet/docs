@@ -12,7 +12,7 @@ In summary, here are important conclusions from this guide:
 
 - The **[Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF)** is an influential open-source consortium of over 300 major corporations. It's responsible for driving the adoption of cloud-native computing across technology and cloud stacks.
 
-- **CNCF guidelines** recommend that that cloud-native applications embrace six important pillars as shown in Figure 11-1:
+- **CNCF guidelines** recommend that cloud-native applications embrace six important pillars as shown in Figure 11-1:
 
   ![Cloud-native foundational pillars](./media/cloud-native-foundational-pillars.png)
 

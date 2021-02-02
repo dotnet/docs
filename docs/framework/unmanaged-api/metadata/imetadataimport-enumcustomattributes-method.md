@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::EnumCustomAttributes Method
+
 Enumerates custom attribute-definition tokens associated with the specified type or member.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ HRESULT EnumCustomAttributes (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the returned enumerator.  
   
@@ -59,6 +61,7 @@ HRESULT EnumCustomAttributes (
 |`S_FALSE`|There are no custom attributes to enumerate. In that case, `pcCustomAttributes` is zero.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

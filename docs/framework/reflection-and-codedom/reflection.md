@@ -56,6 +56,7 @@ Reflection can also be used to create applications called type browsers, which e
 There are other uses for reflection. Compilers for languages such as JScript use reflection to construct symbol tables. The classes in the <xref:System.Runtime.Serialization> namespace use reflection to access data and to determine which fields to persist. The classes in the <xref:System.Runtime.Remoting> namespace use reflection indirectly through serialization.  
   
 ## Runtime Types in Reflection  
+
 Reflection provides classes, such as <xref:System.Type> and <xref:System.Reflection.MethodInfo>, to represent types, members, parameters, and other code entities. However, when you use reflection, you don't work directly with these classes, most of which are abstract (`MustInherit` in Visual Basic). Instead, you work with types provided by the common language runtime (CLR).  
   
 For example, when you use the C# `typeof` operator (`GetType` in Visual Basic) to obtain a <xref:System.Type> object, the object is really a `RuntimeType`. `RuntimeType` derives from <xref:System.Type> and provides implementations of all the abstract methods.  

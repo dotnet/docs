@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ae0dbc15-f98c-4096-a8d9-fbe4dc36f1cd
 ---
 # 4201 - EndSqlCommandExecute
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: ae0dbc15-f98c-4096-a8d9-fbe4dc36f1cd
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  Indicates a SQL command has finished executing.  
   
 ## Message  
+
  End SQL command execution: %1  
   
 ## Details  

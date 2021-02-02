@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ee1fa307-98b1-4647-8860-2e9217ba6082
 ---
 # CustomChannelsTester
+
 The `CustomChannelsTester` is a tool that you can use to test your custom channel implementations against a set of predefined service contracts. You can select the set of service contracts and pass it to the tool using an XML file. The tool then generates the service and client that exercises your custom channel implementations during message exchange.  
   
 ### To build the tool  

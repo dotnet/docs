@@ -2,7 +2,6 @@
 title: "How to: Implement a producer-consumer dataflow pattern"
 description: Understand how to implement a producer-consumer dataflow pattern using the TPL Dataflow Library in .NET.
 ms.date: 09/24/2020
-ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"

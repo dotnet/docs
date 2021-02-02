@@ -2,7 +2,6 @@
 title: "Isolated Storage"
 description: Explore isolated storage, which is a data storage mechanism that provides isolation & safety by defining standardized ways of associating code with saved data.
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 helpviewer_keywords:
   - "data storage using isolated storage"
   - "stores"
@@ -31,7 +30,7 @@ For desktop apps, isolated storage is a data storage mechanism that provides iso
 
 ## Data Compartments and Stores
 
-When an application stores data in a file, the file name and storage location must be carefully chosen to minimize the possibility that the storage location will be known to another application and, therefore, will be vulnerable to corruption. Without a standard system in place to manage these problems, developing ad hoc techniques that minimize storage conflicts can be complex, and the results can be unreliable.
+When an application stores data in a file, the file name and storage location must be carefully chosen to minimize the possibility that the storage location will be known to another application and, therefore, vulnerable to corruption. Without a standard system in place to manage these problems, improvising techniques that minimize storage conflicts can be complex, and the results can be unreliable.
 
 With isolated storage, data is always isolated by user and by assembly. Credentials such as the origin or the strong name of the assembly determine assembly identity. Data can also be isolated by application domain, using similar credentials.
 
@@ -53,7 +52,7 @@ Using isolated storage enables partially trusted applications to store data in a
 
 Administrators can limit how much isolated storage an application or a user has available, based on an appropriate trust level. In addition, administrators can remove a user's persisted data completely. To create or access isolated storage, code must be granted the appropriate <xref:System.Security.Permissions.IsolatedStorageFilePermission> permission.
 
-To access isolated storage, code must have all necessary native platform operating system rights. The access control lists (ACLs) that control which users have the rights to use the file system must be satisfied. .NET Framework applications already have operating system rights to access isolated storage unless they perform (platform-specific) impersonation. In this case, the application is responsible for ensuring that the impersonated user identity has the proper operating system rights to access isolated storage. This access provides a convenient way for code that is run or downloaded from the web to read and write to a storage area related to a particular user.
+To access isolated storage, code must have all necessary native platform operating system rights. The access control lists (ACLs) that control which users have the rights to use the file system must be satisfied. .NET applications already have operating system rights to access isolated storage unless they perform (platform-specific) impersonation. In this case, the application is responsible for ensuring that the impersonated user identity has the proper operating system rights to access isolated storage. This access provides a convenient way for code that is run or downloaded from the web to read and write to a storage area related to a particular user.
 
 To control access to isolated storage, the common language runtime uses <xref:System.Security.Permissions.IsolatedStorageFilePermission> objects. Each object has properties that specify the following values:
 
@@ -91,7 +90,7 @@ __This section applies to the following frameworks:__
 
 .NET Framework and .NET Core offer isolated storage as a mechanism to persist data for a user, an application, or a component. This is a legacy component primarily designed for now-deprecated Code Access Security scenarios.
 
-Various isolated storage APIs and tools can be used to read data across trust boundaries. For example, reading data from a machine-wide scope can aggregate data from other, possibly less-trusted user accounts on the machine. Components or applications which read from machine-wide isolated storage scopes should be aware of the consequences of reading this data.
+Various isolated storage APIs and tools can be used to read data across trust boundaries. For example, reading data from a machine-wide scope can aggregate data from other, possibly less-trusted user accounts on the machine. Components or applications that read from machine-wide isolated storage scopes should be aware of the consequences of reading this data.
 
 ### Security-sensitive APIs that can read from the machine-wide scope
 
@@ -132,20 +131,21 @@ Now consider a multi-user system with two registered users _Mallory_ and _Bob_. 
 
 If Mallory wishes to attack Bob, she might write data to the machine-wide storage location, then attempt to influence Bob into reading from the machine-wide store. When Bob runs an app that reads from this store, that app will operate on the data Mallory placed there, but from within the context of Bob's user account. The remainder of this document contemplates various attack vectors and what steps apps can do to minimize their risk to these attacks.
 
-__Note:__ In order for such an attack to take place, Mallory requires:
-
-* A user account on the machine.
-* The ability to place a file into a known location on the file system.
-* Knowledge that Bob will at some point run an app which attempts to read this data.
-
-These are not threat vectors which apply to standard single-user desktop environments like home PCs or single-employee enterprise workstations.
+> [!NOTE]
+> In order for such an attack to take place, Mallory requires:
+>
+> * A user account on the machine.
+> * The ability to place a file into a known location on the file system.
+> * Knowledge that Bob will at some point run an app that attempts to read this data.
+>
+> These are not threat vectors that apply to standard single-user desktop environments like home PCs or single-employee enterprise workstations.
 
 #### Elevation of privilege
 
 An __elevation of privilege__ attack occurs when Bob's app reads Mallory's file and automatically tries to take some action based on the contents of that payload. Consider an app that reads the contents of a startup script from the machine-wide store and passes those contents to `Process.Start`. If Mallory can place a malicious script inside the machine-wide store, when Bob launches his app:
 
 * His app parses and launches Mallory's malicious script _under the context of Bob's user profile_.
-* Mallory gaines access to Bob's account on the local machine.
+* Mallory gains access to Bob's account on the local machine.
 
 #### Denial of service
 
@@ -168,9 +168,9 @@ When Bob's app reads from the machine-wide store, it now inadvertently reads the
 
 __Important:__ If your environment has multiple mutually untrusted users, __do not__ call the API `IsolatedStorageFile.GetEnumerator(IsolatedStorageScope.Machine)` or invoke the tool `storeadm.exe /machine /list`. Both of these assume that they're operating on trusted data. If an attacker can seed a malicious payload in the machine-wide store, that payload can lead to an elevation of privilege attack under the context of the user who runs these commands.
 
-If operating in a multi-user environment, reconsider use of isolated storage features which target the _Machine_ scope. If an app must read data from a machine-wide location, prefer to read the data from a location that are writable only by admin accounts. The `%PROGRAMFILES%` directory and the `HKLM` registry hive are examples of locations which are writable by only administrators and readable by everyone. Data read from those locations is therefore considered trustworthy.
+If operating in a multi-user environment, reconsider use of isolated storage features that target the _Machine_ scope. If an app must read data from a machine-wide location, prefer to read the data from a location that's writable only by admin accounts. The `%PROGRAMFILES%` directory and the `HKLM` registry hive are examples of locations that are writable by only administrators and readable by everyone. Data read from those locations is therefore considered trustworthy.
 
-If an app must use the _Machine_ scope in a multi-user environment, validate the contents of any file that you read from the machine-wide store. If the app deserializing object graphs from these files, consider using safer serializers like `XmlSerializer` instead of dangerous serializers like `BinaryFormatter` or `NetDataContractSerializer`. Use caution with deeply nested object graphs or object graphs which perform resource allocation based on the file contents.
+If an app must use the _Machine_ scope in a multi-user environment, validate the contents of any file that you read from the machine-wide store. If the app deserializing object graphs from these files, consider using safer serializers like `XmlSerializer` instead of dangerous serializers like `BinaryFormatter` or `NetDataContractSerializer`. Use caution with deeply nested object graphs or object graphs that perform resource allocation based on the file contents.
 
 <a name="isolated_storage_locations"></a>
 
@@ -189,7 +189,7 @@ Sometimes it is helpful to verify a change to isolated storage by using the file
 
 ## Creating, Enumerating, and Deleting Isolated Storage
 
-The .NET Framework provides three classes in the <xref:System.IO.IsolatedStorage> namespace to help you perform tasks that involve isolated storage:
+.NET provides three classes in the <xref:System.IO.IsolatedStorage> namespace to help you perform tasks that involve isolated storage:
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>, derives from <xref:System.IO.IsolatedStorage.IsolatedStorage?displayProperty=nameWithType> and provides basic management of stored assembly and application files. An instance of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class represents a single store located in the file system.
 
@@ -215,7 +215,7 @@ Isolated storage is useful in many situations, including these four scenarios:
 
 - Roaming. Applications can also use isolated storage with roaming user profiles. This allows a user's isolated stores to roam with the profile.
 
-You should not use isolated storage in the following situations:
+Do not use isolated storage in the following situations:
 
 - To store high-value secrets, such as unencrypted keys or passwords, because isolated storage is not protected from highly trusted code, from unmanaged code, or from trusted users of the computer.
 

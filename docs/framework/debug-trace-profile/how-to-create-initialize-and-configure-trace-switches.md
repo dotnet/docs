@@ -14,10 +14,13 @@ helpviewer_keywords:
 ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
 ---
 # How to: Create, Initialize and Configure Trace Switches
+
 Trace switches enable you to enable, disable, and filter tracing output.  
   
 <a name="create"></a>
+
 ## Creating and initializing a trace switch  
+
  In order to use trace switches, you must first create them and place them in your code. There are two predefined classes from which you can create switch objects: the <xref:System.Diagnostics.BooleanSwitch?displayProperty=nameWithType> class and the <xref:System.Diagnostics.TraceSwitch?displayProperty=nameWithType> class. You would use <xref:System.Diagnostics.BooleanSwitch> if you care only about whether or not a tracing message appears; you would use <xref:System.Diagnostics.TraceSwitch> if you want to discriminate between levels of tracing. If you use a <xref:System.Diagnostics.TraceSwitch>, you can define your own debugging messages and associate them with different trace levels. You can use both types of switches with either tracing or debugging. By default, a <xref:System.Diagnostics.BooleanSwitch> is disabled and a <xref:System.Diagnostics.TraceSwitch> is set to level <xref:System.Diagnostics.TraceLevel.Off?displayProperty=nameWithType>. Trace switches can be created and placed in any part of your code that might use them.  
   
  Although you can set trace levels and other configuration options in code, we recommend that you use the configuration file to manage the state of your switches. This is because managing the configuration of your switches in the configuration system gives you greater flexibility — you can turn on and off various switches and change levels without recompiling your application.  
@@ -44,7 +47,9 @@ Trace switches enable you to enable, disable, and filter tracing output.
     ```  
   
 <a name="configure"></a>
+
 ## Configuring trace switches  
+
  After your application has been distributed, you can still enable or disable trace output by configuring the trace switches in your application. Configuring a switch means changing its value from an external source after it has been initialized. You can change the values of the switch objects using the configuration file. You configure a trace switch to turn it on and off, or to set its level, determining the amount and type of messages it passes along to listeners.  
   
  Your switches are configured using the .config file. For a Web application, this is the Web.config file associated with the project. In a Windows application, this file is named (application name).exe.config. In a deployed application, this file must reside in the same folder as the executable.  

@@ -2,18 +2,18 @@
 title: "How to: Write text to a file"
 description: Learn ways to write or append text to a file for a .NET app. Use methods from the StreamWriter or File classes to write text synchronously or asynchronously.
 ms.date: "01/04/2019"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "writing text to files"
-  - "I/O [.NET Framework], writing text to files"
+  - "I/O [.NET], writing text to files"
   - "streams, writing text to files"
   - "data streams, writing text to files"
 ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
 ---
 # How to: Write text to a file
+
 This topic shows different ways to write text to a file for a .NET app.
 
 The following classes and methods are typically used to write text to a file:  

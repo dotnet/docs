@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d469fb12-e094-4d6c-9b4d-abd7ce0d17da
 ---
 # 111 - CustomTrackingRecordError
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: d469fb12-e094-4d6c-9b4d-abd7ce0d17da
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event is emitted by the ETW tracking participant when an activity within a workflow instance emits CustomTrackingRecord with level error.  
   
 ## Message  
+
  TrackRecord = CustomTrackingRecord, InstanceID = %1, RecordNumber=%2, EventTime=%3, Name=%4, ActivityName=%5, ActivityId=%6, ActivityInstanceId=%7, ActivityTypeName=%8, Data=%9, Annotations=%10, ProfileName = %11  
   
 ## Details  

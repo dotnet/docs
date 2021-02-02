@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess::SetThreadContext Method
+
 Sets the context for the given thread in this process.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ HRESULT SetThreadContext(
 ```  
   
 ## Parameters  
+
  `threadID`  
  [in] The ID of the thread for which to set the context.  
   
@@ -42,6 +44,7 @@ HRESULT SetThreadContext(
  The context specifies the architecture of the processor on which the thread is executing.  
   
 ## Remarks  
+
  The debugger should call this method rather than the Win32 `SetThreadContext` function, because the thread may actually be in a "hijacked" state, in which its context has been temporarily changed. This method should be used only when a thread is in native code. Use [ICorDebugRegisterSet](icordebugregisterset-interface.md) for threads in managed code. You should never need to modify the context of a thread during an out-of-band (OOB) debug event.  
   
  The data passed must be a context structure for the current platform.  
@@ -49,6 +52,7 @@ HRESULT SetThreadContext(
  This method can corrupt the runtime if used improperly.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

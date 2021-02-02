@@ -42,7 +42,7 @@ let nullableInt = new System.Nullable<int>(10)
 let nullableFloat = Nullable.float nullableInt
 
 // Use the regular non-nullable float operator to convert to a non-nullable float.
-printfn "%f" (float nullableFloat)
+printfn $"%f{float nullableFloat}"
 ```
 
 The output is `10.000000`.
@@ -67,14 +67,14 @@ query {
     for row in db.Table2 do
     where (row.TestData1.HasValue && row.TestData1.Value > 2)
     select row
-} |> Seq.iter (fun row -> printfn "%d %s" row.TestData1.Value row.Name)
+} |> Seq.iter (fun row -> printfn $"%d{row.TestData1.Value} %s{row.Name}")
 
 query {
     for row in db.Table2 do
     // Use a nullable operator ?>
     where (row.TestData1 ?> 2)
     select row
-} |> Seq.iter (fun row -> printfn "%d %s" (row.TestData1.GetValueOrDefault()) row.Name)
+} |> Seq.iter (fun row -> printfn "%d{row.TestData1.GetValueOrDefault()} %s{row.Name}")
 ```
 
 ## See also

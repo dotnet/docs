@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::RuntimeSuspendStarted Method
+
 Notifies the profiler that the runtime is about to suspend all runtime threads.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT RuntimeSuspendStarted(
 ```  
   
 ## Parameters  
+
  `suspendReason`  
  [in] A value of the [COR_PRF_SUSPEND_REASON](cor-prf-suspend-reason-enumeration.md) enumeration that indicates the reason for the suspension.  
   
 ## Remarks  
+
  All runtime threads that are in unmanaged code are allowed to continue running until they try to re-enter the runtime. At that point they will also be suspended until the runtime resumes. This also applies to new threads that enter the runtime. All threads in the runtime are either suspended immediately if they are already in interruptible code, or they are asked to suspend when they reach interruptible code.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

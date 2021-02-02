@@ -1,7 +1,6 @@
 ---
 title: "Converting Strings to .NET Data Types"
 ms.date: "03/30/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
@@ -67,6 +66,7 @@ writer.WriteElementString("Number", XmlConvert.ToString(value));
  However, if you are converting a string to **Boolean**, **Single**, or **Double**, the .NET type that's returned is not the same as the type returned when using the **System.Convert** class.  
   
 ## String to Boolean  
+
  The following table shows what type is generated for the given input strings, when converting a string to **Boolean** using the **ToBoolean** method.  
   
 |Valid string input parameter|.NET output type|  
@@ -99,6 +99,7 @@ Console.WriteLine(bvalue);
 ```  
   
 ## String to Single  
+
  The following table shows what type is generated for the given input strings, when converting a string to a **Single** using the **ToSingle** method.  
   
 |Valid string input parameter|.NET output type|  
@@ -107,6 +108,7 @@ Console.WriteLine(bvalue);
 |"-INF"|Single.NegativeInfinity|  
   
 ## String to Double  
+
  The following table shows what type is generated for the given input strings, when converting a string to a **Single** using the **ToDouble** method.  
   
 |Valid string input parameter|.NET output type|  

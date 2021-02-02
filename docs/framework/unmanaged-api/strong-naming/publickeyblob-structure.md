@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # PublicKeyBlob Structure
+
 Represents, in binary format, the public key of a public/private key pair.  
   
 ## Syntax  
@@ -39,9 +40,11 @@ typedef struct {
 |`PublicKey`|A variable-length byte array that contains the key value in the format returned by the CryptoAPI.|  
   
 ## Remarks  
+
  The `PublicKeyBlob` structure is used by [StrongNameGetPublicKey](strongnamegetpublickey-function.md), [StrongNameSignatureGeneration](strongnamesignaturegeneration-function.md), and other strong name functions to represent the public key of a public/private key pair.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  

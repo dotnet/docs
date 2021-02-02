@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetCurrentThreadID Method
+
 Gets the ID of the current thread, if it is a managed thread.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT GetCurrentThreadID(
 ```  
   
 ## Parameters  
+
  `pThreadId`  
  [out] A pointer to the returned ID of the managed thread.  
   
 ## Remarks  
+
  If the current thread is an internal runtime thread or other unmanaged thread, `GetCurrentThreadID` returns CORPROF_E_NOT_MANAGED_THREAD as the HRESULT, and the returned value of the `pThreadId` parameter will be null.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

@@ -1,7 +1,7 @@
 ---
 title: Migrate to hybrid cloud scenarios
 description: Modernize existing .NET applications with Azure Cloud and Windows containers | Migrate to hybrid cloud scenarios
-ms.date: 04/30/2018
+ms.date: 12/21/2020
 ---
 # Migrate to hybrid cloud scenarios
 
@@ -9,7 +9,7 @@ Some organizations and enterprises can't migrate some of their applications to p
 
 Microsoft provides the best hybrid cloud solution, one in which you can optimize your existing assets on-premises and in the public cloud, while you ensure consistency in an Azure hybrid cloud. You can maximize existing skills, and get a flexible, unified approach to building apps that can run in the cloud or on-premises, thanks to Azure Stack (on-premises) and Azure (public cloud).
 
-When it comes to security, you can centralize management and security across your hybrid cloud. You can get control over all assets, from your datacenter to the cloud, by providing single sign-on to on-premises and cloud apps. You accomplish this by extending Active Directory to a hybrid cloud, and by using identity management.
+When it comes to security, you can centralize management and security across your hybrid cloud. You can get control over all assets, from your datacenter to the cloud, by providing single sign-on to on-premises and cloud apps. You accomplish this functionality by extending Active Directory to a hybrid cloud, and by using identity management.
 
 Finally, you can distribute and analyze data seamlessly, use the same query languages for cloud and on-premises assets, and apply analytics and deep learning in Azure to enrich your data, regardless of its source.
 

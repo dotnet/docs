@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: ac770da2-218e-4708-aeb5-465369c94a8d
 ---
 # Microsoft.Transactions.TransactionBridge.ProtocolStarted
+
 The WS-Atomic Transaction protocol service was started.  
   
 ## Description  
+
  Traced during Transaction Manager startup to indicate which protocol has been successfully started.  
   
 ## See also

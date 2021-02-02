@@ -34,6 +34,7 @@ EVENT_DESCRIPTOR.Id = 1
 |ExclusiveTo|<xref:System.Int64?displayProperty=nameWithType>|The ending value of the loop counter|
 
 ### Parallel Loop End
+
  EVENT_DESCRIPTOR.Task = 2
 
  EVENT_DESCRIPTOR.Id = 2
@@ -48,6 +49,7 @@ EVENT_DESCRIPTOR.Id = 1
 |totalIterations|<xref:System.Int64?displayProperty=nameWithType>|The total number of iterations|
 
 ### Parallel Invoke Begin
+
  EVENT_DESCRIPTOR.Task = 3
 
  EVENT_DESCRIPTOR.Id = 3
@@ -64,6 +66,7 @@ EVENT_DESCRIPTOR.Id = 1
 |ActionCount|<xref:System.Int32?displayProperty=nameWithType>|The number of actions that will be executed in the parallel invoke.|
 
 ### Parallel Invoke End
+
  EVENT_DESCRIPTOR.Task = 4
 
  EVENT_DESCRIPTOR.Id = 4
@@ -77,11 +80,13 @@ EVENT_DESCRIPTOR.Id = 1
 |ForkJoinContextID|<xref:System.Int32?displayProperty=nameWithType>|A unique identifier used to indicate nesting and pairs for events with fork/join semantics.|
 
 ## PLINQ ETW Events
+
  The EVENT_HEADER.ProviderId GUID for PLINQ is:
 
 `0x159eeeec, 0x4a14, 0x4418, 0xa8, 0xfe, 0xfa, 0xab, 0xcd, 0x98, 0x78, 0x87`
 
 ### Parallel Query Begin
+
  EVENT_DESCRIPTOR.Task = 1
 
  EVENT_DESCRIPTOR.Id = 1
@@ -95,6 +100,7 @@ EVENT_DESCRIPTOR.Id = 1
 |QueryID|<xref:System.Int32?displayProperty=nameWithType>|A unique query identifier.|
 
 ### Parallel Query End
+
  EVENT_DESCRIPTOR.Task = 2
 
  EVENT_DESCRIPTOR.Id = 2

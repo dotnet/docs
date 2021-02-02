@@ -84,7 +84,8 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Diagnostics.Process.MinWorkingSet?displayProperty=nameWithType> (set only) | Linux |
 | <xref:System.Diagnostics.Process.ProcessorAffinity?displayProperty=nameWithType> | macOS |
 | <xref:System.Diagnostics.Process.MainWindowHandle?displayProperty=nameWithType> | Linux and macOS |
-| <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.Process.Start(System.String,System.String,System.String,System.Security.SecureString,System.String)?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.Process.Start(System.String,System.String,System.Security.SecureString,System.String)?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Diagnostics.ProcessStartInfo.UserName?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Diagnostics.ProcessStartInfo.PasswordInClearText?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Diagnostics.ProcessStartInfo.Domain?displayProperty=nameWithType> | Linux and macOS |
@@ -217,7 +218,7 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 | - | - |
-| <xref:System.Security.Claims.ClaimsPrincipal.%23ctor> | All |
+| <xref:System.Security.Claims.ClaimsPrincipal.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 | <xref:System.Security.Claims.ClaimsPrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Runtime.Serialization.SerializationInfo)> | All |
 | <xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |

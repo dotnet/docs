@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: c4960675-d701-4bc9-b400-36a752fdd08b
 ---
 # Creating User-Defined Bindings
+
 There are several ways to create bindings not provided by the system:  
   
 - Create a custom binding, based on the <xref:System.ServiceModel.Channels.CustomBinding> class, which is a container that you fill with binding elements. The custom binding is then added to a service endpoint. You can create the custom binding either programmatically or in an application configuration file. To use a binding element from an application configuration file, the binding element must extend <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>. For more information about custom bindings, see [Custom Bindings](custom-bindings.md) and <xref:System.ServiceModel.Channels.CustomBinding>.  
@@ -15,6 +16,7 @@ There are several ways to create bindings not provided by the system:
 - You can create a new <xref:System.ServiceModel.Channels.Binding> type to completely control the entire binding implementation.  
   
 ## The Order of Binding Elements  
+
  Each binding element represents a processing step when sending or receiving messages. At runtime, binding elements create the channels and listeners necessary to build outgoing and incoming channel stacks.  
   
  There are three main types of binding elements: Protocol Binding Elements, Encoding Binding Elements and Transport Binding Elements.  
@@ -39,6 +41,7 @@ There are several ways to create bindings not provided by the system:
 \*Because an encoding is required for each binding, if an encoding is not specified, WCF adds a default encoding for you. The default is Text/XML for the HTTP and HTTPS transports, and Binary otherwise.  
   
 ## Creating a new Binding Element  
+
  In addition to the types derived from <xref:System.ServiceModel.Channels.BindingElement> that are provided by WCF, you can create your own binding elements. This lets you customize the way the stack of bindings is created and the components that go in it by creating your own <xref:System.ServiceModel.Channels.BindingElement> that can be composed with the other system-provided types in the stack.  
   
  For example, if you implement a `LoggingBindingElement` that provides the ability to log the message to a database, you must place it above a transport channel in the channel stack. In this case, the application creates a custom binding that composed the `LoggingBindingElement` with `TcpTransportBindingElement`, as in the following example.  
@@ -53,6 +56,7 @@ Binding customBinding = new CustomBinding(
  How you write your new binding element depends on its exact functionality. One of the samples, [Transport: UDP](../samples/transport-udp.md), provides a detailed description of how to implement one kind of binding element.  
   
 ## Creating a New Binding  
+
  A user-created binding element can be used in two ways. The previous section illustrates the first way: through a custom binding. A custom binding allows the user to create their own binding based on an arbitrary set of binding elements, including user-created ones.  
   
  If you use the binding in more than one application, create your own binding and extend the <xref:System.ServiceModel.Channels.Binding>. This avoids manually creating a custom binding every time you want to use it. A user-defined binding allows you to define the binding’s behavior and include user-defined binding elements. And it is *pre-packaged*: you do not have to rebuild the binding every time you use it.  
@@ -66,6 +70,7 @@ Binding customBinding = new CustomBinding(
  For a complete list of optional methods and properties for user-defined bindings, see <xref:System.ServiceModel.Channels.Binding>.  
   
 ### Example  
+
  This example implements profile binding in `SampleProfileUdpBinding`, which derives from <xref:System.ServiceModel.Channels.Binding>. The `SampleProfileUdpBinding` contains up to four binding elements within it: one user-created `UdpTransportBindingElement`; and three system-provided: `TextMessageEncodingBindingElement`, `CompositeDuplexBindingElement`, and `ReliableSessionBindingElement`.  
   
 ```csharp
@@ -84,9 +89,11 @@ public override BindingElementCollection CreateBindingElements()
 ```  
   
 ## Security Restrictions with Duplex Contracts  
+
  Not all binding elements are compatible with each other. In particular, there are some restrictions on security binding elements when used with duplex contracts.  
   
 ### One-Shot Security  
+
  You can implement "one-shot" security, where all the necessary security credentials are sent in a single message, by setting the `negotiateServiceCredential` attribute of the \<message> configuration element to `false`.  
   
  One-shot authentication does not work with duplex contracts.  
@@ -96,6 +103,7 @@ public override BindingElementCollection CreateBindingElements()
  For one-way contracts, one-shot authentication works if the binding stack below the security binding element supports creating <xref:System.ServiceModel.Channels.IRequestChannel>, <xref:System.ServiceModel.Channels.IRequestSessionChannel>, <xref:System.ServiceModel.Channels.IOutputChannel> or <xref:System.ServiceModel.Channels.IOutputSessionChannel> instances.  
   
 ### Cookie-mode Security Context Tokens  
+
  Cookie mode security context tokens cannot be used with duplex contracts.  
   
  For Request-Reply contracts, cookie-mode security context tokens work only if the binding stack below the security binding element supports creating <xref:System.ServiceModel.Channels.IRequestChannel> or <xref:System.ServiceModel.Channels.IRequestSessionChannel> instances.  
@@ -103,6 +111,7 @@ public override BindingElementCollection CreateBindingElements()
  For one-way contracts, cookie-mode security context tokens works if the binding stack below the security binding element supports creating <xref:System.ServiceModel.Channels.IRequestChannel> or <xref:System.ServiceModel.Channels.IRequestSessionChannel> instances.  
   
 ### Session-mode Security Context Tokens  
+
  Session mode SCT works for duplex contracts if the binding stack below the security binding element supports creating <xref:System.ServiceModel.Channels.IDuplexChannel> or <xref:System.ServiceModel.Channels.IDuplexSessionChannel> instances.  
   
  Session mode SCT works for Request-Reply contracts if the binding stack below the security binding element supports creating <xref:System.ServiceModel.Channels.IDuplexChannel>, <xref:System.ServiceModel.Channels.IDuplexSessionChannel>, <xref:System.ServiceModel.Channels.IRequestChannel> or <xref:System.ServiceModel.Channels.IRequestSessionChannel>, instances.  
@@ -110,6 +119,7 @@ public override BindingElementCollection CreateBindingElements()
  Session mode SCT works for 1-way contracts if the binding stack below the security binding element supports creating <xref:System.ServiceModel.Channels.IDuplexChannel>, <xref:System.ServiceModel.Channels.IDuplexSessionChannel>, <xref:System.ServiceModel.Channels.IRequestChannel> or <xref:System.ServiceModel.Channels.IRequestSessionChannel> instances.  
   
 ## Deriving from a Standard Binding  
+
  Instead of creating an entirely new binding class, it may be possible for you to extend one of the existing system-provided bindings. Much like the preceding case, you must override the <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A> method and the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property.  
   
 ## See also

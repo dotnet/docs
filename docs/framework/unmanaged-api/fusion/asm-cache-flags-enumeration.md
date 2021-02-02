@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ASM_CACHE_FLAGS Enumeration
+
 Indicates the source of an assembly that is represented by [IAssemblyCacheItem](iassemblycacheitem-interface.md) in the global assembly cache.  
   
 ## Syntax  
@@ -41,6 +42,7 @@ typedef enum {
 |`ASM_CACHE_ROOT_EX`|Indicates that the [GetCachePath](getcachepath-function.md) function should return the path to the global assembly cache for CLR version 4. Meaningful only in the context of a call to [GetCachePath](getcachepath-function.md).|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  

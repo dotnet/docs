@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 62b41a75-cf40-4c52-a842-a5f1c70e247f
 ---
 # How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service
+
 This topic is the third of three topics that discusses how to implement a discovery proxy. In the previous topic, [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](discoverable-service-that-registers-with-the-discovery-proxy.md), you implemented a WCF service that registers itself with the discovery proxy. In this topic you create a WCF client that uses the discovery proxy to find the WCF service.  
   
 ### Implement the client  
@@ -98,6 +99,7 @@ This topic is the third of three topics that discusses how to implement a discov
  You have completed implementing the client application. Continue on to [How to: Test the Discovery Proxy](how-to-test-the-discovery-proxy.md).  
   
 ## Example  
+
  This is the full code listing for this topic.  
   
 ```csharp  

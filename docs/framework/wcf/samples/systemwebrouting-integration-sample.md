@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f1c94802-95c4-49e4-b1e2-ee9dd126ff93
 ---
 # SystemWebRouting Integration Sample
+
 This sample demonstrates the hosting layer’s integration with the classes in the <xref:System.Web.Routing> namespace. The classes in the <xref:System.Web.Routing> namespace allow an application to use URLs that do not directly correspond to a physical resource. Using Web routing allows the developer to create virtual addresses for HTTP that are then mapped back to actual WCF services. This is useful when a WCF service must be hosted without requiring a physical file or resource, or when services must be accessed with URLs that do not contain files such as .html or .aspx. This sample demonstrates how to utilize the <xref:System.Web.Routing.RouteTable> class to create virtual URIs that map to running services defined in global.asax.
 
 > [!NOTE]

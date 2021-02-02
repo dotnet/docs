@@ -3,12 +3,12 @@ title: Developing ASP.NET Core MVC apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | developing ASP.NET Core MVC Apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 08/12/2020
+ms.date: 12/01/2020
 no-loc: [Blazor, WebAssembly]
 ---
 # Develop ASP.NET Core MVC apps
 
-> "It's not important to get it right the first time. It's vitally important to get it right the last time."  
+> "It's not important to get it right the first time. It's vitally important to get it right the last time."
 > _- Andrew Hunt and David Thomas_
 
 ASP.NET Core is a cross-platform, open-source framework for building modern cloud-optimized web applications. ASP.NET Core apps are lightweight and modular, with built-in support for dependency injection, enabling greater testability and maintainability. Combined with MVC, which supports building modern web APIs in addition to view-based apps, ASP.NET Core is a powerful framework with which to build enterprise web applications.
@@ -17,11 +17,11 @@ ASP.NET Core is a cross-platform, open-source framework for building modern clou
 
 ASP.NET Core MVC offers many features that are useful for building web-based APIs and apps. The term MVC stands for "Model-View-Controller", a UI pattern that breaks up the responsibilities of responding to user requests into several parts. In addition to following this pattern, you can also implement features in your ASP.NET Core apps as Razor Pages. Razor Pages are built into ASP.NET Core MVC, and use the same features for routing, model binding, filters, authorization, etc. However, instead of having separate folders and files for Controllers, Models, Views, etc. and using attribute-based routing, Razor Pages are placed in a single folder ("/Pages"), route based on their relative location in this folder, and handle requests with handlers instead of controller actions. As a result, when working with Razor Pages, all of the files and classes you need are typically colocated, not spread throughout the web project.
 
-When you create a new ASP.NET Core App, you should have a plan in mind for the kind of app you want to build. In Visual Studio, you'll choose from several templates. The three most common project templates are Web API, Web Application, and Web Application (Model-View-Controller). Although you can only make this decision when you first create a project, it's not an irrevocable decision. The Web API project uses standard Model-View-Controller controllers – it just lacks Views by default. Likewise, the default Web Application template uses Razor Pages, and so also lacks a Views folder. You can add a Views folder to these projects later to support view-based behavior. Web API and Model-View-Controller projects don't include a Pages folder by default, but you can add one later to support Razor Pages-based behavior. You can think of these three templates as supporting three different kinds of default user interaction: data (web API), page-based, and view-based. However, you can mix and match any or all of these within a single project if you wish.
+When you create a new ASP.NET Core App, you should have a plan in mind for the kind of app you want to build. In Visual Studio, you'll choose from several templates. The three most common project templates are Web API, Web Application, and Web Application (Model-View-Controller). Although you can only make this decision when you first create a project, it's not an irrevocable decision. The Web API project uses standard Model-View-Controller controllers – it just lacks Views by default. Likewise, the default Web Application template uses Razor Pages, and so also lacks a Views folder. You can add a Views folder to these projects later to support view-based behavior. Web API and Model-View-Controller projects don't include a Pages folder by default, but you can add one later to support Razor Pages-based behavior. You can think of these three templates as supporting three different kinds of default user interaction: data (web API), page-based, and view-based. However, you can mix and match any or all of these templates within a single project if you wish.
 
 ### Why Razor Pages?
 
-Razor Pages is the default approach for new web applications in Visual Studio. Razor Pages offers a simpler way of building page-based application features, such as non-SPA forms. Using controllers and views, it was common for applications to have very large controllers that worked with many different dependencies and view models and returned many different views. This resulted in more complexity and often resulted in controllers that didn't follow the Single Responsibility Principle or Open/Closed Principles effectively. Razor Pages addresses this issue by encapsulating the server-side logic for a given logical "page" in a web application with its Razor markup. A Razor Page that has no server-side logic can simply consist of a Razor file (for instance, "Index.cshtml"). However, most non-trivial Razor Pages will have an associated page model class, which by convention is named the same as the Razor file with a ".cs" extension (for example, "Index.cshtml.cs").
+Razor Pages is the default approach for new web applications in Visual Studio. Razor Pages offers a simpler way of building page-based application features, such as non-SPA forms. Using controllers and views, it was common for applications to have very large controllers that worked with many different dependencies and view models and returned many different views. This resulted in more complexity and often resulted in controllers that didn't follow the Single Responsibility Principle or Open/Closed Principles effectively. Razor Pages addresses this issue by encapsulating the server-side logic for a given logical "page" in a web application with its Razor markup. A Razor Page that has no server-side logic can only consist of a Razor file (for instance, "Index.cshtml"). However, most non-trivial Razor Pages will have an associated page model class, which by convention is named the same as the Razor file with a ".cs" extension (for example, "Index.cshtml.cs").
 
 A Razor Page's page model combines the responsibilities of an MVC controller and a viewmodel. Instead of handling requests with controller action methods, page model handlers like "OnGet()" are executed, rendering their associated page by default. Razor Pages simplifies the process of building individual pages in an ASP.NET Core app, while still providing all the architectural features of ASP.NET Core MVC. They're a good default choice for new page-based functionality.
 
@@ -33,7 +33,7 @@ Whether you choose to build your web app using Razor Pages or MVC views, your ap
 
 ## Mapping requests to responses
 
-At its heart, ASP.NET Core apps map incoming requests to outgoing responses. At a low level, this is done with middleware, and simple ASP.NET Core apps and microservices may be comprised solely of custom middleware. When using ASP.NET Core MVC, you can work at a somewhat higher level, thinking in terms of _routes_, _controllers_, and _actions_. Each incoming request is compared with the application's routing table, and if a matching route is found, the associated action method (belonging to a controller) is called to handle the request. If no matching route is found, an error handler (in this case, returning a NotFound result) is called.
+At its heart, ASP.NET Core apps map incoming requests to outgoing responses. At a low level, this mapping is done with middleware, and simple ASP.NET Core apps and microservices may be comprised solely of custom middleware. When using ASP.NET Core MVC, you can work at a somewhat higher level, thinking in terms of _routes_, _controllers_, and _actions_. Each incoming request is compared with the application's routing table, and if a matching route is found, the associated action method (belonging to a controller) is called to handle the request. If no matching route is found, an error handler (in this case, returning a NotFound result) is called.
 
 ASP.NET Core MVC apps can use conventional routes, attribute routes, or both. Conventional routes are defined in code, specifying routing _conventions_ using syntax like in the example below:
 
@@ -44,9 +44,9 @@ app.UseEndpoints(endpoints =>
 });
 ```
 
-In this example, a route named "default" has been added to the routing table. It defines a route template with placeholders for _controller_, _action_, and _id_. The controller and action placeholders have default specified ("Home" and "Index", respectively), and the id placeholder is optional (by virtue of a "?" applied to it). The convention defined here states that the first part of a request should correspond to the name of the controller, the second part to the action, and then if necessary a third part will represent an id parameter. Conventional routes are typically defined in one place for the application, such as in the Configure method in the Startup class.
+In this example, a route named "default" has been added to the routing table. It defines a route template with placeholders for `controller`, `action`, and `id`. The `controller` and `action` placeholders have the default specified (`Home` and `Index`, respectively), and the `id` placeholder is optional (by virtue of a "?" applied to it). The convention defined here states that the first part of a request should correspond to the name of the controller, the second part to the action, and then if necessary a third part will represent an ID parameter. Conventional routes are typically defined in one place for the application, such as in the `Configure` method in the `Startup` class.
 
-Attribute routes are applied to controllers and actions directly, rather than specified globally. This has the advantage of making them much more discoverable when you're looking at a particular method, but does mean that routing information is not kept in one place in the application. With attribute routes, you can easily specify multiple routes for a given action, as well as combine routes between controllers and actions. For example:
+Attribute routes are applied to controllers and actions directly, rather than specified globally. This approach has the advantage of making them much more discoverable when you're looking at a particular method, but does mean that routing information is not kept in one place in the application. With attribute routes, you can easily specify multiple routes for a given action, as well as combine routes between controllers and actions. For example:
 
 ```csharp
 [Route("Home")]
@@ -83,11 +83,11 @@ In the previous example, the page in question would match a route with an intege
 "/Products/123"
 ```
 
-Once a given request has been matched to a route, but before the action method is called, ASP.NET Core MVC will perform [model binding](/aspnet/core/mvc/models/model-binding) and [model validation](/aspnet/core/mvc/models/validation) on the request. Model binding is responsible for converting incoming HTTP data into the .NET types specified as parameters of the action method to be called. For example, if the action method expects an `int id` parameter, model binding will attempt to provide this parameter from a value provided as part of the request. To do so, model binding looks for values in a posted form, values in the route itself, and query string values. Assuming an id value is found, it will be converted to an integer before being passed into the action method.
+Once a given request has been matched to a route, but before the action method is called, ASP.NET Core MVC will perform [model binding](/aspnet/core/mvc/models/model-binding) and [model validation](/aspnet/core/mvc/models/validation) on the request. Model binding is responsible for converting incoming HTTP data into the .NET types specified as parameters of the action method to be called. For example, if the action method expects an `int id` parameter, model binding will attempt to provide this parameter from a value provided as part of the request. To do so, model binding looks for values in a posted form, values in the route itself, and query string values. Assuming an `id` value is found, it will be converted to an integer before being passed into the action method.
 
 After binding the model but before calling the action method, model validation occurs. Model validation uses optional attributes on the model type, and can help ensure that the provided model object conforms to certain data requirements. Certain values may be specified as required, or limited to a certain length or numeric range, etc. If validation attributes are specified but the model does not conform to their requirements, the property ModelState.IsValid will be false, and the set of failing validation rules will be available to send to the client making the request.
 
-If you're using model validation, you should be sure to always check that the model is valid before performing any state-altering commands, to ensure your app is not corrupted by invalid data. You can use a [filter](/aspnet/core/mvc/controllers/filters) to avoid the need to add code for this in every action. ASP.NET Core MVC filters offer a way of intercepting groups of requests, so that common policies and cross-cutting concerns can be applied on a targeted basis. Filters can be applied to individual actions, whole controllers, or globally for an application.
+If you're using model validation, you should be sure to always check that the model is valid before performing any state-altering commands, to ensure your app is not corrupted by invalid data. You can use a [filter](/aspnet/core/mvc/controllers/filters) to avoid the need to add code for this validation in every action. ASP.NET Core MVC filters offer a way of intercepting groups of requests, so that common policies and cross-cutting concerns can be applied on a targeted basis. Filters can be applied to individual actions, whole controllers, or globally for an application.
 
 For web APIs, ASP.NET Core MVC supports [_content negotiation_](/aspnet/core/mvc/models/formatting), allowing requests to specify how responses should be formatted. Based on headers provided in the request, actions returning data will format the response in XML, JSON, or another supported format. This feature enables the same API to be used by multiple clients with different data format requirements.
 
@@ -95,9 +95,9 @@ Web API projects should consider using the `[ApiController]` attribute, which ca
 
 ### Keeping controllers under control
 
-For page-based applications, Razor Pages do a great job of keeping controllers from getting too large. Each individual page is given its own files and classes dedicated just to its handler(s). Prior to the introduction of Razor Pages, many view-centric applications would have large controller classes responsible for many different actions and views. These classes would naturally grow to have many responsibilities and dependencies, making them harder to maintain. If you find your view-based controllers are growing too large, consider refactoring them to use Razor Pages, or introducing a pattern like mediator.
+For page-based applications, Razor Pages do a great job of keeping controllers from getting too large. Each individual page is given its own files and classes dedicated just to its handler(s). Prior to the introduction of Razor Pages, many view-centric applications would have large controller classes responsible for many different actions and views. These classes would naturally grow to have many responsibilities and dependencies, making them harder to maintain. If you find your view-based controllers are growing too large, consider refactoring them to use Razor Pages, or introducing a pattern like a mediator.
 
-The mediator design pattern is used to reduce coupling between classes while allowing communication between them. In ASP.NET Core MVC applications, this pattern is frequently employed to break up controllers into smaller pieces by using *handlers* to do the work of action methods. The popular [MediatR NuGet package](https://www.nuget.org/packages/MediatR/) is often used to accomplish this. Typically, controllers include many different action methods, each of which may require certain dependencies. The set of all dependencies required by any action must be passed into the controller's constructor. When using Mediatr, the only dependency a controller has is on an instance of the mediator. Each action then uses the mediator instance to send a message, which is processed by a handler. The handler is specific to a single action and thus only needs the dependencies required by that action. An example of a controller using MediatR is shown here:
+The mediator design pattern is used to reduce coupling between classes while allowing communication between them. In ASP.NET Core MVC applications, this pattern is frequently employed to break up controllers into smaller pieces by using *handlers* to do the work of action methods. The popular [MediatR NuGet package](https://www.nuget.org/packages/MediatR/) is often used to accomplish this. Typically, controllers include many different action methods, each of which may require certain dependencies. The set of all dependencies required by any action must be passed into the controller's constructor. When using MediatR, the only dependency a controller has is on an instance of the mediator. Each action then uses the mediator instance to send a message, which is processed by a handler. The handler is specific to a single action and thus only needs the dependencies required by that action. An example of a controller using MediatR is shown here:
 
 ```csharp
 public class OrderController : Controller
@@ -161,22 +161,22 @@ The end result of this approach is for controllers to be much smaller and focuse
 
 > ### References – Mapping Requests to Responses
 >
-> - **Routing to Controller Actions**
+> - **Routing to Controller Actions**\
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
-> - **Model Binding**
+> - **Model Binding**\
  > <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
-> - **Model Validation**
+> - **Model Validation**\
  > <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
-> - **Filters**
+> - **Filters**\
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
-> - **ApiController Attribute**
+> - **ApiController Attribute**\
  > <https://docs.microsoft.com/aspnet/core/web-api/>
 
 ## Working with dependencies
 
 ASP.NET Core has built-in support for and internally makes use of a technique known as [dependency injection](/aspnet/core/fundamentals/dependency-injection). Dependency injection is a technique that enables loose coupling between different parts of an application. Looser coupling is desirable because it makes it easier to isolate parts of the application, allowing for testing or replacement. It also makes it less likely that a change in one part of the application will have an unexpected impact somewhere else in the application. Dependency injection is based on the dependency inversion principle, and is often key to achieving the open/closed principle. When evaluating how your application works with its dependencies, beware of the [static cling](https://deviq.com/static-cling/) code smell, and remember the aphorism "[new is glue](https://ardalis.com/new-is-glue)."
 
-Static cling occurs when your classes make calls to static methods, or access static properties, which have side effects or dependencies on infrastructure. For example, if you have a method that calls a static method, which in turn writes to a database, your method is tightly coupled to the database. Anything that breaks that database call will break your method. Testing such methods is notoriously difficult, since such tests either require commercial mocking libraries to mock the static calls, or can only be tested with a test database in place. Static calls that don't have any dependence on infrastructure, especially those that are completely stateless, are fine to call and have no impact on coupling or testability (beyond coupling code to the static call itself).
+Static cling occurs when your classes make calls to static methods, or access static properties, which have side effects or dependencies on infrastructure. For example, if you have a method that calls a static method, which in turn writes to a database, your method is tightly coupled to the database. Anything that breaks that database call will break your method. Testing such methods is notoriously difficult, since such tests either require commercial mocking libraries to mock the static calls, or can only be tested with a test database in place. Static calls that don't have any dependence on infrastructure, especially those calls that are completely stateless, are fine to call and have no impact on coupling or testability (beyond coupling code to the static call itself).
 
 Many developers understand the risks of static cling and global state, but will still tightly couple their code to specific implementations through direct instantiation. "New is glue" is meant to be a reminder of this coupling, and not a general condemnation of the use of the `new` keyword. Just as with static method calls, new instances of types that have no external dependencies typically do not tightly couple code to implementation details or make testing more difficult. But each time a class is instantiated, take just a brief moment to consider whether it makes sense to hard-code that specific instance in that particular location, or if it would be a better design to request that instance as a dependency.
 
@@ -297,7 +297,7 @@ ASP.NET Core MVC also uses a convention to locate views. You can override it wit
 
 ### APIs and Blazor applications
 
-If your application includes a set of web APIs which must be secured, these should ideally be configured as a separate project from your View or Razor Pages application. Separating APIs, especially public APIs, from your server-side web application has a number of benefits. These applications often will have unique deployment and load characteristics. They're also very likely to adopt different mechanisms for security, with standard form-based applications leveraging cookie-based authentication and APIs most likely using token-based authentication.
+If your application includes a set of web APIs, which must be secured, these apis should ideally be configured as a separate project from your View or Razor Pages application. Separating APIs, especially public APIs, from your server-side web application has a number of benefits. These applications often will have unique deployment and load characteristics. They're also very likely to adopt different mechanisms for security, with standard form-based applications leveraging cookie-based authentication and APIs most likely using token-based authentication.
 
 Additionally, Blazor applications, whether using Blazor Server or Blazor WebAssembly, should be built as separate projects. The applications have different runtime characteristics as well as security models. They're likely to share common types with the server-side web application (or API project), and these types should be defined in a common shared project.
 
@@ -383,13 +383,13 @@ You can read more about implementing filters and download a working sample from 
 
 > ### References – Structuring applications
 >
-> - **Areas**  
+> - **Areas**\
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
-> - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**  
+> - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**\
 >   <https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc>
-> - **Filters**  
+> - **Filters**\
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
-> - **MSDN Magazine – Real World ASP.NET Core MVC Filters**  
+> - **MSDN Magazine – Real World ASP.NET Core MVC Filters**\
 >   <https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters>
 
 ## Security
@@ -437,11 +437,11 @@ You can learn more about [configuring two-factor authentication](/aspnet/core/se
 
 ### Authentication
 
-Authentication is the process of determining who is accessing the system. If you're using ASP.NET Core Identity and the configuration methods shown in the previous section, it will automatically configure some authentication defaults in the application. However, you can also configure these defaults manually, or override the ones set by AddIdentity. If you're using Identity, it configure cookie-based authentication as the default *scheme*.
+Authentication is the process of determining who is accessing the system. If you're using ASP.NET Core Identity and the configuration methods shown in the previous section, it will automatically configure some authentication defaults in the application. However, you can also configure these defaults manually, or override the ones set by AddIdentity. If you're using Identity, it configures cookie-based authentication as the default *scheme*.
 
-In web-based authentication, there are typically up to 5 actions that may be performed in the course of authenticating a client of a system. These are:
+In web-based authentication, there are typically up to five actions that may be performed in the course of authenticating a client of a system. These are:
 
-- Authenticate. Use information provided by the client to create an identity for them to use within the application.
+- Authenticate. Use the information provided by the client to create an identity for them to use within the application.
 - Challenge. This action is used to require the client to identify themselves.
 - Forbid. Inform the client they are forbidden from performing an action.
 - Sign-in. Persist the existing client in some way.
@@ -493,18 +493,18 @@ Blazor Server applications can leverage the same authentication features as any 
 
 > ### References – Authentication
 >
-> - **Authentication Actions and Defaults**  
+> - **Authentication Actions and Defaults**\
 >   <https://stackoverflow.com/a/52493428>
-> - **Authentication and Authorization for SPAs**
+> - **Authentication and Authorization for SPAs**\
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization>
-> - **ASP.NET Core Blazor Authentication and Authorization**
+> - **ASP.NET Core Blazor Authentication and Authorization**\
 >   <https://docs.microsoft.com/aspnet/core/blazor/security/>
-> - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**
+> - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**\
 >   <https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization>
 
 ### Authorization
 
-The simplest form of authorization involves restricting access to anonymous users. This can be achieved by simply applying the \[Authorize\] attribute to certain controllers or actions. If roles are being used, the attribute can be further extended to restrict access to users who belong to certain roles, as shown:
+The simplest form of authorization involves restricting access to anonymous users. This functionality can be achieved by applying the \[Authorize\] attribute to certain controllers or actions. If roles are being used, the attribute can be further extended to restrict access to users who belong to certain roles, as shown:
 
 ```csharp
 [Authorize(Roles = "HRManager,Finance")]
@@ -514,7 +514,7 @@ public class SalaryController : Controller
 }
 ```
 
-In this case, users belonging to either the HRManager or Finance roles (or both) would have access to the SalaryController. To require that a user belong to multiple roles (not just one of several), you can apply the attribute multiple times, specifying a required role each time.
+In this case, users belonging to either the `HRManager` or `Finance` roles (or both) would have access to the SalaryController. To require that a user belong to multiple roles (not just one of several), you can apply the attribute multiple times, specifying a required role each time.
 
 Specifying certain sets of roles as strings in many different controllers and actions can lead to undesirable repetition. At a minimum, define constants for these string literals and use the constants anywhere you need to specify the string. You can also configure authorization policies, which encapsulate authorization rules, and then specify the policy instead of individual roles when applying the \[Authorize\] attribute:
 
@@ -557,7 +557,7 @@ You can create your own authentication service, integrate with Azure AD and OAut
 
 JWT tokens can embed claims about the user, which can be read on the client or server. You can use a tool like [jwt.io](https://jwt.io/) to view the contents of a JWT token. Do not store sensitive data like passwords or keys in JTW tokens, since their contents are easily read.
 
-When using JWT tokens with SPA or Blazor WebAssembly applications, you must store the token somewhere on the client and then add it to every API call. This is typically done as a header, as the following code demonstrates:
+When using JWT tokens with SPA or Blazor WebAssembly applications, you must store the token somewhere on the client and then add it to every API call. This activity is typically done as a header, as the following code demonstrates:
 
 ```csharp
 // AuthService.cs in BlazorAdmin project of eShopOnWeb
@@ -576,17 +576,17 @@ Be especially careful about "rolling your own" implementation of cryptography, u
 
 > ### References – Security
 >
-> - **Security Docs Overview**  
+> - **Security Docs Overview**\
 >   <https://docs.microsoft.com/aspnet/core/security/>
-> - **Enforcing SSL in an ASP.NET Core App**  
+> - **Enforcing SSL in an ASP.NET Core App**\
 >   <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
-> - **Introduction to Identity**  
+> - **Introduction to Identity**\
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity>
-> - **Introduction to Authorization**  
+> - **Introduction to Authorization**\
 >   <https://docs.microsoft.com/aspnet/core/security/authorization/introduction>
-> - **Authentication and Authorization for API Apps in Azure App Service**  
+> - **Authentication and Authorization for API Apps in Azure App Service**\
 >   <https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication>
-> - **Identity Server**  
+> - **Identity Server**\
 >   <https://github.com/IdentityServer>
 
 ## Client communication
@@ -645,9 +645,9 @@ Consider ways in which your applications communicate directly with client applic
 
 > ### References – Client Communication
 >
-> - **ASP.NET Core SignalR**  
+> - **ASP.NET Core SignalR**\
 >   <https://github.com/dotnet/aspnetcore/tree/master/src/SignalR>
-> - **WebSocket Manager**  
+> - **WebSocket Manager**\
 >   <https://github.com/radu-matei/websocket-manager>
 
 ## Domain-driven design – Should you apply it?
@@ -694,12 +694,12 @@ A hybrid approach would be to only use DDD for the transactional or more complex
 
 > ### References – Domain-Driven Design
 >
-> - **DDD in Plain English (StackOverflow Answer)**  
+> - **DDD in Plain English (StackOverflow Answer)**\
 >   <https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-ddd-in-plain-english-please/1222488#1222488>
 
 ## Deployment
 
-There are a few steps involved in the process of deploying your ASP.NET Core application, regardless of where it will be hosted. The first step is to publish the application, which can be done using the `dotnet publish` CLI command. This will compile the application and place all of the files needed to run the application into a designated folder. When you deploy from Visual Studio, this step is performed for you automatically. The publish folder contains .exe and .dll files for the application and its dependencies. A self-contained application will also include a version of the .NET runtime. ASP.NET Core applications will also include configuration files, static client assets, and MVC views.
+There are a few steps involved in the process of deploying your ASP.NET Core application, regardless of where it will be hosted. The first step is to publish the application, which can be done using the `dotnet publish` CLI command. This step will compile the application and place all of the files needed to run the application into a designated folder. When you deploy from Visual Studio, this step is performed for you automatically. The publish folder contains .exe and .dll files for the application and its dependencies. A self-contained application will also include a version of the .NET runtime. ASP.NET Core applications will also include configuration files, static client assets, and MVC views.
 
 ASP.NET Core applications are console applications that must be started when the server boots and restarted if the application (or server) crashes. A process manager can be used to automate this process. The most common process managers for ASP.NET Core are Nginx and Apache on Linux and IIS or Windows Service on Windows.
 
@@ -737,13 +737,13 @@ _Learn more about Azure deployment options in [Chapter 10](development-process-f
 
 > ### References – Deployment
 >
-> - **Hosting and Deployment Overview**  
+> - **Hosting and Deployment Overview**\
 >   <https://docs.microsoft.com/aspnet/core/publishing/>
-> - **When to use Kestrel with a reverse proxy**  
+> - **When to use Kestrel with a reverse proxy**\
 >   <https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy>
-> - **Host ASP.NET Core apps in Docker**  
+> - **Host ASP.NET Core apps in Docker**\
 >   <https://docs.microsoft.com/aspnet/core/publishing/docker>
-> - **Introducing Azure Application Gateway**  
+> - **Introducing Azure Application Gateway**\
 >   <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
 
 >[!div class="step-by-step"]

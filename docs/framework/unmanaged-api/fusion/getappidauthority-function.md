@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # GetAppIdAuthority Function
+
 Gets a pointer to an [IAppIdAuthority](iappidauthority-interface.md) instance that manages keys for application identities and references.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetAppIdAuthority (
 ```  
   
 ## Parameters  
+
  `ppIAppIdAuthority`  
  [out] The returned `IAppIdAuthority` pointer.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  

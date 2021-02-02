@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ISymUnmanagedSymbolSearchInfo::GetSearchPath Method
+
 Gets the search path.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT GetSearchPathLength(
 ```  
   
 ## Parameters  
+
  `pcchPath`  
  [out] A pointer to a `ULONG32` that receives the size, in characters, of the buffer required to contain the search path.  
   
 ## Return Value  
+
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

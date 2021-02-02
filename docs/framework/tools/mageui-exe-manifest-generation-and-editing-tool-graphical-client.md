@@ -19,6 +19,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 > MageUI.exe does not support the [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) element when saving an application manifest that has already been signed with a certificate using MageUI.exe. Instead, you must use [Mage.exe](mage-exe-manifest-generation-and-editing-tool.md).  
   
 ## UIElement List  
+
  The following table lists the menu and toolbar items that are available.  
   
 |Command|Menu|Shortcut|Description|  
@@ -40,6 +41,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**About**|**Help**||Displays version and copyright information about MageUI.exe.|  
   
 ## Preferences Dialog Box  
+
  The **Preferences** dialog box contains the following elements.  
   
 |UI Element|Description|  
@@ -49,6 +51,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |Digest algorithm|Specifies the algorithm to generate dependency digests with. Value must be "sha256RSA" or "sha1RSA". Uses SHA1 as the default. Used both in application and deployment manifests. If the user provides a certificate when saving the manifest, uses the algorithms in the certificate to generate dependency digests with.|  
   
 ## Signing Options Dialog Box  
+
  The **Signing Options** dialog box appears when you save a manifest or trust license for the first time, or when you change a manifest or trust license. It only appears if the **Sign on Save** option in the **Preferences** dialog box is selected. You must be connected to the Internet when signing a manifest that specifies a value in the **TimeStamping URI** text box.  
   
  This dialog box contains the following elements.  
@@ -65,9 +68,11 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Don't Sign**|Allows you to save the manifest without adding a signature from a digital certificate.|  
   
 ## Tab and Panel Descriptions  
+
  When you open a document with MageUI.exe, it appears within its own tab page. Each tab contains a set of property panels. The panels contain grouped subsets of the document's data.  
   
 ### Application Manifest Tab  
+
  The **Application Manifest** tab displays the contents of an application manifest. The application manifest describes all files included with the deployment, and the permissions required for the application to run on the client.  
   
  The **Application Manifest** tab contains the following tabs.  
@@ -81,6 +86,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Permissions Required**|Specifies the minimum permission set required by the application to run on a client.|  
   
 ### Name Tab  
+
  The **Name** tab is displayed when you first create or open an application manifest. It uniquely identifies the deployment, and optionally specifies a valid target platform.  
   
 |UI Element|Description|  
@@ -92,6 +98,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Public key token**|Optional. The public key with which this application manifest has been signed. If this is a new or unsigned manifest, this field will appear as `Unsigned`.|  
   
 ### Description Tab  
+
  This information is usually provided within the deployment manifest. These fields can only be modified if the **Use Application Manifest Trust Information** check box is selected on the **Application Options** tab.  
   
 |UI Element|Description|  
@@ -119,6 +126,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Group**|A label for a set of optional files. You can apply a Group label to a set of files, and use the On-Demand API to download a batch of files with a single API call.|  
   
 ### Permissions Required Tab  
+
  Use the **Permissions Required** tab if you need to grant your application more access to the local computer than is granted by default. For more information, see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications).  
   
 |UI Element|Description|  
@@ -127,6 +135,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Details**|The XML created for the application manifest to represent the permission set. Unless you have a good understanding of the application manifest XML format, you should not edit this XML manually. For more information, see [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest).|  
   
 ### Deployment Manifest Tab  
+
  The **Deployment Manifest** tab contains the following tabs.  
   
 |UI Element|Description|  
@@ -138,6 +147,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Application Reference**|Specifies the application manifest for this deployment.|  
   
 ### Name Tab  
+
  The **Name** tab is displayed when you first create or open a deployment manifest. It uniquely identifies the deployment, and optionally specifies a valid target platform.  
   
 |UI Element|Description|  
@@ -168,6 +178,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Use .deploy file extension**|Required. When selected, all files in the application manifest must have the .deploy extension. The default is the check box is cleared.|  
   
 ### Update Options Tab  
+
  The **Update Options** tab only contains options mentioned here when the **Application Type** selection box on the **Name** tab is set to **Install Locally**.  
   
 |UI Element|Description|  
@@ -179,6 +190,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Version**|Required if **Specify a minimum required version for this application** check box is selected. The version number supplied must be of the form *N.N.N.N*. Only the first major build number is required. For example, for version 1.0 of an application, valid values would include `1`, `1.0`, `1.0.0`, and `1.0.0.0`.|  
   
 ### Application Reference Tab  
+
  The **Application Reference** tab contains the same fields as the **Name** tab described earlier in this topic. The one exception is the following field.  
   
 |UI Element|Description|  

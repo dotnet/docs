@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # IHostAssemblyManager Interface
+
 Provides methods that allow a host to specify sets of assemblies that should be loaded by the common language runtime (CLR) or by the host.  
   
 ## Methods  
@@ -26,11 +27,13 @@ Provides methods that allow a host to specify sets of assemblies that should be 
 |[GetNonHostStoreAssemblies Method](ihostassemblymanager-getnonhoststoreassemblies-method.md)|Gets an interface pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) that represents the list of assemblies that the host expects the CLR to load.|  
   
 ## Remarks  
+
  The host is not required to implement `IHostAssemblyManager` or `IHostAssemblyStore`. If the host does implement `IHostAssemblyManager`, it must also implement `IHostAssemblyStore`.  
   
  The runtime queries for an `IHostAssemblyManager` by calling [IHostControl::GetHostManager](ihostcontrol-gethostmanager-method.md) upon initialization with an `IID` of IID_IHostAssemblyManager.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

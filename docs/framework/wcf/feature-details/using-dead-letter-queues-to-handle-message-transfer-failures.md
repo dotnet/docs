@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 9e891c6a-d960-45ea-904f-1a00e202d61a
 ---
 # Using Dead-Letter Queues to Handle Message Transfer Failures
+
 Queued messages can fail delivery. These failed messages are recorded in a dead-letter queue. The failed delivery can be caused by reasons such as network failures, a deleted queue, a full queue, authentication failure, or a failure to deliver on time.  
   
  Queued messages can remain in the queue for a long time if the receiving application does not read them from the queue in a timely fashion. This behavior may not be appropriate for time-sensitive messages. Time-sensitive messages have a Time to Live (TTL) property set in the queued binding, which indicates how long the messages can be in the queue before they must expire. Expired messages are sent to a special queue called the dead-letter queue. Messages can also be put in a dead-letter queue for other reasons, such as exceeding a queue quota or because of authentication failure.  
@@ -20,6 +21,7 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
  On Windows Server 2003 and Windows XP, Windows Communication Foundation (WCF) provides a system-wide dead-letter queue for all queued client applications. On Windows Vista, WCF provides a dead-letter queue for each queued client application.  
   
 ## Specifying Use of the Dead-Letter Queue  
+
  A dead-letter queue is in the queue manager of the sending application. It stores messages that have expired or that have failed transfer or delivery.  
   
  The binding has the following dead-letter queue properties:  
@@ -29,6 +31,7 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
 - <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A>  
   
 ## Reading Messages from the Dead-Letter Queue  
+
  An application that reads messages out of a dead-letter queue is similar to a WCF service that reads from an application queue, except for the following minor differences:  
   
 - To read messages from a system transactional dead-letter queue, the Uniform Resource Identifier (URI) must be of the form: net.msmq://localhost/system$;DeadXact.  
@@ -42,11 +45,13 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
  The WCF stack on the receiver matches addresses that the service is listening on with the address on the message. If the addresses match, the message is dispatched; if not, the message is not dispatched. This can cause problems when reading from the dead-letter queue, because messages in the dead-letter queue are typically addressed to the service and not the dead-letter queue service. Therefore, the service reading from the dead-letter queue must install an address filter `ServiceBehavior` that instructs the stack to match all messages in the queue independently of the addressee. Specifically, you must add a `ServiceBehavior` with the <xref:System.ServiceModel.AddressFilterMode.Any> parameter to the service reading messages from the dead-letter queue.  
   
 ## Poison Message Handling from the Dead-Letter Queue  
+
  Poison message handling is available on dead-letter queues, with some conditions. Because you cannot create sub-queues from system queues, when reading from the system dead-letter queue, the `ReceiveErrorHandling` cannot be set to `Move`. Note that if you are reading from a custom dead-letter queue, you can have sub-queues and, therefore, `Move` is a valid disposition for the poison message.  
   
  When `ReceiveErrorHandling` is set to `Reject`, when reading from the custom dead letter queue, the poison message is put in the system dead-letter queue. If reading from the system dead-letter queue, the message is dropped (purged). A reject from a system dead-letter queue in MSMQ drops (purges) the message.  
   
 ## Example  
+
  The following example shows how to create a dead-letter queue and how to use it to process expired messages. The example is based on the example in [How to: Exchange Queued Messages with WCF Endpoints](how-to-exchange-queued-messages-with-wcf-endpoints.md). The following example shows how to write the client code to the order processing service that uses a dead-letter queue for each application. The example also shows how to process messages from the dead-letter queue.  
   
  The following is code for a client that specifies a dead-letter queue for each application.  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTask::YieldTask Method
+
 Requests that the common language runtime (CLR) put aside the task that the current [ICLRTask](iclrtask-interface.md) instance represents, and make the processor time available to other tasks.  
   
 ## Syntax  
@@ -37,9 +38,11 @@ HRESULT YieldTask ();
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  A host calls `YieldTask` to request processor resources for other tasks or processes. This method is primarily intended to allow long-running code to give up CPU time. The runtime attempts to put the task that the current `ICLRTask` instance represents in a state where it can yield processing time, but makes no guarantee of success.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

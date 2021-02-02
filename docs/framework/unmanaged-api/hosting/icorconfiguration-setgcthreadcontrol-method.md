@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorConfiguration::SetGCThreadControl Method
+
 Sets the callback interface for scheduling threads for non-runtime tasks that would otherwise be blocked for a garbage collection.  
   
 ## Syntax  
@@ -28,13 +29,16 @@ HRESULT SetGCThreadControl (
 ```  
   
 ## Parameters  
+
  `pGCThreadControl`  
  [in] A pointer to an [IGCThreadControl](igcthreadcontrol-interface.md) object that notifies the host about the suspension of threads for non-runtime tasks.  
   
 ## Remarks  
+
  The host may choose within the [IGCThreadControl::ThreadIsBlockingForSuspension](igcthreadcontrol-threadisblockingforsuspension-method.md) callback whether to reschedule a thread.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

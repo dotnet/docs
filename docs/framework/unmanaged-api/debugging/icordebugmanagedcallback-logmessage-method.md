@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugManagedCallback::LogMessage Method
+
 Notifies the debugger that a common language runtime (CLR) managed thread has called a method in the <xref:System.Diagnostics.EventLog> class to log an event.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT LogMessage (
 ```  
   
 ## Parameters  
+
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the managed thread that logged the event.  
   
@@ -48,6 +50,7 @@ HRESULT LogMessage (
  [in] A pointer to the message that was written to the event log.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

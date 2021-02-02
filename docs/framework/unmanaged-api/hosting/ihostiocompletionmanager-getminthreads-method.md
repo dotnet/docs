@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostIoCompletionManager::GetMinThreads Method
+
 Gets the minimum number of threads that the host provides for processing I/O requests.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetMinThreads (
 ```  
   
 ## Parameters  
+
  `pdwMinIOCompletionThreads`  
  [out] A pointer to the minimum number of threads that the host provides to process I/O requests.  
   
@@ -44,9 +46,11 @@ HRESULT GetMinThreads (
 |E_NOTIMPL|The host does not provide an implementation of `GetMinThreads`.|  
   
 ## Remarks  
+
  A host might want exclusive control over the number of threads allotted to service I/O requests, for reasons such as implementation, performance, or scalability. For this reason, the host is not required to implement `GetMinThreads`. In this case, the host should return E_NOTIMPL from this method.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

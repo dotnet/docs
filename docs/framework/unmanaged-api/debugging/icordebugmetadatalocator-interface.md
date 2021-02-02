@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugMetaDataLocator Interface
+
 Provides metadata information to the debugger.  
   
 ## Methods  
@@ -30,6 +31,7 @@ Provides metadata information to the debugger.
 > This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -8,9 +8,13 @@ helpviewer_keywords:
 ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
 ---
 # SignTool.exe (Sign Tool)
+
 Sign Tool is a command-line tool that digitally signs files, verifies signatures in files, and time-stamps files.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
+
+> [!Note]  
+> The Windows 10 SDK, Windows 10 HLK, Windows 10 WDK and Windows 10 ADK **builds 20236 and later** require specifying the digest algorithm. The SignTool `sign` command requires the `/fd` **file digest algorithm** and the `/td` **timestamp digest algorithm** option to be specified during signing and timestamping, respectively. A warning (error code 0, initially) will be thrown if `/fd` is not specified during signing and if `/td` is not specified during timestamping. In later versions of SignTool, the warning will become an error. SHA256 is recommended and considered to be more secure than SHA1 by the industry.  
   
  At the command prompt, type the following:  
   
@@ -46,7 +50,9 @@ signtool [command] [options] [file_name | ...]
 |**/debug**|Displays debugging information.|  
   
 <a name="catdb"></a>
+
 ## catdb Command Options  
+
  The following table lists the options that can be used with the `catdb` command.  
   
 |Catdb option|Description|  
@@ -57,7 +63,9 @@ signtool [command] [options] [file_name | ...]
 |`/u`|Specifies that a unique name is automatically generated for the added catalog files. If necessary, the catalog files are renamed to prevent name conflicts with existing catalog files. If this option is not specified, Sign Tool overwrites any existing catalog that has the same name as the catalog being added.|  
   
 <a name="sign"></a>
+
 ## sign Command Options  
+
  The following table lists the options that can be used with the `sign` command.  
   
 |Sign command option|Description|  
@@ -70,7 +78,8 @@ signtool [command] [options] [file_name | ...]
 |`/d`  *Desc*|Specifies a description of the signed content.|  
 |`/du`  *URL*|Specifies a Uniform Resource Locator (URL) for the expanded description of the signed content.|  
 |`/f`  *SignCertFile*|Specifies the signing certificate in a file. If the file is in Personal Information Exchange (PFX) format and protected by a password, use the `/p` option to specify the password. If the file does not contain private keys, use the `/csp` and `/kc` options to specify the CSP and private key container name.|  
-|`/fd`|Specifies the file digest algorithm to use for creating file signatures. The default is SHA1.|  
+|`/fd`|Specifies the file digest algorithm to use for creating file signatures. </br> **Note:** A warning is generated if the`/fd` switch is not provided while signing. The default algorithm is SHA1 but SHA256 is recommended.|
+|`/fd`  *certHash*|Specifying the string *certHash* will default to the algorithm used on the signing certificate. </br> **Note:** Only available in Windows 10 kit builds 20236 and later.|  
 |`/i`  *IssuerName*|Specifies the name of the issuer of the signing certificate. This value can be a substring of the entire issuer name.|  
 |`/kc`  *PrivKeyContainerName*|Specifies the private key container name.|  
 |`/n`  *SubjectName*|Specifies the name of the subject of the signing certificate. This value can be a substring of the entire subject name.|  
@@ -85,28 +94,31 @@ signtool [command] [options] [file_name | ...]
 |`/sha1`  *Hash*|Specifies the SHA1 hash of the signing certificate. The SHA1 hash is commonly specified when multiple certificates satisfy the criteria specified by the remaining switches.|  
 |`/sm`|Specifies that a machine store, instead of a user store, is used.|  
 |`/t`  *URL*|Specifies the URL of the time stamp server. If this option (or `/tr`) is not present, the signed file will not be time stamped. A warning is generated if time stamping fails. This option cannot be used with the `/tr` option.|  
-|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server.|  
-|`/tr`  *URL*|Specifies the URL of the RFC 3161 time stamp server. If this option (or `/t`) is not present, the signed file will not be time stamped. A warning is generated if time stamping fails. This option cannot be used with the `/t` option.|  
+|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** A warning is generated if the `/td` switch is not provided while timestamping. The default algorithm is SHA1, but SHA256 is recommended. <br/> The `/td` switch must be declared after the `/tr` switch, not before. If the `/td` switch is declared before the `/tr` switch, the timestamp that is returned is from the SHA1 algorithm instead of the intended SHA256 algorithm. |
+|`/tr`  *URL*|Specifies the URL of the RFC 3161 time stamp server. If this option (or `/t`) is not present, the signed file will not be time stamped. A warning is generated if time stamping fails. This option cannot be used with the `/t` option.|
 |`/u`  *Usage*|Specifies the enhanced key usage (EKU) that must be present in the signing certificate. The usage value can be specified by OID or string. The default usage is "Code Signing" (1.3.6.1.5.5.7.3.3).|  
 |`/uw`|Specifies usage of "Windows System Component Verification" (1.3.6.1.4.1.311.10.3.6).|  
   
  For usage examples, see [Using SignTool to Sign a File](/windows/desktop/SecCrypto/using-signtool-to-sign-a-file).  
   
 <a name="TimeStamp"></a>
+
 ## TimeStamp Command Options  
+
  The following table lists the options that can be used with the `TimeStamp` command.  
   
 |TimeStamp option|Description|  
 |----------------------|-----------------|  
 |`/p7`|Time stamps PKCS #7 files.|  
 |`/t`  *URL*|Specifies the URL of the time stamp server. The file being time stamped must have previously been signed. Either the `/t` or the `/tr` option is required.|  
-|`/td`  *alg*|Requests a digest algorithm used by the RFC 3161 time stamp server. `/td` is used with the `/tr` option.|  
+|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** A warning is generated if the `/td` switch is not provided while timestamping. The default algorithm is SHA1, but SHA256 is recommended. <br/> The `/td` switch must be declared after the `/tr` switch, not before. If the `/td` switch is declared before the `/tr` switch, the timestamp that is returned is from the SHA1 algorithm instead of the intended SHA256 algorithm. |
 |`/tp` *index*|Time stamps the signature at *index*.|  
 |`/tr`  *URL*|Specifies the URL of the RFC 3161 time stamp server. The file being time stamped must have previously been signed. Either the `/tr` or the `/t` option is required.|  
   
  For a usage example, see [Adding Time Stamps to Previously Signed Files](/windows/desktop/SecCrypto/adding-time-stamps-to-previously-signed-files).  
   
 <a name="Verify"></a>
+
 ## Verify Command Options  
   
 |Verify option|Description|  
@@ -133,6 +145,7 @@ signtool [command] [options] [file_name | ...]
  For usage examples, see [Using SignTool to Verify a File Signature](/windows/desktop/SecCrypto/using-signtool-to-verify-a-file-signature).  
   
 ## Return Value  
+
  Sign Tool returns one of the following exit codes when it terminates.  
   
 |Exit code|Description|  
@@ -140,8 +153,9 @@ signtool [command] [options] [file_name | ...]
 |0|Execution was successful.|  
 |1|Execution has failed.|  
 |2|Execution has completed with warnings.|  
-  
+
 ## Examples  
+
  The following command adds the catalog file MyCatalogFileName.cat to the system component and driver database. The `/u` option generates a unique name if necessary to prevent replacing an existing catalog file named `MyCatalogFileName.cat`.  
   
 ```console  
@@ -150,38 +164,44 @@ signtool catdb /v /u MyCatalogFileName.cat
   
  The following command signs a file automatically by using the best certificate.  
   
-```console  
-signtool sign /a MyFile.exe  
-```  
-  
+```console
+signtool sign /a /fd SHA256 MyFile.exe
+```
+
  The following command digitally signs a file by using a certificate stored in a password-protected PFX file.  
   
 ```console  
-signtool sign /f MyCert.pfx /p MyPassword MyFile.exe  
+signtool sign /f MyCert.pfx /p MyPassword /fd SHA256 MyFile.exe
 ```  
   
  The following command digitally signs and time-stamps a file. The certificate used to sign the file is stored in a PFX file.  
   
 ```console  
-signtool sign /f MyCert.pfx /t http://timestamp.digicert.com MyFile.exe  
+signtool sign /f MyCert.pfx /t http://timestamp.digicert.com /fd SHA256 MyFile.exe
 ```  
   
  The following command signs a file by using a certificate located in the `My` store that has a subject name of `My Company Certificate`.  
   
 ```console  
-signtool sign /n "My Company Certificate" MyFile.exe  
+signtool sign /n "My Company Certificate" /fd SHA256 MyFile.exe
 ```  
   
  The following command signs an ActiveX control and provides information that is displayed by Internet Explorer when the user is prompted to install the control.  
   
 ```console  
-Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl/info.html MyControl.exe  
+Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl/info.html /fd SHA256 MyControl.exe
 ```  
   
  The following command time-stamps a file that has already been digitally signed.  
   
 ```console  
-signtool timestamp /t http://timestamp.digicert.com MyFile.exe  
+signtool timestamp /t http://timestamp.digicert.com MyFile.exe
+```  
+
+The following command time-stamps a file using an RFC 3161 timestamp server.  
+  
+```console  
+signtool timestamp /tr http://timestamp.digicert.com /td SHA256 MyFile.exe
 ```  
   
  The following command verifies that a file has been signed.  

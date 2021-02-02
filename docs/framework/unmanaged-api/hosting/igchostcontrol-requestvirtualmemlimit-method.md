@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IGCHostControl::RequestVirtualMemLimit Method
+
 Requests the host to change the limits of virtual memory.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT RequestVirtualMemLimit (
 ```  
   
 ## Parameters  
+
  `sztMaxVirtualMemMB`  
  [in] The requested size of memory to be allocated.  
   
@@ -36,6 +38,7 @@ HRESULT RequestVirtualMemLimit (
  [in, out] A pointer to the actual size of memory allocated.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

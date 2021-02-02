@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: 79306f9e-318b-4687-9863-8b93d1841716
 ---
 # Using Editing Scope
+
 This sample demonstrates how to batch a set of changes so that they can be undone in a single atomic unit. By default, the actions taken by an activity designer author are automatically integrated into the Undo/Redo system.  
   
 ## Demonstrates  
+
  Editing scope and Undo and Redo.  
   
 ## Discussion  
+
  This sample demonstrates how to batch a set of changes to the <xref:System.Activities.Presentation.Model.ModelItem> tree within a single unit of work. Note that when binding to <xref:System.Activities.Presentation.Model.ModelItem> values directly from a WPF designer, changes are applied automatically. This sample demonstrates what must be done when multiple changes to be batched are being made through imperative code, rather than a single change.  
   
  In this sample, three activities are added. When editing begins, <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A> is called on an instance of <xref:System.Activities.Presentation.Model.ModelItem>. Changes made to the <xref:System.Activities.Presentation.Model.ModelItem> tree within this editing scope are batched. The <xref:System.Activities.Presentation.Model.ModelItem.BeginEdit%2A> command returns an <xref:System.Activities.Presentation.Model.EditingScope>, which can be used to control this instance. Either <xref:System.Activities.Presentation.Model.EditingScope.OnComplete%2A> or <xref:System.Activities.Presentation.Model.EditingScope.OnRevert%2A> can be called to either commit or revert the editing scope.  

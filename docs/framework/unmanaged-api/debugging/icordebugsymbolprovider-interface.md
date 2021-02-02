@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 85b24196-b6c6-4bda-9de3-47180bd6ff96
 ---
 # ICorDebugSymbolProvider Interface
+
 Provides methods that can be used to retrieve debug symbol information.  
   
 ## Methods  
@@ -28,6 +29,7 @@ Provides methods that can be used to retrieve debug symbol information.
 > This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

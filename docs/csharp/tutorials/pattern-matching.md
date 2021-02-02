@@ -3,7 +3,7 @@ title: "Tutorial: Build algorithms with pattern matching"
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
 ms.date: 10/06/2020
 ms.technology: csharp-whats-new
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 ---
 # Tutorial: Use pattern matching to build type-driven and data-driven algorithms.
 
@@ -146,7 +146,7 @@ The toll authority wants to encourage vehicles to travel at maximum capacity. Th
 - Buses that are less than 50% full pay an extra $2.00.
 - Buses that are more than 90% full get a $1.00 discount.
 
-These rules can be implemented using the **property pattern** in the same switch expression. The property pattern examines properties of the object once the type has been determined. The single case for a `Car` expands to four different cases:
+These rules can be implemented using the **property pattern** in the same switch expression. A property pattern is a `when` clause that compares a property value to a constant value. The property pattern examines properties of the object once the type has been determined. The single case for a `Car` expands to four different cases:
 
 ```csharp
 vehicle switch

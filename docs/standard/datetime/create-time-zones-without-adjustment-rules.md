@@ -1,7 +1,6 @@
 ---
 title: "How to: Create time zones without adjustment rules"
 ms.date: "04/10/2017"
-ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"

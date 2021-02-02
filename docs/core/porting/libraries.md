@@ -24,8 +24,8 @@ This article describes the formal specification of .NET APIs that are intended t
 [Developing Libraries with Cross Platform Tools](../tutorials/libraries.md)\
 This article explains how to write libraries using the .NET Core CLI.
 
-[Additions to the *csproj* format for .NET Core](../tools/csproj.md)\
-This article outlines the changes that were added to the project file as part of the move to *csproj* and MSBuild.
+[.NET project SDKs](../project-sdk/overview.md)\
+This article describes the SDK-style project file format.
 
 [Porting to .NET Core - Analyzing your Third-Party Party Dependencies](third-party-deps.md)\
 This article discusses the portability of third-party dependencies and what to do when a NuGet package dependency doesn't run on .NET Core.
@@ -101,8 +101,8 @@ It's likely that you'll mix the above approaches on a per-project basis. You sho
 
 The best way to make sure everything works when you've ported your code is to test your code as you port it to .NET Core. To do this, you'll need to use a testing framework that builds and runs tests for .NET Core. Currently, you have three options:
 
-- [xUnit](https://xunit.github.io/)
-  - [Getting Started](https://xunit.github.io/docs/getting-started-dotnet-core.html)
+- [xUnit](https://xunit.net/)
+  - [Getting Started](https://xunit.net/docs/getting-started/netcore/cmdline)
   - [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
 - [NUnit](https://nunit.org/)
   - [Getting Started](https://github.com/nunit/docs/wiki/Installation)

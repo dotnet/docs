@@ -8,6 +8,7 @@ ms.assetid: 61ccfe0f-a34b-40ca-8f5e-725fa1b8095e
 Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET implementations (desktop, Silverlight, Windows Phone, and Xbox). Portable subset projects only reference portable libraries that are .NET assemblies that can be used on any .NET implementation.
   
 ## Add Service Reference Details  
+
  When adding a service reference in a portable subset project the following restrictions are enforced:  
   
 1. For <xref:System.Xml.Serialization.XmlSerializer>, only literal encodings are allowed. SOAP encodings generate an error during import.  

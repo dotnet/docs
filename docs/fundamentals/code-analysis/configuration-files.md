@@ -10,7 +10,7 @@ no-loc: ["EditorConfig"]
 Code analysis rules have various [configuration options](configuration-options.md). You specify these options as key-value pairs in one of the following analyzer configuration files:
 
 - [EditorConfig](#editorconfig) file: File-based or folder-based configuration options.
-- [Global AnalyzerConfig](#global-analyzerconfig) file: Project-level configuration options.
+- [Global AnalyzerConfig](#global-analyzerconfig) file: Project-level configuration options. Useful when some project files reside outside the project folder.
 
 ## EditorConfig
 
@@ -31,6 +31,7 @@ If you have an existing *.editorconfig* file for editor settings such as indent 
 > Visual Studio provides an *.editorconfig* item template that makes is easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
 
 ### Example
+
 Following is an example EditorConfig file to configure options and rule severity:
 
 ```ini
@@ -50,7 +51,7 @@ tab_width = 4
 #### .NET Coding Conventions ####
 
 # this. and Me. preferences
-dotnet_style_qualification_for_method = true:warning
+dotnet_style_qualification_for_method = true
 
 #### Diagnostic configuration ####
 
@@ -60,7 +61,7 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## Global AnalyzerConfig
 
-Starting with the .NET 5.0 SDK (which is supported in Visual Studio 2019 version 16.8 and later versions), you can also configure analyzer options with global _AnalyzerConfig_ files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
+Starting with the .NET 5 SDK (which is supported in Visual Studio 2019 version 16.8 and later), you can also configure analyzer options with global _AnalyzerConfig_ files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
 
 Unlike [EditorConfig](#editorconfig) files, global config files can't be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project-level analyzer configuration options.
 
@@ -87,6 +88,7 @@ Unlike EditorConfig files, which must be named `.editorconfig`, global config fi
 > The top-level entry `is_global = true` is required even when the file is named `.globalconfig`.
 
 ### Example
+
 Following is an example global AnalyzerConfig file to configure options and rule severity at the project level:
 
 ```ini

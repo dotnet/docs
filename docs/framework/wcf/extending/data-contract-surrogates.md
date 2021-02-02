@@ -6,11 +6,13 @@ helpviewer_keywords:
 ms.assetid: 8c31134c-46c5-4ed7-94af-bab0ac0dfce5
 ---
 # Data Contract Surrogates
+
 The data contract *surrogate* is an advanced feature built upon the Data Contract model. This feature is designed to be used for type customization and substitution in situations where users want to change how a type is serialized, deserialized or projected into metadata. Some scenarios where a surrogate may be used is when a data contract has not been specified for the type, fields and properties are not marked with the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute or users wish to dynamically create schema variations.  
   
  Serialization and deserialization are accomplished with the data contract surrogate when using <xref:System.Runtime.Serialization.DataContractSerializer> to convert from .NET Framework to a suitable format, such as XML. Data contract surrogate can also be used to modify the metadata exported for types, when producing metadata representations such as XML Schema Documents (XSD). Upon import, code is created from metadata and the surrogate can be used in this case to customize the generated code as well.  
   
 ## How the Surrogate Works  
+
  A surrogate works by mapping one type (the "original" type) to another type (the "surrogated" type). The following example shows the original type `Inventory` and a new surrogate `InventorySurrogated` type. The `Inventory` type is not serializable but the `InventorySurrogated` type is:  
   
  [!code-csharp[C_IDataContractSurrogate#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#1)]  
@@ -20,11 +22,13 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
  [!code-csharp[C_IDataContractSurrogate#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#2)]  
   
 ## Implementing the IDataContractSurrogate  
+
  To use the data contract surrogate, implement the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface.  
   
  The following is an overview of each method of <xref:System.Runtime.Serialization.IDataContractSurrogate> with a possible implementation.  
   
 ### GetDataContractType  
+
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDataContractType%2A> method maps one type to another. This method is required for serialization, deserialization, import, and export.  
   
  The first task is defining what types will be mapped to other types. For example:  
@@ -46,6 +50,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
  In the previous example, the method checks if the `type` parameter and `Inventory` are comparable. If so, the method maps it to `InventorySurrogated`. Whenever a serialization, deserialization, import schema, or export schema is called, this function is called first to determine the mapping between types.  
   
 ### GetObjectToSerialize Method  
+
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetObjectToSerialize%2A> method converts the original type instance to the surrogated type instance. The method is required for serialization.  
   
  The next step is to define the way the physical data will be mapped from the original instance to the surrogate by implementing the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetObjectToSerialize%2A> method. For example:  
@@ -63,6 +68,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
  The example above converts the data of the `Inventory` instance to that of `InventorySurrogated`. It checks the type of the object and performs the necessary manipulations to convert to the surrogated type. In this case, the fields of the `Inventory` class are directly copied over to the `InventorySurrogated` class fields.  
   
 ### GetDeserializedObject Method  
+
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDeserializedObject%2A> method converts the surrogated type instance to the original type instance. It is required for deserialization.  
   
  The next task is to define the way the physical data will be mapped from the surrogate instance to the original. For example:  
@@ -78,6 +84,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
  The previous example converts objects of type `InventorySurrogated` back to the initial type `Inventory`. In this case, data is directly transferred back from `InventorySurrogated` to its corresponding fields in `Inventory`. Because there are no data manipulations, the each of the member fields will contain the same values as before the serialization.  
   
 ### GetCustomDataToExport Method  
+
  When exporting a schema, the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetCustomDataToExport%2A> method is optional. It is used to insert additional data or hints into the exported schema. Additional data can be inserted at the member level or type level. For example:  
   
  [!code-csharp[C_IDataContractSurrogate#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#6)]  
@@ -89,14 +96,17 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
  Either of these overloads must return either `null` or a serializable object. A non-null object will be serialized as annotation into the exported schema. For the `Type` overload, each type that is exported to schema is sent to this method in the first parameter along with the surrogated type as the `dataContractType` parameter. For the `MemberInfo` overload, each member that is exported to schema sends its information as the `memberInfo` parameter with the surrogated type in the second parameter.  
   
 #### GetCustomDataToExport Method (Type, Type)  
+
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetCustomDataToExport%28System.Type%2CSystem.Type%29?displayProperty=nameWithType> method is called during schema export for every type definition. The method adds information to the types within the schema when exporting. Each type defined is sent to this method to determine whether there is any additional data that needs to be included in the schema.  
   
 #### GetCustomDataToExport Method (MemberInfo, Type)  
+
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetCustomDataToExport%28System.Reflection.MemberInfo%2CSystem.Type%29?displayProperty=nameWithType> is called during export for every member in the types that are exported. This function enables you to customize any comments for the members that will be included in the schema upon export. The information for every member within the class is sent to this method to check whether any additional data need to be added in the schema.  
   
  The example above searches through the `dataContractType` for each member of the surrogate. It then returns the appropriate access modifier for each field. Without this customization, the default value for access modifiers is public. Therefore, all members would be defined as public in the code generated using the exported schema no matter what their actual access restrictions are. When not using this implementation, the member `numpens` would be public in the exported schema even though it was defined in the surrogate as private. Through the use of this method, in the exported schema, the access modifier can be generated as private.  
   
 ### GetReferencedTypeOnImport Method  
+
  This method maps the <xref:System.Type> of the surrogate to the original type. This method is optional for schema importation.  
   
  When creating a surrogate that imports a schema and generates code for it, the next task is to define the type of a surrogate instance to its original type.  
@@ -108,6 +118,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
  The `customData` parameter is the object originally returned from <xref:System.Runtime.Serialization.IDataContractSurrogate.GetCustomDataToExport%2A>. This `customData` is used when surrogate authors want to insert extra data/hints into the metadata to use during import to generate code.  
   
 ### ProcessImportedType Method  
+
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.ProcessImportedType%2A> method customizes any type created from schema importation. This method is optional.  
   
  When importing a schema, this method allows for any imported type and compilation information to be customized. For example:  
@@ -123,14 +134,17 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
  The example above performs some changes on the schema imported. The code preserves private members of the original type by using a surrogate. The default access modifier when importing a schema is `public`. Therefore, all members of the surrogate schema will be public unless modified, as in this example. During export, custom data is inserted into the metadata about which members are private. The example looks up the custom data, checks whether the access modifier is private, and then modifies the appropriate member to be private by setting its attributes. Without this customization, the `numpens` member would be defined as public instead of private.  
   
 ### GetKnownCustomDataTypes Method  
+
  This method obtains custom data types defined from the schema. The method is optional for schema importation.  
   
  The method is called at the beginning of schema export and import. The method returns the custom data types used in the schema exported or imported. The method is passed a <xref:System.Collections.ObjectModel.Collection%601> (the `customDataTypes` parameter), which is a collection of types. The method should add additional known types to this collection. The known custom data types are needed to enable serialization and deserialization of custom data using the <xref:System.Runtime.Serialization.DataContractSerializer>. For more information, see [Data Contract Known Types](../feature-details/data-contract-known-types.md).  
   
 ## Implementing a Surrogate  
+
  To use the data contract surrogate within WCF, you must follow a few special procedures.  
   
 ### To Use a Surrogate for Serialization and Deserialization  
+
  Use the <xref:System.Runtime.Serialization.DataContractSerializer> to perform serialization and deserialization of data with the surrogate. The <xref:System.Runtime.Serialization.DataContractSerializer> is created by the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>. The surrogate must also be specified.  
   
 ##### To implement serialization and deserialization  
@@ -148,6 +162,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
      [!code-csharp[C_IDataContractSurrogate#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#8)]  
   
 ### To Use a Surrogate for Metadata Import  
+
  When importing metadata like WSDL and XSD to generate client-side code, the surrogate needs to be added to the component responsible for generating code from XSD schema, <xref:System.Runtime.Serialization.XsdDataContractImporter>. To do this, directly modify the <xref:System.ServiceModel.Description.WsdlImporter> used to import metadata.  
   
 ##### To implement a surrogate for metadata importation  
@@ -169,6 +184,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
      [!code-csharp[C_IDataContractSurrogate#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#9)]  
   
 ### To Use a surrogate for Metadata Export  
+
  By default, when exporting metadata from WCF for a service, both WSDL and XSD schema needs to be generated. The surrogate needs to be added to the component responsible for generating XSD schema for data contract types, <xref:System.Runtime.Serialization.XsdDataContractExporter>. To do this, either use a behavior that implements <xref:System.ServiceModel.Description.IWsdlExportExtension> to modify the <xref:System.ServiceModel.Description.WsdlExporter>, or directly modify the <xref:System.ServiceModel.Description.WsdlExporter> used to export metadata.  
   
 ##### To use a surrogate for metadata export  

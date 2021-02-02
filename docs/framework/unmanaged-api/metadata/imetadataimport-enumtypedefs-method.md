@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::EnumTypeDefs Method
+
 Enumerates TypeDef tokens representing all types within the current scope.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT EnumTypeDefs (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [out] A pointer to the new enumerator. This must be NULL for the first call of this method.  
   
@@ -51,9 +53,11 @@ HRESULT EnumTypeDefs (
 |`S_FALSE`|There are no tokens to enumerate. In that case, `pcTypeDefs` is zero.|  
   
 ## Remarks  
+
  The TypeDef token represents a type such as a class or an interface, as well as any type added via an extensibility mechanism.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

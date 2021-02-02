@@ -14,6 +14,7 @@ ms.assetid: 31f87e6c-247b-48f5-8e94-b9e1e33d8d09
 Sometimes a client and a service do not share the same types. They can still pass data to each other as long as the data contracts are equivalent on both sides. [Data Contract Equivalence](data-contract-equivalence.md) is based on data contract and data member names, and therefore a mechanism is provided to map types and members to those names. This topic explains the rules for naming data contracts as well as the default behavior of the Windows Communication Foundation (WCF) infrastructure when creating names.
 
 ## Basic Rules
+
 Basic rules regarding naming data contracts include:
 
 - A fully-qualified data contract name consists of a namespace and a name.
@@ -23,6 +24,7 @@ Basic rules regarding naming data contracts include:
 - When processing data contracts, the WCF infrastructure is case-sensitive to both the namespaces and the names of data contracts and data members.
 
 ## Data Contract Namespaces
+
 A data contract namespace takes the form of a Uniform Resource Identifier (URI). The URI can be either absolute or relative. By default, data contracts for a particular type are assigned a namespace that comes from the common language runtime (CLR) namespace of that type.
 
 By default, any given CLR namespace (in the format *Clr.Namespace*) is mapped to the namespace `http://schemas.datacontract.org/2004/07/Clr.Namespace`. To override this default, apply the <xref:System.Runtime.Serialization.ContractNamespaceAttribute> attribute to the entire module or assembly. Alternatively, to control the data contract namespace for each type, set the <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute>.
@@ -34,18 +36,22 @@ By default, any given CLR namespace (in the format *Clr.Namespace*) is mapped to
 > You cannot override the default namespace in data contract types that contain `delegate` declarations.
 
 ## Data Contract Names
+
 The default name of a data contract for a given type is the name of that type. To override the default, set the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute> to an alternative name. Special rules for generic types are described in "Data Contract Names for Generic Types" later in this topic.
 
 ## Data Member Names
+
 The default name of a data member for a given field or property is the name of that field or property. To override the default, set the <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> to an alternative value.
 
 ### Examples
+
 The following example shows how you can override the default naming behavior of data contracts and data members.
 
 [!code-csharp[C_DataContractNames#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_datacontractnames/cs/source.cs#1)]
 [!code-vb[C_DataContractNames#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractnames/vb/source.vb#1)]
 
 ## Data Contract Names for Generic Types
+
 Special rules exist for determining data contract names for generic types. These rules help avoid data contract name collisions between two closed generics of the same generic type.
 
 By default, the data contract name for a generic type is the name of the type, followed by the string "Of", followed by the data contract names of the generic parameters, followed by a *hash* computed using the data contract namespaces of the generic parameters. A hash is the result of a mathematical function that acts as a "fingerprint" that uniquely identifies a piece of data. When all of the generic parameters are primitive types, the hash is omitted.

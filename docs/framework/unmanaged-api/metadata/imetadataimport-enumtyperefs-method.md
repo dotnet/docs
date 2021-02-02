@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::EnumTypeRefs Method
+
 Enumerates TypeRef tokens defined in the current metadata scope.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT EnumTypeRefs (
 ```  
   
 ## Parameters  
+
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be NULL for the first call of this method.  
   
@@ -51,9 +53,11 @@ HRESULT EnumTypeRefs (
 |`S_FALSE`|There are no tokens to enumerate. In that case, `pcTypeRefs` is zero.|  
   
 ## Remarks  
+
  A TypeRef token represents a reference to a type.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  

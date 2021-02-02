@@ -6,6 +6,7 @@ dev_langs:
 ms.assetid: b3af44ec-7d41-425b-aed9-0c4379e5cbe9
 ---
 # ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode Method
+
 [Supported in the .NET Framework 4.6 and later versions]  
   
  Enables or disables certain types of [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) exception callbacks.  
@@ -19,10 +20,12 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
 ```  
   
 ## Parameters  
+
  `enableExceptionsOutsideOfJMC`  
  [in]  
   
 ## Remarks  
+
  If the value of `enableExceptionsOutsideOfJMC` is `false`:  
   
 - A DEBUG_EXCEPTION_FIRST_CHANCE exception will not result in a callback to the debugger.  
@@ -32,6 +35,7 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
  The default value of `enableExceptionsOutsideOfJMC` is `true`.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

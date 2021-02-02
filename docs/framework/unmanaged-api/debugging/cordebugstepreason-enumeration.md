@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugStepReason Enumeration
+
 Indicates the outcome of an individual step.  
   
 ## Syntax  
@@ -45,6 +46,7 @@ typedef enum CorDebugStepReason {
 |`STEP_EXIT`|The thread exited before the step was completed.|  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

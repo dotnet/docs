@@ -13,38 +13,38 @@ namespace SystemTextJsonSamples
             weatherForecast.DisplayPropertyValues();
 
             Console.WriteLine("Base class generic type - derived class properties omitted");
-            // <SnippetSerializeDefault>
+            // <SerializeDefault>
             var options = new JsonSerializerOptions
             {
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize<WeatherForecast>(weatherForecast, options);
-            // </SnippetSerializeDefault>
+            // </SerializeDefault>
 
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
             Console.WriteLine("Object generic type parameter - derived class properties included");
-            // <SnippetSerializeObject>
+            // <SerializeObject>
             options = new JsonSerializerOptions
             {
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize<object>(weatherForecast, options);
-            // </SnippetSerializeObject>
+            // </SerializeObject>
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
             Console.WriteLine("GetType() type parameter - derived class properties included");
-            // <SnippetSerializeGetType>
+            // <SerializeGetType>
             options = new JsonSerializerOptions
             {
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecast, weatherForecast.GetType(), options);
-            // </SnippetSerializeGetType>
+            // </SerializeGetType>
             Console.WriteLine($"JSON output:\n{jsonString}\n");
 
             Console.WriteLine("Extra properties on interface implementations included only for object properties");
-            // <SnippetSerializeInterface>
+            // <SerializeInterface>
             var forecasts = new Forecasts
             {
                 Monday = new Forecast
@@ -68,20 +68,22 @@ namespace SystemTextJsonSamples
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(forecasts, options);
-            // </SnippetSerializeInterface>
+            // </SerializeInterface>
             Console.WriteLine($"{jsonString}\n");
 
-            WeatherForecastWithPrevious weatherForecastWithPrevious = WeatherForecastFactories.CreateWeatherForecastWithPrevious();
-            WeatherForecastWithPreviousAsObject weatherForecastWithPreviousAsObject = WeatherForecastFactories.CreateWeatherForecastWithPreviousAsObject();
+            WeatherForecastWithPrevious weatherForecastWithPrevious =
+                WeatherForecastFactories.CreateWeatherForecastWithPrevious();
+            WeatherForecastWithPreviousAsObject weatherForecastWithPreviousAsObject =
+                WeatherForecastFactories.CreateWeatherForecastWithPreviousAsObject();
 
             Console.WriteLine("Second level derived class properties included only for object properties");
-            // <SnippetSerializeSecondLevel>
+            // <SerializeSecondLevel>
             options = new JsonSerializerOptions
             {
                 WriteIndented = true
             };
             jsonString = JsonSerializer.Serialize(weatherForecastWithPreviousAsObject, options);
-            // </SnippetSerializeSecondLevel>
+            // </SerializeSecondLevel>
             Console.WriteLine($"JSON output with WindSpeed:\n{jsonString}\n");
             jsonString = JsonSerializer.Serialize(
                 weatherForecastWithPrevious,

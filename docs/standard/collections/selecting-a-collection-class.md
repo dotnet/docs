@@ -2,7 +2,6 @@
 title: "Selecting a Collection Class"
 description: Learn how to decide which collection class in .NET to choose. Using the wrong type can restrict your use of the collection.
 ms.date: "03/18/2019"
-ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "last-in-first-out collections"
   - "first-in-first-out collections"

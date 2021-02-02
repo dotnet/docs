@@ -18,6 +18,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRStrongName::StrongNameGetBlob Method
+
 Fills the specified buffer with the binary representation of the executable file at the specified address.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT StrongNameGetBlob (
 ```  
   
 ## Parameters  
+
  `wszFilePath`  
  [in] A valid path to the executable file to be loaded.  
   
@@ -41,9 +43,11 @@ HRESULT StrongNameGetBlob (
  [in, out] The requested maximum size, in bytes, of `pbBlob`. Upon return, the actual size, in bytes, of `pbBlob`.  
   
 ## Return Value  
+
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

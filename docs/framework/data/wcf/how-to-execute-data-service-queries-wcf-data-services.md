@@ -12,6 +12,8 @@ ms.assetid: 62997821-e0c6-4c4d-9fb7-1273fb5e5d18
 ---
 # How to: Execute Data Service Queries (WCF Data Services)
 
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 WCF Data Services enables you to query a data service from a .NET Framework-based client application by using the generated client data service classes. You can execute queries by using one of these methods:  
   
 - Executing a LINQ query against the named <xref:System.Data.Services.Client.DataServiceQuery%601> that you obtain from the <xref:System.Data.Services.Client.DataServiceContext> that the `Add Data Service Reference` tool generates.  

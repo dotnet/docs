@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fb2e6f29-e556-47b4-b4c1-acd6b8879702
 ---
 # 403 - SuspendSignpostEvent
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: fb2e6f29-e556-47b4-b4c1-acd6b8879702
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  This event marks the suspension of an end-to-end activity. It contains the name of the activity.  
   
 ## Message  
+
  Activity boundary.  
   
 ## Details  

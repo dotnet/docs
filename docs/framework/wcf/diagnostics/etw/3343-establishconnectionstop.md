@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4ddbaae5-2de0-45d0-90d2-0ab135fea31f
 ---
 # 3343 - EstablishConnectionStop
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 4ddbaae5-2de0-45d0-90d2-0ab135fea31f
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
+
  This event is emitted when the connection establishment stopped.  
   
 ## Message  
+
  Connection established.  
   
 ## Details

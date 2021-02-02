@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostAssemblyStore::ProvideAssembly Method
+
 Gets a reference to an assembly that is not referenced by the [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) that is returned from [IHostAssemblyManager::GetNonHostStoreAssemblies](ihostassemblymanager-getnonhoststoreassemblies-method.md). The common language runtime (CLR) calls `ProvideAssembly` for each assembly that does not appear in the list.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT ProvideAssembly (
 ```  
   
 ## Parameters  
+
  `pBindInfo`  
  [in] A pointer to an [AssemblyBindInfo](assemblybindinfo-structure.md) instance that the host uses to determine certain bind characteristics, including the presence or absence of any versioning policy, and which assembly to bind to.  
   
@@ -61,9 +63,11 @@ HRESULT ProvideAssembly (
 |E_NOT_SUFFICIENT_BUFFER|The buffer size specified by `pAssemblyId` is not large enough to hold the identifier that the host wants to return.|  
   
 ## Remarks  
+
  The identity value returned for `pAssemblyId` is specified by the host. Identifiers must be unique within the lifetime of a process. The CLR uses this value as a unique identifier for the stream. It checks each value against the values for `pAssemblyId` returned by other calls to `ProvideAssembly`. If the host returns the same `pAssemblyId` value for another `IStream`, the CLR checks whether the contents of that stream have already been mapped. If so, the runtime loads the existing copy of the image instead of mapping a new one.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

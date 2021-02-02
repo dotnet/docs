@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugProcess::GetID Method
+
 Gets the operating system (OS) ID of the process.  
   
 ## Syntax  
@@ -26,10 +27,12 @@ HRESULT GetID([out] DWORD *pdwProcessId);
 ```  
   
 ## Parameters  
+
  `pdwProcessId`  
  [out] The unique ID of the process.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -12,6 +12,7 @@ api_type:
 ms.assetid: a1bfb649-4584-4d35-b3e6-8fe59b53992a
 ---
 # ICorProfilerInfo7::ApplyMetaData Method
+
 [Supported in the .NET Framework 4.6.1 and later versions]  
   
  Applies the metadata newly defined by the `IMetadataEmit::Define*` methods to a specified module.  
@@ -25,10 +26,12 @@ HRESULT ApplyMetaData(
 ```  
   
 ## Parameters  
+
  `moduleID`  
  [in] The identifier of the module whose metadata was changed.  
   
 ## Remarks  
+
  If metadata changes are made after the [ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md) callback, you must call this method before using the new metadata.  
   
  `ApplyMetaData` only supports adding the following types of metadata:  
@@ -52,6 +55,7 @@ Starting with .NET Core 3.0, `ApplyMetaData` also supports the following types:
 - `MethodDef` records, which you create by calling the [IMetaDataEmit::DefineMethod](../metadata/imetadataemit-definemethod-method.md) method. However, adding virtual methods to an existing type is not supported. Virtual methods must be added before the [ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md) callback.
 
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

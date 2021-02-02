@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugNativeFrame::GetLocalMemoryRegisterValue Method
+
 Gets the value of an argument or local variable, of which the low word and high word are stored in the specified register and memory location, respectively, for this native frame.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT GetLocalMemoryRegisterValue (
 ```  
   
 ## Parameters  
+
  `highWordAddress`  
  [in] A `CORDB_ADDRESS` value that specifies the memory location containing the high word of the value.  
   
@@ -48,6 +50,7 @@ HRESULT GetLocalMemoryRegisterValue (
  [out] A pointer to the address of an "ICorDebugValue" object representing the retrieved value that is stored in the specified register and memory location.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

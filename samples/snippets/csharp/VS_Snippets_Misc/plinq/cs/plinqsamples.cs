@@ -2,20 +2,18 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Collections.Concurrent;
     using System.Linq;
     using System.Threading;
 
-    // Dummy classes for small query snippets in intro topic
     class City
     {
         public int Population = 0;
-        public string Name = String.Empty;
+        public string Name = string.Empty;
     }
 
     class Person
     {
-        public string Mayor = String.Empty;
+        public string Mayor = string.Empty;
         public string CityName = string.Empty;
     }
 
@@ -48,31 +46,38 @@
 
             // Order Preservation In PLINQ 1st snippet
             //<snippet8>
-            var cityQuery = (from city in cities.AsParallel()
-                             where city.Population > 10000
-                             select city)
-                               .Take(1000);
+            var cityQuery =
+                (from city in cities.AsParallel()
+                 where city.Population > 10000
+                 select city).Take(1000);
             //</snippet8>
 
             // Order Preservation In PLINQ 2nd snippet
             //<snippet9>
-            var orderedCities = (from city in cities.AsParallel().AsOrdered()
-                                 where city.Population > 10000
-                                 select city)
-                                .Take(1000);
+            var orderedCities =
+                (from city in cities.AsParallel().AsOrdered()
+                 where city.Population > 10000
+                 select city).Take(1000);
 
             //</snippet9>
 
             //<snippet6>
-            var orderedCities2 = (from city in cities.AsParallel().AsOrdered()
-                                  where city.Population > 10000
-                                  select city)
-                                    .Take(1000);
+            var orderedCities2 =
+                (from city in cities.AsParallel().AsOrdered()
+                 where city.Population > 10000
+                 select city).Take(1000);
 
-            var finalResult = from city in orderedCities2.AsUnordered()
-                              join p in people.AsParallel() on city.Name equals p.CityName into details
-                              from c in details
-                              select new { Name = city.Name, Pop = city.Population, Mayor = c.Mayor };
+            var finalResult =
+                from city in orderedCities2.AsUnordered()
+                join p in people.AsParallel()
+                on city.Name equals p.CityName into details
+                from c in details
+                select new
+                {
+                    city.Name,
+                    Pop = city.Population,
+                    c.Mayor
+                };
 
             foreach (var city in finalResult) { /*...*/ }
             //</snippet6>
@@ -83,24 +88,26 @@
             //[example]
             //Another way to minimize the expense of order preservation is to impose a new ordering explicitly at a later stage in the query, after all filters have been applied, as shown in the following example:
             //<snippet7>
-            var orderedCities3 = (from city in cities.AsParallel()
-                                  where city.Population > 10000
-                                  orderby city.Name
-                                  select city)
-                                    .Take(1000);
+            var orderedCities3 =
+                (from city in cities.AsParallel()
+                 where city.Population > 10000
+                 orderby city.Name
+                 select city).Take(1000);
             //</snippet7>
         }
+
         static void SimpleQuery()
         {
             var source = Enumerable.Range(100, 20000);
 
             // Result sequence might be out of order.
-            var parallelQuery = from num in source.AsParallel()
-                                where num % 10 == 0
-                                select num;
+            var parallelQuery =
+                from num in source.AsParallel()
+                where num % 10 == 0
+                select num;
 
             // Process result sequence in parallel
-            parallelQuery.ForAll((e) => DoSomething(e));
+            parallelQuery.ForAll(DoSomething);
 
             // Or use foreach to merge results first.
             foreach (var n in parallelQuery)
@@ -110,29 +117,38 @@
 
             // You can also use ToArray, ToList, etc
             // as with LINQ to Objects.
-            var parallelQuery2 = (from num in source.AsParallel()
-                                  where num % 10 == 0
-                                  select num).ToArray();
+            var parallelQuery2 =
+                (from num in source.AsParallel()
+                 where num % 10 == 0
+                 select num).ToArray();
 
             // Method syntax is also supported
-            var parallelQuery3 = source.AsParallel().Where(n => n % 10 == 0).Select(n => n);
+            var parallelQuery3 =
+                source.AsParallel()
+                .Where(n => n % 10 == 0)
+                .Select(n => n);
 
             Console.ReadLine();
         }
+
         static void DoSomething(int i) { }
-        private static void OrderedQuery()
+
+        static void OrderedQuery()
         {
             //<snippet12>
             var source = Enumerable.Range(9, 10000);
 
             // Source is ordered; let's preserve it.
-            var parallelQuery = from num in source.AsParallel().AsOrdered()
-                                where num % 3 == 0
-                                select num;
+            var parallelQuery =
+                from num in source.AsParallel().AsOrdered()
+                where num % 3 == 0
+                select num;
 
             // Use foreach to preserve order at execution time.
-            foreach (var v in parallelQuery)
-                Console.Write("{0} ", v);
+            foreach (var item in parallelQuery)
+            {
+                Console.Write($"{item} ");
+            }
 
             // Some operators expect an ordered source sequence.
             var lowValues = parallelQuery.Take(10);
@@ -143,14 +159,17 @@
         {
             var source = Enumerable.Range(108, 100000);
 
-            var parallelQuery = from num in source.AsParallel().AsOrdered()
-                                where num % 8 == 0
-                                select num;
+            var parallelQuery =
+                from num in source.AsParallel().AsOrdered()
+                where num % 8 == 0
+                select num;
 
             // use foreach to preserve ordering
             // during query execution.
             foreach (var item in parallelQuery)
-                Console.Write("{0} ", item);
+            {
+                Console.Write($"{item} ");
+            }
         }
 
         static void OrderedQuery3()
@@ -160,14 +179,17 @@
 
             // Let the query access the data source will full parallelism
             // and apply ordering to the filtered results.
-            var orderedQuery = from num in source.AsParallel()
-                               where num % 8 == 0
-                               orderby num
-                               select num;
+            var orderedQuery =
+                from num in source.AsParallel()
+                where num % 8 == 0
+                orderby num
+                select num;
 
             // use foreach to preserve query ordering
-            foreach (var v in orderedQuery)
-                Console.Write("{0} ", v);
+            foreach (var item in orderedQuery)
+            {
+                Console.Write($"{item} ");
+            }
             //</snippet13>
         }
     }
@@ -183,10 +205,10 @@
 
         class Program
         {
-            static void Main(string[] args)
+            static void Main()
             {
                 int[] source = Enumerable.Range(1, 10000000).ToArray();
-                var cts = new CancellationTokenSource();
+                using CancellationTokenSource cts = new();
 
                 // Start a new asynchronous task that will cancel the
                 // operation from another thread. Typically you would call
@@ -200,10 +222,11 @@
                 int[] results = null;
                 try
                 {
-                    results = (from num in source.AsParallel().WithCancellation(cts.Token)
-                               where num % 3 == 0
-                               orderby num descending
-                               select num).ToArray();
+                    results =
+                        (from num in source.AsParallel().WithCancellation(cts.Token)
+                         where num % 3 == 0
+                         orderby num descending
+                         select num).ToArray();
                 }
                 catch (OperationCanceledException e)
                 {
@@ -214,18 +237,15 @@
                     if (ae.InnerExceptions != null)
                     {
                         foreach (Exception e in ae.InnerExceptions)
+                        {
                             WriteLine(e.Message);
+                        }
                     }
                 }
-                finally
-                {
-                   cts.Dispose();
-                }
 
-                if (results != null)
+                foreach (var item in results ?? Array.Empty<int>())
                 {
-                    foreach (var v in results)
-                        WriteLine(v);
+                    WriteLine(item);
                 }
                 WriteLine();
                 ReadKey();
@@ -236,7 +256,7 @@
                 // Wait between 150 and 500 ms, then cancel.
                 // Adjust these values if necessary to make
                 // cancellation fire while query is still executing.
-                Random rand = new Random();
+                Random rand = new();
                 Thread.Sleep(rand.Next(150, 500));
                 cts.Cancel();
             }
@@ -258,7 +278,7 @@
             static void Main(string[] args)
             {
                 int[] source = Enumerable.Range(1, 10000000).ToArray();
-                var cts = new CancellationTokenSource();
+                using CancellationTokenSource cts = new();
 
                 // Start a new asynchronous task that will cancel the
                 // operation from another thread. Typically you would call
@@ -272,9 +292,10 @@
                 double[] results = null;
                 try
                 {
-                    results = (from num in source.AsParallel().WithCancellation(cts.Token)
-                               where num % 3 == 0
-                               select Function(num, cts.Token)).ToArray();
+                    results =
+                        (from num in source.AsParallel().WithCancellation(cts.Token)
+                         where num % 3 == 0
+                         select Function(num, cts.Token)).ToArray();
                 }
                 catch (OperationCanceledException e)
                 {
@@ -288,15 +309,10 @@
                             WriteLine(e.Message);
                     }
                 }
-                finally
-                {
-                    cts.Dispose();
-                }
 
-                if (results != null)
+                foreach (var item in results ?? Array.Empty<double>())
                 {
-                    foreach (var v in results)
-                        WriteLine(v);
+                    WriteLine(item);
                 }
                 WriteLine();
                 ReadKey();
@@ -325,11 +341,13 @@
                 // Wait between 150 and 500 ms, then cancel.
                 // Adjust these values if necessary to make
                 // cancellation fire while query is still executing.
-                Random rand = new Random();
+                Random rand = new();
                 Thread.Sleep(rand.Next(150, 500));
                 WriteLine("Press 'c' to cancel");
                 if (ReadKey().KeyChar == 'c')
+                {
                     cts.Cancel();
+                }
             }
         }
     }
@@ -348,33 +366,33 @@
             static void Main(string[] args)
             {
                 int[] source = Enumerable.Range(1, 10000000).ToArray();
-                CancellationTokenSource cs = new CancellationTokenSource();
+                using CancellationTokenSource cs = new();
 
                 IEnumerable<int> results = null;
-                try {
-                    results = from num in source.AsParallel().WithCancellation(cs.Token)
-                              where num % 3 == 0
-                              orderby num descending
-                              select num;
+                try
+                {
+                    results =
+                        from num in source.AsParallel().WithCancellation(cs.Token)
+                        where num % 3 == 0
+                        orderby num descending
+                        select num;
                 }
-                catch (OperationCanceledException e) {
+                catch (OperationCanceledException e)
+                {
                     Console.WriteLine(e.Message);
                 }
-                catch (AggregateException ae) {
+                catch (AggregateException ae)
+                {
                     if (ae.InnerExceptions != null)
                     {
                         foreach (Exception e in ae.InnerExceptions)
                             Console.WriteLine(e.Message);
                     }
                 }
-                finally {
-                    cs.Dispose();
-                }
 
-                if (results != null)
+                foreach (var item in results ?? Array.Empty<int>())
                 {
-                    foreach (var v in results)
-                        Console.WriteLine(v);
+                    Console.WriteLine(item);
                 }
                 Console.WriteLine();
                 Console.ReadKey();
@@ -423,7 +441,7 @@
             static string ExpensiveFunc(int i)
             {
                 Thread.SpinWait(2000000);
-                return String.Format("{0} *****************************************", i);
+                return string.Format("{0} *****************************************", i);
             }
         }
     }
@@ -461,7 +479,7 @@
                     // the compiler this is a type double. Can also use: 0d.
                     0.0,
 
-                    // do this on each thread
+                     // do this on each thread
                      (subtotal, item) => subtotal + Math.Pow((item - mean), 2),
 
                      // aggregate results after all threads are done.
@@ -792,24 +810,24 @@
         static void SequentialDemo()
         {
             var orders = GetOrders();
-            var query = (from ord in orders.AsParallel()
-                         orderby ord.CustomerID
+            var query = (from order in orders.AsParallel()
+                         orderby order.OrderID
                          select new
                          {
-                             Details = ord.OrderID,
-                             Date = ord.OrderDate,
-                             Shipped = ord.ShippedDate
-                         }).
-                                AsSequential().Take(5);
+                             order.OrderID,
+                             OrderedOn = order.OrderDate,
+                             ShippedOn = order.ShippedDate
+                         })
+                         .AsSequential().Take(5);
         }
         //</snippet24>
 
-//<snippet25>
-class FileIteration
-{
-   static void Main(){}
-}
-//</snippet25>
+        //<snippet25>
+        class FileIteration
+        {
+            static void Main() { }
+        }
+        //</snippet25>
 
         //<snippet41>
         // Paste into PLINQDataSample class.
@@ -849,39 +867,39 @@ class FileIteration
         // Paste into PLINQDataSample class.
         static void PLINQExceptions_2()
         {
-
             var customers = GetCustomersAsStrings().ToArray();
             // Using the raw string array here.
             // First, we must simulate some currupt input
             customers[54] = "###";
 
-            // Create a delegate with a lambda expression.
             // Assume that in this app, we expect malformed data
             // occasionally and by design we just report it and continue.
-            Func<string[], string, bool> isTrue = (f, c) =>
+            static bool IsTrue(string[] f, string c)
             {
                 try
                 {
                     string s = f[3];
                     return s.StartsWith(c);
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
-                    Console.WriteLine("Malformed cust: {0}", f);
+                    Console.WriteLine($"Malformed cust: {f}");
                     return false;
                 }
             };
 
             // Using the raw string array here
-            var parallelQuery = from cust in customers.AsParallel()
-                                let fields = cust.Split(',')
-                                where isTrue(fields, "C") //use a named delegate with a try-catch
-                                select new { city = fields[3] };
+            var parallelQuery =
+                from cust in customers.AsParallel()
+                let fields = cust.Split(',')
+                where IsTrue(fields, "C") //use a named delegate with a try-catch
+                select new { City = fields[3] };
+
             try
             {
                 // We use ForAll although it doesn't really improve performance
                 // since all output must be serialized through the Console.
-                parallelQuery.ForAll(e => Console.WriteLine(e.city));
+                parallelQuery.ForAll(e => Console.WriteLine(e.City));
             }
 
             // IndexOutOfRangeException will not bubble up
@@ -889,7 +907,9 @@ class FileIteration
             catch (AggregateException e)
             {
                 foreach (var ex in e.InnerExceptions)
+                {
                     Console.WriteLine(ex.Message);
+                }
             }
         }
         //</snippet42>

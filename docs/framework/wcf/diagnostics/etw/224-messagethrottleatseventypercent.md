@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 82bbbfd7-10d2-41fd-805d-2443b0c1b96b
 ---
 # 224 - MessageThrottleAtSeventyPercent
+
 ## Properties  
   
 |||  
@@ -14,9 +15,11 @@ ms.assetid: 82bbbfd7-10d2-41fd-805d-2443b0c1b96b
 |Channel|Microsoft-Windows-Application Server-Applications/Analytic|  
   
 ## Description  
+
  When one of the main service throttles has been exceeded, the `MessageThrottleExceeded` event is emitted. When the spike of activity slows and the current value of the throttle is at 70 percent of the current limit then this event is emitted. Note that this event is only emitted once as the activity is slowing. If the current value hovers at the 70 percent mark, (for example, 70,69,70,71,70,69), only the first occurrence of 70 percent results in an event. After this event is emitted, future occurrences of exceeding the throttle's limit result in a `MessageThrottleExceeded` event.  
   
 ## Message  
+
  The '%1' throttle limit of '%2' is at 70%%.  
   
 ## Details  

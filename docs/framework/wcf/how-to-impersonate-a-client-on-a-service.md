@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 431db851-a75b-4009-9fe2-247243d810d3
 ---
 # How to: Impersonate a Client on a Service
+
 Impersonating a client on a Windows Communication Foundation (WCF) service enables the service to perform actions on behalf of the client. For actions subject to access control list (ACL) checks, such as access to directories and files on a machine or access to a SQL Server database, the ACL check is against the client user account. This topic shows the basic steps required to enable a client in a Windows domain to set a client impersonation level. For a working example of this, see [Impersonating the Client](./samples/impersonating-the-client.md). For more information about client impersonation, see [Delegation and Impersonation](./feature-details/delegation-and-impersonation-with-wcf.md).  
   
 > [!NOTE]

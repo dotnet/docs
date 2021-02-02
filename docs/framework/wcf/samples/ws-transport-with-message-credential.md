@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0d092f3a-b309-439b-920b-66d8f46a0e3c
 ---
 # WS Transport With Message Credential
+
 This sample demonstrates the use of SSL transport security in combination with client credential being carried in the message. This sample uses the `wsHttpBinding` binding.  
   
  By default, the `wsHttpBinding` binding provides HTTP communication. When configured for transport security, the binding supports HTTPS communication. HTTPS provides confidentiality and integrity protection for the messages that are transmitted over the wire. However the set of authentication mechanisms that can be used to authenticate the client to the service is limited to what the HTTPS transport supports. Windows Communication Foundation (WCF) offers a `TransportWithMessageCredential` security mode that is designed to overcome this limitation. When this security mode is configured, the transport security is used to provide confidentiality and integrity for the transmitted messages and to perform the service authentication. However, the client authentication is performed by putting the client credential directly in the message. This allows you to use any credential type that is supported by the message security mode for the client authentication while keeping the performance benefit of transport security mode.  

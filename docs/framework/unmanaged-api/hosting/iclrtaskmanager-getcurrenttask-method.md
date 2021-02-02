@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRTaskManager::GetCurrentTask Method
+
 Gets the [ICLRTask](iclrtask-interface.md) instance that is currently running on the operating system thread from which the method call originated.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT GetCurrentTask (
 ```  
   
 ## Parameters  
+
  `ppTask`  
  [out] A pointer to the address of an `ICLRTask` instance that is currently executing on the operating system thread from which the call originated, or null if no task is currently executing on this thread.  
   
@@ -43,9 +45,11 @@ HRESULT GetCurrentTask (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  The `ICLRTask` instance that the `ppTask` parameter points to represents the currently executing task for the CLR. The `ICLRTask` instance is associated with a corresponding [IHostTask](ihosttask-interface.md) instance that represents the task for the host.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

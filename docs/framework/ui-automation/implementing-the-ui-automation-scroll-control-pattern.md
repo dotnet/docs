@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 73d64242-6cbb-424c-92dd-dc69530b7899
 ---
 # Implementing the UI Automation Scroll Control Pattern
+
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
@@ -22,7 +23,9 @@ Example of a Scrolling Control that Does Not Use Scrollbars
  For examples of controls that implement this control, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>
+
 ## Implementation Guidelines and Conventions  
+
  When implementing the Scroll control pattern, note the following guidelines and conventions:  
   
 - The children of this control must implement <xref:System.Windows.Automation.Provider.IScrollItemProvider>.  
@@ -38,7 +41,9 @@ Example of a Scrolling Control that Does Not Use Scrollbars
 - <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent%2A> is locale-specific. Setting HorizontalScrollPercent = 100.0 must set the scrolling location of the control to the equivalent of its rightmost position for languages such as English that read left to right. Alternately, for languages such as Arabic that read right to left, setting HorizontalScrollPercent = 100.0 must set the scroll location to the leftmost position.  
   
 <a name="Required_Members_for_IScrollProvider"></a>
+
 ## Required Members for IScrollProvider  
+
  The following properties and methods are required for implementing <xref:System.Windows.Automation.Provider.IScrollProvider>.  
   
 |Required member|Member type|Notes|  
@@ -55,7 +60,9 @@ Example of a Scrolling Control that Does Not Use Scrollbars
  This control pattern has no associated events.  
   
 <a name="Exceptions"></a>
+
 ## Exceptions  
+
  Providers must throw the following exceptions.  
   
 |Exception Type|Condition|  

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: db6d8cdb-0d25-4bfb-8963-eff465733d70
 ---
 # System.ServiceModel.Channels.HttpChannelConcurrentReceiveQuotaReached
+
 System.ServiceModel.Channels.HttpChannelConcurrentReceiveQuotaReached  
   
 ## Description  
+
  The HTTP concurrent receive quota was reached.  
   
 ## See also

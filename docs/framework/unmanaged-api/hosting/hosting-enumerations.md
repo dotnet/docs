@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: e09131eb-1f7d-4f52-ae42-7393e9b62ef6
 ---
 # Hosting Enumerations
+
 This section describes the unmanaged enumerations that the hosting API uses.  
   
 ## In This Section  
+
  [CLSID_RESOLUTION_FLAGS Enumeration](clsid-resolution-flags-enumeration.md)  
  Contains values that indicate how the common language runtime (CLR) should resolve a `CLSID`.  
   
@@ -102,6 +104,7 @@ This section describes the unmanaged enumerations that the hosting API uses.
  Indicates the action a host should take if an operation requested by the CLR blocks.  
   
 ## Related Sections  
+
  [Hosting Coclasses](hosting-coclasses.md)  
   
  [Hosting Interfaces](hosting-interfaces.md)  

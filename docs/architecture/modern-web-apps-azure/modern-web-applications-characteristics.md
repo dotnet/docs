@@ -4,7 +4,7 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | Cha
 author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor, WebAssembly]
-ms.date: 12/04/2019
+ms.date: 12/01/2020
 ---
 
 # Characteristics of Modern Web Applications
@@ -18,7 +18,7 @@ ASP.NET Core is optimized for modern web applications and cloud-based hosting sc
 
 ## Reference application: eShopOnWeb
 
-This guidance includes a reference application, _eShopOnWeb_, that demonstrates some of the principles and recommendations. The application is a simple online store which supports browsing through a catalog of shirts, coffee mugs, and other marketing items. The reference application is deliberately simple in order to make it easy to understand.
+This guidance includes a reference application, _eShopOnWeb_, that demonstrates some of the principles and recommendations. The application is a simple online store, which supports browsing through a catalog of shirts, coffee mugs, and other marketing items. The reference application is deliberately simple in order to make it easy to understand.
 
 ![eShopOnWeb](./media/image2-1.png)
 
@@ -35,7 +35,7 @@ ASP.NET Core is optimized for the cloud (public cloud, private cloud, any cloud)
 
 ## Cross platform
 
-ASP.NET Core is cross-platform and can run on Linux, macOS, and Windows. This opens up many new options for both the development and deployment of apps built with ASP.NET Core. Docker containers - both Linux and Windows - can host ASP.NET Core applications, allowing them to take advantage of the benefits of [containers and microservices](../microservices/index.md).
+ASP.NET Core is cross-platform and can run on Linux, macOS, and Windows. This capability opens up many new options for both the development and deployment of apps built with ASP.NET Core. Docker containers - both Linux and Windows - can host ASP.NET Core applications, allowing them to take advantage of the benefits of [containers and microservices](../microservices/index.md).
 
 ## Modular and loosely coupled
 

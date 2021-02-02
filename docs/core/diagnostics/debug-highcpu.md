@@ -85,7 +85,7 @@ With the web app running, immediately after startup, the CPU isn't being consume
 Now, rerun the [dotnet-counters](dotnet-counters.md) command. To monitor just the `cpu-usage`, specify `System.Runtime[cpu-usage]` as part of the command.
 
 ```dotnetcli
-dotnet-counters monitor System.Runtime[cpu-usage] -p 22884 --refresh-interval 1
+dotnet-counters monitor --counters System.Runtime[cpu-usage] -p 22884 --refresh-interval 1
 ```
 
 You should see an increase in CPU usage as shown below:

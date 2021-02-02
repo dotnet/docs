@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e3da85c8-57f3-4e32-a4cb-50123f30fea6
 ---
 # Custom Stream Upgrades
+
 Stream-oriented transports such as TCP and Named Pipes operate on a continuous stream of bytes between the client and server. This stream is realized by a  <xref:System.IO.Stream> object. In a stream upgrade, the client wants to add an optional protocol layer to the channel stack, and asks the other end of the communication channel to do so. The stream upgrade consists in replacing the original <xref:System.IO.Stream> object with an upgraded one.  
   
  For example, you can build a compression stream directly on top of the transport stream. In this case the original transport <xref:System.IO.Stream> is replaced with one that wraps the compression <xref:System.IO.Stream> around the original one.  
@@ -11,6 +12,7 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
  You can apply multiple stream upgrades, each wrapping the preceding one.  
   
 ## How Stream Upgrades Work  
+
  There are four components to the stream upgrade process.  
   
 1. An upgrade stream *Initiator* begins the process: at run-time it can initiate a request to the other end of its connection to upgrade the channel transport layer.  
@@ -24,6 +26,7 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
  Note that in the case of multiple upgrades, the Initiator and Acceptor encapsulate state machines to enforce which upgrade transitions are valid for each Initiation.  
   
 ## How to Implement a Stream Upgrade  
+
  Windows Communication Foundation (WCF) provides four `abstract` classes that you can implement:  
   
 - <xref:System.ServiceModel.Channels.StreamUpgradeInitiator?displayProperty=nameWithType>  
@@ -59,6 +62,7 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
 5. Add the new stream upgrade binding element to bindings on the server and client machines.  
   
 ## Security Upgrades  
+
  Adding a security upgrade is a specialized version of the general stream upgrade process.  
   
  WCF already provides two binding elements for upgrading stream security. The configuration of transport-level security is encapsulated by the <xref:System.ServiceModel.Channels.WindowsStreamSecurityBindingElement> and the <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement> which can be configured and added to a custom binding. These binding elements extend the <xref:System.ServiceModel.Channels.StreamUpgradeBindingElement> class that builds the client and server stream upgrade providers. These binding elements have methods that create the specialized security stream upgrade provider classes, which are not `public`, so for these two cases all you need to do is to add the binding element to the binding.  
@@ -74,6 +78,7 @@ Stream-oriented transports such as TCP and Named Pipes operate on a continuous s
  The process of implementing a security stream upgrade is the same as before, with the difference that you would derive from these three classes. Override the additional properties in these classes to supply security information to the runtime.  
   
 ## Multiple Upgrades  
+
  To create additional upgrade requests repeat the above process: create additional extensions of <xref:System.ServiceModel.Channels.StreamUpgradeProvider> and binding elements. Add the binding elements to the binding. The additional binding elements are processed sequentially, starting with the first binding element added to the binding. In <xref:System.ServiceModel.Channels.BindingElement.BuildChannelFactory%2A> and <xref:System.ServiceModel.Channels.BindingElement.BuildChannelListener%2A> each upgrade provider can determine how to layer itself on any pre-existing upgrade binding parameters. It should then replace the existing upgrade binding parameter with a new composite upgrade binding parameter.  
   
  Alternatively, one upgrade provider can support multiple upgrades. For example, you might want to implement a custom stream upgrade provider that supports both security and compression. Do the following steps:  

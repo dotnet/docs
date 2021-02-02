@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostIoCompletionManager::CreateIoCompletionPort Method
+
 Requests that the host create a new I/O completion port.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT CreateIoCompletionPort (
 ```  
   
 ## Parameters  
+
  `phPort`  
  [out] A pointer to a handle to the newly created I/O completion port, or 0 (zero), if the port could not be created.  
   
@@ -44,9 +46,11 @@ HRESULT CreateIoCompletionPort (
 |E_OUTOFMEMORY|Not enough memory was available to allocate the requested resource.|  
   
 ## Remarks  
+
  The CLR calls the `CreateIoCompletionPort` method to request that the host create a new I/O completion port. It binds I/O operations to this port through a call to the [IHostIoCompletionManager::Bind](ihostiocompletionmanager-bind-method.md) method. The host reports status back to the CLR by calling [ICLRIoCompletionManager::OnComplete](iclriocompletionmanager-oncomplete-method.md).  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

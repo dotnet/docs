@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ICatalogServices Interface
+
 Provides methods for cataloging services.  
   
  This interface supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

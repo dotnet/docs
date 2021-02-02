@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: c3ebb7b2-ed30-4e8c-99dc-b79d37a7e3fb
 ---
 # System.ServiceModel.Security.SecuritySessionRequestorOperationFailure
+
 System.ServiceModel.Security.SecuritySessionRequestorOperationFailure  
   
 ## Description  
+
  The client security session operation failed.  
   
 ## See also

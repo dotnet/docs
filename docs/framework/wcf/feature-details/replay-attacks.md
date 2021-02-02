@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 7a17e040-93cd-4432-81b9-9f62fec78c8f
 ---
 # Replay Attacks
+
 A *replay attack* occurs when an attacker copies a stream of messages between two parties and replays the stream to one or more of the parties. Unless mitigated, the computers subject to the attack process the stream as legitimate messages, resulting in a range of bad consequences, such as redundant orders of an item.  
   
 ## Bindings May Be Subject to Reflection Attacks  
+
  *Reflection attacks* are replays of messages back to a sender as if they came from the receiver as the reply. The standard *replay detection* in the Windows Communication Foundation (WCF) mechanism does not automatically handle this.  
   
  Reflection attacks are mitigated by default because the WCF service model adds a signed message ID to request messages and expects a signed `relates-to` header on response messages. Consequently, the request message cannot be replayed as a response. In secure reliable message (RM) scenarios, reflection attacks are mitigated because:  
@@ -22,6 +24,7 @@ A *replay attack* occurs when an attacker copies a stream of messages between tw
  The mitigation for custom bindings is to not establish security context or to require WS-Addressing headers.  
   
 ## Web Farm: Attacker Replays Request to Multiple Nodes  
+
  A client uses a service that is implemented on a Web farm. An attacker replays a request that was sent to one node in the farm to another node in the farm. In addition, if a service is restarted, the replay cache is flushed, allowing an attacker to replay the request. (The cache contains used, previously seen message signature values and prevents replays so those signatures can be used only once. Replay caches are not shared across a Web farm.)  
   
  Mitigations include:  

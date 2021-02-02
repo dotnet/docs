@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 939cabe1-b647-4090-b662-eeec23c6c58d
 ---
 # ICorDebugDataTarget2::GetImageFromPointer Method
+
 Returns the module base address and size from an address in that module.  
   
 ## Syntax  
@@ -17,6 +18,7 @@ HRESULT GetImageFromPointer(
 ```  
   
 ## Parameters  
+
  `addr`  
  A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents an address in a module.  
   
@@ -32,6 +34,7 @@ HRESULT GetImageFromPointer(
 > This method is available with .NET Native only.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # IHostCrst::SetSpinCount Method
+
 Sets the spin count for the current [IHostCrst](ihostcrst-interface.md) instance.  
   
 ## Syntax  
@@ -28,6 +29,7 @@ HRESULT SetSpinCount (
 ```  
   
 ## Parameters  
+
  `dwSpinCount`  
  [in] The new spin count for the current `IHostCrst` instance.  
   
@@ -43,11 +45,13 @@ HRESULT SetSpinCount (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
+
  On multi-processor systems, if the critical section represented by the current `IHostCrst` instance is unavailable, a calling thread spins `dwSpinCount` times before calling [IHostSemaphore::Wait](ihostsemaphore-wait-method.md) on a semaphore associated with the critical section. If the critical section becomes free during the spin operation, the calling thread avoids the wait operation.  
   
  The usage of `dwSpinCount` is identical to the usage of the parameter of the same name in the Win32 `InitializeCriticalSectionAndSpinCount` function.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  

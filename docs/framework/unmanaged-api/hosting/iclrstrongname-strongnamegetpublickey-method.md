@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRStrongName::StrongNameGetPublicKey Method
+
 Gets the public key from a public/private key pair. The key pair can be supplied either as a key container name within a cryptographic service provider (CSP) or as a raw collection of bytes.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ HRESULT StrongNameGetPublicKey (
 ```  
   
 ## Parameters  
+
  `szKeyContainer`  
  [in] The name of the key container that contains the public/private key pair. If `pbKeyBlob` is null, `szKeyContainer` must specify a valid container within the CSP. In this case, the [ICLRStrongName::StrongNameGetPublicKey](iclrstrongname-strongnamegetpublickey-method.md) method extracts the public key from the key pair stored in the container.  
   
@@ -52,12 +54,15 @@ HRESULT StrongNameGetPublicKey (
  [out] The size of the returned public key BLOB.  
   
 ## Return Value  
+
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Remarks  
+
  The public key is contained in a [PublicKeyBlob](../strong-naming/publickeyblob-structure.md) structure.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  

@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerCallback::ModuleUnloadStarted Method
+
 Notifies the profiler that a module is being unloaded.  
   
 ## Syntax  
@@ -27,13 +28,16 @@ HRESULT ModuleUnloadStarted(
 ```  
   
 ## Parameters  
+
  `moduleId`  
  [in] The ID of the module that is being unloaded.  
   
 ## Remarks  
+
  The value of `moduleId` is not valid for an information request after the `ModuleUnloadStarted` method returns — this is the profiler's last chance to get information about this module.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

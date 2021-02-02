@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugCode::CreateBreakpoint Method
+
 Creates a breakpoint in this code segment at the specified offset.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ HRESULT CreateBreakpoint (
 ```  
   
 ## Parameters  
+
  `offset`  
  [in] The offset at which to create the breakpoint.  
   
@@ -36,11 +38,13 @@ HRESULT CreateBreakpoint (
  [out] A pointer to the address of an "ICorDebugFunctionBreakpoint" object that represents the breakpoint.  
   
 ## Remarks  
+
  Before the breakpoint is active, it must be added to the process object.  
   
  If this code is Microsoft intermediate language (MSIL) code, and there is a just-in-time (JIT)-compiled, native version of the code, the breakpoint will be applied in the JIT-compiled code as well. (The same is true if the code is JIT-compiled later.)  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

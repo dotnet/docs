@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3c62cab5-81a4-48b6-ac8c-9ce33a85a157
 ---
 # Virtual Directory Setup Instructions
+
 The Windows Communication Foundation (WCF) samples are intended to share a common virtual directory named servicemodelsamples that is mapped to the %SystemDrive%\inetpub\wwwroot\servicemodelsamples folder.  
   
 > [!NOTE]

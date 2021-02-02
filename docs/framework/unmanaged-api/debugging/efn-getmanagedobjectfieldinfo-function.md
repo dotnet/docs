@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # \_EFN\_GetManagedObjectFieldInfo Function
+
 Gets the offset from the start of an object to a field and the field's value, using the provided object pointer and field name.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT _EFN_GetManagedObjectFieldInfo(
 ```  
   
 ## Parameters  
+
  `Client`  
  [in] A pointer to the debug client.  
   
@@ -47,11 +49,13 @@ HRESULT _EFN_GetManagedObjectFieldInfo(
  [out] The offset from `objAddr` to the field. This parameter can be null.  
   
 ## Remarks  
+
  If the offset is 0, no offset is written.  
   
  If there is no managed code on the thread currently in context, the function returns HRESULT SOS_E_NOMANAGEDCODE with a facility value of 0xa0 and an error code of 0x1000.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** SOS_Stacktrace.h  

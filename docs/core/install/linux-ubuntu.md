@@ -1,14 +1,14 @@
 ---
-title: Install .NET Core on Ubuntu - .NET Core
-description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on Ubuntu.
+title: Install .NET on Ubuntu - .NET
+description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/04/2020
+ms.date: 01/06/2021
 ---
 
-# Install .NET Core SDK or .NET Core Runtime on Ubuntu
+# Install the .NET SDK or the .NET Runtime on Ubuntu
 
-.NET Core is supported on Ubuntu. This article describes how to install .NET Core on Ubuntu. When an Ubuntu version falls out of support, .NET Core is no longer supported with that version. However, these instructions may help you to get .NET Core running on those versions, even though it isn't supported.
+.NET is supported on Ubuntu. This article describes how to install .NET on Ubuntu. When an Ubuntu version falls out of support, .NET is no longer supported with that version.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -16,33 +16,45 @@ ms.date: 06/04/2020
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET Core releases and the versions of Ubuntu they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Ubuntu reaches end-of-life](https://wiki.ubuntu.com/Releases).
+The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Ubuntu reaches end-of-life](https://wiki.ubuntu.com/Releases).
 
-- A ✔️ indicates that the version of Ubuntu or .NET Core is still supported.
-- A ❌ indicates that the version of Ubuntu or .NET Core isn't supported on that Ubuntu release.
-- When both a version of Ubuntu and a version of .NET Core have ✔️, that OS and .NET combination are supported.
+- A ✔️ indicates that the version of Ubuntu or .NET is still supported.
+- A ❌ indicates that the version of Ubuntu or .NET isn't supported on that Ubuntu release.
+- When both a version of Ubuntu and a version of .NET have ✔️, that OS and .NET combination is supported.
 
-| Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
+| Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5.0 |
 |--------------------------|---------------|---------------|----------------|
-| ✔️ [20.04 (LTS)](#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ❌ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ❌ [19.04](#1904-)       | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 Preview |
-| ❌ [18.10](#1810-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
-| ✔️ [18.04 (LTS)](#1804-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ❌ [17.10](#1710-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
-| ❌ [17.04](#1704-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
-| ❌ [16.10](#1610-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
-| ✔️ [16.04 (LTS)](#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [20.10](#2010-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ✔️ [20.04 (LTS)](#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [19.04](#1904-)       | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 |
+| ❌ [18.10](#1810-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ✔️ [18.04 (LTS)](#1804-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
+| ❌ [17.10](#1710-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ❌ [17.04](#1704-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ❌ [16.10](#1610-)       | ❌ 2.1        | ❌ 3.1        | ❌ 5.0 |
+| ✔️ [16.04 (LTS)](#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 |
 
-The following versions of .NET Core are no longer supported. The downloads for these still remain published:
+The following versions of .NET are no longer supported. The downloads for these still remain published:
 
 - 3.0
 - 2.2
 - 2.0
 
-## How to install other versions
+## Remove preview versions
 
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+[!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
+
+## 20.10 ✔️
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
 ## 20.04 ✔️
 
@@ -53,7 +65,7 @@ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
 ## 19.10 ❌
 
@@ -103,7 +115,7 @@ wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
 ## 17.10 ❌
 
@@ -153,11 +165,15 @@ wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
+[!INCLUDE [linux-apt-install-50](includes/linux-install-50-apt.md)]
 
-## APT update SDK or runtime
+## How to install other versions
 
-When a new patch release is available for .NET Core, you can simply upgrade it through APT with the following commands:
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## Use APT to update .NET
+
+When a new patch release is available for .NET, you can simply upgrade it through APT with the following commands:
 
 ```bash
 sudo apt-get update
@@ -166,7 +182,7 @@ sudo apt-get upgrade
 
 ## APT troubleshooting
 
-This section provides information on common errors you may get while using APT to install .NET Core.
+This section provides information on common errors you may get while using APT to install .NET.
 
 ### Unable to find package
 
@@ -194,13 +210,9 @@ sudo apt-get update; \
 
 [!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]
 
-## Snap
-
-[!INCLUDE [linux-install-snap](includes/linux-install-snap.md)]
-
 ## Dependencies
 
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - libc6
 - libgcc1
@@ -214,21 +226,14 @@ When you install with a package manager, these libraries are installed for you. 
 - libstdc++6
 - zlib1g
 
-For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+For .NET apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
 
 - libgdiplus (version 6.0.1 or later)
 
   > [!WARNING]
   > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
 
-## Scripted install
-
-[!INCLUDE [linux-install-scripted](includes/linux-install-scripted.md)]
-
-## Manual install
-
-[!INCLUDE [linux-install-manual](includes/linux-install-manual.md)]
-
 ## Next steps
 
-- [Tutorial: Create a console application with .NET Core SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)
+- [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
+- [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

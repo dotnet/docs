@@ -1,5 +1,5 @@
 ---
-title: Use Jupyter notebooks
+title: Use Jupyter Notebooks
 titleSuffix: .NET for Apache Spark
 description: Use .NET for Apache Spark in interactive environments like Jupyter Notebook, Jupyter Lab, or Visual Studio Code (VS Code)
 ms.author: luquinta
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.custom: mvc, how-to
 ---
 
-# Use .NET for Apache Spark in Jupyter notebooks
+# Use .NET for Apache Spark in Jupyter Notebooks
 
 In this article, you learn how to run .NET for Apache Spark jobs interactively in Jupyter Notebook and Visual Studio Code (VS Code) with .NET Interactive.
 
@@ -21,7 +21,7 @@ In the context of .NET, [.NET Interactive](https://github.com/dotnet/interactive
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://docs.microsoft.com/dotnet/core/install/)
+- [.NET Core 3.1 SDK](../../core/install/index.yml)
 - [Apache Spark](https://spark.apache.org/downloads.html)
 - [Apache Spark .NET Worker](https://github.com/dotnet/spark/releases)
 
@@ -43,7 +43,7 @@ To work with Jupyter Notebooks, you'll need two things.
 
 ## Start .NET for Apache Spark
 
-Run the following command to start .NET for Apache Spark in debug mode. This `spark-submit` command starts a process and waits for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<version>.jar` for the respective version of .NET for Apache Spark you're using.
+Run the following command to start .NET for Apache Spark in debug mode. This `spark-submit` command starts a process and waits for connections from a [SparkSession](xref:Microsoft.Spark.Sql.SparkSession). Make sure to provide the path to the `microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar` for the respective version of .NET for Apache Spark you're using.
 
 **Ubuntu**
 
@@ -125,7 +125,7 @@ You can use different interfaces to interact with Jupyter. For a browser-based i
 1. When the notebook opens, install the `Microsoft.Spark` NuGet package. Make sure the version you install is the same as the .NET Worker.
 
     ```text
-    #r "nuget:Microsoft.Spark, 0.12.1"
+    #r "nuget:Microsoft.Spark, 1.0.0"
     ```
 
 1. Add the following using statement to the notebook.

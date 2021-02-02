@@ -35,7 +35,7 @@ Specifies that debug information should be placed in a file for later analysis.
   
 - Version information about your compiler, run time, and operating system.  
   
-- Referenced assemblies and modules, saved as hexadecimal digits, except assemblies that ship with the .NET Framework and SDK.  
+- Referenced assemblies and modules, saved as hexadecimal digits, except assemblies that are shipped with .NET and the .NET SDK.  
   
 - Compiler output, if any.  
   

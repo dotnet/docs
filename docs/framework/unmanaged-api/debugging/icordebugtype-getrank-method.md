@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugType::GetRank Method
+
 Gets the number of dimensions in an array type.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ HRESULT GetRank (
 ```  
   
 ## Parameters  
+
  `pnRank`  
  [out] A pointer to the number of dimensions.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  

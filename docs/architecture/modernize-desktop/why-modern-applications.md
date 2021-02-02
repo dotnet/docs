@@ -1,7 +1,7 @@
 ---
 title: Why modern desktop applications
 description: Learn about desktop technologies such as Windows Forms, WPF, and UWP in the modern world.
-ms.date: 09/16/2019
+ms.date: 12/29/2020
 ---
 # Why modern desktop applications
 
@@ -9,7 +9,7 @@ ms.date: 09/16/2019
 
 ### A story of one company
 
-Back in early 2000s, one multinational company started developing a distributed desktop solution to exchange information between different branches of the company and execute optimized operations on centralized units. They have chosen a brand-new framework called Windows Forms (also known as WinForms) for their application development. Over the years, the project evolved into a mature, well tested, and time-proven application with hundreds of thousands of lines of code. Time passed and .NET Framework 2.0 is no longer the hot new technology. The developers who are working on this application are facing a dilemma. They'd like to use the latest stack of technologies in their development and have their application look and "feel" modern. At the same time, they don't want to throw away the great product they have built over 15 years and rewrite the entire application from scratch.
+Back in the early 2000s, one multinational company started developing a distributed desktop solution to exchange information between different branches of the company and execute optimized operations on centralized units. They have chosen a brand-new framework called Windows Forms (also known as WinForms) for their application development. Over the years, the project evolved into a mature, well tested, and time-proven application with hundreds of thousands of lines of code. Time passed and .NET Framework 2.0 is no longer the hot new technology. The developers who are working on this application are facing a dilemma. They'd like to use the latest stack of technologies in their development and have their application look and "feel" modern. At the same time, they don't want to throw away the great product they have built over 15 years and rewrite the entire application from scratch.
 
 ### Your story
 
@@ -19,19 +19,19 @@ You might find yourself in the same boat, where you have mature Windows Forms or
 
 Before the raise of the Internet, desktop applications were the main approach to build software systems. Developers could choose any programming language, such as COBOL, Fortran, VB6, or C++. But where they developed small tools or complex distributed architectures, they were all desktop applications.
 
-Then, Internet technologies started shocking the development world and winning over more and more engineers with advantages like easy deployment and simplified distribution processes. The fact that once a web application was deployed to production all users got automatic updates made a huge impact on the software agility.
+Then, Internet technologies started shocking the development world and winning over more engineers with advantages like easy deployment and simplified distribution processes. The fact that once a web application was deployed to production all users got automatic updates made a huge impact on the software agility.
 
-However, the Internet infrastructure, underlying protocols, and standards like HTTP and HTML weren't designed for building complex applications. In fact, the major development effort back then was aiming just one goal: to give web applications same capabilities that desktop applications have, such as fast data input and state management.
+However, the Internet infrastructure, underlying protocols, and standards like HTTP and HTML weren't designed for building complex applications. In fact, the major development effort back then was aiming just one goal: to give web applications the same capabilities that desktop applications have, such as fast data input and state management.
 
 Even though web and mobile applications have grown at an incredible pace, for certain tasks desktop applications still hold the number one place in terms of efficiency and performance. That explains why there are millions of developers who are building their projects with WPF and WinForms and the amount of those applications is constantly growing.
 
 Here are some reasons for choosing desktop applications in your development:
 
-- Desktop apps have better interaction with user's PC.
-- The performance of desktop applications for complex calculations is much higher than performance of web applications.
-- Running custom logic on the client side is possible but much harder with a web application.
+- Desktop apps have better interaction with the user's PC.
+- The performance of desktop applications for complex calculations is much higher than the performance of web applications.
+- Running custom logic on the client-side is possible but much harder with a web application.
 - Using multithreading is easier and more efficient in a desktop application.
-- The learning curve for designing user interfaces (UIs) isn't steep. And for WinForms, it's completely intuitive with drag-and-drop experience of the Windows Forms designer.
+- The learning curve for designing user interfaces (UIs) isn't steep. And for WinForms, it's intuitive with the drag-and-drop experience of the Windows Forms designer.
 - It's easy to start coding and testing your algorithms without the need to set up a server infrastructure or to care about connectivity problems, firewalls, and browser compatibility.
 - Debugging is powerful as compared to web debugging.
 - Access to hardware devices, such as camera, Bluetooth, or card readers, is easy.
@@ -96,7 +96,7 @@ UWP contains a presentation framework that is XAML-based, like WPF, but it has s
 
 ## A tale of two platforms
 
-In the last 20 years, while UI desktop technologies were growing and following the path from Windows Forms to UWP, the hardware was also evolving from heavy weight PC units with small CRT monitors to high-DPI monitors and lightweight tablets and phones with different data input techniques like Touch and Ink. These changes resulted in creating two different concepts: a Desktop Application and a Modern Application. A Modern Application is one that considers different device form factors, various input and output methods, and leverages modern desktop features while running on a sandboxed execution model. The (traditional) Desktop Application, on the other hand, is an application that needs a solid UI with high density of controls that is best operated with a mouse and a keyboard.
+In the last 20 years, while UI desktop technologies were growing and following the path from Windows Forms to UWP, the hardware was also evolving from heavy weight PC units with small CRT monitors to high-DPI monitors and lightweight tablets and phones with different data input techniques like Touch and Ink. These changes resulted in creating two different concepts: a Desktop Application and a Modern Application. A Modern Application is one that considers different device form factors, various input and output methods, and leverages modern desktop features while running on a sandboxed execution model. The (traditional) Desktop Application, on the other hand, is an application that needs a solid UI with a high density of controls that is best operated with a mouse and a keyboard.
 
 The following table describes the differences between the two concepts:
 
@@ -137,14 +137,14 @@ This path will show you how you can leverage modern desktop features into your e
 
 Modern development cycles have stressed out to provide agility on how new versions of applications are deployed to every single user. Since Windows Forms and WPF applications are based on a particular version of the .NET Framework that must be present on the machine, they can't take advantage of new .NET Framework version features without the intervention of the IT people with the risk of having side effects for other apps running on the same machine. It has limited the innovation pace for developers forcing them to stay on outdated versions of the .NET Framework.
 
-Since the launch of .NET Core 3.0, you can leverage a new approach of deploying multiple versions of .NET Core side by side and specifying which version of .NET Core each application should target. This way, you can use newest features in one application while being confident you aren't going to break any other applications.
+Since the launch of .NET Core 3.0, you can leverage a new approach of deploying multiple versions of .NET side by side and specifying which version of .NET each application should target. This way, you can use the newest features in one application while being confident you aren't going to break any other applications.
 
 ### Installation
 
-Desktop applications always rely on some sort of installation process before the user can start using them. This fact brought into the game a set of technologies, from MSI and ClickOnce to custom installers or even XCOPY deployment. Any of these methods deals with delicate problems because applications need a way to access shared resources on the machine. Sometimes installation needs to access the Registry to insert or update new Key Values, sometimes to update shared DLLs referenced by the main application. This causes a continuous headache for users, creating this perception that once you install some application, your computer will never be the same, even if you uninstall it afterwards.
+Desktop applications always rely on some sort of installation process before the user can start using them. This fact brought into the game a set of technologies, from MSI and ClickOnce to custom installers or even XCOPY deployment. Any of these methods deals with delicate problems because applications need a way to access shared resources on the machine. Sometimes installation needs to access the Registry to insert or update new Key Values, sometimes to update shared DLLs referenced by the main application. This behavior causes a continuous headache for users, creating this perception that once you install some application, your computer will never be the same, even if you uninstall it afterwards.
 
-In this book, we'll introduce a new way of installing applications with MSIX that solves the problem described earlier. You'll learn how you can easily set up a packaging, installation, and updates for your application.
+In this book, we'll introduce a new way of installing applications with MSIX that solves the problem described earlier. You'll learn how you can easily set up packaging, installation, and updates for your application.
 
 >[!div class="step-by-step"]
 >[Previous](index.md)
->[Next](whats-new-dotnet-core.md)
+>[Next](whats-new-dotnet.md)

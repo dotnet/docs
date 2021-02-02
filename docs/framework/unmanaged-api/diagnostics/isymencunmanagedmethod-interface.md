@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 ---
 # ISymENCUnmanagedMethod Interface
+
 Provides information for the Edit and Continue feature.  
   
 ## Methods  
@@ -29,6 +30,7 @@ Provides information for the Edit and Continue feature.
 |[GetSourceExtentInDocument Method](isymencunmanagedmethod-getsourceextentindocument-method.md)|Gets the smallest start line and largest end line for the method in a specific document.|  
   
 ## Requirements  
+
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also

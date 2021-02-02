@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: 0da481a9-b414-4230-beb0-e3ceba882fe5
 ---
 # How to: Override a Global Proxy Selection
+
 This example sends a **WebRequest** to `www.contoso.com` that overrides the global proxy selection with a proxy server named `alternateproxy` on port 80.  
   
 ## Example  
@@ -23,6 +24,7 @@ req.Proxy = New WebProxy("http://alternateproxy:80/")
 ```  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A [`using` directive](../../csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.  

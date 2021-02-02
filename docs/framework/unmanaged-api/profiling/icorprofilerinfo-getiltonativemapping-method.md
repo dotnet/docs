@@ -17,6 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo::GetILToNativeMapping Method
+
 Gets a map from Microsoft intermediate language (MSIL) offsets to native offsets for the code contained in the specified function.  
   
 ## Syntax  
@@ -31,6 +32,7 @@ HRESULT GetILToNativeMapping(
 ```  
   
 ## Parameters  
+
  `functionId`  
  [in] The ID of the function that contains the code.  
   
@@ -44,6 +46,7 @@ HRESULT GetILToNativeMapping(
  [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` structures, each of which specifies the offsets. After the `GetILToNativeMapping` method returns, `map` will contain some or all of the `COR_DEBUG_IL_TO_NATIVE_MAP` structures.  
   
 ## Remarks  
+
  The `GetILToNativeMapping` method returns an array of `COR_DEBUG_IL_TO_NATIVE_MAP` structures. To convey that certain ranges of native instructions correspond to special regions of code (for example, the prolog), an entry in the array can have its `ilOffset` field set to a value of the [CorDebugIlToNativeMappingTypes](../debugging/cordebugiltonativemappingtypes-enumeration.md) enumeration.  
   
  After `GetILToNativeMapping` returns, you must verify that the `map` buffer was large enough to contain all the `COR_DEBUG_IL_TO_NATIVE_MAP` structures. To do this, compare the value of `cMap` with the value of the `pcMap` parameter. If the `pcMap` value, when it is multiplied by the size of a `COR_DEBUG_IL_TO_NATIVE_MAP` structure, is larger than `cMap`, allocate a larger `map` buffer, update `cMap` with the new, larger size, and call `GetILToNativeMapping` again.  
@@ -51,6 +54,7 @@ HRESULT GetILToNativeMapping(
  Alternatively, you can first call `GetILToNativeMapping` with a zero-length `map` buffer to obtain the correct buffer size. You can then set the buffer size to the value returned in `pcMap` and call `GetILToNativeMapping` again.  
   
 ## Requirements  
+
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  

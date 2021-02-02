@@ -67,6 +67,10 @@ The following APIs are more event oriented. Rather than logging simple strings t
   - Writes messages to the Windows Event Log.
   - System administrators expect fatal application error messages to appear in the Windows Event Log.
 
+## Distributed Tracing
+
+[Distributed Tracing](./distributed-tracing.md) is the way to publish and observe the tracing data in a distributed system.
+
 ## ILogger and logging frameworks
 
 The low-level APIs may not be the right choice for your logging needs. You may want to consider a logging framework.

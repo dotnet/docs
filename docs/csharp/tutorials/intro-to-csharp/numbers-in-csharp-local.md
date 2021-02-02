@@ -9,7 +9,9 @@ ms.custom: mvc
 
 This tutorial teaches you about the numeric types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI. On Windows, you can use Visual Studio 2019. For instructions, see [Set up your local environment](local-environment.md).
+## Prerequisites
+
+The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
 
 ## Explore integer math
 

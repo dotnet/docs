@@ -9,7 +9,9 @@ ms.custom: mvc
 
 This tutorial teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI. On Windows, you can use Visual Studio 2019. For instructions, see [Set up your local environment](local-environment.md).
+## Prerequisites
+
+The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
 
 ## Make decisions using the `if` statement
 

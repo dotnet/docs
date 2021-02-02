@@ -8,7 +8,9 @@ ms.custom: mvc
 
 In this tutorial, you'll build a console application and see the basic object-oriented features that are part of the C# language.
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI. On Windows, you can use Visual Studio 2019. For instructions, see [Set up your local environment](local-environment.md).
+## Prerequisites
+
+The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
 
 ## Create your application
 

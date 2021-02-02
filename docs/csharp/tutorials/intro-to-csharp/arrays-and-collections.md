@@ -8,7 +8,9 @@ ms.custom: mvc
 
 This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601> class.
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI. On Windows, you can use Visual Studio 2019. For instructions, see [Set up your local environment](local-environment.md).
+## Prerequisites
+
+The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
 
 ## A basic list example
 

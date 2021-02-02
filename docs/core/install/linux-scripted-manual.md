@@ -114,7 +114,7 @@ Next, extract the downloaded file and use the `export` command to set variables 
 
 To extract the runtime and make the .NET CLI commands available at the terminal, first download a .NET binary release. Then, open a terminal and run the following commands from the directory where the file was saved. The archive file name may be different depending on what you downloaded.
 
-**Use the following commands to extract the runtime or sdk that you downloaded.** Remember to change the `DOTNET_FILE` value to your file name:
+**Use the following commands to extract the runtime or SDK that you downloaded.** Remember to change the `DOTNET_FILE` value to your file name:
 
 ```bash
 DOTNET_FILE=dotnet-sdk-5.0.102-linux-x64.tar.gz

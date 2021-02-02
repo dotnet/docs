@@ -31,8 +31,6 @@ The Dapr observability building block decouples observability from the applicati
 
 As Dapr abstracts away the plumbing, the application is unaware of how observability is implemented. There's no need to reference libraries or implement custom instrumentation code. Dapr allows the developer to focus on building business logic and not observability plumbing. Observability is configured at the Dapr level and is consistent across services, even when created by different teams, and built with different technology stacks.
 
-Let's dive in and see how observability works in Dapr.
-
 ## How it works
 
 Dapr's [sidecar architecture](dapr-at-20000-feet.md#sidecar-architecture) enables built-in observability features. As services communicate, Dapr sidecars intercept the traffic and extract tracing, metrics, and logging information. Telemetry is published in an open standards format. By default, Dapr supports [OpenTelemetry](https://opentelemetry.io/) and [Zipkin](https://zipkin.io/).
@@ -55,7 +53,7 @@ At the beginning of this chapter, four categories of telemetry were identified. 
 
 Distributed tracing provides insight into the traffic that flows across services in a distributed application. The log of exchanged request and response messages is an invaluable source of information for troubleshooting issues. The hard part is *correlating messages* that originate from the same operation.
 
-Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) for correlate related messages. It injects the same context information into requests and responses that form a unique operation. Figure 9-2 shows how correlation works:
+Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correlate related messages. It injects the same context information into requests and responses that form a unique operation. Figure 9-2 shows how correlation works:
 
 ![W3C Trace Context example](media/observability/w3c-trace-context.png)
 
@@ -166,7 +164,7 @@ kubectl apply -f zipkin.yaml
 
 ##### Configure the services to use the tracing configuration
 
-Now everything is set up correctly to start publishing telemetry. Every Dapr sidecar that is deployed as part of the application must be instructed to emit telemetry when started. To do that, add a `dapr.io/config` annotation that references the `tracing-config` configuration to the deployment of each service. Here's an example of the eShop Ordering API service's manifest file containing the annotation:
+Now everything is set up correctly to start publishing telemetry. Every Dapr sidecar that is deployed as part of the application must be instructed to emit telemetry when started. To do that, add a `dapr.io/config` annotation that references the `tracing-config` configuration to the deployment of each service. Here's an example of the eShop ordering API service's manifest file containing the annotation:
 
 ```yaml
 apiVersion: apps/v1
@@ -290,7 +288,7 @@ Dapr generates a large set of metrics for Dapr system services and its runtime. 
 | dapr_http_server_request_count     | Runtime | Number of HTTP requests started in an HTTP server.           |
 | dapr_http/client/sent_bytes        | Runtime | Total bytes sent in request body (not including headers) by an HTTP client. |
 
-See the [Dapr metrics documentation](https://docs.dapr.io/developing-applications/building-blocks/observability/metrics/) for a complete list of available metrics.
+For more information on available metrics, see the [Dapr metrics documentation](https://docs.dapr.io/developing-applications/building-blocks/observability/metrics).
 
 #### Configuring Dapr metrics
 
@@ -332,7 +330,7 @@ Dapr emits structured logging. Each log entry has the following format:
 | Field    | Description                                          | Example                             |
 | -------- | ---------------------------------------------------- | ----------------------------------- |
 | time     | ISO8601 formatted timestamp                          | `2021-01-10T14:19:31.000Z`          |
-| level    | Level of the entry (debug \| info \| warn  \| error) | `info`                              |
+| level    | Level of the entry (`debug` \| `info` \| `warn`  \| `error`) | `info`                              |
 | type     | Log Type                                             | `log`                               |
 | msg      | Log Message                                          | `metrics server started on :62408/` |
 | scope    | Logging Scope                                        | `dapr.runtime`                      |

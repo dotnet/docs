@@ -5,8 +5,8 @@ author: elinor-fung
 ms.author: elfung
 ms.date: 11/17/2020
 ---
-
 # Collect detailed assembly loading information
+
 Starting with .NET 5.0, the runtime can emit events through `EventPipe` with detailed information about [managed assembly loading](loading-managed.md) to aid in diagnosing assembly loading issues. These [events](../../fundamentals/diagnostics/runtime-loader-binder-events.md) are emitted by the `Microsoft-Windows-DotNETRuntime` provider under the `AssemblyLoader` keyword (`0x4`).
 
 ## Prerequisites

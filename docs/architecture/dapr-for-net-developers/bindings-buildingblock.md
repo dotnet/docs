@@ -52,14 +52,14 @@ public class SomeController : ControllerBase
     [HttpPost("/tweet")]
     public ActionResult Post(JsonElement data)
     {
-        // handle tweet
-        //...
+        // Handle tweet
+        // ...
 
-        // acknowledge message
+        // Acknowledge message
         return Ok();
     }
   
-    //...  
+    // ...  
 }
 ```
 
@@ -109,8 +109,8 @@ The Dapr .NET SDK provides language specific support for .NET Core developers. I
 ```csharp
 private async Task SendSMSAsync([FromServices] DaprClient daprClient)
 {
-    var string message = "Welcome to this awesome service";
-    var metadata = new Dictionary<string,string> { { "toNumber", "555-3277"} };
+    var message = "Welcome to this awesome service";
+    Dictionary<string, string> metadata = new() { ["toNumber"] = "555-3277" };
     await daprClient.InvokeBindingAsync("sms", "create", message, metadata);
 }
 ```

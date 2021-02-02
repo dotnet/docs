@@ -1297,6 +1297,8 @@ items:
         href: ../core/dependency-loading/loading-resources.md
       - name: Load unmanaged libraries
         href: ../core/dependency-loading/loading-unmanaged.md
+      - name: Collect detailed assembly loading information
+        href: ../core/dependency-loading/collect-details.md
     - name: Tutorials
       items:
       - name: Create a .NET application with plugins
@@ -2134,6 +2136,8 @@ items:
       href: ../standard/native-interop/customize-struct-marshaling.md
     - name: Customize parameter marshaling
       href: ../standard/native-interop/customize-parameter-marshaling.md
+    - name: Cross platform P/Invoke
+      href: ../standard/native-interop/cross-platform.md
     - name: Interop guidance
       href: ../standard/native-interop/best-practices.md
     - name: Charsets and marshaling

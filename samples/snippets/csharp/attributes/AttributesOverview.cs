@@ -50,9 +50,12 @@ namespace attributes
         [method: ValidatedContract]
         int Method2() { return 0; }
 
+        // applies to parameter
+        int Method3([ValidatedContract] string contract) { return 0; }
+
         // applies to return value
         [return: ValidatedContract]
-        int Method3() { return 0; }
+        int Method4() { return 0; }
         // </Snippet6>
     }
 }

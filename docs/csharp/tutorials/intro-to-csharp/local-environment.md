@@ -17,10 +17,10 @@ The first step in running a tutorial on your machine is to set up a development 
 The instructions in these tutorials assume that you're using the .NET CLI to create, build, and run applications. You'll use the following commands:
 
 * [`dotnet new`](../../../core/tools/dotnet-new.md) creates an application. This command generates the files and assets necessary for your application. The introduction to C# tutorials all use the `console` application type. Once you've got the basics, you can expand to other application types.
-* [`dotnet build`](../../../core/tools/dotnet-build.md) builds the executable,
+* [`dotnet build`](../../../core/tools/dotnet-build.md) builds the executable.
 * [`dotnet run`](../../../core/tools/dotnet-run.md) runs the executable.
 
-If you use Visual Studio 2019 for these tutorials, you'll create, build, and run projects by using a Visual Studio menu selection when tutorial instructions say use a CLI command:
+If you use Visual Studio 2019 for these tutorials, you'll choose a Visual Studio menu selection when a tutorial directs you to run one of these CLI commands:
 
 * **File** > **New** > **Project** creates an application.
 * **Build** >  **Build Solution** builds the executable.
@@ -57,4 +57,4 @@ This tutorial assumes that you have finished the lessons listed above.
 
 ## Introduction to classes
 
-In [Introduction to classes](introduction-to-classes.md), you'll build a console application and see the basic object-oriented features that are part of the C# language. This is the final introduction to C# tutorial. It's only available to run on your machine, using your own local development environment and .NET Core.
+In [Introduction to classes](introduction-to-classes.md), you'll build a console application and see the basic object-oriented features that are part of the C# language. This is the final introduction to C# tutorial. It's only available to run on your machine, using your own local development environment and .NET.

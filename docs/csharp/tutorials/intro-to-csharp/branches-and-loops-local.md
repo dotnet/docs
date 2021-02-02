@@ -19,7 +19,7 @@ Create a directory named *branches-tutorial*. Make that the current directory an
 dotnet new console -n BranchesAndLoops -o .
 ```
 
-This command creates a new .NET Core console application in the current directory.
+This command creates a new .NET console application in the current directory.
 
 Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code:
 

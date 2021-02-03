@@ -6,19 +6,19 @@ ms.date: 02/02/2021
 # .NET Distributed Tracing
 
 Distributed tracing is the way to publish and observe the tracing data in a distributed system.
-.NET Framework and .NET Core has been supporting tracing through the System.Diagnostics APIs.
+.NET Framework and .NET Core has been supporting tracing through the <xref:System.Diagnostics> APIs.
 
 - <xref:System.Diagnostics.Activity?displayProperty=nameWithType> class which allows storing and accessing diagnostics context and consuming it with logging system.
 - <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> that allows code to be instrumented for production-time logging of rich data payloads for consumption within the process that was instrumented.
 
-Here is some example shows how publish tracing data from the HTTP incoming requests:
+Here is an example shows how to publish tracing data from the HTTP incoming requests:
 
 ```csharp
    public void OnIncomingRequest(DiagnosticListener httpListener, HttpContext context)
    {
        if (httpListener.IsEnabled("Http_In"))
        {
-           Activity activity = new Activity("Http_In");
+           var activity = new Activity("Http_In");
 
            //add tags, baggage, etc.
            activity.SetParentId(context.Request.headers["Request-id"])
@@ -27,10 +27,13 @@ Here is some example shows how publish tracing data from the HTTP incoming reque
                var baggageItem = NameValueHeaderValue.Parse(pair);
                activity.AddBaggage(baggageItem.Key, baggageItem.Value);
            }
-           httpListener.StartActivity(activity, new  {context});
-           try {
+           httpListener.StartActivity(activity, new { context });
+           try
+           {
                //process request ...
-           } finally {
+           }
+           finally
+           {
                //stop activity
                httpListener.StopActivity(activity, new {context} );
            }
@@ -58,9 +61,8 @@ Here is example for how to listen to the Activity events:
 
 .NET 5.0 has extended the capability of the distributed tracing to allow the [OpenTelemetry](https://opentelemetry.io/) tracing scenarios, added Sampling capabilities, simplified the tracing coding pattern, and made the listening to the Activity events easier and flexible.
 
-### Note
-
- To access all added .NET 5.0 capabilities, ensure referencing the [System.Diagnostics.DiagnosticSource](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/) nuget package version 5.0 or later. This package can be used in libraries and apps targeting any supported version of the .NET Framework, .NET Core, and NETStandard. If targeting .NET 5.0 or later, no need to manually reference the package as it is included in the shared library installed with the .NET SDK.
+> [!NOTE]
+> To access all added .NET 5.0 capabilities, ensure referencing the [System.Diagnostics.DiagnosticSource](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/) NuGet package version 5.0 or later. This package can be used in libraries and apps targeting any supported version of the .NET Framework, .NET Core, and .NET Standard. If targeting .NET 5.0 or later, no need to manually reference the package as it is included in the shared library installed with the .NET SDK.
 
 ## Getting Started With Tracing
 
@@ -78,7 +80,7 @@ First step to publish tracing data is to create instance of the ActivitySource c
 
 - Create the ActivitySource once and store it in a static variable and use that instance as long as needed.
 
-- The source name passed to the constructor has to be unique to avoid the conflicts with any other sources. It is recommended to use hierarchical name contains the parts, the company name, the component name, and the source name. e.g. `Microsoft.System.HttpClient.HttpInOutRequests`.
+- The source name passed to the constructor has to be unique to avoid the conflicts with any other sources. It is recommended to use hierarchical name contains the parts, the company name, the component name, and the source name. For example, `Microsoft.System.HttpClient.HttpInOutRequests`.
 
 - The version parameter is optional. It is recommended to provide the version in case plan to release multiple versions of the library or the application and want to distinguish between the sources of different versions.
 
@@ -224,5 +226,4 @@ public class Program
 }
 ```
 
-The sample need to reference the package [
-OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.0.0-rc2).
+The sample needs to reference the package [OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.0.0-rc2).

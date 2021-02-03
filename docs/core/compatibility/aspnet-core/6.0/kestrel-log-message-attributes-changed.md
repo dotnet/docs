@@ -7,7 +7,7 @@ ms.date: 02/01/2021
 ---
 # Kestrel: Log message attributes changed
 
-Kestrel log messages have associated IDs and names. These attributes uniquely identify different kinds of log messages. Some of those IDs and names were incorrectly duplicated. This duplication problem is being fixed in .NET 6.0.
+Kestrel log messages have associated IDs and names. These attributes uniquely identify different kinds of log messages. Some of those IDs and names were incorrectly duplicated. This duplication problem is fixed in ASP.NET Core 6.0.
 
 ## Version introduced
 

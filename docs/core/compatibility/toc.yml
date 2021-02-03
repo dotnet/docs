@@ -28,6 +28,8 @@
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+        - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
+          href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
     - name: .NET 5.0
       items:
       - name: Overview
@@ -568,6 +570,8 @@
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+        - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
+          href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
       - name: .NET 5.0
         items:
         - name: Native code can't access Windows Forms objects

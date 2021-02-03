@@ -16,6 +16,7 @@ on:
       - "**.csproj"
       - "**.vbproj"
       - "**.fsproj"
+      - "**.sln"
       - "**global.json"
       - "**snippets.5000.json"
     branches: [ master ]
@@ -38,7 +39,7 @@ jobs:
     - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
 
     # Get the latest preview SDK (or sdk not installed by the runner)
-    - name: Setup .NET Core SDK
+    - name: Setup .NET SDK
       if: ${{ env.DOTNET_DO_INSTALL == 'true' }}
       run: |
         echo "Downloading dotnet-install.ps1"

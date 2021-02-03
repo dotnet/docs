@@ -2,7 +2,7 @@
 title: Defining Cloud Native
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Defining cloud native
@@ -166,11 +166,11 @@ An excellent reference guide for understanding microservices is [.NET Microservi
 
 Microservices can be created with any modern development platform.
 
-The Microsoft .NET Core platform is an excellent choice. Free and open source, it has many built-in features to simplify microservice development. .NET Core is cross-platform. Applications can be built and run on Windows, macOS, and most flavors of Linux.
+The Microsoft .NET platform is an excellent choice. Free and open source, it has many built-in features to simplify microservice development. .NET is cross-platform. Applications can be built and run on Windows, macOS, and most flavors of Linux.
 
-.NET Core is highly performant and has scored well in comparison to Node.js and other competing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET Core scored in the top 10 - well above Node.js and other competing platforms.
+.NET is highly performant and has scored well in comparison to Node.js and other competing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET scored in the top 10 - well above Node.js and other competing platforms.
 
-.NET Core is maintained by Microsoft and the .NET community on GitHub.
+.NET is maintained by Microsoft and the .NET community on GitHub.
 
 ## Containers
 

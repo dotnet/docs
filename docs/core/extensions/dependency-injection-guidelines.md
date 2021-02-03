@@ -171,7 +171,7 @@ In addition to the guidelines in this article, there are several anti-patterns *
 
 ### Disposable transient services captured by container
 
-When you register *Transient* services that implement <xref:System.IDisposable>, by default the DI container will hold onto these references, and not <xref:System.IDisposable.Dispose> of them until the application stops. This can turn into a memory leak if resolved from the level container.
+When you register *Transient* services that implement <xref:System.IDisposable>, by default the DI container will hold onto these references, and not <xref:System.IDisposable.Dispose> of them until the container is disposed when application stops if they were resolved from the container, or until the scope is disposed if they were resolved from a scope. This can turn into a memory leak if resolved from container level.
 
 :::code language="csharp" source="snippets/configuration/di-anti-patterns/Program.cs" range="18-30":::
 

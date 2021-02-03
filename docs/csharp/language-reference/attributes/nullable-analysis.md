@@ -40,7 +40,7 @@ The rules for your APIs are likely more complicated, as you saw with the `TryGet
 - [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute): A method never returns. In other words, it always throws an exception.
 - [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute): This method never returns if the associated `bool` parameter has the specified value.
 - [MemberNotNull](xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute): The listed member won't be null when the method returns.
-- [MemberNotNullWhen](xref:System.Diagnostics.CodeAnalysis.MemberNotNulLWhenAttribute): The listed member won't be null when the method returns the specified `bool` value.
+- [MemberNotNullWhen](xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute): The listed member won't be null when the method returns the specified `bool` value.
 
 The preceding descriptions are a quick reference to what each attribute does. Each following section describes the behavior and meaning more thoroughly.
 

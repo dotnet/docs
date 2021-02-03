@@ -206,7 +206,11 @@ Finally, you can clean the animation code to remove some duplication:
 
 :::code language="csharp" source="snippets/top-level-statements/Utilities.cs" ID="Animation":::
 
-Now you have a complete application, and you've refactored the reusable parts for later use.
+Now you have a complete application, and you've refactored the reusable parts for later use. You can call the new utility method from your top-level statements, as shown below in the finished version of the main program:
+
+:::code language="csharp" source="snippets/top-level-statements/Program.cs":::
+
+This adds the call to `Utilities.ShowConsoleAnimation`, and adds an additional `using` statement.
 
 ## Summary
 

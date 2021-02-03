@@ -162,8 +162,8 @@ Visual Studio creates reusable publishing profiles that control how your applica
 
 01. In the **Profile settings** dialog, set the following options:
 
-    - Set **Deployment mode** to **Self-contained**.
-    - Set **Target runtime** to the platform you want to publish to.
+    - Set **Deployment mode** to **Self-contained** or **Framework-dependent**.
+    - Set **Target runtime** to the platform you want to publish to. (Must be something other than **Portable**.)
     - Select **Produce single file**.
 
     Choose **Save** to save the settings and return to the **Publish** dialog.

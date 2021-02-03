@@ -1,20 +1,20 @@
 ---
 title: Cloud Native Application Bundles
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Application Bundles
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Cloud Native Application Bundles
 
 A key property of cloud-native applications is that they leverage the capabilities of the cloud to speed up development. This design often means that a full application uses different kinds of technologies. Applications may be shipped in Docker containers, some services may use Azure Functions, while other parts may run directly on virtual machines allocated on large metal servers with hardware GPU acceleration. No two cloud-native applications are the same, so it's been difficult to provide a single mechanism for shipping them.
 
-The Docker containers may run on Kubernetes using a Helm Chart for deployment. The Azure Functions may be allocated using Terraform templates. Finally, the virtual machines may be allocated using Terraform but built out using Ansible. This is a whole mess of technologies and there has been no way to package them all together into a reasonable package. Until now.
+The Docker containers may run on Kubernetes using a Helm Chart for deployment. The Azure Functions may be allocated using Terraform templates. Finally, the virtual machines may be allocated using Terraform but built out using Ansible. This is a large variety of technologies and there has been no way to package them all together into a reasonable package. Until now.
 
-Cloud Native Application Bundles (CNABs) are a joint effort by a number of community-minded companies such as Microsoft, Docker, and HashiCorp to develop a specification to package distributed applications.
+Cloud Native Application Bundles (CNABs) are a joint effort by many community-minded companies such as Microsoft, Docker, and HashiCorp to develop a specification to package distributed applications.
 
 The effort was announced in December of 2018, so there's still a fair bit of work to do to expose the effort to the greater community. However, there's already an [open specification](https://github.com/deislabs/cnab-spec) and a reference implementation known as [Duffle](https://duffle.sh/). This tool, which was written in Go, is a joint effort between Docker and Microsoft.
 
-The CNABs can contain different kinds of installation technologies. This allows things like Helm Charts, Terraform templates, and Ansible Playbooks to coexist in the same package. Once built, the packages are self-contained and portable; they can be installed from a USB stick.  The packages are cryptographically signed to ensure they originate from the party they claim.
+The CNABs can contain different kinds of installation technologies. This aspect allows things like Helm Charts, Terraform templates, and Ansible Playbooks to coexist in the same package. Once built, the packages are self-contained and portable; they can be installed from a USB stick.  The packages are cryptographically signed to ensure they originate from the party they claim.
 
 The core of a CNAB is a file called `bundle.json`. This file defines the contents of the bundle, be they Terraform or images or anything else. Figure 11-9 defines a CNAB that invokes some Terraform. Notice, however, that it actually defines an invocation image that is used to invoke the Terraform. When packaged up, the Docker file that is located in the *cnab* directory is built into a Docker image, which will be included in the bundle. Having Terraform installed inside a Docker container in the bundle means that users don't need to have Terraform installed on their machine to run the bundling.
 
@@ -65,7 +65,7 @@ The core of a CNAB is a file called `bundle.json`. This file defines the content
 
 **Figure 10-18** - An example Terraform file
 
-The `bundle.json` also defines a set of parameters that are passed down into the Terraform. Parameterization of the bundle allows for installation in a variety of different environments.
+The `bundle.json` also defines a set of parameters that are passed down into the Terraform. Parameterization of the bundle allows for installation in various different environments.
 
 The CNAB format is also flexible, allowing it to be used against any cloud. It can even be used against on-premises solutions such as [OpenStack](https://www.openstack.org/).
 

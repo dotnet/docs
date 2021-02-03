@@ -28,6 +28,8 @@
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+        - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
+          href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
     - name: .NET 5.0
       items:
       - name: Overview
@@ -260,6 +262,8 @@
           href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
       - name: Windows Forms
         items:
+        - name: Native code can't access Windows Forms objects
+          href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
           href: windows-forms/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts
@@ -566,8 +570,12 @@
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+        - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
+          href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
       - name: .NET 5.0
         items:
+        - name: Native code can't access Windows Forms objects
+          href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
           href: windows-forms/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts

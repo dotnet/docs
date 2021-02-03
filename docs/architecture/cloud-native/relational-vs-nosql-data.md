@@ -2,7 +2,7 @@
 title: Relational vs. NoSQL data
 description: Learn about relational and NoSQL data in cloud-native applications
 author: robvet
-ms.date: 05/17/2020
+ms.date: 01/19/2021
 ---
 
 # Relational vs. NoSQL data
@@ -265,7 +265,7 @@ The Cloud Native Computing Foundation (CNCF) features several NewSQL database pr
 | YugabyteDB | An open source, high-performance, distributed SQL database. It supports low query latency, resilience against failures, and global data distribution. YugabyteDB is PostgressSQL-compatible and handles scale-out RDBMS and internet-scale OLTP workloads. The product also supports NoSQL and is compatible with Cassandra. |
 |Vitess | Vitess is a database solution for deploying, scaling, and managing large clusters of MySQL instances. It can run in a public or private cloud architecture. Vitess combines and extends many important MySQL features and features both vertical and horizontal sharding support. Originated by YouTube, Vitess has been serving all YouTube database traffic since 2011. |
 
-The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other, Vitess, is a database clustering system that horizontally scales large clusters of MySQL instances.
+The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET support. The other, Vitess, is a database clustering system that horizontally scales large clusters of MySQL instances.
 
 A key design goal for NewSQL databases is to work natively in Kubernetes, taking advantage of the platform's resiliency and scalability.
 

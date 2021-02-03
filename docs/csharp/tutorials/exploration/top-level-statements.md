@@ -78,7 +78,7 @@ System.String[]
 
 To write the question to the console, you'll need to enumerate the arguments and separate them with a space. Replace the `WriteLine` call with the following code:
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="EchoInput":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="EchoInput":::
 
 Now, when you run the program, it will correctly display the question as a string of arguments.
 
@@ -86,11 +86,11 @@ Now, when you run the program, it will correctly display the question as a strin
 
 After echoing the question, you can add the code to generate the random answer. Start by adding an array of possible answers:
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="Answers":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="Answers":::
 
 This array has 12 answers that are affirmative, six that are non-committal, and six that are negative. Next, add the following code to generate and display a random answer from the array:
 
-:::code language="csharp" source="snippets/top-level-statements/Program.cs" ID="GenerateAnswer":::
+:::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="GenerateAnswer":::
 
 You can run the application again to see the results. You should see something like the following output:
 

@@ -19,7 +19,7 @@ Consider, for example, a Twitter account that triggers an event whenever a user 
 
 **Figure 8-1**. Conceptual architecture of a Dapr resource binding.
 
-At first glance, resource binding behavior may appear similar to the [Publish/Subscribe pattern](publish-subscribe-buildingblock.md) described earlier in this book. While they share similarities, there are differences. Publish/subscribe focuses on asynchronous communication between Dapr services. Resource binding has a much wider scope. It focuses on system interoperability across software platforms. Exchanging information between disparate applications, datastores, and services outside your microservice application.
+At first glance, resource binding behavior may appear similar to the [Publish/Subscribe pattern](publish-subscribe.md) described earlier in this book. While they share similarities, there are differences. Publish/subscribe focuses on asynchronous communication between Dapr services. Resource binding has a much wider scope. It focuses on system interoperability across software platforms. Exchanging information between disparate applications, datastores, and services outside your microservice application.
 
 ## How it works
 
@@ -186,7 +186,7 @@ spec:
     value: "@every 30m"
 ```
 
-In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` endpoint every 30 minutes. There are several patterns available for specifying the `schedule` value. For more information, see the [Cron binding documentation](ocs.dapr.io/operations/components/setup-bindings/supported-bindings/cron/).
+In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` endpoint every 30 minutes. There are several patterns available for specifying the `schedule` value. For more information, see the [Cron binding documentation](docs.dapr.io/operations/components/setup-bindings/supported-bindings/cron/).
 
 ## Reference architecture: eShopOnDapr
 
@@ -208,7 +208,7 @@ auth:
   secretStore: eshop-secretstore
 ```
 
-This configuration uses the [Twilio SendGrid](https://github.com/dapr/components-contrib/tree/master/bindings/twilio) binding component. Note how the API key for connecting to the service consumes a Dapr secret reference. This approach keeps secrets outside of the configuration file. Read the [Dapr secrets management chapter](secrets-buildingblocks.md) to learn more about Dapr secrets.
+This configuration uses the [Twilio SendGrid](https://github.com/dapr/components-contrib/tree/master/bindings/twilio) binding component. Note how the API key for connecting to the service consumes a Dapr secret reference. This approach keeps secrets outside of the configuration file. Read the [Dapr secrets management chapter](secrets.md) to learn more about Dapr secrets.
 
 The binding configuration specifies a binding component that can be invoked using the `/sendmail` endpoint on the Dapr sidecar. Here's a code snippet in which an email is sent whenever an order is started:
 
@@ -243,5 +243,5 @@ You implement a binding with a Dapr component. These components are contributed 
 [1]: https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/ "Dapr documentation for resource bindings"
 
 >[!div class="step-by-step"]
->[Previous](publish-subscribe-buildingblock.md)
+>[Previous](publish-subscribe.md)
 >[Next](observability.md)

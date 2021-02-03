@@ -289,7 +289,7 @@ spec:
 
 The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets.md).
 
-The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the Actor building block. For more information on actors, see [chapter 11](actors.md).
+The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the Actor building block.
 
 ### Key prefix strategies
 

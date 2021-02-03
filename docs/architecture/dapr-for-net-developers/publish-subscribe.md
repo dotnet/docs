@@ -396,5 +396,5 @@ You can use the pub/sub building block natively over HTTP or by using one of the
 With Dapr, you can plug a supported message broker product into your application. You can then swap message brokers without requiring code changes to your application.
 
 > [!div class="step-by-step"]
-> [Previous](serviceinvocation.md)
-> [Next](bindings-buildingblock.md)
+> [Previous](service-invocation.md)
+> [Next](bindings.md)

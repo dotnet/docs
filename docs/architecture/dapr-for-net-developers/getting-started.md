@@ -28,7 +28,7 @@ Now that Dapr is installed, it's time to build your first Dapr application!
 
 ## Building your first Dapr application
 
-You'll start by building a simple .NET Console application that consumes the [Dapr state management](./ch5-state-management.md) building block.
+You'll start by building a simple .NET Console application that consumes the [Dapr state management](state-management.md) building block.
 
 ### Create the application
 
@@ -196,7 +196,7 @@ spec:
 
 In the first example, you created a simple .NET console application that ran side-by-side with a Dapr sidecar. Modern distributed applications, however, often consist of many moving parts. They can simultaneously run independent microservices. These modern applications are typically containerized and require container orchestration tools such as Docker Compose or Kubernetes.
 
-In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](./ch6-service-invocation.md) building block to communicate between services. The solution will consist of a front-end web application that retrieves weather forecasts from a back-end web API. The front-end and back-end will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
+In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](service-invocation.md) building block to communicate between services. The solution will consist of a front-end web application that retrieves weather forecasts from a back-end web API. The front-end and back-end will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
 
 Make sure you've configured your local environment for Dapr and installed the [.NET Core 3 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/3.1) (instructions are available at the beginning of this chapter).
 
@@ -430,7 +430,7 @@ In the final part of this example, you'll add container support and run the solu
 
    Running locally with Docker Compose and Visual Studio 2019, you can set breakpoints and debug into the application. For production scenarios, it's recommended to host your application in Kubernetes. This book includes an accompanying reference application, [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr), that contains scripts to deploy to Kubernetes.
 
-   To learn more about the Dapr Service Invocation building block used in this walkthrough, refer to [chapter 6](./ch6-service-invocation.md).
+   To learn more about the Dapr Service Invocation building block used in this walkthrough, refer to [chapter 6](service-invocation.md).
 
 ## Summary
 

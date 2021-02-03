@@ -465,7 +465,7 @@ The `allowedSecrets` and `deniedSecrets` properties take precedence over the `de
 The eShopOnDapr reference application uses the secrets management building block for two secrets:
 
 - The password for connecting to the Redis cache.
-- The API-key for using the Twilio Sendgrid API. The application uses Twillio to send emails using a Dapr output binding (as described in the [Bindings building block chapter](bindings-buildingblock.md)).
+- The API-key for using the Twilio Sendgrid API. The application uses Twillio to send emails using a Dapr output binding (as described in the [Bindings building block chapter](bindings.md)).
 
 When running the application using Docker Compose, the **local file** secrets store is used. The component configuration file `eshop-secretstore.yaml` is found in the `dapr/components` folder of the eShopOnDapr repository:
 
@@ -550,4 +550,4 @@ You can use secret scopes to control access to specific secrets.
 
 >[!div class="step-by-step"]
 >[Previous](observability.md)
->[Next](actors.md)
+>[Next](index.md)

@@ -483,7 +483,7 @@ Observability in accompanying eShopOnDapr reference application consists of seve
 
 ### Custom health dashboard
 
-The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives insight into the health of the eShop services. This dashboard doesn't use the Dapr health API but uses the built-in [health checks mechanism](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-3.1) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services. For example, a service that uses a database also provides the health status of this database as shown in Figure 9-9:
+The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives insight into the health of the eShop services. This dashboard doesn't use the Dapr health API but uses the built-in [health checks mechanism](https://docs.microsoft.com/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-3.1) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services. For example, a service that uses a database also provides the health status of this database as shown in Figure 9-9:
 
 ![eShopOnDapr custom health dashboard](media/observability/eshop-health-dashboard.png)
 
@@ -497,7 +497,7 @@ The eShopOnDapr application services emit structured logging using the [SeriLog]
 
 ### Application Insights
 
-eShopOnDapr services also send telemetry directly to Azure Application Insights using the Microsoft Application Insights SDK for .NET Core. For more information, see [Azure Application Insights for ASP.NET Core applications](https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core) in the Microsoft docs.
+eShopOnDapr services also send telemetry directly to Azure Application Insights using the Microsoft Application Insights SDK for .NET Core. For more information, see [Azure Application Insights for ASP.NET Core applications](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-core) in the Microsoft docs.
 
 ## Summary
 
@@ -517,7 +517,7 @@ Dapr offers a dashboard that presents information about the Dapr services and co
 
 ## References
 
-- [Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview/)
+- [Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview/)
 - [Open Telemetry](https://opentelemetry.io/)
 - [Zipkin](https://zipkin.io/)
 - [W3C Trace Context](https://www.w3.org/TR/trace-context/)

@@ -110,7 +110,7 @@ Consider these improvements:
 
 // Extra content
 
-   The earlier code required developers to construct a message handler pump for each broker. 
+   The earlier code required developers to construct a message handler pump for each broker.
 
    Part of the reason for this reduction is the integration with ASP.NET Core for subscribing to events. Instead of having to write a separate message handler loop for each message broker, we can use attributes on ordinary ASP.NET Core Controllers to subscribe to messages. This has the added benefit of having a single place where all external commands/events come in, whether it's via HTTP/REST, gRPC, or messaging. With Dapr, we now support many more pub/sub platforms in addition to Azure Service Bus and RabbitMQ, such as Redis Streams, Apache Kafka, and NATS.
 

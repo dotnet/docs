@@ -50,13 +50,13 @@ Retrieving secrets directly is covered first. Referencing a secret from a Dapr c
 The application interacts with a Dapr sidecar service when using the secrets building block. The sidecar exposes the secrets API. The API can be called with either HTTP or gRPC using the following URL:
 
 ```http
-http://localhost:<daprPort>/v1.0/secrets/<secret-store-name>/<name>?<metadata>
+http://localhost:<dapr-port>/v1.0/secrets/<store-name>/<name>?<metadata>
 ```
 
 The URL contains the following segments:
 
-- `<daprPort>` specifies the port number upon which the Dapr sidecar is listening.
-- `<secret-store-name>` specifies the name of the Dapr secret store.
+- `<dapr-port>` specifies the port number upon which the Dapr sidecar is listening.
+- `<store-name>` specifies the name of the Dapr secret store.
 - `<name>` specifies  the name of the secret to retrieve.
 - `<metadata>` provides additional information for the secret. This segment is optional and metadata properties differ per secret store. For more information on metadata properties, see the [secrets API reference]([Secrets API reference | Dapr Docs](https://docs.dapr.io/reference/api/secrets_api/)).
 
@@ -92,7 +92,7 @@ GET http://localhost:3500/v1.0/secrets/secret-store/interestRates?metadata.versi
 The Dapr secrets API also offers an operation to retrieve all the secrets the application has access to:
 
 ```http
-http://localhost:<daprPort>/v1.0/secrets/<secret-store-name>/bulk
+http://localhost:<dapr-port>/v1.0/secrets/<store-name>/bulk
 ```
 
 ## Using the Dapr .NET SDK

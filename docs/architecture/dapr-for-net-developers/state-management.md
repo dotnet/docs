@@ -36,11 +36,11 @@ The application interacts with a Dapr sidecar to store and retrieve key/value da
 The API can be called with either HTTP or gRPC. Use the following URL to call the HTTP API:
 
 ```http
-http://localhost:<dapr-port>/v1.0/state/<state-store-name>/
+http://localhost:<dapr-port>/v1.0/state/<store-name>/
 ```
 
 - `<dapr-port>`: the HTTP port that Dapr listens on.
-- `<state-store-name>`: the name of the state store component to use.
+- `<store-name>`: the name of the state store component to use.
 
 Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr state store component named `statestore`.
 
@@ -101,7 +101,7 @@ Distributed applications must handle the **P** property. As services communicate
 The consistency level for a state operation is specified by attaching a *consistency hint* to the operation. The following *curl* command writes a `Hello=World` key/value pair to a state store using a strong consistency hint:
 
 ```console
-curl -X POST http://localhost:3500/v1.0/state/<store_name> \
+curl -X POST http://localhost:3500/v1.0/state/<store-name> \
   -H "Content-Type: application/json" \
   -d '[
         {
@@ -132,7 +132,7 @@ Dapr can write *multi-item changes* to a data store as a single operation implem
 In the example below, a multi-item operation is sent to the state store in a single transaction. All operations must succeed for the transaction to commit. If one or more of the operations fail, the entire transaction rolls back.
 
 ```console
-curl -X POST http://localhost:3500/v1.0/state/<store_name>/transaction \
+curl -X POST http://localhost:3500/v1.0/state/<store-name>/transaction \
   -H "Content-Type: application/json" \
   -d '{
         "operations": [
@@ -152,7 +152,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name>/transaction \
 For data stores that don't support transactions, multiple keys can still be sent as a single request. The following example shows a **bulk** write operation:
 
 ```console
-curl -X POST http://localhost:3500/v1.0/state/<store_name> \
+curl -X POST http://localhost:3500/v1.0/state/<store-name> \
   -H "Content-Type: application/json" \
   -d '[
         { "key": "Key1", "value": "Value1" },

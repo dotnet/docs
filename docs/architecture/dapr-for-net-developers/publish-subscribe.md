@@ -49,13 +49,13 @@ The Dapr publish & subscribe building block can be invoked in many ways.
 At the lowest level, any programming platform can invoke the building block over HTTP or gRPC using the **Dapr native API**. To publish a message, you make the following API call:
 
 ``` http
-http://localhost:<daprPort>/v1.0/publish/<pubsubname>/<topic>
+http://localhost:<dapr-port>/v1.0/publish/<pub-sub-name>/<topic>
 ```
 
 There are several Dapr specific URL segments in the above call:
 
-- `<daprPort>` provides the port number upon which the Dapr sidecar is listening.
-- `<pubsubname>` provides the name of the selected Dapr pub/sub component.
+- `<dapr-port>` provides the port number upon which the Dapr sidecar is listening.
+- `<pub-sub-name>` provides the name of the selected Dapr pub/sub component.
 - `<topic>` provides the name of the topic to which the message is published.
 
 Using the *curl* command-line tool to publish a message, you can try it out:
@@ -105,7 +105,7 @@ From the previous figure, note the flow:
 
 1. The Dapr sidecar for Service B calls the `/dapr/subscribe` endpoint from Service B (the consumer). The service responds with the subscriptions it wants to create.
 2. The Dapr sidecar for Service B creates the requested subscriptions on the message broker.
-3. Service A publishes a message at the `/v1.0/publish/<pubsubname>/<topic>` endpoint on the Dapr Service A sidecar.
+3. Service A publishes a message at the `/v1.0/publish/<pub-sub-name>/<topic>` endpoint on the Dapr Service A sidecar.
 4. The Service A sidecar publishes the message to the message broker.
 5. The message broker sends a copy of the message to the Service B sidecar.
 6. The Service B sidecar calls the endpoint corresponding to the subscription (in this case `/orders`) on Service B.

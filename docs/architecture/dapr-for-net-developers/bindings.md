@@ -23,7 +23,7 @@ At first glance, resource binding behavior may appear similar to the [Publish/Su
 
 ## How it works
 
-Dapr resource binding starts with a component configuration file. This yaml file describes the type of resource to which you'll bind along with its configuration settings. Once configured, your service can receive events from the resource or trigger events on it.
+Dapr resource binding starts with a component configuration file. This YAML file describes the type of resource to which you'll bind along with its configuration settings. Once configured, your service can receive events from the resource or trigger events on it.
 
 > [!NOTE]
 > Binding configurations are presented in detail later in the *Components* section.
@@ -76,7 +76,7 @@ If the operation should error, you would return the appropriate 400 or 500 level
 
 ### Output bindings
 
-Dapr also includes *output binding* capabilities. They enable your service to trigger an event that invokes an external resource. Again, you start by configuring a binding configuration yaml file that describes the output binding. Once in place, you trigger an event that invokes the bindings API on the Dapr sidecar of your application. Figure 8-3 shows the architecture of an output binding:
+Dapr also includes *output binding* capabilities. They enable your service to trigger an event that invokes an external resource. Again, you start by configuring a binding configuration YAML file that describes the output binding. Once in place, you trigger an event that invokes the bindings API on the Dapr sidecar of your application. Figure 8-3 shows the architecture of an output binding:
 
 ![Output binding](media/bindings-output.png)
 
@@ -138,7 +138,7 @@ Under the hood, resource bindings are implemented with Dapr binding components. 
 > [!NOTE]
 > Dapr and all of its components are written in the [Golang](https://golang.org/) (Go) language. Go is considered a modern, cloud-native programming platform.
 
-You configure bindings using a yaml configuration file. Here's an example configuration for the Twitter binding:
+You configure bindings using a YAML configuration file. Here's an example configuration for the Twitter binding:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1

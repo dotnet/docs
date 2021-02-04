@@ -8,6 +8,8 @@ api_location:
 api_type:
   - "DLLExport"
 ms.assetid: d468325a-21c5-43ce-8567-84e342b22308
+topic_type: 
+  - "apiref"
 ---
 # CertTimestampAuthenticodeLicense Function
 

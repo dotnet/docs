@@ -8,6 +8,8 @@ api_location:
 api_type:
   - "DLLExport"
 ms.assetid: fb626b41-b888-4625-84c3-2c02b5e3866f
+topic_type: 
+  - "apiref"
 ---
 # \_AxlGetIssuerPublicKeyHash Function
 

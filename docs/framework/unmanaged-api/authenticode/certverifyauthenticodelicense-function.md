@@ -8,6 +8,8 @@ api_location:
 api_type:
   - "DLLExport"
 ms.assetid: 00118de7-33c6-41c4-8e1f-5d5e35e0da83
+topic_type: 
+  - "apiref"
 ---
 # CertVerifyAuthenticodeLicense Function
 

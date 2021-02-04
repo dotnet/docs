@@ -8,6 +8,8 @@ api_location:
 api_type:
   - "DLLExport"
 ms.assetid: 2d92a746-d68c-4f53-a16e-727f071a2d80
+topic_type: 
+  - "apiref"
 ---
 # \_AxlPublicKeyBlobToPublicKeyToken Function
 

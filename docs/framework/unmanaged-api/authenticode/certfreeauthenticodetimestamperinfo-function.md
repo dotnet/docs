@@ -8,6 +8,8 @@ api_location:
 api_type:
   - "DLLExport"
 ms.assetid: 3eb14c49-68c2-4516-ac89-e5bd7473831c
+topic_type: 
+  - "apiref"
 ---
 # CertFreeAuthenticodeTimestamperInfo Function
 

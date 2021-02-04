@@ -8,6 +8,8 @@ api_location:
 api_type:
   - "DLLExport"
 ms.assetid: d60f19fe-7bec-47ba-b60e-ba9ce66abf8c
+topic_type: 
+  - "apiref"
 ---
 # \_AxlRSAKeyValueToPublicKeyToken function
 

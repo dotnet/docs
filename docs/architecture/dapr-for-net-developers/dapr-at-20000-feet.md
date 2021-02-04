@@ -34,7 +34,7 @@ In the top row of the figure, note how Dapr provides language-specific SDKs for 
 
 While language-specific SDKs enhance the developer experience, Dapr is platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. Any programming platform can call Dapr via its native HTTP and gRPC APIs.  
 
-The blue boxes across the center of the figure represent the DAPR building blocks. Each abstracts a distributed application capability that your application can consume.
+The blue boxes across the center of the figure represent the Dapr building blocks. Each abstracts a distributed application capability that your application can consume.
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
 

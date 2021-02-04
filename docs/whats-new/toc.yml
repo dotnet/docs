@@ -3,8 +3,10 @@ items:
   href: index.yml
   expanded: true
   items:
-  - name: "January 2021"
-    href: 2021-01.md
+  - name: "2021"
+    items:
+    - name: January
+      href: 2021-01.md
   - name: "2020"
     items:
     - name: December

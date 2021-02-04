@@ -48,7 +48,7 @@ A modernized version of the eShop application accompanies this book. It's called
 
 2. The API Gateway abstracts the backend core microservices from the frontend client. It's implemented using [Envoy](https://www.envoyproxy.io/), a high performant, open-source service proxy. Envoy routes  incoming requests to various back-end microservices. Most requests are simple CRUD operations (for example, get the list of brands from the catalog) and handled by a direct call to a single back-end microservice.
 
-3. Other requests from the api gateway are logically more complex and require multiple microservices to work together. For these cases, eShopOnDapr implements an [aggregator microservice](https://docs.microsoft.com/dotnet/architecture/cloud-native/service-to-service-communication#service-aggregator-pattern) that orchestrates a workflow across microservices required for the operation.
+3. Other requests from the api gateway are logically more complex and require multiple microservices to work together. For these cases, eShopOnDapr implements an [aggregator microservice](../cloud-native/service-to-service-communication#service-aggregator-pattern) that orchestrates a workflow across microservices required for the operation.
 
 4. The set of core backend microservices includes functionality required for an online store. Each microservice is self-contained and independent of the others. Note how each microservice isolates a specific *business capability*:
 
@@ -58,7 +58,7 @@ A modernized version of the eShop application accompanies this book. It's called
       - The Ordering microservice handles all aspects of placing and managing orders.
       - The Payment microservice transacts the customer's payment.
 
-   Each service has its own persistent storage. Adhering to microservice [best practices](https://docs.microsoft.com/dotnet/architecture/cloud-native/distributed-data#database-per-microservice-why), there's not a shared datastore with which all services interact.
+   Each service has its own persistent storage. Adhering to microservice [best practices](../cloud-native/distributed-data#database-per-microservice-why), there's not a shared datastore with which all services interact.
 
    The design of each microservice is based on its individual requirements. The simple services only require basic CRUD access to their underlying data stores. Advanced services, like Ordering, use a  Domain-Driven Design approach to manage business complexity. If necessary, services could also be built with different technology stacks: .NET Core, Java, Go, NodeJS, and more.
 

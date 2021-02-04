@@ -228,7 +228,7 @@ In the example above, DaprClient serializes the given `order` object using [Prot
 
 ## Reference case: eShopOnDapr
 
-The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture from Microsoft used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](https://docs.microsoft.com/dotnet/architecture/cloud-native/service-to-service-communication#service-aggregator-pattern) and core backend services. Figure 6-2 show the architecture:
+The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture from Microsoft used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](../cloud-native/service-to-service-communication#service-aggregator-pattern) and core backend services. Figure 6-2 show the architecture:
 
 ![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshop-on-containers.png)
 

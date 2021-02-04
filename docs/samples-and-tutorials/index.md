@@ -28,7 +28,7 @@ This tutorial shows how to create and run a .NET console application by using Vi
 
 This tutorial shows how to write libraries for .NET using Visual Studio Code and the .NET CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET CLI.
 
-For moree .NET tutorials, see [Learn .NET and the .NET SDK tools](../core/tutorials/index.md)
+For more .NET tutorials, see [Learn .NET and the .NET SDK tools](../core/tutorials/index.md).
 
 ## ASP.NET Core
 

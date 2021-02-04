@@ -217,10 +217,10 @@ namespace CS_lazy
                 {
                     // Lazily initialize the orders without wrapping them in a Lazy<T>
                     LazyInitializer.EnsureInitialized(ref _orders[i], () =>
-                        {
-                            // Returns the value that will be placed in the ref parameter.
-                            return GetOrderForIndex(i);
-                        });
+                    {
+                        // Returns the value that will be placed in the ref parameter.
+                        return GetOrderForIndex(i);
+                    });
                 }
             }
             //</snippet10>

@@ -126,6 +126,7 @@ Perhaps you start with Azure Redis Cache as your state store. You specify it wit
    namespace: default
  spec:
    type: state.redis
+   version: v1
    metadata:
    - name: redisHost
      value: <HOST>

@@ -148,6 +148,7 @@ metadata:
   namespace: default
 spec:
   type: bindings.twitter
+  version: v1
   metadata:
   - name: consumerKey
     value: "****" # twitter api consumer key, required
@@ -181,6 +182,7 @@ metadata:
   namespace: default
 spec:
   type: bindings.cron
+  version: v1
   metadata:
   - name: schedule
     value: "@every 30m"
@@ -200,6 +202,7 @@ metadata:
   namespace: default
 spec:
   type: bindings.twilio.sendgrid
+  version: v1
   metadata:
   - name: apiKey
     secretKeyRef:

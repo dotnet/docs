@@ -228,6 +228,7 @@ metadata:
   name: pubsub-rq
 spec:
   type: pubsub.rabbitmq
+  version: v1
   metadata:
   - name: host
     value: "amqp://localhost:5672"
@@ -376,6 +377,7 @@ metadata:
   namespace: default
 spec:
   type: pubsub.nats
+  version: v1
   metadata:
   - name: natsURL
     value: nats://demo.nats.io:4222

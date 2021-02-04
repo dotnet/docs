@@ -175,7 +175,7 @@ metadata:
   namespace: [namespace]
 spec:
   type: secretstores.[secret store type]
-  version: v1
+  version: [component version]
   metadata:
   - name: [property name]
     value: [property value]
@@ -195,6 +195,7 @@ metadata:
   namespace: eshop
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -277,6 +278,7 @@ metadata:
   namespace: eshop
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -310,6 +312,7 @@ metadata:
   namespace: eshop
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: redis:6379
@@ -477,6 +480,7 @@ metadata:
   namespace: default
 spec:
   type: secretstores.local.file
+  version: v1
   metadata:
   - name: secretsFile
     value: ./components/eshop-secretstore.json
@@ -522,6 +526,7 @@ metadata:
   namespace: default
 spec:
   type: pubsub.redis
+  version: v1
   metadata:
   - name: redisHost
     value: redis:6379

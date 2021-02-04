@@ -369,7 +369,7 @@ public class RedisBasketRepository : IBasketRepository
 }
 ```
 
-This code uses the third party `StackExchange.Redis` NuGet package. The following steps are required to load the shopping basket for a given customer:
+This code uses the third-party `StackExchange.Redis` NuGet package. The following steps are required to load the shopping basket for a given customer:
 
 1. Inject a `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the `Startup.cs` file:
 
@@ -451,7 +451,7 @@ The .NET SDK provides language-specific support for .NET Core and ASP.NET Core. 
 In the eShopOnDapr reference application, the benefits to moving to Dapr state management are clear:
 
 1. The new implementation uses fewer lines of code.
-1. It abstracts away the complexity of the third party `StackExchange.Redis` API.
+1. It abstracts away the complexity of the third-party `StackExchange.Redis` API.
 1. Replacing the underlying Redis cache with a different type of data store now only requires changes to the state store configuration file.
 
 ### References

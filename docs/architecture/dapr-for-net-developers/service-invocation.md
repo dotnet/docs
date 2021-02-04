@@ -283,7 +283,7 @@ clusters:
     port_value: 3500
 ```
 
-The Envoy routes configuration is updated to rewrite incoming requests as calls to the Dapr sidecar (pay close attention to the `prefix_rewrite` key-value pair):
+The Envoy routes configuration is updated to rewrite incoming requests as calls to the Dapr sidecar (pay close attention to the `prefix_rewrite` key/value pair):
 
 ``` yaml
 - name: "c-short"

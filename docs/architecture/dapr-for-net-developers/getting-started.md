@@ -107,7 +107,7 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
 1. The Dapr CLI `run` command starts the application. It invokes the underlying Dapr runtime and enables both the application and Dapr sidecar to run together. If you omit the `app-id`, Dapr will generate a unique name for the application. The final segment of the command, `dotnet run`, instructs the Dapr runtime to run the .NET core application.
 
    > [!IMPORTANT]
-   > Care must be taken to always pass an explicit `app-id` parameter when consuming the state management building block. The block uses the application id value as a *prefix* for its state key for each key-value pair. If the application id changes, you can no longer access the previous stored state.
+   > Care must be taken to always pass an explicit `app-id` parameter when consuming the state management building block. The block uses the application id value as a *prefix* for its state key for each key/value pair. If the application id changes, you can no longer access the previous stored state.
 
    Now run the application with the following command:
 

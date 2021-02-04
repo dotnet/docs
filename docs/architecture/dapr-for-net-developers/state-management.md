@@ -1,6 +1,6 @@
 ---
 title: The Dapr state management building block
-description: A description of the state management building-block, its features, benefits, and how to apply it.
+description: A description of the state management building block, its features, benefits, and how to apply it.
 author: sanderm
 ms.date: 01/25/2021
 ms.reviewer: robvet
@@ -24,7 +24,7 @@ Tracking state in a distributed application can be challenging. For example:
 - Multiple users may update data at the same time, requiring  conflict resolution.
 - Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that  occur while interacting with the data store.
 
-The Dapr state sanagement building block addresses these challenges. It streamlines tracking state without dependencies or a learning curve on third-party storage SDKs.
+The Dapr state management building block addresses these challenges. It streamlines tracking state without dependencies or a learning curve on third-party storage SDKs.
 
 > [!IMPORTANT]
 > Dapr state management offers a [key/value](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. The feature doesn't support relational or graph data storage.
@@ -289,7 +289,7 @@ spec:
 
 The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets.md).
 
-The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the Actor building block.
+The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the actors building block.
 
 ### Key prefix strategies
 

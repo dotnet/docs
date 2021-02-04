@@ -1,12 +1,12 @@
 ---
-title: Dapr Observability
-description: A description of the observability features of Dapr and how to apply them
+title: The Dapr observability building block
+description: A description of the observability building block, its features, benefits, and how to apply it
 author: edwinvw
 ms.date: 02/01/2021
 ms.reviewer: robvet
 ---
 
-# Dapr observability
+# The Dapr observability building block
 
 Modern distributed systems are complex. You start with small, loosely coupled, independently deployable services. These services cross process and server boundaries. They then consume different kinds of infrastructure backing services (databases, message brokers, key vaults). Finally, these disparate pieces compose together to form an application.
 

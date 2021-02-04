@@ -1,6 +1,6 @@
 ---
 title: Getting started with Dapr
-description: This chapter will guide you through preparing your local development environment and building your first .NET applications with Dapr.
+description: A guide for preparing your local development environment and building your first .NET applications with Dapr.
 author: amolenk 
 ms.date: 02/01/2021
 ---
@@ -434,7 +434,7 @@ In the final part of this example, you'll add container support and run the solu
 
    Running locally with Docker Compose and Visual Studio 2019, you can set breakpoints and debug into the application. For production scenarios, it's recommended to host your application in Kubernetes. This book includes an accompanying reference application, [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr), that contains scripts to deploy to Kubernetes.
 
-   To learn more about the Dapr Service Invocation building block used in this walkthrough, refer to [chapter 6](service-invocation.md).
+   To learn more about the Dapr service invocation building block used in this walkthrough, refer to [chapter 6](service-invocation.md).
 
 ## Summary
 

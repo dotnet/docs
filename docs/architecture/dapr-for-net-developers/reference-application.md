@@ -1,11 +1,11 @@
 ---
-title: Introduction to eShopOnDapr
-description: An overview of the eShop .NET Core sample application 
-author: amolenk 
+title: Introduction to the eShopOnDapr reference application
+description: An overview of the eShopOnDapr reference application and its history.
+author: amolenk
 ms.date: 02/04/2021
 ---
 
-# Dapr Reference Application
+# Dapr reference application
 
 Earlier in the book, you've learned about the foundational benefits of Dapr. You saw how Dapr can help your team construct distributed applications while reducing architectural and operational complexity. Along the way, you've had the opportunity to build some small Dapr apps. Now, it's time to explore an end-to-end microservice application that demonstrates  Dapr building blocks and components.
 
@@ -66,7 +66,7 @@ A modernized version of the eShop application accompanies this book. It's called
 
 While Dapr is used throughout the eShopOn Dapr reference application, the following table highlight specific implementation examples:
 
-|  Dapr Building Block | eShop Microservice | Target Class | Explanation
+|  Dapr building block | eShop microservice | Target class | Explanation
 | :-------- | :-------- | :-------- | :-------- |
 | State Management | | | Chapter 5 |
 | Service-to-service invocation | Api Gateway | BasketService | Chapter 6 |
@@ -85,7 +85,7 @@ If you could overlay the updated eShopOnDapr over the original eShopOnContainers
 Consider these improvements:
 
 - Service Invocation
-  - The original eShopOnContainers communicates across services with a mix of HTTP/REST and gRPC. eShopOnDapr replaces these calls with the Dapr Service Invocation building block. This solution provides a standardized approach for cross-service communication. Simplified gRPC support is available for any call while Dapr sidecars automatically communicate with gRPC. Sidecar-to-sidecar communication performance is especially critical as it crosses service boundaries. Other benefits include direct support for [mTLS](https://blog.cloudflare.com/introducing-tls-client-auth/) and automatic retries.
+  - The original eShopOnContainers communicates across services with a mix of HTTP/REST and gRPC. eShopOnDapr replaces these calls with the Dapr service invocation building block. This solution provides a standardized approach for cross-service communication. Simplified gRPC support is available for any call while Dapr sidecars automatically communicate with gRPC. Sidecar-to-sidecar communication performance is especially critical as it crosses service boundaries. Other benefits include direct support for [mTLS](https://blog.cloudflare.com/introducing-tls-client-auth/) and automatic retries.
 
 - Publish/Subscribe
   - eShopOnContainer includes extensive implementations for both the Azure Service Bus and Rabbit MQ. Developers used Service Bus for production and RabbitMQ for local development and testing. An `IEventBus` abstraction layer was created to enable swapping these message brokers. Implementing this layer required approximately *700 lines of highly complex code*.
@@ -114,7 +114,7 @@ Consider these improvements:
 
    Part of the reason for this reduction is the integration with ASP.NET Core for subscribing to events. Instead of having to write a separate message handler loop for each message broker, we can use attributes on ordinary ASP.NET Core Controllers to subscribe to messages. This has the added benefit of having a single place where all external commands/events come in, whether it's via HTTP/REST, gRPC, or messaging. With Dapr, we now support many more pub/sub platforms in addition to Azure Service Bus and RabbitMQ, such as Redis Streams, Apache Kafka, and NATS.
 
-- By using the Service Invocation and Publish & Subscribe building blocks, we've gained rich distributed tracing for both direct and pub/sub calls between services without having to write any code.
+- By using the service invocation and publish & subscribe building blocks, we've gained rich distributed tracing for both direct and pub/sub calls between services without having to write any code.
 
 ## Summary
 

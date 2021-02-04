@@ -1,6 +1,6 @@
 ---
 title: Dapr for .NET Developers
-description: A guide for to understand and leverage the full power of Microsoft's open source Distributed Application Runtime.
+description: A guide for .NET developers to understand and leverage the full power of Microsoft's open source Distributed Application Runtime.
 author: robvet
 ms.date: 09/05/2020
 ---

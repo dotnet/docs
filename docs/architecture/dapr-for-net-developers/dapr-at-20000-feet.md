@@ -1,6 +1,6 @@
 ---
 title: Dapr at 20,000 feet
-description: A high-level overview of what dapr is, what it does, and how it works
+description: A high-level overview of what dapr is, what it does, and how it works.
 author: robvet 
 ms.date: 11/23/2020
 ---
@@ -54,7 +54,7 @@ A building block encapsulates a distributed application capability. You can acce
 
 The following table describes the services provided by each block.
 
-| Building Block | Description |
+| Building block | Description |
 |----------------|-------------|
 | [Service-to-service invocation](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Invoke direct, secure service-to-service calls using platform agnostic protocols and well-known endpoints. |
 | [Publish and subscribe](https://github.com/dapr/components-contrib/tree/master/state) | Implement secure, scalable pub/sub messaging between services. |
@@ -146,7 +146,7 @@ At the time of this writing, the following component types are provided by Dapr:
 
 | Component | Description |
 |-----------|-------------|
-| [Service discovery](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Used by the Service Invocation building block to integrate with the hosting environment to provide service-to-service discovery. |
+| [Service discovery](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Used by the service invocation building block to integrate with the hosting environment to provide service-to-service discovery. |
 | [State](https://github.com/dapr/components-contrib/tree/master/state) | Provides a uniform interface to interact with a wide variety of state store implementations. |
 | [Pub/sub](https://github.com/dapr/components-contrib/tree/master/pubsub) | Provides a uniform interface to interact with a wide variety of message bus implementations. |
 | [Bindings](https://github.com/dapr/components-contrib/tree/master/bindings) | Provides a uniform interface to trigger application events from external systems and invoke external systems with optional data payloads. |

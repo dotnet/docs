@@ -76,7 +76,7 @@ The following example overloads the `Deconstruct` method to return various combi
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]
 
-Because you can overload the `Deconstruct` method to reflect groups of data that are commonly extracted from an object, you should be careful to define `Deconstruct` methods with signatures that are distinctive and unambiguous. Multiple `Deconstruct` methods must have different "arity", or a different number of arguments. Even though method overload resolution can distinguish methods by parameter type, that is not allowed for `Deconstruct` methods. They must have a different number of arguments.
+Because you can overload the `Deconstruct` method to reflect groups of data that are commonly extracted from an object, you must be careful to define `Deconstruct` methods with different numbers of parameters, or "arity". `Deconstruct` methods with the same number of parameters cannot be distinguished during overload resolution.
 
 ## Deconstructing a user-defined type with discards
 

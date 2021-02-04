@@ -2,7 +2,7 @@
 title: The Dapr service invocation building block
 description: A deep dive into the Dapr service invocation building block and how to apply it
 author: amolenk
-ms.date: 11/28/2020
+ms.date: 02/01/2021
 ---
 
 # The Dapr service invocation building block
@@ -15,7 +15,6 @@ Making calls between services in a distributed application may appear easy, but 
 
 - Where the other services are located.
 - How to call a service securely, given the service address.
-- How to handle service call failure.
 - How to handle retries when short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur.
 
 Lastly, as distributed applications compose many different services, capturing insights across service call graphs are critical to diagnosing production issues.
@@ -26,7 +25,7 @@ The service invocation building block addresses these challenges by using a Dapr
 
 Let's start with an example. Consider two services, "Service A" and "Service B". Service A needs to call the `catalog/items` API on Service B. While Service A could take a dependency on Service B and make a direct call to it, Service A instead invokes the service invocation API on the Dapr sidecar. Figure 6-1 shows the operation.
 
-![How the Dapr service invocation works](./media/service-invocation/howitworks.png)
+![How the Dapr service invocation works](./media/service-invocation/how-it-works.png)
 
 **Figure 6-1**. How Dapr service invocation works.
 
@@ -57,110 +56,218 @@ Because the calls flow through sidecars, Dapr can inject some useful cross-cutti
 Any application can invoke a Dapr sidecar by using the native **invoke** API built into Dapr:
 
 ``` http
-http://localhost:<daprPort>/v1.0/invoke/<applicationid>/method/<methodname>
+http://localhost:<dapr-port>/v1.0/invoke/<application-id>/method/<method-name>
 ```
 
-> [!IMPORTANT]
-> The Dapr native APIs enable any application stack that supports HTTP or gRPC to use Dapr building blocks.
+- `<dapr-port>` the HTTP port that Dapr is listening on.
+- `<application-id>` application id of the service to call.
+- `<method-name>` name of the method to invoke on the remote service.
 
 In the following example, a *curl* call is made to the `catalog/items` 'GET' endpoint of `Service B`:
 
-``` curl
+``` console
 curl http://localhost:3500/v1.0/invoke/serviceb/method/catalog/items
 ```
+
+> [!NOTE]
+> The Dapr APIs enable any application stack that supports HTTP or gRPC to use Dapr building blocks. Therefore, the service invocation building block can act as a bridge between protocols. Services can communicate with each other using HTTP, gRPC or a combination of both.
 
 In the next section, you'll learn how to use the .NET SDK to simplify service invocation calls.
 
 ### Using the .NET SDK
 
-The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with an intuitive and language-specific way to interact with Dapr. The .NET `DaprClient` class can be used for most interactions.
+The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with an intuitive and language-specific way to interact with Dapr. The SDK offers developers three ways of making remote service invocation calls:
+
+1. Invoke HTTP services using HttpClient
+2. Invoke HTTP services using DaprClient
+3. Invoke gRPC services using DaprClient
+
+### Invoke HTTP services using HttpClient
+
+The preferred way to call an HTTP endpoint is to use Dapr's rich integration with `HttpClient`. The following example submits an order by calling the `order/submit` method of the `orderservice` application:
+
+```csharp
+var httpClient = DaprClient.CreateHttpClient();
+await httpClient.PostAsJsonAsync("http://orderservice/order/submit", order);
+```
+
+In the example, `DaprClient.CreateHttpClient` returns an `HttpClient` instance that is used to perform Dapr service invocation. The returned `HttpClient` uses a special Dapr message handler that rewrites URIs of outgoing requests. The host name is interpreted as the application id of the service to call. The rewritten request that's actually being called is:
+
+```http
+http://localhost:3500/v1/invoke/orderservice/method/order/submit
+```
+
+This example uses the default value for the Dapr HTTP endpoint, which is `localhost:3500`. If your sidecar is configured to use a different HTTP API port, you can configure the custom endpoint in the call to `DaprClient.CreateHttpClient`:
+
+```csharp
+var httpClient = DaprClient.CreateHttpClient(daprEndpoint = "localhost:4000");
+```
+
+You can also directly set the base address by specifying the application id. This makes it possible to use relative URIs when making a call:
+
+```csharp
+var httpClient = DaprClient.CreateHttpClient("orderservice");
+await httpClient.PostAsJsonAsync("/order/submit");
+```
+
+The `HttpClient` object is intended to be long-lived. A single `HttpClient` instance can be reused for the lifetime of the application. The next example demonstrates how an `OrderServiceClient` class reuses a Dapr `HttpClient` instance:  
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    // ...
+    services.AddSingleton<IOrderServiceClient, OrderServiceClient>(
+        _ => new OrderServiceClient(DaprClient.CreateInvokeHttpClient("orderservice")));
+}
+```
+
+In the example above, the `OrderServiceClient` is registered as a singleton with the ASP.NET Core dependency injection system. An implementation factory creates a new `HttpClient` instance by calling `DaprClient.CreateInvokeHttpClient`. It then uses the newly created `HttpClient` to instantiate the `OrderServiceClient` object. By registering the `OrderServiceClient` as a singleton, it will be reused for the lifetime of the application.
+
+The `OrderServiceClient` implementation has no Dapr-specific code. Even though Dapr service invocation is used under the hood, you can treat the Dapr HttpClient like any other HttpClient:
+
+```csharp
+public class OrderServiceClient : IOrderServiceClient
+{
+    private readonly HttpClient _httpClient;
+
+    public OrderServiceClient(HttpClient httpClient)
+    {
+        _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+    }
+
+    public async Task SubmitOrder(Order order)
+    {
+        var response = await _httpClient.PostAsJsonAsync("order/submit", order);
+        response.EnsureSuccessStatusCode();
+    }
+}
+```
+
+Using the HttpClient class with Dapr service invocation has many benefits:
+
+- HttpClient is a well known class that many developers already use in their code. Using HttpClient for Dapr service invocation allows developers to reuse their existing skills.
+- HttpClient supports advanced scenarios, such as custom headers, and full control over request and response messages.
+- In .NET 5, HttpClient supports automatic serialization and deserialization using System.Text.Json.
+- HttpClient integrates with many existing frameworks and libraries, such as [Refit](https://github.com/reactiveui/refit), [RestSharp](https://restsharp.dev/getting-started/getting-started.html#basic-usage), and [Polly](https://github.com/App-vNext/Polly).
+
+### Invoke HTTP services using DaprClient
+
+While HttpClient is the preferred way to invoke services using HTTP semantics, you can also use the `DaprClient.InvokeMethodAsync` family of methods.
 
 Calling `DaprClient.InvokeMethodAsync` invokes a method on a remote service. The following example submits an order by calling the `order/submit` method of the `orderservice` application:
 
 ``` csharp
-var result = await daprClient.InvokeMethodAsync<Order, SubmitOrderResult>(
-    "orderservice", "order/submit", order);
+var daprClient = new DaprClientBuilder().Build();
+try
+{
+    var confirmation = await daprClient.InvokeMethodAsync<Order, OrderConfirmation>("orderservice", "order/submit", order);
+}
+catch (InvocationException ex)
+{
+    // Handle error
+}
 ```
 
-The third argument, an `order` object, is serialized internally (with `System.Text.JsonSerializer`) and sent as the request payload. The .NET SDK takes care of the call to the sidecar. It also deserializes the response to a `SubmitOrderResult` object.
+The third argument, an `order` object, is serialized internally (with `System.Text.JsonSerializer`) and sent as the request payload. The .NET SDK takes care of the call to the sidecar. It also deserializes the response to an `OrderConfirmation` object. Because no HTTP method is specified, the request is executed as an HTTP POST.
 
-You can also use `InvokeMethodWithResponseAsync` or `InvokeMethodRawAsync` to invoke a remote method. These specialized methods provide you with direct access to response headers and raw response bytes, respectively.
+The next example demonstrates how you can make an HTTP GET request by specifying the `HttpMethod`:
 
-With the Dapr .NET SDK, your service can call another service via HTTP/REST or gRPC. For HTTP-based services, the `HttpInvocationOptions` class provides access to common HTTP properties:
-
-- Method: The HTTP method  to use, such as `Post`, `Get` or `Put`. The default value is `Post`.
-- ContentType: The content-type of the HTTP request, such as `application/json`.
-- QueryString: A collection of query string parameters.
-- Headers: A collection of HTTP request headers.
-
-As an example, consider a call to the following HTTP endpoint:
-
-``` http
-http://<serviceb-address>/catalog/items?pagesize=10
+```csharp
+var catalogItems = await daprClient.InvokeMethodAsync<IEnumerable<CatalogItem>>(HttpMethod.Get, "catalogservice", "items");
 ```
 
-Using the `HttpInvocationOptions` class, you can configure the segments of the HTTP request with a strongly typed C# class:
+For some scenarios, you may require more control over the request message. For example, when you need to specify request headers, or you want to use a custom serializer for the payload. The `DaprClient.CreateInvokeMethodRequest` method enables you to create an `HttpRequestMessage` that can be used to perform service invocation. The following example demonstrates how to add an HTTP authorization header to a request message:
 
-``` csharp
-var result = await daprClient.InvokeMethodAsync<IEnumerable<CatalogItem>>(
-    "serviceb",
-    "catalog/items",
-    new HttpInvocationOptions
-    {
-        Method = HttpMethod.Get,
-        QueryString = new Dictionary<string, string>
-        {
-            ["pagesize"] = "10"
-        }
-    });
+```csharp
+var request = daprClient.CreateInvokeMethodRequest("orderservice", "order/submit", order);
+request.Headers.Authorization = new AuthenticationHeaderValue("bearer", token);
 ```
+
+The `HttpRequestMessage` created by `DaprClient.CreateInvokeMethodRequest` has the following properties set:
+
+- Url = `http://localhost:3500/v1.0/invoke/orderservice/method/order/submit`
+- HttpMethod = POST
+- Content =  `JsonContent` object containing the JSON-serialized `order`
+
+Once you've got the request set up the way you want, you can use the `DaprClient.InvokeMethodAsync` method to send it:
+
+```csharp
+var orderConfirmation = await daprClient.InvokeMethodAsync<OrderConfirmation>(request);
+```
+
+The `DaprClient.InvokeMethodAsync` used in the example above deserializes the response to an `OrderConfirmation` object if the request is succesful. Alternatively, you can use `DaprClient.InvokeMethodWithResponseAsync` to get full access to the underlying `HttpResponseMessage`:
+
+```csharp
+var response = await daprClient.InvokeMethodWithResponseAsync(request);
+response.EnsureSuccessStatusCode();
+
+var orderConfirmation = response.Content.ReadFromJsonAsync<OrderConfirmation>();
+```
+
+> [!NOTE]
+> For service invocation calls using HTTP semantics, it's worth considering using the Dapr HttpClient integration presented in the previous section. Using HttpClient gives you additional benefits such as integration with existing frameworks and libraries.
+
+### Invoke gRPC services using DaprClient
+
+DaprClient provides a family of `InvokeMethodGrpcAsync` methods that are specifically well suited for calling gRPC endpoints. The main difference with the HTTP methods is the use of a Protobuf serializer instead of JSON. In the following example, the `submitOrder` method of the `orderservice` gRPC service is called to submit an order:
+
+```csharp
+var daprClient = new DaprClientBuilder().Build();
+try
+{
+    var confirmation = await daprClient.InvokeMethodGrpcAsync<Order, OrderConfirmation>("orderservice", "submitOrder", order);
+}
+catch (InvocationException ex)
+{
+    // Handle error
+}
+```
+
+In the example above, DaprClient serializes the given `order` object using [Protobuf](https://developers.google.com/protocol-buffers) and uses the result as the gRPC request body. Likewise, the response body is Protobuf deserialized and returned to the caller. Protobuf typically provides better performance than the JSON payloads used in HTTP service invocation.
 
 ## Reference case: eShopOnDapr
 
-The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture from Microsoft used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](https://docs.microsoft.com/dotnet/architecture/cloud-native/service-to-service-communication#service-aggregator-pattern) and core back-end services. Figure 6-2 show the architecture:
+The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture from Microsoft used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](https://docs.microsoft.com/dotnet/architecture/cloud-native/service-to-service-communication#service-aggregator-pattern) and core backend services. Figure 6-2 show the architecture:
 
-![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshoponcontainers.png)
+![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshop-on-containers.png)
 
 **Figure 6-2**. gRPC and HTTP/REST calls in eShopOnContainers.
 
 Note the steps from the previous figure:
 
-1. The front-end calls the [API Gateway](https://docs.microsoft.com/azure/architecture/microservices/design/gateway) using HTTP/REST.
+1. The frontend calls the [API gateway](https://docs.microsoft.com/azure/architecture/microservices/design/gateway) using HTTP/REST.
 
-1. The API Gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core back-end service using HTTP/REST.
+1. The API gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core backend service using HTTP/REST.
 
-1. The API Gateway forwards complex requests that involve coordinated calls to multiple back-end services to the Web Shopping Aggregator service.
+1. The API gateway forwards complex requests that involve coordinated calls to multiple backend services to the Web Shopping aggregator service.
 
-1. The aggregator service uses gRPC to call core back-end services.
+1. The aggregator service uses gRPC to call core backend services.
 
-In the recently updated eShopOnDapr implementation, Dapr sidecars are added to the services and API Gateway. Figure 6-3 show the updated architecture:
+In the recently updated eShopOnDapr implementation, Dapr sidecars are added to the services and API gateway. Figure 6-3 show the updated architecture:
 
-![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshopondapr.png)
+![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshop-on-dapr.png)
 
 **Figure 6-3**. Updated eShop architecture using Dapr.
 
 Note the updated steps from the previous figure:
 
-1. The front-end still uses HTTP/REST to call the API Gateway.
+1. The frontend still uses HTTP/REST to call the API gateway.
 
-1. The API Gateway forwards HTTP requests to its Dapr sidecar.
+1. The API gateway forwards HTTP requests to its Dapr sidecar.
 
-1. The API Gateway sidecar sends the request to the sidecar of the aggregator or back-end service.
+1. The API gateway sidecar sends the request to the sidecar of the aggregator or backend service.
 
-1. The aggregator service uses the Dapr .NET SDK to call back-end services through their sidecar architecture.
+1. The aggregator service uses the Dapr .NET SDK to call backend services through their sidecar architecture.
 
-Dapr implements calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST, you still get [gRPC performance benefits](https://docs.microsoft.com/dotnet/architecture/cloud-native/grpc#grpc-benefits) for calls between sidecars. Architecturally speaking, calls between sidecars have the highest opportunity for system performance gain. In real-world scenarios, sidecars often are located on different machines.
+Dapr implements calls between sidecars with gRPC. So even if you're invoking a remote service with HTTP/REST semantics, a part of the transport is still implemented using gRPC.
 
-> [!NOTE]
-> The service invocation building block acts as a bridge between protocols. Calls to and from the sidecars support gRPC or HTTP protocols. Therefore, services can communicate with each other using HTTP, gRPC or a combination of both.
-
-The eShopOnDapr reference application benefits from the Dapr service invocation building block. The features include service discovery, automatic mTLS, and observability.
+The eShopOnDapr reference application benefits from the Dapr service invocation building block. The benefits include service discovery, automatic mTLS, and observability.
 
 ### Forward HTTP requests using Envoy and Dapr
 
-Both the original and updated eShop application leverage the [Envoy proxy](https://www.envoyproxy.io/) as an API Gateway. Envoy is an open-source proxy and communication bus that is popular across modern distributed applications. Originating from Lyft, Envoy is owned and maintained by the [Cloud-Native Computing Foundation](https://www.cncf.io/).
+Both the original and updated eShop application leverage the [Envoy proxy](https://www.envoyproxy.io/) as an API gateway. Envoy is an open-source proxy and communication bus that is popular across modern distributed applications. Originating from Lyft, Envoy is owned and maintained by the [Cloud-Native Computing Foundation](https://www.cncf.io/).
 
-In the original eShopOnContainers implementation, the Envoy API gateway forwarded incoming HTTP requests directly to aggregator or back-end services. In the new eShopOnDapr, the Envoy proxy forwards the request to a Dapr sidecar. The sidecar provides service invocation, mTLS, and observability.
+In the original eShopOnContainers implementation, the Envoy API gateway forwarded incoming HTTP requests directly to aggregator or backend services. In the new eShopOnDapr, the Envoy proxy forwards the request to a Dapr sidecar. The sidecar provides service invocation, mTLS, and observability.
 
 Envoy is configured using a YAML definition file to control the proxy's behavior. To enable Envoy to forward HTTP requests to a Dapr sidecar container, a `dapr` cluster is added to the configuration. The cluster configuration contains a host that points to the HTTP port on which the Dapr sidecar is listening:
 
@@ -187,7 +294,7 @@ The Envoy routes configuration is updated to rewrite incoming requests as calls 
     cluster: dapr
 ```
 
-Consider a scenario where the front-end client wants to retrieve a list of catalog items. The Catalog API provides an endpoint for getting the catalog items:
+Consider a scenario where the frontend client wants to retrieve a list of catalog items. The Catalog API provides an endpoint for getting the catalog items:
 
 ``` csharp
 [Route("api/v1/[controller]")]
@@ -223,13 +330,13 @@ GET http://localhost/api/v1/catalog/items?pageSize=20
 
 ### Make aggregated service calls using the .NET SDK
 
-Most calls from the eShop front-end are simple CRUD calls. The API gateway forwards them to a single service for processing. Some scenarios, however, require multiple back-end services to work together to complete a request. For these more complex calls, eShop uses the Web Shopping Aggregator service to mediate the workflow across multiple services. Figure 6-4 show the processing sequence of adding an item to your shopping basket:
+Most calls from the eShop frontend are simple CRUD calls. The API gateway forwards them to a single service for processing. Some scenarios, however, require multiple backend services to work together to complete a request. For these more complex calls, eShop uses the Web Shopping aggregator service to mediate the workflow across multiple services. Figure 6-4 show the processing sequence of adding an item to your shopping basket:
 
-![Update basket sequence diagram](./media/service-invocation/updatebasket.png)
+![Update basket sequence diagram](./media/service-invocation/update-basket.png)
 
 **Figure 6-4**. Update shopping basket sequence.
 
-The aggregator service first retrieves catalog items from the Catalog API. It then validates items availability and pricing. Finally, the aggregator service saves the updated shopping basket by calling the Basket API.
+The aggregator service first retrieves catalog items from the Catalog API. It then validates item availability and pricing. Finally, the aggregator service saves the updated shopping basket by calling the Basket API.
 
 The aggregator service contains a `BasketController` that provides an endpoint for updating the shopping basket:
 
@@ -264,75 +371,68 @@ public class BasketController : ControllerBase
 }
 ```
 
-The `UpdateAllBasketAsync` method gets the *Authorization* header of the incoming request using a `FromHeader` attribute. The *Authorization* header contains the access token that is needed to call protected back-end services.
+The `UpdateAllBasketAsync` method gets the *Authorization* header of the incoming request using a `FromHeader` attribute. The *Authorization* header contains the access token that is needed to call protected backend services.
 
-After receiving a request to update the basket, the aggregator service calls the Catalog API to get the item details. The Basket controller uses an injected `ICatalogService` object to make that call and communicate with the Catalog API. The original implementation of the interface used gRPC to make the call. The implementation was changed to use Dapr service invocation:
+After receiving a request to update the basket, the aggregator service calls the Catalog API to get the item details. The Basket controller uses an injected `ICatalogService` object to make that call and communicate with the Catalog API. The original implementation of the interface used gRPC to make the call. The implementation was changed to use Dapr service invocation with HttpClient support:
 
 ``` csharp
 public class CatalogService : ICatalogService
 {
-    private const string DaprAppId = "catalog-api";
+    private readonly HttpClient _httpClient;
 
-    private readonly DaprClient _daprClient;
-
-    public CatalogService(DaprClient daprClient)
+    public CatalogService(HttpClient httpClient)
     {
-        _daprClient = daprClient;
+        _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
     }
 
-    public async Task<IEnumerable<CatalogItem>> GetCatalogItemsAsync(
-        IEnumerable<int> ids)
+    public Task<IEnumerable<CatalogItem>> GetCatalogItemsAsync(IEnumerable<int> ids)
     {
-        return await _daprClient.InvokeMethodAsync<IEnumerable<CatalogItem>>(
-            DaprAppId,
-            "api/v1/catalog/items",
-            new HttpInvocationOptions
-            { 
-                Method = HttpMethod.Get,
-                QueryString = new Dictionary<string, string>
-                {
-                    ["ids"] = string.Join(",", ids)
-                }
-            });
+        var requestUri = $"api/v1/catalog/items?ids={string.Join(",", ids)}";
+      
+        return _httpClient.GetFromJsonAsync<IEnumerable<CatalogItem>>(requestUri);
     }
 
     // ...
 }
 ```
 
-The `HttpInvocationOptions` object is used to pass the query string and HTTP verb details to the Catalog API.
+Notice how no Dapr specific code is required to make the service invocation call. All communication is done using the standard HttpClient object.
+
+The Dapr HttpClient is injected into the `CatalogService` class in the `Startup.ConfigureServices` method:
+
+```csharp
+services.AddSingleton<ICatalogService, CatalogService>(
+    _ => new CatalogService(DaprClient.CreateInvokeHttpClient("catalog-api")));
+```
 
 The other call made by the aggregator service is to the Basket API. It only allows authorized requests. The access token is passed along in an *Authorization* request header to ensure the call succeeds:
 
 ``` csharp
 public class BasketService : IBasketService
 {
-    private const string DaprAppId = "basket-api";
-
     public Task UpdateAsync(BasketData currentBasket, string accessToken)
     {
-        return _daprClient.InvokeMethodAsync(
-            DaprAppId,
-            "api/v1/basket",
-            currentBasket,
-            new HttpInvocationOptions
-            {
-                Headers = new Dictionary<string, string>
-                {
-                    [HeaderNames.Authorization] = accessToken
-                }
-            });
+        var request = new HttpRequestMessage(HttpMethod.Post, "api/v1/basket")
+        {
+            Content = JsonContent.Create(currentBasket)
+        };
+        request.Headers.Authorization = new AuthenticationHeaderValue(accessToken);
+       
+        var response = await _httpClient.SendAsync(request);
+        response.EnsureSuccessStatusCode();
     }
 
     // ...
 }
 ```
 
-There is no need to explicitly specify the HTTP method for this POST call as `Post` is the default value of `HttpInvocationOptions.Method`.
+In this example too, only standard HttpClient functionality is used to call the service. This allows developers who are already familiar with HttpClient to reuse their existing skills.
 
 ## Summary
 
 In this chapter, you learned about the service invocation building block. You saw how to invoke remote methods both by making direct HTTP calls to the Dapr sidecar, and by using the Dapr .NET SDK.
+
+The Dapr .NET SDK provides multiple to invoke remote methods. HttpClient support is great for developers wanting to reuse existing skills and is compatible with many existing frameworks and libraries. DaprClient offers support for directly using the Dapr service invocation API using either HTTP or gRPC semantics.
 
 The eShopOnDapr reference architecture shows how the original eShopOnContainers solution is modernized by using Dapr service invocation. Adding Dapr to eShop provides benefits such as automatic retries, message encryption using mTLS, and improved observability.
 

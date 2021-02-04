@@ -2,7 +2,7 @@
 title: Getting started with Dapr
 description: This chapter will guide you through preparing your local development environment and building your first .NET applications with Dapr.
 author: amolenk 
-ms.date: 01/10/2020
+ms.date: 02/01/2021
 ---
 
 # Getting started with Dapr
@@ -34,7 +34,7 @@ You'll start by building a simple .NET Console application that consumes the [Da
 
 1. Open up the command shell or terminal of your choice. You might consider the terminal capabilities in [Visual Studio Code](https://code.visualstudio.com/). Navigate to the root folder in which you want to build your application. Once there, enter the following command to create a new .NET Console application:
 
-   ```terminal
+   ```console
    dotnet new console -o DaprCounter
    ```
 
@@ -42,13 +42,13 @@ You'll start by building a simple .NET Console application that consumes the [Da
 
 1. Then, navigate into the new directory created by the previous command:
 
-   ```terminal
+   ```console
    cd DaprCounter
    ```
 
 1. Run the newly created application using the `dotnet run` command. Doing so writes "Hello World!" to the console screen:
 
-   ```terminal
+   ```console
    dotnet run
    ```
 
@@ -60,7 +60,7 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
 
 1. From the terminal window, add the `Dapr.Client` NuGet package to your application:
 
-   ```terminal
+   ```console
    dotnet add package Dapr.Client
    ```
 
@@ -69,7 +69,7 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
 
 1. Open the `Program.cs` file in your favorite editor and update its contents to the following code:
 
-   ```c#
+   ```csharp
    using System;
    using System.Threading.Tasks;
    using Dapr;
@@ -81,9 +81,9 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
        {
            static async Task Main(string[] args)
            {
-               DaprClient daprClient = new DaprClientBuilder().Build();
+               var daprClient = new DaprClientBuilder().Build();
    
-               int counter = await daprClient.GetStateAsync<int>("statestore", "counter");
+               var counter = await daprClient.GetStateAsync<int>("statestore", "counter");
    
                while (true)
                {
@@ -111,7 +111,7 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
 
    Now run the application with the following command:
 
-   ```terminal
+   ```console
    dapr run --app-id DaprCounter dotnet run
    ```
 
@@ -133,6 +133,7 @@ metadata:
   name: statestore
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -148,7 +149,7 @@ spec:
 Note the format of the previous component configuration file:
 
 - Each component has a name. In the sample above, the component is named `statestore`. We used that name in our first code example to tell the Dapr sidecar which component to use.
-- Each component configuration file has a `spec` section. It contains a `type` field that specifies the component type. The `metadata` field contains information that the component requires, such as connection details and other settings. The metadata values will vary for the different types of components.
+- Each component configuration file has a `spec` section. It contains a `type` field that specifies the component type. The `version` field specifies the component version. The `metadata` field contains information that the component requires, such as connection details and other settings. The metadata values will vary for the different types of components.
 
 A Dapr sidecar can consume any Dapr component configured in your application. But, what if you had an architectural justification to limit the accessibility of a component? How could you restrict the Redis component to Dapr sidecars running only in a production environment?
 
@@ -162,6 +163,7 @@ metadata:
   namespace: production
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -170,6 +172,9 @@ spec:
   - name: actorStateStore
     value: "true"
 ```
+
+> [!IMPORTANT]
+> A namespaced component is only accessible to applications running in the same namespace. If your Dapr application fails to load a component, make sure that the application namespace matches the component namespace. This can be especially tricky in self-hosted mode where the application namespace is stored in a `NAMESPACE` environment variable.
 
 If needed, you could further restrict a component to a particular application. Within the `production` namespace, you may want to limit access of the Redis cache to only the `DaprCounter` application. You do so by specifying `scopes` in the component configuration. The following example shows how to restrict access to the Redis `statestore` component to the application `DaprCounter` in the `production` namespace:
 
@@ -181,6 +186,7 @@ metadata:
   namespace: production
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -229,7 +235,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 1. In Visual Studio, open the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**) and make sure that `DaprFrontEnd` is the default project. From the console, add the `Dapr.AspNetCore` NuGet package to the project:
 
-   ```terminal
+   ```console
    Install-Package Dapr.AspNetCore
    ```
 
@@ -238,12 +244,12 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 1. In the `DaprFrontEnd` project, open the *Startup.cs* file, and replace the `ConfigureServices` method with the following code:
 
-   ```c#
+   ```csharp
    // This method gets called by the runtime. Use this method to add services to the container.
    public void ConfigureServices(IServiceCollection services)
    {
-     services.AddControllers().AddDapr();
-     services.AddRazorPages();
+       services.AddControllers().AddDapr();
+       services.AddRazorPages();
    }
    ```
 
@@ -251,54 +257,52 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 1. Add a new C# class file named *WeatherForecast* to the `DaprFrontEnd` project:
 
-   ```c#
+   ```csharp
    using System;
       
-      namespace DaprFrontEnd
-      {
-          public class WeatherForecast
-          {
-              public DateTime Date { get; set; }
+   namespace DaprFrontEnd
+   {
+       public class WeatherForecast
+       {
+           public DateTime Date { get; set; }
       
-              public int TemperatureC { get; set; }
+           public int TemperatureC { get; set; }
       
-              public int TemperatureF { get; set; }
+           public int TemperatureF { get; set; }
       
-              public string Summary { get; set; }
-          }
-      }
+           public string Summary { get; set; }
+       }
+   }
    ```
 
 1. Open the *Index.cshtml.cs* file in the *Pages* folder, and replace its contents with the following code:
 
-   ```c#
+   ```csharp
+   using System;
    using System.Collections.Generic;
    using System.Net.Http;
    using System.Threading.Tasks;
    using Dapr.Client;
    using Microsoft.AspNetCore.Mvc.RazorPages;
-   
+
    namespace DaprFrontEnd.Pages
    {
        public class IndexModel : PageModel
        {
-           private readonly DaprClient _client;
-   
-           public IndexModel(DaprClient client)
+           private readonly DaprClient _dapr;
+
+           public IndexModel(DaprClient dapr)
            {
-               _client = client;
+               _dapr = dapr ?? throw new ArgumentNullException(nameof(dapr));
            }
-   
+
            public async Task OnGet()
            {
-               var forecasts = await _client.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
+               var forecasts = await _dapr.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
+                   HttpMethod.Get,
                    "daprbackend",
-                   "weatherforecast",
-                   new HttpInvocationOptions
-                   {
-                       Method = HttpMethod.Get
-                   });
-   
+                   "weatherforecast");
+
                ViewData["WeatherForecastData"] = forecasts;
            }
        }

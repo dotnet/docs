@@ -1,7 +1,7 @@
 ---
 title: "Supported collection types in System.Text.Json"
 description: "Learn which collection types are supported for serialization by the APIs in the System.Text.Json namespace."
-ms.date: 01/06/2021
+ms.date: 02/01/2021
 no-loc: [System.Text.Json]
 ms.topic: reference
 zone_pivot_groups: dotnet-version
@@ -24,6 +24,14 @@ The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> met
 Deserialization is more complicated and is not supported for some collection types.
 
 The following sections are organized by namespace and show which types are supported for serialization and deserialization.
+
+## System.Array namespace
+
+| Type                                                                                            | Serialization | Deserialization |
+|-------------------------------------------------------------------------------------------------|---------------|-----------------|
+| [Single-dimensional arrays](../../csharp/programming-guide/arrays/single-dimensional-arrays.md) | ✔️           | ✔️              |
+| [Multi-dimensional arrays](../../csharp/programming-guide/arrays/multidimensional-arrays.md)    | ❌           | ❌              |
+| [Jagged arrays](../../csharp/programming-guide/arrays/jagged-arrays.md)                         | ✔️           | ✔️              |
 
 ## System.Collections namespace
 

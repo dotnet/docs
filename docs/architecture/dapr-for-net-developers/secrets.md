@@ -249,7 +249,7 @@ dapr run --app-id basket-api --components-path ./components dotnet run
 ```
 
 > [!NOTE]
-> This above example applies to running Dapr in stand-alone mode. For Kubernetes hosting, consider using volume mounts.
+> This above example applies to running Dapr in self-hosted mode. For Kubernetes hosting, consider using volume mounts.
 
 The `nestedSeparator` in a Dapr configuration file specifies a character to *flatten* a JSON hierarchy. Consider the following snippet:
 
@@ -347,9 +347,9 @@ For this example to work, the following prerequisites must be satisfied:
 
 The [Dapr Azure Key Vault secret store documentation](https://docs.dapr.io/operations/components/setup-secret-store/supported-secret-stores/azure-keyvault/) provides step-by-step instructions to create and configure a Key Vault environment.
 
-#### Using Key Vault when running in stand-alone mode
+#### Using Key Vault when running in self-hosted mode
 
-Consuming Azure Key Vault in Dapr stand-alone mode requires the following configuration file:
+Consuming Azure Key Vault in Dapr self-hosted mode requires the following configuration file:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1

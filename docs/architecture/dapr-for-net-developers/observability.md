@@ -401,7 +401,7 @@ The operation returns two HTTP status codes:
 - 204: When the sidecar is healthy
 - 500: when the sidecar isn't healthy
 
-When running in stand-alone mode, the health API isn't automatically invoked. You can invoke the API though from application code or a health monitoring tool.
+When running in self-hosted mode, the health API isn't automatically invoked. You can invoke the API though from application code or a health monitoring tool.
 
 When running in Kubernetes, the Dapr sidecar-injector automatically configures Kubernetes to use the health API for executing *liveness probes* and *readiness probes*.
 

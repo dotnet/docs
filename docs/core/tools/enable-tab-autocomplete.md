@@ -1,6 +1,6 @@
 ---
 title: Enable tab completion
-description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell, Bash, zsh and fish.
+description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell, Bash, zsh, and fish.
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to

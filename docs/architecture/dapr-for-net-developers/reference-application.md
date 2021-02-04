@@ -90,7 +90,7 @@ Consider these improvements:
 - Publish/Subscribe
   - eShopOnContainer includes extensive implementations for both the Azure Service Bus and Rabbit MQ. Developers used Service Bus for production and RabbitMQ for local development and testing. An `IEventBus` abstraction layer was created to enable swapping these message brokers. Implementing this layer required approximately *700 lines of highly complex code*.
 
-        In the updated eShopOnDapr, a single implementation of `IEventBus` now uses the Dapr pub/sub building block to communicate with any Dapr supported message broker platform, which includes both Azure Service Bus and RabbitMQ. This implementation requires *35 lines of code*. That's a reduction of **95%**! Importantly, the updated Dapr implementation is straightforward and easy to understand. 
+  - In the updated eShopOnDapr, a single implementation of `IEventBus` now uses the Dapr pub/sub building block to communicate with any Dapr supported message broker platform, which includes both Azure Service Bus and RabbitMQ. This implementation requires *35 lines of code*. That's a reduction of **95%**! Importantly, the updated Dapr implementation is straightforward and easy to understand.
 
 - Resource Binding
   - The eShopOnContainers solution contained a *to-do* item for e-mailing an order confirmation to the customer. With Dapr, implementing email notification was as easy as configuring a resource binding. There wasn't need to learn any external APIs or SDKs.

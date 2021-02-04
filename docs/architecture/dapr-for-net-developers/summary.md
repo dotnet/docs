@@ -53,11 +53,11 @@ At the time of writing, here's a list of proposed enhancements for Dapr:
   - Configuration API building block
   - Http scale-to-zero autoscale building block
   - Leader election building block
-  - Transparent proxying building block for service invocation 
+  - Transparent proxying building block for service invocation
   - Resiliency building block (circuit breakers, Bulkheads, Timeouts)
 
 - Integration with frameworks and cloud native technologies:
-  - Django 
+  - Django
   - Nodejs
   - Express
   - Kyma

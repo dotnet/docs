@@ -9,11 +9,11 @@ author: robvet
 
 We're at the end of our Dapr flight. The jet plane flying at 20,000 feet from chapter 2 is on final approach and about to land.
 
-At the plane taxis to the gate, let's take a minute to review some important conclusions from this guide:
+As the plane taxis to the gate, let's take a minute to review some important conclusions from this guide:
 
-- **Dapr** - Dapr is a *Distributed Application Runtime* that streamlines how you build distributed applications. Through an architecture of building blocks and pluggable components, Dapr abstracts away the complexity of distributed application capabilities. Instead of building plumbing, your team focuses on delivering business features to customers. 
+- **Dapr** - Dapr is a *Distributed Application Runtime* that streamlines how you build distributed applications. Through an architecture of building blocks and pluggable components, Dapr abstracts away the complexity of distributed application capabilities. Instead of building plumbing, your team focuses on delivering business features to customers.
 
-- **Open source and cross-platform** - The native Dapr API can be consumed by *any platform* that supports HTTP. Dapr also provides language-specific SDKs for popular development platforms. Dapr v 1.0 supports Go, Node.js, Python, .NET, Java, and JavaScript. 
+- **Open source and cross-platform** - The native Dapr API can be consumed by *any platform* that supports HTTP. Dapr also provides language-specific SDKs for popular development platforms. Dapr v1.0 supports Go, Node.js, Python, .NET, Java, and JavaScript.
 
 - **Building blocks** - Dapr building blocks encapsulate distributed application functionality. At the time of this writing, Dapr supports the seven building blocks shown in figure 12-1.
 
@@ -44,41 +44,41 @@ Looking forward, Dapr has the potential to have a profound impact on distributed
 At the time of writing, here's a list of proposed enhancements for Dapr:
 
 - Feature enhancements to existing building blocks:
-    - Query capabilities in state management
-    - Topic filtering in pub/sub
-    - An application tracing API in observability
-    - Binding and pub/sub support for actors, including the self-deletion of actors
+  - Query capabilities in state management
+- Topic filtering in pub/sub
+  - An application tracing API in observability
+  - Binding and pub/sub support for actors, including the self-deletion of actors
 
 - New building blocks:
-    - Configuration API building block
-    - Http scale-to-zero autoscale building block
-    - Leader election building block
-    - Transparent proxying building block for service invocation 
-    - Resiliency building block (circuit breakers, Bulkheads, Timeouts)
+  - Configuration API building block
+  - Http scale-to-zero autoscale building block
+  - Leader election building block
+  - Transparent proxying building block for service invocation 
+  - Resiliency building block (circuit breakers, Bulkheads, Timeouts)
 
 - Integration with frameworks and cloud native technologies:
-    - Django 
-    - Nodejs
-    - Express
-    - Kyma
-    - Midway
+  - Django 
+  - Nodejs
+  - Express
+  - Kyma
+  - Midway
 
 - New language SDKs:
-    - PHP 
-    - JavaScript
-    - RUST
-    - C++
+  - PHP
+  - JavaScript
+  - RUST
+  - C++
 
 - New hosting platforms:
-    - VM sets
-    - IoT Edge
-    - Azure Stack Edge
-    - Service Fabric
+  - VM sets
+  - IoT Edge
+  - Azure Stack Edge
+  - Service Fabric
 
 - Developer and operator productivity tooling:
-    - VS Code extension
-    - Remote Dev Containers
-    - Dapr operational dashboard enhancements
+  - VS Code extension
+  - Remote Dev Containers
+  - Dapr operational dashboard enhancements
 
 >[!div class="step-by-step"]
 >[Previous](application-bundles.md)

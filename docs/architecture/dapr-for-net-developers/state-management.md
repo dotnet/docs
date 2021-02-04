@@ -398,16 +398,16 @@ public class DaprBasketRepository : IBasketRepository
 {
     private const string StoreName = "eshop-basket-statestore";
 
-    private readonly DaprClient _dapr;
+    private readonly DaprClient _daprClient;
 
-    public DaprBasketRepository(DaprClient dapr)
+    public DaprBasketRepository(DaprClient daprClient)
     {
-        _dapr = dapr;
+        _daprClient = daprClient ?? throw new ArgumentNullException(nameof(daprClient));;
     }
 
     public async Task<CustomerBasket> GetBasketAsync(string customerId)
     {
-        return await _dapr.GetStateAsync<CustomerBasket>(StoreName, customerId);
+        return await _daprClient.GetStateAsync<CustomerBasket>(StoreName, customerId);
     }
 
     // ...

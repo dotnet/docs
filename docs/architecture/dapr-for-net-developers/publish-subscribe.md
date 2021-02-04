@@ -300,15 +300,15 @@ In the updated eShopOnDapr, a single `DaprEventBus` implementation can support a
 ```csharp
 public class DaprEventBus : IEventBus
 {
-    private const string DAPR_PUBSUB_NAME = "pubsub";
+    private const string PubSubName = "pubsub";
 
-    private readonly DaprClient _dapr;
+    private readonly DaprClient _daprClient;
     private readonly ILogger<DaprEventBus> _logger;
 
-    public DaprEventBus(DaprClient dapr, ILogger<DaprEventBus> logger)
+    public DaprEventBus(DaprClient daprClient, ILogger<DaprEventBus> logger)
     {
-        _dapr = dapr;
-        _logger = logger;
+        _daprClient = daprClient ?? throw new ArgumentNullException(nameof(daprClient));
+        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
     public async Task PublishAsync<TIntegrationEvent>(TIntegrationEvent integrationEvent)
@@ -316,12 +316,12 @@ public class DaprEventBus : IEventBus
     {
         var topicName = integrationEvent.GetType().Name;
 
-        _logger.LogInformation("Publishing event {Event} to {PubsubName}.{TopicName}", integrationEvent, DAPR_PUBSUB_NAME, topicName);
+        _logger.LogInformation("Publishing event {Event} to {PubSubName}.{TopicName}", integrationEvent, PubSubName, topicName);
 
         // Make sure to pass the concrete event type to PublishEventAsync,
         // which can be accomplished by casting the event to dynamic. This ensures
         // that all event fields are properly serialized.
-        await _dapr.PublishEventAsync(DAPR_PUBSUB_NAME, topicName, (dynamic)integrationEvent);
+        await _daprClient.PublishEventAsync(PubSubName, topicName, (dynamic)integrationEvent);
     }
 }
 ```

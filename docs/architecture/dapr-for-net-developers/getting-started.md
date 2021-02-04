@@ -289,16 +289,16 @@ Now, you'll configure communication between the services using Dapr [service inv
    {
        public class IndexModel : PageModel
        {
-           private readonly DaprClient _dapr;
+           private readonly DaprClient _daprClient;
 
-           public IndexModel(DaprClient dapr)
+           public IndexModel(DaprClient daprClient)
            {
-               _dapr = dapr ?? throw new ArgumentNullException(nameof(dapr));
+               _daprClient = daprClient ?? throw new ArgumentNullException(nameof(daprClient));
            }
 
            public async Task OnGet()
            {
-               var forecasts = await _dapr.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
+               var forecasts = await _daprClient.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
                    HttpMethod.Get,
                    "daprbackend",
                    "weatherforecast");

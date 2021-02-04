@@ -454,6 +454,6 @@ In the upcoming chapters, you'll dive deep into the building blocks offered by D
 
 - [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr)
 
-<!-- >[!div class="step-by-step"]
->[Previous](index.md)
->[Next](index.md) -->
+> [!div class="step-by-step"]
+> [Previous](dapr-at-20000-feet.md)
+> [Next](reference-application.md)

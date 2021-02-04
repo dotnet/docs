@@ -253,4 +253,4 @@ In the next chapters, we present practical, hands-on instruction on how to use D
 
 > [!div class="step-by-step"]
 > [Previous](the-world-is-distributed.md)
-> [Next](index.md)
+> [Next](getting-started.md)

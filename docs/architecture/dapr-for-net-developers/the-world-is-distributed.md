@@ -95,4 +95,4 @@ Now, sit back, relax, and let us introduce you the new world of Dapr.
 
 >[!div class="step-by-step"]
 >[Previous](index.md)
->[Next](index.md)
+>[Next](dapr-at-20000-feet.md)

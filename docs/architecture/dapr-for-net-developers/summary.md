@@ -81,4 +81,4 @@ At the time of writing, here's a list of proposed enhancements for Dapr:
   - Dapr operational dashboard enhancements
 
 >[!div class="step-by-step"]
->[Previous](application-bundles.md)
+>[Previous](secrets.md)

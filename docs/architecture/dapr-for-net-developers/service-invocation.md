@@ -443,6 +443,6 @@ The eShopOnDapr reference architecture shows how the original eShopOnContainers 
 
 - [Monitoring distributed cloud-native applications](../cloud-native/observability-patterns)
 
-<!-- >[!div class=“step-by-step”]
->[Previous](~index.md~)
->[Next](~index.md~) -->
+> [!div class="step-by-step"]
+> [Previous](state-management.md)
+> [Next](publish-subscribe.md)

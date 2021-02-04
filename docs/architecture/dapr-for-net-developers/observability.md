@@ -530,3 +530,7 @@ Dapr offers a dashboard that presents information about the Dapr services and co
 - [ELK stack](https://www.elastic.co/elastic-stack)
 - [Seq](https://datalust.co/seq)
 - [Serilog](https://serilog.net/)
+
+> [!div class="step-by-step"]
+> [Previous](bindings.md)
+> [Next](secrets.md)

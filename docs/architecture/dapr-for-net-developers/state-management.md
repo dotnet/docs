@@ -458,6 +458,6 @@ In the eShopOnDapr reference application, the benefits to moving to Dapr state m
 
 - [Dapr supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/)
 
->[!div class="step-by-step"]
->[Previous](index.md)
->[Next](index.md)
+> [!div class="step-by-step"]
+> [Previous](reference-application.md)
+> [Next](service-invocation.md)

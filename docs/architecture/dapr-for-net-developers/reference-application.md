@@ -128,6 +128,6 @@ Consider these improvements:
 
 - [Architecting Cloud-Native .NET Apps for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
 
->[!div class="step-by-step"]
->[Previous](index.md)
->[Next](index.md)
+> [!div class="step-by-step"]
+> [Previous](getting-started.md)
+> [Next](state-management.md)

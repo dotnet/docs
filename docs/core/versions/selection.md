@@ -1,37 +1,37 @@
 ---
-title: Select which .NET Core version to use
-description: Learn how .NET Core automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
+title: Select which .NET version to use
+description: Learn how .NET automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/24/2020
+ms.date: 02/05/2021
 ---
 
-# Select the .NET Core version to use
+# Select the .NET version to use
 
-This article explains the policies used by the .NET Core tools, SDK, and runtime for selecting versions. These policies provide a balance between running applications using the specified versions and enabling ease of upgrading both developer and end-user machines. These policies perform the following actions:
+This article explains the policies used by the .NET tools, SDK, and runtime for selecting versions. These policies provide a balance between running applications using the specified versions and enabling ease of upgrading both developer and end-user machines. These policies perform the following actions:
 
-- Easy and efficient deployment of .NET Core, including security and reliability updates.
+- Easy and efficient deployment of .NET, including security and reliability updates.
 - Use the latest tools and commands independent of target runtime.
 
 Version selection occurs:
 
 - When you run an SDK command, [the SDK uses the latest installed version](#the-sdk-uses-the-latest-installed-version).
 - When you build an assembly, [target framework monikers define build time APIs](#target-framework-monikers-define-build-time-apis).
-- When you run a .NET Core application, [target framework dependent apps roll forward](#framework-dependent-apps-roll-forward).
+- When you run a .NET application, [target framework dependent apps roll forward](#framework-dependent-apps-roll-forward).
 - When you publish a self-contained application, [self-contained deployments include the selected runtime](#self-contained-deployments-include-the-selected-runtime).
 
 The rest of this document examines those four scenarios.
 
 ## The SDK uses the latest installed version
 
-SDK commands include `dotnet new` and `dotnet run`. The .NET Core CLI must choose an SDK version for every `dotnet` command. It uses the latest SDK installed on the machine by default, even if:
+SDK commands include `dotnet new` and `dotnet run`. The .NET CLI must choose an SDK version for every `dotnet` command. It uses the latest SDK installed on the machine by default, even if:
 
-- The project targets an earlier version of the .NET Core runtime.
-- The latest version of the .NET Core SDK is a preview version.
+- The project targets an earlier version of the .NET runtime.
+- The latest version of the .NET SDK is a preview version.
 
-You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
+You can take advantage of the latest SDK features and improvements while targeting earlier .NET runtime versions. You can target multiple runtime versions of .NET on different projects, using the same SDK tools for all projects.
 
-On rare occasions, you may need to use an earlier version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md). The "use latest" policy means you only use *global.json* to specify a .NET Core SDK version earlier than the latest installed version.
+On rare occasions, you may need to use an earlier version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md). The "use latest" policy means you only use *global.json* to specify a .NET SDK version earlier than the latest installed version.
 
 *global.json* can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first *global.json* it finds. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory. The first *global.json* file found specifies the version used. If that SDK version is installed, that version is used. If the SDK specified in the *global.json* is not found, the .NET CLI uses [matching rules](../tools/global-json.md#matching-rules) to select a compatible SDK, or fails if none is found.
 
@@ -67,9 +67,9 @@ You may build your project against multiple TFMs. Setting multiple target framew
 <TargetFrameworks>netcoreapp3.0;net47</TargetFrameworks>
 ```
 
-A given SDK supports a fixed set of frameworks, capped to the target framework of the runtime it ships with. For example, the .NET Core 3.0 SDK includes the .NET Core 3.0 runtime, which is an implementation of the `netcoreapp3.0` target framework. The .NET Core 3.0 SDK supports `netcoreapp2.1`, `netcoreapp2.2`, `netcoreapp3.0`, but not `netcoreapp3.1` (or higher). You install the .NET Core 3.1 SDK to build for `netcoreapp3.1`.
+A given SDK supports a fixed set of frameworks, capped to the target framework of the runtime it ships with. For example, the .NET Core 3.1 SDK includes the .NET Core 3.1 runtime, which is an implementation of the `netcoreapp3.0` target framework. The .NET Core 3.1 SDK supports `netcoreapp2.1`, `netcoreapp2.2`, `netcoreapp3.0`, but not `net5.0` (or higher). You install the .NET 5.0 SDK to build for `net5.0`.
 
-.NET Standard target frameworks are also capped to the target framework of the runtime the SDK ships with. The .NET Core 3.1 SDK is capped to `netstandard2.1`. For more information, see [.NET Standard](../../standard/net-standard.md).
+.NET Standard target frameworks are also capped to the target framework of the runtime the SDK ships with. The .NET 5.0 SDK is capped to `netstandard2.1`. For more information, see [.NET Standard](../../standard/net-standard.md).
 
 ## Framework-dependent apps roll forward
 
@@ -96,11 +96,11 @@ It's possible that 3.0.3 and 3.1.0 behave differently, particularly for scenario
 
 ## Self-contained deployments include the selected runtime
 
-You can publish an application as a [**self-contained distribution**](../deploying/index.md#publish-self-contained). This approach bundles the .NET Core runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
+You can publish an application as a [**self-contained distribution**](../deploying/index.md#publish-self-contained). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
 
 The publishing process selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET Core 3.0.3 if it is the latest patch version in the .NET Core 3.0 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 
-It's an error if the minimum version specified for an application isn't satisfied. `dotnet publish` binds to the latest runtime patch version (within a given major.minor version family). `dotnet publish` doesn't support the roll-forward semantics of `dotnet run`. For more information about patches and self-contained deployments, see the article on [runtime patch selection](../deploying/runtime-patch-selection.md) in deploying .NET Core applications.
+It's an error if the minimum version specified for an application isn't satisfied. `dotnet publish` binds to the latest runtime patch version (within a given major.minor version family). `dotnet publish` doesn't support the roll-forward semantics of `dotnet run`. For more information about patches and self-contained deployments, see the article on [runtime patch selection](../deploying/runtime-patch-selection.md) in deploying .NET applications.
 
 Self-contained deployments may require a specific patch version. You can override the minimum runtime patch version (to higher or lower versions) in the project file, as shown in the following example:
 
@@ -112,5 +112,5 @@ The `RuntimeFrameworkVersion` element  overrides the default version policy. For
 
 ## See also
 
-- [Download and install .NET Core](../install/index.yml).
-- [How to remove the .NET Core Runtime and SDK](../install/remove-runtime-sdk-versions.md).
+- [Download and install .NET](../install/index.yml).
+- [How to remove the .NET Runtime and SDK](../install/remove-runtime-sdk-versions.md).

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MULTISET (Entity SQL)"
 title: "MULTISET (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: eb90a377-e47a-43a5-b308-e993b6d611e6

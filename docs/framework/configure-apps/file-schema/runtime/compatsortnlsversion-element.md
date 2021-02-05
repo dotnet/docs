@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <CompatSortNLSVersion> Element"
 title: "<CompatSortNLSVersion> Element"
 ms.date: "03/30/2017"
 dev_langs: 

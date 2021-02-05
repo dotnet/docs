@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SKIP (Entity SQL)"
 title: "SKIP (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: e2139412-8ea4-451b-8f10-91af18dfa3ec

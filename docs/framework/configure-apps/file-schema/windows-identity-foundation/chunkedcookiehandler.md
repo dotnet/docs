@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <chunkedCookieHandler>"
 title: "<chunkedCookieHandler>"
 ms.date: "03/30/2017"
 ms.assetid: 7220de45-1d14-4aec-a29e-4a2ea8ac861f

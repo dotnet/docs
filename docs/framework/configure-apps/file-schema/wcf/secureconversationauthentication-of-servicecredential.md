@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <secureConversationAuthentication> of <serviceCredential>"
 title: "<secureConversationAuthentication> of <serviceCredential>"
 ms.date: "03/30/2017"
 ms.assetid: 0bd3fac7-befd-4a45-ba51-c200b33be0fd

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding DataRelations"
 title: "Adding DataRelations"
 ms.date: "03/30/2017"
 dev_langs: 

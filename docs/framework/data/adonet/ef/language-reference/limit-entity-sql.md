@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LIMIT (Entity SQL)"
 title: "LIMIT (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: c22ffede-0a52-44d1-99b9-4a91e651e1b9

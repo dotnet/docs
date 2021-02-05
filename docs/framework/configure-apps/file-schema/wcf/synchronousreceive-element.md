@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <synchronousReceive> element"
 title: "<synchronousReceive> element"
 ms.date: "03/30/2017"
 ms.assetid: cc070387-3d11-4b02-a952-bc08ad2df05a

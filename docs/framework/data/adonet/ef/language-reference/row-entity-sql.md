@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ROW (Entity SQL)"
 title: "ROW (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 06da96e8-55d7-486c-991a-4e514d837ff9

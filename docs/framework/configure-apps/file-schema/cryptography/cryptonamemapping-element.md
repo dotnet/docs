@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <cryptoNameMapping> Element"
 title: "<cryptoNameMapping> Element"
 ms.date: "03/30/2017"
 f1_keywords: 

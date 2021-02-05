@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DataAdapter DataTable and DataColumn Mappings"
 title: "DataAdapter DataTable and DataColumn Mappings"
 ms.date: "03/30/2017"
 dev_langs: 

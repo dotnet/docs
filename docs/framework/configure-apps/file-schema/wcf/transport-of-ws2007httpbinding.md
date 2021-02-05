@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <transport> of <ws2007HttpBinding>"
 title: "<transport> of <ws2007HttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 692befa3-8b0b-4ec5-b601-755874e98eb0

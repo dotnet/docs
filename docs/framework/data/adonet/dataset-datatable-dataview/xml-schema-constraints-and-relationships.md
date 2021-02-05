@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML Schema Constraints and Relationships"
 title: "XML Schema Constraints and Relationships"
 ms.date: "03/30/2017"
 ms.assetid: 165bc2bc-60a1-40e0-9b89-7c68ef979079

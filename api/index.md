@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .NET API browser"
 layout: ApiBrowserPage
 hide_bc: true
 title: .NET API browser

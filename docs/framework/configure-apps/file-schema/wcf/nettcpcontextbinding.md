@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <netTcpContextBinding>"
 title: "<netTcpContextBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4

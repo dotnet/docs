@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <x509SecurityTokenHandlerRequirement>"
 title: "<x509SecurityTokenHandlerRequirement>"
 ms.date: "03/30/2017"
 ms.assetid: aca22c2c-5ae7-42af-9bbd-15c2524692ce

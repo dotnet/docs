@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <audienceUris>"
 title: "<audienceUris>"
 ms.date: "03/30/2017"
 ms.assetid: 7a3d8515-d756-4afe-a22d-07cbe2217ee3

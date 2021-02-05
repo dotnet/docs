@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: QuotedPairReader class"
 title: QuotedPairReader class (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking

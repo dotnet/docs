@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Find Private Key Tool (FindPrivateKey.exe)"
 title: "Find Private Key Tool (FindPrivateKey.exe)"
 ms.date: "09/11/2017"
 ms.assetid: b8846a95-3fcc-4e8c-b9c0-128d975a6307

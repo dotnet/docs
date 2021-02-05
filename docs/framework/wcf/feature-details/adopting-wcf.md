@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adopt Windows Communication Foundation"
 title: "Adopting Windows Communication Foundation"
 ms.date: "03/30/2017"
 ms.assetid: 49ba71e2-9468-4082-84c5-cf8daf95e34a

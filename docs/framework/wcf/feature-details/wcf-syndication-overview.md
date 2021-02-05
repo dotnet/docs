@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Syndication Overview"
 title: "WCF Syndication Overview"
 ms.date: "03/30/2017"
 ms.assetid: af6d4c39-e5e8-4099-aee6-5261feff9107

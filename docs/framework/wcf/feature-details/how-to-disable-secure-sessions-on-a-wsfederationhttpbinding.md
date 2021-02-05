@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Disable Secure Sessions on a WSFederationHttpBinding"
 title: "How to: Disable Secure Sessions on a WSFederationHttpBinding"
 ms.date: "03/30/2017"
 dev_langs:

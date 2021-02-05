@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: UDP Activation"
 title: "UDP Activation"
 ms.date: "03/30/2017"
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7

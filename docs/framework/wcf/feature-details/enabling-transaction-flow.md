@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Enabling Transaction Flow"
 title: "Enabling Transaction Flow"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

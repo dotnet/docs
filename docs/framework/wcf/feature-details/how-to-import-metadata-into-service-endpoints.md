@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Import Metadata into Service Endpoints"
 title: "How to: Import Metadata into Service Endpoints"
 ms.date: "03/30/2017"
 ms.assetid: b69dbe20-92a1-4911-89d8-ffbc3dad4663

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Communication Foundation Security Overview"
 title: "Security Overview"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

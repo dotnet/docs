@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Claims and Denying Access to Resources"
 title: "Claims and Denying Access to Resources"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

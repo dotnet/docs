@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure Workflow Unhandled Exception Behavior with WorkflowServiceHost"
 title: "How to: Configure Workflow Unhandled Exception Behavior with WorkflowServiceHost"
 ms.date: "03/30/2017"
 ms.assetid: 51b25c86-292c-43e4-8d13-273d2badc8ad

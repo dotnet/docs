@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Encryption of Digital Signatures"
 title: "Encryption of Digital Signatures"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Understanding Protection Level"
 title: "Understanding Protection Level"
 ms.date: "03/30/2017"
 dev_langs:

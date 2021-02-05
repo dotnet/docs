@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PrivacyNoticeBindingElement"
 title: "PrivacyNoticeBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 0cf110b1-e25b-4d67-986b-10cb04dc4826

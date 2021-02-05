@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Migrating WSE 3.0 Web Services to WCF"
 title: "Migrating WSE 3.0 Web Services to WCF"
 ms.date: "03/30/2017"
 ms.assetid: 7bc5fff7-a2b2-4dbc-86cc-ecf73653dcdc

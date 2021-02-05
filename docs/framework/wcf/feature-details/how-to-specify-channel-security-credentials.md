@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Channel Security Credentials"
 title: "How to: Specify Channel Security Credentials"
 ms.date: "03/30/2017"
 ms.assetid: f8e03f47-9c4f-4dd5-8f85-429e6d876119

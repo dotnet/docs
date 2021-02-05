@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Migration Guidance"
 title: "Migration Guidance"
 ms.date: "03/30/2017"
 ms.assetid: cb65c132-58c9-4028-b3d4-1efc71d5e60e

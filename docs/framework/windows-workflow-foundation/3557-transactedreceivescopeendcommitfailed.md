@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3557 - TransactedReceiveScopeEndCommitFailed"
 title: "3557 - TransactedReceiveScopeEndCommitFailed"
 ms.date: "03/30/2017"
 ms.assetid: 079f0188-8146-49ee-b6ae-a08f4e4d2b9b

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Windows Communication Foundation Contract with a Class"
 title: "How to: Create a Windows Communication Foundation Contract with a Class"
 ms.date: "03/30/2017"
 dev_langs: 

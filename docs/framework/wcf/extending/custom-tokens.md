@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Tokens"
 title: "Custom Tokens"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

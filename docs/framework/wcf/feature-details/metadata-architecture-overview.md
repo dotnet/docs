@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Metadata Architecture Overview"
 title: "Metadata Architecture Overview"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

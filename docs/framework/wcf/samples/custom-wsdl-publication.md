@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom WSDL Publication"
 title: "Custom WSDL Publication"
 ms.date: "03/30/2017"
 ms.assetid: 3b3e8103-2c95-4db3-a05b-46aa8e9d4d29

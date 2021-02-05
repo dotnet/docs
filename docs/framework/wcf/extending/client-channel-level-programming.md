@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Client Channel-Level Programming"
 title: "Client Channel-Level Programming"
 ms.date: "03/30/2017"
 dev_langs: 

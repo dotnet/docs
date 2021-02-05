@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending Windows Workflow Foundation"
 title: "Extending Windows Workflow Foundation"
 ms.date: "03/30/2017"
 helpviewer_keywords:

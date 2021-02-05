@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Basic Binding"
 title: "Basic Binding"
 ms.date: "03/30/2017"
 ms.assetid: 2a0e8ac4-23e7-45ef-98dc-40691aac530a

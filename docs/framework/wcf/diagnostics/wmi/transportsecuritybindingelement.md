@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TransportSecurityBindingElement"
 title: "TransportSecurityBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 31b8cd3b-3be5-4b6c-93f0-69d7aaf791d0

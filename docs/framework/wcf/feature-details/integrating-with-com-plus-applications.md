@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Integrating with COM+ Applications"
 title: "Integrating with COM+ Applications"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

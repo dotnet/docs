@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use MetadataExchangeClient to Retrieve Metadata"
 title: "How to: Use MetadataExchangeClient to Retrieve Metadata"
 ms.date: "03/30/2017"
 ms.assetid: 0754e9dc-13c5-45c2-81b5-f3da466e5a87

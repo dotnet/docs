@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Web HTTP Programming Model"
 title: "WCF Web HTTP Programming Model"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

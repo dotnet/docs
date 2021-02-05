@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PeerCustomResolverBindingElement"
 title: "PeerCustomResolverBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 9ccc2770-a20e-4dff-9970-f56ad8aec2b5

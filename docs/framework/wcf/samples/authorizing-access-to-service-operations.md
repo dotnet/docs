@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Authorizing Access to Service Operations"
 title: "Authorizing Access to Service Operations"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

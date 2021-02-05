@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service"
 title: "How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service"
 ms.date: "03/30/2017"
 ms.assetid: 62b41a75-cf40-4c52-a842-a5f1c70e247f

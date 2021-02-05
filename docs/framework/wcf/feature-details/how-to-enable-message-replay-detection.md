@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Enable Message Replay Detection"
 title: "How to: Enable Message Replay Detection"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Poison Message Handling"
 title: "Poison Message Handling"
 ms.date: "03/30/2017"
 ms.assetid: 8d1c5e5a-7928-4a80-95ed-d8da211b8595

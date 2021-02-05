@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Request-Reply Services"
 title: "Request-Reply Services"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

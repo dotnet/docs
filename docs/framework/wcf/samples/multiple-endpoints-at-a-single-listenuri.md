@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multiple Endpoints at a Single ListenUri"
 title: "Multiple Endpoints at a Single ListenUri"
 ms.date: "03/30/2017"
 ms.assetid: 911ffad4-4d47-4430-b7c2-79192ce6bcbd

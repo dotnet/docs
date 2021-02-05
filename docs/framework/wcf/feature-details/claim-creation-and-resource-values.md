@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Claim Creation and Resource Values"
 title: "Claim Creation and Resource Values"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

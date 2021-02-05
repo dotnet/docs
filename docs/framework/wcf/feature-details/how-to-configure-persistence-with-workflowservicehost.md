@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure Persistence with WorkflowServiceHost"
 title: "How to: Configure Persistence with WorkflowServiceHost"
 ms.date: "03/30/2017"
 ms.assetid: e31cd4df-13a3-4a9a-9be8-5243e0055356

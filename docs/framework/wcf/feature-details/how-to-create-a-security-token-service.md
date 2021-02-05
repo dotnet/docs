@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Security Token Service"
 title: "How to: Create a Security Token Service"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transaction Protocols version 1.0"
 title: "Transaction Protocols version 1.0"
 ms.date: "03/30/2017"
 ms.assetid: 034679af-0002-402e-98a8-ef73dcd71bb6

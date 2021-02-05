@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extending the Channel Layer"
 title: "Extending the Channel Layer"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

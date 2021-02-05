@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuring Serialization in a Workflow Service"
 title: "Configuring Serialization in a Workflow Service"
 ms.date: "03/30/2017"
 ms.assetid: aa70b290-a2ee-4c3c-90ea-d0a7665096ae

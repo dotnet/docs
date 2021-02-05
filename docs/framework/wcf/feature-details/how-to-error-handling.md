@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How To: Error Handling"
 title: "How To: Error Handling"
 ms.date: "03/30/2017"
 ms.assetid: de566e39-9358-44ff-8244-780f6b799966

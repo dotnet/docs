@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Contracts"
 title: "Data Contracts"
 ms.date: "03/30/2017"
 ms.assetid: 941049b6-8e98-497f-ab3f-19848241699f

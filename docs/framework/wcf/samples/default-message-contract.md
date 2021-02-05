@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Default Message Contract"
 title: "Default Message Contract"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

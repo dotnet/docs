@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HTTP Transport Security"
 title: "HTTP Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: d3439262-c58e-4d30-9f2b-a160170582bb

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Activity Definition Scoping and Visibility"
 title: "Activity Definition Scoping and Visibility"
 ms.date: "03/30/2017"
 ms.assetid: ccdffa07-9503-4eea-a61b-17f1564368b7

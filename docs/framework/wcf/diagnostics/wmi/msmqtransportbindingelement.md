@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MsmqTransportBindingElement"
 title: "MsmqTransportBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 1c89f073-9ed3-4025-a8c5-13535a0f526b

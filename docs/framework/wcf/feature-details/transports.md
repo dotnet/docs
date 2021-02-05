@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transports in Windows Communication Foundation"
 title: "Transports in Windows Communication Foundation"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

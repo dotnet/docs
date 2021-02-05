@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure a WCF Client to interoperate with WSE3.0 Services"
 title: "How to: Configure a WCF Client to interoperate with WSE3.0 Services"
 ms.date: "03/30/2017"
 dev_langs: 

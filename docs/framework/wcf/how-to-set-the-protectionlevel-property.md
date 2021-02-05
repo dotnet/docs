@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Set the ProtectionLevel Property"
 title: "How to: Set the ProtectionLevel Property"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -17,19 +17,19 @@ As the plane taxis to the gate, let's take a minute to review some important con
 
 - **Building blocks** - Dapr building blocks encapsulate distributed application functionality. At the time of this writing, Dapr supports the seven building blocks shown in figure 12-1.
 
-![Dapr building blocks](./media/building-blocks.png)
+![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks.png)
 
 **Figure 12-1**. Dapr building blocks.
 
 - **Components** - Dapr components provide the concrete implementation for each Dapr building block capability. They expose a common interface that enables developers to swap out component implementations without changing application code. Figure 12-2 shows the relationship among components, building blocks, and your service.
 
-![Dapr building blocks](./media/building-block-integration.png)
+![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks-integration.png)
 
 **Figure 12-2**. Dapr building block integration.
 
 - **Sidecars** - Clients consume Dapr building blocks and components through a sidecar architecture. A sidecar enables Dapr to run in a separate memory process or container alongside your service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. Figure 12-3 shows a sidecar architecture.
 
-![Sidecar architecture](./media/sidecar-generic.png)
+![Sidecar architecture](./media/dapr-at-20000-feet/sidecar-generic.png)
 
 **Figure 12-3**. Sidecar architecture.
 

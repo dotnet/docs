@@ -25,7 +25,7 @@ The service invocation building block addresses these challenges by using a Dapr
 
 Let's start with an example. Consider two services, "Service A" and "Service B". Service A needs to call the `catalog/items` API on Service B. While Service A could take a dependency on Service B and make a direct call to it, Service A instead invokes the service invocation API on the Dapr sidecar. Figure 6-1 shows the operation.
 
-![How the Dapr service invocation works](./media/service-invocation/how-it-works.png)
+![How the Dapr service invocation works](./media/service-invocation/service-invocation-flow.png)
 
 **Figure 6-1**. How Dapr service invocation works.
 
@@ -333,7 +333,7 @@ GET http://localhost/api/v1/catalog/items?pageSize=20
 
 Most calls from the eShop frontend are simple CRUD calls. The API gateway forwards them to a single service for processing. Some scenarios, however, require multiple backend services to work together to complete a request. For these more complex calls, eShop uses the Web Shopping aggregator service to mediate the workflow across multiple services. Figure 6-4 show the processing sequence of adding an item to your shopping basket:
 
-![Update basket sequence diagram](./media/service-invocation/update-basket.png)
+![Update basket sequence diagram](./media/service-invocation/complex-call.png)
 
 **Figure 6-4**. Update shopping basket sequence.
 

@@ -15,7 +15,7 @@ Dapr resource bindings enable your services to integrate business operations acr
 
 Consider, for example, a Twitter account that triggers an event whenever a user tweets a keyword. Your service exposes an event handler that receives and processes the tweet. Once complete, your service triggers an event that invokes an external Twilio service. Twilio sends an SMS message that includes the tweet. Figure 8-1 show the conceptual architecture of this operation.
 
-![Input binding](media/resource-binding-conceptual-architecture.png)
+![Input binding](media/bindings/bindings-architecture.png)
 
 **Figure 8-1**. Conceptual architecture of a Dapr resource binding.
 
@@ -30,11 +30,11 @@ Dapr resource binding starts with a component configuration file. This YAML file
 
 ### Input bindings
 
-Input bindings trigger your code with incoming events from external resources. To receive events and data, you register a public endpoint from your service that becomes the *event handler*. Figure 8-2 shows the architecture:
+Input bindings trigger your code with incoming events from external resources. To receive events and data, you register a public endpoint from your service that becomes the *event handler*. Figure 8-2 shows the flow:
 
-![Input binding](media/bindings-input.png)
+![Dapr input binding flow](media/bindings/input-binding-flow.png)
 
-**Figure 8-2**. Dapr input binding.
+**Figure 8-2**. Dapr input binding flow.
 
 Figure 8.2 describes the steps for receiving events from an external Twitter account:
 
@@ -76,11 +76,11 @@ If the operation should error, you would return the appropriate 400 or 500 level
 
 ### Output bindings
 
-Dapr also includes *output binding* capabilities. They enable your service to trigger an event that invokes an external resource. Again, you start by configuring a binding configuration YAML file that describes the output binding. Once in place, you trigger an event that invokes the bindings API on the Dapr sidecar of your application. Figure 8-3 shows the architecture of an output binding:
+Dapr also includes *output binding* capabilities. They enable your service to trigger an event that invokes an external resource. Again, you start by configuring a binding configuration YAML file that describes the output binding. Once in place, you trigger an event that invokes the bindings API on the Dapr sidecar of your application. Figure 8-3 shows the flow of an output binding:
 
-![Output binding](media/bindings-output.png)
+![Dapr output binding flow](media/bindings/output-binding-flow.png)
 
-**Figure 8-3**. Dapr output binding.
+**Figure 8-3**. Dapr output binding flow.
 
 1. The Dapr sidecar reads the binding configuration file with the information on how to connect to the external resource. In the example, the external resource is a Twilio SMS account.
 2. Your application invokes the `/v1.0/bindings/sms` endpoint on the Dapr sidecar. In this case, it uses an HTTP POST to invoke the API. It's also possible to use gRPC.

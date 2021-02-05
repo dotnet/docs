@@ -66,7 +66,7 @@ Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correl
 
 A set of requests and responses that belong together is called a *trace*. Figure 9-3 shows a trace:
 
-![Traces and spans](media/observability/traces-and-spans.png)
+![Traces and spans](media/observability/traces-spans.png)
 
 **Figure 9-3**: Traces and spans
 

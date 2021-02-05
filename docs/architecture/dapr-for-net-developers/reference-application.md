@@ -15,13 +15,13 @@ But, first a little history.
 
 Several years ago, Microsoft, in partnership with leading community experts, released a popular guidance book, entitled [.NET Microservices for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf). Figure 3-1 shows the book:
 
-![Architecting containerized microservice .NET applications.](./media/architecting-microservices-book.png)
+![Architecting containerized microservice .NET applications.](./media/reference-application/architecting-microservices-book.png)
 
 **Figure 3-1**. .NET Microservices: Architecture for Containerized .NET Applications.
 
 The book dove deep into the principles, patterns, and best practices for building distributed applications. It included a full-featured microservice reference application that showcased the architectural concepts. Entitled, [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the application shows an eCommerce storefront that sells various .NET items, including clothing and coffee mugs.  Built in .NET Core, the application is cross-platform and can run in either Linux or Windows containers. Figure 3-2 shows the original eShop architecture.
 
-![eShopOnContainers reference application architecture.](./media/eshoponcontainers-architecture.png)
+![eShopOnContainers reference application architecture.](./media/reference-application/eshop-on-containers.png)
 
 **Figure 3-2**. Original `ShopOnContainers` reference application.
 
@@ -38,7 +38,7 @@ The eShopOnContainers reference application has been widely accepted across the 
 
 A alternative version of the eShop application accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The updated version evolves (or, *Daprizes*, if you will) the earlier eShopOnContainers application by integrating Dapr building blocks and components. Figure 3-3 shows the new streamlined solution architecture:  
 
-![eShopOnDapr reference application architecture.](./media/eshopondapr-architecture.png)
+![eShopOnDapr reference application architecture.](./media/reference-application/eshop-on-dapr.png)
 
 **Figure 3-3**. eShopOnDapr reference application architecture.
 
@@ -67,6 +67,10 @@ The focus of the eShopOnDapr reference application is Dapr. Therefore, the origi
 ## Benefits of applying Dapr to eShop
 
 If you could overlay the updated eShopOnDapr over the original eShopOnContainers, you would see a streamlined application. Larges amounts of complex plumbing code would be abstracted away by the Dapr runtime.
+
+![eShopOnDapr reference application architecture](./media/reference-application/eshop-on-dapr-buildingblocks.png)
+
+**Figure 3-4**. Modernized `eShopOnDapr` reference application
 
 Consider these improvements:
 

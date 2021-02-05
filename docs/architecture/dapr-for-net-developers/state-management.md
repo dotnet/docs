@@ -44,7 +44,7 @@ http://localhost:<dapr-port>/v1.0/state/<store-name>/
 
 Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr state store component named `statestore`.
 
-![Diagram of storing a key/value pair in a Dapr state store.](media/state-management/howitworks.png)
+![Diagram of storing a key/value pair in a Dapr state store.](media/state-management/state-management-flow.png)
 
 **Figure 5-1**. Storing a key/value pair in a Dapr state store.
 

@@ -27,7 +27,7 @@ Through an architecture of pluggable components, Dapr helps simplify plumbing co
 
 Figure 2-1 shows Dapr from 20,000 feet.
 
-![Dapr at 20,000 feet](./media/dapr-high-level.png)
+![Dapr at 20,000 feet](./media/dapr-at-20000-feet/dapr-high-level.png)
 **Figure 2-1**. Dapr at 20,000 feet.
 
 In the top row of the figure, note how Dapr provides language-specific SDKs for popular development platforms. Dapr v 1.0 includes supports Go, Node.js, Python, .NET, Java, and JavaScript. This book focuses on the Dapr .NET SDK, which also provides direct support for ASP.NET Core integration.
@@ -48,7 +48,7 @@ From our new perspective, we have a more detailed view of the Dapr **building bl
 
 A building block encapsulates a distributed application capability. You can access the functionality through the HTTP or gRPC APIs that we saw earlier. Figure 2-2 shows the available blocks for Dapr v 1.0.
 
-![Dapr building blocks](./media/building-blocks.png)
+![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks.png)
 
 **Figure 2-2**. Dapr building blocks.
 
@@ -66,7 +66,7 @@ The following table describes the services provided by each block.
 
 Building blocks abstract the implementation of distributed application capabilities from your services. Figure 2-3 shows this interaction.
 
-![Dapr building blocks](./media/building-block-integration.png)
+![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks-integration.png)
 
 **Figure 2-3**. Dapr building block integration.
 
@@ -160,7 +160,7 @@ As our jet completes it fly over of Dapr, we look back once more and can see how
 
 Dapr exposes its building blocks and components through a [sidecar architecture](https://docs.microsoft.com/azure/architecture/patterns/sidecar). A sidecar enables Dapr to run in a separate memory process or separate container alongside your service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
 
-![Sidecar architecture](./media/sidecar-generic.png)
+![Sidecar architecture](./media/dapr-at-20000-feet/sidecar-generic.png)
 
 **Figure 2-4**. Sidecar architecture.
 
@@ -174,7 +174,7 @@ For local development, the easiest way to get started is with [self-hosted mode]
 
 Figure 2-5 shows an application and Dapr hosted in two separate memory processes communicating via HTTP or gRPC.
 
-![Sidecar architecture](./media/self-hosted-dapr-sidecar.png)
+![Sidecar architecture](./media/dapr-at-20000-feet/self-hosted-dapr-sidecar.png)
 
 **Figure 2-5**. Self-hosted Dapr sidecar
 
@@ -182,7 +182,7 @@ By default, Dapr will install Docker containers for Redis and Zipkin to ensure b
 
 Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
 
-![Sidecar architecture](./media/kubernetes-hosted-dapr-sidecar.png)
+![Sidecar architecture](./media/dapr-at-20000-feet/kubernetes-hosted-dapr-sidecar.png)
 
 **Figure 2-6**. Kubernetes-hosted Dapr sidecar
 
@@ -190,7 +190,7 @@ Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/ove
 
 As you've seen, Dapr exposes a sidecar architecture to decouple your application from distributed application capabilities. Invoking a Dapr operation requires at least one out-of-process network call. Figure 2-7 presents an example of a Dapr traffic pattern.
 
-![Dapr traffic patterns](./media/dapr-traffic-patterns.png)
+![Dapr traffic patterns](./media/dapr-at-20000-feet/dapr-traffic-patterns.png)
 
 **Figure 2-7**. Dapr traffic patterns
 
@@ -214,7 +214,7 @@ A service mesh is a configurable infrastructure layer with built-in capabilities
 
 Figure 2-8 shows an application that implements service mesh technology.
 
-![Service Mesh](./media/service-mesh-with-side-car.png)
+![Service Mesh](./media/dapr-at-20000-feet/service-mesh-with-side-car.png)
 
 **Figure 2-8**. Service mesh with a side car.
 
@@ -228,7 +228,7 @@ As each works at a different level, both can work together in the same applicati
 
 Figure 2-9 shows an application that implements both Dapr and service mesh technology.
 
-![Dapr and Service Mesh together](./media/dapr-and-service-mesh.png)
+![Dapr and Service Mesh together](./media/dapr-at-20000-feet/dapr-and-service-mesh.png)
 
 **Figure 2-9**. Dapr and service mesh together.
 

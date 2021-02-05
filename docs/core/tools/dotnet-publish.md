@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 11/11/2020
+ms.date: 02/03/2021
 ---
 # dotnet publish
 
@@ -140,6 +140,8 @@ For more information, see the following resources:
 - **`-p:PublishReadyToRun=true`**
 
   Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../deploying/ready-to-run.md). Available since .NET Core 3.0 SDK.
+
+  To see warnings about missing dependencies that could cause runtime failures, use `-p:PublishReadyToRunShowWarnings=true`.
 
   We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
 

@@ -6,10 +6,11 @@ ms.custom: mvc
 ---
 # Learn to manage data collections using the generic list type
 
-This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
-class.
+This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601> class.
 
-This tutorial expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Windows, Linux, or macOS. A quick overview of the commands you'll use is in [Become familiar with the development tools](local-environment.md), with links to more details.
+## Prerequisites
+
+The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
 
 ## A basic list example
 

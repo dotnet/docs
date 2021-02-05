@@ -4,7 +4,7 @@ titleSuffix: ""
 description: Learn about the .NET project SDKs.
 ms.date: 09/17/2020
 ms.topic: conceptual
-no-loc: ["App.xaml", "Application.xaml", "ApplicationDefinition", "Page", "EmbeddedResource", "Compile", "None"]
+no-loc: ["EmbeddedResource", "Compile", "None"]
 ---
 # .NET project SDKs
 
@@ -20,7 +20,7 @@ The following SDKs are available:
 | `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) |
 | `Microsoft.NET.Sdk.Worker` | The .NET Worker Service SDK |
-| `Microsoft.NET.Sdk.WindowsDesktop` | The WinForms and WPF SDK\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
+| `Microsoft.NET.Sdk.WindowsDesktop` | The .NET [Desktop SDK](#msbuild-props-desktop.md), which includes Windows Forms (WinForms) and Windows Presentation Foundation (WPF).\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
 
@@ -92,16 +92,6 @@ The following table shows which elements and which [globs](https://en.wikipedia.
 
 > [!NOTE]
 > The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the [DefaultItemExcludes property](msbuild-props.md#defaultitemexcludes).
-
-### WPF includes and excludes
-
-The .NET Desktop SDK defines additional includes and excludes for common files when the `<UseWPF>` project property is set to `true`.
-
-| Element               | Include glob                 | Exclude glob                                                                                           | Remove glob  |
-|-----------------------|------------------------------|--------------------------------------------------------------------|--------------|
-| ApplicationDefinition | App.xaml or Application.xaml | N/A                                                                | N/A          |
-| Page                  | \*\*/\*.xaml                 | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc<br>Any XAML defined by *ApplicationDefinition* | N/A          |
-| None                  | N/A                          | N/A                                                                | \*\*/\*.xaml |
 
 ### Build errors
 

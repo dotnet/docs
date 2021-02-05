@@ -39,7 +39,7 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
+> **Rob Vettor**, Principal Cloud Solution Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
 > **Sander Molenkamp**, Principal Cloud Architect/Microsoft MVP - Info Support [])
 >
@@ -56,6 +56,8 @@ Participants and Reviewers:
 > **Ori Zohar**, Senior Program Manager, Azure Incubations, Microsoft
 
 Editors:
+
+> **David Pine**, Senior Content Developer, .NET team, Microsoft
 
 > **Maira Wenzel**, Program Manager, .NET team, Microsoft
 

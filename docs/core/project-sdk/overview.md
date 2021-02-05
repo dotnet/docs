@@ -4,6 +4,7 @@ titleSuffix: ""
 description: Learn about the .NET project SDKs.
 ms.date: 09/17/2020
 ms.topic: conceptual
+no-loc: ["App.xaml", "Application.xaml", "ApplicationDefinition", "Page", "EmbeddedResource", "Compile", "None"]
 ---
 # .NET project SDKs
 
@@ -92,13 +93,23 @@ The following table shows which elements and which [globs](https://en.wikipedia.
 > [!NOTE]
 > The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the [DefaultItemExcludes property](msbuild-props.md#defaultitemexcludes).
 
+### WPF includes and excludes
+
+The .NET Desktop SDK defines additional includes and excludes for common files when the `<UseWPF>` project property is set to `true`.
+
+| Element               | Include glob                 | Exclude glob                                                                                           | Remove glob  |
+|-----------------------|------------------------------|--------------------------------------------------------------------|--------------|
+| ApplicationDefinition | App.xaml or Application.xaml | N/A                                                                | N/A          |
+| Page                  | \*\*/\*.xaml                 | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc<br>Any XAML defined by *ApplicationDefinition* | N/A          |
+| None                  | N/A                          | N/A                                                                | \*\*/\*.xaml |
+
 ### Build errors
 
 If you explicitly define any of these items in your project file, you're likely to get a "NETSDK1022" build error similar to the following:
 
-  > Duplicate 'Compile' items were included. The .NET SDK includes 'Compile' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file.
+> Duplicate 'Compile' items were included. The .NET SDK includes 'Compile' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file.
 
-  > Duplicate 'EmbeddedResource' items were included. The .NET SDK includes 'EmbeddedResource' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultEmbeddedResourceItems' property to 'false' if you want to explicitly include them in your project file.
+> Duplicate 'EmbeddedResource' items were included. The .NET SDK includes 'EmbeddedResource' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultEmbeddedResourceItems' property to 'false' if you want to explicitly include them in your project file.
 
 To resolve the errors, do one of the following:
 

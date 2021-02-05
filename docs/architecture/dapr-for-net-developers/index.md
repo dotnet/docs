@@ -41,9 +41,9 @@ Authors:
 
 > **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
-> **Sander Molenkamp**, Principal Cloud Architect/Microsoft MVP - Info Support [])
+> **Sander Molenkamp**, Principal Cloud Architect/Microsoft MVP - [Info Support](https://www.infosupport.com)
 >
-> **Edwin van Wijk**, Principal Software Architect/Microsoft MVP - Info Support [])
+> **Edwin van Wijk**, Principal Solution Architect/Microsoft MVP - [Info Support](https://www.infosupport.com)
 
 Participants and Reviewers:
 

@@ -81,7 +81,7 @@ The following table shows which elements and which [globs](https://en.wikipedia.
 | Page                  | \*\*/\*.xaml                 | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc<br>Any XAML defined by *ApplicationDefinition* | N/A          |
 | None                  | N/A                          | N/A                                                                | \*\*/\*.xaml |
 
-For reference, here are the default include and exclude for all project types. For more information, see [Default includes and excludes](overview.md#default-includes-and-excludes).
+Here are the default include and exclude settings for all project types. For more information, see [Default includes and excludes](overview.md#default-includes-and-excludes).
 
 | Element           | Include glob                              | Exclude glob                                                  | Remove glob              |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|--------------------------|
@@ -91,7 +91,7 @@ For reference, here are the default include and exclude for all project types. F
 
 ### Errors related to "duplicate" items
 
-If you have XAML globs in your project or explicitly add files to your project, you'll possibly get one of the following errors:
+If you explicitly added files to your project, or have XAML globs to automatically include files in your project, you'll possibly get one of the following errors:
 
 * Duplicate 'ApplicationDefinition' items were included.
 * Duplicate 'Page' items were included.

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Computer.Info Object"
 title: "My.Computer.Info Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 

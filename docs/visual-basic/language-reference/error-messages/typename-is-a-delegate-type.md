@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32008: '<typename>' is a delegate type"
 title: "'<typename>' is a delegate type"
 ms.date: 07/20/2015
 f1_keywords:

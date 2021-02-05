@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TPL and traditional .NET asynchronous programming"
 title: "TPL and Traditional .NET Asynchronous Programming"
 ms.date: 03/30/2017
 dev_langs: 

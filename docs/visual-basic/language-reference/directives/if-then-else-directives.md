@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: #If...Then...#Else Directives"
 title: "#If...Then...#Else Directives"
 ms.date: 04/11/2018
 f1_keywords:

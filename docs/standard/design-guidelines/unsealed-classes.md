@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unsealed Classes"
 title: "Unsealed Classes"
 ms.date: "10/22/2008"
 helpviewer_keywords:

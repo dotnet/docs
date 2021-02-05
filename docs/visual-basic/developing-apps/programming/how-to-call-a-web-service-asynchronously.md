@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Call a Web Service Asynchronously (Visual Basic)"
 title: "How to: Call a Web Service Asynchronously"
 ms.date: 07/20/2015
 helpviewer_keywords:

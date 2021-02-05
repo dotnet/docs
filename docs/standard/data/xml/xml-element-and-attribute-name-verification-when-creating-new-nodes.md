@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML Element and Attribute Name Verification when Creating New Nodes"
 title: "XML Element and Attribute Name Verification when Creating New Nodes"
 ms.date: "03/30/2017"
 ms.assetid: b489f647-a175-4659-ada4-170058bb41d0

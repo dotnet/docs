@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unable to get serial port names because of an internal system error"
 title: "Unable to get serial port names because of an internal system error"
 ms.date: 07/20/2015
 ms.assetid: 789a1e94-28c2-4c20-8ee4-ad65fea37812

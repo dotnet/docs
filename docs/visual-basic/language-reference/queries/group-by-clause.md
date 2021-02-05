@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Group By Clause (Visual Basic)"
 title: "Group By Clause"
 ms.date: 07/20/2015
 f1_keywords: 

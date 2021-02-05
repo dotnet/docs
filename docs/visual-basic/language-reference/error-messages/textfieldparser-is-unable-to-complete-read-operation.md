@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded"
 title: "TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded"
 ms.date: 07/20/2015
 f1_keywords: 

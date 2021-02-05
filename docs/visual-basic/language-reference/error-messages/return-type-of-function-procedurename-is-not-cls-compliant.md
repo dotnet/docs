@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40027: Return type of function '<procedurename>' is not CLS-compliant"
 title: "Return type of function '<procedurename>' is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords:

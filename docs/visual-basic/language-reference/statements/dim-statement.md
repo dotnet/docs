@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dim statement (Visual Basic)"
 title: Dim statement
 ms.date: 05/12/2018
 f1_keywords:

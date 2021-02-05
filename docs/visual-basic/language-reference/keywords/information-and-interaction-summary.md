@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Information and Interaction Summary (Visual Basic)"
 title: "Information and Interaction Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 

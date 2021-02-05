@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30801: Labels that are numbers must be followed by colons"
 title: "Labels that are numbers must be followed by colons"
 ms.date: 07/20/2015
 f1_keywords:

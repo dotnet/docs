@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Numerics in .NET"
 title: "Numerics in .NET"
 ms.date: "10/18/2018"
 helpviewer_keywords: 

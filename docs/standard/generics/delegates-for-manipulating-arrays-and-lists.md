@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Delegates for Manipulating Arrays and Lists"
 title: "Generic Delegates for Manipulating Arrays and Lists"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

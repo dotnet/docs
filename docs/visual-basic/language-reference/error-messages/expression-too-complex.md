@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expression too complex"
 title: "Expression too complex"
 ms.date: 07/20/2015
 f1_keywords: 

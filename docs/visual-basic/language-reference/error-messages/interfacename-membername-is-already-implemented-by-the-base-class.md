@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42015: '<interfacename>.<membername>' is already implemented by the base class '<baseclassname>'. Re-implementation of <type> assumed"
 title: "'<interfacename>.<membername>' is already implemented by the base class '<baseclassname>'. Re-implementation of <type> assumed"
 ms.date: 07/20/2015
 f1_keywords:

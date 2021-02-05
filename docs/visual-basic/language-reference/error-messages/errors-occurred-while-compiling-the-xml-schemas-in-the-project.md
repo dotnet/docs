@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC36810: Errors occurred while compiling the XML schemas in the project"
 title: "Errors occurred while compiling the XML schemas in the project"
 ms.date: 07/20/2015
 f1_keywords:

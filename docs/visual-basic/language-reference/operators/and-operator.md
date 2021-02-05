@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: And Operator (Visual Basic)"
 title: "And Operator"
 ms.date: 07/20/2015
 f1_keywords: 

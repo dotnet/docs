@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Async (Visual Basic)"
 title: "Async"
 ms.date: 07/20/2015
 f1_keywords:

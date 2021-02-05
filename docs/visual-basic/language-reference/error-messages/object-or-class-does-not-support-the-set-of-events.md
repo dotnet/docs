@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object or class does not support the set of events"
 title: "Object or class does not support the set of events"
 ms.date: 07/20/2015
 f1_keywords:

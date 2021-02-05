@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Replacing a Principal Object"
 title: "Replacing a Principal Object"
 ms.date: 07/15/2020
 dev_langs: 

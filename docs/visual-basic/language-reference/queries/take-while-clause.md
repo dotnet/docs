@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Take While Clause (Visual Basic)"
 title: "Take While Clause"
 ms.date: 07/20/2015
 f1_keywords: 

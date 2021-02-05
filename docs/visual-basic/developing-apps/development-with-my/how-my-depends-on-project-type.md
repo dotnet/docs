@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How My Depends on Project Type (Visual Basic)"
 title: "How My Depends on Project Type"
 ms.date: 07/20/2015
 helpviewer_keywords: 

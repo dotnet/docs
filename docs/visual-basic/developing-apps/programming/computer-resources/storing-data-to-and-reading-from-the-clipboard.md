@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storing data to and reading from the Clipboard (Visual Basic)"
 title: "Storing data to and reading from the Clipboard"
 ms.date: 07/20/2015
 helpviewer_keywords: 

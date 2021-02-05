@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: A property or method call cannot include a reference to a private object, either as an argument or as a return value"
 title: "A property or method call cannot include a reference to a private object, either as an argument or as a return value"
 ms.date: 07/20/2015
 f1_keywords:

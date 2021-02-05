@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define and Use Custom Numeric Format Providers"
 title: "How to: Define and Use Custom Numeric Format Providers"
 ms.date: "03/30/2017"
 dev_langs: 

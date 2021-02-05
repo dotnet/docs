@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Work with Buffers in .NET"
 title: "System.Buffers - .NET"
 ms.date: 12/05/2019
 helpviewer_keywords: 

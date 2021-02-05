@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using an AsyncCallback Delegate to End an Asynchronous Operation"
 title: "Using an AsyncCallback Delegate to End an Asynchronous Operation"
 ms.date: "03/30/2017"
 dev_langs: 

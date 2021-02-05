@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Wrap EAP Patterns in a Task"
 title: "How to: Wrap EAP Patterns in a Task"
 ms.date: "03/30/2017"
 dev_langs: 

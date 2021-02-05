@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Boolean Data Type (Visual Basic)"
 title: "Boolean Data Type"
 ms.date: 07/20/2015
 f1_keywords: 

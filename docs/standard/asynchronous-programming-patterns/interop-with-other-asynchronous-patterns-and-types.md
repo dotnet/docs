@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interop with Other Asynchronous Patterns and Types"
 title: "Interop with Other Asynchronous Patterns and Types"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sort Elements in a Sequence"
 title: "Sort Elements in a Sequence"
 ms.date: "03/30/2017"
 dev_langs: 

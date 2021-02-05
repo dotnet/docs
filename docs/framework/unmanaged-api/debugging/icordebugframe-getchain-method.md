@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFrame::GetChain Method"
 title: "ICorDebugFrame::GetChain Method"
 ms.date: "03/30/2017"
 api_name: 

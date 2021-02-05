@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugInstanceFieldSymbol::GetOffset Method"
 title: "ICorDebugInstanceFieldSymbol::GetOffset Method"
 ms.date: "03/30/2017"
 ms.assetid: 7e470150-2b92-4425-989c-315f48964fd2

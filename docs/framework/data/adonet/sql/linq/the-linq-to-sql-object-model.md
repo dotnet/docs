@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: The LINQ to SQL Object Model"
 title: "The LINQ to SQL Object Model"
 ms.date: "03/30/2017"
 dev_langs: 

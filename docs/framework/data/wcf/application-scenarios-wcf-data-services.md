@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Scenarios (WCF Data Services)"
 title: "Application Scenarios (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::ControlCTrap Method"
 title: "ICorDebugManagedCallback::ControlCTrap Method"
 ms.date: "03/30/2017"
 api_name: 

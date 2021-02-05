@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugController::CanCommitChanges Method"
 title: "ICorDebugController::CanCommitChanges Method"
 ms.date: "03/30/2017"
 api_name:

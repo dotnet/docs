@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Typical Steps for Using LINQ to SQL"
 title: "Typical Steps for Using LINQ to SQL"
 ms.date: "03/30/2017"
 ms.assetid: 9a88bd51-bd74-48f7-a9b1-f650e8d55a3e

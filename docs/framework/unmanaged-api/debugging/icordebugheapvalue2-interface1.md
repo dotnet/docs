@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugHeapValue2 Interface"
 title: "ICorDebugHeapValue2 Interface"
 ms.date: "03/30/2017"
 api_name: 

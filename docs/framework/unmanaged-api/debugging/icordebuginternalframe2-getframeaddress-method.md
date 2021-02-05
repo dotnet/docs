@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugInternalFrame2::GetFrameAddress Method"
 title: "ICorDebugInternalFrame2::GetFrameAddress Method"
 ms.date: "03/30/2017"
 api_name: 

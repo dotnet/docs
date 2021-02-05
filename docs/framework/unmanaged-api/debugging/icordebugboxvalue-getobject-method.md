@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugBoxValue::GetObject Method"
 title: "ICorDebugBoxValue::GetObject Method"
 ms.date: "03/30/2017"
 api_name: 

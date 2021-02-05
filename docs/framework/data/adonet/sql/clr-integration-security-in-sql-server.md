@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLR Integration Security in SQL Server"
 title: "CLR Integration Security in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: 489fe096-fd1d-42de-8438-bf7aed46aea2

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Bind Data to Windows Presentation Foundation Elements (WCF Data Services)"
 title: "How to: Bind Data to Windows Presentation Foundation Elements (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 

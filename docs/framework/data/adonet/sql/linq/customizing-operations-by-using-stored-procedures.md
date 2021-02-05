@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Customizing Operations By Using Stored Procedures"
 title: "Customizing Operations By Using Stored Procedures"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CertFreeAuthenticodeSignerInfo Function"
 title: "CertFreeAuthenticodeSignerInfo Function"
 ms.date: "03/30/2017"
 api_name:

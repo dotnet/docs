@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add a data service reference (WCF Data Services)"
 title: "How to: Add a Data Service Reference (WCF Data Services)"
 ms.date: 08/24/2018
 helpviewer_keywords:

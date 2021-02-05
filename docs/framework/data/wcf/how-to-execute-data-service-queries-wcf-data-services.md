@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Execute Data Service Queries (WCF Data Services)"
 title: "How to: Execute Data Service Queries (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 

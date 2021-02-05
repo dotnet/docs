@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: What You Can Do With LINQ to SQL"
 title: "What You Can Do With LINQ to SQL"
 ms.date: "03/30/2017"
 dev_langs: 

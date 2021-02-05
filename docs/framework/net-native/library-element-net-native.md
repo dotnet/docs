@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <Library> Element (.NET Native)"
 title: "<Library> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: f642276b-33fb-4a81-b882-8808c31ba69e

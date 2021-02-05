@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugMergedAssemblyRecord::GetPublicKeyToken Method"
 title: "ICorDebugMergedAssemblyRecord::GetPublicKeyToken Method"
 ms.date: "03/30/2017"
 ms.assetid: 72020b72-9611-4bc3-b1e7-5a16b023bfa3

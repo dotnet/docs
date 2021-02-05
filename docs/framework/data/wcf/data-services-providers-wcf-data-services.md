@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Services Providers (WCF Data Services)"
 title: "Data Services Providers (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

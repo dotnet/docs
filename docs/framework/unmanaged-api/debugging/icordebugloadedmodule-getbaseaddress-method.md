@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugLoadedModule::GetBaseAddress Method"
 title: "ICorDebugLoadedModule::GetBaseAddress Method"
 ms.date: "03/30/2017"
 ms.assetid: 7c036772-d58a-47f1-a5fa-31779898ef0d

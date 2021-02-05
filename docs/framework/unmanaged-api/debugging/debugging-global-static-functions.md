@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging Global Static Functions"
 title: "Debugging Global Static Functions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

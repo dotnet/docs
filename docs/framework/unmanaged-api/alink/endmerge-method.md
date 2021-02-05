@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EndMerge Method"
 title: "EndMerge Method"
 ms.date: "03/30/2017"
 api_name: 

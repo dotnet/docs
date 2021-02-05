@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Database Mirroring in SQL Server"
 title: "Database Mirroring in SQL Server"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Enabling Cross-Database Access in SQL Server"
 title: "Enabling Cross-Database Access in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: 10663fb6-434c-4c81-8178-ec894b9cf895

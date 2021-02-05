@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugClass2::SetJMCStatus Method"
 title: "ICorDebugClass2::SetJMCStatus Method"
 ms.date: "03/30/2017"
 api_name: 

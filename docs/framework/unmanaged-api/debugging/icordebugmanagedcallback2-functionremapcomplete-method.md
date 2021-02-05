@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback2::FunctionRemapComplete Method"
 title: "ICorDebugManagedCallback2::FunctionRemapComplete Method"
 ms.date: "03/30/2017"
 api_name: 

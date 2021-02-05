@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add Query Options to a Data Service Query (WCF Data Services)"
 title: "How to: Add Query Options to a Data Service Query (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 

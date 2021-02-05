@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generating the Data Service Client Library (WCF Data Services)"
 title: "Generating the Data Service Client Library (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

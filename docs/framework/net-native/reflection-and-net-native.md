@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reflection and .NET Native"
 title: "Reflection and .NET Native"
 ms.date: "03/30/2017"
 ms.assetid: 91c9eae4-c641-476c-a06e-d7ce39709763

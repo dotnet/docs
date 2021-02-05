@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CertVerifyAuthenticodeLicense Function"
 title: "CertVerifyAuthenticodeLicense Function"
 ms.date: "03/30/2017"
 api_name:

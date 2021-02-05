@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Using Only Stored Procedures (Visual Basic)"
 title: "Walkthrough: Using Only Stored Procedures (Visual Basic)"
 ms.date: "03/30/2017"
 dev_langs: 

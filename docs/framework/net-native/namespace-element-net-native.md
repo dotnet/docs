@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <Namespace> Element (.NET Native)"
 title: "<Namespace> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 57c614e5-18a9-4e87-bfd5-d0fe3396a192

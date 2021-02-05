@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFunction::GetToken Method"
 title: "ICorDebugFunction::GetToken Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugHandleValue::GetHandleType Method"
 title: "ICorDebugHandleValue::GetHandleType Method"
 ms.date: "03/30/2017"
 api_name: 

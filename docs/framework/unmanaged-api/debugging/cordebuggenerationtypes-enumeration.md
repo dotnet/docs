@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugGenerationTypes Enumeration"
 title: "CorDebugGenerationTypes Enumeration"
 ms.date: "03/30/2017"
 api_name: 

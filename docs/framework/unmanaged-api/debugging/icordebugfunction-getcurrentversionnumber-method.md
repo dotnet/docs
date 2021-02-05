@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFunction::GetCurrentVersionNumber Method"
 title: "ICorDebugFunction::GetCurrentVersionNumber Method"
 ms.date: "03/30/2017"
 api_name: 

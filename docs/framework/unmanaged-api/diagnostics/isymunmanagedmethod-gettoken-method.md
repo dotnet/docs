@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedMethod::GetToken Method"
 title: "ISymUnmanagedMethod::GetToken Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymENCUnmanagedMethod::GetLineFromOffset Method"
 title: "ISymENCUnmanagedMethod::GetLineFromOffset Method"
 ms.date: "03/30/2017"
 api_name: 

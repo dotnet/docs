@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRAssemblyIdentityManager::IsStronglyNamed Method"
 title: "ICLRAssemblyIdentityManager::IsStronglyNamed Method"
 ms.date: "03/30/2017"
 api_name: 

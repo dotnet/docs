@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedScope::GetParent Method"
 title: "ISymUnmanagedScope::GetParent Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CREATE_ASM_NAME_OBJ_FLAGS Enumeration"
 title: "CREATE_ASM_NAME_OBJ_FLAGS Enumeration"
 ms.date: "03/30/2017"
 api_name: 

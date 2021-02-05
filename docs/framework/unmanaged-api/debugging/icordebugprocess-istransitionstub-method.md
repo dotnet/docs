@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess::IsTransitionStub Method"
 title: "ICorDebugProcess::IsTransitionStub Method"
 ms.date: "03/30/2017"
 api_name: 

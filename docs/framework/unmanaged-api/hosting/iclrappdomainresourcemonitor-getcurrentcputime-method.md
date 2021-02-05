@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRAppDomainResourceMonitor::GetCurrentCpuTime Method"
 title: "ICLRAppDomainResourceMonitor::GetCurrentCpuTime Method"
 ms.date: "03/30/2017"
 api_name: 

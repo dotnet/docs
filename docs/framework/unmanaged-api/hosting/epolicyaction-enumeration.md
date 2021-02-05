@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EPolicyAction Enumeration"
 title: "EPolicyAction Enumeration"
 ms.date: "03/30/2017"
 api_name: 

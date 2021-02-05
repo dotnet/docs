@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugStackWalk::GetContext Method"
 title: "ICorDebugStackWalk::GetContext Method"
 ms.date: "03/30/2017"
 api_name: 

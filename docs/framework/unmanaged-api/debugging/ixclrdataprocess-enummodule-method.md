@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataProcess::EnumModule Method"
 title: "IXCLRDataProcess::EnumModule Method"
 ms.date: "01/16/2019"
 api.name:

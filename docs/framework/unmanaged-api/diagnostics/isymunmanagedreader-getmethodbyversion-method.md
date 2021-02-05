@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader::GetMethodByVersion Method"
 title: "ISymUnmanagedReader::GetMethodByVersion Method"
 ms.date: "03/30/2017"
 api_name: 

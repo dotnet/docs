@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::OpenScope Method"
 title: "ISymUnmanagedWriter::OpenScope Method"
 ms.date: "03/30/2017"
 api_name: 

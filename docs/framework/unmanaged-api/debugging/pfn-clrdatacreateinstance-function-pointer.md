@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PFN_CLRDataCreateInstance Function Pointer"
 title: "PFN_CLRDataCreateInstance Function Pointer"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread::ClearCurrentException Method"
 title: "ICorDebugThread::ClearCurrentException Method"
 ms.date: "03/30/2017"
 api_name: 

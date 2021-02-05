@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataMethodInstance::GetILAddressMap Method"
 title: "IXCLRDataMethodInstance::GetILAddressMap Method"
 ms.date: "01/16/2019"
 api.name:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fusion Global Static Functions"
 title: "Fusion Global Static Functions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

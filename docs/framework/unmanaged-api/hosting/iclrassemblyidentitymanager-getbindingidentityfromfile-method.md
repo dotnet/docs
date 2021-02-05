@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRAssemblyIdentityManager::GetBindingIdentityFromFile Method"
 title: "ICLRAssemblyIdentityManager::GetBindingIdentityFromFile Method"
 ms.date: "03/30/2017"
 api_name: 

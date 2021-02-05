@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hosting Global Static Functions"
 title: "Hosting Global Static Functions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

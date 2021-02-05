@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread::GetActiveChain Method"
 title: "ICorDebugThread::GetActiveChain Method"
 ms.date: "03/30/2017"
 api_name: 

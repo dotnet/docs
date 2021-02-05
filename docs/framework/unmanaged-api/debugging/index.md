@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging (Unmanaged API Reference)"
 title: "Debugging (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

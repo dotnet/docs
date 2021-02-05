@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetAssemblyImageBytes Method"
 title: "ICorDebugSymbolProvider::GetAssemblyImageBytes Method"
 ms.date: "03/30/2017"
 ms.assetid: 3db215aa-e180-4f70-8d23-6d5a0ffbc8e5

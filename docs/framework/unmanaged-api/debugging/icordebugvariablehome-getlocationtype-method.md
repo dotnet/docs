@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableHome::GetLocationType Method"
 title: "ICorDebugVariableHome::GetLocationType Method"
 ms.date: "03/30/2017"
 api_name: 

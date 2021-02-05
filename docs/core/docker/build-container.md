@@ -140,16 +140,16 @@ Before adding the .NET Core app to the Docker image, first it must be published.
 dotnet publish -c Release
 ```
 
-This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\App\bin\Release\netcoreapp5.0\publish\`
+This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\App\bin\Release\net5.0\publish\`
 
 #### [Windows](#tab/windows)
 
 From the *App* folder, get a directory listing of the publish folder to verify that the *NetCore.Docker.dll* file was created.
 
 ```powershell
-dir .\bin\Release\netcoreapp5.0\publish\
+dir .\bin\Release\net5.0\publish\
 
-    Directory: C:\Users\dapine\App\bin\Release\netcoreapp5.0\publish
+    Directory: C:\Users\dapine\App\bin\Release\net5.0\publish
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -165,7 +165,7 @@ Mode                LastWriteTime         Length Name
 Use the `ls` command to get a directory listing and verify that the *NetCore.Docker.dll* file was created.
 
 ```bash
-me@DESKTOP:/docker-working/app$ ls bin/Release/netcoreapp5.0/publish
+me@DESKTOP:/docker-working/app$ ls bin/Release/net5.0/publish
 NetCore.Docker.deps.json  NetCore.Docker.dll  NetCore.Docker.pdb  NetCore.Docker.runtimeconfig.json
 ```
 
@@ -196,7 +196,7 @@ docker-working
         ├──Program.cs
         ├──bin
         │   └──Release
-        │       └──netcoreapp5.0
+        │       └──net5.0
         │           └──publish
         │               ├──NetCore.Docker.deps.json
         │               ├──NetCore.Docker.exe
@@ -225,7 +225,7 @@ mcr.microsoft.com/dotnet/aspnet         5.0                 e6780479db63        
 Notice that the two images share the same **IMAGE ID** value. The value is the same between both images because the only command in the *Dockerfile* was to base the new image on an existing image. Let's add three commands to the *Dockerfile*. Each command creates a new image layer with the final command representing the **counter-image** repository entry points to.
 
 ```dockerfile
-COPY bin/Release/netcoreapp5.0/publish/ App/
+COPY bin/Release/net5.0/publish/ App/
 WORKDIR /App
 ENTRYPOINT ["dotnet", "NetCore.Docker.dll"]
 ```
@@ -243,7 +243,7 @@ docker build -t counter-image -f Dockerfile .
 Sending build context to Docker daemon  1.117MB
 Step 1/4 : FROM mcr.microsoft.com/dotnet/aspnet:5.0
  ---> e6780479db63
-Step 2/4 : COPY bin/Release/netcoreapp5.0/publish/ App/
+Step 2/4 : COPY bin/Release/net5.0/publish/ App/
  ---> d1732740eed2
 Step 3/4 : WORKDIR /App
  ---> Running in b1701a42f3ff

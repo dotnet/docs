@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Math Canonical Functions"
 title: "Math Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: 6f6cddc6-b561-4ebe-84b6-841ef5b4113b

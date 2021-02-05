@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Call Database Functions"
 title: "How to: Call Database Functions"
 ms.date: "03/30/2017"
 dev_langs: 

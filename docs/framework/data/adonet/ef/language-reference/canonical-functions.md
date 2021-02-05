@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Canonical Functions"
 title: "Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: bbcc9928-36ea-4dff-9e31-96549ffed958

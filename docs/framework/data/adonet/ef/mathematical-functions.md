@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mathematical Functions"
 title: "Mathematical Functions"
 ms.date: "03/30/2017"
 ms.assetid: b040c7cb-156d-40f2-9152-61065b18148c

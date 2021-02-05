@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <enableWebScript>"
 title: "<enableWebScript>"
 ms.date: "03/30/2017"
 ms.assetid: 9c7e96e1-af70-4e6e-ac5c-d67929dddbaa

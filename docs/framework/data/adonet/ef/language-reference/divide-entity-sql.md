@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: / (Divide) (Entity SQL)"
 title: "- (Divide) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: ef48c368-f3ed-4275-8ada-4e9649781262

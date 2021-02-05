@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <peerTransport>"
 title: "<peerTransport>"
 ms.date: "03/30/2017"
 ms.assetid: c1a5013a-9dd4-4a27-b114-795b8b323177

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLR Method to Canonical Function Mapping"
 title: "CLR Method to Canonical Function Mapping"
 ms.date: "03/30/2017"
 ms.assetid: e3363261-2cb8-4b54-9555-2870be99b929

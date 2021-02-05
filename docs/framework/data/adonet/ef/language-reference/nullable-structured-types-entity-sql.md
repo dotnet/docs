@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Nullable Structured Types (Entity SQL)"
 title: "Nullable Structured Types (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: ae006fa9-997e-45bb-8a04-a7f62026171e

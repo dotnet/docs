@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WHERE (Entity SQL)"
 title: "WHERE (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: a8e1061e-0028-4a6f-8f19-b9f48e96c4b8

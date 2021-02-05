@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <claimTypeRequired>"
 title: "<claimTypeRequired>"
 ms.date: "03/30/2017"
 ms.assetid: c469d71f-6c77-4a24-97aa-53efa126ceef

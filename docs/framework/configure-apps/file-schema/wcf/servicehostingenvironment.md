@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <serviceHostingEnvironment>"
 title: "<serviceHostingEnvironment>"
 ms.date: "03/30/2017"
 ms.assetid: 4f8a7c4f-e735-4987-979a-b74fcdae2652

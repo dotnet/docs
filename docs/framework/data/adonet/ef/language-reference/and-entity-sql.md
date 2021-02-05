@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &amp;&amp; (AND) (Entity SQL)"
 title: "&amp;&amp; (AND) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: e7d24213-471d-4807-b85e-570375df89b5

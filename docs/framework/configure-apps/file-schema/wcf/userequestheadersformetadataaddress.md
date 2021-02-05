@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <useRequestHeadersForMetadataAddress>"
 title: "<useRequestHeadersForMetadataAddress>"
 ms.date: "03/30/2017"
 ms.assetid: 679f0eae-f353-44d1-b42d-a9e247509774

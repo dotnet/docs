@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SET (Entity SQL)"
 title: "SET (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 28b4deac-c7e4-4f09-b428-4d352ef2dc94

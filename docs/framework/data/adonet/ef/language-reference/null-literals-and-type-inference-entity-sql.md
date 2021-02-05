@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Null Literals and Type Inference (Entity SQL)"
 title: "Null Literals and Type Inference (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: edd56afb-af1b-4e7d-b210-cb8998143426

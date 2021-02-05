@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Encoding"
 title: "Message Encoding"
 ms.date: "03/30/2017"
 ms.assetid: f30ee941-aca9-4c67-82a5-421568496f07

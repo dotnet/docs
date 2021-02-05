@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <add> of <participants>"
 title: "<add> of <participants>"
 ms.date: "03/30/2017"
 ms.topic: "reference"

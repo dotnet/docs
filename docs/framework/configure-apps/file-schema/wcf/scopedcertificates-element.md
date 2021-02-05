@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <scopedCertificates> Element"
 title: "<scopedCertificates> Element"
 ms.date: "03/30/2017"
 ms.assetid: c7b6fc35-d4b2-4c18-98bd-83e09591f1d3

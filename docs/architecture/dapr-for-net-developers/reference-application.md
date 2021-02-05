@@ -15,7 +15,7 @@ But, first a little history.
 
 Several years ago, Microsoft, in partnership with leading community experts, released a popular guidance book, entitled [.NET Microservices for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf). Figure 3-1 shows the book:
 
-![Architecting containerized microservice .NET applications.](./media/architecting-microservices-book.png)
+![Architecting containerized microservice .NET applications.](./media/reference-application/architecting-microservices-book.png)
 
 **Figure 3-1**. .NET Microservices: Architecture for Containerized .NET Applications.
 

@@ -176,7 +176,7 @@ Figure 2-5 shows an application and Dapr hosted in two separate memory processes
 
 ![Sidecar architecture](./media/dapr-at-20000-feet/self-hosted-dapr-sidecar.png)
 
-**Figure 2-5**. Self-hosted Dapr sidecar
+**Figure 2-5**. Self-hosted Dapr sidecar.
 
 By default, Dapr will install Docker containers for Redis and Zipkin to ensure building blocks such as state management and observability work out of the box. If you don't want to install Docker on your local machine, you can even [run Dapr in self-hosted mode without any Docker containers](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). However, you must install default components such as Redis for state management and pub/sub manually.
 
@@ -184,7 +184,7 @@ Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/ove
 
 ![Sidecar architecture](./media/dapr-at-20000-feet/kubernetes-hosted-dapr-sidecar.png)
 
-**Figure 2-6**. Kubernetes-hosted Dapr sidecar
+**Figure 2-6**. Kubernetes-hosted Dapr sidecar.
 
 ## Dapr performance considerations
 
@@ -192,7 +192,7 @@ As you've seen, Dapr exposes a sidecar architecture to decouple your application
 
 ![Dapr traffic patterns](./media/dapr-at-20000-feet/dapr-traffic-patterns.png)
 
-**Figure 2-7**. Dapr traffic patterns
+**Figure 2-7**. Dapr traffic patterns.
 
 Looking at the previous figure, one might question the latency and overhead incurred for each call.  
 

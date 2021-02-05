@@ -24,7 +24,7 @@ To start, let's rewind and look at the past 15 years. During this period, we typ
 
 ![Monolithic architecture.](./media/the-world-is-distributed/monolithic-design.png)
 
-**Figure 1-1** : Monolithic architecture.
+**Figure 1-1**. Monolithic architecture.
 
 Note how the modules for Ordering, Identity, and Marketing execute in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTful interfaces.
 
@@ -58,7 +58,7 @@ An early attempt to gain speed and agility came in the form of [Service Oriented
 
 ![SOA.](./media/the-world-is-distributed/soa-basic.png)
 
-**Figure 1-2** SOA architecture.
+**Figure 1-2**. SOA architecture.
 
 With SOA, centralized service providers registered with the ESB. Business logic would be built into the ESB to integrate providers and consumers. Service consumers could then find and communicate with these providers using the ESB.
 
@@ -68,7 +68,7 @@ Nowadays, many organizations have realized speed and agility by adopting a distr
 
 ![Distributed architecture.](./media/the-world-is-distributed/distributed-design.png)
 
-**Figure 1-3** : Distributed architecture.
+**Figure 1-3**. Distributed architecture.
 
 Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a single database shared by multiple services, each service owns a private database. Other services cannot access this database directly and can only get to data that is exposed through the public API of the service that owns it. Note how some services require a full relational database, but others, a NoSQL datastore. The Basket service stores its state in a distributed key/value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to back-end services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 

@@ -70,7 +70,7 @@ If you could overlay the updated eShopOnDapr over the original eShopOnContainers
 
 ![eShopOnDapr reference application architecture](./media/reference-application/eshop-on-dapr-buildingblocks.png)
 
-**Figure 3-4**. Modernized `eShopOnDapr` reference application
+**Figure 3-4**. Modernized `eShopOnDapr` reference application.
 
 Consider these improvements:
 

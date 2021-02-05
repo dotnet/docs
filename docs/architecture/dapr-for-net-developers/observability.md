@@ -39,7 +39,7 @@ Dapr provides [collectors](https://docs.dapr.io/operations/monitoring/open-telem
 
 ![Dapr observability architecture](media/observability/observability-architecture.png)
 
-**Figure 9-1**: Dapr observability architecture
+**Figure 9-1**. Dapr observability architecture.
 
 1. Service A calls an operation on Service B. The call is routed from a Dapr sidecar for Service A to a sidecar for Service B.
 1. When Service B completes the operation, a response is sent back to Service A through the Dapr sidecars. They gather and publish all available telemetry for every request and response.
@@ -57,7 +57,7 @@ Dapr uses the [W3C Trace Context](https://www.w3.org/TR/trace-context) to correl
 
 ![W3C Trace Context example](media/observability/w3c-trace-context.png)
 
-**Figure 9-2**: W3C Trace Context example
+**Figure 9-2**. W3C Trace Context example.
 
 1. Service A invokes an operation on Service B. As Service A starts the call, Dapr creates a unique trace context and injects it into the request.
 1. Service B receives the request and invokes an operation on Service C. Dapr detects that the incoming request contains a trace context and propagates it by injecting it into the outgoing request to Service C.  
@@ -68,7 +68,7 @@ A set of requests and responses that belong together is called a *trace*. Figure
 
 ![Traces and spans](media/observability/traces-spans.png)
 
-**Figure 9-3**: Traces and spans
+**Figure 9-3**. Traces and spans.
 
 In the figure, note how the trace represents a unique application transaction that takes place across many services. A trace is a collection of *spans*. Each span represents a single operation or unit of work done within the trace. Spans are the requests and responses that are sent between services that implement the unique transaction.
 
@@ -195,33 +195,25 @@ spec:
 
 ##### Inspect the telemetry in Zipkin
 
-Once the application is started, the Dapr sidecars will emit telemetry to the Zipkin server. To inspect this telemetry, point a web-browser to [http://localhost:32411](http://localhost:32411). You'll see the Zipkin web frontend, as shown in Figure 9-2:
+Once the application is started, the Dapr sidecars will emit telemetry to the Zipkin server. To inspect this telemetry, point a web-browser to [http://localhost:32411](http://localhost:32411). You'll see the Zipkin web frontend:
 
 ![The Zipkin start page](media/observability/zipkin.png)
 
- **Figure 9-1**: The Zipkin start page
-
-On the *Find a trace* tab, you can query traces. Pressing the *RUN QUERY* button without specifying any restrictions will show all the ingested *traces*, as shown in Figure 9-3:
+On the *Find a trace* tab, you can query traces. Pressing the *RUN QUERY* button without specifying any restrictions will show all the ingested *traces*:
 
 ![A list of traces](media/observability/zipkin-traces-overview.png)
 
-**Figure 9-3**: A list of traces
-
-Clicking the *SHOW* button next to a specific trace, will show the details of that trace, as shown in Figure 9-4:
+Clicking the *SHOW* button next to a specific trace, will show the details of that trace:
 
 ![The details of a trace](media/observability/zipkin-trace-details.png)
-
-**Figure 9-4**: The details of a trace
 
 Each item on the details page, is a span that represents a request that is part of the selected trace.
 
 ##### Inspect the dependencies between services
 
-Because Dapr sidecars handle traffic between services, Zipkin can use the trace information to determine the dependencies between the services. To see it in action, go to the *Dependencies* tab on the Zipkin web page and click the button with the magnifying glass. Zipkin will show an overview of the services and their dependencies, as seen in Figure 9-5:
+Because Dapr sidecars handle traffic between services, Zipkin can use the trace information to determine the dependencies between the services. To see it in action, go to the *Dependencies* tab on the Zipkin web page and click the button with the magnifying glass. Zipkin will show an overview of the services and their dependencies:
 
 ![A dependency graph in Zipkin](media/observability/zipkin-dependencies.png)
-
-**Figure 9-5**: A dependency graph in Zipkin
 
 The animated dots on the lines between the services represent requests and move from source to destination. Red dots indicate a failed request.
 
@@ -261,11 +253,11 @@ Check out the Jaeger and New Relic websites for more information on how to use t
 
 ### Metrics
 
-Metrics provide insight into performance and resource consumption. Under the hood, Dapr emits a wide collection of system and runtime metrics. Dapr uses [Prometheus](https://prometheus.io/) as a metric standard. Dapr sidecars and system services, expose a metrics endpoint on port `9090`. A *Prometheus scraper* calls this endpoint at a predefined interval to collect metrics. The scraper sends metric values to a monitoring backend. Figure 9-6 shows the scraping process:
+Metrics provide insight into performance and resource consumption. Under the hood, Dapr emits a wide collection of system and runtime metrics. Dapr uses [Prometheus](https://prometheus.io/) as a metric standard. Dapr sidecars and system services, expose a metrics endpoint on port `9090`. A *Prometheus scraper* calls this endpoint at a predefined interval to collect metrics. The scraper sends metric values to a monitoring backend. Figure 9-4 shows the scraping process:
 
 ![Scraping Prometheus metrics](media/observability/prometheus-scraper.png)
 
-**Figure 9-6**: Scraping Prometheus metrics
+**Figure 9-4**. Scraping Prometheus metrics.
 
 In the above figure, each sidecar and system service exposes a metric endpoint that listens on port 9090. The Prometheus Metrics Scrapper captures metrics from each endpoint and published the information to the monitoring backend.  
 
@@ -311,11 +303,9 @@ spec:
 
 #### Visualizing Dapr metrics
 
-With the Prometheus scraper collecting and publishing metrics into the monitoring backend, how do you make sense of the raw data? A popular visualization tool for analyzing metrics is [Grafana](https://grafana.com/grafana/). With Grafana, you can create dashboards from the available metrics. Figure 9-7 shows an example of a dashboard displaying Dapr system services metrics:
+With the Prometheus scraper collecting and publishing metrics into the monitoring backend, how do you make sense of the raw data? A popular visualization tool for analyzing metrics is [Grafana](https://grafana.com/grafana/). With Grafana, you can create dashboards from the available metrics. Here's an example of a dashboard displaying Dapr system services metrics:
 
 ![Grafana dashboard displaying Dapr system services metrics](media/observability/grafana-sample.png)
-
-**Figure 9-7**: Grafana dashboard displaying Dapr system services metrics
 
 The Dapr documentation includes a [tutorial for installing Prometheus and Grafana](https://docs.dapr.io/operations/monitoring/grafana/).
 
@@ -453,21 +443,17 @@ For Dapr application running in Kubernetes, use the following command:
 dapr dashboard -k
 ```
 
-The dashboard opens with an overview of all services in your application that have a Dapr sidecar. Figure 9-7 shows the Dapr dashboard for the eShopOnDapr application running in Kubernetes:
+The dashboard opens with an overview of all services in your application that have a Dapr sidecar. The following screenshot shows the Dapr dashboard for the eShopOnDapr application running in Kubernetes:
 
 ![Dapr dashboard overview page](media/observability/dapr-dashboard-overview.png)
 
-**Figure 9-7**: Dapr dashboard overview page
-
 The Dapr dashboard is invaluable when troubleshooting a Dapr application. It provides information about Dapr sidecars and system services. You can drill down into the configuration of each service, including the logging entries.
 
-The dashboard also shows the configured components (and their configuration) for your application. Figure 9-8 shows an example of the Dapr Components page:
+The dashboard also shows the configured components (and their configuration) for your application:
 
 ![Dapr dashboard components page](media/observability/dapr-dashboard-components.png)
 
-**Figure 9-8**: Dapr dashboard components page
-
-There's a large amount of available information from the dashboard. You can discover it is by running a Dapr application and browsing the dashboard. You can use the accompanying eShopOnDapr application to start.
+There's a large amount of information available through the dashboard. You can discover it by running a Dapr application and browsing the dashboard. You can use the accompanying eShopOnDapr application to start.
 
 Check out the [Dapr dashboard CLI command reference](https://docs.dapr.io/reference/cli/dapr-dashboard/) in the Dapr docs for more information on the Dapr dashboard commands.
 
@@ -483,11 +469,9 @@ Observability in accompanying eShopOnDapr reference application consists of seve
 
 ### Custom health dashboard
 
-The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives insight into the health of the eShop services. This dashboard doesn't use the Dapr health API but uses the built-in [health checks mechanism](https://docs.microsoft.com/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-3.1) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services. For example, a service that uses a database also provides the health status of this database as shown in Figure 9-9:
+The **WebStatus** project in eShopOnDapr is a custom health dashboard that gives insight into the health of the eShop services. This dashboard doesn't use the Dapr health API but uses the built-in [health checks mechanism](https://docs.microsoft.com/aspnet/core/host-and-deploy/health-checks?view=aspnetcore-3.1) of ASP.NET Core. The dashboard not only provides the health status of the services, but also the health of the dependencies of the services. For example, a service that uses a database also provides the health status of this database as shown in the following screenshot:
 
 ![eShopOnDapr custom health dashboard](media/observability/eshop-health-dashboard.png)
-
-**Figure 9-9**: eShopOnDapr custom health dashboard
 
 ### Seq log aggregator
 

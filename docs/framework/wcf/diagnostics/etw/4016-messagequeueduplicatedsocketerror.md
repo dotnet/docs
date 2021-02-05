@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4016 - MessageQueueDuplicatedSocketError"
 title: "4016 - MessageQueueDuplicatedSocketError"
 ms.date: "03/30/2017"
 ms.assetid: 4c35cf2c-e6fc-48e2-bc40-3af01cb5d31e

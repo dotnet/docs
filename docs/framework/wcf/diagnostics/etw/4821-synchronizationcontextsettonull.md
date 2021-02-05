@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4821 - SynchronizationContextSetToNull"
 title: "4821 - SynchronizationContextSetToNull"
 ms.date: "03/30/2017"
 ms.assetid: 0fbff6f6-752a-4a4a-b5a3-3adb5e688527

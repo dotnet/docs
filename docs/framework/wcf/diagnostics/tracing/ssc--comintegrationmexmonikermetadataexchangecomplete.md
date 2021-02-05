@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationMexMonikerMetadataExchangeComplete"
 title: "System.ServiceModel.ComIntegration.ComIntegrationMexMonikerMetadataExchangeComplete"
 ms.date: "03/30/2017"
 ms.assetid: 0fd35dff-e1ff-4902-a89b-093f0e34466f

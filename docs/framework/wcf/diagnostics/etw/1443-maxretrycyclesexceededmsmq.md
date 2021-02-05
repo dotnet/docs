@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1443 - MaxRetryCyclesExceededMsmq"
 title: "1443 - MaxRetryCyclesExceededMsmq"
 ms.date: "03/30/2017"
 ms.assetid: 5fb5b119-7ae0-4c88-b3ab-3679063707d9

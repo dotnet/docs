@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3333 - OutgoingMessageSecured"
 title: "3333 - OutgoingMessageSecured"
 ms.date: "03/30/2017"
 ms.assetid: 21fe9445-4fa4-4d67-b865-78cecf9b5b82

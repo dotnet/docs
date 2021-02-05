@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4808 - DiscoveryMessageWithNoContent"
 title: "4808 - DiscoveryMessageWithNoContent"
 ms.date: "03/30/2017"
 ms.assetid: 489b17f3-c475-40e4-adde-d8b8515b4912

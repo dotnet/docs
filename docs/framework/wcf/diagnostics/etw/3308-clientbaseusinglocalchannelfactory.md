@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3308 - ClientBaseUsingLocalChannelFactory"
 title: "3308 - ClientBaseUsingLocalChannelFactory"
 ms.date: "03/30/2017"
 ms.assetid: f1488c75-38ab-47a0-9951-852488683f2a

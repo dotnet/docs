@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3329 - ClientFormatterDeserializeReplyStop"
 title: "3329 - ClientFormatterDeserializeReplyStop"
 ms.date: "03/30/2017"
 ms.assetid: c65657a4-80c1-448a-81d9-02d734e66075

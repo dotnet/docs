@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1424 - SecuritySessionRatio"
 title: "1424 - SecuritySessionRatio"
 ms.date: "03/30/2017"
 ms.assetid: fd960f10-dd43-42d4-a415-75eae0cb7cac

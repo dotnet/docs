@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3347 - SocketAcceptClosed"
 title: "3347 - SocketAcceptClosed"
 ms.date: "03/30/2017"
 ms.assetid: a84ea364-b0e1-4bee-a497-dc2b988cc4c3

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3395 - MessageWrittenAsynchronouslyByEncoder"
 title: "3395 - MessageWrittenAsynchronouslyByEncoder"
 ms.date: "03/30/2017"
 ms.assetid: f2b015b3-dafe-4468-a3ac-5b547ff413e6

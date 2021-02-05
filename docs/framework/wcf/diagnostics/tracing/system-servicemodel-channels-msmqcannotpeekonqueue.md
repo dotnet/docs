@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqCannotPeekOnQueue"
 title: "System.ServiceModel.Channels.MsmqCannotPeekOnQueue"
 ms.date: "03/30/2017"
 ms.assetid: cb95e569-cc5e-4d70-81b5-7374d3a2f8be

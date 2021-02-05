@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Runtime.Serialization.XsdExportEnd"
 title: "System.Runtime.Serialization.XsdExportEnd"
 ms.date: "03/30/2017"
 ms.assetid: 406169f7-dc69-4e02-8a22-b38049dab995

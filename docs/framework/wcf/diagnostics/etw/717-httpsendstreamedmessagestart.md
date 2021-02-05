@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 717 - HttpSendStreamedMessageStart"
 title: "717 - HttpSendStreamedMessageStart"
 ms.date: "03/30/2017"
 ms.assetid: a157fdd5-b1b7-4498-9b0c-8a68c6f1f020

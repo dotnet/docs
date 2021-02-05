@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ThumbPrintNotFound"
 title: "ThumbPrintNotFound"
 ms.date: "03/30/2017"
 ms.assetid: 0e901d43-5359-4f06-a564-6e5821253ece

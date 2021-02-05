@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3420 - WebSocketConnectionFailed"
 title: "3420 - WebSocketConnectionFailed"
 ms.date: "03/30/2017"
 ms.assetid: 1b5ed1ce-ba57-473c-bc64-fd52646ed3a6

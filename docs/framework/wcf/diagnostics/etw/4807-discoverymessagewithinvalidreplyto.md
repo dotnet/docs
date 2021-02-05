@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4807 - DiscoveryMessageWithInvalidReplyTo"
 title: "4807 - DiscoveryMessageWithInvalidReplyTo"
 ms.date: "03/30/2017"
 ms.assetid: 7f104c23-cee3-4e22-89ad-4934b8a587bb

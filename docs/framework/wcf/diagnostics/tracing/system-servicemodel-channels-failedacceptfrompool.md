@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.FailedAcceptFromPool"
 title: "System.ServiceModel.Channels.FailedAcceptFromPool"
 ms.date: "03/30/2017"
 ms.assetid: d535b1b5-ee58-45e8-b400-7d9570f4eb9a

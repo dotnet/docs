@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3351 - ServerMaxPooledConnectionsQuotaReached"
 title: "3351 - ServerMaxPooledConnectionsQuotaReached"
 ms.date: "03/30/2017"
 ms.assetid: b2ca1131-0017-4a5f-ab7b-2b0f73589e84

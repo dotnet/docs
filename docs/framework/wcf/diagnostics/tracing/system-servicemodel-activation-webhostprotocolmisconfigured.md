@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.WebHostProtocolMisconfigured"
 title: "System.ServiceModel.Activation.WebHostProtocolMisconfigured"
 ms.date: "03/30/2017"
 ms.assetid: cb5bdc6b-4281-452d-bc42-1181f2966e2a

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationDispatchMethod"
 title: "System.ServiceModel.ComIntegration.ComIntegrationDispatchMethod"
 ms.date: "03/30/2017"
 ms.assetid: 7b4930be-57e6-4fe8-b63d-81900bba11c1

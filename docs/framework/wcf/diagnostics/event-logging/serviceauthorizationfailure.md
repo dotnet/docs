@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServiceAuthorizationFailure"
 title: "ServiceAuthorizationFailure"
 ms.date: "03/30/2017"
 ms.assetid: a6a57896-41d5-4c05-a2fb-184d828e20c1

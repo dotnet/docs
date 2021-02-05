@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.VolatileParticipantInDoubt"
 title: "Microsoft.Transactions.TransactionBridge.VolatileParticipantInDoubt"
 ms.date: "03/30/2017"
 ms.assetid: 3e8fc825-9f22-47e7-9c16-d64ef291c932

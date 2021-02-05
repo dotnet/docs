@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3381 - SequenceAcknowledgementSent"
 title: "3381 - SequenceAcknowledgementSent"
 ms.date: "03/30/2017"
 ms.assetid: 42630d32-c24d-41b9-9106-9ca1a3e2f7d8

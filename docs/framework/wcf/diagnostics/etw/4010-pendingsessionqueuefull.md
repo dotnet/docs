@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4010 - PendingSessionQueueFull"
 title: "4010 - PendingSessionQueueFull"
 ms.date: "03/30/2017"
 ms.assetid: 14696793-16eb-4847-a530-fa2f90f682c9

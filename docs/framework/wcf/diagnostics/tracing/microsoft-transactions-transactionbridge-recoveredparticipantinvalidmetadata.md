@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.RecoveredParticipantInvalidMetadata"
 title: "Microsoft.Transactions.TransactionBridge.RecoveredParticipantInvalidMetadata"
 ms.date: "03/30/2017"
 ms.assetid: 5d38eb27-bb00-4d7e-a234-50de8d90a0f9

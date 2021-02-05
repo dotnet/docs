@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3385 - WindowsStreamSecurityOnAcceptUpgrade"
 title: "3385 - WindowsStreamSecurityOnAcceptUpgrade"
 ms.date: "03/30/2017"
 ms.assetid: 3d17dc6a-befb-49f0-a150-c4875405ce7a

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MessageSent"
 title: "System.ServiceModel.Channels.MessageSent"
 ms.date: "03/30/2017"
 ms.assetid: 454cd09c-992f-4faf-9751-2de56e6401da

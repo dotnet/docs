@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.HttpChannelMessageReceiveFailed"
 title: "System.ServiceModel.Channels.HttpChannelMessageReceiveFailed"
 ms.date: "03/30/2017"
 ms.assetid: 9eb311da-fdcc-4dd3-9d85-05b3280dfdda

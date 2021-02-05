@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <remove> Element for <listeners> for <trace>"
 title: "<remove> Element for <listeners> for <trace>"
 ms.date: "03/30/2017"
 f1_keywords: 

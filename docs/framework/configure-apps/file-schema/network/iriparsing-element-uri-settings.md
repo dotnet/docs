@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <iriParsing> Element (Uri Settings)"
 title: "<iriParsing> Element (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 953d0b53-445e-41f9-b302-77c4030852ce

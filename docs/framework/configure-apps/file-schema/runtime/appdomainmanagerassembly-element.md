@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <appDomainManagerAssembly> Element"
 title: "<appDomainManagerAssembly> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

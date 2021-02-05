@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <clear> Element for connectionManagement (Network Settings)"
 title: "<clear> Element for connectionManagement (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 

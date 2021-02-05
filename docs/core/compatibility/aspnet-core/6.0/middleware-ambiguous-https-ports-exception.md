@@ -7,11 +7,7 @@ ms.date: 02/04/2021
 ---
 # Middleware: HTTPS Redirection Middleware throws exception on ambiguous HTTPS ports
 
-In ASP.NET Core 6.0, the [HTTPS Redirection Middleware](xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection%2A) throws an exception of type <xref:System.InvalidOperationException> when it finds multiple HTTPS ports in the server configuration. The exception's message contains the following text:
-
-```console
-"Cannot determine the https port from IServerAddressesFeature, multiple values were found. Set the desired port explicitly on HttpsRedirectionOptions.HttpsPort."
-```
+In ASP.NET Core 6.0, the [HTTPS Redirection Middleware](xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection%2A) throws an exception of type <xref:System.InvalidOperationException> when it finds multiple HTTPS ports in the server configuration. The exception's message contains the text "Cannot determine the https port from IServerAddressesFeature, multiple values were found. Set the desired port explicitly on HttpsRedirectionOptions.HttpsPort."
 
 For discussion, see GitHub issue [dotnet/aspnetcore#29222](https://github.com/dotnet/aspnetcore/issues/29222).
 
@@ -42,7 +38,7 @@ This change prevents potentially sensitive data from being served over unencrypt
 
 ## Recommended action
 
-To enable HTTPS redirection when the server has multiple distinct HTTPS ports, you must specify one port in the configuration. For more information, see [Port configuration](/aspnet/core/security/enforcing-ssl?view=aspnetcore-5.0#port-configuration).
+To enable HTTPS redirection when the server has multiple distinct HTTPS ports, you must specify one port in the configuration. For more information, see [Port configuration](/aspnet/core/security/enforcing-ssl?view=aspnetcore-5.0&preserve-view=true#port-configuration).
 
 If you don't need the HTTPS Redirection Middleware in your app, remove `UseHttpsRedirection` from *Startup.cs*.
 

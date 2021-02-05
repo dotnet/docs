@@ -1,8 +1,7 @@
 ---
 title: Numbers in C# - Introduction to C# tutorial
 description: Learn C# by exploring numeric types, their uses, properties, and methods.
-ms.date: 02/02/2021
-ms.custom: mvc
+ms.date: 02/05/2021
 ---
 
 # Manipulate integral and floating point numbers in C\#
@@ -11,11 +10,11 @@ This tutorial teaches you about the numeric types in C# interactively. You'll wr
 
 ## Prerequisites
 
-The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
+The tutorial expects that you have a machine set up for local development. On Windows, Linux, or macOS, you can use the .NET CLI to create, build, and run applications. On Mac or Windows, you can use Visual Studio 2019. For setup instructions, see [Set up your local environment](local-environment.md).
 
 ## Explore integer math
 
-Create a directory named *numbers-quickstart*. Make that the current directory and run the following command:
+Create a directory named *numbers-quickstart*. Make it the current directory and run the following command:
 
 ```dotnetcli
 dotnet new console -n NumbersInCSharp -o .
@@ -92,7 +91,7 @@ void WorkWithIntegers()
 }
 ```
 
-The line `WorkWithIntegers();` invokes the method. The code following declares the method and defines it.
+The line `WorkWithIntegers();` invokes the method. The following code declares the method and defines it.
 
 ## Explore order of operations
 
@@ -123,7 +122,7 @@ d = (a + b) * c;
 Console.WriteLine(d);
 ```
 
-Explore more by combining many different operations. Add something like the following lines at the bottom of your `Main` method. Try `dotnet run` again.
+Explore more by combining many different operations. Add something like the following lines. Try `dotnet run` again.
 
 ```csharp
 d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
@@ -132,7 +131,7 @@ Console.WriteLine(d);
 
 You may have noticed an interesting behavior for integers. Integer division always produces an integer result, even when you'd expect the result to include a decimal or fractional portion.
 
-If you haven't seen this behavior, try the following code after the code you've just added:
+If you haven't seen this behavior, try the following code:
 
 ```csharp
 int e = 7;
@@ -226,7 +225,7 @@ Console.WriteLine($"An example of overflow: {what}");
 
 Notice that the answer is very close to the minimum (negative) integer. It's the same as `min + 2`. The addition operation **overflowed** the allowed values for integers. The answer is a very large negative number because an overflow "wraps around" from the largest possible integer value to the smallest.
 
-There are other numeric types with different limits and precision that you would use when the `int` type doesn't meet your needs. Let's explore those other types next.Before you start the next section, move the code you wrote in this section into a separate method. Name it `TestLimits`.
+There are other numeric types with different limits and precision that you would use when the `int` type doesn't meet your needs. Let's explore those other types next. Before you start the next section, move the code you wrote in this section into a separate method. Name it `TestLimits`.
 
 ## Work with the double type
 
@@ -258,7 +257,7 @@ double min = double.MinValue;
 Console.WriteLine($"The range of double is {min} to {max}");
 ```
 
-These values are printed out in scientific notation. The number to the left of the `E` is the significand. The number to the right is the exponent, as a power of 10. Just like decimal numbers in math, doubles in C# can have rounding errors. Try this code:
+These values are printed in scientific notation. The number to the left of the `E` is the significand. The number to the right is the exponent, as a power of 10. Just like decimal numbers in math, doubles in C# can have rounding errors. Try this code:
 
 ```csharp
 double third = 1.0 / 3.0;

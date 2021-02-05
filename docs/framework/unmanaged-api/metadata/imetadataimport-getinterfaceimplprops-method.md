@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetInterfaceImplProps Method"
 title: "IMetaDataImport::GetInterfaceImplProps Method"
 ms.date: "02/25/2019"
 api_name: 

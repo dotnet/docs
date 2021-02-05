@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorRuntimeHost::CreateDomainEx Method"
 title: "ICorRuntimeHost::CreateDomainEx Method"
 ms.date: "03/30/2017"
 api_name: 

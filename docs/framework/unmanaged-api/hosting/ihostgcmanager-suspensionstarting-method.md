@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostGCManager::SuspensionStarting Method"
 title: "IHostGCManager::SuspensionStarting Method"
 ms.date: "03/30/2017"
 api_name: 

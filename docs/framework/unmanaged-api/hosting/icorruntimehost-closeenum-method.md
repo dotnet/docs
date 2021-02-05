@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorRuntimeHost::CloseEnum Method"
 title: "ICorRuntimeHost::CloseEnum Method"
 ms.date: "03/30/2017"
 api_name: 

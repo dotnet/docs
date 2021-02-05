@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building Clients"
 title: "Building Clients"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

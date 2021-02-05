@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRHostProtectionManager Interface"
 title: "ICLRHostProtectionManager Interface"
 ms.date: "03/30/2017"
 api_name: 

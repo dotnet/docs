@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTask::ExitTask Method"
 title: "ICLRTask::ExitTask Method"
 ms.date: "03/30/2017"
 api_name: 

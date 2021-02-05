@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::StrongNameKeyInstall Method"
 title: "ICLRStrongName::StrongNameKeyInstall Method"
 ms.date: "03/30/2017"
 api_name: 

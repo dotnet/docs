@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo7::ApplyMetaData Method"
 title: "ICorProfilerInfo7::ApplyMetaData Method"
 ms.date: "02/15/2019"
 dev_langs: 

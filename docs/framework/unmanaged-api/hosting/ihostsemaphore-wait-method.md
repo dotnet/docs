@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSemaphore::Wait Method"
 title: "IHostSemaphore::Wait Method"
 ms.date: "03/30/2017"
 api_name: 

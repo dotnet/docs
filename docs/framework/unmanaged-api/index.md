@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unmanaged API Reference"
 title: "Unmanaged API Reference"
 ms.date: "11/06/2017"
 helpviewer_keywords: 

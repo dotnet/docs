@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorRuntimeHost::EnumDomains Method"
 title: "ICorRuntimeHost::EnumDomains Method"
 ms.date: "03/30/2017"
 api_name: 

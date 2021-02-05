@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo10::IsFrozenObject Method"
 title: "ICorProfilerInfo10::IsFrozenObject"
 ms.date: "08/06/2019"
 dev_langs:

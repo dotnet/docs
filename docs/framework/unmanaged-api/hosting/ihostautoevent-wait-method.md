@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostAutoEvent::Wait Method"
 title: "IHostAutoEvent::Wait Method"
 ms.date: "03/30/2017"
 api_name: 

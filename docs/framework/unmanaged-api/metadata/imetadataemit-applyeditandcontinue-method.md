@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::ApplyEditAndContinue Method"
 title: "IMetaDataEmit::ApplyEditAndContinue Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerAssemblyReferenceProvider::AddAssemblyReference Method"
 title: "ICorProfilerAssemblyReferenceProvider::AddAssemblyReference Method"
 ms.date: "03/30/2017"
 dev_langs: 

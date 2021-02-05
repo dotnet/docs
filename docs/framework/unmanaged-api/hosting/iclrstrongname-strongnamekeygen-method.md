@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::StrongNameKeyGen Method"
 title: "ICLRStrongName::StrongNameKeyGen Method"
 ms.date: "03/30/2017"
 api_name: 

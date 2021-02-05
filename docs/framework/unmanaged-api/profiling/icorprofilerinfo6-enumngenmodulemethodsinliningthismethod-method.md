@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod Method"
 title: "ICorProfilerInfo6::EnumNgenModuleMethodsInliningThisMethod Method"
 ms.date: "03/30/2017"
 ms.assetid: b933dfe6-7833-40cb-aad8-40842dc3034f

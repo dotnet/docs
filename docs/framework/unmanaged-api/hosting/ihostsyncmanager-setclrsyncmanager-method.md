@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSyncManager::SetCLRSyncManager Method"
 title: "IHostSyncManager::SetCLRSyncManager Method"
 ms.date: "03/30/2017"
 api_name: 

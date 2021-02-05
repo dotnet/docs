@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetHashFromAssemblyFile Function"
 title: "GetHashFromAssemblyFile Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo10 Interface"
 title: "ICorProfilerInfo10 Interface"
 ms.date: "08/06/2019"
 author: "davmason"

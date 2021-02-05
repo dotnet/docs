@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeHost::GetCurrentAppDomainId Method"
 title: "ICLRRuntimeHost::GetCurrentAppDomainId Method"
 ms.date: "03/30/2017"
 api_name: 

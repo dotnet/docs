@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeName::GetTypeArgumentCount Method"
 title: "ITypeName::GetTypeArgumentCount Method"
 ms.date: "03/30/2017"
 api_name: 

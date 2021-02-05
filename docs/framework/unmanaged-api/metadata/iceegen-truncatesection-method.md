@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::TruncateSection Method"
 title: "ICeeGen::TruncateSection Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31423: Event '<eventname1>' cannot implement event '<eventname2>' on interface '<interface>' because their delegate types '<delegate1>' and '<delegate2>' do not match"
 title: "Event '<eventname1>' cannot implement event '<eventname2>' on interface '<interface>' because their delegate types '<delegate1>' and '<delegate2>' do not match"
 ms.date: 07/20/2015
 f1_keywords:

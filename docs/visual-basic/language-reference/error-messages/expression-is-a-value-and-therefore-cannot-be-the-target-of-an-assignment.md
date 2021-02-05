@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30068: Expression is a value and therefore cannot be the target of an assignment"
 title: "Expression is a value and therefore cannot be the target of an assignment"
 ms.date: 07/20/2015
 f1_keywords:

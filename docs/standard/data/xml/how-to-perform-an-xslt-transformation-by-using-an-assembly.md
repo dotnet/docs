@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Perform an XSLT Transformation by Using an Assembly"
 title: "How to: Perform an XSLT Transformation by Using an Assembly"
 ms.date: "03/30/2017"
 dev_langs: 

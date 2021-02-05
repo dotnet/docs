@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Path/File access error"
 title: "Path-File access error"
 ms.date: 07/20/2015
 f1_keywords: 

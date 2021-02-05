@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Aggregate Clause (Visual Basic)"
 title: "Aggregate Clause"
 ms.date: 08/28/2018
 f1_keywords: 

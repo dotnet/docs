@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <exception> (Visual Basic)"
 title: "<exception>"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Entity References are Preserved"
 title: "Entity References are Preserved"
 ms.date: "03/30/2017"
 ms.assetid: 000a6cae-5972-40d6-bd6c-a9b7d9649b3c

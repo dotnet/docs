@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30033: Identifier is too long"
 title: "Identifier is too long"
 ms.date: 07/20/2015
 f1_keywords:

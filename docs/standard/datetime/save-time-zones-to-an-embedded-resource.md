@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Save time zones to an embedded resource"
 title: "How to: Save time zones to an embedded resource"
 ms.date: "04/10/2017"
 dev_langs: 

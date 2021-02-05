@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write Text to Files with a StreamWriter in Visual Basic"
 title: "How to: Write Text to Files with a StreamWriter"
 ms.date: 07/20/2015
 helpviewer_keywords: 

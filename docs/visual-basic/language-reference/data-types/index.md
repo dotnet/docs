@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Type Summary (Visual Basic)"
 title: "Data Type Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 

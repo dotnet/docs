@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operator Precedence in Visual Basic"
 title: "Operator Precedence"
 ms.date: 07/20/2015
 helpviewer_keywords:

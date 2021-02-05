@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing the Mouse (Visual Basic)"
 title: "Accessing the Mouse"
 ms.date: 07/20/2015
 helpviewer_keywords: 

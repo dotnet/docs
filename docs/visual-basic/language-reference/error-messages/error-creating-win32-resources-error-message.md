@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30136: Error creating Win32 resources: <error message>"
 title: "Error creating Win32 resources: <error message>"
 ms.date: 07/20/2015
 f1_keywords:

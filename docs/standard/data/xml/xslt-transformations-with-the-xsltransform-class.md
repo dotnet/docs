@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XSLT Transformations with the XslTransform Class"
 title: "XSLT Transformations with the XslTransform Class"
 ms.date: "03/30/2017"
 dev_langs: 

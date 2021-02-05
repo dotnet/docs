@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add or remove Access Control List entries (.NET Framework only)"
 title: "How to: Add or remove Access Control List entries (.NET Framework only)"
 ms.date: "01/14/2019"
 dev_langs: 

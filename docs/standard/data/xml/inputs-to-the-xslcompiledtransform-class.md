@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inputs to the XslCompiledTransform Class"
 title: "Inputs to the XslCompiledTransform Class"
 ms.date: "03/30/2017"
 dev_langs: 

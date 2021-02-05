@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Understanding Speedup in PLINQ"
 title: "Understanding Speedup in PLINQ"
 ms.date: "03/30/2017"
 dev_langs: 

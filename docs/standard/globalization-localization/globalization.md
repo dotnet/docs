@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Globalization"
 title: "Globalization"
 ms.date: "03/30/2017"
 dev_langs:

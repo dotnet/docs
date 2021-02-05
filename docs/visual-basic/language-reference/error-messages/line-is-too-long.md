@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30494: Line is too long"
 title: "Line is too long"
 ms.date: 07/20/2015
 f1_keywords:

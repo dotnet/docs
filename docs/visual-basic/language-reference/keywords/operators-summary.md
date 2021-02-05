@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operators Summary (Visual Basic)"
 title: "Operators Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 

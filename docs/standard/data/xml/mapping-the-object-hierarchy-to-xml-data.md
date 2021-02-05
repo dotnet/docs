@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mapping the Object Hierarchy to XML Data"
 title: "Mapping the Object Hierarchy to XML Data"
 ms.date: "03/30/2017"
 dev_langs: 

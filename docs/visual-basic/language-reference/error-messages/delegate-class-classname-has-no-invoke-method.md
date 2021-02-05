@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30220: Delegate class '<classname>' has no Invoke method, so an expression of this type cannot be the target of a method call"
 title: "Delegate class '<classname>' has no Invoke method, so an expression of this type cannot be the target of a method call"
 ms.date: 07/20/2015
 f1_keywords:

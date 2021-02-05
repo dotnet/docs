@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Keywords (Visual Basic)"
 title: "Keywords"
 ms.date: 07/20/2015
 helpviewer_keywords: 

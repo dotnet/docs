@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32096: 'For Each' on type '<typename>' is ambiguous because the type implements multiple instantiations of 'System.Collections.Generic.IEnumerable(Of T)"
 title: "'For Each' on type '<typename>' is ambiguous because the type implements multiple instantiations of 'System.Collections.Generic.IEnumerable(Of T)'"
 ms.date: 07/20/2015
 f1_keywords:

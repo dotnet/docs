@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Partitioners for PLINQ and TPL"
 title: "Custom Partitioners for PLINQ and TPL"
 ms.date: "03/30/2017"
 dev_langs:

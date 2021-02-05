@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IGCHost::GetThreadStats Method"
 title: "IGCHost::GetThreadStats Method"
 ms.date: "03/30/2017"
 api_name: 

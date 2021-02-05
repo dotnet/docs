@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Profiling Interfaces"
 title: "Profiling Interfaces"
 ms.date: "04/10/2018"
 helpviewer_keywords: 

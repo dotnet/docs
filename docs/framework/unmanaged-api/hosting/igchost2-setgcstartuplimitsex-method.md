@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IGCHost2::SetGCStartupLimitsEx Method"
 title: "IGCHost2::SetGCStartupLimitsEx Method"
 ms.date: "03/30/2017"
 api_name: 

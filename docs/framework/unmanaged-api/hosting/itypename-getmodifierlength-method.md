@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeName::GetModifierLength Method"
 title: "ITypeName::GetModifierLength Method"
 ms.date: "03/30/2017"
 api_name: 

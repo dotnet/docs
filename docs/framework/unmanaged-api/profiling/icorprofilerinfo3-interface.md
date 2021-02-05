@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo3 Interface"
 title: "ICorProfilerInfo3 Interface"
 ms.date: "03/30/2017"
 api_name: 

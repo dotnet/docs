@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::GetSectionCreate Method"
 title: "ICeeGen::GetSectionCreate Method"
 ms.date: "03/30/2017"
 api_name: 

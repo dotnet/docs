@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTaskManager::EnterRuntime Method"
 title: "IHostTaskManager::EnterRuntime Method"
 ms.date: "03/30/2017"
 api_name: 

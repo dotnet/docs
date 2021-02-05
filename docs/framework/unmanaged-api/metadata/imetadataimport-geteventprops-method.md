@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetEventProps Method"
 title: "IMetaDataImport::GetEventProps Method"
 ms.date: "03/30/2017"
 api_name: 

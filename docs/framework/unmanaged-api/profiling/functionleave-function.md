@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionLeave Function"
 title: "FunctionLeave Function"
 ms.date: "03/30/2017"
 api_name: 

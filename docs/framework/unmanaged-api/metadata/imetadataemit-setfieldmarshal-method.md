@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::SetFieldMarshal Method"
 title: "IMetaDataEmit::SetFieldMarshal Method"
 ms.date: "03/30/2017"
 api_name: 

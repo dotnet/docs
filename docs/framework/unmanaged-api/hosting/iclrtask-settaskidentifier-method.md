@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTask::SetTaskIdentifier Method"
 title: "ICLRTask::SetTaskIdentifier Method"
 ms.date: "03/30/2017"
 api_name: 

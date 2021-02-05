@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::SetEnterLeaveFunctionHooks Method"
 title: "ICorProfilerInfo::SetEnterLeaveFunctionHooks Method"
 ms.date: "03/30/2017"
 api_name: 

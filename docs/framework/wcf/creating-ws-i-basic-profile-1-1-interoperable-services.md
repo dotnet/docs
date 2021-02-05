@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating WS-I Basic Profile 1.1 Interoperable Services"
 title: "Creating WS-I Basic Profile 1.1 Interoperable Services"
 ms.date: "03/30/2017"
 dev_langs: 

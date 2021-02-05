@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetEventMask Method"
 title: "ICorProfilerInfo::GetEventMask Method"
 ms.date: "03/30/2017"
 api_name: 

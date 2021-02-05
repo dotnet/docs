@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameHashSize Function"
 title: "StrongNameHashSize Function"
 ms.date: "03/30/2017"
 api_name: 

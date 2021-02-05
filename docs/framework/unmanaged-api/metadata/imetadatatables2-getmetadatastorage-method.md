@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables2::GetMetaDataStorage Method"
 title: "IMetaDataTables2::GetMetaDataStorage Method"
 ms.date: "03/30/2017"
 api_name: 

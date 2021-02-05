@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetTableIndex Method"
 title: "IMetaDataTables::GetTableIndex Method"
 ms.date: "03/30/2017"
 api_name: 

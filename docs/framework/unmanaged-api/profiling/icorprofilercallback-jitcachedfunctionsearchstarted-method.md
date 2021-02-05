@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::JITCachedFunctionSearchStarted Method"
 title: "ICorProfilerCallback::JITCachedFunctionSearchStarted Method"
 ms.date: "03/30/2017"
 api_name: 

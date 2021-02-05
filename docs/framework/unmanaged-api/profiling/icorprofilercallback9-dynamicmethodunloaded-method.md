@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback9::DynamicMethodUnloaded Method"
 title: "ICorProfilerCallback9::DynamicMethodUnloaded Method"
 ms.date: "04/10/2018"
 api_name: 

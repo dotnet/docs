@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetRow Method"
 title: "IMetaDataTables::GetRow Method"
 ms.date: "03/30/2017"
 api_name: 

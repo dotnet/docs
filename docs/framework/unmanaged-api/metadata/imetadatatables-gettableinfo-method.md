@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetTableInfo Method"
 title: "IMetaDataTables::GetTableInfo Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostMemoryManager::CreateMAlloc Method"
 title: "IHostMemoryManager::CreateMAlloc Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRGCManager2::SetGCStartupLimitsEx Method"
 title: "ICLRGCManager2::SetGCStartupLimitsEx Method"
 ms.date: "03/30/2017"
 api_name: 

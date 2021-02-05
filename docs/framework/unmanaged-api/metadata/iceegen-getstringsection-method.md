@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICeeGen::GetStringSection Method"
 title: "ICeeGen::GetStringSection Method"
 ms.date: "03/30/2017"
 api_name: 

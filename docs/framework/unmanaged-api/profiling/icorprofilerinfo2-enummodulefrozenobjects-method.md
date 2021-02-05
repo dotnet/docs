@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo2::EnumModuleFrozenObjects Method"
 title: "ICorProfilerInfo2::EnumModuleFrozenObjects Method"
 ms.date: "03/30/2017"
 api_name: 

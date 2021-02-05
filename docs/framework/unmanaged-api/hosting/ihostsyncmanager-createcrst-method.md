@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSyncManager::CreateCrst Method"
 title: "IHostSyncManager::CreateCrst Method"
 ms.date: "03/30/2017"
 api_name: 

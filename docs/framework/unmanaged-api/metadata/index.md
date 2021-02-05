@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Metadata (Unmanaged API Reference)"
 title: "Metadata (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

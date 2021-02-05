@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback5::ConditionalWeakTableElementReferences Method"
 title: "ICorProfilerCallback5::ConditionalWeakTableElementReferences Method"
 ms.date: "03/30/2017"
 api_name:

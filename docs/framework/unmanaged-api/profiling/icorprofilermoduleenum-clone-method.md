@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerModuleEnum::Clone Method"
 title: "ICorProfilerModuleEnum::Clone Method"
 ms.date: "03/30/2017"
 api_name: 

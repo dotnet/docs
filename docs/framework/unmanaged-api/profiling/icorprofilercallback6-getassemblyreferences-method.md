@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback6::GetAssemblyReferences Method"
 title: "ICorProfilerCallback6::GetAssemblyReferences Method"
 ms.date: "03/30/2017"
 dev_langs: 

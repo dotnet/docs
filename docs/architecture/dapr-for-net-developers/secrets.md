@@ -433,7 +433,7 @@ When running in  Azure Kubernetes Service (AKS), it's preferable to use an [Azur
 
 ### Scoping secrets
 
-Secret scopes allow you to control which secrets your application can access. You configure scopes in a Dapr sidecar configuration file. The [Dapr sidecar configuration documentation](https://v1-rc2.docs.dapr.io/operations/configuration/configuration-overview/) provides instructions for scoping secrets.
+Secret scopes allow you to control which secrets your application can access. You configure scopes in a Dapr sidecar configuration file. The [Dapr configuration documentation](https://docs.dapr.io/operations/configuration/configuration-overview/) provides instructions for scoping secrets.
 
 Here's an example of a Dapr sidecar configuration file that contains secret scopes:
 

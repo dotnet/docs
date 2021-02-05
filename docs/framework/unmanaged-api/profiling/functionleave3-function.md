@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionLeave3 Function"
 title: "FunctionLeave3 Function"
 ms.date: "03/30/2017"
 api_name: 

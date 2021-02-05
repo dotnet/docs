@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Data Services Protocol Implementation Details"
 title: "WCF Data Services Protocol Implementation Details"
 ms.date: "03/30/2017"
 ms.assetid: 712d689b-fada-4cbb-bcdb-d65a3ef83b4c

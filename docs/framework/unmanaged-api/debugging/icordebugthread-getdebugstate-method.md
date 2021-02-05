@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread::GetDebugState Method"
 title: "ICorDebugThread::GetDebugState Method"
 ms.date: "03/30/2017"
 api_name: 

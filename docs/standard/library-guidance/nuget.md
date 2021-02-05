@@ -45,7 +45,7 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 | `Title`                            | `title`                    | A human-friendly title of the package. It defaults to the `PackageId`.             |
 | `Description`                      | `description`              | A long description of the package displayed in UI.             |
 | `Authors`                          | `authors`                  | A comma-separated list of package authors, matching the profile names on nuget.org.             |
-| `PackageTags`                      | `tags`                     | A space-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
+| `PackageTags`                      | `tags`                     | A space or semicolon-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
 | `PackageIcon`                   | `icon`                  | A path to an image in the package to use as a package icon. Read more about [`icon` metadata](/nuget/reference/nuspec#icon). |
 | `PackageProjectUrl`                | `projectUrl`               | A URL for the project homepage or source repository.             |
 | `PackageLicenseExpression`         | `license`                  | The project license's [SPDX identifier](https://spdx.org/licenses/). Only OSI and FSF approved licenses can use an identifier. Other licenses should use `PackageLicenseFile`. Read more about [`license` metadata](/nuget/reference/nuspec#license). |

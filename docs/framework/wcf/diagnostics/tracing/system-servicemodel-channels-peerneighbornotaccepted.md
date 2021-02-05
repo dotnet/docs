@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNeighborNotAccepted"
 title: "System.ServiceModel.Channels.PeerNeighborNotAccepted"
 ms.date: "03/30/2017"
 ms.assetid: 77309bf5-37ba-4b90-b31f-c00ef044db0d

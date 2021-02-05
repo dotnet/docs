@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ImportFile2 Method"
 title: "ImportFile2 Method"
 ms.date: "03/30/2017"
 api_name: 

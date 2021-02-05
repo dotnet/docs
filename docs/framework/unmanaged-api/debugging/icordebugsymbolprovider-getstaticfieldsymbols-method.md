@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetStaticFieldSymbols Method"
 title: "ICorDebugSymbolProvider::GetStaticFieldSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: b178367f-a6e4-413c-b06f-daf3804b456b

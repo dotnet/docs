@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Filter Related Data"
 title: "How to: Filter Related Data"
 ms.date: "03/30/2017"
 dev_langs: 

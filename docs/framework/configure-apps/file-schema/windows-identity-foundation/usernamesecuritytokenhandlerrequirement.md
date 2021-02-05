@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <userNameSecurityTokenHandlerRequirement>"
 title: "<userNameSecurityTokenHandlerRequirement>"
 ms.date: "03/30/2017"
 ms.assetid: 6ec3bac1-b014-49ae-843c-c54518cb709a

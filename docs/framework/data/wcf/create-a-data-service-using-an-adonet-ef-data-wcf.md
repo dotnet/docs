@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Data Service Using an ADO.NET Entity Framework Data Source (WCF Data Services)"
 title: "How to: Create a Data Service Using an ADO.NET Entity Framework Data Source (WCF Data Services)"
 ms.date: 08/24/2018
 helpviewer_keywords:

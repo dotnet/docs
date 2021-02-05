@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IPv6 Routing"
 title: "IPv6 Routing"
 ms.date: "03/30/2017"
 ms.assetid: c98731b4-b542-46a2-9947-1cea63c186b2

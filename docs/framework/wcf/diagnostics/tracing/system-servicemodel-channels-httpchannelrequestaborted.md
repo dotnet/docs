@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.HttpChannelRequestAborted"
 title: "System.ServiceModel.Channels.HttpChannelRequestAborted"
 ms.date: "03/30/2017"
 ms.assetid: d47a2e78-f0ce-4125-893a-5f438016216c

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3383 - ReliableSessionChannelFaulted"
 title: "3383 - ReliableSessionChannelFaulted"
 ms.date: "03/30/2017"
 ms.assetid: f5948284-8536-4ab8-9c81-e22da5b56d62

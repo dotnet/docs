@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_PRF_ASSEMBLY_REFERENCE_INFO Structure"
 title: "COR_PRF_ASSEMBLY_REFERENCE_INFO Structure"
 ms.date: "03/30/2017"
 dev_langs: 

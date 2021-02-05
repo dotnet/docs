@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyImport::EnumManifestResources Method"
 title: "IMetaDataAssemblyImport::EnumManifestResources Method"
 ms.date: "03/30/2017"
 api_name: 

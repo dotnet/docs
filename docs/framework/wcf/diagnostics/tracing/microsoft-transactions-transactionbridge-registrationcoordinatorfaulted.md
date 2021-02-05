@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.RegistrationCoordinatorFaulted"
 title: "Microsoft.Transactions.TransactionBridge.RegistrationCoordinatorFaulted"
 ms.date: "03/30/2017"
 ms.assetid: 8193027e-9db2-4af9-a072-27300cd24330

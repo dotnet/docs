@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDomainManager::SetPropertiesForDefaultAppDomain Method"
 title: "ICLRDomainManager::SetPropertiesForDefaultAppDomain Method"
 ms.date: "03/30/2017"
 api_name: 

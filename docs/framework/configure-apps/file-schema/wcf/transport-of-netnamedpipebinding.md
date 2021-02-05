@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <transport> of <netNamedPipeBinding>"
 title: "<transport> of <netNamedPipeBinding>"
 ms.date: "03/30/2017"
 ms.assetid: d9eff52d-4bde-4586-b56a-b0ec24611f8d

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport2::EnumGenericParamConstraints Method"
 title: "IMetaDataImport2::EnumGenericParamConstraints Method"
 ms.date: "03/30/2017"
 api_name: 

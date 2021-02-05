@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDENTITY_ATTRIBUTE_BLOB Structure"
 title: "IDENTITY_ATTRIBUTE_BLOB Structure"
 ms.date: "03/30/2017"
 dev_langs: 

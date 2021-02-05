@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3314 - SessionIdleTimeout"
 title: "3314 - SessionIdleTimeout"
 ms.date: "03/30/2017"
 ms.assetid: a00f104e-3bea-4185-b7b0-ec1ed8212a74

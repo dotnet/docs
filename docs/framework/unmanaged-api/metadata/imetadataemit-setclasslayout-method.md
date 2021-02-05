@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::SetClassLayout Method"
 title: "IMetaDataEmit::SetClassLayout Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service: Calls Failed Per Second"
 title: "Service: Calls Failed Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 5a2c7939-107d-4f0c-b43c-e02e079e8a9d

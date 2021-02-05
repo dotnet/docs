@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeHost::UnloadAppDomain Method"
 title: "ICLRRuntimeHost::UnloadAppDomain Method"
 ms.date: "03/30/2017"
 api_name: 

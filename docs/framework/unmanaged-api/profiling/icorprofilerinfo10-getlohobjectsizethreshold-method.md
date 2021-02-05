@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo10::GetLOHObjectSizeThreshold Method"
 title: "ICorProfilerInfo10::GetLOHObjectSizeThreshold"
 ms.date: "08/06/2019"
 dev_langs:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebug::CanLaunchOrAttach Method"
 title: "ICorDebug::CanLaunchOrAttach Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAssembly::EnumerateModules Method"
 title: "ICorDebugAssembly::EnumerateModules Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <authorizationPolicies>"
 title: "<authorizationPolicies>"
 ms.date: "03/30/2017"
 ms.assetid: 5b367489-54d7-408b-8f56-cb157dd68eaf

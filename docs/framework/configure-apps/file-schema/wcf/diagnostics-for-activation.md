@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <diagnostics> for Activation"
 title: "<diagnostics> for Activation"
 ms.date: "03/30/2017"
 ms.assetid: 1486e0eb-fe2a-46c3-b584-c924889477dd

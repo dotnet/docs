@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Configuration Schema"
 title: "WCF Configuration Schema"
 ms.date: "03/30/2017"
 ms.assetid: c282aeb5-91f0-4522-8e2f-704c1ef3651f

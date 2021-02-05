@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostIoCompletionManager::SetMaxThreads Method"
 title: "IHostIoCompletionManager::SetMaxThreads Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationTLBImportFromAssembly"
 title: "System.ServiceModel.ComIntegration.ComIntegrationTLBImportFromAssembly"
 ms.date: "03/30/2017"
 ms.assetid: bb2b6e33-00cb-403f-b616-1a70294d7aa8

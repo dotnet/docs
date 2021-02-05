@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constants (Unmanaged API Reference)"
 title: "Constants (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

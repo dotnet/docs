@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ASM_DISPLAY_FLAGS Enumeration"
 title: "ASM_DISPLAY_FLAGS Enumeration"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostIoCompletionManager::GetAvailableThreads Method"
 title: "IHostIoCompletionManager::GetAvailableThreads Method"
 ms.date: "03/30/2017"
 api_name: 

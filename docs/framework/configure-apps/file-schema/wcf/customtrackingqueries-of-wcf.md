@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <customTrackingQueries> of WCF"
 title: "<customTrackingQueries> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 14cfe47e-9935-4120-84f1-8f38de8ca4c1

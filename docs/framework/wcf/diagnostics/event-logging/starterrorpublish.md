@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StartErrorPublish"
 title: "StartErrorPublish"
 ms.date: "03/30/2017"
 ms.assetid: d261929a-bd41-4611-8951-d1fb16bda0bc

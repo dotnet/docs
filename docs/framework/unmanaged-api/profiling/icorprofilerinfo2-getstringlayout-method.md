@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo2::GetStringLayout Method"
 title: "ICorProfilerInfo2::GetStringLayout Method"
 ms.date: "03/30/2017"
 api_name: 

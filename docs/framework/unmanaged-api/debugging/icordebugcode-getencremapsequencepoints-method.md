@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugCode::GetEnCRemapSequencePoints Method"
 title: "ICorDebugCode::GetEnCRemapSequencePoints Method"
 ms.date: "03/30/2017"
 api_name:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback4::SurvivingReferences2 Method"
 title: "ICorProfilerCallback4::SurvivingReferences2 Method"
 ms.date: "03/30/2017"
 api_name: 

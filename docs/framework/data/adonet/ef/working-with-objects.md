@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Objects"
 title: "Working with Objects"
 ms.date: "03/30/2017"
 ms.assetid: 338d8a55-05cc-46b0-bbb8-1379d77068e9

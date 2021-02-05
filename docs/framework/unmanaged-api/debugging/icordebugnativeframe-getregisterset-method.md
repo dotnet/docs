@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugNativeFrame::GetRegisterSet Method"
 title: "ICorDebugNativeFrame::GetRegisterSet Method"
 ms.date: "03/30/2017"
 api_name: 

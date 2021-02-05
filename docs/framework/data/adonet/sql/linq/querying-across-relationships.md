@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Querying Across Relationships"
 title: "Querying Across Relationships"
 ms.date: "03/30/2017"
 dev_langs: 

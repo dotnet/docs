@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.ParticipantRecovered"
 title: "Microsoft.Transactions.TransactionBridge.ParticipantRecovered"
 ms.date: "03/30/2017"
 ms.assetid: be6f1ede-2b05-437d-8f86-165dc9968a35

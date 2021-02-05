@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorPublishEnum::Reset Method"
 title: "ICorPublishEnum::Reset Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CreateALink Function"
 title: "CreateALink Function"
 ms.date: "03/30/2017"
 api_name: 

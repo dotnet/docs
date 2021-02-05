@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlStreamChars.Close Method"
 title: SqlStreamChars.Close Method (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein

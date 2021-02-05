@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: . (Member Access) (Entity SQL)"
 title: ". (Member Access) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 4733e3b2-3efa-4b96-b591-ac31350e96ad

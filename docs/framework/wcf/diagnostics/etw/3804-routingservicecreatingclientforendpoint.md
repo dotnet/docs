@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3804 - RoutingServiceCreatingClientForEndpoint"
 title: "3804 - RoutingServiceCreatingClientForEndpoint"
 ms.date: "03/30/2017"
 ms.assetid: f53304b0-1201-4fff-94ed-d054774871c7

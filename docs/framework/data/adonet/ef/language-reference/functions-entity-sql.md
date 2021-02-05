@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Functions (Entity SQL)"
 title: "Functions (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 52b3d776-5acc-4f69-b614-5a43ce56ef9f

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transactions Flowed"
 title: "Transactions Flowed"
 ms.date: "03/30/2017"
 ms.assetid: efeb0167-2014-4c08-b07a-44885bf80a66

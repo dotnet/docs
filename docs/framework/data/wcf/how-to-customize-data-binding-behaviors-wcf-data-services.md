@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Customize Data Binding Behaviors (WCF Data Services)"
 title: "How to: Customize Data Binding Behaviors (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 

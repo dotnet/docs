@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Feed Customization (WCF Data Services)"
 title: "Feed Customization (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 

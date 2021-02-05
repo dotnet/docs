@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSyncManager::CreateRWLockReaderEvent Method"
 title: "IHostSyncManager::CreateRWLockReaderEvent Method"
 ms.date: "03/30/2017"
 api_name: 

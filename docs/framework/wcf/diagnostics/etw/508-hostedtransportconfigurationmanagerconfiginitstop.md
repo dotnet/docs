@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 508 - HostedTransportConfigurationManagerConfigInitStop"
 title: "508 - HostedTransportConfigurationManagerConfigInitStop"
 ms.date: "03/30/2017"
 ms.assetid: 24838d74-05e4-4860-876e-428f947dc7ca

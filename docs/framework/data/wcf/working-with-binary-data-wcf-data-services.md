@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Binary Data (WCF Data Services)"
 title: "Working with Binary Data (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:

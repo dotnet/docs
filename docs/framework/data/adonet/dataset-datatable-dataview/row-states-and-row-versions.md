@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Row States and Row Versions"
 title: "Row States and Row Versions"
 ms.date: "07/19/2018"
 dev_langs: 

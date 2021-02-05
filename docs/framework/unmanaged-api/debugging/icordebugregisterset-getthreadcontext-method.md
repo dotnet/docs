@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugRegisterSet::GetThreadContext Method"
 title: "ICorDebugRegisterSet::GetThreadContext Method"
 ms.date: "03/30/2017"
 api_name: 

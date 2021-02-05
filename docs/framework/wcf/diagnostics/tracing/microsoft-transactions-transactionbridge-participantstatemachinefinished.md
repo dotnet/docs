@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.ParticipantStateMachineFinished"
 title: "Microsoft.Transactions.TransactionBridge.ParticipantStateMachineFinished"
 ms.date: "03/30/2017"
 ms.assetid: 54b677f7-03ad-40f2-9c5d-297a8ad9bf90

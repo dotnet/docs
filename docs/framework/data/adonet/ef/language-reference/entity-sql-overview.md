@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Entity SQL Overview"
 title: "Entity SQL Overview"
 ms.date: "03/30/2017"
 ms.assetid: f0bb8120-e709-40a3-ac1e-5520dc47477d

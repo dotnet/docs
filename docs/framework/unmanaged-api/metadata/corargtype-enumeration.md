@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorArgType Enumeration"
 title: "CorArgType Enumeration"
 ms.date: "03/30/2017"
 api_name: 

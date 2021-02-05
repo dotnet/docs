@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ClientViaBehavior"
 title: "ClientViaBehavior"
 ms.date: "03/30/2017"
 ms.assetid: 594f6046-4752-4a54-9374-b256f8dd1431

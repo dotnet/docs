@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <factorySettings>"
 title: "<factorySettings>"
 ms.date: "03/30/2017"
 ms.topic: "reference"

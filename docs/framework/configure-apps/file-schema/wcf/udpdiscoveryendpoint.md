@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <udpDiscoveryEndpoint>"
 title: "<udpDiscoveryEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: 1f485329-2771-43bc-88de-df8f2faa3bb7

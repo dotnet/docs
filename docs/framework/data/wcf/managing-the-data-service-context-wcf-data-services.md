@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Managing the Data Service Context (WCF Data Services)"
 title: "Managing the Data Service Context (WCF Data Services)"
 ms.date: "03/30/2017"
 ms.assetid: 15b19d09-7de7-4638-9556-6ef396cc45ec

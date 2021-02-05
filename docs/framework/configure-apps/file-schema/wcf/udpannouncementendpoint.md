@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <udpAnnouncementEndpoint>"
 title: "<udpAnnouncementEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: 5b3fa9c5-f372-4df9-a9d6-1e426063b721

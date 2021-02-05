@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugController::Detach Method"
 title: "ICorDebugController::Detach Method"
 ms.date: "03/30/2017"
 api_name: 

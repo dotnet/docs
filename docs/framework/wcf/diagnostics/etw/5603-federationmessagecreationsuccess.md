@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5603 - FederationMessageCreationSuccess"
 title: "5603 - FederationMessageCreationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: b55abdf4-cbe1-401e-b23e-f2bf1bcca719

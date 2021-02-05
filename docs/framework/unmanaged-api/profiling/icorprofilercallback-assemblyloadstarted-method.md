@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::AssemblyLoadStarted Method"
 title: "ICorProfilerCallback::AssemblyLoadStarted Method"
 ms.date: "03/30/2017"
 api_name: 

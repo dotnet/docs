@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeHost::ExecuteApplication Method"
 title: "ICLRRuntimeHost::ExecuteApplication Method"
 ms.date: "03/30/2017"
 api_name: 

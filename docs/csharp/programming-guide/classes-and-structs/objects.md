@@ -1,7 +1,7 @@
 ---
 title: "Objects - C# Programming Guide"
 description: C# uses a class or struct definition to define types of objects. In an object-oriented language such as C#, a program consists of objects interacting dynamically.
-ms.date: 07/20/2015
+ms.date: 02/03/2021
 helpviewer_keywords: 
   - "objects [C#], about objects"
   - "variables [C#]"
@@ -18,7 +18,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
 
  Because classes are reference types, a variable of a class object holds a reference to the address of the object on the managed heap. If a second object of the same type is assigned to the first object, then both variables refer to the object at that address. This point is discussed in more detail later in this topic.  
   
- Instances of classes are created by using the [new operator](../../language-reference/operators/new-operator.md). In the following example, `Person` is the type and `person1` and `person 2` are instances, or objects, of that type.  
+ Instances of classes are created by using the [new operator](../../language-reference/operators/new-operator.md). In the following example, `Person` is the type and `person1` and `person2` are instances, or objects, of that type.  
   
  [!code-csharp[csProgGuideStatements#30](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#30)]  
   
@@ -41,8 +41,8 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
  [!code-csharp[csProgGuideStatements#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#32)]  
   
- The <xref:System.ValueType?displayProperty=nameWithType> implementation of `Equals` uses reflection because it must be able to determine what the fields are in any struct. When creating your own structs, override the `Equals` method to provide an efficient equality algorithm that is specific to your type.  
-  
+ The <xref:System.ValueType?displayProperty=nameWithType> implementation of `Equals` uses boxing and reflection in some cases. For information about how to provide an efficient equality algorithm that is specific to your type, see [How to define value equality for a type](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md)
+
 - To determine whether the values of the fields in two class instances are equal, you might be able to use the <xref:System.Object.Equals%2A> method or the [== operator](../../language-reference/operators/equality-operators.md#equality-operator-). However, only use them if the class has overridden or overloaded them to provide a custom definition of what "equality" means for objects of that type. The class might also implement the <xref:System.IEquatable%601> interface or the <xref:System.Collections.Generic.IEqualityComparer%601> interface. Both interfaces provide methods that can be used to test value equality. When designing your own classes that override `Equals`, make sure to follow the guidelines stated in [How to define value equality for a type](../statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>.
   
 ## Related Sections  

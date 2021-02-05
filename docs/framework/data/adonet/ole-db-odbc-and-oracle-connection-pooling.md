@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB, ODBC, and Oracle connection pooling"
 title: "OLE DB, ODBC, and Oracle Connection Pooling"
 ms.date: "03/30/2017"
 ms.assetid: 2bd83b1e-3ea9-43c4-bade-d9cdb9bbbb04

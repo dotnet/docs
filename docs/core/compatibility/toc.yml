@@ -22,6 +22,10 @@
       items:
       - name: Overview
         href: 6.0.md
+      - name: ASP.NET Core
+        items:
+        - name: "Kestrel: Log message attributes changed"
+          href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -30,6 +34,8 @@
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+        - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
+          href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
     - name: .NET 5.0
       items:
       - name: Overview
@@ -262,6 +268,8 @@
           href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
       - name: Windows Forms
         items:
+        - name: Native code can't access Windows Forms objects
+          href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
           href: windows-forms/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts
@@ -296,6 +304,10 @@
     items:
     - name: ASP.NET Core
       items:
+      - name: .NET 6.0
+        items:
+        - name: "Kestrel: Log message attributes changed"
+          href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
       - name: .NET 5.0
         items:
         - name: ASP.NET Core apps deserialize quoted numbers
@@ -570,8 +582,12 @@
           href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
         - name: TableLayoutSettings properties throw InvalidEnumArgumentException
           href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+        - name: TreeNodeCollection.Item throws exception if node is assigned elsewhere
+          href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
       - name: .NET 5.0
         items:
+        - name: Native code can't access Windows Forms objects
+          href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
         - name: OutputType set to WinExe
           href: windows-forms/5.0/automatically-infer-winexe-output-type.md
         - name: DataGridView doesn't reset custom fonts

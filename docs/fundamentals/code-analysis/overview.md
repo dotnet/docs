@@ -138,15 +138,13 @@ Follow these steps to enable code-style analysis on build:
 
 ## Suppress a warning
 
-To suppress a rule violation, set the severity option for that rule ID to `none` in an EditorConfig file. For example:
+One way to suppress a rule violation is to set the severity option for that rule ID to `none` in an EditorConfig file. For example:
 
 ```ini
 dotnet_diagnostic.CA1822.severity = none
 ```
 
-Visual Studio provides additional ways to suppress warnings from code analysis rules. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
-
-For more information about rule severities, see [Configure rule severity](configuration-options.md#severity-level).
+For more information and other ways to suppress warnings, see [How to suppress code analysis warnings](suppress-warnings.md).
 
 ## Third-party analyzers
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::StrongNameSignatureVerificationFromImage Method"
 title: "ICLRStrongName::StrongNameSignatureVerificationFromImage Method"
 ms.date: "03/30/2017"
 api_name: 

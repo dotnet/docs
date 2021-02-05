@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <connectionPoolSettings>"
 title: "<connectionPoolSettings>"
 ms.date: "03/30/2017"
 ms.assetid: 6fa7fa65-2c6e-4eab-b8cf-7690112c0be5

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorPublishAppDomain::GetName Method"
 title: "ICorPublishAppDomain::GetName Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <filterTable>"
 title: "<filterTable>"
 ms.date: "03/30/2017"
 ms.assetid: e9f05441-3ad1-49b9-a267-71724aa094b4

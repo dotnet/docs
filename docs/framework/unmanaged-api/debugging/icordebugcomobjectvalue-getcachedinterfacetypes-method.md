@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugComObjectValue::GetCachedInterfaceTypes Method"
 title: "ICorDebugComObjectValue::GetCachedInterfaceTypes Method"
 ms.date: "03/30/2017"
 api_name: 

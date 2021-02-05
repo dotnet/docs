@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Develop a WCF data service running on IIS"
 title: "How to: Develop a WCF Data Service Running on IIS"
 ms.date: "03/30/2017"
 dev_langs:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlStreamChars.Flush Method"
 title: SqlStreamChars.Flush Method (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein

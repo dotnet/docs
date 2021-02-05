@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Private Storage Fields"
 title: "How to: Specify Private Storage Fields"
 ms.date: "03/30/2017"
 ms.assetid: 5a40e816-cc6e-43a0-b32a-9caaa0ab6912

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAppDomain2::GetArrayOrPointerType Method"
 title: "ICorDebugAppDomain2::GetArrayOrPointerType Method"
 ms.date: "03/30/2017"
 api_name: 

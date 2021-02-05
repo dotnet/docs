@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <security> of <netPeerBinding>"
 title: "<security> of <netPeerBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 1ef40d8c-f903-4426-9b08-da81462766d8

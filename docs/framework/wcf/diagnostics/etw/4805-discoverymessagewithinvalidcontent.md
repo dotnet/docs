@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4805 - DiscoveryMessageWithInvalidContent"
 title: "4805 - DiscoveryMessageWithInvalidContent"
 ms.date: "03/30/2017"
 ms.assetid: 2c69a7ef-2f5a-438d-bcaf-b3e4c79f0ab7

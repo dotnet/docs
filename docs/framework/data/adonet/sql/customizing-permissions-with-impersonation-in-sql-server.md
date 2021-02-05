@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Customizing Permissions with Impersonation in SQL Server"
 title: "Customizing Permissions with Impersonation in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: dc733d09-1d6d-4af0-9c4b-8d24504860f1

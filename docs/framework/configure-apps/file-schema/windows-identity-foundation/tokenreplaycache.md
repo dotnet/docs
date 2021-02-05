@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <tokenReplayCache>"
 title: "<tokenReplayCache>"
 ms.date: "03/30/2017"
 ms.assetid: 1572ab23-6933-41b5-bfb4-0c4548145500

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables2 Interface"
 title: "IMetaDataTables2 Interface"
 ms.date: "03/30/2017"
 api_name: 

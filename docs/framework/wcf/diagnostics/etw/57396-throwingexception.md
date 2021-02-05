@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 57396 - ThrowingException"
 title: "57396 - ThrowingException"
 ms.date: "03/30/2017"
 ms.assetid: 4f865de5-62c1-443c-9dcd-1675ca127334

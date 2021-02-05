@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 216 - MessageSentByTransport"
 title: "216 - MessageSentByTransport"
 ms.date: "03/30/2017"
 ms.assetid: 150c3167-4154-4225-8d94-57cc94341233

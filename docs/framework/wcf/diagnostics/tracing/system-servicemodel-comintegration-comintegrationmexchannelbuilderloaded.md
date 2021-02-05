@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationMexChannelBuilderLoaded"
 title: "System.ServiceModel.ComIntegration.ComIntegrationMexChannelBuilderLoaded"
 ms.date: "03/30/2017"
 ms.assetid: 107160a1-1f19-4c5d-9a74-fe1f398aa8c4

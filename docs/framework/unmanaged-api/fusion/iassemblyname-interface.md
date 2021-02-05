@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyName Interface"
 title: "IAssemblyName Interface"
 ms.date: "03/30/2017"
 api_name: 

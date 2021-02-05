@@ -71,7 +71,7 @@ using System.Runtime.InteropServices;
 internal static class NativeMethods
 {
     [DllImport("user32.dll", EntryPoint = "MessageBoxA")]
-    internal static extern int MessageBox(
+    internal static extern int MsgBox(
         IntPtr hWnd, string lpText, string lpCaption, uint uType);
 }
 ```

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTask::Abort Method"
 title: "ICLRTask::Abort Method"
 ms.date: "03/30/2017"
 api_name: 

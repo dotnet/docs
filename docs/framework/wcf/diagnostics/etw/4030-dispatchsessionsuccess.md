@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4030 - DispatchSessionSuccess"
 title: "4030 - DispatchSessionSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 6530a13d-27d3-4a51-ab3c-7dd962f57b2f

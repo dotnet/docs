@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedNamespace::GetName Method"
 title: "ISymUnmanagedNamespace::GetName Method"
 ms.date: "03/30/2017"
 api_name: 

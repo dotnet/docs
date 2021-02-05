@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerModuleEnum::GetCount Method"
 title: "ICorProfilerModuleEnum::GetCount Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::EnumMembersWithName Method"
 title: "IMetaDataImport::EnumMembersWithName Method"
 ms.date: "03/30/2017"
 api_name: 

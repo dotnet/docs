@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugCode::GetILToNativeMapping Method"
 title: "ICorDebugCode::GetILToNativeMapping Method"
 ms.date: "03/30/2017"
 api_name: 

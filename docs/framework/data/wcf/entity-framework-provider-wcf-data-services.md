@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Entity Framework Provider (WCF Data Services)"
 title: "Entity Framework Provider (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

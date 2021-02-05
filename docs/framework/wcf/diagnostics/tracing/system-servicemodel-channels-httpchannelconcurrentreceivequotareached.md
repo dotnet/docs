@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.HttpChannelConcurrentReceiveQuotaReached"
 title: "System.ServiceModel.Channels.HttpChannelConcurrentReceiveQuotaReached"
 ms.date: "03/30/2017"
 ms.assetid: db6d8cdb-0d25-4bfb-8963-eff465733d70

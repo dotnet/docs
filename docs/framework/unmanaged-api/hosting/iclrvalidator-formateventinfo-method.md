@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRValidator::FormatEventInfo Method"
 title: "ICLRValidator::FormatEventInfo Method"
 ms.date: "03/30/2017"
 api_name: 

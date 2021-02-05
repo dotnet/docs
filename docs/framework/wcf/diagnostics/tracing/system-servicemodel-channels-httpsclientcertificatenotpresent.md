@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.HttpsClientCertificateNotPresent"
 title: "System.ServiceModel.Channels.HttpsClientCertificateNotPresent"
 ms.date: "03/30/2017"
 ms.assetid: b13ef1b6-e340-401d-93ca-2710c3842205

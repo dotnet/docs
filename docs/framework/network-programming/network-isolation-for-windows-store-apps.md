@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Network Isolation for Windows Store Apps"
 title: "Network Isolation for Windows Store Apps"
 ms.date: "03/30/2017"
 ms.assetid: b064497c-d956-46b8-838d-7a0223c7e200

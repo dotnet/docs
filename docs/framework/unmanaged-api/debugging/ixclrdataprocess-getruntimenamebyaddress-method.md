@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataProcess::GetRuntimeNameByAddress Method"
 title: "IXCLRDataProcess::GetRuntimeNameByAddress Method"
 ms.date: "4/27/2020"
 api.name:

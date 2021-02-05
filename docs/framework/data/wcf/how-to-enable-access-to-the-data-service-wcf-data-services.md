@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Enable Access to the Data Service (WCF Data Services)"
 title: "How to: Enable Access to the Data Service (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 

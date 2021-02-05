@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugNativeFrame::GetLocalDoubleRegisterValue Method"
 title: "ICorDebugNativeFrame::GetLocalDoubleRegisterValue Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Composing Nested Entity SQL Queries"
 title: "Composing Nested Entity SQL Queries"
 ms.date: "03/30/2017"
 ms.assetid: 685d4cd3-2c1f-419f-bb46-c9d97a351eeb

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.ListenerCreated"
 title: "System.ServiceModel.Channels.ListenerCreated"
 ms.date: "03/30/2017"
 ms.assetid: d4a3401c-f7f8-4761-95c2-ca92b70a503d

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PublicKeyBlob Structure"
 title: "PublicKeyBlob Structure"
 ms.date: "03/30/2017"
 api_name: 

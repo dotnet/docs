@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerModuleEnum::Reset Method"
 title: "ICorProfilerModuleEnum::Reset Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorConfiguration::SetDebuggerThreadControl Method"
 title: "ICorConfiguration::SetDebuggerThreadControl Method"
 ms.date: "03/30/2017"
 api_name: 

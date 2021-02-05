@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Workflow Foundation Configuration Schema"
 title: "Windows Workflow Foundation Configuration Schema"
 ms.date: "03/30/2017"
 ms.topic: "reference"

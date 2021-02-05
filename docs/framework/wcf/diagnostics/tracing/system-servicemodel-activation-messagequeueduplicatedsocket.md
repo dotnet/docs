@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.MessageQueueDuplicatedSocket"
 title: "System.ServiceModel.Activation.MessageQueueDuplicatedSocket"
 ms.date: "03/30/2017"
 ms.assetid: 4d54c015-226e-40c6-8c54-1773b342a9b6

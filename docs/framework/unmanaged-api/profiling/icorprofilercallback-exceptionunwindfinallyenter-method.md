@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionUnwindFinallyEnter Method"
 title: "ICorProfilerCallback::ExceptionUnwindFinallyEnter Method"
 ms.date: "03/30/2017"
 api_name: 

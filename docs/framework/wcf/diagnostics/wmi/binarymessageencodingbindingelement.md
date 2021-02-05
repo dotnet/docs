@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BinaryMessageEncodingBindingElement"
 title: "BinaryMessageEncodingBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: e2bb3cdd-3bbd-4bb5-85fe-570457500a66

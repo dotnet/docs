@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 715 - ClientChannelOpenStart"
 title: "715 - ClientChannelOpenStart"
 ms.date: "03/30/2017"
 ms.assetid: 62be7826-9c4e-4fec-b958-185ddfaed976

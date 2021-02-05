@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC Schema Collections"
 title: "ODBC Schema Collections"
 ms.date: "03/30/2017"
 ms.assetid: 1bb126a5-ceec-4649-a4bc-8aa19e801046

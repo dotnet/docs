@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Analyzing LINQ to SQL Source Code"
 title: "Analyzing LINQ to SQL Source Code"
 ms.date: "03/30/2017"
 ms.assetid: cba3eef8-e108-4478-b588-ad59580e133e

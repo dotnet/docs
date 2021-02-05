@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSecurityManager::GetSecurityContext Method"
 title: "IHostSecurityManager::GetSecurityContext Method"
 ms.date: "03/30/2017"
 api_name: 

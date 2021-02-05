@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Data Service Using a LINQ to SQL Data Source (WCF Data Services)"
 title: "How to: Create a Data Service Using a LINQ to SQL Data Source (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:

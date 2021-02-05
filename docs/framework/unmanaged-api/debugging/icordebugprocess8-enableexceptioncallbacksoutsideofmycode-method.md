@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode Method"
 title: "ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode Method"
 ms.date: "03/30/2017"
 dev_langs: 

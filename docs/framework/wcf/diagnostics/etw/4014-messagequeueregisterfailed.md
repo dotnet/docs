@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4014 - MessageQueueRegisterFailed"
 title: "4014 - MessageQueueRegisterFailed"
 ms.date: "03/30/2017"
 ms.assetid: d8aa80ea-e251-4b54-ade7-bfbd6670a6ef

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1417 - MaxSentMessageSizeExceeded"
 title: "1417 - MaxSentMessageSizeExceeded"
 ms.date: "03/30/2017"
 ms.assetid: 3cb7c2f0-97bf-4ee9-a037-ed64a25a18fd

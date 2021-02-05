@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugHeapValue2::CreateHandle Method"
 title: "ICorDebugHeapValue2::CreateHandle Method"
 ms.date: "03/30/2017"
 api_name: 

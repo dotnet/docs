@@ -73,7 +73,7 @@ To set the rule severity for a single rule, use the following syntax.
 dotnet_diagnostic.<rule ID>.severity = <severity value>
 ```
 
-To set the default rule severity for a category of analyzer rules, use the following syntax. The category for each rule is provided in the individual rule reference pages, for example, [CA1000](quality-rules/ca1000.md).
+To set the default rule severity for a [category of rules](categories.md), use the following syntax. The category for each rule is provided in the individual rule reference pages, for example, [CA1000](quality-rules/ca1000.md).
 
 ```ini
 dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>

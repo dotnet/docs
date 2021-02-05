@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDebuggerThreadControl::ReleaseAllRuntimeThreads Method"
 title: "IDebuggerThreadControl::ReleaseAllRuntimeThreads Method"
 ms.date: "03/30/2017"
 api_name: 

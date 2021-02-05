@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Defining WCF Data Services"
 title: "Defining WCF Data Services"
 ms.date: "03/30/2017"
 helpviewer_keywords:

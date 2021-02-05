@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLR Hosting Interfaces"
 title: "CLR Hosting Interfaces"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

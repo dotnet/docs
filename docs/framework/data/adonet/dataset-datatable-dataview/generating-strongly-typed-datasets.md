@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generating Strongly Typed DataSets"
 title: "Generating Strongly Typed DataSets"
 ms.date: "03/30/2017"
 dev_langs: 

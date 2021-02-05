@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorParamAttr Enumeration"
 title: "CorParamAttr Enumeration"
 ms.date: "03/30/2017"
 api_name: 

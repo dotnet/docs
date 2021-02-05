@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <udpBinding>"
 title: "<udpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: fa291901-8340-45c6-9c44-5d9281c70bc3

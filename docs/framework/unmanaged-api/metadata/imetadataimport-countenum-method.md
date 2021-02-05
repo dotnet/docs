@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::CountEnum Method"
 title: "IMetaDataImport::CountEnum Method"
 ms.date: "03/30/2017"
 api_name: 

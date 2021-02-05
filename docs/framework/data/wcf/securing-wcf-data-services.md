@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Securing WCF Data Services"
 title: "Securing WCF Data Services"
 ms.date: "03/30/2017"
 dev_langs: 

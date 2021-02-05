@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlDependency in an ASP.NET Application"
 title: "SqlDependency in an ASP.NET Application"
 ms.date: "03/30/2017"
 dev_langs: 

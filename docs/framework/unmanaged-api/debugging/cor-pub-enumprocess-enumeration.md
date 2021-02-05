@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_PUB_ENUMPROCESS Enumeration"
 title: "COR_PUB_ENUMPROCESS Enumeration"
 ms.date: "03/30/2017"
 api_name: 

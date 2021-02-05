@@ -30,6 +30,16 @@ The following versions of .NET are ❌ no longer supported. The downloads for th
 
 These unsupported versions aren't detailed in the sections below and your mileage may vary if you try to install them.
 
+## Manual installation
+
+If you don't want to use a package manager to install .NET on Linux, you can install .NET in one of the following ways:
+
+- [Snap package](linux-snap.md)
+- [Scripted install with _install-dotnet.sh_](linux-scripted-manual.md#scripted-install)
+- [Manual binary extraction](linux-scripted-manual.md#manual-install)
+
+Be sure to check the appropriate distribution page for more information about any required dependencies that may be missing when you do a manual installation.
+
 ## Alpine
 
 The following table is a list of currently supported .NET releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases).

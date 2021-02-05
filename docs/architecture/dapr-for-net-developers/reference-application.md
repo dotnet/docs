@@ -21,7 +21,7 @@ Several years ago, Microsoft, in partnership with leading community experts, rel
 
 The book dove deep into the principles, patterns, and best practices for building distributed applications. It included a full-featured microservice reference application that showcased the architectural concepts. Entitled, [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), the application shows an eCommerce storefront that sells various .NET items, including clothing and coffee mugs.  Built in .NET Core, the application is cross-platform and can run in either Linux or Windows containers. Figure 3-2 shows the original eShop architecture.
 
-![eShopOnContainers reference application architecture.](./media/eshoponcontainers-architecture.png)
+![eShopOnContainers reference application architecture.](./media/reference-application/eshop-on-containers.png)
 
 **Figure 3-2**. Original `ShopOnContainers` reference application.
 
@@ -38,7 +38,7 @@ The eShopOnContainers reference application has been widely accepted across the 
 
 A modernized version of the eShop application accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The updated reference application evolves (or, *Daprizes*, if you will) the earlier eShopOnContainers application by integrating Dapr building blocks and components. Figure 3-3 shows the new streamlined solution architecture:  
 
-![eShopOnDapr reference application architecture.](./media/eshopondapr-architecture.png)
+![eShopOnDapr reference application architecture.](./media/reference-application/eshop-on-dapr.png)
 
 **Figure 3-3**. Modernized `eShopOnDapr` reference application.
 
@@ -81,6 +81,10 @@ While Dapr is used throughout the eShopOn Dapr reference application, the follow
 ## Benefits of applying Dapr to eShop
 
 If you could overlay the updated eShopOnDapr over the original eShopOnContainers, you would see a streamlined application. Larges amounts of complex plumbing code would be abstracted away by the Dapr runtime.
+
+![eShopOnDapr reference application architecture](./media/reference-application/eshop-on-dapr-buildingblocks.png)
+
+**Figure 3-4**. Modernized `eShopOnDapr` reference application
 
 Consider these improvements:
 

@@ -22,7 +22,7 @@ But, this evolution raises many questions...
 
 To start, let's rewind and look at the past 15 years. During this period, we typically constructed applications as a single, monolithic unit. Figure 1-1 shows the architecture.
 
-![Monolithic architecture.](./media/monolithic-design.png)
+![Monolithic architecture.](./media/the-world-is-distributed/monolithic-design.png)
 
 **Figure 1-1** : Monolithic architecture.
 
@@ -56,7 +56,7 @@ Instead of fear, businesses require `speed and agility`. They seek an architectu
 
 An early attempt to gain speed and agility came in the form of [Service Oriented Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), or `SOA`. In this model, service consumers and service providers collaborated via middleware messaging components, often referred to as an [Enterprise Service Bus](https://en.wikipedia.org/wiki/Enterprise_service_bus), or `ESB`. Figure 1-2 shows the architecture.
 
-![SOA.](./media/soa-basic.png)
+![SOA.](./media/the-world-is-distributed/soa-basic.png)
 
 **Figure 1-2** SOA architecture.
 
@@ -66,7 +66,7 @@ Despite the promises of SOA, implementing this approach often increased complexi
 
 Nowadays, many organizations have realized speed and agility by adopting a distributed microservice architectural approach to building systems. Figure 1-3 shows the same system built using distributed techniques and practices.
 
-![Distributed architecture.](./media/distributed-design.png)
+![Distributed architecture.](./media/the-world-is-distributed/distributed-design.png)
 
 **Figure 1-3** : Distributed architecture.
 

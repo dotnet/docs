@@ -67,7 +67,7 @@ The JSON response contains the key and value of the secret.
 
 Figure 10-1 shows how Dapr handles a request for the secrets API:
 
-![Diagram of retrieving a secret using the Dapr secrets API.](media/secrets-management/retrieve-secret.png)
+![Diagram of retrieving a secret using the Dapr secrets API.](media/secrets/secrets-flow.png)
 
 **Figure 10-1**. Retrieving a secret with the Dapr secrets API
 

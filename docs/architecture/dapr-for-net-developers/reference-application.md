@@ -28,9 +28,9 @@ The book dove deep into the principles, patterns, and best practices for buildin
 As you can see, eShopOnContainers includes many moving parts:
 
 1. Three different frontend clients.
-2. An application gateway to abstract the backend from the frontend.
-3. Several backend core microservices.
-4. An event bus component that enables asynchronous pub/sub messaging.
+1. An application gateway to abstract the backend from the frontend.
+1. Several backend core microservices.
+1. An event bus component that enables asynchronous pub/sub messaging.
 
 The eShopOnContainers reference application has been widely accepted across the .NET community and used to model many large commercial microservice applications.
 
@@ -46,11 +46,11 @@ The focus of the eShopOnDapr reference application is Dapr. Therefore, the origi
 
 1. A [Single Page Application](https://docs.microsoft.com/archive/msdn-magazine/2013/november/asp-net-single-page-applications-build-modern-responsive-web-apps-with-asp-net) frontend written in the popular Angular SPA framework. It sends user requests to an API gateway microservice.
 
-2. The API gateway abstracts the backend core microservices from the frontend client. It's implemented using [Envoy](https://www.envoyproxy.io/), a high performant, open-source service proxy. Envoy routes  incoming requests to various back-end microservices. Most requests are simple CRUD operations (for example, get the list of brands from the catalog) and handled by a direct call to a single back-end microservice.
+1. The API gateway abstracts the backend core microservices from the frontend client. It's implemented using [Envoy](https://www.envoyproxy.io/), a high performant, open-source service proxy. Envoy routes  incoming requests to various back-end microservices. Most requests are simple CRUD operations (for example, get the list of brands from the catalog) and handled by a direct call to a single back-end microservice.
 
-3. Other requests from the api gateway are logically more complex and require multiple microservices to work together. For these cases, eShopOnDapr implements an [aggregator microservice](../cloud-native/service-to-service-communication#service-aggregator-pattern) that orchestrates a workflow across microservices required for the operation.
+1. Other requests from the api gateway are logically more complex and require multiple microservices to work together. For these cases, eShopOnDapr implements an [aggregator microservice](../cloud-native/service-to-service-communication#service-aggregator-pattern) that orchestrates a workflow across microservices required for the operation.
 
-4. The set of core backend microservices includes functionality required for an online store. Each microservice is self-contained and independent of the others. Note how each microservice isolates a specific *business capability*:
+1. The set of core backend microservices includes functionality required for an online store. Each microservice is self-contained and independent of the others. Note how each microservice isolates a specific *business capability*:
 
       - The Identity microservice manages authentication and identity.
       - The Catalog microservice manages product items available for sale.
@@ -62,7 +62,7 @@ The focus of the eShopOnDapr reference application is Dapr. Therefore, the origi
 
    The design of each microservice is based on its individual requirements. The simple services only require basic CRUD access to their underlying data stores. Advanced services, like Ordering, use a  Domain-Driven Design approach to manage business complexity. If necessary, services could also be built with different technology stacks: .NET Core, Java, Go, NodeJS, and more.
 
-5. Finally, the event bus wraps the Dapr publish/subscribe components. It enables asynchronous publish/subscribe messaging across microservices. Developers can plug in any Dapr-supported message broker.
+1. Finally, the event bus wraps the Dapr publish/subscribe components. It enables asynchronous publish/subscribe messaging across microservices. Developers can plug in any Dapr-supported message broker.
 
 ## Benefits of applying Dapr to eShop
 

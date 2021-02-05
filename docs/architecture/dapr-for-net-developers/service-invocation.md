@@ -79,8 +79,8 @@ In the next section, you'll learn how to use the .NET SDK to simplify service in
 The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with an intuitive and language-specific way to interact with Dapr. The SDK offers developers three ways of making remote service invocation calls:
 
 1. Invoke HTTP services using HttpClient
-2. Invoke HTTP services using DaprClient
-3. Invoke gRPC services using DaprClient
+1. Invoke HTTP services using DaprClient
+1. Invoke gRPC services using DaprClient
 
 ### Invoke HTTP services using HttpClient
 

@@ -51,8 +51,8 @@ Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value p
 Note the steps in the previous figure:
 
 1. The basket service calls the state management API from the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.
-2. The Dapr sidecar determines the state store based on the component configuration file. In this case, it's a Redis cache state store.
-3. The sidecar persists the data to the Redis cache.
+1. The Dapr sidecar determines the state store based on the component configuration file. In this case, it's a Redis cache state store.
+1. The sidecar persists the data to the Redis cache.
 
 Retrieving the stored data is a similar API call. In the example below, a *curl* command retrieves the data by calling the Dapr sidecar API:
 

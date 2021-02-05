@@ -104,11 +104,11 @@ Figure 7-3 presents the flow of the example.
 From the previous figure, note the flow:
 
 1. The Dapr sidecar for Service B calls the `/dapr/subscribe` endpoint from Service B (the consumer). The service responds with the subscriptions it wants to create.
-2. The Dapr sidecar for Service B creates the requested subscriptions on the message broker.
-3. Service A publishes a message at the `/v1.0/publish/<pub-sub-name>/<topic>` endpoint on the Dapr Service A sidecar.
-4. The Service A sidecar publishes the message to the message broker.
-5. The message broker sends a copy of the message to the Service B sidecar.
-6. The Service B sidecar calls the endpoint corresponding to the subscription (in this case `/orders`) on Service B.
+1. The Dapr sidecar for Service B creates the requested subscriptions on the message broker.
+1. Service A publishes a message at the `/v1.0/publish/<pub-sub-name>/<topic>` endpoint on the Dapr Service A sidecar.
+1. The Service A sidecar publishes the message to the message broker.
+1. The message broker sends a copy of the message to the Service B sidecar.
+1. The Service B sidecar calls the endpoint corresponding to the subscription (in this case `/orders`) on Service B.
 
 Making HTTP calls to the native Dapr APIs is time-consuming and abstract. Your calls are crafted at the HTTP level, and you'll need to handle plumbing concerns such as serialization and HTTP response codes. Fortunately, there's a more intuitive way. Dapr provides several language-specific SDKs for popular development platforms. At the time of this writing, Go, Node.js, Python, .NET, Java, and JavaScript are available.
 

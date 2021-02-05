@@ -4,7 +4,7 @@ description: Learn how to build full-stack web apps with .NET using Blazor and .
 author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
-ms.date: 02/02/21
+ms.date: 02/02/2021
 ---
 # Blazor for ASP.NET Web Forms Developers
 

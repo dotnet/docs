@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internal error in the Microsoft Visual Basic runtime"
 title: "Internal error in the Microsoft Visual Basic runtime"
 ms.date: 07/20/2015
 f1_keywords: 

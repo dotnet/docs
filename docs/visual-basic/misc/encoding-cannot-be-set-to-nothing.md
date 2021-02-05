@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Encoding cannot be set to Nothing"
 title: "Encoding cannot be set to Nothing"
 ms.date: 07/20/2015
 ms.assetid: 59f7c731-8291-4a85-bf51-c225e48cdc84

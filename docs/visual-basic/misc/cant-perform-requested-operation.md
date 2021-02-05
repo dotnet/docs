@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Can't perform requested operation (Visual Basic)"
 title: "Can't perform requested operation"
 ms.date: 07/20/2015
 f1_keywords: 

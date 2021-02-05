@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Query a Database by Using LINQ (Visual Basic)"
 title: "How to: Query a Database by Using LINQ"
 ms.date: 07/20/2015
 helpviewer_keywords: 

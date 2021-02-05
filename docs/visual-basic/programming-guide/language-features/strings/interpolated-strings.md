@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interpolated Strings (Visual Basic Reference)"
 title: "Interpolated Strings"
 ms.date: "10/31/2017"
 ---

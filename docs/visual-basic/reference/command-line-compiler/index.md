@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual Basic command-line compiler"
 title: "Command-line compiler"
 ms.date: 02/20/2018
 helpviewer_keywords: 

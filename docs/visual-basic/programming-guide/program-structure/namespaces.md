@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Namespaces in Visual Basic"
 title: "Namespaces"
 ms.date: 07/20/2015
 f1_keywords: 

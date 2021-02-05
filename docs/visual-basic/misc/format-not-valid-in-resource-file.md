@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Format not valid in resource file"
 title: "Format not valid in resource file"
 ms.date: 07/20/2015
 f1_keywords: 

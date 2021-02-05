@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specified DLL function not found"
 title: "Specified DLL function not found"
 ms.date: 07/20/2015
 f1_keywords: 

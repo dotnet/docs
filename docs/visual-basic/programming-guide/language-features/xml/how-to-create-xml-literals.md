@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create XML Literals (Visual Basic)"
 title: "How to: Create XML Literals"
 ms.date: 07/20/2015
 helpviewer_keywords: 

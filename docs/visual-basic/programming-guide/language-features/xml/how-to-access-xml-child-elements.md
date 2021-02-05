@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access XML Child Elements (Visual Basic)"
 title: "How to: Access XML Child Elements"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Label Statements (Visual Basic)"
 title: "How to: Label Statements"
 ms.date: 07/20/2015
 helpviewer_keywords:

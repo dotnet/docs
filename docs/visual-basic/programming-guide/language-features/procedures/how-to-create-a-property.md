@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Property (Visual Basic)"
 title: "How to: Create a Property"
 ms.date: 07/20/2015
 helpviewer_keywords: 

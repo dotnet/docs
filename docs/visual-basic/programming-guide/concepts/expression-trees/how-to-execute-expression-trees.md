@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Execute Expression Trees (Visual Basic)"
 title: "How to: Execute Expression Trees"
 ms.date: 07/20/2015
 ms.assetid: 9dfb5ab3-f48f-417e-975f-f8f6f1cdc18d

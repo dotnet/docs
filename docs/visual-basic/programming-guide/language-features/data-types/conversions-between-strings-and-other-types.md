@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Conversions Between Strings and Other Types (Visual Basic)"
 title: "Conversions Between Strings and Other Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 

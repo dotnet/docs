@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Value Types and Reference Types"
 title: "Value Types and Reference Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 

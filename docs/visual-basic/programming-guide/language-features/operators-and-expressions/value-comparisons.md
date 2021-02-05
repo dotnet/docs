@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Value Comparisons (Visual Basic)"
 title: "Value Comparisons"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Application.Log cannot determine the amount of free disk space"
 title: "My.Application.Log cannot determine the amount of free disk space"
 ms.date: 07/20/2015
 f1_keywords: 

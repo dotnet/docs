@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Path '<pathname>' not found"
 title: "Path '<pathname>' not found"
 ms.date: 07/20/2015
 f1_keywords: 

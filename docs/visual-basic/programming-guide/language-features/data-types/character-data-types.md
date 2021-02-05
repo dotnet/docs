@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Character Data Types (Visual Basic)"
 title: "Character Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Class '<classname>' does not implement the System.Collections.ICollection interface"
 title: "Class '<classname>' does not implement the System.Collections.ICollection interface"
 ms.date: 07/20/2015
 f1_keywords: 

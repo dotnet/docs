@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Control the Availability of a Variable (Visual Basic)"
 title: "How to: Control the Availability of a Variable"
 ms.date: 07/20/2015
 helpviewer_keywords: 

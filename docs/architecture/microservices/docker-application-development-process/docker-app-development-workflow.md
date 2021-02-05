@@ -1,7 +1,7 @@
 ---
 title: Development workflow for Docker apps
 description: Understand the details of the workflow for developing Docker-based applications. Begin step by step and get into some details to optimize Dockerfiles and end with the simplified workflow available when using Visual Studio.
-ms.date: 01/13/2021
+ms.date: 02/02/2021
 ---
 # Development workflow for Docker apps
 
@@ -47,7 +47,7 @@ To begin, make sure you have [Docker Community Edition (CE)](https://docs.docker
 
 [Get started with Docker CE for Windows](https://docs.docker.com/docker-for-windows/)
 
-In addition, you need Visual Studio 2019 version 16.4 or later, with the **.NET Core cross-platform development** workload installed, as shown in Figure 5-2.
+In addition, you need Visual Studio 2019 version 16.8, with the **.NET Core cross-platform development** workload installed, as shown in Figure 5-2.
 
 ![Screenshot of the .NET Core cross-platform development selection.](./media/docker-app-development-workflow/dotnet-core-cross-platform-development.png)
 
@@ -126,7 +126,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 
 ### Using multi-arch image repositories
 
-A single repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is Linux and Windows). For example, the [dotnet/core](https://hub.docker.com/_/microsoft-dotnet/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same repo name.
+A single repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is Linux and Windows). For example, the [.NET](https://hub.docker.com/_/microsoft-dotnet/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same repo name.
 
 If you specify a tag, targeting a platform that is explicit like in the following cases:
 
@@ -500,7 +500,7 @@ The docker-compose up and docker run commands (or running and debugging the cont
 
 ## Step 6. Test your Docker application using your local Docker host
 
-This step will vary depending on what your application is doing. In a simple .NET Core Web application that is deployed as a single container or service, you can access the service by opening a browser on the Docker host and navigating to that site, as shown in Figure 5-13. (If the configuration in the Dockerfile maps the container to a port on the host that is anything other than 80, include the host port in the URL.)
+This step will vary depending on what your application is doing. In a simple .NET Web application that is deployed as a single container or service, you can access the service by opening a browser on the Docker host and navigating to that site, as shown in Figure 5-13. (If the configuration in the Dockerfile maps the container to a port on the host that is anything other than 80, include the host port in the URL.)
 
 ![Screenshot of the response from localhost/API/values.](./media/docker-app-development-workflow/test-docker-app-locally-localhost.png)
 

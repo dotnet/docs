@@ -60,6 +60,6 @@ ASP.NET Core
 
 ## Affected APIs
 
-[UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection?view=aspnetcore-5.0)
+`Overload:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection`
 
 -->

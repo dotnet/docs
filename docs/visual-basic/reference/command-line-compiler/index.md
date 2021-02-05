@@ -26,4 +26,3 @@ Lists compiler options in an alphabetical table
 
 [Visual Basic Compiler Options Listed by Category](compiler-options-listed-by-category.md)  
 Presents compiler options in functional groups.
-  

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the .NET Framework Client Application (WCF Data Services Quickstart)"
 title: "Creating the .NET Framework Client Application (WCF Data Services Quickstart)"
 ms.date: "03/30/2017"
 dev_langs:

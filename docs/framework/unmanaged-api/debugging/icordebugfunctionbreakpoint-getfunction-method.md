@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFunctionBreakpoint::GetFunction Method"
 title: "ICorDebugFunctionBreakpoint::GetFunction Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugChain::GetReason Method"
 title: "ICorDebugChain::GetReason Method"
 ms.date: "03/30/2017"
 api_name: 

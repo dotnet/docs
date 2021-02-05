@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAppDomain3::GetCachedWinRTTypes Method"
 title: "ICorDebugAppDomain3::GetCachedWinRTTypes Method"
 ms.date: "03/30/2017"
 api_name: 

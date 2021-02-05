@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Develop and Deploy WCF Data Services"
 title: "Developing and Deploying WCF Data Services"
 ms.date: "03/30/2017"
 helpviewer_keywords:

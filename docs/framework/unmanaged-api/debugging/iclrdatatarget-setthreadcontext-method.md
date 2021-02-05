@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDataTarget::SetThreadContext Method"
 title: "ICLRDataTarget::SetThreadContext Method"
 ms.date: "03/30/2017"
 api_name: 

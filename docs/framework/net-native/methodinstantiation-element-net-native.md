@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <MethodInstantiation> Element (.NET Native)"
 title: "<MethodInstantiation> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: a3355d78-2a88-4109-8521-830d7cae260a

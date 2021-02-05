@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDataTarget::Request Method"
 title: "ICLRDataTarget::Request Method"
 ms.date: "03/30/2017"
 api_name: 

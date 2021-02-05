@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Retrieving Objects from the Identity Cache"
 title: "Retrieving Objects from the Identity Cache"
 ms.date: "03/30/2017"
 dev_langs: 

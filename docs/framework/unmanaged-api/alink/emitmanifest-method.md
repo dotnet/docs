@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EmitManifest Method"
 title: "EmitManifest Method"
 ms.date: "03/30/2017"
 api_name: 

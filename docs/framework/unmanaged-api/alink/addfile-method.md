@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AddFile Method"
 title: "AddFile Method"
 ms.date: "03/30/2017"
 api_name: 

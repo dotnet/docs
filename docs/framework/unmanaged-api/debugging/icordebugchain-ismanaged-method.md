@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugChain::IsManaged Method"
 title: "ICorDebugChain::IsManaged Method"
 ms.date: "03/30/2017"
 api_name: 

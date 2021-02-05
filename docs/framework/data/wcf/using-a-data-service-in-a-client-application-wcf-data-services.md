@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a Data Service in a Client Application (WCF Data Services)"
 title: "Using a Data Service in a Client Application (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

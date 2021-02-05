@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugChain::EnumerateFrames Method"
 title: "ICorDebugChain::EnumerateFrames Method"
 ms.date: "03/30/2017"
 api_name: 

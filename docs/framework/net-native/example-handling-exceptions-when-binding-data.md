@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Example: Handling Exceptions When Binding Data"
 title: "Example: Handling Exceptions When Binding Data"
 ms.date: "03/30/2017"
 ms.assetid: bd63ed96-9853-46dc-ade5-7bd1b0f39110

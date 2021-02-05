@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Location-Based Cache Policies"
 title: "Location-Based Cache Policies"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Formulate Joins and Cross-Product Queries"
 title: "Formulate Joins and Cross-Product Queries"
 ms.date: "03/30/2017"
 dev_langs: 

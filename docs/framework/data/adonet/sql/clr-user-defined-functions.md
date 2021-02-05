@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLR User-Defined Functions"
 title: "CLR User-Defined Functions"
 ms.date: "03/30/2017"
 ms.assetid: 1c59d9d3-6ff9-411b-8b29-b1494d80fdf1

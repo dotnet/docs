@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Getting Started with WCF Data Services"
 title: "Getting Started with WCF Data Services"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

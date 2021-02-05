@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DacpReJitData Structure"
 title: "DacpReJitData Structure"
 ms.date: "02/01/2019"
 api.name:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Handle Composite Keys in Queries"
 title: "How to: Handle Composite Keys in Queries"
 ms.date: "03/30/2017"
 dev_langs: 

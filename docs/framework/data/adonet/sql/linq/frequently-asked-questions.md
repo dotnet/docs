@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Frequently Asked Questions"
 title: "Frequently Asked Questions"
 ms.date: "03/30/2017"
 dev_langs:

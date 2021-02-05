@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Represent Columns as Allowing Null Values"
 title: "How to: Represent Columns as Allowing Null Values"
 ms.date: "03/30/2017"
 ms.assetid: ebb71a37-1f4c-4fa7-b2d2-d903f13c4af1

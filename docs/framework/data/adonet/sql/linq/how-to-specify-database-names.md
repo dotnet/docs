@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Database Names"
 title: "How to: Specify Database Names"
 ms.date: "03/30/2017"
 ms.assetid: b80f0fd2-7f75-45fe-9e12-496f80f183df

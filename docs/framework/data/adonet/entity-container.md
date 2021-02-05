@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: entity container"
 title: "entity container"
 ms.date: "03/30/2017"
 ms.assetid: 16e80405-2c75-42fc-b0e4-b1df53b1c584

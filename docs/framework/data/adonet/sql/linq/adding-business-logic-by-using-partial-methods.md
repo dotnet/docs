@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Business Logic By Using Partial Methods"
 title: "Adding Business Logic By Using Partial Methods"
 ms.date: "03/30/2017"
 dev_langs: 

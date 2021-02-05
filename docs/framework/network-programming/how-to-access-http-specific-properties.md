@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access HTTP-Specific Properties"
 title: "How to: Access HTTP-Specific Properties"
 ms.date: "03/30/2017"
 dev_langs: 

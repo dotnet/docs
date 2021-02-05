@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback::CreateAppDomain Method"
 title: "ICorDebugManagedCallback::CreateAppDomain Method"
 ms.date: "03/30/2017"
 api_name: 

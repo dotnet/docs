@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify When Concurrency Exceptions are Thrown"
 title: "How to: Specify When Concurrency Exceptions are Thrown"
 ms.date: "03/30/2017"
 dev_langs: 

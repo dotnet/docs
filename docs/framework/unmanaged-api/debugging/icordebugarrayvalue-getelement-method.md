@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugArrayValue::GetElement Method"
 title: "ICorDebugArrayValue::GetElement Method"
 ms.date: "03/30/2017"
 api_name: 

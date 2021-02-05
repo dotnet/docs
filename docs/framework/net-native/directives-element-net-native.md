@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <Directives> Element (.NET Native)"
 title: "<Directives> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 444846f3-48d5-4341-a43e-69f7221389eb

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugController::Continue Method"
 title: "ICorDebugController::Continue Method"
 ms.date: "03/30/2017"
 api_name:

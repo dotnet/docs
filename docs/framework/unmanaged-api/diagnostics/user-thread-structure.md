@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: USER_THREAD Structure"
 title: "USER_THREAD Structure"
 ms.date: "03/30/2017"
 api_name: 

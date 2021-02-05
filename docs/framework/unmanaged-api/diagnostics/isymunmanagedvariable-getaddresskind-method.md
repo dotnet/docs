@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedVariable::GetAddressKind Method"
 title: "ISymUnmanagedVariable::GetAddressKind Method"
 ms.date: "03/30/2017"
 api_name: 

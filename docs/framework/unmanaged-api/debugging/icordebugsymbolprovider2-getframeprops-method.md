@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider2::GetFrameProps Method"
 title: "ICorDebugSymbolProvider2::GetFrameProps Method"
 ms.date: "03/30/2017"
 ms.assetid: f07b73f3-188d-43a9-8f7d-44dce2f1ddb7

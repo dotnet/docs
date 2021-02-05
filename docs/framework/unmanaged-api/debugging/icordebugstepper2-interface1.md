@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugStepper2 Interface"
 title: "ICorDebugStepper2 Interface"
 ms.date: "03/30/2017"
 api_name: 

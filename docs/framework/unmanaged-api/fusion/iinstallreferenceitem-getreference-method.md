@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IInstallReferenceItem::GetReference Method"
 title: "IInstallReferenceItem::GetReference Method"
 ms.date: "03/30/2017"
 api_name: 

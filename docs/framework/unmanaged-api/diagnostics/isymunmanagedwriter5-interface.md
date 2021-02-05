@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter5 Interface"
 title: "ISymUnmanagedWriter5 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 15b8526e-4f5d-475c-a1e3-d8b2d145c879

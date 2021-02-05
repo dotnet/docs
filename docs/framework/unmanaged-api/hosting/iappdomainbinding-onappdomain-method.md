@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAppDomainBinding::OnAppDomain Method"
 title: "IAppDomainBinding::OnAppDomain Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorPublishEnum::Skip Method"
 title: "ICorPublishEnum::Skip Method"
 ms.date: "03/30/2017"
 api_name: 

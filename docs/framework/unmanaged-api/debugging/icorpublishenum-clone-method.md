@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorPublishEnum::Clone Method"
 title: "ICorPublishEnum::Clone Method"
 ms.date: "03/30/2017"
 api_name: 

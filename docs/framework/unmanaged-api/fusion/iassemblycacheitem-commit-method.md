@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAssemblyCacheItem::Commit Method"
 title: "IAssemblyCacheItem::Commit Method"
 ms.date: "03/30/2017"
 api_name: 

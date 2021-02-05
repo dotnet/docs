@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymENCUnmanagedMethod::GetDocumentsForMethodCount Method"
 title: "ISymENCUnmanagedMethod::GetDocumentsForMethodCount Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_GC_THREAD_STATS_TYPES Enumeration"
 title: "COR_GC_THREAD_STATS_TYPES Enumeration"
 ms.date: "03/30/2017"
 api_name: 

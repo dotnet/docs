@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugReferenceValue::IsNull Method"
 title: "ICorDebugReferenceValue::IsNull Method"
 ms.date: "03/30/2017"
 api_name: 

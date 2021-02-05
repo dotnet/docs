@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataMethodDefinition::EnumInstance Method"
 title: "IXCLRDataMethodDefinition::EnumInstance Method"
 ms.date: "01/16/2019"
 api.name:

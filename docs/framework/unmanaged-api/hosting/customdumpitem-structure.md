@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CustomDumpItem Structure"
 title: "CustomDumpItem Structure"
 ms.date: "03/30/2017"
 api_name: 

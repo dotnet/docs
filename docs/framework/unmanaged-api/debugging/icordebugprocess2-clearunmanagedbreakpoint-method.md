@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess2::ClearUnmanagedBreakpoint Method"
 title: "ICorDebugProcess2::ClearUnmanagedBreakpoint Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader::GetMethod Method"
 title: "ISymUnmanagedReader::GetMethod Method"
 ms.date: "03/30/2017"
 api_name: 

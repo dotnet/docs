@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebug::SetUnmanagedHandler Method"
 title: "ICorDebug::SetUnmanagedHandler Method"
 ms.date: "03/30/2017"
 api_name: 

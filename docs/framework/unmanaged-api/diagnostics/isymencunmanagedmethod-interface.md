@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymENCUnmanagedMethod Interface"
 title: "ISymENCUnmanagedMethod Interface"
 ms.date: "03/30/2017"
 api_name: 

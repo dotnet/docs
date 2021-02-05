@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedENCUpdate::InitializeForEnc Method"
 title: "ISymUnmanagedENCUpdate::InitializeForEnc Method"
 ms.date: "03/30/2017"
 api_name: 

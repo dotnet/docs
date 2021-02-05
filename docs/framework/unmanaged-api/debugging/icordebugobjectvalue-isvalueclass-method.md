@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugObjectValue::IsValueClass Method"
 title: "ICorDebugObjectValue::IsValueClass Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugArrayValue::GetElementAtPosition Method"
 title: "ICorDebugArrayValue::GetElementAtPosition Method"
 ms.date: "03/30/2017"
 api_name: 

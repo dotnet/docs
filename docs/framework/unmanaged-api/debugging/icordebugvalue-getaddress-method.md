@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugValue::GetAddress Method"
 title: "ICorDebugValue::GetAddress Method"
 ms.date: "03/30/2017"
 api_name: 

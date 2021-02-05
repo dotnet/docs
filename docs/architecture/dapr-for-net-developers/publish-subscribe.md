@@ -2,7 +2,7 @@
 title: The Dapr publish & subscribe building block
 description: A description of the Dapr publish & subscribe building-block and how to apply it
 author: edwinvw
-ms.date: 12/30/2020
+ms.date: 02/07/2021
 ---
 
 # The Dapr publish & subscribe building block

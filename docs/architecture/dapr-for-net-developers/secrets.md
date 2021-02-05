@@ -2,7 +2,7 @@
 title: The Dapr secrets building block
 description: A description of the secrets building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 1/23/2020
+ms.date: 02/07/2021
 ---
 
 # The Dapr secrets building block

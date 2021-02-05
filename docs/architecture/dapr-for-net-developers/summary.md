@@ -1,7 +1,7 @@
 ---
 title: Summary
 description: A summary of key Dapr conclusions and the road ahead.
-ms.date: 02/01/2021
+ms.date: 02/07/2021
 author: robvet
 ---
 

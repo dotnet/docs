@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument 'NPer' must be greater than zero"
 title: "Argument 'NPer' must be greater than zero"
 ms.date: 07/20/2015
 f1_keywords: 

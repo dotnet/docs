@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint: Calls Faulted Per Second"
 title: "Endpoint: Calls Faulted Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 9840fc0a-0e4d-4638-96fd-40e3ab9e4667

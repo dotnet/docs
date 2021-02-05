@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3401 - SignatureVerificationStart"
 title: "3401 - SignatureVerificationStart"
 ms.date: "03/30/2017"
 ms.assetid: fb2c81be-3dae-45a8-8558-c5d0cbb8958a

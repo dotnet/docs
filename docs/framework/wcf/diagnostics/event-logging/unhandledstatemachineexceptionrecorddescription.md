@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: UnhandledStateMachineExceptionRecordDescription"
 title: "UnhandledStateMachineExceptionRecordDescription"
 ms.date: "03/30/2017"
 ms.assetid: f4a0e8af-7d6c-4091-8d6c-b99e8ff3a07b

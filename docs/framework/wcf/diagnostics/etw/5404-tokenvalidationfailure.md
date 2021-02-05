@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5404 - TokenValidationFailure"
 title: "5404 - TokenValidationFailure"
 ms.date: "03/30/2017"
 ms.assetid: 19783336-5560-4334-be13-2efd15da3e2a

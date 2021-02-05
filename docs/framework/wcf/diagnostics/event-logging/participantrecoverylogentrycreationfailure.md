@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ParticipantRecoveryLogEntryCreationFailure"
 title: "ParticipantRecoveryLogEntryCreationFailure"
 ms.date: "03/30/2017"
 ms.assetid: 0bda0f08-7614-40f8-912a-06f5a99393e6

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3372 - TextMessageEncodingStart"
 title: "3372 - TextMessageEncodingStart"
 ms.date: "03/30/2017"
 ms.assetid: c57e3fe3-b12d-415e-925e-b09590722d0c

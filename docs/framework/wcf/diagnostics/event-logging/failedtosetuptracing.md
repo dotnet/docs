@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FailedToSetupTracing"
 title: "FailedToSetupTracing"
 ms.date: "03/30/2017"
 ms.assetid: dd61db93-4687-4832-8dc9-99e38fa83671

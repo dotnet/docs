@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calls Per Second"
 title: "Calls Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 0efb5a94-d83b-4793-b529-6fcbedb65c43

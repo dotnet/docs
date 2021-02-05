@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.PortSharing.PortSharingDuplicatedSocket"
 title: "System.ServiceModel.PortSharing.PortSharingDuplicatedSocket"
 ms.date: "03/30/2017"
 ms.assetid: 7fd7a35d-3ade-44c2-b40e-2236c3ff18c5

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 507 - HostedTransportConfigurationManagerConfigInitStart"
 title: "507 - HostedTransportConfigurationManagerConfigInitStart"
 ms.date: "03/30/2017"
 ms.assetid: cf8956cd-2f97-4536-af17-1f42618b4f11

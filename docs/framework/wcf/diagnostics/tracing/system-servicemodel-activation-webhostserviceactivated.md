@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Activation.WebHostServiceActivated"
 title: "System.ServiceModel.Activation.WebHostServiceActivated"
 ms.date: "03/30/2017"
 ms.assetid: fc3e76d8-4057-474d-815f-1f73f9574588

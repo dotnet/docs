@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3417 - WebSocketConnectionAcceptStart"
 title: "3417 - WebSocketConnectionAcceptStart"
 ms.date: "03/30/2017"
 ms.assetid: 9d595fe3-2276-4d77-85c8-b6a966199c5b

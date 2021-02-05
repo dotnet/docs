@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TransportAuthenticationFailure"
 title: "TransportAuthenticationFailure"
 ms.date: "03/30/2017"
 ms.assetid: adbdbda0-de52-448c-a938-cc9f5db2980e

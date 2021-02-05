@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3326 - ClientFormatterSerializeRequestStart"
 title: "3326 - ClientFormatterSerializeRequestStart"
 ms.date: "03/30/2017"
 ms.assetid: 1d212383-5a34-43f5-8522-9b15ed8ebd87

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3337 - ChannelReceiveStart"
 title: "3337 - ChannelReceiveStart"
 ms.date: "03/30/2017"
 ms.assetid: aa0d226a-3862-4a16-87e6-3bb601084203

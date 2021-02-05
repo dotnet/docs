@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3429 - WebSocketCloseStatusReceived"
 title: "3429 - WebSocketCloseStatusReceived"
 ms.date: "03/30/2017"
 ms.assetid: b4f16083-cb55-4215-af12-478d5e70301e

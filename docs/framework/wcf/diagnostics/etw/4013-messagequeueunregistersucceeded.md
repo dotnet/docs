@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4013 - MessageQueueUnregisterSucceeded"
 title: "4013 - MessageQueueUnregisterSucceeded"
 ms.date: "03/30/2017"
 ms.assetid: 16ed96c1-9f8d-4f08-b57c-5cba3b88b475

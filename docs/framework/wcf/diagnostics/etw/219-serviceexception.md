@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 219 - ServiceException"
 title: "219 - ServiceException"
 ms.date: "03/30/2017"
 ms.assetid: 81e2efac-39aa-4ed2-85a9-97eb8793b844

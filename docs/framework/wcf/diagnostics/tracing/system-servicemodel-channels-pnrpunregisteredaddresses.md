@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PnrpUnregisteredAddresses"
 title: "System.ServiceModel.Channels.PnrpUnregisteredAddresses"
 ms.date: "03/30/2017"
 ms.assetid: e726ab32-6923-4fdb-b0ce-bdf2a299ed6a

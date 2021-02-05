@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MessageAuthenticationSuccess"
 title: "MessageAuthenticationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: 75974896-9d26-4586-92fb-578f6c71f0e1

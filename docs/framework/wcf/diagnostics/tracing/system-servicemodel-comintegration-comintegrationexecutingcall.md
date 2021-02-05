@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationExecutingCall"
 title: "System.ServiceModel.ComIntegration.ComIntegrationExecutingCall"
 ms.date: "03/30/2017"
 ms.assetid: 288e0e8a-225b-4676-9512-6ab5e8daa37c

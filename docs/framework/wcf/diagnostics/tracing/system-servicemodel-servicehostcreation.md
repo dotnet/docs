@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ServiceHostCreation"
 title: "System.ServiceModel.ServiceHostCreation"
 ms.date: "03/30/2017"
 ms.assetid: 0b9cb4f7-48bb-4e89-b5c2-d2d22e0e8088

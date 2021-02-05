@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Calls Not Authorized Per Second"
 title: "Security Calls Not Authorized Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 0f189767-8c05-478a-8f0b-9228e5d351e5

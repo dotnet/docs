@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityBindingSecureOutgoingMessageFailure"
 title: "System.ServiceModel.Security.SecurityBindingSecureOutgoingMessageFailure"
 ms.date: "03/30/2017"
 ms.assetid: bb46c07b-f824-43fd-892c-bca4f68a8866

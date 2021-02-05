@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Queued Poison Messages Per Second"
 title: "Queued Poison Messages Per Second"
 ms.date: "03/30/2017"
 ms.assetid: d193fdd1-02f1-44a0-906e-f632a8f574c3

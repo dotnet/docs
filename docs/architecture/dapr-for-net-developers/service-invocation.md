@@ -74,7 +74,7 @@ curl http://localhost:3500/v1.0/invoke/serviceb/method/catalog/items
 
 In the next section, you'll learn how to use the .NET SDK to simplify service invocation calls.
 
-### Using the .NET SDK
+## Using the Dapr .NET SDK
 
 The Dapr [.NET SDK](https://github.com/dapr/dotnet-sdk) provides .NET developers with an intuitive and language-specific way to interact with Dapr. The SDK offers developers three ways of making remote service invocation calls:
 
@@ -226,7 +226,7 @@ catch (InvocationException ex)
 
 In the example above, DaprClient serializes the given `order` object using [Protobuf](https://developers.google.com/protocol-buffers) and uses the result as the gRPC request body. Likewise, the response body is Protobuf deserialized and returned to the caller. Protobuf typically provides better performance than the JSON payloads used in HTTP service invocation.
 
-## Reference case: eShopOnDapr
+## Reference application: eShopOnDapr
 
 The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) microservice reference architecture from Microsoft used a mix of HTTP/REST and gRPC services. The use of gRPC was limited to communication between an [aggregator service](../cloud-native/service-to-service-communication#service-aggregator-pattern) and core backend services. Figure 6-2 show the architecture:
 

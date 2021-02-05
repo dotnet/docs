@@ -229,7 +229,7 @@ Additionally, you'll need complete this sample using [Visual Studio 2019](https:
 
    ![Screenshot of creating the back-end web API](./media/getting-started/multicontainer-createwebapi.png)
 
-### Add Dapr Service Invocation
+### Add Dapr service invocation
 
 Now, you'll configure communication between the services using Dapr [service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/). You'll enable the front-end web app to retrieve weather forecasts from the back-end web API. The service invocation building block features many benefits. It includes service discovery, automatic retries, message encryption (using mTLS), and improved observability. You'll use the Dapr .NET SDK to invoke the service invocation API on the Dapr sidecar.
 

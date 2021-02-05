@@ -114,7 +114,7 @@ Each component provides the necessary implementation through a common state mana
 ```
 
 > [!TIP]
-> The Dapr interface above along with all of Dapr has been written in the Golang, or Go, platform. Go is a popular language across the open source community and attests to cross-platform commitment of Dapr.
+> The Dapr runtime as well as all of the Dapr components have been written in the Golang, or Go, language. Go is a popular language across the open source community and attests to cross-platform commitment of Dapr.
 
 Perhaps you start with Azure Redis Cache as your state store. You specify it with the following configuration:
 

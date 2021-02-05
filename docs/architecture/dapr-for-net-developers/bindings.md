@@ -111,7 +111,7 @@ The structure of the payload (that is, message sent) will vary per binding. In t
 
 It's up to the author of the binding which operations the binding supports. The documentation for each binding describes the available operations and how to invoke them.
 
-## Using the .NET SDK
+## Using the Dapr .NET SDK
 
 The Dapr .NET SDK provides language-specific support for .NET Core developers. In the following example, the call to the `HttpClient.PostAsync()` is replaced with the `DaprClient.InvokeBindingAsync()` method. This specialized method simplifies invoking a configured output binding:
 
@@ -131,7 +131,7 @@ The method expects the `metadata` and `message` values.
 
 When used to invoke a binding, the `DaprClient` uses gRPC to call the Dapr API on the Dapr sidecar.
 
-### Binding Components
+## Binding components
 
 Under the hood, resource bindings are implemented with Dapr binding components. They're contributed by the community and written in Go. If you need to integrate with an external resource for which no Dapr binding exists yet, you can create it yourself. Check out the [Dapr components-contrib repo](https://github.com/dapr/components-contrib) to see how you can contribute a binding.
 
@@ -190,7 +190,7 @@ spec:
 
 In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` endpoint every 30 minutes. There are several patterns available for specifying the `schedule` value. For more information, see the [Cron binding documentation](docs.dapr.io/operations/components/setup-bindings/supported-bindings/cron/).
 
-## Reference architecture: eShopOnDapr
+## Reference application: eShopOnDapr
 
 The accompanying eShopOnDapr reference application implements an output binding example. It triggers the Dapr [SendGrid](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/sendgrid/) binding to send a user an email when a new order is placed. You can find this binding in the `eshop-email.yaml` file in the components folder:
 

@@ -463,7 +463,7 @@ You specify scopes per secret store. In the above example, the secret store is n
 
 The `allowedSecrets` and `deniedSecrets` properties take precedence over the `defaultAccess` property. Imagine specifying `defaultAccess: allowed` and an `allowedSecrets` list. In this case, only the secrets in the `allowedSecrets` list would be accessible by the application.
 
-## Reference architecture: eShopOnDapr
+## Reference application: eShopOnDapr
 
 The eShopOnDapr reference application uses the secrets building block for two secrets:
 

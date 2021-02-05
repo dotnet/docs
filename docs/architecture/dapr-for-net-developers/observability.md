@@ -74,7 +74,7 @@ In the figure, note how the trace represents a unique application transaction th
 
 The next sections discuss how to inspect tracing telemetry by publishing it to a monitoring backend.
 
-#### Using Zipkin as monitoring backend
+#### Using a Zipkin monitoring backend
 
 [Zipkin](https://zipkin.io/) is an open-source distributed tracing system. It can ingest and visualize telemetry data. Dapr offers default support for Zipkin. The following example demonstrates how to configure Zipkin to visualize Dapr telemetry.
 
@@ -217,7 +217,7 @@ Because Dapr sidecars handle traffic between services, Zipkin can use the trace 
 
 The animated dots on the lines between the services represent requests and move from source to destination. Red dots indicate a failed request.
 
-#### Using Jaeger or New Relic as monitoring backend
+#### Using a Jaeger or New Relic monitoring backend
 
 Beyond Zipkin itself, other monitoring backend software also supports ingesting telemetry using the Zipkin format. [Jaeger](https://www.jaegertracing.io/) is an open source tracing system created by Uber Technologies. It's used to trace transactions between distributed services and troubleshoot complex microservices environments. [New Relic](https://newrelic.com/) is a *full-stack* observability platform. It links relevant data from a distributed application to provide a complete picture of your system. To try them out, specify an `endpointAddress` pointing to either a Jaeger or New Relic server in the Dapr configuration file. Here's an example of a configuration file that configures Dapr to send telemetry to a Jaeger server. The URL for Jaeger is identical to the URL for the Zipkin. The only difference is the port on which the server runs:
 
@@ -463,7 +463,7 @@ The Dapr .NET SDK doesn't contain any specific observability features. All obser
 
 If you want to emit telemetry from your .NET application code, you should consider the [OpenTelemetry SDK for .NET](https://opentelemetry.io/docs/net/). The Open Telemetry project is cross-platform, open-source, and vendor agnostic. It provides an end-to-end implementation to generate, emit, collect, process, and export telemetry data. There's a single instrumentation library per language that supports automatic and manual instrumentation. Telemetry is published using the Open Telemetry standard. The project has broad industry support and adoption from cloud providers, vendors, and end users.
 
-## Reference architecture: eShopOnDapr
+## Reference application: eShopOnDapr
 
 Observability in accompanying eShopOnDapr reference application consists of several parts. Telemetry from all of the sidecars is captured. Additionally, there are other observability features inherited from the earlier eShopOnContainers sample.
 

@@ -14,7 +14,7 @@ ms.author: gewarren
 ---
 # Naming rules
 
-Naming rules support adherence to the naming conventions of the .NET Design Guidelines.
+Naming rules support adherence to the [naming conventions of the .NET design guidelines](../../../standard/design-guidelines/naming-guidelines.md).
 
 ## In this section
 

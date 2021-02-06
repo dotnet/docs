@@ -108,7 +108,24 @@ From the previous figure, note the flow:
 1. Service A publishes a message at the `/v1.0/publish/<pub-sub-name>/<topic>` endpoint on the Dapr Service A sidecar.
 1. The Service A sidecar publishes the message to the message broker.
 1. The message broker sends a copy of the message to the Service B sidecar.
-1. The Service B sidecar calls the endpoint corresponding to the subscription (in this case `/orders`) on Service B.
+1. The Service B sidecar calls the endpoint corresponding to the subscription (in this case `/orders`) on Service B. The service responds with an HTTP status-code `200 OK` so the sidecar will consider the message as being handled successfully. 
+
+In the example, the message is handled successfully. But if something goes wrong while Service B is handling the request, it can use the response to specify what needs to happen with the message. When it returns an HTTP status-code `404`, an error is logged and the message is dropped. With any other status-code than `200` or `404`, a warning is logged and the message is retried. Alternatively, Service B can explicitly specify what needs to happen with the message by including a JSON payload in the body of the response:
+
+```json
+{
+  "status": "<status>"
+}
+```
+
+These are the available `status` values:
+
+| Status           | Action                                             |
+| ---------------- | -------------------------------------------------- |
+| SUCCESS          | The message is processed successfully and dropped. |
+| RETRY            | The message is retried by the Dapr sidecar.        |
+| DROP             | A warning is logged and the message is dropped.    |
+| Any other status | The message is retried by the Dapr sidecar.        |
 
 Making HTTP calls to the native Dapr APIs is time-consuming and abstract. Your calls are crafted at the HTTP level, and you'll need to handle plumbing concerns such as serialization and HTTP response codes. Fortunately, there's a more intuitive way. Dapr provides several language-specific SDKs for popular development platforms. At the time of this writing, Go, Node.js, Python, .NET, Java, and JavaScript are available.
 
@@ -121,12 +138,12 @@ To publish a message, the `DaprClient` exposes a `PublishEventAsync` method.
 ```csharp
 var data = new OrderData
 {
-  id = "123456",
+  orderId = "123456",
   productId = "67890",
   amount = 2
 }
 
-DaprClient daprClient = new DaprClientBuilder().Build();
+var daprClient = new DaprClientBuilder().Build();
 
 await daprClient.PublishEventAsync<OrderData>("pubsub", "newOrder", data);
 ```
@@ -200,13 +217,15 @@ The call to `MapSubscribeHandler` in the endpoint routing configuration will add
 
 Dapr [pub/sub components](https://github.com/dapr/components-contrib/tree/master/pubsub) handle the actual transport of the messages. Several are available. Each encapsulates a specific message broker product to implement the pub/sub functionality. At the time of writing, the following pub/sub components were available:
 
+- Apache Kafka
 - Azure Event Hubs
 - Azure Service Bus
+- AWS SNS/SQS
 - GCP Pub/Sub
 - Hazelcast
-- Kafka
 - MQTT
 - NATS
+- Pulsar
 - RabbitMQ
 - Redis Streams
 
@@ -236,9 +255,9 @@ spec:
     value: true
 ```
 
-In this example, you can see that you can specify any message broker-specific configuration in the `metadata` block. In this case, RabbitMQ is configured to create durable queues. Each of the components' configuration will have its own set of possible fields. You can read which fields are available in the documentation of each [pub/sub component](https://github.com/dapr/components-contrib/tree/master/pubsub).
+In this example, you can see that you can specify any message broker-specific configuration in the `metadata` block. In this case, RabbitMQ is configured to create durable queues. But the RabbitMQ component has more configuration options. Each of the components' configuration will have its own set of possible fields. You can read which fields are available in the documentation of each [pub/sub component](https://docs.dapr.io/operations/components/setup-pubsub/supported-pubsub/).
 
-Dapr pub/sub also provides a declarative way of subscribing to a topic. Below you see an example of a Dapr configuration file for configuring a subscription:
+Next to the programmatic way of subscribing to a topic from  code, Dapr pub/sub also provides a declarative way of subscribing to a topic. This approach removes the Dapr dependency from the application code. Therefore it also enables an existing application to subscribe to topics without without any changes to the code. Below you see an example of a Dapr configuration file for configuring a subscription:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1

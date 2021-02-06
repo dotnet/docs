@@ -338,7 +338,12 @@ The `EnableDefaultNoneItems` property controls whether `None` items (files that 
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a code analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`. The default value is `latest`.
+The `AnalysisLevel` property lets you specify a code analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`.
+
+Default value:
+
+- If your project targets .NET 5.0 or later, or if you've added the [AnalysisMode](#analysismode) property, the default value is `latest`.
+- Otherwise, this property is omitted unless you explicitly add it to the project file.
 
 ```xml
 <PropertyGroup>
@@ -392,9 +397,6 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
   <EnableNETAnalyzers>true</EnableNETAnalyzers>
 </PropertyGroup>
 ```
-
-> [!TIP]
-> Another way to enable .NET code analysis on projects that target .NET versions prior to .NET 5.0 is to set the [AnalysisLevel](#analysislevel) property to `latest`.
 
 ### EnforceCodeStyleInBuild
 

@@ -11,7 +11,7 @@ ms.date: 04/20/2020
 
 A memory leak may happen when your app has issues that causes the garbage collector to not be able to an increasing number of some objects in the managed heap because there are still references to them.
 
-This tutorial demonstrates the tools to analyze a memory leak in a .NET Core app using the .NET diagnostics CLI tools. If you are on Windows, you may be able to [use Visual Studio](/visualstudio/profiling/memory-usage) to debug the memory leak. 
+This tutorial demonstrates the tools to analyze a memory leak in a .NET Core app using the .NET diagnostics CLI tools. If you are on Windows, you may be able to [use Visual Studio](/visualstudio/profiling/memory-usage) to debug the memory leak.
 
 This tutorial uses a sample app, which is designed to intentionally leak memory. The sample is provided as an exercise. You can analyze an app that is unintentionally leaking memory too.
 

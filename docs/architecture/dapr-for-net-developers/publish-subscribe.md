@@ -120,12 +120,12 @@ In the example, the message is handled successfully. But if something goes wrong
 
 These are the available `status` values:
 
-| Status           | Action                                             |
-| ---------------- | -------------------------------------------------- |
-| SUCCESS          | The message is processed successfully and dropped. |
-| RETRY            | The message is retried by the Dapr sidecar.        |
-| DROP             | A warning is logged and the message is dropped.    |
-| Any other status | The message is retried by the Dapr sidecar.        |
+| Status           | Action                                                       |
+| ---------------- | ------------------------------------------------------------ |
+| SUCCESS          | The message is considered as processed successfully and dropped. |
+| RETRY            | The message is retried.                                      |
+| DROP             | A warning is logged and the message is dropped.              |
+| Any other status | The message is retried.                                      |
 
 Making HTTP calls to the native Dapr APIs is time-consuming and abstract. Your calls are crafted at the HTTP level, and you'll need to handle plumbing concerns such as serialization and HTTP response codes. Fortunately, there's a more intuitive way. Dapr provides several language-specific SDKs for popular development platforms. At the time of this writing, Go, Node.js, Python, .NET, Java, and JavaScript are available.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqPoisonMessageRejected"
 title: "System.ServiceModel.Channels.MsmqPoisonMessageRejected"
 ms.date: "03/30/2017"
 ms.assetid: 0e64b9bd-1f12-43df-a189-d7be3c2bace1

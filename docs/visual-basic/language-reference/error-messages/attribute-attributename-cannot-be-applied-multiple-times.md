@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30663: Attribute '<attributename>' cannot be applied multiple times"
 title: "Attribute '<attributename>' cannot be applied multiple times"
 ms.date: 07/20/2015
 f1_keywords:

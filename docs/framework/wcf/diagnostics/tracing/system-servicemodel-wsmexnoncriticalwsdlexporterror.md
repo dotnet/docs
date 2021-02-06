@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.WsmexNonCriticalWsdlExportError"
 title: "System.ServiceModel.WsmexNonCriticalWsdlExportError"
 ms.date: "03/30/2017"
 ms.assetid: bb0e7ab9-2918-49d8-8aee-bb186f457658

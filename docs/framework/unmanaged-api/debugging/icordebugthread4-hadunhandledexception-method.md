@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread4::HadUnhandledException Method"
 title: "ICorDebugThread4::HadUnhandledException Method"
 ms.date: "03/30/2017"
 api_name: 

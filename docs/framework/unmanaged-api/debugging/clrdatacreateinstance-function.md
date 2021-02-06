@@ -1,29 +1,30 @@
 ---
+description: "Learn more about: CLRDataCreateInstance Function"
 title: "CLRDataCreateInstance Function"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "CLRDataCreateInstance"
-api_location: 
+api_location:
   - "mscordbi.dll"
   - "mscordacwks.dll"
 api_type: 
-  - "COM"
+  - "DLLExport"
 f1_keywords: 
   - "CLRDataCreateInstance"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CLRDataCreateInstance function [.NET Framework debugging]"
 ms.assetid: 440bad90-5a88-45e7-9157-4596801d8d19
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # CLRDataCreateInstance Function
 
-Creates an interface object for the specified target item.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT CLRDataCreateInstance (  
+Creates an interface object for the specified target item.
+
+## Syntax
+
+```cpp
+HRESULT CLRDataCreateInstance (
     [in]  REFIID           iid,
     [in]  ICLRDataTarget  *target,
     [out] void           **iface  
@@ -52,8 +53,10 @@ HRESULT CLRDataCreateInstance (
  **Header:** ClrData.idl  
   
  **Library:** CorGuids.lib  
+
+ **Assembly**: mscordacwks.dll, mscordbi.dll
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework Versions:** Available since .NET Framework 2.0
   
 ## See also
 

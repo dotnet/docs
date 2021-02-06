@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::EndInprocDebugging Method"
 title: "ICorProfilerInfo::EndInprocDebugging Method"
 ms.date: "03/30/2017"
 api_name: 

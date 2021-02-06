@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <certificateReference>"
 title: "<certificateReference>"
 ms.date: "03/30/2017"
 ms.assetid: 2ac8bc14-e9f1-48fb-b662-f5991558fbe4

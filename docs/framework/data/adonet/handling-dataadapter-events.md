@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling DataAdapter Events"
 title: "Handling DataAdapter Events"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetILFunctionBodyAllocator Method"
 title: "ICorProfilerInfo::GetILFunctionBodyAllocator Method"
 ms.date: "03/30/2017"
 api_name: 

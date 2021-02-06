@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Computer.Registry Object"
 title: "My.Computer.Registry Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 

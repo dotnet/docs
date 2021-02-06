@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Suspended Instance Management"
 title: "Suspended Instance Management"
 ms.date: "03/30/2017"
 ms.assetid: f5ca3faa-ba1f-4857-b92c-d927e4b29598

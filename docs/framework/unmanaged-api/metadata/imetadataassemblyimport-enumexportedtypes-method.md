@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyImport::EnumExportedTypes Method"
 title: "IMetaDataAssemblyImport::EnumExportedTypes Method"
 ms.date: "03/30/2017"
 api_name: 

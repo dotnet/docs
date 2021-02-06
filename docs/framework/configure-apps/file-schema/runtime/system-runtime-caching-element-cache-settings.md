@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <system.runtime.caching> Element (Cache Settings)"
 title: "<system.runtime.caching> Element (Cache Settings)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

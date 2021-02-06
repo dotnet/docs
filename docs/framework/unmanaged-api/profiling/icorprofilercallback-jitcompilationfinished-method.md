@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::JITCompilationFinished Method"
 title: "ICorProfilerCallback::JITCompilationFinished Method"
 ms.date: "03/30/2017"
 api_name: 

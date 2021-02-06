@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Queues overview"
 title: "Queues Overview"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

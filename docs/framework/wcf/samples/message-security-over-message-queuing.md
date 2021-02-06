@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Security over Message Queuing"
 title: "Message Security over Message Queuing"
 ms.date: "03/30/2017"
 ms.assetid: 329aea9c-fa80-45c0-b2b9-e37fd7b85b38

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Create a Long-running Workflow Service"
 title: "Creating a Long-running Workflow Service"
 ms.date: "03/30/2017"
 ms.assetid: 4c39bd04-5b8a-4562-a343-2c63c2821345

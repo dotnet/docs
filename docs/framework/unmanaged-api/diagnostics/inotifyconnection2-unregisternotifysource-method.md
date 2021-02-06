@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: INotifyConnection2::UnregisterNotifySource Method"
 title: "INotifyConnection2::UnregisterNotifySource Method"
 ms.date: "03/30/2017"
 api_name: 

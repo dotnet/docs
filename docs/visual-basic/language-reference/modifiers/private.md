@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Private (Visual Basic)"
 title: "Private"
 ms.date: 07/20/2015
 f1_keywords: 

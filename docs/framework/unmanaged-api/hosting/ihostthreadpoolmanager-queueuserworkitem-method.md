@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostThreadPoolManager::QueueUserWorkItem Method"
 title: "IHostThreadPoolManager::QueueUserWorkItem Method"
 ms.date: "03/30/2017"
 api_name: 

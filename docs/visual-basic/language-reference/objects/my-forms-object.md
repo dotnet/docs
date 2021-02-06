@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Forms Object"
 title: "My.Forms Object"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1"
 title: "Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1"
 ms.date: "03/30/2017"
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a

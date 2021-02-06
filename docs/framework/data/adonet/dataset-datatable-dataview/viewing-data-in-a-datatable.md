@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Viewing Data in a DataTable"
 title: "Viewing Data in a DataTable"
 ms.date: "03/30/2017"
 dev_langs:

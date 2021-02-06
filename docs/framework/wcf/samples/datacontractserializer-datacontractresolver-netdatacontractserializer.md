@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using DataContractSerializer and DataContractResolver to Provide the Functionality of NetDataContractSerializer"
 title: "Using DataContractSerializer and DataContractResolver to Provide the Functionality of NetDataContractSerializer"
 ms.date: "03/30/2017"
 ms.assetid: 1376658f-f695-45f7-a7e0-94664e9619ff

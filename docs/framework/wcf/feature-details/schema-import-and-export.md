@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Schema Import and Export"
 title: "Schema Import and Export"
 ms.date: "03/30/2017"
 dev_langs: 

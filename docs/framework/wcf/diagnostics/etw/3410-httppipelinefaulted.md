@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3410 - HttpPipelineFaulted"
 title: "3410 - HttpPipelineFaulted"
 ms.date: "03/30/2017"
 ms.assetid: 8586c3c1-3da5-4f5b-b637-4671b14fb65e

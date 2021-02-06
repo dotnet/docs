@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binding Data to Controls (WCF Data Services)"
 title: "Binding Data to Controls (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 

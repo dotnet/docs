@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetScopeProps Method"
 title: "IMetaDataImport::GetScopeProps Method"
 ms.date: "03/30/2017"
 api_name: 

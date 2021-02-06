@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT"
 title: "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT"
 ms.date: "03/30/2017"
 f1_keywords: 

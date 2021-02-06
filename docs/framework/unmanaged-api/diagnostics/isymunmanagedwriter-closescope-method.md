@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter::CloseScope Method"
 title: "ISymUnmanagedWriter::CloseScope Method"
 ms.date: "03/30/2017"
 api_name: 

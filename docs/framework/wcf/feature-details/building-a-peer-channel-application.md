@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building a Peer Channel Application"
 title: "Building a Peer Channel Application"
 ms.date: "03/30/2017"
 ms.assetid: a69a1b8f-8e15-45c5-87b8-bdb71e1c7ab8

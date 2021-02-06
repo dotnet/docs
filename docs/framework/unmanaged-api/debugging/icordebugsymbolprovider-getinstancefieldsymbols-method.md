@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetInstanceFieldSymbols Method"
 title: "ICorDebugSymbolProvider::GetInstanceFieldSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: a29b9233-ee67-4b53-b8bc-c00b281e7edb

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ImportFileEx Method"
 title: "ImportFileEx Method"
 ms.date: "03/30/2017"
 api_name: 

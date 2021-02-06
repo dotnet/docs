@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Data Type"
 title: "Object Data Type"
 ms.date: 07/20/2015
 f1_keywords:

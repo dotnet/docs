@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::GetTypeDefProps Method"
 title: "IMetaDataImport::GetTypeDefProps Method"
 ms.date: "03/30/2017"
 api_name: 

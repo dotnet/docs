@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DataRows and DataRowViews"
 title: "DataRows and DataRowViews"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3825 - RoutingServiceAbandoningReceiveContext"
 title: "3825 - RoutingServiceAbandoningReceiveContext"
 ms.date: "03/30/2017"
 ms.assetid: 3e16528e-d340-4245-89b2-f8ac16621e94

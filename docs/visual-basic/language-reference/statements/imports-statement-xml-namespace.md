@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Imports Statement (XML Namespace)"
 title: "Imports Statement - XML Namespace"
 ms.date: 07/20/2015
 f1_keywords:

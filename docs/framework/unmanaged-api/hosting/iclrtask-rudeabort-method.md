@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTask::RudeAbort Method"
 title: "ICLRTask::RudeAbort Method"
 ms.date: "03/30/2017"
 api_name: 

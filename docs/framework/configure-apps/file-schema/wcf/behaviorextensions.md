@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <behaviorExtensions>"
 title: "<behaviorExtensions>"
 ms.date: "03/30/2017"
 ms.assetid: 59f2791a-c78f-40d7-aa80-0d9cd10135d9

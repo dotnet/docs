@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configure WS-Atomic Transaction support"
 title: "Configuring WS-Atomic Transaction Support"
 ms.date: "03/30/2017"
 helpviewer_keywords:

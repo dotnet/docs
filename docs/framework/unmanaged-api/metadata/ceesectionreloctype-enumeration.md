@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CeeSectionRelocType Enumeration"
 title: "CeeSectionRelocType Enumeration"
 ms.date: "03/30/2017"
 api_name: 

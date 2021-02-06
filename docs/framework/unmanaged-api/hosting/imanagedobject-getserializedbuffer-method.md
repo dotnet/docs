@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IManagedObject::GetSerializedBuffer Method"
 title: "IManagedObject::GetSerializedBuffer Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess5::EnumerateHeap Method"
 title: "ICorDebugProcess5::EnumerateHeap Method"
 ms.date: "03/30/2017"
 api_name: 

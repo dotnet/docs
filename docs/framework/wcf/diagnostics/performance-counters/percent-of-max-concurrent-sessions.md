@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Percent of Max Concurrent Sessions"
 title: "Percent of Max Concurrent Sessions"
 ms.date: "03/30/2017"
 ms.assetid: 823b1287-002b-4a3a-81fd-183f15a482ca

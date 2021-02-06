@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IObjectHandle::Unwrap Method"
 title: "IObjectHandle::Unwrap Method"
 ms.date: "03/30/2017"
 api_name: 

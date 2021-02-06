@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetGuid Method"
 title: "IMetaDataTables::GetGuid Method"
 ms.date: "03/30/2017"
 api_name: 

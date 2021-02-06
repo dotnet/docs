@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess5::GetTypeID Method"
 title: "ICorDebugProcess5::GetTypeID Method"
 ms.date: "03/30/2017"
 dev_langs: 

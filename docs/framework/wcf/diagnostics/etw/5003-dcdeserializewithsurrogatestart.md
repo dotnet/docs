@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5003 - DCDeserializeWithSurrogateStart"
 title: "5003 - DCDeserializeWithSurrogateStart"
 ms.date: "03/30/2017"
 ms.assetid: 497a78ca-d4d6-4b9d-9b35-bc2db33d6e9c

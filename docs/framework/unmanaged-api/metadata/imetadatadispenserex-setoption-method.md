@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataDispenserEx::SetOption Method"
 title: "IMetaDataDispenserEx::SetOption Method"
 ms.date: "03/30/2017"
 api_name: 

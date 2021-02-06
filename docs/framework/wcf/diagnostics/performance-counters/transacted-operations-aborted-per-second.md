@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transacted Operations Aborted Per Second"
 title: "Transacted Operations Aborted Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 19fc993f-2b3d-4898-852e-3b98ec2153a5

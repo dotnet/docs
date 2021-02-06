@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ModuleUnloadFinished Method"
 title: "ICorProfilerCallback::ModuleUnloadFinished Method"
 ms.date: "03/30/2017"
 api_name: 

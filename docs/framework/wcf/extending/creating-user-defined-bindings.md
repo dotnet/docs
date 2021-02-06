@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating User-Defined Bindings"
 title: "Creating User-Defined Bindings"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

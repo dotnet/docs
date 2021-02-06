@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Programming Model Item Tree"
 title: "Programming Model Item Tree"
 ms.date: "03/30/2017"
 ms.assetid: 0229efde-19ac-4bdc-a187-c6227a7bd1a5

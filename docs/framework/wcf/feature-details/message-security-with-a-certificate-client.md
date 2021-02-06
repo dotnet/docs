@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Security with a Certificate Client"
 title: "Message Security with a Certificate Client"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 711 - DispatchMessageBeforeAuthorization"
 title: "711 - DispatchMessageBeforeAuthorization"
 ms.date: "03/30/2017"
 ms.assetid: ea7f7228-e642-441d-9470-6609a9fe08f0

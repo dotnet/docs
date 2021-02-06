@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::IsGlobal Method"
 title: "IMetaDataImport::IsGlobal Method"
 ms.date: "03/30/2017"
 api_name: 

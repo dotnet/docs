@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugMemoryBuffer::GetSize Method"
 title: "ICorDebugMemoryBuffer::GetSize Method"
 ms.date: "03/30/2017"
 ms.assetid: 9ffd5482-268e-4680-9fd1-bfb0b7d66450

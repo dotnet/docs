@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DeliveryRequirementsAttribute"
 title: "DeliveryRequirementsAttribute"
 ms.date: "03/30/2017"
 ms.assetid: 40c5435c-a325-4cf8-9dd0-d6e24b4a56a3

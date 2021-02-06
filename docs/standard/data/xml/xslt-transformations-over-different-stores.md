@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XSLT Transformations Over Different Stores"
 title: "XSLT Transformations Over Different Stores"
 ms.date: "03/30/2017"
 ms.assetid: 369850e9-004a-45d2-b5c3-5060d9135adb

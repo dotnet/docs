@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OracleTypes"
 title: "OracleTypes"
 ms.date: "03/30/2017"
 ms.assetid: 18143304-d5c7-4c95-9995-678088d0c142

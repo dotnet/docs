@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debug Windows authentication errors"
 title: "Debugging Windows Authentication Errors"
 ms.date: "03/30/2017"
 dev_langs: 

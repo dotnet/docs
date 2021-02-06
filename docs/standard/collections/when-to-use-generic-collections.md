@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: When to use generic collections"
 title: "When to Use Generic Collections"
 ms.date: 04/30/2020
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionUnwindFinallyLeave Method"
 title: "ICorProfilerCallback::ExceptionUnwindFinallyLeave Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1422 - NegotiateTokenAuthenticatorStateCacheExceeded"
 title: "1422 - NegotiateTokenAuthenticatorStateCacheExceeded"
 ms.date: "03/30/2017"
 ms.assetid: bfabfb52-ebfb-489f-bdb4-408536c24e52

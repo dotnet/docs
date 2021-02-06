@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThreadEnum Interface"
 title: "ICorDebugThreadEnum Interface"
 ms.date: "03/30/2017"
 api_name: 

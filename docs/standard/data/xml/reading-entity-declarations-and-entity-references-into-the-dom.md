@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reading Entity Declarations and Entity References into the DOM"
 title: "Reading Entity Declarations and Entity References into the DOM"
 ms.date: "03/30/2017"
 ms.assetid: 86dba977-5cc4-4567-964f-027ffabc47b2

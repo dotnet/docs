@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetAppDomainInfo Method"
 title: "ICorProfilerInfo::GetAppDomainInfo Method"
 ms.date: "03/30/2017"
 api_name: 

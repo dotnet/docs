@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Annotating Typed DataSets"
 title: "Annotating Typed DataSets"
 ms.date: "03/30/2017"
 dev_langs: 

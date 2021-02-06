@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: A delimiter cannot be Nothing or an empty String"
 title: "A delimiter cannot be Nothing or an empty String"
 ms.date: 07/20/2015
 f1_keywords: 

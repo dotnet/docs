@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CREATEREF (Entity SQL)"
 title: "CREATEREF (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 489828cf-a335-4449-9360-b0d92eec5481

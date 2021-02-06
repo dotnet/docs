@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Need property array index"
 title: "Need property array index"
 ms.date: 07/20/2015
 f1_keywords: 

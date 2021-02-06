@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting and Importing Metadata"
 title: "Exporting and Importing Metadata"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

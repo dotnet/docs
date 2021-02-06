@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WmiPropertyMissing"
 title: "WmiPropertyMissing"
 ms.date: "03/30/2017"
 ms.assetid: 109fa6b4-93dc-4785-bec4-5aa02c434a65

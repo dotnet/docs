@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constructing Types (Entity SQL)"
 title: "Constructing Types (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010

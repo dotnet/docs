@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSyncManager::CreateMonitorEvent Method"
 title: "IHostSyncManager::CreateMonitorEvent Method"
 ms.date: "03/30/2017"
 api_name: 

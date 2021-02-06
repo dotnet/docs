@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint: Reliable Messaging Messages Dropped Per Second"
 title: "Endpoint: Reliable Messaging Messages Dropped Per Second"
 ms.date: "03/30/2017"
 ms.assetid: ea3c4fc0-1e0f-4863-8879-57bc6c113018

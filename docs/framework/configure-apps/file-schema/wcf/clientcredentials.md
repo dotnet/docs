@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <clientCredentials>"
 title: "<clientCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 1e6eef0d-a34e-4d74-b0f7-f65d2181858d

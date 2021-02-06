@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugDebugEvent::GetEventKind Method"
 title: "ICorDebugDebugEvent::GetEventKind Method"
 ms.date: "03/30/2017"
 ms.assetid: c37aaceb-c948-46bd-a943-08be4cbb76f4

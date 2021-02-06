@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC36629: Nullable type inference is not supported in this context"
 title: "Nullable type inference is not supported in this context"
 ms.date: 07/20/2015
 f1_keywords:

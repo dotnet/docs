@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32124: Generic parameters used as optional parameter types must be class constrained"
 title: "Generic parameters used as optional parameter types must be class constrained"
 ms.date: 07/20/2015
 f1_keywords:

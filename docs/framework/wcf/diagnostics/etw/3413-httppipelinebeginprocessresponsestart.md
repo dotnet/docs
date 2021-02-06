@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3413 - HttpPipelineBeginProcessResponseStart"
 title: "3413 - HttpPipelineBeginProcessResponseStart"
 ms.date: "03/30/2017"
 ms.assetid: 85c4d51b-f5b0-4bf4-86ce-6296115dc120

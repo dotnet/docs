@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Call Model-Defined Functions as Object Methods"
 title: "How to: Call Model-Defined Functions as Object Methods"
 ms.date: "03/30/2017"
 dev_langs: 

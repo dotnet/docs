@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service: Calls Duration"
 title: "Service: Calls Duration"
 ms.date: "03/30/2017"
 ms.assetid: dfe42a97-daf8-42c3-ba34-4bb8230cdebb

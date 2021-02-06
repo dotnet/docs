@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Disable Encryption of Digital Signatures"
 title: "How to: Disable Encryption of Digital Signatures"
 ms.date: "03/30/2017"
 ms.assetid: fd174313-ad81-4dca-898a-016ccaff8187

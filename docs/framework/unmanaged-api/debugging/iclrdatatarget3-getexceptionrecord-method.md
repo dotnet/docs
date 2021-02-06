@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDataTarget3::GetExceptionRecord Method"
 title: "ICLRDataTarget3::GetExceptionRecord Method"
 ms.date: "03/30/2017"
 dev_langs: 

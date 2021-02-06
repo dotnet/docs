@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Map Inheritance Hierarchies"
 title: "How to: Map Inheritance Hierarchies"
 ms.date: "03/30/2017"
 ms.assetid: b27c779b-9355-4dc7-b95f-7dfd504b6e48

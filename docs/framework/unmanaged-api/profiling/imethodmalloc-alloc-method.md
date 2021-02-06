@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMethodMalloc::Alloc Method"
 title: "IMethodMalloc::Alloc Method"
 ms.date: "03/30/2017"
 api_name:

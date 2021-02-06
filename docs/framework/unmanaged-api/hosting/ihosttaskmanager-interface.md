@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTaskManager Interface"
 title: "IHostTaskManager Interface"
 ms.date: "03/30/2017"
 api_name: 

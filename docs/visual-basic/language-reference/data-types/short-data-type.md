@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Short data type (Visual Basic)"
 title: "Short Data Type"
 ms.date: 01/31/2018
 f1_keywords: 

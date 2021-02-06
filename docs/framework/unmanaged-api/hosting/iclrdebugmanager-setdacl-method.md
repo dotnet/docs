@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDebugManager::SetDacl Method"
 title: "ICLRDebugManager::SetDacl Method"
 ms.date: "03/30/2017"
 api_name: 

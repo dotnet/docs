@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Data Services Resources"
 title: "WCF Data Services Resources"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

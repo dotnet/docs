@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: read from fixed-width text files in Visual Basic"
 title: "How to: read from fixed-width text Files"
 ms.date: 07/20/2015
 helpviewer_keywords: 

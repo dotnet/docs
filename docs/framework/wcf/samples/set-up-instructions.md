@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Set-Up Instructions"
 title: "Set-Up Instructions"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resume Statement"
 title: "Resume Statement"
 ms.date: 07/20/2015
 f1_keywords: 

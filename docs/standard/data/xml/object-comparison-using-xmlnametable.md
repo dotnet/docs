@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Comparison Using XmlNameTable"
 title: "Object Comparison Using XmlNameTable"
 ms.date: "03/30/2017"
 dev_langs: 

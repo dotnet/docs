@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::COMClassicVTableCreated Method"
 title: "ICorProfilerCallback::COMClassicVTableCreated Method"
 ms.date: "03/30/2017"
 api_name: 

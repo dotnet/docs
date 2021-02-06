@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Input Character Set (Entity SQL)"
 title: "Input Character Set (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 13d291d3-e6bc-4719-b953-758b61a590b6

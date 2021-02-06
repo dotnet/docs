@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedScope::GetLocalCount Method"
 title: "ISymUnmanagedScope::GetLocalCount Method"
 ms.date: "03/30/2017"
 api_name: 

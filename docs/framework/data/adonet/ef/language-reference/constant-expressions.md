@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constant Expressions"
 title: "Constant Expressions"
 ms.date: "03/30/2017"
 dev_langs: 

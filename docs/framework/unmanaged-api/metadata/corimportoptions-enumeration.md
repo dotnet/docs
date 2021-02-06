@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorImportOptions Enumeration"
 title: "CorImportOptions Enumeration"
 ms.date: "03/30/2017"
 api_name: 

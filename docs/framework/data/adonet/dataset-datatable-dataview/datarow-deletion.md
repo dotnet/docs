@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DataRow Deletion"
 title: "DataRow Deletion"
 ms.date: "03/30/2017"
 dev_langs: 

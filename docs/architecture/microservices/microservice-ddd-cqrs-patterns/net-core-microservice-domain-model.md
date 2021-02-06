@@ -1,10 +1,10 @@
 ---
 title: Implementing a microservice domain model with .NET
 description: .NET Microservices Architecture for Containerized .NET Applications | Get into the implementation details of a DDD-oriented domain model.
-ms.date: 01/13/2021
+ms.date: 02/02/2021
 ---
 
-# Implement a microservice domain model with .NET Core
+# Implement a microservice domain model with .NET
 
 In the previous section, the fundamental design principles and patterns for designing a domain model were explained. Now it is time to explore possible ways to implement the domain model by using .NET (plain C\# code) and EF Core. Your domain model will be composed simply of your code. It will have just the EF Core model requirements, but not real dependencies on EF. You should not have hard dependencies or references to EF Core or any other ORM in your domain model.
 

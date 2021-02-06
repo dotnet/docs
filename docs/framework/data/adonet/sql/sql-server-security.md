@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Server Security"
 title: "SQL Server Security"
 ms.date: "03/30/2017"
 ms.assetid: 9053724d-a1fb-4f0f-b9dc-7f6dd893e8ff

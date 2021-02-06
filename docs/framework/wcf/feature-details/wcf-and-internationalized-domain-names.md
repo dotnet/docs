@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF and Internationalized Domain Names"
 title: "WCF and Internationalized Domain Names"
 ms.date: "03/30/2017"
 ms.assetid: c8a3e10a-8bc2-4a78-8d86-a562ba6e65fa

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: KEY (Entity SQL)"
 title: "KEY (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: cbaa97a8-c89c-4460-8c74-00474695789f

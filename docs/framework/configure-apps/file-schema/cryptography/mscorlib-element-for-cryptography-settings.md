@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <mscorlib> Element for Cryptography Settings"
 title: "<mscorlib> Element for Cryptography Settings"
 ms.date: "03/30/2017"
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deciding When to Implement the Event-based Asynchronous Pattern"
 title: "Deciding When to Implement the Event-based Asynchronous Pattern"
 ms.date: "03/30/2017"
 helpviewer_keywords:

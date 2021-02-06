@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Contract Schema Reference"
 title: "Data Contract Schema Reference"
 ms.date: "03/30/2017"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEval::CreateValue Method"
 title: "ICorDebugEval::CreateValue Method"
 ms.date: "03/30/2017"
 api_name: 

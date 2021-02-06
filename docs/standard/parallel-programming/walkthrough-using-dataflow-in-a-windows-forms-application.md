@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Using Dataflow in a Windows Forms Application"
 title: "Walkthrough: Using Dataflow in a Windows Forms Application"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Namespaces (Entity SQL)"
 title: "Namespaces (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 83991c21-60db-4af9-aca3-b416f6cae98e

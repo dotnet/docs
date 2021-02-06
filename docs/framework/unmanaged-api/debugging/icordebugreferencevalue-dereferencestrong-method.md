@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugReferenceValue::DereferenceStrong Method"
 title: "ICorDebugReferenceValue::DereferenceStrong Method"
 ms.date: "03/30/2017"
 api_name: 

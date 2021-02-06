@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.RemoveBehavior"
 title: "System.ServiceModel.RemoveBehavior"
 ms.date: "03/30/2017"
 ms.assetid: bb64042c-0b07-47b9-a8b7-bd0c06c057e3

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLROnEventManager::RegisterActionOnEvent Method"
 title: "ICLROnEventManager::RegisterActionOnEvent Method"
 ms.date: "03/30/2017"
 api_name: 

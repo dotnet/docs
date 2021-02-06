@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating New Attributes for Elements in the DOM"
 title: "Creating New Attributes for Elements in the DOM"
 ms.date: "03/30/2017"
 dev_langs: 

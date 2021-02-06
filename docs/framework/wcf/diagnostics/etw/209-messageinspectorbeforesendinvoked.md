@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 209 - MessageInspectorBeforeSendInvoked"
 title: "209 - MessageInspectorBeforeSendInvoked"
 ms.date: "03/30/2017"
 ms.assetid: 7d710875-fb77-4463-978b-bc86d59d84cd

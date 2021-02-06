@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Exchange Messages Within a Reliable Session"
 title: "How to: Exchange Messages Within a Reliable Session"
 ms.date: "03/30/2017"
 ms.assetid: 87cd0e75-dd2c-44c1-8da0-7b494bbdeaea

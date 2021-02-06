@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Enumerate Stores for Isolated Storage"
 title: "How to: Enumerate Stores for Isolated Storage"
 ms.date: "03/30/2017"
 dev_langs: 

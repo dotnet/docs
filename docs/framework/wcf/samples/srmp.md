@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SRMP"
 title: "SRMP"
 ms.date: "03/30/2017"
 ms.assetid: cf37078c-dcb4-45e0-acaf-2f196521b226

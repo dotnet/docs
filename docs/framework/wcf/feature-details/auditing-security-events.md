@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Auditing Security Events"
 title: "Auditing Security Events"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

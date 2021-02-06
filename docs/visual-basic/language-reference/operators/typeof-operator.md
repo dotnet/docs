@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TypeOf Operator (Visual Basic)"
 title: "TypeOf Operator"
 ms.date: 07/20/2015
 f1_keywords: 

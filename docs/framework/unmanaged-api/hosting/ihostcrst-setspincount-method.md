@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostCrst::SetSpinCount Method"
 title: "IHostCrst::SetSpinCount Method"
 ms.date: "03/30/2017"
 api_name: 

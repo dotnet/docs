@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Communication Foundation Privacy Information"
 title: "Windows Communication Foundation Privacy Information"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IGCHost::Collect Method"
 title: "IGCHost::Collect Method"
 ms.date: "03/30/2017"
 api_name: 

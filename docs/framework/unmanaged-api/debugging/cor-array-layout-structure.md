@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_ARRAY_LAYOUT Structure"
 title: "COR_ARRAY_LAYOUT Structure"
 ms.date: "03/30/2017"
 api_name: 

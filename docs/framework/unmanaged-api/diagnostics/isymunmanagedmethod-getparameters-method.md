@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedMethod::GetParameters Method"
 title: "ISymUnmanagedMethod::GetParameters Method"
 ms.date: "03/30/2017"
 api_name: 

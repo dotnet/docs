@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4802 - DiscoveryClientProtocolExceptionSuppressed"
 title: "4802 - DiscoveryClientProtocolExceptionSuppressed"
 ms.date: "03/30/2017"
 ms.assetid: 568212f7-1060-4f5c-a7a0-1352c7cc743b

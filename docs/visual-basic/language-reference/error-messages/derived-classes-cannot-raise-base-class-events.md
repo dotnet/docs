@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30029: Derived classes cannot raise base class events"
 title: "Derived classes cannot raise base class events"
 ms.date: 07/20/2015
 f1_keywords:

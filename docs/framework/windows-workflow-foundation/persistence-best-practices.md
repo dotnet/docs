@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Persistence Best Practices"
 title: "Persistence Best Practices"
 ms.date: "03/30/2017"
 ms.assetid: 6974c5a4-1af8-4732-ab53-7d694608a3a0

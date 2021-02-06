@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30145: Unable to emit assembly: <error message>"
 title: "Unable to emit assembly: <error message>"
 ms.date: 08/14/2018
 f1_keywords:

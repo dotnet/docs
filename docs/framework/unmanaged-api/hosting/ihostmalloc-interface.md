@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostMalloc Interface"
 title: "IHostMalloc Interface"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqCannotReadQueues"
 title: "System.ServiceModel.Channels.MsmqCannotReadQueues"
 ms.date: "03/30/2017"
 ms.assetid: f1cfee05-dce7-440b-b03e-96f81c00a222

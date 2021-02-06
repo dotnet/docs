@@ -14,7 +14,7 @@ ms.author: gewarren
 ---
 # Design rules
 
-Design rules support adherence to the [.NET Framework Design Guidelines](../../../standard/design-guidelines/index.md).
+Design rules support adherence to the [.NET Framework design guidelines](../../../standard/design-guidelines/index.md).
 
 ## In this section
 

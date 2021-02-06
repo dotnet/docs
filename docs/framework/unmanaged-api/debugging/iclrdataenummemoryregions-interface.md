@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDataEnumMemoryRegions Interface"
 title: "ICLRDataEnumMemoryRegions Interface"
 ms.date: "03/30/2017"
 api_name: 

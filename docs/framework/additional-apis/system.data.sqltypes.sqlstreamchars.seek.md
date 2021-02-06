@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlStreamChars.Seek(Int64, SeekOrigin) Method"
 title: SqlStreamChars.Seek(Int64, SeekOrigin) Method (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein

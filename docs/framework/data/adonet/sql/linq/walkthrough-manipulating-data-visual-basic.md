@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Manipulating Data (Visual Basic)"
 title: "Walkthrough: Manipulating Data (Visual Basic)"
 ms.date: "03/30/2017"
 dev_langs: 

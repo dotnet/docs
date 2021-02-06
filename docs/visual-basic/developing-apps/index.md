@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Developing Applications with Visual Basic"
 title: "Developing Applications"
 ms.date: 07/20/2015
 helpviewer_keywords: 

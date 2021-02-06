@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Side by Side Versioning in WorkflowServiceHost"
 title: "Side by Side Versioning in WorkflowServiceHost"
 ms.date: "03/30/2017"
 dev_langs: 

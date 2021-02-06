@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binding"
 title: "Binding WCF Samples"
 ms.date: "03/30/2017"
 ms.assetid: 324fa627-d012-465a-b266-95594a09dac2

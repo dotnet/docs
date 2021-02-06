@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parsing Other Strings in .NET"
 title: "Parsing Other Strings in .NET"
 ms.date: "03/30/2017"
 dev_langs: 

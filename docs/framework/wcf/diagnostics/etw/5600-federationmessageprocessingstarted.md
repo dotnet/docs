@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5600 - FederationMessageProcessingStarted"
 title: "5600 - FederationMessageProcessingStarted"
 ms.date: "03/30/2017"
 ms.assetid: 52f36a6f-cc3f-441f-a4c2-e8df2e747d52

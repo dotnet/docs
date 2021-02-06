@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ResolveTypeLib Method"
 title: "ResolveTypeLib Method"
 ms.date: "03/30/2017"
 api_name: 

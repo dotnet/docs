@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30996: Initializer expected"
 title: "Initializer expected"
 ms.date: 07/20/2015
 f1_keywords:

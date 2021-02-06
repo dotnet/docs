@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Thread Local Storage: Thread-Relative Static Fields and Data Slots"
 title: "Thread Local Storage: Thread-Relative Static Fields and Data Slots"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

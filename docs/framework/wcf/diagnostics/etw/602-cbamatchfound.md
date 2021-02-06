@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 602 - CBAMatchFound"
 title: "602 - CBAMatchFound"
 ms.date: "03/30/2017"
 ms.assetid: 6b1ccbb8-5a43-4b36-9949-702877cef90a

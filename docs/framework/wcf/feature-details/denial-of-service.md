@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Denial of Service"
 title: "Denial of Service"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Set a Max Clock Skew"
 title: "How to: Set a Max Clock Skew"
 ms.date: "03/30/2017"
 dev_langs: 

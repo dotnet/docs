@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MissingInteropDataException Class (.NET Native)"
 title: "MissingInteropDataException Class (.NET Native)"
 ms.date: "03/30/2017"
 dev_langs: 

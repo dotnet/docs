@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NamedPipe Activation"
 title: "NamedPipe Activation"
 ms.date: "03/30/2017"
 ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29

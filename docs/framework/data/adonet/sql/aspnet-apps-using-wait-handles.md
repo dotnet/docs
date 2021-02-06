@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ASP.NET Applications Using Wait Handles"
 title: "ASP.NET Applications Using Wait Handles"
 ms.date: "03/30/2017"
 dev_langs: 

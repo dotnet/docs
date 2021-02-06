@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Asynchronous Operations (WCF Data Services)"
 title: "Asynchronous Operations (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

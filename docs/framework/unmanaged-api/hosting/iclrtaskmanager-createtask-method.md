@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRTaskManager::CreateTask Method"
 title: "ICLRTaskManager::CreateTask Method"
 ms.date: "03/30/2017"
 api_name: 

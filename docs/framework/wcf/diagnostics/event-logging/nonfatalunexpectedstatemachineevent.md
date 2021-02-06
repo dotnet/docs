@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NonFatalUnexpectedStateMachineEvent"
 title: "NonFatalUnexpectedStateMachineEvent"
 ms.date: "03/30/2017"
 ms.assetid: bfa37c10-cf1b-4325-b756-6ef200606510

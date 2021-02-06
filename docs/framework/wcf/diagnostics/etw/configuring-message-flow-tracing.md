@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuring Message Flow Tracing"
 title: "Configuring Message Flow Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 15571ca2-bee2-47fb-ba10-fcbc09152ad0

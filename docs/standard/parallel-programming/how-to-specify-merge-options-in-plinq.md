@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Merge Options in PLINQ"
 title: "How to: Specify Merge Options in PLINQ"
 ms.date: "03/30/2017"
 dev_langs: 

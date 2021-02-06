@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_PRF_FUNCTION_ARGUMENT_RANGE Structure"
 title: "COR_PRF_FUNCTION_ARGUMENT_RANGE Structure"
 ms.date: "03/30/2017"
 api_name: 

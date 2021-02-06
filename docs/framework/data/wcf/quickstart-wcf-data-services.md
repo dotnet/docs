@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Quickstart (WCF Data Services)"
 title: "Quickstart (WCF Data Services)"
 ms.date: 08/24/2018
 helpviewer_keywords:

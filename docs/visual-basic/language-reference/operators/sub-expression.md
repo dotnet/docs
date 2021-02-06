@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sub Expression (Visual Basic)"
 title: "Sub Expression"
 ms.date: 07/20/2015
 helpviewer_keywords: 

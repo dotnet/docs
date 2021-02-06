@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <udpTransportSettings>"
 title: "<udpTransportSettings>"
 ms.date: "03/30/2017"
 ms.assetid: 842d92e9-6199-4ec5-b2d1-58533054e1f0

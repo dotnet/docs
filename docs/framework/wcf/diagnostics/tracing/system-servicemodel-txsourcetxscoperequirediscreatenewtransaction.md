@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxSourceTxScopeRequiredIsCreateNewTransaction"
 title: "System.ServiceModel.TxSourceTxScopeRequiredIsCreateNewTransaction"
 ms.date: "03/30/2017"
 ms.assetid: 3e758e9f-92b5-4b25-bcf4-e5e2a5893bb9

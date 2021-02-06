@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <workflowInstanceQuery> of WCF"
 title: "<workflowInstanceQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 35c73f9d-474e-42eb-874d-ddc04b1987f3

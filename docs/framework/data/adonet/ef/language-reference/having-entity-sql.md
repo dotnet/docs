@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HAVING (Entity SQL)"
 title: "HAVING (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: b5d52d97-8372-4335-beac-2d0b79dc3707

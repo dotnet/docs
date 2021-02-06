@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transaction Models"
 title: "Transaction Models"
 ms.date: "03/30/2017"
 ms.assetid: 48a8bc1b-128b-4cf1-a421-8cc73223c340

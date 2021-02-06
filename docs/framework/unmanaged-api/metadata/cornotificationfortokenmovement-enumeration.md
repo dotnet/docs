@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorNotificationForTokenMovement Enumeration"
 title: "CorNotificationForTokenMovement Enumeration"
 ms.date: "03/30/2017"
 api_name: 

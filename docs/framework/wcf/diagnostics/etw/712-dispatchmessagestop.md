@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 712 - DispatchMessageStop"
 title: "712 - DispatchMessageStop"
 ms.date: "03/30/2017"
 ms.assetid: 5e1894a6-9c44-4533-aaec-64063a2cbb06

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess6 Interface"
 title: "ICorDebugProcess6 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 34a10ac2-882c-4797-8369-f120e8e640c7

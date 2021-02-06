@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Validation and Authentication Failures Per Second"
 title: "Security Validation and Authentication Failures Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 266c3bd3-2ffc-4471-94b7-3675443be1ac

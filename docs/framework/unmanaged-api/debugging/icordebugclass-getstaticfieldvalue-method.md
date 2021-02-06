@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugClass::GetStaticFieldValue Method"
 title: "ICorDebugClass::GetStaticFieldValue Method"
 ms.date: "03/30/2017"
 api_name: 

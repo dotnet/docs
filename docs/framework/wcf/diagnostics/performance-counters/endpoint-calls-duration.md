@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Endpoint: Calls Duration"
 title: "Endpoint: Calls Duration"
 ms.date: "03/30/2017"
 ms.assetid: 1aebe748-ad05-4ade-819c-d480379ccfb9

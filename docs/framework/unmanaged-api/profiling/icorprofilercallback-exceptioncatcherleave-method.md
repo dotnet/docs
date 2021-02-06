@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionCatcherLeave Method"
 title: "ICorProfilerCallback::ExceptionCatcherLeave Method"
 ms.date: "03/30/2017"
 api_name: 

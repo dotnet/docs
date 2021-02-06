@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Long data type (Visual Basic)"
 title: "Long Data Type"
 ms.date: 01/31/2018
 f1_keywords:

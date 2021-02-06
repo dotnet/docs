@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30140: Error creating assembly manifest: <error message>"
 title: "Error creating assembly manifest: <error message>"
 ms.date: 07/20/2015
 f1_keywords:

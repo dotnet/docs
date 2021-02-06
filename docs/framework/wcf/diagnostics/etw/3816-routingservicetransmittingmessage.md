@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3816 - RoutingServiceTransmittingMessage"
 title: "3816 - RoutingServiceTransmittingMessage"
 ms.date: "03/30/2017"
 ms.assetid: a7ee6e3b-4a02-47bd-b004-46abb6dd820e

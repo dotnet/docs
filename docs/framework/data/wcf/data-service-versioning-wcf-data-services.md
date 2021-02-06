@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Service Versioning (WCF Data Services)"
 title: "Data Service Versioning (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords:

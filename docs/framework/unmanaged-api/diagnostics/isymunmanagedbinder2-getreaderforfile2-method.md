@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedBinder2::GetReaderForFile2 Method"
 title: "ISymUnmanagedBinder2::GetReaderForFile2 Method"
 ms.date: "03/30/2017"
 api_name: 

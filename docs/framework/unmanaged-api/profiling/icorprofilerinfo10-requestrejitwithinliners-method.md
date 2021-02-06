@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo10::RequestReJITWithInliners Method"
 title: "ICorProfilerInfo10::RequestReJITWithInliners"
 ms.date: "08/06/2019"
 dev_langs:

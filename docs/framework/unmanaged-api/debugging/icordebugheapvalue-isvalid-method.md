@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugHeapValue::IsValid Method"
 title: "ICorDebugHeapValue::IsValid Method"
 ms.date: "03/30/2017"
 api_name: 

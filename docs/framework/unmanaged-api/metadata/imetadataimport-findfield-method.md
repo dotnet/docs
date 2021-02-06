@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::FindField Method"
 title: "IMetaDataImport::FindField Method"
 ms.date: "03/30/2017"
 api_name: 

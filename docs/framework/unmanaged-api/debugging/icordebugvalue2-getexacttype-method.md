@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugValue2::GetExactType Method"
 title: "ICorDebugValue2::GetExactType Method"
 ms.date: "03/30/2017"
 api_name: 

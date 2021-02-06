@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.SecurityServerSessionCloseResponseReceived"
 title: "System.ServiceModel.Security.SecurityServerSessionCloseResponseReceived"
 ms.date: "03/30/2017"
 ms.assetid: 899d663e-6a6d-49e9-9480-182b6860ae17

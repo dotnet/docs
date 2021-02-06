@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo8::IsFunctionDynamic Method"
 title: "ICorProfilerInfo8::IsFunctionDynamic"
 ms.date: "08/06/2019"
 dev_langs:

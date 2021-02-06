@@ -143,7 +143,7 @@ For .NET 2.1, you must use the following switches with the `dotnet publish` comm
 
 Whenever you use the `-r` switch, the output folder path changes to: `./bin/<BUILD-CONFIGURATION>/<TFM>/<RID>/publish/`
 
-If you use the [example app](#sample-app), run `dotnet publish -f net5.0-r win10-x64 --self-contained false`. This command creates the following executable: `./bin/Debug/net5.0/win10-x64/publish/apptest1.exe`
+If you use the [example app](#sample-app), run `dotnet publish -f net5.0 -r win10-x64 --self-contained false`. This command creates the following executable: `./bin/Debug/net5.0/win10-x64/publish/apptest1.exe`
 
 > [!NOTE]
 > You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md).

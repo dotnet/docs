@@ -46,7 +46,7 @@ If you need to select the correct HTTPS port dynamically, provide feedback in Gi
 
 ## Affected APIs
 
-<xref:xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection%2A?displayProperty=nameWithType>
+<xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection%2A?displayProperty=nameWithType>
 
 <!--
 

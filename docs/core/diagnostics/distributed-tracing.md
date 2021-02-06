@@ -5,13 +5,13 @@ ms.date: 02/02/2021
 ---
 # .NET Distributed Tracing
 
-Distributed tracing is the way to publish and observe the tracing data in a distributed system.
+Distributed tracing is the way to publish and observe tracing data in a distributed system.
 .NET Framework and .NET Core has been supporting tracing through the <xref:System.Diagnostics> APIs.
 
 - <xref:System.Diagnostics.Activity?displayProperty=nameWithType> class which allows storing and accessing diagnostics context and consuming it with logging system.
 - <xref:System.Diagnostics.DiagnosticSource?displayProperty=nameWithType> that allows code to be instrumented for production-time logging of rich data payloads for consumption within the process that was instrumented.
 
-Here is an example shows how to publish tracing data from the HTTP incoming requests:
+Here is an example that shows how to publish tracing data from the HTTP incoming requests:
 
 ```csharp
    public void OnIncomingRequest(DiagnosticListener httpListener, HttpContext context)
@@ -59,18 +59,18 @@ Here is example for how to listen to the Activity events:
     }
 ```
 
-.NET 5.0 has extended the capability of the distributed tracing to allow the [OpenTelemetry](https://opentelemetry.io/) tracing scenarios, added Sampling capabilities, simplified the tracing coding pattern, and made the listening to the Activity events easier and flexible.
+.NET 5.0 has extended the capability of the distributed tracing to allow the [OpenTelemetry](https://opentelemetry.io/) tracing scenarios, added Sampling capabilities, simplified the tracing coding pattern, and made listening to the Activity events easier and flexible.
 
 > [!NOTE]
-> To access all added .NET 5.0 capabilities, ensure referencing the [System.Diagnostics.DiagnosticSource](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/) NuGet package version 5.0 or later. This package can be used in libraries and apps targeting any supported version of the .NET Framework, .NET Core, and .NET Standard. If targeting .NET 5.0 or later, no need to manually reference the package as it is included in the shared library installed with the .NET SDK.
+> To access all added .NET 5.0 capabilities, ensure your project references the [System.Diagnostics.DiagnosticSource](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/) NuGet package version 5.0 or later. This package can be used in libraries and apps targeting any supported version of the .NET Framework, .NET Core, and .NET Standard. If targeting .NET 5.0 or later, there is no need to manually reference the package as it is included in the shared library installed with the .NET Runtime.
 
 ## Getting Started With Tracing
 
-The applications and the libraries can easily publish tracing data by simply using the <xref:System.Diagnostics.ActivitySource?displayProperty=nameWithType> and the <xref:System.Diagnostics.Activity?displayProperty=nameWithType> classes.
+Applications and libraries can easily publish tracing data by simply using the <xref:System.Diagnostics.ActivitySource?displayProperty=nameWithType> and the <xref:System.Diagnostics.Activity?displayProperty=nameWithType> classes.
 
 ### ActivitySource
 
-First step to publish tracing data is to create instance of the ActivitySource class. The ActivitySource is the class provides APIs to create and start Activity objects and to register ActivityListener objects to listen to the Activity events.
+The first step to publish tracing data is to create an instance of the ActivitySource class. The ActivitySource is the class that provides APIs to create and start Activity objects and to register ActivityListener objects to listen to the Activity events.
 
 ```csharp
     internal static ActivitySource source = new ActivitySource("MyCompany.MyComponent.SourceName", "v1");
@@ -80,13 +80,13 @@ First step to publish tracing data is to create instance of the ActivitySource c
 
 - Create the ActivitySource once and store it in a static variable and use that instance as long as needed.
 
-- The source name passed to the constructor has to be unique to avoid the conflicts with any other sources. It is recommended to use hierarchical name contains the parts, the company name, the component name, and the source name. For example, `Microsoft.System.HttpClient.HttpInOutRequests`.
+- The source name passed to the constructor has to be unique to avoid the conflicts with any other sources. It is recommended to use a hierarchical name contains the company name, the component name, and the source name. For example, `Microsoft.System.HttpClient.HttpInOutRequests`.
 
-- The version parameter is optional. It is recommended to provide the version in case plan to release multiple versions of the library or the application and want to distinguish between the sources of different versions.
+- The version parameter is optional. It is recommended to provide the version in case you plan to release multiple versions of the library or the application and want to distinguish between the sources of different versions.
 
 ### Activity Creation
 
-Now the created ActivitySource object can be used to create and start Activity objects which used to log any tracing data in any desired places in the code.
+Now the created ActivitySource object can be used to create and start Activity objects which are used to log any tracing data in any desired places in the code.
 
 ```csharp
         using (Activity activity = source.StartActivity("OperationName"))
@@ -97,18 +97,18 @@ Now the created ActivitySource object can be used to create and start Activity o
         }
 ```
 
-This sample code try to create the Activity object and then log some tracing tag `key` and `value`.
+This sample code tries to create the Activity object and then logs some tracing tag `key` and `value`.
 
 #### Notes
 
-- `ActivitySource.StartActivity` tries to create and start the activity in same time. The listed code pattern is using the `using` block which automatically dispose the created Activity object after executing the block. Disposing the Activity object will stop this started activity and the code doesn't have to explicitly stop te activity. That simplify the coding pattern
+- `ActivitySource.StartActivity` tries to create and start the activity at the same time. The listed code pattern is using the `using` block which automatically disposes the created Activity object after executing the block. Disposing the Activity object will stop this started activity and the code doesn't have to explicitly stop the activity. That simplifies the coding pattern.
 
-- `ActivitySource.StartActivity` internally figure out if there any listener to such events. If there is no registered listeners or there is a listeners which not interested in such event, `ActivitySource.StartActivity` simply will return `null` object and avoid creating the Activity object. That is why the code used the nullable operator `?`  in the statement `activity?.AddTag`. In general, inside the `using` block, always use the nullable operator `?` after the activity object name.
+- `ActivitySource.StartActivity` internally figures out if there are any listeners to such events. If there are no registered listeners or there are listeners which are not interested in such an event, `ActivitySource.StartActivity` simply will return `null` and avoid creating the Activity object. That is why the code used the nullable operator `?`  in the statement `activity?.AddTag`. In general, inside the `using` block, always use the nullable operator `?` after the activity object name.
 
 ## Listening to the Activity Events
 
-.NET provide the class <xref:System.Diagnostics.ActivityListener?displayProperty=nameWithType> which can be used to listen to the Activity events triggered from one or more ActivitySource.
-The listener can be used collecting tracing data, sampling, or forcing creating the Activity object.
+.NET provides the class <xref:System.Diagnostics.ActivityListener?displayProperty=nameWithType> which can be used to listen to the Activity events triggered from one or more ActivitySources.
+The listener can be used to collect tracing data, sample, or force creating the Activity object.
 
 The `ActivityListener` class provides a different callbacks to handle different events.
 
@@ -126,25 +126,25 @@ Sample = (ref ActivityCreationOptions<ActivityContext> activityOptions) => Activ
 ActivitySource.AddActivityListener(listener);
 ```
 
-- `ShouldListenTo` enables listening to a specific `ActivitySource` objects. In the example, it enables listening to the `ActivitySource` object we have previously created. There is more flexibility to listen to any other `ActivitySource` objects by checking the `Name` and `Version` of the input `ActivitySource`.
+- `ShouldListenTo` enables listening to specific `ActivitySource` objects. In the example, it enables listening to the `ActivitySource` object we have previously created. There is more flexibility to listen to any other `ActivitySource` objects by checking the `Name` and `Version` of the input `ActivitySource`.
 
-- `ActivityStarted` and `ActivityStopped` enable getting the `Activity` Start and Stop events for all `Activity` objects created by the `ActivitySource` objects which was enabled to listen to by `ShouldListenTo` callback.
+- `ActivityStarted` and `ActivityStopped` enable getting the `Activity` Start and Stop events for all `Activity` objects created by the `ActivitySource` objects which were enabled by the `ShouldListenTo` callback.
 
-- `Sample` and `SampleUsingParentId` are the main callbacks which intended for sampling. These two callbacks return the `ActivitySamplingResult` enum value which can tell either to sample in or out the current `Activity` creation request. If the callback return `ActivitySamplingResult.None` and no other enabled listeners return different value, then the Activity wil not get created and `ActivitySource.StartActivity` will return `null`. Otherwise, the `Activity` object will get created.
+- `Sample` and `SampleUsingParentId` are the main callbacks which intended for sampling. These two callbacks return the `ActivitySamplingResult` enum value which can tell either to sample in or out the current `Activity` creation request. If the callback returns `ActivitySamplingResult.None` and no other enabled listeners return different value, then the Activity will not get created and `ActivitySource.StartActivity` will return `null`. Otherwise, the `Activity` object will get created.
 
 ## .NET 5.0 New Features
 
-For awhile `Activity` class has been supporting tracing main scenarios. It allowed sticking tags which is key-value pairs of tracing data. It has been supporting Baggages which is a key-value tags intended to be propagated across the wire.
+For awhile the `Activity` class has been supporting tracing scenarios. It allowed adding tags which are key-value pairs of tracing data. It has been supporting Baggage which is are key-value pairs intended to be propagated across the wire.
 
 .NET 5.0 supports more features mainly to enable OpenTelemetry scenarios.
 
 ### ActivityContext
 
-<xref:System.Diagnostics.ActivityContext?displayProperty=nameWithType> is the struct carrying the context of the tracing operations (e.g. the trace Id, Span Id, trace flags, and trace state). Now it is possible to create a new `Activity` with providing the parent tracing context. Also, it is easy to extract the tracing context from any `Activity` object by calling `Activity.Context` property.
+<xref:System.Diagnostics.ActivityContext?displayProperty=nameWithType> is the struct carrying the context of the tracing operations (e.g. the trace Id, Span Id, trace flags, and trace state). Now it is possible to create a new `Activity` providing the parent tracing context. Also, it is easy to extract the tracing context from any `Activity` object by calling `Activity.Context` property.
 
 ### ActivityLink
 
-<xref:System.Diagnostics.ActivityLink?displayProperty=nameWithType> is the struct containing the tracing context instance which can be linked to casually related `Activity` object. Links can be added to the `Activity` object by passing the links list to `ActivitySource.StartActivity` method when creating the `Activity`. The whole `Activity` object attached links can be  retrieved using the property `Activity.Links`.
+<xref:System.Diagnostics.ActivityLink?displayProperty=nameWithType> is the struct containing the tracing context instance which can be linked to casually related `Activity` objects. Links can be added to the `Activity` object by passing the links list to `ActivitySource.StartActivity` method when creating the `Activity`. The `Activity` object attached links can be retrieved using the property `Activity.Links`.
 
 ### ActivityEvent
 
@@ -152,7 +152,7 @@ For awhile `Activity` class has been supporting tracing main scenarios. It allow
 
 ### ActivityKind
 
-<xref:System.Diagnostics.ActivityKind?displayProperty=nameWithType> describes the relationship between the activity, its parents and its children in a trace. Kind can be set  to the `Activity` object by passing the kind value to `ActivitySource.StartActivity` method when creating the `Activity`. The `Activity` object kind can be retrieved using the property `Activity.Kind`.
+<xref:System.Diagnostics.ActivityKind?displayProperty=nameWithType> describes the relationship between the activity, its parents and its children in a trace. Kind can be set to the `Activity` object by passing the kind value to `ActivitySource.StartActivity` method when creating the `Activity`. The `Activity` object kind can be retrieved using the property `Activity.Kind`.
 
 ### IsAllDataRequested
 
@@ -164,23 +164,23 @@ For awhile `Activity` class has been supporting tracing main scenarios. It allow
 
 ### Activity.DisplayName
 
-<xref:System.Diagnostics.Activity.DisplayName?displayProperty=nameWithType> allows getting or setting a display name to the activity.
+<xref:System.Diagnostics.Activity.DisplayName?displayProperty=nameWithType> allows getting or setting a display name for the activity.
 
 ### Activity.TagObjects
 
-`Activity` class has the property `Activity.Tags` which return the a key-value pair list of the tags of type string for the key and value. Such Tags can be added to the `Activity` using the method `AddTag(string, string)`. `Activity` has extended the support of tags by providing the overloaded method `AddTag(string, object)` allowing to have values of any type.  The complete list of such tags can be retrieved using <xref:System.Diagnostics.Activity.TagObjects?displayProperty=nameWithType>.
+`Activity` class has the property `Activity.Tags` which return the a key-value pair list of the tags of type string for the key and value. Such Tags can be added to the `Activity` using the method `AddTag(string, string)`. `Activity` has extended the support of tags by providing the overloaded method `AddTag(string, object)` allowing values of any type.  The complete list of such tags can be retrieved using <xref:System.Diagnostics.Activity.TagObjects?displayProperty=nameWithType>.
 
 ## Sampling
 
-Sampling is a mechanism to control the noise and overhead by reducing the number of samples of traces collected and sent to the backend. Sampling is important OpenTelemetry scenario. In .NET 5.0 it is easy to allow sampling. A good practice is create the  new `Activity` objects using `ActivitySource.StartActivity` and try to provide all possible available data (e.g. tags, kind, links, ...etc.) when calling this method. Providing the data will allow the samplers which implemented using the `ActivityListener` to have proper sampling decision. If the performance is critical to avoid creating the data before creating the `Activity` object, the property `ActivitySource.HasListeners` comes handy to check if there is any listeners before creating the needed data.
+Sampling is a mechanism to control the noise and overhead by reducing the number of samples of traces collected and sent to the backend. Sampling is an important OpenTelemetry scenario. In .NET 5.0 it is easy to allow sampling. A good practice is to create the new `Activity` objects using `ActivitySource.StartActivity` and try to provide all possible available data (e.g. tags, kind, links, ...etc.) when calling this method. Providing the data will allow the samplers implemented using the `ActivityListener` to have a proper sampling decision. If the performance is critical to avoid creating the data before creating the `Activity` object, the property `ActivitySource.HasListeners` comes in handy to check if there are any listeners before creating the needed data.
 
 ## OpenTelemetry
 
-OpenTelemetry SDK comes with many features that support end-to-end distributed tracing scenarios. It provides multiple samplers and exporters which can choose from. It allows creating a custom samplers and exporters too.
+OpenTelemetry SDK comes with many features that support end-to-end distributed tracing scenarios. It provides multiple samplers and exporters which you can choose from. It allows creating a custom samplers and exporters too.
 
-OpenTelemetry supports exporting the collected tracing data to different backends (e.g. Jaeger, Zipkin, New Relic,...etc.). Refer to [OpenTelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet/) for more details and search Nuget.org for packages starts with `OpenTelemetry.Exporter.` to get the exporter packages list.
+OpenTelemetry supports exporting the collected tracing data to different backends (e.g. Jaeger, Zipkin, New Relic,...etc.). Refer to [OpenTelemetry-dotnet](https://github.com/open-telemetry/opentelemetry-dotnet/) for more details and search Nuget.org for packages starting with `OpenTelemetry.Exporter.` to get the exporter packages list.
 
-Here is a sample code ported from [OpenTelemetry-dotnet getting started](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/trace/getting-started) showing how easy can sample and export tracing data to the console.
+Here is sample code ported from [OpenTelemetry-dotnet getting started](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/trace/getting-started) showing how easy it is to sample and export tracing data to the console.
 
 ```csharp
 // <copyright file="Program.cs" company="OpenTelemetry Authors">

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: - (Negative) (Entity SQL)"
 title: "- (Negative) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 208e54ef-4741-4ec5-89d6-6ff700863cb0

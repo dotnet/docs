@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugHeapValue3::GetThreadOwningMonitorLock Method"
 title: "ICorDebugHeapValue3::GetThreadOwningMonitorLock Method"
 ms.date: "03/30/2017"
 api_name: 

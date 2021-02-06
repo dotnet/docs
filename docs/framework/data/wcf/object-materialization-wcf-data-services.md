@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Materialization (WCF Data Services)"
 title: "Object Materialization (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords:

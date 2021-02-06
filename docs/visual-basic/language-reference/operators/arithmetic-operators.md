@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Arithmetic Operators (Visual Basic)"
 title: "Arithmetic Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 

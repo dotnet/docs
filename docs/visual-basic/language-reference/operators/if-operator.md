@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: If Operator (Visual Basic)"
 title: "If Operator"
 ms.date: 07/20/2015
 f1_keywords:

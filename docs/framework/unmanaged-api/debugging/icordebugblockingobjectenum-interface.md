@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugBlockingObjectEnum Interface"
 title: "ICorDebugBlockingObjectEnum Interface"
 ms.date: "03/30/2017"
 api_name: 

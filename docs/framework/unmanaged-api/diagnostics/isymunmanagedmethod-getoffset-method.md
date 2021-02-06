@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedMethod::GetOffset Method"
 title: "ISymUnmanagedMethod::GetOffset Method"
 ms.date: "03/30/2017"
 api_name: 

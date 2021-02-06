@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure"
 title: "AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure"
 ms.date: "03/30/2017"
 ms.assetid: 89e41a81-0f41-45ad-8f20-a120e4ff24fb

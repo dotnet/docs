@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <behaviors> of workflow"
 title: "<behaviors> of workflow"
 ms.date: "03/30/2017"
 ms.topic: "reference"

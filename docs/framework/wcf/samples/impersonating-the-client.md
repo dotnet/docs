@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Impersonating the Client"
 title: "Impersonating the Client"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

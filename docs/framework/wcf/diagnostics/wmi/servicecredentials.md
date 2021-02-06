@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServiceCredentials"
 title: "ServiceCredentials"
 ms.date: "03/30/2017"
 ms.assetid: 9c780793-4785-46f7-add9-ac1ebeadb614

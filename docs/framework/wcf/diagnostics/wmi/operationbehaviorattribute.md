@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OperationBehaviorAttribute"
 title: "OperationBehaviorAttribute"
 ms.date: "03/30/2017"
 ms.assetid: 8c9b0755-9e83-411f-bdcb-61a586022797

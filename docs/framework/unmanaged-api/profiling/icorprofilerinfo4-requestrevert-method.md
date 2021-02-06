@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo4::RequestRevert Method"
 title: "ICorProfilerInfo4::RequestRevert Method"
 ms.date: "03/30/2017"
 api_name: 

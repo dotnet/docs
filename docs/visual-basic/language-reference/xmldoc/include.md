@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <include> (Visual Basic)"
 title: "<include>"
 ms.date: 07/20/2015
 helpviewer_keywords: 

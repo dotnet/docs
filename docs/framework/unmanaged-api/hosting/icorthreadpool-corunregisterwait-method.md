@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorThreadpool::CorUnregisterWait Method"
 title: "ICorThreadpool::CorUnregisterWait Method"
 ms.date: "03/30/2017"
 api_name: 

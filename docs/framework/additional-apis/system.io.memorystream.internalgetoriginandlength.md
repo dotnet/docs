@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MemoryStream.InternalGetOriginAndLength method"
 title: MemoryStream.InternalGetOriginAndLength Method (System.IO)
 ms.date: 11/19/2019
 topic_type:

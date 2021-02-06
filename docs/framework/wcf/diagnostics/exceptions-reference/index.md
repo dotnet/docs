@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions Reference"
 title: "Exceptions Reference"
 ms.date: "03/30/2017"
 ms.assetid: adc19950-5f79-4045-8403-bf6310118ee3

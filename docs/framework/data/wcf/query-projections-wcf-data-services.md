@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Query Projections (WCF Data Services)"
 title: "Query Projections (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:

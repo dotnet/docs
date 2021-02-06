@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3309 - QueryCompositionExecuted"
 title: "3309 - QueryCompositionExecuted"
 ms.date: "03/30/2017"
 ms.assetid: a7ae2267-b478-4115-8317-a89ce4ced65d

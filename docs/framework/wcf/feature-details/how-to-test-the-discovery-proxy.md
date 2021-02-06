@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Test the Discovery Proxy"
 title: "How to: Test the Discovery Proxy"
 ms.date: "03/30/2017"
 ms.assetid: d96e3fa2-3c42-4e5d-8244-2694081bdc32

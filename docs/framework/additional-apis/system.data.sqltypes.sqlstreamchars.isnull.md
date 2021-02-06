@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlStreamChars.IsNull Property"
 title: SqlStreamChars.IsNull Property (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein

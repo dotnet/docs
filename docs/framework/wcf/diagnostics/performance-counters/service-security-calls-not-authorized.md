@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service: Security Calls Not Authorized"
 title: "Service: Security Calls Not Authorized"
 ms.date: "03/30/2017"
 ms.assetid: 3024b20a-5250-4bd1-a38c-c6d79f89610b

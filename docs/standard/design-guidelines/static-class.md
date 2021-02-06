@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Static Class Design"
 title: "Static Class Design"
 ms.date: "10/22/2008"
 helpviewer_keywords:

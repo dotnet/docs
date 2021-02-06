@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extract XML Data Using XPathNavigator"
 title: "Extract XML Data Using XPathNavigator"
 ms.date: "03/30/2017"
 dev_langs: 

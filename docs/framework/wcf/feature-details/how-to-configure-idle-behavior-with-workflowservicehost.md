@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure Idle Behavior with WorkflowServiceHost"
 title: "How to: Configure Idle Behavior with WorkflowServiceHost"
 ms.date: "03/30/2017"
 dev_langs: 

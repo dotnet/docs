@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugController::HasQueuedCallbacks Method"
 title: "ICorDebugController::HasQueuedCallbacks Method"
 ms.date: "03/30/2017"
 api_name: 

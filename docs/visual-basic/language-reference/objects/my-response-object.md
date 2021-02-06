@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: My.Response Object"
 title: "My.Response Object"
 ms.date: 07/20/2015
 f1_keywords: 

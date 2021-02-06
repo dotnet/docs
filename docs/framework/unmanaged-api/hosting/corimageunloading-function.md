@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CorImageUnloading Function"
 title: "_CorImageUnloading Function"
 ms.date: "03/30/2017"
 api_name: 

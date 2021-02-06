@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionEnter3 Function"
 title: "FunctionEnter3 Function"
 ms.date: "03/30/2017"
 api_name: 

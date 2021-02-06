@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetFunctionFromToken Method"
 title: "ICorProfilerInfo::GetFunctionFromToken Method"
 ms.date: "03/30/2017"
 api_name: 

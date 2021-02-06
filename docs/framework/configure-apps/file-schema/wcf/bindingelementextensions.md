@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <bindingElementExtensions>"
 title: "<bindingElementExtensions>"
 ms.date: "03/30/2017"
 ms.assetid: bb597fc0-c947-451c-afda-bf23d42f4f4d

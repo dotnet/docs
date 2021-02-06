@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::RemotingClientInvocationFinished Method"
 title: "ICorProfilerCallback::RemotingClientInvocationFinished Method"
 ms.date: "03/30/2017"
 api_name: 

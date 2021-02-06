@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugILFrame4::GetLocalVariableEx Method"
 title: "ICorDebugILFrame4::GetLocalVariableEx Method"
 ms.date: "03/30/2017"
 dev_langs: 

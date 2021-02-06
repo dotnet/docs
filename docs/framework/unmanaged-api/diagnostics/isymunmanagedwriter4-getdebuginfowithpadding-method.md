@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter4::GetDebugInfoWithPadding Method"
 title: "ISymUnmanagedWriter4::GetDebugInfoWithPadding Method"
 ms.date: "03/30/2017"
 ms.assetid: 881e20ca-8131-4bd0-ba41-c2d6391b0fe2

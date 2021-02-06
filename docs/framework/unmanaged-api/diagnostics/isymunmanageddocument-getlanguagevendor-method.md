@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedDocument::GetLanguageVendor Method"
 title: "ISymUnmanagedDocument::GetLanguageVendor Method"
 ms.date: "03/30/2017"
 api_name: 

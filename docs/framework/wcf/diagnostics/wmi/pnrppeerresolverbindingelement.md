@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PnrpPeerResolverBindingElement"
 title: "PnrpPeerResolverBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 050f24bf-dc23-4181-ad1e-a4cce1dc89fb

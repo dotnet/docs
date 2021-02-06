@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42319: XML comment exception must have a 'cref' attribute"
 title: "XML comment exception must have a 'cref' attribute"
 ms.date: 07/20/2015
 f1_keywords:

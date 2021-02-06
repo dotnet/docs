@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4210 - SqlExceptionCaught"
 title: "4210 - SqlExceptionCaught"
 ms.date: "03/30/2017"
 ms.assetid: f0ce8af3-eb4c-48c8-b3d9-dd2f94b5574b

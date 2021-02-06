@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Token"
 title: "Custom Token"
 ms.date: "03/30/2017"
 ms.assetid: e7fd8b38-c370-454f-ba3e-19759019f03d

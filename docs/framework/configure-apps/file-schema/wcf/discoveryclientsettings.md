@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <discoveryClientSettings>"
 title: "<discoveryClientSettings>"
 ms.date: "03/30/2017"
 ms.assetid: 02e1b823-a8bb-4074-90d5-8599f71e8f9d

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Introduction to Extensibility"
 title: "Introduction to Extensibility"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

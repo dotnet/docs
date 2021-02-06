@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cache Policy Interaction—Maximum Age and Maximum Staleness"
 title: "Cache Policy Interaction—Maximum Age and Maximum Staleness"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Use foreach to remove items in a BlockingCollection"
 title: "Use foreach to remove items in a BlockingCollection"
 ms.date: 05/04/2020
 dev_langs:

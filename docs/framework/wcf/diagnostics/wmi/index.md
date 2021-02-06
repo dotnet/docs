@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Windows Management Instrumentation for Diagnostics"
 title: "Using Windows Management Instrumentation for Diagnostics"
 ms.date: "03/30/2017"
 ms.assetid: fe48738d-e31b-454d-b5ec-24c85c6bf79a

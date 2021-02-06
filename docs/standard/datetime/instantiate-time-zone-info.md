@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Instantiate a TimeZoneInfo object"
 title: "How to: Instantiate a TimeZoneInfo object"
 ms.date: "04/10/2017"
 dev_langs: 

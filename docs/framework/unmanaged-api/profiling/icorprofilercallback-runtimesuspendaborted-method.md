@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::RuntimeSuspendAborted Method"
 title: "ICorProfilerCallback::RuntimeSuspendAborted Method"
 ms.date: "03/30/2017"
 api_name: 

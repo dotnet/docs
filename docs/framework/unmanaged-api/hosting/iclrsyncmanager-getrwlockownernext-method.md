@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRSyncManager::GetRWLockOwnerNext Method"
 title: "ICLRSyncManager::GetRWLockOwnerNext Method"
 ms.date: "03/30/2017"
 api_name: 

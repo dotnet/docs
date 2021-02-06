@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40035: <proceduresignature1> is not CLS-compliant because it overloads <proceduresignature2> which differs from it only by array of array parameter types or by the rank of the array parameter types"
 title: "<proceduresignature1> is not CLS-compliant because it overloads <proceduresignature2> which differs from it only by array of array parameter types or by the rank of the array parameter types"
 ms.date: 07/20/2015
 f1_keywords:

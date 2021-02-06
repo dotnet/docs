@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing User Data (Visual Basic)"
 title: "Accessing User Data"
 ms.date: 07/20/2015
 helpviewer_keywords: 

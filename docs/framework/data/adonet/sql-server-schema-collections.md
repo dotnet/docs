@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Server Schema Collections"
 title: "SQL Server Schema Collections"
 ms.date: "03/30/2017"
 ms.assetid: c6403cc3-d78b-4f85-bab1-ada7a3446ec5

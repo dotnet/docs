@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: #Disable and #Enable directives (Visual Basic)"
 title: Enable and Disable directives
 ms.date: 01/28/2021
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify a Service Binding in Code"
 title: "How to: Specify a Service Binding in Code"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Core Communications: Internal Duplex Transport Channels"
 title: "Core Communications: Internal Duplex Transport Channels"
 ms.date: "03/30/2017"
 ms.assetid: e1004536-afe0-4e06-b3ed-b4ee08bb0189

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <activityScheduledQueries>"
 title: "<activityScheduledQueries>"
 ms.date: "03/30/2017"
 ms.topic: "reference"

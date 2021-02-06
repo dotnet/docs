@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider2 Interface"
 title: "ICorDebugSymbolProvider2 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 1c9c3d92-f0de-4d4d-87f1-0c702a4808af

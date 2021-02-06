@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback2::ExceptionUnwind Method"
 title: "ICorDebugManagedCallback2::ExceptionUnwind Method"
 ms.date: "03/30/2017"
 api_name: 

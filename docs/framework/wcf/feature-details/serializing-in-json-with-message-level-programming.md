@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Serializing in Json with Message Level Programming"
 title: "Serializing in Json with Message Level Programming"
 ms.date: "03/30/2017"
 ms.assetid: 5f940ba2-57ee-4c49-a779-957c5e7e71fa

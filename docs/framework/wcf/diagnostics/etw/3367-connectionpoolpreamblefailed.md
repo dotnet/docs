@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3367 - ConnectionPoolPreambleFailed"
 title: "3367 - ConnectionPoolPreambleFailed"
 ms.date: "03/30/2017"
 ms.assetid: a8ce3088-b621-4c84-a4d7-826afc33537f

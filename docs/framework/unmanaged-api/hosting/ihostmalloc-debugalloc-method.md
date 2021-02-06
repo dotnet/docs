@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostMAlloc::DebugAlloc Method"
 title: "IHostMAlloc::DebugAlloc Method"
 ms.date: "03/30/2017"
 api_name: 

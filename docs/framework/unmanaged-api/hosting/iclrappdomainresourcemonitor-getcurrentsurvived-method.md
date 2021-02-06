@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRAppDomainResourceMonitor::GetCurrentSurvived Method"
 title: "ICLRAppDomainResourceMonitor::GetCurrentSurvived Method"
 ms.date: "03/30/2017"
 api_name: 

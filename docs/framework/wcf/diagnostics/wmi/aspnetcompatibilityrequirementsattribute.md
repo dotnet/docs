@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AspNetCompatibilityRequirementsAttribute"
 title: "AspNetCompatibilityRequirementsAttribute"
 ms.date: "03/30/2017"
 ms.assetid: 00908a39-a21b-4029-bbb9-33e5a6ed25a7

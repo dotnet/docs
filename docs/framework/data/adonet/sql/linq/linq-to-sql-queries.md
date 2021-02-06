@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LINQ to SQL Queries"
 title: "LINQ to SQL Queries"
 ms.date: "03/30/2017"
 ms.assetid: f4897aaa-7f44-4c20-a471-b948c2971aae

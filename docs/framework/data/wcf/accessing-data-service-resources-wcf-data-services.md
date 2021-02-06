@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing Data Service Resources (WCF Data Services)"
 title: "Accessing Data Service Resources (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

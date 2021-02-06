@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlClient Support for LocalDB"
 title: "SqlClient Support for LocalDB"
 ms.date: "03/30/2017"
 ms.assetid: cf796898-5575-46f2-ae6e-21e5aa8c4123

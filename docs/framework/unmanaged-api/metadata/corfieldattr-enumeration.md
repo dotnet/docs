@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorFieldAttr Enumeration"
 title: "CorFieldAttr Enumeration"
 ms.date: "03/30/2017"
 api_name: 

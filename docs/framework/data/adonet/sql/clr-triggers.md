@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLR triggers"
 title: "CLR Triggers"
 ms.date: "03/30/2017"
 ms.assetid: defe379c-30c7-487f-9abd-9c5e12ff49be

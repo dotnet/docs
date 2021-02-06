@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Svcutil.exe to Validate Compiled Service Code"
 title: "How to: Use Svcutil.exe to Validate Compiled Service Code"
 ms.date: "03/30/2017"
 ms.assetid: d0d820fb-41c2-45b8-8f22-0fa5aeebbbaa

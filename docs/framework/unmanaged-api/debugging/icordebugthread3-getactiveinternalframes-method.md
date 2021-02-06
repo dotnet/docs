@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread3::GetActiveInternalFrames Method"
 title: "ICorDebugThread3::GetActiveInternalFrames Method"
 ms.date: "03/30/2017"
 api_name: 

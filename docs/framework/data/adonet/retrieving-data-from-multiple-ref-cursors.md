@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Retrieving Data from Multiple REF CURSORs Using an OracleDataReader"
 title: "Retrieving Data from Multiple REF CURSORs Using an OracleDataReader"
 ms.date: "03/30/2017"
 dev_langs:

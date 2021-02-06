@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Trace and Debug Settings Schema"
 title: "Trace and Debug Settings Schema"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

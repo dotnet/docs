@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User Defined Functions and Variables"
 title: "User Defined Functions and Variables"
 ms.date: "03/30/2017"
 dev_langs: 

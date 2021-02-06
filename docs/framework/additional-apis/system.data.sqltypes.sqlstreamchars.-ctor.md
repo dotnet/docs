@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlStreamChars Constructor"
 title: SqlStreamChars Constructor (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein

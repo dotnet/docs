@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetPublicKeyToken Method"
 title: "GetPublicKeyToken Method"
 ms.date: "03/30/2017"
 api_name: 

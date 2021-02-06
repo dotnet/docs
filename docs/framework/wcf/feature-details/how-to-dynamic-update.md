@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How To: Dynamic Update"
 title: "How To: Dynamic Update"
 ms.date: "03/30/2017"
 ms.assetid: 9b8f6e0d-edab-4a7e-86e3-8c66bebc64bb

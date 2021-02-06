@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerModuleEnum::Skip Method"
 title: "ICorProfilerModuleEnum::Skip Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -23,7 +23,7 @@ The syntax for configuring an option for *all* rules is as follows:
 
 ### Category of rules
 
-The syntax for configuring an option for a *category* of rules (such as Naming, Design, or Performance) is as follows:
+The syntax for configuring an option for a [*category* of rules](categories.md) is as follows:
 
 |Syntax|Example|
 |-|-|

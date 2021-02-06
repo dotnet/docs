@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess6::ProcessStateChanged Method"
 title: "ICorDebugProcess6::ProcessStateChanged Method"
 ms.date: "03/30/2017"
 ms.assetid: fb6d30d9-54f3-462b-8ebf-ce0440791ad5

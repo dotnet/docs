@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Editing XML Schemas"
 title: "Editing XML Schemas"
 ms.date: "03/30/2017"
 dev_langs:

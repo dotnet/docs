@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport2::GetVersionString Method"
 title: "IMetaDataImport2::GetVersionString Method"
 ms.date: "03/30/2017"
 api_name: 

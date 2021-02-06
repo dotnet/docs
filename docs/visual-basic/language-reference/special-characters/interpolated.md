@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: $ (Visual Basic Reference)"
 title: "$"
 ms.date: 10/31/2017
 ---

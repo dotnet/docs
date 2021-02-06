@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Memory- and span-related types"
 title: "Memory and spans"
 ms.date: "10/03/2018"
 helpviewer_keywords:

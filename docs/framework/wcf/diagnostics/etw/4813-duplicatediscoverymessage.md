@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4813 - DuplicateDiscoveryMessage"
 title: "4813 - DuplicateDiscoveryMessage"
 ms.date: "03/30/2017"
 ms.assetid: c49417d1-1f21-4a85-88a5-cbfe108ac8a1

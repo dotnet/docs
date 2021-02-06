@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorPublishProcess::GetDisplayName Method"
 title: "ICorPublishProcess::GetDisplayName Method"
 ms.date: "03/30/2017"
 api_name: 

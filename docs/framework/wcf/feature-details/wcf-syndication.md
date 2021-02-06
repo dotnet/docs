@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCF Syndication"
 title: "WCF Syndication"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

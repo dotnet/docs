@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing DataSet Schema Information as XSD"
 title: "Writing DataSet Schema Information as XSD"
 ms.date: "03/30/2017"
 dev_langs: 

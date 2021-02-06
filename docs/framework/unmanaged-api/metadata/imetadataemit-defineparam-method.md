@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::DefineParam Method"
 title: "IMetaDataEmit::DefineParam Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugCode4 Interface"
 title: "ICorDebugCode4 Interface"
 ms.date: "03/30/2017"
 api_name: 

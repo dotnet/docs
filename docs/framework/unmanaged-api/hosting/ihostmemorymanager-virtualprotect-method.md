@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostMemoryManager::VirtualProtect Method"
 title: "IHostMemoryManager::VirtualProtect Method"
 ms.date: "03/30/2017"
 api_name: 

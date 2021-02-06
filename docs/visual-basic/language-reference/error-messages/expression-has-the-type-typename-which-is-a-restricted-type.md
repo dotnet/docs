@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31393: Expression has the type '<typename>' which is a restricted type and cannot be used to access members inherited from 'Object' or 'ValueType"
 title: "Expression has the type '<typename>' which is a restricted type and cannot be used to access members inherited from 'Object' or 'ValueType'"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3353 - TcpConnectionResetError"
 title: "3353 - TcpConnectionResetError"
 ms.date: "03/30/2017"
 ms.assetid: 19df26fe-1088-4969-b137-b6f25740b468

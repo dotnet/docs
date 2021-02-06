@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Forms Application Basics (Visual Basic)"
 title: "Windows Forms Application Basics"
 ms.date: 07/20/2015
 helpviewer_keywords:

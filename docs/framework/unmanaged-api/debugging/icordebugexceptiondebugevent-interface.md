@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugExceptionDebugEvent Interface"
 title: "ICorDebugExceptionDebugEvent Interface"
 ms.date: "03/30/2017"
 ms.assetid: f9ba60d8-b54d-417e-bb3e-fde4b41ca44c

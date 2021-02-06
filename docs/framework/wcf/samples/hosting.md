@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hosting"
 title: "WCF hosting samples"
 ms.date: "03/30/2017"
 ms.assetid: 8a6ec5d4-d191-49cc-bb0f-a07639dc60d4

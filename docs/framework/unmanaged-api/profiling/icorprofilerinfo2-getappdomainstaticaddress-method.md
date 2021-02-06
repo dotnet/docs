@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo2::GetAppDomainStaticAddress Method"
 title: "ICorProfilerInfo2::GetAppDomainStaticAddress Method"
 ms.date: "03/30/2017"
 api_name: 

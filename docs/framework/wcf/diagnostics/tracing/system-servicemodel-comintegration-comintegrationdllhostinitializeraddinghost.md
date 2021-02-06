@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerAddingHost"
 title: "System.ServiceModel.ComIntegration.ComIntegrationDllHostInitializerAddingHost"
 ms.date: "03/30/2017"
 ms.assetid: 404bed8d-44d9-419f-972b-2809fec2a0f1

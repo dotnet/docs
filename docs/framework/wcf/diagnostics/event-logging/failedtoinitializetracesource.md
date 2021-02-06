@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FailedToInitializeTraceSource"
 title: "FailedToInitializeTraceSource"
 ms.date: "03/30/2017"
 ms.assetid: ce6fea55-292c-4fb9-908e-3713fcd4cf8f

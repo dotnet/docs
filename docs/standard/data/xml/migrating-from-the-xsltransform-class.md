@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Migrating From the XslTransform Class"
 title: "Migrating From the XslTransform Class"
 ms.date: "03/30/2017"
 dev_langs:

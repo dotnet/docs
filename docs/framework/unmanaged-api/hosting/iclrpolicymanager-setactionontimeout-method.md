@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRPolicyManager::SetActionOnTimeout Method"
 title: "ICLRPolicyManager::SetActionOnTimeout Method"
 ms.date: "03/30/2017"
 api_name: 

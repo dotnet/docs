@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pooling"
 title: "Pooling"
 ms.date: "03/30/2017"
 ms.assetid: 688dfb30-b79a-4cad-a687-8302f8a9ad6a

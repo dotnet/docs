@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Single-Table Queries (LINQ to DataSet)"
 title: "Single-Table Queries (LINQ to DataSet)"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo3::RequestProfilerDetach Method"
 title: "ICorProfilerInfo3::RequestProfilerDetach Method"
 ms.date: "03/30/2017"
 api_name: 

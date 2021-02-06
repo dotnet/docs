@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Granting Row-Level Permissions in SQL Server"
 title: "Granting Row-Level Permissions in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: a55aaa12-34ab-41cd-9dec-fd255b29258c

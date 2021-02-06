@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugILFrame::GetStackValue Method"
 title: "ICorDebugILFrame::GetStackValue Method"
 ms.date: "03/30/2017"
 api_name: 

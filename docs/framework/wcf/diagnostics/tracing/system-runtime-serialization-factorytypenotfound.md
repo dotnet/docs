@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.Runtime.Serialization.FactoryTypeNotFound"
 title: "System.Runtime.Serialization.FactoryTypeNotFound"
 ms.date: "03/30/2017"
 ms.assetid: e0ab341a-4000-4076-87cc-ffe332266658

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MustUnderstandBehavior"
 title: "MustUnderstandBehavior"
 ms.date: "03/30/2017"
 ms.assetid: 911ed04a-c4b8-4c72-a5c3-fc7b4e3b4348

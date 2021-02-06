@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performing Catalog Operations"
 title: "Performing Catalog Operations"
 ms.date: "03/30/2017"
 dev_langs: 

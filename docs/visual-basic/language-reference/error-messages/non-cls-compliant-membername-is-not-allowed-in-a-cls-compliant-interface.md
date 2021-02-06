@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40033: Non-CLS-compliant <membername> is not allowed in a CLS-compliant interface"
 title: "Non-CLS-compliant <membername> is not allowed in a CLS-compliant interface"
 ms.date: 07/20/2015
 f1_keywords:

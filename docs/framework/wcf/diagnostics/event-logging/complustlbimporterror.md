@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ComPlusTLBImportError"
 title: "ComPlusTLBImportError"
 ms.date: "03/30/2017"
 ms.assetid: fe087e97-efbb-4006-8465-ec2ff7860c7b

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugBreakpoint::IsActive Method"
 title: "ICorDebugBreakpoint::IsActive Method"
 ms.date: "03/30/2017"
 api_name: 

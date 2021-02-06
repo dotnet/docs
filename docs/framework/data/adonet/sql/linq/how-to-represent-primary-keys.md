@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Represent Primary Keys"
 title: "How to: Represent Primary Keys"
 ms.date: "03/30/2017"
 ms.assetid: 63c65289-6539-42b2-8493-891c232018fa

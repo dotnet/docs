@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::EnumPermissionSets Method"
 title: "IMetaDataImport::EnumPermissionSets Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedScope::GetEndOffset Method"
 title: "ISymUnmanagedScope::GetEndOffset Method"
 ms.date: "03/30/2017"
 api_name: 

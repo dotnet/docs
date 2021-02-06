@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Method-Based Query Syntax Examples: Element Operators"
 title: "Method-Based Query Syntax Examples: Element Operators"
 ms.date: "03/30/2017"
 dev_langs: 

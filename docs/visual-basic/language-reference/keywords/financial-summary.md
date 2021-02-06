@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Financial Summary (Visual Basic)"
 title: "Financial Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 

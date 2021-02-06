@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40031: Name <membername> is not CLS-compliant"
 title: "Name <membername> is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords:

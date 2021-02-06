@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service Operations (WCF Data Services)"
 title: "Service Operations (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:

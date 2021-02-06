@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OVERLAPS (Entity SQL)"
 title: "OVERLAPS (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 41743e89-79cb-4d7b-8a27-355b45024b61

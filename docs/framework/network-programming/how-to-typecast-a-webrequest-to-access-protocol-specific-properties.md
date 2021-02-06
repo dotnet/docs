@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Typecast a WebRequest to Access Protocol Specific Properties"
 title: "How to: Typecast a WebRequest to Access Protocol Specific Properties"
 ms.date: "03/30/2017"
 dev_langs: 

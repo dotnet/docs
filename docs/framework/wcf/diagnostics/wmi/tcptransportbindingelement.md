@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TcpTransportBindingElement"
 title: "TcpTransportBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 33bbc1e5-44e4-4ee3-b7b5-801dc78956e4

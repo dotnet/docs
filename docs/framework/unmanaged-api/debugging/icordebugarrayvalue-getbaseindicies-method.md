@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugArrayValue::GetBaseIndicies Method"
 title: "ICorDebugArrayValue::GetBaseIndicies Method"
 ms.date: "03/30/2017"
 api_name: 

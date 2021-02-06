@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add and Take Items Individually from a BlockingCollection"
 title: "How to: Add and Take Items Individually from a BlockingCollection"
 ms.date: "03/30/2017"
 dev_langs: 

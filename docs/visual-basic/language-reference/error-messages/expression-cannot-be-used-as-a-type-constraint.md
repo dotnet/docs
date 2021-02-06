@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32061: '<expression>' cannot be used as a type constraint"
 title: "'<expression>' cannot be used as a type constraint"
 ms.date: 07/20/2015
 f1_keywords:

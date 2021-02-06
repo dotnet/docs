@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 402 - StartSignpostEvent"
 title: "402 - StartSignpostEvent"
 ms.date: "03/30/2017"
 ms.assetid: 5e5be126-765d-4ac9-88e7-008e9ef4f0e5

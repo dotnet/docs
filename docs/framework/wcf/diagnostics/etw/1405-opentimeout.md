@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1405 - OpenTimeout"
 title: "1405 - OpenTimeout"
 ms.date: "03/30/2017"
 ms.assetid: 45470cf9-b84c-4e5e-86e2-2eb7722cbc1a

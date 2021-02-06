@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <probing> Element"
 title: "<probing> Element"
 ms.date: "03/30/2017"
 f1_keywords: 

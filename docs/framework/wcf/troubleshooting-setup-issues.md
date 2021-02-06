@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Troubleshoot setup issues"
 title: "Troubleshooting Setup Issues"
 ms.date: "03/30/2017"
 ms.assetid: 1644f885-c408-4d5f-a5c7-a1a907bc8acd

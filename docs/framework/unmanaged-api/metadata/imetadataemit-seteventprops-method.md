@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::SetEventProps Method"
 title: "IMetaDataEmit::SetEventProps Method"
 ms.date: "03/30/2017"
 api_name: 

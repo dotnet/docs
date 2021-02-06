@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binding"
 title: "Binding2"
 ms.date: "03/30/2017"
 ms.assetid: 09511c6c-5749-4bb0-874e-0f0be36bfe04

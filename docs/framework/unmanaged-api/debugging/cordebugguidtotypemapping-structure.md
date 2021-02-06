@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugGuidToTypeMapping Structure"
 title: "CorDebugGuidToTypeMapping Structure"
 ms.date: "03/30/2017"
 dev_langs: 

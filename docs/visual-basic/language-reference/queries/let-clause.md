@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Let Clause (Visual Basic)"
 title: "Let Clause"
 ms.date: 07/20/2015
 f1_keywords: 

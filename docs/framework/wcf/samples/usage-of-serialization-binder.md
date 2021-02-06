@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Usage of Serialization Binder"
 title: "Usage of Serialization Binder"
 ms.date: "03/30/2017"
 ms.assetid: ab46c087-200c-45bf-9c95-5a6cda6e8b98

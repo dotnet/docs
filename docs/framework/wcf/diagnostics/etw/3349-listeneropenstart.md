@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3349 - ListenerOpenStart"
 title: "3349 - ListenerOpenStart"
 ms.date: "03/30/2017"
 ms.assetid: 9625f9bc-45c0-4a0d-8f97-34d1672f556c

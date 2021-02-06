@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugFrame::GetStackRange Method"
 title: "ICorDebugFrame::GetStackRange Method"
 ms.date: "03/30/2017"
 api_name: 

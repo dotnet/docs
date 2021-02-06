@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugDataTarget2::CreateVirtualUnwinder Method"
 title: "ICorDebugDataTarget2::CreateVirtualUnwinder Method"
 ms.date: "03/30/2017"
 ms.assetid: 354c8b4c-7d23-45c6-a7d7-3be4c2a5b772

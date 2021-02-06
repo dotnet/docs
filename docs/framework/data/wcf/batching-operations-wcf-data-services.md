@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Batching Operations (WCF Data Services)"
 title: "Batching Operations (WCF Data Services)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

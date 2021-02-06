@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Diagnostics Symbol Store Structures"
 title: "Diagnostics Symbol Store Structures"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

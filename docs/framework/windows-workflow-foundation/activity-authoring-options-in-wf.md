@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Activity Authoring Options in WF"
 title: "Activity Authoring Options in WF"
 ms.date: "03/30/2017"
 ms.assetid: b9061f5f-12c3-47f0-adbe-1330e2714c94

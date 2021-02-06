@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Option Explicit Statement (Visual Basic)"
 title: "Option Explicit Statement"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <assemblyBinding> element for <configuration>"
 title: "<assemblyBinding> element for <configuration>"
 ms.date: "03/30/2017"
 f1_keywords: 

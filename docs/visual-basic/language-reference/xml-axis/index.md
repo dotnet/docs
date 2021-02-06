@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML Axis Properties (Visual Basic)"
 title: "XML Axis Properties"
 ms.date: 07/20/2015
 helpviewer_keywords: 

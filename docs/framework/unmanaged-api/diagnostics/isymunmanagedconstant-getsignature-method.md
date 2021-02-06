@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedConstant::GetSignature Method"
 title: "ISymUnmanagedConstant::GetSignature Method"
 ms.date: "03/30/2017"
 api_name: 

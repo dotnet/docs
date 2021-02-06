@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <security> element of <ws2007FederationHttpBinding>"
 title: "<security> element of <ws2007FederationHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84

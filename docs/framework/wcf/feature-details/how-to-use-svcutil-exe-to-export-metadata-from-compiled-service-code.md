@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Svcutil.exe to Export Metadata from Compiled Service Code"
 title: "How to: Use Svcutil.exe to Export Metadata from Compiled Service Code"
 ms.date: "03/30/2017"
 ms.assetid: 95d0aed3-16a2-4398-89bb-39418eeb7355

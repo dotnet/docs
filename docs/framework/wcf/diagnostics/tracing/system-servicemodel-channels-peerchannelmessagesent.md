@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerChannelMessageSent"
 title: "System.ServiceModel.Channels.PeerChannelMessageSent"
 ms.date: "03/30/2017"
 ms.assetid: 7aa50d9d-37ee-454c-8746-e3c3857edd07

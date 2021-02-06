@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30144: Unable to link to resource file '<filename>': <error message>"
 title: "Unable to link to resource file '<filename>': <error message>"
 ms.date: 07/20/2015
 f1_keywords:

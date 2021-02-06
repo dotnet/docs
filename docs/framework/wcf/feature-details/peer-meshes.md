@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Peer Meshes"
 title: "Peer Meshes"
 ms.date: "03/30/2017"
 ms.assetid: d93e312e-ac04-40f8-baea-5da1cacb546e

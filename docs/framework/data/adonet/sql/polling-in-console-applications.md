@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Polling in Console Applications"
 title: "Polling in Console Applications"
 ms.date: "03/30/2017"
 dev_langs: 

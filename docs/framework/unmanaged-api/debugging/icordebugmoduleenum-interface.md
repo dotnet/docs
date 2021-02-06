@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModuleEnum Interface"
 title: "ICorDebugModuleEnum Interface"
 ms.date: "03/30/2017"
 api_name: 

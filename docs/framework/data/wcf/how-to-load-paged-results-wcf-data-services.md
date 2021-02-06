@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Load Paged Results (WCF Data Services)"
 title: "How to: Load Paged Results (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 

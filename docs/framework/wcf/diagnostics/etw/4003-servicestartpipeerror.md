@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4003 - ServiceStartPipeError"
 title: "4003 - ServiceStartPipeError"
 ms.date: "03/30/2017"
 ms.assetid: 6001510b-49b1-40b3-9173-de1f0031a8e7

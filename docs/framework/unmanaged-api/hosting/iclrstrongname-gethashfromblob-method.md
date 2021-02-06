@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::GetHashFromBlob Method"
 title: "ICLRStrongName::GetHashFromBlob Method"
 ms.date: "03/30/2017"
 api_name: 

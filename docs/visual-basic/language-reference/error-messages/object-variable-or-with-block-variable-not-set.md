@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object variable or With block variable not set"
 title: "Object variable or With block variable not set"
 ms.date: 07/20/2015
 f1_keywords:

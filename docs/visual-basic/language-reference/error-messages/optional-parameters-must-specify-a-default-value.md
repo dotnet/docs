@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30812: Optional parameters must specify a default value"
 title: "Optional parameters must specify a default value"
 ms.date: 07/20/2015
 f1_keywords:

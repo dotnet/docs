@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Security Certificate"
 title: "Message Security Certificate"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

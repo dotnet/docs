@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MessageLoggingOff"
 title: "MessageLoggingOff"
 ms.date: "03/30/2017"
 ms.assetid: 98cb139d-cb10-4d8c-9087-3dc3c6f23521

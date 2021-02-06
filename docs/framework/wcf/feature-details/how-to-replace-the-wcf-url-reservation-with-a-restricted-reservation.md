@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Replace the WCF URL Reservation with a Restricted Reservation"
 title: "How to: Replace the WCF URL Reservation with a Restricted Reservation"
 ms.date: "03/30/2017"
 ms.assetid: 2754d223-79fc-4e2b-a6ce-989889f2abfa

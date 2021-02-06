@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.IdentityModel.Selectors.StoreSignatureNotValid"
 title: "System.IdentityModel.Selectors.StoreSignatureNotValid"
 ms.date: "03/30/2017"
 ms.assetid: 9087bf09-cb15-41ec-bd7a-6338789953d0

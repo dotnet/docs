@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <add> of <knownCertificates>"
 title: "<add> of <knownCertificates>"
 ms.date: "03/30/2017"
 ms.assetid: 128aaabe-3f1a-4c3b-b59f-898d0f02910f

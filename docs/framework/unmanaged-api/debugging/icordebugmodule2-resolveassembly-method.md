@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModule2::ResolveAssembly Method"
 title: "ICorDebugModule2::ResolveAssembly Method"
 ms.date: "03/30/2017"
 api_name:

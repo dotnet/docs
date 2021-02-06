@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugThread2::InterceptCurrentException Method"
 title: "ICorDebugThread2::InterceptCurrentException Method"
 ms.date: "03/30/2017"
 api_name: 

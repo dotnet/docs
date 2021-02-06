@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42104: Variable '<variablename>' is used before it has been assigned a value"
 title: "Variable '<variablename>' is used before it has been assigned a value"
 ms.date: 07/20/2015
 f1_keywords:

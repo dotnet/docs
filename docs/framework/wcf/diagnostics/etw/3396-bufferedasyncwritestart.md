@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3396 - BufferedAsyncWriteStart"
 title: "3396 - BufferedAsyncWriteStart"
 ms.date: "03/30/2017"
 ms.assetid: f8baff8c-0a47-47a6-9997-d3b178176bb9

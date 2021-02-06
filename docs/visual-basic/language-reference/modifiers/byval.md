@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ByVal (Visual Basic)"
 title: "ByVal"
 ms.date: 07/20/2015
 f1_keywords: 

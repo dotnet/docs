@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport2 Interface"
 title: "IMetaDataImport2 Interface"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30043: '<keyword>' is valid only within an instance method"
 title: "'<keyword>' is valid only within an instance method"
 ms.date: 07/20/2015
 f1_keywords:

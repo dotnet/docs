@@ -63,7 +63,7 @@ Editors:
 
 ## Version
 
-This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release.
+This guide has been written to cover **Dapr 1.0** version. .NET Core samples are based on **.NET Core 3.1**.
 
 ## Who should use this guide
 

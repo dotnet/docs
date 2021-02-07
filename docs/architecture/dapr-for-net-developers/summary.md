@@ -27,7 +27,7 @@ As the plane taxis to the gate, let's take a minute to review some important con
 
 **Figure 11-2**. Dapr building block integration.
 
-- **Sidecars** - Dapr runs alongside your application in a sidecar architecture, either as a separate process of a container. Your application communicates with the Dapr APIs over HTTP and gRPC. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. Figure 12-3 shows a sidecar architecture.
+- **Sidecars** - Dapr runs alongside your application in a sidecar architecture, either as a separate process of a container. Your application communicates with the Dapr APIs over HTTP and gRPC. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. Figure 11-3 shows a sidecar architecture.
 
 ![Sidecar architecture](./media/dapr-at-20000-feet/sidecar-generic.png)
 
@@ -35,22 +35,22 @@ As the plane taxis to the gate, let's take a minute to review some important con
 
 - **Hosting environments** Dapr has cross-platform support and can run in multiple environments. At the time of this writing, the environments include a local self-hosted mode and Kubernetes.
 
-- **eShopOnDapr** - This book includes an accompanying reference application entitled [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). Using a popular ecommerce application domain, the reference application demonstrates the usage of each building block. It's an evolution of widely popular [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), released several years ago.
+- **eShopOnDapr** - This book includes an accompanying reference application entitled [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). Using a popular ecommerce application domain, the reference application demonstrates the usage of each building block. It's an evolution of the widely popular [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), released several years ago.
 
 ## The Road Ahead
 
-Looking forward, Dapr has the potential to have a profound impact on distributed an application development. What can you expect from the Dapr team and its open-source contributors?
+Looking forward, Dapr has the potential to have a profound impact on distributed application development. What can you expect from the Dapr team and its open-source contributors?
 
 At the time of writing, here's a list of proposed enhancements for Dapr:
 
 - Feature enhancements to existing building blocks:
-  -	Query capabilities in state management enabling you to retrieve multiple values.
+  - Query capabilities in state management enabling you to retrieve multiple values.
   - Topic filtering in pub/sub enabling you to filter topics based on their content.
   - An application tracing API in observability that provides tracing in the application directly without having to bind to specific libraries.
   - Binding and pub/sub support for actors providing event driven capabilities to the actor programming model. Bound components will trigger events and messages invoke methods in the actor.
 
 - New building blocks:
-  - Configuration API building block for reading and writing configuration data. The block will bind to providers that include Azure Configuration Manager or GCP Configuration Management. 
+  - Configuration API building block for reading and writing configuration data. The block will bind to providers that include Azure Configuration Manager or GCP Configuration Management.
   - Http scale-to-zero autoscale.
   - Leader election building block to provide singleton instances and locking semantic capabilities.
   - Transparent proxying building block for service invocation, enabling you to route messages based on URLs or DNS addresses at the network level.
@@ -80,7 +80,6 @@ At the time of writing, here's a list of proposed enhancements for Dapr:
   - Dapr operational dashboard enhancements that will provide deeper visibility into the operational concerns of managing Dapr applications.
 
 Dapr version 1.0 will provide developers with a compelling toolbox for building distributed applications. As the proposed enhancement list shows, Dapr is under active development with many new capabilities to come. Please stay tuned to the [Dapr site](https://dapr.io/) and [Dapr announcement blog](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/).
-
 
 >[!div class="step-by-step"]
 >[Previous](secrets.md)

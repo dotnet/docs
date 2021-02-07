@@ -35,7 +35,7 @@ As the plane taxis to the gate, let's take a minute to review some important con
 
 - **Hosting environments** Dapr has cross-platform support and can run in multiple environments. At the time of this writing, the environments include a local self-hosted mode and Kubernetes.
 
-- **eShopOnDapr** - This book includes an accompanying reference application entitled [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). Using a popular ecommerce application domain, the reference application demonstrates the usage of each building block. It's an evolution of widely popular [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), released several years ago.  
+- **eShopOnDapr** - This book includes an accompanying reference application entitled [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). Using a popular ecommerce application domain, the reference application demonstrates the usage of each building block. It's an evolution of widely popular [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), released several years ago.
 
 ## The Road Ahead
 

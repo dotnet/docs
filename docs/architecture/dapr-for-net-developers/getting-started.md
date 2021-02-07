@@ -202,7 +202,7 @@ spec:
 
 In the first example, you created a simple .NET console application that ran side-by-side with a Dapr sidecar. Modern distributed applications, however, often consist of many moving parts. They can simultaneously run independent microservices. These modern applications are typically containerized and require container orchestration tools such as Docker Compose or Kubernetes.
 
-In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](service-invocation.md) building block to communicate between services. The solution will consist of a front-end web application that retrieves weather forecasts from a back-end web API. The front-end and back-end will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
+In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](service-invocation.md) building block to communicate between services. The solution will consist of a  web application that retrieves weather forecasts from a  web API. The  and  will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
 
 Make sure you've configured your local environment for Dapr and installed the [.NET Core 3 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/3.1) (instructions are available at the beginning of this chapter).
 
@@ -225,13 +225,13 @@ Additionally, you'll need complete this sample using [Visual Studio 2019](https:
 1. Add a second ASP.NET Core Web Application project to the same solution and call it *DaprBackEnd*. Select **API** as the project type, and clear the checkbox for **Configure for HTTPS**.
 
    > [!NOTE]
-   > A sidecar is designed to use encrypted HTTP to communicate with the application container. It's recommended to deploy Dapr sidecars in the same network namespace as the application. Dapr uses HTTPS for the front-end and provides support for [mTLS](https://docs.dapr.io/concepts/security-concept/#sidecar-to-sidecar-communication) to encrypt calls between services.
+   > A sidecar is designed to use encrypted HTTP to communicate with the application container. It's recommended to deploy Dapr sidecars in the same network namespace as the application. Dapr uses HTTPS for the  and provides support for [mTLS](https://docs.dapr.io/concepts/security-concept/#sidecar-to-sidecar-communication) to encrypt calls between services.
 
-   ![Screenshot of creating the back-end web API](./media/getting-started/multicontainer-createwebapi.png)
+   ![Screenshot of creating the  web API](./media/getting-started/multicontainer-createwebapi.png)
 
 ### Add Dapr service invocation
 
-Now, you'll configure communication between the services using Dapr [service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/). You'll enable the front-end web app to retrieve weather forecasts from the back-end web API. The service invocation building block features many benefits. It includes service discovery, automatic retries, message encryption (using mTLS), and improved observability. You'll use the Dapr .NET SDK to invoke the service invocation API on the Dapr sidecar.
+Now, you'll configure communication between the services using Dapr [service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/). You'll enable the  web app to retrieve weather forecasts from the  web API. The service invocation building block features many benefits. It includes service discovery, automatic retries, message encryption (using mTLS), and improved observability. You'll use the Dapr .NET SDK to invoke the service invocation API on the Dapr sidecar.
 
 1. In Visual Studio, open the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**) and make sure that `DaprFrontEnd` is the default project. From the console, add the `Dapr.AspNetCore` NuGet package to the project:
 
@@ -309,7 +309,7 @@ Now, you'll configure communication between the services using Dapr [service inv
    }
    ```
 
-   You add Dapr capabilities into the front-end web app by injecting the `DaprClient` class into `IndexModel` constructor. In the `OnGet` method, you call the back-end API service with the Dapr service invocation building block. The `OnGet` method is invoked whenever a user visits the home page. You use the `DaprClient.InvokeMethodAsync` method to invoke the `weatherforecast` method of the `daprbackend` service. You'll configure the back-end web API to use `daprbackend` as its application id later on when configuring it to run with Dapr. Finally, the service response is saved in view data.
+   You add Dapr capabilities into the  web app by injecting the `DaprClient` class into `IndexModel` constructor. In the `OnGet` method, you call the  API service with the Dapr service invocation building block. The `OnGet` method is invoked whenever a user visits the home page. You use the `DaprClient.InvokeMethodAsync` method to invoke the `weatherforecast` method of the `daprbackend` service. You'll configure the  web API to use `daprbackend` as its application id later on when configuring it to run with Dapr. Finally, the service response is saved in view data.
 
 1. Replace the contents of the *Index.cshtml* file in the *Pages* folder, with the following code. It displays the weather forecasts stored in the view data to the user:
 

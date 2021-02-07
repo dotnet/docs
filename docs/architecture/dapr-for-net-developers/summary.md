@@ -1,5 +1,4 @@
 ---
-=======
 title: Summary and the Road Ahead
 description: A summary of key Dapr conclusions and a look at the road ahead.
 ms.date: 02/04/2021

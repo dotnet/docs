@@ -339,7 +339,7 @@ A constant key prefix enables the state store to be accessed across multiple Dap
 
 This book includes a reference application entitled `eShopOnDapr`. It's modeled from an earlier Microsoft microservices reference application, `eShopOnContainers`.
 
-The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) architecture used an `IBasketRepository` interface to read and write data for the Basket service. The `RedisBasketRepository` class provided the implementation using Redis as the underlying data store:
+The original [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) architecture used an `IBasketRepository` interface to read and write data for the basket service. The `RedisBasketRepository` class provided the implementation using Redis as the underlying data store:
 
 ```csharp
 public class RedisBasketRepository : IBasketRepository

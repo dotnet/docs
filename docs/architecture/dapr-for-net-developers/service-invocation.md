@@ -240,7 +240,7 @@ Note the steps from the previous figure:
 
 1. The API gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core backend service using HTTP/REST.
 
-1. The API gateway forwards complex requests that involve coordinated calls to multiple backend services to the Web Shopping aggregator service.
+1. The API gateway forwards complex requests that involve coordinated calls to multiple backend services to the web shopping aggregator service.
 
 1. The aggregator service uses gRPC to call core backend services.
 
@@ -331,7 +331,7 @@ GET http://localhost/api/v1/catalog/items?pageSize=20
 
 ### Make aggregated service calls using the .NET SDK
 
-Most calls from the eShop frontend are simple CRUD calls. The API gateway forwards them to a single service for processing. Some scenarios, however, require multiple backend services to work together to complete a request. For these more complex calls, eShop uses the Web Shopping aggregator service to mediate the workflow across multiple services. Figure 6-4 show the processing sequence of adding an item to your shopping basket:
+Most calls from the eShop frontend are simple CRUD calls. The API gateway forwards them to a single service for processing. Some scenarios, however, require multiple backend services to work together to complete a request. For these more complex calls, eShop uses the web shopping aggregator service to mediate the workflow across multiple services. Figure 6-4 show the processing sequence of adding an item to your shopping basket:
 
 ![Update basket sequence diagram](./media/service-invocation/complex-call.png)
 

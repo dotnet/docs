@@ -53,7 +53,7 @@ Because the calls flow through sidecars, Dapr can inject some useful cross-cutti
 - Control what operations clients can do using access control policies.
 - Capture traces and metrics for all calls between services to provide insights and diagnostics.
 
-Any application can invoke a Dapr sidecar by using the native **invoke** API built into Dapr:
+Any application can invoke a Dapr sidecar by using the native **invoke** API built into Dapr. The API can be called with either HTTP or gRPC. Use the following URL to call the HTTP API:
 
 ``` http
 http://localhost:<dapr-port>/v1.0/invoke/<application-id>/method/<method-name>

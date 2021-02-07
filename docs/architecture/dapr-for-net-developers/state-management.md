@@ -426,7 +426,7 @@ apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
   name: eshop-basket-statestore
-  namespace: default
+  namespace: eshop
 spec:
   type: state.redis
   version: v1

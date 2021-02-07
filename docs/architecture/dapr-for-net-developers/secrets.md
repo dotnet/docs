@@ -477,7 +477,7 @@ apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
   name: eshop-secretstore
-  namespace: default
+  namespace: eshop
 spec:
   type: secretstores.local.file
   version: v1
@@ -523,7 +523,7 @@ apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
   name: pubsub
-  namespace: default
+  namespace: eshop
 spec:
   type: pubsub.redis
   version: v1

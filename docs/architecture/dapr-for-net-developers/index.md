@@ -13,7 +13,7 @@ ms.date: 02/07/2021
 
 PUBLISHED BY
 
-Microsoft Developer Division, .NET, and Visual Studio product teams
+Microsoft Developer Division, .NET, and Azure Incubations teams
 
 A division of Microsoft Corporation
 
@@ -21,7 +21,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2020 by Microsoft Corporation
+Copyright &copy; 2021 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

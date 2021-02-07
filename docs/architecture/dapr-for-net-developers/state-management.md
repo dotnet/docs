@@ -1,8 +1,8 @@
 ---
 title: The Dapr state management building block
-description: A description of the state management building-block, its features, benefits, and how to apply it.
+description: A description of the state management building block, its features, benefits, and how to apply it.
 author: sanderm
-ms.date: 01/25/2021
+ms.date: 02/07/2021
 ms.reviewer: robvet
 ---
 
@@ -24,7 +24,7 @@ Tracking state in a distributed application can be challenging. For example:
 - Multiple users may update data at the same time, requiring  conflict resolution.
 - Services must retry any short-lived [transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that  occur while interacting with the data store.
 
-The Dapr state sanagement building block addresses these challenges. It streamlines tracking state without dependencies or a learning curve on third-party storage SDKs.
+The Dapr state management building block addresses these challenges. It streamlines tracking state without dependencies or a learning curve on third-party storage SDKs.
 
 > [!IMPORTANT]
 > Dapr state management offers a [key/value](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview#keyvalue-stores) API. The feature doesn't support relational or graph data storage.
@@ -36,23 +36,23 @@ The application interacts with a Dapr sidecar to store and retrieve key/value da
 The API can be called with either HTTP or gRPC. Use the following URL to call the HTTP API:
 
 ```http
-http://localhost:<dapr-port>/v1.0/state/<state-store-name>/
+http://localhost:<dapr-port>/v1.0/state/<store-name>/
 ```
 
 - `<dapr-port>`: the HTTP port that Dapr listens on.
-- `<state-store-name>`: the name of the state store component to use.
+- `<store-name>`: the name of the state store component to use.
 
 Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr state store component named `statestore`.
 
-![Diagram of storing a key/value pair in a Dapr state store.](media/state-management/howitworks.png)
+![Diagram of storing a key/value pair in a Dapr state store.](media/state-management/state-management-flow.png)
 
 **Figure 5-1**. Storing a key/value pair in a Dapr state store.
 
 Note the steps in the previous figure:
 
 1. The basket service calls the state management API from the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.
-2. The Dapr sidecar determines the state store based on the component configuration file. In this case, it's a Redis cache state store.
-3. The sidecar persists the data to the Redis cache.
+1. The Dapr sidecar determines the state store based on the component configuration file. In this case, it's a Redis cache state store.
+1. The sidecar persists the data to the Redis cache.
 
 Retrieving the stored data is a similar API call. In the example below, a *curl* command retrieves the data by calling the Dapr sidecar API:
 
@@ -101,7 +101,7 @@ Distributed applications must handle the **P** property. As services communicate
 The consistency level for a state operation is specified by attaching a *consistency hint* to the operation. The following *curl* command writes a `Hello=World` key/value pair to a state store using a strong consistency hint:
 
 ```console
-curl -X POST http://localhost:3500/v1.0/state/<store_name> \
+curl -X POST http://localhost:3500/v1.0/state/<store-name> \
   -H "Content-Type: application/json" \
   -d '[
         {
@@ -132,7 +132,7 @@ Dapr can write *multi-item changes* to a data store as a single operation implem
 In the example below, a multi-item operation is sent to the state store in a single transaction. All operations must succeed for the transaction to commit. If one or more of the operations fail, the entire transaction rolls back.
 
 ```console
-curl -X POST http://localhost:3500/v1.0/state/<store_name>/transaction \
+curl -X POST http://localhost:3500/v1.0/state/<store-name>/transaction \
   -H "Content-Type: application/json" \
   -d '{
         "operations": [
@@ -152,7 +152,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name>/transaction \
 For data stores that don't support transactions, multiple keys can still be sent as a single request. The following example shows a **bulk** write operation:
 
 ```console
-curl -X POST http://localhost:3500/v1.0/state/<store_name> \
+curl -X POST http://localhost:3500/v1.0/state/<store-name> \
   -H "Content-Type: application/json" \
   -d '[
         { "key": "Key1", "value": "Value1" },
@@ -162,7 +162,7 @@ curl -X POST http://localhost:3500/v1.0/state/<store_name> \
 
 For bulk operations, Dapr will submit each key/value pair update as a separate request to the data store.
 
-## Using the .NET SDK
+## Using the Dapr .NET SDK
 
 The Dapr .NET SDK provides language-specific support for .NET Core platform. Developers can use the `DaprClient` class introduced in [chapter 3](getting-started.md) to read and write data. The following example shows how to use the `DaprClient.GetStateAsync<TValue>` method to read data from a state store. The method expects the store name, `statestore`, and key, `AMS`, as parameters:
 
@@ -289,7 +289,7 @@ spec:
 
 The Redis state store requires `redisHost` and `redisPassword` metadata to connect to the Redis instance. In the example above, the Redis password (which is an empty string by default) is stored as a plain string. The best practice is to avoid clear-text strings and always use secret references. To learn more about secret management, see [chapter 10](secrets.md).
 
-The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the Actor building block.
+The other metadata field, `actorStateStore`, indicates whether the state store can be consumed by the actors building block.
 
 ### Key prefix strategies
 
@@ -335,7 +335,7 @@ spec:
 
 A constant key prefix enables the state store to be accessed across multiple Dapr applications. What's more, setting the `keyPrefix` to `none` omits the prefix completely.
 
-## Reference architecture: eShopOnDapr
+## Reference application: eShopOnDapr
 
 This book includes a reference application entitled `eShopOnDapr`. It's modeled from an earlier Microsoft microservices reference application, `eShopOnContainers`.
 
@@ -369,7 +369,7 @@ public class RedisBasketRepository : IBasketRepository
 }
 ```
 
-This code uses the third party `StackExchange.Redis` NuGet package. The following steps are required to load the shopping basket for a given customer:
+This code uses the third-party `StackExchange.Redis` NuGet package. The following steps are required to load the shopping basket for a given customer:
 
 1. Inject a `ConnectionMultiplexer` into the constructor. The `ConnectionMultiplexer` is registered with the dependency injection framework in the `Startup.cs` file:
 
@@ -398,16 +398,16 @@ public class DaprBasketRepository : IBasketRepository
 {
     private const string StoreName = "eshop-basket-statestore";
 
-    private readonly DaprClient _dapr;
+    private readonly DaprClient _daprClient;
 
-    public DaprBasketRepository(DaprClient dapr)
+    public DaprBasketRepository(DaprClient daprClient)
     {
-        _dapr = dapr;
+        _daprClient = daprClient ?? throw new ArgumentNullException(nameof(daprClient));;
     }
 
     public async Task<CustomerBasket> GetBasketAsync(string customerId)
     {
-        return await _dapr.GetStateAsync<CustomerBasket>(StoreName, customerId);
+        return await _daprClient.GetStateAsync<CustomerBasket>(StoreName, customerId);
     }
 
     // ...
@@ -451,13 +451,13 @@ The .NET SDK provides language-specific support for .NET Core and ASP.NET Core. 
 In the eShopOnDapr reference application, the benefits to moving to Dapr state management are clear:
 
 1. The new implementation uses fewer lines of code.
-1. It abstracts away the complexity of the third party `StackExchange.Redis` API.
+1. It abstracts away the complexity of the third-party `StackExchange.Redis` API.
 1. Replacing the underlying Redis cache with a different type of data store now only requires changes to the state store configuration file.
 
 ### References
 
 - [Dapr supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/)
 
->[!div class="step-by-step"]
->[Previous](index.md)
->[Next](index.md)
+> [!div class="step-by-step"]
+> [Previous](reference-application.md)
+> [Next](service-invocation.md)

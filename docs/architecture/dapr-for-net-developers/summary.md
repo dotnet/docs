@@ -77,9 +77,9 @@ At the time of writing, here's a list of proposed enhancements for Dapr:
 - Developer and operator productivity tooling:
   - VS Code extension.
   - Remote Dev Containers for local debugging a DevOps pipeline development.
-  - Dapr operational dashboard enhancements that'll provide deeper visibility into the operational concerns of managing Dapr applications.
+  - Dapr operational dashboard enhancements that will provide deeper visibility into the operational concerns of managing Dapr applications.
 
-Dapr version 1.0 will provide developers with a compelling toolbox for building distributed applications. As the proposed enhancement list shows, Dapr is under active development with many new capabilities to come. Please stay tuned!
+Dapr version 1.0 will provide developers with a compelling toolbox for building distributed applications. As the proposed enhancement list shows, Dapr is under active development with many new capabilities to come. Please stay tuned to the [Dapr site](https://dapr.io/) and [Dapr announcement blog](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/).
 
 
 >[!div class="step-by-step"]

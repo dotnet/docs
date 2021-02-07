@@ -1,5 +1,5 @@
 ---
-title: Summary and the Road Ahead
+title: Summary and the road ahead
 description: A summary of key Dapr conclusions and a look at the road ahead.
 ms.date: 02/04/2021
 author: robvet
@@ -7,7 +7,7 @@ author: robvet
 
 # Summary
 
-We're at the end of our Dapr flight. The jet plane flying at 20,000 feet from chapter 2 is on final approach and about to land.
+We're at the end of our Dapr flight. The jet plane flying at 20,000 feet from [chapter 2](dapr-at-20000-feet.md) is on final approach and about to land.
 
 As the plane taxis to the gate, let's take a minute to review some important conclusions from this guide:
 
@@ -37,7 +37,7 @@ As the plane taxis to the gate, let's take a minute to review some important con
 
 - **eShopOnDapr** - This book includes an accompanying reference application entitled [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). Using a popular ecommerce application domain, the reference application demonstrates the usage of each building block. It's an evolution of the widely popular [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers), released several years ago.
 
-## The Road Ahead
+## The road ahead
 
 Looking forward, Dapr has the potential to have a profound impact on distributed application development. What can you expect from the Dapr team and its open-source contributors?
 

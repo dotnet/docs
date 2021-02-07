@@ -63,7 +63,7 @@ Editors:
 
 ## Version
 
-This guide has been written to cover **Dapr 1.0** version. .NET Core samples are based on **.NET Core 3.1**.
+This guide has been written to cover the **Dapr 1.0** version. .NET Core samples are based on **.NET Core 3.1**.
 
 ## Who should use this guide
 

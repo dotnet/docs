@@ -336,17 +336,14 @@ public class DaprEventBus : IEventBus
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
-    public async Task PublishAsync<TIntegrationEvent>(TIntegrationEvent integrationEvent)
-        where TIntegrationEvent : IntegrationEvent
+    public async Task PublishAsync(IntegrationEvent integrationEvent)
     {
         var topicName = integrationEvent.GetType().Name;
 
-        _logger.LogInformation("Publishing event {Event} to {PubSubName}.{TopicName}", integrationEvent, PubSubName, topicName);
-
-        // Make sure to pass the concrete event type to PublishEventAsync,
-        // which can be accomplished by casting the event to dynamic. This ensures
-        // that all event fields are properly serialized.
-        await _daprClient.PublishEventAsync(PubSubName, topicName, (dynamic)integrationEvent);
+        // Dapr uses System.Text.Json which does not support serialization of a
+        // polymorphic type hierarchy by default. Using object as the type
+        // parameter causes all properties to be serialized.
+        await _daprClient.PublishEventAsync<object>(PubSubName, topicName, integrationEvent);
     }
 }
 ```
@@ -354,7 +351,7 @@ public class DaprEventBus : IEventBus
 As you can see in the code snippet, the topic name is derived from event type's name. Because all eShop services use the `IEventBus` abstraction, retrofitting Dapr required *absolutely no change* to the mainline application code.
 
 > [!IMPORTANT]
-> There is a cast on the event parameter to a C# `dynamic` type. This workaround is necessary because in .NET 3.1 the `System.Text.Json` serializer does not support polymorphism yet. The Dapr SDK uses `System.Text.Json` to serialize/deserialize messages. In the eShop code, an event is sometimes explicitly declared as an `IntegrationEvent`, the base class for integration events. This is done because the specific event-type is determined dynamically at runtime based on business-logic. As a result, the event is serialized using the type information of the base class and not the derived class. The message payload won't contain all the fields of the event, but only those declared on the base class. Our workaround circumvents this and all the fields are correctly serialized.
+> The Dapr SDK uses `System.Text.Json` to serialize/deserialize messages. However, `System.Text.Json` does not serialize properties of derived classes by default. In the eShop code, an event is sometimes explicitly declared as an `IntegrationEvent`, the base class for integration events. This is done because the concrete event type is determined dynamically at runtime based on business-logic. As a result, the event is serialized using the type information of the base class and not the derived class. To force `System.Text.Json` to serialize all properties of the derived class in this case, the code uses `object` as the generic type parameter. For more information, see the [.NET documentation](https://docs.microsoft.com/dotnet/standard/serialization/system-text-json-polymorphism).
 
 With Dapr, the infrastructure code is **dramatically simplified**. It doesn't need to distinguish between the different message brokers. Dapr provides this abstraction for you. And if needed, you can easily swap out message brokers or configure multiple message broker components.
 

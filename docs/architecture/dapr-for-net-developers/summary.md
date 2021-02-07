@@ -41,7 +41,7 @@ As the plane taxis to the gate, let's take a minute to review some important con
 
 Looking forward, Dapr has the potential to have a profound impact on distributed application development. What can you expect from the Dapr team and its open-source contributors?
 
-At the time of writing, here's a list of proposed enhancements for Dapr:
+At the time of writing, the list of proposed enhancements for Dapr include:
 
 - Feature enhancements to existing building blocks:
   - Query capabilities in state management enabling you to retrieve multiple values.
@@ -54,7 +54,7 @@ At the time of writing, here's a list of proposed enhancements for Dapr:
   - Http scale-to-zero autoscale.
   - Leader election building block to provide singleton instances and locking semantic capabilities.
   - Transparent proxying building block for service invocation, enabling you to route messages based on URLs or DNS addresses at the network level.
-  - Resiliency building block (circuit breakers, Bulkheads, Timeouts).
+  - Resiliency building block (circuit breakers, bulkheads & timeouts).
 
 - Integration with frameworks and cloud native technologies. Some examples include:
   - Django
@@ -79,7 +79,7 @@ At the time of writing, here's a list of proposed enhancements for Dapr:
   - Remote Dev Containers for local debugging a DevOps pipeline development.
   - Dapr operational dashboard enhancements that will provide deeper visibility into the operational concerns of managing Dapr applications.
 
-Dapr version 1.0 will provide developers with a compelling toolbox for building distributed applications. As the proposed enhancement list shows, Dapr is under active development with many new capabilities to come. Please stay tuned to the [Dapr site](https://dapr.io/) and [Dapr announcement blog](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/).
+Dapr version 1.0 will provide developers with a compelling toolbox for building distributed applications. As the proposed enhancement list shows, Dapr is under active development with many new capabilities to come. Stay tuned to the [Dapr site](https://dapr.io/) and [Dapr announcement blog](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/) for future updates.
 
 >[!div class="step-by-step"]
 >[Previous](secrets.md)

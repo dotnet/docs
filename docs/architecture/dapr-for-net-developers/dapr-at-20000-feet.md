@@ -1,13 +1,11 @@
 ---
 title: Dapr at 20,000 feet
-description: A high-level overview of what dapr is, what it does, and how it works
+description: A high-level overview of what dapr is, what it does, and how it works.
 author: robvet 
-ms.date: 11/23/2020
+ms.date: 02/07/2021
 ---
 
 # Dapr at 20,000 feet
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed out that they dramatically increase architectural and operational complexity. With that in mind, the question becomes, how can we "have our cake" and "eat it too?". That is, how can we take advantage of the agility of distributed architecture, and minimize the complexity?
 
@@ -27,14 +25,14 @@ Through an architecture of pluggable components, Dapr helps simplify plumbing co
 
 Figure 2-1 shows Dapr from 20,000 feet.
 
-![Dapr at 20,000 feet](./media/dapr-high-level.png)
+![Dapr at 20,000 feet](./media/dapr-at-20000-feet/dapr-high-level.png)
 **Figure 2-1**. Dapr at 20,000 feet.
 
 In the top row of the figure, note how Dapr provides language-specific SDKs for popular development platforms. Dapr v 1.0 includes supports Go, Node.js, Python, .NET, Java, and JavaScript. This book focuses on the Dapr .NET SDK, which also provides direct support for ASP.NET Core integration.
 
 While language-specific SDKs enhance the developer experience, Dapr is platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. Any programming platform can call Dapr via its native HTTP and gRPC APIs.  
 
-The blue boxes across the center of the figure represent the DAPR building blocks. Each abstracts a distributed application capability that your application can consume.
+The blue boxes across the center of the figure represent the Dapr building blocks. Each abstracts a distributed application capability that your application can consume.
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
 
@@ -48,13 +46,13 @@ From our new perspective, we have a more detailed view of the Dapr **building bl
 
 A building block encapsulates a distributed application capability. You can access the functionality through the HTTP or gRPC APIs that we saw earlier. Figure 2-2 shows the available blocks for Dapr v 1.0.
 
-![Dapr building blocks](./media/building-blocks.png)
+![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks.png)
 
 **Figure 2-2**. Dapr building blocks.
 
 The following table describes the services provided by each block.
 
-| Building Block | Description |
+| Building block | Description |
 |----------------|-------------|
 | [Service-to-service invocation](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Invoke direct, secure service-to-service calls using platform agnostic protocols and well-known endpoints. |
 | [Publish and subscribe](https://github.com/dapr/components-contrib/tree/master/state) | Implement secure, scalable pub/sub messaging between services. |
@@ -66,7 +64,7 @@ The following table describes the services provided by each block.
 
 Building blocks abstract the implementation of distributed application capabilities from your services. Figure 2-3 shows this interaction.
 
-![Dapr building blocks](./media/building-block-integration.png)
+![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks-integration.png)
 
 **Figure 2-3**. Dapr building block integration.
 
@@ -114,7 +112,7 @@ Each component provides the necessary implementation through a common state mana
 ```
 
 > [!TIP]
-> The Dapr interface above along with all of Dapr has been written in the Golang, or Go, platform. Go is a popular language across the open source community and attests to cross-platform commitment of Dapr.
+> The Dapr runtime as well as all of the Dapr components have been written in the Golang, or Go, language. Go is a popular language across the open source community and attests to cross-platform commitment of Dapr.
 
 Perhaps you start with Azure Redis Cache as your state store. You specify it with the following configuration:
 
@@ -126,6 +124,7 @@ Perhaps you start with Azure Redis Cache as your state store. You specify it wit
    namespace: default
  spec:
    type: state.redis
+   version: v1
    metadata:
    - name: redisHost
      value: <HOST>
@@ -145,7 +144,7 @@ At the time of this writing, the following component types are provided by Dapr:
 
 | Component | Description |
 |-----------|-------------|
-| [Service discovery](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Used by the Service Invocation building block to integrate with the hosting environment to provide service-to-service discovery. |
+| [Service discovery](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Used by the service invocation building block to integrate with the hosting environment to provide service-to-service discovery. |
 | [State](https://github.com/dapr/components-contrib/tree/master/state) | Provides a uniform interface to interact with a wide variety of state store implementations. |
 | [Pub/sub](https://github.com/dapr/components-contrib/tree/master/pubsub) | Provides a uniform interface to interact with a wide variety of message bus implementations. |
 | [Bindings](https://github.com/dapr/components-contrib/tree/master/bindings) | Provides a uniform interface to trigger application events from external systems and invoke external systems with optional data payloads. |
@@ -159,7 +158,7 @@ As our jet completes it fly over of Dapr, we look back once more and can see how
 
 Dapr exposes its building blocks and components through a [sidecar architecture](https://docs.microsoft.com/azure/architecture/patterns/sidecar). A sidecar enables Dapr to run in a separate memory process or separate container alongside your service. Sidecars provide isolation and encapsulation as they aren't part of the service, but connected to it. This separation enables each to have its own runtime environment and be built upon different programming platforms. Figure 2-4 shows a sidecar pattern.
 
-![Sidecar architecture](./media/sidecar-generic.png)
+![Sidecar architecture](./media/dapr-at-20000-feet/sidecar-generic.png)
 
 **Figure 2-4**. Sidecar architecture.
 
@@ -173,25 +172,25 @@ For local development, the easiest way to get started is with [self-hosted mode]
 
 Figure 2-5 shows an application and Dapr hosted in two separate memory processes communicating via HTTP or gRPC.
 
-![Sidecar architecture](./media/self-hosted-dapr-sidecar.png)
+![Sidecar architecture](./media/dapr-at-20000-feet/self-hosted-dapr-sidecar.png)
 
-**Figure 2-5**. Self-hosted Dapr sidecar
+**Figure 2-5**. Self-hosted Dapr sidecar.
 
 By default, Dapr will install Docker containers for Redis and Zipkin to ensure building blocks such as state management and observability work out of the box. If you don't want to install Docker on your local machine, you can even [run Dapr in self-hosted mode without any Docker containers](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). However, you must install default components such as Redis for state management and pub/sub manually.
 
 Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
 
-![Sidecar architecture](./media/kubernetes-hosted-dapr-sidecar.png)
+![Sidecar architecture](./media/dapr-at-20000-feet/kubernetes-hosted-dapr-sidecar.png)
 
-**Figure 2-6**. Kubernetes-hosted Dapr sidecar
+**Figure 2-6**. Kubernetes-hosted Dapr sidecar.
 
 ## Dapr performance considerations
 
 As you've seen, Dapr exposes a sidecar architecture to decouple your application from distributed application capabilities. Invoking a Dapr operation requires at least one out-of-process network call. Figure 2-7 presents an example of a Dapr traffic pattern.
 
-![Dapr traffic patterns](./media/dapr-traffic-patterns.png)
+![Dapr traffic patterns](./media/dapr-at-20000-feet/dapr-traffic-patterns.png)
 
-**Figure 2-7**. Dapr traffic patterns
+**Figure 2-7**. Dapr traffic patterns.
 
 Looking at the previous figure, one might question the latency and overhead incurred for each call.  
 
@@ -213,7 +212,7 @@ A service mesh is a configurable infrastructure layer with built-in capabilities
 
 Figure 2-8 shows an application that implements service mesh technology.
 
-![Service Mesh](./media/service-mesh-with-side-car.png)
+![Service Mesh](./media/dapr-at-20000-feet/service-mesh-with-side-car.png)
 
 **Figure 2-8**. Service mesh with a side car.
 
@@ -227,7 +226,7 @@ As each works at a different level, both can work together in the same applicati
 
 Figure 2-9 shows an application that implements both Dapr and service mesh technology.
 
-![Dapr and Service Mesh together](./media/dapr-and-service-mesh.png)
+![Dapr and Service Mesh together](./media/dapr-at-20000-feet/dapr-and-service-mesh.png)
 
 **Figure 2-9**. Dapr and service mesh together.
 
@@ -252,4 +251,4 @@ In the next chapters, we present practical, hands-on instruction on how to use D
 
 > [!div class="step-by-step"]
 > [Previous](the-world-is-distributed.md)
-> [Next](index.md)
+> [Next](getting-started.md)

@@ -1,8 +1,8 @@
 ---
 title: Dapr for .NET Developers
-description: A guide for to understand and leverage the full power of Microsoft's open source Distributed Application Runtime.
+description: A guide for .NET developers to understand and leverage the full power of Microsoft's open source Distributed Application Runtime.
 author: robvet
-ms.date: 09/05/2020
+ms.date: 02/07/2021
 ---
 
 # Dapr for .NET Developers
@@ -39,11 +39,11 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
+> **Rob Vettor**, Principal Cloud Solution Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
-> **Sander Molenkamp**, Principal Cloud Architect/Microsoft MVP - Info Support [])
+> **Sander Molenkamp**, Principal Cloud Architect/Microsoft MVP - [Info Support](https://www.infosupport.com)
 >
-> **Edwin van Wijk**, Principal Software Architect/Microsoft MVP - Info Support [])
+> **Edwin van Wijk**, Principal Solution Architect/Microsoft MVP - [Info Support](https://www.infosupport.com)
 
 Participants and Reviewers:
 
@@ -56,6 +56,8 @@ Participants and Reviewers:
 > **Ori Zohar**, Senior Program Manager, Azure Incubations, Microsoft
 
 Editors:
+
+> **David Pine**, Senior Content Developer, .NET team, Microsoft
 
 > **Maira Wenzel**, Program Manager, .NET team, Microsoft
 

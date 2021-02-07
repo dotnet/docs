@@ -88,7 +88,7 @@ Dapr also includes *output binding* capabilities. They enable your service to tr
 
 As an example, you can invoke an output binding by invoking the Dapr API using curl:
 
-```bash
+```console
 curl -X POST http://localhost:3500/v1.0/bindings/sms \
   -H "Content-Type: application/json" \
   -d '{

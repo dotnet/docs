@@ -244,7 +244,7 @@ The component type is `secretstore.local.file`. The `secretsFile` metadata eleme
 
 From the application folder, start the Dapr application specifying the `components` path as a command-line argument:
 
-```bash
+```console
 dapr run --app-id basket-api --components-path ./components dotnet run
 ```
 
@@ -298,7 +298,7 @@ You might wonder why `eShopRedisPassword` is identical for both the name and key
 
 This second example focuses on a Dapr application running in Kubernetes. It uses the standard secrets mechanism that Kubernetes offers. Use the Kubernetes CLI (`kubectl`) to create a secret named `eshop-redis-secret` that contains the password:
 
-```bash
+```console
 kubectl create secret generic eshopsecrets --from-literal=redisPassword=e$h0p0nD@pr -n eshop
 ```
 
@@ -389,7 +389,7 @@ Consuming Azure Key Vault with Dapr and Kubernetes also requires a service princ
 
 First, create a *Kubernetes secret* that contains a certificate file using the kubectl CLI tool:
 
-```bash
+```console
 kubectl create secret generic [k8s_spn_secret_name] --from-file=[pfx_certificate_file_local_path] -n eshop
 ```
 

@@ -162,8 +162,6 @@ var carsQry = new List<Car>()
 While you could write one custom function for `IQueryable<Person>` and another for `IQueryable<Car>`, the following example shows a function that adds this filtering to any existing query, irrespective of the specific element type. Note that because it takes and returns an `IQueryable<T>`, you can add further strongly-typed query elements after the text filter.
 
 ```csharp
-// using static System.Linq.Expressions.Expression
-
 IQueryable<T> TextFilter<T>(IQueryable<T> source, string term) {
     if (string.IsNullOrEmpty(term)) { return source; }
 
@@ -171,44 +169,58 @@ IQueryable<T> TextFilter<T>(IQueryable<T> source, string term) {
     var elementType = typeof(T);
 
     // Get all the string properties on this specific type.
-    var stringProperties = 
+    var stringProperties =
         elementType.GetProperties()
             .Where(x => x.PropertyType == typeof(string))
             .ToArray();
     if (!stringProperties.Any()) { return source; }
 
-    // Get a hold of the right overload of the Contains method
+    // Get the right overload of String.Contains
     var containsMethod = typeof(string).GetMethod("Contains", new[] { typeof(string) })!;
 
     // Create a parameter for the expression tree; the `x`
     // The type of this parameter is the query's element type
     var prm = Parameter(elementType);
 
-    Expression? body = null;
-    foreach (var prp in stringProperties) {
-        // For each property, we have to construct an expression tree like x.PropertyName.Contains("term")
-        var clause =
+    // Map each property to an expression tree node
+    IEnumerable<Expression> expressions = stringProperties
+        .Select(prp =>
+            // For each property, we have to construct an expression tree like x.PropertyName.Contains("term")
             Call(                      // .Contains(...) 
-                Property(prm, prp),        // .PropertyName
+                Property(          // .PropertyName
+                    prm,              // x 
+                    prp
+                ),
                 containsMethod,
                 Constant(term)             // "term" 
-            );
+            )
+        );
 
-        // If this is the first clause
-        if (body is null) {
-            body = clause;
-        } else {
-            // Combine this clause with the current body using ||
-            body = Or(body, clause);
-        }
-    }
+    // Combine all the resultant expression nodes using ||
+    Expression body = expressions
+        .Aggregate<Expression, Expression>(
+            Constant(false),
+            (prev, current) => Or(prev, current)
+        );
 
     // Wrap the expression body in a strongly-typed lambda expression
     Expression<Func<T, bool>> lambda = Lambda<Func<T, bool>>(body, prm);
 
-    // Because the lambda is strongly typed (albeit with a generic parameter), w e can use it with the Where method
+    // Because the lambda is strongly typed (albeit with a generic parameter), we can use it with the Where method
     return source.Where(lambda);
 }
+
+var qry = TextFilter(
+        new List<Person>().AsQueryable(), 
+        "abcd"
+    )
+    .Where(x => x.DateOfBirth < new DateTime(2001, 1, 1));
+
+var qry1 = TextFilter(
+        new List<Car>().AsQueryable(), 
+        "abcd"
+    )
+    .Where(x => x.Year == 2010);
 ```
 
 Finally, if all you have is an `IQueryable` and not an `IQueryable<T>`, you can't directly call the generic LINQ methods at <xref:System.Linq.Queryable>. One alternative is to build the inner expression tree, and invoke the appropriate LINQ method with that expression tree using reflection.

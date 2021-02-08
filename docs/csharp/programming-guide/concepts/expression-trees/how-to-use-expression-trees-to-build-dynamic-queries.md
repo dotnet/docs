@@ -67,7 +67,7 @@ The internal expression tree&mdash;and thus the query&mdash;haven't been modifie
 
 ## Call additional LINQ methods
 
-Generally, the built-in LINQ methods at <xref:System.Linq.Queryable> perform two steps:
+Generally, the [built-in LINQ methods at <xref:System.Linq.Queryable>](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Linq.Queryable/src/System/Linq/Queryable.cs) perform two steps:
 
 * Wrap the current expression tree in a <xref:System.Linq.Expressions.MethodCallExpression> representing the method call.
 * Pass the wrapped expression tree back to the provider, either to return a value via the provider's <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> method; or to return a translated query object via the <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType> method.

@@ -25,6 +25,8 @@ Starting in the 5.0.100 version of the .NET SDK, when `OutputType` is set to `Ex
 </PropertyGroup>
 ```
 
+ If `OutputType` is not specified in the project file, it defaults to `Library` and that value doesn't change.
+
 ## Reason for change
 
 It's assumed that most users don't want a console window to open when a WPF or Windows Forms app is executed. In addition, [now that these application types use the .NET SDK](sdk-and-target-framework-change.md) instead of the Windows Desktop SDK, the correct default will be set. Further, when support for targeting iOS and Android is added, it will be easier to multi-target between multiple platforms if they all use the same output type.

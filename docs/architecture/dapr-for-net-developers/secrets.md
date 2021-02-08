@@ -72,8 +72,8 @@ Figure 10-1 shows how Dapr handles a request for the secrets API:
 **Figure 10-1**. Retrieving a secret with the Dapr secrets API.
 
 1. The service calls the Dapr secrets API, along with the name of the secret store, and secret to retrieve.
-2. The Dapr sidecar retrieves the specified secret from the secret store.
-3. The Dapr sidecar returns the secret information back to the service.
+1. The Dapr sidecar retrieves the specified secret from the secret store.
+1. The Dapr sidecar returns the secret information back to the service.
 
 Some secret stores support storing multiple key/value pairs in a single secret. For those scenarios, the response would contain multiple key/value pairs in a single JSON response as in the following example:
 

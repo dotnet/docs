@@ -32,7 +32,7 @@ Every time you run this code, the same exact query will be executed. This is fre
 Fundamentally, an <xref:System.Linq.IQueryable> has two components:
 
 * <xref:System.Linq.IQueryable.Expression>&mdash;a language- and datasource-agnostic representation of the current query's elements, in the form of an expression tree.
-* <xref:System.Linq.IQueryable.Provider>&mdash;an object which knows how to translate the current query into actual .NET objects, a.k.a. an instance of a LINQ provider.
+* <xref:System.Linq.IQueryable.Provider>&mdash;an instance of a LINQ provider, which knows how to materialize the current query into a value or set of values.
 
 In the context of dynamic querying, the provider will usually remain the same; the expression tree of the query will differ from query to query.
 
@@ -40,14 +40,14 @@ Because expression trees are immutable, if you want a different expression tree&
 
 The following sections describe specific techniques for querying differently in response to runtime state:
 
-- Referencing runtime state directly in the expression tree
-- Calling additional LINQ methods
-- Varying the expression tree passed into the LINQ methods
-- Constructing expression trees using the factory methods at <xref:System.Linq.Expressions.Expression>
+- Use runtime state from within the expression tree
+- Call additional LINQ methods
+- Vary the expression tree passed into the LINQ methods
+- Construct expression trees using the factory methods at <xref:System.Linq.Expressions.Expression>
 
-## Referencing runtime state from the expression tree
+## Use runtime state from within the expression tree
 
-Assuming the LINQ provider supports it, the simplest way to query dynamically is to reference the runtime state directly in the query, via a closed-over variable:
+Assuming the LINQ provider supports it, the simplest way to query dynamically is to reference the runtime state directly in the query via a closed-over variable, such as `length` in the following code example:
 
 ```csharp
 var length = 1;
@@ -63,16 +63,16 @@ Console.WriteLine(string.Join(",", qry));
 // prints: Co, Al, So, Ci, Wi, Gr, Ad, Hu, Wo, Ma, No, Bl, Tr, Th, Lu, Fo 
 ```
 
-The expression tree hasn't been modified; the query returns different values only because the value of `length` has been changed.
+The internal expression tree&mdash;and thus the query&mdash;haven't been modified; the query returns different values only because the value of `length` has been changed.
 
 ## Call additional LINQ methods
 
-The LINQ methods on <xref:System.Linq.Queryable> generally consist of two steps:
+Generally, the built-in LINQ methods at <xref:System.Linq.Queryable> perform two steps:
 
 * Wrap the current expression tree in a <xref:System.Linq.Expressions.MethodCallExpression> representing the method call.
 * Pass the wrapped expression tree back to the provider, either to return a value via the provider's <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> method; or to return a translated query object via the <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType> method.
 
-Thus, you can replace the original query with the result of an [IQueryable\<T>](xref:System.Linq.IQueryable%601)-returning method, to get a new query.
+You can replace the original query with the result of an [IQueryable\<T>](xref:System.Linq.IQueryable%601)-returning method, to get a new query.
 
 You can do this based on runtime state, as in the following example:
 
@@ -90,19 +90,15 @@ if (sortByLength) {
 You can pass in different expressions to the LINQ methods, depending on runtime state:
 
 ```csharp
-string startsWith = /* ... */;
-string endsWith = /* ... */;
+string? startsWith = /* ... */;
+string? endsWith = /* ... */;
 
-Expression<Func<string, bool>>? expr = null;
-if (!string.IsNullOrEmpty(startsWith) && !string.IsNullOrEmpty(endsWith)) {
-    expr = x => x.StartsWith(startsWith) || x.EndsWith(endsWith);
-} else if (!string.IsNullOrEmpty(startsWith)) {
-    expr = x => x.StartsWith(startsWith);
-} else if (!string.IsNullOrEmpty(endsWith)) {
-    expr = x => x.EndsWith(endsWith);
-} else {
-    expr = x => true;
-}
+Expression<Func<string, bool>> expr = (startsWith, endsWith) switch {
+    ("" or null, "" or null) => x => true,
+    (_, "" or null) => x => x.StartsWith(startsWith),
+    ("" or null, _) => x => x.EndsWith(endsWith),
+    (_, _) => x => x.StartsWith(startsWith) || x.EndsWith(endsWith)
+};
 
 var qry = companyNamesSource.Where(expr);
 ```
@@ -136,9 +132,7 @@ if (hasStartsWith || hasEndsWith) {
 
 ## Construct expression trees and queries using factory methods
 
-In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. But what if you want to add components to a query without limiting yourself to a specific element type? And moreover, what if the components you want to add are different depending on the type?
-
-To do this, you must create the expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression>.
+In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type; you may need to add different components, depending on the element type. You can create the expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression>.
 
 For example, let's say you have multiple entity types:
 

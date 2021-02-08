@@ -17,7 +17,7 @@ In previous versions of the .NET SDK, the value that's specified for `OutputType
 </PropertyGroup>
 ```
 
-Starting in the 5.0.100 version of the .NET SDK, `OutputType` is automatically set to `WinExe` for WPF and Windows Forms apps that target any framework version, including .NET Framework. For example:
+Starting in the 5.0.100 version of the .NET SDK, when the `OutputType` property is present, `OutputType` is automatically set to `WinExe` for WPF and Windows Forms apps that target any framework version, including .NET Framework. For example:
 
 ```xml
 <PropertyGroup>

@@ -225,7 +225,7 @@ Additionally, you'll need complete this sample using [Visual Studio 2019](https:
 1. Add a second ASP.NET Core Web Application project to the same solution and call it *DaprBackEnd*. Select **API** as the project type, and clear the checkbox for **Configure for HTTPS**.
 
    > [!NOTE]
-   > A sidecar is designed to use encrypted HTTP to communicate with the application container. It's recommended to deploy Dapr sidecars in the same network namespace as the application. Dapr uses HTTPS for the  and provides support for [mTLS](https://docs.dapr.io/concepts/security-concept/#sidecar-to-sidecar-communication) to encrypt calls between services.
+   > A sidecar is designed to use encrypted HTTP to communicate with the application container. It's recommended to deploy Dapr sidecars in the same network namespace as the application. Dapr uses HTTPS and provides support for [mTLS](https://docs.dapr.io/concepts/security-concept/#sidecar-to-sidecar-communication) to encrypt calls between services.
 
    ![Screenshot of creating the  web API](./media/getting-started/multicontainer-createwebapi.png)
 

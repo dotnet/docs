@@ -36,21 +36,21 @@ The eShopOnContainers reference application has been widely accepted across the 
 
 ## eShop on Dapr
 
-A alternative version of the eShop application accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The updated version evolves (or, *Daprizes*, if you will) the earlier eShopOnContainers application by integrating Dapr building blocks and components. Figure 3-3 shows the new streamlined solution architecture:  
+An alternative version of the eShop application accompanies this book. It's called [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr). The updated version evolves (or, *Daprizes*, if you will) the earlier eShopOnContainers application by integrating Dapr building blocks and components. Figure 3-3 shows the new streamlined solution architecture:  
 
 ![eShopOnDapr reference application architecture.](./media/reference-application/eshop-on-dapr.png)
 
 **Figure 3-3**. eShopOnDapr reference application architecture.
 
-The focus of the eShopOnDapr reference application is Dapr. Therefore, the original application is simplified and is stripped of some functionality. The updated architecture consists of:
+As focus of the eShopOnDapr reference application is Dapr, the original application has been updated. The architecture consists of:
 
 1. A [Single Page Application](https://docs.microsoft.com/archive/msdn-magazine/2013/november/asp-net-single-page-applications-build-modern-responsive-web-apps-with-asp-net) frontend written in the popular Angular SPA framework. It sends user requests to an API gateway microservice.
 
-1. The API gateway abstracts the backend core microservices from the frontend client. It's implemented using [Envoy](https://www.envoyproxy.io/), a high performant, open-source service proxy. Envoy routes  incoming requests to various  microservices. Most requests are simple CRUD operations (for example, get the list of brands from the catalog) and handled by a direct call to a single  microservice.
+1. The API gateway abstracts the backend core microservices from the frontend client. It's implemented using [Envoy](https://www.envoyproxy.io/), a high performant, open-source service proxy. Envoy routes  incoming requests to various back-end microservices. Most requests are simple CRUD operations (for example, get the list of brands from the catalog) and handled by a direct call to a back-end microservice.
 
-1. Other requests from the api gateway are logically more complex and require multiple microservices to work together. For these cases, eShopOnDapr implements an [aggregator microservice](../cloud-native/service-to-service-communication#service-aggregator-pattern) that orchestrates a workflow across microservices required for the operation.
+1. Other requests are logically more complex and require multiple microservices to work together. For these cases, eShopOnDapr implements an [aggregator microservice](../cloud-native/service-to-service-communication#service-aggregator-pattern) that orchestrates a workflow across the microservices needed to complete the operation.
 
-1. The set of core backend microservices includes functionality required for an online store. Each microservice is self-contained and independent of the others. Note how each microservice isolates a specific *business capability*:
+1. The set of core backend microservices includes functionality required for an eCommerce store. Each is self-contained and independent of the others. Following widely accepted domain decomposing patterns, each microservice isolates a specific *business capability*:
 
    - The Identity microservice manages authentication and identity.
    - The Catalog microservice manages product items available for sale.
@@ -60,52 +60,57 @@ The focus of the eShopOnDapr reference application is Dapr. Therefore, the origi
 
    Each service has its own persistent storage. Adhering to microservice [best practices](../cloud-native/distributed-data#database-per-microservice-why), there's not a shared datastore with which all services interact.
 
-   The design of each microservice is based on its individual requirements. The simple services only require basic CRUD access to their underlying data stores. Advanced services, like Ordering, use a  Domain-Driven Design approach to manage business complexity. If necessary, services could also be built with different technology stacks: .NET Core, Java, Go, NodeJS, and more.
+   The design of each microservice is based on its individual requirements. The simple services use basic CRUD operations to access to their underlying data stores. Advanced services, like Ordering, use a  Domain-Driven Design approach to manage business complexity. If necessary, services could be built across different technology stacks, such as .NET Core, Java, Go, NodeJS, and more.
 
 1. Finally, the event bus wraps the Dapr publish/subscribe components. It enables asynchronous publish/subscribe messaging across microservices. Developers can plug in any Dapr-supported message broker.
 
 ### Application of Dapr building blocks
 
-If you could overlay the updated eShopOnDapr over the original eShopOnContainers, you would see a streamlined application. Larges amounts of complex plumbing code would be abstracted away by the Dapr runtime.
+If you could overlay the updated eShopOnDapr on top of the original eShopOnContainers, you'd see a highly streamlined application. Larges amounts of complex plumbing code would be moved into the Dapr runtime.
+
+Figure 3-4 shows the Dapr integration in the eShop reference application.
 
 ![eShopOnDapr reference application architecture](./media/reference-application/eshop-on-dapr-buildingblocks.png)
 
-**Figure 3-4**. Modernized `eShopOnDapr` reference application.
+**Figure 3-4**. Dapr integration in eShopOnDapr.
 
-- The original eShopOnContainers application demonstrates DDD concepts and patterns in the ordering service. In the updated eShopOnDapr, the ordering service uses the *actor building block*. The turn-based access model of actors makes it easy to implement a stateful ordering process with support for cancellation.
-- The ordering service sends order confirmation e-mails using the [bindings building block](bindings.md).
-- The backend services communicate asynchronously using the [publish & subscribe building block](publish-subscribe.md).
-- Secret management is done by the [secrets building block](secrets.md).
-- The API gateway and web shopping aggregator services use the [service invocation building block](service-invocation.md) to invoke methods on the backend services.
-- The basket service uses the [state management building block](state-management.md) to store the state of the customer's shopping basket.
+In the previous figure, you can see where the Dapr building blocks (in green) integrate into the microservices.
+
+1. The original eShopOnContainers application demonstrates DDD concepts and patterns in the ordering service. In the updated eShopOnDapr, the ordering service uses the *actor building block*. The turn-based access model of actors makes it easy to implement a stateful ordering process with support for cancellation.
+1. The ordering service sends order confirmation e-mails using the [bindings building block](bindings.md).
+1. The backend services communicate asynchronously using the [publish & subscribe building block](publish-subscribe.md).
+1. Secret management is done by the [secrets building block](secrets.md).
+1. The API gateway and web shopping aggregator services use the [service invocation building block](service-invocation.md) to invoke methods on the backend services.
+1. The basket service uses the [state management building block](state-management.md) to store the state of the customer's shopping basket.
 
 ### Benefits of applying Dapr to eShop
 
 In general, the use of Dapr building blocks add observability and flexibility to the application:
 
-1. Observability: By using the Dapr building blocks, we've gained rich distributed tracing for both calls between services and calls to components without having to write any code. In eShopOnContainers, a lot of custom logging is used to provide insight.
-1. Flexibility: Mainly because we can now switch infrastructure simply by changing a component configuration file.
+1. Observability: By using the Dapr building blocks, you  gain rich distributed tracing for both calls between services and to Dapr components without having to write any code. In eShopOnContainers, a large amount of custom logging is used to provide insight.
+1. Flexibility: You can now *swap out* infrastructure simply by changing a component configuration file. No code changes are necessary.
 
 Here are some more examples of benefits for specific building blocks:
 
 - **Service Invocation**
-  - Thanks to Dapr's support for [mTLS](https://blog.cloudflare.com/introducing-tls-client-auth/), services now communicate through encrypted channels.
+  - With Dapr's support for [mTLS](https://blog.cloudflare.com/introducing-tls-client-auth/), services now communicate through encrypted channels.
   - When transient errors occur, service calls are automatically retried.
   - Automatic service discovery reduces the amount of configuration needed for services to find each other.
 
 - **Publish/Subscribe**
-  - eShopOnContainer includes extensive implementations for both the Azure Service Bus and Rabbit MQ. Developers used Azure Service Bus for production and RabbitMQ for local development and testing. An `IEventBus` abstraction layer was created to enable swapping between these message brokers. Implementing the abstract for Azure Service Bus and RabbitMQ required approximately *700 lines of error-prone code*. The updated implementation that uses Dapr consists of only *35 lines of code*. That's just **5%** of the original lines of code! More importantly, the updated Dapr implementation is straightforward and easy to understand.
-  - eShopOnDapr uses Dapr's rich ASP.NET Core integration to subscribe to events. Instead of having to write a separate message handler loop for each message broker, we can use `Topic` attributes on ordinary ASP.NET Core Controllers to subscribe to messages. This has the added benefit of having a single place where all external commands/events come in, whether it's via HTTP/REST, gRPC, or messaging.
-  - Having events delivered to the service as HTTP calls allows the use of ASP.NET Core middleware to add functionality, without introducing new concepts or SDKs to learn.
+  - eShopOnContainer included large amounts of complex custom code to implement both Azure Service Bus and Rabbit MQ. Developers used Azure Service Bus for production and RabbitMQ for local development and testing. An `IEventBus` abstraction layer was created to enable swapping between these message brokers. The non-Dapr implementation required approximately *700 lines of error-prone code*. The updated Dapr implementation requires *35 lines of code*. That's **5%** of the original of code! More importantly, the updated Dapr implementation is straightforward and easy to understand.
+  - eShopOnDapr uses Dapr's rich ASP.NET Core integration to subscribe to events. Instead of writing a  message handler loop for each message broker, `Topic` attributes are added to ASP.NET Core Controllers to subscribe to messages. This feature exposes a single endpoint for all external commands/events, whether HTTP/REST, gRPC, or messaging.
+  - Events routed to the service as HTTP calls enable the use of ASP.NET Core middleware to add functionality, without introducing new concepts or SDKs to learn.
 
 - **Bindings**
-  - The eShopOnContainers solution contained a *to-do* item for e-mailing an order confirmation to the customer. With Dapr, implementing email notification was as easy as configuring a resource binding. There wasn't need to learn any external APIs or SDKs.
+  - The eShopOnContainers solution contained a *to-do* item for e-mailing an order confirmation to the customer. The thought was to eventually implement a 3rd party email API such as SendGrid. With Dapr, implementing email notification was as easy as configuring a resource binding. There wasn't need to learn external APIs or SDKs.
 
 > [!NOTE]
-> The Actors building block isn't covered in the preview version of this book. An extensive chapter on the Actor building block and its application in eShopOnDapr will be included in the 1.1 update.
+> The Actors building block isn't covered in the first version of this book. An extensive chapter on the Actor building block and its integration with eShopOnDapr will be included in the 1.1 update.
 
 ## Summary
 
+In this chapter, you're introduced to the eShopOnDapr reference application. It's an evolution of the widely popular eShopOnContainers microservice reference application. eShopOnDapr replaces a large amount of custom functionality with Dapr building blocks and components, dramatically simplifying the complexities required to build a microservices application. 
 ### References
 
 - [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr)

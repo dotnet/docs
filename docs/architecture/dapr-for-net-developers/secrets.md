@@ -47,7 +47,11 @@ Applications use the secrets building block in two ways:
 
 Retrieving secrets directly is covered first. Referencing a secret from a Dapr component configuration file is addressed in a later section.
 
+<<<<<<< HEAD
 The application interacts with a Dapr sidecar when using the secrets building block. The sidecar exposes the secrets API. The API can be called with either HTTP or gRPC. Use the following URL to call the HTTP API:
+=======
+The application interacts with a Dapr sidecar service when using the secrets building block. The sidecar exposes the secrets API. The API can be called with either HTTP or gRPC using the following URL:
+>>>>>>> dapr/endgame-wip
 
 ```http
 http://localhost:<dapr-port>/v1.0/secrets/<store-name>/<name>?<metadata>
@@ -72,8 +76,13 @@ Figure 10-1 shows how Dapr handles a request for the secrets API:
 **Figure 10-1**. Retrieving a secret with the Dapr secrets API.
 
 1. The service calls the Dapr secrets API, along with the name of the secret store, and secret to retrieve.
+<<<<<<< HEAD
 2. The Dapr sidecar retrieves the specified secret from the secret store.
 3. The Dapr sidecar returns the secret information back to the service.
+=======
+1. The Dapr sidecar retrieves the specified secret from the secret store.
+1. The Dapr sidecar returns the secret information back to the service.
+>>>>>>> dapr/endgame-wip
 
 Some secret stores support storing multiple key/value pairs in a single secret. For those scenarios, the response would contain multiple key/value pairs in a single JSON response as in the following example:
 

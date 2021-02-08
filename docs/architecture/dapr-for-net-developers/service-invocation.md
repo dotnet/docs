@@ -240,7 +240,7 @@ Note the steps from the previous figure:
 
 1. The API gateway forwards simple [CRUD](https://www.sumologic.com/glossary/crud/) (Create, Read, Update, Delete) requests directly to a core backend service using HTTP/REST.
 
-1. The API gateway forwards complex requests that involve coordinated calls to multiple backend services to the web shopping aggregator service.
+1. The API gateway forwards complex requests that involve coordinated calls to multiple backend services to the Web Shopping aggregator service.
 
 1. The aggregator service uses gRPC to call core backend services.
 

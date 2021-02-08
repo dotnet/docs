@@ -52,11 +52,11 @@ The focus of the eShopOnDapr reference application is Dapr. Therefore, the origi
 
 1. The set of core backend microservices includes functionality required for an online store. Each microservice is self-contained and independent of the others. Note how each microservice isolates a specific *business capability*:
 
-   - The Identity microservice manages authentication and identity.
-   - The Catalog microservice manages product items available for sale.
-   - The Basket microservice manages the customer's shopping basket experience.
-   - The Ordering microservice handles all aspects of placing and managing orders.
-   - The Payment microservice transacts the customer's payment.
+   - The basket service manages the customer's shopping basket experience.
+   - The catalog service manages product items available for sale.
+   - The identity service manages authentication and identity.
+   - The ordering service handles all aspects of placing and managing orders.
+   - The payment service transacts the customer's payment.
 
    Each service has its own persistent storage. Adhering to microservice [best practices](../cloud-native/distributed-data#database-per-microservice-why), there's not a shared datastore with which all services interact.
 
@@ -95,7 +95,7 @@ Here are some more examples of benefits for specific building blocks:
 
 - **Publish/Subscribe**
   - eShopOnContainer includes extensive implementations for both the Azure Service Bus and Rabbit MQ. Developers used Azure Service Bus for production and RabbitMQ for local development and testing. An `IEventBus` abstraction layer was created to enable swapping between these message brokers. Implementing the abstract for Azure Service Bus and RabbitMQ required approximately *700 lines of error-prone code*. The updated implementation that uses Dapr consists of only *35 lines of code*. That's just **5%** of the original lines of code! More importantly, the updated Dapr implementation is straightforward and easy to understand.
-  - eShopOnDapr uses Dapr's rich ASP.NET Core integration to subscribe to events. Instead of having to write a separate message handler loop for each message broker, we can use `Topic` attributes on ordinary ASP.NET Core Controllers to subscribe to messages. This has the added benefit of having a single place where all external commands/events come in, whether it's via HTTP/REST, gRPC, or messaging.
+  - eShopOnDapr uses Dapr's rich ASP.NET Core integration to subscribe to events. Instead of having to write a separate message handler loop for each message broker, you can use `Topic` attributes on ordinary ASP.NET Core Controllers to subscribe to messages. This has the added benefit of having a single place where all external commands/events come in, whether it's via HTTP/REST, gRPC, or messaging.
   - Having events delivered to the service as HTTP calls allows the use of ASP.NET Core middleware to add functionality, without introducing new concepts or SDKs to learn.
 
 - **Bindings**

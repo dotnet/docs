@@ -1,7 +1,7 @@
 ---
 title: How to use immutable types and non-public accessors with System.Text.Json
 description: "Learn how to use immutable types and non-public accessors while serializing to and deserializing from JSON in .NET."
-ms.date: 02/01/2021
+ms.date: 02/08/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 helpviewer_keywords:
@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 # How to use immutable types and non-public accessors with System.Text.Json
 
-This article shows how to use immutable types, parameterized constructors, and non-public accessors with the `System.Text.Json` namespace.
+This article shows how to use immutable types, public parameterized constructors, and non-public accessors with the `System.Text.Json` namespace.
 
 ## Immutable types and Records
 
@@ -25,6 +25,13 @@ This article shows how to use immutable types, parameterized constructors, and n
 The parameter names of a parameterized constructor must match the property names. Matching is case-insensitive, and the constructor parameter must match the actual property name even if you use [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) to rename a property. In the following example, the name for the `TemperatureC` property is changed to `celsius` in the JSON, but the constructor parameter is still named `temperatureC`:
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/ImmutableTypesCtorParms.cs" highlight="10,14-16":::
+
+Besides `[JsonPropertyName]` the following attributes support deserialization with parameterized constructors:
+
+* [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute)
+* [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute)
+* [[JsonInclude]](xref:System.Text.Json.Serialization.JsonIncludeAttribute)
+* [[JsonNumberHandling]](xref:System.Text.Json.Serialization.JsonNumberHandlingAttribute)
 
 Records in C# 9 are also supported, as shown in the following example:
 

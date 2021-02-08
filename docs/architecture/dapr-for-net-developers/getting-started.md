@@ -34,7 +34,7 @@ You'll start by building a simple .NET Console application that consumes the [Da
 
 1. Open up the command shell or terminal of your choice. You might consider the terminal capabilities in [Visual Studio Code](https://code.visualstudio.com/). Navigate to the root folder in which you want to build your application. Once there, enter the following command to create a new .NET Console application:
 
-   ```console
+   ```dotnetcli
    dotnet new console -o DaprCounter
    ```
 
@@ -48,7 +48,7 @@ You'll start by building a simple .NET Console application that consumes the [Da
 
 1. Run the newly created application using the `dotnet run` command. Doing so writes "Hello World!" to the console screen:
 
-   ```console
+   ```dotnetcli
    dotnet run
    ```
 
@@ -60,7 +60,7 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
 
 1. From the terminal window, add the `Dapr.Client` NuGet package to your application:
 
-   ```console
+   ```dotnetcli
    dotnet add package Dapr.Client
    ```
 
@@ -232,7 +232,7 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 1. In Visual Studio, open the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**) and make sure that `DaprFrontEnd` is the default project. From the console, add the `Dapr.AspNetCore` NuGet package to the project:
 
-   ```console
+   ```powershell
    Install-Package Dapr.AspNetCore
    ```
 

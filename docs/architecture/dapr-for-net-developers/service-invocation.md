@@ -65,7 +65,7 @@ http://localhost:<dapr-port>/v1.0/invoke/<application-id>/method/<method-name>
 
 In the following example, a *curl* call is made to the `catalog/items` 'GET' endpoint of `Service B`:
 
-``` console
+```console
 curl http://localhost:3500/v1.0/invoke/serviceb/method/catalog/items
 ```
 

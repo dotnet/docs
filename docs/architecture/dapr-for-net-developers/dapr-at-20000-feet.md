@@ -7,21 +7,21 @@ ms.date: 02/07/2021
 
 # Dapr at 20,000 feet
 
-In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed out that they dramatically increase architectural and operational complexity. With that in mind, the question becomes, how can we "have our cake" and "eat it too?". That is, how can we take advantage of the agility of distributed architecture, and minimize the complexity?
+In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed out that they dramatically increase architectural and operational complexity. With that in mind, the question becomes, how can you "have your cake" and "eat it too?". That is, how can you take advantage of the agility of distributed architecture, and minimize its complexity?
 
-Dapr, or *Distributed Application Runtime*, is a new way to build modern distributed applications while streamlining the underlying plumbing.
+Dapr, or *Distributed Application Runtime*, is a new way to build modern distributed applications.
 
-What started as a prototype has evolved into a highly successful open source project. Its sponsor, Microsoft, has closely partnered with customers and the open source community to design and build Dapr. The Dapr project brings together developers from all backgrounds to solve some of the toughest challenges of developing distributed applications.
+What started as a prototype has evolved into a highly successful open-source project. Its sponsor, Microsoft, has closely partnered with customers and the open-source community to design and build Dapr. The Dapr project brings together developers from all backgrounds to solve some of the toughest challenges of developing distributed applications.
 
-This book looks at Dapr from the viewpoint of a .NET developer. In this chapter, we help you build a solid conceptual understanding of Dapr and how it works. Later on, we present practical, hands-on instruction on how to use Dapr in your applications.
+This book looks at Dapr from the viewpoint of a .NET developer. In this chapter, you'll build a conceptual understanding of Dapr and how it works. Later on, we present practical, hands-on instruction on how you can use Dapr in your applications.
 
-Imagine flying in a jet at 20,000 feet. You look out the window and see the landscape from a wide perspective. Let's do the same for Dapr. Visualize yourself flying over Dapr at 20,000 feet. What would you see?
+Imagine flying in a jet at 20,000 feet. You look out the window and see the landscape below from a wide perspective. Let's do the same for Dapr. Visualize yourself flying over Dapr at 20,000 feet. What would you see?
 
 ## Dapr and the problem it solves?
 
 Dapr addresses a large challenge inherent in modern distributed applications: **Complexity**.
 
-Through an architecture of pluggable components, Dapr helps simplify plumbing concerns. It enables your services to bind to distributed application capabilities. The runtime provides a **dynamic glue** that fuses your application with these capabilities. It does so *without* adding tightly coupled dependencies on infrastructure such as databases and message brokers. For example, your application may require a state store. You could write custom code to target Redis Cache and inject it into your service at runtime. However, Dapr greatly simplifies your experience by providing you with an abstraction out-of-the-box. You instruct your service to invoke a Dapr **building block** that dynamically binds to Redis Cache via a configuration. With this model, your service delegates the call to Dapr, which calls Redis on your behalf. Your service has no SDK, library, or direct reference to Redis. You code against the common Dapr state management API, not the Redis Cache API.
+Through an architecture of pluggable components, Dapr greatly simplifies the plumbing behind distributed applications. It provides a **dynamic glue** that binds your application with infrastructure capabilities from the Dapr runtime. For example, your application may require a state store. You could write custom code to target Redis Cache and inject it into your service at runtime. However, Dapr simplifies your experience by providing a distributed cache capability out-of-the-box. Your service invokes a Dapr **building block** that dynamically binds to Redis Cache **component** via a Dapr **configuration**. With this model, your service delegates the call to Dapr, which calls Redis on your behalf. Your service has no SDK, library, or direct reference to Redis. You code against the common Dapr state management API, not the Redis Cache API.
 
 Figure 2-1 shows Dapr from 20,000 feet.
 
@@ -32,25 +32,25 @@ In the top row of the figure, note how Dapr provides language-specific SDKs for 
 
 While language-specific SDKs enhance the developer experience, Dapr is platform agnostic. Under the hood, Dapr's programming model exposes capabilities through standard HTTP/gRPC communication protocols. Any programming platform can call Dapr via its native HTTP and gRPC APIs.  
 
-The blue boxes across the center of the figure represent the Dapr building blocks. Each abstracts a distributed application capability that your application can consume.
+The blue boxes across the center of the figure represent the Dapr building blocks. Each exposes a distributed application capability that your application can consume.
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
 
 ## Dapr architecture
 
-At this point, our jet turns around and flies back over Dapr, descending in altitude, giving us a closer look at how Dapr works.
+At this point, the jet turns around and flies back over Dapr, descending in altitude, giving you a closer look at how Dapr works.
 
 ### Building blocks
 
-From our new perspective, we have a more detailed view of the Dapr **building blocks**.
+From the new perspective, you see a more detailed view of the Dapr **building blocks**.
 
-A building block encapsulates a distributed application capability. You can access the functionality through the HTTP or gRPC APIs that we saw earlier. Figure 2-2 shows the available blocks for Dapr v 1.0.
+A building block encapsulates a distributed infrastructure capability. You can access the functionality through the HTTP or gRPC APIs. Figure 2-2 shows the available blocks for Dapr v 1.0.
 
 ![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks.png)
 
 **Figure 2-2**. Dapr building blocks.
 
-The following table describes the services provided by each block.
+The following table describes the infrastructure services provided by each block.
 
 | Building block | Description |
 |----------------|-------------|
@@ -68,9 +68,9 @@ Building blocks abstract the implementation of distributed application capabilit
 
 **Figure 2-3**. Dapr building block integration.
 
-Building blocks invoke Dapr components that provide the concrete implementation for each resource. The code for your service is only aware of the building block. It takes no dependencies on external SDKs or libraries - Dapr handles the plumbing for you. Each building block is independent. You can use one, some, or all of them in your application. As a value-add, Dapr building blocks bake in industry best practices.
+Building blocks invoke Dapr components that provide the concrete implementation for each resource. The code for your service is only aware of the building block. It takes no dependencies on external SDKs or libraries - Dapr handles the plumbing for you. Each building block is independent. You can use one, some, or all of them in your application. As a value-add, Dapr building blocks bake in industry best practices including comprehensive observability.
 
-We provide detailed explanation and code samples for each Dapr building block in the upcoming chapters. At this point, our jet descends even more. From our new perspective, we can now have a closer look at the Dapr components layer.
+We provide detailed explanation and code samples for each Dapr building block in the upcoming chapters. At this point, the jet descends even more. From the new perspective, you now have a closer look at the Dapr components layer.
 
 ### Components
 
@@ -152,7 +152,7 @@ At the time of this writing, the following component types are provided by Dapr:
 | [Secret stores](https://github.com/dapr/components-contrib/tree/master/secretstores) | Provides a uniform interface to interact with external secret stores, including cloud, edge, commercial, open-source services. |
 | [Tracing exporters](https://github.com/dapr/components-contrib/tree/master/exporters) | Provides a uniform interface to open telemetry wrappers. |
 
-As our jet completes it fly over of Dapr, we look back once more and can see how it connects together.
+As the jet completes it fly over of Dapr, you look back once more and can see how it connects together.
 
 ### Sidecar architecture
 
@@ -176,7 +176,7 @@ Figure 2-5 shows an application and Dapr hosted in two separate memory processes
 
 **Figure 2-5**. Self-hosted Dapr sidecar.
 
-By default, Dapr will install Docker containers for Redis and Zipkin to ensure building blocks such as state management and observability work out of the box. If you don't want to install Docker on your local machine, you can even [run Dapr in self-hosted mode without any Docker containers](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). However, you must install default components such as Redis for state management and pub/sub manually.
+By default, Dapr installs Docker containers for Redis and Zipkin to provide default state management and observability. If you don't want to install Docker on your local machine, you can even [run Dapr in self-hosted mode without any Docker containers](https://docs.dapr.io/operations/hosting/self-hosted/self-hosted-no-docker/). However, you must install default components such as Redis for state management and pub/sub manually.
 
 Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
 
@@ -216,13 +216,13 @@ Figure 2-8 shows an application that implements service mesh technology.
 
 **Figure 2-8**. Service mesh with a side car.
 
-The previous figure depicts how messages are intercepted by a proxy that runs alongside each service. Each proxy can be configured with traffic rules specific to the service. It understands messages and can route them across your services and the outside world.
+The previous figure shows how messages are intercepted by a proxy that runs alongside each service. Each proxy can be configured with traffic rules specific to the service. It understands messages and can route them across your services and the outside world.
 
 So the question becomes, "Is Dapr a service mesh?".
 
 While both use a sidecar architecture, each technology has a different purpose. Dapr provides distributed application features. A service mesh provides a dedicated network infrastructure layer.
 
-As each works at a different level, both can work together in the same application. For example, a service mesh could provide networking communication between services; Dapr could provide application services such as state management or actor services.
+As each works at a different level, both can work together in the same application. For example, a service mesh could provide networking communication between services. Dapr could provide application services such as state management or actor services.
 
 Figure 2-9 shows an application that implements both Dapr and service mesh technology.
 
@@ -236,7 +236,7 @@ In the book, [Learning Dapr](https://www.amazon.com/Learning-Dapr-Building-Distr
 
 This chapter introduced you to Dapr, a Distributed Application Runtime.
 
-Dapr is an open source project sponsored by Microsoft with close collaboration from customers and the open source community.
+Dapr is an open-source project sponsored by Microsoft with close collaboration from customers and the open-source community.
 
 At its core, Dapr helps reduce the inherent complexity of distributed microservice applications. It's built upon a concept of building block APIs. Dapr building blocks expose common distributed application capabilities, such as state management, service-to-service invocation, and pub/sub messaging. Dapr components lie beneath the building blocks and provide the concrete implementation for each capability. Applications bind to various components through configuration files.
 

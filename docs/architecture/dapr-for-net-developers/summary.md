@@ -11,7 +11,7 @@ We're at the end of our Dapr flight. The jet plane flying at 20,000 feet from ch
 
 As the plane taxis to the gate, let's take a minute to review some important conclusions from this guide:
 
-- **Dapr** - Dapr is a *Distributed Application Runtime* that streamlines how distributed applications are built. Through an architecture of building blocks and pluggable components, Dapr hides the complexity of distributed application infrastructure. Instead of building plumbing, your team focuses on delivering business features to customers.
+- **Dapr** - Dapr is a *Distributed Application Runtime* that streamlines how you build distributed applications. It exposes an architecture of building blocks and pluggable components. Dapr provides a **dynamic glue** that binds your application with infrastructure capabilities that exist in the Dapr runtime. Instead of building infrastructure plumbing, you and your team focus on delivering business features to customers.
 
 - **Open source and cross-platform** - The native Dapr API can be consumed by *any platform* that supports HTTP or gRPC. Dapr also provides language-specific SDKs for popular development platforms. Dapr v1.0 supports Go, Python, .NET, Java, PHP, and JavaScript.
 

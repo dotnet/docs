@@ -1,6 +1,6 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk.Desktop
-description: Reference for the MSBuild properties and items that are understood by the .NET Desktop SDK which includes WPF and WinForms.
+description: Reference for the MSBuild properties and items that are understood by the .NET Desktop SDK, which includes WPF and WinForms.
 ms.date: 02/04/2021
 ms.topic: reference
 author: adegeo
@@ -21,7 +21,7 @@ To use WinForms or WPF, configure your project file.
 
 ### .NET 5.0
 
-WinForms and WPF projects should specify the following settings in the project file:
+Specify the following settings in the project file of your WinForms or WPF project:
 
 - Target the .NET SDK `Microsoft.NET.Sdk`. For more information, see [Project files](overview.md#project-files).
 - Set the `TargetFramework` to `net5.0-windows`.
@@ -47,6 +47,8 @@ WinForms and WPF projects should specify the following settings in the project f
 
 ### .NET Core 3.1
 
+Specify the following settings in the project file of your WinForms or WPF project:
+
 - Target the .NET SDK `Microsoft.NET.Sdk.WindowsDesktop`. For more information, see [Project files](overview.md#project-files).
 - Set the `TargetFramework` to `netcoreapp3.1`.
 - Set one of the following to enable a UI framework:
@@ -71,11 +73,11 @@ WinForms and WPF projects should specify the following settings in the project f
 
 ## WPF default include exclude
 
-SDK project files define a set of rules to implicitly include or exclude files from the project. These rules also automatically set the file's build action. This is unlike the older non-SDK .NET Framework projects, which had no default include or exclude rules. .NET Framework projects required you to explicitly declare which files to include in the project.
+SDK projects define a set of rules to implicitly include or exclude files from the project. These rules also automatically set the file's build action. This is unlike the older non-SDK .NET Framework projects, which have no default include or exclude rules. .NET Framework projects require you to explicitly declare which files to include in the project.
 
 .NET project files include a [standard set of rules](overview.md#default-includes-and-excludes) for automatically processing files. WPF projects add additional rules.
 
-The following table shows which elements and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET Desktop SDK when the [`UseWPF`](#usewpf) project property is set to `true`:
+The following table shows which elements and [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET Desktop SDK when the [`UseWPF`](#usewpf) project property is set to `true`:
 
 | Element               | Include glob                 | Exclude glob                                                                                           | Remove glob  |
 |-----------------------|------------------------------|--------------------------------------------------------------------|--------------|
@@ -93,12 +95,12 @@ Here are the default include and exclude settings for all project types. For mor
 
 ### Errors related to "duplicate" items
 
-If you explicitly added files to your project, or have XAML globs to automatically include files in your project, you'll possibly get one of the following errors:
+If you explicitly added files to your project, or have XAML globs to automatically include files in your project, you might get one of the following errors:
 
 * Duplicate 'ApplicationDefinition' items were included.
 * Duplicate 'Page' items were included.
 
-These errors are a result of the implicit *Include* globs conflicting with your settings. To work around this problem, either set [`EnableDefaultApplicationDefinition`](#enabledefaultapplicationdefinition) or [`EnableDefaultPageItems`](#enabledefaultpageitems) to `false`. Setting these values to `false` reverts to the behavior of previous SDKs where you had to explicitly define the default globs in your project, or explicitly define the files to include in the project.
+These errors are a result of the implicit *Include* globs conflicting with your settings. To work around this problem, set either [`EnableDefaultApplicationDefinition`](#enabledefaultapplicationdefinition) or [`EnableDefaultPageItems`](#enabledefaultpageitems) to `false`. Setting these values to `false` reverts to the behavior of previous SDKs where you had to explicitly define the default globs in your project, or explicitly define the files to include in the project.
 
 You can completely disable all implicit includes by setting the [`EnableDefaultItems` property](msbuild-props.md#enabledefaultitems) to `false`.
 
@@ -108,7 +110,7 @@ You can completely disable all implicit includes by setting the [`EnableDefaultI
 - [EnableDefaultApplicationDefinition](#enabledefaultapplicationdefinition)
 - [EnableDefaultPageItems](#enabledefaultpageitems)
 
-For more information about standard .NET SDK project settings, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
+For information about non-WPF-specific project settings, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
 
 ### UseWPF
 
@@ -120,7 +122,7 @@ The `UseWPF` property controls whether or not to include references to WPF libra
 </PropertyGroup>
 ```
 
-.NET 5.0 projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk) when this property is set to `true`.
+When this property is set to `true`, .NET 5.0+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
 
 .NET Core 3.1 projects need to explicitly target the [.NET Desktop SDK](#enable-net-desktop-sdk) to use this property.
 
@@ -152,7 +154,7 @@ This property requires that the [`EnableDefaultItems` property](msbuild-props.md
 
 - [UseWindowsForms](#usewindowsforms)
 
-For more information about standard .NET SDK project properties, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
+For information about non-WinForms-specific project properties, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
 
 ### UseWindowsForms
 
@@ -164,7 +166,7 @@ The `UseWindowsForms` property controls whether or not your application is built
 </PropertyGroup>
 ```
 
-.NET 5.0 projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk) when this property is set to `true`.
+When this property is set to `true`, .NET 5.0+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
 
 .NET Core 3.1 projects need to explicitly target the [.NET Desktop SDK](#enable-net-desktop-sdk) to use this property.
 

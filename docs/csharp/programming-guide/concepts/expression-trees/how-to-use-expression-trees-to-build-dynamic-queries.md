@@ -34,7 +34,7 @@ Fundamentally, an <xref:System.Linq.IQueryable> has two components:
 * <xref:System.Linq.IQueryable.Expression>&mdash;a language- and datasource-agnostic representation of the current query's elements, in the form of an expression tree.
 * <xref:System.Linq.IQueryable.Provider>&mdash;an object which knows how to translate the current query into actual .NET objects, a.k.a. an instance of a LINQ provider.
 
-In the context of dynamic querying, the provider will usually remain the same; the expression tree of the query will be different from query to query.
+In the context of dynamic querying, the provider will usually remain the same; the expression tree of the query will differ from query to query.
 
 Because expression trees are immutable, if you want a different expression tree&mdash;and thus a different query&mdash;you'll need to translate the existing expression tree to a new one, and thus to a new **IQueryable**.
 
@@ -67,36 +67,14 @@ The expression tree hasn't been modified; the query returns different values onl
 
 ## Call additional LINQ methods
 
-The LINQ methods on <xref:System.Linq.Queryable> which don't execute the query but rather return a new translated query object, generally consist of two steps:
+The LINQ methods on <xref:System.Linq.Queryable> generally consist of two steps:
 
-* wrap the current expression tree in a <xref:System.Linq.Expressions.MethodCallExpression> representing the method call, and
-* pass the newly wrapped expression tree back into the provider for optional additional processing.
+* Wrap the current expression tree in a <xref:System.Linq.Expressions.MethodCallExpression> representing the method call.
+* Pass the wrapped expression tree back to the provider, either to return a value via the provider's <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> method; or to return a translated query object via the <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType> method.
 
-For example, the source code for <xref:System.Linq.Queryable.Take> looks something like this:
+Thus, you can replace the original query with the result of an [IQueryable\<T>](xref:System.Linq.IQueryable%601)-returning method, to get a new query.
 
-```csharp
-public static IQueryable<TSource> Take<TSource>(this IQueryable<TSource> source, int count) {
-
-    // wrap the original expression in a MethodCallExpression using the Call factory method    
-    var wrapped =
-        Expression.Call(
-            null,
-            CachedReflectionInfo.Take_TSource_2(typeof(TSource)),
-
-            // the original expression
-            source.Expression, 
-
-            Expression.Constant(count)
-        )
-
-    // pass the wrapped expression back to the provider
-    var newQuery = source.Provider.CreateQuery<TSource>(wrapped);
-
-    return newQuery;
-}
-```
-
-Thus, based on runtime state, you can conditionally replace the original query object with the result of these method calls, to get a new query.
+You can do this based on runtime state, as in the following example:
 
 ```csharp
 bool sortByLength = /* ... */;
@@ -132,20 +110,28 @@ var qry = companyNamesSource.Where(expr);
 You might also want to compose the various sub-expressions using a third-party library such as [LinqKit](http://www.albahari.com/nutshell/linqkit.aspx)'s [PredicateBuilder](http://www.albahari.com/nutshell/predicatebuilder.aspx):
 
 ```csharp
+// using LinqKit;
+
 // This is functionally equivalent to the previous example.
 
 string startsWith = /* ... */;
 string endsWith = /* ... */;
 
-Expression<Func<string, bool>>? expr = PredicateBuilder.New<string>(true);
-if (!string.IsNullOrEmpty(startsWith)) {
-    expr = expr.Or(x => x.StartsWith(startsWith));
-}
-if (!string.IsNullOrEmpty(endsWith)) {
-    expr = expr.Or(x => x.EndsWith(endsWith));
-}
+var qry = companyNamesSource;
 
-var qry = companyNamesSource.Where(expr);
+bool hasStartsWith = !string.IsNullOrEmpty(startsWith);
+bool hasEndsWith = !string.IsNullOrEmpty(endsWith);
+
+if (hasStartsWith || hasEndsWith) {
+    Expression<Func<string, bool>>? expr = PredicateBuilder.New<string>(false);
+    if (hasStartsWith) {
+        expr = expr.Or(x => x.StartsWith(startsWith));
+    }
+    if (hasEndsWith) {
+        expr = expr.Or(x => x.EndsWith(endsWith));
+    }
+    qry = qry.Where(expr);
+}
 ```
 
 ## Construct expression trees and queries using factory methods
@@ -161,7 +147,7 @@ record Person(string LastName, string FirstName, DateTime DateOfBirth);
 record Car(string Model, int Year);
 ```
 
-For any of these entity types, you want to filter and return only those entities that have a given text inside one of their `string` fields. For `Person`, we'd want to search the `FirstName` and `LastName` properties:
+For any of these entity types, you want to filter and return only those entities that have a given text inside one of their `string` fields. For `Person`, you'd want to search the `FirstName` and `LastName` properties:
 
 ```csharp
 string term = /* ... */;
@@ -170,7 +156,7 @@ var personsQry = new List<Person>()
     .Where(x => x.FirstName.Contains(term) || x.LastName.Contains(term));
 ```
 
-but for `Car`, we'd want to search only the `Model` property:
+but for `Car`, you'd want to search only the `Model` property:
 
 ```csharp
 string term = /* ... */;
@@ -179,7 +165,7 @@ var carsQry = new List<Car>()
     .Where(x => x.Model.Contains(term));
 ```
 
-The following example shows a function that adds this filtering to an existing query, irrespective of the specific element type. Note that because it takes and returns an `IQueryable<T>`, you can add further strongly-typed query elements after the text filter.
+While you could write one custom function for `IQueryable<Person>` and another for `IQueryable<Car>`, the following example shows a function that adds this filtering to any existing query, irrespective of the specific element type. Note that because it takes and returns an `IQueryable<T>`, you can add further strongly-typed query elements after the text filter.
 
 ```csharp
 // using static System.Linq.Expressions.Expression
@@ -188,11 +174,11 @@ IQueryable<T> TextFilter<T>(IQueryable<T> source, string term) {
     if (string.IsNullOrEmpty(term)) { return source; }
 
     // T is a compile-time placeholder for the element type of the query.
-    var type = typeof(T);
+    var elementType = typeof(T);
 
     // Get all the string properties on this specific type.
     var stringProperties = 
-        type.GetProperties()
+        elementType.GetProperties()
             .Where(x => x.PropertyType == typeof(string))
             .ToArray();
     if (!stringProperties.Any()) { return source; }
@@ -200,26 +186,18 @@ IQueryable<T> TextFilter<T>(IQueryable<T> source, string term) {
     // Get a hold of the right overload of the Contains method
     var containsMethod = typeof(string).GetMethod("Contains", new[] { typeof(string) })!;
 
-    // First, create a parameter for the expression tree; the `x`
-    // The type of this parameter is the query's element type, or T
-    var prm = Parameter(type);
+    // Create a parameter for the expression tree; the `x`
+    // The type of this parameter is the query's element type
+    var prm = Parameter(elementType);
 
     Expression? body = null;
     foreach (var prp in stringProperties) {
-        // For each field, we have to construct an expression tree like x.PropertyName.Contains("term")
-
+        // For each property, we have to construct an expression tree like x.PropertyName.Contains("term")
         var clause =
-
-            // .Contains(...) 
-            Call(
-
-                // .PropertyName
-                Property(prm, prp),
-
+            Call(                      // .Contains(...) 
+                Property(prm, prp),        // .PropertyName
                 containsMethod,
-                
-                // "term"
-                Constant(term)
+                Constant(term)             // "term" 
             );
 
         // If this is the first clause
@@ -234,12 +212,14 @@ IQueryable<T> TextFilter<T>(IQueryable<T> source, string term) {
     // Wrap the expression body in a strongly-typed lambda expression
     Expression<Func<T, bool>> lambda = Lambda<Func<T, bool>>(body, prm);
 
-    // Because the lambda is strongly typed (albeit with a generic parameter), we can use it with the Where method
+    // Because the lambda is strongly typed (albeit with a generic parameter), w e can use it with the Where method
     return source.Where(lambda);
 }
 ```
 
-Finally, if you don't even have an `IQueryable<T>`, but rather the element type itself is unknown at runtime, you can still construct the expression tree as in the previous example, and wrap the entire tree in a `MethodCallExpression` calling the appropriate LINQ method:
+Finally, if all you have is an `IQueryable` and not an `IQueryable<T>`, you can't directly call the generic LINQ methods at <xref:System.Linq.Queryable>. One alternative is to build the inner expression tree, and invoke the appropriate LINQ method with that expression tree using reflection.
+
+You could also duplicate the LINQ method's functionality, by wrapping the entire tree in a `MethodCallExpression` node which represents a call to the LINQ method:
 
 ```csharp
 IQueryable TextFilter(IQueryable source, string term) {
@@ -247,7 +227,8 @@ IQueryable TextFilter(IQueryable source, string term) {
     var type = source.ElementType;
 
     // build the expression body based on the element type's string properties
-    // as above
+    // as in the previous example
+    var (body, prm) = /* ... */;
 
     var filteredTree = Call(
         typeof(Queryable),
@@ -258,6 +239,37 @@ IQueryable TextFilter(IQueryable source, string term) {
     );
 
     return source.Provider.CreateQuery(filteredTree);
+}
+```
+
+## The Dynamic LINQ library
+
+Constructing expression trees using factory methods is relatively complex; it is easier to compose strings. The [Dynamic LINQ library](https://dynamic-linq.net/) exposes a set of extension methods on <xref:System.Linq.IQueryable> corresponding to the standard LINQ methods at <xref:System.Linq.Queryable>, and which accept strings in a [special syntax](https://dynamic-linq.net/expression-language) instead of expression trees. The library generates the appropriate expression tree from the string, and returns the resultant translated <xref:System.Linq.IQueryable>.
+
+For instance, the previous example could be rewritten as follows:
+
+```csharp
+// using System.Linq.Dynamic.Core
+
+IQueryable TextFilter(IQueryable source, string term) {
+    if (string.IsNullOrEmpty(term)) { return source; }
+
+    var type = source.ElementType;
+
+    // Get all the string property names on this specific type.
+    var stringProperties = 
+        elementType.GetProperties()
+            .Where(x => x.PropertyType == typeof(string))
+            .ToArray();
+    if (!stringProperties.Any()) { return source; }
+
+    // Build the string expression
+    string filterExpr = string.Join(
+        " || ",
+        stringProperties.Select(prp => $"{prp.Name}.Contains(@0)")
+    );
+
+    return source.Where(filterExpr);
 }
 ```
 

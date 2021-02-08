@@ -25,7 +25,7 @@ IQueryable<string> companyNamesSource = companyNames.AsQueryable();
 var qry = companyNames.OrderBy(x => x);
 ```
 
-Every time you run this code, the same exact query will be executed. This is frequently not very useful, as you may want your code to execute different queries under varying conditions. This topic describes how you can execute a different query based on runtime state.
+Every time you run this code, the same exact query will be executed. This is frequently not very useful, as you may want your code to execute different queries under varying conditions. This article describes how you can execute a different query based on runtime state.
 
 ## IQueryable, IQueryable\<T> and expression trees
 
@@ -63,9 +63,9 @@ Console.WriteLine(string.Join(",", qry));
 // prints: Co, Al, So, Ci, Wi, Gr, Ad, Hu, Wo, Ma, No, Bl, Tr, Th, Lu, Fo 
 ```
 
-Note that the expression tree hasn't been modified; the query returns different values only because the value of `length` has been changed.
+The expression tree hasn't been modified; the query returns different values only because the value of `length` has been changed.
 
-## Calling additional LINQ methods
+## Call additional LINQ methods
 
 The LINQ methods on <xref:System.Linq.Queryable> which don't execute the query but rather return a new translated query object, generally consist of two steps:
 
@@ -107,9 +107,9 @@ if (sortByLength) {
 }
 ```
 
-## Varying the expression tree passed into the LINQ methods
+## Vary the expression tree passed into the LINQ methods
 
-You can also choose to pass in different expressions to the LINQ methods, depending on runtime state:
+You can pass in different expressions to the LINQ methods, depending on runtime state:
 
 ```csharp
 string startsWith = /* ... */;
@@ -148,7 +148,7 @@ if (!string.IsNullOrEmpty(endsWith)) {
 var qry = companyNamesSource.Where(expr);
 ```
 
-## Constructing expression trees and queries using factory methods
+## Construct expression trees and queries using factory methods
 
 In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. But what if you want to add components to a query without limiting yourself to a specific element type? And moreover, what if the components you want to add are different depending on the type?
 
@@ -161,7 +161,7 @@ record Person(string LastName, string FirstName, DateTime DateOfBirth);
 record Car(string Model, int Year);
 ```
 
-and for any of these entity types, you want to filter and return only those entities that have a given text inside one of their `string` fields. For `Person`, we'd want to search the `FirstName` and `LastName` properties:
+For any of these entity types, you want to filter and return only those entities that have a given text inside one of their `string` fields. For `Person`, we'd want to search the `FirstName` and `LastName` properties:
 
 ```csharp
 string term = /* ... */;

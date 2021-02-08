@@ -1,6 +1,6 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk.Desktop
-description: Reference for the MSBuild properties and items that are understood by the .NET Desktop SDK
+description: Reference for the MSBuild properties and items that are understood by the .NET Desktop SDK which includes WPF and WinForms.
 ms.date: 02/04/2021
 ms.topic: reference
 author: adegeo
@@ -25,9 +25,9 @@ WinForms and WPF projects should specify the following settings in the project f
 
 - Target the .NET SDK `Microsoft.NET.Sdk`. For more information, see [Project files](overview.md#project-files).
 - Set the `TargetFramework` to `net5.0-windows`.
-- Set one of the following to enable a UI framework:
-  - Set `UseWPF` to `true` to use WPF.
-  - Set `UseWindowsForms` to `true` to use WinForms.
+- Add a UI framework property:
+  - Set `UseWPF` to `true` to import and use WPF.
+  - Set `UseWindowsForms` to `true` to import and use WinForms.
 - (Optional) Set `OutputType` to `WinExe`. This produces an app as opposed to a library. To produce a library, omit this property.
 
 ```xml
@@ -71,7 +71,9 @@ WinForms and WPF projects should specify the following settings in the project f
 
 ## WPF default include exclude
 
-SDK project files define a set of rules to implicitly include or exclude files, and to set their build action. This is unlike the older non-SDK .NET Framework projects, which had no default include or exclude rules and required you to explicitly declare which files to include in the project. WPF projects include rules in addition to the [standard .NET SDK rules](overview.md#default-includes-and-excludes) for automatically processing files.
+SDK project files define a set of rules to implicitly include or exclude files from the project. These rules also automatically set the file's build action. This is unlike the older non-SDK .NET Framework projects, which had no default include or exclude rules. .NET Framework projects required you to explicitly declare which files to include in the project.
+
+.NET project files include a [standard set of rules](overview.md#default-includes-and-excludes) for automatically processing files. WPF projects add additional rules.
 
 The following table shows which elements and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET Desktop SDK when the [`UseWPF`](#usewpf) project property is set to `true`:
 
@@ -96,7 +98,7 @@ If you explicitly added files to your project, or have XAML globs to automatical
 * Duplicate 'ApplicationDefinition' items were included.
 * Duplicate 'Page' items were included.
 
-These errors are a result of the implicit *Include* globs conflicting with your settings. To work around this problem, either set [`EnableDefaultApplicationDefinition`](#enabledefaultapplicationdefinition) or [`EnableDefaultPageItems`](#enabledefaultpageitems) to `false`. Setting these to `false` reverts to the behavior of previous SDKs where you had to explicitly define the default globs in your project, or explicitly define the files to include in the project.
+These errors are a result of the implicit *Include* globs conflicting with your settings. To work around this problem, either set [`EnableDefaultApplicationDefinition`](#enabledefaultapplicationdefinition) or [`EnableDefaultPageItems`](#enabledefaultpageitems) to `false`. Setting these values to `false` reverts to the behavior of previous SDKs where you had to explicitly define the default globs in your project, or explicitly define the files to include in the project.
 
 You can completely disable all implicit includes by setting the [`EnableDefaultItems` property](msbuild-props.md#enabledefaultitems) to `false`.
 
@@ -154,7 +156,7 @@ For more information about standard .NET SDK project properties, see [MSBuild re
 
 ### UseWindowsForms
 
-The `UseWindowsForms` property controls whether or not your application is built to target Windows Forms. This property alters the MSBuild pipeline to correctly process a WinForms project and related files. The default value is `false`. Set the `UseWindowsForms` property to `true` to enable WinForms support. You can only target the Windows platform when this setting is enabled.
+The `UseWindowsForms` property controls whether or not your application is built to target Windows Forms. This property alters the MSBuild pipeline to correctly process a Windows Forms project and related files. The default value is `false`. Set the `UseWindowsForms` property to `true` to enable Windows Forms support. You can only target the Windows platform when this setting is enabled.
 
 ```xml
 <PropertyGroup>
@@ -165,6 +167,24 @@ The `UseWindowsForms` property controls whether or not your application is built
 .NET 5.0 projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk) when this property is set to `true`.
 
 .NET Core 3.1 projects need to explicitly target the [.NET Desktop SDK](#enable-net-desktop-sdk) to use this property.
+
+## Shared settings
+
+- [DisableWinExeOutputInference](#disablewinExeoutputinference)
+
+### DisableWinExeOutputInference
+
+Applies to .NET 5.0 SDK and later.
+
+When an app has the `Exe` value set for the `OutputType` property, a console window is created if the app isn't running from a console. This is generally not the desired behavior of a Windows Desktop app. With the `WinExe` value, a console window isn't created. Starting with the .NET 5.0 SDK, the `Exe` value is automatically transformed to `WinExe`.
+
+The `DisableWinExeOutputInference` property reverts the behavior of treating `Exe` as `WinExe`. Set this value to `true` to restore the behavior of the `OutputType` property value of `Exe`. The default value is `false`.
+
+```xml
+<PropertyGroup>
+  <DisableWinExeOutputInference>true</DisableWinExeOutputInference>
+</PropertyGroup>
+```
 
 ## See also
 

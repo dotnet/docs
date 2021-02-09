@@ -5,7 +5,7 @@ ms.date: 02/04/2021
 author: robvet
 ---
 
-# Summary
+# Summary and the road ahead
 
 We're at the end of our Dapr flight. The jet plane flying at 20,000 feet from [chapter 2](dapr-at-20000-feet.md) is on final approach and about to land.
 
@@ -23,7 +23,7 @@ As the plane taxis to the gate, let's take a minute to review some important con
 
 - **Components** - Dapr components provide the concrete implementation for each Dapr building block capability. They expose a common interface that enables developers to swap out component implementations without changing application code. Figure 11-2 shows the relationship among components, building blocks, and your service.
 
-![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks-integration.png)
+![Dapr building blocks integration](./media/dapr-at-20000-feet/building-blocks-integration.png)
 
 **Figure 11-2**. Dapr building block integration.
 

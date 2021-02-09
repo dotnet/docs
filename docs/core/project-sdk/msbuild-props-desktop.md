@@ -24,7 +24,7 @@ To use WinForms or WPF, configure your project file.
 Specify the following settings in the project file of your WinForms or WPF project:
 
 - Target the .NET SDK `Microsoft.NET.Sdk`. For more information, see [Project files](overview.md#project-files).
-- Set the `TargetFramework` to `net5.0-windows`.
+- Set [`TargetFramework`](msbuild-props.md#targetframework) to `net5.0-windows`.
 - Add a UI framework property:
   - Set `UseWPF` to `true` to import and use WPF.
   - Set `UseWindowsForms` to `true` to import and use WinForms.
@@ -50,7 +50,7 @@ Specify the following settings in the project file of your WinForms or WPF proje
 Specify the following settings in the project file of your WinForms or WPF project:
 
 - Target the .NET SDK `Microsoft.NET.Sdk.WindowsDesktop`. For more information, see [Project files](overview.md#project-files).
-- Set the `TargetFramework` to `netcoreapp3.1`.
+- Set [`TargetFramework`](msbuild-props.md#targetframework) to `netcoreapp3.1`.
 - Set one of the following to enable a UI framework:
   - Set `UseWPF` to `true` to use WPF.
   - Set `UseWindowsForms` to `true` to use WinForms.

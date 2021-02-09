@@ -188,7 +188,7 @@ spec:
     value: "@every 30m"
 ```
 
-In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` endpoint every 30 minutes. There are several patterns available for specifying the `schedule` value. For more information, see the [Cron binding documentation](docs.dapr.io/operations/components/setup-bindings/supported-bindings/cron/).
+In this example, Dapr triggers a service by invoking the `/checkOrderBacklog` endpoint every 30 minutes. There are several patterns available for specifying the `schedule` value. For more information, see the [Cron binding documentation](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/cron/).
 
 ## Reference application: eShopOnDapr
 

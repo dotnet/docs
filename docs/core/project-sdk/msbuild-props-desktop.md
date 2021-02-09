@@ -25,7 +25,7 @@ Specify the following settings in the project file of your WinForms or WPF proje
 
 - Target the .NET SDK `Microsoft.NET.Sdk`. For more information, see [Project files](overview.md#project-files).
 - Set [`TargetFramework`](msbuild-props.md#targetframework) to `net5.0-windows`.
-- Add a UI framework property:
+- Add a UI framework property (or both, if necessary):
   - Set `UseWPF` to `true` to import and use WPF.
   - Set `UseWindowsForms` to `true` to import and use WinForms.
 - (Optional) Set `OutputType` to `WinExe`. This produces an app as opposed to a library. To produce a library, omit this property.
@@ -71,7 +71,7 @@ Specify the following settings in the project file of your WinForms or WPF proje
 </Project>
 ```
 
-## WPF default include exclude
+## WPF default includes and excludes
 
 SDK projects define a set of rules to implicitly include or exclude files from the project. These rules also automatically set the file's build action. This is unlike the older non-SDK .NET Framework projects, which have no default include or exclude rules. .NET Framework projects require you to explicitly declare which files to include in the project.
 

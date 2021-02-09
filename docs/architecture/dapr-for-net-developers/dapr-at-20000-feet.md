@@ -172,7 +172,7 @@ For local development, the easiest way to get started is with [self-hosted mode]
 
 Figure 2-5 shows an application and Dapr hosted in two separate memory processes communicating via HTTP or gRPC.
 
-![Sidecar architecture](./media/dapr-at-20000-feet/self-hosted-dapr-sidecar.png)
+![Self-hosted sidecar architecture](./media/dapr-at-20000-feet/self-hosted-dapr-sidecar.png)
 
 **Figure 2-5**. Self-hosted Dapr sidecar.
 
@@ -180,7 +180,7 @@ By default, Dapr installs Docker containers for Redis and Zipkin to provide defa
 
 Dapr also runs in [containerized environments](https://docs.dapr.io/concepts/overview/#kubernetes-hosted), such as Kubernetes. Figure 2-6 shows Dapr running in a separate side-car container along with the application container in the same Kubernetes pod.
 
-![Sidecar architecture](./media/dapr-at-20000-feet/kubernetes-hosted-dapr-sidecar.png)
+![Kubernetes-hosted sidecar architecture](./media/dapr-at-20000-feet/kubernetes-hosted-dapr-sidecar.png)
 
 **Figure 2-6**. Kubernetes-hosted Dapr sidecar.
 

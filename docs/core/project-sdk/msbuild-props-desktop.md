@@ -172,7 +172,7 @@ When this property is set to `true`, .NET 5.0+ projects will automatically impor
 
 ## Shared settings
 
-- [DisableWinExeOutputInference](#disablewinExeoutputinference)
+- [DisableWinExeOutputInference](#disablewinexeoutputinference)
 
 ### DisableWinExeOutputInference
 

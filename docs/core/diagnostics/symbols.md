@@ -1,6 +1,6 @@
 ---
 title: Symbols in .NET
-descriptions: An introduction to symbols in .NET
+descriptions: An introduction to symbols and portable PDBs in .NET
 ms.date: 02/08/2021
 ---
 
@@ -30,15 +30,21 @@ Windows PDBs can only be written or read on Windows. All Windows tooling support
 
 Portable PDBs can be read on any operating system, but there are a number of places where they aren't supported yet:
 
-- Older versions of the Visual Studio debugger (versions before VS 2015 Update 2)
-- Applications targeting .NET Framework 4.7.1 or earlie: printing stack traces with mappings back to line numbers (such as in an ASP.NET error page). The name of methods is unaffected, only the source file names and line numbers are unsupported
-- C# Code analysis tools (such as FxCop) except Roslyn Analyzer
-- Some symbol servers (for example, [SymbolSource](www.symbolsource.org) does not support portable PDBs, but [NuGet](https://nuget.org) does)
-- Running post-compilation build step that consumes or modifies the PDB using older versions of tools such as CCI, CodeContracts
-- Using .NET decompilers such as ildasm or .NET reflector and expecting to see source line mappings or local parameter names
-- MS DIA-based tools such as WinDBG.
+* Older versions of the Visual Studio debugger (versions before VS 2015 Update 2)
 
+* Applications targeting .NET Framework 4.7.1 or earlie: printing stack traces with mappings back to line numbers (such as in an ASP.NET error page). The name of methods is unaffected, only the source file names and line numbers are unsupported
+
+* C# Code analysis tools (such as FxCop) except Roslyn Analyzer
+
+* Some symbol servers (for example, [SymbolSource](www.symbolsource.org) does not support portable PDBs, but [NuGet](https://nuget.org) does)
+
+* Running post-compilation build step that consumes or modifies the PDB using older versions of tools such as CCI, CodeContracts
+
+* Using .NET decompilers such as ildasm or .NET reflector and expecting to see source line mappings or local parameter names
+
+* MS DIA-based tools such as WinDBG.
 ## See also
 
-- [Windows documentation on symbols](/windows/win32/dxtecharts/debugging-with-symbols)
-- [dotnet-symbol](./dotnet-symbol.md) can be used to download symbol files for framework binaries
+* [dotnet-symbol](./dotnet-symbol.md) can be used to download symbol files for framework binaries
+
+* [Windows documentation on symbols](/windows/win32/dxtecharts/debugging-with-symbols)

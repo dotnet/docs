@@ -160,7 +160,9 @@ While HttpClient is the preferred way to invoke services using HTTP semantics, y
 var daprClient = new DaprClientBuilder().Build();
 try
 {
-    var confirmation = await daprClient.InvokeMethodAsync<Order, OrderConfirmation>("orderservice", "submit", order);
+    var confirmation =
+        await daprClient.InvokeMethodAsync<Order, OrderConfirmation>(
+            "orderservice", "submit", order);
 }
 catch (InvocationException ex)
 {

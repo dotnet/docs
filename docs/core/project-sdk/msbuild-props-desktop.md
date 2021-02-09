@@ -26,8 +26,8 @@ Specify the following settings in the project file of your WinForms or WPF proje
 - Target the .NET SDK `Microsoft.NET.Sdk`. For more information, see [Project files](overview.md#project-files).
 - Set [`TargetFramework`](msbuild-props.md#targetframework) to `net5.0-windows`.
 - Add a UI framework property (or both, if necessary):
-  - Set `UseWPF` to `true` to import and use WPF.
-  - Set `UseWindowsForms` to `true` to import and use WinForms.
+  - Set [`UseWPF`](#usewpf) to `true` to import and use WPF.
+  - Set [`UseWindowsForms`](#usewindowsforms) to `true` to import and use WinForms.
 - (Optional) Set `OutputType` to `WinExe`. This produces an app as opposed to a library. To produce a library, omit this property.
 
 ```xml
@@ -52,8 +52,8 @@ Specify the following settings in the project file of your WinForms or WPF proje
 - Target the .NET SDK `Microsoft.NET.Sdk.WindowsDesktop`. For more information, see [Project files](overview.md#project-files).
 - Set [`TargetFramework`](msbuild-props.md#targetframework) to `netcoreapp3.1`.
 - Set one of the following to enable a UI framework:
-  - Set `UseWPF` to `true` to use WPF.
-  - Set `UseWindowsForms` to `true` to use WinForms.
+  - Set [`UseWPF`](#usewpf) to `true` to import and use WPF.
+  - Set [`UseWindowsForms`](#usewindowsforms) to `true` to import and use WinForms.
 - (Optional) Set `OutputType` to `WinExe`. This produces an app as opposed to a library. To produce a library, omit this property.
 
 ```xml

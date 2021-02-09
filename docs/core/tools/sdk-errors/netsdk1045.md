@@ -6,13 +6,15 @@ ms.date: 02/12/2021
 f1_keywords:
 - NETSDK1045
 ---
-# NETSDK1045: The current .NET SDK does not support 'newer version' as a target. Either target 'older version' or lower, or use a .NET SDK version that supports 'newer version'.
+# NETSDK1045: The current .NET SDK does not support 'newer version' as a target.
 
 **This article applies to:** ✔️ .NET Core 2.1.100 SDK and later versions
 
-This error occurs when the build tools can't find the version of the .NET SDK that's needed to build a project. This is typically due to a .NET Core SDK installation or configuration issue.
+This error occurs when the build tools can't find the version of the .NET SDK that's needed to build a project. This is typically due to a .NET Core SDK installation or configuration issue. The full error message is similar to the following example:
 
-The following sections describe some of the possible reasons for this error. Check each one and see which one applies to you. Keep it mind that when making changes to the environment or the configuration files, you might have to restart command windows, restart Visual Studio, or reboot your machine, for your changes to take effect.
+> NETSDK1045: The current .NET SDK does not support 'newer version' as a target. Either target 'older version' or lower, or use a .NET SDK version that supports 'newer version'.
+
+The following sections describe some of the possible reasons for this error. Check each one and see which one applies to you. Keep in mind that when making changes to the environment or the configuration files, you might have to restart command windows, restart Visual Studio, or reboot your machine, for your changes to take effect.
 
 ## .NET Core SDK version
 
@@ -22,7 +24,7 @@ Open the project file (.csproj, .vbproj, or .fsproj) and check the target framew
 <TargetFramework>netcoreapp3.0</TargetFramework>
 ```
 
-Make sure that the version of .NET Core listed is installed on the machine. You can list the installed versions by using the following command (open a Developer Command Prompt and run this command):
+Make sure that the version of .NET listed is installed on the machine. You can list the installed versions by using the following command (open a Developer Command Prompt and run this command):
 
 ```cmd
 dotnet --list-sdks
@@ -32,7 +34,7 @@ If the version requested is not installed, download it from [here](https://dotne
 
 ## Preview not enabled
 
-If you have a preview installed of the requested .NET Core SDK version, you also need to set the option to enable previews in Visual Studio. Go to **Tools** > **Options** > **Environment** > **Preview Features**, and make sure that **Use previews of the .NET Core SDK** is checked.
+If you have a preview installed of the requested .NET SDK version, you also need to set the option to enable previews in Visual Studio. Go to **Tools** > **Options** > **Environment** > **Preview Features**, and make sure that **Use previews of the .NET Core SDK** is checked.
 
 ## Visual Studio version
 
@@ -48,7 +50,7 @@ Check the MSBuildSDKPath variable. This optional environment variable is recogni
 
 ## The global.json file
 
-Check the root folder in your project for the *global.json* file. If it contains an SDK version, delete the `sdk` node and all its children, or update it to the desired newer .NET Core version.
+Check for a *global.json* file in the root folder in your project and up the directory chain to the root of the volume, since it can be anywhere in the folder structure. If it contains an SDK version, delete the `sdk` node and all its children, or update it to the desired newer .NET Core version.
 
 ```json
 {

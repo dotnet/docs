@@ -38,7 +38,7 @@ Specify the following settings in the project file of your WinForms or WPF proje
     <TargetFramework>net5.0-windows</TargetFramework>
 
     <UseWPF>true</UseWPF>
-    <!-- or -->
+    <!-- and/or -->
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
@@ -51,7 +51,7 @@ Specify the following settings in the project file of your WinForms or WPF proje
 
 - Target the .NET SDK `Microsoft.NET.Sdk.WindowsDesktop`. For more information, see [Project files](overview.md#project-files).
 - Set [`TargetFramework`](msbuild-props.md#targetframework) to `netcoreapp3.1`.
-- Set one of the following to enable a UI framework:
+- Add a UI framework property (or both, if necessary):
   - Set [`UseWPF`](#usewpf) to `true` to import and use WPF.
   - Set [`UseWindowsForms`](#usewindowsforms) to `true` to import and use WinForms.
 - (Optional) Set `OutputType` to `WinExe`. This produces an app as opposed to a library. To produce a library, omit this property.
@@ -64,7 +64,7 @@ Specify the following settings in the project file of your WinForms or WPF proje
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <UseWPF>true</UseWPF>
-    <!-- or -->
+    <!-- and/or -->
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
@@ -150,7 +150,7 @@ The `EnableDefaultPageItems` property controls whether `Page` items, which are _
 
 This property requires that the [`EnableDefaultItems` property](msbuild-props.md#enabledefaultitems) property is set to `true`, which is the default setting.
 
-## WinForms settings
+## Windows Forms settings
 
 - [UseWindowsForms](#usewindowsforms)
 

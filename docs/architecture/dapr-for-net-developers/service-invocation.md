@@ -248,7 +248,7 @@ Note the steps from the previous figure:
 
 In the recently updated eShopOnDapr implementation, Dapr sidecars are added to the services and API gateway. Figure 6-3 show the updated architecture:
 
-![gRPC and HTTP/REST calls in eShopOnContainers](./media/service-invocation/eshop-on-dapr.png)
+![gRPC and HTTP/REST calls with sidecars in eShopOnContainers](./media/service-invocation/eshop-on-dapr.png)
 
 **Figure 6-3**. Updated eShop architecture using Dapr.
 

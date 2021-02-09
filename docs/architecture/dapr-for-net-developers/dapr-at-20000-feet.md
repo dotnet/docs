@@ -54,17 +54,17 @@ The following table describes the infrastructure services provided by each block
 
 | Building block | Description |
 |----------------|-------------|
-| [Service-to-service invocation](https://github.com/dapr/components-contrib/tree/master/nameresolution) | Invoke direct, secure service-to-service calls using platform agnostic protocols and well-known endpoints. |
-| [Publish and subscribe](https://github.com/dapr/components-contrib/tree/master/state) | Implement secure, scalable pub/sub messaging between services. |
-| [State management](https://github.com/dapr/components-contrib/tree/master/pubsub) | Support contextual information for long running stateful services. |
-| [Observability](https://github.com/dapr/components-contrib/tree/master/bindings) | Monitor and measure message calls across networked services. |
-| [Secrets](https://github.com/dapr/components-contrib/tree/master/middleware) | Securely access external secret stores. |
-| [Actors](https://github.com/dapr/components-contrib/tree/master/secretstores) | Encapsulate logic and data in reusable actor objects. |
-| [Resource bindings and triggers](https://github.com/dapr/components-contrib/tree/master/exporters) | Trigger code from events raised by external resources with bi-directional communication. |
+| [State management](state-management.md) | Support contextual information for long running stateful services. |
+| [Service invocation](service-invocation.md) | Invoke direct, secure service-to-service calls using platform agnostic protocols and well-known endpoints. |
+| [Publish and subscribe](publish-subscribe.md) | Implement secure, scalable pub/sub messaging between services. |
+| [Bindings](bindings.md) | Trigger code from events raised by external resources with bi-directional communication. |
+| [Observability](observability.md) | Monitor and measure message calls across networked services. |
+| [Secrets](secrets.md) | Securely access external secret stores. |
+| Actors | Encapsulate logic and data in reusable actor objects. |
 
 Building blocks abstract the implementation of distributed application capabilities from your services. Figure 2-3 shows this interaction.
 
-![Dapr building blocks](./media/dapr-at-20000-feet/building-blocks-integration.png)
+![Dapr building blocks integration](./media/dapr-at-20000-feet/building-blocks-integration.png)
 
 **Figure 2-3**. Dapr building block integration.
 

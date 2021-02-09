@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5</TargetFramework>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <EnableNetAnalyzers>true</EnableNetAnalyzers>
   </PropertyGroup>
 
   <ItemGroup>

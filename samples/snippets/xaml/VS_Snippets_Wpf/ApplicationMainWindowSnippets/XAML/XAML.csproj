@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <UseWpf>true</UseWpf>
+    <EnableNetAnalyzers>true</EnableNetAnalyzers>
   </PropertyGroup>
 
 </Project>

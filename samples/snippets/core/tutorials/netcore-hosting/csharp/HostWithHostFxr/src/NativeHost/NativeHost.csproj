@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <EnableNetAnalyzers>true</EnableNetAnalyzers>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,6 +32,7 @@
       <NetHostName Condition="$([MSBuild]::IsOsPlatform('Windows'))">nethost.dll</NetHostName>
       <NetHostName Condition="$([MSBuild]::IsOsPlatform('Linux'))">libnethost.so</NetHostName>
       <NetHostName Condition="$([MSBuild]::IsOsPlatform('OSX'))">libnethost.dylib</NetHostName>
+      <EnableNetAnalyzers>true</EnableNetAnalyzers>
     </PropertyGroup>
 
     <Exec Command="g++ nativehost.cpp -I&quot;$(NetHostDir)&quot; -Iinc -D LINUX -std=c++11 -o &quot;$(NativeBinDir)/nativehost&quot; -ldl -lnethost -L&quot;$(NetHostDir)&quot; -g -Wl,-rpath,'$ORIGIN',--disable-new-dtags"

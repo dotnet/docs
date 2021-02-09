@@ -1,0 +1,44 @@
+---
+title: Symbols in .NET
+descriptions: An introduction to symbols in .NET
+ms.date: 02/08/2021
+---
+
+# Symbols
+
+Symbols are a fundamental requirement for debugging and other diagnostic tools. The contents of symbol files vary between languages, compilers, and platforms. At a very high level symbols are a mapping between the source code and the binary produced by the compiler. These mappings are used by tools like [Visual Studio](/visualstudio/debugger/what-is-debugging) and [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) to resolve function names, function parameter information, or local variables.
+
+The [Windows documentation on symbols](/windows/win32/dxtecharts/debugging-with-symbols) contain more detailed information on symbols for Windows, although many of the concepts apply to other platforms as well.
+
+## Learn about .NET's Portable PDB format
+
+.NET Core introduces a new symbol file (PDB) format - the portable PDB. Unlike traditional PDBs which are Windows-only, portable PDBs can be created and read on all platforms.
+
+### What is a PDB?
+
+A PDB file is an auxiliary file produced by a compiler to provide other tools, especially debuggers, information about what is in the main executable file and how it was produced. For example, a debugger reads a PDB to map foo.cs line 12 to the right executable location so that it can set a breakpoint. The Windows PDB format has been around a long time, and it evolved from other native debugging symbol formats which were even older. It started out its life as a format for native (C/C++) programs. For the first release of the .NET Framework, the Windows PDB format was extended to support .NET.
+
+## Use the correct PDB format for your scenario
+
+Neither portable PDBs nor Windows PDBs are supported everywhere, so you need to consider where your project will want to be used and debugged to decide which format to use. If you have a project that you want to be able to use and debug in both formats, you can use different build configurations and build the project twice to support both types of consumer.
+
+### Support for Windows PDBs
+
+Windows PDBs can only be written or read on Windows. All Windows tooling supports them, except for Visual Studio Code (as Visual Studio Code strives for consistent behavior across all platforms), and scenarios where Visual Studio is debugging to a remote Linux/OSX computer (as the PDBs must be read on the remote computer).
+
+### Support for Portable PDBs
+
+Portable PDBs can be read on any operating system, but there are a number of places where they aren't supported yet:
+
+- Older versions of the Visual Studio debugger (versions before VS 2015 Update 2)
+- Applications targeting .NET Framework 4.7.1 or earlie: printing stack traces with mappings back to line numbers (such as in an ASP.NET error page). The name of methods is unaffected, only the source file names and line numbers are unsupported
+- C# Code analysis tools (such as FxCop) except Roslyn Analyzer
+- Some symbol servers (for example, [SymbolSource](www.symbolsource.org) does not support portable PDBs, but [NuGet](https://nuget.org) does)
+- Running post-compilation build step that consumes or modifies the PDB using older versions of tools such as CCI, CodeContracts
+- Using .NET decompilers such as ildasm or .NET reflector and expecting to see source line mappings or local parameter names
+- MS DIA-based tools such as WinDBG.
+
+## See also
+
+- [Windows documentation on symbols](/windows/win32/dxtecharts/debugging-with-symbols)
+- [dotnet-symbol](./dotnet-symbol.md) can be used to download symbol files for framework binaries

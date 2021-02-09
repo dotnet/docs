@@ -338,7 +338,7 @@ The `EnableDefaultNoneItems` property controls whether `None` items (files that 
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a code analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`.
+The `AnalysisLevel` property lets you specify a code-analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`.
 
 Default value:
 
@@ -360,6 +360,9 @@ The following table shows the available options.
 | `5.0` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
 | `5` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
 
+> [!NOTE]
+> This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+
 ### AnalysisMode
 
 Starting with .NET 5.0, the .NET SDK ships with all of the ["CA" code quality rules](../../fundamentals/code-analysis/quality-rules/index.md). By default, only [some rules are enabled](../../fundamentals/code-analysis/overview.md#enabled-rules) as build warnings. The `AnalysisMode` property lets you customize the set of rules that are enabled by default. You can either switch to a more aggressive (opt-out) analysis mode or a more conservative (opt-in) analysis mode. For example, if you want to enable all rules by default as build warnings, set the value to `AllEnabledByDefault`.
@@ -377,6 +380,9 @@ The following table shows the available options.
 | `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
 | `AllEnabledByDefault` | Aggressive or opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/code-analysis/configuration-options.md) of individual rules to disable them. |
 | `AllDisabledByDefault` | Conservative or opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/code-analysis/configuration-options.md) individual rules to enable them. |
+
+> [!NOTE]
+> This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### CodeAnalysisTreatWarningsAsErrors
 

@@ -196,7 +196,7 @@ The SDK provides other methods to retrieve data in bulk, delete data, and execut
 
 ### ASP.NET Core integration
 
-Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding?view=aspnetcore-5.0) capabilities. Configuration is simple. Add the `IMVCBuilder.AddDapr` by appending the `.AddDapr` extension method in your `Startup.cs` class as shown in the next example:
+Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web applications. The Dapr SDK integrates state management capabilities directly into the [ASP.NET Core model binding](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. Add the `IMVCBuilder.AddDapr` by appending the `.AddDapr` extension method in your `Startup.cs` class as shown in the next example:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -220,7 +220,7 @@ public ActionResult<WeatherForecast> Get([FromState("statestore", "city")] State
 }
 ```
 
-In the example, the controller loads the weather forecast using the `FromState` attribute. The first attribute parameter is the state store, `statestore`. The second attribute parameter, `city`, is the name of the [route template](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing?view=aspnetcore-5.0#route-templates) variable to get the state key. If you omit the second parameter, the name of the bound method parameter (`forecast`) is used to look up the route template variable.
+In the example, the controller loads the weather forecast using the `FromState` attribute. The first attribute parameter is the state store, `statestore`. The second attribute parameter, `city`, is the name of the [route template](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing?#route-templates) variable to get the state key. If you omit the second parameter, the name of the bound method parameter (`forecast`) is used to look up the route template variable.
 
 The `StateEntry` class contains properties for all the information that is retrieved for a single key/value pair: `StoreName`, `Key`, `Value`, and `ETag`. The ETag is useful for implementing optimistic concurrency control (OCC) strategy. The class also provides methods to delete or update retrieved key/value data without requiring a `DaprClient` instance. In the next example, the `TrySaveAsync` method is used to update the retrieved weather forecast using OCC.
 

@@ -1,8 +1,8 @@
 ---
 title: Getting started with Dapr
-description: This chapter will guide you through preparing your local development environment and building your first .NET applications with Dapr.
+description: A guide for preparing your local development environment and building your first .NET applications with Dapr.
 author: amolenk 
-ms.date: 01/10/2020
+ms.date: 02/07/2021
 ---
 
 # Getting started with Dapr
@@ -34,7 +34,7 @@ You'll start by building a simple .NET Console application that consumes the [Da
 
 1. Open up the command shell or terminal of your choice. You might consider the terminal capabilities in [Visual Studio Code](https://code.visualstudio.com/). Navigate to the root folder in which you want to build your application. Once there, enter the following command to create a new .NET Console application:
 
-   ```terminal
+   ```dotnetcli
    dotnet new console -o DaprCounter
    ```
 
@@ -42,13 +42,13 @@ You'll start by building a simple .NET Console application that consumes the [Da
 
 1. Then, navigate into the new directory created by the previous command:
 
-   ```terminal
+   ```console
    cd DaprCounter
    ```
 
 1. Run the newly created application using the `dotnet run` command. Doing so writes "Hello World!" to the console screen:
 
-   ```terminal
+   ```dotnetcli
    dotnet run
    ```
 
@@ -60,7 +60,7 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
 
 1. From the terminal window, add the `Dapr.Client` NuGet package to your application:
 
-   ```terminal
+   ```dotnetcli
    dotnet add package Dapr.Client
    ```
 
@@ -69,7 +69,7 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
 
 1. Open the `Program.cs` file in your favorite editor and update its contents to the following code:
 
-   ```c#
+   ```csharp
    using System;
    using System.Threading.Tasks;
    using Dapr;
@@ -81,9 +81,9 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
        {
            static async Task Main(string[] args)
            {
-               DaprClient daprClient = new DaprClientBuilder().Build();
+               var daprClient = new DaprClientBuilder().Build();
    
-               int counter = await daprClient.GetStateAsync<int>("statestore", "counter");
+               var counter = await daprClient.GetStateAsync<int>("statestore", "counter");
    
                while (true)
                {
@@ -107,11 +107,11 @@ You can invoke Dapr APIs across any development platform using Dapr's native sup
 1. The Dapr CLI `run` command starts the application. It invokes the underlying Dapr runtime and enables both the application and Dapr sidecar to run together. If you omit the `app-id`, Dapr will generate a unique name for the application. The final segment of the command, `dotnet run`, instructs the Dapr runtime to run the .NET core application.
 
    > [!IMPORTANT]
-   > Care must be taken to always pass an explicit `app-id` parameter when consuming the state management building block. The block uses the application id value as a *prefix* for its state key for each key-value pair. If the application id changes, you can no longer access the previous stored state.
+   > Care must be taken to always pass an explicit `app-id` parameter when consuming the state management building block. The block uses the application id value as a *prefix* for its state key for each key/value pair. If the application id changes, you can no longer access the previous stored state.
 
    Now run the application with the following command:
 
-   ```terminal
+   ```console
    dapr run --app-id DaprCounter dotnet run
    ```
 
@@ -133,6 +133,7 @@ metadata:
   name: statestore
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -148,7 +149,7 @@ spec:
 Note the format of the previous component configuration file:
 
 - Each component has a name. In the sample above, the component is named `statestore`. We used that name in our first code example to tell the Dapr sidecar which component to use.
-- Each component configuration file has a `spec` section. It contains a `type` field that specifies the component type. The `metadata` field contains information that the component requires, such as connection details and other settings. The metadata values will vary for the different types of components.
+- Each component configuration file has a `spec` section. It contains a `type` field that specifies the component type. The `version` field specifies the component version. The `metadata` field contains information that the component requires, such as connection details and other settings. The metadata values will vary for the different types of components.
 
 A Dapr sidecar can consume any Dapr component configured in your application. But, what if you had an architectural justification to limit the accessibility of a component? How could you restrict the Redis component to Dapr sidecars running only in a production environment?
 
@@ -162,6 +163,7 @@ metadata:
   namespace: production
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -170,6 +172,9 @@ spec:
   - name: actorStateStore
     value: "true"
 ```
+
+> [!IMPORTANT]
+> A namespaced component is only accessible to applications running in the same namespace. If your Dapr application fails to load a component, make sure that the application namespace matches the component namespace. This can be especially tricky in self-hosted mode where the application namespace is stored in a `NAMESPACE` environment variable.
 
 If needed, you could further restrict a component to a particular application. Within the `production` namespace, you may want to limit access of the Redis cache to only the `DaprCounter` application. You do so by specifying `scopes` in the component configuration. The following example shows how to restrict access to the Redis `statestore` component to the application `DaprCounter` in the `production` namespace:
 
@@ -181,6 +186,7 @@ metadata:
   namespace: production
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -196,7 +202,7 @@ spec:
 
 In the first example, you created a simple .NET console application that ran side-by-side with a Dapr sidecar. Modern distributed applications, however, often consist of many moving parts. They can simultaneously run independent microservices. These modern applications are typically containerized and require container orchestration tools such as Docker Compose or Kubernetes.
 
-In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](service-invocation.md) building block to communicate between services. The solution will consist of a front-end web application that retrieves weather forecasts from a back-end web API. The front-end and back-end will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
+In the next example, you'll create a multi-container application. You'll also use the [Dapr service invocation](service-invocation.md) building block to communicate between services. The solution will consist of a  web application that retrieves weather forecasts from a  web API. The  and  will each run in a Docker container. You'll use Docker Compose to run the container locally and enable debugging capabilities.
 
 Make sure you've configured your local environment for Dapr and installed the [.NET Core 3 Development Tools](https://dotnet.microsoft.com/download/dotnet-core/3.1) (instructions are available at the beginning of this chapter).
 
@@ -216,20 +222,17 @@ Additionally, you'll need complete this sample using [Visual Studio 2019](https:
 
    ![Screenshot of creating a new ASP.NET Core web application](./media/getting-started/multicontainer-createwebapp.png)
 
-1. Add a second ASP.NET Core Web Application project to the same solution and call it *DaprBackEnd*. Select **API** as the project type, and clear the checkbox for **Configure for HTTPS**.
+1. Add a second ASP.NET Core Web Application project to the same solution and call it *DaprBackEnd*. Select **API** as the project type. By default, a Dapr sidecar relies on the network boundary to limit access to its public API. Therefore, clear the checkbox for **Configure for HTTPS**.
 
-   > [!NOTE]
-   > A sidecar is designed to use unencrypted HTTP to communicate with the application container. It's recommended to deploy Dapr sidecars in the same network namespace as the application. Dapr uses HTTPS for the front-end and provides support for [mTLS](https://docs.dapr.io/concepts/security-concept/#sidecar-to-sidecar-communication) to encrypt calls between services.
+   ![Screenshot of creating the  web API](./media/getting-started/multicontainer-createwebapi.png)
 
-   ![Screenshot of creating the back-end web API](./media/getting-started/multicontainer-createwebapi.png)
+### Add Dapr service invocation
 
-### Add Dapr Service Invocation
-
-Now, you'll configure communication between the services using Dapr [service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/). You'll enable the front-end web app to retrieve weather forecasts from the back-end web API. The service invocation building block features many benefits. It includes service discovery, automatic retries, message encryption (using mTLS), and improved observability. You'll use the Dapr .NET SDK to invoke the service invocation API on the Dapr sidecar.
+Now, you'll configure communication between the services using Dapr [service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/). You'll enable the  web app to retrieve weather forecasts from the  web API. The service invocation building block features many benefits. It includes service discovery, automatic retries, message encryption (using mTLS), and improved observability. You'll use the Dapr .NET SDK to invoke the service invocation API on the Dapr sidecar.
 
 1. In Visual Studio, open the Package Manager Console (**Tools > NuGet Package Manager > Package Manager Console**) and make sure that `DaprFrontEnd` is the default project. From the console, add the `Dapr.AspNetCore` NuGet package to the project:
 
-   ```terminal
+   ```powershell
    Install-Package Dapr.AspNetCore
    ```
 
@@ -238,12 +241,12 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 1. In the `DaprFrontEnd` project, open the *Startup.cs* file, and replace the `ConfigureServices` method with the following code:
 
-   ```c#
+   ```csharp
    // This method gets called by the runtime. Use this method to add services to the container.
    public void ConfigureServices(IServiceCollection services)
    {
-     services.AddControllers().AddDapr();
-     services.AddRazorPages();
+       services.AddControllers().AddDapr();
+       services.AddRazorPages();
    }
    ```
 
@@ -251,61 +254,59 @@ Now, you'll configure communication between the services using Dapr [service inv
 
 1. Add a new C# class file named *WeatherForecast* to the `DaprFrontEnd` project:
 
-   ```c#
+   ```csharp
    using System;
       
-      namespace DaprFrontEnd
-      {
-          public class WeatherForecast
-          {
-              public DateTime Date { get; set; }
+   namespace DaprFrontEnd
+   {
+       public class WeatherForecast
+       {
+           public DateTime Date { get; set; }
       
-              public int TemperatureC { get; set; }
+           public int TemperatureC { get; set; }
       
-              public int TemperatureF { get; set; }
+           public int TemperatureF { get; set; }
       
-              public string Summary { get; set; }
-          }
-      }
+           public string Summary { get; set; }
+       }
+   }
    ```
 
 1. Open the *Index.cshtml.cs* file in the *Pages* folder, and replace its contents with the following code:
 
-   ```c#
+   ```csharp
+   using System;
    using System.Collections.Generic;
    using System.Net.Http;
    using System.Threading.Tasks;
    using Dapr.Client;
    using Microsoft.AspNetCore.Mvc.RazorPages;
-   
+
    namespace DaprFrontEnd.Pages
    {
        public class IndexModel : PageModel
        {
-           private readonly DaprClient _client;
-   
-           public IndexModel(DaprClient client)
+           private readonly DaprClient _daprClient;
+
+           public IndexModel(DaprClient daprClient)
            {
-               _client = client;
+               _daprClient = daprClient ?? throw new ArgumentNullException(nameof(daprClient));
            }
-   
+
            public async Task OnGet()
            {
-               var forecasts = await _client.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
+               var forecasts = await _daprClient.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
+                   HttpMethod.Get,
                    "daprbackend",
-                   "weatherforecast",
-                   new HttpInvocationOptions
-                   {
-                       Method = HttpMethod.Get
-                   });
-   
+                   "weatherforecast");
+
                ViewData["WeatherForecastData"] = forecasts;
            }
        }
    }
    ```
 
-   You add Dapr capabilities into the front-end web app by injecting the `DaprClient` class into `IndexModel` constructor. In the `OnGet` method, you call the back-end API service with the Dapr service invocation building block. The `OnGet` method is invoked whenever a user visits the home page. You use the `DaprClient.InvokeMethodAsync` method to invoke the `weatherforecast` method of the `daprbackend` service. You'll configure the back-end web API to use `daprbackend` as its application id later on when configuring it to run with Dapr. Finally, the service response is saved in view data.
+   You add Dapr capabilities into the  web app by injecting the `DaprClient` class into `IndexModel` constructor. In the `OnGet` method, you call the  API service with the Dapr service invocation building block. The `OnGet` method is invoked whenever a user visits the home page. You use the `DaprClient.InvokeMethodAsync` method to invoke the `weatherforecast` method of the `daprbackend` service. You'll configure the  web API to use `daprbackend` as its application id later on when configuring it to run with Dapr. Finally, the service response is saved in view data.
 
 1. Replace the contents of the *Index.cshtml* file in the *Pages* folder, with the following code. It displays the weather forecasts stored in the view data to the user:
 
@@ -430,7 +431,7 @@ In the final part of this example, you'll add container support and run the solu
 
    Running locally with Docker Compose and Visual Studio 2019, you can set breakpoints and debug into the application. For production scenarios, it's recommended to host your application in Kubernetes. This book includes an accompanying reference application, [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr), that contains scripts to deploy to Kubernetes.
 
-   To learn more about the Dapr Service Invocation building block used in this walkthrough, refer to [chapter 6](service-invocation.md).
+   To learn more about the Dapr service invocation building block used in this walkthrough, refer to [chapter 6](service-invocation.md).
 
 ## Summary
 
@@ -450,6 +451,6 @@ In the upcoming chapters, you'll dive deep into the building blocks offered by D
 
 - [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr)
 
-<!-- >[!div class="step-by-step"]
->[Previous](index.md)
->[Next](index.md) -->
+> [!div class="step-by-step"]
+> [Previous](dapr-at-20000-feet.md)
+> [Next](reference-application.md)

@@ -1,8 +1,8 @@
 ---
-title: The World is Distributed
+title: The world is distributed
 description: The benefits and challenges of distributed applications with a look at monolithic and SOA approaches.
 author: robvet
-ms.date: 11/07/2020
+ms.date: 02/07/2021
 ---
 
 # The world is distributed
@@ -22,9 +22,9 @@ But, this evolution raises many questions...
 
 To start, let's rewind and look at the past 15 years. During this period, we typically constructed applications as a single, monolithic unit. Figure 1-1 shows the architecture.
 
-![Monolithic architecture.](./media/monolithic-design.png)
+![Monolithic architecture.](./media/the-world-is-distributed/monolithic-design.png)
 
-**Figure 1-1** : Monolithic architecture.
+**Figure 1-1**. Monolithic architecture.
 
 Note how the modules for Ordering, Identity, and Marketing execute in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTful interfaces.
 
@@ -56,9 +56,9 @@ Instead of fear, businesses require `speed and agility`. They seek an architectu
 
 An early attempt to gain speed and agility came in the form of [Service Oriented Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), or `SOA`. In this model, service consumers and service providers collaborated via middleware messaging components, often referred to as an [Enterprise Service Bus](https://en.wikipedia.org/wiki/Enterprise_service_bus), or `ESB`. Figure 1-2 shows the architecture.
 
-![SOA.](./media/soa-basic.png)
+![SOA.](./media/the-world-is-distributed/soa-basic.png)
 
-**Figure 1-2** SOA architecture.
+**Figure 1-2**. SOA architecture.
 
 With SOA, centralized service providers registered with the ESB. Business logic would be built into the ESB to integrate providers and consumers. Service consumers could then find and communicate with these providers using the ESB.
 
@@ -66,11 +66,11 @@ Despite the promises of SOA, implementing this approach often increased complexi
 
 Nowadays, many organizations have realized speed and agility by adopting a distributed microservice architectural approach to building systems. Figure 1-3 shows the same system built using distributed techniques and practices.
 
-![Distributed architecture.](./media/distributed-design.png)
+![Distributed architecture.](./media/the-world-is-distributed/distributed-design.png)
 
-**Figure 1-3** : Distributed architecture.
+**Figure 1-3**. Distributed architecture.
 
-Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a single database shared by multiple services, each service owns a private database. Other services cannot access this database directly and can only get to data that is exposed through the public API of the service that owns it. Note how some services require a full relational database, but others, a NoSQL datastore. The Basket service stores its state in a distributed key-value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to back-end services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
+Note how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a single database shared by multiple services, each service owns a private database. Other services cannot access this database directly and can only get to data that is exposed through the public API of the service that owns it. Note how some services require a full relational database, but others, a NoSQL datastore. The basket service stores its state in a distributed key/value cache. Note how inbound traffic routes through an API Gateway service. It's responsible for directing calls to  services and enforcing cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 
 But, while distributed services can provide agility and speed, they present a different set of challenges. Consider the following...
 
@@ -95,4 +95,4 @@ Now, sit back, relax, and let us introduce you the new world of Dapr.
 
 >[!div class="step-by-step"]
 >[Previous](index.md)
->[Next](index.md)
+>[Next](dapr-at-20000-feet.md)

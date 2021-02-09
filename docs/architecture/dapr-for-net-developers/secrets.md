@@ -1,11 +1,11 @@
 ---
-title: The Dapr secrets management building block
-description: Learn about the Dapr secrets management building block and how can to apply it to applications.
+title: The Dapr secrets building block
+description: A description of the secrets building block, its features, benefits, and how to apply it
 author: edwinvw
-ms.date: 1/23/2020
+ms.date: 02/07/2021
 ---
 
-# The Dapr secrets management building block
+# The Dapr secrets building block
 
 Enterprise applications require secrets. Common examples include:
 
@@ -19,7 +19,7 @@ Not long ago, it was popular to store application secrets in a configuration fil
 
 A widely accepted methodology for constructing modern distributed applications is [The Twelve-Factor App](https://12factor.net/). It describes a set of principles and best practices. Its third factor prescribes that *configuration and secrets be externalized outside of the code base.*
 
-To address this concern, the .NET Core platform includes a [Secret Manager](https://docs.microsoft.com/aspnet/core/security/app-secrets?view=aspnetcore-5.0&tabs=windows#secret-manager) feature that stores sensitive data in a physical folder outside of the project tree. While secrets are outside of source control, this feature doesn't encrypt data. It's designed for **development purposes** only.
+To address this concern, the .NET Core platform includes a [Secret Manager](https://docs.microsoft.com/aspnet/core/security/app-secrets#secret-manager) feature that stores sensitive data in a physical folder outside of the project tree. While secrets are outside of source control, this feature doesn't encrypt data. It's designed for **development purposes** only.
 
 A more modern and secure practice is to isolate secrets in a secrets management tool like **Hashicorp Vault** or **Azure Key Vault**.  These tools enable you to store secrets externally, vary credentials across environments, and reference them from application code. However, each tool has its complexities and learning curve.
 
@@ -27,10 +27,10 @@ Dapr offers a building block that simplifies managing secrets.
 
 ## What it solves
 
-The Dapr [Secrets Management building block](https://docs.dapr.io/developing-applications/building-blocks/secrets/secrets-overview/) abstracts away the complexity of working with secrets and secret management tools.
+The Dapr [secrets building block](https://docs.dapr.io/developing-applications/building-blocks/secrets/secrets-overview/) abstracts away the complexity of working with secrets and secret management tools.
 
 - It hides the underlying plumbing through a unified interface.
-- It supports various *pluggable* secret stores components, which can vary between development and production.
+- It supports various *pluggable* secret store components, which can vary between development and production.
 - Applications don't require direct dependencies on secret store libraries.
 - Developers don't require detailed knowledge of each secret store.
 
@@ -40,45 +40,45 @@ Access to the secrets is secured through authentication and authorization. Only 
 
 ## How it works
 
-Applications use the secrets management building block in two ways:
+Applications use the secrets building block in two ways:
 
 - Retrieve a secret directly from the application block.
 - Reference a secret indirectly from a Dapr component configuration.
 
 Retrieving secrets directly is covered first. Referencing a secret from a Dapr component configuration file is addressed in a later section.
 
-The application interacts with a Dapr sidecar service when using the secrets management building block. The sidecar exposes the secrets management API. The API can be called with either HTTP or gRPC using the following URL:
+The application interacts with a Dapr sidecar when using the secrets building block. The sidecar exposes the secrets API. The API can be called with either HTTP or gRPC. Use the following URL to call the HTTP API:
 
 ```http
-http://localhost:<daprPort>/v1.0/secrets/<secret-store-name>/<name>?<metadata>
+http://localhost:<dapr-port>/v1.0/secrets/<store-name>/<name>?<metadata>
 ```
 
 The URL contains the following segments:
 
-- `<daprPort>` specifies the port number upon which the Dapr sidecar is listening.
-- `<secret-store-name>` specifies the name of the Dapr secrets management component.
+- `<dapr-port>` specifies the port number upon which the Dapr sidecar is listening.
+- `<store-name>` specifies the name of the Dapr secret store.
 - `<name>` specifies  the name of the secret to retrieve.
-- `<metadata>` provides additional information for the secret. This segment is optional and metadata properties differ per secret store. For more information on metadata properties, see the [secrets management API reference]([Secrets API reference | Dapr Docs](https://docs.dapr.io/reference/api/secrets_api/)).
+- `<metadata>` provides additional information for the secret. This segment is optional and metadata properties differ per secret store. For more information on metadata properties, see the [secrets API reference]([Secrets API reference | Dapr Docs](https://docs.dapr.io/reference/api/secrets_api/)).
 
  > [!NOTE]
  > The above URL represents the native Dapr API call available to any development platform that supports HTTP or gRPC. Popular platforms like .NET, Java, and Go have their own custom APIs.
 
 The JSON response contains the key and value of the secret.
 
-Figure 10-1 shows how Dapr handles a request for the secrets management API:
+Figure 10-1 shows how Dapr handles a request for the secrets API:
 
-![Diagram of retrieving a secret using the Dapr secrets management API.](media/secrets-management/retrieve-secret.png)
+![Diagram of retrieving a secret using the Dapr secrets API.](media/secrets/secrets-flow.png)
 
-**Figure 10-1**. Retrieving a secret with the Dapr secrets management API
+**Figure 10-1**. Retrieving a secret with the Dapr secrets API.
 
-1. The service calls the Dapr secrets management API, along with the name of the secret store, and secret to retrieve.
-1. The Dapr sidecar retrieves the specified secret from the secrets store.
+1. The service calls the Dapr secrets API, along with the name of the secret store, and secret to retrieve.
+1. The Dapr sidecar retrieves the specified secret from the secret store.
 1. The Dapr sidecar returns the secret information back to the service.
 
 Some secret stores support storing multiple key/value pairs in a single secret. For those scenarios, the response would contain multiple key/value pairs in a single JSON response as in the following example:
 
 ```http
-GET http://localhost:3500/v1.0/secrets/secrets-store/interestRates?metadata.version_id=3
+GET http://localhost:3500/v1.0/secrets/secret-store/interestRates?metadata.version_id=3
 ```
 
 ```json
@@ -92,7 +92,7 @@ GET http://localhost:3500/v1.0/secrets/secrets-store/interestRates?metadata.vers
 The Dapr secrets API also offers an operation to retrieve all the secrets the application has access to:
 
 ```http
-http://localhost:<daprPort>/v1.0/secrets/<secret-store-name>/bulk
+http://localhost:<dapr-port>/v1.0/secrets/<store-name>/bulk
 ```
 
 ## Using the Dapr .NET SDK
@@ -101,13 +101,13 @@ For .NET developers, the Dapr .NET SDK streamlines Dapr secret management. Consi
 
 ```csharp
 var metadata = new Dictionary<string, string> { ["version_id"] = "3" };
-Dictionary<string, string> secrets = await daprClient.GetSecretAsync("secrets-store", "eshopsecrets", metadata);
+Dictionary<string, string> secrets = await daprClient.GetSecretAsync("secret-store", "eshopsecrets", metadata);
 string connectionString = secrets["customerdb"];
 ```
 
 Arguments for the `GetSecretAsync` method include:
 
-- The name of the Dapr secret store component ('secrets-store')
+- The name of the Dapr secret store component ('secret-store')
 - The secret to retrieve ('eshopsecrets')
 - Optional metadata key/value pairs ('version_id=3')
 
@@ -127,7 +127,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
             {
                 new DaprSecretDescriptor("eshopsecrets")
             };
-            config.AddDaprSecretStore("secrets-store", secretDescriptors, daprClient);
+            config.AddDaprSecretStore("secret-store", secretDescriptors, daprClient);
         })
         .ConfigureWebHostDefaults(webBuilder =>
         {
@@ -135,7 +135,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
         });
 ```
 
-The above example loads the `eshopsecrets` secrets collection into the .NET configuration system at startup. Registering the provider requires an instance of `DaprClient` to invoke the secrets API on the Dapr sidecar. The other arguments include the name of the secrets management component and a `DaprSecretDescriptor` object with the name of the secret.
+The above example loads the `eshopsecrets` secrets collection into the .NET configuration system at startup. Registering the provider requires an instance of `DaprClient` to invoke the secrets API on the Dapr sidecar. The other arguments include the name of the secret store and a `DaprSecretDescriptor` object with the name of the secret.
 
 Once loaded, you can retrieve secrets directly from application code:
 
@@ -146,9 +146,9 @@ public void GetCustomer(IConfiguration config)
 }
 ```
 
-## Secrets management components
+## Secret store components
 
-The secrets management building block supports several secret store components. At the time of writing, the following secret stores are available:
+The secrets building block supports several secret store components. At the time of writing, the following secret stores are available:
 
 - Environment Variables
 - Local file
@@ -161,11 +161,11 @@ The secrets management building block supports several secret store components. 
 > [!IMPORTANT]
 > The environment variables and local file components are designed for development workloads only.
 
-The following sections show how to configure a secrets management component.
+The following sections show how to configure a secret store.
 
 ### Configuration
 
-You configure a secrets management component using a Dapr component configuration file. The typical structure of the file is shown below:
+You configure a secret store using a Dapr component configuration file. The typical structure of the file is shown below:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -175,7 +175,7 @@ metadata:
   namespace: [namespace]
 spec:
   type: secretstores.[secret store type]
-  version: v1
+  version: [secret store version]
   metadata:
   - name: [property name]
     value: [property value]
@@ -195,6 +195,7 @@ metadata:
   namespace: eshop
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -218,7 +219,7 @@ The local file component is designed for development scenarios. It stores secret
 
 You place this file in a `components` folder that you specify when running the Dapr application.
 
-The following secrets management component configuration file consumes the JSON file as a secret store. It's also placed in the `components` folder:
+The following secret store configuration file consumes the JSON file as a secret store. It's also placed in the `components` folder:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -243,12 +244,12 @@ The component type is `secretstore.local.file`. The `secretsFile` metadata eleme
 
 From the application folder, start the Dapr application specifying the `components` path as a command-line argument:
 
-```bash
+```console
 dapr run --app-id basket-api --components-path ./components dotnet run
 ```
 
 > [!NOTE]
-> This above example applies to running Dapr in stand-alone mode. For Kubernetes hosting, consider using volume mounts.
+> This above example applies to running Dapr in self-hosted mode. For Kubernetes hosting, consider using volume mounts.
 
 The `nestedSeparator` in a Dapr configuration file specifies a character to *flatten* a JSON hierarchy. Consider the following snippet:
 
@@ -277,6 +278,7 @@ metadata:
   namespace: eshop
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: localhost:6379
@@ -296,7 +298,7 @@ You might wonder why `eShopRedisPassword` is identical for both the name and key
 
 This second example focuses on a Dapr application running in Kubernetes. It uses the standard secrets mechanism that Kubernetes offers. Use the Kubernetes CLI (`kubectl`) to create a secret named `eshop-redis-secret` that contains the password:
 
-```bash
+```console
 kubectl create secret generic eshopsecrets --from-literal=redisPassword=e$h0p0nD@pr -n eshop
 ```
 
@@ -310,6 +312,7 @@ metadata:
   namespace: eshop
 spec:
   type: state.redis
+  version: v1
   metadata:
   - name: redisHost
     value: redis:6379
@@ -344,9 +347,9 @@ For this example to work, the following prerequisites must be satisfied:
 
 The [Dapr Azure Key Vault secret store documentation](https://docs.dapr.io/operations/components/setup-secret-store/supported-secret-stores/azure-keyvault/) provides step-by-step instructions to create and configure a Key Vault environment.
 
-#### Using Key Vault when running in stand-alone mode
+#### Using Key Vault when running in self-hosted mode
 
-Consuming Azure Key Vault in Dapr stand-alone mode requires the following configuration file:
+Consuming Azure Key Vault in Dapr self-hosted mode requires the following configuration file:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -368,7 +371,7 @@ spec:
     value : "azurekv-spn-cert.pfx"
 ```
 
-The secrets management component type is `secretstores.azure.keyvault`. The `metadata` element to configure access to Key Vault requires the following properties:
+The secret store type is `secretstores.azure.keyvault`. The `metadata` element to configure access to Key Vault requires the following properties:
 
 - The `vaultName` contains the name of the Azure Key Vault.
 - The `spnTenantId` contains the *tenant id* of the service principal used to authenticate against the Key Vault.
@@ -386,7 +389,7 @@ Consuming Azure Key Vault with Dapr and Kubernetes also requires a service princ
 
 First, create a *Kubernetes secret* that contains a certificate file using the kubectl CLI tool:
 
-```bash
+```console
 kubectl create secret generic [k8s_spn_secret_name] --from-file=[pfx_certificate_file_local_path] -n eshop
 ```
 
@@ -395,7 +398,7 @@ The command requires two command-line arguments:
 - `[k8s_spn_secret_name]` is the secret name in Kubernetes secret store.
 - `[pfx_certificate_file_local_path]` is the path of X509 certificate file.
 
-Once created, you can reference the Kubernetes secret in the secrets management component configuration file:
+Once created, you can reference the Kubernetes secret in the secret store component configuration file:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
@@ -430,7 +433,7 @@ When running in  Azure Kubernetes Service (AKS), it's preferable to use an [Azur
 
 ### Scoping secrets
 
-Secret scopes allow you to control which secrets your application can access. You configure scopes in a Dapr sidecar configuration file. The [Dapr sidecar configuration documentation](https://v1-rc2.docs.dapr.io/operations/configuration/configuration-overview/) provides instructions for scoping secrets.
+Secret scopes allow you to control which secrets your application can access. You configure scopes in a Dapr sidecar configuration file. The [Dapr configuration documentation](https://docs.dapr.io/operations/configuration/configuration-overview/) provides instructions for scoping secrets.
 
 Here's an example of a Dapr sidecar configuration file that contains secret scopes:
 
@@ -460,23 +463,24 @@ You specify scopes per secret store. In the above example, the secret store is n
 
 The `allowedSecrets` and `deniedSecrets` properties take precedence over the `defaultAccess` property. Imagine specifying `defaultAccess: allowed` and an `allowedSecrets` list. In this case, only the secrets in the `allowedSecrets` list would be accessible by the application.
 
-## Reference architecture: eShopOnDapr
+## Reference application: eShopOnDapr
 
-The eShopOnDapr reference application uses the secrets management building block for two secrets:
+The eShopOnDapr reference application uses the secrets building block for two secrets:
 
 - The password for connecting to the Redis cache.
-- The API-key for using the Twilio Sendgrid API. The application uses Twillio to send emails using a Dapr output binding (as described in the [Bindings building block chapter](bindings.md)).
+- The API-key for using the Twilio Sendgrid API. The application uses Twillio to send emails using a Dapr output binding (as described in the [bindings building block chapter](bindings.md)).
 
-When running the application using Docker Compose, the **local file** secrets store is used. The component configuration file `eshop-secretstore.yaml` is found in the `dapr/components` folder of the eShopOnDapr repository:
+When running the application using Docker Compose, the **local file** secret store is used. The component configuration file `eshop-secretstore.yaml` is found in the `dapr/components` folder of the eShopOnDapr repository:
 
 ```yaml
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
   name: eshop-secretstore
-  namespace: default
+  namespace: eshop
 spec:
   type: secretstores.local.file
+  version: v1
   metadata:
   - name: secretsFile
     value: ./components/eshop-secretstore.json
@@ -519,9 +523,10 @@ apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
   name: pubsub
-  namespace: default
+  namespace: eshop
 spec:
   type: pubsub.redis
+  version: v1
   metadata:
   - name: redisHost
     value: redis:6379
@@ -536,9 +541,9 @@ In the preceding example, the local Redis store is used to reference secrets.
 
 ## Summary
 
-The Dapr Secrets Management building block provides capabilities for storing and retrieving sensitive configuration settings like passwords and connection-strings. It keeps secrets private and prevents them from being accidentally disclosed.
+The Dapr secrets building block provides capabilities for storing and retrieving sensitive configuration settings like passwords and connection-strings. It keeps secrets private and prevents them from being accidentally disclosed.
 
-The building block supports several different secret stores and hides their complexity with the Dapr secrets management API.
+The building block supports several different secret stores and hides their complexity with the Dapr secrets API.
 
 The Dapr .NET SDK provides a `DaprClient` object to retrieve secrets. It also includes a .NET configuration provider that adds secrets to the .NET Core configuration system. Once loaded, you can consume these secrets in your .NET code.
 
@@ -550,4 +555,4 @@ You can use secret scopes to control access to specific secrets.
 
 >[!div class="step-by-step"]
 >[Previous](observability.md)
->[Next](index.md)
+>[Next](summary.md)

@@ -1,19 +1,19 @@
 ---
 title: Dapr for .NET Developers
-description: A guide for to understand and leverage the full power of Microsoft's open source Distributed Application Runtime.
+description: A guide for .NET developers to understand and leverage the full power of Microsoft's open source Distributed Application Runtime.
 author: robvet
-ms.date: 09/05/2020
+ms.date: 02/07/2021
 ---
 
 # Dapr for .NET Developers
 
 ![cover image](./media/cover.png)
 
-**EDITION v.1.0**
+**PREVIEW EDITION**
 
 PUBLISHED BY
 
-Microsoft Developer Division, .NET, and Visual Studio product teams
+Microsoft Developer Division, .NET, and Azure Incubations teams
 
 A division of Microsoft Corporation
 
@@ -21,7 +21,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2020 by Microsoft Corporation
+Copyright &copy; 2021 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -39,29 +39,31 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
+> **Rob Vettor**, Principal Cloud Solution Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
-> **Sander Molenkamp**, Principal Cloud Architect/Microsoft MVP - Info Support [])
+> **Sander Molenkamp**, Principal Cloud Architect/Microsoft MVP - [sandermolenkamp.com](https://www.sandermolenkamp.com), [Info Support](https://www.infosupport.com/en/)
 >
-> **Edwin van Wijk**, Principal Software Architect/Microsoft MVP - Info Support [])
+> **Edwin van Wijk**, Principal Solution Architect/Microsoft MVP - [defaultconstructor.com](https://defaultconstructor.com), [Info Support](https://www.infosupport.com/en/)
 
 Participants and Reviewers:
 
 > **Nish Anil**, Senior Program Manager, .NET team, Microsoft
 >
-> **Mark Fussell**, Prinicpal Program Manager, Azure Incubations, Microsoft
+> **Mark Fussell**, Principal Program Manager, Azure Incubations, Microsoft
 >
-> **Yaron Schneider**, Prinicpal Software Engineer, Azure Incubations, Microsoft
+> **Yaron Schneider**, Principal Software Engineer, Azure Incubations, Microsoft
 >
 > **Ori Zohar**, Senior Program Manager, Azure Incubations, Microsoft
 
 Editors:
 
+> **David Pine**, Senior Content Developer, .NET team, Microsoft
+
 > **Maira Wenzel**, Program Manager, .NET team, Microsoft
 
 ## Version
 
-This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release.
+This guide has been written to cover the **Dapr 1.0** version. .NET Core samples are based on **.NET Core 3.1**.
 
 ## Who should use this guide
 
@@ -71,7 +73,7 @@ A secondary audience is technical decision-makers who plan to choose whether to 
 
 ## How you can use this guide
 
-This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf) form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
+This guide is available both in [PDF](https://aka.ms/dapr-ebook) form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
 
 ## Send your feedback
 

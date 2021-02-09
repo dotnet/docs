@@ -34,6 +34,7 @@ A [dump](./dumps.md) is a file that contains a snapshot of the process at the ti
 ## Symbols
 
 [Symbols](./symbols.md) are a mapping between the source code and the binary produced by the compiler. These are used by debuggers to resolve function names and parameters, line numbers, and local variables.
+
 ## Collect diagnostics in containers
 
 The same diagnostics tools that are used in non-containerized Linux environments can also be used to [collect diagnostics in containers](diagnostics-in-containers.md). There are just a few usage changes needed to make sure the tools work in a Docker container.

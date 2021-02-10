@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
-    <EnableNetAnalyzers>true</EnableNetAnalyzers>
   </PropertyGroup>
 
   <Target Name="SetupForDemo"

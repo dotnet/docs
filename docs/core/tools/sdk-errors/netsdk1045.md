@@ -46,7 +46,7 @@ For example, .NET Core 3.0 and later require Visual Studio 2019. Upgrade to [Vis
 
 ## PATH environment variable
 
-The build tools use the PATH environment variable to find the right version of the .NET Core build tools. If the PATH environment variable contains direct paths to older build tools, this error message could appear. Make sure the only path to the .NET tools in the PATH environment variable is to the top-level *dotnet* folder, for example, *C:\Program Files\dotnet*. An example of an incorrect PATH would be something like *C:\Program Files\dotnet\2.1.0\sdks*.
+The build tools use the PATH environment variable to find the right version of the .NET build tools. If the PATH environment variable contains direct paths to older build tools, this error message could appear. Make sure the only path to the .NET tools in the PATH environment variable is to the top-level *dotnet* folder, for example, *C:\Program Files\dotnet*. An example of an incorrect PATH would be something like *C:\Program Files\dotnet\2.1.0\sdks*.
 
 ## MSBuildSDKPath environment variable
 

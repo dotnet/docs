@@ -33,7 +33,7 @@ A [dump](./dumps.md) is a file that contains a snapshot of the process at the ti
 
 ## Symbols
 
-[Symbols](./symbols.md) are a mapping between the source code and the binary produced by the compiler. These are used by debuggers to resolve function names and parameters, line numbers, and local variables.
+[Symbols](./symbols.md) are a mapping between the source code and the binary produced by the compiler. These are commonly used by .NET debuggers to resolve source line numbers, local variable names, and other types of diagnostic information.
 
 ## Collect diagnostics in containers
 

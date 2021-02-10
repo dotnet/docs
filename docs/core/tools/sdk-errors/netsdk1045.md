@@ -26,7 +26,7 @@ Open the project file (.csproj, .vbproj, or .fsproj) and check the target framew
 
 Make sure that the version of .NET listed is installed on the machine. You can list the installed versions by using the following command (open a Developer Command Prompt and run this command):
 
-```cmd
+```dotnetcli
 dotnet --list-sdks
 ```
 

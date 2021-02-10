@@ -86,7 +86,10 @@ dotnet_analyzer_diagnostic.severity = <severity value>
 ```
 
 > [!IMPORTANT]
-> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). To enable rules that are disabled by default, you must add an explicit `dotnet_diagnostic.<rule ID>.severity = <severity>` configuration entry for each rule.
+> When you configure the severity level for multiple rules with a single entry, either for a *category* of rules or for *all* rules, the severity only applies to rules that are [enabled by default](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). To enable rules that are disabled by default, you must either:
+>
+> - Add an explicit `dotnet_diagnostic.<rule ID>.severity = <severity>` configuration entry for each rule.
+> - Enable *all* rules by setting [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) to `AllEnabledByDefault`.
 
 #### Precedence
 

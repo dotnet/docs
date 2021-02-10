@@ -52,7 +52,7 @@ You can change the severity of these rules to disable them or elevate them to er
 
 ### Enable additional rules
 
-*Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode, only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
+*Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode, only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
 
 | Value | Description |
 | - | - |

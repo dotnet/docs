@@ -191,7 +191,7 @@
         "docs/core/tools/dotnet*.md": "reference",
         "docs/core/tutorials/**.md": "tutorial",
         "docs/csharp/getting-started/**/*.md": "overview",
-        "docs/csharp/how-to/**/*.md": "how-to",
+        "docs/**/*how-to*.md": "how-to",
         "docs/csharp/language-reference/compiler-messages/*.md": "error-reference",
         "docs/csharp/language-reference/**/*.md": "reference",
         "docs/csharp/linq/*.md" : "how-to",
@@ -201,11 +201,9 @@
         "docs/csharp/roslyn-sdk/tutorials/*.md" : "tutorial",
         "docs/csharp/tour-of-csharp/**" : "overview",
         "docs/csharp/tutorials/**" : "tutorial",
-        "docs/framework/**/*how-to*.md": "how-to",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
         "docs/fsharp/language-reference/**/**.md": "language-reference",
-        "docs/standard/**/*how-to*.md": "how-to",
         "docs/standard/base-types/*.md": "how-to"
       },
       "dev_langs": {

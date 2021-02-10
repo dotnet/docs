@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 11/30/2020
+ms.date: 02/01/2021
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -46,6 +46,7 @@ The property name set by this attribute:
 
 * Applies in both directions, for serialization and deserialization.
 * Takes precedence over property naming policies.
+* [Doesn't affect parameter name matching for parameterized constructors](system-text-json-immutability.md#immutable-types-and-records).
 
 ## Use camel case for all JSON property names
 

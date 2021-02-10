@@ -15,6 +15,10 @@ namespace SystemTextJsonHowTo
             ImmutableTypes.Program.Main();
             Console.WriteLine();
 
+            Console.WriteLine("======== Immutable types =========");
+            ImmutableTypesCtorParms.Program.Main();
+            Console.WriteLine();
+
             Console.WriteLine("======== Record support =========");
             Records.Program.Main();
             Console.WriteLine();

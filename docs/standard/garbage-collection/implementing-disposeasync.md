@@ -102,7 +102,7 @@ In situations where you create and use multiple objects that implement <xref:Sys
 
 :::code language="csharp" id="one" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/stacked-await-usings.cs":::
 
-In the preceding example, each asynchronous clean up operation is explicitly scoped under the `await using` block. The outer scope is defined by how `objOne` sets its braces, enclosing `objTwo`, as such `objTwo` is disposed first, followed by `objOne`. Both `IAsyncDisposable` instances have there <xref:System.IAsyncDisposable.DisposeAsync> methods awaited, thus performing its asynchronous clean up operation. The calls are nested, not stacked.
+In the preceding example, each asynchronous clean up operation is explicitly scoped under the `await using` block. The outer scope is defined by how `objOne` sets its braces, enclosing `objTwo`, as such `objTwo` is disposed first, followed by `objOne`. Both `IAsyncDisposable` instances have their <xref:System.IAsyncDisposable.DisposeAsync> method awaited, so each instance performs its asynchronous clean up operation. The calls are nested, not stacked.
 
 ### Acceptable pattern two
 

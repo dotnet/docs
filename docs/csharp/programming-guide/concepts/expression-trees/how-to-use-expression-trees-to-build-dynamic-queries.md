@@ -45,7 +45,7 @@ The following sections describe specific techniques for querying differently in 
 - Vary the expression tree passed into the LINQ methods
 - Construct an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) expression tree using the factory methods at <xref:System.Linq.Expressions.Expression>
 - Adding method call nodes to an <xref:System.Linq.IQueryable>'s expression tree
-- Construct expression trees from strings using the [Dynamic LINQ library](dynamic-linq.net/)
+- Construct strings, and use the [Dynamic LINQ library](dynamic-linq.net/)
 
 ## Use runtime state from within the expression tree
 
@@ -131,7 +131,7 @@ qry = qry.Where(expr);
 
 ## Construct expression trees and queries using factory methods
 
-In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type; you may need to add different components, depending on the element type. You can create the expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression>, and thus tailer the expression to a specific element type.
+In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type; you may need to add different components, depending on the element type. You can create the expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression?displayProperty=fullName>, and thus tailor the expression to a specific element type.
 
 ### Constructing an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601)
 
@@ -143,14 +143,14 @@ When you construct an expression to pass into one of the LINQ methods, you're ac
 Expression<Func<string, bool>> expr = x => x.StartsWith("a");
 ```
 
-A LambdaExpression has two components:
+A <xref:System.Linq.Expressions.LambdaExpression> has two components:
 
-* a parameter list--`(string x)`, and
-* a body -- `x.StartsWith("a")`
+* a parameter list&mdash;`(string x)`&mdash;represented by the <xref:System.Linq.Expressions.LambdaExpression.Parameters> property
+* a body&mdash;`x.StartsWith("a")`&mdash;represented by the <xref:System.Linq.Expressions.LambdaExpression.Body> property.
 
 The basic steps in constructing an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) are as follows:
 
-* Define <xref:System.Linq.Expressions.ParameterExpression> objects for each of the parameters (if any) in the lambda expression, using the Parameter factory method.
+* Define <xref:System.Linq.Expressions.ParameterExpression> objects for each of the parameters (if any) in the lambda expression, using the <xref:System.Linq.Expressions.Expression.Parameter%2A> factory method.
 
     ```csharp
     ParameterExpression x = Parameter(typeof(string), "x");
@@ -206,38 +206,40 @@ While you could write one custom function for `IQueryable<Person>` and another f
 ### Example
 
 ```csharp
+// using static System.Linq.Expressions.Expression;
+
 IQueryable<T> TextFilter<T>(IQueryable<T> source, string term) {
     if (string.IsNullOrEmpty(term)) { return source; }
 
     // T is a compile-time placeholder for the element type of the query.
-    var elementType = typeof(T);
+    Type elementType = typeof(T);
 
     // Get all the string properties on this specific type.
-    var stringProperties =
+    PropertyInfo[] stringProperties =
         elementType.GetProperties()
             .Where(x => x.PropertyType == typeof(string))
             .ToArray();
     if (!stringProperties.Any()) { return source; }
 
     // Get the right overload of String.Contains
-    var containsMethod = typeof(string).GetMethod("Contains", new[] { typeof(string) })!;
+    MethodInfo containsMethod = typeof(string).GetMethod("Contains", new[] { typeof(string) })!;
 
     // Create a parameter for the expression tree:
     // the 'x' in 'x => x.PropertyName.Contains("term")'
     // The type of this parameter is the query's element type
-    var prm = Parameter(elementType);
+    ParameterExpression prm = Parameter(elementType);
 
     // Map each property to an expression tree node
     IEnumerable<Expression> expressions = stringProperties
         .Select(prp =>
-            // For each property, we have to construct an expression tree like x.PropertyName.Contains("term")
-            Call(                      // .Contains(...) 
+            // For each property, we have to construct an expression tree node like x.PropertyName.Contains("term")
+            Call(                  // .Contains(...) 
                 Property(          // .PropertyName
-                    prm,              // x 
+                    prm,           // x 
                     prp
                 ),
                 containsMethod,
-                Constant(term)             // "term" 
+                Constant(term)     // "term" 
             )
         );
 

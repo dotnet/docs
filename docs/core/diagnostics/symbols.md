@@ -1,6 +1,6 @@
 ---
 title: Symbols in .NET
-descriptions: An introduction to symbols and portable PDBs in .NET
+description: An introduction to symbols and portable PDBs in .NET
 ms.date: 02/08/2021
 ---
 
@@ -36,7 +36,7 @@ Portable PDBs can be read on any operating system, but there are a number of pla
 
 * C# Code analysis tools (such as FxCop) except Roslyn Analyzer
 
-* Some symbol servers (for example, [SymbolSource](www.symbolsource.org) does not support portable PDBs, but [NuGet](https://nuget.org) does)
+* Some symbol servers (for example, [SymbolSource](http://www.symbolsource.org) does not support portable PDBs, but [NuGet](https://nuget.org) does)
 
 * Running post-compilation build step that consumes or modifies the PDB using older versions of tools such as CCI, CodeContracts
 

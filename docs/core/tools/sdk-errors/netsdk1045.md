@@ -16,7 +16,7 @@ This error occurs when the build tools can't find the version of the .NET SDK th
 
 The following sections describe some of the possible reasons for this error. Check each one and see which one applies to you. Keep in mind that when making changes to the environment or the configuration files, you might have to restart command windows, restart Visual Studio, or reboot your machine, for your changes to take effect.
 
-## .NET Core SDK version
+## .NET SDK version
 
 Open the project file (.csproj, .vbproj, or .fsproj) and check the target framework. This is the version of the framework that your app is trying to use.
 
@@ -30,7 +30,11 @@ Make sure that the version of .NET listed is installed on the machine. You can l
 dotnet --list-sdks
 ```
 
-If the version requested is not installed, download it from [here](https://dotnet.microsoft.com/download/dotnet-core).
+### x86 or x64 architecture
+
+Each version of the .NET SDK is available in both x86 and x64 architecture. The project might be trying to find the .NET SDK for the wrong architecture, or the .NET SDK for the architecture your project needs might not be installed. Check the installation folders for the x86 architecture in the right folders. For example, on Windows, the x86 version of the .NET SDK is installed in *C:\Program Files (x86)\dotnet* and the x64 version is installed in *C:\Program Files\dotnet*. See [How to check that .NET is already installed](https://docs.microsoft.com/en-us/dotnet/core/install/how-to-detect-installed-versions) and choose your operating system to find out how to detect what's installed on your machine.
+
+If the version you need is not installed, download it from [here](https://dotnet.microsoft.com/download/dotnet-core).
 
 ## Preview not enabled
 
@@ -38,17 +42,17 @@ If you have a preview installed of the requested .NET SDK version, you also need
 
 ## Visual Studio version
 
-For example, .NET Core 3.0 and later require Visual Studio 2019. Upgrade to [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads) or later to build your project.
+For example, .NET Core 3.0 and later require Visual Studio 2019. Upgrade to [Visual Stuio 2019 version 16.3](https://visualstudio.microsoft.com/downloads) or later to build your project.
 
-## The PATH environment variable
+## PATH environment variable
 
 The build tools use the PATH environment variable to find the right version of the .NET Core build tools. If the PATH environment variable contains direct paths to older build tools, this error message could appear. Make sure the only path to the .NET tools in the PATH environment variable is to the top-level *dotnet* folder, for example, *C:\Program Files\dotnet*. An example of an incorrect PATH would be something like *C:\Program Files\dotnet\2.1.0\sdks*.
 
-## The MSBuildSDKPath variable
+## MSBuildSDKPath environment variable
 
-Check the MSBuildSDKPath variable. This optional environment variable is recognized by MSBuild and if set, overrides the default value. It might be set to a specific older version of the .NET SDK. If it's set, try deleting it and rebuilding your project.
+Check the MSBuildSDKPath environment variable. This optional environment variable is recognized by MSBuild and if set, overrides the default value. It might be set to a specific older version of the .NET SDK. If it's set, try deleting it and rebuilding your project.
 
-## The global.json file
+## global.json file
 
 Check for a *global.json* file in the root folder in your project and up the directory chain to the root of the volume, since it can be anywhere in the folder structure. If it contains an SDK version, delete the `sdk` node and all its children, or update it to the desired newer .NET Core version.
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "files [C#], text files"
   - "text, writing to files [C#]"
 ms.assetid: 2e99f184-d88b-4719-a7f1-d9ec482aa809
+ms.topic: how-to
 ---
 <!-- contperf-fy21q3 -->
 

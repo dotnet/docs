@@ -118,7 +118,6 @@
       "uhfHeaderId": "MSDocsHeader-DotNet",
       "apiPlatform": "dotnet",
       "ms.prod":"dotnet",
-      "ms.topic": "conceptual",
       "_op_documentIdPathDepotMapping": {
         "docs/architecture/containerized-lifecycle/": {
           "folder_relative_path_in_docset": "docs/standard/containerized-lifecycle-architecture/"
@@ -185,6 +184,7 @@
         "docs/spark/**/**.md": "dotnet-spark"
       },
       "ms.topic": {
+        "**/*.md": "conceptual",
         "_csharplang/**/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
         "**/*how-to*.md": "how-to",

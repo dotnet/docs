@@ -74,9 +74,7 @@ Generally, the [built-in LINQ methods](https://github.com/dotnet/runtime/blob/ma
 * Wrap the current expression tree in a <xref:System.Linq.Expressions.MethodCallExpression> representing the method call.
 * Pass the wrapped expression tree back to the provider, either to return a value via the provider's <xref:System.Linq.IQueryProvider.Execute%2A?displayProperty=nameWithType> method; or to return a translated query object via the <xref:System.Linq.IQueryProvider.CreateQuery%2A?displayProperty=nameWithType> method.
 
-You can replace the original query with the result of an [IQueryable\<T>](xref:System.Linq.IQueryable%601)-returning method, to get a new query.
-
-You can do this based on runtime state, as in the following example:
+You can replace the original query with the result of an [IQueryable\<T>](xref:System.Linq.IQueryable%601)-returning method, to get a new query. You can do this based on runtime state, as in the following example:
 
 ```csharp
 bool sortByLength = /* ... */;
@@ -112,29 +110,28 @@ You might also want to compose the various sub-expressions using a third-party l
 
 // This is functionally equivalent to the previous example.
 
-string startsWith? = /* ... */;
-string endsWith? = /* ... */;
+string startsWith = /* ... */;
+string endsWith = /* ... */;
 
 var qry = companyNamesSource;
 
-bool hasStartsWith = !string.IsNullOrEmpty(startsWith);
-bool hasEndsWith = !string.IsNullOrEmpty(endsWith);
-
-if (hasStartsWith || hasEndsWith) {
-    Expression<Func<string, bool>>? expr = PredicateBuilder.New<string>(false);
-    if (hasStartsWith) {
-        expr = expr.Or(x => x.StartsWith(startsWith));
-    }
-    if (hasEndsWith) {
-        expr = expr.Or(x => x.EndsWith(endsWith));
-    }
-    qry = qry.Where(expr);
+Expression<Func<string, bool>>? expr = PredicateBuilder.New<string>(false);
+var original = expr;
+if (!string.IsNullOrEmpty(startsWith)) {
+    expr = expr.Or(x => x.StartsWith(startsWith));
 }
+if (!string.IsNullOrEmpty(endsWith)) {
+    expr = expr.Or(x => x.EndsWith(endsWith));
+}
+if (expr == original) {
+    expr = x => true;
+}
+qry = qry.Where(expr);
 ```
 
 ## Construct expression trees and queries using factory methods
 
-In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type; you may need to add different components, depending on the element type. You can create the expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression>.
+In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type; you may need to add different components, depending on the element type. You can create the expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression>, and thus tailer the expression to a specific element type.
 
 ### Constructing an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601)
 
@@ -305,7 +302,7 @@ Note that in this case you don't have a compile-time `T` generic placeholder, so
 
 ## The Dynamic LINQ library
 
-Constructing expression trees using factory methods is relatively complex; it is easier to compose strings. The [Dynamic LINQ library](https://dynamic-linq.net/) exposes a set of extension methods on <xref:System.Linq.IQueryable> corresponding to the standard LINQ methods at <xref:System.Linq.Queryable>, and which accept strings in a [special syntax](https://dynamic-linq.net/expression-language) instead of expression trees. The library generates the appropriate expression tree from the string, and returns the resultant translated <xref:System.Linq.IQueryable>.
+Constructing expression trees using factory methods is relatively complex; it is easier to compose strings. The [Dynamic LINQ library](https://dynamic-linq.net/) exposes a set of extension methods on <xref:System.Linq.IQueryable> corresponding to the standard LINQ methods at <xref:System.Linq.Queryable>, and which accept strings in a [special syntax](https://dynamic-linq.net/expression-language) instead of expression trees. The library generates the appropriate expression tree from the string, and can return the resultant translated <xref:System.Linq.IQueryable>.
 
 For instance, the previous example could be rewritten as follows:
 

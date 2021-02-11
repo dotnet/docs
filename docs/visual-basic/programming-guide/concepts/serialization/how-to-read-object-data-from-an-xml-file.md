@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Read Object Data from an XML File (Visual Basic)"
 title: "How to: Read Object Data from an XML File"
 ms.date: 07/20/2015
 ms.assetid: 1e1423bf-74a4-4dde-a3bb-ae1bfc0a68ed

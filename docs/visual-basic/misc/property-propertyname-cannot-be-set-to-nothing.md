@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property <propertyname> cannot be set to Nothing"
 title: "Property <propertyname> cannot be set to Nothing"
 ms.date: 07/20/2015
 f1_keywords: 

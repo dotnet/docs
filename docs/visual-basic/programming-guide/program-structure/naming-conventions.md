@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual Basic Naming Conventions"
 title: "Naming Conventions"
 ms.date: 07/20/2015
 helpviewer_keywords: 

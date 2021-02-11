@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operator is not valid for '<name1>' and '<name2>'"
 title: "Operator is not valid for '<name1>' and '<name2>'"
 ms.date: 07/20/2015
 f1_keywords: 

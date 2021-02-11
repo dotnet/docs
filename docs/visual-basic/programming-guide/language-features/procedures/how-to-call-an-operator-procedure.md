@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Call an Operator Procedure (Visual Basic)"
 title: "How to: Call an Operator Procedure"
 ms.date: 07/20/2015
 helpviewer_keywords: 

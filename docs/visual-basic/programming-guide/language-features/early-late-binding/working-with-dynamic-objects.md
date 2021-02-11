@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Dynamic Objects (Visual Basic)"
 title: "Working with Dynamic Objects"
 ms.date: 07/20/2015
 helpviewer_keywords: 

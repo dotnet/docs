@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Hide an Inherited Variable (Visual Basic)"
 title: "How to: Hide an Inherited Variable"
 ms.date: 07/20/2015
 helpviewer_keywords:

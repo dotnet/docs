@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -win32icon"
 title: "-win32icon"
 ms.date: 03/13/2018
 helpviewer_keywords: 

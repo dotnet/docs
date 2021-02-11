@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: This single-instance application could not connect to the original instance"
 title: "This single-instance application could not connect to the original instance"
 ms.date: 07/20/2015
 f1_keywords: 

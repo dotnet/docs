@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extension Methods (Visual Basic)"
 title: "Extension Methods"
 ms.date: 07/20/2015
 f1_keywords:

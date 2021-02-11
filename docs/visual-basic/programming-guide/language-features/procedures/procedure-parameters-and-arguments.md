@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Procedure Parameters and Arguments (Visual Basic)"
 title: "Procedure Parameters and Arguments"
 ms.date: 07/20/2015
 helpviewer_keywords: 

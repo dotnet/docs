@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File '<filename>' cannot be deleted because it is open"
 title: "File '<filename>' cannot be deleted because it is open"
 ms.date: 07/20/2015
 f1_keywords: 

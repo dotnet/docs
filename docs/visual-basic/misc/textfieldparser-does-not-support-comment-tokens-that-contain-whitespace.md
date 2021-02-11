@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TextFieldParser does not support comment tokens that contain white space"
 title: "TextFieldParser does not support comment tokens that contain white space"
 ms.date: 07/20/2015
 f1_keywords: 

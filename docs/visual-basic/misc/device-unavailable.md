@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Device unavailable"
 title: "Device unavailable"
 ms.date: 07/20/2015
 f1_keywords: 

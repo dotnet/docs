@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Move Data Into and Out of a Variable (Visual Basic)"
 title: "How to: Move Data Into and Out of a Variable"
 ms.date: 07/20/2015
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File information cannot be queried while open for writing"
 title: "File information cannot be queried while open for writing"
 ms.date: 07/20/2015
 ms.assetid: 2198af10-f128-4b1d-baba-a251e1369146

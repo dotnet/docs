@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use a Class that Defines Operators (Visual Basic)"
 title: "How to: Use a Class that Defines Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 

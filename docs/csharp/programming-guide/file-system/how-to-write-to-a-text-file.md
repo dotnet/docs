@@ -1,7 +1,7 @@
 ---
 title: "How to write to a text file - C# Programming Guide"
 description: Learn how to write a text file with C#. See several code examples and view additional available resources.
-ms.date: 02/10/2021
+ms.date: 02/11/2021
 f1_keywords:
   - "TextWriter.WriteLine"
   - "StreamWriter.Close"
@@ -25,12 +25,12 @@ In this article, there are several examples showing various ways to write text t
 
 The preceding source code example:
 
-- Instantiates a string array with three values
+- Instantiates a string array with three values.
 - Awaits a call to <xref:System.IO.File.WriteAllLinesAsync%2A?displayProperty=nameWithType> which:
 
   - Asynchronously creates a file name *WriteLines.txt*. If the file already exists, it is overwritten.
-  - Writes the given lines to the file
-  - Closes the file, automatically flushing and disposing as needed
+  - Writes the given lines to the file.
+  - Closes the file, automatically flushing and disposing as needed.
 
 ## Write one string to a file
 
@@ -38,12 +38,12 @@ The preceding source code example:
 
 The preceding source code example:
 
-- Instantiates a string given the assigned string literal
+- Instantiates a string given the assigned string literal.
 - Awaits a call to <xref:System.IO.File.WriteAllTextAsync%2A?displayProperty=nameWithType> which:
 
   - Asynchronously creates a file name *WriteText.txt*. If the file already exists, it is overwritten.
-  - Writes the given text to the file
-  - Closes the file, automatically flushing and disposing as needed
+  - Writes the given text to the file.
+  - Closes the file, automatically flushing and disposing as needed.
 
 ## Write selected strings from an array to a file
 
@@ -51,10 +51,10 @@ The preceding source code example:
 
 The preceding source code example:
 
-- Instantiates a string array with three values
-- Instantiates a <xref:System.IO.StreamWriter> with a file path of *WriteLines2.txt* as a [using declaration](../../whats-new/csharp-8.md#using-declarations)
-- Iterates through all the lines
-- Conditionally awaits a call to <xref:System.IO.StreamWriter.WriteLineAsync(System.String)?displayProperty=nameWithType>, which writes the line to the file when the line doesn't contain `"Second"`
+- Instantiates a string array with three values.
+- Instantiates a <xref:System.IO.StreamWriter> with a file path of *WriteLines2.txt* as a [using declaration](../../whats-new/csharp-8.md#using-declarations).
+- Iterates through all the lines.
+- Conditionally awaits a call to <xref:System.IO.StreamWriter.WriteLineAsync(System.String)?displayProperty=nameWithType>, which writes the line to the file when the line doesn't contain `"Second"`.
 
 ## Append text to an existing file
 
@@ -62,17 +62,19 @@ The preceding source code example:
 
 The preceding source code example:
 
-- Instantiates a string array with three values
-- Instantiates a <xref:System.IO.StreamWriter> with a file path of *WriteLines2.txt* as a [using declaration](../../whats-new/csharp-8.md#using-declarations), passing in `true` to append
-- Awaits a call to <xref:System.IO.StreamWriter.WriteLineAsync(System.String)?displayProperty=nameWithType>, which writes the string to the file as an appended line
+- Instantiates a string array with three values.
+- Instantiates a <xref:System.IO.StreamWriter> with a file path of *WriteLines2.txt* as a [using declaration](../../whats-new/csharp-8.md#using-declarations), passing in `true` to append.
+- Awaits a call to <xref:System.IO.StreamWriter.WriteLineAsync(System.String)?displayProperty=nameWithType>, which writes the string to the file as an appended line.
 
 ## Exceptions
 
 The following conditions may cause an exception:
 
-- The file exists and is read-only.
-- The path name may be too long.
-- The disk may be full.
+- <xref:System.InvalidOperationException>: The file exists and is read-only.
+- <xref:System.IO.PathTooLongException>: The path name may be too long.
+- <xref:System.IO.IOException>: The disk may be full.
+
+There are additional conditions that may cause exceptions when working with the file system, it is best to program defensively.
 
 ## See also
 

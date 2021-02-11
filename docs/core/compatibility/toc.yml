@@ -32,6 +32,10 @@
           href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
         - name: "Razor: RazorEngine APIs marked obsolete"
           href: aspnet-core/6.0/razor-engine-apis-obsolete.md
+      - name: Core .NET libraries
+        items:
+        - name: Nullability annotation changes
+          href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
       - name: Windows Forms
         items:
         - name: APIs throw ArgumentNullException
@@ -418,6 +422,10 @@
           href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
     - name: Core .NET libraries
       items:
+      - name: .NET 6.0
+        items:
+        - name: Nullability annotation changes
+          href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
       - name: .NET 5.0
         items:
         - name: Assembly-related API changes for single-file publishing

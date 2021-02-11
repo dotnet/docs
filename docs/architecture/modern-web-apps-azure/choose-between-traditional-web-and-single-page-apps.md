@@ -86,8 +86,8 @@ Writing SPAs requires familiarity with JavaScript and/or TypeScript and client-s
 >   <https://angular.io>
 > - **React**
 >   <https://reactjs.org/>
-> - **Comparison of JavaScript Frameworks**  
->   <https://jsreport.io/the-ultimate-guide-to-javascript-frameworks/>
+> - **Vue.js**
+>   <https://vuejs.org/>
 
 **Your application must already expose an API for other (internal or public) clients**
 

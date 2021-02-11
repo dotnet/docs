@@ -15,11 +15,11 @@ ms.custom: contperf-fy21q3
 
 # How to write to a text file (C# Programming Guide)
 
-In this article, there are several examples showing various ways to write text to a file. The first two examples use static convenience methods on the <xref:System.IO.File?displayProperty=nameWithType> class to write each element of any `IEnumerable<string>` and a `string` to a text file. The third examples shows how to add text to a file when you have to process each line individually as you write to the file. In the first three examples, you overwrite all existing content in the file. The final example shows how to append text to an existing file.
+In this article, there are several examples showing various ways to write text to a file. The first two examples use static convenience methods on the <xref:System.IO.File?displayProperty=nameWithType> class to write each element of any `IEnumerable<string>` and a `string` to a text file. The third example shows how to add text to a file when you have to process each line individually as you write to the file. In the first three examples, you overwrite all existing content in the file. The final example shows how to append text to an existing file.
 
  These examples all write string literals to files. If you want to format text written to a file, use the <xref:System.String.Format%2A> method or C# [string interpolation](../../language-reference/tokens/interpolated.md) feature.
 
-## Write all lines
+## Write a collection of strings to a file
 
 :::code language="csharp" source="snippets/write-text/WriteAllLines.cs":::
 
@@ -28,11 +28,11 @@ The preceding source code example:
 - Instantiates a string array with three values
 - Awaits a call to <xref:System.IO.File.WriteAllLinesAsync%2A?displayProperty=nameWithType> which:
 
-  - Asynchronously creates a file name *WriteLines.txt*, if the file already exists, it is overwritten
+  - Asynchronously creates a file name *WriteLines.txt*. If the file already exists, it is overwritten.
   - Writes the given lines to the file
   - Closes the file, automatically flushing and disposing as needed
 
-## Write all text
+## Write one string to a file
 
 :::code language="csharp" source="snippets/write-text/WriteAllText.cs":::
 
@@ -41,11 +41,11 @@ The preceding source code example:
 - Instantiates a string given the assigned string literal
 - Awaits a call to <xref:System.IO.File.WriteAllTextAsync%2A?displayProperty=nameWithType> which:
 
-  - Asynchronously creates a file name *WriteText.txt*, if the file already exists, it is overwritten
+  - Asynchronously creates a file name *WriteText.txt*. If the file already exists, it is overwritten.
   - Writes the given text to the file
   - Closes the file, automatically flushing and disposing as needed
 
-## Stream writer
+## Write selected strings from an array to a file
 
 :::code language="csharp" source="snippets/write-text/StreamWriterOne.cs":::
 
@@ -56,7 +56,7 @@ The preceding source code example:
 - Iterates through all the lines
 - Conditionally awaits a call to <xref:System.IO.StreamWriter.WriteLineAsync(System.String)?displayProperty=nameWithType>, which writes the line to the file when the line doesn't contain `"Second"`
 
-## Appending stream writer
+## Append text to an existing file
 
 :::code language="csharp" source="snippets/write-text/StreamWriterTwo.cs":::
 
@@ -66,7 +66,7 @@ The preceding source code example:
 - Instantiates a <xref:System.IO.StreamWriter> with a file path of *WriteLines2.txt* as a [using declaration](../../whats-new/csharp-8.md#using-declarations), passing in `true` to append
 - Awaits a call to <xref:System.IO.StreamWriter.WriteLineAsync(System.String)?displayProperty=nameWithType>, which writes the string to the file as an appended line
 
-## Robust programming
+## Exceptions
 
 The following conditions may cause an exception:
 

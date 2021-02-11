@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument value '<pathname>' contains characters that are not valid in a path name"
 title: "Argument value '<pathname>' contains characters that are not valid in a path name"
 ms.date: 07/20/2015
 f1_keywords: 

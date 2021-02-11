@@ -234,7 +234,7 @@ You specify conditional postconditions using these attributes:
 
 ## Constructor helper methods: `MemberNotNull` and `MemberNotNullWhen`
 
-These attributes specify your intent when you've refactored common code from constructors into helper methods. The C# compiler analyzes constructors and field initializers to make sure that all non-nullable reference fields have been initialized before each constructor returns. However, the C# compiler doesn't track field assignments through all helper methods. The compiler issues warning `CS8618` when fields aren't initialized directly in the constructor, but rather in a helper method. You add the <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> to a method declaration to fields that are initialized to a non-null value in the method. For example, consider the following example:
+These attributes specify your intent when you've refactored common code from constructors into helper methods. The C# compiler analyzes constructors and field initializers to make sure that all non-nullable reference fields have been initialized before each constructor returns. However, the C# compiler doesn't track field assignments through all helper methods. The compiler issues warning `CS8618` when fields aren't initialized directly in the constructor, but rather in a helper method. You add the <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> to a method declaration and specify the fields that are initialized to a non-null value in the method. For example, consider the following example:
 
 :::code language="csharp" source="snippets/InitializeMembers.cs" ID="MemberNotNullExample":::
 

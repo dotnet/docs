@@ -73,7 +73,7 @@ Applications and libraries can easily publish tracing data by simply using the <
 The first step to publish tracing data is to create an instance of the ActivitySource class. The ActivitySource is the class that provides APIs to create and start Activity objects and to register ActivityListener objects to listen to the Activity events.
 
 ```csharp
-    internal static ActivitySource source = new ActivitySource("MyCompany.MyComponent.SourceName", "v1");
+    private static ActivitySource source = new ActivitySource("MyCompany.MyComponent.SourceName", "v1");
 ```
 
 #### Best Practices

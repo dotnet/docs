@@ -224,7 +224,7 @@ var fixedQry = companyNames.OrderBy(x => x);
     }
     // </Factory_methods_lambdaexpression>
 
-    IQueryable qry = TextFilter(
+    IQueryable qry = TextFilter_Untyped(
         new List<Person>().AsQueryable(), 
         "abcd"
     );
@@ -257,7 +257,7 @@ var fixedQry = companyNames.OrderBy(x => x);
     // </Dynamic_linq>
 
     IQueryable qry = new List<Person>().AsQueryable();
-    qry = TextFilter(qry, "abcd");
+    qry = TextFilter_Strings(qry, "abcd");
 }
 
 record Person(string LastName, string FirstName, DateTime DateOfBirth);

@@ -87,5 +87,4 @@ csc -link:COMData1.dll,COMData2.dll -out:OfficeApp.exe OfficeApp.cs
 - [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md)
 - [-reference (C# Compiler Options)](./reference-compiler-option.md)
 - [-noconfig (C# Compiler Options)](./noconfig-compiler-option.md)
-- [Command-line Building With csc.exe](./command-line-building-with-csc-exe.md)
 - [Interoperability Overview](../../programming-guide/interop/interoperability-overview.md)

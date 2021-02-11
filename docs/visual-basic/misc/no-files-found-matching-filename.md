@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: No files found matching '<filename>"
+description: "Learn more about: No files found matching '<filename>'"
 title: "No files found matching '<filename>'"
 ms.date: 07/20/2015
 f1_keywords: 

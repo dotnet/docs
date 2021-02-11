@@ -1,7 +1,7 @@
 ---
 title: "Querying based on runtime state (C#)"
 description: Describes various techniques your code can use to query dynamically depending on runtime state, by varying either LINQ method calls or the expression trees passed into those methods.
-ms.date: 07/20/2015
+ms.date: 02/11/2021
 ms.assetid: 52cd44dd-a3ec-441e-b93a-4eca388119c7
 ---
 # Querying based on runtime state (C#)
@@ -30,7 +30,7 @@ The following sections describe specific techniques for querying differently in 
 - Vary the expression tree passed into the LINQ methods
 - Construct an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601) expression tree using the factory methods at <xref:System.Linq.Expressions.Expression>
 - Adding method call nodes to an <xref:System.Linq.IQueryable>'s expression tree
-- Construct strings, and use the [Dynamic LINQ library](dynamic-linq.net/)
+- Construct strings, and use the [Dynamic LINQ library](https://dynamic-linq.net/)
 
 ## Use runtime state from within the expression tree
 
@@ -63,7 +63,7 @@ You might also want to compose the various sub-expressions using a third-party l
 
 ## Construct expression trees and queries using factory methods
 
-In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type; you may need to add different components, depending on the element type. You can create expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression?displayProperty=fullName>, and thus tailor the expression to a specific element type.
+In all the examples up to this point, we've known the element type at compile time&mdash;`string`&mdash;and thus the type of the query&mdash;`IQueryable<string>`. You may need to add components to a query of any element type. You may need to add different components, depending on the element type. You can create expression trees from the ground up, using the factory methods at <xref:System.Linq.Expressions.Expression?displayProperty=fullName>, and thus tailor the expression to a specific element type.
 
 ### Constructing an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601)
 
@@ -139,19 +139,19 @@ While you could write one custom function for `IQueryable<Person>` and another f
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_methods_expression_of_tdelegate":::
 
-Note that because the `TextFilter` function takes and returns an [IQueryable\<T>](xref:System.Linq.IQueryable%601) (and not just an <xref:System.Linq.IQueryable>), you can add further compile-time-typed query elements after the text filter.
+Because the `TextFilter` function takes and returns an [IQueryable\<T>](xref:System.Linq.IQueryable%601) (and not just an <xref:System.Linq.IQueryable>), you can add further compile-time-typed query elements after the text filter.
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_methods_expression_of_tdelegate_usage":::
 
 ## Adding method call nodes to the <xref:System.Linq.IQueryable>'s expression tree
 
-If all you have is an <xref:System.Linq.IQueryable> and not an [IQueryable\<T>](xref:System.Linq.IQueryable%601), you can't directly call the generic LINQ methods at <xref:System.Linq.Queryable>. One alternative is to build the inner expression tree as above, and use reflection to invoke the appropriate LINQ method while passing in the expression tree.
+If you have an <xref:System.Linq.IQueryable> instead of an [IQueryable\<T>](xref:System.Linq.IQueryable%601), you can't directly call the generic LINQ methods. One alternative is to build the inner expression tree as above, and use reflection to invoke the appropriate LINQ method while passing in the expression tree.
 
 You could also duplicate the LINQ method's functionality, by wrapping the entire tree in a <xref:System.Linq.Expressions.MethodCallExpression> which represents a call to the LINQ method:
 
 :::code language="csharp" source="../../../../../samples/snippets/csharp/programming-guide/dynamic-linq-expression-trees/Program.cs" id="Factory_methods_lambdaexpression":::
 
-Note that in this case you don't have a compile-time `T` generic placeholder, so you'll use the <xref:System.Linq.Expressions.Expression.Lambda%2A> overload which doesn't require compile-time type information, and which produces only a <xref:System.Linq.Expressions.LambdaExpression> instead of an an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601).
+Note that in this case you don't have a compile-time `T` generic placeholder, so you'll use the <xref:System.Linq.Expressions.Expression.Lambda%2A> overload which doesn't require compile-time type information, and which produces a <xref:System.Linq.Expressions.LambdaExpression> instead of an an [Expression\<TDelegate>](xref:System.Linq.Expressions.Expression%601).
 
 ## The Dynamic LINQ library
 

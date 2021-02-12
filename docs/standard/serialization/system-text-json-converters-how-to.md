@@ -402,6 +402,8 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 
 :::code language="csharp" source="snippets/system-text-json-how-to-5-0/csharp/CustomConverterPreserveReferences.cs" id="CallSerializer" highlight = "4-5,12":::
 
+The preceding example only does serialization, but a similar approach can be adopted for deserialization.
+
 ::: zone-end
 ::: zone pivot="dotnet-core-3-1"
 

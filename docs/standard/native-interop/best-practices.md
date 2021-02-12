@@ -93,7 +93,7 @@ Blittable types are types that have the same bit-level representation in managed
 
 **Types with blittable contents:**
 
-- non-nested one-dimensional arrays of blittable types (for example, `int[]`)
+- non-nested, one-dimensional arrays of blittable primitive types (for example, `int[]`)
 - classes with fixed layout that only have blittable value types for instance fields
   - fixed layout requires `[StructLayout(LayoutKind.Sequential)]` or `[StructLayout(LayoutKind.Explicit)]`
   - classes are `LayoutKind.Auto` by default

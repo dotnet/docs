@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deferred versus Immediate Loading"
 title: "Deferred versus Immediate Loading"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Break and Combine Statements in Code (Visual Basic)"
 title: "How to: Break and Combine Statements in Code"
 ms.date: 07/20/2015
 f1_keywords:

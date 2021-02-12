@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Types of String Manipulation Methods in Visual Basic"
 title: "Types of String Manipulation Methods"
 ms.date: 07/20/2015
 helpviewer_keywords: 

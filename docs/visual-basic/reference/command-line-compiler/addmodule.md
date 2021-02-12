@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -addmodule"
 title: "-addmodule"
 ms.date: 03/09/2018
 helpviewer_keywords: 

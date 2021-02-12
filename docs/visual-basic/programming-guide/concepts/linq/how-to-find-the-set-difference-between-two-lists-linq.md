@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Find the Set Difference Between Two Lists (LINQ) (Visual Basic)"
 title: "How to: Find the Set Difference Between Two Lists (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: b5b25474-10a8-4df6-aab5-75621bb6b68e

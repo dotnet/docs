@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unable to write to log file because writing to it would cause it to exceed MaximumSize value"
 title: "Unable to write to log file because writing to it would cause it to exceed MaximumSize value"
 ms.date: 07/20/2015
 f1_keywords: 

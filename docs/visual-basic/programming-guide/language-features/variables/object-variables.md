@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Variables in Visual Basic"
 title: "Object Variables"
 ms.date: 07/20/2015
 helpviewer_keywords:

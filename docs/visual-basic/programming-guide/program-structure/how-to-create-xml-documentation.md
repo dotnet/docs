@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create XML Documentation in Visual Basic"
 title: "How to: Create XML Documentation"
 ms.date: 07/20/2015
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write Object Data to an XML File (Visual Basic)"
 title: "How to: Write Object Data to an XML File"
 ms.date: 07/20/2015
 ms.assetid: f7966480-5ed2-43ac-9894-33427436de2a

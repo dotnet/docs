@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cast from type '<typename1>' to type '<typename2>' is not valid"
 title: "Cast from type '<typename1>' to type '<typename2>' is not valid"
 ms.date: 07/20/2015
 f1_keywords: 

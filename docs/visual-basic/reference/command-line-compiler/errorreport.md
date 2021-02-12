@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -errorreport"
 title: "-errorreport"
 ms.date: 08/14/2018
 helpviewer_keywords: 

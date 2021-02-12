@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create an Add Extension Method Used by a Collection Initializer (Visual Basic)"
 title: "How to: Create an Add Extension Method Used by a Collection Initializer"
 ms.date: 07/20/2015
 helpviewer_keywords: 

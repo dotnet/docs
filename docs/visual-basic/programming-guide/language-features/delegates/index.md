@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Delegates (Visual Basic)"
 title: "Delegates"
 ms.date: 07/20/2015
 helpviewer_keywords:

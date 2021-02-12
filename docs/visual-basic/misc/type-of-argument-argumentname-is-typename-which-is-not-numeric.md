@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type of argument '<argumentname>' is '<typename>', which is not numeric"
 title: "Type of argument '<argumentname>' is '<typename>', which is not numeric"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -165,7 +165,11 @@ The *Services* folder is copied over. This folder's classes depend on Entity Fra
 That leaves the *Controllers* folder and its two `Controller` classes. After copying the folder to the new project and building, there are seven build errors. Four of them are related to `ViewBag` access and report an error of:
 
 > `Missing compiler required member 'Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create'`
+<<<<<<< HEAD
+ 
+=======
 
+>>>>>>> master
 To resolve this error add a NuGet package reference to C#:
 
 ```xml
@@ -849,5 +853,9 @@ Rather than relying on config files for its settings, WCF clients and other .NET
 - [Deep Dive into EF Core HasData](https://docs.microsoft.com/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding)
 
 >[!div class="step-by-step"]
+<<<<<<< HEAD
+>[Previous](more-migration-scenarios.md)
+=======
 >[Previous](strategies-migrating-in-production.md)
+>>>>>>> master
 >[Next](deployment-scenarios.md)

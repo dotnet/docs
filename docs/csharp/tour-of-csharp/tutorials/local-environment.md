@@ -54,7 +54,3 @@ This tutorial assumes that you have finished the [Hello world](hello-world.yml) 
 The [List collection](arrays-and-collections.md) lesson gives you a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
 
 This tutorial assumes that you have finished the lessons listed above.
-
-## Introduction to classes
-
-In [Introduction to classes](introduction-to-classes.md), you'll build a console application and see the basic object-oriented features that are part of the C# language. This is the final introduction to C# tutorial. It's only available to run on your machine, using your own local development environment and .NET.

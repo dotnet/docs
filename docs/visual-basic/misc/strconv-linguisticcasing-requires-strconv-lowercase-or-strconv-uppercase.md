@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: StrConv.LinguisticCasing' requires 'StrConv.LowerCase' or 'StrConv.UpperCase'"
+description: "Learn more about: 'StrConv.LinguisticCasing' requires 'StrConv.LowerCase' or 'StrConv.UpperCase'"
 title: "'StrConv.LinguisticCasing' requires 'StrConv.LowerCase' or 'StrConv.UpperCase'"
 ms.date: 07/20/2015
 f1_keywords: 

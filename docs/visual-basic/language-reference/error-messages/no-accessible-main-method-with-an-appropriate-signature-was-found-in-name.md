@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: BC30737: No accessible 'Main' method with an appropriate signature was found in '<name>"
+description: "Learn more about: BC30737: No accessible 'Main' method with an appropriate signature was found in '<name>'"
 title: "No accessible 'Main' method with an appropriate signature was found in '<name>'"
 ms.date: 07/20/2015
 f1_keywords:

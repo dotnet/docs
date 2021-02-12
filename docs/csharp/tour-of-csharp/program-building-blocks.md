@@ -1,5 +1,5 @@
 ---
-title: The building blocks of C# programs"
+title: The building blocks of C# programs
 description: Learn about C# members, expressions, and statements. Types contain members you write. Those members are built from statements and expressions.
 ms.date: 08/06/2020
 ---

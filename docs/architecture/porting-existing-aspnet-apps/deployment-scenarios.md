@@ -70,7 +70,6 @@ A common approach to porting large apps from .NET Framework to ASP.NET Core is t
 - [Share authentication cookies among ASP.NET apps](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
 - [Samples used in this section](https://github.com/ardalis/MigrateDotNetWithIIS)
 
-
 >[!div class="step-by-step"]
->[Previous](example-migration-eshop.md)
+>[Previous](more-migration-scenarios.md)
 >[Next](summary.md)

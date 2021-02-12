@@ -118,5 +118,5 @@ This will default to returning the data in JSON format. XML and other formats wi
 - [Format response data in ASP.NET Core Web API](https://docs.microsoft.com/aspnet/core/web-api/advanced/formatting)
 
 >[!div class="step-by-step"]
->[Previous](strategies-migrating-in-production.md)
+>[Previous](example-migration-eshop.md)
 >[Next](deployment-scenarios.md)

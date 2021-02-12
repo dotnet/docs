@@ -1,13 +1,13 @@
 ---
-title: Get started with Azure Blob storage using F#
-description: Store unstructured data in the cloud with Azure Blob storage.
+title: Get started with Azure Blob Storage using F#
+description: Store unstructured data in the cloud with Azure Blob Storage.
 author: sylvanc
 ms.date: 09/20/2016
 ms.custom: "devx-track-fsharp"
 ---
-# Get started with Azure Blob storage using F\#
+# Get started with Azure Blob Storage using F\#
 
-Azure Blob storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
+Azure Blob Storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
 
 This article shows you how to perform common tasks using Blob storage. The samples are written using F# using the Azure Storage Client Library for .NET. The tasks covered include how to upload, list, download, and delete blobs.
 

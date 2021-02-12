@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: REF CURSOR Parameters in an OracleDataReader"
 title: "REF CURSOR Parameters in an OracleDataReader"
 ms.date: "03/30/2017"
 dev_langs:

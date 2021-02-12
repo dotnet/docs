@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTaskManager::CreateTask Method"
 title: "IHostTaskManager::CreateTask Method"
 ms.date: "03/30/2017"
 api_name: 

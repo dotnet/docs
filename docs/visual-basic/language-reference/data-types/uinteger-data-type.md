@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: UInteger data type"
 title: "UInteger Data Type"
 ms.date: 01/31/2018
 f1_keywords:

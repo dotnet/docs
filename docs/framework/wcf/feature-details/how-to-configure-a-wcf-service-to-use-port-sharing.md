@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure a Windows Communication Foundation Service to Use Port Sharing"
 title: "How to: Configure a Windows Communication Foundation Service to Use Port Sharing"
 ms.date: "03/30/2017"
 dev_langs: 

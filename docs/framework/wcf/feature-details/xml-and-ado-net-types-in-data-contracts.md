@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML and ADO.NET Types in Data Contracts"
 title: "XML and ADO.NET Types in Data Contracts"
 ms.date: "03/30/2017"
 dev_langs: 

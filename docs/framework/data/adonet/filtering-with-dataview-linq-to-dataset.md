@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Filtering with DataView (LINQ to DataSet)"
 title: "Filtering with DataView (LINQ to DataSet)"
 ms.date: "03/30/2017"
 dev_langs: 

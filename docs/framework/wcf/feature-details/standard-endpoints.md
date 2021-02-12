@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Standard Endpoints"
 title: "Standard Endpoints"
 ms.date: "03/30/2017"
 ms.assetid: 3fcb4225-addc-44f2-935d-30e4943a8812

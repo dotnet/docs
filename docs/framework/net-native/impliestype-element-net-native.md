@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <ImpliesType> Element (.NET Native)"
 title: "<ImpliesType> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 3abd2071-0f28-40ba-b9a0-d52bd94cd2f6

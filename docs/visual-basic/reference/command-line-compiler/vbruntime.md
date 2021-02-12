@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -vbruntime"
 title: "-vbruntime"
 ms.date: 03/13/2018
 f1_keywords: 

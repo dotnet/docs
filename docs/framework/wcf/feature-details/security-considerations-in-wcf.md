@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Considerations in WCF"
 title: "Security Considerations in WCF"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

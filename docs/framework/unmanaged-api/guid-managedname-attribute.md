@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GUID_ManagedName Attribute"
 title: "GUID_ManagedName Attribute"
 ms.date: "03/30/2017"
 api_name: 

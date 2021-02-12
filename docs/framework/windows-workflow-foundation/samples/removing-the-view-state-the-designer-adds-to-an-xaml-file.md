@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Removing the view state the designer adds to an XAML file"
 title: "Removing the view state the designer adds to an XAML file - WF"
 ms.date: "03/30/2017"
 ms.assetid: a801ce22-8699-483c-a392-7bb3834aae4f

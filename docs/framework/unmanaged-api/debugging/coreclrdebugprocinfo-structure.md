@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CoreClrDebugProcInfo Structure"
 title: "CoreClrDebugProcInfo Structure"
 ms.date: "03/30/2017"
 api_name: 

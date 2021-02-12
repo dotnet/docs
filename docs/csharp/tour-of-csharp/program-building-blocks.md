@@ -183,7 +183,7 @@ Unlike other members, instance constructors aren't inherited. A class has no ins
 
 *Properties* are a natural extension of fields. Both are named members with associated types, and the syntax for accessing fields and properties is the same. However, unlike fields, properties don't denote storage locations. Instead, properties have *accessors* that specify the statements executed when their values are read or written.
 
-A property is declared like a field, except that the declaration ends with a get accessor or a set accessor written between the delimiters `{` and `}` instead of ending in a semicolon. A property that has both a get accessor and a set accessor is a *read-write property*, a property that has only a get accessor is a *read-only property*, and a property that has only a set accessor is a *write-only property*.
+A property is declared like a field, except that the declaration ends with a get accessor or a set accessor written between the delimiters `{` and `}` instead of ending in a semicolon. A property that has both a get accessor and a set accessor is a *read-write property*. A property that has only a get accessor is a *read-only property*. A property that has only a set accessor is a *write-only property*.
 
 A get accessor corresponds to a parameterless method with a return value of the property type. A set accessor corresponds to a method with a single parameter named value and no return type. The get accessor computes the value of the property. The set accessor provides a new value for the property. When the property is the target of an assignment, or the operand of `++` or `--`, the set accessor is invoked. In other cases where the property is referenced, the get accessor is invoked.
 

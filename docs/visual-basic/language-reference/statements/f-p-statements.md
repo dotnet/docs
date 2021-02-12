@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: F-P Statements"
 title: "F-P Statements"
 ms.date: 07/20/2015
 ms.assetid: cdce7ab0-c52e-4d33-a29b-bf32cdacc79f

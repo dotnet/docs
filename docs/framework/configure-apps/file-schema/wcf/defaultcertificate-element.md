@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <defaultCertificate> Element"
 title: "<defaultCertificate> Element"
 ms.date: "03/30/2017"
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6

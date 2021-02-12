@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32500: '<attribute>' cannot be applied because the format of the GUID '<number>' is not correct"
 title: "'<attribute>' cannot be applied because the format of the GUID '<number>' is not correct"
 ms.date: 07/20/2015
 f1_keywords:

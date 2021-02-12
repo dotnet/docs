@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 208 - MessageInspectorAfterReceiveInvoked"
 title: "208 - MessageInspectorAfterReceiveInvoked"
 ms.date: "03/30/2017"
 ms.assetid: dfb5f7b0-4346-4949-8104-351726b1f502

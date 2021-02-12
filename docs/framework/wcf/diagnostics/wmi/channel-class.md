@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Channel class"
 title: "Channel class"
 ms.date: "03/30/2017"
 ms.assetid: d9fae2ca-209c-4341-a0f5-6b79d1a67776

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interoperable object references"
 title: "Interoperable object references"
 ms.date: "04/15/2019"
 ms.assetid: cb8da4c8-08ca-4220-a16b-e04c8f527f1b

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugObjectValue::GetVirtualMethod Method"
 title: "ICorDebugObjectValue::GetVirtualMethod Method"
 ms.date: "03/30/2017"
 api_name: 

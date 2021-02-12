@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.CommunicationObjectDisposing"
 title: "System.ServiceModel.CommunicationObjectDisposing"
 ms.date: "03/30/2017"
 ms.assetid: b7199c74-c218-426b-b77d-a20c562d7910

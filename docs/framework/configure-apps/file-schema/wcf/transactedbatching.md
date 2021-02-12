@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <transactedBatching>"
 title: "<transactedBatching>"
 ms.date: "03/30/2017"
 ms.assetid: 2f790a0d-8f03-4b86-81b5-ce1bc1a6c575

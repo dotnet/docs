@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Messaging Protocols"
 title: "Messaging Protocols"
 ms.date: "03/30/2017"
 ms.assetid: 5b20bca7-87b3-4c8f-811b-f215b5987104

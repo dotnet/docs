@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: INotifySink2 Interface"
 title: "INotifySink2 Interface"
 ms.date: "03/30/2017"
 api_name: 

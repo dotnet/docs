@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connecting to a Data Source in ADO.NET"
 title: "Connecting to a Data Source"
 deescription: Learn about Connection objects, used to connect to data sources in ADO.NET. The Connection object you choose depends on the type of data source.
 ms.date: "03/30/2017"

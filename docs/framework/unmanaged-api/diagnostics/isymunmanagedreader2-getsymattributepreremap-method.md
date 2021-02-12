@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader2::GetSymAttributePreRemap Method"
 title: "ISymUnmanagedReader2::GetSymAttributePreRemap Method"
 ms.date: "03/30/2017"
 api_name: 

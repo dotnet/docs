@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registry key '<keyname>' could not be created"
 title: "Registry key '<keyname>' could not be created"
 ms.date: 07/20/2015
 f1_keywords: 

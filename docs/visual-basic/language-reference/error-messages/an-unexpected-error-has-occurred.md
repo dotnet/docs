@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired"
 title: "An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired"
 ms.date: 07/20/2015
 f1_keywords: 

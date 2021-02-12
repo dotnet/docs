@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEditAndContinueSnapshot::SetPESymbolBytes Method"
 title: "ICorDebugEditAndContinueSnapshot::SetPESymbolBytes Method"
 ms.date: "03/30/2017"
 api_name: 

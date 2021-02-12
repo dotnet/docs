@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AssemblyAttributesGoHereSM Class"
 title: "AssemblyAttributesGoHereSM Class (System.Runtime.CompilerServices)"
 ms.date: "03/30/2017"
 api_name: 

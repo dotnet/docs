@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Best practices for developing world-ready applications"
 title: "Best Practices for Developing World-Ready Applications"
 ms.date: "03/30/2017"
 helpviewer_keywords:

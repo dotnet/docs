@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <transport> of <netPeerTcpBinding>"
 title: "<transport> of <netPeerTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: c44d86d2-1160-44d7-9c7a-297b12eccc7f

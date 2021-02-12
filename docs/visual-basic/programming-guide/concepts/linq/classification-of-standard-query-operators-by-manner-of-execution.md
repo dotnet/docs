@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Classification of Standard Query Operators by Manner of Execution (Visual Basic)"
 title: "Classification of Standard Query Operators by Manner of Execution"
 ms.date: 07/20/2015
 ms.assetid: 7f55b0be-9f6e-44f8-865c-6afbea50cc54

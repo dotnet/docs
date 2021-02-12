@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAppDomain::GetObject Method"
 title: "ICorDebugAppDomain::GetObject Method"
 ms.date: "03/30/2017"
 api_name: 

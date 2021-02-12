@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Basic Data Contract"
 title: "Basic Data Contract"
 ms.date: "03/30/2017"
 helpviewer_keywords:

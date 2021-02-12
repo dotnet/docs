@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FunctionTailcall2 Function"
 title: "FunctionTailcall2 Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument '<argumentname>' cannot be a multidimensional array"
 title: "Argument '<argumentname>' cannot be a multidimensional array"
 ms.date: 07/20/2015
 f1_keywords: 

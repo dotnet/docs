@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Provider Statistics for SQL Server"
 title: "Provider Statistics for SQL Server"
 ms.date: "03/30/2017"
 dev_langs: 

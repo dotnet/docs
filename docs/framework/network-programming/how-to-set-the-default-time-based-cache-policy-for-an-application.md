@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Set the Default Time-Based Cache Policy for an Application"
 title: "How to: Set the Default Time-Based Cache Policy for an Application"
 ms.date: "03/30/2017"
 dev_langs: 

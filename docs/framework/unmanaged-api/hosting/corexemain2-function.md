@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CorExeMain2 Function"
 title: "_CorExeMain2 Function"
 ms.date: "03/30/2017"
 api_name: 

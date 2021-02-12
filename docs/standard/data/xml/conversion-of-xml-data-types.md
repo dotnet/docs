@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Conversion of XML Data Types"
 title: "Conversion of XML Data Types"
 ms.date: "03/30/2017"
 dev_langs: 

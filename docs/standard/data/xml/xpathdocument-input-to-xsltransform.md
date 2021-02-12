@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XPathDocument Input to XslTransform"
 title: "XPathDocument Input to XslTransform"
 ms.date: "03/30/2017"
 dev_langs: 

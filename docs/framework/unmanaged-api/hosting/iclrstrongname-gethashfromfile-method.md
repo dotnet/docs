@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRStrongName::GetHashFromFile Method"
 title: "ICLRStrongName::GetHashFromFile Method"
 ms.date: "03/30/2017"
 api_name: 

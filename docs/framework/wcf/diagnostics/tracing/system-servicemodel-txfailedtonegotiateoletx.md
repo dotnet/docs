@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxFailedToNegotiateOleTx"
 title: "System.ServiceModel.TxFailedToNegotiateOleTx"
 ms.date: "03/30/2017"
 ms.assetid: 3f0f0b4b-a1ad-4704-8329-455daf54892d

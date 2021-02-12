@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: References and the Imports Statement (Visual Basic)"
 title: "References and the Imports Statement"
 ms.date: 07/20/2015
 helpviewer_keywords: 

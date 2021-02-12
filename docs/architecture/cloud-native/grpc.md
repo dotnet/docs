@@ -3,7 +3,7 @@ title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
 no-loc: [Blazor, "Blazor WebAssembly"]
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # gRPC
@@ -54,7 +54,7 @@ gRPC is integrated into .NET Core 3.0 SDK and later. The following tools support
 - Visual Studio Code
 - the dotnet CLI
 
-The SDK includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2019 template that scaffolds a skeleton project for a gRPC service. Note how .NET Core fully supports Windows, Linux, and macOS.
+The SDK includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2019 template that scaffolds a skeleton project for a gRPC service. Note how .NET fully supports Windows, Linux, and macOS.
 
 ![gRPC Support in Visual Studio 2019](./media/visual-studio-2019-grpc-template.png)
 
@@ -86,7 +86,7 @@ At the time, of this writing, gRPC is primarily used with backend services. Mode
 
 ## gRPC implementation
 
-The microservice reference architecture, [eShop on Containers](https://github.com/dotnet-architecture/eShopOnContainers), from Microsoft, shows how to implement gRPC services in .NET Core applications. Figure 4-22 presents the back-end architecture.
+The microservice reference architecture, [eShop on Containers](https://github.com/dotnet-architecture/eShopOnContainers), from Microsoft, shows how to implement gRPC services in .NET applications. Figure 4-22 presents the back-end architecture.
 
 ![Backend architecture for eShop on Containers](./media/eshop-with-aggregators.png)
 
@@ -98,7 +98,7 @@ In the previous figure, note how eShop embraces the [Backend for Frontends patte
 
 **Figure 4-23**. gRPC in eShop on Containers
 
-gRPC communication requires both client and server components. In the previous figure, note how the Shopping Aggregator implements a gRPC client. The client makes synchronous gRPC calls (in red) to backend microservices, each of which implement a gRPC server. Both the client and server take advantage of the built-in gRPC plumbing from the .NET Core SDK. Client-side *stubs* provide the plumbing to invoke remote gRPC calls. Server-side components provide gRPC plumbing that custom service classes can inherit and consume.
+gRPC communication requires both client and server components. In the previous figure, note how the Shopping Aggregator implements a gRPC client. The client makes synchronous gRPC calls (in red) to backend microservices, each of which implement a gRPC server. Both the client and server take advantage of the built-in gRPC plumbing from the .NET SDK. Client-side *stubs* provide the plumbing to invoke remote gRPC calls. Server-side components provide gRPC plumbing that custom service classes can inherit and consume.
 
 Microservices that expose both a RESTful API and gRPC communication require multiple endpoints to manage traffic. You would open an endpoint that listens for HTTP traffic for the RESTful calls and another for gRPC calls. The gRPC endpoint must be configured for the HTTP/2 protocol that is required for gRPC communication.
 

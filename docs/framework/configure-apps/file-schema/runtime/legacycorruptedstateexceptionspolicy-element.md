@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <legacyCorruptedStateExceptionsPolicy> Element"
 title: "<legacyCorruptedStateExceptionsPolicy> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationInstanceCreationRequest"
 title: "System.ServiceModel.ComIntegration.ComIntegrationInstanceCreationRequest"
 ms.date: "03/30/2017"
 ms.assetid: e9f3f224-cb6b-4c72-a808-d4905ca0c2b8

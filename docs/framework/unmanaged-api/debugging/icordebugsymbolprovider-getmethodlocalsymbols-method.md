@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetMethodLocalSymbols Method"
 title: "ICorDebugSymbolProvider::GetMethodLocalSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: 8b989e38-e779-49d1-9e90-f1f920484b08

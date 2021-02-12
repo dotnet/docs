@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Expression Trees to Build Dynamic Queries (Visual Basic)"
 title: "How to: Use Expression Trees to Build Dynamic Queries"
 ms.date: 07/20/2015
 ms.assetid: 16278787-7532-4b65-98b2-7a412406c4ee

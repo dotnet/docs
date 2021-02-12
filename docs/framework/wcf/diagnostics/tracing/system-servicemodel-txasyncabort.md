@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxAsyncAbort"
 title: "System.ServiceModel.TxAsyncAbort"
 ms.date: "03/30/2017"
 ms.assetid: bce47ff2-abd0-4b58-8667-ebf1ef3580b8

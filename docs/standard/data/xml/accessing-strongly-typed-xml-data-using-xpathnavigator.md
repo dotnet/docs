@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing Strongly Typed XML Data Using XPathNavigator"
 title: "Accessing Strongly Typed XML Data Using XPathNavigator"
 ms.date: "03/30/2017"
 dev_langs: 

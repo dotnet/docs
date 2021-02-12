@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC31535: Friend assembly reference <reference> is invalid"
 title: "Friend assembly reference <reference> is invalid"
 ms.date: 07/20/2015
 f1_keywords:

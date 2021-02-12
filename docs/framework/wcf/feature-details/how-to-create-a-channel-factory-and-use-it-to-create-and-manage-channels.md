@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Channel Factory and Use it to Create and Manage Channels"
 title: "How to: Create a Channel Factory and Use it to Create and Manage Channels"
 ms.date: "03/30/2017"
 ms.assetid: 018dcc30-9f61-419e-af8e-412a85e8d282

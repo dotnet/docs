@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Abstractions (Abstract Types and Interfaces)"
 title: "Abstractions (Abstract Types and Interfaces)"
 ms.date: "10/22/2008"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declaration Contexts and Default Access Levels (Visual Basic)"
 title: "Declaration Contexts and Default Access Levels"
 ms.date: 07/20/2015
 helpviewer_keywords: 

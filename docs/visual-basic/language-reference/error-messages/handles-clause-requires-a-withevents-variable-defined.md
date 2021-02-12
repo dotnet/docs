@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30506: Handles clause requires a WithEvents variable defined in the containing type or one of its base types"
 title: "Handles clause requires a WithEvents variable defined in the containing type or one of its base types"
 ms.date: 07/20/2015
 f1_keywords:

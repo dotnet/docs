@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Generate the Object Model as an External File"
 title: "How to: Generate the Object Model as an External File"
 ms.date: "03/30/2017"
 ms.assetid: 2496fa06-3df4-4ecb-86c4-70a49ea08565

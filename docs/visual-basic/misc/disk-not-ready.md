@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Disk not ready"
 title: "Disk not ready"
 ms.date: 07/20/2015
 f1_keywords: 

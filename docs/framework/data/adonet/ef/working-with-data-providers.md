@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Data Providers"
 title: "Working with Data Providers"
 ms.date: "03/30/2017"
 ms.assetid: b6ae53f4-34f8-4510-ad98-ff1e46621526

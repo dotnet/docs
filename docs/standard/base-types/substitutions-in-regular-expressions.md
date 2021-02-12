@@ -1,6 +1,7 @@
 ---
 title: "Substitutions in Regular Expressions"
 description: Make substitutions to replace matched text using regular expressions in .NET. Substitutions are language elements recognized only within replacement patterns.
+ms.topic: conceptual
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

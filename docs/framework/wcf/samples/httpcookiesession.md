@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HttpCookieSession"
 title: "HttpCookieSession"
 ms.date: "03/30/2017"
 ms.assetid: 101cb624-8303-448a-a3af-933247c1e109

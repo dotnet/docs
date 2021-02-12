@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerFunctionControl::SetILFunctionBody Method"
 title: "ICorProfilerFunctionControl::SetILFunctionBody Method"
 ms.date: "03/30/2017"
 api_name: 

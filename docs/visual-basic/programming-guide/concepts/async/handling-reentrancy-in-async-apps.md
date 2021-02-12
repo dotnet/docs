@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling Reentrancy in Async Apps (Visual Basic)"
 title: "Handling Reentrancy in Async Apps"
 ms.date: 07/20/2015
 ms.assetid: ef3dc73d-13fb-4c5f-a686-6b84148bbffe

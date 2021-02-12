@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1401 - CloseTimeout"
 title: "1401 - CloseTimeout"
 ms.date: "03/30/2017"
 ms.assetid: 612c7292-999e-4c3e-97f3-87b0ef0c2739

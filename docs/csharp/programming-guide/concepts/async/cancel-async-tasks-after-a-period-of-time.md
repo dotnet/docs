@@ -1,7 +1,7 @@
 ---
 title: Cancel async tasks after a period of time (C#)"
 description: Learn how to schedule cancellation of any associated tasks that are not completed within a period of time.
-ms.date: 08/19/2020
+ms.date: 02/03/2021
 ms.topic: tutorial
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
 ---
@@ -47,12 +47,16 @@ static async Task Main()
     {
         Console.WriteLine("\nTasks cancelled: timed out.\n");
     }
+    finally
+    {
+        s_cts.Dispose();
+    }
 
     Console.WriteLine("Application ending.");
 }
 ```
 
-The updated `Main` method writes a few instructional messages to the console. Within the [try catch](../../../language-reference/keywords/try-catch.md), a call to <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> to schedule a cancellation. This will signal cancellation after a period of time.
+The updated `Main` method writes a few instructional messages to the console. Within the [try catch](../../../language-reference/keywords/try-catch.md), a call to <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> schedules a cancellation. This will signal cancellation after a period of time.
 
 Next, the `SumPageSizesAsync` method is awaited. If processing all of the URLs occurs faster than the scheduled cancellation, the application ends. However, if the scheduled cancellation is triggered before all of the URLs are processed, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown.
 

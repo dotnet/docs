@@ -23,7 +23,7 @@ The section discusses the general structure of a C# program, and includes the st
 
 ## Related sections
 
-- [Getting Started with C#](../../getting-started/index.md)
+- [Get Started with C#](../../tour-of-csharp/index.md)
 
 - [C# Programming Guide](../index.md)
 

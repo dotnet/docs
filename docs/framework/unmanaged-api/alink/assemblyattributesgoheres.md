@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AssemblyAttributesGoHereS"
 title: "AssemblyAttributesGoHereS"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRPolicyManager::SetUnhandledExceptionPolicy Method"
 title: "ICLRPolicyManager::SetUnhandledExceptionPolicy Method"
 ms.date: "03/30/2017"
 api_name: 

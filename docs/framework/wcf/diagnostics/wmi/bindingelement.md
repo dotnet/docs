@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BindingElement"
 title: "BindingElement"
 ms.date: "03/30/2017"
 ms.assetid: fdbfde0c-2e52-4fc5-9eb8-14b42e647263

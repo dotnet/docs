@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRMetaHost::GetVersionFromFile Method"
 title: "ICLRMetaHost::GetVersionFromFile Method"
 ms.date: "03/30/2017"
 api_name: 

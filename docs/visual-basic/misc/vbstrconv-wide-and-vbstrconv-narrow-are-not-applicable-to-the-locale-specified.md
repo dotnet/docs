@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified"
 title: "VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified"
 ms.date: 07/20/2015
 f1_keywords: 

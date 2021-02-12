@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTaskManager::BeginDelayAbort Method"
 title: "IHostTaskManager::BeginDelayAbort Method"
 ms.date: "03/30/2017"
 api_name: 

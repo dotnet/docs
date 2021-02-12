@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mixing Trust Protocols in Federated Scenarios"
 title: "Mixing Trust Protocols in Federated Scenarios"
 ms.date: "03/30/2017"
 ms.assetid: d7b5fee9-2246-4b09-b8d7-9e63cb817279

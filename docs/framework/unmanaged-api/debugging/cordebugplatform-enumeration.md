@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugPlatform Enumeration"
 title: "CorDebugPlatform Enumeration"
 ms.date: "03/30/2017"
 api_name: 

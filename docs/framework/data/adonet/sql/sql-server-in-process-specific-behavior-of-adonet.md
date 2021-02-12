@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL Server In-Process-Specific Behavior of ADO.NET"
 title: "SQL Server In-Process-Specific Behavior of ADO.NET"
 titleSuffix: ""
 ms.date: "03/30/2017"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::RemotingServerSendingReply Method"
 title: "ICorProfilerCallback::RemotingServerSendingReply Method"
 ms.date: "03/30/2017"
 api_name: 

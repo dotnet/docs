@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 224 - MessageThrottleAtSeventyPercent"
 title: "224 - MessageThrottleAtSeventyPercent"
 ms.date: "03/30/2017"
 ms.assetid: 82bbbfd7-10d2-41fd-805d-2443b0c1b96b

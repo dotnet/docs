@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Implementing Inheritance with COM Objects (Visual Basic)"
 title: "Walkthrough: Implementing Inheritance with COM Objects"
 ms.date: 07/20/2015
 helpviewer_keywords:

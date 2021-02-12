@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4025 - OpenListenerChannelInstanceFailed"
 title: "4025 - OpenListenerChannelInstanceFailed"
 ms.date: "03/30/2017"
 ms.assetid: 451192e0-e21a-44c9-b528-8cb984454b34

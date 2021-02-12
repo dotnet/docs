@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structures and Other Programming Elements (Visual Basic)"
 title: "Structures and Other Programming Elements"
 ms.date: 07/20/2015
 helpviewer_keywords: 

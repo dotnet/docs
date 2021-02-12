@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeHost::Stop Method"
 title: "ICLRRuntimeHost::Stop Method"
 ms.date: "03/30/2017"
 api_name: 

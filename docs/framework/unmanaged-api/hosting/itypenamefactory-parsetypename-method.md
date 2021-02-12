@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITypeNameFactory::ParseTypeName Method"
 title: "ITypeNameFactory::ParseTypeName Method"
 ms.date: "03/30/2017"
 api_name: 

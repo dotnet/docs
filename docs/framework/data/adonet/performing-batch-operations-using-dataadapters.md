@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performing Batch Operations Using DataAdapters"
 title: "Performing Batch Operations Using DataAdapters"
 ms.date: "03/30/2017"
 dev_langs: 

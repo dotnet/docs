@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual Basic compiler options listed alphabetically"
 title: "Compiler Options Listed Alphabetically"
 ms.date: 04/12/2018
 helpviewer_keywords: 

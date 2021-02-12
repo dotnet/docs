@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.ComIntegration.ComIntegrationTLBImportFinished"
 title: "System.ServiceModel.ComIntegration.ComIntegrationTLBImportFinished"
 ms.date: "03/30/2017"
 ms.assetid: e0f1d5dc-92eb-42f9-8786-89cb8d4f22e6

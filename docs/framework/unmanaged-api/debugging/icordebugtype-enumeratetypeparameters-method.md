@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugType::EnumerateTypeParameters Method"
 title: "ICorDebugType::EnumerateTypeParameters Method"
 ms.date: "03/30/2017"
 api_name: 

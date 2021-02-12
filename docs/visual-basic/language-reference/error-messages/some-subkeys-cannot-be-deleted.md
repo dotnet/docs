@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Some subkeys cannot be deleted"
 title: "Some subkeys cannot be deleted"
 ms.date: 07/20/2015
 ms.assetid: 14562137-af43-4972-84c1-a380a90f7d6c

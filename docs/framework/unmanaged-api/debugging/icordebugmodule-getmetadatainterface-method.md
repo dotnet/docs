@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModule::GetMetaDataInterface Method"
 title: "ICorDebugModule::GetMetaDataInterface Method"
 ms.date: "03/30/2017"
 api_name: 

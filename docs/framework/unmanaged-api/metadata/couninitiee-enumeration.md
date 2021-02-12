@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COUNINITIEE Enumeration"
 title: "COUNINITIEE Enumeration"
 ms.date: "03/30/2017"
 api_name: 

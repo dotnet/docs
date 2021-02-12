@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugRegisterSet2::GetRegisters method"
 title: "ICorDebugRegisterSet2::GetRegisters Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Streaming Provider (WCF Data Services)"
 title: "Streaming Provider (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:
@@ -12,6 +13,8 @@ helpviewer_keywords:
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
 ---
 # Streaming Provider (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 A data service can expose large object binary data. This binary data might represent video and audio streams, images, document files, or other types of binary media. When an entity in the data model includes one or more binary properties, the data service returns this binary data encoded as base-64 inside the entry in the response feed. Because loading and serializing large binary data in this manner can affect performance, the Open Data Protocol (OData) defines a mechanism for retrieving binary data independent of the entity to which it belongs. This is accomplished by separating the binary data from the entity into one or more data streams.
 

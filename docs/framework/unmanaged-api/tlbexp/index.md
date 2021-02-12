@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tlbexp Helper Functions (Unmanaged API Reference)"
 title: "Tlbexp Helper Functions (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: dataContractSerializer"
 title: "dataContractSerializer"
 ms.date: "03/30/2017"
 ms.assetid: a47513a4-a96c-4350-8586-daacb05dee71

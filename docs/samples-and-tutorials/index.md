@@ -3,14 +3,14 @@ title: .NET samples and tutorials
 description: Information on samples and tutorials for .NET Core, ASP.NET Core, and the C# language that help you learn about .NET.
 author: BillWagner
 ms.author: wiwagn
-ms.date: 08/19/2020
+ms.date: 02/01/2021
 ---
 
 # .NET samples and tutorials
 
-The .NET documentation contains a set of samples and tutorials that teach you about .NET. This article describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn/). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#view-and-download-samples) section.
+The .NET documentation contains a set of samples and tutorials that teach you about .NET. This article describes how to find, view, and download .NET, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn/). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#view-and-download-samples) section.
 
-## .NET Core
+## .NET
 
 ### Samples
 
@@ -20,13 +20,15 @@ This guide shows you how to create an ASP.NET Core web app and associated unit t
 
 ### Tutorials
 
-**[Tutorial: Create a .NET Core console application using Visual Studio Code](../core/tutorials/with-visual-studio-code.md)**
+**[Tutorial: Create a .NET console application using Visual Studio Code](../core/tutorials/with-visual-studio-code.md)**
 
-This tutorial shows how to create and run a .NET Core console application by using Visual Studio Code and the .NET Core CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET Core CLI.
+This tutorial shows how to create and run a .NET console application by using Visual Studio Code and the .NET CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET CLI.
 
-**[Writing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)**
+**[Tutorial: Create a .NET class library using Visual Studio Code](../core/tutorials/library-with-visual-studio-code.md)**
 
-This sample covers how to write libraries for .NET using the .NET Core CLI. These tools provide an efficient and low-level experience that works across any supported operating system. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/libraries/frameworks-library) is available in the dotnet/samples repository on GitHub.
+This tutorial shows how to write libraries for .NET using Visual Studio Code and the .NET CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET CLI.
+
+For more .NET tutorials, see [Learn .NET and the .NET SDK tools](../core/tutorials/index.md).
 
 ## ASP.NET Core
 
@@ -78,13 +80,13 @@ This tutorial demonstrates web communications, JSON serialization, and object-or
 
 This tutorial demonstrates many of the features of LINQ and the language elements that support it. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-linq) is available in the dotnet/samples repository on GitHub.
 
-**[Tutorial: Create a .NET Core console application using Visual Studio for Mac](../core/tutorials/with-visual-studio-mac.md)**
+**[Tutorial: Create a .NET console application using Visual Studio for Mac](../core/tutorials/with-visual-studio-mac.md)**
 
-This tutorial shows you how to build a simple .NET Core console app using Visual Studio for Mac.
+This tutorial shows you how to build a simple .NET console app using Visual Studio for Mac.
 
-**[Create a .NET Standard library on macOS using Visual Studio for Mac](../core/tutorials/library-with-visual-studio-mac.md)**
+**[Create a .NET class library on macOS using Visual Studio for Mac](../core/tutorials/library-with-visual-studio-mac.md)**
 
-This tutorial shows you how to build a .NET Standard library using Visual Studio for Mac.
+This tutorial shows you how to build a .NET class library using Visual Studio for Mac.
 
 **[Creating a .NET Core application that supports plugins](../core/tutorials/creating-app-with-plugin-support.md)**
 
@@ -106,7 +108,7 @@ Many topics show source code and samples that are available for viewing or downl
    * Clone the repository locally. If you clone a docs repository directly to your local system, you won't be able to make commits directly against the official repository, so you won't be able to make documentation contributions later. Use the fork and clone procedure previously described if you want to preserve the opportunity to contribute to the documentation later.
 1. Navigate within the repository's folders to the sample's location. The relative path to the sample's location appears in your browser's address bar when you follow the link to the sample.
 1. To run a sample, you have several options:
-   * Use the [.NET Core CLI](../core/tools/index.md): In a console window, navigate to the sample's folder and use dotnet CLI commands.
+   * Use the [.NET CLI](../core/tools/index.md): In a console window, navigate to the sample's folder and use dotnet CLI commands.
    * Use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link): Open the sample by selecting **File > Open > Project/Solution** from the menu bar, navigate to the sample project folder, and select the project file (*.csproj* or *.fsproj*).
    * Use [Visual Studio Code](https://code.visualstudio.com/): Open the sample by selecting **File > Open Folder** from the menu bar and selecting the sample's project folder.
-   * Use a different IDE that supports .NET Core projects.
+   * Use a different IDE that supports .NET projects.

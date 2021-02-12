@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuring Caching in Network Applications"
 title: "Configuring Caching in Network Applications"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

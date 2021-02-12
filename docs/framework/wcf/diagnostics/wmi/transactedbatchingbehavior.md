@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TransactedBatchingBehavior"
 title: "TransactedBatchingBehavior"
 ms.date: "03/30/2017"
 ms.assetid: 2d03e6ae-f06c-4ada-b279-e01838b2ecdc

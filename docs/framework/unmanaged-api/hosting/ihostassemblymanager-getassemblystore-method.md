@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostAssemblyManager::GetAssemblyStore Method"
 title: "IHostAssemblyManager::GetAssemblyStore Method"
 ms.date: "03/30/2017"
 api_name: 

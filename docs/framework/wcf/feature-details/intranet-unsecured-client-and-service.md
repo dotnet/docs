@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Intranet Unsecured Client and Service"
 title: "Intranet Unsecured Client and Service"
 ms.date: "03/30/2017"
 dev_langs: 

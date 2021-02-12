@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use a Service Moniker with Metadata Exchange Contracts"
 title: "How to: Use a Service Moniker with Metadata Exchange Contracts"
 ms.date: "03/30/2017"
 ms.assetid: c41a07e5-cb9d-45d6-9ea4-34511e227faf

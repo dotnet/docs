@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XmlSchemaCollection Schema Compilation"
 title: "XmlSchemaCollection Schema Compilation"
 ms.date: "03/30/2017"
 dev_langs: 

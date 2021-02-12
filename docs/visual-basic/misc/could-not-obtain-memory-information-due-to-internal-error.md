@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Could not obtain memory information due to internal error"
 title: "Could not obtain memory information due to internal error"
 ms.date: 07/20/2015
 f1_keywords: 

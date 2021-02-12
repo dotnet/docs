@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transacted Operations In Doubt Per Second"
 title: "Transacted Operations In Doubt Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 7e6b0716-c107-42e5-a21d-31d988e7a691

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugAppDomain4::GetObjectForCCW Method"
 title: "ICorDebugAppDomain4::GetObjectForCCW Method"
 ms.date: "03/30/2017"
 ms.assetid: 2cacdb85-e7b8-42e7-b310-c3e8c22e5d33

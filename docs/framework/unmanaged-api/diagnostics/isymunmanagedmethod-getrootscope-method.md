@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedMethod::GetRootScope Method"
 title: "ISymUnmanagedMethod::GetRootScope Method"
 ms.date: "03/30/2017"
 api_name: 

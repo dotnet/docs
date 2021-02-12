@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Workflow Service Host Internals"
 title: "Workflow Service Host Internals"
 ms.date: "03/30/2017"
 ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250

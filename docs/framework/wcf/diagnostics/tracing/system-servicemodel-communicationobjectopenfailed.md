@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.CommunicationObjectOpenFailed"
 title: "System.ServiceModel.CommunicationObjectOpenFailed"
 ms.date: "03/30/2017"
 ms.assetid: 8e188528-c4f4-499e-9ac2-a2fac4742f29

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Example: Troubleshooting Dynamic Programming"
 title: "Example: Troubleshooting Dynamic Programming"
 ms.date: "03/30/2017"
 ms.assetid: 42ed860a-a022-4682-8b7f-7c9870784671

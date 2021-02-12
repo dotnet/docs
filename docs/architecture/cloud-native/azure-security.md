@@ -1,7 +1,7 @@
 ---
 title: Azure security for cloud-native apps
 description: Architecting Cloud Native .NET Apps for Azure | Azure Security for Cloud Native Apps
-ms.date: 12/01/2020
+ms.date: 01/19/2021
 ---
 
 # Azure security for cloud-native apps
@@ -67,7 +67,7 @@ The build process is a good place to put scanning tools to detect problems in so
 
 ## Built-in security
 
-Azure is designed to balance usability and security for the majority of users. Different users are going to have different security requirements, so they need to fine-tune their approach to cloud security. Microsoft publishes a great deal of security information in the [Trust Center](https://azure.microsoft.com/support/trust-center/). This resource should be the first stop for those professionals interested in understanding how the built-in attack mitigation technologies work.
+Azure is designed to balance usability and security for most users. Different users are going to have different security requirements, so they need to fine-tune their approach to cloud security. Microsoft publishes a great deal of security information in the [Trust Center](https://azure.microsoft.com/support/trust-center/). This resource should be the first stop for those professionals interested in understanding how the built-in attack mitigation technologies work.
 
 Within the Azure portal, the [Azure Advisor](https://azure.microsoft.com/services/advisor/) is a system that is constantly scanning an environment and making recommendations. Some of these recommendations are designed to save users money, but others are designed to identify potentially insecure configurations, such as having a storage container open to the world and not protected by a Virtual Network.
 
@@ -112,7 +112,7 @@ The first component in RBAC is a security principal. A security principal can be
 - Service principal - A security identity under which services or applications run.
 - Managed identity - An Azure Active Directory identity managed by Azure. Managed identities are typically used when developing cloud applications that manage the credentials for authenticating to Azure services.
 
-The security principal can be applied to most any resource. This means that it's possible to assign a security principal to a container running within Azure Kubernetes, allowing it to access secrets stored in Key Vault. An Azure Function could take on a permission allowing it to talk to an Active Directory instance to validate a JWT for a calling user. Once services are enabled with a service principal, their permissions can be managed granularly using roles and scopes.
+The security principal can be applied to most any resource. This aspect means that it's possible to assign a security principal to a container running within Azure Kubernetes, allowing it to access secrets stored in Key Vault. An Azure Function could take on a permission allowing it to talk to an Active Directory instance to validate a JWT for a calling user. Once services are enabled with a service principal, their permissions can be managed granularly using roles and scopes.
 
 ## Roles
 

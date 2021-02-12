@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDataTarget::WriteVirtual Method"
 title: "ICLRDataTarget::WriteVirtual Method"
 ms.date: "03/30/2017"
 api_name: 

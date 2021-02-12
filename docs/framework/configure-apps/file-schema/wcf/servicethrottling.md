@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <serviceThrottling>"
 title: "<serviceThrottling>"
 ms.date: "03/30/2017"
 ms.assetid: a337d064-1e64-4209-b4a9-db7fdb7e3eaf

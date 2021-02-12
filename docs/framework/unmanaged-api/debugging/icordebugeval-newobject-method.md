@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEval::NewObject Method"
 title: "ICorDebugEval::NewObject Method"
 ms.date: "03/30/2017"
 api_name: 

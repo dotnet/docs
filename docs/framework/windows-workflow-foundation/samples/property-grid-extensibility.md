@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property grid extensibility"
 title: "Property grid extensibility - WF sample"
 ms.date: "03/30/2017"
 ms.assetid: 3530c3a3-756d-4712-9f10-fb2897414d3a

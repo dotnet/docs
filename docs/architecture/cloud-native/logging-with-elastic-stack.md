@@ -1,7 +1,7 @@
 ---
 title: Logging with Elastic Stack
 description: Logging using Elastic Stack, Logstash, and Kibana
-ms.date: 05/13/2020
+ms.date: 01/19/2021
 ---
 
 # Logging with Elastic Stack
@@ -12,7 +12,7 @@ Collectively these tools are known as the Elastic Stack or ELK stack.
 
 ## Elastic Stack
 
-The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the [most part](https://kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/), all you need to get started is to set the environment variables as shown in Figure 7-5:
+The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the [most part](https://v1-19.docs.kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/), all you need to get started is to set the environment variables as shown in Figure 7-5:
 
 ```kubernetes
 KUBE_LOGGING_DESTINATION=elasticsearch
@@ -21,7 +21,7 @@ KUBE_ENABLE_NODE_LOGGING=true
 
 **Figure 7-5**. Configuration variables for Kubernetes
 
-This will install Elasticsearch on the cluster and target sending all the cluster logs to it.
+This step will install Elasticsearch on the cluster and target sending all the cluster logs to it.
 
 ![An example of a Kibana dashboard showing the results of a query against logs ingested from Kubernetes](./media/kibana-dashboard.png)
 **Figure 7-6**. An example of a Kibana dashboard showing the results of a query against logs that are ingested from Kubernetes
@@ -34,7 +34,7 @@ Elastic Stack provides centralized logging in a low-cost, scalable, cloud-friend
 
 The first component is [Logstash](https://www.elastic.co/products/logstash). This tool is used to gather log information from a large variety of different sources. For instance, Logstash can read logs from disk and also receive messages from logging libraries like [Serilog](https://serilog.net/). Logstash can do some basic filtering and expansion on the logs as they arrive. For instance, if your logs contain IP addresses then Logstash may be configured to do a geographical lookup and obtain a country or even city of origin for that message.
 
-Serilog is a logging library for .NET languages, which allows for parameterized logging. Instead of generating a textual log message that embeds fields, parameters are kept separate. This allows for more intelligent filtering and searching. A sample Serilog configuration for writing to Logstash appears in Figure 7-7.
+Serilog is a logging library for .NET languages, which allows for parameterized logging. Instead of generating a textual log message that embeds fields, parameters are kept separate. This library allows for more intelligent filtering and searching. A sample Serilog configuration for writing to Logstash appears in Figure 7-7.
 
 ```csharp
 var log = new LoggerConfiguration()
@@ -100,7 +100,7 @@ The final component of the stack is Kibana. This tool is used to provide interac
 
 ## Installing Elastic Stack on Azure
 
-The Elastic stack can be installed on Azure in a number of ways. As always, it's possible to [provision virtual machines and install Elastic Stack on them directly](/azure/virtual-machines/linux/tutorial-elasticsearch). This option is preferred by some experienced users as it offers the highest degree of customizability. Deploying on infrastructure as a service introduces significant management overhead forcing those who take that path to take ownership of all the tasks associated with infrastructure as a service such as securing the machines and keeping up-to-date with patches.
+The Elastic stack can be installed on Azure in many ways. As always, it's possible to [provision virtual machines and install Elastic Stack on them directly](/azure/virtual-machines/linux/tutorial-elasticsearch). This option is preferred by some experienced users as it offers the highest degree of customizability. Deploying on infrastructure as a service introduces significant management overhead forcing those who take that path to take ownership of all the tasks associated with infrastructure as a service such as securing the machines and keeping up-to-date with patches.
 
 An option with less overhead is to make use of one of the many Docker containers on which the Elastic Stack has already been configured. These containers can be dropped into an existing Kubernetes cluster and run alongside application code. The [sebp/elk](https://elk-docker.readthedocs.io/) container is a well-documented and tested Elastic Stack container.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugExceptionDebugEvent::GetFlags Method"
 title: "ICorDebugExceptionDebugEvent::GetFlags Method"
 ms.date: "03/30/2017"
 ms.assetid: 73225303-8852-487e-9a0e-9f0cb95e99d9

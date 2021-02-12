@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DataMemberFieldEditor Class"
 title: "DataMemberFieldEditor Class"
 ms.date: "03/30/2017"
 ms.technology: "dotnet-winforms"

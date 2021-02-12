@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write an Extension for the ServiceContractGenerator"
 title: "How to: Write an Extension for the ServiceContractGenerator"
 ms.date: "03/30/2017"
 ms.assetid: 876ca823-bd16-4bdf-9e0f-02092df90e51

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.TxCompletionStatusCompletedForError"
 title: "System.ServiceModel.TxCompletionStatusCompletedForError"
 ms.date: "03/30/2017"
 ms.assetid: 8ade4722-a6d5-471c-b960-1cfea4ea2aa9

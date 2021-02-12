@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugModuleDebugEvent::GetModule Method"
 title: "ICorDebugModuleDebugEvent::GetModule Method"
 ms.date: "03/30/2017"
 ms.assetid: b1141c35-4253-4e34-b3e4-ed406a9dea4f

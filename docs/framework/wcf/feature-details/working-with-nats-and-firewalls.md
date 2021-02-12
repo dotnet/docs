@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with NATs and Firewalls"
 title: "Working with NATs and Firewalls"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

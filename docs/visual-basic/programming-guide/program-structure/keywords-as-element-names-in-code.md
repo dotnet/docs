@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Keywords as Element Names in Code (Visual Basic)"
 title: "Keywords as Element Names in Code"
 ms.date: 07/20/2015
 helpviewer_keywords: 

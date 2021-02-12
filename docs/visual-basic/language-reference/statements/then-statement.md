@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Then Statement"
 title: "Then Statement"
 ms.date: 07/20/2015
 helpviewer_keywords: 

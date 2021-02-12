@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableHome::GetRegister Method"
 title: "ICorDebugVariableHome::GetRegister Method"
 ms.date: "03/30/2017"
 api_name: 

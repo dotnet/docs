@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ProtocolStopped"
 title: "ProtocolStopped"
 ms.date: "03/30/2017"
 ms.assetid: bc4c892f-b5ed-40cd-979c-382f4bed41b6

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Document your code with XML (Visual Basic)"
 title: "Documenting Your Code with XML"
 ms.date: 07/20/2015
 helpviewer_keywords:

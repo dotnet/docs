@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqQueueTransactionalStatusUnknown"
 title: "System.ServiceModel.Channels.MsmqQueueTransactionalStatusUnknown"
 ms.date: "03/30/2017"
 ms.assetid: 193a1a73-42b8-4a98-9a72-ec06ad6b3073

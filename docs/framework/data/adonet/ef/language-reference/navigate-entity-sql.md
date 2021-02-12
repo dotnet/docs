@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NAVIGATE (Entity SQL)"
 title: "NAVIGATE (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: f107f29d-005f-4e39-a898-17f163abb1d0

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostTaskManager::SetStackGuarantee Method"
 title: "IHostTaskManager::SetStackGuarantee Method"
 ms.date: "03/30/2017"
 api_name: 

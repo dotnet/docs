@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Diagnostics Symbol Store (Unmanaged API Reference)"
 title: "Diagnostics Symbol Store (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

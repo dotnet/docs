@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <tcpTransport>"
 title: "<tcpTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563

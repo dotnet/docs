@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_DEBUG_IL_TO_NATIVE_MAP Structure"
 title: "COR_DEBUG_IL_TO_NATIVE_MAP Structure"
 ms.date: "03/30/2017"
 api_name: 

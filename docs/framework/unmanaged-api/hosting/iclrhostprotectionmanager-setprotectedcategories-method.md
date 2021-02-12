@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRHostProtectionManager::SetProtectedCategories Method"
 title: "ICLRHostProtectionManager::SetProtectedCategories Method"
 ms.date: "03/30/2017"
 api_name: 

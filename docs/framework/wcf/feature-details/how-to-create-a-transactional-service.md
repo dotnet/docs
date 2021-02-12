@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Transactional Service"
 title: "How to: Create a Transactional Service"
 ms.date: "03/30/2017"
 ms.assetid: 1bd2e4ed-a557-43f9-ba98-4c70cb75c154

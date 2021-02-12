@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugCode2::GetCodeChunks Method"
 title: "ICorDebugCode2::GetCodeChunks Method"
 ms.date: "03/30/2017"
 api_name:

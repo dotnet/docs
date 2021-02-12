@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calling Service Operations (WCF Data Services)"
 title: "Calling Service Operations (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -7,6 +8,8 @@ dev_langs:
 ms.assetid: 1767f3a7-29d2-4834-a763-7d169693fa8b
 ---
 # Calling Service Operations (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 The Open Data Protocol (OData) defines service operations for a data service. WCF Data Services enables you to define such operations as methods on the data service. Like other data service resources, these service operations are addressed by using URIs. A service operation can return collections of entity types, single entity type instances, and primitive types, such as integer and string. A service operation can also return `null` (`Nothing` in Visual Basic). The WCF Data Services client library can be used to access service operations that support HTTP GET requests. These kinds of service operations are defined as methods that have the <xref:System.ServiceModel.Web.WebGetAttribute> applied. For more information, see [Service Operations](service-operations-wcf-data-services.md).  
   

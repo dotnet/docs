@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Navigate Relationships with the Navigate Operator"
 title: "How to: Navigate Relationships with the Navigate Operator"
 ms.date: "03/30/2017"
 dev_langs: 

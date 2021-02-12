@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connection Events"
 title: "Connection Events"
 ms.date: "03/30/2017"
 dev_langs: 

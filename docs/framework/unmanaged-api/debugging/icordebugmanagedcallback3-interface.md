@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugManagedCallback3 Interface"
 title: "ICorDebugManagedCallback3 Interface"
 ms.date: "03/30/2017"
 api_name: 

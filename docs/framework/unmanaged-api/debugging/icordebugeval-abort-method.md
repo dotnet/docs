@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugEval::Abort Method"
 title: "ICorDebugEval::Abort Method"
 ms.date: "03/30/2017"
 api_name: 

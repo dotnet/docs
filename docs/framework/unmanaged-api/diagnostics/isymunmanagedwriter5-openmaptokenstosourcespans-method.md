@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedWriter5::OpenMapTokensToSourceSpans Method"
 title: "ISymUnmanagedWriter5::OpenMapTokensToSourceSpans Method"
 ms.date: "03/30/2017"
 ms.assetid: 93ad2517-b0dc-464c-8688-a58a30eda18d

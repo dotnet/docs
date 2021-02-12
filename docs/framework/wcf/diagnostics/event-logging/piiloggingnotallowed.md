@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PiiLoggingNotAllowed"
 title: "PiiLoggingNotAllowed"
 ms.date: "03/30/2017"
 ms.assetid: fc34a0b6-fee7-4da4-b146-b0c1c8b7519a

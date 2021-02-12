@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: -out (Visual Basic)"
 title: "-out"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Directly Execute SQL Commands"
 title: "How to: Directly Execute SQL Commands"
 ms.date: "03/30/2017"
 dev_langs: 

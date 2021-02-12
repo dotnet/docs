@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interceptors (WCF Data Services)"
 title: "Interceptors (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
 ---
 # Interceptors (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services enables an application to intercept request messages so that you can add custom logic to an operation. You can use this custom logic to validate data in incoming messages. You can also use it to further restrict the scope of a query request, such as to insert a custom authorization policy on a per request basis.  
   

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .NET Native Reflection API Reference"
 title: ".NET Native Reflection API Reference"
 ms.date: "03/30/2017"
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c

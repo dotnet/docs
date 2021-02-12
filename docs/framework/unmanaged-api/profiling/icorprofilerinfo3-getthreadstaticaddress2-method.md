@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo3::GetThreadStaticAddress2 Method"
 title: "ICorProfilerInfo3::GetThreadStaticAddress2 Method"
 ms.date: "03/30/2017"
 api_name: 

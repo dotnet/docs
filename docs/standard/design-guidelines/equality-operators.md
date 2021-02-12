@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Equality Operators"
 title: "Equality Operators"
 ms.date: "10/22/2008"
 helpviewer_keywords:

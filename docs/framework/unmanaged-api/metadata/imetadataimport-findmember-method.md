@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataImport::FindMember Method"
 title: "IMetaDataImport::FindMember Method"
 ms.date: "03/30/2017"
 api_name: 

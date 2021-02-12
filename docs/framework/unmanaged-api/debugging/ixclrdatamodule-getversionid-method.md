@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IXCLRDataModule::GetVersionId Method"
 title: "IXCLRDataModule::GetVersionId Method"
 ms.date: "01/16/2019"
 api.name:

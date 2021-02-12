@@ -1,18 +1,18 @@
 ---
-title: .NET Core SDK overview
-description: Find out about the .NET Core SDK, which is a set of libraries and tools used to create .NET Core projects.
+title: .NET SDK overview
+description: Find out about the .NET SDK, which is a set of libraries and tools used to create .NET projects.
 ms.date: 07/31/2019
 ms.technology: dotnet-cli
 ---
-# .NET Core SDK overview
+# .NET SDK overview
 
-The .NET Core SDK is a set of libraries and tools that allow developers to create .NET Core applications and libraries. It contains the following components that are used to build and run applications:
+The .NET SDK is a set of libraries and tools that allow developers to create .NET applications and libraries. It contains the following components that are used to build and run applications:
 
-- The .NET Core CLI.
-- .NET Core libraries and runtime.
+- The .NET CLI.
+- .NET libraries and runtime.
 - The `dotnet` [driver](tools/index.md#driver).
 
-## Acquiring the .NET Core SDK
+## Acquiring the .NET SDK
 
 As with any tooling, the first thing is to get the tools to your machine. Depending on your scenario, you can install the SDK using one of the following methods:
 
@@ -29,14 +29,14 @@ Install scripts, on the other hand, don't require administrative privileges. How
 prerequisites on the machine; you need to install all of the prerequisites manually. The scripts are meant mostly for
 setting up build servers or when you wish to install the tools without admin privileges (do note the prerequisites
 caveat above). You can find more information in the [install script reference](tools/dotnet-install-script.md) article. If you're
-interested in how to set up the SDK on your CI build server, see the [Using .NET Core SDK and tools in Continuous Integration (CI)](tools/using-ci-with-cli.md) article.
+interested in how to set up the SDK on your CI build server, see the [Using .NET SDK and tools in Continuous Integration (CI)](tools/using-ci-with-cli.md) article.
 
 By default, the SDK installs in a "side-by-side" (SxS) manner, which means multiple versions
-can coexist at any given time on a single machine. How the version gets picked when you're running CLI commands is explained in more detail in the [Select the .NET Core version to use](versions/selection.md) article.
+can coexist at any given time on a single machine. How the version gets picked when you're running CLI commands is explained in more detail in the [Select the .NET version to use](versions/selection.md) article.
 
 ## See also
 
-- [.NET Core CLI overview](tools/index.md)
-- [.NET Core versioning overview](versions/index.md)
-- [How to remove the .NET Core runtime and SDK](install/remove-runtime-sdk-versions.md)
-- [Select the .NET Core version to use](versions/selection.md)
+- [.NET CLI overview](tools/index.md)
+- [.NET versioning overview](versions/index.md)
+- [How to remove the .NET runtime and SDK](install/remove-runtime-sdk-versions.md)
+- [Select the .NET version to use](versions/selection.md)

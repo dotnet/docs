@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback::ExceptionSearchFilterEnter Method"
 title: "ICorProfilerCallback::ExceptionSearchFilterEnter Method"
 ms.date: "03/30/2017"
 api_name: 

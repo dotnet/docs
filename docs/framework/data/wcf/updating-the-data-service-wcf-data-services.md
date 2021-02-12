@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Updating the Data Service (WCF Data Services)"
 title: "Updating the Data Service (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: 00d993be-ffed-4dea-baf7-6eea982cdb54
 ---
 # Updating the Data Service (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 When you use the WCF Data Services client library to consume an Open Data Protocol (OData) feed, the library translates the entries in the feed into instances of client data service classes. These data service classes are tracked by using the <xref:System.Data.Services.Client.DataServiceContext> to which the <xref:System.Data.Services.Client.DataServiceQuery%601> belongs. The client tracks changes to entities that you report by using methods on <xref:System.Data.Services.Client.DataServiceContext>. These methods enable the client to track added and deleted entities and also changes that you make to property values or to relationships between entity instances. Those tracked changes are sent back to the data service as REST-based operations when you call the <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method.  
   

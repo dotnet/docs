@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Custom Instance Store"
 title: "How to: Create a Custom Instance Store"
 ms.date: "03/30/2017"
 ms.assetid: 593c4e9d-8a49-4e12-8257-cee5e6b4c075

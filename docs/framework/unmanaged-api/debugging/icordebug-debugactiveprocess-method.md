@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebug::DebugActiveProcess Method"
 title: "ICorDebug::DebugActiveProcess Method"
 ms.date: "03/30/2017"
 api_name: 

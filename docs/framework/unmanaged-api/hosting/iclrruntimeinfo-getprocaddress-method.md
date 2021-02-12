@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRRuntimeInfo::GetProcAddress Method"
 title: "ICLRRuntimeInfo::GetProcAddress Method"
 ms.date: "03/30/2017"
 api_name: 

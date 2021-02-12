@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Authenticode (Unmanaged API Reference)"
 title: "Authenticode (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 ms.assetid: 7e8cc303-6e77-4116-aa8b-7ea297a3a467

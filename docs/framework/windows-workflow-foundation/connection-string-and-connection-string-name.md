@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connection String and Connection String Name"
 title: "Connection String and Connection String Name"
 ms.date: "03/30/2017"
 ms.assetid: 473e7a3c-c88a-4a01-914a-bea82ba42866

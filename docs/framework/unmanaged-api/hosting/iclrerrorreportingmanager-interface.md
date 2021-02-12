@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRErrorReportingManager Interface"
 title: "ICLRErrorReportingManager Interface"
 ms.date: "03/30/2017"
 api_name: 

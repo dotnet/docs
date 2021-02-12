@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dynamically Enabling Analytic Tracing"
 title: "Dynamically Enabling Analytic Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 58b63cfc-307a-427d-b69d-9917ff9f44ac

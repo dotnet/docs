@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clipboard format is not valid"
 title: "Clipboard format is not valid"
 ms.date: 07/20/2015
 f1_keywords: 

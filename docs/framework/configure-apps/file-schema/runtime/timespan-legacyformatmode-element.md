@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <TimeSpan_LegacyFormatMode> Element"
 title: "<TimeSpan_LegacyFormatMode> Element"
 ms.date: "03/30/2017"
 dev_langs:

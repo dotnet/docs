@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Zero-based vs. One-based String Access in Visual Basic"
 title: "Zero-based vs. One-based String Access"
 ms.date: 07/20/2015
 helpviewer_keywords: 

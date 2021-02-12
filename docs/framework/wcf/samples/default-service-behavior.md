@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Default Service Behavior"
 title: "Default Service Behavior"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

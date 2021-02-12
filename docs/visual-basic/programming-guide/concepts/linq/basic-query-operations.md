@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Basic Query Operations (Visual Basic)"
 title: "Basic Query Operations"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit Interface"
 title: "IMetaDataEmit Interface"
 ms.date: "03/30/2017"
 api_name: 

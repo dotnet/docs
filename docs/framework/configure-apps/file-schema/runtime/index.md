@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Run-time settings schema"
 title: "Runtime Settings Schema"
 ms.date: "03/30/2017"
 helpviewer_keywords:

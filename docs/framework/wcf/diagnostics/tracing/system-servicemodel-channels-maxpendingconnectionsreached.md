@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MaxPendingConnectionsReached"
 title: "System.ServiceModel.Channels.MaxPendingConnectionsReached"
 ms.date: "03/30/2017"
 ms.assetid: 6138b01d-199b-45db-b875-c1cca68e6894

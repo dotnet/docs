@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Deserialize Instance Data Properties"
 title: "How to: Deserialize Instance Data Properties"
 ms.date: "03/30/2017"
 ms.assetid: b13a3508-1b97-4359-b336-03d85fa23bc4

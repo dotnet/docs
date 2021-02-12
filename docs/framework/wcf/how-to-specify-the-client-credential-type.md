@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify the Client Credential Type"
 title: "How to: Specify the Client Credential Type"
 ms.date: "03/30/2017"
 dev_langs: 

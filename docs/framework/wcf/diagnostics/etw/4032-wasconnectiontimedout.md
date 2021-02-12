@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 4032 - WasConnectionTimedout"
 title: "4032 - WasConnectionTimedout"
 ms.date: "03/30/2017"
 ms.assetid: 91acad10-f3cc-4075-804f-22c49131b7bf

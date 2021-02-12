@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Impersonate a Client on a Service"
 title: "How to: Impersonate a Client on a Service"
 ms.date: "03/30/2017"
 dev_langs: 

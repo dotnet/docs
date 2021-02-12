@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetAssemblyIdentityFromFile Function"
 title: "GetAssemblyIdentityFromFile Function"
 ms.date: "03/30/2017"
 api_name: 

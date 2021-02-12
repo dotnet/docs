@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configuration Sample"
 title: "Configuration Sample"
 ms.date: "03/30/2017"
 ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e

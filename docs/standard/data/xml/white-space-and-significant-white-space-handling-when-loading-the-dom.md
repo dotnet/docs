@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: White Space and Significant White Space Handling when Loading the DOM"
 title: "White Space and Significant White Space Handling when Loading the DOM"
 ms.date: "03/30/2017"
 ms.assetid: 1b141a0a-50d8-4ebd-83cd-a84449bb22b2

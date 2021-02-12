@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IcorDebugVariableHome::GetLiveRange Method"
 title: "IcorDebugVariableHome::GetLiveRange Method"
 ms.date: "03/30/2017"
 api_name: 

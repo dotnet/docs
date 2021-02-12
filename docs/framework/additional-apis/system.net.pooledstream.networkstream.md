@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PooledStream.NetworkStream Property"
 title: PooledStream.NetworkStream Property (System.Net)
 ms.date: 10/21/2019
 ms.technology: "dotnet-networking"

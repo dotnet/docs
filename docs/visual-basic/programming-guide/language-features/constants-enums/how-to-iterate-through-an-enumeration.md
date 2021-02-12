@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Iterate Through An Enumeration in Visual Basic"
 title: "How to: Iterate Through An Enumeration"
 ms.date: 07/20/2015
 helpviewer_keywords: 

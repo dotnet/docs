@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Procedures in Visual Basic"
 title: "Generic Procedures"
 ms.date: 07/20/2015
 helpviewer_keywords: 

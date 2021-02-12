@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <basicHttpContextBinding>"
 title: "<basicHttpContextBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 39b16b82-4ec6-4eff-8031-67e026870961

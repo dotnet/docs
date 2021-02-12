@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Printer error"
 title: "Printer error"
 ms.date: 07/20/2015
 f1_keywords: 

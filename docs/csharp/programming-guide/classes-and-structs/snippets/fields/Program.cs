@@ -3,11 +3,11 @@
 //<Snippet1>
 public class CalendarEntry
 {
+    // public field (Generally not recommended.)
+    public string Day;
+    
     // private field
     private DateTime _Date;
-
-    // public field (Generally not recommended.)
-    public string _Day;
 
     // Public property exposes _Date field safely.
     public DateTime Date
@@ -69,7 +69,7 @@ class TestCalendarDate
     {
         //<Snippet2>
         CalendarEntry birthday = new CalendarEntry();
-        birthday._Day = "Saturday";
+        birthday.Day = "Saturday";
         //</Snippet2>
     }
 }
@@ -77,7 +77,7 @@ class TestCalendarDate
 //<Snippet3>
 public class CalendarDateWithInitialization
 {
-    public string _Day = "Monday";
+    public string Day = "Monday";
     //...
 }
 //</Snippet3>

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostPolicyManager::OnTimeout Method"
 title: "IHostPolicyManager::OnTimeout Method"
 ms.date: "03/30/2017"
 api_name: 

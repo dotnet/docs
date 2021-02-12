@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define a Service Operation (WCF Data Services)"
 title: "How to: Define a Service Operation (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs:
@@ -10,6 +11,8 @@ helpviewer_keywords:
 ms.assetid: dfcd3cb1-2f07-4d0b-b16a-6b056c4f45fa
 ---
 # How to: Define a Service Operation (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 WCF Data Services expose methods that are defined on the server as service operations. Service operations allow a data service to provide access through a URI to a method that is defined on the server. To define a service operation, apply the [`WebGet]` or `[WebInvoke]` attribute to the method. To support query operators, the service operation must return an <xref:System.Linq.IQueryable%601> instance. Service operations may access the underlying data source through the <xref:System.Data.Services.DataService%601.CurrentDataSource%2A> property on the <xref:System.Data.Services.DataService%601>. For more information, see [Service Operations](service-operations-wcf-data-services.md).
 

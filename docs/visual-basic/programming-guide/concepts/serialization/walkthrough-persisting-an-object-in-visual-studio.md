@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Persisting an Object in Visual Studio (Visual Basic)"
 title: "Persisting an Object in Visual Studio"
 ms.date: 07/20/2015
 ms.assetid: f1d0b562-e349-4dce-ab5f-c05108467030

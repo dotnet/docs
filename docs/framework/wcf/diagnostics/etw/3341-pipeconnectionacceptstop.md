@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3341 - PipeConnectionAcceptStop"
 title: "3341 - PipeConnectionAcceptStop"
 ms.date: "03/30/2017"
 ms.assetid: 85d20b28-53c2-4206-90bc-8564a03dcb49

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo8 Interface"
 title: "ICorProfilerInfo8 Interface"
 ms.date: "08/06/2019"
 author: "davmason"

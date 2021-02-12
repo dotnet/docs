@@ -1,11 +1,15 @@
 ---
-title: Modernizing Desktop Apps on Windows 10 with .NET Core 3.1
-description: Learn how to modernize existing desktop apps with .NET Core 3.1
-ms.date: 05/12/2020
+title: Modernizing Desktop Apps on Windows 10 with .NET 5
+description: Learn how to modernize existing desktop apps with .NET 5
+ms.date: 01/06/2021
 ---
-# Modernizing Desktop Apps on Windows 10 with .NET Core 3.1
+# Modernizing Desktop Apps on Windows 10 with .NET 5
 
 ![Screenshot that shows the modernize desktop apps e-book cover.](./media/modernizing-existing-desktop-apps-ebook-cover.png)
+
+**EDITION v1.0.1** - Updated to .NET 5
+
+Refer [changelog](https://aka.ms/desktop-ebook-changelog) for the book updates and community contributions.
 
 PUBLISHED BY
 
@@ -17,11 +21,11 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2020 by Microsoft Corporation
+Copyright © 2021 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
-This book is provided "as-is" and expresses the author's views and opinions. The views, opinions and information expressed in this book, including URL and other Internet website references, may change without notice.
+This book is provided "as-is" and expresses the author's views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
@@ -69,13 +73,13 @@ Microsoft's approach to modernizing existing applications is to give you the fle
 
 ## Who should use the book
 
-We wrote this book for developers and solution architects who want to modernize existing Windows Forms and WPF desktop applications to leverage the benefits of .NET Core and Windows 10.
+This book for developers and solution architects who want to modernize existing Windows Forms and WPF desktop applications to leverage the benefits of .NET and Windows 10.
 
 You might also find this book useful if you're a technical decision maker, such as an enterprise architect or a development lead or director who wants an overview of the benefits of updating existing desktop applications.
 
 ## How to use the book
 
-This book addresses the "why"—why you might want to modernize your existing applications, and the specific benefits you get from using NET Core 3.1 and MSIX to modernize your desktop apps. The content of the book is designed for architects and technical decision makers who want an overview, but who don't need to focus on implementation and technical, step-by-step details.
+This book addresses the "why"—why you might want to modernize your existing applications, and the specific benefits you get from using NET and MSIX to modernize your desktop apps. The content of the book is designed for architects and technical decision makers who want an overview, but who don't need to focus on implementation and technical, step-by-step details.
 
 Along the different chapters, sample implementation code snippets and screenshots are provided, with chapter 5 devoted to showcase a complete migration process for sample applications.
 
@@ -83,11 +87,11 @@ Along the different chapters, sample implementation code snippets and screenshot
 
 This book covers a specific subset of scenarios that are focused on lift-and-shift scenarios, outlining the way to gain the benefits of modernizing without the effort of rewriting code.
 
-This book isn't about developing modern applications with .NET Core from scratch or about getting started with Windows Forms and WPF. It focuses on how you can update existing desktop applications with the latest technologies for desktop development.
+This book isn't about developing modern applications with .NET from scratch or about getting started with Windows Forms and WPF. It focuses on how you can update existing desktop applications with the latest technologies for desktop development.
 
 ## Samples used in this book
 
-To highlight the necessary steps to perform a modernization, we'll be using a sample application called `eShopModernizing`. This application has two flavors, Windows Forms and WPF, and we'll show a step-by-step process on how to perform the modernization on both of them to .NET Core.
+To highlight the necessary steps to perform a modernization, we'll be using a sample application called `eShopModernizing`. This application has two flavors, Windows Forms and WPF, and we'll show a step-by-step process on how to perform the modernization on both of them to .NET.
 
 Also, on the GitHub repository for this book, you'll find the results of the process, which you can consult with if you decide to follow the step-by-step tutorial.
 

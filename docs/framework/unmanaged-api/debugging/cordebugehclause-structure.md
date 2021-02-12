@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugEHClause Structure"
 title: "CorDebugEHClause Structure"
 ms.date: "03/30/2017"
 dev_langs: 

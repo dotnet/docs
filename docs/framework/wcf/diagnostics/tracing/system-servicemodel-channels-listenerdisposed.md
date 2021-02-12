@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.ListenerDisposed"
 title: "System.ServiceModel.Channels.ListenerDisposed"
 ms.date: "03/30/2017"
 ms.assetid: 75ff3e7e-ad6a-4ac2-a094-4247f523c5f5

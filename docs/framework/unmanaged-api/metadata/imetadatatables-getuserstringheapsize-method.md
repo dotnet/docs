@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataTables::GetUserStringHeapSize Method"
 title: "IMetaDataTables::GetUserStringHeapSize Method"
 ms.date: "03/30/2017"
 api_name: 

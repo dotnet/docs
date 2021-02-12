@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Insert XML Data using XPathNavigator"
 title: "Insert XML Data using XPathNavigator"
 ms.date: "03/30/2017"
 dev_langs: 

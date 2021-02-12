@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedENCUpdate::GetLocalVariables Method"
 title: "ISymUnmanagedENCUpdate::GetLocalVariables Method"
 ms.date: "03/30/2017"
 api_name: 

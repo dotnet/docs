@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess6::GetCode Method"
 title: "ICorDebugProcess6::GetCode Method"
 ms.date: "03/30/2017"
 ms.assetid: faa538c2-60c9-4064-b996-1b4c24ebd751

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Map Implicit Relations Between Nested Schema Elements"
 title: "Map Implicit Relations Between Nested Schema Elements"
 ms.date: "03/30/2017"
 ms.assetid: 6b25002a-352e-4d9b-bae3-15129458a355

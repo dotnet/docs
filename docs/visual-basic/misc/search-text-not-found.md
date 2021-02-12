@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Search text not found"
 title: "Search text not found"
 ms.date: 07/20/2015
 f1_keywords: 

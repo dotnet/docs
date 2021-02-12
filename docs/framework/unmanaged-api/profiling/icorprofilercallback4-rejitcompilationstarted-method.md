@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback4::ReJITCompilationStarted Method"
 title: "ICorProfilerCallback4::ReJITCompilationStarted Method"
 ms.date: "03/30/2017"
 api_name: 

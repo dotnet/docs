@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Sessions"
 title: "Using Sessions"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -2,6 +2,7 @@
 title: "Regular Expression Language - Quick Reference"
 description: In this quick reference, learn to use regular expression patterns to match input text. A pattern has one or more character literals, operators, or constructs.
 ms.date: "03/30/2017"
+ms.topic: reference
 f1_keywords:
   - "VS.RegularExpressionBuilder"
 helpviewer_keywords:

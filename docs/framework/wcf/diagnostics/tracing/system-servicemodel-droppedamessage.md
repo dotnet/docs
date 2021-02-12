@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.DroppedAMessage"
 title: "System.ServiceModel.DroppedAMessage"
 ms.date: "03/30/2017"
 ms.assetid: a299401f-2983-45ea-b4f3-963bece3602e

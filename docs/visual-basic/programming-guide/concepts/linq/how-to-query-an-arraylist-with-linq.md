@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Query an ArrayList with LINQ (Visual Basic)"
 title: "How to: Query an ArrayList with LINQ"
 ms.date: 07/20/2015
 ms.assetid: 176358a9-d765-4b57-9557-7feb4428138d

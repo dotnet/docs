@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use JoinBlock to Read Data From Multiple Sources"
 title: "How to: Use JoinBlock to Read Data From Multiple Sources"
 ms.date: "03/30/2017"
 dev_langs: 

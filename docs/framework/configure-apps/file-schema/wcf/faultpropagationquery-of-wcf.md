@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <faultPropagationQuery> of WCF"
 title: "<faultPropagationQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: fabafbc8-3e45-4feb-8321-0725e9f4079c

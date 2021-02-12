@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <Crst_DisableSpinWait> element"
 title: "<Crst_DisableSpinWait> element"
 ms.date: "04/18/2019"
 f1_keywords: 

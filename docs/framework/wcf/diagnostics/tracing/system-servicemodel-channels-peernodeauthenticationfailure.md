@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNodeAuthenticationFailure"
 title: "System.ServiceModel.Channels.PeerNodeAuthenticationFailure"
 ms.date: "03/30/2017"
 ms.assetid: 0b50f782-ca06-4a82-aa7f-71f78ddc5177

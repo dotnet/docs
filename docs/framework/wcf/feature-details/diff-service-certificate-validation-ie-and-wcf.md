@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Differences Between Service Certificate Validation Done by Internet Explorer and WCF"
 title: "Differences Between Service Certificate Validation Done by Internet Explorer and WCF"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

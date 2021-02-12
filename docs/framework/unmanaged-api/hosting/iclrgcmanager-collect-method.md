@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRGCManager::Collect Method"
 title: "ICLRGCManager::Collect Method"
 ms.date: "03/30/2017"
 api_name: 

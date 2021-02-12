@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Statement"
 title: "Property Statement"
 ms.date: 05/12/2018
 f1_keywords:

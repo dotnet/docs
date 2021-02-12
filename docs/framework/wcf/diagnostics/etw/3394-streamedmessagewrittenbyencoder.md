@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3394 - StreamedMessageWrittenByEncoder"
 title: "3394 - StreamedMessageWrittenByEncoder"
 ms.date: "03/30/2017"
 ms.assetid: 8b3a1a76-e5f7-4421-86cf-d201d724671e

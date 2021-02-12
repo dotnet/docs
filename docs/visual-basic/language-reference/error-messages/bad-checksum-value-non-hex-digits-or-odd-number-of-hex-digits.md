@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42033: Bad checksum value, non hex digits or odd number of hex digits"
 title: "Bad checksum value, non hex digits or odd number of hex digits"
 ms.date: 07/20/2015
 f1_keywords:

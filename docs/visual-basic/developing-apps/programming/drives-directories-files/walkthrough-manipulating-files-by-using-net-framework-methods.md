@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Manipulating Files by Using .NET Framework Methods (Visual Basic)"
 title: "Manipulating Files by Using .NET Framework Methods"
 ms.date: 07/20/2015
 helpviewer_keywords:

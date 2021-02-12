@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 117 - WorkflowInstanceTerminatedRecordWithId"
 title: "117 - WorkflowInstanceTerminatedRecordWithId"
 ms.date: "03/30/2017"
 ms.assetid: e68539d0-5338-468a-9f75-7e5b09d39a3c

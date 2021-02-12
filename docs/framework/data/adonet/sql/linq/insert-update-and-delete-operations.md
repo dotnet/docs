@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Insert, Update, and Delete Operations"
 title: "Insert, Update, and Delete Operations"
 ms.date: "03/30/2017"
 dev_langs:

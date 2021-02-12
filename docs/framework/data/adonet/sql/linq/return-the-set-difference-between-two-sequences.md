@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Return the Set Difference Between Two Sequences"
 title: "Return the Set Difference Between Two Sequences"
 ms.date: "03/30/2017"
 dev_langs: 

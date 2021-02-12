@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.RegistrationCoordinatorResponseInvalidMetadata"
 title: "Microsoft.Transactions.TransactionBridge.RegistrationCoordinatorResponseInvalidMetadata"
 ms.date: "03/30/2017"
 ms.assetid: a174bbf5-0ffe-4fda-969d-e7fbd1996123

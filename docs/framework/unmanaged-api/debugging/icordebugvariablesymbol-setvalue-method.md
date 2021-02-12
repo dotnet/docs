@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableSymbol::SetValue Method"
 title: "ICorDebugVariableSymbol::SetValue Method"
 ms.date: "03/30/2017"
 ms.assetid: 4609418d-71fa-44bc-9618-4d529d25cabb

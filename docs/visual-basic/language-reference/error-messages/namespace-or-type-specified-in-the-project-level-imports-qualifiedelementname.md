@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC40057: Namespace or type specified in the project-level Imports '<qualifiedelementname>' doesn't contain any public member or cannot be found"
 title: "Namespace or type specified in the project-level Imports '<qualifiedelementname>' doesn't contain any public member or cannot be found"
 ms.date: 07/20/2015
 f1_keywords:

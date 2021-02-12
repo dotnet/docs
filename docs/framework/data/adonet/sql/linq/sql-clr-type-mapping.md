@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL-CLR Type Mapping"
 title: "SQL-CLR Type Mapping"
 ms.date: "07/23/2018"
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b

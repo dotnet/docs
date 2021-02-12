@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inserting Nodes into an XML Document"
 title: "Inserting Nodes into an XML Document"
 ms.date: "03/30/2017"
 ms.assetid: 891e54f5-54f6-4bb4-b624-9d1b6a1f1216

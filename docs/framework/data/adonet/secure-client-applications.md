@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Secure Client Applications"
 title: "Secure Client Applications"
 ms.date: "03/30/2017"
 ms.assetid: 6239592e-fa7d-4dea-9f00-d296d0048b01

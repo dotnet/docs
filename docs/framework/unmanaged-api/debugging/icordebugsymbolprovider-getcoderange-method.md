@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugSymbolProvider::GetCodeRange Method"
 title: "ICorDebugSymbolProvider::GetCodeRange Method"
 ms.date: "03/30/2017"
 ms.assetid: 49a2451f-d250-4e73-aa96-9ff49d9f11c6

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_PRF_REJIT_FLAGS Enumeration"
 title: "COR_PRF_REJIT_FLAGS Enumeration"
 ms.date: "08/06/2019"
 api_name: 

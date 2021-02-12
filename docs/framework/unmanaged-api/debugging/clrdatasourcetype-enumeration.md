@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLRDataSourceType Enumeration"
 title: "CLRDataSourceType Enumeration"
 ms.date: "01/16/2019"
 api.name:

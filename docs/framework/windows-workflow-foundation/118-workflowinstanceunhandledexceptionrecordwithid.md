@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 118 - WorkflowInstanceUnhandledExceptionRecordWithId"
 title: "118 - WorkflowInstanceUnhandledExceptionRecordWithId"
 ms.date: "03/30/2017"
 ms.assetid: 2ce4b193-e141-4cc4-86a3-2e8c984c110d

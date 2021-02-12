@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resolving External Resources During XSLT Processing"
 title: "Resolving External Resources During XSLT Processing"
 ms.date: "03/30/2017"
 dev_langs: 

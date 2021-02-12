@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Local Method Calls"
 title: "Local Method Calls"
 ms.date: "03/30/2017"
 dev_langs: 

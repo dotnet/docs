@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: WinForms methods now throw ArgumentException"
-description: Learn about the breaking change in .NET 5.0 where sWindows Forms methods now throw an ArgumentException for invalid arguments.
+description: Learn about the breaking change in .NET 5.0 where some Windows Forms methods now throw an ArgumentException for invalid arguments.
 ms.date: 07/18/2020
 ---
 # WinForms methods now throw ArgumentException

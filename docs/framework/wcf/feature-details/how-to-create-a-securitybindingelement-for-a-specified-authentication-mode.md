@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a SecurityBindingElement for a Specified Authentication Mode"
 title: "How to: Create a SecurityBindingElement for a Specified Authentication Mode"
 ms.date: "03/30/2017"
 dev_langs: 

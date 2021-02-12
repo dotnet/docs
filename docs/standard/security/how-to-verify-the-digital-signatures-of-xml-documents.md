@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Verify the Digital Signatures of XML Documents"
 title: "How to: Verify the Digital Signatures of XML Documents"
 ms.date: 07/14/2020
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Self-Host"
 title: "Self-Host"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

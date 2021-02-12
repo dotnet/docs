@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service: Channel listeners and channels"
 title: "Service: Channel listeners and channels"
 ms.date: "03/30/2017"
 ms.assetid: 8ccbe0e8-7e55-441d-80de-5765f67542fa

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comparing DataRows (LINQ to DataSet)"
 title: "Comparing DataRows (LINQ to DataSet)"
 ms.date: "03/30/2017"
 dev_langs: 

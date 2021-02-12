@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Securing Clients"
 title: "Securing Clients"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

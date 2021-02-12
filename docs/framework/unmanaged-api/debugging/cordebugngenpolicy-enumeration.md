@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugNGenPolicy Enumeration"
 title: "CorDebugNGenPolicy Enumeration"
 ms.date: "03/30/2017"
 dev_langs: 

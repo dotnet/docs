@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugDataTarget3::GetLoadedModules Method"
 title: "ICorDebugDataTarget3::GetLoadedModules Method"
 ms.date: "03/30/2017"
 ms.assetid: 9a48c05b-1949-416e-933c-52549b6fcf5e

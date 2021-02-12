@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML Document Object Model (DOM) Hierarchy"
 title: "XML Document Object Model (DOM) Hierarchy"
 ms.date: "03/30/2017"
 ms.assetid: 9d187d4f-c76e-4223-a670-cc290783ce47

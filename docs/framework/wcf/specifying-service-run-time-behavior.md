@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying Service Run-Time Behavior"
 title: "Specifying Service Run-Time Behavior"
 ms.date: "03/30/2017"
 dev_langs: 

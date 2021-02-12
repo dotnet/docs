@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3369 - SslOnAcceptUpgrade"
 title: "3369 - SslOnAcceptUpgrade"
 ms.date: "03/30/2017"
 ms.assetid: dec93b38-d97c-4c9e-8891-7cefa0a8aa5b

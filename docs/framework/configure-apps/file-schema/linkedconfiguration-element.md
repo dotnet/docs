@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <linkedConfiguration> element"
 title: "<linkedConfiguration> element"
 ms.date: "03/30/2017"
 f1_keywords: 

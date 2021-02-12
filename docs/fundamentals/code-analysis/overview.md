@@ -52,7 +52,7 @@ You can change the severity of these rules to disable them or elevate them to er
 
 ### Enable additional rules
 
-*Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode, only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
+*Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode, only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
 
 | Value | Description |
 | - | - |
@@ -121,7 +121,7 @@ Follow these steps to enable code-style analysis on build:
    dotnet_diagnostic.IDE0040.severity = warning
    ```
 
-   Alternatively, you can configure the entire "Style" category to be a warning or error, by default, and then selectively turn off rules that you don't want to run on build. For example:
+   Alternatively, you can configure an entire category to be a warning or error, by default, and then selectively turn off rules in that category that you don't want to run on build. For example:
 
    ```ini
    [*.{cs,vb}]
@@ -138,15 +138,13 @@ Follow these steps to enable code-style analysis on build:
 
 ## Suppress a warning
 
-To suppress a rule violation, set the severity option for that rule ID to `none` in an EditorConfig file. For example:
+One way to suppress a rule violation is to set the severity option for that rule ID to `none` in an EditorConfig file. For example:
 
 ```ini
 dotnet_diagnostic.CA1822.severity = none
 ```
 
-Visual Studio provides additional ways to suppress warnings from code analysis rules. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
-
-For more information about rule severities, see [Configure rule severity](configuration-options.md#severity-level).
+For more information and other ways to suppress warnings, see [How to suppress code analysis warnings](suppress-warnings.md).
 
 ## Third-party analyzers
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameGetPublicKeyEx Method"
 title: "StrongNameGetPublicKeyEx Method"
 ms.date: "03/30/2017"
 api_name: 

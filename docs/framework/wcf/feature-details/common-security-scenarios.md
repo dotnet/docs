@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Common Security Scenarios"
 title: "Common Security Scenarios"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COR_HEAPINFO Structure"
 title: "COR_HEAPINFO Structure"
 ms.date: "03/30/2017"
 api_name: 

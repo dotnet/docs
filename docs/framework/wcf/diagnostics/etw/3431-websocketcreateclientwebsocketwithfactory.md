@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3431 - WebSocketCreateClientWebSocketWithFactory"
 title: "3431 - WebSocketCreateClientWebSocketWithFactory"
 ms.date: "03/30/2017"
 ms.assetid: 8311f19c-970f-436a-b985-0dc8bcac85c0

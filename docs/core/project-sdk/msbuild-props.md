@@ -80,6 +80,8 @@ You can specify properties such as `PackageId`, `PackageVersion`, `PackageIcon`,
 - [CopyLocalLockFileAssemblies](#copylocallockfileassemblies)
 - [CopyToPublishDirectory](#copytopublishdirectory)
 - [LinkBase](#linkbase)
+- [PreserveCompilationContext](#preservecompilationcontext)
+- [PreserveCompilationReferences](#preservecompilationreferences)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
 - [TrimmerRootAssembly](#trimmerrootassembly)
@@ -147,6 +149,30 @@ The `CopyLocalLockFileAssemblies` property is useful for plugin projects that ha
 
 > [!TIP]
 > Alternatively, you can use `dotnet publish` to publish the class library. For more information, see [dotnet publish](../tools/dotnet-publish.md).
+
+### PreserveCompilationContext
+
+The `PreserveCompilationContext` property allows a built or published application to compile more code at run time using the same settings that were used at build time. The assemblies referenced at build time will be copied into the *ref* subdirectory of the output directory. The names of the reference assemblies are stored in the application's *.deps.json* file along with the options passed to the compiler. You can retrieve this information using the <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompileLibraries?displayProperty=nameWithType> and <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompilationOptions?displayProperty=nameWithType> properties.
+
+This functionality is mostly used internally by ASP.NET Core MVC and Razor pages to support run-time compilation of Razor files.
+
+```xml
+<PropertyGroup>
+  <PreserveCompilationContext>true</PreserveCompilationContext>
+</PropertyGroup>
+```
+
+### PreserveCompilationReferences
+
+The `PreserveCompilationReferences` property is similar to the [PreserveCompilationContext](#preservecompilationcontext) property, except that it only copies the referenced assemblies to the publish directory, and not the *.deps.json* file.
+
+```xml
+<PropertyGroup>
+  <PreserveCompilationReferences>true</PreserveCompilationReferences>
+</PropertyGroup>
+```
+
+For more information, see [Razor SDK properties](/aspnet/core/razor-pages/sdk#properties).
 
 ### RuntimeIdentifier
 
@@ -312,7 +338,12 @@ The `EnableDefaultNoneItems` property controls whether `None` items (files that 
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a code analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`. The default value is `latest`.
+The `AnalysisLevel` property lets you specify a code analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`.
+
+Default value:
+
+- If your project targets .NET 5.0 or later, or if you've added the [AnalysisMode](#analysismode) property, the default value is `latest`.
+- Otherwise, this property is omitted unless you explicitly add it to the project file.
 
 ```xml
 <PropertyGroup>
@@ -366,9 +397,6 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
   <EnableNETAnalyzers>true</EnableNETAnalyzers>
 </PropertyGroup>
 ```
-
-> [!TIP]
-> Another way to enable .NET code analysis on projects that target .NET versions prior to .NET 5.0 is to set the [AnalysisLevel](#analysislevel) property to `latest`.
 
 ### EnforceCodeStyleInBuild
 

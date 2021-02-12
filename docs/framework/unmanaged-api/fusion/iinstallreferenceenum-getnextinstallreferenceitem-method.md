@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IInstallReferenceEnum::GetNextInstallReferenceItem Method"
 title: "IInstallReferenceEnum::GetNextInstallReferenceItem Method"
 ms.date: "03/30/2017"
 api_name: 

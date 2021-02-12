@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XPathNodeIterator in Transformations"
 title: "XPathNodeIterator in Transformations"
 ms.date: "03/30/2017"
 dev_langs: 

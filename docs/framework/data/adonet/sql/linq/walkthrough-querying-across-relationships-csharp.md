@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Querying Across Relationships (C#)"
 title: "Walkthrough: Querying Across Relationships (C#)"
 ms.date: "03/30/2017"
 ms.assetid: 552abeb1-18f2-4e93-a9c6-ef7b2db30c32

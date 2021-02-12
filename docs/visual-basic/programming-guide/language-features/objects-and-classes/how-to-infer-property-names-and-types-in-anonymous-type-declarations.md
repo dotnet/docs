@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Infer Property Names and Types in Anonymous Type Declarations (Visual Basic)"
 title: "How to: Infer Property Names and Types in Anonymous Type Declarations"
 ms.date: 07/20/2015
 helpviewer_keywords:

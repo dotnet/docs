@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Serialization"
 title: "Serialization2"
 ms.date: "03/30/2017"
 dev_langs: 

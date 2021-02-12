@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Federated Client"
 title: "How to: Create a Federated Client"
 ms.date: "03/30/2017"
 dev_langs: 

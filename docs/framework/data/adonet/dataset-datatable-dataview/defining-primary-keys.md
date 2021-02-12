@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Defining Primary Keys"
 title: "Defining Primary Keys"
 ms.date: "03/30/2017"
 dev_langs: 

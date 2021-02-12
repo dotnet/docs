@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TOP (Entity SQL)"
 title: "TOP (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 4a4a0954-82e2-4eae-bcaf-7c4552f3532d

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COM Interop (Visual Basic)"
 title: "COM Interop"
 ms.date: 07/20/2015
 helpviewer_keywords: 

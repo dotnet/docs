@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Diagnostics.TraceTruncatedQuotaExceeded"
 title: "System.ServiceModel.Diagnostics.TraceTruncatedQuotaExceeded"
 ms.date: "03/30/2017"
 ms.assetid: 623d66f1-389f-43c7-a6ea-afe7f80651a5

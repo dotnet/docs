@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5203 - JsonMessageDecodingStart"
 title: "5203 - JsonMessageDecodingStart"
 ms.date: "03/30/2017"
 ms.assetid: 83836ebf-8cc9-4f4c-92ff-4fd28304a299

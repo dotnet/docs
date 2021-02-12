@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3336 - GetServiceInstanceStop"
 title: "3336 - GetServiceInstanceStop"
 ms.date: "03/30/2017"
 ms.assetid: 4648026e-670d-4743-85f8-3ccfaaf18d6f

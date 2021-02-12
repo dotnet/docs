@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerNodeOpening"
 title: "System.ServiceModel.Channels.PeerNodeOpening"
 ms.date: "03/30/2017"
 ms.assetid: 132d4928-ea20-4952-b115-d050499bc728

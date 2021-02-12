@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo8::GetFunctionFromIP3 Method"
 title: "ICorProfilerInfo8::GetFunctionFromIP3"
 ms.date: "08/06/2019"
 dev_langs:

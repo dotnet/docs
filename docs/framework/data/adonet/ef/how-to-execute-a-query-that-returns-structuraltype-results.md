@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Execute a Query that Returns StructuralType Results"
 title: "How to: Execute a Query that Returns StructuralType Results"
 ms.date: "03/30/2017"
 dev_langs: 

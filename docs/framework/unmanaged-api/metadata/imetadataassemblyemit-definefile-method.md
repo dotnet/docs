@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyEmit::DefineFile Method"
 title: "IMetaDataAssemblyEmit::DefineFile Method"
 ms.date: "03/30/2017"
 api_name: 

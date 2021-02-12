@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3411 - HttpPipelineTimeoutException"
 title: "3411 - HttpPipelineTimeoutException"
 ms.date: "03/30/2017"
 ms.assetid: 1f10a482-9e8f-4726-bdc8-b18a32e4dfdc

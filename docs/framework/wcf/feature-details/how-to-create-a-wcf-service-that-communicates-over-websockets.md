@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a WCF Service that Communicates over WebSockets"
 title: "How to: Create a WCF Service that Communicates over WebSockets"
 ms.date: "03/30/2017"
 ms.assetid: bafbbd89-eab8-4e9a-b4c3-b7b0178e12d8

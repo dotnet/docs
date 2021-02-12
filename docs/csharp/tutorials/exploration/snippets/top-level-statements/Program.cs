@@ -1,7 +1,6 @@
 ﻿using System;
 using MyNamespace;
 
-// <EchoInput>
 Console.WriteLine();
 foreach(var s in args)
 {
@@ -9,11 +8,9 @@ foreach(var s in args)
     Console.Write(' ');
 }
 Console.WriteLine();
-// </EchoInput>
 
 await Utilities.ShowConsoleAnimation();
 
-// <Answers>
 string[] answers =
 {
     "It is certain.",       "Reply hazy, try again.",     "Don’t count on it.",
@@ -27,9 +24,6 @@ string[] answers =
     "Yes.",
     "Signs point to yes.",
 };
-// </Answers>
 
-// <GenerateAnswer>
 var index = new Random().Next(answers.Length - 1);
 Console.WriteLine(answers[index]);
-// </GenerateAnswer>

@@ -22,7 +22,7 @@ Constants are fields whose values are set at compile time and can never be chang
   
 ## Example  
 
- [!code-csharp[csProgGuideObjects#89](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#89)]  
+ [!code-csharp[constants](snippets/how-to-define-constants/Program.cs)]  
   
  The use of the class name qualifier helps ensure that you and others who use the constant understand that it is constant and cannot be modified.  
   

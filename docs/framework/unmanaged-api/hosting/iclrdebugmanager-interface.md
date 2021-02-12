@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRDebugManager Interface"
 title: "ICLRDebugManager Interface"
 ms.date: "03/30/2017"
 api_name: 

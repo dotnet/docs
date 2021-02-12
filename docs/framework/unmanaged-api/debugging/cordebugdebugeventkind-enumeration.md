@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CorDebugDebugEventKind Enumeration"
 title: "CorDebugDebugEventKind Enumeration"
 ms.date: "03/30/2017"
 api_name: 

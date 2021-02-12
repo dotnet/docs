@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3312 - MessageReadByEncoder"
 title: "3312 - MessageReadByEncoder"
 ms.date: "03/30/2017"
 ms.assetid: cdcc8e3d-e2aa-4c5e-a580-bdf581a66709

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30957: Function evaluation is disabled because a previous function evaluation timed out"
 title: "Function evaluation is disabled because a previous function evaluation timed out"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Boolean Expressions (Visual Basic)"
 title: "Boolean Expressions"
 ms.date: 07/20/2015
 helpviewer_keywords: 

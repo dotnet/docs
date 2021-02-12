@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: UNION (Entity SQL)"
 title: "UNION (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: df98a4db-b00d-4c8b-bd74-0d285f27e1df

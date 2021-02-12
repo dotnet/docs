@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5005 - ImportKnownTypesStart"
 title: "5005 - ImportKnownTypesStart"
 ms.date: "03/30/2017"
 ms.assetid: e70c9c92-833d-4e88-b129-1decf7a0491d

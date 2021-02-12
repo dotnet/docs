@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AXL_AUTHENTICODE_SIGNER_INFO Structure"
 title: "AXL_AUTHENTICODE_SIGNER_INFO Structure"
 ms.date: "03/30/2017"
 ms.assetid: 81c0f8b4-ce35-4716-8651-b642d40648a2

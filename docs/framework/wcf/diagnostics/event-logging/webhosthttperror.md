@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WebHostHttpError"
 title: "WebHostHttpError"
 ms.date: "03/30/2017"
 ms.assetid: dff35e7e-5571-463d-abcf-7e048381f91f

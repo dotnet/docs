@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Security.NegotiationAuthenticatorAttached"
 title: "System.ServiceModel.Security.NegotiationAuthenticatorAttached"
 ms.date: "03/30/2017"
 ms.assetid: 20a289a5-6450-46dd-bb83-c394379b857b

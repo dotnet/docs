@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Synchronize Concurrent Operations with a Barrier"
 title: "How to: Synchronize Concurrent Operations with a Barrier"
 ms.date: "03/30/2017"
 dev_langs: 

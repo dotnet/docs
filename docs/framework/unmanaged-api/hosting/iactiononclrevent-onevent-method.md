@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IActionOnCLREvent::OnEvent Method"
 title: "IActionOnCLREvent::OnEvent Method"
 ms.date: "03/30/2017"
 api_name: 

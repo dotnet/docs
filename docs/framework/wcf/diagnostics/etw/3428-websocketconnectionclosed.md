@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3428 - WebSocketConnectionClosed"
 title: "3428 - WebSocketConnectionClosed"
 ms.date: "03/30/2017"
 ms.assetid: cb16c9da-37b3-4cbd-800e-0d1691eb0bb2

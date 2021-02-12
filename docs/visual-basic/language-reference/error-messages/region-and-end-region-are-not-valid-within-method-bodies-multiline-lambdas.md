@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC32025: '#Region' and '#End Region' statements are not valid within method bodies/multiline lambdas"
 title: "'#Region' and '#End Region' statements are not valid within method bodies-multiline lambdas"
 ms.date: 07/20/2015
 f1_keywords:

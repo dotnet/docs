@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount Method"
 title: "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount Method"
 ms.date: "03/30/2017"
 api_name: 

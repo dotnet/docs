@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostControl::GetHostManager Method"
 title: "IHostControl::GetHostManager Method"
 ms.date: "03/30/2017"
 api_name: 

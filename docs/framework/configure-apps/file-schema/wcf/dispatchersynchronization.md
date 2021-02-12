@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <dispatcherSynchronization>"
 title: "<dispatcherSynchronization>"
 ms.date: "03/30/2017"
 ms.assetid: cc030f9c-4e38-4b14-94dc-9a0e41ec8e2d

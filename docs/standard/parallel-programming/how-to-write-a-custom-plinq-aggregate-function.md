@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write a Custom PLINQ Aggregate Function"
 title: "How to: Write a Custom PLINQ Aggregate Function"
 ms.date: "03/30/2017"
 dev_langs: 

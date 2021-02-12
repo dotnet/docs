@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FLockClrVersionCallback Function Pointer"
 title: "FLockClrVersionCallback Function Pointer"
 ms.date: "03/30/2017"
 api_name: 

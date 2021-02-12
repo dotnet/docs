@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo::GetCurrentThreadID Method"
 title: "ICorProfilerInfo::GetCurrentThreadID Method"
 ms.date: "03/30/2017"
 api_name: 

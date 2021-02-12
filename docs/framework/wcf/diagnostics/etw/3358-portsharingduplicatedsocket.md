@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3358 - PortSharingDuplicatedSocket"
 title: "3358 - PortSharingDuplicatedSocket"
 ms.date: "03/30/2017"
 ms.assetid: c6e5c051-5597-49d1-a5ea-0a26ec04443d

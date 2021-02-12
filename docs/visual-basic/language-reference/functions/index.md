@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Functions (Visual Basic)"
 title: "Functions"
 ms.date: 07/20/2015
 helpviewer_keywords: 

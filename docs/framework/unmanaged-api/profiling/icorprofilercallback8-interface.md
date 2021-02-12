@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerCallback8 Interface"
 title: "ICorProfilerCallback8 Interface"
 ms.date: "04/10/2018"
 api_name: 

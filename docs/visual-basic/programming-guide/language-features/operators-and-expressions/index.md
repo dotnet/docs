@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operators and Expressions in Visual Basic"
 title: "Operators and Expressions"
 ms.date: 07/20/2015
 helpviewer_keywords: 

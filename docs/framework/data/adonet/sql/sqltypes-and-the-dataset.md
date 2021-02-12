@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SqlTypes and the DataSet"
 title: "SqlTypes and the DataSet"
 ms.date: "03/30/2017"
 dev_langs: 

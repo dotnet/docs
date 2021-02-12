@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Retrieve Many Objects At Once"
 title: "How to: Retrieve Many Objects At Once"
 ms.date: "03/30/2017"
 dev_langs: 

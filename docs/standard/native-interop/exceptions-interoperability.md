@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Interop Exceptions in Unmanaged Code"
 title: "Exceptions Interoperability"
 ms.date: "01/16/2020"
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging Structures"
 title: "Debugging Structures"
 ms.date: "03/30/2017"
 helpviewer_keywords:

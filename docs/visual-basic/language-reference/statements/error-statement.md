@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error Statement"
 title: "Error Statement"
 ms.date: 07/20/2015
 f1_keywords: 

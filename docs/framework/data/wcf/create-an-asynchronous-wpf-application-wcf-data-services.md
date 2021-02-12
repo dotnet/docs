@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create an Asynchronous Windows Presentation Framework Application (WCF Data Services)"
 title: "How to: Create an Asynchronous Windows Presentation Framework Application (WCF Data Services)"
 ms.date: "03/30/2017"
 dev_langs: 
@@ -9,6 +10,8 @@ helpviewer_keywords:
 ms.assetid: 834614df-1427-4839-b0be-90f68e5afffd
 ---
 # How to: Create an Asynchronous Windows Presentation Framework Application (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 With WCF Data Services, you can bind data obtained from a data service to UI element of a Windows Presentation Framework (WPF) application. For more information, see [Binding Data to Controls](binding-data-to-controls-wcf-data-services.md).You can also execute operations against the data service in an asynchronous manner, which enables the application to continue to respond while waiting for a response to a data service request. Applications for Silverlight are required to access the data service asynchronously. For more information, see [Asynchronous Operations](asynchronous-operations-wcf-data-services.md).  
   

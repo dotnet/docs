@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sorted Collection Types"
 title: "Sorted Collection Types"
 ms.date: 04/30/2020
 helpviewer_keywords: 

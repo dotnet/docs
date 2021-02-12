@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating and Implementing Interfaces (Visual Basic)"
 title: "Creating and Implementing Interfaces"
 ms.date: 07/20/2015
 helpviewer_keywords: 

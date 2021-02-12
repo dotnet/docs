@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC42105: Function '<procedurename>' doesn't return a value on all code paths"
 title: "Function '<procedurename>' doesn't return a value on all code paths"
 ms.date: 07/20/2015
 f1_keywords:

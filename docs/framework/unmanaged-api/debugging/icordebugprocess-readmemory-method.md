@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess::ReadMemory Method"
 title: "ICorDebugProcess::ReadMemory Method"
 ms.date: "03/30/2017"
 api_name: 

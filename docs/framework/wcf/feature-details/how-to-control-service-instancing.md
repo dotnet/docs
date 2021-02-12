@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Control Service Instancing"
 title: "How to: Control Service Instancing"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Scalar-Valued User-Defined Functions"
 title: "How to: Use Scalar-Valued User-Defined Functions"
 ms.date: "03/30/2017"
 dev_langs: 

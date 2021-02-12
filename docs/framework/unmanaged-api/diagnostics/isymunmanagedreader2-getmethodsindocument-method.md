@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedReader2::GetMethodsInDocument Method"
 title: "ISymUnmanagedReader2::GetMethodsInDocument Method"
 ms.date: "03/30/2017"
 api_name: 

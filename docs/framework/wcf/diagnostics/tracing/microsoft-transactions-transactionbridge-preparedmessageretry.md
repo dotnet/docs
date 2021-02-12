@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.PreparedMessageRetry"
 title: "Microsoft.Transactions.TransactionBridge.PreparedMessageRetry"
 ms.date: "03/30/2017"
 ms.assetid: 2194292d-bf5f-4aef-9336-cd3c4795cb71

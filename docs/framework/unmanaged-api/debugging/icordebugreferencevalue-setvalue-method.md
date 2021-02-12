@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugReferenceValue::SetValue Method"
 title: "ICorDebugReferenceValue::SetValue Method"
 ms.date: "03/30/2017"
 api_name: 

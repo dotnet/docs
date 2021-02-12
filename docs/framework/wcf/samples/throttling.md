@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Throttling"
 title: "Throttling"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

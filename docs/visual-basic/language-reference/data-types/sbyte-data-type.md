@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SByte data type (Visual Basic)"
 title: "SByte Data Type"
 ms.date: 04/20/2017
 f1_keywords:

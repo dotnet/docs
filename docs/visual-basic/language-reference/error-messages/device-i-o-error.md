@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Device I/O error"
 title: "Device I/O error"
 ms.date: 07/20/2015
 f1_keywords: 

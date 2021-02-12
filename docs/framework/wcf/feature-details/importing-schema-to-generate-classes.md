@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Importing Schema to Generate Classes"
 title: "Importing Schema to Generate Classes"
 ms.date: "03/30/2017"
 dev_langs: 

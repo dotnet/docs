@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <localServiceSettings> element"
 title: "<localServiceSettings> element"
 ms.date: "03/30/2017"
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734

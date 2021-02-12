@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TextMessageEncodingBindingElement"
 title: "TextMessageEncodingBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 885e2d7a-3436-4093-bc5f-0a404c62acdc

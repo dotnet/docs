@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service: Transactions Flowed Per Second"
 title: "Service: Transactions Flowed Per Second"
 ms.date: "03/30/2017"
 ms.assetid: ec72eb49-2942-4811-91df-d6e5dad81fd8

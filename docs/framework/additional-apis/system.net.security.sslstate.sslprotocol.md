@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SslState.SslProtocol Property"
 title: SslState.SslProtocol Property (System.Net.Security)
 ms.date: 10/21/2019
 ms.technology: "dotnet-networking"

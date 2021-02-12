@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Locale ID '<name>' is not supported on this system"
 title: "Locale ID '<name>' is not supported on this system"
 ms.date: 07/20/2015
 f1_keywords: 

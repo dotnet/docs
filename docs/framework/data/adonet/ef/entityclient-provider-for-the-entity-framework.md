@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EntityClient Provider for the Entity Framework"
 title: "EntityClient Provider for the Entity Framework"
 ms.date: "03/30/2017"
 ms.assetid: 8c5db787-78e6-4a34-8dc1-188bca0aca5e

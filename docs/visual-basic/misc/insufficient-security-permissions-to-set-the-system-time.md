@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Insufficient security permissions to set the system time"
 title: "Insufficient security permissions to set the system time"
 ms.date: 07/20/2015
 f1_keywords: 

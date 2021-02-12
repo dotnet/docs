@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Store Extensibility"
 title: "Store Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: 7c3f4a46-4bac-4138-ae6a-a7c7ee0d28f5

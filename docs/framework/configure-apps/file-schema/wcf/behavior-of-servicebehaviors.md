@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <behavior> of <serviceBehaviors>"
 title: "<behavior> of <serviceBehaviors>"
 ms.date: "03/30/2017"
 ms.assetid: 78fc0a08-55de-416a-ac12-a5e6ffc9a987

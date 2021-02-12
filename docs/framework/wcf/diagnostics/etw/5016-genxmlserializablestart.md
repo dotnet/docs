@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 5016 - GenXmlSerializableStart"
 title: "5016 - GenXmlSerializableStart"
 ms.date: "03/30/2017"
 ms.assetid: e1284ef0-2ec9-4acf-8901-c61521561cce

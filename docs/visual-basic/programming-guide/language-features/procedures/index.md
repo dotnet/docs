@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Procedures in Visual Basic"
 title: "Procedures"
 ms.date: 04/28/2017
 helpviewer_keywords: 

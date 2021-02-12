@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3386 - SocketConnectionAbort"
 title: "3386 - SocketConnectionAbort"
 ms.date: "03/30/2017"
 ms.assetid: 37a184f2-af60-4339-820a-857e2375cb1c

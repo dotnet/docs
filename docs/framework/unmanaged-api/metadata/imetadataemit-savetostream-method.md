@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataEmit::SaveToStream Method"
 title: "IMetaDataEmit::SaveToStream Method"
 ms.date: "03/30/2017"
 api_name: 

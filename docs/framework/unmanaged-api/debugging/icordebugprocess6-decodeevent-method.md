@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugProcess6::DecodeEvent Method"
 title: "ICorDebugProcess6::DecodeEvent Method"
 ms.date: "03/30/2017"
 ms.assetid: 1453bc0c-6e0d-4d5a-b176-22607f8a3e6c

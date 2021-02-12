@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Nested Types"
 title: "Nested Types"
 ms.date: "10/22/2008"
 helpviewer_keywords:

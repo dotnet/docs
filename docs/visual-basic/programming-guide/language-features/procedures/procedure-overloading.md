@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Procedure Overloading (Visual Basic)"
 title: "Procedure Overloading"
 ms.date: 07/20/2015
 helpviewer_keywords:

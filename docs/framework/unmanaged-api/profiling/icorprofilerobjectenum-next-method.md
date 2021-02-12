@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerObjectEnum::Next Method"
 title: "ICorProfilerObjectEnum::Next Method"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Convert a Sequence to a Generic List"
 title: "Convert a Sequence to a Generic List"
 ms.date: "03/30/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.PeerServiceOpened"
 title: "System.ServiceModel.Channels.PeerServiceOpened"
 ms.date: "03/30/2017"
 ms.assetid: b06345f4-cde9-484d-b7fb-d67dc356aed6

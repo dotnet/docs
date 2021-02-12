@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC Data Type Mappings"
 title: "ODBC Data Type Mappings"
 ms.date: "03/30/2017"
 ms.assetid: 43c35d32-831d-480f-a150-78f7e869d17f

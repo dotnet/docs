@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorProfilerInfo2::GetArrayObjectInfo Method"
 title: "ICorProfilerInfo2::GetArrayObjectInfo Method"
 ms.date: "03/30/2017"
 api_name: 

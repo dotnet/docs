@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3823 - RoutingServiceSendingFaultResponse"
 title: "3823 - RoutingServiceSendingFaultResponse"
 ms.date: "03/30/2017"
 ms.assetid: 843cbce6-f2df-4067-aaf2-394b65034282

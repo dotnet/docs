@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServiceAuthorizationBehavior"
 title: "ServiceAuthorizationBehavior"
 ms.date: "03/30/2017"
 ms.assetid: 77dad8e8-fea4-4d1c-b366-2f01a2a87f78

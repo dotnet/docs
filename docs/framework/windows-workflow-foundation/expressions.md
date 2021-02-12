@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expressions"
 title: "Expressions - WF"
 ms.date: "03/30/2017"
 ms.assetid: c42341a9-43a1-462c-bffb-c5de004aa428

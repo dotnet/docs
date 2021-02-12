@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WSAT_TraceProvider"
 title: "WSAT_TraceProvider"
 ms.date: "03/30/2017"
 ms.assetid: 8eb89b45-78b8-407d-8858-f8a9d43d55cb

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WmiExecQueryFailed"
 title: "WmiExecQueryFailed"
 ms.date: "03/30/2017"
 ms.assetid: 464ffd94-1bb2-4eda-ad87-24ca567bf7f3

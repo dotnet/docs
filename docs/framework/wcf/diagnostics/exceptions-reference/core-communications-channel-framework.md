@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Core Communications: Channel Framework"
 title: "Core Communications: Channel Framework"
 ms.date: "03/30/2017"
 ms.assetid: 8caeb496-8d4c-477e-a476-994ece685a68

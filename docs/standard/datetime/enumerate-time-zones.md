@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Enumerate time zones present on a computer"
 title: "How to: Enumerate time zones present on a computer"
 ms.date: "04/10/2017"
 dev_langs: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Contract-First Tool"
 title: "Contract-First Tool"
 ms.date: "03/30/2017"
 ms.assetid: 0a880690-f460-4475-a5f4-9f91ce08fcc6

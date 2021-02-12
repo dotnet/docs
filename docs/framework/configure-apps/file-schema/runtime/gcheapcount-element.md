@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <GCHeapCount> element"
 title: GCHeapCount element
 ms.date: 11/08/2019
 helpviewer_keywords:

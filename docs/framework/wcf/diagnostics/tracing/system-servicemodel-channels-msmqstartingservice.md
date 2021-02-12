@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.Channels.MsmqStartingService"
 title: "System.ServiceModel.Channels.MsmqStartingService"
 ms.date: "03/30/2017"
 ms.assetid: 7248afaf-5ad9-4d7a-ba07-781a60a0ef9b

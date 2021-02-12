@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IMetaDataAssemblyEmit::DefineManifestResource Method"
 title: "IMetaDataAssemblyEmit::DefineManifestResource Method"
 ms.date: "03/30/2017"
 api_name: 

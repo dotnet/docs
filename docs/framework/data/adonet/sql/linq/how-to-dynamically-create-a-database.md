@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Dynamically Create a Database"
 title: "How to: Dynamically Create a Database"
 ms.date: "03/30/2017"
 dev_langs: 

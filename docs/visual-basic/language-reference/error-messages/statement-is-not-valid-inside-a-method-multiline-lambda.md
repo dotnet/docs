@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BC30024: Statement is not valid inside a method/multiline lambda"
 title: "Statement is not valid inside a method-multiline lambda"
 ms.date: 07/20/2015
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: System.ServiceModel.GetServiceElement"
 title: "System.ServiceModel.GetServiceElement"
 ms.date: "03/30/2017"
 ms.assetid: 80535b67-f196-467b-93aa-ea9de902a2e5

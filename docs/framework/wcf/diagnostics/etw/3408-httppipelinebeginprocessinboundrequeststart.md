@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3408 - HttpPipelineBeginProcessInboundRequestStart"
 title: "3408 - HttpPipelineBeginProcessInboundRequestStart"
 ms.date: "03/30/2017"
 ms.assetid: 7ca229e2-93bb-4993-807c-9ad5d4ab5092

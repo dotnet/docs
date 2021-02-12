@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Changing Namespace Prefix Properties"
 title: "Changing Namespace Prefix Properties"
 ms.date: "03/30/2017"
 dev_langs: 

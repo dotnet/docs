@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Entity SQL language reference"
 title: "Entity SQL language reference"
 ms.date: "03/30/2017"
 ms.assetid: bb07282c-161d-47e8-856d-b2374ba18181

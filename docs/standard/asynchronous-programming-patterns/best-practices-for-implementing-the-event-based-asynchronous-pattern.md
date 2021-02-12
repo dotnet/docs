@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Best Practices for Implementing the Event-based Asynchronous Pattern"
 title: "Best Practices for Implementing the Event-based Asynchronous Pattern"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

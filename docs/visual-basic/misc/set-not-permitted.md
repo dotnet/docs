@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Set not permitted"
 title: "Set not permitted"
 ms.date: 07/20/2015
 f1_keywords: 

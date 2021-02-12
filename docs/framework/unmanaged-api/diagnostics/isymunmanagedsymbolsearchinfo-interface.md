@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedSymbolSearchInfo Interface"
 title: "ISymUnmanagedSymbolSearchInfo Interface"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedAsyncMethodPropertiesWriter Interface"
 title: "ISymUnmanagedAsyncMethodPropertiesWriter Interface"
 ms.date: "03/30/2017"
 ms.assetid: caa71820-8058-4b6a-93a2-25ee757d92d3

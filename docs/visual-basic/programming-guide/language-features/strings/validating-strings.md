@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Validating Strings in Visual Basic"
 title: "Validating Strings"
 ms.date: 07/20/2015
 helpviewer_keywords: 

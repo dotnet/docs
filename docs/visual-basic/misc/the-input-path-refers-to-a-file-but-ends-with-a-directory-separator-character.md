@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: The input path refers to a file but ends with a directory separator character"
 title: "The input path refers to a file but ends with a directory separator character"
 ms.date: 07/20/2015
 ms.assetid: 319181c1-a015-4038-a23f-f53c0d91d806

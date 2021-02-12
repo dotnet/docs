@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Register callbacks for cancellation requests"
 title: Register callbacks for cancellation requests
 ms.date: 08/14/2020
 dev_langs: 

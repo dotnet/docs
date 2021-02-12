@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Resolve ambiguous times"
 title: "How to: Resolve ambiguous times"
 ms.date: "04/10/2017"
 dev_langs: 

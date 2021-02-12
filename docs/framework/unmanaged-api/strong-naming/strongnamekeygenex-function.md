@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: StrongNameKeyGenEx Function"
 title: "StrongNameKeyGenEx Function"
 ms.date: "03/30/2017"
 api_name: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Load XML from a File, String, or Stream (Visual Basic)"
 title: "How to: Load XML from a File, String, or Stream"
 ms.date: 07/20/2015
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1010 - ActivityCompleted"
 title: "1010 - ActivityCompleted"
 ms.date: "03/30/2017"
 ms.assetid: d256284e-3fd2-4c33-82f4-abb617575706

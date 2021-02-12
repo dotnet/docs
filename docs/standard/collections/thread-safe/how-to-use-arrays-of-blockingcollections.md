@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Arrays of Blocking Collections in a Pipeline"
 title: "How to: Use Arrays of Blocking Collections in a Pipeline"
 ms.date: "03/30/2017"
 dev_langs: 

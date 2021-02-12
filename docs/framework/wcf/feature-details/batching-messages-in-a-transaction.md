@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Batching Messages in a Transaction"
 title: "Batching Messages in a Transaction"
 ms.date: "03/30/2017"
 helpviewer_keywords: 

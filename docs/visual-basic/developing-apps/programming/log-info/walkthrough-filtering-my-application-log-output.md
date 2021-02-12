@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Filtering My.Application.Log Output (Visual Basic)"
 title: "Filtering My.Application.Log Output"
 ms.date: 07/20/2015
 helpviewer_keywords:

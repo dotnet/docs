@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft.Transactions.TransactionBridge.EnlistTransaction"
 title: "Microsoft.Transactions.TransactionBridge.EnlistTransaction"
 ms.date: "03/30/2017"
 ms.assetid: ba793c1d-6b2f-43da-b14d-a825c6c31b01

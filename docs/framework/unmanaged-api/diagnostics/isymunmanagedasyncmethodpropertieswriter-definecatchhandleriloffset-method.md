@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISymUnmanagedAsyncMethodPropertiesWriter::DefineCatchHandlerILOffset Method"
 title: "ISymUnmanagedAsyncMethodPropertiesWriter::DefineCatchHandlerILOffset Method"
 ms.date: "03/30/2017"
 ms.assetid: 92af7896-2201-408d-8b1b-23e28001eeac

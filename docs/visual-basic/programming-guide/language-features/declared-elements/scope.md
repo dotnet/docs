@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scope in Visual Basic"
 title: "Scope"
 ms.date: 07/20/2015
 helpviewer_keywords:

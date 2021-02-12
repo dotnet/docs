@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostSecurityManager::RevertToSelf Method"
 title: "IHostSecurityManager::RevertToSelf Method"
 ms.date: "03/30/2017"
 api_name: 

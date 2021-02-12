@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Contract"
 title: "WCF contract samples"
 ms.date: "03/30/2017"
 ms.assetid: 305eeb65-a52f-459e-9aa8-0ef071eade16

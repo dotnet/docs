@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICLRPolicyManager::SetActionOnFailure Method"
 title: "ICLRPolicyManager::SetActionOnFailure Method"
 ms.date: "03/30/2017"
 api_name: 

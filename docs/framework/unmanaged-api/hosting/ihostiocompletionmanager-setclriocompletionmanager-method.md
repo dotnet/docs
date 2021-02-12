@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostIoCompletionManager::SetCLRIoCompletionManager Method"
 title: "IHostIoCompletionManager::SetCLRIoCompletionManager Method"
 ms.date: "03/30/2017"
 api_name: 

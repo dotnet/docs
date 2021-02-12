@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PerformanceCounterInitializationFailure"
 title: "PerformanceCounterInitializationFailure"
 ms.date: "03/30/2017"
 ms.assetid: 85050ac6-7f7b-4dd3-8e5e-f5116d7c9906

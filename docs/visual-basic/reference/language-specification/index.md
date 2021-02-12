@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual Basic language specification"
 title: "Language Specification"
 ms.date: 08/02/2017
 helpviewer_keywords: 

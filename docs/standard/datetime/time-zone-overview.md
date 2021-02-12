@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Time zone overview"
 title: "Time zone overview"
 ms.date: "04/10/2017"
 helpviewer_keywords: 

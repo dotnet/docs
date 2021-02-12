@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Decision Structures (Visual Basic)"
 title: "Decision Structures"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Security with an Anonymous Client"
 title: "Message Security with an Anonymous Client"
 ms.date: "03/30/2017"
 dev_langs:

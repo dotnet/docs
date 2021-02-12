@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: <wsFederation>"
 title: "<wsFederation>"
 ms.date: "03/30/2017"
 ms.assetid: c537f770-68bd-4f82-96ad-6424ad91369f

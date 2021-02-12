@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugMergedAssemblyRecord::GetSimpleName Method"
 title: "ICorDebugMergedAssemblyRecord::GetSimpleName Method"
 ms.date: "03/30/2017"
 ms.assetid: bc3410f6-ebca-4bca-9b45-fc38c74fa9cb

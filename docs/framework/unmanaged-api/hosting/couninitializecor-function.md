@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CoUninitializeCor Function"
 title: "CoUninitializeCor Function"
 ms.date: "03/30/2017"
 api_name: 

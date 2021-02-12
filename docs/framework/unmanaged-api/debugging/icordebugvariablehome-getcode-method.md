@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICorDebugVariableHome::GetCode Method"
 title: "ICorDebugVariableHome::GetCode Method"
 ms.date: "03/30/2017"
 api_name: 

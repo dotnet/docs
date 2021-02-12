@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ServiceDebugBehavior"
 title: "ServiceDebugBehavior"
 ms.date: "03/30/2017"
 ms.assetid: a5ec9061-1e95-43fb-b0d9-dbd0a7bc3c44

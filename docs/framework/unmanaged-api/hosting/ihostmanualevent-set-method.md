@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IHostManualEvent::Set Method"
 title: "IHostManualEvent::Set Method"
 ms.date: "03/30/2017"
 api_name: 

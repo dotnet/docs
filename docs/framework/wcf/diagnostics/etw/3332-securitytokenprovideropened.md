@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3332 - SecurityTokenProviderOpened"
 title: "3332 - SecurityTokenProviderOpened"
 ms.date: "03/30/2017"
 ms.assetid: 777f58af-0f4a-49b7-a0da-17d54f73dad1
